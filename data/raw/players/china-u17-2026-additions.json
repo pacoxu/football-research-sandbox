@@ -613,25 +613,67 @@
     }
   },
   {
-    "id": "cn-kong-xinuo-2010",
+    "id": "cn-kong-xinuo-2009",
     "name": "Kong Xinuo",
-    "local_name": "Kong Xinuo",
+    "local_name": "孔玺诺",
     "country": "China PR",
-    "birth_date": "2010-11-14",
+    "birth_date": "2009-05-22",
     "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 176,
-    "weight_kg": 62,
+    "primary_position": "Defender",
+    "height_cm": null,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Zhejiang FC",
+      "name": "Shandong Luneng Taishan Football School",
       "country": "China"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Zhejiang FC",
+        "stage_label": "江苏徐州出身",
+        "organization": "Xuzhou youth football pathway",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "Transfermarkt 将其出生地登记为江苏徐州，可作为早期地域出身的公开旁证。"
+      },
+      {
+        "stage_label": "2022 山东泰山U13冠军节点",
+        "organization": "Shandong Taishan U13",
+        "country": "China",
+        "note": "中国足协 2022 年首届中国青少年足球联赛 U13 组决赛战报可核其代表山东泰山 U13 首发，并随队 1 比 0 战胜清华附中夺冠。"
+      },
+      {
+        "stage_label": "2024/03 足协精英训练营",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "中国足协 2009 年龄段精英青少年球员训练营名单中，以山东泰山足球俱乐部球员身份入选。"
+      },
+      {
+        "stage_label": "2024/10 U15法国拉练",
+        "organization": "China PR U15",
+        "country": "China",
+        "note": "2024 年 10 月 U15 国家男子足球选拔队香河集训和法国欧塞尔拉练名单中入选，山东泰山是该期入选人数最多的俱乐部之一。"
+      },
+      {
+        "stage_label": "2025/03 U16欧洲拉练",
+        "organization": "China PR U16",
+        "country": "China",
+        "note": "2025 年 3 月中国 U16 第一期集训及德国、法国、荷兰拉练名单中继续以山东泰山球员身份入选。"
+      },
+      {
+        "stage_label": "2025/11 U16第五期集训",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "中国足协 2025 年第五期 U16 集训通知中，与李钧鹏、张旭尧、张君豪、何思凡、萧晨熙等一同以山东鲁能泰山足球学校球员身份入选，备战 2026 U17 亚洲杯预选赛。"
+      },
+      {
+        "stage_label": "2026/03 U17第二期集训",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续以山东鲁能泰山足球学校球员身份入选，备战 U17 亚洲杯决赛阶段。"
+      },
+      {
+        "stage_label": "2026 报名归属",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "AFC U17 2026 终报名表列其当前单位为山东鲁能泰山足球学校；媒体转述 23 人名单时将其列为 21 号。Transfermarkt 将其主位标为左后卫，名单口径有时又写作中场，更适合视作中后场多面手。"
       }
     ],
     "focus_tags": [
@@ -647,7 +689,43 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
+        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单；媒体转述名单口径中身披 21 号，主要作为中场 / 后场轮换球员使用。"
+      },
+      {
+        "label": "2025 U17 亚洲杯预选赛对东帝汶",
+        "team": "China PR U16",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国足协战报写到对东帝汶一战，中国队轮换 4 处首发，孔玺诺进入首发阵容并随队 14 比 0 大胜。"
+      },
+      {
+        "label": "2025 U17 亚洲杯预选赛对斯里兰卡",
+        "team": "China PR U16",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "北青 / 腾讯转述指出，对斯里兰卡一战孔玺诺由替补变成首发，主教练浮嶋敏借此考察末轮阵容。"
+      },
+      {
+        "label": "2026/02 对印尼热身赛",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国足协战报显示，第 53 分钟孔玺诺在右肋捅传助攻帅惟浩破门，随后本人还有一脚远射被门将化解。"
+      },
+      {
+        "label": "2026 U17 亚洲杯1/4决赛对沙特",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国队 3 比 1 逆转沙特的 1/4 决赛中，第 77 分钟替补万项登场，体现其在淘汰赛阶段作为中后场轮换人选的定位。"
       }
     ],
     "external_links": [
@@ -655,12 +733,67 @@
         "type": "official",
         "label": "AFC 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/xinuo-kong/profil/spieler/1281961"
+      },
+      {
+        "type": "official",
+        "label": "CFA U13 final report",
+        "url": "https://www.thecfa.cn/qingchaoliansai/20221126/31939.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA 2009 elite camp notice",
+        "url": "https://www.thecfa.cn/qsn/20240308/33828.html"
+      },
+      {
+        "type": "news",
+        "label": "Phoenix U15 France camp report",
+        "url": "https://i.ifeng.com/c/8d2OfZu59w6"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi U16 Europe camp list",
+        "url": "https://m.dongqiudi.com/article/4977496.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20251104/37051.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260311/37413.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA Timor-Leste match report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251125/37104.html"
+      },
+      {
+        "type": "news",
+        "label": "Tencent Sri Lanka report",
+        "url": "https://news.qq.com/rain/a/20251128A070VI00"
+      },
+      {
+        "type": "official",
+        "label": "CFA Indonesia friendly report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260209/37322.html"
+      },
+      {
+        "type": "news",
+        "label": "Sina Saudi quarter-final report",
+        "url": "https://k.sina.com.cn/article_7857201856_1d45362c001905p3vy.html"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
+      "notes": "Transfermarkt 可核生日、出生地江苏徐州、当前位置口径与山东鲁能泰山足球学校归属；中国足协 2022-2026 的比赛战报和集训通知可拼出其山东泰山 / 鲁能足校线成长路径。公开资料并不能稳定支持其属于董路中国足球小将线，因此当前明确不加该标签。Forza 等站点给出的身高体重只作参考，暂不硬填。"
     }
   },
   {

@@ -1,6 +1,7 @@
 const page = document.body.dataset.page;
 const pageDate = document.body.dataset.date || "2026-05-22";
 const LANGUAGE_STORAGE_KEY = "youth-tracker-language";
+const SITE_DATA_VERSION = "20260522-overseas-filter-fix";
 
 const state = {
   language: "zh",
@@ -867,9 +868,14 @@ async function boot() {
 }
 
 async function fetchJson(url) {
-  const response = await fetch(url);
+  const requestUrl = new URL(url, window.location.href);
+  requestUrl.searchParams.set("_v", SITE_DATA_VERSION);
+
+  const response = await fetch(requestUrl, {
+    cache: "no-store"
+  });
   if (!response.ok) {
-    throw new Error(`Failed to fetch ${url}: ${response.status}`);
+    throw new Error(`Failed to fetch ${requestUrl.pathname}: ${response.status}`);
   }
 
   return response.json();
