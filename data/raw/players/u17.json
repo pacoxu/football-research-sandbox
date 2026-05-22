@@ -83,6 +83,36 @@
     },
     "training_pathway": [
       {
+        "stage_label": "南京校园足球启蒙",
+        "organization": "Nanjing Normal University Affiliated Middle School Xincheng Primary School",
+        "country": "China",
+        "note": "中国江苏网 2026-05-21 报道提到其小学就读于南师附中新城小学，曾带队实现南京市“市长杯”超级组三连冠。公开资料同时将其出生地登记为江苏南京。"
+      },
+      {
+        "stage_label": "足球小将衔接节点",
+        "organization": "China Football Boys",
+        "country": "China",
+        "note": "江苏报道明确写到其通过“中国足球小将”青训项目衔接，随后进入清华附中初高中梯队。"
+      },
+      {
+        "stage_label": "清华附中成长节点",
+        "organization": "Tsinghua University High School",
+        "country": "China",
+        "note": "进入清华附中男足体系后，逐步成长为 2009 年龄段国少主力，并在 2025 年随校队夺得全国青少年校园足球联赛全国总冠军。"
+      },
+      {
+        "stage_label": "2024 U15 法国拉练",
+        "organization": "China PR U15",
+        "country": "China",
+        "note": "中国足协 2024-10-12 通知显示，其以清华附中球员身份入选中国 U15 国家男子足球选拔队，赴法国欧塞尔青训中心拉练。"
+      },
+      {
+        "stage_label": "2025 U16 欧洲拉练",
+        "organization": "China PR U16",
+        "country": "China",
+        "note": "中国足协 2025-03-18 通知显示，其继续以清华附中球员身份入选 U16 第一期集训名单，并赴德国、法国、荷兰拉练。"
+      },
+      {
         "stage_label": "2026 报名归属",
         "organization": "Tsinghua University High School",
         "country": "China",
@@ -92,9 +122,37 @@
     "focus_tags": [
       "asia-u17-2026",
       "china-youth",
-      "school-system"
+      "school-system",
+      "donglu-football-boys"
     ],
     "tournament_participation": [
+      {
+        "label": "2024 中国 U15 国家男子足球选拔队法国拉练",
+        "team": "China PR U15",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "2024-10-12 足协通知显示其入选 U15 选拔队，随队赴法国欧塞尔俱乐部青训中心拉练。"
+      },
+      {
+        "label": "2025 中国 U16 第一期集训及欧洲拉练",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "2025-03-18 足协通知显示其继续以清华附中球员身份入选 U16 第一期名单。"
+      },
+      {
+        "label": "2025 和平杯国际足球锦标赛",
+        "team": "China PR U16",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "2025 年 7 月对乌兹别克斯坦 U16 一战于第 88 分钟远射破门，帮助中国队 2 比 1 取胜。"
+      },
       {
         "competition_id": "afc-u17-2026",
         "label": "AFC U17 2026 中国队主力观察",
@@ -103,7 +161,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC 于 2026-05-21 的官方前瞻将其列为中国队后防核心球员。"
+        "note": "AFC 正式名单将其列为 6 号中场；AFC 2026-05-21 前瞻与新华社 2026-05-22 决赛前报道均显示其在本届赛事担任中国 U17 队长，并承担中后场防守、覆盖与转换职责。"
       }
     ],
     "external_links": [
@@ -121,12 +179,47 @@
         "type": "official",
         "label": "AFC feature on Zhou Yunuo",
         "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-defensive-rock-zhou-vows-to-power-china-pr-to-title"
+      },
+      {
+        "type": "news",
+        "label": "Jiangsu report on Zhou Yunuo",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202605/t20260521_s6a0f1178e4b0c915867e8d51.shtml"
+      },
+      {
+        "type": "school",
+        "label": "Tsinghua High School title report",
+        "url": "https://www.bjhdedu.cn/xw/xyxw/202507/t20250711_83184.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U15 France camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20241012/35123.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 Europe camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250318/35764.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 2026 final squad notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260311/37414.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 semi-final report vs Australia",
+        "url": "https://www.thecfa.cn/xinwenu17/20260520/37695.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua pre-final captain report",
+        "url": "https://www.news.cn/sports/20260522/49ab323d9f534765a7c0fd332cf59016/c.html"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 终报名表，当前赛事定位由 AFC 2026-05-21 官方报道补充。"
+      "notes": "生日、出生地、位置与体格信息可由 Transfermarkt 球员页对照；南师附中新城小学启蒙、足球小将衔接、清华附中成长路径可由江苏与海淀教育报道互证；U15、U16、U17 国字号时间线可由足协通知核验。位置上，公开口径以中场 / 后腰最常见，但 AFC 半决赛前瞻也把他放在防守型语境下描述，因此当前保留为更宽的 Midfielder，并在说明中强调其防守覆盖与出球职责。"
     }
   },
   {
@@ -145,28 +238,46 @@
     },
     "training_pathway": [
       {
-        "stage_label": "2018 清华附中节点",
-        "organization": "Tsinghua University High School",
+        "stage_label": "2017 足球小将起点",
+        "organization": "China Football Boys",
         "country": "China",
-        "note": "用户提供研究报告指出，其曾作为首批 8 名进入清华附中的足球小将代表发言。"
+        "note": "2017 年加入董路发起的中国足球小将项目，是 09 年龄段最早被公开报道的核心球员之一。"
       },
       {
-        "stage_label": "2025 留洋节点",
+        "stage_label": "2018-2023 青训节点",
+        "organization": "Tsinghua University High School",
+        "country": "China",
+        "note": "长期随足球小将项目参加国内外比赛和海外拉练；清华附中文章可旁证其曾作为首批 8 名进入该体系的球员代表发言。"
+      },
+      {
+        "stage_label": "2023 达姆节点",
+        "organization": "Damm CF",
+        "country": "Spain",
+        "note": "2023 年赴西班牙后进入达姆体系；2025 年 3 月、5 月中国足协 U16 集训通知仍将其所属单位记为达姆足球俱乐部。"
+      },
+      {
+        "stage_label": "2023-2024 奥斯皮塔莱特青年队",
+        "organization": "CE L'Hospitalet",
+        "country": "Spain",
+        "note": "公开报道提到其曾在奥斯皮塔莱特青年队注册、参赛，属于其西班牙青训经历中的过渡阶段。"
+      },
+      {
+        "stage_label": "2024-2025 达姆 U16A",
+        "organization": "Damm CF U16A",
+        "country": "Spain",
+        "note": "2024 年 10 月代表达姆 U16A 在加泰 U16 荣誉联赛对赫罗纳 U16A 取得进球。"
+      },
+      {
+        "stage_label": "2025 莱里达竞技节点",
         "organization": "CE Atlètic Lleida",
         "country": "Spain",
-        "note": "Transfermarkt 转会记录显示其于 2025-07-28 加盟 CE Atlètic Lleida。"
+        "note": "2025-07-28 加盟西协乙莱里达竞技，公开报道合同写至 2027 年；当前更稳妥的口径是已完成签约与随队训练，成年正式联赛出场仍待继续回填。"
       },
       {
         "stage_label": "2026 报名归属",
         "organization": "Qingdao Hainiu FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
-      },
-      {
-        "stage_label": "2026 中超报名归属",
-        "organization": "Qingdao Hainiu FC",
-        "country": "China",
-        "note": "截至 2026-05-22 已在青岛海牛一线队进入中超青年轮换，并收获进球。"
+        "note": "2026 年 2 月加盟青岛海牛；AFC U17 2026 终报名表列为当前俱乐部，央视 2026-03-08 已核到其在中超首轮对云南玉昆完成一线队登场。"
       }
     ],
     "focus_tags": [
@@ -180,31 +291,56 @@
     ],
     "tournament_participation": [
       {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 中国队报名名单",
-        "team": "China PR U17",
+        "label": "2025 沈阳和平杯",
+        "team": "China PR U16",
         "squad_status": "registered",
-        "appearances": 8,
+        "appearances": 3,
         "goals": 2,
         "minutes": null,
-        "note": "Transfermarkt 国家队页面快照显示其当前国青数据为 8 场 2 球。"
+        "note": "公开报道写其在 2025 年和平杯 3 场打进 2 球，其中对韩国 U16 有进球。"
+      },
+      {
+        "label": "AFC U17 2026 预选赛",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 2,
+        "minutes": null,
+        "note": "AFC 报道已核到其在 12 比 0 文莱一战第 19 分钟破门，并在 8 比 0 斯里兰卡一战第 41 分钟进球，中国队以小组全胜晋级正赛。"
+      },
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 正赛",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "小组赛阶段两场进入替补名单；1/4 决赛对沙特首发并助攻万项扳平，半决赛对澳大利亚继续首发，随队打进决赛并锁定 2026 世少赛资格。"
       },
       {
         "competition_id": "csl-2026",
-        "label": "2026 中超一线队 U21 跟踪",
+        "label": "2026 中超一线队跟踪",
         "team": "Qingdao Hainiu FC",
         "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22 已在青岛海牛一线队完成中超报名与出场破门样本积累。"
+        "note": "2026-03-08 中超首轮对云南玉昆已完成一线队登场；截至 2026-05-22，当前更稳妥的公开口径是已进入海牛一线队报名体系并获得成年职业联赛出场。"
       }
     ],
     "external_links": [
       {
         "type": "official",
         "label": "AFC 2026 squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "note": "用于校对生日、号码、身高体重和 2026 U17 亚洲杯当前俱乐部归属。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 first camp notice (March 2025)",
+        "url": "https://www.thecfa.cn/jxtz/20250318/35764.html",
+        "note": "足协第一期 U16 集训通知将其所属单位列为达姆足球俱乐部。"
       },
       {
         "type": "transfermarkt",
@@ -217,25 +353,45 @@
         "url": "https://www.transfermarkt.us/zhaolei-kuang/transfers/spieler/1281957"
       },
       {
+        "type": "official",
+        "label": "AFC U17 qualifiers: China PR 12-0 Brunei",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/qualifiers-group-a-sri-lanka-0-5-bangladesh-timor-leste-0-3-bahrain-china-pr-12-0-brunei-darussalam",
+        "note": "用于校对其在 2025 年 U17 亚预赛对文莱进球。"
+      },
+      {
+        "type": "official",
+        "label": "AFC U17 quarter-final: Saudi Arabia 1-3 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-q-final-saudi-arabia-1-3-china-pr",
+        "note": "用于校对其在 2026 U17 亚洲杯 1/4 决赛对沙特助攻万项扳平。"
+      },
+      {
         "type": "school",
         "label": "Tsinghua High School official article",
-        "url": "https://www.qhfz.edu.cn/info/1064/13385.htm"
+        "url": "https://www.qhfz.edu.cn/info/1064/13385.htm",
+        "note": "用于旁证其在足球小将与清华附中相关培养体系中的公开身份。"
+      },
+      {
+        "type": "news",
+        "label": "CCTV: CSL debut vs Yunnan Yukun",
+        "url": "https://tv.cctv.com/2026/03/08/VIDEvt8smoWV8ONiwgTZFC9O260308.shtml",
+        "note": "用于校对其 2026 年 3 月已在青岛海牛完成中超登场。"
+      },
+      {
+        "type": "news",
+        "label": "Qingdao Hainiu signing report",
+        "url": "https://news.qq.com/rain/a/20260217A02GSZ00",
+        "note": "用于补充其 2026 年 2 月回归青岛海牛的一线队节点。"
       },
       {
         "type": "wikipedia",
         "label": "Wikipedia profile",
         "url": "https://zh.wikipedia.org/wiki/%E9%82%9D%E5%85%86%E9%95%AD"
-      },
-      {
-        "type": "news",
-        "label": "China News report on CSL debut goal",
-        "url": "https://www.chinanews.com.cn/ty/2026/04-27/10407125.shtml"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "AFC U17 终报名表可校对基础信息；当前中超阶段的青岛海牛归属与进球节点由 2026-04-27 中国新闻网报道补充。"
+      "notes": "AFC U17 终报名表可校对生日、号码、身高体重与当前俱乐部；CFA 集训通知、AFC 赛事报道、央视中超首轮视频与公开转会报道可拼出其 2025-2026 竞赛轨迹。现阶段保留“已完成中超登场”而不把成年正式比赛产出写得过满。"
     }
   },
   {

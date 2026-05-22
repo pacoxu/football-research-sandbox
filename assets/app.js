@@ -268,6 +268,9 @@ const UI_COPY = {
     "overseas.current.eyebrow": "Current Abroad",
     "overseas.current.title": "当前留洋样本",
     "overseas.current.empty": "当前筛选条件下没有匹配的现役留洋样本。",
+    "overseas.current.eyebrow.year": "Year Snapshot",
+    "overseas.current.title.year": "年份回看",
+    "overseas.current.empty.year": "{year} 年当前筛选条件下没有匹配的海外样本。",
     "overseas.notes.eyebrow": "Country Notes",
     "overseas.notes.title": "国别说明",
     "overseas.history.eyebrow": "History",
@@ -276,6 +279,7 @@ const UI_COPY = {
     "overseas.comparison.current": "当前留洋样本",
     "overseas.comparison.history": "历史记录 {count} 条",
     "overseas.current.meta": "当前筛选下 {count} 名现役海外样本",
+    "overseas.current.meta.year": "{year} 年筛选下 {count} 名当年在海外的样本",
     "overseas.history.meta.default": "当前筛选下 {count} 条当前已不在海外的历史样本",
     "overseas.history.meta.year": "{year} 年命中 {count} 条当年在海外的样本",
     "overseas.countryNotes.noNote": "暂无说明",
@@ -523,6 +527,9 @@ const UI_COPY = {
     "overseas.current.eyebrow": "Current Abroad",
     "overseas.current.title": "Current overseas samples",
     "overseas.current.empty": "No active overseas sample matches the current filters.",
+    "overseas.current.eyebrow.year": "Year Snapshot",
+    "overseas.current.title.year": "Year snapshot",
+    "overseas.current.empty.year": "No overseas sample matches the filters for {year}.",
     "overseas.notes.eyebrow": "Country Notes",
     "overseas.notes.title": "Country notes",
     "overseas.history.eyebrow": "History",
@@ -531,6 +538,7 @@ const UI_COPY = {
     "overseas.comparison.current": "Current abroad samples",
     "overseas.comparison.history": "{count} historical records",
     "overseas.current.meta": "{count} active overseas samples in this filter",
+    "overseas.current.meta.year": "{count} samples were abroad in {year}",
     "overseas.history.meta.default": "{count} historical records currently no longer abroad in this filter",
     "overseas.history.meta.year": "{count} records abroad in {year}",
     "overseas.countryNotes.noNote": "No note yet",
@@ -3307,6 +3315,10 @@ function getFilteredCurrentOverseasItems() {
   });
 }
 
+function isHistoricalYearMode() {
+  return state.overseasFilters.year !== "all";
+}
+
 function getFilteredHistoricalRecords() {
   const currentlyAbroad = getCurrentlyAbroadIdentitySet();
   return flattenHistoricalOverseasRecords().filter((record) => {
@@ -3322,19 +3334,31 @@ function getFilteredHistoricalRecords() {
   });
 }
 
+function getVisibleOverseasSummaryItems() {
+  if (!isHistoricalYearMode()) {
+    return getFilteredCurrentOverseasItems();
+  }
+
+  return getFilteredHistoricalRecords().map(toCurrentHistoricalOverseasItem);
+}
+
 function renderOverseasPage() {
   const comparisonStats = document.querySelector("#overseasComparisonStats");
+  const currentEyebrow = document.querySelector("#overseasCurrentEyebrow");
+  const currentTitle = document.querySelector("#overseasCurrentTitle");
   const currentMeta = document.querySelector("#overseasCurrentMeta");
   const currentPlayers = document.querySelector("#overseasCurrentPlayers");
   const currentEmptyState = document.querySelector("#overseasCurrentEmptyState");
   const countryNotes = document.querySelector("#overseasCountryNotes");
+  const historySection = document.querySelector("#overseasHistorySection");
   const historyMeta = document.querySelector("#overseasHistoryMeta");
   const historyCards = document.querySelector("#overseasHistoryCards");
   const historyEmptyState = document.querySelector("#overseasHistoryEmptyState");
 
   const countryMap = getOverseasCountryMap();
-  const filteredCurrent = getFilteredCurrentOverseasItems();
+  const filteredCurrent = getVisibleOverseasSummaryItems();
   const filteredHistory = getFilteredHistoricalRecords();
+  const historicalYearMode = isHistoricalYearMode();
 
   setControlValue("#overseasCountryFilter", state.overseasFilters.country);
   setControlValue("#overseasBucketFilter", state.overseasFilters.bucket);
@@ -3358,8 +3382,33 @@ function renderOverseasPage() {
     )
     .join("");
 
-  currentMeta.textContent = t("overseas.current.meta", { count: filteredCurrent.length });
-  currentPlayers.innerHTML = filteredCurrent.map((item) => renderCurrentOverseasItem(item, false)).join("");
+  if (currentEyebrow) {
+    currentEyebrow.textContent = historicalYearMode
+      ? t("overseas.current.eyebrow.year")
+      : t("overseas.current.eyebrow");
+  }
+  if (currentTitle) {
+    currentTitle.textContent = historicalYearMode
+      ? t("overseas.current.title.year")
+      : t("overseas.current.title");
+  }
+
+  currentMeta.textContent = historicalYearMode
+    ? t("overseas.current.meta.year", {
+        count: filteredCurrent.length,
+        year: state.overseasFilters.year
+      })
+    : t("overseas.current.meta", { count: filteredCurrent.length });
+  currentPlayers.classList.remove("player-card-grid", "story-grid");
+  currentPlayers.classList.add(historicalYearMode ? "story-grid" : "player-card-grid");
+  currentPlayers.innerHTML = filteredCurrent
+    .map((item) =>
+      historicalYearMode ? renderHistoricalRecordCard(item) : renderCurrentOverseasItem(item, false)
+    )
+    .join("");
+  currentEmptyState.textContent = historicalYearMode
+    ? t("overseas.current.empty.year", { year: state.overseasFilters.year })
+    : t("overseas.current.empty");
   currentEmptyState.hidden = filteredCurrent.length > 0;
 
   const selectedCountry =
@@ -3391,6 +3440,9 @@ function renderOverseasPage() {
           count: filteredHistory.length,
           year: state.overseasFilters.year
         });
+  if (historySection) {
+    historySection.hidden = historicalYearMode;
+  }
   historyCards.innerHTML = filteredHistory.map(renderHistoricalRecordCard).join("");
   historyEmptyState.hidden = filteredHistory.length > 0;
 }
