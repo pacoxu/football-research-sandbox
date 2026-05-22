@@ -895,7 +895,7 @@
     "name": "万达西班牙计划小球员档案",
     "status": "in-progress",
     "last_reviewed": "2026-05-22",
-    "summary": "这条线对应 2012 到 2016 年连续五批赴西班牙受训的中国小球员项目。当前最稳妥的公开口径，是先确认马德里竞技、瓦伦西亚、比利亚雷亚尔三家核心合作方，以及“每年约 30 人、后续有人回国签职业合同、也有人继续留在西班牙青年联赛”的总体走势，再逐步补齐每批名单与个人现状。",
+    "summary": "这条线对应 2012 到 2016 年连续五批赴西班牙受训的中国小球员项目。当前最稳妥的处理方式，不是直接追求一次性补齐五批全名单，而是先把首批、第二批已能交叉确认的后续样本按“继续留西注册”“回国进入职业体系”“回流但去向待补”三类拆开，再逐步向后三批扩展。",
     "source_document": {
       "title": "46_万达西班牙计划后续.md",
       "path": "https://github.com/pacoxu/pacoxu/blob/master/BACKUP/46_%E4%B8%87%E8%BE%BE%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AE%A1%E5%88%92%E5%90%8E%E7%BB%AD.md"
@@ -912,7 +912,7 @@
         "summary": "更早的总览稿，能确认“瓦伦西亚 + 马竞 + 比利亚雷亚尔、2012-2016 每年约 30 人”的项目框架。"
       }
     ],
-    "scope_note": "当前先把它当作青训输出项目而不是单队名单处理，避免把项目批次、注册俱乐部和后续职业签约混成一层。",
+    "scope_note": "当前先把它当作青训输出项目而不是单队名单处理；追踪时优先记录“批次 + 合作俱乐部起点 + 2016-2017 后续状态”，避免把项目批次、注册俱乐部和后续职业签约混成一层。",
     "role_model": [],
     "timeline": [
       {
@@ -1020,6 +1020,163 @@
             "note": "马竞一期，2016 年底属于签下职业合同的回国样本。"
           }
         ]
+      },
+      {
+        "id": "spain-registered-samples-2017",
+        "name": "2017 年仍留在西班牙注册比赛的样本",
+        "confidence": "B",
+        "description": "按 2017-12 的公开回看稿，这批名字已经能明确定位到西班牙青年联赛或合作俱乐部注册体系内，适合作为“继续留西”状态组的第一版主干。",
+        "players": [
+          {
+            "name": "Liu Kaijie",
+            "local_name": "刘凯杰",
+            "role": "中后卫",
+            "club": "Levante youth / Atletico pathway",
+            "note": "瓦伦一期，2017 年已签约莱万特；公开稿写其签下 2+2 合同，先在青年队，后进入莱万特竞技即 B 队路径。"
+          },
+          {
+            "name": "Liang Huan",
+            "local_name": "梁欢",
+            "role": "前锋",
+            "club": "Alcala U19A",
+            "note": "马竞一期，2017 年 12 月在西班牙全国 U19 联赛第二级别收获正式联赛首球。"
+          },
+          {
+            "name": "Yao Yanfeng",
+            "local_name": "姚焱峰",
+            "role": "边锋 / 后卫",
+            "club": "Alcala U19A",
+            "note": "瓦伦一期，三年期满后转入马竞体系继续培养，2017 年底已在阿尔卡拉 U19A 有替补登场记录。"
+          },
+          {
+            "name": "Wang Zhuqing",
+            "local_name": "王竹青",
+            "role": "左后卫",
+            "club": "Cracks U19A / Alboraya pathway",
+            "note": "瓦伦二期，2016/17 赛季已转到阿尔沃赖阿 U19 参加当地正式联赛；2017 年底可核其仍在西班牙瓦伦西亚自治区 U19 体系。"
+          },
+          {
+            "name": "Zheng Yujiang",
+            "local_name": "郑誉江",
+            "role": "前腰",
+            "club": "Rayo Majadahonda U19B",
+            "note": "瓦伦一期，2017 年底仍在西班牙马德里自治区 U19 甲级联赛注册。"
+          }
+        ]
+      },
+      {
+        "id": "returned-to-domestic-pathway-2016-2017",
+        "name": "2016-2017 年回国并进入国内职业体系的样本",
+        "confidence": "B",
+        "description": "这一组只放能明确挂到大连一方、广州富力等国内职业梯队或签约节点的名字，避免把单次试训或奥运选拔临时报名也算成稳定职业落点。",
+        "players": [
+          {
+            "name": "Rong Linchao",
+            "local_name": "容琳朝",
+            "role": "后卫",
+            "club": "Dalian Yifang U19",
+            "note": "马竞一期，2017 年底已出现在大连一方 U19 锦标赛名单里，可作为回国进入职业梯队的旁证样本。"
+          },
+          {
+            "name": "Su Jinyi",
+            "local_name": "苏金毅",
+            "role": "门将",
+            "club": "Dalian Yifang",
+            "note": "瓦伦一期，2015 年较早回流国内，后进入大连一方职业体系。"
+          },
+          {
+            "name": "Huang Jiahui",
+            "local_name": "黄嘉辉",
+            "role": "中后卫",
+            "club": "Dalian Yifang",
+            "note": "瓦伦一期，2016 年后进入大连一方体系，属于第一批回国职业梯队样本。"
+          },
+          {
+            "name": "Yin Jiahao",
+            "local_name": "尹嘉豪",
+            "role": "后卫",
+            "club": "Dalian Yifang U19",
+            "note": "瓦伦二期，2017 年底可由大连一方 U19 名单旁证其已回流国内职业梯队。"
+          },
+          {
+            "name": "Yang Weihao",
+            "local_name": "杨伟浩",
+            "role": "边前卫 / 前锋",
+            "club": "Dalian Yifang",
+            "note": "瓦伦一期，2016 年夏回国，进入大连一方职业梯队；旧稿同时明确他属于第一批赴西样本。"
+          },
+          {
+            "name": "Zhang Junhao",
+            "local_name": "张君淏",
+            "role": "后卫",
+            "club": "Dalian Yifang U19",
+            "note": "比利亚雷亚尔二期，2017 年底在大连一方 U19 名单中出现，可视作回流职业梯队样本。"
+          },
+          {
+            "name": "Jiang Tao",
+            "local_name": "姜韬",
+            "role": "中场 / 后卫",
+            "club": "Dalian Yifang U19",
+            "note": "马竞二期，2017 年底出现在大连一方 U19 名单中。"
+          },
+          {
+            "name": "Wan Zhilei",
+            "local_name": "万志磊",
+            "role": "前锋",
+            "club": "Dalian Yifang",
+            "note": "马竞一期，2016 年底属于签下职业合同的回国样本。"
+          },
+          {
+            "name": "Zheng Zhiming",
+            "local_name": "郑智铭",
+            "role": "中前卫 / 中卫",
+            "club": "Guangzhou R&F",
+            "note": "瓦伦一期，后转入马竞体系两年，2017 年底回国加盟广州富力。"
+          }
+        ]
+      },
+      {
+        "id": "returned-but-needs-follow-up-2017",
+        "name": "2017 年已回流但后续节点仍待补的样本",
+        "confidence": "C",
+        "description": "这一组用于收纳已确认回国或离开西班牙培养体系，但公开落点还停留在奥运选拔、试训或名单侧写层面的名字，便于后续继续追踪。",
+        "players": [
+          {
+            "name": "Bai Xuyao",
+            "local_name": "白旭耀",
+            "role": "边前卫",
+            "club": "Domestic return / Olympic selection context",
+            "note": "瓦伦一期，2017 年底公开稿提到其已回流，并与罗红石一起参加“我要上奥运”选拔。"
+          },
+          {
+            "name": "Luo Hongshi",
+            "local_name": "罗红石",
+            "role": "后卫",
+            "club": "Domestic return / Olympic selection context",
+            "note": "瓦伦一期，2017 年底已回流国内，但公开稳定落点仍主要停留在奥运选拔相关语境。"
+          },
+          {
+            "name": "Yang Shaobo",
+            "local_name": "杨绍博",
+            "role": "中场",
+            "club": "Domestic return, club not yet fixed",
+            "note": "马竞二期，旧稿确认其已回流，但同阶段未出现在大连一方 U19 名单中，后续归属仍待继续核验。"
+          },
+          {
+            "name": "Bai Jiaohai",
+            "local_name": "白皎海",
+            "role": "中场 / 边路",
+            "club": "Beijing Guoan trial",
+            "note": "马竞三期，2017 年公开口径显示其在结束西班牙培训后曾试训北京国安。"
+          },
+          {
+            "name": "Xie Longfei",
+            "local_name": "谢龙飞",
+            "role": "前场球员",
+            "club": "Returned to China, represented Guoan in selection",
+            "note": "比利亚雷亚尔二期，旧稿确认其在 2016 年培训结束后回国，并在奥运选拔比赛中代表国安出场。"
+          }
+        ]
       }
     ],
     "controversies": [
@@ -1028,9 +1185,9 @@
       "同一批球员可能经历瓦伦西亚或比利亚雷亚尔起步、随后转入马竞统一训练的再分配路径，容易被误读成多次独立转会。 "
     ],
     "open_questions": [
-      "五批完整名单与各批精确人数仍需逐条回填，当前只稳妥确认“每年约 30 人、2012-2016 共五批”的总口径。",
-      "哪些回国球员最终完成一线队职业出场，哪些只停留在职业梯队阶段，还需要继续补赛季级别履历。",
-      "继续留在西班牙的球员中，哪些后来真正进入成年职业合同或职业联赛注册，仍需后续再核验。"
+      "第三到第五批目前还没有像首批、第二批这样可直接拆分的状态视图，后续需要继续从旧名单、地方媒体和足协梯队名单里补线。",
+      "已回国进入大连一方、广州富力等体系的样本里，哪些后来真正完成成年一线队职业出场，哪些停留在梯队或中乙 / 中冠层级，仍需补赛季级别履历。",
+      "继续留在西班牙的样本中，哪些后来真正签下成年职业合同，哪些只停留在 Juvenil 或地区联赛注册，也还需要继续核验。"
     ]
   }
 ]
