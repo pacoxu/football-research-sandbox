@@ -1,0 +1,242 @@
+[
+  {
+    "id": "afc-u17-2026",
+    "name": "AFC U17 Asian Cup Saudi Arabia 2026",
+    "short_name": "AFC U17 2026",
+    "focus_level": "primary",
+    "status": "in-progress",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2026-05-05",
+      "end": "2026-05-22"
+    },
+    "focus_teams": [
+      "China PR",
+      "Japan",
+      "Korea Republic",
+      "Uzbekistan"
+    ],
+    "headline": "已建档中国、日本、韩国完整名单，并补充乌兹别克斯坦重点球员样本。",
+    "notes": [
+      "截至 2026-05-22，中国 U17 已打进决赛，将于当日对阵日本。",
+      "乌兹别克斯坦 U17 在 2026-05-20 半决赛点球负于日本，止步四强。",
+      "中国、日本、韩国的 U17 基础球员数据，统一以 AFC 于 2026-05-02 发布的最终报名表为准。"
+    ],
+    "sources": [
+      {
+        "label": "AFC 2026 Final Squad Lists",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "label": "AFC Preview Final: China PR v Japan",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-preview-final-china-pr-v-japan"
+      },
+      {
+        "label": "AFC Japan win shootout to advance to final",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-japan-win-thrilling-shootout-to-advance-to-final"
+      }
+    ]
+  },
+  {
+    "id": "afc-u23-2026",
+    "name": "AFC U23 Asian Cup Saudi Arabia 2026",
+    "short_name": "AFC U23 2026",
+    "focus_level": "reference",
+    "status": "completed",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2026-01-06",
+      "end": "2026-01-25"
+    },
+    "focus_teams": [
+      "China PR",
+      "Japan",
+      "Korea Republic"
+    ],
+    "headline": "已建档中国、日本、韩国三队完整报名名单。",
+    "notes": [
+      "日本在 2026-01-25 决赛 4 比 0 击败中国队，完成卫冕并拿到队史第三冠。",
+      "中国队获得亚军。该届名单适合继续补充球员职业去向。",
+      "韩国队在 2026-01-24 三四名决赛点球负于越南，最终排名第四。"
+    ],
+    "sources": [
+      {
+        "label": "AFC U23 2026 Final Registration",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "label": "AFC Final: Japan power past China PR to clinch third title",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "label": "AFC 3rd place: Vietnam edge Korea Republic on penalties",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      }
+    ]
+  },
+  {
+    "id": "csl-2026",
+    "name": "Chinese Super League 2026",
+    "short_name": "CSL 2026",
+    "focus_level": "reference",
+    "status": "in-progress",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2026-03-06",
+      "end": "2026-11-08"
+    },
+    "focus_teams": [
+      "Shanghai Port FC",
+      "Shanghai Shenhua FC",
+      "Zhejiang FC",
+      "Shandong Taishan FC",
+      "Dalian Yingbo FC",
+      "Qingdao West Coast FC",
+      "Qingdao Hainiu FC"
+    ],
+    "headline": "当前国内联赛跟踪切到 2026 中超青年样本，优先记录一线队 U21 和具备留洋经历的 U23。",
+    "notes": [
+      "当前批次按各俱乐部 2026 赛季一线队名单中的 U21 档与已进入一线队轮换的青年样本补录。",
+      "同一球员若已在库内按 U17 或 U23 赛事建档，本轮不重复建第二条，而是补充 2026 中超参赛记录和标签。",
+      "具备欧洲留洋经历的 U23 样本，优先补当前俱乐部、留洋节点和外部链接。"
+    ],
+    "sources": [
+      {
+        "label": "2026 Chinese Super League overview",
+        "publisher": "Wikipedia",
+        "url": "https://zh.wikipedia.org/wiki/2026%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B"
+      },
+      {
+        "label": "Sina CSL squad pages",
+        "publisher": "Sina Sports",
+        "url": "https://sports.sina.com.cn/csl/"
+      }
+    ]
+  },
+  {
+    "id": "china-overseas-2026",
+    "name": "China Overseas Player Tracker 2026",
+    "short_name": "China Overseas 2026",
+    "focus_level": "reference",
+    "status": "in-progress",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    },
+    "focus_teams": [
+      "Barnsley FC",
+      "FC Den Bosch",
+      "FK Vozdovac U19",
+      "Red Star Belgrade U17",
+      "NK Lokomotiva Zagreb",
+      "DAMM CF"
+    ],
+    "headline": "2026 年中国留洋现役样本，优先跟踪当前仍在海外注册或效力的中国球员。",
+    "notes": [
+      "当前批次以仍在海外俱乐部注册、比赛或培养体系内的中国男足球员为主，暂不覆盖已回流中超或中甲的历史留洋球员。",
+      "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
+      "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。"
+    ],
+    "sources": [
+      {
+        "label": "Wolves official: Xu Bin joins the club",
+        "publisher": "Wolverhampton Wanderers",
+        "url": "https://www.wolves.co.uk/news/academy/20260130-youngster-xu-bin-joins-the-club/"
+      },
+      {
+        "label": "CFA national team notice listing Xu Bin at Barnsley",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/jxtz/20260320/37443.html"
+      },
+      {
+        "label": "FC Den Bosch official: Bohao Wang loan signing",
+        "publisher": "FC Den Bosch",
+        "url": "https://www.fcdenbosch.nl/middenvelder-bohao-wang-op-huurbasis-naar-fc-den-bosch/"
+      },
+      {
+        "label": "CCTV report on 2026 new overseas wave",
+        "publisher": "CCTV",
+        "url": "https://sports.cctv.com/2026/03/13/ARTI1CNCqbYBdYvclXkera26260313.shtml"
+      }
+    ]
+  },
+  {
+    "id": "east-asia-u21-pro-2026",
+    "name": "East Asia U21 Pro System Watch 2026",
+    "short_name": "日韩 U21 2026",
+    "focus_level": "reference",
+    "status": "in-progress",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2026-03-20",
+      "end": "2026-05-22"
+    },
+    "focus_teams": [
+      "Japan",
+      "Korea Republic"
+    ],
+    "headline": "按 2026-05-22 的 J.League、K League 与 JFA 当前名单整理日韩 U21 职业体系样本，用于连接青训追踪与留洋数据库。",
+    "notes": [
+      "这不是单一赛事，而是当前职业注册与国字号观察名单的滚动样本池。",
+      "日本样本优先参考 JFA 2026 年 3 月韩国远征名单与 J.League 2026 球员名鉴。",
+      "韩国样本优先参考 K League 当前注册页与在 J.League 注册的韩国 U21 球员。"
+    ],
+    "sources": [
+      {
+        "label": "JFA U-21 Japan squad for Korea trip",
+        "publisher": "JFA",
+        "url": "https://www.jfa.jp/national_team/u21_2026/20260329/news/00036144/"
+      },
+      {
+        "label": "J.League 2026 player directory release",
+        "publisher": "J.League",
+        "url": "https://www.jleague.jp/news/article/33139"
+      },
+      {
+        "label": "K League official club and player pages",
+        "publisher": "K League",
+        "url": "https://www.kleague.com/"
+      }
+    ]
+  },
+  {
+    "id": "afc-u17-2025",
+    "name": "AFC U17 Asian Cup Saudi Arabia 2025",
+    "short_name": "AFC U17 2025",
+    "focus_level": "reference",
+    "status": "completed",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2025-04-03",
+      "end": "2025-04-20"
+    },
+    "focus_teams": [
+      "China PR",
+      "Uzbekistan"
+    ],
+    "headline": "上一届参考赛事，用来衔接乌兹别克斯坦 2025 冠军班底与 2026 延续情况。",
+    "notes": [
+      "乌兹别克斯坦在 2025 年夺冠，Sadriddin Khasanov 获评赛事 MVP。",
+      "中国队在 2025 年小组赛出局，但多名球员进入职业青训或后续 U18 体系。"
+    ],
+    "sources": [
+      {
+        "label": "AFC 2025 Squad Lists",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2025_AFC_U17_Asian_Cup/Finals/Downloads/AFC-U17-Asian-Cup-Saudi-Arabia-2025---Squad-Lists.pdf"
+      },
+      {
+        "label": "AFC Uzbekistan MVP report",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/uzbekistan%E2%80%99s-khasanov-takes-most-valuable-player-award"
+      }
+    ]
+  }
+]

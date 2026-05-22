@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>留洋专页 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="查看中日韩当前留洋样本、联赛层级对比与历史记录。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="overseas">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero hero-tight">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="overseas.hero.eyebrow">Overseas Tracker</p>
+            <h1 data-i18n="overseas.hero.title">留洋专页</h1>
+            <p class="hero-text" data-i18n="overseas.hero.text">
+              当前页把“现役海外样本”和“历史记录”拆开。现役部分看当前注册归属，历史部分按国别、联赛桶和年份筛选。
+            </p>
+          </div>
+          <aside class="hero-spotlight">
+            <p class="eyebrow" data-i18n="overseas.note.eyebrow">Note</p>
+            <p class="hero-side-note" data-i18n="overseas.note.text">
+              这里展示的是当前已建档样本，不是官方全量留洋人数。
+            </p>
+          </aside>
+        </section>
+
+        <section id="overseasComparisonStats" class="stats-row"></section>
+
+        <section class="content-panel">
+          <div class="filter-bar">
+            <label class="filter-item">
+              <span data-i18n="overseas.filters.country">国别</span>
+              <select id="overseasCountryFilter"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="overseas.filters.bucket">联赛桶</span>
+              <select id="overseasBucketFilter"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="overseas.filters.year">历史年份</span>
+              <select id="overseasYearFilter"></select>
+            </label>
+            <div class="filter-item filter-action-item">
+              <span data-i18n="overseas.filters.actions">操作</span>
+              <button id="overseasResetButton" class="switch-button" type="button" data-i18n="overseas.filters.reset">重置筛选</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="dashboard-grid">
+          <article class="content-panel panel-span-2">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="overseas.current.eyebrow">Current Abroad</p>
+                <h2 data-i18n="overseas.current.title">当前留洋样本</h2>
+              </div>
+              <p id="overseasCurrentMeta" class="section-note" data-i18n="common.loading">载入中</p>
+            </div>
+            <div id="overseasCurrentPlayers" class="player-card-grid"></div>
+            <div id="overseasCurrentEmptyState" class="empty-state" hidden data-i18n="overseas.current.empty">当前筛选条件下没有匹配的现役留洋样本。</div>
+          </article>
+
+          <article class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="overseas.notes.eyebrow">Country Notes</p>
+                <h2 data-i18n="overseas.notes.title">国别说明</h2>
+              </div>
+            </div>
+            <div id="overseasCountryNotes" class="stack-list"></div>
+          </article>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="overseas.history.eyebrow">History</p>
+              <h2 data-i18n="overseas.history.title">历史记录</h2>
+            </div>
+            <p id="overseasHistoryMeta" class="section-note" data-i18n="common.loading">载入中</p>
+          </div>
+          <div id="overseasHistoryCards" class="story-grid"></div>
+          <div id="overseasHistoryEmptyState" class="empty-state" hidden data-i18n="overseas.history.empty">当前筛选条件下没有匹配的历史样本。</div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

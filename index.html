@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>青训球员追踪站</title>
+    <meta
+      name="description"
+      content="聚焦中国青训、亚洲青年赛事与中日韩留洋样本的静态数据站。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero home-hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="home.hero.eyebrow">Tracker</p>
+            <h1 data-i18n="home.hero.title">青训球员追踪站</h1>
+            <p class="hero-text" data-i18n="home.hero.text">
+              追踪中国青训球员、赛事表现与留洋动态。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-link" data-i18n="home.hero.ctaPlayers" href="./players.html">查看球员</a>
+              <a class="secondary-link" data-i18n="home.hero.ctaTournaments" href="./tournaments.html">查看赛事</a>
+            </div>
+          </div>
+          <aside class="hero-spotlight home-focus-card" id="homeNextEventHero">
+            <p class="eyebrow" data-i18n="home.nextEvent.eyebrow">Focus Event</p>
+            <div class="empty-inline" data-i18n="common.loading">加载中</div>
+          </aside>
+        </section>
+
+        <section class="overview-bar" aria-label="数据概览" data-i18n-aria-label="home.stats.aria">
+          <div class="overview-item">
+            <strong id="homePlayerCount" class="overview-value">-</strong>
+            <span class="overview-label" data-i18n="home.stats.players">球员样本</span>
+          </div>
+          <div class="overview-item">
+            <strong id="homeOverseasCount" class="overview-value">-</strong>
+            <span class="overview-label" data-i18n="home.stats.overseas">留洋样本</span>
+          </div>
+          <div class="overview-item">
+            <strong id="homeArchiveCount" class="overview-value">-</strong>
+            <span class="overview-label" data-i18n="home.stats.archive">赛事档案</span>
+          </div>
+          <div class="overview-item">
+            <strong id="homeUpdatedDate" class="overview-value overview-value-small">-</strong>
+            <span class="overview-label" data-i18n="home.stats.updated">更新至</span>
+          </div>
+        </section>
+
+        <section class="dashboard-grid home-primary-grid">
+          <article class="content-panel panel-span-2">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="home.recentMatches.eyebrow">Recent Matches</p>
+                <h2 data-i18n="home.recentMatches.title">最近比赛</h2>
+              </div>
+              <a class="inline-link" data-i18n="home.recentMatches.link" href="./tournaments.html">查看赛事</a>
+            </div>
+            <div id="homeRecentMatches" class="match-list"></div>
+          </article>
+
+          <article class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="home.quickLinks.eyebrow">Quick Links</p>
+                <h2 data-i18n="home.quickLinks.title">快捷入口</h2>
+              </div>
+            </div>
+            <div class="quick-link-list">
+              <a class="quick-link-card" href="./players.html">
+                <h3 data-i18n="home.quickLinks.playersTitle">球员</h3>
+                <p data-i18n="home.quickLinks.playersText">按国籍、年龄段和标签筛选球员样本。</p>
+              </a>
+              <a class="quick-link-card" href="./tournaments.html">
+                <h3 data-i18n="home.quickLinks.tournamentsTitle">赛事</h3>
+                <p data-i18n="home.quickLinks.tournamentsText">查看赛事时间、结果和中国队比赛明细。</p>
+              </a>
+              <a class="quick-link-card" href="./overseas.html">
+                <h3 data-i18n="home.quickLinks.overseasTitle">留洋</h3>
+                <p data-i18n="home.quickLinks.overseasText">区分当前留洋样本与历史记录。</p>
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <section class="content-panel home-summary-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="home.overseasSummary.eyebrow">按球员国籍</p>
+              <h2 data-i18n="home.overseasSummary.title">留洋样本分布</h2>
+            </div>
+            <a class="inline-link" data-i18n="home.overseasSummary.link" href="./overseas.html">查看留洋</a>
+          </div>
+          <div id="homeOverseasSummary" class="summary-list"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>赛事详情 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="查看单项赛事的时间范围、中国战绩、比赛明细、关键球员与来源链接。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="tournament-detail">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <p class="breadcrumb">
+          <a href="./tournaments.html" data-i18n="tournamentDetail.breadcrumb.list">赛事列表</a>
+          <span>/</span>
+          <span data-i18n="tournamentDetail.breadcrumb.detail">赛事详情</span>
+        </p>
+
+        <section id="tournamentDetailHero" class="page-hero hero-tight"></section>
+
+        <div id="tournamentDetailBody" hidden>
+          <section id="tournamentDetailStats" class="stats-row detail-stats"></section>
+
+          <section class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="tournamentDetail.context.eyebrow">Context</p>
+                <h2 data-i18n="tournamentDetail.context.title">赛事背景与当前专题口径</h2>
+              </div>
+            </div>
+            <div id="tournamentDetailContext" class="stack-list"></div>
+          </section>
+
+          <section class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="tournamentDetail.squad.eyebrow">Squad List</p>
+                <h2 data-i18n="tournamentDetail.squad.title">中国完整名单</h2>
+              </div>
+            </div>
+            <div id="tournamentDetailSquad" class="player-card-grid compact-grid"></div>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="content-panel panel-span-2">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow" data-i18n="tournamentDetail.matches.eyebrow">China Matches</p>
+                  <h2 data-i18n="tournamentDetail.matches.title">中国队比赛明细</h2>
+                </div>
+              </div>
+              <div id="tournamentDetailMatches" class="stack-list"></div>
+            </article>
+
+            <article class="content-panel">
+              <div class="section-head">
+                <div>
+                  <p class="eyebrow" data-i18n="tournamentDetail.keyPlayers.eyebrow">Key Players</p>
+                  <h2 data-i18n="tournamentDetail.keyPlayers.title">中国关键球员</h2>
+                </div>
+              </div>
+              <div id="tournamentDetailKeyPlayers" class="stack-list"></div>
+            </article>
+          </section>
+
+          <section class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="tournamentDetail.sources.eyebrow">Sources</p>
+                <h2 data-i18n="tournamentDetail.sources.title">赛事来源链接</h2>
+              </div>
+            </div>
+            <div id="tournamentDetailSources" class="stack-list"></div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

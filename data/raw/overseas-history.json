@@ -1,0 +1,3619 @@
+{
+  "bucket_definition": [
+    "big-five",
+    "big-five-youth",
+    "big-five-lower-tier",
+    "europe-other",
+    "asia-other",
+    "americas-other"
+  ],
+  "countries": [
+    {
+      "country": "China PR",
+      "status": "in-progress",
+      "verified_records": 15,
+      "bucket_focus": [
+        "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
+        "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队落点，避免与成年一线队出场样本混算；这条线现已明确补入刘邵子洋、何小珂这类从拜仁或西班牙梯队进入欧洲培养链的案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
+        "big-five-lower-tier：已把英格兰次级与第三级职业联赛路径单列出来，避免与真正五大联赛履历混在一起",
+        "europe-other：已补入孙祥、董方卓这类欧洲非五大联赛体系个案，并继续记录塞尔维亚、克罗地亚、荷兰等落点；2025 观察池里，吴少聪连接土超 / 土甲 / 波兰联赛，李磊补回草蜢回流样本，西班牙与葡萄牙方向则继续跟踪杜月徵、Li Changyi、Yang Xiyu、Chen Zheyuan、Yimulan Abuduwaili 等青年路径",
+        "asia-other：暂留空位，等待 J 联赛、K 联赛与东南亚职业体系中的新样本扩充",
+        "americas-other：暂留空位，等待北美与南美职业联赛中的中国样本扩展"
+      ],
+      "seed_examples": [
+        "Ma Mingyu",
+        "Yang Chen",
+        "Sun Jihai",
+        "Li Tie",
+        "Shao Jiayi",
+        "Fan Zhiyi",
+        "Zheng Zhi",
+        "Sun Xiang",
+        "Dong Fangzhuo",
+        "Wu Lei",
+        "Wu Shaocong",
+        "Liu Shaoziyang",
+        "He Xiaoke",
+        "Du Yuezheng",
+        "Li Lei",
+        "Xu Bin",
+        "Wang Bohao",
+        "Wan Xiang",
+        "Jin Yucheng",
+        "Wang Xiuhao"
+      ],
+      "notes": "中国留洋条目已从单一历史个案扩到“早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的四层结构；除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊，以及 2026 年春季新落地的张家鸣、林子皓；同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+      "big_five_appearance_checklist": {
+        "checked_at": "2026-05-22",
+        "source_cutoff": "2020-10-01",
+        "source_title": "懂球帝：五大联赛历史亚洲15国157名球员出场进球数据全记录",
+        "source_url": "https://m.dongqiudi.com/article/1680242.html",
+        "scope_note": "这份 checklist 只解决“之前是否有人做过中日韩五大联赛出场榜”和“榜单上的人是否已入库”两个问题；它只统计五大联赛顶级联赛正式出场，不含五大联赛国家青训 / 梯队和低级别联赛路径。featured_records 仍保留精选样本，不在这里强行扩成完整长名单。",
+        "source_total_players": 13,
+        "source_total_appearances": 381,
+        "source_total_goals": 31,
+        "entries": [
+          {
+            "player": "孙继海",
+            "featured_record_id": "sun-jihai-manchester-city-2002",
+            "appearances": 123,
+            "goals": 3,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 123,
+                "goals": 3
+              }
+            ]
+          },
+          {
+            "player": "邵佳一",
+            "featured_record_id": "shao-jiayi-bundesliga-2002",
+            "appearances": 67,
+            "goals": 4,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 67,
+                "goals": 4
+              }
+            ]
+          },
+          {
+            "player": "杨晨",
+            "featured_record_id": "yang-chen-frankfurt-1998",
+            "appearances": 65,
+            "goals": 16,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 65,
+                "goals": 16
+              }
+            ]
+          },
+          {
+            "player": "武磊",
+            "featured_record_id": "wu-lei-espanyol-2019",
+            "appearances": 49,
+            "goals": 7,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 49,
+                "goals": 7
+              }
+            ]
+          },
+          {
+            "player": "李铁",
+            "featured_record_id": "li-tie-everton-2002",
+            "appearances": 34,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 34,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "蒿俊闵",
+            "appearances": 14,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 14,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "郑智",
+            "featured_record_id": "zheng-zhi-charlton-celtic-2007",
+            "appearances": 12,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 12,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "蒋光太",
+            "appearances": 7,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 7,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "李金羽",
+            "appearances": 6,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 6,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "李可",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "董方卓",
+            "featured_record_id": "dong-fangzhuo-europe-2003",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "李玮锋",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "张呈栋",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          }
+        ]
+      },
+      "featured_records": [
+        {
+          "id": "ma-mingyu-perugia-1999",
+          "name": "Ma Mingyu",
+          "local_name": "马明宇",
+          "bucket": "big-five",
+          "league": "Serie A",
+          "club": "Perugia",
+          "season": "1999-2000",
+          "status": "verified",
+          "appearances": 0,
+          "appearance_label": "正式比赛未登场",
+          "competitive_debut": false,
+          "summary": "1999-2000 赛季，马明宇加盟意甲佩鲁贾，成为中国球员登陆意甲的标志性案例，但整个留洋周期未获得正式比赛出场，赛季结束后回到国内。",
+          "notes": [
+            "可计入五大联赛正式注册样本，但不计入正式出场样本。",
+            "核心信息点是“登陆意甲”与“未登场”并存，经历本身具有代表性。",
+            "后续可继续补签约时间、离队时间和更精确的原始出处。"
+          ]
+        },
+        {
+          "id": "yang-chen-frankfurt-1998",
+          "name": "Yang Chen",
+          "local_name": "杨晨",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Eintracht Frankfurt",
+          "season": "1998-2002",
+          "status": "verified",
+          "appearances": 65,
+          "appearance_label": "德甲 65 场",
+          "competitive_debut": true,
+          "summary": "杨晨 1998 年加盟法兰克福后，在德甲留下 65 场 16 球，既是首位在五大联赛出场的中国球员，也是最早在五大联赛稳定进球的中国前锋。",
+          "notes": [
+            "1998-99 赛季首季即打入 8 球，是中国球员真正意义上的五大联赛突破口。",
+            "德甲 16 球长期保持中国球员五大联赛进球标杆。",
+            "这条路径代表中国留洋史上第一次真正进入欧洲主流联赛常规轮换。"
+          ]
+        },
+        {
+          "id": "sun-jihai-manchester-city-2002",
+          "name": "Sun Jihai",
+          "local_name": "孙继海",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Manchester City",
+          "season": "2002-2008",
+          "status": "verified",
+          "appearances": 130,
+          "appearance_label": "英超 130 场",
+          "competitive_debut": true,
+          "summary": "孙继海在曼城的英超生涯累计 130 场出场，是中国球员在英超长期立足的第一代表样本，也是首位在英超进球的东亚球员。",
+          "notes": [
+            "与早期短期试水不同，孙继海在曼城实现了跨赛季主力级别的持续存在。",
+            "其后场多位置适配能力，证明中国球员并非只能以前场奇兵方式留洋。",
+            "英超 130 场的体量至今仍是中国男足球员最有分量的欧洲顶级联赛履历之一。"
+          ]
+        },
+        {
+          "id": "wu-lei-espanyol-2019",
+          "name": "Wu Lei",
+          "local_name": "武磊",
+          "bucket": "big-five",
+          "league": "LaLiga / Segunda Division",
+          "club": "Espanyol",
+          "season": "2019-2022",
+          "status": "verified",
+          "appearances": 103,
+          "appearance_label": "西甲+西乙 103 场",
+          "competitive_debut": true,
+          "summary": "武磊 2019 年加盟西班牙人后，联赛层面累计 103 场 10 球，各项赛事 126 场 16 球，是近年中国球员五大联赛曝光度和实战价值最高的案例。",
+          "notes": [
+            "既有西甲保级与加泰德比进球，也有西乙升级赛季的持续轮换。",
+            "欧联杯破门与攻破巴萨球门，让其留洋期具备明显历史记忆点。",
+            "这条路径说明中国球员在现代五大联赛里仍能形成稳定三年半周期的留洋样本。"
+          ]
+        },
+        {
+          "id": "li-tie-everton-2002",
+          "name": "Li Tie",
+          "local_name": "李铁",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Everton",
+          "season": "2002-2006",
+          "status": "verified",
+          "appearances": 34,
+          "appearance_label": "英超 34 场",
+          "competitive_debut": true,
+          "summary": "李铁在埃弗顿的英超阶段累计出场 34 次，是继孙继海之后中国成年中场进入英超正式轮换的代表样本，也对应 2002 世界杯一代里最具辨识度的留洋中场路径。",
+          "notes": [
+            "2002/03 赛季被莫耶斯频繁使用，说明其防守覆盖和跑动能力在英超中下游体系内具备即战力。",
+            "后续伤病与位置竞争压缩了出场体量，但正式英超履历本身仍有历史意义。",
+            "这条记录补上了中国成年中场进入五大联赛主轮换的稀缺案例。"
+          ]
+        },
+        {
+          "id": "shao-jiayi-bundesliga-2002",
+          "name": "Shao Jiayi",
+          "local_name": "邵佳一",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "TSV 1860 Munich / Energie Cottbus",
+          "season": "2002-2009",
+          "status": "verified",
+          "appearances": 67,
+          "appearance_label": "德甲 67 场",
+          "competitive_debut": true,
+          "summary": "邵佳一在德国阶段留下 67 场德甲出场，是杨晨之后中国球员在德国主流联赛里持续时间最长的攻击型中场样本之一，也把中国留洋从前锋与后卫扩展到了前腰 / 左脚定位球手类型。",
+          "notes": [
+            "其德国生涯总长接近 9 年，除德甲外还覆盖 2. Bundesliga，说明中国球员曾有长周期融入德国体系的能力。",
+            "在科特布斯阶段留下稳定首发与进球记录，是中国中场在欧洲顶级联赛少见的长期样本。",
+            "这条记录补足了中国成年左脚进攻型中场在德甲的历史主线。"
+          ]
+        },
+        {
+          "id": "fan-zhiyi-britain-1998",
+          "name": "Fan Zhiyi",
+          "local_name": "范志毅",
+          "bucket": "big-five-lower-tier",
+          "league": "English First Division / Scottish Premier League / English Second Division",
+          "club": "Crystal Palace / Dundee / Cardiff City",
+          "season": "1998-2003",
+          "status": "verified",
+          "appearances": 121,
+          "appearance_label": "英苏职业赛事 121 场",
+          "competitive_debut": true,
+          "summary": "范志毅在水晶宫、邓迪和加的夫城的海外阶段累计留下 121 场正式比赛，是中国成年后卫在英国职业足球体系长期立足的早期代表，也对应中国球员在五大联赛之外先行打开欧洲职业通道的路径。",
+          "notes": [
+            "在水晶宫阶段曾当选俱乐部赛季最佳球员，说明其对抗与防守能力在英格兰次顶级联赛具备高辨识度。",
+            "其路径虽不属于五大联赛主线，但职业化程度和持续时间都明显高于短期试训型留洋。",
+            "这条记录补上了中国成熟中卫 / 后腰在英国职业体系的长期样本。"
+          ]
+        },
+        {
+          "id": "zheng-zhi-charlton-celtic-2007",
+          "name": "Zheng Zhi",
+          "local_name": "郑智",
+          "bucket": "big-five-lower-tier",
+          "league": "Premier League / Championship / Scottish Premier League",
+          "club": "Charlton Athletic / Celtic",
+          "season": "2007-2010",
+          "status": "verified",
+          "appearances": 83,
+          "appearance_label": "英格兰+苏超联赛 83 场",
+          "competitive_debut": true,
+          "summary": "郑智在查尔顿竞技与凯尔特人的海外阶段累计联赛出场 83 次，是中国成年中场在英格兰职业联赛与苏超双线保持正式比赛输出的代表样本，也对应中国国家队核心球员在黄金年龄段短期外闯的典型路径。",
+          "notes": [
+            "查尔顿阶段既覆盖英超也覆盖英冠，展示了其在英格兰高强度联赛中的适应能力。",
+            "转投凯尔特人后继续在冠军级球队获得联赛出场，说明其海外路径并非一次性试水。",
+            "这条记录补上了中国成年中场在英国职业联赛多层级流动的案例。"
+          ]
+        },
+        {
+          "id": "sun-xiang-psv-austria-wien-2007",
+          "name": "Sun Xiang",
+          "local_name": "孙祥",
+          "bucket": "europe-other",
+          "league": "Eredivisie / Austrian Bundesliga",
+          "club": "PSV Eindhoven / Austria Wien",
+          "season": "2007-2009",
+          "status": "verified",
+          "appearances": 24,
+          "appearance_label": "荷甲+奥甲 24 场",
+          "competitive_debut": true,
+          "summary": "孙祥在 PSV 与 Austria Wien 的欧洲阶段累计联赛出场 24 次，是中国左后卫在荷兰和奥地利顶级联赛留下正式履历的代表样本，也是中国球员进入欧冠淘汰赛报名与出场讨论中最常被提及的名字之一。",
+          "notes": [
+            "PSV 阶段虽时间较短，但历史辨识度很高，长期被视作中国球员进入欧冠主流俱乐部体系的标志节点。",
+            "转往奥地利维也纳后获得更多联赛出场，使这段留洋不只是短期曝光。",
+            "这条记录补上了中国成熟边后卫在欧洲非五大顶级联赛的可核样本。"
+          ]
+        },
+        {
+          "id": "dong-fangzhuo-europe-2003",
+          "name": "Dong Fangzhuo",
+          "local_name": "董方卓",
+          "bucket": "europe-other",
+          "league": "Belgian Second Division / Ekstraklasa / Segunda Liga",
+          "club": "Royal Antwerp / Legia Warsaw / Portimonense",
+          "season": "2003-2011",
+          "status": "verified",
+          "appearances": 76,
+          "appearance_label": "欧洲联赛 76 场",
+          "competitive_debut": true,
+          "summary": "董方卓在安特卫普、华沙莱吉亚和波尔蒂芒人等海外阶段累计联赛出场 76 次，是中国前锋以“豪门签约后外放培养”路径进入欧洲职业体系的特殊案例，也是在欧洲次级与边缘主流联赛留下正式比赛体量的代表人物。",
+          "notes": [
+            "曼联合同本身提升了其历史辨识度，但真正可量化的正式比赛主要来自安特卫普等外租阶段。",
+            "2005/06 赛季在比利时二级联赛打出较高进球产量，说明其并非纯符号性留洋个案。",
+            "这条记录补上了中国成年前锋通过比利时培养链进入欧洲职业体系的特殊路径。"
+          ]
+        },
+        {
+          "id": "wu-shaocong-turkey-poland-2023",
+          "name": "Wu Shaocong",
+          "local_name": "吴少聪",
+          "bucket": "europe-other",
+          "league": "Süper Lig / TFF First League / Ekstraklasa",
+          "club": "İstanbul Başakşehir / Gençlerbirliği / Radomiak Radom",
+          "season": "2023-2025",
+          "status": "verified",
+          "appearances": 15,
+          "appearance_label": "土超+土甲+波兰联赛 15 场",
+          "competitive_debut": true,
+          "summary": "吴少聪 2023 年加盟伊斯坦布尔巴萨克赛尔，成为首位在土耳其职业联赛注册并出场的中国球员；随后外租青年联合拿到 12 场土甲联赛，再短暂挂过波兰拉多米亚克路径，构成近年中国成年中卫最完整的一条土耳其方向留洋样本。",
+          "notes": [
+            "维基可核 2023-2025 海外联赛出场为土超 3 场、土甲 12 场、波兰顶级联赛 0 场。",
+            "这条路径把葡超通道之外的土耳其职业链补进了中国近年留洋版图。",
+            "2025-01-30 返回北京国安后，这段欧洲经历应归到历史样本而非当前留洋。"
+          ]
+        },
+        {
+          "id": "liu-shaoziyang-bayern-austria-2022",
+          "name": "Liu Shaoziyang",
+          "local_name": "刘邵子洋",
+          "bucket": "big-five-youth",
+          "league": "Regionalliga Bayern / Kärntner Liga / Austrian Regionalliga / Austrian 2. Liga",
+          "club": "Bayern Munich II / Austria Klagenfurt II / SV Ried II / SV Horn",
+          "season": "2022-2025",
+          "status": "verified",
+          "appearances": 40,
+          "appearance_label": "欧洲梯队与低级别联赛 40 场",
+          "competitive_debut": true,
+          "summary": "刘邵子洋是拜仁签下的首位中国球员，但其欧洲阶段真正可量化的比赛主要发生在奥地利和拜仁外租链：2022 到 2025 年间，他在奥地利地区联赛、二级联赛和青年 / 预备队体系累计留下 40 场正式记录。",
+          "notes": [
+            "Wikipedia 可核 2022-2025 欧洲正式比赛体量主要由 Austria Klagenfurt II 13 场、SV Ried II 13 场、SV Horn 14 场组成。",
+            "这条记录更适合作为“德甲豪门签约 + 奥地利培养链”的青年门将案例，而不是五大联赛一线队样本。",
+            "2025 年 9 月转往 LAFC2 后，其欧洲阶段应单独截断为 2022-2025 历史记录。"
+          ]
+        },
+        {
+          "id": "he-xiaoke-spain-pathway-2021",
+          "name": "He Xiaoke",
+          "local_name": "何小珂",
+          "bucket": "big-five-youth",
+          "league": "Segona Catalana / Primera Federación / Segunda División",
+          "club": "Sabadell B / Sabadell / FC Andorra",
+          "season": "2021-2024",
+          "status": "verified",
+          "appearances": 2,
+          "appearance_label": "西班牙青训与低级别职业 2 场",
+          "competitive_debut": true,
+          "summary": "何小珂的欧洲经历覆盖塞尔维亚短暂试水与西班牙主线培养，但真正可量化的比赛主要在西班牙：Sabadell B 1 场、Sabadell 一线队西协甲 1 场，随后又进入 FC Andorra 体系，构成中国青年前锋在西班牙青训与第三级职业联赛之间流动的代表路径。",
+          "notes": [
+            "2022-12-18 对奥萨苏纳 B 的替补登场，是其可公开核验的西协甲首秀。",
+            "这条路径更适合归到五大联赛国家青训 / 梯队，而不是成年留洋成功样本。",
+            "2025 年回到国内职业俱乐部后，其西班牙阶段保留为历史路径。"
+          ]
+        },
+        {
+          "id": "du-yuezheng-marbella-2024",
+          "name": "Du Yuezheng",
+          "local_name": "杜月徵",
+          "bucket": "big-five-lower-tier",
+          "league": "Primera Federación",
+          "club": "Marbella",
+          "season": "2024-2025",
+          "status": "verified",
+          "appearances": 22,
+          "appearance_label": "西协甲 22 场 3 球",
+          "competitive_debut": true,
+          "summary": "杜月徵 2024 年转入西协甲马贝拉后，逐步从中国国内青训与中超青年球员，转换成能在西班牙第三级职业联赛稳定获得分钟的前锋样本；到 2026 年初，他的注册关系仍与马贝拉相连，但比赛已转回国内租借链。",
+          "notes": [
+            "Wikipedia 可核其在马贝拉阶段累计 22 场 3 球，是近年中国青年前锋在西协甲最实打实的样本之一。",
+            "由于 2026 年已租借回重庆铜梁龙，这条记录在历史页按 2024-2025 的西班牙阶段单独保留。",
+            "这条路径说明西班牙第三级联赛仍是中国青年球员最现实的职业落点之一。"
+          ]
+        },
+        {
+          "id": "li-lei-grasshopper-2022",
+          "name": "Li Lei",
+          "local_name": "李磊",
+          "bucket": "europe-other",
+          "league": "Swiss Super League",
+          "club": "Grasshopper Club Zürich",
+          "season": "2022-2023",
+          "status": "verified",
+          "appearances": 13,
+          "appearance_label": "瑞士超 13 场",
+          "competitive_debut": true,
+          "summary": "李磊 2022 年冬季加盟苏黎世草蜢，是近年中国国家队成熟左后卫重返欧洲的一次短周期尝试；虽然只维持到 2023 年 2 月，但他仍留下 13 场瑞士超和 1 次助攻，构成成年国脚回流前的清晰欧洲样本。",
+          "notes": [
+            "Wikipedia 可核其草蜢阶段总计 14 次正式出场，其中联赛 13 场、杯赛 1 场。",
+            "和青年试训不同，这条路径属于已经在国内站稳后再去欧洲顶级联赛尝试的成熟球员样本。",
+            "2023 年提前终止合同回国，说明这类成熟国脚型留洋仍普遍较短。"
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "status": "in-progress",
+      "verified_records": 51,
+      "bucket_focus": [
+        "big-five：已按既有出场排行补入中田英寿、本田圭佑、长友佑都、内田笃人、吉田麻也、富安健洋、南野拓实、大迫勇也、乾贵士、酒井宏树、原口元气、酒井高德、松井大辅、高原直泰等成年一线队样本，并把三笘薰、久保建英、铃木彩艳、镰田大地、远藤航、浅野拓磨、堂安律、伊藤洋辉、町野修斗、田中碧等当前成年样本补进默认列表",
+        "big-five-youth：当前除了法国、德国等五大联赛国家的一般青训样本，也开始明确记录门兴、南安普顿这类日本年轻球员近年更集中的梯队 / 外租培养路线，避免把 U17/U19 注册直接算成五大联赛一线队履历",
+        "big-five-lower-tier：当前已补入法乙兰斯的中村敬斗，以及 QPR / Birmingham City 这些英格兰次级联赛样本，后续继续扩德乙、西乙路径",
+        "europe-other：当前已补入阿贾克斯的富安健洋、板仓滉，亨克的伊东纯也，以及上田绮世、渡边刚、旗手怜央、前田大然、守田英正这些荷甲 / 比甲 / 苏超 / 葡超现役样本，并开始把 Salzburg / NEC / Sint-Truiden 这类日本年轻球员中转站作为持续观察对象",
+        "asia-other：保留西亚与东南亚职业流动路径",
+        "americas-other：暂未设代表条目，等待日裔或日本现役北美样本进一步出现"
+      ],
+      "seed_examples": [
+        "Yasuhiko Okudera",
+        "Hidetoshi Nakata",
+        "Keisuke Honda",
+        "Makoto Hasebe",
+        "Takashi Inui",
+        "Hiroki Sakai",
+        "Genki Haraguchi",
+        "Gotoku Sakai",
+        "Daisuke Matsui",
+        "Naohiro Takahara",
+        "Yuto Nagatomo",
+        "Atsuto Uchida",
+        "Maya Yoshida",
+        "Shinji Kagawa",
+        "Shinji Okazaki",
+        "Takumi Minamino",
+        "Yuya Osako",
+        "Takehiro Tomiyasu",
+        "Takefusa Kubo",
+        "Kaoru Mitoma",
+        "Zion Suzuki"
+      ],
+      "notes": "日本留洋库已从单一历史主线扩成“成年五大联赛代表 + 2025/26 现役海外快照”的双层结构；当前除了久保建英、三笘薰、铃木彩艳等现役样本，也已补入中田英寿、本田圭佑、长友佑都、内田笃人、吉田麻也、富安健洋、南野拓实、大迫勇也，以及乾贵士、酒井宏树、原口元气、酒井高德、松井大辅、高原直泰这些能在日本球员五大联赛出场排行、Wikipedia 与 Transfermarkt 交叉确认的长期个案。这一轮再把上田绮世、斋藤光毅、三户舜介、渡边刚、藤田让瑠·奇马、町田浩树、桥冈大树、后藤启介、旗手怜央、前田大然、古桥亨梧、岩田智辉、守田英正、藤本宽也、川崎飒太、川村拓梦、铃木唯人等当前样本接进来，并按当前俱乐部状态重分到五大联赛、五大联赛国家低级别联赛和欧洲其他联赛，确保默认当前留洋页能直接看到更完整的现役名单；同时新增了按 2020 年 10 月 1 日截止口径整理的日本球员五大联赛历史出场榜 checklist，方便把长尾名字和高出场量样本区分开来。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+      "big_five_appearance_checklist": {
+        "checked_at": "2026-05-22",
+        "source_cutoff": "2020-10-01",
+        "source_title": "懂球帝：五大联赛历史亚洲15国157名球员出场进球数据全记录",
+        "source_url": "https://m.dongqiudi.com/article/1680242.html",
+        "scope_note": "原文按联赛分组而非按总出场数排序，这里保留 checklist 语义；这份榜单只统计五大联赛顶级联赛正式出场，不含五大联赛国家青训 / 梯队和低级别联赛路径。后续如要单做“日本球员五大联赛历史总榜”页面，再按 appearances 统一排序即可。",
+        "source_total_players": 61,
+        "source_total_appearances": 4221,
+        "source_total_goals": 391,
+        "entries": [
+          {
+            "player": "松井大辅",
+            "featured_record_id": "daisuke-matsui-ligue-1-2004",
+            "appearances": 148,
+            "goals": 17,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 148,
+                "goals": 17
+              }
+            ]
+          },
+          {
+            "player": "酒井宏树",
+            "featured_record_id": "hiroki-sakai-big-five-2012",
+            "appearances": 213,
+            "goals": 3,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 121,
+                "goals": 1
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 92,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "川岛永嗣",
+            "appearances": 38,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 38,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "昌子源",
+            "appearances": 19,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 19,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "中田浩二",
+            "appearances": 9,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 9,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "广山望",
+            "appearances": 7,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 7,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "稻本润一",
+            "appearances": 114,
+            "goals": 4,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 5,
+                "goals": 0
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 43,
+                "goals": 0
+              },
+              {
+                "league": "Premier League",
+                "appearances": 66,
+                "goals": 4
+              }
+            ]
+          },
+          {
+            "player": "长友佑都",
+            "featured_record_id": "yuto-nagatomo-big-five-2010",
+            "appearances": 188,
+            "goals": 9,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 2,
+                "goals": 0
+              },
+              {
+                "league": "Serie A",
+                "appearances": 186,
+                "goals": 9
+              }
+            ]
+          },
+          {
+            "player": "伊藤翔",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "长谷部诚",
+            "featured_record_id": "makoto-hasebe-bundesliga-2007",
+            "appearances": 313,
+            "goals": 7,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 313,
+                "goals": 7
+              }
+            ]
+          },
+          {
+            "player": "奥寺康彦",
+            "featured_record_id": "yasuhiko-okudera-bundesliga-1977",
+            "appearances": 234,
+            "goals": 26,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 234,
+                "goals": 26
+              }
+            ]
+          },
+          {
+            "player": "酒井高德",
+            "featured_record_id": "gotoku-sakai-bundesliga-2012",
+            "appearances": 170,
+            "goals": 2,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 170,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "大迫勇也",
+            "featured_record_id": "yuya-osako-bundesliga-2014",
+            "appearances": 159,
+            "goals": 26,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 159,
+                "goals": 26
+              }
+            ]
+          },
+          {
+            "player": "香川真司",
+            "featured_record_id": "shinji-kagawa-dortmund-2010",
+            "appearances": 186,
+            "goals": 47,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 148,
+                "goals": 41
+              },
+              {
+                "league": "Premier League",
+                "appearances": 38,
+                "goals": 6
+              }
+            ]
+          },
+          {
+            "player": "高原直泰",
+            "featured_record_id": "naohiro-takahara-bundesliga-2003",
+            "appearances": 135,
+            "goals": 25,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 135,
+                "goals": 25
+              }
+            ]
+          },
+          {
+            "player": "冈崎慎司",
+            "featured_record_id": "shinji-okazaki-leicester-2015",
+            "appearances": 246,
+            "goals": 51,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 128,
+                "goals": 37
+              },
+              {
+                "league": "LaLiga",
+                "appearances": 4,
+                "goals": 0
+              },
+              {
+                "league": "Premier League",
+                "appearances": 114,
+                "goals": 14
+              }
+            ]
+          },
+          {
+            "player": "原口元气",
+            "featured_record_id": "genki-haraguchi-bundesliga-2014",
+            "appearances": 119,
+            "goals": 4,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 119,
+                "goals": 4
+              }
+            ]
+          },
+          {
+            "player": "清武弘嗣",
+            "appearances": 121,
+            "goals": 18,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 117,
+                "goals": 17
+              },
+              {
+                "league": "LaLiga",
+                "appearances": 4,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "内田笃人",
+            "featured_record_id": "atsuto-uchida-bundesliga-2010",
+            "appearances": 104,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 104,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "乾贵士",
+            "featured_record_id": "takashi-inui-big-five-2011",
+            "appearances": 217,
+            "goals": 22,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 75,
+                "goals": 7
+              },
+              {
+                "league": "LaLiga",
+                "appearances": 142,
+                "goals": 15
+              }
+            ]
+          },
+          {
+            "player": "武藤嘉纪",
+            "appearances": 93,
+            "goals": 21,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 66,
+                "goals": 20
+              },
+              {
+                "league": "Premier League",
+                "appearances": 25,
+                "goals": 1
+              },
+              {
+                "league": "LaLiga",
+                "appearances": 2,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "尾崎加寿夫",
+            "appearances": 62,
+            "goals": 9,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 62,
+                "goals": 9
+              }
+            ]
+          },
+          {
+            "player": "宇佐美贵史",
+            "appearances": 53,
+            "goals": 3,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 53,
+                "goals": 3
+              }
+            ]
+          },
+          {
+            "player": "镰田大地",
+            "appearances": 33,
+            "goals": 2,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 33,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "小野伸二",
+            "appearances": 29,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 29,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "浅野拓磨",
+            "appearances": 28,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 28,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "久保裕也",
+            "appearances": 22,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 22,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "伊藤达哉",
+            "appearances": 20,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 20,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "矢野贵章",
+            "appearances": 15,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 15,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "长泽和辉",
+            "appearances": 11,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 11,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "大久保嘉人",
+            "appearances": 48,
+            "goals": 5,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 9,
+                "goals": 0
+              },
+              {
+                "league": "LaLiga",
+                "appearances": 39,
+                "goals": 5
+              }
+            ]
+          },
+          {
+            "player": "槙野智章",
+            "appearances": 8,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 8,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "大前元纪",
+            "appearances": 7,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 7,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "山口萤",
+            "appearances": 6,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 6,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "金崎梦生",
+            "appearances": 4,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 4,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "大津祐树",
+            "appearances": 3,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 3,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "丸冈满",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "远藤航",
+            "appearances": 2,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 2,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "堂安律",
+            "appearances": 2,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 2,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "久保建英",
+            "featured_record_id": "takefusa-kubo-real-sociedad-2025",
+            "appearances": 39,
+            "goals": 4,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 39,
+                "goals": 4
+              }
+            ]
+          },
+          {
+            "player": "柴崎岳",
+            "appearances": 29,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 29,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "家长昭博",
+            "appearances": 18,
+            "goals": 2,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 18,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "城彰二",
+            "appearances": 15,
+            "goals": 2,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 15,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "中村俊辅",
+            "appearances": 93,
+            "goals": 11,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 13,
+                "goals": 0
+              },
+              {
+                "league": "Serie A",
+                "appearances": 80,
+                "goals": 11
+              }
+            ]
+          },
+          {
+            "player": "西泽明训",
+            "appearances": 6,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 6,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "迈克-哈维纳尔",
+            "appearances": 5,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 5,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "指宿洋史",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "中田英寿",
+            "featured_record_id": "hidetoshi-nakata-serie-a-1998",
+            "appearances": 203,
+            "goals": 26,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 182,
+                "goals": 24
+              },
+              {
+                "league": "Premier League",
+                "appearances": 21,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "森本贵幸",
+            "appearances": 104,
+            "goals": 19,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 104,
+                "goals": 19
+              }
+            ]
+          },
+          {
+            "player": "本田圭佑",
+            "featured_record_id": "keisuke-honda-serie-a-2014",
+            "appearances": 81,
+            "goals": 9,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 81,
+                "goals": 9
+              }
+            ]
+          },
+          {
+            "player": "柳泽敦",
+            "appearances": 44,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 44,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "富安健洋",
+            "featured_record_id": "takehiro-tomiyasu-big-five-2019",
+            "appearances": 31,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 31,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "名波浩",
+            "appearances": 24,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 24,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "三浦知良",
+            "appearances": 20,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 20,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "吉田麻也",
+            "featured_record_id": "maya-yoshida-big-five-2012",
+            "appearances": 169,
+            "goals": 6,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 15,
+                "goals": 0
+              },
+              {
+                "league": "Premier League",
+                "appearances": 154,
+                "goals": 6
+              }
+            ]
+          },
+          {
+            "player": "大黑将志",
+            "appearances": 10,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 10,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "小笠原满男",
+            "appearances": 6,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 6,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "宫市亮",
+            "appearances": 17,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 17,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "南野拓实",
+            "featured_record_id": "takumi-minamino-big-five-2019",
+            "appearances": 12,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 12,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "户田和幸",
+            "appearances": 4,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 4,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "细贝萌",
+            "appearances": 102,
+            "goals": 3,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 102,
+                "goals": 3
+              }
+            ]
+          }
+        ]
+      },
+      "featured_records": [
+        {
+          "id": "yasuhiko-okudera-bundesliga-1977",
+          "name": "Yasuhiko Okudera",
+          "local_name": "奥寺康彦",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Cologne / Hertha Berlin / Werder Bremen",
+          "season": "1977-1986",
+          "status": "verified",
+          "appearances": 234,
+          "appearance_label": "德甲 234 场",
+          "competitive_debut": true,
+          "summary": "奥寺康彦在 1977 年登陆德国，成为日本职业球员留洋欧洲的先驱，并在科隆、柏林赫塔和不来梅累计留下 234 场德甲出场，为日本球员进入五大联赛打开现实路径。",
+          "notes": [
+            "是首位在德国职业足坛立足的日本球员，也是日本留洋史上的先行者。",
+            "首季就随科隆拿到德甲和德国杯双冠，证明日本球员可以在五大联赛冠军队立足。",
+            "其德甲路径奠定了日本球员后来长期偏向德国发展的早期模板。"
+          ]
+        },
+        {
+          "id": "makoto-hasebe-bundesliga-2007",
+          "name": "Makoto Hasebe",
+          "local_name": "长谷部诚",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Wolfsburg / Nuremberg / Eintracht Frankfurt",
+          "season": "2007-2024",
+          "status": "verified",
+          "appearances": 384,
+          "appearance_label": "德甲 384 场",
+          "competitive_debut": true,
+          "summary": "长谷部诚在德国顶级联赛累计 384 场出场，是截至 2025 年 3 月 20 日的日本球员德甲出场纪录保持者，也是亚洲球员在德甲出场的标杆样本。",
+          "notes": [
+            "2008/09 赛季随沃尔夫斯堡夺得德甲冠军，后期又随法兰克福赢得德国杯和欧联杯。",
+            "覆盖中场与后防多个角色，说明日本球员在五大联赛不再只是技术型边缘补充。",
+            "其超长留队周期代表日本球员已经从先锋个案走向体系内长期主力。"
+          ]
+        },
+        {
+          "id": "shinji-kagawa-dortmund-2010",
+          "name": "Shinji Kagawa",
+          "local_name": "香川真司",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Borussia Dortmund",
+          "season": "2010-2019",
+          "status": "verified",
+          "appearances": 148,
+          "appearance_label": "德甲 148 场",
+          "competitive_debut": true,
+          "summary": "香川真司在多特蒙德的两段德甲经历合计出场 148 次、打入 41 球，是德甲历史进球最多的日本球员，也是日本攻击手在五大联赛进入冠军主力层的代表。",
+          "notes": [
+            "首个两季便随多特连续夺得 2010/11 和 2011/12 德甲冠军。",
+            "其 41 粒德甲进球说明日本球员不只能够立足，也能在进攻端成为决定比赛的人物。",
+            "从多特转会曼联、再回归德甲的轨迹，体现出日本球员在英德两大主流联赛之间的流动能力。"
+          ]
+        },
+        {
+          "id": "shinji-okazaki-leicester-2015",
+          "name": "Shinji Okazaki",
+          "local_name": "冈崎慎司",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Leicester City",
+          "season": "2015-2019",
+          "status": "verified",
+          "appearances": 114,
+          "appearance_label": "英超 114 场",
+          "competitive_debut": true,
+          "summary": "冈崎慎司 2015 年加盟莱斯特城后，在英超出场 114 次，并作为高强度前场拼抢的重要一环参与球队 2015/16 赛季的奇迹夺冠。",
+          "notes": [
+            "2015/16 赛季仅缺席两场联赛，是莱斯特冠军赛季的高频轮转主力之一。",
+            "其英超经历说明日本球员不仅适配德甲技术流，也能适配英超高对抗节奏。",
+            "是日本球员在五大联赛冠军队中承担功能性主力角色的典型样本。"
+          ]
+        },
+        {
+          "id": "takefusa-kubo-real-sociedad-2025",
+          "name": "Takefusa Kubo",
+          "local_name": "久保建英",
+          "bucket": "big-five",
+          "league": "LaLiga",
+          "club": "Real Sociedad",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 24,
+          "appearance_label": "2025/26 西甲 24 场",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，LaLiga 官方球员页显示久保建英在 2025/26 赛季已为皇家社会出战西甲 24 场，贡献 2 球 4 助攻，仍是日本球员在西甲平台的头部样本。",
+          "notes": [
+            "这条记录按 2025/26 当前赛季快照建档，不等同于久保建英的西甲生涯总数。",
+            "皇家社会与西甲官方口径显示其仍处于球队前场主力框架之内。",
+            "后续如果夏窗转会或赛季收官，需要同步刷新出场、进球和结论。"
+          ]
+        },
+        {
+          "id": "kaoru-mitoma-brighton-2025",
+          "name": "Kaoru Mitoma",
+          "local_name": "三笘薰",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Brighton & Hove Albion",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 22,
+          "appearance_label": "2025/26 英超 22 场",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，英超官方数据页显示三笘薰在 2025/26 赛季联赛出场 22 次，其中 19 次首发、3 次替补，并贡献 2 球 1 助攻，延续了日本边锋在英超的稳定存在。",
+          "notes": [
+            "这条记录按 2025/26 当前赛季快照建档，不等同于其英超生涯累计数据。",
+            "英超官方页面同时列出其创造机会与射门数据，说明其仍是布莱顿边路进攻的重要一环。",
+            "如果后续出现伤停或转会，这条快照需要按实际赛季终值回写。"
+          ]
+        },
+        {
+          "id": "zion-suzuki-parma-2025",
+          "name": "Zion Suzuki",
+          "local_name": "铃木彩艳",
+          "bucket": "big-five",
+          "league": "Serie A",
+          "club": "Parma",
+          "season": "2025-2026",
+          "history_year_range": "2025-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 20,
+          "appearance_label": "2025/26 意甲 20 场",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，帕尔马官方球员页显示铃木彩艳在 2025/26 赛季已于意甲出场 20 次且 20 次首发，附带 1970 分钟与 7 次零封，是日本门将在五大联赛主力化的当前代表。",
+          "notes": [
+            "这条记录按 2025/26 当前赛季快照建档，不等同于其完整欧洲生涯总数。",
+            "门将位置的持续首发价值很高，说明日本留洋已经不只集中在技术型中前场。",
+            "如果赛季结束或出现转会，需补齐赛季终值与下一站信息。"
+          ]
+        },
+        {
+          "id": "hidetoshi-nakata-serie-a-1998",
+          "name": "Hidetoshi Nakata",
+          "local_name": "中田英寿",
+          "bucket": "big-five",
+          "league": "Serie A",
+          "club": "Perugia / Roma / Parma / Bologna / Fiorentina",
+          "season": "1998-2006",
+          "status": "verified",
+          "appearances": 182,
+          "appearance_label": "意甲 182 场",
+          "competitive_debut": true,
+          "summary": "中田英寿在意甲累计出场 182 次、贡献 24 球 22 助攻，是日本球员在五大联赛早期最具持续性的中场样本，也是日本留洋史从“进入联赛”走向“长期立足”的核心人物。",
+          "notes": [
+            "其意甲足迹覆盖佩鲁贾、罗马、帕尔马、博洛尼亚和佛罗伦萨五支球队，体现出跨俱乐部持续生存能力。",
+            "2000/01 赛季在罗马随队夺得意甲冠军，是日本球员参与五大联赛争冠体系的标志性节点。",
+            "这条记录补上了日本成年攻击型中场在意甲长周期留洋的历史主线。"
+          ]
+        },
+        {
+          "id": "keisuke-honda-serie-a-2014",
+          "name": "Keisuke Honda",
+          "local_name": "本田圭佑",
+          "bucket": "big-five",
+          "league": "Serie A",
+          "club": "AC Milan",
+          "season": "2014-2017",
+          "status": "verified",
+          "appearances": 81,
+          "appearance_label": "意甲 81 场",
+          "competitive_debut": true,
+          "summary": "本田圭佑在 AC Milan 的意甲阶段累计 81 场 9 球 11 助，是日本攻击型中场在意甲商业曝光与实战轮换兼具的代表样本，也是 21 岁以上成年阶段稳定进入豪门主轮换的案例。",
+          "notes": [
+            "他以 10 号球衣身份进入米兰主线阵容，说明日本球员在意甲不再只是功能性补位。",
+            "9 球 11 助的数据使其成为日本中前场球员在意甲的高辨识度代表之一。",
+            "这条记录补足了日本成年留洋样本里“豪门环境中的中前场轮换”类型。"
+          ]
+        },
+        {
+          "id": "maya-yoshida-big-five-2012",
+          "name": "Maya Yoshida",
+          "local_name": "吉田麻也",
+          "bucket": "big-five",
+          "league": "Premier League / Serie A / all competitions",
+          "club": "Southampton / Sampdoria",
+          "season": "2012-2023",
+          "status": "verified",
+          "appearances": 268,
+          "appearance_label": "英意俱乐部各项赛事 268 场",
+          "competitive_debut": true,
+          "summary": "吉田麻也在南安普顿和桑普多利亚两段五大联赛经历里，各项赛事累计出场 268 次，是日本成年中后卫在英超与意甲双线长期立足的代表样本。",
+          "notes": [
+            "南安普顿各项赛事 194 场、桑普多利亚各项赛事 74 场，体量足以证明其跨联赛持续性。",
+            "他把日本留洋版图从德甲主线进一步扩展到英超和意甲的中后场角色。",
+            "这条记录补上了日本 21 岁以上成熟中卫在五大联赛长期站稳脚跟的轨迹。"
+          ]
+        },
+        {
+          "id": "takehiro-tomiyasu-big-five-2019",
+          "name": "Takehiro Tomiyasu",
+          "local_name": "富安健洋",
+          "bucket": "big-five",
+          "league": "Serie A / Premier League",
+          "club": "Bologna / Arsenal",
+          "season": "2019-2025",
+          "status": "verified",
+          "appearances": 126,
+          "appearance_label": "意甲+英超 126 场",
+          "competitive_debut": true,
+          "summary": "富安健洋在博洛尼亚与阿森纳两段五大联赛经历里累计联赛 126 场，是日本后卫由意甲跳向英超、并在两个联赛都具备首发能力的现代样本。",
+          "notes": [
+            "Serie A 61 场与 Premier League 65 场的双联赛履历，使其成为日本防线样本里最完整的跨联赛个案之一。",
+            "他兼具中卫和边后卫功能，说明日本成年球员在五大联赛的角色适配度进一步提升。",
+            "这条记录补足了日本 21 岁以上后卫从意甲验证到英超竞争的路径。"
+          ]
+        },
+        {
+          "id": "yuto-nagatomo-big-five-2010",
+          "name": "Yuto Nagatomo",
+          "local_name": "长友佑都",
+          "bucket": "big-five",
+          "league": "Serie A / Ligue 1",
+          "club": "Cesena / Inter Milan / Marseille",
+          "season": "2010-2021",
+          "status": "verified",
+          "appearances": 211,
+          "appearance_label": "意甲+法甲 211 场",
+          "competitive_debut": true,
+          "summary": "长友佑都在切塞纳、国际米兰和马赛的五大联赛阶段累计联赛出场 211 次，是日本成年边后卫在欧洲顶级联赛立足体量最大的代表之一，也对应日本防守球员长期打进豪门与欧战常客序列的成熟路径。",
+          "notes": [
+            "国米阶段 170 场意甲出场是其欧洲生涯的核心体量，足以说明其在豪门环境中的长期竞争力。",
+            "其路径覆盖保级队切塞纳、豪门国米与法甲马赛，展示了日本边后卫跨联赛生存能力。",
+            "若把加拉塔萨雷阶段一并纳入欧洲顶级联赛履历，其整体海外体量还会更高。"
+          ]
+        },
+        {
+          "id": "atsuto-uchida-bundesliga-2010",
+          "name": "Atsuto Uchida",
+          "local_name": "内田笃人",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Schalke 04 / Union Berlin",
+          "season": "2010-2018",
+          "status": "verified",
+          "appearances": 104,
+          "appearance_label": "德甲 104 场",
+          "competitive_debut": true,
+          "summary": "内田笃人在沙尔克与柏林联合阶段累计留下 104 场德甲出场，是日本成年右后卫在德国顶级联赛长期立足的代表样本，也对应日本防线球员在欧冠级别俱乐部承担主力角色的成熟路径。",
+          "notes": [
+            "沙尔克阶段长期占据主力右后卫位置，并随队打进欧冠半决赛，说明其不只是联赛常规轮换。",
+            "104 场德甲履历使其成为日本边后卫在德国体系的标志案例之一。",
+            "这条记录补上了日本右后卫在五大联赛豪门 / 强队环境中的长期样本。"
+          ]
+        },
+        {
+          "id": "takumi-minamino-big-five-2019",
+          "name": "Takumi Minamino",
+          "local_name": "南野拓实",
+          "bucket": "big-five",
+          "league": "Premier League / Ligue 1",
+          "club": "Liverpool / Southampton / Monaco",
+          "season": "2019-2025",
+          "status": "verified",
+          "appearances": 119,
+          "appearance_label": "截至 2024/25 英超+法甲 119 场",
+          "competitive_debut": true,
+          "summary": "截至 2024/25 赛季结束，南野拓实在利物浦、南安普顿和摩纳哥的五大联赛阶段累计联赛出场 119 次、打入 25 球，是日本成年攻击手由奥地利跳板继续进入英超与法甲主流轮换的代表样本。",
+          "notes": [
+            "利物浦阶段虽未长期锁定首发，但成功进入英超与冠军队轮换，本身已具有高历史辨识度。",
+            "转入摩纳哥后连续多个完整赛季保持法甲主力级存在，说明其留洋路径不止于豪门短暂停靠。",
+            "这条记录按截至 2024/25 赛季结束的稳定闭环口径建档，避免混入未完结赛季波动。"
+          ]
+        },
+        {
+          "id": "yuya-osako-bundesliga-2014",
+          "name": "Yuya Osako",
+          "local_name": "大迫勇也",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Koln / Werder Bremen",
+          "season": "2014-2021",
+          "status": "verified",
+          "appearances": 183,
+          "appearance_label": "德甲 183 场",
+          "competitive_debut": true,
+          "summary": "大迫勇也在科隆与不来梅的德甲阶段累计出场 183 次，是日本成年中锋 / 二前锋在德国顶级联赛长期立足的代表样本，也体现了日本前场球员在非豪门五大联赛球队里的持续供给能力。",
+          "notes": [
+            "其德国路径先从 1860 Munich 的过渡阶段起步，再在科隆与不来梅完成长时间德甲站稳脚跟。",
+            "183 场德甲出场说明日本前锋并非只靠技术型边锋或前腰留洋，也能以支点和串联角色长期生存。",
+            "这条记录补足了日本成年中锋在德甲中游 / 中下游球队的长期样本。"
+          ]
+        },
+        {
+          "id": "takashi-inui-big-five-2011",
+          "name": "Takashi Inui",
+          "local_name": "乾贵士",
+          "bucket": "big-five",
+          "league": "Bundesliga / LaLiga",
+          "club": "Bochum / Eintracht Frankfurt / Eibar / Real Betis / Alaves",
+          "season": "2011-2021",
+          "status": "verified",
+          "appearances": 241,
+          "appearance_label": "德甲+西甲 241 场",
+          "competitive_debut": true,
+          "summary": "乾贵士在德甲与西甲累计联赛出场 241 次，其中西甲 166 场、德甲 75 场，是日本成年边锋在五大联赛跨两国长期立足的代表样本之一。",
+          "notes": [
+            "西甲阶段主要体量来自埃瓦尔，说明日本进攻球员不只在德国体系成功，也能在西班牙中游队长时间站稳脚跟。",
+            "其 241 场总量长期位列日本球员五大联赛出场榜前列。",
+            "这条记录补上了日本成年边锋在德西双线长期生存的典型路径。"
+          ]
+        },
+        {
+          "id": "hiroki-sakai-big-five-2012",
+          "name": "Hiroki Sakai",
+          "local_name": "酒井宏树",
+          "bucket": "big-five",
+          "league": "Bundesliga / Ligue 1",
+          "club": "Hannover 96 / Marseille",
+          "season": "2012-2021",
+          "status": "verified",
+          "appearances": 237,
+          "appearance_label": "德甲+法甲 237 场",
+          "competitive_debut": true,
+          "summary": "酒井宏树在汉诺威与马赛阶段累计联赛出场 237 次，其中法甲 145 场、德甲 92 场，是日本成年右后卫在德法两大主流联赛长期立足的代表样本。",
+          "notes": [
+            "马赛阶段出场体量很大，说明其在法甲传统强队环境里也具备稳定主力价值。",
+            "其路径与长友佑都、内田笃人共同构成日本边后卫黄金一代的欧洲主线。",
+            "这条记录补足了日本右后卫在德法双联赛长周期留洋的样本。"
+          ]
+        },
+        {
+          "id": "genki-haraguchi-bundesliga-2014",
+          "name": "Genki Haraguchi",
+          "local_name": "原口元气",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Hertha Berlin / Hannover 96 / Union Berlin / Stuttgart",
+          "season": "2014-2024",
+          "status": "verified",
+          "appearances": 174,
+          "appearance_label": "德甲 174 场",
+          "competitive_debut": true,
+          "summary": "原口元气在多支德甲球队累计留下 174 场联赛出场，是日本成年中前场球员在德国体系持续供给能力的代表样本之一。",
+          "notes": [
+            "其履历横跨柏林赫塔、汉诺威、柏林联合与斯图加特，体现了日本球员在德甲多层级球队间的长期生存能力。",
+            "174 场体量使其稳居日本球员德甲出场榜前列。",
+            "这条记录补上了日本多面型前场球员在德国职业体系的稳定横截面。"
+          ]
+        },
+        {
+          "id": "gotoku-sakai-bundesliga-2012",
+          "name": "Gotoku Sakai",
+          "local_name": "酒井高德",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Stuttgart / Hamburg",
+          "season": "2012-2019",
+          "status": "verified",
+          "appearances": 170,
+          "appearance_label": "德甲 170 场",
+          "competitive_debut": true,
+          "summary": "酒井高德在斯图加特与汉堡的德甲阶段累计出场 170 次，是日本成年后卫在德国顶级联赛另一条长周期主线，也体现了日本边后卫在德甲的稳定供给。",
+          "notes": [
+            "其德甲体量与原口元气相近，属于日本球员在德国中长期立足的成熟样本。",
+            "可胜任左右两侧边路与后场多位置，适配性很强。",
+            "这条记录让日本德甲后场样本不只集中在长谷部和内田这两类角色。"
+          ]
+        },
+        {
+          "id": "daisuke-matsui-ligue-1-2004",
+          "name": "Daisuke Matsui",
+          "local_name": "松井大辅",
+          "bucket": "big-five",
+          "league": "Ligue 1",
+          "club": "Le Mans / Saint-Etienne / Grenoble / Dijon",
+          "season": "2004-2011",
+          "status": "verified",
+          "appearances": 148,
+          "appearance_label": "法甲 148 场",
+          "competitive_debut": true,
+          "summary": "松井大辅在法国顶级联赛累计出场 148 次，是日本成年攻击型中场 / 边锋在法甲长期立足的早期代表，也说明日本留洋并非只偏向德甲。",
+          "notes": [
+            "法甲 148 场使其长期位居日本球员法甲出场榜首位。",
+            "其法国生涯覆盖多家中游球队，展示了在技术和对抗之间寻找稳定位置的能力。",
+            "这条记录补上了日本前腰 / 边锋在法甲的早期主线。"
+          ]
+        },
+        {
+          "id": "naohiro-takahara-bundesliga-2003",
+          "name": "Naohiro Takahara",
+          "local_name": "高原直泰",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Hamburger SV / Eintracht Frankfurt",
+          "season": "2003-2008",
+          "status": "verified",
+          "appearances": 135,
+          "appearance_label": "德甲 135 场",
+          "competitive_debut": true,
+          "summary": "高原直泰在汉堡和法兰克福累计留下 135 场德甲出场，是日本成年中锋在德甲打开稳定进球路径的早期代表之一。",
+          "notes": [
+            "其 25 粒德甲进球证明日本中锋在德国顶级联赛能够形成持续产出，而不仅是短期轮换。",
+            "在日本球员五大联赛历史总榜里，高原直泰长期处于前列。",
+            "这条记录补足了日本传统 9 号位球员在德甲的成熟案例。"
+          ]
+        },
+        {
+          "id": "daichi-kamada-crystal-palace-2025",
+          "name": "Daichi Kamada",
+          "local_name": "镰田大地",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Crystal Palace",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，镰田大地当前效力 Crystal Palace；这条记录先用于把他纳入留洋专页默认显示的日本现役英超样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "wataru-endo-liverpool-2025",
+          "name": "Wataru Endo",
+          "local_name": "远藤航",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Liverpool",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，远藤航当前效力 Liverpool；这条记录先用于把他纳入留洋专页默认显示的日本现役英超样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "takehiro-tomiyasu-ajax-2026",
+          "name": "Takehiro Tomiyasu",
+          "local_name": "富安健洋",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "Ajax",
+          "season": "2025-2026",
+          "history_year_range": "2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，富安健洋当前效力 Ajax；这条记录用于把他作为日本现役欧洲其他联赛样本重新纳入默认当前留洋列表。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 只覆盖 2026 当前节点，避免与既有 2019-2025 五大联赛历史记录重复。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "takuma-asano-mallorca-2025",
+          "name": "Takuma Asano",
+          "local_name": "浅野拓磨",
+          "bucket": "big-five",
+          "league": "LaLiga",
+          "club": "Mallorca",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，浅野拓磨当前效力 Mallorca；这条记录先用于把他纳入留洋专页默认显示的日本现役西甲样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "ritsu-doan-frankfurt-2025",
+          "name": "Ritsu Doan",
+          "local_name": "堂安律",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Eintracht Frankfurt",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，堂安律当前效力 Eintracht Frankfurt；这条记录先用于把他纳入留洋专页默认显示的日本现役德甲样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "hiroki-ito-bayern-2025",
+          "name": "Hiroki Ito",
+          "local_name": "伊藤洋辉",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，伊藤洋辉当前效力 Bayern Munich；这条记录先用于把他纳入留洋专页默认显示的日本现役德甲样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "shuto-machino-gladbach-2025",
+          "name": "Shuto Machino",
+          "local_name": "町野修斗",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Borussia Mönchengladbach",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，町野修斗当前效力 Borussia Mönchengladbach；这条记录先用于把他纳入留洋专页默认显示的日本现役德甲样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "ko-itakura-ajax-2025",
+          "name": "Ko Itakura",
+          "local_name": "板仓滉",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "Ajax",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，板仓滉当前效力 Ajax；这条记录用于把他纳入留洋专页默认显示的日本现役欧洲其他联赛样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "ao-tanaka-leeds-2025",
+          "name": "Ao Tanaka",
+          "local_name": "田中碧",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Leeds United",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，田中碧当前效力 Leeds United；这条记录先用于把他纳入留洋专页默认显示的日本现役英超样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "yukinari-sugawara-werder-bremen-2025",
+          "name": "Yukinari Sugawara",
+          "local_name": "菅原由势",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Werder Bremen",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，菅原由势当前效力 Werder Bremen；这条记录先用于把他纳入留洋专页默认显示的日本现役德甲样本，详细赛季数据后续补齐。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "keito-nakamura-reims-2025",
+          "name": "Keito Nakamura",
+          "local_name": "中村敬斗",
+          "bucket": "big-five-lower-tier",
+          "league": "Ligue 2",
+          "club": "Reims",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，中村敬斗当前效力 Reims；这条记录用于把他归入五大联赛国家低级别联赛的日本现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "junya-ito-genk-2025",
+          "name": "Junya Ito",
+          "local_name": "伊东纯也",
+          "bucket": "europe-other",
+          "league": "Belgian Pro League",
+          "club": "Genk",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，伊东纯也当前效力 Genk；这条记录用于把他纳入留洋专页默认显示的日本现役欧洲其他联赛样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "takumi-minamino-monaco-2026",
+          "name": "Takumi Minamino",
+          "local_name": "南野拓实",
+          "bucket": "big-five",
+          "league": "Ligue 1",
+          "club": "Monaco",
+          "season": "2025-2026",
+          "history_year_range": "2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，南野拓实当前效力 Monaco；这条记录用于把他作为日本现役法甲样本重新纳入默认当前留洋列表。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 只覆盖 2026 当前节点，避免与既有 2019-2025 五大联赛历史记录重复。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "ayase-ueda-feyenoord-2025",
+          "name": "Ayase Ueda",
+          "local_name": "上田绮世",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "Feyenoord",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，上田绮世当前效力 Feyenoord；这条记录用于把他纳入留洋专页默认显示的日本现役荷甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "koki-saito-qpr-2025",
+          "name": "Koki Saito",
+          "local_name": "斋藤光毅",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Queens Park Rangers",
+          "season": "2025-2026",
+          "history_year_range": "2022-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，斋藤光毅当前效力 Queens Park Rangers；这条记录用于把他归入五大联赛国家低级别联赛的日本现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2022 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "shunsuke-mito-sparta-2025",
+          "name": "Shunsuke Mito",
+          "local_name": "三户舜介",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "Sparta Rotterdam",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，三户舜介当前效力 Sparta Rotterdam；这条记录用于把他纳入留洋专页默认显示的日本现役荷甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "tsuyoshi-watanabe-feyenoord-2025",
+          "name": "Tsuyoshi Watanabe",
+          "local_name": "渡边刚",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "Feyenoord",
+          "season": "2025-2026",
+          "history_year_range": "2024-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，渡边刚当前效力 Feyenoord；这条记录用于把他纳入留洋专页默认显示的日本现役荷甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2024 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "joel-chima-fujita-st-pauli-2025",
+          "name": "Joel Chima Fujita",
+          "local_name": "藤田让瑠·奇马",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "FC St. Pauli",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，藤田让瑠·奇马当前效力 FC St. Pauli；这条记录用于把他纳入留洋专页默认显示的日本现役德甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "koki-machida-hoffenheim-2025",
+          "name": "Koki Machida",
+          "local_name": "町田浩树",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "TSG Hoffenheim",
+          "season": "2025-2026",
+          "history_year_range": "2022-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，町田浩树当前效力 TSG Hoffenheim；这条记录用于把他纳入留洋专页默认显示的日本现役德甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2022 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "daiki-hashioka-gent-2025",
+          "name": "Daiki Hashioka",
+          "local_name": "桥冈大树",
+          "bucket": "europe-other",
+          "league": "Belgian Pro League",
+          "club": "Gent",
+          "season": "2025-2026",
+          "history_year_range": "2021-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，桥冈大树当前效力 Gent；这条记录用于把他纳入留洋专页默认显示的日本现役比甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2021 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "keisuke-goto-sint-truiden-2025",
+          "name": "Keisuke Goto",
+          "local_name": "后藤启介",
+          "bucket": "europe-other",
+          "league": "Belgian Pro League",
+          "club": "Sint-Truiden",
+          "season": "2025-2026",
+          "history_year_range": "2025-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，后藤启介当前效力 Sint-Truiden；这条记录用于把他纳入留洋专页默认显示的日本现役比甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 覆盖其 2025-2026 海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "reo-hatate-celtic-2025",
+          "name": "Reo Hatate",
+          "local_name": "旗手怜央",
+          "bucket": "europe-other",
+          "league": "Scottish Premiership",
+          "club": "Celtic",
+          "season": "2025-2026",
+          "history_year_range": "2022-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，旗手怜央当前效力 Celtic；这条记录用于把他纳入留洋专页默认显示的日本现役苏超样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2022 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "daizen-maeda-celtic-2025",
+          "name": "Daizen Maeda",
+          "local_name": "前田大然",
+          "bucket": "europe-other",
+          "league": "Scottish Premiership",
+          "club": "Celtic",
+          "season": "2025-2026",
+          "history_year_range": "2022-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，前田大然当前效力 Celtic；这条记录用于把他纳入留洋专页默认显示的日本现役苏超样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2022 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "kyogo-furuhashi-birmingham-2025",
+          "name": "Kyogo Furuhashi",
+          "local_name": "古桥亨梧",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Birmingham City",
+          "season": "2025-2026",
+          "history_year_range": "2021-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，古桥亨梧当前效力 Birmingham City；这条记录用于把他归入五大联赛国家低级别联赛的日本现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2021 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "tomoki-iwata-birmingham-2025",
+          "name": "Tomoki Iwata",
+          "local_name": "岩田智辉",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Birmingham City",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，岩田智辉当前效力 Birmingham City；这条记录用于把他归入五大联赛国家低级别联赛的日本现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "hidemasa-morita-sporting-2025",
+          "name": "Hidemasa Morita",
+          "local_name": "守田英正",
+          "bucket": "europe-other",
+          "league": "Primeira Liga",
+          "club": "Sporting CP",
+          "season": "2025-2026",
+          "history_year_range": "2021-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，守田英正当前效力 Sporting CP；这条记录用于把他纳入留洋专页默认显示的日本现役葡超样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2021 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "kanya-fujimoto-birmingham-2025",
+          "name": "Kanya Fujimoto",
+          "local_name": "藤本宽也",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Birmingham City",
+          "season": "2025-2026",
+          "history_year_range": "2020-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，藤本宽也当前效力 Birmingham City；这条记录用于把他归入五大联赛国家低级别联赛的日本现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2020 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "sota-kawasaki-mainz-2025",
+          "name": "Sota Kawasaki",
+          "local_name": "川崎飒太",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Mainz 05",
+          "season": "2025-2026",
+          "history_year_range": "2025-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，川崎飒太当前效力 Mainz 05；这条记录用于把他纳入留洋专页默认显示的日本现役德甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 覆盖其 2025-2026 海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "takumu-kawamura-salzburg-2025",
+          "name": "Takumu Kawamura",
+          "local_name": "川村拓梦",
+          "bucket": "europe-other",
+          "league": "Austrian Bundesliga",
+          "club": "Red Bull Salzburg",
+          "season": "2025-2026",
+          "history_year_range": "2024-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，川村拓梦当前效力 Red Bull Salzburg；这条记录用于把他纳入留洋专页默认显示的日本现役奥甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2024 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "yuito-suzuki-freiburg-2025",
+          "name": "Yuito Suzuki",
+          "local_name": "铃木唯人",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "SC Freiburg",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，铃木唯人当前效力 SC Freiburg；这条记录用于把他纳入留洋专页默认显示的日本现役德甲样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Korea Republic",
+      "status": "in-progress",
+      "verified_records": 29,
+      "bucket_focus": [
+        "big-five：已补入孙兴慜、安贞焕、李荣杓、具滋哲、黄喜灿、李在城、郑优营、车杜里、池东沅等成年一线队样本，并继续保留金玟哉与李刚仁的当前快照",
+        "big-five-youth：当前开始明确记录 Newcastle U21、Brentford B 以及德国预备队体系里的韩国年轻样本，避免把英超 / 德甲国家梯队注册直接算成成年一线队履历",
+        "big-five-lower-tier：当前已补入梁民革、金志洙、权赫奎、裴俊浩，以及白昇浩、严智星这些英冠 / 德乙样本，避免与顶级联赛样本混算",
+        "europe-other：当前已补入黄仁范、洪贤锡、尹道英，以及吴贤揆、李韩范、梁贤俊、曹圭成这些土超 / 丹超 / 苏超路径，并继续把比利时与丹麦两条韩国年轻球员常见通道作为重点观察对象",
+        "asia-other：继续观察 J 联赛与西亚职业联赛中的韩国球员流动",
+        "americas-other：已补入孙兴慜的 LAFC 当前节点，后续再扩北美常驻样本"
+      ],
+      "seed_examples": [
+        "Cha Bum-kun",
+        "Ahn Jung-hwan",
+        "Lee Young-pyo",
+        "Park Ji-sung",
+        "Ki Sung-yueng",
+        "Koo Ja-cheol",
+        "Hwang Hee-chan",
+        "Lee Jae-sung",
+        "Jeong Woo-yeong",
+        "Cha Du-ri",
+        "Ji Dong-won",
+        "Kim Min-jae",
+        "Lee Kang-in",
+        "Son Heung-min"
+      ],
+      "notes": "韩国留洋库已从“德甲先驱 + 英超主线”扩展到“成年五大联赛历史样本 + 2026 年当前活跃快照 + MLS 当前节点”的复合结构；除了金玟哉、李刚仁和孙兴慜这些现役代表，也已补入安贞焕、李荣杓、具滋哲、黄喜灿、李在城、郑优营、车杜里、池东沅这些能在既有出场排行、Wikipedia 与 Transfermarkt 交叉确认的长期样本。这一轮再把吴贤揆、李韩范、梁贤俊、曹圭成、白昇浩、严智星补进来，并保留前一轮已加的梁民革、金志洙、洪贤锡、权赫奎、裴俊浩、黄仁范、尹道英，默认现役列表不再只覆盖少数头部球员；同时新增了按 2020 年 10 月 1 日截止口径整理的韩国球员五大联赛历史出场榜 checklist，用来补齐此前未入库的长尾名字。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+      "big_five_appearance_checklist": {
+        "checked_at": "2026-05-22",
+        "source_cutoff": "2020-10-01",
+        "source_title": "懂球帝：五大联赛历史亚洲15国157名球员出场进球数据全记录",
+        "source_url": "https://m.dongqiudi.com/article/1680242.html",
+        "scope_note": "原文韩国段的总人数写为 43 人，但按去重后的球员名单整理为 42 个唯一名字；差异大概率来自原文分联赛列示时的重复计数或作者原始统计误差，这里保留 source_total_players 供后续回查。榜单本身只统计五大联赛顶级联赛正式出场，不含五大联赛国家青训 / 梯队和低级别联赛路径。",
+        "source_total_players": 43,
+        "source_total_appearances": 2460,
+        "source_total_goals": 372,
+        "unique_players_in_checklist": 42,
+        "entries": [
+          {
+            "player": "朴主永",
+            "appearances": 113,
+            "goals": 28,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 91,
+                "goals": 25
+              },
+              {
+                "league": "LaLiga",
+                "appearances": 21,
+                "goals": 3
+              },
+              {
+                "league": "Premier League",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "权昶勋",
+            "appearances": 86,
+            "goals": 13,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 61,
+                "goals": 13
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 25,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "石玄俊",
+            "appearances": 61,
+            "goals": 10,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 61,
+                "goals": 10
+              }
+            ]
+          },
+          {
+            "player": "南泰熙",
+            "appearances": 37,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 37,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "郑助国",
+            "appearances": 36,
+            "goals": 4,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 36,
+                "goals": 4
+              }
+            ]
+          },
+          {
+            "player": "黄义助",
+            "appearances": 29,
+            "goals": 6,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 29,
+                "goals": 6
+              }
+            ]
+          },
+          {
+            "player": "安贞焕",
+            "featured_record_id": "ahn-jung-hwan-big-five-2000",
+            "appearances": 58,
+            "goals": 9,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 16,
+                "goals": 2
+              },
+              {
+                "league": "Serie A",
+                "appearances": 30,
+                "goals": 5
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 12,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "徐正源",
+            "appearances": 16,
+            "goals": 4,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 16,
+                "goals": 4
+              }
+            ]
+          },
+          {
+            "player": "尹日录",
+            "appearances": 5,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 5,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "李尚允",
+            "appearances": 4,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 4,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "姜振武",
+            "appearances": 4,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 4,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "鱼庆俊",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Ligue 1",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "李昇祐",
+            "appearances": 14,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Serie A",
+                "appearances": 14,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "李天秀",
+            "appearances": 28,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 28,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "李刚仁",
+            "featured_record_id": "lee-kang-in-psg-2025",
+            "appearances": 24,
+            "goals": 2,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 24,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "白昇浩",
+            "appearances": 3,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 3,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "金英圭",
+            "appearances": 2,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 2,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "寄诚庸",
+            "featured_record_id": "ki-sung-yueng-premier-league-2012",
+            "appearances": 188,
+            "goals": 15,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 1,
+                "goals": 0
+              },
+              {
+                "league": "Premier League",
+                "appearances": 187,
+                "goals": 15
+              }
+            ]
+          },
+          {
+            "player": "李镐镇",
+            "appearances": 1,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "LaLiga",
+                "appearances": 1,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "孙兴慜",
+            "featured_record_id": "son-heung-min-big-five-2010",
+            "appearances": 298,
+            "goals": 98,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 163,
+                "goals": 57
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 135,
+                "goals": 41
+              }
+            ]
+          },
+          {
+            "player": "朴智星",
+            "featured_record_id": "park-ji-sung-premier-league-2005",
+            "appearances": 153,
+            "goals": 20,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 153,
+                "goals": 20
+              }
+            ]
+          },
+          {
+            "player": "李青龙",
+            "appearances": 105,
+            "goals": 8,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 105,
+                "goals": 8
+              }
+            ]
+          },
+          {
+            "player": "李荣杓",
+            "featured_record_id": "lee-young-pyo-premier-league-2005",
+            "appearances": 87,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 69,
+                "goals": 0
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 18,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "薛琦铉",
+            "appearances": 48,
+            "goals": 5,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 48,
+                "goals": 5
+              }
+            ]
+          },
+          {
+            "player": "金甫炅",
+            "appearances": 28,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 28,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "池东沅",
+            "featured_record_id": "ji-dong-won-big-five-2011",
+            "appearances": 141,
+            "goals": 15,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 24,
+                "goals": 2
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 117,
+                "goals": 13
+              }
+            ]
+          },
+          {
+            "player": "尹锡荣",
+            "appearances": 23,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 23,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "李同国",
+            "appearances": 30,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 23,
+                "goals": 0
+              },
+              {
+                "league": "Bundesliga",
+                "appearances": 7,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "金斗炫",
+            "appearances": 16,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 16,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "赵源熙",
+            "appearances": 5,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Premier League",
+                "appearances": 5,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "车范根",
+            "featured_record_id": "cha-bum-kun-bundesliga-1979",
+            "appearances": 308,
+            "goals": 98,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 308,
+                "goals": 98
+              }
+            ]
+          },
+          {
+            "player": "具滋哲",
+            "featured_record_id": "koo-ja-cheol-bundesliga-2011",
+            "appearances": 211,
+            "goals": 28,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 211,
+                "goals": 28
+              }
+            ]
+          },
+          {
+            "player": "车杜里",
+            "featured_record_id": "cha-du-ri-bundesliga-2002",
+            "appearances": 125,
+            "goals": 6,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 125,
+                "goals": 6
+              }
+            ]
+          },
+          {
+            "player": "洪正好",
+            "appearances": 56,
+            "goals": 2,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 56,
+                "goals": 2
+              }
+            ]
+          },
+          {
+            "player": "朴柱昊",
+            "appearances": 51,
+            "goals": 1,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 51,
+                "goals": 1
+              }
+            ]
+          },
+          {
+            "player": "金珍洙",
+            "appearances": 34,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 34,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "金铸城",
+            "appearances": 13,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 13,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "朴俊彬",
+            "appearances": 9,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 9,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "郑优营",
+            "featured_record_id": "jeong-woo-yeong-bundesliga-2019",
+            "appearances": 3,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 3,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "朴商寅",
+            "appearances": 2,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 2,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "柳承佑",
+            "appearances": 2,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 2,
+                "goals": 0
+              }
+            ]
+          },
+          {
+            "player": "黄喜灿",
+            "featured_record_id": "hwang-hee-chan-big-five-2017",
+            "appearances": 2,
+            "goals": 0,
+            "league_breakdown": [
+              {
+                "league": "Bundesliga",
+                "appearances": 2,
+                "goals": 0
+              }
+            ]
+          }
+        ]
+      },
+      "featured_records": [
+        {
+          "id": "cha-bum-kun-bundesliga-1979",
+          "name": "Cha Bum-kun",
+          "local_name": "车范根",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "SV Darmstadt 98 / Eintracht Frankfurt / Bayer Leverkusen",
+          "season": "1979-1989",
+          "status": "verified",
+          "appearances": 308,
+          "appearance_label": "德甲 308 场",
+          "competitive_debut": true,
+          "summary": "车范根在德甲累计出场 308 次、攻入 98 球，是韩国球员登陆五大联赛的真正开路者，也是德甲历史进球最多的亚洲球员之一。",
+          "notes": [
+            "是首位征战德甲的韩国球员，也是韩国留洋五大联赛最重要的先驱案例。",
+            "先后帮助法兰克福和勒沃库森赢得欧洲联盟杯，说明韩国球员很早就能在欧洲高水平赛事中承担核心作用。",
+            "其长达十年的德甲履历为后来韩国球员赴德发展建立了最直接的参照系。"
+          ]
+        },
+        {
+          "id": "park-ji-sung-premier-league-2005",
+          "name": "Park Ji-sung",
+          "local_name": "朴智星",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Manchester United / QPR",
+          "season": "2005-2013",
+          "status": "verified",
+          "appearances": 154,
+          "appearance_label": "英超 154 场",
+          "competitive_debut": true,
+          "summary": "朴智星在英超累计出场 154 次，其中 134 场来自曼联七个赛季，并在 2006/07 成为首位赢得英超冠军的亚洲球员，最终共收获 4 次英超冠军。",
+          "notes": [
+            "其英超生涯证明韩国球员不仅能登陆豪门，而且可以在轮换和关键战中长期被信任。",
+            "在曼联时期兼具战术执行力、覆盖能力和大场面经验，是韩国旅欧史上的标志性成功样本。",
+            "其成功对后续孙兴慜等韩国英超球员具有明显示范效应。"
+          ]
+        },
+        {
+          "id": "son-heung-min-big-five-2010",
+          "name": "Son Heung-min",
+          "local_name": "孙兴慜",
+          "bucket": "big-five",
+          "league": "Premier League / Bundesliga",
+          "club": "Hamburger SV / Bayer Leverkusen / Tottenham Hotspur",
+          "season": "2010-2025",
+          "status": "verified",
+          "appearances": 468,
+          "appearance_label": "英超+德甲 468 场",
+          "competitive_debut": true,
+          "summary": "孙兴慜在德甲与英超累计联赛出场 468 次，其中英超 333 场、德甲 135 场，是韩国球员在五大联赛体量最大、上限最高的攻击手样本，也是成年阶段长期稳定输出的头号代表。",
+          "notes": [
+            "英超阶段贡献 127 球 77 助攻，并成为首位在英超打进 100 球的亚洲球员。",
+            "德甲早期在汉堡和勒沃库森完成成长，英超阶段则在热刺达到世界级头部位置。",
+            "这条记录补足了韩国成年前锋在两大顶级联赛的完整主线。"
+          ]
+        },
+        {
+          "id": "ki-sung-yueng-premier-league-2012",
+          "name": "Ki Sung-yueng",
+          "local_name": "寄诚庸",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Swansea City / Sunderland / Newcastle United",
+          "season": "2012-2020",
+          "status": "verified",
+          "appearances": 187,
+          "appearance_label": "英超 187 场",
+          "competitive_debut": true,
+          "summary": "寄诚庸在斯旺西、桑德兰和纽卡斯尔的英超生涯合计出场 187 次，是韩国球员英超出场纪录保持者，代表韩国中场在五大联赛长期稳定立足。",
+          "notes": [
+            "其履历覆盖保级队、中游队与多种战术体系，说明韩国球员在英超已经从个别明星扩展为稳定供给。",
+            "作为组织型中场，他与早期依赖体能和冲击力的韩国留洋形象形成了明显分化。",
+            "这类长期样本使韩国球员在英超不再只是短期商业化引援。"
+          ]
+        },
+        {
+          "id": "ahn-jung-hwan-big-five-2000",
+          "name": "Ahn Jung-hwan",
+          "local_name": "安贞焕",
+          "bucket": "big-five",
+          "league": "Serie A / Ligue 1 / Bundesliga",
+          "club": "Perugia / Metz / Duisburg",
+          "season": "2000-2006",
+          "status": "verified",
+          "appearances": 58,
+          "appearance_label": "意甲+法甲+德甲 58 场",
+          "competitive_debut": true,
+          "summary": "安贞焕在意甲、法甲和德甲累计联赛出场 58 次，其中意甲 30 场、法甲 16 场、德甲 12 场，是韩国成年攻击手跨三个五大联赛试水并留下正式比赛履历的早期代表。",
+          "notes": [
+            "Transfermarkt 将其标记为“首位征战意甲的韩国球员”，历史辨识度很高。",
+            "他虽未像后来的朴智星和孙兴慜那样长期稳定，但这条路径代表韩国球员开始在多个五大联赛之间流动。",
+            "这条记录补上了韩国 21 岁以上攻击手在 2000 年代初的跨联赛探索阶段。"
+          ]
+        },
+        {
+          "id": "lee-young-pyo-premier-league-2005",
+          "name": "Lee Young-pyo",
+          "local_name": "李荣杓",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Tottenham Hotspur",
+          "season": "2005-2008",
+          "status": "verified",
+          "appearances": 70,
+          "appearance_label": "英超 70 场",
+          "competitive_debut": true,
+          "summary": "李荣杓在热刺的英超阶段累计出场 70 次，是韩国成年边后卫在英超立足的早期代表，也是 2000 年代韩国后场球员进入英超主线的重要案例。",
+          "notes": [
+            "其英超履历和朴智星的曼联路径一起，构成韩国球员在英超早期落地的双主线。",
+            "作为边后卫长期在热刺阵容中保持竞争力，说明韩国留洋已不再只集中于前场。",
+            "这条记录补足了韩国成熟后卫在英超平台的代表样本。"
+          ]
+        },
+        {
+          "id": "koo-ja-cheol-bundesliga-2011",
+          "name": "Koo Ja-cheol",
+          "local_name": "具滋哲",
+          "bucket": "big-five",
+          "league": "Bundesliga / all competitions",
+          "club": "Augsburg / Mainz / Wolfsburg",
+          "season": "2011-2019",
+          "status": "verified",
+          "appearances": 231,
+          "appearance_label": "德甲三队各项赛事 231 场",
+          "competitive_debut": true,
+          "summary": "具滋哲在奥格斯堡、美因茨和沃尔夫斯堡三支德甲球队的五大联赛阶段，各项赛事累计出场 231 次，是韩国成年中场在德国体系里长期稳定轮换的代表样本。",
+          "notes": [
+            "奥格斯堡 155 场、美因茨 42 场、沃尔夫斯堡 34 场，展示了其在不同级别德甲球队间的持续生存能力。",
+            "与车范根、孙兴慜的顶尖攻击线样本不同，具滋哲代表的是韩国中场在德甲中上游与中游队的稳定供给。",
+            "这条记录补上了韩国 21 岁以上中场在德甲长周期轮换的横截面。"
+          ]
+        },
+        {
+          "id": "kim-min-jae-napoli-2022",
+          "name": "Kim Min-jae",
+          "local_name": "金玟哉",
+          "bucket": "big-five",
+          "league": "Serie A",
+          "club": "Napoli",
+          "season": "2022-2023",
+          "status": "verified",
+          "appearances": 35,
+          "appearance_label": "意甲 35 场",
+          "competitive_debut": true,
+          "summary": "金玟哉在 2022/23 赛季代表那不勒斯出战 35 场意甲，作为后防核心帮助球队夺得 33 年来的首座意甲冠军，并被评价为该赛季意甲最佳后卫级别表现。",
+          "notes": [
+            "这一赛季标志韩国球员不再只集中于德甲和英超，也能在意甲冠军队担任核心防守角色。",
+            "随后转会拜仁，说明韩国顶级留洋路径已经能在五大联赛豪门之间完成纵向升级。",
+            "中卫位置上的成功案例，也扩展了韩国留洋球员的传统位置谱系。"
+          ]
+        },
+        {
+          "id": "kim-min-jae-bayern-2025",
+          "name": "Kim Min-jae",
+          "local_name": "金玟哉",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Bayern Munich",
+          "season": "2025-2026",
+          "history_year_range": "2024-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 25,
+          "appearance_label": "2025/26 德甲 25 场",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，德甲官方球员页显示金玟哉在 2025/26 赛季已为拜仁出战德甲 25 场并贡献 1 球 1 助攻，仍是韩国中卫在欧洲顶级豪门中的核心样本。",
+          "notes": [
+            "这条记录按 2025/26 当前赛季快照建档，不等同于其德甲或欧洲生涯总数。",
+            "从那不勒斯冠军中卫到拜仁常规主力，代表韩国后卫留洋路线的顶配版本。",
+            "赛季收官后需要回写最终出场值，并视转会窗口变化更新结论。"
+          ]
+        },
+        {
+          "id": "lee-kang-in-psg-2025",
+          "name": "Lee Kang-in",
+          "local_name": "李刚仁",
+          "bucket": "big-five",
+          "league": "Ligue 1 / all competitions",
+          "club": "Paris Saint-Germain",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 13,
+          "appearance_label": "2025/26 各项赛事 13 场",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，巴黎圣日耳曼官方里程碑文章确认李刚仁在 2025/26 赛季已于各项赛事出场 13 次；他仍身处法甲冠军队一线轮换，是韩国攻击手进入法甲豪门体系的代表样本。",
+          "notes": [
+            "这条记录按 2025/26 当前赛季快照建档，不等同于其 PSG 生涯总数。",
+            "由于官方里程碑稿使用各项赛事口径，展示标签也同步保留“各项赛事”说明。",
+            "后续如获取到更稳定的法甲单线统计，可再补一条纯联赛快照或改写为联赛口径。"
+          ]
+        },
+        {
+          "id": "son-heung-min-lafc-2025",
+          "name": "Son Heung-min",
+          "local_name": "孙兴慜",
+          "bucket": "americas-other",
+          "league": "MLS / playoffs",
+          "club": "Los Angeles FC",
+          "season": "2025",
+          "history_year_range": "2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 13,
+          "appearance_label": "2025 各项赛事 13 场",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，LAFC 官方球员页仍将孙兴慜列为一线队前锋；俱乐部赛季总结注明他在 2025 年加盟后 13 场比赛打出 12 球 4 助攻，说明韩国头牌留洋路径已从欧洲拓展到 MLS。",
+          "notes": [
+            "这条记录用于标记当前俱乐部落点与加盟首阶段快照，不等同于其完整 MLS 生涯数据。",
+            "孙兴慜的节点让韩国现役留洋版图首次在库内明确覆盖北美主流职业联赛。",
+            "如果 2026 赛季出现新的官方分项统计，建议再补单赛季联赛口径快照。"
+          ]
+        },
+        {
+          "id": "hwang-hee-chan-big-five-2017",
+          "name": "Hwang Hee-chan",
+          "local_name": "黄喜灿",
+          "bucket": "big-five",
+          "league": "Bundesliga / Premier League",
+          "club": "RB Leipzig / Wolverhampton Wanderers",
+          "season": "2017-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 151,
+          "appearance_label": "五大联赛 151 场",
+          "competitive_debut": true,
+          "summary": "黄喜灿截至 2025/26 赛季已在德甲与英超累计留下 151 场联赛出场，是韩国成年攻击手在孙兴慜之后于两大主流联赛持续积累体量的代表样本之一。",
+          "notes": [
+            "英超阶段在狼队形成了最主要的出场体量，说明其留洋路径已经从德甲过渡到英超稳定轮换。",
+            "兼具边锋与中锋属性，使其成为韩国前场球员角色多样化的代表。",
+            "这条记录补上了韩国 1990 后攻击手在英德双联赛的持续样本。"
+          ]
+        },
+        {
+          "id": "lee-jae-sung-bundesliga-2018",
+          "name": "Lee Jae-sung",
+          "local_name": "李在城",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Holstein Kiel / Mainz 05",
+          "season": "2021-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 150,
+          "appearance_label": "德甲 150 场",
+          "competitive_debut": true,
+          "summary": "李在城在德甲阶段已累计出场 150 次，是韩国成年中前场球员在德国体系内长期稳定贡献的现役代表之一。",
+          "notes": [
+            "美因茨阶段承担了大部分德甲出场体量，说明其在中游德甲队具备稳定核心价值。",
+            "150 场规模使其已经进入韩国球员德甲出场榜前列。",
+            "这条记录补上了韩国组织型 / 二前锋球员在德甲现役主线。"
+          ]
+        },
+        {
+          "id": "jeong-woo-yeong-bundesliga-2019",
+          "name": "Jeong Woo-yeong",
+          "local_name": "郑优营",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Freiburg / Stuttgart / Union Berlin",
+          "season": "2019-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 161,
+          "appearance_label": "德甲 161 场",
+          "competitive_debut": true,
+          "summary": "郑优营在德甲已累计出场 161 次，是韩国年轻一代攻击型中场 / 边锋在德国顶级联赛形成持续体量的代表样本。",
+          "notes": [
+            "其出场体量已经超过不少早期韩国旅欧攻击手，说明韩国德甲供给线仍在延续。",
+            "更多来自轮换与中游队环境，反映的是可持续供给而非单一豪门案例。",
+            "这条记录补上了韩国 2000 后前场球员在德甲的现役长线案例。"
+          ]
+        },
+        {
+          "id": "cha-du-ri-bundesliga-2002",
+          "name": "Cha Du-ri",
+          "local_name": "车杜里",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Arminia Bielefeld / Eintracht Frankfurt / Mainz 05 / Freiburg / Düsseldorf",
+          "season": "2002-2013",
+          "status": "verified",
+          "appearances": 125,
+          "appearance_label": "德甲 125 场",
+          "competitive_debut": true,
+          "summary": "车杜里在多支德甲球队累计留下 125 场联赛出场，是韩国成年边路 / 后场球员在德国长期生存的代表样本之一，也延续了车范根之后的韩籍德甲主线。",
+          "notes": [
+            "其职业早期偏向前场，后期逐步后撤，体现了韩国旅德球员的角色适应性。",
+            "125 场德甲履历说明其并非只因家族背景受关注，而是确实在德国体系长期立足。",
+            "这条记录补上了韩国边路多面手在德甲的长周期案例。"
+          ]
+        },
+        {
+          "id": "ji-dong-won-big-five-2011",
+          "name": "Ji Dong-won",
+          "local_name": "池东沅",
+          "bucket": "big-five",
+          "league": "Bundesliga / Premier League",
+          "club": "Sunderland / Augsburg / Mainz 05 / Darmstadt",
+          "season": "2011-2019",
+          "status": "verified",
+          "appearances": 147,
+          "appearance_label": "英超+德甲 147 场",
+          "competitive_debut": true,
+          "summary": "池东沅在英超与德甲累计联赛出场 147 次，是韩国成年前锋在英德双联赛都留下稳定正式履历的代表样本之一。",
+          "notes": [
+            "英超阶段体量不大，但德甲阶段长期维持了轮换与首发之间的稳定存在。",
+            "147 场总量说明韩国旅欧前锋不只集中在顶层豪门，也在中游球队层面形成连续供给。",
+            "这条记录补上了韩国前锋在英德双线非豪门路径中的持续样本。"
+          ]
+        },
+        {
+          "id": "yang-min-hyeok-coventry-2026",
+          "name": "Yang Min-hyeok",
+          "local_name": "梁民革",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Coventry City",
+          "season": "2025-2026",
+          "history_year_range": "2025-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，梁民革当前以租借身份效力 Coventry City；这条记录用于把他归入五大联赛国家低级别联赛的韩国现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 覆盖其 2025-2026 海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "kim-ji-soo-kaiserslautern-2025",
+          "name": "Kim Ji-soo",
+          "local_name": "金志洙",
+          "bucket": "big-five-lower-tier",
+          "league": "2. Bundesliga",
+          "club": "1. FC Kaiserslautern",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，金志洙当前以租借身份效力 1. FC Kaiserslautern；这条记录用于把他归入五大联赛国家低级别联赛的韩国现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "hong-hyun-seok-gent-2026",
+          "name": "Hong Hyun-seok",
+          "local_name": "洪贤锡",
+          "bucket": "europe-other",
+          "league": "Belgian Pro League",
+          "club": "Gent",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，洪贤锡当前效力 Gent；这条记录用于把他纳入留洋专页默认显示的韩国现役欧洲其他联赛样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "kwon-hyeok-kyu-karlsruher-2025",
+          "name": "Kwon Hyeok-kyu",
+          "local_name": "权赫奎",
+          "bucket": "big-five-lower-tier",
+          "league": "2. Bundesliga",
+          "club": "Karlsruher SC",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，权赫奎当前效力 Karlsruher SC；这条记录用于把他归入五大联赛国家低级别联赛的韩国现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "bae-jun-ho-stoke-2025",
+          "name": "Bae Jun-ho",
+          "local_name": "裴俊浩",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Stoke City",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，裴俊浩当前效力 Stoke City；这条记录用于把他归入五大联赛国家低级别联赛的韩国现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "hwang-in-beom-feyenoord-2025",
+          "name": "Hwang In-beom",
+          "local_name": "黄仁范",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "Feyenoord",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，黄仁范当前效力 Feyenoord；这条记录用于把他纳入留洋专页默认显示的韩国现役欧洲其他联赛样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "yoon-do-young-dordrecht-2026",
+          "name": "Yoon Do-young",
+          "local_name": "尹道英",
+          "bucket": "europe-other",
+          "league": "Eerste Divisie",
+          "club": "FC Dordrecht",
+          "season": "2025-2026",
+          "history_year_range": "2025-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，尹道英当前效力 FC Dordrecht；这条记录用于把他纳入留洋专页默认显示的韩国现役欧洲其他联赛样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 覆盖其 2025-2026 海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "oh-hyeon-gyu-besiktas-2025",
+          "name": "Oh Hyeon-gyu",
+          "local_name": "吴贤揆",
+          "bucket": "europe-other",
+          "league": "Super Lig",
+          "club": "Besiktas",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，吴贤揆当前效力 Besiktas；这条记录用于把他纳入留洋专页默认显示的韩国现役土超样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "lee-han-beom-midtjylland-2025",
+          "name": "Lee Han-beom",
+          "local_name": "李韩范",
+          "bucket": "europe-other",
+          "league": "Danish Superliga",
+          "club": "FC Midtjylland",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，李韩范当前效力 FC Midtjylland；这条记录用于把他纳入留洋专页默认显示的韩国现役丹超样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "yang-hyun-jun-celtic-2025",
+          "name": "Yang Hyun-jun",
+          "local_name": "梁贤俊",
+          "bucket": "europe-other",
+          "league": "Scottish Premiership",
+          "club": "Celtic",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，梁贤俊当前效力 Celtic；这条记录用于把他纳入留洋专页默认显示的韩国现役苏超样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "cho-gue-sung-midtjylland-2025",
+          "name": "Cho Gue-sung",
+          "local_name": "曹圭成",
+          "bucket": "europe-other",
+          "league": "Danish Superliga",
+          "club": "FC Midtjylland",
+          "season": "2025-2026",
+          "history_year_range": "2023-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，曹圭成当前效力 FC Midtjylland；这条记录用于把他纳入留洋专页默认显示的韩国现役丹超样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "paik-seung-ho-birmingham-2025",
+          "name": "Paik Seung-ho",
+          "local_name": "白昇浩",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Birmingham City",
+          "season": "2025-2026",
+          "history_year_range": "2024-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，白昇浩当前效力 Birmingham City；这条记录用于把他归入五大联赛国家低级别联赛的韩国现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2024 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        },
+        {
+          "id": "eom-ji-sung-swansea-2025",
+          "name": "Eom Ji-sung",
+          "local_name": "严智星",
+          "bucket": "big-five-lower-tier",
+          "league": "EFL Championship",
+          "club": "Swansea City",
+          "season": "2025-2026",
+          "history_year_range": "2024-2026",
+          "status": "verified",
+          "active_abroad": true,
+          "appearances": 0,
+          "appearance_label": "当前俱乐部已核，赛季出场待补",
+          "competitive_debut": true,
+          "summary": "截至 2026 年 5 月 22 日，严智星当前效力 Swansea City；这条记录用于把他归入五大联赛国家低级别联赛的韩国现役样本。",
+          "notes": [
+            "当前归类按 2026-05-22 的俱乐部注册状态处理。",
+            "history_year_range 从 2024 起覆盖其近年持续海外阶段，方便年份回看。",
+            "这条记录优先解决现役名单展示，出场与进球后续再补。"
+          ]
+        }
+      ]
+    }
+  ]
+}

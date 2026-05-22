@@ -1,0 +1,1694 @@
+[
+  {
+    "id": "afc-asian-cup-2023",
+    "confederation": "AFC",
+    "competition_name": "AFC Asian Cup Qatar 2023",
+    "level": "senior",
+    "edition_label": "2023",
+    "host": "Qatar",
+    "date_range": {
+      "start": "2024-01-12",
+      "end": "2024-02-10"
+    },
+    "status": "completed",
+    "champion": "Qatar",
+    "runner_up": "Jordan",
+    "china_status": "group-stage",
+    "china_summary": "中国队 3 战 2 平 1 负，0 进球 1 失球，小组赛出局。",
+    "china_detail_scope": "goals-assists",
+    "china_matches": [
+      {
+        "date": "2024-01-13",
+        "stage": "Group A",
+        "opponent": "Tajikistan",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "2024-01-17",
+        "stage": "Group A",
+        "opponent": "Lebanon",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "2024-01-22",
+        "stage": "Group A",
+        "opponent": "Qatar",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "AFC Asian Cup 2023 official",
+        "url": "https://www.the-afc.com/en/national/afc_asian_cup/home.html"
+      },
+      {
+        "label": "Qatar retain title",
+        "url": "https://www.the-afc.com/en/national/afc_asian_cup.html/news/qatar-retain-title-with-jordan-win"
+      }
+    ]
+  },
+  {
+    "id": "afc-u23-2020",
+    "confederation": "AFC",
+    "competition_name": "AFC U23 Championship Thailand 2020",
+    "level": "u23",
+    "edition_label": "2020",
+    "host": "Thailand",
+    "date_range": {
+      "start": "2020-01-08",
+      "end": "2020-01-26"
+    },
+    "status": "completed",
+    "champion": "Korea Republic",
+    "runner_up": "Saudi Arabia",
+    "china_status": "group-stage",
+    "china_summary": "中国队 3 战全负，0 进球 4 失球，小组垫底出局。",
+    "china_detail_scope": "goals-assists",
+    "china_matches": [
+      {
+        "date": "2020-01-09",
+        "stage": "Group C",
+        "opponent": "Korea Republic",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2020-01-12",
+        "stage": "Group C",
+        "opponent": "Uzbekistan",
+        "score_for": 0,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2020-01-15",
+        "stage": "Group C",
+        "opponent": "Iran",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "AFC U23 2020 final report",
+        "url": "https://www.the-afc.com/en/national/afc_u23_championship/news/final_saudi_arabia_0-1_korea_republic_aet.html"
+      }
+    ]
+  },
+  {
+    "id": "afc-u23-2022",
+    "confederation": "AFC",
+    "competition_name": "AFC U23 Asian Cup Uzbekistan 2022",
+    "level": "u23",
+    "edition_label": "2022",
+    "host": "Uzbekistan",
+    "date_range": {
+      "start": "2022-06-01",
+      "end": "2022-06-19"
+    },
+    "status": "completed",
+    "champion": "Saudi Arabia",
+    "runner_up": "Uzbekistan",
+    "china_status": "did-not-participate",
+    "china_summary": "中国队未进入 2022 决赛圈，没有赛事内比赛数据可录入。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "AFC U23 2022 final report",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup/news/final_saudi_arabia_2-0_uzbekistan.html"
+      }
+    ]
+  },
+  {
+    "id": "afc-u23-2024",
+    "confederation": "AFC",
+    "competition_name": "AFC U23 Asian Cup Qatar 2024",
+    "level": "u23",
+    "edition_label": "2024",
+    "host": "Qatar",
+    "date_range": {
+      "start": "2024-04-15",
+      "end": "2024-05-03"
+    },
+    "status": "completed",
+    "champion": "Japan",
+    "runner_up": "Uzbekistan",
+    "china_status": "group-stage",
+    "china_summary": "中国队 1 胜 2 负，最后一轮 2 比 1 胜阿联酋，最终小组赛出局。",
+    "china_detail_scope": "partial",
+    "china_matches": [
+      {
+        "date": "2024-04-16",
+        "stage": "Group B",
+        "opponent": "Japan",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2024-04-19",
+        "stage": "Group B",
+        "opponent": "Korea Republic",
+        "score_for": 0,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2024-04-22",
+        "stage": "Group B",
+        "opponent": "United Arab Emirates",
+        "score_for": 2,
+        "score_against": 1,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Xie Wenneng",
+            "minute": "24",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player": "Liu Zhurun",
+            "minute": "45+5",
+            "role": "unknown"
+          }
+        ]
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Xie Wenneng",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核到对 UAE 的进球来自首发身份。"
+      },
+      {
+        "player": "Liu Zhurun",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核到对 UAE 的进球，但进球时具体首发/替补身份在当前公开摘要里未完全锁定。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "AFC U23 2024 tournament",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup/home.html"
+      },
+      {
+        "label": "UAE 1-2 China PR match report",
+        "url": "https://english.news.cn/20240422/fbac7e11b15e41af9aaebba2e8a3abb6/c.html"
+      }
+    ]
+  },
+  {
+    "id": "afc-u23-2026",
+    "confederation": "AFC",
+    "competition_name": "AFC U23 Asian Cup Saudi Arabia 2026",
+    "level": "u23",
+    "edition_label": "2026",
+    "host": "Saudi Arabia",
+    "date_range": {
+      "start": "2026-01-06",
+      "end": "2026-01-24"
+    },
+    "status": "completed",
+    "champion": "Japan",
+    "runner_up": "China PR",
+    "china_status": "runner-up",
+    "china_summary": "中国国奥首次打进 U23 亚洲杯决赛，最终 0 比 4 负于日本获得亚军。",
+    "china_detail_scope": "partial",
+    "china_matches": [
+      {
+        "date": "2026-01-08",
+        "stage": "Group D",
+        "opponent": "Iraq",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "2026-01-11",
+        "stage": "Group D",
+        "opponent": "Australia",
+        "score_for": 1,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Peng Xiao",
+            "minute": "43",
+            "role": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-14",
+        "stage": "Group D",
+        "opponent": "Thailand",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "2026-01-17",
+        "stage": "Quarter-final",
+        "opponent": "Jordan",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "note": "中国队点球大战 5 比 4 取胜晋级。",
+        "china_contributions": []
+      },
+      {
+        "date": "2026-01-20",
+        "stage": "Semi-final",
+        "opponent": "Vietnam",
+        "score_for": 3,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Peng Xiao",
+            "minute": "",
+            "role": "unknown"
+          },
+          {
+            "type": "goal",
+            "player": "Xiang Yuwang",
+            "minute": "",
+            "role": "unknown"
+          },
+          {
+            "type": "goal",
+            "player": "Wang Yudong",
+            "minute": "",
+            "role": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2026-01-24",
+        "stage": "Final",
+        "opponent": "Japan",
+        "score_for": 0,
+        "score_against": 4,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Peng Xiao",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "已核到对澳大利亚和越南的进球。"
+      },
+      {
+        "player": "Wang Yudong",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核到半决赛对越南破门。"
+      },
+      {
+        "player": "Xiang Yuwang",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核到半决赛对越南破门。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "AFC U23 2026 in numbers",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/afcu23-saudi-arabia-2026-in-numbers"
+      },
+      {
+        "label": "China PR 1-0 Australia",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/puche-applauds-china-pr%E2%80%99s-%E2%80%98historic%E2%80%99-win"
+      },
+      {
+        "label": "China PR 3-0 Vietnam",
+        "url": "https://www.the-afc.com/en/national/www.the-afc.com/en/national/afc_u23_asian_cup.html/news/s-final-china-pr-power-past-vietnam-1"
+      }
+    ]
+  },
+  {
+    "id": "afc-u20-2023",
+    "confederation": "AFC",
+    "competition_name": "AFC U20 Asian Cup Uzbekistan 2023",
+    "level": "u20",
+    "edition_label": "2023",
+    "host": "Uzbekistan",
+    "date_range": {
+      "start": "2023-03-01",
+      "end": "2023-03-18"
+    },
+    "status": "completed",
+    "champion": "Uzbekistan",
+    "runner_up": "Iraq",
+    "china_status": "quarter-final",
+    "china_summary": "中国 U20 进入八强，距离世青赛资格一步之遥，最终加时 1 比 3 负于韩国。",
+    "china_detail_scope": "partial",
+    "china_matches": [
+      {
+        "date": "2023-03-03",
+        "stage": "Group D",
+        "opponent": "Japan",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2023-03-06",
+        "stage": "Group D",
+        "opponent": "Saudi Arabia",
+        "score_for": 2,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": []
+      },
+      {
+        "date": "2023-03-09",
+        "stage": "Group D",
+        "opponent": "Kyrgyz Republic",
+        "score_for": 1,
+        "score_against": 1,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "2023-03-12",
+        "stage": "Quarter-final",
+        "opponent": "Korea Republic",
+        "score_for": 1,
+        "score_against": 3,
+        "result": "L",
+        "note": "常规时间 1 比 1，最终加时失利。",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "AFC U20 2023 final",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup/news/final_uzbekistan_1-0_iraq.html"
+      }
+    ]
+  },
+  {
+    "id": "afc-u20-2025",
+    "confederation": "AFC",
+    "competition_name": "AFC U20 Asian Cup China 2025",
+    "level": "u20",
+    "edition_label": "2025",
+    "host": "China PR",
+    "date_range": {
+      "start": "2025-02-12",
+      "end": "2025-03-01"
+    },
+    "status": "completed",
+    "champion": "Australia",
+    "runner_up": "Saudi Arabia",
+    "china_status": "quarter-final",
+    "china_summary": "中国 U20 小组赛 2 胜 1 负出线，八强补时被沙特绝杀，无缘世青赛。",
+    "china_detail_scope": "partial",
+    "china_matches": [
+      {
+        "date": "2025-02-12",
+        "stage": "Group A",
+        "opponent": "Qatar",
+        "score_for": 2,
+        "score_against": 1,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Kuai Jiwen",
+            "minute": "17",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player": "Mao Weijie",
+            "minute": "17",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player": "Liu Chengyu",
+            "minute": "21",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player": "Chen Zeshi",
+            "minute": "21",
+            "role": "starter"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-15",
+        "stage": "Group A",
+        "opponent": "Kyrgyz Republic",
+        "score_for": 5,
+        "score_against": 2,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Liu Chengyu",
+            "minute": "13",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player": "Wang Yudong",
+            "minute": "13",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player": "Wang Yudong",
+            "minute": "45",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player": "Mao Weijie",
+            "minute": "49",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player": "Kuai Jiwen",
+            "minute": "49",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player": "Zhu Pengyu",
+            "minute": "80",
+            "role": "substitute"
+          },
+          {
+            "type": "assist",
+            "player": "Xiao Jizheng",
+            "minute": "80",
+            "role": "substitute"
+          },
+          {
+            "type": "goal",
+            "player": "Zhu Pengyu",
+            "minute": "92",
+            "role": "substitute"
+          },
+          {
+            "type": "assist",
+            "player": "Wang Yifan",
+            "minute": "92",
+            "role": "substitute"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-18",
+        "stage": "Group A",
+        "opponent": "Australia",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Kuai Jiwen",
+            "minute": "29",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player": "Xu Junchi",
+            "minute": "29",
+            "role": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2025-02-22",
+        "stage": "Quarter-final",
+        "opponent": "Saudi Arabia",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Kuai Jiwen",
+        "goals": 2,
+        "assists": 1,
+        "role_note": "已核对到对卡塔尔与澳大利亚的进球，以及对吉尔吉斯斯坦的首发助攻。"
+      },
+      {
+        "player": "Liu Chengyu",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "已核对到对卡塔尔与吉尔吉斯斯坦的进球，均来自首发。"
+      },
+      {
+        "player": "Zhu Pengyu",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "已核对到对吉尔吉斯斯坦替补登场后梅开二度。"
+      },
+      {
+        "player": "Mao Weijie",
+        "goals": 1,
+        "assists": 1,
+        "role_note": "已核对到对卡塔尔送出首发助攻，并在对吉尔吉斯斯坦取得首发进球。"
+      },
+      {
+        "player": "Wang Yudong",
+        "goals": 1,
+        "assists": 1,
+        "role_note": "已核对到对吉尔吉斯斯坦传射建功，均来自首发。"
+      },
+      {
+        "player": "Chen Zeshi",
+        "goals": 0,
+        "assists": 1,
+        "role_note": "已核对到对卡塔尔的首发助攻。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "AFC U20 China 2025 schedule",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Match_schedule/AFC-U20-Asian-Cup-China-2025-Match-Schedule-.pdf"
+      },
+      {
+        "label": "China PR 2-1 Qatar",
+        "url": "https://www.365scores.com/en-us/football/match/afc-u20-championship-6815/china-u20-qatar-u20-5492-20540-6815"
+      },
+      {
+        "label": "Kyrgyz Republic 2-5 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/group-a-md2-kyrgyz-republic-2-5-china-pr"
+      },
+      {
+        "label": "Kyrgyz Republic 2-5 China PR detailed events",
+        "url": "https://www.football-lineups.com/match/530972/"
+      },
+      {
+        "label": "China PR 1-2 Australia build-up detail",
+        "url": "https://livescores.biz/game_info/china-australia-2025-02-18"
+      },
+      {
+        "label": "Australia win 2025 title",
+        "url": "https://www.fifa.com/en/articles/australia-win-afc-u-20-asian-cup"
+      }
+    ]
+  },
+  {
+    "id": "afc-u17-2023",
+    "confederation": "AFC",
+    "competition_name": "AFC U17 Asian Cup Thailand 2023",
+    "level": "u17",
+    "edition_label": "2023",
+    "host": "Thailand",
+    "date_range": {
+      "start": "2023-06-15",
+      "end": "2023-07-02"
+    },
+    "status": "completed",
+    "champion": "Japan",
+    "runner_up": "Korea Republic",
+    "china_status": "group-stage",
+    "china_summary": "中国 U17 小组赛 1 平 2 负出局，但王钰栋 3 球是当届中国队最亮眼个人数据。",
+    "china_detail_scope": "partial",
+    "china_matches": [
+      {
+        "date": "2023-06-16",
+        "stage": "Group C",
+        "opponent": "Tajikistan",
+        "score_for": 1,
+        "score_against": 1,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "2023-06-19",
+        "stage": "Group C",
+        "opponent": "Australia",
+        "score_for": 3,
+        "score_against": 5,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2023-06-22",
+        "stage": "Group C",
+        "opponent": "Saudi Arabia",
+        "score_for": 0,
+        "score_against": 3,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Wang Yudong",
+        "goals": 3,
+        "assists": 0,
+        "role_note": "Global Sports Archive 统计显示其以 3 球成为中国队当届头号射手。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "AFC U17 2023 stats archive",
+        "url": "https://globalsportsarchive.com/en/soccer/competition/afc-u-17-asian-cup-2023-thailand/65417"
+      }
+    ]
+  },
+  {
+    "id": "afc-u17-2025",
+    "confederation": "AFC",
+    "competition_name": "AFC U17 Asian Cup Saudi Arabia 2025",
+    "level": "u17",
+    "edition_label": "2025",
+    "host": "Saudi Arabia",
+    "date_range": {
+      "start": "2025-04-03",
+      "end": "2025-04-20"
+    },
+    "status": "completed",
+    "champion": "Uzbekistan",
+    "runner_up": "Saudi Arabia",
+    "china_status": "group-stage",
+    "china_summary": "中国 U17 1 胜 2 负，未能从小组出线，也未拿到 2025 世少赛资格。",
+    "china_detail_scope": "partial",
+    "china_matches": [
+      {
+        "date": "2025-04-03",
+        "stage": "Group A",
+        "opponent": "Saudi Arabia",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Wei Xiangxin",
+            "minute": "90+8",
+            "role": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-06",
+        "stage": "Group A",
+        "opponent": "Uzbekistan",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Zhang Chengrui",
+            "minute": "33",
+            "role": "unknown"
+          }
+        ]
+      },
+      {
+        "date": "2025-04-09",
+        "stage": "Group A",
+        "opponent": "Thailand",
+        "score_for": 2,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Buniyaming Abudoushalamu",
+            "minute": "",
+            "role": "unknown"
+          },
+          {
+            "type": "goal",
+            "player": "Jiang Zhiqin",
+            "minute": "",
+            "role": "unknown"
+          }
+        ]
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Wei Xiangxin",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核对到对沙特的补时进球，首发/替补身份待继续回填。"
+      },
+      {
+        "player": "Zhang Chengrui",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核对到对乌兹别克斯坦的破门，首发/替补身份待继续回填。"
+      },
+      {
+        "player": "Buniyaming Abudoushalamu",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核对到对泰国的点球破门，首发/替补身份待继续回填。"
+      },
+      {
+        "player": "Jiang Zhiqin",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核对到对泰国的进球，首发/替补身份待继续回填。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "Saudi Arabia 2-1 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/group-a-saudi-arabia-2-1-china-pr"
+      },
+      {
+        "label": "China PR 1-2 Uzbekistan",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/group-a-china-pr-1-2-uzbekistan"
+      },
+      {
+        "label": "Thailand 0-2 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/group-a-thailand-0-2-china-pr"
+      },
+      {
+        "label": "Saudi Arabia 2-1 China PR detailed events",
+        "url": "https://www.365scores.com/en-uk/football/asia/afc-u17-asian-cup/match/china-u17-saudi-arabia-u17/5280-5293-7960"
+      },
+      {
+        "label": "China PR 1-2 Uzbekistan detailed events",
+        "url": "https://www.365scores.com/en-us/football/match/afc-u17-asian-cup-7960/china-u17-uzbekistan-u17-5280-5291-7960"
+      }
+    ]
+  },
+  {
+    "id": "afc-u17-2026",
+    "confederation": "AFC",
+    "competition_name": "AFC U17 Asian Cup Saudi Arabia 2026",
+    "level": "u17",
+    "edition_label": "2026",
+    "host": "Saudi Arabia",
+    "date_range": {
+      "start": "2026-05-05",
+      "end": "2026-05-22"
+    },
+    "status": "ongoing",
+    "champion": "",
+  "runner_up": "",
+  "china_status": "finalist-ongoing",
+  "china_summary": "截至 2026-05-22，中国 U17 已打进决赛并锁定 2026 世少赛资格；已完成 5 场比赛，3 胜 0 平 2 负。",
+  "china_detail_scope": "partial",
+  "china_squad": [
+    {
+      "squad_number": 1,
+      "player_id": "cn-qin-ziniu-2010",
+      "player": "Qin Ziniu"
+    },
+    {
+      "squad_number": 2,
+      "player_id": "cn-jin-yucheng-2009",
+      "player": "Jin Yucheng"
+    },
+    {
+      "squad_number": 3,
+      "player_id": "cn-nan-zixun-2010",
+      "player": "Nan Zixun"
+    },
+    {
+      "squad_number": 4,
+      "player_id": "cn-li-junpeng-2010",
+      "player": "Li Junpeng"
+    },
+    {
+      "squad_number": 5,
+      "player_id": "cn-zhang-xuyao-2010",
+      "player": "Zhang Xuyao"
+    },
+    {
+      "squad_number": 6,
+      "player_id": "cn-zhou-yunuo-2009",
+      "player": "Zhou Yunuo"
+    },
+    {
+      "squad_number": 7,
+      "player_id": "cn-he-sifan-2009",
+      "player": "He Sifan"
+    },
+    {
+      "squad_number": 8,
+      "player_id": "cn-kuang-zhaolei-2009",
+      "player": "Kuang Zhaolei"
+    },
+    {
+      "squad_number": 9,
+      "player_id": "cn-xie-jin-2009",
+      "player": "Xie Jin"
+    },
+    {
+      "squad_number": 10,
+      "player_id": "cn-wan-xiang-2009",
+      "player": "Wan Xiang"
+    },
+    {
+      "squad_number": 11,
+      "player_id": "cn-shuai-weihao-2009",
+      "player": "Shuai Weihao"
+    },
+    {
+      "squad_number": 12,
+      "player_id": "cn-jiang-chengen-2010",
+      "player": "Jiang Chengen"
+    },
+    {
+      "squad_number": 13,
+      "player_id": "cn-wang-heyi-2009",
+      "player": "Wang Heyi"
+    },
+    {
+      "squad_number": 14,
+      "player_id": "cn-zhao-songyuan-2009",
+      "player": "Zhao Songyuan"
+    },
+    {
+      "squad_number": 15,
+      "player_id": "cn-pan-chaowei-2009",
+      "player": "Pan Chaowei"
+    },
+    {
+      "squad_number": 16,
+      "player_id": "cn-wang-xiuhao-2009",
+      "player": "Wang Xiuhao"
+    },
+    {
+      "squad_number": 17,
+      "player_id": "cn-xu-zhengpeng-2010",
+      "player": "Xu Zhengpeng"
+    },
+    {
+      "squad_number": 18,
+      "player_id": "cn-bian-weihao-2009",
+      "player": "Bian Weihao"
+    },
+    {
+      "squad_number": 19,
+      "player_id": "cn-peng-xianchen-2009",
+      "player": "Peng Xianchen"
+    },
+    {
+      "squad_number": 20,
+      "player_id": "cn-zhang-bolin-2009",
+      "player": "Zhang Bolin"
+    },
+    {
+      "squad_number": 21,
+      "player_id": "cn-kong-xinuo-2010",
+      "player": "Kong Xinuo"
+    },
+    {
+      "squad_number": 22,
+      "player_id": "cn-liu-zhicheng-2009",
+      "player": "Liu Zhicheng"
+    },
+    {
+      "squad_number": 23,
+      "player_id": "cn-zhu-yuxuan-2009",
+      "player": "Zhu Yuxuan"
+    }
+  ],
+  "china_matches": [
+    {
+      "date": "2026-05-05",
+      "stage": "Group B",
+      "opponent": "Indonesia",
+      "score_for": 0,
+      "score_against": 1,
+      "result": "L",
+      "china_contributions": [],
+      "china_lineup": {
+        "starters": [
+          {
+            "player_id": "cn-qin-ziniu-2010",
+            "player": "Qin Ziniu"
+          },
+          {
+            "player_id": "cn-zhang-xuyao-2010",
+            "player": "Zhang Xuyao"
+          },
+          {
+            "player_id": "cn-nan-zixun-2010",
+            "player": "Nan Zixun"
+          },
+          {
+            "player_id": "cn-li-junpeng-2010",
+            "player": "Li Junpeng"
+          },
+          {
+            "player_id": "cn-jin-yucheng-2009",
+            "player": "Jin Yucheng"
+          },
+          {
+            "player_id": "cn-zhou-yunuo-2009",
+            "player": "Zhou Yunuo"
+          },
+          {
+            "player_id": "cn-pan-chaowei-2009",
+            "player": "Pan Chaowei"
+          },
+          {
+            "player_id": "cn-he-sifan-2009",
+            "player": "He Sifan"
+          },
+          {
+            "player_id": "cn-wan-xiang-2009",
+            "player": "Wan Xiang"
+          },
+          {
+            "player_id": "cn-wang-heyi-2009",
+            "player": "Wang Heyi"
+          },
+          {
+            "player_id": "cn-shuai-weihao-2009",
+            "player": "Shuai Weihao"
+          }
+        ],
+        "substitutes": [
+          {
+            "player_id": "cn-bian-weihao-2009",
+            "player": "Bian Weihao"
+          },
+          {
+            "player_id": "cn-kong-xinuo-2010",
+            "player": "Kong Xinuo"
+          },
+          {
+            "player_id": "cn-wang-xiuhao-2009",
+            "player": "Wang Xiuhao"
+          },
+          {
+            "player_id": "cn-zhang-bolin-2009",
+            "player": "Zhang Bolin"
+          },
+          {
+            "player_id": "cn-zhao-songyuan-2009",
+            "player": "Zhao Songyuan"
+          },
+          {
+            "player_id": "cn-liu-zhicheng-2009",
+            "player": "Liu Zhicheng"
+          },
+          {
+            "player_id": "cn-kuang-zhaolei-2009",
+            "player": "Kuang Zhaolei"
+          },
+          {
+            "player_id": "cn-jiang-chengen-2010",
+            "player": "Jiang Chengen"
+          },
+          {
+            "player_id": "cn-peng-xianchen-2009",
+            "player": "Peng Xianchen"
+          },
+          {
+            "player_id": "cn-xie-jin-2009",
+            "player": "Xie Jin"
+          },
+          {
+            "player_id": "cn-xu-zhengpeng-2010",
+            "player": "Xu Zhengpeng"
+          },
+          {
+            "player_id": "cn-zhu-yuxuan-2009",
+            "player": "Zhu Yuxuan"
+          }
+        ]
+      }
+    },
+      {
+        "date": "2026-05-10",
+        "stage": "Group B",
+        "opponent": "Japan",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-zhao-songyuan-2009",
+            "player": "Zhao Songyuan",
+            "minute": "48",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-wan-xiang-2009",
+            "player": "Wan Xiang",
+            "minute": "48",
+            "role": "starter"
+          }
+        ],
+        "china_lineup": {
+          "formation": "4-4-2",
+          "starters": [
+            {
+              "player_id": "cn-qin-ziniu-2010",
+              "player": "Qin Ziniu"
+            },
+            {
+              "player_id": "cn-zhang-xuyao-2010",
+              "player": "Zhang Xuyao"
+            },
+            {
+              "player_id": "cn-nan-zixun-2010",
+              "player": "Nan Zixun"
+            },
+            {
+              "player_id": "cn-li-junpeng-2010",
+              "player": "Li Junpeng"
+            },
+            {
+              "player_id": "cn-jin-yucheng-2009",
+              "player": "Jin Yucheng"
+            },
+            {
+              "player_id": "cn-pan-chaowei-2009",
+              "player": "Pan Chaowei"
+            },
+            {
+              "player_id": "cn-zhou-yunuo-2009",
+              "player": "Zhou Yunuo"
+            },
+            {
+              "player_id": "cn-wan-xiang-2009",
+              "player": "Wan Xiang"
+            },
+            {
+              "player_id": "cn-zhao-songyuan-2009",
+              "player": "Zhao Songyuan"
+            },
+            {
+              "player_id": "cn-xie-jin-2009",
+              "player": "Xie Jin"
+            },
+            {
+              "player_id": "cn-shuai-weihao-2009",
+              "player": "Shuai Weihao"
+            }
+          ]
+        }
+      },
+      {
+        "date": "2026-05-12",
+        "stage": "Group B",
+        "opponent": "Qatar",
+        "score_for": 2,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-he-sifan-2009",
+            "player": "He Sifan",
+            "minute": "14",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-wan-xiang-2009",
+            "player": "Wan Xiang",
+            "minute": "14",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-zhang-bolin-2009",
+            "player": "Zhang Bolin",
+            "minute": "71",
+            "role": "substitute"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-wan-xiang-2009",
+            "player": "Wan Xiang",
+            "minute": "71",
+            "role": "starter"
+          }
+        ]
+      },
+      {
+        "date": "2026-05-15",
+        "stage": "Quarter-final",
+        "opponent": "Saudi Arabia",
+        "score_for": 3,
+        "score_against": 1,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-wan-xiang-2009",
+            "player": "Wan Xiang",
+            "minute": "27",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-kuang-zhaolei-2009",
+            "player": "Kuang Zhaolei",
+            "minute": "27",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-zhao-songyuan-2009",
+            "player": "Zhao Songyuan",
+            "minute": "59",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-he-sifan-2009",
+            "player": "He Sifan",
+            "minute": "59",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-he-sifan-2009",
+            "player": "He Sifan",
+            "minute": "90+2",
+            "role": "starter"
+          }
+        ],
+        "china_lineup": {
+          "formation": "4-4-2",
+          "starters": [
+            {
+              "player_id": "cn-qin-ziniu-2010",
+              "player": "Qin Ziniu"
+            },
+            {
+              "player_id": "cn-nan-zixun-2010",
+              "player": "Nan Zixun"
+            },
+            {
+              "player_id": "cn-li-junpeng-2010",
+              "player": "Li Junpeng"
+            },
+            {
+              "player_id": "cn-zhang-xuyao-2010",
+              "player": "Zhang Xuyao"
+            },
+            {
+              "player_id": "cn-jin-yucheng-2009",
+              "player": "Jin Yucheng"
+            },
+            {
+              "player_id": "cn-pan-chaowei-2009",
+              "player": "Pan Chaowei"
+            },
+            {
+              "player_id": "cn-kuang-zhaolei-2009",
+              "player": "Kuang Zhaolei"
+            },
+            {
+              "player_id": "cn-zhou-yunuo-2009",
+              "player": "Zhou Yunuo"
+            },
+            {
+              "player_id": "cn-he-sifan-2009",
+              "player": "He Sifan"
+            },
+            {
+              "player_id": "cn-wan-xiang-2009",
+              "player": "Wan Xiang"
+            },
+            {
+              "player_id": "cn-zhao-songyuan-2009",
+              "player": "Zhao Songyuan"
+            }
+          ]
+        }
+      },
+      {
+        "date": "2026-05-19",
+        "stage": "Semi-final",
+        "opponent": "Australia",
+        "score_for": 2,
+        "score_against": 0,
+        "result": "W",
+        "note": "截至 2026-05-22，已核到半决赛首发与1/4决赛相比唯一变化是帅惟浩取代停赛的潘朝伟；第49分钟周雨诺抢断助攻帅惟浩破门，补时第1分钟替补谢晋锁定胜局。",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-shuai-weihao-2009",
+            "player": "Shuai Weihao",
+            "minute": "49",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-zhou-yunuo-2009",
+            "player": "Zhou Yunuo",
+            "minute": "49",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-xie-jin-2009",
+            "player": "Xie Jin",
+            "minute": "90+1",
+            "role": "substitute"
+          }
+        ],
+        "china_lineup": {
+          "starters": [
+            {
+              "player_id": "cn-qin-ziniu-2010",
+              "player": "Qin Ziniu"
+            },
+            {
+              "player_id": "cn-nan-zixun-2010",
+              "player": "Nan Zixun"
+            },
+            {
+              "player_id": "cn-li-junpeng-2010",
+              "player": "Li Junpeng"
+            },
+            {
+              "player_id": "cn-zhang-xuyao-2010",
+              "player": "Zhang Xuyao"
+            },
+            {
+              "player_id": "cn-jin-yucheng-2009",
+              "player": "Jin Yucheng"
+            },
+            {
+              "player_id": "cn-kuang-zhaolei-2009",
+              "player": "Kuang Zhaolei"
+            },
+            {
+              "player_id": "cn-zhou-yunuo-2009",
+              "player": "Zhou Yunuo"
+            },
+            {
+              "player_id": "cn-he-sifan-2009",
+              "player": "He Sifan"
+            },
+            {
+              "player_id": "cn-wan-xiang-2009",
+              "player": "Wan Xiang"
+            },
+            {
+              "player_id": "cn-zhao-songyuan-2009",
+              "player": "Zhao Songyuan"
+            },
+            {
+              "player_id": "cn-shuai-weihao-2009",
+              "player": "Shuai Weihao"
+            }
+          ],
+          "substitutes": [
+            {
+              "player_id": "cn-pan-chaowei-2009",
+              "player": "Pan Chaowei"
+            },
+            {
+              "player_id": "cn-xie-jin-2009",
+              "player": "Xie Jin"
+            },
+            {
+              "player_id": "cn-zhang-bolin-2009",
+              "player": "Zhang Bolin"
+            },
+            {
+              "player_id": "cn-xu-zhengpeng-2010",
+              "player": "Xu Zhengpeng"
+            },
+            {
+              "player_id": "cn-liu-zhicheng-2009",
+              "player": "Liu Zhicheng"
+            },
+            {
+              "player_id": "cn-wang-heyi-2009",
+              "player": "Wang Heyi"
+            },
+            {
+              "player_id": "cn-bian-weihao-2009",
+              "player": "Bian Weihao"
+            },
+            {
+              "player_id": "cn-jiang-chengen-2010",
+              "player": "Jiang Chengen"
+            },
+            {
+              "player_id": "cn-peng-xianchen-2009",
+              "player": "Peng Xianchen"
+            },
+            {
+              "player_id": "cn-wang-xiuhao-2009",
+              "player": "Wang Xiuhao"
+            },
+            {
+              "player_id": "cn-zhu-yuxuan-2009",
+              "player": "Zhu Yuxuan"
+            },
+            {
+              "player_id": "cn-kong-xinuo-2010",
+              "player": "Kong Xinuo"
+            }
+          ]
+        }
+      },
+      {
+        "date": "2026-05-22",
+        "stage": "Final",
+        "opponent": "Japan",
+        "score_for": null,
+        "score_against": null,
+        "result": "TBD",
+        "note": "按 2026-05-22 当前时间点，决赛尚未开打或结果未写入本地数据。",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Wan Xiang",
+        "goals": 1,
+        "assists": 3,
+        "role_note": "对日本、卡塔尔两战的 3 次助攻均已核对到来自首发身份。"
+      },
+      {
+        "player": "Zhao Songyuan",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "对日本与沙特两场进球均已核对到来自首发身份。"
+      },
+      {
+        "player": "He Sifan",
+        "goals": 2,
+        "assists": 1,
+        "role_note": "对卡塔尔的进球与对沙特的 1 球 1 助攻均已核对到来自首发身份。"
+      },
+      {
+        "player": "Kuang Zhaolei",
+        "goals": 0,
+        "assists": 1,
+        "role_note": "已核到对沙特首开纪录一球的直接助攻，来自首发身份。"
+      },
+      {
+        "player": "Zhang Bolin",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "对卡塔尔替补登场后破门。"
+      },
+      {
+        "player": "Shuai Weihao",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核到 2026-05-19 半决赛对澳大利亚首发出场并在第49分钟首开纪录。"
+      },
+      {
+        "player": "Zhou Yunuo",
+        "goals": 0,
+        "assists": 1,
+        "role_note": "已核到 2026-05-19 半决赛对澳大利亚首发出场，并在第49分钟抢断后送出助攻。"
+      },
+      {
+        "player": "Xie Jin",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "已核到 2026-05-19 半决赛对澳大利亚替补登场，并在补时第1分钟破门。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "AFC U17 2026 schedule",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/AFC-U17-Asian-Cup-Saudi-Arabia-2026-Match-Schedule---upd24april.pdf"
+      },
+      {
+        "label": "China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      },
+      {
+        "label": "China PR 2-0 Qatar detailed events",
+        "url": "https://www.sportal.gr/podosfairo/match/1523024"
+      },
+      {
+        "label": "Saudi Arabia 1-3 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-q-final-saudi-arabia-1-3-china-pr"
+      },
+      {
+        "label": "China U17 1-2 Japan U17 lineup and events",
+        "url": "https://www.qiumiwu.com/news/1934652955984"
+      },
+      {
+        "label": "Saudi Arabia U17 1-3 China U17 lineup and events",
+        "url": "https://www.qiumiwu.com/news/1939848432664"
+      },
+      {
+        "label": "China U17 2-0 Australia U17 report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260520/37694.html"
+      },
+      {
+        "label": "China U17 2-0 Australia U17 detailed recap",
+        "url": "https://sports.sina.cn/2026-05-20/detail-inhypnum1728559.d.html?cid=76959&node_id=76959&vt=4"
+      },
+      {
+        "label": "Indonesia U17 1-0 China U17 lineup and events",
+        "url": "https://www.qiumiwu.com/news/1931084661480"
+      },
+      {
+        "label": "Shuai wants to go all the way with China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/shuai-wants-to-go-all-the-way-with-china-pr"
+      }
+    ]
+  },
+  {
+    "id": "fifa-world-cup-2022",
+    "confederation": "FIFA",
+    "competition_name": "FIFA World Cup Qatar 2022",
+    "level": "senior-world-cup",
+    "edition_label": "2022",
+    "host": "Qatar",
+    "date_range": {
+      "start": "2022-11-20",
+      "end": "2022-12-18"
+    },
+    "status": "completed",
+    "champion": "Argentina",
+    "runner_up": "France",
+    "china_status": "did-not-qualify",
+    "china_summary": "中国队未晋级 2022 世界杯决赛圈。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "FIFA World Cup 2022",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/qatar2022"
+      }
+    ]
+  },
+  {
+    "id": "fifa-world-cup-2026",
+    "confederation": "FIFA",
+    "competition_name": "FIFA World Cup 2026",
+    "level": "senior-world-cup",
+    "edition_label": "2026",
+    "host": "Canada / Mexico / United States",
+    "date_range": {
+      "start": "2026-06-11",
+      "end": "2026-07-19"
+    },
+    "status": "upcoming",
+    "champion": "",
+    "runner_up": "",
+    "china_status": "did-not-qualify",
+    "china_summary": "截至 2026-05-22，中国队已无缘 2026 世界杯决赛圈。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "FIFA World Cup 2026 schedule",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
+      },
+      {
+        "label": "Asian qualifying results",
+        "url": "https://www.fifa.com/en/articles/asian-qualifying-results-and-fixtures-for-world-cup-26"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-2023",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-20 World Cup Argentina 2023",
+    "level": "u20-world-cup",
+    "edition_label": "2023",
+    "host": "Argentina",
+    "date_range": {
+      "start": "2023-05-20",
+      "end": "2023-06-11"
+    },
+    "status": "completed",
+    "champion": "Uruguay",
+    "runner_up": "Italy",
+    "china_status": "did-not-qualify",
+    "china_summary": "中国 U20 未能拿到 2023 世青赛资格。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "FIFA U-20 World Cup Argentina 2023",
+        "url": "https://www.fifa.com/en/tournaments/mens/u20worldcup/argentina-2023"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-2025",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-20 World Cup Chile 2025",
+    "level": "u20-world-cup",
+    "edition_label": "2025",
+    "host": "Chile",
+    "date_range": {
+      "start": "2025-09-27",
+      "end": "2025-10-19"
+    },
+    "status": "completed",
+    "champion": "Morocco",
+    "runner_up": "Argentina",
+    "china_status": "did-not-qualify",
+    "china_summary": "中国 U20 未能跻身 2025 世青赛。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "FIFA U-20 World Cup Chile 2025 dates",
+        "url": "https://www.fifa.com/en/articles/dates-teams-groups-information-chile-2025"
+      },
+      {
+        "label": "Every FIFA U-20 World Cup final",
+        "url": "https://www.fifa.com/en/articles/every-u-20-world-cup-final"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u17-world-cup-2023",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-17 World Cup Indonesia 2023",
+    "level": "u17-world-cup",
+    "edition_label": "2023",
+    "host": "Indonesia",
+    "date_range": {
+      "start": "2023-11-10",
+      "end": "2023-12-02"
+    },
+    "status": "completed",
+    "champion": "Germany",
+    "runner_up": "France",
+    "china_status": "did-not-qualify",
+    "china_summary": "中国 U17 未能进入 2023 世少赛决赛圈。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "Every U-17 World Cup winner",
+        "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/articles/every-u17-world-cup-winner"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u17-world-cup-2025",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-17 World Cup Qatar 2025",
+    "level": "u17-world-cup",
+    "edition_label": "2025",
+    "host": "Qatar",
+    "date_range": {
+      "start": "2025-11-03",
+      "end": "2025-11-27"
+    },
+    "status": "completed",
+    "champion": "Portugal",
+    "runner_up": "Austria",
+    "china_status": "did-not-qualify",
+    "china_summary": "中国 U17 未能拿到 2025 世少赛资格。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "FIFA U-17 World Cup 2025 guide",
+        "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2025"
+      },
+      {
+        "label": "Portugal win 2025 title",
+        "url": "https://www.fifa.com/en/articles/tournament-review-stars-award-winners"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u17-world-cup-2026",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-17 World Cup Qatar 2026",
+    "level": "u17-world-cup",
+    "edition_label": "2026",
+    "host": "Qatar",
+    "date_range": {
+      "start": "2026-11-19",
+      "end": "2026-12-13"
+    },
+    "status": "upcoming",
+    "champion": "",
+    "runner_up": "",
+    "china_status": "qualified",
+    "china_summary": "截至 2026-05-22，中国 U17 已通过 2026 U17 亚洲杯晋级 2026 世少赛。",
+    "china_detail_scope": "none",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "FIFA U-17 World Cup Qatar 2026",
+        "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026"
+      }
+    ]
+  }
+]

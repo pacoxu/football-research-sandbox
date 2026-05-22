@@ -1,0 +1,146 @@
+[
+  {
+    "id": "cn-zhang-jiaming-2007",
+    "name": "Zhang Jiaming",
+    "local_name": "张家鸣",
+    "country": "China PR",
+    "birth_date": "2007-03-07",
+    "age_band": "u20",
+    "primary_position": "Centre-Forward",
+    "height_cm": 190,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "FK Vozdovac U19",
+      "country": "Serbia"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "国内出身",
+        "organization": "Liaoning Tieren youth",
+        "country": "China",
+        "note": "公开球员资料与转会报道均将其青训和早期职业环境指向辽宁铁人体系。"
+      },
+      {
+        "stage_label": "2026 英格兰签约节点",
+        "organization": "Burnley FC U21",
+        "country": "England",
+        "note": "2026 年春季报道确认其加盟伯恩利 U21 梯队。"
+      },
+      {
+        "stage_label": "2026 塞尔维亚外租节点",
+        "organization": "FK Vozdovac U19",
+        "country": "Serbia",
+        "note": "2026 年春季报道确认其因劳工证与培养安排，先外租到沃日多瓦茨 U19 锻炼。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "overseas-europe",
+      "china-overseas-current",
+      "recent-outbound-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "china-overseas-2026",
+        "label": "2026 中国现役留洋跟踪",
+        "team": "FK Vozdovac U19",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22 处于伯恩利 U21 签约后外租沃日多瓦茨 U19 的留洋阶段。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "profile",
+        "label": "Sina player profile",
+        "url": "https://match.sports.sina.com.cn/football/player.php?id=7393736"
+      },
+      {
+        "type": "news",
+        "label": "Sina report on Burnley signing",
+        "url": "https://sports.sina.cn/2026-04-01/detail-inhsyskz8538505.d.html?from=qudao"
+      },
+      {
+        "type": "news",
+        "label": "Sina report on Vozdovac registration",
+        "url": "https://k.sina.com.cn/article_7857201856_1d45362c001903i4js.html"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "出生日期可由新浪球员资料页校对；当前“伯恩利 U21 签约 + 沃日多瓦茨 U19 外租”路径由 2026 年春季多篇转会报道交叉确认。"
+    }
+  },
+  {
+    "id": "cn-lin-zihao-2007",
+    "name": "Lin Zihao",
+    "local_name": "林子皓",
+    "country": "China PR",
+    "birth_date": "2007-02-26",
+    "age_band": "u20",
+    "primary_position": "Left Winger",
+    "height_cm": 183,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "FK Vozdovac U19",
+      "country": "Serbia"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "国内出身",
+        "organization": "Hubei Istar",
+        "country": "China",
+        "note": "公开球员资料将其出身与湖北青年星体系关联。"
+      },
+      {
+        "stage_label": "2025 塞尔维亚留洋节点",
+        "organization": "FK Vozdovac U19",
+        "country": "Serbia",
+        "note": "2025 年夏天起加入沃日多瓦茨 U19，成为当前塞尔维亚青年留洋样本之一。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "overseas-europe",
+      "china-overseas-current",
+      "recent-outbound-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "china-overseas-2026",
+        "label": "2026 中国现役留洋跟踪",
+        "team": "FK Vozdovac U19",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22 仍在沃日多瓦茨 U19 效力，是当前塞尔维亚青年留洋样本。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "profile",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.co.in/zihao-lin/profil/spieler/1242688"
+      },
+      {
+        "type": "profile",
+        "label": "Leisu player profile",
+        "url": "https://data.qtx.com/qiuyuan/8dWaEmRaWk.html"
+      },
+      {
+        "type": "news",
+        "label": "Sina report on Serbian overseas move",
+        "url": "https://sports.sina.cn/2026-03-02/detail-inhpqvai4575294.d.html?from=qudao"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "出生日期和身高可由公开球员资料页校对；当前沃日多瓦茨 U19 归属由转会资料页与 2026 年春季留洋报道交叉确认。"
+    }
+  }
+]

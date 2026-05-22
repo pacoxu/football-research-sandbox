@@ -1,0 +1,603 @@
+[
+  {
+    "id": "kr-lee-yoonsung-2005",
+    "name": "LEE Yoonsung",
+    "local_name": "イ ユンソン",
+    "country": "Korea Republic",
+    "birth_date": "2005-05-23",
+    "age_band": "u21",
+    "primary_position": "Goalkeeper",
+    "height_cm": 188,
+    "weight_kg": 86,
+    "registration_club": {
+      "name": "Sagan Tosu",
+      "country": "Japan"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 职业体系节点",
+        "organization": "Sagan Tosu",
+        "country": "Japan",
+        "note": "J.League 当前球员页将其列为鸟栖砂岩门将，前所属记录含 Y.S.C.C. 横滨。"
+      }
+    ],
+    "focus_tags": [
+      "korea-youth",
+      "u21-watch",
+      "professional-system",
+      "overseas-asia"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩 U21 职业体系观察样本",
+        "team": "Korea Republic U21 sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22 作为注册在 J.League 的韩国 U21 门将样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "J.League profile",
+        "url": "https://www.jleague.jp/club/tosu/player/detail/1645955/"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "生日、位置和当前鸟栖注册信息来自 J.League 官方球员页。"
+    }
+  },
+  {
+    "id": "kr-noh-seungki-2005",
+    "name": "NOH Seungki",
+    "local_name": "ノ スンギ",
+    "country": "Korea Republic",
+    "birth_date": "2005-03-25",
+    "age_band": "u21",
+    "primary_position": "Midfielder",
+    "height_cm": 178,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "Kamatamare Sanuki",
+      "country": "Japan"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 职业体系节点",
+        "organization": "Kamatamare Sanuki",
+        "country": "Japan",
+        "note": "J.League 当前球员页在 2025-12-12 后仍将其列为赞岐一线队韩国中场。"
+      }
+    ],
+    "focus_tags": [
+      "korea-youth",
+      "u21-watch",
+      "professional-system",
+      "overseas-asia"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩 U21 职业体系观察样本",
+        "team": "Korea Republic U21 sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22 作为 J.League 当前注册韩国 U21 中场样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "J.League profile",
+        "url": "https://www.jleague.jp/sp/player/1648839/"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "生日、位置和当前赞岐注册信息来自 J.League 官方球员页。"
+    }
+  },
+  {
+    "id": "jp-shio-fukuda-2004",
+    "name": "Shio Fukuda",
+    "local_name": "福田師王",
+    "country": "Japan",
+    "birth_date": "2004-04-08",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 178,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Karlsruher SC",
+      "country": "Germany"
+    },
+    "league_system_override": "Europe big five lower-tier",
+    "overseas_bucket_override": "big-five-lower-tier",
+    "training_pathway": [
+      {
+        "stage_label": "2023 门兴梯队节点",
+        "organization": "Borussia Mönchengladbach II",
+        "country": "Germany",
+        "note": "2023 年从上村学园高中直接加盟门兴体系，先进入二队并迅速完成职业化过渡。"
+      },
+      {
+        "stage_label": "2026 当前外租节点",
+        "organization": "Karlsruher SC",
+        "country": "Germany",
+        "note": "截至 2026-05-22，当前以租借形式效力 Karlsruher SC，属德国职业联赛实际比赛路径。"
+      }
+    ],
+    "focus_tags": [
+      "japan-youth",
+      "u23-watch",
+      "overseas-europe",
+      "big-five-lower-tier",
+      "germany-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Japan overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为从日本高中直达德国体系、再进入德乙比赛环境的日本年轻前锋样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "reference",
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Shi%C5%8D_Fukuda"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "生日、位置和当前 Karlsruher SC 外租状态采用 2026-05-22 可访问的 Wikipedia 条目口径；其门兴签约背景来自同页职业经历。"
+    }
+  },
+  {
+    "id": "jp-taichi-fukui-2004",
+    "name": "Taichi Fukui",
+    "local_name": "福井太智",
+    "country": "Japan",
+    "birth_date": "2004-07-15",
+    "age_band": "u21",
+    "primary_position": "Midfielder",
+    "height_cm": 177,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "FC Arouca",
+      "country": "Portugal"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2023 拜仁培养节点",
+        "organization": "Bayern Munich II",
+        "country": "Germany",
+        "note": "2023 年进入拜仁二队体系，并曾进入一线队比赛名单。"
+      },
+      {
+        "stage_label": "2025 当前职业节点",
+        "organization": "FC Arouca",
+        "country": "Portugal",
+        "note": "截至 2026-05-22，当前效力 FC Arouca，已从拜仁培养链转入葡超一线队比赛环境。"
+      }
+    ],
+    "focus_tags": [
+      "japan-youth",
+      "u21-watch",
+      "overseas-europe",
+      "europe-other",
+      "bayern-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Japan overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为拜仁培养链转入葡超的日本年轻中场样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "FC Bayern transfer to Arouca",
+        "url": "https://fcbayern.com/en/news/2025/02/taichi-fukui-leaves-bayern-for-arouca"
+      },
+      {
+        "type": "reference",
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Taichi_Fukui"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "当前 Arouca 注册状态与拜仁永久转出信息以 FC Bayern 2025-02-03 官方稿和 2026-05-22 的 Wikipedia 条目交叉确认。"
+    }
+  },
+  {
+    "id": "jp-kodai-sano-2003",
+    "name": "Kodai Sano",
+    "local_name": "佐野航大",
+    "country": "Japan",
+    "birth_date": "2003-09-25",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "NEC Nijmegen",
+      "country": "Netherlands"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2023 荷甲节点",
+        "organization": "NEC Nijmegen",
+        "country": "Netherlands",
+        "note": "2023 年从冈山转会 NEC，成为俱乐部该赛季第二名日本出生签约球员。"
+      },
+      {
+        "stage_label": "2026 当前职业节点",
+        "organization": "NEC Nijmegen",
+        "country": "Netherlands",
+        "note": "截至 2026-05-22，仍在 NEC 一线队，属日本年轻中场在荷甲的稳定样本。"
+      }
+    ],
+    "focus_tags": [
+      "japan-youth",
+      "u23-watch",
+      "overseas-europe",
+      "europe-other",
+      "netherlands-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Japan overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为 NEC 日本球员通道中的年轻中场样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "NEC profile",
+        "url": "https://www.nec-nijmegen.nl/teams/speler/kodai-sano-1.htm"
+      },
+      {
+        "type": "reference",
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Kodai_Sano_(footballer)"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "当前 NEC 注册、生日、位置和合同信息来自 NEC 官方球员页；转会与日本 U20 背景用 Wikipedia 条目补充交叉核验。"
+    }
+  },
+  {
+    "id": "jp-anrie-chase-2004",
+    "name": "Anrie Chase",
+    "local_name": "チェイス・アンリ",
+    "country": "Japan",
+    "birth_date": "2004-03-24",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Red Bull Salzburg",
+      "country": "Austria"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2022 德国培养节点",
+        "organization": "VfB Stuttgart II",
+        "country": "Germany",
+        "note": "2022 年签入斯图加特二队，随后进入一线队比赛环境。"
+      },
+      {
+        "stage_label": "2025 当前职业节点",
+        "organization": "Red Bull Salzburg",
+        "country": "Austria",
+        "note": "截至 2026-05-22，当前效力 Red Bull Salzburg，是日本混血中卫旅欧的重要年轻样本。"
+      }
+    ],
+    "focus_tags": [
+      "japan-youth",
+      "u23-watch",
+      "overseas-europe",
+      "europe-other",
+      "germany-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Japan overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为斯图加特培养后转入萨尔茨堡体系的日本年轻中卫样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "Red Bull Salzburg squad profile",
+        "url": "https://www.redbullsalzburg.at/en/squad/anrie-chase"
+      },
+      {
+        "type": "reference",
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Anrie_Chase"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "当前 Salzburg 注册状态采用 Red Bull Salzburg 官方 squad profile；生日、位置和 Stuttgart II 路径由 2026-05-22 的 Wikipedia 条目交叉确认。"
+    }
+  },
+  {
+    "id": "jp-rento-takaoka-2007",
+    "name": "Rento Takaoka",
+    "local_name": "高岡伶颯",
+    "country": "Japan",
+    "birth_date": "2007-03-12",
+    "age_band": "u21",
+    "primary_position": "Forward",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Valenciennes FC",
+      "country": "France"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 英格兰签约节点",
+        "organization": "Southampton FC",
+        "country": "England",
+        "note": "Southampton 2024-06-19 官方公告确认其先签预合同，满 18 岁后正式加入。"
+      },
+      {
+        "stage_label": "2025 当前外租节点",
+        "organization": "Valenciennes FC",
+        "country": "France",
+        "note": "Southampton 2025-08-06 官方公告确认其 2025/26 赛季租借至 Valenciennes。"
+      }
+    ],
+    "focus_tags": [
+      "japan-youth",
+      "u21-watch",
+      "overseas-europe",
+      "big-five-youth",
+      "loan-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Japan overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为 Southampton 引进后再外租法国锻炼的日本 2007 年龄段前锋样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "Southampton pre-contract announcement",
+        "url": "https://www.southamptonfc.com/en/news/article/saints-sign-rento-takaoka-on-pre-contract"
+      },
+      {
+        "type": "official",
+        "label": "Southampton loan announcement",
+        "url": "https://www.southamptonfc.com/en/news/article/youngster-takaoka-joins-valenciennes-on-loan"
+      },
+      {
+        "type": "reference",
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Rento_Takaoka"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "Southampton 2024 和 2025 两篇官方公告确认其签约与外租；生日和位置用 2026-05-22 的 Wikipedia 条目补充。"
+    }
+  },
+  {
+    "id": "jp-sota-kitano-2004",
+    "name": "Sota Kitano",
+    "local_name": "北野颯太",
+    "country": "Japan",
+    "birth_date": "2004-08-13",
+    "age_band": "u21",
+    "primary_position": "Forward",
+    "height_cm": 172,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Red Bull Salzburg",
+      "country": "Austria"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 当前职业节点",
+        "organization": "Red Bull Salzburg",
+        "country": "Austria",
+        "note": "Red Bull Salzburg 2025-06-09 官方媒体稿确认其从大阪樱花转会加盟，并与俱乐部签约至 2029 年。"
+      }
+    ],
+    "focus_tags": [
+      "japan-youth",
+      "u21-watch",
+      "overseas-europe",
+      "europe-other",
+      "salzburg-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Japan overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为 Red Bull Salzburg 新一波日本年轻攻击手样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "Red Bull Salzburg signing note",
+        "url": "https://www.redbullsalzburg.at/getmedia/784c51ad-09f7-48d8-8169-8accd29bcb1f/202425_188_Neuzugang-Sota-Kitano.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "当前 Salzburg 注册、生日、身高与位置采用俱乐部 2025-06-09 官方媒体稿。"
+    }
+  },
+  {
+    "id": "kr-park-seungsoo-2007",
+    "name": "Park Seung-soo",
+    "local_name": "박승수",
+    "country": "Korea Republic",
+    "birth_date": "2007-03-17",
+    "age_band": "u21",
+    "primary_position": "Forward",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Newcastle United U21",
+      "country": "England"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 英超梯队节点",
+        "organization": "Newcastle United U21",
+        "country": "England",
+        "note": "Newcastle 2025-07-24 官方公告确认从水原三星蓝翼签下这名韩国边锋，并编入 U21 体系。"
+      }
+    ],
+    "focus_tags": [
+      "korea-youth",
+      "u21-watch",
+      "overseas-europe",
+      "big-five-youth",
+      "premier-league-academy"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Korea Republic overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为韩国 2007 年龄段最受关注的英超 U21 落点之一建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "Newcastle signing announcement",
+        "url": "https://www.newcastleunited.com/en/news/newcastle-united-sign-seung-soo-park"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "当前 Newcastle U21 注册路径、年龄与韩国 U20 背景来自 Newcastle 2025-07-24 官方公告。"
+    }
+  },
+  {
+    "id": "kr-lee-hyunju-2003",
+    "name": "Lee Hyun-ju",
+    "local_name": "이현주",
+    "country": "Korea Republic",
+    "birth_date": "2003-02-07",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 172,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "FC Arouca",
+      "country": "Portugal"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2022 拜仁培养节点",
+        "organization": "Bayern Munich II",
+        "country": "Germany",
+        "note": "2022 年由浦项制铁青训转入拜仁二队，后续连续外租德乙球队。"
+      },
+      {
+        "stage_label": "2025 当前职业节点",
+        "organization": "FC Arouca",
+        "country": "Portugal",
+        "note": "截至 2026-05-22，当前效力 FC Arouca，是韩国年轻攻击型中场在葡超落地的代表样本。"
+      }
+    ],
+    "focus_tags": [
+      "korea-youth",
+      "u23-watch",
+      "overseas-europe",
+      "europe-other",
+      "bayern-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "east-asia-u21-pro-2026",
+        "label": "日韩年轻旅欧观察样本",
+        "team": "Korea Republic overseas youth sample",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，作为拜仁培养链转入葡超一线队的韩国年轻进攻中场样本建档。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "reference",
+        "label": "Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Lee_Hyun-ju_(footballer)"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "生日、位置、当前 Arouca 注册状态和 Bayern II / 德乙外租路径采用 2026-05-22 的 Wikipedia 条目口径。"
+    }
+  }
+]

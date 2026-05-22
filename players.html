@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>球员列表 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="按国籍、年龄段、当前联赛或体系、标签筛选青训与青年球员样本。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body data-page="players">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero hero-tight">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="players.hero.eyebrow">Player Directory</p>
+            <h1 data-i18n="players.hero.title">球员列表</h1>
+            <p class="hero-text" data-i18n="players.hero.text">
+              这里是总入口。支持按国籍、年龄段、当前联赛或体系、专题标签过滤，并在卡片视图和列表视图之间切换。
+            </p>
+          </div>
+          <aside class="hero-spotlight">
+            <p class="eyebrow" data-i18n="players.view.eyebrow">View Modes</p>
+            <div class="view-switch" role="tablist" aria-label="视图切换" data-i18n-aria-label="players.view.aria">
+              <button id="viewCardsButton" class="switch-button" type="button" data-i18n="players.view.cards">卡片</button>
+              <button id="viewTableButton" class="switch-button" type="button" data-i18n="players.view.table">列表</button>
+            </div>
+            <p id="playerResultsMeta" class="section-note" data-i18n="common.loading">载入中</p>
+          </aside>
+        </section>
+
+        <section class="content-panel">
+          <div class="filter-bar">
+            <label class="filter-item">
+              <span data-i18n="players.filters.search">搜索</span>
+              <input id="playerSearchInput" type="search" placeholder="中文名、原文名、英文名、俱乐部、标签" data-i18n-placeholder="players.filters.searchPlaceholder" />
+            </label>
+            <label class="filter-item">
+              <span data-i18n="players.filters.country">国籍</span>
+              <select id="playerCountryFilter"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="players.filters.ageBand">年龄段</span>
+              <select id="playerAgeFilter"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="players.filters.league">当前联赛 / 体系</span>
+              <select id="playerLeagueFilter"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="players.filters.tag">标签</span>
+              <select id="playerTagFilter"></select>
+            </label>
+            <div class="filter-item filter-action-item">
+              <span data-i18n="players.filters.actions">操作</span>
+              <button id="playerResetButton" class="switch-button" type="button" data-i18n="players.filters.reset">重置筛选</button>
+            </div>
+          </div>
+
+          <div id="playerCardGrid" class="player-card-grid"></div>
+
+          <div id="playerTableWrap" class="table-shell" hidden>
+            <table>
+              <thead>
+                <tr>
+                  <th data-i18n="players.table.player">球员</th>
+                  <th data-i18n="players.table.country">国籍</th>
+                  <th data-i18n="players.table.age">年龄</th>
+                  <th data-i18n="players.table.club">当前球队</th>
+                  <th data-i18n="players.table.league">当前联赛 / 体系</th>
+                  <th data-i18n="players.table.tag">标签</th>
+                  <th data-i18n="players.table.detail">详情</th>
+                </tr>
+              </thead>
+              <tbody id="playerTableBody"></tbody>
+            </table>
+          </div>
+
+          <div id="playerListEmptyState" class="empty-state" hidden data-i18n="players.empty">当前筛选条件下没有匹配球员。</div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>
