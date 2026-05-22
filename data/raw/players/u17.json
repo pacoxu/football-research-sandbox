@@ -693,31 +693,49 @@
     "country": "China PR",
     "birth_date": "2009-01-21",
     "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 175,
-    "weight_kg": 69,
+    "primary_position": "Right-Back",
+    "height_cm": null,
+    "weight_kg": null,
     "registration_club": {
       "name": "DAMM CF",
       "country": "Spain"
     },
     "training_pathway": [
       {
-        "stage_label": "2024 足球小将口径",
+        "stage_label": "河南籍 / 洛阳青训成长",
+        "organization": "Luoyang Feixiang Football Club",
+        "country": "China",
+        "note": "出生地公开口径存在差异：Transfermarkt 写河南固始，地方报道与百科资料多写河南洛阳 / 洛阳西工区。更稳妥的写法是河南籍、洛阳青训成长；其小学一年级进入洛阳飞翔足球俱乐部足球班接受启蒙训练。"
+      },
+      {
+        "stage_label": "2034杯河南赛区MVP节点",
+        "organization": "2034 Cup Henan Division",
+        "country": "China",
+        "note": "公开资料写到其 12 岁时在 2034 杯河南赛区获得 MVP，这是其从地方青训进入更大范围选材视野的重要节点。"
+      },
+      {
+        "stage_label": "中国足球小将09背景",
         "organization": "Donglu Football Boys 09",
         "country": "China",
-        "note": "用户提供研究报告将其列入 2024 U15 第四期集训可交叉确认的 9 名球员名单。"
+        "note": "随后进入董路中国足球小将 09 年龄段项目，到北京边学习边训练；适合归在“足球小将留洋线 / 09 背景球员”，而不是职业俱乐部足校出身。"
       },
       {
-        "stage_label": "2026 报名归属",
-        "organization": "DAMM CF",
+        "stage_label": "2023/24 欧罗巴过渡节点",
+        "organization": "CE Europa B",
         "country": "Spain",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "公开百科与项目口径多写其在随中国足球小将赴西班牙集训后，最初进入欧罗巴体系过渡和适应加泰青训环境。这个阶段更像留洋起点，而不是当前最终归属。"
       },
       {
-        "stage_label": "外部资料",
+        "stage_label": "2025 巴达洛纳节点",
         "organization": "CF Badalona Youth",
         "country": "Spain",
-        "note": "Transfermarkt 快照显示其外部资料页当前俱乐部为 CF Badalona Youth。"
+        "note": "中国足协 2025 年第一期 U16 集训及赴欧洲拉练通知将其所属单位列为巴达洛纳足球俱乐部；Transfermarkt 当前页也仍写作 CF Badalona Youth，这是 2025 年最稳定的公开注册口径。"
+      },
+      {
+        "stage_label": "2026 达姆口径",
+        "organization": "DAMM CF",
+        "country": "Spain",
+        "note": "中国足协 2026 年 3 月 U17 第二期集训名单与 AFC U17 终报名表都将其列为达姆足球俱乐部 / DAMM CF 球员；因此当前注册归属先按达姆处理，同时保留与巴达洛纳口径的冲突说明。"
       }
     ],
     "focus_tags": [
@@ -734,10 +752,28 @@
         "label": "AFC U17 2026 中国队报名名单",
         "team": "China PR U17",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 3,
         "goals": null,
         "minutes": null,
-        "note": "适合作为外部资料冲突时的校验样本。"
+        "note": "AFC U17 2026 终报名表显示其身披 16 号。Flashscore 当前球员页统计其在本届亚洲杯有 3 次出场、0 球 0 助攻；对卡塔尔一战公开文字记录可核其第 78 分钟替补登场，并在比赛尾声制造头球与单刀机会。"
+      },
+      {
+        "label": "2024 中国 U15 第四期 / 韩国拉练",
+        "team": "China PR U15",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": 2,
+        "minutes": null,
+        "note": "2024 年 6 月 U15 第四期集训与 7 月赴韩国拉练名单中，以“河南洛阳：汪修昊”口径入选。公开资料称其在对韩国高中队的一场比赛中打入 2 球。"
+      },
+      {
+        "label": "2025 中国 U16 第一期集训 / 欧洲拉练",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国足协 2025-03-18 通知中，以巴达洛纳足球俱乐部球员身份入选浮嶋敏执教的 U16 国少第一期集训及欧洲拉练名单。"
       },
       {
         "competition_id": "china-overseas-2026",
@@ -747,7 +783,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC U17 终报名表将其当前俱乐部列为 DAMM CF，当前保留为西班牙青年队样本。"
+        "note": "截至 2026-05-22，当前更稳妥的公开口径是处于西班牙青训体系内；2026 年足协与 AFC 报名归属写作 DAMM CF，但 Transfermarkt 当前页仍列 CF Badalona Youth。"
       }
     ],
     "external_links": [
@@ -762,15 +798,40 @@
         "url": "https://www.transfermarkt.com/xiuhao-wang/profil/spieler/1283230"
       },
       {
+        "type": "official",
+        "label": "CFA U16 first camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250318/35764.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 second camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260311/37414.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA feature on overseas U17 players",
+        "url": "https://www.thecfa.cn/mtzl/20260514/37666.html"
+      },
+      {
         "type": "club",
         "label": "CF Damm roster page",
         "url": "https://www.cfdamm.cat/ca/equip/persona/xiuhao-wang"
+      },
+      {
+        "type": "stats",
+        "label": "Flashscore player page",
+        "url": "https://www.flashscore.com/player/wang-xiuhao/jNrr79jL/"
+      },
+      {
+        "type": "profile",
+        "label": "Kuaidong Baike profile",
+        "url": "https://m.baike.com/wikiid/7412930811181514778"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "AFC U17 终报名表将其当前俱乐部列为 DAMM CF；同时保留外部资料中 CF Badalona Youth 的冲突说明，但当前留洋口径按 AFC 报名归属处理。"
+      "notes": "Transfermarkt 可核生日 2009-01-21，并给出“河南固始 + 中场 + CF Badalona Youth”的外部数据库口径；地方资料更稳定指向河南洛阳 / 洛阳西工区成长与洛阳飞翔足球俱乐部启蒙，因此当前写法收敛为“河南籍、洛阳青训成长”。中国足协 2025-03-18 通知可核其在巴达洛纳节点入选 U16 第一期开营，2026-03 U17 第二期与 AFC 终报名表则统一写作达姆足球俱乐部 / DAMM CF，因此当前保留“巴达洛纳到达姆”的归属变化。位置上，早期公开资料存在中场 / 后卫 / 边锋等多面手口径，但结合近两年使用场景，更适合按右后卫 / 翼卫型边路球员处理。身高、体重、惯用脚等口径当前不再硬填为稳定权威字段。"
     }
   },
   {
