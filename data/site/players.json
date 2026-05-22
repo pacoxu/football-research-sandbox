@@ -2182,65 +2182,379 @@
     "birth_date": "2009-01-05",
     "age_band": "u17",
     "primary_position": "Centre-Forward",
-    "height_cm": 179,
-    "weight_kg": 73,
+    "height_cm": 178,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Chengdu Rongcheng FC",
+      "name": "Chengdu Derui Football Training Center",
       "country": "China"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Chengdu Rongcheng FC",
+        "stage_label": "成都新津校园足球起点",
+        "organization": "Xinjin school football pathway",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "华西都市报 / 封面新闻报道提到其从成都市新津区第三小学队起步，可视为公开可核的早期校园足球节点。"
       },
       {
-        "stage_label": "外部资料",
+        "stage_label": "六年级进入德瑞",
         "organization": "Chengdu Derui Football Training Center",
         "country": "China",
-        "note": "Transfermarkt 快照显示其当前俱乐部为成都德瑞训练中心。"
+        "note": "地方媒体报道写到，其在六年级通过选拔进入成都足协德瑞足球培训中心接受系统专业训练，2023 年拿到四川省青少年足球锦标赛 U14 男子组最佳射手、最佳运动员。"
+      },
+      {
+        "stage_label": "2022 成都蓉城梯队节点",
+        "organization": "Chengdu Rongcheng FC",
+        "country": "China",
+        "note": "公开报道与数据库整理口径普遍将其归入成都蓉城梯队 / B 队培养链；中国足协 2025 年多期 U16 国少通知也持续将其所属单位写作成都蓉城足球俱乐部。"
+      },
+      {
+        "stage_label": "2024 U15 国少初入选",
+        "organization": "China PR U15",
+        "country": "China",
+        "note": "公开报道提到其已在 2024 年进入 U15 国少集训序列，完成从地方青训到国字号选拔体系的首次衔接。"
+      },
+      {
+        "stage_label": "2025 成都蓉城B队中乙",
+        "organization": "Chengdu Rongcheng B",
+        "country": "China",
+        "note": "2025-03-23 完成中乙首秀，2025-05-02 对泉州亚新打进职业联赛首球；地方媒体汇总口径为 2025 赛季中乙 20 场 5 球。"
+      },
+      {
+        "stage_label": "2026 当前归属口径",
+        "organization": "Chengdu Derui Football Training Center / Chengdu Rongcheng FC",
+        "country": "China",
+        "note": "截至 2026-05-22，Transfermarkt 当前俱乐部列为成都德瑞足球培训中心，而中国足协 2025 年第二、三、四、五期 U16 国少通知长期列为成都蓉城足球俱乐部；其注册归属、培养归属与参赛单位需要拆开看。"
       }
     ],
     "focus_tags": [
       "asia-u17-2026",
       "china-youth",
       "striker-watch",
+      "chengdu-youth",
+      "golden-boy-u17",
       "mixed-source"
     ],
     "tournament_participation": [
       {
-        "competition_id": "afc-u17-2026",
-        "label": "China U17 当前国字号记录",
+        "label": "2025 中乙成都蓉城B队",
+        "team": "Chengdu Rongcheng B",
+        "squad_status": "registered",
+        "appearances": 20,
+        "goals": 5,
+        "minutes": null,
+        "note": "公开报道口径为 2025 赛季中乙 20 场 5 球；2025-03-23 完成职业联赛首秀，2025-05-02 刷新中国职业联赛最年轻进球纪录。"
+      },
+      {
+        "label": "2025 呼和浩特国际足球锦标赛",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2025 年第二期 U16 集训并参加呼和浩特国际足球锦标赛通知中入选，所属单位列为成都蓉城足球俱乐部。"
+      },
+      {
+        "label": "2025 沈阳和平杯",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2025 年第三期 U16 集训名单中继续入选，作为 U17 亚洲杯预选赛周期前的重要热身节点。"
+      },
+      {
+        "label": "AFC U17 2026 预选赛",
         "team": "China PR U17",
         "squad_status": "registered",
-        "appearances": 11,
-        "goals": 11,
+        "appearances": 5,
+        "goals": 9,
         "minutes": null,
-        "note": "Transfermarkt 搜索快照显示当前国青数据为 11 场 11 球。"
+        "note": "中国队五战全胜、进 42 球 0 失球晋级正赛；帅惟浩对东帝汶有 2 球 1 助攻，收官战对孟加拉国上演帽子戏法，本届预选赛合计 5 场 9 球。"
+      },
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 正赛",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "2026 U17 亚洲杯半决赛对澳大利亚第 49 分钟接周雨诺抢断后传球，前插至禁区左侧推射远角得手，帮助中国队 2 比 0 取胜并时隔 22 年重返决赛。"
       }
     ],
     "external_links": [
       {
-        "type": "official",
-        "label": "AFC 2026 squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      },
-      {
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
-        "url": "https://www.transfermarkt.us/weihao-shuai/profil/spieler/1382253"
+        "url": "https://www.transfermarkt.com/weihao-shuai/profil/spieler/1382253",
+        "note": "用于校对生日、出生地、身高、惯用脚和当前俱乐部字段。"
+      },
+      {
+        "type": "news",
+        "label": "Tencent / Red Star Golden Boy report",
+        "url": "https://news.qq.com/rain/a/20260302A06FV200",
+        "note": "用于补成长路径、德瑞训练、成都蓉城 B 队中乙 20 场 5 球，以及 2025 中国金童奖 U17 的报道口径。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250513/36466.html",
+        "note": "用于校对其在 2025 年第二期 U16 国少名单中以成都蓉城足球俱乐部球员身份入选。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 qualifier report vs Bangladesh",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251201/37115.html",
+        "note": "用于校对其在收官战对孟加拉国的帽子戏法，以及本届亚预赛 5 场 9 球。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 qualifier report vs Timor-Leste",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251125/37104.html",
+        "note": "用于校对其对东帝汶的进球、助攻和前场终结方式。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 semi-final report vs Australia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260520/37694.html",
+        "note": "用于校对其在 U17 亚洲杯半决赛对澳大利亚的关键进球。"
+      },
+      {
+        "type": "news",
+        "label": "Sina report on Chengdu youth label",
+        "url": "https://finance.sina.com.cn/jjxw/2026-03-03/doc-inhprshe5031394.shtml",
+        "note": "用于说明媒体所说的“成都足球小将”是泛称，不等于董路的中国足球小将项目。"
       }
     ],
     "verification": {
       "status": "mixed-source",
       "last_checked": "2026-05-22",
-      "notes": "报名俱乐部与外部资料归属不完全一致，适合后续补职业注册和青训实际归属。"
+      "notes": "生日、出生地、身高、惯用脚和当前俱乐部字段可由 Transfermarkt 对照；地方媒体可连续拼出其从新津校园足球、成都德瑞到成都蓉城 B 队的成长路径；中国足协通知和战报可核到 2025 年 U16 集训、U17 亚预赛 5 场 9 球，以及 2026 年 U17 亚洲杯半决赛对澳大利亚的关键进球。当前最大不确定项不是球员身份，而是“成都德瑞 / 成都蓉城”之间的注册归属与培养归属口径差异。"
     },
     "names": {
       "zh": "帅惟浩",
       "en": "Shuai Weihao",
       "native": "帅惟浩",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
+    "id": "cn-he-sifan-2009",
+    "name": "He Sifan",
+    "local_name": "何思凡",
+    "country": "China PR",
+    "birth_date": "2009-01-14",
+    "age_band": "u17",
+    "primary_position": "Left Winger",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Shandong Luneng Taishan Football School",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "安徽合肥出身",
+        "organization": "Hefei youth football pathway",
+        "country": "China",
+        "note": "Transfermarkt 将其出生地登记为安徽合肥，可作为其早期地域出身的公开旁证。"
+      },
+      {
+        "stage_label": "合肥竹溪小学",
+        "organization": "Hefei Zhuxi Primary School",
+        "country": "China",
+        "note": "懂球帝人物稿写到，何思凡早期主要在合肥市竹溪小学参与校园足球训练与比赛。"
+      },
+      {
+        "stage_label": "2019/04 鲁能足校试训",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "2018 年底在南京迎新杯被鲁能球探关注后，2019 年 4 月前往鲁能足校试训并通过。"
+      },
+      {
+        "stage_label": "2019/09 鲁能09黄队入队",
+        "organization": "Shandong Luneng 2009 Yellow Team",
+        "country": "China",
+        "note": "2019 年 9 月正式进入鲁能足校 2009 年龄段黄队，开始系统接受鲁能足校培养。"
+      },
+      {
+        "stage_label": "2019/11 升入鲁能09红队",
+        "organization": "Shandong Luneng 2009 Red Team",
+        "country": "China",
+        "note": "进入黄队两个月后升入 2009 年龄段红队，公开人物稿记载当时主要在队内出任前锋。"
+      },
+      {
+        "stage_label": "2022 山东泰山U13冠军节点",
+        "organization": "Shandong Taishan U13",
+        "country": "China",
+        "note": "中国足协 2022 年首届中国青少年足球联赛 U13 组决赛战报可核其打入全场唯一进球，帮助山东泰山 U13 1 比 0 击败清华附中夺冠。"
+      },
+      {
+        "stage_label": "山东泰山 / 鲁能足校09主线",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "其公开成长主线稳定指向安徽校园足球进入鲁能足校，再到山东泰山 09 梯队，并不属于董路中国足球小将的主培养线。"
+      },
+      {
+        "stage_label": "2024/09 U15第五期集训",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "中国足协 2024 年 9 月 U15 国家男子足球选拔队第五期集训通知中，以山东泰山球员身份入选。"
+      },
+      {
+        "stage_label": "2024/10 U15法国拉练",
+        "organization": "China PR U15",
+        "country": "China",
+        "note": "中国足协 2024 年 10 月 U15 国家男子足球选拔队赴法国欧塞尔拉练名单中继续以山东泰山球员身份入选。"
+      },
+      {
+        "stage_label": "2025/11 U16第五期集训",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "中国足协 2025 年第五期 U16 集训通知中，以山东鲁能泰山足球学校球员身份入选，备战 2026 U17 亚洲杯预选赛。"
+      },
+      {
+        "stage_label": "2026/03 U17第二期集训",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选，备战 U17 亚洲杯决赛阶段。"
+      },
+      {
+        "stage_label": "2026 报名归属",
+        "organization": "Shandong Luneng Taishan Football School",
+        "country": "China",
+        "note": "AFC U17 2026 终报名表列入最终 23 人名单；媒体转述名单口径中，何思凡身披 7 号，通常被写作中场或前场球员。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 中国队终报名名单",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单；媒体转述亚足联名单时通常将其写作 7 号中场 / 前场球员。"
+      },
+      {
+        "label": "2022 中国青少年足球联赛U13决赛",
+        "team": "Shandong Taishan U13",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 1,
+        "minutes": null,
+        "note": "代表山东泰山 U13 在决赛攻入全场唯一进球，帮助球队 1 比 0 击败清华附中 U13 夺冠。"
+      },
+      {
+        "label": "2025 U17 亚洲杯预选赛晋级周期",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国队五战全胜、进 42 球且 0 失球晋级 U17 亚洲杯正赛，何思凡在该周期长期保持在名单与比赛体系内。"
+      },
+      {
+        "label": "2026 U17 亚洲杯小组赛对卡塔尔",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 1,
+        "minutes": null,
+        "note": "第 14 分钟接万项转移后在禁区左侧横向带球兜射远角破门，帮助中国队 2 比 0 取胜并晋级八强，同时锁定 U17 世界杯资格。"
+      },
+      {
+        "label": "2026 U17 亚洲杯1/4决赛对沙特",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 1,
+        "minutes": null,
+        "note": "中国队 3 比 1 逆转沙特的 1/4 决赛中先助攻赵松源破门反超，补时阶段再进一球，足协官方概括为“何思凡传射+连场破门”。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/sifan-he/profil/spieler/1281955"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi player feature",
+        "url": "https://m.dongqiudi.com/article/2703829.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U13 final report",
+        "url": "https://www.thecfa.cn/qingchaoliansai/20221126/31939.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U15 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240920/35058.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U15 France tour notice",
+        "url": "https://www.thecfa.cn/jxtz/20241012/35123.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20251104/37051.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260311/37413.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA qualification summary",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251201/37115.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA Qatar match report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260513/37660.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA Saudi quarter-final report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260516/37680.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua semi-final coverage",
+        "url": "https://www.xinhuanet.com/sports/20260520/aabe779f72384ae6a1b186f788c41f0b/c.html"
+      },
+      {
+        "type": "news",
+        "label": "CCTV Saudi quarter-final coverage",
+        "url": "https://sports.cctv.com/2026/05/16/ARTILuYa9Hzc3weMAmJ4ZMYv260516.shtml"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "Transfermarkt 可核生日、出生地安徽合肥与左边锋口径；懂球帝人物稿可核其合肥竹溪小学、2019 年试训鲁能足校、进入 09 黄队后升入红队的成长主线；中国足协比赛战报与集训通知可核其山东泰山 / 鲁能足校线以及 2026 U17 亚洲杯对卡塔尔、沙特的关键表现。公开资料不足以将其归入董路中国足球小将主培养线，因此当前明确不加该标签。身高、体重、惯用脚等非足协权威口径暂不硬填。"
+    },
+    "names": {
+      "zh": "何思凡",
+      "en": "He Sifan",
+      "native": "何思凡",
       "ja": "",
       "ko": ""
     }
@@ -3802,64 +4116,6 @@
       "zh": "吕孟洋",
       "en": "Lyu Mengyang",
       "native": "吕孟洋",
-      "ja": "",
-      "ko": ""
-    }
-  },
-  {
-    "id": "cn-he-sifan-2009",
-    "name": "He Sifan",
-    "local_name": "He Sifan",
-    "country": "China PR",
-    "birth_date": "2009-08-18",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 175,
-    "weight_kg": 73,
-    "registration_club": {
-      "name": "Shandong Taishan FC",
-      "country": "China"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Shandong Taishan FC",
-        "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "china-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 中国队终报名名单",
-        "team": "China PR U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "names": {
-      "zh": "何思凡",
-      "en": "He Sifan",
-      "native": "何思凡",
       "ja": "",
       "ko": ""
     }

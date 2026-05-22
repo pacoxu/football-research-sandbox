@@ -788,60 +788,154 @@
     "birth_date": "2009-01-05",
     "age_band": "u17",
     "primary_position": "Centre-Forward",
-    "height_cm": 179,
-    "weight_kg": 73,
+    "height_cm": 178,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Chengdu Rongcheng FC",
+      "name": "Chengdu Derui Football Training Center",
       "country": "China"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Chengdu Rongcheng FC",
+        "stage_label": "成都新津校园足球起点",
+        "organization": "Xinjin school football pathway",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "华西都市报 / 封面新闻报道提到其从成都市新津区第三小学队起步，可视为公开可核的早期校园足球节点。"
       },
       {
-        "stage_label": "外部资料",
+        "stage_label": "六年级进入德瑞",
         "organization": "Chengdu Derui Football Training Center",
         "country": "China",
-        "note": "Transfermarkt 快照显示其当前俱乐部为成都德瑞训练中心。"
+        "note": "地方媒体报道写到，其在六年级通过选拔进入成都足协德瑞足球培训中心接受系统专业训练，2023 年拿到四川省青少年足球锦标赛 U14 男子组最佳射手、最佳运动员。"
+      },
+      {
+        "stage_label": "2022 成都蓉城梯队节点",
+        "organization": "Chengdu Rongcheng FC",
+        "country": "China",
+        "note": "公开报道与数据库整理口径普遍将其归入成都蓉城梯队 / B 队培养链；中国足协 2025 年多期 U16 国少通知也持续将其所属单位写作成都蓉城足球俱乐部。"
+      },
+      {
+        "stage_label": "2024 U15 国少初入选",
+        "organization": "China PR U15",
+        "country": "China",
+        "note": "公开报道提到其已在 2024 年进入 U15 国少集训序列，完成从地方青训到国字号选拔体系的首次衔接。"
+      },
+      {
+        "stage_label": "2025 成都蓉城B队中乙",
+        "organization": "Chengdu Rongcheng B",
+        "country": "China",
+        "note": "2025-03-23 完成中乙首秀，2025-05-02 对泉州亚新打进职业联赛首球；地方媒体汇总口径为 2025 赛季中乙 20 场 5 球。"
+      },
+      {
+        "stage_label": "2026 当前归属口径",
+        "organization": "Chengdu Derui Football Training Center / Chengdu Rongcheng FC",
+        "country": "China",
+        "note": "截至 2026-05-22，Transfermarkt 当前俱乐部列为成都德瑞足球培训中心，而中国足协 2025 年第二、三、四、五期 U16 国少通知长期列为成都蓉城足球俱乐部；其注册归属、培养归属与参赛单位需要拆开看。"
       }
     ],
     "focus_tags": [
       "asia-u17-2026",
       "china-youth",
       "striker-watch",
+      "chengdu-youth",
+      "golden-boy-u17",
       "mixed-source"
     ],
     "tournament_participation": [
       {
-        "competition_id": "afc-u17-2026",
-        "label": "China U17 当前国字号记录",
+        "label": "2025 中乙成都蓉城B队",
+        "team": "Chengdu Rongcheng B",
+        "squad_status": "registered",
+        "appearances": 20,
+        "goals": 5,
+        "minutes": null,
+        "note": "公开报道口径为 2025 赛季中乙 20 场 5 球；2025-03-23 完成职业联赛首秀，2025-05-02 刷新中国职业联赛最年轻进球纪录。"
+      },
+      {
+        "label": "2025 呼和浩特国际足球锦标赛",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2025 年第二期 U16 集训并参加呼和浩特国际足球锦标赛通知中入选，所属单位列为成都蓉城足球俱乐部。"
+      },
+      {
+        "label": "2025 沈阳和平杯",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2025 年第三期 U16 集训名单中继续入选，作为 U17 亚洲杯预选赛周期前的重要热身节点。"
+      },
+      {
+        "label": "AFC U17 2026 预选赛",
         "team": "China PR U17",
         "squad_status": "registered",
-        "appearances": 11,
-        "goals": 11,
+        "appearances": 5,
+        "goals": 9,
         "minutes": null,
-        "note": "Transfermarkt 搜索快照显示当前国青数据为 11 场 11 球。"
+        "note": "中国队五战全胜、进 42 球 0 失球晋级正赛；帅惟浩对东帝汶有 2 球 1 助攻，收官战对孟加拉国上演帽子戏法，本届预选赛合计 5 场 9 球。"
+      },
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 正赛",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "2026 U17 亚洲杯半决赛对澳大利亚第 49 分钟接周雨诺抢断后传球，前插至禁区左侧推射远角得手，帮助中国队 2 比 0 取胜并时隔 22 年重返决赛。"
       }
     ],
     "external_links": [
       {
-        "type": "official",
-        "label": "AFC 2026 squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      },
-      {
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
-        "url": "https://www.transfermarkt.us/weihao-shuai/profil/spieler/1382253"
+        "url": "https://www.transfermarkt.com/weihao-shuai/profil/spieler/1382253",
+        "note": "用于校对生日、出生地、身高、惯用脚和当前俱乐部字段。"
+      },
+      {
+        "type": "news",
+        "label": "Tencent / Red Star Golden Boy report",
+        "url": "https://news.qq.com/rain/a/20260302A06FV200",
+        "note": "用于补成长路径、德瑞训练、成都蓉城 B 队中乙 20 场 5 球，以及 2025 中国金童奖 U17 的报道口径。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250513/36466.html",
+        "note": "用于校对其在 2025 年第二期 U16 国少名单中以成都蓉城足球俱乐部球员身份入选。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 qualifier report vs Bangladesh",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251201/37115.html",
+        "note": "用于校对其在收官战对孟加拉国的帽子戏法，以及本届亚预赛 5 场 9 球。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 qualifier report vs Timor-Leste",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251125/37104.html",
+        "note": "用于校对其对东帝汶的进球、助攻和前场终结方式。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 semi-final report vs Australia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260520/37694.html",
+        "note": "用于校对其在 U17 亚洲杯半决赛对澳大利亚的关键进球。"
+      },
+      {
+        "type": "news",
+        "label": "Sina report on Chengdu youth label",
+        "url": "https://finance.sina.com.cn/jjxw/2026-03-03/doc-inhprshe5031394.shtml",
+        "note": "用于说明媒体所说的“成都足球小将”是泛称，不等于董路的中国足球小将项目。"
       }
     ],
     "verification": {
       "status": "mixed-source",
       "last_checked": "2026-05-22",
-      "notes": "报名俱乐部与外部资料归属不完全一致，适合后续补职业注册和青训实际归属。"
+      "notes": "生日、出生地、身高、惯用脚和当前俱乐部字段可由 Transfermarkt 对照；地方媒体可连续拼出其从新津校园足球、成都德瑞到成都蓉城 B 队的成长路径；中国足协通知和战报可核到 2025 年 U16 集训、U17 亚预赛 5 场 9 球，以及 2026 年 U17 亚洲杯半决赛对澳大利亚的关键进球。当前最大不确定项不是球员身份，而是“成都德瑞 / 成都蓉城”之间的注册归属与培养归属口径差异。"
     }
   },
   {
