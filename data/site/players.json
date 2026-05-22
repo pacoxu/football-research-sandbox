@@ -2960,25 +2960,31 @@
     "birth_date": "2009-04-21",
     "age_band": "u17",
     "primary_position": "Attacking Midfield",
-    "height_cm": 175,
-    "weight_kg": 60,
+    "height_cm": null,
+    "weight_kg": null,
     "league_system_override": "Serbian youth league",
     "registration_club": {
-      "name": "Red Star Belgrade",
+      "name": "Red Star Belgrade U17",
       "country": "Serbia"
     },
     "training_pathway": [
       {
+        "stage_label": "黑龙江七台河启蒙/被发掘",
+        "organization": "Qitaihe youth football / China Football Boys scouting pathway",
+        "country": "China",
+        "note": "北青侧写提到他是早期从黑龙江七台河招来培养的球员；Transfermarkt 也将出生地登记为黑龙江七台河。"
+      },
+      {
         "stage_label": "2018/08 中国足球小将",
         "organization": "China Football Boys",
         "country": "China",
-        "note": "公开报道至少可追溯到 2018 年德国广域星空杯；对汉诺威96一战破门，决赛对多特蒙德 U9 再次进球并随队夺冠。"
+        "note": "公开报道至少可追溯到 2018 年德国广域星空杯；对汉诺威96一战破门，决赛对多特蒙德 U9 再次进球并随队夺冠。后续北青报道也将其列为出自中国足球小将项目的 09 国少球员。"
       },
       {
-        "stage_label": "湖北青训体系",
+        "stage_label": "湖北青训体系 / 湖北青年星相关",
         "organization": "Hubei youth system",
         "country": "China",
-        "note": "新华社 2026-02-15 报道提到其成长于湖北青训体系。"
+        "note": "新华社 2026-02-15 报道提到其成长于湖北青训体系；结合公开报道，更适合写成湖北青训体系 / 湖北青年星相关路径，而不是单一职业梯队线。"
       },
       {
         "stage_label": "加盟前短训",
@@ -2987,16 +2993,16 @@
         "note": "新华社 2026-02-15 报道提到其加盟红星前曾在塞尔维亚杜利亚伊足球学院进行短期训练。"
       },
       {
-        "stage_label": "2026 亚洲杯报名归属",
-        "organization": "Red Star Belgrade",
-        "country": "Serbia",
-        "note": "AFC U17 2026 最终报名表列其当前俱乐部为贝尔格莱德红星。"
-      },
-      {
         "stage_label": "2026/02 贝尔格莱德红星 U17",
         "organization": "Red Star Belgrade U17",
         "country": "Serbia",
-        "note": "新华社与 Transfermarkt 均指向其于 2026 年 2 月正式进入红星青训体系，并代表 U17 梯队参加塞尔维亚青年联赛。"
+        "note": "新华社与 Transfermarkt 均指向其于 2026 年 2 月正式进入红星青训体系，并代表 U17 梯队参加塞尔维亚青年联赛。对外接触信号在 2025 年底已出现，但正式官宣口径以 2026-02-14 为准。"
+      },
+      {
+        "stage_label": "2026 亚洲杯报名归属",
+        "organization": "Red Star Belgrade U17",
+        "country": "Serbia",
+        "note": "AFC U17 2026 最终报名表列其当前俱乐部为贝尔格莱德红星；中国队 23 人名单相关公开口径显示他身披 10 号。"
       }
     ],
     "focus_tags": [
@@ -3015,7 +3021,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "本届正赛的进球与助攻明细已在下方“最近贡献”模块按场次展示。"
+        "note": "AFC 战报与足协报道可核其在本届赛事身披 10 号，并在对卡塔尔送出助攻、对沙特 1/4 决赛打入扳平球；分场进球与助攻明细继续以下方“最近贡献”模块为准。"
       },
       {
         "label": "2026 U17 亚洲杯预选赛",
@@ -3054,7 +3060,7 @@
       },
       {
         "type": "transfermarkt",
-        "label": "Transfermarkt profile",
+        "label": "Transfermarkt profile (Xiang Wan)",
         "url": "https://www.transfermarkt.com/xiang-wan/profil/spieler/1281956"
       },
       {
@@ -3070,15 +3076,16 @@
         "note": "可核验其在 2018 德国广域星空杯随中国足球小将夺冠的公开报道。"
       },
       {
-        "type": "official",
-        "label": "Red Star signing report",
-        "url": "https://www.china-ceec.org/eng/rwjl/202602/t20260228_11866379.htm"
+        "type": "news",
+        "label": "Tencent pre-announcement on Red Star move",
+        "url": "https://view.inews.qq.com/a/20251204A05C4X00",
+        "note": "可作为 2025 年底接触和试训信号的旁证，但正式官宣口径仍以 2026-02-14 前后的新华社与红星相关报道为准。"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "AFC 报名表、新华社签约报道与 2018 年新浪赛事报道可以交叉确认其中国足球小将背景、湖北青训路径和红星 U17 节点。"
+      "notes": "Transfermarkt 可核生日、出生地七台河、位置与当前红星 U17 节点；新华社签约报道可核湖北青训体系与杜利亚伊短训路径；2018 年新浪赛事报道与北青侧写可交叉确认其中国足球小将背景。身高、体重、惯用脚等口径当前不够稳定，因此暂不硬填。"
     },
     "names": {
       "zh": "万项",
