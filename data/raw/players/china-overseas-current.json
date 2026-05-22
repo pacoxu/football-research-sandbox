@@ -243,5 +243,154 @@
       "last_checked": "2026-05-22",
       "notes": "出生日期、徐州出身、双胞胎兄弟与清华附中节点可由 Baidu Baike 条目及其引用稿件交叉校对；西班牙三段履历可由 FutbolBase 履历页补齐；2025/26 在 Europa, C.E. Juvenil B 的联赛注册与名单拆分数据由 FCF 球员页补强。通用检索里还会混入 Lu / Lv / Lyu 三种拼写及非足球同名结果，因此本条以生日、中文名和加泰注册路径三项联合锁定。"
     }
+  },
+  {
+    "id": "cn-liu-kaiyuan-2010",
+    "name": "Liu Kaiyuan",
+    "local_name": "刘凯源",
+    "country": "China PR",
+    "birth_date": "2010-01-16",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 182,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "FC Villarreal Youth",
+      "country": "Spain"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "泉州出生 / 重庆卓立启蒙",
+        "organization": "Chongqing Zhuoli Football Club",
+        "country": "China",
+        "note": "泉州媒体报道写明其出生于福建泉州，小学二年级开始接触足球，三年级进入重庆卓立俱乐部接受一周五练、周末比赛的启蒙训练。"
+      },
+      {
+        "stage_label": "中国足球小将 2010 年龄段",
+        "organization": "China Football Boys",
+        "country": "China",
+        "note": "四年级参加董路中国足球小将选拔，前三次落选后通过持续加练进入项目体系；随后与父亲赴北京，边上学边训练，成为 2010 年龄段代表前锋之一。"
+      },
+      {
+        "stage_label": "2024 西安君泽 / U14 国少节点",
+        "organization": "Xi'an Junze Football Club",
+        "country": "China",
+        "note": "中国足协 2024-03-22 U14 国家男子足球选拔队第一期集训通知列其所属单位为西安君泽足球俱乐部；2024-06-21 第二期集训和 2024-07-12 赴韩国拉练通知继续列名。"
+      },
+      {
+        "stage_label": "2024/25 西班牙欧罗巴节点",
+        "organization": "CE Europa",
+        "country": "Spain",
+        "note": "2024 年 4 月赴西班牙留洋，先进入欧罗巴体系适应节奏、身体和语言环境。泉州报道对其下半赛季进球数据有 13 场 14 球与 11 场 12 球两种公开口径，但都指向其在欧罗巴阶段后半程爆发并吸引比利亚雷亚尔持续考察。"
+      },
+      {
+        "stage_label": "2025 比利亚雷亚尔梯队节点",
+        "organization": "FC Villarreal Youth",
+        "country": "Spain",
+        "note": "2025 年 4 月完成签约仪式、6 月对外披露加盟黄潜梯队；Transfermarkt 当前将其加入 Villarreal Youth 的日期记为 2025-09-09。签约曝光时间与数据库注册时间可能不同，因此这里并列保留。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "overseas-europe",
+      "china-overseas-current",
+      "donglu-football-boys",
+      "recent-outbound-2025"
+    ],
+    "tournament_participation": [
+      {
+        "label": "2024 中国 U14 国少选拔第一期",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-03-22 通知列其以西安君泽足球俱乐部球员身份入选第一期集训名单。"
+      },
+      {
+        "label": "2024 中国 U14 国少选拔第二期 / 韩国拉练",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-06-21 第二期集训通知与 2024-07-12 赴韩国拉练通知继续列其在队。"
+      },
+      {
+        "label": "2026 中国 U16 第二期集训",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-03-12 通知列其以比利亚雷亚尔足球俱乐部球员身份入选 U16 第二期集训，随后赴法国参加蒙太古杯。"
+      },
+      {
+        "label": "2026 蒙太古杯",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "公开报道可核其在 7-8 名排位赛对秘鲁打入制胜球，帮助中国队 1 比 0 获得第 7 名。"
+      },
+      {
+        "competition_id": "china-overseas-2026",
+        "label": "2026 中国现役留洋跟踪",
+        "team": "FC Villarreal Youth",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-05-22，Transfermarkt 将其列为 FC Villarreal Youth 前锋，并同步标注其中国 U16 国脚身份。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "profile",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kaiyuan-liu/profil/spieler/1504020"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 first camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240322/33918.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240621/34645.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 Korea trip notice",
+        "url": "https://www.thecfa.cn/jxtz/20240712/34762.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260312/37416.html"
+      },
+      {
+        "type": "news",
+        "label": "Dongnan Net Quanzhou profile",
+        "url": "https://qz.fjsen.com/2025-06/30/content_31933701.htm"
+      },
+      {
+        "type": "news",
+        "label": "Sohu report on Villarreal signing",
+        "url": "https://www.sohu.com/a/900983143_362070"
+      },
+      {
+        "type": "news",
+        "label": "Sina report on Montaigu Cup goal",
+        "url": "https://finance.sina.com.cn/jjxw/2026-04-06/doc-inhtqhiv5900016.shtml"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协通知可核其 2024 年 U14 国少选拔与 2026 年 U16 第二期集训；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。"
+    }
   }
 ]

@@ -625,30 +625,54 @@
     "birth_date": "2009-04-07",
     "age_band": "u17",
     "primary_position": "Centre-Forward",
-    "height_cm": 194,
-    "weight_kg": 80,
+    "height_cm": null,
+    "weight_kg": null,
     "registration_club": {
       "name": "Tsinghua University High School",
       "country": "China"
     },
     "training_pathway": [
       {
-        "stage_label": "2024 足球小将口径",
+        "stage_label": "中国足球小将09背景",
         "organization": "Donglu Football Boys 09",
         "country": "China",
-        "note": "用户提供研究报告将其列入 2024 U15 第四期集训可交叉确认的 9 名球员名单。"
+        "note": "可由《中国足球小将2009毕业季赵松源篇》这类公开视频与项目专题资料旁证其属于中国足球小将 09 年龄段背景球员。"
       },
       {
-        "stage_label": "2024 集训归属",
+        "stage_label": "2024/03 足协精英训练营",
         "organization": "Tsinghua University High School",
         "country": "China",
-        "note": "用户提供研究报告将其在 2024 口径下标为清华附中。"
+        "note": "中国足协 2009 年龄段精英训练营名单已出现“清华附中：吴王允祥、赵松源”，说明其此时已进入清华附中与足协选材视野。"
+      },
+      {
+        "stage_label": "2024/04 U15第三期集训",
+        "organization": "Tsinghua University High School",
+        "country": "China",
+        "note": "中国足协 U15 国家男子足球选拔队第三期集训名单中，以清华附中球员身份入选。"
+      },
+      {
+        "stage_label": "2025 清华附中中青赛节点",
+        "organization": "Tsinghua University High School",
+        "country": "China",
+        "note": "2025 年第四届中青赛 U17 组，清华附中先后击败山东泰山 U17 和重庆南开夺冠；足协战报可核其在 1/4 决赛早早破门，并在夺冠后进入新一届 U16 国家男足名单。"
+      },
+      {
+        "stage_label": "2025/11 U16第五期集训",
+        "organization": "China PR U16",
+        "country": "China",
+        "note": "中国足协 2025 年第五期 U16 集训通知显示，其与周雨诺、南子勋、陈柄汐等清华附中球员一同入选，备战 2026 U17 亚洲杯预选赛。"
+      },
+      {
+        "stage_label": "2026/03 U17第二期集训",
+        "organization": "China PR U17",
+        "country": "China",
+        "note": "中国 U17 国家男子足球队 2026 年第二期集训通知将其列入名单，继续以清华大学附属中学为归属单位。"
       },
       {
         "stage_label": "2026 报名归属",
         "organization": "Tsinghua University High School",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部；媒体转述名单口径显示其在本届正赛身披 14 号。"
       }
     ],
     "focus_tags": [
@@ -664,20 +688,28 @@
         "label": "AFC U17 2026 中国队报名名单",
         "team": "China PR U17",
         "squad_status": "registered",
-        "appearances": 1,
-        "goals": 3,
+        "appearances": null,
+        "goals": 2,
         "minutes": null,
-        "note": "Transfermarkt 生涯数据页快照显示其当前国字号记录为 1 场 3 球。"
+        "note": "本届正赛公开可核的关键进球包括对日本小组赛扳平球，以及对沙特 1/4 决赛的反超进球；同时在中国队 23 人名单相关公开口径中身披 14 号。"
       },
       {
-        "competition_id": "afc-u17-2025",
-        "label": "AFC U17 亚预赛代表战样本",
+        "label": "2025 U17 亚洲杯预选赛",
         "team": "China PR U17",
         "squad_status": "registered",
         "appearances": 5,
-        "goals": 15,
-        "minutes": 42,
-        "note": "Transfermarkt 亚预赛榜单快照显示其在 2025-26 亚预赛 5 场打入 15 球；用户提供研究报告强调其对文莱单场独中 6 球。"
+        "goals": 11,
+        "minutes": null,
+        "note": "中国队五战全胜、42 球 0 失球晋级正赛；赵松源 5 场打入 11 球，其中对文莱单场 6 球、对东帝汶完成帽子戏法，末轮对孟加拉国替补建功并完成连续四场进球。"
+      },
+      {
+        "label": "2026/02 对印尼热身赛",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 2,
+        "minutes": null,
+        "note": "中国足协战报显示，中国 U17 友谊赛 7 比 0 大胜印度尼西亚，赵松源与帅惟浩各入两球。"
       }
     ],
     "external_links": [
@@ -692,20 +724,60 @@
         "url": "https://www.transfermarkt.com/songyuan-zhao/profil/spieler/1283228"
       },
       {
-        "type": "transfermarkt",
-        "label": "Transfermarkt career stats",
-        "url": "https://www.transfermarkt.co.za/songyuan-zhao/leistungsdaten/spieler/1283228"
+        "type": "profile",
+        "label": "Bilibili: Zhao Songyuan feature",
+        "url": "https://www.bilibili.com/video/BV1qf4y1H76A/"
       },
       {
-        "type": "transfermarkt",
-        "label": "Transfermarkt AFC U17 qualification scoring snapshot",
-        "url": "https://www.transfermarkt.co/afc-u17-asian-cup-qualification/startseite/pokalwettbewerb/A169"
+        "type": "official",
+        "label": "CFA U17 quarter-final vs Shandong Taishan",
+        "url": "https://www.thecfa.cn/qcxwzz/20250925/36934.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 final title report",
+        "url": "https://www.thecfa.cn/qingchaoliansai/20250930/36951.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20251104/37051.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 qualification summary",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251201/37115.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA Brunei report: Zhao scored six",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251127/37106.html"
+      },
+      {
+        "type": "news",
+        "label": "CCTV Timor-Leste report",
+        "url": "https://sports.cctv.com/2025/11/24/ARTIcdqOXrejbZliYs2VylX5251124.shtml"
+      },
+      {
+        "type": "official",
+        "label": "CFA friendly vs Indonesia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260209/37322.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA match report vs Japan",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260513/37660.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA match report vs Saudi Arabia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260516/37680.html"
       }
     ],
     "verification": {
-      "status": "mixed-source",
+      "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "AFC 报名表与 Transfermarkt 生涯页在归属字段上都指向清华附中；第二份链接核验报告确认其 TM 个人页存在，但未检得具名学校页或 Wikipedia 条目。"
+      "notes": "Transfermarkt 可核生日、位置与清华附中当前归属；中国足协 2024-2026 多期集训通知与赛事战报可连续拼出其从 U15、U16 到 U17 的国字号时间线和关键进球。公开口径普遍将其视作 1.90 米以上高中锋，但可靠源并未稳定给出单一身高数值，因此暂不硬填。"
     }
   },
   {

@@ -1,9 +1,9 @@
 {
   "generated_at": "2026-05-22",
   "stats": {
-    "player_count": 159,
+    "player_count": 160,
     "country_count": 4,
-    "foreign_registration_count": 23
+    "foreign_registration_count": 24
   },
   "tournaments": [
     {
@@ -4381,9 +4381,9 @@
             {
               "name": "刘凯源",
               "local_name": "Liu Kaiyuan",
-              "role": "未指明",
-              "club": "未指明",
-              "note": ""
+              "role": "前锋",
+              "club": "比利亚雷亚尔青年队",
+              "note": "2010 年龄段中国足球小将代表前锋，2024 年入选 U14 国少选拔，2026 年以比利亚雷亚尔球员身份入选 U16 并在蒙太古杯对秘鲁进球。"
             }
           ]
         },
@@ -4641,8 +4641,8 @@
               "url": "https://www.transfermarkt.com/yongbin-mao/profil/spieler/1281970"
             },
             "official_page": {
-              "status": "missing",
-              "url": ""
+              "status": "verified",
+              "url": "https://www.thecfa.cn/jxtz/20251104/37051.html"
             },
             "wikipedia": {
               "status": "missing",
@@ -4659,15 +4659,15 @@
               "url": "https://www.transfermarkt.com/songyuan-zhao/profil/spieler/1283228"
             },
             "official_page": {
-              "status": "missing",
-              "url": ""
+              "status": "verified",
+              "url": "https://www.thecfa.cn/jxtz/20251104/37051.html"
             },
             "wikipedia": {
               "status": "missing",
               "url": ""
             },
-            "ambiguity": "无明显重名歧义。",
-            "missing_note": "清华附中具名球员页与个人 Wikipedia 条目未检得。"
+            "ambiguity": "无明显重名歧义；中英文写法主要在 Zhao Songyuan / Songyuan Zhao 间切换。",
+            "missing_note": "清华附中具名球员页与个人 Wikipedia 条目未检得，但足协多期集训通知、赛事战报和 Transfermarkt 已足够支撑核心竞技档案。"
           },
           {
             "name": "Xiang Wan",
@@ -7170,6 +7170,7 @@
     "Busan IPark": "釜山IPark",
     "Cardiff City": "加的夫城",
     "CE Atlètic Lleida": "莱里达竞技",
+    "CE Europa": "欧罗巴",
     "CE Europa B": "欧罗巴B队",
     "CE Hospitalet U16B": "奥斯皮塔莱特中心体育U16B队",
     "CF Badalona": "巴达洛纳CF",
@@ -7183,9 +7184,11 @@
     "Cheonan Jeil High School": "天安第一高中",
     "Cheongju Daesung High School": "清州大成高中",
     "China Football Boys": "中国足球小将",
+    "China PR U14": "中国U14",
     "China PR U15": "中国U15",
     "China PR U16": "中国U16",
     "Chongqing Tonglianglong FC": "重庆铜梁龙",
+    "Chongqing Zhuoli Football Club": "重庆卓立",
     "Cologne": "科隆",
     "Coventry City": "考文垂",
     "Crystal Palace": "水晶宫",
@@ -7213,6 +7216,7 @@
     "FC Seoul": "首尔FC",
     "FC St. Pauli": "圣保利",
     "FC Tokyo": "FC东京",
+    "FC Villarreal Youth": "比利亚雷亚尔青年队",
     "Feyenoord": "费耶诺德",
     "FK Vozdovac": "沃日多瓦茨",
     "Freiburg": "弗赖堡",
@@ -7315,6 +7319,7 @@
     "SC Freiburg": "弗赖堡",
     "Schalke 04": "沙尔克04",
     "Shandong Taishan FC": "山东泰山",
+    "Shandong Luneng Taishan Football School": "山东鲁能泰山足球学校",
     "Shanghai Port FC": "上海海港",
     "Shanghai Shenhua FC": "上海申花",
     "Shenzhen Peng City FC": "深圳鹏城",
@@ -7357,6 +7362,7 @@
     "Werder Bremen": "云达不莱梅",
     "Wolfsburg": "沃尔夫斯堡",
     "Wolverhampton Wanderers": "狼队",
+    "Xi'an Junze Football Club": "西安君泽",
     "Yongin FC": "龙仁FC",
     "Zhejiang FC": "浙江"
   }
