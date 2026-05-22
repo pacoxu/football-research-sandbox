@@ -2759,6 +2759,11 @@
         "url": "https://www.ppsport.com/360news/news/2208159.html"
       },
       {
+        "type": "news",
+        "label": "Tencent report on five Football Boys prospects in U16 camp",
+        "url": "https://news.qq.com/rain/a/20250630A09BBX00"
+      },
+      {
         "type": "official",
         "label": "CFA U16 second camp notice",
         "url": "https://www.thecfa.cn/jxtz/20250513/36466.html"
@@ -2781,7 +2786,7 @@
       {
         "type": "official",
         "label": "CFA U17 second camp notice",
-        "url": "https://www.thecfa.cn/jxtz/20260311/37413.html"
+        "url": "https://www.thecfa.cn/wqmdu17/20260311/37414.html"
       },
       {
         "type": "news",
@@ -2791,8 +2796,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "Transfermarkt 可核生日、出生地、位置和当前上海申花青年队归属；中青赛 U13 决赛战报、董路公开发文与足球小将西班牙名单可交叉确认其清华附中早期节点和足球小将 09 背景；中国足协 2025-2026 多期 U16/U17 通知与和平杯、落选名单报道可连续拼出其从国少主力考察圈到 U17 亚洲杯终筛落选的轨迹。位置上当前以 Defender 保留，并在说明中注明其兼具中后卫、边中卫和中后场防守轮换属性；身高体重暂无稳定权威口径，因此不硬填。"
+      "last_checked": "2026-05-23",
+      "notes": "Transfermarkt 可核生日、出生地、位置和当前上海申花青年队归属；中青赛 U13 决赛战报、董路公开发文、腾讯关于 5 名足球小将背景 U16 球员的报道与足球小将西班牙名单，可交叉确认其清华附中早期节点和足球小将 09 背景；中国足协 2025-2026 多期 U16/U17 通知、和平杯名单口径与最终落选报道，可连续拼出其从国少考察圈到 U17 亚洲杯终筛落选的轨迹。位置上当前以 Defender 保留，并在说明中注明其兼具中卫、边中卫和后腰 / 中后场防守轮换属性；身高体重暂无稳定权威口径，因此不硬填。"
     },
     "names": {
       "zh": "顾博宇",
@@ -2866,6 +2871,7 @@
     "local_name": "汪修昊",
     "country": "China PR",
     "birth_date": "2009-01-21",
+    "birth_place": "Gushi, Henan, China PR",
     "age_band": "u17",
     "primary_position": "Right-Back",
     "height_cm": null,
@@ -2930,6 +2936,15 @@
         "goals": null,
         "minutes": null,
         "note": "AFC U17 2026 终报名表显示其身披 16 号。Flashscore 当前球员页统计其在本届亚洲杯有 3 次出场、0 球 0 助攻；对卡塔尔一战公开文字记录可核其第 78 分钟替补登场，并在比赛尾声制造头球与单刀机会。"
+      },
+      {
+        "label": "2026 U17 亚洲杯1/4决赛对沙特",
+        "team": "China PR U17",
+        "squad_status": "used",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国队 3 比 1 逆转沙特的 1/4 决赛中，公开出场阵容显示其第 77 分钟替补金昱成登场，主要落位在后防线右侧 / 边后卫区域，体现其在淘汰赛阶段作为边路防守轮换的定位。"
       },
       {
         "label": "2024 中国 U15 第四期 / 韩国拉练",
@@ -3000,12 +3015,17 @@
         "type": "profile",
         "label": "Kuaidong Baike profile",
         "url": "https://m.baike.com/wikiid/7412930811181514778"
+      },
+      {
+        "type": "news",
+        "label": "Tencent Saudi quarter-final report",
+        "url": "https://news.qq.com/rain/a/20260515A06ZXV00"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "Transfermarkt 可核生日 2009-01-21，并给出“河南固始 + 中场 + CF Badalona Youth”的外部数据库口径；地方资料更稳定指向河南洛阳 / 洛阳西工区成长与洛阳飞翔足球俱乐部启蒙，因此当前写法收敛为“河南籍、洛阳青训成长”。中国足协 2025-03-18 通知可核其在巴达洛纳节点入选 U16 第一期开营，2026-03 U17 第二期与 AFC 终报名表则统一写作达姆足球俱乐部 / DAMM CF，因此当前保留“巴达洛纳到达姆”的归属变化。位置上，早期公开资料存在中场 / 后卫 / 边锋等多面手口径，但结合近两年使用场景，更适合按右后卫 / 翼卫型边路球员处理。身高、体重、惯用脚等口径当前不再硬填为稳定权威字段。"
+      "last_checked": "2026-05-23",
+      "notes": "Transfermarkt 可核生日 2009-01-21，并给出“河南固始 + 中场 + CF Badalona Youth”的外部数据库口径，因此出生地字段先按固始保留；地方资料更稳定指向河南洛阳 / 洛阳西工区成长与洛阳飞翔足球俱乐部启蒙，所以成长路径说明继续写作“河南籍、洛阳青训成长”。中国足协 2025-03-18 通知可核其在巴达洛纳节点入选 U16 第一期开营，2026-03 U17 第二期与 AFC 终报名表则统一写作达姆足球俱乐部 / DAMM CF，因此当前保留“巴达洛纳到达姆”的归属变化。位置上，早期公开资料存在中场 / 后卫 / 边锋等多面手口径，但结合近两年国少使用场景，更适合按右后卫 / 翼卫型边路球员处理；2026 U17 亚洲杯对沙特的替补登场也支持这一判断。身高、体重、惯用脚等口径当前不再硬填为稳定权威字段。"
     },
     "names": {
       "zh": "汪修昊",
@@ -5872,6 +5892,138 @@
     }
   },
   {
+    "id": "cn-piao-zhixuan-2010",
+    "name": "Piao Zhixuan",
+    "local_name": "朴智轩",
+    "country": "China PR",
+    "birth_date": "2010-02-08",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Dalian Longjuanfeng Football Club",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "中国足球小将 2010 年龄段",
+        "organization": "China Football Boys",
+        "country": "China",
+        "note": "早期公开视频里，他常以任意球、拦截后控球、横向摆脱和 no-look 处理球等片段出现，是中国足球小将 2010 队技术辨识度较高的中场样本之一。"
+      },
+      {
+        "stage_label": "大连龙卷风节点",
+        "organization": "Dalian Longjuanfeng Football Club",
+        "country": "China",
+        "note": "中国足协 2024-09-09 U14 第三期、2026-01-07 U16 第一期和 2026-03-12 U16 第二期集训通知，均将其所属单位列为大连龙卷风足球俱乐部。这条线更适合归在大连社会青训 / 大连龙卷风主线，而不是职业俱乐部梯队或旅西线。"
+      },
+      {
+        "stage_label": "2026 大连本地U17赛事节点",
+        "organization": "Dalian Yingbo U17",
+        "country": "China",
+        "note": "2026 年中青赛 U17 组大区赛相关报道中，他出现在大连英博 U17 / 大连八中相关比赛阵容里，说明在国少集训之外也持续处于大连本地 U17 赛事体系中。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "donglu-football-boys",
+      "midfield-watch"
+    ],
+    "tournament_participation": [
+      {
+        "label": "2024 中国 U14 第三期集训",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-09-09 通知显示，其以大连龙卷风足球俱乐部球员身份入选 U14 第三期集训。"
+      },
+      {
+        "label": "2026 中国 U16 第一期集训",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-01-07 通知显示，其继续以大连龙卷风足球俱乐部球员身份入选 U16 第一期集训名单。"
+      },
+      {
+        "label": "2026 中国 U16 第二期集训",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-03-12 通知显示，其继续入选 U16 第二期集训名单，队伍随后赴法国参加蒙太古杯。"
+      },
+      {
+        "label": "2026 蒙太古杯周期出场记录",
+        "team": "China PR U16",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "雷速体育赛况信息显示，蒙太古杯周期至少有一场比赛在李家进伤退后由其替补登场，可作为其在正式国际赛会周期获得出场机会的公开旁证。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt Dalian Yingbo U19 squad page",
+        "url": "https://www.transfermarkt.com/dalian-yingbo-u19/kader/verein/121167/saison_id/2025/plus/1"
+      },
+      {
+        "type": "news",
+        "label": "Sina set-piece clip recap",
+        "url": "https://k.sina.cn/article_6335145948_m1799aa7dc03300h2mb.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 third camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240909/35014.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 first camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260107/37176.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260312/37416.html"
+      },
+      {
+        "type": "news",
+        "label": "Leisu Montaigu Cup substitution note",
+        "url": "https://www.leisu.com/news/view-584318"
+      },
+      {
+        "type": "official",
+        "label": "CFA feature on Dalian Tornado youth training",
+        "url": "https://www.thecfa.cn/jyqxjly/20220413/30561.html"
+      },
+      {
+        "type": "news",
+        "label": "Tencent report on Dalian Yingbo U17",
+        "url": "https://news.qq.com/rain/a/20260513A0989500"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-23",
+      "notes": "中国足球小将 2010 背景、技术型中场标签和大连龙卷风主线，可由新浪公开视频内容与足协多期集训通知交叉确认；2026 年 1 月、3 月两期 U16 公告说明他属于连续考察对象。生日 2010-02-08 当前主要来自 Transfermarkt 的大连英博 U19 队页快照，而不是足协正式注册页，因此这里保留日期但不把它表述为权威官方字段。大连英博 U17 / 大连八中相关赛事口径目前更适合写成地方赛事交集，而不是直接改写其青训归属。"
+    },
+    "names": {
+      "zh": "朴智轩",
+      "en": "Piao Zhixuan",
+      "native": "朴智轩",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
     "id": "cn-zhang-lindong-2010",
     "name": "Zhang Lindong",
     "local_name": "张林峒",
@@ -6263,6 +6415,241 @@
       "zh": "潘朝伟",
       "en": "Pan Chaowei",
       "native": "潘朝伟",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
+    "id": "cn-liu-lihao-2010",
+    "name": "Liu Lihao",
+    "local_name": "刘礼豪",
+    "country": "China PR",
+    "birth_date": "2010-05-26",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Shanghai Shenhua FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "中国足球小将 2010 年龄段",
+        "organization": "China Football Boys",
+        "country": "China",
+        "note": "中国足球小将公开视频和社媒内容很早就反复出现他的个人镜头，包括“刘礼豪攻入第十球”“纪录片预告”等，可旁证其属于中国足球小将 2010 队早期被重点展示的球员之一。"
+      },
+      {
+        "stage_label": "上海申花梯队节点",
+        "organization": "Shanghai Shenhua FC",
+        "country": "China",
+        "note": "中国足协 2024-06-21 U14 第二期、2024-07-12 赴韩国拉练正式名单，以及 2024-09-09 U14 第三期集训通知中，都将其所属单位列为上海申花足球俱乐部。更稳妥的主线写法是中国足球小将 10 队背景，后续进入上海申花职业梯队线。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "donglu-football-boys",
+      "defender-watch"
+    ],
+    "tournament_participation": [
+      {
+        "label": "2024 中国 U14 第二期集训",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-06-21 通知显示，其以上海申花足球俱乐部球员身份入选 U14 国家男子足球选拔队第二期集训。"
+      },
+      {
+        "label": "2024 中国 U14 赴韩国拉练",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-07-12 通知显示，其继续以上海申花球员身份进入赴韩国拉练正式 28 人名单。"
+      },
+      {
+        "label": "2024 中国 U14 第三期集训",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-09-09 通知显示，其仍以上海申花球员身份入选 U14 第三期集训名单。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "news",
+        "label": "Sina clip recap: Liu Lihao's tenth goal",
+        "url": "https://v.sina.cn/weibo_ugc/2019-07-08/detail-ihytcerm2043139.d.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240621/34645.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 Korea trip notice",
+        "url": "https://www.thecfa.cn/jxtz/20240712/34762.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 third camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240909/35014.html"
+      },
+      {
+        "type": "profile",
+        "label": "QTX profile",
+        "url": "https://data.qtx.com/qiuyuan/oXjPM4rz6v.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 first camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260107/37176.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260312/37416.html"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-23",
+      "notes": "中国足球小将 2010 背景和早期被重点展示的媒体标签，可由新浪内容旁证；中国足协 2024-06、2024-07、2024-09 三份正式通知则稳定把其放在上海申花梯队线。生日 2010-05-26 当前主要来自球天下这类第三方资料页，而非足协正式注册页，因此这里保留日期但不把它表述为权威官方字段。2026 年 1 月和 3 月公开 U16 第一期 / 第二期名单中未见其名字，这里只据公开名单写“未进入已核到的两期公开名单”，不把它扩展解释成掉队结论。"
+    },
+    "names": {
+      "zh": "刘礼豪",
+      "en": "Liu Lihao",
+      "native": "刘礼豪",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
+    "id": "cn-li-youan-2010",
+    "name": "Youan Li",
+    "local_name": "李佑安",
+    "country": "China PR",
+    "birth_date": "2010-12-09",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "The High School Affiliated to Renmin University of China",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "中国足球小将 2010 年龄段",
+        "organization": "China Football Boys",
+        "country": "China",
+        "note": "公开资料与项目公开视频都把他放在中国足球小将 2010 队主线里。2020 年“护球男孩——李佑安”个人集锦一类内容，基本奠定了其早期“护球、灵动、球商好”的标签。"
+      },
+      {
+        "stage_label": "2024 北京亿城BTV三高节点",
+        "organization": "Beijing Yicheng BTV Sangao Football Club",
+        "country": "China",
+        "note": "中国足协 2024-09-09 U14 第三期与 2024-12-10 U14 第五期集训通知，都将其所属单位列为北京亿城BTV三高足球俱乐部。这个阶段更适合写作北京校园 / 三高体系成长线。"
+      },
+      {
+        "stage_label": "2026 人大附中节点",
+        "organization": "The High School Affiliated to Renmin University of China",
+        "country": "China",
+        "note": "中国足协 2026-01-07 U16 第一期与 2026-03-12 U16 第二期集训通知中，其所属单位已切换为中国人民大学附属中学，说明培养平台从三高体系转入人大附中校园线。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "donglu-football-boys",
+      "school-system",
+      "midfield-watch"
+    ],
+    "tournament_participation": [
+      {
+        "label": "2024 中国 U14 第三期集训",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-09-09 通知显示，其以北京亿城BTV三高足球俱乐部球员身份入选 U14 第三期集训，并从 37 人名单中参与赴法国拉练选拔。"
+      },
+      {
+        "label": "2024 中国 U14 第五期集训",
+        "team": "China PR U14",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2024-12-10 通知显示，其继续以北京亿城BTV三高足球俱乐部球员身份入选 U14 第五期集训。"
+      },
+      {
+        "label": "2026 中国 U16 第一期集训",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-01-07 通知显示，其以中国人民大学附属中学球员身份入选 U16 第一期集训名单。"
+      },
+      {
+        "label": "2026 中国 U16 第二期集训",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-03-12 通知显示，其继续以中国人民大学附属中学球员身份入选 U16 第二期集训，队伍随后赴法国参加蒙太古杯。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "news",
+        "label": "Sina 'Guard the ball boy' clip recap",
+        "url": "https://www.sina.cn/news/detail/4507125562728884.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt China U15 extended squad",
+        "url": "https://www.transfermarkt.com/china-u15/erweiterterkader/verein/39966"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 third camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240909/35014.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U14 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20241210/35399.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 first camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260107/37176.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260312/37416.html"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-23",
+      "notes": "中国足球小将 2010 背景、2020 年“护球男孩”媒体标签，以及 2024 三高体系、2026 人大附中体系的转换，可由新浪内容与足协多期集训通知连续拼出。生日 2010-12-09 当前主要来自 Transfermarkt 中国 U15 扩展名单，而不是足协正式球员注册页，因此这里保留日期但不把它表述为足协权威字段。位置上，尽管第三方扩展名单有过 Defender 口径，但结合公开描述与使用场景，更适合先按中场 / 前场连接型球员归档。"
+    },
+    "names": {
+      "zh": "李佑安",
+      "en": "Youan Li",
+      "native": "李佑安",
       "ja": "",
       "ko": ""
     }
