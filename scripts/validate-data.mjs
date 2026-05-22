@@ -138,6 +138,50 @@ function validateBigFiveChecklist(checklist, countryName) {
   }
 }
 
+function validateChinaMenYouthCoaches(archive) {
+  assert(typeof archive.id === "string" && archive.id.length > 0, "Missing china_men_youth_coaches id");
+  assert(
+    typeof archive.name === "string" && archive.name.length > 0,
+    "Missing china_men_youth_coaches name"
+  );
+  assert(isIsoDate(archive.last_checked), "Invalid china_men_youth_coaches last_checked");
+  assert(
+    Array.isArray(archive.team_cycles) && archive.team_cycles.length > 0,
+    "Invalid china_men_youth_coaches team_cycles"
+  );
+  assert(
+    Array.isArray(archive.football_boys_alignment),
+    "Invalid china_men_youth_coaches football_boys_alignment"
+  );
+
+  for (const cycle of archive.team_cycles) {
+    assert(cycle.team_label, "Missing team_label on china_men_youth_coaches cycle");
+    assert(cycle.age_line, `Missing age_line on ${cycle.team_label}`);
+    assert(cycle.head_coach?.local_name, `Missing head coach local_name on ${cycle.team_label}`);
+    assert(cycle.current_stage, `Missing current_stage on ${cycle.team_label}`);
+    assert(cycle.latest_camp?.label, `Missing latest_camp label on ${cycle.team_label}`);
+    assert(
+      isIsoDate(cycle.latest_camp?.published_on),
+      `Invalid latest_camp published_on on ${cycle.team_label}`
+    );
+    assert(Array.isArray(cycle.staff), `Invalid staff list on ${cycle.team_label}`);
+    assert(Array.isArray(cycle.source_links) && cycle.source_links.length > 0, `Missing sources on ${cycle.team_label}`);
+
+    for (const staffGroup of cycle.staff) {
+      assert(staffGroup.role, `Missing staff role on ${cycle.team_label}`);
+      assert(
+        Array.isArray(staffGroup.members) && staffGroup.members.length > 0,
+        `Invalid staff members on ${cycle.team_label}:${staffGroup.role}`
+      );
+    }
+
+    for (const link of cycle.source_links) {
+      assert(link.label, `Missing source label on ${cycle.team_label}`);
+      assert(/^https?:\/\//.test(link.url), `Invalid source url on ${cycle.team_label}`);
+    }
+  }
+}
+
 export async function validateData() {
   const dataset = await loadDataset();
   const playerIds = new Set();
@@ -256,6 +300,10 @@ export async function validateData() {
     if (tournament.china_squad !== undefined) {
       assert(Array.isArray(tournament.china_squad), `Invalid china_squad on ${tournament.id}`);
     }
+  }
+
+  if (dataset.chinaMenYouthCoaches !== null) {
+    validateChinaMenYouthCoaches(dataset.chinaMenYouthCoaches);
   }
 
   return dataset;

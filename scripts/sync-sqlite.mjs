@@ -97,6 +97,7 @@ export async function syncSqlite() {
       name TEXT NOT NULL,
       status TEXT NOT NULL,
       priority TEXT NOT NULL,
+      focus_tags_json TEXT NOT NULL,
       summary TEXT NOT NULL,
       next_step TEXT NOT NULL,
       watch_items_json TEXT NOT NULL
@@ -137,6 +138,7 @@ export async function syncSqlite() {
       name TEXT NOT NULL,
       status TEXT NOT NULL,
       last_reviewed TEXT NOT NULL,
+      focus_tags_json TEXT NOT NULL,
       summary TEXT NOT NULL,
       source_title TEXT NOT NULL,
       source_path TEXT NOT NULL,
@@ -205,8 +207,8 @@ export async function syncSqlite() {
   `);
   const insertProject = db.prepare(`
     INSERT INTO projects (
-      id, name, status, priority, summary, next_step, watch_items_json
-    ) VALUES (?, ?, ?, ?, ?, ?, ?)
+      id, name, status, priority, focus_tags_json, summary, next_step, watch_items_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertOverseas = db.prepare(`
     INSERT INTO overseas_buckets (
@@ -223,10 +225,10 @@ export async function syncSqlite() {
   `);
   const insertDossier = db.prepare(`
     INSERT INTO dossiers (
-      id, name, status, last_reviewed, summary, source_title, source_path, supporting_documents_json,
-      scope_note, role_model_json, timeline_json, roster_views_json, link_audit_json,
-      search_disambiguation_json, controversies_json, open_questions_json
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+      id, name, status, last_reviewed, focus_tags_json, summary, source_title, source_path,
+      supporting_documents_json, scope_note, role_model_json, timeline_json, roster_views_json,
+      link_audit_json, search_disambiguation_json, controversies_json, open_questions_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertArchiveTournament = db.prepare(`
     INSERT INTO tournament_archive (
@@ -316,6 +318,7 @@ export async function syncSqlite() {
       project.name,
       project.status,
       project.priority,
+      toJson(project.focus_tags ?? []),
       project.summary,
       project.next_step,
       toJson(project.watch_items)
@@ -361,6 +364,7 @@ export async function syncSqlite() {
       dossier.name,
       dossier.status,
       dossier.last_reviewed,
+      toJson(dossier.focus_tags ?? []),
       dossier.summary,
       dossier.source_document.title,
       dossier.source_document.path,

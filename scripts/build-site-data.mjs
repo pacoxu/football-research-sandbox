@@ -45,6 +45,7 @@ export async function buildSiteData() {
     overseas_history: dataset.overseasHistory,
     dossiers: dataset.dossiers,
     tournament_archive: dataset.tournamentArchive,
+    china_men_youth_coaches: dataset.chinaMenYouthCoaches,
     club_name_overrides: dataset.clubNameOverrides
   };
 

@@ -142,5 +142,106 @@
       "last_checked": "2026-05-22",
       "notes": "出生日期和身高可由公开球员资料页校对；当前沃日多瓦茨 U19 归属由转会资料页与 2026 年春季留洋报道交叉确认。"
     }
+  },
+  {
+    "id": "cn-lyu-mengyang-2009",
+    "name": "Lyu Mengyang",
+    "local_name": "吕孟洋",
+    "country": "China PR",
+    "birth_date": "2009-08-01",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Europa, C.E. Juvenil B",
+      "country": "Spain"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "徐州启蒙节点",
+        "organization": "Xuzhou Jiefang Road Primary School football club",
+        "country": "China",
+        "note": "Baidu Baike 资料页记载其小学一年级开始在徐州解放路小学足球俱乐部训练。"
+      },
+      {
+        "stage_label": "2019 清华附中节点",
+        "organization": "Tsinghua University High School",
+        "country": "China",
+        "note": "Baidu Baike 条目与其引用的网易人物稿均记载其于 2019 年 2 月进入清华附中体系。"
+      },
+      {
+        "stage_label": "2023/24 西班牙留洋节点",
+        "organization": "L'Hospitalet, Centre Esports Cadet B",
+        "country": "Spain",
+        "note": "FutbolBase 履历页显示其在 2023/24 赛季注册于 L'Hospitalet, Centre Esports Cadet B，出战 8 场并打入 1 球；这可作为其西班牙注册路径的首个可核节点。"
+      },
+      {
+        "stage_label": "2024/25 科尔内利亚节点",
+        "organization": "Cornella, U.E. SAD Cadet A",
+        "country": "Spain",
+        "note": "FutbolBase 履历页显示其在 2024/25 赛季注册于 Cornella, U.E. SAD Cadet A，Divisio d'Honor 级别共 6 场 0 球。"
+      },
+      {
+        "stage_label": "2025/26 欧罗巴注册节点",
+        "organization": "Europa, C.E. Juvenil B",
+        "country": "Spain",
+        "note": "FutbolBase 统计其在 2025/26 Preferent Juvenils Grup 2 为 Europa, C.E. Juvenil B 出战 29 场、打入 6 球；FCF 球员页同期显示 28 次 Convocat、16 次 Titular、12 次 Suplent、6 球且无红黄牌记录。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "overseas-europe",
+      "china-overseas-current",
+      "donglu-football-boys"
+    ],
+    "tournament_participation": [
+      {
+        "label": "2023 中国 U15 国少选拔",
+        "team": "China PR U15",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "凤凰网江苏 2023-12-14 报道确认其入选 2023 U15 国少队。"
+      },
+      {
+        "competition_id": "china-overseas-2026",
+        "label": "2026 中国现役留洋跟踪",
+        "team": "Europa, C.E. Juvenil B",
+        "squad_status": "registered",
+        "appearances": 29,
+        "goals": 6,
+        "minutes": null,
+        "note": "截至 2026-05-22，FutbolBase 2025/26 赛季汇总为 29 场 6 球；FCF 球员页可核到其在 Europa, C.E. Juvenil B 的联赛注册，并显示 28 次入选名单、16 次首发、12 次替补席、6 球、无红黄牌。由于两站对“出场/名单”口径不完全一致，当前 appearance 字段先按 FutbolBase 赛季汇总记为 29。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "profile",
+        "label": "Baidu Baike profile",
+        "url": "https://baike.baidu.com/en/item/Lyu,%20Mengyang/1429409"
+      },
+      {
+        "type": "official",
+        "label": "FCF player profile",
+        "url": "https://www.fcf.cat/jugador/2526/juvenil-primera-divisio/preferent-juvenils/grup-2/54695975/50284682"
+      },
+      {
+        "type": "stats",
+        "label": "FutbolBase player profile",
+        "url": "https://futbolbase.org/es/jugador/lyu-mengyang/182735"
+      },
+      {
+        "type": "news",
+        "label": "Sina report on Spain move",
+        "url": "https://sports.sina.com.cn/g/pl/2024-03-29/doc-inapyyak2280254.shtml"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "出生日期、徐州出身、双胞胎兄弟与清华附中节点可由 Baidu Baike 条目及其引用稿件交叉校对；西班牙三段履历可由 FutbolBase 履历页补齐；2025/26 在 Europa, C.E. Juvenil B 的联赛注册与名单拆分数据由 FCF 球员页补强。通用检索里还会混入 Lu / Lv / Lyu 三种拼写及非足球同名结果，因此本条以生日、中文名和加泰注册路径三项联合锁定。"
+    }
   }
 ]
