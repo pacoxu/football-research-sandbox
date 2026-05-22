@@ -8,7 +8,7 @@
       name="description"
       content="查看中日韩当前留洋样本、联赛层级对比与历史记录。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260522-overseas-filter-fix" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260522-overseas-year-jump" />
   </head>
   <body data-page="overseas">
     <div class="site-shell">
@@ -45,6 +45,15 @@
             <p class="hero-side-note" data-i18n="overseas.note.text">
               这里展示的是当前已建档样本，不是官方全量留洋人数。
             </p>
+            <div class="hero-filter-stack">
+              <label class="filter-item hero-filter-item">
+                <span data-i18n="overseas.quickJump.label">年份快切</span>
+                <select id="overseasHeroYearFilter"></select>
+              </label>
+              <p class="hero-side-note hero-filter-note" data-i18n="overseas.quickJump.note">
+                直接切换历史年份，页面会同步到下方筛选。
+              </p>
+            </div>
           </aside>
         </section>
 
@@ -113,6 +122,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260522-overseas-filter-fix"></script>
+    <script type="module" src="./assets/app.js?v=20260522-overseas-year-jump"></script>
   </body>
 </html>

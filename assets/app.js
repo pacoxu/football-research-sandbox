@@ -1,7 +1,7 @@
 const page = document.body.dataset.page;
 const pageDate = document.body.dataset.date || "2026-05-22";
 const LANGUAGE_STORAGE_KEY = "youth-tracker-language";
-const SITE_DATA_VERSION = "20260522-overseas-filter-fix";
+const SITE_DATA_VERSION = "20260522-overseas-year-jump";
 
 const state = {
   language: "zh",
@@ -101,6 +101,24 @@ const UI_COPY = {
     "home.project.goal": "目标：{value}",
     "home.project.completed": "已完成：{value}",
     "home.project.nextStep": "下一步：{value}",
+    "home.topic.eyebrow": "Special Topic",
+    "home.topic.title": "中国足球小将专题",
+    "home.topic.link": "查看相关球员",
+    "home.topic.timelineTitle": "项目时间线",
+    "home.topic.timelineLink": "查看球员标签",
+    "home.topic.batchesTitle": "公开可核批次主干",
+    "home.topic.roleTitle": "董路在项目里的角色",
+    "home.topic.scopeTitle": "当前专题口径",
+    "home.topic.completedTitle": "当前已补内容",
+    "home.topic.nextTitle": "下一步",
+    "home.topic.taggedPlayers": "已建档相关球员 {count} 人",
+    "home.topic.batchCount": "公开批次 {count} 组",
+    "home.topic.timelineCount": "关键节点 {count} 个",
+    "home.topic.batchPlayers": "已核名字 {count} 个",
+    "home.topic.batchWindow": "时间窗口：{value}",
+    "home.topic.batchSample": "样本：{value}",
+    "home.topic.empty": "当前还没有可展示的足球小将专题。",
+    "home.topic.batchesEmpty": "当前还没有可展示的批次主干。",
     "home.overseasCard.current": "当前：{value}",
     "home.overseasCard.region": "地区：{value}",
     "home.overseasCard.origin": "来源：{value}",
@@ -258,6 +276,8 @@ const UI_COPY = {
     "overseas.hero.text": "当前页把“现役海外样本”和“历史记录”拆开。现役部分默认显示当前仍在海外的球员，历史部分默认显示当前已不在海外的样本；切换年份后，可回看当年仍在海外的球员列表。",
     "overseas.note.eyebrow": "Note",
     "overseas.note.text": "这里展示的是当前已建档样本，不是官方全量留洋人数。",
+    "overseas.quickJump.label": "年份快切",
+    "overseas.quickJump.note": "直接切换历史年份，页面会同步到下方筛选。",
     "overseas.filters.country": "国别",
     "overseas.filters.bucket": "联赛桶",
     "overseas.filters.year": "历史年份",
@@ -360,6 +380,24 @@ const UI_COPY = {
     "home.project.goal": "Goal: {value}",
     "home.project.completed": "Done: {value}",
     "home.project.nextStep": "Next: {value}",
+    "home.topic.eyebrow": "Special Topic",
+    "home.topic.title": "Donglu Football Boys",
+    "home.topic.link": "View related players",
+    "home.topic.timelineTitle": "Project timeline",
+    "home.topic.timelineLink": "Open tag filter",
+    "home.topic.batchesTitle": "Verified batch outline",
+    "home.topic.roleTitle": "Donglu's role in the project",
+    "home.topic.scopeTitle": "Current scope note",
+    "home.topic.completedTitle": "Current coverage",
+    "home.topic.nextTitle": "Next step",
+    "home.topic.taggedPlayers": "{count} tagged players",
+    "home.topic.batchCount": "{count} verified batches",
+    "home.topic.timelineCount": "{count} key milestones",
+    "home.topic.batchPlayers": "{count} verified names",
+    "home.topic.batchWindow": "Window: {value}",
+    "home.topic.batchSample": "Examples: {value}",
+    "home.topic.empty": "No featured Football Boys dossier is available yet.",
+    "home.topic.batchesEmpty": "No verified batch outline is available yet.",
     "home.overseasCard.current": "Current: {value}",
     "home.overseasCard.region": "Region: {value}",
     "home.overseasCard.origin": "Origin: {value}",
@@ -517,6 +555,8 @@ const UI_COPY = {
     "overseas.hero.text": "This page separates active overseas samples from historical records. The active section defaults to players who are still abroad right now, while the history section defaults to players who are no longer abroad; once you switch the year filter, it becomes a year-by-year view of who was abroad in that season window.",
     "overseas.note.eyebrow": "Note",
     "overseas.note.text": "This page shows currently archived samples, not an official full headcount of all overseas players.",
+    "overseas.quickJump.label": "Year jump",
+    "overseas.quickJump.note": "Pick a historical year here and the main filter below will stay in sync.",
     "overseas.filters.country": "Country",
     "overseas.filters.bucket": "League bucket",
     "overseas.filters.year": "History year",
@@ -1678,6 +1718,10 @@ function buildTournamentDetailUrl(id) {
   return `./tournament.html?id=${encodeURIComponent(id)}`;
 }
 
+function buildPlayerTagUrl(tag) {
+  return `./players.html?tag=${encodeURIComponent(tag)}`;
+}
+
 function getArchiveTournamentById(id) {
   return state.overview?.tournament_archive.find((tournament) => tournament.id === id) ?? null;
 }
@@ -1692,6 +1736,18 @@ function getFocusTournamentById(id) {
 
 function hasTournamentDetail(id) {
   return Boolean(getArchiveTournamentById(id) || getFocusTournamentById(id));
+}
+
+function getProjectById(id) {
+  return state.overview?.projects?.find((project) => project.id === id) ?? null;
+}
+
+function getDossierById(id) {
+  return state.overview?.dossiers?.find((dossier) => dossier.id === id) ?? null;
+}
+
+function getPlayersByTag(tag) {
+  return state.enrichedPlayers.filter((player) => (player.focus_tags ?? []).includes(tag));
 }
 
 function getTournamentDisplayName(id) {
@@ -1922,6 +1978,14 @@ function buildOptions(target, options, selectedValue, label) {
         `<option value="${escapeHtml(option.value)}" ${option.value === selectedValue ? "selected" : ""}>${escapeHtml(option.label)}</option>`
     )
     .join("");
+}
+
+function normalizeFilterValue(value, options) {
+  if (value === "all") {
+    return "all";
+  }
+
+  return options.some((option) => option.value === value) ? value : "all";
 }
 
 function setControlValue(selector, value) {
@@ -2417,6 +2481,125 @@ function renderHomeOverseasSummaryRow(entry) {
   `;
 }
 
+function renderHomeTopicOverview(project, dossier, taggedPlayers) {
+  if (!project || !dossier) {
+    return `<div class="empty-inline">${escapeHtml(t("home.topic.empty"))}</div>`;
+  }
+
+  const roleLines = dossier.role_model ?? [];
+  const batchCount = dossier.batch_roster_outline?.length ?? 0;
+  const timelineCount = dossier.timeline?.length ?? 0;
+
+  return `
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(t("home.topic.eyebrow"))}</p>
+        <h2>${escapeHtml(t("home.topic.title"))}</h2>
+      </div>
+      <a class="inline-link" href="${buildPlayerTagUrl("donglu-football-boys")}">${escapeHtml(t("home.topic.link"))}</a>
+    </div>
+    <div class="chip-row">
+      <span class="chip">${escapeHtml(formatTag("donglu-football-boys"))}</span>
+      <span class="chip">${escapeHtml(t("home.topic.taggedPlayers", { count: taggedPlayers.length }))}</span>
+      <span class="chip">${escapeHtml(t("home.topic.batchCount", { count: batchCount }))}</span>
+      <span class="chip">${escapeHtml(t("home.topic.timelineCount", { count: timelineCount }))}</span>
+    </div>
+    <p class="topic-lead">${escapeHtml(localizeText(dossier.summary))}</p>
+    <div class="topic-card-grid">
+      <article class="story-card">
+        <p class="eyebrow">${escapeHtml(t("home.topic.roleTitle"))}</p>
+        <p>${escapeHtml(localizeText(roleLines[0], localizeText(dossier.summary)))}</p>
+        ${roleLines[1] ? `<p class="small-note">${escapeHtml(localizeText(roleLines[1]))}</p>` : ""}
+      </article>
+      <article class="story-card">
+        <p class="eyebrow">${escapeHtml(t("home.topic.scopeTitle"))}</p>
+        <p>${escapeHtml(localizeText(dossier.scope_note))}</p>
+      </article>
+      <article class="story-card">
+        <p class="eyebrow">${escapeHtml(t("home.topic.completedTitle"))}</p>
+        <p>${escapeHtml(localizeText(project.completed, localizeText(project.summary)))}</p>
+      </article>
+      <article class="story-card">
+        <p class="eyebrow">${escapeHtml(t("home.topic.nextTitle"))}</p>
+        <p>${escapeHtml(localizeText(project.next_step))}</p>
+      </article>
+    </div>
+  `;
+}
+
+function renderHomeTopicTimeline(dossier) {
+  if (!dossier) {
+    return `<div class="empty-inline">${escapeHtml(t("home.topic.empty"))}</div>`;
+  }
+
+  const timelineItems = (dossier.timeline ?? []).slice(0, 6);
+
+  return `
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(t("home.topic.eyebrow"))}</p>
+        <h2>${escapeHtml(t("home.topic.timelineTitle"))}</h2>
+      </div>
+      <a class="inline-link" href="${buildPlayerTagUrl("donglu-football-boys")}">${escapeHtml(t("home.topic.timelineLink"))}</a>
+    </div>
+    <div class="timeline-list">
+      ${timelineItems
+        .map(
+          (item) => `
+            <article class="timeline-item">
+              <p class="timeline-label">${escapeHtml(item.date)}</p>
+              <h3>${escapeHtml(localizeText(item.label))}</h3>
+              <p>${escapeHtml(localizeText(item.detail))}</p>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+}
+
+function renderHomeTopicBatchCard(batch) {
+  const verifiedPlayers = batch.verified_players ?? [];
+  const sampleNames = verifiedPlayers.slice(0, 6).join("、");
+
+  return `
+    <article class="story-card topic-batch-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(batch.confidence ?? "-")}</span>
+        <span class="chip">${escapeHtml(t("home.topic.batchPlayers", { count: verifiedPlayers.length }))}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(batch.label))}</h3>
+      <p>${escapeHtml(localizeText(batch.note))}</p>
+      <p class="small-note">${escapeHtml(t("home.topic.batchWindow", { value: localizeText(batch.time_window) }))}</p>
+      ${sampleNames ? `<p class="topic-batch-meta">${escapeHtml(t("home.topic.batchSample", { value: sampleNames }))}</p>` : ""}
+    </article>
+  `;
+}
+
+function renderHomeTopicBatches(dossier) {
+  if (!dossier) {
+    return `<div class="empty-inline">${escapeHtml(t("home.topic.empty"))}</div>`;
+  }
+
+  const batches = dossier.batch_roster_outline ?? [];
+  if (!batches.length) {
+    return `<div class="empty-inline">${escapeHtml(t("home.topic.batchesEmpty"))}</div>`;
+  }
+
+  return `
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(t("home.topic.eyebrow"))}</p>
+        <h2>${escapeHtml(t("home.topic.batchesTitle"))}</h2>
+      </div>
+      <a class="inline-link" href="${buildPlayerTagUrl("donglu-football-boys")}">${escapeHtml(t("home.topic.link"))}</a>
+    </div>
+    <div class="topic-batch-grid">
+      ${batches.map(renderHomeTopicBatchCard).join("")}
+    </div>
+  `;
+}
+
 function renderHomePage() {
   const homePlayerCount = document.querySelector("#homePlayerCount");
   const homeOverseasCount = document.querySelector("#homeOverseasCount");
@@ -2425,9 +2608,15 @@ function renderHomePage() {
   const homeNextEventHero = document.querySelector("#homeNextEventHero");
   const homeRecentMatches = document.querySelector("#homeRecentMatches");
   const homeOverseasSummary = document.querySelector("#homeOverseasSummary");
+  const homeFeatureTopic = document.querySelector("#homeFeatureTopic");
+  const homeFeatureTopicTimeline = document.querySelector("#homeFeatureTopicTimeline");
+  const homeFootballBoysBatches = document.querySelector("#homeFootballBoysBatches");
 
   const overseasPlayers = getCurrentOverseasItems();
   const heroEvent = getHomeFocusTournament();
+  const footballBoysProject = getProjectById("donglu-football-boys");
+  const footballBoysDossier = getDossierById("donglu-football-boys");
+  const footballBoysPlayers = getPlayersByTag("donglu-football-boys");
 
   homePlayerCount.textContent = String(state.enrichedPlayers.length);
   homeOverseasCount.textContent = String(overseasPlayers.length);
@@ -2439,6 +2628,22 @@ function renderHomePage() {
   homeRecentMatches.innerHTML = getRecentChinaMatches().map(renderRecentMatchCard).join("");
 
   homeOverseasSummary.innerHTML = getOverseasCountryMap().map(renderHomeOverseasSummaryRow).join("");
+
+  if (homeFeatureTopic) {
+    homeFeatureTopic.innerHTML = renderHomeTopicOverview(
+      footballBoysProject,
+      footballBoysDossier,
+      footballBoysPlayers
+    );
+  }
+
+  if (homeFeatureTopicTimeline) {
+    homeFeatureTopicTimeline.innerHTML = renderHomeTopicTimeline(footballBoysDossier);
+  }
+
+  if (homeFootballBoysBatches) {
+    homeFootballBoysBatches.innerHTML = renderHomeTopicBatches(footballBoysDossier);
+  }
 }
 
 function renderRecentMatchCard(item) {
@@ -3272,6 +3477,9 @@ function initializeOverseasFilters() {
     label: formatBucket(bucket)
   }));
   const yearOptions = getHistoricalYearOptions();
+  state.overseasFilters.country = normalizeFilterValue(state.overseasFilters.country, countryOptions);
+  state.overseasFilters.bucket = normalizeFilterValue(state.overseasFilters.bucket, bucketOptions);
+  state.overseasFilters.year = normalizeFilterValue(state.overseasFilters.year, yearOptions);
 
   buildOptions(
     document.querySelector("#overseasCountryFilter"),
@@ -3291,6 +3499,12 @@ function initializeOverseasFilters() {
     state.overseasFilters.year,
     t("overseas.filters.allYear")
   );
+  buildOptions(
+    document.querySelector("#overseasHeroYearFilter"),
+    yearOptions,
+    state.overseasFilters.year,
+    t("overseas.filters.allYear")
+  );
 
   document.querySelector("#overseasCountryFilter")?.addEventListener("change", (event) => {
     state.overseasFilters.country = event.target.value;
@@ -3301,6 +3515,10 @@ function initializeOverseasFilters() {
     renderOverseasPage();
   });
   document.querySelector("#overseasYearFilter")?.addEventListener("change", (event) => {
+    state.overseasFilters.year = event.target.value;
+    renderOverseasPage();
+  });
+  document.querySelector("#overseasHeroYearFilter")?.addEventListener("change", (event) => {
     state.overseasFilters.year = event.target.value;
     renderOverseasPage();
   });
@@ -3370,6 +3588,7 @@ function renderOverseasPage() {
   setControlValue("#overseasCountryFilter", state.overseasFilters.country);
   setControlValue("#overseasBucketFilter", state.overseasFilters.bucket);
   setControlValue("#overseasYearFilter", state.overseasFilters.year);
+  setControlValue("#overseasHeroYearFilter", state.overseasFilters.year);
   replaceQueryParams({
     country: state.overseasFilters.country,
     bucket: state.overseasFilters.bucket,
