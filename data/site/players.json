@@ -1214,36 +1214,54 @@
   },
   {
     "id": "cn-yang-alex-2005",
-    "name": "Yang Xi Alex",
+    "name": "Alex Xi Yang",
     "local_name": "杨希",
     "country": "China PR",
     "birth_date": "2005-06-13",
     "age_band": "u23",
-    "primary_position": "Defender",
-    "height_cm": 182,
-    "weight_kg": 75,
+    "primary_position": "Right-Back",
+    "height_cm": null,
+    "weight_kg": null,
     "registration_club": {
       "name": "Shanghai Port FC",
       "country": "China"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Qingdao West Coast FC",
-        "country": "China",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
-      },
-      {
-        "stage_label": "西班牙成长节点",
+        "stage_label": "西班牙出生 / 西班牙人青训",
         "organization": "RCD Espanyol youth",
         "country": "Spain",
-        "note": "公开资料显示其生于西班牙巴塞罗那，并在西班牙人梯队接受青训。"
+        "note": "公开球员资料将其出生地登记为西班牙巴塞罗那，并长期放在西班牙人青训成长线中。"
       },
       {
-        "stage_label": "2026 转会节点",
+        "stage_label": "2024 奥斯皮塔莱特节点",
+        "organization": "CE L'Hospitalet",
+        "country": "Spain",
+        "note": "中国足协 2025 U20 亚洲杯集训通知仍将其所属写为西班牙奥斯皮塔莱特足球俱乐部，说明他在回国前处于该队注册 / 效力阶段。"
+      },
+      {
+        "stage_label": "2025 青岛西海岸中超首季",
+        "organization": "Qingdao West Coast FC",
+        "country": "China",
+        "note": "2025 年回国加盟青岛西海岸并完成中超首秀，海港后续官宣援引其该赛季各项赛事 23 场、场均 5.1 次抢断的数据，说明这是其进入国内职业主流视野的关键赛季。"
+      },
+      {
+        "stage_label": "2026 U23亚洲杯报名归属",
+        "organization": "Qingdao West Coast FC",
+        "country": "China",
+        "note": "AFC U23 2026 最终报名表仍列其当前俱乐部为青岛西海岸，反映出他在赛事报名口径上仍处于转会切换前后的时间窗口。"
+      },
+      {
+        "stage_label": "2026 上海海港转会节点",
         "organization": "Shanghai Port FC",
         "country": "China",
-        "note": "2026-02-04 官方公告其转会加盟上海海港。"
+        "note": "2026-02-05 上海海港官宣其加盟，公告同时回顾其西班牙人青训、西班牙奥斯皮塔莱特和青岛西海岸履历。"
+      },
+      {
+        "stage_label": "2026 国家队考察节点",
+        "organization": "Shanghai Port FC",
+        "country": "China",
+        "note": "中国足协 2026-03-20 国家男子足球队第二期集训通知中，杨希已以上海海港球员身份进入成年国家队考察范围。"
       }
     ],
     "focus_tags": [
@@ -1256,6 +1274,24 @@
     ],
     "tournament_participation": [
       {
+        "label": "2025 中国 U20 亚洲杯名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2025-02-11 集训及参赛通知将其所属列为西班牙奥斯皮塔莱特足球俱乐部；对卡塔尔首战第 11 分钟，杨希抢断后连过 3 人制造任意球，体现其边后卫推进能力。"
+      },
+      {
+        "label": "2025 中国 U22 / U23 周期集训",
+        "team": "China PR U22",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2025 年 7 月第三期、8 月第四期、10 月第五期及 2026 年 1 月第六 / 第七期 U22 集训通知中，杨希均以青岛西海岸球员身份入选，已成为 2005 年龄段国奥周期稳定边后卫样本。"
+      },
+      {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
         "team": "China PR U23",
@@ -1263,49 +1299,93 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC 于 2025-12-30 发布的终报名表列入最终 23 人名单；中国队在 2026-01-25 决赛不敌日本，获得亚军。"
+        "note": "AFC 于 2025-12-30 发布的最终 23 人名单列入杨希；中国队 2026-01-25 决赛不敌日本获得亚军。对伊拉克首战替补登场后制造射门良机，半决赛对越南时继续位列稳定后防班底。"
+      },
+      {
+        "label": "2026 国家队第二期集训",
+        "team": "China PR",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-03-20 通知列其以上海海港球员身份入选国家男子足球队第二期集训名单。"
       },
       {
         "competition_id": "csl-2026",
-        "label": "2026 中超一线队 U21 跟踪",
+        "label": "2026 中超一线队 U23 留洋样本",
         "team": "Shanghai Port FC",
         "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22 已转入上海海港一线队青年轮换；同时保留其西班牙青训背景。"
+        "note": "截至 2026-05-22 已属于上海海港 2026 赛季一线队 U23 留洋样本；4 月对山东泰山打入加盟海港后的联赛首球，5 月对青岛海牛再有进球。"
       }
     ],
     "external_links": [
       {
-        "type": "official",
-        "label": "AFC U23 2026 final registration",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+        "type": "profile",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/alex-yang/profil/spieler/1012988"
+      },
+      {
+        "type": "profile",
+        "label": "Sofascore profile",
+        "url": "https://www.sofascore.com/player/alex-yang/1737760"
       },
       {
         "type": "official",
-        "label": "AFC final report: Japan 4-0 China PR",
-        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
-      },
-      {
-        "type": "wikipedia",
-        "label": "Wikipedia profile",
-        "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E5%B8%8C_(%E8%B6%B3%E7%90%83%E8%BF%90%E5%8A%A8%E5%91%98)"
+        "label": "CFA U20 Asian Cup squad notice",
+        "url": "https://www.thecfa.cn/u19wqmdnew/20250212/35605.html"
       },
       {
         "type": "official",
-        "label": "Shanghai Port signing report",
-        "url": "https://finance.sina.com.cn/jjxw/2026-02-04/doc-ineikanc2757681.shtml"
+        "label": "CFA U20 Qatar match report",
+        "url": "https://www.thecfa.cn/nzu19xinwnew/20250213/35615.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U22 third camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250701/36639.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U22 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20251002/36956.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U23 Iraq match report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260109/37180.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U23 semi-final report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260121/37233.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA senior team second camp notice",
+        "url": "https://www.thecfa.cn/nanzuwqmd/20260320/37444.html"
+      },
+      {
+        "type": "news",
+        "label": "Sina relay of Shanghai Port signing announcement",
+        "url": "https://finance.sina.com.cn/jjxw/2026-02-05/doc-inhkucci5833134.shtml"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi report on Qingdao West Coast winter training",
+        "url": "https://m.dongqiudi.com/article/4825478.html"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；当前俱乐部以 2026-02-04 上海海港引援公告为准，留洋背景由公开球员条目补充。"
+      "notes": "中国足协 U20、U22、U23 及成年国家队通知与战报可以连续拼出其从西班牙奥斯皮塔莱特、青岛西海岸到上海海港，再到成年国家队考察线的时间轴。Transfermarkt 与 Sofascore 可交叉校验生日、巴塞罗那出生地、右脚和右边后卫定位。公开身高口径在 175cm 与 182cm 间存在差异，因此当前不硬填高度字段。"
     },
     "names": {
       "zh": "杨希",
-      "en": "Yang Xi Alex",
+      "en": "Alex Xi Yang",
       "native": "杨希",
       "ja": "",
       "ko": ""

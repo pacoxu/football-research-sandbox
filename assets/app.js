@@ -616,6 +616,7 @@ const POSITION_LABELS = {
     Goalkeeper: "门将",
     "Left Winger": "左边锋",
     Midfielder: "中场",
+    "Right-Back": "右边后卫",
     "Right Winger": "右边锋"
   },
   en: {}
