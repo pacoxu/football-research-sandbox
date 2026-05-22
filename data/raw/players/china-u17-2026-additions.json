@@ -1149,54 +1149,188 @@
     }
   },
   {
-    "id": "cn-xu-zhengpeng-2010",
+    "id": "cn-xu-zhengpeng-2009",
     "name": "Xu Zhengpeng",
-    "local_name": "Xu Zhengpeng",
+    "local_name": "徐正鹏",
     "country": "China PR",
-    "birth_date": "2010-03-13",
+    "birth_date": "2009-03-15",
     "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 176,
-    "weight_kg": 69,
+    "primary_position": "Defensive Midfield",
+    "height_cm": null,
+    "weight_kg": null,
+    "league_system_override": "Chinese Super League",
     "registration_club": {
-      "name": "Shanghai Port FC",
+      "name": "Wuhan Three Towns FC",
       "country": "China"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Shanghai Port FC",
+        "stage_label": "新合村小学启蒙",
+        "organization": "Xinhecun Primary School",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "Transfermarkt 青训履历将其早期节点记为 Xinhecun Primary School (-2020)，可作为武汉校园足球启蒙的公开旁证。"
+      },
+      {
+        "stage_label": "武汉三镇青训主线",
+        "organization": "Wuhan Three Towns FC",
+        "country": "China",
+        "note": "此后公开足协名单基本持续把他列在武汉三镇足球俱乐部名下，地方报道也明确称其为武汉三镇青训小将。"
+      },
+      {
+        "stage_label": "2025/03 U16 欧洲拉练",
+        "organization": "China PR U16",
+        "country": "China",
+        "note": "中国足协 2025 年第一期 U16 集训及德国、法国、荷兰拉练通知中入选，所属单位为武汉三镇足球俱乐部。"
+      },
+      {
+        "stage_label": "2025/05 呼和浩特四国赛",
+        "organization": "China PR U16",
+        "country": "China",
+        "note": "中国足协第二期 U16 集训并参加呼和浩特国际足球锦标赛通知中继续入选；武汉三镇该期入选球员包括徐正鹏、梁仕宇、黄天意。"
+      },
+      {
+        "stage_label": "2025 U17 亚洲杯预选赛周期",
+        "organization": "China PR U17",
+        "country": "China",
+        "note": "在预选赛阶段多次登场，末轮对孟加拉国进入首发，中国队最终五战全胜、进 42 球 0 失球晋级正赛。"
+      },
+      {
+        "stage_label": "2026/01 U17 第一期开训",
+        "organization": "Wuhan Three Towns FC",
+        "country": "China",
+        "note": "中国足协 2026 年第一期 U17 集训通知中继续列在武汉三镇足球俱乐部名下。"
+      },
+      {
+        "stage_label": "2026/03 U17 第二期开训",
+        "organization": "Wuhan Three Towns FC",
+        "country": "China",
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选 28 人名单，备战 U17 亚洲杯决赛阶段。"
+      },
+      {
+        "stage_label": "2026 亚洲杯报名归属",
+        "organization": "Wuhan Three Towns FC",
+        "country": "China",
+        "note": "武汉三镇相关报道写其随 U17 国足出征亚洲杯；赛事名单转述口径中通常列为 17 号中场。"
       }
     ],
     "focus_tags": [
       "asia-u17-2026",
-      "china-youth"
+      "china-youth",
+      "midfield-anchor",
+      "wuhan-three-towns-youth",
+      "mixed-source"
     ],
     "tournament_participation": [
       {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 中国队终报名名单",
+        "label": "2025 中国 U16 欧洲拉练",
+        "team": "China PR U16",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "以武汉三镇球员身份入选浮嶋敏执教的 U16 国家队，参加德国、法国、荷兰拉练。"
+      },
+      {
+        "label": "2025 呼和浩特国际足球锦标赛",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "对越南一战在中路摆脱后分球，参与万项进球的发起；对澳大利亚一战主罚任意球送入禁区，间接策动梁仕宇头球破门，中国队最终夺冠。"
+      },
+      {
+        "label": "AFC U17 2026 预选赛",
         "team": "China PR U17",
         "squad_status": "registered",
         "appearances": null,
-        "goals": null,
+        "goals": 0,
         "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
+        "note": "对斯里兰卡替补出场后送出两次直接制造进球的传球，对文莱也有左路传中助攻赵松源头球破门；末轮对孟加拉国进入首发。"
+      },
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 正赛",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "进入 2026 U17 亚洲杯正赛名单，赛事名单转述口径中通常列为 17 号中场；其角色更偏中场连接、转移和定位球处理，而非前场终结点。"
       }
     ],
     "external_links": [
       {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/zhengpeng-xu/profil/spieler/1281972",
+        "note": "用于校对生日、出生地、位置、惯用脚和新合村小学早期青训记录。"
+      },
+      {
+        "type": "news",
+        "label": "Qiumiwu player page",
+        "url": "https://m.qiumiwu.com/player/xuzhengpeng",
+        "note": "用于记录第三方对 177cm、74kg 和号码的非权威口径差异；该站写 13 号，与亚洲杯名单转述中的 17 号不一致。"
+      },
+      {
+        "type": "news",
+        "label": "Sina Wuhan Three Towns report",
+        "url": "https://www.sina.cn/news/detail/5293157776366232.html",
+        "note": "用于旁证其为武汉三镇青训小将，并随 U17 国足出征亚洲杯。"
+      },
+      {
         "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+        "label": "CFA U16 Europe camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250318/35764.html",
+        "note": "用于校对其在 2025 年 3 月 U16 欧洲拉练名单中以武汉三镇球员身份入选。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250513/36466.html",
+        "note": "用于校对其在呼和浩特国际足球锦标赛周期继续入选。"
+      },
+      {
+        "type": "official",
+        "label": "CFA Hohhot report vs Vietnam",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20250531/36539.html",
+        "note": "用于校对其中路摆脱分球、参与万项进球组织的比赛片段。"
+      },
+      {
+        "type": "official",
+        "label": "CFA Hohhot report vs Australia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20250602/36540.html",
+        "note": "用于校对其任意球送入禁区、策动梁仕宇破门。"
+      },
+      {
+        "type": "official",
+        "label": "CFA qualifier report vs Bangladesh",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251201/37115.html",
+        "note": "用于校对其在预选赛收官战进入首发。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 first camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260415/37563.html",
+        "note": "用于校对其在 2026 年第一期 U17 集训中继续列在武汉三镇名下。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 second camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260311/37414.html",
+        "note": "用于校对其在 2026 年第二期 U17 集训中继续入选。"
+      },
+      {
+        "type": "news",
+        "label": "Sohu U17 finals squad recap",
+        "url": "https://www.sohu.com/a/1018106058_319080",
+        "note": "用于旁证亚洲杯名单转述口径中的 17 号中场身份。"
       }
     ],
     "verification": {
-      "status": "verified",
+      "status": "mixed-source",
       "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
+      "notes": "Transfermarkt 可核生日 2009-03-15、湖北武汉出生地、右脚与防守型中场口径；中国足协 2025-2026 多期通知和比赛战报可连续拼出其武汉三镇青训主线与 U16/U17 国字号时间线。第三方数据站对身高、体重和号码存在不一致说法，因此当前不把 177cm、74kg 硬写入正式字段，号码也以后续赛事名单转述中的 17 号为准。公开资料不足以支持其属于董路中国足球小将主培养线。"
     }
   },
   {
