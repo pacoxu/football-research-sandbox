@@ -1,24 +1,66 @@
 [
   {
-    "id": "cn-qin-ziniu-2010",
+    "id": "cn-qin-ziniu-2009",
     "name": "Qin Ziniu",
-    "local_name": "Qin Ziniu",
+    "local_name": "秦子牛",
     "country": "China PR",
-    "birth_date": "2010-07-09",
+    "birth_date": "2009-07-10",
     "age_band": "u17",
     "primary_position": "Goalkeeper",
-    "height_cm": 187,
-    "weight_kg": 72,
+    "height_cm": 195,
+    "weight_kg": 85,
     "registration_club": {
-      "name": "Qingdao Hainiu FC",
+      "name": "Evergrande Football School",
       "country": "China"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Qingdao Hainiu FC",
+        "stage_label": "济源出身 / 恒大足校节点",
+        "organization": "Evergrande Football School",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "济源教育系统公开报道将其列为济源籍球员，2024 年入选 U15 国家男子足球队名单；媒体口径则补充其于 2020 年考入恒大足球学校。"
+      },
+      {
+        "stage_label": "2024 2009年龄段门将专项集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2024 年第一期 2009 年龄段守门员集训通知中，广州恒大足校入选门将为江承恩、秦子牛。"
+      },
+      {
+        "stage_label": "2024 广州U15最佳门将节点",
+        "organization": "Guangzhou FC U15",
+        "country": "China",
+        "note": "2024 中国足协青少年足球锦标赛职业俱乐部 U15 组中，秦子牛代表广州队 U15 参赛并当选最佳守门员，该奖项由参赛主教练与比赛监督投票产生。"
+      },
+      {
+        "stage_label": "2024/11 U15选拔队 / 日本拉练",
+        "organization": "China PR U15",
+        "country": "China",
+        "note": "济源教育系统报道写到，他以恒大足球学校球员身份入选 2024 年国家 U15 男子足球队名单，并赴上海根宝足球训练基地集训及日本拉练。"
+      },
+      {
+        "stage_label": "2025/11 U16第五期集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2025 年第五期 U16 集训通知中，与江承恩、程晟涵等恒大足校球员一同入选，备战 2026 U17 亚洲杯预选赛。"
+      },
+      {
+        "stage_label": "2026/01 U17第一期集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2026 年第一期 U17 集训通知中入选 26 人名单，继续以恒大足球学校球员身份进入决赛阶段备战。"
+      },
+      {
+        "stage_label": "2026/03 U17第二期集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选，单位仍写作恒大足球学校。"
+      },
+      {
+        "stage_label": "2026 亚洲杯报名归属",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "AFC U17 2026 最终报名表列其为 1 号门将，DOB 为 2009-07-10，俱乐部登记为 Evergrande Football School。"
       }
     ],
     "focus_tags": [
@@ -27,14 +69,50 @@
     ],
     "tournament_participation": [
       {
+        "label": "2024 中国足协青少年足球锦标赛职业俱乐部U15组",
+        "team": "Guangzhou FC U15",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "随广州队 U15 夺冠，并当选赛事最佳守门员。"
+      },
+      {
+        "label": "2024 中国 U15 选拔队 / 日本拉练",
+        "team": "China PR U15",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "以恒大足球学校球员身份入选 U15 名单，并参加上海集训与日本拉练。"
+      },
+      {
         "competition_id": "afc-u17-2026",
         "label": "AFC U17 2026 中国队终报名名单",
         "team": "China PR U17",
         "squad_status": "registered",
         "appearances": null,
-        "goals": null,
+        "goals": 0,
         "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
+        "note": "AFC 于 2026-05-02 发布的最终 23 人名单列其为 1 号门将；中国队截至 2026-05-22 已打进决赛。"
+      },
+      {
+        "label": "2026 U17 亚洲杯对日本",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国足协战报可核其先后扑出藤本祥辉远射、仓桥幸晖门前头球和里见汰服第 80 分钟的远射。"
+      },
+      {
+        "label": "2026 U17 亚洲杯半决赛对澳大利亚",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国队 2 比 0 取胜挺进决赛，战报可核其在第 37 分钟和第 74 分钟连续化解对手射门，完成关键零封。"
       }
     ],
     "external_links": [
@@ -42,12 +120,57 @@
         "type": "official",
         "label": "AFC 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/ziniu-qin/profil/spieler/1412277"
+      },
+      {
+        "type": "official",
+        "label": "CFA 2009 goalkeeper camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240820/34947.html"
+      },
+      {
+        "type": "news",
+        "label": "Jiyuan education report",
+        "url": "https://jyj.jiyuan.gov.cn/news/jyyw/t967052.html"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi U15 best goalkeeper report",
+        "url": "https://m.dongqiudi.com/article/4684889.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20251104/37051.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 first camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260415/37563.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 second camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260311/37414.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 match report vs Japan",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260513/37660.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 semi-final report vs Australia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260520/37694.html"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
+      "notes": "AFC U17 2026 最终报名表可核生日 2009-07-10、1 号门将、身高 195、体重 85 与 Evergrande Football School 报名归属；中国足协 2024-2026 多期通知可连续拼出其恒大足校 / 广州青训线国字号时间轴。济源教育系统报道与广州 U15 最佳门将报道可补强其地域来源和俱乐部赛事节点。公开资料不足以支持其属于董路中国足球小将主培养线，因此当前明确不加该标签。"
     }
   },
   {

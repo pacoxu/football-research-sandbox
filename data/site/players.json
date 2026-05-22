@@ -3568,64 +3568,6 @@
     }
   },
   {
-    "id": "cn-xie-jin-2009",
-    "name": "Xie Jin",
-    "local_name": "Xie Jin",
-    "country": "China PR",
-    "birth_date": "2009-04-16",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 182,
-    "weight_kg": 73,
-    "registration_club": {
-      "name": "Shanghai Port FC",
-      "country": "China"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Shanghai Port FC",
-        "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "china-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 中国队终报名名单",
-        "team": "China PR U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "names": {
-      "zh": "谢晋",
-      "en": "Xie Jin",
-      "native": "谢晋",
-      "ja": "",
-      "ko": ""
-    }
-  },
-  {
     "id": "cn-wan-xiang-2009",
     "name": "Wan Xiang",
     "local_name": "万项",
@@ -4035,6 +3977,187 @@
     }
   },
   {
+    "id": "cn-qin-ziniu-2009",
+    "name": "Qin Ziniu",
+    "local_name": "秦子牛",
+    "country": "China PR",
+    "birth_date": "2009-07-10",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 195,
+    "weight_kg": 85,
+    "registration_club": {
+      "name": "Evergrande Football School",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "济源出身 / 恒大足校节点",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "济源教育系统公开报道将其列为济源籍球员，2024 年入选 U15 国家男子足球队名单；媒体口径则补充其于 2020 年考入恒大足球学校。"
+      },
+      {
+        "stage_label": "2024 2009年龄段门将专项集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2024 年第一期 2009 年龄段守门员集训通知中，广州恒大足校入选门将为江承恩、秦子牛。"
+      },
+      {
+        "stage_label": "2024 广州U15最佳门将节点",
+        "organization": "Guangzhou FC U15",
+        "country": "China",
+        "note": "2024 中国足协青少年足球锦标赛职业俱乐部 U15 组中，秦子牛代表广州队 U15 参赛并当选最佳守门员，该奖项由参赛主教练与比赛监督投票产生。"
+      },
+      {
+        "stage_label": "2024/11 U15选拔队 / 日本拉练",
+        "organization": "China PR U15",
+        "country": "China",
+        "note": "济源教育系统报道写到，他以恒大足球学校球员身份入选 2024 年国家 U15 男子足球队名单，并赴上海根宝足球训练基地集训及日本拉练。"
+      },
+      {
+        "stage_label": "2025/11 U16第五期集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2025 年第五期 U16 集训通知中，与江承恩、程晟涵等恒大足校球员一同入选，备战 2026 U17 亚洲杯预选赛。"
+      },
+      {
+        "stage_label": "2026/01 U17第一期集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2026 年第一期 U17 集训通知中入选 26 人名单，继续以恒大足球学校球员身份进入决赛阶段备战。"
+      },
+      {
+        "stage_label": "2026/03 U17第二期集训",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选，单位仍写作恒大足球学校。"
+      },
+      {
+        "stage_label": "2026 亚洲杯报名归属",
+        "organization": "Evergrande Football School",
+        "country": "China",
+        "note": "AFC U17 2026 最终报名表列其为 1 号门将，DOB 为 2009-07-10，俱乐部登记为 Evergrande Football School。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "label": "2024 中国足协青少年足球锦标赛职业俱乐部U15组",
+        "team": "Guangzhou FC U15",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "随广州队 U15 夺冠，并当选赛事最佳守门员。"
+      },
+      {
+        "label": "2024 中国 U15 选拔队 / 日本拉练",
+        "team": "China PR U15",
+        "squad_status": "selected",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "以恒大足球学校球员身份入选 U15 名单，并参加上海集训与日本拉练。"
+      },
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 中国队终报名名单",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC 于 2026-05-02 发布的最终 23 人名单列其为 1 号门将；中国队截至 2026-05-22 已打进决赛。"
+      },
+      {
+        "label": "2026 U17 亚洲杯对日本",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国足协战报可核其先后扑出藤本祥辉远射、仓桥幸晖门前头球和里见汰服第 80 分钟的远射。"
+      },
+      {
+        "label": "2026 U17 亚洲杯半决赛对澳大利亚",
+        "team": "China PR U17",
+        "squad_status": "tracked",
+        "appearances": 1,
+        "goals": 0,
+        "minutes": null,
+        "note": "中国队 2 比 0 取胜挺进决赛，战报可核其在第 37 分钟和第 74 分钟连续化解对手射门，完成关键零封。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/ziniu-qin/profil/spieler/1412277"
+      },
+      {
+        "type": "official",
+        "label": "CFA 2009 goalkeeper camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240820/34947.html"
+      },
+      {
+        "type": "news",
+        "label": "Jiyuan education report",
+        "url": "https://jyj.jiyuan.gov.cn/news/jyyw/t967052.html"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi U15 best goalkeeper report",
+        "url": "https://m.dongqiudi.com/article/4684889.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 fifth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20251104/37051.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 first camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260415/37563.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 second camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260311/37414.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 match report vs Japan",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260513/37660.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 semi-final report vs Australia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260520/37694.html"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-05-22",
+      "notes": "AFC U17 2026 最终报名表可核生日 2009-07-10、1 号门将、身高 195、体重 85 与 Evergrande Football School 报名归属；中国足协 2024-2026 多期通知可连续拼出其恒大足校 / 广州青训线国字号时间轴。济源教育系统报道与广州 U15 最佳门将报道可补强其地域来源和俱乐部赛事节点。公开资料不足以支持其属于董路中国足球小将主培养线，因此当前明确不加该标签。"
+    },
+    "names": {
+      "zh": "秦子牛",
+      "en": "Qin Ziniu",
+      "native": "秦子牛",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
     "id": "cn-liu-zhicheng-2009",
     "name": "Liu Zhicheng",
     "local_name": "Liu Zhicheng",
@@ -4196,6 +4319,183 @@
       "zh": "吕孟洋",
       "en": "Lyu Mengyang",
       "native": "吕孟洋",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
+    "id": "cn-xie-jin-2009",
+    "name": "Jin Xie",
+    "local_name": "谢晋",
+    "country": "China PR",
+    "birth_date": "2009-08-21",
+    "age_band": "u17",
+    "primary_position": "Left Midfield",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Real Carabanchel CF",
+      "country": "Spain"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2023 北京希望杯射手节点",
+        "organization": "Peking University Affiliated High School",
+        "country": "China",
+        "note": "北京市希望杯足球赛补赛官方通稿写到，北大附中谢晋获得 U13 组最佳射手奖，这是当前公开资料里较早可核的北京校园足球成绩节点。"
+      },
+      {
+        "stage_label": "2024 北大附中 U15 冠军阶段",
+        "organization": "Peking University Affiliated High School",
+        "country": "China",
+        "note": "北大附中官方报道写到，其所在初中男足夺得第三届中青联赛北京赛区 U15 组冠军，谢晋以 13 球排在赛事射手榜榜首。"
+      },
+      {
+        "stage_label": "2025/05 西班牙留洋口径",
+        "organization": "CF Fuenlabrada",
+        "country": "Spain",
+        "note": "中国足协 2025 年第二期 U16 集训通知中，谢晋所属单位登记为富恩拉夫拉达足球俱乐部，说明其在这一时间点已经进入西班牙路径。"
+      },
+      {
+        "stage_label": "2025/06 国内报名口径",
+        "organization": "Peking University Affiliated High School",
+        "country": "China",
+        "note": "中国足协 2025 年第三期 U16 集训通知中，其所属单位又写回北京大学附属中学，显示其 2025 年国字号报名口径并不稳定。"
+      },
+      {
+        "stage_label": "2025/11 皇家卡拉万切尔节点",
+        "organization": "Real Carabanchel CF",
+        "country": "Spain",
+        "note": "中国足协 2025 年第五期 U16 集训通知将其登记为皇家卡拉万切尔足球俱乐部，这是当前足协公开文件中更靠后的留洋归属节点。"
+      },
+      {
+        "stage_label": "2026 U17 国少阶段",
+        "organization": "China PR U17",
+        "country": "China",
+        "note": "2026 U17 亚洲杯周期作为边路 / 前场攻击手进入中国 U17 主力轮换，半决赛对澳大利亚替补进球锁定胜局。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "china-youth",
+      "winger-watch",
+      "overseas-europe",
+      "beijing-campus-football",
+      "mixed-source"
+    ],
+    "tournament_participation": [
+      {
+        "label": "2025 蒙太古杯",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "2025 蒙太古杯末轮对法国旺代 U17 选拔队替补登场后破门，帮助中国 U16 以 2 比 1 逆转，并创造中国男足 U16 参加蒙太古杯的历史最佳战绩。"
+      },
+      {
+        "label": "2025 呼和浩特国际足球锦标赛",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "对沙特的人球分过后送出补时绝杀助攻；对澳大利亚破门，中国 U16 最终夺冠。"
+      },
+      {
+        "label": "2025 和平杯",
+        "team": "China PR U16",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "继续随 U16 国少参赛，足协阶段总结中直接引用了谢晋的赛后发言。"
+      },
+      {
+        "label": "AFC U17 2026 预选赛",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 3,
+        "minutes": null,
+        "note": "对东帝汶一战完成帽子戏法：中国队 14 比 0 取胜，谢晋第 33 分钟连续扣球后抽射破门，第 44 分钟补射完成梅开二度，第 64 分钟头球上演帽子戏法。"
+      },
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 正赛",
+        "team": "China PR U17",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "小组赛对日本进入首发，半决赛对澳大利亚替补登场并在补时第 1 分钟破门，将比分锁定为 2 比 0，帮助中国队晋级决赛。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jin-xie/profil/spieler/1347943",
+        "note": "用于校对生日、出生地与左前卫 / 边前卫位置口径。"
+      },
+      {
+        "type": "official",
+        "label": "Beijing Hope Cup report",
+        "url": "https://tyj.beijing.gov.cn/bjsports/gzdt84/jtdt/326123591/index.html",
+        "note": "用于校对其在北京校园足球阶段拿到 U13 组最佳射手。"
+      },
+      {
+        "type": "official",
+        "label": "PKU School U15 title report",
+        "url": "https://www.pkuschool.edu.cn/news/news/1610.html",
+        "note": "用于校对其在北大附中 U15 冠军阶段以 13 球领跑射手榜。"
+      },
+      {
+        "type": "official",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20250513/36466.html",
+        "note": "用于校对其在 2025 年 5 月以富恩拉夫拉达足球俱乐部球员身份入选中国 U16。"
+      },
+      {
+        "type": "official",
+        "label": "CFA Montaigu Cup summary",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20250422/35898.html",
+        "note": "用于校对其在蒙太古杯替补进球并帮助中国 U16 首次打进四强。"
+      },
+      {
+        "type": "news",
+        "label": "CCTV Hohhot tournament report",
+        "url": "https://sports.cctv.com/2025/05/28/PHOAC12DimYxO8sbf5obUkTU250528.shtml",
+        "note": "用于校对其对沙特助攻帅惟浩补时绝杀。"
+      },
+      {
+        "type": "official",
+        "label": "CFA qualifier report vs Timor-Leste",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20251125/37104.html",
+        "note": "用于校对其在 U17 亚预赛对东帝汶的帽子戏法。"
+      },
+      {
+        "type": "official",
+        "label": "CFA group-stage report vs Japan",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260513/37660.html",
+        "note": "用于校对其在 U17 亚洲杯小组赛对日本首发。"
+      },
+      {
+        "type": "official",
+        "label": "CFA semi-final report vs Australia",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260520/37694.html",
+        "note": "用于校对其在 U17 亚洲杯半决赛补时进球。"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-05-22",
+      "notes": "生日、出生地和左路位置口径可由 Transfermarkt 对照；北大附中和北京市希望杯官方通稿可连续拼出其北京校园足球成长线；中国足协和央视战报可核到其蒙太古杯、呼和浩特国际足球锦标赛、U17 亚预赛以及 2026 U17 亚洲杯半决赛的关键表现。当前最需要保留的口径差异是 2025 年先后以富恩拉夫拉达、北大附中、皇家卡拉万切尔等单位出现在足协名单中，因此不应把其当前归属简单写死为单一国内俱乐部，也不宜直接归入董路中国足球小将主培养线。"
+    },
+    "names": {
+      "zh": "谢晋",
+      "en": "Jin Xie",
+      "native": "谢晋",
       "ja": "",
       "ko": ""
     }
@@ -4895,64 +5195,6 @@
       "zh": "徐正鹏",
       "en": "Xu Zhengpeng",
       "native": "徐正鹏",
-      "ja": "",
-      "ko": ""
-    }
-  },
-  {
-    "id": "cn-qin-ziniu-2010",
-    "name": "Qin Ziniu",
-    "local_name": "Qin Ziniu",
-    "country": "China PR",
-    "birth_date": "2010-07-09",
-    "age_band": "u17",
-    "primary_position": "Goalkeeper",
-    "height_cm": 187,
-    "weight_kg": 72,
-    "registration_club": {
-      "name": "Qingdao Hainiu FC",
-      "country": "China"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Qingdao Hainiu FC",
-        "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "china-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 中国队终报名名单",
-        "team": "China PR U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "names": {
-      "zh": "秦子牛",
-      "en": "Qin Ziniu",
-      "native": "秦子牛",
       "ja": "",
       "ko": ""
     }
