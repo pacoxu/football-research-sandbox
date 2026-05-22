@@ -33,7 +33,7 @@ jobs:
       - name: Stage static files
         run: |
           mkdir -p dist
-          cp index.html dist/index.html
+          cp *.html dist/
           cp -R assets dist/assets
           cp -R data dist/data
 
