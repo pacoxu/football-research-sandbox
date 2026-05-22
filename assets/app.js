@@ -141,15 +141,15 @@ const UI_COPY = {
     "playerDetail.breadcrumb.list": "球员列表",
     "playerDetail.breadcrumb.detail": "球员详情",
     "playerDetail.pathway.eyebrow": "Pathway",
-    "playerDetail.pathway.title": "青训过程与归属变化",
+    "playerDetail.pathway.title": "青训路径与归属变化",
     "playerDetail.competition.eyebrow": "Competition Log",
-    "playerDetail.competition.title": "赛事参与与最近数据",
+    "playerDetail.competition.title": "赛事经历",
     "playerDetail.verification.eyebrow": "Verification",
     "playerDetail.verification.title": "校验状态",
     "playerDetail.recent.eyebrow": "Recent Contributions",
     "playerDetail.recent.title": "最近贡献",
     "playerDetail.links.eyebrow": "External Links",
-    "playerDetail.links.title": "外部资料",
+    "playerDetail.links.title": "外部资料与来源",
     "tournamentDetail.breadcrumb.list": "赛事列表",
     "tournamentDetail.breadcrumb.detail": "赛事详情",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -398,13 +398,13 @@ const UI_COPY = {
     "playerDetail.pathway.eyebrow": "Pathway",
     "playerDetail.pathway.title": "Pathway and affiliation changes",
     "playerDetail.competition.eyebrow": "Competition Log",
-    "playerDetail.competition.title": "Tournament log and recent data",
+    "playerDetail.competition.title": "Competition log",
     "playerDetail.verification.eyebrow": "Verification",
     "playerDetail.verification.title": "Verification status",
     "playerDetail.recent.eyebrow": "Recent Contributions",
     "playerDetail.recent.title": "Recent contributions",
     "playerDetail.links.eyebrow": "External Links",
-    "playerDetail.links.title": "External references",
+    "playerDetail.links.title": "External sources",
     "tournamentDetail.breadcrumb.list": "Tournaments",
     "tournamentDetail.breadcrumb.detail": "Tournament detail",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -1290,9 +1290,17 @@ function buildPlayerHeroSummary(player, affiliation) {
       ? `currently with ${affiliation.currentTeam}`
       : `现属${affiliation.currentTeam}`;
 
-  return fragments.length > 0
-    ? `${lead}. ${fragments.join(state.language === "en" ? ", " : "，")}，${tail}${state.language === "en" ? "." : "。"}`
-    : `${lead}. ${tail}${state.language === "en" ? "." : "。"}`
+  if (fragments.length === 0) {
+    return state.language === "en" ? `${lead}. ${tail}.` : `${lead}。${tail}。`;
+  }
+
+  const clause = fragments.join(state.language === "en" ? ", " : "，");
+  const normalizedClause =
+    state.language === "en" ? `${clause.charAt(0).toUpperCase()}${clause.slice(1)}` : clause;
+
+  return state.language === "en"
+    ? `${lead}. ${normalizedClause}, ${tail}.`
+    : `${lead}。${normalizedClause}，${tail}。`;
 }
 
 function formatTagList(tags) {
@@ -2825,6 +2833,7 @@ function renderPlayerDetailPage() {
         ${renderStatusItem(t("playerDetail.status.verification"), verificationLabel)}
       </dl>
       <p class="hero-side-note">${escapeHtml(t("playerDetail.status.lastChecked", { date: formatDate(player.verification?.last_checked ?? pageDate) }))}</p>
+      <p class="small-note">${escapeHtml(localizeText(player.verification?.notes, t("playerDetail.verification.noNote")))}</p>
       <p class="hero-side-note">${escapeHtml(t("playerDetail.marketValue.note"))}</p>
     </aside>
   `;

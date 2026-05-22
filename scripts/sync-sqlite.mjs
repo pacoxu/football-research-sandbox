@@ -57,7 +57,7 @@ export async function syncSqlite() {
 
     CREATE TABLE player_competitions (
       player_id TEXT NOT NULL,
-      competition_id TEXT NOT NULL,
+      competition_id TEXT,
       label TEXT NOT NULL,
       team_name TEXT NOT NULL,
       squad_status TEXT NOT NULL,
@@ -277,7 +277,7 @@ export async function syncSqlite() {
     player.tournament_participation.forEach((entry) => {
       insertCompetition.run(
         player.id,
-        entry.competition_id,
+        entry.competition_id ?? null,
         entry.label,
         entry.team,
         entry.squad_status,

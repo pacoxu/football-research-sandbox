@@ -164,7 +164,9 @@ export async function validateData() {
       `Invalid link url for ${player.id}`
     );
     assert(
-      player.tournament_participation.every((entry) => tournamentIds.has(entry.competition_id)),
+      player.tournament_participation.every(
+        (entry) => !entry.competition_id || tournamentIds.has(entry.competition_id)
+      ),
       `Unknown competition_id on player ${player.id}`
     );
     assert(
