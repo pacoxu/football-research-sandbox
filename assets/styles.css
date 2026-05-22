@@ -1,0 +1,547 @@
+:root {
+  --bg: #f5efe3;
+  --bg-strong: #efe4d3;
+  --surface: rgba(255, 252, 246, 0.92);
+  --surface-strong: rgba(255, 249, 241, 0.98);
+  --line: rgba(89, 53, 18, 0.14);
+  --text: #23160d;
+  --muted: #665244;
+  --accent: #b43b20;
+  --accent-deep: #7a1f11;
+  --field: rgba(255, 255, 255, 0.86);
+  --shadow: 0 28px 70px rgba(77, 44, 16, 0.12);
+  --radius-lg: 24px;
+  --radius-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top left, rgba(180, 59, 32, 0.18), transparent 38%),
+    linear-gradient(180deg, #f8f1e6 0%, #f2e7d7 100%);
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(35, 22, 13, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(35, 22, 13, 0.03) 1px, transparent 1px);
+  background-size: 24px 24px;
+  pointer-events: none;
+}
+
+.page-shell {
+  position: relative;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.hero-copy,
+.hero-panel,
+.section-block,
+.stat-card {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow);
+}
+
+.hero-copy {
+  border-radius: 30px;
+  padding: 38px;
+}
+
+.hero-panel {
+  border-radius: 30px;
+  padding: 28px;
+  background:
+    linear-gradient(140deg, rgba(180, 59, 32, 0.95), rgba(122, 31, 17, 0.92)),
+    var(--surface);
+  color: #fff4e9;
+}
+
+.eyebrow,
+.panel-label,
+.stat-label,
+.section-note,
+.filter-item span {
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+}
+
+.eyebrow,
+.section-note,
+.filter-item span {
+  color: var(--muted);
+}
+
+.panel-label,
+.hero-panel .eyebrow {
+  color: rgba(255, 244, 233, 0.76);
+}
+
+h1,
+h2 {
+  margin: 0;
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  font-size: clamp(2.9rem, 7vw, 5.4rem);
+  line-height: 0.94;
+  margin-top: 12px;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.3rem);
+}
+
+.hero-text {
+  max-width: 58ch;
+  font-size: 1.08rem;
+  line-height: 1.7;
+  color: var(--muted);
+  margin: 18px 0 0;
+}
+
+.tournament-cards,
+.stack-grid,
+.dossier-grid,
+.roster-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.tournament-card,
+.stack-card {
+  border: 1px solid rgba(255, 244, 233, 0.16);
+  border-radius: 18px;
+  padding: 16px 18px;
+  background: rgba(255, 244, 233, 0.08);
+}
+
+.tournament-card h3,
+.stack-card h3 {
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+
+.tournament-card p,
+.stack-card p,
+.stack-card li,
+.rule-list li,
+td,
+th {
+  line-height: 1.55;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  border-radius: var(--radius-lg);
+  padding: 22px;
+}
+
+.stat-value {
+  margin: 12px 0 0;
+  font-size: clamp(2rem, 5vw, 3.3rem);
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+}
+
+.section-block {
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  margin-bottom: 24px;
+}
+
+.dossier-card {
+  display: grid;
+  gap: 16px;
+}
+
+.dossier-layout {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.dossier-summary {
+  background: linear-gradient(180deg, rgba(180, 59, 32, 0.08), rgba(255, 249, 241, 0.96));
+}
+
+.source-doc-list {
+  margin: 12px 0;
+  padding-left: 18px;
+}
+
+.source-doc-list li {
+  margin-bottom: 8px;
+}
+
+.source-doc-list span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.source-doc-list p {
+  margin: 4px 0 0;
+}
+
+.timeline-list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+}
+
+.timeline-list li {
+  margin-bottom: 12px;
+}
+
+.timeline-date {
+  display: inline-block;
+  min-width: 78px;
+  margin-right: 8px;
+  color: var(--accent-deep);
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  letter-spacing: 0.08em;
+}
+
+.timeline-list p {
+  margin: 6px 0 0;
+}
+
+.roster-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.roster-view {
+  height: 100%;
+}
+
+.confusion-card {
+  height: 100%;
+}
+
+.roster-player-list {
+  margin: 12px 0 0;
+  padding-left: 18px;
+  columns: 2;
+  column-gap: 20px;
+}
+
+.roster-player-list li {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+.roster-player-list span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.source-note {
+  word-break: break-all;
+}
+
+.audit-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.audit-stat {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 12px 14px;
+  background: rgba(180, 59, 32, 0.05);
+}
+
+.audit-stat strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.5rem;
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+}
+
+.audit-table {
+  min-width: 840px;
+}
+
+.audit-table td a {
+  color: var(--accent-deep);
+}
+
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.filter-bar {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.filter-item {
+  display: grid;
+  gap: 8px;
+}
+
+.filter-item input,
+.filter-item select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--field);
+  color: var(--text);
+  padding: 14px 16px;
+  font: inherit;
+}
+
+.filter-item input:focus,
+.filter-item select:focus {
+  outline: 2px solid rgba(180, 59, 32, 0.26);
+  border-color: rgba(180, 59, 32, 0.4);
+}
+
+.table-shell {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 1080px;
+}
+
+thead th {
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  color: var(--muted);
+}
+
+th,
+td {
+  text-align: left;
+  padding: 14px 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+tbody tr:hover {
+  background: rgba(180, 59, 32, 0.04);
+}
+
+.player-name {
+  display: grid;
+  gap: 4px;
+}
+
+.player-name strong {
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  font-size: 1.05rem;
+}
+
+.player-meta,
+.small-note,
+.chip,
+.link-row {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.chip-row,
+.link-list,
+.mini-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(180, 59, 32, 0.08);
+  border: 1px solid rgba(180, 59, 32, 0.12);
+}
+
+.status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.status-verified {
+  background: rgba(34, 106, 70, 0.12);
+  color: #16563a;
+}
+
+.status-mixed-source {
+  background: rgba(180, 59, 32, 0.12);
+  color: var(--accent-deep);
+}
+
+.status-template-ready,
+.status-backlog {
+  background: rgba(78, 63, 48, 0.08);
+  color: #4e3f30;
+}
+
+.status-in-progress {
+  background: rgba(20, 86, 144, 0.11);
+  color: #104f84;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.stack-card {
+  background: var(--surface-strong);
+  border: 1px solid var(--line);
+}
+
+.stack-card ul,
+.rule-list {
+  margin: 10px 0 0;
+  padding-left: 18px;
+}
+
+.stack-card a,
+.link-list a,
+.tournament-card a {
+  color: var(--accent-deep);
+}
+
+.overseas-record-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.overseas-record {
+  border-radius: 16px;
+  border: 1px solid rgba(180, 59, 32, 0.12);
+  background: linear-gradient(180deg, rgba(180, 59, 32, 0.06), rgba(255, 249, 241, 0.96));
+  padding: 14px;
+}
+
+.overseas-record h4 {
+  margin: 0 0 8px;
+  font-size: 1.02rem;
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+}
+
+.overseas-record h4 span {
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+}
+
+.overseas-record p {
+  margin: 0 0 8px;
+}
+
+.empty-state {
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 16px;
+  background: rgba(78, 63, 48, 0.08);
+  color: var(--muted);
+}
+
+.info-block {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1100px) {
+  .hero,
+  .two-column,
+  .stat-grid,
+  .filter-bar,
+  .dossier-layout,
+  .roster-grid,
+  .audit-stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 900px) {
+  .roster-player-list {
+    columns: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .page-shell {
+    padding: 18px 14px 40px;
+  }
+
+  .hero-copy,
+  .hero-panel,
+  .section-block,
+  .stat-card {
+    padding: 20px;
+  }
+
+  .section-head {
+    align-items: start;
+    flex-direction: column;
+  }
+}

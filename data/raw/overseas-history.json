@@ -1,0 +1,232 @@
+{
+  "bucket_definition": [
+    "big-five",
+    "europe-other",
+    "asia-other"
+  ],
+  "countries": [
+    {
+      "country": "China PR",
+      "status": "in-progress",
+      "verified_records": 1,
+      "bucket_focus": [
+        "big-five：优先记录真实注册、出场和梯队归属",
+        "europe-other：先收集克罗地亚、塞尔维亚、西班牙青训落点",
+        "asia-other：后续补 J 联赛、K 联赛、东南亚职业梯队"
+      ],
+      "seed_examples": [
+        "Ma Mingyu",
+        "Jin Yucheng",
+        "Wan Xiang",
+        "Wang Xiuhao"
+      ],
+      "notes": "先拿当前 U17 海外样本起表，再往历史延展；五大联赛部分已补入马明宇的意甲注册个案。",
+      "featured_records": [
+        {
+          "id": "ma-mingyu-perugia-1999",
+          "name": "Ma Mingyu",
+          "local_name": "马明宇",
+          "bucket": "big-five",
+          "league": "Serie A",
+          "club": "Perugia",
+          "season": "1999-2000",
+          "status": "verified",
+          "appearances": 0,
+          "competitive_debut": false,
+          "summary": "1999-2000 赛季，马明宇加盟意甲佩鲁贾，成为中国球员登陆意甲的标志性案例，但整个留洋周期未获得正式比赛出场，赛季结束后回到国内。",
+          "notes": [
+            "可计入五大联赛正式注册样本，但不计入正式出场样本。",
+            "核心信息点是“登陆意甲”与“未登场”并存，经历本身具有代表性。",
+            "后续可继续补签约时间、离队时间和更精确的原始出处。"
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "status": "in-progress",
+      "verified_records": 4,
+      "bucket_focus": [
+        "big-five：按正式签约和一线队出场建档",
+        "europe-other：覆盖比利时、荷兰、苏超、塞尔维亚等常见落点",
+        "asia-other：保留东南亚和中东流动路径"
+      ],
+      "seed_examples": [
+        "Yasuhiko Okudera",
+        "Makoto Hasebe",
+        "Shinji Kagawa",
+        "Shinji Okazaki",
+        "Maya Yoshida",
+        "Hidetoshi Nakata"
+      ],
+      "notes": "五大联赛样本已进入历史主线补录阶段；德甲是日本球员最成熟的落点，英超也已出现冠军成员与长期主力，后续可继续补中田英寿、久保建英、三笘薰等条目。",
+      "featured_records": [
+        {
+          "id": "yasuhiko-okudera-bundesliga-1977",
+          "name": "Yasuhiko Okudera",
+          "local_name": "奥寺康彦",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Cologne / Hertha Berlin / Werder Bremen",
+          "season": "1977-1986",
+          "status": "verified",
+          "appearances": 234,
+          "competitive_debut": true,
+          "summary": "奥寺康彦在 1977 年登陆德国，成为日本职业球员留洋欧洲的先驱，并在科隆、柏林赫塔和不来梅累计留下 234 场德甲出场，为日本球员进入五大联赛打开现实路径。",
+          "notes": [
+            "是首位在德国职业足坛立足的日本球员，也是日本留洋史上的先行者。",
+            "首季就随科隆拿到德甲和德国杯双冠，证明日本球员可以在五大联赛冠军队立足。",
+            "其德甲路径奠定了日本球员后来长期偏向德国发展的早期模板。"
+          ]
+        },
+        {
+          "id": "makoto-hasebe-bundesliga-2007",
+          "name": "Makoto Hasebe",
+          "local_name": "长谷部诚",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Wolfsburg / Nuremberg / Eintracht Frankfurt",
+          "season": "2007-2024",
+          "status": "verified",
+          "appearances": 384,
+          "competitive_debut": true,
+          "summary": "长谷部诚在德国顶级联赛累计 384 场出场，是截至 2025 年 3 月 20 日的日本球员德甲出场纪录保持者，也是亚洲球员在德甲出场的标杆样本。",
+          "notes": [
+            "2008/09 赛季随沃尔夫斯堡夺得德甲冠军，后期又随法兰克福赢得德国杯和欧联杯。",
+            "覆盖中场与后防多个角色，说明日本球员在五大联赛不再只是技术型边缘补充。",
+            "其超长留队周期代表日本球员已经从先锋个案走向体系内长期主力。"
+          ]
+        },
+        {
+          "id": "shinji-kagawa-dortmund-2010",
+          "name": "Shinji Kagawa",
+          "local_name": "香川真司",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Borussia Dortmund",
+          "season": "2010-2019",
+          "status": "verified",
+          "appearances": 148,
+          "competitive_debut": true,
+          "summary": "香川真司在多特蒙德的两段德甲经历合计出场 148 次、打入 41 球，是德甲历史进球最多的日本球员，也是日本攻击手在五大联赛进入冠军主力层的代表。",
+          "notes": [
+            "首个两季便随多特连续夺得 2010/11 和 2011/12 德甲冠军。",
+            "其 41 粒德甲进球说明日本球员不只能够立足，也能在进攻端成为决定比赛的人物。",
+            "从多特转会曼联、再回归德甲的轨迹，体现出日本球员在英德两大主流联赛之间的流动能力。"
+          ]
+        },
+        {
+          "id": "shinji-okazaki-leicester-2015",
+          "name": "Shinji Okazaki",
+          "local_name": "冈崎慎司",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Leicester City",
+          "season": "2015-2019",
+          "status": "verified",
+          "appearances": 114,
+          "competitive_debut": true,
+          "summary": "冈崎慎司 2015 年加盟莱斯特城后，在英超出场 114 次，并作为高强度前场拼抢的重要一环参与球队 2015/16 赛季的奇迹夺冠。",
+          "notes": [
+            "2015/16 赛季仅缺席两场联赛，是莱斯特冠军赛季的高频轮转主力之一。",
+            "其英超经历说明日本球员不仅适配德甲技术流，也能适配英超高对抗节奏。",
+            "是日本球员在五大联赛冠军队中承担功能性主力角色的典型样本。"
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Korea Republic",
+      "status": "in-progress",
+      "verified_records": 4,
+      "bucket_focus": [
+        "big-five：按正式注册和长期留洋区分",
+        "europe-other：重点看奥地利、瑞士、丹麦、苏格兰",
+        "asia-other：补西亚与日本联赛流动"
+      ],
+      "seed_examples": [
+        "Cha Bum-kun",
+        "Park Ji-sung",
+        "Ki Sung-yueng",
+        "Son Heung-min",
+        "Kim Min-jae",
+        "Lee Chung-yong"
+      ],
+      "notes": "韩国五大联赛样本同样进入历史主线补录；早期以德甲先锋为核心，随后在英超形成长期稳定输出，近年又扩展到意甲和法甲级别的平台。",
+      "featured_records": [
+        {
+          "id": "cha-bum-kun-bundesliga-1979",
+          "name": "Cha Bum-kun",
+          "local_name": "车范根",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "SV Darmstadt 98 / Eintracht Frankfurt / Bayer Leverkusen",
+          "season": "1979-1989",
+          "status": "verified",
+          "appearances": 308,
+          "competitive_debut": true,
+          "summary": "车范根在德甲累计出场 308 次、攻入 98 球，是韩国球员登陆五大联赛的真正开路者，也是德甲历史进球最多的亚洲球员之一。",
+          "notes": [
+            "是首位征战德甲的韩国球员，也是韩国留洋五大联赛最重要的先驱案例。",
+            "先后帮助法兰克福和勒沃库森赢得欧洲联盟杯，说明韩国球员很早就能在欧洲高水平赛事中承担核心作用。",
+            "其长达十年的德甲履历为后来韩国球员赴德发展建立了最直接的参照系。"
+          ]
+        },
+        {
+          "id": "park-ji-sung-premier-league-2005",
+          "name": "Park Ji-sung",
+          "local_name": "朴智星",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Manchester United / QPR",
+          "season": "2005-2013",
+          "status": "verified",
+          "appearances": 154,
+          "competitive_debut": true,
+          "summary": "朴智星在英超累计出场 154 次，其中 134 场来自曼联七个赛季，并在 2006/07 成为首位赢得英超冠军的亚洲球员，最终共收获 4 次英超冠军。",
+          "notes": [
+            "其英超生涯证明韩国球员不仅能登陆豪门，而且可以在轮换和关键战中长期被信任。",
+            "在曼联时期兼具战术执行力、覆盖能力和大场面经验，是韩国旅欧史上的标志性成功样本。",
+            "其成功对后续孙兴慜等韩国英超球员具有明显示范效应。"
+          ]
+        },
+        {
+          "id": "ki-sung-yueng-premier-league-2012",
+          "name": "Ki Sung-yueng",
+          "local_name": "寄诚庸",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Swansea City / Sunderland / Newcastle United",
+          "season": "2012-2020",
+          "status": "verified",
+          "appearances": 187,
+          "competitive_debut": true,
+          "summary": "寄诚庸在斯旺西、桑德兰和纽卡斯尔的英超生涯合计出场 187 次，是韩国球员英超出场纪录保持者，代表韩国中场在五大联赛长期稳定立足。",
+          "notes": [
+            "其履历覆盖保级队、中游队与多种战术体系，说明韩国球员在英超已经从个别明星扩展为稳定供给。",
+            "作为组织型中场，他与早期依赖体能和冲击力的韩国留洋形象形成了明显分化。",
+            "这类长期样本使韩国球员在英超不再只是短期商业化引援。"
+          ]
+        },
+        {
+          "id": "kim-min-jae-napoli-2022",
+          "name": "Kim Min-jae",
+          "local_name": "金玟哉",
+          "bucket": "big-five",
+          "league": "Serie A",
+          "club": "Napoli",
+          "season": "2022-2023",
+          "status": "verified",
+          "appearances": 35,
+          "competitive_debut": true,
+          "summary": "金玟哉在 2022/23 赛季代表那不勒斯出战 35 场意甲，作为后防核心帮助球队夺得 33 年来的首座意甲冠军，并被评价为该赛季意甲最佳后卫级别表现。",
+          "notes": [
+            "这一赛季标志韩国球员不再只集中于德甲和英超，也能在意甲冠军队担任核心防守角色。",
+            "随后转会拜仁，说明韩国顶级留洋路径已经能在五大联赛豪门之间完成纵向升级。",
+            "中卫位置上的成功案例，也扩展了韩国留洋球员的传统位置谱系。"
+          ]
+        }
+      ]
+    }
+  ]
+}

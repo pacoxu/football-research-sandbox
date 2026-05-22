@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>青训球员追踪站</title>
+    <meta
+      name="description"
+      content="聚焦中国青训、董路足球小将、AFC U17 和中日韩留洋历史建档的静态数据站。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Youth Tracking Desk</p>
+          <h1>青训球员追踪站</h1>
+          <p class="hero-text">
+            围绕中国青训、董路足球小将、最近一届 Asia U17 与中日韩留洋史料做本地化建档。
+            当前初始化版本按 <strong>2026 年 5 月 22 日</strong> 的公开资料建立。
+          </p>
+        </div>
+        <div class="hero-panel">
+          <p class="panel-label">当前焦点</p>
+          <div id="tournamentCards" class="tournament-cards"></div>
+        </div>
+      </header>
+
+      <main>
+        <section class="stat-grid" aria-label="项目概览">
+          <article class="stat-card">
+            <p class="stat-label">已建球员样本</p>
+            <p id="playerCount" class="stat-value">-</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">当前主跟踪赛事</p>
+            <p id="focusEdition" class="stat-value">-</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">海外归属样本</p>
+            <p id="foreignPathCount" class="stat-value">-</p>
+          </article>
+          <article class="stat-card">
+            <p class="stat-label">覆盖国家</p>
+            <p id="countryCount" class="stat-value">-</p>
+          </article>
+        </section>
+
+        <section class="section-block">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Research Dossier</p>
+              <h2>董路足球小将专题</h2>
+            </div>
+            <p class="section-note">来自本地研究报告的结构化摘要</p>
+          </div>
+          <div id="dossierCards" class="dossier-grid"></div>
+        </section>
+
+        <section class="section-block">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Seed List</p>
+              <h2>球员列表</h2>
+            </div>
+            <p id="updatedLabel" class="section-note">数据生成中</p>
+          </div>
+
+          <div class="filter-bar">
+            <label class="filter-item">
+              <span>搜索</span>
+              <input id="searchInput" type="search" placeholder="姓名、学校、俱乐部、标签" />
+            </label>
+            <label class="filter-item">
+              <span>年龄段</span>
+              <select id="ageFilter"></select>
+            </label>
+            <label class="filter-item">
+              <span>国家</span>
+              <select id="countryFilter"></select>
+            </label>
+            <label class="filter-item">
+              <span>专题标签</span>
+              <select id="tagFilter"></select>
+            </label>
+          </div>
+
+          <div class="table-shell">
+            <table>
+              <thead>
+                <tr>
+                  <th>球员</th>
+                  <th>年龄</th>
+                  <th>归属</th>
+                  <th>青训路径</th>
+                  <th>赛事参与</th>
+                  <th>外部资料</th>
+                  <th>校验状态</th>
+                </tr>
+              </thead>
+              <tbody id="playerRows"></tbody>
+            </table>
+          </div>
+
+          <div id="emptyState" class="empty-state" hidden>
+            当前筛选条件下没有匹配球员。
+          </div>
+        </section>
+
+        <section class="two-column">
+          <article class="section-block">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Projects</p>
+                <h2>专题追踪</h2>
+              </div>
+            </div>
+            <div id="projectCards" class="stack-grid"></div>
+          </article>
+
+          <article class="section-block">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Overseas History</p>
+                <h2>中日韩留洋建档状态</h2>
+              </div>
+            </div>
+            <div id="overseasCards" class="stack-grid"></div>
+          </article>
+        </section>
+
+        <section class="section-block info-block">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Rules</p>
+              <h2>数据规则</h2>
+            </div>
+          </div>
+          <ul class="rule-list">
+            <li>球员原始数据先按年龄段建档，当前示例以 `U17` 为主。</li>
+            <li>对外部资料冲突不强行合并，直接在校验状态里标记为混合来源。</li>
+            <li>页面消费的是聚合 JSON，本地查询和后续抓取可以走 SQLite。</li>
+            <li>GitHub Pages 只负责展示，不承载数据库写入。</li>
+          </ul>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./assets/app.js"></script>
+  </body>
+</html>

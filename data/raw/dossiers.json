@@ -1,0 +1,529 @@
+[
+  {
+    "id": "donglu-football-boys",
+    "name": "董路“足球小将”09主干线",
+    "status": "in-progress",
+    "last_reviewed": "2026-05-22",
+    "summary": "这不是单一球队，而是以 2009 年龄段为核心、逐步扩展到多年龄段的民间青训与比赛平台。当前最稳妥的公开口径，是把“足球小将背景球员”分成 2024 年足协 U15 第四期集训可交叉确认的 9 人主名单，以及 2025 年 6 月荷兰杯 21 人赛会名单两层来管理。",
+    "source_document": {
+      "title": "deep-research-report.md",
+      "path": "/Users/pacoxu/Downloads/deep-research-report.md"
+    },
+    "supporting_documents": [
+      {
+        "title": "deep-research-report (1).md",
+        "path": "/Users/pacoxu/Downloads/deep-research-report (1).md",
+        "summary": "补充 9 名主名单球员的 Transfermarkt、官网具名页和 Wikipedia 三站核验情况。"
+      },
+      {
+        "title": "deep-research-report (2).md",
+        "path": "/Users/pacoxu/Downloads/deep-research-report (2).md",
+        "summary": "补充“足球小将 董路”关键词的作品内外歧义核验，明确其并非《足球小将》franchise 角色名。"
+      }
+    ],
+    "scope_note": "“完整名单”并未官方公布，因此需要区分长期培养主干、短期集训成员和单次赛会合作球员。",
+    "role_model": [
+      "2017 到 2022 年更接近发起人、选材者、带队者和比赛教练的复合角色。",
+      "后期逐渐转成选拔平台、比赛平台、留洋支持平台和媒体传播平台的混合体。",
+      "项目的重要分水岭，是 09 队从长期集中训练转为各地分散训练、比赛再集中。"
+    ],
+    "timeline": [
+      {
+        "date": "2017-08",
+        "label": "项目创办",
+        "detail": "以 2009 年龄段为核心，从全国招收 20 余名少年，采用飞行集训加高质量比赛路径。"
+      },
+      {
+        "date": "2018-12",
+        "label": "清华附中合作",
+        "detail": "项目与清华附中签约，首批 8 名球员进入马约翰班，邝兆镭代表发言。"
+      },
+      {
+        "date": "2019-03",
+        "label": "模式成型",
+        "detail": "主流媒体开始明确把项目描述为以赛代练的民办青训尝试。"
+      },
+      {
+        "date": "2019-2022",
+        "label": "09 队主带阶段",
+        "detail": "董路公开表示自己曾长期亲带 09 队训练三年。"
+      },
+      {
+        "date": "2023-11",
+        "label": "09 国少口径首次外显",
+        "detail": "董路社媒称有 11 名“足球小将”进入 09 国少名单。"
+      },
+      {
+        "date": "2024-06",
+        "label": "9 人主名单可核",
+        "detail": "中国足协 U15 第四期集训名单中，可交叉确认 9 名足球小将背景球员。"
+      },
+      {
+        "date": "2025-06",
+        "label": "荷兰杯 21 人赛会名单",
+        "detail": "董路公开 U16 荷兰杯 21 人名单，成为单次活动里最完整的公开名单。"
+      },
+      {
+        "date": "2025-11",
+        "label": "亚预赛兑现",
+        "detail": "赵松源在 U17 亚预赛对文莱独中 6 球，万项和邝兆镭也有连续参与进球。"
+      },
+      {
+        "date": "2026-05",
+        "label": "成果期",
+        "detail": "2026 AFC U17 亚洲杯中，中国队打进决赛，09 主干线的项目成果进入集中兑现期。"
+      }
+    ],
+    "roster_views": [
+      {
+        "id": "verified-core-9",
+        "name": "2024 U15 第四期集训可交叉确认 9 人",
+        "confidence": "A/B",
+        "description": "当前最适合做项目主名单口径的 9 人。适合继续补精确俱乐部、留洋节点和外部链接。",
+        "players": [
+          {
+            "name": "Mao Yongbin",
+            "local_name": "毛永彬",
+            "role": "门将",
+            "club": "上海海港足球俱乐部",
+            "note": "09 主干线门将样本。"
+          },
+          {
+            "name": "Zhao Songyuan",
+            "local_name": "赵松源",
+            "role": "中锋",
+            "club": "清华附中",
+            "note": "亚预赛和 2026 亚洲杯表现突出。"
+          },
+          {
+            "name": "Wan Xiang",
+            "local_name": "万项",
+            "role": "中场/前腰",
+            "club": "湖北星辉青训学院",
+            "note": "中场核心，后续完成留洋塞尔维亚。"
+          },
+          {
+            "name": "Huang Zijie",
+            "local_name": "黄子杰",
+            "role": "左后卫",
+            "club": "佛山超盈实验中学",
+            "note": "左路后卫储备。"
+          },
+          {
+            "name": "Kuang Zhaolei",
+            "local_name": "邝兆镭",
+            "role": "前锋/右边锋",
+            "club": "广州足协",
+            "note": "项目招牌球员，首批清华附中 8 人代表。"
+          },
+          {
+            "name": "Dai Youzhe",
+            "local_name": "戴宥哲",
+            "role": "边后卫",
+            "club": "南京足协",
+            "note": "后场多面手。"
+          },
+          {
+            "name": "Lu Mengyang",
+            "local_name": "吕孟洋",
+            "role": "中场/自由前锋",
+            "club": "徐州队",
+            "note": "兼具组织与终结。"
+          },
+          {
+            "name": "Li Dongchen",
+            "local_name": "李东宸",
+            "role": "后卫/左中卫",
+            "club": "北京足协",
+            "note": "09/10 队补强样本。"
+          },
+          {
+            "name": "Wang Xiuhao",
+            "local_name": "汪修昊",
+            "role": "边后卫",
+            "club": "河南洛阳",
+            "note": "后场机动型样本，后续旅欧。"
+          }
+        ]
+      },
+      {
+        "id": "netherlands-cup-21",
+        "name": "2025 荷兰杯 21 人赛会名单",
+        "confidence": "B/C",
+        "description": "单次活动公开最完整名单，但多名球员的归属、角色与长期培养关系仍需单独校验。",
+        "players": [
+          {
+            "name": "朱玉轩",
+            "local_name": "Zhu Yuxuan",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "吴君逸",
+            "local_name": "Wu Junyi",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "吕孟洲",
+            "local_name": "Lv Mengzhou",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "Tiago Ocampo Garriga",
+            "local_name": "Tiago Ocampo Garriga",
+            "role": "合作球员",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "李明泽",
+            "local_name": "Li Mingze",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "吕孟洋",
+            "local_name": "Lu Mengyang",
+            "role": "中场/自由前锋",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "张林峒",
+            "local_name": "Zhang Lindong",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "谢晋",
+            "local_name": "Xie Jin",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "李昊炎",
+            "local_name": "Li Haoyan",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "邝兆镭",
+            "local_name": "Kuang Zhaolei",
+            "role": "前场核心",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "黄子杰",
+            "local_name": "Huang Zijie",
+            "role": "左后卫",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "李东宸",
+            "local_name": "Li Dongchen",
+            "role": "左中卫",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "汪修昊",
+            "local_name": "Wang Xiuhao",
+            "role": "边后卫",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "Rafael Hu",
+            "local_name": "Rafael Hu",
+            "role": "合作球员",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "Sekou Diarra Berthe",
+            "local_name": "Sekou Diarra Berthe",
+            "role": "合作球员",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "Albert Nuet Alvarez",
+            "local_name": "Albert Nuet Alvarez",
+            "role": "合作球员",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "Aitor Cazorla Martin",
+            "local_name": "Aitor Cazorla Martin",
+            "role": "合作球员",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "张与田",
+            "local_name": "Zhang Yutian",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "戴宥哲",
+            "local_name": "Dai Youzhe",
+            "role": "边后卫",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "何浩源",
+            "local_name": "He Haoyuan",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          },
+          {
+            "name": "刘凯源",
+            "local_name": "Liu Kaiyuan",
+            "role": "未指明",
+            "club": "未指明",
+            "note": ""
+          }
+        ]
+      }
+    ],
+    "controversies": [
+      "名单口径不统一，长期培养、短期参训和赛会合作经常混在一起。",
+      "董路既做选材、战术和比赛组织，也做媒体传播和商业化赛事，边界天然模糊。",
+      "公开资料里仍缺首批清华附中 8 人完整名单，以及与地方足协、学校分流的精确时间线。"
+    ],
+    "open_questions": [
+      "9 人主名单之外，哪些球员应归类为长期培养而不是赛会借调。",
+      "2025 荷兰杯 21 人里外籍或合作球员的注册关系与合同关系。",
+      "项目后续多年龄段梯队如何与国字号、职业俱乐部和学校系统并表。",
+      "吕孟洋是否存在可确认的 Transfermarkt 个人页，仍需后续继续核实。"
+    ],
+    "link_audit": {
+      "checked_at": "2026-05-22",
+      "summary": "按 2024 年足协通知口径核对 9 名主名单球员，当前可确认 8 人存在 Transfermarkt 个人页；具名且可公开访问的官方页面、个人 Wikipedia 条目都只有邝兆镭一人。",
+      "stats": {
+        "transfermarkt_profiles": 8,
+        "official_named_pages": 1,
+        "wikipedia_profiles": 1
+      },
+      "caveats": [
+        "Transfermarkt 多数反映的是后续留洋后的当前俱乐部，不能替代 2024 年“当时所属”口径。",
+        "国内学校、地方足协和基层青训机构公开球员页透明度很低，官网缺失是常态。",
+        "Wikipedia 目前只适合补充邝兆镭这类已具全国知名度的个体，不适合作为主数据源。"
+      ],
+      "players": [
+        {
+          "name": "Mao Yongbin",
+          "local_name": "毛永彬",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.com/yongbin-mao/profil/spieler/1281970"
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "Transfermarkt 以 Yongbin Mao 收录，属姓名倒置，无明显重名干扰。",
+          "missing_note": "上海海港当时公开球员页与个人 Wikipedia 条目未检得。"
+        },
+        {
+          "name": "Songyuan Zhao",
+          "local_name": "赵松源",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.com/songyuan-zhao/profil/spieler/1283228"
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "无明显重名歧义。",
+          "missing_note": "清华附中具名球员页与个人 Wikipedia 条目未检得。"
+        },
+        {
+          "name": "Xiang Wan",
+          "local_name": "万项",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.com/xiang-wan/profil/spieler/1281956"
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "中文名极短，检索噪音较高，需要依靠 2009 年生与中国 U 系身份锁定。",
+          "missing_note": "湖北星辉青训学院公开球员页与个人 Wikipedia 条目未检得。"
+        },
+        {
+          "name": "Zijie Huang",
+          "local_name": "黄子杰",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.com/zijie-huang/profil/spieler/1283235"
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "维基检索会混入同名新闻作者，需靠年龄排除。",
+          "missing_note": "学校官网独立球员页与个人 Wikipedia 条目未检得。"
+        },
+        {
+          "name": "Zhaolei Kuang",
+          "local_name": "邝兆镭",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.us/zhaolei-kuang/profil/spieler/1281957"
+          },
+          "official_page": {
+            "status": "verified",
+            "url": "https://www.qhfz.edu.cn/info/1064/13385.htm"
+          },
+          "wikipedia": {
+            "status": "verified",
+            "url": "https://zh.wikipedia.org/wiki/%E9%82%9D%E5%85%86%E9%95%AD"
+          },
+          "ambiguity": "繁简体“鄺/邝”并存，但不存在实质性重名问题。",
+          "missing_note": "已核对到清华附中具名官方文章和个人 Wikipedia 条目。"
+        },
+        {
+          "name": "Youzhe Dai",
+          "local_name": "戴宥哲",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.world/youzhe-dai/profil/spieler/1283233"
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "Dai 姓检索容易混入戴伟浚等其他球员，需要按生日与年龄段排除。",
+          "missing_note": "2024“江苏南京”口径的具名官方球员页和个人 Wikipedia 条目未检得。"
+        },
+        {
+          "name": "Lyu Mengyang",
+          "local_name": "吕孟洋",
+          "transfermarkt": {
+            "status": "missing",
+            "url": ""
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "Transfermarkt 检索会误中 Li Mengyang、Liu Mengyang 等成人条目。",
+          "missing_note": "当前未找到可确认的 Transfermarkt 条目；替代站点仅能作弱校验。"
+        },
+        {
+          "name": "Dongchen Li",
+          "local_name": "李东宸",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.com/dongchen-li/profil/spieler/1283236"
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "早年青少赛 PDF 中可见同名，但按 2010 年出生可与其他记录区分。",
+          "missing_note": "北京口径的具名公开球员页与个人 Wikipedia 条目未检得。"
+        },
+        {
+          "name": "Xiuhao Wang",
+          "local_name": "汪修昊",
+          "transfermarkt": {
+            "status": "verified",
+            "url": "https://www.transfermarkt.com/xiuhao-wang/profil/spieler/1283230"
+          },
+          "official_page": {
+            "status": "missing",
+            "url": ""
+          },
+          "wikipedia": {
+            "status": "missing",
+            "url": ""
+          },
+          "ambiguity": "无明显重名歧义，但存在大量非权威百科镜像页。",
+          "missing_note": "河南洛阳口径的具名公开球员页与个人 Wikipedia 条目未检得。"
+        }
+      ]
+    },
+    "search_disambiguation": {
+      "checked_at": "2026-05-22",
+      "summary": "对《足球小将》franchise 角色库、官方游戏公开角色页与中文权威角色总表的交叉核验显示：作品内不存在任何正式角色名为“董路”；关键词“足球小将 董路”主要是现实人物董路及其“中国足球小将”项目造成的搜索歧义。",
+      "exact_match_count": 0,
+      "conclusion": "本项目中的“董路足球小将”一律指现实世界的青训与比赛平台，不指向《足球小将》漫画、动画或游戏角色。",
+      "search_hygiene": [
+        "检索青训项目时优先使用“中国足球小将”“董路 足球小将 09”“2034杯”等现实项目关键词。",
+        "检索作品角色时单独使用“Captain Tsubasa”“队长小翼”“足球小将 角色列表”等关键词，避免和现实项目混用。",
+        "若结果中出现肖俊光、吴俊仁、王忠明、飞翔或 Tecmo 旧作角色 Lu/ルー，应判定为作品内结果而非本项目数据。 "
+      ],
+      "confusing_entities": [
+        {
+          "label": "现实人物董路",
+          "type": "real-world",
+          "description": "中国足球评论员、青训从业者，中国足球小将项目发起人与主教练。",
+          "why_confusing": "中文检索里，“足球小将 董路”最常回跳到他本人及其现实项目。",
+          "verdict": "与本项目直接相关，但不是《足球小将》作品角色。"
+        },
+        {
+          "label": "Lu / ルー",
+          "type": "fictional-near-match",
+          "description": "Tecmo 旧作里的中国守门员角色，仅有 Lu/ルー 音译，缺少固定汉字与姓氏。",
+          "why_confusing": "发音接近“路”，容易被误脑补为“董路”。",
+          "verdict": "是作品内最近邻，但不能稳定映射到“董路”。"
+        },
+        {
+          "label": "肖俊光、吴俊仁、王忠明、飞翔",
+          "type": "fictional-china-team",
+          "description": "《足球小将》主线里真正可核的中国角色群。",
+          "why_confusing": "用户在中文语境下提到“足球小将里的中国角色”时，常把不确定名字误套到这组角色上。",
+          "verdict": "是作品内中国角色，但与现实项目“董路足球小将”无关。"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "afc-u17-2026",
+    "name": "AFC U17 Asian Cup Saudi Arabia 2026",
+    "short_name": "AFC U17 2026",
+    "focus_level": "primary",
+    "status": "in-progress",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2026-05-05",
+      "end": "2026-05-22"
+    },
+    "focus_teams": ["China PR", "Uzbekistan"],
+    "headline": "当前主跟踪赛事，优先录入中国与乌兹别克斯坦球员。",
+    "notes": [
+      "截至 2026-05-22，中国 U17 已打进决赛，将在 2026-05-22 对阵日本。",
+      "乌兹别克斯坦 U17 在 2026-05-20 半决赛点球负于日本，止步四强。",
+      "当前项目的 U17 种子数据，优先以 2026 年终报名表和近期官方报道为准。"
+    ],
+    "sources": [
+      {
+        "label": "AFC 2026 Final Squad Lists",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "label": "AFC Preview Final: China PR v Japan",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-preview-final-china-pr-v-japan"
+      },
+      {
+        "label": "AFC Japan win shootout to advance to final",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-japan-win-thrilling-shootout-to-advance-to-final"
+      }
+    ]
+  },
+  {
+    "id": "afc-u17-2025",
+    "name": "AFC U17 Asian Cup Saudi Arabia 2025",
+    "short_name": "AFC U17 2025",
+    "focus_level": "reference",
+    "status": "completed",
+    "last_checked": "2026-05-22",
+    "date_range": {
+      "start": "2025-04-03",
+      "end": "2025-04-20"
+    },
+    "focus_teams": ["China PR", "Uzbekistan"],
+    "headline": "上一届参考赛事，用来衔接乌兹别克斯坦 2025 冠军班底与 2026 延续情况。",
+    "notes": [
+      "乌兹别克斯坦在 2025 年夺冠，Sadriddin Khasanov 获评赛事 MVP。",
+      "中国队在 2025 年小组赛出局，但多名球员进入职业青训或后续 U18 体系。"
+    ],
+    "sources": [
+      {
+        "label": "AFC 2025 Squad Lists",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2025_AFC_U17_Asian_Cup/Finals/Downloads/AFC-U17-Asian-Cup-Saudi-Arabia-2025---Squad-Lists.pdf"
+      },
+      {
+        "label": "AFC Uzbekistan MVP report",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/uzbekistan%E2%80%99s-khasanov-takes-most-valuable-player-award"
+      }
+    ]
+  }
+]
