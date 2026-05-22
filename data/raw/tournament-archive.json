@@ -843,13 +843,13 @@
       "start": "2026-05-05",
       "end": "2026-05-22"
     },
-    "status": "ongoing",
-    "champion": "",
-  "runner_up": "",
-  "china_status": "finalist-ongoing",
-  "china_summary": "截至 2026-05-22，中国 U17 已打进决赛并锁定 2026 世少赛资格；已完成 5 场比赛，3 胜 0 平 2 负。",
-  "china_detail_scope": "partial",
-  "china_squad": [
+    "status": "completed",
+    "champion": "Japan",
+    "runner_up": "China PR",
+    "china_status": "runner-up",
+    "china_summary": "中国 U17 时隔 22 年重返亚洲决赛，最终在 2026-05-22 的决赛中半场 0 比 3 落后、下半场追回两球，2 比 3 不敌日本获得亚军，同时锁定 2026 世少赛资格。",
+    "china_detail_scope": "partial",
+    "china_squad": [
     {
       "squad_number": 1,
       "player_id": "cn-qin-ziniu-2009",
@@ -1511,25 +1511,39 @@
         "date": "2026-05-22",
         "stage": "Final",
         "opponent": "Japan",
-        "score_for": null,
-        "score_against": null,
-        "result": "TBD",
-        "note": "按 2026-05-22 当前时间点，决赛尚未开打或结果未写入本地数据。",
-        "china_contributions": []
+        "score_for": 2,
+        "score_against": 3,
+        "result": "L",
+        "note": "按 Futbol24 比赛页回填，决赛在沙特吉达进行，中国队上半场先后被 Tafuku Satomi、Kakeru Saito、Maki Kitahara 破门，半场 0 比 3 落后；下半场第 49 分钟万项追回一球，第 79 分钟赵松源点球再追一球，但最终仍以 2 比 3 惜败日本。",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-wan-xiang-2009",
+            "player": "Wan Xiang",
+            "minute": "49"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-zhao-songyuan-2009",
+            "player": "Zhao Songyuan",
+            "minute": "79",
+            "note": "Penalty"
+          }
+        ]
       }
     ],
     "china_key_players": [
       {
         "player": "Wan Xiang",
-        "goals": 1,
+        "goals": 2,
         "assists": 3,
-        "role_note": "对日本、卡塔尔两战的 3 次助攻均已核对到来自首发身份。"
+        "role_note": "对卡塔尔送出助攻、1/4 决赛对沙特扳平、决赛对日本再追一球，是这届中国队最稳定的前场核心之一。"
       },
       {
         "player": "Zhao Songyuan",
-        "goals": 2,
+        "goals": 3,
         "assists": 0,
-        "role_note": "对日本与沙特两场进球均已核对到来自首发身份。"
+        "role_note": "小组赛对日本、1/4 决赛对沙特和决赛对日本各入一球，决赛第 79 分钟点球把比分追到 2 比 3。"
       },
       {
         "player": "He Sifan",
@@ -1600,6 +1614,10 @@
       {
         "label": "China U17 2-0 Australia U17 detailed recap",
         "url": "https://sports.sina.cn/2026-05-20/detail-inhypnum1728559.d.html?cid=76959&node_id=76959&vt=4"
+      },
+      {
+        "label": "China U17 2-3 Japan U17 final match page",
+        "url": "https://www.futbol24.com/match/2026/05/22/international/AFC/U17-Championship/2026/Final/China-U17/vs/Japan-U17"
       },
       {
         "label": "Indonesia U17 1-0 China U17 lineup and events",
