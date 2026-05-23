@@ -2582,14 +2582,346 @@
     "champion": "",
     "runner_up": "",
     "china_status": "qualified",
-    "china_summary": "截至 2026-05-22，中国 U17 已通过 2026 U17 亚洲杯晋级 2026 世少赛。",
+    "china_summary": "截至 2026-05-23，中国 U17 已通过 2026 U17 亚洲杯晋级 2026 世少赛。",
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
+    "regional_history": {
+      "scope_note": {
+        "zh": "按男足 1985 至 2026 各届 FIFA U-16 World Championship、FIFA U-17 World Championship / World Cup 决赛圈整理；2026 这一行表示已经获得资格、赛事尚未开打。",
+        "en": "Compiled edition by edition across the men's finals from the 1985 FIFA U-16 World Championship through the 2026 FIFA U-17 World Cup; the 2026 row indicates qualification, with the tournament still to be played."
+      },
+      "format_note": {
+        "zh": "这里的“韩国”按 Korea Republic / 韩国统计，不含朝鲜。2025 年起赛事扩军到 48 队并改为年度赛制，因此出现 32 强赛阶段。",
+        "en": "Korea Republic here refers to South Korea only and excludes DPR Korea. From 2025 onward the tournament expanded to 48 teams and switched to an annual format, which introduced a Round of 32 stage."
+      },
+      "headline_takeaways": [
+        {
+          "zh": "日本整体最稳定，2007 年后出勤率明显提高，2025 年再次打进八强。",
+          "en": "Japan have been the most consistent side, qualifying much more regularly after 2007 and reaching the quarter-finals again in 2025."
+        },
+        {
+          "zh": "韩国的峰值同样是八强，2025 年在新赛制下止步 32 强。",
+          "en": "Korea Republic have also peaked at the quarter-finals, then exited in the Round of 32 under the new format in 2025."
+        },
+        {
+          "zh": "中国两次最佳成绩都是八强，分别来自 1985 和 2005；2026 将是自 2005 之后重返世少赛正赛。",
+          "en": "China PR reached the quarter-finals twice, in 1985 and 2005; 2026 will mark their first finals appearance since 2005."
+        }
+      ],
+      "record_legend": {
+        "zh": "记法：阶段（场次 胜-平-负，进:失）；“未晋级”表示未进入正赛。",
+        "en": "Notation: stage (matches W-D-L, goals for:against); 'Did not qualify' means the team did not reach the finals."
+      },
+      "team_summaries": [
+        {
+          "country": "China PR",
+          "appearances": 6,
+          "qualified_edition_count_including_2026": 7,
+          "qualified_for_2026": true,
+          "best_finish": "Quarter-finals",
+          "best_years": ["1985", "2005"]
+        },
+        {
+          "country": "Japan",
+          "appearances": 11,
+          "qualified_edition_count_including_2026": 12,
+          "qualified_for_2026": true,
+          "best_finish": "Quarter-finals",
+          "best_years": ["1993", "2011", "2025"]
+        },
+        {
+          "country": "Korea Republic",
+          "appearances": 8,
+          "qualified_edition_count_including_2026": 9,
+          "qualified_for_2026": true,
+          "best_finish": "Quarter-finals",
+          "best_years": ["1987", "2009", "2019"]
+        }
+      ],
+      "editions": [
+        {
+          "edition": "1985",
+          "host": "China PR",
+          "china_pr": "Quarter-finals",
+          "japan": "Did not qualify",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Quarter-finals", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 8, "goals_against": 7 },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "1987",
+          "host": "Canada",
+          "china_pr": "Did not qualify",
+          "japan": "Did not qualify",
+          "korea_republic": "Quarter-finals",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Quarter-finals", "matches": 4, "wins": 1, "draws": 1, "losses": 2, "goals_for": 5, "goals_against": 6 }
+          }
+        },
+        {
+          "edition": "1989",
+          "host": "Scotland",
+          "china_pr": "Group stage",
+          "japan": "Did not qualify",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 1, "losses": 1, "goals_for": 1, "goals_against": 3 },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "1991",
+          "host": "Italy",
+          "china_pr": "Group stage",
+          "japan": "Did not enter",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 1, "losses": 2, "goals_for": 4, "goals_against": 7 },
+            "japan": { "stage": "Did not enter" },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "1993",
+          "host": "Japan",
+          "china_pr": "Group stage",
+          "japan": "Quarter-finals",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 1, "losses": 2, "goals_for": 2, "goals_against": 5 },
+            "japan": { "stage": "Quarter-finals", "matches": 4, "wins": 1, "draws": 1, "losses": 2, "goals_for": 3, "goals_against": 4 },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "1995",
+          "host": "Ecuador",
+          "china_pr": "Did not qualify",
+          "japan": "Group stage",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 1, "losses": 1, "goals_for": 2, "goals_against": 2 },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "1997",
+          "host": "Egypt",
+          "china_pr": "Did not qualify",
+          "japan": "Did not qualify",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "1999",
+          "host": "New Zealand",
+          "china_pr": "Did not qualify",
+          "japan": "Did not qualify",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "2001",
+          "host": "Trinidad and Tobago",
+          "china_pr": "Did not qualify",
+          "japan": "Group stage",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 2, "goals_against": 9 },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "2003",
+          "host": "Finland",
+          "china_pr": "Group stage",
+          "japan": "Did not qualify",
+          "korea_republic": "Group stage",
+          "team_records": {
+            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 1, "losses": 2, "goals_for": 5, "goals_against": 7 },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 6, "goals_against": 11 }
+          }
+        },
+        {
+          "edition": "2005",
+          "host": "Peru",
+          "china_pr": "Quarter-finals",
+          "japan": "Did not qualify",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Quarter-finals", "matches": 4, "wins": 1, "draws": 2, "losses": 1, "goals_for": 4, "goals_against": 7 },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "2007",
+          "host": "Korea Republic",
+          "china_pr": "Did not qualify",
+          "japan": "Group stage",
+          "korea_republic": "Group stage",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 4, "goals_against": 6 },
+            "korea_republic": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 2, "goals_against": 4 }
+          }
+        },
+        {
+          "edition": "2009",
+          "host": "Nigeria",
+          "china_pr": "Did not qualify",
+          "japan": "Group stage",
+          "korea_republic": "Quarter-finals",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 0, "losses": 3, "goals_for": 5, "goals_against": 9 },
+            "korea_republic": { "stage": "Quarter-finals", "matches": 5, "wins": 2, "draws": 1, "losses": 2, "goals_for": 8, "goals_against": 7 }
+          }
+        },
+        {
+          "edition": "2011",
+          "host": "Mexico",
+          "china_pr": "Did not qualify",
+          "japan": "Quarter-finals",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Quarter-finals", "matches": 5, "wins": 3, "draws": 1, "losses": 1, "goals_for": 13, "goals_against": 5 },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "2013",
+          "host": "United Arab Emirates",
+          "china_pr": "Did not qualify",
+          "japan": "Round of 16",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Round of 16", "matches": 4, "wins": 3, "draws": 0, "losses": 1, "goals_for": 7, "goals_against": 4 },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "2015",
+          "host": "Chile",
+          "china_pr": "Did not qualify",
+          "japan": "Did not qualify",
+          "korea_republic": "Round of 16",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Did not qualify" },
+            "korea_republic": { "stage": "Round of 16", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 2, "goals_against": 2 }
+          }
+        },
+        {
+          "edition": "2017",
+          "host": "India",
+          "china_pr": "Did not qualify",
+          "japan": "Round of 16",
+          "korea_republic": "Did not qualify",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Round of 16", "matches": 4, "wins": 1, "draws": 2, "losses": 1, "goals_for": 8, "goals_against": 4 },
+            "korea_republic": { "stage": "Did not qualify" }
+          }
+        },
+        {
+          "edition": "2019",
+          "host": "Brazil",
+          "china_pr": "Did not qualify",
+          "japan": "Round of 16",
+          "korea_republic": "Quarter-finals",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Round of 16", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 4, "goals_against": 2 },
+            "korea_republic": { "stage": "Quarter-finals", "matches": 5, "wins": 3, "draws": 0, "losses": 2, "goals_for": 6, "goals_against": 6 }
+          }
+        },
+        {
+          "edition": "2023",
+          "host": "Indonesia",
+          "china_pr": "Did not qualify",
+          "japan": "Round of 16",
+          "korea_republic": "Group stage",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Round of 16", "matches": 4, "wins": 2, "draws": 0, "losses": 2, "goals_for": 5, "goals_against": 5 },
+            "korea_republic": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 0, "losses": 3, "goals_for": 2, "goals_against": 6 }
+          }
+        },
+        {
+          "edition": "2025",
+          "host": "Qatar",
+          "china_pr": "Did not qualify",
+          "japan": "Quarter-finals",
+          "korea_republic": "Round of 32",
+          "team_records": {
+            "china_pr": { "stage": "Did not qualify" },
+            "japan": { "stage": "Quarter-finals", "matches": 6, "wins": 3, "draws": 2, "losses": 1, "goals_for": 8, "goals_against": 3 },
+            "korea_republic": { "stage": "Round of 32", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 5, "goals_against": 4 }
+          }
+        },
+        {
+          "edition": "2026",
+          "host": "Qatar",
+          "china_pr": "Qualified",
+          "japan": "Qualified",
+          "korea_republic": "Qualified",
+          "team_records": {
+            "china_pr": { "stage": "Qualified, not yet played", "qualified": true, "played": false },
+            "japan": { "stage": "Qualified, not yet played", "qualified": true, "played": false },
+            "korea_republic": { "stage": "Qualified, not yet played", "qualified": true, "played": false }
+          }
+        }
+      ]
+    },
     "source_links": [
       {
         "label": "FIFA U-17 World Cup Qatar 2026",
         "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026"
+      },
+      {
+        "label": "Draw procedures for the FIFA U-17 World Cup 2026",
+        "url": "https://inside.fifa.com/news/draw-procedures-fifa-u17-world-cup-men-women-2026"
+      },
+      {
+        "label": "2025 FIFA U-17 World Cup",
+        "url": "https://en.wikipedia.org/wiki/2025_FIFA_U-17_World_Cup"
+      },
+      {
+        "label": "FIFA U-17 World Cup overview",
+        "url": "https://en.wikipedia.org/wiki/FIFA_U-17_World_Cup"
+      },
+      {
+        "label": "China national under-17 football team",
+        "url": "https://en.wikipedia.org/wiki/China_national_under-17_football_team"
+      },
+      {
+        "label": "Japan national under-17 football team",
+        "url": "https://en.wikipedia.org/wiki/Japan_national_under-17_football_team"
+      },
+      {
+        "label": "South Korea national under-17 football team",
+        "url": "https://en.wikipedia.org/wiki/South_Korea_national_under-17_football_team"
       }
     ]
   }
