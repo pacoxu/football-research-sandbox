@@ -212,6 +212,14 @@ const UI_COPY = {
     "tournamentDetail.history.table.china": "中国",
     "tournamentDetail.history.table.japan": "日本",
     "tournamentDetail.history.table.korea": "韩国",
+    "tournamentDetail.watch.eyebrow": "Watchlist",
+    "tournamentDetail.watch.title": "日韩 U23 世界杯周期观察",
+    "tournamentDetail.watch.empty": "当前这条赛事还没有补到日韩 U23 观察池。",
+    "tournamentDetail.watch.sampleCount": "U23 池 {count} 人",
+    "tournamentDetail.watch.overseasCount": "当前留洋 {count} 人",
+    "tournamentDetail.watch.allPlayers": "全名单",
+    "tournamentDetail.watch.overseasPlayers": "留洋样本",
+    "tournamentDetail.watch.noOverseas": "当前已建档池里没有留洋样本。",
     "tournamentDetail.squad.eyebrow": "Squad List",
     "tournamentDetail.squad.title": "中国完整名单",
     "tournamentDetail.squad.empty": "当前还没有录入中国完整名单。",
@@ -265,6 +273,8 @@ const UI_COPY = {
     "playerDetail.nameMeta.native": "原文：{value}",
     "playerDetail.nameMeta.en": "英文：{value}",
     "playerDetail.pathway.countryPending": "国家待补",
+    "playerDetail.pathway.youthSetup": "青训梯队",
+    "playerDetail.pathway.youthTeam": "青年队",
     "playerDetail.pathway.empty": "当前样本尚未补到可用的青训路径。",
     "playerDetail.participation.empty": "当前样本还没有赛事参与记录。",
     "playerDetail.participation.statLine": "{appearances} 场 · {goals} 球 · {minutes} 分钟",
@@ -507,6 +517,14 @@ const UI_COPY = {
     "tournamentDetail.history.table.china": "China PR",
     "tournamentDetail.history.table.japan": "Japan",
     "tournamentDetail.history.table.korea": "Korea Republic",
+    "tournamentDetail.watch.eyebrow": "Watchlist",
+    "tournamentDetail.watch.title": "Japan and Korea Republic U23 World Cup-cycle watch",
+    "tournamentDetail.watch.empty": "No Japan/Korea Republic U23 watchlist has been attached to this tournament yet.",
+    "tournamentDetail.watch.sampleCount": "{count} players in the U23 pool",
+    "tournamentDetail.watch.overseasCount": "{count} currently abroad",
+    "tournamentDetail.watch.allPlayers": "Full pool",
+    "tournamentDetail.watch.overseasPlayers": "Overseas players",
+    "tournamentDetail.watch.noOverseas": "No current overseas player is left in this archived pool.",
     "tournamentDetail.squad.eyebrow": "Squad List",
     "tournamentDetail.squad.title": "China full squad",
     "tournamentDetail.squad.empty": "No China full-squad record has been added for this tournament yet.",
@@ -560,6 +578,8 @@ const UI_COPY = {
     "playerDetail.nameMeta.native": "Native: {value}",
     "playerDetail.nameMeta.en": "English: {value}",
     "playerDetail.pathway.countryPending": "Country TBD",
+    "playerDetail.pathway.youthSetup": "Youth setup",
+    "playerDetail.pathway.youthTeam": "Youth team",
     "playerDetail.pathway.empty": "No usable pathway has been added for this sample yet.",
     "playerDetail.participation.empty": "No tournament participation record has been added for this sample yet.",
     "playerDetail.participation.statLine": "{appearances} apps · {goals} goals · {minutes} mins",
@@ -1516,6 +1536,62 @@ function getLatestForeignPathwayStep(pathway, country) {
   return foreignSteps[foreignSteps.length - 1] ?? null;
 }
 
+function inferPathwayTeamBand(step) {
+  const text = [step?.organization ?? "", localizeText(step?.stage_label, "")].join(" ");
+  const uMatch = text.match(/\bU[\s-]?(\d{2})([AB])?\b/i);
+  if (uMatch) {
+    return `U${uMatch[1]}${(uMatch[2] ?? "").toUpperCase()}`;
+  }
+
+  const cadetMatch = text.match(/\bCadet(?:e)?\s*([AB])\b/i);
+  if (cadetMatch) {
+    return `Cadet ${cadetMatch[1].toUpperCase()}`;
+  }
+
+  const juvenilMatch = text.match(/\bJuvenil\s*([AB])\b/i);
+  if (juvenilMatch) {
+    return `Juvenil ${juvenilMatch[1].toUpperCase()}`;
+  }
+
+  if (/青年队/.test(text)) {
+    return t("playerDetail.pathway.youthTeam");
+  }
+
+  if (/青训|youth/i.test(text)) {
+    return t("playerDetail.pathway.youthSetup");
+  }
+
+  return "";
+}
+
+function buildPathwayMetaLabels(step) {
+  const labels = [];
+  const seen = new Set();
+
+  const push = (value) => {
+    const label = typeof value === "string" ? value : localizeText(value, "");
+    if (!label) {
+      return;
+    }
+
+    const key = normalize(label);
+    if (seen.has(key)) {
+      return;
+    }
+
+    seen.add(key);
+    labels.push(label);
+  };
+
+  push(formatCountryName(step?.country ?? t("playerDetail.pathway.countryPending")));
+  push(inferPathwayTeamBand(step));
+  for (const item of step?.pathway_meta ?? []) {
+    push(item);
+  }
+
+  return labels;
+}
+
 function cleanStageLabel(value) {
   return String(localizeText(value) ?? "")
     .replace(/报名归属/g, "赛事报名归属")
@@ -1906,6 +1982,14 @@ function renderPlayerReference(reference, className = "inline-link") {
   return `<a class="${className}" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(label)}</a>`;
 }
 
+function renderPlayerLink(player, className = "inline-link") {
+  if (!player?.id) {
+    return escapeHtml(localizeText(player?.name ?? player?.local_name, t("common.pending")));
+  }
+
+  return `<a class="${className}" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(getPlayerPrimaryName(player))}</a>`;
+}
+
 function renderContributionItem(entry) {
   return `<li>${formatContributionType(entry.type)}: ${renderPlayerReference(entry)}${entry.minute ? ` ${escapeHtml(entry.minute)}'` : ""}${entry.role ? ` · ${formatContributionRole(entry.role)}` : ""}</li>`;
 }
@@ -2102,6 +2186,59 @@ function renderRegionalHistoryTable(history) {
         </tbody>
       </table>
     </div>
+  `;
+}
+
+function isPlayerCurrentlyOverseas(player) {
+  const homeCountry = normalizeCountry(player?.country);
+  const clubCountry = normalizeCountry(player?.registration_club?.country);
+  return Boolean(homeCountry && clubCountry && homeCountry !== clubCountry);
+}
+
+function getRegionalWatchGroupPlayers(group, regionalWatch) {
+  const tag = group?.tag ?? regionalWatch?.tag ?? "";
+  return state.enrichedPlayers.filter((player) => {
+    if (player.country !== group.country) {
+      return false;
+    }
+    if (tag && !(player.focus_tags ?? []).includes(tag)) {
+      return false;
+    }
+    return true;
+  });
+}
+
+function renderRegionalWatchGroupCard(group, regionalWatch) {
+  const players = getRegionalWatchGroupPlayers(group, regionalWatch);
+  const overseasPlayers = players.filter(isPlayerCurrentlyOverseas);
+  const playerLine = players.map((player) => renderPlayerLink(player)).join("、");
+
+  return `
+    <article class="stack-card">
+      <h3>${escapeHtml(formatCountryName(group.country))}</h3>
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t("tournamentDetail.watch.sampleCount", { count: players.length }))}</span>
+        <span class="chip">${escapeHtml(t("tournamentDetail.watch.overseasCount", { count: overseasPlayers.length }))}</span>
+      </div>
+      ${group.note ? `<p class="small-note">${escapeHtml(localizeText(group.note))}</p>` : ""}
+      <p class="timeline-label">${escapeHtml(t("tournamentDetail.watch.allPlayers"))}</p>
+      <p>${playerLine || escapeHtml(t("common.pending"))}</p>
+      <p class="timeline-label">${escapeHtml(t("tournamentDetail.watch.overseasPlayers"))}</p>
+      ${
+        overseasPlayers.length > 0
+          ? `
+            <ul class="mini-bullet-list">
+              ${overseasPlayers
+                .map(
+                  (player) =>
+                    `<li>${renderPlayerLink(player)} · ${escapeHtml(formatClubName(player.registration_club?.name ?? t("common.pending")))} · ${escapeHtml(formatCountryName(player.registration_club?.country ?? t("common.pending")))}</li>`
+                )
+                .join("")}
+            </ul>
+          `
+          : `<p class="small-note">${escapeHtml(t("tournamentDetail.watch.noOverseas"))}</p>`
+      }
+    </article>
   `;
 }
 
@@ -3243,14 +3380,25 @@ function renderPlayerDetailPage() {
     (player.training_pathway ?? []).length > 0
       ? player.training_pathway
           .map(
-            (step) => `
+            (step) => {
+              const metaLabels = buildPathwayMetaLabels(step);
+              return `
               <article class="timeline-item">
                 <p class="timeline-label">${escapeHtml(localizeText(step.stage_label))}</p>
                 <h3>${escapeHtml(formatClubName(step.organization))}</h3>
-                <p>${escapeHtml(formatCountryName(step.country ?? t("playerDetail.pathway.countryPending")))}</p>
+                ${
+                  metaLabels.length > 0
+                    ? `
+                      <div class="chip-row pathway-meta-row">
+                        ${metaLabels.map((label) => `<span class="chip muted-chip">${escapeHtml(label)}</span>`).join("")}
+                      </div>
+                    `
+                    : ""
+                }
                 ${step.note ? `<p class="small-note">${escapeHtml(localizeText(step.note))}</p>` : ""}
               </article>
-            `
+            `;
+            }
           )
           .join("")
       : `<div class="empty-inline">${escapeHtml(t("playerDetail.pathway.empty"))}</div>`;
@@ -3322,6 +3470,9 @@ function renderTournamentDetailPage() {
   const regionalHistoryScope = document.querySelector("#tournamentDetailRegionalHistoryScope");
   const regionalHistorySummary = document.querySelector("#tournamentDetailRegionalHistorySummary");
   const regionalHistoryTable = document.querySelector("#tournamentDetailRegionalHistoryTable");
+  const regionalWatchSection = document.querySelector("#tournamentDetailRegionalWatchSection");
+  const regionalWatchScope = document.querySelector("#tournamentDetailRegionalWatchScope");
+  const regionalWatchGrid = document.querySelector("#tournamentDetailRegionalWatchGrid");
   const squad = document.querySelector("#tournamentDetailSquad");
   const matches = document.querySelector("#tournamentDetailMatches");
   const keyPlayers = document.querySelector("#tournamentDetailKeyPlayers");
@@ -3461,6 +3612,19 @@ function renderTournamentDetailPage() {
     regionalHistoryScope.textContent = "";
     regionalHistorySummary.innerHTML = "";
     regionalHistoryTable.innerHTML = "";
+  }
+
+  const regionalWatch = archiveTournament?.regional_watch;
+  regionalWatchSection.hidden = !regionalWatch;
+  if (regionalWatch) {
+    regionalWatchScope.textContent = localizeText(regionalWatch.scope_note, t("common.pending"));
+    regionalWatchGrid.innerHTML =
+      (regionalWatch.team_groups ?? []).length > 0
+        ? regionalWatch.team_groups.map((group) => renderRegionalWatchGroupCard(group, regionalWatch)).join("")
+        : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.watch.empty"))}</div>`;
+  } else {
+    regionalWatchScope.textContent = "";
+    regionalWatchGrid.innerHTML = "";
   }
 
   const displayMatches = getDisplayChinaMatches(archiveTournament?.china_matches);

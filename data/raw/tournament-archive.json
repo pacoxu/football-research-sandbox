@@ -2440,10 +2440,33 @@
     "champion": "",
     "runner_up": "",
     "china_status": "did-not-qualify",
-    "china_summary": "截至 2026-05-22，中国队已无缘 2026 世界杯决赛圈。",
+    "china_summary": "截至 2026-05-23，中国队已无缘 2026 世界杯决赛圈。",
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
+    "regional_watch": {
+      "scope_note": {
+        "zh": "这不是 2026 世界杯最终名单，而是按截至 2026-05-23 站内已建档、仍处 U23 年龄段的日韩样本整理；底池以 AFC U23 2026 终报名名单为主，再按当前注册俱乐部单独标出仍在海外踢球的样本。",
+        "en": "This is not a projected final 2026 FIFA World Cup squad. It is a watchlist built from the site's currently archived Japan and Korea Republic players who are still U23-aged as of 2026-05-23, anchored first by the AFC U23 2026 final registrations and then split by current club location to highlight who is still playing abroad."
+      },
+      "tag": "asia-u23-2026",
+      "team_groups": [
+        {
+          "country": "Japan",
+          "note": {
+            "zh": "日本这组以 2026 U23 亚洲杯冠军班底为底。此前在比利时 SK Beveren 的道胁丰，已于 2026 年 1 月完成回归福冈，因此当前这批已建档 U23 样本里没有持续留洋球员。",
+            "en": "Japan's pool is built around the 2026 AFC U23 champions. Yutaka Michiwaki, who had been with SK Beveren in Belgium, returned to Avispa Fukuoka in January 2026, so there is currently no active overseas player inside this archived Japanese U23 pool."
+          }
+        },
+        {
+          "country": "Korea Republic",
+          "note": {
+            "zh": "韩国这组以 2026 U23 亚洲杯第四名班底为底。当前留洋样本主要是葡萄牙的金容学，以及在日本 J 联赛注册的金泰元。",
+            "en": "Korea Republic's pool is built around the squad that finished fourth at the 2026 AFC U23 Asian Cup. The active overseas subset currently centres on Kim Yonghak in Portugal and Kim Taewon, who is registered in Japan."
+          }
+        }
+      ]
+    },
     "source_links": [
       {
         "label": "FIFA World Cup 2026 schedule",
@@ -2452,6 +2475,22 @@
       {
         "label": "Asian qualifying results",
         "url": "https://www.fifa.com/en/articles/asian-qualifying-results-and-fixtures-for-world-cup-26"
+      },
+      {
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "label": "Avispa Fukuoka official profile: Yutaka Michiwaki",
+        "url": "https://www.avispa.co.jp/club-info-3/fw27_michiwaki_2026"
+      },
+      {
+        "label": "J.League profile: Kim Taewon at Kataller Toyama",
+        "url": "https://www.jleague.jp/player/1651218/"
+      },
+      {
+        "label": "Portimonense official profile: Kim Yonghak",
+        "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312"
       }
     ]
   },

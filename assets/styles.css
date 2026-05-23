@@ -846,6 +846,16 @@ tbody tr:last-child td {
   margin-left: 26px;
 }
 
+.pathway-meta-row {
+  margin: 10px 0 4px;
+}
+
+.pathway-meta-row .chip {
+  min-height: 24px;
+  padding: 0 9px;
+  font-size: 0.72rem;
+}
+
 .timeline-item::before {
   content: "";
   position: absolute;

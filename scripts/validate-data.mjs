@@ -232,6 +232,17 @@ export async function validateData() {
       `Invalid registration_club for ${player.id}`
     );
     assert(player.training_pathway.length > 0, `Empty training_pathway for ${player.id}`);
+    for (const step of player.training_pathway) {
+      assert(
+        typeof step.stage_label === "string" &&
+          typeof step.organization === "string" &&
+          typeof step.country === "string",
+        `Invalid training_pathway step on ${player.id}`
+      );
+      if (step.pathway_meta !== undefined) {
+        assert(Array.isArray(step.pathway_meta), `Invalid pathway_meta on ${player.id}`);
+      }
+    }
     assert(player.external_links.length > 0, `Empty external_links for ${player.id}`);
     assert(
       player.external_links.every((link) => /^https?:\/\//.test(link.url)),

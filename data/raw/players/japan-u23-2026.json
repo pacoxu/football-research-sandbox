@@ -1108,8 +1108,8 @@
     "height_cm": 191,
     "weight_kg": 78,
     "registration_club": {
-      "name": "SK Beveren",
-      "country": "Belgium"
+      "name": "Avispa Fukuoka",
+      "country": "Japan"
     },
     "training_pathway": [
       {
@@ -1117,11 +1117,18 @@
         "organization": "SK Beveren",
         "country": "Belgium",
         "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+      },
+      {
+        "stage_label": "2026 J1 当前注册节点",
+        "organization": "Avispa Fukuoka",
+        "country": "Japan",
+        "note": "Avispa Fukuoka 2026 赛季官方球员页与 J.League 当前球员页，都已将其列为福冈现役前锋；SK Beveren 也在 2026-01-11 公告确认其离队。"
       }
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "japan-youth"
+      "japan-youth",
+      "professional-system"
     ],
     "tournament_participation": [
       {
@@ -1138,6 +1145,21 @@
     "external_links": [
       {
         "type": "official",
+        "label": "Avispa Fukuoka official profile",
+        "url": "https://www.avispa.co.jp/club-info-3/fw27_michiwaki_2026"
+      },
+      {
+        "type": "official",
+        "label": "J.League profile",
+        "url": "https://www.jleague.jp/player/1650064/"
+      },
+      {
+        "type": "official",
+        "label": "SK Beveren departure announcement",
+        "url": "https://www.skbeveren.be/2026/01/yutaka-michiwaki-verlaat-de-freethiel/"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -1149,8 +1171,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
+      "last_checked": "2026-05-23",
+      "notes": "AFC 于 2025-12-30 发布的 final registration 可核其在 U23 亚洲杯时仍属 SK Beveren；但 Avispa Fukuoka 官方 2026 球员页、J.League 当前球员页和 SK Beveren 2026-01-11 离队公告，都说明他已在 2026 年 1 月回到日本职业体系，因此当前不再计作留洋样本。"
     }
   },
   {

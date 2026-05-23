@@ -1231,12 +1231,32 @@
         "stage_label": "西班牙出生 / 西班牙人青训",
         "organization": "RCD Espanyol youth",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "西甲俱乐部青训",
+            "en": "La Liga club academy"
+          }
+        ],
         "note": "公开球员资料将其出生地登记为西班牙巴塞罗那，并长期放在西班牙人青训成长线中。"
       },
       {
         "stage_label": "2024 奥斯皮塔莱特节点",
         "organization": "CE L'Hospitalet",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "Tercera Federación",
+            "en": "Tercera Federacion"
+          },
+          {
+            "zh": "西班牙第5级",
+            "en": "Spain tier 5"
+          },
+          {
+            "zh": "成人队",
+            "en": "Senior team"
+          }
+        ],
         "note": "中国足协 2025 U20 亚洲杯集训通知仍将其所属写为西班牙奥斯皮塔莱特足球俱乐部，说明他在回国前处于该队注册 / 效力阶段。"
       },
       {
@@ -3843,24 +3863,60 @@
         "stage_label": "2023 达姆节点",
         "organization": "Damm CF",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "巴塞罗那地区青训强队",
+            "en": "Barcelona-area youth powerhouse"
+          }
+        ],
         "note": "2023 年赴西班牙后进入达姆体系；2025 年 3 月、5 月中国足协 U16 集训通知仍将其所属单位记为达姆足球俱乐部。"
       },
       {
         "stage_label": "2023-2024 奥斯皮塔莱特青年队",
         "organization": "CE L'Hospitalet",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "西班牙青年梯队",
+            "en": "Spanish youth squad"
+          }
+        ],
         "note": "公开报道提到其曾在奥斯皮塔莱特青年队注册、参赛，属于其西班牙青训经历中的过渡阶段。"
       },
       {
         "stage_label": "2024-2025 达姆 U16A",
         "organization": "Damm CF U16A",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "Divisió d'Honor Cadet",
+            "en": "Divisio d'Honor Cadet"
+          },
+          {
+            "zh": "加泰U16最高组",
+            "en": "Top Catalan U16 division"
+          }
+        ],
         "note": "2024 年 10 月代表达姆 U16A 在加泰 U16 荣誉联赛对赫罗纳 U16A 取得进球。"
       },
       {
         "stage_label": "2025 莱里达竞技节点",
         "organization": "CE Atlètic Lleida",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "Segunda Federación",
+            "en": "Segunda Federacion"
+          },
+          {
+            "zh": "西班牙第4级",
+            "en": "Spain tier 4"
+          },
+          {
+            "zh": "成人队",
+            "en": "Senior team"
+          }
+        ],
         "note": "2025-07-28 加盟西协乙莱里达竞技，公开报道合同写至 2027 年；当前更稳妥的口径是已完成签约与随队训练，成年正式联赛出场仍待继续回填。"
       },
       {
@@ -5490,18 +5546,44 @@
         "stage_label": "2023/24 西班牙留洋节点",
         "organization": "L'Hospitalet, Centre Esports Cadet B",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "加泰青训联赛",
+            "en": "Catalan youth league"
+          }
+        ],
         "note": "FutbolBase 履历页显示其在 2023/24 赛季注册于 L'Hospitalet, Centre Esports Cadet B，出战 8 场并打入 1 球；这可作为其西班牙注册路径的首个可核节点。"
       },
       {
         "stage_label": "2024/25 科尔内利亚节点",
         "organization": "Cornella, U.E. SAD Cadet A",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "Divisió d'Honor Cadet",
+            "en": "Divisio d'Honor Cadet"
+          },
+          {
+            "zh": "加泰U16最高组",
+            "en": "Top Catalan U16 division"
+          }
+        ],
         "note": "FutbolBase 履历页显示其在 2024/25 赛季注册于 Cornella, U.E. SAD Cadet A，Divisio d'Honor 级别共 6 场 0 球。"
       },
       {
         "stage_label": "2025/26 欧罗巴注册节点",
         "organization": "Europa, C.E. Juvenil B",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "Preferent Juvenils Grup 2",
+            "en": "Preferent Juvenils Group 2"
+          },
+          {
+            "zh": "加泰U19次高级别组",
+            "en": "Upper regional U19 division in Catalonia"
+          }
+        ],
         "note": "FutbolBase 统计其在 2025/26 Preferent Juvenils Grup 2 为 Europa, C.E. Juvenil B 出战 29 场、打入 6 球；FCF 球员页同期显示 28 次 Convocat、16 次 Titular、12 次 Suplent、6 球且无红黄牌记录。"
       }
     ],
@@ -6099,6 +6181,12 @@
         "stage_label": "2024/02 奥斯皮塔莱特U14A首秀",
         "organization": "CE L'Hospitalet U14A",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "加泰青训联赛",
+            "en": "Catalan youth league"
+          }
+        ],
         "note": "澎湃号报道写到他在奥斯皮塔莱特 U14A 替补登场，完成公开可检的旅西首秀，这是目前较早、较清晰的西班牙比赛节点。"
       },
       {
@@ -6117,6 +6205,16 @@
         "stage_label": "2025/26 圣库加特U16A节点",
         "organization": "Sant Cugat FC U16A",
         "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "Divisió d'Honor Cadet",
+            "en": "Divisio d'Honor Cadet"
+          },
+          {
+            "zh": "加泰U16最高组",
+            "en": "Top Catalan U16 division"
+          }
+        ],
         "note": "2025/26 赛季公开总结口径显示其已进入圣库加特 U16A，在加泰罗尼亚 U16 荣誉联赛阶段有 27 次进入大名单、20 次首发、2 球，说明其已经从欧罗巴阶段转入圣库加特比赛环境。"
       },
       {
@@ -8209,8 +8307,8 @@
     "height_cm": 191,
     "weight_kg": 78,
     "registration_club": {
-      "name": "SK Beveren",
-      "country": "Belgium"
+      "name": "Avispa Fukuoka",
+      "country": "Japan"
     },
     "training_pathway": [
       {
@@ -8218,11 +8316,18 @@
         "organization": "SK Beveren",
         "country": "Belgium",
         "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+      },
+      {
+        "stage_label": "2026 J1 当前注册节点",
+        "organization": "Avispa Fukuoka",
+        "country": "Japan",
+        "note": "Avispa Fukuoka 2026 赛季官方球员页与 J.League 当前球员页，都已将其列为福冈现役前锋；SK Beveren 也在 2026-01-11 公告确认其离队。"
       }
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "japan-youth"
+      "japan-youth",
+      "professional-system"
     ],
     "tournament_participation": [
       {
@@ -8239,6 +8344,21 @@
     "external_links": [
       {
         "type": "official",
+        "label": "Avispa Fukuoka official profile",
+        "url": "https://www.avispa.co.jp/club-info-3/fw27_michiwaki_2026"
+      },
+      {
+        "type": "official",
+        "label": "J.League profile",
+        "url": "https://www.jleague.jp/player/1650064/"
+      },
+      {
+        "type": "official",
+        "label": "SK Beveren departure announcement",
+        "url": "https://www.skbeveren.be/2026/01/yutaka-michiwaki-verlaat-de-freethiel/"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -8250,8 +8370,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
+      "last_checked": "2026-05-23",
+      "notes": "AFC 于 2025-12-30 发布的 final registration 可核其在 U23 亚洲杯时仍属 SK Beveren；但 Avispa Fukuoka 官方 2026 球员页、J.League 当前球员页和 SK Beveren 2026-01-11 离队公告，都说明他已在 2026 年 1 月回到日本职业体系，因此当前不再计作留洋样本。"
     },
     "names": {
       "zh": "Yutaka Michiwaki",
@@ -10769,7 +10889,9 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "korea-youth"
+      "korea-youth",
+      "professional-system",
+      "u23-overseas"
     ],
     "tournament_participation": [
       {
@@ -10786,6 +10908,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "Portimonense official profile",
+        "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -10797,8 +10924,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
+      "last_checked": "2026-05-23",
+      "notes": "AFC 于 2025-12-30 发布的 final registration 可核其 U23 报名身份；Portimonense 官方 2025/26 一线队球员页仍将其列在队内，因此当前继续按葡萄牙职业体系中的韩国 U23 留洋样本处理。"
     },
     "names": {
       "zh": "Moon Hyunho",
@@ -10832,7 +10959,9 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "korea-youth"
+      "korea-youth",
+      "professional-system",
+      "u23-overseas"
     ],
     "tournament_participation": [
       {
@@ -10849,6 +10978,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "Portimonense official profile",
+        "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -10860,8 +10994,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
+      "last_checked": "2026-05-23",
+      "notes": "AFC 于 2025-12-30 发布的 final registration 可核其 U23 报名身份；Portimonense 官方 2025/26 一线队球员页仍将其列在队内，因此当前继续按葡萄牙职业体系中的韩国 U23 留洋样本处理。"
     },
     "names": {
       "zh": "Kim Yonghak",
@@ -11541,7 +11675,8 @@
       "korea-youth",
       "u21-watch",
       "professional-system",
-      "overseas-asia"
+      "overseas-asia",
+      "u23-overseas"
     ],
     "tournament_participation": [
       {
@@ -11584,8 +11719,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "当前富山注册与基础资料来自 J.League 官方球员页与转会公告；AFC 报名表继续保留其 U23 韩国队背景。"
+      "last_checked": "2026-05-23",
+      "notes": "当前富山注册与基础资料来自 J.League 官方球员页与转会公告；AFC 报名表继续保留其 U23 韩国队背景。按韩国球员视角，这条记录仍属于在日本职业联赛效力的亚洲留洋样本。"
     },
     "names": {
       "zh": "金泰元",
