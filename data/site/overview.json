@@ -23,7 +23,7 @@
         "Korea Republic",
         "Uzbekistan"
       ],
-      "headline": "中国队闯入决赛后 2 比 3 负于日本获亚军，本站已同步补到最终赛果。",
+      "headline": "中国队闯入决赛后 2 比 3 负于日本获亚军，本站已同步补到最终赛果与决赛统计。",
       "notes": [
         "2026-05-22 决赛，中国 U17 半场 0 比 3 落后，下半场由万项和赵松源追到 2 比 3，最终不敌日本获得亚军。",
         "日本在 2026-05-22 决赛 3 比 2 击败中国队，拿到这一年龄层的又一座亚洲冠军。",
@@ -9573,13 +9573,13 @@
           "score_for": 2,
           "score_against": 3,
           "result": "L",
-          "note": "按多方比赛页与赛后报道回填，决赛在沙特吉达进行，中国队上半场先后被 Tafuku Satomi、Kakeru Saito、Maki Kitahara 破门，半场 0 比 3 落后；下半场第 49 分钟万项追回一球，第 79 分钟赵松源点球再追一球，但最终仍以 2 比 3 惜败日本。",
+          "note": "按多方比赛页与赛后报道回填，决赛在沙特吉达进行，中国队上半场先后被 Tafuku Satomi、Kakeru Saito、Maki Kitahara 破门，半场 0 比 3 落后；下半场第 48 分钟万项追回一球，第 79 分钟赵松源点球再追一球，但最终仍以 2 比 3 惜败日本。",
           "china_contributions": [
             {
               "type": "goal",
               "player_id": "cn-wan-xiang-2009",
               "player": "Wan Xiang",
-              "minute": "49"
+              "minute": "48"
             },
             {
               "type": "goal",
@@ -9587,6 +9587,48 @@
               "player": "Zhao Songyuan",
               "minute": "79",
               "note": "Penalty"
+            }
+          ],
+          "match_stats": [
+            {
+              "key": "expected_goals",
+              "china": "1.39",
+              "opponent": "1.13"
+            },
+            {
+              "key": "possession",
+              "china": "43%",
+              "opponent": "57%"
+            },
+            {
+              "key": "big_chances",
+              "china": 2,
+              "opponent": 1
+            },
+            {
+              "key": "total_shots",
+              "china": 4,
+              "opponent": 13
+            },
+            {
+              "key": "shots_on_target",
+              "china": 3,
+              "opponent": 7
+            },
+            {
+              "key": "shots_off_target",
+              "china": 0,
+              "opponent": 4
+            },
+            {
+              "key": "shots_inside_box",
+              "china": 4,
+              "opponent": 9
+            },
+            {
+              "key": "shots_outside_box",
+              "china": 0,
+              "opponent": 4
             }
           ],
           "china_lineup": {
@@ -9787,6 +9829,10 @@
         {
           "label": "China U17 2-3 Japan U17 final match page",
           "url": "https://www.futbol24.com/match/2026/05/22/international/AFC/U17-Championship/2026/Final/China-U17/vs/Japan-U17"
+        },
+        {
+          "label": "China U17 2-3 Japan U17 stats snapshot",
+          "url": "https://azscore.com/football/game/china-japan-2026-05-22"
         },
         {
           "label": "Wikipedia 2026 AFC U-17 Asian Cup",

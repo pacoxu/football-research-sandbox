@@ -490,6 +490,69 @@ td {
   flex-direction: column;
 }
 
+.market-ranking-grid {
+  margin-bottom: 24px;
+}
+
+.market-ranking-list {
+  display: grid;
+  gap: 12px;
+}
+
+.market-ranking-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.market-ranking-row:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.market-ranking-rank {
+  min-width: 2.4rem;
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.market-ranking-body {
+  min-width: 0;
+}
+
+.market-ranking-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.market-ranking-link:hover {
+  text-decoration: underline;
+}
+
+.market-ranking-value {
+  display: grid;
+  gap: 2px;
+  justify-items: end;
+  text-align: right;
+}
+
+.market-ranking-value strong {
+  font-size: 1.08rem;
+}
+
+.market-ranking-note {
+  margin-top: 14px;
+}
+
 .player-card-compact {
   min-height: 0;
 }
@@ -794,6 +857,48 @@ tbody tr:last-child td {
   overflow: hidden;
 }
 
+.archive-match-stats {
+  margin-top: 12px;
+  padding: 12px 14px 14px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.42);
+}
+
+.archive-match-stats-grid {
+  margin-top: 8px;
+}
+
+.archive-match-stat-row {
+  display: grid;
+  grid-template-columns: minmax(52px, auto) 1fr minmax(52px, auto);
+  gap: 12px;
+  align-items: center;
+  padding: 8px 0;
+  border-top: 1px solid var(--line);
+}
+
+.archive-match-stat-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.archive-match-stat-label {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.archive-match-stat-value {
+  font-family: "Avenir Next Condensed", "DIN Alternate", "Franklin Gothic Medium",
+    "Arial Narrow", sans-serif;
+  font-size: 1rem;
+}
+
+.archive-match-stat-value-opponent {
+  text-align: right;
+}
+
 .archive-lineup-toggle summary {
   cursor: pointer;
   padding: 10px 14px;
@@ -1072,6 +1177,16 @@ tbody tr:last-child td {
   .summary-row {
     grid-template-columns: 1fr;
     justify-items: start;
+  }
+
+  .market-ranking-row {
+    grid-template-columns: 1fr;
+  }
+
+  .market-ranking-rank,
+  .market-ranking-value {
+    justify-items: start;
+    text-align: left;
   }
 
   .topic-card-grid,
