@@ -140,11 +140,22 @@ const UI_COPY = {
     "home.overseasCard.league": "赛事或联赛：{value}",
     "players.hero.eyebrow": "Player Directory",
     "players.hero.title": "球员列表",
-    "players.hero.text": "这里是总入口。支持按国籍、年龄段、当前联赛或体系、专题标签过滤，并在卡片视图和列表视图之间切换。",
+    "players.hero.text": "这里是总入口。支持按国籍、年龄段、当前联赛或体系、专题标签过滤，并在卡片视图和列表视图之间切换，也会同步显示 Transfermarkt 当前身价与历史峰值排行。",
     "players.view.eyebrow": "View Modes",
     "players.view.aria": "视图切换",
     "players.view.cards": "卡片",
     "players.view.table": "列表",
+    "players.rankings.eyebrow": "Transfermarkt",
+    "players.rankings.currentTitle": "当前身价排行",
+    "players.rankings.peakTitle": "历史峰值排行",
+    "players.rankings.note": "仅统计已关联 Transfermarkt 个人页且已有估值的球员；排行会跟随当前筛选更新。",
+    "players.rankings.coverageCurrent": "当前筛选已补当前身价 {count} / {total} 人",
+    "players.rankings.coveragePeak": "当前筛选已补历史峰值 {count} / {total} 人",
+    "players.rankings.currentEmpty": "当前筛选下还没有可用的当前身价数据。",
+    "players.rankings.peakEmpty": "当前筛选下还没有可用的历史峰值数据。",
+    "players.rankings.currentMeta": "峰值 {value} · {date}",
+    "players.rankings.peakMeta": "当前 {value} · 达峰于 {date}",
+    "players.rankings.peakMetaNoCurrent": "达峰于 {date}",
     "players.filters.search": "搜索",
     "players.filters.searchPlaceholder": "中文名、原文名、英文名、俱乐部、标签",
     "players.filters.country": "国籍",
@@ -168,6 +179,9 @@ const UI_COPY = {
     "players.meta.results": "当前命中 {count} / {total} 名球员",
     "players.card.positionPending": "位置待补",
     "players.card.clubPending": "当前球队待补",
+    "players.card.marketValueBoth": "当前身价 {current} · 峰值 {peak}",
+    "players.card.marketValueCurrentOnly": "当前身价 {current}",
+    "players.card.marketValuePeakOnly": "历史峰值 {peak}",
     "players.card.viewProfile": "查看球员档案",
     "players.card.details": "查看",
     "playerDetail.breadcrumb.list": "球员列表",
@@ -235,9 +249,10 @@ const UI_COPY = {
     "playerDetail.notFound.text": "当前链接里的球员 id 不存在，或者该样本还没有进入建档库。",
     "playerDetail.notFound.back": "返回球员列表",
     "playerDetail.marketValue.eyebrow": "Market Value",
+    "playerDetail.marketValue.title": "Transfermarkt 身价",
     "playerDetail.marketValue.withLink": "Transfermarkt 外链已关联",
     "playerDetail.marketValue.withoutLink": "暂无稳定身价来源",
-    "playerDetail.marketValue.note": "身价字段暂不参与球员排序，待外部数据稳定后补全。",
+    "playerDetail.marketValue.note": "身价参考 Transfermarkt；球员页区分当前值与历史峰值，列表页同步提供排行。",
     "playerDetail.hero.summary": "{country} · {birthYear} 年生 · {position}。现属 {club}。",
     "playerDetail.actions.links": "查看外部资料",
     "playerDetail.actions.competition": "查看赛事记录",
@@ -246,9 +261,11 @@ const UI_COPY = {
     "playerDetail.status.currentTeam": "当前球队",
     "playerDetail.status.transfermarkt": "Transfermarkt",
     "playerDetail.status.transfermarktLinked": "已关联",
+    "playerDetail.status.transfermarktRosterOnly": "仅队页 / 名单页",
     "playerDetail.status.transfermarktMissing": "未关联",
-    "playerDetail.status.marketValue": "身价数据",
-    "playerDetail.status.marketValuePending": "待补充",
+    "playerDetail.status.marketValueCurrent": "当前身价",
+    "playerDetail.status.marketValuePeak": "历史峰值",
+    "playerDetail.status.marketValueUnavailable": "暂无数值",
     "playerDetail.status.marketValueMissing": "暂无稳定来源",
     "playerDetail.status.externalLinks": "外部链接",
     "playerDetail.status.recentContributions": "最近贡献",
@@ -269,6 +286,11 @@ const UI_COPY = {
     "playerDetail.stats.parentClub": "俱乐部",
     "playerDetail.stats.currentSquad": "梯队",
     "playerDetail.stats.currentLeague": "参赛体系",
+    "playerDetail.stats.transfermarktStatus": "Transfermarkt 状态",
+    "playerDetail.stats.marketValueCurrent": "当前身价",
+    "playerDetail.stats.marketValuePeak": "历史峰值",
+    "playerDetail.stats.marketValueCurrentDate": "当前值更新",
+    "playerDetail.stats.marketValuePeakDate": "峰值日期",
     "playerDetail.nameMeta.zh": "中文：{value}",
     "playerDetail.nameMeta.native": "原文：{value}",
     "playerDetail.nameMeta.en": "英文：{value}",
@@ -302,6 +324,7 @@ const UI_COPY = {
     "tournaments.archive.noChinaMatches": "中国队在该赛事无已录入比赛，或未参赛。",
     "tournaments.archive.chinaSummary": "中国战绩：{summary}",
     "tournaments.archive.chinaStage": "中国阶段：{stage}",
+    "tournaments.archive.matchStatsTitle": "比赛统计",
     "tournaments.archive.lineupToggle": "中国阵容{formation}",
     "tournaments.archive.lineupTitle": "中国首发{formation}",
     "tournaments.archive.benchTitle": "中国替补名单",
@@ -445,11 +468,22 @@ const UI_COPY = {
     "home.overseasCard.league": "League: {value}",
     "players.hero.eyebrow": "Player Directory",
     "players.hero.title": "Player directory",
-    "players.hero.text": "This is the main entry point. Filter by nationality, age band, current league system, and topical tags, and switch between card view and table view.",
+    "players.hero.text": "This is the main entry point. Filter by nationality, age band, current league system, and topical tags, switch between card and table view, and keep a live view of current and peak Transfermarkt rankings.",
     "players.view.eyebrow": "View Modes",
     "players.view.aria": "View switch",
     "players.view.cards": "Cards",
     "players.view.table": "Table",
+    "players.rankings.eyebrow": "Transfermarkt",
+    "players.rankings.currentTitle": "Current market value ranking",
+    "players.rankings.peakTitle": "Peak market value ranking",
+    "players.rankings.note": "Only players with a linked Transfermarkt player page and a listed valuation are counted. Rankings follow the current filters.",
+    "players.rankings.coverageCurrent": "{count} / {total} filtered players with a current market value",
+    "players.rankings.coveragePeak": "{count} / {total} filtered players with a peak market value",
+    "players.rankings.currentEmpty": "No current market value is available in this filter yet.",
+    "players.rankings.peakEmpty": "No peak market value is available in this filter yet.",
+    "players.rankings.currentMeta": "Peak {value} · {date}",
+    "players.rankings.peakMeta": "Current {value} · peaked on {date}",
+    "players.rankings.peakMetaNoCurrent": "Peaked on {date}",
     "players.filters.search": "Search",
     "players.filters.searchPlaceholder": "Chinese name, native name, English name, club, tag",
     "players.filters.country": "Country",
@@ -473,6 +507,9 @@ const UI_COPY = {
     "players.meta.results": "{count} / {total} players in this filter",
     "players.card.positionPending": "Position TBD",
     "players.card.clubPending": "Club TBD",
+    "players.card.marketValueBoth": "Current {current} · Peak {peak}",
+    "players.card.marketValueCurrentOnly": "Current {current}",
+    "players.card.marketValuePeakOnly": "Peak {peak}",
     "players.card.viewProfile": "View player file",
     "players.card.details": "View",
     "playerDetail.breadcrumb.list": "Players",
@@ -540,9 +577,10 @@ const UI_COPY = {
     "playerDetail.notFound.text": "The player id in this URL does not exist, or the sample has not entered the dataset yet.",
     "playerDetail.notFound.back": "Back to players",
     "playerDetail.marketValue.eyebrow": "Market Value",
+    "playerDetail.marketValue.title": "Transfermarkt values",
     "playerDetail.marketValue.withLink": "Transfermarkt linked",
     "playerDetail.marketValue.withoutLink": "No stable market value source yet",
-    "playerDetail.marketValue.note": "Market value is not used for sorting yet. The field will be filled once the external data is stable.",
+    "playerDetail.marketValue.note": "Values follow Transfermarkt. The player page separates current and peak value, and the list page shows rankings for both.",
     "playerDetail.hero.summary": "{country} · born {birthYear} · {position}. Currently with {club}.",
     "playerDetail.actions.links": "View external sources",
     "playerDetail.actions.competition": "View competition log",
@@ -551,9 +589,11 @@ const UI_COPY = {
     "playerDetail.status.currentTeam": "Current team",
     "playerDetail.status.transfermarkt": "Transfermarkt",
     "playerDetail.status.transfermarktLinked": "Linked",
+    "playerDetail.status.transfermarktRosterOnly": "Roster or team page only",
     "playerDetail.status.transfermarktMissing": "Missing",
-    "playerDetail.status.marketValue": "Market value",
-    "playerDetail.status.marketValuePending": "Pending",
+    "playerDetail.status.marketValueCurrent": "Current value",
+    "playerDetail.status.marketValuePeak": "Peak value",
+    "playerDetail.status.marketValueUnavailable": "No listed value",
     "playerDetail.status.marketValueMissing": "No stable source",
     "playerDetail.status.externalLinks": "External links",
     "playerDetail.status.recentContributions": "Recent contributions",
@@ -574,6 +614,11 @@ const UI_COPY = {
     "playerDetail.stats.parentClub": "Club",
     "playerDetail.stats.currentSquad": "Squad",
     "playerDetail.stats.currentLeague": "Competition system",
+    "playerDetail.stats.transfermarktStatus": "Transfermarkt status",
+    "playerDetail.stats.marketValueCurrent": "Current value",
+    "playerDetail.stats.marketValuePeak": "Peak value",
+    "playerDetail.stats.marketValueCurrentDate": "Current value updated",
+    "playerDetail.stats.marketValuePeakDate": "Peak date",
     "playerDetail.nameMeta.zh": "Chinese: {value}",
     "playerDetail.nameMeta.native": "Native: {value}",
     "playerDetail.nameMeta.en": "English: {value}",
@@ -607,6 +652,7 @@ const UI_COPY = {
     "tournaments.archive.noChinaMatches": "No China match has been recorded for this tournament, or China did not qualify.",
     "tournaments.archive.chinaSummary": "China summary: {summary}",
     "tournaments.archive.chinaStage": "China stage: {stage}",
+    "tournaments.archive.matchStatsTitle": "Match stats",
     "tournaments.archive.lineupToggle": "China lineup{formation}",
     "tournaments.archive.lineupTitle": "China starting XI{formation}",
     "tournaments.archive.benchTitle": "China bench",
@@ -884,6 +930,17 @@ const MATCH_RESULT_LABELS = {
   TBD: { zh: "待定", en: "TBD" }
 };
 
+const MATCH_STAT_LABELS = {
+  expected_goals: { zh: "预期进球 xG", en: "Expected goals (xG)" },
+  possession: { zh: "控球率", en: "Possession" },
+  big_chances: { zh: "绝佳机会", en: "Big chances" },
+  total_shots: { zh: "总射门", en: "Total shots" },
+  shots_on_target: { zh: "射正", en: "Shots on target" },
+  shots_off_target: { zh: "射偏", en: "Shots off target" },
+  shots_inside_box: { zh: "禁区内射门", en: "Shots inside the box" },
+  shots_outside_box: { zh: "禁区外射门", en: "Shots outside the box" }
+};
+
 const PROJECT_PRIORITY_LABELS = {
   high: { zh: "高优先级", en: "High priority" },
   medium: { zh: "中优先级", en: "Medium priority" }
@@ -931,6 +988,7 @@ const chinaLeagueOneClubs = new Set([
   "Shijiazhuang Gongfu FC",
   "Suzhou Dongwu FC"
 ]);
+const PLAYER_MARKET_VALUE_RANK_LIMIT = 8;
 
 document.addEventListener("DOMContentLoaded", () => {
   initializeLanguage();
@@ -2045,6 +2103,36 @@ function renderStartingLineup(match, options = {}) {
   `;
 }
 
+function formatTournamentMatchStatLabel(key) {
+  return getLabel(MATCH_STAT_LABELS, key, key);
+}
+
+function renderTournamentMatchStats(match) {
+  const rows = match.match_stats ?? [];
+  if (rows.length === 0) {
+    return "";
+  }
+
+  return `
+    <div class="archive-match-stats">
+      <p class="small-note">${escapeHtml(t("tournaments.archive.matchStatsTitle"))}</p>
+      <div class="archive-match-stats-grid">
+        ${rows
+          .map(
+            (row) => `
+              <div class="archive-match-stat-row">
+                <span class="archive-match-stat-value">${escapeHtml(String(row.china ?? "—"))}</span>
+                <span class="archive-match-stat-label">${escapeHtml(formatTournamentMatchStatLabel(row.key))}</span>
+                <span class="archive-match-stat-value archive-match-stat-value-opponent">${escapeHtml(String(row.opponent ?? "—"))}</span>
+              </div>
+            `
+          )
+          .join("")}
+      </div>
+    </div>
+  `;
+}
+
 function renderTournamentMatchContent(match, options = {}) {
   const contributions =
     (match.china_contributions ?? []).length > 0
@@ -2059,6 +2147,7 @@ function renderTournamentMatchContent(match, options = {}) {
     <p>${escapeHtml(t("tournaments.archive.matchLabel", { opponent: formatCountryName(match.opponent), score: buildScore(match), result: getLabel(MATCH_RESULT_LABELS, match.result, match.result) }))}</p>
     ${match.note ? `<p class="small-note">${escapeHtml(localizeText(match.note))}</p>` : ""}
     ${contributions}
+    ${renderTournamentMatchStats(match)}
     ${renderStartingLineup(match, options)}
   `;
 }
@@ -2243,6 +2332,7 @@ function renderRegionalWatchGroupCard(group, regionalWatch) {
 }
 
 function enrichPlayer(player, overview) {
+  const marketValue = getPlayerMarketValueRecord(player);
   return {
     ...player,
     age: getAge(player.birth_date, overview.generated_at),
@@ -2250,7 +2340,10 @@ function enrichPlayer(player, overview) {
     overseasBucket: inferOverseasBucket(player),
     foreignRegistration: isForeignRegistration(player),
     recentContributions: collectPlayerContributions(player, overview),
-    searchBlob: buildPlayerSearchBlob(player)
+    searchBlob: buildPlayerSearchBlob(player),
+    marketValueStatus: marketValue?.status ?? "",
+    marketValueCurrentEur: marketValue?.current?.eur ?? 0,
+    marketValuePeakEur: marketValue?.peak?.eur ?? 0
   };
 }
 
@@ -3109,6 +3202,90 @@ function getFilteredPlayers() {
     .sort(sortPlayers);
 }
 
+function comparePlayersByMarketValue(field) {
+  return (left, right) => {
+    if (right[field] !== left[field]) {
+      return right[field] - left[field];
+    }
+
+    const rightDate =
+      field === "marketValuePeakEur"
+        ? right.market_value?.peak?.date ?? ""
+        : right.market_value?.current?.date ?? "";
+    const leftDate =
+      field === "marketValuePeakEur"
+        ? left.market_value?.peak?.date ?? ""
+        : left.market_value?.current?.date ?? "";
+
+    if (rightDate !== leftDate) {
+      return rightDate.localeCompare(leftDate);
+    }
+
+    return getPlayerPrimaryName(left).localeCompare(getPlayerPrimaryName(right), getSortLocale());
+  };
+}
+
+function buildCurrentMarketValueRankingMeta(player) {
+  const peakDate = player.market_value?.peak?.date ? formatDate(player.market_value.peak.date) : t("common.pending");
+  return t("players.rankings.currentMeta", {
+    value: formatMarketValuePoint(player.market_value?.peak),
+    date: peakDate
+  });
+}
+
+function buildPeakMarketValueRankingMeta(player) {
+  const peakDate = player.market_value?.peak?.date ? formatDate(player.market_value.peak.date) : t("common.pending");
+  if (player.market_value?.current) {
+    return t("players.rankings.peakMeta", {
+      value: formatMarketValuePoint(player.market_value.current),
+      date: peakDate
+    });
+  }
+
+  return t("players.rankings.peakMetaNoCurrent", {
+    date: peakDate
+  });
+}
+
+function renderPlayerMarketValueRankingPanel(title, coverageLabel, players, amountKey, metaBuilder, emptyKey) {
+  return `
+    <div class="section-head compact-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(t("players.rankings.eyebrow"))}</p>
+        <h2>${escapeHtml(title)}</h2>
+      </div>
+    </div>
+    <p class="section-note">${escapeHtml(coverageLabel)}</p>
+    ${
+      players.length > 0
+        ? `
+          <div class="market-ranking-list">
+            ${players
+              .map(
+                (player, index) => `
+                  <article class="market-ranking-row">
+                    <span class="market-ranking-rank">${String(index + 1).padStart(2, "0")}</span>
+                    <div class="market-ranking-body">
+                      <a class="market-ranking-link" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(getPlayerPrimaryName(player))}</a>
+                      <p class="small-note">${escapeHtml(formatCountryName(player.country))} · ${escapeHtml(formatAgeBand(player.age_band))} · ${escapeHtml(getPlayerAffiliation(player).currentTeam)}</p>
+                      <p class="small-note">${escapeHtml(metaBuilder(player))}</p>
+                    </div>
+                    <div class="market-ranking-value">
+                      <strong>${escapeHtml(formatMarketValuePoint(player.market_value?.[amountKey]))}</strong>
+                      <span class="small-note">${escapeHtml(formatDate(player.market_value?.[amountKey]?.date ?? getPlayerLastMarketValueCheck(player)))}</span>
+                    </div>
+                  </article>
+                `
+              )
+              .join("")}
+          </div>
+        `
+        : `<div class="empty-inline">${escapeHtml(t(emptyKey))}</div>`
+    }
+    <p class="small-note market-ranking-note">${escapeHtml(t("players.rankings.note"))}</p>
+  `;
+}
+
 function renderPlayersPage() {
   const cardGrid = document.querySelector("#playerCardGrid");
   const tableWrap = document.querySelector("#playerTableWrap");
@@ -3117,8 +3294,18 @@ function renderPlayersPage() {
   const meta = document.querySelector("#playerResultsMeta");
   const cardsButton = document.querySelector("#viewCardsButton");
   const tableButton = document.querySelector("#viewTableButton");
+  const currentRankingPanel = document.querySelector("#playerMarketValueCurrent");
+  const peakRankingPanel = document.querySelector("#playerMarketValuePeak");
 
   const players = getFilteredPlayers();
+  const currentMarketValuePlayers = players
+    .filter((player) => player.marketValueCurrentEur > 0)
+    .sort(comparePlayersByMarketValue("marketValueCurrentEur"))
+    .slice(0, PLAYER_MARKET_VALUE_RANK_LIMIT);
+  const peakMarketValuePlayers = players
+    .filter((player) => player.marketValuePeakEur > 0)
+    .sort(comparePlayersByMarketValue("marketValuePeakEur"))
+    .slice(0, PLAYER_MARKET_VALUE_RANK_LIMIT);
 
   setControlValue("#playerSearchInput", state.playerFilters.query);
   setControlValue("#playerCountryFilter", state.playerFilters.country);
@@ -3142,6 +3329,32 @@ function renderPlayersPage() {
   tableButton.classList.toggle("is-active", state.playerFilters.view === "table");
   cardGrid.hidden = state.playerFilters.view !== "cards";
   tableWrap.hidden = state.playerFilters.view !== "table";
+  if (currentRankingPanel) {
+    currentRankingPanel.innerHTML = renderPlayerMarketValueRankingPanel(
+      t("players.rankings.currentTitle"),
+      t("players.rankings.coverageCurrent", {
+        count: currentMarketValuePlayers.length,
+        total: players.length
+      }),
+      currentMarketValuePlayers,
+      "current",
+      buildCurrentMarketValueRankingMeta,
+      "players.rankings.currentEmpty"
+    );
+  }
+  if (peakRankingPanel) {
+    peakRankingPanel.innerHTML = renderPlayerMarketValueRankingPanel(
+      t("players.rankings.peakTitle"),
+      t("players.rankings.coveragePeak", {
+        count: peakMarketValuePlayers.length,
+        total: players.length
+      }),
+      peakMarketValuePlayers,
+      "peak",
+      buildPeakMarketValueRankingMeta,
+      "players.rankings.peakEmpty"
+    );
+  }
 
   cardGrid.innerHTML = players.map((player) => renderPlayerCard(player, false)).join("");
   tableBody.innerHTML = players.map(renderPlayerTableRow).join("");
@@ -3152,6 +3365,7 @@ function renderPlayerCard(player, compact) {
   const primaryName = getPlayerPrimaryName(player);
   const secondaryNames = getPlayerSecondaryNames(player).join(" / ");
   const affiliation = getPlayerAffiliation(player);
+  const marketValueSummary = buildPlayerCardMarketValueSummary(player);
   return `
     <article class="player-card ${compact ? "player-card-compact" : ""}">
       <div class="chip-row">
@@ -3163,6 +3377,7 @@ function renderPlayerCard(player, compact) {
       ${secondaryNames ? `<p class="small-note">${escapeHtml(secondaryNames)}</p>` : ""}
       <p>${escapeHtml(formatPosition(player.primary_position))} · ${escapeHtml(formatAge(player.age))}</p>
       <p class="small-note">${escapeHtml(affiliation.currentTeam || t("players.card.clubPending"))} · ${escapeHtml(formatLeagueSystem(player.currentLeagueSystem))}</p>
+      ${marketValueSummary ? `<p class="small-note">${escapeHtml(marketValueSummary)}</p>` : ""}
       <p class="small-note">${escapeHtml(summarizePathway(player.training_pathway))}</p>
       <div class="chip-row">${renderTagChips((player.focus_tags ?? []).slice(0, compact ? 2 : 4))}</div>
       <a class="primary-link primary-link-inline" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(t("players.card.viewProfile"))}</a>
@@ -3302,7 +3517,10 @@ function renderPlayerDetailPage() {
   const names = getPlayerNames(player);
   const affiliation = getPlayerAffiliation(player);
   const birthYear = getBirthYear(player.birth_date);
-  const transfermarktLinked = hasTransfermarktLink(player);
+  const marketValue = getPlayerMarketValueRecord(player);
+  const transfermarktStatus = getTransfermarktStatusLabel(player);
+  const currentMarketValue = marketValue?.current ? formatMarketValuePoint(marketValue.current) : null;
+  const peakMarketValue = marketValue?.peak ? formatMarketValuePoint(marketValue.peak) : null;
   const verificationLabel = getLabel(
     VERIFICATION_STATUS_LABELS,
     player.verification?.status,
@@ -3334,19 +3552,26 @@ function renderPlayerDetailPage() {
       <h2>${escapeHtml(t("playerDetail.status.title"))}</h2>
       <dl class="status-list">
         ${renderStatusItem(t("playerDetail.status.currentTeam"), affiliation.currentTeam)}
+        ${renderStatusItem(t("playerDetail.status.transfermarkt"), transfermarktStatus)}
         ${renderStatusItem(
-          t("playerDetail.status.transfermarkt"),
-          transfermarktLinked ? t("playerDetail.status.transfermarktLinked") : t("playerDetail.status.transfermarktMissing")
+          t("playerDetail.status.marketValueCurrent"),
+          currentMarketValue ??
+            (hasTransfermarktLink(player)
+              ? t("playerDetail.status.marketValueUnavailable")
+              : t("playerDetail.status.marketValueMissing"))
         )}
         ${renderStatusItem(
-          t("playerDetail.status.marketValue"),
-          transfermarktLinked ? t("playerDetail.status.marketValuePending") : t("playerDetail.status.marketValueMissing")
+          t("playerDetail.status.marketValuePeak"),
+          peakMarketValue ??
+            (hasTransfermarktLink(player)
+              ? t("playerDetail.status.marketValueUnavailable")
+              : t("playerDetail.status.marketValueMissing"))
         )}
         ${renderStatusItem(t("playerDetail.status.externalLinks"), String((player.external_links ?? []).length))}
         ${renderStatusItem(t("playerDetail.status.recentContributions"), String(player.recentContributions.length))}
         ${renderStatusItem(t("playerDetail.status.verification"), verificationLabel)}
       </dl>
-      <p class="hero-side-note">${escapeHtml(t("playerDetail.status.lastChecked", { date: formatDate(player.verification?.last_checked ?? pageDate) }))}</p>
+      <p class="hero-side-note">${escapeHtml(t("playerDetail.status.lastChecked", { date: formatDate(getPlayerLastMarketValueCheck(player)) }))}</p>
       <p class="small-note">${escapeHtml(localizeText(player.verification?.notes, t("playerDetail.verification.noNote")))}</p>
       <p class="hero-side-note">${escapeHtml(t("playerDetail.marketValue.note"))}</p>
     </aside>
@@ -3371,9 +3596,38 @@ function renderPlayerDetailPage() {
     { label: t("playerDetail.stats.currentLeague"), value: affiliation.system }
   ];
 
+  const marketValueItems = [
+    { label: t("playerDetail.stats.transfermarktStatus"), value: transfermarktStatus },
+    {
+      label: t("playerDetail.stats.marketValueCurrent"),
+      value:
+        currentMarketValue ??
+        (hasTransfermarktLink(player)
+          ? t("playerDetail.status.marketValueUnavailable")
+          : t("playerDetail.status.marketValueMissing"))
+    },
+    {
+      label: t("playerDetail.stats.marketValuePeak"),
+      value:
+        peakMarketValue ??
+        (hasTransfermarktLink(player)
+          ? t("playerDetail.status.marketValueUnavailable")
+          : t("playerDetail.status.marketValueMissing"))
+    },
+    {
+      label: t("playerDetail.stats.marketValueCurrentDate"),
+      value: marketValue?.current?.date ? formatDate(marketValue.current.date) : t("common.pending")
+    },
+    {
+      label: t("playerDetail.stats.marketValuePeakDate"),
+      value: marketValue?.peak?.date ? formatDate(marketValue.peak.date) : t("common.pending")
+    }
+  ];
+
   stats.innerHTML = [
     renderDetailInfoCard(t("playerDetail.profile.eyebrow"), t("playerDetail.profile.title"), basicItems),
-    renderDetailInfoCard(t("playerDetail.affiliation.eyebrow"), t("playerDetail.affiliation.title"), affiliationItems)
+    renderDetailInfoCard(t("playerDetail.affiliation.eyebrow"), t("playerDetail.affiliation.title"), affiliationItems),
+    renderDetailInfoCard(t("playerDetail.marketValue.eyebrow"), t("playerDetail.marketValue.title"), marketValueItems)
   ].join("");
 
   pathwayTimeline.innerHTML =
@@ -3657,8 +3911,88 @@ function renderTournamentDetailPage() {
   body.hidden = false;
 }
 
+function getTransfermarktLink(player) {
+  return (
+    (player.external_links ?? []).find(
+      (link) =>
+        normalize(link.label).includes("transfermarkt") || normalize(link.url).includes("transfermarkt")
+    ) ?? null
+  );
+}
+
+function extractTransfermarktPlayerId(url) {
+  return String(url ?? "").match(/spieler\/(\d+)/i)?.[1] ?? "";
+}
+
 function hasTransfermarktLink(player) {
-  return (player.external_links ?? []).some((link) => normalize(link.label).includes("transfermarkt"));
+  return Boolean(getTransfermarktLink(player));
+}
+
+function hasTransfermarktPlayerLink(player) {
+  return Boolean(extractTransfermarktPlayerId(getTransfermarktLink(player)?.url));
+}
+
+function getPlayerMarketValueRecord(player) {
+  return player.market_value && typeof player.market_value === "object" ? player.market_value : null;
+}
+
+function formatMarketValueAmount(value) {
+  if (typeof value !== "number" || value <= 0) {
+    return t("playerDetail.status.marketValueUnavailable");
+  }
+
+  if (value >= 1_000_000) {
+    return `€${(value / 1_000_000).toFixed(2)}m`;
+  }
+
+  return `€${Math.round(value / 1_000)}k`;
+}
+
+function formatMarketValuePoint(point) {
+  if (!point) {
+    return t("playerDetail.status.marketValueUnavailable");
+  }
+
+  return point.display || formatMarketValueAmount(point.eur);
+}
+
+function getTransfermarktStatusLabel(player) {
+  if (!hasTransfermarktLink(player)) {
+    return t("playerDetail.status.transfermarktMissing");
+  }
+
+  if (!hasTransfermarktPlayerLink(player)) {
+    return t("playerDetail.status.transfermarktRosterOnly");
+  }
+
+  return t("playerDetail.status.transfermarktLinked");
+}
+
+function getPlayerLastMarketValueCheck(player) {
+  return getPlayerMarketValueRecord(player)?.checked_at ?? player.verification?.last_checked ?? pageDate;
+}
+
+function buildPlayerCardMarketValueSummary(player) {
+  const record = getPlayerMarketValueRecord(player);
+  const currentValue = record?.current ? formatMarketValuePoint(record.current) : "";
+  const peakValue = record?.peak ? formatMarketValuePoint(record.peak) : "";
+
+  if (currentValue && peakValue) {
+    return t("players.card.marketValueBoth", {
+      current: currentValue,
+      peak: peakValue
+    });
+  }
+
+  if (currentValue) {
+    return t("players.card.marketValueCurrentOnly", { current: currentValue });
+  }
+
+  if (peakValue) {
+    return t("players.card.marketValuePeakOnly", { peak: peakValue });
+  }
+
+  return "";
 }
 
 function initializeTournamentFilters() {

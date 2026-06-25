@@ -153,17 +153,38 @@ function applyPlayerNames(players, overrides = {}) {
   });
 }
 
+function applyPlayerMarketValues(players, snapshot = {}) {
+  return players.map((player) => {
+    const marketValue = snapshot[player.id];
+    if (!marketValue) {
+      return player;
+    }
+
+    return {
+      ...player,
+      market_value: marketValue
+    };
+  });
+}
+
 export async function loadDataset() {
   const rawPlayers = await readJsonFiles(path.join(paths.raw, "players"));
   const playerNameOverrides = await readOptionalJson(
     path.join(paths.raw, "player-name-overrides.json"),
     {}
   );
+  const playerMarketValues = await readOptionalJson(
+    path.join(paths.raw, "player-market-values.json"),
+    { meta: null, players: {} }
+  );
   const clubNameOverrides = await readOptionalJson(
     path.join(paths.raw, "club-name-overrides.json"),
     {}
   );
-  const players = applyPlayerNames(rawPlayers, playerNameOverrides);
+  const players = applyPlayerMarketValues(
+    applyPlayerNames(rawPlayers, playerNameOverrides),
+    playerMarketValues.players ?? {}
+  );
   const tournaments = await readJson(path.join(paths.raw, "tournaments.json"));
   const projects = await readJson(path.join(paths.raw, "projects.json"));
   const overseasHistory = await readJson(path.join(paths.raw, "overseas-history.json"));

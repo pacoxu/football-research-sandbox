@@ -27,6 +27,26 @@ function isIsoDate(value) {
   return /^\d{4}-\d{2}-\d{2}$/.test(value);
 }
 
+function validateMarketValuePoint(point, playerId, label) {
+  assert(typeof point === "object" && point !== null, `Invalid market_value ${label} on ${playerId}`);
+  assert(
+    typeof point.eur === "number" && point.eur > 0,
+    `Invalid market_value ${label}.eur on ${playerId}`
+  );
+  assert(
+    typeof point.currency === "string" && point.currency.length > 0,
+    `Missing market_value ${label}.currency on ${playerId}`
+  );
+  assert(
+    typeof point.display === "string" && point.display.length > 0,
+    `Missing market_value ${label}.display on ${playerId}`
+  );
+  assert(
+    point.date === null || isIsoDate(point.date),
+    `Invalid market_value ${label}.date on ${playerId}`
+  );
+}
+
 function validateOverseasRecord(record, countryName, allowedBuckets) {
   const requiredFields = [
     "id",
@@ -269,6 +289,40 @@ export async function validateData() {
         overseasBucketIds.has(player.overseas_bucket_override),
         `Invalid overseas_bucket_override on ${player.id}`
       );
+    }
+    if (player.market_value !== undefined) {
+      assert(typeof player.market_value === "object" && player.market_value !== null, `Invalid market_value on ${player.id}`);
+      assert(
+        typeof player.market_value.status === "string" && player.market_value.status.length > 0,
+        `Missing market_value status on ${player.id}`
+      );
+      assert(
+        typeof player.market_value.checked_at === "string" && isIsoDate(player.market_value.checked_at),
+        `Invalid market_value checked_at on ${player.id}`
+      );
+      assert(
+        typeof player.market_value.source?.provider === "string" &&
+          typeof player.market_value.source?.profile_url === "string",
+        `Invalid market_value source on ${player.id}`
+      );
+      if (player.market_value.current !== null && player.market_value.current !== undefined) {
+        validateMarketValuePoint(player.market_value.current, player.id, "current");
+      }
+      if (player.market_value.peak !== null && player.market_value.peak !== undefined) {
+        validateMarketValuePoint(player.market_value.peak, player.id, "peak");
+      }
+      if (player.market_value.last_change_date !== null && player.market_value.last_change_date !== undefined) {
+        assert(
+          isIsoDate(player.market_value.last_change_date),
+          `Invalid market_value last_change_date on ${player.id}`
+        );
+      }
+      if (player.market_value.history_points !== undefined) {
+        assert(
+          Number.isInteger(player.market_value.history_points) && player.market_value.history_points >= 0,
+          `Invalid market_value history_points on ${player.id}`
+        );
+      }
     }
 
     playerIds.add(player.id);

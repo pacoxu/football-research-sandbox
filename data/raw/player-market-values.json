@@ -1,0 +1,441 @@
+{
+  "meta": {
+    "provider": "Transfermarkt",
+    "checked_at": "2026-05-25",
+    "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com"
+  },
+  "players": {
+    "cn-cheng-xiyang-2006": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.co.uk/xiyang-cheng/profil/spieler/1430174",
+        "market_value_url": "https://www.transfermarkt.co.uk/xiyang-cheng/marktwertverlauf/spieler/1430174",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1430174/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-gu-boyu-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.us/boyu-gu/profil/spieler/1412278",
+        "market_value_url": "https://www.transfermarkt.us/boyu-gu/marktwertverlauf/spieler/1412278",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1412278/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-he-sifan-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/sifan-he/profil/spieler/1281955",
+        "market_value_url": "https://www.transfermarkt.com/sifan-he/marktwertverlauf/spieler/1281955",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281955/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-jin-yucheng-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/yucheng-jin/profil/spieler/1422019",
+        "market_value_url": "https://www.transfermarkt.com/yucheng-jin/marktwertverlauf/spieler/1422019",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1422019/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-kong-xinuo-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/xinuo-kong/profil/spieler/1281961",
+        "market_value_url": "https://www.transfermarkt.com/xinuo-kong/marktwertverlauf/spieler/1281961",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281961/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-kuang-zhaolei-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.us/zhaolei-kuang/profil/spieler/1281957",
+        "market_value_url": "https://www.transfermarkt.us/zhaolei-kuang/marktwertverlauf/spieler/1281957",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281957/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-li-dongchen-2010": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/dongchen-li/profil/spieler/1283236",
+        "market_value_url": "https://www.transfermarkt.com/dongchen-li/marktwertverlauf/spieler/1283236",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1283236/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-li-junpeng-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/junpeng-li/profil/spieler/1281963",
+        "market_value_url": "https://www.transfermarkt.com/junpeng-li/marktwertverlauf/spieler/1281963",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281963/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-li-youan-2010": {
+      "checked_at": "2026-05-25",
+      "status": "team-page-only",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/china-u15/erweiterterkader/verein/39966",
+        "market_value_url": "https://www.transfermarkt.com/china-u15/erweiterterkader/verein/39966",
+        "api_url": null
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-lin-zihao-2007": {
+      "checked_at": "2026-05-25",
+      "status": "available",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.co.in/zihao-lin/profil/spieler/1242688",
+        "market_value_url": "https://www.transfermarkt.co.in/zihao-lin/marktwertverlauf/spieler/1242688",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1242688/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 4,
+      "current": {
+        "eur": 10000,
+        "currency": "EUR",
+        "display": "€10.00k",
+        "date": "2025-06-23"
+      },
+      "peak": {
+        "eur": 10000,
+        "currency": "EUR",
+        "display": "€10.00k",
+        "date": "2024-03-21"
+      },
+      "last_change_date": "2025-06-23"
+    },
+    "cn-liu-kaiyuan-2010": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/kaiyuan-liu/profil/spieler/1504020",
+        "market_value_url": "https://www.transfermarkt.com/kaiyuan-liu/marktwertverlauf/spieler/1504020",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1504020/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-nan-zixun-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/zixun-nan/profil/spieler/1347942",
+        "market_value_url": "https://www.transfermarkt.com/zixun-nan/marktwertverlauf/spieler/1347942",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1347942/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-pan-chaowei-2010": {
+      "checked_at": "2026-05-25",
+      "status": "team-page-only",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/shandong-luneng-taishan-football-school/startseite/verein/85492",
+        "market_value_url": "https://www.transfermarkt.com/shandong-luneng-taishan-football-school/startseite/verein/85492",
+        "api_url": null
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-piao-zhixuan-2010": {
+      "checked_at": "2026-05-25",
+      "status": "team-page-only",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/dalian-yingbo-u19/kader/verein/121167/saison_id/2025/plus/1",
+        "market_value_url": "https://www.transfermarkt.com/dalian-yingbo-u19/kader/verein/121167/saison_id/2025/plus/1",
+        "api_url": null
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-qin-ziniu-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/ziniu-qin/profil/spieler/1412277",
+        "market_value_url": "https://www.transfermarkt.com/ziniu-qin/marktwertverlauf/spieler/1412277",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1412277/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-shuai-weihao-2009": {
+      "checked_at": "2026-05-25",
+      "status": "available",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/weihao-shuai/profil/spieler/1382253",
+        "market_value_url": "https://www.transfermarkt.com/weihao-shuai/marktwertverlauf/spieler/1382253",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1382253/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 2,
+      "current": {
+        "eur": 225000,
+        "currency": "EUR",
+        "display": "€225.00k",
+        "date": "2025-12-09"
+      },
+      "peak": {
+        "eur": 225000,
+        "currency": "EUR",
+        "display": "€225.00k",
+        "date": "2025-12-09"
+      },
+      "last_change_date": "2025-12-09"
+    },
+    "cn-wan-xiang-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/xiang-wan/profil/spieler/1281956",
+        "market_value_url": "https://www.transfermarkt.com/xiang-wan/marktwertverlauf/spieler/1281956",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281956/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-wang-xiuhao-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/xiuhao-wang/profil/spieler/1283230",
+        "market_value_url": "https://www.transfermarkt.com/xiuhao-wang/marktwertverlauf/spieler/1283230",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1283230/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-xie-jin-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jin-xie/profil/spieler/1347943",
+        "market_value_url": "https://www.transfermarkt.com/jin-xie/marktwertverlauf/spieler/1347943",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1347943/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-xu-zhengpeng-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/zhengpeng-xu/profil/spieler/1281972",
+        "market_value_url": "https://www.transfermarkt.com/zhengpeng-xu/marktwertverlauf/spieler/1281972",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281972/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-yang-alex-2005": {
+      "checked_at": "2026-05-25",
+      "status": "available",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/alex-yang/profil/spieler/1012988",
+        "market_value_url": "https://www.transfermarkt.com/alex-yang/marktwertverlauf/spieler/1012988",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1012988/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 2,
+      "current": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400.00k",
+        "date": "2025-12-17"
+      },
+      "peak": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400.00k",
+        "date": "2025-12-17"
+      },
+      "last_change_date": "2025-12-17"
+    },
+    "cn-zhang-xuyao-2009": {
+      "checked_at": "2026-05-25",
+      "status": "team-page-only",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/china-u17/erweiterterkader/verein/26944",
+        "market_value_url": "https://www.transfermarkt.com/china-u17/erweiterterkader/verein/26944",
+        "api_url": null
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-zhao-songyuan-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/songyuan-zhao/profil/spieler/1283228",
+        "market_value_url": "https://www.transfermarkt.com/songyuan-zhao/marktwertverlauf/spieler/1283228",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1283228/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "cn-zhou-yunuo-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/yunuo-zhou/profil/spieler/1347941",
+        "market_value_url": "https://www.transfermarkt.com/yunuo-zhou/marktwertverlauf/spieler/1347941",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1347941/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "uz-abubakir-rakhimov-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.us/abubakir-rakhimov/nationalmannschaft/spieler/1329726",
+        "market_value_url": "https://www.transfermarkt.us/abubakir-rakhimov/marktwertverlauf/spieler/1329726",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1329726/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "uz-amirkhon-erkinov-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.co.uk/amirkhon-erkinov/profil/spieler/1146371",
+        "market_value_url": "https://www.transfermarkt.co.uk/amirkhon-erkinov/marktwertverlauf/spieler/1146371",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1146371/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    },
+    "uz-asilbek-aliev-2009": {
+      "checked_at": "2026-05-25",
+      "status": "available",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.de/asilbek-aliev/profil/spieler/1146372",
+        "market_value_url": "https://www.transfermarkt.de/asilbek-aliev/marktwertverlauf/spieler/1146372",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1146372/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 1,
+      "current": {
+        "eur": 75000,
+        "currency": "EUR",
+        "display": "€75.00k",
+        "date": "2026-05-13"
+      },
+      "peak": {
+        "eur": 75000,
+        "currency": "EUR",
+        "display": "€75.00k",
+        "date": "2026-05-13"
+      },
+      "last_change_date": "2026-05-13"
+    },
+    "uz-mukhammad-khakimov-2009": {
+      "checked_at": "2026-05-25",
+      "status": "no-market-value",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/mukhammad-khakimov/profil/spieler/1146366",
+        "market_value_url": "https://www.transfermarkt.com/mukhammad-khakimov/marktwertverlauf/spieler/1146366",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1146366/market-value-history?_x_preferred_context=com"
+      },
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null
+    }
+  }
+}
