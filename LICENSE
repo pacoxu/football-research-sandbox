@@ -1,0 +1,66 @@
+# License
+
+This repository contains both source code and football research data. They are
+covered by different scopes.
+
+## Code
+
+Unless a file says otherwise, the source code in this repository is licensed
+under the MIT License below. This includes JavaScript, Python, shell scripts,
+HTML, CSS, project configuration, site source files, and build/automation code
+such as files under `assets/` and `scripts/`.
+
+MIT License
+
+Copyright (c) 2026 football-research-sandbox contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+## Data, Content, and Generated Artifacts
+
+The MIT License above does not grant rights to the repository's data, content,
+or generated artifacts, including but not limited to:
+
+- `data/raw/**`
+- `data/site/**`
+- `storage/**`
+- `dist/**`
+- `outputs/**`
+- generated SQLite databases, reports, images, snapshots, and datasets
+- third-party facts, records, market values, squad lists, match data, articles,
+  profile pages, URLs, trademarks, names, logos, or media referenced by this
+  project
+
+Those materials are maintained for research, indexing, verification, and
+personal archival purposes. Rights in third-party source materials remain with
+their respective owners. Reuse, redistribution, or publication of data-derived
+materials must independently comply with the original source terms, applicable
+database rights, privacy and publicity rights, trademark rules, platform terms,
+and local law.
+
+Unless a more specific file-level notice says otherwise, this repository does
+not provide a separate open data license for the data, content, or generated
+artifacts listed above.
+
+## Attribution and Provenance
+
+When reusing any data-derived material where reuse is otherwise permitted,
+retain source links, verification notes, and provenance fields where they exist.
+Do not present external-source data as official, complete, or independently
+licensed by this repository.
