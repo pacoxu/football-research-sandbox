@@ -311,5 +311,102 @@
       "last_checked": "2026-05-23",
       "notes": "生日与前锋位置由 Sofascore 和 Scores24 交叉确认；Tipsme 阵容页补充其为北京通州鹏瑞通达 / 北京鹏瑞通程 2 号前锋。需注意不要与另一名 2010-04-27 出生、China U16 口径的同名李雨轩混淆。"
     }
+  },
+  {
+    "id": "cn-wei-xiangxin-2008",
+    "name": "Wei Xiangxin",
+    "local_name": "魏祥鑫",
+    "country": "China PR",
+    "birth_date": "2008-02-26",
+    "age_band": "u20",
+    "primary_position": "Centre-Forward",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Meizhou Hakka FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "梅州客家青训节点",
+        "organization": "Meizhou Hakka youth",
+        "country": "China",
+        "note": "公开履历将其 2017 到 2024 年成长线归在梅州客家青训体系，是梅州本土青训向一线队输送的代表样本。"
+      },
+      {
+        "stage_label": "2024 广东铭途 / 中冠节点",
+        "organization": "Guangdong Mingtu FC",
+        "country": "China",
+        "note": "2024 年租借广东铭途参加中冠并打入 7 球，随后回到梅州客家进入更高等级职业联赛环境。"
+      },
+      {
+        "stage_label": "2025 梅州客家一线队节点",
+        "organization": "Meizhou Hakka FC",
+        "country": "China",
+        "note": "2025 赛季代表梅州客家一线队出场并取得进球，是当前从国内职业联赛进入欧洲关注池的前锋样本。"
+      },
+      {
+        "stage_label": "2025/04 欧塞尔试训",
+        "organization": "AJ Auxerre",
+        "country": "France",
+        "note": "2025 年 4 月公开报道显示其前往法国欧塞尔接受试训；该节点属于试训 / 考察，不等于当时已完成转会。"
+      },
+      {
+        "stage_label": "2026/07 欧塞尔待生效转会",
+        "organization": "AJ Auxerre",
+        "country": "France",
+        "note": "公开资料显示其转会欧塞尔的生效日期为 2026-07-01；按当前日期 2026-06-27，仍应写作“已签约 / 待生效”，不提前计入现役海外注册。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "domestic-pro-youth",
+      "future-overseas-watch",
+      "france-pathway",
+      "striker-watch"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "csl-2026",
+        "label": "2026 国内职业俱乐部 U21 观察样本",
+        "team": "Meizhou Hakka FC",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-06-27，当前注册归属先按梅州客家处理；欧塞尔节点写作 2026-07-01 待生效，不与现役海外注册样本混算。"
+      },
+      {
+        "label": "2026 欧塞尔待生效转会",
+        "team": "AJ Auxerre",
+        "squad_status": "pending-transfer",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "若 2026-07-01 后俱乐部注册和官方名单同步更新，可再把本条迁入中国现役留洋样本。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "wikipedia",
+        "label": "Wikipedia profile",
+        "url": "https://en.wikipedia.org/wiki/Wei_Xiangxin"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi report on Auxerre move",
+        "url": "https://www.dongqiudi.com/articles/5517202.html"
+      },
+      {
+        "type": "profile",
+        "label": "WorldFootball.net profile",
+        "url": "https://www.worldfootball.net/player_summary/wei-xiangxin/"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-06-27",
+      "notes": "出生日期、梅州客家一线队出场、广东铭途租借和欧塞尔 2026-07-01 待生效节点由 Wikipedia / WorldFootball / 转会报道交叉整理；由于生效日期晚于当前核对日，当前注册俱乐部仍按梅州客家处理。"
+    }
   }
 ]

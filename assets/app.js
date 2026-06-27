@@ -1,5 +1,5 @@
 const page = document.body.dataset.page;
-const pageDate = document.body.dataset.date || "2026-05-23";
+const pageDate = document.body.dataset.date || "2026-06-25";
 const LANGUAGE_STORAGE_KEY = "youth-tracker-language";
 const SITE_ASSET_VERSION =
   (() => {
@@ -237,6 +237,11 @@ const UI_COPY = {
     "tournamentDetail.squad.eyebrow": "Squad List",
     "tournamentDetail.squad.title": "中国完整名单",
     "tournamentDetail.squad.empty": "当前还没有录入中国完整名单。",
+    "tournamentDetail.squad.latestLabel": "最新公开名单",
+    "tournamentDetail.squad.latestNote":
+      "按最新公开名单图整理；这份视图用于跟踪当前中国 U17 队名单，不替代 2026 U17 亚洲杯终报名表。",
+    "tournamentDetail.squad.headCoach": "主教练：{name}",
+    "tournamentDetail.squad.finalsToggle": "查看 2026 U17 亚洲杯终报名表",
     "tournamentDetail.matches.eyebrow": "China Matches",
     "tournamentDetail.matches.title": "中国队比赛明细",
     "tournamentDetail.keyPlayers.eyebrow": "Key Players",
@@ -366,7 +371,26 @@ const UI_COPY = {
     "overseas.countryNotes.noNote": "暂无说明",
     "overseas.countryNotes.empty": "当前没有可展示的国别说明。",
     "overseas.countryNotes.playerCount": "{count} 人",
-    "overseas.countryNotes.sources": "来源"
+    "overseas.countryNotes.sources": "来源",
+    "overseas.coaches.eyebrow": "Coaches",
+    "overseas.coaches.title": "五大联赛亚洲教练",
+    "overseas.coaches.empty": "当前还没有可展示的五大联赛亚洲教练记录。",
+    "overseas.coaches.meta": "校验至 {date}",
+    "overseas.coaches.afcCount": "AFC 主口径人数",
+    "overseas.coaches.broadCount": "广义口径人数",
+    "overseas.coaches.primaryRecord": "主口径总战绩",
+    "overseas.coaches.sourceCount": "总来源",
+    "overseas.coaches.recordLine": "{matches} 场 · {wins} 胜 {draws} 平 {losses} 负",
+    "overseas.coaches.points": "{points} 分",
+    "overseas.coaches.primaryScope": "主口径：{count} 人；只统计执教时所属足协为 AFC 成员协会的教练。",
+    "overseas.coaches.broadScope": "广义口径：{count} 人；另列土耳其、以色列等 UEFA 边界项。",
+    "overseas.coaches.clubRecord": "{league} · {club} · {season}",
+    "overseas.coaches.period": "周期：{value}",
+    "overseas.coaches.scope": "口径：{value}",
+    "overseas.coaches.confidence": "可信度：{value}",
+    "overseas.coaches.sources": "来源",
+    "overseas.coaches.scope.afc": "AFC 成员口径",
+    "overseas.coaches.scope.broad": "广义亚洲边界项"
   },
   en: {
     "page.home.title": "Youth Player Tracking Desk",
@@ -565,6 +589,11 @@ const UI_COPY = {
     "tournamentDetail.squad.eyebrow": "Squad List",
     "tournamentDetail.squad.title": "China full squad",
     "tournamentDetail.squad.empty": "No China full-squad record has been added for this tournament yet.",
+    "tournamentDetail.squad.latestLabel": "Latest public roster",
+    "tournamentDetail.squad.latestNote":
+      "Compiled from the latest public roster graphic; this view tracks the current China U17 pool and does not replace the 2026 AFC U17 finals squad list.",
+    "tournamentDetail.squad.headCoach": "Head coach: {name}",
+    "tournamentDetail.squad.finalsToggle": "View the 2026 AFC U17 finals squad list",
     "tournamentDetail.matches.eyebrow": "China Matches",
     "tournamentDetail.matches.title": "China match detail",
     "tournamentDetail.keyPlayers.eyebrow": "Key Players",
@@ -694,7 +723,26 @@ const UI_COPY = {
     "overseas.countryNotes.noNote": "No note yet",
     "overseas.countryNotes.empty": "No country note is available for display.",
     "overseas.countryNotes.playerCount": "{count} players",
-    "overseas.countryNotes.sources": "Sources"
+    "overseas.countryNotes.sources": "Sources",
+    "overseas.coaches.eyebrow": "Coaches",
+    "overseas.coaches.title": "Asian head coaches in the big five leagues",
+    "overseas.coaches.empty": "No big-five Asian coach record is available yet.",
+    "overseas.coaches.meta": "Checked through {date}",
+    "overseas.coaches.afcCount": "AFC primary count",
+    "overseas.coaches.broadCount": "Broad count",
+    "overseas.coaches.primaryRecord": "Primary-scope record",
+    "overseas.coaches.sourceCount": "Total sources",
+    "overseas.coaches.recordLine": "{matches} matches · {wins}W {draws}D {losses}L",
+    "overseas.coaches.points": "{points} pts",
+    "overseas.coaches.primaryScope": "Primary scope: {count} coaches whose association was an AFC member at the time of the spell.",
+    "overseas.coaches.broadScope": "Broad scope: {count} coaches, adding UEFA boundary cases such as Turkey and Israel.",
+    "overseas.coaches.clubRecord": "{league} · {club} · {season}",
+    "overseas.coaches.period": "Period: {value}",
+    "overseas.coaches.scope": "Scope: {value}",
+    "overseas.coaches.confidence": "Confidence: {value}",
+    "overseas.coaches.sources": "Sources",
+    "overseas.coaches.scope.afc": "AFC member scope",
+    "overseas.coaches.scope.broad": "Broad Asian boundary"
   }
 };
 
@@ -719,6 +767,7 @@ const PAGE_METADATA = {
 const COUNTRY_LABELS = {
   zh: {
     Argentina: "阿根廷",
+    Australia: "澳大利亚",
     Belgium: "比利时",
     Canada: "加拿大",
     Chile: "智利",
@@ -729,6 +778,7 @@ const COUNTRY_LABELS = {
     France: "法国",
     Germany: "德国",
     Indonesia: "印度尼西亚",
+    Israel: "以色列",
     Italy: "意大利",
     Japan: "日本",
     "Korea Republic": "韩国",
@@ -740,15 +790,19 @@ const COUNTRY_LABELS = {
     Serbia: "塞尔维亚",
     Spain: "西班牙",
     Thailand: "泰国",
+    Turkey: "土耳其",
     "United Arab Emirates": "阿联酋",
     "United States": "美国",
     Uzbekistan: "乌兹别克斯坦",
     "Canada / Mexico / United States": "加拿大 / 墨西哥 / 美国"
   },
   en: {
+    Australia: "Australia",
     China: "China",
     "China PR": "China PR",
+    Israel: "Israel",
     "Korea Republic": "South Korea",
+    Turkey: "Turkey",
     "United Arab Emirates": "United Arab Emirates",
     "Saudi Arabia": "Saudi Arabia",
     "Canada / Mexico / United States": "Canada / Mexico / United States"
@@ -2226,6 +2280,68 @@ function renderTournamentSquadCard(entry) {
   `;
 }
 
+function renderTournamentRosterViewEntry(entry) {
+  const affiliation = localizeText(entry.affiliation ?? entry.club, "");
+  const note = localizeText(entry.note, "");
+
+  return `
+    <li class="roster-group-item">
+      <div class="roster-group-player">${renderPlayerReference(entry)}</div>
+      ${affiliation ? `<p class="small-note">${escapeHtml(affiliation)}</p>` : ""}
+      ${note ? `<p class="small-note">${escapeHtml(note)}</p>` : ""}
+    </li>
+  `;
+}
+
+function renderTournamentRosterViewGroup(group) {
+  const label = localizeText(group.label, "");
+  const entries = group.entries ?? [];
+
+  return `
+    <article class="stack-card roster-group-card">
+      <p class="eyebrow">${escapeHtml(label)}</p>
+      <ul class="roster-group-list">
+        ${entries.map(renderTournamentRosterViewEntry).join("")}
+      </ul>
+    </article>
+  `;
+}
+
+function renderTournamentLatestRosterView(view, squadEntries) {
+  const groups = view?.groups ?? [];
+  const headCoach =
+    localizeText(view?.head_coach?.local_name, "") || localizeText(view?.head_coach?.name, "");
+  const note = localizeText(view?.note, t("tournamentDetail.squad.latestNote"));
+  const label = localizeText(view?.label, t("tournamentDetail.squad.latestLabel"));
+
+  return `
+    <article class="stack-card roster-view-card">
+      <div class="chip-row">
+        <span class="chip accent-chip">${escapeHtml(label)}</span>
+      </div>
+      <p class="small-note">${escapeHtml(note)}</p>
+      ${headCoach ? `<p class="small-note">${escapeHtml(t("tournamentDetail.squad.headCoach", { name: headCoach }))}</p>` : ""}
+      <div class="roster-group-grid">
+        ${groups.map(renderTournamentRosterViewGroup).join("")}
+      </div>
+      ${
+        squadEntries.length > 0
+          ? `
+            <details class="archive-lineup-toggle">
+              <summary>${escapeHtml(t("tournamentDetail.squad.finalsToggle"))}</summary>
+              <div class="archive-lineup">
+                <div class="player-card-grid compact-grid">
+                  ${squadEntries.map(renderTournamentSquadCard).join("")}
+                </div>
+              </div>
+            </details>
+          `
+          : ""
+      }
+    </article>
+  `;
+}
+
 function renderRegionalHistorySummaryCard(entry) {
   const bestYears = (entry.best_years ?? []).join(" / ");
 
@@ -3298,14 +3414,14 @@ function renderPlayersPage() {
   const peakRankingPanel = document.querySelector("#playerMarketValuePeak");
 
   const players = getFilteredPlayers();
-  const currentMarketValuePlayers = players
+  const allCurrentMarketValuePlayers = players
     .filter((player) => player.marketValueCurrentEur > 0)
-    .sort(comparePlayersByMarketValue("marketValueCurrentEur"))
-    .slice(0, PLAYER_MARKET_VALUE_RANK_LIMIT);
-  const peakMarketValuePlayers = players
+    .sort(comparePlayersByMarketValue("marketValueCurrentEur"));
+  const currentMarketValuePlayers = allCurrentMarketValuePlayers.slice(0, PLAYER_MARKET_VALUE_RANK_LIMIT);
+  const allPeakMarketValuePlayers = players
     .filter((player) => player.marketValuePeakEur > 0)
-    .sort(comparePlayersByMarketValue("marketValuePeakEur"))
-    .slice(0, PLAYER_MARKET_VALUE_RANK_LIMIT);
+    .sort(comparePlayersByMarketValue("marketValuePeakEur"));
+  const peakMarketValuePlayers = allPeakMarketValuePlayers.slice(0, PLAYER_MARKET_VALUE_RANK_LIMIT);
 
   setControlValue("#playerSearchInput", state.playerFilters.query);
   setControlValue("#playerCountryFilter", state.playerFilters.country);
@@ -3333,7 +3449,7 @@ function renderPlayersPage() {
     currentRankingPanel.innerHTML = renderPlayerMarketValueRankingPanel(
       t("players.rankings.currentTitle"),
       t("players.rankings.coverageCurrent", {
-        count: currentMarketValuePlayers.length,
+        count: allCurrentMarketValuePlayers.length,
         total: players.length
       }),
       currentMarketValuePlayers,
@@ -3346,7 +3462,7 @@ function renderPlayersPage() {
     peakRankingPanel.innerHTML = renderPlayerMarketValueRankingPanel(
       t("players.rankings.peakTitle"),
       t("players.rankings.coveragePeak", {
-        count: peakMarketValuePlayers.length,
+        count: allPeakMarketValuePlayers.length,
         total: players.length
       }),
       peakMarketValuePlayers,
@@ -3883,10 +3999,13 @@ function renderTournamentDetailPage() {
 
   const displayMatches = getDisplayChinaMatches(archiveTournament?.china_matches);
   const squadEntries = archiveTournament ? getTournamentSquadEntries(archiveTournament) : [];
+  const latestRosterView = archiveTournament?.latest_public_roster_view ?? null;
   squad.innerHTML =
-    squadEntries.length > 0
-      ? squadEntries.map(renderTournamentSquadCard).join("")
-      : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.squad.empty"))}</div>`;
+    latestRosterView
+      ? renderTournamentLatestRosterView(latestRosterView, squadEntries)
+      : squadEntries.length > 0
+        ? squadEntries.map(renderTournamentSquadCard).join("")
+        : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.squad.empty"))}</div>`;
 
   matches.innerHTML =
     displayMatches.length > 0
@@ -3945,7 +4064,7 @@ function formatMarketValueAmount(value) {
     return `€${(value / 1_000_000).toFixed(2)}m`;
   }
 
-  return `€${Math.round(value / 1_000)}k`;
+  return `€${(value / 1_000).toFixed(2)}k`;
 }
 
 function formatMarketValuePoint(point) {
@@ -3953,7 +4072,7 @@ function formatMarketValuePoint(point) {
     return t("playerDetail.status.marketValueUnavailable");
   }
 
-  return point.display || formatMarketValueAmount(point.eur);
+  return formatMarketValueAmount(point.eur);
 }
 
 function getTransfermarktStatusLabel(player) {
@@ -4343,6 +4462,8 @@ function renderOverseasPage() {
   }
   historyCards.innerHTML = filteredHistory.map(renderHistoricalRecordCard).join("");
   historyEmptyState.hidden = filteredHistory.length > 0;
+
+  renderBigFiveAsianCoaches();
 }
 
 function renderHistoricalRecordCard(record) {
@@ -4357,11 +4478,151 @@ function renderHistoricalRecordCard(record) {
       <p>${escapeHtml(formatClubName(record.club))} · ${escapeHtml(record.league)}</p>
       <p class="small-note">${escapeHtml(localizeText(record.appearance_label ?? ""))}</p>
       <p>${escapeHtml(localizeText(record.summary))}</p>
-      <ul class="mini-bullet-list">
+      <ul class="mini-bullet-list coach-record-list">
         ${(record.notes ?? []).map((note) => `<li>${escapeHtml(localizeText(note))}</li>`).join("")}
       </ul>
     </article>
   `;
+}
+
+function formatCoachRecord(record) {
+  return t("overseas.coaches.recordLine", {
+    matches: record?.matches ?? 0,
+    wins: record?.wins ?? 0,
+    draws: record?.draws ?? 0,
+    losses: record?.losses ?? 0
+  });
+}
+
+function getCoachScopeLabel(coach) {
+  return (coach.counted_in ?? []).includes("afc_member_association")
+    ? t("overseas.coaches.scope.afc")
+    : t("overseas.coaches.scope.broad");
+}
+
+function renderCoachRecordStat(label, value, note = "") {
+  return `
+    <article class="stat-card">
+      <p class="stat-label">${escapeHtml(label)}</p>
+      <p class="stat-value stat-value-small">${escapeHtml(value)}</p>
+      ${note ? `<p class="small-note">${escapeHtml(note)}</p>` : ""}
+    </article>
+  `;
+}
+
+function renderCoachClubRecord(stint) {
+  return `
+    <li>
+      <strong>${escapeHtml(t("overseas.coaches.clubRecord", {
+        league: stint.league,
+        club: formatClubName(stint.club),
+        season: stint.season
+      }))}</strong>
+      <span class="small-note">${escapeHtml(formatCoachRecord(stint))} · ${escapeHtml(t("overseas.coaches.points", { points: stint.points }))}</span>
+      ${stint.period ? `<span class="small-note">${escapeHtml(t("overseas.coaches.period", { value: stint.period }))}</span>` : ""}
+      ${stint.outcome ? `<span class="small-note">${escapeHtml(localizeText(stint.outcome))}</span>` : ""}
+    </li>
+  `;
+}
+
+function renderBigFiveAsianCoachCard(coach) {
+  const displayName =
+    coach.local_name && coach.local_name !== coach.name
+      ? `${coach.local_name} / ${coach.name}`
+      : coach.name;
+  const recordLine = `${formatCoachRecord(coach.top_flight_record)} · ${t("overseas.coaches.points", {
+    points: coach.top_flight_record?.points ?? 0
+  })}`;
+  const sourceLinks = coach.source_links ?? [];
+
+  return `
+    <article class="story-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(formatCountryName(coach.nationality))}</span>
+        <span class="chip">${escapeHtml(getCoachScopeLabel(coach))}</span>
+        <span class="chip">${escapeHtml(coach.first_big_five_spell ?? "")}</span>
+      </div>
+      <h3>${escapeHtml(displayName)}</h3>
+      <p>${escapeHtml(recordLine)}</p>
+      <p class="small-note">${escapeHtml(t("overseas.coaches.scope", { value: coach.record_scope ?? "top-flight league only" }))}</p>
+      <p>${escapeHtml(localizeText(coach.summary))}</p>
+      <ul class="mini-bullet-list">
+        ${(coach.club_records ?? []).map(renderCoachClubRecord).join("")}
+      </ul>
+      ${(coach.notes ?? []).length > 0 ? `
+        <ul class="mini-bullet-list">
+          ${(coach.notes ?? []).map((note) => `<li>${escapeHtml(localizeText(note))}</li>`).join("")}
+        </ul>
+      ` : ""}
+      <p class="small-note">${escapeHtml(t("overseas.coaches.confidence", { value: coach.confidence ?? "-" }))}</p>
+      ${
+        sourceLinks.length > 0
+          ? `
+            <p class="timeline-label">${escapeHtml(t("overseas.coaches.sources"))}</p>
+            <div class="pill-row">${renderLinkPills(sourceLinks)}</div>
+          `
+          : ""
+      }
+    </article>
+  `;
+}
+
+function renderBigFiveAsianCoaches() {
+  const archive = state.overview?.big_five_asian_coaches;
+  const statsNode = document.querySelector("#bigFiveAsianCoachStats");
+  const sectionNode = document.querySelector("#bigFiveAsianCoachesSection");
+  const metaNode = document.querySelector("#bigFiveAsianCoachesMeta");
+  const scopeNode = document.querySelector("#bigFiveAsianCoachesScope");
+  const cardsNode = document.querySelector("#bigFiveAsianCoachesCards");
+  const emptyNode = document.querySelector("#bigFiveAsianCoachesEmptyState");
+
+  if (!statsNode || !sectionNode || !metaNode || !scopeNode || !cardsNode || !emptyNode) {
+    return;
+  }
+
+  if (!archive) {
+    statsNode.hidden = true;
+    sectionNode.hidden = true;
+    return;
+  }
+
+  const coaches = archive.coaches ?? [];
+  const sourceCount =
+    (archive.source_links ?? []).length +
+    coaches.reduce((total, coach) => total + (coach.source_links ?? []).length, 0);
+
+  statsNode.hidden = false;
+  sectionNode.hidden = false;
+  statsNode.innerHTML = [
+    renderCoachRecordStat(
+      t("overseas.coaches.afcCount"),
+      String(archive.scope_counts?.afc_member_association ?? 0),
+      t("overseas.coaches.scope.afc")
+    ),
+    renderCoachRecordStat(
+      t("overseas.coaches.broadCount"),
+      String(archive.scope_counts?.geographic_broad ?? coaches.length),
+      t("overseas.coaches.scope.broad")
+    ),
+    renderCoachRecordStat(
+      t("overseas.coaches.primaryRecord"),
+      formatCoachRecord(archive.primary_scope_record),
+      t("overseas.coaches.points", { points: archive.primary_scope_record?.points ?? 0 })
+    ),
+    renderCoachRecordStat(
+      t("overseas.coaches.sourceCount"),
+      String(sourceCount),
+      formatDate(archive.last_checked)
+    )
+  ].join("");
+
+  metaNode.textContent = t("overseas.coaches.meta", { date: formatDate(archive.last_checked) });
+  scopeNode.textContent = [
+    t("overseas.coaches.primaryScope", { count: archive.scope_counts?.afc_member_association ?? 0 }),
+    t("overseas.coaches.broadScope", { count: archive.scope_counts?.geographic_broad ?? coaches.length })
+  ].join(" ");
+  cardsNode.innerHTML = coaches.map(renderBigFiveAsianCoachCard).join("");
+  emptyNode.hidden = coaches.length > 0;
 }
 
 function renderOverseasSpecialListCard(list) {

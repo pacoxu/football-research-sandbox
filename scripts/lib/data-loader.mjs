@@ -194,6 +194,10 @@ export async function loadDataset() {
     path.join(paths.raw, "china-men-youth-coaches.json"),
     null
   );
+  const bigFiveAsianCoaches = await readOptionalJson(
+    path.join(paths.raw, "big-five-asian-coaches.json"),
+    null
+  );
 
   return {
     players,
@@ -203,6 +207,7 @@ export async function loadDataset() {
     dossiers,
     tournamentArchive,
     chinaMenYouthCoaches,
+    bigFiveAsianCoaches,
     clubNameOverrides
   };
 }

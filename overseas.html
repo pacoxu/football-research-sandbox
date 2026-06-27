@@ -8,7 +8,7 @@
       name="description"
       content="查看中日韩当前留洋样本、联赛层级对比与历史记录。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260523-tournament-detail-cache-fix" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260627-asian-coaches" />
   </head>
   <body data-page="overseas">
     <div class="site-shell">
@@ -115,6 +115,21 @@
           <div id="overseasHistoryCards" class="story-grid"></div>
           <div id="overseasHistoryEmptyState" class="empty-state" hidden data-i18n="overseas.history.empty">当前筛选条件下没有匹配的历史样本。</div>
         </section>
+
+        <section id="bigFiveAsianCoachStats" class="stats-row"></section>
+
+        <section id="bigFiveAsianCoachesSection" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="overseas.coaches.eyebrow">Coaches</p>
+              <h2 data-i18n="overseas.coaches.title">五大联赛亚洲教练</h2>
+            </div>
+            <p id="bigFiveAsianCoachesMeta" class="section-note" data-i18n="common.loading">载入中</p>
+          </div>
+          <p id="bigFiveAsianCoachesScope" class="section-note"></p>
+          <div id="bigFiveAsianCoachesCards" class="story-grid"></div>
+          <div id="bigFiveAsianCoachesEmptyState" class="empty-state" hidden data-i18n="overseas.coaches.empty">当前还没有可展示的五大联赛亚洲教练记录。</div>
+        </section>
       </main>
 
       <footer class="site-footer">
@@ -122,6 +137,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260523-tournament-detail-cache-fix"></script>
+    <script type="module" src="./assets/app.js?v=20260627-asian-coaches"></script>
   </body>
 </html>

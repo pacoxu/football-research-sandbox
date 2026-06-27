@@ -37,10 +37,6 @@ function deriveMarketValueUrl(profileUrl, playerId) {
 }
 
 function formatCompact(compact, fallbackValue) {
-  if (compact?.prefix && compact?.content && compact?.suffix) {
-    return `${compact.prefix}${compact.content}${String(compact.suffix).toLowerCase()}`;
-  }
-
   if (typeof fallbackValue !== "number" || fallbackValue <= 0) {
     return "";
   }
