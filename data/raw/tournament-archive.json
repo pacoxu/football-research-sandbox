@@ -2293,7 +2293,21 @@
     "runner_up": "Brazil",
     "china_status": "quarter-final",
     "china_summary": "中国国少小组赛 1 胜 2 平保持不败出线，1/4 决赛 1 比 5 负于土耳其，止步八强。",
+    "coach": {
+      "name": "Zhang Ning",
+      "local_name": "张宁",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "2004 AFC U-17 Championship",
+      "summary": "中国 U17 在 2004 AFC U-17 Championship 打进决赛并获得亚军，通过 AFC U17 路径取得 2005 FIFA U-17 World Championship 资格。",
+      "final_stage": "AFC U-17 Championship runners-up"
+    },
     "china_detail_scope": "squad",
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "已结构化 squad、matches 和 goals；逐人 minutes 需要从 FIFA technical report 或 match centre 继续抽取。"
+    },
     "china_squad": [
       { "squad_number": 1, "player": "Wang Dalei", "position": "Goalkeeper", "club": "Dalian Tielu", "note": "后续成为成年国家队长期门将。" },
       { "squad_number": 2, "player": "Cui Nanri", "position": "Defender", "club": "Yanbian" },
@@ -2400,7 +2414,22 @@
     "runner_up": "Nigeria",
     "china_status": "round-of-16",
     "china_summary": "中国国青小组赛 3 战全胜头名出线，1/8 决赛 2 比 3 惜败德国，止步十六强。这个荷兰世青赛周期也是 85 国青最完整的一次成建制兑现。",
+    "coach": {
+      "name": "Eckhard Krautzun",
+      "local_name": "埃克哈德·克劳琛",
+      "nationality": "Germany",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "2004 AFC Youth Championship",
+      "summary": "中国 U20 在 2004 AFC Youth Championship 打进决赛并获得亚军，通过 AFC youth 路径取得 2005 FIFA World Youth Championship 资格。",
+      "final_stage": "AFC Youth Championship runners-up"
+    },
     "china_detail_scope": "squad",
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "已结构化 squad、matches 和 goals；逐人 minutes 需要从 FIFA technical report 或 match centre 继续抽取。"
+    },
     "china_squad": [
       { "squad_number": 1, "player": "Zhang Lei", "position": "Goalkeeper", "club": "Dongguan Nancheng" },
       { "squad_number": 2, "player": "Zhao Ming", "position": "Defender", "club": "Jilin Yanbian" },
@@ -2620,6 +2649,144 @@
     ]
   },
   {
+    "id": "fifa-world-cup-2002",
+    "confederation": "FIFA",
+    "competition_name": "FIFA World Cup Korea/Japan 2002",
+    "level": "senior-world-cup",
+    "edition_label": "2002",
+    "host": "Korea Republic / Japan",
+    "date_range": {
+      "start": "2002-05-31",
+      "end": "2002-06-30"
+    },
+    "status": "completed",
+    "champion": "Brazil",
+    "runner_up": "Germany",
+    "china_status": "group-stage",
+    "china_summary": "中国队首次进入 FIFA 世界杯决赛圈，三场小组赛分别 0 比 2 负哥斯达黎加、0 比 4 负巴西、0 比 3 负土耳其，小组赛出局。",
+    "china_detail_scope": "squad-matches-minutes",
+    "source_checked_at": "2026-06-27",
+    "coach": {
+      "name": "Bora Milutinovic",
+      "local_name": "博拉·米卢蒂诺维奇",
+      "fifa_nationality_label": "YUG",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "2002 FIFA World Cup AFC qualification",
+      "summary": "中国队通过亚洲区第一阶段小组赛和最终阶段 B 组晋级；最终阶段面对阿联酋、阿曼、卡塔尔、乌兹别克斯坦 8 战 6 胜 1 平 1 负，以 B 组第一首次晋级世界杯决赛圈。",
+      "final_round_record": {
+        "matches": 8,
+        "wins": 6,
+        "draws": 1,
+        "losses": 1,
+        "goals_for": 13,
+        "goals_against": 2
+      },
+      "clinched": {
+        "date": "2001-10-07",
+        "match": "China PR 1-0 Oman"
+      }
+    },
+    "china_goal_summary": {
+      "goals_for": 0,
+      "goals_against": 9,
+      "player_goals": []
+    },
+    "minute_methodology": "Minutes are taken from the FIFA technical report player-by-player table for China PR; match stoppage-time rounding is not re-derived from substitution events.",
+    "china_squad": [
+      { "squad_number": 1, "player": "An Qi", "position": "Goalkeeper", "club": "Dalian Shide", "appearances": 0, "starts": 0, "minutes": 0, "goals": 0 },
+      { "squad_number": 2, "player": "Zhang Enhua", "position": "Defender", "club": "Dalian Shide", "appearances": 0, "starts": 0, "minutes": 0, "goals": 0 },
+      { "squad_number": 3, "player": "Yang Pu", "position": "Defender", "club": "Beijing Guoan", "appearances": 2, "starts": 1, "minutes": 118, "goals": 0 },
+      { "squad_number": 4, "player": "Wu Chengying", "position": "Defender", "club": "Shanghai Shenhua", "appearances": 3, "starts": 3, "minutes": 226, "goals": 0 },
+      { "squad_number": 5, "player": "Fan Zhiyi", "position": "Defender", "club": "Dundee FC", "club_country": "Scotland", "appearances": 1, "starts": 1, "minutes": 74, "goals": 0 },
+      { "squad_number": 6, "player": "Shao Jiayi", "position": "Midfielder", "club": "Beijing Guoan", "appearances": 2, "starts": 0, "minutes": 36, "goals": 0, "discipline_note": "Sent off against Turkey." },
+      { "squad_number": 7, "player": "Sun Jihai", "position": "Defender", "club": "Manchester City", "club_country": "England", "appearances": 1, "starts": 1, "minutes": 26, "goals": 0 },
+      { "squad_number": 8, "player": "Li Tie", "position": "Midfielder", "club": "Liaoning", "appearances": 3, "starts": 3, "minutes": 270, "goals": 0 },
+      { "squad_number": 9, "player": "Ma Mingyu", "position": "Midfielder", "club": "Sichuan", "appearances": 2, "starts": 2, "minutes": 152, "goals": 0 },
+      { "squad_number": 10, "player": "Hao Haidong", "position": "Forward", "club": "Dalian Shide", "appearances": 3, "starts": 3, "minutes": 238, "goals": 0 },
+      { "squad_number": 11, "player": "Yu Genwei", "position": "Forward", "club": "Tianjin Teda", "appearances": 2, "starts": 0, "minutes": 33, "goals": 0 },
+      { "squad_number": 12, "player": "Su Maozhen", "position": "Forward", "club": "Shandong Luneng", "appearances": 1, "starts": 0, "minutes": 24, "goals": 0 },
+      { "squad_number": 13, "player": "Gao Yao", "position": "Midfielder", "club": "Shandong Luneng", "appearances": 0, "starts": 0, "minutes": 0, "goals": 0 },
+      { "squad_number": 14, "player": "Li Weifeng", "position": "Defender", "club": "Shenzhen Pingan", "appearances": 3, "starts": 3, "minutes": 270, "goals": 0 },
+      { "squad_number": 15, "player": "Zhao Junzhe", "position": "Midfielder", "club": "Liaoning", "appearances": 2, "starts": 2, "minutes": 180, "goals": 0 },
+      { "squad_number": 16, "player": "Qu Bo", "position": "Forward", "club": "Qingdao Hainiu", "appearances": 3, "starts": 0, "minutes": 96, "goals": 0 },
+      { "squad_number": 17, "player": "Du Wei", "position": "Defender", "club": "Shanghai Shenhua", "appearances": 2, "starts": 2, "minutes": 180, "goals": 0 },
+      { "squad_number": 18, "player": "Li Xiaopeng", "position": "Midfielder", "club": "Shandong Luneng", "appearances": 3, "starts": 3, "minutes": 270, "goals": 0 },
+      { "squad_number": 19, "player": "Qi Hong", "position": "Midfielder", "club": "Shanghai Zhongyuan", "appearances": 1, "starts": 1, "minutes": 66, "goals": 0 },
+      { "squad_number": 20, "player": "Yang Chen", "position": "Forward", "club": "Eintracht Frankfurt", "club_country": "Germany", "appearances": 2, "starts": 2, "minutes": 139, "goals": 0 },
+      { "squad_number": 21, "player": "Xu Yunlong", "position": "Defender", "club": "Beijing Guoan", "appearances": 3, "starts": 3, "minutes": 270, "goals": 0 },
+      { "squad_number": 22, "player": "Jiang Jin", "position": "Goalkeeper", "club": "Tianjin Teda", "appearances": 3, "starts": 3, "minutes": 270, "goals": 0 },
+      { "squad_number": 23, "player": "Ou Chuliang", "position": "Goalkeeper", "club": "Yunnan Hongta", "appearances": 0, "starts": 0, "minutes": 0, "goals": 0 }
+    ],
+    "china_matches": [
+      {
+        "date": "2002-06-04",
+        "stage": "Group C",
+        "opponent": "Costa Rica",
+        "venue": "Gwangju World Cup Stadium",
+        "score_for": 0,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [],
+        "note": "中国队世界杯决赛圈首战。"
+      },
+      {
+        "date": "2002-06-08",
+        "stage": "Group C",
+        "opponent": "Brazil",
+        "venue": "Jeju World Cup Stadium",
+        "score_for": 0,
+        "score_against": 4,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2002-06-13",
+        "stage": "Group C",
+        "opponent": "Turkey",
+        "venue": "Seoul World Cup Stadium",
+        "score_for": 0,
+        "score_against": 3,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      { "player": "Jiang Jin", "goals": 0, "assists": 0, "minutes": 270, "role_note": "三场小组赛均打满，是中国队世界杯正赛首发门将。" },
+      { "player": "Li Weifeng", "goals": 0, "assists": 0, "minutes": 270, "role_note": "三场打满，代表 2002 世界杯周期后防主线。" },
+      { "player": "Li Tie", "goals": 0, "assists": 0, "minutes": 270, "role_note": "三场打满，连接 2002 世界杯与后续埃弗顿留洋样本。" },
+      { "player": "Hao Haidong", "goals": 0, "assists": 0, "minutes": 238, "role_note": "三场均首发，是锋线核心但全队未能取得进球。" },
+      { "player": "Sun Jihai", "goals": 0, "assists": 0, "minutes": 26, "role_note": "首战受伤早退，样本价值主要来自其英格兰注册背景和后续英超经历。" }
+    ],
+    "source_links": [
+      {
+        "label": "FIFA 2002 technical report and statistics",
+        "url": "https://digitalhub.fifa.com/m/4e20fa44d92b129a/original/e7ncqlvjegg3fz2a7q30-pdf.pdf"
+      },
+      {
+        "label": "FIFA match centre: China PR 0-2 Costa Rica",
+        "url": "https://www.fifa.com/en/match-centre/match/17/4395/5928/43950012"
+      },
+      {
+        "label": "FIFA match centre: Brazil 4-0 China PR",
+        "url": "https://www.fifa.com/en/match-centre/match/17/4395/5928/43950026"
+      },
+      {
+        "label": "FIFA match centre: Turkey 3-0 China PR",
+        "url": "https://www.fifa.com/en/match-centre/match/17/4395/5928/43950042"
+      },
+      {
+        "label": "2002 FIFA World Cup squads",
+        "url": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_squads"
+      },
+      {
+        "label": "2002 FIFA World Cup Group C",
+        "url": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_Group_C"
+      }
+    ]
+  },
+  {
     "id": "fifa-world-cup-2022",
     "confederation": "FIFA",
     "competition_name": "FIFA World Cup Qatar 2022",
@@ -2635,6 +2802,11 @@
     "runner_up": "France",
     "china_status": "did-not-qualify",
     "china_summary": "中国队未晋级 2022 世界杯决赛圈。",
+    "qualification_path": {
+      "route": "AFC qualifying",
+      "summary": "中国队进入亚洲区第三阶段，但在 12 强赛 B 组排名第五，未能进入直接出线或洲际附加赛路径。",
+      "final_stage": "AFC third round Group B"
+    },
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
@@ -2661,6 +2833,11 @@
     "runner_up": "",
     "china_status": "did-not-qualify",
     "china_summary": "截至 2026-05-23，中国队已无缘 2026 世界杯决赛圈。",
+    "qualification_path": {
+      "route": "AFC qualifying",
+      "summary": "中国队从亚洲区第二阶段晋级第三阶段，但未能在第三阶段小组中进入直接出线或第四阶段附加赛席位。",
+      "final_stage": "AFC third round"
+    },
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
@@ -2730,6 +2907,11 @@
     "runner_up": "Italy",
     "china_status": "did-not-qualify",
     "china_summary": "中国 U20 未能拿到 2023 世青赛资格。",
+    "qualification_path": {
+      "route": "AFC U20 Asian Cup Uzbekistan 2023",
+      "summary": "2023 世青赛亚洲区名额由 2023 U20 亚洲杯产生；中国 U20 止步八强，未进入取得 FIFA U20 世界杯资格的前四名。",
+      "final_stage": "AFC U20 Asian Cup quarter-finals"
+    },
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
@@ -2756,9 +2938,113 @@
     "runner_up": "Argentina",
     "china_status": "did-not-qualify",
     "china_summary": "中国 U20 未能跻身 2025 世青赛。",
+    "qualification_path": {
+      "route": "AFC U20 Asian Cup China 2025",
+      "summary": "2025 世青赛亚洲区名额由 2025 U20 亚洲杯产生；中国 U20 作为东道主进入八强，但未进入取得 FIFA U20 世界杯资格的前四名。",
+      "final_stage": "AFC U20 Asian Cup quarter-finals"
+    },
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
+    "competition_lineage": [
+      {
+        "years": "1977-2005",
+        "official_name": "FIFA World Youth Championship",
+        "archive_note": "仓库中 2005 中国参赛档案保留这一历史赛事名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-20 World Cup",
+        "archive_note": "2007 起使用 U-20 World Cup 命名。"
+      }
+    ],
+    "china_participation_history": {
+      "source_checked_at": "2026-06-27",
+      "scope_note": "按男足 FIFA World Youth Championship / FIFA U-20 World Cup 决赛圈整理；早期 qualification_path 先按 AFC U-19/U20 成绩映射，逐届名单和分钟另行拆分。",
+      "summary": {
+        "appearances": 5,
+        "first_appearance": "1983",
+        "best_finish": "Quarter-finals",
+        "best_years": ["1985"],
+        "finals_record": {
+          "matches": 18,
+          "wins": 7,
+          "draws": 3,
+          "losses": 8,
+          "goals_for": 25,
+          "goals_against": 26
+        }
+      },
+      "editions": [
+        {
+          "edition": "1983",
+          "historical_name": "FIFA World Youth Championship",
+          "china_status": "first-round",
+          "position": "12th",
+          "record": { "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 5, "goals_against": 8 },
+          "qualification_path": "1982 AFC Youth Championship runners-up; AFC youth pathway berth."
+        },
+        {
+          "edition": "1985",
+          "historical_name": "FIFA World Youth Championship",
+          "china_status": "quarter-final",
+          "position": "7th",
+          "record": { "matches": 4, "wins": 2, "draws": 0, "losses": 2, "goals_for": 5, "goals_against": 5 },
+          "qualification_path": "1985 AFC Youth Championship champions; AFC youth pathway berth."
+        },
+        {
+          "edition": "1997",
+          "historical_name": "FIFA World Youth Championship",
+          "china_status": "first-round",
+          "position": "18th",
+          "record": { "matches": 3, "wins": 0, "draws": 2, "losses": 1, "goals_for": 2, "goals_against": 3 },
+          "qualification_path": "1996 AFC Youth Championship runners-up; AFC youth pathway berth."
+        },
+        {
+          "edition": "2001",
+          "historical_name": "FIFA World Youth Championship",
+          "china_status": "round-of-16",
+          "position": "15th",
+          "record": { "matches": 4, "wins": 1, "draws": 1, "losses": 2, "goals_for": 2, "goals_against": 3 },
+          "qualification_path": "2000 AFC Youth Championship third place; AFC youth pathway berth."
+        },
+        {
+          "edition": "2005",
+          "historical_name": "FIFA World Youth Championship",
+          "china_status": "round-of-16",
+          "position": "10th",
+          "record": { "matches": 4, "wins": 3, "draws": 0, "losses": 1, "goals_for": 11, "goals_against": 7 },
+          "qualification_path": "2004 AFC Youth Championship runners-up; AFC youth pathway berth."
+        }
+      ],
+      "non_qualification_notes": [
+        {
+          "editions": "1977-1981",
+          "status": "did-not-enter",
+          "qualification_path": "Not entered in this index before the 1983 finals appearance."
+        },
+        {
+          "editions": "1987-1995",
+          "status": "did-not-qualify",
+          "qualification_path": "China PR did not reach FIFA finals through the AFC youth championship berths in this period."
+        },
+        {
+          "editions": "1999",
+          "status": "did-not-qualify",
+          "qualification_path": "China PR did not reach FIFA finals through the 1998 AFC youth championship pathway."
+        },
+        {
+          "editions": "2003",
+          "status": "did-not-qualify",
+          "qualification_path": "China PR reached the 2002 AFC Youth Championship quarter-finals but did not finish in the FIFA qualification positions."
+        },
+        {
+          "editions": "2007-2025",
+          "status": "did-not-qualify",
+          "qualification_path": "China PR did not return to the FIFA U-20 finals through AFC U-19/U20 qualifying; 2023 and 2025 are also tracked as separate archive entries above."
+        }
+      ]
+    },
     "source_links": [
       {
         "label": "FIFA U-20 World Cup Chile 2025 dates",
@@ -2767,6 +3053,14 @@
       {
         "label": "Every FIFA U-20 World Cup final",
         "url": "https://www.fifa.com/en/articles/every-u-20-world-cup-final"
+      },
+      {
+        "label": "FIFA U-20 World Cup overview",
+        "url": "https://en.wikipedia.org/wiki/FIFA_U-20_World_Cup"
+      },
+      {
+        "label": "China U-20 competitive record",
+        "url": "https://en.wikipedia.org/wiki/China_national_under-20_football_team"
       }
     ]
   },
@@ -2786,6 +3080,11 @@
     "runner_up": "France",
     "china_status": "did-not-qualify",
     "china_summary": "中国 U17 未能进入 2023 世少赛决赛圈。",
+    "qualification_path": {
+      "route": "AFC U17 Asian Cup Thailand 2023",
+      "summary": "2023 世少赛亚洲区名额由 2023 U17 亚洲杯产生；中国 U17 小组赛出局，未进入取得 FIFA U17 世界杯资格的阶段。",
+      "final_stage": "AFC U17 Asian Cup group stage"
+    },
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
@@ -2812,6 +3111,11 @@
     "runner_up": "Austria",
     "china_status": "did-not-qualify",
     "china_summary": "中国 U17 未能拿到 2025 世少赛资格。",
+    "qualification_path": {
+      "route": "AFC U17 Asian Cup Saudi Arabia 2025",
+      "summary": "2025 世少赛亚洲区名额由 2025 U17 亚洲杯产生；中国 U17 小组赛 1 胜 2 负，未进入取得 FIFA U17 世界杯资格的阶段。",
+      "final_stage": "AFC U17 Asian Cup group stage"
+    },
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
@@ -2842,9 +3146,42 @@
     "runner_up": "",
     "china_status": "qualified",
     "china_summary": "截至 2026-05-23，中国 U17 已通过 2026 U17 亚洲杯晋级 2026 世少赛。",
+    "qualification_path": {
+      "route": "AFC U17 Asian Cup Saudi Arabia 2026",
+      "summary": "中国 U17 通过 2026 U17 亚洲杯取得 2026 FIFA U17 世界杯资格，并在亚洲杯正赛中获得亚军。",
+      "final_stage": "AFC U17 Asian Cup runners-up"
+    },
     "china_detail_scope": "none",
+    "competition_lineage": [
+      {
+        "years": "1985-1991",
+        "official_name": "FIFA U-16 World Championship",
+        "archive_note": "早期世少赛按 U-16 World Championship 命名。"
+      },
+      {
+        "years": "1993-2005",
+        "official_name": "FIFA U-17 World Championship",
+        "archive_note": "1993 起年龄组改为 U-17，2005 中国档案保留 World Championship 历史名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-17 World Cup",
+        "archive_note": "2007 起使用 U-17 World Cup 命名。"
+      }
+    ],
     "china_matches": [],
     "china_key_players": [],
+    "china_participation_history": {
+      "source_checked_at": "2026-06-27",
+      "appearances_before_2026": 6,
+      "qualified_edition_count_including_2026": 7,
+      "first_appearance": "1985",
+      "best_finish": "Quarter-finals",
+      "best_years": ["1985", "2005"],
+      "finals_editions": ["1985", "1989", "1991", "1993", "2003", "2005"],
+      "qualified_future_editions": ["2026"],
+      "note": "详细逐届战绩保留在 regional_history.editions；这里提供 #18 所需的中国 U16/U17 世界赛参赛年份索引。"
+    },
     "regional_history": {
       "scope_note": {
         "zh": "按男足 1985 至 2026 各届 FIFA U-16 World Championship、FIFA U-17 World Championship / World Cup 决赛圈整理；2026 这一行表示已经获得资格、赛事尚未开打。",
