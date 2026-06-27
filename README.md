@@ -40,6 +40,7 @@ python3 -m http.server 4173
 │   │   ├── projects.json
 │   │   └── tournaments.json
 │   └── site/                # 给静态页面直接消费的聚合 JSON
+├── docs/                    # 研究说明、收集口径和待核清单
 ├── scripts/                 # 校验、聚合、同步 SQLite
 ├── storage/                 # 本地 SQLite 输出目录
 └── .github/workflows/       # GitHub Pages 发布流程
@@ -53,6 +54,8 @@ python3 -m http.server 4173
 - `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、美洲其他四个层级。
 - 留洋国家条目可选带 `featured_records`，用于补真实个案，至少保留赛季、联赛、俱乐部、正式比赛出场与摘要。
 - `data/raw/big-five-asian-coaches.json` 维护五大联赛顶级联赛亚洲教练样本，战绩优先按联赛场次统计，并用 `counted_in` 区分 AFC 主口径与广义亚洲边界口径。
+- `docs/research/asian-chinese-player-coach-collection.md` 记录亚洲/中国球员与教练的信息收集口径、当前覆盖和待核队列。
+- `docs/research/china-league-pyramid-and-regional-super-leagues.md` 区分中国职业联赛层级、中冠通道和苏超/东北超/赣超/湘超等地方城市赛事。
 
 ## 现阶段种子范围
 
