@@ -4642,8 +4642,8 @@
       "focus_tags": [
         "donglu-football-boys"
       ],
-      "last_reviewed": "2026-05-23",
-      "summary": "这不是单一球队，而是叠在一起的两层结构：一层是以 2009 年龄段为核心、随后扩展到 2010、2014、2015、2016 等多年龄段的民间青训与比赛平台；另一层是董路主导的 2034 杯 U12 全国赛事平台。公开资料里较稳妥的做法，是先按批次整理公开可核主干，再把 2024 年足协 U15 第四期集训可交叉确认的 9 名球员与 2025 年 6 月荷兰杯 21 人赛会名单单列管理，同时把 2034 杯按届次、赛果和分区赛规模单独建档。",
+      "last_reviewed": "2026-06-27",
+      "summary": "这不是单一球队，而是叠在一起的两层结构：一层是以 2009 年龄段为核心、随后扩展到 2010、2014、2015、2016 等多年龄段的民间青训与比赛平台；另一层是董路主导的 2034 杯 U12 全国赛事平台。公开资料里较稳妥的做法，是先按批次整理公开可核主干，再把 2024 年足协 U15 第四期集训可交叉确认的 9 名球员、2025 年 6 月荷兰杯 21 人赛会名单和 2029 U20 图片线索单列管理，同时把 2034 杯按届次、赛果和分区赛规模单独建档。",
       "source_document": {
         "title": "deep-research-report.md",
         "path": "/Users/pacoxu/Downloads/deep-research-report.md"
@@ -4668,6 +4668,11 @@
           "title": "Bilibili search card: 中国足球小将",
           "path": "https://search.bilibili.com/all?keyword=%E4%B8%AD%E5%9B%BD%E8%B6%B3%E7%90%83%E5%B0%8F%E5%B0%86",
           "summary": "搜索结果页可稳定确认“可能是国内第一家青训频道”的账号签名，以及公开视频长期围绕 09 主干线、2034 杯、荷兰杯和球员个人纪录片展开。"
+        },
+        {
+          "title": "用户图片：2029 U20 预测海报",
+          "path": "/Users/pacoxu/Pictures/Photos Library.photoslibrary/resources/derivatives/F/F7C82DE2-727F-4516-9718-ED72150445B0_1_105_c.jpeg",
+          "summary": "2026-06-27 用户提供的图片线索；用于转录 2029 U20 预测海报码位，并与当前球员库和公开检索结果交叉。该图片不是官方报名名单，低置信名字只进入专题线索视图。"
         },
         {
           "title": "Bilibili video: 2034杯中国足球小将吕孟洋 个人集锦！",
@@ -5083,6 +5088,168 @@
               "role": "前锋",
               "club": "比利亚雷亚尔青年队",
               "note": "2010 年龄段中国足球小将代表前锋，2024 年入选 U14 国少选拔，2026 年以比利亚雷亚尔球员身份入选 U16 并在蒙太古杯对秘鲁进球。"
+            }
+          ]
+        },
+        {
+          "id": "user-image-2029-u20-projection",
+          "name": "用户图片线索：2029 U20 预测海报码位",
+          "confidence": "C",
+          "description": "按用户提供图片转录，并与当前库内球员档、足球小将专题资料和公开检索结果交叉。该图更适合当作民间预测/社媒海报线索，不等同于 FIFA、AFC、中国足协或俱乐部官方 U20 名单。",
+          "players": [
+            {
+              "name": "Mao Yongbin",
+              "local_name": "毛永彬",
+              "role": "1 / 门将",
+              "club": "上海海港足球俱乐部",
+              "note": "图片 1 号。已在本专题 verified-core-9 与 link_audit 中出现；可由 2024 U15 第四期集训、Transfermarkt 线索和 2025 U16 第五期集训继续补个人档，当前缺足够稳定的出生日期源，暂不写入主球员表。"
+            },
+            {
+              "name": "Dai Youzhe",
+              "local_name": "戴宥哲",
+              "role": "2 / 边后卫",
+              "club": "南京足协",
+              "note": "图片 2 号。已在本专题 verified-core-9 与 link_audit 中出现；2024 U15 第四期集训可核入选，当前仍缺稳定出生日期与后续注册归属，暂作待建档线索。"
+            },
+            {
+              "name": "Liu Kaiyuan",
+              "local_name": "刘凯源",
+              "role": "3 / 前锋",
+              "club": "FC Villarreal Youth",
+              "note": "图片 3 号。已建档 cn-liu-kaiyuan-2010；资料主线为中国足球小将 2010、2024 U14 国少选拔、2026 U16 第二期集训和比利亚雷亚尔青年队。"
+            },
+            {
+              "name": "Yuan Bohan",
+              "local_name": "袁博涵",
+              "role": "4 / 后卫线索",
+              "club": "未核实",
+              "note": "图片 4 号。公开检索尚未稳定命中同一名青训球员，先保留为低置信待核名字，不写入主球员表。"
+            },
+            {
+              "name": "Huang Zijie",
+              "local_name": "黄子杰",
+              "role": "5 / 左后卫",
+              "club": "佛山超盈实验中学",
+              "note": "图片 5 号。已在本专题 verified-core-9 与 link_audit 中出现；2024 U15 第四期集训可核入选，当前缺稳定出生日期与后续注册归属，暂作待建档线索。"
+            },
+            {
+              "name": "Lyu Mengyang",
+              "local_name": "吕孟洋",
+              "role": "7 / 中场或自由前锋",
+              "club": "Europa, C.E. Juvenil B",
+              "note": "图片 7 号。已建档 cn-lyu-mengyang-2009；现有档案已记录其中国足球小将背景、徐州/清华附中节点和西班牙欧罗巴注册路径。"
+            },
+            {
+              "name": "Youan Li",
+              "local_name": "李佑安",
+              "role": "8 / 中场",
+              "club": "中国人民大学附属中学",
+              "note": "图片 8 号。已建档 cn-li-youan-2010；现有档案记录中国足球小将 2010、北京亿城BTV三高和人大附中路径。"
+            },
+            {
+              "name": "Zhao Songyuan",
+              "local_name": "赵松源",
+              "role": "9 / 中锋",
+              "club": "清华附中",
+              "note": "图片 9 号。已建档 cn-zhao-songyuan-2009；现有档案覆盖中国足球小将、清华附中、U17 亚预赛与 2026 U17 亚洲杯主线。"
+            },
+            {
+              "name": "Wan Xiang",
+              "local_name": "万项",
+              "role": "10 / 中场",
+              "club": "Red Star Belgrade U17",
+              "note": "图片 10 号。已建档 cn-wan-xiang-2009；现有档案覆盖中国足球小将、湖北青训、塞尔维亚留洋和 2026 U17 亚洲杯主线。"
+            },
+            {
+              "name": "Kuang Zhaolei",
+              "local_name": "邝兆镭",
+              "role": "11 / 前场核心",
+              "club": "青岛海牛",
+              "note": "图片 11 号。已建档 cn-kuang-zhaolei-2009；现有档案覆盖项目招牌球员、清华附中、国字号和中超 U21 线索。"
+            },
+            {
+              "name": "Gu Boyu",
+              "local_name": "顾博宇",
+              "role": "13 / 后卫",
+              "club": "Shanghai Shenhua Youth",
+              "note": "图片 13 号。已建档 cn-gu-boyu-2009；现有档案记录足球小将 09、清华附中 U13 和上海申花青年队路径。"
+            },
+            {
+              "name": "Zhang Lindong",
+              "local_name": "张林峒",
+              "role": "14 / 中场",
+              "club": "DAMM CF",
+              "note": "图片 14 号。已建档 cn-zhang-lindong-2010；现有档案记录中国足球小将 2010、圣胡斯特竞技、达姆和 U16 第二期集训。"
+            },
+            {
+              "name": "Lv Mengzhou",
+              "local_name": "吕孟洲",
+              "role": "15 / 待核中前场线索",
+              "club": "未核实",
+              "note": "图片 15 号。与本专题 2009 第一代和 2025 荷兰杯名单中的“吕孟洲”一致度较高，但公开检索仍缺可单独建档的生日、注册和外链，先保留为待核线索。"
+            },
+            {
+              "name": "Li Dongchen",
+              "local_name": "李东宸",
+              "role": "16 / 左中卫",
+              "club": "Sant Cugat FC",
+              "note": "图片 16 号。已建档 cn-li-dongchen-2010；现有档案记录足球小将 2010、北京路径、西班牙圣库加特和 U16 第二期集训。"
+            },
+            {
+              "name": "Wang Xiuhao",
+              "local_name": "汪修昊",
+              "role": "17 / 边后卫",
+              "club": "DAMM CF",
+              "note": "图片 17 号。已建档 cn-wang-xiuhao-2009；现有档案记录足球小将背景、U17 亚洲杯与西班牙达姆注册路径。"
+            },
+            {
+              "name": "Peng Xianchen",
+              "local_name": "彭显宸",
+              "role": "18 / 前场",
+              "club": "Shandong Taishan FC",
+              "note": "图片 18 号。已建档 cn-peng-xianchen-2009；中文名由 player-name-overrides 提供，主线为山东泰山 / 鲁能足校与 2026 U17 亚洲杯。"
+            },
+            {
+              "name": "Zhang Bolin",
+              "local_name": "张伯霖",
+              "role": "19 / 中场",
+              "club": "Shandong Taishan FC",
+              "note": "图片 19 号。已建档 cn-zhang-bolin-2009；中文名由 player-name-overrides 提供，基础信息来自 AFC U17 2026 终报名表。"
+            },
+            {
+              "name": "Zhou Yunuo",
+              "local_name": "周雨诺",
+              "role": "20 / 中场",
+              "club": "清华附中",
+              "note": "图片 20 号。已建档 cn-zhou-yunuo-2009；现有档案记录南京校园足球、中国足球小将、清华附中和中国 U17 队长线索。"
+            },
+            {
+              "name": "Nan Zixun",
+              "local_name": "南子勋",
+              "role": "21 / 中后卫",
+              "club": "清华附中",
+              "note": "图片 21 号。已建档 cn-nan-zixun-2009；现有档案记录足球小将 09、清华附中、U16/U17 集训和中青赛节点。"
+            },
+            {
+              "name": "Wang Ziquan",
+              "local_name": "王梓泉",
+              "role": "22 / 待核线索",
+              "club": "未核实",
+              "note": "图片 22 号。公开检索尚未稳定命中同一名青训球员，先保留为低置信待核名字，不写入主球员表。"
+            },
+            {
+              "name": "Lang Dacheng",
+              "local_name": "郎达成",
+              "role": "23 / 待核线索",
+              "club": "未核实",
+              "note": "图片 23 号。公开检索尚未稳定命中同一名青训球员，先保留为低置信待核名字，不写入主球员表。"
+            },
+            {
+              "name": "Jin Xie",
+              "local_name": "谢晋",
+              "role": "24 / 前锋或边锋",
+              "club": "Real Carabanchel CF",
+              "note": "图片 24 号。已建档 cn-xie-jin-2009；现有档案记录北大附中、旅西路径、U16/U17 国字号和 2026 U17 亚洲杯进球线索。"
             }
           ]
         },
