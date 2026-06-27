@@ -30,7 +30,7 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData() {
   const dataset = await loadDataset();
-  const generatedAt = "2026-05-23";
+  const generatedAt = "2026-06-27";
   const players = [...dataset.players].sort(comparePlayers);
 
   const overview = {
@@ -46,6 +46,7 @@ export async function buildSiteData() {
     dossiers: dataset.dossiers,
     tournament_archive: dataset.tournamentArchive,
     china_men_youth_coaches: dataset.chinaMenYouthCoaches,
+    big_five_asian_coaches: dataset.bigFiveAsianCoaches,
     club_name_overrides: dataset.clubNameOverrides
   };
 

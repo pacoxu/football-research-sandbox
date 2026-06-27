@@ -70,8 +70,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "出生日期可由新浪球员资料页校对；当前“伯恩利 U21 签约 + 沃日多瓦茨 U19 外租”路径由 2026 年春季多篇转会报道交叉确认。"
+      "last_checked": "2026-06-27",
+      "notes": "出生日期可由新浪球员资料页校对；当前“伯恩利 U21 签约 + 沃日多瓦茨 U19 外租”路径由 2026 年春季多篇转会报道和公开数据库交叉确认。短视频名单若直接写作伯恩利 U21，需补充其塞尔维亚外租节点。"
     }
   },
   {
@@ -415,8 +415,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协通知可核其 2024 年 U14 国少选拔与 2026 年 U16 第二期集训；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。"
+      "last_checked": "2026-06-27",
+      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协 2026-03-12 通知继续以比利亚雷亚尔足球俱乐部口径列名；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。"
     }
   },
   {
@@ -730,6 +730,102 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "中国足球小将 2010 队身份、地中海杯最佳阵容口径，以及旅西主线可由懂球帝专题稿、澎湃号与项目公开材料交叉确认；中国足协 2024-06-20、2024-09-24 和 2026-03-12 三份正式通知连续给出了“北京 -> 欧罗巴 -> 圣库加特”的报名归属变化。生日 2010-01-22 当前主要来自 Transfermarkt，而非足协或俱乐部官方注册页，因此这里保留日期但不把它表述为权威官方字段。位置方面，公开报道常把他写作左中卫或后防线球员，这里先按更稳妥的 Centre-Back 归档。"
+    }
+  },
+  {
+    "id": "cn-liu-shaoziyang-2003",
+    "name": "Liu Shaoziyang",
+    "local_name": "刘邵子洋",
+    "country": "China PR",
+    "birth_date": "2003-12-13",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 190,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "LAFC2",
+      "country": "United States"
+    },
+    "league_system_override": "MLS NEXT Pro",
+    "overseas_bucket_override": "americas-other",
+    "training_pathway": [
+      {
+        "stage_label": "武汉青训 / 拜仁签约前节点",
+        "organization": "Wuhan Three Towns youth / China youth pathway",
+        "country": "China",
+        "note": "公开履历将其早期路径与武汉青训和中国 U 系门将线相连；进入拜仁前已是中国同年龄段较受关注的门将样本。"
+      },
+      {
+        "stage_label": "2021 拜仁慕尼黑节点",
+        "organization": "Bayern Munich II",
+        "country": "Germany",
+        "note": "2021 年底加盟拜仁慕尼黑体系，常被报道为拜仁签下的首位中国球员；该阶段更准确地归为豪门梯队 / 青年培养路径，而不是五大联赛一线队样本。"
+      },
+      {
+        "stage_label": "2022 奥地利克拉根福二队外租",
+        "organization": "Austria Klagenfurt II",
+        "country": "Austria",
+        "note": "2022 年外租奥地利克拉根福二队，开始在奥地利低级别联赛获得正式比赛记录。"
+      },
+      {
+        "stage_label": "2023 里德二队外租",
+        "organization": "SV Ried II",
+        "country": "Austria",
+        "note": "随后转入 SV Ried II 外租链，继续以奥地利地区联赛 / 预备队比赛量为主要成长环境。"
+      },
+      {
+        "stage_label": "2024/25 霍恩外租",
+        "organization": "SV Horn",
+        "country": "Austria",
+        "note": "2024/25 赛季进入奥乙 SV Horn，欧洲成年职业联赛层面的可量化比赛主要集中在这一阶段。"
+      },
+      {
+        "stage_label": "2025/09 LAFC2",
+        "organization": "LAFC2",
+        "country": "United States",
+        "note": "LAFC2 官方公告确认其由拜仁慕尼黑二队加盟，进入 MLS NEXT Pro / 北美职业梯队路径；截至 2026-06-27，现役留洋口径按 LAFC2 处理。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "overseas-americas",
+      "china-overseas-current",
+      "goalkeeper-watch",
+      "bayern-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "china-overseas-2026",
+        "label": "2026 中国现役留洋跟踪",
+        "team": "LAFC2",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-06-27，官方可核的最新海外注册节点为 LAFC2；该队参加 MLS NEXT Pro，通常按美国第三级别职业体系 / MLS 预备队体系处理。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "LAFC2 signing announcement",
+        "url": "https://www.lafc.com/lafc2/news/lafc2-signs-goalkeeper-shaoziyang-liu-from-fc-bayern-munich-ii"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Wikipedia profile",
+        "url": "https://en.wikipedia.org/wiki/Liu_Shaoziyang"
+      },
+      {
+        "type": "profile",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shaoziyang-liu/profil/spieler/925293"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-06-27",
+      "notes": "当前归属以 LAFC2 官方签约公告为准；欧洲阶段的拜仁二队、奥地利克拉根福二队、里德二队、霍恩外租链与出场量，继续与 Wikipedia / Transfermarkt 类数据库交叉保留。"
     }
   }
 ]

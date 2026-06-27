@@ -378,6 +378,109 @@
     }
   },
   {
+    "id": "cn-liu-shaoziyang-2003",
+    "name": "Liu Shaoziyang",
+    "local_name": "刘邵子洋",
+    "country": "China PR",
+    "birth_date": "2003-12-13",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 190,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "LAFC2",
+      "country": "United States"
+    },
+    "league_system_override": "MLS NEXT Pro",
+    "overseas_bucket_override": "americas-other",
+    "training_pathway": [
+      {
+        "stage_label": "武汉青训 / 拜仁签约前节点",
+        "organization": "Wuhan Three Towns youth / China youth pathway",
+        "country": "China",
+        "note": "公开履历将其早期路径与武汉青训和中国 U 系门将线相连；进入拜仁前已是中国同年龄段较受关注的门将样本。"
+      },
+      {
+        "stage_label": "2021 拜仁慕尼黑节点",
+        "organization": "Bayern Munich II",
+        "country": "Germany",
+        "note": "2021 年底加盟拜仁慕尼黑体系，常被报道为拜仁签下的首位中国球员；该阶段更准确地归为豪门梯队 / 青年培养路径，而不是五大联赛一线队样本。"
+      },
+      {
+        "stage_label": "2022 奥地利克拉根福二队外租",
+        "organization": "Austria Klagenfurt II",
+        "country": "Austria",
+        "note": "2022 年外租奥地利克拉根福二队，开始在奥地利低级别联赛获得正式比赛记录。"
+      },
+      {
+        "stage_label": "2023 里德二队外租",
+        "organization": "SV Ried II",
+        "country": "Austria",
+        "note": "随后转入 SV Ried II 外租链，继续以奥地利地区联赛 / 预备队比赛量为主要成长环境。"
+      },
+      {
+        "stage_label": "2024/25 霍恩外租",
+        "organization": "SV Horn",
+        "country": "Austria",
+        "note": "2024/25 赛季进入奥乙 SV Horn，欧洲成年职业联赛层面的可量化比赛主要集中在这一阶段。"
+      },
+      {
+        "stage_label": "2025/09 LAFC2",
+        "organization": "LAFC2",
+        "country": "United States",
+        "note": "LAFC2 官方公告确认其由拜仁慕尼黑二队加盟，进入 MLS NEXT Pro / 北美职业梯队路径；截至 2026-06-27，现役留洋口径按 LAFC2 处理。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "overseas-americas",
+      "china-overseas-current",
+      "goalkeeper-watch",
+      "bayern-pathway"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "china-overseas-2026",
+        "label": "2026 中国现役留洋跟踪",
+        "team": "LAFC2",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-06-27，官方可核的最新海外注册节点为 LAFC2；该队参加 MLS NEXT Pro，通常按美国第三级别职业体系 / MLS 预备队体系处理。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "LAFC2 signing announcement",
+        "url": "https://www.lafc.com/lafc2/news/lafc2-signs-goalkeeper-shaoziyang-liu-from-fc-bayern-munich-ii"
+      },
+      {
+        "type": "wikipedia",
+        "label": "Wikipedia profile",
+        "url": "https://en.wikipedia.org/wiki/Liu_Shaoziyang"
+      },
+      {
+        "type": "profile",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shaoziyang-liu/profil/spieler/925293"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-06-27",
+      "notes": "当前归属以 LAFC2 官方签约公告为准；欧洲阶段的拜仁二队、奥地利克拉根福二队、里德二队、霍恩外租链与出场量，继续与 Wikipedia / Transfermarkt 类数据库交叉保留。"
+    },
+    "names": {
+      "zh": "刘邵子洋",
+      "en": "Liu Shaoziyang",
+      "native": "刘邵子洋",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
     "id": "cn-li-zhenquan-2003",
     "name": "Li Zhenquan",
     "local_name": "Li Zhenquan",
@@ -811,8 +914,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "2026-01-30 狼队官方确认永久签下徐彬，2026-03-20 中国足协国家队集训通知将其现俱乐部标注为英格兰巴恩斯利，当前按“狼队签约 + 巴恩斯利外租”处理。"
+      "last_checked": "2026-06-27",
+      "notes": "2026-01-30 狼队官方确认永久签下徐彬，2026-03-20 中国足协国家队集训通知将其现俱乐部标注为英格兰巴恩斯利，当前按“狼队签约 + 巴恩斯利外租”处理。短视频名单若写作狼队 U21，需补充巴恩斯利这一足协最新报名口径。"
     },
     "names": {
       "zh": "徐彬",
@@ -1411,7 +1514,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -1419,20 +1522,20 @@
         "market_value_url": "https://www.transfermarkt.com/alex-yang/marktwertverlauf/spieler/1012988",
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1012988/market-value-history?_x_preferred_context=com"
       },
-      "history_points": 2,
+      "history_points": 3,
       "current": {
-        "eur": 400000,
+        "eur": 500000,
         "currency": "EUR",
-        "display": "€400.00k",
-        "date": "2025-12-17"
+        "display": "€500k",
+        "date": "2026-06-08"
       },
       "peak": {
-        "eur": 400000,
+        "eur": 500000,
         "currency": "EUR",
-        "display": "€400.00k",
-        "date": "2025-12-17"
+        "display": "€500k",
+        "date": "2026-06-08"
       },
-      "last_change_date": "2025-12-17"
+      "last_change_date": "2026-06-08"
     }
   },
   {
@@ -1515,8 +1618,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "FC Den Bosch 2025-08-14 官方公告确认王博豪租借加盟；截至 2026-05-22 仍可在俱乐部一线队名单中检索到，作为当前荷乙留洋样本保留。"
+      "last_checked": "2026-06-27",
+      "notes": "FC Den Bosch 2025-08-14 官方公告确认王博豪租借加盟；截至 2026-06-27 仍可在俱乐部一线队名单中检索到，作为当前荷乙留洋样本保留。"
     },
     "names": {
       "zh": "王博豪",
@@ -2335,7 +2438,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -2516,7 +2619,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -2524,20 +2627,15 @@
         "market_value_url": "https://www.transfermarkt.co.in/zihao-lin/marktwertverlauf/spieler/1242688",
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1242688/market-value-history?_x_preferred_context=com"
       },
-      "history_points": 4,
-      "current": {
-        "eur": 10000,
-        "currency": "EUR",
-        "display": "€10.00k",
-        "date": "2025-06-23"
-      },
+      "history_points": 5,
+      "current": null,
       "peak": {
         "eur": 10000,
         "currency": "EUR",
-        "display": "€10.00k",
+        "display": "€10k",
         "date": "2024-03-21"
       },
-      "last_change_date": "2025-06-23"
+      "last_change_date": "2026-06-05"
     }
   },
   {
@@ -2611,8 +2709,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "出生日期可由新浪球员资料页校对；当前“伯恩利 U21 签约 + 沃日多瓦茨 U19 外租”路径由 2026 年春季多篇转会报道交叉确认。"
+      "last_checked": "2026-06-27",
+      "notes": "出生日期可由新浪球员资料页校对；当前“伯恩利 U21 签约 + 沃日多瓦茨 U19 外租”路径由 2026 年春季多篇转会报道和公开数据库交叉确认。短视频名单若直接写作伯恩利 U21，需补充其塞尔维亚外租节点。"
     },
     "names": {
       "zh": "张家鸣",
@@ -2682,6 +2780,110 @@
       "zh": "杨铭锐",
       "en": "Yang Mingrui",
       "native": "杨铭锐",
+      "ja": "",
+      "ko": ""
+    }
+  },
+  {
+    "id": "cn-wei-xiangxin-2008",
+    "name": "Wei Xiangxin",
+    "local_name": "魏祥鑫",
+    "country": "China PR",
+    "birth_date": "2008-02-26",
+    "age_band": "u20",
+    "primary_position": "Centre-Forward",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Meizhou Hakka FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "梅州客家青训节点",
+        "organization": "Meizhou Hakka youth",
+        "country": "China",
+        "note": "公开履历将其 2017 到 2024 年成长线归在梅州客家青训体系，是梅州本土青训向一线队输送的代表样本。"
+      },
+      {
+        "stage_label": "2024 广东铭途 / 中冠节点",
+        "organization": "Guangdong Mingtu FC",
+        "country": "China",
+        "note": "2024 年租借广东铭途参加中冠并打入 7 球，随后回到梅州客家进入更高等级职业联赛环境。"
+      },
+      {
+        "stage_label": "2025 梅州客家一线队节点",
+        "organization": "Meizhou Hakka FC",
+        "country": "China",
+        "note": "2025 赛季代表梅州客家一线队出场并取得进球，是当前从国内职业联赛进入欧洲关注池的前锋样本。"
+      },
+      {
+        "stage_label": "2025/04 欧塞尔试训",
+        "organization": "AJ Auxerre",
+        "country": "France",
+        "note": "2025 年 4 月公开报道显示其前往法国欧塞尔接受试训；该节点属于试训 / 考察，不等于当时已完成转会。"
+      },
+      {
+        "stage_label": "2026/07 欧塞尔待生效转会",
+        "organization": "AJ Auxerre",
+        "country": "France",
+        "note": "公开资料显示其转会欧塞尔的生效日期为 2026-07-01；按当前日期 2026-06-27，仍应写作“已签约 / 待生效”，不提前计入现役海外注册。"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "domestic-pro-youth",
+      "future-overseas-watch",
+      "france-pathway",
+      "striker-watch"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "csl-2026",
+        "label": "2026 国内职业俱乐部 U21 观察样本",
+        "team": "Meizhou Hakka FC",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "截至 2026-06-27，当前注册归属先按梅州客家处理；欧塞尔节点写作 2026-07-01 待生效，不与现役海外注册样本混算。"
+      },
+      {
+        "label": "2026 欧塞尔待生效转会",
+        "team": "AJ Auxerre",
+        "squad_status": "pending-transfer",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "若 2026-07-01 后俱乐部注册和官方名单同步更新，可再把本条迁入中国现役留洋样本。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "wikipedia",
+        "label": "Wikipedia profile",
+        "url": "https://en.wikipedia.org/wiki/Wei_Xiangxin"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi report on Auxerre move",
+        "url": "https://www.dongqiudi.com/articles/5517202.html"
+      },
+      {
+        "type": "profile",
+        "label": "WorldFootball.net profile",
+        "url": "https://www.worldfootball.net/player_summary/wei-xiangxin/"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-06-27",
+      "notes": "出生日期、梅州客家一线队出场、广东铭途租借和欧塞尔 2026-07-01 待生效节点由 Wikipedia / WorldFootball / 转会报道交叉整理；由于生效日期晚于当前核对日，当前注册俱乐部仍按梅州客家处理。"
+    },
+    "names": {
+      "zh": "魏祥鑫",
+      "en": "Wei Xiangxin",
+      "native": "魏祥鑫",
       "ja": "",
       "ko": ""
     }
@@ -2851,7 +3053,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -2863,13 +3065,13 @@
       "current": {
         "eur": 225000,
         "currency": "EUR",
-        "display": "€225.00k",
+        "display": "€225k",
         "date": "2025-12-09"
       },
       "peak": {
         "eur": 225000,
         "currency": "EUR",
-        "display": "€225.00k",
+        "display": "€225k",
         "date": "2025-12-09"
       },
       "last_change_date": "2025-12-09"
@@ -3095,7 +3297,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -3277,7 +3479,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -3519,7 +3721,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -3798,7 +4000,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -3974,7 +4176,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -4203,18 +4405,28 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
-      "status": "no-market-value",
+      "checked_at": "2026-06-25",
+      "status": "available",
       "source": {
         "provider": "Transfermarkt",
         "profile_url": "https://www.transfermarkt.us/zhaolei-kuang/profil/spieler/1281957",
         "market_value_url": "https://www.transfermarkt.us/zhaolei-kuang/marktwertverlauf/spieler/1281957",
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281957/market-value-history?_x_preferred_context=com"
       },
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null
+      "history_points": 1,
+      "current": {
+        "eur": 175000,
+        "currency": "EUR",
+        "display": "€175k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 175000,
+        "currency": "EUR",
+        "display": "€175k",
+        "date": "2026-06-08"
+      },
+      "last_change_date": "2026-06-08"
     }
   },
   {
@@ -4409,7 +4621,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -4605,7 +4817,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -4801,7 +5013,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -4985,7 +5197,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -5131,7 +5343,7 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-23",
+      "last_checked": "2026-06-27",
       "notes": "Transfermarkt 可核生日、出生地七台河、位置与当前红星 U17 节点；新华社签约报道可核湖北青训体系与杜利亚伊短训路径；2018 年新浪赛事报道与北青侧写可交叉确认其中国足球小将背景。2026 U17 亚洲杯对沙特和对日本决赛的关键进球，则分别由 AFC / Futbol24 比赛页补足。身高、体重、惯用脚等口径当前不够稳定，因此暂不硬填。"
     },
     "names": {
@@ -5142,7 +5354,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -5347,7 +5559,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -5530,7 +5742,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -5725,7 +5937,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -6097,7 +6309,7 @@
     ],
     "verification": {
       "status": "mixed-source",
-      "last_checked": "2026-05-22",
+      "last_checked": "2026-06-27",
       "notes": "生日、出生地和左路位置口径可由 Transfermarkt 对照；北大附中和北京市希望杯官方通稿可连续拼出其北京校园足球成长线；中国足协和央视战报可核到其蒙太古杯、呼和浩特国际足球锦标赛、U17 亚预赛以及 2026 U17 亚洲杯半决赛的关键表现。当前最需要保留的口径差异是 2025 年先后以富恩拉夫拉达、北大附中、皇家卡拉万切尔等单位出现在足协名单中，因此不应把其当前归属简单写死为单一国内俱乐部，也不宜直接归入董路中国足球小将主培养线。"
     },
     "names": {
@@ -6108,7 +6320,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -6441,8 +6653,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协通知可核其 2024 年 U14 国少选拔与 2026 年 U16 第二期集训；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。"
+      "last_checked": "2026-06-27",
+      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协 2026-03-12 通知继续以比利亚雷亚尔足球俱乐部口径列名；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。"
     },
     "names": {
       "zh": "刘凯源",
@@ -6452,7 +6664,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -6649,7 +6861,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -6795,7 +7007,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -7205,7 +7417,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -7454,7 +7666,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -13934,7 +14146,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -13946,13 +14158,13 @@
       "current": {
         "eur": 75000,
         "currency": "EUR",
-        "display": "€75.00k",
+        "display": "€75k",
         "date": "2026-05-13"
       },
       "peak": {
         "eur": 75000,
         "currency": "EUR",
-        "display": "€75.00k",
+        "display": "€75k",
         "date": "2026-05-13"
       },
       "last_change_date": "2026-05-13"
@@ -14027,7 +14239,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -14111,7 +14323,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -14205,7 +14417,7 @@
       "ko": ""
     },
     "market_value": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",

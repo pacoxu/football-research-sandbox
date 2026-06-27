@@ -1,0 +1,604 @@
+{
+  "id": "big-five-asian-coaches",
+  "name": {
+    "zh": "五大联赛亚洲教练记录",
+    "en": "Asian head coaches in the big five leagues"
+  },
+  "last_checked": "2026-06-27",
+  "summary": {
+    "zh": "按五大联赛顶级联赛一线队主教练/临时主教练口径整理。主口径只统计执教时所属足协为 AFC 成员协会的教练，广义口径另列土耳其、以色列等地理或中文语境常被归入亚洲、但足协属 UEFA 的边界项。",
+    "en": "Tracks first-team head coaches or interim head coaches in the top divisions of England, Spain, Germany, Italy, and France. The primary scope counts coaches whose association was an AFC member at the time of the spell; a broader boundary scope also lists Turkish and Israeli UEFA-association cases that are often discussed in geographic Asian contexts."
+  },
+  "scope_note": {
+    "zh": "战绩字段优先按五大联赛顶级联赛联赛场次统计，不混入杯赛或欧战。土耳其、以色列教练因足协属 UEFA，不进入主口径人数，只进入广义边界口径。",
+    "en": "Record fields prefer top-division league matches only and exclude cups or continental games. Turkish and Israeli coaches are excluded from the AFC-member primary count because their associations are UEFA members, but they remain visible in the broader boundary count."
+  },
+  "scope_counts": {
+    "afc_member_association": 2,
+    "geographic_broad": 7
+  },
+  "primary_scope_record": {
+    "matches": 104,
+    "wins": 32,
+    "draws": 19,
+    "losses": 53,
+    "points": 115
+  },
+  "coaches": [
+    {
+      "id": "patrick-kisnorbo",
+      "name": "Patrick Kisnorbo",
+      "local_name": "帕特里克·基斯诺博",
+      "nationality": "Australia",
+      "association": "Football Australia",
+      "association_confederation": "AFC",
+      "counted_in": [
+        "afc_member_association",
+        "geographic_broad"
+      ],
+      "first_big_five_spell": "2022-23 Ligue 1",
+      "record_scope": "top-flight league only",
+      "top_flight_record": {
+        "matches": 23,
+        "wins": 1,
+        "draws": 7,
+        "losses": 15,
+        "points": 10
+      },
+      "club_records": [
+        {
+          "club": "ES Troyes AC",
+          "club_country": "France",
+          "league": "Ligue 1",
+          "season": "2022-23",
+          "period": "2022-11 to 2023-06",
+          "matches": 23,
+          "wins": 1,
+          "draws": 7,
+          "losses": 15,
+          "points": 10,
+          "outcome": {
+            "zh": "赛季后降入法乙。",
+            "en": "Relegated from Ligue 1 at season end."
+          }
+        }
+      ],
+      "summary": {
+        "zh": "澳大利亚教练，2022-23 赛季中途接手特鲁瓦，是主口径下最早在五大联赛顶级联赛执教的 AFC 成员协会教练之一。",
+        "en": "Australian coach who took over Troyes during the 2022-23 Ligue 1 season, making him one of the first AFC-association coaches in a big-five top division under the primary scope."
+      },
+      "notes": [
+        {
+          "zh": "此处只统计法甲联赛场次；法国内杯赛不混入战绩。",
+          "en": "Only Ligue 1 league matches are counted here; domestic cup matches are excluded."
+        }
+      ],
+      "confidence": "high",
+      "source_links": [
+        {
+          "label": "Wikipedia: Patrick Kisnorbo",
+          "url": "https://en.wikipedia.org/wiki/Patrick_Kisnorbo"
+        },
+        {
+          "label": "Wikipedia: 2022-23 Ligue 1",
+          "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Ligue_1"
+        }
+      ]
+    },
+    {
+      "id": "ange-postecoglou",
+      "name": "Ange Postecoglou",
+      "local_name": "安格·波斯特科格鲁",
+      "nationality": "Australia",
+      "association": "Football Australia",
+      "association_confederation": "AFC",
+      "counted_in": [
+        "afc_member_association",
+        "geographic_broad"
+      ],
+      "first_big_five_spell": "2023-24 Premier League",
+      "record_scope": "top-flight league only",
+      "top_flight_record": {
+        "matches": 81,
+        "wins": 31,
+        "draws": 12,
+        "losses": 38,
+        "points": 105
+      },
+      "club_records": [
+        {
+          "club": "Tottenham Hotspur",
+          "club_country": "England",
+          "league": "Premier League",
+          "season": "2023-24 to 2024-25",
+          "period": "2023-07 to 2025-06",
+          "matches": 76,
+          "wins": 31,
+          "draws": 11,
+          "losses": 34,
+          "points": 104,
+          "outcome": {
+            "zh": "2023-24 赛季英超第 5；2024-25 赛季联赛下滑后离任。",
+            "en": "Finished fifth in the 2023-24 Premier League; left after a poor 2024-25 league campaign."
+          }
+        },
+        {
+          "club": "Nottingham Forest",
+          "club_country": "England",
+          "league": "Premier League",
+          "season": "2025-26",
+          "period": "2025-09 to 2025-10",
+          "matches": 5,
+          "wins": 0,
+          "draws": 1,
+          "losses": 4,
+          "points": 1,
+          "outcome": {
+            "zh": "短期执教后离任。",
+            "en": "Left after a short league spell."
+          }
+        }
+      ],
+      "summary": {
+        "zh": "澳大利亚教练，先后执教热刺和诺丁汉森林；按 AFC 主口径，他是五大联赛执教场次最多的亚洲足协教练。",
+        "en": "Australian coach with Premier League spells at Tottenham Hotspur and Nottingham Forest; under the AFC primary scope, he has the largest big-five league sample."
+      },
+      "notes": [
+        {
+          "zh": "这里按英超联赛战绩合并热刺与诺丁汉森林，不把欧战、足总杯或联赛杯计入。",
+          "en": "The record combines Premier League matches for Tottenham and Nottingham Forest and excludes European, FA Cup, and League Cup matches."
+        }
+      ],
+      "confidence": "medium",
+      "source_links": [
+        {
+          "label": "Wikipedia: Ange Postecoglou",
+          "url": "https://en.wikipedia.org/wiki/Ange_Postecoglou"
+        },
+        {
+          "label": "Wikipedia: 2023-24 Premier League",
+          "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League"
+        },
+        {
+          "label": "Wikipedia: 2024-25 Premier League",
+          "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Premier_League"
+        }
+      ]
+    },
+    {
+      "id": "ozcan-arkoc",
+      "name": "Özcan Arkoç",
+      "local_name": "厄兹詹·阿尔科奇",
+      "nationality": "Turkey",
+      "association": "Turkish Football Federation",
+      "association_confederation": "UEFA",
+      "counted_in": [
+        "geographic_broad"
+      ],
+      "first_big_five_spell": "1977-78 Bundesliga",
+      "record_scope": "top-flight league only",
+      "top_flight_record": {
+        "matches": 34,
+        "wins": 14,
+        "draws": 6,
+        "losses": 14,
+        "points": 48
+      },
+      "club_records": [
+        {
+          "club": "Hamburger SV",
+          "club_country": "Germany",
+          "league": "Bundesliga",
+          "season": "1977-78",
+          "period": "1977-07 to 1978-06",
+          "matches": 34,
+          "wins": 14,
+          "draws": 6,
+          "losses": 14,
+          "points": 48,
+          "outcome": {
+            "zh": "德甲第 10。",
+            "en": "Finished tenth in the Bundesliga."
+          }
+        }
+      ],
+      "summary": {
+        "zh": "土耳其教练，1977-78 赛季执教汉堡。因土耳其足协属 UEFA，他不进入 AFC 主口径，但属于广义亚洲边界项。",
+        "en": "Turkish coach of Hamburger SV in 1977-78. Turkey is a UEFA association, so he is excluded from the AFC primary count but included in the broader geographic boundary list."
+      },
+      "notes": [
+        {
+          "zh": "德甲 1977-78 赛季汉堡完整联赛战绩即为该执教期战绩。",
+          "en": "Hamburg's complete 1977-78 Bundesliga record is used for this spell."
+        }
+      ],
+      "confidence": "high",
+      "source_links": [
+        {
+          "label": "Wikipedia: Özcan Arkoç",
+          "url": "https://en.wikipedia.org/wiki/%C3%96zcan_Arko%C3%A7"
+        },
+        {
+          "label": "Wikipedia: 1977-78 Bundesliga",
+          "url": "https://en.wikipedia.org/wiki/1977%E2%80%9378_Bundesliga"
+        }
+      ]
+    },
+    {
+      "id": "fatih-terim",
+      "name": "Fatih Terim",
+      "local_name": "法蒂赫·特里姆",
+      "nationality": "Turkey",
+      "association": "Turkish Football Federation",
+      "association_confederation": "UEFA",
+      "counted_in": [
+        "geographic_broad"
+      ],
+      "first_big_five_spell": "2000-01 Serie A",
+      "record_scope": "top-flight league only",
+      "top_flight_record": {
+        "matches": 29,
+        "wins": 10,
+        "draws": 12,
+        "losses": 7,
+        "points": 42
+      },
+      "club_records": [
+        {
+          "club": "ACF Fiorentina",
+          "club_country": "Italy",
+          "league": "Serie A",
+          "season": "2000-01",
+          "period": "2000-07 to 2001-02",
+          "matches": 20,
+          "wins": 6,
+          "draws": 9,
+          "losses": 5,
+          "points": 27,
+          "outcome": {
+            "zh": "赛季中途离任，球队最终由罗伯托·曼奇尼带完联赛。",
+            "en": "Left during the season, with Roberto Mancini completing the league campaign."
+          }
+        },
+        {
+          "club": "AC Milan",
+          "club_country": "Italy",
+          "league": "Serie A",
+          "season": "2001-02",
+          "period": "2001-07 to 2001-11",
+          "matches": 9,
+          "wins": 4,
+          "draws": 3,
+          "losses": 2,
+          "points": 15,
+          "outcome": {
+            "zh": "赛季初期离任，随后由卡洛·安切洛蒂接手。",
+            "en": "Left early in the season before Carlo Ancelotti took over."
+          }
+        }
+      ],
+      "summary": {
+        "zh": "土耳其名帅，曾在意甲执教佛罗伦萨和 AC 米兰。因土耳其足协属 UEFA，此处只作为广义边界项。",
+        "en": "Turkish coach with Serie A spells at Fiorentina and AC Milan. Because Turkey is a UEFA association, he is kept as a broader boundary case."
+      },
+      "notes": [
+        {
+          "zh": "意甲分段战绩按现有二手赛季资料整理，后续如接入逐场数据库应优先复核。",
+          "en": "The Serie A split is compiled from season-level secondary sources and should be re-audited first if match-by-match data is added later."
+        }
+      ],
+      "confidence": "medium",
+      "source_links": [
+        {
+          "label": "Wikipedia: Fatih Terim",
+          "url": "https://en.wikipedia.org/wiki/Fatih_Terim"
+        },
+        {
+          "label": "Wikipedia: 2000-01 ACF Fiorentina season",
+          "url": "https://en.wikipedia.org/wiki/2000%E2%80%9301_ACF_Fiorentina_season"
+        },
+        {
+          "label": "Wikipedia: 2001-02 AC Milan season",
+          "url": "https://en.wikipedia.org/wiki/2001%E2%80%9302_AC_Milan_season"
+        }
+      ]
+    },
+    {
+      "id": "avram-grant",
+      "name": "Avram Grant",
+      "local_name": "阿夫拉姆·格兰特",
+      "nationality": "Israel",
+      "association": "Israel Football Association",
+      "association_confederation": "UEFA",
+      "counted_in": [
+        "geographic_broad"
+      ],
+      "first_big_five_spell": "2007-08 Premier League",
+      "record_scope": "top-flight league only",
+      "top_flight_record": {
+        "matches": 95,
+        "wins": 34,
+        "draws": 26,
+        "losses": 35,
+        "points": 128
+      },
+      "club_records": [
+        {
+          "club": "Chelsea",
+          "club_country": "England",
+          "league": "Premier League",
+          "season": "2007-08",
+          "period": "2007-09 to 2008-05",
+          "matches": 32,
+          "wins": 22,
+          "draws": 8,
+          "losses": 2,
+          "points": 74,
+          "outcome": {
+            "zh": "英超亚军。",
+            "en": "Premier League runner-up."
+          }
+        },
+        {
+          "club": "Portsmouth",
+          "club_country": "England",
+          "league": "Premier League",
+          "season": "2009-10",
+          "period": "2009-11 to 2010-05",
+          "matches": 26,
+          "wins": 5,
+          "draws": 6,
+          "losses": 15,
+          "points": 21,
+          "outcome": {
+            "zh": "赛季末降级。",
+            "en": "Relegated at season end."
+          }
+        },
+        {
+          "club": "West Ham United",
+          "club_country": "England",
+          "league": "Premier League",
+          "season": "2010-11",
+          "period": "2010-07 to 2011-05",
+          "matches": 37,
+          "wins": 7,
+          "draws": 12,
+          "losses": 18,
+          "points": 33,
+          "outcome": {
+            "zh": "第 37 轮后离任，球队降级。",
+            "en": "Left after matchday 37 as the club was relegated."
+          }
+        }
+      ],
+      "summary": {
+        "zh": "以色列教练，英超先后执教切尔西、朴茨茅斯和西汉姆。以色列足协属 UEFA，因此不进入 AFC 主口径。",
+        "en": "Israeli coach with Premier League spells at Chelsea, Portsmouth, and West Ham United. Israel is a UEFA association, so he is outside the AFC primary count."
+      },
+      "notes": [
+        {
+          "zh": "朴茨茅斯 2009-10 赛季存在扣分和临时接手语境；此处战绩为联赛赛果，不按积分榜扣分重算。",
+          "en": "Portsmouth's 2009-10 season involved a points deduction and a mid-season handover; this record uses match results rather than the adjusted table points."
+        }
+      ],
+      "confidence": "medium",
+      "source_links": [
+        {
+          "label": "Wikipedia: Avram Grant",
+          "url": "https://en.wikipedia.org/wiki/Avram_Grant"
+        },
+        {
+          "label": "Wikipedia: 2007-08 Chelsea FC season",
+          "url": "https://en.wikipedia.org/wiki/2007%E2%80%9308_Chelsea_F.C._season"
+        },
+        {
+          "label": "Wikipedia: 2009-10 Portsmouth FC season",
+          "url": "https://en.wikipedia.org/wiki/2009%E2%80%9310_Portsmouth_F.C._season"
+        },
+        {
+          "label": "Wikipedia: 2010-11 West Ham United FC season",
+          "url": "https://en.wikipedia.org/wiki/2010%E2%80%9311_West_Ham_United_F.C._season"
+        }
+      ]
+    },
+    {
+      "id": "tayfun-korkut",
+      "name": "Tayfun Korkut",
+      "local_name": "泰丰·科尔库特",
+      "nationality": "Turkey",
+      "association": "Turkish Football Federation",
+      "association_confederation": "UEFA",
+      "counted_in": [
+        "geographic_broad"
+      ],
+      "first_big_five_spell": "2013-14 Bundesliga",
+      "record_scope": "top-flight league only",
+      "top_flight_record": {
+        "matches": 91,
+        "wins": 28,
+        "draws": 24,
+        "losses": 39,
+        "points": 108
+      },
+      "club_records": [
+        {
+          "club": "Hannover 96",
+          "club_country": "Germany",
+          "league": "Bundesliga",
+          "season": "2013-14 to 2014-15",
+          "period": "2013-12 to 2015-04",
+          "matches": 46,
+          "wins": 14,
+          "draws": 10,
+          "losses": 22,
+          "points": 52,
+          "outcome": {
+            "zh": "2014-15 赛季末段离任。",
+            "en": "Left late in the 2014-15 season."
+          }
+        },
+        {
+          "club": "Bayer 04 Leverkusen",
+          "club_country": "Germany",
+          "league": "Bundesliga",
+          "season": "2016-17",
+          "period": "2017-03 to 2017-05",
+          "matches": 11,
+          "wins": 2,
+          "draws": 5,
+          "losses": 4,
+          "points": 11,
+          "outcome": {
+            "zh": "短期救火执教至赛季结束。",
+            "en": "Short caretaker-style spell through season end."
+          }
+        },
+        {
+          "club": "VfB Stuttgart",
+          "club_country": "Germany",
+          "league": "Bundesliga",
+          "season": "2017-18 to 2018-19",
+          "period": "2018-01 to 2018-10",
+          "matches": 21,
+          "wins": 10,
+          "draws": 6,
+          "losses": 5,
+          "points": 36,
+          "outcome": {
+            "zh": "2017-18 后半程表现强势，2018-19 开局后离任。",
+            "en": "Strong second half of 2017-18, then left after the 2018-19 opening run."
+          }
+        },
+        {
+          "club": "Hertha BSC",
+          "club_country": "Germany",
+          "league": "Bundesliga",
+          "season": "2021-22",
+          "period": "2021-11 to 2022-03",
+          "matches": 13,
+          "wins": 2,
+          "draws": 3,
+          "losses": 8,
+          "points": 9,
+          "outcome": {
+            "zh": "保级压力下离任。",
+            "en": "Left during a relegation fight."
+          }
+        }
+      ],
+      "summary": {
+        "zh": "土耳其教练，德甲先后执教汉诺威、勒沃库森、斯图加特和柏林赫塔；属广义边界口径。",
+        "en": "Turkish coach with Bundesliga spells at Hannover, Leverkusen, Stuttgart, and Hertha; included in the broader boundary scope."
+      },
+      "notes": [
+        {
+          "zh": "德甲分段战绩按联赛场次汇总；不纳入德国杯。",
+          "en": "The Bundesliga split aggregates league matches only and excludes DFB-Pokal matches."
+        }
+      ],
+      "confidence": "medium",
+      "source_links": [
+        {
+          "label": "Wikipedia: Tayfun Korkut",
+          "url": "https://en.wikipedia.org/wiki/Tayfun_Korkut"
+        },
+        {
+          "label": "Wikipedia: 2014-15 Hannover 96 season",
+          "url": "https://en.wikipedia.org/wiki/2014%E2%80%9315_Hannover_96_season"
+        },
+        {
+          "label": "Wikipedia: 2021-22 Hertha BSC season",
+          "url": "https://en.wikipedia.org/wiki/2021%E2%80%9322_Hertha_BSC_season"
+        }
+      ]
+    },
+    {
+      "id": "nuri-sahin",
+      "name": "Nuri Şahin",
+      "local_name": "努里·沙欣",
+      "nationality": "Turkey",
+      "association": "Turkish Football Federation",
+      "association_confederation": "UEFA",
+      "counted_in": [
+        "geographic_broad"
+      ],
+      "first_big_five_spell": "2024-25 Bundesliga",
+      "record_scope": "top-flight league only",
+      "top_flight_record": {
+        "matches": 18,
+        "wins": 7,
+        "draws": 4,
+        "losses": 7,
+        "points": 25
+      },
+      "club_records": [
+        {
+          "club": "Borussia Dortmund",
+          "club_country": "Germany",
+          "league": "Bundesliga",
+          "season": "2024-25",
+          "period": "2024-07 to 2025-01",
+          "matches": 18,
+          "wins": 7,
+          "draws": 4,
+          "losses": 7,
+          "points": 25,
+          "outcome": {
+            "zh": "2025 年 1 月离任。",
+            "en": "Left in January 2025."
+          }
+        }
+      ],
+      "summary": {
+        "zh": "土耳其教练，2024-25 赛季执教多特蒙德。因土耳其足协属 UEFA，只列入广义边界口径。",
+        "en": "Turkish coach of Borussia Dortmund in 2024-25. Because Turkey is a UEFA association, he is included only in the broader boundary scope."
+      },
+      "notes": [
+        {
+          "zh": "只统计沙欣任内的德甲联赛场次。",
+          "en": "Only Bundesliga matches during Sahin's tenure are counted."
+        }
+      ],
+      "confidence": "high",
+      "source_links": [
+        {
+          "label": "Wikipedia: Nuri Şahin",
+          "url": "https://en.wikipedia.org/wiki/Nuri_%C5%9Eahin"
+        },
+        {
+          "label": "Wikipedia: 2024-25 Borussia Dortmund season",
+          "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Borussia_Dortmund_season"
+        }
+      ]
+    }
+  ],
+  "excluded_or_boundary_notes": [
+    {
+      "zh": "车范根等亚洲球员名宿没有在五大联赛顶级联赛担任一线队主教练，因此不计入。",
+      "en": "Asian playing legends such as Cha Bum-kun did not serve as first-team head coach in a big-five top division and are therefore excluded."
+    },
+    {
+      "zh": "联合临时教练、助理教练、青年队教练和仅执教五大联赛国家低级别联赛的经历不进入主表，除非后续补到明确的一线队顶级联赛带队场次。",
+      "en": "Joint interim assistants, assistant coaches, youth-team coaches, and lower-tier spells in big-five countries are outside the main table unless a clear first-team top-division match record is added later."
+    }
+  ],
+  "source_links": [
+    {
+      "label": "Wikipedia: Premier League managers",
+      "url": "https://en.wikipedia.org/wiki/List_of_Premier_League_managers"
+    },
+    {
+      "label": "Wikipedia: Bundesliga managers",
+      "url": "https://en.wikipedia.org/wiki/List_of_Bundesliga_managers"
+    },
+    {
+      "label": "Wikipedia: Serie A managers",
+      "url": "https://en.wikipedia.org/wiki/List_of_Serie_A_managers"
+    },
+    {
+      "label": "Wikipedia: Ligue 1 managers",
+      "url": "https://en.wikipedia.org/wiki/List_of_Ligue_1_managers"
+    }
+  ]
+}

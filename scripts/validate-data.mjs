@@ -202,6 +202,89 @@ function validateChinaMenYouthCoaches(archive) {
   }
 }
 
+function validateCoachRecord(record, label) {
+  assert(typeof record === "object" && record !== null, `Missing coach record on ${label}`);
+  for (const field of ["matches", "wins", "draws", "losses", "points"]) {
+    assert(
+      Number.isInteger(record[field]) && record[field] >= 0,
+      `Invalid coach record ${field} on ${label}`
+    );
+  }
+  assert(
+    record.matches === record.wins + record.draws + record.losses,
+    `Coach record does not add up on ${label}`
+  );
+  assert(record.points === record.wins * 3 + record.draws, `Coach points do not add up on ${label}`);
+}
+
+function validateBigFiveAsianCoaches(archive) {
+  assert(typeof archive.id === "string" && archive.id.length > 0, "Missing big_five_asian_coaches id");
+  assert(isIsoDate(archive.last_checked), "Invalid big_five_asian_coaches last_checked");
+  assert(
+    archive.scope_counts && typeof archive.scope_counts === "object",
+    "Missing big_five_asian_coaches scope_counts"
+  );
+  assert(Array.isArray(archive.coaches) && archive.coaches.length > 0, "Invalid big_five_asian_coaches coaches");
+  assert(Array.isArray(archive.source_links), "Invalid big_five_asian_coaches source_links");
+
+  const coachIds = new Set();
+  const scopeCounts = new Map();
+
+  for (const link of archive.source_links) {
+    assert(link.label, "Missing source label on big_five_asian_coaches");
+    assert(/^https?:\/\//.test(link.url), "Invalid source url on big_five_asian_coaches");
+  }
+
+  validateCoachRecord(archive.primary_scope_record, "big_five_asian_coaches primary_scope_record");
+
+  for (const coach of archive.coaches) {
+    assert(coach.id && coach.name && coach.local_name, "Coach must include id, name, and local_name");
+    assert(!coachIds.has(coach.id), `Duplicate coach id: ${coach.id}`);
+    assert(coach.nationality, `Missing nationality on ${coach.id}`);
+    assert(coach.association_confederation, `Missing association_confederation on ${coach.id}`);
+    assert(Array.isArray(coach.counted_in) && coach.counted_in.length > 0, `Invalid counted_in on ${coach.id}`);
+    assert(Array.isArray(coach.club_records) && coach.club_records.length > 0, `Invalid club_records on ${coach.id}`);
+    assert(Array.isArray(coach.source_links) && coach.source_links.length > 0, `Missing sources on ${coach.id}`);
+    validateCoachRecord(coach.top_flight_record, coach.id);
+
+    for (const scope of coach.counted_in) {
+      scopeCounts.set(scope, (scopeCounts.get(scope) ?? 0) + 1);
+    }
+
+    const clubRecord = {
+      matches: 0,
+      wins: 0,
+      draws: 0,
+      losses: 0,
+      points: 0
+    };
+    for (const stint of coach.club_records) {
+      assert(stint.club && stint.league && stint.season, `Invalid club record label on ${coach.id}`);
+      validateCoachRecord(stint, `${coach.id}:${stint.club}`);
+      clubRecord.matches += stint.matches;
+      clubRecord.wins += stint.wins;
+      clubRecord.draws += stint.draws;
+      clubRecord.losses += stint.losses;
+      clubRecord.points += stint.points;
+    }
+    assert(
+      JSON.stringify(clubRecord) === JSON.stringify(coach.top_flight_record),
+      `Club records do not sum to top_flight_record on ${coach.id}`
+    );
+
+    for (const link of coach.source_links) {
+      assert(link.label, `Missing source label on ${coach.id}`);
+      assert(/^https?:\/\//.test(link.url), `Invalid source url on ${coach.id}`);
+    }
+
+    coachIds.add(coach.id);
+  }
+
+  for (const [scope, count] of Object.entries(archive.scope_counts)) {
+    assert(scopeCounts.get(scope) === count, `Invalid scope count ${scope} on big_five_asian_coaches`);
+  }
+}
+
 function validateRegionalHistory(history, tournamentId) {
   assert(typeof history === "object" && history !== null, `Invalid regional_history on ${tournamentId}`);
   assert(Array.isArray(history.team_summaries), `Invalid regional_history team_summaries on ${tournamentId}`);
@@ -402,6 +485,10 @@ export async function validateData() {
 
   if (dataset.chinaMenYouthCoaches !== null) {
     validateChinaMenYouthCoaches(dataset.chinaMenYouthCoaches);
+  }
+
+  if (dataset.bigFiveAsianCoaches !== null) {
+    validateBigFiveAsianCoaches(dataset.bigFiveAsianCoaches);
   }
 
   return dataset;

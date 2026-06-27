@@ -857,11 +857,11 @@
     "china_status": "runner-up",
     "china_summary": "中国 U17 时隔 22 年重返亚洲决赛，最终在 2026-05-22 的决赛中半场 0 比 3 落后、下半场追回两球，2 比 3 不敌日本获得亚军，同时锁定 2026 世少赛资格。",
     "china_detail_scope": "partial",
-    "china_squad": [
-    {
-      "squad_number": 1,
-      "player_id": "cn-qin-ziniu-2009",
-      "player": "Qin Ziniu"
+      "china_squad": [
+        {
+          "squad_number": 1,
+          "player_id": "cn-qin-ziniu-2009",
+          "player": "Qin Ziniu"
     },
     {
       "squad_number": 2,
@@ -968,15 +968,189 @@
       "player_id": "cn-liu-zhicheng-2009",
       "player": "Liu Zhicheng"
     },
-    {
-      "squad_number": 23,
-      "player_id": "cn-zhu-yuxuan-2009",
-      "player": "Zhu Yuxuan"
-    }
-  ],
-  "china_matches": [
-    {
-      "date": "2026-05-05",
+        {
+          "squad_number": 23,
+          "player_id": "cn-zhu-yuxuan-2009",
+          "player": "Zhu Yuxuan"
+        }
+      ],
+      "latest_public_roster_view": {
+        "label": {
+          "zh": "2026年第四期集训公开名单",
+          "en": "2026 fourth-camp public roster"
+        },
+        "note": {
+          "zh": "按中国足协 2026-06-27 第四期集训通知对应公开名单整理；这份视图用于跟踪当前中国 U17 队名单，不替代 2026 U17 亚洲杯终报名表。单位字段按名单图原文保留，因此可能与球员主库中的注册俱乐部口径不同。",
+          "en": "Compiled from the public roster tied to the CFA fourth-camp notice dated 2026-06-27. This view tracks the current China U17 pool and does not replace the 2026 AFC U17 finals squad list. Affiliations follow the poster wording and may differ from the registration-club field in player profiles."
+        },
+        "head_coach": {
+          "name": "Satoshi Ukishima",
+          "local_name": "浮嶋敏"
+        },
+        "groups": [
+          {
+            "label": {
+              "zh": "守门员 GK",
+              "en": "Goalkeepers"
+            },
+            "entries": [
+              {
+                "player_id": "cn-qin-ziniu-2009",
+                "player": "Qin Ziniu",
+                "affiliation": "恒大足球学校"
+              },
+              {
+                "player_id": "cn-jiang-chengen-2010",
+                "player": "Jiang Chengen",
+                "affiliation": "恒大足球学校"
+              },
+              {
+                "player_id": "cn-zhu-yuxuan-2009",
+                "player": "Zhu Yuxuan",
+                "affiliation": "赫塔菲足球俱乐部"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "后卫 DF",
+              "en": "Defenders"
+            },
+            "entries": [
+              {
+                "player_id": "cn-zhang-xuyao-2009",
+                "player": "Zhang Xuyao",
+                "affiliation": "山东泰山足球俱乐部"
+              },
+              {
+                "player_id": "cn-li-junpeng-2009",
+                "player": "Li Junpeng",
+                "affiliation": "山东泰山足球俱乐部"
+              },
+              {
+                "player_id": "cn-gu-boyu-2009",
+                "player": "Gu Boyu",
+                "affiliation": "上海申花足球俱乐部"
+              },
+              {
+                "player_id": "cn-nan-zixun-2009",
+                "player": "Nan Zixun",
+                "affiliation": "清华大学附属中学"
+              },
+              {
+                "player_id": "cn-liu-zhicheng-2009",
+                "player": "Liu Zhicheng",
+                "affiliation": "青岛西海岸足球俱乐部"
+              },
+              {
+                "player_id": "cn-bian-weihao-2009",
+                "player": "Bian Weihao",
+                "affiliation": "湖北青年星足球俱乐部"
+              },
+              {
+                "player_id": "cn-jin-yucheng-2009",
+                "player": "Jin Yucheng",
+                "affiliation": "萨格勒布火车头足球俱乐部"
+              },
+              {
+                "name": {
+                  "zh": "张君豪",
+                  "en": "Zhang Junhao"
+                },
+                "affiliation": "山东鲁能泰山足球学校"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "中场 MF",
+              "en": "Midfielders"
+            },
+            "entries": [
+              {
+                "player_id": "cn-he-sifan-2009",
+                "player": "He Sifan",
+                "affiliation": "山东鲁能泰山足球学校"
+              },
+              {
+                "player_id": "cn-kong-xinuo-2010",
+                "player": "Kong Xinuo",
+                "affiliation": "山东鲁能泰山足球学校"
+              },
+              {
+                "player_id": "cn-wang-heyi-2009",
+                "player": "Wang Heyi",
+                "affiliation": "广东广州豹足球俱乐部"
+              },
+              {
+                "name": {
+                  "zh": "孙臣曦",
+                  "en": "Sun Chenxi"
+                },
+                "affiliation": "广东铭途足球俱乐部"
+              },
+              {
+                "player_id": "cn-zhou-yunuo-2009",
+                "player": "Zhou Yunuo",
+                "affiliation": "清华大学附属中学"
+              },
+              {
+                "player_id": "cn-zhang-lindong-2010",
+                "player": "Zhang Lindong",
+                "affiliation": "达姆足球俱乐部"
+              },
+              {
+                "player_id": "cn-xu-zhengpeng-2009",
+                "player": "Xu Zhengpeng",
+                "affiliation": "武汉三镇足球俱乐部"
+              },
+              {
+                "player_id": "cn-pan-chaowei-2010",
+                "player": "Pan Chaowei",
+                "affiliation": "山东泰山足球俱乐部"
+              },
+              {
+                "name": {
+                  "zh": "袁博涵",
+                  "en": "Yuan Bohan"
+                },
+                "affiliation": "深圳青年人足球俱乐部"
+              },
+              {
+                "player_id": "cn-xie-jin-2009",
+                "player": "Xie Jin",
+                "affiliation": "其他"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "前锋 FW",
+              "en": "Forwards"
+            },
+            "entries": [
+              {
+                "player_id": "cn-shuai-weihao-2009",
+                "player": "Shuai Weihao",
+                "affiliation": "成都蓉城足球俱乐部"
+              },
+              {
+                "player_id": "cn-zhao-songyuan-2009",
+                "player": "Zhao Songyuan",
+                "affiliation": "清华大学附属中学"
+              },
+              {
+                "player_id": "cn-zhang-bolin-2009",
+                "player": "Zhang Bolin",
+                "affiliation": "其他"
+              }
+            ]
+          }
+        ]
+      },
+      "china_matches": [
+        {
+          "date": "2026-05-05",
       "stage": "Group B",
       "opponent": "Indonesia",
       "score_for": 0,

@@ -1,12 +1,12 @@
 {
   "meta": {
     "provider": "Transfermarkt",
-    "checked_at": "2026-05-25",
+    "checked_at": "2026-06-25",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com"
   },
   "players": {
     "cn-cheng-xiyang-2006": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -20,7 +20,7 @@
       "last_change_date": null
     },
     "cn-gu-boyu-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -34,7 +34,7 @@
       "last_change_date": null
     },
     "cn-he-sifan-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -48,7 +48,7 @@
       "last_change_date": null
     },
     "cn-jin-yucheng-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -62,7 +62,7 @@
       "last_change_date": null
     },
     "cn-kong-xinuo-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -76,21 +76,31 @@
       "last_change_date": null
     },
     "cn-kuang-zhaolei-2009": {
-      "checked_at": "2026-05-25",
-      "status": "no-market-value",
+      "checked_at": "2026-06-25",
+      "status": "available",
       "source": {
         "provider": "Transfermarkt",
         "profile_url": "https://www.transfermarkt.us/zhaolei-kuang/profil/spieler/1281957",
         "market_value_url": "https://www.transfermarkt.us/zhaolei-kuang/marktwertverlauf/spieler/1281957",
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1281957/market-value-history?_x_preferred_context=com"
       },
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null
+      "history_points": 1,
+      "current": {
+        "eur": 175000,
+        "currency": "EUR",
+        "display": "€175k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 175000,
+        "currency": "EUR",
+        "display": "€175k",
+        "date": "2026-06-08"
+      },
+      "last_change_date": "2026-06-08"
     },
     "cn-li-dongchen-2010": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -104,7 +114,7 @@
       "last_change_date": null
     },
     "cn-li-junpeng-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -118,7 +128,7 @@
       "last_change_date": null
     },
     "cn-li-youan-2010": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -132,7 +142,7 @@
       "last_change_date": null
     },
     "cn-lin-zihao-2007": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -140,23 +150,18 @@
         "market_value_url": "https://www.transfermarkt.co.in/zihao-lin/marktwertverlauf/spieler/1242688",
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1242688/market-value-history?_x_preferred_context=com"
       },
-      "history_points": 4,
-      "current": {
-        "eur": 10000,
-        "currency": "EUR",
-        "display": "€10.00k",
-        "date": "2025-06-23"
-      },
+      "history_points": 5,
+      "current": null,
       "peak": {
         "eur": 10000,
         "currency": "EUR",
-        "display": "€10.00k",
+        "display": "€10k",
         "date": "2024-03-21"
       },
-      "last_change_date": "2025-06-23"
+      "last_change_date": "2026-06-05"
     },
     "cn-liu-kaiyuan-2010": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -170,7 +175,7 @@
       "last_change_date": null
     },
     "cn-nan-zixun-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -184,7 +189,7 @@
       "last_change_date": null
     },
     "cn-pan-chaowei-2010": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -198,7 +203,7 @@
       "last_change_date": null
     },
     "cn-piao-zhixuan-2010": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -212,7 +217,7 @@
       "last_change_date": null
     },
     "cn-qin-ziniu-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -226,7 +231,7 @@
       "last_change_date": null
     },
     "cn-shuai-weihao-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -238,19 +243,19 @@
       "current": {
         "eur": 225000,
         "currency": "EUR",
-        "display": "€225.00k",
+        "display": "€225k",
         "date": "2025-12-09"
       },
       "peak": {
         "eur": 225000,
         "currency": "EUR",
-        "display": "€225.00k",
+        "display": "€225k",
         "date": "2025-12-09"
       },
       "last_change_date": "2025-12-09"
     },
     "cn-wan-xiang-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -264,7 +269,7 @@
       "last_change_date": null
     },
     "cn-wang-xiuhao-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -278,7 +283,7 @@
       "last_change_date": null
     },
     "cn-xie-jin-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -292,7 +297,7 @@
       "last_change_date": null
     },
     "cn-xu-zhengpeng-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -306,7 +311,7 @@
       "last_change_date": null
     },
     "cn-yang-alex-2005": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -314,23 +319,23 @@
         "market_value_url": "https://www.transfermarkt.com/alex-yang/marktwertverlauf/spieler/1012988",
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1012988/market-value-history?_x_preferred_context=com"
       },
-      "history_points": 2,
+      "history_points": 3,
       "current": {
-        "eur": 400000,
+        "eur": 500000,
         "currency": "EUR",
-        "display": "€400.00k",
-        "date": "2025-12-17"
+        "display": "€500k",
+        "date": "2026-06-08"
       },
       "peak": {
-        "eur": 400000,
+        "eur": 500000,
         "currency": "EUR",
-        "display": "€400.00k",
-        "date": "2025-12-17"
+        "display": "€500k",
+        "date": "2026-06-08"
       },
-      "last_change_date": "2025-12-17"
+      "last_change_date": "2026-06-08"
     },
     "cn-zhang-xuyao-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "team-page-only",
       "source": {
         "provider": "Transfermarkt",
@@ -344,7 +349,7 @@
       "last_change_date": null
     },
     "cn-zhao-songyuan-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -358,7 +363,7 @@
       "last_change_date": null
     },
     "cn-zhou-yunuo-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -372,7 +377,7 @@
       "last_change_date": null
     },
     "uz-abubakir-rakhimov-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -386,7 +391,7 @@
       "last_change_date": null
     },
     "uz-amirkhon-erkinov-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
@@ -400,7 +405,7 @@
       "last_change_date": null
     },
     "uz-asilbek-aliev-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "available",
       "source": {
         "provider": "Transfermarkt",
@@ -412,19 +417,19 @@
       "current": {
         "eur": 75000,
         "currency": "EUR",
-        "display": "€75.00k",
+        "display": "€75k",
         "date": "2026-05-13"
       },
       "peak": {
         "eur": 75000,
         "currency": "EUR",
-        "display": "€75.00k",
+        "display": "€75k",
         "date": "2026-05-13"
       },
       "last_change_date": "2026-05-13"
     },
     "uz-mukhammad-khakimov-2009": {
-      "checked_at": "2026-05-25",
+      "checked_at": "2026-06-25",
       "status": "no-market-value",
       "source": {
         "provider": "Transfermarkt",
