@@ -61,6 +61,19 @@ const allowedSourceLayerTypes = new Set([
 
 const allowedSourceLayerConfidence = new Set(["high", "medium", "low"]);
 
+const allowedTournamentSourceVersionTypes = new Set([
+  "afc-final-registration",
+  "afc-final-report",
+  "afc-match-report",
+  "afc-match-schedule",
+  "afc-tournament-home",
+  "afc-stats-archive",
+  "fifa-report",
+  "wikipedia-secondary",
+  "secondary-stats",
+  "news-secondary"
+]);
+
 function assert(condition, message) {
   if (!condition) {
     throw new Error(message);
@@ -121,6 +134,112 @@ function validateSourceLayer(layer, label) {
   assert(Array.isArray(layer.fields) && layer.fields.length > 0, `Invalid source layer fields on ${label}`);
   for (const field of layer.fields) {
     assert(typeof field === "string" && field.length > 0, `Invalid source layer field on ${label}`);
+  }
+}
+
+function validateTournamentSourceVersion(source, tournamentId) {
+  assert(
+    typeof source === "object" && source !== null,
+    `Invalid source_version entry on ${tournamentId}`
+  );
+  assert(
+    allowedTournamentSourceVersionTypes.has(source.type),
+    `Invalid source_version type "${source.type}" on ${tournamentId}`
+  );
+  assert(
+    typeof source.label === "string" && source.label.length > 0,
+    `Missing source_version label on ${tournamentId}`
+  );
+  if (source.url !== undefined) {
+    assert(/^https?:\/\//.test(source.url), `Invalid source_version url on ${tournamentId}`);
+  }
+  assert(
+    Array.isArray(source.fields) && source.fields.length > 0,
+    `Invalid source_version fields on ${tournamentId}`
+  );
+  for (const field of source.fields) {
+    assert(
+      typeof field === "string" && field.length > 0,
+      `Invalid source_version field on ${tournamentId}`
+    );
+  }
+  if (source.note !== undefined) {
+    assert(
+      typeof source.note === "string" && source.note.length > 0,
+      `Invalid source_version note on ${tournamentId}`
+    );
+  }
+}
+
+function validateCompetitionNameHistoryEntry(entry, tournamentId) {
+  assert(
+    typeof entry === "object" && entry !== null,
+    `Invalid competition_name_history entry on ${tournamentId}`
+  );
+  assert(
+    typeof entry.name === "string" && entry.name.length > 0,
+    `Missing competition_name_history name on ${tournamentId}`
+  );
+  assert(
+    typeof entry.note === "string" && entry.note.length > 0,
+    `Missing competition_name_history note on ${tournamentId}`
+  );
+  if (entry.used_from !== undefined) {
+    assert(
+      typeof entry.used_from === "string" && entry.used_from.length > 0,
+      `Invalid competition_name_history used_from on ${tournamentId}`
+    );
+  }
+  if (entry.used_until !== undefined) {
+    assert(
+      typeof entry.used_until === "string" && entry.used_until.length > 0,
+      `Invalid competition_name_history used_until on ${tournamentId}`
+    );
+  }
+}
+
+function validateTournamentArchiveVersioning(tournament) {
+  if (tournament.source_version !== undefined) {
+    assert(
+      Array.isArray(tournament.source_version) && tournament.source_version.length > 0,
+      `Invalid source_version on ${tournament.id}`
+    );
+    assert(
+      isIsoDate(tournament.source_checked_at),
+      `Invalid source_checked_at on ${tournament.id}`
+    );
+    assert(
+      typeof tournament.source_conflict_note === "string" &&
+        tournament.source_conflict_note.length > 0,
+      `Missing source_conflict_note on ${tournament.id}`
+    );
+    for (const source of tournament.source_version) {
+      validateTournamentSourceVersion(source, tournament.id);
+    }
+  } else if (tournament.source_checked_at !== undefined) {
+    assert(
+      isIsoDate(tournament.source_checked_at),
+      `Invalid source_checked_at on ${tournament.id}`
+    );
+  }
+
+  if (tournament.source_conflict_note !== undefined) {
+    assert(
+      typeof tournament.source_conflict_note === "string" &&
+        tournament.source_conflict_note.length > 0,
+      `Invalid source_conflict_note on ${tournament.id}`
+    );
+  }
+
+  if (tournament.competition_name_history !== undefined) {
+    assert(
+      Array.isArray(tournament.competition_name_history) &&
+        tournament.competition_name_history.length > 0,
+      `Invalid competition_name_history on ${tournament.id}`
+    );
+    for (const entry of tournament.competition_name_history) {
+      validateCompetitionNameHistoryEntry(entry, tournament.id);
+    }
   }
 }
 
@@ -616,6 +735,7 @@ export async function validateData() {
     if (tournament.regional_history !== undefined) {
       validateRegionalHistory(tournament.regional_history, tournament.id);
     }
+    validateTournamentArchiveVersioning(tournament);
   }
 
   if (dataset.chinaMenYouthCoaches !== null) {

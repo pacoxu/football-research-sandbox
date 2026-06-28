@@ -231,6 +231,66 @@
     "competition_name": "AFC U23 Asian Cup Saudi Arabia 2026",
     "level": "u23",
     "edition_label": "2026",
+    "source_version": [
+      {
+        "type": "afc-final-registration",
+        "label": "AFC U23 2026 Final Registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "fields": [
+          "china_squad_reference",
+          "registered_names",
+          "registered_clubs"
+        ]
+      },
+      {
+        "type": "afc-final-report",
+        "label": "AFC U23 2026 in numbers",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/afcu23-saudi-arabia-2026-in-numbers",
+        "fields": [
+          "champion",
+          "runner_up",
+          "tournament_summary"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "China PR 1-0 Australia",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/puche-applauds-china-pr%E2%80%99s-%E2%80%98historic%E2%80%99-win",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "China PR 3-0 Vietnam",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/s-final-china-pr-power-past-vietnam-1",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      }
+    ],
+    "source_checked_at": "2026-06-28",
+    "source_conflict_note": "AFC final registration is the squad and spelling source; AFC match reports and tournament summary are the result/event sources. No material conflict is recorded, but minute-level China events remain partial where AFC reports do not expose complete event feeds.",
+    "competition_name_history": [
+      {
+        "name": "AFC U-22 Championship",
+        "used_until": "2013 edition",
+        "note": "Early edition name before the competition settled into the U23 branding."
+      },
+      {
+        "name": "AFC U23 Championship",
+        "used_from": "2016 edition",
+        "used_until": "2020 edition",
+        "note": "Legacy name used by earlier archive entries such as Thailand 2020."
+      },
+      {
+        "name": "AFC U23 Asian Cup",
+        "used_from": "2022 edition",
+        "note": "Current naming used by the 2026 Saudi Arabia edition."
+      }
+    ],
     "host": "Saudi Arabia",
     "date_range": {
       "start": "2026-01-06",
@@ -434,6 +494,73 @@
     "competition_name": "AFC U20 Asian Cup China 2025",
     "level": "u20",
     "edition_label": "2025",
+    "source_version": [
+      {
+        "type": "afc-tournament-home",
+        "label": "AFC U20 China 2025 home",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup/home.html",
+        "fields": [
+          "competition_identity",
+          "host",
+          "status"
+        ]
+      },
+      {
+        "type": "afc-match-schedule",
+        "label": "AFC U20 China 2025 schedule",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Match_schedule/AFC-U20-Asian-Cup-China-2025-Match-Schedule-.pdf",
+        "fields": [
+          "date_range",
+          "match_calendar"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "Kyrgyz Republic 2-5 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/group-a-md2-kyrgyz-republic-2-5-china-pr",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "Australia win 2025 title",
+        "url": "https://www.fifa.com/en/articles/australia-win-afc-u-20-asian-cup",
+        "fields": [
+          "champion",
+          "runner_up"
+        ]
+      },
+      {
+        "type": "wikipedia-secondary",
+        "label": "Wikipedia 2025 AFC U-20 Asian Cup",
+        "url": "https://en.wikipedia.org/wiki/2025_AFC_U-20_Asian_Cup",
+        "fields": [
+          "secondary_bracket_cross_check"
+        ]
+      }
+    ],
+    "source_checked_at": "2026-06-28",
+    "source_conflict_note": "AFC home and match schedule plus FIFA final recap are primary for identity, dates and final result. Third-party event pages remain auxiliary for China goal/assist details until AFC match centre or final report event feeds are captured.",
+    "competition_name_history": [
+      {
+        "name": "AFC Youth Championship",
+        "used_until": "2006 edition",
+        "note": "Older umbrella name in the historical lineage of the AFC men's youth championship."
+      },
+      {
+        "name": "AFC U-19 Championship",
+        "used_from": "2008 edition",
+        "used_until": "2020 cycle",
+        "note": "Immediate predecessor name before the U20 Asian Cup branding."
+      },
+      {
+        "name": "AFC U20 Asian Cup",
+        "used_from": "2023 edition",
+        "note": "Current naming used by the China 2025 edition."
+      }
+    ],
     "host": "China PR",
     "date_range": {
       "start": "2025-02-12",
@@ -846,6 +973,82 @@
     "competition_name": "AFC U17 Asian Cup Saudi Arabia 2026",
     "level": "u17",
     "edition_label": "2026",
+    "source_version": [
+      {
+        "type": "afc-final-registration",
+        "label": "AFC 2026 Final Squad Lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "fields": [
+          "china_squad",
+          "registered_names",
+          "registered_clubs"
+        ]
+      },
+      {
+        "type": "afc-match-schedule",
+        "label": "AFC U17 2026 schedule",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/AFC-U17-Asian-Cup-Saudi-Arabia-2026-Match-Schedule---upd24april.pdf",
+        "fields": [
+          "date_range",
+          "match_calendar"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "Saudi Arabia 1-3 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-q-final-saudi-arabia-1-3-china-pr",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "wikipedia-secondary",
+        "label": "Wikipedia 2026 AFC U-17 Asian Cup",
+        "url": "https://en.wikipedia.org/wiki/2026_AFC_U-17_Asian_Cup",
+        "fields": [
+          "secondary_bracket_cross_check"
+        ]
+      },
+      {
+        "type": "secondary-stats",
+        "label": "China U17 2-3 Japan U17 final match pages",
+        "url": "https://www.futbol24.com/match/2026/05/22/international/AFC/U17-Championship/2026/Final/China-U17/vs/Japan-U17",
+        "fields": [
+          "final_events",
+          "match_stats_snapshot"
+        ]
+      }
+    ],
+    "source_checked_at": "2026-06-28",
+    "source_conflict_note": "AFC final squad list and schedule are primary for roster and dates; AFC match reports are primary where available. Qiumiwu, Sportal, Futbol24, Azscore, PPSports and Sina pages are retained only for lineups, event timing and stat snapshots until AFC match centre or final report event feeds are captured.",
+    "competition_name_history": [
+      {
+        "name": "AFC U-16 Championship",
+        "used_until": "2018 edition",
+        "note": "2018 Malaysia is the last completed AFC finals edition in this archive under the U16 Championship lineage."
+      },
+      {
+        "name": "2020 AFC U-16 Championship",
+        "used_from": "2020 cycle",
+        "used_until": "cancelled",
+        "note": "The 2020 cycle was cancelled before the competition resumed under the U17 Asian Cup name."
+      },
+      {
+        "name": "AFC U17 Asian Cup",
+        "used_from": "2023 edition",
+        "note": "Current naming used by the Saudi Arabia 2026 edition; this is the direct archive continuation of the U16 Championship lineage."
+      }
+    ],
     "host": "Saudi Arabia",
     "date_range": {
       "start": "2026-05-05",

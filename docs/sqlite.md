@@ -1,6 +1,6 @@
 # SQLite 本地库
 
-更新时间：2026-06-27
+更新时间：2026-06-28
 
 `scripts/sync-sqlite.mjs` 会把当前 JSON 数据同步到 `storage/youth-football.sqlite`。这个数据库用于本地查询、调试和后续分析，不提交仓库，也不发布到 GitHub Pages。
 
@@ -170,6 +170,10 @@ erDiagram
     TEXT competition_name
     TEXT level
     TEXT edition_label
+    TEXT source_version_json
+    TEXT source_checked_at
+    TEXT source_conflict_note
+    TEXT competition_name_history_json
     TEXT host
     TEXT start_date
     TEXT end_date

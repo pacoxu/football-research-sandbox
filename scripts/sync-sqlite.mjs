@@ -172,6 +172,10 @@ export async function syncSqlite() {
       competition_name TEXT NOT NULL,
       level TEXT NOT NULL,
       edition_label TEXT NOT NULL,
+      source_version_json TEXT NOT NULL,
+      source_checked_at TEXT,
+      source_conflict_note TEXT NOT NULL,
+      competition_name_history_json TEXT NOT NULL,
       host TEXT NOT NULL,
       start_date TEXT NOT NULL,
       end_date TEXT NOT NULL,
@@ -250,10 +254,12 @@ export async function syncSqlite() {
   `);
   const insertArchiveTournament = db.prepare(`
     INSERT INTO tournament_archive (
-      id, confederation, competition_name, level, edition_label, host, start_date, end_date,
+      id, confederation, competition_name, level, edition_label,
+      source_version_json, source_checked_at, source_conflict_note, competition_name_history_json,
+      host, start_date, end_date,
       status, champion, runner_up, china_status, china_summary, china_detail_scope, china_squad_json,
       source_links_json, china_matches_json, china_key_players_json
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
   for (const player of dataset.players) {
@@ -419,6 +425,10 @@ export async function syncSqlite() {
       tournament.competition_name,
       tournament.level,
       tournament.edition_label,
+      toJson(tournament.source_version ?? []),
+      tournament.source_checked_at ?? null,
+      tournament.source_conflict_note ?? "",
+      toJson(tournament.competition_name_history ?? []),
       tournament.host,
       tournament.date_range.start,
       tournament.date_range.end,

@@ -1,6 +1,6 @@
 # 数据校验脚本
 
-更新时间：2026-06-27
+更新时间：2026-06-28
 
 `scripts/validate-data.mjs` 是当前数据变更的第一道程序化检查。运行方式：
 
@@ -53,7 +53,7 @@ flowchart LR
 - `tournaments[].last_checked`、`date_range.start`、`date_range.end` 必须是日期。
 - `overseas-history` 的 bucket、featured records、big five checklist 结构必须可用。
 - `dossiers` 必须有 `id`、`name`、`last_reviewed`、`timeline`、`roster_views`，可选 link audit 和 search disambiguation 也会校验日期与数组结构。
-- `tournament-archive` 必须有赛事 ID、名称、日期、来源链接、中国队比赛和关键球员数组。
+- `tournament-archive` 必须有赛事 ID、名称、日期、来源链接、中国队比赛和关键球员数组；可选 `source_version`、`source_checked_at`、`source_conflict_note`、`competition_name_history` 如出现也会校验结构。
 - `china-men-youth-coaches` 校验队伍周期、教练、集训节点、staff 和来源链接。
 - `big-five-asian-coaches` 校验来源链接、scope count、教练战绩和 club records 加总。
 
@@ -107,6 +107,19 @@ flowchart LR
 - `medium`
 - `low`
 
+`tournament-archive.source_version.type`：
+
+- `afc-final-registration`
+- `afc-final-report`
+- `afc-match-report`
+- `afc-match-schedule`
+- `afc-tournament-home`
+- `afc-stats-archive`
+- `fifa-report`
+- `wikipedia-secondary`
+- `secondary-stats`
+- `news-secondary`
+
 ## 不校验内容
 
 `validate-data` 不会判断：
@@ -134,6 +147,7 @@ flowchart LR
 | `Invalid external link type` | 链接类型不在枚举内 | 改用已有类型，必要时先扩展校验脚本和治理文档 |
 | `Invalid squad_status` | 名单状态不在枚举内 | 使用治理文档定义的状态 |
 | `Coach record does not add up` | 教练胜平负与场次不一致 | 修正 club record 或汇总 record |
+| `Invalid source_version type` | 赛事档案来源版本类型不在枚举内 | 改用已有类型，必要时同步扩展校验脚本和治理文档 |
 
 ## 后续可做
 
