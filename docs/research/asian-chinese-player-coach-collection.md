@@ -1,6 +1,6 @@
 # 亚洲/中国球员与教练信息收集说明
 
-更新时间：2026-06-27
+更新时间：2026-06-28
 
 这份说明用于统一后续四条线的数据收集口径：亚洲球员、中国球员、亚洲教练、中国教练。它优先描述当前仓库已有覆盖、待补方向、待核线索和落库位置；未完成注册或缺少官方来源的线索只进入观察池，不直接覆盖现有球员或教练记录。
 
@@ -131,6 +131,7 @@
 - `data/raw/big-five-asian-coaches.json` 已把五大联赛顶级联赛一线队主教练/代理主教练拆成 AFC 主口径和广义边界口径。
 - AFC 主口径当前只计 Patrick Kisnorbo 和 Ange Postecoglou。
 - 土耳其、以色列样本因协会属 UEFA，只进入广义边界口径。
+- issue #20 的扩展口径、schema 草案和首批试点样本见 `docs/research/asian-coaches-extension.md`。
 
 统计规则：
 
@@ -144,6 +145,7 @@
 - AFC 国家队和 U 系列国家队主教练任期。
 - J 联赛、K 联赛、中超、西亚联赛中的亚洲籍主教练样本。
 - 亚洲教练在 AFC Champions League 参赛俱乐部的主教练节点。
+- 新增数据文件时优先用统一的 `data/raw/asian-coaches.json` 和 `stints[].competition_scope` 派生视图；暂不优先拆 `asian-national-team-coaches.json`，避免同一教练在国家队和俱乐部之间重复建档。
 
 ## 中国教练收集线
 
@@ -163,7 +165,7 @@
 
 - `data/raw/china-senior-coaches.json`：中国成年国家队教练周期。
 - `data/raw/china-club-coaches.json`：中超/中甲中国籍教练赛季索引。
-- `data/raw/asian-national-team-coaches.json`：AFC 国字号主教练索引。
+- `data/raw/asian-coaches.json`：五大联赛之外亚洲教练任命总表，按 `competition_scope` 区分欧洲非五大、AFC 国字号、亚洲顶级联赛和 AFC 俱乐部赛事。
 
 ## 落库位置
 

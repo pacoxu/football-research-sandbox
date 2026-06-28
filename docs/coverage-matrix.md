@@ -1,6 +1,6 @@
 # 领域内容覆盖矩阵与缺口清单
 
-更新时间：2026-06-27
+更新时间：2026-06-28
 
 本文件对应 issue #8，用来把后续扩展从“继续加球员”转成可跟踪的覆盖计划。详细补采样本和字段清单见根目录 `research-collection-outline-2026-06-27.md`；本文件只维护模块级状态、来源要求、完成标准、最近核查日期和后续 issue 拆分方向。
 
@@ -38,7 +38,7 @@
 | 世界杯、世青赛、世少赛中国队档案 | 已补 2002 世界杯中国队最终名单、三场小组赛、逐人 minutes、主教练和 qualification_path；已有 2005 U17、2005 U20、2007 土伦档案，并新增 U20/U17 世界赛历史名称和中国参赛年份索引。2005 U17/U20 已补 coach 与 qualification_path，逐人 minutes 仍需从 FIFA 技术报告或 match centre 抽取。 | 部分完成 | FIFA archive、AFC qualification、CFA 历史资料、权威赛事数据库。 | 中国参赛年份都有 squad、matches、goals、minutes、coach、qualification_path。 | 2026-06-27 | 继续拆 1983-2003 U20/U16/U17 世界赛逐届 squad、matches、minutes 和来源冲突。 |
 | 海外青训/球探检索源目录 | 已新增 `docs/research/scouting-source-directory.md`，把 Transfermarkt、FBref、Soccerway、FotMob/Sofascore、WorldFootball、CIES、Wyscout/Instat/StatsBomb、Eyeball、Tonsser、aiScout、Scoutium、FIFA Training Centre、UEFA/PFSA、Guardian Next Generation 等拆成来源等级、检索用途和落库边界。 | 完成，随用随维护 | 官方源优先；公开数据库交叉核验；付费球探平台和自荐/试训平台只作线索。 | 后续每个球员/赛事扩展 issue 都能说明使用了哪类检索组合，且不把自荐/商业试训平台当作强事实。 | 2026-06-28 | 将常用检索组合固化到具体 issue 或脚本化 source audit。 |
 | 董路足球小将逐名档案 | `donglu-football-boys` 专题有 4 个 roster_views、18 条 timeline；球员库中 14 人带 `donglu-football-boys` tag。 | 专题完成，逐名拆分进行中 | 公开报名表、赛事平台、视频/图文原始线索、俱乐部/学校后续注册。 | 区分 donglu-core、tournament-only、short-camp、overseas-supported、uncertain；逐名字段可追踪。 | 2026-06-27 | 拆足球小将逐名档案 issue。 |
-| 五大联赛亚洲教练 | AFC 主口径 2 人，广义边界 7 人；已有战绩口径和土耳其/以色列边界说明。 | 主表完成，边界可继续扩展 | 官方联赛统计、俱乐部任命公告、权威数据库。 | 每名教练只统计五大联赛顶级联赛一线队联赛场次；杯赛/欧战/助教不混入。 | 2026-06-27 | 拆欧洲非五大、AFC 国家队和亚洲顶级联赛教练扩展 issue。 |
+| 五大联赛亚洲教练 | AFC 主口径 2 人，广义边界 7 人；已有战绩口径和土耳其/以色列边界说明。issue #20 已补 `docs/research/asian-coaches-extension.md`，建议用统一 `data/raw/asian-coaches.json` 承接欧洲非五大、AFC 国字号和亚洲顶级联赛试点样本。 | 主表完成，扩展 schema 草案完成 | 官方联赛统计、俱乐部任命公告、足协任命公告、联赛 profile。 | 五大联赛主表不被污染；扩展表每名教练可标 `association_confederation`、`role_type`、`competition_scope` 和来源置信。 | 2026-06-28 | 按 issue #20 补首批 10-12 名试点教练官方源，再新增 `asian-coaches.json` 与 validator。 |
 
 ## 状态定义
 
