@@ -73,6 +73,8 @@
 4. 新闻与社交媒体：只在缺少官方注册页时作为线索来源，落库时应标 `provisional` 或 `needs-review`。
 5. 图片、短视频、二次转述：只能进入 dossiers 或 watchlist，不直接当作 registration_club 的唯一来源。
 
+更细的海外青训、球探平台、青年球员报告和公开数据站目录，见 `docs/research/scouting-source-directory.md`。后续拓展球员时，先按该目录找线索，再回到本文件和 `data-governance-and-quality-rules.md` 判断能否落库。
+
 ## 亚洲球员收集线
 
 已有基础：
@@ -179,6 +181,7 @@
 
 - 建一张“国家/年龄段/赛事/是否完整名单/是否补俱乐部路径”的覆盖矩阵。
 - 复核张家鸣、谢初筠、林子皓的欧洲注册与足协集训归属。
+- 按 `scouting-source-directory.md` 为中国留洋、日本/韩国 U17/U23 和亚洲对照组建立固定检索组合，区分官方注册、公开数据库、球探报告和自荐/试训线索。
 - 给中国成年国家队教练线新建数据文件，并用官方公告或通讯社原文建立首批记录。
 - 把亚洲教练从五大联赛扩展到 AFC 国家队和亚洲顶级联赛。
 - 给日本、韩国留洋历史增加 source confidence 和 `last_checked`。

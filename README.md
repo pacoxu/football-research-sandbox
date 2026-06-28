@@ -57,6 +57,7 @@ python3 -m http.server 4173
 - `docs/research/data-governance-and-quality-rules.md` 固化 `verification.status`、`external_links.type`、`squad_status`、死链、重复球员和过期复核规则。
 - `docs/coverage-matrix.md` 维护 U 系列赛事、留洋、历史五大联赛、足球小将、亚洲对照组和教练数据的覆盖状态与缺口清单。
 - `docs/research/asian-chinese-player-coach-collection.md` 记录亚洲/中国球员与教练的信息收集口径、当前覆盖和待核队列。
+- `docs/research/scouting-source-directory.md` 维护海外青训、球探平台、青年球员报告和公开数据站的后续检索方向。
 - `docs/research/china-league-pyramid-and-regional-super-leagues.md` 区分中国职业联赛层级、中冠通道和苏超/东北超/赣超/湘超等地方城市赛事。
 
 ## 现阶段种子范围
