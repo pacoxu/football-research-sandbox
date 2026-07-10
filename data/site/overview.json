@@ -3,7 +3,7 @@
   "stats": {
     "player_count": 171,
     "country_count": 4,
-    "foreign_registration_count": 27
+    "foreign_registration_count": 28
   },
   "tournaments": [
     {
@@ -447,7 +447,7 @@
       "short_name": "China Overseas 2026",
       "focus_level": "reference",
       "status": "in-progress",
-      "last_checked": "2026-05-22",
+      "last_checked": "2026-07-10",
       "date_range": {
         "start": "2026-01-01",
         "end": "2026-12-31"
@@ -460,14 +460,15 @@
         "LAFC2",
         "NK Lokomotiva Zagreb",
         "DAMM CF",
-        "Real Carabanchel CF"
+        "Real Carabanchel CF",
+        "AJ Auxerre"
       ],
       "headline": "2026 年中国留洋现役样本，优先跟踪当前仍在海外注册或效力的中国球员。",
       "notes": [
         "当前批次以仍在海外俱乐部注册、比赛或培养体系内的中国男足球员为主，暂不覆盖已回流中超或中甲的历史留洋球员。",
         "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
         "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。",
-        "已签约但生效日在未来的个案，如魏祥鑫 2026-07-01 欧塞尔节点，先列入“待生效 / 未来留洋观察”，不提前计入当前海外注册。"
+        "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。"
       ],
       "sources": [
         {
@@ -494,6 +495,16 @@
           "label": "LAFC2 official: Shaoziyang Liu signing",
           "publisher": "LAFC2",
           "url": "https://www.lafc.com/lafc2/news/lafc2-signs-goalkeeper-shaoziyang-liu-from-fc-bayern-munich-ii"
+        },
+        {
+          "label": "Soccerway profile: Xiangxin Wei at Auxerre",
+          "publisher": "Soccerway",
+          "url": "https://www.soccerway.com/player/wei-xiangxin/lfEWG3gc/"
+        },
+        {
+          "label": "Dongqiudi report on Wei Xiangxin's formal Auxerre arrival",
+          "publisher": "Dongqiudi",
+          "url": "https://www.dongqiudi.com/article/5986133.html"
         }
       ]
     },
@@ -759,9 +770,10 @@
           "Wang Bohao",
           "Wan Xiang",
           "Jin Yucheng",
-          "Wang Xiuhao"
+          "Wang Xiuhao",
+          "Wei Xiangxin"
         ],
-        "notes": "中国留洋条目已从单一历史个案扩到“早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的四层结构；除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。魏祥鑫这类已签约但生效日在未来的个案，先按“待生效 / 未来留洋观察”处理，不提前并入当前海外注册。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+        "notes": "中国留洋条目已从单一历史个案扩到“早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的四层结构；除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
         "special_lists": [
           {
             "id": "jianlibao-brazil-1993-1998",
