@@ -14857,24 +14857,51 @@
       "china_matches": [],
       "china_key_players": [],
       "regional_watch": {
-        "scope_note": {
-          "zh": "这不是 2026 世界杯最终名单，而是按截至 2026-05-23 站内已建档、仍处 U23 年龄段的日韩样本整理；底池以 AFC U23 2026 终报名名单为主，再按当前注册俱乐部单独标出仍在海外踢球的样本。",
-          "en": "This is not a projected final 2026 FIFA World Cup squad. It is a watchlist built from the site's currently archived Japan and Korea Republic players who are still U23-aged as of 2026-05-23, anchored first by the AFC U23 2026 final registrations and then split by current club location to highlight who is still playing abroad."
+        "title": {
+          "zh": "2026 世界杯 U20 年龄段观察",
+          "en": "2026 World Cup U20-age watch"
         },
-        "tag": "asia-u23-2026",
+        "scope_note": {
+          "zh": "这不是 2026 世界杯最终名单预测，而是按 2026-06-11 开幕日仍未满 20 岁的站内已建档球员整理的年龄段观察池。筛选口径为 birth_date > 2006-06-11，并按中国、日本、韩国、乌兹别克斯坦当前已建档样本分组；中国队已无缘正赛，因此中国组用于同年龄段横向比较。",
+          "en": "This is not a projected final 2026 FIFA World Cup squad. It is an age-band watchlist built from site-archived players who will still be under 20 on the 2026-06-11 opening day. The filter is birth_date > 2006-06-11, grouped across currently archived China PR, Japan, Korea Republic and Uzbekistan samples; China PR did not qualify, so its group is retained only as a same-age benchmark."
+        },
+        "tag": "",
+        "player_pool_label": {
+          "zh": "U20",
+          "en": "U20"
+        },
+        "birth_date_after": "2006-06-11",
         "team_groups": [
           {
-            "country": "Japan",
+            "country": "China PR",
+            "tag": "china-youth",
             "note": {
-              "zh": "日本这组以 2026 U23 亚洲杯冠军班底为底。此前在比利时 SK Beveren 的道胁丰，已于 2026 年 1 月完成回归福冈，因此当前这批已建档 U23 样本里没有持续留洋球员。",
-              "en": "Japan's pool is built around the 2026 AFC U23 champions. Yutaka Michiwaki, who had been with SK Beveren in Belgium, returned to Avispa Fukuoka in January 2026, so there is currently no active overseas player inside this archived Japanese U23 pool."
+              "zh": "中国队未进入 2026 世界杯决赛圈；这组只作为同年龄段样本参考。站内 U20 池覆盖王钰栋、刘诚宇、魏祥鑫、张家鸣、林子皓以及 2009/2010 年龄段国少和留洋样本，便于与参赛亚洲球队的年轻球员储备对照。",
+              "en": "China PR did not reach the 2026 World Cup finals; this group is only a same-age benchmark. The site U20 pool includes Wang Yudong, Liu Chengyu, Wei Xiangxin, Zhang Jiaming, Lin Zihao and 2009/2010 youth or overseas samples for comparison with qualified Asian teams."
+            }
+          },
+          {
+            "country": "Japan",
+            "tag": "japan-youth",
+            "note": {
+              "zh": "日本组按站内已建档 U20 样本整理，横跨 2026 U23 亚洲杯年轻球员、2007 年龄段职业 / 留洋样本，以及 2009/2010 年龄段 U17 亚洲杯名单。高冈伶飒、佐藤龙之介等是更接近成年队视野的样本。",
+              "en": "Japan's group is built from the site's archived U20-age sample, spanning younger 2026 AFC U23 players, 2007-born professional or overseas cases, and the 2009/2010 AFC U17 pool. Rento Takaoka and Ryunosuke Sato are among the more senior-adjacent names."
             }
           },
           {
             "country": "Korea Republic",
+            "tag": "korea-youth",
             "note": {
-              "zh": "韩国这组以 2026 U23 亚洲杯第四名班底为底。当前留洋样本主要是葡萄牙的金容学，以及在日本 J 联赛注册的金泰元。",
-              "en": "Korea Republic's pool is built around the squad that finished fourth at the 2026 AFC U23 Asian Cup. The active overseas subset currently centres on Kim Yonghak in Portugal and Kim Taewon, who is registered in Japan."
+              "zh": "韩国组按站内 U20 样本整理，包含 2006/2007 年龄段更接近职业队的球员，以及 2009/2010 年龄段 U17 亚洲杯名单。朴胜洙是当前最突出的英格兰梯队留洋样本。",
+              "en": "Korea Republic's group is built from the site U20 sample, including 2006/2007-born players closer to senior football and the 2009/2010 AFC U17 group. Park Seung-soo is the clearest England-based academy overseas case."
+            }
+          },
+          {
+            "country": "Uzbekistan",
+            "tag": "uzbekistan-youth",
+            "note": {
+              "zh": "乌兹别克斯坦已获得 2026 世界杯正赛资格；站内当前只建档到 2009 年龄段 U17 亚洲杯样本，因此这组更偏长期储备观察，不等同于成年队正赛名单候选。",
+              "en": "Uzbekistan have qualified for the 2026 World Cup finals. The site currently only archives their 2009-born AFC U17 sample, so this group is a longer-term pipeline watch rather than a senior finals-squad projection."
             }
           }
         ]
@@ -14893,16 +14920,8 @@
           "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
         },
         {
-          "label": "Avispa Fukuoka official profile: Yutaka Michiwaki",
-          "url": "https://www.avispa.co.jp/club-info-3/fw27_michiwaki_2026"
-        },
-        {
-          "label": "J.League profile: Kim Taewon at Kataller Toyama",
-          "url": "https://www.jleague.jp/player/1651218/"
-        },
-        {
-          "label": "Portimonense official profile: Kim Yonghak",
-          "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312"
+          "label": "AFC U17 2026 final squad lists",
+          "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
         }
       ]
     },
