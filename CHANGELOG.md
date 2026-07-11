@@ -4,6 +4,25 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-07-11
+
+### Added
+
+- Added README badges for Pages workflow status, generated data date, validation command, and research-sample scope.
+- Added `docs/snapshots.md` to define monthly, competition-node, and scope-change data snapshots.
+- Added `docs/known-limitations.md` to centralize non-official, non-realtime, source-conflict, and youth-data limitations.
+- Added China U20 2025 final-squad coverage: 14 new raw player records plus `afc-u20-2025` participation entries on 9 existing U23/CSL youth records.
+- Added China U17 2026 roster-boundary fields: `roster_status` on player participation records and `roster_boundary` on the tournament archive.
+
+### Data Notes
+
+- China U20 2025 now covers the AFC final registration 23/23; goals are filled from the current tournament archive, while appearances and minutes remain marked as pending match-report extraction.
+- China U17 2026 now counts final registration by `roster_status=final-squad` instead of raw `afc-u17-2026` participation count; Gu Boyu is marked `withdrawn/unused`, and fourth-camp entries are marked `later-camp-callup`.
+
+### Governance Notes
+
+- Documented that GitHub Pages deployments are not data snapshots; traceable snapshots should bind to a commit, tag, or release.
+
 ## 2026-06-28
 
 ### Added
