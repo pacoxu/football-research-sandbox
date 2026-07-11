@@ -1,5 +1,48 @@
 [
   {
+    "id": "cfa-yinchuan-u17-2026",
+    "name": "2026 CFA Team China Yinchuan International Youth Football Championship",
+    "short_name": "Yinchuan U17 2026",
+    "focus_level": "primary",
+    "status": "ongoing",
+    "last_checked": "2026-07-10",
+    "date_range": {
+      "start": "2026-07-05",
+      "end": "2026-07-11"
+    },
+    "focus_teams": [
+      "China PR",
+      "Australia",
+      "Nigeria",
+      "Tanzania"
+    ],
+    "headline": "中国 U17 在银川国际青年锦标赛前两轮 1 胜 1 负，先后 3 比 0 胜澳大利亚、0 比 2 负坦桑尼亚。",
+    "notes": [
+      "本赛事是中国 U17 备战 2026 年 11 月 FIFA U17 世界杯的国内热身赛窗口。",
+      "中国足协 2026-06-27 第四期集训通知确认，队伍 2026-06-30 至 2026-07-12 在银川集训并参赛。",
+      "2026-07-05 首轮，中国 U17 凭借帅惟浩、赵松源、孙臣曦的进球 3 比 0 击败澳大利亚 U17。",
+      "2026-07-08 次轮，中国 U17 0 比 2 不敌坦桑尼亚 U17，两轮后 1 胜 1 负积 3 分。",
+      "按 2026-07-09 战报，末轮中国 U17 将于 2026-07-11 19:35 对阵尼日利亚 U17。"
+    ],
+    "sources": [
+      {
+        "label": "CFA U17 fourth-camp notice and Yinchuan roster",
+        "publisher": "CFA",
+        "url": "https://www.thecfa.cn/wqmdu17/20260627/37817.html"
+      },
+      {
+        "label": "China U17 3-0 Australia U17 official report",
+        "publisher": "CFA",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260706/37840.html"
+      },
+      {
+        "label": "China U17 0-2 Tanzania U17 official report",
+        "publisher": "CFA",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260709/37873.html"
+      }
+    ]
+  },
+  {
     "id": "afc-u17-2026",
     "name": "AFC U17 Asian Cup Saudi Arabia 2026",
     "short_name": "AFC U17 2026",
@@ -397,7 +440,7 @@
     "short_name": "China Overseas 2026",
     "focus_level": "reference",
     "status": "in-progress",
-    "last_checked": "2026-05-22",
+    "last_checked": "2026-07-10",
     "date_range": {
       "start": "2026-01-01",
       "end": "2026-12-31"
@@ -410,14 +453,15 @@
       "LAFC2",
       "NK Lokomotiva Zagreb",
       "DAMM CF",
-      "Real Carabanchel CF"
+      "Real Carabanchel CF",
+      "AJ Auxerre"
     ],
     "headline": "2026 年中国留洋现役样本，优先跟踪当前仍在海外注册或效力的中国球员。",
     "notes": [
       "当前批次以仍在海外俱乐部注册、比赛或培养体系内的中国男足球员为主，暂不覆盖已回流中超或中甲的历史留洋球员。",
       "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
       "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。",
-      "已签约但生效日在未来的个案，如魏祥鑫 2026-07-01 欧塞尔节点，先列入“待生效 / 未来留洋观察”，不提前计入当前海外注册。"
+      "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。"
     ],
     "sources": [
       {
@@ -444,6 +488,16 @@
         "label": "LAFC2 official: Shaoziyang Liu signing",
         "publisher": "LAFC2",
         "url": "https://www.lafc.com/lafc2/news/lafc2-signs-goalkeeper-shaoziyang-liu-from-fc-bayern-munich-ii"
+      },
+      {
+        "label": "Soccerway profile: Xiangxin Wei at Auxerre",
+        "publisher": "Soccerway",
+        "url": "https://www.soccerway.com/player/wei-xiangxin/lfEWG3gc/"
+      },
+      {
+        "label": "Dongqiudi report on Wei Xiangxin's formal Auxerre arrival",
+        "publisher": "Dongqiudi",
+        "url": "https://www.dongqiudi.com/article/5986133.html"
       }
     ]
   },

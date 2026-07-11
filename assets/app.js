@@ -843,6 +843,7 @@ const CHINA_STATUS_LABELS = {
   "runner-up": { zh: "亚军", en: "Runners-up" },
   "finalist-ongoing": { zh: "决赛进行中", en: "Final in progress" },
   qualified: { zh: "已晋级", en: "Qualified" },
+  preparation: { zh: "备战", en: "Preparation" },
   "did-not-qualify": { zh: "未晋级", en: "Did not qualify" },
   "did-not-participate": { zh: "未参赛", en: "Did not participate" }
 };

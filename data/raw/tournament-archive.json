@@ -2183,6 +2183,321 @@
     ]
   },
   {
+    "id": "cfa-yinchuan-u17-2026",
+    "confederation": "CFA",
+    "competition_name": "2026 CFA Team China Yinchuan International Youth Football Championship",
+    "level": "u17",
+    "edition_label": "2026",
+    "host": "China PR",
+    "date_range": {
+      "start": "2026-07-05",
+      "end": "2026-07-11"
+    },
+    "status": "ongoing",
+    "champion": "",
+    "runner_up": "",
+    "china_status": "preparation",
+    "china_summary": "中国 U17 在 2026CFA中国之队·银川国际青年足球锦标赛前两轮取得 1 胜 1 负：2026-07-05 以 3 比 0 击败澳大利亚 U17，2026-07-08 以 0 比 2 不敌坦桑尼亚 U17；末轮将于 2026-07-11 对阵尼日利亚 U17。",
+    "china_detail_scope": "goals-assists-lineups-pending",
+    "latest_public_roster_view": {
+      "label": {
+        "zh": "2026银川国际青年锦标赛公开名单",
+        "en": "2026 Yinchuan international youth tournament public roster"
+      },
+      "note": {
+        "zh": "按中国足协 2026-06-27 第四期集训通知整理；该期集训时间为 2026-06-30 至 2026-07-12，任务包含参加 2026CFA中国之队·银川国际青年足球锦标赛。名单用于跟踪本次银川赛事与 2026 U17 世界杯备战池，不替代 2026 U17 亚洲杯终报名表。",
+        "en": "Compiled from the CFA fourth-camp notice dated 2026-06-27. The camp runs from 2026-06-30 to 2026-07-12 and includes the 2026 CFA Team China Yinchuan International Youth Football Championship. This view tracks the Yinchuan tournament and the 2026 U17 World Cup preparation pool; it does not replace the 2026 AFC U17 finals squad list."
+      },
+      "head_coach": {
+        "name": "Satoshi Ukishima",
+        "local_name": "浮嶋敏"
+      },
+      "groups": [
+        {
+          "label": {
+            "zh": "守门员 GK",
+            "en": "Goalkeepers"
+          },
+          "entries": [
+            {
+              "player_id": "cn-qin-ziniu-2009",
+              "player": "Qin Ziniu",
+              "affiliation": "恒大足球学校"
+            },
+            {
+              "player_id": "cn-jiang-chengen-2010",
+              "player": "Jiang Chengen",
+              "affiliation": "恒大足球学校"
+            },
+            {
+              "player_id": "cn-zhu-yuxuan-2009",
+              "player": "Zhu Yuxuan",
+              "affiliation": "赫塔菲足球俱乐部"
+            }
+          ]
+        },
+        {
+          "label": {
+            "zh": "后卫 DF",
+            "en": "Defenders"
+          },
+          "entries": [
+            {
+              "player_id": "cn-zhang-xuyao-2009",
+              "player": "Zhang Xuyao",
+              "affiliation": "山东泰山足球俱乐部"
+            },
+            {
+              "player_id": "cn-li-junpeng-2009",
+              "player": "Li Junpeng",
+              "affiliation": "山东泰山足球俱乐部"
+            },
+            {
+              "player_id": "cn-gu-boyu-2009",
+              "player": "Gu Boyu",
+              "affiliation": "上海申花足球俱乐部"
+            },
+            {
+              "player_id": "cn-nan-zixun-2009",
+              "player": "Nan Zixun",
+              "affiliation": "清华大学附属中学"
+            },
+            {
+              "player_id": "cn-liu-zhicheng-2009",
+              "player": "Liu Zhicheng",
+              "affiliation": "青岛西海岸足球俱乐部"
+            },
+            {
+              "player_id": "cn-bian-weihao-2009",
+              "player": "Bian Weihao",
+              "affiliation": "湖北青年星足球俱乐部"
+            },
+            {
+              "player_id": "cn-jin-yucheng-2009",
+              "player": "Jin Yucheng",
+              "affiliation": "萨格勒布火车头足球俱乐部"
+            },
+            {
+              "name": {
+                "zh": "张君豪",
+                "en": "Zhang Junhao"
+              },
+              "affiliation": "山东鲁能泰山足球学校"
+            }
+          ]
+        },
+        {
+          "label": {
+            "zh": "中场 MF",
+            "en": "Midfielders"
+          },
+          "entries": [
+            {
+              "player_id": "cn-he-sifan-2009",
+              "player": "He Sifan",
+              "affiliation": "山东鲁能泰山足球学校"
+            },
+            {
+              "player_id": "cn-kong-xinuo-2010",
+              "player": "Kong Xinuo",
+              "affiliation": "山东鲁能泰山足球学校"
+            },
+            {
+              "player_id": "cn-wang-heyi-2009",
+              "player": "Wang Heyi",
+              "affiliation": "广东广州豹足球俱乐部"
+            },
+            {
+              "name": {
+                "zh": "孙臣曦",
+                "en": "Sun Chenxi"
+              },
+              "affiliation": "广东铭途足球俱乐部"
+            },
+            {
+              "player_id": "cn-zhou-yunuo-2009",
+              "player": "Zhou Yunuo",
+              "affiliation": "清华大学附属中学"
+            },
+            {
+              "player_id": "cn-zhang-lindong-2010",
+              "player": "Zhang Lindong",
+              "affiliation": "达姆足球俱乐部"
+            },
+            {
+              "player_id": "cn-xu-zhengpeng-2009",
+              "player": "Xu Zhengpeng",
+              "affiliation": "武汉三镇足球俱乐部"
+            },
+            {
+              "player_id": "cn-pan-chaowei-2010",
+              "player": "Pan Chaowei",
+              "affiliation": "山东泰山足球俱乐部"
+            },
+            {
+              "name": {
+                "zh": "袁博涵",
+                "en": "Yuan Bohan"
+              },
+              "affiliation": "深圳青年人足球俱乐部"
+            },
+            {
+              "player_id": "cn-xie-jin-2009",
+              "player": "Xie Jin",
+              "affiliation": "其他"
+            }
+          ]
+        },
+        {
+          "label": {
+            "zh": "前锋 FW",
+            "en": "Forwards"
+          },
+          "entries": [
+            {
+              "player_id": "cn-shuai-weihao-2009",
+              "player": "Shuai Weihao",
+              "affiliation": "成都蓉城足球俱乐部"
+            },
+            {
+              "player_id": "cn-zhao-songyuan-2009",
+              "player": "Zhao Songyuan",
+              "affiliation": "清华大学附属中学"
+            },
+            {
+              "player_id": "cn-zhang-bolin-2009",
+              "player": "Zhang Bolin",
+              "affiliation": "其他"
+            }
+          ]
+        }
+      ]
+    },
+    "china_matches": [
+      {
+        "date": "2026-07-05",
+        "stage": "Round 1",
+        "opponent": "Australia",
+        "score_for": 3,
+        "score_against": 0,
+        "result": "W",
+        "note": "中国足协战报显示，本场于 2026-07-05 19:35 在银川市体育中心贺兰山体育场进行；中国 U17 凭借帅惟浩、赵松源、孙臣曦进球 3 比 0 取胜。官方战报未提供完整首发与替补名单，当前暂不回填阵容。",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-shuai-weihao-2009",
+            "player": "Shuai Weihao",
+            "minute": "6",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-xu-zhengpeng-2009",
+            "player": "Xu Zhengpeng",
+            "minute": "6",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-zhao-songyuan-2009",
+            "player": "Zhao Songyuan",
+            "minute": "54",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-xu-zhengpeng-2009",
+            "player": "Xu Zhengpeng",
+            "minute": "54",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player": {
+              "zh": "孙臣曦",
+              "en": "Sun Chenxi"
+            },
+            "minute": "88",
+            "role": "substitute"
+          }
+        ],
+        "china_lineup": {}
+      },
+      {
+        "date": "2026-07-08",
+        "stage": "Round 2",
+        "opponent": "Tanzania",
+        "score_for": 0,
+        "score_against": 2,
+        "result": "L",
+        "note": "中国足协战报显示，中国 U17 上下半场补时阶段各丢一球，0 比 2 不敌坦桑尼亚 U17；本场相较首轮首发有 2 处调整，秦子牛、袁博涵轮换江承恩、王贺毅。官方战报未提供完整首发与替补名单，当前暂不回填阵容。",
+        "china_contributions": [],
+        "china_lineup": {}
+      },
+      {
+        "date": "2026-07-11",
+        "stage": "Round 3",
+        "opponent": "Nigeria",
+        "score_for": null,
+        "score_against": null,
+        "result": "TBD",
+        "note": "中国足协 2026-07-09 战报写明，中国 U17 将于 2026-07-11 19:35 迎战尼日利亚 U17；当前等待赛果与阵容公开。",
+        "china_contributions": [],
+        "china_lineup": {}
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Shuai Weihao",
+        "player_id": "cn-shuai-weihao-2009",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "2026-07-05 首轮对澳大利亚第 6 分钟破门，并在 2026-07-08 对坦桑尼亚第 31 分钟制造中国队全场最好机会。"
+      },
+      {
+        "player": "Zhao Songyuan",
+        "player_id": "cn-zhao-songyuan-2009",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "2026-07-05 对澳大利亚第 54 分钟头球破门，将比分扩大为 2 比 0。"
+      },
+      {
+        "player": "Sun Chenxi",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "2026-07-05 对澳大利亚替补登场，第 88 分钟低射远角得手。"
+      },
+      {
+        "player": "Xu Zhengpeng",
+        "player_id": "cn-xu-zhengpeng-2009",
+        "goals": 0,
+        "assists": 2,
+        "role_note": "2026-07-05 对澳大利亚先后助攻帅惟浩和赵松源破门，并在下半场有任意球攻门制造威胁。"
+      },
+      {
+        "player": "Qin Ziniu",
+        "player_id": "cn-qin-ziniu-2009",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "2026-07-08 对坦桑尼亚轮换首发，战报可核其上半场多次化解对手射门。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "CFA U17 fourth-camp notice and Yinchuan roster",
+        "url": "https://www.thecfa.cn/wqmdu17/20260627/37817.html"
+      },
+      {
+        "label": "China U17 3-0 Australia U17 official report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260706/37840.html"
+      },
+      {
+        "label": "China U17 0-2 Tanzania U17 official report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260709/37873.html"
+      }
+    ]
+  },
+  {
     "id": "afc-u16-2018",
     "confederation": "AFC",
     "competition_name": "AFC U-16 Championship Malaysia 2018",

@@ -30,7 +30,7 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData() {
   const dataset = await loadDataset();
-  const generatedAt = "2026-06-28";
+  const generatedAt = "2026-07-10";
   const players = [...dataset.players].sort(comparePlayers);
 
   const overview = {
