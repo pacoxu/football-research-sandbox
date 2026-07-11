@@ -227,9 +227,9 @@ const UI_COPY = {
     "tournamentDetail.history.table.japan": "日本",
     "tournamentDetail.history.table.korea": "韩国",
     "tournamentDetail.watch.eyebrow": "Watchlist",
-    "tournamentDetail.watch.title": "日韩 U23 世界杯周期观察",
-    "tournamentDetail.watch.empty": "当前这条赛事还没有补到日韩 U23 观察池。",
-    "tournamentDetail.watch.sampleCount": "U23 池 {count} 人",
+    "tournamentDetail.watch.title": "区域年轻球员观察",
+    "tournamentDetail.watch.empty": "当前这条赛事还没有补到区域观察池。",
+    "tournamentDetail.watch.sampleCount": "{label} 池 {count} 人",
     "tournamentDetail.watch.overseasCount": "当前留洋 {count} 人",
     "tournamentDetail.watch.allPlayers": "全名单",
     "tournamentDetail.watch.overseasPlayers": "留洋样本",
@@ -579,9 +579,9 @@ const UI_COPY = {
     "tournamentDetail.history.table.japan": "Japan",
     "tournamentDetail.history.table.korea": "Korea Republic",
     "tournamentDetail.watch.eyebrow": "Watchlist",
-    "tournamentDetail.watch.title": "Japan and Korea Republic U23 World Cup-cycle watch",
-    "tournamentDetail.watch.empty": "No Japan/Korea Republic U23 watchlist has been attached to this tournament yet.",
-    "tournamentDetail.watch.sampleCount": "{count} players in the U23 pool",
+    "tournamentDetail.watch.title": "Regional young-player watch",
+    "tournamentDetail.watch.empty": "No regional watchlist has been attached to this tournament yet.",
+    "tournamentDetail.watch.sampleCount": "{count} players in the {label} pool",
     "tournamentDetail.watch.overseasCount": "{count} currently abroad",
     "tournamentDetail.watch.allPlayers": "Full pool",
     "tournamentDetail.watch.overseasPlayers": "Overseas players",
@@ -2401,13 +2401,26 @@ function isPlayerCurrentlyOverseas(player) {
   return Boolean(homeCountry && clubCountry && homeCountry !== clubCountry);
 }
 
+function getRegionalWatchPoolLabel(regionalWatch) {
+  return localizeText(regionalWatch?.player_pool_label, "U23");
+}
+
 function getRegionalWatchGroupPlayers(group, regionalWatch) {
+  if (Array.isArray(group?.player_ids) && group.player_ids.length > 0) {
+    const playerIds = new Set(group.player_ids);
+    return state.enrichedPlayers.filter((player) => playerIds.has(player.id));
+  }
+
   const tag = group?.tag ?? regionalWatch?.tag ?? "";
+  const birthDateAfter = group?.birth_date_after ?? regionalWatch?.birth_date_after ?? "";
   return state.enrichedPlayers.filter((player) => {
     if (player.country !== group.country) {
       return false;
     }
     if (tag && !(player.focus_tags ?? []).includes(tag)) {
+      return false;
+    }
+    if (birthDateAfter && player.birth_date <= birthDateAfter) {
       return false;
     }
     return true;
@@ -2418,12 +2431,13 @@ function renderRegionalWatchGroupCard(group, regionalWatch) {
   const players = getRegionalWatchGroupPlayers(group, regionalWatch);
   const overseasPlayers = players.filter(isPlayerCurrentlyOverseas);
   const playerLine = players.map((player) => renderPlayerLink(player)).join("、");
+  const poolLabel = getRegionalWatchPoolLabel(regionalWatch);
 
   return `
     <article class="stack-card">
       <h3>${escapeHtml(formatCountryName(group.country))}</h3>
       <div class="chip-row">
-        <span class="chip">${escapeHtml(t("tournamentDetail.watch.sampleCount", { count: players.length }))}</span>
+        <span class="chip">${escapeHtml(t("tournamentDetail.watch.sampleCount", { count: players.length, label: poolLabel }))}</span>
         <span class="chip">${escapeHtml(t("tournamentDetail.watch.overseasCount", { count: overseasPlayers.length }))}</span>
       </div>
       ${group.note ? `<p class="small-note">${escapeHtml(localizeText(group.note))}</p>` : ""}
@@ -3842,6 +3856,7 @@ function renderTournamentDetailPage() {
   const regionalHistorySummary = document.querySelector("#tournamentDetailRegionalHistorySummary");
   const regionalHistoryTable = document.querySelector("#tournamentDetailRegionalHistoryTable");
   const regionalWatchSection = document.querySelector("#tournamentDetailRegionalWatchSection");
+  const regionalWatchTitle = document.querySelector("#tournamentDetailRegionalWatchTitle");
   const regionalWatchScope = document.querySelector("#tournamentDetailRegionalWatchScope");
   const regionalWatchGrid = document.querySelector("#tournamentDetailRegionalWatchGrid");
   const squad = document.querySelector("#tournamentDetailSquad");
@@ -3988,12 +4003,18 @@ function renderTournamentDetailPage() {
   const regionalWatch = archiveTournament?.regional_watch;
   regionalWatchSection.hidden = !regionalWatch;
   if (regionalWatch) {
+    if (regionalWatchTitle) {
+      regionalWatchTitle.textContent = localizeText(regionalWatch.title, t("tournamentDetail.watch.title"));
+    }
     regionalWatchScope.textContent = localizeText(regionalWatch.scope_note, t("common.pending"));
     regionalWatchGrid.innerHTML =
       (regionalWatch.team_groups ?? []).length > 0
         ? regionalWatch.team_groups.map((group) => renderRegionalWatchGroupCard(group, regionalWatch)).join("")
         : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.watch.empty"))}</div>`;
   } else {
+    if (regionalWatchTitle) {
+      regionalWatchTitle.textContent = t("tournamentDetail.watch.title");
+    }
     regionalWatchScope.textContent = "";
     regionalWatchGrid.innerHTML = "";
   }
