@@ -13,6 +13,8 @@
 - [数据校验脚本](validation.md)：`scripts/validate-data.mjs` 校验什么、不校验什么。
 - [Transfermarkt 身价刷新说明](transfermarkt-market-values.md)：外部身价快照的刷新流程、频率和人工复核责任。
 - [静态 JSON API 说明](api.md)：`data/site/*.json` 能否作为公开数据接口使用。
+- [Release 与数据快照机制](snapshots.md)：月度、赛事节点和口径变更快照的命名、检查和 release 说明。
+- [已知限制](known-limitations.md)：非官方、非实时、第三方来源冲突和青年球员资料滞后等使用边界。
 
 ## 研究口径
 

@@ -1,9 +1,9 @@
 {
   "generated_at": "2026-06-27",
   "stats": {
-    "player_count": 171,
+    "player_count": 185,
     "country_count": 4,
-    "foreign_registration_count": 27
+    "foreign_registration_count": 30
   },
   "tournaments": [
     {
@@ -8772,7 +8772,7 @@
             },
             {
               "type": "assist",
-              "player": "Xiao Jizheng",
+              "player": "Xiong Jizheng",
               "minute": "80",
               "role": "substitute"
             },
@@ -9206,7 +9206,7 @@
         },
         {
           "squad_number": 21,
-          "player_id": "cn-kong-xinuo-2010",
+          "player_id": "cn-kong-xinuo-2009",
           "player": "Kong Xinuo"
         },
         {
@@ -9220,6 +9220,104 @@
           "player": "Zhu Yuxuan"
         }
       ],
+      "roster_boundary": {
+        "checked_at": "2026-07-11",
+        "status_field": "tournament_participation[].roster_status",
+        "source_basis": [
+          "AFC U17 2026 china_squad is the final-registration boundary for the 23-player tournament squad.",
+          "latest_public_roster_view follows the CFA 2026-06-27 fourth-camp public roster and is a post-tournament pool view, not a replacement for the AFC final squad.",
+          "Player records may carry later camp or watchlist statuses, but only roster_status=final-squad counts toward the AFC U17 2026 final 23."
+        ],
+        "statuses": [
+          {
+            "status": "final-squad",
+            "meaning": "Included in the AFC U17 2026 final registration / china_squad 23-player tournament roster."
+          },
+          {
+            "status": "later-camp-callup",
+            "meaning": "Included in a later CFA U17 camp or public pool after the AFC tournament; do not count as AFC final registration."
+          },
+          {
+            "status": "watchlist",
+            "meaning": "Tracked as a youth prospect or dossier/watchlist sample; no final-registration claim."
+          },
+          {
+            "status": "withdrawn/unused",
+            "meaning": "Entered a pre-tournament standby/candidate list or was later referenced around the squad, but was not in the AFC final 23."
+          }
+        ],
+        "counts": {
+          "final_squad": 23,
+          "afc_u17_competition_tagged_players": 24,
+          "tagged_not_final_squad": 1,
+          "latest_public_roster_mapped_players": 21,
+          "latest_public_roster_unmapped_players": 3
+        },
+        "diffs": {
+          "afc_tagged_not_final_squad": [
+            {
+              "player_id": "cn-gu-boyu-2009",
+              "player": "Gu Boyu",
+              "roster_status": "withdrawn/unused",
+              "note": "Pre-tournament 25-player standby/candidate list member; final reporting says he missed the AFC final 23."
+            }
+          ],
+          "latest_public_roster_not_final_squad": [
+            {
+              "player_id": "cn-gu-boyu-2009",
+              "player": "Gu Boyu",
+              "roster_status": "later-camp-callup"
+            },
+            {
+              "player_id": "cn-zhang-lindong-2010",
+              "player": "Zhang Lindong",
+              "roster_status": "later-camp-callup"
+            },
+            {
+              "name": {
+                "zh": "张君豪",
+                "en": "Zhang Junhao"
+              },
+              "roster_status": "later-camp-callup",
+              "note": "Listed in the latest public roster view but not mapped to a player record yet."
+            },
+            {
+              "name": {
+                "zh": "孙臣曦",
+                "en": "Sun Chenxi"
+              },
+              "roster_status": "later-camp-callup",
+              "note": "Listed in the latest public roster view but not mapped to a player record yet."
+            },
+            {
+              "name": {
+                "zh": "袁博涵",
+                "en": "Yuan Bohan"
+              },
+              "roster_status": "later-camp-callup",
+              "note": "Listed in the latest public roster view but not mapped to a player record yet."
+            }
+          ],
+          "final_squad_not_latest_public_roster": [
+            {
+              "player_id": "cn-kuang-zhaolei-2009",
+              "player": "Kuang Zhaolei"
+            },
+            {
+              "player_id": "cn-wan-xiang-2009",
+              "player": "Wan Xiang"
+            },
+            {
+              "player_id": "cn-wang-xiuhao-2009",
+              "player": "Wang Xiuhao"
+            },
+            {
+              "player_id": "cn-peng-xianchen-2009",
+              "player": "Peng Xianchen"
+            }
+          ]
+        }
+      },
       "latest_public_roster_view": {
         "label": {
           "zh": "2026年第四期集训公开名单",
@@ -9319,7 +9417,7 @@
                 "affiliation": "山东鲁能泰山足球学校"
               },
               {
-                "player_id": "cn-kong-xinuo-2010",
+                "player_id": "cn-kong-xinuo-2009",
                 "player": "Kong Xinuo",
                 "affiliation": "山东鲁能泰山足球学校"
               },
@@ -9456,7 +9554,7 @@
                 "player": "Bian Weihao"
               },
               {
-                "player_id": "cn-kong-xinuo-2010",
+                "player_id": "cn-kong-xinuo-2009",
                 "player": "Kong Xinuo"
               },
               {
@@ -9693,7 +9791,7 @@
                 "player": "Wang Heyi"
               },
               {
-                "player_id": "cn-kong-xinuo-2010",
+                "player_id": "cn-kong-xinuo-2009",
                 "player": "Kong Xinuo"
               },
               {
@@ -9929,7 +10027,7 @@
                 "player": "Zhu Yuxuan"
               },
               {
-                "player_id": "cn-kong-xinuo-2010",
+                "player_id": "cn-kong-xinuo-2009",
                 "player": "Kong Xinuo"
               }
             ]
@@ -10094,7 +10192,7 @@
                 "minute": "88"
               },
               {
-                "player_id": "cn-kong-xinuo-2010",
+                "player_id": "cn-kong-xinuo-2009",
                 "player": "Kong Xinuo",
                 "status": "unused"
               },

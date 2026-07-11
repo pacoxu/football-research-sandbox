@@ -135,9 +135,21 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -152,6 +164,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -163,8 +180,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
+      "last_checked": "2026-07-11",
+      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {
@@ -572,9 +589,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦进 1 球并有 1 次助攻，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -599,6 +628,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -620,8 +654,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属和一线队地位由浙江队当前名单与赛季射手榜交叉确认。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属和一线队地位由浙江队当前名单与赛季射手榜交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {
@@ -656,9 +690,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 2,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对卡塔尔和澳大利亚各进 1 球、对吉尔吉斯斯坦有 1 次助攻，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -683,6 +729,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -704,8 +755,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属由上海海港当前名单与球员资料页交叉确认。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属由上海海港当前名单与球员资料页交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {
@@ -964,9 +1015,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -991,6 +1054,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -1007,8 +1075,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {
@@ -1185,9 +1253,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对卡塔尔有 1 次助攻但未记录进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -1212,6 +1292,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -1228,8 +1313,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {
@@ -1455,9 +1540,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦进 1 球、对卡塔尔有 1 次助攻，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -1482,6 +1579,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -1503,8 +1605,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的大连英博归属由公开名单补充。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的大连英博归属由公开名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {
@@ -1585,17 +1687,20 @@
       "csl-2026",
       "csl-u21-current",
       "csl-u23-overseas",
-      "overseas-europe"
+      "overseas-europe",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
       {
-        "label": "2025 中国 U20 亚洲杯名单",
+        "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
         "appearances": null,
-        "goals": null,
+        "goals": 0,
         "minutes": null,
-        "note": "中国足协 2025-02-11 集训及参赛通知将其所属列为西班牙奥斯皮塔莱特足球俱乐部；对卡塔尔首战第 11 分钟，杨希抢断后连过 3 人制造任意球，体现其边后卫推进能力。"
+        "note": "AFC final squad registration 将其列为 Yang Xi、报名俱乐部 Qingdao Westcoast FC；当前主档保留后续上海海港注册状态。赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。",
+        "competition_id": "afc-u20-2025"
       },
       {
         "label": "2025 中国 U22 / U23 周期集训",
@@ -1637,6 +1742,11 @@
       }
     ],
     "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
       {
         "type": "profile",
         "label": "Transfermarkt profile",
@@ -1695,8 +1805,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "中国足协 U20、U22、U23 及成年国家队通知与战报可以连续拼出其从西班牙奥斯皮塔莱特、青岛西海岸到上海海港，再到成年国家队考察线的时间轴。Transfermarkt 与 Sofascore 可交叉校验生日、巴塞罗那出生地、右脚和右边后卫定位。公开身高口径在 175cm 与 182cm 间存在差异，因此当前不硬填高度字段。"
+      "last_checked": "2026-07-11",
+      "notes": "中国足协 U20、U22、U23 及成年国家队通知与战报可以连续拼出其从西班牙奥斯皮塔莱特、青岛西海岸到上海海港，再到成年国家队考察线的时间轴。Transfermarkt 与 Sofascore 可交叉校验生日、巴塞罗那出生地、右脚和右边后卫定位。公开身高口径在 175cm 与 182cm 间存在差异，因此当前不硬填高度字段。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   }
 ]

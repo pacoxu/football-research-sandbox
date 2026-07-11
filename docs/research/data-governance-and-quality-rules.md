@@ -89,6 +89,23 @@
 - 未来生效转会：`pending-transfer`
 - 未核实短视频/自媒体线索：不要直接进入球员当前注册字段，可放 `dossiers` 或 watchlist。
 
+## roster_status
+
+`roster_status` 用于解决同一队伍在不同时间点的名单边界，不替代 `squad_status`。例如中国 U17 2026 同时存在 AFC 终报名、赛前 25 人候选、赛后第四期集训和长期观察池，页面或统计只应把 `final-squad` 计入赛事终报名。
+
+| 状态 | 使用标准 |
+| --- | --- |
+| `final-squad` | 进入 AFC/FIFA/联赛官方终报名或赛事正式 23/名单边界。 |
+| `later-camp-callup` | 赛事后或另一阶段的集训/公开 pool，不能倒推为原赛事终报名。 |
+| `watchlist` | 专题、图片、短视频、球探或观察池线索，不能计入正式名单。 |
+| `withdrawn/unused` | 进入候选、备战、替补边缘或曾被提及，但最终未进入正式名单或明确未使用。 |
+
+维护规则：
+
+- 赛事终报名统计优先看 `roster_status=final-squad`，不要只按 `competition_id` 或 `squad_status=registered` 统计。
+- 若同一球员既有落选/候选记录又有后续集训记录，应保留两条 `tournament_participation`，分别标记 `withdrawn/unused` 和 `later-camp-callup`。
+- 赛事档案可以用 `roster_boundary` 记录 final squad、latest camp、unmapped names 和差集说明。
+
 ## 来源证据模板
 
 当一条记录依赖多个来源或存在冲突时，在 `verification.notes` 中必须解释证据链；后续可逐步增加结构化 `verification.evidence`：

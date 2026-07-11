@@ -1,6 +1,6 @@
 # 青训与亚洲对照样本补采大纲
 
-核对日期：2026-06-27；亚洲对照组外部来源补采更新：2026-06-28
+核对日期：2026-06-27；亚洲对照组外部来源补采更新：2026-06-28；中国 U20 2025 终报名与中国 U17 2026 roster boundary 更新：2026-07-11
 目标：把后续补采拆成可录入的任务表，优先覆盖球员姓名、国籍、出生日期、年龄段、位置、当前俱乐部/学校、俱乐部国家、赛事名单身份、出场/进球/分钟、青训路径和来源链接。
 
 ## 通用球员字段
@@ -25,8 +25,8 @@
 
 | 层级 | 赛事/名单 | 当前数据文件 | 当前覆盖状态 | 关键缺口 |
 |---|---|---|---|---|
-| 中国 U17 | AFC U17 Asian Cup Saudi Arabia 2026 终报名表 | `data/raw/players/u17.json` + `data/raw/players/china-u17-2026-additions.json` | 已有中国 U17 相关唯一球员 31 人，覆盖了终报名和后续补充观察池；README 标注 2026 赛事完整报名名单已补齐 | 需要新增 `is_final_squad_2026` 或专门 roster 表，明确 23 人终报名、赛后新增集训、非终报名观察池的边界 |
-| 中国 U20 | AFC U20 Asian Cup China 2025 | 赛事卡在 `data/raw/tournaments.json` / `data/raw/tournament-archive.json`，暂无专门 `china-u20-2025.json` | 赛事结果已覆盖，球员完整名单未单独结构化 | 需补 23 人终报名名单、俱乐部、出生日期、正赛出场/进球/分钟；重点衔接 2026 中超 U21/U23 和留洋字段 |
+| 中国 U17 | AFC U17 Asian Cup Saudi Arabia 2026 终报名表 | `data/raw/players/u17.json` + `data/raw/players/china-u17-2026-additions.json` + `data/raw/tournament-archive.json` 的 `roster_boundary` | 已用 `roster_status` 标清 23 人终报名、赛前 25 人落选、赛后第四期集训和观察池边界；`final-squad` 正好 23 人 | 第四期集训公开名单仍有张君豪、孙臣曦、袁博涵 3 个未建档名字；是否入主库需继续核生日、注册和官方个人来源 |
+| 中国 U20 | AFC U20 Asian Cup China 2025 | `data/raw/players/china-u20-2025.json` + 既有 U23/中超样本的 `afc-u20-2025` 参赛记录；赛事卡在 `data/raw/tournaments.json` / `data/raw/tournament-archive.json` | AFC final registration 23/23 已覆盖；14 人新增主档，9 名既有球员追加赛事参与；进球数按当前赛事档案补入 | 需继续补正赛 appearances、minutes、cards、starter/substitute，并用 CFA/俱乐部来源补中文名 |
 | 中国 U23 | AFC U23 Asian Cup Saudi Arabia 2026 | `data/raw/players/china-u23-2026.json` | 23/23 终报名名单已结构化 | 出场、进球、分钟基本为空；需补正赛逐场技术统计和赛后俱乐部变化 |
 | 中国 U21/U23 国内联赛观察 | Chinese Super League 2026 青年样本 | `data/raw/players/china-csl-2026-youth.json` + U23 文件里的 `csl-2026` tag | 已有 16 个中超/国内青年观察样本 | 需统一一线队中超、中甲/中乙、足协杯、U21 联赛的统计口径 |
 
@@ -36,10 +36,10 @@ U20 补采优先任务：
 
 | 任务 | 输出 |
 |---|---|
-| 拉取 AFC U20 2025 final squad lists / match reports | `data/raw/players/china-u20-2025.json` |
-| 补齐 23 人基础字段 | 姓名、国籍、出生日期、位置、俱乐部/学校、俱乐部国家 |
-| 与现有 U23/中超/留洋样本合并 | 同一球员只保留一条主档，赛事参与追加到 `tournament_participation` |
-| 补 2025 U20 正赛统计 | appearances、goals、minutes、cards、starter/substitute |
+| 拉取 AFC U20 2025 final squad lists | 已落 `data/raw/players/china-u20-2025.json` |
+| 补齐 23 人基础字段 | 已覆盖姓名、国籍、出生日期、位置、俱乐部/学校、俱乐部国家、身高、体重 |
+| 与现有 U23/中超/留洋样本合并 | 已对 9 名既有球员追加 `afc-u20-2025`，避免重复建主档 |
+| 补 2025 U20 正赛统计 | 已补当前赛事档案确认的 goals；appearances、minutes、cards、starter/substitute 待 AFC match report 或技术统计表抽取 |
 
 ## 2. 日本、韩国 U17/U23 的俱乐部、学校、青训路径来源
 
@@ -277,7 +277,7 @@ U20 补采优先任务：
 ## 建议落地顺序
 
 1. 先建 `china-u20-2025.json`，补中国 U20 终报名 23 人。
-2. 给中国 U17 增加终报名/后续补充的状态字段，解决 31 人观察池与 23 人终报名混在一起的问题。
+2. 中国 U17 已新增 `roster_status` 与 archive `roster_boundary`；后续只需按来源质量决定是否给第四期集训未映射名字建档。
 3. 给当前中国留洋样本加 `overseas_status`，先不更新统计。
 4. 补中超 2026 青年样本的 apps/goals/minutes，按一线队和 U21 联赛分表。
 5. 补五大联赛出场榜 6 个缺失 featured record。

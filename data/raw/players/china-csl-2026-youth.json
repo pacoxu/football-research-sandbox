@@ -24,9 +24,21 @@
     "focus_tags": [
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 2,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对卡塔尔和吉尔吉斯斯坦各进 1 球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "csl-2026",
         "label": "2026 中超一线队 U21 跟踪",
@@ -40,6 +52,11 @@
     ],
     "external_links": [
       {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
         "type": "club",
         "label": "Sina Shenhua squad / Liu Chengyu player page",
         "url": "https://match.sports.sina.com.cn/football/player.php?id=6853648"
@@ -52,8 +69,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "出生日期、位置和当前俱乐部由申花当前球员页与 Wikipedia 球员条目交叉确认。"
+      "last_checked": "2026-07-11",
+      "notes": "出生日期、位置和当前俱乐部由申花当前球员页与 Wikipedia 球员条目交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {
@@ -138,9 +155,21 @@
     "focus_tags": [
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 2,
+        "minutes": null,
+        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦替补梅开二度，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+      },
       {
         "competition_id": "csl-2026",
         "label": "2026 中超一线队 U21 跟踪",
@@ -154,6 +183,11 @@
     ],
     "external_links": [
       {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
         "type": "club",
         "label": "Sina Dalian Yingbo squad page",
         "url": "https://sports.sina.com.cn/csl/team/dly/index.shtml"
@@ -166,8 +200,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "出生日期、身高和位置由公开球员资料页确认，当前俱乐部由大连英博 2026 赛季名单补充。"
+      "last_checked": "2026-07-11",
+      "notes": "出生日期、身高和位置由公开球员资料页确认，当前俱乐部由大连英博 2026 赛季名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
     }
   },
   {

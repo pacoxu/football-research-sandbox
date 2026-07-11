@@ -100,7 +100,10 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-23 已进入本届赛事决赛阶段名单；公开首发口径显示其在对卡塔尔、对沙特和对澳大利亚阶段都以 2 号后卫身份进入后防线，更多承担右后卫 / 右中卫角色。"
+        "note": "截至 2026-05-23 已进入本届赛事决赛阶段名单；公开首发口径显示其在对卡塔尔、对沙特和对澳大利亚阶段都以 2 号后卫身份进入后防线，更多承担右后卫 / 右中卫角色。",
+        "roster_status": "final-squad",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
       },
       {
         "competition_id": "china-overseas-2026",
@@ -255,7 +258,10 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC 正式名单将其列为 6 号中场；AFC 2026-05-21 前瞻与新华社 2026-05-22 决赛前报道均显示其在本届赛事担任中国 U17 队长，并承担中后场防守、覆盖与转换职责。"
+        "note": "AFC 正式名单将其列为 6 号中场；AFC 2026-05-21 前瞻与新华社 2026-05-22 决赛前报道均显示其在本届赛事担任中国 U17 队长，并承担中后场防守、覆盖与转换职责。",
+        "roster_status": "final-squad",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
       }
     ],
     "external_links": [
@@ -411,7 +417,21 @@
         "appearances": 0,
         "goals": 0,
         "minutes": 0,
-        "note": "赴西亚前进入 25 人备战名单，但最终未进入 23 人正式报名阵容；凤凰网转述北青口径将其与艾力卡木·伊力洪列为因位置和战术原因落选的最后两人。"
+        "note": "赴西亚前进入 25 人备战名单，但最终未进入 23 人正式报名阵容；凤凰网转述北青口径将其与艾力卡木·伊力洪列为因位置和战术原因落选的最后两人。",
+        "roster_status": "withdrawn/unused",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Pre-tournament 25-player standby/candidate list only; excluded from the AFC U17 2026 final registration 23-player china_squad."
+      },
+      {
+        "label": "2026 中国 U17 第四期集训公开名单",
+        "team": "China PR U17",
+        "squad_status": "called-up",
+        "roster_status": "later-camp-callup",
+        "roster_checked_at": "2026-07-11",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-06-27 第四期集训公开名单再次列入顾博宇；该记录用于跟踪赛后 U17 pool，不改变其 AFC U17 2026 终报名落选状态。"
       }
     ],
     "external_links": [
@@ -469,12 +489,17 @@
         "type": "news",
         "label": "Ifeng report on final U17 cuts",
         "url": "https://h5.ifeng.com/c/vivoArticle/v002K6mwFkZV--alWjC2cH6ZS81c4H7VGPQ02qGy1KtbmqLY__?isNews=1&showComments=0"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 fourth camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260627/37817.html"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-23",
-      "notes": "Transfermarkt 可核生日、出生地、位置和当前上海申花青年队归属；中青赛 U13 决赛战报、董路公开发文、腾讯关于 5 名足球小将背景 U16 球员的报道与足球小将西班牙名单，可交叉确认其清华附中早期节点和足球小将 09 背景；中国足协 2025-2026 多期 U16/U17 通知、和平杯名单口径与最终落选报道，可连续拼出其从国少考察圈到 U17 亚洲杯终筛落选的轨迹。位置上当前以 Defender 保留，并在说明中注明其兼具中卫、边中卫和后腰 / 中后场防守轮换属性；身高体重暂无稳定权威口径，因此不硬填。"
+      "last_checked": "2026-07-11",
+      "notes": "Transfermarkt 可核生日、出生地、位置和当前上海申花青年队归属；中青赛 U13 决赛战报、董路公开发文、腾讯关于 5 名足球小将背景 U16 球员的报道与足球小将西班牙名单，可交叉确认其清华附中早期节点和足球小将 09 背景；中国足协 2025-2026 多期 U16/U17 通知、和平杯名单口径与最终落选报道，可连续拼出其从国少考察圈到 U17 亚洲杯终筛落选的轨迹。位置上当前以 Defender 保留，并在说明中注明其兼具中卫、边中卫和后腰 / 中后场防守轮换属性；身高体重暂无稳定权威口径，因此不硬填。 已追加 2026-06-27 中国 U17 第四期集训公开名单；该 later-camp-callup 不计入 AFC U17 2026 终报名 23 人。"
     }
   },
   {
@@ -607,7 +632,10 @@
         "appearances": null,
         "goals": 0,
         "minutes": null,
-        "note": "小组赛阶段两场进入替补名单；1/4 决赛对沙特首发并助攻万项扳平，半决赛对澳大利亚继续首发，随队打进决赛并锁定 2026 世少赛资格。"
+        "note": "小组赛阶段两场进入替补名单；1/4 决赛对沙特首发并助攻万项扳平，半决赛对澳大利亚继续首发，随队打进决赛并锁定 2026 世少赛资格。",
+        "roster_status": "final-squad",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
       },
       {
         "competition_id": "csl-2026",
@@ -754,7 +782,10 @@
         "appearances": null,
         "goals": 2,
         "minutes": null,
-        "note": "AFC 战报、足协报道与 Futbol24 决赛页可核其在本届赛事身披 10 号，并在对卡塔尔送出助攻、对沙特 1/4 决赛打入扳平球、决赛对日本再追一球；分场进球与助攻明细继续以下方“最近贡献”模块为准。"
+        "note": "AFC 战报、足协报道与 Futbol24 决赛页可核其在本届赛事身披 10 号，并在对卡塔尔送出助攻、对沙特 1/4 决赛打入扳平球、决赛对日本再追一球；分场进球与助攻明细继续以下方“最近贡献”模块为准。",
+        "roster_status": "final-squad",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
       },
       {
         "label": "2026 U17 亚洲杯预选赛",
@@ -891,7 +922,10 @@
         "appearances": 3,
         "goals": null,
         "minutes": null,
-        "note": "AFC U17 2026 终报名表显示其身披 16 号。Flashscore 当前球员页统计其在本届亚洲杯有 3 次出场、0 球 0 助攻；对卡塔尔一战公开文字记录可核其第 78 分钟替补登场，并在比赛尾声制造头球与单刀机会。"
+        "note": "AFC U17 2026 终报名表显示其身披 16 号。Flashscore 当前球员页统计其在本届亚洲杯有 3 次出场、0 球 0 助攻；对卡塔尔一战公开文字记录可核其第 78 分钟替补登场，并在比赛尾声制造头球与单刀机会。",
+        "roster_status": "final-squad",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
       },
       {
         "label": "2026 U17 亚洲杯1/4决赛对沙特",
@@ -1058,7 +1092,10 @@
         "appearances": null,
         "goals": 3,
         "minutes": null,
-        "note": "本届正赛公开可核的关键进球包括对日本小组赛扳平球、对沙特 1/4 决赛的反超进球，以及决赛第 79 分钟对日本的点球；同时在中国队 23 人名单相关公开口径中身披 14 号。"
+        "note": "本届正赛公开可核的关键进球包括对日本小组赛扳平球、对沙特 1/4 决赛的反超进球，以及决赛第 79 分钟对日本的点球；同时在中国队 23 人名单相关公开口径中身披 14 号。",
+        "roster_status": "final-squad",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
       },
       {
         "label": "2025 U17 亚洲杯预选赛",
@@ -1252,7 +1289,10 @@
         "appearances": null,
         "goals": 1,
         "minutes": null,
-        "note": "2026 U17 亚洲杯半决赛对澳大利亚第 49 分钟接周雨诺抢断后传球，前插至禁区左侧推射远角得手，帮助中国队 2 比 0 取胜并时隔 22 年重返决赛。"
+        "note": "2026 U17 亚洲杯半决赛对澳大利亚第 49 分钟接周雨诺抢断后传球，前插至禁区左侧推射远角得手，帮助中国队 2 比 0 取胜并时隔 22 年重返决赛。",
+        "roster_status": "final-squad",
+        "roster_checked_at": "2026-07-11",
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
       }
     ],
     "external_links": [

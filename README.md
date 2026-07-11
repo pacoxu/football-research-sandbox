@@ -1,5 +1,10 @@
 # 青训球员追踪站
 
+[![deploy-pages](https://github.com/starryjog/football-research-sandbox/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/starryjog/football-research-sandbox/actions/workflows/deploy-pages.yml)
+![data generated](https://img.shields.io/badge/data_generated-2026--06--27-blue)
+![validation](https://img.shields.io/badge/validation-npm%20run%20validate--data-informational)
+![scope](https://img.shields.io/badge/scope-research%20sample-lightgrey)
+
 当前状态：研究样本库，最近维护日期 `2026-06-28`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
 
 维护入口：
@@ -9,6 +14,8 @@
 - 来源政策与冲突处理：[docs/source-policy.md](docs/source-policy.md)
 - 数据字典：[docs/data-dictionary.md](docs/data-dictionary.md)
 - 覆盖矩阵：[docs/coverage-matrix.md](docs/coverage-matrix.md)
+- 已知限制：[docs/known-limitations.md](docs/known-limitations.md)
+- 快照机制：[docs/snapshots.md](docs/snapshots.md)
 
 一个适合放到 GitHub Pages 的静态站点，用来维护青训球员名单、青训归属、赛事参与和外部资料链接。当前初始化版本重点放在：
 
@@ -68,6 +75,8 @@ python3 -m http.server 4173
 - `docs/scope.md` 明确项目是研究样本库，不是官方全量数据库；当前留洋样本不能解释为官方全量人数。
 - `docs/source-policy.md` 说明来源优先级、交叉验证、冲突处理和未来生效转会口径。
 - `docs/data-dictionary.md` 解释 raw JSON、site JSON、SQLite 和核心字段。
+- `docs/known-limitations.md` 集中说明非官方数据库、第三方来源冲突、青年球员资料滞后和当前注册非实时转会等限制。
+- `docs/snapshots.md` 定义月度、赛事节点和口径变更快照的 release/tag 流程。
 - `docs/coverage-matrix.md` 维护 U 系列赛事、留洋、历史五大联赛、足球小将、亚洲对照组和教练数据的覆盖状态与缺口清单。
 - `docs/research/asian-chinese-player-coach-collection.md` 记录亚洲/中国球员与教练的信息收集口径、当前覆盖和待核队列。
 - `docs/research/scouting-source-directory.md` 维护海外青训、球探平台、青年球员报告和公开数据站的后续检索方向。
@@ -84,6 +93,15 @@ python3 -m http.server 4173
 - 中超 2026 青年样本：已开始补当前一线队 U21 和具备留洋经历的 U23，中国球员若已在库内建档则直接补中超/留洋字段，不重复建第二条。
 - 乌兹别克斯坦 U17：保留 2026 赛事关键球员样本，作为东亚三队对照组。
 - 董路足球小将：已补专题卡片、公开批次主干和录入规范，下一步继续拆逐名档案。
+
+## 已知限制
+
+- 本项目是公开资料研究样本库，不是官方、全量或实时数据库。
+- 第三方资料可能改版、失效或互相冲突；重要结论应回查 raw 数据和原始来源。
+- 青年球员资料公开不稳定，当前注册、学校、梯队和试训信息可能滞后。
+- 当前留洋样本只统计仓库已纳入并通过当前口径复核的样本，不代表官方全量人数。
+
+更完整说明见 [docs/known-limitations.md](docs/known-limitations.md)。
 
 ## GitHub Pages
 
