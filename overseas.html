@@ -8,7 +8,7 @@
       name="description"
       content="查看中日韩当前留洋样本、联赛层级对比与历史记录。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260710-responsive" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260711-overseas-levels-responsive" />
   </head>
   <body data-page="overseas">
     <div class="site-shell">
@@ -70,6 +70,10 @@
               <select id="overseasBucketFilter"></select>
             </label>
             <label class="filter-item">
+              <span data-i18n="overseas.filters.teamLevel">队伍层级</span>
+              <select id="overseasTeamLevelFilter"></select>
+            </label>
+            <label class="filter-item">
               <span data-i18n="overseas.filters.year">历史年份</span>
               <select id="overseasYearFilter"></select>
             </label>
@@ -89,6 +93,7 @@
               </div>
               <p id="overseasCurrentMeta" class="section-note" data-i18n="common.loading">载入中</p>
             </div>
+            <p id="overseasTeamLevelNotice" class="section-notice" hidden></p>
             <div id="overseasCurrentPlayers" class="player-card-grid"></div>
             <div id="overseasCurrentEmptyState" class="empty-state" hidden data-i18n="overseas.current.empty">当前筛选条件下没有匹配的现役留洋样本。</div>
           </article>
@@ -137,6 +142,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260627-asian-coaches"></script>
+    <script type="module" src="./assets/app.js?v=20260711-overseas-levels"></script>
   </body>
 </html>

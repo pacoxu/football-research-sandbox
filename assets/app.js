@@ -35,6 +35,7 @@ const state = {
   overseasFilters: {
     country: "all",
     bucket: "all",
+    teamLevel: "all",
     year: "all"
   }
 };
@@ -340,16 +341,18 @@ const UI_COPY = {
     "overseas.hero.title": "留洋专页",
     "overseas.hero.text": "当前页把“现役海外样本”和“历史记录”拆开。现役部分默认显示当前仍在海外的球员，历史部分默认显示当前已不在海外的样本；切换年份后，可回看当年仍在海外的球员列表。",
     "overseas.note.eyebrow": "Note",
-    "overseas.note.text": "这里展示的是当前已建档样本，不是官方全量留洋人数。",
+    "overseas.note.text": "这里展示的是当前已建档样本，不是官方全量留洋人数。中国样本包含较多 U19 / 青年队球员；日韩青年队尚未系统收集，不能直接横向比较。",
     "overseas.quickJump.label": "年份快切",
     "overseas.quickJump.note": "直接切换历史年份，页面会同步到下方筛选。",
     "overseas.filters.country": "国别",
     "overseas.filters.bucket": "联赛桶",
+    "overseas.filters.teamLevel": "队伍层级",
     "overseas.filters.year": "历史年份",
     "overseas.filters.actions": "操作",
     "overseas.filters.reset": "重置筛选",
     "overseas.filters.allCountry": "全部国别",
     "overseas.filters.allBucket": "全部联赛桶",
+    "overseas.filters.allTeamLevel": "全部队伍层级",
     "overseas.filters.allYear": "全部年份",
     "overseas.current.eyebrow": "Current Abroad",
     "overseas.current.title": "当前留洋样本",
@@ -366,6 +369,7 @@ const UI_COPY = {
     "overseas.comparison.history": "历史记录 {count} 条",
     "overseas.current.meta": "当前筛选下 {count} 名现役海外样本",
     "overseas.current.meta.year": "{year} 年筛选下 {count} 名当年在海外的样本",
+    "overseas.current.teamLevelHistoryNote": "历史记录暂未按队伍层级统计；年份回看会忽略队伍层级筛选。",
     "overseas.history.meta.default": "当前筛选下 {count} 条当前已不在海外的历史样本",
     "overseas.history.meta.year": "{year} 年命中 {count} 条当年在海外的样本",
     "overseas.countryNotes.noNote": "暂无说明",
@@ -692,16 +696,18 @@ const UI_COPY = {
     "overseas.hero.title": "Overseas tracker",
     "overseas.hero.text": "This page separates active overseas samples from historical records. The active section defaults to players who are still abroad right now, while the history section defaults to players who are no longer abroad; once you switch the year filter, it becomes a year-by-year view of who was abroad in that season window.",
     "overseas.note.eyebrow": "Note",
-    "overseas.note.text": "This page shows currently archived samples, not an official full headcount of all overseas players.",
+    "overseas.note.text": "This page shows archived samples, not an official full headcount. The China sample includes many U19 / youth players; Japan and South Korea youth coverage is not systematic, so the totals are not directly comparable.",
     "overseas.quickJump.label": "Year jump",
     "overseas.quickJump.note": "Pick a historical year here and the main filter below will stay in sync.",
     "overseas.filters.country": "Country",
     "overseas.filters.bucket": "League bucket",
+    "overseas.filters.teamLevel": "Team level",
     "overseas.filters.year": "History year",
     "overseas.filters.actions": "Actions",
     "overseas.filters.reset": "Reset filters",
     "overseas.filters.allCountry": "All countries",
     "overseas.filters.allBucket": "All league buckets",
+    "overseas.filters.allTeamLevel": "All team levels",
     "overseas.filters.allYear": "All years",
     "overseas.current.eyebrow": "Current Abroad",
     "overseas.current.title": "Current overseas samples",
@@ -718,6 +724,7 @@ const UI_COPY = {
     "overseas.comparison.history": "{count} historical records",
     "overseas.current.meta": "{count} active overseas samples in this filter",
     "overseas.current.meta.year": "{count} samples were abroad in {year}",
+    "overseas.current.teamLevelHistoryNote": "Historical records are not yet classified by team level. Year snapshots ignore the team-level filter.",
     "overseas.history.meta.default": "{count} historical records currently no longer abroad in this filter",
     "overseas.history.meta.year": "{count} records abroad in {year}",
     "overseas.countryNotes.noNote": "No note yet",
@@ -889,6 +896,15 @@ const BUCKET_LABELS = {
   "asia-other": { zh: "亚洲其他", en: "Other Asia" },
   "americas-other": { zh: "美洲其他", en: "Other Americas" }
 };
+
+const OVERSEAS_TEAM_LEVEL_LABELS = {
+  "first-team": { zh: "一线队", en: "First team" },
+  "u21-u23": { zh: "U21 / U23 / 预备队", en: "U21 / U23 / reserves" },
+  "u19-youth": { zh: "U19 / 青年队", en: "U19 / youth" },
+  unknown: { zh: "未确认", en: "Unconfirmed" }
+};
+
+const OVERSEAS_TEAM_LEVEL_ORDER = ["first-team", "u21-u23", "u19-youth", "unknown"];
 
 const AGE_BAND_LABELS = {
   u17: { zh: "U17", en: "U17" },
@@ -1765,6 +1781,10 @@ function formatBucket(bucket) {
   return getLabel(BUCKET_LABELS, bucket, bucket ?? "-");
 }
 
+function formatOverseasTeamLevel(teamLevel) {
+  return getLabel(OVERSEAS_TEAM_LEVEL_LABELS, teamLevel, teamLevel ?? "-");
+}
+
 function formatAgeBand(ageBand) {
   return getLabel(AGE_BAND_LABELS, ageBand, ageBand ?? "-");
 }
@@ -1885,6 +1905,71 @@ function inferOverseasBucket(player) {
   }
 
   return "americas-other";
+}
+
+function inferOverseasTeamLevelFromEvidence(clubName, affiliationText, evidenceText) {
+  const club = String(clubName ?? "");
+  const affiliation = [club, affiliationText].filter(Boolean).join(" ");
+  const evidence = [affiliation, evidenceText].filter(Boolean).join(" ");
+
+  if (/\bU[- ]?(?:15|16|17|18|19)(?:[AB])?\b|Youth|Academy|Juvenil|Cadet|青年队|青训/i.test(affiliation)) {
+    return "u19-youth";
+  }
+
+  if (
+    /\bU[- ]?(?:21|23)(?:[AB])?\b|\bReserve(?:s)?\b|\bII\b|二队|预备队|B队/i.test(affiliation) ||
+    /\b[A-Z]{2,}FC2\b/.test(club)
+  ) {
+    return "u21-u23";
+  }
+
+  const isAmbiguous =
+    /仍需|待(?:确认|核实|跟进)|未(?:确认|核实)|需要.{0,12}(?:确认|核实|跟进)|needs?.{0,20}(?:verification|confirmation|follow-up)|not (?:yet )?(?:confirmed|verified)/i.test(
+      evidence
+    );
+  if (isAmbiguous) {
+    return "unknown";
+  }
+
+  if (
+    /一线队|职业一线|\bfirst[- ]team\b|\bsenior (?:team|squad)\b|official squad profile|顶级联赛|top[- ]flight|Premier League|LaLiga|Bundesliga|Serie A|Ligue 1|Eredivisie|Primeira Liga|Liga Portugal|Austrian Bundesliga|Belgian Pro League|Scottish Premiership|EFL Championship|J[123] League|K League|葡超|荷甲|奥超|德乙|职业联赛实际比赛/i.test(
+      evidence
+    )
+  ) {
+    return "first-team";
+  }
+
+  return "unknown";
+}
+
+function inferOverseasTeamLevel(player) {
+  if (!isForeignRegistration(player)) {
+    return "unknown";
+  }
+
+  const clubName = player.registration_club?.name ?? "";
+  const currentForeignStep = getLatestForeignPathwayStep(player.training_pathway, player.country);
+  const affiliationText = [
+    currentForeignStep?.organization,
+    JSON.stringify(currentForeignStep?.stage_label ?? "")
+  ]
+    .filter(Boolean)
+    .join(" ");
+  const evidenceText = [currentForeignStep?.note, player.verification?.notes]
+    .map((value) => JSON.stringify(value ?? ""))
+    .join(" ");
+
+  return inferOverseasTeamLevelFromEvidence(clubName, affiliationText, evidenceText);
+}
+
+function inferHistoricalOverseasTeamLevel(record) {
+  const evidenceText = [record.league, record.appearance_label, record.summary, ...(record.notes ?? [])]
+    .map((value) => JSON.stringify(value ?? ""))
+    .join(" ");
+  const inferredLevel = inferOverseasTeamLevelFromEvidence(record.club, record.club, evidenceText);
+  return inferredLevel === "unknown" && record.bucket === "big-five"
+    ? "first-team"
+    : inferredLevel;
 }
 
 function isYouthClubName(clubName) {
@@ -2469,6 +2554,7 @@ function enrichPlayer(player, overview) {
     age: getAge(player.birth_date, overview.generated_at),
     currentLeagueSystem: inferLeagueSystem(player),
     overseasBucket: inferOverseasBucket(player),
+    overseasTeamLevel: inferOverseasTeamLevel(player),
     foreignRegistration: isForeignRegistration(player),
     recentContributions: collectPlayerContributions(player, overview),
     searchBlob: buildPlayerSearchBlob(player),
@@ -2766,6 +2852,7 @@ function getOverseasCountryMap() {
     map.set(entry.country, {
       country: entry.country,
       currentCount: 0,
+      teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
       verifiedRecords: entry.verified_records,
       notes: entry.notes,
       bucketFocus: entry.bucket_focus,
@@ -2778,6 +2865,7 @@ function getOverseasCountryMap() {
       map.set(item.country, {
         country: item.country,
         currentCount: 0,
+        teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
         verifiedRecords: 0,
         notes: "",
         bucketFocus: [],
@@ -2785,6 +2873,7 @@ function getOverseasCountryMap() {
       });
     }
     map.get(item.country).currentCount += 1;
+    map.get(item.country).teamLevelCounts[item.overseasTeamLevel] += 1;
   }
 
   return [...map.values()].sort((left, right) =>
@@ -2825,7 +2914,8 @@ function toCurrentHistoricalOverseasItem(record) {
     ...record,
     sourceType: "history",
     foreignRegistration: true,
-    overseasBucket: record.bucket
+    overseasBucket: record.bucket,
+    overseasTeamLevel: inferHistoricalOverseasTeamLevel(record)
   };
 }
 
@@ -3528,6 +3618,7 @@ function renderCurrentOverseasItem(item, compact) {
         <div class="chip-row">
           <span class="chip">${escapeHtml(formatCountryName(item.country))}</span>
           <span class="chip accent-chip">${formatBucket(item.bucket)}</span>
+          <span class="chip team-level-chip team-level-${escapeHtml(item.overseasTeamLevel)}">${escapeHtml(formatOverseasTeamLevel(item.overseasTeamLevel))}</span>
           <span class="chip">${escapeHtml(item.season)}</span>
         </div>
         <h3>${escapeHtml(primaryName)}</h3>
@@ -3551,6 +3642,7 @@ function renderCurrentOverseasItem(item, compact) {
       <div class="chip-row">
         <span class="chip">${escapeHtml(formatCountryName(item.country))}</span>
         <span class="chip accent-chip">${formatBucket(item.overseasBucket)}</span>
+        <span class="chip team-level-chip team-level-${escapeHtml(item.overseasTeamLevel)}">${escapeHtml(formatOverseasTeamLevel(item.overseasTeamLevel))}</span>
         <span class="chip">${formatAgeBand(item.age_band)}</span>
       </div>
       <h3>${escapeHtml(primaryName)}</h3>
@@ -4276,6 +4368,9 @@ function initializeOverseasFilters() {
   if (params.get("bucket")) {
     state.overseasFilters.bucket = params.get("bucket");
   }
+  if (params.get("level")) {
+    state.overseasFilters.teamLevel = params.get("level");
+  }
   if (params.get("year")) {
     state.overseasFilters.year = params.get("year");
   }
@@ -4288,9 +4383,17 @@ function initializeOverseasFilters() {
     value: bucket,
     label: formatBucket(bucket)
   }));
+  const teamLevelOptions = OVERSEAS_TEAM_LEVEL_ORDER.map((teamLevel) => ({
+    value: teamLevel,
+    label: formatOverseasTeamLevel(teamLevel)
+  }));
   const yearOptions = getHistoricalYearOptions();
   state.overseasFilters.country = normalizeFilterValue(state.overseasFilters.country, countryOptions);
   state.overseasFilters.bucket = normalizeFilterValue(state.overseasFilters.bucket, bucketOptions);
+  state.overseasFilters.teamLevel = normalizeFilterValue(
+    state.overseasFilters.teamLevel,
+    teamLevelOptions
+  );
   state.overseasFilters.year = normalizeFilterValue(state.overseasFilters.year, yearOptions);
 
   buildOptions(
@@ -4304,6 +4407,12 @@ function initializeOverseasFilters() {
     bucketOptions,
     state.overseasFilters.bucket,
     t("overseas.filters.allBucket")
+  );
+  buildOptions(
+    document.querySelector("#overseasTeamLevelFilter"),
+    teamLevelOptions,
+    state.overseasFilters.teamLevel,
+    t("overseas.filters.allTeamLevel")
   );
   buildOptions(
     document.querySelector("#overseasYearFilter"),
@@ -4326,6 +4435,10 @@ function initializeOverseasFilters() {
     state.overseasFilters.bucket = event.target.value;
     renderOverseasPage();
   });
+  document.querySelector("#overseasTeamLevelFilter")?.addEventListener("change", (event) => {
+    state.overseasFilters.teamLevel = event.target.value;
+    renderOverseasPage();
+  });
   document.querySelector("#overseasYearFilter")?.addEventListener("change", (event) => {
     state.overseasFilters.year = event.target.value;
     renderOverseasPage();
@@ -4337,6 +4450,7 @@ function initializeOverseasFilters() {
   document.querySelector("#overseasResetButton")?.addEventListener("click", () => {
     state.overseasFilters.country = "all";
     state.overseasFilters.bucket = "all";
+    state.overseasFilters.teamLevel = "all";
     state.overseasFilters.year = "all";
     renderOverseasPage();
   });
@@ -4348,7 +4462,10 @@ function getFilteredCurrentOverseasItems() {
       state.overseasFilters.country === "all" || item.country === state.overseasFilters.country;
     const matchesBucket =
       state.overseasFilters.bucket === "all" || item.overseasBucket === state.overseasFilters.bucket;
-    return matchesCountry && matchesBucket;
+    const matchesTeamLevel =
+      state.overseasFilters.teamLevel === "all" ||
+      item.overseasTeamLevel === state.overseasFilters.teamLevel;
+    return matchesCountry && matchesBucket && matchesTeamLevel;
   });
 }
 
@@ -4384,6 +4501,8 @@ function renderOverseasPage() {
   const currentEyebrow = document.querySelector("#overseasCurrentEyebrow");
   const currentTitle = document.querySelector("#overseasCurrentTitle");
   const currentMeta = document.querySelector("#overseasCurrentMeta");
+  const teamLevelNotice = document.querySelector("#overseasTeamLevelNotice");
+  const teamLevelFilter = document.querySelector("#overseasTeamLevelFilter");
   const currentPlayers = document.querySelector("#overseasCurrentPlayers");
   const currentEmptyState = document.querySelector("#overseasCurrentEmptyState");
   const countryNotes = document.querySelector("#overseasCountryNotes");
@@ -4399,11 +4518,20 @@ function renderOverseasPage() {
 
   setControlValue("#overseasCountryFilter", state.overseasFilters.country);
   setControlValue("#overseasBucketFilter", state.overseasFilters.bucket);
+  setControlValue("#overseasTeamLevelFilter", state.overseasFilters.teamLevel);
   setControlValue("#overseasYearFilter", state.overseasFilters.year);
   setControlValue("#overseasHeroYearFilter", state.overseasFilters.year);
+  if (teamLevelFilter) {
+    teamLevelFilter.disabled = historicalYearMode;
+  }
+  if (teamLevelNotice) {
+    teamLevelNotice.textContent = t("overseas.current.teamLevelHistoryNote");
+    teamLevelNotice.hidden = !historicalYearMode;
+  }
   replaceQueryParams({
     country: state.overseasFilters.country,
     bucket: state.overseasFilters.bucket,
+    level: state.overseasFilters.teamLevel,
     year: state.overseasFilters.year
   });
 
@@ -4415,6 +4543,16 @@ function renderOverseasPage() {
           <p class="stat-value">${entry.currentCount}</p>
           <p class="small-note">${escapeHtml(t("overseas.comparison.current"))}</p>
           <p class="small-note">${escapeHtml(t("overseas.comparison.history", { count: entry.verifiedRecords }))}</p>
+          <div class="stat-breakdown">
+            ${OVERSEAS_TEAM_LEVEL_ORDER.map(
+              (teamLevel) => `
+                <p class="stat-breakdown-item">
+                  <span>${escapeHtml(formatOverseasTeamLevel(teamLevel))}</span>
+                  <strong>${entry.teamLevelCounts[teamLevel]}</strong>
+                </p>
+              `
+            ).join("")}
+          </div>
         </article>
       `
     )
