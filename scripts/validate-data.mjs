@@ -61,6 +61,60 @@ const allowedSourceLayerTypes = new Set([
 
 const allowedSourceLayerConfidence = new Set(["high", "medium", "low"]);
 
+const requiredYouthSourceLayerCoverage = [
+  {
+    label: "Japan U17",
+    country: "Japan",
+    competitionId: "afc-u17-2026",
+    minimumEnhancedPlayers: 2,
+    requiredSupplementalTypes: [
+      "national-fa-profile",
+      "club-academy-profile",
+      "school-profile"
+    ]
+  },
+  {
+    label: "Japan U23",
+    country: "Japan",
+    competitionId: "afc-u23-2026",
+    minimumEnhancedPlayers: 2,
+    requiredSupplementalTypes: [
+      "national-fa-profile",
+      "club-academy-profile",
+      "school-profile",
+      "league-registration"
+    ]
+  },
+  {
+    label: "Korea Republic U17",
+    country: "Korea Republic",
+    competitionId: "afc-u17-2026",
+    minimumEnhancedPlayers: 2,
+    requiredSupplementalTypes: [
+      "national-fa-profile",
+      "club-academy-profile",
+      "school-profile"
+    ]
+  },
+  {
+    label: "Korea Republic U23",
+    country: "Korea Republic",
+    competitionId: "afc-u23-2026",
+    minimumEnhancedPlayers: 2,
+    requiredSupplementalTypes: [
+      "club-academy-profile",
+      "league-registration"
+    ]
+  }
+];
+
+const supplementalSourceLayerTypes = new Set([
+  "national-fa-profile",
+  "club-academy-profile",
+  "school-profile",
+  "league-registration"
+]);
+
 const allowedTournamentSourceVersionTypes = new Set([
   "afc-final-registration",
   "afc-final-report",
@@ -134,6 +188,48 @@ function validateSourceLayer(layer, label) {
   assert(Array.isArray(layer.fields) && layer.fields.length > 0, `Invalid source layer fields on ${label}`);
   for (const field of layer.fields) {
     assert(typeof field === "string" && field.length > 0, `Invalid source layer field on ${label}`);
+  }
+}
+
+function validateYouthSourceLayerCoverage(players) {
+  for (const requirement of requiredYouthSourceLayerCoverage) {
+    const roster = players.filter(
+      (player) =>
+        player.country === requirement.country &&
+        player.tournament_participation.some(
+          (entry) => entry.competition_id === requirement.competitionId
+        )
+    );
+    assert(roster.length === 23, `${requirement.label} must retain 23 AFC roster players`);
+
+    const enhancedPlayers = roster.filter((player) => (player.source_layers ?? []).length > 0);
+    assert(
+      enhancedPlayers.length >= requirement.minimumEnhancedPlayers,
+      `${requirement.label} must retain at least ${requirement.minimumEnhancedPlayers} enhanced source-layer samples`
+    );
+
+    const teamSourceTypes = new Set();
+    for (const player of enhancedPlayers) {
+      const playerSourceTypes = new Set(player.source_layers.map((layer) => layer.type));
+      assert(
+        playerSourceTypes.has("afc-registration"),
+        `${requirement.label} enhanced sample ${player.id} must retain an AFC registration layer`
+      );
+      assert(
+        [...playerSourceTypes].some((type) => supplementalSourceLayerTypes.has(type)),
+        `${requirement.label} enhanced sample ${player.id} must retain a supplemental source layer`
+      );
+      for (const type of playerSourceTypes) {
+        teamSourceTypes.add(type);
+      }
+    }
+
+    for (const type of requirement.requiredSupplementalTypes) {
+      assert(
+        teamSourceTypes.has(type),
+        `${requirement.label} source-layer batch must retain ${type} coverage`
+      );
+    }
   }
 }
 
@@ -664,6 +760,8 @@ export async function validateData() {
 
     playerIds.add(player.id);
   }
+
+  validateYouthSourceLayerCoverage(dataset.players);
 
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);

@@ -1,6 +1,6 @@
 # 数据校验脚本
 
-更新时间：2026-06-28
+更新时间：2026-07-11
 
 `scripts/validate-data.mjs` 是当前数据变更的第一道程序化检查。运行方式：
 
@@ -38,6 +38,7 @@ flowchart LR
 - `training_pathway` 不能为空，每一步至少有 `stage_label`、`organization`、`country`。
 - `external_links` 不能为空，且每条必须有合法 `type`、`label`、`http/https url`。
 - `source_layers` 如存在，必须是数组；每条需有合法 `type`、`label`、`url`、`checked_at`、`confidence`、`fields` 和 `claim`。
+- 日本、韩国 U17/U23 四支 AFC 名单必须各保持 23 人；每队至少 2 名重点样本同时具备 `afc-registration` 和补充来源层，且队伍层面的必需来源类型不得退化。
 - `tournament_participation[].competition_id` 如存在，必须能对应 `data/raw/tournaments.json`。
 - `squad_status` 必须来自允许枚举。
 - `verification.status` 必须来自允许枚举，`notes` 必填。

@@ -13,6 +13,7 @@ This project tracks research data, so changelog entries should separate code cha
 - Added `docs/known-limitations.md` to centralize non-official, non-realtime, source-conflict, and youth-data limitations.
 - Added China U20 2025 final-squad coverage: 14 new raw player records plus `afc-u20-2025` participation entries on 9 existing U23/CSL youth records.
 - Added China U17 2026 roster-boundary fields: `roster_status` on player participation records and `roster_boundary` on the tournament archive.
+- Added a validation guard for the four Japan/Korea U17/U23 AFC rosters and their 13-player multi-layer source pilot.
 
 ### Data Notes
 
