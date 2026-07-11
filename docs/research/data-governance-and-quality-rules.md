@@ -1,6 +1,6 @@
 # 数据治理、来源状态与质量控制规则
 
-更新时间：2026-06-27
+更新时间：2026-06-28
 
 这份规则对应 issue #6，用于把球员、赛事、教练和专题资料的来源状态制度化。原则是：能由程序校验的先进入 `scripts/validate-data.mjs`，不能自动判断真假的内容先用模板和复核规则约束。
 
@@ -67,6 +67,38 @@
 - 只有组织级官网，没有个体球员 profile。
 - AFC 报名字段能确认学校/俱乐部归属，但学校/俱乐部个人页还没捕获。
 - 来源之间存在时点差异，需要保留多条路径而不是互相覆盖。
+
+## tournament-archive.source_version
+
+`source_version` 是赛事档案的可选增强字段，用来说明某届赛事的结果、日期、报名、比赛事件和二级交叉来源分别来自哪一类材料。它先在 AFC U 系列 archive 试点，不要求所有历史赛事一次性补齐。
+
+配套字段：
+
+- `source_version`：来源版本数组，每条包含 `type`、`label`、可选 `url` 和 `fields`。
+- `source_checked_at`：该届赛事版本信息的核查日期，格式 `YYYY-MM-DD`。
+- `source_conflict_note`：AFC 页面、PDF、比赛报告、维基或第三方事件页之间的冲突、边界或降级使用说明。
+- `competition_name_history`：赛事名称谱系，例如 `AFC U-16 Championship` 到 `AFC U17 Asian Cup` 的延续关系。
+
+允许的 `source_version.type`：
+
+| 类型 | 使用场景 |
+| --- | --- |
+| `afc-final-registration` | AFC 终报名 PDF、final squad list、final registration。 |
+| `afc-final-report` | AFC 官方赛事总结、决赛报告或 in-numbers 类总结。 |
+| `afc-match-report` | AFC 单场比赛报告。 |
+| `afc-match-schedule` | AFC 赛程 PDF 或赛程页。 |
+| `afc-tournament-home` | AFC 赛事主页或 archive 入口。 |
+| `afc-stats-archive` | AFC 官方统计归档。 |
+| `fifa-report` | FIFA 对 AFC 赛事结果或资格路径的官方报道。 |
+| `wikipedia-secondary` | Wikipedia 二级交叉入口，不作唯一强事实。 |
+| `secondary-stats` | 365Scores、Futbol24、Azscore 等第三方事件/统计页。 |
+| `news-secondary` | 通讯社、足协新闻或媒体报道。 |
+
+使用边界：
+
+- 官方报名、赛程、赛果优先用 AFC/FIFA；第三方事件页只补 AFC 暂未公开的 lineup、分钟和技术统计。
+- 若来源之间冲突，不直接覆盖主字段，先写入 `source_conflict_note` 或后续拆 issue。
+- `competition_name_history` 记录的是赛事谱系，不等于单届赛事曾经使用过所有历史名称。
 
 ## squad_status
 
@@ -187,6 +219,7 @@
 - `source_layers` 的类型、confidence、字段列表、claim 和 URL/日期格式。
 - `squad_status` 枚举。
 - `competition_id` 必须存在于赛事表。
+- `tournament-archive.source_version`、`source_checked_at`、`source_conflict_note` 和 `competition_name_history` 的可选结构。
 - 重复 `player.id`。
 - 重复 `birth_date + 标准化姓名`。
 - 教练战绩加总、source link URL、赛事日期、专题日期等既有规则。

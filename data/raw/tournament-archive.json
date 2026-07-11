@@ -231,6 +231,66 @@
     "competition_name": "AFC U23 Asian Cup Saudi Arabia 2026",
     "level": "u23",
     "edition_label": "2026",
+    "source_version": [
+      {
+        "type": "afc-final-registration",
+        "label": "AFC U23 2026 Final Registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "fields": [
+          "china_squad_reference",
+          "registered_names",
+          "registered_clubs"
+        ]
+      },
+      {
+        "type": "afc-final-report",
+        "label": "AFC U23 2026 in numbers",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/afcu23-saudi-arabia-2026-in-numbers",
+        "fields": [
+          "champion",
+          "runner_up",
+          "tournament_summary"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "China PR 1-0 Australia",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/puche-applauds-china-pr%E2%80%99s-%E2%80%98historic%E2%80%99-win",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "China PR 3-0 Vietnam",
+        "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/s-final-china-pr-power-past-vietnam-1",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      }
+    ],
+    "source_checked_at": "2026-06-28",
+    "source_conflict_note": "AFC final registration is the squad and spelling source; AFC match reports and tournament summary are the result/event sources. No material conflict is recorded, but minute-level China events remain partial where AFC reports do not expose complete event feeds.",
+    "competition_name_history": [
+      {
+        "name": "AFC U-22 Championship",
+        "used_until": "2013 edition",
+        "note": "Early edition name before the competition settled into the U23 branding."
+      },
+      {
+        "name": "AFC U23 Championship",
+        "used_from": "2016 edition",
+        "used_until": "2020 edition",
+        "note": "Legacy name used by earlier archive entries such as Thailand 2020."
+      },
+      {
+        "name": "AFC U23 Asian Cup",
+        "used_from": "2022 edition",
+        "note": "Current naming used by the 2026 Saudi Arabia edition."
+      }
+    ],
     "host": "Saudi Arabia",
     "date_range": {
       "start": "2026-01-06",
@@ -434,6 +494,73 @@
     "competition_name": "AFC U20 Asian Cup China 2025",
     "level": "u20",
     "edition_label": "2025",
+    "source_version": [
+      {
+        "type": "afc-tournament-home",
+        "label": "AFC U20 China 2025 home",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup/home.html",
+        "fields": [
+          "competition_identity",
+          "host",
+          "status"
+        ]
+      },
+      {
+        "type": "afc-match-schedule",
+        "label": "AFC U20 China 2025 schedule",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Match_schedule/AFC-U20-Asian-Cup-China-2025-Match-Schedule-.pdf",
+        "fields": [
+          "date_range",
+          "match_calendar"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "Kyrgyz Republic 2-5 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/group-a-md2-kyrgyz-republic-2-5-china-pr",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "Australia win 2025 title",
+        "url": "https://www.fifa.com/en/articles/australia-win-afc-u-20-asian-cup",
+        "fields": [
+          "champion",
+          "runner_up"
+        ]
+      },
+      {
+        "type": "wikipedia-secondary",
+        "label": "Wikipedia 2025 AFC U-20 Asian Cup",
+        "url": "https://en.wikipedia.org/wiki/2025_AFC_U-20_Asian_Cup",
+        "fields": [
+          "secondary_bracket_cross_check"
+        ]
+      }
+    ],
+    "source_checked_at": "2026-06-28",
+    "source_conflict_note": "AFC home and match schedule plus FIFA final recap are primary for identity, dates and final result. Third-party event pages remain auxiliary for China goal/assist details until AFC match centre or final report event feeds are captured.",
+    "competition_name_history": [
+      {
+        "name": "AFC Youth Championship",
+        "used_until": "2006 edition",
+        "note": "Older umbrella name in the historical lineage of the AFC men's youth championship."
+      },
+      {
+        "name": "AFC U-19 Championship",
+        "used_from": "2008 edition",
+        "used_until": "2020 cycle",
+        "note": "Immediate predecessor name before the U20 Asian Cup branding."
+      },
+      {
+        "name": "AFC U20 Asian Cup",
+        "used_from": "2023 edition",
+        "note": "Current naming used by the China 2025 edition."
+      }
+    ],
     "host": "China PR",
     "date_range": {
       "start": "2025-02-12",
@@ -846,6 +973,82 @@
     "competition_name": "AFC U17 Asian Cup Saudi Arabia 2026",
     "level": "u17",
     "edition_label": "2026",
+    "source_version": [
+      {
+        "type": "afc-final-registration",
+        "label": "AFC 2026 Final Squad Lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "fields": [
+          "china_squad",
+          "registered_names",
+          "registered_clubs"
+        ]
+      },
+      {
+        "type": "afc-match-schedule",
+        "label": "AFC U17 2026 schedule",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/AFC-U17-Asian-Cup-Saudi-Arabia-2026-Match-Schedule---upd24april.pdf",
+        "fields": [
+          "date_range",
+          "match_calendar"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "afc-match-report",
+        "label": "Saudi Arabia 1-3 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-q-final-saudi-arabia-1-3-china-pr",
+        "fields": [
+          "china_matches",
+          "china_key_players"
+        ]
+      },
+      {
+        "type": "wikipedia-secondary",
+        "label": "Wikipedia 2026 AFC U-17 Asian Cup",
+        "url": "https://en.wikipedia.org/wiki/2026_AFC_U-17_Asian_Cup",
+        "fields": [
+          "secondary_bracket_cross_check"
+        ]
+      },
+      {
+        "type": "secondary-stats",
+        "label": "China U17 2-3 Japan U17 final match pages",
+        "url": "https://www.futbol24.com/match/2026/05/22/international/AFC/U17-Championship/2026/Final/China-U17/vs/Japan-U17",
+        "fields": [
+          "final_events",
+          "match_stats_snapshot"
+        ]
+      }
+    ],
+    "source_checked_at": "2026-06-28",
+    "source_conflict_note": "AFC final squad list and schedule are primary for roster and dates; AFC match reports are primary where available. Qiumiwu, Sportal, Futbol24, Azscore, PPSports and Sina pages are retained only for lineups, event timing and stat snapshots until AFC match centre or final report event feeds are captured.",
+    "competition_name_history": [
+      {
+        "name": "AFC U-16 Championship",
+        "used_until": "2018 edition",
+        "note": "2018 Malaysia is the last completed AFC finals edition in this archive under the U16 Championship lineage."
+      },
+      {
+        "name": "2020 AFC U-16 Championship",
+        "used_from": "2020 cycle",
+        "used_until": "cancelled",
+        "note": "The 2020 cycle was cancelled before the competition resumed under the U17 Asian Cup name."
+      },
+      {
+        "name": "AFC U17 Asian Cup",
+        "used_from": "2023 edition",
+        "note": "Current naming used by the Saudi Arabia 2026 edition; this is the direct archive continuation of the U16 Championship lineage."
+      }
+    ],
     "host": "Saudi Arabia",
     "date_range": {
       "start": "2026-05-05",
@@ -2078,6 +2281,321 @@
     ]
   },
   {
+    "id": "cfa-yinchuan-u17-2026",
+    "confederation": "CFA",
+    "competition_name": "2026 CFA Team China Yinchuan International Youth Football Championship",
+    "level": "u17",
+    "edition_label": "2026",
+    "host": "China PR",
+    "date_range": {
+      "start": "2026-07-05",
+      "end": "2026-07-11"
+    },
+    "status": "ongoing",
+    "champion": "",
+    "runner_up": "",
+    "china_status": "preparation",
+    "china_summary": "中国 U17 在 2026CFA中国之队·银川国际青年足球锦标赛前两轮取得 1 胜 1 负：2026-07-05 以 3 比 0 击败澳大利亚 U17，2026-07-08 以 0 比 2 不敌坦桑尼亚 U17；末轮将于 2026-07-11 对阵尼日利亚 U17。",
+    "china_detail_scope": "goals-assists-lineups-pending",
+    "latest_public_roster_view": {
+      "label": {
+        "zh": "2026银川国际青年锦标赛公开名单",
+        "en": "2026 Yinchuan international youth tournament public roster"
+      },
+      "note": {
+        "zh": "按中国足协 2026-06-27 第四期集训通知整理；该期集训时间为 2026-06-30 至 2026-07-12，任务包含参加 2026CFA中国之队·银川国际青年足球锦标赛。名单用于跟踪本次银川赛事与 2026 U17 世界杯备战池，不替代 2026 U17 亚洲杯终报名表。",
+        "en": "Compiled from the CFA fourth-camp notice dated 2026-06-27. The camp runs from 2026-06-30 to 2026-07-12 and includes the 2026 CFA Team China Yinchuan International Youth Football Championship. This view tracks the Yinchuan tournament and the 2026 U17 World Cup preparation pool; it does not replace the 2026 AFC U17 finals squad list."
+      },
+      "head_coach": {
+        "name": "Satoshi Ukishima",
+        "local_name": "浮嶋敏"
+      },
+      "groups": [
+        {
+          "label": {
+            "zh": "守门员 GK",
+            "en": "Goalkeepers"
+          },
+          "entries": [
+            {
+              "player_id": "cn-qin-ziniu-2009",
+              "player": "Qin Ziniu",
+              "affiliation": "恒大足球学校"
+            },
+            {
+              "player_id": "cn-jiang-chengen-2010",
+              "player": "Jiang Chengen",
+              "affiliation": "恒大足球学校"
+            },
+            {
+              "player_id": "cn-zhu-yuxuan-2009",
+              "player": "Zhu Yuxuan",
+              "affiliation": "赫塔菲足球俱乐部"
+            }
+          ]
+        },
+        {
+          "label": {
+            "zh": "后卫 DF",
+            "en": "Defenders"
+          },
+          "entries": [
+            {
+              "player_id": "cn-zhang-xuyao-2009",
+              "player": "Zhang Xuyao",
+              "affiliation": "山东泰山足球俱乐部"
+            },
+            {
+              "player_id": "cn-li-junpeng-2009",
+              "player": "Li Junpeng",
+              "affiliation": "山东泰山足球俱乐部"
+            },
+            {
+              "player_id": "cn-gu-boyu-2009",
+              "player": "Gu Boyu",
+              "affiliation": "上海申花足球俱乐部"
+            },
+            {
+              "player_id": "cn-nan-zixun-2009",
+              "player": "Nan Zixun",
+              "affiliation": "清华大学附属中学"
+            },
+            {
+              "player_id": "cn-liu-zhicheng-2009",
+              "player": "Liu Zhicheng",
+              "affiliation": "青岛西海岸足球俱乐部"
+            },
+            {
+              "player_id": "cn-bian-weihao-2009",
+              "player": "Bian Weihao",
+              "affiliation": "湖北青年星足球俱乐部"
+            },
+            {
+              "player_id": "cn-jin-yucheng-2009",
+              "player": "Jin Yucheng",
+              "affiliation": "萨格勒布火车头足球俱乐部"
+            },
+            {
+              "name": {
+                "zh": "张君豪",
+                "en": "Zhang Junhao"
+              },
+              "affiliation": "山东鲁能泰山足球学校"
+            }
+          ]
+        },
+        {
+          "label": {
+            "zh": "中场 MF",
+            "en": "Midfielders"
+          },
+          "entries": [
+            {
+              "player_id": "cn-he-sifan-2009",
+              "player": "He Sifan",
+              "affiliation": "山东鲁能泰山足球学校"
+            },
+            {
+              "player_id": "cn-kong-xinuo-2010",
+              "player": "Kong Xinuo",
+              "affiliation": "山东鲁能泰山足球学校"
+            },
+            {
+              "player_id": "cn-wang-heyi-2009",
+              "player": "Wang Heyi",
+              "affiliation": "广东广州豹足球俱乐部"
+            },
+            {
+              "name": {
+                "zh": "孙臣曦",
+                "en": "Sun Chenxi"
+              },
+              "affiliation": "广东铭途足球俱乐部"
+            },
+            {
+              "player_id": "cn-zhou-yunuo-2009",
+              "player": "Zhou Yunuo",
+              "affiliation": "清华大学附属中学"
+            },
+            {
+              "player_id": "cn-zhang-lindong-2010",
+              "player": "Zhang Lindong",
+              "affiliation": "达姆足球俱乐部"
+            },
+            {
+              "player_id": "cn-xu-zhengpeng-2009",
+              "player": "Xu Zhengpeng",
+              "affiliation": "武汉三镇足球俱乐部"
+            },
+            {
+              "player_id": "cn-pan-chaowei-2010",
+              "player": "Pan Chaowei",
+              "affiliation": "山东泰山足球俱乐部"
+            },
+            {
+              "name": {
+                "zh": "袁博涵",
+                "en": "Yuan Bohan"
+              },
+              "affiliation": "深圳青年人足球俱乐部"
+            },
+            {
+              "player_id": "cn-xie-jin-2009",
+              "player": "Xie Jin",
+              "affiliation": "其他"
+            }
+          ]
+        },
+        {
+          "label": {
+            "zh": "前锋 FW",
+            "en": "Forwards"
+          },
+          "entries": [
+            {
+              "player_id": "cn-shuai-weihao-2009",
+              "player": "Shuai Weihao",
+              "affiliation": "成都蓉城足球俱乐部"
+            },
+            {
+              "player_id": "cn-zhao-songyuan-2009",
+              "player": "Zhao Songyuan",
+              "affiliation": "清华大学附属中学"
+            },
+            {
+              "player_id": "cn-zhang-bolin-2009",
+              "player": "Zhang Bolin",
+              "affiliation": "其他"
+            }
+          ]
+        }
+      ]
+    },
+    "china_matches": [
+      {
+        "date": "2026-07-05",
+        "stage": "Round 1",
+        "opponent": "Australia",
+        "score_for": 3,
+        "score_against": 0,
+        "result": "W",
+        "note": "中国足协战报显示，本场于 2026-07-05 19:35 在银川市体育中心贺兰山体育场进行；中国 U17 凭借帅惟浩、赵松源、孙臣曦进球 3 比 0 取胜。官方战报未提供完整首发与替补名单，当前暂不回填阵容。",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-shuai-weihao-2009",
+            "player": "Shuai Weihao",
+            "minute": "6",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-xu-zhengpeng-2009",
+            "player": "Xu Zhengpeng",
+            "minute": "6",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-zhao-songyuan-2009",
+            "player": "Zhao Songyuan",
+            "minute": "54",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-xu-zhengpeng-2009",
+            "player": "Xu Zhengpeng",
+            "minute": "54",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player": {
+              "zh": "孙臣曦",
+              "en": "Sun Chenxi"
+            },
+            "minute": "88",
+            "role": "substitute"
+          }
+        ],
+        "china_lineup": {}
+      },
+      {
+        "date": "2026-07-08",
+        "stage": "Round 2",
+        "opponent": "Tanzania",
+        "score_for": 0,
+        "score_against": 2,
+        "result": "L",
+        "note": "中国足协战报显示，中国 U17 上下半场补时阶段各丢一球，0 比 2 不敌坦桑尼亚 U17；本场相较首轮首发有 2 处调整，秦子牛、袁博涵轮换江承恩、王贺毅。官方战报未提供完整首发与替补名单，当前暂不回填阵容。",
+        "china_contributions": [],
+        "china_lineup": {}
+      },
+      {
+        "date": "2026-07-11",
+        "stage": "Round 3",
+        "opponent": "Nigeria",
+        "score_for": null,
+        "score_against": null,
+        "result": "TBD",
+        "note": "中国足协 2026-07-09 战报写明，中国 U17 将于 2026-07-11 19:35 迎战尼日利亚 U17；当前等待赛果与阵容公开。",
+        "china_contributions": [],
+        "china_lineup": {}
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Shuai Weihao",
+        "player_id": "cn-shuai-weihao-2009",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "2026-07-05 首轮对澳大利亚第 6 分钟破门，并在 2026-07-08 对坦桑尼亚第 31 分钟制造中国队全场最好机会。"
+      },
+      {
+        "player": "Zhao Songyuan",
+        "player_id": "cn-zhao-songyuan-2009",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "2026-07-05 对澳大利亚第 54 分钟头球破门，将比分扩大为 2 比 0。"
+      },
+      {
+        "player": "Sun Chenxi",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "2026-07-05 对澳大利亚替补登场，第 88 分钟低射远角得手。"
+      },
+      {
+        "player": "Xu Zhengpeng",
+        "player_id": "cn-xu-zhengpeng-2009",
+        "goals": 0,
+        "assists": 2,
+        "role_note": "2026-07-05 对澳大利亚先后助攻帅惟浩和赵松源破门，并在下半场有任意球攻门制造威胁。"
+      },
+      {
+        "player": "Qin Ziniu",
+        "player_id": "cn-qin-ziniu-2009",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "2026-07-08 对坦桑尼亚轮换首发，战报可核其上半场多次化解对手射门。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "CFA U17 fourth-camp notice and Yinchuan roster",
+        "url": "https://www.thecfa.cn/wqmdu17/20260627/37817.html"
+      },
+      {
+        "label": "China U17 3-0 Australia U17 official report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260706/37840.html"
+      },
+      {
+        "label": "China U17 0-2 Tanzania U17 official report",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260709/37873.html"
+      }
+    ]
+  },
+  {
     "id": "afc-u16-2018",
     "confederation": "AFC",
     "competition_name": "AFC U-16 Championship Malaysia 2018",
@@ -2372,6 +2890,2405 @@
       {
         "label": "2004 AFC U-17 Championship overview",
         "url": "https://en.wikipedia.org/wiki/2004_AFC_U-17_Championship"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-1983",
+    "confederation": "FIFA",
+    "competition_name": "FIFA World Youth Championship Mexico 1983",
+    "level": "u20-world-cup",
+    "edition_label": "1983",
+    "historical_name": "FIFA World Youth Championship",
+    "host": "Mexico",
+    "date_range": {
+      "start": "1983-06-02",
+      "end": "1983-06-19"
+    },
+    "status": "completed",
+    "champion": "Brazil",
+    "runner_up": "Argentina",
+    "china_status": "first-round",
+    "china_summary": "中国 U20 首次进入 FIFA World Youth Championship 决赛圈，小组赛 1 胜 2 负，进 5 球失 8 球，排名第 12。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1977-2005",
+        "official_name": "FIFA World Youth Championship",
+        "archive_note": "仓库中 1983-2005 中国参赛档案保留这一历史赛事名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-20 World Cup",
+        "archive_note": "2007 起使用 U-20 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Gao Fengwen",
+      "local_name": "高丰文",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "1982 AFC Youth Championship",
+      "summary": "中国 U20 在 1982 AFC Youth Championship 获得亚军，通过 AFC youth pathway 取得 1983 FIFA World Youth Championship 资格。",
+      "final_stage": "AFC Youth Championship runners-up"
+    },
+    "china_goal_summary": {
+      "goals_for": 5,
+      "goals_against": 8,
+      "player_goals": [
+        {
+          "player": "Mai Chao",
+          "goals": 1
+        },
+        {
+          "player": "Li Huayun",
+          "goals": 1
+        },
+        {
+          "player": "Liu Haiguang",
+          "goals": 1
+        },
+        {
+          "player": "Guo Yijun",
+          "goals": 1
+        },
+        {
+          "player": "Duan Ju",
+          "goals": 1
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Fu Yubin",
+        "position": "Goalkeeper",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 2,
+        "player": "Wang Wenzong",
+        "position": "Defender",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 3,
+        "player": "Jia Xiuquan",
+        "position": "Defender",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 4,
+        "player": "Mai Chao",
+        "position": "Midfielder",
+        "club": "Guangzhou"
+      },
+      {
+        "squad_number": 5,
+        "player": "Hu Yijun",
+        "position": "Defender",
+        "club": "Hubei"
+      },
+      {
+        "squad_number": 6,
+        "player": "Zhong Yunyue",
+        "position": "Midfielder",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 7,
+        "player": "Li Huayun",
+        "position": "Midfielder",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 8,
+        "player": "Zhu Ping",
+        "position": "Forward",
+        "club": "Sichuan"
+      },
+      {
+        "squad_number": 9,
+        "player": "Chen Fangping",
+        "position": "Midfielder",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 10,
+        "player": "Fan Guanghui",
+        "position": "Midfielder",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 11,
+        "player": "Li Yong",
+        "position": "Defender",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 12,
+        "player": "Guo Yijun",
+        "position": "Forward",
+        "club": "Guangdong"
+      },
+      {
+        "squad_number": 13,
+        "player": "Cheng Jian",
+        "position": "Midfielder",
+        "club": "Hunan"
+      },
+      {
+        "squad_number": 14,
+        "player": "Wang Jun",
+        "position": "Goalkeeper",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 15,
+        "player": "Liu Haiguang",
+        "position": "Forward",
+        "club": "Shanghai"
+      },
+      {
+        "squad_number": 16,
+        "player": "Duan Ju",
+        "position": "Defender",
+        "club": "Tianjin"
+      },
+      {
+        "squad_number": 17,
+        "player": "Shan Chunji",
+        "position": "Defender",
+        "club": "Tianjin"
+      },
+      {
+        "squad_number": 18,
+        "player": "Li Zhigao",
+        "position": "Goalkeeper",
+        "club": "Jiangsu"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "1983-06-04",
+        "stage": "Group C",
+        "opponent": "Argentina",
+        "score_for": 0,
+        "score_against": 5,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "1983-06-07",
+        "stage": "Group C",
+        "opponent": "Czechoslovakia",
+        "score_for": 2,
+        "score_against": 3,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Mai Chao",
+            "minute": "49"
+          },
+          {
+            "type": "goal",
+            "player": "Li Huayun",
+            "minute": "56"
+          }
+        ]
+      },
+      {
+        "date": "1983-06-09",
+        "stage": "Group C",
+        "opponent": "Austria",
+        "score_for": 3,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Liu Haiguang",
+            "minute": "48"
+          },
+          {
+            "type": "goal",
+            "player": "Guo Yijun",
+            "minute": "79"
+          },
+          {
+            "type": "goal",
+            "player": "Duan Ju",
+            "minute": "88"
+          }
+        ]
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Li Huayun",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "1983 首次世青赛参赛阵容的重要中场样本。"
+      },
+      {
+        "player": "Jia Xiuquan",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "后续成为成年国家队主力后卫，是 1983 国青中最具成年队延续性的球员之一。"
+      },
+      {
+        "player": "Liu Haiguang",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "对奥地利破门，属于中国队首次世青赛取胜场次的进球者。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "1983 FIFA World Youth Championship squads",
+        "url": "https://en.wikipedia.org/wiki/1983_FIFA_World_Youth_Championship_squads"
+      },
+      {
+        "label": "1983 FIFA World Youth Championship",
+        "url": "https://en.wikipedia.org/wiki/1983_FIFA_World_Youth_Championship"
+      },
+      {
+        "label": "RSSSF 1983 World Youth Championship",
+        "url": "https://www.rsssf.org/tablesw/wyc83.html"
+      },
+      {
+        "label": "FIFA archive: Mexico 1983",
+        "url": "https://web.archive.org/web/20070609165238/http://www.fifa.com/tournaments/archive/tournament=104/edition=191124/index.html"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u16-world-championship-1985",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-16 World Championship China PR 1985",
+    "level": "u17-world-cup",
+    "edition_label": "1985",
+    "historical_name": "FIFA U-16 World Championship",
+    "host": "China PR",
+    "date_range": {
+      "start": "1985-07-31",
+      "end": "1985-08-11"
+    },
+    "status": "completed",
+    "champion": "Nigeria",
+    "runner_up": "West Germany",
+    "china_status": "quarter-final",
+    "china_summary": "中国 U16 作为东道主参加首届 FIFA U-16 World Championship，小组出线后止步八强，总战绩 2 胜 1 平 1 负，进 8 球失 7 球。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1985-1991",
+        "official_name": "FIFA U-16 World Championship",
+        "archive_note": "早期世少赛按 U-16 World Championship 命名。"
+      },
+      {
+        "years": "1993-2005",
+        "official_name": "FIFA U-17 World Championship",
+        "archive_note": "1993 起年龄组改为 U-17，2005 中国档案保留 World Championship 历史名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-17 World Cup",
+        "archive_note": "2007 起使用 U-17 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Gao Fengwen",
+      "local_name": "高丰文",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "Host nation",
+      "summary": "中国作为 1985 FIFA U-16 World Championship 东道主直接进入决赛圈。",
+      "final_stage": "Host berth"
+    },
+    "china_goal_summary": {
+      "goals_for": 8,
+      "goals_against": 7,
+      "player_goals": [
+        {
+          "player": "Guo Zhuang",
+          "goals": 3
+        },
+        {
+          "player": "Xie Yuxin",
+          "goals": 2
+        },
+        {
+          "player": "Cao Xiandong",
+          "goals": 1
+        },
+        {
+          "player": "Sun Bowei",
+          "goals": 1
+        },
+        {
+          "player": "Tu Shengqiao",
+          "goals": 1
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Li Xianzhong",
+        "position": "Goalkeeper",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 2,
+        "player": "Feng Zhigang",
+        "position": "Defender",
+        "club": "Wuhan"
+      },
+      {
+        "squad_number": 3,
+        "player": "Shang Qing",
+        "position": "Defender",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 4,
+        "player": "Fan Li",
+        "position": "Defender",
+        "club": "Shanghai"
+      },
+      {
+        "squad_number": 5,
+        "player": "Bi Sheng",
+        "position": "Defender",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 6,
+        "player": "Sun Bowei",
+        "position": "Defender",
+        "club": "Sichuan"
+      },
+      {
+        "squad_number": 7,
+        "player": "Tu Shengqiao",
+        "position": "Midfielder",
+        "club": "Wuhan"
+      },
+      {
+        "squad_number": 8,
+        "player": "Xie Yuxin",
+        "position": "Midfielder",
+        "club": "Guangdong"
+      },
+      {
+        "squad_number": 9,
+        "player": "Cao Xiandong",
+        "position": "Midfielder",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 10,
+        "player": "Guo Zhuang",
+        "position": "Midfielder",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 11,
+        "player": "Qing Baoquan",
+        "position": "Midfielder",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 12,
+        "player": "Li Xangjie",
+        "position": "Midfielder",
+        "club": "Jilin"
+      },
+      {
+        "squad_number": 13,
+        "player": "Tang Weihu",
+        "position": "Forward",
+        "club": "Yunnan"
+      },
+      {
+        "squad_number": 14,
+        "player": "Liu Bin",
+        "position": "Forward",
+        "club": "Sichuan"
+      },
+      {
+        "squad_number": 15,
+        "player": "Cui Guangri",
+        "position": "Forward",
+        "club": "Jilin"
+      },
+      {
+        "squad_number": 16,
+        "player": "Yan Yongzhu",
+        "position": "Defender",
+        "club": "Jilin"
+      },
+      {
+        "squad_number": 17,
+        "player": "Fan Guotao",
+        "position": "Forward",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 18,
+        "player": "Li Zhong",
+        "position": "Goalkeeper",
+        "club": "Tianjin"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "1985-07-31",
+        "stage": "Group A",
+        "opponent": "Bolivia",
+        "score_for": 2,
+        "score_against": 1,
+        "result": "W",
+        "china_contributions": [],
+        "score_source_status": "score-only"
+      },
+      {
+        "date": "1985-08-03",
+        "stage": "Group A",
+        "opponent": "Guinea",
+        "score_for": 2,
+        "score_against": 1,
+        "result": "W",
+        "china_contributions": [],
+        "score_source_status": "score-only"
+      },
+      {
+        "date": "1985-08-05",
+        "stage": "Group A",
+        "opponent": "United States",
+        "score_for": 4,
+        "score_against": 2,
+        "result": "W",
+        "china_contributions": [],
+        "score_source_status": "score-only"
+      },
+      {
+        "date": "1985-08-08",
+        "stage": "Quarter-final",
+        "opponent": "West Germany",
+        "score_for": 0,
+        "score_against": 3,
+        "result": "L",
+        "china_contributions": [],
+        "score_source_status": "score-only"
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Guo Zhuang",
+        "goals": 3,
+        "assists": 0,
+        "role_note": "中国队本届头号射手。"
+      },
+      {
+        "player": "Xie Yuxin",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "本届中国队主要攻击手之一，后续成为中国球员海外经历的重要样本。"
+      },
+      {
+        "player": "Gao Fengwen",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "同一时期执教 U20/U16 的关键教练样本。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "1985 FIFA U-16 World Championship squads",
+        "url": "https://en.wikipedia.org/wiki/1985_FIFA_U-16_World_Championship_squads"
+      },
+      {
+        "label": "1985 FIFA U-16 World Championship",
+        "url": "https://en.wikipedia.org/wiki/1985_FIFA_U-16_World_Championship"
+      },
+      {
+        "label": "FIFA archive: China PR 1985",
+        "url": "https://web.archive.org/web/20160305024454/http://www.fifa.com/u17worldcup/archive/chinapr1985/index.html"
+      },
+      {
+        "label": "FIFA technical report part 1",
+        "url": "https://web.archive.org/web/20111220064504/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/07/93/u16_china_1985_a_part1_254.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-1985",
+    "confederation": "FIFA",
+    "competition_name": "FIFA World Youth Championship USSR 1985",
+    "level": "u20-world-cup",
+    "edition_label": "1985",
+    "historical_name": "FIFA World Youth Championship",
+    "host": "Soviet Union",
+    "date_range": {
+      "start": "1985-08-24",
+      "end": "1985-09-07"
+    },
+    "status": "completed",
+    "champion": "Brazil",
+    "runner_up": "Spain",
+    "china_status": "quarter-final",
+    "china_summary": "中国 U20 以 2 胜 1 负从小组出线，1/4 决赛 0 比 1 负于苏联，最终排名第 7，是中国男足 U20 世界赛最佳成绩。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1977-2005",
+        "official_name": "FIFA World Youth Championship",
+        "archive_note": "仓库中 1983-2005 中国参赛档案保留这一历史赛事名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-20 World Cup",
+        "archive_note": "2007 起使用 U-20 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Zhang Zhicheng",
+      "local_name": "张志诚",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "1985 AFC Youth Championship",
+      "summary": "中国 U20 获得 1985 AFC Youth Championship 冠军，通过 AFC youth pathway 取得 1985 FIFA World Youth Championship 资格。",
+      "final_stage": "AFC Youth Championship champions"
+    },
+    "china_goal_summary": {
+      "goals_for": 5,
+      "goals_against": 5,
+      "player_goals": [
+        {
+          "player": "Gong Lei",
+          "goals": 2
+        },
+        {
+          "player": "Gao Hongbo",
+          "goals": 2
+        },
+        {
+          "player": "Song Lianyong",
+          "goals": 1
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Xu Tao",
+        "position": "Goalkeeper",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 2,
+        "player": "Dong Yugang",
+        "position": "Defender",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 3,
+        "player": "Zhao Xudong",
+        "position": "Forward",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 4,
+        "player": "Yang Feipeng",
+        "position": "Defender",
+        "club": "Yunnan"
+      },
+      {
+        "squad_number": 5,
+        "player": "Li Hongbing",
+        "position": "Defender",
+        "club": "Jiangsu"
+      },
+      {
+        "squad_number": 6,
+        "player": "Ju Lijin",
+        "position": "Defender",
+        "club": "Shanghai"
+      },
+      {
+        "squad_number": 7,
+        "player": "Pang Zhijian",
+        "position": "Midfielder",
+        "club": "Guangxi"
+      },
+      {
+        "squad_number": 8,
+        "player": "Gong Lei",
+        "position": "Midfielder",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 9,
+        "player": "Gao Hongbo",
+        "position": "Forward",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 10,
+        "player": "Zhang Yan",
+        "position": "Forward",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 11,
+        "player": "You Kewei",
+        "position": "Midfielder",
+        "club": "Shenyang"
+      },
+      {
+        "squad_number": 12,
+        "player": "Lun Zhiming",
+        "position": "Goalkeeper",
+        "club": "Guangzhou"
+      },
+      {
+        "squad_number": 13,
+        "player": "Li Jiandong",
+        "position": "Goalkeeper",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 14,
+        "player": "Fu Bo",
+        "position": "Midfielder",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 15,
+        "player": "Li Hui",
+        "position": "Forward",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 16,
+        "player": "Yang Weijian",
+        "position": "Defender",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 17,
+        "player": "Song Lianyong",
+        "position": "Forward",
+        "club": "Tianjin"
+      },
+      {
+        "squad_number": 18,
+        "player": "Gao Zhongxun",
+        "position": "Midfielder",
+        "club": "Jilin"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "1985-08-24",
+        "stage": "Group D",
+        "opponent": "Mexico",
+        "score_for": 1,
+        "score_against": 3,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Gong Lei",
+            "minute": "68"
+          }
+        ]
+      },
+      {
+        "date": "1985-08-26",
+        "stage": "Group D",
+        "opponent": "England",
+        "score_for": 2,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Gao Hongbo",
+            "minute": "76"
+          },
+          {
+            "type": "goal",
+            "player": "Gong Lei",
+            "minute": "89"
+          }
+        ]
+      },
+      {
+        "date": "1985-08-29",
+        "stage": "Group D",
+        "opponent": "Paraguay",
+        "score_for": 2,
+        "score_against": 1,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Song Lianyong",
+            "minute": "14"
+          },
+          {
+            "type": "goal",
+            "player": "Gao Hongbo",
+            "minute": "76"
+          }
+        ]
+      },
+      {
+        "date": "1985-09-01",
+        "stage": "Quarter-final",
+        "opponent": "Soviet Union",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Gong Lei",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "小组赛两场破门，是 1985 U20 八强之路的核心攻击手。"
+      },
+      {
+        "player": "Gao Hongbo",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "对英格兰、巴拉圭连续进球，后续成为成年国脚与国家队教练样本。"
+      },
+      {
+        "player": "Gao Zhongxun",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "参加全部四场比赛，后续进入成年国家队。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "1985 FIFA World Youth Championship squads",
+        "url": "https://en.wikipedia.org/wiki/1985_FIFA_World_Youth_Championship_squads"
+      },
+      {
+        "label": "1985 FIFA World Youth Championship",
+        "url": "https://en.wikipedia.org/wiki/1985_FIFA_World_Youth_Championship"
+      },
+      {
+        "label": "RSSSF 1985 World Youth Championship",
+        "url": "https://www.rsssf.org/tablesw/wyc85.html"
+      },
+      {
+        "label": "FIFA technical report part 1",
+        "url": "https://web.archive.org/web/20111220053129/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/06/48/u20_ussr_1985_en_part1_203.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u16-world-championship-1989",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-16 World Championship Scotland 1989",
+    "level": "u17-world-cup",
+    "edition_label": "1989",
+    "historical_name": "FIFA U-16 World Championship",
+    "host": "Scotland",
+    "date_range": {
+      "start": "1989-06-10",
+      "end": "1989-06-24"
+    },
+    "status": "completed",
+    "champion": "Saudi Arabia",
+    "runner_up": "Scotland",
+    "china_status": "group-stage",
+    "china_summary": "中国 U16 通过 1988 AFC U-16 Championship 第三名晋级 1989 世少赛，小组赛 1 胜 1 平 1 负，进 1 球失 3 球，未晋级淘汰赛。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1985-1991",
+        "official_name": "FIFA U-16 World Championship",
+        "archive_note": "早期世少赛按 U-16 World Championship 命名。"
+      },
+      {
+        "years": "1993-2005",
+        "official_name": "FIFA U-17 World Championship",
+        "archive_note": "1993 起年龄组改为 U-17，2005 中国档案保留 World Championship 历史名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-17 World Cup",
+        "archive_note": "2007 起使用 U-17 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Zhu Guanghu",
+      "local_name": "朱广沪",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "1988 AFC U-16 Championship",
+      "summary": "中国 U16 获得 1988 AFC U-16 Championship 第三名，取得 1989 FIFA U-16 World Championship 资格。",
+      "final_stage": "AFC U-16 Championship third place"
+    },
+    "china_goal_summary": {
+      "goals_for": 1,
+      "goals_against": 3,
+      "player_goals": [
+        {
+          "player": "Gao Feng",
+          "goals": 1
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Fu Bin",
+        "position": "Goalkeeper",
+        "club": "Hebei"
+      },
+      {
+        "squad_number": 2,
+        "player": "Xie Zhaoyang",
+        "position": "Defender",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 3,
+        "player": "Ma Yanfeng",
+        "position": "Forward",
+        "club": "Henan"
+      },
+      {
+        "squad_number": 4,
+        "player": "Wang Nong",
+        "position": "Midfielder",
+        "club": "Dalian"
+      },
+      {
+        "squad_number": 5,
+        "player": "Li Qiang",
+        "position": "Defender",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 6,
+        "player": "Jiang Feng",
+        "position": "Defender",
+        "club": "Jilin"
+      },
+      {
+        "squad_number": 7,
+        "player": "Wang Guodong",
+        "position": "Defender",
+        "club": "Qingdao"
+      },
+      {
+        "squad_number": 8,
+        "player": "Wei Qun",
+        "position": "Midfielder",
+        "club": "Sichuan"
+      },
+      {
+        "squad_number": 9,
+        "player": "Gao Feng",
+        "position": "Forward",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 10,
+        "player": "Jin Guang",
+        "position": "Midfielder",
+        "club": "Heilongjiang"
+      },
+      {
+        "squad_number": 11,
+        "player": "You Shaodong",
+        "position": "Forward",
+        "club": "Guangdong"
+      },
+      {
+        "squad_number": 12,
+        "player": "Wang Zhigang",
+        "position": "Goalkeeper",
+        "club": "Shanghai"
+      },
+      {
+        "squad_number": 13,
+        "player": "Xu Yang",
+        "position": "Midfielder",
+        "club": "Bayi Football Team",
+        "note": "Squad page notes only 17 China players and separately lists Xu Yang as No. 13."
+      },
+      {
+        "squad_number": 14,
+        "player": "Su Maozhen",
+        "position": "Forward",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 15,
+        "player": "Wu Chongwen",
+        "position": "Defender",
+        "club": "Guangdong"
+      },
+      {
+        "squad_number": 16,
+        "player": "Jin Yongzhu",
+        "position": "Midfielder",
+        "club": "Jilin"
+      },
+      {
+        "squad_number": 17,
+        "player": "Liu Zhong",
+        "position": "Midfielder",
+        "club": "Jiangsu"
+      },
+      {
+        "squad_number": 18,
+        "player": "Li Ming",
+        "position": "Midfielder",
+        "club": "Dalian"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "1989-06-10",
+        "stage": "Group C",
+        "opponent": "Argentina",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "1989-06-12",
+        "stage": "Group C",
+        "opponent": "Canada",
+        "score_for": 1,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Gao Feng"
+          }
+        ]
+      },
+      {
+        "date": "1989-06-14",
+        "stage": "Group C",
+        "opponent": "Nigeria",
+        "score_for": 0,
+        "score_against": 3,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Gao Feng",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "中国队本届唯一进球者。"
+      },
+      {
+        "player": "Zhu Guanghu",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "1989 和 1991 世少赛中国队主教练，后续长期参与国字号/俱乐部执教。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "1989 FIFA U-16 World Championship squads",
+        "url": "https://en.wikipedia.org/wiki/1989_FIFA_U-16_World_Championship_squads"
+      },
+      {
+        "label": "1989 FIFA U-16 World Championship",
+        "url": "https://en.wikipedia.org/wiki/1989_FIFA_U-16_World_Championship"
+      },
+      {
+        "label": "1988 AFC U-16 Championship",
+        "url": "https://en.wikipedia.org/wiki/1988_AFC_U-16_Championship"
+      },
+      {
+        "label": "FIFA archive: Scotland 1989",
+        "url": "https://web.archive.org/web/20160304203423/http://www.fifa.com/u17worldcup/archive/scotland1989/index.html"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u17-world-championship-1991",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-17 World Championship Italy 1991",
+    "level": "u17-world-cup",
+    "edition_label": "1991",
+    "historical_name": "FIFA U-17 World Championship",
+    "host": "Italy",
+    "date_range": {
+      "start": "1991-08-16",
+      "end": "1991-08-31"
+    },
+    "status": "completed",
+    "champion": "Ghana",
+    "runner_up": "Spain",
+    "china_status": "group-stage",
+    "china_summary": "中国 U17 小组赛 3 战 1 平 2 负，进 4 球失 7 球，未晋级淘汰赛。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1985-1991",
+        "official_name": "FIFA U-16 World Championship",
+        "archive_note": "早期世少赛按 U-16 World Championship 命名。"
+      },
+      {
+        "years": "1993-2005",
+        "official_name": "FIFA U-17 World Championship",
+        "archive_note": "1993 起年龄组改为 U-17，2005 中国档案保留 World Championship 历史名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-17 World Cup",
+        "archive_note": "2007 起使用 U-17 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Zhu Guanghu",
+      "local_name": "朱广沪",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "1990 AFC U-16 Championship",
+      "summary": "中国 U17 通过 1990 AFC U-16 Championship 的 AFC 路径进入 1991 FIFA U-17 World Championship 决赛圈。",
+      "final_stage": "AFC U-16 Championship qualification berth"
+    },
+    "china_goal_summary": {
+      "goals_for": 4,
+      "goals_against": 7,
+      "player_goals": [
+        {
+          "player": "Gao Fei",
+          "goals": 2
+        },
+        {
+          "player": "Huang Yi",
+          "goals": 1
+        },
+        {
+          "player": "Liang Yu",
+          "goals": 1
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Yao Jian",
+        "position": "Goalkeeper",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 2,
+        "player": "Chen Gang",
+        "position": "Defender",
+        "club": "Qingdao"
+      },
+      {
+        "squad_number": 3,
+        "player": "Zhu Qi",
+        "position": "Midfielder",
+        "club": "Shanghai"
+      },
+      {
+        "squad_number": 4,
+        "player": "Gao Fei",
+        "position": "Midfielder",
+        "club": "Tianjin"
+      },
+      {
+        "squad_number": 5,
+        "player": "Xiao Jian",
+        "position": "Defender",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 6,
+        "player": "Huang Yi",
+        "position": "Defender",
+        "club": "Shanghai"
+      },
+      {
+        "squad_number": 7,
+        "player": "Qiu Zhihua",
+        "position": "Defender",
+        "club": "Guangdong"
+      },
+      {
+        "squad_number": 8,
+        "player": "Hong Maoren",
+        "position": "Midfielder",
+        "club": "Nanjing Army"
+      },
+      {
+        "squad_number": 9,
+        "player": "Zhuang Yi",
+        "position": "Forward",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 10,
+        "player": "Liang Yu",
+        "position": "Forward",
+        "club": "Tianjin"
+      },
+      {
+        "squad_number": 11,
+        "player": "Pan Yi",
+        "position": "Forward",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 12,
+        "player": "Deng Lejun",
+        "position": "Midfielder",
+        "club": "Beijing"
+      },
+      {
+        "squad_number": 13,
+        "player": "Song Aijie",
+        "position": "Forward",
+        "club": "Bayi"
+      },
+      {
+        "squad_number": 14,
+        "player": "Zhang Bin",
+        "position": "Midfielder",
+        "club": "Hubei"
+      },
+      {
+        "squad_number": 15,
+        "player": "Wang Hao",
+        "position": "Goalkeeper",
+        "club": "Qingdao"
+      },
+      {
+        "squad_number": 16,
+        "player": "Dong Weiguo",
+        "position": "Defender",
+        "club": "Guangdong"
+      },
+      {
+        "squad_number": 17,
+        "player": "Zhang Bo",
+        "position": "Midfielder",
+        "club": "Hubei"
+      },
+      {
+        "squad_number": 18,
+        "player": "Xie Hui",
+        "position": "Forward",
+        "club": "Shanghai Shenhua",
+        "note": "Squad page note says China had 17 listed players and separately names Xie Hui as No. 18."
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "1991-08-17",
+        "stage": "Group A",
+        "opponent": "Argentina",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Gao Fei",
+            "minute": "58"
+          }
+        ]
+      },
+      {
+        "date": "1991-08-20",
+        "stage": "Group A",
+        "opponent": "Italy",
+        "score_for": 2,
+        "score_against": 2,
+        "result": "D",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Huang Yi",
+            "minute": "41"
+          },
+          {
+            "type": "goal",
+            "player": "Liang Yu",
+            "minute": "69"
+          }
+        ]
+      },
+      {
+        "date": "1991-08-22",
+        "stage": "Group A",
+        "opponent": "United States",
+        "score_for": 1,
+        "score_against": 3,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Gao Fei",
+            "minute": "5"
+          }
+        ]
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Gao Fei",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "中国队本届头号射手。"
+      },
+      {
+        "player": "Huang Yi",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "本届中国队四个进球者之一。"
+      },
+      {
+        "player": "Liang Yu",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "本届中国队四个进球者之一。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "1991 FIFA U-17 World Championship squads",
+        "url": "https://en.wikipedia.org/wiki/1991_FIFA_U-17_World_Championship_squads"
+      },
+      {
+        "label": "1991 FIFA U-17 World Championship",
+        "url": "https://en.wikipedia.org/wiki/1991_FIFA_U-17_World_Championship"
+      },
+      {
+        "label": "FIFA archive: Italy 1991",
+        "url": "https://web.archive.org/web/20160304193910/http://www.fifa.com/u17worldcup/archive/italy1991/index.html"
+      },
+      {
+        "label": "FIFA technical report part 1",
+        "url": "https://web.archive.org/web/20111220055403/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/07/63/u17_91_tr_part1_247.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u17-world-championship-1993",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-17 World Championship Japan 1993",
+    "level": "u17-world-cup",
+    "edition_label": "1993",
+    "historical_name": "FIFA U-17 World Championship",
+    "host": "Japan",
+    "date_range": {
+      "start": "1993-08-21",
+      "end": "1993-09-04"
+    },
+    "status": "completed",
+    "champion": "Nigeria",
+    "runner_up": "Ghana",
+    "china_status": "group-stage",
+    "china_summary": "中国 U17 参加 1993 FIFA U-17 World Championship，小组赛 3 战 1 平 2 负，进 2 球失 5 球。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1985-1991",
+        "official_name": "FIFA U-16 World Championship",
+        "archive_note": "早期世少赛按 U-16 World Championship 命名。"
+      },
+      {
+        "years": "1993-2005",
+        "official_name": "FIFA U-17 World Championship",
+        "archive_note": "1993 起年龄组改为 U-17，2005 中国档案保留 World Championship 历史名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-17 World Cup",
+        "archive_note": "2007 起使用 U-17 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Zhang Zhicheng",
+      "local_name": "张志诚",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "1992 AFC U-17 Championship",
+      "summary": "中国 U17 通过 1992 AFC U-17 Championship 的 AFC 路径进入 1993 FIFA U-17 World Championship 决赛圈。",
+      "final_stage": "AFC U-17 Championship qualification berth"
+    },
+    "china_goal_summary": {
+      "goals_for": 2,
+      "goals_against": 5,
+      "player_goals": [
+        {
+          "player": "Yu Genwei",
+          "goals": 1
+        },
+        {
+          "player": "Yao Xia",
+          "goals": 1
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Zhang Pengsheng",
+        "position": "Goalkeeper",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 2,
+        "player": "Li Bin",
+        "position": "Defender",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 3,
+        "player": "Yu Yuanwei",
+        "position": "Defender",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 4,
+        "player": "Liu Yibing",
+        "position": "Defender",
+        "club": "Army"
+      },
+      {
+        "squad_number": 5,
+        "player": "Li Ming",
+        "position": "Defender",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 6,
+        "player": "Li Xiaopeng",
+        "position": "Midfielder",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 7,
+        "player": "Yu Genwei",
+        "position": "Midfielder",
+        "club": "Tianjin"
+      },
+      {
+        "squad_number": 8,
+        "player": "Pang Li",
+        "position": "Midfielder",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 9,
+        "player": "Pei Jin",
+        "position": "Forward",
+        "club": "Tianjin"
+      },
+      {
+        "squad_number": 10,
+        "player": "Gao Fulin",
+        "position": "Forward",
+        "club": "Yunnan"
+      },
+      {
+        "squad_number": 11,
+        "player": "Yao Xia",
+        "position": "Forward",
+        "club": "Sichuan"
+      },
+      {
+        "squad_number": 12,
+        "player": "Lin Jinyu",
+        "position": "Forward",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 13,
+        "player": "Song Yuming",
+        "position": "Midfielder",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 14,
+        "player": "Qu Shengqing",
+        "position": "Midfielder",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 15,
+        "player": "Xiao Zhanbo",
+        "position": "Defender",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 16,
+        "player": "Liu Yue",
+        "position": "Forward",
+        "club": "Shandong"
+      },
+      {
+        "squad_number": 17,
+        "player": "Song Lihui",
+        "position": "Midfielder",
+        "club": "Liaoning"
+      },
+      {
+        "squad_number": 18,
+        "player": "Zhao Dali",
+        "position": "Goalkeeper",
+        "club": "Army"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "1993-08-22",
+        "stage": "Group D",
+        "opponent": "Chile",
+        "score_for": 2,
+        "score_against": 2,
+        "result": "D",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Yu Genwei",
+            "minute": "18"
+          },
+          {
+            "type": "goal",
+            "player": "Yao Xia",
+            "minute": "60"
+          }
+        ]
+      },
+      {
+        "date": "1993-08-24",
+        "stage": "Group D",
+        "opponent": "Poland",
+        "score_for": 0,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "1993-08-26",
+        "stage": "Group D",
+        "opponent": "Tunisia",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Yu Genwei",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "后续成为 2002 世界杯周期成年国家队前锋样本。"
+      },
+      {
+        "player": "Yao Xia",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "对智利破门，是中国 U17 本届另一名进球者。"
+      },
+      {
+        "player": "Li Xiaopeng",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "后续成为 2002 世界杯中国队主力中场之一。"
+      },
+      {
+        "player": "Qu Shengqing",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "1990 年代末至 2000 年代初国内锋线代表之一。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "1993 FIFA U-17 World Championship squads",
+        "url": "https://en.wikipedia.org/wiki/1993_FIFA_U-17_World_Championship_squads"
+      },
+      {
+        "label": "1993 FIFA U-17 World Championship",
+        "url": "https://en.wikipedia.org/wiki/1993_FIFA_U-17_World_Championship"
+      },
+      {
+        "label": "FIFA archive: Japan 1993",
+        "url": "https://web.archive.org/web/20160305021453/http://www.fifa.com/u17worldcup/archive/japan1993/index.html"
+      },
+      {
+        "label": "FIFA technical report part 1",
+        "url": "https://web.archive.org/web/20111220061845/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/07/60/u17_93_tr_part1_244.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-1997",
+    "confederation": "FIFA",
+    "competition_name": "FIFA World Youth Championship Malaysia 1997",
+    "level": "u20-world-cup",
+    "edition_label": "1997",
+    "historical_name": "FIFA World Youth Championship",
+    "host": "Malaysia",
+    "date_range": {
+      "start": "1997-06-16",
+      "end": "1997-07-05"
+    },
+    "status": "completed",
+    "champion": "Argentina",
+    "runner_up": "Uruguay",
+    "china_status": "first-round",
+    "china_summary": "中国 U20 通过 1996 AFC Youth Championship 亚军身份晋级 1997 世青赛，小组赛 2 平 1 负，进 2 球失 3 球。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1977-2005",
+        "official_name": "FIFA World Youth Championship",
+        "archive_note": "仓库中 1983-2005 中国参赛档案保留这一历史赛事名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-20 World Cup",
+        "archive_note": "2007 起使用 U-20 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Zhu Guanghu",
+      "local_name": "朱广沪",
+      "role": "Head coach",
+      "note": "Zhu Guanghu coached the Jianlibao youth team that formed the core of this squad; the squad table source does not print a China head-coach row."
+    },
+    "qualification_path": {
+      "route": "1996 AFC Youth Championship",
+      "summary": "中国 U20 获得 1996 AFC Youth Championship 亚军，通过 AFC youth pathway 取得 1997 FIFA World Youth Championship 资格。",
+      "final_stage": "AFC Youth Championship runners-up"
+    },
+    "china_goal_summary": {
+      "goals_for": 2,
+      "goals_against": 3,
+      "player_goals": [
+        {
+          "player": "Li Jinyu",
+          "goals": 1
+        },
+        {
+          "player": "Wang Peng",
+          "goals": 1
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Li Leilei",
+        "position": "Goalkeeper",
+        "club": "Army Club"
+      },
+      {
+        "squad_number": 2,
+        "player": "Li Weifeng",
+        "position": "Defender",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 3,
+        "player": "Hao Wei",
+        "position": "Defender",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 4,
+        "player": "Zheng Yi",
+        "position": "Defender",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 5,
+        "player": "Li Tie",
+        "position": "Midfielder",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 6,
+        "player": "Tao Wei",
+        "position": "Midfielder",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 7,
+        "player": "Huang Yong",
+        "position": "Midfielder",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 8,
+        "player": "Liu Lin",
+        "position": "Forward",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 9,
+        "player": "Li Jinyu",
+        "position": "Forward",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 10,
+        "player": "Sui Dongliang",
+        "position": "Midfielder",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 11,
+        "player": "Zhang Xiaorui",
+        "position": "Midfielder",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 12,
+        "player": "Yang Pu",
+        "position": "Defender",
+        "club": "Guoan"
+      },
+      {
+        "squad_number": 13,
+        "player": "Wang Peng",
+        "position": "Forward",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 14,
+        "player": "Yao Li",
+        "position": "Forward",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 15,
+        "player": "Zhang Ran",
+        "position": "Defender",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 16,
+        "player": "Zheng Bin",
+        "position": "Forward",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 17,
+        "player": "Sun Zhi",
+        "position": "Forward",
+        "club": "Jianlibao"
+      },
+      {
+        "squad_number": 18,
+        "player": "Li Jian",
+        "position": "Goalkeeper",
+        "club": "Jianlibao"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "1997-06-17",
+        "stage": "Group C",
+        "opponent": "United States",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "1997-06-19",
+        "stage": "Group C",
+        "opponent": "Ghana",
+        "score_for": 1,
+        "score_against": 1,
+        "result": "D",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Li Jinyu",
+            "minute": "43"
+          }
+        ]
+      },
+      {
+        "date": "1997-06-22",
+        "stage": "Group C",
+        "opponent": "Republic of Ireland",
+        "score_for": 1,
+        "score_against": 1,
+        "result": "D",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Wang Peng",
+            "minute": "11"
+          }
+        ]
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Li Jinyu",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "1997 国青核心前锋之一，后续成为成年国家队和甲 A/中超高产射手。"
+      },
+      {
+        "player": "Wang Peng",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "对爱尔兰进球，代表健力宝一代前场样本。"
+      },
+      {
+        "player": "Li Tie",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "后续进入 2002 世界杯主力阵容和埃弗顿留洋主线。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "1997 FIFA World Youth Championship squads",
+        "url": "https://en.wikipedia.org/wiki/1997_FIFA_World_Youth_Championship_squads"
+      },
+      {
+        "label": "1997 FIFA World Youth Championship",
+        "url": "https://en.wikipedia.org/wiki/1997_FIFA_World_Youth_Championship"
+      },
+      {
+        "label": "RSSSF 1997 World Youth Championship",
+        "url": "https://www.rsssf.org/tablesw/wyc97.html"
+      },
+      {
+        "label": "FIFA technical report part 1",
+        "url": "https://web.archive.org/web/20100106062324/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/05/70/wyc_97_tr_part1_183.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-2001",
+    "confederation": "FIFA",
+    "competition_name": "FIFA World Youth Championship Argentina 2001",
+    "level": "u20-world-cup",
+    "edition_label": "2001",
+    "historical_name": "FIFA World Youth Championship",
+    "host": "Argentina",
+    "date_range": {
+      "start": "2001-06-17",
+      "end": "2001-07-08"
+    },
+    "status": "completed",
+    "champion": "Argentina",
+    "runner_up": "Ghana",
+    "china_status": "round-of-16",
+    "china_summary": "中国 U20 小组赛 1 胜 1 平 1 负，以第三名晋级 16 强，淘汰赛负于阿根廷，最终排名第 15。",
+    "china_detail_scope": "squad-matches-goals-minute-status",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1977-2005",
+        "official_name": "FIFA World Youth Championship",
+        "archive_note": "仓库中 1983-2005 中国参赛档案保留这一历史赛事名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-20 World Cup",
+        "archive_note": "2007 起使用 U-20 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Shen Xiangfu",
+      "local_name": "沈祥福",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "2000 AFC Youth Championship",
+      "summary": "中国 U20 获得 2000 AFC Youth Championship 第三名，通过 AFC youth pathway 取得 2001 FIFA World Youth Championship 资格。",
+      "final_stage": "AFC Youth Championship third place"
+    },
+    "china_goal_summary": {
+      "goals_for": 2,
+      "goals_against": 3,
+      "player_goals": [
+        {
+          "player": "Qu Bo",
+          "goals": 2
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "早期公开 HTML/赛事索引能稳定核到 squad、coach、matches/goals 和 qualification_path；逐人出场分钟需继续从 FIFA technical report PDF 或 match-centre 档案人工抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "An Qi",
+        "position": "Goalkeeper",
+        "club": "Dalian Shide"
+      },
+      {
+        "squad_number": 2,
+        "player": "Ma Yi",
+        "position": "Midfielder",
+        "club": "Shenyang Sealion"
+      },
+      {
+        "squad_number": 3,
+        "player": "Du Wei",
+        "position": "Defender",
+        "club": "Shanghai 02"
+      },
+      {
+        "squad_number": 4,
+        "player": "Zhou Lin",
+        "position": "Midfielder",
+        "club": "Chongqing Lifan"
+      },
+      {
+        "squad_number": 5,
+        "player": "Wang Sheng",
+        "position": "Defender",
+        "club": "Dalian Shide"
+      },
+      {
+        "squad_number": 6,
+        "player": "Hu Zhaojun",
+        "position": "Midfielder",
+        "club": "Dalian Shide"
+      },
+      {
+        "squad_number": 7,
+        "player": "Sun Ji",
+        "position": "Defender",
+        "club": "Shanghai 02"
+      },
+      {
+        "squad_number": 8,
+        "player": "Gao Ming",
+        "position": "Forward",
+        "club": "Qingdao Etsong Hainiu"
+      },
+      {
+        "squad_number": 9,
+        "player": "Sui Yong",
+        "position": "Forward",
+        "club": "Qingdao Etsong Hainiu"
+      },
+      {
+        "squad_number": 10,
+        "player": "Yan Song",
+        "position": "Midfielder",
+        "club": "Dalian Shide"
+      },
+      {
+        "squad_number": 11,
+        "player": "Sun Xiang",
+        "position": "Defender",
+        "club": "Shanghai 02"
+      },
+      {
+        "squad_number": 12,
+        "player": "Lu Feng",
+        "position": "Midfielder",
+        "club": "Henan Jianye"
+      },
+      {
+        "squad_number": 13,
+        "player": "Wang Xinxin",
+        "position": "Midfielder",
+        "club": "Liaoning F.C."
+      },
+      {
+        "squad_number": 14,
+        "player": "Xu Liang",
+        "position": "Defender",
+        "club": "Liaoning F.C."
+      },
+      {
+        "squad_number": 15,
+        "player": "Zhang Yaokun",
+        "position": "Defender",
+        "club": "Dalian Shide"
+      },
+      {
+        "squad_number": 16,
+        "player": "Qu Bo",
+        "position": "Forward",
+        "club": "Qingdao Etsong Hainiu"
+      },
+      {
+        "squad_number": 17,
+        "player": "Yu Tao",
+        "position": "Forward",
+        "club": "Shanghai 02"
+      },
+      {
+        "squad_number": 18,
+        "player": "Yang Jun",
+        "position": "Goalkeeper",
+        "club": "Qingdao Etsong Hainiu"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "2001-06-17",
+        "stage": "Group C",
+        "opponent": "United States",
+        "score_for": 1,
+        "score_against": 0,
+        "result": "W",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Qu Bo",
+            "minute": "50"
+          }
+        ]
+      },
+      {
+        "date": "2001-06-20",
+        "stage": "Group C",
+        "opponent": "Ukraine",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "china_contributions": []
+      },
+      {
+        "date": "2001-06-23",
+        "stage": "Group C",
+        "opponent": "Chile",
+        "score_for": 0,
+        "score_against": 1,
+        "result": "L",
+        "china_contributions": []
+      },
+      {
+        "date": "2001-06-27",
+        "stage": "Round of 16",
+        "opponent": "Argentina",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Qu Bo"
+          }
+        ],
+        "minute_note": "Goal minute still needs match-report extraction."
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Qu Bo",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "中国队本届两个进球均由曲波完成，是 2001 国青最醒目的前场样本。"
+      },
+      {
+        "player": "An Qi",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "同一周期进入 2002 世界杯最终名单的门将样本。"
+      },
+      {
+        "player": "Du Wei",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "后续进入 2002 世界杯与成年国家队中卫主线。"
+      }
+    ],
+    "source_links": [
+      {
+        "label": "2001 FIFA World Youth Championship squads",
+        "url": "https://en.wikipedia.org/wiki/2001_FIFA_World_Youth_Championship_squads"
+      },
+      {
+        "label": "2001 FIFA World Youth Championship",
+        "url": "https://en.wikipedia.org/wiki/2001_FIFA_World_Youth_Championship"
+      },
+      {
+        "label": "RSSSF 2001 World Youth Championship",
+        "url": "https://www.rsssf.org/tablesw/wyc01.html"
+      },
+      {
+        "label": "FIFA technical report",
+        "url": "https://web.archive.org/web/20090807012514/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/05/47/u20_argentina_2001_a_176.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u17-world-championship-2003",
+    "confederation": "FIFA",
+    "competition_name": "FIFA U-17 World Championship Finland 2003",
+    "level": "u17-world-cup",
+    "edition_label": "2003",
+    "historical_name": "FIFA U-17 World Championship",
+    "host": "Finland",
+    "date_range": {
+      "start": "2003-08-13",
+      "end": "2003-08-30"
+    },
+    "status": "completed",
+    "champion": "Brazil",
+    "runner_up": "Spain",
+    "china_status": "group-stage",
+    "china_summary": "中国 U17 通过 2002 AFC U-17 Championship 晋级 2003 世少赛，小组赛 3 战 1 平 2 负，进 5 球失 7 球。",
+    "china_detail_scope": "matches-goals-coach-qualification-squad-source-link",
+    "source_checked_at": "2026-06-28",
+    "competition_lineage": [
+      {
+        "years": "1985-1991",
+        "official_name": "FIFA U-16 World Championship",
+        "archive_note": "早期世少赛按 U-16 World Championship 命名。"
+      },
+      {
+        "years": "1993-2005",
+        "official_name": "FIFA U-17 World Championship",
+        "archive_note": "1993 起年龄组改为 U-17，2005 中国档案保留 World Championship 历史名。"
+      },
+      {
+        "years": "2007-present",
+        "official_name": "FIFA U-17 World Cup",
+        "archive_note": "2007 起使用 U-17 World Cup 命名。"
+      }
+    ],
+    "coach": {
+      "name": "Liu Chunming",
+      "local_name": "刘春明",
+      "role": "Head coach"
+    },
+    "qualification_path": {
+      "route": "2002 AFC U-17 Championship",
+      "summary": "中国 U17 通过 2002 AFC U-17 Championship 的 AFC 路径晋级 2003 FIFA U-17 World Championship 决赛圈。",
+      "final_stage": "AFC U-17 Championship qualification berth"
+    },
+    "china_goal_summary": {
+      "goals_for": 5,
+      "goals_against": 7,
+      "player_goals": [
+        {
+          "player": "Jiang Chen",
+          "goals": 3
+        },
+        {
+          "player": "Wang Yongpo",
+          "goals": 2
+        }
+      ]
+    },
+    "minute_status": {
+      "status": "needs-technical-report-extraction",
+      "note": "已结构化 squad、matches 和 goals；逐人出场分钟仍需从 FIFA archive/technical report 或 match centre 逐场抽取。"
+    },
+    "china_squad": [
+      {
+        "squad_number": 1,
+        "player": "Tian Xu",
+        "position": "Goalkeeper",
+        "birth_date": "1986-02-15",
+        "club": "Qingdao Manatee"
+      },
+      {
+        "squad_number": 2,
+        "player": "Hao Qiang",
+        "position": "Defender",
+        "birth_date": "1986-01-18",
+        "club": "Beijing Guoan"
+      },
+      {
+        "squad_number": 3,
+        "player": "Cai Xi",
+        "position": "Defender",
+        "birth_date": "1986-01-18",
+        "club": "Wuhan Yaqi"
+      },
+      {
+        "squad_number": 4,
+        "player": "Lang Zheng",
+        "position": "Defender",
+        "birth_date": "1986-07-22",
+        "club": "Harbin Lange"
+      },
+      {
+        "squad_number": 5,
+        "player": "Li Chenghua",
+        "position": "Defender",
+        "birth_date": "1986-01-23",
+        "club": "Dalian Shide"
+      },
+      {
+        "squad_number": 6,
+        "player": "Li Chunyu",
+        "position": "Midfielder",
+        "birth_date": "1986-10-09",
+        "club": "Shenyang Ginde"
+      },
+      {
+        "squad_number": 7,
+        "player": "Li Benjian",
+        "position": "Midfielder",
+        "birth_date": "1986-03-05",
+        "club": "Tianjin Teda"
+      },
+      {
+        "squad_number": 8,
+        "player": "Hao Junmin",
+        "position": "Midfielder",
+        "birth_date": "1987-03-24",
+        "club": "Tianjin Teda",
+        "note": "后续成长为成年国家队中场和五大联赛出场样本。"
+      },
+      {
+        "squad_number": 9,
+        "player": "Wang Yongpo",
+        "position": "Midfielder",
+        "birth_date": "1987-01-19",
+        "club": "Shandong Luneng Taishan",
+        "goals": 2
+      },
+      {
+        "squad_number": 10,
+        "player": "Mao Jianqing",
+        "position": "Forward",
+        "birth_date": "1986-08-08",
+        "club": "Shanghai SVA",
+        "note": "后续进入成年国家队和中超主力样本。"
+      },
+      {
+        "squad_number": 11,
+        "player": "Jiang Chen",
+        "position": "Forward",
+        "birth_date": "1986-06-24",
+        "club": "Tianjin Teda",
+        "goals": 3
+      },
+      {
+        "squad_number": 12,
+        "player": "Mao Biao",
+        "position": "Forward",
+        "birth_date": "1987-07-24",
+        "club": "Tianjin Teda"
+      },
+      {
+        "squad_number": 13,
+        "player": "Guo Mingyue",
+        "position": "Defender",
+        "birth_date": "1986-03-07",
+        "club": "Shandong Luneng Taishan"
+      },
+      {
+        "squad_number": 14,
+        "player": "Xu Wen",
+        "position": "Defender",
+        "birth_date": "1986-04-13",
+        "club": "Shanghai Shenhua"
+      },
+      {
+        "squad_number": 15,
+        "player": "Liu Qing",
+        "position": "Defender",
+        "birth_date": "1986-04-05",
+        "club": "Shanghai Shenhua"
+      },
+      {
+        "squad_number": 16,
+        "player": "Xu Qun",
+        "position": "Midfielder",
+        "birth_date": "1986-01-22",
+        "club": "Shanghai Shenhua"
+      },
+      {
+        "squad_number": 17,
+        "player": "Bai Long",
+        "position": "Forward",
+        "birth_date": "1986-01-22",
+        "club": "Dalian Shide"
+      },
+      {
+        "squad_number": 18,
+        "player": "Jiang Ning",
+        "position": "Forward",
+        "birth_date": "1986-09-01",
+        "club": "Qingdao Manatee"
+      },
+      {
+        "squad_number": 19,
+        "player": "Lai Li",
+        "position": "Midfielder",
+        "birth_date": "1986-09-12",
+        "club": "Shandong Luneng Taishan"
+      },
+      {
+        "squad_number": 20,
+        "player": "Ou Ya",
+        "position": "Goalkeeper",
+        "birth_date": "1986-02-14",
+        "club": "Shandong Luneng Taishan"
+      }
+    ],
+    "china_matches": [
+      {
+        "date": "2003-08-13",
+        "stage": "Group A",
+        "opponent": "Finland",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Jiang Chen",
+            "minute": "4"
+          }
+        ]
+      },
+      {
+        "date": "2003-08-16",
+        "stage": "Group A",
+        "opponent": "Colombia",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Wang Yongpo",
+            "minute": "67"
+          }
+        ]
+      },
+      {
+        "date": "2003-08-19",
+        "stage": "Group A",
+        "opponent": "Mexico",
+        "score_for": 3,
+        "score_against": 3,
+        "result": "D",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Wang Yongpo",
+            "minute": "35"
+          },
+          {
+            "type": "goal",
+            "player": "Jiang Chen",
+            "minute": "61"
+          },
+          {
+            "type": "goal",
+            "player": "Jiang Chen",
+            "minute": "81"
+          }
+        ]
+      }
+    ],
+    "china_key_players": [
+      {
+        "player": "Jiang Chen",
+        "position": "Forward",
+        "club": "Tianjin Teda",
+        "goals": 3
+      },
+      {
+        "player": "Wang Yongpo",
+        "position": "Midfielder",
+        "club": "Shandong Luneng Taishan",
+        "goals": 2
+      },
+      {
+        "player": "Hao Junmin",
+        "position": "Midfielder",
+        "club": "Tianjin Teda",
+        "goals": 0,
+        "note": "2003 U17 squad member; later became a senior China PR international and Bundesliga player."
+      }
+    ],
+    "source_links": [
+      {
+        "label": "2003 FIFA U-17 World Championship squads",
+        "url": "https://en.wikipedia.org/wiki/2003_FIFA_U-17_World_Championship_squads"
+      },
+      {
+        "label": "2003 FIFA U-17 World Championship",
+        "url": "https://en.wikipedia.org/wiki/2003_FIFA_U-17_World_Championship"
+      },
+      {
+        "label": "FIFA archive: Finland 2003",
+        "url": "https://web.archive.org/web/20160304191427/http://www.fifa.com/u17worldcup/archive/finland2003/index.html"
+      },
+      {
+        "label": "China national under-17 football team",
+        "url": "https://en.wikipedia.org/wiki/China_national_under-17_football_team"
       }
     ]
   },
@@ -2940,24 +5857,51 @@
     "china_matches": [],
     "china_key_players": [],
     "regional_watch": {
-      "scope_note": {
-        "zh": "这不是 2026 世界杯最终名单，而是按截至 2026-05-23 站内已建档、仍处 U23 年龄段的日韩样本整理；底池以 AFC U23 2026 终报名名单为主，再按当前注册俱乐部单独标出仍在海外踢球的样本。",
-        "en": "This is not a projected final 2026 FIFA World Cup squad. It is a watchlist built from the site's currently archived Japan and Korea Republic players who are still U23-aged as of 2026-05-23, anchored first by the AFC U23 2026 final registrations and then split by current club location to highlight who is still playing abroad."
+      "title": {
+        "zh": "2026 世界杯 U20 年龄段观察",
+        "en": "2026 World Cup U20-age watch"
       },
-      "tag": "asia-u23-2026",
+      "scope_note": {
+        "zh": "这不是 2026 世界杯最终名单预测，而是按 2026-06-11 开幕日仍未满 20 岁的站内已建档球员整理的年龄段观察池。筛选口径为 birth_date > 2006-06-11，并按中国、日本、韩国、乌兹别克斯坦当前已建档样本分组；中国队已无缘正赛，因此中国组用于同年龄段横向比较。",
+        "en": "This is not a projected final 2026 FIFA World Cup squad. It is an age-band watchlist built from site-archived players who will still be under 20 on the 2026-06-11 opening day. The filter is birth_date > 2006-06-11, grouped across currently archived China PR, Japan, Korea Republic and Uzbekistan samples; China PR did not qualify, so its group is retained only as a same-age benchmark."
+      },
+      "tag": "",
+      "player_pool_label": {
+        "zh": "U20",
+        "en": "U20"
+      },
+      "birth_date_after": "2006-06-11",
       "team_groups": [
         {
-          "country": "Japan",
+          "country": "China PR",
+          "tag": "china-youth",
           "note": {
-            "zh": "日本这组以 2026 U23 亚洲杯冠军班底为底。此前在比利时 SK Beveren 的道胁丰，已于 2026 年 1 月完成回归福冈，因此当前这批已建档 U23 样本里没有持续留洋球员。",
-            "en": "Japan's pool is built around the 2026 AFC U23 champions. Yutaka Michiwaki, who had been with SK Beveren in Belgium, returned to Avispa Fukuoka in January 2026, so there is currently no active overseas player inside this archived Japanese U23 pool."
+            "zh": "中国队未进入 2026 世界杯决赛圈；这组只作为同年龄段样本参考。站内 U20 池覆盖王钰栋、刘诚宇、魏祥鑫、张家鸣、林子皓以及 2009/2010 年龄段国少和留洋样本，便于与参赛亚洲球队的年轻球员储备对照。",
+            "en": "China PR did not reach the 2026 World Cup finals; this group is only a same-age benchmark. The site U20 pool includes Wang Yudong, Liu Chengyu, Wei Xiangxin, Zhang Jiaming, Lin Zihao and 2009/2010 youth or overseas samples for comparison with qualified Asian teams."
+          }
+        },
+        {
+          "country": "Japan",
+          "tag": "japan-youth",
+          "note": {
+            "zh": "日本组按站内已建档 U20 样本整理，横跨 2026 U23 亚洲杯年轻球员、2007 年龄段职业 / 留洋样本，以及 2009/2010 年龄段 U17 亚洲杯名单。高冈伶飒、佐藤龙之介等是更接近成年队视野的样本。",
+            "en": "Japan's group is built from the site's archived U20-age sample, spanning younger 2026 AFC U23 players, 2007-born professional or overseas cases, and the 2009/2010 AFC U17 pool. Rento Takaoka and Ryunosuke Sato are among the more senior-adjacent names."
           }
         },
         {
           "country": "Korea Republic",
+          "tag": "korea-youth",
           "note": {
-            "zh": "韩国这组以 2026 U23 亚洲杯第四名班底为底。当前留洋样本主要是葡萄牙的金容学，以及在日本 J 联赛注册的金泰元。",
-            "en": "Korea Republic's pool is built around the squad that finished fourth at the 2026 AFC U23 Asian Cup. The active overseas subset currently centres on Kim Yonghak in Portugal and Kim Taewon, who is registered in Japan."
+            "zh": "韩国组按站内 U20 样本整理，包含 2006/2007 年龄段更接近职业队的球员，以及 2009/2010 年龄段 U17 亚洲杯名单。朴胜洙是当前最突出的英格兰梯队留洋样本。",
+            "en": "Korea Republic's group is built from the site U20 sample, including 2006/2007-born players closer to senior football and the 2009/2010 AFC U17 group. Park Seung-soo is the clearest England-based academy overseas case."
+          }
+        },
+        {
+          "country": "Uzbekistan",
+          "tag": "uzbekistan-youth",
+          "note": {
+            "zh": "乌兹别克斯坦已获得 2026 世界杯正赛资格；站内当前只建档到 2009 年龄段 U17 亚洲杯样本，因此这组更偏长期储备观察，不等同于成年队正赛名单候选。",
+            "en": "Uzbekistan have qualified for the 2026 World Cup finals. The site currently only archives their 2009-born AFC U17 sample, so this group is a longer-term pipeline watch rather than a senior finals-squad projection."
           }
         }
       ]
@@ -2976,16 +5920,8 @@
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
       {
-        "label": "Avispa Fukuoka official profile: Yutaka Michiwaki",
-        "url": "https://www.avispa.co.jp/club-info-3/fw27_michiwaki_2026"
-      },
-      {
-        "label": "J.League profile: Kim Taewon at Kataller Toyama",
-        "url": "https://www.jleague.jp/player/1651218/"
-      },
-      {
-        "label": "Portimonense official profile: Kim Yonghak",
-        "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312"
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
       }
     ]
   },
@@ -3020,7 +5956,7 @@
       }
     ]
   },
-  {
+    {
     "id": "fifa-u20-world-cup-2025",
     "confederation": "FIFA",
     "competition_name": "FIFA U-20 World Cup Chile 2025",
@@ -3058,12 +5994,14 @@
     ],
     "china_participation_history": {
       "source_checked_at": "2026-06-27",
-      "scope_note": "按男足 FIFA World Youth Championship / FIFA U-20 World Cup 决赛圈整理；早期 qualification_path 先按 AFC U-19/U20 成绩映射，逐届名单和分钟另行拆分。",
+      "scope_note": "按男足 FIFA World Youth Championship / FIFA U-20 World Cup 决赛圈整理；1983、1985、1997、2001、2005 参赛届均已有结构化档案行，逐人分钟仍按各档案 minute_status 继续抽取。",
       "summary": {
         "appearances": 5,
         "first_appearance": "1983",
         "best_finish": "Quarter-finals",
-        "best_years": ["1985"],
+        "best_years": [
+          "1985"
+        ],
         "finals_record": {
           "matches": 18,
           "wins": 7,
@@ -3079,7 +6017,14 @@
           "historical_name": "FIFA World Youth Championship",
           "china_status": "first-round",
           "position": "12th",
-          "record": { "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 5, "goals_against": 8 },
+          "record": {
+            "matches": 3,
+            "wins": 1,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 5,
+            "goals_against": 8
+          },
           "qualification_path": "1982 AFC Youth Championship runners-up; AFC youth pathway berth."
         },
         {
@@ -3087,7 +6032,14 @@
           "historical_name": "FIFA World Youth Championship",
           "china_status": "quarter-final",
           "position": "7th",
-          "record": { "matches": 4, "wins": 2, "draws": 0, "losses": 2, "goals_for": 5, "goals_against": 5 },
+          "record": {
+            "matches": 4,
+            "wins": 2,
+            "draws": 0,
+            "losses": 2,
+            "goals_for": 5,
+            "goals_against": 5
+          },
           "qualification_path": "1985 AFC Youth Championship champions; AFC youth pathway berth."
         },
         {
@@ -3095,7 +6047,14 @@
           "historical_name": "FIFA World Youth Championship",
           "china_status": "first-round",
           "position": "18th",
-          "record": { "matches": 3, "wins": 0, "draws": 2, "losses": 1, "goals_for": 2, "goals_against": 3 },
+          "record": {
+            "matches": 3,
+            "wins": 0,
+            "draws": 2,
+            "losses": 1,
+            "goals_for": 2,
+            "goals_against": 3
+          },
           "qualification_path": "1996 AFC Youth Championship runners-up; AFC youth pathway berth."
         },
         {
@@ -3103,7 +6062,14 @@
           "historical_name": "FIFA World Youth Championship",
           "china_status": "round-of-16",
           "position": "15th",
-          "record": { "matches": 4, "wins": 1, "draws": 1, "losses": 2, "goals_for": 2, "goals_against": 3 },
+          "record": {
+            "matches": 4,
+            "wins": 1,
+            "draws": 1,
+            "losses": 2,
+            "goals_for": 2,
+            "goals_against": 3
+          },
           "qualification_path": "2000 AFC Youth Championship third place; AFC youth pathway berth."
         },
         {
@@ -3111,7 +6077,14 @@
           "historical_name": "FIFA World Youth Championship",
           "china_status": "round-of-16",
           "position": "10th",
-          "record": { "matches": 4, "wins": 3, "draws": 0, "losses": 1, "goals_for": 11, "goals_against": 7 },
+          "record": {
+            "matches": 4,
+            "wins": 3,
+            "draws": 0,
+            "losses": 1,
+            "goals_for": 11,
+            "goals_against": 7
+          },
           "qualification_path": "2004 AFC Youth Championship runners-up; AFC youth pathway berth."
         }
       ],
@@ -3141,6 +6114,13 @@
           "status": "did-not-qualify",
           "qualification_path": "China PR did not return to the FIFA U-20 finals through AFC U-19/U20 qualifying; 2023 and 2025 are also tracked as separate archive entries above."
         }
+      ],
+      "archive_rows": [
+        "fifa-u20-world-cup-1983",
+        "fifa-u20-world-cup-1985",
+        "fifa-u20-world-cup-1997",
+        "fifa-u20-world-cup-2001",
+        "fifa-u20-world-cup-2005"
       ]
     },
     "source_links": [
@@ -3228,7 +6208,7 @@
       }
     ]
   },
-  {
+    {
     "id": "fifa-u17-world-cup-2026",
     "confederation": "FIFA",
     "competition_name": "FIFA U-17 World Cup Qatar 2026",
@@ -3275,10 +6255,30 @@
       "qualified_edition_count_including_2026": 7,
       "first_appearance": "1985",
       "best_finish": "Quarter-finals",
-      "best_years": ["1985", "2005"],
-      "finals_editions": ["1985", "1989", "1991", "1993", "2003", "2005"],
-      "qualified_future_editions": ["2026"],
-      "note": "详细逐届战绩保留在 regional_history.editions；这里提供 #18 所需的中国 U16/U17 世界赛参赛年份索引。"
+      "best_years": [
+        "1985",
+        "2005"
+      ],
+      "finals_editions": [
+        "1985",
+        "1989",
+        "1991",
+        "1993",
+        "2003",
+        "2005"
+      ],
+      "qualified_future_editions": [
+        "2026"
+      ],
+      "note": "1985、1989、1991、1993、2003、2005 均有结构化 archive row；2026 已晋级但赛事尚未开打。逐人 minutes 仍按各参赛档案 minute_status 继续抽取。",
+      "archive_rows": [
+        "fifa-u16-world-championship-1985",
+        "fifa-u16-world-championship-1989",
+        "fifa-u17-world-championship-1991",
+        "fifa-u17-world-championship-1993",
+        "fifa-u17-world-championship-2003",
+        "fifa-u17-world-cup-2005"
+      ]
     },
     "regional_history": {
       "scope_note": {
@@ -3314,7 +6314,10 @@
           "qualified_edition_count_including_2026": 7,
           "qualified_for_2026": true,
           "best_finish": "Quarter-finals",
-          "best_years": ["1985", "2005"]
+          "best_years": [
+            "1985",
+            "2005"
+          ]
         },
         {
           "country": "Japan",
@@ -3322,7 +6325,11 @@
           "qualified_edition_count_including_2026": 12,
           "qualified_for_2026": true,
           "best_finish": "Quarter-finals",
-          "best_years": ["1993", "2011", "2025"]
+          "best_years": [
+            "1993",
+            "2011",
+            "2025"
+          ]
         },
         {
           "country": "Korea Republic",
@@ -3330,7 +6337,11 @@
           "qualified_edition_count_including_2026": 9,
           "qualified_for_2026": true,
           "best_finish": "Quarter-finals",
-          "best_years": ["1987", "2009", "2019"]
+          "best_years": [
+            "1987",
+            "2009",
+            "2019"
+          ]
         }
       ],
       "editions": [
@@ -3341,9 +6352,21 @@
           "japan": "Did not qualify",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Quarter-finals", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 8, "goals_against": 7 },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Quarter-finals",
+              "matches": 4,
+              "wins": 2,
+              "draws": 1,
+              "losses": 1,
+              "goals_for": 8,
+              "goals_against": 7
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3353,9 +6376,21 @@
           "japan": "Did not qualify",
           "korea_republic": "Quarter-finals",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Quarter-finals", "matches": 4, "wins": 1, "draws": 1, "losses": 2, "goals_for": 5, "goals_against": 6 }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Quarter-finals",
+              "matches": 4,
+              "wins": 1,
+              "draws": 1,
+              "losses": 2,
+              "goals_for": 5,
+              "goals_against": 6
+            }
           }
         },
         {
@@ -3365,9 +6400,21 @@
           "japan": "Did not qualify",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 1, "losses": 1, "goals_for": 1, "goals_against": 3 },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "goals_for": 1,
+              "goals_against": 3
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3377,9 +6424,21 @@
           "japan": "Did not enter",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 1, "losses": 2, "goals_for": 4, "goals_against": 7 },
-            "japan": { "stage": "Did not enter" },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "goals_for": 4,
+              "goals_against": 7
+            },
+            "japan": {
+              "stage": "Did not enter"
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3389,9 +6448,27 @@
           "japan": "Quarter-finals",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 1, "losses": 2, "goals_for": 2, "goals_against": 5 },
-            "japan": { "stage": "Quarter-finals", "matches": 4, "wins": 1, "draws": 1, "losses": 2, "goals_for": 3, "goals_against": 4 },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "goals_for": 2,
+              "goals_against": 5
+            },
+            "japan": {
+              "stage": "Quarter-finals",
+              "matches": 4,
+              "wins": 1,
+              "draws": 1,
+              "losses": 2,
+              "goals_for": 3,
+              "goals_against": 4
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3401,9 +6478,21 @@
           "japan": "Group stage",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 1, "losses": 1, "goals_for": 2, "goals_against": 2 },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 1,
+              "draws": 1,
+              "losses": 1,
+              "goals_for": 2,
+              "goals_against": 2
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3413,9 +6502,15 @@
           "japan": "Did not qualify",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3425,9 +6520,15 @@
           "japan": "Did not qualify",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3437,9 +6538,21 @@
           "japan": "Group stage",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 2, "goals_against": 9 },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 2,
+              "goals_against": 9
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3449,9 +6562,27 @@
           "japan": "Did not qualify",
           "korea_republic": "Group stage",
           "team_records": {
-            "china_pr": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 1, "losses": 2, "goals_for": 5, "goals_against": 7 },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 6, "goals_against": 11 }
+            "china_pr": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 0,
+              "draws": 1,
+              "losses": 2,
+              "goals_for": 5,
+              "goals_against": 7
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 6,
+              "goals_against": 11
+            }
           }
         },
         {
@@ -3461,9 +6592,21 @@
           "japan": "Did not qualify",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Quarter-finals", "matches": 4, "wins": 1, "draws": 2, "losses": 1, "goals_for": 4, "goals_against": 7 },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Quarter-finals",
+              "matches": 4,
+              "wins": 1,
+              "draws": 2,
+              "losses": 1,
+              "goals_for": 4,
+              "goals_against": 7
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3473,9 +6616,27 @@
           "japan": "Group stage",
           "korea_republic": "Group stage",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 4, "goals_against": 6 },
-            "korea_republic": { "stage": "Group stage", "matches": 3, "wins": 1, "draws": 0, "losses": 2, "goals_for": 2, "goals_against": 4 }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 4,
+              "goals_against": 6
+            },
+            "korea_republic": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 1,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 2,
+              "goals_against": 4
+            }
           }
         },
         {
@@ -3485,9 +6646,27 @@
           "japan": "Group stage",
           "korea_republic": "Quarter-finals",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 0, "losses": 3, "goals_for": 5, "goals_against": 9 },
-            "korea_republic": { "stage": "Quarter-finals", "matches": 5, "wins": 2, "draws": 1, "losses": 2, "goals_for": 8, "goals_against": 7 }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "goals_for": 5,
+              "goals_against": 9
+            },
+            "korea_republic": {
+              "stage": "Quarter-finals",
+              "matches": 5,
+              "wins": 2,
+              "draws": 1,
+              "losses": 2,
+              "goals_for": 8,
+              "goals_against": 7
+            }
           }
         },
         {
@@ -3497,9 +6676,21 @@
           "japan": "Quarter-finals",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Quarter-finals", "matches": 5, "wins": 3, "draws": 1, "losses": 1, "goals_for": 13, "goals_against": 5 },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Quarter-finals",
+              "matches": 5,
+              "wins": 3,
+              "draws": 1,
+              "losses": 1,
+              "goals_for": 13,
+              "goals_against": 5
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3509,9 +6700,21 @@
           "japan": "Round of 16",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Round of 16", "matches": 4, "wins": 3, "draws": 0, "losses": 1, "goals_for": 7, "goals_against": 4 },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Round of 16",
+              "matches": 4,
+              "wins": 3,
+              "draws": 0,
+              "losses": 1,
+              "goals_for": 7,
+              "goals_against": 4
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3521,9 +6724,21 @@
           "japan": "Did not qualify",
           "korea_republic": "Round of 16",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Did not qualify" },
-            "korea_republic": { "stage": "Round of 16", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 2, "goals_against": 2 }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Did not qualify"
+            },
+            "korea_republic": {
+              "stage": "Round of 16",
+              "matches": 4,
+              "wins": 2,
+              "draws": 1,
+              "losses": 1,
+              "goals_for": 2,
+              "goals_against": 2
+            }
           }
         },
         {
@@ -3533,9 +6748,21 @@
           "japan": "Round of 16",
           "korea_republic": "Did not qualify",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Round of 16", "matches": 4, "wins": 1, "draws": 2, "losses": 1, "goals_for": 8, "goals_against": 4 },
-            "korea_republic": { "stage": "Did not qualify" }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Round of 16",
+              "matches": 4,
+              "wins": 1,
+              "draws": 2,
+              "losses": 1,
+              "goals_for": 8,
+              "goals_against": 4
+            },
+            "korea_republic": {
+              "stage": "Did not qualify"
+            }
           }
         },
         {
@@ -3545,9 +6772,27 @@
           "japan": "Round of 16",
           "korea_republic": "Quarter-finals",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Round of 16", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 4, "goals_against": 2 },
-            "korea_republic": { "stage": "Quarter-finals", "matches": 5, "wins": 3, "draws": 0, "losses": 2, "goals_for": 6, "goals_against": 6 }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Round of 16",
+              "matches": 4,
+              "wins": 2,
+              "draws": 1,
+              "losses": 1,
+              "goals_for": 4,
+              "goals_against": 2
+            },
+            "korea_republic": {
+              "stage": "Quarter-finals",
+              "matches": 5,
+              "wins": 3,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 6,
+              "goals_against": 6
+            }
           }
         },
         {
@@ -3557,9 +6802,27 @@
           "japan": "Round of 16",
           "korea_republic": "Group stage",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Round of 16", "matches": 4, "wins": 2, "draws": 0, "losses": 2, "goals_for": 5, "goals_against": 5 },
-            "korea_republic": { "stage": "Group stage", "matches": 3, "wins": 0, "draws": 0, "losses": 3, "goals_for": 2, "goals_against": 6 }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Round of 16",
+              "matches": 4,
+              "wins": 2,
+              "draws": 0,
+              "losses": 2,
+              "goals_for": 5,
+              "goals_against": 5
+            },
+            "korea_republic": {
+              "stage": "Group stage",
+              "matches": 3,
+              "wins": 0,
+              "draws": 0,
+              "losses": 3,
+              "goals_for": 2,
+              "goals_against": 6
+            }
           }
         },
         {
@@ -3569,9 +6832,27 @@
           "japan": "Quarter-finals",
           "korea_republic": "Round of 32",
           "team_records": {
-            "china_pr": { "stage": "Did not qualify" },
-            "japan": { "stage": "Quarter-finals", "matches": 6, "wins": 3, "draws": 2, "losses": 1, "goals_for": 8, "goals_against": 3 },
-            "korea_republic": { "stage": "Round of 32", "matches": 4, "wins": 2, "draws": 1, "losses": 1, "goals_for": 5, "goals_against": 4 }
+            "china_pr": {
+              "stage": "Did not qualify"
+            },
+            "japan": {
+              "stage": "Quarter-finals",
+              "matches": 6,
+              "wins": 3,
+              "draws": 2,
+              "losses": 1,
+              "goals_for": 8,
+              "goals_against": 3
+            },
+            "korea_republic": {
+              "stage": "Round of 32",
+              "matches": 4,
+              "wins": 2,
+              "draws": 1,
+              "losses": 1,
+              "goals_for": 5,
+              "goals_against": 4
+            }
           }
         },
         {
@@ -3581,9 +6862,21 @@
           "japan": "Qualified",
           "korea_republic": "Qualified",
           "team_records": {
-            "china_pr": { "stage": "Qualified, not yet played", "qualified": true, "played": false },
-            "japan": { "stage": "Qualified, not yet played", "qualified": true, "played": false },
-            "korea_republic": { "stage": "Qualified, not yet played", "qualified": true, "played": false }
+            "china_pr": {
+              "stage": "Qualified, not yet played",
+              "qualified": true,
+              "played": false
+            },
+            "japan": {
+              "stage": "Qualified, not yet played",
+              "qualified": true,
+              "played": false
+            },
+            "korea_republic": {
+              "stage": "Qualified, not yet played",
+              "qualified": true,
+              "played": false
+            }
           }
         }
       ]

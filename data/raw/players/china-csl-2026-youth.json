@@ -357,8 +357,8 @@
     "height_cm": null,
     "weight_kg": null,
     "registration_club": {
-      "name": "Meizhou Hakka FC",
-      "country": "China"
+      "name": "AJ Auxerre",
+      "country": "France"
     },
     "training_pathway": [
       {
@@ -386,18 +386,19 @@
         "note": "2025 年 4 月公开报道显示其前往法国欧塞尔接受试训；该节点属于试训 / 考察，不等于当时已完成转会。"
       },
       {
-        "stage_label": "2026/07 欧塞尔待生效转会",
+        "stage_label": "2026/07 欧塞尔签约生效",
         "organization": "AJ Auxerre",
         "country": "France",
-        "note": "公开资料显示其转会欧塞尔的生效日期为 2026-07-01；按当前日期 2026-06-27，仍应写作“已签约 / 待生效”，不提前计入现役海外注册。"
+        "note": "公开资料显示其转会欧塞尔的生效日期为 2026-07-01；按 2026-07-10 核对，Soccerway 球员页已将其显示为 Auxerre 球员，当前按已生效留洋样本处理，但仍需继续跟进欧塞尔一线队 / 梯队正式名单和比赛报名。"
       }
     ],
     "focus_tags": [
       "china-youth",
-      "domestic-pro-youth",
-      "future-overseas-watch",
+      "overseas-europe",
+      "china-overseas-current",
       "france-pathway",
-      "striker-watch"
+      "striker-watch",
+      "recent-outbound-2026"
     ],
     "tournament_participation": [
       {
@@ -408,16 +409,17 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-06-27，当前注册归属先按梅州客家处理；欧塞尔节点写作 2026-07-01 待生效，不与现役海外注册样本混算。"
+        "note": "本条保留其梅州客家 / 广东铭途国内职业路径；按 2026-07-10 核对，当前归属已转为 AJ Auxerre，不再作为现役国内注册样本处理。"
       },
       {
-        "label": "2026 欧塞尔待生效转会",
+        "competition_id": "china-overseas-2026",
+        "label": "2026 欧塞尔签约生效",
         "team": "AJ Auxerre",
-        "squad_status": "pending-transfer",
+        "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "若 2026-07-01 后俱乐部注册和官方名单同步更新，可再把本条迁入中国现役留洋样本。"
+        "note": "2026-07-01 转会生效日已过；Soccerway 当前球员页显示其所属为 Auxerre。欧塞尔一线队 / 梯队具体报名、号码和出场情况仍待俱乐部或赛事数据库进一步同步。"
       }
     ],
     "external_links": [
@@ -433,14 +435,24 @@
       },
       {
         "type": "profile",
+        "label": "Soccerway profile",
+        "url": "https://www.soccerway.com/player/wei-xiangxin/lfEWG3gc/"
+      },
+      {
+        "type": "news",
+        "label": "Dongqiudi report on formal Auxerre arrival",
+        "url": "https://www.dongqiudi.com/article/5986133.html"
+      },
+      {
+        "type": "profile",
         "label": "WorldFootball.net profile",
         "url": "https://www.worldfootball.net/player_summary/wei-xiangxin/"
       }
     ],
     "verification": {
-      "status": "verified",
-      "last_checked": "2026-06-27",
-      "notes": "出生日期、梅州客家一线队出场、广东铭途租借和欧塞尔 2026-07-01 待生效节点由 Wikipedia / WorldFootball / 转会报道交叉整理；由于生效日期晚于当前核对日，当前注册俱乐部仍按梅州客家处理。"
+      "status": "mixed-source",
+      "last_checked": "2026-07-10",
+      "notes": "出生日期、梅州客家一线队出场、广东铭途租借和欧塞尔 2026-07-01 生效节点由 Wikipedia / WorldFootball / 转会报道交叉整理；2026-07-10 核对 Soccerway 球员页已显示 Auxerre，故当前注册俱乐部改按 AJ Auxerre 处理。欧塞尔官方一线队或梯队报名页尚需继续跟进，因此验证状态保留为 mixed-source。"
     }
   }
 ]
