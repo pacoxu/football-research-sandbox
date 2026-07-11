@@ -1,6 +1,6 @@
 # 项目范围与非官方声明
 
-更新时间：2026-06-28
+更新时间：2026-07-11
 
 本站是青训球员与足球研究资料的静态索引项目，用来整理公开来源中的球员、赛事、留洋、教练和专题线索。它不是中国足协、AFC、FIFA、俱乐部、学校或任何经纪机构的官方数据库。
 
@@ -14,7 +14,7 @@
 | 留洋历史 | 中日韩留洋历史建档、五大联赛重点记录和分层口径。 | `data/raw/overseas-history.json` |
 | 中超青年样本 | 2026 中超 U21/U23 和具备留洋经历的中国青年样本。 | `data/raw/players/china-csl-2026-youth.json` |
 | 专题档案 | 董路足球小将、中国男足青年教练和研究专题。 | `data/raw/dossiers.json`、`data/raw/china-men-youth-coaches.json` |
-| 亚洲教练 | 五大联赛顶级联赛亚洲教练主口径及边界样本。 | `data/raw/big-five-asian-coaches.json` |
+| 亚洲教练 | 五大联赛顶级联赛主表，以及欧洲非五大、AFC 成年/青年国家队、亚洲顶级联赛主教练试点。 | `data/raw/big-five-asian-coaches.json`、`data/raw/asian-coaches.json` |
 
 ## 当前不统计什么
 

@@ -1,8 +1,10 @@
 # 亚洲教练扩展口径与试点样本
 
-更新时间：2026-06-28
+更新时间：2026-07-11
 
 本文件对应 [issue #20](https://github.com/starryjog/football-research-sandbox/issues/20)，用于把亚洲教练样本从现有 `data/raw/big-five-asian-coaches.json` 扩展到五大联赛之外。目标不是继续往五大联赛主表塞记录，而是先定义可落库字段、边界和首批试点样本。
+
+实现状态：统一表 `data/raw/asian-coaches.json`、loader、站点聚合和 validator 已落地。首批收录 Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting 五名教练、10 段任期；逐场战绩仍按分步原则保留为 `null`。
 
 ## 结论
 
@@ -34,7 +36,7 @@
 | `technical_director` | 否 | 只进入 staff/reference，不计入主教练样本。 |
 | `advisor` | 否 | 顾问、个人顾问、技术顾问不进入主统计。 |
 | `club_youth_head_coach` | 否，除非另设青训专题 | 俱乐部青年队教练不混入一线队主统计。 |
-| `national_youth_head_coach` | 是 | AFC U17/U20/U23 等国字号主教练可以进入，但用独立 `competition_scope`。 |
+| `head_coach` + `role_scope: youth_national_team` | 是 | AFC U17/U20/U23 等国字号主教练可以进入，并使用独立 `competition_scope`。 |
 
 ## 赛事范围
 
@@ -73,9 +75,13 @@
           "team_type": "national_team",
           "competition_scope": "afc_senior_national_team",
           "competition": "FIFA World Cup 2026 qualification / AFC Asian Qualifiers",
+          "role_scope": "senior_national_team",
           "role_type": "head_coach",
           "spell_type": "permanent",
-          "period": "2024-09 to present",
+          "period": {
+            "start": "2024-09",
+            "end": null
+          },
           "season": "2024-2026 cycle",
           "count_in_primary": true,
           "record_scope": "all senior international matches, pending match-level audit",
@@ -103,9 +109,13 @@
 
 `record` 先允许为 `null`。任命事实和战绩统计应分步完成，避免因为缺逐场战绩而阻塞首批样本落库。
 
+实现中把 `role_scope` 与 `role_type` 分开：前者区分 `club_first_team`、`senior_national_team`、`youth_national_team`，后者区分正式、代理和临时主教练。任期改为结构化年月，现任的 `period.end` 为 `null`。
+
 凡表内写作 `2024-`、`2026-` 或 open-ended 的任期，只能视为待落库线索。真正进入 JSON 前必须在对应记录的 `verification.last_checked` 日期重新确认官方现任状态，不能只沿用本研究页。
 
 ## 首批试点样本
+
+首批实际落库选择五名能覆盖全部主要 scope、且有官方来源闭环的教练。其余候选保留为第二批，不用二手来源强行填充。
 
 | 教练 | 主口径 | 可覆盖范围 | 首批任期线索 | 当前来源状态 | 落库建议 |
 | --- | --- | --- | --- | --- | --- |
@@ -133,23 +143,22 @@
 
 ## 下一步
 
-1. 为首批 10-12 名试点教练补官方任命页或联赛官方 profile，并把来源分成 `association-announcement`、`club-announcement`、`league-profile`、`competition-record`、`secondary-crosscheck`。
-2. 新增 `data/raw/asian-coaches.json`，先落任命事实，不强制补全逐场战绩。
-3. 给 `scripts/validate-data.mjs` 增加轻量校验：唯一 `id`、合法 URL、合法 `competition_scope`、合法 `role_type`、`verification.last_checked`。
-4. 后续若站点需要展示，再在 `build-site-data.mjs` 里生成 `data/site/overview.json` 的教练扩展摘要。
+1. 第二批优先补 Kevin Muscat、Kim Pan-gon、Akira Nishino、Masatada Ishii、Amir Ghalenoei、Choi Kang-hee，并坚持每段任期至少一条官方来源。
+2. 逐步为首批任期补同口径逐场战绩；在完成审计前继续保留 `record: null`。
+3. 若站点需要独立展示，再增加扩展教练筛选和卡片；当前只将数据发布到 `data/site/overview.json`，不混入五大联赛主表页面。
 
 ## 已核和待补来源
 
 已核可访问：
 
 - Football Australia: Tony Popovic appointed Head Coach of the Subway Socceroos, https://footballaustralia.com.au/news/football-australia-appoints-tony-popovic-head-coach-subway-socceroos
-- Celtic FC: Welcome Ange Postecoglou, https://www.celticfc.com/news/2021/june/Welcome-Ange-Postecoglou/
-- JFA SAMURAI BLUE current team entrance, https://www.jfa.jp/samuraiblue/
+- Celtic FC: Celtic appoint Ange Postecoglou as new football manager, https://www.celticfc.com/news/2021/june/Celtic-appoint-Ange-Postecoglou-as-new-football-manager/
+- JFA 2026 SAMURAI BLUE staff, https://www.jfa.jp/eng/samuraiblue_2026/member/
+- KFA: Hong Myung-bo appointed Korea Republic head coach, https://www.kfa.or.kr/layer_popup/popup_live.php?act=news_tv_detail&check_url=bGF5ZXI%3D&div_code=news&idx=26402&lang=EN
+- AFC: Chan Yuen-ting / Eastern AFC Champions League Q&A, https://www.the-afc.com/en/club/afc_champions_league/news/afc_champions_league_qa_chan_yuen-ting_eastern_sc.html
 
 优先待补：
 
-- JFA 的 Moriyasu 任命公告或官方个人页。
-- KFA 的 Hong Myung-bo 2024 任命公告。
 - FAM 的 Kim Pan-gon 任命和辞任公告。
 - Yokohama F. Marinos、Shanghai Port、Sint-Truiden 的 Muscat 任命和离任公告。
 - FAT 的 Masatada Ishii 任命公告。

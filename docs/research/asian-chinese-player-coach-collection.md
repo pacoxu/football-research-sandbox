@@ -1,6 +1,6 @@
 # 亚洲/中国球员与教练信息收集说明
 
-更新时间：2026-06-28
+更新时间：2026-07-11
 
 这份说明用于统一后续四条线的数据收集口径：亚洲球员、中国球员、亚洲教练、中国教练。它优先描述当前仓库已有覆盖、待补方向、待核线索和落库位置；未完成注册或缺少官方来源的线索只进入观察池，不直接覆盖现有球员或教练记录。
 
@@ -14,11 +14,11 @@
 
 ## 当前仓库快照
 
-球员库当前聚合到 `data/site/players.json`，共 171 名球员：
+球员库当前聚合到 `data/site/players.json`，共 185 名球员：
 
 | 国家/地区 | 数量 | 主要来源 |
 | --- | ---: | --- |
-| China PR | 65 | 中国 U23/U17、当前留洋、CSL 青年样本 |
+| China PR | 79 | 中国 U23/U20/U17、当前留洋、CSL 青年样本 |
 | Japan | 52 | 日本 U23/U17 终报名名单 |
 | Korea Republic | 50 | 韩国 U23/U17 终报名名单 |
 | Uzbekistan | 4 | 乌兹别克斯坦 U17 关键样本 |
@@ -54,6 +54,13 @@
 | --- | ---: | --- |
 | AFC 成员协会主口径 | 2 | Patrick Kisnorbo、Ange Postecoglou |
 | 广义亚洲边界口径 | 7 | 另列 Özcan Arkoç、Fatih Terim、Avram Grant、Tayfun Korkut、Nuri Sahin |
+
+五大联赛之外的扩展试点在 `data/raw/asian-coaches.json`，截至 2026-07-11：
+
+| 口径 | 数量 | 说明 |
+| --- | ---: | --- |
+| AFC 成员协会教练 | 5 | Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting |
+| 结构化任期 | 10 | 覆盖欧洲非五大、AFC 成年/青年国家队和亚洲顶级联赛；逐场战绩待后续审计 |
 
 中国男足 U 系列教练组在 `data/raw/china-men-youth-coaches.json`：
 

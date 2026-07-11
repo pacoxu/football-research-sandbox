@@ -74,6 +74,48 @@ const allowedTournamentSourceVersionTypes = new Set([
   "news-secondary"
 ]);
 
+const allowedAsianCoachCompetitionScopes = new Set([
+  "europe_non_big_five_top_flight",
+  "afc_senior_national_team",
+  "afc_youth_national_team",
+  "asian_top_flight_club",
+  "afc_continental_club"
+]);
+
+const allowedAsianCoachRoleTypes = new Set([
+  "head_coach",
+  "caretaker_head_coach",
+  "interim_head_coach"
+]);
+
+const allowedAsianCoachRoleScopes = new Set([
+  "club_first_team",
+  "senior_national_team",
+  "youth_national_team"
+]);
+
+const allowedAsianCoachTeamTypes = new Set([
+  "club",
+  "senior_national_team",
+  "youth_national_team"
+]);
+
+const allowedAsianCoachSpellTypes = new Set(["permanent", "caretaker", "interim"]);
+const allowedAsianCoachSourceTypes = new Set([
+  "association-announcement",
+  "club-announcement",
+  "league-profile",
+  "competition-record",
+  "secondary-crosscheck"
+]);
+const allowedAsianCoachCountedScopes = new Set([
+  "afc_member_association",
+  "geographic_broad",
+  "uefa_asian_boundary",
+  "dual_nationality_watch"
+]);
+const allowedAsianCoachConfidence = new Set(["high", "medium", "low"]);
+
 function assert(condition, message) {
   if (!condition) {
     throw new Error(message);
@@ -525,6 +567,135 @@ function validateBigFiveAsianCoaches(archive) {
   }
 }
 
+function validateAsianCoachSourceLink(link, label) {
+  assert(typeof link === "object" && link !== null, `Invalid Asian coach source on ${label}`);
+  assert(link.label, `Missing Asian coach source label on ${label}`);
+  assert(/^https?:\/\//.test(link.url), `Invalid Asian coach source url on ${label}`);
+  assert(
+    allowedAsianCoachSourceTypes.has(link.type),
+    `Invalid Asian coach source type "${link.type}" on ${label}`
+  );
+}
+
+function validateAsianCoaches(archive) {
+  assert(archive.id === "asian-coaches", "Invalid asian_coaches id");
+  assert(isIsoDate(archive.last_checked), "Invalid asian_coaches last_checked");
+  assert(
+    archive.scope_counts && typeof archive.scope_counts === "object",
+    "Missing asian_coaches scope_counts"
+  );
+  assert(
+    archive.stint_counts_by_scope && typeof archive.stint_counts_by_scope === "object",
+    "Missing asian_coaches stint_counts_by_scope"
+  );
+  assert(Array.isArray(archive.coaches) && archive.coaches.length > 0, "Invalid asian_coaches coaches");
+  assert(Array.isArray(archive.role_policy?.included), "Invalid asian_coaches included role policy");
+  assert(
+    Array.isArray(archive.role_policy?.excluded_from_primary),
+    "Invalid asian_coaches excluded role policy"
+  );
+
+  const coachIds = new Set();
+  const scopeCounts = new Map();
+  const stintCounts = new Map();
+
+  for (const coach of archive.coaches) {
+    assert(coach.id && coach.name && coach.local_name, "Asian coach must include id, name, and local_name");
+    assert(!coachIds.has(coach.id), `Duplicate Asian coach id: ${coach.id}`);
+    assert(coach.nationality, `Missing nationality on Asian coach ${coach.id}`);
+    assert(coach.association, `Missing association on Asian coach ${coach.id}`);
+    assert(coach.association_confederation, `Missing confederation on Asian coach ${coach.id}`);
+    assert(
+      Array.isArray(coach.counted_in) && coach.counted_in.length > 0,
+      `Invalid counted_in on Asian coach ${coach.id}`
+    );
+    assert(Array.isArray(coach.boundary_notes), `Invalid boundary_notes on Asian coach ${coach.id}`);
+    assert(Array.isArray(coach.stints) && coach.stints.length > 0, `Invalid stints on Asian coach ${coach.id}`);
+    assert(Array.isArray(coach.source_links), `Invalid source_links on Asian coach ${coach.id}`);
+    assert(
+      allowedAsianCoachConfidence.has(coach.confidence),
+      `Invalid confidence on Asian coach ${coach.id}`
+    );
+
+    for (const scope of coach.counted_in) {
+      assert(
+        allowedAsianCoachCountedScopes.has(scope),
+        `Invalid counted scope "${scope}" on Asian coach ${coach.id}`
+      );
+      scopeCounts.set(scope, (scopeCounts.get(scope) ?? 0) + 1);
+    }
+
+    for (const link of coach.source_links) {
+      validateAsianCoachSourceLink(link, coach.id);
+    }
+
+    for (const stint of coach.stints) {
+      const stintLabel = `${coach.id}:${stint.team ?? "unknown"}`;
+      assert(stint.team && stint.team_country, `Missing team on Asian coach stint ${stintLabel}`);
+      assert(
+        allowedAsianCoachTeamTypes.has(stint.team_type),
+        `Invalid team_type "${stint.team_type}" on ${stintLabel}`
+      );
+      assert(
+        allowedAsianCoachRoleScopes.has(stint.role_scope),
+        `Invalid role_scope "${stint.role_scope}" on ${stintLabel}`
+      );
+      assert(
+        allowedAsianCoachCompetitionScopes.has(stint.competition_scope),
+        `Invalid competition_scope "${stint.competition_scope}" on ${stintLabel}`
+      );
+      assert(stint.competition, `Missing competition on ${stintLabel}`);
+      assert(
+        allowedAsianCoachRoleTypes.has(stint.role_type),
+        `Invalid role_type "${stint.role_type}" on ${stintLabel}`
+      );
+      assert(
+        allowedAsianCoachSpellTypes.has(stint.spell_type),
+        `Invalid spell_type "${stint.spell_type}" on ${stintLabel}`
+      );
+      assert(/^\d{4}-\d{2}$/.test(stint.period?.start), `Invalid period.start on ${stintLabel}`);
+      assert(
+        stint.period?.end === null || /^\d{4}-\d{2}$/.test(stint.period?.end),
+        `Invalid period.end on ${stintLabel}`
+      );
+      if (stint.period.end !== null) {
+        assert(stint.period.end >= stint.period.start, `Asian coach period ends before start on ${stintLabel}`);
+      }
+      assert(stint.season, `Missing season on ${stintLabel}`);
+      assert(typeof stint.count_in_primary === "boolean", `Invalid count_in_primary on ${stintLabel}`);
+      assert(stint.record_scope, `Missing record_scope on ${stintLabel}`);
+      if (stint.record !== null) {
+        validateCoachRecord(stint.record, stintLabel);
+      }
+      assert(
+        Array.isArray(stint.source_links) && stint.source_links.length > 0,
+        `Missing stint sources on ${stintLabel}`
+      );
+      for (const link of stint.source_links) {
+        validateAsianCoachSourceLink(link, stintLabel);
+      }
+      validateVerificationBlock(stint.verification, stintLabel);
+      stintCounts.set(
+        stint.competition_scope,
+        (stintCounts.get(stint.competition_scope) ?? 0) + 1
+      );
+    }
+
+    coachIds.add(coach.id);
+  }
+
+  for (const [scope, count] of Object.entries(archive.scope_counts)) {
+    assert(scopeCounts.get(scope) === count, `Invalid scope count ${scope} on asian_coaches`);
+  }
+  for (const [scope, count] of Object.entries(archive.stint_counts_by_scope)) {
+    assert(
+      allowedAsianCoachCompetitionScopes.has(scope),
+      `Invalid stint count scope ${scope} on asian_coaches`
+    );
+    assert((stintCounts.get(scope) ?? 0) === count, `Invalid stint count ${scope} on asian_coaches`);
+  }
+}
+
 function validateRegionalHistory(history, tournamentId) {
   assert(typeof history === "object" && history !== null, `Invalid regional_history on ${tournamentId}`);
   assert(Array.isArray(history.team_summaries), `Invalid regional_history team_summaries on ${tournamentId}`);
@@ -744,6 +915,10 @@ export async function validateData() {
 
   if (dataset.bigFiveAsianCoaches !== null) {
     validateBigFiveAsianCoaches(dataset.bigFiveAsianCoaches);
+  }
+
+  if (dataset.asianCoaches !== null) {
+    validateAsianCoaches(dataset.asianCoaches);
   }
 
   return dataset;
