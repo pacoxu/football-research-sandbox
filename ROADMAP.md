@@ -1,12 +1,12 @@
 # Roadmap
 
-更新时间：2026-06-28
+更新时间：2026-07-11
 
 本路线图用于把项目后续工作从零散补数据，收敛成可排期、可验收、可拆 issue 的维护计划。详细覆盖状态见 `docs/coverage-matrix.md`，研究补采样本见 `research-collection-outline-2026-06-27.md`。
 
 ## 当前基线
 
-- 球员库：171 人。
+- 球员库：185 人。
 - 国家/地区：China PR、Japan、Korea Republic、Uzbekistan。
 - 主要页面数据：`data/site/players.json`、`data/site/overview.json`。
 - 主要维护入口：`data/raw/**`。
@@ -35,7 +35,7 @@
 | P4 | 亚洲其他国家 U17/U20/U23 对照组 | 澳大利亚、沙特、伊朗、卡塔尔、乌兹别克等核心样本池 | [#17](https://github.com/starryjog/football-research-sandbox/issues/17) |
 | P4 | FIFA 中国参赛档案 | 2002 世界杯和早期 U16/U20 世界赛中国队档案 | [#18](https://github.com/starryjog/football-research-sandbox/issues/18) |
 | P4 | AFC U 系列 `source_version` 字段 | 近期 3 届试点已记录 source version、source checked date、冲突说明和名称谱系；后续扩到余下历史届次 | [#19](https://github.com/starryjog/football-research-sandbox/issues/19) |
-| P4 | 五大联赛之外的亚洲教练扩展 | 欧洲非五大、AFC 国家队、J/K/中超/西亚联赛教练样本 | [#20](https://github.com/starryjog/football-research-sandbox/issues/20) |
+| P4 | 五大联赛之外的亚洲教练扩展 | 首批 5 名、10 段任期已落库；后续扩 J/K/中超/西亚样本与逐场战绩 | [#20](https://github.com/starryjog/football-research-sandbox/issues/20) |
 
 ## 数据模型方向
 

@@ -1,6 +1,6 @@
 # 数据校验脚本
 
-更新时间：2026-06-28
+更新时间：2026-07-11
 
 `scripts/validate-data.mjs` 是当前数据变更的第一道程序化检查。运行方式：
 
@@ -11,7 +11,7 @@ npm run validate-data
 成功时会输出类似：
 
 ```text
-Validated 171 players, 12 tournaments, 9 projects.
+Validated 185 players, 13 tournaments, 9 projects.
 ```
 
 ## 校验链路
@@ -56,6 +56,7 @@ flowchart LR
 - `tournament-archive` 必须有赛事 ID、名称、日期、来源链接、中国队比赛和关键球员数组；可选 `source_version`、`source_checked_at`、`source_conflict_note`、`competition_name_history` 如出现也会校验结构。
 - `china-men-youth-coaches` 校验队伍周期、教练、集训节点、staff 和来源链接。
 - `big-five-asian-coaches` 校验来源链接、scope count、教练战绩和 club records 加总。
+- `asian-coaches` 校验教练 ID、统计口径、任期范围、`role_scope`、`competition_scope`、官方来源类型、核查日期和可选战绩。
 
 ## 允许枚举
 

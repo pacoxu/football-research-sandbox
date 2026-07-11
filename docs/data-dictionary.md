@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-06-28
+更新时间：2026-07-11
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -13,6 +13,7 @@
 | `data/raw/tournament-archive.json` | 历史赛事、赛果、中国队档案和来源版本。 | 是 |
 | `data/raw/overseas-history.json` | 中日韩留洋历史、分层 bucket 和 featured records。 | 是 |
 | `data/raw/big-five-asian-coaches.json` | 五大联赛亚洲教练主表和边界说明。 | 是 |
+| `data/raw/asian-coaches.json` | 五大联赛之外的亚洲主教练实体、任期、范围和官方来源。 | 是 |
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | Transfermarkt 身价快照。 | 是，通常由脚本辅助刷新 |
@@ -141,6 +142,19 @@
 | `excluded_or_boundary_notes` | 排除项和边界样本说明。 |
 
 每名教练应说明 `association_confederation`、`counted_in`、`record_scope`、`top_flight_record`、`club_records`、`confidence` 和来源。
+
+`data/raw/asian-coaches.json` 单独维护五大联赛之外的扩展样本。一个教练实体可挂多个 `stints`，避免国家队和俱乐部经历重复建档。
+
+| 字段 | 含义 |
+| --- | --- |
+| `association`、`association_confederation` | 教练归属足协及洲足联，用于区分 AFC 主口径和 UEFA 地理边界项。 |
+| `counted_in` | 统计口径，例如 `afc_member_association`、`geographic_broad`。 |
+| `stints[].team_type` | `club`、`senior_national_team` 或 `youth_national_team`。 |
+| `stints[].role_scope` | 俱乐部一线队、成年国家队或青年国家队。 |
+| `stints[].competition_scope` | 欧洲非五大顶级联赛、AFC 成年/青年国家队、亚洲顶级联赛或 AFC 俱乐部赛事。 |
+| `stints[].period` | 结构化开始和结束月份；现任时 `end` 为 `null`。 |
+| `stints[].record` | 逐场战绩未核前允许为 `null`，任命事实不因缺战绩而阻塞。 |
+| `stints[].source_links`、`verification` | 官方来源类型、核查日期和事实说明。 |
 
 ## 生成字段
 
