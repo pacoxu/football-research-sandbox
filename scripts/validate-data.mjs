@@ -1231,6 +1231,92 @@ function validateRegionalHistory(history, tournamentId) {
   }
 }
 
+function validateUefaYouthLeague(topic, playerIds) {
+  assert(typeof topic === "object" && topic !== null, "Missing UEFA Youth League dataset");
+  assert(isIsoDate(topic.meta?.checked_at), "Invalid UEFA Youth League checked_at");
+  assert(Array.isArray(topic.seasons) && topic.seasons.length === 3, "UEFA Youth League must include three seasons");
+  assert(Array.isArray(topic.sources) && topic.sources.length > 0, "UEFA Youth League sources are required");
+
+  const sourceIds = new Set();
+  for (const source of topic.sources) {
+    assert(source.id && !sourceIds.has(source.id), `Duplicate UEFA Youth League source id: ${source.id}`);
+    assert(typeof source.label === "string" && source.label.length > 0, `Missing UEFA Youth League source label: ${source.id}`);
+    assert(/^https?:\/\//.test(source.url), `Invalid UEFA Youth League source URL: ${source.id}`);
+    sourceIds.add(source.id);
+  }
+
+  const validateSourceIds = (record, label) => {
+    assert(Array.isArray(record.source_ids) && record.source_ids.length > 0, `Missing source_ids on ${label}`);
+    for (const sourceId of record.source_ids) {
+      assert(sourceIds.has(sourceId), `Unknown UEFA Youth League source id "${sourceId}" on ${label}`);
+    }
+  };
+
+  validateSourceIds(topic.qualification, "qualification");
+  for (const path of topic.qualification.paths ?? []) {
+    validateSourceIds(path, `qualification:${path.id}`);
+  }
+  for (const rule of topic.player_eligibility?.rules ?? []) {
+    validateSourceIds(rule, `player_eligibility:${rule.id}`);
+  }
+
+  const seasonIds = new Set();
+  for (const season of topic.seasons) {
+    assert(season.id && !seasonIds.has(season.id), `Duplicate UEFA Youth League season: ${season.id}`);
+    seasonIds.add(season.id);
+    assert(Number.isInteger(season.entrant_count) && season.entrant_count > 0, `Invalid entrant_count on ${season.id}`);
+    const teams = Object.values(season.teams_by_path ?? {}).flat();
+    assert(teams.length === season.entrant_count, `Team count does not match entrant_count on ${season.id}`);
+    assert(new Set(teams).size === teams.length, `Duplicate team within UEFA Youth League season ${season.id}`);
+    assert(Array.isArray(season.knockout) && season.knockout.length === 7, `Expected seven quarter-final onward matches on ${season.id}`);
+    for (const match of season.knockout) {
+      assert(isIsoDate(match.date), `Invalid knockout date on ${season.id}`);
+      assert(match.home && match.away && match.score, `Incomplete knockout match on ${season.id}`);
+    }
+    for (const scorer of season.top_scorers ?? []) {
+      assert(Number.isInteger(scorer.goals) && scorer.goals >= 0, `Invalid top-scorer goals on ${season.id}`);
+    }
+    validateSourceIds(season, `season:${season.id}`);
+  }
+
+  const playerRecordIds = new Set();
+  for (const player of topic.cjk_players ?? []) {
+    assert(player.id && !playerRecordIds.has(player.id), `Duplicate UEFA Youth League player record: ${player.id}`);
+    playerRecordIds.add(player.id);
+    assert(seasonIds.has(player.season_id), `Unknown UEFA Youth League season on ${player.id}`);
+    assert(["CHN", "JPN", "KOR"].includes(player.country_code), `Invalid CJK nationality on ${player.id}`);
+    assert(["appeared", "registered-only"].includes(player.status), `Invalid participation status on ${player.id}`);
+    for (const field of ["appearances", "starts", "minutes", "goals", "assists"]) {
+      assert(Number.isInteger(player[field]) && player[field] >= 0, `Invalid ${field} on ${player.id}`);
+    }
+    assert(player.starts <= player.appearances, `Starts exceed appearances on ${player.id}`);
+    if (player.status === "registered-only") {
+      assert(player.appearances === 0 && player.minutes === 0, `Registered-only player has appearance statistics: ${player.id}`);
+    } else {
+      assert(player.appearances > 0, `Appeared player has no appearances: ${player.id}`);
+    }
+    if (player.player_id !== null) {
+      assert(playerIds.has(player.player_id), `Unknown linked player_id on ${player.id}`);
+    }
+    validateSourceIds(player, `cjk_player:${player.id}`);
+  }
+
+  for (const boundary of topic.boundary_watch ?? []) {
+    assert(boundary.status === "provisional" || boundary.status === "verified", `Invalid boundary status on ${boundary.id}`);
+    validateSourceIds(boundary, `boundary_watch:${boundary.id}`);
+  }
+
+  const spotlightCounts = new Map();
+  for (const spotlight of topic.other_player_spotlights ?? []) {
+    assert(seasonIds.has(spotlight.season_id), `Unknown spotlight season: ${spotlight.season_id}`);
+    spotlightCounts.set(spotlight.season_id, (spotlightCounts.get(spotlight.season_id) ?? 0) + 1);
+    validateSourceIds(spotlight, `spotlight:${spotlight.season_id}:${spotlight.name}`);
+  }
+  for (const [seasonId, count] of spotlightCounts) {
+    assert(count <= 12, `Too many non-CJK spotlights on ${seasonId}: ${count}`);
+  }
+}
+
 export async function validateData() {
   const dataset = await loadDataset();
   const playerIds = new Set();
@@ -1469,6 +1555,10 @@ export async function validateData() {
 
   if (dataset.asianCoaches !== null) {
     validateAsianCoaches(dataset.asianCoaches);
+  }
+
+  if (dataset.uefaYouthLeague !== null) {
+    validateUefaYouthLeague(dataset.uefaYouthLeague, playerIds);
   }
 
   return dataset;

@@ -8,7 +8,7 @@
       name="description"
       content="按国籍、年龄段、当前联赛或体系、标签筛选青训与青年球员样本。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260712-youth-systems-u20-archive" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-youth-league" />
   </head>
   <body data-page="players">
     <div class="site-shell">
@@ -86,6 +86,10 @@
               <span data-i18n="players.filters.tag">标签</span>
               <select id="playerTagFilter"></select>
             </label>
+            <label class="filter-item">
+              <span data-i18n="players.filters.sort">排序</span>
+              <select id="playerSortSelect"></select>
+            </label>
             <div class="filter-item filter-action-item">
               <span data-i18n="players.filters.actions">操作</span>
               <button id="playerResetButton" class="switch-button" type="button" data-i18n="players.filters.reset">重置筛选</button>
@@ -101,6 +105,7 @@
                   <th data-i18n="players.table.player">球员</th>
                   <th data-i18n="players.table.country">国籍</th>
                   <th data-i18n="players.table.age">年龄</th>
+                  <th data-i18n="players.table.marketValue">当前身价</th>
                   <th data-i18n="players.table.club">当前球队</th>
                   <th data-i18n="players.table.league">当前联赛 / 体系</th>
                   <th data-i18n="players.table.tag">标签</th>
@@ -120,6 +125,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260712-youth-systems-u20-archive"></script>
+    <script type="module" src="./assets/app.js?v=20260712-youth-league"></script>
   </body>
 </html>

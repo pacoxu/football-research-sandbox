@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>欧洲青年冠军联赛 | 青训球员追踪站</title>
+    <meta name="description" content="欧洲青年冠军联赛近三个赛季的资格、赛制、淘汰赛与中日韩球员专题。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-youth-league" />
+  </head>
+  <body data-page="youth-league">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero youth-league-hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="youthLeague.hero.eyebrow">UEFA Youth League</p>
+            <h1 data-i18n="youthLeague.hero.title">欧洲青年冠军联赛</h1>
+            <p class="hero-text" data-i18n="youthLeague.hero.text">近三个完整赛季的资格、赛制、淘汰赛，以及中日韩球员核验。</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#cjkPlayers" data-i18n="youthLeague.hero.cjkLink">查看中日韩球员</a>
+              <a class="secondary-link" href="./tournaments.html" data-i18n="youthLeague.hero.back">返回赛事列表</a>
+            </div>
+          </div>
+          <aside id="youthLeagueHeroStats" class="hero-spotlight"></aside>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head"><div><p class="eyebrow" data-i18n="youthLeague.qualification.eyebrow">Entry & eligibility</p><h2 data-i18n="youthLeague.qualification.title">如何参赛</h2></div></div>
+          <div id="youthLeagueQualification"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head"><div><p class="eyebrow" data-i18n="youthLeague.seasons.eyebrow">Three seasons</p><h2 data-i18n="youthLeague.seasons.title">近三季赛事情况</h2></div></div>
+          <div id="youthLeagueSeasonCards" class="youth-season-grid"></div>
+        </section>
+
+        <section id="cjkPlayers" class="content-panel">
+          <div class="section-head">
+            <div><p class="eyebrow" data-i18n="youthLeague.cjk.eyebrow">China · Japan · Korea</p><h2 data-i18n="youthLeague.cjk.title">中日韩球员</h2></div>
+            <p id="youthLeagueCjkMeta" class="section-note"></p>
+          </div>
+          <p class="section-note" data-i18n="youthLeague.cjk.note">主统计严格按 UEFA 官方国籍识别；双国籍或血缘关联只进入边界观察。</p>
+          <div id="youthLeagueFilters" class="youth-filter-bar"></div>
+          <div class="table-shell youth-player-table-shell"><table class="youth-player-table"><thead id="youthLeaguePlayerHead"></thead><tbody id="youthLeaguePlayerBody"></tbody></table></div>
+          <div id="youthLeaguePlayerEmpty" class="empty-state" hidden></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head"><div><p class="eyebrow" data-i18n="youthLeague.spotlights.eyebrow">Curated, not exhaustive</p><h2 data-i18n="youthLeague.spotlights.title">其他国家精选球员</h2></div></div>
+          <p class="section-note" data-i18n="youthLeague.spotlights.note">这里只收录最佳射手、决赛进球者和官方赛季回顾中的重点人物，不是完整球员名单。</p>
+          <div id="youthLeagueSpotlights" class="youth-spotlight-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head"><div><p class="eyebrow" data-i18n="youthLeague.sources.eyebrow">Source ledger</p><h2 data-i18n="youthLeague.sources.title">官方来源</h2></div></div>
+          <div id="youthLeagueSources" class="source-list"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer"><p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p></footer>
+    </div>
+    <script type="module" src="./assets/app.js?v=20260712-youth-league"></script>
+  </body>
+</html>
