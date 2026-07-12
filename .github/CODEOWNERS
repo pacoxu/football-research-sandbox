@@ -7,13 +7,16 @@
 
 # Script and page review.
 /scripts/ @starryjog
+/tests/ @starryjog
 /assets/ @starryjog
 /*.html @starryjog
+/package.json @starryjog
 
 # Documentation and project governance.
 /docs/ @starryjog
 /README.md @starryjog
 /CONTRIBUTING.md @starryjog
+/ROADMAP.md @starryjog
 /LICENSE @starryjog
 /SECURITY.md @starryjog
 /.github/ @starryjog

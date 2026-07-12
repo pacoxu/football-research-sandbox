@@ -1,8 +1,8 @@
 # 青训球员追踪站
 
 [![deploy-pages](https://github.com/starryjog/football-research-sandbox/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/starryjog/football-research-sandbox/actions/workflows/deploy-pages.yml)
-![data generated](https://img.shields.io/badge/data_generated-2026--07--11-blue)
-![validation](https://img.shields.io/badge/validation-npm%20run%20validate--data-informational)
+[![validate-data](https://github.com/starryjog/football-research-sandbox/actions/workflows/validate-data.yml/badge.svg)](https://github.com/starryjog/football-research-sandbox/actions/workflows/validate-data.yml)
+[![data generated](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fstarryjog%2Ffootball-research-sandbox%2Fmain%2Fdata%2Fsite%2Foverview.json&query=%24.generated_at&label=data%20generated&color=blue)](data/site/overview.json)
 ![scope](https://img.shields.io/badge/scope-research%20sample-lightgrey)
 
 当前状态：研究样本库，最近维护日期 `2026-07-12`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
@@ -14,8 +14,13 @@
 - 来源政策与冲突处理：[docs/source-policy.md](docs/source-policy.md)
 - 数据字典：[docs/data-dictionary.md](docs/data-dictionary.md)
 - 覆盖矩阵：[docs/coverage-matrix.md](docs/coverage-matrix.md)
+- 路线图：[ROADMAP.md](ROADMAP.md)
+- 审查所有权：[.github/CODEOWNERS](.github/CODEOWNERS)
+- 安全与隐私报告：[SECURITY.md](SECURITY.md)
 - 已知限制：[docs/known-limitations.md](docs/known-limitations.md)
 - 快照机制：[docs/snapshots.md](docs/snapshots.md)
+
+Issue 新增、数据纠错、来源失效、页面问题和口径讨论分别使用 `.github/ISSUE_TEMPLATE/**` 中的结构化模板。数据与脚本改动通过 PR 模板声明 raw 文件、来源、校验结果和口径影响。
 
 一个适合放到 GitHub Pages 的静态站点，用来维护青训球员名单、青训归属、赛事参与和外部资料链接。当前初始化版本重点放在：
 

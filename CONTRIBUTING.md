@@ -65,3 +65,11 @@ npm run sync-sqlite
 ## 隐私和风险
 
 项目涉及青年球员资料。不要加入非公开个人信息、联系方式、家庭住址、证件信息、私人社媒截图或无法公开验证的敏感材料。发现错误收录或敏感信息风险时，按 `SECURITY.md` 处理。
+
+## 协作、审查与发布
+
+- 新任务应选择数据新增、数据纠错、来源失效、页面问题或口径讨论模板，不使用无结构空白 issue。
+- PR 按 `.github/pull_request_template.md` 列出 raw 文件、生成文件、来源、校验和口径影响。
+- `.github/CODEOWNERS` 区分数据、脚本、页面和治理文档审查责任；跨层改动需要同时检查 raw、生成数据和页面影响。
+- `validate-data` workflow 会在 PR 和 `main` push 上运行 JavaScript 语法检查、数据校验、测试及生成物一致性检查。
+- 月度或赛事节点 release 按 `docs/snapshots.md` 创建；普通 PR 不手工提交 `.snapshot/**`、`storage/**` 或 `dist/**`。
