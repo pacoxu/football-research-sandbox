@@ -68,6 +68,7 @@ flowchart LR
 - `china-men-youth-coaches` 校验队伍周期、教练、集训节点、staff 和来源链接。
 - `big-five-asian-coaches` 校验来源链接、scope count、教练战绩和 club records 加总。
 - `asian-coaches` 校验教练 ID、统计口径、任期范围、`role_scope`、`competition_scope`、官方来源类型、核查日期和可选战绩。
+- `training-resources` 至少包含 20 项资源和 3 条学习路径；资源 ID、HTTPS 链接、中英文标题/摘要/使用提示、主题、年龄、语言、形式、访问条件与核查日期均需合法，学习路径只能引用已存在资源。
 
 ## 允许枚举
 

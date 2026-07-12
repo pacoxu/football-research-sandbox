@@ -2207,3 +2207,223 @@ tbody tr:last-child td {
     grid-column: 1 / -1;
   }
 }
+
+.training-resource-hero .hero-copy h1 {
+  max-width: 14ch;
+}
+
+.training-resource-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.training-resource-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 18px;
+  overflow: hidden;
+  border: 1px solid rgba(247, 255, 253, 0.18);
+  border-radius: var(--radius-lg);
+  background: rgba(247, 255, 253, 0.18);
+}
+
+.training-resource-metrics div {
+  display: grid;
+  gap: 5px;
+  padding: 16px;
+  background: rgba(7, 46, 43, 0.64);
+}
+
+.training-resource-metrics strong {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.training-resource-metrics span {
+  color: rgba(247, 255, 253, 0.72);
+  font-size: 0.8rem;
+}
+
+.training-path-grid,
+.training-resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.training-path-card,
+.training-resource-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface-strong);
+}
+
+.training-path-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(180px, 0.72fr);
+  gap: 18px;
+  padding: 18px;
+}
+
+.training-path-card h3,
+.training-resource-card h3 {
+  margin: 6px 0 10px;
+}
+
+.training-path-card p {
+  margin-bottom: 0;
+}
+
+.training-path-card ol {
+  display: grid;
+  align-content: start;
+  gap: 8px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.training-path-card a {
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+.training-resource-filter-bar {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.training-resource-filter-bar .filter-item {
+  display: grid;
+  gap: 7px;
+}
+
+.training-search-field {
+  grid-column: span 2;
+}
+
+.training-resource-filter-bar input,
+.training-resource-filter-bar select {
+  width: 100%;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--field);
+  color: var(--text);
+  font: inherit;
+}
+
+.training-filter-reset {
+  align-self: end;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+.training-resource-card {
+  display: flex;
+  flex-direction: column;
+  padding: 18px;
+  scroll-margin-top: 120px;
+}
+
+.training-resource-card:target {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.training-resource-card-topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.resource-provider-mark {
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 0 9px;
+  border-radius: var(--radius-sm);
+  color: #f7fffd;
+  background: var(--accent-deep);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.training-resource-provider {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+}
+
+.training-resource-use {
+  margin: 4px 0 14px;
+  padding: 12px 14px;
+  border-left: 3px solid var(--accent-alt);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  background: var(--accent-alt-soft);
+}
+
+.training-resource-use p {
+  margin: 4px 0 0;
+}
+
+.training-topic-row {
+  margin-top: auto;
+}
+
+.training-resource-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.training-resource-scope-panel {
+  border-left: 4px solid var(--accent-alt);
+}
+
+@media (max-width: 1000px) {
+  .training-resource-filter-bar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .training-search-field {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 800px) {
+  .training-path-grid,
+  .training-resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-path-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .training-resource-filter-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .training-search-field {
+    grid-column: span 1;
+  }
+
+  .training-resource-card-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

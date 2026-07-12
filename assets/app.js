@@ -33,6 +33,14 @@ const state = {
     view: "cards"
   },
   pathwaysCountry: "Japan",
+  trainingResourceFilters: {
+    query: "",
+    topic: "all",
+    age: "all",
+    provider: "all",
+    format: "all",
+    language: "all"
+  },
   tournamentFilters: {
     level: "all"
   },
@@ -67,6 +75,8 @@ const UI_COPY = {
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
     "page.pathways.title": "日韩青训体系 | 青训球员追踪站",
     "page.pathways.description": "理解日本学校足球与俱乐部 U18、韩国高中队与 K League 梯队的并行关系。",
+    "page.training-resources.title": "青训教学资源 | 青训球员追踪站",
+    "page.training-resources.description": "集中检索中国足协、FIFA、AFC、UEFA及各国足协发布的青少年足球教学材料、训练课和教练课程。",
     "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
     "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
     "site.kicker": "青训追踪台",
@@ -77,6 +87,7 @@ const UI_COPY = {
     "nav.tournaments": "赛事",
     "nav.overseas": "留洋",
     "nav.pathways": "日韩青训体系",
+    "nav.trainingResources": "教学资源",
     "header.language": "语言",
     "common.loading": "加载中",
     "common.loadingData": "数据载入中",
@@ -112,6 +123,8 @@ const UI_COPY = {
     "home.quickLinks.overseasText": "区分当前留洋样本与历史记录。",
     "home.quickLinks.genbaoTitle": "根宝足球基地",
     "home.quickLinks.genbaoText": "按代际查看基地代表球员、培养路径与当前状态。",
+    "home.quickLinks.trainingTitle": "青训教学资源",
+    "home.quickLinks.trainingText": "集中检索官方训练大纲、课例、教练课程与儿童保护资料。",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "留洋概览",
     "home.overseasSummary.link": "查看留洋",
@@ -262,6 +275,43 @@ const UI_COPY = {
     "pathways.viewPlayers": "查看本站样本（{count}）",
     "pathways.noPlayers": "当前无关联样本",
     "pathways.sourceChecked": "最后核查：{date}",
+    "trainingResources.hero.eyebrow": "Coach Learning Desk",
+    "trainingResources.hero.title": "青训教学资源",
+    "trainingResources.hero.text": "把训练大纲、现成课例、教练课程、守门员训练、运动能力和儿童保护资料集中到一个可筛选界面。",
+    "trainingResources.summary.eyebrow": "官方来源优先",
+    "trainingResources.summary.resources": "项资源",
+    "trainingResources.summary.providers": "个发布方",
+    "trainingResources.summary.checked": "资源核查至 {date}",
+    "trainingResources.paths.eyebrow": "Learning Paths",
+    "trainingResources.paths.title": "按使用场景快速起步",
+    "trainingResources.paths.count": "{count} 项推荐",
+    "trainingResources.directory.eyebrow": "Resource Directory",
+    "trainingResources.directory.title": "教学素材目录",
+    "trainingResources.filters.search": "搜索",
+    "trainingResources.filters.searchPlaceholder": "主题、发布方、标题或使用提示",
+    "trainingResources.filters.topic": "主题",
+    "trainingResources.filters.age": "年龄 / 对象",
+    "trainingResources.filters.provider": "发布方",
+    "trainingResources.filters.format": "形式",
+    "trainingResources.filters.language": "语言",
+    "trainingResources.filters.allTopics": "全部主题",
+    "trainingResources.filters.allAges": "全部年龄 / 对象",
+    "trainingResources.filters.allProviders": "全部发布方",
+    "trainingResources.filters.allFormats": "全部形式",
+    "trainingResources.filters.allLanguages": "全部语言",
+    "trainingResources.filters.reset": "重置筛选",
+    "trainingResources.meta": "当前显示 {count} / {total} 项",
+    "trainingResources.empty": "当前筛选条件下没有匹配资源。",
+    "trainingResources.card.howToUse": "怎么用",
+    "trainingResources.card.open": "打开官方资料",
+    "trainingResources.card.checked": "核查：{date}",
+    "trainingResources.card.free": "免费公开",
+    "trainingResources.card.freeRegistration": "免费注册",
+    "trainingResources.scope.eyebrow": "Scope & Safety",
+    "trainingResources.scope.title": "使用边界",
+    "trainingResources.scope.itemOne": "训练课必须根据人数、场地、能力和生长发育情况调整。",
+    "trainingResources.scope.itemTwo": "体能、伤病和复训安排应由具备相应资质的专业人员把关。",
+    "trainingResources.scope.itemThree": "任何未成年人训练都应先落实儿童保护、风险评估和报告机制。",
     "dossier.breadcrumb.home": "首页",
     "dossier.breadcrumb.detail": "青训专题",
     "dossier.hero.eyebrow": "Academy Dossier",
@@ -568,6 +618,8 @@ const UI_COPY = {
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
     "page.pathways.title": "Japan and Korea Youth Systems | Youth Player Tracking Desk",
     "page.pathways.description": "Understand parallel school, club-academy, university, and professional pathways in Japan and South Korea.",
+    "page.training-resources.title": "Youth Training Resources | Youth Player Tracking Desk",
+    "page.training-resources.description": "Search official youth-football teaching guides, session libraries and coach courses from the CFA, FIFA, AFC, UEFA and national associations.",
     "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
     "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
     "site.kicker": "Youth Tracking Desk",
@@ -578,6 +630,7 @@ const UI_COPY = {
     "nav.tournaments": "Tournaments",
     "nav.overseas": "Overseas",
     "nav.pathways": "Youth Systems",
+    "nav.trainingResources": "Teaching Resources",
     "header.language": "Language",
     "common.loading": "Loading",
     "common.loadingData": "Loading data",
@@ -613,6 +666,8 @@ const UI_COPY = {
     "home.quickLinks.overseasText": "Separate current overseas samples from historical records.",
     "home.quickLinks.genbaoTitle": "Genbao Football Base",
     "home.quickLinks.genbaoText": "Browse representative generations, pathways and current status.",
+    "home.quickLinks.trainingTitle": "Youth teaching resources",
+    "home.quickLinks.trainingText": "Search official curricula, sessions, coach courses and safeguarding material in one place.",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "Overseas overview",
     "home.overseasSummary.link": "View overseas",
@@ -763,6 +818,43 @@ const UI_COPY = {
     "pathways.viewPlayers": "View site samples ({count})",
     "pathways.noPlayers": "No linked samples yet",
     "pathways.sourceChecked": "Last checked: {date}",
+    "trainingResources.hero.eyebrow": "Coach Learning Desk",
+    "trainingResources.hero.title": "Youth training resources",
+    "trainingResources.hero.text": "One filterable desk for curricula, ready-made sessions, coach courses, goalkeeping, athleticism and safeguarding material.",
+    "trainingResources.summary.eyebrow": "Official-first",
+    "trainingResources.summary.resources": "resources",
+    "trainingResources.summary.providers": "publishers",
+    "trainingResources.summary.checked": "Resources checked through {date}",
+    "trainingResources.paths.eyebrow": "Learning Paths",
+    "trainingResources.paths.title": "Start from your coaching context",
+    "trainingResources.paths.count": "{count} recommendations",
+    "trainingResources.directory.eyebrow": "Resource Directory",
+    "trainingResources.directory.title": "Teaching-material directory",
+    "trainingResources.filters.search": "Search",
+    "trainingResources.filters.searchPlaceholder": "Topic, publisher, title or use guidance",
+    "trainingResources.filters.topic": "Topic",
+    "trainingResources.filters.age": "Age / audience",
+    "trainingResources.filters.provider": "Publisher",
+    "trainingResources.filters.format": "Format",
+    "trainingResources.filters.language": "Language",
+    "trainingResources.filters.allTopics": "All topics",
+    "trainingResources.filters.allAges": "All ages / audiences",
+    "trainingResources.filters.allProviders": "All publishers",
+    "trainingResources.filters.allFormats": "All formats",
+    "trainingResources.filters.allLanguages": "All languages",
+    "trainingResources.filters.reset": "Reset filters",
+    "trainingResources.meta": "Showing {count} / {total}",
+    "trainingResources.empty": "No resources match the current filters.",
+    "trainingResources.card.howToUse": "How to use it",
+    "trainingResources.card.open": "Open official material",
+    "trainingResources.card.checked": "Checked: {date}",
+    "trainingResources.card.free": "Free access",
+    "trainingResources.card.freeRegistration": "Free registration",
+    "trainingResources.scope.eyebrow": "Scope & Safety",
+    "trainingResources.scope.title": "Use boundaries",
+    "trainingResources.scope.itemOne": "Adapt every session for player numbers, space, ability and maturation.",
+    "trainingResources.scope.itemTwo": "Qualified practitioners should oversee physical loading, injury and return-to-play decisions.",
+    "trainingResources.scope.itemThree": "Every activity with minors requires safeguarding, risk assessment and reporting procedures.",
     "dossier.breadcrumb.home": "Home",
     "dossier.breadcrumb.detail": "Academy dossier",
     "dossier.hero.eyebrow": "Academy Dossier",
@@ -1183,6 +1275,10 @@ const PAGE_METADATA = {
   },
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
+  "training-resources": {
+    title: "page.training-resources.title",
+    description: "page.training-resources.description"
+  },
   "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" }
 };
 
@@ -1623,6 +1719,12 @@ async function boot() {
     if (page === "pathways") {
       initializePathwaysPage();
       renderPathwaysPage();
+      return;
+    }
+
+    if (page === "training-resources") {
+      initializeTrainingResourcesPage();
+      renderTrainingResourcesPage();
     }
   } catch (error) {
     console.error(error);
@@ -5581,6 +5683,359 @@ function renderPathwaysPage() {
 
   const hashTarget = window.location.hash ? document.getElementById(decodeURIComponent(window.location.hash.slice(1))) : null;
   hashTarget?.scrollIntoView({ block: "center" });
+}
+
+const TRAINING_RESOURCE_TOPIC_LABELS = {
+  zh: {
+    grassroots: "基层足球",
+    "session-design": "训练设计",
+    technical: "技术",
+    tactical: "战术",
+    physical: "运动能力",
+    goalkeeping: "守门员",
+    "long-term-development": "长期发展",
+    assessment: "测试评估",
+    "talent-identification": "人才识别",
+    "school-football": "校园足球",
+    "inclusive-coaching": "包容性执教",
+    "game-based-learning": "比赛化学习",
+    "talent-development": "精英人才发展",
+    "position-specific": "位置专项",
+    movement: "动作能力",
+    "injury-risk-reduction": "伤病风险降低",
+    "growth-maturation": "生长发育",
+    safeguarding: "儿童保护",
+    "academy-management": "青训管理",
+    "coach-behaviour": "教练行为",
+    "life-skills": "生活技能",
+    "coach-education": "教练教育",
+    "elite-youth": "精英青训",
+    education: "文化教育",
+    medical: "医疗保障",
+    "player-development": "球员发展",
+    reflection: "复盘反思"
+  },
+  en: {
+    grassroots: "Grassroots",
+    "session-design": "Session design",
+    technical: "Technical",
+    tactical: "Tactical",
+    physical: "Athleticism",
+    goalkeeping: "Goalkeeping",
+    "long-term-development": "Long-term development",
+    assessment: "Assessment",
+    "talent-identification": "Talent identification",
+    "school-football": "School football",
+    "inclusive-coaching": "Inclusive coaching",
+    "game-based-learning": "Game-based learning",
+    "talent-development": "Talent development",
+    "position-specific": "Position-specific",
+    movement: "Movement",
+    "injury-risk-reduction": "Injury-risk reduction",
+    "growth-maturation": "Growth and maturation",
+    safeguarding: "Safeguarding",
+    "academy-management": "Academy management",
+    "coach-behaviour": "Coach behaviour",
+    "life-skills": "Life skills",
+    "coach-education": "Coach education",
+    "elite-youth": "Elite youth",
+    education: "Education",
+    medical: "Medical support",
+    "player-development": "Player development",
+    reflection: "Reflection"
+  }
+};
+
+const TRAINING_RESOURCE_AGE_LABELS = {
+  zh: {
+    u5: "U5",
+    "u6-u12": "U6–U12",
+    "u13-u16": "U13–U16",
+    "u17-u21": "U17–U21",
+    "4-8": "4–8岁",
+    "8-12": "8–12岁",
+    "12-15": "12–15岁",
+    "12-16": "12–16岁",
+    "all-youth": "全部青少年",
+    "elite-youth": "精英青训",
+    "school-age": "学龄阶段",
+    children: "儿童",
+    grassroots: "基层青少年",
+    youth: "青少年",
+    "coach-education": "教练 / 工作人员"
+  },
+  en: {
+    u5: "U5",
+    "u6-u12": "U6–U12",
+    "u13-u16": "U13–U16",
+    "u17-u21": "U17–U21",
+    "4-8": "Ages 4–8",
+    "8-12": "Ages 8–12",
+    "12-15": "Ages 12–15",
+    "12-16": "Ages 12–16",
+    "all-youth": "All youth",
+    "elite-youth": "Elite youth",
+    "school-age": "School age",
+    children: "Children",
+    grassroots: "Grassroots youth",
+    youth: "Youth",
+    "coach-education": "Coaches / staff"
+  }
+};
+
+const TRAINING_RESOURCE_FORMAT_LABELS = {
+  zh: {
+    web: "网页",
+    pdf: "PDF",
+    video: "视频",
+    download: "附件下载",
+    "downloadable-plan": "可下载课案",
+    "online-course": "在线课程",
+    "activity-diagrams": "练习图",
+    "exercise-diagrams": "动作图",
+    activities: "实践活动"
+  },
+  en: {
+    web: "Web",
+    pdf: "PDF",
+    video: "Video",
+    download: "Download",
+    "downloadable-plan": "Downloadable plan",
+    "online-course": "Online course",
+    "activity-diagrams": "Activity diagrams",
+    "exercise-diagrams": "Exercise diagrams",
+    activities: "Activities"
+  }
+};
+
+const TRAINING_RESOURCE_TYPE_LABELS = {
+  zh: {
+    manual: "训练手册",
+    "assessment-toolkit": "测试工具",
+    "teaching-guide": "教学指南",
+    "session-library": "训练课库",
+    methodology: "训练方法",
+    "practice-library": "练习库",
+    "video-series": "视频系列",
+    "online-course": "在线课程",
+    "qualification-framework": "教练资格框架",
+    "programme-framework": "青训计划框架",
+    article: "教学文章",
+    toolkit: "工具包",
+    curriculum: "课程体系"
+  },
+  en: {
+    manual: "Manual",
+    "assessment-toolkit": "Assessment toolkit",
+    "teaching-guide": "Teaching guide",
+    "session-library": "Session library",
+    methodology: "Methodology",
+    "practice-library": "Practice library",
+    "video-series": "Video series",
+    "online-course": "Online course",
+    "qualification-framework": "Qualification framework",
+    "programme-framework": "Programme framework",
+    article: "Article",
+    toolkit: "Toolkit",
+    curriculum: "Curriculum"
+  }
+};
+
+const TRAINING_RESOURCE_LANGUAGE_LABELS = {
+  zh: { zh: "中文", en: "英语", fr: "法语", es: "西班牙语", pt: "葡萄牙语", ar: "阿拉伯语" },
+  en: { zh: "Chinese", en: "English", fr: "French", es: "Spanish", pt: "Portuguese", ar: "Arabic" }
+};
+
+function getTrainingResourcesPayload() {
+  return state.overview?.training_resources ?? {
+    checked_at: null,
+    scope: { zh: "", en: "" },
+    featured_paths: [],
+    resources: []
+  };
+}
+
+function getTrainingLabel(map, value) {
+  return map[state.language]?.[value] ?? map.zh?.[value] ?? value;
+}
+
+function getTrainingResourceOptions(resources, field, labelMap = null) {
+  const values = [...new Set(resources.flatMap((resource) => resource[field] ?? []))];
+  return values
+    .map((value) => ({ value, label: labelMap ? getTrainingLabel(labelMap, value) : value }))
+    .sort((left, right) => left.label.localeCompare(right.label, getSortLocale()));
+}
+
+function syncTrainingResourceQuery() {
+  replaceQueryParams({
+    query: state.trainingResourceFilters.query,
+    topic: state.trainingResourceFilters.topic,
+    age: state.trainingResourceFilters.age,
+    provider: state.trainingResourceFilters.provider,
+    format: state.trainingResourceFilters.format,
+    language: state.trainingResourceFilters.language
+  });
+}
+
+function initializeTrainingResourcesPage() {
+  const resources = getTrainingResourcesPayload().resources ?? [];
+  const topicOptions = getTrainingResourceOptions(resources, "topics", TRAINING_RESOURCE_TOPIC_LABELS);
+  const ageOptions = getTrainingResourceOptions(resources, "age_groups", TRAINING_RESOURCE_AGE_LABELS);
+  const formatOptions = getTrainingResourceOptions(resources, "formats", TRAINING_RESOURCE_FORMAT_LABELS);
+  const languageOptions = getTrainingResourceOptions(resources, "languages", TRAINING_RESOURCE_LANGUAGE_LABELS);
+  const providerOptions = [...new Set(resources.map((resource) => resource.provider_short))]
+    .sort((left, right) => left.localeCompare(right, getSortLocale()))
+    .map((value) => ({ value, label: value }));
+  const params = new URLSearchParams(window.location.search);
+
+  state.trainingResourceFilters.query = params.get("query")?.trim() ?? "";
+  state.trainingResourceFilters.topic = normalizeFilterValue(params.get("topic") ?? "all", topicOptions);
+  state.trainingResourceFilters.age = normalizeFilterValue(params.get("age") ?? "all", ageOptions);
+  state.trainingResourceFilters.provider = normalizeFilterValue(params.get("provider") ?? "all", providerOptions);
+  state.trainingResourceFilters.format = normalizeFilterValue(params.get("format") ?? "all", formatOptions);
+  state.trainingResourceFilters.language = normalizeFilterValue(params.get("language") ?? "all", languageOptions);
+
+  buildOptions(document.querySelector("#trainingResourceTopic"), topicOptions, state.trainingResourceFilters.topic, t("trainingResources.filters.allTopics"));
+  buildOptions(document.querySelector("#trainingResourceAge"), ageOptions, state.trainingResourceFilters.age, t("trainingResources.filters.allAges"));
+  buildOptions(document.querySelector("#trainingResourceProvider"), providerOptions, state.trainingResourceFilters.provider, t("trainingResources.filters.allProviders"));
+  buildOptions(document.querySelector("#trainingResourceFormat"), formatOptions, state.trainingResourceFilters.format, t("trainingResources.filters.allFormats"));
+  buildOptions(document.querySelector("#trainingResourceLanguage"), languageOptions, state.trainingResourceFilters.language, t("trainingResources.filters.allLanguages"));
+  setControlValue("#trainingResourceSearch", state.trainingResourceFilters.query);
+
+  document.querySelector("#trainingResourceSearch")?.addEventListener("input", (event) => {
+    state.trainingResourceFilters.query = event.target.value.trim();
+    syncTrainingResourceQuery();
+    renderTrainingResourceDirectory();
+  });
+  for (const [selector, key] of [
+    ["#trainingResourceTopic", "topic"],
+    ["#trainingResourceAge", "age"],
+    ["#trainingResourceProvider", "provider"],
+    ["#trainingResourceFormat", "format"],
+    ["#trainingResourceLanguage", "language"]
+  ]) {
+    document.querySelector(selector)?.addEventListener("change", (event) => {
+      state.trainingResourceFilters[key] = event.target.value;
+      syncTrainingResourceQuery();
+      renderTrainingResourceDirectory();
+    });
+  }
+  document.querySelector("#trainingResourceReset")?.addEventListener("click", () => {
+    state.trainingResourceFilters = { query: "", topic: "all", age: "all", provider: "all", format: "all", language: "all" };
+    setControlValue("#trainingResourceSearch", "");
+    setControlValue("#trainingResourceTopic", "all");
+    setControlValue("#trainingResourceAge", "all");
+    setControlValue("#trainingResourceProvider", "all");
+    setControlValue("#trainingResourceFormat", "all");
+    setControlValue("#trainingResourceLanguage", "all");
+    syncTrainingResourceQuery();
+    renderTrainingResourceDirectory();
+  });
+}
+
+function getFilteredTrainingResources() {
+  const filters = state.trainingResourceFilters;
+  const query = filters.query.toLocaleLowerCase(getSortLocale());
+  return (getTrainingResourcesPayload().resources ?? []).filter((resource) => {
+    if (filters.topic !== "all" && !resource.topics.includes(filters.topic)) return false;
+    if (filters.age !== "all" && !resource.age_groups.includes(filters.age)) return false;
+    if (filters.provider !== "all" && resource.provider_short !== filters.provider) return false;
+    if (filters.format !== "all" && !resource.formats.includes(filters.format)) return false;
+    if (filters.language !== "all" && !resource.languages.includes(filters.language)) return false;
+    if (!query) return true;
+    const searchBlob = [
+      resource.provider,
+      resource.provider_short,
+      resource.title.zh,
+      resource.title.en,
+      resource.summary.zh,
+      resource.summary.en,
+      resource.how_to_use.zh,
+      resource.how_to_use.en,
+      ...resource.topics.map((topic) => getTrainingLabel(TRAINING_RESOURCE_TOPIC_LABELS, topic)),
+      ...resource.age_groups.map((age) => getTrainingLabel(TRAINING_RESOURCE_AGE_LABELS, age))
+    ]
+      .join(" ")
+      .toLocaleLowerCase(getSortLocale());
+    return searchBlob.includes(query);
+  });
+}
+
+function renderTrainingResourceCard(resource) {
+  const accessLabel = resource.access === "free-registration"
+    ? t("trainingResources.card.freeRegistration")
+    : t("trainingResources.card.free");
+  return `
+    <article id="${escapeHtml(resource.id)}" class="training-resource-card">
+      <div class="training-resource-card-topline">
+        <span class="resource-provider-mark">${escapeHtml(resource.provider_short)}</span>
+        <span class="chip">${escapeHtml(getTrainingLabel(TRAINING_RESOURCE_TYPE_LABELS, resource.resource_type))}</span>
+        <span class="chip muted-chip">${escapeHtml(accessLabel)}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(resource.title))}</h3>
+      <p class="training-resource-provider">${escapeHtml(resource.provider)}</p>
+      <p>${escapeHtml(localizeText(resource.summary))}</p>
+      <div class="training-resource-use">
+        <strong>${escapeHtml(t("trainingResources.card.howToUse"))}</strong>
+        <p>${escapeHtml(localizeText(resource.how_to_use))}</p>
+      </div>
+      <div class="chip-row training-topic-row">
+        ${resource.topics.slice(0, 4).map((topic) => `<span class="chip">${escapeHtml(getTrainingLabel(TRAINING_RESOURCE_TOPIC_LABELS, topic))}</span>`).join("")}
+      </div>
+      <p class="small-note">${escapeHtml(resource.age_groups.map((age) => getTrainingLabel(TRAINING_RESOURCE_AGE_LABELS, age)).join(" · "))}</p>
+      <p class="small-note">${escapeHtml(resource.formats.map((format) => getTrainingLabel(TRAINING_RESOURCE_FORMAT_LABELS, format)).join(" · "))} · ${escapeHtml(resource.languages.map((language) => getTrainingLabel(TRAINING_RESOURCE_LANGUAGE_LABELS, language)).join(" / "))}</p>
+      <div class="training-resource-card-actions">
+        <a class="primary-link primary-link-inline" href="${escapeHtml(resource.url)}" target="_blank" rel="noreferrer">${escapeHtml(t("trainingResources.card.open"))}</a>
+        <span class="small-note">${escapeHtml(t("trainingResources.card.checked", { date: formatDate(resource.checked_at) }))}</span>
+      </div>
+    </article>
+  `;
+}
+
+function renderTrainingResourceDirectory() {
+  const payload = getTrainingResourcesPayload();
+  const resources = getFilteredTrainingResources();
+  const grid = document.querySelector("#trainingResourceGrid");
+  const meta = document.querySelector("#trainingResourceMeta");
+  const empty = document.querySelector("#trainingResourceEmpty");
+  if (!grid || !meta || !empty) return;
+  grid.innerHTML = resources.map(renderTrainingResourceCard).join("");
+  meta.textContent = t("trainingResources.meta", { count: resources.length, total: payload.resources.length });
+  empty.hidden = resources.length > 0;
+}
+
+function renderTrainingResourcesPage() {
+  const payload = getTrainingResourcesPayload();
+  const resourcesById = new Map(payload.resources.map((resource) => [resource.id, resource]));
+  const pathGrid = document.querySelector("#trainingResourcePaths");
+  const resourceCount = document.querySelector("#trainingResourceCount");
+  const providerCount = document.querySelector("#trainingProviderCount");
+  const checkedAt = document.querySelector("#trainingResourceCheckedAt");
+  const scope = document.querySelector("#trainingResourceScope");
+  if (!pathGrid || !resourceCount || !providerCount || !checkedAt || !scope) return;
+
+  resourceCount.textContent = String(payload.resources.length);
+  providerCount.textContent = String(new Set(payload.resources.map((resource) => resource.provider_short)).size);
+  checkedAt.textContent = t("trainingResources.summary.checked", { date: formatDate(payload.checked_at) });
+  scope.textContent = localizeText(payload.scope);
+  pathGrid.innerHTML = payload.featured_paths
+    .map((path) => `
+      <article class="training-path-card">
+        <div>
+          <p class="eyebrow">${escapeHtml(t("trainingResources.paths.count", { count: path.resource_ids.length }))}</p>
+          <h3>${escapeHtml(localizeText(path.label))}</h3>
+          <p>${escapeHtml(localizeText(path.description))}</p>
+        </div>
+        <ol>
+          ${path.resource_ids.map((resourceId) => {
+            const resource = resourcesById.get(resourceId);
+            return resource ? `<li><a href="#${escapeHtml(resource.id)}">${escapeHtml(localizeText(resource.title))}</a></li>` : "";
+          }).join("")}
+        </ol>
+      </article>
+    `)
+    .join("");
+  renderTrainingResourceDirectory();
 }
 
 function initializeTournamentFilters() {

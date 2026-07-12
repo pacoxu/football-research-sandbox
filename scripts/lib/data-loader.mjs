@@ -249,6 +249,10 @@ export async function loadDataset() {
     path.join(paths.raw, "youth-development-systems.json"),
     { schema_version: 1, checked_at: null, systems: [] }
   );
+  const trainingResources = await readOptionalJson(
+    path.join(paths.raw, "training-resources.json"),
+    { schema_version: 1, checked_at: null, featured_paths: [], resources: [] }
+  );
 
   return {
     players,
@@ -262,6 +266,7 @@ export async function loadDataset() {
     bigFiveAsianCoaches,
     asianCoaches,
     youthDevelopmentSystems,
+    trainingResources,
     clubNameOverrides
   };
 }

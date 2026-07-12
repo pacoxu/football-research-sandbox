@@ -40,6 +40,7 @@ export async function buildSiteData() {
     big_five_asian_coaches: dataset.bigFiveAsianCoaches,
     asian_coaches: dataset.asianCoaches,
     youth_development_systems: dataset.youthDevelopmentSystems,
+    training_resources: dataset.trainingResources,
     club_name_overrides: dataset.clubNameOverrides
   };
 

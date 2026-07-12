@@ -62,6 +62,7 @@ python3 -m http.server 4173
 │   ├── raw/                 # 手工维护的数据源
 │   │   ├── players/         # 按年龄段分组的球员 JSON
 │   │   ├── youth-development-systems.json # 日韩青训体系与赛事关系
+│   │   ├── training-resources.json # 官方青训教学资源、课程与训练课索引
 │   │   ├── overseas-history.json
 │   │   ├── projects.json
 │   │   └── tournaments.json
@@ -78,6 +79,7 @@ python3 -m http.server 4173
 - 每条球员记录至少带上 `birth_date`、`registration_club`、`training_pathway`、`tournament_participation`、`external_links`。
 - `registration_club.organization_type` 区分高中、俱乐部梯队、大学、职业队、成年军队球队和海外梯队；韩国合作高中不能覆盖母俱乐部字段。
 - `data/raw/youth-development-systems.json` 维护日韩稳定体系结构，年度队数和赛季说明只放在 `annual_snapshot`。
+- `data/raw/training-resources.json` 维护官方青训教学资源目录，包含主题、年龄、形式、访问条件、使用提示和核查日期；只链接原始资料，不复制受版权保护的全文。
 - `data/raw/dossiers.json` 的 `genbao-football-base` 记录根宝基地代际、代表球员、当前状态、可信度和现状来源；无法确认的当前去向必须标记为待复核。
 - 若外部资料存在冲突，以 `verification.status` 和 `verification.notes` 标记，而不是直接覆盖。
 - `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、美洲其他四个层级。
@@ -108,6 +110,7 @@ python3 -m http.server 4173
 - 中超 2026 青年样本：已开始补当前一线队 U21 和具备留洋经历的 U23，中国球员若已在库内建档则直接补中超/留洋字段，不重复建第二条。
 - 乌兹别克斯坦 U17：保留 2026 赛事关键球员样本，作为东亚三队对照组。
 - 董路足球小将：已补专题卡片、公开批次主干和录入规范，下一步继续拆逐名档案。
+- 青训教学资源：集中收录中国足协、教育部、FIFA、AFC、UEFA及各国足协的训练大纲、课例、教练课程、守门员、运动能力和儿童保护资料，并提供统一筛选页面。
 
 ## 已知限制
 

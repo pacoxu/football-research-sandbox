@@ -27673,6 +27673,961 @@
       }
     ]
   },
+  "training_resources": {
+    "schema_version": 1,
+    "checked_at": "2026-07-12",
+    "scope": {
+      "zh": "优先收录足协、洲际足联、FIFA、教育主管部门等官方发布的青少年足球教学材料。页面提供检索入口和使用提示，不转载受版权保护的全文，也不替代持证教练培训、医疗建议或儿童保护制度。",
+      "en": "Priority is given to youth-football teaching material published by football associations, confederations, FIFA and public education bodies. This directory links to the original material and does not reproduce copyrighted works or replace licensed coach education, medical advice or safeguarding policy."
+    },
+    "featured_paths": [
+      {
+        "id": "grassroots-starter",
+        "label": {
+          "zh": "基层教练起步",
+          "en": "Grassroots starter"
+        },
+        "description": {
+          "zh": "先理解以儿童为中心和比赛化学习，再用现成课例完成第一批训练计划。",
+          "en": "Start with child-centred, game-based learning and then build initial sessions from ready-to-use examples."
+        },
+        "resource_ids": [
+          "fifa-grassroots-hub",
+          "fifa-play-practice-play",
+          "england-training-planning",
+          "fifa-guardians"
+        ]
+      },
+      {
+        "id": "china-coach-desk",
+        "label": {
+          "zh": "中国教练资料桌",
+          "en": "China coach desk"
+        },
+        "description": {
+          "zh": "从中国足协年龄阶段大纲出发，结合校园足球教学与运动能力测试建立本土训练框架。",
+          "en": "Combine the CFA age-stage syllabus, school-football guidance and athletic testing manual into a local planning framework."
+        },
+        "resource_ids": [
+          "cfa-youth-training-syllabus",
+          "moe-campus-football-guide",
+          "cfa-athletic-testing-2026"
+        ]
+      },
+      {
+        "id": "academy-development",
+        "label": {
+          "zh": "精英青训进阶",
+          "en": "Academy development"
+        },
+        "description": {
+          "zh": "用于学院教练设计长期发展、位置专项、身体发展和人才识别流程。",
+          "en": "For academy coaches designing long-term development, position work, athleticism and talent identification."
+        },
+        "resource_ids": [
+          "fifa-talent-development",
+          "fifa-young-athleticism",
+          "fifa-talent-identification-guide",
+          "afc-elite-youth-b-framework"
+        ]
+      },
+      {
+        "id": "club-governance",
+        "label": {
+          "zh": "青训主管与制度",
+          "en": "Academy leadership"
+        },
+        "description": {
+          "zh": "把训练、教练资格、医疗、教育和儿童保护纳入同一份青训计划。",
+          "en": "Bring coaching, qualifications, medical care, education and safeguarding into one youth programme."
+        },
+        "resource_ids": [
+          "uefa-youth-development-programme",
+          "uefa-coach-education-overview",
+          "afc-coach-education-hub",
+          "fifa-guardians"
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "id": "cfa-youth-training-syllabus",
+        "title": {
+          "zh": "《中国足球协会青少年训练大纲》",
+          "en": "CFA Youth Training Syllabus"
+        },
+        "provider": "中国足球协会",
+        "provider_short": "CFA",
+        "url": "https://www.thecfa.cn/qsn/20201126/29099.html",
+        "resource_type": "manual",
+        "topics": [
+          "long-term-development",
+          "session-design",
+          "technical",
+          "tactical",
+          "physical",
+          "goalkeeping"
+        ],
+        "age_groups": [
+          "u5",
+          "u6-u12",
+          "u13-u16",
+          "u17-u21"
+        ],
+        "languages": [
+          "zh"
+        ],
+        "formats": [
+          "web",
+          "pdf"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "中国足协官方年龄阶段训练框架，覆盖启蒙、基础、发展和提高过渡四阶段，并单列守门员、体能、女足青训和比赛四个主要时刻。",
+          "en": "The CFA's official age-stage framework covering initiation, foundation, development and transition, with dedicated goalkeeper, fitness and women's-football sections."
+        },
+        "how_to_use": {
+          "zh": "先按球队年龄阅读对应阶段的身心特点、能力目标和训练重点，再把单次训练放入季度或年度计划。",
+          "en": "Start with the relevant age-stage outcomes, then place individual sessions inside a quarterly or annual plan."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "cfa-athletic-testing-2026",
+        "title": {
+          "zh": "青少年足球运动员运动能力测试指导手册（2026版）",
+          "en": "Youth Football Athletic Testing Manual 2026"
+        },
+        "provider": "中国足球协会 / 国家体育总局体育科学研究所",
+        "provider_short": "CFA",
+        "url": "https://www.thecfa.cn/qsnstsc/index.html",
+        "resource_type": "assessment-toolkit",
+        "topics": [
+          "physical",
+          "assessment",
+          "talent-identification"
+        ],
+        "age_groups": [
+          "all-youth"
+        ],
+        "languages": [
+          "zh"
+        ],
+        "formats": [
+          "web",
+          "download"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "提供测试准备、项目流程、评价标准和附件下载，用于规范青训机构、体校、俱乐部和校园足球的运动能力测试。",
+          "en": "Standardised preparation, protocols and evaluation benchmarks for athletic testing in academies, sports schools, clubs and school football."
+        },
+        "how_to_use": {
+          "zh": "用于建立周期性基线和复测记录；不要把单次测试排名直接当成选材结论。",
+          "en": "Use for baseline and repeat testing; do not turn one test ranking into a standalone selection decision."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "moe-campus-football-guide",
+        "title": {
+          "zh": "全国青少年校园足球教学指南（试行）",
+          "en": "National School Football Teaching Guide"
+        },
+        "provider": "中华人民共和国教育部",
+        "provider_short": "MOE China",
+        "url": "https://www.moe.gov.cn/srcsite/A17/s7059/201607/t20160718_272137.html",
+        "resource_type": "teaching-guide",
+        "topics": [
+          "school-football",
+          "session-design",
+          "assessment",
+          "technical"
+        ],
+        "age_groups": [
+          "school-age"
+        ],
+        "languages": [
+          "zh"
+        ],
+        "formats": [
+          "web",
+          "download"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "教育部发布的校园足球教学指南及学生足球运动技能等级评定标准，适合体育教师和校队教练对照课程目标与评价。",
+          "en": "China's Ministry of Education guide for school-football teaching, paired with student skill-level assessment standards."
+        },
+        "how_to_use": {
+          "zh": "把教学目标、课时安排和技能评价配套使用，并与俱乐部式竞赛训练分开记录。",
+          "en": "Use the teaching outcomes, lesson structure and skill assessment together, while separating curriculum delivery from club-style performance training."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-grassroots-hub",
+        "title": {
+          "zh": "FIFA 基层与青少年训练中心",
+          "en": "FIFA Grassroots Training Hub"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/en/practice/grassroots.php",
+        "resource_type": "session-library",
+        "topics": [
+          "grassroots",
+          "session-design",
+          "technical",
+          "inclusive-coaching"
+        ],
+        "age_groups": [
+          "4-8",
+          "8-12",
+          "12-16"
+        ],
+        "languages": [
+          "en",
+          "fr",
+          "es"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "downloadable-plan"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "按年龄提供基层教练原则、训练课和全球案例，训练通常含热身、主练习及结尾比赛。",
+          "en": "Age-specific coaching principles, sessions and global examples, typically organised around a warm-up, main activity and concluding game."
+        },
+        "how_to_use": {
+          "zh": "先按年龄筛选，再围绕一个主题挑选一节课；根据人数、空间和水平调整规则，而不是照搬场地尺寸。",
+          "en": "Filter by age and select one session theme, then adapt numbers, space and rules rather than copying dimensions literally."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-play-practice-play",
+        "title": {
+          "zh": "4–8岁：Play–Practice–Play",
+          "en": "Ages 4–8: Play–Practice–Play"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/en/practice/grassroots/grassroots-and-youth-football-essentials/grassroots-coaching-essentials/an-introduction-to-play-practice-play.php",
+        "resource_type": "methodology",
+        "topics": [
+          "grassroots",
+          "session-design",
+          "game-based-learning",
+          "inclusive-coaching"
+        ],
+        "age_groups": [
+          "4-8"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "activity-diagrams"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "以比赛开始和结束，中间用高重复练习解决第一阶段观察到的问题，让儿童在真实决策中学习。",
+          "en": "Start and finish with play, using a focused practice phase to address needs observed in the opening game."
+        },
+        "how_to_use": {
+          "zh": "适合作为60分钟基层训练模板；开场少干预，主练习集中一个目标，结尾观察能否迁移到比赛。",
+          "en": "Use as a 60-minute grassroots template: minimal opening intervention, one focused practice goal and a final transfer check."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-progressive-methodology",
+        "title": {
+          "zh": "12–15岁：渐进式训练方法",
+          "en": "Ages 12–15: Progressive Methodology"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/en/practice/grassroots/grassroots-and-youth-football-essentials/grassroots-coaching-essentials/introduction-to-the-progressive-methodology.php",
+        "resource_type": "methodology",
+        "topics": [
+          "session-design",
+          "technical",
+          "tactical",
+          "game-based-learning"
+        ],
+        "age_groups": [
+          "12-15"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "activity-diagrams"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "把一节课从技术基础、战术引入推进到比赛应用，并说明如何增加对抗、复杂度和决策要求。",
+          "en": "Progress a session from technical foundation to tactical introduction and game application."
+        },
+        "how_to_use": {
+          "zh": "适合U13–U15主题课；每个进阶阶段保持同一学习目标，避免练习之间没有逻辑联系。",
+          "en": "Useful for U13–U15 theme sessions; keep the same learning intention through each progression."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-talent-development",
+        "title": {
+          "zh": "FIFA 人才发展训练框架与练习库",
+          "en": "FIFA Talent Development Framework"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/en/practice/talent_development.php",
+        "resource_type": "practice-library",
+        "topics": [
+          "talent-development",
+          "technical",
+          "tactical",
+          "position-specific",
+          "session-design"
+        ],
+        "age_groups": [
+          "elite-youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "downloadable-plan"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "展示FIFA Talent Coach方法、长期螺旋式发展、位置专项和按控球意图分类的训练练习库。",
+          "en": "FIFA Talent Coach methodology, long-term spiral development, position-specific work and an intention-based practice library."
+        },
+        "how_to_use": {
+          "zh": "先确定球员、位置单元或全队层级，再按控球意图选择练习，并把反馈写入个人发展计划。",
+          "en": "Choose the player, unit or team scale, filter by game intention and record feedback in individual development plans."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-downloadable-session-plans",
+        "title": {
+          "zh": "FIFA 可下载训练课计划入口",
+          "en": "FIFA Downloadable Session Plans"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/en/downloadable-session-plans-now-available.php",
+        "resource_type": "session-library",
+        "topics": [
+          "session-design",
+          "technical",
+          "tactical",
+          "grassroots"
+        ],
+        "age_groups": [
+          "4-8",
+          "8-12",
+          "12-16",
+          "elite-youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "downloadable-plan"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "FIFA Training Centre 的训练课可下载组织方式、讲解、变化和执教要点，覆盖基层和精英主题。",
+          "en": "Downloadable plans include organisation, explanations, variations and coaching points across grassroots and elite themes."
+        },
+        "how_to_use": {
+          "zh": "把PDF当作备课底稿，在训练前补上本队人数、器材、风险点、个别球员目标和降阶方案。",
+          "en": "Treat each PDF as a planning base and add local numbers, equipment, risks, individual targets and regressions."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-young-athleticism",
+        "title": {
+          "zh": "青少年球员运动能力训练",
+          "en": "Athleticism for Young Players"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/en/practice/training-perspectives/athleticism-for-young-players/athleticism-for-young-players-landing-page.php",
+        "resource_type": "video-series",
+        "topics": [
+          "physical",
+          "movement",
+          "injury-risk-reduction"
+        ],
+        "age_groups": [
+          "all-youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "exercise-diagrams"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "以少器材、高价值和短时微剂量为原则，覆盖动态活动度、力量、速度与弹跳等青少年运动能力基础。",
+          "en": "Minimal-equipment, high-value microdose work for mobility, strength, speed and jumping foundations."
+        },
+        "how_to_use": {
+          "zh": "把短模块嵌入足球训练前后，并结合生长发育、疲劳和医疗人员建议控制负荷。",
+          "en": "Embed short blocks around football practice and adjust load for maturation, fatigue and medical guidance."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-goalkeeping-hub",
+        "title": {
+          "zh": "FIFA 守门员训练中心",
+          "en": "FIFA Goalkeeping Hub"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/en/environment/goalkeeping.php",
+        "resource_type": "practice-library",
+        "topics": [
+          "goalkeeping",
+          "technical",
+          "tactical",
+          "physical"
+        ],
+        "age_groups": [
+          "all-youth",
+          "elite-youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "downloadable-plan"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "从接球、倒地、1对1和高球等基础技术，延伸到禁区防守、攻守转换和综合体能。",
+          "en": "Progresses from catching, diving, 1v1 and aerial fundamentals to penalty-area defending, transitions and integrated athleticism."
+        },
+        "how_to_use": {
+          "zh": "按技术动作建立基础，再进入情境和综合训练；青少年阶段优先动作质量，不用成年门将负荷照搬。",
+          "en": "Build technique before situational and integrated work; prioritise movement quality rather than copying senior loads."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-talent-identification-guide",
+        "title": {
+          "zh": "FIFA 人才识别指南",
+          "en": "FIFA Talent Identification Guide"
+        },
+        "provider": "FIFA Training Centre",
+        "provider_short": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/media/native/resources/talent-identification-guide.pdf",
+        "resource_type": "manual",
+        "topics": [
+          "talent-identification",
+          "assessment",
+          "growth-maturation"
+        ],
+        "age_groups": [
+          "all-youth",
+          "elite-youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "pdf"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "讨论多维人才识别、生长突增、成熟度和观察偏差，强调不要把当前表现等同于长期潜力。",
+          "en": "Covers multidimensional talent identification, growth spurts, maturation and observation bias."
+        },
+        "how_to_use": {
+          "zh": "用于设计多次、多环境、多观察员的识别流程，并记录相对年龄与成熟度，不作为一次性选拔评分表。",
+          "en": "Design repeated, multi-context, multi-observer identification and record relative age and maturation."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-football-for-schools",
+        "title": {
+          "zh": "FIFA Football for Schools 教学指南",
+          "en": "FIFA Football for Schools Coach-Educator Guide"
+        },
+        "provider": "FIFA",
+        "provider_short": "FIFA",
+        "url": "https://inside.fifa.com/advancing-football/football-for-schools/coach-educators",
+        "resource_type": "teaching-guide",
+        "topics": [
+          "school-football",
+          "inclusive-coaching",
+          "safeguarding",
+          "life-skills"
+        ],
+        "age_groups": [
+          "school-age"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "把足球活动与生活技能教学结合，提供教学组织、适应不同场景和儿童保护提示。",
+          "en": "Combines football activity with life-skills learning, organisation, adaptation and safeguarding guidance."
+        },
+        "how_to_use": {
+          "zh": "适合学校和社区活动；每次课程先确认儿童保护政策、场地风险和可求助成年人。",
+          "en": "Suitable for schools and community delivery; confirm safeguarding policy, venue risks and trusted adults before every session."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "fifa-guardians",
+        "title": {
+          "zh": "FIFA Guardians 儿童保护课程",
+          "en": "FIFA Guardians Safeguarding Courses"
+        },
+        "provider": "FIFA / The Open University",
+        "provider_short": "FIFA",
+        "url": "https://safeguardinginfootball.fifa.com/global-football-community-learners/",
+        "resource_type": "online-course",
+        "topics": [
+          "safeguarding",
+          "academy-management",
+          "coach-behaviour"
+        ],
+        "age_groups": [
+          "coach-education"
+        ],
+        "languages": [
+          "en",
+          "fr",
+          "es",
+          "pt",
+          "ar"
+        ],
+        "formats": [
+          "online-course"
+        ],
+        "access": "free-registration",
+        "summary": {
+          "zh": "从90分钟基础课程到完整五门课，覆盖风险识别、政策、报告与组织责任，并可获得数字徽章。",
+          "en": "A five-course pathway beginning with a 90-minute essentials course and covering risk, policy, reporting and organisational responsibility."
+        },
+        "how_to_use": {
+          "zh": "所有接触未成年人的教练和工作人员应先完成基础课；机构仍需建立符合当地法律的报告和处置流程。",
+          "en": "All staff working with minors should start with Essentials; organisations still need reporting procedures aligned with local law."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "uefa-icoachkids",
+        "title": {
+          "zh": "UEFA iCoachKids 儿童教练课程",
+          "en": "UEFA iCoachKids Courses"
+        },
+        "provider": "UEFA / iCoachKids",
+        "provider_short": "UEFA",
+        "url": "https://www.uefa.com/news-media/news/0268-11ff870f306c-0a1efbed48f1-1000--free-online-training-tool-for-children-s-coaches/",
+        "resource_type": "online-course",
+        "topics": [
+          "grassroots",
+          "inclusive-coaching",
+          "coach-behaviour",
+          "session-design"
+        ],
+        "age_groups": [
+          "children",
+          "coach-education"
+        ],
+        "languages": [
+          "en",
+          "fr",
+          "es"
+        ],
+        "formats": [
+          "online-course",
+          "video",
+          "activities"
+        ],
+        "access": "free-registration",
+        "summary": {
+          "zh": "面向基层教练、教师、志愿者和家长，讲解适龄环境、学习方式、竞赛使用和儿童长期参与。",
+          "en": "For grassroots coaches, teachers, volunteers and parents, covering age-appropriate environments, learning methods and developmental competition."
+        },
+        "how_to_use": {
+          "zh": "适合无证基层教练的第一门系统课程，也可作为UEFA C级课程前的理念准备。",
+          "en": "A strong first structured course for new grassroots coaches and useful preparation for UEFA C learning."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "uefa-coach-education-overview",
+        "title": {
+          "zh": "UEFA 教练教育路径",
+          "en": "UEFA Coach Education Pathway"
+        },
+        "provider": "UEFA",
+        "provider_short": "UEFA",
+        "url": "https://www.uefa.com/development/coaches/coaching-courses/",
+        "resource_type": "qualification-framework",
+        "topics": [
+          "coach-education",
+          "academy-management",
+          "goalkeeping",
+          "elite-youth"
+        ],
+        "age_groups": [
+          "coach-education"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "解释UEFA C/B/A/Pro与Youth B、Elite Youth A、Goalkeeper等专项资格的定位。",
+          "en": "Explains UEFA C, B, A and Pro licences plus Youth B, Elite Youth A and goalkeeper qualifications."
+        },
+        "how_to_use": {
+          "zh": "用于理解教练发展路径和岗位要求；正式报名、互认和续证仍以所属足协规定为准。",
+          "en": "Use to understand development pathways and role expectations; enrolment and recognition remain subject to the relevant association."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "uefa-youth-development-programme",
+        "title": {
+          "zh": "UEFA 青训发展计划最低框架",
+          "en": "UEFA Youth Development Programme Framework"
+        },
+        "provider": "UEFA",
+        "provider_short": "UEFA",
+        "url": "https://documents.uefa.com/r/UEFA-Club-Licensing-and-Financial-Sustainability-Regulations-2026/Article-19-Youth-development-programme-Online?contentId=tIroOc5oj9bLwBTm1FokYA",
+        "resource_type": "programme-framework",
+        "topics": [
+          "academy-management",
+          "long-term-development",
+          "safeguarding",
+          "education",
+          "medical"
+        ],
+        "age_groups": [
+          "all-youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "列出俱乐部书面青训计划应覆盖的理念、组织、人员、设施、预算、分龄足球教育、医疗、教育与复盘。",
+          "en": "Defines the philosophy, organisation, people, facilities, budget, age-group education, medical support, schooling and review expected in a written programme."
+        },
+        "how_to_use": {
+          "zh": "青训主管可把条款当作年度计划目录，再为每一项增加责任人、指标、证据和复盘周期。",
+          "en": "Academy leaders can use it as a programme table of contents, adding owners, indicators, evidence and review cycles."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "afc-coach-education-hub",
+        "title": {
+          "zh": "AFC 教练教育总览",
+          "en": "AFC Coach Education Overview"
+        },
+        "provider": "Asian Football Confederation",
+        "provider_short": "AFC",
+        "url": "https://www.the-afc.com/en/more/news/coach_education.html",
+        "resource_type": "qualification-framework",
+        "topics": [
+          "coach-education",
+          "elite-youth",
+          "goalkeeping",
+          "physical"
+        ],
+        "age_groups": [
+          "coach-education"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "介绍AFC教练公约、等级课程、讲师工作坊、守门员和体能专项课程、技术报告及继续教育。",
+          "en": "Overview of the AFC Coaching Convention, diploma pathway, instructor workshops, specialist courses, technical reports and continuing education."
+        },
+        "how_to_use": {
+          "zh": "用于确认亚洲教练教育体系和继续学习入口，具体开班与证书由会员协会执行。",
+          "en": "Use to understand the Asian pathway and continuing education; delivery and licensing sit with member associations."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "afc-elite-youth-b-framework",
+        "title": {
+          "zh": "AFC Elite Youth B 课程能力框架",
+          "en": "AFC Elite Youth B Competency Framework"
+        },
+        "provider": "Asian Football Confederation",
+        "provider_short": "AFC",
+        "url": "https://assets.the-afc.com/downloads/developing-the-game/AFC-Coaching-Convention-Regulations-2024.pdf",
+        "resource_type": "qualification-framework",
+        "topics": [
+          "elite-youth",
+          "coach-education",
+          "growth-maturation",
+          "session-design",
+          "player-development"
+        ],
+        "age_groups": [
+          "elite-youth",
+          "coach-education"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "pdf"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "公约附录列出Elite Youth B教练在理念、球员发展、足球发展、教学、训练课、管理和关怀方面的学习内容。",
+          "en": "The convention sets Elite Youth B learning content across philosophy, player development, football, teaching, sessions, management and welfare."
+        },
+        "how_to_use": {
+          "zh": "可作为精英青训教练自评清单，但不能代替由会员协会举办的正式课程和考核。",
+          "en": "Useful as a self-audit checklist but not a substitute for the member-association course and assessment."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "england-session-library",
+        "title": {
+          "zh": "England Football 训练课视频库",
+          "en": "England Football Session Library"
+        },
+        "provider": "The Football Association",
+        "provider_short": "The FA",
+        "url": "https://learn.englandfootball.com/sessions",
+        "resource_type": "session-library",
+        "topics": [
+          "session-design",
+          "technical",
+          "tactical",
+          "goalkeeping"
+        ],
+        "age_groups": [
+          "grassroots",
+          "youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "英足总教练发展人员示范的短视频训练库，涵盖控球、压迫、1对1防守、守门员和控球技术。",
+          "en": "Short session demonstrations from FA coach developers covering possession, pressing, 1v1 defending, goalkeeping and ball mastery."
+        },
+        "how_to_use": {
+          "zh": "先看训练目的和教练行为，再决定是否适合本队；不要只复制练习图而忽略提问与反馈。",
+          "en": "Observe the intention and coaching behaviour before adapting the activity; do not copy the diagram without the interventions."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "england-training-planning",
+        "title": {
+          "zh": "如何规划足球训练",
+          "en": "How Coaches Can Plan for Football Training"
+        },
+        "provider": "England Football Learning",
+        "provider_short": "The FA",
+        "url": "https://learn.englandfootball.com/articles-and-resources/coaching/resources/2024/How-coaches-can-plan-for-football-training",
+        "resource_type": "article",
+        "topics": [
+          "session-design",
+          "reflection",
+          "game-based-learning"
+        ],
+        "age_groups": [
+          "all-youth",
+          "coach-education"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web",
+          "video",
+          "pdf"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "从训练结果反推练习设计，介绍whole–part–whole、渐进阶梯、连续主题课及赛后反思。",
+          "en": "Outcome-led planning with whole-part-whole, progressive structures, linked sessions and reflection."
+        },
+        "how_to_use": {
+          "zh": "每次备课写清一个结果、一个主要比赛问题、两项可调整变量和课后反思。",
+          "en": "For each plan, write one outcome, one game problem, two adjustable variables and a post-session reflection."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "ussoccer-play-practice-play",
+        "title": {
+          "zh": "U.S. Soccer Play–Practice–Play 方法",
+          "en": "U.S. Soccer Play–Practice–Play"
+        },
+        "provider": "U.S. Soccer",
+        "provider_short": "U.S. Soccer",
+        "url": "https://www.ussoccer.com/stories/2018/02/five-things-to-know-about-playpracticeplay",
+        "resource_type": "methodology",
+        "topics": [
+          "grassroots",
+          "session-design",
+          "game-based-learning",
+          "coach-behaviour"
+        ],
+        "age_groups": [
+          "grassroots",
+          "youth"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "web"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "解释基层训练中两段自由比赛与中间针对性练习的职责，以及教练如何观察、引导和减少排队式练习。",
+          "en": "Explains the two play phases, focused practice and the coach's role in observation, guidance and reducing line drills."
+        },
+        "how_to_use": {
+          "zh": "与FIFA版本对照阅读，重点检查球员是否持续决策、是否有合适成功率及教练是否过度打断。",
+          "en": "Compare with FIFA's version and audit decision-making, challenge level and excessive interruption."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "ussoccer-positive-environments",
+        "title": {
+          "zh": "积极足球环境工具包",
+          "en": "Creating Positive Soccer Environments Toolkit"
+        },
+        "provider": "U.S. Soccer",
+        "provider_short": "U.S. Soccer",
+        "url": "https://learning.ussoccer.com/storyline/20172852/story_content/external_files/Creating%20Positive%20Soccer%20Environments%20Toolkit%20final.pdf",
+        "resource_type": "toolkit",
+        "topics": [
+          "coach-behaviour",
+          "inclusive-coaching",
+          "reflection",
+          "safeguarding"
+        ],
+        "age_groups": [
+          "all-youth",
+          "coach-education"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "pdf"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "围绕关系、安全感、球员发声和教练反思，提供建立积极训练与比赛环境的讨论和工具。",
+          "en": "Practical tools for relationships, psychological safety, player voice and coach reflection."
+        },
+        "how_to_use": {
+          "zh": "可用于教练组月度复盘或家长沟通；把原则转成可观察行为和反馈问题。",
+          "en": "Use in monthly staff reviews or parent communication, translating principles into observable behaviours and feedback questions."
+        },
+        "checked_at": "2026-07-12"
+      },
+      {
+        "id": "football-australia-national-curriculum",
+        "title": {
+          "zh": "澳大利亚足球国家课程",
+          "en": "Football Australia National Curriculum"
+        },
+        "provider": "Football Australia",
+        "provider_short": "Football Australia",
+        "url": "https://www.footballaustralia.com.au/sites/ffa/files/2017-09/FFA%20National%20Curriculum_1ma6qrmro1pyq10gzxo5rcn7ld.pdf",
+        "resource_type": "curriculum",
+        "topics": [
+          "long-term-development",
+          "session-design",
+          "technical",
+          "tactical",
+          "coach-education"
+        ],
+        "age_groups": [
+          "all-youth",
+          "coach-education"
+        ],
+        "languages": [
+          "en"
+        ],
+        "formats": [
+          "pdf"
+        ],
+        "access": "free",
+        "summary": {
+          "zh": "从国家比赛理念、技能习得到分龄训练周期和教练教育，适合研究完整课程如何连接训练与比赛。",
+          "en": "Connects a national playing vision, skill acquisition, age-stage cycles and coach education."
+        },
+        "how_to_use": {
+          "zh": "适合作为课程设计对照，不宜脱离本地球员、赛制、训练频率和文化直接移植。",
+          "en": "Use as a curriculum comparison rather than transplanting it without local player, competition and cultural context."
+        },
+        "checked_at": "2026-07-12"
+      }
+    ]
+  },
   "club_name_overrides": {
     "1. FC Kaiserslautern": "凯泽斯劳滕",
     "AC Milan": "AC米兰",

@@ -18,6 +18,7 @@
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 日本、韩国青训/学校/大学体系、竞赛关系和年度快照。 | 是 |
+| `data/raw/training-resources.json` | 官方青训教学材料、学习路径、筛选维度和使用边界。 | 是 |
 | `data/site/players.json` | 前端使用的球员聚合 JSON。 | 否，由脚本生成 |
 | `data/site/overview.json` | 首页和专题页使用的聚合总览。 | 否，由脚本生成 |
 | `storage/youth-football.sqlite` | 本地 SQLite 查询库。 | 否，不提交 |
@@ -101,6 +102,22 @@
 | `source_links[]` | 官方来源、URL 和核查日期。 |
 
 球员只能通过 `training_pathway[].competition_context_ids` 引用竞赛 ID。该引用表示培养环境，不自动断言球员在某赛季实际出场。
+
+## 青训教学资源
+
+`data/raw/training-resources.json` 是教学资料索引，不存储第三方教材正文：
+
+| 字段 | 含义 |
+| --- | --- |
+| `featured_paths[]` | 按基层起步、中国教练、精英进阶和青训管理组织的推荐阅读路径。 |
+| `resources[]` | 单项官方资料。 |
+| `resource_type` | 手册、训练课库、在线课程、方法论、测试工具或制度框架。 |
+| `topics`、`age_groups` | 页面主题和年龄 / 使用对象筛选。 |
+| `languages`、`formats`、`access` | 语言、载体和访问条件。 |
+| `summary`、`how_to_use` | 中英文摘要和使用提示，不代替原始资料。 |
+| `checked_at` | 最近链接与内容核查日期。 |
+
+每项资源必须链接至官方发布方或其官方学习平台；医疗、伤病、复训和儿童保护内容只作学习入口，不构成个体处置建议。
 
 ## 青训机构专题现状
 

@@ -8,6 +8,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Added a bilingual youth-training resource desk with 20+ official curricula, session libraries, coach courses, assessment tools and safeguarding materials, plus topic, age, publisher, format and keyword filters.
+
 - Added the China player-level `overseas_status` model, status counts in generated overview data, validation rules, SQLite support, and a bilingual status-scope card on the overseas page.
 
 - Added executable project-governance automation: PR validation CI, dynamic status badges, structured issue routing, and monthly/event/scope snapshot releases with hashed manifests.

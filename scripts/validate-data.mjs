@@ -368,6 +368,44 @@ function validateYouthDevelopmentSystems(payload) {
   return competitionIds;
 }
 
+function validateTrainingResources(payload) {
+  assert(payload?.schema_version === 1, "Unsupported training-resources schema version");
+  assert(isIsoDate(payload.checked_at), "Invalid training-resources checked_at");
+  validateLocalizedText(payload.scope, "training-resources.scope");
+  assert(Array.isArray(payload.resources) && payload.resources.length >= 20, "Expected at least 20 training resources");
+  assert(Array.isArray(payload.featured_paths) && payload.featured_paths.length >= 3, "Expected training-resource learning paths");
+
+  const resourceIds = new Set();
+  for (const resource of payload.resources) {
+    const label = `training resource ${resource.id}`;
+    assert(resource.id && !resourceIds.has(resource.id), `Duplicate ${label}`);
+    resourceIds.add(resource.id);
+    validateLocalizedText(resource.title, `${label}.title`);
+    validateLocalizedText(resource.summary, `${label}.summary`);
+    validateLocalizedText(resource.how_to_use, `${label}.how_to_use`);
+    assert(resource.provider && resource.provider_short, `Missing provider on ${label}`);
+    assert(/^https:\/\//.test(resource.url), `Invalid URL on ${label}`);
+    assert(resource.resource_type, `Missing resource type on ${label}`);
+    for (const field of ["topics", "age_groups", "languages", "formats"]) {
+      assert(Array.isArray(resource[field]) && resource[field].length > 0, `Invalid ${field} on ${label}`);
+    }
+    assert(["free", "free-registration"].includes(resource.access), `Invalid access on ${label}`);
+    assert(isIsoDate(resource.checked_at), `Invalid checked_at on ${label}`);
+  }
+
+  const pathIds = new Set();
+  for (const path of payload.featured_paths) {
+    assert(path.id && !pathIds.has(path.id), `Duplicate training path ${path.id}`);
+    pathIds.add(path.id);
+    validateLocalizedText(path.label, `${path.id}.label`);
+    validateLocalizedText(path.description, `${path.id}.description`);
+    assert(Array.isArray(path.resource_ids) && path.resource_ids.length >= 3, `Invalid resources on ${path.id}`);
+    for (const resourceId of path.resource_ids) {
+      assert(resourceIds.has(resourceId), `Unknown training resource ${resourceId} on ${path.id}`);
+    }
+  }
+}
+
 function validateTournamentSourceVersion(source, tournamentId) {
   assert(
     typeof source === "object" && source !== null,
@@ -1400,6 +1438,7 @@ export async function validateData() {
   const tournamentIds = new Set(dataset.tournaments.map((item) => item.id));
   const overseasBucketIds = new Set(dataset.overseasHistory.bucket_definition ?? []);
   const youthCompetitionIds = validateYouthDevelopmentSystems(dataset.youthDevelopmentSystems);
+  validateTrainingResources(dataset.trainingResources);
   const issue16Squads = new Map([
     ["Japan|afc-u17-2026", []],
     ["Japan|afc-u23-2026", []],

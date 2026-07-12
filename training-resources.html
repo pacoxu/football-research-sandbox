@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>青训教学资源 | 青训球员追踪站</title>
+    <meta name="description" content="集中检索中国足协、FIFA、AFC、UEFA及各国足协发布的青少年足球教学材料、训练课和教练课程。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-training-resources" />
+  </head>
+  <body data-page="training-resources">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">日韩青训体系</a>
+            <a data-nav="training-resources" data-i18n="nav.trainingResources" href="./training-resources.html">教学资源</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero training-resource-hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="trainingResources.hero.eyebrow">Coach Learning Desk</p>
+            <h1 data-i18n="trainingResources.hero.title">青训教学资源</h1>
+            <p class="hero-text" data-i18n="trainingResources.hero.text">
+              把训练大纲、现成课例、教练课程、守门员训练、运动能力和儿童保护资料集中到一个可筛选界面。
+            </p>
+          </div>
+          <aside class="hero-spotlight panel-accent training-resource-summary">
+            <p class="eyebrow" data-i18n="trainingResources.summary.eyebrow">Official-first</p>
+            <div class="training-resource-metrics">
+              <div>
+                <strong id="trainingResourceCount">-</strong>
+                <span data-i18n="trainingResources.summary.resources">项资源</span>
+              </div>
+              <div>
+                <strong id="trainingProviderCount">-</strong>
+                <span data-i18n="trainingResources.summary.providers">个发布方</span>
+              </div>
+            </div>
+            <p id="trainingResourceCheckedAt" class="hero-side-note"></p>
+          </aside>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="trainingResources.paths.eyebrow">Learning Paths</p>
+              <h2 data-i18n="trainingResources.paths.title">按使用场景快速起步</h2>
+            </div>
+          </div>
+          <div id="trainingResourcePaths" class="training-path-grid"></div>
+        </section>
+
+        <section class="content-panel training-resource-directory">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="trainingResources.directory.eyebrow">Resource Directory</p>
+              <h2 data-i18n="trainingResources.directory.title">教学素材目录</h2>
+            </div>
+            <p id="trainingResourceMeta" class="section-note"></p>
+          </div>
+
+          <div class="training-resource-filter-bar">
+            <label class="filter-item training-search-field">
+              <span data-i18n="trainingResources.filters.search">搜索</span>
+              <input
+                id="trainingResourceSearch"
+                type="search"
+                data-i18n-placeholder="trainingResources.filters.searchPlaceholder"
+                placeholder="主题、发布方、标题或使用提示"
+              />
+            </label>
+            <label class="filter-item">
+              <span data-i18n="trainingResources.filters.topic">主题</span>
+              <select id="trainingResourceTopic"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="trainingResources.filters.age">年龄 / 对象</span>
+              <select id="trainingResourceAge"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="trainingResources.filters.provider">发布方</span>
+              <select id="trainingResourceProvider"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="trainingResources.filters.format">形式</span>
+              <select id="trainingResourceFormat"></select>
+            </label>
+            <label class="filter-item">
+              <span data-i18n="trainingResources.filters.language">语言</span>
+              <select id="trainingResourceLanguage"></select>
+            </label>
+            <button id="trainingResourceReset" class="secondary-link training-filter-reset" type="button" data-i18n="trainingResources.filters.reset">
+              重置筛选
+            </button>
+          </div>
+
+          <div id="trainingResourceGrid" class="training-resource-grid"></div>
+          <div id="trainingResourceEmpty" class="empty-state" hidden data-i18n="trainingResources.empty">
+            当前筛选条件下没有匹配资源。
+          </div>
+        </section>
+
+        <section class="content-panel training-resource-scope-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="trainingResources.scope.eyebrow">Scope & Safety</p>
+              <h2 data-i18n="trainingResources.scope.title">使用边界</h2>
+            </div>
+          </div>
+          <p id="trainingResourceScope"></p>
+          <ul class="mini-bullet-list">
+            <li data-i18n="trainingResources.scope.itemOne">训练课必须根据人数、场地、能力和生长发育情况调整。</li>
+            <li data-i18n="trainingResources.scope.itemTwo">体能、伤病和复训安排应由具备相应资质的专业人员把关。</li>
+            <li data-i18n="trainingResources.scope.itemThree">任何未成年人训练都应先落实儿童保护、风险评估和报告机制。</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+    <script type="module" src="./assets/app.js?v=20260712-training-resources"></script>
+  </body>
+</html>
