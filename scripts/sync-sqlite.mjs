@@ -42,6 +42,7 @@ export async function syncSqlite() {
       education_partner_json TEXT,
       league_system_override TEXT,
       overseas_bucket_override TEXT,
+      overseas_status TEXT,
       focus_tags_json TEXT NOT NULL,
       verification_status TEXT NOT NULL,
       verification_last_checked TEXT NOT NULL,
@@ -221,9 +222,9 @@ export async function syncSqlite() {
       country, birth_date, age_band, primary_position,
       height_cm, weight_kg, registration_club_name, registration_club_country,
       registration_organization_type, parent_organization_json, education_partner_json,
-      league_system_override, overseas_bucket_override, focus_tags_json,
+      league_system_override, overseas_bucket_override, overseas_status, focus_tags_json,
       verification_status, verification_last_checked, verification_notes
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertPathway = db.prepare(`
     INSERT INTO player_pathways (
@@ -322,6 +323,7 @@ export async function syncSqlite() {
         : null,
       player.league_system_override ?? null,
       player.overseas_bucket_override ?? null,
+      player.overseas_status ?? null,
       toJson(player.focus_tags),
       player.verification.status,
       player.verification.last_checked,

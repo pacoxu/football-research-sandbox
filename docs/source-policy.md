@@ -57,6 +57,8 @@
 
 试训、短训、商业选拔和观察线索不计入当前留洋。当前中国留洋样本不是官方全量人数，只是仓库中已经结构化并满足当前来源口径的样本。
 
+中国球员只有 `overseas_status: "active-registered"` 才进入当前留洋统计。`pending-effective` 必须保留当前有效注册并配套 `pending-transfer` 记录；`trial-watch` 必须有 `tracked` 记录和可复核来源；`returned` 必须能在 `training_pathway` 中找到海外路径。经纪公司合作、媒体“有意”或未落地传闻不足以单独支撑 `trial-watch`。
+
 ## 来源证据模板
 
 新增或修正关键事实时，建议在 PR 或 issue 中提供：

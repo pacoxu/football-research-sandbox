@@ -1,5 +1,11 @@
 import { loadDataset } from "./lib/data-loader.mjs";
 import { MARKET_VALUE_STATUSES } from "./lib/market-values.mjs";
+import {
+  countOverseasStatuses,
+  getChinaOverseasStatusErrors,
+  hasForeignRegistration,
+  normalizeCountry
+} from "./lib/overseas-status.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -834,6 +840,12 @@ function validateMarketValueSeries(record, playerId, label = "market_value") {
   }
 }
 
+function validateChinaOverseasStatus(player) {
+  for (const error of getChinaOverseasStatusErrors(player)) {
+    assert(false, `Invalid overseas_status on ${player.id}: ${error}`);
+  }
+}
+
 function validateOverseasMarketValuePeakRanking(ranking, overseasHistory) {
   assert(typeof ranking === "object" && ranking !== null, "Missing overseas market-value peak ranking");
   assert(isIsoDate(ranking.checked_at), "Invalid overseas market-value peak ranking checked_at");
@@ -1474,9 +1486,19 @@ export async function validateData() {
     for (const [index, alternative] of player.market_value.alternatives.entries()) {
       validateMarketValueSeries(alternative, player.id, `market_value.alternatives[${index}]`);
     }
+    validateChinaOverseasStatus(player);
 
     playerIds.add(player.id);
   }
+
+  const chinaOverseasStatusCounts = countOverseasStatuses(dataset.players);
+  const chinaForeignRegistrationCount = dataset.players.filter(
+    (player) => normalizeCountry(player.country) === "china" && hasForeignRegistration(player)
+  ).length;
+  assert(
+    chinaOverseasStatusCounts["active-registered"] === chinaForeignRegistrationCount,
+    `China active-registered count ${chinaOverseasStatusCounts["active-registered"]} does not match foreign registrations ${chinaForeignRegistrationCount}`
+  );
 
   const issue16Players = [...issue16Squads.values()].flat();
   for (const [squadKey, squad] of issue16Squads) {

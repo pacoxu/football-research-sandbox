@@ -51,6 +51,8 @@ flowchart LR
 - `birth_date + 标准化姓名` 不得与另一球员重复，用于发现同一球员跨文件重复建档。
 - `league_system_override` 必须是非空字符串。
 - `overseas_bucket_override` 必须来自 `overseas-history.json` 的 `bucket_definition`。
+- 中国海外注册球员必须使用 `overseas_status: active-registered`；其他状态不得伪装成当前海外注册。
+- `returned` 必须有海外培养路径，`trial-watch` 必须有 `tracked` 记录，`pending-effective` 必须有 `pending-transfer` 记录。
 - `market_value` 如存在，需具备 status、checked_at、source、current/peak 点位结构。
 
 赛事和专题：

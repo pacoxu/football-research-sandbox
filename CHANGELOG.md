@@ -8,6 +8,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Added the China player-level `overseas_status` model, status counts in generated overview data, validation rules, SQLite support, and a bilingual status-scope card on the overseas page.
+
 - Added executable project-governance automation: PR validation CI, dynamic status badges, structured issue routing, and monthly/event/scope snapshot releases with hashed manifests.
 
 - Published the Genbao Football Base dossier with seven generations, 26 representative players, current-status evidence, programme continuity, and source boundaries.
