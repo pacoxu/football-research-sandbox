@@ -27,10 +27,16 @@ const state = {
     ageBand: "all",
     leagueSystem: "all",
     tag: "all",
+    sort: "default",
     view: "cards"
   },
   tournamentFilters: {
     level: "all"
+  },
+  youthLeagueFilters: {
+    season: "all",
+    country: "all",
+    status: "all"
   },
   overseasFilters: {
     country: "all",
@@ -50,6 +56,8 @@ const UI_COPY = {
     "page.player-detail.description": "查看球员青训路径、赛事经历、当前归属、最近贡献与外部资料链接。",
     "page.tournaments.title": "赛事列表 | 青训球员追踪站",
     "page.tournaments.description": "按赛事层级查看亚洲杯、世界杯、世青赛、世少赛的比赛时间、结果、中国战绩与来源链接。",
+    "page.youth-league.title": "欧洲青年冠军联赛 | 青训球员追踪站",
+    "page.youth-league.description": "欧洲青年冠军联赛近三个赛季的资格、赛制、淘汰赛与中日韩球员专题。",
     "page.tournament-detail.title": "赛事详情 | 青训球员追踪站",
     "page.tournament-detail.description": "查看单项赛事的时间范围、中国战绩、比赛明细、关键球员与来源链接。",
     "page.overseas.title": "留洋专页 | 青训球员追踪站",
@@ -163,6 +171,12 @@ const UI_COPY = {
     "players.filters.ageBand": "年龄段",
     "players.filters.league": "当前联赛 / 体系",
     "players.filters.tag": "标签",
+    "players.filters.sort": "排序",
+    "players.sort.default": "默认顺序",
+    "players.sort.ageAsc": "年龄：从小到大",
+    "players.sort.ageDesc": "年龄：从大到小",
+    "players.sort.marketValueDesc": "身价：从高到低",
+    "players.sort.marketValueAsc": "身价：从低到高",
     "players.filters.actions": "操作",
     "players.filters.reset": "重置筛选",
     "players.filters.allCountry": "全部国籍",
@@ -172,6 +186,8 @@ const UI_COPY = {
     "players.table.player": "球员",
     "players.table.country": "国籍",
     "players.table.age": "年龄",
+    "players.table.marketValue": "当前身价",
+    "players.table.marketValuePeak": "峰值 {value}",
     "players.table.club": "当前球队",
     "players.table.league": "当前联赛 / 体系",
     "players.table.tag": "标签",
@@ -345,6 +361,27 @@ const UI_COPY = {
     "tournaments.archive.substituteMinute": "{minute}' 替补出场",
     "tournaments.archive.substituteUnused": "未出场",
     "tournaments.card.open": "查看赛事",
+    "tournaments.youthLeague.eyebrow": "Special Topic",
+    "tournaments.youthLeague.title": "欧洲青年冠军联赛",
+    "tournaments.youthLeague.text": "查看近三个完整赛季的资格、赛制、八强以后赛果与中日韩球员核验。",
+    "tournaments.youthLeague.open": "进入专题",
+    "youthLeague.hero.eyebrow": "UEFA Youth League",
+    "youthLeague.hero.title": "欧洲青年冠军联赛",
+    "youthLeague.hero.text": "近三个完整赛季的资格、赛制、淘汰赛，以及中日韩球员核验。",
+    "youthLeague.hero.cjkLink": "查看中日韩球员",
+    "youthLeague.hero.back": "返回赛事列表",
+    "youthLeague.qualification.eyebrow": "Entry & eligibility",
+    "youthLeague.qualification.title": "如何参赛",
+    "youthLeague.seasons.eyebrow": "Three seasons",
+    "youthLeague.seasons.title": "近三季赛事情况",
+    "youthLeague.cjk.eyebrow": "China · Japan · Korea",
+    "youthLeague.cjk.title": "中日韩球员",
+    "youthLeague.cjk.note": "主统计严格按 UEFA 官方国籍识别；双国籍或血缘关联只进入边界观察。",
+    "youthLeague.spotlights.eyebrow": "Curated, not exhaustive",
+    "youthLeague.spotlights.title": "其他国家精选球员",
+    "youthLeague.spotlights.note": "这里只收录最佳射手、决赛进球者和官方赛季回顾中的重点人物，不是完整球员名单。",
+    "youthLeague.sources.eyebrow": "Source ledger",
+    "youthLeague.sources.title": "官方来源",
     "overseas.hero.eyebrow": "Overseas Tracker",
     "overseas.hero.title": "留洋专页",
     "overseas.hero.text": "当前页把“现役海外样本”和“历史记录”拆开。现役部分默认显示当前仍在海外的球员，历史部分默认显示当前已不在海外的样本；切换年份后，可回看当年仍在海外的球员列表。",
@@ -413,6 +450,8 @@ const UI_COPY = {
     "page.player-detail.description": "View player pathways, tournament logs, current club, recent contributions, and external references.",
     "page.tournaments.title": "Tournament Directory | Youth Player Tracking Desk",
     "page.tournaments.description": "Browse Asian Cups, World Cups, U-20 World Cups, and U-17 World Cups by level with China results and source links.",
+    "page.youth-league.title": "UEFA Youth League | Youth Player Tracking Desk",
+    "page.youth-league.description": "Qualification, formats, knockouts and China-Japan-Korea player research across the latest three UEFA Youth League seasons.",
     "page.tournament-detail.title": "Tournament Detail | Youth Player Tracking Desk",
     "page.tournament-detail.description": "View one tournament at a time with date range, China results, match detail, key players, and source links.",
     "page.overseas.title": "Overseas Tracker | Youth Player Tracking Desk",
@@ -526,6 +565,12 @@ const UI_COPY = {
     "players.filters.ageBand": "Age band",
     "players.filters.league": "League / system",
     "players.filters.tag": "Tag",
+    "players.filters.sort": "Sort",
+    "players.sort.default": "Default order",
+    "players.sort.ageAsc": "Age: youngest first",
+    "players.sort.ageDesc": "Age: oldest first",
+    "players.sort.marketValueDesc": "Value: highest first",
+    "players.sort.marketValueAsc": "Value: lowest first",
     "players.filters.actions": "Actions",
     "players.filters.reset": "Reset filters",
     "players.filters.allCountry": "All countries",
@@ -535,6 +580,8 @@ const UI_COPY = {
     "players.table.player": "Player",
     "players.table.country": "Country",
     "players.table.age": "Age",
+    "players.table.marketValue": "Current value",
+    "players.table.marketValuePeak": "Peak {value}",
     "players.table.club": "Current club",
     "players.table.league": "League / system",
     "players.table.tag": "Tag",
@@ -708,6 +755,27 @@ const UI_COPY = {
     "tournaments.archive.substituteMinute": "on {minute}'",
     "tournaments.archive.substituteUnused": "unused",
     "tournaments.card.open": "View tournament",
+    "tournaments.youthLeague.eyebrow": "Special Topic",
+    "tournaments.youthLeague.title": "UEFA Youth League",
+    "tournaments.youthLeague.text": "Explore qualification, formats, quarter-finals onward and verified CJK players across the latest three completed seasons.",
+    "tournaments.youthLeague.open": "Open topic",
+    "youthLeague.hero.eyebrow": "UEFA Youth League",
+    "youthLeague.hero.title": "UEFA Youth League",
+    "youthLeague.hero.text": "Qualification, formats, knockouts and verified CJK players across the latest three completed seasons.",
+    "youthLeague.hero.cjkLink": "View CJK players",
+    "youthLeague.hero.back": "Back to tournaments",
+    "youthLeague.qualification.eyebrow": "Entry & eligibility",
+    "youthLeague.qualification.title": "How clubs and players qualify",
+    "youthLeague.seasons.eyebrow": "Three seasons",
+    "youthLeague.seasons.title": "The latest three seasons",
+    "youthLeague.cjk.eyebrow": "China · Japan · Korea",
+    "youthLeague.cjk.title": "CJK players",
+    "youthLeague.cjk.note": "The main count follows official UEFA nationality. Dual-nationality or heritage links belong only in the separate boundary watch.",
+    "youthLeague.spotlights.eyebrow": "Curated, not exhaustive",
+    "youthLeague.spotlights.title": "Selected players from elsewhere",
+    "youthLeague.spotlights.note": "This section only includes leading scorers, final goalscorers and players highlighted in UEFA season coverage. It is not a complete player list.",
+    "youthLeague.sources.eyebrow": "Source ledger",
+    "youthLeague.sources.title": "Official sources",
     "overseas.hero.eyebrow": "Overseas Tracker",
     "overseas.hero.title": "Overseas tracker",
     "overseas.hero.text": "This page separates active overseas samples from historical records. The active section defaults to players who are still abroad right now, while the history section defaults to players who are no longer abroad; once you switch the year filter, it becomes a year-by-year view of who was abroad in that season window.",
@@ -769,6 +837,114 @@ const UI_COPY = {
   }
 };
 
+const YOUTH_LEAGUE_COPY = {
+  zh: {
+    seasonCount: "完整赛季",
+    entrantTotal: "球队赛季",
+    cjkCount: "中日韩球员",
+    currentRules: "资格规则以 2025/26 赛季为基线",
+    routeNote: "卫冕与重复资格",
+    playerRules: "球员准入",
+    oldFormat: "旧制",
+    newFormat: "新制",
+    entrants: "{count} 支参赛队",
+    champion: "冠军",
+    runnerUp: "亚军",
+    semiFinalists: "其他四强",
+    topScorers: "最佳射手",
+    knockout: "八强至决赛",
+    teams: "查看全部 {count} 支参赛队",
+    championsLeaguePath: "欧冠路径",
+    domesticPath: "国内青年冠军路径",
+    quarterFinal: "八强",
+    semiFinal: "半决赛",
+    final: "决赛",
+    penalties: "点球 {score}",
+    filtersSeason: "赛季",
+    filtersCountry: "国家 / 地区",
+    filtersStatus: "参赛状态",
+    all: "全部",
+    china: "中国",
+    japan: "日本",
+    korea: "韩国",
+    appeared: "已出场",
+    registeredOnly: "仅报名",
+    resultCount: "当前显示 {count} / {total} 人",
+    player: "球员",
+    club: "俱乐部",
+    status: "状态",
+    apps: "出场",
+    starts: "首发",
+    minutes: "分钟",
+    goals: "进球",
+    assists: "助攻",
+    profile: "本站详情",
+    uefaNationality: "UEFA 国籍",
+    noPlayers: "当前筛选下没有球员。三季已核验样本中没有仅报名未出场者。",
+    spotlightSeason: "{season} 精选",
+    sourceNote: "来源以 UEFA 规则、赛季历史、官方比赛数据及俱乐部资料为主。",
+    methodology: "不是全量名单",
+    methodologyText: "三季共有 238 个球队赛季；若按每队最多 40 人导入，会产生数千条记录。因此其他国家只保留赛事代表人物，中日韩按 UEFA 官方国籍逐季核验。"
+  },
+  en: {
+    seasonCount: "completed seasons",
+    entrantTotal: "team-seasons",
+    cjkCount: "CJK players",
+    currentRules: "Eligibility baseline: 2025/26 regulations",
+    routeNote: "Title holder and duplicate qualification",
+    playerRules: "Player eligibility",
+    oldFormat: "Old format",
+    newFormat: "New format",
+    entrants: "{count} entrants",
+    champion: "Champions",
+    runnerUp: "Runners-up",
+    semiFinalists: "Other semi-finalists",
+    topScorers: "Top scorer(s)",
+    knockout: "Quarter-finals through final",
+    teams: "View all {count} entrants",
+    championsLeaguePath: "Champions League path",
+    domesticPath: "Domestic champions path",
+    quarterFinal: "Quarter-final",
+    semiFinal: "Semi-final",
+    final: "Final",
+    penalties: "pens {score}",
+    filtersSeason: "Season",
+    filtersCountry: "Country",
+    filtersStatus: "Participation",
+    all: "All",
+    china: "China",
+    japan: "Japan",
+    korea: "South Korea",
+    appeared: "Appeared",
+    registeredOnly: "Registered only",
+    resultCount: "Showing {count} of {total}",
+    player: "Player",
+    club: "Club",
+    status: "Status",
+    apps: "Apps",
+    starts: "Starts",
+    minutes: "Minutes",
+    goals: "Goals",
+    assists: "Assists",
+    profile: "Site profile",
+    uefaNationality: "UEFA nationality",
+    noPlayers: "No players match these filters. None of the verified players across these seasons were registered without appearing.",
+    spotlightSeason: "{season} picks",
+    sourceNote: "Sources prioritize UEFA regulations, season histories, official match data and club profiles.",
+    methodology: "Not a full roster dump",
+    methodologyText: "The three seasons represent 238 team-seasons. Importing up to 40 players per club would create thousands of records, so other nationalities are curated while CJK players are checked season by season using UEFA nationality."
+  }
+};
+
+function yt(key, variables = {}) {
+  const dictionary = YOUTH_LEAGUE_COPY[state.language] ?? YOUTH_LEAGUE_COPY.zh;
+  let template = dictionary[key] ?? YOUTH_LEAGUE_COPY.zh[key] ?? key;
+  for (const [name, value] of Object.entries(variables)) {
+    template = template.replaceAll(`{${name}}`, String(value));
+  }
+  return template;
+}
+
 const PAGE_METADATA = {
   home: { title: "page.home.title", description: "page.home.description" },
   players: { title: "page.players.title", description: "page.players.description" },
@@ -779,6 +955,10 @@ const PAGE_METADATA = {
   tournaments: {
     title: "page.tournaments.title",
     description: "page.tournaments.description"
+  },
+  "youth-league": {
+    title: "page.youth-league.title",
+    description: "page.youth-league.description"
   },
   "tournament-detail": {
     title: "page.tournament-detail.title",
@@ -1123,6 +1303,12 @@ async function boot() {
       return;
     }
 
+    if (page === "youth-league") {
+      initializeYouthLeagueFilters();
+      renderYouthLeaguePage();
+      return;
+    }
+
     if (page === "overseas") {
       initializeOverseasFilters();
       renderOverseasPage();
@@ -1169,7 +1355,8 @@ function setActiveNavigation() {
     if (
       link.dataset.nav === page ||
       (page === "player-detail" && link.dataset.nav === "players") ||
-      (page === "tournament-detail" && link.dataset.nav === "tournaments")
+      (page === "tournament-detail" && link.dataset.nav === "tournaments") ||
+      (page === "youth-league" && link.dataset.nav === "tournaments")
     ) {
       link.classList.add("is-active");
     }
@@ -3322,11 +3509,13 @@ function renderProjectCard(project) {
 
 function initializePlayerFilters() {
   const params = new URLSearchParams(window.location.search);
+  const supportedSorts = new Set(["age-asc", "age-desc", "market-value-desc", "market-value-asc"]);
   state.playerFilters.query = params.get("query") ?? "";
   state.playerFilters.country = params.get("country") ?? "all";
   state.playerFilters.ageBand = params.get("ageBand") ?? "all";
   state.playerFilters.leagueSystem = params.get("league") ?? "all";
   state.playerFilters.tag = params.get("tag") ?? "all";
+  state.playerFilters.sort = supportedSorts.has(params.get("sort")) ? params.get("sort") : "default";
   state.playerFilters.view = params.get("view") === "table" ? "table" : "cards";
 
   const countryOptions = uniqueValues(state.enrichedPlayers.map((player) => player.country)).map(
@@ -3376,6 +3565,22 @@ function initializePlayerFilters() {
     state.playerFilters.tag,
     t("players.filters.allTag")
   );
+  const sortSelect = document.querySelector("#playerSortSelect");
+  if (sortSelect) {
+    const sortOptions = [
+      { value: "default", label: t("players.sort.default") },
+      { value: "age-asc", label: t("players.sort.ageAsc") },
+      { value: "age-desc", label: t("players.sort.ageDesc") },
+      { value: "market-value-desc", label: t("players.sort.marketValueDesc") },
+      { value: "market-value-asc", label: t("players.sort.marketValueAsc") }
+    ];
+    sortSelect.innerHTML = sortOptions
+      .map(
+        (option) =>
+          `<option value="${escapeHtml(option.value)}" ${option.value === state.playerFilters.sort ? "selected" : ""}>${escapeHtml(option.label)}</option>`
+      )
+      .join("");
+  }
   setControlValue("#playerSearchInput", state.playerFilters.query);
 
   document.querySelector("#playerSearchInput")?.addEventListener("input", (event) => {
@@ -3398,6 +3603,10 @@ function initializePlayerFilters() {
     state.playerFilters.tag = event.target.value;
     renderPlayersPage();
   });
+  document.querySelector("#playerSortSelect")?.addEventListener("change", (event) => {
+    state.playerFilters.sort = event.target.value;
+    renderPlayersPage();
+  });
   document.querySelector("#viewCardsButton")?.addEventListener("click", () => {
     state.playerFilters.view = "cards";
     renderPlayersPage();
@@ -3412,6 +3621,7 @@ function initializePlayerFilters() {
     state.playerFilters.ageBand = "all";
     state.playerFilters.leagueSystem = "all";
     state.playerFilters.tag = "all";
+    state.playerFilters.sort = "default";
     state.playerFilters.view = "cards";
     renderPlayersPage();
   });
@@ -3436,7 +3646,57 @@ function getFilteredPlayers() {
 
       return matchesQuery && matchesCountry && matchesAge && matchesLeague && matchesTag;
     })
-    .sort(sortPlayers);
+    .sort(getPlayerSortComparator(state.playerFilters.sort));
+}
+
+function comparePlayersByAge(direction) {
+  return (left, right) => {
+    if (left.age !== right.age) {
+      return direction === "asc" ? left.age - right.age : right.age - left.age;
+    }
+
+    if (left.birth_date !== right.birth_date) {
+      return direction === "asc"
+        ? right.birth_date.localeCompare(left.birth_date)
+        : left.birth_date.localeCompare(right.birth_date);
+    }
+
+    return getPlayerPrimaryName(left).localeCompare(getPlayerPrimaryName(right), getSortLocale());
+  };
+}
+
+function comparePlayersByCurrentMarketValue(direction) {
+  return (left, right) => {
+    const leftHasValue = left.marketValueCurrentEur > 0;
+    const rightHasValue = right.marketValueCurrentEur > 0;
+    if (leftHasValue !== rightHasValue) {
+      return leftHasValue ? -1 : 1;
+    }
+
+    if (leftHasValue && left.marketValueCurrentEur !== right.marketValueCurrentEur) {
+      return direction === "asc"
+        ? left.marketValueCurrentEur - right.marketValueCurrentEur
+        : right.marketValueCurrentEur - left.marketValueCurrentEur;
+    }
+
+    return getPlayerPrimaryName(left).localeCompare(getPlayerPrimaryName(right), getSortLocale());
+  };
+}
+
+function getPlayerSortComparator(sort) {
+  if (sort === "age-asc") {
+    return comparePlayersByAge("asc");
+  }
+  if (sort === "age-desc") {
+    return comparePlayersByAge("desc");
+  }
+  if (sort === "market-value-desc") {
+    return comparePlayersByCurrentMarketValue("desc");
+  }
+  if (sort === "market-value-asc") {
+    return comparePlayersByCurrentMarketValue("asc");
+  }
+  return sortPlayers;
 }
 
 function comparePlayersByMarketValue(field) {
@@ -3549,12 +3809,14 @@ function renderPlayersPage() {
   setControlValue("#playerAgeFilter", state.playerFilters.ageBand);
   setControlValue("#playerLeagueFilter", state.playerFilters.leagueSystem);
   setControlValue("#playerTagFilter", state.playerFilters.tag);
+  setControlValue("#playerSortSelect", state.playerFilters.sort);
   replaceQueryParams({
     query: state.playerFilters.query,
     country: state.playerFilters.country,
     ageBand: state.playerFilters.ageBand,
     league: state.playerFilters.leagueSystem,
     tag: state.playerFilters.tag,
+    sort: state.playerFilters.sort,
     view: state.playerFilters.view
   });
 
@@ -3685,11 +3947,25 @@ function renderPlayerTableRow(player) {
       </td>
       <td>${escapeHtml(formatCountryName(player.country))}</td>
       <td>${escapeHtml(formatAge(player.age))}</td>
+      <td>${renderPlayerTableMarketValue(player)}</td>
       <td>${escapeHtml(affiliation.currentTeam || "-")}</td>
       <td>${escapeHtml(formatLeagueSystem(player.currentLeagueSystem))}</td>
       <td>${escapeHtml((player.focus_tags ?? []).slice(0, 3).map(formatTag).join(" / ") || "-")}</td>
       <td><a class="inline-link" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(t("players.card.details"))}</a></td>
     </tr>
+  `;
+}
+
+function renderPlayerTableMarketValue(player) {
+  const current = player.market_value?.current;
+  const peak = player.market_value?.peak;
+  if (!current && !peak) {
+    return "-";
+  }
+
+  return `
+    ${current ? `<strong>${escapeHtml(formatMarketValuePoint(current))}</strong>` : `<span>${escapeHtml(t("playerDetail.status.marketValueUnavailable"))}</span>`}
+    ${peak ? `<div class="small-note">${escapeHtml(t("players.table.marketValuePeak", { value: formatMarketValuePoint(peak) }))}</div>` : ""}
   `;
 }
 
@@ -4479,6 +4755,243 @@ function renderArchiveTournamentCard(tournament) {
       <a class="primary-link primary-link-inline" href="${buildTournamentDetailUrl(tournament.id)}">${escapeHtml(t("tournaments.card.open"))}</a>
     </article>
   `;
+}
+
+function initializeYouthLeagueFilters() {
+  const params = new URLSearchParams(window.location.search);
+  for (const key of ["season", "country", "status"]) {
+    if (params.get(key)) {
+      state.youthLeagueFilters[key] = params.get(key);
+    }
+  }
+
+  document.querySelector("#youthLeagueFilters")?.addEventListener("change", (event) => {
+    const control = event.target.closest("[data-youth-filter]");
+    if (!control) {
+      return;
+    }
+    state.youthLeagueFilters[control.dataset.youthFilter] = control.value;
+    renderYouthLeaguePlayers();
+  });
+}
+
+function getYouthLeagueData() {
+  return state.overview?.uefa_youth_league ?? null;
+}
+
+function renderYouthLeagueHero(topic) {
+  const entrantTotal = topic.seasons.reduce((total, season) => total + season.entrant_count, 0);
+  const node = document.querySelector("#youthLeagueHeroStats");
+  node.innerHTML = `
+    <p class="eyebrow">${escapeHtml(yt("currentRules"))}</p>
+    <div class="youth-hero-metrics">
+      <div><strong>${topic.seasons.length}</strong><span>${escapeHtml(yt("seasonCount"))}</span></div>
+      <div><strong>${entrantTotal}</strong><span>${escapeHtml(yt("entrantTotal"))}</span></div>
+      <div><strong>${topic.cjk_players.length}</strong><span>${escapeHtml(yt("cjkCount"))}</span></div>
+    </div>
+  `;
+}
+
+function renderYouthLeagueQualification(topic) {
+  const node = document.querySelector("#youthLeagueQualification");
+  const qualification = topic.qualification;
+  const rules = topic.player_eligibility.rules;
+  node.innerHTML = `
+    <div class="youth-rule-paths">
+      ${qualification.paths
+        .map(
+          (path) => `
+            <article class="youth-rule-card">
+              <h3>${escapeHtml(localizeText(path.title))}</h3>
+              <p>${escapeHtml(localizeText(path.description))}</p>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+    <article class="youth-rule-note">
+      <strong>${escapeHtml(yt("routeNote"))}</strong>
+      <p>${escapeHtml(localizeText(qualification.holder_rule))}</p>
+      <p>${escapeHtml(localizeText(qualification.duplicate_rule))}</p>
+    </article>
+    <div class="section-head compact-head"><h3>${escapeHtml(yt("playerRules"))}</h3></div>
+    <div class="youth-eligibility-grid">
+      ${rules
+        .map(
+          (rule) => `
+            <article class="youth-eligibility-card">
+              <h4>${escapeHtml(localizeText(rule.title))}</h4>
+              <p>${escapeHtml(localizeText(rule.description))}</p>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+    <article class="youth-methodology-note">
+      <strong>${escapeHtml(yt("methodology"))}</strong>
+      <p>${escapeHtml(yt("methodologyText"))}</p>
+    </article>
+  `;
+}
+
+function formatYouthRound(round) {
+  return {
+    "quarter-final": yt("quarterFinal"),
+    "semi-final": yt("semiFinal"),
+    final: yt("final")
+  }[round] ?? round;
+}
+
+function renderYouthLeagueKnockout(season) {
+  const grouped = ["quarter-final", "semi-final", "final"];
+  return grouped
+    .map((round) => {
+      const matches = season.knockout.filter((match) => match.round === round);
+      return `
+        <div class="youth-knockout-round">
+          <h4>${escapeHtml(formatYouthRound(round))}</h4>
+          ${matches
+            .map(
+              (match) => `
+                <div class="youth-score-row">
+                  <time datetime="${escapeHtml(match.date)}">${escapeHtml(formatDate(match.date))}</time>
+                  <span>${escapeHtml(formatClubName(match.home))}</span>
+                  <strong>${escapeHtml(match.score)}${match.penalties ? ` <small>${escapeHtml(yt("penalties", { score: match.penalties }))}</small>` : ""}</strong>
+                  <span>${escapeHtml(formatClubName(match.away))}</span>
+                </div>
+              `
+            )
+            .join("")}
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderYouthLeagueSeasonCard(season) {
+  const teams = Object.values(season.teams_by_path).flat();
+  const scorerText = season.top_scorers
+    .map((scorer) => `${scorer.name} (${formatClubName(scorer.club)}, ${scorer.goals})`)
+    .join(" · ");
+  const eraLabel = season.format.era === "old" ? yt("oldFormat") : yt("newFormat");
+  return `
+    <article class="youth-season-card">
+      <div class="section-head compact-head">
+        <div><p class="eyebrow">${escapeHtml(eraLabel)}</p><h3>${escapeHtml(season.label)}</h3></div>
+        <span class="chip">${escapeHtml(yt("entrants", { count: season.entrant_count }))}</span>
+      </div>
+      <p>${escapeHtml(localizeText(season.format.description))}</p>
+      <dl class="youth-season-summary">
+        <div><dt>${escapeHtml(yt("champion"))}</dt><dd>${escapeHtml(formatClubName(season.champion))}</dd></div>
+        <div><dt>${escapeHtml(yt("runnerUp"))}</dt><dd>${escapeHtml(formatClubName(season.runner_up))}</dd></div>
+        <div><dt>${escapeHtml(yt("semiFinalists"))}</dt><dd>${escapeHtml(season.semi_finalists.map(formatClubName).join(" · "))}</dd></div>
+        <div><dt>${escapeHtml(yt("topScorers"))}</dt><dd>${escapeHtml(scorerText)}</dd></div>
+      </dl>
+      <div class="youth-knockout"><h4>${escapeHtml(yt("knockout"))}</h4>${renderYouthLeagueKnockout(season)}</div>
+      <details class="youth-team-details">
+        <summary>${escapeHtml(yt("teams", { count: teams.length }))}</summary>
+        <div class="youth-team-columns">
+          <div><h4>${escapeHtml(yt("championsLeaguePath"))}</h4><p>${season.teams_by_path.champions_league.map(formatClubName).map(escapeHtml).join(" · ")}</p></div>
+          <div><h4>${escapeHtml(yt("domesticPath"))}</h4><p>${season.teams_by_path.domestic_champions.map(formatClubName).map(escapeHtml).join(" · ")}</p></div>
+        </div>
+      </details>
+    </article>
+  `;
+}
+
+function getYouthCountryLabel(code) {
+  return { CHN: yt("china"), JPN: yt("japan"), KOR: yt("korea") }[code] ?? code;
+}
+
+function renderYouthLeagueFilterSelect(key, label, options) {
+  const selected = state.youthLeagueFilters[key];
+  return `
+    <label><span>${escapeHtml(label)}</span>
+      <select data-youth-filter="${escapeHtml(key)}">
+        ${options.map((option) => `<option value="${escapeHtml(option.value)}"${option.value === selected ? " selected" : ""}>${escapeHtml(option.label)}</option>`).join("")}
+      </select>
+    </label>
+  `;
+}
+
+function getFilteredYouthLeaguePlayers(topic) {
+  return topic.cjk_players.filter((player) => {
+    const filters = state.youthLeagueFilters;
+    return (filters.season === "all" || player.season_id === filters.season) &&
+      (filters.country === "all" || player.country_code === filters.country) &&
+      (filters.status === "all" || player.status === filters.status);
+  });
+}
+
+function renderYouthLeaguePlayers() {
+  const topic = getYouthLeagueData();
+  const filters = document.querySelector("#youthLeagueFilters");
+  const seasons = topic.seasons.map((season) => ({ value: season.id, label: season.label }));
+  filters.innerHTML = [
+    renderYouthLeagueFilterSelect("season", yt("filtersSeason"), [{ value: "all", label: yt("all") }, ...seasons]),
+    renderYouthLeagueFilterSelect("country", yt("filtersCountry"), [
+      { value: "all", label: yt("all") }, { value: "CHN", label: yt("china") }, { value: "JPN", label: yt("japan") }, { value: "KOR", label: yt("korea") }
+    ]),
+    renderYouthLeagueFilterSelect("status", yt("filtersStatus"), [
+      { value: "all", label: yt("all") }, { value: "appeared", label: yt("appeared") }, { value: "registered-only", label: yt("registeredOnly") }
+    ])
+  ].join("");
+
+  replaceQueryParams(state.youthLeagueFilters);
+  const players = getFilteredYouthLeaguePlayers(topic);
+  document.querySelector("#youthLeagueCjkMeta").textContent = yt("resultCount", { count: players.length, total: topic.cjk_players.length });
+  document.querySelector("#youthLeaguePlayerHead").innerHTML = `<tr><th>${escapeHtml(yt("player"))}</th><th>${escapeHtml(yt("filtersSeason"))}</th><th>${escapeHtml(yt("uefaNationality"))}</th><th>${escapeHtml(yt("club"))}</th><th>${escapeHtml(yt("status"))}</th><th>${escapeHtml(yt("apps"))}</th><th>${escapeHtml(yt("starts"))}</th><th>${escapeHtml(yt("minutes"))}</th><th>${escapeHtml(yt("goals"))}</th><th>${escapeHtml(yt("assists"))}</th></tr>`;
+  document.querySelector("#youthLeaguePlayerBody").innerHTML = players
+    .map((player) => {
+      const displayName = state.language === "en" ? player.names.en : player.names.zh;
+      const nameMarkup = player.player_id
+        ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(displayName)}</a>`
+        : `<strong>${escapeHtml(displayName)}</strong>`;
+      const nativeName = player.names.native && player.names.native !== displayName ? `<small>${escapeHtml(player.names.native)}</small>` : "";
+      return `<tr><td>${nameMarkup}${nativeName}</td><td>${escapeHtml(topic.seasons.find((season) => season.id === player.season_id)?.label ?? player.season_id)}</td><td>${escapeHtml(getYouthCountryLabel(player.country_code))}</td><td>${escapeHtml(formatClubName(player.club))}</td><td><span class="chip">${escapeHtml(player.status === "appeared" ? yt("appeared") : yt("registeredOnly"))}</span></td><td>${player.appearances}</td><td>${player.starts}</td><td>${player.minutes}</td><td>${player.goals}</td><td>${player.assists}</td></tr>`;
+    })
+    .join("");
+  const empty = document.querySelector("#youthLeaguePlayerEmpty");
+  empty.textContent = yt("noPlayers");
+  empty.hidden = players.length > 0;
+  document.querySelector(".youth-player-table-shell").hidden = players.length === 0;
+}
+
+function renderYouthLeagueSpotlights(topic) {
+  const container = document.querySelector("#youthLeagueSpotlights");
+  container.innerHTML = topic.seasons
+    .map((season) => {
+      const players = topic.other_player_spotlights.filter((player) => player.season_id === season.id);
+      return `
+        <article class="youth-spotlight-season">
+          <h3>${escapeHtml(yt("spotlightSeason", { season: season.label }))}</h3>
+          <div>${players.map((player) => `<p><strong>${escapeHtml(player.name)}</strong><span>${escapeHtml(formatClubName(player.club))}</span><small>${escapeHtml(localizeText(player.reason))}</small></p>`).join("")}</div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function renderYouthLeagueSources(topic) {
+  document.querySelector("#youthLeagueSources").innerHTML = `
+    <p class="section-note">${escapeHtml(yt("sourceNote"))}</p>
+    <div class="source-link-grid">
+      ${topic.sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(source.label)}</span><strong>↗</strong></a>`).join("")}
+    </div>
+  `;
+}
+
+function renderYouthLeaguePage() {
+  const topic = getYouthLeagueData();
+  if (!topic) {
+    throw new Error("UEFA Youth League data is unavailable.");
+  }
+  renderYouthLeagueHero(topic);
+  renderYouthLeagueQualification(topic);
+  document.querySelector("#youthLeagueSeasonCards").innerHTML = topic.seasons.map(renderYouthLeagueSeasonCard).join("");
+  renderYouthLeaguePlayers();
+  renderYouthLeagueSpotlights(topic);
+  renderYouthLeagueSources(topic);
 }
 
 function initializeOverseasFilters() {

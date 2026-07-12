@@ -190,6 +190,10 @@ export async function loadDataset() {
   const overseasHistory = await readJson(path.join(paths.raw, "overseas-history.json"));
   const dossiers = await readJson(path.join(paths.raw, "dossiers.json"));
   const tournamentArchive = await readJson(path.join(paths.raw, "tournament-archive.json"));
+  const uefaYouthLeague = await readOptionalJson(
+    path.join(paths.raw, "uefa-youth-league.json"),
+    null
+  );
   const chinaMenYouthCoaches = await readOptionalJson(
     path.join(paths.raw, "china-men-youth-coaches.json"),
     null
@@ -210,6 +214,7 @@ export async function loadDataset() {
     overseasHistory,
     dossiers,
     tournamentArchive,
+    uefaYouthLeague,
     chinaMenYouthCoaches,
     bigFiveAsianCoaches,
     asianCoaches,

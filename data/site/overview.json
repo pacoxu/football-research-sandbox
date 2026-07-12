@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11",
+  "generated_at": "2026-07-12",
   "stats": {
     "player_count": 185,
     "country_count": 4,
@@ -16011,6 +16011,1078 @@
       ]
     }
   ],
+  "uefa_youth_league": {
+    "meta": {
+      "id": "uefa-youth-league",
+      "name": {
+        "zh": "欧洲青年冠军联赛",
+        "en": "UEFA Youth League"
+      },
+      "scope": {
+        "zh": "最近三个已完成赛季；中日韩按 UEFA 官方国籍尽量完整，其他国家仅精选。",
+        "en": "The latest three completed seasons, with comprehensive CJK coverage by UEFA nationality and curated players from elsewhere."
+      },
+      "checked_at": "2026-07-12"
+    },
+    "qualification": {
+      "applies_from": "2024/25",
+      "paths": [
+        {
+          "id": "champions-league-path",
+          "title": {
+            "zh": "欧冠路径",
+            "en": "Champions League path"
+          },
+          "description": {
+            "zh": "参加 UEFA 欧冠联赛阶段的 36 家俱乐部，其青年队进入青年欧冠联赛阶段，赛程和对手与成年队前六轮对应。前 22 名晋级三十二强。",
+            "en": "The youth teams of the 36 clubs in the UEFA Champions League league phase enter a six-match league phase mirroring the senior fixtures. The top 22 reach the round of 32."
+          },
+          "source_ids": [
+            "rules-2026-entries",
+            "format-2026"
+          ]
+        },
+        {
+          "id": "domestic-champions-path",
+          "title": {
+            "zh": "国内青年冠军路径",
+            "en": "Domestic champions path"
+          },
+          "description": {
+            "zh": "各 UEFA 会员协会的国内青年冠军进入最多三轮主客场淘汰赛，10 支球队晋级三十二强；协会若没有合资格青年赛事，可不产生参赛队。",
+            "en": "Domestic youth champions from UEFA member associations enter up to three two-legged knockout rounds, producing ten round-of-32 qualifiers; associations without an eligible youth competition may have no entrant."
+          },
+          "source_ids": [
+            "rules-2026-entries",
+            "format-2026"
+          ]
+        }
+      ],
+      "holder_rule": {
+        "zh": "卫冕冠军若未通过其他方式获得资格，保证进入国内青年冠军路径第二轮。",
+        "en": "The title holders are guaranteed a place in round two of the domestic champions path if they have not otherwise qualified."
+      },
+      "duplicate_rule": {
+        "zh": "同时符合两条路径的俱乐部进入欧冠路径；其国内青年冠军名额通常由该协会青年联赛亚军顺延。",
+        "en": "A club qualifying through both routes enters the Champions League path; its domestic berth normally passes to the youth league runners-up from that association."
+      },
+      "source_ids": [
+        "rules-2026-entries",
+        "format-2026"
+      ]
+    },
+    "player_eligibility": {
+      "season": "2025/26",
+      "birth_year_minimum": 2007,
+      "overage_birth_year_minimum": 2006,
+      "overage_season_list_limit": 5,
+      "overage_match_list_limit": 3,
+      "season_list_limit": 40,
+      "match_list_limit": 20,
+      "club_trained_match_list_minimum": 14,
+      "rules": [
+        {
+          "id": "age",
+          "title": {
+            "zh": "年龄",
+            "en": "Age"
+          },
+          "description": {
+            "zh": "2025/26 赛季原则上须出生于 2007 年 1 月 1 日或以后；最多可报名 5 名出生于 2006 年 1 月 1 日或以后且满足俱乐部培养年限的球员，每场 20 人名单中最多使用其中 3 人。",
+            "en": "For 2025/26, players are generally born on or after 1 January 2007. Up to five players born on or after 1 January 2006 may be registered if they satisfy club-training conditions, with no more than three on a 20-player match list."
+          },
+          "source_ids": [
+            "rules-2026-eligibility",
+            "rules-2026-lists"
+          ]
+        },
+        {
+          "id": "lists",
+          "title": {
+            "zh": "报名与比赛名单",
+            "en": "Registration and match lists"
+          },
+          "description": {
+            "zh": "赛季球员名单最多 40 人且至少包含 4 名门将；每场比赛提交 20 人名单。球员必须注册在参赛俱乐部，且同赛季只能代表一家俱乐部参赛。",
+            "en": "The season list contains up to 40 players and at least four goalkeepers; each match uses a 20-player shortlist. Players must be registered with the entrant and may represent only one club in the competition that season."
+          },
+          "source_ids": [
+            "rules-2026-lists"
+          ]
+        },
+        {
+          "id": "club-trained",
+          "title": {
+            "zh": "本俱乐部培养",
+            "en": "Club-trained requirement"
+          },
+          "description": {
+            "zh": "每场 20 人名单中至少 14 人须在 15 岁生日后连续为本俱乐部效力两年，或在三年内累计两年（其中最多一年可租借至同协会俱乐部）。",
+            "en": "At least 14 players on each 20-player list must have been registered with the club for two uninterrupted years after turning 15, or for two of three years with at most one year on loan within the same association."
+          },
+          "source_ids": [
+            "rules-2026-eligibility",
+            "rules-2026-lists"
+          ]
+        },
+        {
+          "id": "senior-cap",
+          "title": {
+            "zh": "成年 UEFA 赛事限制",
+            "en": "Senior UEFA appearance cap"
+          },
+          "description": {
+            "zh": "球员一旦从联赛阶段起在 UEFA 成年俱乐部赛事累计出场 3 场或以上，即不再具备该赛季青年欧冠参赛资格。",
+            "en": "Once a player has appeared in three or more UEFA senior club-competition matches from the league phase onward, they are no longer eligible for that season's Youth League."
+          },
+          "source_ids": [
+            "rules-2026-eligibility"
+          ]
+        }
+      ]
+    },
+    "seasons": [
+      {
+        "id": "2023-24",
+        "label": "2023/24",
+        "entrant_count": 64,
+        "format": {
+          "era": "old",
+          "description": {
+            "zh": "32 支欧冠路径球队进行 8 个小组；8 个头名直进十六强，8 个次名与国内冠军路径的 8 支胜者进行附加赛。国内路径先进行两轮主客场淘汰赛。",
+            "en": "Thirty-two Champions League-path teams played eight groups. Group winners reached the round of 16, while runners-up faced the eight domestic-path winners in play-offs after two domestic-path rounds."
+          }
+        },
+        "teams_by_path": {
+          "champions_league": [
+            "Bayern München",
+            "Manchester United",
+            "Copenhagen",
+            "Galatasaray",
+            "Sevilla",
+            "Arsenal",
+            "PSV Eindhoven",
+            "Lens",
+            "Napoli",
+            "Real Madrid",
+            "Braga",
+            "Union Berlin",
+            "Benfica",
+            "Inter",
+            "Salzburg",
+            "Real Sociedad",
+            "Feyenoord",
+            "Atlético de Madrid",
+            "Lazio",
+            "Celtic",
+            "Paris Saint-Germain",
+            "Borussia Dortmund",
+            "AC Milan",
+            "Newcastle United",
+            "Manchester City",
+            "RB Leipzig",
+            "Crvena zvezda",
+            "Young Boys",
+            "Barcelona",
+            "Porto",
+            "Shakhtar Donetsk",
+            "Royal Antwerp"
+          ],
+          "domestic_champions": [
+            "KKS Lech Poznań",
+            "Nantes",
+            "Pafos",
+            "Žilina",
+            "Rukh Lviv",
+            "Sarajevo",
+            "Sparta Praha",
+            "Maccabi Haifa",
+            "AZ Alkmaar",
+            "Klaipėda FM",
+            "Malmö",
+            "HJK Helsinki",
+            "Molde",
+            "Hamilton Academical",
+            "Famalicão",
+            "Midtjylland",
+            "Turan Turkistan",
+            "Sheriff Tiraspol",
+            "Universitatea Craiova",
+            "Partizan",
+            "Olympiacos",
+            "Lecce",
+            "Dinamo Minsk",
+            "Ludogorets",
+            "Maribor",
+            "Mainz",
+            "Gent",
+            "Basel",
+            "Dinamo Zagreb",
+            "İstanbul Başakşehir",
+            "Gabala",
+            "Puskás Akadémia"
+          ]
+        },
+        "knockout": [
+          {
+            "round": "quarter-final",
+            "date": "2024-03-12",
+            "home": "Bayern München",
+            "away": "Olympiacos",
+            "score": "1–3"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2024-03-12",
+            "home": "Nantes",
+            "away": "Copenhagen",
+            "score": "3–3",
+            "penalties": "5–4"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2024-03-13",
+            "home": "AC Milan",
+            "away": "Real Madrid",
+            "score": "1–1",
+            "penalties": "4–3"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2024-03-13",
+            "home": "Mainz",
+            "away": "Porto",
+            "score": "1–4"
+          },
+          {
+            "round": "semi-final",
+            "date": "2024-04-19",
+            "home": "Olympiacos",
+            "away": "Nantes",
+            "score": "0–0",
+            "penalties": "3–1"
+          },
+          {
+            "round": "semi-final",
+            "date": "2024-04-19",
+            "home": "Porto",
+            "away": "AC Milan",
+            "score": "2–2",
+            "penalties": "3–4"
+          },
+          {
+            "round": "final",
+            "date": "2024-04-22",
+            "home": "Olympiacos",
+            "away": "AC Milan",
+            "score": "3–0"
+          }
+        ],
+        "champion": "Olympiacos",
+        "runner_up": "AC Milan",
+        "semi_finalists": [
+          "Nantes",
+          "Porto"
+        ],
+        "top_scorers": [
+          {
+            "name": "Amin Chiakha",
+            "club": "Copenhagen",
+            "goals": 7
+          },
+          {
+            "name": "Rodrigo Mora",
+            "club": "Porto",
+            "goals": 7
+          }
+        ],
+        "source_ids": [
+          "teams-2024",
+          "history-2024",
+          "knockout-2024"
+        ]
+      },
+      {
+        "id": "2024-25",
+        "label": "2024/25",
+        "entrant_count": 88,
+        "format": {
+          "era": "new",
+          "description": {
+            "zh": "新制首季：36 支欧冠路径球队进行 6 轮联赛阶段，前 22 名晋级三十二强；52 支国内路径球队经过最多三轮主客场淘汰赛，产生另外 10 席。",
+            "en": "First season of the new format: 36 Champions League-path teams played six league-phase matches, with the top 22 reaching the round of 32; 52 domestic-path teams contested up to three two-legged rounds for the other ten places."
+          }
+        },
+        "teams_by_path": {
+          "champions_league": [
+            "Manchester City",
+            "Arsenal",
+            "Liverpool",
+            "Aston Villa",
+            "Real Madrid",
+            "Barcelona",
+            "Girona",
+            "Atlético de Madrid",
+            "Bayer Leverkusen",
+            "Stuttgart",
+            "Bayern München",
+            "RB Leipzig",
+            "Borussia Dortmund",
+            "Inter",
+            "AC Milan",
+            "Juventus",
+            "Atalanta",
+            "Bologna",
+            "Paris Saint-Germain",
+            "Monaco",
+            "Brest",
+            "Lille",
+            "PSV Eindhoven",
+            "Feyenoord",
+            "Sporting CP",
+            "Benfica",
+            "Club Brugge",
+            "Celtic",
+            "Sturm Graz",
+            "Salzburg",
+            "Crvena zvezda",
+            "Young Boys",
+            "Shakhtar Donetsk",
+            "Sparta Praha",
+            "Dinamo Zagreb",
+            "Slovan Bratislava"
+          ],
+          "domestic_champions": [
+            "Olympiacos",
+            "Manchester United",
+            "Real Betis",
+            "Hoffenheim",
+            "Sassuolo",
+            "Auxerre",
+            "AZ Alkmaar",
+            "Braga",
+            "Genk",
+            "Aberdeen",
+            "Rapid Wien",
+            "IMT",
+            "Trabzonspor",
+            "Basel",
+            "Dynamo Kyiv",
+            "Zbrojovka Brno",
+            "Strømsgodset",
+            "Midtjylland",
+            "Lokomotiva Zagreb",
+            "Maccabi Petah Tikva",
+            "Pafos",
+            "IFK Göteborg",
+            "Legia Warszawa",
+            "Puskás Akadémia",
+            "Farul Constanța",
+            "CSKA Sofia",
+            "Trenčín",
+            "Sabah",
+            "Kairat Almaty",
+            "Maribor",
+            "Academia Rebeja",
+            "2 Korriku",
+            "BFC Daugavpils",
+            "UCD",
+            "Honka Espoo",
+            "Žalgiris",
+            "Pyunik",
+            "Dinamo Minsk",
+            "Sarajevo",
+            "Progrès Niederkorn",
+            "HB",
+            "Cliftonville",
+            "Valletta",
+            "Dinamo Tbilisi",
+            "Tallinna Kalev",
+            "Stjarnan",
+            "Bylis",
+            "The New Saints",
+            "Lincoln Red Imps",
+            "AP Brera Strumica",
+            "FC Santa Coloma",
+            "Budućnost Podgorica"
+          ]
+        },
+        "knockout": [
+          {
+            "round": "quarter-final",
+            "date": "2025-04-01",
+            "home": "Salzburg",
+            "away": "Olympiacos",
+            "score": "1–0"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2025-04-01",
+            "home": "Trabzonspor",
+            "away": "Inter",
+            "score": "1–0"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2025-04-02",
+            "home": "Stuttgart",
+            "away": "Barcelona",
+            "score": "1–2"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2025-04-02",
+            "home": "AZ Alkmaar",
+            "away": "Manchester City",
+            "score": "1–0"
+          },
+          {
+            "round": "semi-final",
+            "date": "2025-04-25",
+            "home": "Salzburg",
+            "away": "Trabzonspor",
+            "score": "1–2"
+          },
+          {
+            "round": "semi-final",
+            "date": "2025-04-25",
+            "home": "AZ Alkmaar",
+            "away": "Barcelona",
+            "score": "0–1"
+          },
+          {
+            "round": "final",
+            "date": "2025-04-28",
+            "home": "Trabzonspor",
+            "away": "Barcelona",
+            "score": "1–4"
+          }
+        ],
+        "champion": "Barcelona",
+        "runner_up": "Trabzonspor",
+        "semi_finalists": [
+          "Salzburg",
+          "AZ Alkmaar"
+        ],
+        "top_scorers": [
+          {
+            "name": "Matvii Ponomarenko",
+            "club": "Dynamo Kyiv",
+            "goals": 8
+          },
+          {
+            "name": "Mahamadou Sangaré",
+            "club": "Paris Saint-Germain",
+            "goals": 8
+          },
+          {
+            "name": "Phillip Verhounig",
+            "club": "Salzburg",
+            "goals": 8
+          }
+        ],
+        "source_ids": [
+          "teams-2025",
+          "history-2025",
+          "knockout-2025"
+        ]
+      },
+      {
+        "id": "2025-26",
+        "label": "2025/26",
+        "entrant_count": 86,
+        "format": {
+          "era": "new",
+          "description": {
+            "zh": "36 支欧冠路径球队进行 6 轮联赛阶段，前 22 名晋级三十二强；50 支国内路径球队经过最多三轮主客场淘汰赛，产生另外 10 席。",
+            "en": "Thirty-six Champions League-path teams played six league-phase matches, with the top 22 reaching the round of 32; 50 domestic-path teams contested up to three two-legged rounds for the other ten places."
+          }
+        },
+        "teams_by_path": {
+          "champions_league": [
+            "Liverpool",
+            "Arsenal",
+            "Manchester City",
+            "Chelsea",
+            "Newcastle United",
+            "Tottenham Hotspur",
+            "Napoli",
+            "Inter",
+            "Atalanta",
+            "Juventus",
+            "Barcelona",
+            "Real Madrid",
+            "Atlético de Madrid",
+            "Athletic Club",
+            "Villarreal",
+            "Bayern München",
+            "Bayer Leverkusen",
+            "Eintracht Frankfurt",
+            "Borussia Dortmund",
+            "Paris Saint-Germain",
+            "Marseille",
+            "Monaco",
+            "PSV Eindhoven",
+            "Ajax",
+            "Sporting CP",
+            "Benfica",
+            "Union SG",
+            "Club Brugge",
+            "Galatasaray",
+            "Slavia Praha",
+            "Bodø/Glimt",
+            "Olympiacos",
+            "Copenhagen",
+            "Pafos",
+            "Qarabağ",
+            "Kairat Almaty"
+          ],
+          "domestic_champions": [
+            "Aston Villa",
+            "Fiorentina",
+            "Real Betis",
+            "Köln",
+            "Nantes",
+            "AZ Alkmaar",
+            "Porto",
+            "Genk",
+            "Trabzonspor",
+            "Baník Ostrava",
+            "Hibernian",
+            "Basel",
+            "Austria Wien",
+            "Brann",
+            "PAOK",
+            "Midtjylland",
+            "Maccabi Haifa",
+            "Dynamo Kyiv",
+            "Crvena zvezda",
+            "Lokomotiva Zagreb",
+            "Legia Warszawa",
+            "AEK Larnaca",
+            "Puskás Akadémia",
+            "Brommapojkarna",
+            "FCSB",
+            "Ludogorets",
+            "Sabah",
+            "Žilina",
+            "Bravo",
+            "2 Korriku",
+            "Ordabasy",
+            "HJK Helsinki",
+            "Shelbourne",
+            "Jelgava",
+            "Víkingur",
+            "Zrinjski Mostar",
+            "KA Akureyri",
+            "Larne",
+            "Racing Union Luxembourg",
+            "NFA Be1",
+            "Naxxar Lions",
+            "Dinamo Tbilisi",
+            "Skenderbeu",
+            "Narva Trans",
+            "Dinamo Minsk",
+            "Rabotnički",
+            "Inter Escaldes",
+            "Haverfordwest County",
+            "Budućnost Podgorica",
+            "Lincoln Red Imps"
+          ]
+        },
+        "knockout": [
+          {
+            "round": "quarter-final",
+            "date": "2026-03-17",
+            "home": "Atlético de Madrid",
+            "away": "Club Brugge",
+            "score": "0–4"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2026-03-17",
+            "home": "Villarreal",
+            "away": "Paris Saint-Germain",
+            "score": "0–1"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2026-03-18",
+            "home": "Inter",
+            "away": "Benfica",
+            "score": "2–3"
+          },
+          {
+            "round": "quarter-final",
+            "date": "2026-03-18",
+            "home": "Real Madrid",
+            "away": "Sporting CP",
+            "score": "2–1"
+          },
+          {
+            "round": "semi-final",
+            "date": "2026-04-17",
+            "home": "Benfica",
+            "away": "Club Brugge",
+            "score": "1–3"
+          },
+          {
+            "round": "semi-final",
+            "date": "2026-04-17",
+            "home": "Real Madrid",
+            "away": "Paris Saint-Germain",
+            "score": "1–1",
+            "penalties": "5–4"
+          },
+          {
+            "round": "final",
+            "date": "2026-04-20",
+            "home": "Club Brugge",
+            "away": "Real Madrid",
+            "score": "1–1",
+            "penalties": "2–4"
+          }
+        ],
+        "champion": "Real Madrid",
+        "runner_up": "Club Brugge",
+        "semi_finalists": [
+          "Benfica",
+          "Paris Saint-Germain"
+        ],
+        "top_scorers": [
+          {
+            "name": "Rodrigo Marina",
+            "club": "Real Betis",
+            "goals": 10
+          }
+        ],
+        "source_ids": [
+          "teams-2026",
+          "history-2026",
+          "final-2026",
+          "records"
+        ]
+      }
+    ],
+    "cjk_players": [
+      {
+        "id": "uyl-2024-toki-yukutomo",
+        "season_id": "2023-24",
+        "uefa_player_id": 250189958,
+        "player_id": null,
+        "names": {
+          "zh": "行友翔哉",
+          "en": "Toki Yukutomo",
+          "native": "行友翔哉"
+        },
+        "country_code": "JPN",
+        "club": "Famalicão",
+        "status": "appeared",
+        "appearances": 2,
+        "starts": 2,
+        "minutes": 180,
+        "goals": 0,
+        "assists": 0,
+        "source_ids": [
+          "uefa-api-players",
+          "uefa-api-matches",
+          "jfa-yukutomo"
+        ]
+      },
+      {
+        "id": "uyl-2025-minsu-kim",
+        "season_id": "2024-25",
+        "uefa_player_id": 250199913,
+        "player_id": null,
+        "names": {
+          "zh": "金民洙",
+          "en": "Min-su Kim",
+          "native": "김민수"
+        },
+        "country_code": "KOR",
+        "club": "Girona",
+        "status": "appeared",
+        "appearances": 4,
+        "starts": 4,
+        "minutes": 360,
+        "goals": 1,
+        "assists": 1,
+        "source_ids": [
+          "uefa-api-players",
+          "uefa-api-matches",
+          "andorra-kim"
+        ]
+      },
+      {
+        "id": "uyl-2025-alexander-xie",
+        "season_id": "2024-25",
+        "uefa_player_id": 250201761,
+        "player_id": null,
+        "names": {
+          "zh": "Alexander Xie",
+          "en": "Alexander Xie",
+          "native": "Alexander Xie"
+        },
+        "country_code": "CHN",
+        "club": "Stuttgart",
+        "status": "appeared",
+        "appearances": 1,
+        "starts": 0,
+        "minutes": 6,
+        "goals": 0,
+        "assists": 0,
+        "source_ids": [
+          "uefa-api-players",
+          "uefa-api-matches"
+        ]
+      },
+      {
+        "id": "uyl-2026-kyunghyun-lee",
+        "season_id": "2025-26",
+        "uefa_player_id": 250212861,
+        "player_id": null,
+        "names": {
+          "zh": "Kyung-Hyun Lee",
+          "en": "Kyung-Hyun Lee",
+          "native": "이경현"
+        },
+        "country_code": "KOR",
+        "club": "Copenhagen",
+        "status": "appeared",
+        "appearances": 6,
+        "starts": 6,
+        "minutes": 467,
+        "goals": 0,
+        "assists": 0,
+        "source_ids": [
+          "uefa-api-players",
+          "uefa-api-matches",
+          "fck-lee"
+        ]
+      },
+      {
+        "id": "uyl-2026-seungsoo-park",
+        "season_id": "2025-26",
+        "uefa_player_id": 250213203,
+        "player_id": "kr-park-seungsoo-2007",
+        "names": {
+          "zh": "朴胜洙",
+          "en": "Seung-soo Park",
+          "native": "박승수"
+        },
+        "country_code": "KOR",
+        "club": "Newcastle United",
+        "status": "appeared",
+        "appearances": 6,
+        "starts": 4,
+        "minutes": 387,
+        "goals": 0,
+        "assists": 0,
+        "source_ids": [
+          "uefa-api-players",
+          "uefa-api-matches",
+          "newcastle-park"
+        ]
+      }
+    ],
+    "boundary_watch": [],
+    "other_player_spotlights": [
+      {
+        "season_id": "2023-24",
+        "name": "Amin Chiakha",
+        "club": "Copenhagen",
+        "reason": {
+          "zh": "并列赛季最佳射手（7 球）",
+          "en": "Joint season top scorer (7 goals)"
+        },
+        "source_ids": [
+          "history-2024"
+        ]
+      },
+      {
+        "season_id": "2023-24",
+        "name": "Rodrigo Mora",
+        "club": "Porto",
+        "reason": {
+          "zh": "并列赛季最佳射手（7 球）",
+          "en": "Joint season top scorer (7 goals)"
+        },
+        "source_ids": [
+          "history-2024"
+        ]
+      },
+      {
+        "season_id": "2023-24",
+        "name": "Christos Mouzakitis",
+        "club": "Olympiacos",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "history-2024"
+        ]
+      },
+      {
+        "season_id": "2023-24",
+        "name": "Antonios Papakanellos",
+        "club": "Olympiacos",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "history-2024"
+        ]
+      },
+      {
+        "season_id": "2023-24",
+        "name": "Theofanis Bakoulas",
+        "club": "Olympiacos",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "history-2024"
+        ]
+      },
+      {
+        "season_id": "2024-25",
+        "name": "Matvii Ponomarenko",
+        "club": "Dynamo Kyiv",
+        "reason": {
+          "zh": "并列赛季最佳射手（8 球）",
+          "en": "Joint season top scorer (8 goals)"
+        },
+        "source_ids": [
+          "history-2025"
+        ]
+      },
+      {
+        "season_id": "2024-25",
+        "name": "Mahamadou Sangaré",
+        "club": "Paris Saint-Germain",
+        "reason": {
+          "zh": "并列赛季最佳射手（8 球）",
+          "en": "Joint season top scorer (8 goals)"
+        },
+        "source_ids": [
+          "history-2025"
+        ]
+      },
+      {
+        "season_id": "2024-25",
+        "name": "Phillip Verhounig",
+        "club": "Salzburg",
+        "reason": {
+          "zh": "并列赛季最佳射手（8 球）",
+          "en": "Joint season top scorer (8 goals)"
+        },
+        "source_ids": [
+          "history-2025"
+        ]
+      },
+      {
+        "season_id": "2024-25",
+        "name": "Ibrahim Diarra",
+        "club": "Barcelona",
+        "reason": {
+          "zh": "决赛梅开二度",
+          "en": "Scored twice in the final"
+        },
+        "source_ids": [
+          "history-2025"
+        ]
+      },
+      {
+        "season_id": "2024-25",
+        "name": "Andrés Cuenca",
+        "club": "Barcelona",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "history-2025"
+        ]
+      },
+      {
+        "season_id": "2024-25",
+        "name": "Hugo Alba",
+        "club": "Barcelona",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "history-2025"
+        ]
+      },
+      {
+        "season_id": "2024-25",
+        "name": "Bican Tibukoğlu",
+        "club": "Trabzonspor",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "history-2025"
+        ]
+      },
+      {
+        "season_id": "2025-26",
+        "name": "Rodrigo Marina",
+        "club": "Real Betis",
+        "reason": {
+          "zh": "赛季最佳射手（10 球）",
+          "en": "Season top scorer (10 goals)"
+        },
+        "source_ids": [
+          "records"
+        ]
+      },
+      {
+        "season_id": "2025-26",
+        "name": "Jacobo Ortega",
+        "club": "Real Madrid",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "final-2026"
+        ]
+      },
+      {
+        "season_id": "2025-26",
+        "name": "Tobias Lund Jensen",
+        "club": "Club Brugge",
+        "reason": {
+          "zh": "决赛进球者",
+          "en": "Final goalscorer"
+        },
+        "source_ids": [
+          "final-2026"
+        ]
+      },
+      {
+        "season_id": "2025-26",
+        "name": "Javier Navarro",
+        "club": "Real Madrid",
+        "reason": {
+          "zh": "决赛点球大战扑出两球",
+          "en": "Saved two penalties in the final shoot-out"
+        },
+        "source_ids": [
+          "final-2026"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "rules-2026-entries",
+        "label": "UEFA Youth League 2025/26 regulations – Article 3",
+        "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-3-Entries-for-the-competition-Online"
+      },
+      {
+        "id": "rules-2026-eligibility",
+        "label": "UEFA Youth League 2025/26 regulations – Article 28",
+        "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-28-Player-eligibility-Online"
+      },
+      {
+        "id": "rules-2026-lists",
+        "label": "UEFA Youth League 2025/26 regulations – Article 29",
+        "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-29-Player-lists-Online"
+      },
+      {
+        "id": "format-2026",
+        "label": "UEFA 2025/26 calendar and format",
+        "url": "https://www.uefa.com/uefayouthleague/news/0298-1da14baa2d1f-bdd578e9645f-1000--2025-26-uefa-youth-league-calendar-format/"
+      },
+      {
+        "id": "teams-2024",
+        "label": "UEFA 2023/24 participating teams",
+        "url": "https://www.uefa.com/uefayouthleague/news/0284-18cbe5053ae3-d78dcf30926c-1000--which-teams-are-in-the-2023-24-youth-league/"
+      },
+      {
+        "id": "teams-2025",
+        "label": "UEFA 2024/25 participating teams",
+        "url": "https://www.uefa.com/uefayouthleague/news/0290-1b99bc2264a8-6faa93098603-1000--que-equipas-participam-na-youth-league-de-2024-25/"
+      },
+      {
+        "id": "teams-2026",
+        "label": "UEFA 2025/26 participating teams",
+        "url": "https://www.uefa.com/uefayouthleague/news/029c-1e8662f4f0cf-086e12e30890-1000--which-teams-are-in-the-2025-26-youth-league/"
+      },
+      {
+        "id": "history-2024",
+        "label": "UEFA Youth League 2023/24 history",
+        "url": "https://www.uefa.com/uefayouthleague/history/2024/"
+      },
+      {
+        "id": "knockout-2024",
+        "label": "UEFA 2023/24 quarter-finals and finals",
+        "url": "https://www.uefa.com/uefayouthleague/news/028b-1a4deb0db060-679e9e2b9d15-1000--milan-porto-olympiacos-nantes-into-finals/"
+      },
+      {
+        "id": "history-2025",
+        "label": "UEFA Youth League 2024/25 history",
+        "url": "https://www.uefa.com/uefayouthleague/history/2025/"
+      },
+      {
+        "id": "knockout-2025",
+        "label": "UEFA 2024/25 quarter-finals",
+        "url": "https://www.uefa.com/uefayouthleague/news/0297-1d3509909c36-908b0b343739-1000--uefa-youth-league-quarter-final-ties-salzburg-olympiacos/"
+      },
+      {
+        "id": "history-2026",
+        "label": "UEFA Youth League 2025/26 history",
+        "url": "https://www.uefa.com/uefayouthleague/history/2026/"
+      },
+      {
+        "id": "final-2026",
+        "label": "UEFA 2025/26 final report",
+        "url": "https://www.uefa.com/uefayouthleague/news/02a4-206fbf5baeb9-325c5dde91f2-1000--uefa-youth-league-final-report-club-brugge-1-1-real-madr/"
+      },
+      {
+        "id": "records",
+        "label": "UEFA Youth League all-time records and top scorers",
+        "url": "https://www.uefa.com/uefayouthleague/news/0253-0d0472189d41-ff9acc9e4636-1000--all-time-youth-league-records/"
+      },
+      {
+        "id": "uefa-api-players",
+        "label": "UEFA competition player registry API",
+        "url": "https://comp.uefa.com/v2/players?competitionId=2008"
+      },
+      {
+        "id": "uefa-api-matches",
+        "label": "UEFA match, lineup and event API",
+        "url": "https://match.uefa.com/v5/matches?competitionId=2008"
+      },
+      {
+        "id": "jfa-yukutomo",
+        "label": "JFA U-18 Japan squad – Toki Yukutomo",
+        "url": "https://www.jfa.jp/eng/national_team/u18_2023/20231122/member.html"
+      },
+      {
+        "id": "andorra-kim",
+        "label": "FC Andorra – Min-su Kim profile",
+        "url": "https://www.fcandorra.com/en/news/min-su-kim-welcome"
+      },
+      {
+        "id": "fck-lee",
+        "label": "F.C. Copenhagen – Kyung-Hyun Lee profile",
+        "url": "https://www.fck.dk/spiller/kyung-hyun-lee"
+      },
+      {
+        "id": "newcastle-park",
+        "label": "Newcastle United – Seung-soo Park signing",
+        "url": "https://www.newcastleunited.com/en/news/newcastle-united-sign-seung-soo-park"
+      }
+    ]
+  },
   "china_men_youth_coaches": {
     "id": "china-men-youth-coaches",
     "name": "中国男足 U 系列教练组",
