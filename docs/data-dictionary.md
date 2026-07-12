@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-07-11
+更新时间：2026-07-12
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -17,6 +17,7 @@
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
+| `data/raw/youth-development-systems.json` | 日本、韩国青训/学校/大学体系、竞赛关系和年度快照。 | 是 |
 | `data/site/players.json` | 前端使用的球员聚合 JSON。 | 否，由脚本生成 |
 | `data/site/overview.json` | 首页和专题页使用的聚合总览。 | 否，由脚本生成 |
 | `storage/youth-football.sqlite` | 本地 SQLite 查询库。 | 否，不提交 |
@@ -35,7 +36,7 @@
 | `birth_date` | 出生日期，格式 `YYYY-MM-DD`。 |
 | `age_band` | 年龄段，例如 `u17`、`u20`、`u21`、`u23`。 |
 | `primary_position` | 主要位置。 |
-| `registration_club` | 当前有效注册俱乐部，包含 `name` 和 `country`。 |
+| `registration_club` | 当前有效注册组织，包含 `name`、`country`，可含组织类型、母组织和合作学校。 |
 | `training_pathway` | 训练、学校、俱乐部、国家队或项目路径数组。 |
 | `focus_tags` | 页面筛选、专题和研究标签。 |
 | `tournament_participation` | 赛事、集训、留洋或专题参与记录。 |
@@ -50,6 +51,9 @@
 | --- | --- |
 | `name` | 当前有效注册俱乐部、学校队或组织名。 |
 | `country` | 俱乐部或组织所在国家/地区。 |
+| `organization_type` | `high-school`、`club-academy`、`university`、`professional-club`、`military-service-club` 或 `overseas-academy`。 |
+| `parent_organization` | 可选母俱乐部对象，包含 `name`、`country`；韩国职业梯队使用。 |
+| `education_partner` | 可选合作高中对象，包含 `name`、`country`；不得覆盖当前注册组织。 |
 
 不要把未来生效转会、试训、短训或媒体传闻写进 `registration_club`。这些应写在路径、参与记录或核验备注中。
 
@@ -63,6 +67,24 @@
 | `organization` | 俱乐部、学校、国家队、项目或机构。 |
 | `country` | 阶段所在国家/地区。 |
 | `note` | 该阶段的来源背景、口径和限制。 |
+| `organization_type` | 可选，沿用当前组织类型枚举。 |
+| `competition_context_ids` | 可选，引用 `youth-development-systems.json` 中的竞赛 ID。 |
+| `parent_organization`、`education_partner` | 可选，保留路径节点当时的俱乐部/教育双重语境。 |
+
+## 日韩青训体系
+
+`data/raw/youth-development-systems.json` 将稳定制度与年度快照分开：
+
+| 字段 | 含义 |
+| --- | --- |
+| `systems[]` | 国家级体系条目，当前为日本、韩国。 |
+| `registration_categories[]` | 年龄层、注册类别和允许组织类型。 |
+| `competitions[]` | 稳定竞赛 ID、类型、适用组织、层级关系和官方来源。 |
+| `stable_structure` | 不随单一赛季变化的制度说明。 |
+| `annual_snapshot` | 可选赛季快照，例如 2026 队数；不当作永久规则。 |
+| `source_links[]` | 官方来源、URL 和核查日期。 |
+
+球员只能通过 `training_pathway[].competition_context_ids` 引用竞赛 ID。该引用表示培养环境，不自动断言球员在某赛季实际出场。
 
 ## `tournament_participation`
 

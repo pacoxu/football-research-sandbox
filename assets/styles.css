@@ -1348,6 +1348,91 @@ tbody tr:last-child td {
   font-size: 0.86rem;
 }
 
+.pathways-tabs {
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.system-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.registration-card-grid,
+.system-card-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.registration-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.system-card-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+.system-card {
+  min-width: 0;
+  scroll-margin-top: 110px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 17px;
+  background: var(--surface-strong);
+}
+
+.system-card:target {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+.system-card h3 {
+  margin: 10px 0 8px;
+  font-size: 1.08rem;
+}
+
+.system-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.snapshot-note {
+  padding: 9px 10px;
+  border-left: 3px solid var(--accent);
+  background: var(--surface-tint);
+}
+
+.source-layer-groups,
+.source-layer-group {
+  display: grid;
+  gap: 14px;
+}
+
+.source-layer-group + .source-layer-group {
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+.source-layer-card h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.source-layer-card .inline-link,
+.pathway-context-links .inline-link {
+  overflow-wrap: anywhere;
+}
+
+.pathway-context-links {
+  margin-top: 10px;
+}
+
 @media (max-width: 1120px) {
   .site-shell {
     max-width: 960px;
@@ -1428,6 +1513,10 @@ tbody tr:last-child td {
   .story-grid,
   .roster-group-grid,
   .detail-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .system-intro {
     grid-template-columns: 1fr;
   }
 
@@ -1561,6 +1650,15 @@ tbody tr:last-child td {
   .topic-batch-grid,
   .compact-grid {
     grid-template-columns: 1fr;
+  }
+
+  .registration-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .system-card-actions {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .table-shell {

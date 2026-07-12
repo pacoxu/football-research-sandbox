@@ -1,6 +1,6 @@
 # SQLite 本地库
 
-更新时间：2026-06-28
+更新时间：2026-07-12
 
 `scripts/sync-sqlite.mjs` 会把当前 JSON 数据同步到 `storage/youth-football.sqlite`。这个数据库用于本地查询、调试和后续分析，不提交仓库，也不发布到 GitHub Pages。
 
@@ -40,6 +40,9 @@ erDiagram
     INTEGER weight_kg
     TEXT registration_club_name
     TEXT registration_club_country
+    TEXT registration_organization_type
+    TEXT parent_organization_json
+    TEXT education_partner_json
     TEXT league_system_override
     TEXT overseas_bucket_override
     TEXT focus_tags_json
@@ -54,6 +57,10 @@ erDiagram
     TEXT stage_label
     TEXT organization
     TEXT country
+    TEXT organization_type
+    TEXT parent_organization_json
+    TEXT education_partner_json
+    TEXT competition_context_ids_json
     TEXT note
   }
 
@@ -188,6 +195,17 @@ erDiagram
     TEXT china_matches_json
     TEXT china_key_players_json
   }
+
+  youth_development_systems {
+    TEXT id PK
+    TEXT country
+    TEXT name_json
+    TEXT summary_json
+    TEXT checked_at
+    TEXT registration_categories_json
+    TEXT competitions_json
+    TEXT source_links_json
+  }
 ```
 
 ## 表说明
@@ -205,6 +223,7 @@ erDiagram
 | `overseas_records` | `countries[].featured_records` | 留洋精选记录；不是官方全量人数表。 |
 | `dossiers` | `data/raw/dossiers.json` | 深度专题档案。 |
 | `tournament_archive` | `data/raw/tournament-archive.json` | 历史赛事归档和中国队相关结果。 |
+| `youth_development_systems` | `data/raw/youth-development-systems.json` | 日韩体系稳定结构、年度快照、竞赛 ID 和官方来源。 |
 
 ## JSON 字段
 

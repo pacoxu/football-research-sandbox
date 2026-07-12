@@ -4,6 +4,21 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-07-12
+
+### Added
+
+- Added structured Japan/Korea youth-development system data and a bilingual public systems page.
+- Added organization types and competition contexts to all 92 Japan/Korea U17/U23 final-squad records.
+- Added AFC registration layers to all 92 records and independent official source coverage for 16 deep samples.
+- Added player organization filtering, grouped source-layer display, Korea parent-club/education-partner fields, and SQLite system/pathway columns.
+
+### Governance Notes
+
+- School, university and club source layers may no longer reuse an AFC registration PDF as an organization source.
+- Stable competition structures and season-specific snapshots are stored separately.
+- Gimcheon Sangmu is modeled as a senior military-service club rather than a youth academy.
+
 ## 2026-07-11
 
 ### Added

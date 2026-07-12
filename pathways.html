@@ -3,14 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>赛事列表 | 青训球员追踪站</title>
-    <meta
-      name="description"
-      content="按赛事层级查看亚洲杯、世界杯、世青赛、世少赛的比赛时间、结果、中国战绩与来源链接。"
-    />
+    <title>日韩青训体系 | 青训球员追踪站</title>
+    <meta name="description" content="理解日本学校足球与俱乐部 U18、韩国高中队与 K League 梯队的并行关系。" />
     <link rel="stylesheet" href="./assets/styles.css?v=20260712-youth-systems" />
   </head>
-  <body data-page="tournaments">
+  <body data-page="pathways">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -35,38 +32,43 @@
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="tournaments.hero.eyebrow">Tournament Directory</p>
-            <h1 data-i18n="tournaments.hero.title">赛事列表</h1>
-            <p class="hero-text" data-i18n="tournaments.hero.text">
-              这里汇总 2020 年之后的亚洲杯各年龄段、世界杯、世青赛、世少赛，并单独展开中国战绩与比赛明细。
-            </p>
+            <p class="eyebrow" data-i18n="pathways.hero.eyebrow">Youth Development Systems</p>
+            <h1 data-i18n="pathways.hero.title">日韩青训体系</h1>
+            <p class="hero-text" data-i18n="pathways.hero.text">区分学校队、俱乐部梯队、大学与职业桥梁，并把体系赛事连接到本站球员样本。</p>
           </div>
           <aside class="hero-spotlight">
-            <p class="eyebrow" data-i18n="tournaments.filter.eyebrow">Filter</p>
-            <div id="tournamentLevelTabs" class="tab-row"></div>
+            <p class="eyebrow" data-i18n="pathways.meta.eyebrow">Coverage</p>
+            <h2 id="pathwaysCoverage">92 人基础覆盖</h2>
+            <p id="pathwaysCheckedAt" class="hero-side-note"></p>
           </aside>
         </section>
 
         <section class="content-panel">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow" data-i18n="tournaments.focus.eyebrow">Focus Pool</p>
-              <h2 data-i18n="tournaments.focus.title">重点赛事</h2>
-            </div>
+          <div id="pathwaysCountryTabs" class="view-switch pathways-tabs" role="tablist" aria-label="国家切换" data-i18n-aria-label="pathways.tabs.aria">
+            <button class="switch-button" type="button" data-country="Japan" data-i18n="pathways.tabs.japan">日本</button>
+            <button class="switch-button" type="button" data-country="Korea Republic" data-i18n="pathways.tabs.korea">韩国</button>
           </div>
-          <div id="focusTournamentGrid" class="story-grid"></div>
+          <div id="pathwaysSystemIntro" class="system-intro"></div>
         </section>
 
         <section class="content-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="tournaments.archive.eyebrow">Archive</p>
-              <h2 data-i18n="tournaments.archive.title">赛事档案</h2>
+              <p class="eyebrow" data-i18n="pathways.structure.eyebrow">Competition Map</p>
+              <h2 data-i18n="pathways.structure.title">联赛、杯赛与职业桥梁</h2>
             </div>
-            <p id="tournamentArchiveMeta" class="section-note" data-i18n="common.loading">载入中</p>
           </div>
-          <div id="tournamentArchiveGrid" class="archive-grid"></div>
-          <div id="tournamentArchiveEmptyState" class="empty-state" hidden data-i18n="tournaments.empty">当前标签下没有匹配赛事。</div>
+          <div id="pathwaysCompetitionGrid" class="system-card-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="pathways.sources.eyebrow">Official Sources</p>
+              <h2 data-i18n="pathways.sources.title">官方来源与核查时间</h2>
+            </div>
+          </div>
+          <div id="pathwaysSources" class="story-grid"></div>
         </section>
       </main>
 
@@ -74,7 +76,6 @@
         <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
       </footer>
     </div>
-
     <script type="module" src="./assets/app.js?v=20260712-youth-systems"></script>
   </body>
 </html>

@@ -37,6 +37,9 @@ export async function syncSqlite() {
       weight_kg INTEGER,
       registration_club_name TEXT NOT NULL,
       registration_club_country TEXT NOT NULL,
+      registration_organization_type TEXT,
+      parent_organization_json TEXT,
+      education_partner_json TEXT,
       league_system_override TEXT,
       overseas_bucket_override TEXT,
       focus_tags_json TEXT NOT NULL,
@@ -51,6 +54,10 @@ export async function syncSqlite() {
       stage_label TEXT NOT NULL,
       organization TEXT NOT NULL,
       country TEXT NOT NULL,
+      organization_type TEXT,
+      parent_organization_json TEXT,
+      education_partner_json TEXT,
+      competition_context_ids_json TEXT NOT NULL,
       note TEXT NOT NULL,
       FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
     );
@@ -190,6 +197,17 @@ export async function syncSqlite() {
       china_matches_json TEXT NOT NULL,
       china_key_players_json TEXT NOT NULL
     );
+
+    CREATE TABLE youth_development_systems (
+      id TEXT PRIMARY KEY,
+      country TEXT NOT NULL,
+      name_json TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL,
+      registration_categories_json TEXT NOT NULL,
+      competitions_json TEXT NOT NULL,
+      source_links_json TEXT NOT NULL
+    );
   `);
 
   const insertPlayer = db.prepare(`
@@ -197,14 +215,16 @@ export async function syncSqlite() {
       id, name, local_name, name_zh, name_en, name_native, name_ja, name_ko, names_json,
       country, birth_date, age_band, primary_position,
       height_cm, weight_kg, registration_club_name, registration_club_country,
+      registration_organization_type, parent_organization_json, education_partner_json,
       league_system_override, overseas_bucket_override, focus_tags_json,
       verification_status, verification_last_checked, verification_notes
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertPathway = db.prepare(`
     INSERT INTO player_pathways (
-      player_id, stage_order, stage_label, organization, country, note
-    ) VALUES (?, ?, ?, ?, ?, ?)
+      player_id, stage_order, stage_label, organization, country, organization_type,
+      parent_organization_json, education_partner_json, competition_context_ids_json, note
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertCompetition = db.prepare(`
     INSERT INTO player_competitions (
@@ -261,6 +281,12 @@ export async function syncSqlite() {
       source_links_json, china_matches_json, china_key_players_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
+  const insertYouthDevelopmentSystem = db.prepare(`
+    INSERT INTO youth_development_systems (
+      id, country, name_json, summary_json, checked_at, registration_categories_json,
+      competitions_json, source_links_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+  `);
 
   for (const player of dataset.players) {
     insertPlayer.run(
@@ -281,6 +307,13 @@ export async function syncSqlite() {
       player.weight_kg,
       player.registration_club.name,
       player.registration_club.country,
+      player.registration_club.organization_type ?? null,
+      player.registration_club.parent_organization
+        ? toJson(player.registration_club.parent_organization)
+        : null,
+      player.registration_club.education_partner
+        ? toJson(player.registration_club.education_partner)
+        : null,
       player.league_system_override ?? null,
       player.overseas_bucket_override ?? null,
       toJson(player.focus_tags),
@@ -296,6 +329,10 @@ export async function syncSqlite() {
         step.stage_label,
         step.organization,
         step.country,
+        step.organization_type ?? null,
+        step.parent_organization ? toJson(step.parent_organization) : null,
+        step.education_partner ? toJson(step.education_partner) : null,
+        toJson(step.competition_context_ids ?? []),
         step.note
       );
     });
@@ -442,6 +479,19 @@ export async function syncSqlite() {
       toJson(tournament.source_links),
       toJson(tournament.china_matches),
       toJson(tournament.china_key_players)
+    );
+  }
+
+  for (const system of dataset.youthDevelopmentSystems.systems) {
+    insertYouthDevelopmentSystem.run(
+      system.id,
+      system.country,
+      toJson(system.name),
+      toJson(system.summary),
+      dataset.youthDevelopmentSystems.checked_at,
+      toJson(system.registration_categories),
+      toJson(system.competitions),
+      toJson(system.source_links)
     );
   }
 

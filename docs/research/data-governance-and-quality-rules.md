@@ -49,8 +49,10 @@
 | --- | --- |
 | `afc-registration` | AFC 终报名 PDF、赛事 registration 文件。 |
 | `national-fa-profile` | JFA、KFA、CFA 等国家/地区足协名单、队伍页或球员 profile。 |
-| `club-academy-profile` | 俱乐部官网、梯队页面、俱乐部公告或军队球队官网。 |
-| `school-profile` | 高中、大学、校园足球队页面；若暂只有 AFC 报名字段，应在 `claim` 中说明仍需补个体页。 |
+| `club-academy-profile` | 俱乐部 U18 等青训梯队官网、梯队页面或青训公告。 |
+| `school-profile` | 高中、学校队或校园足球队页面。 |
+| `university-profile` | 大学球队官网、个体页或官方名单。 |
+| `club-profile` | 职业一线队、海外职业队或成年军队球队官网。 |
 | `league-registration` | J.League、K League、联赛当前注册或转会公告。 |
 
 每条 `source_layers` 必须包含：
@@ -62,10 +64,12 @@
 - `fields`：该来源支撑的字段，例如 `registration_club`、`training_pathway`、`tournament_participation`。
 - `claim`：简短说明该来源具体支撑什么，不要扩大来源能证明的事实范围。
 
+学校、大学、俱乐部梯队和职业俱乐部来源不得复用 AFC 报名 PDF；AFC 文件只能保留为 `afc-registration`。
+
 低 confidence 的典型场景：
 
 - 只有组织级官网，没有个体球员 profile。
-- AFC 报名字段能确认学校/俱乐部归属，但学校/俱乐部个人页还没捕获。
+- 只有 AFC 报名字段能确认组织归属、但独立组织页尚未捕获时，只保留 AFC 层，不伪造组织来源层。
 - 来源之间存在时点差异，需要保留多条路径而不是互相覆盖。
 
 ## tournament-archive.source_version
