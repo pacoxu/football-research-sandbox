@@ -235,3 +235,21 @@ export function verifyTransfermarktIdentity(player, profile, nationalityIds) {
     matched_fields: matchedFields
   };
 }
+
+export function matchesMarketValueSelection(player, selection = {}) {
+  if (selection.playerId && player.id !== selection.playerId) {
+    return false;
+  }
+  if (selection.country && player.country !== selection.country) {
+    return false;
+  }
+  if (
+    selection.competition &&
+    !(player.tournament_participation ?? []).some(
+      (entry) => entry.competition_id === selection.competition
+    )
+  ) {
+    return false;
+  }
+  return true;
+}

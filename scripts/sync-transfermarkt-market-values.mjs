@@ -2,6 +2,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
+  matchesMarketValueSelection,
   preservePreviousOnFailure,
   summarizeMarketValuePayload,
   verifyTransfermarktIdentity
@@ -24,24 +25,60 @@ const NATIONALITY_IDS = {
   "China PR": [34],
   Japan: [77],
   "Korea Republic": [87],
+  Australia: [12],
   Uzbekistan: [180]
 };
 
 const DISCOVERY_CLUBS = [
-  { id: "35185", label: "China U23" },
-  { id: "7689", label: "China U20" },
-  { id: "28420", label: "China U19" },
-  { id: "26944", label: "China U17" },
-  { id: "28642", label: "Japan U23" },
-  { id: "29810", label: "Japan U21" },
-  { id: "25507", label: "Japan U17" },
-  { id: "34950", label: "South Korea U23" },
-  { id: "76096", label: "South Korea U21" },
-  { id: "25511", label: "South Korea U17" },
-  { id: "32649", label: "Uzbekistan U17" }
+  { id: "35185", label: "China U23", country: "China PR", competition: "afc-u23-2026" },
+  { id: "7689", label: "China U20", country: "China PR", competition: "afc-u20-2025" },
+  { id: "28420", label: "China U19", country: "China PR" },
+  { id: "26944", label: "China U17", country: "China PR", competition: "afc-u17-2026" },
+  { id: "28642", label: "Japan U23", country: "Japan", competition: "afc-u23-2026" },
+  { id: "29810", label: "Japan U21", country: "Japan" },
+  { id: "25507", label: "Japan U17", country: "Japan", competition: "afc-u17-2026" },
+  { id: "34950", label: "South Korea U23", country: "Korea Republic", competition: "afc-u23-2026" },
+  { id: "76096", label: "South Korea U21", country: "Korea Republic" },
+  { id: "25511", label: "South Korea U17", country: "Korea Republic", competition: "afc-u17-2026" },
+  { id: "32649", label: "Uzbekistan U17", country: "Uzbekistan", competition: "afc-u17-2026" },
+  {
+    id: "22976",
+    label: "Australia U20 2024/25",
+    country: "Australia",
+    competition: "afc-u20-2025",
+    historyUrl: "https://www.transfermarkt.com/australien-u20/rueckennummern/verein/22976",
+    historicalPlayerIds: [
+      "970266",
+      "1132512",
+      "1118086",
+      "1099708",
+      "1104730",
+      "1064377",
+      "1104713",
+      "857060",
+      "1038441",
+      "957230",
+      "1109205",
+      "1110729",
+      "1279984",
+      "1195422",
+      "1104726",
+      "1110867",
+      "1109957",
+      "1109829",
+      "1069960",
+      "1109826",
+      "1144775",
+      "1183854",
+      "1137438"
+    ]
+  },
+  { id: "32269", label: "Australia U17", country: "Australia", competition: "afc-u17-2026" },
+  { id: "32270", label: "Australia U23", country: "Australia", competition: "afc-u23-2026" }
 ];
 
 const MANUAL_PROFILE_OVERRIDES = {
+  "au-gus-hoefsloot-2006": "1109829",
   "cn-liu-shaoziyang-2003": "966946",
   "cn-mutalifu-yimingkari-2004": "1014231",
   "cn-baihelamu-abuduwaili-2003": "946750",
@@ -77,10 +114,14 @@ const MANUAL_PROFILE_OVERRIDES = {
 function parseArgs(argv) {
   const args = new Set(argv);
   const playerArgument = argv.find((argument) => argument.startsWith("--player="));
+  const countryArgument = argv.find((argument) => argument.startsWith("--country="));
+  const competitionArgument = argv.find((argument) => argument.startsWith("--competition="));
   return {
     apply: args.has("--apply"),
     discover: !args.has("--no-discovery"),
     playerId: playerArgument?.slice("--player=".length) || null,
+    country: countryArgument?.slice("--country=".length) || null,
+    competition: competitionArgument?.slice("--competition=".length) || null,
     help: args.has("--help") || args.has("-h")
   };
 }
@@ -170,10 +211,16 @@ async function readPreviousSnapshot() {
   }
 }
 
-async function loadCandidateProfiles() {
+async function loadCandidateProfiles(clubs = DISCOVERY_CLUBS) {
   const candidateIds = new Set();
   const candidateTeams = new Map();
-  for (const club of DISCOVERY_CLUBS) {
+  for (const club of clubs) {
+    for (const playerId of club.historicalPlayerIds ?? []) {
+      candidateIds.add(String(playerId));
+      const labels = candidateTeams.get(String(playerId)) ?? [];
+      labels.push(`${club.label}:historical-team-page`);
+      candidateTeams.set(String(playerId), labels);
+    }
     try {
       const payload = await fetchJson(`${API_ROOT}/club/${club.id}/squad`);
       for (const playerId of payload?.data?.playerIds ?? []) {
@@ -263,13 +310,19 @@ async function buildRecord(player, profiles, previous) {
         checked_at: CHECKED_AT,
         status: "fetch-error",
         method: MANUAL_PROFILE_OVERRIDES[player.id] ? "manual-override" : "existing-link",
-        candidate_urls: existingLink?.url ? [existingLink.url] : []
+        candidate_urls: existingLink?.url
+          ? [existingLink.url]
+          : preferredId
+            ? [`https://www.transfermarkt.com/profil/spieler/${preferredId}`]
+            : []
       };
-      const source = existingLink
+      const profileUrl = existingLink?.url ??
+        (preferredId ? `https://www.transfermarkt.com/profil/spieler/${preferredId}` : "");
+      const source = profileUrl
         ? {
             provider: "Transfermarkt",
-            profile_url: existingLink.url,
-            market_value_url: existingLink.url,
+            profile_url: profileUrl,
+            market_value_url: profileUrl,
             api_url: preferredId ? `${API_ROOT}/player/${preferredId}/market-value-history?_x_preferred_context=com` : null
           }
         : null;
@@ -431,21 +484,28 @@ async function writeAtomic(filePath, contents) {
 async function main() {
   const options = parseArgs(process.argv.slice(2));
   if (options.help) {
-    console.log("Usage: node scripts/sync-transfermarkt-market-values.mjs [--apply] [--no-discovery] [--player=<id>]");
+    console.log("Usage: node scripts/sync-transfermarkt-market-values.mjs [--apply] [--no-discovery] [--player=<id>] [--country=<country>] [--competition=<id>]");
     return;
   }
 
   const groups = await readPlayers();
   const players = groups.flatMap((group) => group.players);
   const previous = await readPreviousSnapshot();
-  const profiles = options.discover && !options.playerId ? await loadCandidateProfiles() : [];
-  const records = options.playerId ? { ...(previous.players ?? {}) } : {};
+  const selectedPlayers = players.filter((player) => matchesMarketValueSelection(player, options));
+  if (selectedPlayers.length === 0) {
+    throw new Error("No players match the requested market-value selection");
+  }
+  const targeted = Boolean(options.playerId || options.country || options.competition);
+  const discoveryClubs = DISCOVERY_CLUBS.filter(
+    (club) =>
+      (!options.country || club.country === options.country) &&
+      (!options.competition || club.competition === options.competition)
+  );
+  const profiles = options.discover && !options.playerId ? await loadCandidateProfiles(discoveryClubs) : [];
+  const records = targeted ? { ...(previous.players ?? {}) } : {};
   let linkChanges = 0;
 
-  for (const player of players) {
-    if (options.playerId && player.id !== options.playerId) {
-      continue;
-    }
+  for (const player of selectedPlayers) {
     const result = await buildRecord(player, profiles, previous.players?.[player.id]);
     records[player.id] = result.record;
     if (updateTransfermarktLink(player, result.confirmedProfile)) {
