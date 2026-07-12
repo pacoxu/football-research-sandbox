@@ -73,11 +73,65 @@ const DISCOVERY_CLUBS = [
       "1137438"
     ]
   },
-  { id: "32269", label: "Australia U17", country: "Australia", competition: "afc-u17-2026" },
+  {
+    id: "32269",
+    label: "Australia U17 2025/26",
+    country: "Australia",
+    competition: "afc-u17-2026",
+    historyUrl: "https://www.transfermarkt.com/australia-u17/kader/verein/32269/saison_id/2025",
+    historicalPlayerIds: [
+      "1263751",
+      "1413328",
+      "1273787",
+      "1413350",
+      "1329720",
+      "1413351",
+      "1413327",
+      "1413345",
+      "1413330",
+      "1334905",
+      "1333552",
+      "1420097",
+      "1378246",
+      "1533962",
+      "1484876",
+      "1432380",
+      "1329718",
+      "1413348",
+      "1533960",
+      "1413326",
+      "1484877",
+      "1294139",
+      "1413347"
+    ]
+  },
   { id: "32270", label: "Australia U23", country: "Australia", competition: "afc-u23-2026" }
 ];
 
 const MANUAL_PROFILE_OVERRIDES = {
+  "au-charlie-wilson-papps-2009": "1263751",
+  "au-winston-ashburner-2009": "1413328",
+  "au-besian-kutleshi-2009": "1273787",
+  "au-marcus-savic-2009": "1413350",
+  "au-miles-milliner-2009": "1329720",
+  "au-sajjad-nasiri-2009": "1413351",
+  "au-aston-reid-2009": "1413327",
+  "au-oliver-ocarroll-2009": "1413345",
+  "au-luke-becvinovski-2009": "1413330",
+  "au-akol-akon-2009": "1334905",
+  "au-max-court-2009": "1333552",
+  "au-lachlan-allen-2009": "1420097",
+  "au-archie-mitchell-2009": "1378246",
+  "au-fraser-brown-2009": "1533962",
+  "au-emile-katrib-2009": "1484876",
+  "au-akeem-gerald-2010": "1432380",
+  "au-henrique-oliveira-2009": "1329718",
+  "au-hugo-ng-2009": "1413348",
+  "au-stevan-rujak-2009": "1533960",
+  "au-georgio-hassarati-2009": "1413326",
+  "au-luka-demuth-2010": "1484877",
+  "au-harrison-bond-2009": "1294139",
+  "au-corey-da-cruz-2009": "1413347",
   "au-gus-hoefsloot-2006": "1109829",
   "cn-liu-shaoziyang-2003": "966946",
   "cn-mutalifu-yimingkari-2004": "1014231",
@@ -405,15 +459,20 @@ async function buildRecord(player, profiles, previous) {
   }
 }
 
-function updateTransfermarktLink(player, profile) {
-  if (!profile) {
+function updateTransfermarktLink(player, profile, fallbackPlayerId = null) {
+  if (!profile && !fallbackPlayerId) {
     return false;
   }
-  const url = buildProfileUrl(profile);
   const links = player.external_links ?? [];
   const index = links.findIndex(
     (link) => /transfermarkt/i.test(String(link.label ?? "")) || /transfermarkt/i.test(String(link.url ?? ""))
   );
+  if (!profile && index >= 0) {
+    return false;
+  }
+  const url = profile
+    ? buildProfileUrl(profile)
+    : `https://www.transfermarkt.com/profil/spieler/${fallbackPlayerId}`;
   const next = { type: "transfermarkt", label: "Transfermarkt profile", url };
   if (index >= 0) {
     if (links[index].url === url && links[index].type === next.type) {
@@ -508,7 +567,7 @@ async function main() {
   for (const player of selectedPlayers) {
     const result = await buildRecord(player, profiles, previous.players?.[player.id]);
     records[player.id] = result.record;
-    if (updateTransfermarktLink(player, result.confirmedProfile)) {
+    if (updateTransfermarktLink(player, result.confirmedProfile, MANUAL_PROFILE_OVERRIDES[player.id])) {
       linkChanges += 1;
     }
     console.log(`${player.id}: ${result.record.status}`);
