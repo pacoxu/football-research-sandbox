@@ -3585,7 +3585,9 @@ function getCurrentOverseasItems() {
       ...player,
       sourceType: "player"
     })),
-    ...getActiveHistoricalOverseasRecords().map(toCurrentHistoricalOverseasItem)
+    ...getActiveHistoricalOverseasRecords()
+      .filter((record) => record.country !== "China PR")
+      .map(toCurrentHistoricalOverseasItem)
   ];
   const seen = new Set();
 
