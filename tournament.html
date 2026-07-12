@@ -8,7 +8,7 @@
       name="description"
       content="查看单项赛事的时间范围、中国战绩、比赛明细、关键球员与来源链接。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260710-responsive" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-u20-archive" />
   </head>
   <body data-page="tournament-detail">
     <div class="site-shell">
@@ -51,6 +51,19 @@
               </div>
             </div>
             <div id="tournamentDetailContext" class="stack-list"></div>
+          </section>
+
+          <section id="tournamentDetailFieldSection" class="content-panel" hidden>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="tournamentDetail.field.eyebrow">Teams &amp; Draw</p>
+                <h2 data-i18n="tournamentDetail.field.title">参赛资格与分组</h2>
+              </div>
+            </div>
+            <p id="tournamentDetailFieldMeta" class="hero-side-note"></p>
+            <div id="tournamentDetailParticipants" class="stack-list"></div>
+            <div id="tournamentDetailFinalDraw" class="archive-grid"></div>
+            <div id="tournamentDetailQualifiers" class="stack-list"></div>
           </section>
 
           <section id="tournamentDetailRegionalHistorySection" class="content-panel" hidden>
@@ -125,6 +138,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260627-asian-coaches"></script>
+    <script type="module" src="./assets/app.js?v=20260712-u20-archive"></script>
   </body>
 </html>

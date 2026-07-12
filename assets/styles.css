@@ -605,6 +605,54 @@ td {
   background: var(--surface-strong);
 }
 
+.tournament-field-heading,
+.tournament-field-note {
+  grid-column: 1 / -1;
+}
+
+.tournament-field-heading {
+  margin: 8px 0 0;
+  font-size: 1.08rem;
+}
+
+.tournament-field-note {
+  margin: 0;
+}
+
+.tournament-field-block + .tournament-field-block {
+  margin-top: 18px;
+}
+
+.tournament-group-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.tournament-group-card {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface-strong);
+}
+
+.tournament-group-card h3 {
+  margin: 0 0 10px;
+  font-size: 1rem;
+}
+
+.tournament-team-chip {
+  gap: 6px;
+}
+
+.tournament-team-chip small {
+  color: inherit;
+  font-size: 0.68rem;
+  font-weight: 650;
+  opacity: 0.72;
+}
+
 .story-card h3,
 .stack-card h3,
 .archive-card h3,
@@ -1427,7 +1475,8 @@ tbody tr:last-child td {
   .market-ranking-grid,
   .story-grid,
   .roster-group-grid,
-  .detail-stats {
+  .detail-stats,
+  .tournament-group-grid {
     grid-template-columns: 1fr;
   }
 

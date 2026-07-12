@@ -37,7 +37,7 @@
         "appearances": null,
         "goals": 2,
         "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对卡塔尔和吉尔吉斯斯坦各进 1 球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
       },
       {
         "competition_id": "csl-2026",
@@ -75,7 +75,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "出生日期、位置和当前俱乐部由申花当前球员页与 Wikipedia 球员条目交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "出生日期、位置和当前俱乐部由申花当前球员页与 Wikipedia 球员条目交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {
@@ -173,7 +173,7 @@
         "appearances": null,
         "goals": 2,
         "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦替补梅开二度，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
       },
       {
         "competition_id": "csl-2026",
@@ -211,7 +211,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "出生日期、身高和位置由公开球员资料页确认，当前俱乐部由大连英博 2026 赛季名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "出生日期、身高和位置由公开球员资料页确认，当前俱乐部由大连英博 2026 赛季名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {

@@ -1,6 +1,6 @@
 # 数据流与生成产物
 
-更新时间：2026-06-27
+更新时间：2026-07-11
 
 本文解释项目从手工维护的 raw JSON 到站点 JSON、SQLite、本地预览和 GitHub Pages 的数据流。字段细节见 `docs/validation.md`、`docs/sqlite.md` 和 `docs/api.md`。
 
@@ -8,7 +8,7 @@
 
 ```mermaid
 flowchart LR
-  Raw["data/raw/**/*.json<br/>手工维护源数据"] --> Loader["scripts/lib/data-loader.mjs<br/>读取、合并、补姓名、补身价"]
+  Raw["data/raw/**/*.json<br/>手工维护源数据"] --> Loader["scripts/lib/data-loader.mjs<br/>读取、合并、补姓名、赛事统计、身价"]
   Loader --> Validate["scripts/validate-data.mjs<br/>结构与引用校验"]
   Validate --> Build["scripts/build-site-data.mjs<br/>生成站点聚合 JSON"]
   Build --> SitePlayers["data/site/players.json"]
@@ -70,6 +70,8 @@ Pages 构建会重新运行 `prepare-data`，然后把以下内容复制到 `dis
 - 方便不运行 Node 的读者直接查看静态 JSON。
 - 让 PR review 能看到 raw 修改对站点聚合结果的影响。
 - GitHub Pages 构建时会重新生成，避免部署使用过期聚合。
+
+loader 也承担少量集中数据的派生合并。例如中国 U20 2025 的逐人赛事统计集中维护在 `tournament-archive.json`，再按 `competition_id + player_id` 合并到球员的 `tournament_participation`。这样四份逐场 Match Summary 只需维护一套统计和来源，生成后的 `data/site/players.json` 仍提供完整 appearances、goals、minutes 和 roster status。
 
 如果只改文档，不需要重新生成 `data/site/**`。如果改了 `data/raw/**`、`scripts/lib/data-loader.mjs` 或 `scripts/build-site-data.mjs`，应运行 `npm run build-data` 并 review `data/site/**` diff。
 
