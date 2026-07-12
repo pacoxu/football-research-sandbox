@@ -42,6 +42,7 @@ flowchart LR
 - 组织类型、母组织、合作学校和路径竞赛 ID 必须匹配统一枚举与日韩体系数据。
 - 日本/韩国 U17、U23 四队必须各 23 人，合计 92 人；每人恰有一条 AFC 报名来源。
 - 固定 16 名深度样本必须有至少一条不同于 AFC PDF 的独立官方来源；组织来源不得复用 `assets.the-afc.com` URL。
+- 根宝足球基地专题必须保持七个代际、26 名代表球员；每名球员都要有合法 `current_status`、核查日期、可信度和现状来源，1314 梯队需保留当前项目状态。
 - `tournament_participation[].competition_id` 如存在，必须能对应 `data/raw/tournaments.json`。
 - `squad_status` 必须来自允许枚举。
 - `verification.status` 必须来自允许枚举，`notes` 必填。

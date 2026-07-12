@@ -1372,7 +1372,7 @@
     "focus_tags": [
       "genbao-football-base"
     ],
-    "last_reviewed": "2026-05-23",
+    "last_reviewed": "2026-07-12",
     "summary": "这个专题不回溯到徐根宝在申花、有线 02 或更早国字号时期的全部门生，而是聚焦 2000 年崇明基地落地之后，真正从根宝足球学校 / 崇明基地 / 海港委培体系里成批冒头的几波人。当前最稳妥的梳理方式，是按代际拆成“海港骨架型”“整队转让申花型”“全运过渡型”和“委培传承型”四类路径，而不是把所有根宝弟子混成一张长名单。",
     "source_document": {
       "title": "从武磊、朱辰杰到蒯纪闻，根宝十代弟子撑起上海足球一片天",
@@ -1403,6 +1403,26 @@
         "title": "徐根宝 82 岁生日，吕文君转任 1314 梯队主教练",
         "path": "https://www.jfdaily.com/wx/detail.do?id=1052773",
         "summary": "可核验崇明一期向教练岗位回流的传承节点，以及 1314 梯队当前教练口径。"
+      },
+      {
+        "title": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+        "path": "https://www.thecfa.cn/jyqxjly/20220413/30551.html",
+        "summary": "官方口径确认基地 2000 年成立，并称截至专访时已向中超输送近 70 名球员。"
+      },
+      {
+        "title": "根宝足球基地 25 周年与新生代近况",
+        "path": "https://www.shobserver.com/wx/detail.do?id=942081",
+        "summary": "补基地 25 周年、蒯纪闻进入成年国家队视野和后续委培梯队现状。"
+      },
+      {
+        "title": "新民晚报：吕文君回到基地执教 1314 梯队",
+        "path": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560",
+        "summary": "确认吕文君退役后回到基地担任 1314 梯队主教练，以及基地的传承结构。"
+      },
+      {
+        "title": "新民周刊：李圣龙 2026 转入上海海港 B 队",
+        "path": "https://www.xinminweekly.com.cn/bianjituijian/2026/03/24/40575.html",
+        "summary": "确认李圣龙在 2026 赛季转入上海海港 B 队参加中乙。"
       }
     ],
     "scope_note": "这里的“根宝系”只取 2000 年崇明基地成立后的成建制输出，不把更早的申花、有线 02、国字号弟子全部并入。同一拨人里还要注意区分三种情况：纯根宝基地培养、根宝基地与幸运星或俱乐部混编的全运队，以及海港出资委托根宝带训的后期委培模式。",
@@ -1476,35 +1496,80 @@
             "local_name": "武磊",
             "role": "前锋",
             "club": "Shanghai Port",
-            "note": "崇明一期旗帜人物，完成西甲留洋后回到海港，仍是根宝体系历史上最成功的成人兑现样本。"
+            "note": "崇明一期旗帜人物，完成西甲留洋后回到海港，仍是根宝体系历史上最成功的成人兑现样本。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Port",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "上海观察：海港 2026 赛季与崇明老将",
+              "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+            }
           },
           {
             "name": "Yan Junling",
             "local_name": "颜骏凌",
             "role": "门将",
             "club": "Shanghai Port",
-            "note": "门将主干，长期维持顶级联赛和国家队竞争力，是这一波稳定性的代表。"
+            "note": "门将主干，长期维持顶级联赛和国家队竞争力，是这一波稳定性的代表。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Port",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "上海观察：海港 2026 赛季与崇明老将",
+              "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+            }
           },
           {
             "name": "Wang Shenchao",
             "local_name": "王燊超",
             "role": "后卫",
             "club": "Shanghai Port",
-            "note": "后防多面手，2026 节点仍是海港老将代表，说明这拨人的寿命很长。"
+            "note": "后防多面手，2026 节点仍是海港老将代表，说明这拨人的寿命很长。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Port",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "上海观察：海港 2026 赛季与崇明老将",
+              "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+            }
           },
           {
             "name": "Zhang Linpeng",
             "local_name": "张琳芃",
             "role": "后卫",
             "club": "Shanghai Port",
-            "note": "从崇明基地一路走到国足防线核心，是这一代天花板的重要旁证。"
+            "note": "从崇明基地一路走到国足防线核心，是这一代天花板的重要旁证。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Port",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "上海观察：海港 2026 赛季与崇明老将",
+              "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+            }
           },
           {
             "name": "Lyu Wenjun",
             "local_name": "吕文君",
             "role": "前锋 / 教练",
             "club": "Genbao Base 1314 Team",
-            "note": "2025 赛季后退役，2026 年回到基地执教 1314 梯队，成为“第一波回流带下一波”的代表。"
+            "note": "2025 赛季后退役，2026 年回到基地执教 1314 梯队，成为“第一波回流带下一波”的代表。",
+            "current_status": {
+              "category": "retired-coach",
+              "organization": "Genbao Base 1314 Team",
+              "role": "head-coach",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+              "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+            }
           }
         ]
       },
@@ -1519,35 +1584,80 @@
             "local_name": "李圣龙",
             "role": "前锋",
             "club": "Shanghai Port pathway",
-            "note": "2013 全运冠军前锋样本，说明这一波仍能持续向海港一线队供血。"
+            "note": "2013 全运冠军前锋样本，说明这一波仍能持续向海港一线队供血。",
+            "current_status": {
+              "category": "active-reserve",
+              "organization": "Shanghai Port B",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "新民周刊：李圣龙 2026 转入上海海港 B 队",
+              "source_url": "https://www.xinminweekly.com.cn/bianjituijian/2026/03/24/40575.html"
+            }
           },
           {
             "name": "Yang Shiyuan",
             "local_name": "杨世元",
             "role": "中场",
             "club": "Shanghai Port",
-            "note": "中场硬度样本，2026 节点仍在海港成年队轮换序列。"
+            "note": "中场硬度样本，2026 节点仍在海港成年队轮换序列。",
+            "current_status": {
+              "category": "active-professional",
+              "organization": "Shanghai Port pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+              "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+            }
           },
           {
             "name": "He Guan",
             "local_name": "贺惯",
             "role": "中后卫",
             "club": "Chinese professional pathway",
-            "note": "中卫样本，曾完成从基地到国字号的跃升。"
+            "note": "中卫样本，曾完成从基地到国字号的跃升。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Wuhan Three Towns",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "贺惯 2026 武汉三镇比赛记录",
+              "source_url": "https://player.7m.com.cn/338124/index_gb.shtml"
+            }
           },
           {
             "name": "Fu Huan",
             "local_name": "傅欢",
             "role": "边后卫",
             "club": "Chinese professional pathway",
-            "note": "代表这一拨由全运冠军向中超稳定轮换转化的路径。"
+            "note": "代表这一拨由全运冠军向中超稳定轮换转化的路径。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Port",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "傅欢 2026 上海海港比赛记录",
+              "source_url": "https://fbref.com/en/players/86d4a86c/"
+            }
           },
           {
             "name": "Zhang Wei",
             "local_name": "张卫",
             "role": "左路球员",
             "club": "Chinese professional pathway",
-            "note": "与李圣龙、杨世元同属 2013 全运冠军主干，是这一拨职业化样本之一。"
+            "note": "与李圣龙、杨世元同属 2013 全运冠军主干，是这一拨职业化样本之一。",
+            "current_status": {
+              "category": "needs-review",
+              "organization": "Chinese professional pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "low",
+              "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+              "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+            }
           }
         ]
       },
@@ -1562,21 +1672,48 @@
             "local_name": "胡靖航",
             "role": "前锋",
             "club": "Chinese professional leagues",
-            "note": "这拨里知名度最高的前场样本之一，代表根宝与幸运星混编后仍能出职业主力。"
+            "note": "这拨里知名度最高的前场样本之一，代表根宝与幸运星混编后仍能出职业主力。",
+            "current_status": {
+              "category": "needs-review",
+              "organization": "Chinese professional pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "low",
+              "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+              "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+            }
           },
           {
             "name": "Chen Binbin",
             "local_name": "陈彬彬",
             "role": "边锋",
             "club": "Chinese professional leagues",
-            "note": "进入过海港一线队和国字号体系，是这一波边路样本。"
+            "note": "进入过海港一线队和国字号体系，是这一波边路样本。",
+            "current_status": {
+              "category": "needs-review",
+              "organization": "Chinese professional pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "low",
+              "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+              "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+            }
           },
           {
             "name": "Chen Wei",
             "local_name": "陈威",
             "role": "门将",
             "club": "Chinese professional leagues",
-            "note": "门将样本，体现这一拨在成年阶段分散到多支职业队继续发展的路径。"
+            "note": "门将样本，体现这一拨在成年阶段分散到多支职业队继续发展的路径。",
+            "current_status": {
+              "category": "needs-review",
+              "organization": "Chinese professional pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "low",
+              "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+              "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+            }
           }
         ]
       },
@@ -1591,35 +1728,80 @@
             "local_name": "朱辰杰",
             "role": "中后卫",
             "club": "Shanghai Shenhua",
-            "note": "整队转让后的最高兑现样本之一，已成长为申花和国足的防线骨架。"
+            "note": "整队转让后的最高兑现样本之一，已成长为申花和国足的防线骨架。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Shenhua",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "2026 上海申花当前阵容交叉页",
+              "source_url": "https://www.365scores.com/zh/football/team/shanghai-shenhua-2179/squad"
+            }
           },
           {
             "name": "Jiang Shenglong",
             "local_name": "蒋圣龙",
             "role": "中后卫",
             "club": "Shanghai Shenhua",
-            "note": "与朱辰杰长期组成双中卫主干，是这拨成功度的核心证明。"
+            "note": "与朱辰杰长期组成双中卫主干，是这拨成功度的核心证明。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Shenhua",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "2026 上海申花当前阵容交叉页",
+              "source_url": "https://www.365scores.com/zh/football/team/shanghai-shenhua-2179/squad"
+            }
           },
           {
             "name": "Liu Ruofan",
             "local_name": "刘若钒",
             "role": "前锋",
             "club": "Shanghai Port",
-            "note": "早期顶级天赋样本，经历申花阶段后又在成年队层面再分流到海港。"
+            "note": "早期顶级天赋样本，经历申花阶段后又在成年队层面再分流到海港。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Port",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "上海观察：海港 2026 赛季与崇明老将",
+              "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+            }
           },
           {
             "name": "Zhou Junchen",
             "local_name": "周俊辰",
             "role": "边锋",
             "club": "Shanghai Shenhua pathway",
-            "note": "速度型边路样本，代表这拨中上游职业化产出。"
+            "note": "速度型边路样本，代表这拨中上游职业化产出。",
+            "current_status": {
+              "category": "needs-review",
+              "organization": "Shanghai Shenhua pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "low",
+              "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+              "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+            }
           },
           {
             "name": "Xu Haoyang",
             "local_name": "徐皓阳",
             "role": "中场",
             "club": "Shanghai Shenhua",
-            "note": "成年阶段成长明显，成为申花稳定轮换并进入国足视野。"
+            "note": "成年阶段成长明显，成为申花稳定轮换并进入国足视野。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Shenhua",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "2026 上海申花当前阵容交叉页",
+              "source_url": "https://www.365scores.com/zh/football/team/shanghai-shenhua-2179/squad"
+            }
           }
         ]
       },
@@ -1634,14 +1816,32 @@
             "local_name": "张慧宇",
             "role": "中场 / 后卫",
             "club": "Shanghai Port pathway",
-            "note": "公开可核的主干样本之一，但完整职业履历仍需继续补。"
+            "note": "公开可核的主干样本之一，但完整职业履历仍需继续补。",
+            "current_status": {
+              "category": "needs-review",
+              "organization": "Shanghai Port pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "low",
+              "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+              "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+            }
           },
           {
             "name": "Liao Zhongjiu",
             "local_name": "廖重九",
             "role": "前场球员",
             "club": "Shanghai Port pathway",
-            "note": "和张慧宇一起构成这拨当前最容易确认的职业化样本。"
+            "note": "和张慧宇一起构成这拨当前最容易确认的职业化样本。",
+            "current_status": {
+              "category": "needs-review",
+              "organization": "Shanghai Port pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "low",
+              "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+              "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+            }
           }
         ]
       },
@@ -1656,42 +1856,97 @@
             "local_name": "蒯纪闻",
             "role": "前腰 / 中场",
             "club": "Shanghai Port",
-            "note": "这一拨最强兑现点，已从基地苗子成长为海港和国字号重点新星。"
+            "note": "这一拨最强兑现点，已从基地苗子成长为海港和国字号重点新星。",
+            "current_status": {
+              "category": "active-first-team",
+              "organization": "Shanghai Port",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "high",
+              "source_label": "根宝足球基地 25 周年与新生代近况",
+              "source_url": "https://www.shobserver.com/wx/detail.do?id=942081"
+            },
+            "player_id": "cn-kuai-jiwen-2006"
           },
           {
             "name": "Li Ming",
             "local_name": "黎明",
             "role": "中后场球员",
             "club": "Shanghai Port youth pathway",
-            "note": "06 线主干样本之一，和蒯纪闻一起支撑这拨的国字号存在感。"
+            "note": "06 线主干样本之一，和蒯纪闻一起支撑这拨的国字号存在感。",
+            "current_status": {
+              "category": "youth-development",
+              "organization": "Shanghai Port youth pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+              "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+            }
           },
           {
             "name": "Liu Tiecheng",
             "local_name": "刘铁诚",
             "role": "前场球员",
             "club": "Shanghai Port youth pathway",
-            "note": "代表这一拨继续向职业体系输送锋线球员的能力。"
+            "note": "代表这一拨继续向职业体系输送锋线球员的能力。",
+            "current_status": {
+              "category": "youth-development",
+              "organization": "Shanghai Port youth pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+              "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+            }
           },
           {
             "name": "Liu Lei",
             "local_name": "刘磊",
             "role": "后场球员",
             "club": "Shanghai Port youth pathway",
-            "note": "06-08 这拨的后场样本之一，出现在同批公开名单中。"
+            "note": "06-08 这拨的后场样本之一，出现在同批公开名单中。",
+            "current_status": {
+              "category": "youth-development",
+              "organization": "Shanghai Port youth pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+              "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+            }
           },
           {
             "name": "Ouyang Jiaxin",
             "local_name": "欧阳嘉鑫",
             "role": "青年队球员",
             "club": "Shanghai Port youth pathway",
-            "note": "和蒯纪闻同属长期在基地训练的一拨，体现成建制输出。"
+            "note": "和蒯纪闻同属长期在基地训练的一拨，体现成建制输出。",
+            "current_status": {
+              "category": "youth-development",
+              "organization": "Shanghai Port youth pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+              "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+            }
           },
           {
             "name": "Zhang Junjie",
             "local_name": "张俊杰",
             "role": "青年队球员",
             "club": "Shanghai Port youth pathway",
-            "note": "补足这拨公开露出的成建制名单轮廓。"
+            "note": "补足这拨公开露出的成建制名单轮廓。",
+            "current_status": {
+              "category": "youth-development",
+              "organization": "Shanghai Port youth pathway",
+              "role": "player",
+              "as_of": "2026-07-12",
+              "confidence": "medium",
+              "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+              "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+            }
           }
         ]
       },
@@ -1700,7 +1955,19 @@
         "name": "第七波：2013-2014 “1314 梯队” 传承线",
         "confidence": "C",
         "description": "这是当前仍在成型的最小公开梯队。已稳妥可核的不是完整球员名单，而是它进入海港委培体系、并由崇明一期弟子吕文君回流执教的传承结构。",
-        "players": []
+        "players": [],
+        "program_status": {
+          "category": "active-development-program",
+          "organization": "Genbao Football Base / Shanghai Port commissioned training",
+          "head_coach": "Lyu Wenjun",
+          "age_groups": [
+            "2013-2014",
+            "2015-2016"
+          ],
+          "as_of": "2026-07-12",
+          "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+          "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+        }
       }
     ],
     "controversies": [
@@ -1713,7 +1980,15 @@
       "2001-2003 这拨的完整职业兑现率目前仍不清楚，是当前资料最薄的一层。",
       "2006-2008 这一拨里，除蒯纪闻外还有哪些球员能稳定进入海港一线队，需要继续跟踪 2026 到 2028 的出场数据。",
       "1314 梯队目前公开露出的更多是教练与梯队口径，而不是稳定球员名单，后续还需要继续找公开比赛名单与分区赛记录。"
-    ]
+    ],
+    "source_checked_at": "2026-07-12",
+    "headline_stats": {
+      "founded": "2000-07",
+      "tracked_generations": 7,
+      "tracked_players": 26,
+      "official_output_claim": "中国足协 2022 年专访口径：基地成立以来已向中超输送近 70 名球员。",
+      "current_training_focus": "2013—2014 与 2015—2016 两支委培梯队"
+    }
   },
   {
     "id": "evergrande-football-school",
@@ -2463,33 +2738,195 @@
         "confidence": "A/B",
         "description": "这份视图严格对应 2004 年 11 月底公布、12 月初赴德出发的首批名单；它是“08之星”最清晰、最稳定的一版球员框架。",
         "players": [
-          { "name": "Li Shuai", "local_name": "李帅", "role": "球员", "club": "Jinan Taishan Football School", "note": "首批赴德名单成员，原属济南泰山足球学校。" },
-          { "name": "Wang Dalei", "local_name": "王大雷", "role": "球员", "club": "Dalian Tiedao", "note": "首批赴德名单成员，后续成长为国脚级门将，是这一项目最醒目的兑现样本之一。" },
-          { "name": "Wang Chao", "local_name": "王超", "role": "球员", "club": "Beijing Guoan", "note": "首批赴德名单成员，原属北京国安梯队。" },
-          { "name": "Bai Lei", "local_name": "白磊", "role": "球员", "club": "Dalian Tiedao", "note": "首批赴德名单成员。" },
-          { "name": "Yao Jiangshan", "local_name": "姚江山", "role": "球员", "club": "Qingdao Hailifeng", "note": "首批赴德名单成员，后续在国内职业联赛长期效力。" },
-          { "name": "Cui Peng", "local_name": "崔鹏", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员，后续进入山东鲁能和国字号主线。" },
-          { "name": "Mao Biao", "local_name": "毛彪", "role": "球员", "club": "Tianjin Teda", "note": "首批赴德名单成员，后续成为津门锋线代表样本之一。" },
-          { "name": "Wang Yongpo", "local_name": "王永珀", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员，后续成为国脚级攻击型中场。" },
-          { "name": "Yang Xu", "local_name": "杨旭", "role": "球员", "club": "Liaoning FC", "note": "首批赴德名单成员，后续成长为国家队常备中锋。" },
-          { "name": "Wang Yang", "local_name": "王扬", "role": "球员", "club": "Liaoning FC", "note": "首批赴德名单成员。" },
-          { "name": "Liu Qing", "local_name": "刘清", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员。" },
-          { "name": "Wang Xiaolong", "local_name": "王晓龙", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员，后续进入多支中超球队并有国字号经历。" },
-          { "name": "Wang Xiaolong", "local_name": "王啸龙", "role": "球员", "club": "Dalian Tiedao", "note": "首批赴德名单成员，需与山东线的王晓龙区分。" },
-          { "name": "Zhao Mingjian", "local_name": "赵明剑", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员，后续成长为中超知名边后卫。" },
-          { "name": "Qin Sheng", "local_name": "秦升", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员，后续在多支职业队长期效力。" },
-          { "name": "Zhang Wenzhao", "local_name": "张文钊", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员，后续成为国脚级边路 / 前场球员。" },
-          { "name": "Zhang Lu", "local_name": "张鹭", "role": "球员", "club": "Henan Jianye", "note": "首批赴德名单成员，后续成长为国脚级门将。" },
-          { "name": "Lu Jianjun", "local_name": "吕建军", "role": "球员", "club": "Qingdao Hailifeng", "note": "首批赴德名单成员。" },
-          { "name": "Li Zhenhong", "local_name": "李真宏", "role": "球员", "club": "Dalian Tiedao", "note": "首批赴德名单成员。" },
-          { "name": "Huang Xiangdong", "local_name": "黄向东", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员。" },
-          { "name": "Ou Ya", "local_name": "欧亚", "role": "球员", "club": "Liaoning FC", "note": "首批赴德名单成员。" },
-          { "name": "Wu Lei", "local_name": "吴磊", "role": "球员", "club": "Guangdong Dongguan Nancheng Real Estate FC", "note": "首批赴德名单成员，需与上海海港的武磊区分。" },
-          { "name": "Huang Xiangyang", "local_name": "黄向阳", "role": "球员", "club": "Liaoning FC", "note": "首批赴德名单成员。" },
-          { "name": "Huang Jie", "local_name": "黄洁", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员。" },
-          { "name": "Li Shuaishuai", "local_name": "李帅帅", "role": "球员", "club": "Dalian Tiedao", "note": "首批赴德名单成员。" },
-          { "name": "Li Hao", "local_name": "李昊", "role": "球员", "club": "Dalian Tiedao", "note": "首批赴德名单成员。" },
-          { "name": "Liu Jianye", "local_name": "刘建业", "role": "球员", "club": "Shandong Luneng", "note": "首批赴德名单成员，后续成长为国家队长期后场 / 中场多面手。" }
+          {
+            "name": "Li Shuai",
+            "local_name": "李帅",
+            "role": "球员",
+            "club": "Jinan Taishan Football School",
+            "note": "首批赴德名单成员，原属济南泰山足球学校。"
+          },
+          {
+            "name": "Wang Dalei",
+            "local_name": "王大雷",
+            "role": "球员",
+            "club": "Dalian Tiedao",
+            "note": "首批赴德名单成员，后续成长为国脚级门将，是这一项目最醒目的兑现样本之一。"
+          },
+          {
+            "name": "Wang Chao",
+            "local_name": "王超",
+            "role": "球员",
+            "club": "Beijing Guoan",
+            "note": "首批赴德名单成员，原属北京国安梯队。"
+          },
+          {
+            "name": "Bai Lei",
+            "local_name": "白磊",
+            "role": "球员",
+            "club": "Dalian Tiedao",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Yao Jiangshan",
+            "local_name": "姚江山",
+            "role": "球员",
+            "club": "Qingdao Hailifeng",
+            "note": "首批赴德名单成员，后续在国内职业联赛长期效力。"
+          },
+          {
+            "name": "Cui Peng",
+            "local_name": "崔鹏",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员，后续进入山东鲁能和国字号主线。"
+          },
+          {
+            "name": "Mao Biao",
+            "local_name": "毛彪",
+            "role": "球员",
+            "club": "Tianjin Teda",
+            "note": "首批赴德名单成员，后续成为津门锋线代表样本之一。"
+          },
+          {
+            "name": "Wang Yongpo",
+            "local_name": "王永珀",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员，后续成为国脚级攻击型中场。"
+          },
+          {
+            "name": "Yang Xu",
+            "local_name": "杨旭",
+            "role": "球员",
+            "club": "Liaoning FC",
+            "note": "首批赴德名单成员，后续成长为国家队常备中锋。"
+          },
+          {
+            "name": "Wang Yang",
+            "local_name": "王扬",
+            "role": "球员",
+            "club": "Liaoning FC",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Liu Qing",
+            "local_name": "刘清",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Wang Xiaolong",
+            "local_name": "王晓龙",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员，后续进入多支中超球队并有国字号经历。"
+          },
+          {
+            "name": "Wang Xiaolong",
+            "local_name": "王啸龙",
+            "role": "球员",
+            "club": "Dalian Tiedao",
+            "note": "首批赴德名单成员，需与山东线的王晓龙区分。"
+          },
+          {
+            "name": "Zhao Mingjian",
+            "local_name": "赵明剑",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员，后续成长为中超知名边后卫。"
+          },
+          {
+            "name": "Qin Sheng",
+            "local_name": "秦升",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员，后续在多支职业队长期效力。"
+          },
+          {
+            "name": "Zhang Wenzhao",
+            "local_name": "张文钊",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员，后续成为国脚级边路 / 前场球员。"
+          },
+          {
+            "name": "Zhang Lu",
+            "local_name": "张鹭",
+            "role": "球员",
+            "club": "Henan Jianye",
+            "note": "首批赴德名单成员，后续成长为国脚级门将。"
+          },
+          {
+            "name": "Lu Jianjun",
+            "local_name": "吕建军",
+            "role": "球员",
+            "club": "Qingdao Hailifeng",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Li Zhenhong",
+            "local_name": "李真宏",
+            "role": "球员",
+            "club": "Dalian Tiedao",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Huang Xiangdong",
+            "local_name": "黄向东",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Ou Ya",
+            "local_name": "欧亚",
+            "role": "球员",
+            "club": "Liaoning FC",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Wu Lei",
+            "local_name": "吴磊",
+            "role": "球员",
+            "club": "Guangdong Dongguan Nancheng Real Estate FC",
+            "note": "首批赴德名单成员，需与上海海港的武磊区分。"
+          },
+          {
+            "name": "Huang Xiangyang",
+            "local_name": "黄向阳",
+            "role": "球员",
+            "club": "Liaoning FC",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Huang Jie",
+            "local_name": "黄洁",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Li Shuaishuai",
+            "local_name": "李帅帅",
+            "role": "球员",
+            "club": "Dalian Tiedao",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Li Hao",
+            "local_name": "李昊",
+            "role": "球员",
+            "club": "Dalian Tiedao",
+            "note": "首批赴德名单成员。"
+          },
+          {
+            "name": "Liu Jianye",
+            "local_name": "刘建业",
+            "role": "球员",
+            "club": "Shandong Luneng",
+            "note": "首批赴德名单成员，后续成长为国家队长期后场 / 中场多面手。"
+          }
         ]
       },
       {
@@ -2498,9 +2935,27 @@
         "confidence": "B/C",
         "description": "这一视图单独收纳 2005 年项目品牌与 85 国青备战荷兰世青赛发生重叠后，常被外界并入“08之星”叙事的代表名字；他们不等同于 2004 年首批 27 人，但确实属于项目后期最常被并提的一层。",
         "players": [
-          { "name": "Chen Tao", "local_name": "陈涛", "role": "前腰 / 中场", "club": "Shenyang Jinde / China PR pathway", "note": "对应 2005 年项目借壳 85 国青后的宽口径相关样本，荷兰世青赛对德国梅开二度，是这条线最醒目的前场核心。"},
-          { "name": "Zhao Xuri", "local_name": "赵旭日", "role": "中场", "club": "Dalian Shide / China PR pathway", "note": "不属于 2004 年首批 27 人，但属于 2005 年后“08之星”被外界扩写时最常并提的 85 国青样本之一。"},
-          { "name": "Feng Xiaoting", "local_name": "冯潇霆", "role": "中后卫", "club": "Dalian Shide / Guangzhou / China PR pathway", "note": "不属于 2004 年首批 27 人，而是 2005 年项目借壳 85 国青后的宽口径相关样本；后续成长为成年国家队长期主力中卫。"}
+          {
+            "name": "Chen Tao",
+            "local_name": "陈涛",
+            "role": "前腰 / 中场",
+            "club": "Shenyang Jinde / China PR pathway",
+            "note": "对应 2005 年项目借壳 85 国青后的宽口径相关样本，荷兰世青赛对德国梅开二度，是这条线最醒目的前场核心。"
+          },
+          {
+            "name": "Zhao Xuri",
+            "local_name": "赵旭日",
+            "role": "中场",
+            "club": "Dalian Shide / China PR pathway",
+            "note": "不属于 2004 年首批 27 人，但属于 2005 年后“08之星”被外界扩写时最常并提的 85 国青样本之一。"
+          },
+          {
+            "name": "Feng Xiaoting",
+            "local_name": "冯潇霆",
+            "role": "中后卫",
+            "club": "Dalian Shide / Guangzhou / China PR pathway",
+            "note": "不属于 2004 年首批 27 人，而是 2005 年项目借壳 85 国青后的宽口径相关样本；后续成长为成年国家队长期主力中卫。"
+          }
         ]
       },
       {
@@ -2509,16 +2964,76 @@
         "confidence": "B",
         "description": "这一视图不追求覆盖全部 27 人，而是把后来最容易在成年职业层面确认的兑现样本单独拎出来，说明项目并非没有产出，只是产出分布很不均匀。",
         "players": [
-          { "name": "Wang Dalei", "local_name": "王大雷", "role": "门将", "club": "China PR / Shandong Taishan pathway", "note": "从赴德名单成员成长为国脚级门将，是这批人里职业高度最明确的一类样本。" },
-          { "name": "Wang Yongpo", "local_name": "王永珀", "role": "前腰 / 中场", "club": "Shandong Luneng pathway", "note": "后续成为中超和国家队重要攻击型中场，证明项目确实覆盖到高天赋球员。" },
-          { "name": "Cui Peng", "local_name": "崔鹏", "role": "中场", "club": "Shandong Luneng pathway", "note": "成年阶段在山东鲁能与国字号均有明确存在感。" },
-          { "name": "Liu Jianye", "local_name": "刘建业", "role": "中后场多面手", "club": "China PR / Jiangsu pathway", "note": "后续国家队与顶级联赛体量说明，这条计划并非只产出青年名气。" },
-          { "name": "Zhao Mingjian", "local_name": "赵明剑", "role": "边后卫", "club": "Shandong / Dalian pathway", "note": "成年职业阶段长期立足，是后卫线的典型兑现样本。" },
-          { "name": "Yang Xu", "local_name": "杨旭", "role": "中锋", "club": "Liaoning / Tianjin / China PR pathway", "note": "后来成为国足锋线常备人选，是前场最稳定的职业化代表之一。" },
-          { "name": "Zhang Lu", "local_name": "张鹭", "role": "门将", "club": "Henan / Tianjin pathway", "note": "成年阶段长期处于中超高层级门将序列。" },
-          { "name": "Zhang Wenzhao", "local_name": "张文钊", "role": "边路 / 前场", "club": "Shandong / Guangzhou pathway", "note": "说明这批人里也有成长为顶级联赛爆点型边锋的样本。" },
-          { "name": "Mao Biao", "local_name": "毛彪", "role": "前锋", "club": "Tianjin Teda pathway", "note": "属于稳定在国内职业联赛兑现的首批名单成员。" },
-          { "name": "Yao Jiangshan", "local_name": "姚江山", "role": "中后场球员", "club": "Qingdao Hainiu / Qingdao Hailifeng pathway", "note": "代表并非国脚级但仍长期完成职业化的样本。" }
+          {
+            "name": "Wang Dalei",
+            "local_name": "王大雷",
+            "role": "门将",
+            "club": "China PR / Shandong Taishan pathway",
+            "note": "从赴德名单成员成长为国脚级门将，是这批人里职业高度最明确的一类样本。"
+          },
+          {
+            "name": "Wang Yongpo",
+            "local_name": "王永珀",
+            "role": "前腰 / 中场",
+            "club": "Shandong Luneng pathway",
+            "note": "后续成为中超和国家队重要攻击型中场，证明项目确实覆盖到高天赋球员。"
+          },
+          {
+            "name": "Cui Peng",
+            "local_name": "崔鹏",
+            "role": "中场",
+            "club": "Shandong Luneng pathway",
+            "note": "成年阶段在山东鲁能与国字号均有明确存在感。"
+          },
+          {
+            "name": "Liu Jianye",
+            "local_name": "刘建业",
+            "role": "中后场多面手",
+            "club": "China PR / Jiangsu pathway",
+            "note": "后续国家队与顶级联赛体量说明，这条计划并非只产出青年名气。"
+          },
+          {
+            "name": "Zhao Mingjian",
+            "local_name": "赵明剑",
+            "role": "边后卫",
+            "club": "Shandong / Dalian pathway",
+            "note": "成年职业阶段长期立足，是后卫线的典型兑现样本。"
+          },
+          {
+            "name": "Yang Xu",
+            "local_name": "杨旭",
+            "role": "中锋",
+            "club": "Liaoning / Tianjin / China PR pathway",
+            "note": "后来成为国足锋线常备人选，是前场最稳定的职业化代表之一。"
+          },
+          {
+            "name": "Zhang Lu",
+            "local_name": "张鹭",
+            "role": "门将",
+            "club": "Henan / Tianjin pathway",
+            "note": "成年阶段长期处于中超高层级门将序列。"
+          },
+          {
+            "name": "Zhang Wenzhao",
+            "local_name": "张文钊",
+            "role": "边路 / 前场",
+            "club": "Shandong / Guangzhou pathway",
+            "note": "说明这批人里也有成长为顶级联赛爆点型边锋的样本。"
+          },
+          {
+            "name": "Mao Biao",
+            "local_name": "毛彪",
+            "role": "前锋",
+            "club": "Tianjin Teda pathway",
+            "note": "属于稳定在国内职业联赛兑现的首批名单成员。"
+          },
+          {
+            "name": "Yao Jiangshan",
+            "local_name": "姚江山",
+            "role": "中后场球员",
+            "club": "Qingdao Hainiu / Qingdao Hailifeng pathway",
+            "note": "代表并非国脚级但仍长期完成职业化的样本。"
+          }
         ]
       }
     ],
@@ -2826,50 +3341,314 @@
         "confidence": "B",
         "description": "这份名单来自第三方赛事资料库，目前是北京鹏瑞通程 2026 赛季公开可检最完整 roster。它解决的是“俱乐部目前公开有哪些球员”，不是每个人的正式注册细节。",
         "players": [
-          { "name": "荣昊", "local_name": "荣昊", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。" },
-          { "name": "赵明剑", "local_name": "赵明剑", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。" },
-          { "name": "邹德海", "local_name": "邹德海", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。" },
-          { "name": "单欢欢", "local_name": "单欢欢", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。" },
-          { "name": "余隆赟", "local_name": "余隆赟", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。" },
-          { "name": "程浩伦", "local_name": "程浩伦", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "黄非凡", "local_name": "黄非凡", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "张祚庥", "local_name": "张祚庥", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "张力天", "local_name": "张力天", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "汤学洋", "local_name": "汤学洋", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "LI Yuxuan", "local_name": "李雨轩", "role": "前锋 / U21", "club": "北京鹏瑞通程", "note": "已单独建档；公开可核为 2006-07-03 出生、2 号前锋，2026-05-21 中冠对乌兰察布青年人梅开二度。" },
-          { "name": "程曦阳", "local_name": "程曦阳", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "吴伟豪", "local_name": "吴伟豪", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "徐翊涵", "local_name": "徐翊涵", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "田骋宇", "local_name": "田骋宇", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "吴徐锋", "local_name": "吴徐锋", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "刘鹏", "local_name": "刘鹏", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "蔡仕杰", "local_name": "蔡仕杰", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "赵飞翔", "local_name": "赵飞翔", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "高梓珺", "local_name": "高梓珺", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "史恩东", "local_name": "史恩东", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "徐峻明", "local_name": "徐峻明", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "林扬", "local_name": "林扬", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "和继磊", "local_name": "和继磊", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "罗煜瑄", "local_name": "罗煜瑄", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "罗贝多", "local_name": "罗贝多", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "吴思洁", "local_name": "吴思洁", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "徐博涵", "local_name": "徐博涵", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "曹晓禹", "local_name": "曹晓禹", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "程章齐", "local_name": "程章齐", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "弓梓桢", "local_name": "弓梓桢", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "戈淳聪", "local_name": "戈淳聪", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "方正扬", "local_name": "方正扬", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "魏浩然", "local_name": "魏浩然", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "李嘉琦", "local_name": "李嘉琦", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "张浩", "local_name": "张浩", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "张桐瑀", "local_name": "张桐瑀", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "于砚泽", "local_name": "于砚泽", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "薛艺豪", "local_name": "薛艺豪", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "刘彦植", "local_name": "刘彦植", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "毕林", "local_name": "毕林", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "许珈硕", "local_name": "许珈硕", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" },
-          { "name": "常凯", "local_name": "常凯", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。" },
-          { "name": "徐子轩", "local_name": "徐子轩", "role": "球员", "club": "北京鹏瑞通程", "note": "公开可核 44 人名单成员。" }
+          {
+            "name": "荣昊",
+            "local_name": "荣昊",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。"
+          },
+          {
+            "name": "赵明剑",
+            "local_name": "赵明剑",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。"
+          },
+          {
+            "name": "邹德海",
+            "local_name": "邹德海",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。"
+          },
+          {
+            "name": "单欢欢",
+            "local_name": "单欢欢",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。"
+          },
+          {
+            "name": "余隆赟",
+            "local_name": "余隆赟",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。"
+          },
+          {
+            "name": "程浩伦",
+            "local_name": "程浩伦",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "黄非凡",
+            "local_name": "黄非凡",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "张祚庥",
+            "local_name": "张祚庥",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "张力天",
+            "local_name": "张力天",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "汤学洋",
+            "local_name": "汤学洋",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "LI Yuxuan",
+            "local_name": "李雨轩",
+            "role": "前锋 / U21",
+            "club": "北京鹏瑞通程",
+            "note": "已单独建档；公开可核为 2006-07-03 出生、2 号前锋，2026-05-21 中冠对乌兰察布青年人梅开二度。"
+          },
+          {
+            "name": "程曦阳",
+            "local_name": "程曦阳",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "吴伟豪",
+            "local_name": "吴伟豪",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "徐翊涵",
+            "local_name": "徐翊涵",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "田骋宇",
+            "local_name": "田骋宇",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "吴徐锋",
+            "local_name": "吴徐锋",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "刘鹏",
+            "local_name": "刘鹏",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "蔡仕杰",
+            "local_name": "蔡仕杰",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "赵飞翔",
+            "local_name": "赵飞翔",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "高梓珺",
+            "local_name": "高梓珺",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "史恩东",
+            "local_name": "史恩东",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "徐峻明",
+            "local_name": "徐峻明",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "林扬",
+            "local_name": "林扬",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "和继磊",
+            "local_name": "和继磊",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "罗煜瑄",
+            "local_name": "罗煜瑄",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "罗贝多",
+            "local_name": "罗贝多",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "吴思洁",
+            "local_name": "吴思洁",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "徐博涵",
+            "local_name": "徐博涵",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "曹晓禹",
+            "local_name": "曹晓禹",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "程章齐",
+            "local_name": "程章齐",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "弓梓桢",
+            "local_name": "弓梓桢",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "戈淳聪",
+            "local_name": "戈淳聪",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "方正扬",
+            "local_name": "方正扬",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "魏浩然",
+            "local_name": "魏浩然",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "李嘉琦",
+            "local_name": "李嘉琦",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "张浩",
+            "local_name": "张浩",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "张桐瑀",
+            "local_name": "张桐瑀",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "于砚泽",
+            "local_name": "于砚泽",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "薛艺豪",
+            "local_name": "薛艺豪",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "刘彦植",
+            "local_name": "刘彦植",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "毕林",
+            "local_name": "毕林",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "许珈硕",
+            "local_name": "许珈硕",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          },
+          {
+            "name": "常凯",
+            "local_name": "常凯",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员；同时属于 2026 官宣新援。"
+          },
+          {
+            "name": "徐子轩",
+            "local_name": "徐子轩",
+            "role": "球员",
+            "club": "北京鹏瑞通程",
+            "note": "公开可核 44 人名单成员。"
+          }
         ]
       },
       {
@@ -2878,12 +3657,48 @@
         "confidence": "B",
         "description": "多家媒体转发俱乐部公告后，可稳定核到 2026 赛季公开官宣加盟的 6 名球员。",
         "players": [
-          { "name": "荣昊", "local_name": "荣昊", "role": "官宣新援", "club": "北京鹏瑞通程", "note": "凤凰网移动版转俱乐部公告可核。" },
-          { "name": "赵明剑", "local_name": "赵明剑", "role": "官宣新援", "club": "北京鹏瑞通程", "note": "凤凰网移动版转俱乐部公告可核。" },
-          { "name": "邹德海", "local_name": "邹德海", "role": "官宣新援", "club": "北京鹏瑞通程", "note": "凤凰网移动版转俱乐部公告可核。" },
-          { "name": "单欢欢", "local_name": "单欢欢", "role": "官宣新援", "club": "北京鹏瑞通程", "note": "凤凰网移动版转俱乐部公告可核。" },
-          { "name": "余隆赟", "local_name": "余隆赟", "role": "官宣新援", "club": "北京鹏瑞通程", "note": "凤凰网移动版转俱乐部公告可核。" },
-          { "name": "常凯", "local_name": "常凯", "role": "官宣新援", "club": "北京鹏瑞通程", "note": "凤凰网移动版转俱乐部公告可核。" }
+          {
+            "name": "荣昊",
+            "local_name": "荣昊",
+            "role": "官宣新援",
+            "club": "北京鹏瑞通程",
+            "note": "凤凰网移动版转俱乐部公告可核。"
+          },
+          {
+            "name": "赵明剑",
+            "local_name": "赵明剑",
+            "role": "官宣新援",
+            "club": "北京鹏瑞通程",
+            "note": "凤凰网移动版转俱乐部公告可核。"
+          },
+          {
+            "name": "邹德海",
+            "local_name": "邹德海",
+            "role": "官宣新援",
+            "club": "北京鹏瑞通程",
+            "note": "凤凰网移动版转俱乐部公告可核。"
+          },
+          {
+            "name": "单欢欢",
+            "local_name": "单欢欢",
+            "role": "官宣新援",
+            "club": "北京鹏瑞通程",
+            "note": "凤凰网移动版转俱乐部公告可核。"
+          },
+          {
+            "name": "余隆赟",
+            "local_name": "余隆赟",
+            "role": "官宣新援",
+            "club": "北京鹏瑞通程",
+            "note": "凤凰网移动版转俱乐部公告可核。"
+          },
+          {
+            "name": "常凯",
+            "local_name": "常凯",
+            "role": "官宣新援",
+            "club": "北京鹏瑞通程",
+            "note": "凤凰网移动版转俱乐部公告可核。"
+          }
         ]
       },
       {
@@ -2892,29 +3707,167 @@
         "confidence": "B",
         "description": "竞彩网比赛页可核北京鹏瑞通程对深圳青年人的首发、替补和部分号码。这份视图比 44 人名单更细，但只对应单场比赛，不等于赛季完整注册 roster。",
         "players": [
-          { "name": "吴思洁", "local_name": "吴思洁", "role": "首发", "club": "足协杯 2026-05-16", "note": "23 号首发。" },
-          { "name": "程章齐", "local_name": "程章齐", "role": "首发", "club": "足协杯 2026-05-16", "note": "28 号首发。" },
-          { "name": "张祚庥", "local_name": "张祚庥", "role": "首发", "club": "足协杯 2026-05-16", "note": "4 号首发。" },
-          { "name": "徐博涵", "local_name": "徐博涵", "role": "首发", "club": "足协杯 2026-05-16", "note": "24 号首发。" },
-          { "name": "高梓珺", "local_name": "高梓珺", "role": "首发", "club": "足协杯 2026-05-16", "note": "16 号首发。" },
-          { "name": "和继磊", "local_name": "和继磊", "role": "首发", "club": "足协杯 2026-05-16", "note": "20 号首发。" },
-          { "name": "程浩伦", "local_name": "程浩伦", "role": "首发", "club": "足协杯 2026-05-16", "note": "10 号首发。" },
-          { "name": "蔡仕杰", "local_name": "蔡仕杰", "role": "首发", "club": "足协杯 2026-05-16", "note": "12 号首发。" },
-          { "name": "于砚泽", "local_name": "于砚泽", "role": "首发", "club": "足协杯 2026-05-16", "note": "5 号首发。" },
-          { "name": "汤学洋", "local_name": "汤学洋", "role": "首发", "club": "足协杯 2026-05-16", "note": "37 号首发。" },
-          { "name": "李嘉琦", "local_name": "李嘉琦", "role": "首发", "club": "足协杯 2026-05-16", "note": "27 号首发。" },
-          { "name": "徐翊涵", "local_name": "徐翊涵", "role": "替补", "club": "足协杯 2026-05-16", "note": "55 号替补。" },
-          { "name": "许珈硕", "local_name": "许珈硕", "role": "替补", "club": "足协杯 2026-05-16", "note": "15 号替补。" },
-          { "name": "黄非凡", "local_name": "黄非凡", "role": "替补", "club": "足协杯 2026-05-16", "note": "21 号替补。" },
-          { "name": "程曦阳", "local_name": "程曦阳", "role": "替补", "club": "足协杯 2026-05-16", "note": "8 号替补。" },
-          { "name": "吴伟豪", "local_name": "吴伟豪", "role": "替补", "club": "足协杯 2026-05-16", "note": "11 号替补。" },
-          { "name": "田骋宇", "local_name": "田骋宇", "role": "替补", "club": "足协杯 2026-05-16", "note": "6 号替补。" },
-          { "name": "吴徐锋", "local_name": "吴徐锋", "role": "替补", "club": "足协杯 2026-05-16", "note": "7 号替补。" },
-          { "name": "罗煜瑄", "local_name": "罗煜瑄", "role": "替补", "club": "足协杯 2026-05-16", "note": "3 号替补。" },
-          { "name": "张桐瑀", "local_name": "张桐瑀", "role": "替补", "club": "足协杯 2026-05-16", "note": "33 号替补。" },
-          { "name": "薛艺豪", "local_name": "薛艺豪", "role": "替补", "club": "足协杯 2026-05-16", "note": "17 号替补。" },
-          { "name": "刘彦植", "local_name": "刘彦植", "role": "替补", "club": "足协杯 2026-05-16", "note": "14 号替补。" },
-          { "name": "毕林", "local_name": "毕林", "role": "替补", "club": "足协杯 2026-05-16", "note": "70 号替补。" }
+          {
+            "name": "吴思洁",
+            "local_name": "吴思洁",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "23 号首发。"
+          },
+          {
+            "name": "程章齐",
+            "local_name": "程章齐",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "28 号首发。"
+          },
+          {
+            "name": "张祚庥",
+            "local_name": "张祚庥",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "4 号首发。"
+          },
+          {
+            "name": "徐博涵",
+            "local_name": "徐博涵",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "24 号首发。"
+          },
+          {
+            "name": "高梓珺",
+            "local_name": "高梓珺",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "16 号首发。"
+          },
+          {
+            "name": "和继磊",
+            "local_name": "和继磊",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "20 号首发。"
+          },
+          {
+            "name": "程浩伦",
+            "local_name": "程浩伦",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "10 号首发。"
+          },
+          {
+            "name": "蔡仕杰",
+            "local_name": "蔡仕杰",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "12 号首发。"
+          },
+          {
+            "name": "于砚泽",
+            "local_name": "于砚泽",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "5 号首发。"
+          },
+          {
+            "name": "汤学洋",
+            "local_name": "汤学洋",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "37 号首发。"
+          },
+          {
+            "name": "李嘉琦",
+            "local_name": "李嘉琦",
+            "role": "首发",
+            "club": "足协杯 2026-05-16",
+            "note": "27 号首发。"
+          },
+          {
+            "name": "徐翊涵",
+            "local_name": "徐翊涵",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "55 号替补。"
+          },
+          {
+            "name": "许珈硕",
+            "local_name": "许珈硕",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "15 号替补。"
+          },
+          {
+            "name": "黄非凡",
+            "local_name": "黄非凡",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "21 号替补。"
+          },
+          {
+            "name": "程曦阳",
+            "local_name": "程曦阳",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "8 号替补。"
+          },
+          {
+            "name": "吴伟豪",
+            "local_name": "吴伟豪",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "11 号替补。"
+          },
+          {
+            "name": "田骋宇",
+            "local_name": "田骋宇",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "6 号替补。"
+          },
+          {
+            "name": "吴徐锋",
+            "local_name": "吴徐锋",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "7 号替补。"
+          },
+          {
+            "name": "罗煜瑄",
+            "local_name": "罗煜瑄",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "3 号替补。"
+          },
+          {
+            "name": "张桐瑀",
+            "local_name": "张桐瑀",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "33 号替补。"
+          },
+          {
+            "name": "薛艺豪",
+            "local_name": "薛艺豪",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "17 号替补。"
+          },
+          {
+            "name": "刘彦植",
+            "local_name": "刘彦植",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "14 号替补。"
+          },
+          {
+            "name": "毕林",
+            "local_name": "毕林",
+            "role": "替补",
+            "club": "足协杯 2026-05-16",
+            "note": "70 号替补。"
+          }
         ]
       }
     ],

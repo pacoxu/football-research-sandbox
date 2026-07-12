@@ -64,6 +64,15 @@ const allowedSourceLayerTypes = new Set([
 
 const allowedSourceLayerConfidence = new Set(["high", "medium", "low"]);
 
+const allowedAcademyCurrentStatuses = new Set([
+  "active-first-team",
+  "active-reserve",
+  "active-professional",
+  "retired-coach",
+  "youth-development",
+  "needs-review"
+]);
+
 const allowedOrganizationTypes = new Set([
   "high-school",
   "club-academy",
@@ -243,6 +252,36 @@ function validateOrganizationReference(value, label) {
   assert(typeof value === "object" && value !== null, `Invalid organization reference on ${label}`);
   assert(typeof value.name === "string" && value.name.length > 0, `Missing organization name on ${label}`);
   assert(typeof value.country === "string" && value.country.length > 0, `Missing organization country on ${label}`);
+}
+
+function validateGenbaoDossier(dossier) {
+  assert(isIsoDate(dossier.source_checked_at), "Invalid Genbao source_checked_at");
+  assert(dossier.headline_stats?.founded === "2000-07", "Invalid Genbao founding snapshot");
+  assert(Array.isArray(dossier.roster_views) && dossier.roster_views.length === 7, "Expected seven Genbao generations");
+
+  const players = dossier.roster_views.flatMap((view) => view.players ?? []);
+  assert(players.length === 26, `Expected 26 Genbao tracked players, found ${players.length}`);
+  assert(dossier.headline_stats.tracked_players === players.length, "Genbao tracked player count mismatch");
+  assert(dossier.headline_stats.tracked_generations === dossier.roster_views.length, "Genbao generation count mismatch");
+
+  const identities = new Set();
+  for (const player of players) {
+    const label = `Genbao player ${player.local_name ?? player.name}`;
+    assert(player.name && player.local_name && player.role, `Invalid ${label}`);
+    assert(!identities.has(player.local_name), `Duplicate ${label}`);
+    identities.add(player.local_name);
+    const status = player.current_status;
+    assert(status && allowedAcademyCurrentStatuses.has(status.category), `Invalid current status on ${label}`);
+    assert(status.organization && status.role, `Missing current organization on ${label}`);
+    assert(isIsoDate(status.as_of), `Invalid current status date on ${label}`);
+    assert(allowedSourceLayerConfidence.has(status.confidence), `Invalid current status confidence on ${label}`);
+    assert(status.source_label && /^https?:\/\//.test(status.source_url), `Invalid current status source on ${label}`);
+  }
+
+  const currentProgram = dossier.roster_views.find((view) => view.id === "commissioned-wave-1314")?.program_status;
+  assert(currentProgram?.category === "active-development-program", "Missing Genbao 1314 program status");
+  assert(isIsoDate(currentProgram.as_of), "Invalid Genbao program status date");
+  assert(/^https?:\/\//.test(currentProgram.source_url), "Invalid Genbao program status source");
 }
 
 function validateYouthDevelopmentSystems(payload) {
@@ -1394,6 +1433,9 @@ export async function validateData() {
         Array.isArray(dossier.search_disambiguation.confusing_entities),
         `Invalid confusing entities list: ${dossier.id}`
       );
+    }
+    if (dossier.id === "genbao-football-base") {
+      validateGenbaoDossier(dossier);
     }
   }
 
