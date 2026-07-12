@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>留洋首发阵容 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="从中国、日本、韩国留洋球员中选择 11 人首发，并按位置规则生成阵型。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-lineup" />
+  </head>
+  <body class="lineup-page">
+    <div class="site-shell lineup-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker">青训追踪台</span>
+          <strong>青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航">
+            <a href="./index.html">首页</a>
+            <a href="./players.html">球员</a>
+            <a href="./tournaments.html">赛事</a>
+            <a href="./overseas.html">留洋</a>
+            <a class="is-active" aria-current="page" href="./lineup.html">排阵容</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section class="lineup-intro">
+          <div>
+            <p class="eyebrow">OVERSEAS XI BUILDER</p>
+            <h1>我的留洋首发 XI</h1>
+            <p>从现役与历史留洋球员中挑选你的 11 人。阵型会根据位置人数自动生成。</p>
+          </div>
+          <div class="lineup-summary" aria-live="polite">
+            <span>当前阵型</span>
+            <strong id="formationLabel">4-3-3</strong>
+            <small id="lineupStatus">阵容有效 · 可以出场</small>
+          </div>
+        </section>
+
+        <section class="lineup-toolbar" aria-label="球员筛选">
+          <div class="country-tabs" id="countryTabs" role="group" aria-label="选择国家">
+            <button class="is-active" type="button" data-country="China PR">中国</button>
+            <button type="button" data-country="Japan">日本</button>
+            <button type="button" data-country="Korea Republic">韩国</button>
+          </div>
+          <label class="lineup-search">
+            <span class="sr-only">搜索球员</span>
+            <span aria-hidden="true">⌕</span>
+            <input id="playerSearch" type="search" placeholder="搜索球员、俱乐部或位置" autocomplete="off" />
+          </label>
+          <label class="history-switch">
+            <input id="historyToggle" type="checkbox" checked />
+            <span class="history-switch-track" aria-hidden="true"></span>
+            <span>加入历史球员</span>
+          </label>
+        </section>
+
+        <section class="lineup-workspace">
+          <article class="pitch-panel">
+            <div class="pitch-panel-head">
+              <div>
+                <span class="panel-kicker">STARTING XI</span>
+                <h2><span id="selectedCount">11</span> / 11 已选择</h2>
+              </div>
+              <div class="lineup-actions">
+                <button id="resetLineupButton" class="text-button" type="button">恢复默认</button>
+                <button id="clearLineupButton" class="text-button is-danger" type="button">清空</button>
+              </div>
+            </div>
+
+            <div class="football-pitch" aria-label="首发阵容球场">
+              <div class="pitch-markings" aria-hidden="true">
+                <span class="pitch-halfway"></span>
+                <span class="pitch-center-circle"></span>
+                <span class="pitch-center-dot"></span>
+                <span class="pitch-box pitch-box-top"></span>
+                <span class="pitch-box pitch-box-bottom"></span>
+                <span class="pitch-goal pitch-goal-top"></span>
+                <span class="pitch-goal pitch-goal-bottom"></span>
+              </div>
+              <div id="pitchForwards" class="pitch-line pitch-forwards"></div>
+              <div id="pitchMidfielders" class="pitch-line pitch-midfielders"></div>
+              <div id="pitchDefenders" class="pitch-line pitch-defenders"></div>
+              <div id="pitchGoalkeepers" class="pitch-line pitch-goalkeepers"></div>
+            </div>
+
+            <div class="rule-strip" id="ruleStrip" aria-label="阵容规则"></div>
+            <p class="pitch-hint">点击球员卡片加入阵容；点击球场上的球员即可移除。</p>
+          </article>
+
+          <aside class="player-pool-panel">
+            <div class="player-pool-head">
+              <div>
+                <span class="panel-kicker">PLAYER POOL</span>
+                <h2 id="poolTitle">中国留洋球员</h2>
+              </div>
+              <span id="poolCount" class="pool-count"></span>
+            </div>
+            <div class="position-tabs" id="positionTabs" role="group" aria-label="按位置筛选">
+              <button class="is-active" type="button" data-position="ALL">全部</button>
+              <button type="button" data-position="GK">门将</button>
+              <button type="button" data-position="DEF">后卫</button>
+              <button type="button" data-position="MID">中场</button>
+              <button type="button" data-position="FWD">前锋</button>
+            </div>
+            <div id="playerPool" class="player-pool" aria-live="polite"></div>
+            <div id="poolEmpty" class="pool-empty" hidden>没有匹配的球员，换个筛选条件试试。</div>
+          </aside>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>阵容规则：1 门将 · 3–5 后卫 · 2–6 中场 · 1–4 前锋 · 共 11 人</p>
+      </footer>
+    </div>
+
+    <div id="lineupToast" class="lineup-toast" role="status" aria-live="polite"></div>
+    <script type="module" src="./assets/lineup.js?v=20260712-lineup"></script>
+  </body>
+</html>
