@@ -106,7 +106,7 @@ python3 -m http.server 4173
 - 五大联赛亚洲教练：主口径收录 Patrick Kisnorbo、Ange Postecoglou 两名 AFC 成员协会教练；广义边界项另列 Özcan Arkoç、Fatih Terim、Avram Grant、Tayfun Korkut、Nuri Şahin 等土耳其 / 以色列样本。
 - 亚洲教练扩展：首批落库 Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting 五名 AFC 成员协会教练，共 10 段官方来源任期。
 - 中超 2026 青年样本：已开始补当前一线队 U21 和具备留洋经历的 U23，中国球员若已在库内建档则直接补中超/留洋字段，不重复建第二条。
-- 乌兹别克斯坦 U17：保留 2026 赛事关键球员样本，作为东亚三队对照组。
+- 乌兹别克斯坦 U17：已按 AFC 2026 最终报名补齐 23 人，并新增青年成绩、青训基础设施和 Khusanov 留洋路径研究说明。
 - 董路足球小将：已补专题卡片、公开批次主干和录入规范，下一步继续拆逐名档案。
 
 ## 已知限制

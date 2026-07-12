@@ -8,6 +8,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Completed the 23-player Uzbekistan U17 2026 final-squad dataset, added Abdukodir Khusanov as an overseas pathway case, and documented Uzbekistan's recent U17/U20/U23 development results.
+
 - Added the China player-level `overseas_status` model, status counts in generated overview data, validation rules, SQLite support, and a bilingual status-scope card on the overseas page.
 
 - Added executable project-governance automation: PR validation CI, dynamic status badges, structured issue routing, and monthly/event/scope snapshot releases with hashed manifests.
