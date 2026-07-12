@@ -82,6 +82,7 @@ const MANUAL_PROFILE_OVERRIDES = {
   "cn-liu-shaoziyang-2003": "966946",
   "cn-mutalifu-yimingkari-2004": "1014231",
   "cn-baihelamu-abuduwaili-2003": "946750",
+  "uz-abdukodir-khusanov-2004": "763079",
   "jp-shio-fukuda-2004": "1073997",
   "jp-taichi-fukui-2004": "868622",
   "jp-kodai-sano-2003": "957544",
