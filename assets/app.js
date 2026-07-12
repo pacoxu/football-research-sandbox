@@ -1310,6 +1310,7 @@ const OVERSEAS_TEAM_LEVEL_LABELS = {
 };
 
 const OVERSEAS_TEAM_LEVEL_ORDER = ["first-team", "u21-u23", "u19-youth", "unknown"];
+const OVERSEAS_TEAM_LEVEL_SUMMARY_ORDER = ["first-team", "u21-u23", "u19-youth"];
 
 const AGE_BAND_LABELS = {
   u17: { zh: "U17", en: "U17" },
@@ -3449,6 +3450,7 @@ function getOverseasCountryMap() {
     map.set(entry.country, {
       country: entry.country,
       currentCount: 0,
+      bigFiveFirstTeamCount: 0,
       teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
       verifiedRecords: entry.verified_records,
       notes: entry.notes,
@@ -3462,6 +3464,7 @@ function getOverseasCountryMap() {
       map.set(item.country, {
         country: item.country,
         currentCount: 0,
+        bigFiveFirstTeamCount: 0,
         teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
         verifiedRecords: 0,
         notes: "",
@@ -3471,6 +3474,9 @@ function getOverseasCountryMap() {
     }
     map.get(item.country).currentCount += 1;
     map.get(item.country).teamLevelCounts[item.overseasTeamLevel] += 1;
+    if (item.overseasBucket === "big-five" && item.overseasTeamLevel === "first-team") {
+      map.get(item.country).bigFiveFirstTeamCount += 1;
+    }
   }
 
   return [...map.values()].sort((left, right) =>
@@ -6040,7 +6046,11 @@ function renderOverseasPage() {
           <p class="small-note">${escapeHtml(t("overseas.comparison.current"))}</p>
           <p class="small-note">${escapeHtml(t("overseas.comparison.history", { count: entry.verifiedRecords }))}</p>
           <div class="stat-breakdown">
-            ${OVERSEAS_TEAM_LEVEL_ORDER.map(
+            <p class="stat-breakdown-item">
+              <span>${escapeHtml(formatBucket("big-five"))}</span>
+              <strong>${entry.bigFiveFirstTeamCount}</strong>
+            </p>
+            ${OVERSEAS_TEAM_LEVEL_SUMMARY_ORDER.map(
               (teamLevel) => `
                 <p class="stat-breakdown-item">
                   <span>${escapeHtml(formatOverseasTeamLevel(teamLevel))}</span>
