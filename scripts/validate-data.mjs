@@ -74,6 +74,10 @@ const allowedTournamentSourceVersionTypes = new Set([
   "news-secondary"
 ]);
 
+const allowedTournamentParticipantStatuses = new Set(["complete", "partial", "cancelled-snapshot"]);
+const allowedTournamentEntryStatuses = new Set(["host", "qualified", "participant"]);
+const allowedTournamentDrawStatuses = new Set(["complete", "pending", "cancelled"]);
+
 const allowedAsianCoachCompetitionScopes = new Set([
   "europe_non_big_five_top_flight",
   "afc_senior_national_team",
@@ -283,6 +287,309 @@ function validateTournamentArchiveVersioning(tournament) {
       validateCompetitionNameHistoryEntry(entry, tournament.id);
     }
   }
+}
+
+function validateTournamentDateRange(tournament, label = "archive tournament") {
+  const range = tournament.date_range;
+  assert(range && typeof range === "object", `Missing ${label} date range: ${tournament.id}`);
+  if (tournament.date_precision === "tbc") {
+    assert(
+      range.start === null && range.end === null,
+      `TBC ${label} must use null dates: ${tournament.id}`
+    );
+    return;
+  }
+  assert(
+    isIsoDate(range.start) && isIsoDate(range.end),
+    `Invalid ${label} date range: ${tournament.id}`
+  );
+}
+
+function validateTournamentGroup(group, tournamentId, scope) {
+  assert(group && typeof group === "object", `Invalid ${scope} group on ${tournamentId}`);
+  assert(typeof group.name === "string" && group.name.length > 0, `Missing ${scope} group name on ${tournamentId}`);
+  assert(Array.isArray(group.teams) && group.teams.length > 0, `Invalid ${scope} group teams on ${tournamentId}:${group.name}`);
+  assert(
+    new Set(group.teams).size === group.teams.length,
+    `Duplicate team inside ${scope} group on ${tournamentId}:${group.name}`
+  );
+  for (const team of group.teams) {
+    assert(typeof team === "string" && team.length > 0, `Invalid ${scope} team on ${tournamentId}:${group.name}`);
+  }
+  if (group.host !== undefined) {
+    assert(typeof group.host === "string" && group.host.length > 0, `Invalid ${scope} host on ${tournamentId}:${group.name}`);
+  }
+}
+
+function validateTournamentField(tournament) {
+  const participants = tournament.participants;
+  const draw = tournament.final_draw;
+  if (participants === undefined && draw === undefined) {
+    return;
+  }
+
+  assert(participants && typeof participants === "object", `Missing participants on ${tournament.id}`);
+  assert(
+    allowedTournamentParticipantStatuses.has(participants.status),
+    `Invalid participants status on ${tournament.id}`
+  );
+  assert(Array.isArray(participants.teams), `Invalid participants teams on ${tournament.id}`);
+  const participantNames = participants.teams.map((entry) => entry.team);
+  assert(new Set(participantNames).size === participantNames.length, `Duplicate participant on ${tournament.id}`);
+  for (const entry of participants.teams) {
+    assert(entry && typeof entry.team === "string" && entry.team.length > 0, `Invalid participant on ${tournament.id}`);
+    assert(
+      allowedTournamentEntryStatuses.has(entry.entry_status),
+      `Invalid participant entry_status on ${tournament.id}:${entry.team}`
+    );
+    if (entry.qualification_route !== undefined) {
+      assert(typeof entry.qualification_route === "string" && entry.qualification_route.length > 0, `Invalid qualification route on ${tournament.id}:${entry.team}`);
+    }
+    if (entry.confirmed_at !== undefined) {
+      assert(isIsoDate(entry.confirmed_at), `Invalid participant confirmed_at on ${tournament.id}:${entry.team}`);
+    }
+  }
+
+  assert(draw && typeof draw === "object", `Missing final_draw on ${tournament.id}`);
+  assert(allowedTournamentDrawStatuses.has(draw.status), `Invalid final_draw status on ${tournament.id}`);
+  assert(Array.isArray(draw.groups), `Invalid final_draw groups on ${tournament.id}`);
+  draw.groups.forEach((group) => validateTournamentGroup(group, tournament.id, "final draw"));
+  const drawnTeams = draw.groups.flatMap((group) => group.teams);
+  assert(new Set(drawnTeams).size === drawnTeams.length, `Team appears in multiple final groups on ${tournament.id}`);
+
+  if (tournament.status === "completed") {
+    assert(participants.status === "complete", `Completed tournament has partial participants on ${tournament.id}`);
+    assert(draw.status === "complete" && draw.groups.length > 0, `Completed tournament has incomplete draw on ${tournament.id}`);
+    assert(
+      participantNames.length === drawnTeams.length && participantNames.every((team) => drawnTeams.includes(team)),
+      `Participants and final draw differ on ${tournament.id}`
+    );
+  }
+
+  if (tournament.qualifiers !== undefined) {
+    assert(Array.isArray(tournament.qualifiers) && tournament.qualifiers.length > 0, `Invalid qualifiers on ${tournament.id}`);
+    const qualifierTeams = [];
+    for (const phase of tournament.qualifiers) {
+      assert(typeof phase.phase === "string" && phase.phase.length > 0, `Missing qualifier phase on ${tournament.id}`);
+      assert(phase.status === "drawn", `Invalid qualifier phase status on ${tournament.id}:${phase.phase}`);
+      assert(isIsoDate(phase.date_range?.start) && isIsoDate(phase.date_range?.end), `Invalid qualifier dates on ${tournament.id}:${phase.phase}`);
+      assert(Array.isArray(phase.groups) && phase.groups.length > 0, `Invalid qualifier groups on ${tournament.id}:${phase.phase}`);
+      for (const group of phase.groups) {
+        validateTournamentGroup(group, tournament.id, `qualifier ${phase.phase}`);
+        qualifierTeams.push(...group.teams);
+      }
+    }
+    assert(new Set(qualifierTeams).size === qualifierTeams.length, `Team appears in multiple qualifier groups on ${tournament.id}`);
+  }
+}
+
+function validateU20ArchiveCoverage(tournaments) {
+  const byId = new Map(tournaments.map((tournament) => [tournament.id, tournament]));
+  assert(byId.size === tournaments.length, "Duplicate tournament archive id");
+
+  const fifaYears = [1985, 1987, 1989, 1991, 1993, 1995, 1997, 1999, 2001, 2003, 2005, 2007, 2009, 2011, 2013, 2015, 2017, 2019, 2021, 2023, 2025];
+  const afcYears = [1985, 1986, 1988, 1990, 1992, 1994, 1996, 1998, 2000, 2002, 2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018, 2020, 2023, 2025];
+  const editionYear = (tournament) => Number.parseInt(tournament.edition_label, 10);
+  const fifaCycles = tournaments.filter(
+    (tournament) => tournament.level === "u20-world-cup" && editionYear(tournament) >= 1985 && editionYear(tournament) <= 2025
+  );
+  const afcCycles = tournaments.filter(
+    (tournament) => tournament.level === "u20" && editionYear(tournament) >= 1985 && editionYear(tournament) <= 2025
+  );
+  assert(fifaCycles.length === 21, `Expected exactly 21 FIFA U20 cycles, found ${fifaCycles.length}`);
+  assert(afcCycles.length === 21, `Expected exactly 21 AFC U20 cycles, found ${afcCycles.length}`);
+
+  for (const year of fifaYears) {
+    assert(byId.has(`fifa-u20-world-cup-${year}`), `Missing FIFA U20 archive cycle: ${year}`);
+  }
+  for (const year of afcYears) {
+    assert(byId.has(`afc-u20-${year}`), `Missing AFC U20 archive cycle: ${year}`);
+  }
+  assert(byId.get("fifa-u20-world-cup-2021")?.status === "cancelled", "FIFA U20 2021 must remain cancelled");
+  assert(byId.get("afc-u20-2020")?.status === "cancelled", "AFC U20 2020 must remain cancelled");
+  assert(byId.get("fifa-u20-world-cup-2027")?.status === "upcoming", "Missing FIFA U20 2027 future archive");
+  assert(byId.get("afc-u20-2027")?.status === "upcoming", "Missing AFC U20 2027 future archive");
+
+  const u20Scope = [
+    ...fifaYears.map((year) => byId.get(`fifa-u20-world-cup-${year}`)),
+    ...afcYears.map((year) => byId.get(`afc-u20-${year}`)),
+    byId.get("fifa-u20-world-cup-2027"),
+    byId.get("afc-u20-2027")
+  ];
+  for (const tournament of u20Scope) {
+    assert(isIsoDate(tournament.source_checked_at), `Missing U20 source_checked_at on ${tournament.id}`);
+    assert(
+      Array.isArray(tournament.source_version) && tournament.source_version.length > 0,
+      `Missing field-level U20 source_version on ${tournament.id}`
+    );
+    assert(tournament.participants && tournament.final_draw, `Missing U20 field data on ${tournament.id}`);
+    if (tournament.status === "completed") {
+      assert(tournament.champion && tournament.runner_up, `Missing U20 finalists on ${tournament.id}`);
+      assert(tournament.date_precision === "exact", `Completed U20 event needs exact dates: ${tournament.id}`);
+    }
+    if (tournament.status === "cancelled") {
+      assert(tournament.champion === null && tournament.runner_up === null, `Cancelled U20 event must not have finalists: ${tournament.id}`);
+      assert(tournament.participants.status === "cancelled-snapshot", `Cancelled U20 event needs a field snapshot: ${tournament.id}`);
+      assert(tournament.final_draw.status === "cancelled", `Cancelled U20 draw must be cancelled: ${tournament.id}`);
+    }
+    if (tournament.status === "upcoming") {
+      assert(tournament.champion === null && tournament.runner_up === null, `Future U20 event must not have finalists: ${tournament.id}`);
+      assert(tournament.date_precision === "tbc", `Future U20 event must keep dates pending: ${tournament.id}`);
+      assert(tournament.final_draw.status === "pending", `Future U20 draw must remain pending: ${tournament.id}`);
+    }
+  }
+
+  const afc2027QualifierTeams = byId.get("afc-u20-2027")?.qualifiers?.flatMap((phase) =>
+    phase.groups.flatMap((group) => group.teams)
+  ) ?? [];
+  assert(afc2027QualifierTeams.length === 44, "AFC U20 2027 must retain all 44 qualifier entrants");
+  assert(
+    byId.get("afc-u20-2027").participants.teams.length === 1,
+    "AFC U20 2027 qualifier entrants must not be promoted into the partial finals participant list"
+  );
+  assert(
+    byId.get("afc-u20-2027").participants.teams[0].entry_status === "host" &&
+      byId.get("afc-u20-2027").china_status === "host",
+    "AFC U20 2027 must keep host identity separate from qualified status"
+  );
+}
+
+function validateChinaU20PlayerStatistics(tournament, players) {
+  const statistics = tournament.china_player_statistics;
+  const rosterBoundary = tournament.roster_boundary;
+  const allowedRosterStatuses = new Set([
+    "tournament-squad",
+    "tournament-replacement",
+    "replaced-before-match"
+  ]);
+
+  assert(statistics && typeof statistics === "object", "Missing China U20 2025 player statistics");
+  assert(isIsoDate(statistics.checked_at), "Invalid China U20 2025 statistics checked_at");
+  assert(statistics.scope, "Missing China U20 2025 statistics scope");
+  assert(statistics.minutes_method, "Missing China U20 2025 minutes method");
+  assert(
+    Array.isArray(statistics.source_links) && statistics.source_links.length === 4,
+    "China U20 2025 statistics must retain four official Match Summaries"
+  );
+  for (const source of statistics.source_links) {
+    assert(source.label, "Missing China U20 2025 statistics source label");
+    assert(/^https?:\/\//.test(source.url), "Invalid China U20 2025 statistics source URL");
+  }
+
+  assert(rosterBoundary && typeof rosterBoundary === "object", "Missing China U20 2025 roster boundary");
+  assert(isIsoDate(rosterBoundary.checked_at), "Invalid China U20 2025 roster checked_at");
+  assert(
+    Array.isArray(rosterBoundary.replacement_deltas) &&
+      rosterBoundary.replacement_deltas.length === 1,
+    "China U20 2025 must retain the documented goalkeeper replacement"
+  );
+
+  assert(
+    Array.isArray(statistics.players) && statistics.players.length === 24,
+    "China U20 2025 statistics must cover 23 original registrations plus one replacement"
+  );
+
+  const playerById = new Map(players.map((player) => [player.id, player]));
+  const statisticsPlayerIds = new Set();
+  const computed = {
+    original_final_registration_players: 0,
+    updated_tournament_squad_players: 0,
+    competition_tagged_players: statistics.players.length,
+    players_used: 0,
+    appearance_records: 0,
+    starts: 0,
+    player_minutes: 0,
+    goals: 0
+  };
+
+  for (const row of statistics.players) {
+    assert(row.player_id && row.player, "Invalid China U20 2025 player statistics row");
+    assert(!statisticsPlayerIds.has(row.player_id), `Duplicate China U20 2025 statistics row: ${row.player_id}`);
+    assert(
+      allowedRosterStatuses.has(row.roster_status),
+      `Invalid China U20 2025 roster_status on ${row.player_id}`
+    );
+    for (const field of ["appearances", "starts", "minutes", "goals"]) {
+      assert(
+        Number.isInteger(row[field]) && row[field] >= 0,
+        `Invalid China U20 2025 ${field} on ${row.player_id}`
+      );
+    }
+    assert(row.starts <= row.appearances, `China U20 2025 starts exceed appearances on ${row.player_id}`);
+    if (row.note !== undefined) {
+      assert(typeof row.note === "string" && row.note.length > 0, `Invalid China U20 2025 note on ${row.player_id}`);
+    }
+
+    const player = playerById.get(row.player_id);
+    assert(player, `Missing China U20 2025 player record: ${row.player_id}`);
+    const participation = player.tournament_participation.filter(
+      (entry) => entry.competition_id === tournament.id
+    );
+    assert(participation.length === 1, `Invalid China U20 2025 participation count on ${row.player_id}`);
+    for (const field of ["roster_status", "appearances", "minutes", "goals"]) {
+      assert(
+        participation[0][field] === row[field],
+        `China U20 2025 ${field} does not match archive statistics on ${row.player_id}`
+      );
+    }
+
+    if (row.roster_status !== "tournament-replacement") {
+      computed.original_final_registration_players += 1;
+    }
+    if (row.roster_status !== "replaced-before-match") {
+      computed.updated_tournament_squad_players += 1;
+    }
+    if (row.appearances > 0) {
+      computed.players_used += 1;
+    }
+    computed.appearance_records += row.appearances;
+    computed.starts += row.starts;
+    computed.player_minutes += row.minutes;
+    computed.goals += row.goals;
+    statisticsPlayerIds.add(row.player_id);
+  }
+
+  const taggedPlayers = players.filter((player) =>
+    player.tournament_participation.some((entry) => entry.competition_id === tournament.id)
+  );
+  assert(taggedPlayers.length === 24, "China U20 2025 must retain 24 version-aware player records");
+  assert(
+    taggedPlayers.every((player) => statisticsPlayerIds.has(player.id)),
+    "China U20 2025 tagged player is missing from archive statistics"
+  );
+
+  assert(statistics.totals.matches === 4, "China U20 2025 statistics must cover four matches");
+  for (const [field, value] of Object.entries(computed)) {
+    assert(statistics.totals[field] === value, `Invalid China U20 2025 aggregate: ${field}`);
+  }
+  assert(
+    rosterBoundary.original_final_registration_count ===
+      computed.original_final_registration_players,
+    "China U20 2025 original roster boundary does not match statistics"
+  );
+  assert(
+    rosterBoundary.updated_tournament_squad_count ===
+      computed.updated_tournament_squad_players,
+    "China U20 2025 updated roster boundary does not match statistics"
+  );
+  assert(
+    rosterBoundary.competition_tagged_player_count === computed.competition_tagged_players,
+    "China U20 2025 tagged-player boundary does not match statistics"
+  );
+  const [replacement] = rosterBoundary.replacement_deltas;
+  assert(
+    replacement.out_player_id === "cn-yuan-jianrui-2005" &&
+      replacement.in_player_id === "cn-zhang-haoran-2006" &&
+      replacement.shirt_number === 22,
+    "China U20 2025 goalkeeper replacement boundary changed"
+  );
+  assert(computed.original_final_registration_players === 23, "China U20 2025 original registration must contain 23 players");
+  assert(computed.updated_tournament_squad_players === 23, "China U20 2025 updated squad must contain 23 players");
+  assert(computed.players_used === 20, "China U20 2025 must retain 20 players used");
+  assert(computed.appearance_records === 61, "China U20 2025 must retain 61 appearance records");
+  assert(computed.starts === 44, "China U20 2025 must retain 44 starts");
+  assert(computed.player_minutes === 3960, "China U20 2025 must retain 3960 player-minutes");
+  assert(computed.goals === 8, "China U20 2025 must retain eight goals");
 }
 
 function validateVerificationBlock(verification, label) {
@@ -838,10 +1145,7 @@ export async function validateData() {
 
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
-    assert(
-      isIsoDate(tournament.date_range.start) && isIsoDate(tournament.date_range.end),
-      `Invalid tournament date range: ${tournament.id}`
-    );
+    validateTournamentDateRange(tournament, "focus tournament");
   }
 
   for (const country of dataset.overseasHistory.countries) {
@@ -893,10 +1197,7 @@ export async function validateData() {
 
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
-    assert(
-      isIsoDate(tournament.date_range.start) && isIsoDate(tournament.date_range.end),
-      `Invalid archive tournament date range: ${tournament.id}`
-    );
+    validateTournamentDateRange(tournament);
     assert(Array.isArray(tournament.source_links), `Invalid source_links on ${tournament.id}`);
     assert(Array.isArray(tournament.china_matches), `Invalid china_matches on ${tournament.id}`);
     assert(Array.isArray(tournament.china_key_players), `Invalid china_key_players on ${tournament.id}`);
@@ -907,7 +1208,12 @@ export async function validateData() {
       validateRegionalHistory(tournament.regional_history, tournament.id);
     }
     validateTournamentArchiveVersioning(tournament);
+    validateTournamentField(tournament);
+    if (tournament.id === "afc-u20-2025") {
+      validateChinaU20PlayerStatistics(tournament, dataset.players);
+    }
   }
+  validateU20ArchiveCoverage(dataset.tournamentArchive);
 
   if (dataset.chinaMenYouthCoaches !== null) {
     validateChinaMenYouthCoaches(dataset.chinaMenYouthCoaches);

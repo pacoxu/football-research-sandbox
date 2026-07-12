@@ -1,6 +1,6 @@
 # SQLite 本地库
 
-更新时间：2026-06-28
+更新时间：2026-07-12
 
 `scripts/sync-sqlite.mjs` 会把当前 JSON 数据同步到 `storage/youth-football.sqlite`。这个数据库用于本地查询、调试和后续分析，不提交仓库，也不发布到 GitHub Pages。
 
@@ -98,6 +98,7 @@ erDiagram
     TEXT last_checked
     TEXT start_date
     TEXT end_date
+    TEXT date_precision
     TEXT focus_teams_json
     TEXT headline
     TEXT notes_json
@@ -177,6 +178,7 @@ erDiagram
     TEXT host
     TEXT start_date
     TEXT end_date
+    TEXT date_precision
     TEXT status
     TEXT champion
     TEXT runner_up
@@ -187,6 +189,9 @@ erDiagram
     TEXT source_links_json
     TEXT china_matches_json
     TEXT china_key_players_json
+    TEXT participants_json
+    TEXT final_draw_json
+    TEXT qualifiers_json
   }
 ```
 
@@ -215,7 +220,12 @@ SQLite 表只把高频查询字段拆成列，其余复杂结构以 `*_json` 文
 - `sources_json`
 - `watch_items_json`
 - `china_matches_json`
+- `participants_json`
+- `final_draw_json`
+- `qualifiers_json`
 - `supporting_documents_json`
+
+赛事的 `start_date`、`end_date` 允许为空；当未来届次尚未公布日期时，`date_precision` 为 `tbc`。资格赛、决赛圈参赛队和决赛圈抽签分别保存在独立 JSON 列中，避免把资格赛球队误当作决赛圈球队。
 
 查询时需要在应用层或 SQLite JSON 函数中解析这些字段。当前脚本不依赖 JSON1 扩展特性，主要保证 Node 内置 SQLite 能生成数据库。
 
