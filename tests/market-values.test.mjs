@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  matchesMarketValueSelection,
   namesMatch,
   normalizeMarketValueHistory,
   preservePreviousOnFailure,
@@ -115,4 +116,51 @@ test("matches hyphenated East Asian names when surname order is inverted", () =>
   const player = { name: "Kang Seongjin" };
   const profile = { name: "Seong-jin Kang" };
   assert.equal(namesMatch(player, profile), true);
+});
+
+test("selects a country and competition without touching unrelated players", () => {
+  const australian = {
+    id: "au-steven-hall-2005",
+    country: "Australia",
+    tournament_participation: [{ competition_id: "afc-u20-2025" }]
+  };
+  const japanese = {
+    id: "jp-sample-2005",
+    country: "Japan",
+    tournament_participation: [{ competition_id: "afc-u20-2025" }]
+  };
+
+  assert.equal(
+    matchesMarketValueSelection(australian, {
+      country: "Australia",
+      competition: "afc-u20-2025"
+    }),
+    true
+  );
+  assert.equal(
+    matchesMarketValueSelection(japanese, {
+      country: "Australia",
+      competition: "afc-u20-2025"
+    }),
+    false
+  );
+  assert.equal(matchesMarketValueSelection(australian, { playerId: "au-other-2005" }), false);
+});
+
+test("accepts an Australian profile only with the configured nationality identity", () => {
+  const player = {
+    name: "Steven Hall",
+    country: "Australia",
+    birth_date: "2005-01-16",
+    primary_position: "Goalkeeper"
+  };
+  const profile = {
+    name: "Steven Hall",
+    lifeDates: { dateOfBirth: "2005-01-16" },
+    nationalityDetails: { nationalities: { nationalityId: 12, secondNationalityId: 0 } },
+    attributes: { positionGroup: "GOALKEEPER" }
+  };
+
+  assert.equal(verifyTransfermarktIdentity(player, profile, { Australia: [12] }).accepted, true);
+  assert.equal(verifyTransfermarktIdentity(player, profile, { Australia: [34] }).accepted, false);
 });

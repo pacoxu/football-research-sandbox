@@ -36,7 +36,7 @@
 | `birth_date` | 出生日期，格式 `YYYY-MM-DD`。 |
 | `age_band` | 年龄段，例如 `u17`、`u20`、`u21`、`u23`。 |
 | `primary_position` | 主要位置。 |
-| `registration_club` | 当前有效注册组织，包含 `name`、`country`，可含组织类型、母组织和合作学校。 |
+| `registration_club` | 注册组织或有明确日期的赛事报名归属，包含 `name`、`country`，可含状态、快照日期、组织类型、母组织和合作学校。 |
 | `training_pathway` | 训练、学校、俱乐部、国家队或项目路径数组。 |
 | `focus_tags` | 页面筛选、专题和研究标签。 |
 | `tournament_participation` | 赛事、集训、留洋或专题参与记录。 |
@@ -63,13 +63,15 @@
 
 | 字段 | 含义 |
 | --- | --- |
-| `name` | 当前有效注册俱乐部、学校队或组织名。 |
+| `name` | 注册俱乐部、学校队或赛事名单所记录的组织名。 |
 | `country` | 俱乐部或组织所在国家/地区。 |
+| `status` | 可选；`current` 表示有当前注册来源，`tournament-snapshot` 表示只确认赛事报名时点。旧记录缺少该字段时按 `current` 兼容处理。 |
+| `as_of` | 可选 ISO 日期；`tournament-snapshot` 必填，用于明确赛事报名快照时点。 |
 | `organization_type` | `high-school`、`club-academy`、`university`、`professional-club`、`military-service-club` 或 `overseas-academy`。 |
 | `parent_organization` | 可选母俱乐部对象，包含 `name`、`country`；韩国职业梯队使用。 |
 | `education_partner` | 可选合作高中对象，包含 `name`、`country`；不得覆盖当前注册组织。 |
 
-不要把未来生效转会、试训、短训或媒体传闻写进 `registration_club`。这些应写在路径、参与记录或核验备注中。
+没有较新的官方俱乐部或联赛注册来源时，赛事名单中的俱乐部必须标为 `tournament-snapshot`，页面显示“赛事报名归属”，不得称为当前俱乐部。不要把未来生效转会、试训、短训或媒体传闻写进 `registration_club`；这些应写在路径、参与记录或核验备注中。
 
 ## `training_pathway`
 

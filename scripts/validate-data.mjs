@@ -58,6 +58,16 @@ const allowedSquadStatuses = new Set([
   "used"
 ]);
 
+const allowedRegistrationClubStatuses = new Set(["current", "tournament-snapshot"]);
+const allowedPlayerRosterStatuses = new Set([
+  "final-squad",
+  "later-camp-callup",
+  "replaced-before-match",
+  "tournament-squad",
+  "tournament-replacement",
+  "withdrawn/unused"
+]);
+
 const allowedSourceLayerTypes = new Set([
   "afc-registration",
   "national-fa-profile",
@@ -118,6 +128,17 @@ const issue16DeepSampleIds = new Set([
   "jp-ryosuke-furukawa-2009",
   "jp-tomoyasu-hamasaki-2005",
   "kr-woo-jin-jin-2009"
+]);
+
+const issue47DeepSampleIds = new Set([
+  "au-steven-hall-2005",
+  "au-panagiotis-kikianis-2005",
+  "au-paul-okon-engstler-2005",
+  "au-luka-jovanovic-2005"
+]);
+
+const completeSquadExpectations = new Map([
+  ["Australia|afc-u20-2025", 23]
 ]);
 
 const allowedTournamentSourceVersionTypes = new Set([
@@ -713,8 +734,10 @@ function validateChinaU20PlayerStatistics(tournament, players) {
     statisticsPlayerIds.add(row.player_id);
   }
 
-  const taggedPlayers = players.filter((player) =>
-    player.tournament_participation.some((entry) => entry.competition_id === tournament.id)
+  const taggedPlayers = players.filter(
+    (player) =>
+      player.country === "China PR" &&
+      player.tournament_participation.some((entry) => entry.competition_id === tournament.id)
   );
   assert(taggedPlayers.length === 24, "China U20 2025 must retain 24 version-aware player records");
   assert(
@@ -1383,6 +1406,9 @@ export async function validateData() {
     ["Korea Republic|afc-u17-2026", []],
     ["Korea Republic|afc-u23-2026", []]
   ]);
+  const completeSquads = new Map(
+    [...completeSquadExpectations.keys()].map((squadKey) => [squadKey, []])
+  );
 
   for (const player of dataset.players) {
     for (const field of requiredPlayerFields) {
@@ -1397,6 +1423,20 @@ export async function validateData() {
         typeof player.registration_club?.country === "string",
       `Invalid registration_club for ${player.id}`
     );
+    const registrationStatus = player.registration_club.status ?? "current";
+    assert(
+      allowedRegistrationClubStatuses.has(registrationStatus),
+      `Invalid registration_club status on ${player.id}`
+    );
+    if (player.registration_club.as_of !== undefined) {
+      assert(isIsoDate(player.registration_club.as_of), `Invalid registration_club as_of on ${player.id}`);
+    }
+    if (registrationStatus === "tournament-snapshot") {
+      assert(
+        isIsoDate(player.registration_club.as_of),
+        `Tournament registration snapshot requires as_of on ${player.id}`
+      );
+    }
     if (player.registration_club.organization_type !== undefined) {
       assert(
         allowedOrganizationTypes.has(player.registration_club.organization_type),
@@ -1455,9 +1495,19 @@ export async function validateData() {
         allowedSquadStatuses.has(entry.squad_status),
         `Invalid squad_status "${entry.squad_status}" on player ${player.id}`
       );
+      if (entry.roster_status !== undefined) {
+        assert(
+          allowedPlayerRosterStatuses.has(entry.roster_status),
+          `Invalid roster_status "${entry.roster_status}" on player ${player.id}`
+        );
+      }
       const issue16Squad = issue16Squads.get(`${player.country}|${entry.competition_id}`);
       if (issue16Squad !== undefined) {
         issue16Squad.push(player);
+      }
+      const completeSquad = completeSquads.get(`${player.country}|${entry.competition_id}`);
+      if (completeSquad !== undefined) {
+        completeSquad.push({ player, entry });
       }
     }
     validateVerificationBlock(player.verification, player.id);
@@ -1531,6 +1581,39 @@ export async function validateData() {
       (layer) => layer.type !== "afc-registration" && !afcUrls.has(layer.url)
     );
     assert(independentLayers.length > 0, `Missing independent official source layer on ${playerId}`);
+  }
+
+  for (const [squadKey, expectedCount] of completeSquadExpectations) {
+    const actualCount = completeSquads.get(squadKey).length;
+    assert(actualCount === expectedCount, `Expected ${expectedCount} players in ${squadKey}, found ${actualCount}`);
+  }
+  const issue47Squad = completeSquads.get("Australia|afc-u20-2025");
+  const issue47ShirtNumbers = new Set();
+  for (const { player, entry } of issue47Squad) {
+    assert(player.age_band === "u20", `Invalid Australia U20 age_band on ${player.id}`);
+    assert(entry.roster_status === "final-squad", `Invalid Australia U20 roster_status on ${player.id}`);
+    assert(
+      Number.isInteger(entry.shirt_number) && entry.shirt_number >= 1 && entry.shirt_number <= 23,
+      `Invalid Australia U20 shirt_number on ${player.id}`
+    );
+    assert(!issue47ShirtNumbers.has(entry.shirt_number), `Duplicate Australia U20 shirt_number ${entry.shirt_number}`);
+    issue47ShirtNumbers.add(entry.shirt_number);
+    assert(
+      player.registration_club.status === "tournament-snapshot" &&
+        isIsoDate(player.registration_club.as_of),
+      `Missing Australia U20 registration snapshot on ${player.id}`
+    );
+    const afcLayers = (player.source_layers ?? []).filter((layer) => layer.type === "afc-registration");
+    assert(afcLayers.length === 1, `Expected one AFC registration source on ${player.id}`);
+    assert(afcLayers[0].confidence === "high", `AFC registration source must be high confidence on ${player.id}`);
+  }
+  for (const playerId of issue47DeepSampleIds) {
+    const squadEntry = issue47Squad.find(({ player }) => player.id === playerId);
+    assert(squadEntry !== undefined, `Missing issue #47 deep sample ${playerId}`);
+    const independentOfficialLayers = squadEntry.player.source_layers.filter(
+      (layer) => layer.type === "national-fa-profile" && /final report/i.test(layer.label)
+    );
+    assert(independentOfficialLayers.length > 0, `Missing issue #47 deep-sample match source on ${playerId}`);
   }
 
   for (const tournament of dataset.tournaments) {

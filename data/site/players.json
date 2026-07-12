@@ -1,5 +1,4698 @@
 [
   {
+    "id": "au-steven-hall-2005",
+    "name": "Steven Hall",
+    "local_name": "Steven Hall",
+    "country": "Australia",
+    "birth_date": "2005-01-16",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 186,
+    "weight_kg": 86,
+    "registration_club": {
+      "name": "BRIGHTON & HOVE ALBION FC",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "BRIGHTON & HOVE ALBION FC",
+        "country": "England",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/steven-hall/profil/spieler/970266"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Steven Hall in Australia's 23-player U20 squad and records BRIGHTON & HOVE ALBION FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Steven Hall and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Steven Hall in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Steven Hall",
+      "en": "Steven Hall",
+      "native": "Steven Hall",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2022-05-06",
+          "club_id": "0",
+          "season_id": 0,
+          "age": 17
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2023-04-05",
+          "club_id": "875",
+          "season_id": 2022,
+          "age": 18
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-01-08",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-09-25",
+          "club_id": "39336",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-12-17",
+          "club_id": "39336",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2026-06-10",
+          "club_id": "39336",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2026-06-10"
+      },
+      "peak": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2026-06-10",
+        "club_id": "39336",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-06-10",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/steven-hall/profil/spieler/970266",
+        "market_value_url": "https://www.transfermarkt.com/steven-hall/marktwertverlauf/spieler/970266",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/970266/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/steven-hall/profil/spieler/970266"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-joshua-inserra-2005",
+    "name": "Joshua Inserra",
+    "local_name": "Joshua Inserra",
+    "country": "Australia",
+    "birth_date": "2005-01-21",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 180,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "MELBOURNE VICTORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MELBOURNE VICTORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/joshua-inserra/profil/spieler/1132512"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Joshua Inserra in Australia's 23-player U20 squad and records MELBOURNE VICTORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Joshua Inserra and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Joshua Inserra",
+      "en": "Joshua Inserra",
+      "native": "Joshua Inserra",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2023-09-28",
+          "club_id": "7006",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-01-08",
+          "club_id": "7006",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-05-28",
+          "club_id": "7006",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-01-09",
+          "club_id": "7006",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 175000,
+          "currency": "EUR",
+          "display": "€175k",
+          "date": "2025-06-03",
+          "club_id": "7006",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2026-01-13",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2026-05-28",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2026-01-13",
+        "club_id": "7006",
+        "season_id": 2025,
+        "age": 20
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/joshua-inserra/profil/spieler/1132512",
+        "market_value_url": "https://www.transfermarkt.com/joshua-inserra/marktwertverlauf/spieler/1132512",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1132512/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/joshua-inserra/profil/spieler/1132512"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-paul-okon-engstler-2005",
+    "name": "Paul Okon-Engstler",
+    "local_name": "Paul Okon-Engstler",
+    "country": "Australia",
+    "birth_date": "2005-01-24",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 182,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "SL BENFICA",
+      "country": "Portugal",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "SL BENFICA",
+        "country": "Portugal",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/paul-okon-engstler/profil/spieler/1064377"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Paul Okon-Engstler in Australia's 23-player U20 squad and records SL BENFICA as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Paul Okon-Engstler and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Paul Okon-Engstler in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Paul Okon-Engstler",
+      "en": "Paul Okon-Engstler",
+      "native": "Paul Okon-Engstler",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-10-29",
+          "club_id": "10330",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-12-16",
+          "club_id": "10330",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-06-23",
+          "club_id": "10330",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2026-01-13",
+          "club_id": "8054",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 1200000,
+          "currency": "EUR",
+          "display": "€1.20m",
+          "date": "2026-05-28",
+          "club_id": "8054",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 5,
+      "current": {
+        "eur": 1200000,
+        "currency": "EUR",
+        "display": "€1.20m",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 1200000,
+        "currency": "EUR",
+        "display": "€1.20m",
+        "date": "2026-05-28",
+        "club_id": "8054",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/paul-okon-engstler/profil/spieler/1064377",
+        "market_value_url": "https://www.transfermarkt.com/paul-okon-engstler/marktwertverlauf/spieler/1064377",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1064377/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/paul-okon-engstler/profil/spieler/1064377"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-adam-bugarija-2005",
+    "name": "Adam Bugarija",
+    "local_name": "Adam Bugarija",
+    "country": "Australia",
+    "birth_date": "2005-02-22",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 174,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/adam-bugarija/profil/spieler/1137438"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Adam Bugarija in Australia's 23-player U20 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Adam Bugarija and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Adam Bugarija",
+      "en": "Adam Bugarija",
+      "native": "Adam Bugarija",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-10-08",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-01-09",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-06-03",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 175000,
+          "currency": "EUR",
+          "display": "€175k",
+          "date": "2026-01-13",
+          "club_id": "970",
+          "season_id": 2025,
+          "age": 20
+        }
+      ],
+      "history_points": 4,
+      "current": {
+        "eur": 175000,
+        "currency": "EUR",
+        "display": "€175k",
+        "date": "2026-01-13",
+        "club_id": "970",
+        "season_id": 2025,
+        "age": 20
+      },
+      "peak": {
+        "eur": 200000,
+        "currency": "EUR",
+        "display": "€200k",
+        "date": "2025-06-03",
+        "club_id": "970",
+        "season_id": 2024,
+        "age": 20
+      },
+      "last_change_date": "2026-01-13",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/adam-bugarija/profil/spieler/1137438",
+        "market_value_url": "https://www.transfermarkt.com/adam-bugarija/marktwertverlauf/spieler/1137438",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1137438/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/adam-bugarija/profil/spieler/1137438"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-alex-badolato-2005",
+    "name": "Alex Badolato",
+    "local_name": "Alex Badolato",
+    "country": "Australia",
+    "birth_date": "2005-02-23",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": 65,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/alex-badolato/profil/spieler/957230"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Alex Badolato in Australia's 23-player U20 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Alex Badolato and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Alex Badolato",
+      "en": "Alex Badolato",
+      "native": "Alex Badolato",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2022-05-06",
+          "club_id": "36100",
+          "season_id": 2021,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-04-05",
+          "club_id": "36100",
+          "season_id": 2022,
+          "age": 18
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2024-01-08",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-05-28",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-01-09",
+          "club_id": "36100",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 175000,
+          "currency": "EUR",
+          "display": "€175k",
+          "date": "2025-06-03",
+          "club_id": "7006",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-01-13",
+          "club_id": "5551",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-05-28",
+          "club_id": "5551",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 8,
+      "current": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-01-13",
+        "club_id": "5551",
+        "season_id": 2025,
+        "age": 20
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/alex-badolato/profil/spieler/957230",
+        "market_value_url": "https://www.transfermarkt.com/alex-badolato/marktwertverlauf/spieler/957230",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/957230/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/alex-badolato/profil/spieler/957230"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-louis-agosti-2005",
+    "name": "Louis Agosti",
+    "local_name": "Louis Agosti",
+    "country": "Australia",
+    "birth_date": "2005-03-02",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 183,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "AC PERUGIA",
+      "country": "Italy",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "AC PERUGIA",
+        "country": "Italy",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/louis-agosti/profil/spieler/1109826"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Louis Agosti in Australia's 23-player U20 squad and records AC PERUGIA as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Louis Agosti and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Louis Agosti",
+      "en": "Louis Agosti",
+      "native": "Louis Agosti",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-06-20",
+          "club_id": "14926",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-12-19",
+          "club_id": "839",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2025-06-19",
+          "club_id": "839",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-12-17",
+          "club_id": "91510",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2026-06-19",
+          "club_id": "91510",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 5,
+      "current": {
+        "eur": 75000,
+        "currency": "EUR",
+        "display": "€75k",
+        "date": "2026-06-19"
+      },
+      "peak": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2024-06-20",
+        "club_id": "14926",
+        "season_id": 2023,
+        "age": 19
+      },
+      "last_change_date": "2026-06-19",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/louis-agosti/profil/spieler/1109826",
+        "market_value_url": "https://www.transfermarkt.com/louis-agosti/marktwertverlauf/spieler/1109826",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1109826/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/louis-agosti/profil/spieler/1109826"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-jonny-yull-2005",
+    "name": "Jonny Yull",
+    "local_name": "Jonny Yull",
+    "country": "Australia",
+    "birth_date": "2005-03-05",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jonny-yull/profil/spieler/857060"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jonny Yull in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jonny Yull and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Jonny Yull",
+      "en": "Jonny Yull",
+      "native": "Jonny Yull",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2021-03-30",
+          "club_id": "0",
+          "season_id": 0,
+          "age": 16
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2021-10-01",
+          "club_id": "875",
+          "season_id": 2021,
+          "age": 16
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2022-05-06",
+          "club_id": "875",
+          "season_id": 2021,
+          "age": 17
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2023-04-05",
+          "club_id": "875",
+          "season_id": 2022,
+          "age": 18
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-01-08",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-05-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 225000,
+          "currency": "EUR",
+          "display": "€225k",
+          "date": "2025-01-09",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-06-03",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2026-01-13",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 550000,
+          "currency": "EUR",
+          "display": "€550k",
+          "date": "2026-05-28",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 10,
+      "current": {
+        "eur": 550000,
+        "currency": "EUR",
+        "display": "€550k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 550000,
+        "currency": "EUR",
+        "display": "€550k",
+        "date": "2026-05-28",
+        "club_id": "875",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jonny-yull/profil/spieler/857060",
+        "market_value_url": "https://www.transfermarkt.com/jonny-yull/marktwertverlauf/spieler/857060",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/857060/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/jonny-yull/profil/spieler/857060"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-panagiotis-kikianis-2005",
+    "name": "Panagiotis Kikianis",
+    "local_name": "Panagiotis Kikianis",
+    "country": "Australia",
+    "birth_date": "2005-03-08",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/panagiotis-kikianis/profil/spieler/1099708"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Panagiotis Kikianis in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Panagiotis Kikianis and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Panagiotis Kikianis in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Panagiotis Kikianis",
+      "en": "Panagiotis Kikianis",
+      "native": "Panagiotis Kikianis",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-09-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2024-05-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-01-09",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 450000,
+          "currency": "EUR",
+          "display": "€450k",
+          "date": "2025-06-03",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 750000,
+          "currency": "EUR",
+          "display": "€750k",
+          "date": "2026-01-13",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 1300000,
+          "currency": "EUR",
+          "display": "€1.30m",
+          "date": "2026-05-28",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 1300000,
+        "currency": "EUR",
+        "display": "€1.30m",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 1300000,
+        "currency": "EUR",
+        "display": "€1.30m",
+        "date": "2026-05-28",
+        "club_id": "875",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/panagiotis-kikianis/profil/spieler/1099708",
+        "market_value_url": "https://www.transfermarkt.com/panagiotis-kikianis/marktwertverlauf/spieler/1099708",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1099708/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/panagiotis-kikianis/profil/spieler/1099708"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-alexander-robinson-2005",
+    "name": "Alexander Robinson",
+    "local_name": "Alexander Robinson",
+    "country": "Australia",
+    "birth_date": "2005-03-09",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 187,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/alex-robinson/profil/spieler/1110729"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Alexander Robinson in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Alexander Robinson and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Alexander Robinson",
+      "en": "Alexander Robinson",
+      "native": "Alexander Robinson",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-04-05",
+          "club_id": "71085",
+          "season_id": 2022,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-05-28",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-01-09",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-06-03",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2026-01-13",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2026-05-28",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2026-05-28",
+        "club_id": "71085",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/alex-robinson/profil/spieler/1110729",
+        "market_value_url": "https://www.transfermarkt.com/alex-robinson/marktwertverlauf/spieler/1110729",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1110729/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/alex-robinson/profil/spieler/1110729"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-sebastian-esposito-2005",
+    "name": "Sebastian Esposito",
+    "local_name": "Sebastian Esposito",
+    "country": "Australia",
+    "birth_date": "2005-04-21",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 188,
+    "weight_kg": 81,
+    "registration_club": {
+      "name": "US LECCE",
+      "country": "Italy",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "US LECCE",
+        "country": "Italy",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/sebastian-esposito/profil/spieler/1118086"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Sebastian Esposito in Australia's 23-player U20 squad and records US LECCE as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Sebastian Esposito and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Sebastian Esposito",
+      "en": "Sebastian Esposito",
+      "native": "Sebastian Esposito",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-09-28",
+          "club_id": "25580",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-06-25",
+          "club_id": "5618",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-12-18",
+          "club_id": "1005",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-06-17",
+          "club_id": "1005",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2026-01-13",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-05-28",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28",
+        "club_id": "7006",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/sebastian-esposito/profil/spieler/1118086",
+        "market_value_url": "https://www.transfermarkt.com/sebastian-esposito/marktwertverlauf/spieler/1118086",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1118086/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/sebastian-esposito/profil/spieler/1118086"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-luka-jovanovic-2005",
+    "name": "Luka Jovanovic",
+    "local_name": "Luka Jovanovic",
+    "country": "Australia",
+    "birth_date": "2005-05-20",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/luka-jovanovic/profil/spieler/1038441"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Luka Jovanovic in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Luka Jovanovic and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Luka Jovanovic in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Luka Jovanovic",
+      "en": "Luka Jovanovic",
+      "native": "Luka Jovanovic",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2023-04-05",
+          "club_id": "875",
+          "season_id": 2022,
+          "age": 17
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-01-08",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-05-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-01-09",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2025-06-03",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2026-01-13",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 1200000,
+          "currency": "EUR",
+          "display": "€1.20m",
+          "date": "2026-05-28",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 1200000,
+        "currency": "EUR",
+        "display": "€1.20m",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 1200000,
+        "currency": "EUR",
+        "display": "€1.20m",
+        "date": "2026-05-28",
+        "club_id": "875",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/luka-jovanovic/profil/spieler/1038441",
+        "market_value_url": "https://www.transfermarkt.com/luka-jovanovic/marktwertverlauf/spieler/1038441",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1038441/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/luka-jovanovic/profil/spieler/1038441"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-frans-deli-2005",
+    "name": "Frans Deli",
+    "local_name": "Frans Deli",
+    "country": "Australia",
+    "birth_date": "2005-07-08",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/frans-deli/profil/spieler/1109957"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Frans Deli in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Frans Deli and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Frans Deli",
+      "en": "Frans Deli",
+      "native": "Frans Deli",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-03-20",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-05-28",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-01-09",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-06-03",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2026-01-13",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 175000,
+          "currency": "EUR",
+          "display": "€175k",
+          "date": "2026-05-28",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 20
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 175000,
+        "currency": "EUR",
+        "display": "€175k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 200000,
+        "currency": "EUR",
+        "display": "€200k",
+        "date": "2025-06-03",
+        "club_id": "71085",
+        "season_id": 2024,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/frans-deli/profil/spieler/1109957",
+        "market_value_url": "https://www.transfermarkt.com/frans-deli/marktwertverlauf/spieler/1109957",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1109957/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/frans-deli/profil/spieler/1109957"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-zach-lisolajski-2005",
+    "name": "Zach Lisolajski",
+    "local_name": "Zach Lisolajski",
+    "country": "Australia",
+    "birth_date": "2005-10-05",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 184,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/zach-lisolajski/profil/spieler/1195422"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Zach Lisolajski in Australia's 23-player U20 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Zach Lisolajski and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Zach Lisolajski",
+      "en": "Zach Lisolajski",
+      "native": "Zach Lisolajski",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-05-28",
+          "club_id": "88705",
+          "season_id": 0,
+          "age": 18
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2025-01-09",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-06-03",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2026-01-13",
+          "club_id": "970",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2026-05-28",
+          "club_id": "970",
+          "season_id": 2025,
+          "age": 20
+        }
+      ],
+      "history_points": 5,
+      "current": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2026-05-28",
+        "club_id": "970",
+        "season_id": 2025,
+        "age": 20
+      },
+      "peak": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2025-06-03",
+        "club_id": "970",
+        "season_id": 2024,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/zach-lisolajski/profil/spieler/1195422",
+        "market_value_url": "https://www.transfermarkt.com/zach-lisolajski/marktwertverlauf/spieler/1195422",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1195422/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/zach-lisolajski/profil/spieler/1195422"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-musa-toure-2005",
+    "name": "Musa Toure",
+    "local_name": "Musa Toure",
+    "country": "Australia",
+    "birth_date": "2005-11-12",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "CLERMONT FOOT 63",
+      "country": "France",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CLERMONT FOOT 63",
+        "country": "France",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/musa-toure/profil/spieler/1069960"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Musa Toure in Australia's 23-player U20 squad and records CLERMONT FOOT 63 as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Musa Toure and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Musa Toure",
+      "en": "Musa Toure",
+      "native": "Musa Toure",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-04-04",
+          "club_id": "875",
+          "season_id": 2022,
+          "age": 17
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-01-08",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-05-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-12-04",
+          "club_id": "3524",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-06-16",
+          "club_id": "5724",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-12-15",
+          "club_id": "5724",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2026-05-25",
+          "club_id": "5724",
+          "season_id": 2025,
+          "age": 20
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 200000,
+        "currency": "EUR",
+        "display": "€200k",
+        "date": "2026-05-25"
+      },
+      "peak": {
+        "eur": 200000,
+        "currency": "EUR",
+        "display": "€200k",
+        "date": "2025-12-15",
+        "club_id": "5724",
+        "season_id": 2025,
+        "age": 20
+      },
+      "last_change_date": "2026-05-25",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/musa-toure/profil/spieler/1069960",
+        "market_value_url": "https://www.transfermarkt.com/musa-toure/marktwertverlauf/spieler/1069960",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1069960/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/musa-toure/profil/spieler/1069960"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-fabian-talladira-2006",
+    "name": "Fabian Talladira",
+    "local_name": "Fabian Talladira",
+    "country": "Australia",
+    "birth_date": "2006-02-04",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 179,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/fabian-talladira/profil/spieler/1104730"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Fabian Talladira in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Fabian Talladira and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Fabian Talladira",
+      "en": "Fabian Talladira",
+      "native": "Fabian Talladira",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "0",
+          "season_id": 0,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-05-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2025-01-09",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-06-03",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2026-01-13",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2026-05-28",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 20
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2026-01-13",
+        "club_id": "875",
+        "season_id": 2025,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/fabian-talladira/profil/spieler/1104730",
+        "market_value_url": "https://www.transfermarkt.com/fabian-talladira/marktwertverlauf/spieler/1104730",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1104730/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/fabian-talladira/profil/spieler/1104730"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-gus-hoefsloot-2006",
+    "name": "Gus Hoefsloot",
+    "local_name": "Gus Hoefsloot",
+    "country": "Australia",
+    "birth_date": "2006-03-14",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 191,
+    "weight_kg": 88,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Gus Hoefsloot in Australia's 23-player U20 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Gus Hoefsloot and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Gus Hoefsloot",
+      "en": "Gus Hoefsloot",
+      "native": "Gus Hoefsloot",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "ambiguous-profile",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/gus-hoefsloot/profil/spieler/1109829",
+        "market_value_url": "https://www.transfermarkt.com/gus-hoefsloot/marktwertverlauf/spieler/1109829",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1109829/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "ambiguous",
+        "method": "manual-override",
+        "matched_fields": [
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/gus-hoefsloot/profil/spieler/1109829"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "au-daniel-bennie-2006",
+    "name": "Daniel Bennie",
+    "local_name": "Daniel Bennie",
+    "country": "Australia",
+    "birth_date": "2006-04-13",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 186,
+    "weight_kg": 80,
+    "registration_club": {
+      "name": "QUEENS PARK RANGERS FC",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "QUEENS PARK RANGERS FC",
+        "country": "England",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/daniel-bennie/profil/spieler/1104713"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Daniel Bennie in Australia's 23-player U20 squad and records QUEENS PARK RANGERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Daniel Bennie and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Daniel Bennie",
+      "en": "Daniel Bennie",
+      "native": "Daniel Bennie",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2023-09-28",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-01-08",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-05-28",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-12-30",
+          "club_id": "1039",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2025-05-27",
+          "club_id": "1039",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2025-12-03",
+          "club_id": "1039",
+          "season_id": 2025,
+          "age": 19
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2026-05-28",
+          "club_id": "1039",
+          "season_id": 2025,
+          "age": 20
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400k",
+        "date": "2026-05-28",
+        "club_id": "1039",
+        "season_id": 2025,
+        "age": 20
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/daniel-bennie/profil/spieler/1104713",
+        "market_value_url": "https://www.transfermarkt.com/daniel-bennie/marktwertverlauf/spieler/1104713",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1104713/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/daniel-bennie/profil/spieler/1104713"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-jaylan-pearman-2006",
+    "name": "Jaylan Pearman",
+    "local_name": "Jaylan Pearman",
+    "country": "Australia",
+    "birth_date": "2006-04-18",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 179,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jaylan-pearman/profil/spieler/1104726"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jaylan Pearman in Australia's 23-player U20 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jaylan Pearman and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Jaylan Pearman",
+      "en": "Jaylan Pearman",
+      "native": "Jaylan Pearman",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-09-28",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-05-28",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-01-09",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-06-03",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2026-05-28",
+          "club_id": "33727",
+          "season_id": 0,
+          "age": 20
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2025-06-03",
+        "club_id": "970",
+        "season_id": 2024,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jaylan-pearman/profil/spieler/1104726",
+        "market_value_url": "https://www.transfermarkt.com/jaylan-pearman/marktwertverlauf/spieler/1104726",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1104726/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/jaylan-pearman/profil/spieler/1104726"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-tiago-quintal-2006",
+    "name": "Tiago Quintal",
+    "local_name": "Tiago Quintal",
+    "country": "Australia",
+    "birth_date": "2006-06-16",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/tiago-quintal/profil/spieler/1109205"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Tiago Quintal in Australia's 23-player U20 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Tiago Quintal and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Tiago Quintal",
+      "en": "Tiago Quintal",
+      "native": "Tiago Quintal",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-05-28",
+          "club_id": "8054",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-01-09",
+          "club_id": "8054",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-06-03",
+          "club_id": "8054",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2026-01-13",
+          "club_id": "8054",
+          "season_id": 2025,
+          "age": 19
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-05-28",
+          "club_id": "8054",
+          "season_id": 2025,
+          "age": 19
+        }
+      ],
+      "history_points": 5,
+      "current": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28",
+        "club_id": "8054",
+        "season_id": 2025,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/tiago-quintal/profil/spieler/1109205",
+        "market_value_url": "https://www.transfermarkt.com/tiago-quintal/marktwertverlauf/spieler/1109205",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1109205/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/tiago-quintal/profil/spieler/1109205"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-dean-bosnjak-2006",
+    "name": "Dean Bosnjak",
+    "local_name": "Dean Bosnjak",
+    "country": "Australia",
+    "birth_date": "2006-10-11",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 186,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/dean-bosnjak/profil/spieler/1144775"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Dean Bosnjak in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Dean Bosnjak and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Dean Bosnjak",
+      "en": "Dean Bosnjak",
+      "native": "Dean Bosnjak",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2025-01-09",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 175000,
+          "currency": "EUR",
+          "display": "€175k",
+          "date": "2025-06-03",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2026-01-13",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 19
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2026-05-28",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 19
+        }
+      ],
+      "history_points": 4,
+      "current": {
+        "eur": 350000,
+        "currency": "EUR",
+        "display": "€350k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 350000,
+        "currency": "EUR",
+        "display": "€350k",
+        "date": "2026-05-28",
+        "club_id": "71085",
+        "season_id": 2025,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/dean-bosnjak/profil/spieler/1144775",
+        "market_value_url": "https://www.transfermarkt.com/dean-bosnjak/marktwertverlauf/spieler/1144775",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1144775/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/dean-bosnjak/profil/spieler/1144775"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-oliver-randazzo-2006",
+    "name": "Oliver Randazzo",
+    "local_name": "Oliver Randazzo",
+    "country": "Australia",
+    "birth_date": "2006-11-12",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 182,
+    "weight_kg": 67,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/oliver-randazzo/profil/spieler/1110867"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Oliver Randazzo in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Oliver Randazzo and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Oliver Randazzo",
+      "en": "Oliver Randazzo",
+      "native": "Oliver Randazzo",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-03-20",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-05-28",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-01-09",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-06-03",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2026-01-13",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 19
+        },
+        {
+          "eur": 275000,
+          "currency": "EUR",
+          "display": "€275k",
+          "date": "2026-05-28",
+          "club_id": "71085",
+          "season_id": 2025,
+          "age": 19
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 275000,
+        "currency": "EUR",
+        "display": "€275k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 275000,
+        "currency": "EUR",
+        "display": "€275k",
+        "date": "2026-05-28",
+        "club_id": "71085",
+        "season_id": 2025,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/oliver-randazzo/profil/spieler/1110867",
+        "market_value_url": "https://www.transfermarkt.com/oliver-randazzo/marktwertverlauf/spieler/1110867",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1110867/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/oliver-randazzo/profil/spieler/1110867"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-medin-memeti-2007",
+    "name": "Medin Memeti",
+    "local_name": "Medin Memeti",
+    "country": "Australia",
+    "birth_date": "2007-06-20",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 184,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/medin-memeti/profil/spieler/1183854"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Medin Memeti in Australia's 23-player U20 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Medin Memeti and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Medin Memeti",
+      "en": "Medin Memeti",
+      "native": "Medin Memeti",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-01-09",
+          "club_id": "25580",
+          "season_id": 2024,
+          "age": 17
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-06-03",
+          "club_id": "25580",
+          "season_id": 2024,
+          "age": 17
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2026-01-13",
+          "club_id": "25580",
+          "season_id": 2025,
+          "age": 18
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2026-05-28",
+          "club_id": "25580",
+          "season_id": 2025,
+          "age": 18
+        }
+      ],
+      "history_points": 4,
+      "current": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400k",
+        "date": "2026-05-28",
+        "club_id": "25580",
+        "season_id": 2025,
+        "age": 18
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/medin-memeti/profil/spieler/1183854",
+        "market_value_url": "https://www.transfermarkt.com/medin-memeti/marktwertverlauf/spieler/1183854",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1183854/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/medin-memeti/profil/spieler/1183854"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "au-lucas-herrington-2007",
+    "name": "Lucas Herrington",
+    "local_name": "Lucas Herrington",
+    "country": "Australia",
+    "birth_date": "2007-09-05",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 192,
+    "weight_kg": 82,
+    "registration_club": {
+      "name": "BRISBANE ROAR FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "BRISBANE ROAR FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/lucas-herrington/profil/spieler/1279984"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Lucas Herrington in Australia's 23-player U20 squad and records BRISBANE ROAR FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Lucas Herrington and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    },
+    "names": {
+      "zh": "Lucas Herrington",
+      "en": "Lucas Herrington",
+      "native": "Lucas Herrington",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2025-01-09",
+          "club_id": "7831",
+          "season_id": 2024,
+          "age": 17
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2025-06-03",
+          "club_id": "7831",
+          "season_id": 2024,
+          "age": 17
+        },
+        {
+          "eur": 750000,
+          "currency": "EUR",
+          "display": "€750k",
+          "date": "2026-01-13",
+          "club_id": "7831",
+          "season_id": 2025,
+          "age": 18
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2026-04-07",
+          "club_id": "1247",
+          "season_id": 2025,
+          "age": 18
+        },
+        {
+          "eur": 4500000,
+          "currency": "EUR",
+          "display": "€4.50m",
+          "date": "2026-06-02",
+          "club_id": "1247",
+          "season_id": 2025,
+          "age": 18
+        }
+      ],
+      "history_points": 5,
+      "current": {
+        "eur": 4500000,
+        "currency": "EUR",
+        "display": "€4.50m",
+        "date": "2026-06-02"
+      },
+      "peak": {
+        "eur": 4500000,
+        "currency": "EUR",
+        "display": "€4.50m",
+        "date": "2026-06-02",
+        "club_id": "1247",
+        "season_id": 2025,
+        "age": 18
+      },
+      "last_change_date": "2026-06-02",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/lucas-herrington/profil/spieler/1279984",
+        "market_value_url": "https://www.transfermarkt.com/lucas-herrington/marktwertverlauf/spieler/1279984",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1279984/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/lucas-herrington/profil/spieler/1279984"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    }
+  },
+  {
     "id": "cn-baihelamu-abuduwaili-2003",
     "name": "Baihelamu Abuduwaili",
     "local_name": "Baihelamu Abuduwaili",

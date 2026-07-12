@@ -20,6 +20,7 @@
 ```bash
 ./scripts/sync-transfermarkt-market-values.sh
 ./scripts/sync-transfermarkt-market-values.sh --apply
+./scripts/sync-transfermarkt-market-values.sh --country=Australia --competition=afc-u20-2025 --apply
 npm run validate-data
 npm run build-data
 ```
@@ -27,7 +28,7 @@ npm run build-data
 脚本流程：
 
 1. 遍历 `data/raw/players/*.json`，确保每个唯一球员都有覆盖记录。
-2. 先核验已有个人页；再从配置的中日韩乌青年国家队阵容端点发现候选 ID。
+2. 先核验已有个人页；再从配置的中日韩乌澳青年国家队阵容端点发现候选 ID。
 3. 用完整生日、国籍以及姓名或位置验证身份；冲突候选不自动写入链接。
 4. 调用 `https://tmapi-alpha.transfermarkt.technology/player/<id>/market-value-history?_x_preferred_context=com`。
 5. 对历史点按日期排序和去重，派生 `current`、`peak` 与 `last_change_date`。
@@ -39,6 +40,8 @@ npm run build-data
 - 不带 `--apply`：只读 dry-run，输出状态和变更汇总。
 - `--no-discovery`：不重新扫描国家队阵容，仅刷新现有和人工核验的个人页。
 - `--player=<id>`：只刷新一名球员，同时保留其余覆盖记录。
+- `--country=<country>`：只刷新该国家/地区球员，同时原样保留未选中的覆盖记录。
+- `--competition=<id>`：只刷新参加该赛事的球员；可与 `--country` 组合使用。
 
 ## 快照字段
 

@@ -2,14 +2,14 @@
 
 更新时间：2026-07-12
 
-球员总数：186
+球员总数：209
 
 ## 状态汇总
 
 | 状态 | 人数 |
 | --- | ---: |
-| ambiguous-profile | 2 |
-| available | 88 |
+| ambiguous-profile | 3 |
+| available | 110 |
 | no-market-value | 31 |
 | profile-not-found | 63 |
 | team-page-only | 2 |
@@ -18,6 +18,7 @@
 
 | 国家/地区 | 总数 | 有历史 | 无身价 | 未找到个人页 | 待复核 | 抓取失败/过期 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Australia | 23 | 22 | 0 | 0 | 1 | 0 |
 | China PR | 80 | 40 | 21 | 16 | 3 | 0 |
 | Japan | 52 | 23 | 7 | 22 | 0 | 0 |
 | Korea Republic | 50 | 24 | 0 | 25 | 1 | 0 |
@@ -25,6 +26,7 @@
 
 ## 待人工复核
 
+- `au-gus-hoefsloot-2006`：ambiguous-profile
 - `cn-li-youan-2010`：team-page-only
 - `cn-mutalifu-yimingkari-2004`：ambiguous-profile
 - `cn-piao-zhixuan-2010`：team-page-only
