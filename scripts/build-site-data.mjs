@@ -1,16 +1,5 @@
 import { ensureDirectory, loadDataset, paths, writeJson } from "./lib/data-loader.mjs";
-
-function normalizeCountry(value) {
-  const normalized = String(value ?? "").trim().toLowerCase();
-  const aliases = {
-    "china pr": "china",
-    "people's republic of china": "china",
-    "korea republic": "south korea",
-    "republic of korea": "south korea"
-  };
-
-  return aliases[normalized] ?? normalized;
-}
+import { countOverseasStatuses, normalizeCountry } from "./lib/overseas-status.mjs";
 
 function isForeignRegistration(player) {
   return (
@@ -38,7 +27,8 @@ export async function buildSiteData() {
     stats: {
       player_count: players.length,
       country_count: new Set(players.map((player) => player.country)).size,
-      foreign_registration_count: players.filter(isForeignRegistration).length
+      foreign_registration_count: players.filter(isForeignRegistration).length,
+      china_overseas_status_counts: countOverseasStatuses(players)
     },
     tournaments: dataset.tournaments,
     projects: dataset.projects,

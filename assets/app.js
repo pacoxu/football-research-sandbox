@@ -524,6 +524,8 @@ const UI_COPY = {
     "overseas.countryNotes.empty": "当前没有可展示的国别说明。",
     "overseas.countryNotes.playerCount": "{count} 人",
     "overseas.countryNotes.sources": "来源",
+    "overseas.status.title": "中国留洋状态口径",
+    "overseas.status.note": "当前留洋总数只统计“当前有效注册”；待生效、试训观察、已回流和仅历史不会计入当前人数。",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "五大联赛亚洲教练",
     "overseas.coaches.empty": "当前还没有可展示的五大联赛亚洲教练记录。",
@@ -1019,6 +1021,8 @@ const UI_COPY = {
     "overseas.countryNotes.empty": "No country note is available for display.",
     "overseas.countryNotes.playerCount": "{count} players",
     "overseas.countryNotes.sources": "Sources",
+    "overseas.status.title": "China overseas status scope",
+    "overseas.status.note": "The current total only counts active registrations. Pending moves, trial watches, returned players and historical-only entities are excluded.",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "Asian head coaches in the big five leagues",
     "overseas.coaches.empty": "No big-five Asian coach record is available yet.",
@@ -1311,6 +1315,22 @@ const OVERSEAS_TEAM_LEVEL_LABELS = {
 
 const OVERSEAS_TEAM_LEVEL_ORDER = ["first-team", "u21-u23", "u19-youth", "unknown"];
 const OVERSEAS_TEAM_LEVEL_SUMMARY_ORDER = ["first-team", "u21-u23", "u19-youth"];
+
+const OVERSEAS_STATUS_LABELS = {
+  "active-registered": { zh: "当前有效注册", en: "Active registration" },
+  "pending-effective": { zh: "待生效", en: "Pending effective date" },
+  "trial-watch": { zh: "试训观察", en: "Trial watch" },
+  returned: { zh: "已回流", en: "Returned" },
+  "historical-only": { zh: "仅历史", en: "Historical only" }
+};
+
+const OVERSEAS_STATUS_ORDER = [
+  "active-registered",
+  "pending-effective",
+  "trial-watch",
+  "returned",
+  "historical-only"
+];
 
 const AGE_BAND_LABELS = {
   u17: { zh: "U17", en: "U17" },
@@ -2265,6 +2285,10 @@ function formatBucket(bucket) {
 
 function formatOverseasTeamLevel(teamLevel) {
   return getLabel(OVERSEAS_TEAM_LEVEL_LABELS, teamLevel, teamLevel ?? "-");
+}
+
+function formatOverseasStatus(status) {
+  return getLabel(OVERSEAS_STATUS_LABELS, status, status ?? "-");
 }
 
 function formatAgeBand(ageBand) {
@@ -3357,7 +3381,13 @@ function getRecentChinaMatches(limit = 6) {
 }
 
 function getCurrentOverseasPlayers() {
-  return state.enrichedPlayers.filter((player) => player.foreignRegistration).sort(sortPlayers);
+  return state.enrichedPlayers
+    .filter((player) =>
+      player.country === "China PR"
+        ? player.overseas_status === "active-registered"
+        : player.foreignRegistration
+    )
+    .sort(sortPlayers);
 }
 
 function parseSeasonRange(season) {
@@ -3451,6 +3481,10 @@ function getOverseasCountryMap() {
       country: entry.country,
       currentCount: 0,
       bigFiveFirstTeamCount: 0,
+      overseasStatusCounts:
+        entry.country === "China PR"
+          ? state.overview.stats?.china_overseas_status_counts ?? null
+          : null,
       teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
       verifiedRecords: entry.verified_records,
       notes: entry.notes,
@@ -3465,6 +3499,7 @@ function getOverseasCountryMap() {
         country: item.country,
         currentCount: 0,
         bigFiveFirstTeamCount: 0,
+        overseasStatusCounts: null,
         teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
         verifiedRecords: 0,
         notes: "",
@@ -3550,7 +3585,9 @@ function getCurrentOverseasItems() {
       ...player,
       sourceType: "player"
     })),
-    ...getActiveHistoricalOverseasRecords().map(toCurrentHistoricalOverseasItem)
+    ...getActiveHistoricalOverseasRecords()
+      .filter((record) => record.country !== "China PR")
+      .map(toCurrentHistoricalOverseasItem)
   ];
   const seen = new Set();
 
@@ -6103,6 +6140,26 @@ function renderOverseasPage() {
           <h3>${escapeHtml(formatCountryName(selectedCountry.country))}</h3>
           <p class="small-note">${escapeHtml(localizeText(selectedCountry.notes, t("overseas.countryNotes.noNote")))}</p>
         </article>
+        ${
+          selectedCountry.overseasStatusCounts
+            ? `
+              <article class="stack-card">
+                <h3>${escapeHtml(t("overseas.status.title"))}</h3>
+                <div class="stat-breakdown">
+                  ${OVERSEAS_STATUS_ORDER.map(
+                    (status) => `
+                      <p class="stat-breakdown-item">
+                        <span>${escapeHtml(formatOverseasStatus(status))}</span>
+                        <strong>${selectedCountry.overseasStatusCounts[status] ?? 0}</strong>
+                      </p>
+                    `
+                  ).join("")}
+                </div>
+                <p class="small-note">${escapeHtml(t("overseas.status.note"))}</p>
+              </article>
+            `
+            : ""
+        }
         ${(selectedCountry.bucketFocus ?? [])
           .map(
             (note) => `

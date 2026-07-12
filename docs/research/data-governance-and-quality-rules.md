@@ -206,10 +206,18 @@
 规则：
 
 - 已公告但尚未到生效日：`squad_status` 用 `pending-transfer`。
+- 球员顶层 `overseas_status` 用 `pending-effective`。
 - `registration_club` 保留当前有效注册，不提前改为未来俱乐部。
 - 未来俱乐部写入 `training_pathway`、`tournament_participation.note` 或 `verification.notes`。
-- 生效日之后复核官方注册，再更新 `registration_club`。
-- 当前留洋统计只统计已经生效的注册，不统计未来生效转会。
+- 生效日之后复核官方注册，再更新 `registration_club` 并把 `overseas_status` 改为 `active-registered`。
+- 当前中国留洋统计只统计 `active-registered`，不统计未来生效转会、试训观察、回流或仅历史实体。
+
+## 中国留洋状态
+
+- 海外有效注册：`active-registered`，且 `registration_club.country` 必须与球员国家不同。
+- 试训或明确关注：`trial-watch`，必须有 `squad_status: "tracked"` 记录；经纪公司合作或泛化传闻不够。
+- 已回国内注册：`returned`，当前俱乐部保持国内，海外经历保留在 `training_pathway`。
+- 仅供历史研究的球员实体：`historical-only`；留洋历史的单段 featured record 不使用该字段。
 
 ## 当前校验覆盖
 

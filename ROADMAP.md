@@ -61,7 +61,7 @@
 | --- | --- | --- | --- |
 | P3 | 中国 U20 2025 终报名和正赛技术统计 | 两版 23 人名单边界、1 次门将替换和四场逐人 appearances/goals/minutes 已完成 | [#13](https://github.com/starryjog/football-research-sandbox/issues/13) |
 | P3 | 中国 U17 2026 终报名、后续集训、观察池边界 | roster flag 或等价字段，区分终报名、集训和观察池 | [#14](https://github.com/starryjog/football-research-sandbox/issues/14) |
-| P3 | 当前中国留洋 `overseas_status` 模型 | 区分 active registered、pending effective、trial watch、returned、historical only | [#15](https://github.com/starryjog/football-research-sandbox/issues/15) |
+| P3 | 当前中国留洋 `overseas_status` 模型 | 已区分 active registered、pending effective、trial watch、returned、historical only，并由页面、overview 与校验消费 | [#15](https://github.com/starryjog/football-research-sandbox/issues/15) |
 | P3 | 日韩 U17/U23 俱乐部、学校、青训路径补源 | 为重点样本补 national-fa、club-academy、school/university 来源层级 | [#16](https://github.com/starryjog/football-research-sandbox/issues/16) |
 | P4 | 亚洲其他国家 U17/U20/U23 对照组 | 澳大利亚、沙特、伊朗、卡塔尔、乌兹别克等核心样本池 | [#17](https://github.com/starryjog/football-research-sandbox/issues/17) |
 | P4 | FIFA 中国参赛档案 | 2002 世界杯和早期 U16/U20 世界赛中国队档案 | [#18](https://github.com/starryjog/football-research-sandbox/issues/18) |
