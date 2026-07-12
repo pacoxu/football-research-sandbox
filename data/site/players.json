@@ -33724,6 +33724,2789 @@
     }
   },
   {
+    "id": "qa-mohsain-al-hajri-2009",
+    "name": "Mohsain Al-Hajri",
+    "local_name": "Mohsain Al-Hajri",
+    "country": "Qatar",
+    "birth_date": "2009-01-18",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 176,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "AL RAYYAN SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL RAYYAN SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Mohsain Al-Hajri as Qatar No. 9."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Mohsain Al-Hajri",
+      "en": "Mohsain Al-Hajri",
+      "native": "Mohsain Al-Hajri",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-faisal-al-hamad-2009",
+    "name": "Faisal Al-Hamad",
+    "local_name": "Faisal Al-Hamad",
+    "country": "Qatar",
+    "birth_date": "2009-02-06",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 178,
+    "weight_kg": 73,
+    "registration_club": {
+      "name": "QATAR SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "QATAR SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Faisal Al-Hamad as Qatar No. 11."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Faisal Al-Hamad",
+      "en": "Faisal Al-Hamad",
+      "native": "Faisal Al-Hamad",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-mohamed-fadil-2009",
+    "name": "Mohamed Fadil",
+    "local_name": "Mohamed Fadil",
+    "country": "Qatar",
+    "birth_date": "2009-02-14",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 186,
+    "weight_kg": 73,
+    "registration_club": {
+      "name": "AL DUHAIL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL DUHAIL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Mohamed Fadil as Qatar No. 21."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Mohamed Fadil",
+      "en": "Mohamed Fadil",
+      "native": "Mohamed Fadil",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-sami-darani-2009",
+    "name": "Sami Darani",
+    "local_name": "Sami Darani",
+    "country": "Qatar",
+    "birth_date": "2009-03-11",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 183,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "AL SADD SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL SADD SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Sami Darani as Qatar No. 4."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Sami Darani",
+      "en": "Sami Darani",
+      "native": "Sami Darani",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-youssef-ali-2009",
+    "name": "Youssef Ali",
+    "local_name": "Youssef Ali",
+    "country": "Qatar",
+    "birth_date": "2009-03-19",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 181,
+    "weight_kg": 67,
+    "registration_club": {
+      "name": "AL RAYYAN SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL RAYYAN SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Youssef Ali as Qatar No. 13."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Youssef Ali",
+      "en": "Youssef Ali",
+      "native": "Youssef Ali",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-aaron-robson-2009",
+    "name": "Aaron Robson",
+    "local_name": "Aaron Robson",
+    "country": "Qatar",
+    "birth_date": "2009-03-28",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 189,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "AL SADD SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL SADD SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Aaron Robson as Qatar No. 22."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Aaron Robson",
+      "en": "Aaron Robson",
+      "native": "Aaron Robson",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-mohamed-yehea-fadl-2009",
+    "name": "Mohamed Yehea Fadl",
+    "local_name": "Mohamed Yehea Fadl",
+    "country": "Qatar",
+    "birth_date": "2009-04-10",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 174,
+    "weight_kg": 60,
+    "registration_club": {
+      "name": "AL SADD SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL SADD SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Mohamed Yehea Fadl as Qatar No. 8."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Mohamed Yehea Fadl",
+      "en": "Mohamed Yehea Fadl",
+      "native": "Mohamed Yehea Fadl",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-tariq-yaghmour-2009",
+    "name": "Tariq Yaghmour",
+    "local_name": "Tariq Yaghmour",
+    "country": "Qatar",
+    "birth_date": "2009-04-30",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 181,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "AL SADD SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL SADD SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Tariq Yaghmour as Qatar No. 12."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Tariq Yaghmour",
+      "en": "Tariq Yaghmour",
+      "native": "Tariq Yaghmour",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-amrmohamed-ezzat-2009",
+    "name": "Amrmohamed Ezzat",
+    "local_name": "Amrmohamed Ezzat",
+    "country": "Qatar",
+    "birth_date": "2009-05-06",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "AL DUHAIL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL DUHAIL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Amrmohamed Ezzat as Qatar No. 19; the concatenated spelling is preserved exactly."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-07-12",
+      "notes": "AFC concatenated registration spelling AMRMOHAMED is preserved pending a second official name source; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Amrmohamed Ezzat",
+      "en": "Amrmohamed Ezzat",
+      "native": "Amrmohamed Ezzat",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-karim-hariri-2009",
+    "name": "Karim Hariri",
+    "local_name": "Karim Hariri",
+    "country": "Qatar",
+    "birth_date": "2009-05-19",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 166,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "AL DUHAIL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL DUHAIL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Karim Hariri as Qatar No. 23."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Karim Hariri",
+      "en": "Karim Hariri",
+      "native": "Karim Hariri",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ghassan-eltoum-2009",
+    "name": "Ghassan Eltoum",
+    "local_name": "Ghassan Eltoum",
+    "country": "Qatar",
+    "birth_date": "2009-06-02",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 172,
+    "weight_kg": 65,
+    "registration_club": {
+      "name": "AL RAYYAN SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL RAYYAN SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ghassan Eltoum as Qatar No. 2."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Ghassan Eltoum",
+      "en": "Ghassan Eltoum",
+      "native": "Ghassan Eltoum",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-bakri-mohamed-2009",
+    "name": "Bakri Mohamed",
+    "local_name": "Bakri Mohamed",
+    "country": "Qatar",
+    "birth_date": "2009-07-02",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 199,
+    "weight_kg": 88,
+    "registration_club": {
+      "name": "AL RAYYAN SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL RAYYAN SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Bakri Mohamed as Qatar No. 1."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained. No official player-by-player Arabic-script list was available in the checked sources, so no reverse transliteration was added."
+    },
+    "names": {
+      "zh": "Bakri Mohamed",
+      "en": "Bakri Mohamed",
+      "native": "Bakri Mohamed",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ayokunle-tokode-2009",
+    "name": "Ayokunle Tokode",
+    "local_name": "Ayokunle Tokode",
+    "country": "Qatar",
+    "birth_date": "2009-07-13",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "NOT LISTED IN AFC FINAL REGISTRATION",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "NOT LISTED IN AFC FINAL REGISTRATION",
+        "country": "Qatar",
+        "note": "The official AFC row prints only (QAT) with no club name; no club is inferred."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026",
+      "registration-club-needs-review"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ayokunle Tokode as Qatar No. 20 but prints no club name."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "needs-review",
+      "last_checked": "2026-07-12",
+      "notes": "Official AFC registration omits the club name. No club or Arabic-script name is inferred from secondary data."
+    },
+    "names": {
+      "zh": "Ayokunle Tokode",
+      "en": "Ayokunle Tokode",
+      "native": "Ayokunle Tokode",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-saad-mohamed-2009",
+    "name": "Saad Mohamed",
+    "local_name": "Saad Mohamed",
+    "country": "Qatar",
+    "birth_date": "2009-08-17",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 175,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "AL SHAMAL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL SHAMAL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Saad Mohamed as Qatar No. 17."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Saad Mohamed",
+      "en": "Saad Mohamed",
+      "native": "Saad Mohamed",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-abdoulaye-ndiaye-2009",
+    "name": "Abdoulaye Ndiaye",
+    "local_name": "Abdoulaye Ndiaye",
+    "country": "Qatar",
+    "birth_date": "2009-09-24",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 173,
+    "weight_kg": 62,
+    "registration_club": {
+      "name": "NOT LISTED IN AFC FINAL REGISTRATION",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "NOT LISTED IN AFC FINAL REGISTRATION",
+        "country": "Qatar",
+        "note": "The official AFC row leaves both club name and country blank; no club is inferred."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026",
+      "registration-club-needs-review"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Abdoulaye Ndiaye as Qatar No. 14 but leaves the club cells blank."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "needs-review",
+      "last_checked": "2026-07-12",
+      "notes": "Official AFC registration omits the club. No club or Arabic-script name is inferred from secondary data."
+    },
+    "names": {
+      "zh": "Abdoulaye Ndiaye",
+      "en": "Abdoulaye Ndiaye",
+      "native": "Abdoulaye Ndiaye",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-taha-nassir-2009",
+    "name": "Taha Nassir",
+    "local_name": "Taha Nassir",
+    "country": "Qatar",
+    "birth_date": "2009-10-28",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 182,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "AL DUHAIL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL DUHAIL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Taha Nassir as Qatar No. 5."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Taha Nassir",
+      "en": "Taha Nassir",
+      "native": "Taha Nassir",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-hadi-khalil-2009",
+    "name": "Hadi Khalil",
+    "local_name": "Hadi Khalil",
+    "country": "Qatar",
+    "birth_date": "2009-11-03",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 182,
+    "weight_kg": 74,
+    "registration_club": {
+      "name": "AL DUHAIL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL DUHAIL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Hadi Khalil as Qatar No. 6."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Hadi Khalil",
+      "en": "Hadi Khalil",
+      "native": "Hadi Khalil",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-osama-mohamed-2009",
+    "name": "Osama Mohamed",
+    "local_name": "Osama Mohamed",
+    "country": "Qatar",
+    "birth_date": "2009-11-12",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 171,
+    "weight_kg": 59,
+    "registration_club": {
+      "name": "AL SADD SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL SADD SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Osama Mohamed as Qatar No. 10."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Osama Mohamed",
+      "en": "Osama Mohamed",
+      "native": "Osama Mohamed",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ahmed-wael-fathy-2009",
+    "name": "Ahmed Wael Fathy",
+    "local_name": "Ahmed Wael Fathy",
+    "country": "Qatar",
+    "birth_date": "2009-12-01",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 181,
+    "weight_kg": 67,
+    "registration_club": {
+      "name": "AL ARABI SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL ARABI SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ahmed Wael Fathy as Qatar No. 16."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Ahmed Wael Fathy",
+      "en": "Ahmed Wael Fathy",
+      "native": "Ahmed Wael Fathy",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-shaher-roustom-2009",
+    "name": "Shaher Roustom",
+    "local_name": "Shaher Roustom",
+    "country": "Qatar",
+    "birth_date": "2009-12-30",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 184,
+    "weight_kg": 74,
+    "registration_club": {
+      "name": "AL DUHAIL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL DUHAIL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Shaher Roustom as Qatar No. 18."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Shaher Roustom",
+      "en": "Shaher Roustom",
+      "native": "Shaher Roustom",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-dhiaeddine-benyatla-2010",
+    "name": "Dhiaeddine Benyatla",
+    "local_name": "Dhiaeddine Benyatla",
+    "country": "Qatar",
+    "birth_date": "2010-01-02",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 178,
+    "weight_kg": 65,
+    "registration_club": {
+      "name": "AL GHARAFA SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL GHARAFA SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Dhiaeddine Benyatla as Qatar No. 7."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Dhiaeddine Benyatla",
+      "en": "Dhiaeddine Benyatla",
+      "native": "Dhiaeddine Benyatla",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-adham-adnan-2010",
+    "name": "Adham Adnan",
+    "local_name": "Adham Adnan",
+    "country": "Qatar",
+    "birth_date": "2010-01-20",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 179,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "AL DUHAIL SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL DUHAIL SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Adham Adnan as Qatar No. 3."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Adham Adnan",
+      "en": "Adham Adnan",
+      "native": "Adham Adnan",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ahmed-abouelkomsan-2010",
+    "name": "Ahmed Abouelkomsan",
+    "local_name": "Ahmed Abouelkomsan",
+    "country": "Qatar",
+    "birth_date": "2010-04-05",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "AL RAYYAN SC",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 final registration",
+        "organization": "AL RAYYAN SC",
+        "country": "Qatar",
+        "note": "AFC final-registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "qatar-youth",
+      "afc-u17-2026",
+      "china-qatar-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Qatar final squad",
+        "team": "Qatar U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Qatar's 23-player squad; China-match appearance is not inferred from squad membership."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "match",
+        "label": "AFC report: China PR 2-0 Qatar",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists PDF",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ahmed Abouelkomsan as Qatar No. 15."
+      },
+      {
+        "type": "official-match-report",
+        "label": "AFC China PR 2-0 Qatar report",
+        "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/afcu17-group-b-china-pr-2-0-qatar",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "AFC confirms the Qatar U17 team context in the 12 May 2026 match against China PR; it does not establish this player's appearance."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Ahmed Abouelkomsan",
+      "en": "Ahmed Abouelkomsan",
+      "native": "Ahmed Abouelkomsan",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-13",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
     "id": "uz-asilbek-aliev-2009",
     "name": "Asilbek Aliev",
     "local_name": "Алиев Асилбек",

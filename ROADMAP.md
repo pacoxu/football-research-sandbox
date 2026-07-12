@@ -6,8 +6,8 @@
 
 ## 当前基线
 
-- 球员库：186 人。
-- 国家/地区：China PR、Japan、Korea Republic、Uzbekistan。
+- 球员库：232 人。
+- 国家/地区：China PR、Japan、Korea Republic、Uzbekistan、Australia、Qatar。
 - 主要页面数据：`data/site/players.json`、`data/site/overview.json`。
 - 主要维护入口：`data/raw/**`。
 - 本地校验：`npm run validate-data`。
@@ -63,7 +63,7 @@
 | P3 | 中国 U17 2026 终报名、后续集训、观察池边界 | roster flag 或等价字段，区分终报名、集训和观察池 | [#14](https://github.com/starryjog/football-research-sandbox/issues/14) |
 | P3 | 当前中国留洋 `overseas_status` 模型 | 已区分 active registered、pending effective、trial watch、returned、historical only，并由页面、overview 与校验消费 | [#15](https://github.com/starryjog/football-research-sandbox/issues/15) |
 | P3 | 日韩 U17/U23 俱乐部、学校、青训路径补源 | 为重点样本补 national-fa、club-academy、school/university 来源层级 | [#16](https://github.com/starryjog/football-research-sandbox/issues/16) |
-| P4 | 亚洲其他国家 U17/U20/U23 对照组 | 澳大利亚、沙特、伊朗、卡塔尔、乌兹别克等核心样本池 | [#17](https://github.com/starryjog/football-research-sandbox/issues/17) |
+| P4 | 亚洲其他国家 U17/U20/U23 对照组 | 澳大利亚 U20 与卡塔尔 U17 已完成各 23 人；继续补沙特、伊朗、卡塔尔其他年龄段和乌兹别克样本池 | [#17](https://github.com/starryjog/football-research-sandbox/issues/17) |
 | P4 | FIFA 中国参赛档案 | 2002 世界杯和早期 U16/U20 世界赛中国队档案 | [#18](https://github.com/starryjog/football-research-sandbox/issues/18) |
 | P4 | AFC U 系列 `source_version` 字段 | 近期 3 届试点已记录 source version、source checked date、冲突说明和名称谱系；后续扩到余下历史届次 | [#19](https://github.com/starryjog/football-research-sandbox/issues/19) |
 | P4 | 五大联赛之外的亚洲教练扩展 | 首批 5 名、10 段任期已落库；后续扩 J/K/中超/西亚样本与逐场战绩 | [#20](https://github.com/starryjog/football-research-sandbox/issues/20) |

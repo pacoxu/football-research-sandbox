@@ -70,6 +70,7 @@ const allowedPlayerRosterStatuses = new Set([
 
 const allowedSourceLayerTypes = new Set([
   "afc-registration",
+  "official-match-report",
   "national-fa-profile",
   "club-academy-profile",
   "school-profile",
@@ -138,7 +139,8 @@ const issue47DeepSampleIds = new Set([
 ]);
 
 const completeSquadExpectations = new Map([
-  ["Australia|afc-u20-2025", 23]
+  ["Australia|afc-u20-2025", 23],
+  ["Qatar|afc-u17-2026", 23]
 ]);
 
 const allowedTournamentSourceVersionTypes = new Set([
@@ -1615,6 +1617,35 @@ export async function validateData() {
     );
     assert(independentOfficialLayers.length > 0, `Missing issue #47 deep-sample match source on ${playerId}`);
   }
+
+  const issue52Squad = completeSquads.get("Qatar|afc-u17-2026");
+  const issue52ShirtNumbers = new Set();
+  let issue52Goalkeepers = 0;
+  let issue52MissingClubs = 0;
+  for (const { player, entry } of issue52Squad) {
+    assert(player.age_band === "u17", `Invalid Qatar U17 age_band on ${player.id}`);
+    assert(entry.roster_status === "final-squad", `Invalid Qatar U17 roster_status on ${player.id}`);
+    assert(
+      Number.isInteger(entry.shirt_number) && entry.shirt_number >= 1 && entry.shirt_number <= 23,
+      `Invalid Qatar U17 shirt_number on ${player.id}`
+    );
+    assert(!issue52ShirtNumbers.has(entry.shirt_number), `Duplicate Qatar U17 shirt_number ${entry.shirt_number}`);
+    issue52ShirtNumbers.add(entry.shirt_number);
+    assert(
+      player.registration_club.status === "tournament-snapshot" &&
+        player.registration_club.as_of === "2026-05-02",
+      `Missing Qatar U17 registration snapshot on ${player.id}`
+    );
+    const afcLayers = player.source_layers.filter((layer) => layer.type === "afc-registration");
+    const matchLayers = player.source_layers.filter((layer) => layer.type === "official-match-report");
+    assert(afcLayers.length === 1 && afcLayers[0].confidence === "high", `Invalid AFC source on ${player.id}`);
+    assert(matchLayers.length === 1 && matchLayers[0].confidence === "high", `Invalid AFC match context on ${player.id}`);
+    if (player.primary_position === "Goalkeeper") issue52Goalkeepers += 1;
+    if (player.registration_club.name === "NOT LISTED IN AFC FINAL REGISTRATION") issue52MissingClubs += 1;
+  }
+  assert(issue52ShirtNumbers.size === 23, "Qatar U17 shirt numbers must cover the complete final squad");
+  assert(issue52Goalkeepers === 3, `Qatar U17 final squad must have 3 goalkeepers, found ${issue52Goalkeepers}`);
+  assert(issue52MissingClubs === 2, `Qatar U17 must preserve 2 AFC club omissions, found ${issue52MissingClubs}`);
 
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);

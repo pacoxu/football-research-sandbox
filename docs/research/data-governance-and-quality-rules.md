@@ -48,6 +48,7 @@
 | 类型 | 使用场景 |
 | --- | --- |
 | `afc-registration` | AFC 终报名 PDF、赛事 registration 文件。 |
+| `official-match-report` | AFC/FIFA/足协官方赛报；可支撑球队比赛语境和文中明确事件，不得据此推断未列出的逐人出场。 |
 | `national-fa-profile` | JFA、KFA、CFA 等国家/地区足协名单、队伍页或球员 profile。 |
 | `club-academy-profile` | 俱乐部 U18 等青训梯队官网、梯队页面或青训公告。 |
 | `school-profile` | 高中、学校队或校园足球队页面。 |
