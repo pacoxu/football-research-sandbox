@@ -8,6 +8,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Added executable project-governance automation: PR validation CI, dynamic status badges, structured issue routing, and monthly/event/scope snapshot releases with hashed manifests.
+
 - Published the Genbao Football Base dossier with seven generations, 26 representative players, current-status evidence, programme continuity, and source boundaries.
 
 - Added structured Japan/Korea youth-development system data and a bilingual public systems page.
