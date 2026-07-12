@@ -86,6 +86,20 @@
 
 球员只能通过 `training_pathway[].competition_context_ids` 引用竞赛 ID。该引用表示培养环境，不自动断言球员在某赛季实际出场。
 
+## 青训机构专题现状
+
+`dossiers[].roster_views[].players[].current_status` 用于专题中的代表球员近况：
+
+| 字段 | 含义 |
+| --- | --- |
+| `category` | `active-first-team`、`active-reserve`、`active-professional`、`retired-coach`、`youth-development` 或 `needs-review`。 |
+| `organization`、`role` | 当前可核组织和球员/教练角色。 |
+| `as_of` | 现状核查日期。 |
+| `confidence` | `high`、`medium` 或 `low`。 |
+| `source_label`、`source_url` | 当前状态的直接来源。 |
+
+专题名单是代表性产出档案，不等同于基地完整毕业生名册。当前去向无法可靠确认时使用 `needs-review`，不得沿用过期俱乐部冒充现状。
+
 ## `tournament_participation`
 
 该字段不只记录正式赛事，也可记录集训、留洋跟踪和专题参与，但必须用 `squad_status` 区分状态。

@@ -23,6 +23,7 @@
 - `AFC U23 Asian Cup Saudi Arabia 2026`
 - `Chinese Super League 2026` 青年样本
 - 日本、韩国 U18 / 大学 / 职业桥梁体系与四队 92 人来源层
+- 根宝足球基地专题：七个代际、26 名代表球员、当前状态与来源边界
 - 中国青训与董路足球小将专题追踪
 - 中日韩留洋历史数据的建档模板
 - 五大联赛亚洲教练记录，区分 AFC 主口径与土耳其 / 以色列等广义边界项
@@ -72,6 +73,7 @@ python3 -m http.server 4173
 - 每条球员记录至少带上 `birth_date`、`registration_club`、`training_pathway`、`tournament_participation`、`external_links`。
 - `registration_club.organization_type` 区分高中、俱乐部梯队、大学、职业队、成年军队球队和海外梯队；韩国合作高中不能覆盖母俱乐部字段。
 - `data/raw/youth-development-systems.json` 维护日韩稳定体系结构，年度队数和赛季说明只放在 `annual_snapshot`。
+- `data/raw/dossiers.json` 的 `genbao-football-base` 记录根宝基地代际、代表球员、当前状态、可信度和现状来源；无法确认的当前去向必须标记为待复核。
 - 若外部资料存在冲突，以 `verification.status` 和 `verification.notes` 标记，而不是直接覆盖。
 - `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、美洲其他四个层级。
 - 留洋国家条目可选带 `featured_records`，用于补真实个案，至少保留赛季、联赛、俱乐部、正式比赛出场与摘要。

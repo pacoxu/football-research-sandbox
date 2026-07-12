@@ -1481,6 +1481,88 @@ tbody tr:last-child td {
   margin-top: 10px;
 }
 
+.academy-generation-list,
+.academy-player-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.academy-generation-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  padding: 18px;
+  background: var(--surface-strong);
+}
+
+.academy-generation-card > p {
+  margin-bottom: 16px;
+}
+
+.academy-player-grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+}
+
+.academy-player-card,
+.academy-program-card {
+  min-width: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 15px;
+  background: var(--surface);
+}
+
+.academy-player-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.academy-player-heading h4,
+.academy-program-card h4 {
+  margin: 0 0 6px;
+  font-size: 1.02rem;
+}
+
+.academy-player-heading .chip {
+  flex: 0 0 auto;
+}
+
+.academy-player-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+
+.academy-program-card {
+  margin: 14px 0;
+  border-left: 4px solid var(--accent);
+  background: var(--surface-tint);
+}
+
+.academy-status-retired-coach {
+  color: #674b0f;
+  background: #f5e7bd;
+}
+
+.academy-status-needs-review {
+  color: var(--muted);
+  background: #ece9e3;
+}
+
+.academy-status-active-first-team,
+.academy-status-active-reserve,
+.academy-status-active-professional,
+.academy-status-youth-development {
+  color: var(--accent-deep);
+  background: var(--accent-soft);
+}
+
 @media (max-width: 1120px) {
   .site-shell {
     max-width: 960px;
@@ -1707,6 +1789,11 @@ tbody tr:last-child td {
 
   .system-card-actions {
     align-items: stretch;
+    flex-direction: column;
+  }
+
+  .academy-player-heading {
+    align-items: flex-start;
     flex-direction: column;
   }
 

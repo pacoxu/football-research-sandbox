@@ -674,8 +674,8 @@
       ],
       "summary": "按崇明基地 / 根宝足球学校的代际拆开记录，从 1988-1991 崇明一期到当前 2013-2014 委培梯队，重点追踪每一波是成为海港骨架、整体转让申花，还是进入全运混编与代训传承体系。",
       "goal": "把根宝系几波人的代表球员、整体去向和当前阶段整理成可回看的代际档案。",
-      "completed": "已按公开可核线索拆出崇明一期、1993-1994、1997-1998、1999-2000、2001-2003、2006-2008 和 2013-2014 七条波次，并补上“海港骨架 / 申花收购 / 全运分流 / 委培传承”四类状态。",
-      "next_step": "继续把每一波从代表球员扩成更完整名单，并补成年联赛出场、国字号人数和退役后回流执教节点。",
+      "completed": "已按公开可核线索拆出七条波次，并为 26 名代表球员补充截至 2026-07-12 的现役、预备队、退役执教、青训上升或待复核状态；专题详情页已接入网站。",
+      "next_step": "继续补全 1993-1994、1997-1998、2001-2003 三拨名单，并按月复核当前仍在职业或青训体系中的球员去向。",
       "watch_items": [
         "崇明一期老将向教练岗位回流后的基地传承路径",
         "1993-1994 与 1997-1998 两拨全运冠军线的完整职业去向",
@@ -6140,7 +6140,7 @@
       "focus_tags": [
         "genbao-football-base"
       ],
-      "last_reviewed": "2026-05-23",
+      "last_reviewed": "2026-07-12",
       "summary": "这个专题不回溯到徐根宝在申花、有线 02 或更早国字号时期的全部门生，而是聚焦 2000 年崇明基地落地之后，真正从根宝足球学校 / 崇明基地 / 海港委培体系里成批冒头的几波人。当前最稳妥的梳理方式，是按代际拆成“海港骨架型”“整队转让申花型”“全运过渡型”和“委培传承型”四类路径，而不是把所有根宝弟子混成一张长名单。",
       "source_document": {
         "title": "从武磊、朱辰杰到蒯纪闻，根宝十代弟子撑起上海足球一片天",
@@ -6171,6 +6171,26 @@
           "title": "徐根宝 82 岁生日，吕文君转任 1314 梯队主教练",
           "path": "https://www.jfdaily.com/wx/detail.do?id=1052773",
           "summary": "可核验崇明一期向教练岗位回流的传承节点，以及 1314 梯队当前教练口径。"
+        },
+        {
+          "title": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+          "path": "https://www.thecfa.cn/jyqxjly/20220413/30551.html",
+          "summary": "官方口径确认基地 2000 年成立，并称截至专访时已向中超输送近 70 名球员。"
+        },
+        {
+          "title": "根宝足球基地 25 周年与新生代近况",
+          "path": "https://www.shobserver.com/wx/detail.do?id=942081",
+          "summary": "补基地 25 周年、蒯纪闻进入成年国家队视野和后续委培梯队现状。"
+        },
+        {
+          "title": "新民晚报：吕文君回到基地执教 1314 梯队",
+          "path": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560",
+          "summary": "确认吕文君退役后回到基地担任 1314 梯队主教练，以及基地的传承结构。"
+        },
+        {
+          "title": "新民周刊：李圣龙 2026 转入上海海港 B 队",
+          "path": "https://www.xinminweekly.com.cn/bianjituijian/2026/03/24/40575.html",
+          "summary": "确认李圣龙在 2026 赛季转入上海海港 B 队参加中乙。"
         }
       ],
       "scope_note": "这里的“根宝系”只取 2000 年崇明基地成立后的成建制输出，不把更早的申花、有线 02、国字号弟子全部并入。同一拨人里还要注意区分三种情况：纯根宝基地培养、根宝基地与幸运星或俱乐部混编的全运队，以及海港出资委托根宝带训的后期委培模式。",
@@ -6244,35 +6264,80 @@
               "local_name": "武磊",
               "role": "前锋",
               "club": "Shanghai Port",
-              "note": "崇明一期旗帜人物，完成西甲留洋后回到海港，仍是根宝体系历史上最成功的成人兑现样本。"
+              "note": "崇明一期旗帜人物，完成西甲留洋后回到海港，仍是根宝体系历史上最成功的成人兑现样本。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Port",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "上海观察：海港 2026 赛季与崇明老将",
+                "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+              }
             },
             {
               "name": "Yan Junling",
               "local_name": "颜骏凌",
               "role": "门将",
               "club": "Shanghai Port",
-              "note": "门将主干，长期维持顶级联赛和国家队竞争力，是这一波稳定性的代表。"
+              "note": "门将主干，长期维持顶级联赛和国家队竞争力，是这一波稳定性的代表。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Port",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "上海观察：海港 2026 赛季与崇明老将",
+                "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+              }
             },
             {
               "name": "Wang Shenchao",
               "local_name": "王燊超",
               "role": "后卫",
               "club": "Shanghai Port",
-              "note": "后防多面手，2026 节点仍是海港老将代表，说明这拨人的寿命很长。"
+              "note": "后防多面手，2026 节点仍是海港老将代表，说明这拨人的寿命很长。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Port",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "上海观察：海港 2026 赛季与崇明老将",
+                "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+              }
             },
             {
               "name": "Zhang Linpeng",
               "local_name": "张琳芃",
               "role": "后卫",
               "club": "Shanghai Port",
-              "note": "从崇明基地一路走到国足防线核心，是这一代天花板的重要旁证。"
+              "note": "从崇明基地一路走到国足防线核心，是这一代天花板的重要旁证。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Port",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "上海观察：海港 2026 赛季与崇明老将",
+                "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+              }
             },
             {
               "name": "Lyu Wenjun",
               "local_name": "吕文君",
               "role": "前锋 / 教练",
               "club": "Genbao Base 1314 Team",
-              "note": "2025 赛季后退役，2026 年回到基地执教 1314 梯队，成为“第一波回流带下一波”的代表。"
+              "note": "2025 赛季后退役，2026 年回到基地执教 1314 梯队，成为“第一波回流带下一波”的代表。",
+              "current_status": {
+                "category": "retired-coach",
+                "organization": "Genbao Base 1314 Team",
+                "role": "head-coach",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+                "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+              }
             }
           ]
         },
@@ -6287,35 +6352,80 @@
               "local_name": "李圣龙",
               "role": "前锋",
               "club": "Shanghai Port pathway",
-              "note": "2013 全运冠军前锋样本，说明这一波仍能持续向海港一线队供血。"
+              "note": "2013 全运冠军前锋样本，说明这一波仍能持续向海港一线队供血。",
+              "current_status": {
+                "category": "active-reserve",
+                "organization": "Shanghai Port B",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "新民周刊：李圣龙 2026 转入上海海港 B 队",
+                "source_url": "https://www.xinminweekly.com.cn/bianjituijian/2026/03/24/40575.html"
+              }
             },
             {
               "name": "Yang Shiyuan",
               "local_name": "杨世元",
               "role": "中场",
               "club": "Shanghai Port",
-              "note": "中场硬度样本，2026 节点仍在海港成年队轮换序列。"
+              "note": "中场硬度样本，2026 节点仍在海港成年队轮换序列。",
+              "current_status": {
+                "category": "active-professional",
+                "organization": "Shanghai Port pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+                "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+              }
             },
             {
               "name": "He Guan",
               "local_name": "贺惯",
               "role": "中后卫",
               "club": "Chinese professional pathway",
-              "note": "中卫样本，曾完成从基地到国字号的跃升。"
+              "note": "中卫样本，曾完成从基地到国字号的跃升。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Wuhan Three Towns",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "贺惯 2026 武汉三镇比赛记录",
+                "source_url": "https://player.7m.com.cn/338124/index_gb.shtml"
+              }
             },
             {
               "name": "Fu Huan",
               "local_name": "傅欢",
               "role": "边后卫",
               "club": "Chinese professional pathway",
-              "note": "代表这一拨由全运冠军向中超稳定轮换转化的路径。"
+              "note": "代表这一拨由全运冠军向中超稳定轮换转化的路径。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Port",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "傅欢 2026 上海海港比赛记录",
+                "source_url": "https://fbref.com/en/players/86d4a86c/"
+              }
             },
             {
               "name": "Zhang Wei",
               "local_name": "张卫",
               "role": "左路球员",
               "club": "Chinese professional pathway",
-              "note": "与李圣龙、杨世元同属 2013 全运冠军主干，是这一拨职业化样本之一。"
+              "note": "与李圣龙、杨世元同属 2013 全运冠军主干，是这一拨职业化样本之一。",
+              "current_status": {
+                "category": "needs-review",
+                "organization": "Chinese professional pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "low",
+                "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+                "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+              }
             }
           ]
         },
@@ -6330,21 +6440,48 @@
               "local_name": "胡靖航",
               "role": "前锋",
               "club": "Chinese professional leagues",
-              "note": "这拨里知名度最高的前场样本之一，代表根宝与幸运星混编后仍能出职业主力。"
+              "note": "这拨里知名度最高的前场样本之一，代表根宝与幸运星混编后仍能出职业主力。",
+              "current_status": {
+                "category": "needs-review",
+                "organization": "Chinese professional pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "low",
+                "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+                "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+              }
             },
             {
               "name": "Chen Binbin",
               "local_name": "陈彬彬",
               "role": "边锋",
               "club": "Chinese professional leagues",
-              "note": "进入过海港一线队和国字号体系，是这一波边路样本。"
+              "note": "进入过海港一线队和国字号体系，是这一波边路样本。",
+              "current_status": {
+                "category": "needs-review",
+                "organization": "Chinese professional pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "low",
+                "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+                "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+              }
             },
             {
               "name": "Chen Wei",
               "local_name": "陈威",
               "role": "门将",
               "club": "Chinese professional leagues",
-              "note": "门将样本，体现这一拨在成年阶段分散到多支职业队继续发展的路径。"
+              "note": "门将样本，体现这一拨在成年阶段分散到多支职业队继续发展的路径。",
+              "current_status": {
+                "category": "needs-review",
+                "organization": "Chinese professional pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "low",
+                "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+                "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+              }
             }
           ]
         },
@@ -6359,35 +6496,80 @@
               "local_name": "朱辰杰",
               "role": "中后卫",
               "club": "Shanghai Shenhua",
-              "note": "整队转让后的最高兑现样本之一，已成长为申花和国足的防线骨架。"
+              "note": "整队转让后的最高兑现样本之一，已成长为申花和国足的防线骨架。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Shenhua",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "2026 上海申花当前阵容交叉页",
+                "source_url": "https://www.365scores.com/zh/football/team/shanghai-shenhua-2179/squad"
+              }
             },
             {
               "name": "Jiang Shenglong",
               "local_name": "蒋圣龙",
               "role": "中后卫",
               "club": "Shanghai Shenhua",
-              "note": "与朱辰杰长期组成双中卫主干，是这拨成功度的核心证明。"
+              "note": "与朱辰杰长期组成双中卫主干，是这拨成功度的核心证明。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Shenhua",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "2026 上海申花当前阵容交叉页",
+                "source_url": "https://www.365scores.com/zh/football/team/shanghai-shenhua-2179/squad"
+              }
             },
             {
               "name": "Liu Ruofan",
               "local_name": "刘若钒",
               "role": "前锋",
               "club": "Shanghai Port",
-              "note": "早期顶级天赋样本，经历申花阶段后又在成年队层面再分流到海港。"
+              "note": "早期顶级天赋样本，经历申花阶段后又在成年队层面再分流到海港。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Port",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "上海观察：海港 2026 赛季与崇明老将",
+                "source_url": "https://www.shobserver.com/wx/detail.do?id=1077531"
+              }
             },
             {
               "name": "Zhou Junchen",
               "local_name": "周俊辰",
               "role": "边锋",
               "club": "Shanghai Shenhua pathway",
-              "note": "速度型边路样本，代表这拨中上游职业化产出。"
+              "note": "速度型边路样本，代表这拨中上游职业化产出。",
+              "current_status": {
+                "category": "needs-review",
+                "organization": "Shanghai Shenhua pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "low",
+                "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+                "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+              }
             },
             {
               "name": "Xu Haoyang",
               "local_name": "徐皓阳",
               "role": "中场",
               "club": "Shanghai Shenhua",
-              "note": "成年阶段成长明显，成为申花稳定轮换并进入国足视野。"
+              "note": "成年阶段成长明显，成为申花稳定轮换并进入国足视野。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Shenhua",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "2026 上海申花当前阵容交叉页",
+                "source_url": "https://www.365scores.com/zh/football/team/shanghai-shenhua-2179/squad"
+              }
             }
           ]
         },
@@ -6402,14 +6584,32 @@
               "local_name": "张慧宇",
               "role": "中场 / 后卫",
               "club": "Shanghai Port pathway",
-              "note": "公开可核的主干样本之一，但完整职业履历仍需继续补。"
+              "note": "公开可核的主干样本之一，但完整职业履历仍需继续补。",
+              "current_status": {
+                "category": "needs-review",
+                "organization": "Shanghai Port pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "low",
+                "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+                "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+              }
             },
             {
               "name": "Liao Zhongjiu",
               "local_name": "廖重九",
               "role": "前场球员",
               "club": "Shanghai Port pathway",
-              "note": "和张慧宇一起构成这拨当前最容易确认的职业化样本。"
+              "note": "和张慧宇一起构成这拨当前最容易确认的职业化样本。",
+              "current_status": {
+                "category": "needs-review",
+                "organization": "Shanghai Port pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "low",
+                "source_label": "中国足协专访徐根宝：基地成立以来向中超输送近 70 名球员",
+                "source_url": "https://www.thecfa.cn/jyqxjly/20220413/30551.html"
+              }
             }
           ]
         },
@@ -6424,42 +6624,97 @@
               "local_name": "蒯纪闻",
               "role": "前腰 / 中场",
               "club": "Shanghai Port",
-              "note": "这一拨最强兑现点，已从基地苗子成长为海港和国字号重点新星。"
+              "note": "这一拨最强兑现点，已从基地苗子成长为海港和国字号重点新星。",
+              "current_status": {
+                "category": "active-first-team",
+                "organization": "Shanghai Port",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "high",
+                "source_label": "根宝足球基地 25 周年与新生代近况",
+                "source_url": "https://www.shobserver.com/wx/detail.do?id=942081"
+              },
+              "player_id": "cn-kuai-jiwen-2006"
             },
             {
               "name": "Li Ming",
               "local_name": "黎明",
               "role": "中后场球员",
               "club": "Shanghai Port youth pathway",
-              "note": "06 线主干样本之一，和蒯纪闻一起支撑这拨的国字号存在感。"
+              "note": "06 线主干样本之一，和蒯纪闻一起支撑这拨的国字号存在感。",
+              "current_status": {
+                "category": "youth-development",
+                "organization": "Shanghai Port youth pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+                "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+              }
             },
             {
               "name": "Liu Tiecheng",
               "local_name": "刘铁诚",
               "role": "前场球员",
               "club": "Shanghai Port youth pathway",
-              "note": "代表这一拨继续向职业体系输送锋线球员的能力。"
+              "note": "代表这一拨继续向职业体系输送锋线球员的能力。",
+              "current_status": {
+                "category": "youth-development",
+                "organization": "Shanghai Port youth pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+                "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+              }
             },
             {
               "name": "Liu Lei",
               "local_name": "刘磊",
               "role": "后场球员",
               "club": "Shanghai Port youth pathway",
-              "note": "06-08 这拨的后场样本之一，出现在同批公开名单中。"
+              "note": "06-08 这拨的后场样本之一，出现在同批公开名单中。",
+              "current_status": {
+                "category": "youth-development",
+                "organization": "Shanghai Port youth pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+                "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+              }
             },
             {
               "name": "Ouyang Jiaxin",
               "local_name": "欧阳嘉鑫",
               "role": "青年队球员",
               "club": "Shanghai Port youth pathway",
-              "note": "和蒯纪闻同属长期在基地训练的一拨，体现成建制输出。"
+              "note": "和蒯纪闻同属长期在基地训练的一拨，体现成建制输出。",
+              "current_status": {
+                "category": "youth-development",
+                "organization": "Shanghai Port youth pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+                "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+              }
             },
             {
               "name": "Zhang Junjie",
               "local_name": "张俊杰",
               "role": "青年队球员",
               "club": "Shanghai Port youth pathway",
-              "note": "补足这拨公开露出的成建制名单轮廓。"
+              "note": "补足这拨公开露出的成建制名单轮廓。",
+              "current_status": {
+                "category": "youth-development",
+                "organization": "Shanghai Port youth pathway",
+                "role": "player",
+                "as_of": "2026-07-12",
+                "confidence": "medium",
+                "source_label": "蒯纪闻与根宝基地 2006—2008 委培梯队",
+                "source_url": "https://www.jfdaily.com/wx/detail.do?id=574590"
+              }
             }
           ]
         },
@@ -6468,7 +6723,19 @@
           "name": "第七波：2013-2014 “1314 梯队” 传承线",
           "confidence": "C",
           "description": "这是当前仍在成型的最小公开梯队。已稳妥可核的不是完整球员名单，而是它进入海港委培体系、并由崇明一期弟子吕文君回流执教的传承结构。",
-          "players": []
+          "players": [],
+          "program_status": {
+            "category": "active-development-program",
+            "organization": "Genbao Football Base / Shanghai Port commissioned training",
+            "head_coach": "Lyu Wenjun",
+            "age_groups": [
+              "2013-2014",
+              "2015-2016"
+            ],
+            "as_of": "2026-07-12",
+            "source_label": "新民晚报：吕文君回到基地执教 1314 梯队",
+            "source_url": "https://www.shobserver.com/journal/getMobileArticle.htm?id=494560"
+          }
         }
       ],
       "controversies": [
@@ -6481,7 +6748,15 @@
         "2001-2003 这拨的完整职业兑现率目前仍不清楚，是当前资料最薄的一层。",
         "2006-2008 这一拨里，除蒯纪闻外还有哪些球员能稳定进入海港一线队，需要继续跟踪 2026 到 2028 的出场数据。",
         "1314 梯队目前公开露出的更多是教练与梯队口径，而不是稳定球员名单，后续还需要继续找公开比赛名单与分区赛记录。"
-      ]
+      ],
+      "source_checked_at": "2026-07-12",
+      "headline_stats": {
+        "founded": "2000-07",
+        "tracked_generations": 7,
+        "tracked_players": 26,
+        "official_output_claim": "中国足协 2022 年专访口径：基地成立以来已向中超输送近 70 名球员。",
+        "current_training_focus": "2013—2014 与 2015—2016 两支委培梯队"
+      }
     },
     {
       "id": "evergrande-football-school",

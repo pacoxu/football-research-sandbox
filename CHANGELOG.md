@@ -8,6 +8,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Published the Genbao Football Base dossier with seven generations, 26 representative players, current-status evidence, programme continuity, and source boundaries.
+
 - Added structured Japan/Korea youth-development system data and a bilingual public systems page.
 - Added organization types and competition contexts to all 92 Japan/Korea U17/U23 final-squad records.
 - Added AFC registration layers to all 92 records and independent official source coverage for 16 deep samples.

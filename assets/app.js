@@ -58,6 +58,8 @@ const UI_COPY = {
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
     "page.pathways.title": "日韩青训体系 | 青训球员追踪站",
     "page.pathways.description": "理解日本学校足球与俱乐部 U18、韩国高中队与 K League 梯队的并行关系。",
+    "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
+    "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
     "site.kicker": "青训追踪台",
     "site.brand": "青训球员追踪站",
     "nav.aria": "主导航",
@@ -99,6 +101,8 @@ const UI_COPY = {
     "home.quickLinks.tournamentsText": "查看赛事时间、结果和中国队比赛明细。",
     "home.quickLinks.overseasTitle": "留洋",
     "home.quickLinks.overseasText": "区分当前留洋样本与历史记录。",
+    "home.quickLinks.genbaoTitle": "根宝足球基地",
+    "home.quickLinks.genbaoText": "按代际查看基地代表球员、培养路径与当前状态。",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "留洋概览",
     "home.overseasSummary.link": "查看留洋",
@@ -232,6 +236,38 @@ const UI_COPY = {
     "pathways.viewPlayers": "查看本站样本（{count}）",
     "pathways.noPlayers": "当前无关联样本",
     "pathways.sourceChecked": "最后核查：{date}",
+    "dossier.breadcrumb.home": "首页",
+    "dossier.breadcrumb.detail": "青训专题",
+    "dossier.hero.eyebrow": "Academy Dossier",
+    "dossier.hero.lastReviewed": "核查至 {date}",
+    "dossier.notFound.title": "未找到对应专题",
+    "dossier.notFound.text": "当前专题不存在或尚未进入公开展示范围。",
+    "dossier.stats.founded": "基地启用",
+    "dossier.stats.generations": "跟踪代际",
+    "dossier.stats.players": "代表球员",
+    "dossier.stats.currentFocus": "当前梯队",
+    "dossier.model.eyebrow": "Development Model",
+    "dossier.model.title": "培养模式与专题口径",
+    "dossier.timeline.eyebrow": "Timeline",
+    "dossier.timeline.title": "基地沿革",
+    "dossier.generations.eyebrow": "Generations",
+    "dossier.generations.title": "代表球员与当前状态",
+    "dossier.generations.players": "代表样本 {count} 人",
+    "dossier.generations.empty": "当前代际尚无公开稳定球员名单。",
+    "dossier.program.coach": "主教练：{value}",
+    "dossier.program.ageGroups": "年龄段：{value}",
+    "dossier.player.asOf": "截至 {date}",
+    "dossier.player.source": "现状来源",
+    "dossier.player.profile": "站内球员档案",
+    "dossier.boundaries.eyebrow": "Boundaries",
+    "dossier.boundaries.title": "口径与争议",
+    "dossier.questions.eyebrow": "Follow-up",
+    "dossier.questions.title": "待核问题",
+    "dossier.sources.eyebrow": "Sources",
+    "dossier.sources.title": "来源与核查日期",
+    "dossier.sources.primary": "主来源",
+    "dossier.sources.supporting": "补充来源",
+    "dossier.sources.checked": "专题核查至 {date}",
     "tournamentDetail.breadcrumb.list": "赛事列表",
     "tournamentDetail.breadcrumb.detail": "赛事详情",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -479,6 +515,8 @@ const UI_COPY = {
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
     "page.pathways.title": "Japan and Korea Youth Systems | Youth Player Tracking Desk",
     "page.pathways.description": "Understand parallel school, club-academy, university, and professional pathways in Japan and South Korea.",
+    "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
+    "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
     "site.kicker": "Youth Tracking Desk",
     "site.brand": "Youth Player Tracking Desk",
     "nav.aria": "Main navigation",
@@ -520,6 +558,8 @@ const UI_COPY = {
     "home.quickLinks.tournamentsText": "Check tournament dates, results, and China match detail.",
     "home.quickLinks.overseasTitle": "Overseas",
     "home.quickLinks.overseasText": "Separate current overseas samples from historical records.",
+    "home.quickLinks.genbaoTitle": "Genbao Football Base",
+    "home.quickLinks.genbaoText": "Browse representative generations, pathways and current status.",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "Overseas overview",
     "home.overseasSummary.link": "View overseas",
@@ -653,6 +693,38 @@ const UI_COPY = {
     "pathways.viewPlayers": "View site samples ({count})",
     "pathways.noPlayers": "No linked samples yet",
     "pathways.sourceChecked": "Last checked: {date}",
+    "dossier.breadcrumb.home": "Home",
+    "dossier.breadcrumb.detail": "Academy dossier",
+    "dossier.hero.eyebrow": "Academy Dossier",
+    "dossier.hero.lastReviewed": "Checked through {date}",
+    "dossier.notFound.title": "Dossier not found",
+    "dossier.notFound.text": "This dossier does not exist or is not yet available on the public site.",
+    "dossier.stats.founded": "Base opened",
+    "dossier.stats.generations": "Generations",
+    "dossier.stats.players": "Representative players",
+    "dossier.stats.currentFocus": "Current squads",
+    "dossier.model.eyebrow": "Development Model",
+    "dossier.model.title": "Development model and scope",
+    "dossier.timeline.eyebrow": "Timeline",
+    "dossier.timeline.title": "Base timeline",
+    "dossier.generations.eyebrow": "Generations",
+    "dossier.generations.title": "Representative players and current status",
+    "dossier.generations.players": "{count} representative players",
+    "dossier.generations.empty": "No stable public player list is available for this generation yet.",
+    "dossier.program.coach": "Head coach: {value}",
+    "dossier.program.ageGroups": "Age groups: {value}",
+    "dossier.player.asOf": "As of {date}",
+    "dossier.player.source": "Status source",
+    "dossier.player.profile": "Site player profile",
+    "dossier.boundaries.eyebrow": "Boundaries",
+    "dossier.boundaries.title": "Scope and caveats",
+    "dossier.questions.eyebrow": "Follow-up",
+    "dossier.questions.title": "Open questions",
+    "dossier.sources.eyebrow": "Sources",
+    "dossier.sources.title": "Sources and check date",
+    "dossier.sources.primary": "Primary source",
+    "dossier.sources.supporting": "Supporting source",
+    "dossier.sources.checked": "Dossier checked through {date}",
     "tournamentDetail.breadcrumb.list": "Tournaments",
     "tournamentDetail.breadcrumb.detail": "Tournament detail",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -903,7 +975,8 @@ const PAGE_METADATA = {
     description: "page.tournament-detail.description"
   },
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
-  pathways: { title: "page.pathways.title", description: "page.pathways.description" }
+  pathways: { title: "page.pathways.title", description: "page.pathways.description" },
+  "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" }
 };
 
 const COUNTRY_LABELS = {
@@ -1157,6 +1230,16 @@ const SOURCE_LAYER_CONFIDENCE_LABELS = {
   low: { zh: "低", en: "Low" }
 };
 
+const ACADEMY_CURRENT_STATUS_LABELS = {
+  "active-first-team": { zh: "一线队现役", en: "Active first-team player" },
+  "active-reserve": { zh: "预备队 / B队现役", en: "Active reserve / B-team player" },
+  "active-professional": { zh: "职业球员", en: "Active professional" },
+  "retired-coach": { zh: "退役后执教", en: "Retired, now coaching" },
+  "youth-development": { zh: "青训上升期", en: "Youth development pathway" },
+  "needs-review": { zh: "当前去向待复核", en: "Current destination needs review" },
+  "active-development-program": { zh: "在训梯队", en: "Active development programme" }
+};
+
 const YOUTH_COMPETITION_TYPE_LABELS = {
   "league-pyramid": { zh: "联赛金字塔", en: "League pyramid" },
   "league-final": { zh: "联赛总决赛", en: "League final" },
@@ -1269,6 +1352,11 @@ async function boot() {
 
     if (page === "player-detail") {
       renderPlayerDetailPage();
+      return;
+    }
+
+    if (page === "dossier-detail") {
+      renderDossierDetailPage();
       return;
     }
 
@@ -2274,6 +2362,117 @@ function getProjectById(id) {
 
 function getDossierById(id) {
   return state.overview?.dossiers?.find((dossier) => dossier.id === id) ?? null;
+}
+
+function renderDossierPlayer(player) {
+  const status = player.current_status;
+  const nameMarkup = player.player_id
+    ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(player.local_name)}</a>`
+    : escapeHtml(player.local_name);
+  return `
+    <article class="academy-player-card">
+      <div class="academy-player-heading">
+        <div>
+          <h4>${nameMarkup}</h4>
+          <p class="small-note">${escapeHtml(player.name)} · ${escapeHtml(localizeText(player.role))}</p>
+        </div>
+        <span class="chip academy-status-${escapeHtml(status.category)}">${escapeHtml(getLabel(ACADEMY_CURRENT_STATUS_LABELS, status.category, status.category))}</span>
+      </div>
+      <p><strong>${escapeHtml(formatClubName(status.organization))}</strong></p>
+      <p>${escapeHtml(localizeText(player.note))}</p>
+      <div class="academy-player-footer">
+        <span class="small-note">${escapeHtml(t("dossier.player.asOf", { date: formatDate(status.as_of) }))} · ${escapeHtml(getLabel(SOURCE_LAYER_CONFIDENCE_LABELS, status.confidence, status.confidence))}</span>
+        <a class="inline-link" href="${escapeHtml(status.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))}</a>
+        ${player.player_id ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(t("dossier.player.profile"))}</a>` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderDossierGeneration(view) {
+  const players = view.players ?? [];
+  const programme = view.program_status;
+  return `
+    <article class="academy-generation-card">
+      <div class="section-head compact-head">
+        <div>
+          <div class="chip-row">
+            <span class="chip">${escapeHtml(view.confidence ?? "-")}</span>
+            <span class="chip">${escapeHtml(t("dossier.generations.players", { count: players.length }))}</span>
+          </div>
+          <h3>${escapeHtml(localizeText(view.name))}</h3>
+        </div>
+      </div>
+      <p>${escapeHtml(localizeText(view.description))}</p>
+      ${
+        programme
+          ? `<div class="academy-program-card">
+              <span class="chip">${escapeHtml(getLabel(ACADEMY_CURRENT_STATUS_LABELS, programme.category, programme.category))}</span>
+              <h4>${escapeHtml(formatClubName(programme.organization))}</h4>
+              <p>${escapeHtml(t("dossier.program.coach", { value: programme.head_coach }))}</p>
+              <p>${escapeHtml(t("dossier.program.ageGroups", { value: programme.age_groups.join(" / ") }))}</p>
+              <a class="inline-link" href="${escapeHtml(programme.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(programme.source_label)}</a>
+            </div>`
+          : ""
+      }
+      ${players.length > 0 ? `<div class="academy-player-grid">${players.map(renderDossierPlayer).join("")}</div>` : `<div class="empty-inline">${escapeHtml(t("dossier.generations.empty"))}</div>`}
+    </article>
+  `;
+}
+
+function renderDossierDetailPage() {
+  const params = new URLSearchParams(window.location.search);
+  const dossier = getDossierById(params.get("id"));
+  const hero = document.querySelector("#dossierHero");
+  const body = document.querySelector("#dossierBody");
+  if (!dossier || !hero || !body) {
+    if (hero) {
+      hero.innerHTML = `<div class="hero-copy"><p class="eyebrow">${escapeHtml(t("dossier.hero.eyebrow"))}</p><h1>${escapeHtml(t("dossier.notFound.title"))}</h1><p class="hero-text">${escapeHtml(t("dossier.notFound.text"))}</p></div>`;
+    }
+    return;
+  }
+
+  const stats = dossier.headline_stats ?? {};
+  document.title = `${dossier.name} | ${t("dossier.breadcrumb.detail")}`;
+  hero.innerHTML = `
+    <div class="hero-copy">
+      <p class="eyebrow">${escapeHtml(t("dossier.hero.eyebrow"))}</p>
+      <h1>${escapeHtml(dossier.name)}</h1>
+      <p class="hero-text">${escapeHtml(localizeText(dossier.summary))}</p>
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(formatStatus(dossier.status))}</span>
+        <span class="chip">${escapeHtml(t("dossier.hero.lastReviewed", { date: formatDate(dossier.last_reviewed) }))}</span>
+      </div>
+    </div>
+    <aside class="hero-spotlight">
+      <p class="eyebrow">${escapeHtml(t("dossier.stats.players"))}</p>
+      <h2>${escapeHtml(String(stats.tracked_players ?? 0))}</h2>
+      <p>${escapeHtml(localizeText(stats.official_output_claim))}</p>
+    </aside>
+  `;
+
+  document.querySelector("#dossierStats").innerHTML = [
+    [t("dossier.stats.founded"), stats.founded ?? "-"],
+    [t("dossier.stats.generations"), String(stats.tracked_generations ?? 0)],
+    [t("dossier.stats.players"), String(stats.tracked_players ?? 0)],
+    [t("dossier.stats.currentFocus"), localizeText(stats.current_training_focus)]
+  ].map(([label, value]) => `<article class="stat-card"><p class="stat-label">${escapeHtml(label)}</p><p class="stat-value stat-value-small">${escapeHtml(value)}</p></article>`).join("");
+
+  document.querySelector("#dossierModel").innerHTML = [
+    `<article class="story-card"><h3>${escapeHtml(t("dossier.model.title"))}</h3>${(dossier.role_model ?? []).map((line) => `<p>${escapeHtml(localizeText(line))}</p>`).join("")}</article>`,
+    `<article class="story-card"><h3>${escapeHtml(t("dossier.boundaries.title"))}</h3><p>${escapeHtml(localizeText(dossier.scope_note))}</p></article>`
+  ].join("");
+  document.querySelector("#dossierTimeline").innerHTML = (dossier.timeline ?? []).map((item) => `<article class="timeline-item"><p class="timeline-label">${escapeHtml(item.date)}</p><h3>${escapeHtml(localizeText(item.label))}</h3><p>${escapeHtml(localizeText(item.detail))}</p></article>`).join("");
+  document.querySelector("#dossierGenerations").innerHTML = (dossier.roster_views ?? []).map(renderDossierGeneration).join("");
+  document.querySelector("#dossierBoundaries").innerHTML = `<ul class="mini-bullet-list">${(dossier.controversies ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
+  document.querySelector("#dossierQuestions").innerHTML = `<ul class="mini-bullet-list">${(dossier.open_questions ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
+
+  const sources = [
+    { ...dossier.source_document, kind: t("dossier.sources.primary") },
+    ...(dossier.supporting_documents ?? []).map((source) => ({ ...source, kind: t("dossier.sources.supporting") }))
+  ];
+  document.querySelector("#dossierSources").innerHTML = sources.map((source) => `<article class="stack-card"><div class="chip-row"><span class="chip">${escapeHtml(source.kind)}</span></div><h3>${escapeHtml(source.title)}</h3>${source.summary ? `<p>${escapeHtml(localizeText(source.summary))}</p>` : ""}<a class="inline-link" href="${escapeHtml(source.path)}" target="_blank" rel="noreferrer">${escapeHtml(source.path)}</a></article>`).join("");
+  body.hidden = false;
 }
 
 function getPlayersByTag(tag) {

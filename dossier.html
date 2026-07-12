@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>青训专题 | 青训球员追踪站</title>
+    <meta name="description" content="查看青训机构沿革、代表球员代际、当前状态和来源边界。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-genbao-base" />
+  </head>
+  <body data-page="dossier-detail">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">日韩青训体系</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <p class="breadcrumb">
+          <a href="./index.html" data-i18n="dossier.breadcrumb.home">首页</a>
+          <span>/</span>
+          <span data-i18n="dossier.breadcrumb.detail">青训专题</span>
+        </p>
+
+        <section id="dossierHero" class="page-hero hero-tight"></section>
+        <div id="dossierBody" hidden>
+          <section id="dossierStats" class="detail-stats"></section>
+
+          <section class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dossier.model.eyebrow">Development Model</p>
+                <h2 data-i18n="dossier.model.title">培养模式与专题口径</h2>
+              </div>
+            </div>
+            <div id="dossierModel" class="story-grid"></div>
+          </section>
+
+          <section class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dossier.timeline.eyebrow">Timeline</p>
+                <h2 data-i18n="dossier.timeline.title">基地沿革</h2>
+              </div>
+            </div>
+            <div id="dossierTimeline" class="timeline-list"></div>
+          </section>
+
+          <section class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dossier.generations.eyebrow">Generations</p>
+                <h2 data-i18n="dossier.generations.title">代表球员与当前状态</h2>
+              </div>
+            </div>
+            <div id="dossierGenerations" class="academy-generation-list"></div>
+          </section>
+
+          <section class="dashboard-grid">
+            <article class="content-panel">
+              <div class="section-head"><div><p class="eyebrow" data-i18n="dossier.boundaries.eyebrow">Boundaries</p><h2 data-i18n="dossier.boundaries.title">口径与争议</h2></div></div>
+              <div id="dossierBoundaries"></div>
+            </article>
+            <article class="content-panel">
+              <div class="section-head"><div><p class="eyebrow" data-i18n="dossier.questions.eyebrow">Follow-up</p><h2 data-i18n="dossier.questions.title">待核问题</h2></div></div>
+              <div id="dossierQuestions"></div>
+            </article>
+          </section>
+
+          <section class="content-panel">
+            <div class="section-head"><div><p class="eyebrow" data-i18n="dossier.sources.eyebrow">Sources</p><h2 data-i18n="dossier.sources.title">来源与核查日期</h2></div></div>
+            <div id="dossierSources" class="story-grid"></div>
+          </section>
+        </div>
+      </main>
+
+      <footer class="site-footer"><p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p></footer>
+    </div>
+    <script type="module" src="./assets/app.js?v=20260712-genbao-base"></script>
+  </body>
+</html>
