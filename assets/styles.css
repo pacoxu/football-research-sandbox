@@ -68,6 +68,7 @@ a {
 
 main {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: 22px;
 }
 
@@ -1266,6 +1267,76 @@ tbody tr:last-child td {
   margin-top: 18px;
 }
 
+.market-history-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 20px;
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
+#playerMarketValueHistorySection {
+  min-width: 0;
+}
+
+.market-history-chart-wrap,
+.market-history-table-wrap {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.market-history-chart {
+  display: block;
+  width: 100%;
+  min-width: 520px;
+  max-height: 320px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.market-history-axis {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+}
+
+.market-history-line {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.market-history-point {
+  fill: var(--paper);
+  stroke: var(--accent-alt);
+  stroke-width: 3;
+}
+
+.market-history-table {
+  width: 100%;
+  min-width: 320px;
+  margin-top: 14px;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.market-history-table th,
+.market-history-table td {
+  padding: 9px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+}
+
+.market-history-table th:last-child,
+.market-history-table td:last-child {
+  text-align: right;
+}
+
 .site-footer {
   padding-top: 4px;
   text-align: right;
@@ -1535,6 +1606,10 @@ tbody tr:last-child td {
 
   .hero-copy h1 {
     font-size: 1.82rem;
+  }
+
+  .market-history-chart {
+    min-width: 0;
   }
 
   .overview-bar {

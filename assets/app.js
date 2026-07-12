@@ -259,6 +259,14 @@ const UI_COPY = {
     "playerDetail.marketValue.withLink": "Transfermarkt 外链已关联",
     "playerDetail.marketValue.withoutLink": "暂无稳定身价来源",
     "playerDetail.marketValue.note": "身价参考 Transfermarkt；球员页区分当前值与历史峰值，列表页同步提供排行。",
+    "playerDetail.marketHistory.eyebrow": "Market Value History",
+    "playerDetail.marketHistory.title": "身价历史",
+    "playerDetail.marketHistory.source": "来源：{provider}",
+    "playerDetail.marketHistory.updated": "最后检查：{date}",
+    "playerDetail.marketHistory.empty": "已完成公开来源检索，但暂未找到可展示的身价历史。",
+    "playerDetail.marketHistory.date": "日期",
+    "playerDetail.marketHistory.value": "估值",
+    "playerDetail.marketHistory.providerNote": "不同平台采用不同估值方法；替代来源不会进入 Transfermarkt 排行。",
     "playerDetail.hero.summary": "{country} · {birthYear} 年生 · {position}。现属 {club}。",
     "playerDetail.actions.links": "查看外部资料",
     "playerDetail.actions.competition": "查看赛事记录",
@@ -614,6 +622,14 @@ const UI_COPY = {
     "playerDetail.marketValue.withLink": "Transfermarkt linked",
     "playerDetail.marketValue.withoutLink": "No stable market value source yet",
     "playerDetail.marketValue.note": "Values follow Transfermarkt. The player page separates current and peak value, and the list page shows rankings for both.",
+    "playerDetail.marketHistory.eyebrow": "Market Value History",
+    "playerDetail.marketHistory.title": "Market value history",
+    "playerDetail.marketHistory.source": "Source: {provider}",
+    "playerDetail.marketHistory.updated": "Last checked: {date}",
+    "playerDetail.marketHistory.empty": "Public sources were checked, but no market-value history is available yet.",
+    "playerDetail.marketHistory.date": "Date",
+    "playerDetail.marketHistory.value": "Value",
+    "playerDetail.marketHistory.providerNote": "Providers use different valuation methods; alternatives are excluded from Transfermarkt rankings.",
     "playerDetail.hero.summary": "{country} · born {birthYear} · {position}. Currently with {club}.",
     "playerDetail.actions.links": "View external sources",
     "playerDetail.actions.competition": "View competition log",
@@ -3711,6 +3727,7 @@ function renderPlayerDetailPage() {
   const hero = document.querySelector("#playerDetailHero");
   const body = document.querySelector("#playerDetailBody");
   const stats = document.querySelector("#playerDetailStats");
+  const marketValueHistory = document.querySelector("#playerMarketValueHistory");
   const pathwayTimeline = document.querySelector("#playerPathwayTimeline");
   const participationList = document.querySelector("#playerParticipationList");
   const recentContributions = document.querySelector("#playerRecentContributions");
@@ -3852,6 +3869,8 @@ function renderPlayerDetailPage() {
     renderDetailInfoCard(t("playerDetail.affiliation.eyebrow"), t("playerDetail.affiliation.title"), affiliationItems),
     renderDetailInfoCard(t("playerDetail.marketValue.eyebrow"), t("playerDetail.marketValue.title"), marketValueItems)
   ].join("");
+
+  marketValueHistory.innerHTML = renderPlayerMarketValueHistory(player);
 
   pathwayTimeline.innerHTML =
     (player.training_pathway ?? []).length > 0
@@ -4167,6 +4186,108 @@ function hasTransfermarktPlayerLink(player) {
 
 function getPlayerMarketValueRecord(player) {
   return player.market_value && typeof player.market_value === "object" ? player.market_value : null;
+}
+
+function getPlayerMarketValueDisplaySeries(player) {
+  const record = getPlayerMarketValueRecord(player);
+  if (Array.isArray(record?.history) && record.history.length > 0) {
+    return {
+      provider: record.source?.provider ?? "Transfermarkt",
+      sourceUrl: record.source?.market_value_url ?? record.source?.profile_url ?? "",
+      checkedAt: record.checked_at,
+      history: record.history,
+      isAlternative: false
+    };
+  }
+
+  const alternative = (record?.alternatives ?? []).find(
+    (item) => Array.isArray(item?.history) && item.history.length > 0
+  );
+  if (!alternative) {
+    return null;
+  }
+
+  return {
+    provider: alternative.source?.provider ?? "Alternative provider",
+    sourceUrl: alternative.source?.profile_url ?? "",
+    checkedAt: alternative.checked_at,
+    history: alternative.history,
+    isAlternative: true
+  };
+}
+
+function buildMarketValueChartPoints(history, width, height, padding) {
+  const timestamps = history.map((point) => Date.parse(point.date));
+  const values = history.map((point) => point.eur);
+  const minTime = Math.min(...timestamps);
+  const maxTime = Math.max(...timestamps);
+  const maxValue = Math.max(...values);
+  const chartWidth = width - padding * 2;
+  const chartHeight = height - padding * 2;
+
+  return history.map((point, index) => {
+    const x =
+      minTime === maxTime
+        ? width / 2
+        : padding + ((timestamps[index] - minTime) / (maxTime - minTime)) * chartWidth;
+    const y = height - padding - (point.eur / maxValue) * chartHeight;
+    return { ...point, x, y };
+  });
+}
+
+function renderPlayerMarketValueHistory(player) {
+  const series = getPlayerMarketValueDisplaySeries(player);
+  if (!series) {
+    return `<div class="empty-inline">${escapeHtml(t("playerDetail.marketHistory.empty"))}</div>`;
+  }
+
+  const width = 720;
+  const height = 260;
+  const padding = 34;
+  const points = buildMarketValueChartPoints(series.history, width, height, padding);
+  const linePoints = points.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+  const providerLabel = t("playerDetail.marketHistory.source", { provider: series.provider });
+  const providerMarkup = series.sourceUrl
+    ? `<a class="inline-link" href="${escapeHtml(series.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(providerLabel)}</a>`
+    : `<span>${escapeHtml(providerLabel)}</span>`;
+
+  return `
+    <div class="market-history-meta">
+      ${providerMarkup}
+      <span>${escapeHtml(t("playerDetail.marketHistory.updated", { date: formatDate(series.checkedAt) }))}</span>
+    </div>
+    <div class="market-history-chart-wrap">
+      <svg class="market-history-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(t("playerDetail.marketHistory.title"))}">
+        <line class="market-history-axis" x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}"></line>
+        <line class="market-history-axis" x1="${padding}" y1="${padding}" x2="${padding}" y2="${height - padding}"></line>
+        ${points.length > 1 ? `<polyline class="market-history-line" points="${linePoints}"></polyline>` : ""}
+        ${points
+          .map(
+            (point) => `
+              <g>
+                <circle class="market-history-point" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="5"></circle>
+                <title>${escapeHtml(`${formatDate(point.date)} · ${formatMarketValuePoint(point)}`)}</title>
+              </g>
+            `
+          )
+          .join("")}
+      </svg>
+    </div>
+    <div class="market-history-table-wrap">
+      <table class="market-history-table">
+        <thead><tr><th>${escapeHtml(t("playerDetail.marketHistory.date"))}</th><th>${escapeHtml(t("playerDetail.marketHistory.value"))}</th></tr></thead>
+        <tbody>
+          ${[...series.history]
+            .reverse()
+            .map(
+              (point) => `<tr><td>${escapeHtml(formatDate(point.date))}</td><td>${escapeHtml(formatMarketValuePoint(point))}</td></tr>`
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+    ${series.isAlternative ? `<p class="small-note">${escapeHtml(t("playerDetail.marketHistory.providerNote"))}</p>` : ""}
+  `;
 }
 
 function formatMarketValueAmount(value) {
