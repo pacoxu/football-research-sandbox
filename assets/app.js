@@ -158,15 +158,15 @@ const UI_COPY = {
     "home.overseasCard.league": "赛事或联赛：{value}",
     "players.hero.eyebrow": "Player Directory",
     "players.hero.title": "球员列表",
-    "players.hero.text": "这里是总入口。支持按国籍、年龄段、当前联赛或体系、专题标签过滤，并在卡片视图和列表视图之间切换，也会同步显示 Transfermarkt 当前身价与历史峰值排行。",
+    "players.hero.text": "这里是当前球员库总入口。支持按国籍、年龄段、当前联赛或体系、专题标签过滤，并展示当前球员库身价排行；下方另列中日韩留洋历史代表样本峰值榜。",
     "players.view.eyebrow": "View Modes",
     "players.view.aria": "视图切换",
     "players.view.cards": "卡片",
     "players.view.table": "列表",
     "players.rankings.eyebrow": "Transfermarkt",
     "players.rankings.currentTitle": "当前身价排行",
-    "players.rankings.peakTitle": "历史峰值排行",
-    "players.rankings.note": "仅统计已关联 Transfermarkt 个人页且已有估值的球员；排行会跟随当前筛选更新。",
+    "players.rankings.peakTitle": "当前球员库峰值排行",
+    "players.rankings.note": "仅统计本页当前球员库中已关联 Transfermarkt 个人页且已有估值的球员；排行会跟随当前筛选更新，不代表中日韩留洋历史全榜。",
     "players.rankings.coverageCurrent": "当前筛选已补当前身价 {count} / {total} 人",
     "players.rankings.coveragePeak": "当前筛选已补历史峰值 {count} / {total} 人",
     "players.rankings.currentEmpty": "当前筛选下还没有可用的当前身价数据。",
@@ -174,6 +174,13 @@ const UI_COPY = {
     "players.rankings.currentMeta": "峰值 {value} · {date}",
     "players.rankings.peakMeta": "当前 {value} · 达峰于 {date}",
     "players.rankings.peakMetaNoCurrent": "达峰于 {date}",
+    "players.rankings.historyTitle": "中日韩留洋历史峰值排行",
+    "players.rankings.historyCoverage": "已建档历史代表样本 {count} 人 · 独立于上方球员筛选",
+    "players.rankings.historyMeta": "{club} · {date} · {age} 岁",
+    "players.rankings.historyCurrent": "当前 {value}",
+    "players.rankings.historyRetired": "已退役",
+    "players.rankings.historyNote": "口径：仅统计留洋史已建档且有 Transfermarkt 历史估值的中日韩代表样本，不是亚洲球员全量榜。金额为当时名义欧元估值，不做通胀或年代校正；早期球员的历史曲线可能覆盖不完整。",
+    "players.rankings.historyEmpty": "暂没有可展示的留洋历史峰值数据。",
     "players.filters.search": "搜索",
     "players.filters.searchPlaceholder": "中文名、原文名、英文名、俱乐部、标签",
     "players.filters.country": "国籍",
@@ -646,15 +653,15 @@ const UI_COPY = {
     "home.overseasCard.league": "League: {value}",
     "players.hero.eyebrow": "Player Directory",
     "players.hero.title": "Player directory",
-    "players.hero.text": "This is the main entry point. Filter by nationality, age band, current league system, and topical tags, switch between card and table view, and keep a live view of current and peak Transfermarkt rankings.",
+    "players.hero.text": "This is the current player-directory entry point. Filter by nationality, age band, current league system, and topical tags, and compare directory market values; a separate China-Japan-Korea overseas-history peak ranking appears below.",
     "players.view.eyebrow": "View Modes",
     "players.view.aria": "View switch",
     "players.view.cards": "Cards",
     "players.view.table": "Table",
     "players.rankings.eyebrow": "Transfermarkt",
     "players.rankings.currentTitle": "Current market value ranking",
-    "players.rankings.peakTitle": "Peak market value ranking",
-    "players.rankings.note": "Only players with a linked Transfermarkt player page and a listed valuation are counted. Rankings follow the current filters.",
+    "players.rankings.peakTitle": "Current directory peak ranking",
+    "players.rankings.note": "Only players in this current directory with a linked Transfermarkt player page and a listed valuation are counted. Rankings follow the current filters and are not an all-time overseas ranking.",
     "players.rankings.coverageCurrent": "{count} / {total} filtered players with a current market value",
     "players.rankings.coveragePeak": "{count} / {total} filtered players with a peak market value",
     "players.rankings.currentEmpty": "No current market value is available in this filter yet.",
@@ -662,6 +669,13 @@ const UI_COPY = {
     "players.rankings.currentMeta": "Peak {value} · {date}",
     "players.rankings.peakMeta": "Current {value} · peaked on {date}",
     "players.rankings.peakMetaNoCurrent": "Peaked on {date}",
+    "players.rankings.historyTitle": "China-Japan-Korea overseas all-time peaks",
+    "players.rankings.historyCoverage": "{count} archived representative samples · independent of the filters above",
+    "players.rankings.historyMeta": "{club} · {date} · age {age}",
+    "players.rankings.historyCurrent": "Current {value}",
+    "players.rankings.historyRetired": "Retired",
+    "players.rankings.historyNote": "Scope: representative China, Japan, and Korea overseas-history records with a verified Transfermarkt valuation history, not a complete Asian-player table. Values are nominal euros with no inflation or era adjustment; early-career histories may be incomplete.",
+    "players.rankings.historyEmpty": "No overseas-history peak data is available yet.",
     "players.filters.search": "Search",
     "players.filters.searchPlaceholder": "Chinese name, native name, English name, club, tag",
     "players.filters.country": "Country",
@@ -1296,6 +1310,7 @@ const OVERSEAS_TEAM_LEVEL_LABELS = {
 };
 
 const OVERSEAS_TEAM_LEVEL_ORDER = ["first-team", "u21-u23", "u19-youth", "unknown"];
+const OVERSEAS_TEAM_LEVEL_SUMMARY_ORDER = ["first-team", "u21-u23", "u19-youth"];
 
 const AGE_BAND_LABELS = {
   u17: { zh: "U17", en: "U17" },
@@ -3435,6 +3450,7 @@ function getOverseasCountryMap() {
     map.set(entry.country, {
       country: entry.country,
       currentCount: 0,
+      bigFiveFirstTeamCount: 0,
       teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
       verifiedRecords: entry.verified_records,
       notes: entry.notes,
@@ -3448,6 +3464,7 @@ function getOverseasCountryMap() {
       map.set(item.country, {
         country: item.country,
         currentCount: 0,
+        bigFiveFirstTeamCount: 0,
         teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
         verifiedRecords: 0,
         notes: "",
@@ -3457,6 +3474,9 @@ function getOverseasCountryMap() {
     }
     map.get(item.country).currentCount += 1;
     map.get(item.country).teamLevelCounts[item.overseasTeamLevel] += 1;
+    if (item.overseasBucket === "big-five" && item.overseasTeamLevel === "first-team") {
+      map.get(item.country).bigFiveFirstTeamCount += 1;
+    }
   }
 
   return [...map.values()].sort((left, right) =>
@@ -4184,6 +4204,65 @@ function renderPlayerMarketValueRankingPanel(title, coverageLabel, players, amou
   `;
 }
 
+function renderHistoricalMarketValueRankingPanel() {
+  const ranking = state.overview?.overseas_history?.market_value_peak_ranking;
+  const entries = [...(ranking?.entries ?? [])].sort((left, right) => {
+    if (right.peak.eur !== left.peak.eur) {
+      return right.peak.eur - left.peak.eur;
+    }
+    return left.name.localeCompare(right.name, getSortLocale());
+  });
+
+  return `
+    <div class="section-head compact-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(t("players.rankings.eyebrow"))}</p>
+        <h2>${escapeHtml(t("players.rankings.historyTitle"))}</h2>
+      </div>
+    </div>
+    <p class="section-note">${escapeHtml(t("players.rankings.historyCoverage", { count: entries.length }))}</p>
+    ${
+      entries.length > 0
+        ? `<div class="market-ranking-list market-ranking-history-list">
+            ${entries
+              .map((entry, index) => {
+                const previousEntry = entries[index - 1];
+                const rank = previousEntry?.peak.eur === entry.peak.eur
+                  ? entries.findIndex((candidate) => candidate.peak.eur === entry.peak.eur) + 1
+                  : index + 1;
+                const primaryName = state.language === "en" ? entry.name : entry.local_name;
+                const secondaryName = state.language === "en" ? entry.local_name : entry.name;
+                const status = entry.retired
+                  ? t("players.rankings.historyRetired")
+                  : t("players.rankings.historyCurrent", { value: formatMarketValuePoint(entry.current) });
+
+                return `
+                  <article class="market-ranking-row">
+                    <span class="market-ranking-rank">${String(rank).padStart(2, "0")}</span>
+                    <div class="market-ranking-body">
+                      <a class="market-ranking-link" href="${escapeHtml(entry.transfermarkt.market_value_url)}" target="_blank" rel="noreferrer">${escapeHtml(primaryName)}</a>
+                      <p class="small-note">${escapeHtml(secondaryName)} · ${escapeHtml(formatCountryName(entry.country))}</p>
+                      <p class="small-note">${escapeHtml(t("players.rankings.historyMeta", {
+                        club: formatClubName(entry.peak.club),
+                        date: formatDate(entry.peak.date),
+                        age: entry.peak.age
+                      }))}</p>
+                    </div>
+                    <div class="market-ranking-value">
+                      <strong>${escapeHtml(formatMarketValuePoint(entry.peak))}</strong>
+                      <span class="small-note">${escapeHtml(status)}</span>
+                    </div>
+                  </article>
+                `;
+              })
+              .join("")}
+          </div>`
+        : `<div class="empty-inline">${escapeHtml(t("players.rankings.historyEmpty"))}</div>`
+    }
+    <p class="small-note market-ranking-note">${escapeHtml(t("players.rankings.historyNote"))}</p>
+  `;
+}
+
 function renderPlayersPage() {
   const cardGrid = document.querySelector("#playerCardGrid");
   const tableWrap = document.querySelector("#playerTableWrap");
@@ -4194,6 +4273,7 @@ function renderPlayersPage() {
   const tableButton = document.querySelector("#viewTableButton");
   const currentRankingPanel = document.querySelector("#playerMarketValueCurrent");
   const peakRankingPanel = document.querySelector("#playerMarketValuePeak");
+  const historicalRankingPanel = document.querySelector("#playerMarketValueHistorical");
 
   const players = getFilteredPlayers();
   const allCurrentMarketValuePlayers = players
@@ -4256,6 +4336,9 @@ function renderPlayersPage() {
       buildPeakMarketValueRankingMeta,
       "players.rankings.peakEmpty"
     );
+  }
+  if (historicalRankingPanel) {
+    historicalRankingPanel.innerHTML = renderHistoricalMarketValueRankingPanel();
   }
 
   cardGrid.innerHTML = players.map((player) => renderPlayerCard(player, false)).join("");
@@ -5963,7 +6046,11 @@ function renderOverseasPage() {
           <p class="small-note">${escapeHtml(t("overseas.comparison.current"))}</p>
           <p class="small-note">${escapeHtml(t("overseas.comparison.history", { count: entry.verifiedRecords }))}</p>
           <div class="stat-breakdown">
-            ${OVERSEAS_TEAM_LEVEL_ORDER.map(
+            <p class="stat-breakdown-item">
+              <span>${escapeHtml(formatBucket("big-five"))}</span>
+              <strong>${entry.bigFiveFirstTeamCount}</strong>
+            </p>
+            ${OVERSEAS_TEAM_LEVEL_SUMMARY_ORDER.map(
               (teamLevel) => `
                 <p class="stat-breakdown-item">
                   <span>${escapeHtml(formatOverseasTeamLevel(teamLevel))}</span>

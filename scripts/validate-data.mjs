@@ -834,6 +834,47 @@ function validateMarketValueSeries(record, playerId, label = "market_value") {
   }
 }
 
+function validateOverseasMarketValuePeakRanking(ranking, overseasHistory) {
+  assert(typeof ranking === "object" && ranking !== null, "Missing overseas market-value peak ranking");
+  assert(isIsoDate(ranking.checked_at), "Invalid overseas market-value peak ranking checked_at");
+  assert(ranking.provider === "Transfermarkt", "Invalid overseas market-value peak ranking provider");
+  assert(typeof ranking.scope_note === "string" && ranking.scope_note.length > 0, "Missing overseas market-value peak ranking scope note");
+  assert(Array.isArray(ranking.entries) && ranking.entries.length > 0, "Missing overseas market-value peak ranking entries");
+
+  const featuredRecordIds = new Set(
+    overseasHistory.countries.flatMap((country) =>
+      (country.featured_records ?? []).map((record) => record.id)
+    )
+  );
+  const entryIds = new Set();
+  let previousPeak = Number.POSITIVE_INFINITY;
+
+  for (const entry of ranking.entries) {
+    assert(entry.id && entry.name && entry.local_name && entry.country, "Invalid overseas market-value peak ranking identity");
+    assert(!entryIds.has(entry.id), `Duplicate overseas market-value peak ranking id: ${entry.id}`);
+    entryIds.add(entry.id);
+    assert(
+      featuredRecordIds.has(entry.overseas_history_record_id),
+      `Unknown overseas history record on market-value peak ranking: ${entry.overseas_history_record_id}`
+    );
+    validateMarketValuePoint(entry.peak, entry.id, "overseas_history_peak");
+    assert(Number.isInteger(entry.peak.age) && entry.peak.age > 0, `Invalid overseas history peak age on ${entry.id}`);
+    assert(typeof entry.peak.club === "string" && entry.peak.club.length > 0, `Missing overseas history peak club on ${entry.id}`);
+    assert(entry.peak.eur <= previousPeak, `Unsorted overseas market-value peak ranking at ${entry.id}`);
+    previousPeak = entry.peak.eur;
+
+    if (entry.retired === true) {
+      assert(entry.current === undefined, `Retired overseas history entry must not include current value: ${entry.id}`);
+    } else {
+      validateMarketValuePoint(entry.current, entry.id, "overseas_history_current");
+    }
+    assert(/^\d+$/.test(entry.transfermarkt?.player_id ?? ""), `Invalid Transfermarkt player id on ${entry.id}`);
+    for (const field of ["profile_url", "market_value_url", "api_url"]) {
+      assert(/^https:\/\//.test(entry.transfermarkt?.[field] ?? ""), `Invalid Transfermarkt ${field} on ${entry.id}`);
+    }
+  }
+}
+
 function validateOverseasRecord(record, countryName, allowedBuckets) {
   const requiredFields = [
     "id",
@@ -1490,6 +1531,10 @@ export async function validateData() {
       );
     }
   }
+  validateOverseasMarketValuePeakRanking(
+    dataset.overseasHistory.market_value_peak_ranking,
+    dataset.overseasHistory
+  );
 
   for (const dossier of dataset.dossiers) {
     assert(dossier.id && dossier.name, "Dossier must include id and name");
