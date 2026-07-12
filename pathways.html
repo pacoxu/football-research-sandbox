@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日韩青训体系 | 青训球员追踪站</title>
+    <meta name="description" content="理解日本学校足球与俱乐部 U18、韩国高中队与 K League 梯队的并行关系。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-youth-systems" />
+  </head>
+  <body data-page="pathways">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">日韩青训体系</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero hero-tight">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="pathways.hero.eyebrow">Youth Development Systems</p>
+            <h1 data-i18n="pathways.hero.title">日韩青训体系</h1>
+            <p class="hero-text" data-i18n="pathways.hero.text">区分学校队、俱乐部梯队、大学与职业桥梁，并把体系赛事连接到本站球员样本。</p>
+          </div>
+          <aside class="hero-spotlight">
+            <p class="eyebrow" data-i18n="pathways.meta.eyebrow">Coverage</p>
+            <h2 id="pathwaysCoverage">92 人基础覆盖</h2>
+            <p id="pathwaysCheckedAt" class="hero-side-note"></p>
+          </aside>
+        </section>
+
+        <section class="content-panel">
+          <div id="pathwaysCountryTabs" class="view-switch pathways-tabs" role="tablist" aria-label="国家切换" data-i18n-aria-label="pathways.tabs.aria">
+            <button class="switch-button" type="button" data-country="Japan" data-i18n="pathways.tabs.japan">日本</button>
+            <button class="switch-button" type="button" data-country="Korea Republic" data-i18n="pathways.tabs.korea">韩国</button>
+          </div>
+          <div id="pathwaysSystemIntro" class="system-intro"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="pathways.structure.eyebrow">Competition Map</p>
+              <h2 data-i18n="pathways.structure.title">联赛、杯赛与职业桥梁</h2>
+            </div>
+          </div>
+          <div id="pathwaysCompetitionGrid" class="system-card-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="pathways.sources.eyebrow">Official Sources</p>
+              <h2 data-i18n="pathways.sources.title">官方来源与核查时间</h2>
+            </div>
+          </div>
+          <div id="pathwaysSources" class="story-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+    <script type="module" src="./assets/app.js?v=20260712-youth-systems"></script>
+  </body>
+</html>

@@ -167,6 +167,42 @@ function applyPlayerMarketValues(players, snapshot = {}) {
   });
 }
 
+function applyTournamentStatistics(players, tournamentArchive = []) {
+  const statisticsByPlayer = new Map();
+
+  for (const tournament of tournamentArchive) {
+    const statistics = tournament.china_player_statistics;
+    if (!statistics?.players) {
+      continue;
+    }
+
+    for (const row of statistics.players) {
+      statisticsByPlayer.set(`${tournament.id}:${row.player_id}`, row);
+    }
+  }
+
+  return players.map((player) => ({
+    ...player,
+    tournament_participation: player.tournament_participation.map((entry) => {
+      const row = statisticsByPlayer.get(`${entry.competition_id}:${player.id}`);
+      if (!row) {
+        return entry;
+      }
+
+      return {
+        ...entry,
+        roster_status: row.roster_status,
+        appearances: row.appearances,
+        goals: row.goals,
+        minutes: row.minutes,
+        note:
+          row.note ??
+          `官方逐场 Match Summary 汇总：出场 ${row.appearances} 次、${row.minutes} 分钟、${row.goals} 球；分钟按 90 分钟制、HT=45、补时不另加。`
+      };
+    })
+  }));
+}
+
 export async function loadDataset() {
   const rawPlayers = await readJsonFiles(path.join(paths.raw, "players"));
   const playerNameOverrides = await readOptionalJson(
@@ -181,15 +217,18 @@ export async function loadDataset() {
     path.join(paths.raw, "club-name-overrides.json"),
     {}
   );
+  const tournamentArchive = await readJson(path.join(paths.raw, "tournament-archive.json"));
   const players = applyPlayerMarketValues(
-    applyPlayerNames(rawPlayers, playerNameOverrides),
+    applyPlayerNames(
+      applyTournamentStatistics(rawPlayers, tournamentArchive),
+      playerNameOverrides
+    ),
     playerMarketValues.players ?? {}
   );
   const tournaments = await readJson(path.join(paths.raw, "tournaments.json"));
   const projects = await readJson(path.join(paths.raw, "projects.json"));
   const overseasHistory = await readJson(path.join(paths.raw, "overseas-history.json"));
   const dossiers = await readJson(path.join(paths.raw, "dossiers.json"));
-  const tournamentArchive = await readJson(path.join(paths.raw, "tournament-archive.json"));
   const uefaYouthLeague = await readOptionalJson(
     path.join(paths.raw, "uefa-youth-league.json"),
     null
@@ -206,6 +245,10 @@ export async function loadDataset() {
     path.join(paths.raw, "asian-coaches.json"),
     null
   );
+  const youthDevelopmentSystems = await readOptionalJson(
+    path.join(paths.raw, "youth-development-systems.json"),
+    { schema_version: 1, checked_at: null, systems: [] }
+  );
 
   return {
     players,
@@ -218,6 +261,7 @@ export async function loadDataset() {
     chinaMenYouthCoaches,
     bigFiveAsianCoaches,
     asianCoaches,
+    youthDevelopmentSystems,
     clubNameOverrides
   };
 }

@@ -1,52 +1,72 @@
-# 日韩 U17/U23 青训路径来源层补充
+# 日韩青训体系与 U17/U23 球员来源层
 
-更新时间：2026-06-28
+更新时间：2026-07-12
 
-本文件对应 [issue #16](https://github.com/starryjog/football-research-sandbox/issues/16)，用于记录日本、韩国 U17/U23 球员的 `source_layers` 首批补充范围。目标不是一次性补完 92 名球员，而是先建立可校验字段和样本口径，后续按同一结构继续扩展。
+本文件对应 [issue #16](https://github.com/starryjog/football-research-sandbox/issues/16)。实现范围包括体系介绍、四队 92 人基础映射、16 人深度来源、页面展示、SQLite 和强校验；不扩展到完整赛季赛果、逐场统计、女子足球或 U15 以下体系。
 
-## 字段口径
+## 体系口径
 
-`source_layers` 是球员级可选字段。每条来源层至少说明：
+- 日本：JFA 第2种同时包含高校足球部和俱乐部青年队。二者都可进入都道府县联赛、九地区 Prince League、Premier EAST/WEST 与 Final 的全年金字塔，但高校总体育大会、全国高校足球选手权和 Club Youth U18 保持组织边界。
+- 日本大学阶段：地区大学联赛、总理大臣杯和全日本大学锦标赛构成比赛环境；特别指定制度允许符合条件的高中/大学注册球员在保留原注册的同时参与 J.League 俱乐部活动。
+- 韩国：普通高中足球部与 K League 俱乐部 U18 并存。`Gangwon FC U18 / Kangneung Jeil High School` 等身份拆成 `parent_organization` 与 `education_partner`，不创建重复球队或球员。
+- 韩国大学与职业：KFA U-League 单列；Gimcheon Sangmu 是成年职业军队球队，使用 `military-service-club`，不归入青训梯队。
+- 稳定制度写入 `stable_structure`；2026 队数、赛季分组等只写入 `annual_snapshot`。
 
-- `type`：来源层类型。
-- `label`、`url`、`checked_at`：来源标题、链接和核验日期。
-- `confidence`：`high`、`medium`、`low`。
-- `fields`：该来源支撑的字段。
-- `claim`：该来源能证明的事实边界。
+结构化体系数据位于 `data/raw/youth-development-systems.json`，竞赛 ID 可由 `training_pathway[].competition_context_ids` 引用。
 
-当前允许类型：
+## 来源层枚举
 
-| 类型 | 说明 |
+| 类型 | 使用边界 |
 | --- | --- |
-| `afc-registration` | AFC final registration 或 final squad PDF，优先支撑赛事报名、报名俱乐部、出生日期、位置。 |
+| `afc-registration` | AFC final registration / final squad，支撑赛事报名和报名组织。 |
 | `national-fa-profile` | JFA/KFA 队伍页、名单公告或国家队 profile。 |
-| `club-academy-profile` | 俱乐部、青训梯队、军队球队官网或俱乐部公告。 |
-| `school-profile` | 高中、大学、校园足球队资料；只有 AFC 报名字段时需标为 `medium` 并写明后续补个体页。 |
-| `league-registration` | J.League、K League 当前注册页或转会公告。 |
+| `school-profile` | 只用于高中或学校队官方来源。 |
+| `university-profile` | 只用于大学球队或个体名单。 |
+| `club-academy-profile` | 只用于 U18 等俱乐部青训梯队。 |
+| `club-profile` | 职业一线队、海外职业队或成年军队球队。 |
+| `league-registration` | J.League、K League 等官方注册页、球员页或联赛公告。 |
 
-## 首批样本
+组织来源不得复用 AFC 报名 PDF。每层必须记录 `label`、`url`、`checked_at`、`confidence`、`fields` 和边界清晰的 `claim`。
 
-| 队伍 | 球员 | 补充层 | 说明 |
-| --- | --- | --- | --- |
-| Japan U17 | Rei Ono | AFC、JFA、club-academy | 海外梯队报名归属：Bayer 04 Leverkusen U17。 |
-| Japan U17 | Aran Sato | AFC、JFA、club-academy | 海外梯队报名归属：RC Strasbourg Alsace。 |
-| Japan U17 | Takaya Sekine | AFC、JFA、school | 学校路径样本：Shizuoka Gakuen High School。 |
-| Japan U23 | Masataka Kobayashi | J.League、JFA、FC Tokyo、AFC | 职业体系 + 国家队节点，区分当前联赛注册和赛事报名。 |
-| Japan U23 | Kaito Tsuchiya | J.League、JFA、AFC | 职业体系 + U21 国家队节点。 |
-| Japan U23 | Kosei Ogura | AFC、school | 大学路径样本：Hosei University；个体大学页待补。 |
-| Korea Republic U17 | Seung Min Lee | AFC、KFA、school | 高中路径样本：Boin High School。 |
-| Korea Republic U17 | Geon Woo Park | AFC、KFA、club-academy | K League 俱乐部 U18 梯队样本：Ulsan HD FC U18。 |
-| Korea Republic U23 | Moon Hyunho | AFC、Gimcheon、Portimonense | Gimcheon Sangmu 与 Portimonense 来源分层保留，状态改为 `mixed-source` 待复核。 |
-| Korea Republic U23 | Bae Hyunseo | K League、AFC | 当前 K League 注册 + U23 赛事报名。 |
-| Korea Republic U23 | Lee Chanouk | AFC、Gimcheon | 军队球队报名归属样本：Gimcheon Sangmu；个体页待补。 |
-| Korea Republic U23 | Kim Taewon | J.League、AFC | 日本联赛注册的韩国 U23 留洋样本。 |
-| Korea Republic U23 | Kim Yonghak | Portimonense、AFC | 葡萄牙注册的韩国 U23 留洋样本。 |
+## 覆盖结果
 
-## 后续可做
+| 队伍 | 人数 | AFC 基础层 | 当前组织类型 |
+| --- | ---: | ---: | --- |
+| Japan U17 | 23 | 23/23 | 高中、俱乐部梯队、海外梯队 |
+| Japan U23 | 23 | 23/23 | 大学、职业一线队 |
+| Korea Republic U17 | 23 | 23/23 | 高中、俱乐部梯队；可含合作高中 |
+| Korea Republic U23 | 23 | 23/23 | 职业一线队、海外职业队、成年军队球队 |
 
-- 为所有 U17/U23 AFC 终报名球员补至少一条 `afc-registration`。
-- 给日韩 U17 的海外梯队样本补个体俱乐部 profile，而不是只依赖 AFC club 字段。
-- 给日本 U23 大学样本补大学队个体页或全队 roster 页。
-- 给韩国 U23 Gimcheon Sangmu 样本补 K League 或俱乐部个体页，降低 organization-level source 的 `low` confidence。
-- 对 Moon Hyunho 的 Gimcheon/Portimonense 双来源做同名、注册时点和 URL 误配复核。
-- 后续前端如需要展示来源层，可在 player detail 的来源区域聚合 `source_layers`，但当前数据已经进入 `data/site/players.json` 和 SQLite `player_source_layers`。
+合计 92 人全部具有一条 `afc-registration`、合法 `registration_club.organization_type`，并在当前路径节点保留同一组织类型。组织分布为：俱乐部梯队 32、高中 12、大学 8、职业一线队 36、海外梯队 2、成年军队球队 2。
+
+## 16 名深度样本
+
+既有 13 人：Rei Ono、Aran Sato、Takaya Sekine、Masataka Kobayashi、Kaito Tsuchiya、Kosei Ogura、Seung Min Lee、Geon Woo Park、Moon Hyunho、Bae Hyunseo、Lee Chanouk、Kim Taewon、Kim Yonghak。
+
+新增 3 人：
+
+- Ryosuke Furukawa：Iwata Higashi High School；AFC + JFA。
+- Tomoyasu Hamasaki：Meiji University；AFC + 明治大学体育会足球部个体页。
+- Jin Woo-jin：Kangneung Jeil High School / Gangwon FC U18；AFC + KFA + K League 官方赛事页。
+
+校验器固定检查这 16 人至少有一条不同于 AFC URL 的独立官方来源，并拒绝把 AFC PDF 包装成学校、大学或俱乐部来源。
+
+## 官方体系来源
+
+- [JFA 注册与赛事分类](https://www.jfa.jp/registration/player_team/tournaments.html)
+- [JFA Premier / Prince 结构](https://www.jfa.jp/match/takamado_jfa_u18_premier2026/about_premier.html)
+- [JFA 高校总体育大会](https://www.jfa.jp/match/koukou_soutai_2025/men/about.html)
+- [JFA 全国高校足球选手权](https://www.jfa.jp/match/alljapan_highschool_2025/about.html)
+- [JFA Club Youth U18](https://www.jfa.jp/match/club_youth_u18_2025/about.html)
+- [JFA 特别指定制度](https://www.jfa.jp/youth_development/honor_players/)
+- [K League Junior](https://www.kleague.com/youth/junior.do)
+- [K League Youth Championship](https://www.kleague.com/youth/youth.do)
+- [KFA U-League](https://www.kfa.or.kr/competition/?act=lg_u)
+- [KFA 2026 青少年竞赛规程](https://img.kfa.or.kr/data_rule/youth_rule_2026_01.pdf)
+
+## 维护限制
+
+- `competition_context_ids` 描述培养/竞赛环境，不自动表示球员在某一赛季实际报名或出场。
+- K League 页面会随赛季更新；球队数量、比赛日期和合作学校映射需按年度复核。
+- 体系页展示的是本站关联样本，不代表日本、韩国全部注册球员。
+- Moon Hyunho 的 Gimcheon Sangmu / Portimonense 路径冲突说明继续保留，不能用当前组织字段覆盖历史节点。

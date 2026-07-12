@@ -5,7 +5,7 @@
 ![validation](https://img.shields.io/badge/validation-npm%20run%20validate--data-informational)
 ![scope](https://img.shields.io/badge/scope-research%20sample-lightgrey)
 
-当前状态：研究样本库，最近维护日期 `2026-07-11`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
+当前状态：研究样本库，最近维护日期 `2026-07-12`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
 
 维护入口：
 
@@ -22,6 +22,7 @@
 - `AFC U17 Asian Cup Saudi Arabia 2026`
 - `AFC U23 Asian Cup Saudi Arabia 2026`
 - `Chinese Super League 2026` 青年样本
+- 日本、韩国 U18 / 大学 / 职业桥梁体系与四队 92 人来源层
 - 中国青训与董路足球小将专题追踪
 - 中日韩留洋历史数据的建档模板
 - 五大联赛亚洲教练记录，区分 AFC 主口径与土耳其 / 以色列等广义边界项
@@ -54,6 +55,7 @@ python3 -m http.server 4173
 ├── data/
 │   ├── raw/                 # 手工维护的数据源
 │   │   ├── players/         # 按年龄段分组的球员 JSON
+│   │   ├── youth-development-systems.json # 日韩青训体系与赛事关系
 │   │   ├── overseas-history.json
 │   │   ├── projects.json
 │   │   └── tournaments.json
@@ -68,6 +70,8 @@ python3 -m http.server 4173
 
 - 球员原始数据先按年龄段放在 `data/raw/players/*.json`。
 - 每条球员记录至少带上 `birth_date`、`registration_club`、`training_pathway`、`tournament_participation`、`external_links`。
+- `registration_club.organization_type` 区分高中、俱乐部梯队、大学、职业队、成年军队球队和海外梯队；韩国合作高中不能覆盖母俱乐部字段。
+- `data/raw/youth-development-systems.json` 维护日韩稳定体系结构，年度队数和赛季说明只放在 `annual_snapshot`。
 - 若外部资料存在冲突，以 `verification.status` 和 `verification.notes` 标记，而不是直接覆盖。
 - `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、美洲其他四个层级。
 - 留洋国家条目可选带 `featured_records`，用于补真实个案，至少保留赛季、联赛、俱乐部、正式比赛出场与摘要。
@@ -87,10 +91,11 @@ python3 -m http.server 4173
 ## 现阶段种子范围
 
 - 中国 U17：已补齐 2026 赛事完整报名名单，后续继续补留洋、学校和俱乐部路径。
-- 日本 U17：已补齐 2026 赛事完整报名名单，先以 AFC 终报名表作为基础档案源。
-- 韩国 U17：已补齐 2026 赛事完整报名名单，先以 AFC 终报名表作为基础档案源。
+- 日本 U17：已补齐 2026 赛事完整报名名单、组织类型和 AFC 来源层，并纳入学校/俱乐部并行体系。
+- 韩国 U17：已补齐 2026 赛事完整报名名单、组织类型和 AFC 来源层；职业俱乐部 U18 与合作高中分别记录。
+- 日韩 U17/U23：四队各 23 人、合计 92 人完成基础来源覆盖；16 名深度样本至少有一条不同 URL 的独立官方来源。
 - 中国/日本/韩国 U23：已补齐 2026 年 1 月 AFC U23 Asian Cup 完整终报名名单，当前先保留 AFC 注册拼写。
-- 亚洲 U 系列赛事档案：已把 2020 年后的 AFC U23 / U20 / U17 正赛主干补到赛事卡与 archive，并额外补入 `2018 AFC U-16 Championship` 作为 U17 谱系锚点；当前覆盖 `U23 2020/2022/2024/2026`、`U20 2023/2025`、`U17 2023/2025/2026`、`U16 2018`。
+- 男足 U20 赛事档案：完整覆盖 1985—2025 的 21 届 FIFA 世青赛周期和 21 届 AFC 亚青赛周期，保留 2021/2020 取消届快照，并收录截至 2026-07-12 已确认的两项 2027 主办信息及亚青赛 44 队资格赛抽签；其他 AFC U23 / U17 / U16 档案继续保留。
 - 五大联赛亚洲教练：主口径收录 Patrick Kisnorbo、Ange Postecoglou 两名 AFC 成员协会教练；广义边界项另列 Özcan Arkoç、Fatih Terim、Avram Grant、Tayfun Korkut、Nuri Şahin 等土耳其 / 以色列样本。
 - 亚洲教练扩展：首批落库 Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting 五名 AFC 成员协会教练，共 10 段官方来源任期。
 - 中超 2026 青年样本：已开始补当前一线队 U21 和具备留洋经历的 U23，中国球员若已在库内建档则直接补中超/留洋字段，不重复建第二条。

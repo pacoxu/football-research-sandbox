@@ -1,6 +1,6 @@
 # SQLite 本地库
 
-更新时间：2026-06-28
+更新时间：2026-07-12
 
 `scripts/sync-sqlite.mjs` 会把当前 JSON 数据同步到 `storage/youth-football.sqlite`。这个数据库用于本地查询、调试和后续分析，不提交仓库，也不发布到 GitHub Pages。
 
@@ -40,6 +40,9 @@ erDiagram
     INTEGER weight_kg
     TEXT registration_club_name
     TEXT registration_club_country
+    TEXT registration_organization_type
+    TEXT parent_organization_json
+    TEXT education_partner_json
     TEXT league_system_override
     TEXT overseas_bucket_override
     TEXT focus_tags_json
@@ -54,6 +57,10 @@ erDiagram
     TEXT stage_label
     TEXT organization
     TEXT country
+    TEXT organization_type
+    TEXT parent_organization_json
+    TEXT education_partner_json
+    TEXT competition_context_ids_json
     TEXT note
   }
 
@@ -98,6 +105,7 @@ erDiagram
     TEXT last_checked
     TEXT start_date
     TEXT end_date
+    TEXT date_precision
     TEXT focus_teams_json
     TEXT headline
     TEXT notes_json
@@ -177,6 +185,7 @@ erDiagram
     TEXT host
     TEXT start_date
     TEXT end_date
+    TEXT date_precision
     TEXT status
     TEXT champion
     TEXT runner_up
@@ -187,6 +196,20 @@ erDiagram
     TEXT source_links_json
     TEXT china_matches_json
     TEXT china_key_players_json
+    TEXT participants_json
+    TEXT final_draw_json
+    TEXT qualifiers_json
+  }
+
+  youth_development_systems {
+    TEXT id PK
+    TEXT country
+    TEXT name_json
+    TEXT summary_json
+    TEXT checked_at
+    TEXT registration_categories_json
+    TEXT competitions_json
+    TEXT source_links_json
   }
 ```
 
@@ -205,6 +228,7 @@ erDiagram
 | `overseas_records` | `countries[].featured_records` | 留洋精选记录；不是官方全量人数表。 |
 | `dossiers` | `data/raw/dossiers.json` | 深度专题档案。 |
 | `tournament_archive` | `data/raw/tournament-archive.json` | 历史赛事归档和中国队相关结果。 |
+| `youth_development_systems` | `data/raw/youth-development-systems.json` | 日韩体系稳定结构、年度快照、竞赛 ID 和官方来源。 |
 
 ## JSON 字段
 
@@ -215,7 +239,12 @@ SQLite 表只把高频查询字段拆成列，其余复杂结构以 `*_json` 文
 - `sources_json`
 - `watch_items_json`
 - `china_matches_json`
+- `participants_json`
+- `final_draw_json`
+- `qualifiers_json`
 - `supporting_documents_json`
+
+赛事的 `start_date`、`end_date` 允许为空；当未来届次尚未公布日期时，`date_precision` 为 `tbc`。资格赛、决赛圈参赛队和决赛圈抽签分别保存在独立 JSON 列中，避免把资格赛球队误当作决赛圈球队。
 
 查询时需要在应用层或 SQLite JSON 函数中解析这些字段。当前脚本不依赖 JSON1 扩展特性，主要保证 Node 内置 SQLite 能生成数据库。
 

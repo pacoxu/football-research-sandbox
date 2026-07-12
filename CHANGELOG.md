@@ -4,6 +4,31 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-07-12
+
+### Added
+
+- Added structured Japan/Korea youth-development system data and a bilingual public systems page.
+- Added organization types and competition contexts to all 92 Japan/Korea U17/U23 final-squad records.
+- Added AFC registration layers to all 92 records and independent official source coverage for 16 deep samples.
+- Added player organization filtering, grouped source-layer display, Korea parent-club/education-partner fields, and SQLite system/pathway columns.
+- Added complete men's U20 tournament cycles for the FIFA World Youth Championship / U-20 World Cup and AFC Youth / U19 / U20 Asian Cup from 1985 through 2025: 21 cycles in each lineage, including the cancelled 2021 and 2020 editions.
+- Added complete finalist fields and final-tournament groups for every completed edition, plus host, dates, champion, runner-up, China status, field-level source versions, and source check dates.
+- Added 2027 future records for the Azerbaijan/Uzbekistan FIFA co-hosted event and the China-hosted AFC event, with unannounced dates and final draws explicitly pending.
+- Added the official 44-team AFC 2027 qualifying draw, keeping Qualification Phase and Development Phase groups separate from the final-tournament participant list.
+- Added tournament-detail field/group rendering, archive-card field summaries, cancelled/future labels, and Chinese/English copy.
+
+### Data Model Notes
+
+- Added `participants`, `final_draw`, `qualifiers`, and `date_precision` to tournament archives; SQLite now stores the three nested structures as JSON columns and permits nullable event dates.
+- Validation now enforces exact 1985—2025 cycle coverage, cancellation records, complete field/group set equality, qualifier/finals separation, and legal partial future records.
+
+### Governance Notes
+
+- School, university and club source layers may no longer reuse an AFC registration PDF as an organization source.
+- Stable competition structures and season-specific snapshots are stored separately.
+- Gimcheon Sangmu is modeled as a senior military-service club rather than a youth academy.
+
 ## 2026-07-11
 
 ### Added
@@ -13,10 +38,12 @@ This project tracks research data, so changelog entries should separate code cha
 - Added `docs/known-limitations.md` to centralize non-official, non-realtime, source-conflict, and youth-data limitations.
 - Added China U20 2025 final-squad coverage: 14 new raw player records plus `afc-u20-2025` participation entries on 9 existing U23/CSL youth records.
 - Added China U17 2026 roster-boundary fields: `roster_status` on player participation records and `roster_boundary` on the tournament archive.
+- Added China U20 2025 appearances and minutes from four official Match Summaries, with archive-to-player loader enrichment and aggregate validation.
+- Added Zhang Haoran as the updated tournament-squad goalkeeper while preserving Yuan Jianrui in the original registration boundary.
 
 ### Data Notes
 
-- China U20 2025 now covers the AFC final registration 23/23; goals are filled from the current tournament archive, while appearances and minutes remain marked as pending match-report extraction.
+- China U20 2025 preserves both 23-player roster versions and their No. 22 goalkeeper change; 20 players logged 61 appearances, 44 starts, 3960 player-minutes and 8 goals across four matches.
 - China U17 2026 now counts final registration by `roster_status=final-squad` instead of raw `afc-u17-2026` participation count; Gu Boyu is marked `withdrawn/unused`, and fourth-camp entries are marked `later-camp-callup`.
 
 ### Governance Notes

@@ -2470,10 +2470,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 2,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案记录其对澳大利亚有 1 次助攻但未记录进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 65,
+        "note": "官方逐场 Match Summary 汇总：出场 2 次、65 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -2496,7 +2497,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Xu Junchi",
@@ -2638,10 +2639,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦有 1 次助攻但未记录进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 133,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、133 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -2664,7 +2666,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Wang Yifan",
@@ -2764,24 +2766,25 @@
         "stage_label": "2025 AFC U20 报名归属",
         "organization": "Shenzhen 2028 FC",
         "country": "China",
-        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+        "note": "原始 AFC final registration 将其列为 22 号门将；更新版 squad list 和四场 Match Summary 显示 Zhang Haoran 随后接替该名额。"
       }
     ],
     "focus_tags": [
       "asia-u20-2025",
-      "china-u20-2025-final-squad",
+      "china-u20-2025-original-registration",
       "china-youth"
     ],
     "tournament_participation": [
       {
         "competition_id": "afc-u20-2025",
-        "label": "AFC U20 2025 中国队终报名名单",
+        "label": "AFC U20 2025 中国队原始终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "roster_status": "replaced-before-match",
+        "appearances": 0,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 0,
+        "note": "原始 AFC final registration 列为 22 号门将；更新版 squad list 和四场 Match Summary 均由 Zhang Haoran 替代，因此不计入实际赛事 23 人名单。"
       }
     ],
     "external_links": [
@@ -2794,12 +2797,17 @@
         "type": "official",
         "label": "AFC U20 2025 squads finalised",
         "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "原始 AFC final registration 支撑出生日期、位置、报名俱乐部、身高和体重；更新版 squad list 与四场 Match Summary 显示其在开赛前由 Zhang Haoran 替换。中文名仍待 CFA 或俱乐部来源补强。"
     },
     "names": {
       "zh": "Yuan Jianrui",
@@ -2865,10 +2873,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 359,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、359 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "afc-u23-2026",
@@ -2906,7 +2915,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "He Yiran",
@@ -3084,10 +3093,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对卡塔尔有 1 次助攻但未记录进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 315,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、315 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "afc-u23-2026",
@@ -3140,7 +3150,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "陈泽仕",
@@ -3309,10 +3319,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 3,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 254,
+        "note": "官方逐场 Match Summary 汇总：出场 3 次、254 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -3330,7 +3341,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Yimulan Maimaiti",
@@ -3397,10 +3408,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 2,
         "goals": 2,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦替补梅开二度，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 81,
+        "note": "官方逐场 Match Summary 汇总：出场 2 次、81 分钟、2 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "csl-2026",
@@ -3438,7 +3450,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "出生日期、身高和位置由公开球员资料页确认，当前俱乐部由大连英博 2026 赛季名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "出生日期、身高和位置由公开球员资料页确认，当前俱乐部由大连英博 2026 赛季名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "朱鹏宇",
@@ -3579,10 +3591,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦有 1 次助攻但未记录进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 125,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、125 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -3605,7 +3618,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Xiong Jizheng",
@@ -3720,10 +3733,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 1,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 8,
+        "note": "官方逐场 Match Summary 汇总：出场 1 次、8 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -3746,7 +3760,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Chen Shihan",
@@ -3982,10 +3996,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 1,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦进 1 球、对卡塔尔有 1 次助攻，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 283,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、283 分钟、1 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "afc-u23-2026",
@@ -4043,7 +4058,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的大连英博归属由公开名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的大连英博归属由公开名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "毛伟杰",
@@ -4247,11 +4262,12 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 3,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 将其列为 Yang Xi、报名俱乐部 Qingdao Westcoast FC；当前主档保留后续上海海港注册状态。赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。",
-        "competition_id": "afc-u20-2025"
+        "minutes": 270,
+        "note": "官方逐场 Match Summary 汇总：出场 3 次、270 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "competition_id": "afc-u20-2025",
+        "roster_status": "tournament-squad"
       },
       {
         "label": "2025 中国 U22 / U23 周期集训",
@@ -4357,7 +4373,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "中国足协 U20、U22、U23 及成年国家队通知与战报可以连续拼出其从西班牙奥斯皮塔莱特、青岛西海岸到上海海港，再到成年国家队考察线的时间轴。Transfermarkt 与 Sofascore 可交叉校验生日、巴塞罗那出生地、右脚和右边后卫定位。公开身高口径在 175cm 与 182cm 间存在差异，因此当前不硬填高度字段。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "中国足协 U20、U22、U23 及成年国家队通知与战报可以连续拼出其从西班牙奥斯皮塔莱特、青岛西海岸到上海海港，再到成年国家队考察线的时间轴。Transfermarkt 与 Sofascore 可交叉校验生日、巴塞罗那出生地、右脚和右边后卫定位。公开身高口径在 175cm 与 182cm 间存在差异，因此当前不硬填高度字段。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "杨希",
@@ -4675,10 +4691,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 315,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、315 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "afc-u23-2026",
@@ -4731,7 +4748,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "彭啸",
@@ -5041,10 +5058,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 2,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 33,
+        "note": "官方逐场 Match Summary 汇总：出场 2 次、33 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -5067,7 +5085,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Du Yuezheng",
@@ -5321,10 +5339,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 360,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、360 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -5347,7 +5366,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Liu Qiwei",
@@ -5489,10 +5508,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 360,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、360 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -5515,7 +5535,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Shi Songchen",
@@ -5811,10 +5831,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 2,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对卡塔尔和澳大利亚各进 1 球、对吉尔吉斯斯坦有 1 次助攻，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 317,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、317 分钟、2 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "afc-u23-2026",
@@ -5872,7 +5893,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属由上海海港当前名单与球员资料页交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属由上海海港当前名单与球员资料页交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "蒯纪闻",
@@ -5986,10 +6007,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 1,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 45,
+        "note": "官方逐场 Match Summary 汇总：出场 1 次、45 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -6012,7 +6034,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Qi Qiancheng",
@@ -6283,10 +6305,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 3,
         "goals": 2,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对卡塔尔和吉尔吉斯斯坦各进 1 球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 246,
+        "note": "官方逐场 Match Summary 汇总：出场 3 次、246 分钟、2 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "csl-2026",
@@ -6324,7 +6347,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "出生日期、位置和当前俱乐部由申花当前球员页与 Wikipedia 球员条目交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "出生日期、位置和当前俱乐部由申花当前球员页与 Wikipedia 球员条目交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "刘诚宇",
@@ -6547,6 +6570,108 @@
     }
   },
   {
+    "id": "cn-zhang-haoran-2006",
+    "name": "Zhang Haoran",
+    "local_name": "Zhang Haoran",
+    "country": "China PR",
+    "birth_date": "2006-07-18",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 186,
+    "weight_kg": 84,
+    "registration_club": {
+      "name": "Tianjin Jinmen",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 赛事名单替补",
+        "organization": "Tianjin Jinmen",
+        "country": "China",
+        "note": "更新版 AFC squad list 和四场官方 Match Summary 均将其列为中国队 22 号门将，替代原始终报名表中的 Yuan Jianrui。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-tournament-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队实际赛事名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "roster_status": "tournament-replacement",
+        "appearances": 0,
+        "goals": 0,
+        "minutes": 0,
+        "note": "更新版 AFC squad list 和四场官方 Match Summary 均列为 22 号替补门将；四场均未登场。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: China PR 2-1 Qatar",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: Kyrgyz Republic 2-5 China PR",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739682556.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: China PR 1-2 Australia",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739887502.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: Saudi Arabia 1-0 China PR",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1740363646557.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "更新版 AFC squad list 支撑出生日期、位置、报名俱乐部、身高和体重；四场官方 Match Summary 共同确认其进入实际赛事名单但没有出场。中文名仍待 CFA 或俱乐部来源补强。"
+    },
+    "names": {
+      "zh": "Zhang Haoran",
+      "en": "Zhang Haoran",
+      "native": "Zhang Haoran",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
     "id": "cn-wang-haobin-2006",
     "name": "Wang Haobin",
     "local_name": "Wang Haobin",
@@ -6579,10 +6704,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 0,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 0,
+        "note": "官方逐场 Match Summary 汇总：出场 0 次、0 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -6605,7 +6731,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Wang Haobin",
@@ -6921,10 +7047,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 1,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 26,
+        "note": "官方逐场 Match Summary 汇总：出场 1 次、26 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -6947,7 +7074,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Sun Kangbo",
@@ -7080,10 +7207,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 3,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 85,
+        "note": "官方逐场 Match Summary 汇总：出场 3 次、85 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -7106,7 +7234,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Zhang Zhixiong",
@@ -7239,10 +7367,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 0,
         "goals": 0,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为最终 23 人名单成员；当前赛事档案未记录其进球，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 0,
+        "note": "官方逐场 Match Summary 汇总：出场 0 次、0 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       }
     ],
     "external_links": [
@@ -7265,7 +7394,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 与中文名仍需后续官方或俱乐部来源补强。"
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
       "zh": "Yao Haoyang",
@@ -7425,10 +7554,11 @@
         "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
-        "appearances": null,
+        "appearances": 4,
         "goals": 1,
-        "minutes": null,
-        "note": "AFC final squad registration 确认为中国 U20 2025 最终 23 人名单成员；当前赛事档案记录其对吉尔吉斯斯坦进 1 球并有 1 次助攻，出场和分钟仍待 AFC match report 或技术统计表抽取。"
+        "minutes": 280,
+        "note": "官方逐场 Match Summary 汇总：出场 4 次、280 分钟、1 球；分钟按 90 分钟制、HT=45、补时不另加。",
+        "roster_status": "tournament-squad"
       },
       {
         "competition_id": "afc-u23-2026",
@@ -7486,7 +7616,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-07-11",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属和一线队地位由浙江队当前名单与赛季射手榜交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 待补。"
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属和一线队地位由浙江队当前名单与赛季射手榜交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
       "zh": "王钰栋",
@@ -14846,14 +14976,19 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Tokyo International University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Tokyo International University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -14894,6 +15029,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Shusuke Furuya in the Japan u23 squad and records Tokyo International University as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "古谷柊介",
       "en": "Shusuke Furuya",
@@ -14944,14 +15093,17 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Kawasaki Frontale",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kawasaki Frontale",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -14992,6 +15144,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yuto Ozeki in the Japan u23 squad and records Kawasaki Frontale as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "大关友翔",
       "en": "Yuto Ozeki",
@@ -15129,14 +15295,19 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Waseda University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Waseda University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -15177,6 +15348,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Haruta Kume in the Japan u23 squad and records Waseda University as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "久米遥太",
       "en": "Haruta Kume",
@@ -15227,14 +15412,19 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Hosei University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Hosei University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -15275,27 +15465,25 @@
         "type": "afc-registration",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final registration confirms Kosei Ogura as a Japan U23 registered player and records Hosei University as the tournament registration organization."
+        "claim": "AFC final registration confirms Kosei Ogura in the Japan u23 squad and records Hosei University as the tournament registration organization."
       },
       {
-        "type": "school-profile",
-        "label": "AFC U23 2026 university registration field",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
+        "type": "national-fa-profile",
+        "label": "JFA U21 Europe tour squad",
+        "url": "https://www.jfa.jp/eng/national_team/u21_2026/news/00036377/",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
         "fields": [
-          "registration_club",
-          "training_pathway"
+          "tournament_participation",
+          "registration_club"
         ],
-        "claim": "The university pathway layer is captured from the AFC registration field; an individual Hosei University player page remains a follow-up source."
+        "claim": "JFA's official U21 squad independently lists Kosei Ogura with Hosei University."
       }
     ],
     "verification": {
@@ -15386,14 +15574,19 @@
     "weight_kg": 80,
     "registration_club": {
       "name": "Meiji University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Meiji University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -15434,6 +15627,32 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tomoyasu Hamasaki in the Japan u23 squad and records Meiji University as the tournament registration organization."
+      },
+      {
+        "type": "university-profile",
+        "label": "Meiji University football club player profile",
+        "url": "https://meidaisoccer.jp/2024/04/01/%E6%BF%B1%EF%A8%91%E7%9F%A5%E5%BA%B7/",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "training_pathway"
+        ],
+        "claim": "Meiji University football club's official player page independently confirms Tomoyasu Hamasaki as a university-team player."
+      }
+    ],
     "names": {
       "zh": "滨崎知康",
       "en": "Tomoyasu Hamasaki",
@@ -15485,14 +15704,19 @@
     "weight_kg": 80,
     "registration_club": {
       "name": "Meiji University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Meiji University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -15533,6 +15757,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kaito Koizumi in the Japan u23 squad and records Meiji University as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "小泉佳弦",
       "en": "Kaito Koizumi",
@@ -15584,14 +15822,17 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Cerezo Osaka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Cerezo Osaka",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -15632,6 +15873,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Nelson Ishiwatari in the Japan u23 squad and records Cerezo Osaka as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "石渡尼尔森",
       "en": "Nelson Ishiwatari",
@@ -15778,14 +16033,17 @@
     "weight_kg": 81,
     "registration_club": {
       "name": "RB Omiya Ardija",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "RB Omiya Ardija",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -15826,6 +16084,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rion Ichihara in the Japan u23 squad and records RB Omiya Ardija as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "市原吏音",
       "en": "Rion Ichihara",
@@ -15963,14 +16235,19 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Toin Yokohama University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Toin Yokohama University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -16011,6 +16288,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Uche Brian Seo Nwadike in the Japan u23 squad and records Toin Yokohama University as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "乌切·布赖恩·塞奥·恩瓦迪克",
       "en": "Uche Brian Seo Nwadike",
@@ -16061,14 +16352,17 @@
     "weight_kg": 64,
     "registration_club": {
       "name": "FC Imabari",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Imabari",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -16109,6 +16403,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rei Umeki in the Japan u23 squad and records FC Imabari as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "梅木怜",
       "en": "Rei Umeki",
@@ -16228,14 +16536,17 @@
     "weight_kg": 87,
     "registration_club": {
       "name": "FC Tokyo",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "FC Tokyo",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 仍将其列为 FC 东京一线队 GK。"
+        "note": "J.League 当前球员页在 2026-05-22 仍将其列为 FC 东京一线队 GK。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       },
       {
         "stage_label": "2026 国字号节点",
@@ -16302,6 +16613,18 @@
     ],
     "source_layers": [
       {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Masataka Kobayashi in the Japan u21 squad and records FC Tokyo as the tournament registration organization."
+      },
+      {
         "type": "league-registration",
         "label": "J.League profile",
         "url": "https://www.jleague.jp/player/1636506/",
@@ -16339,17 +16662,6 @@
           "training_pathway"
         ],
         "claim": "FC Tokyo announcement provides a club source for the U-23 call-up context without replacing the current J.League registration field."
-      },
-      {
-        "type": "afc-registration",
-        "label": "AFC U23 2026 final registration",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation"
-        ],
-        "claim": "AFC final registration keeps the Japan U23 tournament-roster layer separate from the current league registration."
       }
     ],
     "verification": {
@@ -16494,14 +16806,17 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Cerezo Osaka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Cerezo Osaka",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -16542,6 +16857,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yumeki Yokoyama in the Japan u23 squad and records Cerezo Osaka as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "横山梦树",
       "en": "Yumeki Yokoyama",
@@ -16660,14 +16989,19 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Toin Yokohama University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Toin Yokohama University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -16708,6 +17042,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kanta Sekitomi in the Japan u23 squad and records Toin Yokohama University as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "关富贯太",
       "en": "Kanta Sekitomi",
@@ -16791,7 +17139,8 @@
     "weight_kg": 78,
     "registration_club": {
       "name": "Avispa Fukuoka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
@@ -16804,7 +17153,9 @@
         "stage_label": "2026 J1 当前注册节点",
         "organization": "Avispa Fukuoka",
         "country": "Japan",
-        "note": "Avispa Fukuoka 2026 赛季官方球员页与 J.League 当前球员页，都已将其列为福冈现役前锋；SK Beveren 也在 2026-01-11 公告确认其离队。"
+        "note": "Avispa Fukuoka 2026 赛季官方球员页与 J.League 当前球员页，都已将其列为福冈现役前锋；SK Beveren 也在 2026-01-11 公告确认其离队。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -16861,6 +17212,20 @@
       "last_checked": "2026-05-23",
       "notes": "AFC 于 2025-12-30 发布的 final registration 可核其在 U23 亚洲杯时仍属 SK Beveren；但 Avispa Fukuoka 官方 2026 球员页、J.League 当前球员页和 SK Beveren 2026-01-11 离队公告，都说明他已在 2026 年 1 月回到日本职业体系，因此当前不再计作留洋样本。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yutaka Michiwaki in the Japan u23 squad and records Avispa Fukuoka as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "道胁丰",
       "en": "Yutaka Michiwaki",
@@ -17015,14 +17380,17 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Gainare Tottori",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gainare Tottori",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -17063,6 +17431,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Shuto Nagano in the Japan u23 squad and records Gainare Tottori as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "永野修都",
       "en": "Shuto Nagano",
@@ -17146,14 +17528,17 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Shonan Bellmare",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shonan Bellmare",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -17194,6 +17579,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Sena Ishibashi in the Japan u23 squad and records Shonan Bellmare as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "石桥濑凪",
       "en": "Sena Ishibashi",
@@ -17267,14 +17666,17 @@
     "weight_kg": 74,
     "registration_club": {
       "name": "Fukushima United FC",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Fukushima United FC",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 将其列为福岛联当前注册后卫。"
+        "note": "J.League 当前球员页在 2026-05-22 将其列为福岛联当前注册后卫。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       },
       {
         "stage_label": "2026 国字号节点",
@@ -17336,6 +17738,18 @@
     ],
     "source_layers": [
       {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kaito Tsuchiya in the Japan u21 squad and records Fukushima United FC as the tournament registration organization."
+      },
+      {
         "type": "league-registration",
         "label": "J.League profile",
         "url": "https://www.jleague.jp/player/1643995/",
@@ -17361,17 +17775,6 @@
           "training_pathway"
         ],
         "claim": "JFA squad announcement confirms the national-team pathway node for the 2026 U-21 Korea trip sample."
-      },
-      {
-        "type": "afc-registration",
-        "label": "AFC U23 2026 final registration",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation"
-        ],
-        "claim": "AFC final registration keeps the Japan U23 tournament-roster layer separate from the current league registration."
       }
     ],
     "verification": {
@@ -17462,14 +17865,19 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Toyo University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Toyo University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -17510,6 +17918,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tariqkanihayato Okabe in the Japan u23 squad and records Toyo University as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "冈部塔里克卡奈隼人",
       "en": "Tariqkanihayato Okabe",
@@ -17561,14 +17983,17 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "FC Tokyo",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "FC Tokyo",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 将其列为 FC 东京一线队中场。"
+        "note": "J.League 当前球员页在 2026-05-22 将其列为 FC 东京一线队中场。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       },
       {
         "stage_label": "2026 国字号节点",
@@ -17633,6 +18058,20 @@
       "last_checked": "2026-05-22",
       "notes": "当前 FC 东京注册信息来自 J.League 最新球员页，U-23 节点由 FC 东京公告与 AFC 报名表交叉确认。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ryunosuke Sato in the Japan u21 squad and records FC Tokyo as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "佐藤龙之介",
       "en": "Ryunosuke Sato",
@@ -17760,14 +18199,17 @@
     "weight_kg": 69,
     "registration_club": {
       "name": "Shimizu S-Pulse",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shimizu S-Pulse",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -17808,6 +18250,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yudai Shimamoto in the Japan u23 squad and records Shimizu S-Pulse as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "岛本悠大",
       "en": "Yudai Shimamoto",
@@ -17900,14 +18356,17 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "Jubilo Iwata",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Jubilo Iwata",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 仍将其列为磐田一线队中场。"
+        "note": "J.League 当前球员页在 2026-05-22 仍将其列为磐田一线队中场。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -17961,6 +18420,20 @@
       "last_checked": "2026-05-22",
       "notes": "当前俱乐部、生日和体格来自 J.League 官方球员页；AFC 报名表继续保留其 U23 冠军名单背景。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tokumo Kawai in the Japan u21 squad and records Jubilo Iwata as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "川合德孟",
       "en": "Tokumo Kawai",
@@ -18206,14 +18679,17 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Nagoya Grampus",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Nagoya Grampus",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -18254,6 +18730,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Soichiro Mori in the Japan u23 squad and records Nagoya Grampus as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "森壮一朗",
       "en": "Soichiro Mori",
@@ -18346,14 +18836,17 @@
     "weight_kg": 85,
     "registration_club": {
       "name": "Gamba Osaka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gamba Osaka",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -18394,6 +18887,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rui Araki in the Japan u23 squad and records Gamba Osaka as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "荒木琉伟",
       "en": "Rui Araki",
@@ -18477,14 +18984,20 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Vissel Kobe U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Vissel Kobe U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -18515,6 +19028,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tsubasa Kamimura in the Japan u17 squad and records Vissel Kobe U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "上村翼",
       "en": "Tsubasa Kamimura",
@@ -18557,14 +19084,19 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Iwata Higashi High School",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Iwata Higashi High School",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -18595,6 +19127,32 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ryosuke Furukawa in the Japan u17 squad and records Iwata Higashi High School as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U17 Asian Cup squad announcement",
+        "url": "https://www.jfa.jp/national_team/u17_2026/news/00036263/",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "JFA's official squad announcement independently lists Ryosuke Furukawa and Iwata Higashi High School in the Japan U17 team context."
+      }
+    ],
     "names": {
       "zh": "古川亮介",
       "en": "Ryosuke Furukawa",
@@ -18637,14 +19195,20 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -18675,6 +19239,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ai Toyama in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "远山爱",
       "en": "Ai Toyama",
@@ -18717,14 +19295,20 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -18755,6 +19339,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yohei Onishi in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "大西洋平",
       "en": "Yohei Onishi",
@@ -18797,14 +19395,20 @@
     "weight_kg": 60,
     "registration_club": {
       "name": "Montedio Yamagata Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Montedio Yamagata Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -18835,6 +19439,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Louis Ellena in the Japan u17 squad and records Montedio Yamagata Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "路易斯·埃莱纳",
       "en": "Louis Ellena",
@@ -18877,14 +19495,20 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -18915,6 +19539,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Lion Tahara in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "田原理音",
       "en": "Lion Tahara",
@@ -18957,14 +19595,20 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Kashima Antlers Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kashima Antlers Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -18995,6 +19639,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yuma Atsuta in the Japan u17 squad and records Kashima Antlers Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "热田悠真",
       "en": "Yuma Atsuta",
@@ -19037,14 +19695,20 @@
     "weight_kg": 64,
     "registration_club": {
       "name": "Tokyo Verdy Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Tokyo Verdy Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19075,6 +19739,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hiroto Yamamoto in the Japan u17 squad and records Tokyo Verdy Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "山本大翔",
       "en": "Hiroto Yamamoto",
@@ -19117,14 +19795,19 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Shizuoka Gakuen High School",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shizuoka Gakuen High School",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -19160,6 +19843,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rikuto Yoshida in the Japan u17 squad and records Shizuoka Gakuen High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "吉田陆翔",
       "en": "Rikuto Yoshida",
@@ -19210,14 +19907,20 @@
     "weight_kg": 60,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19248,6 +19951,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ryota Abe in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "阿部凉太",
       "en": "Ryota Abe",
@@ -19290,14 +20007,20 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Kashima Antlers Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kashima Antlers Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19328,6 +20051,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kento Uegaki in the Japan u17 squad and records Kashima Antlers Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "上垣健斗",
       "en": "Kento Uegaki",
@@ -19370,14 +20107,20 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19408,6 +20151,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Gento Fujiwara in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "藤原玄斗",
       "en": "Gento Fujiwara",
@@ -19450,14 +20207,20 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Shimizu S-Pulse Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shimizu S-Pulse Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19488,6 +20251,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Seigo Aoyama in the Japan u17 squad and records Shimizu S-Pulse Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "青山诚悟",
       "en": "Seigo Aoyama",
@@ -19530,14 +20307,20 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Shimizu S-Pulse Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shimizu S-Pulse Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19568,6 +20351,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Soshiro Shimada in the Japan u17 squad and records Shimizu S-Pulse Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "岛田壮士郎",
       "en": "Soshiro Shimada",
@@ -19610,14 +20407,17 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Bayer 04 Leverkusen U17",
-      "country": "Germany"
+      "country": "Germany",
+      "organization_type": "overseas-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Bayer 04 Leverkusen U17",
         "country": "Germany",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "overseas-academy",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -19648,15 +20448,13 @@
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final squad list confirms Rei Ono as a Japan U17 registered player and records Bayer 04 Leverkusen U17 as the tournament registration organization."
+        "claim": "AFC final registration confirms Rei Ono in the Japan u17 squad and records Bayer 04 Leverkusen U17 as the tournament registration organization."
       },
       {
         "type": "national-fa-profile",
@@ -19668,18 +20466,6 @@
           "tournament_participation"
         ],
         "claim": "JFA team-level announcement provides the national-federation layer for the Japan U17 AFC Asian Cup squad context."
-      },
-      {
-        "type": "club-academy-profile",
-        "label": "AFC U17 2026 club registration field",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
-        "fields": [
-          "registration_club",
-          "training_pathway"
-        ],
-        "claim": "The academy layer for Rei Ono is currently captured from the AFC club field as Bayer 04 Leverkusen U17; an individual club profile remains a follow-up source."
       }
     ],
     "verification": {
@@ -19729,14 +20515,19 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Shizuoka Gakuen High School",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shizuoka Gakuen High School",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -19767,15 +20558,13 @@
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final squad list confirms Takaya Sekine as a Japan U17 registered player and records Shizuoka Gakuen High School as the tournament registration organization."
+        "claim": "AFC final registration confirms Takaya Sekine in the Japan u17 squad and records Shizuoka Gakuen High School as the tournament registration organization."
       },
       {
         "type": "national-fa-profile",
@@ -19787,18 +20576,6 @@
           "tournament_participation"
         ],
         "claim": "JFA team-level announcement provides the national-federation layer for the Japan U17 AFC Asian Cup squad context."
-      },
-      {
-        "type": "school-profile",
-        "label": "AFC U17 2026 school registration field",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
-        "fields": [
-          "registration_club",
-          "training_pathway"
-        ],
-        "claim": "The school pathway layer for Takaya Sekine is currently captured from the AFC club field as Shizuoka Gakuen High School; an individual school squad or profile source remains a follow-up source."
       }
     ],
     "verification": {
@@ -19848,14 +20625,20 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Sanfrecce Hiroshima FC Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Sanfrecce Hiroshima FC Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19886,6 +20669,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Sota Yamauchi in the Japan u17 squad and records Sanfrecce Hiroshima FC Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "山内飒太",
       "en": "Sota Yamauchi",
@@ -19928,14 +20725,20 @@
     "weight_kg": 59,
     "registration_club": {
       "name": "Kashima Antlers Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kashima Antlers Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -19966,6 +20769,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yamato Otaka in the Japan u17 squad and records Kashima Antlers Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "大高大和",
       "en": "Yamato Otaka",
@@ -20008,14 +20825,20 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Urawa Red Diamonds Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Urawa Red Diamonds Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -20046,6 +20869,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Eita Kobayashi in the Japan u17 squad and records Urawa Red Diamonds Youth as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "小林荣太",
       "en": "Eita Kobayashi",
@@ -20088,14 +20925,20 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "FC Tokyo U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Tokyo U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -20126,6 +20969,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Reto Nagata in the Japan u17 squad and records FC Tokyo U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "永田怜斗",
       "en": "Reto Nagata",
@@ -20168,14 +21025,17 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "RC Strasbourg Alsace",
-      "country": "France"
+      "country": "France",
+      "organization_type": "overseas-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "RC Strasbourg Alsace",
         "country": "France",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "overseas-academy",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -20206,15 +21066,13 @@
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final squad list confirms Aran Sato as a Japan U17 registered player and records RC Strasbourg Alsace as the tournament registration organization."
+        "claim": "AFC final registration confirms Aran Sato in the Japan u17 squad and records RC Strasbourg Alsace as the tournament registration organization."
       },
       {
         "type": "national-fa-profile",
@@ -20226,18 +21084,6 @@
           "tournament_participation"
         ],
         "claim": "JFA team-level announcement provides the national-federation layer for the Japan U17 AFC Asian Cup squad context."
-      },
-      {
-        "type": "club-academy-profile",
-        "label": "AFC U17 2026 club registration field",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
-        "fields": [
-          "registration_club",
-          "training_pathway"
-        ],
-        "claim": "The academy layer for Aran Sato is currently captured from the AFC club field as RC Strasbourg Alsace; an individual club profile remains a follow-up source."
       }
     ],
     "verification": {
@@ -20287,14 +21133,20 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Kawasaki Frontale U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kawasaki Frontale U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -20325,6 +21177,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kosei Oshita in the Japan u17 squad and records Kawasaki Frontale U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "大下幸成",
       "en": "Kosei Oshita",
@@ -20367,14 +21233,20 @@
     "weight_kg": 57,
     "registration_club": {
       "name": "Kawasaki Frontale U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kawasaki Frontale U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -20405,6 +21277,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kosei Yanagui in the Japan u17 squad and records Kawasaki Frontale U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "柳井幸成",
       "en": "Kosei Yanagui",
@@ -20447,14 +21333,17 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "FC Seoul",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Seoul",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -20495,6 +21384,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Park Seonghoon in the Korea Republic u23 squad and records FC Seoul as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Park Seonghoon",
       "en": "Park Seonghoon",
@@ -20658,14 +21561,19 @@
     "weight_kg": 79,
     "registration_club": {
       "name": "Gimcheon Sangmu",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "military-service-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gimcheon Sangmu",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "military-service-club",
+        "competition_context_ids": [
+          "korea-military-service-pathway"
+        ]
       }
     ],
     "focus_tags": [
@@ -20701,18 +21609,16 @@
         "type": "afc-registration",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final registration confirms Lee Chanouk as a Korea Republic U23 registered player and records Gimcheon Sangmu as the tournament registration organization."
+        "claim": "AFC final registration confirms Lee Chanouk in the Korea Republic u23 squad and records Gimcheon Sangmu as the tournament registration organization."
       },
       {
-        "type": "club-academy-profile",
+        "type": "club-profile",
         "label": "Gimcheon Sangmu official site",
         "url": "https://www.gimcheonfc.com/",
         "checked_at": "2026-06-28",
@@ -21010,14 +21916,17 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Yongin FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Yongin FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -21058,6 +21967,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Hanseo in the Korea Republic u23 squad and records Yongin FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Kim Hanseo",
       "en": "Kim Hanseo",
@@ -21177,14 +22100,17 @@
     "weight_kg": 83,
     "registration_club": {
       "name": "Suwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -21225,6 +22151,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hwang Jaeyun in the Korea Republic u23 squad and records Suwon FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Hwang Jaeyun",
       "en": "Hwang Jaeyun",
@@ -21344,14 +22284,17 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Suwon Samsung Bluewings",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -21392,6 +22335,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kang Seongjin in the Korea Republic u23 squad and records Suwon Samsung Bluewings as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Kang Seongjin",
       "en": "Kang Seongjin",
@@ -21573,14 +22530,17 @@
     "weight_kg": 61,
     "registration_club": {
       "name": "Pohang Steelers",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Pohang Steelers",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -21621,6 +22581,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kang Minjun in the Korea Republic u23 squad and records Pohang Steelers as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Kang Minjun",
       "en": "Kang Minjun",
@@ -21739,20 +22713,27 @@
     "weight_kg": 82,
     "registration_club": {
       "name": "Gimcheon Sangmu",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "military-service-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gimcheon Sangmu",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "military-service-club",
+        "competition_context_ids": [
+          "korea-military-service-pathway"
+        ]
       },
       {
         "stage_label": "2025/26 留洋资料节点",
         "organization": "Portimonense SC",
         "country": "Portugal",
-        "note": "Portimonense 官方球员页作为海外资料节点保留；与 AFC 报名表的 Gimcheon Sangmu 归属分层记录，后续需复核是否为同名或注册时点差异。"
+        "note": "Portimonense 官方球员页作为海外资料节点保留；与 AFC 报名表的 Gimcheon Sangmu 归属分层记录，后续需复核是否为同名或注册时点差异。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -21800,18 +22781,16 @@
         "type": "afc-registration",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final registration confirms Moon Hyunho as a Korea Republic U23 registered player and records Gimcheon Sangmu as the tournament registration organization."
+        "claim": "AFC final registration confirms Moon Hyunho in the Korea Republic u23 squad and records Gimcheon Sangmu as the tournament registration organization."
       },
       {
-        "type": "club-academy-profile",
+        "type": "club-profile",
         "label": "Gimcheon Sangmu official site",
         "url": "https://www.gimcheonfc.com/",
         "checked_at": "2026-06-28",
@@ -21822,7 +22801,7 @@
         "claim": "Gimcheon Sangmu official site is retained as the organization-level military club layer; an individual player page still needs to be captured."
       },
       {
-        "type": "club-academy-profile",
+        "type": "club-profile",
         "label": "Portimonense official profile",
         "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312",
         "checked_at": "2026-06-28",
@@ -21992,14 +22971,17 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Portimonense SC",
-      "country": "Portugal"
+      "country": "Portugal",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Portimonense SC",
         "country": "Portugal",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -22044,7 +23026,19 @@
     ],
     "source_layers": [
       {
-        "type": "club-academy-profile",
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Yonghak in the Korea Republic u23 squad and records Portimonense SC as the tournament registration organization."
+      },
+      {
+        "type": "club-profile",
         "label": "Portimonense official profile",
         "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312",
         "checked_at": "2026-06-28",
@@ -22054,20 +23048,6 @@
           "training_pathway"
         ],
         "claim": "Portimonense official profile supports the Portugal-based overseas club layer for Kim Yonghak."
-      },
-      {
-        "type": "afc-registration",
-        "label": "AFC U23 2026 final registration",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
-        ],
-        "claim": "AFC final registration confirms Kim Yonghak as a Korea Republic U23 registered player and records Portimonense SC as the tournament registration organization."
       }
     ],
     "verification": {
@@ -22238,14 +23218,17 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Pohang Steelers",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Pohang Steelers",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -22286,6 +23269,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Dongjin in the Korea Republic u23 squad and records Pohang Steelers as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Kim Dongjin",
       "en": "Kim Dongjin",
@@ -22405,14 +23402,17 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Suwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -22453,6 +23453,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jung Seungbae in the Korea Republic u23 squad and records Suwon FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Jung Seungbae",
       "en": "Jung Seungbae",
@@ -22571,14 +23585,17 @@
     "weight_kg": 87,
     "registration_club": {
       "name": "Suwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -22619,6 +23636,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Lee Hyunyong in the Korea Republic u23 squad and records Suwon FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Lee Hyunyong",
       "en": "Lee Hyunyong",
@@ -22737,14 +23768,17 @@
     "weight_kg": 60,
     "registration_club": {
       "name": "Gwangju FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gwangju FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -22785,6 +23819,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Joung Jihun in the Korea Republic u23 squad and records Gwangju FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Joung Jihun",
       "en": "Joung Jihun",
@@ -22921,14 +23969,17 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Gangwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gangwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -22969,6 +24020,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Dohyun in the Korea Republic u23 squad and records Gangwon FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Kim Dohyun",
       "en": "Kim Dohyun",
@@ -23114,14 +24179,17 @@
     "weight_kg": 84,
     "registration_club": {
       "name": "Daegu FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Daegu FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -23162,6 +24230,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jeong Jaesang in the Korea Republic u23 squad and records Daegu FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Jeong Jaesang",
       "en": "Jeong Jaesang",
@@ -23280,14 +24362,17 @@
     "weight_kg": 62,
     "registration_club": {
       "name": "Jeonbuk Hyundai Motors",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Jeonbuk Hyundai Motors",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -23328,6 +24413,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kang Sangyoon in the Korea Republic u23 squad and records Jeonbuk Hyundai Motors as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Kang Sangyoon",
       "en": "Kang Sangyoon",
@@ -23491,14 +24590,17 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Suwon Samsung Bluewings",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -23539,6 +24641,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jang Seokhwan in the Korea Republic u23 squad and records Suwon Samsung Bluewings as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Jang Seokhwan",
       "en": "Jang Seokhwan",
@@ -23685,14 +24801,17 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Gangwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gangwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -23733,6 +24852,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jo Hyuntae in the Korea Republic u23 squad and records Gangwon FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Jo Hyuntae",
       "en": "Jo Hyuntae",
@@ -23888,14 +25021,17 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "Gyeongnam FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Gyeongnam FC",
         "country": "Korea Republic",
-        "note": "K League 当前球员页在 2026 赛季仍将其列为庆南 FC 后卫。"
+        "note": "K League 当前球员页在 2026 赛季仍将其列为庆南 FC 后卫。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -23946,6 +25082,18 @@
     ],
     "source_layers": [
       {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Bae Hyunseo in the Korea Republic u21 squad and records Gyeongnam FC as the tournament registration organization."
+      },
+      {
         "type": "league-registration",
         "label": "K League profile",
         "url": "https://www.kleague.com/record/playerDetail.do?playerId=20240215",
@@ -23959,17 +25107,6 @@
           "training_pathway"
         ],
         "claim": "K League profile confirms current Gyeongnam FC registration and basic profile fields for Bae Hyunseo."
-      },
-      {
-        "type": "afc-registration",
-        "label": "AFC U23 2026 final registration",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation"
-        ],
-        "claim": "AFC final registration keeps the Korea Republic U23 tournament-roster layer separate from the current league registration."
       }
     ],
     "verification": {
@@ -24087,14 +25224,17 @@
     "weight_kg": 76,
     "registration_club": {
       "name": "Kataller Toyama",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Kataller Toyama",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 将其列为富山胜利当前注册前锋。"
+        "note": "J.League 当前球员页在 2026-05-22 将其列为富山胜利当前注册前锋。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -24151,6 +25291,18 @@
     ],
     "source_layers": [
       {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Taewon in the Korea Republic u21 squad and records Kataller Toyama as the tournament registration organization."
+      },
+      {
         "type": "league-registration",
         "label": "J.League profile",
         "url": "https://www.jleague.jp/player/1651218/",
@@ -24175,17 +25327,6 @@
           "training_pathway"
         ],
         "claim": "J.League transfer announcement supports the Japan-based overseas pathway layer for this Korea Republic U23 sample."
-      },
-      {
-        "type": "afc-registration",
-        "label": "AFC U23 2026 final registration",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
-        "checked_at": "2026-06-28",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation"
-        ],
-        "claim": "AFC final registration keeps the Korea Republic U23 tournament-roster layer separate from the current league registration."
       }
     ],
     "verification": {
@@ -24275,14 +25416,17 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Suwon Samsung Bluewings",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -24323,6 +25467,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Lee Geonhee in the Korea Republic u23 squad and records Suwon Samsung Bluewings as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Lee Geonhee",
       "en": "Lee Geonhee",
@@ -24597,14 +25755,17 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Gangwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gangwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -24645,6 +25806,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Shin Minha in the Korea Republic u23 squad and records Gangwon FC as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Shin Minha",
       "en": "Shin Minha",
@@ -24764,14 +25939,17 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Busan IPark",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Busan IPark",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -24812,6 +25990,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Baek Gaon in the Korea Republic u23 squad and records Busan IPark as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Baek Gaon",
       "en": "Baek Gaon",
@@ -24912,14 +26104,17 @@
     "weight_kg": 88,
     "registration_club": {
       "name": "Pohang Steelers",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Pohang Steelers",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -24960,6 +26155,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hong Seongmin in the Korea Republic u23 squad and records Pohang Steelers as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Hong Seongmin",
       "en": "Hong Seongmin",
@@ -25252,14 +26461,19 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Cheonan Jeil High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Cheonan Jeil High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -25290,6 +26504,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hyun Min Oh in the Korea Republic u17 squad and records Cheonan Jeil High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Hyun Min Oh",
       "en": "Hyun Min Oh",
@@ -25332,14 +26560,36 @@
     "weight_kg": 62,
     "registration_club": {
       "name": "Daegu FC U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Daegu FC",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Hyeonpung High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Daegu FC U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Daegu FC",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Hyeonpung High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -25370,6 +26620,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Sung Woon Park in the Korea Republic u17 squad and records Daegu FC U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Sung Woon Park",
       "en": "Sung Woon Park",
@@ -25412,14 +26676,19 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "Cheonan Jeil High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Cheonan Jeil High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -25450,6 +26719,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hyeon Min Kim in the Korea Republic u17 squad and records Cheonan Jeil High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Hyeon Min Kim",
       "en": "Hyeon Min Kim",
@@ -25492,14 +26775,19 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Boin High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Boin High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -25530,15 +26818,13 @@
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final squad list confirms Seung Min Lee as a Korea Republic U17 registered player and records Boin High School as the tournament registration organization."
+        "claim": "AFC final registration confirms Seung Min Lee in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
       },
       {
         "type": "national-fa-profile",
@@ -25550,18 +26836,6 @@
           "tournament_participation"
         ],
         "claim": "KFA U17 team page provides the national-federation layer for Korea Republic U17 context; AFC remains the player-level roster source."
-      },
-      {
-        "type": "school-profile",
-        "label": "AFC U17 2026 school registration field",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
-        "fields": [
-          "registration_club",
-          "training_pathway"
-        ],
-        "claim": "The school pathway layer for Seung Min Lee is currently captured from the AFC club field as Boin High School; an individual school squad or profile source remains a follow-up source."
       }
     ],
     "verification": {
@@ -25611,14 +26885,36 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Suwon Samsung Bluewings U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Suwon Samsung Bluewings",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Maetan High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Suwon Samsung Bluewings",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Maetan High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -25649,6 +26945,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Eun Seong Kim in the Korea Republic u17 squad and records Suwon Samsung Bluewings U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Eun Seong Kim",
       "en": "Eun Seong Kim",
@@ -25691,14 +27001,36 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "FC Seoul U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "FC Seoul",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Seoul Osan High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Seoul U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "FC Seoul",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Seoul Osan High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -25729,6 +27061,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Geon Hee Jin in the Korea Republic u17 squad and records FC Seoul U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Geon Hee Jin",
       "en": "Geon Hee Jin",
@@ -25771,14 +27117,36 @@
     "weight_kg": 74,
     "registration_club": {
       "name": "Ulsan HD FC U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Ulsan HD FC",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Hyundai High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Ulsan HD FC U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Ulsan HD FC",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Hyundai High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -25809,15 +27177,13 @@
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
+        "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
           "tournament_participation",
-          "registration_club",
-          "birth_date",
-          "primary_position"
+          "registration_club"
         ],
-        "claim": "AFC final squad list confirms Geon Woo Park as a Korea Republic U17 registered player and records Ulsan HD FC U18 as the tournament registration organization."
+        "claim": "AFC final registration confirms Geon Woo Park in the Korea Republic u17 squad and records Ulsan HD FC U18 as the tournament registration organization."
       },
       {
         "type": "national-fa-profile",
@@ -25829,18 +27195,6 @@
           "tournament_participation"
         ],
         "claim": "KFA U17 team page provides the national-federation layer for Korea Republic U17 context; AFC remains the player-level roster source."
-      },
-      {
-        "type": "club-academy-profile",
-        "label": "AFC U17 2026 club registration field",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
-        "fields": [
-          "registration_club",
-          "training_pathway"
-        ],
-        "claim": "The academy layer for Geon Woo Park is currently captured from the AFC club field as Ulsan HD FC U18; an individual club profile remains a follow-up source."
       }
     ],
     "verification": {
@@ -25890,14 +27244,36 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Gwangyang Jecheol High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Jeonnam Dragons",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Gwangyang Jecheol High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gwangyang Jecheol High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Jeonnam Dragons",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Gwangyang Jecheol High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -25928,6 +27304,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Young Hyun Ha in the Korea Republic u17 squad and records Gwangyang Jecheol High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Young Hyun Ha",
       "en": "Young Hyun Ha",
@@ -25970,14 +27360,36 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Jeonbuk Hyundai Motors U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Jeonbuk Hyundai Motors",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Jeonju Youngsaeng High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Jeonbuk Hyundai Motors U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Jeonbuk Hyundai Motors",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Jeonju Youngsaeng High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -26008,6 +27420,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hui Sung Yoon in the Korea Republic u17 squad and records Jeonbuk Hyundai Motors U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Hui Sung Yoon",
       "en": "Hui Sung Yoon",
@@ -26050,14 +27476,19 @@
     "weight_kg": 62,
     "registration_club": {
       "name": "Boin High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Boin High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -26088,6 +27519,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Moo Jin Park in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Moo Jin Park",
       "en": "Moo Jin Park",
@@ -26130,14 +27575,36 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "FC Seoul U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "FC Seoul",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Seoul Osan High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Seoul U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "FC Seoul",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Seoul Osan High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -26168,6 +27635,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Joo Chan Lee in the Korea Republic u17 squad and records FC Seoul U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Joo Chan Lee",
       "en": "Joo Chan Lee",
@@ -26210,14 +27691,19 @@
     "weight_kg": 60,
     "registration_club": {
       "name": "Boin High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Boin High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -26248,6 +27734,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Dae Hwan Kim in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Dae Hwan Kim",
       "en": "Dae Hwan Kim",
@@ -26290,14 +27790,19 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Boin High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Boin High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -26328,6 +27833,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ji Yong Lee in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Ji Yong Lee",
       "en": "Ji Yong Lee",
@@ -26370,14 +27889,19 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Cheongju Daesung High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Cheongju Daesung High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -26408,6 +27932,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hyun Woong Jeong in the Korea Republic u17 squad and records Cheongju Daesung High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Hyun Woong Jeong",
       "en": "Hyun Woong Jeong",
@@ -26450,14 +27988,19 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Boin High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Boin High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -26488,6 +28031,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tae Guk Lee in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Tae Guk Lee",
       "en": "Tae Guk Lee",
@@ -26530,14 +28087,36 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Kangneung Jeil High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Gangwon FC",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Kangneung Jeil High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kangneung Jeil High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Gangwon FC",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Kangneung Jeil High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -26568,6 +28147,44 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Woo Jin Jin in the Korea Republic u17 squad and records Kangneung Jeil High School as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "KFA U17 national team page",
+        "url": "https://www.kfa.or.kr/national/?act=mu_17",
+        "checked_at": "2026-07-12",
+        "confidence": "medium",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "The KFA U17 team page independently supports Jin Woo-jin's national-team context; the AFC document remains the final registration source."
+      },
+      {
+        "type": "club-academy-profile",
+        "label": "K League youth competition listing",
+        "url": "https://www.kleague.com/youth/youth.do",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "registration_club.parent_organization",
+          "registration_club.education_partner",
+          "training_pathway"
+        ],
+        "claim": "The official K League youth listing pairs Gangwon FC U18 with Kangneung Jeil High School, supporting the separate parent-club and education-partner fields."
+      }
+    ],
     "names": {
       "zh": "Woo Jin Jin",
       "en": "Woo Jin Jin",
@@ -26610,14 +28227,19 @@
     "weight_kg": 69,
     "registration_club": {
       "name": "Boin High School",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Boin High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "korea-national-high-school-league"
+        ]
       }
     ],
     "focus_tags": [
@@ -26648,6 +28270,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ji Hwan Park in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Ji Hwan Park",
       "en": "Ji Hwan Park",
@@ -26690,14 +28326,36 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "Pohang Steelers U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Pohang Steelers",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Pohang Jecheol High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Pohang Steelers U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Pohang Steelers",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Pohang Jecheol High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -26728,6 +28386,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jung In Kim in the Korea Republic u17 squad and records Pohang Steelers U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Jung In Kim",
       "en": "Jung In Kim",
@@ -26770,14 +28442,36 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "FC Seoul U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "FC Seoul",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Seoul Osan High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Seoul U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "FC Seoul",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Seoul Osan High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -26808,6 +28502,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yoon Seong Lee in the Korea Republic u17 squad and records FC Seoul U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Yoon Seong Lee",
       "en": "Yoon Seong Lee",
@@ -26850,14 +28558,36 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Daejeon Hana Citizen U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Daejeon Hana Citizen",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Chungnam Mechanical Technical High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Daejeon Hana Citizen U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Daejeon Hana Citizen",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Chungnam Mechanical Technical High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -26888,6 +28618,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Sang Young Park in the Korea Republic u17 squad and records Daejeon Hana Citizen U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Sang Young Park",
       "en": "Sang Young Park",
@@ -26930,14 +28674,36 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Suwon Samsung Bluewings U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Suwon Samsung Bluewings",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Maetan High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Suwon Samsung Bluewings",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Maetan High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -26968,6 +28734,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Seo Jun Park in the Korea Republic u17 squad and records Suwon Samsung Bluewings U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Seo Jun Park",
       "en": "Seo Jun Park",
@@ -27010,14 +28790,36 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Jeonbuk Hyundai Motors U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Jeonbuk Hyundai Motors",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Jeonju Youngsaeng High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Jeonbuk Hyundai Motors U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Jeonbuk Hyundai Motors",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Jeonju Youngsaeng High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -27048,6 +28850,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Do Hun Park in the Korea Republic u17 squad and records Jeonbuk Hyundai Motors U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Do Hun Park",
       "en": "Do Hun Park",
@@ -27090,14 +28906,36 @@
     "weight_kg": 64,
     "registration_club": {
       "name": "Daejeon Hana Citizen U18",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "parent_organization": {
+        "name": "Daejeon Hana Citizen",
+        "country": "Korea Republic"
+      },
+      "education_partner": {
+        "name": "Chungnam Mechanical Technical High School",
+        "country": "Korea Republic"
+      }
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Daejeon Hana Citizen U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "korea-k-league-junior-u18",
+          "korea-k-league-youth-championship"
+        ],
+        "parent_organization": {
+          "name": "Daejeon Hana Citizen",
+          "country": "Korea Republic"
+        },
+        "education_partner": {
+          "name": "Chungnam Mechanical Technical High School",
+          "country": "Korea Republic"
+        }
       }
     ],
     "focus_tags": [
@@ -27128,6 +28966,20 @@
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
     },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jun Seo Kim in the Korea Republic u17 squad and records Daejeon Hana Citizen U18 as the tournament registration organization."
+      }
+    ],
     "names": {
       "zh": "Jun Seo Kim",
       "en": "Jun Seo Kim",
