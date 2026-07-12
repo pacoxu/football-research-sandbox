@@ -2,7 +2,7 @@
 
 更新时间：2026-07-12
 
-球员总数：209
+球员总数：232
 
 ## 状态汇总
 
@@ -11,7 +11,7 @@
 | ambiguous-profile | 3 |
 | available | 110 |
 | no-market-value | 31 |
-| profile-not-found | 63 |
+| profile-not-found | 86 |
 | team-page-only | 2 |
 
 ## 按国家/地区
@@ -22,6 +22,7 @@
 | China PR | 80 | 40 | 21 | 16 | 3 | 0 |
 | Japan | 52 | 23 | 7 | 22 | 0 | 0 |
 | Korea Republic | 50 | 24 | 0 | 25 | 1 | 0 |
+| Qatar | 23 | 0 | 0 | 23 | 0 | 0 |
 | Uzbekistan | 4 | 1 | 3 | 0 | 0 | 0 |
 
 ## 待人工复核

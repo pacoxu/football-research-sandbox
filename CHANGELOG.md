@@ -8,6 +8,9 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Added Qatar's complete 23-player AFC U20 Asian Cup 2025 final-squad comparison group with AFC/QFA source layers, dated registration-club snapshots, and official China PR match roles (11 starters, 3 used substitutes, 9 unused substitutes, and the Qatar goalscorer).
+- Added `official-match-summary` as a validated source layer and exact Qatar U20 roster/match-role assertions; Transfermarkt coverage is recorded as profile-not-found rather than manually estimated.
+
 - Added the China player-level `overseas_status` model, status counts in generated overview data, validation rules, SQLite support, and a bilingual status-scope card on the overseas page.
 
 - Added executable project-governance automation: PR validation CI, dynamic status badges, structured issue routing, and monthly/event/scope snapshot releases with hashed manifests.

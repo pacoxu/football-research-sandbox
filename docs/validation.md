@@ -108,6 +108,7 @@ flowchart LR
 `source_layers.type`：
 
 - `afc-registration`
+- `official-match-summary`
 - `national-fa-profile`
 - `club-academy-profile`
 - `school-profile`

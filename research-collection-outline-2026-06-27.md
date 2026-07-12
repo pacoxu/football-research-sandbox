@@ -162,7 +162,7 @@ U20 补采优先任务：
 | Australia | 仅赛事卡覆盖 | U20 2025 冠军队，U23 2024/2026，U17 2026 对照 | A-League/海外俱乐部、学院路径、国字号出场 |
 | Saudi Arabia | 仅赛事卡覆盖 | U20 2025 亚军/世青赛资格，U17 2025/2026，U23 2026 | 俱乐部青训、青年联赛路径 |
 | Iran | 待建 | U17/U20/U23 长期亚洲强队对照 | 国内俱乐部、海外路径、AFC 正赛数据 |
-| Qatar | 待建 | U17 2025/2026、U20 2025、世界杯青训项目对照 | Aspire/俱乐部路径、归化边界 |
+| Qatar | U20 2025 完整 23 人已建 | U17 2026、U23 2026、世界杯青训项目对照 | U20 已有 AFC/QFA 名单和对中国队 Match Summary；后续补官方阿文名、Aspire/俱乐部路径与归化边界 |
 
 当前已入库乌兹别克 U17 样本：
 
@@ -180,6 +180,7 @@ U20 补采优先任务：
 | 批次 | 官方入口 | 可直接抽取字段 | 缺口/注意 |
 |---|---|---|---|
 | Australia U20 2025 | Football Australia 公布的 AFC U20 2025 23 人名单；AFC U20 2025 final squad registration PDF | 英文名、位置、当前俱乐部、青少年俱乐部、member federation、赛事名单身份 | 生日和身高体重优先用 AFC PDF 复核；适合作为第一个完整 23 人对照组 |
+| Qatar U20 2025 | QFA 23 人名单公告；AFC U20 2025 updated squad list；中国足协托管的官方 Match Summary | 英文注册名、生日、位置、报名俱乐部、身高体重、号码、对中国队首发/替补/进球身份 | 官方逐名阿文名单未捕获，不反向音译；AFC 中 `CALTARAL` 字符串原样保留并标记待二次官方复核 |
 | Australia U17 2026 | Football Australia 公布的 AFC U17 2026 23 人名单；AFC U17 2026 final squad lists PDF | 英文名、位置、当前俱乐部、青少年俱乐部、member federation、赛事名单身份 | 生日、身高体重和 AFC 注册拼写用 AFC PDF 对齐 |
 | Saudi Arabia U23 2026 | AFC U23 2026 final registration PDF | 英文注册名、生日、位置、俱乐部、身高体重 | 本土阿文名需 SAFF 或俱乐部资料补；可先抽 8-12 名核心样本 |
 | Iran U23 2026 | AFC U23 2026 final registration PDF | 英文注册名、生日、位置、俱乐部、身高体重 | 波斯文名和俱乐部英文转写需 FFIRI/俱乐部官网交叉 |
@@ -189,9 +190,9 @@ U20 补采优先任务：
 
 首批建议顺序：
 
-1. 先做 Australia U20 2025：Football Australia 已给出完整 23 人名单和俱乐部/青训字段；若时间有限，先抽 8-12 名核心样本也能满足 #17 的最小验收。
-2. 再做 AFC U23 2026 横向抽样：Saudi Arabia、Iran、Qatar、Australia、Uzbekistan 都可用同一份 AFC final registration PDF 统一字段口径。
-3. Qatar U17 2026 和 Saudi Arabia U17 2025/2026 用本土足协公告补 native script，避免只保留英文转写。
+1. Australia U20 2025 与 Qatar U20 2025 已完成各 23 人完整对照组。
+2. 按 #52 完成 Qatar U17 2026 23 人，并优先从 QFA 官方公告补 native script。
+3. 再做 AFC U23 2026 横向抽样：Saudi Arabia、Iran、Qatar、Australia、Uzbekistan 可用同一份 AFC final registration PDF 统一字段口径。
 4. Uzbekistan U17 先从 4 人扩到 8-12 人，再决定是否补完整 23 人。
 
 `source_confidence` 建议：

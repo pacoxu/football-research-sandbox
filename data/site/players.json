@@ -33724,6 +33724,3436 @@
     }
   },
   {
+    "id": "qa-younis-bala-2005",
+    "name": "Younis Bala",
+    "local_name": "Younis Bala",
+    "country": "Qatar",
+    "birth_date": "2005-01-05",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 179,
+    "weight_kg": 63,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Younis Bala as Qatar No. 11."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Younis Bala as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Younis Bala",
+      "en": "Younis Bala",
+      "native": "Younis Bala",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-mohamed-khaled-gouda-2005",
+    "name": "Mohamed Khaled Gouda",
+    "local_name": "Mohamed Khaled Gouda",
+    "country": "Qatar",
+    "birth_date": "2005-01-26",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 178,
+    "weight_kg": 65,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Mohamed Khaled Gouda as Qatar No. 9."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Mohamed Khaled Gouda as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Mohamed Khaled Gouda",
+      "en": "Mohamed Khaled Gouda",
+      "native": "Mohamed Khaled Gouda",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-mohamed-faouzi-lengliz-2005",
+    "name": "Mohamed Faouzi Lengliz",
+    "local_name": "Mohamed Faouzi Lengliz",
+    "country": "Qatar",
+    "birth_date": "2005-03-09",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 183,
+    "weight_kg": 91,
+    "registration_club": {
+      "name": "ALAHLI",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALAHLI",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Mohamed Faouzi Lengliz as Qatar No. 21."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Mohamed Faouzi Lengliz as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Mohamed Faouzi Lengliz",
+      "en": "Mohamed Faouzi Lengliz",
+      "native": "Mohamed Faouzi Lengliz",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ayoub-mohamed-aloui-2005",
+    "name": "Ayoub Mohamed Aloui",
+    "local_name": "Ayoub Mohamed Aloui",
+    "country": "Qatar",
+    "birth_date": "2005-03-11",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "ALGHARAFA",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALGHARAFA",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ayoub Mohamed Aloui as Qatar No. 2."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Ayoub Mohamed Aloui as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained. No player-by-player official Arabic-script list was available in the checked sources, so no reverse transliteration was added."
+    },
+    "names": {
+      "zh": "Ayoub Mohamed Aloui",
+      "en": "Ayoub Mohamed Aloui",
+      "native": "Ayoub Mohamed Aloui",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-abdulaziz-mohamed-albakri-2005",
+    "name": "Abdulaziz Mohamed Albakri",
+    "local_name": "Abdulaziz Mohamed Albakri",
+    "country": "Qatar",
+    "birth_date": "2005-04-14",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 179,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "UMM SALAL",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "UMM SALAL",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Abdulaziz Mohamed Albakri as Qatar No. 19."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Abdulaziz Mohamed Albakri as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Abdulaziz Mohamed Albakri",
+      "en": "Abdulaziz Mohamed Albakri",
+      "native": "Abdulaziz Mohamed Albakri",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-motaman-mohamed-2005",
+    "name": "Motaman Mohamed",
+    "local_name": "Motaman Mohamed",
+    "country": "Qatar",
+    "birth_date": "2005-06-21",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 181,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "CALTARAL",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALTARAL",
+        "country": "Spain",
+        "note": "String preserved exactly from the AFC updated squad list; it may be a source spelling error and is not silently normalized."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Motaman Mohamed as Qatar No. 3 and prints registration club CALTARAL."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Motaman Mohamed as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-07-12",
+      "notes": "AFC club string CALTARAL is preserved as printed pending a second official club source. No reverse Arabic transliteration was added."
+    },
+    "names": {
+      "zh": "Motaman Mohamed",
+      "en": "Motaman Mohamed",
+      "native": "Motaman Mohamed",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ziad-fadi-eljaouni-2005",
+    "name": "Ziad Fadi Eljaouni",
+    "local_name": "Ziad Fadi Eljaouni",
+    "country": "Qatar",
+    "birth_date": "2005-07-03",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 172,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ziad Fadi Eljaouni as Qatar No. 20."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Ziad Fadi Eljaouni as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Ziad Fadi Eljaouni",
+      "en": "Ziad Fadi Eljaouni",
+      "native": "Ziad Fadi Eljaouni",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-fayiz-marwan-alfarsi-2005",
+    "name": "Fayiz Marwan Alfarsi",
+    "local_name": "Fayiz Marwan Alfarsi",
+    "country": "Qatar",
+    "birth_date": "2005-09-13",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 170,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "ALWAKRA",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALWAKRA",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started and left at 62' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": 62,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Fayiz Marwan Alfarsi as Qatar No. 12."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Fayiz Marwan Alfarsi as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Fayiz Marwan Alfarsi",
+      "en": "Fayiz Marwan Alfarsi",
+      "native": "Fayiz Marwan Alfarsi",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-abubaker-osman-2005",
+    "name": "Abubaker Osman",
+    "local_name": "Abubaker Osman",
+    "country": "Qatar",
+    "birth_date": "2005-09-25",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 189,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Abubaker Osman as Qatar No. 1."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Abubaker Osman as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained. No player-by-player official Arabic-script list was available in the checked sources, so no reverse transliteration was added."
+    },
+    "names": {
+      "zh": "Abubaker Osman",
+      "en": "Abubaker Osman",
+      "native": "Abubaker Osman",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-mohamed-hani-faragalla-2005",
+    "name": "Mohamed Hani Faragalla",
+    "local_name": "Mohamed Hani Faragalla",
+    "country": "Qatar",
+    "birth_date": "2005-10-10",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 178,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "ALSADD",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALSADD",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter",
+      "china-qatar-u20-2025-goalscorer"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started and scored at 55' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 1
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Mohamed Hani Faragalla as Qatar No. 16."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Mohamed Hani Faragalla as a starter and goalscorer against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Mohamed Hani Faragalla",
+      "en": "Mohamed Hani Faragalla",
+      "native": "Mohamed Hani Faragalla",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-moath-ibrahim-taha-2005",
+    "name": "Moath Ibrahim Taha",
+    "local_name": "Moath Ibrahim Taha",
+    "country": "Qatar",
+    "birth_date": "2005-10-12",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 185,
+    "weight_kg": 74,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started and left at 62' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": 62,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Moath Ibrahim Taha as Qatar No. 8."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Moath Ibrahim Taha as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Moath Ibrahim Taha",
+      "en": "Moath Ibrahim Taha",
+      "native": "Moath Ibrahim Taha",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ibrahim-mohammadali-2005",
+    "name": "Ibrahim Mohammadali",
+    "local_name": "Ibrahim Mohammadali",
+    "country": "Qatar",
+    "birth_date": "2005-10-26",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 184,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter",
+      "china-qatar-u20-2025-captain"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; captain and starter against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter-captain",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ibrahim Mohammadali as Qatar No. 10."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Ibrahim Mohammadali as Qatar captain and starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Ibrahim Mohammadali",
+      "en": "Ibrahim Mohammadali",
+      "native": "Ibrahim Mohammadali",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-abdolaziz-jafari-2006",
+    "name": "Abdolaziz Jafari",
+    "local_name": "Abdolaziz Jafari",
+    "country": "Qatar",
+    "birth_date": "2006-01-14",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 180,
+    "weight_kg": 66,
+    "registration_club": {
+      "name": "ALDUHAIL",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALDUHAIL",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-substitute-used"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; entered at 62' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "substitute-used",
+        "started": false,
+        "entered_minute": 62,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Abdolaziz Jafari as Qatar No. 15."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Abdolaziz Jafari entering at 62 minutes against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Abdolaziz Jafari",
+      "en": "Abdolaziz Jafari",
+      "native": "Abdolaziz Jafari",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-ali-mohammad-shahabi-2006",
+    "name": "Ali Mohammad Shahabi",
+    "local_name": "Ali Mohammad Shahabi",
+    "country": "Qatar",
+    "birth_date": "2006-01-29",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 183,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "ALAHLI",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALAHLI",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Ali Mohammad Shahabi as Qatar No. 5."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Ali Mohammad Shahabi as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Ali Mohammad Shahabi",
+      "en": "Ali Mohammad Shahabi",
+      "native": "Ali Mohammad Shahabi",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-galal-amir-elsharkawy-2006",
+    "name": "Galal Amir Elsharkawy",
+    "local_name": "Galal Amir Elsharkawy",
+    "country": "Qatar",
+    "birth_date": "2006-02-26",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 187,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Galal Amir Elsharkawy as Qatar No. 22."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Galal Amir Elsharkawy as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Galal Amir Elsharkawy",
+      "en": "Galal Amir Elsharkawy",
+      "native": "Galal Amir Elsharkawy",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-awab-mirghni-fadil-2006",
+    "name": "Awab Mirghni Fadil",
+    "local_name": "Awab Mirghni Fadil",
+    "country": "Qatar",
+    "birth_date": "2006-04-05",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 183,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Awab Mirghni Fadil as Qatar No. 18."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Awab Mirghni Fadil as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Awab Mirghni Fadil",
+      "en": "Awab Mirghni Fadil",
+      "native": "Awab Mirghni Fadil",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-abdulla-salman-al-otaibi-2006",
+    "name": "Abdulla Salman Al-Otaibi",
+    "local_name": "Abdulla Salman Al-Otaibi",
+    "country": "Qatar",
+    "birth_date": "2006-04-15",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 183,
+    "weight_kg": 74,
+    "registration_club": {
+      "name": "ALSADD",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALSADD",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started and received a yellow card at 57' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0,
+        "yellow_cards": 1
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Abdulla Salman Al-Otaibi as Qatar No. 4."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Abdulla Salman Al-Otaibi as a starter and cautioned at 57 minutes against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Abdulla Salman Al-Otaibi",
+      "en": "Abdulla Salman Al-Otaibi",
+      "native": "Abdulla Salman Al-Otaibi",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-yousef-mohammad-alnizami-2006",
+    "name": "Yousef Mohammad Alnizami",
+    "local_name": "Yousef Mohammad Alnizami",
+    "country": "Qatar",
+    "birth_date": "2006-04-16",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Yousef Mohammad Alnizami as Qatar No. 13."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Yousef Mohammad Alnizami as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Yousef Mohammad Alnizami",
+      "en": "Yousef Mohammad Alnizami",
+      "native": "Yousef Mohammad Alnizami",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-tahsin-mohammed-jamshid-2006",
+    "name": "Tahsin Mohammed Jamshid",
+    "local_name": "Tahsin Mohammed Jamshid",
+    "country": "Qatar",
+    "birth_date": "2006-06-16",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 177,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "ALCORCON",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALCORCON",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-starter"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; started and left at 73' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "starter",
+        "started": true,
+        "entered_minute": null,
+        "left_minute": 73,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Tahsin Mohammed Jamshid as Qatar No. 7."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Tahsin Mohammed Jamshid as a starter against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Tahsin Mohammed Jamshid",
+      "en": "Tahsin Mohammed Jamshid",
+      "native": "Tahsin Mohammed Jamshid",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-nasser-adil-babiker-2006",
+    "name": "Nasser Adil Babiker",
+    "local_name": "Nasser Adil Babiker",
+    "country": "Qatar",
+    "birth_date": "2006-08-26",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "ALAHLI",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALAHLI",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Nasser Adil Babiker as Qatar No. 23."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Nasser Adil Babiker as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Nasser Adil Babiker",
+      "en": "Nasser Adil Babiker",
+      "native": "Nasser Adil Babiker",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-bassam-adel-eid-2006",
+    "name": "Bassam Adel Eid",
+    "local_name": "Bassam Adel Eid",
+    "country": "Qatar",
+    "birth_date": "2006-09-25",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 179,
+    "weight_kg": 74,
+    "registration_club": {
+      "name": "ALCORCON",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALCORCON",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-substitute-used"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; entered at 62' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "substitute-used",
+        "started": false,
+        "entered_minute": 62,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Bassam Adel Eid as Qatar No. 6."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Bassam Adel Eid entering at 62 minutes against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Bassam Adel Eid",
+      "en": "Bassam Adel Eid",
+      "native": "Bassam Adel Eid",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-jassem-khalid-al-hamad-2006",
+    "name": "Jassem Khalid Al-Hamad",
+    "local_name": "Jassem Khalid Al-Hamad",
+    "country": "Qatar",
+    "birth_date": "2006-11-08",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 173,
+    "weight_kg": 64,
+    "registration_club": {
+      "name": "CALAHORRA",
+      "country": "Spain",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CALAHORRA",
+        "country": "Spain",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-unused-substitute"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; unused substitute against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "unused-substitute",
+        "started": false,
+        "entered_minute": null,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Jassem Khalid Al-Hamad as Qatar No. 14."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Jassem Khalid Al-Hamad as an unused substitute against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Jassem Khalid Al-Hamad",
+      "en": "Jassem Khalid Al-Hamad",
+      "native": "Jassem Khalid Al-Hamad",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
+    "id": "qa-noureldin-ibrahim-2007",
+    "name": "Noureldin Ibrahim",
+    "local_name": "Noureldin Ibrahim",
+    "country": "Qatar",
+    "birth_date": "2007-07-11",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 171,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "ALAHLI",
+      "country": "Qatar",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ALAHLI",
+        "country": "Qatar",
+        "note": "AFC updated squad list registration snapshot; not a claim of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "qatar-youth",
+      "afc-u20-2025",
+      "china-qatar-u20-2025-substitute-used"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Qatar final squad",
+        "team": "Qatar U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Final 23-player registration; entered at 73' against China PR on 2025-02-12."
+      }
+    ],
+    "matchday_records": [
+      {
+        "date": "2025-02-12",
+        "opponent": "China PR",
+        "role": "substitute-used",
+        "started": false,
+        "entered_minute": 73,
+        "left_minute": null,
+        "goals": 0
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "QFA 23-player squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china"
+      },
+      {
+        "type": "match",
+        "label": "China PR 2-1 Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list PDF",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration lists Noureldin Ibrahim as Qatar No. 17."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "QFA U20 Asian Cup squad announcement",
+        "url": "https://www.qfa.qa/en/news/qatar-u-20-squad-announced-for-afc-asian-cup-2025-in-china",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "tournament_participation"
+        ],
+        "claim": "QFA independently confirms the 23-player Qatar U20 squad."
+      },
+      {
+        "type": "official-match-summary",
+        "label": "China PR v Qatar official Match Summary",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "matchday_records"
+        ],
+        "claim": "Official Match Summary records Noureldin Ibrahim entering at 73 minutes against China PR."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "Official English registration name retained; no reverse Arabic transliteration added."
+    },
+    "names": {
+      "zh": "Noureldin Ibrahim",
+      "en": "Noureldin Ibrahim",
+      "native": "Noureldin Ibrahim",
+      "ja": "",
+      "ko": ""
+    },
+    "market_value": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    }
+  },
+  {
     "id": "uz-asilbek-aliev-2009",
     "name": "Asilbek Aliev",
     "local_name": "Алиев Асилбек",

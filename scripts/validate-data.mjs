@@ -70,6 +70,7 @@ const allowedPlayerRosterStatuses = new Set([
 
 const allowedSourceLayerTypes = new Set([
   "afc-registration",
+  "official-match-summary",
   "national-fa-profile",
   "club-academy-profile",
   "school-profile",
@@ -138,7 +139,8 @@ const issue47DeepSampleIds = new Set([
 ]);
 
 const completeSquadExpectations = new Map([
-  ["Australia|afc-u20-2025", 23]
+  ["Australia|afc-u20-2025", 23],
+  ["Qatar|afc-u20-2025", 23]
 ]);
 
 const allowedTournamentSourceVersionTypes = new Set([
@@ -1615,6 +1617,45 @@ export async function validateData() {
     );
     assert(independentOfficialLayers.length > 0, `Missing issue #47 deep-sample match source on ${playerId}`);
   }
+
+  const issue53Squad = completeSquads.get("Qatar|afc-u20-2025");
+  const issue53ShirtNumbers = new Set();
+  const issue53MatchRoles = new Map();
+  let issue53MatchGoals = 0;
+  for (const { player, entry } of issue53Squad) {
+    assert(player.age_band === "u20", `Invalid Qatar U20 age_band on ${player.id}`);
+    assert(entry.roster_status === "final-squad", `Invalid Qatar U20 roster_status on ${player.id}`);
+    assert(
+      Number.isInteger(entry.shirt_number) && entry.shirt_number >= 1 && entry.shirt_number <= 23,
+      `Invalid Qatar U20 shirt_number on ${player.id}`
+    );
+    assert(!issue53ShirtNumbers.has(entry.shirt_number), `Duplicate Qatar U20 shirt_number ${entry.shirt_number}`);
+    issue53ShirtNumbers.add(entry.shirt_number);
+    assert(
+      player.registration_club.status === "tournament-snapshot" &&
+        player.registration_club.as_of === "2025-02-12",
+      `Missing Qatar U20 registration snapshot on ${player.id}`
+    );
+    const afcLayers = player.source_layers.filter((layer) => layer.type === "afc-registration");
+    const qfaLayers = player.source_layers.filter((layer) => layer.type === "national-fa-profile");
+    const matchLayers = player.source_layers.filter((layer) => layer.type === "official-match-summary");
+    assert(afcLayers.length === 1 && afcLayers[0].confidence === "high", `Invalid AFC source on ${player.id}`);
+    assert(qfaLayers.length === 1 && qfaLayers[0].confidence === "high", `Invalid QFA source on ${player.id}`);
+    assert(matchLayers.length === 1 && matchLayers[0].confidence === "high", `Invalid match source on ${player.id}`);
+    assert(player.matchday_records?.length === 1, `Missing China PR match role on ${player.id}`);
+    const matchRecord = player.matchday_records[0];
+    assert(matchRecord.date === "2025-02-12" && matchRecord.opponent === "China PR", `Invalid match identity on ${player.id}`);
+    issue53MatchRoles.set(matchRecord.role, (issue53MatchRoles.get(matchRecord.role) ?? 0) + 1);
+    issue53MatchGoals += matchRecord.goals;
+  }
+  assert(issue53ShirtNumbers.size === 23, "Qatar U20 shirt numbers must cover the complete final squad");
+  assert(
+    (issue53MatchRoles.get("starter") ?? 0) + (issue53MatchRoles.get("starter-captain") ?? 0) === 11,
+    "Qatar must have 11 starters in the China PR Match Summary"
+  );
+  assert(issue53MatchRoles.get("substitute-used") === 3, "Qatar must have 3 used substitutes against China PR");
+  assert(issue53MatchRoles.get("unused-substitute") === 9, "Qatar must have 9 unused substitutes against China PR");
+  assert(issue53MatchGoals === 1, `Qatar China PR match goals must total 1, found ${issue53MatchGoals}`);
 
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
