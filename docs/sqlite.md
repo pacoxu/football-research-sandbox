@@ -45,6 +45,7 @@ erDiagram
     TEXT education_partner_json
     TEXT league_system_override
     TEXT overseas_bucket_override
+    TEXT overseas_status
     TEXT focus_tags_json
     TEXT verification_status
     TEXT verification_last_checked
@@ -217,7 +218,7 @@ erDiagram
 
 | 表 | 来源 | 说明 |
 | --- | --- | --- |
-| `players` | `data/raw/players/*.json` 经 loader 补全 | 球员主表；多语言姓名、注册俱乐部、校验状态和标签压到一行。 |
+| `players` | `data/raw/players/*.json` 经 loader 补全 | 球员主表；多语言姓名、注册俱乐部、留洋状态、校验状态和标签压到一行。 |
 | `player_pathways` | `players[].training_pathway` | 球员青训、学校、项目和俱乐部路径，按 `stage_order` 排序。 |
 | `player_competitions` | `players[].tournament_participation` | 球员赛事报名、出场、进球、分钟和名单状态。 |
 | `player_links` | `players[].external_links` | 球员外部来源链接。 |

@@ -43,7 +43,21 @@
 | `external_links` | 外部来源链接数组。 |
 | `verification` | 核验状态、日期和说明。 |
 
-可选字段包括 `height_cm`、`weight_kg`、`source_layers`、`league_system_override`、`overseas_bucket_override`、`market_value` 等。
+可选字段包括 `height_cm`、`weight_kg`、`source_layers`、`league_system_override`、`overseas_bucket_override`、`overseas_status`、`market_value` 等。
+
+### `overseas_status`
+
+中国留洋相关球员使用顶层 `overseas_status` 解释当前状态；与留洋无关的球员不需要填写。
+
+| 值 | 含义 | 是否进入当前留洋统计 |
+| --- | --- | --- |
+| `active-registered` | 当前有效海外注册。 | 是 |
+| `pending-effective` | 转会已确认但尚未到生效日。 | 否 |
+| `trial-watch` | 试训或明确关注线索，尚无正式注册。 | 否 |
+| `returned` | 有可信海外经历，当前已回国内注册。 | 否 |
+| `historical-only` | 退役或仅为历史研究保留的球员实体。 | 否 |
+
+`historical-only` 只用于球员实体，不写入 `overseas-history.json` 的单段 `featured_records`。状态的来源与最近核查日期继续由 `verification`、`external_links` 和相关路径 / 参与记录承载。
 
 ## `registration_club`
 
