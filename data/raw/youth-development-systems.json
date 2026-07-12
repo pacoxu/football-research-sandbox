@@ -1,0 +1,486 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-07-12",
+  "systems": [
+    {
+      "id": "japan-mens-youth",
+      "country": "Japan",
+      "name": {
+        "zh": "日本男足青训与校园足球体系",
+        "en": "Japan men's youth development system",
+        "native": "日本男子ユース育成・学校サッカー体系"
+      },
+      "summary": {
+        "zh": "JFA 第2种注册把高校足球部与俱乐部青年队纳入同一年龄层。两类组织都可进入高圆宫杯联赛金字塔，但高校专属杯赛和俱乐部专属赛事保持独立。",
+        "en": "JFA second-category registration places high-school teams and club youth teams in the same age band. Both can enter the Prince/Premier league pyramid, while school-only cups and the club-youth championship remain distinct."
+      },
+      "registration_categories": [
+        {
+          "id": "japan-jfa-second-category",
+          "age_band": "u18",
+          "label": {
+            "zh": "JFA 第2种",
+            "en": "JFA second category",
+            "native": "第2種"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy",
+            "overseas-academy"
+          ],
+          "source_url": "https://www.jfa.jp/registration/player_team/tournaments.html"
+        },
+        {
+          "id": "japan-university-registration",
+          "age_band": "university",
+          "label": {
+            "zh": "大学足球",
+            "en": "University football",
+            "native": "大学サッカー"
+          },
+          "organization_types": [
+            "university"
+          ],
+          "source_url": "https://www.jfa.jp/match/alljapan_university_2025/about.html"
+        }
+      ],
+      "competitions": [
+        {
+          "id": "japan-u18-prefectural-leagues",
+          "age_band": "u18",
+          "competition_type": "league-pyramid",
+          "tier": 3,
+          "name": {
+            "zh": "都道府县 U18 联赛",
+            "en": "Prefectural U18 leagues",
+            "native": "都道府県リーグ"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "地区基层联赛；表现优异球队可进入地区 Prince League 参入战或相应升降级路径。",
+            "en": "The prefectural base of the pyramid, feeding promotion routes toward the regional Prince Leagues."
+          },
+          "parent_competition_id": "japan-u18-prince-league",
+          "source_url": "https://www.jfa.jp/match/takamado_jfa_u18_premier2026/about_premier.html"
+        },
+        {
+          "id": "japan-u18-prince-league",
+          "age_band": "u18",
+          "competition_type": "league-pyramid",
+          "tier": 2,
+          "name": {
+            "zh": "高圆宫杯 JFA U18 Prince League",
+            "en": "Takamado JFA U18 Prince League",
+            "native": "高円宮杯 JFA U-18 サッカープリンスリーグ"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "北海道、东北、关东、北信越、东海、关西、中国、四国、九州九个地区联赛，上接 Premier League。",
+            "en": "Nine regional leagues—Hokkaido, Tohoku, Kanto, Hokushinetsu, Tokai, Kansai, Chugoku, Shikoku and Kyushu—below the Premier League."
+          },
+          "parent_competition_id": "japan-u18-premier-league",
+          "source_url": "https://www.jfa.jp/match/takamado_jfa_u18_premier2026/about_premier.html"
+        },
+        {
+          "id": "japan-u18-premier-league",
+          "age_band": "u18",
+          "competition_type": "league-pyramid",
+          "tier": 1,
+          "name": {
+            "zh": "高圆宫杯 JFA U18 Premier League",
+            "en": "Takamado JFA U18 Premier League",
+            "native": "高円宮杯 JFA U-18 サッカープレミアリーグ"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "全国最高层 U18 联赛，分 EAST 与 WEST；两区冠军参加 Final，末位球队降级并通过附加赛补充升级球队。",
+            "en": "The national top tier, split into EAST and WEST. Section winners meet in the Final, with relegation and promotion playoffs linking it to the Prince Leagues."
+          },
+          "annual_snapshot": {
+            "season": "2026",
+            "teams": 24,
+            "sections": [
+              "EAST",
+              "WEST"
+            ],
+            "note": {
+              "zh": "2026 赛季每区 12 队；年度队数属于快照，不作为永久规则。",
+              "en": "The 2026 snapshot has 12 teams per section; the team count is season-specific rather than a permanent rule."
+            }
+          },
+          "parent_competition_id": "japan-u18-premier-final",
+          "source_url": "https://www.jfa.jp/match/takamado_jfa_u18_premier2026/about_premier.html"
+        },
+        {
+          "id": "japan-u18-premier-final",
+          "age_band": "u18",
+          "competition_type": "league-final",
+          "tier": 0,
+          "name": {
+            "zh": "高圆宫杯 Premier League Final",
+            "en": "Takamado Premier League Final",
+            "native": "プレミアリーグ ファイナル"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "Premier League EAST 与 WEST 冠军之间的年度总决赛。",
+            "en": "The annual championship match between the EAST and WEST winners."
+          },
+          "source_url": "https://www.jfa.jp/match/takamado_jfa_u18_premier2026/about_premier.html"
+        },
+        {
+          "id": "japan-high-school-inter-high",
+          "age_band": "u18",
+          "competition_type": "school-cup",
+          "name": {
+            "zh": "全国高校综合体育大会足球赛",
+            "en": "National High School Sports Festival football tournament",
+            "native": "全国高等学校総合体育大会サッカー競技大会"
+          },
+          "organization_types": [
+            "high-school"
+          ],
+          "stable_structure": {
+            "zh": "高校球队专属的夏季全国淘汰赛，不能与俱乐部 U18 赛事混同。",
+            "en": "A summer national knockout competition reserved for high-school teams."
+          },
+          "source_url": "https://www.jfa.jp/match/koukou_soutai_2025/men/about.html"
+        },
+        {
+          "id": "japan-high-school-championship",
+          "age_band": "u18",
+          "competition_type": "school-cup",
+          "name": {
+            "zh": "全国高校足球选手权大会",
+            "en": "All Japan High School Soccer Tournament",
+            "native": "全国高等学校サッカー選手権大会"
+          },
+          "organization_types": [
+            "high-school"
+          ],
+          "stable_structure": {
+            "zh": "经都道府县预选产生代表队的冬季全国高校赛事。",
+            "en": "The winter national high-school championship, reached through prefectural qualification."
+          },
+          "source_url": "https://www.jfa.jp/match/alljapan_highschool_2025/about.html"
+        },
+        {
+          "id": "japan-club-youth-u18",
+          "age_band": "u18",
+          "competition_type": "club-cup",
+          "name": {
+            "zh": "日本俱乐部青年 U18 锦标赛",
+            "en": "Japan Club Youth U18 Championship",
+            "native": "日本クラブユースサッカー選手権（U-18）大会"
+          },
+          "organization_types": [
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "俱乐部青年队专属全国赛事。俱乐部 U18 也能参加高圆宫联赛，但本赛事不对高校足球部开放。",
+            "en": "A national competition for club youth teams. Club academies also play in the Takamado leagues, but this event is not a school competition."
+          },
+          "source_url": "https://www.jfa.jp/match/club_youth_u18_2025/about.html"
+        },
+        {
+          "id": "japan-university-regional-leagues",
+          "age_band": "university",
+          "competition_type": "university-league",
+          "name": {
+            "zh": "地区大学联赛",
+            "en": "Regional university leagues",
+            "native": "地域大学リーグ"
+          },
+          "organization_types": [
+            "university"
+          ],
+          "stable_structure": {
+            "zh": "大学球队的全年地区联赛体系，并与全国大学赛事构成大学阶段的主要比赛环境。",
+            "en": "Season-long regional university leagues that form the main university competition environment alongside national cups."
+          },
+          "source_url": "https://www.jfa.jp/match/alljapan_university_2025/about.html"
+        },
+        {
+          "id": "japan-prime-minister-cup",
+          "age_band": "university",
+          "competition_type": "university-cup",
+          "name": {
+            "zh": "总理大臣杯全日本大学足球赛",
+            "en": "Prime Minister's Cup All Japan University Tournament",
+            "native": "総理大臣杯全日本大学サッカートーナメント"
+          },
+          "organization_types": [
+            "university"
+          ],
+          "stable_structure": {
+            "zh": "大学球队参加的全国杯赛。",
+            "en": "A national cup competition for university teams."
+          },
+          "source_url": "https://www.jfa.jp/match/prime_minister_cup_2025/"
+        },
+        {
+          "id": "japan-all-university-championship",
+          "age_band": "university",
+          "competition_type": "university-cup",
+          "name": {
+            "zh": "全日本大学足球锦标赛",
+            "en": "All Japan University Football Championship",
+            "native": "全日本大学サッカー選手権大会"
+          },
+          "organization_types": [
+            "university"
+          ],
+          "stable_structure": {
+            "zh": "大学赛季的全国性锦标赛。",
+            "en": "A national championship at the university stage."
+          },
+          "source_url": "https://www.jfa.jp/match/alljapan_university_2025/about.html"
+        },
+        {
+          "id": "japan-special-designated-player",
+          "age_band": "bridge",
+          "competition_type": "professional-bridge",
+          "name": {
+            "zh": "JFA/J.League 特别指定球员制度",
+            "en": "JFA/J.League special-designated player system",
+            "native": "JFA・Jリーグ特別指定選手制度"
+          },
+          "organization_types": [
+            "high-school",
+            "university",
+            "professional-club"
+          ],
+          "stable_structure": {
+            "zh": "符合条件的大学或高中注册球员可在保留原注册的同时参加指定 J.League 俱乐部活动，形成校园足球到职业队的桥梁。",
+            "en": "Eligible university or high-school players can retain their school registration while participating with a designated J.League club, creating a bridge into the professional game."
+          },
+          "source_url": "https://www.jfa.jp/youth_development/honor_players/"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "JFA registration and tournament categories",
+          "url": "https://www.jfa.jp/registration/player_team/tournaments.html",
+          "checked_at": "2026-07-12"
+        },
+        {
+          "label": "JFA Takamado Premier/Prince structure",
+          "url": "https://www.jfa.jp/match/takamado_jfa_u18_premier2026/about_premier.html",
+          "checked_at": "2026-07-12"
+        },
+        {
+          "label": "JFA special-designated player system",
+          "url": "https://www.jfa.jp/youth_development/honor_players/",
+          "checked_at": "2026-07-12"
+        }
+      ]
+    },
+    {
+      "id": "korea-republic-mens-youth",
+      "country": "Korea Republic",
+      "name": {
+        "zh": "韩国男足青训、学校与大学体系",
+        "en": "Korea Republic men's youth, school and university system",
+        "native": "대한민국 남자 유소년·학교·대학 축구 체계"
+      },
+      "summary": {
+        "zh": "韩国高中年龄层同时存在普通高中足球部和 K League 俱乐部 U18。部分俱乐部 U18 以合作高中名义参赛，因此母俱乐部与教育合作学校必须分别记录。",
+        "en": "Korea's high-school age band includes independent school teams and K League U18 academies. Some club academies compete under partner-school identities, so the parent club and education partner must be stored separately."
+      },
+      "registration_categories": [
+        {
+          "id": "korea-high-school-age-registration",
+          "age_band": "u18",
+          "label": {
+            "zh": "KFA 高中年龄层",
+            "en": "KFA high-school age registration",
+            "native": "고등부"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy"
+          ],
+          "source_url": "https://img.kfa.or.kr/data_rule/youth_rule_2026_01.pdf"
+        },
+        {
+          "id": "korea-university-registration",
+          "age_band": "university",
+          "label": {
+            "zh": "KFA 大学年龄层",
+            "en": "KFA university registration",
+            "native": "대학부"
+          },
+          "organization_types": [
+            "university"
+          ],
+          "source_url": "https://www.kfa.or.kr/competition/?act=lg_u"
+        }
+      ],
+      "competitions": [
+        {
+          "id": "korea-national-high-school-league",
+          "age_band": "u18",
+          "competition_type": "school-league",
+          "name": {
+            "zh": "KFA 全国高中联赛",
+            "en": "KFA National High School League",
+            "native": "전국 고등 축구리그"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "KFA 管理的高中年龄层联赛环境，既包含普通学校队，也可能出现以合作高中身份注册的职业俱乐部 U18。",
+            "en": "The KFA high-school league environment includes independent schools and professional-club U18 teams registered through partner-school identities."
+          },
+          "parent_competition_id": "korea-high-school-championship",
+          "source_url": "https://img.kfa.or.kr/data_rule/youth_rule_2026_01.pdf"
+        },
+        {
+          "id": "korea-high-school-championship",
+          "age_band": "u18",
+          "competition_type": "school-championship",
+          "name": {
+            "zh": "高中联赛王中王赛",
+            "en": "High School League Championship",
+            "native": "고등리그 왕중왕전"
+          },
+          "organization_types": [
+            "high-school",
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "全国高中联赛体系的阶段性冠军赛；参赛身份应按当年竞赛规程核查。",
+            "en": "The championship stage of the national high-school league system; entries must be checked against the rules for each season."
+          },
+          "source_url": "https://img.kfa.or.kr/data_rule/youth_rule_2026_01.pdf"
+        },
+        {
+          "id": "korea-k-league-junior-u18",
+          "age_band": "u18",
+          "competition_type": "club-league",
+          "name": {
+            "zh": "K League Junior U18",
+            "en": "K League Junior U18",
+            "native": "K리그 주니어 U18"
+          },
+          "organization_types": [
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "K League 职业俱乐部 U18 梯队的全年联赛。球队常同时显示俱乐部梯队名和合作高中名。",
+            "en": "The season-long league for K League club U18 academies, whose listings often pair the club academy with an education-partner high school."
+          },
+          "source_url": "https://www.kleague.com/youth/junior.do"
+        },
+        {
+          "id": "korea-k-league-junior-u17",
+          "age_band": "u17",
+          "competition_type": "club-league",
+          "name": {
+            "zh": "K League Junior U17",
+            "en": "K League Junior U17",
+            "native": "K리그 주니어 U17"
+          },
+          "organization_types": [
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "职业俱乐部梯队的低年龄补充联赛，不等同于独立 U17 学校体系。",
+            "en": "A younger-age competition attached to professional club academies, not a separate school system."
+          },
+          "source_url": "https://www.kleague.com/youth/junior.do"
+        },
+        {
+          "id": "korea-k-league-youth-championship",
+          "age_band": "u18",
+          "competition_type": "club-cup",
+          "name": {
+            "zh": "K League 青少年锦标赛",
+            "en": "K League Youth Championship",
+            "native": "K리그 유스 챔피언십"
+          },
+          "organization_types": [
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "K League 俱乐部青训队参加的集中赛会制赛事，与 Junior 全年联赛分开记录。",
+            "en": "A tournament event for K League academies, recorded separately from the season-long Junior league."
+          },
+          "source_url": "https://www.kleague.com/youth/youth.do"
+        },
+        {
+          "id": "korea-university-u-league",
+          "age_band": "university",
+          "competition_type": "university-league",
+          "name": {
+            "zh": "KFA U-League",
+            "en": "KFA U-League",
+            "native": "대학 U리그"
+          },
+          "organization_types": [
+            "university"
+          ],
+          "stable_structure": {
+            "zh": "韩国大学球队的主要联赛通道，是学校年龄层向职业足球过渡的重要阶段。",
+            "en": "The main league pathway for Korean university teams and an important bridge from school-age football toward the professional game."
+          },
+          "source_url": "https://www.kfa.or.kr/competition/?act=lg_u"
+        },
+        {
+          "id": "korea-military-service-pathway",
+          "age_band": "senior",
+          "competition_type": "professional-bridge",
+          "name": {
+            "zh": "Gimcheon Sangmu 成年军队球队",
+            "en": "Gimcheon Sangmu senior military-service club",
+            "native": "김천상무프로축구단"
+          },
+          "organization_types": [
+            "military-service-club"
+          ],
+          "stable_structure": {
+            "zh": "Gimcheon Sangmu 是成年职业军队球队，应作为服役阶段的职业路径节点，不归入 U18 青训梯队。",
+            "en": "Gimcheon Sangmu is a senior professional military-service club and must be treated as an adult career node, not as a youth academy."
+          },
+          "source_url": "https://www.gimcheonfc.com/"
+        }
+      ],
+      "source_links": [
+        {
+          "label": "K League Junior",
+          "url": "https://www.kleague.com/youth/junior.do",
+          "checked_at": "2026-07-12"
+        },
+        {
+          "label": "K League Youth Championship",
+          "url": "https://www.kleague.com/youth/youth.do",
+          "checked_at": "2026-07-12"
+        },
+        {
+          "label": "KFA U-League",
+          "url": "https://www.kfa.or.kr/competition/?act=lg_u",
+          "checked_at": "2026-07-12"
+        },
+        {
+          "label": "KFA 2026 youth competition rules",
+          "url": "https://img.kfa.or.kr/data_rule/youth_rule_2026_01.pdf",
+          "checked_at": "2026-07-12"
+        }
+      ]
+    }
+  ]
+}

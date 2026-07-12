@@ -241,6 +241,10 @@ export async function loadDataset() {
     path.join(paths.raw, "asian-coaches.json"),
     null
   );
+  const youthDevelopmentSystems = await readOptionalJson(
+    path.join(paths.raw, "youth-development-systems.json"),
+    { schema_version: 1, checked_at: null, systems: [] }
+  );
 
   return {
     players,
@@ -252,6 +256,7 @@ export async function loadDataset() {
     chinaMenYouthCoaches,
     bigFiveAsianCoaches,
     asianCoaches,
+    youthDevelopmentSystems,
     clubNameOverrides
   };
 }

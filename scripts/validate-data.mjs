@@ -57,10 +57,53 @@ const allowedSourceLayerTypes = new Set([
   "national-fa-profile",
   "club-academy-profile",
   "school-profile",
+  "university-profile",
+  "club-profile",
   "league-registration"
 ]);
 
 const allowedSourceLayerConfidence = new Set(["high", "medium", "low"]);
+
+const allowedOrganizationTypes = new Set([
+  "high-school",
+  "club-academy",
+  "university",
+  "professional-club",
+  "military-service-club",
+  "overseas-academy"
+]);
+
+const allowedYouthCompetitionTypes = new Set([
+  "league-pyramid",
+  "league-final",
+  "school-cup",
+  "club-cup",
+  "university-league",
+  "university-cup",
+  "professional-bridge",
+  "school-league",
+  "school-championship",
+  "club-league"
+]);
+
+const issue16DeepSampleIds = new Set([
+  "jp-rei-ono-2009",
+  "jp-aran-sato-2010",
+  "jp-takaya-sekine-2009",
+  "jp-masataka-kobayashi-2005",
+  "jp-kaito-tsuchiya-2006",
+  "jp-kosei-ogura-2005",
+  "kr-seung-min-lee-2009",
+  "kr-geon-woo-park-2009",
+  "kr-moon-hyunho-2003",
+  "kr-bae-hyunseo-2005",
+  "kr-lee-chanouk-2003",
+  "kr-kim-taewon-2005",
+  "kr-kim-yonghak-2003",
+  "jp-ryosuke-furukawa-2009",
+  "jp-tomoyasu-hamasaki-2005",
+  "kr-woo-jin-jin-2009"
+]);
 
 const allowedTournamentSourceVersionTypes = new Set([
   "afc-final-registration",
@@ -182,6 +225,81 @@ function validateSourceLayer(layer, label) {
   for (const field of layer.fields) {
     assert(typeof field === "string" && field.length > 0, `Invalid source layer field on ${label}`);
   }
+  if (["school-profile", "club-academy-profile", "university-profile", "club-profile"].includes(layer.type)) {
+    assert(
+      !layer.url.includes("assets.the-afc.com"),
+      `Organization source layer must not reuse an AFC document on ${label}`
+    );
+  }
+}
+
+function validateLocalizedText(value, label) {
+  assert(typeof value === "object" && value !== null, `Invalid localized text on ${label}`);
+  assert(typeof value.zh === "string" && value.zh.length > 0, `Missing Chinese text on ${label}`);
+  assert(typeof value.en === "string" && value.en.length > 0, `Missing English text on ${label}`);
+}
+
+function validateOrganizationReference(value, label) {
+  assert(typeof value === "object" && value !== null, `Invalid organization reference on ${label}`);
+  assert(typeof value.name === "string" && value.name.length > 0, `Missing organization name on ${label}`);
+  assert(typeof value.country === "string" && value.country.length > 0, `Missing organization country on ${label}`);
+}
+
+function validateYouthDevelopmentSystems(payload) {
+  assert(payload?.schema_version === 1, "Unsupported youth-development-systems schema version");
+  assert(isIsoDate(payload.checked_at), "Invalid youth-development-systems checked_at");
+  assert(Array.isArray(payload.systems) && payload.systems.length === 2, "Expected Japan and Korea youth systems");
+
+  const systemIds = new Set();
+  const competitionIds = new Set();
+  for (const system of payload.systems) {
+    assert(!systemIds.has(system.id), `Duplicate youth system id: ${system.id}`);
+    systemIds.add(system.id);
+    assert(["Japan", "Korea Republic"].includes(system.country), `Invalid youth system country: ${system.id}`);
+    validateLocalizedText(system.name, `${system.id}.name`);
+    validateLocalizedText(system.summary, `${system.id}.summary`);
+    assert(Array.isArray(system.registration_categories), `Invalid registration categories on ${system.id}`);
+    for (const category of system.registration_categories) {
+      assert(category.id && category.age_band, `Invalid registration category on ${system.id}`);
+      validateLocalizedText(category.label, `${category.id}.label`);
+      assert(/^https?:\/\//.test(category.source_url), `Invalid registration source on ${category.id}`);
+      assert(Array.isArray(category.organization_types), `Invalid organization types on ${category.id}`);
+      for (const organizationType of category.organization_types) {
+        assert(allowedOrganizationTypes.has(organizationType), `Invalid organization type on ${category.id}`);
+      }
+    }
+    assert(Array.isArray(system.competitions) && system.competitions.length > 0, `Missing competitions on ${system.id}`);
+    for (const competition of system.competitions) {
+      assert(!competitionIds.has(competition.id), `Duplicate youth competition id: ${competition.id}`);
+      competitionIds.add(competition.id);
+      assert(allowedYouthCompetitionTypes.has(competition.competition_type), `Invalid competition type on ${competition.id}`);
+      validateLocalizedText(competition.name, `${competition.id}.name`);
+      validateLocalizedText(competition.stable_structure, `${competition.id}.stable_structure`);
+      assert(/^https?:\/\//.test(competition.source_url), `Invalid source URL on ${competition.id}`);
+      assert(Array.isArray(competition.organization_types), `Invalid organization types on ${competition.id}`);
+      for (const organizationType of competition.organization_types) {
+        assert(allowedOrganizationTypes.has(organizationType), `Invalid organization type on ${competition.id}`);
+      }
+      if (competition.annual_snapshot !== undefined) {
+        assert(typeof competition.annual_snapshot.season === "string", `Invalid annual snapshot on ${competition.id}`);
+        validateLocalizedText(competition.annual_snapshot.note, `${competition.id}.annual_snapshot.note`);
+      }
+    }
+    for (const source of system.source_links) {
+      assert(source.label && /^https?:\/\//.test(source.url), `Invalid youth system source on ${system.id}`);
+      assert(isIsoDate(source.checked_at), `Invalid youth system source date on ${system.id}`);
+    }
+  }
+
+  for (const system of payload.systems) {
+    for (const competition of system.competitions) {
+      if (competition.parent_competition_id !== undefined) {
+        assert(competitionIds.has(competition.parent_competition_id), `Unknown parent competition on ${competition.id}`);
+      }
+    }
+  }
+
+  return competitionIds;
 }
 
 function validateTournamentSourceVersion(source, tournamentId) {
@@ -1080,6 +1198,13 @@ export async function validateData() {
   const playerIdentityKeys = new Map();
   const tournamentIds = new Set(dataset.tournaments.map((item) => item.id));
   const overseasBucketIds = new Set(dataset.overseasHistory.bucket_definition ?? []);
+  const youthCompetitionIds = validateYouthDevelopmentSystems(dataset.youthDevelopmentSystems);
+  const issue16Squads = new Map([
+    ["Japan|afc-u17-2026", []],
+    ["Japan|afc-u23-2026", []],
+    ["Korea Republic|afc-u17-2026", []],
+    ["Korea Republic|afc-u23-2026", []]
+  ]);
 
   for (const player of dataset.players) {
     for (const field of requiredPlayerFields) {
@@ -1094,6 +1219,18 @@ export async function validateData() {
         typeof player.registration_club?.country === "string",
       `Invalid registration_club for ${player.id}`
     );
+    if (player.registration_club.organization_type !== undefined) {
+      assert(
+        allowedOrganizationTypes.has(player.registration_club.organization_type),
+        `Invalid registration club organization_type on ${player.id}`
+      );
+    }
+    if (player.registration_club.parent_organization !== undefined) {
+      validateOrganizationReference(player.registration_club.parent_organization, `${player.id}.parent_organization`);
+    }
+    if (player.registration_club.education_partner !== undefined) {
+      validateOrganizationReference(player.registration_club.education_partner, `${player.id}.education_partner`);
+    }
     assert(player.training_pathway.length > 0, `Empty training_pathway for ${player.id}`);
     for (const step of player.training_pathway) {
       assert(
@@ -1104,6 +1241,21 @@ export async function validateData() {
       );
       if (step.pathway_meta !== undefined) {
         assert(Array.isArray(step.pathway_meta), `Invalid pathway_meta on ${player.id}`);
+      }
+      if (step.organization_type !== undefined) {
+        assert(allowedOrganizationTypes.has(step.organization_type), `Invalid pathway organization_type on ${player.id}`);
+      }
+      if (step.competition_context_ids !== undefined) {
+        assert(Array.isArray(step.competition_context_ids), `Invalid competition_context_ids on ${player.id}`);
+        for (const contextId of step.competition_context_ids) {
+          assert(youthCompetitionIds.has(contextId), `Unknown youth competition context ${contextId} on ${player.id}`);
+        }
+      }
+      if (step.parent_organization !== undefined) {
+        validateOrganizationReference(step.parent_organization, `${player.id}.pathway.parent_organization`);
+      }
+      if (step.education_partner !== undefined) {
+        validateOrganizationReference(step.education_partner, `${player.id}.pathway.education_partner`);
       }
     }
     assert(player.external_links.length > 0, `Empty external_links for ${player.id}`);
@@ -1125,6 +1277,10 @@ export async function validateData() {
         allowedSquadStatuses.has(entry.squad_status),
         `Invalid squad_status "${entry.squad_status}" on player ${player.id}`
       );
+      const issue16Squad = issue16Squads.get(`${player.country}|${entry.competition_id}`);
+      if (issue16Squad !== undefined) {
+        issue16Squad.push(player);
+      }
     }
     validateVerificationBlock(player.verification, player.id);
     for (const identityKey of getIdentityKeys(player)) {
@@ -1154,6 +1310,39 @@ export async function validateData() {
     }
 
     playerIds.add(player.id);
+  }
+
+  const issue16Players = [...issue16Squads.values()].flat();
+  for (const [squadKey, squad] of issue16Squads) {
+    assert(squad.length === 23, `Expected 23 players in issue #16 squad ${squadKey}, found ${squad.length}`);
+  }
+  assert(issue16Players.length === 92, `Expected 92 issue #16 players, found ${issue16Players.length}`);
+  for (const player of issue16Players) {
+    assert(
+      allowedOrganizationTypes.has(player.registration_club.organization_type),
+      `Missing issue #16 organization_type on ${player.id}`
+    );
+    const afcLayers = (player.source_layers ?? []).filter((layer) => layer.type === "afc-registration");
+    assert(afcLayers.length === 1, `Expected one AFC registration source on ${player.id}`);
+    const currentPathway = player.training_pathway.find(
+      (step) => step.organization === player.registration_club.name
+    );
+    assert(currentPathway !== undefined, `Current registration missing from pathway on ${player.id}`);
+    assert(
+      currentPathway.organization_type === player.registration_club.organization_type,
+      `Pathway organization type differs from current registration on ${player.id}`
+    );
+  }
+  for (const playerId of issue16DeepSampleIds) {
+    const player = issue16Players.find((candidate) => candidate.id === playerId);
+    assert(player !== undefined, `Missing issue #16 deep sample ${playerId}`);
+    const afcUrls = new Set(
+      player.source_layers.filter((layer) => layer.type === "afc-registration").map((layer) => layer.url)
+    );
+    const independentLayers = player.source_layers.filter(
+      (layer) => layer.type !== "afc-registration" && !afcUrls.has(layer.url)
+    );
+    assert(independentLayers.length > 0, `Missing independent official source layer on ${playerId}`);
   }
 
   for (const tournament of dataset.tournaments) {
