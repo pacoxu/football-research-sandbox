@@ -1,6 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { summarizeMarketValuePayload } from "./lib/market-values.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const RAW_PLAYERS_DIR = path.join(ROOT, "data/raw/players");
@@ -34,31 +35,6 @@ function deriveMarketValueUrl(profileUrl, playerId) {
   } catch {
     return profileUrl;
   }
-}
-
-function formatCompact(compact, fallbackValue) {
-  if (typeof fallbackValue !== "number" || fallbackValue <= 0) {
-    return "";
-  }
-
-  if (fallbackValue >= 1_000_000) {
-    return `€${(fallbackValue / 1_000_000).toFixed(2)}m`;
-  }
-
-  return `€${Math.round(fallbackValue / 1_000)}k`;
-}
-
-function buildMarketValuePoint(marketValue) {
-  if (!marketValue?.value || marketValue.value <= 0) {
-    return null;
-  }
-
-  return {
-    eur: marketValue.value,
-    currency: marketValue.currency ?? "EUR",
-    display: formatCompact(marketValue.compact, marketValue.value),
-    date: marketValue.determined ?? null
-  };
 }
 
 async function readPlayerFiles() {
@@ -115,10 +91,18 @@ async function buildSnapshot(tempDir) {
         checked_at: checkedAt,
         status: "team-page-only",
         source,
+        lookup: {
+          checked_at: checkedAt,
+          status: "team-page-only",
+          method: "existing-link",
+          candidate_urls: [transfermarktLink.url]
+        },
+        history: [],
         history_points: 0,
         current: null,
         peak: null,
-        last_change_date: null
+        last_change_date: null,
+        alternatives: []
       };
       continue;
     }
@@ -129,33 +113,36 @@ async function buildSnapshot(tempDir) {
         checked_at: checkedAt,
         status: "fetch-error",
         source,
+        lookup: {
+          checked_at: checkedAt,
+          status: "fetch-error",
+          method: "existing-link",
+          candidate_urls: [transfermarktLink.url]
+        },
+        history: [],
         history_points: 0,
         current: null,
         peak: null,
-        last_change_date: null
+        last_change_date: null,
+        alternatives: []
       };
       continue;
     }
 
-    const history = Array.isArray(payload.data.history) ? payload.data.history : [];
-    const currentPoint = buildMarketValuePoint(payload.data.current?.marketValue);
-    const peakHistoryEntry = history.reduce((best, entry) => {
-      const nextValue = entry?.marketValue?.value ?? 0;
-      const bestValue = best?.marketValue?.value ?? 0;
-      return nextValue > bestValue ? entry : best;
-    }, null);
-    const peakPoint = buildMarketValuePoint(peakHistoryEntry?.marketValue);
-    const lastChangeDate =
-      history[history.length - 1]?.marketValue?.determined ?? currentPoint?.date ?? null;
+    const summary = summarizeMarketValuePayload(payload);
 
     marketValues[player.id] = {
       checked_at: checkedAt,
-      status: currentPoint || peakPoint ? "available" : "no-market-value",
+      ...summary,
       source,
-      history_points: history.length,
-      current: currentPoint,
-      peak: peakPoint,
-      last_change_date: lastChangeDate
+      lookup: {
+        checked_at: checkedAt,
+        status: "confirmed",
+        method: "existing-link",
+        candidate_urls: [transfermarktLink.url]
+      },
+      alternatives: [],
+      last_success_at: checkedAt
     };
   }
 
