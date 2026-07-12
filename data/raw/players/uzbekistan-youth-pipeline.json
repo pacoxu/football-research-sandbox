@@ -1,0 +1,116 @@
+[
+  {
+    "id": "uz-abdukodir-khusanov-2004",
+    "name": "Abdukodir Khusanov",
+    "local_name": "Абдукодир Хусанов",
+    "country": "Uzbekistan",
+    "birth_date": "2004-02-29",
+    "age_band": "u23",
+    "primary_position": "Centre-Back",
+    "height_cm": 186,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Manchester City",
+      "country": "England",
+      "organization_type": "professional-club"
+    },
+    "league_system_override": "England top flight",
+    "overseas_bucket_override": "big-five",
+    "training_pathway": [
+      {
+        "stage_label": "塔什干青训",
+        "organization": "FC Bunyodkor youth",
+        "country": "Uzbekistan",
+        "organization_type": "club-academy",
+        "note": "英超官方专题将本尤德科列为其青训起点；其父 Hikmat Hashimov 也曾长期效力该俱乐部。"
+      },
+      {
+        "stage_label": "2022 首次成年留洋",
+        "organization": "Energetik-BGU Minsk",
+        "country": "Belarus",
+        "organization_type": "professional-club",
+        "note": "2022 年 3 月在尚未完成乌兹别克成年队首秀前赴白俄罗斯，迅速进入一线队。"
+      },
+      {
+        "stage_label": "2023 五大联赛节点",
+        "organization": "RC Lens",
+        "country": "France",
+        "organization_type": "professional-club",
+        "note": "2023 年夏从 Energetik-BGU 转会朗斯，逐步成为法甲高评价年轻中卫。"
+      },
+      {
+        "stage_label": "2025 英超节点",
+        "organization": "Manchester City",
+        "country": "England",
+        "organization_type": "professional-club",
+        "note": "2025 年 1 月从朗斯加盟曼城，合同至 2029 年夏；随后成为首位在英超出场的乌兹别克斯坦球员。"
+      }
+    ],
+    "focus_tags": [
+      "uzbekistan-youth",
+      "u23-watch",
+      "overseas-europe",
+      "big-five-first-team",
+      "defender-watch"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2023",
+        "label": "乌兹别克斯坦 U20 亚洲冠军一代",
+        "team": "Uzbekistan U20",
+        "squad_status": "used",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "FIFA 将其列为 2023 U20 亚洲杯冠军防线的核心成员；球队七场仅失一球。"
+      },
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "乌兹别克斯坦首次奥运资格一代",
+        "team": "Uzbekistan U23",
+        "squad_status": "used",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC 球员档案记录其参加 2024 U23 亚洲杯；乌兹别克斯坦获得亚军并首次晋级奥运男足。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "club",
+        "label": "Manchester City signing announcement",
+        "url": "https://www.mancity.com/news/mens/abdukodir-khusanov-signing-manchester-city-63872992",
+        "note": "用于核对曼城注册、朗斯转会节点、合同期限和位置。"
+      },
+      {
+        "type": "official",
+        "label": "Premier League Khusanov pathway feature",
+        "url": "https://www.premierleague.com/en/news/4221260",
+        "note": "用于核对本尤德科青训、白俄罗斯成年起步及首位乌兹别克英超球员背景。"
+      },
+      {
+        "type": "official",
+        "label": "FIFA Uzbekistan U20 2023 profile",
+        "url": "https://www.fifa.com/en/articles/uzbekistan-u-20-world-cup-argentina-2023-coach-star-player",
+        "note": "用于核对其在 U20 亚洲冠军队中的核心中卫角色和技术特点。"
+      },
+      {
+        "type": "official",
+        "label": "FIFA Uzbekistan World Cup 2026 squad profile",
+        "url": "https://www.fifa.com/en/articles/uzbekistan-cannavaro-preliminary-squad",
+        "note": "用于核对其作为成年国家队和首次世界杯阵容核心的当前身份。"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/abdukodir-khusanov/profil/spieler/763079",
+        "note": "用于身高和市场价值同步；不作为俱乐部与国家队经历的唯一来源。"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-07-12",
+      "notes": "俱乐部与国家队路径由 Manchester City、Premier League 和 FIFA 官方资料交叉核对。英文常用 Abdukodir Khusanov，乌兹别克拉丁转写也常见 Abduqodir Husanov；主档沿用曼城和 FIFA 的国际注册拼写。曼城介绍将身高概述为约 1.90 米，Transfermarkt 登记为 1.86 米，结构化字段采用后者并保留冲突说明。"
+    }
+  }
+]
