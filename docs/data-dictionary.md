@@ -15,7 +15,7 @@
 | `data/raw/big-five-asian-coaches.json` | 五大联赛亚洲教练主表和边界说明。 | 是 |
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
-| `data/raw/player-market-values.json` | Transfermarkt 身价快照。 | 是，通常由脚本辅助刷新 |
+| `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/site/players.json` | 前端使用的球员聚合 JSON。 | 否，由脚本生成 |
 | `data/site/overview.json` | 首页和专题页使用的聚合总览。 | 否，由脚本生成 |
 | `storage/youth-football.sqlite` | 本地 SQLite 查询库。 | 否，不提交 |

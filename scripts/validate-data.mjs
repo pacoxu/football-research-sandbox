@@ -1,4 +1,5 @@
 import { loadDataset } from "./lib/data-loader.mjs";
+import { MARKET_VALUE_STATUSES } from "./lib/market-values.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -285,6 +286,46 @@ function validateMarketValuePoint(point, playerId, label) {
     point.date === null || isIsoDate(point.date),
     `Invalid market_value ${label}.date on ${playerId}`
   );
+}
+
+function validateMarketValueSeries(record, playerId, label = "market_value") {
+  assert(typeof record === "object" && record !== null, `Invalid ${label} on ${playerId}`);
+  assert(MARKET_VALUE_STATUSES.has(record.status), `Invalid ${label} status on ${playerId}`);
+  assert(isIsoDate(record.checked_at), `Invalid ${label} checked_at on ${playerId}`);
+  assert(
+    typeof record.source?.provider === "string" &&
+      typeof record.source?.profile_url === "string",
+    `Invalid ${label} source on ${playerId}`
+  );
+  assert(Array.isArray(record.history), `Missing ${label} history on ${playerId}`);
+
+  let previousDate = "";
+  const historyKeys = new Set();
+  for (const [index, point] of record.history.entries()) {
+    validateMarketValuePoint(point, playerId, `${label}.history[${index}]`);
+    assert(point.date !== null, `Missing ${label} history date on ${playerId}`);
+    assert(point.date >= previousDate, `Unsorted ${label} history on ${playerId}`);
+    previousDate = point.date;
+    const key = `${point.date}|${point.currency}|${point.eur}`;
+    assert(!historyKeys.has(key), `Duplicate ${label} history point on ${playerId}: ${key}`);
+    historyKeys.add(key);
+  }
+
+  assert(
+    Number.isInteger(record.history_points) && record.history_points === record.history.length,
+    `Invalid ${label} history_points on ${playerId}`
+  );
+  if (record.current !== null && record.current !== undefined) {
+    validateMarketValuePoint(record.current, playerId, `${label}.current`);
+  }
+  if (record.peak !== null && record.peak !== undefined) {
+    validateMarketValuePoint(record.peak, playerId, `${label}.peak`);
+    const maximum = Math.max(0, ...record.history.map((point) => point.eur));
+    assert(record.peak.eur === maximum, `Invalid ${label} peak on ${playerId}`);
+  }
+  if (record.last_change_date !== null && record.last_change_date !== undefined) {
+    assert(isIsoDate(record.last_change_date), `Invalid ${label} last_change_date on ${playerId}`);
+  }
 }
 
 function validateOverseasRecord(record, countryName, allowedBuckets) {
@@ -627,39 +668,11 @@ export async function validateData() {
         `Invalid overseas_bucket_override on ${player.id}`
       );
     }
-    if (player.market_value !== undefined) {
-      assert(typeof player.market_value === "object" && player.market_value !== null, `Invalid market_value on ${player.id}`);
-      assert(
-        typeof player.market_value.status === "string" && player.market_value.status.length > 0,
-        `Missing market_value status on ${player.id}`
-      );
-      assert(
-        typeof player.market_value.checked_at === "string" && isIsoDate(player.market_value.checked_at),
-        `Invalid market_value checked_at on ${player.id}`
-      );
-      assert(
-        typeof player.market_value.source?.provider === "string" &&
-          typeof player.market_value.source?.profile_url === "string",
-        `Invalid market_value source on ${player.id}`
-      );
-      if (player.market_value.current !== null && player.market_value.current !== undefined) {
-        validateMarketValuePoint(player.market_value.current, player.id, "current");
-      }
-      if (player.market_value.peak !== null && player.market_value.peak !== undefined) {
-        validateMarketValuePoint(player.market_value.peak, player.id, "peak");
-      }
-      if (player.market_value.last_change_date !== null && player.market_value.last_change_date !== undefined) {
-        assert(
-          isIsoDate(player.market_value.last_change_date),
-          `Invalid market_value last_change_date on ${player.id}`
-        );
-      }
-      if (player.market_value.history_points !== undefined) {
-        assert(
-          Number.isInteger(player.market_value.history_points) && player.market_value.history_points >= 0,
-          `Invalid market_value history_points on ${player.id}`
-        );
-      }
+    assert(player.market_value !== undefined, `Missing market_value coverage on ${player.id}`);
+    validateMarketValueSeries(player.market_value, player.id);
+    assert(Array.isArray(player.market_value.alternatives), `Invalid market_value alternatives on ${player.id}`);
+    for (const [index, alternative] of player.market_value.alternatives.entries()) {
+      validateMarketValueSeries(alternative, player.id, `market_value.alternatives[${index}]`);
     }
 
     playerIds.add(player.id);
