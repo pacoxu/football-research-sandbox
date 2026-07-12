@@ -1,5 +1,72 @@
 [
   {
+    "id": "afc-u20-2027",
+    "name": "AFC U20 Asian Cup China PR 2027",
+    "short_name": "AFC U20 2027",
+    "focus_level": "primary",
+    "status": "upcoming",
+    "last_checked": "2026-07-12",
+    "date_range": {
+      "start": null,
+      "end": null
+    },
+    "date_precision": "tbc",
+    "focus_teams": [
+      "China PR",
+      "Japan",
+      "Korea Republic",
+      "Australia"
+    ],
+    "headline": "中国已确定主办 2027 U20 亚洲杯；决赛圈日期、其余参赛队和分组待官方公布。",
+    "notes": [
+      "AFC 于 2025-12-04 确认中国连续第二届承办 U20 亚洲杯。",
+      "截至 2026-07-12，44 支球队的资格赛抽签已经完成，资格阶段与发展阶段分开进行。",
+      "资格赛定于 2026-08-25 至 2026-09-06 期间举行；决赛圈分组尚未抽签。"
+    ],
+    "sources": [
+      {
+        "label": "AFC appoints China PR as 2027 host",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/about_afc/committees.html/news/china-pr-to-host-afc-u20-asian-cup-2027%E2%84%A2"
+      },
+      {
+        "label": "AFC U20 2027 qualifiers draw and schedule",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2027_AFC_U20_Asian_Cup/Qualifiers/Draw/Encl---Draw-Results-%26-Match-Schedule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-2027",
+    "name": "FIFA U-20 World Cup Azerbaijan/Uzbekistan 2027",
+    "short_name": "U20 World Cup 2027",
+    "focus_level": "reference",
+    "status": "upcoming",
+    "last_checked": "2026-07-12",
+    "date_range": {
+      "start": null,
+      "end": null
+    },
+    "date_precision": "tbc",
+    "focus_teams": [
+      "Azerbaijan",
+      "Uzbekistan"
+    ],
+    "headline": "阿塞拜疆与乌兹别克斯坦已获 2027 世青赛联合主办权；日期、晋级球队和分组待定。",
+    "notes": [
+      "FIFA Council 于 2025-10-02 任命阿塞拜疆和乌兹别克斯坦为联合主办国。",
+      "当前只记录官方确认的主办身份，不推断自动晋级或未公布的决赛圈球队。",
+      "截至 2026-07-12，比赛日期和决赛圈抽签尚未公布。"
+    ],
+    "sources": [
+      {
+        "label": "FIFA Council appoints 2027 co-hosts",
+        "publisher": "FIFA",
+        "url": "https://inside.fifa.com/organisation/fifa-council/media-releases/fifa-council-calls-for-peace-and-takes-key-decisions-on-football-governance"
+      }
+    ]
+  },
+  {
     "id": "cfa-yinchuan-u17-2026",
     "name": "2026 CFA Team China Yinchuan International Youth Football Championship",
     "short_name": "Yinchuan U17 2026",
@@ -137,7 +204,7 @@
     "short_name": "AFC U20 2025",
     "focus_level": "reference",
     "status": "completed",
-    "last_checked": "2026-05-23",
+    "last_checked": "2026-07-11",
     "date_range": {
       "start": "2025-02-12",
       "end": "2025-03-01"
@@ -153,7 +220,7 @@
     "notes": [
       "澳大利亚在 2025-03-01 决赛点球击败沙特，拿到队史首个 U20 亚洲杯冠军。",
       "中国队小组赛先后击败卡塔尔、吉尔吉斯斯坦，最后八强 0 比 1 负于沙特。",
-      "该届赛事适合继续补 2005 年龄段国青主干与中超 / 留洋去向衔接。"
+      "中国队原始终报名与更新赛事名单各 23 人，22 号门将由 Yuan Jianrui 更新为 Zhang Haoran；四场逐人出场和分钟已从官方 Match Summary 汇总。"
     ],
     "sources": [
       {
@@ -170,6 +237,16 @@
         "label": "AFC U20 China 2025 schedule",
         "publisher": "AFC",
         "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Match_schedule/AFC-U20-Asian-Cup-China-2025-Match-Schedule-.pdf"
+      },
+      {
+        "label": "AFC U20 China 2025 updated squad list",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "label": "Saudi Arabia 1-0 China PR Match Summary",
+        "publisher": "CFA/AFC",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1740363646557.pdf"
       }
     ]
   },

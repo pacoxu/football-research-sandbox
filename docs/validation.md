@@ -11,7 +11,7 @@ npm run validate-data
 成功时会输出类似：
 
 ```text
-Validated 185 players, 13 tournaments, 9 projects.
+Validated 186 players, 13 tournaments, 9 projects.
 ```
 
 ## 校验链路
@@ -19,8 +19,9 @@ Validated 185 players, 13 tournaments, 9 projects.
 ```mermaid
 flowchart LR
   Raw["data/raw/**"] --> Loader["loadDataset()"]
-  Loader --> Names["补 names"]
-  Loader --> Market["合并 player-market-values"]
+  Loader --> TournamentStats["合并 tournament statistics"]
+  TournamentStats --> Names["补 names"]
+  Names --> Market["合并 player-market-values"]
   Market --> Validate["validateData()"]
   Validate --> Result["通过或抛出第一处错误"]
 ```
@@ -53,10 +54,14 @@ flowchart LR
 
 赛事和专题：
 
-- `tournaments[].last_checked`、`date_range.start`、`date_range.end` 必须是日期。
+- `tournaments[].last_checked` 必须是日期；`date_precision=exact` 时起止日期必填，`date_precision=tbc` 时起止日期必须同时为空。
 - `overseas-history` 的 bucket、featured records、big five checklist 结构必须可用。
 - `dossiers` 必须有 `id`、`name`、`last_reviewed`、`timeline`、`roster_views`，可选 link audit 和 search disambiguation 也会校验日期与数组结构。
-- `tournament-archive` 必须有赛事 ID、名称、日期、来源链接、中国队比赛和关键球员数组；可选 `source_version`、`source_checked_at`、`source_conflict_note`、`competition_name_history` 如出现也会校验结构。
+- `tournament-archive` 必须有赛事 ID、名称、合法日期精度、来源链接、中国队比赛和关键球员数组；可选 `source_version`、`source_checked_at`、`source_conflict_note`、`competition_name_history` 如出现也会校验结构。
+- 男足 U20 档案必须精确覆盖 1985—2025 的 21 届 FIFA 周期和 21 届 AFC 周期，并保留取消的 FIFA 2021、AFC 2020 以及两条 2027 future 记录。
+- 已完赛 U20 届次的 `participants` 与 `final_draw.groups` 必须完整、无重复且集合严格一致；future/cancelled 届次允许部分名单、空冠军和待定/取消抽签。
+- AFC 2027 资格赛必须保留 44 支唯一球队，且不得被写入决赛圈 `participants`。
+- 中国 U20 2025 必须保留原始终报名 23 人、更新赛事名单 23 人和 1 次门将替换；四份官方 Match Summary 汇总需保持 20 人出场、61 人次、44 次首发、3960 分钟和 8 球，并与 loader 合并后的球员记录一致。
 - `china-men-youth-coaches` 校验队伍周期、教练、集训节点、staff 和来源链接。
 - `big-five-asian-coaches` 校验来源链接、scope count、教练战绩和 club records 加总。
 - `asian-coaches` 校验教练 ID、统计口径、任期范围、`role_scope`、`competition_scope`、官方来源类型、核查日期和可选战绩。

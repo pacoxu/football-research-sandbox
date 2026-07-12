@@ -251,6 +251,26 @@ const UI_COPY = {
     "tournamentDetail.context.headline": "当前摘要",
     "tournamentDetail.context.focusTeams": "重点队伍",
     "tournamentDetail.context.empty": "当前只有基础赛事档案，还没有额外专题说明。",
+    "tournamentDetail.field.eyebrow": "Teams & Draw",
+    "tournamentDetail.field.title": "参赛资格与分组",
+    "tournamentDetail.field.meta": "决赛圈记录 {count} 支球队 · 最后核查 {date}",
+    "tournamentDetail.field.participants": "决赛圈球队",
+    "tournamentDetail.field.participantsComplete": "完整参赛名单",
+    "tournamentDetail.field.participantsPartial": "当前已确认 / 主办方快照",
+    "tournamentDetail.field.participantsCancelled": "赛事取消时的资格快照",
+    "tournamentDetail.field.entry.host": "主办国",
+    "tournamentDetail.field.entry.qualified": "已晋级",
+    "tournamentDetail.field.entry.participant": "参赛",
+    "tournamentDetail.field.finalDraw": "决赛圈分组",
+    "tournamentDetail.field.drawPending": "决赛圈尚未抽签",
+    "tournamentDetail.field.drawCancelled": "赛事已取消；下列为取消前已公布的分组",
+    "tournamentDetail.field.qualifiers": "资格赛分组",
+    "tournamentDetail.field.phase.qualification": "资格阶段",
+    "tournamentDetail.field.phase.development": "发展阶段",
+    "tournamentDetail.field.phaseDates": "{start} 至 {end}",
+    "tournamentDetail.field.groupHost": "赛区：{host}",
+    "tournamentDetail.field.group.finalRound": "决赛轮",
+    "tournamentDetail.field.group.group": "{name}组",
     "tournamentDetail.history.eyebrow": "History",
     "tournamentDetail.history.title": "中日韩历届战绩",
     "tournamentDetail.history.empty": "当前这条赛事还没有补到中日韩历届战绩。",
@@ -356,7 +376,7 @@ const UI_COPY = {
     "playerDetail.links.empty": "当前样本没有外部链接。",
     "tournaments.hero.eyebrow": "Tournament Directory",
     "tournaments.hero.title": "赛事列表",
-    "tournaments.hero.text": "这里汇总 2020 年之后的亚洲杯各年龄段、世界杯、世青赛、世少赛，并单独展开中国战绩与比赛明细。",
+    "tournaments.hero.text": "这里汇总 1985 年以来的男足 U20 世青赛与亚青赛完整届次，并保留其他亚洲杯、世界杯和世少赛档案。",
     "tournaments.filter.eyebrow": "Filter",
     "tournaments.focus.eyebrow": "Focus Pool",
     "tournaments.focus.title": "重点赛事",
@@ -368,6 +388,11 @@ const UI_COPY = {
     "tournaments.archive.completedResult": "{champion} 冠军 / {runnerUp} 亚军",
     "tournaments.archive.ongoingResult": "进行中 / 结果待定",
     "tournaments.archive.upcomingResult": "即将开始 / 结果待定",
+    "tournaments.archive.cancelledResult": "赛事取消 / 无冠军",
+    "tournaments.archive.fieldSummary": "决赛圈球队 {count} 支 · {draw}",
+    "tournaments.archive.drawComplete": "分组已确认",
+    "tournaments.archive.drawPending": "分组待定",
+    "tournaments.archive.drawCancelled": "取消前分组快照",
     "tournaments.archive.matchLabel": "中国 vs {opponent} {score} ({result})",
     "tournaments.archive.noContrib": "本场暂无已录入的进球 / 助攻事件。",
     "tournaments.archive.noChinaMatches": "中国队在该赛事无已录入比赛，或未参赛。",
@@ -647,6 +672,26 @@ const UI_COPY = {
     "tournamentDetail.context.headline": "Current headline",
     "tournamentDetail.context.focusTeams": "Focus teams",
     "tournamentDetail.context.empty": "Only the base archive record is available for this tournament so far.",
+    "tournamentDetail.field.eyebrow": "Teams & Draw",
+    "tournamentDetail.field.title": "Qualification and groups",
+    "tournamentDetail.field.meta": "{count} finals teams recorded · Last checked {date}",
+    "tournamentDetail.field.participants": "Finals teams",
+    "tournamentDetail.field.participantsComplete": "Complete participant list",
+    "tournamentDetail.field.participantsPartial": "Currently confirmed / host snapshot",
+    "tournamentDetail.field.participantsCancelled": "Qualification snapshot when cancelled",
+    "tournamentDetail.field.entry.host": "Host",
+    "tournamentDetail.field.entry.qualified": "Qualified",
+    "tournamentDetail.field.entry.participant": "Participant",
+    "tournamentDetail.field.finalDraw": "Finals groups",
+    "tournamentDetail.field.drawPending": "The finals draw has not taken place",
+    "tournamentDetail.field.drawCancelled": "Tournament cancelled; groups shown were announced before cancellation",
+    "tournamentDetail.field.qualifiers": "Qualifying groups",
+    "tournamentDetail.field.phase.qualification": "Qualification Phase",
+    "tournamentDetail.field.phase.development": "Development Phase",
+    "tournamentDetail.field.phaseDates": "{start} to {end}",
+    "tournamentDetail.field.groupHost": "Group host: {host}",
+    "tournamentDetail.field.group.finalRound": "Final round",
+    "tournamentDetail.field.group.group": "Group {name}",
     "tournamentDetail.history.eyebrow": "History",
     "tournamentDetail.history.title": "China, Japan and Korea Republic by edition",
     "tournamentDetail.history.empty": "No East Asia edition history is attached to this tournament yet.",
@@ -752,7 +797,7 @@ const UI_COPY = {
     "playerDetail.links.empty": "No external links for this sample yet.",
     "tournaments.hero.eyebrow": "Tournament Directory",
     "tournaments.hero.title": "Tournament directory",
-    "tournaments.hero.text": "This page consolidates post-2020 Asian Cups by age group, the World Cup, the U-20 World Cup, and the U-17 World Cup, with separate China results and match detail.",
+    "tournaments.hero.text": "This archive covers every men's U-20 World Cup and AFC U20 Asian Cup cycle since 1985, alongside the existing Asian Cup, World Cup, and U-17 records.",
     "tournaments.filter.eyebrow": "Filter",
     "tournaments.focus.eyebrow": "Focus Pool",
     "tournaments.focus.title": "Focus tournaments",
@@ -764,6 +809,11 @@ const UI_COPY = {
     "tournaments.archive.completedResult": "{champion} champions / {runnerUp} runners-up",
     "tournaments.archive.ongoingResult": "Ongoing / result pending",
     "tournaments.archive.upcomingResult": "Upcoming / result pending",
+    "tournaments.archive.cancelledResult": "Tournament cancelled / no champion",
+    "tournaments.archive.fieldSummary": "{count} finals teams · {draw}",
+    "tournaments.archive.drawComplete": "draw confirmed",
+    "tournaments.archive.drawPending": "draw pending",
+    "tournaments.archive.drawCancelled": "pre-cancellation draw snapshot",
     "tournaments.archive.matchLabel": "China vs {opponent} {score} ({result})",
     "tournaments.archive.noContrib": "No recorded goal or assist event for this match yet.",
     "tournaments.archive.noChinaMatches": "No China match has been recorded for this tournament, or China did not qualify.",
@@ -923,6 +973,7 @@ const STATUS_LABELS = {
   completed: { zh: "已结束", en: "Completed" },
   ongoing: { zh: "进行中", en: "Ongoing" },
   upcoming: { zh: "未开始", en: "Upcoming" },
+  cancelled: { zh: "已取消", en: "Cancelled" },
   "in-progress": { zh: "进行中", en: "In progress" }
 };
 
@@ -935,9 +986,11 @@ const CHINA_STATUS_LABELS = {
   "runner-up": { zh: "亚军", en: "Runners-up" },
   "finalist-ongoing": { zh: "决赛进行中", en: "Final in progress" },
   qualified: { zh: "已晋级", en: "Qualified" },
+  host: { zh: "主办国", en: "Host" },
   preparation: { zh: "备战", en: "Preparation" },
   "did-not-qualify": { zh: "未晋级", en: "Did not qualify" },
-  "did-not-participate": { zh: "未参赛", en: "Did not participate" }
+  "did-not-participate": { zh: "未参赛", en: "Did not participate" },
+  "qualification-cancelled": { zh: "资格路径取消", en: "Qualification cancelled" }
 };
 
 const TOURNAMENT_HISTORY_STAGE_LABELS = {
@@ -1735,6 +1788,9 @@ function formatDate(value) {
 }
 
 function formatRange(range) {
+  if (!range?.start && !range?.end) {
+    return t("common.pending");
+  }
   return `${formatDate(range.start)} - ${formatDate(range.end)}`;
 }
 
@@ -2234,14 +2290,18 @@ function getTournamentDisplayName(id) {
 }
 
 function getTournamentResultSummary(tournament) {
-  return tournament.status === "completed"
-    ? t("tournaments.archive.completedResult", {
-        champion: tournament.champion || "-",
-        runnerUp: tournament.runner_up || "-"
-      })
-    : tournament.status === "ongoing"
-      ? t("tournaments.archive.ongoingResult")
-      : t("tournaments.archive.upcomingResult");
+  if (tournament.status === "completed") {
+    return t("tournaments.archive.completedResult", {
+      champion: tournament.champion || "-",
+      runnerUp: tournament.runner_up || "-"
+    });
+  }
+  if (tournament.status === "cancelled") {
+    return t("tournaments.archive.cancelledResult");
+  }
+  return tournament.status === "ongoing"
+    ? t("tournaments.archive.ongoingResult")
+    : t("tournaments.archive.upcomingResult");
 }
 
 function mergeTournamentLinks(archiveTournament, focusTournament) {
@@ -4197,11 +4257,131 @@ function renderPlayerDetailPage() {
   body.hidden = false;
 }
 
+function formatTournamentGroupName(name) {
+  if (name === "Final round") {
+    return t("tournamentDetail.field.group.finalRound");
+  }
+  const match = String(name ?? "").match(/^Group\s+(.+)$/i);
+  return match
+    ? t("tournamentDetail.field.group.group", { name: match[1] })
+    : localizeText(name);
+}
+
+function getTournamentParticipantStatusLabel(status) {
+  const keys = {
+    complete: "tournamentDetail.field.participantsComplete",
+    partial: "tournamentDetail.field.participantsPartial",
+    "cancelled-snapshot": "tournamentDetail.field.participantsCancelled"
+  };
+  return t(keys[status] ?? "tournamentDetail.field.participantsPartial");
+}
+
+function getTournamentEntryStatusLabel(status) {
+  return t(`tournamentDetail.field.entry.${status}`);
+}
+
+function formatTournamentQualifierPhase(phase) {
+  const key = phase === "Development Phase" ? "development" : "qualification";
+  return t(`tournamentDetail.field.phase.${key}`);
+}
+
+function renderTournamentGroupCard(group) {
+  return `
+    <article class="tournament-group-card">
+      <h3>${escapeHtml(formatTournamentGroupName(group.name))}</h3>
+      ${group.host ? `<p class="small-note">${escapeHtml(t("tournamentDetail.field.groupHost", { host: formatCountryName(group.host) }))}</p>` : ""}
+      <div class="chip-row">
+        ${(group.teams ?? []).map((team) => `<span class="chip">${escapeHtml(formatCountryName(team))}</span>`).join("")}
+      </div>
+    </article>
+  `;
+}
+
+function renderTournamentField(tournament, elements) {
+  const { section, meta, participants, finalDraw, qualifiers } = elements;
+  if (!section || !tournament?.participants || !tournament?.final_draw) {
+    if (section) section.hidden = true;
+    return;
+  }
+
+  const participantRows = tournament.participants.teams ?? [];
+  meta.textContent = t("tournamentDetail.field.meta", {
+    count: participantRows.length,
+    date: tournament.source_checked_at ? formatDate(tournament.source_checked_at) : t("common.pending")
+  });
+
+  participants.innerHTML = `
+    <article class="stack-card tournament-field-block">
+      <div class="section-head compact-head">
+        <h3>${escapeHtml(t("tournamentDetail.field.participants"))}</h3>
+        <span class="chip">${escapeHtml(getTournamentParticipantStatusLabel(tournament.participants.status))}</span>
+      </div>
+      <div class="chip-row">
+        ${participantRows
+          .map(
+            (entry) => `
+              <span class="chip tournament-team-chip">
+                ${escapeHtml(formatCountryName(entry.team))}
+                <small>${escapeHtml(getTournamentEntryStatusLabel(entry.entry_status))}</small>
+              </span>
+            `
+          )
+          .join("")}
+      </div>
+    </article>
+  `;
+
+  const draw = tournament.final_draw;
+  const drawHeading = `<div class="section-head compact-head tournament-field-heading tournament-field-span"><h3>${escapeHtml(t("tournamentDetail.field.finalDraw"))}</h3></div>`;
+  if (draw.groups?.length) {
+    const note = draw.status === "cancelled"
+      ? `<p class="small-note tournament-field-note">${escapeHtml(t("tournamentDetail.field.drawCancelled"))}</p>`
+      : "";
+    finalDraw.innerHTML = `${drawHeading}${note}${draw.groups.map(renderTournamentGroupCard).join("")}`;
+  } else {
+    finalDraw.innerHTML = `${drawHeading}<div class="empty-inline tournament-field-span">${escapeHtml(t("tournamentDetail.field.drawPending"))}</div>`;
+  }
+
+  const qualifierPhases = tournament.qualifiers ?? [];
+  qualifiers.innerHTML = qualifierPhases.length
+    ? `
+      <div class="section-head compact-head tournament-field-heading">
+        <h3>${escapeHtml(t("tournamentDetail.field.qualifiers"))}</h3>
+      </div>
+      ${qualifierPhases
+        .map(
+          (phase) => `
+            <article class="stack-card tournament-field-block">
+              <div class="section-head compact-head">
+                <h3>${escapeHtml(formatTournamentQualifierPhase(phase.phase))}</h3>
+                <span class="chip">${escapeHtml(t("tournamentDetail.field.phaseDates", {
+                  start: formatDate(phase.date_range.start),
+                  end: formatDate(phase.date_range.end)
+                }))}</span>
+              </div>
+              <div class="tournament-group-grid">
+                ${phase.groups.map(renderTournamentGroupCard).join("")}
+              </div>
+            </article>
+          `
+        )
+        .join("")}
+    `
+    : "";
+
+  section.hidden = false;
+}
+
 function renderTournamentDetailPage() {
   const hero = document.querySelector("#tournamentDetailHero");
   const body = document.querySelector("#tournamentDetailBody");
   const stats = document.querySelector("#tournamentDetailStats");
   const context = document.querySelector("#tournamentDetailContext");
+  const fieldSection = document.querySelector("#tournamentDetailFieldSection");
+  const fieldMeta = document.querySelector("#tournamentDetailFieldMeta");
+  const participants = document.querySelector("#tournamentDetailParticipants");
+  const finalDraw = document.querySelector("#tournamentDetailFinalDraw");
+  const qualifiers = document.querySelector("#tournamentDetailQualifiers");
   const regionalHistorySection = document.querySelector("#tournamentDetailRegionalHistorySection");
   const regionalHistoryScope = document.querySelector("#tournamentDetailRegionalHistoryScope");
   const regionalHistorySummary = document.querySelector("#tournamentDetailRegionalHistorySummary");
@@ -4336,6 +4516,14 @@ function renderTournamentDetailPage() {
         </article>
       `
       : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.context.empty"))}</div>`;
+
+  renderTournamentField(archiveTournament, {
+    section: fieldSection,
+    meta: fieldMeta,
+    participants,
+    finalDraw,
+    qualifiers
+  });
 
   const regionalHistory = archiveTournament?.regional_history;
   regionalHistorySection.hidden = !regionalHistory;
@@ -4775,12 +4963,17 @@ function renderTournamentLevelTabs() {
 }
 
 function getFilteredTournaments() {
-  return state.overview.tournament_archive.filter((tournament) => {
-    if (state.tournamentFilters.level === "all") {
-      return true;
-    }
-    return tournament.level === state.tournamentFilters.level;
-  });
+  return state.overview.tournament_archive
+    .filter((tournament) => {
+      if (state.tournamentFilters.level === "all") {
+        return true;
+      }
+      return tournament.level === state.tournamentFilters.level;
+    })
+    .sort((left, right) =>
+      Number(right.edition_label ?? 0) - Number(left.edition_label ?? 0) ||
+      left.competition_name.localeCompare(right.competition_name)
+    );
 }
 
 function getFilteredFocusTournaments() {
@@ -4840,6 +5033,15 @@ function renderArchiveTournamentCard(tournament) {
           )
           .join("")
       : `<p class="small-note">${escapeHtml(t("tournaments.archive.noChinaMatches"))}</p>`;
+  const participantCount = tournament.participants?.teams?.length ?? 0;
+  const drawLabel = tournament.final_draw?.status === "complete"
+    ? t("tournaments.archive.drawComplete")
+    : tournament.final_draw?.status === "cancelled"
+      ? t("tournaments.archive.drawCancelled")
+      : t("tournaments.archive.drawPending");
+  const fieldSummary = tournament.participants
+    ? `<p class="small-note">${escapeHtml(t("tournaments.archive.fieldSummary", { count: participantCount, draw: drawLabel }))}</p>`
+    : "";
 
   return `
     <article class="archive-card">
@@ -4855,6 +5057,7 @@ function renderArchiveTournamentCard(tournament) {
       </div>
       <p>${formatRange(tournament.date_range)} · ${escapeHtml(formatCountryName(tournament.host))}</p>
       <p>${escapeHtml(titleResult)}</p>
+      ${fieldSummary}
       <p class="small-note">${escapeHtml(t("tournaments.archive.chinaSummary", { summary: localizeText(tournament.china_summary) }))}</p>
       <p class="small-note">${escapeHtml(t("tournaments.archive.chinaStage", { stage: formatChinaStatus(tournament.china_status) }))}</p>
       <div class="archive-match-list">${matches}</div>

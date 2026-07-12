@@ -96,8 +96,11 @@
 | `label` | 可读名称。 |
 | `team` | 代表队、俱乐部或项目名。 |
 | `squad_status` | 名单状态，例如 `registered`、`called-up`、`tracked`、`pending-transfer`。 |
+| `roster_status` | 可选的细分边界，例如实际赛事名单、赛前替补、被替换或后续集训；具体枚举由赛事 archive 的 `roster_boundary` 说明。 |
 | `appearances`、`goals`、`minutes` | 出场、进球、分钟；未知用 `null`。 |
 | `note` | 统计范围和来源说明。 |
+
+部分赛事会在 `tournament-archive` 集中维护逐人统计，并由 loader 合并到此字段。中国 U20 2025 即采用这一方式，以避免跨多个球员文件重复维护四场 Match Summary 的汇总数字。
 
 ## `external_links`
 
@@ -139,7 +142,22 @@
 | `notes` | 口径、赛果和边界说明。 |
 | `sources` | 赛事来源列表。 |
 
-`data/raw/tournament-archive.json` 维护更细的历史赛事、赛果、中国队比赛、关键球员、`source_version` 和 `source_conflict_note`。
+`data/raw/tournament-archive.json` 维护更细的历史赛事、赛果、中国队比赛、关键球员、`source_version` 和 `source_conflict_note`。男子 U20 谱系另使用以下统一字段：
+
+| 字段 | 含义 |
+| --- | --- |
+| `status` | `completed`、`upcoming` 或 `cancelled`；取消届冠军、亚军为空。 |
+| `date_range`、`date_precision` | 精确日期使用 `exact`；官方日期未公布时使用 `tbc`，且开始、结束日期均为 `null`。 |
+| `participants.status` | `complete`、`partial` 或 `cancelled-snapshot`。 |
+| `participants.teams[]` | 决赛圈球队；包含 `team`、`entry_status`，可选 `qualification_route`、`confirmed_at`。 |
+| `participants.teams[].entry_status` | `host`、`qualified` 或 `participant`。主办身份不自动改写为资格赛晋级。 |
+| `final_draw.status` | `complete`、`pending` 或 `cancelled`。 |
+| `final_draw.groups[]` | 决赛圈小组，每组包含 `name` 和 `teams`；必须与完整参赛队全集一致且不得重复。 |
+| `qualifiers[]` | 可选资格赛层，包含阶段、日期、赛制说明、赛区主办地与资格赛分组，不得混入决赛圈 `participants`。 |
+| `source_checked_at` | 本届信息的最近核查日期。2027 未来赛事的当前截点为 `2026-07-12`。 |
+| `source_version` | 字段级来源版本，说明哪些来源支撑主办、日期、赛果、参赛队和抽签。 |
+
+`china_status` 允许 `qualification-cancelled`，用于资格路径或赛事因取消而中止的届次。旧届官方资料不足时，可用 RSSSF、赛事技术报告或 Wikipedia 作二级交叉来源，但需保留来源类型和核查日期。
 
 ## 留洋历史
 

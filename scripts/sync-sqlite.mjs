@@ -104,8 +104,9 @@ export async function syncSqlite() {
       focus_level TEXT NOT NULL,
       status TEXT NOT NULL,
       last_checked TEXT NOT NULL,
-      start_date TEXT NOT NULL,
-      end_date TEXT NOT NULL,
+      start_date TEXT,
+      end_date TEXT,
+      date_precision TEXT NOT NULL,
       focus_teams_json TEXT NOT NULL,
       headline TEXT NOT NULL,
       notes_json TEXT NOT NULL,
@@ -184,8 +185,9 @@ export async function syncSqlite() {
       source_conflict_note TEXT NOT NULL,
       competition_name_history_json TEXT NOT NULL,
       host TEXT NOT NULL,
-      start_date TEXT NOT NULL,
-      end_date TEXT NOT NULL,
+      start_date TEXT,
+      end_date TEXT,
+      date_precision TEXT NOT NULL,
       status TEXT NOT NULL,
       champion TEXT NOT NULL,
       runner_up TEXT NOT NULL,
@@ -193,6 +195,9 @@ export async function syncSqlite() {
       china_summary TEXT NOT NULL,
       china_detail_scope TEXT NOT NULL,
       china_squad_json TEXT NOT NULL,
+      participants_json TEXT NOT NULL,
+      final_draw_json TEXT NOT NULL,
+      qualifiers_json TEXT NOT NULL,
       source_links_json TEXT NOT NULL,
       china_matches_json TEXT NOT NULL,
       china_key_players_json TEXT NOT NULL
@@ -243,9 +248,9 @@ export async function syncSqlite() {
   `);
   const insertTournament = db.prepare(`
     INSERT INTO tournaments (
-      id, name, short_name, focus_level, status, last_checked, start_date, end_date,
+      id, name, short_name, focus_level, status, last_checked, start_date, end_date, date_precision,
       focus_teams_json, headline, notes_json, sources_json
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertProject = db.prepare(`
     INSERT INTO projects (
@@ -276,10 +281,11 @@ export async function syncSqlite() {
     INSERT INTO tournament_archive (
       id, confederation, competition_name, level, edition_label,
       source_version_json, source_checked_at, source_conflict_note, competition_name_history_json,
-      host, start_date, end_date,
+      host, start_date, end_date, date_precision,
       status, champion, runner_up, china_status, china_summary, china_detail_scope, china_squad_json,
+      participants_json, final_draw_json, qualifiers_json,
       source_links_json, china_matches_json, china_key_players_json
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertYouthDevelopmentSystem = db.prepare(`
     INSERT INTO youth_development_systems (
@@ -380,6 +386,7 @@ export async function syncSqlite() {
       tournament.last_checked,
       tournament.date_range.start,
       tournament.date_range.end,
+      tournament.date_precision ?? "exact",
       toJson(tournament.focus_teams),
       tournament.headline,
       toJson(tournament.notes),
@@ -469,6 +476,7 @@ export async function syncSqlite() {
       tournament.host,
       tournament.date_range.start,
       tournament.date_range.end,
+      tournament.date_precision ?? "exact",
       tournament.status,
       tournament.champion ?? "",
       tournament.runner_up ?? "",
@@ -476,6 +484,9 @@ export async function syncSqlite() {
       tournament.china_summary,
       tournament.china_detail_scope,
       toJson(tournament.china_squad ?? []),
+      toJson(tournament.participants ?? null),
+      toJson(tournament.final_draw ?? null),
+      toJson(tournament.qualifiers ?? []),
       toJson(tournament.source_links),
       toJson(tournament.china_matches),
       toJson(tournament.china_key_players)

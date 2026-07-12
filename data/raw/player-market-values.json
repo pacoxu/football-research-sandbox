@@ -4,19 +4,19 @@
     "checked_at": "2026-07-12",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
-      "total": 185,
+      "total": 186,
       "statuses": {
         "available": 88,
-        "profile-not-found": 62,
+        "profile-not-found": 63,
         "no-market-value": 31,
         "ambiguous-profile": 2,
         "team-page-only": 2
       },
       "by_country": {
         "China PR": {
-          "total": 79,
+          "total": 80,
           "available": 40,
-          "profile-not-found": 15,
+          "profile-not-found": 16,
           "no-market-value": 21,
           "ambiguous-profile": 1,
           "team-page-only": 2
@@ -4659,6 +4659,28 @@
       "last_success_at": "2026-07-12"
     },
     "cn-zhang-bolin-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "existing-links-only",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "cn-zhang-haoran-2006": {
       "checked_at": "2026-07-12",
       "status": "profile-not-found",
       "source": {

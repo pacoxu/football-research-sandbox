@@ -14,11 +14,11 @@
 
 ## 当前仓库快照
 
-球员库当前聚合到 `data/site/players.json`，共 185 名球员：
+球员库当前聚合到 `data/site/players.json`，共 186 名球员：
 
 | 国家/地区 | 数量 | 主要来源 |
 | --- | ---: | --- |
-| China PR | 79 | 中国 U23/U20/U17、当前留洋、CSL 青年样本 |
+| China PR | 80 | 中国 U23/U20/U17、当前留洋、CSL 青年样本 |
 | Japan | 52 | 日本 U23/U17 终报名名单 |
 | Korea Republic | 50 | 韩国 U23/U17 终报名名单 |
 | Uzbekistan | 4 | 乌兹别克斯坦 U17 关键样本 |
