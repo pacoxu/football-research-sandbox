@@ -4,13 +4,13 @@
     "checked_at": "2026-07-12",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
-      "total": 232,
+      "total": 252,
       "statuses": {
-        "available": 110,
+        "available": 113,
         "ambiguous-profile": 3,
         "fetch-error": 22,
-        "no-market-value": 32,
-        "profile-not-found": 63,
+        "no-market-value": 45,
+        "profile-not-found": 67,
         "team-page-only": 2
       },
       "by_country": {
@@ -23,9 +23,9 @@
         },
         "China PR": {
           "total": 80,
-          "available": 40,
-          "profile-not-found": 16,
-          "no-market-value": 21,
+          "available": 41,
+          "profile-not-found": 14,
+          "no-market-value": 22,
           "ambiguous-profile": 1,
           "team-page-only": 2
         },
@@ -37,14 +37,16 @@
         },
         "Korea Republic": {
           "total": 50,
-          "profile-not-found": 25,
+          "profile-not-found": 24,
+          "no-market-value": 1,
           "available": 24,
           "ambiguous-profile": 1
         },
         "Uzbekistan": {
-          "total": 4,
-          "available": 1,
-          "no-market-value": 3
+          "total": 24,
+          "available": 3,
+          "no-market-value": 14,
+          "profile-not-found": 7
         }
       }
     }
@@ -120,7 +122,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -287,7 +289,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -395,7 +397,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -627,7 +629,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -707,7 +709,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -831,7 +833,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -930,7 +932,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -1183,7 +1185,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -1318,7 +1320,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -1426,7 +1428,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -1541,7 +1543,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -1631,7 +1633,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -1764,7 +1766,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -1920,7 +1922,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2053,7 +2055,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2177,7 +2179,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2285,7 +2287,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2375,7 +2377,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2499,7 +2501,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2623,7 +2625,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2713,7 +2715,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -2836,7 +2838,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "confirmed",
-        "method": "national-team-squad:Australia U20 2024/25:historical-team-page",
+        "method": "existing-link",
         "matched_fields": [
           "birth_date",
           "nationality",
@@ -3219,7 +3221,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -3406,7 +3408,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/xiyang-cheng/profil/spieler/1430174"
@@ -3531,7 +3534,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/yuezheng-du/profil/spieler/1012801"
@@ -3592,7 +3596,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/sifan-he/profil/spieler/1281955"
@@ -3991,7 +3996,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -4178,7 +4183,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/zhaolei-kuang/profil/spieler/1281957"
@@ -4405,7 +4411,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -4427,7 +4433,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "team-page-only",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": [
           "https://www.transfermarkt.com/china-u15/erweiterterkader/verein/39966"
         ]
@@ -4451,7 +4457,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -4643,7 +4649,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/zihao-lin/profil/spieler/1242688"
@@ -4741,7 +4748,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/chengyu-liu/profil/spieler/1125732"
@@ -4897,7 +4905,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/kaiyuan-liu/profil/spieler/1504020"
@@ -4918,7 +4927,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -5168,7 +5177,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -5280,7 +5289,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -5499,7 +5508,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -5629,7 +5638,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "team-page-only",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": [
           "https://www.transfermarkt.com/dalian-yingbo-u19/kader/verein/121167/saison_id/2025/plus/1"
         ]
@@ -5864,7 +5873,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/weihao-shuai/profil/spieler/1382253"
@@ -6203,7 +6213,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -6403,7 +6413,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/yudong-wang/profil/spieler/1125720"
@@ -6424,7 +6435,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -6639,7 +6650,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/yuwang-xiang/profil/spieler/1136184"
@@ -6861,7 +6873,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -7242,7 +7254,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/mingrui-yang/profil/spieler/1125737"
@@ -7361,25 +7374,110 @@
     },
     "cn-yimulan-maimaiti-2005": {
       "checked_at": "2026-07-12",
-      "status": "profile-not-found",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-06-26",
+          "club_id": "3182",
+          "season_id": 2022,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-03-21",
+          "club_id": "115121",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-06-17",
+          "club_id": "115121",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2024-12-03",
+          "club_id": "115121",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2025-06-19",
+          "club_id": "115121",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-12-09",
+          "club_id": "115121",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2026-06-08",
+          "club_id": "3182",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2026-06-08",
+        "club_id": "3182",
+        "season_id": 2025,
+        "age": 21
+      },
+      "last_change_date": "2026-06-08",
       "source": {
         "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
+        "profile_url": "https://www.transfermarkt.com/imran-memet/profil/spieler/1127610",
+        "market_value_url": "https://www.transfermarkt.com/imran-memet/marktwertverlauf/spieler/1127610",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1127610/market-value-history?_x_preferred_context=com"
       },
       "lookup": {
         "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "existing-links-only",
-        "candidate_urls": []
+        "status": "confirmed",
+        "method": "national-team-squad:China U20",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/imran-memet/profil/spieler/1127610"
+        ]
       },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
     },
     "cn-yuan-jianrui-2005": {
       "checked_at": "2026-07-12",
@@ -7393,7 +7491,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -7478,7 +7576,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -7490,25 +7588,34 @@
     },
     "cn-zhang-haoran-2006": {
       "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "existing-links-only",
-        "candidate_urls": []
-      },
+      "status": "no-market-value",
       "history": [],
       "history_points": 0,
       "current": null,
       "peak": null,
       "last_change_date": null,
-      "alternatives": []
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/haoran-zhang/profil/spieler/1267201",
+        "market_value_url": "https://www.transfermarkt.com/haoran-zhang/marktwertverlauf/spieler/1267201",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1267201/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:China U20",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/haoran-zhang/profil/spieler/1267201"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
     },
     "cn-zhang-jiaming-2007": {
       "checked_at": "2026-07-12",
@@ -7599,7 +7706,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/jiaming-zhang/profil/spieler/1159605"
@@ -7781,7 +7889,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/songyuan-zhao/profil/spieler/1283228"
@@ -7910,7 +8019,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/pengyu-zhu/profil/spieler/1238422"
@@ -7931,7 +8041,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -7953,7 +8063,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8119,7 +8229,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8141,7 +8251,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8163,7 +8273,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8194,7 +8304,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/haruta-kume/profil/spieler/1495698"
@@ -8215,7 +8326,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8394,7 +8505,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8641,7 +8752,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8663,7 +8774,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8685,7 +8796,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8707,7 +8818,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -8972,7 +9083,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -9143,7 +9254,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/rento-takaoka/profil/spieler/1146989"
@@ -9164,7 +9276,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -9396,7 +9508,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -9418,7 +9530,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -9547,7 +9659,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -9735,7 +9847,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/shio-fukuda/profil/spieler/1073997"
@@ -9765,7 +9878,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/shusuke-furuya/profil/spieler/1411562"
@@ -9921,7 +10035,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -10077,7 +10191,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -10261,7 +10375,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -10417,7 +10531,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -10448,7 +10562,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/uche-brian-seo-nwadike/profil/spieler/1253156"
@@ -10469,7 +10584,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -10491,7 +10606,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -10585,7 +10700,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -10818,7 +10933,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/yutaka-michiwaki/profil/spieler/914195"
@@ -11105,7 +11221,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/ga-on-baek/profil/spieler/1162558"
@@ -11126,7 +11243,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11148,7 +11265,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11170,7 +11287,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11192,7 +11309,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11214,7 +11331,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11334,7 +11451,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11445,25 +11562,33 @@
     },
     "kr-hyeon-min-kim-2009": {
       "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "existing-links-only",
-        "candidate_urls": []
-      },
+      "status": "no-market-value",
       "history": [],
       "history_points": 0,
       "current": null,
       "peak": null,
       "last_change_date": null,
-      "alternatives": []
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/tae-ho-kim/profil/spieler/1417353",
+        "market_value_url": "https://www.transfermarkt.com/tae-ho-kim/marktwertverlauf/spieler/1417353",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1417353/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "national-team-squad:South Korea U17",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/tae-ho-kim/profil/spieler/1417353"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
     },
     "kr-hyun-min-oh-2009": {
       "checked_at": "2026-07-12",
@@ -11477,7 +11602,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11499,7 +11624,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11724,7 +11849,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/jae-sang-jeong/profil/spieler/1073573"
@@ -11745,7 +11871,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11767,7 +11893,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -11924,7 +12050,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -12062,7 +12188,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -12084,7 +12210,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -12183,7 +12309,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/seung-bae-jung/profil/spieler/1053173"
@@ -12585,7 +12712,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/seong-jin-kang/profil/spieler/709170"
@@ -12970,7 +13098,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/tae-won-kim/profil/spieler/1223583"
@@ -13113,7 +13242,8 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/yong-hak-kim/profil/spieler/706960"
@@ -13512,7 +13642,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -13534,7 +13664,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -13690,7 +13820,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -13963,7 +14093,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -13985,7 +14115,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -14007,7 +14137,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -14128,7 +14258,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -14150,7 +14280,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -14172,7 +14302,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -14194,7 +14324,7 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -14216,7 +14346,191 @@
       "lookup": {
         "checked_at": "2026-07-12",
         "status": "not-found",
-        "method": "existing-links-only",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "uz-abdukodir-khusanov-2004": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2022-06-17",
+          "club_id": "27204",
+          "season_id": 2021,
+          "age": 18
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2022-11-30",
+          "club_id": "27204",
+          "season_id": 2021,
+          "age": 18
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2023-07-11",
+          "club_id": "27204",
+          "season_id": 2022,
+          "age": 19
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2023-10-16",
+          "club_id": "826",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2023-12-18",
+          "club_id": "826",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 2000000,
+          "currency": "EUR",
+          "display": "€2.00m",
+          "date": "2024-02-21",
+          "club_id": "826",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 2500000,
+          "currency": "EUR",
+          "display": "€2.50m",
+          "date": "2024-06-03",
+          "club_id": "826",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 5000000,
+          "currency": "EUR",
+          "display": "€5.00m",
+          "date": "2024-10-07",
+          "club_id": "826",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 12000000,
+          "currency": "EUR",
+          "display": "€12.00m",
+          "date": "2024-12-10",
+          "club_id": "826",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 35000000,
+          "currency": "EUR",
+          "display": "€35.00m",
+          "date": "2025-03-18",
+          "club_id": "281",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 35000000,
+          "currency": "EUR",
+          "display": "€35.00m",
+          "date": "2025-05-30",
+          "club_id": "281",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 35000000,
+          "currency": "EUR",
+          "display": "€35.00m",
+          "date": "2025-12-09",
+          "club_id": "281",
+          "season_id": 2025,
+          "age": 21
+        },
+        {
+          "eur": 50000000,
+          "currency": "EUR",
+          "display": "€50.00m",
+          "date": "2026-06-03",
+          "club_id": "281",
+          "season_id": 2025,
+          "age": 22
+        }
+      ],
+      "history_points": 13,
+      "current": {
+        "eur": 50000000,
+        "currency": "EUR",
+        "display": "€50.00m",
+        "date": "2026-06-03"
+      },
+      "peak": {
+        "eur": 50000000,
+        "currency": "EUR",
+        "display": "€50.00m",
+        "date": "2026-06-03",
+        "club_id": "281",
+        "season_id": 2025,
+        "age": 22
+      },
+      "last_change_date": "2026-06-03",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/abdukodir-khusanov/profil/spieler/763079",
+        "market_value_url": "https://www.transfermarkt.com/abdukodir-khusanov/marktwertverlauf/spieler/763079",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/763079/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "manual-override",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/abdukodir-khusanov/profil/spieler/763079"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-abdulboriy-zoidjonov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "national-team-squads",
         "candidate_urls": []
       },
       "history": [],
@@ -14247,11 +14561,71 @@
         "matched_fields": [
           "birth_date",
           "nationality",
+          "name"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/abubakir-rakhimov/profil/spieler/1329726"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-adis-abdunabiev-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/adis-abdunabiev/profil/spieler/1423088",
+        "market_value_url": "https://www.transfermarkt.com/adis-abdunabiev/marktwertverlauf/spieler/1423088",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1423088/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
           "name",
           "position"
         ],
         "candidate_urls": [
-          "https://www.transfermarkt.com/abubakir-rakhimov/profil/spieler/1329726"
+          "https://www.transfermarkt.com/adis-abdunabiev/profil/spieler/1423088"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-akhrorbek-ravshanbekov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/akhrorbek-ravshanbekov/profil/spieler/1395283",
+        "market_value_url": "https://www.transfermarkt.com/akhrorbek-ravshanbekov/marktwertverlauf/spieler/1395283",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1395283/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/akhrorbek-ravshanbekov/profil/spieler/1395283"
         ]
       },
       "alternatives": [],
@@ -14332,10 +14706,337 @@
         "matched_fields": [
           "birth_date",
           "nationality",
-          "name"
+          "name",
+          "position"
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/asilbek-aliev/profil/spieler/1146372"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-elsevarbek-olimov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "uz-farrukh-khayitmurodov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "uz-islom-ravshanov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/islom-ravshanov/profil/spieler/1329727",
+        "market_value_url": "https://www.transfermarkt.com/islom-ravshanov/marktwertverlauf/spieler/1329727",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1329727/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/islom-ravshanov/profil/spieler/1329727"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-jakhongirmirzo-uktamboev-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jakhongirmirzo-uktamboev/profil/spieler/1423084",
+        "market_value_url": "https://www.transfermarkt.com/jakhongirmirzo-uktamboev/marktwertverlauf/spieler/1423084",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1423084/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/jakhongirmirzo-uktamboev/profil/spieler/1423084"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-laziz-abduraimov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/laziz-abduraimov/profil/spieler/1146367",
+        "market_value_url": "https://www.transfermarkt.com/laziz-abduraimov/marktwertverlauf/spieler/1146367",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1146367/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/laziz-abduraimov/profil/spieler/1146367"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-m-abdisoliev-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "uz-mekhrojbek-sirojiddinov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/mekhrojbek-sirojiddinov/profil/spieler/1409426",
+        "market_value_url": "https://www.transfermarkt.com/mekhrojbek-sirojiddinov/marktwertverlauf/spieler/1409426",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1409426/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/mekhrojbek-sirojiddinov/profil/spieler/1409426"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-mirjamol-anvarov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/mirjamol-anvarov/profil/spieler/1504266",
+        "market_value_url": "https://www.transfermarkt.com/mirjamol-anvarov/marktwertverlauf/spieler/1504266",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1504266/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/mirjamol-anvarov/profil/spieler/1504266"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-mirkomilbek-murodov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "uz-muhammadaziz-ruziboev-2009": {
+      "checked_at": "2026-07-12",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2026-05-13",
+          "club_id": "139116",
+          "season_id": 0,
+          "age": 16
+        }
+      ],
+      "history_points": 1,
+      "current": {
+        "eur": 25000,
+        "currency": "EUR",
+        "display": "€25k",
+        "date": "2026-05-13"
+      },
+      "peak": {
+        "eur": 25000,
+        "currency": "EUR",
+        "display": "€25k",
+        "date": "2026-05-13",
+        "club_id": "139116",
+        "season_id": 0,
+        "age": 16
+      },
+      "last_change_date": "2026-05-13",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/mukhammadaziz-ruziboev/profil/spieler/1442697",
+        "market_value_url": "https://www.transfermarkt.com/mukhammadaziz-ruziboev/marktwertverlauf/spieler/1442697",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1442697/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/mukhammadaziz-ruziboev/profil/spieler/1442697"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-muhammadodilkhon-orifkhonov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/mukhammadodilkhon-orifkhonov/profil/spieler/1546365",
+        "market_value_url": "https://www.transfermarkt.com/mukhammadodilkhon-orifkhonov/marktwertverlauf/spieler/1546365",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1546365/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/mukhammadodilkhon-orifkhonov/profil/spieler/1546365"
         ]
       },
       "alternatives": [],
@@ -14371,6 +15072,142 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "uz-mukhammadjon-mamatov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/mukhammadjon-mamatov/profil/spieler/1423083",
+        "market_value_url": "https://www.transfermarkt.com/mukhammadjon-mamatov/marktwertverlauf/spieler/1423083",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1423083/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/mukhammadjon-mamatov/profil/spieler/1423083"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-nurmuhammad-uktamov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "uz-olimjon-shamuratov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/olim-shomurodov/profil/spieler/1146365",
+        "market_value_url": "https://www.transfermarkt.com/olim-shomurodov/marktwertverlauf/spieler/1146365",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1146365/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/olim-shomurodov/profil/spieler/1146365"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-rustam-aliev-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/rustam-aliev/profil/spieler/1423090",
+        "market_value_url": "https://www.transfermarkt.com/rustam-aliev/marktwertverlauf/spieler/1423090",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1423090/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/rustam-aliev/profil/spieler/1423090"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "uz-sukhrob-sadirdjanov-2009": {
+      "checked_at": "2026-07-12",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "not-found",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
     }
   }
 }

@@ -1417,6 +1417,7 @@ export async function validateData() {
   const completeSquads = new Map(
     [...completeSquadExpectations.keys()].map((squadKey) => [squadKey, []])
   );
+  const issue54UzbekistanU17 = [];
 
   for (const player of dataset.players) {
     for (const field of requiredPlayerFields) {
@@ -1518,6 +1519,14 @@ export async function validateData() {
         completeSquad.push({ player, entry });
       }
     }
+    if (
+      player.country === "Uzbekistan" &&
+      player.tournament_participation.some(
+        (entry) => entry.competition_id === "afc-u17-2026" && entry.squad_status === "registered"
+      )
+    ) {
+      issue54UzbekistanU17.push(player);
+    }
     validateVerificationBlock(player.verification, player.id);
     for (const identityKey of getIdentityKeys(player)) {
       const previousPlayer = playerIdentityKeys.get(identityKey);
@@ -1577,6 +1586,26 @@ export async function validateData() {
     assert(
       currentPathway.organization_type === player.registration_club.organization_type,
       `Pathway organization type differs from current registration on ${player.id}`
+    );
+  }
+
+  assert(
+    issue54UzbekistanU17.length === 23,
+    `Expected 23 Uzbekistan AFC U17 2026 players, found ${issue54UzbekistanU17.length}`
+  );
+  const issue54JerseyNumbers = issue54UzbekistanU17
+    .map((player) => player.jersey_number)
+    .sort((left, right) => left - right);
+  assert(
+    issue54JerseyNumbers.every((number, index) => number === index + 1),
+    `Invalid Uzbekistan AFC U17 2026 jersey sequence: ${issue54JerseyNumbers.join(", ")}`
+  );
+  for (const player of issue54UzbekistanU17) {
+    assert(
+      player.external_links.some(
+        (link) => link.type === "official" && link.url.includes("AFC-U17-Asian-Cup-Saudi-Arabia-2026")
+      ),
+      `Missing AFC final-squad source on ${player.id}`
     );
   }
   for (const playerId of issue16DeepSampleIds) {
