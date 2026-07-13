@@ -2,7 +2,7 @@
 
 更新时间：2026-07-12
 
-球员总数：229
+球员总数：252
 
 ## 状态汇总
 
@@ -10,7 +10,8 @@
 | --- | ---: |
 | ambiguous-profile | 3 |
 | available | 113 |
-| no-market-value | 44 |
+| fetch-error | 22 |
+| no-market-value | 45 |
 | profile-not-found | 67 |
 | team-page-only | 2 |
 
@@ -18,7 +19,7 @@
 
 | 国家/地区 | 总数 | 有历史 | 无身价 | 未找到个人页 | 待复核 | 抓取失败/过期 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
-| Australia | 23 | 22 | 0 | 0 | 1 | 0 |
+| Australia | 46 | 22 | 1 | 0 | 1 | 22 |
 | China PR | 80 | 41 | 22 | 14 | 3 | 0 |
 | Japan | 52 | 23 | 7 | 22 | 0 | 0 |
 | Korea Republic | 50 | 24 | 1 | 24 | 1 | 0 |
@@ -26,7 +27,29 @@
 
 ## 待人工复核
 
+- `au-akeem-gerald-2010`：fetch-error（fetch failed）
+- `au-akol-akon-2009`：fetch-error（fetch failed）
+- `au-archie-mitchell-2009`：fetch-error（fetch failed）
+- `au-aston-reid-2009`：fetch-error（fetch failed）
+- `au-besian-kutleshi-2009`：fetch-error（fetch failed）
+- `au-charlie-wilson-papps-2009`：fetch-error（fetch failed）
+- `au-corey-da-cruz-2009`：fetch-error（fetch failed）
+- `au-emile-katrib-2009`：fetch-error（fetch failed）
+- `au-fraser-brown-2009`：fetch-error（fetch failed）
+- `au-georgio-hassarati-2009`：fetch-error（fetch failed）
 - `au-gus-hoefsloot-2006`：ambiguous-profile
+- `au-harrison-bond-2009`：fetch-error（fetch failed）
+- `au-henrique-oliveira-2009`：fetch-error（fetch failed）
+- `au-hugo-ng-2009`：fetch-error（fetch failed）
+- `au-lachlan-allen-2009`：fetch-error（fetch failed）
+- `au-luka-demuth-2010`：fetch-error（fetch failed）
+- `au-luke-becvinovski-2009`：fetch-error（fetch failed）
+- `au-marcus-savic-2009`：fetch-error（fetch failed）
+- `au-max-court-2009`：fetch-error（fetch failed）
+- `au-miles-milliner-2009`：fetch-error（fetch failed）
+- `au-oliver-ocarroll-2009`：fetch-error（fetch failed）
+- `au-sajjad-nasiri-2009`：fetch-error（fetch failed）
+- `au-stevan-rujak-2009`：fetch-error（fetch failed）
 - `cn-li-youan-2010`：team-page-only
 - `cn-mutalifu-yimingkari-2004`：ambiguous-profile
 - `cn-piao-zhixuan-2010`：team-page-only

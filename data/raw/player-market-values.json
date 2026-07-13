@@ -4,19 +4,22 @@
     "checked_at": "2026-07-12",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
-      "total": 229,
+      "total": 252,
       "statuses": {
         "available": 113,
         "ambiguous-profile": 3,
+        "fetch-error": 22,
+        "no-market-value": 45,
         "profile-not-found": 67,
-        "no-market-value": 44,
         "team-page-only": 2
       },
       "by_country": {
         "Australia": {
-          "total": 23,
+          "total": 46,
           "available": 22,
-          "ambiguous-profile": 1
+          "ambiguous-profile": 1,
+          "fetch-error": 22,
+          "no-market-value": 1
         },
         "China PR": {
           "total": 80,
@@ -132,6 +135,56 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-akeem-gerald-2010": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1432380",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1432380",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1432380/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1432380"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-akol-akon-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1334905",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1334905",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1334905/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1334905"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
     },
     "au-alex-badolato-2005": {
       "checked_at": "2026-07-12",
@@ -357,6 +410,131 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-archie-mitchell-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1378246",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1378246",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1378246/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1378246"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-aston-reid-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413327",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413327",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413327/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413327"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-besian-kutleshi-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/besian-kutleshi/profil/spieler/1273787",
+        "market_value_url": "https://www.transfermarkt.com/besian-kutleshi/profil/spieler/1273787",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1273787/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/besian-kutleshi/profil/spieler/1273787"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-charlie-wilson-papps-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1263751",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1263751",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1263751/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1263751"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-corey-da-cruz-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413347",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413347",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413347/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413347"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
     "au-daniel-bennie-2006": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -544,6 +722,31 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-emile-katrib-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1484876",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1484876",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1484876/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1484876"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
     },
     "au-fabian-talladira-2006": {
       "checked_at": "2026-07-12",
@@ -743,6 +946,56 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-fraser-brown-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1533962",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1533962",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1533962/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1533962"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-georgio-hassarati-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413326",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413326",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413326/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413326"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
     "au-gus-hoefsloot-2006": {
       "checked_at": "2026-07-12",
       "status": "ambiguous-profile",
@@ -771,6 +1024,81 @@
       "peak": null,
       "last_change_date": null,
       "alternatives": []
+    },
+    "au-harrison-bond-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1294139",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1294139",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1294139/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1294139"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-henrique-oliveira-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1329718",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1329718",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1329718/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1329718"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-hugo-ng-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413348",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413348",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413348/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413348"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
     },
     "au-jaylan-pearman-2006": {
       "checked_at": "2026-07-12",
@@ -1114,6 +1442,31 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-lachlan-allen-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1420097",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1420097",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1420097/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1420097"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
     "au-louis-agosti-2005": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -1294,6 +1647,31 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-luka-demuth-2010": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1484877",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1484877",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1484877/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1484877"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
     "au-luka-jovanovic-2005": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -1402,6 +1780,81 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-luke-becvinovski-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413330",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413330",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413330/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413330"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-marcus-savic-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413350",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413350",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413350/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413350"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
+    "au-max-court-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1333552",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1333552",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1333552/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1333552"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
     "au-medin-memeti-2007": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -1482,6 +1935,31 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-miles-milliner-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1329720",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1329720",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1329720/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1329720"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
     },
     "au-musa-toure-2005": {
       "checked_at": "2026-07-12",
@@ -1590,6 +2068,31 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-oliver-ocarroll-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413345",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413345",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413345/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413345"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
     },
     "au-oliver-randazzo-2006": {
       "checked_at": "2026-07-12",
@@ -1888,6 +2391,31 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-sajjad-nasiri-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1413351",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1413351",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413351/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1413351"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
+    },
     "au-sebastian-esposito-2005": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -1986,6 +2514,31 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-stevan-rujak-2009": {
+      "checked_at": "2026-07-12",
+      "status": "fetch-error",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/profil/spieler/1533960",
+        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1533960",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1533960/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "fetch-error",
+        "method": "manual-override",
+        "candidate_urls": [
+          "https://www.transfermarkt.com/profil/spieler/1533960"
+        ]
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": [],
+      "refresh_error": "fetch failed"
     },
     "au-steven-hall-2005": {
       "checked_at": "2026-07-12",
@@ -2170,6 +2723,37 @@
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/tiago-quintal/profil/spieler/1109205"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-12"
+    },
+    "au-winston-ashburner-2009": {
+      "checked_at": "2026-07-12",
+      "status": "no-market-value",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/winston-ashburner/profil/spieler/1413328",
+        "market_value_url": "https://www.transfermarkt.com/winston-ashburner/marktwertverlauf/spieler/1413328",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1413328/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-12",
+        "status": "confirmed",
+        "method": "manual-override",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/winston-ashburner/profil/spieler/1413328"
         ]
       },
       "alternatives": [],
