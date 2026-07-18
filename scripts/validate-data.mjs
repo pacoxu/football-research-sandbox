@@ -1321,6 +1321,10 @@ function validateUefaYouthLeague(topic, playerIds) {
   assert(typeof topic === "object" && topic !== null, "Missing UEFA Youth League dataset");
   assert(isIsoDate(topic.meta?.checked_at), "Invalid UEFA Youth League checked_at");
   assert(Array.isArray(topic.seasons) && topic.seasons.length === 3, "UEFA Youth League must include three seasons");
+  assert(
+    Array.isArray(topic.historical_season_index) && topic.historical_season_index.length === 10,
+    "UEFA Youth League historical index must include 2013/14 through 2022/23"
+  );
   assert(Array.isArray(topic.sources) && topic.sources.length > 0, "UEFA Youth League sources are required");
 
   const sourceIds = new Set();
@@ -1344,6 +1348,50 @@ function validateUefaYouthLeague(topic, playerIds) {
   }
   for (const rule of topic.player_eligibility?.rules ?? []) {
     validateSourceIds(rule, `player_eligibility:${rule.id}`);
+  }
+
+  const expectedHistoricalSeasonIds = [
+    "2013-14", "2014-15", "2015-16", "2016-17", "2017-18",
+    "2018-19", "2019-20", "2020-21", "2021-22", "2022-23"
+  ];
+  assert(
+    JSON.stringify(topic.historical_season_index.map((season) => season.id)) ===
+      JSON.stringify(expectedHistoricalSeasonIds),
+    "UEFA Youth League historical seasons must be complete and chronological"
+  );
+  for (const season of topic.historical_season_index) {
+    const label = `historical_season:${season.id}`;
+    assert(season.competition_id === "uefa-youth-league", `Invalid competition_id on ${label}`);
+    assert(season.competition_name === "UEFA Youth League", `Invalid competition_name on ${label}`);
+    assert(season.organizer === "UEFA" && season.age_category === "Under-19", `Invalid scope on ${label}`);
+    assert(
+      ["completed", "completed-delayed", "cancelled"].includes(season.status),
+      `Invalid status on ${label}`
+    );
+    assert(Number.isInteger(season.entrant_count) && season.entrant_count > 0, `Invalid entrant_count on ${label}`);
+    assert(Array.isArray(season.paths) && season.paths.length > 0, `Missing qualification paths on ${label}`);
+    assert(season.format_summary?.zh && season.format_summary?.en, `Missing format summary on ${label}`);
+    assert(typeof season.source_version === "string" && season.source_version.length > 0, `Missing source_version on ${label}`);
+    assert(isIsoDate(season.source_checked_at), `Invalid source_checked_at on ${label}`);
+    assert(
+      typeof season.source_conflict_note === "string" && season.source_conflict_note.length > 0,
+      `Missing source_conflict_note on ${label}`
+    );
+    assert(season.coverage?.participating_teams, `Missing participating-team coverage on ${label}`);
+    assert(season.coverage?.knockout_matches && season.coverage?.all_matches, `Missing match coverage on ${label}`);
+    if (season.status === "cancelled") {
+      assert(season.id === "2020-21", `Unexpected cancelled UEFA Youth League season: ${season.id}`);
+      assert(season.start_date === null && season.end_date === null, `Cancelled season must not invent dates on ${label}`);
+      assert(season.champion === null && season.runner_up === null && season.final === null, `Cancelled season must not have a winner on ${label}`);
+      assert(season.coverage.all_matches === "not-played", `Cancelled season match status must be not-played on ${label}`);
+    } else {
+      assert(isIsoDate(season.start_date) && isIsoDate(season.end_date), `Invalid season dates on ${label}`);
+      assert(season.champion && season.runner_up, `Missing finalists on ${label}`);
+      assert(isIsoDate(season.final?.date), `Invalid final date on ${label}`);
+      assert(season.final.home && season.final.away && season.final.score, `Incomplete final on ${label}`);
+      assert(season.final.venue && season.final.city && season.final.country, `Missing final venue on ${label}`);
+    }
+    validateSourceIds(season, label);
   }
 
   const seasonIds = new Set();
