@@ -1,25 +1,26 @@
 {
   "meta": {
     "provider": "Transfermarkt",
-    "checked_at": "2026-07-12",
+    "checked_at": "2026-07-18",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
-      "total": 252,
+      "total": 270,
       "statuses": {
-        "available": 113,
+        "available": 130,
+        "no-market-value": 46,
+        "profile-not-found": 68,
         "ambiguous-profile": 3,
-        "fetch-error": 22,
-        "no-market-value": 45,
-        "profile-not-found": 67,
+        "fetch-error": 21,
         "team-page-only": 2
       },
       "by_country": {
         "Australia": {
-          "total": 46,
-          "available": 22,
+          "total": 64,
+          "available": 39,
+          "no-market-value": 2,
+          "profile-not-found": 1,
           "ambiguous-profile": 1,
-          "fetch-error": 22,
-          "no-market-value": 1
+          "fetch-error": 21
         },
         "China PR": {
           "total": 80,
@@ -135,6 +136,114 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-aidan-simmons-2003": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2023-04-05",
+          "club_id": "36100",
+          "season_id": 2022,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-01-08",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2024-05-28",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 21
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-01-09",
+          "club_id": "36100",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-06-03",
+          "club_id": "36100",
+          "season_id": 2024,
+          "age": 22
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2026-01-13",
+          "club_id": "36100",
+          "season_id": 2025,
+          "age": 22
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2026-05-28",
+          "club_id": "36100",
+          "season_id": 2025,
+          "age": 23
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 350000,
+        "currency": "EUR",
+        "display": "€350k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 350000,
+        "currency": "EUR",
+        "display": "€350k",
+        "date": "2024-05-28",
+        "club_id": "36100",
+        "season_id": 2023,
+        "age": 21
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/aidan-simmons/profil/spieler/867763",
+        "market_value_url": "https://www.transfermarkt.com/aidan-simmons/marktwertverlauf/spieler/867763",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/867763/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/aidan-simmons/profil/spieler/867763"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
     },
     "au-akeem-gerald-2010": {
       "checked_at": "2026-07-12",
@@ -435,6 +544,114 @@
       "alternatives": [],
       "refresh_error": "fetch failed"
     },
+    "au-ariath-piol-2004": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-02-14",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-05-28",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2025-01-09",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2025-04-17",
+          "club_id": "6643",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2025-06-05",
+          "club_id": "6643",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2025-12-11",
+          "club_id": "6643",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2026-06-02",
+          "club_id": "6643",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400k",
+        "date": "2026-06-02"
+      },
+      "peak": {
+        "eur": 500000,
+        "currency": "EUR",
+        "display": "€500k",
+        "date": "2025-04-17",
+        "club_id": "6643",
+        "season_id": 2024,
+        "age": 20
+      },
+      "last_change_date": "2026-06-02",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/ariath-piol/profil/spieler/1109953",
+        "market_value_url": "https://www.transfermarkt.com/ariath-piol/marktwertverlauf/spieler/1109953",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1109953/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/ariath-piol/profil/spieler/1109953"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
     "au-aston-reid-2009": {
       "checked_at": "2026-07-12",
       "status": "fetch-error",
@@ -459,6 +676,104 @@
       "last_change_date": null,
       "alternatives": [],
       "refresh_error": "fetch failed"
+    },
+    "au-aydan-hammond-2003": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "0",
+          "season_id": 0,
+          "age": 20
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-05-28",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-01-09",
+          "club_id": "36100",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 275000,
+          "currency": "EUR",
+          "display": "€275k",
+          "date": "2025-06-03",
+          "club_id": "36100",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 325000,
+          "currency": "EUR",
+          "display": "€325k",
+          "date": "2026-01-13",
+          "club_id": "36100",
+          "season_id": 2025,
+          "age": 22
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2026-05-28",
+          "club_id": "36100",
+          "season_id": 2025,
+          "age": 22
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 325000,
+        "currency": "EUR",
+        "display": "€325k",
+        "date": "2026-01-13",
+        "club_id": "36100",
+        "season_id": 2025,
+        "age": 22
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/aydan-hammond/profil/spieler/1121750",
+        "market_value_url": "https://www.transfermarkt.com/aydan-hammond/marktwertverlauf/spieler/1121750",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1121750/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/aydan-hammond/profil/spieler/1121750"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
     },
     "au-besian-kutleshi-2009": {
       "checked_at": "2026-07-12",
@@ -723,6 +1038,114 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-dylan-peraic-cullen-2006": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-09-28",
+          "club_id": "6954",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "6954",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-05-28",
+          "club_id": "6954",
+          "season_id": 2023,
+          "age": 17
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-01-09",
+          "club_id": "6954",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 450000,
+          "currency": "EUR",
+          "display": "€450k",
+          "date": "2025-06-03",
+          "club_id": "6954",
+          "season_id": 2024,
+          "age": 18
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2026-01-13",
+          "club_id": "6954",
+          "season_id": 2025,
+          "age": 19
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2026-05-28",
+          "club_id": "6954",
+          "season_id": 2025,
+          "age": 19
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 350000,
+        "currency": "EUR",
+        "display": "€350k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 450000,
+        "currency": "EUR",
+        "display": "€450k",
+        "date": "2025-06-03",
+        "club_id": "6954",
+        "season_id": 2024,
+        "age": 18
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/dylan-peraic-cullen/profil/spieler/1110879",
+        "market_value_url": "https://www.transfermarkt.com/dylan-peraic-cullen/marktwertverlauf/spieler/1110879",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1110879/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/dylan-peraic-cullen/profil/spieler/1110879"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
     "au-emile-katrib-2009": {
       "checked_at": "2026-07-12",
       "status": "fetch-error",
@@ -747,6 +1170,123 @@
       "last_change_date": null,
       "alternatives": [],
       "refresh_error": "fetch failed"
+    },
+    "au-ethan-alagich-2003": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2022-05-06",
+          "club_id": "875",
+          "season_id": 2021,
+          "age": 18
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2023-04-05",
+          "club_id": "875",
+          "season_id": 2022,
+          "age": 19
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-01-08",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-05-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2025-01-09",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 450000,
+          "currency": "EUR",
+          "display": "€450k",
+          "date": "2025-06-03",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2026-01-13",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 22
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2026-05-28",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 22
+        }
+      ],
+      "history_points": 8,
+      "current": {
+        "eur": 900000,
+        "currency": "EUR",
+        "display": "€900k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 900000,
+        "currency": "EUR",
+        "display": "€900k",
+        "date": "2026-05-28",
+        "club_id": "875",
+        "season_id": 2025,
+        "age": 22
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/ethan-alagich/profil/spieler/941357",
+        "market_value_url": "https://www.transfermarkt.com/ethan-alagich/marktwertverlauf/spieler/941357",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/941357/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/ethan-alagich/profil/spieler/941357"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
     },
     "au-fabian-talladira-2006": {
       "checked_at": "2026-07-12",
@@ -996,6 +1536,123 @@
       "alternatives": [],
       "refresh_error": "fetch failed"
     },
+    "au-giuseppe-bovalina-2004": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2023-09-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-01-08",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-06-13",
+          "club_id": "6321",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-12-06",
+          "club_id": "6321",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-12-12",
+          "club_id": "6321",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-06-05",
+          "club_id": "6321",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-12-11",
+          "club_id": "6321",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2026-06-29",
+          "club_id": "1056",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 8,
+      "current": {
+        "eur": 200000,
+        "currency": "EUR",
+        "display": "€200k",
+        "date": "2026-06-29"
+      },
+      "peak": {
+        "eur": 200000,
+        "currency": "EUR",
+        "display": "€200k",
+        "date": "2025-12-11",
+        "club_id": "6321",
+        "season_id": 2024,
+        "age": 21
+      },
+      "last_change_date": "2026-06-29",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/giuseppe-bovalina/profil/spieler/1118096",
+        "market_value_url": "https://www.transfermarkt.com/giuseppe-bovalina/marktwertverlauf/spieler/1118096",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1118096/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/giuseppe-bovalina/profil/spieler/1118096"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
     "au-gus-hoefsloot-2006": {
       "checked_at": "2026-07-12",
       "status": "ambiguous-profile",
@@ -1100,8 +1757,71 @@
       "alternatives": [],
       "refresh_error": "fetch failed"
     },
+    "au-james-overy-2007": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-09-25",
+          "club_id": "5242",
+          "season_id": 2025,
+          "age": 17
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-12-17",
+          "club_id": "5242",
+          "season_id": 2025,
+          "age": 18
+        }
+      ],
+      "history_points": 2,
+      "current": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2025-12-17"
+      },
+      "peak": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2025-09-25",
+        "club_id": "5242",
+        "season_id": 2025,
+        "age": 17
+      },
+      "last_change_date": "2025-12-17",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/james-overy/profil/spieler/1154164",
+        "market_value_url": "https://www.transfermarkt.com/james-overy/marktwertverlauf/spieler/1154164",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1154164/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/james-overy/profil/spieler/1154164"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
     "au-jaylan-pearman-2006": {
-      "checked_at": "2026-07-12",
+      "checked_at": "2026-07-18",
       "status": "available",
       "history": [
         {
@@ -1183,7 +1903,7 @@
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1104726/market-value-history?_x_preferred_context=com"
       },
       "lookup": {
-        "checked_at": "2026-07-12",
+        "checked_at": "2026-07-18",
         "status": "confirmed",
         "method": "existing-link",
         "matched_fields": [
@@ -1197,7 +1917,115 @@
         ]
       },
       "alternatives": [],
-      "last_success_at": "2026-07-12"
+      "last_success_at": "2026-07-18"
+    },
+    "au-jed-drew-2003": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2023-04-05",
+          "club_id": "71085",
+          "season_id": 2022,
+          "age": 19
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-01-08",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2024-05-28",
+          "club_id": "71085",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 550000,
+          "currency": "EUR",
+          "display": "€550k",
+          "date": "2025-01-09",
+          "club_id": "71085",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 550000,
+          "currency": "EUR",
+          "display": "€550k",
+          "date": "2025-06-06",
+          "club_id": "4467",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 550000,
+          "currency": "EUR",
+          "display": "€550k",
+          "date": "2025-12-22",
+          "club_id": "4467",
+          "season_id": 2025,
+          "age": 22
+        },
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2026-05-26",
+          "club_id": "4467",
+          "season_id": 2025,
+          "age": 22
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400k",
+        "date": "2026-05-26"
+      },
+      "peak": {
+        "eur": 550000,
+        "currency": "EUR",
+        "display": "€550k",
+        "date": "2025-01-09",
+        "club_id": "71085",
+        "season_id": 2024,
+        "age": 21
+      },
+      "last_change_date": "2026-05-26",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jed-drew/profil/spieler/1000284",
+        "market_value_url": "https://www.transfermarkt.com/jed-drew/marktwertverlauf/spieler/1000284",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1000284/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/jed-drew/profil/spieler/1000284"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
     },
     "au-jonny-yull-2005": {
       "checked_at": "2026-07-12",
@@ -1334,6 +2162,123 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
+    "au-jordi-valadon-2003": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2022-05-06",
+          "club_id": "0",
+          "season_id": 0,
+          "age": 19
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-09-28",
+          "club_id": "7006",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "7006",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2024-05-28",
+          "club_id": "7006",
+          "season_id": 2023,
+          "age": 21
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2025-01-09",
+          "club_id": "7006",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2025-06-03",
+          "club_id": "7006",
+          "season_id": 2024,
+          "age": 22
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-01-13",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 22
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-05-28",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 23
+        }
+      ],
+      "history_points": 8,
+      "current": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-01-13",
+        "club_id": "7006",
+        "season_id": 2025,
+        "age": 22
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jordi-valadon/profil/spieler/979025",
+        "market_value_url": "https://www.transfermarkt.com/jordi-valadon/marktwertverlauf/spieler/979025",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/979025/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/jordi-valadon/profil/spieler/979025"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
     "au-joshua-inserra-2005": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -1442,33 +2387,375 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "au-lachlan-allen-2009": {
-      "checked_at": "2026-07-12",
-      "status": "fetch-error",
+    "au-joshua-rawlins-2004": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2021-03-30",
+          "club_id": "970",
+          "season_id": 2020,
+          "age": 16
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2021-10-01",
+          "club_id": "970",
+          "season_id": 2021,
+          "age": 17
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2022-05-06",
+          "club_id": "970",
+          "season_id": 2021,
+          "age": 18
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2023-07-04",
+          "club_id": "17596",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-01-08",
+          "club_id": "17596",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2024-05-28",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2025-01-09",
+          "club_id": "7006",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2025-06-03",
+          "club_id": "7006",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2026-01-13",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 21
+        },
+        {
+          "eur": 450000,
+          "currency": "EUR",
+          "display": "€450k",
+          "date": "2026-05-28",
+          "club_id": "7006",
+          "season_id": 2025,
+          "age": 22
+        }
+      ],
+      "history_points": 10,
+      "current": {
+        "eur": 450000,
+        "currency": "EUR",
+        "display": "€450k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 450000,
+        "currency": "EUR",
+        "display": "€450k",
+        "date": "2026-05-28",
+        "club_id": "7006",
+        "season_id": 2025,
+        "age": 22
+      },
+      "last_change_date": "2026-05-28",
       "source": {
         "provider": "Transfermarkt",
-        "profile_url": "https://www.transfermarkt.com/profil/spieler/1420097",
-        "market_value_url": "https://www.transfermarkt.com/profil/spieler/1420097",
-        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1420097/market-value-history?_x_preferred_context=com"
+        "profile_url": "https://www.transfermarkt.com/joshua-rawlins/profil/spieler/703658",
+        "market_value_url": "https://www.transfermarkt.com/joshua-rawlins/marktwertverlauf/spieler/703658",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/703658/market-value-history?_x_preferred_context=com"
       },
       "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "fetch-error",
-        "method": "manual-override",
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
         "candidate_urls": [
-          "https://www.transfermarkt.com/profil/spieler/1420097"
+          "https://www.transfermarkt.com/joshua-rawlins/profil/spieler/703658"
         ]
       },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
+    "au-kaelan-majekodunmi-2004": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-04-05",
+          "club_id": "970",
+          "season_id": 2022,
+          "age": 19
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-01-08",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-05-28",
+          "club_id": "970",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-01-09",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-06-03",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2026-01-13",
+          "club_id": "970",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2026-01-13",
+        "club_id": "970",
+        "season_id": 2025,
+        "age": 21
+      },
+      "peak": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2024-05-28",
+        "club_id": "970",
+        "season_id": 2023,
+        "age": 20
+      },
+      "last_change_date": "2026-01-13",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/kaelan-majekodunmi/profil/spieler/1064380",
+        "market_value_url": "https://www.transfermarkt.com/kaelan-majekodunmi/marktwertverlauf/spieler/1064380",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1064380/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/kaelan-majekodunmi/profil/spieler/1064380"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
+    "au-kane-vidmar-2004": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-09-28",
+          "club_id": "71084",
+          "season_id": 0,
+          "age": 19
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-01-08",
+          "club_id": "71084",
+          "season_id": 0,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-05-28",
+          "club_id": "71084",
+          "season_id": 0,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2025-01-09",
+          "club_id": "71084",
+          "season_id": 0,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-06-03",
+          "club_id": "71084",
+          "season_id": 0,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-10-21",
+          "club_id": "515",
+          "season_id": 0,
+          "age": 21
+        }
+      ],
+      "history_points": 6,
+      "current": {
+        "eur": 100000,
+        "currency": "EUR",
+        "display": "€100k",
+        "date": "2025-10-21"
+      },
+      "peak": {
+        "eur": 200000,
+        "currency": "EUR",
+        "display": "€200k",
+        "date": "2024-05-28",
+        "club_id": "71084",
+        "season_id": 0,
+        "age": 19
+      },
+      "last_change_date": "2025-10-21",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/kane-vidmar/profil/spieler/1064378",
+        "market_value_url": "https://www.transfermarkt.com/kane-vidmar/marktwertverlauf/spieler/1064378",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1064378/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/kane-vidmar/profil/spieler/1064378"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
+    "au-lachlan-allen-2009": {
+      "checked_at": "2026-07-18",
+      "status": "no-market-value",
       "history": [],
       "history_points": 0,
       "current": null,
       "peak": null,
       "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/lachlan-allen/profil/spieler/1420097",
+        "market_value_url": "https://www.transfermarkt.com/lachlan-allen/marktwertverlauf/spieler/1420097",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1420097/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "manual-override",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/lachlan-allen/profil/spieler/1420097"
+        ]
+      },
       "alternatives": [],
-      "refresh_error": "fetch failed"
+      "last_success_at": "2026-07-18"
     },
     "au-louis-agosti-2005": {
-      "checked_at": "2026-07-12",
+      "checked_at": "2026-07-18",
       "status": "available",
       "history": [
         {
@@ -1541,7 +2828,7 @@
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1109826/market-value-history?_x_preferred_context=com"
       },
       "lookup": {
-        "checked_at": "2026-07-12",
+        "checked_at": "2026-07-18",
         "status": "confirmed",
         "method": "existing-link",
         "matched_fields": [
@@ -1555,7 +2842,7 @@
         ]
       },
       "alternatives": [],
-      "last_success_at": "2026-07-12"
+      "last_success_at": "2026-07-18"
     },
     "au-lucas-herrington-2007": {
       "checked_at": "2026-07-12",
@@ -1673,7 +2960,7 @@
       "refresh_error": "fetch failed"
     },
     "au-luka-jovanovic-2005": {
-      "checked_at": "2026-07-12",
+      "checked_at": "2026-07-18",
       "status": "available",
       "history": [
         {
@@ -1764,7 +3051,7 @@
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1038441/market-value-history?_x_preferred_context=com"
       },
       "lookup": {
-        "checked_at": "2026-07-12",
+        "checked_at": "2026-07-18",
         "status": "confirmed",
         "method": "existing-link",
         "matched_fields": [
@@ -1778,7 +3065,7 @@
         ]
       },
       "alternatives": [],
-      "last_success_at": "2026-07-12"
+      "last_success_at": "2026-07-18"
     },
     "au-luke-becvinovski-2009": {
       "checked_at": "2026-07-12",
@@ -1805,6 +3092,28 @@
       "alternatives": [],
       "refresh_error": "fetch failed"
     },
+    "au-marcus-humbert-2004": {
+      "checked_at": "2026-07-18",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "not-found",
+        "method": "national-team-squads",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
     "au-marcus-savic-2009": {
       "checked_at": "2026-07-12",
       "status": "fetch-error",
@@ -1829,6 +3138,195 @@
       "last_change_date": null,
       "alternatives": [],
       "refresh_error": "fetch failed"
+    },
+    "au-marcus-younis-2005": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2023-04-04",
+          "club_id": "0",
+          "season_id": 0,
+          "age": 17
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2024-01-08",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2024-05-28",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 18
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-10-14",
+          "club_id": "9715",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2024-12-10",
+          "club_id": "9715",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2025-03-14",
+          "club_id": "9715",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-06-09",
+          "club_id": "9715",
+          "season_id": 2024,
+          "age": 19
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2025-12-15",
+          "club_id": "206",
+          "season_id": 2025,
+          "age": 20
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-05-28",
+          "club_id": "25580",
+          "season_id": 2025,
+          "age": 20
+        }
+      ],
+      "history_points": 9,
+      "current": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28",
+        "club_id": "25580",
+        "season_id": 2025,
+        "age": 20
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/marcus-younis/profil/spieler/1099720",
+        "market_value_url": "https://www.transfermarkt.com/marcus-younis/marktwertverlauf/spieler/1099720",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1099720/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/marcus-younis/profil/spieler/1099720"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
+    "au-mathias-macallister-2007": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2026-01-13",
+          "club_id": "8054",
+          "season_id": 2025,
+          "age": 18
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2026-05-28",
+          "club_id": "8054",
+          "season_id": 2025,
+          "age": 19
+        }
+      ],
+      "history_points": 2,
+      "current": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2026-05-28",
+        "club_id": "8054",
+        "season_id": 2025,
+        "age": 19
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/mathias-macallister/profil/spieler/1226712",
+        "market_value_url": "https://www.transfermarkt.com/mathias-macallister/marktwertverlauf/spieler/1226712",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1226712/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/mathias-macallister/profil/spieler/1226712"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
     },
     "au-max-court-2009": {
       "checked_at": "2026-07-12",
@@ -2068,6 +3566,222 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-nathan-paull-2003": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-09-28",
+          "club_id": "26206",
+          "season_id": 0,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-01-08",
+          "club_id": "6954",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2024-05-28",
+          "club_id": "6954",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 325000,
+          "currency": "EUR",
+          "display": "€325k",
+          "date": "2025-01-09",
+          "club_id": "6954",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 375000,
+          "currency": "EUR",
+          "display": "€375k",
+          "date": "2025-06-03",
+          "club_id": "6954",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2026-01-13",
+          "club_id": "6954",
+          "season_id": 2025,
+          "age": 22
+        },
+        {
+          "eur": 450000,
+          "currency": "EUR",
+          "display": "€450k",
+          "date": "2026-05-28",
+          "club_id": "6954",
+          "season_id": 2025,
+          "age": 22
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 450000,
+        "currency": "EUR",
+        "display": "€450k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 500000,
+        "currency": "EUR",
+        "display": "€500k",
+        "date": "2026-01-13",
+        "club_id": "6954",
+        "season_id": 2025,
+        "age": 22
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/nathan-paull/profil/spieler/1109823",
+        "market_value_url": "https://www.transfermarkt.com/nathan-paull/marktwertverlauf/spieler/1109823",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1109823/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/nathan-paull/profil/spieler/1109823"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
+    },
+    "au-nathanael-blair-2004": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2023-04-05",
+          "club_id": "36100",
+          "season_id": 2022,
+          "age": 19
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-01-08",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-05-28",
+          "club_id": "36100",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2025-01-09",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-06-03",
+          "club_id": "970",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2026-01-13",
+          "club_id": "970",
+          "season_id": 2025,
+          "age": 21
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2026-05-28",
+          "club_id": "6954",
+          "season_id": 2025,
+          "age": 22
+        }
+      ],
+      "history_points": 7,
+      "current": {
+        "eur": 250000,
+        "currency": "EUR",
+        "display": "€250k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 250000,
+        "currency": "EUR",
+        "display": "€250k",
+        "date": "2026-05-28",
+        "club_id": "6954",
+        "season_id": 2025,
+        "age": 22
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/nathanael-blair/profil/spieler/1023268",
+        "market_value_url": "https://www.transfermarkt.com/nathanael-blair/marktwertverlauf/spieler/1023268",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1023268/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/nathanael-blair/profil/spieler/1023268"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
     },
     "au-oliver-ocarroll-2009": {
       "checked_at": "2026-07-12",
@@ -2541,7 +4255,7 @@
       "refresh_error": "fetch failed"
     },
     "au-steven-hall-2005": {
-      "checked_at": "2026-07-12",
+      "checked_at": "2026-07-18",
       "status": "available",
       "history": [
         {
@@ -2623,7 +4337,7 @@
         "api_url": "https://tmapi-alpha.transfermarkt.technology/player/970266/market-value-history?_x_preferred_context=com"
       },
       "lookup": {
-        "checked_at": "2026-07-12",
+        "checked_at": "2026-07-18",
         "status": "confirmed",
         "method": "existing-link",
         "matched_fields": [
@@ -2637,7 +4351,7 @@
         ]
       },
       "alternatives": [],
-      "last_success_at": "2026-07-12"
+      "last_success_at": "2026-07-18"
     },
     "au-tiago-quintal-2006": {
       "checked_at": "2026-07-12",
@@ -2758,6 +4472,150 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    },
+    "au-yaya-dukuly-2003": {
+      "checked_at": "2026-07-18",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2019-09-11",
+          "club_id": "25580",
+          "season_id": 2019,
+          "age": 16
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2020-10-08",
+          "club_id": "25580",
+          "season_id": 2020,
+          "age": 17
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2021-03-30",
+          "club_id": "875",
+          "season_id": 2020,
+          "age": 18
+        },
+        {
+          "eur": 200000,
+          "currency": "EUR",
+          "display": "€200k",
+          "date": "2021-10-01",
+          "club_id": "875",
+          "season_id": 2021,
+          "age": 18
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2022-05-06",
+          "club_id": "875",
+          "season_id": 2021,
+          "age": 19
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2023-11-24",
+          "club_id": "11204",
+          "season_id": 0,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2024-05-28",
+          "club_id": "875",
+          "season_id": 2023,
+          "age": 21
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2025-01-09",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2025-06-03",
+          "club_id": "875",
+          "season_id": 2024,
+          "age": 22
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2026-01-13",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 22
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2026-05-28",
+          "club_id": "875",
+          "season_id": 2025,
+          "age": 23
+        }
+      ],
+      "history_points": 11,
+      "current": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28"
+      },
+      "peak": {
+        "eur": 600000,
+        "currency": "EUR",
+        "display": "€600k",
+        "date": "2026-05-28",
+        "club_id": "875",
+        "season_id": 2025,
+        "age": 23
+      },
+      "last_change_date": "2026-05-28",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/yaya-dukuly/profil/spieler/652487",
+        "market_value_url": "https://www.transfermarkt.com/yaya-dukuly/marktwertverlauf/spieler/652487",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/652487/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-07-18",
+        "status": "confirmed",
+        "method": "national-team-squad:Australia U23",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/yaya-dukuly/profil/spieler/652487"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-07-18"
     },
     "au-zach-lisolajski-2005": {
       "checked_at": "2026-07-12",

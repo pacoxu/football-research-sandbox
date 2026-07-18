@@ -4151,8 +4151,13 @@ function getFilteredPlayers() {
         normalize(player.searchBlob).includes(normalize(state.playerFilters.query));
       const matchesCountry =
         state.playerFilters.country === "all" || player.country === state.playerFilters.country;
+      const tournamentAgeBands = (player.tournament_participation ?? [])
+        .map((entry) => entry.competition_id?.match(/(?:^|-)(u17|u20|u21|u23)(?:-|$)/i)?.[1]?.toLowerCase())
+        .filter(Boolean);
       const matchesAge =
-        state.playerFilters.ageBand === "all" || player.age_band === state.playerFilters.ageBand;
+        state.playerFilters.ageBand === "all" ||
+        player.age_band === state.playerFilters.ageBand ||
+        tournamentAgeBands.includes(state.playerFilters.ageBand);
       const matchesCompetition =
         state.playerFilters.competition === "all" ||
         (player.tournament_participation ?? []).some(

@@ -1,0 +1,2951 @@
+[
+  {
+    "id": "au-steven-hall-2005",
+    "name": "Steven Hall",
+    "local_name": "Steven Hall",
+    "country": "Australia",
+    "birth_date": "2005-01-16",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 187,
+    "weight_kg": 85,
+    "registration_club": {
+      "name": "BRIGHTON HOVE & ALBION FC (YOUTH)",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "BRIGHTON & HOVE ALBION FC",
+        "country": "England",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      },
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "BRIGHTON HOVE & ALBION FC (YOUTH)",
+        "country": "England",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025",
+      "asia-u23-2026",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      },
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/steven-hall/profil/spieler/970266"
+      },
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Steven Hall in Australia's 23-player U20 squad and records BRIGHTON & HOVE ALBION FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Steven Hall and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Steven Hall in the title-deciding match context."
+      },
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Steven Hall in Australia's 23-player U23 squad and records BRIGHTON HOVE & ALBION FC (YOUTH) as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Steven Hall for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Steven Hall as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added. AFC U23 registration, Football Australia squad announcement, and the official China PR match report agree on tournament identity; registration_club remains a dated tournament snapshot."
+    }
+  },
+  {
+    "id": "au-aidan-simmons-2003",
+    "name": "Aidan Simmons",
+    "local_name": "Aidan Simmons",
+    "country": "Australia",
+    "birth_date": "2003-05-26",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 173,
+    "weight_kg": 65,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as unused substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/aidan-simmons/profil/spieler/867763"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Aidan Simmons in Australia's 23-player U23 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Aidan Simmons for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Aidan Simmons as unused substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-joshua-rawlins-2004",
+    "name": "Joshua Rawlins",
+    "local_name": "Joshua Rawlins",
+    "country": "Australia",
+    "birth_date": "2004-04-23",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 181,
+    "weight_kg": 73,
+    "registration_club": {
+      "name": "MELBOURNE VICTORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "MELBOURNE VICTORY FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/joshua-rawlins/profil/spieler/703658"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Joshua Rawlins in Australia's 23-player U23 squad and records MELBOURNE VICTORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Joshua Rawlins for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Joshua Rawlins as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-kane-vidmar-2004",
+    "name": "Kane Vidmar",
+    "local_name": "Kane Vidmar",
+    "country": "Australia",
+    "birth_date": "2004-06-04",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 185,
+    "weight_kg": 80,
+    "registration_club": {
+      "name": "WEST TORRENS BIRKALLA SC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "WEST TORRENS BIRKALLA SC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as unused substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kane-vidmar/profil/spieler/1064378"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Kane Vidmar in Australia's 23-player U23 squad and records WEST TORRENS BIRKALLA SC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Kane Vidmar for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Kane Vidmar as unused substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-giuseppe-bovalina-2004",
+    "name": "Giuseppe Bovalina",
+    "local_name": "Giuseppe Bovalina",
+    "country": "Australia",
+    "birth_date": "2004-11-11",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 173,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "VANCOUVER WHITECAPS FC",
+      "country": "Canada",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "VANCOUVER WHITECAPS FC",
+        "country": "Canada",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/giuseppe-bovalina/profil/spieler/1118096"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Giuseppe Bovalina in Australia's 23-player U23 squad and records VANCOUVER WHITECAPS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Giuseppe Bovalina for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Giuseppe Bovalina as substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-kaelan-majekodunmi-2004",
+    "name": "Kaelan Majekodunmi",
+    "local_name": "Kaelan Majekodunmi",
+    "country": "Australia",
+    "birth_date": "2004-02-21",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 188,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kaelan-majekodunmi/profil/spieler/1064380"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Kaelan Majekodunmi in Australia's 23-player U23 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Kaelan Majekodunmi for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Kaelan Majekodunmi as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-jed-drew-2003",
+    "name": "Jed Drew",
+    "local_name": "Jed Drew",
+    "country": "Australia",
+    "birth_date": "2003-08-29",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 176,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "TSV HARTBERG",
+      "country": "Austria",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "TSV HARTBERG",
+        "country": "Austria",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jed-drew/profil/spieler/1000284"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jed Drew in Australia's 23-player U23 squad and records TSV HARTBERG as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jed Drew for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Jed Drew as substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-jordi-valadon-2003",
+    "name": "Jordi Valadon",
+    "local_name": "Jordi Valadon",
+    "country": "Australia",
+    "birth_date": "2003-03-04",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 174,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "MELBOURNE VICTORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "MELBOURNE VICTORY FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jordi-valadon/profil/spieler/979025"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jordi Valadon in Australia's 23-player U23 squad and records MELBOURNE VICTORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jordi Valadon for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Jordi Valadon as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-nathanael-blair-2004",
+    "name": "Nathanael Blair",
+    "local_name": "Nathanael Blair",
+    "country": "Australia",
+    "birth_date": "2004-03-15",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/nathanael-blair/profil/spieler/1023268"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Nathanael Blair in Australia's 23-player U23 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Nathanael Blair for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Nathanael Blair as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-aydan-hammond-2003",
+    "name": "Aydan Hammond",
+    "local_name": "Aydan Hammond",
+    "country": "Australia",
+    "birth_date": "2003-12-23",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 175,
+    "weight_kg": 65,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/aydan-hammond/profil/spieler/1121750"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Aydan Hammond in Australia's 23-player U23 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Aydan Hammond for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Aydan Hammond as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-yaya-dukuly-2003",
+    "name": "Yaya Dukuly",
+    "local_name": "Yaya Dukuly",
+    "country": "Australia",
+    "birth_date": "2003-01-17",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 176,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yaya-dukuly/profil/spieler/652487"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Yaya Dukuly in Australia's 23-player U23 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Yaya Dukuly for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Yaya Dukuly as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-lachlan-allen-2009",
+    "name": "Lachlan Allen",
+    "local_name": "Lachlan Allen",
+    "country": "Australia",
+    "birth_date": "2009-04-04",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 193,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      },
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026",
+      "asia-u23-2026",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      },
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as unused substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/lachlan-allen/profil/spieler/1420097"
+      },
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Lachlan Allen in Australia's 23-player U17 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Lachlan Allen, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      },
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Lachlan Allen in Australia's 23-player U23 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Lachlan Allen for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Lachlan Allen as unused substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added. AFC U23 registration, Football Australia squad announcement, and the official China PR match report agree on tournament identity; registration_club remains a dated tournament snapshot."
+    }
+  },
+  {
+    "id": "au-ariath-piol-2004",
+    "name": "Ariath Piol",
+    "local_name": "Ariath Piol",
+    "country": "Australia",
+    "birth_date": "2004-10-11",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 176,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "ADELAIDE UNITED",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "ADELAIDE UNITED",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/ariath-piol/profil/spieler/1109953"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Ariath Piol in Australia's 23-player U23 squad and records ADELAIDE UNITED as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Ariath Piol for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Ariath Piol as substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration. AFC final registration lists ADELAIDE UNITED, while Football Australia's squad announcement lists Real Salt Lake; the AFC organization is retained strictly as the tournament-registration snapshot."
+    }
+  },
+  {
+    "id": "au-ethan-alagich-2003",
+    "name": "Ethan Alagich",
+    "local_name": "Ethan Alagich",
+    "country": "Australia",
+    "birth_date": "2003-12-18",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 178,
+    "weight_kg": 73,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/ethan-alagich/profil/spieler/941357"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Ethan Alagich in Australia's 23-player U23 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Ethan Alagich for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Ethan Alagich as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-nathan-paull-2003",
+    "name": "Nathan Paull",
+    "local_name": "Nathan Paull",
+    "country": "Australia",
+    "birth_date": "2003-08-21",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 193,
+    "weight_kg": 80,
+    "registration_club": {
+      "name": "CENTRAL COAST MARINERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "CENTRAL COAST MARINERS FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/nathan-paull/profil/spieler/1109823"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Nathan Paull in Australia's 23-player U23 squad and records CENTRAL COAST MARINERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Nathan Paull for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Nathan Paull as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-luka-jovanovic-2005",
+    "name": "Luka Jovanovic",
+    "local_name": "Luka Jovanovic",
+    "country": "Australia",
+    "birth_date": "2005-05-20",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 179,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      },
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025",
+      "asia-u23-2026",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      },
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/luka-jovanovic/profil/spieler/1038441"
+      },
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Luka Jovanovic in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Luka Jovanovic and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Luka Jovanovic in the title-deciding match context."
+      },
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Luka Jovanovic in Australia's 23-player U23 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Luka Jovanovic for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Luka Jovanovic as substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added. AFC U23 registration, Football Australia squad announcement, and the official China PR match report agree on tournament identity; registration_club remains a dated tournament snapshot."
+    }
+  },
+  {
+    "id": "au-jaylan-pearman-2006",
+    "name": "Jaylan Pearman",
+    "local_name": "Jaylan Pearman",
+    "country": "Australia",
+    "birth_date": "2006-04-18",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 180,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "QUEENS PARK RANGERS FC",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      },
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "QUEENS PARK RANGERS FC",
+        "country": "England",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025",
+      "asia-u23-2026",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      },
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jaylan-pearman/profil/spieler/1104726"
+      },
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jaylan Pearman in Australia's 23-player U20 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jaylan Pearman and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jaylan Pearman in Australia's 23-player U23 squad and records QUEENS PARK RANGERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jaylan Pearman for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Jaylan Pearman as substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added. AFC U23 registration, Football Australia squad announcement, and the official China PR match report agree on tournament identity; registration_club remains a dated tournament snapshot."
+    }
+  },
+  {
+    "id": "au-dylan-peraic-cullen-2006",
+    "name": "Dylan Peraic-Cullen",
+    "local_name": "Dylan Peraic-Cullen",
+    "country": "Australia",
+    "birth_date": "2006-07-25",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 196,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "CENTRAL COAST MARINERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "CENTRAL COAST MARINERS FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as unused substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/dylan-peraic-cullen/profil/spieler/1110879"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Dylan Peraic-Cullen in Australia's 23-player U23 squad and records CENTRAL COAST MARINERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Dylan Peraic-Cullen for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Dylan Peraic-Cullen as unused substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-marcus-younis-2005",
+    "name": "Marcus Younis",
+    "local_name": "Marcus Younis",
+    "country": "Australia",
+    "birth_date": "2005-07-03",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 175,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "BRONDBY IF",
+      "country": "Denmark",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "BRONDBY IF",
+        "country": "Denmark",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as unused substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/marcus-younis/profil/spieler/1099720"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Marcus Younis in Australia's 23-player U23 squad and records BRONDBY IF as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Marcus Younis for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Marcus Younis as unused substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-louis-agosti-2005",
+    "name": "Louis Agosti",
+    "local_name": "Louis Agosti",
+    "country": "Australia",
+    "birth_date": "2005-03-02",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 185,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "DOLOMITI BELLUNESI",
+      "country": "Italy",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "AC PERUGIA",
+        "country": "Italy",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      },
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "DOLOMITI BELLUNESI",
+        "country": "Italy",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025",
+      "asia-u23-2026",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      },
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as unused substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/louis-agosti/profil/spieler/1109826"
+      },
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Louis Agosti in Australia's 23-player U20 squad and records AC PERUGIA as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Louis Agosti and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Louis Agosti in Australia's 23-player U23 squad and records DOLOMITI BELLUNESI as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Louis Agosti for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Louis Agosti as unused substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added. AFC U23 registration, Football Australia squad announcement, and the official China PR match report agree on tournament identity; registration_club remains a dated tournament snapshot."
+    }
+  },
+  {
+    "id": "au-james-overy-2007",
+    "name": "James Overy",
+    "local_name": "James Overy",
+    "country": "Australia",
+    "birth_date": "2007-11-09",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 180,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "MANCHESTER UNITED FC (YOUTH)",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "MANCHESTER UNITED FC (YOUTH)",
+        "country": "England",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/james-overy/profil/spieler/1154164"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms James Overy in Australia's 23-player U23 squad and records MANCHESTER UNITED FC (YOUTH) as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms James Overy for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records James Overy as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  },
+  {
+    "id": "au-marcus-humbert-2004",
+    "name": "Marcus Humbert",
+    "local_name": "Marcus Humbert",
+    "country": "Australia",
+    "birth_date": "2004-07-14",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": null,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "HEIDELBERG UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "HEIDELBERG UNITED FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as unused substitute."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Marcus Humbert in Australia's 23-player U23 squad and records HEIDELBERG UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Marcus Humbert for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Marcus Humbert as unused substitute against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration. AFC final registration lists Defender and records height/weight as 0/0, while Football Australia's squad announcement lists Midfielder; AFC position is retained and 0/0 is represented as unavailable rather than literal measurements."
+    }
+  },
+  {
+    "id": "au-mathias-macallister-2007",
+    "name": "Mathias Macallister",
+    "local_name": "Mathias Macallister",
+    "country": "Australia",
+    "birth_date": "2007-04-12",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 178,
+    "weight_kg": 67,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U23 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U23 Asian Cup Saudi Arabia 2026 final registration records this organization at tournament registration time; it is a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u23-2026",
+      "australia-youth",
+      "afc-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final registration confirms inclusion in Australia's 23-player squad. Football Australia's official China PR match report records this player as starter."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/mathias-macallister/profil/spieler/1226712"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mathias Macallister in Australia's 23-player U23 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U23 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/tony-vidmar-names-23-player-squad-2026-afc-u23-asian-cuptm?page=848",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "primary_position",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Mathias Macallister for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia China PR 1-0 Australia match report",
+        "url": "https://socceroos.com.au/news/u23s-narrowly-defeated-second-afc-u23-asian-cuptm-group-stage-game",
+        "checked_at": "2026-07-18",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official match report records Mathias Macallister as starter against China PR on 2026-01-11."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-18",
+      "notes": "AFC final registration is primary for birth date, position, measurements, and tournament registration club; Football Australia independently confirms the squad and China PR match role. registration_club is a dated tournament snapshot, not a claim of current registration."
+    }
+  }
+]

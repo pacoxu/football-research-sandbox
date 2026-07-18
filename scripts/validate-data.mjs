@@ -144,9 +144,17 @@ const issue48DeepSampleIds = new Set([
   "au-akeem-gerald-2010"
 ]);
 
+const issue49ChinaMatchKeyIds = new Set([
+  "au-steven-hall-2005",
+  "au-giuseppe-bovalina-2004",
+  "au-ethan-alagich-2003",
+  "au-james-overy-2007"
+]);
+
 const completeSquadExpectations = new Map([
   ["Australia|afc-u20-2025", 23],
-  ["Australia|afc-u17-2026", 23]
+  ["Australia|afc-u17-2026", 23],
+  ["Australia|afc-u23-2026", 23]
 ]);
 
 const allowedTournamentSourceVersionTypes = new Set([
@@ -1818,7 +1826,9 @@ export async function validateData() {
         isIsoDate(player.registration_club.as_of),
       `Missing Australia U20 registration snapshot on ${player.id}`
     );
-    const afcLayers = (player.source_layers ?? []).filter((layer) => layer.type === "afc-registration");
+    const afcLayers = (player.source_layers ?? []).filter(
+      (layer) => layer.type === "afc-registration" && /U20 2025/i.test(layer.label)
+    );
     assert(afcLayers.length === 1, `Expected one AFC registration source on ${player.id}`);
     assert(afcLayers[0].confidence === "high", `AFC registration source must be high confidence on ${player.id}`);
   }
@@ -1847,7 +1857,9 @@ export async function validateData() {
         isIsoDate(player.registration_club.as_of),
       `Missing Australia U17 registration snapshot on ${player.id}`
     );
-    const afcLayers = (player.source_layers ?? []).filter((layer) => layer.type === "afc-registration");
+    const afcLayers = (player.source_layers ?? []).filter(
+      (layer) => layer.type === "afc-registration" && /U17 2026/i.test(layer.label)
+    );
     assert(afcLayers.length === 1, `Expected one AFC registration source on ${player.id}`);
     assert(afcLayers[0].confidence === "high", `AFC registration source must be high confidence on ${player.id}`);
   }
@@ -1870,6 +1882,60 @@ export async function validateData() {
   assert(
     /forward.*midfielder/i.test(henriqueOliveira?.verification?.notes ?? ""),
     "Australia U17 Henrique Oliveira position conflict must remain explicit"
+  );
+
+  const issue49Squad = completeSquads.get("Australia|afc-u23-2026");
+  const issue49ShirtNumbers = new Set();
+  for (const { player, entry } of issue49Squad) {
+    assert(entry.roster_status === "final-squad", `Invalid Australia U23 roster_status on ${player.id}`);
+    assert(
+      Number.isInteger(entry.shirt_number) && entry.shirt_number >= 1 && entry.shirt_number <= 23,
+      `Invalid Australia U23 shirt_number on ${player.id}`
+    );
+    assert(!issue49ShirtNumbers.has(entry.shirt_number), `Duplicate Australia U23 shirt_number ${entry.shirt_number}`);
+    issue49ShirtNumbers.add(entry.shirt_number);
+    assert(
+      player.registration_club.status === "tournament-snapshot" &&
+        isIsoDate(player.registration_club.as_of),
+      `Missing Australia U23 registration snapshot on ${player.id}`
+    );
+    const afcLayers = (player.source_layers ?? []).filter(
+      (layer) => layer.type === "afc-registration" && /U23 2026/i.test(layer.label)
+    );
+    assert(afcLayers.length === 1, `Expected one Australia U23 AFC registration source on ${player.id}`);
+    assert(afcLayers[0].confidence === "high", `Australia U23 AFC source must be high confidence on ${player.id}`);
+    assert(
+      (player.source_layers ?? []).some(
+        (layer) => layer.type === "national-fa-profile" && /squad announcement/i.test(layer.label)
+      ),
+      `Missing Football Australia U23 squad source on ${player.id}`
+    );
+    assert(
+      (player.source_layers ?? []).some(
+        (layer) => layer.type === "national-fa-profile" && /China PR 1-0 Australia/i.test(layer.label)
+      ),
+      `Missing China PR match role source on ${player.id}`
+    );
+    assert(
+      /starter|substitute/i.test(entry.note ?? ""),
+      `Missing China PR match role note on ${player.id}`
+    );
+  }
+  for (const playerId of issue49ChinaMatchKeyIds) {
+    assert(
+      issue49Squad.some(({ player }) => player.id === playerId),
+      `Missing issue #49 China-match key player ${playerId}`
+    );
+  }
+  const ariathPiol = issue49Squad.find(({ player }) => player.id === "au-ariath-piol-2004")?.player;
+  assert(
+    /ADELAIDE UNITED.*Real Salt Lake/i.test(ariathPiol?.verification?.notes ?? ""),
+    "Australia U23 Ariath Piol club-source conflict must remain explicit"
+  );
+  const marcusHumbert = issue49Squad.find(({ player }) => player.id === "au-marcus-humbert-2004")?.player;
+  assert(
+    /Defender.*Midfielder.*0\/0/i.test(marcusHumbert?.verification?.notes ?? ""),
+    "Australia U23 Marcus Humbert position and measurement conflicts must remain explicit"
   );
 
   for (const tournament of dataset.tournaments) {
