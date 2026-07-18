@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-12",
+  "generated_at": "2026-07-18",
   "stats": {
     "player_count": 252,
     "country_count": 5,
@@ -26104,6 +26104,532 @@
         "head_coach": "周海滨",
         "stage_note": "2011 左右年龄线当前对应 U15 / U14 周期，2014、2015、2016 批次仍主要处于地方青训、校园与选拔营层。",
         "sample_players": []
+      }
+    ]
+  },
+  "china_youth_development_coaches": {
+    "id": "china-youth-development-coaches",
+    "schema_version": 1,
+    "last_checked": "2026-07-18",
+    "scope": "中国境内长期从事男子青少年足球启蒙、梯队训练、校园足球或青训技术管理的具名教练样本。小学、体校、足校、职业俱乐部梯队、独立基地和民间项目分别标注；不与成年一线队或国字号主教练统计混算。",
+    "coverage_status": "seed",
+    "role_policy": {
+      "included": [
+        "校园足球队主教练或总教练",
+        "职业俱乐部或足校青年梯队主教练",
+        "独立青训基地创办人兼带训教练",
+        "民间选拔和比赛项目的实际带队者",
+        "有公开青训实践的退役球员"
+      ],
+      "excluded": [
+        "只有球员经历、没有公开青训实践的人物",
+        "只任行政职务且没有训练或技术职责者",
+        "无法确认全名或机构关联的短视频称呼",
+        "成年一线队和国字号任期本身"
+      ]
+    },
+    "coaches": [
+      {
+        "id": "cn-xie-bo-shimen-5",
+        "name": {
+          "zh": "谢波",
+          "en": "Xie Bo",
+          "native": "谢波"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "石门县第五完全小学",
+          "short_name": "石门五小",
+          "type": "campus-school",
+          "province": "湖南",
+          "city": "常德"
+        },
+        "role": "足球教练、梯队建设者",
+        "age_bands": [
+          "primary-school",
+          "u12"
+        ],
+        "period": {
+          "start": "2016",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "2016年进入石门五小持续带队，从低年级组队、日常训练到全国赛事形成校园梯队。公开报道强调其长期驻校训练和山区校园足球路径。",
+        "methodology_tags": [
+          "校园足球",
+          "低年龄启蒙",
+          "长期驻校",
+          "山区青训"
+        ],
+        "source_links": [
+          {
+            "type": "government",
+            "label": "湖南体育网：用心耕耘校园足球，石门五小教练谢波打造学生军劲旅",
+            "url": "https://tyj.hunan.gov.cn/tyj/xxgk/szdt/202505/t20250508_33665131.html",
+            "checked_at": "2026-07-18",
+            "claim": "确认谢波的石门五小教练身份、长期带训和校园梯队建设。"
+          },
+          {
+            "type": "state-media",
+            "label": "新体育网：山区足球娃驰骋绿茵场，教练团传承热爱不言弃",
+            "url": "https://www.new-sports.cn/xuexi/xuexi3/202308/t20230808_193098.html",
+            "checked_at": "2026-07-18",
+            "claim": "补充石门五小教练团队、校园足球岗位和训练环境。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "省级体育主管部门与体育媒体来源相互印证；现任状态来自2025年报道，需按年度复核。"
+        }
+      },
+      {
+        "id": "cn-wang-chu-position-football",
+        "name": {
+          "zh": "王楚",
+          "en": "Wang Chu",
+          "native": "王楚"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "王楚专项位置足球俱乐部",
+          "short_name": "FC-王楚",
+          "type": "private-academy",
+          "province": "四川",
+          "city": "成都"
+        },
+        "role": "创办人、青训教练、球员私教",
+        "age_bands": [
+          "youth-mixed"
+        ],
+        "period": {
+          "start": "2024",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "前职业球员王楚2024年退役后在成都从事青训和球员专项训练，公开介绍以位置训练、比赛阅读与自主决策能力为重点，并计划建立多年龄段精英队。",
+        "methodology_tags": [
+          "退役球员转教练",
+          "位置专项",
+          "比赛阅读",
+          "自主决策"
+        ],
+        "source_links": [
+          {
+            "type": "secondary-media",
+            "label": "法甲联赛采访转述：王楚谈青训目标与训练评估",
+            "url": "https://www.ppsport.com/360news/news/2520405.html",
+            "checked_at": "2026-07-18",
+            "claim": "确认王楚退役后从事青训、建立多年龄段精英队及其训练理念。"
+          },
+          {
+            "type": "self-published",
+            "label": "FC-王楚训练公开视频",
+            "url": "https://www.bilibili.com/video/BV1331WBAE1b/",
+            "checked_at": "2026-07-18",
+            "claim": "确认王楚专项位置足球俱乐部的公开账号、训练内容和对外名称。"
+          }
+        ],
+        "verification": {
+          "status": "mixed-source",
+          "last_checked": "2026-07-18",
+          "notes": "青训实践已公开，但机构注册名称、各年龄段名单和教练证书尚无统一官方页面，暂不推断资质等级。"
+        }
+      },
+      {
+        "id": "cn-xu-genbao-genbao-base",
+        "name": {
+          "zh": "徐根宝",
+          "en": "Xu Genbao",
+          "native": "徐根宝"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "上海崇明根宝足球基地",
+          "short_name": "根宝基地",
+          "type": "independent-base",
+          "province": "上海",
+          "city": "上海"
+        },
+        "role": "创办人、总教练、青训体系负责人",
+        "age_bands": [
+          "academy-mixed"
+        ],
+        "period": {
+          "start": "2000",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "2000年创办崇明根宝足球基地，采用长期集中培养和高质量训练路径，先后培养武磊、张琳芃、颜骏凌、王燊超等职业及国字号球员。",
+        "methodology_tags": [
+          "长期集中培养",
+          "精英梯队",
+          "职业衔接",
+          "高质量训练"
+        ],
+        "source_links": [
+          {
+            "type": "official-association",
+            "label": "中国足协专访徐根宝：如何成为一名优秀的青训教练",
+            "url": "https://www.thecfa.cn/jyqxjly/20220413/30552.html",
+            "checked_at": "2026-07-18",
+            "claim": "确认基地创办时间、教练身份、训练理念和代表性培养成果。"
+          },
+          {
+            "type": "government",
+            "label": "国家体育总局：徐根宝推动打造崇明足球县",
+            "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21791305/content.html",
+            "checked_at": "2026-07-18",
+            "claim": "补充崇明基地建设和长期青训路径。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "中国足协与体育总局来源闭环；现阶段具体梯队和助教名单仍需另行维护。"
+        }
+      },
+      {
+        "id": "cn-liu-zhongyun-dongbeilu-primary",
+        "name": {
+          "zh": "柳忠云",
+          "en": "Liu Zhongyun",
+          "native": "柳忠云"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "大连市东北路小学",
+          "short_name": "东北路小学",
+          "type": "campus-school",
+          "province": "辽宁",
+          "city": "大连"
+        },
+        "role": "足球总教练",
+        "age_bands": [
+          "primary-school",
+          "u12"
+        ],
+        "period": {
+          "start": "1986",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "1986年进入东北路小学任教并逐步组建教练团队，是该校长期校园足球和低年龄人才培养的代表教练。",
+        "methodology_tags": [
+          "校园足球",
+          "低年龄启蒙",
+          "长期带训",
+          "城市青训传统"
+        ],
+        "source_links": [
+          {
+            "type": "state-media",
+            "label": "中国网：大连东北路小学推进足球青训42年",
+            "url": "https://www.china.com.cn/txt/2026-01/19/content_118287184.shtml",
+            "checked_at": "2026-07-18",
+            "claim": "确认柳忠云1986年任教、组建团队和东北路小学青训沿革。"
+          },
+          {
+            "type": "government",
+            "label": "国家体育总局：大连市东北路小学常耕不辍发展校园足球",
+            "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21879601/content.html",
+            "checked_at": "2026-07-18",
+            "claim": "确认柳忠云的足球总教练身份及长期带训实践。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "体育总局和2026年国家级媒体报道相互印证。"
+        }
+      },
+      {
+        "id": "cn-zhou-haibin-shandong-2007",
+        "name": {
+          "zh": "周海滨",
+          "en": "Zhou Haibin",
+          "native": "周海滨"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "山东泰山足球俱乐部2007年龄段",
+          "short_name": "山东泰山青训/鲁能足校体系",
+          "type": "professional-academy",
+          "province": "山东",
+          "city": "济南/潍坊"
+        },
+        "role": "青年梯队主教练",
+        "age_bands": [
+          "u15",
+          "u17",
+          "u19"
+        ],
+        "period": {
+          "start": "2022",
+          "end": "2025",
+          "precision": "year",
+          "status": "former"
+        },
+        "profile_summary": "带领山东泰山2007年龄段连续获得2022至2024年中青赛U15、U17、U19组冠军，并两次获最佳教练员；2025年11月转任中国U14男足主教练。",
+        "methodology_tags": [
+          "职业梯队",
+          "跨年龄段连续培养",
+          "中青赛",
+          "退役球员转教练"
+        ],
+        "source_links": [
+          {
+            "type": "official-association",
+            "label": "中国足协：周海滨出任中国U14国家男子足球队主教练",
+            "url": "https://www.thecfa.cn/qttz/20251122/37096.html",
+            "checked_at": "2026-07-18",
+            "claim": "确认其山东泰山2007年龄段执教成果、教练资质和2025年岗位变化。"
+          },
+          {
+            "type": "official-association",
+            "label": "中国足协：山东泰山U15获得首届中青赛冠军",
+            "url": "https://www.thecfa.cn/qingchaoliansai/20221126/31937.html",
+            "checked_at": "2026-07-18",
+            "claim": "确认周海滨担任山东泰山U15主教练。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "本表只记录其山东泰山/鲁能足校青训体系任期；现任国字号岗位由中国男足青年教练表维护。"
+        }
+      },
+      {
+        "id": "cn-zhu-liwei-evergrande-u13",
+        "name": {
+          "zh": "朱利伟",
+          "en": "Zhu Liwei",
+          "native": "朱利伟"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "恒大足球学校U13",
+          "short_name": "恒大足校U13",
+          "type": "professional-academy",
+          "province": "广东",
+          "city": "清远"
+        },
+        "role": "U13梯队主教练",
+        "age_bands": [
+          "u13"
+        ],
+        "period": {
+          "start": null,
+          "end": null,
+          "precision": "snapshot",
+          "status": "confirmed-2025"
+        },
+        "profile_summary": "2025年带领恒大足校U13参加第四届中国青少年足球联赛并夺得全国冠军。当前公开来源只能确认2025赛季快照，不把该岗位外推为长期现任。",
+        "methodology_tags": [
+          "职业足校",
+          "u13",
+          "中青赛",
+          "压迫与拼抢"
+        ],
+        "source_links": [
+          {
+            "type": "official-association",
+            "label": "中国足协：中青赛U13决赛首回合恒大足校取胜",
+            "url": "https://www.thecfa.cn/qingchaoliansai/20250908/36883.html",
+            "checked_at": "2026-07-18",
+            "claim": "确认朱利伟为恒大足校U13主教练及其赛后训练侧重点。"
+          },
+          {
+            "type": "official-school",
+            "label": "恒大足球学校：U13梯队获2025中青赛全国冠军",
+            "url": "https://fs.evergrande.com/show.php?id=1258",
+            "checked_at": "2026-07-18",
+            "claim": "确认球队、赛事和冠军结果。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "身份与2025赛季成果有足协及足校来源；任期起止未公开，故使用赛季快照。"
+        }
+      },
+      {
+        "id": "kr-kim-jinhyung-tsinghua-high",
+        "name": {
+          "zh": "金镇亨",
+          "en": "Kim Jin-hyung",
+          "native": "金镇亨"
+        },
+        "nationality": "Korea Republic",
+        "organization": {
+          "name": "清华大学附属中学马约翰体育特长班足球队",
+          "short_name": "清华附中足球队",
+          "type": "campus-school",
+          "province": "北京",
+          "city": "北京"
+        },
+        "role": "足球队总教练、U17主教练",
+        "age_bands": [
+          "u15",
+          "u17",
+          "high-school"
+        ],
+        "period": {
+          "start": "2016",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "作为清华附中韩国教练团队负责人参与马约翰班足球队建设；学校2024年官方报道仍明确其为U17主教练，2025年中青赛报道继续确认其带队。",
+        "methodology_tags": [
+          "体教融合",
+          "校园精英队",
+          "韩国教练团队",
+          "u17"
+        ],
+        "source_links": [
+          {
+            "type": "official-school",
+            "label": "清华附中：U17足球队获2024中青赛北京赛区冠军",
+            "url": "https://qhfz.edu.cn/info/1061/20234.htm",
+            "checked_at": "2026-07-18",
+            "claim": "确认金镇亨为清华附中U17主教练及教练团队负责人。"
+          },
+          {
+            "type": "official-school",
+            "label": "清华附中：2017年足球特长招生宣讲会",
+            "url": "https://www.qhfz.edu.cn/info/1064/13437.htm",
+            "checked_at": "2026-07-18",
+            "claim": "确认其总教练身份、韩国教练团队和早期建队职责。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "学校官方2016、2024来源与2025足协赛事报道形成连续证据；韩文姓名拼写尚缺官方拉丁字母页。"
+        }
+      },
+      {
+        "id": "cn-dong-lu-football-boys",
+        "name": {
+          "zh": "董路",
+          "en": "Dong Lu",
+          "native": "董路"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "中国足球小将",
+          "short_name": "足球小将",
+          "type": "independent-project",
+          "province": "跨地区",
+          "city": "跨地区"
+        },
+        "role": "创办人、选材者、比赛主教练",
+        "age_bands": [
+          "u9",
+          "u12",
+          "u16"
+        ],
+        "period": {
+          "start": "2017",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "2017年发起中国足球小将，以全国选拔、飞行集训和高质量比赛为主要形式。该项目不是固定注册俱乐部，董路的角色随批次在创办人、选材者、带队者和比赛主教练之间变化。",
+        "methodology_tags": [
+          "民间项目",
+          "全国选材",
+          "飞行集训",
+          "以赛代练",
+          "媒体平台"
+        ],
+        "source_links": [
+          {
+            "type": "state-media",
+            "label": "中国新闻网：足球小将教练董路谈青训与比赛",
+            "url": "https://www.chinanews.com.cn/ty/shipin/cns-d/2026/06-09/news1057255.shtml",
+            "checked_at": "2026-07-18",
+            "claim": "确认董路的中国足球小将教练身份和2026年实际带队。"
+          },
+          {
+            "type": "official-school",
+            "label": "清华附中携手中国足球小将探索培养新模式",
+            "url": "https://qhfz.edu.cn/info/1071/2966.htm",
+            "checked_at": "2026-07-18",
+            "claim": "确认董路为项目创始人及项目与学校的合作。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "人物与带队事实可核；不在本表断言中国足协教练员等级，项目批次、球员归属和2034杯赛事继续由专题档案维护。"
+        }
+      },
+      {
+        "id": "cn-yerbolati-nurlan-altay-u14",
+        "name": {
+          "zh": "叶尔波拉提·努尔兰",
+          "en": "Yeerbolati Nurlan",
+          "native": "叶尔波拉提·努尔兰"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "阿勒泰地区业余体校U14代表队",
+          "short_name": "阿勒泰地区U14",
+          "type": "sports-school",
+          "province": "新疆",
+          "city": "阿勒泰"
+        },
+        "role": "U14代表队教练",
+        "age_bands": [
+          "u14"
+        ],
+        "period": {
+          "start": null,
+          "end": null,
+          "precision": "snapshot",
+          "status": "confirmed-2025"
+        },
+        "profile_summary": "阿勒泰地区业余体校派送U14代表队教练。2025年2月带队以7场38球、全胜战绩获得第三届“火洲贺岁杯”全疆青少年足球邀请赛U14冠军，4名球员获得代表新疆足协参加全国锦标赛的机会。",
+        "methodology_tags": [
+          "地区体校",
+          "新疆青训",
+          "u14",
+          "赛事选拔"
+        ],
+        "source_links": [
+          {
+            "type": "government",
+            "label": "阿勒泰日报2025年2月10日：阿勒泰足球小将获火洲贺岁杯U14冠军",
+            "url": "https://alt-szb.xjmty.com/resfile/2025-02-10/04/altrb2025021004.pdf",
+            "checked_at": "2026-07-18",
+            "claim": "确认教练全名、阿勒泰地区U14身份、赛事成绩和后续备战计划。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-18",
+          "notes": "地方党报原版第4版第145至149行可核。当前仅确认2025年2月赛事快照，不把用户口述的“叶教练”扩写为其他人，也不推断长期任期。"
+        }
+      }
+    ],
+    "watchlist": [
+      {
+        "organization": "山东鲁能泰山足球学校",
+        "need": "补齐2026年各年龄段主教练、技术总监埃里克的全名与官方履历。"
+      },
+      {
+        "organization": "恒大足球学校",
+        "need": "补齐U15、U17现任主教练及各梯队任期，避免用单届冠军报道外推全校教练架构。"
+      },
+      {
+        "organization": "中国足球小将",
+        "need": "按2014、2015、2016等批次拆分董路、徐亮及其他实际带队教练，区分临时比赛合作与长期训练。"
       }
     ]
   },

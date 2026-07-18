@@ -214,6 +214,26 @@ export async function syncSqlite() {
       competitions_json TEXT NOT NULL,
       source_links_json TEXT NOT NULL
     );
+
+    CREATE TABLE china_youth_development_coaches (
+      id TEXT PRIMARY KEY,
+      name_zh TEXT NOT NULL,
+      name_en TEXT NOT NULL,
+      name_native TEXT NOT NULL,
+      nationality TEXT NOT NULL,
+      organization_name TEXT NOT NULL,
+      organization_short_name TEXT NOT NULL,
+      organization_type TEXT NOT NULL,
+      province TEXT NOT NULL,
+      city TEXT NOT NULL,
+      role TEXT NOT NULL,
+      age_bands_json TEXT NOT NULL,
+      period_json TEXT NOT NULL,
+      profile_summary TEXT NOT NULL,
+      methodology_tags_json TEXT NOT NULL,
+      source_links_json TEXT NOT NULL,
+      verification_json TEXT NOT NULL
+    );
   `);
 
   const insertPlayer = db.prepare(`
@@ -293,6 +313,14 @@ export async function syncSqlite() {
       id, country, name_json, summary_json, checked_at, registration_categories_json,
       competitions_json, source_links_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertChinaYouthDevelopmentCoach = db.prepare(`
+    INSERT INTO china_youth_development_coaches (
+      id, name_zh, name_en, name_native, nationality,
+      organization_name, organization_short_name, organization_type, province, city,
+      role, age_bands_json, period_json, profile_summary, methodology_tags_json,
+      source_links_json, verification_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
 
   for (const player of dataset.players) {
@@ -505,6 +533,28 @@ export async function syncSqlite() {
       toJson(system.registration_categories),
       toJson(system.competitions),
       toJson(system.source_links)
+    );
+  }
+
+  for (const coach of dataset.chinaYouthDevelopmentCoaches?.coaches ?? []) {
+    insertChinaYouthDevelopmentCoach.run(
+      coach.id,
+      coach.name.zh,
+      coach.name.en,
+      coach.name.native,
+      coach.nationality,
+      coach.organization.name,
+      coach.organization.short_name,
+      coach.organization.type,
+      coach.organization.province,
+      coach.organization.city,
+      coach.role,
+      toJson(coach.age_bands),
+      toJson(coach.period),
+      coach.profile_summary,
+      toJson(coach.methodology_tags),
+      toJson(coach.source_links),
+      toJson(coach.verification)
     );
   }
 

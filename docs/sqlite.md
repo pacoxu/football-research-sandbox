@@ -28,6 +28,18 @@ erDiagram
   players ||--o{ player_source_layers : has
   overseas_buckets ||--o{ overseas_records : has
 
+  china_youth_development_coaches {
+    TEXT id PK
+    TEXT name_zh
+    TEXT organization_name
+    TEXT organization_type
+    TEXT role
+    TEXT age_bands_json
+    TEXT period_json
+    TEXT source_links_json
+    TEXT verification_json
+  }
+
   players {
     TEXT id PK
     TEXT name
