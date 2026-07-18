@@ -1,6 +1,6 @@
 # 文档入口
 
-更新时间：2026-06-27
+更新时间：2026-07-18
 
 ## 技术维护
 
@@ -21,6 +21,7 @@
 - [数据治理、来源状态与质量控制规则](research/data-governance-and-quality-rules.md)
 - [亚洲/中国球员与教练信息收集说明](research/asian-chinese-player-coach-collection.md)
 - [日韩 U17/U23 青训路径来源层补充](research/japan-korea-u17-u23-source-layers.md)
+- [伊朗及剩余 U20/U23 官方名单来源审计](research/issue-55-iran-remaining-u20-u23-source-audit.md)
 - [海外青训、球探与青年球员检索源目录](research/scouting-source-directory.md)
 - [中国足球联赛层级与地方城市联赛说明](research/china-league-pyramid-and-regional-super-leagues.md)
 
