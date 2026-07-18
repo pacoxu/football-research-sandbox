@@ -20,6 +20,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Added a UEFA Youth League historical index covering every season from 2013/14 through 2022/23, including formats, final-four teams, top scorers, final details, source versions, coverage status, the delayed 2019/20 finish, the explicitly cancelled 2020/21 season, and a documented 2021/22 UEFA scorer-list discrepancy.
+
 - Completed the 23-player Uzbekistan U17 2026 final-squad dataset, added Abdukodir Khusanov as an overseas pathway case, and documented Uzbekistan's recent U17/U20/U23 development results.
 
 - Added the China player-level `overseas_status` model, status counts in generated overview data, validation rules, SQLite support, and a bilingual status-scope card on the overseas page.

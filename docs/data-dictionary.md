@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-07-12
+更新时间：2026-07-18
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -14,6 +14,7 @@
 | `data/raw/overseas-history.json` | 中日韩留洋历史、分层 bucket 和 featured records。 | 是 |
 | `data/raw/big-five-asian-coaches.json` | 五大联赛亚洲教练主表和边界说明。 | 是 |
 | `data/raw/asian-coaches.json` | 五大联赛之外的亚洲主教练实体、任期、范围和官方来源。 | 是 |
+| `data/raw/china-youth-development-coaches.json` | 中国基层、校园、足校、职业梯队与民间项目的具名青训教练样本。 | 是 |
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
@@ -226,6 +227,40 @@
 | `stints[].record` | 逐场战绩未核前允许为 `null`，任命事实不因缺战绩而阻塞。 |
 | `stints[].source_links`、`verification` | 官方来源类型、核查日期和事实说明。 |
 
+## 中国青训教练
+
+`data/raw/china-youth-development-coaches.json` 与国字号青年队教练、亚洲一线队主教练分开维护。首批覆盖石门五小、王楚、根宝基地、东北路小学、山东泰山/鲁能足校体系、恒大足校、清华附中、中国足球小将和阿勒泰地区体校。
+
+| 字段 | 含义 |
+| --- | --- |
+| `organization` | 教练对应的学校、足校、职业梯队、独立基地、地区体校或民间项目；`type` 明确组织类别。 |
+| `role`、`age_bands` | 公开可核的训练职责和年龄段，不从单场带队自动外推为全校总教练。 |
+| `period` | 年份任期或赛季快照；`confirmed-2025` 表示只能确认该年度，不等于持续现任。 |
+| `methodology_tags` | 来源能够支持的培养特征，用于检索，不作为主观教练排名。 |
+| `source_links[].claim` | 逐条说明来源支撑的人名、岗位、成果或任期事实。 |
+| `verification` | 核验状态、日期和边界；模糊的“某教练”称呼不得替代全名。 |
+
 ## 生成字段
 
 `data/site/**` 由脚本生成，不应手工编辑。`data/site/overview.json` 的 `generated_at` 当前由 `scripts/build-site-data.mjs` 中常量控制，不是构建时自动日期。只改文档时不更新 `generated_at`。
+## UEFA Youth League historical season index
+
+`data/raw/uefa-youth-league.json` 中的 `historical_season_index` 保存青年欧冠赛季级历史档案。它与用于页面深度展示的 `seasons` 分开，允许先完成历史索引，再分阶段补齐完整参赛队和逐场比赛。
+
+| 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `id` / `label` | string | 内部赛季 ID 使用 `YYYY-YY`，展示名使用 UEFA 的 `YYYY/YY`。 |
+| `status` | enum | `completed`、因赛历中断而延期完成的 `completed-delayed`，或未进行比赛的 `cancelled`。 |
+| `start_date` / `end_date` | date \| null | 已举办赛季使用 ISO 日期；取消且未开赛的赛季必须为 `null`。 |
+| `entrant_count` | integer | 已举办赛季的参赛规模；取消赛季可记录官方抽签规模，但须在冲突说明中注明并非实际出赛数。 |
+| `paths` | string[] | 当季资格路径，如欧冠路径和国内青年冠军路径。 |
+| `format_summary` | localized text | 当季赛制、路径和特殊赛历说明。 |
+| `champion` / `runner_up` | string \| null | 取消赛季必须为 `null`。 |
+| `semi_finalists` | string[] | 两支止步半决赛的球队；取消赛季为空数组。 |
+| `top_scorers` | object[] | UEFA 官方赛季最佳射手及俱乐部、进球数；并列时全部保留，来源冲突写入 `source_conflict_note`。 |
+| `final` | object \| null | 决赛日期、场地、城市、国家、双方与比分；取消赛季为 `null`。 |
+| `coverage` | object | 分别标记完整参赛队、淘汰赛和全量逐场比赛是否已采集。 |
+| `source_version` | string | 本条采用的 UEFA 页面或公告版本说明。 |
+| `source_checked_at` | date | 最近核查日期。 |
+| `source_conflict_note` | string | 命名、延期、场地例外、取消赛季参赛规模等口径说明；无冲突时也明确记录。 |
+| `source_ids` | string[] | 指向同文件 `sources` 中的官方来源。 |
