@@ -6272,6 +6272,16 @@ function renderHistoricalRecordCard(record) {
       <ul class="mini-bullet-list coach-record-list">
         ${(record.notes ?? []).map((note) => `<li>${escapeHtml(localizeText(note))}</li>`).join("")}
       </ul>
+      ${(record.source_links ?? []).length
+        ? `<div class="source-list">
+            ${(record.source_links ?? [])
+              .map(
+                (source) =>
+                  `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(localizeText(source.label))}</a>`
+              )
+              .join("")}
+          </div>`
+        : ""}
     </article>
   `;
 }

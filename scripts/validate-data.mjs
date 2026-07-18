@@ -937,6 +937,13 @@ function validateOverseasRecord(record, countryName, allowedBuckets) {
   }
 
   assert(Array.isArray(record.notes), `Invalid overseas notes list on ${record.id}`);
+  if (record.source_links !== undefined) {
+    assert(Array.isArray(record.source_links), `Invalid overseas source list on ${record.id}`);
+    for (const source of record.source_links) {
+      assert(source.label, `Missing overseas source label on ${record.id}`);
+      assert(/^https?:\/\//.test(source.url), `Invalid overseas source url on ${record.id}`);
+    }
+  }
   assert(
     typeof record.appearances === "number" && Number.isInteger(record.appearances),
     `Invalid overseas appearances on ${record.id}`

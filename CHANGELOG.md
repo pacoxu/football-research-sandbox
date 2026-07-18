@@ -4,6 +4,18 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-07-18
+
+### Added
+
+- Added sourced overseas-history profiles for Wang Dalei, Zhou Haibin, Feng Xiaoting, and Jia Xiuquan, covering European trials, PSV registration, K League competition, FK Partizan, and Gamba Osaka.
+- Added source links to overseas history cards and validation for the optional `source_links` field.
+
+### Corrections
+
+- Distinguished Wang Dalei's trials / first-team training from foreign registration, and corrected Zhou Haibin's PSV spell from a trial narrative to a formal one-year signing with zero senior competitive appearances.
+- Split Feng Xiaoting's Nantes trial from his registered Korea spell, and split Jia Xiuquan's European and Japanese top-flight records so league, cup, and continental appearances are not conflated.
+
 ## 2026-07-12
 
 ### Added
