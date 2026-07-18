@@ -138,8 +138,16 @@ const issue47DeepSampleIds = new Set([
   "au-luka-jovanovic-2005"
 ]);
 
+const issue48DeepSampleIds = new Set([
+  "au-charlie-wilson-papps-2009",
+  "au-miles-milliner-2009",
+  "au-oliver-ocarroll-2009",
+  "au-akeem-gerald-2010"
+]);
+
 const completeSquadExpectations = new Map([
   ["Australia|afc-u20-2025", 23],
+  ["Australia|afc-u17-2026", 23],
   ["Qatar|afc-u17-2026", 23]
 ]);
 
@@ -201,6 +209,32 @@ const allowedAsianCoachCountedScopes = new Set([
   "dual_nationality_watch"
 ]);
 const allowedAsianCoachConfidence = new Set(["high", "medium", "low"]);
+
+const allowedChinaYouthCoachOrganizationTypes = new Set([
+  "campus-school",
+  "private-academy",
+  "independent-base",
+  "professional-academy",
+  "independent-project",
+  "sports-school"
+]);
+
+const allowedChinaYouthCoachSourceTypes = new Set([
+  "official-association",
+  "official-school",
+  "official-club",
+  "government",
+  "state-media",
+  "league",
+  "secondary-media",
+  "self-published"
+]);
+
+const allowedChinaYouthCoachPeriodStatuses = new Set([
+  "current-reported",
+  "former",
+  "confirmed-2025"
+]);
 
 function assert(condition, message) {
   if (!condition) {
@@ -1082,6 +1116,103 @@ function validateCoachRecord(record, label) {
   assert(record.points === record.wins * 3 + record.draws, `Coach points do not add up on ${label}`);
 }
 
+function validateChinaYouthDevelopmentCoaches(archive) {
+  assert(
+    archive.id === "china-youth-development-coaches",
+    "Invalid china_youth_development_coaches id"
+  );
+  assert(
+    Number.isInteger(archive.schema_version) && archive.schema_version > 0,
+    "Invalid china_youth_development_coaches schema_version"
+  );
+  assert(
+    isIsoDate(archive.last_checked),
+    "Invalid china_youth_development_coaches last_checked"
+  );
+  assert(
+    Array.isArray(archive.role_policy?.included) && Array.isArray(archive.role_policy?.excluded),
+    "Invalid china_youth_development_coaches role_policy"
+  );
+  assert(
+    Array.isArray(archive.coaches) && archive.coaches.length > 0,
+    "Invalid china_youth_development_coaches coaches"
+  );
+  assert(Array.isArray(archive.watchlist), "Invalid china_youth_development_coaches watchlist");
+
+  const coachIds = new Set();
+  for (const coach of archive.coaches) {
+    assert(coach.id, "China youth coach must include id");
+    assert(!coachIds.has(coach.id), `Duplicate China youth coach id: ${coach.id}`);
+    assert(
+      coach.name?.zh && coach.name?.en && coach.name?.native,
+      `Missing names on China youth coach ${coach.id}`
+    );
+    assert(coach.nationality, `Missing nationality on China youth coach ${coach.id}`);
+    assert(
+      coach.organization?.name && coach.organization?.short_name,
+      `Missing organization on China youth coach ${coach.id}`
+    );
+    assert(
+      allowedChinaYouthCoachOrganizationTypes.has(coach.organization.type),
+      `Invalid organization type "${coach.organization.type}" on China youth coach ${coach.id}`
+    );
+    assert(coach.role, `Missing role on China youth coach ${coach.id}`);
+    assert(
+      Array.isArray(coach.age_bands) && coach.age_bands.length > 0,
+      `Invalid age_bands on China youth coach ${coach.id}`
+    );
+    assert(
+      ["year", "snapshot"].includes(coach.period?.precision),
+      `Invalid period precision on China youth coach ${coach.id}`
+    );
+    assert(
+      allowedChinaYouthCoachPeriodStatuses.has(coach.period?.status),
+      `Invalid period status on China youth coach ${coach.id}`
+    );
+    assert(
+      coach.period.start === null || /^\d{4}$/.test(coach.period.start),
+      `Invalid period start on China youth coach ${coach.id}`
+    );
+    assert(
+      coach.period.end === null || /^\d{4}$/.test(coach.period.end),
+      `Invalid period end on China youth coach ${coach.id}`
+    );
+    assert(coach.profile_summary, `Missing profile_summary on China youth coach ${coach.id}`);
+    assert(
+      Array.isArray(coach.methodology_tags) && coach.methodology_tags.length > 0,
+      `Invalid methodology_tags on China youth coach ${coach.id}`
+    );
+    assert(
+      Array.isArray(coach.source_links) && coach.source_links.length > 0,
+      `Missing source_links on China youth coach ${coach.id}`
+    );
+
+    for (const link of coach.source_links) {
+      assert(
+        allowedChinaYouthCoachSourceTypes.has(link.type),
+        `Invalid source type "${link.type}" on China youth coach ${coach.id}`
+      );
+      assert(link.label && link.claim, `Incomplete source on China youth coach ${coach.id}`);
+      assert(/^https?:\/\//.test(link.url), `Invalid source url on China youth coach ${coach.id}`);
+      assert(
+        isIsoDate(link.checked_at),
+        `Invalid source checked_at on China youth coach ${coach.id}`
+      );
+    }
+
+    assert(
+      allowedVerificationStatuses.has(coach.verification?.status),
+      `Invalid verification status on China youth coach ${coach.id}`
+    );
+    assert(
+      isIsoDate(coach.verification?.last_checked),
+      `Invalid verification date on China youth coach ${coach.id}`
+    );
+    assert(coach.verification.notes, `Missing verification notes on China youth coach ${coach.id}`);
+    coachIds.add(coach.id);
+  }
+}
+
 function validateBigFiveAsianCoaches(archive) {
   assert(typeof archive.id === "string" && archive.id.length > 0, "Missing big_five_asian_coaches id");
   assert(isIsoDate(archive.last_checked), "Invalid big_five_asian_coaches last_checked");
@@ -1313,6 +1444,10 @@ function validateUefaYouthLeague(topic, playerIds) {
   assert(typeof topic === "object" && topic !== null, "Missing UEFA Youth League dataset");
   assert(isIsoDate(topic.meta?.checked_at), "Invalid UEFA Youth League checked_at");
   assert(Array.isArray(topic.seasons) && topic.seasons.length === 3, "UEFA Youth League must include three seasons");
+  assert(
+    Array.isArray(topic.historical_season_index) && topic.historical_season_index.length === 10,
+    "UEFA Youth League historical index must include 2013/14 through 2022/23"
+  );
   assert(Array.isArray(topic.sources) && topic.sources.length > 0, "UEFA Youth League sources are required");
 
   const sourceIds = new Set();
@@ -1336,6 +1471,57 @@ function validateUefaYouthLeague(topic, playerIds) {
   }
   for (const rule of topic.player_eligibility?.rules ?? []) {
     validateSourceIds(rule, `player_eligibility:${rule.id}`);
+  }
+
+  const expectedHistoricalSeasonIds = [
+    "2013-14", "2014-15", "2015-16", "2016-17", "2017-18",
+    "2018-19", "2019-20", "2020-21", "2021-22", "2022-23"
+  ];
+  assert(
+    JSON.stringify(topic.historical_season_index.map((season) => season.id)) ===
+      JSON.stringify(expectedHistoricalSeasonIds),
+    "UEFA Youth League historical seasons must be complete and chronological"
+  );
+  for (const season of topic.historical_season_index) {
+    const label = `historical_season:${season.id}`;
+    assert(season.competition_id === "uefa-youth-league", `Invalid competition_id on ${label}`);
+    assert(season.competition_name === "UEFA Youth League", `Invalid competition_name on ${label}`);
+    assert(season.organizer === "UEFA" && season.age_category === "Under-19", `Invalid scope on ${label}`);
+    assert(
+      ["completed", "completed-delayed", "cancelled"].includes(season.status),
+      `Invalid status on ${label}`
+    );
+    assert(Number.isInteger(season.entrant_count) && season.entrant_count > 0, `Invalid entrant_count on ${label}`);
+    assert(Array.isArray(season.paths) && season.paths.length > 0, `Missing qualification paths on ${label}`);
+    assert(season.format_summary?.zh && season.format_summary?.en, `Missing format summary on ${label}`);
+    assert(typeof season.source_version === "string" && season.source_version.length > 0, `Missing source_version on ${label}`);
+    assert(isIsoDate(season.source_checked_at), `Invalid source_checked_at on ${label}`);
+    assert(
+      typeof season.source_conflict_note === "string" && season.source_conflict_note.length > 0,
+      `Missing source_conflict_note on ${label}`
+    );
+    assert(season.coverage?.participating_teams, `Missing participating-team coverage on ${label}`);
+    assert(season.coverage?.knockout_matches && season.coverage?.all_matches, `Missing match coverage on ${label}`);
+    if (season.status === "cancelled") {
+      assert(season.id === "2020-21", `Unexpected cancelled UEFA Youth League season: ${season.id}`);
+      assert(season.start_date === null && season.end_date === null, `Cancelled season must not invent dates on ${label}`);
+      assert(season.champion === null && season.runner_up === null && season.final === null, `Cancelled season must not have a winner on ${label}`);
+      assert(season.semi_finalists.length === 0 && season.top_scorers.length === 0, `Cancelled season must not have final-stage records on ${label}`);
+      assert(season.coverage.all_matches === "not-played", `Cancelled season match status must be not-played on ${label}`);
+    } else {
+      assert(isIsoDate(season.start_date) && isIsoDate(season.end_date), `Invalid season dates on ${label}`);
+      assert(season.champion && season.runner_up, `Missing finalists on ${label}`);
+      assert(Array.isArray(season.semi_finalists) && season.semi_finalists.length === 2, `Invalid semi-finalists on ${label}`);
+      assert(Array.isArray(season.top_scorers) && season.top_scorers.length > 0, `Missing top scorers on ${label}`);
+      for (const scorer of season.top_scorers) {
+        assert(scorer.name && scorer.club, `Incomplete top scorer on ${label}`);
+        assert(Number.isInteger(scorer.goals) && scorer.goals > 0, `Invalid top-scorer goals on ${label}`);
+      }
+      assert(isIsoDate(season.final?.date), `Invalid final date on ${label}`);
+      assert(season.final.home && season.final.away && season.final.score, `Incomplete final on ${label}`);
+      assert(season.final.venue && season.final.city && season.final.country, `Missing final venue on ${label}`);
+    }
+    validateSourceIds(season, label);
   }
 
   const seasonIds = new Set();
@@ -1411,6 +1597,7 @@ export async function validateData() {
   const completeSquads = new Map(
     [...completeSquadExpectations.keys()].map((squadKey) => [squadKey, []])
   );
+  const issue54UzbekistanU17 = [];
 
   for (const player of dataset.players) {
     for (const field of requiredPlayerFields) {
@@ -1512,6 +1699,14 @@ export async function validateData() {
         completeSquad.push({ player, entry });
       }
     }
+    if (
+      player.country === "Uzbekistan" &&
+      player.tournament_participation.some(
+        (entry) => entry.competition_id === "afc-u17-2026" && entry.squad_status === "registered"
+      )
+    ) {
+      issue54UzbekistanU17.push(player);
+    }
     validateVerificationBlock(player.verification, player.id);
     for (const identityKey of getIdentityKeys(player)) {
       const previousPlayer = playerIdentityKeys.get(identityKey);
@@ -1571,6 +1766,26 @@ export async function validateData() {
     assert(
       currentPathway.organization_type === player.registration_club.organization_type,
       `Pathway organization type differs from current registration on ${player.id}`
+    );
+  }
+
+  assert(
+    issue54UzbekistanU17.length === 23,
+    `Expected 23 Uzbekistan AFC U17 2026 players, found ${issue54UzbekistanU17.length}`
+  );
+  const issue54JerseyNumbers = issue54UzbekistanU17
+    .map((player) => player.jersey_number)
+    .sort((left, right) => left - right);
+  assert(
+    issue54JerseyNumbers.every((number, index) => number === index + 1),
+    `Invalid Uzbekistan AFC U17 2026 jersey sequence: ${issue54JerseyNumbers.join(", ")}`
+  );
+  for (const player of issue54UzbekistanU17) {
+    assert(
+      player.external_links.some(
+        (link) => link.type === "official" && link.url.includes("AFC-U17-Asian-Cup-Saudi-Arabia-2026")
+      ),
+      `Missing AFC final-squad source on ${player.id}`
     );
   }
   for (const playerId of issue16DeepSampleIds) {
@@ -1646,6 +1861,47 @@ export async function validateData() {
   assert(issue52ShirtNumbers.size === 23, "Qatar U17 shirt numbers must cover the complete final squad");
   assert(issue52Goalkeepers === 3, `Qatar U17 final squad must have 3 goalkeepers, found ${issue52Goalkeepers}`);
   assert(issue52MissingClubs === 2, `Qatar U17 must preserve 2 AFC club omissions, found ${issue52MissingClubs}`);
+
+  const issue48Squad = completeSquads.get("Australia|afc-u17-2026");
+  const issue48ShirtNumbers = new Set();
+  for (const { player, entry } of issue48Squad) {
+    assert(player.age_band === "u17", `Invalid Australia U17 age_band on ${player.id}`);
+    assert(entry.roster_status === "final-squad", `Invalid Australia U17 roster_status on ${player.id}`);
+    assert(
+      Number.isInteger(entry.shirt_number) && entry.shirt_number >= 1 && entry.shirt_number <= 23,
+      `Invalid Australia U17 shirt_number on ${player.id}`
+    );
+    assert(!issue48ShirtNumbers.has(entry.shirt_number), `Duplicate Australia U17 shirt_number ${entry.shirt_number}`);
+    issue48ShirtNumbers.add(entry.shirt_number);
+    assert(
+      player.registration_club.status === "tournament-snapshot" &&
+        isIsoDate(player.registration_club.as_of),
+      `Missing Australia U17 registration snapshot on ${player.id}`
+    );
+    const afcLayers = (player.source_layers ?? []).filter((layer) => layer.type === "afc-registration");
+    assert(afcLayers.length === 1, `Expected one AFC registration source on ${player.id}`);
+    assert(afcLayers[0].confidence === "high", `AFC registration source must be high confidence on ${player.id}`);
+  }
+  for (const playerId of issue48DeepSampleIds) {
+    const squadEntry = issue48Squad.find(({ player }) => player.id === playerId);
+    assert(squadEntry !== undefined, `Missing issue #48 deep sample ${playerId}`);
+    const afcUrls = new Set(
+      squadEntry.player.source_layers
+        .filter((layer) => layer.type === "afc-registration")
+        .map((layer) => layer.url)
+    );
+    const independentOfficialLayers = squadEntry.player.source_layers.filter(
+      (layer) => layer.type !== "afc-registration" && !afcUrls.has(layer.url)
+    );
+    assert(independentOfficialLayers.length > 0, `Missing issue #48 independent official source on ${playerId}`);
+  }
+  const henriqueOliveira = issue48Squad.find(
+    ({ player }) => player.id === "au-henrique-oliveira-2009"
+  )?.player;
+  assert(
+    /forward.*midfielder/i.test(henriqueOliveira?.verification?.notes ?? ""),
+    "Australia U17 Henrique Oliveira position conflict must remain explicit"
+  );
 
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
@@ -1728,6 +1984,10 @@ export async function validateData() {
 
   if (dataset.chinaMenYouthCoaches !== null) {
     validateChinaMenYouthCoaches(dataset.chinaMenYouthCoaches);
+  }
+
+  if (dataset.chinaYouthDevelopmentCoaches !== null) {
+    validateChinaYouthDevelopmentCoaches(dataset.chinaYouthDevelopmentCoaches);
   }
 
   if (dataset.bigFiveAsianCoaches !== null) {

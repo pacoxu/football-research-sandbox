@@ -158,20 +158,20 @@ U20 补采优先任务：
 
 | 国家 | 当前覆盖 | 优先补采年龄段 | 基础字段 |
 |---|---|---|---|
-| Uzbekistan | 已有 U17 4 人样本 | U17 2026 半决赛/核心样本，U20 2023/2025，U23 2024/2026 | 姓名、乌文/俄文名、俱乐部、出生日期、位置、AFC 赛事统计 |
+| Uzbekistan | U17 2026 终报名 23 人已完成，另有 Khusanov U23/成年留洋样本 | 本土名补源、U20 2023 与 U23 2024 代表样本 | 姓名、乌文/俄文名、俱乐部、出生日期、位置、AFC 赛事统计、留洋路径 |
 | Australia | 仅赛事卡覆盖 | U20 2025 冠军队，U23 2024/2026，U17 2026 对照 | A-League/海外俱乐部、学院路径、国字号出场 |
 | Saudi Arabia | 仅赛事卡覆盖 | U20 2025 亚军/世青赛资格，U17 2025/2026，U23 2026 | 俱乐部青训、青年联赛路径 |
 | Iran | 待建 | U17/U20/U23 长期亚洲强队对照 | 国内俱乐部、海外路径、AFC 正赛数据 |
 | Qatar | U17 2026 完整 23 人已建 | U20 2025、U23 2026、世界杯青训项目对照 | U17 已有 AFC 终报名与对中国队赛报语境；后续补官方阿文名、两项俱乐部空缺、Aspire/俱乐部路径和归化边界 |
 
-当前已入库乌兹别克 U17 样本：
+乌兹别克 U17 已按 2026 AFC 最终报名补齐 23 人。以下原有 4 名重点样本继续保留较深的外部统计与转写说明，其余 19 人以 AFC 报名字段为基础：
 
 | 球员 | 国籍 | 俱乐部 | 位置 | 出生日期 |
 |---|---|---|---|---|
 | Asilbek Aliev | Uzbekistan | RFA | Centre-Forward | 2009-01-01 |
-| Mukhammad Khakimov | Uzbekistan | FC Bunyodkor | Centre-Back | 2009-10-04 |
+| Muhammad Khakimov | Uzbekistan | FC Bunyodkor | Centre-Back | 2009-10-04 |
 | Amirkhon Erkinov | Uzbekistan | ODIL JUNIOR | Central Midfield | 2009-01-10 |
-| Abubakir Rakhimov | Uzbekistan | ODIL JUNIOR | Centre-Back | 2009-05-04 |
+| Abubakir Rakhimov | Uzbekistan | ODIL JUNIOR | Midfielder | 2009-05-04 |
 
 对照组采样规则：每国每年龄段先补 8-12 名核心样本；若有完整终报名 PDF，再扩成 23 人。核心样本优先选择进球、队长、门将、海外注册、职业一线队出场、进入最佳阵容或技术报告重点提及的球员。
 
@@ -185,14 +185,14 @@ U20 补采优先任务：
 | Iran U23 2026 | AFC U23 2026 final registration PDF | 英文注册名、生日、位置、俱乐部、身高体重 | 波斯文名和俱乐部英文转写需 FFIRI/俱乐部官网交叉 |
 | Qatar U17 2026 | AFC U17 2026 final squad lists PDF；AFC 中国 2-0 卡塔尔官方赛报 | 已完成 23 人英文注册名、生日、位置、报名俱乐部、身高体重、号码和赛事身份 | 14、20 号俱乐部在 AFC 原表为空；官方逐名阿文名单尚未捕获，不反向音译，也不从参赛身份推断对中国队出场 |
 | Qatar U23 2026 | AFC U23 2026 final registration PDF | 英文注册名、生日、位置、俱乐部、身高体重 | 本土名和 Aspire/俱乐部路径用 QFA 或俱乐部 profile 补 |
-| Uzbekistan U17/U23 | 现有 4 名 U17 样本、AFC U17 2026 final squad lists PDF、AFC U23 2026 final registration PDF | 已有 U17 样本可扩到 8-12 人；U23 可从 AFC PDF 建新对照 | 乌文/俄文名、俱乐部差异和 Transfermarkt 统计需要标 `mixed-source` |
+| Uzbekistan U17/U23 | U17 2026 final squad 23 人已完成；Khusanov 已作为 U20 冠军、U23 奥运资格和成年留洋兑现样本建档 | U23 可继续从 AFC PDF 建完整对照 | 乌文/俄文名、俱乐部差异和 Transfermarkt 统计需要标 `mixed-source` |
 
 首批建议顺序：
 
 1. 先做 Australia U20 2025：Football Australia 已给出完整 23 人名单和俱乐部/青训字段；若时间有限，先抽 8-12 名核心样本也能满足 #17 的最小验收。
 2. 再做 AFC U23 2026 横向抽样：Saudi Arabia、Iran、Qatar、Australia、Uzbekistan 都可用同一份 AFC final registration PDF 统一字段口径。
-3. Qatar U17 2026 完整 23 人已完成；继续用 QFA 本土足协公告补 native script 和两个缺失俱乐部，避免反向音译或猜测。
-4. Uzbekistan U17 先从 4 人扩到 8-12 人，再决定是否补完整 23 人。
+3. Qatar U17 2026 完整 23 人已完成；继续用 QFA 本土足协公告补 native script 和两个缺失俱乐部，避免反向音译或猜测；Saudi Arabia U17 2025/2026 同样优先补本土足协来源。
+4. Uzbekistan U17 23 人已完成；后续优先补本土名、俱乐部青训路径和 U20/U23 代表球员。
 
 `source_confidence` 建议：
 

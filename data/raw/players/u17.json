@@ -1356,6 +1356,7 @@
     "country": "Uzbekistan",
     "birth_date": "2009-01-01",
     "age_band": "u17",
+    "jersey_number": 9,
     "primary_position": "Centre-Forward",
     "height_cm": 180,
     "weight_kg": 70,
@@ -1409,17 +1410,18 @@
     ],
     "verification": {
       "status": "mixed-source",
-      "last_checked": "2026-05-22",
+      "last_checked": "2026-07-12",
       "notes": "基础生年和位置稳定，但当前俱乐部字段需继续核实。"
     }
   },
   {
     "id": "uz-mukhammad-khakimov-2009",
-    "name": "Mukhammad Khakimov",
+    "name": "Muhammad Khakimov",
     "local_name": "Хакимов Мухаммад",
     "country": "Uzbekistan",
     "birth_date": "2009-10-04",
     "age_band": "u17",
+    "jersey_number": 4,
     "primary_position": "Centre-Back",
     "height_cm": 188,
     "weight_kg": 64,
@@ -1482,8 +1484,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "报名俱乐部、年龄和位置一致性较高，可作为乌兹别克核心后卫样本。"
+      "last_checked": "2026-07-12",
+      "notes": "AFC 2026 终报名使用 MUHAMMAD KHAKIMOV；外部数据库常见 Mukhammad Khakimov。生日、俱乐部、身高体重和后卫位置一致，保留 ID 中的旧转写以避免链接失效。"
     }
   },
   {
@@ -1493,6 +1495,7 @@
     "country": "Uzbekistan",
     "birth_date": "2009-01-10",
     "age_band": "u17",
+    "jersey_number": 7,
     "primary_position": "Central Midfield",
     "height_cm": 182,
     "weight_kg": 74,
@@ -1544,7 +1547,7 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
+      "last_checked": "2026-07-12",
       "notes": "赛事出场快照较完整，适合作为乌兹别克中场轮换样本。"
     }
   },
@@ -1555,7 +1558,8 @@
     "country": "Uzbekistan",
     "birth_date": "2009-05-04",
     "age_band": "u17",
-    "primary_position": "Centre-Back",
+    "jersey_number": 22,
+    "primary_position": "Midfielder",
     "height_cm": 173,
     "weight_kg": 70,
     "registration_club": {
@@ -1607,8 +1611,8 @@
     ],
     "verification": {
       "status": "mixed-source",
-      "last_checked": "2026-05-22",
-      "notes": "报名俱乐部和外部资料俱乐部字段存在差异，先保留双来源。"
+      "last_checked": "2026-07-12",
+      "notes": "AFC 2026 终报名将其登记为 Midfielder、俱乐部为 ODIL JUNIOR；外部资料曾显示中后卫和 Olympia Tashkent，故保留双来源并以本届官方报名位置为主。"
     }
   },
   {
