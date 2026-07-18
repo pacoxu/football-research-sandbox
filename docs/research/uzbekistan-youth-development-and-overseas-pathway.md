@@ -1,6 +1,6 @@
 # 乌兹别克斯坦青年足球与留洋路径
 
-核查日期：2026-07-12
+核查日期：2026-07-18
 
 ## 结论
 
@@ -34,7 +34,7 @@ AFC 于 2026-05-02 发布的终报名表列出 23 人，全部出生于 2009 年
 | Gazalkent | 2 | 提供一名高大中卫和一名中场。 |
 | PFC Nasaf、Neftchi、Oqtepa、PFC Andijan、PFC Lokomotiv、Surkhon | 各 1 | 说明人才并非只集中在塔什干两家传统强队。 |
 
-完整名单以 [AFC U17 2026 Final Squad Lists](https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf) 第 13 页为准。仓库将 AFC 英文注册名作为主索引；只有获得 UFA、俱乐部或可靠档案支持时才补乌兹别克语/俄语转写，避免自动转写制造重复球员。
+完整名单以 [AFC U17 2026 Final Squad Lists](https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf) 第 13 页为准。仓库将 AFC 英文注册名作为主索引，并用 [O‘zA 乌兹别克语最终名单](https://uza.uz/ru/posts/ozbekiston-u17-terma-jamoasining-osiyo-kubogi-uchun-yakuniy-tarkibi-malum_848333) 补齐23人的乌兹别克拉丁拼写；英语媒体或数据库中的其他转写只作为 alias，避免仅因 `kh/h`、`o‘/u`、`-iyev/-iev` 等差异重复建档。
 
 ## 培养体系的几个支点
 
@@ -74,7 +74,7 @@ Khusanov 是这条路线最清楚的案例：
 ## 数据边界
 
 - AFC 终报名俱乐部是 2026-05-02 的赛事注册快照，不自动代表整个赛季或当前合同状态。
-- `M. Abdisoliev` 在 AFC 文件中只有名字首字母，未得到官方全名之前不补写推测名称。
+- AFC 文件中的 `M. Abdisoliev` 已由 O‘zA 2026-04-23 乌兹别克语终名单补全为 `Mashhurbek Abdisoliyev`；UzDaily 英文稿另作 `Mashhurbek Abdissoliev`，Transfermarkt 作 `Mashkhurbek Abdisoliev`。主档保留稳定 ID，并将这些转写结构化为 alias。
 - `Muhammad/Mukhammad`、`Khusanov/Husanov` 等差异属于多语转写，不应仅凭拼写差异建立第二条球员记录。
 - 青年赛事冠军不能直接等同于成年国家队长期实力；本专题只把多年龄段持续进入淘汰赛、球员职业化和成年队兑现结合起来观察。
 - 身价不是人工估计；相关覆盖由项目既有市场价值同步流程单独生成。

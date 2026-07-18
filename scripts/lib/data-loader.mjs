@@ -133,13 +133,25 @@ function buildPlayerNames(player, override = {}) {
     country === "Korea Republic"
       ? pickFirstName(override.ko, hasHangulScript(nativeName) ? nativeName : "")
       : "";
+  const uzbekName =
+    country === "Uzbekistan"
+      ? pickFirstName(
+          override.uz,
+          nativeName && !hasCyrillicScript(nativeName) ? nativeName : ""
+        )
+      : "";
+  const aliases = [...new Set((override.aliases ?? []).map(cleanName).filter(Boolean))].filter(
+    (alias) => ![englishName, nativeName, uzbekName].includes(alias)
+  );
 
   return {
     zh: chineseName,
     en: englishName,
     native: nativeName,
     ja: japaneseName,
-    ko: koreanName
+    ko: koreanName,
+    ...(uzbekName ? { uz: uzbekName } : {}),
+    ...(aliases.length > 0 ? { aliases } : {})
   };
 }
 

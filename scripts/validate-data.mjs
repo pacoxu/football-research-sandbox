@@ -1607,7 +1607,27 @@ export async function validateData() {
       ),
       `Missing AFC final-squad source on ${player.id}`
     );
+    assert(player.names?.en, `Missing English registration name on ${player.id}`);
+    assert(player.names?.uz, `Missing Uzbek Latin name on ${player.id}`);
   }
+  const issue54TransliterationVariantCount = issue54UzbekistanU17.filter(
+    (player) =>
+      player.names.en !== player.names.uz ||
+      (Array.isArray(player.names?.aliases) && player.names.aliases.length > 0)
+  ).length;
+  assert(
+    issue54TransliterationVariantCount >= 19,
+    `Expected structured transliteration variants for at least 19 Uzbekistan U17 players, found ${issue54TransliterationVariantCount}`
+  );
+  const mashhurbekAbdisoliev = issue54UzbekistanU17.find(
+    (player) => player.id === "uz-m-abdisoliev-2009"
+  );
+  assert(
+    mashhurbekAbdisoliev?.names?.en === "Mashhurbek Abdisoliev" &&
+      mashhurbekAbdisoliev.names.uz === "Mashhurbek Abdisoliyev" &&
+      mashhurbekAbdisoliev.verification.status === "verified",
+    "Mashhurbek Abdisoliev full-name resolution must remain verified and traceable"
+  );
   for (const playerId of issue16DeepSampleIds) {
     const player = issue16Players.find((candidate) => candidate.id === playerId);
     assert(player !== undefined, `Missing issue #16 deep sample ${playerId}`);

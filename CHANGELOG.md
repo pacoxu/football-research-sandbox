@@ -8,6 +8,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Structured Uzbek Latin names and transliteration aliases for all 23 Uzbekistan U17 2026 final-squad players, resolving AFC's abbreviated `M. Abdisoliev` through O‘zA while preserving the stable player ID and source variants.
+
 - Completed the 23-player Uzbekistan U17 2026 final-squad dataset, added Abdukodir Khusanov as an overseas pathway case, and documented Uzbekistan's recent U17/U20/U23 development results.
 
 - Added the China player-level `overseas_status` model, status counts in generated overview data, validation rules, SQLite support, and a bilingual status-scope card on the overseas page.
