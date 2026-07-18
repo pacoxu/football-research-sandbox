@@ -2,8 +2,8 @@
   "meta": {
     "id": "uefa-youth-league",
     "name": { "zh": "欧洲青年冠军联赛", "en": "UEFA Youth League" },
-    "scope": { "zh": "最近三个已完成赛季；中日韩按 UEFA 官方国籍尽量完整，其他国家仅精选。", "en": "The latest three completed seasons, with comprehensive CJK coverage by UEFA nationality and curated players from elsewhere." },
-    "checked_at": "2026-07-12"
+    "scope": { "zh": "2013/14 起的历史赛季索引，以及最近三个已完成赛季的详细赛制、参赛队和淘汰赛；中日韩球员按 UEFA 官方国籍尽量完整，其他国家仅精选。", "en": "A historical season index from 2013/14, plus detailed formats, entrants and knockouts for the latest three completed seasons; comprehensive CJK player coverage by UEFA nationality and curated players from elsewhere." },
+    "checked_at": "2026-07-18"
   },
   "qualification": {
     "applies_from": "2024/25",
@@ -25,6 +25,88 @@
     "duplicate_rule": { "zh": "同时符合两条路径的俱乐部进入欧冠路径；其国内青年冠军名额通常由该协会青年联赛亚军顺延。", "en": "A club qualifying through both routes enters the Champions League path; its domestic berth normally passes to the youth league runners-up from that association." },
     "source_ids": ["rules-2026-entries", "format-2026"]
   },
+  "historical_season_index": [
+    {
+      "id": "2013-14", "label": "2013/14", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2013-09-17", "end_date": "2014-04-14", "entrant_count": 32, "paths": ["uefa-champions-league-path"],
+      "format_summary": { "zh": "首届、两年试办期第一季。32 支欧冠小组赛俱乐部的 U19 队沿用成年组分组与赛程；每组前两名进入单场淘汰赛，四强在尼翁集中进行。", "en": "The inaugural season and first year of a two-year trial. The U19 teams of the 32 Champions League group-stage clubs mirrored the senior groups and fixtures; the top two in each group entered one-off knockouts, with the final four staged in Nyon." },
+      "champion": "Barcelona", "runner_up": "Benfica", "final": { "date": "2014-04-14", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Benfica", "away": "Barcelona", "score": "0–3" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA history page and competition history overview", "source_checked_at": "2026-07-18", "source_conflict_note": "No material conflict found; club names are normalized to the current dataset style.", "source_ids": ["competition-history", "history-2014"]
+    },
+    {
+      "id": "2014-15", "label": "2014/15", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2014-09-16", "end_date": "2015-04-13", "entrant_count": 32, "paths": ["uefa-champions-league-path"],
+      "format_summary": { "zh": "两年试办期第二季，继续由32支欧冠小组赛俱乐部 U19 队参赛；小组前两名进入单场淘汰赛，四强在尼翁集中进行。", "en": "The second trial season again featured the U19 teams of the 32 Champions League group-stage clubs; the top two in each group entered one-off knockouts, with the final four staged in Nyon." },
+      "champion": "Chelsea", "runner_up": "Shakhtar Donetsk", "final": { "date": "2015-04-13", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Shakhtar Donetsk", "away": "Chelsea", "score": "2–3" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA history page and competition history overview", "source_checked_at": "2026-07-18", "source_conflict_note": "No material conflict found; club names are normalized to the current dataset style.", "source_ids": ["competition-history", "history-2015"]
+    },
+    {
+      "id": "2015-16", "label": "2015/16", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2015-09-15", "end_date": "2016-04-18", "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "赛事扩至64队并首次加入国内青年冠军路径。32支欧冠路径球队踢小组赛；32支国内冠军进行两轮主客场淘汰赛，8支胜者在附加赛主场迎战欧冠路径小组第二。", "en": "The field doubled to 64 with the new Domestic Champions path. The 32 Champions League-path teams played groups; 32 domestic champions played two two-legged rounds, with eight survivors hosting the Champions League-path runners-up in play-offs." },
+      "champion": "Chelsea", "runner_up": "Paris Saint-Germain", "final": { "date": "2016-04-18", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Chelsea", "away": "Paris Saint-Germain", "score": "2–1" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA history page and competition history overview", "source_checked_at": "2026-07-18", "source_conflict_note": "No material conflict found; Paris is stored under its full club name.", "source_ids": ["competition-history", "history-2016"]
+    },
+    {
+      "id": "2016-17", "label": "2016/17", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2016-09-13", "end_date": "2017-04-24", "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "沿用双路径64队赛制：欧冠路径小组第一直入十六强，小组第二与国内冠军路径8支胜者参加附加赛。", "en": "The 64-team dual-path format continued: Champions League-path group winners entered the round of 16, while runners-up faced the eight Domestic Champions-path survivors in play-offs." },
+      "champion": "Salzburg", "runner_up": "Benfica", "final": { "date": "2017-04-24", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Benfica", "away": "Salzburg", "score": "1–2" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA history page and competition history overview", "source_checked_at": "2026-07-18", "source_conflict_note": "UEFA historical copy uses Salzburg branding without a sponsor prefix; that form is retained.", "source_ids": ["competition-history", "history-2017"]
+    },
+    {
+      "id": "2017-18", "label": "2017/18", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2017-09-12", "end_date": "2018-04-23", "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "沿用双路径64队赛制，国内冠军路径通过两轮主客场淘汰赛产生8支附加赛球队，四强继续在尼翁集中进行。", "en": "The 64-team dual-path format remained, with two two-legged Domestic Champions rounds producing eight play-off teams and the final four again staged in Nyon." },
+      "champion": "Barcelona", "runner_up": "Chelsea", "final": { "date": "2018-04-23", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Chelsea", "away": "Barcelona", "score": "0–3" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA history page and competition history overview", "source_checked_at": "2026-07-18", "source_conflict_note": "No material conflict found; the final score is stored in UEFA's Chelsea–Barcelona order.", "source_ids": ["competition-history", "history-2018"]
+    },
+    {
+      "id": "2018-19", "label": "2018/19", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2018-09-18", "end_date": "2019-04-29", "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "32支欧冠路径球队与32支国内青年冠军组成双路径；附加赛后合流为十六强，淘汰赛均为单场。", "en": "Thirty-two Champions League-path teams and 32 domestic youth champions formed two paths; after the play-offs they merged in a one-leg round of 16 and knockout phase." },
+      "champion": "Porto", "runner_up": "Chelsea", "final": { "date": "2019-04-29", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Porto", "away": "Chelsea", "score": "3–1" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA season guide, history page and competition history overview", "source_checked_at": "2026-07-18", "source_conflict_note": "No material conflict found; calendar dates follow UEFA's season guide.", "source_ids": ["competition-history", "format-2019", "history-2019"]
+    },
+    {
+      "id": "2019-20", "label": "2019/20", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed-delayed",
+      "start_date": "2019-09-17", "end_date": "2020-08-25", "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "赛季原沿用双路径64队赛制，2020年3月因新冠疫情暂停；未完成的两场十六强以及八强至决赛于2020年8月在尼翁集中以单场赛制完成。", "en": "The season began under the 64-team dual-path format but paused in March 2020 because of COVID-19; the two outstanding round-of-16 ties and all matches from the quarter-finals onward were completed as one-off games in Nyon in August 2020." },
+      "champion": "Real Madrid", "runner_up": "Benfica", "final": { "date": "2020-08-25", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Benfica", "away": "Real Madrid", "score": "2–3" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA history page and competition history overview", "source_checked_at": "2026-07-18", "source_conflict_note": "Season label remains 2019/20 although the delayed final was played in August 2020.", "source_ids": ["competition-history", "history-2020"]
+    },
+    {
+      "id": "2020-21", "label": "2020/21", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "cancelled",
+      "start_date": null, "end_date": null, "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "原计划改为64队单场淘汰赛并于2021年3月开赛；因疫情、跨境旅行限制及已有两队退出，UEFA执行委员会于2021年2月17日取消赛季，未产生比赛和冠军。", "en": "A reformatted 64-team one-leg knockout edition was due to begin in March 2021; because of the pandemic, cross-border travel restrictions and two club withdrawals, the UEFA Executive Committee cancelled the season on 17 February 2021 before any match was played." },
+      "champion": null, "runner_up": null, "final": null,
+      "coverage": { "participating_teams": "draw-published", "knockout_matches": "not-played", "all_matches": "not-played" },
+      "source_version": "UEFA Executive Committee cancellation release", "source_checked_at": "2026-07-18", "source_conflict_note": "The 64 clubs reflect the published round-of-64 draw, not actual participants; no match was played and no title was awarded.", "source_ids": ["competition-history", "cancelled-2021", "draw-2021"]
+    },
+    {
+      "id": "2021-22", "label": "2021/22", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2021-09-14", "end_date": "2022-04-25", "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "赛事在取消一季后恢复传统双路径64队赛制：欧冠路径32队小组赛，国内冠军路径32队踢两轮主客场淘汰赛，之后通过附加赛合流。", "en": "After the cancelled season, the traditional 64-team dual-path format returned: 32 Champions League-path teams played groups, 32 domestic champions played two two-legged rounds, and the paths merged through the play-offs." },
+      "champion": "Benfica", "runner_up": "Salzburg", "final": { "date": "2022-04-25", "venue": "Colovray Stadium", "city": "Nyon", "country": "Switzerland", "home": "Salzburg", "away": "Benfica", "score": "0–6" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA dates/format guide and history page", "source_checked_at": "2026-07-18", "source_conflict_note": "No material conflict found; entrant count and dates follow UEFA's season guide.", "source_ids": ["competition-history", "format-2022", "history-2022"]
+    },
+    {
+      "id": "2022-23", "label": "2022/23", "competition_id": "uefa-youth-league", "competition_name": "UEFA Youth League", "organizer": "UEFA", "age_category": "Under-19", "status": "completed",
+      "start_date": "2022-09-06", "end_date": "2023-04-24", "entrant_count": 64, "paths": ["uefa-champions-league-path", "domestic-champions-path"],
+      "format_summary": { "zh": "沿用双路径64队赛制。因决赛周门票需求异常旺盛，四强赛从尼翁 Colovray 移至容量更大的日内瓦 Stade de Genève。", "en": "The 64-team dual-path format continued. Because of exceptional ticket demand, the final four moved from Colovray in Nyon to the larger Stade de Genève in Geneva." },
+      "champion": "AZ Alkmaar", "runner_up": "Hajduk Split", "final": { "date": "2023-04-24", "venue": "Stade de Genève", "city": "Geneva", "country": "Switzerland", "home": "AZ Alkmaar", "away": "Hajduk Split", "score": "5–0" },
+      "coverage": { "participating_teams": "count-only", "knockout_matches": "final-only", "all_matches": "not-collected" },
+      "source_version": "UEFA dates/format guide and history page", "source_checked_at": "2026-07-18", "source_conflict_note": "Venue is Stade de Genève rather than the usual Colovray site; this is an intentional season exception.", "source_ids": ["competition-history", "format-2023", "history-2023"]
+    }
+  ],
   "player_eligibility": {
     "season": "2025/26",
     "birth_year_minimum": 2007,
@@ -130,6 +212,21 @@
     { "season_id": "2025-26", "name": "Javier Navarro", "club": "Real Madrid", "reason": { "zh": "决赛点球大战扑出两球", "en": "Saved two penalties in the final shoot-out" }, "source_ids": ["final-2026"] }
   ],
   "sources": [
+    { "id": "competition-history", "label": "UEFA Youth League competition history and roll of honour", "url": "https://www.uefa.com/uefayouthleague/history/" },
+    { "id": "history-2014", "label": "UEFA Youth League 2013/14 history", "url": "https://www.uefa.com/uefayouthleague/history/2014/" },
+    { "id": "history-2015", "label": "UEFA Youth League 2014/15 history", "url": "https://www.uefa.com/uefayouthleague/history/2015/" },
+    { "id": "history-2016", "label": "UEFA Youth League 2015/16 history", "url": "https://www.uefa.com/uefayouthleague/history/2016/" },
+    { "id": "history-2017", "label": "UEFA Youth League 2016/17 history", "url": "https://www.uefa.com/uefayouthleague/history/2017/" },
+    { "id": "history-2018", "label": "UEFA Youth League 2017/18 history", "url": "https://www.uefa.com/uefayouthleague/history/2018/" },
+    { "id": "format-2019", "label": "UEFA Youth League 2018/19 season guide", "url": "https://www.uefa.com/uefayouthleague/news/0253-0d0482e3f0c7-13b4fb4db501-1000--2018-19-uefa-youth-league-season-guide/" },
+    { "id": "history-2019", "label": "UEFA Youth League 2018/19 history", "url": "https://www.uefa.com/uefayouthleague/history/2019/" },
+    { "id": "history-2020", "label": "UEFA Youth League 2019/20 history", "url": "https://www.uefa.com/uefayouthleague/history/2020/" },
+    { "id": "cancelled-2021", "label": "UEFA Youth League 2020/21 cancelled", "url": "https://www.uefa.com/insideuefa/mediaservices/mediareleases/news/0266-119978efab62-354190432a5e-1000--uefa-youth-league-2020-21-cancelled/" },
+    { "id": "draw-2021", "label": "UEFA Youth League 2020/21 round-of-64 draw", "url": "https://www.uefa.com/uefayouthleague/news/0265-1164b8f778ab-d1d459f8550f-1000--uefa-youth-league-round-of-64-draw/" },
+    { "id": "format-2022", "label": "UEFA Youth League 2021/22 dates, format and contenders", "url": "https://www.uefa.com/uefayouthleague/news/0264-1108b758096f-67077a6b7198-1000--2021-22-youth-league-dates/" },
+    { "id": "history-2022", "label": "UEFA Youth League 2021/22 history", "url": "https://www.uefa.com/uefayouthleague/history/2022/" },
+    { "id": "format-2023", "label": "UEFA Youth League 2022/23 dates and format", "url": "https://www.uefa.com/uefayouthleague/news/0274-14febf3cce20-ec0e16be27c3-1000--2022-23-uefa-youth-league-dates-format/" },
+    { "id": "history-2023", "label": "UEFA Youth League 2022/23 history", "url": "https://www.uefa.com/uefayouthleague/history/2023/" },
     { "id": "rules-2026-entries", "label": "UEFA Youth League 2025/26 regulations – Article 3", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-3-Entries-for-the-competition-Online" },
     { "id": "rules-2026-eligibility", "label": "UEFA Youth League 2025/26 regulations – Article 28", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-28-Player-eligibility-Online" },
     { "id": "rules-2026-lists", "label": "UEFA Youth League 2025/26 regulations – Article 29", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-29-Player-lists-Online" },
