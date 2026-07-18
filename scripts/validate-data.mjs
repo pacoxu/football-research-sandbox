@@ -1381,10 +1381,17 @@ function validateUefaYouthLeague(topic, playerIds) {
       assert(season.id === "2020-21", `Unexpected cancelled UEFA Youth League season: ${season.id}`);
       assert(season.start_date === null && season.end_date === null, `Cancelled season must not invent dates on ${label}`);
       assert(season.champion === null && season.runner_up === null && season.final === null, `Cancelled season must not have a winner on ${label}`);
+      assert(season.semi_finalists.length === 0 && season.top_scorers.length === 0, `Cancelled season must not have final-stage records on ${label}`);
       assert(season.coverage.all_matches === "not-played", `Cancelled season match status must be not-played on ${label}`);
     } else {
       assert(isIsoDate(season.start_date) && isIsoDate(season.end_date), `Invalid season dates on ${label}`);
       assert(season.champion && season.runner_up, `Missing finalists on ${label}`);
+      assert(Array.isArray(season.semi_finalists) && season.semi_finalists.length === 2, `Invalid semi-finalists on ${label}`);
+      assert(Array.isArray(season.top_scorers) && season.top_scorers.length > 0, `Missing top scorers on ${label}`);
+      for (const scorer of season.top_scorers) {
+        assert(scorer.name && scorer.club, `Incomplete top scorer on ${label}`);
+        assert(Number.isInteger(scorer.goals) && scorer.goals > 0, `Invalid top-scorer goals on ${label}`);
+      }
       assert(isIsoDate(season.final?.date), `Invalid final date on ${label}`);
       assert(season.final.home && season.final.away && season.final.score, `Incomplete final on ${label}`);
       assert(season.final.venue && season.final.city && season.final.country, `Missing final venue on ${label}`);

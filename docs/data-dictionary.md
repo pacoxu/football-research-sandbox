@@ -242,6 +242,8 @@
 | `paths` | string[] | 当季资格路径，如欧冠路径和国内青年冠军路径。 |
 | `format_summary` | localized text | 当季赛制、路径和特殊赛历说明。 |
 | `champion` / `runner_up` | string \| null | 取消赛季必须为 `null`。 |
+| `semi_finalists` | string[] | 两支止步半决赛的球队；取消赛季为空数组。 |
+| `top_scorers` | object[] | UEFA 官方赛季最佳射手及俱乐部、进球数；并列时全部保留，来源冲突写入 `source_conflict_note`。 |
 | `final` | object \| null | 决赛日期、场地、城市、国家、双方与比分；取消赛季为 `null`。 |
 | `coverage` | object | 分别标记完整参赛队、淘汰赛和全量逐场比赛是否已采集。 |
 | `source_version` | string | 本条采用的 UEFA 页面或公告版本说明。 |

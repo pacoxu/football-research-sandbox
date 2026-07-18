@@ -24736,6 +24736,17 @@
         },
         "champion": "Barcelona",
         "runner_up": "Benfica",
+        "semi_finalists": [
+          "Real Madrid",
+          "Schalke 04"
+        ],
+        "top_scorers": [
+          {
+            "name": "Munir El Haddadi",
+            "club": "Barcelona",
+            "goals": 11
+          }
+        ],
         "final": {
           "date": "2014-04-14",
           "venue": "Colovray Stadium",
@@ -24750,12 +24761,13 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA history page and competition history overview",
+        "source_version": "UEFA history page, competition history overview and all-time records",
         "source_checked_at": "2026-07-18",
         "source_conflict_note": "No material conflict found; club names are normalized to the current dataset style.",
         "source_ids": [
           "competition-history",
-          "history-2014"
+          "history-2014",
+          "records"
         ]
       },
       {
@@ -24778,6 +24790,17 @@
         },
         "champion": "Chelsea",
         "runner_up": "Shakhtar Donetsk",
+        "semi_finalists": [
+          "Roma",
+          "Anderlecht"
+        ],
+        "top_scorers": [
+          {
+            "name": "Dominic Solanke",
+            "club": "Chelsea",
+            "goals": 12
+          }
+        ],
         "final": {
           "date": "2015-04-13",
           "venue": "Colovray Stadium",
@@ -24792,12 +24815,13 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA history page and competition history overview",
+        "source_version": "UEFA history page, competition history overview and all-time records",
         "source_checked_at": "2026-07-18",
         "source_conflict_note": "No material conflict found; club names are normalized to the current dataset style.",
         "source_ids": [
           "competition-history",
-          "history-2015"
+          "history-2015",
+          "records"
         ]
       },
       {
@@ -24821,6 +24845,17 @@
         },
         "champion": "Chelsea",
         "runner_up": "Paris Saint-Germain",
+        "semi_finalists": [
+          "Anderlecht",
+          "Real Madrid"
+        ],
+        "top_scorers": [
+          {
+            "name": "Roberto Núñez",
+            "club": "Atlético de Madrid",
+            "goals": 9
+          }
+        ],
         "final": {
           "date": "2016-04-18",
           "venue": "Colovray Stadium",
@@ -24835,12 +24870,13 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA history page and competition history overview",
+        "source_version": "UEFA history page, competition history overview and all-time records",
         "source_checked_at": "2026-07-18",
         "source_conflict_note": "No material conflict found; Paris is stored under its full club name.",
         "source_ids": [
           "competition-history",
-          "history-2016"
+          "history-2016",
+          "records"
         ]
       },
       {
@@ -24864,6 +24900,22 @@
         },
         "champion": "Salzburg",
         "runner_up": "Benfica",
+        "semi_finalists": [
+          "Barcelona",
+          "Real Madrid"
+        ],
+        "top_scorers": [
+          {
+            "name": "Jordi Mboula",
+            "club": "Barcelona",
+            "goals": 8
+          },
+          {
+            "name": "Kaj Sierhuis",
+            "club": "Ajax",
+            "goals": 8
+          }
+        ],
         "final": {
           "date": "2017-04-24",
           "venue": "Colovray Stadium",
@@ -24878,12 +24930,13 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA history page and competition history overview",
+        "source_version": "UEFA history page, competition history overview and all-time records",
         "source_checked_at": "2026-07-18",
         "source_conflict_note": "UEFA historical copy uses Salzburg branding without a sponsor prefix; that form is retained.",
         "source_ids": [
           "competition-history",
-          "history-2017"
+          "history-2017",
+          "records"
         ]
       },
       {
@@ -24907,6 +24960,17 @@
         },
         "champion": "Barcelona",
         "runner_up": "Chelsea",
+        "semi_finalists": [
+          "Manchester City",
+          "Porto"
+        ],
+        "top_scorers": [
+          {
+            "name": "Ivan Ignatev",
+            "club": "Krasnodar",
+            "goals": 10
+          }
+        ],
         "final": {
           "date": "2018-04-23",
           "venue": "Colovray Stadium",
@@ -24921,12 +24985,13 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA history page and competition history overview",
+        "source_version": "UEFA history page, competition history overview and all-time records",
         "source_checked_at": "2026-07-18",
-        "source_conflict_note": "No material conflict found; the final score is stored in UEFA's Chelsea–Barcelona order.",
+        "source_conflict_note": "No material conflict found; the final score is stored in UEFA's Chelsea–Barcelona order and the scorer spelling follows UEFA's all-time records page.",
         "source_ids": [
           "competition-history",
-          "history-2018"
+          "history-2018",
+          "records"
         ]
       },
       {
@@ -24950,6 +25015,17 @@
         },
         "champion": "Porto",
         "runner_up": "Chelsea",
+        "semi_finalists": [
+          "Hoffenheim",
+          "Barcelona"
+        ],
+        "top_scorers": [
+          {
+            "name": "Charlie Brown",
+            "club": "Chelsea",
+            "goals": 12
+          }
+        ],
         "final": {
           "date": "2019-04-29",
           "venue": "Colovray Stadium",
@@ -24964,13 +25040,14 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA season guide, history page and competition history overview",
+        "source_version": "UEFA season guide, history page and all-time records",
         "source_checked_at": "2026-07-18",
         "source_conflict_note": "No material conflict found; calendar dates follow UEFA's season guide.",
         "source_ids": [
           "competition-history",
           "format-2019",
-          "history-2019"
+          "history-2019",
+          "records"
         ]
       },
       {
@@ -24994,6 +25071,22 @@
         },
         "champion": "Real Madrid",
         "runner_up": "Benfica",
+        "semi_finalists": [
+          "Salzburg",
+          "Ajax"
+        ],
+        "top_scorers": [
+          {
+            "name": "Roberto Piccoli",
+            "club": "Atalanta",
+            "goals": 8
+          },
+          {
+            "name": "Gonçalo Ramos",
+            "club": "Benfica",
+            "goals": 8
+          }
+        ],
         "final": {
           "date": "2020-08-25",
           "venue": "Colovray Stadium",
@@ -25008,12 +25101,13 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA history page and competition history overview",
+        "source_version": "UEFA history page, competition history overview and all-time records",
         "source_checked_at": "2026-07-18",
         "source_conflict_note": "Season label remains 2019/20 although the delayed final was played in August 2020.",
         "source_ids": [
           "competition-history",
-          "history-2020"
+          "history-2020",
+          "records"
         ]
       },
       {
@@ -25037,6 +25131,8 @@
         },
         "champion": null,
         "runner_up": null,
+        "semi_finalists": [],
+        "top_scorers": [],
         "final": null,
         "coverage": {
           "participating_teams": "draw-published",
@@ -25073,6 +25169,27 @@
         },
         "champion": "Benfica",
         "runner_up": "Salzburg",
+        "semi_finalists": [
+          "Juventus",
+          "Atlético de Madrid"
+        ],
+        "top_scorers": [
+          {
+            "name": "Mads Hansen",
+            "club": "Midtjylland",
+            "goals": 7
+          },
+          {
+            "name": "Aral Simsir",
+            "club": "Midtjylland",
+            "goals": 7
+          },
+          {
+            "name": "Roko Šimić",
+            "club": "Salzburg",
+            "goals": 7
+          }
+        ],
         "final": {
           "date": "2022-04-25",
           "venue": "Colovray Stadium",
@@ -25087,13 +25204,15 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA dates/format guide and history page",
+        "source_version": "UEFA dates/format guide, contemporaneous season review and all-time records",
         "source_checked_at": "2026-07-18",
-        "source_conflict_note": "No material conflict found; entrant count and dates follow UEFA's season guide.",
+        "source_conflict_note": "UEFA's current all-time records page lists only Mads Hansen and Aral Simsir as 2021/22 joint top scorers, while UEFA's contemporaneous season review lists those two plus Roko Šimić on seven goals; the season-specific three-player list is retained.",
         "source_ids": [
           "competition-history",
           "format-2022",
-          "history-2022"
+          "history-2022",
+          "season-review-2022",
+          "records"
         ]
       },
       {
@@ -25117,6 +25236,22 @@
         },
         "champion": "AZ Alkmaar",
         "runner_up": "Hajduk Split",
+        "semi_finalists": [
+          "Sporting CP",
+          "AC Milan"
+        ],
+        "top_scorers": [
+          {
+            "name": "Bilal Mazhar",
+            "club": "Panathinaikos",
+            "goals": 9
+          },
+          {
+            "name": "Mexx Meerdink",
+            "club": "AZ Alkmaar",
+            "goals": 9
+          }
+        ],
         "final": {
           "date": "2023-04-24",
           "venue": "Stade de Genève",
@@ -25131,13 +25266,14 @@
           "knockout_matches": "final-only",
           "all_matches": "not-collected"
         },
-        "source_version": "UEFA dates/format guide and history page",
+        "source_version": "UEFA dates/format guide, history page and all-time records",
         "source_checked_at": "2026-07-18",
         "source_conflict_note": "Venue is Stade de Genève rather than the usual Colovray site; this is an intentional season exception.",
         "source_ids": [
           "competition-history",
           "format-2023",
-          "history-2023"
+          "history-2023",
+          "records"
         ]
       }
     ],
@@ -26115,6 +26251,11 @@
         "id": "history-2022",
         "label": "UEFA Youth League 2021/22 history",
         "url": "https://www.uefa.com/uefayouthleague/history/2022/"
+      },
+      {
+        "id": "season-review-2022",
+        "label": "UEFA Youth League 2021/22 season at a glance",
+        "url": "https://www.uefa.com/uefayouthleague/news/0274-14feb8bc11a4-ebac73b31de8-1000--youth-league-season-at-a-glance/"
       },
       {
         "id": "format-2023",
