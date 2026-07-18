@@ -6,25 +6,25 @@
 
 ## 总览
 
-当前聚合球员库共 232 人：
+当前聚合球员库共 275 人：
 
 | 国家/地区 | 人数 | 当前定位 |
 | --- | ---: | --- |
 | China PR | 80 | 中国 U17/U20/U23、当前留洋、中超/国内青年、足球小将和历史样本主线 |
 | Japan | 52 | 日本 U17/U23 完整终报名种子 + 留洋历史对照 |
 | Korea Republic | 50 | 韩国 U17/U23 完整终报名种子 + 留洋历史对照 |
-| Uzbekistan | 4 | U17 亚洲对照组关键样本 |
-| Australia | 23 | AFC U20 2025 完整终报名对照组 |
+| Australia | 46 | AFC U17 2026、U20 2025 两届完整终报名对照组 |
+| Uzbekistan | 24 | U17 2026 完整终报名 23 人 + Khusanov 留洋兑现样本 |
 | Qatar | 23 | AFC U17 2026 完整终报名对照组 |
 
 年龄段分布：
 
 | 年龄段 | 人数 | 说明 |
 | --- | ---: | --- |
-| u17 | 104 | 东亚三队 U17 + 中国补充观察 + 乌兹别克样本 + 卡塔尔 U17 2026 完整 23 人 |
+| u17 | 146 | 东亚三队 U17 + 澳大利亚、卡塔尔、乌兹别克 U17 2026 完整终报名 + 中国补充观察 |
 | u20 | 41 | 中国 U20 2025 两版名单边界已版本化；澳大利亚 U20 2025 完整终报名 23 人已结构化 |
 | u21 | 19 | 中超/国内青年观察和项目样本 |
-| u23 | 68 | 中日韩 U23 完整终报名与中国留洋/中超样本 |
+| u23 | 69 | 中日韩 U23 完整终报名、中国留洋/中超样本及 Khusanov 兑现样本 |
 
 ## 覆盖矩阵
 
@@ -36,7 +36,7 @@
 | 中国 2026 中超 U21/U23 样本 | 中国球员库 80 人；14 人带 `csl-2026` tag，13 人带 `csl-u21-current`，15 人带 `u21-watch`。 | 种子完成，统计缺口大 | 中超/中甲/中乙官方数据、俱乐部战报、足协杯与 U21 联赛官方资料。 | 一线队联赛、杯赛、U21 联赛分开统计；每名样本有 apps/goals/minutes/source_checked_at。 | 2026-07-11 | 拆中超 2026 青年统计口径与更新节奏 issue。 |
 | 当前中国留洋样本 | 17 名当前有效海外注册样本已统一标记为 `active-registered`；李昊、杨希、邝兆镭 3 名回流样本标记为 `returned`。魏祥鑫 2026-07-01 欧塞尔节点已生效。 | 状态模型完成 | 俱乐部注册页、联赛名单、CFA 集训归属、可靠媒体交叉源。 | 五类 `overseas_status` 可校验；当前人数只统计 `active-registered`，页面与 overview 能解释状态数量。 | 2026-07-12 | 常规复核注册变化；出现可靠试训或未来生效转会时按 `trial-watch` / `pending-effective` 录入。 |
 | 中国五大联赛历史出场榜 | `overseas-history.json` 已有中国 featured_records 16 条，big-five checklist 13 人；蒿俊闵、蒋光太、李金羽、李可、李玮锋、张呈栋仍适合拆成更明确的 featured records。 | 部分完成 | FBref/WorldFootball/Wikipedia/Transfermarkt 交叉源，优先正式联赛出场统计。 | checklist 每名球员都有 featured record 或明确 excluded note；五大联赛顶级联赛、梯队、低级别分开。 | 2026-06-27 | 拆缺失 featured record issue。 |
-| 亚洲其他国家对照组 | 澳大利亚 U20 2025 与卡塔尔 U17 2026 均完成 23/23。卡塔尔名单含 AFC 高置信度终报名层、对中国队官方赛报语境和 2026-05-02 报名快照；14、20 号俱乐部名按 AFC 原表保留为空缺待复核。乌兹别克 U17 仍为 4 人样本。 | 部分完成 | AFC final registration、AFC match reports、各国足协/俱乐部 profile。 | 每个国家×赛事组合恰好 23 人；跨年龄名单按身份去重并保留多条赛事参与记录。 | 2026-07-12 | 继续补卡塔尔官方阿文名和两项俱乐部空缺，再扩沙特、伊朗等队。 |
+| 亚洲其他国家对照组 | 澳大利亚 U17 2026、U20 2025、卡塔尔 U17 2026 与乌兹别克 U17 2026 均已完成 23/23；卡塔尔名单保留 AFC 报名表的两项俱乐部空缺及对中国队官方赛报语境，澳大利亚与乌兹别克名单保留独立官方来源和转写说明。 | 部分完成 | AFC final registration、AFC/FIFA match reports、各国足协/俱乐部 profile。 | 每个国家×赛事组合恰好 23 人；跨年龄名单按身份去重并保留多条赛事参与记录；转写冲突、官方空缺与留洋路径保留来源。 | 2026-07-13 | 增加澳大利亚 U23，补卡塔尔官方阿文名和两项俱乐部空缺，并继续扩展沙特、伊朗。 |
 | 男足 U20 世青赛与亚青赛历史 | 1985—2025 两条谱系各 21 个周期，含取消的 AFC 2020、FIFA 2021；已完赛届次均有主办国、日期、冠亚军、完整参赛队和决赛圈分组。另有 FIFA/AFC 2027 两条 future 记录，AFC 资格赛 44 队按 Qualification/Development Phase 分层。 | 届次主干完成，旧届官方来源可继续加固 | FIFA/AFC 官方档案、技术报告、抽签和主办公告优先；RSSSF、Wikipedia 仅作旧届二级交叉。 | 42 个历史周期通过集合与分组一致性校验；future/cancelled 允许空日期和部分名单，不得用推测球队填充。 | 2026-07-12 | 继续用 FIFA/AFC 技术报告替换旧届二级来源，并随官方公告更新 2027 决赛圈资格和抽签。 |
 | 世界杯、世青赛、世少赛中国队档案 | 已补 2002 世界杯完整 squad、三场小组赛、逐人 minutes、主教练和 qualification_path；新增 1983/1985/1997/2001 U20 与 1985/1989/1991/1993/2003 U16/U17 世界赛参赛档案，覆盖 squad、matches、goals、coach、qualification_path、source_links；2005 U17/U20 已补 coach 与 qualification_path，并通过 U20/U17 参赛索引串联所有中国参赛年份。 | 参赛档案主线完成，minutes 待深化 | FIFA archive、AFC qualification、CFA 历史资料、权威赛事数据库。 | 中国参赛年份都有 squad、matches、goals、coach、qualification_path；逐人 minutes 用 `minute_status` 明确是否已抽取。 | 2026-06-28 | 继续从 FIFA technical report 或 match centre 抽取 1983-2005 U20/U16/U17 逐人 minutes、首发/替补和停补时口径。 |
 | 海外青训/球探检索源目录 | 已新增 `docs/research/scouting-source-directory.md`，把 Transfermarkt、FBref、Soccerway、FotMob/Sofascore、WorldFootball、CIES、Wyscout/Instat/StatsBomb、Eyeball、Tonsser、aiScout、Scoutium、FIFA Training Centre、UEFA/PFSA、Guardian Next Generation 等拆成来源等级、检索用途和落库边界。 | 完成，随用随维护 | 官方源优先；公开数据库交叉核验；付费球探平台和自荐/试训平台只作线索。 | 后续每个球员/赛事扩展 issue 都能说明使用了哪类检索组合，且不把自荐/商业试训平台当作强事实。 | 2026-06-28 | 将常用检索组合固化到具体 issue 或脚本化 source audit。 |
@@ -81,7 +81,7 @@
 | P3 | [#14](https://github.com/starryjog/football-research-sandbox/issues/14) 中国 U17 2026 终报名、后续集训、观察池边界字段 | 已新增 `roster_status` 与 archive `roster_boundary`；第四期集训仍有 3 个未建档名字。 |
 | P3 | [#15](https://github.com/starryjog/football-research-sandbox/issues/15) 当前中国留洋 `overseas_status` 模型 | 17 名当前注册与 3 名回流样本已状态化；试训传闻须达到来源门槛后再进入 `trial-watch`。 |
 | P3 | [#16](https://github.com/starryjog/football-research-sandbox/issues/16) 日韩青训体系与球员来源层 | 92 人基础层、16 人深度样本、体系页和 SQLite 已完成；合并后可关闭。 |
-| P4 | [#17](https://github.com/starryjog/football-research-sandbox/issues/17) 亚洲其他国家 U17/U20/U23 对照组 | #47 已交付澳大利亚 U20；#52 已交付卡塔尔 U17 2026 完整 23 人并保留两项官方俱乐部空缺。 |
+| P4 | [#17](https://github.com/starryjog/football-research-sandbox/issues/17) 亚洲其他国家 U17/U20/U23 对照组 | #47、#48、#52、#54 已交付澳大利亚 U20/U17、卡塔尔 U17、乌兹别克 U17 完整名单；下一步处理 #49 澳大利亚 U23。 |
 | P4 | [#18](https://github.com/starryjog/football-research-sandbox/issues/18) FIFA 中国参赛档案 | 2002 世界杯和早期 U16/U20 世界赛资料需要统一旧赛事名称。 |
 | P4 | [#19](https://github.com/starryjog/football-research-sandbox/issues/19) AFC U 系列 source_version 字段 | 近期 3 届试点已落地；后续扩到余下 AFC U 系列历史届次。 |
 | P4 | [#20](https://github.com/starryjog/football-research-sandbox/issues/20) 五大联赛之外的亚洲教练扩展 | 欧洲非五大、AFC 国家队、J/K/中超/西亚联赛不应混入五大联赛主表。 |

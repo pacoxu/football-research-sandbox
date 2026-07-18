@@ -138,8 +138,16 @@ const issue47DeepSampleIds = new Set([
   "au-luka-jovanovic-2005"
 ]);
 
+const issue48DeepSampleIds = new Set([
+  "au-charlie-wilson-papps-2009",
+  "au-miles-milliner-2009",
+  "au-oliver-ocarroll-2009",
+  "au-akeem-gerald-2010"
+]);
+
 const completeSquadExpectations = new Map([
   ["Australia|afc-u20-2025", 23],
+  ["Australia|afc-u17-2026", 23],
   ["Qatar|afc-u17-2026", 23]
 ]);
 
@@ -1411,6 +1419,7 @@ export async function validateData() {
   const completeSquads = new Map(
     [...completeSquadExpectations.keys()].map((squadKey) => [squadKey, []])
   );
+  const issue54UzbekistanU17 = [];
 
   for (const player of dataset.players) {
     for (const field of requiredPlayerFields) {
@@ -1512,6 +1521,14 @@ export async function validateData() {
         completeSquad.push({ player, entry });
       }
     }
+    if (
+      player.country === "Uzbekistan" &&
+      player.tournament_participation.some(
+        (entry) => entry.competition_id === "afc-u17-2026" && entry.squad_status === "registered"
+      )
+    ) {
+      issue54UzbekistanU17.push(player);
+    }
     validateVerificationBlock(player.verification, player.id);
     for (const identityKey of getIdentityKeys(player)) {
       const previousPlayer = playerIdentityKeys.get(identityKey);
@@ -1571,6 +1588,26 @@ export async function validateData() {
     assert(
       currentPathway.organization_type === player.registration_club.organization_type,
       `Pathway organization type differs from current registration on ${player.id}`
+    );
+  }
+
+  assert(
+    issue54UzbekistanU17.length === 23,
+    `Expected 23 Uzbekistan AFC U17 2026 players, found ${issue54UzbekistanU17.length}`
+  );
+  const issue54JerseyNumbers = issue54UzbekistanU17
+    .map((player) => player.jersey_number)
+    .sort((left, right) => left - right);
+  assert(
+    issue54JerseyNumbers.every((number, index) => number === index + 1),
+    `Invalid Uzbekistan AFC U17 2026 jersey sequence: ${issue54JerseyNumbers.join(", ")}`
+  );
+  for (const player of issue54UzbekistanU17) {
+    assert(
+      player.external_links.some(
+        (link) => link.type === "official" && link.url.includes("AFC-U17-Asian-Cup-Saudi-Arabia-2026")
+      ),
+      `Missing AFC final-squad source on ${player.id}`
     );
   }
   for (const playerId of issue16DeepSampleIds) {
@@ -1646,6 +1683,47 @@ export async function validateData() {
   assert(issue52ShirtNumbers.size === 23, "Qatar U17 shirt numbers must cover the complete final squad");
   assert(issue52Goalkeepers === 3, `Qatar U17 final squad must have 3 goalkeepers, found ${issue52Goalkeepers}`);
   assert(issue52MissingClubs === 2, `Qatar U17 must preserve 2 AFC club omissions, found ${issue52MissingClubs}`);
+
+  const issue48Squad = completeSquads.get("Australia|afc-u17-2026");
+  const issue48ShirtNumbers = new Set();
+  for (const { player, entry } of issue48Squad) {
+    assert(player.age_band === "u17", `Invalid Australia U17 age_band on ${player.id}`);
+    assert(entry.roster_status === "final-squad", `Invalid Australia U17 roster_status on ${player.id}`);
+    assert(
+      Number.isInteger(entry.shirt_number) && entry.shirt_number >= 1 && entry.shirt_number <= 23,
+      `Invalid Australia U17 shirt_number on ${player.id}`
+    );
+    assert(!issue48ShirtNumbers.has(entry.shirt_number), `Duplicate Australia U17 shirt_number ${entry.shirt_number}`);
+    issue48ShirtNumbers.add(entry.shirt_number);
+    assert(
+      player.registration_club.status === "tournament-snapshot" &&
+        isIsoDate(player.registration_club.as_of),
+      `Missing Australia U17 registration snapshot on ${player.id}`
+    );
+    const afcLayers = (player.source_layers ?? []).filter((layer) => layer.type === "afc-registration");
+    assert(afcLayers.length === 1, `Expected one AFC registration source on ${player.id}`);
+    assert(afcLayers[0].confidence === "high", `AFC registration source must be high confidence on ${player.id}`);
+  }
+  for (const playerId of issue48DeepSampleIds) {
+    const squadEntry = issue48Squad.find(({ player }) => player.id === playerId);
+    assert(squadEntry !== undefined, `Missing issue #48 deep sample ${playerId}`);
+    const afcUrls = new Set(
+      squadEntry.player.source_layers
+        .filter((layer) => layer.type === "afc-registration")
+        .map((layer) => layer.url)
+    );
+    const independentOfficialLayers = squadEntry.player.source_layers.filter(
+      (layer) => layer.type !== "afc-registration" && !afcUrls.has(layer.url)
+    );
+    assert(independentOfficialLayers.length > 0, `Missing issue #48 independent official source on ${playerId}`);
+  }
+  const henriqueOliveira = issue48Squad.find(
+    ({ player }) => player.id === "au-henrique-oliveira-2009"
+  )?.player;
+  assert(
+    /forward.*midfielder/i.test(henriqueOliveira?.verification?.notes ?? ""),
+    "Australia U17 Henrique Oliveira position conflict must remain explicit"
+  );
 
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);

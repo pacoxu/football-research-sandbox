@@ -10,6 +10,7 @@ This project tracks research data, so changelog entries should separate code cha
 
 - Added Qatar's complete 23-player AFC U17 Asian Cup 2026 final squad with dated registration snapshots, AFC match-report context for China PR 2-0 Qatar, and explicit preservation of the two club-name omissions in the official registration.
 - Added `official-match-report` source-layer validation and exact Qatar U17 assertions for squad size, unique shirt numbers, three goalkeepers, and two official club omissions; Transfermarkt gaps remain profile-not-found rather than estimated.
+- Completed the 23-player Uzbekistan U17 2026 final-squad dataset, added Abdukodir Khusanov as an overseas pathway case, and documented Uzbekistan's recent U17/U20/U23 development results.
 
 - Added the China player-level `overseas_status` model, status counts in generated overview data, validation rules, SQLite support, and a bilingual status-scope card on the overseas page.
 
