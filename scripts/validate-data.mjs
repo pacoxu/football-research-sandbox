@@ -1463,6 +1463,36 @@ function validateUefaYouthLeague(topic, playerIds) {
     }
   };
 
+  assert(topic.lineage?.coverage_start_year === 2010, "UEFA Youth League lineage must start in 2010");
+  assert(topic.lineage?.coverage_end_season === "2022/23", "UEFA Youth League lineage must end at 2022/23");
+  assert(topic.lineage?.first_official_season === "2013/14", "UEFA Youth League first official season must be 2013/14");
+  assert(topic.lineage?.boundary_note?.zh && topic.lineage?.boundary_note?.en, "Missing UEFA Youth League lineage boundary note");
+  const expectedPrehistory = [
+    ["2010-under-18-challenge", "precursor-event"],
+    ["2010-11", "not-established"],
+    ["2011-12", "not-established"],
+    ["2012-13", "not-established"],
+    ["2012-launch-approval", "launch-approved"]
+  ];
+  assert(
+    JSON.stringify((topic.lineage?.prehistory ?? []).map((entry) => [entry.id, entry.status])) ===
+      JSON.stringify(expectedPrehistory),
+    "UEFA Youth League prehistory must distinguish the precursor, non-seasons and launch approval"
+  );
+  for (const entry of topic.lineage.prehistory) {
+    const label = `lineage:${entry.id}`;
+    assert(entry.summary?.zh && entry.summary?.en, `Missing summary on ${label}`);
+    if (entry.status === "not-established") {
+      assert(entry.champion === null && entry.runner_up === null, `Non-season must not have finalists on ${label}`);
+      assert(!("entrant_count" in entry) && !("matches" in entry), `Non-season must not contain competition records on ${label}`);
+    } else if (entry.date_precision === "month") {
+      assert(/^\d{4}-\d{2}$/.test(entry.date), `Invalid month-precision date on ${label}`);
+    } else {
+      assert(entry.date_precision === "day" && isIsoDate(entry.date), `Invalid day-precision date on ${label}`);
+    }
+    validateSourceIds(entry, label);
+  }
+
   validateSourceIds(topic.qualification, "qualification");
   for (const path of topic.qualification.paths ?? []) {
     validateSourceIds(path, `qualification:${path.id}`);
@@ -1479,6 +1509,10 @@ function validateUefaYouthLeague(topic, playerIds) {
     JSON.stringify(topic.historical_season_index.map((season) => season.id)) ===
       JSON.stringify(expectedHistoricalSeasonIds),
     "UEFA Youth League historical seasons must be complete and chronological"
+  );
+  assert(
+    topic.historical_season_index[0]?.label === topic.lineage.first_official_season,
+    "UEFA Youth League historical index must begin with the first official season"
   );
   for (const season of topic.historical_season_index) {
     const label = `historical_season:${season.id}`;

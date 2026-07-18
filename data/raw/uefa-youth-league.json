@@ -2,7 +2,7 @@
   "meta": {
     "id": "uefa-youth-league",
     "name": { "zh": "欧洲青年冠军联赛", "en": "UEFA Youth League" },
-    "scope": { "zh": "2013/14 起的历史赛季索引，以及最近三个已完成赛季的详细赛制、参赛队和淘汰赛；中日韩球员按 UEFA 官方国籍尽量完整，其他国家仅精选。", "en": "A historical season index from 2013/14, plus detailed formats, entrants and knockouts for the latest three completed seasons; comprehensive CJK player coverage by UEFA nationality and curated players from elsewhere." },
+    "scope": { "zh": "2010 年前身试验赛、2010/11—2012/13 未创办边界与 2013/14 起的历史赛季索引，以及最近三个已完成赛季的详细赛制、参赛队和淘汰赛；中日韩球员按 UEFA 官方国籍尽量完整，其他国家仅精选。", "en": "The 2010 precursor event, the not-yet-established boundary from 2010/11 through 2012/13, and a historical season index from 2013/14, plus detailed formats, entrants and knockouts for the latest three completed seasons; comprehensive CJK player coverage by UEFA nationality and curated players from elsewhere." },
     "checked_at": "2026-07-18"
   },
   "qualification": {
@@ -24,6 +24,40 @@
     "holder_rule": { "zh": "卫冕冠军若未通过其他方式获得资格，保证进入国内青年冠军路径第二轮。", "en": "The title holders are guaranteed a place in round two of the domestic champions path if they have not otherwise qualified." },
     "duplicate_rule": { "zh": "同时符合两条路径的俱乐部进入欧冠路径；其国内青年冠军名额通常由该协会青年联赛亚军顺延。", "en": "A club qualifying through both routes enters the Champions League path; its domestic berth normally passes to the youth league runners-up from that association." },
     "source_ids": ["rules-2026-entries", "format-2026"]
+  },
+  "lineage": {
+    "coverage_start_year": 2010,
+    "coverage_end_season": "2022/23",
+    "first_official_season": "2013/14",
+    "boundary_note": { "zh": "UEFA Youth League 于 2013/14 首次举办。2010 年 UEFA Under-18 Challenge 是前身试验赛，不计入青年欧冠赛季、冠军或参赛统计；2010/11—2012/13 标记为尚未创办，而不是缺失数据或取消赛季。", "en": "The UEFA Youth League was first played in 2013/14. The 2010 UEFA Under-18 Challenge was a precursor trial and is not counted as a Youth League season, title or participation record; 2010/11 through 2012/13 are marked not established, rather than missing or cancelled." },
+    "prehistory": [
+      {
+        "id": "2010-under-18-challenge", "period": "2010", "status": "precursor-event", "competition_name": "UEFA Under-18 Challenge", "date_precision": "month", "date": "2010-05",
+        "summary": { "zh": "UEFA 在两支欧洲冠军联赛决赛球队之间举办一次 U18 Challenge，作为后来青年俱乐部赛事构想的早期试验。", "en": "UEFA staged an Under-18 Challenge between the two UEFA Champions League finalists as an early trial preceding the later youth club competition." },
+        "relationship_to_youth_league": { "zh": "前身试验赛；不是 UEFA Youth League 正式赛季，不产生青年欧冠冠军。", "en": "Precursor trial; not an official UEFA Youth League season and did not award a Youth League title." },
+        "source_ids": ["launch-2012"]
+      },
+      {
+        "id": "2010-11", "period": "2010/11", "status": "not-established", "competition_name": "UEFA Youth League", "champion": null, "runner_up": null,
+        "summary": { "zh": "赛事尚未创办；不存在该赛季的青年欧冠参赛队、比赛或冠军。", "en": "The competition had not yet been established; no Youth League entrants, matches or champion existed for this season." },
+        "source_ids": ["launch-2012", "inaugural-format-2013"]
+      },
+      {
+        "id": "2011-12", "period": "2011/12", "status": "not-established", "competition_name": "UEFA Youth League", "champion": null, "runner_up": null,
+        "summary": { "zh": "赛事尚未创办；不存在该赛季的青年欧冠参赛队、比赛或冠军。", "en": "The competition had not yet been established; no Youth League entrants, matches or champion existed for this season." },
+        "source_ids": ["launch-2012", "inaugural-format-2013"]
+      },
+      {
+        "id": "2012-13", "period": "2012/13", "status": "not-established", "competition_name": "UEFA Youth League", "champion": null, "runner_up": null,
+        "summary": { "zh": "赛事于本周期获批、计划在下一赛季启动；本周期本身没有青年欧冠比赛或冠军。", "en": "The competition was approved during this cycle for launch the following season; this cycle itself had no Youth League matches or champion." },
+        "source_ids": ["launch-2012", "inaugural-format-2013"]
+      },
+      {
+        "id": "2012-launch-approval", "period": "2012", "status": "launch-approved", "competition_name": "UEFA Youth League", "date_precision": "day", "date": "2012-12-06",
+        "summary": { "zh": "UEFA 执行委员会批准创办青年俱乐部赛事，首届安排在 2013/14 赛季。", "en": "The UEFA Executive Committee approved the new youth club competition, with its inaugural edition scheduled for 2013/14." },
+        "source_ids": ["launch-2012", "inaugural-format-2013"]
+      }
+    ]
   },
   "historical_season_index": [
     {
@@ -213,6 +247,8 @@
   ],
   "sources": [
     { "id": "competition-history", "label": "UEFA Youth League competition history and roll of honour", "url": "https://www.uefa.com/uefayouthleague/history/" },
+    { "id": "launch-2012", "label": "UEFA Youth League club competition launched for 2013/14", "url": "https://www.uefa.com/news-media/news/0204-0f8828cea9c5-0eb18c9430dc-1000--uefa-youth-league-club-competition-launched/" },
+    { "id": "inaugural-format-2013", "label": "UEFA Youth League inaugural 2013/14 format and regulations", "url": "https://www.uefa.com/uefayouthleague/news/0253-0d04075522d0-a85e52446606-1000--format-regulations/" },
     { "id": "history-2014", "label": "UEFA Youth League 2013/14 history", "url": "https://www.uefa.com/uefayouthleague/history/2014/" },
     { "id": "history-2015", "label": "UEFA Youth League 2014/15 history", "url": "https://www.uefa.com/uefayouthleague/history/2015/" },
     { "id": "history-2016", "label": "UEFA Youth League 2015/16 history", "url": "https://www.uefa.com/uefayouthleague/history/2016/" },
