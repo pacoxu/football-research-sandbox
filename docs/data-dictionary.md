@@ -14,6 +14,7 @@
 | `data/raw/overseas-history.json` | 中日韩留洋历史、分层 bucket 和 featured records。 | 是 |
 | `data/raw/big-five-asian-coaches.json` | 五大联赛亚洲教练主表和边界说明。 | 是 |
 | `data/raw/asian-coaches.json` | 五大联赛之外的亚洲主教练实体、任期、范围和官方来源。 | 是 |
+| `data/raw/china-youth-development-coaches.json` | 中国基层、校园、足校、职业梯队与民间项目的具名青训教练样本。 | 是 |
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
@@ -195,6 +196,19 @@
 | `stints[].period` | 结构化开始和结束月份；现任时 `end` 为 `null`。 |
 | `stints[].record` | 逐场战绩未核前允许为 `null`，任命事实不因缺战绩而阻塞。 |
 | `stints[].source_links`、`verification` | 官方来源类型、核查日期和事实说明。 |
+
+## 中国青训教练
+
+`data/raw/china-youth-development-coaches.json` 与国字号青年队教练、亚洲一线队主教练分开维护。首批覆盖石门五小、王楚、根宝基地、东北路小学、山东泰山/鲁能足校体系、恒大足校、清华附中、中国足球小将和阿勒泰地区体校。
+
+| 字段 | 含义 |
+| --- | --- |
+| `organization` | 教练对应的学校、足校、职业梯队、独立基地、地区体校或民间项目；`type` 明确组织类别。 |
+| `role`、`age_bands` | 公开可核的训练职责和年龄段，不从单场带队自动外推为全校总教练。 |
+| `period` | 年份任期或赛季快照；`confirmed-2025` 表示只能确认该年度，不等于持续现任。 |
+| `methodology_tags` | 来源能够支持的培养特征，用于检索，不作为主观教练排名。 |
+| `source_links[].claim` | 逐条说明来源支撑的人名、岗位、成果或任期事实。 |
+| `verification` | 核验状态、日期和边界；模糊的“某教练”称呼不得替代全名。 |
 
 ## 生成字段
 

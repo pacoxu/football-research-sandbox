@@ -164,6 +164,32 @@ const allowedAsianCoachCountedScopes = new Set([
 ]);
 const allowedAsianCoachConfidence = new Set(["high", "medium", "low"]);
 
+const allowedChinaYouthCoachOrganizationTypes = new Set([
+  "campus-school",
+  "private-academy",
+  "independent-base",
+  "professional-academy",
+  "independent-project",
+  "sports-school"
+]);
+
+const allowedChinaYouthCoachSourceTypes = new Set([
+  "official-association",
+  "official-school",
+  "official-club",
+  "government",
+  "state-media",
+  "league",
+  "secondary-media",
+  "self-published"
+]);
+
+const allowedChinaYouthCoachPeriodStatuses = new Set([
+  "current-reported",
+  "former",
+  "confirmed-2025"
+]);
+
 function assert(condition, message) {
   if (!condition) {
     throw new Error(message);
@@ -965,6 +991,103 @@ function validateCoachRecord(record, label) {
   assert(record.points === record.wins * 3 + record.draws, `Coach points do not add up on ${label}`);
 }
 
+function validateChinaYouthDevelopmentCoaches(archive) {
+  assert(
+    archive.id === "china-youth-development-coaches",
+    "Invalid china_youth_development_coaches id"
+  );
+  assert(
+    Number.isInteger(archive.schema_version) && archive.schema_version > 0,
+    "Invalid china_youth_development_coaches schema_version"
+  );
+  assert(
+    isIsoDate(archive.last_checked),
+    "Invalid china_youth_development_coaches last_checked"
+  );
+  assert(
+    Array.isArray(archive.role_policy?.included) && Array.isArray(archive.role_policy?.excluded),
+    "Invalid china_youth_development_coaches role_policy"
+  );
+  assert(
+    Array.isArray(archive.coaches) && archive.coaches.length > 0,
+    "Invalid china_youth_development_coaches coaches"
+  );
+  assert(Array.isArray(archive.watchlist), "Invalid china_youth_development_coaches watchlist");
+
+  const coachIds = new Set();
+  for (const coach of archive.coaches) {
+    assert(coach.id, "China youth coach must include id");
+    assert(!coachIds.has(coach.id), `Duplicate China youth coach id: ${coach.id}`);
+    assert(
+      coach.name?.zh && coach.name?.en && coach.name?.native,
+      `Missing names on China youth coach ${coach.id}`
+    );
+    assert(coach.nationality, `Missing nationality on China youth coach ${coach.id}`);
+    assert(
+      coach.organization?.name && coach.organization?.short_name,
+      `Missing organization on China youth coach ${coach.id}`
+    );
+    assert(
+      allowedChinaYouthCoachOrganizationTypes.has(coach.organization.type),
+      `Invalid organization type "${coach.organization.type}" on China youth coach ${coach.id}`
+    );
+    assert(coach.role, `Missing role on China youth coach ${coach.id}`);
+    assert(
+      Array.isArray(coach.age_bands) && coach.age_bands.length > 0,
+      `Invalid age_bands on China youth coach ${coach.id}`
+    );
+    assert(
+      ["year", "snapshot"].includes(coach.period?.precision),
+      `Invalid period precision on China youth coach ${coach.id}`
+    );
+    assert(
+      allowedChinaYouthCoachPeriodStatuses.has(coach.period?.status),
+      `Invalid period status on China youth coach ${coach.id}`
+    );
+    assert(
+      coach.period.start === null || /^\d{4}$/.test(coach.period.start),
+      `Invalid period start on China youth coach ${coach.id}`
+    );
+    assert(
+      coach.period.end === null || /^\d{4}$/.test(coach.period.end),
+      `Invalid period end on China youth coach ${coach.id}`
+    );
+    assert(coach.profile_summary, `Missing profile_summary on China youth coach ${coach.id}`);
+    assert(
+      Array.isArray(coach.methodology_tags) && coach.methodology_tags.length > 0,
+      `Invalid methodology_tags on China youth coach ${coach.id}`
+    );
+    assert(
+      Array.isArray(coach.source_links) && coach.source_links.length > 0,
+      `Missing source_links on China youth coach ${coach.id}`
+    );
+
+    for (const link of coach.source_links) {
+      assert(
+        allowedChinaYouthCoachSourceTypes.has(link.type),
+        `Invalid source type "${link.type}" on China youth coach ${coach.id}`
+      );
+      assert(link.label && link.claim, `Incomplete source on China youth coach ${coach.id}`);
+      assert(/^https?:\/\//.test(link.url), `Invalid source url on China youth coach ${coach.id}`);
+      assert(
+        isIsoDate(link.checked_at),
+        `Invalid source checked_at on China youth coach ${coach.id}`
+      );
+    }
+
+    assert(
+      allowedVerificationStatuses.has(coach.verification?.status),
+      `Invalid verification status on China youth coach ${coach.id}`
+    );
+    assert(
+      isIsoDate(coach.verification?.last_checked),
+      `Invalid verification date on China youth coach ${coach.id}`
+    );
+    assert(coach.verification.notes, `Missing verification notes on China youth coach ${coach.id}`);
+    coachIds.add(coach.id);
+  }
+}
+
 function validateBigFiveAsianCoaches(archive) {
   assert(typeof archive.id === "string" && archive.id.length > 0, "Missing big_five_asian_coaches id");
   assert(isIsoDate(archive.last_checked), "Invalid big_five_asian_coaches last_checked");
@@ -1505,6 +1628,10 @@ export async function validateData() {
 
   if (dataset.chinaMenYouthCoaches !== null) {
     validateChinaMenYouthCoaches(dataset.chinaMenYouthCoaches);
+  }
+
+  if (dataset.chinaYouthDevelopmentCoaches !== null) {
+    validateChinaYouthDevelopmentCoaches(dataset.chinaYouthDevelopmentCoaches);
   }
 
   if (dataset.bigFiveAsianCoaches !== null) {
