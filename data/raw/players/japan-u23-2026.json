@@ -847,16 +847,26 @@
     "height_cm": 171,
     "weight_kg": 65,
     "registration_club": {
-      "name": "FC Tokyo",
-      "country": "Japan",
-      "organization_type": "professional-club"
+      "name": "Valencia CF",
+      "country": "Spain",
+      "organization_type": "professional-club",
+      "status": "current",
+      "as_of": "2026-07-07"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 职业体系节点",
+        "stage_label": "2026 转会前职业体系节点",
         "organization": "FC Tokyo",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 将其列为 FC 东京一线队中场。",
+        "note": "出自 FC 东京青训，2023 年以 16 岁完成一线队首秀；效力至 2026 年夏季转会。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
+      },
+      {
+        "stage_label": "2026 欧洲一线队转会节点",
+        "organization": "Valencia CF",
+        "country": "Spain",
+        "note": "瓦伦西亚于 2026-07-07 官宣从 FC 东京签下佐藤龙之介，合同为期五个赛季、至 2031 年；他成为俱乐部男足一线队史上首位日本球员。",
         "organization_type": "professional-club",
         "competition_context_ids": []
       },
@@ -872,6 +882,7 @@
       "japan-youth",
       "u21-watch",
       "professional-system",
+      "overseas-europe",
       "afc-u23-2026"
     ],
     "tournament_participation": [
@@ -893,10 +904,15 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "以 FC 东京当前一线队注册为主，补入当前职业体系 U21 样本，同时保留其 U23 日本队背景。"
+        "note": "当前注册俱乐部已更新为瓦伦西亚；作为欧洲五大联赛一线队 U21 样本跟踪，同时保留其 U23 日本队背景。"
       }
     ],
     "external_links": [
+      {
+        "type": "official",
+        "label": "Valencia CF transfer announcement",
+        "url": "https://www.valenciacf.com/comunicado-oficial-ryunosuke-sato"
+      },
       {
         "type": "official",
         "label": "J.League profile",
@@ -920,10 +936,23 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "当前 FC 东京注册信息来自 J.League 最新球员页，U-23 节点由 FC 东京公告与 AFC 报名表交叉确认。"
+      "last_checked": "2026-07-16",
+      "notes": "当前瓦伦西亚注册与五年合同信息来自俱乐部 2026-07-07 官方公告；FC 东京经历由 J.League 球员页保留，U-23 节点由 FC 东京公告与 AFC 报名表交叉确认。"
     },
     "source_layers": [
+      {
+        "type": "club-profile",
+        "label": "Valencia CF transfer announcement",
+        "url": "https://www.valenciacf.com/comunicado-oficial-ryunosuke-sato",
+        "checked_at": "2026-07-16",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "training_pathway",
+          "verification"
+        ],
+        "claim": "Valencia CF confirms the permanent transfer of Ryunosuke Sato from FC Tokyo on a five-season contract through 2031 and identifies him as the first Japanese player in the club's men's first-team history."
+      },
       {
         "type": "afc-registration",
         "label": "AFC U23 2026 final registration",
@@ -931,10 +960,9 @@
         "checked_at": "2026-07-12",
         "confidence": "high",
         "fields": [
-          "tournament_participation",
-          "registration_club"
+          "tournament_participation"
         ],
-        "claim": "AFC final registration confirms Ryunosuke Sato in the Japan u21 squad and records FC Tokyo as the tournament registration organization."
+        "claim": "AFC final registration confirms Ryunosuke Sato in the Japan u21 squad and records FC Tokyo as his tournament-time registration organization before his July 2026 transfer to Valencia CF."
       }
     ]
   },
