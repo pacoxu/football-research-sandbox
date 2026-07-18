@@ -14,6 +14,7 @@
 | 留洋历史 | 中日韩留洋历史建档、五大联赛重点记录和分层口径。 | `data/raw/overseas-history.json` |
 | 中超青年样本 | 2026 中超 U21/U23 和具备留洋经历的中国青年样本。 | `data/raw/players/china-csl-2026-youth.json` |
 | 专题档案 | 董路足球小将、中国男足青年教练和研究专题。 | `data/raw/dossiers.json`、`data/raw/china-men-youth-coaches.json` |
+| 中国青训教练 | 校园、足校、职业梯队、独立基地、地区体校和民间项目的具名教练种子样本。 | `data/raw/china-youth-development-coaches.json` |
 | 亚洲教练 | 五大联赛顶级联赛主表，以及欧洲非五大、AFC 成年/青年国家队、亚洲顶级联赛主教练试点。 | `data/raw/big-five-asian-coaches.json`、`data/raw/asian-coaches.json` |
 
 ## 当前不统计什么
@@ -57,6 +58,7 @@
 
 教练统计应区分：
 
+- 基层启蒙、校园足球、足校、职业梯队和民间项目。
 - 五大联赛顶级联赛。
 - 杯赛、附加赛和青年队。
 - 欧洲非五大、AFC 国字号和亚洲顶级联赛。
