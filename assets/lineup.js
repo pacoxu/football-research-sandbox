@@ -13,6 +13,17 @@ const players = [
   { id: "cn-liu-kaiyuan", name: "刘凯源", en: "Liu Kaiyuan", country: "China PR", position: "FWD", role: "前锋", club: "Villarreal Youth", era: "current" },
   { id: "cn-he-xiaoke", name: "何小珂", en: "He Xiaoke", country: "China PR", position: "FWD", role: "前锋", club: "FC Andorra", era: "current" },
   { id: "cn-du-yuezheng", name: "杜月徵", en: "Du Yuezheng", country: "China PR", position: "FWD", role: "中锋", club: "Marbella FC", era: "current" },
+  { id: "cn-chen-shihan", name: "Chen Shihan", en: "Chen Shihan", country: "China PR", position: "MID", role: "中场", club: "Union Rochefortoise", era: "current" },
+  { id: "cn-sun-kangbo", name: "Sun Kangbo", en: "Sun Kangbo", country: "China PR", position: "DEF", role: "后卫", club: "FK Vozdovac", era: "current" },
+  { id: "cn-wei-xiangxin", name: "魏祥鑫", en: "Wei Xiangxin", country: "China PR", position: "FWD", role: "中锋", club: "AJ Auxerre", era: "current" },
+  { id: "cn-wang-xiuhao", name: "汪修昊", en: "Wang Xiuhao", country: "China PR", position: "DEF", role: "右后卫", club: "DAMM CF", era: "current" },
+  { id: "cn-wan-xiang", name: "万项", en: "Wan Xiang", country: "China PR", position: "MID", role: "前腰", club: "Red Star Belgrade U17", era: "current" },
+  { id: "cn-jin-yucheng", name: "金昱成", en: "Jin Yucheng", country: "China PR", position: "DEF", role: "中后卫", club: "NK Lokomotiva Zagreb", era: "current" },
+  { id: "cn-xie-jin", name: "谢晋", en: "Jin Xie", country: "China PR", position: "MID", role: "左中场", club: "Real Carabanchel CF", era: "current" },
+  { id: "cn-li-hao", name: "李昊", en: "Li Hao", country: "China PR", position: "GK", role: "门将", club: "Atlético Madrid / UE Cornellà", era: "returned" },
+  { id: "cn-yang-xi", name: "杨希", en: "Alex Xi Yang", country: "China PR", position: "DEF", role: "右后卫", club: "Espanyol / L'Hospitalet", era: "returned" },
+  { id: "cn-kuang-zhaolei", name: "邝兆镭", en: "Kuang Zhaolei", country: "China PR", position: "FWD", role: "右边锋", club: "DAMM CF / Atlètic Lleida", era: "returned" },
+  { id: "cn-wei-shihao", name: "韦世豪", en: "Wei Shihao", country: "China PR", position: "FWD", role: "边锋", club: "Boavista / Feirense / Leixões", era: "returned" },
   { id: "cn-sun-jihai", name: "孙继海", en: "Sun Jihai", country: "China PR", position: "DEF", role: "右后卫", club: "Manchester City", era: "history" },
   { id: "cn-fan-zhiyi", name: "范志毅", en: "Fan Zhiyi", country: "China PR", position: "DEF", role: "中后卫", club: "Crystal Palace", era: "history" },
   { id: "cn-sun-xiang", name: "孙祥", en: "Sun Xiang", country: "China PR", position: "DEF", role: "左后卫", club: "PSV Eindhoven", era: "history" },
@@ -23,6 +34,13 @@ const players = [
   { id: "cn-yang-chen", name: "杨晨", en: "Yang Chen", country: "China PR", position: "FWD", role: "中锋", club: "Eintracht Frankfurt", era: "history" },
   { id: "cn-wu-lei", name: "武磊", en: "Wu Lei", country: "China PR", position: "FWD", role: "前锋", club: "Espanyol", era: "history" },
   { id: "cn-dong-fangzhuo", name: "董方卓", en: "Dong Fangzhuo", country: "China PR", position: "FWD", role: "中锋", club: "Royal Antwerp", era: "history" },
+  { id: "cn-hao-junmin", name: "蒿俊闵", en: "Hao Junmin", country: "China PR", position: "MID", role: "中场", club: "Schalke 04", era: "history" },
+  { id: "cn-jiang-guangtai", name: "蒋光太", en: "Tyias Browning", country: "China PR", position: "DEF", role: "中后卫", club: "Everton", era: "history" },
+  { id: "cn-li-jinyu", name: "李金羽", en: "Li Jinyu", country: "China PR", position: "FWD", role: "前锋", club: "AS Nancy", era: "history" },
+  { id: "cn-li-ke", name: "李可", en: "Nico Yennaris", country: "China PR", position: "MID", role: "后腰", club: "Arsenal / Brentford", era: "history" },
+  { id: "cn-li-weifeng", name: "李玮锋", en: "Li Weifeng", country: "China PR", position: "DEF", role: "中后卫", club: "Everton", era: "history" },
+  { id: "cn-zhang-chengdong", name: "张呈栋", en: "Zhang Chengdong", country: "China PR", position: "DEF", role: "右后卫", club: "Rayo Vallecano", era: "history" },
+  { id: "cn-li-lei", name: "李磊", en: "Li Lei", country: "China PR", position: "DEF", role: "左后卫", club: "Grasshopper Zürich", era: "history" },
 
   { id: "jp-suzuki-zion", name: "铃木彩艳", en: "Zion Suzuki", country: "Japan", position: "GK", role: "门将", club: "Parma", era: "current" },
   { id: "jp-tomiyasu", name: "富安健洋", en: "Takehiro Tomiyasu", country: "Japan", position: "DEF", role: "中后卫", club: "Ajax", era: "current" },
@@ -79,6 +97,12 @@ const positionMeta = {
   DEF: { label: "后卫", min: 3, max: 5 },
   MID: { label: "中场", min: 2, max: 6 },
   FWD: { label: "前锋", min: 1, max: 4 }
+};
+
+const eraMeta = {
+  current: { badge: "", countLabel: "现役" },
+  returned: { badge: "回流", countLabel: "回流" },
+  history: { badge: "历史", countLabel: "历史" }
 };
 
 const defaultLineup = [
@@ -228,13 +252,14 @@ function renderRules() {
 
 function renderPlayerCard(player) {
   const selected = state.selected.has(player.id);
+  const eraBadge = eraMeta[player.era]?.badge;
   return `
     <button class="pool-player ${selected ? "is-selected" : ""}" type="button" data-player-id="${player.id}" aria-pressed="${selected}">
       <span class="pool-avatar position-${player.position.toLowerCase()}">${player.name.slice(-2)}</span>
       <span class="pool-player-copy">
         <span class="pool-player-name">
           <strong>${player.name}</strong>
-          ${player.era === "history" ? '<em>历史</em>' : ""}
+          ${eraBadge ? `<em>${eraBadge}</em>` : ""}
         </span>
         <small>${player.role} · ${player.club}</small>
       </span>
@@ -247,7 +272,7 @@ function filteredPlayers() {
   const query = state.query.trim().toLocaleLowerCase();
   return players.filter((player) => {
     if (player.country !== state.country) return false;
-    if (!state.includeHistory && player.era === "history") return false;
+    if (!state.includeHistory && player.era !== "current") return false;
     if (state.position !== "ALL" && player.position !== state.position) return false;
     if (!query) return true;
     return [player.name, player.en, player.club, player.role]
@@ -263,12 +288,14 @@ function renderPool() {
     (player) => player.country === state.country && (state.includeHistory || player.era === "current")
   );
   const currentCount = countryPool.filter((player) => player.era === "current").length;
+  const returnedCount = countryPool.filter((player) => player.era === "returned").length;
   const historyCount = countryPool.filter((player) => player.era === "history").length;
 
   document.querySelector("#poolTitle").textContent = `${countryNames[state.country]}留洋球员`;
-  document.querySelector("#poolCount").textContent = state.includeHistory
-    ? `现役 ${currentCount} · 历史 ${historyCount}`
-    : `现役 ${currentCount}`;
+  const countParts = [`${eraMeta.current.countLabel} ${currentCount}`];
+  if (state.includeHistory && returnedCount > 0) countParts.push(`${eraMeta.returned.countLabel} ${returnedCount}`);
+  if (state.includeHistory && historyCount > 0) countParts.push(`${eraMeta.history.countLabel} ${historyCount}`);
+  document.querySelector("#poolCount").textContent = countParts.join(" · ");
   poolNode.innerHTML = filtered.map(renderPlayerCard).join("");
   document.querySelector("#poolEmpty").hidden = filtered.length > 0;
 

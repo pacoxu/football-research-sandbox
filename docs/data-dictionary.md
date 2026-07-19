@@ -247,6 +247,15 @@
 
 `data/raw/uefa-youth-league.json` 中的 `historical_season_index` 保存青年欧冠赛季级历史档案。它与用于页面深度展示的 `seasons` 分开，允许先完成历史索引，再分阶段补齐完整参赛队和逐场比赛。
 
+2010—2013 的赛事边界单独保存在 `lineage`，不混入正式赛季索引：`prehistory` 中的 `precursor-event` 表示 2010 UEFA Under-18 Challenge 前身试验赛，`not-established` 表示 2010/11—2012/13 赛事尚未创办，`launch-approved` 表示 2012 年获批且首届定于 2013/14。`not-established` 不得填写参赛队、比赛或冠亚军，也不能与 `cancelled`（赛事已经存在但当季取消）混用。
+
+| `lineage` 字段 | 类型 | 说明 |
+| --- | --- | --- |
+| `coverage_start_year` / `coverage_end_season` | integer / string | 当前谱系覆盖边界为 2010 至 2022/23。 |
+| `first_official_season` | string | 首个正式 UEFA Youth League 赛季，固定为 `2013/14`。 |
+| `boundary_note` | localized text | 解释前身试验赛、未创办周期与正式赛季的统计边界。 |
+| `prehistory` | object[] | 按时间保存前身事件、未创办周期和赛事获批节点，并逐条引用 UEFA 官方来源。 |
+
 | 字段 | 类型 | 说明 |
 | --- | --- | --- |
 | `id` / `label` | string | 内部赛季 ID 使用 `YYYY-YY`，展示名使用 UEFA 的 `YYYY/YY`。 |
