@@ -78,11 +78,11 @@
 
 | 优先级 | 建议 issue | 不确定点/扩展点 |
 | --- | --- | --- |
-| P3 | [#13](https://github.com/starryjog/football-research-sandbox/issues/13) 中国 U20 2025 终报名和正赛技术统计 | 两版 23 人名单边界、门将替换和四场 appearances/goals/minutes 已完成并加入聚合校验。 |
-| P3 | [#14](https://github.com/starryjog/football-research-sandbox/issues/14) 中国 U17 2026 终报名、后续集训、观察池边界字段 | 已新增 `roster_status` 与 archive `roster_boundary`；第四期集训仍有 3 个未建档名字。 |
-| P3 | [#15](https://github.com/starryjog/football-research-sandbox/issues/15) 当前中国留洋 `overseas_status` 模型 | 17 名当前注册与 3 名回流样本已状态化；试训传闻须达到来源门槛后再进入 `trial-watch`。 |
-| P3 | [#16](https://github.com/starryjog/football-research-sandbox/issues/16) 日韩青训体系与球员来源层 | 92 人基础层、16 人深度样本、体系页和 SQLite 已完成；合并后可关闭。 |
-| P4 | [#17](https://github.com/starryjog/football-research-sandbox/issues/17) 亚洲其他国家 U17/U20/U23 对照组 | [#55 来源审计](research/issue-55-iran-remaining-u20-u23-source-audit.md) 已确认 10 个组合可直接录入 23 人；伊朗 U23 2024、U17 2026 未参赛。 |
-| P4 | [#18](https://github.com/starryjog/football-research-sandbox/issues/18) FIFA 中国参赛档案 | 2002 世界杯和早期 U16/U20 世界赛资料需要统一旧赛事名称。 |
-| P4 | [#19](https://github.com/starryjog/football-research-sandbox/issues/19) AFC U 系列 source_version 字段 | 近期 3 届试点已落地；后续扩到余下 AFC U 系列历史届次。 |
-| P4 | [#20](https://github.com/starryjog/football-research-sandbox/issues/20) 五大联赛之外的亚洲教练扩展 | 欧洲非五大、AFC 国家队、J/K/中超/西亚联赛不应混入五大联赛主表。 |
+| P3 | [#13](https://github.com/pacoxu/football-research-sandbox/issues/13) 中国 U20 2025 终报名和正赛技术统计 | 两版 23 人名单边界、门将替换和四场 appearances/goals/minutes 已完成并加入聚合校验。 |
+| P3 | [#14](https://github.com/pacoxu/football-research-sandbox/issues/14) 中国 U17 2026 终报名、后续集训、观察池边界字段 | 已新增 `roster_status` 与 archive `roster_boundary`；第四期集训仍有 3 个未建档名字。 |
+| P3 | [#15](https://github.com/pacoxu/football-research-sandbox/issues/15) 当前中国留洋 `overseas_status` 模型 | 17 名当前注册与 3 名回流样本已状态化；试训传闻须达到来源门槛后再进入 `trial-watch`。 |
+| P3 | [#16](https://github.com/pacoxu/football-research-sandbox/issues/16) 日韩青训体系与球员来源层 | 92 人基础层、16 人深度样本、体系页和 SQLite 已完成；合并后可关闭。 |
+| P4 | [#17](https://github.com/pacoxu/football-research-sandbox/issues/17) 亚洲其他国家 U17/U20/U23 对照组 | [#55 来源审计](research/issue-55-iran-remaining-u20-u23-source-audit.md) 已确认 10 个组合可直接录入 23 人；伊朗 U23 2024、U17 2026 未参赛。 |
+| P4 | [#18](https://github.com/pacoxu/football-research-sandbox/issues/18) FIFA 中国参赛档案 | 2002 世界杯和早期 U16/U20 世界赛资料需要统一旧赛事名称。 |
+| P4 | [#19](https://github.com/pacoxu/football-research-sandbox/issues/19) AFC U 系列 source_version 字段 | 近期 3 届试点已落地；后续扩到余下 AFC U 系列历史届次。 |
+| P4 | [#20](https://github.com/pacoxu/football-research-sandbox/issues/20) 五大联赛之外的亚洲教练扩展 | 欧洲非五大、AFC 国家队、J/K/中超/西亚联赛不应混入五大联赛主表。 |

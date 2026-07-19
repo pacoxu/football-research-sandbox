@@ -2,7 +2,7 @@
 
 更新时间：2026-07-12
 
-本文件对应 [issue #16](https://github.com/starryjog/football-research-sandbox/issues/16)。实现范围包括体系介绍、四队 92 人基础映射、16 人深度来源、页面展示、SQLite 和强校验；不扩展到完整赛季赛果、逐场统计、女子足球或 U15 以下体系。
+本文件对应 [issue #16](https://github.com/pacoxu/football-research-sandbox/issues/16)。实现范围包括体系介绍、四队 92 人基础映射、16 人深度来源、页面展示、SQLite 和强校验；不扩展到完整赛季赛果、逐场统计、女子足球或 U15 以下体系。
 
 ## 体系口径
 

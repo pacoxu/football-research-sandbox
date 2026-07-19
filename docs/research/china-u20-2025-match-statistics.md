@@ -2,7 +2,7 @@
 
 更新时间：2026-07-11
 
-本文件对应 [issue #13](https://github.com/starryjog/football-research-sandbox/issues/13)，记录中国队在 AFC U20 Asian Cup China 2025 的名单版本差异、逐人出场和分钟口径。结构化结果位于 `data/raw/tournament-archive.json` 的 `afc-u20-2025.china_player_statistics`，由 loader 合并到球员的 `tournament_participation`。
+本文件对应 [issue #13](https://github.com/pacoxu/football-research-sandbox/issues/13)，记录中国队在 AFC U20 Asian Cup China 2025 的名单版本差异、逐人出场和分钟口径。结构化结果位于 `data/raw/tournament-archive.json` 的 `afc-u20-2025.china_player_statistics`，由 loader 合并到球员的 `tournament_participation`。
 
 ## 验收结果
 

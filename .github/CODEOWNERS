@@ -1,22 +1,22 @@
 # Default maintainer for repository-wide changes.
-* @starryjog
+* @pacoxu
 
 # Data review.
-/data/raw/ @starryjog
-/data/site/ @starryjog
+/data/raw/ @pacoxu
+/data/site/ @pacoxu
 
 # Script and page review.
-/scripts/ @starryjog
-/tests/ @starryjog
-/assets/ @starryjog
-/*.html @starryjog
-/package.json @starryjog
+/scripts/ @pacoxu
+/tests/ @pacoxu
+/assets/ @pacoxu
+/*.html @pacoxu
+/package.json @pacoxu
 
 # Documentation and project governance.
-/docs/ @starryjog
-/README.md @starryjog
-/CONTRIBUTING.md @starryjog
-/ROADMAP.md @starryjog
-/LICENSE @starryjog
-/SECURITY.md @starryjog
-/.github/ @starryjog
+/docs/ @pacoxu
+/README.md @pacoxu
+/CONTRIBUTING.md @pacoxu
+/ROADMAP.md @pacoxu
+/LICENSE @pacoxu
+/SECURITY.md @pacoxu
+/.github/ @pacoxu
