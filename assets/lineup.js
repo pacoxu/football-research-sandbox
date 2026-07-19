@@ -123,6 +123,63 @@ const defaultLineup = [
   "cn-dong-fangzhuo"
 ];
 
+const editorialLineups = [
+  {
+    title: "历史留洋最佳阵容",
+    kicker: "ALL-TIME OVERSEAS XI",
+    note: "优先考虑海外正式比赛层级、代表性与留洋周期，按球员留洋阶段的主要角色排布。",
+    ids: [
+      "cn-zeng-cheng",
+      "cn-sun-jihai",
+      "cn-fan-zhiyi",
+      "cn-zheng-zhi",
+      "cn-sun-xiang",
+      "cn-li-tie",
+      "cn-shao-jiayi",
+      "cn-hao-junmin",
+      "cn-wei-shihao",
+      "cn-wu-lei",
+      "cn-yang-chen"
+    ]
+  },
+  {
+    title: "现役留洋最佳阵容",
+    kicker: "CURRENT ABROAD XI",
+    note: "只从当前仍在海外注册或海外梯队体系内的本站样本中选择，兼顾即战力与发展上限。",
+    ids: [
+      "cn-liu-shaoziyang",
+      "cn-wang-xiuhao",
+      "cn-wu-shaocong",
+      "cn-jin-yucheng",
+      "cn-li-dongchen",
+      "cn-xu-bin",
+      "cn-wang-bohao",
+      "cn-lyu-mengyang",
+      "cn-wei-xiangxin",
+      "cn-du-yuezheng",
+      "cn-he-xiaoke"
+    ]
+  },
+  {
+    title: "现役留洋经历最佳阵容",
+    kicker: "ACTIVE CAREER XI",
+    note: "面向仍在踢球的中国球员，以个人留洋履历为主要依据；已经回流的球员也可入选。",
+    ids: [
+      "cn-li-hao",
+      "cn-yang-xi",
+      "cn-jiang-guangtai",
+      "cn-wu-shaocong",
+      "cn-li-lei",
+      "cn-li-ke",
+      "cn-xu-bin",
+      "cn-wang-bohao",
+      "cn-wei-shihao",
+      "cn-wu-lei",
+      "cn-du-yuezheng"
+    ]
+  }
+];
+
 const state = {
   country: "China PR",
   position: "ALL",
@@ -205,6 +262,83 @@ function renderPitchPlayer(player, lane) {
       <small>${role}</small>
     </button>
   `;
+}
+
+function renderEditorialPitchPlayer(player, lane) {
+  const role = assignedRoleLabel(player.role, lane);
+  return `
+    <div class="pitch-player editorial-pitch-player" title="${player.name} · ${role} · ${player.club}">
+      <span class="pitch-player-disc">${player.name.slice(-2)}</span>
+      <strong>${player.name}</strong>
+      <small>${role}</small>
+    </div>
+  `;
+}
+
+function renderEditorialPitch(players) {
+  return ["FWD", "MID", "DEF", "GK"]
+    .map((position) => {
+      const group = players.filter((player) => player.position === position);
+      const className = {
+        FWD: "forwards",
+        MID: "midfielders",
+        DEF: "defenders",
+        GK: "goalkeepers"
+      }[position];
+      return `
+        <div class="pitch-line pitch-${className}" style="--player-count: ${Math.max(group.length, 1)}">
+          ${arrangePitchGroup(group)
+            .map(({ player, lane }) => renderEditorialPitchPlayer(player, lane))
+            .join("")}
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderEditorialLineups() {
+  const grid = document.querySelector("#editorialLineupGrid");
+  if (!grid) return;
+
+  grid.innerHTML = editorialLineups
+    .map((lineup, index) => {
+      const lineupPlayers = lineup.ids.map(getPlayer).filter(Boolean);
+      const counts = lineupPlayers.reduce(
+        (totals, player) => ({ ...totals, [player.position]: totals[player.position] + 1 }),
+        { GK: 0, DEF: 0, MID: 0, FWD: 0 }
+      );
+      const formation = `${counts.DEF}-${counts.MID}-${counts.FWD}`;
+      return `
+        <article class="editorial-lineup-card">
+          <div class="editorial-card-head">
+            <div>
+              <span class="panel-kicker">${String(index + 1).padStart(2, "0")} · ${lineup.kicker}</span>
+              <h3>${lineup.title}</h3>
+            </div>
+            <strong class="editorial-formation">${formation}</strong>
+          </div>
+          <p>${lineup.note}</p>
+          <div class="football-pitch editorial-pitch" aria-label="${lineup.title}，阵型 ${formation}">
+            <div class="pitch-markings" aria-hidden="true">
+              <span class="pitch-halfway"></span>
+              <span class="pitch-center-circle"></span>
+              <span class="pitch-center-dot"></span>
+              <span class="pitch-box pitch-box-top"></span>
+              <span class="pitch-box pitch-box-bottom"></span>
+              <span class="pitch-goal pitch-goal-top"></span>
+              <span class="pitch-goal pitch-goal-bottom"></span>
+            </div>
+            ${renderEditorialPitch(lineupPlayers)}
+          </div>
+          <ol class="editorial-player-list" aria-label="${lineup.title}球员名单">
+            ${lineupPlayers
+              .map((player) => `<li><strong>${player.name}</strong><span>${player.club}</span></li>`)
+              .join("")}
+          </ol>
+        </article>
+      `;
+    })
+    .join("");
 }
 
 function renderPitch() {
@@ -377,4 +511,5 @@ document.querySelector("#resetLineupButton").addEventListener("click", () => {
   render();
 });
 
+renderEditorialLineups();
 render();
