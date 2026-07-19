@@ -1019,7 +1019,7 @@ function validatePlayerNames(player) {
   }
 }
 
-function validateBigFiveChecklist(checklist, countryName) {
+function validateBigFiveChecklist(checklist, countryName, featuredRecords) {
   assert(
     isIsoDate(checklist.checked_at),
     `Invalid big_five_appearance_checklist checked_at on ${countryName}`
@@ -1041,8 +1041,21 @@ function validateBigFiveChecklist(checklist, countryName) {
     `Invalid big_five_appearance_checklist entries on ${countryName}`
   );
 
+  const featuredRecordIds = new Set((featuredRecords ?? []).map((record) => record.id));
+
   for (const entry of checklist.entries) {
     assert(entry.player, `Missing checklist player name on ${countryName}`);
+    if (countryName === "China PR") {
+      assert(
+        typeof entry.featured_record_id === "string" && featuredRecordIds.has(entry.featured_record_id),
+        `Missing or unknown checklist featured_record_id on ${countryName}:${entry.player}`
+      );
+    } else if (entry.featured_record_id !== undefined) {
+      assert(
+        featuredRecordIds.has(entry.featured_record_id),
+        `Unknown checklist featured_record_id on ${countryName}:${entry.player}`
+      );
+    }
     assert(
       Number.isInteger(entry.appearances),
       `Invalid checklist appearances on ${countryName}:${entry.player}`
@@ -1987,7 +2000,11 @@ export async function validateData() {
       }
     }
     if (country.big_five_appearance_checklist !== undefined) {
-      validateBigFiveChecklist(country.big_five_appearance_checklist, country.country);
+      validateBigFiveChecklist(
+        country.big_five_appearance_checklist,
+        country.country,
+        country.featured_records
+      );
     }
     if (country.featured_records !== undefined) {
       assert(

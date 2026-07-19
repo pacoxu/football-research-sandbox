@@ -1748,6 +1748,7 @@
             },
             {
               "player": "蒿俊闵",
+              "featured_record_id": "hao-junmin-schalke-2010",
               "appearances": 14,
               "goals": 0,
               "league_breakdown": [
@@ -1773,6 +1774,7 @@
             },
             {
               "player": "蒋光太",
+              "featured_record_id": "jiang-guangtai-everton-2014",
               "appearances": 7,
               "goals": 0,
               "league_breakdown": [
@@ -1785,6 +1787,7 @@
             },
             {
               "player": "李金羽",
+              "featured_record_id": "li-jinyu-nancy-1998",
               "appearances": 6,
               "goals": 0,
               "league_breakdown": [
@@ -1797,6 +1800,7 @@
             },
             {
               "player": "李可",
+              "featured_record_id": "li-ke-arsenal-2012",
               "appearances": 1,
               "goals": 0,
               "league_breakdown": [
@@ -1822,6 +1826,7 @@
             },
             {
               "player": "李玮锋",
+              "featured_record_id": "li-weifeng-everton-2002",
               "appearances": 1,
               "goals": 0,
               "league_breakdown": [
@@ -1834,6 +1839,7 @@
             },
             {
               "player": "张呈栋",
+              "featured_record_id": "zhang-chengdong-rayo-2015",
               "appearances": 1,
               "goals": 0,
               "league_breakdown": [
@@ -1942,6 +1948,180 @@
               "2002/03 赛季被莫耶斯频繁使用，说明其防守覆盖和跑动能力在英超中下游体系内具备即战力。",
               "后续伤病与位置竞争压缩了出场体量，但正式英超履历本身仍有历史意义。",
               "这条记录补上了中国成年中场进入五大联赛主轮换的稀缺案例。"
+            ]
+          },
+          {
+            "id": "hao-junmin-schalke-2010",
+            "name": "Hao Junmin",
+            "local_name": "蒿俊闵",
+            "bucket": "big-five",
+            "league": "Bundesliga",
+            "club": "Schalke 04",
+            "season": "2009-2011",
+            "status": "verified",
+            "appearances": 14,
+            "appearance_label": "德甲 14 场",
+            "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "DFB Datencenter：Junmin Hao",
+                "url": "https://datencenter.dfb.de/personen/junmin-hao/spieler"
+              },
+              {
+                "label": "Transfermarkt：Junmin Hao performance data",
+                "url": "https://www.transfermarkt.com/junmin-hao/leistungsdatendetails/spieler/53914"
+              }
+            ],
+            "summary": "蒿俊闵在 2010 年冬窗加盟沙尔克 04，并在 2009/10、2010/11 两个赛季累计完成 14 场德甲正式出场。这里仅统计德国顶级联赛，不把德国杯和欧冠出场并入五大联赛数字。",
+            "notes": [
+              "DFB Datencenter 将其德甲记录列为 14 场，时间范围为 2010 年 2 月 21 日至 2011 年 4 月 23 日。",
+              "沙尔克时期还包含德国杯和 UEFA Champions League 比赛，但这些赛事不计入本 checklist 的顶级联赛口径。",
+              "记录采用球员当时的国际注册姓名 Hao Junmin，并与中文常用名蒿俊闵对应。"
+            ]
+          },
+          {
+            "id": "jiang-guangtai-everton-2014",
+            "name": "Tyias Browning",
+            "local_name": "蒋光太",
+            "bucket": "big-five",
+            "league": "Premier League",
+            "club": "Everton",
+            "season": "2014-2016",
+            "status": "verified",
+            "appearances": 7,
+            "appearance_label": "英超 7 场",
+            "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "Premier League：Tyias Browning profile",
+                "url": "https://www.premierleague.com/en/players/149468/tyias-browning/overview"
+              },
+              {
+                "label": "Everton：Tyias Browning player profile",
+                "url": "https://www.evertonfc.com/players/4366/tyias-browning"
+              }
+            ],
+            "summary": "蒋光太以 Tyias Browning 的注册姓名代表埃弗顿完成 7 场英超正式出场，分布在 2014/15 和 2015/16 赛季。这里不计入联赛杯、足总杯、欧战或 Everton U21 / Premier League 2 比赛。",
+            "notes": [
+              "英超官方历史档案仍以 Tyias Browning 和当时的英格兰国籍标签展示该段经历；本站用 local_name 关联其后来使用的中文名蒋光太。",
+              "埃弗顿梯队比赛体量明显高于一线队英超出场，但梯队数据不属于五大联赛顶级联赛 checklist。",
+              "2019 年离开埃弗顿后的中国联赛经历不计入这条欧洲顶级联赛记录。"
+            ]
+          },
+          {
+            "id": "li-jinyu-nancy-1998",
+            "name": "Li Jinyu",
+            "local_name": "李金羽",
+            "bucket": "big-five",
+            "league": "Ligue 1",
+            "club": "AS Nancy Lorraine",
+            "season": "1998-1999",
+            "status": "verified",
+            "appearances": 6,
+            "appearance_label": "法甲 6 场",
+            "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "AS Nancy Lorraine：历史球员 LI Jin-Yu",
+                "url": "https://www.asnl.net/157/club_histoire_joueurs_l"
+              },
+              {
+                "label": "WorldFootball：Li Jinyu club matches",
+                "url": "https://www.worldfootball.net/player_summary/jinyu-li/2/"
+              }
+            ],
+            "summary": "李金羽在 1998/99 赛季效力南锡，俱乐部官方历史档案记录其一线队出场 6 次，其中只有一次首发。该阶段对应法甲顶级联赛正式出场，未将热身赛和预备队比赛计入。",
+            "notes": [
+              "南锡官方档案明确标注 1998 至 1999 年、6 场，并说明唯一一次首发是在主场对巴斯蒂亚。",
+              "俱乐部资料将他列为首位签约法国俱乐部的中国球员；这是一项历史说明，不改变出场统计口径。",
+              "1999 年夏天返回辽宁后的国内联赛数据不计入本记录。"
+            ]
+          },
+          {
+            "id": "li-ke-arsenal-2012",
+            "name": "Nico Yennaris",
+            "local_name": "李可",
+            "bucket": "big-five",
+            "league": "Premier League",
+            "club": "Arsenal",
+            "season": "2011-2012",
+            "status": "verified",
+            "appearances": 1,
+            "appearance_label": "英超 1 场",
+            "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "Premier League：Nico Yennaris profile",
+                "url": "https://www.premierleague.com/en/players/86364/nico-yennaris/overview"
+              },
+              {
+                "label": "Arsenal annual report 2011/12",
+                "url": "https://www.arsenal.com/sites/default/files/documents/Arsenal_Holdings_plc_-_Annual_11_12.pdf"
+              }
+            ],
+            "summary": "李可以 Nico Yennaris 的注册姓名在 2011/12 赛季代表阿森纳完成 1 场英超出场。阿森纳该季还在联赛杯和足总杯使用过他，但本记录只计算 Premier League 正式比赛。",
+            "notes": [
+              "英超官方历史档案以 Nico Yennaris 和当时的英格兰国籍标签保存这次出场；local_name 用于关联其后来代表中国队时使用的名字李可。",
+              "阿森纳 2011/12 年报确认其该季进入联赛杯、足总杯和英超一线队比赛名单，杯赛不并入本 checklist。",
+              "其后效力 Brentford 的 Championship 和 League One 出场属于英格兰次级联赛，单列而不计入五大联赛顶级联赛总数。"
+            ]
+          },
+          {
+            "id": "li-weifeng-everton-2002",
+            "name": "Li Weifeng",
+            "local_name": "李玮锋",
+            "bucket": "big-five",
+            "league": "Premier League",
+            "club": "Everton",
+            "season": "2002-2003",
+            "status": "verified",
+            "appearances": 1,
+            "appearance_label": "英超 1 场",
+            "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "Premier League：Li Weifeng profile",
+                "url": "https://www.premierleague.com/en/players/13105/li-weifeng/overview"
+              },
+              {
+                "label": "Everton Heritage Society：Everton and China",
+                "url": "https://efcheritagesociety.com/wp-content/uploads/2024/01/Everton-and-China-version-3.pdf"
+              }
+            ],
+            "summary": "李玮锋在 2002/03 赛季租借埃弗顿期间完成 1 场英超正式出场。该数字不包含预备队、训练赛或代表中国国家队参加的比赛。",
+            "notes": [
+              "Premier League 官方档案保留其埃弗顿球员页面，checklist 采用 1 场顶级联赛出场口径。",
+              "其埃弗顿阶段属于短期租借，未延伸成跨赛季一线队轮换，因此不把报名、替补未上场或预备队经历写成正式出场。",
+              "中文姓名统一使用李玮锋，来源中的 Li Weifeng、李玮峰等写法只作检索别名。"
+            ]
+          },
+          {
+            "id": "zhang-chengdong-rayo-2015",
+            "name": "Zhang Chengdong",
+            "local_name": "张呈栋",
+            "bucket": "big-five",
+            "league": "LaLiga",
+            "club": "Rayo Vallecano",
+            "season": "2015-2016",
+            "status": "verified",
+            "appearances": 1,
+            "appearance_label": "西甲 1 场",
+            "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "Rayo Vallecano：Presentación oficial de Zhang Chengdong",
+                "url": "https://www.rayovallecano.es/noticias/presentacion-oficial-de-zhang-chengdong"
+              },
+              {
+                "label": "Mundo Deportivo：El fugaz paso de Zhang Chengdong",
+                "url": "https://www.mundodeportivo.com/futbol/laliga/20181230/453824100165/zhang-chengdong-rayo-vallecano-historias-liga.html"
+              }
+            ],
+            "summary": "张呈栋在 2015/16 赛季租借巴列卡诺期间完成 1 场西甲正式出场，共 9 分钟。国王杯出场和此前葡萄牙联赛经历不计入西甲 checklist。",
+            "notes": [
+              "巴列卡诺官方发布确认其 2015/16 赛季加盟，并将其描述为首位进入西班牙顶级联赛的中国球员。",
+              "其唯一西甲出场为 2015 年 12 月对马德里竞技的替补登场；媒体回顾记录为 9 分钟。",
+              "租借期内国王杯累计时间不并入 LaLiga 顶级联赛出场。"
             ]
           },
           {

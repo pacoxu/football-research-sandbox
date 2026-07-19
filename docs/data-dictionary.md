@@ -208,6 +208,8 @@
 
 留洋历史记录要区分正式一线队联赛、杯赛、梯队、低级别联赛和纯青训经历，不混算。
 
+`big_five_appearance_checklist.entries[].featured_record_id` 必须指向同一国家的 `featured_records[].id`。checklist 的 `appearances` 和 `goals` 只统计五大联赛顶级联赛正式比赛；featured record 可在 `notes` 中说明杯赛、梯队或低级别经历，但不得并入该数字。
+
 历史试训记录使用 `historical-trial-only`，只说明曾发生训练或试训，不代表签约、注册或正式比赛经历。若俱乐部与国内报道对“训练/试训”用词不同，应在 `summary` 保留口径差异。
 
 ## 亚洲教练
