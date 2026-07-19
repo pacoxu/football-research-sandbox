@@ -7,7 +7,7 @@ test("coaches page exposes development and national youth coach datasets", async
   const dataset = await loadDataset();
   const page = await fs.readFile(new URL("../coaches.html", import.meta.url), "utf8");
 
-  assert.equal(dataset.chinaYouthDevelopmentCoaches.coaches.length, 13);
+  assert.equal(dataset.chinaYouthDevelopmentCoaches.coaches.length, 14);
   assert.equal(dataset.chinaMenYouthCoaches.team_cycles.length, 5);
   assert.match(page, /id="developmentCoachGrid"/);
   assert.match(page, /id="nationalCoachGrid"/);

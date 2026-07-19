@@ -6329,6 +6329,10 @@ function formatYouthCoachAgeBand(value) {
 }
 
 function formatYouthCoachPeriod(period) {
+  const snapshotYear = /^confirmed-(\d{4})$/.exec(period?.status ?? "")?.[1];
+  if (period?.precision === "snapshot" && snapshotYear) {
+    return state.language === "en" ? `${snapshotYear} snapshot` : `${snapshotYear}年快照`;
+  }
   if (!period?.start) {
     return t("common.pending");
   }
