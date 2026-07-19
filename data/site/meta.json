@@ -13,13 +13,13 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 822,
+    "record_count": 823,
     "stale_records": 55,
     "needs_review_records": 238
   },
   "freshness": {
     "as_of": "2026-07-20",
-    "audited_records": 1028,
+    "audited_records": 1029,
     "overdue": 55,
     "by_window": {
       "30": 55,
@@ -286,11 +286,11 @@
         "zh": "教练",
         "en": "Coaches"
       },
-      "record_count": 34,
+      "record_count": 35,
       "quality": {
         "complete": 10,
         "mixed": 0,
-        "partial": 24,
+        "partial": 25,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -302,11 +302,11 @@
         "4": 1,
         "5": 6,
         "6": 0,
-        "unclassified": 11
+        "unclassified": 12
       },
       "checked_at": {
         "oldest": "2026-06-27",
-        "newest": "2026-07-19"
+        "newest": "2026-07-20"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -755,6 +755,13 @@
       }
     },
     "coaches": {
+      "coach:cn-cui-peng-shandong-u17": {
+        "id": "coach:cn-cui-peng-shandong-u17",
+        "status": "partial",
+        "source_tier": null,
+        "checked_at": "2026-07-20",
+        "missing_fields": []
+      },
       "coach:cn-dong-lu-football-boys": {
         "id": "coach:cn-dong-lu-football-boys",
         "status": "complete",
