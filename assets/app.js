@@ -65,8 +65,8 @@ const UI_COPY = {
     "page.tournament-detail.description": "查看单项赛事的时间范围、中国战绩、比赛明细、关键球员与来源链接。",
     "page.overseas.title": "留洋专页 | 青训球员追踪站",
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
-    "page.pathways.title": "日韩青训体系 | 青训球员追踪站",
-    "page.pathways.description": "理解日本学校足球与俱乐部 U18、韩国高中队与 K League 梯队的并行关系。",
+    "page.pathways.title": "青训体系与项目 | 青训球员追踪站",
+    "page.pathways.description": "比较日本、韩国、挪威、丹麦和瑞典的学校足球、俱乐部学院、人才识别与职业桥梁。",
     "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
     "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
     "site.kicker": "青训追踪台",
@@ -76,7 +76,7 @@ const UI_COPY = {
     "nav.players": "球员",
     "nav.tournaments": "赛事",
     "nav.overseas": "留洋",
-    "nav.pathways": "日韩青训体系",
+    "nav.pathways": "青训体系",
     "header.language": "语言",
     "common.loading": "加载中",
     "common.loadingData": "数据载入中",
@@ -244,19 +244,22 @@ const UI_COPY = {
     "playerDetail.stats.educationPartner": "合作学校",
     "playerDetail.pathway.context": "赛事环境",
     "pathways.hero.eyebrow": "Youth Development Systems",
-    "pathways.hero.title": "日韩青训体系",
-    "pathways.hero.text": "区分学校队、俱乐部梯队、大学与职业桥梁，并把体系赛事连接到本站球员样本。",
+    "pathways.hero.title": "青训体系与项目",
+    "pathways.hero.text": "比较学校队、俱乐部学院、国家人才识别、学院认证与职业桥梁，拆解不同国家如何组织球员培养。",
     "pathways.meta.eyebrow": "Coverage",
-    "pathways.meta.coverage": "四队 {count} 人基础覆盖",
+    "pathways.meta.coverage": "{countries} 国 · {count} 个体系节点",
     "pathways.meta.checked": "体系核查至 {date}",
     "pathways.tabs.aria": "国家切换",
     "pathways.tabs.japan": "日本",
     "pathways.tabs.korea": "韩国",
+    "pathways.tabs.norway": "挪威",
+    "pathways.tabs.denmark": "丹麦",
+    "pathways.tabs.sweden": "瑞典",
     "pathways.structure.eyebrow": "Competition Map",
-    "pathways.structure.title": "联赛、杯赛与职业桥梁",
+    "pathways.structure.title": "青训项目、竞赛与职业桥梁",
     "pathways.sources.eyebrow": "Official Sources",
     "pathways.sources.title": "官方来源与核查时间",
-    "pathways.registration": "注册类别：{value}",
+    "pathways.registration": "体系入口：{value}",
     "pathways.organizationTypes": "适用组织：{value}",
     "pathways.snapshot": "{season} 年度快照：{note}",
     "pathways.viewPlayers": "查看本站样本（{count}）",
@@ -569,8 +572,8 @@ const UI_COPY = {
     "page.tournament-detail.description": "View one tournament at a time with date range, China results, match detail, key players, and source links.",
     "page.overseas.title": "Overseas Tracker | Youth Player Tracking Desk",
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
-    "page.pathways.title": "Japan and Korea Youth Systems | Youth Player Tracking Desk",
-    "page.pathways.description": "Understand parallel school, club-academy, university, and professional pathways in Japan and South Korea.",
+    "page.pathways.title": "Youth Systems and Programmes | Youth Player Tracking Desk",
+    "page.pathways.description": "Compare school football, club academies, talent identification and professional bridges across Japan, South Korea, Norway, Denmark and Sweden.",
     "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
     "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
     "site.kicker": "Youth Tracking Desk",
@@ -748,19 +751,22 @@ const UI_COPY = {
     "playerDetail.stats.educationPartner": "Education partner",
     "playerDetail.pathway.context": "Competition context",
     "pathways.hero.eyebrow": "Youth Development Systems",
-    "pathways.hero.title": "Japan and Korea youth systems",
-    "pathways.hero.text": "Separate school teams, club academies, universities and professional bridges, and connect them to the site's player samples.",
+    "pathways.hero.title": "Youth systems and programmes",
+    "pathways.hero.text": "Compare school teams, club academies, national talent identification, academy certification and professional bridges across different countries.",
     "pathways.meta.eyebrow": "Coverage",
-    "pathways.meta.coverage": "{count} players across four squads",
+    "pathways.meta.coverage": "{countries} countries · {count} system nodes",
     "pathways.meta.checked": "System checked through {date}",
     "pathways.tabs.aria": "Country switch",
     "pathways.tabs.japan": "Japan",
     "pathways.tabs.korea": "South Korea",
+    "pathways.tabs.norway": "Norway",
+    "pathways.tabs.denmark": "Denmark",
+    "pathways.tabs.sweden": "Sweden",
     "pathways.structure.eyebrow": "Competition Map",
-    "pathways.structure.title": "Leagues, cups and professional bridges",
+    "pathways.structure.title": "Development programmes, competitions and professional bridges",
     "pathways.sources.eyebrow": "Official Sources",
     "pathways.sources.title": "Official sources and check dates",
-    "pathways.registration": "Registration: {value}",
+    "pathways.registration": "Pathway entry: {value}",
     "pathways.organizationTypes": "Eligible organizations: {value}",
     "pathways.snapshot": "{season} snapshot: {note}",
     "pathways.viewPlayers": "View site samples ({count})",
@@ -1202,6 +1208,7 @@ const COUNTRY_LABELS = {
     China: "中国",
     "China PR": "中国",
     Croatia: "克罗地亚",
+    Denmark: "丹麦",
     England: "英格兰",
     France: "法国",
     Germany: "德国",
@@ -1212,11 +1219,13 @@ const COUNTRY_LABELS = {
     "Korea Republic": "韩国",
     Mexico: "墨西哥",
     Netherlands: "荷兰",
+    Norway: "挪威",
     Portugal: "葡萄牙",
     Qatar: "卡塔尔",
     "Saudi Arabia": "沙特阿拉伯",
     Serbia: "塞尔维亚",
     Spain: "西班牙",
+    Sweden: "瑞典",
     Thailand: "泰国",
     Turkey: "土耳其",
     "United Arab Emirates": "阿联酋",
@@ -1230,6 +1239,9 @@ const COUNTRY_LABELS = {
     "China PR": "China PR",
     Israel: "Israel",
     "Korea Republic": "South Korea",
+    Denmark: "Denmark",
+    Norway: "Norway",
+    Sweden: "Sweden",
     Turkey: "Turkey",
     "United Arab Emirates": "United Arab Emirates",
     "Saudi Arabia": "Saudi Arabia",
@@ -1452,6 +1464,7 @@ const LINK_TYPE_LABELS = {
 const ORGANIZATION_TYPE_LABELS = {
   "high-school": { zh: "高中足球部", en: "High-school team" },
   "club-academy": { zh: "职业俱乐部梯队", en: "Club academy" },
+  "community-club": { zh: "基层 / 社区俱乐部", en: "Grassroots / community club" },
   university: { zh: "大学球队", en: "University team" },
   "professional-club": { zh: "职业一线队", en: "Professional first team" },
   "military-service-club": { zh: "成年军队球队", en: "Senior military-service club" },
@@ -1495,7 +1508,11 @@ const YOUTH_COMPETITION_TYPE_LABELS = {
   "professional-bridge": { zh: "职业桥梁", en: "Professional bridge" },
   "school-league": { zh: "高中联赛", en: "High-school league" },
   "school-championship": { zh: "高中冠军赛", en: "High-school championship" },
-  "club-league": { zh: "俱乐部梯队联赛", en: "Club academy league" }
+  "club-league": { zh: "俱乐部梯队联赛", en: "Club academy league" },
+  "talent-development-program": { zh: "人才培养项目", en: "Talent-development programme" },
+  "academy-certification": { zh: "学院认证", en: "Academy certification" },
+  "club-development-program": { zh: "俱乐部发展项目", en: "Club-development programme" },
+  "player-development-framework": { zh: "球员培养框架", en: "Player-development framework" }
 };
 
 const MATCH_RESULT_LABELS = {
@@ -5545,7 +5562,8 @@ function buildCompetitionSampleUrl(system, competition) {
 function initializePathwaysPage() {
   const params = new URLSearchParams(window.location.search);
   const requestedCountry = params.get("country");
-  if (["Japan", "Korea Republic"].includes(requestedCountry)) {
+  const countries = getYouthSystemsPayload().systems.map((system) => system.country);
+  if (countries.includes(requestedCountry)) {
     state.pathwaysCountry = requestedCountry;
   }
 
@@ -5570,15 +5588,11 @@ function renderPathwaysPage() {
   if (!system || !intro || !competitionGrid || !sources) return;
 
   tabs.forEach((button) => button.classList.toggle("is-active", button.dataset.country === system.country));
-  const coveredPlayers = state.enrichedPlayers.filter(
-    (player) =>
-      ["Japan", "Korea Republic"].includes(player.country) &&
-      player.organizationType &&
-      (player.tournament_participation ?? []).some((entry) =>
-        ["afc-u17-2026", "afc-u23-2026"].includes(entry.competition_id)
-      )
-  );
-  coverage.textContent = t("pathways.meta.coverage", { count: coveredPlayers.length });
+  const systemNodeCount = payload.systems.reduce((total, item) => total + item.competitions.length, 0);
+  coverage.textContent = t("pathways.meta.coverage", {
+    countries: payload.systems.length,
+    count: systemNodeCount
+  });
   checkedAt.textContent = t("pathways.meta.checked", { date: formatDate(payload.checked_at) });
 
   intro.innerHTML = `

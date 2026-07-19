@@ -132,6 +132,7 @@ const allowedAcademyCurrentStatuses = new Set([
 const allowedOrganizationTypes = new Set([
   "high-school",
   "club-academy",
+  "community-club",
   "university",
   "professional-club",
   "military-service-club",
@@ -149,7 +150,11 @@ const allowedYouthCompetitionTypes = new Set([
   "professional-bridge",
   "school-league",
   "school-championship",
-  "club-league"
+  "club-league",
+  "talent-development-program",
+  "academy-certification",
+  "club-development-program",
+  "player-development-framework"
 ]);
 
 const issue16DeepSampleIds = new Set([
@@ -414,14 +419,15 @@ function validateGenbaoDossier(dossier) {
 function validateYouthDevelopmentSystems(payload) {
   assert(payload?.schema_version === 1, "Unsupported youth-development-systems schema version");
   assert(isIsoDate(payload.checked_at), "Invalid youth-development-systems checked_at");
-  assert(Array.isArray(payload.systems) && payload.systems.length === 2, "Expected Japan and Korea youth systems");
+  const expectedCountries = ["Japan", "Korea Republic", "Norway", "Denmark", "Sweden"];
+  assert(Array.isArray(payload.systems) && payload.systems.length === expectedCountries.length, "Expected five youth systems");
 
   const systemIds = new Set();
   const competitionIds = new Set();
   for (const system of payload.systems) {
     assert(!systemIds.has(system.id), `Duplicate youth system id: ${system.id}`);
     systemIds.add(system.id);
-    assert(["Japan", "Korea Republic"].includes(system.country), `Invalid youth system country: ${system.id}`);
+    assert(expectedCountries.includes(system.country), `Invalid youth system country: ${system.id}`);
     validateLocalizedText(system.name, `${system.id}.name`);
     validateLocalizedText(system.summary, `${system.id}.summary`);
     assert(Array.isArray(system.registration_categories), `Invalid registration categories on ${system.id}`);

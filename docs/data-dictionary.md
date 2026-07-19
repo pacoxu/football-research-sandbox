@@ -68,7 +68,7 @@
 | `country` | 俱乐部或组织所在国家/地区。 |
 | `status` | 可选；`current` 表示有当前注册来源，`tournament-snapshot` 表示只确认赛事报名时点。旧记录缺少该字段时按 `current` 兼容处理。 |
 | `as_of` | 可选 ISO 日期；`tournament-snapshot` 必填，用于明确赛事报名快照时点。 |
-| `organization_type` | `high-school`、`club-academy`、`university`、`professional-club`、`military-service-club`、`overseas-academy` 或 `national-academy`。Aspire 等国家级、非俱乐部学院使用 `national-academy`。 |
+| `organization_type` | `high-school`、`club-academy`、`community-club`、`university`、`professional-club`、`military-service-club`、`overseas-academy` 或 `national-academy`。基层青少年组织使用 `community-club`；Aspire 等国家级、非俱乐部学院使用 `national-academy`。 |
 | `parent_organization` | 可选母俱乐部对象，包含 `name`、`country`；韩国职业梯队使用。 |
 | `education_partner` | 可选合作高中对象，包含 `name`、`country`；不得覆盖当前注册组织。 |
 
@@ -88,15 +88,15 @@
 | `competition_context_ids` | 可选，引用 `youth-development-systems.json` 中的竞赛 ID。 |
 | `parent_organization`、`education_partner` | 可选，保留路径节点当时的俱乐部/教育双重语境。 |
 
-## 日韩青训体系
+## 多国青训体系与项目
 
 `data/raw/youth-development-systems.json` 将稳定制度与年度快照分开：
 
 | 字段 | 含义 |
 | --- | --- |
-| `systems[]` | 国家级体系条目，当前为日本、韩国。 |
+| `systems[]` | 国家级体系条目，当前为日本、韩国、挪威、丹麦、瑞典。 |
 | `registration_categories[]` | 年龄层、注册类别和允许组织类型。 |
-| `competitions[]` | 稳定竞赛 ID、类型、适用组织、层级关系和官方来源。 |
+| `competitions[]` | 稳定竞赛或青训项目 ID、类型、适用组织、层级关系和官方来源。 |
 | `stable_structure` | 不随单一赛季变化的制度说明。 |
 | `annual_snapshot` | 可选赛季快照，例如 2026 队数；不当作永久规则。 |
 | `source_links[]` | 官方来源、URL 和核查日期。 |
