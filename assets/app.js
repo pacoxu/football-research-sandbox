@@ -1331,6 +1331,7 @@ const BUCKET_LABELS = {
   "big-five-lower-tier": { zh: "五大联赛国家低级别联赛", en: "Lower-tier league in a big five country" },
   "europe-other": { zh: "欧洲其他", en: "Other Europe" },
   "asia-other": { zh: "亚洲其他", en: "Other Asia" },
+  "oceania-other": { zh: "大洋洲其他", en: "Other Oceania" },
   "americas-other": { zh: "美洲其他", en: "Other Americas" }
 };
 
