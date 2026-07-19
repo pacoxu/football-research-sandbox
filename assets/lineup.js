@@ -41,6 +41,8 @@ const players = [
   { id: "cn-li-weifeng", name: "李玮锋", en: "Li Weifeng", country: "China PR", position: "DEF", role: "中后卫", club: "Everton", era: "history" },
   { id: "cn-zhang-chengdong", name: "张呈栋", en: "Zhang Chengdong", country: "China PR", position: "DEF", role: "右后卫", club: "Rayo Vallecano", era: "history" },
   { id: "cn-li-lei", name: "李磊", en: "Li Lei", country: "China PR", position: "DEF", role: "左后卫", club: "Grasshopper Zürich", era: "history" },
+  { id: "cn-wang-dalei-trial", name: "王大雷", en: "Wang Dalei", country: "China PR", position: "GK", role: "门将", club: "Inter Milan 训练 / 试训（2006）", era: "trial" },
+  { id: "cn-zhang-wenzhao-trial", name: "张文钊", en: "Zhang Wenzhao", country: "China PR", position: "FWD", role: "边锋", club: "Inter Milan 试训（2006）", era: "trial" },
 
   { id: "jp-suzuki-zion", name: "铃木彩艳", en: "Zion Suzuki", country: "Japan", position: "GK", role: "门将", club: "Parma", era: "current" },
   { id: "jp-tomiyasu", name: "富安健洋", en: "Takehiro Tomiyasu", country: "Japan", position: "DEF", role: "中后卫", club: "Ajax", era: "current" },
@@ -102,6 +104,7 @@ const positionMeta = {
 const eraMeta = {
   current: { badge: "", countLabel: "现役" },
   returned: { badge: "回流", countLabel: "回流" },
+  trial: { badge: "试训", countLabel: "试训" },
   history: { badge: "历史", countLabel: "历史" }
 };
 
@@ -289,11 +292,13 @@ function renderPool() {
   );
   const currentCount = countryPool.filter((player) => player.era === "current").length;
   const returnedCount = countryPool.filter((player) => player.era === "returned").length;
+  const trialCount = countryPool.filter((player) => player.era === "trial").length;
   const historyCount = countryPool.filter((player) => player.era === "history").length;
 
   document.querySelector("#poolTitle").textContent = `${countryNames[state.country]}留洋球员`;
   const countParts = [`${eraMeta.current.countLabel} ${currentCount}`];
   if (state.includeHistory && returnedCount > 0) countParts.push(`${eraMeta.returned.countLabel} ${returnedCount}`);
+  if (state.includeHistory && trialCount > 0) countParts.push(`${eraMeta.trial.countLabel} ${trialCount}`);
   if (state.includeHistory && historyCount > 0) countParts.push(`${eraMeta.history.countLabel} ${historyCount}`);
   document.querySelector("#poolCount").textContent = countParts.join(" · ");
   poolNode.innerHTML = filtered.map(renderPlayerCard).join("");

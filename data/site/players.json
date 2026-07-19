@@ -9662,10 +9662,22 @@
         "note": "AFC U23 2026 终报名表列为当前俱乐部。"
       },
       {
-        "stage_label": "2023 西班牙青训节点",
-        "organization": "Atletico Madrid / UE Cornella youth",
+        "stage_label": "2016 马德里竞技青训",
+        "organization": "Atletico Madrid academy",
         "country": "Spain",
-        "note": "公开资料显示其曾进入马德里竞技青训体系，并在科尔内利亚阶段延续留洋路径。"
+        "note": "新华社人物稿确认，李昊 12 岁赴西班牙并进入马德里竞技青训体系。"
+      },
+      {
+        "stage_label": "2023 职业合同与科尔内利亚阶段",
+        "organization": "Atletico Madrid / UE Cornella",
+        "country": "Spain",
+        "note": "新华社人物稿确认其 2023 年与马竞签下职业合同，之后被租借到当时参加西班牙第三级别联赛的科尔内利亚。"
+      },
+      {
+        "stage_label": "2025 回国加盟",
+        "organization": "Qingdao West Coast FC",
+        "country": "China",
+        "note": "新华社人物稿确认其于 2025 年初回国加盟青岛西海岸；因此当前状态记为 returned，而不是 active-registered overseas。"
       },
       {
         "stage_label": "2026 中超报名归属",
@@ -9715,6 +9727,11 @@
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
       },
       {
+        "type": "news",
+        "label": "Xinhua profile: Li Hao's Atletico Madrid, Cornella and Qingdao West Coast pathway",
+        "url": "https://www.news.cn/sports/20260118/d9bd502c7cca4e62ac6ad027cb9d407e/c.html"
+      },
+      {
         "type": "wikipedia",
         "label": "Wikipedia profile",
         "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%98%8A_(%E8%B6%B3%E7%90%83%E8%BF%90%E5%8A%A8%E5%91%98)"
@@ -9727,8 +9744,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；当前俱乐部和留洋路径由青岛西海岸名单与公开球员条目交叉确认。"
+      "last_checked": "2026-07-19",
+      "notes": "AFC U23 终报名表校对基础信息与当前俱乐部；新华社人物稿直接支撑 2016 年进入马竞青训、2023 年签职业合同并转往科尔内利亚、2025 年初回国加盟青岛西海岸的时间线。"
     },
     "names": {
       "zh": "李昊",

@@ -192,14 +192,17 @@
 
 ## 留洋历史
 
-`data/raw/overseas-history.json` 由两部分组成：
+`data/raw/overseas-history.json` 由留洋分层、国家记录和独立试训记录组成：
 
 | 字段 | 含义 |
 | --- | --- |
 | `bucket_definition` | 留洋层级定义，例如五大联赛、欧洲其他、亚洲其他、美洲其他等。 |
 | `countries` | 各国家/地区的留洋摘要、featured records 和 checklist。 |
+| `countries[].historical_trial_records` | 有可靠来源的历史海外训练/试训事件；必须明确 `signed`、`registration_changed`，不得混入正式留洋人数。 |
 
 留洋历史记录要区分正式一线队联赛、杯赛、梯队、低级别联赛和纯青训经历，不混算。
+
+历史试训记录使用 `historical-trial-only`，只说明曾发生训练或试训，不代表签约、注册或正式比赛经历。若俱乐部与国内报道对“训练/试训”用词不同，应在 `summary` 保留口径差异。
 
 ## 亚洲教练
 
