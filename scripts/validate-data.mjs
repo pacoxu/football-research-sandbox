@@ -502,8 +502,8 @@ function validateYouthProjectDossier(dossier, playerIds) {
 function validateYouthDevelopmentSystems(payload) {
   assert(payload?.schema_version === 1, "Unsupported youth-development-systems schema version");
   assert(isIsoDate(payload.checked_at), "Invalid youth-development-systems checked_at");
-  const expectedCountries = ["Japan", "Korea Republic", "Norway", "Denmark", "Sweden"];
-  assert(Array.isArray(payload.systems) && payload.systems.length === expectedCountries.length, "Expected five youth systems");
+  const expectedCountries = ["China PR", "Japan", "Korea Republic", "Norway", "Denmark", "Sweden"];
+  assert(Array.isArray(payload.systems) && payload.systems.length === expectedCountries.length, "Expected six youth systems");
 
   const systemIds = new Set();
   const competitionIds = new Set();

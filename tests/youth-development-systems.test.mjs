@@ -6,12 +6,29 @@ const systems = JSON.parse(
   await readFile(new URL("../data/raw/youth-development-systems.json", import.meta.url), "utf8")
 ).systems;
 
-test("exposes five country youth-development systems", () => {
+test("exposes six country youth-development systems", () => {
   assert.deepEqual(
     systems.map(({ country }) => country),
-    ["Japan", "Korea Republic", "Norway", "Denmark", "Sweden"]
+    ["China PR", "Japan", "Korea Republic", "Norway", "Denmark", "Sweden"]
   );
-  assert.equal(systems.flatMap(({ competitions }) => competitions).length, 27);
+  assert.equal(systems.flatMap(({ competitions }) => competitions).length, 32);
+});
+
+test("separates China's historical reserve league, U21 league and B-team route", () => {
+  const china = systems.find((item) => item.country === "China PR");
+  assert.ok(china);
+  assert.deepEqual(
+    china.competitions.map(({ id }) => id),
+    [
+      "china-former-reserve-league",
+      "china-professional-u21-league",
+      "china-b-teams-league-two",
+      "china-u19-youth-league",
+      "china-professional-u17-u15"
+    ]
+  );
+  assert.equal(china.competitions.find(({ id }) => id === "china-b-teams-league-two").annual_snapshot.teams, 4);
+  assert.ok(china.summary.zh.includes("U21队与成年B队必须分开理解"));
 });
 
 test("covers Nordic identification, club-quality and academy-certification projects", () => {
