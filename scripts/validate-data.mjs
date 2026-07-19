@@ -1138,7 +1138,8 @@ function validateOverseasRecord(record, countryName, allowedBuckets) {
 
   assert(Array.isArray(record.notes), `Invalid overseas notes list on ${record.id}`);
   assert(
-    typeof record.appearances === "number" && Number.isInteger(record.appearances),
+    record.appearances === null ||
+      (typeof record.appearances === "number" && Number.isInteger(record.appearances)),
     `Invalid overseas appearances on ${record.id}`
   );
   assert(
