@@ -86,6 +86,28 @@ const allowedPlayerRosterStatuses = new Set([
   "withdrawn/unused"
 ]);
 
+const historicalChinaYouthStatTournamentIds = new Set([
+  "fifa-u20-world-cup-1983",
+  "fifa-u16-world-championship-1985",
+  "fifa-u20-world-cup-1985",
+  "fifa-u16-world-championship-1989",
+  "fifa-u17-world-championship-1991",
+  "fifa-u17-world-championship-1993",
+  "fifa-u20-world-cup-1997",
+  "fifa-u20-world-cup-2001",
+  "fifa-u17-world-championship-2003",
+  "fifa-u17-world-cup-2005",
+  "fifa-u20-world-cup-2005"
+]);
+
+const historicalYouthPlayerStatFields = [
+  "appearances",
+  "starts",
+  "substitute_appearances",
+  "minutes",
+  "goals"
+];
+
 const allowedSourceLayerTypes = new Set([
   "afc-registration",
   "national-fa-profile",
@@ -1625,6 +1647,85 @@ function validateRegionalHistory(history, tournamentId) {
   }
 }
 
+function validateHistoricalChinaYouthPlayerStats(tournament) {
+  const label = tournament.id;
+  const minuteStatus = tournament.minute_status;
+  assert(
+    ["complete", "partial"].includes(minuteStatus?.status),
+    `Invalid historical China youth minute_status on ${label}`
+  );
+  assert(
+    Array.isArray(minuteStatus.available_fields) && Array.isArray(minuteStatus.missing_fields),
+    `Missing historical China youth coverage fields on ${label}`
+  );
+  assert(
+    typeof minuteStatus.source_scope === "string" && minuteStatus.source_scope.length > 0,
+    `Missing historical China youth source_scope on ${label}`
+  );
+  assert(
+    typeof minuteStatus.note === "string" && minuteStatus.note.length > 0,
+    `Missing historical China youth minute note on ${label}`
+  );
+
+  const available = new Set(minuteStatus.available_fields);
+  const missing = new Set(minuteStatus.missing_fields);
+  for (const field of historicalYouthPlayerStatFields) {
+    assert(
+      available.has(field) !== missing.has(field),
+      `Historical China youth field must be exactly available or missing on ${label}:${field}`
+    );
+  }
+  if (minuteStatus.status === "complete") {
+    assert(missing.size === 0, `Complete historical China youth stats still have missing fields on ${label}`);
+  } else {
+    assert(missing.size > 0, `Partial historical China youth stats must list missing fields on ${label}`);
+  }
+
+  assert(Array.isArray(tournament.china_squad) && tournament.china_squad.length > 0, `Missing China squad on ${label}`);
+  for (const player of tournament.china_squad) {
+    for (const field of historicalYouthPlayerStatFields) {
+      assert(Object.hasOwn(player, field), `Missing ${field} on ${label}:${player.player}`);
+      if (available.has(field)) {
+        assert(
+          Number.isInteger(player[field]) && player[field] >= 0,
+          `Invalid available ${field} on ${label}:${player.player}`
+        );
+      } else {
+        assert(player[field] === null, `Unavailable ${field} must be null on ${label}:${player.player}`);
+      }
+    }
+    if (available.has("appearances") && available.has("starts")) {
+      assert(player.starts <= player.appearances, `Starts exceed appearances on ${label}:${player.player}`);
+    }
+    if (available.has("appearances") && available.has("substitute_appearances")) {
+      assert(
+        player.substitute_appearances <= player.appearances,
+        `Substitute appearances exceed appearances on ${label}:${player.player}`
+      );
+    }
+    if (
+      available.has("appearances") &&
+      available.has("starts") &&
+      available.has("substitute_appearances")
+    ) {
+      assert(
+        player.starts + player.substitute_appearances === player.appearances,
+        `Starts and substitute appearances do not match appearances on ${label}:${player.player}`
+      );
+      assert(
+        player.appearances <= (tournament.china_matches?.length ?? 0),
+        `Appearances exceed China match count on ${label}:${player.player}`
+      );
+    }
+  }
+
+  assert(
+    tournament.china_squad.reduce((sum, player) => sum + player.goals, 0) ===
+      tournament.china_goal_summary?.goals_for,
+    `China squad goals do not match goals_for on ${label}`
+  );
+}
+
 function validateUefaYouthLeague(topic, playerIds) {
   assert(typeof topic === "object" && topic !== null, "Missing UEFA Youth League dataset");
   assert(isIsoDate(topic.meta?.checked_at), "Invalid UEFA Youth League checked_at");
@@ -2214,6 +2315,9 @@ export async function validateData() {
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
     validateTournamentDateRange(tournament);
+    if (historicalChinaYouthStatTournamentIds.has(tournament.id)) {
+      validateHistoricalChinaYouthPlayerStats(tournament);
+    }
     assert(Array.isArray(tournament.source_links), `Invalid source_links on ${tournament.id}`);
     assert(Array.isArray(tournament.china_matches), `Invalid china_matches on ${tournament.id}`);
     assert(Array.isArray(tournament.china_key_players), `Invalid china_key_players on ${tournament.id}`);
