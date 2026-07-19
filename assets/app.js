@@ -325,12 +325,15 @@ const UI_COPY = {
     "dossier.generations.eyebrow": "Generations",
     "dossier.generations.title": "代表球员与当前状态",
     "dossier.generations.players": "代表样本 {count} 人",
+    "dossier.generations.counts": "公开 {reported} · 已列 {listed} · 已核 {verified} · 待核 {review}",
+    "dossier.generations.relationship": "成员类型：{value}",
     "dossier.generations.empty": "当前代际尚无公开稳定球员名单。",
     "dossier.program.coach": "主教练：{value}",
     "dossier.program.ageGroups": "年龄段：{value}",
     "dossier.player.asOf": "截至 {date}",
     "dossier.player.source": "现状来源",
     "dossier.player.profile": "站内球员档案",
+    "dossier.project.open": "查看专题档案",
     "dossier.boundaries.eyebrow": "Boundaries",
     "dossier.boundaries.title": "口径与争议",
     "dossier.questions.eyebrow": "Follow-up",
@@ -874,12 +877,15 @@ const UI_COPY = {
     "dossier.generations.eyebrow": "Generations",
     "dossier.generations.title": "Representative players and current status",
     "dossier.generations.players": "{count} representative players",
+    "dossier.generations.counts": "Reported {reported} · listed {listed} · verified {verified} · review {review}",
+    "dossier.generations.relationship": "Member type: {value}",
     "dossier.generations.empty": "No stable public player list is available for this generation yet.",
     "dossier.program.coach": "Head coach: {value}",
     "dossier.program.ageGroups": "Age groups: {value}",
     "dossier.player.asOf": "As of {date}",
     "dossier.player.source": "Status source",
     "dossier.player.profile": "Site player profile",
+    "dossier.project.open": "Open dossier",
     "dossier.boundaries.eyebrow": "Boundaries",
     "dossier.boundaries.title": "Scope and caveats",
     "dossier.questions.eyebrow": "Follow-up",
@@ -1581,9 +1587,20 @@ const ACADEMY_CURRENT_STATUS_LABELS = {
   "active-reserve": { zh: "预备队 / B队现役", en: "Active reserve / B-team player" },
   "active-professional": { zh: "职业球员", en: "Active professional" },
   "retired-coach": { zh: "退役后执教", en: "Retired, now coaching" },
+  retired: { zh: "已退役", en: "Retired" },
   "youth-development": { zh: "青训上升期", en: "Youth development pathway" },
   "needs-review": { zh: "当前去向待复核", en: "Current destination needs review" },
   "active-development-program": { zh: "在训梯队", en: "Active development programme" }
+};
+
+const DOSSIER_MEMBER_RELATIONSHIP_LABELS = {
+  "development-core": { zh: "长期培养核心", en: "Development core" },
+  "batch-participant": { zh: "批次成员", en: "Batch participant" },
+  "short-training": { zh: "短期集训", en: "Short training" },
+  "tournament-only": { zh: "赛会名单", en: "Tournament only" },
+  "partner-player": { zh: "合作球员", en: "Partner player" },
+  "project-adjacent": { zh: "项目相邻对象", en: "Project-adjacent" },
+  "prediction-only": { zh: "预测线索", en: "Prediction only" }
 };
 
 const YOUTH_COMPETITION_TYPE_LABELS = {
@@ -2773,8 +2790,14 @@ function getDossierById(id) {
   return state.overview?.dossiers?.find((dossier) => dossier.id === id) ?? null;
 }
 
-function renderDossierPlayer(player) {
-  const status = player.current_status;
+function renderDossierPlayer(player, member = null) {
+  const status = player.current_status ?? {
+    category: "needs-review",
+    organization: "-",
+    role: "player",
+    as_of: "",
+    confidence: "low"
+  };
   const nameMarkup = player.player_id
     ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(player.local_name)}</a>`
     : escapeHtml(player.local_name);
@@ -2789,17 +2812,22 @@ function renderDossierPlayer(player) {
       </div>
       <p><strong>${escapeHtml(formatClubName(status.organization))}</strong></p>
       <p>${escapeHtml(localizeText(player.note))}</p>
+      ${member ? `<p class="small-note">${escapeHtml(t("dossier.generations.relationship", { value: getLabel(DOSSIER_MEMBER_RELATIONSHIP_LABELS, member.relationship, member.relationship) }))}</p>` : ""}
       <div class="academy-player-footer">
-        <span class="small-note">${escapeHtml(t("dossier.player.asOf", { date: formatDate(status.as_of) }))} · ${escapeHtml(getLabel(SOURCE_LAYER_CONFIDENCE_LABELS, status.confidence, status.confidence))}</span>
-        <a class="inline-link" href="${escapeHtml(status.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))}</a>
+        <span class="small-note">${status.as_of ? escapeHtml(t("dossier.player.asOf", { date: formatDate(status.as_of) })) : "-"} · ${escapeHtml(getLabel(SOURCE_LAYER_CONFIDENCE_LABELS, status.confidence, status.confidence))}</span>
+        ${status.source_url ? `<a class="inline-link" href="${escapeHtml(status.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))}</a>` : ""}
         ${player.player_id ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(t("dossier.player.profile"))}</a>` : ""}
       </div>
     </article>
   `;
 }
 
-function renderDossierGeneration(view) {
-  const players = view.players ?? [];
+function renderDossierGeneration(view, dossier) {
+  const personById = new Map((dossier.people ?? []).map((person) => [person.id, person]));
+  const entries = view.members
+    ? view.members.map((member) => ({ member, player: personById.get(member.person_id) })).filter((entry) => entry.player)
+    : (view.players ?? []).map((player) => ({ member: null, player }));
+  const counting = view.counting;
   const programme = view.program_status;
   return `
     <article class="academy-generation-card">
@@ -2807,12 +2835,13 @@ function renderDossierGeneration(view) {
         <div>
           <div class="chip-row">
             <span class="chip">${escapeHtml(view.confidence ?? "-")}</span>
-            <span class="chip">${escapeHtml(t("dossier.generations.players", { count: players.length }))}</span>
+            <span class="chip">${escapeHtml(t("dossier.generations.players", { count: entries.length }))}</span>
           </div>
           <h3>${escapeHtml(localizeText(view.name))}</h3>
         </div>
       </div>
       <p>${escapeHtml(localizeText(view.description))}</p>
+      ${counting ? `<p class="small-note">${escapeHtml(t("dossier.generations.counts", { reported: counting.reported_count, listed: counting.listed_count, verified: counting.verified_people_count, review: counting.needs_review_count }))}</p><p class="small-note">${escapeHtml(localizeText(counting.note))}</p>` : ""}
       ${
         programme
           ? `<div class="academy-program-card">
@@ -2824,7 +2853,7 @@ function renderDossierGeneration(view) {
             </div>`
           : ""
       }
-      ${players.length > 0 ? `<div class="academy-player-grid">${players.map(renderDossierPlayer).join("")}</div>` : `<div class="empty-inline">${escapeHtml(t("dossier.generations.empty"))}</div>`}
+      ${entries.length > 0 ? `<div class="academy-player-grid">${entries.map(({ player, member }) => renderDossierPlayer(player, member)).join("")}</div>` : `<div class="empty-inline">${escapeHtml(t("dossier.generations.empty"))}</div>`}
     </article>
   `;
 }
@@ -2872,7 +2901,7 @@ function renderDossierDetailPage() {
     `<article class="story-card"><h3>${escapeHtml(t("dossier.boundaries.title"))}</h3><p>${escapeHtml(localizeText(dossier.scope_note))}</p></article>`
   ].join("");
   document.querySelector("#dossierTimeline").innerHTML = (dossier.timeline ?? []).map((item) => `<article class="timeline-item"><p class="timeline-label">${escapeHtml(item.date)}</p><h3>${escapeHtml(localizeText(item.label))}</h3><p>${escapeHtml(localizeText(item.detail))}</p></article>`).join("");
-  document.querySelector("#dossierGenerations").innerHTML = (dossier.roster_views ?? []).map(renderDossierGeneration).join("");
+  document.querySelector("#dossierGenerations").innerHTML = (dossier.roster_views ?? []).map((view) => renderDossierGeneration(view, dossier)).join("");
   document.querySelector("#dossierBoundaries").innerHTML = `<ul class="mini-bullet-list">${(dossier.controversies ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
   document.querySelector("#dossierQuestions").innerHTML = `<ul class="mini-bullet-list">${(dossier.open_questions ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
 
@@ -4150,6 +4179,7 @@ function renderProjectCard(project) {
   const tagChips = (project.focus_tags ?? [])
     .map((tag) => `<span class="chip">${escapeHtml(formatTag(tag))}</span>`)
     .join("");
+  const dossier = getDossierById(project.id);
   return `
     <article class="stack-card">
       <div class="chip-row">
@@ -4161,6 +4191,7 @@ function renderProjectCard(project) {
       <p>${escapeHtml(t("home.project.goal", { value: goal }))}</p>
       ${completed ? `<p>${escapeHtml(t("home.project.completed", { value: completed }))}</p>` : ""}
       <p class="small-note">${escapeHtml(t("home.project.nextStep", { value: localizeText(project.next_step) }))}</p>
+      ${dossier ? `<a class="primary-link primary-link-inline" href="./dossier.html?id=${encodeURIComponent(project.id)}">${escapeHtml(t("dossier.project.open"))}</a>` : ""}
     </article>
   `;
 }
