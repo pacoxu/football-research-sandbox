@@ -8,7 +8,7 @@
       name="description"
       content="从中国、日本、韩国留洋球员中选择 11 人首发，并按位置规则生成阵型。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260719-trials" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260720-editorial-lineups" />
   </head>
   <body class="lineup-page">
     <div class="site-shell lineup-shell">
@@ -116,6 +116,19 @@
             <div id="poolEmpty" class="pool-empty" hidden>没有匹配的球员，换个筛选条件试试。</div>
           </aside>
         </section>
+
+        <section class="editorial-lineups" aria-labelledby="editorialLineupsTitle">
+          <div class="editorial-lineups-head">
+            <div>
+              <p class="eyebrow">EDITOR'S PICKS</p>
+              <h2 id="editorialLineupsTitle">自评留洋最佳阵容</h2>
+            </div>
+            <p>
+              中国球员 · 基于本站已建档样本的主观选择。历史阵容看留洋阶段的高度与持续性；现役留洋阵容只选目前仍在海外的球员；现役经历阵容允许已经回流、但仍在踢球的球员入选。
+            </p>
+          </div>
+          <div id="editorialLineupGrid" class="editorial-lineup-grid"></div>
+        </section>
       </main>
 
       <footer class="site-footer">
@@ -124,6 +137,6 @@
     </div>
 
     <div id="lineupToast" class="lineup-toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./assets/lineup.js?v=20260719-trials"></script>
+    <script type="module" src="./assets/lineup.js?v=20260720-editorial-lineups"></script>
   </body>
 </html>
