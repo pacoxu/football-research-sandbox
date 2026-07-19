@@ -290,6 +290,106 @@
       }
     ]
   },
+  "overseas_training_programs": {
+    "checked_at": "2026-07-20",
+    "scope_note": {
+      "zh": "本专题比较由足协、企业或地方机构组织的成批出国培训项目。项目成员身份、海外集中训练、当地俱乐部注册和成年职业兑现分别记录，不把‘赴海外培训’直接等同于正式留洋或职业成功。",
+      "en": "This section compares organized group training projects backed by associations, companies or local bodies. Cohort membership, overseas residence, local club registration and senior professional outcomes are separate facts; overseas training is not automatically counted as a professional move or success."
+    },
+    "programs": [
+      {
+        "id": "jianlibao-brazil",
+        "name": {"zh": "健力宝青年队巴西培养计划", "en": "Jianlibao youth team in Brazil"},
+        "period": "1993-1998",
+        "model": "centralized-national-cohort",
+        "destinations": ["Brazil"],
+        "organizers": ["中国足协", "健力宝集团"],
+        "participant_scope": {"zh": "1993 年首批 22 人；1996 年 5 人未继续、增补 7 人，专题母名单共 29 人。", "en": "An initial 22 left in 1993; five did not continue in 1996 and seven were added, producing a 29-person master cohort."},
+        "summary": {"zh": "以一支国字号年龄段队伍长期驻巴西训练和比赛，强调集体生活、语言适应与高频比赛，是国家青年队整队外送的代表案例。", "en": "A national-age-group cohort lived, trained and played in Brazil as a team, emphasizing collective residence, adaptation and frequent matches."},
+        "stages": [
+          {"period": "1993-11", "label": {"zh": "首批赴巴西", "en": "Initial departure"}, "detail": {"zh": "22 名 1977—1978 年龄段球员赴圣保罗，进入长期集中培养。", "en": "Twenty-two players born around 1977-78 left for São Paulo for a long residential cycle."}},
+          {"period": "1995", "label": {"zh": "回国比赛检验", "en": "China match tour"}, "detail": {"zh": "球队阶段性回国，以系列比赛检验巴西培养成果。", "en": "The group returned temporarily for a domestic match tour to test its progress."}},
+          {"period": "1996-1998", "label": {"zh": "调整后再赴巴西", "en": "Second Brazil cycle"}, "detail": {"zh": "5 名首批成员未继续，另补 7 人；后续又有李铁、李金羽等六人提前回国进入国家队。", "en": "Five initial members did not continue and seven were added; six players including Li Tie and Li Jinyu were later recalled early for the senior national team."}}
+        ],
+        "outcome": {"zh": "培养出李铁、李金羽、李玮锋、郝伟、张效瑞、隋东亮等职业和国字号球员，但名单成员的成年兑现差异很大。", "en": "The cohort produced senior professionals and internationals such as Li Tie, Li Jinyu, Li Weifeng, Hao Wei, Zhang Xiaorui and Sui Dongliang, with widely varying senior outcomes."},
+        "boundary_note": {"zh": "29 人是跨两个周期的专题母名单，并非 29 人在同一时间连续驻巴西五年；其巴西经历主要是集体训练比赛，不能逐人推定为巴西俱乐部正式注册。", "en": "The 29 names span two cycles; they were not all resident in Brazil continuously for five years, and group training does not prove individual Brazilian club registration."},
+        "related_special_list_id": "jianlibao-brazil-1993-1998",
+        "source_links": [
+          {"label": "人民日报：健力宝青年队重返巴西受训（1996）", "url": "https://cn.govopendata.com/renminribao/1996/5/29/8/"},
+          {"label": "懂球帝：中国足球史话——健力宝青年队", "url": "https://m.dongqiudi.com/article/43395.html"},
+          {"label": "CRI 葡文杂志：健力宝队二十年回顾", "url": "https://portuguese.cri.cn/other/magazine/2014120401.pdf"}
+        ]
+      },
+      {
+        "id": "olympic-stars-germany",
+        "name": {"zh": "2008 奥运之星德国培训计划", "en": "2008 Olympic Stars Germany project"},
+        "period": "2004-2005",
+        "model": "national-team-preparation",
+        "destinations": ["Germany"],
+        "organizers": ["中国足协", "德国合作方"],
+        "participant_scope": {"zh": "首批公开名单 27 人；同期报道标题和实际成行口径出现 25/27 人差异。", "en": "The initial published roster contains 27 names, while contemporary headlines and travel reporting vary between 25 and 27."},
+        "summary": {"zh": "围绕 2008 奥运周期组建年龄段队伍赴德集训和参赛，原计划与 2005 国青整合；俱乐部放人、名单扩写和后续借用 85 国青框架使项目边界不断变化。", "en": "An age-group side trained and played in Germany for the 2008 Olympic cycle and was intended to integrate with the 2005 youth national team; club releases and later roster expansion repeatedly changed its boundary."},
+        "stages": [
+          {"period": "2004-11", "label": {"zh": "首批名单与赴德", "en": "Initial roster and departure"}, "detail": {"zh": "克劳琛任主教练，公开名单列出 27 名球员，随后赴德国训练。", "en": "A 27-player public roster was named under Eckhard Krautzun before the Germany camp."}},
+          {"period": "2005-03", "label": {"zh": "讨论扩军", "en": "Expansion discussed"}, "detail": {"zh": "足协与德方曾讨论将规模扩大到 40 人并延长至奥运会前。", "en": "The CFA and German partners discussed expanding the group to 40 and extending the program toward the Olympics."}},
+          {"period": "2005", "label": {"zh": "与国青整合", "en": "Youth-team integration"}, "detail": {"zh": "项目与 85 国青、世青赛备战发生人员和名义上的交叉，后续统计需区分首批成员与项目相邻球员。", "en": "The project overlapped with the 1985 youth national side and World Youth Championship preparation, so original members and adjacent players must remain separate."}}
+        ],
+        "outcome": {"zh": "首批名单包含王大雷、崔鹏、王永珀、杨旭、张鹭等后来进入职业联赛和国家队的球员，但不能把他们的全部成长归因于留德阶段。", "en": "The first roster included later professionals and internationals such as Wang Dalei, Cui Peng, Wang Yongpo, Yang Xu and Zhang Lu, but their full development cannot be attributed solely to the Germany spell."},
+        "boundary_note": {"zh": "首批 27 人、实际成行人数、扩军名单和后续 85 国青借壳是不同口径；专题核心统计只固定首批公开名单。", "en": "The 27-name first roster, actual travelers, proposed expansion and later 1985 youth-team overlap are different scopes; core statistics retain only the first public roster."},
+        "dossier_id": "olympic-stars-germany",
+        "source_links": [
+          {"label": "中国新闻网：08 之星公开名单与赴德安排", "url": "https://www.chinanews.com.cn/news/2004/2004-11-30/26/511425.shtml"},
+          {"label": "新浪体育：足协与德方讨论扩军至 40 人", "url": "https://sports.sina.com.cn/n/2005-03-11/12101443442.shtml"}
+        ]
+      },
+      {
+        "id": "500-star-portugal",
+        "name": {"zh": "500.com 星计划赴葡培养", "en": "500.com Stars Portugal project"},
+        "period": "2011-2014",
+        "model": "distributed-club-placement",
+        "destinations": ["Portugal"],
+        "organizers": ["中国足协", "500.com"],
+        "participant_scope": {"zh": "启动口径 24 人；后续回顾累计口径扩至 41 人。", "en": "The launch cohort was 24, while later retrospectives expanded the cumulative scope to 41."},
+        "summary": {"zh": "由企业赞助、足协组织，把球员分散到葡萄牙多家俱乐部和不同级别梯队，执行方式从集中外送转为多点注册、训练与比赛。", "en": "A company-sponsored CFA project that distributed players across Portuguese clubs and levels, shifting from a single outbound group to multiple registration, training and match environments."},
+        "stages": [
+          {"period": "2011-08", "label": {"zh": "项目启动", "en": "Launch"}, "detail": {"zh": "首轮公布 24 名 1993—1994 年龄段球员，计划赴葡接受两年培养。", "en": "Twenty-four players born around 1993-94 were announced for a two-year Portugal cycle."}},
+          {"period": "2011-2013", "label": {"zh": "化整为零", "en": "Distributed placements"}, "detail": {"zh": "球员被分配至葡甲、葡乙和青年队环境，而非长期作为一支整队参赛。", "en": "Players were placed across second-tier, lower-tier and youth environments instead of competing as one permanent team."}},
+          {"period": "2014", "label": {"zh": "阶段性职业出口", "en": "Interim professional outcomes"}, "detail": {"zh": "公开回顾称已有球员进入葡甲、葡乙，但 24 人与累计 41 人口径必须分开。", "en": "Reports noted placements in Portugal's second and lower tiers, but the 24-person launch and 41-person cumulative scopes must remain separate."}}
+        ],
+        "outcome": {"zh": "产生李源一、李昂、徐新、郭毅等职业和国字号样本，整体更接近分散式欧洲俱乐部落点试验。", "en": "It produced professional and national-team samples including Li Yuanyi, Li Ang, Xu Xin and Guo Yi, functioning mainly as a distributed European club-placement experiment."},
+        "boundary_note": {"zh": "进入项目不等于在葡萄牙成年职业联赛出场；须分别核对培训身份、俱乐部注册和正式比赛。", "en": "Project membership does not prove a Portuguese senior-league appearance; training, club registration and competitive matches require separate evidence."},
+        "dossier_id": "500-star-portugal",
+        "source_links": [
+          {"label": "500彩票网：首批 24 人项目启动", "url": "https://zx.500.com/zqdc/n_110818/25734.shtml"},
+          {"label": "新浪体育：葡甲、葡乙阶段性落点", "url": "https://sports.sina.cn/china/2014-06-17/detail-icfkptvx4333959.d.html"}
+        ]
+      },
+      {
+        "id": "wanda-spain-plan",
+        "name": {"zh": "万达中国足球希望之星西班牙计划", "en": "Wanda China Football Hope Stars in Spain"},
+        "period": "2011-2017",
+        "model": "elite-academy-placement",
+        "destinations": ["Spain"],
+        "organizers": ["万达集团", "中国足协支持指导", "Atlético de Madrid", "Valencia CF", "Villarreal CF"],
+        "participant_scope": {"zh": "2012—2016 五批按每批约 30 人建档；万达 2017 年官方稿另确认第六批。", "en": "Five cohorts of about 30 each are tracked for 2012-16; a 2017 Wanda release separately confirms a sixth cohort."},
+        "summary": {"zh": "全国选拔后将少年分流进入马德里竞技、瓦伦西亚、比利亚雷亚尔同年龄梯队培训；2015 年后逐渐集中到马竞体系，是绑定固定精英青训学院的长期项目。", "en": "Selected players were embedded in age-group academies at Atlético de Madrid, Valencia and Villarreal, increasingly concentrated at Atlético after 2015."},
+        "stages": [
+          {"period": "2011-12", "label": {"zh": "三家俱乐部签约", "en": "Three-club agreement"}, "detail": {"zh": "万达与马竞、瓦伦西亚、比利亚雷亚尔签署战略合作，计划首批选拔 30 人。", "en": "Wanda signed with Atlético, Valencia and Villarreal and planned an initial selection of 30."}},
+          {"period": "2012-2014", "label": {"zh": "前三批分流培养", "en": "First three cohorts"}, "detail": {"zh": "三年累计 90 人，每年约 30 人分散融入三家俱乐部同年龄梯队。", "en": "Ninety players across three annual cohorts were embedded in corresponding academy age groups."}},
+          {"period": "2014-2016", "label": {"zh": "延长周期并集中马竞", "en": "Longer cycle and Atlético focus"}, "detail": {"zh": "官方口径称培养期由三年延长至六年；2015 年后新增批次集中在马竞训练。", "en": "Official reporting says the cycle was extended from three to six years, with new cohorts centered at Atlético after 2015."}},
+          {"period": "2017", "label": {"zh": "第六批延续", "en": "Sixth cohort"}, "detail": {"zh": "万达官方报道第六批赴马竞，说明项目延续超过当前五批逐名 dossier 的边界。", "en": "Wanda announced a sixth Atlético cohort, extending beyond the five cohorts currently normalized in the roster dossier."}}
+        ],
+        "outcome": {"zh": "部分球员继续留西参加青年联赛，部分回国进入职业梯队；项目价值需按个人后续注册和成年出场评估，不能只按合作俱乐部品牌判断。", "en": "Some players remained in Spanish youth competition while others entered professional systems in China; outcomes must be judged by individual registration and senior appearances, not partner-club prestige."},
+        "boundary_note": {"zh": "合作俱乐部培训身份不等于与其一线队签约。当前逐名 dossier 固定 2012—2016 五批，第六批先作为项目时间线事实记录，待获得完整名单后再纳入人数契约。", "en": "Academy training at a partner club is not a first-team contract. The normalized roster dossier fixes five 2012-16 cohorts; the sixth remains a program-timeline fact until a complete roster is available."},
+        "dossier_id": "wanda-spain-plan",
+        "source_links": [
+          {"label": "万达官网：2011 年与三家西甲俱乐部签约", "url": "https://www.wanda.cn/2011/special_reports_1218/24537.html"},
+          {"label": "万达官网：2015 年前三批 90 人与第四批选拔", "url": "https://www.wanda.cn/mobile/2015/news_0215/4653.html"},
+          {"label": "万达官网：2017 年第六批赴马竞", "url": "https://www.wanda.cn/mobile/2017/news_0724/2837.html"}
+        ]
+      }
+    ]
+  },
   "countries": [
     {
       "country": "China PR",

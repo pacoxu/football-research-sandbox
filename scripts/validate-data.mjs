@@ -1408,6 +1408,66 @@ function validateChineseHeritagePlayers(collection) {
   assert(collection.profiles.find((profile) => profile.id === "frank-soo")?.representation_status === "wartime-unofficial", "Frank Soo appearances must remain wartime-unofficial");
 }
 
+function validateOverseasTrainingPrograms(collection, dossiers, overseasHistory) {
+  assert(collection && typeof collection === "object", "Missing overseas training-program collection");
+  assert(isIsoDate(collection.checked_at), "Invalid overseas training-program checked_at");
+  assert(collection.scope_note?.zh && collection.scope_note?.en, "Missing overseas training-program scope note");
+  assert(Array.isArray(collection.programs), "Invalid overseas training-program list");
+
+  const expectedPrograms = new Set([
+    "jianlibao-brazil",
+    "olympic-stars-germany",
+    "500-star-portugal",
+    "wanda-spain-plan"
+  ]);
+  const allowedModels = new Set([
+    "centralized-national-cohort",
+    "national-team-preparation",
+    "distributed-club-placement",
+    "elite-academy-placement"
+  ]);
+  const dossierIds = new Set(dossiers.map((dossier) => dossier.id));
+  const specialListIds = new Set(
+    overseasHistory.countries.flatMap((country) =>
+      (country.special_lists ?? []).map((list) => list.id)
+    )
+  );
+  const programIds = new Set();
+
+  assert(collection.programs.length === expectedPrograms.size, "Expected four overseas training programs");
+  for (const program of collection.programs) {
+    assert(expectedPrograms.has(program.id), `Unexpected overseas training program: ${program.id}`);
+    assert(!programIds.has(program.id), `Duplicate overseas training program: ${program.id}`);
+    programIds.add(program.id);
+    assert(program.name?.zh && program.name?.en && program.period, `Incomplete training-program identity: ${program.id}`);
+    assert(allowedModels.has(program.model), `Invalid training-program model on ${program.id}`);
+    assert(Array.isArray(program.destinations) && program.destinations.length > 0, `Missing training destination on ${program.id}`);
+    assert(Array.isArray(program.organizers) && program.organizers.length > 0, `Missing training organizer on ${program.id}`);
+    for (const field of ["participant_scope", "summary", "outcome", "boundary_note"]) {
+      assert(program[field]?.zh && program[field]?.en, `Missing localized ${field} on ${program.id}`);
+    }
+    assert(Array.isArray(program.stages) && program.stages.length >= 3, `Insufficient training stages on ${program.id}`);
+    for (const stage of program.stages) {
+      assert(stage.period && stage.label?.zh && stage.label?.en, `Invalid training stage on ${program.id}`);
+      assert(stage.detail?.zh && stage.detail?.en, `Missing training-stage detail on ${program.id}`);
+    }
+    assert(Array.isArray(program.source_links) && program.source_links.length >= 2, `Insufficient training-program sources on ${program.id}`);
+    for (const source of program.source_links) {
+      assert(source.label && /^https:\/\//.test(source.url), `Invalid training-program source on ${program.id}`);
+    }
+    if (program.dossier_id) {
+      assert(dossierIds.has(program.dossier_id), `Unknown training-program dossier on ${program.id}`);
+    }
+    if (program.related_special_list_id) {
+      assert(specialListIds.has(program.related_special_list_id), `Unknown training-program special list on ${program.id}`);
+    }
+  }
+  assert(collection.programs.find((program) => program.id === "jianlibao-brazil")?.participant_scope.zh.includes("29 人"), "Jianlibao master cohort must retain the 29-person boundary");
+  assert(collection.programs.find((program) => program.id === "olympic-stars-germany")?.participant_scope.zh.includes("25/27"), "Olympic Stars must retain the 25/27 reporting conflict");
+  assert(collection.programs.find((program) => program.id === "500-star-portugal")?.participant_scope.zh.includes("24 人"), "500 Stars must retain its 24-person launch scope");
+  assert(collection.programs.find((program) => program.id === "wanda-spain-plan")?.participant_scope.zh.includes("第六批"), "Wanda must document the sixth-cohort boundary");
+}
+
 function validatePlayerNames(player) {
   assert(typeof player.names === "object" && player.names !== null, `Missing names block on ${player.id}`);
   assert(typeof player.names.zh === "string" && player.names.zh.length > 0, `Missing names.zh on ${player.id}`);
@@ -2826,6 +2886,11 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     dataset.overseasHistory
   );
   validateChineseHeritagePlayers(dataset.overseasHistory.chinese_heritage_players);
+  validateOverseasTrainingPrograms(
+    dataset.overseasHistory.overseas_training_programs,
+    dataset.dossiers,
+    dataset.overseasHistory
+  );
 
   for (const dossier of dataset.dossiers) {
     assert(dossier.id && dossier.name, "Dossier must include id and name");

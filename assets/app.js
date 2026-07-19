@@ -723,6 +723,24 @@ const UI_COPY = {
     "overseas.heritage.status.wartime-unofficial": "战时非正式代表",
     "overseas.heritage.worldCup.final-squad": "终报名名单",
     "overseas.heritage.worldCup.played": "已出场",
+    "overseas.training.eyebrow": "Overseas Training Programs",
+    "overseas.training.title": "中国球员出国培训计划",
+    "overseas.training.meta": "{count} 个计划 · 核验至 {date}",
+    "overseas.training.empty": "当前还没有可展示的出国培训计划。",
+    "overseas.training.scope": "统计口径",
+    "overseas.training.participants": "人数口径",
+    "overseas.training.path": "项目路径",
+    "overseas.training.outcome": "后续成果",
+    "overseas.training.boundary": "核验边界",
+    "overseas.training.sources": "来源",
+    "overseas.training.openDossier": "查看逐名专题",
+    "overseas.training.openRoster": "查看专题名单",
+    "overseas.training.destinations": "目的地：{value}",
+    "overseas.training.organizers": "组织方：{value}",
+    "overseas.training.model.centralized-national-cohort": "国字号整队驻外",
+    "overseas.training.model.national-team-preparation": "大赛备战集训",
+    "overseas.training.model.distributed-club-placement": "多俱乐部分流",
+    "overseas.training.model.elite-academy-placement": "精英学院嵌入",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "五大联赛亚洲教练",
     "overseas.coaches.empty": "当前还没有可展示的五大联赛亚洲教练记录。",
@@ -1419,6 +1437,24 @@ const UI_COPY = {
     "overseas.heritage.status.wartime-unofficial": "Unofficial wartime representative",
     "overseas.heritage.worldCup.final-squad": "Final squad",
     "overseas.heritage.worldCup.played": "Appeared",
+    "overseas.training.eyebrow": "Overseas Training Programs",
+    "overseas.training.title": "China player development programs abroad",
+    "overseas.training.meta": "{count} programs · checked through {date}",
+    "overseas.training.empty": "No overseas training program is available yet.",
+    "overseas.training.scope": "Scope",
+    "overseas.training.participants": "Participant scope",
+    "overseas.training.path": "Program pathway",
+    "overseas.training.outcome": "Outcomes",
+    "overseas.training.boundary": "Evidence boundary",
+    "overseas.training.sources": "Sources",
+    "overseas.training.openDossier": "Open roster dossier",
+    "overseas.training.openRoster": "Open cohort roster",
+    "overseas.training.destinations": "Destination: {value}",
+    "overseas.training.organizers": "Organizers: {value}",
+    "overseas.training.model.centralized-national-cohort": "Centralized national cohort",
+    "overseas.training.model.national-team-preparation": "Tournament preparation",
+    "overseas.training.model.distributed-club-placement": "Distributed club placements",
+    "overseas.training.model.elite-academy-placement": "Elite academy placement",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "Asian head coaches in the big five leagues",
     "overseas.coaches.empty": "No big-five Asian coach record is available yet.",
@@ -7403,6 +7439,11 @@ function renderOverseasPage() {
   const heritageScope = document.querySelector("#chineseHeritagePlayersScope");
   const heritageGroups = document.querySelector("#chineseHeritagePlayersGroups");
   const heritageEmptyState = document.querySelector("#chineseHeritagePlayersEmptyState");
+  const trainingSection = document.querySelector("#overseasTrainingProgramsSection");
+  const trainingMeta = document.querySelector("#overseasTrainingProgramsMeta");
+  const trainingScope = document.querySelector("#overseasTrainingProgramsScope");
+  const trainingCards = document.querySelector("#overseasTrainingProgramsCards");
+  const trainingEmptyState = document.querySelector("#overseasTrainingProgramsEmptyState");
 
   const countryMap = getOverseasCountryMap();
   const filteredCurrent = getVisibleOverseasSummaryItems();
@@ -7601,6 +7642,27 @@ function renderOverseasPage() {
     heritageEmptyState.hidden = heritageProfiles.length > 0;
   }
 
+  const trainingPrograms = state.overview?.overseas_history?.overseas_training_programs;
+  const trainingProgramItems = trainingPrograms?.programs ?? [];
+  if (trainingSection) {
+    trainingSection.hidden = trainingProgramItems.length === 0;
+  }
+  if (trainingMeta) {
+    trainingMeta.textContent = t("overseas.training.meta", {
+      count: trainingProgramItems.length,
+      date: formatDate(trainingPrograms?.checked_at)
+    });
+  }
+  if (trainingScope) {
+    trainingScope.innerHTML = `<strong>${escapeHtml(t("overseas.training.scope"))}：</strong>${escapeHtml(localizeText(trainingPrograms?.scope_note))}`;
+  }
+  if (trainingCards) {
+    trainingCards.innerHTML = trainingProgramItems.map(renderOverseasTrainingProgramCard).join("");
+  }
+  if (trainingEmptyState) {
+    trainingEmptyState.hidden = trainingProgramItems.length > 0;
+  }
+
   renderBigFiveAsianCoaches();
 }
 
@@ -7664,6 +7726,42 @@ function renderChineseHeritagePlayerCard(profile) {
       ` : ""}
       <p class="timeline-label">${escapeHtml(t("overseas.heritage.sources"))}</p>
       <div class="pill-row">${renderLinkPills(profile.source_links ?? [])}</div>
+    </article>
+  `;
+}
+
+function renderOverseasTrainingProgramCard(program) {
+  const destinations = (program.destinations ?? []).map(formatCountryName).join(" · ");
+  const organizers = (program.organizers ?? []).join(" · ");
+  return `
+    <article class="story-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(program.period)}</span>
+        <span class="chip">${escapeHtml(t(`overseas.training.model.${program.model}`))}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(program.name))}</h3>
+      <p class="small-note">${escapeHtml(t("overseas.training.destinations", { value: destinations }))}</p>
+      <p class="small-note">${escapeHtml(t("overseas.training.organizers", { value: organizers }))}</p>
+      <p>${escapeHtml(localizeText(program.summary))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.training.participants"))}</p>
+      <p>${escapeHtml(localizeText(program.participant_scope))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.training.path"))}</p>
+      <ul class="mini-bullet-list coach-record-list">
+        ${(program.stages ?? []).map((stage) => `
+          <li>
+            <strong>${escapeHtml(stage.period)} · ${escapeHtml(localizeText(stage.label))}</strong><br>
+            <span>${escapeHtml(localizeText(stage.detail))}</span>
+          </li>
+        `).join("")}
+      </ul>
+      <p class="timeline-label">${escapeHtml(t("overseas.training.outcome"))}</p>
+      <p>${escapeHtml(localizeText(program.outcome))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.training.boundary"))}</p>
+      <p class="small-note">${escapeHtml(localizeText(program.boundary_note))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.training.sources"))}</p>
+      <div class="pill-row">${renderLinkPills(program.source_links ?? [])}</div>
+      ${program.dossier_id ? `<a class="primary-link primary-link-inline" href="./dossier.html?id=${encodeURIComponent(program.dossier_id)}">${escapeHtml(t("overseas.training.openDossier"))}</a>` : ""}
+      ${program.related_special_list_id ? `<a class="primary-link primary-link-inline" href="./overseas.html?country=China%20PR#overseasCountryNotes">${escapeHtml(t("overseas.training.openRoster"))}</a>` : ""}
     </article>
   `;
 }
