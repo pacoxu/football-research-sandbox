@@ -127,6 +127,24 @@
 
           <div id="playerListEmptyState" class="empty-state" hidden data-i18n="players.empty">当前筛选条件下没有匹配球员。</div>
         </section>
+
+        <section id="scoutingWatchSection" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="players.scouting.eyebrow">Scouting Watchlist</p>
+              <h2 data-i18n="players.scouting.title">FTS 亚洲青年球员观察池</h2>
+            </div>
+            <label class="filter-item">
+              <span data-i18n="players.scouting.country">国家 / 地区</span>
+              <select id="scoutingWatchCountryFilter"></select>
+            </label>
+          </div>
+          <p id="scoutingWatchMeta" class="section-note" data-i18n="common.loading">载入中</p>
+          <p id="scoutingWatchCaveat" class="small-note"></p>
+          <div id="scoutingWatchGrid" class="player-card-grid"></div>
+          <h3 data-i18n="players.scouting.collections">相关 FTS 合集</h3>
+          <div id="scoutingWatchCollections" class="chip-row"></div>
+        </section>
       </main>
 
       <footer class="site-footer">

@@ -32,6 +32,7 @@ const state = {
     sort: "default",
     view: "cards"
   },
+  scoutingCountry: "all",
   pathwaysCountry: "Japan",
   tournamentFilters: {
     level: "all"
@@ -222,6 +223,21 @@ const UI_COPY = {
     "players.card.marketValuePeakOnly": "历史峰值 {peak}",
     "players.card.viewProfile": "查看球员档案",
     "players.card.details": "查看",
+    "players.scouting.eyebrow": "Scouting Watchlist",
+    "players.scouting.title": "FTS 亚洲青年球员观察池",
+    "players.scouting.country": "国家 / 地区",
+    "players.scouting.allCountry": "全部国家 / 地区",
+    "players.scouting.meta": "当前展示 {count} / {total} 人 · 覆盖 {countries} 个 AFC 国家 / 地区",
+    "players.scouting.rating": "潜力评分 {value}/10",
+    "players.scouting.unrated": "未给出公开评分",
+    "players.scouting.original": "查看 FTS 原文",
+    "players.scouting.profile": "站内球员档案",
+    "players.scouting.checked": "链接核查：{date}",
+    "players.scouting.collections": "相关 FTS 合集",
+    "players.scouting.type.image-report": "图片报告",
+    "players.scouting.type.talent-of-the-day": "每日天才",
+    "players.scouting.type.player-profile": "球员报告",
+    "players.scouting.type.guest-report": "客座报告",
     "playerDetail.breadcrumb.list": "球员列表",
     "playerDetail.breadcrumb.detail": "球员详情",
     "playerDetail.pathway.eyebrow": "Pathway",
@@ -728,6 +744,21 @@ const UI_COPY = {
     "players.card.marketValueCurrentOnly": "Current {current}",
     "players.card.marketValuePeakOnly": "Peak {peak}",
     "players.card.viewProfile": "View player file",
+    "players.scouting.eyebrow": "Scouting Watchlist",
+    "players.scouting.title": "FTS AFC youth watchlist",
+    "players.scouting.country": "Country / region",
+    "players.scouting.allCountry": "All countries / regions",
+    "players.scouting.meta": "Showing {count} / {total} players across {countries} AFC countries / regions",
+    "players.scouting.rating": "Potential rating {value}/10",
+    "players.scouting.unrated": "No public rating",
+    "players.scouting.original": "Open FTS source",
+    "players.scouting.profile": "Site player file",
+    "players.scouting.checked": "Link checked: {date}",
+    "players.scouting.collections": "Related FTS collections",
+    "players.scouting.type.image-report": "Image report",
+    "players.scouting.type.talent-of-the-day": "Talent of the Day",
+    "players.scouting.type.player-profile": "Player profile",
+    "players.scouting.type.guest-report": "Guest report",
     "players.card.details": "View",
     "playerDetail.breadcrumb.list": "Players",
     "playerDetail.breadcrumb.detail": "Player detail",
@@ -4160,6 +4191,15 @@ function initializePlayerFilters() {
     state.playerFilters.tag,
     t("players.filters.allTag")
   );
+  const scoutingCountries = uniqueValues(
+    (state.overview?.scouting_watchlist?.records ?? []).map((record) => record.country)
+  ).map((value) => ({ value, label: formatCountryName(value) }));
+  buildOptions(
+    document.querySelector("#scoutingWatchCountryFilter"),
+    scoutingCountries,
+    state.scoutingCountry,
+    t("players.scouting.allCountry")
+  );
   const sortSelect = document.querySelector("#playerSortSelect");
   if (sortSelect) {
     const sortOptions = [
@@ -4230,6 +4270,70 @@ function initializePlayerFilters() {
     state.playerFilters.view = "cards";
     renderPlayersPage();
   });
+  document.querySelector("#scoutingWatchCountryFilter")?.addEventListener("change", (event) => {
+    state.scoutingCountry = event.target.value;
+    renderPlayersPage();
+  });
+}
+
+function renderScoutingWatchlist() {
+  const watchlist = state.overview?.scouting_watchlist;
+  const grid = document.querySelector("#scoutingWatchGrid");
+  const meta = document.querySelector("#scoutingWatchMeta");
+  const caveat = document.querySelector("#scoutingWatchCaveat");
+  const collections = document.querySelector("#scoutingWatchCollections");
+  if (!watchlist || !grid || !meta) {
+    return;
+  }
+
+  const records = (watchlist.records ?? []).filter(
+    (record) => state.scoutingCountry === "all" || record.country === state.scoutingCountry
+  );
+  setControlValue("#scoutingWatchCountryFilter", state.scoutingCountry);
+  meta.textContent = t("players.scouting.meta", {
+    count: records.length,
+    total: watchlist.records.length,
+    countries: watchlist.scope.country_count
+  });
+  if (caveat) {
+    caveat.textContent = localizeText(watchlist.source.caveat);
+  }
+  grid.innerHTML = records
+    .map((record) => {
+      const rating = record.potential_rating === null
+        ? t("players.scouting.unrated")
+        : t("players.scouting.rating", { value: record.potential_rating });
+      return `
+        <article class="player-card">
+          <div class="chip-row">
+            <span class="chip">${escapeHtml(formatCountryName(record.country))}</span>
+            <span class="chip">${escapeHtml(String(record.birth_year))}</span>
+            <span class="chip">${escapeHtml(t(`players.scouting.type.${record.report_type}`))}</span>
+          </div>
+          <h3>${escapeHtml(record.local_name || record.name)}</h3>
+          ${record.local_name ? `<p class="small-note">${escapeHtml(record.name)}</p>` : ""}
+          <p>${escapeHtml(rating)}</p>
+          <p class="small-note">${escapeHtml(localizeText(record.summary))}</p>
+          <p class="small-note">${escapeHtml(t("players.scouting.checked", { date: formatDate(record.source_checked_at) }))}</p>
+          <div class="chip-row">
+            ${record.player_id ? `<a class="primary-link primary-link-inline" href="${buildPlayerDetailUrl(record.player_id)}">${escapeHtml(t("players.scouting.profile"))}</a>` : ""}
+            <a class="primary-link primary-link-inline" href="${escapeHtml(record.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("players.scouting.original"))}</a>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+  if (collections) {
+    collections.innerHTML = (watchlist.related_collections ?? [])
+      .map(
+        (collection) => `
+          <a class="primary-link primary-link-inline" href="${escapeHtml(collection.url)}" target="_blank" rel="noreferrer">
+            ${escapeHtml(localizeText(collection.name))} · ${escapeHtml(formatCountryName(collection.country))}
+          </a>
+        `
+      )
+      .join("");
+  }
 }
 
 function getFilteredPlayers() {
@@ -4534,6 +4638,7 @@ function renderPlayersPage() {
   if (historicalRankingPanel) {
     historicalRankingPanel.innerHTML = renderHistoricalMarketValueRankingPanel();
   }
+  renderScoutingWatchlist();
 
   cardGrid.innerHTML = players.map((player) => renderPlayerCard(player, false)).join("");
   tableBody.innerHTML = players.map(renderPlayerTableRow).join("");

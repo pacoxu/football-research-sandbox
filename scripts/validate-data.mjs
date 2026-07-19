@@ -2037,6 +2037,81 @@ function validateUefaYouthLeague(topic, playerIds) {
   }
 }
 
+function validateScoutingWatchlist(watchlist, players) {
+  assert(watchlist?.schema_version === 1, "Invalid scouting watchlist schema_version");
+  assert(watchlist.source?.name === "Football Talent Scout", "Invalid scouting watchlist source");
+  assert(watchlist.source?.source_tier === "S2", "Football Talent Scout must remain an S2 source");
+  assert(isIsoDate(watchlist.source?.checked_at), "Invalid scouting watchlist source checked_at");
+  assert(
+    watchlist.source?.url === "https://footballtalentscout.net/" &&
+      watchlist.source?.terms_url?.startsWith("https://footballtalentscout.net/"),
+    "Scouting watchlist source links must use the official FTS site"
+  );
+  assert(
+    typeof watchlist.source?.caveat?.zh === "string" &&
+      typeof watchlist.source?.caveat?.en === "string",
+    "Scouting watchlist requires a bilingual source caveat"
+  );
+
+  const records = watchlist.records ?? [];
+  const recordIds = new Set();
+  const countries = new Set();
+  const playerMap = new Map(players.map((player) => [player.id, player]));
+  const allowedReportTypes = new Set(["image-report", "talent-of-the-day", "player-profile", "guest-report"]);
+  const allowedSourceScopes = new Set(["individual", "country-index", "category-index"]);
+  const forbiddenFactFields = ["registration_club", "national_team", "market_value", "verification"];
+
+  for (const record of records) {
+    assert(!recordIds.has(record.id), `Duplicate scouting watchlist id: ${record.id}`);
+    recordIds.add(record.id);
+    countries.add(record.country);
+    assert(typeof record.name === "string" && record.name.length > 0, `Missing scouting name on ${record.id}`);
+    assert(Number.isInteger(record.birth_year) && record.birth_year >= 2000 && record.birth_year <= 2010, `Invalid scouting birth_year on ${record.id}`);
+    assert(allowedReportTypes.has(record.report_type), `Invalid scouting report_type on ${record.id}`);
+    assert(allowedSourceScopes.has(record.source_scope), `Invalid scouting source_scope on ${record.id}`);
+    assert(
+      record.potential_rating === null ||
+        (typeof record.potential_rating === "number" &&
+          record.potential_rating >= 1 &&
+          record.potential_rating <= 10 &&
+          Number.isInteger(record.potential_rating * 2)),
+      `Invalid scouting potential_rating on ${record.id}`
+    );
+    assert(
+      typeof record.summary?.zh === "string" && typeof record.summary?.en === "string",
+      `Missing bilingual scouting summary on ${record.id}`
+    );
+    assert(record.source_url?.startsWith("https://footballtalentscout.net/"), `Invalid scouting source_url on ${record.id}`);
+    assert(isIsoDate(record.source_checked_at), `Invalid scouting source_checked_at on ${record.id}`);
+    for (const field of forbiddenFactFields) {
+      assert(record[field] === undefined, `Scouting watchlist must not override ${field} on ${record.id}`);
+    }
+    if (record.player_id) {
+      const player = playerMap.get(record.player_id);
+      assert(player, `Unknown scouting player_id on ${record.id}: ${record.player_id}`);
+      assert(player.country === record.country, `Scouting country mismatch on ${record.id}`);
+      assert(Number(player.birth_date.slice(0, 4)) === record.birth_year, `Scouting birth year mismatch on ${record.id}`);
+      const knownNames = [player.name, player.local_name, ...Object.values(player.names ?? {})]
+        .map(normalizeIdentityName);
+      assert(knownNames.includes(normalizeIdentityName(record.name)), `Scouting name mismatch on ${record.id}`);
+    }
+  }
+
+  assert(records.length === 30, `Expected 30 scouting watchlist records, found ${records.length}`);
+  assert(countries.size === 8, `Expected 8 scouting watchlist countries, found ${countries.size}`);
+  assert(watchlist.scope?.record_count === records.length, "Scouting watchlist record_count mismatch");
+  assert(watchlist.scope?.country_count === countries.size, "Scouting watchlist country_count mismatch");
+
+  const collectionIds = new Set();
+  for (const collection of watchlist.related_collections ?? []) {
+    assert(!collectionIds.has(collection.id), `Duplicate scouting collection id: ${collection.id}`);
+    collectionIds.add(collection.id);
+    assert(typeof collection.name?.zh === "string" && typeof collection.name?.en === "string", `Missing scouting collection name on ${collection.id}`);
+    assert(collection.url?.startsWith("https://footballtalentscout.net/"), `Invalid scouting collection URL on ${collection.id}`);
+  }
+  assert(collectionIds.size === 6, `Expected 6 scouting collections, found ${collectionIds.size}`);
+}
+
 export async function validateData() {
   const dataset = await loadDataset();
   const playerNameOverrides = JSON.parse(
@@ -2592,6 +2667,7 @@ export async function validateData() {
   );
   assert(comparisonRosterMetadata.size === 15, `Expected 15 comparison roster metadata entries, found ${comparisonRosterMetadata.size}`);
   validateU20ArchiveCoverage(dataset.tournamentArchive);
+  validateScoutingWatchlist(dataset.scoutingWatchlist, dataset.players);
 
   if (dataset.chinaMenYouthCoaches !== null) {
     validateChinaMenYouthCoaches(dataset.chinaMenYouthCoaches);

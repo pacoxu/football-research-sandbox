@@ -34,6 +34,7 @@ export async function buildSiteData() {
     projects: dataset.projects,
     overseas_history: dataset.overseasHistory,
     dossiers: dataset.dossiers,
+    scouting_watchlist: dataset.scoutingWatchlist,
     tournament_archive: dataset.tournamentArchive,
     uefa_youth_league: dataset.uefaYouthLeague,
     china_men_youth_coaches: dataset.chinaMenYouthCoaches,
