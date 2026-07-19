@@ -323,6 +323,23 @@ function isIsoDate(value) {
   return /^\d{4}-\d{2}-\d{2}$/.test(value);
 }
 
+export function validateTournamentLifecycle(tournament, referenceDate) {
+  assert(isIsoDate(referenceDate), `Invalid tournament lifecycle reference date: ${referenceDate}`);
+  const activeStatuses = new Set(["ongoing", "in-progress"]);
+  if (!activeStatuses.has(tournament.status) || tournament.date_range?.end === null) {
+    return;
+  }
+
+  assert(
+    isIsoDate(tournament.date_range?.end),
+    `Invalid tournament lifecycle end date: ${tournament.id} (${tournament.status}, ${tournament.date_range?.end})`
+  );
+  assert(
+    tournament.date_range.end >= referenceDate,
+    `Expired active tournament: ${tournament.id} (${tournament.status}, ended ${tournament.date_range.end})`
+  );
+}
+
 function normalizeIdentityName(value) {
   return String(value ?? "")
     .normalize("NFKC")
@@ -2037,7 +2054,8 @@ function validateUefaYouthLeague(topic, playerIds) {
   }
 }
 
-export async function validateData() {
+export async function validateData(referenceDate = new Date().toISOString().slice(0, 10)) {
+  assert(isIsoDate(referenceDate), `Invalid validation reference date: ${referenceDate}`);
   const dataset = await loadDataset();
   const playerNameOverrides = JSON.parse(
     await fs.readFile(path.join(paths.raw, "player-name-overrides.json"), "utf8")
@@ -2456,6 +2474,7 @@ export async function validateData() {
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
     validateTournamentDateRange(tournament, "focus tournament");
+    validateTournamentLifecycle(tournament, referenceDate);
   }
 
   for (const country of dataset.overseasHistory.countries) {

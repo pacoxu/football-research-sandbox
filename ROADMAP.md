@@ -1,13 +1,15 @@
 # Roadmap
 
-更新时间：2026-07-12
+更新时间：2026-07-19
 
 本路线图用于把项目后续工作从零散补数据，收敛成可排期、可验收、可拆 issue 的维护计划。详细覆盖状态见 `docs/coverage-matrix.md`，研究补采样本见 `research-collection-outline-2026-06-27.md`。
 
 ## 当前基线
 
-- 球员库：186 人。
-- 国家/地区：China PR、Japan、Korea Republic、Uzbekistan。
+- 球员库：459 人。
+- 赛事快照：20 项。
+- 专题项目：9 个。
+- 国家/地区：8 个，包括 China PR、Japan、Korea Republic、Australia、IR Iran、Qatar、Saudi Arabia、Uzbekistan。
 - 主要页面数据：`data/site/players.json`、`data/site/overview.json`。
 - 主要维护入口：`data/raw/**`。
 - 本地校验：`npm run validate-data`。
@@ -59,6 +61,7 @@
 
 | 优先级 | 工作项 | 目标产物 | 关联 |
 | --- | --- | --- | --- |
+| P0 | 已结束赛事状态与入口统计同步 | 银川 U17 和日韩 U21 快照已收口，README、Roadmap、覆盖矩阵统一为 459 名球员、20 项赛事、9 个专题项目 | [#5](https://github.com/pacoxu/football-research-sandbox/issues/5) |
 | P3 | 中国 U20 2025 终报名和正赛技术统计 | 两版 23 人名单边界、1 次门将替换和四场逐人 appearances/goals/minutes 已完成 | [#13](https://github.com/pacoxu/football-research-sandbox/issues/13) |
 | P3 | 中国 U17 2026 终报名、后续集训、观察池边界 | roster flag 或等价字段，区分终报名、集训和观察池 | [#14](https://github.com/pacoxu/football-research-sandbox/issues/14) |
 | P3 | 当前中国留洋 `overseas_status` 模型 | 已区分 active registered、pending effective、trial watch、returned、historical only，并由页面、overview 与校验消费 | [#15](https://github.com/pacoxu/football-research-sandbox/issues/15) |

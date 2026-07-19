@@ -4,6 +4,18 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-07-19
+
+### Corrected
+
+- Closed the completed Yinchuan U17 tournament with China's 1-1 final-round draw against Nigeria, the final standings, and the CFA closing report.
+- Froze the March-May East Asia U21 professional-system watch as a completed snapshot instead of leaving it in progress after its end date.
+- Synchronized README, Roadmap, and coverage-matrix baselines to 459 players, 20 tournament snapshots, 9 projects, and 8 countries or regions.
+
+### Validation
+
+- Added a lifecycle check that rejects `ongoing` and `in-progress` tournament snapshots whose end date is earlier than the validation date.
+
 ## 2026-07-12
 
 ### Added
