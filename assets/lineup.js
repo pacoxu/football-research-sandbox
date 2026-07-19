@@ -1,3 +1,5 @@
+import { arrangePitchGroup, assignedRoleLabel } from "./lineup-layout.js";
+
 const players = [
   { id: "cn-liu-shaoziyang", name: "刘邵子洋", en: "Liu Shaoziyang", country: "China PR", position: "GK", role: "门将", club: "LAFC2", era: "current" },
   { id: "cn-li-dongchen", name: "李东宸", en: "Li Dongchen", country: "China PR", position: "DEF", role: "中后卫", club: "Sant Cugat FC", era: "current" },
@@ -165,13 +167,14 @@ function togglePlayer(player) {
   render();
 }
 
-function renderPitchPlayer(player) {
+function renderPitchPlayer(player, lane) {
   const initials = player.name.slice(-2);
+  const role = assignedRoleLabel(player.role, lane);
   return `
-    <button class="pitch-player" type="button" data-player-id="${player.id}" aria-label="移除${player.name}">
+    <button class="pitch-player" type="button" data-player-id="${player.id}" data-lane="${lane}" aria-label="移除${player.name}（${role}）">
       <span class="pitch-player-disc">${initials}</span>
       <strong>${player.name}</strong>
-      <small>${player.role}</small>
+      <small>${role}</small>
     </button>
   `;
 }
@@ -188,7 +191,9 @@ function renderPitch() {
   Object.entries(groups).forEach(([position, node]) => {
     const group = lineup.filter((player) => player.position === position);
     node.style.setProperty("--player-count", Math.max(group.length, 1));
-    node.innerHTML = group.map(renderPitchPlayer).join("");
+    node.innerHTML = arrangePitchGroup(group)
+      .map(({ player, lane }) => renderPitchPlayer(player, lane))
+      .join("");
   });
 
   document.querySelectorAll(".pitch-player").forEach((button) => {
