@@ -120,6 +120,7 @@ flowchart LR
 
 - `high-school`
 - `club-academy`
+- `community-club`
 - `university`
 - `professional-club`
 - `military-service-club`

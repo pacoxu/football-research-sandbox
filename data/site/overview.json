@@ -32225,7 +32225,7 @@
   },
   "youth_development_systems": {
     "schema_version": 1,
-    "checked_at": "2026-07-12",
+    "checked_at": "2026-07-19",
     "systems": [
       {
         "id": "japan-mens-youth",
@@ -32704,6 +32704,415 @@
             "label": "KFA 2026 youth competition rules",
             "url": "https://img.kfa.or.kr/data_rule/youth_rule_2026_01.pdf",
             "checked_at": "2026-07-12"
+          }
+        ]
+      },
+      {
+        "id": "norway-mens-youth",
+        "country": "Norway",
+        "name": {
+          "zh": "挪威男足基层、精英识别与俱乐部学院体系",
+          "en": "Norway men's grassroots, talent identification and academy system",
+          "native": "Norsk spillerutvikling og akademimodell"
+        },
+        "summary": {
+          "zh": "挪威把日常培养留在本地俱乐部，以 NFF 的 Kvalitetsklubb 提升基层组织质量，再通过 18 个地区足协运营的 Landslagsskolen 识别 12 至 16 岁球员；职业俱乐部端则由 Norsk Toppfotball 的 Akademiklassifiseringen 设定学院标准并关注自培球员进入成年队的产出。",
+          "en": "Norway keeps day-to-day development in local clubs, uses the NFF Kvalitetsklubb programme to strengthen grassroots organizations, and identifies players aged 12 to 16 through the district-operated Landslagsskolen. At elite-club level, Norsk Toppfotball's Akademiklassifiseringen sets academy standards and measures progression into senior football."
+        },
+        "registration_categories": [
+          {
+            "id": "norway-community-youth-clubs",
+            "age_band": "u6-u19",
+            "label": {
+              "zh": "NFF 基层与青少年俱乐部",
+              "en": "NFF grassroots and youth clubs",
+              "native": "Barne- og ungdomsfotball"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "source_url": "https://www.fotball.no/klubb-og-leder/kvalitetsklubb/artikler/disse-er-kvalitetsklubb/"
+          },
+          {
+            "id": "norway-elite-academy-pathway",
+            "age_band": "u13-u19",
+            "label": {
+              "zh": "NTF 顶级俱乐部学院",
+              "en": "NTF elite-club academies",
+              "native": "Toppklubbenes akademier"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "source_url": "https://toppfotball.no/ak25/bakgrunn-og-metode/modell-for-akademiklassifiseringen"
+          }
+        ],
+        "competitions": [
+          {
+            "id": "norway-landslagsskolen",
+            "age_band": "u12-u16",
+            "competition_type": "talent-development-program",
+            "name": {
+              "zh": "NFF Landslagsskolen 国家队学校",
+              "en": "NFF Landslagsskolen",
+              "native": "Landslagsskolen"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "stable_structure": {
+              "zh": "俱乐部提名球员进入地区足协的分区与地区队活动，随后衔接顶级组、全国人才营和年龄段国家队。它是俱乐部日常训练之外的补充识别与反馈体系，不取代球员原俱乐部。",
+              "en": "Clubs nominate players into district zone and regional-team activity, which feeds top groups, national talent camps and youth national teams. It supplements rather than replaces daily club training."
+            },
+            "annual_snapshot": {
+              "season": "2026",
+              "note": {
+                "zh": "NFF 地区说明把路径拆为分区、地区队、顶级组、人才营和年龄段国家队；12 岁进入首层，覆盖至 16 岁。",
+                "en": "NFF district guidance describes a pathway from zones through regional teams and top groups to talent camps and youth national teams, beginning at age 12 and running through age 16."
+              }
+            },
+            "source_url": "https://www.fotball.no/barn-og-ungdom/landslagsskolen/"
+          },
+          {
+            "id": "norway-kvalitetsklubb",
+            "age_band": "children-youth",
+            "competition_type": "club-development-program",
+            "name": {
+              "zh": "NFF Kvalitetsklubb 质量俱乐部",
+              "en": "NFF Kvalitetsklubb",
+              "native": "NFF Kvalitetsklubb"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "stable_structure": {
+              "zh": "面向所有开展儿童和青少年足球的俱乐部，以规划、关键岗位、教练能力和安全环境为最低标准，由地区足协顾问持续辅导并完成认证。",
+              "en": "A certification and development process for any club running children's or youth football, built around planning, key roles, coaching competence and a safe environment, with continuing support from district advisers."
+            },
+            "source_url": "https://www.fotball.no/klubb-og-leder/kvalitetsklubb/artikler/disse-er-kvalitetsklubb/"
+          },
+          {
+            "id": "norway-akademiklassifiseringen",
+            "age_band": "academy-to-senior",
+            "competition_type": "academy-certification",
+            "name": {
+              "zh": "NTF Akademiklassifiseringen 学院评级",
+              "en": "NTF Akademiklassifiseringen",
+              "native": "Akademiklassifiseringen"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "Norsk Toppfotball 以五级标准评估顶级俱乐部的发展结构，既看规划、人员、训练、学校合作和设施，也以 25 岁以下自培球员在成年高水平比赛的时间衡量产出。",
+              "en": "Norsk Toppfotball uses five classification levels to assess elite-club development structures across planning, staff, training, school cooperation and facilities, while also measuring senior minutes earned by club-developed players under 25."
+            },
+            "annual_snapshot": {
+              "season": "AK-25",
+              "teams": 30,
+              "note": {
+                "zh": "2025 轮次有 30 家俱乐部完成评级；AK-25 是第二个评级周期的起点，模型继续提高对实际球员产出的权重。",
+                "en": "Thirty clubs completed the 2025 classification. AK-25 begins the second classification cycle and increases the weight given to player productivity."
+              }
+            },
+            "source_url": "https://toppfotball.no/ak25/bakgrunn-og-metode/modell-for-akademiklassifiseringen"
+          }
+        ],
+        "source_links": [
+          {
+            "label": "NFF Landslagsskolen player-development model",
+            "url": "https://www.fotball.no/barn-og-ungdom/landslagsskolen/",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "NFF 2026 Landslagsskolen levels and nomination flow",
+            "url": "https://www.fotball.no/kretser/indre-ostland/aktivitet/spillerutvikling/info-om-landslagsskolen/",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "NFF certified Kvalitetsklubb programme",
+            "url": "https://www.fotball.no/klubb-og-leder/kvalitetsklubb/artikler/disse-er-kvalitetsklubb/",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "Norsk Toppfotball AK-25 academy-classification model",
+            "url": "https://toppfotball.no/ak25/bakgrunn-og-metode/modell-for-akademiklassifiseringen",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "Norsk Toppfotball AK-25 plan completion snapshot",
+            "url": "https://toppfotball.no/ak25/rikets-tilstand/planverk",
+            "checked_at": "2026-07-19"
+          }
+        ]
+      },
+      {
+        "id": "denmark-mens-youth",
+        "country": "Denmark",
+        "name": {
+          "zh": "丹麦男足人才中心与俱乐部青训许可体系",
+          "en": "Denmark men's talent-centre and youth club licensing system",
+          "native": "Dansk talentudvikling og klublicens"
+        },
+        "summary": {
+          "zh": "丹麦以俱乐部作为球员日常培养主体，DBU 一端用星级青训许可约束学院治理、教练和球员支持，另一端通过 U13/U14 训练与 U15 人才中心持续观察、训练并把反馈送回球员俱乐部。",
+          "en": "Denmark keeps daily development with clubs. DBU's star-based youth licence governs academy management, coaching and player support, while U13/U14 training and U15 talent centres provide recurring observation, training and feedback routed back through each player's club."
+        },
+        "registration_categories": [
+          {
+            "id": "denmark-youth-boys-licensed-clubs",
+            "age_band": "u13-u19",
+            "label": {
+              "zh": "DBU 男足青少年许可俱乐部",
+              "en": "DBU licensed boys' youth clubs",
+              "native": "Klublicens Ungdom Drenge"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "source_url": "https://www.dbu.dk/turneringer-og-resultater/klublicens/ungdom-drenge/"
+          },
+          {
+            "id": "denmark-dbu-talent-pathway",
+            "age_band": "u13-u15",
+            "label": {
+              "zh": "DBU Talent U13-U15",
+              "en": "DBU Talent U13-U15",
+              "native": "DBU Talent"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "source_url": "https://www.dbu.dk/landshold/talentudvikling/specifikt-drenge/"
+          }
+        ],
+        "competitions": [
+          {
+            "id": "denmark-youth-club-licence",
+            "age_band": "u13-u19",
+            "competition_type": "academy-certification",
+            "name": {
+              "zh": "DBU 男足青少年俱乐部许可",
+              "en": "DBU boys' youth club licence",
+              "native": "Klublicenssystem Ungdom Drenge"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "DBU 通过星级许可把竞技与生活双重发展、学院管理、教练配置和个体发展职责纳入统一审核，并把 U17/U19 联赛参赛环境与许可要求相连。",
+              "en": "DBU's star-based licence reviews sporting and civic development, academy management, staffing and individual-development responsibilities, and links the U17/U19 competition environment to licensing requirements."
+            },
+            "annual_snapshot": {
+              "season": "2026-2028",
+              "note": {
+                "zh": "当前手册周期为 2026 至 2028，并新增个人发展负责人及教练学习与领导力模块要求。",
+                "en": "The current manual covers 2026 to 2028 and adds an individual-development lead alongside coach learning-and-leadership requirements."
+              }
+            },
+            "source_url": "https://www.dbu.dk/turneringer-og-resultater/klublicens/ungdom-drenge/"
+          },
+          {
+            "id": "denmark-dbu-talent-u13-u14",
+            "age_band": "u13-u14",
+            "competition_type": "talent-development-program",
+            "name": {
+              "zh": "DBU Talent U13/U14 训练",
+              "en": "DBU Talent U13/U14 training",
+              "native": "DBU Talent U13/U14 træning"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "stable_structure": {
+              "zh": "DBU 人才教练和球探在俱乐部比赛与集中训练中持续观察球员；每次活动包含训练与内部比赛，评估反馈通过球员的俱乐部教练传递。",
+              "en": "DBU talent coaches and scouts observe players in club matches and central sessions. Each activity combines training with an internal match, and feedback is delivered through the player's club coach."
+            },
+            "annual_snapshot": {
+              "season": "2026",
+              "note": {
+                "zh": "U13/U14 年度安排为秋季 3 次、春季 4 次单日训练。",
+                "en": "The U13/U14 year is structured around three one-day autumn sessions and four one-day spring sessions."
+              }
+            },
+            "source_url": "https://www.dbu.dk/landshold/talentudvikling/specifikt-drenge/"
+          },
+          {
+            "id": "denmark-dbu-u15-talent-centres",
+            "age_band": "u15",
+            "competition_type": "talent-development-program",
+            "name": {
+              "zh": "DBU U15 人才中心",
+              "en": "DBU U15 talent centres",
+              "native": "U15 talentcentre"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "stable_structure": {
+              "zh": "U15 阶段升级为两日人才中心活动，包含两次训练和一场比赛；书面评估先发送至俱乐部，再由俱乐部与球员沟通。",
+              "en": "At U15 the pathway moves to two-day talent-centre gatherings with two training sessions and one match. Written feedback goes first to the club, which reviews it with the player."
+            },
+            "source_url": "https://www.dbu.dk/landshold/talentudvikling/specifikt-drenge/"
+          }
+        ],
+        "source_links": [
+          {
+            "label": "DBU boys' youth club licensing hub",
+            "url": "https://www.dbu.dk/turneringer-og-resultater/klublicens/ungdom-drenge/",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "DBU youth boys licence manual 2026-2028",
+            "url": "https://www.dbu.dk/media/5snfk4oi/2026-2028-licensmanual-ungdom-drenge.pdf",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "DBU Talent boys' development pathway",
+            "url": "https://www.dbu.dk/landshold/talentudvikling/specifikt-drenge/",
+            "checked_at": "2026-07-19"
+          }
+        ]
+      },
+      {
+        "id": "sweden-mens-youth",
+        "country": "Sweden",
+        "name": {
+          "zh": "瑞典男足球员培养计划与精英学院认证体系",
+          "en": "Sweden men's player-development plan and elite academy certification system",
+          "native": "Svensk spelarutbildning och akademicertifiering"
+        },
+        "summary": {
+          "zh": "瑞典足协以 6 至 19 岁球员培养计划和统一比赛形式为全国俱乐部提供训练框架；精英端由 Svensk Elitfotboll 的 Unicoach 网络按年度认证学院，并把教练培养、组织质量和青年球员进入成年队一起纳入评价。",
+          "en": "The Swedish FA provides clubs with a national development plan for ages 6 to 19 and common game formats. At elite level, Svensk Elitfotboll's Unicoach network certifies academies annually and evaluates coaching, organizational quality and transition into senior football."
+        },
+        "registration_categories": [
+          {
+            "id": "sweden-player-education-clubs",
+            "age_band": "u6-u19",
+            "label": {
+              "zh": "SvFF 6-19 岁球员培养",
+              "en": "SvFF player development ages 6-19",
+              "native": "Spelarutbildning 6-19 år"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "source_url": "https://aktiva.svenskfotboll.se/tranare/spelarutbildning/spelarutbildningsplan/"
+          },
+          {
+            "id": "sweden-unicoach-academies",
+            "age_band": "u10-u19",
+            "label": {
+              "zh": "SEF / Unicoach 精英学院",
+              "en": "SEF / Unicoach elite academies",
+              "native": "Unicoach-akademier"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "source_url": "https://svenskelitfotboll.se/certifiering/"
+          }
+        ],
+        "competitions": [
+          {
+            "id": "sweden-player-development-plan",
+            "age_band": "u6-u19",
+            "competition_type": "player-development-framework",
+            "name": {
+              "zh": "SvFF 球员培养计划",
+              "en": "SvFF player-development plan",
+              "native": "Svensk fotbolls spelarutbildningsplan"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "stable_structure": {
+              "zh": "以“踢、玩、学”原则为基础，为 6 至 19 岁不同阶段提供训练和比赛环境建议，目标同时覆盖长期发展、乐趣与终身足球参与。",
+              "en": "Based on the Play, Play and Learn principles, the plan guides training and match environments from ages 6 to 19 with long-term development, enjoyment and lifelong participation as joint aims."
+            },
+            "source_url": "https://aktiva.svenskfotboll.se/tranare/spelarutbildning/spelarutbildningsplan/"
+          },
+          {
+            "id": "sweden-national-game-formats",
+            "age_band": "children-youth",
+            "competition_type": "player-development-framework",
+            "name": {
+              "zh": "瑞典全国青少年比赛形式",
+              "en": "Swedish national youth game formats",
+              "native": "Fotbollens nationella spelformer"
+            },
+            "organization_types": [
+              "community-club",
+              "club-academy"
+            ],
+            "stable_structure": {
+              "zh": "全国统一使用 3v3、5v5、7v7、9v9 到 11v11 的年龄递进比赛形式，让场地、人数和规则随儿童与青少年发展阶段变化。",
+              "en": "National 3v3, 5v5, 7v7, 9v9 and 11v11 formats scale pitch, team size and rules with children's and youth development stages."
+            },
+            "source_url": "https://aktiva.svenskfotboll.se/tranare/spelformer/bakrund-och-syfte/"
+          },
+          {
+            "id": "sweden-unicoach-certification",
+            "age_band": "u10-u19",
+            "competition_type": "academy-certification",
+            "name": {
+              "zh": "SEF Unicoach 学院认证",
+              "en": "SEF Unicoach academy certification",
+              "native": "Unicoach akademicertifiering"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "SEF 每年走访并量化评估参与俱乐部的 10 至 19 岁学院，覆盖俱乐部治理、人员、球员、训练、比赛、设施与自培球员产出，以一至七星表达认证结果。",
+              "en": "SEF visits and scores participating clubs' academies for ages 10 to 19 each year, covering governance, staff, players, training, matches, facilities and academy-player output, with certification expressed from one to seven stars."
+            },
+            "annual_snapshot": {
+              "season": "2025",
+              "teams": 43,
+              "note": {
+                "zh": "SEF 2025 年报记录 31 家 Unicoach 俱乐部获认证，另有 12 家 Ettan 俱乐部参与。",
+                "en": "SEF's 2025 annual report records 31 certified Unicoach clubs plus 12 participating Ettan clubs."
+              }
+            },
+            "source_url": "https://svenskelitfotboll.se/certifiering/"
+          }
+        ],
+        "source_links": [
+          {
+            "label": "SvFF national player-development plan",
+            "url": "https://aktiva.svenskfotboll.se/tranare/spelarutbildning/spelarutbildningsplan/",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "SvFF national game formats",
+            "url": "https://aktiva.svenskfotboll.se/tranare/spelformer/bakrund-och-syfte/",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "SEF Unicoach academy certification",
+            "url": "https://svenskelitfotboll.se/certifiering/",
+            "checked_at": "2026-07-19"
+          },
+          {
+            "label": "SEF 2025 annual report",
+            "url": "https://svenskelitfotboll.se/wp-content/uploads/2026/04/SEFs-Verksamhetsberattelse-2025.pdf",
+            "checked_at": "2026-07-19"
           }
         ]
       }
