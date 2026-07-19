@@ -208,7 +208,7 @@
 
 | 字段 | 含义 |
 | --- | --- |
-| `bucket_definition` | 留洋层级定义，例如五大联赛、欧洲其他、亚洲其他、美洲其他等。 |
+| `bucket_definition` | 留洋层级定义，例如五大联赛、欧洲其他、亚洲其他、大洋洲其他、美洲其他等。 |
 | `countries` | 各国家/地区的留洋摘要、featured records 和 checklist。 |
 | `countries[].historical_trial_records` | 有可靠来源的历史海外训练/试训事件；必须明确 `signed`、`registration_changed`，不得混入正式留洋人数。 |
 

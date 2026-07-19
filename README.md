@@ -83,7 +83,7 @@ python3 -m http.server 4173
 - `data/raw/youth-development-systems.json` 维护日韩稳定体系结构，年度队数和赛季说明只放在 `annual_snapshot`。
 - `data/raw/dossiers.json` 的 `genbao-football-base` 记录根宝基地代际、代表球员、当前状态、可信度和现状来源；无法确认的当前去向必须标记为待复核。
 - 若外部资料存在冲突，以 `verification.status` 和 `verification.notes` 标记，而不是直接覆盖。
-- `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、美洲其他四个层级。
+- `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、大洋洲其他、美洲其他等层级。
 - 留洋国家条目可选带 `featured_records`，用于补真实个案，至少保留赛季、联赛、俱乐部、正式比赛出场与摘要。
 - `data/raw/big-five-asian-coaches.json` 维护五大联赛顶级联赛亚洲教练样本，战绩优先按联赛场次统计，并用 `counted_in` 区分 AFC 主口径与广义亚洲边界口径。
 - `data/raw/asian-coaches.json` 维护五大联赛之外的亚洲主教练任期，以 `role_scope` 和 `competition_scope` 区分俱乐部一线队、成年/青年国家队及赛事范围，不复制五大联赛主表战绩。
