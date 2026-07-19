@@ -38604,8 +38604,206 @@
   },
   "youth_development_systems": {
     "schema_version": 1,
-    "checked_at": "2026-07-19",
+    "checked_at": "2026-07-20",
     "systems": [
+      {
+        "id": "china-professional-youth",
+        "country": "China PR",
+        "name": {
+          "zh": "中国职业俱乐部梯队与青年联赛体系",
+          "en": "China professional-club reserve and youth competition system",
+          "native": "中国职业俱乐部梯队与青年联赛体系"
+        },
+        "summary": {
+          "zh": "中国职业足球历史上举办过中超、中甲预备队联赛，但当前全国赛事已不再统一使用“预备队联赛”名称。现行衔接主要由职业俱乐部U21联赛、部分俱乐部B队参加中乙，以及U19、U17、U15等年龄段赛事共同承担；U21队与成年B队必须分开理解。",
+          "en": "China previously operated reserve leagues linked to the top professional divisions, but the current national structure no longer uses one unified reserve-league competition. Development minutes are now spread across the professional-club U21 league, selected B teams in China League Two, and U19, U17 and U15 competitions. An age-limited U21 team is not automatically the same entity as a senior B team."
+        },
+        "registration_categories": [
+          {
+            "id": "china-professional-club-u21",
+            "age_band": "u21",
+            "label": {
+              "zh": "职业俱乐部U21梯队",
+              "en": "Professional-club U21 team",
+              "native": "职业俱乐部U21梯队"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "source_url": "https://www.thecfa.cn/lstz/20240403/34018.html"
+          },
+          {
+            "id": "china-professional-club-b-team",
+            "age_band": "senior-bridge",
+            "label": {
+              "zh": "职业俱乐部B队",
+              "en": "Professional-club B team",
+              "native": "职业俱乐部B队"
+            },
+            "organization_types": [
+              "professional-club"
+            ],
+            "source_url": "https://www.thecfa.cn/qttz/20250126/35554.html"
+          },
+          {
+            "id": "china-professional-club-youth",
+            "age_band": "u15-u19",
+            "label": {
+              "zh": "职业俱乐部青少年梯队",
+              "en": "Professional-club youth teams",
+              "native": "职业俱乐部青少年梯队"
+            },
+            "organization_types": [
+              "club-academy",
+              "football-school"
+            ],
+            "source_url": "https://www.thecfa.cn/qsn/20250411/35850.html"
+          }
+        ],
+        "competitions": [
+          {
+            "id": "china-former-reserve-league",
+            "age_band": "reserve",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "中超／中甲预备队联赛（历史制度）",
+              "en": "CSL / China League One reserve leagues (historical)",
+              "native": "中超／中甲预备队联赛"
+            },
+            "organization_types": [
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "历史上随职业一线队体系运行的预备队赛事。中国足协2019年底发布的2020赛季政策已明确取消中甲预备队联赛并改设U23赛事，因此该名称只作为历史节点保存，不能用于描述当前统一赛事。",
+              "en": "A historical reserve competition connected to the senior professional leagues. The CFA's policy for the 2020 season explicitly cancelled the China League One reserve league and proposed a U23 competition, so this node is retained as history rather than presented as the current national format."
+            },
+            "source_url": "https://www.thecfa.cn/lstz/20191231/28443.html"
+          },
+          {
+            "id": "china-professional-u21-league",
+            "age_band": "u21",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "中国足球职业俱乐部U21联赛",
+              "en": "China professional-club U21 league",
+              "native": "中国足球职业俱乐部U21联赛"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "面向职业俱乐部U21梯队的全国赛事。中国足协2024通知规定职业俱乐部可报名、中超俱乐部必须参赛；它以年龄段培养为核心，不等同于允许成年替补自由参赛的传统预备队联赛。",
+              "en": "A national competition for professional-club U21 teams. The CFA's 2024 notice opened entry to professional clubs and required Chinese Super League clubs to participate. Its age-band focus makes it different from a traditional unrestricted senior reserve league."
+            },
+            "annual_snapshot": {
+              "season": "2025",
+              "note": {
+                "zh": "2025赛季U21联赛冠军获得与中冠第四名参加附加赛、争取2026中乙准入资格的通道；该升级安排属于赛季快照，应按年度规程复核。",
+                "en": "The 2025 U21 champion entered a playoff against the fourth-placed CMCL side for a route into the 2026 China League Two admission process. This promotion mechanism is season-specific and must be rechecked annually."
+              }
+            },
+            "source_url": "https://www.thecfa.cn/lstz/20240403/34018.html"
+          },
+          {
+            "id": "china-b-teams-league-two",
+            "age_band": "senior-bridge",
+            "competition_type": "professional-bridge",
+            "name": {
+              "zh": "职业俱乐部B队参加中乙",
+              "en": "Professional-club B teams in China League Two",
+              "native": "职业俱乐部B队参加中乙"
+            },
+            "organization_types": [
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "部分职业俱乐部B队直接进入成年职业联赛第三级中乙，与独立中乙俱乐部比赛。这是成年金字塔中的二队通道，不是所有俱乐部统一参加的预备队联赛，也不能与U21联赛自动视为同一支队。",
+              "en": "Selected professional-club B teams compete in the senior third-tier China League Two alongside independent clubs. This is a B-team route inside the adult pyramid, not a reserve league entered by every club, and a B team should not automatically be treated as identical to its club's U21 team."
+            },
+            "annual_snapshot": {
+              "season": "2025",
+              "teams": 4,
+              "note": {
+                "zh": "中国足协公布的2025中乙名单包括山东泰山B队、上海海港B队、武汉三镇B队和成都蓉城B队四队；俱乐部B队不参加2025足协杯。",
+                "en": "The CFA's 2025 China League Two list included Shandong Taishan B, Shanghai Port B, Wuhan Three Towns B and Chengdu Rongcheng B. Club B teams did not enter the 2025 CFA Cup."
+              }
+            },
+            "source_url": "https://www.thecfa.cn/qttz/20250126/35554.html"
+          },
+          {
+            "id": "china-u19-youth-league",
+            "age_band": "u19",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "中国青少年足球联赛暨全国青年足球联赛U19组",
+              "en": "Chinese Youth Football League / National Youth League U19",
+              "native": "中国青少年足球联赛暨中国足协全国青年足球联赛U19组"
+            },
+            "organization_types": [
+              "club-academy",
+              "football-school"
+            ],
+            "stable_structure": {
+              "zh": "面向俱乐部青训梯队、社会青训机构等符合注册条件队伍的U19全国赛事，是高年龄段青年比赛环境，但不承担成年预备队的全部功能。",
+              "en": "A national U19 competition open to eligible registered club academies and other youth-development organizations. It provides an older-youth competition environment but does not perform every function of an adult reserve league."
+            },
+            "source_url": "https://www.thecfa.cn/qsn/20250411/35850.html"
+          },
+          {
+            "id": "china-professional-u17-u15",
+            "age_band": "u15-u17",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "职业俱乐部U17、U15梯队赛事",
+              "en": "Professional-club U17 and U15 competitions",
+              "native": "职业俱乐部U17、U15梯队赛事"
+            },
+            "organization_types": [
+              "club-academy",
+              "football-school"
+            ],
+            "stable_structure": {
+              "zh": "职业俱乐部更低年龄段的全国梯队赛事。中国足协2024通知将U21、职业俱乐部U17和U15列为多级梯队赛事，形成U15/U17到U21、B队或一线队的分层路径。",
+              "en": "National competitions for younger professional-club age groups. The CFA's 2024 notice listed U21, professional-club U17 and U15 events as a multi-level ladder, creating distinct steps toward U21, B-team or first-team football."
+            },
+            "source_url": "https://www.thecfa.cn/lstz/20240403/34018.html"
+          }
+        ],
+        "source_links": [
+          {
+            "label": "CFA 2020 professional-league policy and reserve-league change",
+            "url": "https://www.thecfa.cn/lstz/20191231/28443.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2024 professional-club U21/U17/U15 competition notice",
+            "url": "https://www.thecfa.cn/lstz/20240403/34018.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2025 China League Two participant list",
+            "url": "https://www.thecfa.cn/qttz/20250126/35554.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2025 U19 youth-league registration notice",
+            "url": "https://www.thecfa.cn/qsn/20250411/35850.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2025 CMCL U21 promotion-playoff route",
+            "url": "https://www.thecfa.cn/yyxwzz/20250722/36715.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2026 Cup confirmation that B teams remain outside the cup",
+            "url": "https://www.thecfa.cn/xinwenzixun/20260305/37379.html",
+            "checked_at": "2026-07-20"
+          }
+        ]
+      },
       {
         "id": "japan-mens-youth",
         "country": "Japan",
