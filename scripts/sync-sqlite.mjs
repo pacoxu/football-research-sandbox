@@ -190,6 +190,21 @@ export async function syncSqlite() {
       FOREIGN KEY (player_id) REFERENCES china_naturalized_players(id) ON DELETE CASCADE
     );
 
+    CREATE TABLE chinese_heritage_players (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      local_name TEXT NOT NULL,
+      group_id TEXT NOT NULL,
+      represented_team TEXT,
+      target_team TEXT,
+      representation_status TEXT NOT NULL,
+      heritage_summary_json TEXT NOT NULL,
+      football_summary_json TEXT NOT NULL,
+      world_cup_2026_json TEXT,
+      source_links_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL
+    );
+
     CREATE TABLE dossiers (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
@@ -401,6 +416,13 @@ export async function syncSqlite() {
     INSERT INTO china_naturalized_career_segments (
       player_id, segment_order, period, phase, country, clubs_json, summary_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertChineseHeritagePlayer = db.prepare(`
+    INSERT INTO chinese_heritage_players (
+      id, name, local_name, group_id, represented_team, target_team,
+      representation_status, heritage_summary_json, football_summary_json,
+      world_cup_2026_json, source_links_json, checked_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertDossier = db.prepare(`
     INSERT INTO dossiers (
@@ -644,6 +666,24 @@ export async function syncSqlite() {
         }
       }
     }
+  }
+
+  const chineseHeritagePlayers = dataset.overseasHistory.chinese_heritage_players;
+  for (const profile of chineseHeritagePlayers.profiles ?? []) {
+    insertChineseHeritagePlayer.run(
+      profile.id,
+      profile.name,
+      profile.local_name,
+      profile.group,
+      profile.represented_team ?? null,
+      profile.target_team ?? null,
+      profile.representation_status,
+      toJson(profile.heritage_summary),
+      toJson(profile.football_summary),
+      profile.world_cup_2026 ? toJson(profile.world_cup_2026) : null,
+      toJson(profile.source_links ?? []),
+      chineseHeritagePlayers.checked_at
+    );
   }
 
   for (const dossier of dataset.dossiers) {
