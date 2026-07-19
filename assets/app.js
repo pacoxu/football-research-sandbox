@@ -68,6 +68,8 @@ const UI_COPY = {
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
     "page.pathways.title": "青训体系与项目 | 青训球员追踪站",
     "page.pathways.description": "比较日本、韩国、挪威、丹麦和瑞典的学校足球、俱乐部学院、人才识别与职业桥梁。",
+    "page.coaches.title": "青训教练 | 青训球员追踪站",
+    "page.coaches.description": "查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。",
     "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
     "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
     "site.kicker": "青训追踪台",
@@ -78,6 +80,7 @@ const UI_COPY = {
     "nav.tournaments": "赛事",
     "nav.overseas": "留洋",
     "nav.pathways": "青训体系",
+    "nav.coaches": "青训教练",
     "header.language": "语言",
     "common.loading": "加载中",
     "common.loadingData": "数据载入中",
@@ -113,6 +116,8 @@ const UI_COPY = {
     "home.quickLinks.overseasText": "区分当前留洋样本与历史记录。",
     "home.quickLinks.genbaoTitle": "根宝足球基地",
     "home.quickLinks.genbaoText": "按代际查看基地代表球员、培养路径与当前状态。",
+    "home.quickLinks.coachesTitle": "青训教练",
+    "home.quickLinks.coachesText": "查看基层教练、国字号 U 系列教练组与官方来源。",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "留洋概览",
     "home.overseasSummary.link": "查看留洋",
@@ -223,6 +228,28 @@ const UI_COPY = {
     "players.card.marketValuePeakOnly": "历史峰值 {peak}",
     "players.card.viewProfile": "查看球员档案",
     "players.card.details": "查看",
+    "coaches.hero.eyebrow": "Youth Coaches",
+    "coaches.hero.title": "青训教练",
+    "coaches.hero.text": "集中查看基层、校园、足校和民间青训教练，以及中国男足 U 系列教练组。每条记录保留职责边界和原始来源。",
+    "coaches.coverage.eyebrow": "Coverage",
+    "coaches.coverage.value": "基层教练 {development} 人 · 国字号周期 {national} 条",
+    "coaches.coverage.checked": "基层样本核查至 {development} · 国字号核查至 {national}",
+    "coaches.development.eyebrow": "Grassroots & Academy",
+    "coaches.development.title": "基层与青训机构教练",
+    "coaches.development.note": "只收录能够确认具名机构和实际训练或技术职责的教练，不以行政头衔或球员经历代替执教事实。",
+    "coaches.development.period": "任期：{value}",
+    "coaches.development.sources": "来源 {count} 条",
+    "coaches.development.source": "查看来源",
+    "coaches.national.eyebrow": "National Youth Teams",
+    "coaches.national.title": "中国男足 U 系列教练组",
+    "coaches.national.coach": "主教练：{value}",
+    "coaches.national.latest": "最近集训：{value}",
+    "coaches.national.window": "时间：{value}",
+    "coaches.national.staff": "教练与保障团队",
+    "coaches.national.sources": "官方任命与集训来源",
+    "coaches.watchlist.eyebrow": "Research Queue",
+    "coaches.watchlist.title": "待补教练与机构",
+    "coaches.watchlist.need": "待核：{value}",
     "players.scouting.eyebrow": "Scouting Watchlist",
     "players.scouting.title": "FTS 亚洲青年球员观察池",
     "players.scouting.country": "国家 / 地区",
@@ -590,6 +617,8 @@ const UI_COPY = {
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
     "page.pathways.title": "Youth Systems and Programmes | Youth Player Tracking Desk",
     "page.pathways.description": "Compare school football, club academies, talent identification and professional bridges across Japan, South Korea, Norway, Denmark and Sweden.",
+    "page.coaches.title": "Youth Coaches | Youth Player Tracking Desk",
+    "page.coaches.description": "Explore Chinese grassroots youth coaches and men's youth national-team staffs with organizations, age groups, and source links.",
     "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
     "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
     "site.kicker": "Youth Tracking Desk",
@@ -600,6 +629,7 @@ const UI_COPY = {
     "nav.tournaments": "Tournaments",
     "nav.overseas": "Overseas",
     "nav.pathways": "Youth Systems",
+    "nav.coaches": "Coaches",
     "header.language": "Language",
     "common.loading": "Loading",
     "common.loadingData": "Loading data",
@@ -635,6 +665,8 @@ const UI_COPY = {
     "home.quickLinks.overseasText": "Separate current overseas samples from historical records.",
     "home.quickLinks.genbaoTitle": "Genbao Football Base",
     "home.quickLinks.genbaoText": "Browse representative generations, pathways and current status.",
+    "home.quickLinks.coachesTitle": "Youth coaches",
+    "home.quickLinks.coachesText": "Explore grassroots coaches, China youth national-team staffs, and official sources.",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "Overseas overview",
     "home.overseasSummary.link": "View overseas",
@@ -744,6 +776,28 @@ const UI_COPY = {
     "players.card.marketValueCurrentOnly": "Current {current}",
     "players.card.marketValuePeakOnly": "Peak {peak}",
     "players.card.viewProfile": "View player file",
+    "coaches.hero.eyebrow": "Youth Coaches",
+    "coaches.hero.title": "Youth coaches",
+    "coaches.hero.text": "Explore grassroots, school, academy, and independent youth coaches alongside China's men's youth national-team staffs. Every record retains its role boundary and original sources.",
+    "coaches.coverage.eyebrow": "Coverage",
+    "coaches.coverage.value": "{development} development coaches · {national} national-team cycles",
+    "coaches.coverage.checked": "Development checked {development} · national teams checked {national}",
+    "coaches.development.eyebrow": "Grassroots & Academy",
+    "coaches.development.title": "Grassroots and academy coaches",
+    "coaches.development.note": "Only named coaches with a verified organization and an actual training or technical role are included; administrative titles and playing careers are not treated as coaching evidence.",
+    "coaches.development.period": "Period: {value}",
+    "coaches.development.sources": "{count} sources",
+    "coaches.development.source": "Open source",
+    "coaches.national.eyebrow": "National Youth Teams",
+    "coaches.national.title": "China men's youth national-team staffs",
+    "coaches.national.coach": "Head coach: {value}",
+    "coaches.national.latest": "Latest camp: {value}",
+    "coaches.national.window": "Window: {value}",
+    "coaches.national.staff": "Coaching and support staff",
+    "coaches.national.sources": "Official appointment and camp sources",
+    "coaches.watchlist.eyebrow": "Research Queue",
+    "coaches.watchlist.title": "Coaches and organizations to verify",
+    "coaches.watchlist.need": "Research need: {value}",
     "players.scouting.eyebrow": "Scouting Watchlist",
     "players.scouting.title": "FTS AFC youth watchlist",
     "players.scouting.country": "Country / region",
@@ -1226,6 +1280,7 @@ const PAGE_METADATA = {
   },
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
+  coaches: { title: "page.coaches.title", description: "page.coaches.description" },
   "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" }
 };
 
@@ -1681,6 +1736,11 @@ async function boot() {
     if (page === "pathways") {
       initializePathwaysPage();
       renderPathwaysPage();
+      return;
+    }
+
+    if (page === "coaches") {
+      renderCoachesPage();
     }
   } catch (error) {
     console.error(error);
@@ -5664,6 +5724,118 @@ function buildCompetitionSampleUrl(system, competition) {
     params.set("organizationType", competition.organization_types[0]);
   }
   return `./players.html?${params.toString()}`;
+}
+
+function formatYouthCoachOrganizationType(value) {
+  const labels = {
+    "campus-school": { zh: "校园足球", en: "School football" },
+    "football-school": { zh: "足球学校", en: "Football school" },
+    "independent-base": { zh: "独立基地", en: "Independent academy" },
+    "independent-project": { zh: "民间青训项目", en: "Independent youth project" },
+    "private-academy": { zh: "民办青训机构", en: "Private academy" },
+    "professional-academy": { zh: "职业俱乐部青训", en: "Professional club academy" },
+    "sports-school": { zh: "体育学校", en: "Sports school" },
+    "academy-mixed": { zh: "综合青训机构", en: "Mixed academy" }
+  };
+  return getLabel(labels, value, value);
+}
+
+function formatYouthCoachAgeBand(value) {
+  const labels = {
+    "primary-school": { zh: "小学", en: "Primary school" },
+    "high-school": { zh: "高中", en: "High school" },
+    "youth-mixed": { zh: "多年龄段青训", en: "Mixed youth ages" },
+    "middle-school": { zh: "初中", en: "Middle school" },
+    youth: { zh: "青少年", en: "Youth" },
+    u12: { zh: "U12", en: "U12" },
+    u9: { zh: "U9", en: "U9" },
+    u13: { zh: "U13", en: "U13" },
+    u14: { zh: "U14", en: "U14" },
+    u15: { zh: "U15", en: "U15" },
+    u16: { zh: "U16", en: "U16" },
+    u17: { zh: "U17", en: "U17" },
+    u19: { zh: "U19", en: "U19" }
+  };
+  return getLabel(labels, value, value);
+}
+
+function formatYouthCoachPeriod(period) {
+  if (!period?.start) {
+    return t("common.pending");
+  }
+  const end = period.end ?? (state.language === "en" ? "present" : "至今");
+  return `${period.start}–${end}`;
+}
+
+function renderDevelopmentCoachCard(coach) {
+  const sources = coach.source_links ?? [];
+  const location = [coach.organization?.province, coach.organization?.city].filter(Boolean).join(" · ");
+  return `
+    <article class="player-card coach-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(formatYouthCoachOrganizationType(coach.organization?.type))}</span>
+        ${(coach.age_bands ?? []).map((ageBand) => `<span class="chip">${escapeHtml(formatYouthCoachAgeBand(ageBand))}</span>`).join("")}
+      </div>
+      <h3>${escapeHtml(localizeText(coach.name))}</h3>
+      <p>${escapeHtml(coach.role)}</p>
+      <p class="small-note">${escapeHtml(coach.organization?.name ?? t("common.pending"))}${location ? ` · ${escapeHtml(location)}` : ""}</p>
+      <p>${escapeHtml(coach.profile_summary)}</p>
+      <p class="small-note">${escapeHtml(t("coaches.development.period", { value: formatYouthCoachPeriod(coach.period) }))} · ${escapeHtml(t("coaches.development.sources", { count: sources.length }))}</p>
+      <div class="chip-row">${(coach.methodology_tags ?? []).map((tag) => `<span class="chip">${escapeHtml(tag)}</span>`).join("")}</div>
+      <div class="source-link-grid">
+        ${sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(source.label)}</span><strong>↗</strong></a>`).join("")}
+      </div>
+    </article>
+  `;
+}
+
+function renderNationalYouthCoachCycle(cycle) {
+  const headCoach = state.language === "en"
+    ? cycle.head_coach?.name
+    : cycle.head_coach?.local_name || cycle.head_coach?.name;
+  return `
+    <article class="story-card">
+      <div class="chip-row"><span class="chip">${escapeHtml(cycle.team_label)}</span><span class="chip">${escapeHtml(cycle.age_line)}</span></div>
+      <h3>${escapeHtml(t("coaches.national.coach", { value: headCoach }))}</h3>
+      <p>${escapeHtml(cycle.current_stage)}</p>
+      ${cycle.latest_camp ? `<p class="small-note">${escapeHtml(t("coaches.national.latest", { value: cycle.latest_camp.label }))}<br>${escapeHtml(t("coaches.national.window", { value: cycle.latest_camp.window }))}<br>${escapeHtml(cycle.latest_camp.purpose)}</p>` : ""}
+      <p class="timeline-label">${escapeHtml(t("coaches.national.staff"))}</p>
+      <ul class="mini-bullet-list">${(cycle.staff ?? []).map((group) => `<li><strong>${escapeHtml(group.role)}</strong>：${escapeHtml(group.members.join("、"))}</li>`).join("")}</ul>
+      <p class="timeline-label">${escapeHtml(t("coaches.national.sources"))}</p>
+      <div class="source-link-grid">${(cycle.source_links ?? []).map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(source.label)}</span><strong>↗</strong></a>`).join("")}</div>
+    </article>
+  `;
+}
+
+function renderCoachesPage() {
+  const development = state.overview?.china_youth_development_coaches;
+  const national = state.overview?.china_men_youth_coaches;
+  const developmentCoaches = development?.coaches ?? [];
+  const nationalCycles = national?.team_cycles ?? [];
+  const coverage = document.querySelector("#coachesCoverage");
+  const checkedAt = document.querySelector("#coachesCheckedAt");
+  const developmentGrid = document.querySelector("#developmentCoachGrid");
+  const nationalGrid = document.querySelector("#nationalCoachGrid");
+  const nationalNote = document.querySelector("#nationalCoachNote");
+  const watchlist = document.querySelector("#coachWatchlist");
+
+  coverage.textContent = t("coaches.coverage.value", {
+    development: developmentCoaches.length,
+    national: nationalCycles.length
+  });
+  checkedAt.textContent = t("coaches.coverage.checked", {
+    development: formatDate(development?.last_checked),
+    national: formatDate(national?.last_checked)
+  });
+  developmentGrid.innerHTML = developmentCoaches.map(renderDevelopmentCoachCard).join("");
+  nationalNote.textContent = national?.scope_note ?? "";
+  nationalGrid.innerHTML = nationalCycles.map(renderNationalYouthCoachCycle).join("");
+  watchlist.innerHTML = (development?.watchlist ?? []).map((item) => `
+    <article class="stack-card">
+      <h3>${escapeHtml(item.organization)}</h3>
+      <p>${escapeHtml(t("coaches.watchlist.need", { value: item.need }))}</p>
+    </article>
+  `).join("");
 }
 
 function initializePathwaysPage() {

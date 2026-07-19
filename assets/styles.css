@@ -2165,6 +2165,10 @@ tbody tr:last-child td {
   background: var(--surface-tint);
 }
 
+.coach-card .source-link-grid {
+  grid-template-columns: 1fr;
+}
+
 .source-link-grid span {
   min-width: 0;
   overflow-wrap: anywhere;
