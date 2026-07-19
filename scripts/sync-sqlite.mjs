@@ -69,9 +69,17 @@ export async function syncSqlite() {
       label TEXT NOT NULL,
       team_name TEXT NOT NULL,
       squad_status TEXT NOT NULL,
+      season TEXT,
+      competition_level TEXT,
       appearances INTEGER,
+      starts INTEGER,
+      substitute_appearances INTEGER,
       goals INTEGER,
       minutes INTEGER,
+      stats_as_of TEXT,
+      statistics_status TEXT,
+      source_checked_at TEXT,
+      statistics_sources_json TEXT NOT NULL,
       note TEXT NOT NULL,
       FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE CASCADE
     );
@@ -254,8 +262,10 @@ export async function syncSqlite() {
   `);
   const insertCompetition = db.prepare(`
     INSERT INTO player_competitions (
-      player_id, competition_id, label, team_name, squad_status, appearances, goals, minutes, note
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+      player_id, competition_id, label, team_name, squad_status, season, competition_level,
+      appearances, starts, substitute_appearances, goals, minutes, stats_as_of,
+      statistics_status, source_checked_at, statistics_sources_json, note
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertLink = db.prepare(`
     INSERT INTO player_links (
@@ -380,9 +390,17 @@ export async function syncSqlite() {
         entry.label,
         entry.team,
         entry.squad_status,
+        entry.season ?? null,
+        entry.competition_level ?? null,
         entry.appearances,
+        entry.starts ?? null,
+        entry.substitute_appearances ?? null,
         entry.goals,
         entry.minutes,
+        entry.stats_as_of ?? null,
+        entry.statistics_status ?? null,
+        entry.source_checked_at ?? null,
+        toJson(entry.statistics_sources ?? []),
         entry.note
       );
     });

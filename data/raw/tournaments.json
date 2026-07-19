@@ -477,8 +477,9 @@
     "name": "Chinese Super League 2026",
     "short_name": "CSL 2026",
     "focus_level": "reference",
+    "competition_level": "senior-top-flight",
     "status": "in-progress",
-    "last_checked": "2026-05-22",
+    "last_checked": "2026-07-19",
     "date_range": {
       "start": "2026-03-06",
       "end": "2026-11-08"
@@ -492,7 +493,9 @@
       "Qingdao West Coast FC",
       "Qingdao Hainiu FC"
     ],
-    "headline": "当前国内联赛跟踪切到 2026 中超青年样本，优先记录一线队 U21 和具备留洋经历的 U23。",
+    "headline": "2026 中国成年男子顶级职业联赛；本赛事统计只包含中超一线队联赛，不与足协杯、U21 联赛或低级别联赛合并。",
+    "statistics_scope": "senior-league-only",
+    "update_cadence": "每轮赛后更新已跟踪球员；每月末复核累计出场、首发、替补、进球和分钟。",
     "notes": [
       "当前批次按各俱乐部 2026 赛季一线队名单中的 U21 档与已进入一线队轮换的青年样本补录。",
       "同一球员若已在库内按 U17 或 U23 赛事建档，本轮不重复建第二条，而是补充 2026 中超参赛记录和标签。",
@@ -500,14 +503,151 @@
     ],
     "sources": [
       {
-        "label": "2026 Chinese Super League overview",
-        "publisher": "Wikipedia",
-        "url": "https://zh.wikipedia.org/wiki/2026%E5%B9%B4%E4%B8%AD%E5%9B%BD%E8%B6%B3%E7%90%83%E8%B6%85%E7%BA%A7%E8%81%94%E8%B5%9B"
+        "label": "2026 CFA competition calendar",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/lstz/20251120/37089.html"
       },
       {
         "label": "Sina CSL squad pages",
         "publisher": "Sina Sports",
         "url": "https://sports.sina.com.cn/csl/"
+      }
+    ]
+  },
+  {
+    "id": "china-league-one-2026",
+    "name": "China League One 2026",
+    "short_name": "中甲 2026",
+    "focus_level": "reference",
+    "competition_level": "senior-second-tier",
+    "status": "in-progress",
+    "last_checked": "2026-07-19",
+    "date_range": {
+      "start": "2026-03-01",
+      "end": "2026-12-31"
+    },
+    "focus_teams": [],
+    "headline": "2026 中国成年男子第二级职业联赛；数据与中超、中乙、足协杯及青年赛事分别统计。",
+    "statistics_scope": "senior-league-only",
+    "update_cadence": "每轮更新新增样本；每月末复核累计统计。",
+    "notes": [
+      "当前建立独立赛事边界，尚无本批青年样本挂接时保持空样本，不从其他级别借数。"
+    ],
+    "sources": [
+      {
+        "label": "2026 CFA competition calendar",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/lstz/20251120/37089.html"
+      }
+    ]
+  },
+  {
+    "id": "china-league-two-2026",
+    "name": "China League Two 2026",
+    "short_name": "中乙 2026",
+    "focus_level": "reference",
+    "competition_level": "senior-third-tier",
+    "status": "in-progress",
+    "last_checked": "2026-07-19",
+    "date_range": {
+      "start": "2026-03-01",
+      "end": "2026-12-31"
+    },
+    "focus_teams": [],
+    "headline": "2026 中国成年男子第三级职业联赛；B 队或租借球员只按实际中乙出场计入本赛事。",
+    "statistics_scope": "senior-league-only",
+    "update_cadence": "每轮更新新增样本；每月末复核累计统计。",
+    "notes": [
+      "中乙 B 队经历不得回填为母队中超一线队出场。"
+    ],
+    "sources": [
+      {
+        "label": "2026 CFA competition calendar",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/lstz/20251120/37089.html"
+      }
+    ]
+  },
+  {
+    "id": "cfa-cup-2026",
+    "name": "Chinese FA Cup 2026",
+    "short_name": "足协杯 2026",
+    "focus_level": "reference",
+    "competition_level": "senior-cup",
+    "status": "in-progress",
+    "last_checked": "2026-07-19",
+    "date_range": {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    },
+    "focus_teams": [],
+    "headline": "2026 中国足协杯成年杯赛；杯赛出场不并入任何级别联赛统计。",
+    "statistics_scope": "senior-cup-only",
+    "update_cadence": "每轮结束后更新；月末与联赛统计做赛事 ID 交叉检查。",
+    "notes": [
+      "同一球员代表同一俱乐部参加联赛和足协杯时必须保留两条独立参与记录。"
+    ],
+    "sources": [
+      {
+        "label": "CFA Cup official hub",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/zuxiebei/index.html"
+      }
+    ]
+  },
+  {
+    "id": "china-u21-league-2026",
+    "name": "Chinese U21 League 2026",
+    "short_name": "U21 联赛 2026",
+    "focus_level": "reference",
+    "competition_level": "youth-u21",
+    "status": "in-progress",
+    "last_checked": "2026-07-19",
+    "date_range": {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    },
+    "focus_teams": [],
+    "headline": "2026 中国足协 U21 青年赛事；青年队统计不计入成年一线队联赛或杯赛。",
+    "statistics_scope": "youth-u21-only",
+    "update_cadence": "每阶段或赛区轮次后更新；每月末复核跨队报名与升降组。",
+    "notes": [
+      "球员同赛季同时参加一线队和 U21 联赛时，必须按独立 competition_id 记录。"
+    ],
+    "sources": [
+      {
+        "label": "2026 CFA competition calendar",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/lstz/20251120/37089.html"
+      }
+    ]
+  },
+  {
+    "id": "china-champions-league-2026",
+    "name": "Chinese Champions League 2026",
+    "short_name": "中冠 2026",
+    "focus_level": "reference",
+    "competition_level": "senior-amateur-fourth-tier",
+    "status": "in-progress",
+    "last_checked": "2026-07-19",
+    "date_range": {
+      "start": "2026-01-01",
+      "end": "2026-12-31"
+    },
+    "focus_teams": [
+      "Beijing Pengrui Tongcheng"
+    ],
+    "headline": "2026 中国足球协会会员协会冠军联赛；现有中冠青年样本不再借用中超赛事 ID。",
+    "statistics_scope": "senior-amateur-league-only",
+    "update_cadence": "赛区阶段结束后更新；月末复核晋级与比赛记录。",
+    "notes": [
+      "中冠数据独立于中乙及以上职业联赛。"
+    ],
+    "sources": [
+      {
+        "label": "2026 CFA competition calendar",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/lstz/20251120/37089.html"
       }
     ]
   },

@@ -434,6 +434,9 @@ const UI_COPY = {
     "playerDetail.participation.empty": "当前样本还没有赛事参与记录。",
     "playerDetail.participation.statLine": "{appearances} 场 · {goals} 球 · {minutes} 分钟",
     "playerDetail.participation.statsPending": "详细出场数据待补",
+    "playerDetail.participation.scope": "统计层级：{level} · 截止 {date}",
+    "playerDetail.participation.sourceChecked": "来源核查：{date}",
+    "playerDetail.participation.partial": "部分统计",
     "playerDetail.verification.lastChecked": "最后校验：{date}",
     "playerDetail.verification.noNote": "暂无补充说明",
     "playerDetail.recent.empty": "当前还没有匹配到这名球员的结构化比赛贡献。",
@@ -935,6 +938,9 @@ const UI_COPY = {
     "playerDetail.participation.empty": "No tournament participation record has been added for this sample yet.",
     "playerDetail.participation.statLine": "{appearances} apps · {goals} goals · {minutes} mins",
     "playerDetail.participation.statsPending": "Detailed appearance data pending",
+    "playerDetail.participation.scope": "Scope: {level} · through {date}",
+    "playerDetail.participation.sourceChecked": "Sources checked: {date}",
+    "playerDetail.participation.partial": "Partial statistics",
     "playerDetail.verification.lastChecked": "Last checked: {date}",
     "playerDetail.verification.noNote": "No additional note",
     "playerDetail.recent.empty": "No structured match contribution has been matched to this player yet.",
@@ -2116,6 +2122,12 @@ function formatParticipationStatLine(entry) {
   if (entry.appearances !== null && entry.appearances !== undefined) {
     parts.push(state.language === "en" ? `${entry.appearances} apps` : `${entry.appearances} 场`);
   }
+  if (entry.starts !== null && entry.starts !== undefined) {
+    parts.push(state.language === "en" ? `${entry.starts} starts` : `${entry.starts} 次首发`);
+  }
+  if (entry.substitute_appearances !== null && entry.substitute_appearances !== undefined) {
+    parts.push(state.language === "en" ? `${entry.substitute_appearances} sub apps` : `${entry.substitute_appearances} 次替补`);
+  }
   if (entry.goals !== null && entry.goals !== undefined) {
     parts.push(state.language === "en" ? `${entry.goals} goals` : `${entry.goals} 球`);
   }
@@ -2123,6 +2135,18 @@ function formatParticipationStatLine(entry) {
     parts.push(state.language === "en" ? `${entry.minutes} mins` : `${entry.minutes} 分钟`);
   }
   return parts.join(" · ") || t("playerDetail.participation.statsPending");
+}
+
+function formatCompetitionLevel(value) {
+  const labels = {
+    "senior-top-flight": { zh: "成年顶级联赛", en: "senior top flight" },
+    "senior-second-tier": { zh: "成年第二级联赛", en: "senior second tier" },
+    "senior-third-tier": { zh: "成年第三级联赛", en: "senior third tier" },
+    "senior-cup": { zh: "成年杯赛", en: "senior cup" },
+    "youth-u21": { zh: "U21 青年联赛", en: "U21 youth league" },
+    "senior-amateur-fourth-tier": { zh: "成年业余第四级联赛", en: "senior amateur fourth tier" }
+  };
+  return labels[value]?.[state.language] ?? value ?? "-";
 }
 
 function formatDate(value) {
@@ -4874,7 +4898,16 @@ function renderPlayerDetailPage() {
                     : escapeHtml(localizeText(entry.label))
                 }</h3>
                 <p>${escapeHtml(entry.team ?? "-")} · ${escapeHtml(getLabel(SQUAD_STATUS_LABELS, entry.squad_status, entry.squad_status ?? "-"))}</p>
+                ${
+                  entry.competition_level
+                    ? `<p class="small-note">${escapeHtml(t("playerDetail.participation.scope", {
+                        level: formatCompetitionLevel(entry.competition_level),
+                        date: formatDate(entry.stats_as_of)
+                      }))}${entry.statistics_status === "partial" ? ` · ${escapeHtml(t("playerDetail.participation.partial"))}` : ""}</p>`
+                    : ""
+                }
                 <p class="small-note">${escapeHtml(formatParticipationStatLine(entry))}</p>
+                ${entry.source_checked_at ? `<p class="small-note">${escapeHtml(t("playerDetail.participation.sourceChecked", { date: formatDate(entry.source_checked_at) }))}</p>` : ""}
                 ${entry.note ? `<p class="small-note">${escapeHtml(localizeText(entry.note))}</p>` : ""}
               </article>
             `

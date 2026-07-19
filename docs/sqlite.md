@@ -232,7 +232,7 @@ erDiagram
 | --- | --- | --- |
 | `players` | `data/raw/players/*.json` 经 loader 补全 | 球员主表；多语言姓名、注册俱乐部、留洋状态、校验状态和标签压到一行。 |
 | `player_pathways` | `players[].training_pathway` | 球员青训、学校、项目和俱乐部路径，按 `stage_order` 排序。 |
-| `player_competitions` | `players[].tournament_participation` | 球员赛事报名、出场、进球、分钟和名单状态。 |
+| `player_competitions` | `players[].tournament_participation` | 球员赛事报名、赛季与层级、出场/首发/替补/进球/分钟、统计截止日、来源核查日和名单状态。 |
 | `player_links` | `players[].external_links` | 球员外部来源链接。 |
 | `player_source_layers` | `players[].source_layers` | 可选来源层级说明；把来源类型、支撑字段、confidence 和 claim 结构化。 |
 | `tournaments` | `data/raw/tournaments.json` | 当前重点赛事卡。 |
