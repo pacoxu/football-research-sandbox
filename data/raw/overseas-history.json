@@ -5,6 +5,7 @@
     "big-five-lower-tier",
     "europe-other",
     "asia-other",
+    "oceania-other",
     "americas-other"
   ],
   "market_value_peak_ranking": {
@@ -159,16 +160,19 @@
     {
       "country": "China PR",
       "status": "in-progress",
-      "verified_records": 16,
+      "verified_records": 25,
       "bucket_focus": [
         "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
         "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队落点，避免与成年一线队出场样本混算；这条线现已明确补入刘邵子洋、何小珂这类从拜仁或西班牙梯队进入欧洲培养链的案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
         "big-five-lower-tier：已把英格兰次级与第三级职业联赛路径单列出来，避免与真正五大联赛履历混在一起",
         "europe-other：已补入孙祥、董方卓这类欧洲非五大联赛体系个案，并继续记录塞尔维亚、克罗地亚、荷兰等落点；2025 观察池里，吴少聪连接土超 / 土甲 / 波兰联赛，李磊补回草蜢回流样本，西班牙与葡萄牙方向则继续跟踪杜月徵、Li Changyi、Yang Xiyu、Chen Zheyuan、Yimulan Abuduwaili 等青年路径",
-        "asia-other：暂留空位，等待 J 联赛、K 联赛与东南亚职业体系中的新样本扩充",
-        "americas-other：刘邵子洋 2025 年 9 月从拜仁二队转往 LAFC2 后，北美 MLS NEXT Pro / 预备队体系已有现役中国门将样本；后续可继续补周通奥克兰城这类大洋洲 / 北美边缘样本"
+        "asia-other：已补贾秀全 1992-1993 年大阪钢巴阶段，J.League 官方数据可核 J1 25 场、联赛杯 9 场；后续继续扩 J 联赛、K 联赛与东南亚职业体系样本",
+        "oceania-other：已补宫磊 1989/90-1996/97 年塔希提 AS Pirae 主线，单列大洋洲以避免把塔希提误归入亚洲或美洲",
+        "americas-other：刘邵子洋 2025 年 9 月从拜仁二队转往 LAFC2 后，北美 MLS NEXT Pro / 预备队体系已有现役中国门将样本；宫磊 1997-1998 年加拿大职业联赛阶段作为其大洋洲主记录的后续路径说明保留"
       ],
       "seed_examples": [
+        "Gong Lei",
+        "Jia Xiuquan",
         "Ma Mingyu",
         "Yang Chen",
         "Sun Jihai",
@@ -191,7 +195,7 @@
         "Wang Xiuhao",
         "Wei Xiangxin"
       ],
-      "notes": "中国留洋条目已从单一历史个案扩到“早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的四层结构；除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+      "notes": "中国留洋条目已从单一历史个案扩到“1980 年代末至 1990 年代初先驱 + 早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的五层结构。先驱层现纳入贾秀全在贝尔格莱德游击队与大阪钢巴的正式比赛记录，以及宫磊从塔希提 AS Pirae 延伸到加拿大和香港的跨洲路径；塔希提单列为 oceania-other，不再并入美洲边缘样本。除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
       "historical_trial_records": [
         {
           "id": "wang-dalei-inter-2006-trial",
@@ -566,6 +570,7 @@
           },
           {
             "player": "蒿俊闵",
+            "featured_record_id": "hao-junmin-schalke-2010",
             "appearances": 14,
             "goals": 0,
             "league_breakdown": [
@@ -591,6 +596,7 @@
           },
           {
             "player": "蒋光太",
+            "featured_record_id": "jiang-guangtai-everton-2014",
             "appearances": 7,
             "goals": 0,
             "league_breakdown": [
@@ -603,6 +609,7 @@
           },
           {
             "player": "李金羽",
+            "featured_record_id": "li-jinyu-nancy-1998",
             "appearances": 6,
             "goals": 0,
             "league_breakdown": [
@@ -615,6 +622,7 @@
           },
           {
             "player": "李可",
+            "featured_record_id": "li-ke-arsenal-2012",
             "appearances": 1,
             "goals": 0,
             "league_breakdown": [
@@ -640,6 +648,7 @@
           },
           {
             "player": "李玮锋",
+            "featured_record_id": "li-weifeng-everton-2002",
             "appearances": 1,
             "goals": 0,
             "league_breakdown": [
@@ -652,6 +661,7 @@
           },
           {
             "player": "张呈栋",
+            "featured_record_id": "zhang-chengdong-rayo-2015",
             "appearances": 1,
             "goals": 0,
             "league_breakdown": [
@@ -665,6 +675,100 @@
         ]
       },
       "featured_records": [
+        {
+          "id": "gong-lei-overseas-pioneer-1990",
+          "name": "Gong Lei",
+          "local_name": "宫磊",
+          "bucket": "oceania-other",
+          "league": "Tahiti Division 1 / A-League / Hong Kong First Division / Canadian Professional Soccer League",
+          "club": "AS Pirae / Toronto Lynx / South China / Toronto Olympians",
+          "season": "1989-1998",
+          "history_year_range": "1989-1998",
+          "status": "verified",
+          "appearances": 36,
+          "appearance_label": "加拿大联赛 36 场（塔希提、香港出场待补）",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "summary": "宫磊从 1989/90 赛季起效力塔希提 AS Pirae，并在 1990 年代后段先后进入加拿大 Toronto Lynx、香港 South China 和加拿大 Toronto Olympians。这条横跨大洋洲、北美与香港的长期路径早于中国球员集中进入欧洲职业联赛，现以 AS Pirae 主线归入大洋洲其他联赛。",
+          "source_links": [
+            {
+              "label": "National Football Teams：宫磊俱乐部赛季与塔希提代表队记录",
+              "url": "https://www.national-football-teams.com/player/79073/Gong_Lei.html"
+            },
+            {
+              "label": "Toronto FC：Toronto Lynx 1997 年参赛历史",
+              "url": "https://www.torontofc.ca/news/torontos-soccer-history-1987-present"
+            },
+            {
+              "label": "Wikipedia：宫磊球员履历与加拿大联赛出场",
+              "url": "https://en.wikipedia.org/wiki/Gong_Lei_(footballer)"
+            }
+          ],
+          "notes": [
+            "National Football Teams 可核 AS Pirae 1989/90 至 1996/97 的连续赛季，以及 1997 Toronto Lynx、1997/98 South China、1998 Toronto Olympians 三个后续节点。",
+            "36 场只汇总公开履历中可量化的 Toronto Lynx 22 场和 Toronto Olympians 14 场；AS Pirae 与 South China 出场数尚未取得同口径原始统计，因此不把未知值补成 0。",
+            "Toronto Olympians 阶段公开履历记为 14 场 17 球；National Football Teams 同时确认其 1998 赛季 17 球和球队联赛冠军，但该页不提供完整出场栏，故以交叉来源保留出场数。",
+            "部分资料涉及其代表塔希提出场；本条只描述俱乐部留洋路径，不据此改变项目中的中国球员研究归属。"
+          ]
+        },
+        {
+          "id": "jia-xiuquan-partizan-1987",
+          "name": "Jia Xiuquan",
+          "local_name": "贾秀全",
+          "bucket": "europe-other",
+          "league": "Yugoslav First League / Yugoslav Cup / UEFA Cup",
+          "club": "Partizan Belgrade",
+          "season": "1987-1989",
+          "history_year_range": "1987-1989",
+          "status": "verified",
+          "appearances": 19,
+          "appearance_label": "各项正式比赛 19 场（联赛 16 场）",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "summary": "贾秀全在 1987/88 与 1988/89 两个赛季效力贝尔格莱德游击队，留下南斯拉夫顶级联赛 16 场、杯赛 2 场和欧洲赛事 1 场，共 19 场正式比赛，是中国成年后卫在欧洲职业俱乐部获得正式比赛记录的早期代表。",
+          "source_links": [
+            {
+              "label": "Partizanopedia：贾秀全游击队逐赛事统计",
+              "url": "https://www.partizanopedia.rs/jiaxiuquan.html"
+            },
+            {
+              "label": "Partizanopedia：1988/89 赛季阵容统计",
+              "url": "https://www.partizanopedia.rs/8889.html"
+            }
+          ],
+          "notes": [
+            "Partizanopedia 的球员页按 1987/88、1988/89 两季拆分：联赛 10+6 场、杯赛 0+2 场、欧洲赛事 0+1 场。",
+            "19 场是各项正式比赛总数，不能与只统计顶级联赛的 16 场混写。",
+            "本条不使用“首位留欧”等排他性表述，以免与谢育新、古广明、柳海光等同期或更早路径的定义口径发生冲突。"
+          ]
+        },
+        {
+          "id": "jia-xiuquan-gamba-osaka-1992",
+          "name": "Jia Xiuquan",
+          "local_name": "贾秀全",
+          "bucket": "asia-other",
+          "league": "J.League / J.League Cup",
+          "club": "Gamba Osaka",
+          "season": "1992-1993",
+          "history_year_range": "1992-1993",
+          "status": "verified",
+          "appearances": 34,
+          "appearance_label": "J1 25 场 + 联赛杯 9 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "summary": "贾秀全随后进入大阪钢巴，在 J.League 元年 1993 赛季出战 25 场 J1，并在 1992、1993 两季合计参加 9 场联赛杯。该阶段与游击队时期拆开建档，避免把欧洲顶级联赛、欧洲杯赛和日本职业联赛混成单一统计。",
+          "source_links": [
+            {
+              "label": "J.League 官方数据站：贾秀全球员页",
+              "url": "https://data.j-league.or.jp/SFIX04/?player_id=318"
+            }
+          ],
+          "notes": [
+            "J.League 官方页确认其生日为 1963-11-09、位置为后卫、最后所属为大阪钢巴。",
+            "官方逐赛事汇总为 J1 25 场 0 球、联赛杯 9 场 0 球；联赛杯分为 1992 年 7 场和 1993 年 2 场。",
+            "本记录的 34 场是 J.League 官方口径下两类赛事之和，不包含其欧洲阶段。"
+          ]
+        },
         {
           "id": "ma-mingyu-perugia-1999",
           "name": "Ma Mingyu",
@@ -760,6 +864,180 @@
             "2002/03 赛季被莫耶斯频繁使用，说明其防守覆盖和跑动能力在英超中下游体系内具备即战力。",
             "后续伤病与位置竞争压缩了出场体量，但正式英超履历本身仍有历史意义。",
             "这条记录补上了中国成年中场进入五大联赛主轮换的稀缺案例。"
+          ]
+        },
+        {
+          "id": "hao-junmin-schalke-2010",
+          "name": "Hao Junmin",
+          "local_name": "蒿俊闵",
+          "bucket": "big-five",
+          "league": "Bundesliga",
+          "club": "Schalke 04",
+          "season": "2009-2011",
+          "status": "verified",
+          "appearances": 14,
+          "appearance_label": "德甲 14 场",
+          "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "DFB Datencenter：Junmin Hao",
+              "url": "https://datencenter.dfb.de/personen/junmin-hao/spieler"
+            },
+            {
+              "label": "Transfermarkt：Junmin Hao performance data",
+              "url": "https://www.transfermarkt.com/junmin-hao/leistungsdatendetails/spieler/53914"
+            }
+          ],
+          "summary": "蒿俊闵在 2010 年冬窗加盟沙尔克 04，并在 2009/10、2010/11 两个赛季累计完成 14 场德甲正式出场。这里仅统计德国顶级联赛，不把德国杯和欧冠出场并入五大联赛数字。",
+          "notes": [
+            "DFB Datencenter 将其德甲记录列为 14 场，时间范围为 2010 年 2 月 21 日至 2011 年 4 月 23 日。",
+            "沙尔克时期还包含德国杯和 UEFA Champions League 比赛，但这些赛事不计入本 checklist 的顶级联赛口径。",
+            "记录采用球员当时的国际注册姓名 Hao Junmin，并与中文常用名蒿俊闵对应。"
+          ]
+        },
+        {
+          "id": "jiang-guangtai-everton-2014",
+          "name": "Tyias Browning",
+          "local_name": "蒋光太",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Everton",
+          "season": "2014-2016",
+          "status": "verified",
+          "appearances": 7,
+          "appearance_label": "英超 7 场",
+          "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "Premier League：Tyias Browning profile",
+              "url": "https://www.premierleague.com/en/players/149468/tyias-browning/overview"
+            },
+            {
+              "label": "Everton：Tyias Browning player profile",
+              "url": "https://www.evertonfc.com/players/4366/tyias-browning"
+            }
+          ],
+          "summary": "蒋光太以 Tyias Browning 的注册姓名代表埃弗顿完成 7 场英超正式出场，分布在 2014/15 和 2015/16 赛季。这里不计入联赛杯、足总杯、欧战或 Everton U21 / Premier League 2 比赛。",
+          "notes": [
+            "英超官方历史档案仍以 Tyias Browning 和当时的英格兰国籍标签展示该段经历；本站用 local_name 关联其后来使用的中文名蒋光太。",
+            "埃弗顿梯队比赛体量明显高于一线队英超出场，但梯队数据不属于五大联赛顶级联赛 checklist。",
+            "2019 年离开埃弗顿后的中国联赛经历不计入这条欧洲顶级联赛记录。"
+          ]
+        },
+        {
+          "id": "li-jinyu-nancy-1998",
+          "name": "Li Jinyu",
+          "local_name": "李金羽",
+          "bucket": "big-five",
+          "league": "Ligue 1",
+          "club": "AS Nancy Lorraine",
+          "season": "1998-1999",
+          "status": "verified",
+          "appearances": 6,
+          "appearance_label": "法甲 6 场",
+          "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "AS Nancy Lorraine：历史球员 LI Jin-Yu",
+              "url": "https://www.asnl.net/157/club_histoire_joueurs_l"
+            },
+            {
+              "label": "WorldFootball：Li Jinyu club matches",
+              "url": "https://www.worldfootball.net/player_summary/jinyu-li/2/"
+            }
+          ],
+          "summary": "李金羽在 1998/99 赛季效力南锡，俱乐部官方历史档案记录其一线队出场 6 次，其中只有一次首发。该阶段对应法甲顶级联赛正式出场，未将热身赛和预备队比赛计入。",
+          "notes": [
+            "南锡官方档案明确标注 1998 至 1999 年、6 场，并说明唯一一次首发是在主场对巴斯蒂亚。",
+            "俱乐部资料将他列为首位签约法国俱乐部的中国球员；这是一项历史说明，不改变出场统计口径。",
+            "1999 年夏天返回辽宁后的国内联赛数据不计入本记录。"
+          ]
+        },
+        {
+          "id": "li-ke-arsenal-2012",
+          "name": "Nico Yennaris",
+          "local_name": "李可",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Arsenal",
+          "season": "2011-2012",
+          "status": "verified",
+          "appearances": 1,
+          "appearance_label": "英超 1 场",
+          "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "Premier League：Nico Yennaris profile",
+              "url": "https://www.premierleague.com/en/players/86364/nico-yennaris/overview"
+            },
+            {
+              "label": "Arsenal annual report 2011/12",
+              "url": "https://www.arsenal.com/sites/default/files/documents/Arsenal_Holdings_plc_-_Annual_11_12.pdf"
+            }
+          ],
+          "summary": "李可以 Nico Yennaris 的注册姓名在 2011/12 赛季代表阿森纳完成 1 场英超出场。阿森纳该季还在联赛杯和足总杯使用过他，但本记录只计算 Premier League 正式比赛。",
+          "notes": [
+            "英超官方历史档案以 Nico Yennaris 和当时的英格兰国籍标签保存这次出场；local_name 用于关联其后来代表中国队时使用的名字李可。",
+            "阿森纳 2011/12 年报确认其该季进入联赛杯、足总杯和英超一线队比赛名单，杯赛不并入本 checklist。",
+            "其后效力 Brentford 的 Championship 和 League One 出场属于英格兰次级联赛，单列而不计入五大联赛顶级联赛总数。"
+          ]
+        },
+        {
+          "id": "li-weifeng-everton-2002",
+          "name": "Li Weifeng",
+          "local_name": "李玮锋",
+          "bucket": "big-five",
+          "league": "Premier League",
+          "club": "Everton",
+          "season": "2002-2003",
+          "status": "verified",
+          "appearances": 1,
+          "appearance_label": "英超 1 场",
+          "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "Premier League：Li Weifeng profile",
+              "url": "https://www.premierleague.com/en/players/13105/li-weifeng/overview"
+            },
+            {
+              "label": "Everton Heritage Society：Everton and China",
+              "url": "https://efcheritagesociety.com/wp-content/uploads/2024/01/Everton-and-China-version-3.pdf"
+            }
+          ],
+          "summary": "李玮锋在 2002/03 赛季租借埃弗顿期间完成 1 场英超正式出场。该数字不包含预备队、训练赛或代表中国国家队参加的比赛。",
+          "notes": [
+            "Premier League 官方档案保留其埃弗顿球员页面，checklist 采用 1 场顶级联赛出场口径。",
+            "其埃弗顿阶段属于短期租借，未延伸成跨赛季一线队轮换，因此不把报名、替补未上场或预备队经历写成正式出场。",
+            "中文姓名统一使用李玮锋，来源中的 Li Weifeng、李玮峰等写法只作检索别名。"
+          ]
+        },
+        {
+          "id": "zhang-chengdong-rayo-2015",
+          "name": "Zhang Chengdong",
+          "local_name": "张呈栋",
+          "bucket": "big-five",
+          "league": "LaLiga",
+          "club": "Rayo Vallecano",
+          "season": "2015-2016",
+          "status": "verified",
+          "appearances": 1,
+          "appearance_label": "西甲 1 场",
+          "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "Rayo Vallecano：Presentación oficial de Zhang Chengdong",
+              "url": "https://www.rayovallecano.es/noticias/presentacion-oficial-de-zhang-chengdong"
+            },
+            {
+              "label": "Mundo Deportivo：El fugaz paso de Zhang Chengdong",
+              "url": "https://www.mundodeportivo.com/futbol/laliga/20181230/453824100165/zhang-chengdong-rayo-vallecano-historias-liga.html"
+            }
+          ],
+          "summary": "张呈栋在 2015/16 赛季租借巴列卡诺期间完成 1 场西甲正式出场，共 9 分钟。国王杯出场和此前葡萄牙联赛经历不计入西甲 checklist。",
+          "notes": [
+            "巴列卡诺官方发布确认其 2015/16 赛季加盟，并将其描述为首位进入西班牙顶级联赛的中国球员。",
+            "其唯一西甲出场为 2015 年 12 月对马德里竞技的替补登场；媒体回顾记录为 9 分钟。",
+            "租借期内国王杯累计时间不并入 LaLiga 顶级联赛出场。"
           ]
         },
         {

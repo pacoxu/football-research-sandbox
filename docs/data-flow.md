@@ -71,7 +71,7 @@ Pages 构建会重新运行 `prepare-data`，然后把以下内容复制到 `dis
 - 让 PR review 能看到 raw 修改对站点聚合结果的影响。
 - GitHub Pages 构建时会重新生成，避免部署使用过期聚合。
 
-loader 也承担少量集中数据的派生合并。例如中国 U20 2025 的逐人赛事统计集中维护在 `tournament-archive.json`，再按 `competition_id + player_id` 合并到球员的 `tournament_participation`。这样四份逐场 Match Summary 只需维护一套统计和来源，生成后的 `data/site/players.json` 仍提供完整 appearances、goals、minutes 和 roster status。
+loader 也承担少量集中数据的派生合并。例如中国 U20 2025、中国 U23 2026 的逐人赛事统计集中维护在 `tournament-archive.json`，再按 `competition_id + player_id` 合并到球员的 `tournament_participation`。这样逐场阵容和事件只需维护一套统计和来源，生成后的 `data/site/players.json` 仍提供完整 appearances、starts、substitute appearances、goals、minutes、cards 和 roster status。
 
 如果只改文档，不需要重新生成 `data/site/**`。如果改了 `data/raw/**`、`scripts/lib/data-loader.mjs` 或 `scripts/build-site-data.mjs`，应运行 `npm run build-data` 并 review `data/site/**` diff。
 

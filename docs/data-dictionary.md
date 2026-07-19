@@ -130,14 +130,18 @@
 | `roster_status` | 可选的细分边界，例如实际赛事名单、赛前替补、被替换或后续集训；具体枚举由赛事 archive 的 `roster_boundary` 说明。 |
 | `season` | 统计赛季；国内 2026 分赛事统计固定为 `2026`。 |
 | `competition_level` | 赛事层级，例如成年顶级联赛、成年杯赛或 U21 青年联赛；不得跨层级汇总。 |
-| `appearances`、`starts`、`substitute_appearances`、`goals`、`minutes` | 出场、首发、替补出场、进球、分钟；未完成逐场复核时用 `null`，不得猜测。 |
+| `appearances`、`starts`、`substitute_appearances` | 出场、首发、替补出场；已确认未出场写 `0`，未知或未完成逐场复核才用 `null`。 |
+| `goals`、`minutes` | 正式比赛进球和标准分钟；点球大战进球不计入，是否计补时由赛事统计说明约定。 |
+| `yellow_cards`、`red_cards` | 黄牌、红牌汇总；已确认无牌写 `0`。 |
 | `stats_as_of` | 本条累计统计的比赛截止日。 |
 | `statistics_status` | `complete` 表示截止日内逐场完整，`partial` 表示只有部分字段或比赛得到确认。 |
 | `source_checked_at` | 统计来源最后核查日。 |
 | `statistics_sources` | 直接支撑统计的比赛报告或统计页 URL 数组。 |
 | `note` | 统计范围和来源说明。 |
 
-部分赛事会在 `tournament-archive` 集中维护逐人统计，并由 loader 合并到此字段。中国 U20 2025 即采用这一方式，以避免跨多个球员文件重复维护四场 Match Summary 的汇总数字。
+部分赛事会在 `tournament-archive` 集中维护逐人统计，并由 loader 合并到此字段。中国 U20 2025 和中国 U23 2026 均采用这一方式，避免在每个球员文件中重复维护逐场汇总。
+
+`tournament-archive.china_matches[].china_lineup` 保存首发和替补。替补项可包含 `minute`、`display_minute`、`replaced_player_id` 和 `replaced_player`；未使用替补以 `status: "unused"` 明示。`china_cards` 的事件类型只使用 `yellow`、`second-yellow-red`、`straight-red`，每条必须包含球员 ID、球员名和分钟。
 
 ## `external_links`
 
@@ -198,17 +202,21 @@
 
 `china_status` 允许 `qualification-cancelled`，用于资格路径或赛事因取消而中止的届次。旧届官方资料不足时，可用 RSSSF、赛事技术报告或 Wikipedia 作二级交叉来源，但需保留来源类型和核查日期。
 
+1983—2005 中国 U16/U17/U20 世界赛的 `china_squad[]` 固定包含 `appearances`、`starts`、`substitute_appearances`、`minutes` 和 `goals`。`minute_status.available_fields` 与 `missing_fields` 必须完整且互斥地声明五个字段的可用性：已核实值使用非负整数，资料不足的字段必须是 `null`，不得按比赛场次、首发阵容或标准比赛时长推算。`minute_status.status` 为 `partial` 时必须解释来源边界；只有五项均已从可靠逐场或技术报告核实时才能写 `complete`。
+
 ## 留洋历史
 
 `data/raw/overseas-history.json` 由留洋分层、国家记录和独立试训记录组成：
 
 | 字段 | 含义 |
 | --- | --- |
-| `bucket_definition` | 留洋层级定义，例如五大联赛、欧洲其他、亚洲其他、美洲其他等。 |
+| `bucket_definition` | 留洋层级定义，例如五大联赛、欧洲其他、亚洲其他、大洋洲其他、美洲其他等。 |
 | `countries` | 各国家/地区的留洋摘要、featured records 和 checklist。 |
 | `countries[].historical_trial_records` | 有可靠来源的历史海外训练/试训事件；必须明确 `signed`、`registration_changed`，不得混入正式留洋人数。 |
 
 留洋历史记录要区分正式一线队联赛、杯赛、梯队、低级别联赛和纯青训经历，不混算。
+
+`big_five_appearance_checklist.entries[].featured_record_id` 必须指向同一国家的 `featured_records[].id`。checklist 的 `appearances` 和 `goals` 只统计五大联赛顶级联赛正式比赛；featured record 可在 `notes` 中说明杯赛、梯队或低级别经历，但不得并入该数字。
 
 历史试训记录使用 `historical-trial-only`，只说明曾发生训练或试训，不代表签约、注册或正式比赛经历。若俱乐部与国内报道对“训练/试训”用词不同，应在 `summary` 保留口径差异。
 

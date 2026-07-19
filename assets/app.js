@@ -1331,6 +1331,7 @@ const BUCKET_LABELS = {
   "big-five-lower-tier": { zh: "五大联赛国家低级别联赛", en: "Lower-tier league in a big five country" },
   "europe-other": { zh: "欧洲其他", en: "Other Europe" },
   "asia-other": { zh: "亚洲其他", en: "Other Asia" },
+  "oceania-other": { zh: "大洋洲其他", en: "Other Oceania" },
   "americas-other": { zh: "美洲其他", en: "Other Americas" }
 };
 
@@ -2135,6 +2136,12 @@ function formatParticipationStatLine(entry) {
   if (entry.minutes !== null && entry.minutes !== undefined) {
     parts.push(state.language === "en" ? `${entry.minutes} mins` : `${entry.minutes} 分钟`);
   }
+  if (entry.yellow_cards !== null && entry.yellow_cards !== undefined) {
+    parts.push(state.language === "en" ? `${entry.yellow_cards} yellow` : `${entry.yellow_cards} 黄牌`);
+  }
+  if (entry.red_cards !== null && entry.red_cards !== undefined) {
+    parts.push(state.language === "en" ? `${entry.red_cards} red` : `${entry.red_cards} 红牌`);
+  }
   return parts.join(" · ") || t("playerDetail.participation.statsPending");
 }
 
@@ -2880,8 +2887,13 @@ function renderContributionItem(entry) {
 }
 
 function formatLineupSubstituteNote(item) {
+  const replacement = item.replaced_player
+    ? state.language === "en"
+      ? `, replaced ${getPlayerReferenceLabel({ player_id: item.replaced_player_id, player: item.replaced_player })}`
+      : `，换下 ${getPlayerReferenceLabel({ player_id: item.replaced_player_id, player: item.replaced_player })}`
+    : "";
   if (item.minute) {
-    return t("tournaments.archive.substituteMinute", { minute: item.minute });
+    return `${t("tournaments.archive.substituteMinute", { minute: item.display_minute ?? item.minute })}${replacement}`;
   }
   if (item.status === "unused") {
     return t("tournaments.archive.substituteUnused");
@@ -2930,6 +2942,28 @@ function renderStartingLineup(match, options = {}) {
   `;
 }
 
+function renderChinaCards(match) {
+  const cards = match.china_cards ?? [];
+  if (cards.length === 0) {
+    return "";
+  }
+
+  const labels = {
+    yellow: { zh: "黄牌", en: "Yellow card" },
+    "second-yellow-red": { zh: "两黄变红", en: "Second-yellow red" },
+    "straight-red": { zh: "直接红牌", en: "Straight red" }
+  };
+
+  return `
+    <p class="small-note">${escapeHtml(state.language === "en" ? "China cards" : "中国队牌事件")}</p>
+    <ul class="mini-bullet-list">
+      ${cards
+        .map((card) => `<li>${escapeHtml(localizeText(labels[card.type], card.type))}: ${renderPlayerReference(card)}${card.minute ? ` ${escapeHtml(card.minute)}'` : ""}</li>`)
+        .join("")}
+    </ul>
+  `;
+}
+
 function formatTournamentMatchStatLabel(key) {
   return getLabel(MATCH_STAT_LABELS, key, key);
 }
@@ -2974,6 +3008,7 @@ function renderTournamentMatchContent(match, options = {}) {
     <p>${escapeHtml(t("tournaments.archive.matchLabel", { opponent: formatCountryName(match.opponent), score: buildScore(match), result: getLabel(MATCH_RESULT_LABELS, match.result, match.result) }))}</p>
     ${match.note ? `<p class="small-note">${escapeHtml(localizeText(match.note))}</p>` : ""}
     ${contributions}
+    ${renderChinaCards(match)}
     ${renderTournamentMatchStats(match)}
     ${renderStartingLineup(match, options)}
   `;
@@ -3016,8 +3051,13 @@ function renderTournamentKeyPlayerCard(entry) {
 
 function getTournamentSquadEntries(tournament) {
   const explicitSquad = tournament?.china_squad ?? [];
+  const statisticsByPlayer = new Map(
+    (tournament?.china_player_statistics?.players ?? []).map((row) => [row.player_id, row])
+  );
   if (explicitSquad.length > 0) {
-    return [...explicitSquad].sort((left, right) => (left.squad_number ?? 999) - (right.squad_number ?? 999));
+    return explicitSquad
+      .map((entry) => ({ ...entry, tournament_statistics: statisticsByPlayer.get(entry.player_id) }))
+      .sort((left, right) => (left.squad_number ?? 999) - (right.squad_number ?? 999));
   }
 
   return state.enrichedPlayers
@@ -3026,7 +3066,11 @@ function getTournamentSquadEntries(tournament) {
         player.country === "China PR" &&
         (player.tournament_participation ?? []).some((entry) => entry.competition_id === tournament?.id)
     )
-    .map((player) => ({ player_id: player.id, player: player.name }))
+    .map((player) => ({
+      player_id: player.id,
+      player: player.name,
+      tournament_statistics: statisticsByPlayer.get(player.id)
+    }))
     .sort((left, right) => getPlayerReferenceLabel(left).localeCompare(getPlayerReferenceLabel(right), getSortLocale()));
 }
 
@@ -3048,6 +3092,7 @@ function renderTournamentSquadCard(entry) {
       <h3>${renderPlayerReference(entry)}</h3>
       <p>${escapeHtml(position)}</p>
       <p class="small-note">${escapeHtml(formatClubName(club))}</p>
+      ${entry.tournament_statistics ? `<p class="small-note">${escapeHtml(formatParticipationStatLine(entry.tournament_statistics))}</p>` : ""}
       ${note ? `<p class="small-note">${escapeHtml(note)}</p>` : ""}
     </article>
   `;

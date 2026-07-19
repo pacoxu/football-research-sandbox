@@ -195,9 +195,17 @@ function applyTournamentStatistics(players, tournamentArchive = []) {
         appearances: row.appearances,
         goals: row.goals,
         minutes: row.minutes,
+        ...(row.starts !== undefined ? { starts: row.starts } : {}),
+        ...(row.substitute_appearances !== undefined
+          ? { substitute_appearances: row.substitute_appearances }
+          : {}),
+        ...(row.yellow_cards !== undefined ? { yellow_cards: row.yellow_cards } : {}),
+        ...(row.red_cards !== undefined ? { red_cards: row.red_cards } : {}),
         note:
           row.note ??
-          `官方逐场 Match Summary 汇总：出场 ${row.appearances} 次、${row.minutes} 分钟、${row.goals} 球；分钟按 90 分钟制、HT=45、补时不另加。`
+          (row.substitute_appearances !== undefined
+            ? `逐场比赛汇总：出场 ${row.appearances} 次、首发 ${row.starts} 次、替补 ${row.substitute_appearances} 次、${row.minutes} 分钟、${row.goals} 球、${row.yellow_cards} 黄牌、${row.red_cards} 红牌；分钟不计补时。`
+            : `官方逐场 Match Summary 汇总：出场 ${row.appearances} 次、${row.minutes} 分钟、${row.goals} 球；分钟按 90 分钟制、HT=45、补时不另加。`)
       };
     })
   }));
