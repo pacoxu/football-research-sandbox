@@ -262,6 +262,8 @@ erDiagram
 | `projects` | `data/raw/projects.json` | 专题项目卡。 |
 | `overseas_buckets` | `data/raw/overseas-history.json` 的国家层 | 留洋国家线、bucket 说明、代表样本数量和备注。 |
 | `overseas_records` | `countries[].featured_records` | 留洋精选记录；不是官方全量人数表。 |
+| `china_naturalized_players` | `countries[China PR].naturalized_players.profiles` | 中国归化球员主档、国家队状态、来源与专题核查日期；不并入当前留洋人数。 |
+| `china_naturalized_career_segments` | `naturalized_players.profiles[].career_segments` | 归化前后海外职业路径，按球员和顺序拆行。 |
 | `dossiers` | `data/raw/dossiers.json` | 深度专题档案。 |
 | `tournament_archive` | `data/raw/tournament-archive.json` | 历史赛事归档和中国队相关结果。 |
 | `youth_development_systems` | `data/raw/youth-development-systems.json` | 日韩体系稳定结构、年度快照、竞赛 ID 和官方来源。 |

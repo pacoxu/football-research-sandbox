@@ -688,6 +688,23 @@ const UI_COPY = {
     "overseas.countryNotes.sources": "来源",
     "overseas.status.title": "中国留洋状态口径",
     "overseas.status.note": "当前留洋总数只统计“当前有效注册”；待生效、试训观察、已回流和仅历史不会计入当前人数。",
+    "overseas.naturalized.eyebrow": "Naturalized Players",
+    "overseas.naturalized.title": "中国归化球员与海外履历",
+    "overseas.naturalized.meta": "{count} 人 · 核验至 {date}",
+    "overseas.naturalized.empty": "当前还没有可展示的中国归化球员海外履历。",
+    "overseas.naturalized.scope": "收录口径",
+    "overseas.naturalized.boundary": "统计边界",
+    "overseas.naturalized.career": "海外职业路径",
+    "overseas.naturalized.sources": "来源",
+    "overseas.naturalized.birthCountry": "出生地：{country}",
+    "overseas.naturalized.position": "位置：{position}",
+    "overseas.naturalized.path.heritage": "血缘入籍",
+    "overseas.naturalized.path.non-heritage": "非血缘入籍",
+    "overseas.naturalized.status.senior-capped": "中国成年队已出场",
+    "overseas.naturalized.status.senior-squad": "中国成年队已征召",
+    "overseas.naturalized.phase.pre-naturalization": "归化前",
+    "overseas.naturalized.phase.post-naturalization": "归化后海外阶段",
+    "overseas.naturalized.phase.pre-naturalization-and-return": "原成长体系及回归阶段",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "五大联赛亚洲教练",
     "overseas.coaches.empty": "当前还没有可展示的五大联赛亚洲教练记录。",
@@ -1349,6 +1366,23 @@ const UI_COPY = {
     "overseas.countryNotes.sources": "Sources",
     "overseas.status.title": "China overseas status scope",
     "overseas.status.note": "The current total only counts active registrations. Pending moves, trial watches, returned players and historical-only entities are excluded.",
+    "overseas.naturalized.eyebrow": "Naturalized Players",
+    "overseas.naturalized.title": "China PR naturalized players and overseas careers",
+    "overseas.naturalized.meta": "{count} players · checked through {date}",
+    "overseas.naturalized.empty": "No verified overseas career of a China PR naturalized player is available yet.",
+    "overseas.naturalized.scope": "Scope",
+    "overseas.naturalized.boundary": "Boundary",
+    "overseas.naturalized.career": "Overseas career path",
+    "overseas.naturalized.sources": "Sources",
+    "overseas.naturalized.birthCountry": "Born in {country}",
+    "overseas.naturalized.position": "Position: {position}",
+    "overseas.naturalized.path.heritage": "Heritage naturalization",
+    "overseas.naturalized.path.non-heritage": "Non-heritage naturalization",
+    "overseas.naturalized.status.senior-capped": "China PR senior appearance",
+    "overseas.naturalized.status.senior-squad": "China PR senior call-up",
+    "overseas.naturalized.phase.pre-naturalization": "Before naturalization",
+    "overseas.naturalized.phase.post-naturalization": "Overseas after naturalization",
+    "overseas.naturalized.phase.pre-naturalization-and-return": "Original pathway and return",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "Asian head coaches in the big five leagues",
     "overseas.coaches.empty": "No big-five Asian coach record is available yet.",
@@ -4205,7 +4239,8 @@ function getOverseasCountryMap() {
       verifiedRecords: entry.verified_records,
       notes: entry.notes,
       bucketFocus: entry.bucket_focus,
-      specialLists: entry.special_lists ?? []
+      specialLists: entry.special_lists ?? [],
+      naturalizedPlayers: entry.naturalized_players ?? null
     });
   }
 
@@ -4220,7 +4255,8 @@ function getOverseasCountryMap() {
         verifiedRecords: 0,
         notes: "",
         bucketFocus: [],
-        specialLists: []
+        specialLists: [],
+        naturalizedPlayers: null
       });
     }
     map.get(item.country).currentCount += 1;
@@ -7317,6 +7353,11 @@ function renderOverseasPage() {
   const historyMeta = document.querySelector("#overseasHistoryMeta");
   const historyCards = document.querySelector("#overseasHistoryCards");
   const historyEmptyState = document.querySelector("#overseasHistoryEmptyState");
+  const naturalizedSection = document.querySelector("#chinaNaturalizedPlayersSection");
+  const naturalizedMeta = document.querySelector("#chinaNaturalizedPlayersMeta");
+  const naturalizedScope = document.querySelector("#chinaNaturalizedPlayersScope");
+  const naturalizedCards = document.querySelector("#chinaNaturalizedPlayersCards");
+  const naturalizedEmptyState = document.querySelector("#chinaNaturalizedPlayersEmptyState");
 
   const countryMap = getOverseasCountryMap();
   const filteredCurrent = getVisibleOverseasSummaryItems();
@@ -7454,7 +7495,66 @@ function renderOverseasPage() {
   historyCards.innerHTML = filteredHistory.map(renderHistoricalRecordCard).join("");
   historyEmptyState.hidden = filteredHistory.length > 0;
 
+  const naturalizedPlayers = countryMap.find((entry) => entry.country === "China PR")?.naturalizedPlayers;
+  const naturalizedProfiles = naturalizedPlayers?.profiles ?? [];
+  if (naturalizedSection) {
+    naturalizedSection.hidden = naturalizedProfiles.length === 0;
+  }
+  if (naturalizedMeta) {
+    naturalizedMeta.textContent = t("overseas.naturalized.meta", {
+      count: naturalizedProfiles.length,
+      date: formatDate(naturalizedPlayers?.checked_at)
+    });
+  }
+  if (naturalizedScope) {
+    naturalizedScope.innerHTML = `
+      <strong>${escapeHtml(t("overseas.naturalized.scope"))}：</strong>${escapeHtml(localizeText(naturalizedPlayers?.scope))}
+      <br>
+      <strong>${escapeHtml(t("overseas.naturalized.boundary"))}：</strong>${escapeHtml(localizeText(naturalizedPlayers?.boundary_note))}
+    `;
+  }
+  if (naturalizedCards) {
+    naturalizedCards.innerHTML = naturalizedProfiles.map(renderChinaNaturalizedPlayerCard).join("");
+  }
+  if (naturalizedEmptyState) {
+    naturalizedEmptyState.hidden = naturalizedProfiles.length > 0;
+  }
+
   renderBigFiveAsianCoaches();
+}
+
+function renderChinaNaturalizedPlayerCard(profile) {
+  const formerNames = (profile.former_registration_names ?? []).filter(
+    (name) => name && name !== profile.name
+  );
+  return `
+    <article class="story-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t(`overseas.naturalized.status.${profile.china_team_status}`))}</span>
+        <span class="chip">${escapeHtml(t(`overseas.naturalized.path.${profile.naturalization_path}`))}</span>
+      </div>
+      <h3>${escapeHtml(profile.china_name)} / ${escapeHtml(profile.name)}</h3>
+      ${formerNames.length > 0 ? `<p class="small-note">${escapeHtml(formerNames.join(" · "))}</p>` : ""}
+      <p class="small-note">${escapeHtml(t("overseas.naturalized.birthCountry", { country: formatCountryName(profile.birth_country) }))} · ${escapeHtml(t("overseas.naturalized.position", { position: profile.position }))}</p>
+      <p>${escapeHtml(localizeText(profile.summary))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.naturalized.career"))}</p>
+      <ul class="mini-bullet-list coach-record-list">
+        ${(profile.career_segments ?? [])
+          .map(
+            (segment) => `
+              <li>
+                <strong>${escapeHtml(segment.period)} · ${escapeHtml(t(`overseas.naturalized.phase.${segment.phase}`))}</strong><br>
+                <span>${escapeHtml(segment.country)} · ${escapeHtml((segment.clubs ?? []).join(" → "))}</span><br>
+                <span class="small-note">${escapeHtml(localizeText(segment.summary))}</span>
+              </li>
+            `
+          )
+          .join("")}
+      </ul>
+      <p class="timeline-label">${escapeHtml(t("overseas.naturalized.sources"))}</p>
+      <div class="pill-row">${renderLinkPills(profile.source_links ?? [])}</div>
+    </article>
+  `;
 }
 
 function renderHistoricalRecordCard(record) {

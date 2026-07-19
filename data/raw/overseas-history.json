@@ -196,6 +196,184 @@
         "Wei Xiangxin"
       ],
       "notes": "中国留洋条目已从单一历史个案扩到“1980 年代末至 1990 年代初先驱 + 早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的五层结构。先驱层现纳入贾秀全在贝尔格莱德游击队与大阪钢巴的正式比赛记录，以及宫磊从塔希提 AS Pirae 延伸到加拿大和香港的跨洲路径；塔希提单列为 oceania-other，不再并入美洲边缘样本。除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+      "naturalized_players": {
+        "checked_at": "2026-07-20",
+        "scope": {
+          "zh": "主名单收录已代表中国成年国家队出场，或已获中国足协成年国家队正式征召且具有可核验海外职业履历的入籍球员。",
+          "en": "The primary list covers naturalized players with verified overseas professional histories who have either appeared for China PR's senior team or received an official senior-team call-up from the CFA."
+        },
+        "boundary_note": {
+          "zh": "归化前在出生国或原培养体系的履历，与从中国俱乐部出发的传统“留洋”不是同一统计口径。德尔加多、萧涛涛等仅有入籍或俱乐部注册事实、但尚无中国成年队出场或正式征召证据的球员暂不进入主名单。",
+          "en": "A pre-naturalization career in a birth country or original development system is not the same metric as a conventional move abroad from a Chinese club. Citizenship-only or club-registration cases without verified China PR senior appearances or call-ups, such as Pedro Delgado and Roberto Siucho, remain outside the primary count."
+        },
+        "profiles": [
+          {
+            "id": "ai-kesen-elkeson",
+            "name": "Elkeson de Oliveira Cardoso",
+            "china_name": "艾克森",
+            "former_registration_names": ["Elkeson"],
+            "birth_country": "Brazil",
+            "position": "Forward",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的前锋，归化前在维多利亚和博塔弗戈效力；2013 年进入中国联赛，代表中国成年队出场后又曾回到巴西加盟格雷米奥。", "en": "A Brazil-born forward who played for Vitória and Botafogo before moving to China in 2013; after becoming a China PR senior international he later returned to Brazil with Grêmio."},
+            "career_segments": [
+              {"period": "2009-2012", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Vitória", "Botafogo"], "summary": {"zh": "归化前巴西职业阶段。", "en": "Brazilian professional career before naturalization."}},
+              {"period": "2022", "phase": "post-naturalization", "country": "Brazil", "clubs": ["Grêmio"], "summary": {"zh": "取得中国国籍并代表中国队后回到巴西联赛。", "en": "Returned to Brazil after acquiring Chinese citizenship and representing China PR."}}
+            ],
+            "source_links": [
+              {"label": "AFC：Elkeson / 艾克森代表中国队", "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/elkeson_i_want_to_play_my_part_for_china_pr.html"},
+              {"label": "Grêmio：官宣签下 Elkeson 并回顾职业路径", "url": "https://gremio.net/news/detalhes/25159/gremio-anuncia-o-atacante-elkeson-como-novo-reforco-"}
+            ]
+          },
+          {
+            "id": "alan-carvalho",
+            "name": "Alan Douglas Borges de Carvalho",
+            "china_name": "阿兰",
+            "former_registration_names": ["Alan"],
+            "birth_country": "Brazil",
+            "position": "Forward",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的前锋，从弗鲁米嫩塞转往奥地利萨尔茨堡并参加欧战，2015 年进入中国联赛；归化并代表中国队后曾回到弗鲁米嫩塞。", "en": "A Brazil-born forward who moved from Fluminense to Salzburg and played in UEFA competition before joining the Chinese league in 2015; he later returned to Fluminense after representing China PR."},
+            "career_segments": [
+              {"period": "2008-2010", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Fluminense"], "summary": {"zh": "巴西出道阶段。", "en": "Early professional career in Brazil."}},
+              {"period": "2010-2015", "phase": "pre-naturalization", "country": "Austria", "clubs": ["Red Bull Salzburg"], "summary": {"zh": "奥地利联赛及欧战阶段。", "en": "Austrian league and UEFA competition period."}},
+              {"period": "2022-2023", "phase": "post-naturalization", "country": "Brazil", "clubs": ["Fluminense"], "summary": {"zh": "代表中国队后回到巴西俱乐部。", "en": "Returned to a Brazilian club after representing China PR."}}
+            ],
+            "source_links": [
+              {"label": "中国足协：2024 年国家队名单（阿兰）", "url": "https://www.thecfa.cn/nanzuwqmd/20240522/34466.html"},
+              {"label": "UEFA：Alan 从萨尔茨堡转会中国", "url": "https://www.uefa.com/uefaeuropaleague/news/021d-0e8f00039c95-1845f1d1a307-1000--top-scorer-alan-swaps-salzburg-for-china/"},
+              {"label": "Fluminense：官宣 Alan 回归", "url": "https://www.fluminense.com.br/noticia/fluminense-acerta-a-contratacao-do-atacante-alan"}
+            ]
+          },
+          {
+            "id": "luo-guofu-aloisio",
+            "name": "Aloísio dos Santos Gonçalves",
+            "china_name": "洛国富",
+            "former_registration_names": ["Aloísio"],
+            "birth_country": "Brazil",
+            "position": "Forward",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的前锋，归化前长期在巴西联赛效力，2014 年进入中国联赛；代表中国队参加世预赛后返回巴西加盟米内罗美洲。", "en": "A Brazil-born forward with a substantial Brazilian league career before moving to China in 2014; after appearing for China PR in World Cup qualifying he returned to Brazil with América Mineiro."},
+            "career_segments": [
+              {"period": "2006-2013", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Grêmio", "Figueirense", "São Paulo"], "summary": {"zh": "归化前巴西职业阶段。", "en": "Brazilian professional career before naturalization."}},
+              {"period": "2022-2023", "phase": "post-naturalization", "country": "Brazil", "clubs": ["América Mineiro"], "summary": {"zh": "代表中国队后返回巴西联赛。", "en": "Returned to the Brazilian league after representing China PR."}}
+            ],
+            "source_links": [
+              {"label": "AFC：洛国富作为中国国脚离开广州队", "url": "https://www.the-afc.com/en/more/domestic_leagues/news/www.the-afc.com/en/more/domestic_leagues/news/luo_guofu_leaves_guangzhou_fc.html"},
+              {"label": "AFC：世预赛中国队比赛名单（洛国富）", "url": "https://stats.the-afc.com/match_report/20889"},
+              {"label": "América：Aloísio 南美杯进球记录", "url": "https://www.americafc.com.br/em-casa-america-vence-pela-conmebol-sudamericana"}
+            ]
+          },
+          {
+            "id": "fei-nanduo-fernandinho",
+            "name": "Fernando Henrique da Conceição",
+            "china_name": "费南多",
+            "former_registration_names": ["Fernandinho"],
+            "birth_country": "Brazil",
+            "position": "Winger",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的边锋，早年在巴西和葡萄牙俱乐部体系效力，2015 年进入中国联赛；2024 年代表中国队完成成年国家队比赛并取得进球。", "en": "A Brazil-born winger whose early career included Brazilian and Portuguese clubs before he entered the Chinese league in 2015; he played and scored for China PR's senior team in 2024."},
+            "career_segments": [
+              {"period": "2012-2015", "phase": "pre-naturalization", "country": "Brazil / Portugal", "clubs": ["Atlético Sorocaba", "Flamengo", "Madureira", "Estoril"], "summary": {"zh": "归化前的巴西、葡萄牙职业阶段。", "en": "Brazilian and Portuguese professional stages before naturalization."}}
+            ],
+            "source_links": [
+              {"label": "中国足协：2024 年国家队名单（费南多）", "url": "https://www.thecfa.cn/nanzuwqmd/20240522/34466.html"},
+              {"label": "AFC：中国 4-1 新加坡，费南多进球", "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/group_c_china_pr_4-1_singapore.html"},
+              {"label": "AFC：2020 亚冠广州队注册名单", "url": "https://assets.the-afc.com/downloads/technical-reports/AFC-Champions-League-2020-Technical-Report-%26-Statistics.pdf"},
+              {"label": "Transfermarkt：Fernandinho / 费南多职业档案", "url": "https://www.transfermarkt.com/fernandinho/profil/spieler/230937"}
+            ]
+          },
+          {
+            "id": "jiang-guangtai-tyias-browning",
+            "name": "Tyias Charles Browning",
+            "china_name": "蒋光太",
+            "former_registration_names": ["Tyias Browning"],
+            "birth_country": "England",
+            "position": "Defender",
+            "naturalization_path": "heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": ["jiang-guangtai-everton-2014"],
+            "summary": {"zh": "英格兰出生、在埃弗顿青训成长的后卫，曾代表埃弗顿并租借效力英格兰低级别职业联赛，2019 年加盟广州并随后代表中国成年队。", "en": "An England-born defender developed by Everton who played for the club and on loan in the English professional pyramid before moving to Guangzhou in 2019 and later representing China PR."},
+            "career_segments": [
+              {"period": "2004-2019", "phase": "pre-naturalization", "country": "England", "clubs": ["Everton", "Wigan Athletic", "Preston North End", "Sunderland"], "summary": {"zh": "英格兰青训与职业联赛阶段。", "en": "English academy and professional-league career."}}
+            ],
+            "source_links": [
+              {"label": "AFC：Browning 从埃弗顿加盟广州", "url": "https://www.the-afc.com/en/club/afc_champions_league/news/guangzhou_evergrande_sign_evertons_browning.html"},
+              {"label": "AFC：2023 亚洲杯中国队终报名（蒋光太）", "url": "https://assets.the-afc.com/2023_AFC_Asian_Cup/Squad_Lists/AFC-Asian-Cup-Qatar%E2%84%A2-2023-Squad-Lists.pdf"},
+              {"label": "Premier League：Tyias Browning 档案", "url": "https://www.premierleague.com/en/players/149468/tyias-browning/overview"}
+            ]
+          },
+          {
+            "id": "li-ke-nico-yennaris",
+            "name": "Nicholas Harry Yennaris",
+            "china_name": "李可",
+            "former_registration_names": ["Nico Yennaris"],
+            "birth_country": "England",
+            "position": "Midfielder",
+            "naturalization_path": "heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": ["li-ke-arsenal-2012"],
+            "summary": {"zh": "英格兰出生、在阿森纳青训成长的中场，曾为阿森纳一线队出场并长期效力布伦特福德，2019 年进入中国联赛并成为中国成年国脚。", "en": "An England-born midfielder developed by Arsenal who appeared for its first team and had a long Brentford spell before moving to China in 2019 and becoming a China PR senior international."},
+            "career_segments": [
+              {"period": "2001-2019", "phase": "pre-naturalization", "country": "England", "clubs": ["Arsenal", "Notts County", "Bournemouth", "Brentford", "Wycombe Wanderers"], "summary": {"zh": "英格兰青训与职业联赛阶段。", "en": "English academy and professional-league career."}}
+            ],
+            "source_links": [
+              {"label": "AFC：李可成为中国国脚", "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/anything_possible_for_li_ke_who_made_chinese_football_history.html"},
+              {"label": "Brentford：从阿森纳签下 Nico Yennaris", "url": "https://www.brentfordfc.com/en/news/article/brentford-sign-arsenals-nico-yennaris_60473"},
+              {"label": "Premier League：Nico Yennaris 档案", "url": "https://www.premierleague.com/en/players/86364/nico-yennaris/overview"}
+            ]
+          },
+          {
+            "id": "hou-yongyong-john-hou-saeter",
+            "name": "John Hou Sæter",
+            "china_name": "侯永永",
+            "former_registration_names": ["Yongyong Hou"],
+            "birth_country": "Norway",
+            "position": "Midfielder",
+            "naturalization_path": "heritage",
+            "china_team_status": "senior-squad",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "挪威出生并在罗森博格体系成长的中场，曾效力斯塔贝克和兰黑姆；2024 年成为挪甲最佳射手，随后获得中国成年国家队正式征召。当前只标记征召，不推断成年队出场。", "en": "A Norway-born midfielder developed in Rosenborg's system who also played for Stabæk and Ranheim; after finishing as the 2024 Norwegian First Division top scorer he received an official China PR senior call-up. This record marks the call-up only and does not infer a senior cap."},
+            "career_segments": [
+              {"period": "2013-2018; 2023-2024", "phase": "pre-naturalization-and-return", "country": "Norway", "clubs": ["Rosenborg", "Ranheim", "Stabæk"], "summary": {"zh": "挪威青训、职业出道及回归挪威联赛阶段。", "en": "Norwegian academy, professional debut and later return to the Norwegian league."}}
+            ],
+            "source_links": [
+              {"label": "中国足协：2025 年第一期国家队名单（侯永永）", "url": "https://www.thecfa.cn/jxtz/20250103/35460.html"},
+              {"label": "Ranheim：侯永永入选中国队", "url": "https://www.ranheimfotball.no/nyheter/hou-pa-landslaget"},
+              {"label": "挪威足协：Yongyong Hou 比赛统计", "url": "https://www.fotball.no/fotballdata/person/statistikk/?fiksId=3993030"}
+            ]
+          },
+          {
+            "id": "serginho-sergio-antonio",
+            "name": "Sérgio Antônio Soler de Oliveira Júnior",
+            "china_name": "塞尔吉尼奥",
+            "former_registration_names": ["Serginho"],
+            "birth_country": "Brazil",
+            "position": "Attacking Midfielder",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的攻击型中场，早年效力桑托斯等巴西俱乐部，随后在日本鹿岛鹿角效力并参加世俱杯；2020 年进入中国联赛，2025 年归化后代表中国成年队出场。", "en": "A Brazil-born attacking midfielder who played for Santos and other Brazilian clubs before joining Kashima Antlers and appearing at the Club World Cup; he moved to China in 2020 and represented China PR after naturalizing in 2025."},
+            "career_segments": [
+              {"period": "2014-2018", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Santos", "Vitória", "Santo André", "América Mineiro"], "summary": {"zh": "巴西青训与职业阶段。", "en": "Brazilian academy and professional career."}},
+              {"period": "2018-2020", "phase": "pre-naturalization", "country": "Japan", "clubs": ["Kashima Antlers"], "summary": {"zh": "日本 J 联赛、亚冠及世俱杯阶段。", "en": "J.League, AFC Champions League and Club World Cup period in Japan."}}
+            ],
+            "source_links": [
+              {"label": "AFC：中国 1-0 巴林比赛报告", "url": "https://www.the-afc.com/en/national/asian_qualifiers.html/news/group-c-china-pr-1-0-bahrain"},
+              {"label": "Kashima Antlers：Serginho 转会长春并回顾职业履历", "url": "https://www.antlers.co.jp/en/blogs/news/75691"},
+              {"label": "Transfermarkt：Serginho / 塞尔吉尼奥档案", "url": "https://www.transfermarkt.com/serginho/profil/spieler/329013"}
+            ]
+          }
+        ]
+      },
       "historical_trial_records": [
         {
           "id": "wang-dalei-inter-2006-trial",

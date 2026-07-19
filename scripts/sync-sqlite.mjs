@@ -163,6 +163,33 @@ export async function syncSqlite() {
       FOREIGN KEY (country) REFERENCES overseas_buckets(country) ON DELETE CASCADE
     );
 
+    CREATE TABLE china_naturalized_players (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      china_name TEXT NOT NULL,
+      former_registration_names_json TEXT NOT NULL,
+      birth_country TEXT NOT NULL,
+      position TEXT NOT NULL,
+      naturalization_path TEXT NOT NULL,
+      china_team_status TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      related_featured_record_ids_json TEXT NOT NULL,
+      source_links_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL
+    );
+
+    CREATE TABLE china_naturalized_career_segments (
+      player_id TEXT NOT NULL,
+      segment_order INTEGER NOT NULL,
+      period TEXT NOT NULL,
+      phase TEXT NOT NULL,
+      country TEXT NOT NULL,
+      clubs_json TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      PRIMARY KEY (player_id, segment_order),
+      FOREIGN KEY (player_id) REFERENCES china_naturalized_players(id) ON DELETE CASCADE
+    );
+
     CREATE TABLE dossiers (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
@@ -362,6 +389,18 @@ export async function syncSqlite() {
       history_year_range, appearances, appearance_label, active_abroad,
       competitive_debut, summary, notes_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertChinaNaturalizedPlayer = db.prepare(`
+    INSERT INTO china_naturalized_players (
+      id, name, china_name, former_registration_names_json, birth_country, position,
+      naturalization_path, china_team_status, summary_json,
+      related_featured_record_ids_json, source_links_json, checked_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertChinaNaturalizedCareerSegment = db.prepare(`
+    INSERT INTO china_naturalized_career_segments (
+      player_id, segment_order, period, phase, country, clubs_json, summary_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?)
   `);
   const insertDossier = db.prepare(`
     INSERT INTO dossiers (
@@ -574,6 +613,36 @@ export async function syncSqlite() {
         record.summary,
         toJson(record.notes)
       );
+    }
+
+    if (country.country === "China PR" && country.naturalized_players) {
+      for (const profile of country.naturalized_players.profiles ?? []) {
+        insertChinaNaturalizedPlayer.run(
+          profile.id,
+          profile.name,
+          profile.china_name,
+          toJson(profile.former_registration_names ?? []),
+          profile.birth_country,
+          profile.position,
+          profile.naturalization_path,
+          profile.china_team_status,
+          toJson(profile.summary),
+          toJson(profile.related_featured_record_ids ?? []),
+          toJson(profile.source_links ?? []),
+          country.naturalized_players.checked_at
+        );
+        for (const [index, segment] of (profile.career_segments ?? []).entries()) {
+          insertChinaNaturalizedCareerSegment.run(
+            profile.id,
+            index,
+            segment.period,
+            segment.phase,
+            segment.country,
+            toJson(segment.clubs ?? []),
+            toJson(segment.summary)
+          );
+        }
+      }
     }
   }
 

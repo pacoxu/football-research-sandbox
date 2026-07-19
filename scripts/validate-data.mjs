@@ -1290,6 +1290,62 @@ function validateOverseasRecord(record, countryName, allowedBuckets) {
   assert(allowedBuckets.has(record.bucket), `Unknown overseas bucket on ${record.id}`);
 }
 
+function validateChinaNaturalizedPlayers(collection, featuredRecords) {
+  assert(collection && typeof collection === "object", "Missing China naturalized-player collection");
+  assert(isIsoDate(collection.checked_at), "Invalid China naturalized-player checked_at");
+  assert(collection.scope?.zh && collection.scope?.en, "Missing China naturalized-player scope");
+  assert(collection.boundary_note?.zh && collection.boundary_note?.en, "Missing China naturalized-player boundary note");
+  assert(Array.isArray(collection.profiles), "Invalid China naturalized-player profiles");
+
+  const expectedStatuses = new Map([
+    ["ai-kesen-elkeson", "senior-capped"],
+    ["alan-carvalho", "senior-capped"],
+    ["luo-guofu-aloisio", "senior-capped"],
+    ["fei-nanduo-fernandinho", "senior-capped"],
+    ["jiang-guangtai-tyias-browning", "senior-capped"],
+    ["li-ke-nico-yennaris", "senior-capped"],
+    ["hou-yongyong-john-hou-saeter", "senior-squad"],
+    ["serginho-sergio-antonio", "senior-capped"]
+  ]);
+  const allowedPaths = new Set(["heritage", "non-heritage"]);
+  const allowedPhases = new Set([
+    "pre-naturalization",
+    "post-naturalization",
+    "pre-naturalization-and-return"
+  ]);
+  const featuredIds = new Set((featuredRecords ?? []).map((record) => record.id));
+  const profileIds = new Set();
+
+  assert(collection.profiles.length === expectedStatuses.size, "China naturalized-player primary list must contain eight profiles");
+  for (const profile of collection.profiles) {
+    assert(expectedStatuses.has(profile.id), `Unexpected China naturalized-player profile: ${profile.id}`);
+    assert(!profileIds.has(profile.id), `Duplicate China naturalized-player profile: ${profile.id}`);
+    profileIds.add(profile.id);
+    assert(profile.name && profile.china_name && profile.birth_country && profile.position, `Incomplete naturalized-player identity: ${profile.id}`);
+    assert(allowedPaths.has(profile.naturalization_path), `Invalid naturalization path on ${profile.id}`);
+    assert(profile.china_team_status === expectedStatuses.get(profile.id), `Invalid China team status on ${profile.id}`);
+    assert(profile.summary?.zh && profile.summary?.en, `Missing localized naturalized-player summary on ${profile.id}`);
+    assert(Array.isArray(profile.career_segments) && profile.career_segments.length > 0, `Missing overseas career segments on ${profile.id}`);
+    for (const segment of profile.career_segments) {
+      assert(segment.period && segment.country, `Invalid career segment on ${profile.id}`);
+      assert(allowedPhases.has(segment.phase), `Invalid career phase on ${profile.id}`);
+      assert(Array.isArray(segment.clubs) && segment.clubs.length > 0, `Missing career clubs on ${profile.id}`);
+      assert(segment.summary?.zh && segment.summary?.en, `Missing localized career summary on ${profile.id}`);
+    }
+    assert(Array.isArray(profile.source_links) && profile.source_links.length >= 2, `Insufficient naturalized-player sources on ${profile.id}`);
+    for (const source of profile.source_links) {
+      assert(source.label && /^https:\/\//.test(source.url), `Invalid naturalized-player source on ${profile.id}`);
+    }
+    assert(Array.isArray(profile.related_featured_record_ids), `Invalid related featured records on ${profile.id}`);
+    for (const recordId of profile.related_featured_record_ids) {
+      assert(featuredIds.has(recordId), `Unknown related featured record on ${profile.id}: ${recordId}`);
+    }
+  }
+  for (const expectedId of expectedStatuses.keys()) {
+    assert(profileIds.has(expectedId), `Missing China naturalized-player profile: ${expectedId}`);
+  }
+}
+
 function validatePlayerNames(player) {
   assert(typeof player.names === "object" && player.names !== null, `Missing names block on ${player.id}`);
   assert(typeof player.names.zh === "string" && player.names.zh.length > 0, `Missing names.zh on ${player.id}`);
@@ -2689,6 +2745,9 @@ export async function validateData(referenceDate = new Date().toISOString().slic
         country.country,
         country.featured_records
       );
+    }
+    if (country.country === "China PR") {
+      validateChinaNaturalizedPlayers(country.naturalized_players, country.featured_records);
     }
     if (country.featured_records !== undefined) {
       assert(
