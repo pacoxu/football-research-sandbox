@@ -1,0 +1,3600 @@
+[
+  {
+    "id": "sa-saad-fahad-alnasser-2001",
+    "name": "Saad Fahad Alnasser",
+    "local_name": "Saad Fahad Alnasser",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-01-08",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 172,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "Altaawoun",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Altaawoun",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 10."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Saad Fahad Alnasser in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-zakaria-hawsawi-2001",
+    "name": "Zakaria Hawsawi",
+    "local_name": "Zakaria Hawsawi",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-01-12",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 173,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Alittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 12."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Zakaria Hawsawi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-abdulrahman-alsanbi-2001",
+    "name": "Abdulrahman Alsanbi",
+    "local_name": "Abdulrahman Alsanbi",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-02-03",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 181,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "Alahli",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alahli",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 1."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdulrahman Alsanbi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-marran-2001",
+    "name": "Mohammed Marran",
+    "local_name": "Mohammed Marran",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-02-15",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 181,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "Alnassar",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alnassar",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 16."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Marran in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-haitham-mohammed-asiri-2001",
+    "name": "Haitham Mohammed Asiri",
+    "local_name": "Haitham Mohammed Asiri",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-03-25",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 174,
+    "weight_kg": 67,
+    "registration_club": {
+      "name": "Alahli",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alahli",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 17."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Haitham Mohammed Asiri in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-al-dossary-2001",
+    "name": "Mohammed Al Dossary",
+    "local_name": "Mohammed Al Dossary",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-04-01",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 184,
+    "weight_kg": 85,
+    "registration_club": {
+      "name": "Hajer",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Hajer",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 13."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Al Dossary in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-meshal-sibyani-khairallah-2001",
+    "name": "Meshal Sibyani Khairallah",
+    "local_name": "Meshal Sibyani Khairallah",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-04-11",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": 80,
+    "registration_club": {
+      "name": "Alfaisaly",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alfaisaly",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 19."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Meshal Sibyani Khairallah in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-aiman-yahya-2001",
+    "name": "Aiman Yahya",
+    "local_name": "Aiman Yahya",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-05-14",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 173,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Alnassar",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alnassar",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 23."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Aiman Yahya in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-abdulelah-saeed-2001",
+    "name": "Abdulelah Saeed",
+    "local_name": "Abdulelah Saeed",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-06-02",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 182,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "Alkhaleej",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alkhaleej",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 18."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdulelah Saeed in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-jehad-thikri-2001",
+    "name": "Jehad Thikri",
+    "local_name": "Jehad Thikri",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-07-21",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 184,
+    "weight_kg": 74,
+    "registration_club": {
+      "name": "Alqadisiyah",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alqadisiyah",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 5."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jehad Thikri in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-faisal-alghamdi-2001",
+    "name": "Faisal Alghamdi",
+    "local_name": "Faisal Alghamdi",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-08-13",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 185,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "Alittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 8."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Faisal Alghamdi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-ahmed-al-ghamdi-2001",
+    "name": "Ahmed Al Ghamdi",
+    "local_name": "Ahmed Al Ghamdi",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-09-20",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 175,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Alittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 11."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Ahmed Al Ghamdi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-ahmed-aljubaya-2001",
+    "name": "Ahmed Aljubaya",
+    "local_name": "Ahmed Aljubaya",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-10-26",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 185,
+    "weight_kg": 84,
+    "registration_club": {
+      "name": "Alqadisiyah",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alqadisiyah",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 21."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Ahmed Aljubaya in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-ziyad-aljohani-2001",
+    "name": "Ziyad Aljohani",
+    "local_name": "Ziyad Aljohani",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-11-11",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 180,
+    "weight_kg": 61,
+    "registration_club": {
+      "name": "Alahli",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alahli",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 7."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Ziyad Aljohani in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-eid-almuwallad-2001",
+    "name": "Eid Almuwallad",
+    "local_name": "Eid Almuwallad",
+    "country": "Saudi Arabia",
+    "birth_date": "2001-12-14",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 174,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "Alokhdood",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alokhdood",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 6."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Eid Almuwallad in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-awad-al-nashri-2002",
+    "name": "Awad Al Nashri",
+    "local_name": "Awad Al Nashri",
+    "country": "Saudi Arabia",
+    "birth_date": "2002-03-15",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 175,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Alittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 14."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Awad Al Nashri in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-rayan-mohammed-hamed-2002",
+    "name": "Rayan Mohammed Hamed",
+    "local_name": "Rayan Mohammed Hamed",
+    "country": "Saudi Arabia",
+    "birth_date": "2002-04-13",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 177,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "Alahli",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alahli",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 4."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Rayan Mohammed Hamed in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-waheeb-alshamat-2002",
+    "name": "Mohammed Waheeb Alshamat",
+    "local_name": "Mohammed Waheeb Alshamat",
+    "country": "Saudi Arabia",
+    "birth_date": "2002-08-11",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 170,
+    "weight_kg": 62,
+    "registration_club": {
+      "name": "Alqadisiyah",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alqadisiyah",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 2."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Waheeb Alshamat in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-saleh-abu-alshamat-2002",
+    "name": "Saleh Abu Alshamat",
+    "local_name": "Saleh Abu Alshamat",
+    "country": "Saudi Arabia",
+    "birth_date": "2002-08-11",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 171,
+    "weight_kg": 61,
+    "registration_club": {
+      "name": "Altaawoun",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Altaawoun",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 20."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Saleh Abu Alshamat in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-saleem-alabsi-2002",
+    "name": "Mohammed Saleem Alabsi",
+    "local_name": "Mohammed Saleem Alabsi",
+    "country": "Saudi Arabia",
+    "birth_date": "2002-09-24",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 183,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "Alshabab",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alshabab",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 22."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Saleem Alabsi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-abdulrahman-yousef-2003",
+    "name": "Mohammed Abdulrahman Yousef",
+    "local_name": "Mohammed Abdulrahman Yousef",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-01-14",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 171,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "Al-Ahli",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ahli",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 2."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Abdulrahman Yousef in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-abdullah-radif-2003",
+    "name": "Abdullah Radif",
+    "local_name": "Abdullah Radif",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-01-20",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 186,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Al-Hilal",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alshabab",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      },
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Hilal",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "afc-u23-2026",
+      "asia-u23-2024",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 9."
+      },
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 9."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdullah Radif in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      },
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdullah Radif in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-salem-abdullah-alnajdi-2003",
+    "name": "Salem Abdullah Alnajdi",
+    "local_name": "Salem Abdullah Alnajdi",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-01-27",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "Al-Nasser",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Nasser",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 12."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Salem Abdullah Alnajdi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-sulaiman-yahya-hazazi-2003",
+    "name": "Sulaiman Yahya Hazazi",
+    "local_name": "Sulaiman Yahya Hazazi",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-02-01",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 173,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Al-Riyadh",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Riyadh",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 13."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Sulaiman Yahya Hazazi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-dakhilallah-aldosari-2003",
+    "name": "Mohammed Dakhilallah Aldosari",
+    "local_name": "Mohammed Dakhilallah Aldosari",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-03-31",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 183,
+    "weight_kg": 73,
+    "registration_club": {
+      "name": "Al-Raed",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Raed",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 3."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Dakhilallah Aldosari in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-yaseen-atiah-alzubaidi-2003",
+    "name": "Yaseen Atiah Alzubaidi",
+    "local_name": "Yaseen Atiah Alzubaidi",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-04-26",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 176,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "Al-Ahli",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ahli",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 16."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Yaseen Atiah Alzubaidi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-musab-aljuwayr-2003",
+    "name": "Musab Aljuwayr",
+    "local_name": "Musab Aljuwayr",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-06-20",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 179,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Al-Qadsia",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Qadsia",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 10."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Musab Aljuwayr in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-faris-saeed-alghamdi-2003",
+    "name": "Faris Saeed Alghamdi",
+    "local_name": "Faris Saeed Alghamdi",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-07-05",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 170,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "Al-Ettifaq",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ettifaq",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 8."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Faris Saeed Alghamdi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-faisal-ismail-alsubiani-2003",
+    "name": "Faisal Ismail Alsubiani",
+    "local_name": "Faisal Ismail Alsubiani",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-07-07",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 173,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "Al-Shabab",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Shabab",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 6."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Faisal Ismail Alsubiani in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-turki-hafiz-baaljawsh-2003",
+    "name": "Turki Hafiz Baaljawsh",
+    "local_name": "Turki Hafiz Baaljawsh",
+    "country": "Saudi Arabia",
+    "birth_date": "2003-11-24",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 185,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "Al-Ettifaq",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ettifaq",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 1."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Turki Hafiz Baaljawsh in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-abdulmalik-saleh-aljaber-2004",
+    "name": "Abdulmalik Saleh Aljaber",
+    "local_name": "Abdulmalik Saleh Aljaber",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-01-07",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "Al-Nasser",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Nasser",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 15."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdulmalik Saleh Aljaber in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-hammam-mabrouk-al-hammami-2004",
+    "name": "Hammam Mabrouk Al Hammami",
+    "local_name": "Hammam Mabrouk Al Hammami",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-01-30",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 168,
+    "weight_kg": 60,
+    "registration_club": {
+      "name": "Al-Shabab",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Shabab",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 20."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Hammam Mabrouk Al Hammami in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-abdulaziz-alelewai-2004",
+    "name": "Abdulaziz Alelewai",
+    "local_name": "Abdulaziz Alelewai",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-02-11",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 174,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "Al-Kholood",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Kholood",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 7."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdulaziz Alelewai in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-marwan-al-sahafi-2004",
+    "name": "Marwan Al Sahafi",
+    "local_name": "Marwan Al Sahafi",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-02-17",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 179,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "Alittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 15."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Marwan Al Sahafi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-sulaiman-bakor-2004",
+    "name": "Mohammed Sulaiman Bakor",
+    "local_name": "Mohammed Sulaiman Bakor",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-04-08",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 180,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "Alahli",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2024-04-16",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2024 registration",
+        "organization": "Alahli",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2024-04-16; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2024",
+      "asia-u23-2024"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2024",
+        "label": "AFC U23 Asian Cup 2024 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 3."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2024 final registration",
+        "url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Sulaiman Bakor in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-abdulrahman-alobaid-2004",
+    "name": "Abdulrahman Alobaid",
+    "local_name": "Abdulrahman Alobaid",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-07-02",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 181,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "Al-Ittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 23."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdulrahman Alobaid in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-muhannad-ahmed-alyahya-2004",
+    "name": "Muhannad Ahmed Alyahya",
+    "local_name": "Muhannad Ahmed Alyahya",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-09-19",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 181,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "Al-Kholood",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Kholood",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 21."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Muhannad Ahmed Alyahya in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-khalid-abdullah-alasiri-2004",
+    "name": "Khalid Abdullah Alasiri",
+    "local_name": "Khalid Abdullah Alasiri",
+    "country": "Saudi Arabia",
+    "birth_date": "2004-11-27",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 186,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "Al-Diriyah",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Diriyah",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 5."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Khalid Abdullah Alasiri in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-awad-abdu-dahal-2005",
+    "name": "Awad Abdu Dahal",
+    "local_name": "Awad Abdu Dahal",
+    "country": "Saudi Arabia",
+    "birth_date": "2005-02-23",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 179,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Al-Ettifaq",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ettifaq",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 14."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Awad Abdu Dahal in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-hamed-abdullah-yousef-2005",
+    "name": "Hamed Abdullah Yousef",
+    "local_name": "Hamed Abdullah Yousef",
+    "country": "Saudi Arabia",
+    "birth_date": "2005-04-26",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 195,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "Al-Ittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 22."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Hamed Abdullah Yousef in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-mohammed-ali-barnawi-2005",
+    "name": "Mohammed Ali Barnawi",
+    "local_name": "Mohammed Ali Barnawi",
+    "country": "Saudi Arabia",
+    "birth_date": "2005-08-07",
+    "age_band": "u23",
+    "primary_position": "Defender",
+    "height_cm": 174,
+    "weight_kg": 67,
+    "registration_club": {
+      "name": "Al-Ittihad",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Ittihad",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 4."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mohammed Ali Barnawi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-rakan-khalid-alghamdi-2005",
+    "name": "Rakan Khalid Alghamdi",
+    "local_name": "Rakan Khalid Alghamdi",
+    "country": "Saudi Arabia",
+    "birth_date": "2005-09-06",
+    "age_band": "u23",
+    "primary_position": "Midfielder",
+    "height_cm": 175,
+    "weight_kg": 62,
+    "registration_club": {
+      "name": "Al-Nasser",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Nasser",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 18."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Rakan Khalid Alghamdi in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-thamer-fathi-alkhaibari-2005",
+    "name": "Thamer Fathi Alkhaibari",
+    "local_name": "Thamer Fathi Alkhaibari",
+    "country": "Saudi Arabia",
+    "birth_date": "2005-12-03",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 185,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "Neom",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Neom",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 11."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Thamer Fathi Alkhaibari in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-majed-hani-abdullah-2006",
+    "name": "Majed Hani Abdullah",
+    "local_name": "Majed Hani Abdullah",
+    "country": "Saudi Arabia",
+    "birth_date": "2006-02-13",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 188,
+    "weight_kg": 80,
+    "registration_club": {
+      "name": "Al-Shabab",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Shabab",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 19."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Majed Hani Abdullah in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  },
+  {
+    "id": "sa-abdulrahman-sufyani-2008",
+    "name": "Abdulrahman Sufyani",
+    "local_name": "Abdulrahman Sufyani",
+    "country": "Saudi Arabia",
+    "birth_date": "2008-04-15",
+    "age_band": "u23",
+    "primary_position": "Forward",
+    "height_cm": 174,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "Al-Nasser",
+      "country": "Saudi Arabia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-12-30",
+      "organization_type": "professional-club"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "AFC U23 Asian Cup 2026 registration",
+        "organization": "Al-Nasser",
+        "country": "Saudi Arabia",
+        "note": "AFC final registration records this organization on 2025-12-30; it is a tournament snapshot, not a current-club claim.",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "saudi-arabia-youth",
+      "afc-comparison-roster",
+      "final-squad",
+      "afc-u23-2026",
+      "asia-u23-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u23-2026",
+        "label": "AFC U23 Asian Cup 2026 Saudi Arabia final squad",
+        "team": "Saudi Arabia U23",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "Official final registration shirt number 17."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC final squad registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdulrahman Sufyani in the Saudi Arabia 23-player final squad and records the tournament-time club snapshot."
+      }
+    ],
+    "verification": {
+      "status": "provisional",
+      "last_checked": "2026-07-19",
+      "notes": "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
+    }
+  }
+]

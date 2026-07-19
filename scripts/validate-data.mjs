@@ -113,7 +113,8 @@ const allowedOrganizationTypes = new Set([
   "university",
   "professional-club",
   "military-service-club",
-  "overseas-academy"
+  "overseas-academy",
+  "national-academy"
 ]);
 
 const allowedYouthCompetitionTypes = new Set([
@@ -163,8 +164,29 @@ const issue48DeepSampleIds = new Set([
 ]);
 
 const completeSquadExpectations = new Map([
+  ["IR Iran|afc-u17-2025", 23],
   ["Australia|afc-u20-2025", 23],
-  ["Australia|afc-u17-2026", 23]
+  ["IR Iran|afc-u20-2025", 23],
+  ["Uzbekistan|afc-u20-2025", 23],
+  ["Qatar|afc-u23-2024", 23],
+  ["Saudi Arabia|afc-u23-2024", 23],
+  ["Uzbekistan|afc-u23-2024", 23],
+  ["IR Iran|afc-u23-2026", 23],
+  ["Qatar|afc-u23-2026", 23],
+  ["Saudi Arabia|afc-u23-2026", 23],
+  ["Uzbekistan|afc-u23-2026", 23],
+  ["Australia|afc-u17-2026", 23],
+  ["Uzbekistan|afc-u17-2026", 23]
+]);
+
+const notApplicableSquadExpectations = new Set([
+  "IR Iran|afc-u23-2024",
+  "IR Iran|afc-u17-2026"
+]);
+
+const allowedComparisonRosterStatuses = new Set([
+  "complete-final-registration",
+  "not-applicable"
 ]);
 
 const allowedTournamentSourceVersionTypes = new Set([
@@ -1647,6 +1669,7 @@ export async function validateData() {
   const completeSquads = new Map(
     [...completeSquadExpectations.keys()].map((squadKey) => [squadKey, []])
   );
+  const allSquadEntries = new Map();
   const issue54UzbekistanU17 = [];
 
   for (const player of dataset.players) {
@@ -1785,9 +1808,17 @@ export async function validateData() {
         issue16Squad.push(player);
       }
       const completeSquad = completeSquads.get(`${player.country}|${entry.competition_id}`);
-      if (completeSquad !== undefined) {
+      if (
+        completeSquad !== undefined &&
+        entry.squad_status === "registered" &&
+        entry.roster_status === "final-squad"
+      ) {
         completeSquad.push({ player, entry });
       }
+      const squadKey = `${player.country}|${entry.competition_id}`;
+      const squadEntries = allSquadEntries.get(squadKey) ?? [];
+      squadEntries.push({ player, entry });
+      allSquadEntries.set(squadKey, squadEntries);
     }
     if (
       player.country === "Uzbekistan" &&
@@ -1864,7 +1895,10 @@ export async function validateData() {
     `Expected 23 Uzbekistan AFC U17 2026 players, found ${issue54UzbekistanU17.length}`
   );
   const issue54JerseyNumbers = issue54UzbekistanU17
-    .map((player) => player.jersey_number)
+    .map((player) =>
+      player.tournament_participation.find((entry) => entry.competition_id === "afc-u17-2026")
+        ?.shirt_number
+    )
     .sort((left, right) => left - right);
   assert(
     issue54JerseyNumbers.every((number, index) => number === index + 1),
@@ -1891,8 +1925,56 @@ export async function validateData() {
   }
 
   for (const [squadKey, expectedCount] of completeSquadExpectations) {
-    const actualCount = completeSquads.get(squadKey).length;
+    const squad = completeSquads.get(squadKey);
+    const actualCount = squad.length;
     assert(actualCount === expectedCount, `Expected ${expectedCount} players in ${squadKey}, found ${actualCount}`);
+    assert(
+      new Set(squad.map(({ player }) => player.id)).size === expectedCount,
+      `Expected ${expectedCount} distinct players in ${squadKey}`
+    );
+    const numbers = [];
+    for (const { player, entry } of squad) {
+      assert(entry.squad_status === "registered", `Invalid final registration status on ${player.id} in ${squadKey}`);
+      assert(entry.roster_status === "final-squad", `Invalid final roster status on ${player.id} in ${squadKey}`);
+      assert(
+        Number.isInteger(entry.shirt_number) && entry.shirt_number >= 1 && entry.shirt_number <= 23,
+        `Invalid shirt_number on ${player.id} in ${squadKey}`
+      );
+      numbers.push(entry.shirt_number);
+      assert(
+        player.registration_club.status === "tournament-snapshot" && isIsoDate(player.registration_club.as_of),
+        `Missing tournament registration snapshot on ${player.id}`
+      );
+      if (player.country !== "Australia" && !/free agent/i.test(player.registration_club.name)) {
+        assert(
+          allowedOrganizationTypes.has(player.registration_club.organization_type),
+          `Missing comparison organization_type on ${player.id}`
+        );
+      }
+      const afcLayers = (player.source_layers ?? []).filter(
+        (layer) => layer.type === "afc-registration" && layer.confidence === "high"
+      );
+      assert(afcLayers.length > 0, `Missing high-confidence AFC registration layer on ${player.id}`);
+      assert(
+        afcLayers.some((layer) => isIsoDate(layer.checked_at)),
+        `Missing AFC registration checked_at on ${player.id}`
+      );
+    }
+    numbers.sort((left, right) => left - right);
+    const expectedNumbers =
+      squadKey === "IR Iran|afc-u23-2026"
+        ? [1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 22, 23]
+        : Array.from({ length: 23 }, (_, index) => index + 1);
+    assert(
+      numbers.every((number, index) => number === expectedNumbers[index]),
+      `Invalid final-squad shirt-number sequence in ${squadKey}: ${numbers.join(", ")}`
+    );
+  }
+  for (const squadKey of notApplicableSquadExpectations) {
+    const finalSquadEntries = (allSquadEntries.get(squadKey) ?? []).filter(
+      ({ entry }) => entry.roster_status === "final-squad"
+    );
+    assert(finalSquadEntries.length === 0, `Not-applicable comparison roster has players: ${squadKey}`);
   }
   const issue47Squad = completeSquads.get("Australia|afc-u20-2025");
   const issue47ShirtNumbers = new Set();
@@ -2038,6 +2120,7 @@ export async function validateData() {
     }
   }
 
+  const comparisonRosterMetadata = new Map();
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
     validateTournamentDateRange(tournament);
@@ -2050,12 +2133,44 @@ export async function validateData() {
     if (tournament.regional_history !== undefined) {
       validateRegionalHistory(tournament.regional_history, tournament.id);
     }
+    if (tournament.comparison_rosters !== undefined) {
+      assert(Array.isArray(tournament.comparison_rosters), `Invalid comparison_rosters on ${tournament.id}`);
+      for (const roster of tournament.comparison_rosters) {
+        const squadKey = `${roster.country}|${tournament.id}`;
+        assert(!comparisonRosterMetadata.has(squadKey), `Duplicate comparison_rosters entry: ${squadKey}`);
+        assert(
+          allowedComparisonRosterStatuses.has(roster.status),
+          `Invalid comparison roster status on ${squadKey}`
+        );
+        assert(Number.isInteger(roster.expected_count), `Invalid expected_count on ${squadKey}`);
+        assert(/^https?:\/\//.test(roster.source_url), `Invalid comparison source_url on ${squadKey}`);
+        assert(isIsoDate(roster.source_checked_at), `Invalid comparison source_checked_at on ${squadKey}`);
+        assert(typeof roster.note === "string" && roster.note.length > 0, `Missing comparison note on ${squadKey}`);
+        if (roster.status === "complete-final-registration") {
+          assert(roster.expected_count === 23, `Complete comparison roster must expect 23 players: ${squadKey}`);
+          assert(completeSquadExpectations.has(squadKey), `Unexpected complete comparison roster: ${squadKey}`);
+        } else {
+          assert(roster.expected_count === 0, `Not-applicable roster must expect zero players: ${squadKey}`);
+          assert(notApplicableSquadExpectations.has(squadKey), `Unexpected not-applicable roster: ${squadKey}`);
+        }
+        comparisonRosterMetadata.set(squadKey, roster);
+      }
+    }
     validateTournamentArchiveVersioning(tournament);
     validateTournamentField(tournament);
     if (tournament.id === "afc-u20-2025") {
       validateChinaU20PlayerStatistics(tournament, dataset.players);
     }
   }
+  assert(
+    [...completeSquadExpectations.keys()].every((key) => comparisonRosterMetadata.has(key)),
+    "comparison_rosters metadata does not cover all 13 complete final-registration squads"
+  );
+  assert(
+    [...notApplicableSquadExpectations].every((key) => comparisonRosterMetadata.has(key)),
+    "comparison_rosters metadata does not cover both not-applicable Iran squads"
+  );
+  assert(comparisonRosterMetadata.size === 15, `Expected 15 comparison roster metadata entries, found ${comparisonRosterMetadata.size}`);
   validateU20ArchiveCoverage(dataset.tournamentArchive);
 
   if (dataset.chinaMenYouthCoaches !== null) {

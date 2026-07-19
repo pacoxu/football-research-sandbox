@@ -6,20 +6,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-03-11",
     "age_band": "u17",
-    "jersey_number": 1,
     "primary_position": "Goalkeeper",
     "height_cm": 188,
     "weight_kg": 80,
     "registration_club": {
       "name": "Pakhtakor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Pakhtakor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -30,13 +33,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 1。"
+        "note": "Official final registration shirt number 1."
       }
     ],
     "external_links": [
@@ -53,9 +58,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "姓名、生日、位置、俱乐部和体测数据来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "姓名、生日、位置、俱乐部和体测数据来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Olimjon Shamuratov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-m-abdisoliev-2009",
@@ -64,20 +88,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-05-06",
     "age_band": "u17",
-    "jersey_number": 2,
     "primary_position": "Defender",
     "height_cm": 183,
     "weight_kg": 71,
     "registration_club": {
       "name": "PFC Nasaf",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "PFC Nasaf",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -88,13 +115,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 2。"
+        "note": "Official final registration shirt number 2."
       }
     ],
     "external_links": [
@@ -106,9 +135,28 @@
     ],
     "verification": {
       "status": "provisional",
-      "last_checked": "2026-07-12",
-      "notes": "AFC 报名表仅写 ABDISOLIEV M.，未展开名字；为避免臆造，主档保留首字母形式，待 UFA 或 Nasaf 官方名单补全。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "AFC 报名表仅写 ABDISOLIEV M.，未展开名字；为避免臆造，主档保留首字母形式，待 UFA 或 Nasaf 官方名单补全。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms M. Abdisoliev in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-muhammadaziz-ruziboev-2009",
@@ -117,20 +165,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-07-08",
     "age_band": "u17",
-    "jersey_number": 3,
     "primary_position": "Defender",
     "height_cm": 192,
     "weight_kg": 82,
     "registration_club": {
       "name": "Gazalkent",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Gazalkent",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -142,13 +193,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 3。"
+        "note": "Official final registration shirt number 3."
       }
     ],
     "external_links": [
@@ -165,9 +218,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Muhammadaziz Ruziboev in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-elsevarbek-olimov-2009",
@@ -176,20 +248,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-02-03",
     "age_band": "u17",
-    "jersey_number": 5,
     "primary_position": "Defender",
     "height_cm": 183,
     "weight_kg": 77,
     "registration_club": {
       "name": "Neftchi",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Neftchi",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -201,13 +276,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 5。"
+        "note": "Official final registration shirt number 5."
       }
     ],
     "external_links": [
@@ -219,9 +296,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Elsevarbek Olimov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-mukhammadjon-mamatov-2009",
@@ -230,20 +326,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-07-20",
     "age_band": "u17",
-    "jersey_number": 6,
     "primary_position": "Midfielder",
     "height_cm": 176,
     "weight_kg": 70,
     "registration_club": {
       "name": "Pakhtakor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Pakhtakor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -254,13 +353,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 6。"
+        "note": "Official final registration shirt number 6."
       }
     ],
     "external_links": [
@@ -277,9 +378,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；Mukhammadjon 为 AFC 英文注册拼写，待本土官方来源补充别名。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；Mukhammadjon 为 AFC 英文注册拼写，待本土官方来源补充别名。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mukhammadjon Mamatov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-islom-ravshanov-2009",
@@ -288,20 +408,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-04-14",
     "age_band": "u17",
-    "jersey_number": 8,
     "primary_position": "Midfielder",
     "height_cm": 178,
     "weight_kg": 65,
     "registration_club": {
       "name": "Pakhtakor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Pakhtakor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -312,13 +435,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 8。"
+        "note": "Official final registration shirt number 8."
       }
     ],
     "external_links": [
@@ -335,9 +460,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Islom Ravshanov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-mirkomilbek-murodov-2009",
@@ -346,20 +490,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-09-18",
     "age_band": "u17",
-    "jersey_number": 10,
     "primary_position": "Midfielder",
     "height_cm": 175,
     "weight_kg": 72,
     "registration_club": {
       "name": "FC Bunyodkor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "FC Bunyodkor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -370,13 +517,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 10。"
+        "note": "Official final registration shirt number 10."
       }
     ],
     "external_links": [
@@ -388,9 +537,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mirkomilbek Murodov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-sukhrob-sadirdjanov-2009",
@@ -399,20 +567,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-03-31",
     "age_band": "u17",
-    "jersey_number": 11,
     "primary_position": "Midfielder",
     "height_cm": 185,
     "weight_kg": 77,
     "registration_club": {
       "name": "Gazalkent",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Gazalkent",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -423,13 +594,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 11。"
+        "note": "Official final registration shirt number 11."
       }
     ],
     "external_links": [
@@ -441,9 +614,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；Sadirdjanov 为 AFC 英文注册拼写，待本土官方来源补充 Sadirjanov 等可能别名。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；Sadirdjanov 为 AFC 英文注册拼写，待本土官方来源补充 Sadirjanov 等可能别名。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Sukhrob Sadirdjanov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-mekhrojbek-sirojiddinov-2009",
@@ -452,20 +644,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-03-28",
     "age_band": "u17",
-    "jersey_number": 12,
     "primary_position": "Goalkeeper",
     "height_cm": 188,
     "weight_kg": 85,
     "registration_club": {
       "name": "RFA",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "RFA",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -477,13 +672,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 12；AFC 报道记录其在对韩国的八强点球大战扑出点球。"
+        "note": "Official final registration shirt number 12."
       }
     ],
     "external_links": [
@@ -505,9 +702,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "报名字段来自 AFC 最终名单，赛事角色由 AFC 八强战报道交叉确认；local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "报名字段来自 AFC 最终名单，赛事角色由 AFC 八强战报道交叉确认；local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mekhrojbek Sirojiddinov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-mirjamol-anvarov-2009",
@@ -516,20 +732,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-06-12",
     "age_band": "u17",
-    "jersey_number": 13,
     "primary_position": "Defender",
     "height_cm": 178,
     "weight_kg": 70,
     "registration_club": {
       "name": "ODIL JUNIOR",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "ODIL JUNIOR",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -540,13 +759,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 13。"
+        "note": "Official final registration shirt number 13."
       }
     ],
     "external_links": [
@@ -563,9 +784,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Mirjamol Anvarov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-muhammadodilkhon-orifkhonov-2009",
@@ -574,20 +814,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-06-12",
     "age_band": "u17",
-    "jersey_number": 14,
     "primary_position": "Midfielder",
     "height_cm": 175,
     "weight_kg": 66,
     "registration_club": {
       "name": "ODIL JUNIOR",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "ODIL JUNIOR",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -598,13 +841,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 14。"
+        "note": "Official final registration shirt number 14."
       }
     ],
     "external_links": [
@@ -621,9 +866,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；AFC 使用 Muhammadodilkhon Orifkhonov，待本土官方来源补充其他转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；AFC 使用 Muhammadodilkhon Orifkhonov，待本土官方来源补充其他转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Muhammadodilkhon Orifkhonov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-nurmuhammad-uktamov-2009",
@@ -632,20 +896,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-06-23",
     "age_band": "u17",
-    "jersey_number": 15,
     "primary_position": "Midfielder",
     "height_cm": 180,
     "weight_kg": 74,
     "registration_club": {
       "name": "Pakhtakor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Pakhtakor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -656,13 +923,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 15。"
+        "note": "Official final registration shirt number 15."
       }
     ],
     "external_links": [
@@ -674,9 +943,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Nurmuhammad Uktamov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-adis-abdunabiev-2009",
@@ -685,20 +973,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-12-10",
     "age_band": "u17",
-    "jersey_number": 16,
     "primary_position": "Defender",
     "height_cm": 171,
     "weight_kg": 62,
     "registration_club": {
       "name": "Oqtepa",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Oqtepa",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -709,13 +1000,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 16。"
+        "note": "Official final registration shirt number 16."
       }
     ],
     "external_links": [
@@ -732,9 +1025,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Adis Abdunabiev in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-jakhongirmirzo-uktamboev-2009",
@@ -743,20 +1055,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-07-10",
     "age_band": "u17",
-    "jersey_number": 17,
     "primary_position": "Defender",
     "height_cm": 171,
     "weight_kg": 62,
     "registration_club": {
       "name": "FC Bunyodkor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "FC Bunyodkor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -767,13 +1082,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 17。"
+        "note": "Official final registration shirt number 17."
       }
     ],
     "external_links": [
@@ -790,9 +1107,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；AFC 使用 Jakhongirmirzo Uktamboev，待本土官方来源补充其他转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；AFC 使用 Jakhongirmirzo Uktamboev，待本土官方来源补充其他转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jakhongirmirzo Uktamboev in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-farrukh-khayitmurodov-2009",
@@ -801,20 +1137,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-01-13",
     "age_band": "u17",
-    "jersey_number": 18,
     "primary_position": "Midfielder",
     "height_cm": 176,
     "weight_kg": 70,
     "registration_club": {
       "name": "Pakhtakor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Pakhtakor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -825,13 +1164,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 18。"
+        "note": "Official final registration shirt number 18."
       }
     ],
     "external_links": [
@@ -843,9 +1184,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Farrukh Khayitmurodov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-akhrorbek-ravshanbekov-2009",
@@ -854,20 +1214,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-05-23",
     "age_band": "u17",
-    "jersey_number": 19,
     "primary_position": "Midfielder",
     "height_cm": 173,
     "weight_kg": 63,
     "registration_club": {
       "name": "PFC Andijan",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "PFC Andijan",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -878,13 +1241,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 19。"
+        "note": "Official final registration shirt number 19."
       }
     ],
     "external_links": [
@@ -901,9 +1266,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Akhrorbek Ravshanbekov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-laziz-abduraimov-2009",
@@ -912,20 +1296,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-10-26",
     "age_band": "u17",
-    "jersey_number": 20,
     "primary_position": "Forward",
     "height_cm": 190,
     "weight_kg": 77,
     "registration_club": {
       "name": "FC Bunyodkor",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "FC Bunyodkor",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -937,13 +1324,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 20。"
+        "note": "Official final registration shirt number 20."
       }
     ],
     "external_links": [
@@ -960,9 +1349,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Laziz Abduraimov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-abdulboriy-zoidjonov-2009",
@@ -971,20 +1379,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-11-23",
     "age_band": "u17",
-    "jersey_number": 21,
     "primary_position": "Goalkeeper",
     "height_cm": 186,
     "weight_kg": 79,
     "registration_club": {
       "name": "PFC Lokomotiv",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "PFC Lokomotiv",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -995,13 +1406,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 21。"
+        "note": "Official final registration shirt number 21."
       }
     ],
     "external_links": [
@@ -1013,9 +1426,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；暂无独立官方本土文字来源，local_name 暂保留 AFC 英文转写。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Abdulboriy Zoidjonov in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   },
   {
     "id": "uz-rustam-aliev-2009",
@@ -1024,20 +1456,23 @@
     "country": "Uzbekistan",
     "birth_date": "2009-05-30",
     "age_band": "u17",
-    "jersey_number": 23,
     "primary_position": "Forward",
     "height_cm": 194,
     "weight_kg": 80,
     "registration_club": {
       "name": "Surkhon",
-      "country": "Uzbekistan"
+      "country": "Uzbekistan",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 终报名归属",
         "organization": "Surkhon",
         "country": "Uzbekistan",
-        "note": "AFC U17 2026 终报名表登记。"
+        "note": "AFC U17 2026 终报名表登记。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -1049,13 +1484,15 @@
     "tournament_participation": [
       {
         "competition_id": "afc-u17-2026",
-        "label": "Uzbekistan U17 2026 终报名",
+        "label": "AFC U17 Asian Cup 2026 Uzbekistan final squad",
         "team": "Uzbekistan U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "官方终报名号码 23。"
+        "note": "Official final registration shirt number 23."
       }
     ],
     "external_links": [
@@ -1072,8 +1509,27 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-12",
-      "notes": "基础字段来自 AFC 最终报名表；与 9 号 Asilbek Aliev 同姓但生日和俱乐部不同，按独立球员建档。"
-    }
+      "last_checked": "2026-07-19",
+      "notes": "基础字段来自 AFC 最终报名表；与 9 号 Asilbek Aliev 同姓但生日和俱乐部不同，按独立球员建档。 AFC U17 2026 final-squad number and tournament-time organization were normalized on 2026-07-19; AFC representation does not establish birthplace or naturalization status."
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 Asian Cup 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Rustam Aliev in Uzbekistan's 23-player U17 final squad and records the tournament-time club snapshot."
+      }
+    ]
   }
 ]
