@@ -9,6 +9,7 @@ import {
   normalizeCountry
 } from "./lib/overseas-status.mjs";
 import { validateJsonSchemas } from "./validate-json-schemas.mjs";
+import { loadForecastInput, validateForecastInput } from "./lib/world-cup-forecast.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -2250,6 +2251,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   const playerNameOverrides = JSON.parse(
     await fs.readFile(path.join(paths.raw, "player-name-overrides.json"), "utf8")
   );
+  validateForecastInput(await loadForecastInput());
   const playerIds = new Set();
   const playerIdentityKeys = new Map();
   const tournamentIds = new Set(dataset.tournaments.map((item) => item.id));

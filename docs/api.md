@@ -11,12 +11,14 @@
 | `data/site/players.json` | 前端球员列表，已合并姓名覆盖和 Transfermarkt 身价快照。 |
 | `data/site/overview.json` | 首页、赛事页、留洋页、专题页使用的聚合数据。 |
 | `data/site/meta.json` | 数据生成日期、构建状态、样本声明、数据集质量摘要和目录记录质量。 |
+| `data/site/world-cup-forecast.json` | 2030—2042 世界杯预测的元数据、假设、回测、概率、区间和来源。 |
 
 本地预览时 URL 类似：
 
 - `http://127.0.0.1:4173/data/site/players.json`
 - `http://127.0.0.1:4173/data/site/overview.json`
 - `http://127.0.0.1:4173/data/site/meta.json`
+- `http://127.0.0.1:4173/data/site/world-cup-forecast.json`
 
 GitHub Pages 上的 URL 取决于仓库 Pages 地址和路径。
 
