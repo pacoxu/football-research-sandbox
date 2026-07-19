@@ -264,7 +264,7 @@ erDiagram
 | `overseas_records` | `countries[].featured_records` | 留洋精选记录；不是官方全量人数表。 |
 | `dossiers` | `data/raw/dossiers.json` | 深度专题档案。 |
 | `tournament_archive` | `data/raw/tournament-archive.json` | 历史赛事归档和中国队相关结果。 |
-| `youth_development_systems` | `data/raw/youth-development-systems.json` | 日韩体系稳定结构、年度快照、竞赛 ID 和官方来源。 |
+| `youth_development_systems` | `data/raw/youth-development-systems.json` | 中国、日韩与北欧体系稳定结构、年度快照、竞赛 ID 和官方来源。 |
 
 ## JSON 字段
 
