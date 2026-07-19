@@ -1,3 +1,12 @@
+import {
+  buildCoachCatalog,
+  buildProjectCatalog,
+  buildU20Honours,
+  buildYouthSystemComparison,
+  deriveQualityStatus,
+  getSourceTier
+} from "./data-insights.js";
+
 const page = document.body.dataset.page;
 const pageDate = document.body.dataset.date || "2026-06-25";
 const LANGUAGE_STORAGE_KEY = "youth-tracker-language";
@@ -20,6 +29,7 @@ const state = {
   language: "zh",
   players: [],
   overview: null,
+  meta: null,
   enrichedPlayers: [],
   playerFilters: {
     query: "",
@@ -47,6 +57,19 @@ const state = {
     bucket: "all",
     teamLevel: "all",
     year: "all"
+  },
+  dataCenter: {
+    view: "quality",
+    overviewError: null,
+    metaError: null,
+    projectQuery: "",
+    projectCountry: "all",
+    projectCategory: "all",
+    projectStatus: "all",
+    coachQuery: "",
+    coachCategory: "all",
+    coachCountry: "all",
+    coachStatus: "all"
   }
 };
 
@@ -70,6 +93,8 @@ const UI_COPY = {
     "page.pathways.description": "比较日本、韩国、挪威、丹麦和瑞典的学校足球、俱乐部学院、人才识别与职业桥梁。",
     "page.coaches.title": "青训教练 | 青训球员追踪站",
     "page.coaches.description": "查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。",
+    "page.data-center.title": "数据质量与对比 | 青训球员追踪站",
+    "page.data-center.description": "查看研究样本的数据完整度、来源等级、复核时效、国家青训对比、项目目录与教练目录。",
     "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
     "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
     "site.kicker": "青训追踪台",
@@ -81,6 +106,7 @@ const UI_COPY = {
     "nav.overseas": "留洋",
     "nav.pathways": "青训体系",
     "nav.coaches": "青训教练",
+    "nav.dataCenter": "数据中心",
     "header.language": "语言",
     "common.loading": "加载中",
     "common.loadingData": "数据载入中",
@@ -308,6 +334,75 @@ const UI_COPY = {
     "pathways.viewPlayers": "查看本站样本（{count}）",
     "pathways.noPlayers": "当前无关联样本",
     "pathways.sourceChecked": "最后核查：{date}",
+    "dataCenter.hero.eyebrow": "Data Quality & Comparison",
+    "dataCenter.hero.title": "数据质量与对比中心",
+    "dataCenter.hero.text": "用同一口径查看覆盖质量、国家青训路径、项目与教练目录。",
+    "dataCenter.sampleNotice": "本站统计仅代表仓库研究样本，不代表官方全量。",
+    "dataCenter.meta.eyebrow": "Build Metadata",
+    "dataCenter.meta.generated": "数据生成：{date}",
+    "dataCenter.meta.commit": "构建提交：{value}",
+    "dataCenter.meta.unstamped": "本地构建（未注入 commit）",
+    "dataCenter.meta.deployed": "部署构建",
+    "dataCenter.meta.unavailable": "元信息不可用；目录仍可按现有聚合数据浏览。",
+    "dataCenter.tabs.aria": "数据中心视图",
+    "dataCenter.tabs.quality": "覆盖质量",
+    "dataCenter.tabs.countries": "国家对比",
+    "dataCenter.tabs.projects": "青训项目",
+    "dataCenter.tabs.coaches": "教练目录",
+    "dataCenter.quality.eyebrow": "Coverage Quality",
+    "dataCenter.quality.title": "数据集覆盖与待补字段",
+    "dataCenter.quality.empty": "当前没有可展示的质量元信息。",
+    "dataCenter.quality.loadError": "质量元信息加载失败；其他目录仍可继续浏览。",
+    "dataCenter.quality.datasets": "数据集",
+    "dataCenter.quality.records": "记录",
+    "dataCenter.quality.stale": "过期",
+    "dataCenter.quality.review": "待复核",
+    "dataCenter.quality.checked": "核查范围：{oldest} — {newest}",
+    "dataCenter.quality.sourceTier": "最佳来源等级分布",
+    "dataCenter.quality.missing": "待补字段",
+    "dataCenter.quality.noMissing": "当前未识别待补字段",
+    "dataCenter.countries.eyebrow": "Pathway Comparison",
+    "dataCenter.countries.title": "五国青训路径矩阵",
+    "dataCenter.countries.note": "只比较仓库已经按相同结构收录的国家体系，不代表国家青训实力排名。",
+    "dataCenter.countries.empty": "当前没有可展示的国家青训路径数据。",
+    "dataCenter.countries.loadError": "国家青训路径数据加载失败。",
+    "dataCenter.countries.country": "国家",
+    "dataCenter.countries.nodes": "体系节点",
+    "dataCenter.countries.categories": "注册入口",
+    "dataCenter.countries.ages": "年龄范围",
+    "dataCenter.countries.organizations": "组织类型",
+    "dataCenter.countries.types": "项目类型",
+    "dataCenter.countries.sources": "官方来源",
+    "dataCenter.honours.eyebrow": "Tournament Honours",
+    "dataCenter.honours.title": "1985—2025 U20 历史荣誉榜",
+    "dataCenter.honours.note": "FIFA 与 AFC 分开统计，只纳入已完成届次；历史代表队名称保持原样。",
+    "dataCenter.honours.empty": "当前没有符合口径的已完成 U20 赛事。",
+    "dataCenter.honours.loadError": "U20 赛事档案加载失败。",
+    "dataCenter.honours.editions": "{count} 届已完成赛事",
+    "dataCenter.honours.team": "代表队",
+    "dataCenter.honours.titles": "冠军",
+    "dataCenter.honours.runners": "亚军",
+    "dataCenter.honours.finals": "决赛",
+    "dataCenter.projects.eyebrow": "Programme Directory",
+    "dataCenter.projects.title": "青训项目目录",
+    "dataCenter.projects.searchPlaceholder": "名称、国家或项目类型",
+    "dataCenter.projects.empty": "没有符合当前筛选的青训项目。",
+    "dataCenter.projects.loadError": "青训项目数据加载失败。",
+    "dataCenter.coaches.eyebrow": "Coach Directory",
+    "dataCenter.coaches.title": "教练目录",
+    "dataCenter.coaches.searchPlaceholder": "姓名、机构或岗位",
+    "dataCenter.coaches.empty": "没有符合当前筛选的教练记录。",
+    "dataCenter.coaches.loadError": "教练数据加载失败。",
+    "dataCenter.filters.search": "搜索",
+    "dataCenter.filters.country": "国家 / 国籍",
+    "dataCenter.filters.category": "类别",
+    "dataCenter.filters.status": "质量状态",
+    "dataCenter.filters.all": "全部",
+    "dataCenter.results": "显示 {count} / {total}",
+    "dataCenter.card.checked": "核查：{date}",
+    "dataCenter.card.sources": "来源 {count} 条 · 等级 {tier}",
+    "dataCenter.card.missing": "待补：{fields}",
+    "dataCenter.card.open": "查看来源或详情",
     "dossier.breadcrumb.home": "首页",
     "dossier.breadcrumb.detail": "青训专题",
     "dossier.hero.eyebrow": "Academy Dossier",
@@ -619,6 +714,8 @@ const UI_COPY = {
     "page.pathways.description": "Compare school football, club academies, talent identification and professional bridges across Japan, South Korea, Norway, Denmark and Sweden.",
     "page.coaches.title": "Youth Coaches | Youth Player Tracking Desk",
     "page.coaches.description": "Explore Chinese grassroots youth coaches and men's youth national-team staffs with organizations, age groups, and source links.",
+    "page.data-center.title": "Data Quality and Comparison | Youth Player Tracking Desk",
+    "page.data-center.description": "Review sample completeness, source tiers, freshness, country comparisons, programme directories and coach directories.",
     "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
     "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
     "site.kicker": "Youth Tracking Desk",
@@ -630,6 +727,7 @@ const UI_COPY = {
     "nav.overseas": "Overseas",
     "nav.pathways": "Youth Systems",
     "nav.coaches": "Coaches",
+    "nav.dataCenter": "Data",
     "header.language": "Language",
     "common.loading": "Loading",
     "common.loadingData": "Loading data",
@@ -857,6 +955,75 @@ const UI_COPY = {
     "pathways.viewPlayers": "View site samples ({count})",
     "pathways.noPlayers": "No linked samples yet",
     "pathways.sourceChecked": "Last checked: {date}",
+    "dataCenter.hero.eyebrow": "Data Quality & Comparison",
+    "dataCenter.hero.title": "Data quality and comparison centre",
+    "dataCenter.hero.text": "Review coverage quality, national pathways, programmes and coaches under one consistent scope.",
+    "dataCenter.sampleNotice": "Statistics describe repository research samples, not official complete totals.",
+    "dataCenter.meta.eyebrow": "Build Metadata",
+    "dataCenter.meta.generated": "Data generated: {date}",
+    "dataCenter.meta.commit": "Build commit: {value}",
+    "dataCenter.meta.unstamped": "Local build (commit not stamped)",
+    "dataCenter.meta.deployed": "Deployed build",
+    "dataCenter.meta.unavailable": "Metadata is unavailable; directories remain browsable from the current aggregate.",
+    "dataCenter.tabs.aria": "Data centre views",
+    "dataCenter.tabs.quality": "Coverage quality",
+    "dataCenter.tabs.countries": "Country comparison",
+    "dataCenter.tabs.projects": "Programmes",
+    "dataCenter.tabs.coaches": "Coaches",
+    "dataCenter.quality.eyebrow": "Coverage Quality",
+    "dataCenter.quality.title": "Dataset coverage and missing fields",
+    "dataCenter.quality.empty": "No quality metadata is available.",
+    "dataCenter.quality.loadError": "Quality metadata failed to load; the other directories remain available.",
+    "dataCenter.quality.datasets": "Datasets",
+    "dataCenter.quality.records": "Records",
+    "dataCenter.quality.stale": "Stale",
+    "dataCenter.quality.review": "Needs review",
+    "dataCenter.quality.checked": "Checked range: {oldest} — {newest}",
+    "dataCenter.quality.sourceTier": "Best-source tier distribution",
+    "dataCenter.quality.missing": "Missing recommended fields",
+    "dataCenter.quality.noMissing": "No missing recommended field detected",
+    "dataCenter.countries.eyebrow": "Pathway Comparison",
+    "dataCenter.countries.title": "Five-country pathway matrix",
+    "dataCenter.countries.note": "Only systems stored under the same repository structure are compared; this is not a ranking of national development strength.",
+    "dataCenter.countries.empty": "No national pathway data is available.",
+    "dataCenter.countries.loadError": "National pathway data failed to load.",
+    "dataCenter.countries.country": "Country",
+    "dataCenter.countries.nodes": "System nodes",
+    "dataCenter.countries.categories": "Entry routes",
+    "dataCenter.countries.ages": "Age bands",
+    "dataCenter.countries.organizations": "Organizations",
+    "dataCenter.countries.types": "Programme types",
+    "dataCenter.countries.sources": "Official sources",
+    "dataCenter.honours.eyebrow": "Tournament Honours",
+    "dataCenter.honours.title": "1985–2025 U20 honours tables",
+    "dataCenter.honours.note": "FIFA and AFC are counted separately and only completed editions are included; historical team labels are preserved.",
+    "dataCenter.honours.empty": "No completed U20 tournaments match the current scope.",
+    "dataCenter.honours.loadError": "U20 tournament archive data failed to load.",
+    "dataCenter.honours.editions": "{count} completed editions",
+    "dataCenter.honours.team": "Team",
+    "dataCenter.honours.titles": "Titles",
+    "dataCenter.honours.runners": "Runners-up",
+    "dataCenter.honours.finals": "Finals",
+    "dataCenter.projects.eyebrow": "Programme Directory",
+    "dataCenter.projects.title": "Youth programme directory",
+    "dataCenter.projects.searchPlaceholder": "Name, country or programme type",
+    "dataCenter.projects.empty": "No youth programme matches the current filters.",
+    "dataCenter.projects.loadError": "Youth programme data failed to load.",
+    "dataCenter.coaches.eyebrow": "Coach Directory",
+    "dataCenter.coaches.title": "Coach directory",
+    "dataCenter.coaches.searchPlaceholder": "Name, organization or role",
+    "dataCenter.coaches.empty": "No coach record matches the current filters.",
+    "dataCenter.coaches.loadError": "Coach data failed to load.",
+    "dataCenter.filters.search": "Search",
+    "dataCenter.filters.country": "Country / nationality",
+    "dataCenter.filters.category": "Category",
+    "dataCenter.filters.status": "Quality status",
+    "dataCenter.filters.all": "All",
+    "dataCenter.results": "Showing {count} / {total}",
+    "dataCenter.card.checked": "Checked: {date}",
+    "dataCenter.card.sources": "{count} sources · tier {tier}",
+    "dataCenter.card.missing": "Missing: {fields}",
+    "dataCenter.card.open": "Open source or details",
     "dossier.breadcrumb.home": "Home",
     "dossier.breadcrumb.detail": "Academy dossier",
     "dossier.hero.eyebrow": "Academy Dossier",
@@ -1281,6 +1448,7 @@ const PAGE_METADATA = {
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
+  "data-center": { title: "page.data-center.title", description: "page.data-center.description" },
   "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" }
 };
 
@@ -1530,6 +1698,37 @@ const VERIFICATION_STATUS_LABELS = {
   "mixed-source": { zh: "多源混合", en: "Mixed source" }
 };
 
+const DATA_QUALITY_STATUS_LABELS = {
+  complete: { zh: "完整", en: "Complete" },
+  mixed: { zh: "多源说明", en: "Mixed" },
+  partial: { zh: "部分完整", en: "Partial" },
+  "needs-review": { zh: "待复核", en: "Needs review" },
+  stale: { zh: "已过期", en: "Stale" },
+  excluded: { zh: "已排除", en: "Excluded" }
+};
+
+const DATA_PROJECT_CATEGORY_LABELS = {
+  "research-project": { zh: "研究项目", en: "Research project" },
+  "national-programme": { zh: "国家体系项目", en: "National programme" }
+};
+
+const DATA_COACH_CATEGORY_LABELS = {
+  "youth-development": { zh: "基层 / 青训教练", en: "Youth-development coach" },
+  "china-national-youth": { zh: "中国国字号青年队", en: "China national youth" },
+  "big-five": { zh: "五大联赛", en: "Big-five leagues" },
+  "asia-expanded": { zh: "亚洲扩展", en: "Asian expanded scope" }
+};
+
+const DATA_SOURCE_TIER_LABELS = {
+  1: { zh: "1 · 足协 / 官方", en: "1 · Association / official" },
+  2: { zh: "2 · 俱乐部 / 学校", en: "2 · Club / school" },
+  3: { zh: "3 · 官方统计", en: "3 · Official statistics" },
+  4: { zh: "4 · 可靠媒体", en: "4 · Reliable media" },
+  5: { zh: "5 · 公共数据库", en: "5 · Public database" },
+  6: { zh: "6 · 线索来源", en: "6 · Lead source" },
+  unclassified: { zh: "未分类", en: "Unclassified" }
+};
+
 const SQUAD_STATUS_LABELS = {
   registered: { zh: "已报名", en: "Registered" },
   tracked: { zh: "观察样本", en: "Tracked" }
@@ -1677,13 +1876,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 async function boot() {
   try {
-    const [players, overview] = await Promise.all([
-      fetchJson("./data/site/players.json"),
-      fetchJson("./data/site/overview.json")
+    const dataCenterPage = page === "data-center";
+    const [players, overview, meta] = await Promise.all([
+      dataCenterPage ? Promise.resolve([]) : fetchJson("./data/site/players.json"),
+      dataCenterPage
+        ? fetchJson("./data/site/overview.json").catch((error) => {
+            state.dataCenter.overviewError = error;
+            return {};
+          })
+        : fetchJson("./data/site/overview.json"),
+      dataCenterPage
+        ? fetchJson("./data/site/meta.json").catch((error) => {
+            state.dataCenter.metaError = error;
+            return null;
+          })
+        : Promise.resolve(null)
     ]);
 
     state.players = players;
     state.overview = overview;
+    state.meta = meta;
     state.enrichedPlayers = players.map((player) => enrichPlayer(player, overview));
 
     setActiveNavigation();
@@ -1741,6 +1953,12 @@ async function boot() {
 
     if (page === "coaches") {
       renderCoachesPage();
+      return;
+    }
+
+    if (page === "data-center") {
+      initializeDataCenterPage();
+      renderDataCenterPage();
     }
   } catch (error) {
     console.error(error);
@@ -5953,6 +6171,337 @@ function renderPathwaysPage() {
 
   const hashTarget = window.location.hash ? document.getElementById(decodeURIComponent(window.location.hash.slice(1))) : null;
   hashTarget?.scrollIntoView({ block: "center" });
+}
+
+function getCatalogQuality(kind, entry) {
+  const published = state.meta?.catalog_quality?.[kind]?.[entry.id];
+  if (published) return published;
+  const sourceTiers = (entry.sources ?? []).map(getSourceTier).filter(Number.isInteger);
+  return {
+    id: entry.id,
+    status: deriveQualityStatus({
+      verificationStatus: entry.verification_status,
+      confidence: entry.confidence,
+      missingFields: entry.missing_fields ?? [],
+      sources: entry.sources ?? []
+    }),
+    source_tier: sourceTiers.length > 0 ? Math.min(...sourceTiers) : null,
+    checked_at: entry.checked_at ?? null,
+    missing_fields: entry.missing_fields ?? []
+  };
+}
+
+function initializeDataCenterPage() {
+  const params = new URLSearchParams(window.location.search);
+  const allowedViews = new Set(["quality", "countries", "projects", "coaches"]);
+  state.dataCenter.view = allowedViews.has(params.get("view")) ? params.get("view") : "quality";
+  state.dataCenter.projectQuery = params.get("pq") ?? "";
+  state.dataCenter.projectCountry = params.get("pcountry") ?? "all";
+  state.dataCenter.projectCategory = params.get("pcategory") ?? "all";
+  state.dataCenter.projectStatus = params.get("pstatus") ?? "all";
+  state.dataCenter.coachQuery = params.get("cq") ?? "";
+  state.dataCenter.coachCategory = params.get("ccategory") ?? "all";
+  state.dataCenter.coachCountry = params.get("ccountry") ?? "all";
+  state.dataCenter.coachStatus = params.get("cstatus") ?? "all";
+
+  document.querySelector("#dataViewTabs")?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-view]");
+    if (!button) return;
+    state.dataCenter.view = button.dataset.view;
+    replaceQueryParams({ view: state.dataCenter.view });
+    renderDataCenterView();
+  });
+
+  const controls = [
+    ["#dataProjectQuery", "input", "projectQuery", "pq"],
+    ["#dataProjectCountry", "change", "projectCountry", "pcountry"],
+    ["#dataProjectCategory", "change", "projectCategory", "pcategory"],
+    ["#dataProjectStatus", "change", "projectStatus", "pstatus"],
+    ["#dataCoachQuery", "input", "coachQuery", "cq"],
+    ["#dataCoachCategory", "change", "coachCategory", "ccategory"],
+    ["#dataCoachCountry", "change", "coachCountry", "ccountry"],
+    ["#dataCoachStatus", "change", "coachStatus", "cstatus"]
+  ];
+  for (const [selector, eventName, stateKey, queryKey] of controls) {
+    document.querySelector(selector)?.addEventListener(eventName, (event) => {
+      state.dataCenter[stateKey] = event.target.value;
+      replaceQueryParams({ [queryKey]: event.target.value });
+      if (stateKey.startsWith("project")) renderProjectDirectory();
+      else renderCoachDirectory();
+    });
+  }
+}
+
+function renderDataCenterPage() {
+  renderDataBuildMeta();
+  renderDataQuality();
+  renderDataCountryComparison();
+  renderDataDirectoryControls();
+  renderProjectDirectory();
+  renderCoachDirectory();
+  renderDataCenterView();
+}
+
+function renderDataCenterView() {
+  document.querySelectorAll("#dataViewTabs [data-view]").forEach((button) => {
+    const active = button.dataset.view === state.dataCenter.view;
+    button.classList.toggle("is-active", active);
+    button.setAttribute("aria-selected", String(active));
+  });
+  document.querySelectorAll("[data-panel]").forEach((panel) => {
+    panel.hidden = panel.dataset.panel !== state.dataCenter.view;
+  });
+}
+
+function renderDataBuildMeta() {
+  const node = document.querySelector("#dataBuildMeta");
+  const notice = document.querySelector("#dataSampleNotice");
+  if (!node) return;
+  if (!state.meta) {
+    node.innerHTML = `
+      <p class="eyebrow">${escapeHtml(t("dataCenter.meta.eyebrow"))}</p>
+      <p class="hero-side-note">${escapeHtml(t("dataCenter.meta.unavailable"))}</p>
+    `;
+    return;
+  }
+  if (notice) notice.textContent = localizeText(state.meta.sample_notice, t("dataCenter.sampleNotice"));
+  const commit = state.meta.build?.commit ? state.meta.build.commit.slice(0, 10) : t("dataCenter.meta.unstamped");
+  node.innerHTML = `
+    <p class="eyebrow">${escapeHtml(t("dataCenter.meta.eyebrow"))}</p>
+    <h2>${escapeHtml(state.meta.build?.status === "deployed" ? t("dataCenter.meta.deployed") : t("dataCenter.meta.unstamped"))}</h2>
+    <p class="hero-side-note">${escapeHtml(t("dataCenter.meta.generated", { date: formatDate(state.meta.generated_at) }))}</p>
+    <p class="hero-side-note">${escapeHtml(t("dataCenter.meta.commit", { value: commit }))}</p>
+  `;
+}
+
+function renderDataQuality() {
+  const summary = document.querySelector("#dataQualitySummary");
+  const grid = document.querySelector("#dataQualityDatasets");
+  const empty = document.querySelector("#dataQualityEmpty");
+  const meta = state.meta;
+  if (!summary || !grid || !empty) return;
+  if (!meta) {
+    summary.innerHTML = "";
+    grid.innerHTML = "";
+    empty.textContent = t(state.dataCenter.metaError ? "dataCenter.quality.loadError" : "dataCenter.quality.empty");
+    empty.hidden = false;
+    return;
+  }
+  empty.hidden = true;
+  const metrics = [
+    [meta.coverage_summary.dataset_count, t("dataCenter.quality.datasets")],
+    [meta.coverage_summary.record_count, t("dataCenter.quality.records")],
+    [meta.coverage_summary.stale_records, t("dataCenter.quality.stale")],
+    [meta.coverage_summary.needs_review_records, t("dataCenter.quality.review")]
+  ];
+  summary.innerHTML = metrics
+    .map(([value, label]) => `<div class="overview-item"><strong class="overview-value">${escapeHtml(value)}</strong><span class="overview-label">${escapeHtml(label)}</span></div>`)
+    .join("");
+  grid.innerHTML = meta.datasets.map(renderDatasetQualityCard).join("");
+}
+
+function renderDatasetQualityCard(dataset) {
+  const statusChips = Object.entries(dataset.quality)
+    .filter(([, count]) => count > 0)
+    .map(([status, count]) => `<span class="chip quality-chip quality-${escapeHtml(status)}">${escapeHtml(getLabel(DATA_QUALITY_STATUS_LABELS, status, status))} ${escapeHtml(count)}</span>`)
+    .join("");
+  const sourceTiers = Object.entries(dataset.source_tiers)
+    .filter(([, count]) => count > 0)
+    .map(([tier, count]) => `${getLabel(DATA_SOURCE_TIER_LABELS, tier, tier)}: ${count}`)
+    .join(" · ");
+  const missing = dataset.missing_fields.length > 0
+    ? dataset.missing_fields.slice(0, 5).map((entry) => `${humanizeTag(entry.field)} (${entry.count})`).join(" · ")
+    : t("dataCenter.quality.noMissing");
+  return `
+    <article class="data-quality-card">
+      <div class="section-head compact-head">
+        <h3>${escapeHtml(localizeText(dataset.label, dataset.id))}</h3>
+        <strong>${escapeHtml(dataset.record_count)}</strong>
+      </div>
+      <div class="chip-row">${statusChips}</div>
+      <p class="small-note">${escapeHtml(t("dataCenter.quality.checked", {
+        oldest: dataset.checked_at.oldest ? formatDate(dataset.checked_at.oldest) : t("common.pending"),
+        newest: dataset.checked_at.newest ? formatDate(dataset.checked_at.newest) : t("common.pending")
+      }))}</p>
+      <p><strong>${escapeHtml(t("dataCenter.quality.sourceTier"))}</strong><br><span class="small-note">${escapeHtml(sourceTiers)}</span></p>
+      <p><strong>${escapeHtml(t("dataCenter.quality.missing"))}</strong><br><span class="small-note">${escapeHtml(missing)}</span></p>
+    </article>
+  `;
+}
+
+function renderDataCountryComparison() {
+  const matrix = document.querySelector("#dataPathwayComparison");
+  const matrixEmpty = document.querySelector("#dataCountriesEmpty");
+  const honoursNode = document.querySelector("#dataHonoursTables");
+  const honoursEmpty = document.querySelector("#dataHonoursEmpty");
+  if (!matrix || !matrixEmpty || !honoursNode || !honoursEmpty) return;
+  const rows = buildYouthSystemComparison(state.overview ?? {});
+  matrixEmpty.textContent = t(state.dataCenter.overviewError ? "dataCenter.countries.loadError" : "dataCenter.countries.empty");
+  matrixEmpty.hidden = rows.length > 0;
+  matrix.innerHTML = rows.length === 0 ? "" : `
+    <table class="data-table">
+      <thead><tr>
+        <th>${escapeHtml(t("dataCenter.countries.country"))}</th>
+        <th>${escapeHtml(t("dataCenter.countries.nodes"))}</th>
+        <th>${escapeHtml(t("dataCenter.countries.categories"))}</th>
+        <th>${escapeHtml(t("dataCenter.countries.ages"))}</th>
+        <th>${escapeHtml(t("dataCenter.countries.organizations"))}</th>
+        <th>${escapeHtml(t("dataCenter.countries.types"))}</th>
+        <th>${escapeHtml(t("dataCenter.countries.sources"))}</th>
+      </tr></thead>
+      <tbody>${rows.map((row) => `
+        <tr>
+          <th>${escapeHtml(formatCountryName(row.country))}</th>
+          <td>${escapeHtml(row.system_nodes)}</td>
+          <td>${escapeHtml(row.registration_categories)}</td>
+          <td>${escapeHtml(row.age_bands.join(" / "))}</td>
+          <td>${escapeHtml(row.organization_types.map((type) => getLabel(ORGANIZATION_TYPE_LABELS, type, type)).join(" / "))}</td>
+          <td>${escapeHtml(row.programme_types.map((type) => getLabel(YOUTH_COMPETITION_TYPE_LABELS, type, type)).join(" / "))}</td>
+          <td>${escapeHtml(row.source_count)}<br><span class="small-note">${escapeHtml(formatDate(row.checked_at))}</span></td>
+        </tr>
+      `).join("")}</tbody>
+    </table>
+  `;
+  const honours = buildU20Honours(state.overview ?? {});
+  const hasHonours = honours.fifa.editions > 0 || honours.afc.editions > 0;
+  honoursEmpty.textContent = t(state.dataCenter.overviewError ? "dataCenter.honours.loadError" : "dataCenter.honours.empty");
+  honoursEmpty.hidden = hasHonours;
+  honoursNode.innerHTML = hasHonours ? [
+    ["FIFA U20", honours.fifa],
+    ["AFC U20", honours.afc]
+  ].map(([label, group]) => renderHonoursTable(label, group)).join("") : "";
+}
+
+function renderHonoursTable(label, group) {
+  return `
+    <article class="data-honours-card">
+      <div class="section-head compact-head"><h3>${escapeHtml(label)}</h3><span class="small-note">${escapeHtml(t("dataCenter.honours.editions", { count: group.editions }))}</span></div>
+      <div class="table-shell">
+        <table class="data-table compact-table">
+          <thead><tr><th>${escapeHtml(t("dataCenter.honours.team"))}</th><th>${escapeHtml(t("dataCenter.honours.titles"))}</th><th>${escapeHtml(t("dataCenter.honours.runners"))}</th><th>${escapeHtml(t("dataCenter.honours.finals"))}</th></tr></thead>
+          <tbody>${group.rows.map((row) => `<tr><th>${escapeHtml(row.team)}</th><td>${row.titles}</td><td>${row.runner_ups}</td><td>${row.finals}</td></tr>`).join("")}</tbody>
+        </table>
+      </div>
+    </article>
+  `;
+}
+
+function renderDataDirectoryControls() {
+  const projects = buildProjectCatalog(state.overview ?? {});
+  const coaches = buildCoachCatalog(state.overview ?? {});
+  const qualityOptions = Object.keys(DATA_QUALITY_STATUS_LABELS).map((value) => ({ value, label: getLabel(DATA_QUALITY_STATUS_LABELS, value, value) }));
+  const projectCountries = [...new Set(projects.map((entry) => entry.country))].sort().map((value) => ({ value, label: formatCountryName(value) }));
+  const projectCategories = [...new Set(projects.map((entry) => entry.category))].map((value) => ({ value, label: getLabel(DATA_PROJECT_CATEGORY_LABELS, value, value) }));
+  const coachCategories = [...new Set(coaches.flatMap((entry) => entry.categories))].map((value) => ({ value, label: getLabel(DATA_COACH_CATEGORY_LABELS, value, value) }));
+  const coachCountries = [...new Set(coaches.map((entry) => entry.nationality).filter(Boolean))].sort().map((value) => ({ value, label: formatCountryName(value) }));
+  buildOptions(document.querySelector("#dataProjectCountry"), projectCountries, state.dataCenter.projectCountry, t("dataCenter.filters.all"));
+  buildOptions(document.querySelector("#dataProjectCategory"), projectCategories, state.dataCenter.projectCategory, t("dataCenter.filters.all"));
+  buildOptions(document.querySelector("#dataProjectStatus"), qualityOptions, state.dataCenter.projectStatus, t("dataCenter.filters.all"));
+  buildOptions(document.querySelector("#dataCoachCategory"), coachCategories, state.dataCenter.coachCategory, t("dataCenter.filters.all"));
+  buildOptions(document.querySelector("#dataCoachCountry"), coachCountries, state.dataCenter.coachCountry, t("dataCenter.filters.all"));
+  buildOptions(document.querySelector("#dataCoachStatus"), qualityOptions, state.dataCenter.coachStatus, t("dataCenter.filters.all"));
+  setControlValue("#dataProjectQuery", state.dataCenter.projectQuery);
+  setControlValue("#dataCoachQuery", state.dataCenter.coachQuery);
+}
+
+function renderProjectDirectory() {
+  const grid = document.querySelector("#dataProjectGrid");
+  const empty = document.querySelector("#dataProjectEmpty");
+  const count = document.querySelector("#dataProjectCount");
+  if (!grid || !empty || !count) return;
+  const projects = buildProjectCatalog(state.overview ?? {}).map((entry) => ({ ...entry, quality: getCatalogQuality("projects", entry) }));
+  const query = normalize(state.dataCenter.projectQuery);
+  const filtered = projects.filter((entry) => {
+    const blob = normalize([
+      ...(entry.name && typeof entry.name === "object" ? Object.values(entry.name) : [entry.name]),
+      entry.country,
+      formatCountryName(entry.country),
+      COUNTRY_LABELS.zh[entry.country],
+      COUNTRY_LABELS.en[entry.country],
+      entry.project_type,
+      getLabel(DATA_PROJECT_CATEGORY_LABELS, entry.category, entry.category),
+      ...(entry.summary && typeof entry.summary === "object" ? Object.values(entry.summary) : [entry.summary])
+    ].join(" "));
+    return (!query || blob.includes(query)) &&
+      (state.dataCenter.projectCountry === "all" || entry.country === state.dataCenter.projectCountry) &&
+      (state.dataCenter.projectCategory === "all" || entry.category === state.dataCenter.projectCategory) &&
+      (state.dataCenter.projectStatus === "all" || entry.quality.status === state.dataCenter.projectStatus);
+  });
+  count.textContent = t("dataCenter.results", { count: filtered.length, total: projects.length });
+  grid.innerHTML = filtered.map(renderProjectDirectoryCard).join("");
+  empty.textContent = t(state.dataCenter.overviewError ? "dataCenter.projects.loadError" : "dataCenter.projects.empty");
+  empty.hidden = filtered.length > 0;
+}
+
+function renderProjectDirectoryCard(entry) {
+  const tier = entry.quality.source_tier ?? "unclassified";
+  return `
+    <article class="system-card data-directory-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(getLabel(DATA_PROJECT_CATEGORY_LABELS, entry.category, entry.category))}</span>
+        <span class="chip quality-chip quality-${escapeHtml(entry.quality.status)}">${escapeHtml(getLabel(DATA_QUALITY_STATUS_LABELS, entry.quality.status, entry.quality.status))}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(entry.name))}</h3>
+      <p class="small-note">${escapeHtml(formatCountryName(entry.country))} · ${escapeHtml(getLabel(YOUTH_COMPETITION_TYPE_LABELS, entry.project_type, humanizeTag(entry.project_type)))}</p>
+      <p>${escapeHtml(localizeText(entry.summary))}</p>
+      <p class="small-note">${escapeHtml(t("dataCenter.card.sources", { count: entry.sources.length, tier: getLabel(DATA_SOURCE_TIER_LABELS, tier, tier) }))}</p>
+      <p class="small-note">${escapeHtml(t("dataCenter.card.checked", { date: entry.quality.checked_at ? formatDate(entry.quality.checked_at) : t("common.pending") }))}</p>
+      ${entry.quality.missing_fields.length > 0 ? `<p class="data-missing-note">${escapeHtml(t("dataCenter.card.missing", { fields: entry.quality.missing_fields.map(humanizeTag).join(" / ") }))}</p>` : ""}
+      ${entry.detail_url ? `<a class="inline-link" href="${escapeHtml(entry.detail_url)}"${entry.detail_url.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}>${escapeHtml(t("dataCenter.card.open"))}</a>` : ""}
+    </article>
+  `;
+}
+
+function renderCoachDirectory() {
+  const grid = document.querySelector("#dataCoachGrid");
+  const empty = document.querySelector("#dataCoachEmpty");
+  const count = document.querySelector("#dataCoachCount");
+  if (!grid || !empty || !count) return;
+  const coaches = buildCoachCatalog(state.overview ?? {}).map((entry) => ({ ...entry, quality: getCatalogQuality("coaches", entry) }));
+  const query = normalize(state.dataCenter.coachQuery);
+  const filtered = coaches.filter((entry) => {
+    const blob = normalize([
+      ...(entry.name && typeof entry.name === "object" ? Object.values(entry.name) : [entry.name]),
+      entry.local_name,
+      entry.nationality,
+      entry.nationality ? formatCountryName(entry.nationality) : "",
+      COUNTRY_LABELS.zh[entry.nationality],
+      COUNTRY_LABELS.en[entry.nationality],
+      ...entry.roles,
+      ...entry.organizations
+    ].join(" "));
+    return (!query || blob.includes(query)) &&
+      (state.dataCenter.coachCategory === "all" || entry.categories.includes(state.dataCenter.coachCategory)) &&
+      (state.dataCenter.coachCountry === "all" || entry.nationality === state.dataCenter.coachCountry) &&
+      (state.dataCenter.coachStatus === "all" || entry.quality.status === state.dataCenter.coachStatus);
+  });
+  count.textContent = t("dataCenter.results", { count: filtered.length, total: coaches.length });
+  grid.innerHTML = filtered.map(renderCoachDirectoryCard).join("");
+  empty.textContent = t(state.dataCenter.overviewError ? "dataCenter.coaches.loadError" : "dataCenter.coaches.empty");
+  empty.hidden = filtered.length > 0;
+}
+
+function renderCoachDirectoryCard(entry) {
+  const tier = entry.quality.source_tier ?? "unclassified";
+  const displayName = entry.local_name && entry.local_name !== localizeText(entry.name)
+    ? `${entry.local_name} / ${localizeText(entry.name)}`
+    : localizeText(entry.name);
+  return `
+    <article class="system-card data-directory-card">
+      <div class="chip-row">
+        ${entry.categories.map((category) => `<span class="chip">${escapeHtml(getLabel(DATA_COACH_CATEGORY_LABELS, category, category))}</span>`).join("")}
+        <span class="chip quality-chip quality-${escapeHtml(entry.quality.status)}">${escapeHtml(getLabel(DATA_QUALITY_STATUS_LABELS, entry.quality.status, entry.quality.status))}</span>
+      </div>
+      <h3>${escapeHtml(displayName)}</h3>
+      <p class="small-note">${escapeHtml(entry.nationality ? formatCountryName(entry.nationality) : t("common.pending"))}</p>
+      <p>${escapeHtml(entry.roles.join(" / ") || t("common.pending"))}</p>
+      <p class="small-note">${escapeHtml(entry.organizations.join(" · ") || t("common.pending"))}</p>
+      <p class="small-note">${escapeHtml(t("dataCenter.card.sources", { count: entry.sources.length, tier: getLabel(DATA_SOURCE_TIER_LABELS, tier, tier) }))}</p>
+      <p class="small-note">${escapeHtml(t("dataCenter.card.checked", { date: entry.quality.checked_at ? formatDate(entry.quality.checked_at) : t("common.pending") }))}</p>
+      ${entry.quality.missing_fields.length > 0 ? `<p class="data-missing-note">${escapeHtml(t("dataCenter.card.missing", { fields: entry.quality.missing_fields.map(humanizeTag).join(" / ") }))}</p>` : ""}
+      ${entry.sources[0] ? `<a class="inline-link" href="${escapeHtml(entry.sources[0].url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dataCenter.card.open"))}</a>` : ""}
+    </article>
+  `;
 }
 
 function initializeTournamentFilters() {

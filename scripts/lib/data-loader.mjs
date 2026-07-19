@@ -35,8 +35,14 @@ async function readJsonFiles(directoryPath) {
     .map((entry) => path.join(directoryPath, entry.name))
     .sort((left, right) => left.localeCompare(right));
 
-  const records = await Promise.all(files.map(readJson));
-  return records.flat();
+  const groups = await Promise.all(files.map(readJson));
+  const sourceFiles = {};
+  groups.forEach((records, index) => {
+    for (const record of records) {
+      if (record?.id) sourceFiles[record.id] = path.relative(paths.root, files[index]);
+    }
+  });
+  return { records: groups.flat(), sourceFiles };
 }
 
 export async function ensureDirectory(directoryPath) {
@@ -224,7 +230,7 @@ function applyTournamentStatistics(players, tournamentArchive = []) {
 }
 
 export async function loadDataset() {
-  const rawPlayers = await readJsonFiles(path.join(paths.raw, "players"));
+  const { records: rawPlayers, sourceFiles: playerSourceFiles } = await readJsonFiles(path.join(paths.raw, "players"));
   const playerNameOverrides = await readOptionalJson(
     path.join(paths.raw, "player-name-overrides.json"),
     {}
@@ -298,7 +304,9 @@ export async function loadDataset() {
     bigFiveAsianCoaches,
     asianCoaches,
     youthDevelopmentSystems,
-    clubNameOverrides
+    clubNameOverrides,
+    playerMarketValues,
+    playerSourceFiles
   };
 }
 

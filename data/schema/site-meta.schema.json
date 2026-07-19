@@ -1,0 +1,208 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://football-research.local/schema/site-meta.schema.json",
+  "$defs": {
+    "nullableDate": {
+      "anyOf": [
+        { "type": "null" },
+        { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" }
+      ]
+    },
+    "qualityStatus": {
+      "enum": ["complete", "mixed", "partial", "needs-review", "stale", "excluded"]
+    },
+    "qualityCounts": {
+      "type": "object",
+      "required": ["complete", "mixed", "partial", "needs-review", "stale", "excluded"],
+      "properties": {
+        "complete": { "type": "integer", "minimum": 0 },
+        "mixed": { "type": "integer", "minimum": 0 },
+        "partial": { "type": "integer", "minimum": 0 },
+        "needs-review": { "type": "integer", "minimum": 0 },
+        "stale": { "type": "integer", "minimum": 0 },
+        "excluded": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "sourceTierCounts": {
+      "type": "object",
+      "required": ["1", "2", "3", "4", "5", "6", "unclassified"],
+      "properties": {
+        "1": { "type": "integer", "minimum": 0 },
+        "2": { "type": "integer", "minimum": 0 },
+        "3": { "type": "integer", "minimum": 0 },
+        "4": { "type": "integer", "minimum": 0 },
+        "5": { "type": "integer", "minimum": 0 },
+        "6": { "type": "integer", "minimum": 0 },
+        "unclassified": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "missingField": {
+      "type": "object",
+      "required": ["field", "count"],
+      "properties": {
+        "field": { "type": "string", "minLength": 1 },
+        "count": { "type": "integer", "minimum": 1 }
+      },
+      "additionalProperties": false
+    },
+    "qualityRecord": {
+      "type": "object",
+      "required": ["id", "status", "source_tier", "checked_at", "missing_fields"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "status": { "$ref": "#/$defs/qualityStatus" },
+        "source_tier": {
+          "anyOf": [
+            { "type": "null" },
+            { "type": "integer", "minimum": 1, "maximum": 6 }
+          ]
+        },
+        "checked_at": { "$ref": "#/$defs/nullableDate" },
+        "missing_fields": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "type": "object",
+  "required": [
+    "$schema",
+    "schema_version",
+    "generated_at",
+    "build",
+    "sample_notice",
+    "coverage_summary",
+    "freshness",
+    "datasets",
+    "schemas",
+    "catalog_quality"
+  ],
+  "properties": {
+    "$schema": { "type": "string", "const": "../schema/site-meta.schema.json" },
+    "schema_version": { "const": 1 },
+    "generated_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+    "build": {
+      "type": "object",
+      "required": ["status", "commit", "built_at"],
+      "properties": {
+        "status": { "enum": ["unstamped", "deployed"] },
+        "commit": {
+          "anyOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^[0-9a-f]{40}$" }
+          ]
+        },
+        "built_at": {
+          "anyOf": [
+            { "type": "null" },
+            { "type": "string", "format": "date-time" }
+          ]
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "unstamped" } } },
+          "then": { "properties": { "commit": { "type": "null" }, "built_at": { "type": "null" } } }
+        },
+        {
+          "if": { "properties": { "status": { "const": "deployed" } } },
+          "then": {
+            "properties": {
+              "commit": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+              "built_at": { "type": "string", "format": "date-time" }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "sample_notice": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+    "coverage_summary": {
+      "type": "object",
+      "required": ["dataset_count", "record_count", "stale_records", "needs_review_records"],
+      "properties": {
+        "dataset_count": { "type": "integer", "minimum": 0 },
+        "record_count": { "type": "integer", "minimum": 0 },
+        "stale_records": { "type": "integer", "minimum": 0 },
+        "needs_review_records": { "type": "integer", "minimum": 0 }
+      },
+      "additionalProperties": false
+    },
+    "freshness": {
+      "type": "object",
+      "required": ["as_of", "audited_records", "overdue", "by_window"],
+      "properties": {
+        "as_of": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "audited_records": { "type": "integer", "minimum": 0 },
+        "overdue": { "type": "integer", "minimum": 0 },
+        "by_window": {
+          "type": "object",
+          "required": ["30", "90", "180"],
+          "properties": {
+            "30": { "type": "integer", "minimum": 0 },
+            "90": { "type": "integer", "minimum": 0 },
+            "180": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "datasets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "record_count", "quality", "source_tiers", "checked_at", "overdue_records", "missing_fields"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "label": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+          "record_count": { "type": "integer", "minimum": 0 },
+          "quality": { "$ref": "#/$defs/qualityCounts" },
+          "source_tiers": { "$ref": "#/$defs/sourceTierCounts" },
+          "checked_at": {
+            "type": "object",
+            "required": ["oldest", "newest"],
+            "properties": {
+              "oldest": { "$ref": "#/$defs/nullableDate" },
+              "newest": { "$ref": "#/$defs/nullableDate" }
+            },
+            "additionalProperties": false
+          },
+          "overdue_records": { "type": "integer", "minimum": 0 },
+          "missing_fields": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/missingField" }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "schema"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 },
+          "schema": { "type": "string", "format": "uri-reference" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "catalog_quality": {
+      "type": "object",
+      "required": ["projects", "coaches"],
+      "properties": {
+        "projects": { "type": "object", "additionalProperties": { "$ref": "#/$defs/qualityRecord" } },
+        "coaches": { "type": "object", "additionalProperties": { "$ref": "#/$defs/qualityRecord" } }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

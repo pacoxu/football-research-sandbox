@@ -1,11 +1,19 @@
 # 数据校验脚本
 
-更新时间：2026-07-12
+更新时间：2026-07-19
 
 `scripts/validate-data.mjs` 是当前数据变更的第一道程序化检查。运行方式：
 
 ```bash
 npm run validate-data
+```
+
+`validate-data` 会先用 Ajv 8 编译 Draft 2020-12 Schema，并校验 manifest 中登记的 raw 文件；随后继续执行跨记录引用、统计加总和业务约束检查。站点生成文件可单独执行：
+
+```bash
+npm run validate-schemas
+npm run build-data
+npm run check-generated
 ```
 
 成功时会输出类似：
@@ -18,7 +26,8 @@ Validated 186 players, 13 tournaments, 9 projects.
 
 ```mermaid
 flowchart LR
-  Raw["data/raw/**"] --> Loader["loadDataset()"]
+  Raw["data/raw/**"] --> Schema["Ajv 8 + manifest"]
+  Schema --> Loader["loadDataset()"]
   Loader --> TournamentStats["合并 tournament statistics"]
   TournamentStats --> Names["补 names"]
   Names --> Market["合并 player-market-values"]
@@ -173,6 +182,8 @@ flowchart LR
 
 这些仍需要 PR review、人工核验或后续自动化脚本。
 
+其中 `data/site/**` 同步性现在由独立的 `npm run check-generated` 负责，而不是 `validate-data` 本身；命令在临时目录生成并逐字节比较，不污染工作区。Schema 错误会包含对应文件路径和 JSON instance path，便于定位缺失字段、错误枚举和日期格式。
+
 ## 常见失败处理
 
 | 报错片段 | 含义 | 处理 |
@@ -188,8 +199,6 @@ flowchart LR
 
 ## 后续可做
 
-- 增加 `npm run validate-generated`，比较 `data/site/**` 是否由当前 raw 生成。
 - 增加 HTTP link checker，但默认只输出报告，不直接失败，以免临时网络波动阻塞数据 PR。
 - 把 `source_links` 也统一到 typed source schema。
-- 增加 JSON Schema，方便编辑器实时提示。
-- 对 `generated_at`、`last_checked` 和 stale 规则增加自动报告。
+- 为更多深层嵌套业务对象补充更严格的条件 Schema，同时保留跨记录 validator。

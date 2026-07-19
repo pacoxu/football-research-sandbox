@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://football-research.local/schema/site.schema.json",
+  "$defs": {
+    "players": {
+      "type": "array",
+      "items": {
+        "allOf": [
+          { "$ref": "https://football-research.local/schema/players.schema.json#/$defs/player" },
+          {
+            "required": ["names"],
+            "properties": {
+              "names": {
+                "type": "object",
+                "required": ["zh", "en", "native", "ja", "ko"],
+                "additionalProperties": { "type": "string" }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "overview": {
+      "type": "object",
+      "required": [
+        "generated_at",
+        "stats",
+        "tournaments",
+        "projects",
+        "overseas_history",
+        "dossiers",
+        "scouting_watchlist",
+        "tournament_archive",
+        "china_men_youth_coaches",
+        "china_youth_development_coaches",
+        "big_five_asian_coaches",
+        "asian_coaches",
+        "youth_development_systems"
+      ],
+      "properties": {
+        "generated_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "stats": {
+          "type": "object",
+          "required": ["player_count", "country_count", "foreign_registration_count"],
+          "properties": {
+            "player_count": { "type": "integer", "minimum": 0 },
+            "country_count": { "type": "integer", "minimum": 0 },
+            "foreign_registration_count": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

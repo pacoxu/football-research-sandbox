@@ -10,11 +10,17 @@
     "generate-afc-comparison-rosters": "node scripts/generate-afc-comparison-rosters.mjs",
     "generate-player-governance-audit": "node scripts/generate-player-governance-audit.mjs",
     "audit:freshness": "node scripts/audit-freshness.mjs",
+    "validate-schemas": "node scripts/validate-json-schemas.mjs",
     "validate-data": "node scripts/validate-data.mjs",
     "build-data": "node scripts/build-site-data.mjs",
+    "check-generated": "node scripts/check-generated-data.mjs",
     "sync-sqlite": "node scripts/sync-sqlite.mjs",
     "prepare-data": "node scripts/prepare-data.mjs",
     "snapshot:manifest": "node scripts/create-snapshot-manifest.mjs",
     "serve": "python3 -m http.server 4173"
+  },
+  "devDependencies": {
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
   }
 }

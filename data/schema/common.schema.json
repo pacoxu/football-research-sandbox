@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://football-research.local/schema/common.schema.json",
+  "$defs": {
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "dateOrNull": {
+      "anyOf": [
+        { "$ref": "#/$defs/date" },
+        { "type": "null" }
+      ]
+    },
+    "localizedText": {
+      "type": "object",
+      "required": ["zh", "en"],
+      "properties": {
+        "zh": { "type": "string" },
+        "en": { "type": "string" },
+        "native": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "sourceLink": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "label": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "type": { "type": "string" },
+        "checked_at": { "$ref": "#/$defs/date" }
+      },
+      "additionalProperties": true
+    },
+    "verification": {
+      "type": "object",
+      "required": ["status", "last_checked", "notes"],
+      "properties": {
+        "status": {
+          "enum": ["verified", "mixed-source", "provisional", "needs-review", "conflict", "stale", "rejected"]
+        },
+        "last_checked": { "$ref": "#/$defs/date" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    }
+  }
+}
