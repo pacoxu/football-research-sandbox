@@ -128,6 +128,7 @@ const allowedAcademyCurrentStatuses = new Set([
   "active-reserve",
   "active-professional",
   "retired-coach",
+  "retired",
   "youth-development",
   "needs-review"
 ]);
@@ -412,34 +413,89 @@ function validateOrganizationReference(value, label) {
   assert(typeof value.country === "string" && value.country.length > 0, `Missing organization country on ${label}`);
 }
 
-function validateGenbaoDossier(dossier) {
-  assert(isIsoDate(dossier.source_checked_at), "Invalid Genbao source_checked_at");
-  assert(dossier.headline_stats?.founded === "2000-07", "Invalid Genbao founding snapshot");
-  assert(Array.isArray(dossier.roster_views) && dossier.roster_views.length === 7, "Expected seven Genbao generations");
+const youthProjectDossierIds = new Set([
+  "donglu-football-boys",
+  "wanda-spain-plan",
+  "genbao-football-base",
+  "evergrande-football-school",
+  "luneng-football-school",
+  "olympic-stars-germany",
+  "500-star-portugal"
+]);
+const allowedDossierRelationships = new Set([
+  "development-core", "batch-participant", "short-training", "tournament-only",
+  "partner-player", "project-adjacent", "prediction-only"
+]);
 
-  const players = dossier.roster_views.flatMap((view) => view.players ?? []);
-  assert(players.length === 26, `Expected 26 Genbao tracked players, found ${players.length}`);
-  assert(dossier.headline_stats.tracked_players === players.length, "Genbao tracked player count mismatch");
-  assert(dossier.headline_stats.tracked_generations === dossier.roster_views.length, "Genbao generation count mismatch");
+function validateYouthProjectDossier(dossier, playerIds) {
+  assert(dossier.schema_version === 2, `Unsupported youth dossier schema: ${dossier.id}`);
+  assert(isIsoDate(dossier.source_checked_at), `Invalid source_checked_at: ${dossier.id}`);
+  assert(Array.isArray(dossier.people), `Missing dossier people: ${dossier.id}`);
+  assert(Array.isArray(dossier.event_records), `Missing dossier event records: ${dossier.id}`);
+  assert(Array.isArray(dossier.program_metrics), `Missing dossier program metrics: ${dossier.id}`);
 
-  const identities = new Set();
-  for (const player of players) {
-    const label = `Genbao player ${player.local_name ?? player.name}`;
-    assert(player.name && player.local_name && player.role, `Invalid ${label}`);
-    assert(!identities.has(player.local_name), `Duplicate ${label}`);
-    identities.add(player.local_name);
-    const status = player.current_status;
+  const people = new Map();
+  for (const person of dossier.people) {
+    const label = `${dossier.id}/${person.id}`;
+    assert(person.id && person.name && person.local_name && person.role, `Invalid dossier person: ${label}`);
+    assert(!people.has(person.id), `Duplicate dossier person: ${label}`);
+    people.set(person.id, person);
+    if (person.player_id) assert(playerIds.has(person.player_id), `Unknown linked player on ${label}: ${person.player_id}`);
+    const status = person.current_status;
     assert(status && allowedAcademyCurrentStatuses.has(status.category), `Invalid current status on ${label}`);
     assert(status.organization && status.role, `Missing current organization on ${label}`);
     assert(isIsoDate(status.as_of), `Invalid current status date on ${label}`);
-    assert(allowedSourceLayerConfidence.has(status.confidence), `Invalid current status confidence on ${label}`);
-    assert(status.source_label && /^https?:\/\//.test(status.source_url), `Invalid current status source on ${label}`);
+    assert(allowedSourceLayerConfidence.has(status.confidence), `Invalid status confidence on ${label}`);
+    assert(status.source_label && /^https?:\/\//.test(status.source_url), `Invalid status source on ${label}`);
   }
 
-  const currentProgram = dossier.roster_views.find((view) => view.id === "commissioned-wave-1314")?.program_status;
-  assert(currentProgram?.category === "active-development-program", "Missing Genbao 1314 program status");
-  assert(isIsoDate(currentProgram.as_of), "Invalid Genbao program status date");
-  assert(/^https?:\/\//.test(currentProgram.source_url), "Invalid Genbao program status source");
+  const viewIds = new Set();
+  for (const view of dossier.roster_views) {
+    assert(view.id && !viewIds.has(view.id), `Duplicate dossier view: ${dossier.id}/${view.id}`);
+    viewIds.add(view.id);
+    assert(Array.isArray(view.members), `Missing dossier members: ${dossier.id}/${view.id}`);
+    const refs = new Set();
+    for (const member of view.members) {
+      assert(people.has(member.person_id), `Unknown person ref: ${dossier.id}/${view.id}/${member.person_id}`);
+      assert(!refs.has(member.person_id), `Duplicate person ref: ${dossier.id}/${view.id}/${member.person_id}`);
+      refs.add(member.person_id);
+      assert(allowedDossierRelationships.has(member.relationship), `Invalid member relationship: ${dossier.id}/${view.id}`);
+      assert(["verified", "needs-review"].includes(member.verification_status), `Invalid member verification: ${dossier.id}/${view.id}`);
+    }
+    const count = view.counting;
+    assert(count && Number.isInteger(count.reported_count), `Missing counting model: ${dossier.id}/${view.id}`);
+    assert(count.listed_count === view.members.length, `Listed count mismatch: ${dossier.id}/${view.id}`);
+    assert(count.unique_people_count === refs.size, `Unique count mismatch: ${dossier.id}/${view.id}`);
+    assert(count.verified_people_count === view.members.filter((member) => member.verification_status === "verified").length, `Verified count mismatch: ${dossier.id}/${view.id}`);
+    assert(count.needs_review_count === view.members.filter((member) => member.verification_status === "needs-review").length, `Review count mismatch: ${dossier.id}/${view.id}`);
+    assert(["complete", "partial"].includes(count.completeness), `Invalid completeness: ${dossier.id}/${view.id}`);
+  }
+
+  assert(dossier.headline_stats.tracked_players === dossier.people.length, `Tracked people mismatch: ${dossier.id}`);
+  assert(dossier.headline_stats.tracked_generations === dossier.roster_views.length, `Tracked views mismatch: ${dossier.id}`);
+  for (const [viewId, expected] of Object.entries({
+    "2014-suzhou-selection-16": 16,
+    "2015-announced-squad-25": 25,
+    "2016-manuel-cup-12": 12,
+    "departure-list-2004": 27
+  })) {
+    const view = dossier.roster_views.find((item) => item.id === viewId);
+    if (view) assert(view.counting.reported_count === expected && view.members.length === expected, `Roster contract failed: ${dossier.id}/${viewId}`);
+  }
+  if (dossier.id === "500-star-portugal") {
+    const launch = dossier.roster_views.find((view) => view.id === "official-launch-roster-24");
+    assert(launch?.members.length === 24 && launch.counting.reported_count === 24, "Missing complete 500 Star launch roster");
+    const metrics = dossier.program_metrics.map((item) => `${item.local_name ?? item.name} ${item.note ?? ""}`).join(" ");
+    assert(/24/.test(metrics) && /41/.test(metrics), "Missing 500 Star 24/41 count contracts");
+  }
+  if (dossier.id === "wanda-spain-plan") {
+    const cohorts = dossier.roster_views.filter((view) => /^wanda-spain-cohort-[1-5]-/.test(view.id));
+    assert(cohorts.length === 5, "Expected five explicit Wanda Spain cohorts");
+    assert(cohorts.every((view) => view.counting.reported_count === 30), "Invalid Wanda cohort count scope");
+  }
+  if (dossier.id === "donglu-football-boys") {
+    assert(!dossier.people.some((person) => /Chinese Football Boys|Primary School|Dream Team/.test(person.local_name)), "2034 Cup team result leaked into people");
+  }
 }
 
 function validateYouthDevelopmentSystems(payload) {
@@ -2676,9 +2732,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
         `Invalid confusing entities list: ${dossier.id}`
       );
     }
-    if (dossier.id === "genbao-football-base") {
-      validateGenbaoDossier(dossier);
-    }
+    if (youthProjectDossierIds.has(dossier.id)) validateYouthProjectDossier(dossier, playerIds);
   }
 
   const comparisonRosterMetadata = new Map();

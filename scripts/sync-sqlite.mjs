@@ -183,6 +183,39 @@ export async function syncSqlite() {
       open_questions_json TEXT NOT NULL
     );
 
+    CREATE TABLE dossier_people (
+      dossier_id TEXT NOT NULL,
+      person_id TEXT NOT NULL,
+      player_id TEXT,
+      name TEXT NOT NULL,
+      local_name TEXT NOT NULL,
+      role TEXT NOT NULL,
+      note TEXT NOT NULL,
+      current_status_category TEXT NOT NULL,
+      current_organization TEXT NOT NULL,
+      current_role TEXT NOT NULL,
+      status_as_of TEXT NOT NULL,
+      status_confidence TEXT NOT NULL,
+      status_source_label TEXT NOT NULL,
+      status_source_url TEXT NOT NULL,
+      PRIMARY KEY (dossier_id, person_id),
+      FOREIGN KEY (dossier_id) REFERENCES dossiers(id) ON DELETE CASCADE,
+      FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE SET NULL
+    );
+
+    CREATE TABLE dossier_roster_members (
+      dossier_id TEXT NOT NULL,
+      roster_view_id TEXT NOT NULL,
+      person_id TEXT NOT NULL,
+      member_order INTEGER NOT NULL,
+      relationship TEXT NOT NULL,
+      verification_status TEXT NOT NULL,
+      historical_organization TEXT,
+      note TEXT,
+      PRIMARY KEY (dossier_id, roster_view_id, person_id),
+      FOREIGN KEY (dossier_id, person_id) REFERENCES dossier_people(dossier_id, person_id) ON DELETE CASCADE
+    );
+
     CREATE TABLE scouting_watchlist_meta (
       id TEXT PRIMARY KEY,
       source_json TEXT NOT NULL,
@@ -336,6 +369,19 @@ export async function syncSqlite() {
       supporting_documents_json, scope_note, role_model_json, timeline_json, roster_views_json,
       link_audit_json, search_disambiguation_json, controversies_json, open_questions_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertDossierPerson = db.prepare(`
+    INSERT INTO dossier_people (
+      dossier_id, person_id, player_id, name, local_name, role, note,
+      current_status_category, current_organization, current_role, status_as_of,
+      status_confidence, status_source_label, status_source_url
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertDossierRosterMember = db.prepare(`
+    INSERT INTO dossier_roster_members (
+      dossier_id, roster_view_id, person_id, member_order, relationship,
+      verification_status, historical_organization, note
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertScoutingWatchlistMeta = db.prepare(`
     INSERT INTO scouting_watchlist_meta (id, source_json, scope_json)
@@ -551,6 +597,22 @@ export async function syncSqlite() {
       toJson(dossier.controversies),
       toJson(dossier.open_questions)
     );
+    for (const person of dossier.people ?? []) {
+      const status = person.current_status;
+      insertDossierPerson.run(
+        dossier.id, person.id, person.player_id ?? null, person.name, person.local_name,
+        person.role, person.note ?? "", status.category, status.organization, status.role,
+        status.as_of, status.confidence, status.source_label, status.source_url
+      );
+    }
+    for (const view of dossier.roster_views ?? []) {
+      (view.members ?? []).forEach((member, index) => {
+        insertDossierRosterMember.run(
+          dossier.id, view.id, member.person_id, index, member.relationship,
+          member.verification_status, member.historical_organization ?? null, member.note ?? null
+        );
+      });
+    }
   }
 
   insertScoutingWatchlistMeta.run(

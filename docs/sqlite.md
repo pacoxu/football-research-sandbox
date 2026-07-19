@@ -185,6 +185,29 @@ erDiagram
     TEXT open_questions_json
   }
 
+  dossier_people {
+    TEXT dossier_id PK, FK
+    TEXT person_id PK
+    TEXT player_id FK
+    TEXT name
+    TEXT local_name
+    TEXT role
+    TEXT current_status_category
+    TEXT current_organization
+    TEXT status_as_of
+    TEXT status_source_url
+  }
+
+  dossier_roster_members {
+    TEXT dossier_id PK, FK
+    TEXT roster_view_id PK
+    TEXT person_id PK, FK
+    INTEGER member_order
+    TEXT relationship
+    TEXT verification_status
+    TEXT historical_organization
+  }
+
   tournament_archive {
     TEXT id PK
     TEXT confederation
