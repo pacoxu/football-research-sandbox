@@ -249,6 +249,16 @@ export async function loadDataset() {
   const projects = await readJson(path.join(paths.raw, "projects.json"));
   const overseasHistory = await readJson(path.join(paths.raw, "overseas-history.json"));
   const dossiers = await readJson(path.join(paths.raw, "dossiers.json"));
+  const scoutingWatchlist = await readOptionalJson(
+    path.join(paths.raw, "scouting-watchlist.json"),
+    {
+      schema_version: 1,
+      source: null,
+      scope: { record_count: 0, country_count: 0 },
+      records: [],
+      related_collections: []
+    }
+  );
   const uefaYouthLeague = await readOptionalJson(
     path.join(paths.raw, "uefa-youth-league.json"),
     null
@@ -280,6 +290,7 @@ export async function loadDataset() {
     projects,
     overseasHistory,
     dossiers,
+    scoutingWatchlist,
     tournamentArchive,
     uefaYouthLeague,
     chinaMenYouthCoaches,

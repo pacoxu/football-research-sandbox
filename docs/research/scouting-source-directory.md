@@ -1,6 +1,6 @@
 # 海外青训、球探与青年球员检索源目录
 
-更新时间：2026-06-28
+更新时间：2026-07-19
 
 本文件把“海外足球青训 / 球探 / 青年球员观察”网站整理成后续检索方向。它不替代 `data-governance-and-quality-rules.md` 的来源等级规则；真正落库时仍以官方注册、赛事报名、俱乐部和联赛页面为强事实来源。本目录的作用是：提高发现线索的效率、统一二级数据库使用口径，并把付费球探平台和球员自荐平台的风险边界写清楚。
 
@@ -71,7 +71,7 @@
 
 | 网站 | URL | 适合检索 | 仓库使用方式 |
 | --- | --- | --- | --- |
-| Football Talent Scout | https://footballtalentscout.net/ | 年轻球员 scouting report、talent of the week。 | 潜力球员候选池和技术画像入口。 |
+| Football Talent Scout | https://footballtalentscout.net/ | 年轻球员 scouting report、talent of the week。 | 已结构化至 `scouting-watchlist.json`；只作 S2 候选池和技术画像入口。 |
 | SCOUTED Football | https://scoutedftbl.com/ | 青年球员、招募、未来之星专题。 | 同龄对照和背景阅读。 |
 | The Guardian Next Generation | https://www.theguardian.com/football/series/next-generation | 每年 60 名全球青年才俊。 | 全球同年龄段热门球员对照。 |
 | Total Football Analysis | https://totalfootballanalysis.com/category/player-analysis | 球员分析、战术分析、scout report。 | 技术/战术画像辅助。 |
@@ -106,6 +106,14 @@
 1. 用 CIES、Guardian Next Generation、Football Talent Scout、SCOUTED 和 Total Football Analysis 发现候选人。
 2. 候选人必须回到 S0/S1 来源核实后才能进入 `data/raw/players/*.json`。
 3. 若只是“值得关注”的同龄对照，优先写入 docs 或 dossiers，不污染核心球员表。
+
+### Football Talent Scout 亚洲观察池（2026-07-19）
+
+- 已汇总 8 个 AFC 国家/地区、30 名青年球员和 6 个相关合集，逐条保留 FTS 原始页面或站内索引链接。
+- 评分只记录 FTS 报告发布时的潜力评分快照；无公开评分时保持 `null`，不自行补分。
+- 客座报告与 Jacek Kulig 本人报告分开标记；报告中的年龄、俱乐部、国家队和身价不能覆盖 S0/S1 事实。
+- 12 名已存在于主球员库的对象通过稳定 `player_id` 关联；其余对象只留在观察池，待官方来源核验后再决定是否建档。
+- FTS 服务条款明确内容仅供信息参考且不保证准确性，因此来源等级固定为 S2。
 
 ## 当前项目优先应用方向
 

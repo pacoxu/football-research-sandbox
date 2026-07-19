@@ -183,6 +183,35 @@ export async function syncSqlite() {
       open_questions_json TEXT NOT NULL
     );
 
+    CREATE TABLE scouting_watchlist_meta (
+      id TEXT PRIMARY KEY,
+      source_json TEXT NOT NULL,
+      scope_json TEXT NOT NULL
+    );
+
+    CREATE TABLE scouting_watchlist_records (
+      id TEXT PRIMARY KEY,
+      player_id TEXT,
+      name TEXT NOT NULL,
+      local_name TEXT,
+      country TEXT NOT NULL,
+      birth_year INTEGER NOT NULL,
+      report_type TEXT NOT NULL,
+      source_scope TEXT NOT NULL,
+      potential_rating REAL,
+      summary_json TEXT NOT NULL,
+      source_url TEXT NOT NULL,
+      source_checked_at TEXT NOT NULL,
+      FOREIGN KEY (player_id) REFERENCES players(id) ON DELETE SET NULL
+    );
+
+    CREATE TABLE scouting_watchlist_collections (
+      id TEXT PRIMARY KEY,
+      name_json TEXT NOT NULL,
+      country TEXT NOT NULL,
+      url TEXT NOT NULL
+    );
+
     CREATE TABLE tournament_archive (
       id TEXT PRIMARY KEY,
       confederation TEXT NOT NULL,
@@ -307,6 +336,20 @@ export async function syncSqlite() {
       supporting_documents_json, scope_note, role_model_json, timeline_json, roster_views_json,
       link_audit_json, search_disambiguation_json, controversies_json, open_questions_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertScoutingWatchlistMeta = db.prepare(`
+    INSERT INTO scouting_watchlist_meta (id, source_json, scope_json)
+    VALUES (?, ?, ?)
+  `);
+  const insertScoutingWatchlistRecord = db.prepare(`
+    INSERT INTO scouting_watchlist_records (
+      id, player_id, name, local_name, country, birth_year, report_type, source_scope,
+      potential_rating, summary_json, source_url, source_checked_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertScoutingWatchlistCollection = db.prepare(`
+    INSERT INTO scouting_watchlist_collections (id, name_json, country, url)
+    VALUES (?, ?, ?, ?)
   `);
   const insertArchiveTournament = db.prepare(`
     INSERT INTO tournament_archive (
@@ -507,6 +550,36 @@ export async function syncSqlite() {
       toJson(dossier.search_disambiguation ?? null),
       toJson(dossier.controversies),
       toJson(dossier.open_questions)
+    );
+  }
+
+  insertScoutingWatchlistMeta.run(
+    "football-talent-scout",
+    toJson(dataset.scoutingWatchlist.source),
+    toJson(dataset.scoutingWatchlist.scope)
+  );
+  for (const record of dataset.scoutingWatchlist.records) {
+    insertScoutingWatchlistRecord.run(
+      record.id,
+      record.player_id ?? null,
+      record.name,
+      record.local_name ?? null,
+      record.country,
+      record.birth_year,
+      record.report_type,
+      record.source_scope,
+      record.potential_rating ?? null,
+      toJson(record.summary),
+      record.source_url,
+      record.source_checked_at
+    );
+  }
+  for (const collection of dataset.scoutingWatchlist.related_collections) {
+    insertScoutingWatchlistCollection.run(
+      collection.id,
+      toJson(collection.name),
+      collection.country,
+      collection.url
     );
   }
 

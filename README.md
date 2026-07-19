@@ -61,6 +61,7 @@ python3 -m http.server 4173
 ```text
 .
 ├── assets/                  # 页面样式和前端脚本
+├── coaches.html             # 基层青训教练与中国男足 U 系列教练组页面
 ├── data/
 │   ├── raw/                 # 手工维护的数据源
 │   │   ├── players/         # 按年龄段分组的球员 JSON
@@ -83,6 +84,7 @@ python3 -m http.server 4173
 - 每条球员记录至少带上 `birth_date`、`registration_club`、`training_pathway`、`tournament_participation`、`external_links`。
 - `registration_club.organization_type` 区分高中、俱乐部梯队、基层 / 社区俱乐部、大学、职业队、成年军队球队、海外梯队和国家级学院；韩国合作高中不能覆盖母俱乐部字段。
 - `data/raw/youth-development-systems.json` 维护日韩与北欧样本的稳定体系结构，年度队数和赛季说明只放在 `annual_snapshot`。
+- `coaches.html` 展示 `china-youth-development-coaches.json` 的基层教练样本和 `china-men-youth-coaches.json` 的国字号 U 系列教练组，并逐条提供原始来源入口。
 - `data/raw/dossiers.json` 的 `genbao-football-base` 记录根宝基地代际、代表球员、当前状态、可信度和现状来源；无法确认的当前去向必须标记为待复核。
 - 若外部资料存在冲突，以 `verification.status` 和 `verification.notes` 标记，而不是直接覆盖。
 - `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、大洋洲其他、美洲其他等层级。

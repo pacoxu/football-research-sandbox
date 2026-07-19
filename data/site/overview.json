@@ -9508,6 +9508,577 @@
       ]
     }
   ],
+  "scouting_watchlist": {
+    "schema_version": 1,
+    "source": {
+      "name": "Football Talent Scout",
+      "operator": "Jacek Kulig",
+      "url": "https://footballtalentscout.net/",
+      "terms_url": "https://footballtalentscout.net/terms-of-service.php",
+      "source_tier": "S2",
+      "checked_at": "2026-07-19",
+      "caveat": {
+        "zh": "球探报告只作为技术画像和候选观察线索；报告中的俱乐部、年龄、身价与国家队均为发布时快照，不得单独覆盖官方注册事实。客座文章不等同于 Jacek Kulig 的独立结论。",
+        "en": "Scouting reports are discovery and technical-profile leads only. Clubs, ages, values, and national teams are publication-time snapshots and must not override official registration facts. Guest articles are not independent conclusions by Jacek Kulig."
+      }
+    },
+    "scope": {
+      "confederation": "AFC",
+      "record_count": 30,
+      "country_count": 8,
+      "inclusion_rule": "Publicly accessible individual profiles, Talent of the Day posts, image reports, or named entries in a Football Talent Scout country index."
+    },
+    "records": [
+      {
+        "id": "fts-cn-zhao-songyuan-2009",
+        "player_id": "cn-zhao-songyuan-2009",
+        "name": "Zhao Songyuan",
+        "local_name": "赵松源",
+        "country": "China PR",
+        "birth_year": 2009,
+        "report_type": "image-report",
+        "source_scope": "individual",
+        "potential_rating": 7,
+        "summary": {
+          "zh": "194cm 左脚支点中锋；报告强调终结、串联、背身、头球、身体条件与双足能力，改进项为短距离爆发、反击适配、协调性和狭小空间处理。",
+          "en": "A 194cm left-footed target forward. The report highlights finishing, link-up and hold-up play, heading, physicality, and two-footedness, with explosiveness, transition fit, coordination, and tight-space play to improve."
+        },
+        "source_url": "https://footballtalentscout.net/reports/Songyuan_Zhao.png",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-cn-wang-yudong-2006",
+        "player_id": "cn-wang-yudong-2006",
+        "name": "Wang Yudong",
+        "local_name": "王钰栋",
+        "country": "China PR",
+        "birth_year": 2006,
+        "report_type": "talent-of-the-day",
+        "source_scope": "country-index",
+        "potential_rating": 7,
+        "summary": {
+          "zh": "边锋/前锋观察样本；FTS 将其描述为爆发型边锋或内切攻击手，模板为 Gabriel Martinelli。",
+          "en": "A winger/forward watch sample described by FTS as an explosive winger or inside forward, with Gabriel Martinelli as the comparison."
+        },
+        "source_url": "https://footballtalentscout.net/home/tag/china/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-cn-kuai-jiwen-2006",
+        "player_id": "cn-kuai-jiwen-2006",
+        "name": "Kuai Jiwen",
+        "local_name": "蒯纪闻",
+        "country": "China PR",
+        "birth_year": 2006,
+        "report_type": "talent-of-the-day",
+        "source_scope": "individual",
+        "potential_rating": 7,
+        "summary": {
+          "zh": "前腰/边锋观察样本；报告角色为进攻组织者，强调速度、技术、控球、创造力和灵活性。",
+          "en": "An attacking-midfield/wing watch sample profiled as an advanced playmaker, with pace, technique, ball control, creativity, and agility highlighted."
+        },
+        "source_url": "https://footballtalentscout.net/home/talent-of-the-day-jiwen-kuai/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-jp-yuto-ozeki-2005",
+        "player_id": "jp-yuto-ozeki-2005",
+        "name": "Yuto Ozeki",
+        "local_name": null,
+        "country": "Japan",
+        "birth_year": 2005,
+        "report_type": "talent-of-the-day",
+        "source_scope": "individual",
+        "potential_rating": 8.5,
+        "summary": {
+          "zh": "后腰/中前卫/前腰观察样本；报告角色为游弋组织者，强调传球、视野、技术、移动、勇气、跑动和多面性。",
+          "en": "A defensive/central/attacking midfield watch sample profiled as a roaming playmaker, highlighting passing, vision, technique, mobility, bravery, work rate, and versatility."
+        },
+        "source_url": "https://footballtalentscout.net/talent-of-the-day-yuto-ozeki/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-jp-ryunosuke-sato-2006",
+        "player_id": "jp-ryunosuke-sato-2006",
+        "name": "Ryunosuke Sato",
+        "local_name": "佐藤 龍之介",
+        "country": "Japan",
+        "birth_year": 2006,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 8,
+        "summary": {
+          "zh": "中场/前腰/边锋观察样本；FTS 评价为游弋或前腰型组织者，模板为 Luka Modrić/Gavi。",
+          "en": "A midfield/attacking-midfield/wing watch sample profiled as a roaming or advanced playmaker, compared with Luka Modrić/Gavi."
+        },
+        "source_url": "https://footballtalentscout.net/?p=35405",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-jp-yotaro-nakajima-2006",
+        "name": "Yotaro Nakajima",
+        "local_name": "中島 洋太朗",
+        "country": "Japan",
+        "birth_year": 2006,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 8,
+        "summary": {
+          "zh": "后腰/中前卫/前腰观察样本；报告强调传球、视野、技术、球商、站位、抢断、跑动和多面性，模板为 Youri Tielemans。",
+          "en": "A defensive/central/attacking midfield watch sample highlighting passing, vision, technique, football IQ, positioning, tackling, work rate, and versatility, compared with Youri Tielemans."
+        },
+        "source_url": "https://footballtalentscout.net/home/yotaro-nakajima/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-jp-keita-kosugi-2006",
+        "name": "Keita Kosugi",
+        "local_name": "小杉 啓太",
+        "country": "Japan",
+        "birth_year": 2006,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 8,
+        "summary": {
+          "zh": "左中卫/左后卫观察样本；报告强调速度、抢断、勇气、韧性、跑动、预判、传球和传中。",
+          "en": "A left-sided centre-back/full-back watch sample highlighting pace, tackling, bravery, tenacity, work rate, anticipation, passing, and crossing."
+        },
+        "source_url": "https://footballtalentscout.net/keita-kosugi/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-jp-jun-nishikawa-2002",
+        "name": "Jun Nishikawa",
+        "local_name": "西川 潤",
+        "country": "Japan",
+        "birth_year": 2002,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 8,
+        "summary": {
+          "zh": "前腰/边锋观察样本；报告强调传球、视野、创造力、技术、速度、第一脚触球和盘带，模板为 James Rodríguez。",
+          "en": "An attacking-midfield/wing watch sample highlighting passing, vision, creativity, technique, pace, first touch, and dribbling, compared with James Rodríguez."
+        },
+        "source_url": "https://footballtalentscout.net/jun-nishikawa/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-kr-ye-geon-kim-2008",
+        "name": "Ye-geon Kim",
+        "local_name": "김예건",
+        "country": "Korea Republic",
+        "birth_year": 2008,
+        "report_type": "player-profile",
+        "source_scope": "country-index",
+        "potential_rating": null,
+        "summary": {
+          "zh": "中场/前腰/边锋观察样本；FTS 韩国索引记录其来自全北现代青训并进入韩国 U17 观察范围。",
+          "en": "A midfield/attacking-midfield/wing watch sample listed by FTS with Jeonbuk Hyundai Motors' academy and South Korea U17."
+        },
+        "source_url": "https://footballtalentscout.net/tag/south-korea/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-kr-do-young-yun-2006",
+        "name": "Do-young Yun",
+        "local_name": "윤도영",
+        "country": "Korea Republic",
+        "birth_year": 2006,
+        "report_type": "player-profile",
+        "source_scope": "country-index",
+        "potential_rating": null,
+        "summary": {
+          "zh": "边锋/影锋观察样本；FTS 韩国索引记录其大田韩亚市民青训与韩国 U17 背景。",
+          "en": "A winger/second-forward watch sample listed by FTS with Daejeon Hana Citizen's academy and South Korea U17."
+        },
+        "source_url": "https://footballtalentscout.net/tag/south-korea/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-kr-min-hyeok-yang-2006",
+        "name": "Min-hyeok Yang",
+        "local_name": null,
+        "country": "Korea Republic",
+        "birth_year": 2006,
+        "report_type": "talent-of-the-day",
+        "source_scope": "country-index",
+        "potential_rating": 8,
+        "summary": {
+          "zh": "边锋/影锋观察样本；报告角色为内切攻击手，强调速度、爆发、盘带、技术、控球、勇气和灵活性。",
+          "en": "A winger/second-forward watch sample profiled as an inside forward, highlighting pace, acceleration, dribbling, technique, ball control, bravery, and agility."
+        },
+        "source_url": "https://footballtalentscout.net/tag/south-korea/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-kr-woo-jin-choi-2004",
+        "name": "Woo-jin Choi",
+        "local_name": null,
+        "country": "Korea Republic",
+        "birth_year": 2004,
+        "report_type": "talent-of-the-day",
+        "source_scope": "country-index",
+        "potential_rating": 8,
+        "summary": {
+          "zh": "左后卫/翼卫/边锋观察样本；报告角色为翼卫，强调速度、爆发、盘带、控球、传中、勇气与灵活性。",
+          "en": "A left-back/wing-back/wing watch sample profiled as a wing-back, highlighting pace, acceleration, dribbling, ball control, crossing, bravery, and agility."
+        },
+        "source_url": "https://footballtalentscout.net/tag/south-korea/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-kr-seung-won-lee-2003",
+        "name": "Seung-won Lee",
+        "local_name": null,
+        "country": "Korea Republic",
+        "birth_year": 2003,
+        "report_type": "guest-report",
+        "source_scope": "individual",
+        "potential_rating": null,
+        "summary": {
+          "zh": "客座中场报告，强调控球、第一脚触球、推进、视野、传球和定位球能力；其结论不视为 Jacek Kulig 的独立评分。",
+          "en": "A guest midfield report highlighting ball control, first touch, carrying, vision, passing, and set pieces; its conclusions are not treated as an independent Jacek Kulig rating."
+        },
+        "source_url": "https://footballtalentscout.net/seung-won-lee-scouting-report-by-nene-afadzinu/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-uz-lazizbek-mirzaev-2006",
+        "player_id": "uz-lazizbek-mirzaev-2006",
+        "name": "Lazizbek Mirzaev",
+        "local_name": null,
+        "country": "Uzbekistan",
+        "birth_year": 2006,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 7,
+        "summary": {
+          "zh": "中前卫/前腰/边锋观察样本；报告评价为前腰型组织者，强调速度、技术、创造力、传球、视野、跑动和定位球。",
+          "en": "A central/attacking midfield and wing watch sample profiled as an advanced playmaker, highlighting pace, technique, creativity, passing, vision, work rate, and set pieces."
+        },
+        "source_url": "https://footballtalentscout.net/lazizbek-mirzaev/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-uz-ollobergan-karimov-2006",
+        "name": "Ollobergan Karimov",
+        "local_name": "Каримов Оллоберган",
+        "country": "Uzbekistan",
+        "birth_year": 2006,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 7,
+        "summary": {
+          "zh": "多位置组织型中场观察样本；报告强调传球、视野、技术、球商、创造力、控球、第一脚触球与定位球。",
+          "en": "A versatile playmaking-midfielder watch sample highlighting passing, vision, technique, football IQ, creativity, ball control, first touch, and set pieces."
+        },
+        "source_url": "https://footballtalentscout.net/home/ollobergan-karimov/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-uz-jasurbek-jaloliddinov-2002",
+        "player_id": "uz-jasurbek-jaloliddinov-2002",
+        "name": "Jasurbek Jaloliddinov",
+        "local_name": null,
+        "country": "Uzbekistan",
+        "birth_year": 2002,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 7,
+        "summary": {
+          "zh": "前腰/边锋观察样本；报告强调传球、视野、创造力、技术、盘带、远射与定位球，模板为 David Silva。",
+          "en": "An attacking-midfield/wing watch sample highlighting passing, vision, creativity, technique, dribbling, long shots, and set pieces, compared with David Silva."
+        },
+        "source_url": "https://footballtalentscout.net/home/jasurbek-jaloliddinov/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-uz-azizbek-tulkinbekov-2007",
+        "name": "Azizbek Tulkinbekov",
+        "local_name": "Тулкунбеков Азизбек",
+        "country": "Uzbekistan",
+        "birth_year": 2007,
+        "report_type": "player-profile",
+        "source_scope": "country-index",
+        "potential_rating": null,
+        "summary": {
+          "zh": "中卫/右后卫/后腰观察样本；FTS 索引记录其布尼奥德科青训与乌兹别克斯坦 U20 背景。",
+          "en": "A centre-back/right-back/defensive-midfield watch sample listed by FTS with Bunyodkor's academy and Uzbekistan U20."
+        },
+        "source_url": "https://footballtalentscout.net/home/tag/uzbekistan/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-uz-daler-tukhsanov-2005",
+        "player_id": "uz-daler-tukhsanov-2005",
+        "name": "Daler Tukhsanov",
+        "local_name": null,
+        "country": "Uzbekistan",
+        "birth_year": 2005,
+        "report_type": "talent-of-the-day",
+        "source_scope": "country-index",
+        "potential_rating": null,
+        "summary": {
+          "zh": "FTS 乌兹别克斯坦 Talent of the Day 观察样本；当前仅保留可复核的索引关联，不补猜测评分。",
+          "en": "An Uzbekistan Talent of the Day watch sample; only the verifiable index association is retained and no rating is inferred."
+        },
+        "source_url": "https://footballtalentscout.net/home/tag/uzbekistan/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-uz-mukhammadali-urinboev-2005",
+        "player_id": "uz-mukhammadali-urinboev-2005",
+        "name": "Mukhammadali Urinboev",
+        "local_name": null,
+        "country": "Uzbekistan",
+        "birth_year": 2005,
+        "report_type": "talent-of-the-day",
+        "source_scope": "country-index",
+        "potential_rating": null,
+        "summary": {
+          "zh": "FTS 乌兹别克斯坦 Talent of the Day 观察样本；当前仅保留可复核的索引关联，不补猜测评分。",
+          "en": "An Uzbekistan Talent of the Day watch sample; only the verifiable index association is retained and no rating is inferred."
+        },
+        "source_url": "https://footballtalentscout.net/home/tag/uzbekistan/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-sa-abdulrahman-sufyani-2008",
+        "player_id": "sa-abdulrahman-sufyani-2008",
+        "name": "Abdulrahman Sufyani",
+        "local_name": null,
+        "country": "Saudi Arabia",
+        "birth_year": 2008,
+        "report_type": "guest-report",
+        "source_scope": "individual",
+        "potential_rating": 9,
+        "summary": {
+          "zh": "前锋/边锋/前腰客座报告；强调终结、跑位、技术、控球、盘带、创造力和灵活性，并指出需要增强身体对抗。",
+          "en": "A guest forward/wing/attacking-midfield report highlighting finishing, movement, technique, ball control, dribbling, creativity, and agility, with physical development to improve."
+        },
+        "source_url": "https://footballtalentscout.net/home/abdulrahman-sufyani-scouting-report-by-talents_saudi/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-sa-talal-haji-2007",
+        "name": "Talal Haji",
+        "local_name": null,
+        "country": "Saudi Arabia",
+        "birth_year": 2007,
+        "report_type": "player-profile",
+        "source_scope": "country-index",
+        "potential_rating": null,
+        "summary": {
+          "zh": "左脚中锋观察样本；FTS 沙特索引记录其吉达联合青训与沙特 U17 背景。",
+          "en": "A left-footed centre-forward watch sample listed by FTS with Al-Ittihad's academy and Saudi Arabia U17."
+        },
+        "source_url": "https://footballtalentscout.net/tag/saudi-arabia/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-sa-marwan-al-sahafi-2004",
+        "player_id": "sa-marwan-al-sahafi-2004",
+        "name": "Marwan Al-Sahafi",
+        "local_name": null,
+        "country": "Saudi Arabia",
+        "birth_year": 2004,
+        "report_type": "talent-of-the-day",
+        "source_scope": "country-index",
+        "potential_rating": 7.5,
+        "summary": {
+          "zh": "边锋/前锋观察样本；报告角色为内切攻击手，强调速度、爆发、盘带、控球、跑位、勇气和运动能力。",
+          "en": "A wing/forward watch sample profiled as an inside forward, highlighting pace, acceleration, dribbling, ball control, movement, bravery, and athleticism."
+        },
+        "source_url": "https://footballtalentscout.net/tag/saudi-arabia/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-ir-esmaeil-gholizadeh-2006",
+        "player_id": "ir-esmaeil-gholizadeh-2006",
+        "name": "Esmaeil Gholizadeh",
+        "local_name": null,
+        "country": "IR Iran",
+        "birth_year": 2006,
+        "report_type": "talent-of-the-day",
+        "source_scope": "country-index",
+        "potential_rating": 7,
+        "summary": {
+          "zh": "边锋/影锋观察样本；报告角色为内切攻击手，强调速度、盘带、技术、控球、跑位和多面性。",
+          "en": "A wing/second-forward watch sample profiled as an inside forward, highlighting pace, dribbling, technique, ball control, movement, and versatility."
+        },
+        "source_url": "https://footballtalentscout.net/home/tag/iran/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-ir-yasin-salmani-2002",
+        "name": "Yasin Salmani",
+        "local_name": null,
+        "country": "IR Iran",
+        "birth_year": 2002,
+        "report_type": "guest-report",
+        "source_scope": "individual",
+        "potential_rating": null,
+        "summary": {
+          "zh": "客座中场报告，记录其塞帕罕青训和伊朗青年国家队阶段的组织、推进与比赛影响力；不视为 Jacek Kulig 的独立评分。",
+          "en": "A guest midfield report covering his Sepahan academy and Iran youth-national-team development, organisation, progression, and match influence; it is not treated as an independent Jacek Kulig rating."
+        },
+        "source_url": "https://footballtalentscout.net/yasin-salmani-irans-midfield-answer-by-iranfootballscout/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-id-arkhan-kaka-2007",
+        "name": "Arkhan Kaka",
+        "local_name": null,
+        "country": "Indonesia",
+        "birth_year": 2007,
+        "report_type": "player-profile",
+        "source_scope": "category-index",
+        "potential_rating": null,
+        "summary": {
+          "zh": "影锋/中锋观察样本；FTS 球员索引记录其 PERSIS Solo 与印度尼西亚 U20 背景。",
+          "en": "A second-forward/centre-forward watch sample listed by FTS with PERSIS Solo and Indonesia U20."
+        },
+        "source_url": "https://footballtalentscout.net/home/category/players/page/25/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-au-amlani-tatu-2008",
+        "name": "Amlani Tatu",
+        "local_name": null,
+        "country": "Australia",
+        "birth_year": 2008,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": 8,
+        "summary": {
+          "zh": "边锋观察样本；报告强调速度、爆发、盘带、控球、射门力量、灵活性、勇气、跑位、双足与运动能力。",
+          "en": "A winger watch sample highlighting pace, acceleration, dribbling, ball control, shot power, agility, bravery, movement, two-footedness, and athleticism."
+        },
+        "source_url": "https://footballtalentscout.net/amlani-tatu/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-au-garang-kuol-2004",
+        "name": "Garang Kuol",
+        "local_name": null,
+        "country": "Australia",
+        "birth_year": 2004,
+        "report_type": "player-profile",
+        "source_scope": "individual",
+        "potential_rating": null,
+        "summary": {
+          "zh": "边锋/影锋/中锋观察样本；报告强调速度、爆发、动态能力、终结、跑位、运动能力、灵活性、技术与盘带。",
+          "en": "A wing/second-forward/centre-forward watch sample highlighting pace, acceleration, dynamism, finishing, movement, athleticism, agility, technique, and dribbling."
+        },
+        "source_url": "https://footballtalentscout.net/garang-kuol/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-au-nestory-irankunda-2006",
+        "name": "Nestory Irankunda",
+        "local_name": null,
+        "country": "Australia",
+        "birth_year": 2006,
+        "report_type": "guest-report",
+        "source_scope": "individual",
+        "potential_rating": null,
+        "summary": {
+          "zh": "澳大利亚青年攻击手客座专题，重点讨论其速度、力量、盘带和早期成年队突破；不视为统一 10 分制个人报告。",
+          "en": "A guest feature on an Australian youth attacker, focusing on pace, power, dribbling, and an early senior breakthrough; it is not treated as a standardised 10-point profile."
+        },
+        "source_url": "https://footballtalentscout.net/nestor-irankunda-australias-next-star-by-scout_aussie/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-au-marcus-younis-2005",
+        "name": "Marcus Younis",
+        "local_name": null,
+        "country": "Australia",
+        "birth_year": 2005,
+        "report_type": "guest-report",
+        "source_scope": "individual",
+        "potential_rating": null,
+        "summary": {
+          "zh": "澳大利亚边锋客座专题，强调一对一、技巧、爆发、创造力和防守投入；不视为统一 10 分制个人报告。",
+          "en": "A guest feature on an Australian winger, highlighting one-on-one play, skill, acceleration, creativity, and defensive effort; it is not treated as a standardised 10-point profile."
+        },
+        "source_url": "https://footballtalentscout.net/marcus-younis-australias-rising-star-by-jake-mcghee/",
+        "source_checked_at": "2026-07-19"
+      },
+      {
+        "id": "fts-au-alexander-badolato-2005",
+        "name": "Alexander Badolato",
+        "local_name": null,
+        "country": "Australia",
+        "birth_year": 2005,
+        "report_type": "talent-of-the-day",
+        "source_scope": "individual",
+        "potential_rating": 7.5,
+        "summary": {
+          "zh": "中前卫/前腰/边锋观察样本；报告角色为进攻组织者，强调爆发、技术、控球、传球、视野、创造力、球商和灵活性。",
+          "en": "A central/attacking midfield and wing watch sample profiled as an advanced playmaker, highlighting acceleration, technique, ball control, passing, vision, creativity, football IQ, and agility."
+        },
+        "source_url": "https://footballtalentscout.net/home/talent-of-the-day-alexander-badolato/",
+        "source_checked_at": "2026-07-19"
+      }
+    ],
+    "related_collections": [
+      {
+        "id": "fts-japan-golden-generation",
+        "name": {
+          "zh": "日本黄金一代专题",
+          "en": "Japan's Golden Generation"
+        },
+        "country": "Japan",
+        "url": "https://footballtalentscout.net/japans-golden-generation-an-in-depth-look-at-japanese-footballs-future-by-jake-mcghee/"
+      },
+      {
+        "id": "fts-scouting-japan-part-1",
+        "name": {
+          "zh": "Scouting Japan 第一部分",
+          "en": "Scouting Japan: Part 1"
+        },
+        "country": "Japan",
+        "url": "https://footballtalentscout.net/scouting-japan-part-1-by-jake-mcghee/"
+      },
+      {
+        "id": "fts-scouting-japan-part-3",
+        "name": {
+          "zh": "Scouting Japan 第三部分",
+          "en": "Scouting Japan: Part 3"
+        },
+        "country": "Japan",
+        "url": "https://footballtalentscout.net/home/scouting-japan-part-three-by-jake-mcghee/"
+      },
+      {
+        "id": "fts-scouting-japan-part-5",
+        "name": {
+          "zh": "Scouting Japan 第五部分",
+          "en": "Scouting Japan: Part 5"
+        },
+        "country": "Japan",
+        "url": "https://footballtalentscout.net/scouting-japan-part-five-by-jake-mcghee/"
+      },
+      {
+        "id": "fts-saudi-u18-top-20",
+        "name": {
+          "zh": "沙特青年联赛 U18 前 20 人",
+          "en": "Top 20 U18 Talents in the Saudi Youth Premier League"
+        },
+        "country": "Saudi Arabia",
+        "url": "https://footballtalentscout.net/tag/saudi-arabia/"
+      },
+      {
+        "id": "fts-iraq-generation",
+        "name": {
+          "zh": "伊拉克新生代专题",
+          "en": "An Iraqi generation looking for glory"
+        },
+        "country": "Iraq",
+        "url": "https://footballtalentscout.net/home/category/guest-articles/page/13/"
+      }
+    ]
+  },
   "tournament_archive": [
     {
       "id": "afc-asian-cup-2023",
