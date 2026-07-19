@@ -160,17 +160,21 @@
     {
       "country": "China PR",
       "status": "in-progress",
-      "verified_records": 25,
+      "verified_records": 29,
       "bucket_focus": [
         "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
         "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队落点，避免与成年一线队出场样本混算；这条线现已明确补入刘邵子洋、何小珂这类从拜仁或西班牙梯队进入欧洲培养链的案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
-        "big-five-lower-tier：已把英格兰次级与第三级职业联赛路径单列出来，避免与真正五大联赛履历混在一起",
-        "europe-other：已补入孙祥、董方卓这类欧洲非五大联赛体系个案，并继续记录塞尔维亚、克罗地亚、荷兰等落点；2025 观察池里，吴少聪连接土超 / 土甲 / 波兰联赛，李磊补回草蜢回流样本，西班牙与葡萄牙方向则继续跟踪杜月徵、Li Changyi、Yang Xiyu、Chen Zheyuan、Yimulan Abuduwaili 等青年路径",
-        "asia-other：已补贾秀全 1992-1993 年大阪钢巴阶段，J.League 官方数据可核 J1 25 场、联赛杯 9 场；后续继续扩 J 联赛、K 联赛与东南亚职业体系样本",
+        "big-five-lower-tier：已把英格兰次级与第三级职业联赛路径单列出来，避免与真正五大联赛履历混在一起；古广明 1987-1992 年达姆施塔特 98 的德乙主线按 DFB 官方 108 场联赛、6 场德国杯和 3 场升降级附加赛独立建档",
+        "europe-other：已补入柳海光在贝尔格莱德游击队的 7 场正式比赛，以及谢育新签约 PEC Zwolle 但一线队 0 场的边界；孙祥、董方卓等欧洲非五大联赛体系个案继续保留，2025 观察池仍跟踪塞尔维亚、克罗地亚、荷兰等落点",
+        "asia-other：已补贾秀全 1992-1993 年大阪钢巴阶段，以及高升 1991-1995 年日本富士通足球部的 JSL/JFL 路径；高升节点发生在川崎前锋进入 J.League 之前，不计为 J.League 出场",
         "oceania-other：已补宫磊 1989/90-1996/97 年塔希提 AS Pirae 主线，单列大洋洲以避免把塔希提误归入亚洲或美洲",
         "americas-other：刘邵子洋 2025 年 9 月从拜仁二队转往 LAFC2 后，北美 MLS NEXT Pro / 预备队体系已有现役中国门将样本；宫磊 1997-1998 年加拿大职业联赛阶段作为其大洋洲主记录的后续路径说明保留"
       ],
       "seed_examples": [
+        "Gao Sheng",
+        "Liu Haiguang",
+        "Gu Guangming",
+        "Xie Yuxin",
         "Gong Lei",
         "Jia Xiuquan",
         "Ma Mingyu",
@@ -195,7 +199,7 @@
         "Wang Xiuhao",
         "Wei Xiangxin"
       ],
-      "notes": "中国留洋条目已从单一历史个案扩到“1980 年代末至 1990 年代初先驱 + 早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的五层结构。先驱层现纳入贾秀全在贝尔格莱德游击队与大阪钢巴的正式比赛记录，以及宫磊从塔希提 AS Pirae 延伸到加拿大和香港的跨洲路径；塔希提单列为 oceania-other，不再并入美洲边缘样本。除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+      "notes": "中国留洋条目已从单一历史个案扩到“1980 年代末至 1990 年代初先驱 + 早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的五层结构。先驱层现纳入谢育新签约 PEC Zwolle、古广明效力达姆施塔特 98、贾秀全与柳海光效力贝尔格莱德游击队、高升效力日本富士通足球部，以及宫磊从塔希提 AS Pirae 延伸到加拿大和香港的跨洲路径；塔希提单列为 oceania-other，高升的日本节点则明确属于 JSL/JFL 而非 J.League。除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
       "historical_trial_records": [
         {
           "id": "wang-dalei-inter-2006-trial",
@@ -767,6 +771,298 @@
             "J.League 官方页确认其生日为 1963-11-09、位置为后卫、最后所属为大阪钢巴。",
             "官方逐赛事汇总为 J1 25 场 0 球、联赛杯 9 场 0 球；联赛杯分为 1992 年 7 场和 1993 年 2 场。",
             "本记录的 34 场是 J.League 官方口径下两类赛事之和，不包含其欧洲阶段。"
+          ]
+        },
+        {
+          "id": "xie-yuxin-pec-zwolle-1987",
+          "name": "Xie Yuxin",
+          "local_name": "谢育新",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "PEC Zwolle '82",
+          "season": "1986-1989",
+          "history_year_range": "1987-1989",
+          "status": "verified",
+          "appearances": 0,
+          "appearance_label": "PEC Zwolle 一线队正式比赛 0 场",
+          "competitive_debut": false,
+          "active_abroad": false,
+          "birth_date": "1968-10-12",
+          "birth_place": "Xingning, Guangdong, China PR",
+          "primary_position": "Midfielder",
+          "height_cm": 169,
+          "statistics_breakdown": [
+            {
+              "season": "1986/87",
+              "competition": "Eredivisie",
+              "appearances": 0,
+              "goals": 0
+            },
+            {
+              "season": "1987/88",
+              "competition": "Eredivisie",
+              "appearances": 0,
+              "goals": 0
+            },
+            {
+              "season": "1988/89",
+              "competition": "Eredivisie",
+              "appearances": 0,
+              "goals": 0
+            }
+          ],
+          "timeline": [
+            {
+              "date": "1987-02-06",
+              "label": "PEC Zwolle 签约节点",
+              "detail": "公开履历将这一天记为谢育新签约 PEC Zwolle '82 的日期；该节点确认职业俱乐部合同，不自动等于荷甲出场。"
+            },
+            {
+              "date": "1987-1989",
+              "label": "三季一线队统计边界",
+              "detail": "National Football Teams 连续列出 1986/87、1987/88、1988/89 三季，三季的一线队正式比赛均为 0 场。"
+            },
+            {
+              "date": "1989",
+              "label": "荷兰阶段结束",
+              "detail": "结束 PEC Zwolle 阶段后回到广东足球体系；具体离队日仍待更强俱乐部档案补充。"
+            }
+          ],
+          "summary": "谢育新于 1987 年初签约荷兰 PEC Zwolle '82，构成中国球员最早一批欧洲职业俱乐部签约案例之一；但现有逐季数据库在 1986/87、1987/88、1988/89 三季均记为一线队 0 场，因此本条只确认签约和俱乐部归属，不把训练、预备队活动或未核比赛写成荷甲出场。",
+          "source_links": [
+            {
+              "label": "National Football Teams：谢育新 PEC Zwolle 逐季一线队记录",
+              "url": "https://www.national-football-teams.com/player/25951/Yuxin_Xie.html"
+            },
+            {
+              "label": "Olympedia：谢育新 PEC Zwolle 归属与奥运档案",
+              "url": "https://www.olympedia.org/athletes/24456"
+            },
+            {
+              "label": "Wikipedia：1987 年 PEC Zwolle 签约节点",
+              "url": "https://en.wikipedia.org/wiki/Xie_Yuxin"
+            }
+          ],
+          "notes": [
+            "National Football Teams 将其列在 PEC Zwolle 的 1986/87、1987/88、1988/89 三个赛季，三个赛季的一线队正式比赛均为 0 场。",
+            "Wikipedia 提供 1987-02-06 签约日期；该日期用于时间线背景，但不覆盖逐场数据库的一线队 0 场结论。",
+            "本记录不使用未经统一定义支撑的排他性“首位留洋”表述，只将其归为最早一批欧洲职业签约案例。"
+          ]
+        },
+        {
+          "id": "gu-guangming-darmstadt-1987",
+          "name": "Gu Guangming",
+          "local_name": "古广明",
+          "bucket": "big-five-lower-tier",
+          "league": "2. Bundesliga / DFB-Pokal / Bundesliga promotion playoff",
+          "club": "SV Darmstadt 98",
+          "season": "1987-1992",
+          "history_year_range": "1987-1992",
+          "status": "verified",
+          "appearances": 117,
+          "appearance_label": "各项正式比赛 117 场（德乙 108 场）",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "birth_date": "1959-01-31",
+          "birth_place": "Shaoguan, Guangdong, China PR",
+          "primary_position": "Right Winger",
+          "height_cm": 168,
+          "statistics_breakdown": [
+            {
+              "competition": "2. Bundesliga",
+              "appearances": 108,
+              "goals": 8
+            },
+            {
+              "competition": "DFB-Pokal",
+              "appearances": 6,
+              "goals": 0
+            },
+            {
+              "competition": "Bundesliga promotion playoff",
+              "appearances": 3,
+              "goals": 1
+            }
+          ],
+          "timeline": [
+            {
+              "date": "1987-07-01",
+              "label": "达姆施塔特阶段开始",
+              "detail": "DFB Datencenter 将古广明在 SV Darmstadt 98 的登记区间起点记为 1987-07-01。"
+            },
+            {
+              "date": "1987-07-22",
+              "label": "德乙统计起点",
+              "detail": "DFB 的德乙比赛区间从 1987-07-22 开始；1987/88 首季累计 32 场 6 球。"
+            },
+            {
+              "date": "1988-06-02—1988-06-09",
+              "label": "德甲升降级附加赛",
+              "detail": "参加 3 场升降级附加赛并打入 1 球；该数据单列，不并入德乙 108 场。"
+            },
+            {
+              "date": "1992-06-30",
+              "label": "德国阶段收口",
+              "detail": "DFB 俱乐部历史区间在 1992-06-30 结束，五季各项正式比赛累计 117 场。"
+            }
+          ],
+          "summary": "古广明从 1987 年夏至 1992 年夏效力达姆施塔特 98。DFB Datencenter 可核其德乙 108 场、德国杯 6 场和德甲升降级附加赛 3 场，共 117 场正式比赛，是中国球员在欧洲职业联赛形成长期稳定出场的早期核心样本。",
+          "source_links": [
+            {
+              "label": "DFB Datencenter：古广明达姆施塔特逐赛事统计",
+              "url": "https://datencenter.dfb.de/datencenter/personen/guangming-gu/spieler"
+            }
+          ],
+          "notes": [
+            "DFB 官方统计的 117 场由德乙 108 场、DFB-Pokal 6 场、1987/88 德甲升降级附加赛 3 场组成。",
+            "德乙 108 场与全部正式比赛 117 场是两个不同口径，页面以标签同时展示，不能互相替代。",
+            "德国属于五大联赛国家，但古广明没有德甲常规联赛出场，因此归入 big-five-lower-tier，而非 big-five。"
+          ]
+        },
+        {
+          "id": "liu-haiguang-partizan-1987",
+          "name": "Liu Haiguang",
+          "local_name": "柳海光",
+          "bucket": "europe-other",
+          "league": "Yugoslav First League / Yugoslav Cup",
+          "club": "Partizan Belgrade",
+          "season": "1987-1989",
+          "history_year_range": "1987-1989",
+          "status": "verified",
+          "appearances": 7,
+          "appearance_label": "各项正式比赛 7 场 3 球（联赛 6 场）",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "birth_date": "1963-07-11",
+          "birth_place": "Shanghai, China PR",
+          "primary_position": "Striker",
+          "height_cm": 186,
+          "china_caps": 58,
+          "china_goals": 20,
+          "statistics_breakdown": [
+            {
+              "season": "1987/88",
+              "competition": "Yugoslav First League",
+              "appearances": 3,
+              "goals": 3
+            },
+            {
+              "season": "1988/89",
+              "competition": "Yugoslav First League",
+              "appearances": 3,
+              "goals": 0
+            },
+            {
+              "season": "1988/89",
+              "competition": "Yugoslav Cup",
+              "appearances": 1,
+              "goals": 0
+            }
+          ],
+          "timeline": [
+            {
+              "date": "1987/88",
+              "label": "游击队首季",
+              "detail": "南斯拉夫顶级联赛 3 场 3 球，是其欧洲阶段全部进球来源。"
+            },
+            {
+              "date": "1988/89",
+              "label": "游击队次季",
+              "detail": "联赛 3 场、杯赛 1 场，共 4 场且未进球。"
+            },
+            {
+              "date": "1989",
+              "label": "欧洲阶段结束",
+              "detail": "结束游击队阶段后回到上海足球体系；现有档案不足以给出精确解约日期。"
+            }
+          ],
+          "summary": "柳海光与贾秀全同期效力贝尔格莱德游击队。Partizanopedia 逐季统计显示，他在 1987/88、1988/89 两季合计参加 6 场南斯拉夫顶级联赛并打进 3 球，另有 1 场杯赛，总计 7 场正式比赛。",
+          "source_links": [
+            {
+              "label": "Partizanopedia：柳海光游击队逐赛事统计",
+              "url": "https://www.partizanopedia.rs/liuhaiguang.html"
+            }
+          ],
+          "notes": [
+            "1987/88 赛季为联赛 3 场 3 球；1988/89 赛季为联赛 3 场、杯赛 1 场，均未进球。",
+            "7 场是各项正式比赛总数，联赛统计为 6 场 3 球。",
+            "与贾秀全分别建档，避免把同期加盟误写为共享统计或同一球员记录。"
+          ]
+        },
+        {
+          "id": "gao-sheng-fujitsu-1991",
+          "name": "Gao Sheng",
+          "local_name": "高升",
+          "bucket": "asia-other",
+          "league": "Japan Soccer League Division 2 / Japan Football League",
+          "club": "Fujitsu Soccer Club",
+          "season": "1991-1995",
+          "history_year_range": "1991-1995",
+          "status": "verified",
+          "appearances": null,
+          "appearance_label": "JSL/JFL 正式参赛已确认，逐季出场数待补",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "birth_date": "1962-05-10",
+          "birth_place": "Shenyang, Liaoning, China PR",
+          "primary_position": "Defensive Midfielder",
+          "height_cm": 183,
+          "statistics_breakdown": [
+            {
+              "season": "1991/92",
+              "competition": "Japan Soccer League Division 2",
+              "appearances": null,
+              "goals": null
+            },
+            {
+              "season": "1992-1995",
+              "competition": "Japan Football League",
+              "appearances": null,
+              "goals": null
+            }
+          ],
+          "timeline": [
+            {
+              "date": "1991",
+              "label": "加盟富士通足球部",
+              "detail": "从辽宁足球体系转入日本富士通足球部；川崎前锋官方履历确认这一组织路径。"
+            },
+            {
+              "date": "1991/92",
+              "label": "JSL Division 2",
+              "detail": "National Football Teams 可确认富士通参加日本足球联赛二级；该阶段早于 J.League 正式开赛。"
+            },
+            {
+              "date": "1992-1995",
+              "label": "旧 JFL 阶段",
+              "detail": "日本联赛重组后继续效力富士通，球队尚未以川崎前锋身份进入 J.League。"
+            },
+            {
+              "date": "1995",
+              "label": "球员阶段结束",
+              "detail": "1995 年结束富士通球员阶段，后续进入该体系的青训与普及执教工作。"
+            }
+          ],
+          "summary": "高升在 1991 至 1995 年效力富士通足球部，即后来川崎前锋的前身球队。该阶段横跨日本足球联赛 JSL 末期与旧 JFL，早于富士通职业化及川崎前锋进入 J.League；现有可靠来源可以确认效力区间和赛事层级，但尚不足以汇总统一的逐季出场总数。",
+          "source_links": [
+            {
+              "label": "川崎前锋官方：高升所属经历为辽宁省体育学院至富士通足球部",
+              "url": "https://www.frontale.co.jp/info/2012/0110_1.html"
+            },
+            {
+              "label": "Football Zone：高升 1991-1995 富士通球员经历",
+              "url": "https://www.football-zone.net/archives/497482"
+            },
+            {
+              "label": "National Football Teams：高升 1991/92 富士通 JSL2 节点",
+              "url": "https://www.national-football-teams.com/player/33837/Sheng_Gao.html"
+            }
+          ],
+          "notes": [
+            "川崎前锋官方履历确认富士通足球部节点，Football Zone 明确给出 1991-1995 的球员阶段。",
+            "National Football Teams 可核 1991/92 富士通参加 JSL Division 2；1992-1995 随日本联赛重组进入旧 JFL 语境。",
+            "富士通足球部是川崎前锋前身，但高升球员阶段不能倒写成川崎前锋 J.League 出场。",
+            "逐季出场总数尚缺统一可靠档案，因此 appearances 使用 null；这表示统计待补，不表示 0 场。"
           ]
         },
         {
