@@ -44,10 +44,20 @@
         "label": "2026 中超一线队 U21 跟踪",
         "team": "Shanghai Shenhua FC",
         "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "截至 2026-05-22 仍属于上海申花 2026 赛季一线队 U21 样本。"
+        "season": "2026",
+        "competition_level": "senior-top-flight",
+        "appearances": 10,
+        "starts": null,
+        "substitute_appearances": null,
+        "goals": 0,
+        "minutes": 395,
+        "stats_as_of": "2026-05-05",
+        "statistics_status": "partial",
+        "source_checked_at": "2026-07-19",
+        "statistics_sources": [
+          "https://news.zhibo8.com/zuqiu/2026-05-05/69f9f49381b1cnative.htm"
+        ],
+        "note": "中超一线队统计，不含足协杯、U21 联赛或国字号比赛。公开报道可确认前 10 轮 10 次出场、395 分钟、0 球；首发与替补拆分尚未逐场复核，因此保留 null。"
       }
     ],
     "external_links": [
@@ -111,10 +121,21 @@
         "label": "2026 中超一线队 U21 跟踪",
         "team": "Shanghai Port FC",
         "squad_status": "registered",
+        "season": "2026",
+        "competition_level": "senior-top-flight",
         "appearances": null,
-        "goals": null,
+        "starts": null,
+        "substitute_appearances": null,
+        "goals": 2,
         "minutes": null,
-        "note": "截至 2026-05-22 仍属于上海海港 2026 赛季一线队 U21 样本。"
+        "stats_as_of": "2026-06-27",
+        "statistics_status": "partial",
+        "source_checked_at": "2026-07-19",
+        "statistics_sources": [
+          "https://sports.cctv.com/2026/05/19/ARTISQl34TI3V5bYR3HfetHz260519.shtml",
+          "https://sports.cctv.com/2026/06/27/ARTIZaKcc3GNklG3LHhWGRno260627.shtml"
+        ],
+        "note": "中超一线队统计，不含亚冠、超级杯、足协杯或青年赛事。央视比赛报道可确认第 13、16 轮各入 1 球；累计出场、首发、替补和分钟仍待官方逐场数据完整复核。"
       }
     ],
     "external_links": [
@@ -180,10 +201,21 @@
         "label": "2026 中超一线队 U21 跟踪",
         "team": "Dalian Yingbo FC",
         "squad_status": "registered",
+        "season": "2026",
+        "competition_level": "senior-top-flight",
         "appearances": null,
+        "starts": null,
+        "substitute_appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22 仍属于大连英博 2026 赛季一线队 U21 样本。"
+        "stats_as_of": "2026-05-31",
+        "statistics_status": "partial",
+        "source_checked_at": "2026-07-19",
+        "statistics_sources": [
+          "https://www.dongqiudi.com/articles/5805477.html",
+          "https://sports.sina.cn/2026-05-31/detail-inhzuvrm5905620.d.html"
+        ],
+        "note": "中超一线队统计，不含足协杯和 U21 联赛。公开阵容可确认其既有首发也有替补名单记录，但累计出场、首发、替补、进球和分钟尚未完成逐场复核。"
       }
     ],
     "external_links": [
@@ -247,10 +279,21 @@
         "label": "2026 中超一线队 U21 跟踪",
         "team": "Dalian Yingbo FC",
         "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
+        "season": "2026",
+        "competition_level": "senior-top-flight",
+        "appearances": 10,
+        "starts": 10,
+        "substitute_appearances": 0,
+        "goals": 0,
         "minutes": null,
-        "note": "截至 2026-05-22 仍属于大连英博 2026 赛季一线队 U21 样本。"
+        "stats_as_of": "2026-05-19",
+        "statistics_status": "partial",
+        "source_checked_at": "2026-07-19",
+        "statistics_sources": [
+          "https://www.zhejiangfc.com/2026/04/55680.html",
+          "https://www.sohu.com/a/1022691280_122436438"
+        ],
+        "note": "中超一线队统计，不含足协杯和 U21 联赛。公开汇总可确认前 10 场均为首发且 0 球；分钟数尚未完成逐场复核。浙江俱乐部第 5 轮战报用于交叉核对首发与换下节点。"
       }
     ],
     "external_links": [
@@ -318,14 +361,24 @@
     ],
     "tournament_participation": [
       {
-        "competition_id": "csl-2026",
-        "label": "2026 国内成年俱乐部 U21 观察样本",
+        "competition_id": "china-champions-league-2026",
+        "label": "2026 中冠联赛 U21 观察样本",
         "team": "Beijing Pengrui Tongcheng",
         "squad_status": "tracked",
-        "appearances": null,
+        "season": "2026",
+        "competition_level": "senior-amateur-fourth-tier",
+        "appearances": 1,
+        "starts": null,
+        "substitute_appearances": null,
         "goals": 2,
         "minutes": null,
-        "note": "截至 2026-05-23，可公开核到其在 2026-05-21 中冠对乌兰察布青年人一战梅开二度。当前 competition_id 先借用国内俱乐部观察口径，不等同于中超注册。"
+        "stats_as_of": "2026-05-21",
+        "statistics_status": "partial",
+        "source_checked_at": "2026-07-19",
+        "statistics_sources": [
+          "https://www.jingcai.com/live/detail-4519716"
+        ],
+        "note": "仅统计中冠联赛，不计入中超、中甲、中乙、足协杯或 U21 联赛。公开比赛页可确认对乌兰察布青年人一战出场并攻入 2 球；首发、替补与分钟待逐场报告补齐。"
       }
     ],
     "external_links": [
@@ -417,16 +470,6 @@
       "recent-outbound-2026"
     ],
     "tournament_participation": [
-      {
-        "competition_id": "csl-2026",
-        "label": "2026 国内职业俱乐部 U21 观察样本",
-        "team": "Meizhou Hakka FC",
-        "squad_status": "tracked",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "本条保留其梅州客家 / 广东铭途国内职业路径；按 2026-07-10 核对，当前归属已转为 AJ Auxerre，不再作为现役国内注册样本处理。"
-      },
       {
         "competition_id": "china-overseas-2026",
         "label": "2026 欧塞尔签约生效",

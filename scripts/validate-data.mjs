@@ -58,6 +58,24 @@ const allowedSquadStatuses = new Set([
   "used"
 ]);
 
+const chinaDomestic2026CompetitionIds = new Set([
+  "csl-2026",
+  "china-league-one-2026",
+  "china-league-two-2026",
+  "cfa-cup-2026",
+  "china-u21-league-2026",
+  "china-champions-league-2026"
+]);
+const allowedChinaDomesticCompetitionLevels = new Set([
+  "senior-top-flight",
+  "senior-second-tier",
+  "senior-third-tier",
+  "senior-cup",
+  "youth-u21",
+  "senior-amateur-fourth-tier"
+]);
+const allowedParticipationStatisticsStatuses = new Set(["complete", "partial"]);
+
 const allowedRegistrationClubStatuses = new Set(["current", "tournament-snapshot"]);
 const allowedPlayerRosterStatuses = new Set([
   "final-squad",
@@ -1721,6 +1739,46 @@ export async function validateData() {
           allowedPlayerRosterStatuses.has(entry.roster_status),
           `Invalid roster_status "${entry.roster_status}" on player ${player.id}`
         );
+      }
+      if (chinaDomestic2026CompetitionIds.has(entry.competition_id)) {
+        assert(entry.season === "2026", `Invalid season on ${entry.competition_id} for ${player.id}`);
+        assert(
+          allowedChinaDomesticCompetitionLevels.has(entry.competition_level),
+          `Invalid competition_level on ${entry.competition_id} for ${player.id}`
+        );
+        assert(
+          allowedParticipationStatisticsStatuses.has(entry.statistics_status),
+          `Invalid statistics_status on ${entry.competition_id} for ${player.id}`
+        );
+        for (const field of ["appearances", "starts", "substitute_appearances", "goals", "minutes"]) {
+          assert(field in entry, `Missing ${field} on ${entry.competition_id} for ${player.id}`);
+          assert(
+            entry[field] === null || (Number.isInteger(entry[field]) && entry[field] >= 0),
+            `Invalid ${field} on ${entry.competition_id} for ${player.id}`
+          );
+        }
+        if (
+          entry.appearances !== null &&
+          entry.starts !== null &&
+          entry.substitute_appearances !== null
+        ) {
+          assert(
+            entry.starts + entry.substitute_appearances === entry.appearances,
+            `Starts and substitute appearances do not add up on ${entry.competition_id} for ${player.id}`
+          );
+        }
+        assert(/^2026-\d{2}-\d{2}$/.test(entry.stats_as_of), `Invalid stats_as_of on ${entry.competition_id} for ${player.id}`);
+        assert(
+          /^2026-\d{2}-\d{2}$/.test(entry.source_checked_at),
+          `Invalid source_checked_at on ${entry.competition_id} for ${player.id}`
+        );
+        assert(
+          Array.isArray(entry.statistics_sources) && entry.statistics_sources.length > 0,
+          `Missing statistics_sources on ${entry.competition_id} for ${player.id}`
+        );
+        for (const url of entry.statistics_sources) {
+          assert(/^https?:\/\//.test(url), `Invalid statistics source on ${entry.competition_id} for ${player.id}`);
+        }
       }
       const issue16Squad = issue16Squads.get(`${player.country}|${entry.competition_id}`);
       if (issue16Squad !== undefined) {
