@@ -323,6 +323,23 @@ function isIsoDate(value) {
   return /^\d{4}-\d{2}-\d{2}$/.test(value);
 }
 
+export function validateTournamentLifecycle(tournament, referenceDate) {
+  assert(isIsoDate(referenceDate), `Invalid tournament lifecycle reference date: ${referenceDate}`);
+  const activeStatuses = new Set(["ongoing", "in-progress"]);
+  if (!activeStatuses.has(tournament.status) || tournament.date_range?.end === null) {
+    return;
+  }
+
+  assert(
+    isIsoDate(tournament.date_range?.end),
+    `Invalid tournament lifecycle end date: ${tournament.id} (${tournament.status}, ${tournament.date_range?.end})`
+  );
+  assert(
+    tournament.date_range.end >= referenceDate,
+    `Expired active tournament: ${tournament.id} (${tournament.status}, ended ${tournament.date_range.end})`
+  );
+}
+
 function normalizeIdentityName(value) {
   return String(value ?? "")
     .normalize("NFKC")
@@ -1501,6 +1518,35 @@ function validateChinaYouthDevelopmentCoaches(archive) {
       );
     }
 
+    if (coach.batch_assignments !== undefined) {
+      assert(
+        Array.isArray(coach.batch_assignments) && coach.batch_assignments.length > 0,
+        `Invalid batch_assignments on China youth coach ${coach.id}`
+      );
+      const batches = new Set();
+      for (const assignment of coach.batch_assignments) {
+        assert(assignment.batch && assignment.team_label, `Missing batch label on ${coach.id}`);
+        assert(!batches.has(assignment.batch), `Duplicate batch ${assignment.batch} on ${coach.id}`);
+        assert(assignment.role && assignment.age_band, `Missing batch role scope on ${coach.id}`);
+        assert(/^\d{4}$/.test(assignment.snapshot_year), `Invalid batch snapshot on ${coach.id}`);
+        assert(
+          Array.isArray(assignment.source_links) && assignment.source_links.length > 0,
+          `Missing batch sources on ${coach.id}:${assignment.batch}`
+        );
+        for (const link of assignment.source_links) {
+          assert(
+            allowedChinaYouthCoachSourceTypes.has(link.type),
+            `Invalid batch source type "${link.type}" on ${coach.id}`
+          );
+          assert(link.label && link.claim, `Incomplete batch source on ${coach.id}`);
+          assert(/^https?:\/\//.test(link.url), `Invalid batch source url on ${coach.id}`);
+          assert(isIsoDate(link.checked_at), `Invalid batch source date on ${coach.id}`);
+        }
+        assert(assignment.verification_notes, `Missing batch verification notes on ${coach.id}`);
+        batches.add(assignment.batch);
+      }
+    }
+
     assert(
       allowedVerificationStatuses.has(coach.verification?.status),
       `Invalid verification status on China youth coach ${coach.id}`
@@ -1708,6 +1754,25 @@ function validateAsianCoaches(archive) {
       `Invalid stint count scope ${scope} on asian_coaches`
     );
     assert((stintCounts.get(scope) ?? 0) === count, `Invalid stint count ${scope} on asian_coaches`);
+  }
+
+  const issue12CoachIds = [
+    "kevin-muscat",
+    "kim-pan-gon",
+    "akira-nishino",
+    "masatada-ishii",
+    "amir-ghalenoei",
+    "choi-kang-hee"
+  ];
+  for (const coachId of issue12CoachIds) {
+    assert(coachIds.has(coachId), `Missing issue #12 Asian coach: ${coachId}`);
+    const coach = archive.coaches.find((item) => item.id === coachId);
+    assert(
+      coach.stints.every((item) =>
+        item.source_links.some((link) => link.type !== "secondary-crosscheck")
+      ),
+      `Issue #12 coach stint lacks an official source: ${coachId}`
+    );
   }
 }
 
@@ -2112,7 +2177,8 @@ function validateScoutingWatchlist(watchlist, players) {
   assert(collectionIds.size === 6, `Expected 6 scouting collections, found ${collectionIds.size}`);
 }
 
-export async function validateData() {
+export async function validateData(referenceDate = new Date().toISOString().slice(0, 10)) {
+  assert(isIsoDate(referenceDate), `Invalid validation reference date: ${referenceDate}`);
   const dataset = await loadDataset();
   const playerNameOverrides = JSON.parse(
     await fs.readFile(path.join(paths.raw, "player-name-overrides.json"), "utf8")
@@ -2531,6 +2597,7 @@ export async function validateData() {
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
     validateTournamentDateRange(tournament, "focus tournament");
+    validateTournamentLifecycle(tournament, referenceDate);
   }
 
   for (const country of dataset.overseasHistory.countries) {
