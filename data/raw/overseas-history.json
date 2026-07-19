@@ -156,6 +156,140 @@
       }
     ]
   },
+  "chinese_heritage_players": {
+    "checked_at": "2026-07-20",
+    "scope_note": {
+      "zh": "以公开、可追溯报道确认的华裔家庭背景为线索，记录代表其他国家或地区足协的职业球员。本表描述家族来源与足球履历，不据此推断中国国籍、为中国队参赛资格或个人文化认同；2026 世界杯名单和赛果另以 FIFA 官方来源核验。",
+      "en": "This directory tracks professional players representing associations outside China PR whose Chinese family heritage is supported by traceable public reporting. Heritage does not imply Chinese citizenship, China PR eligibility or personal cultural identity; FIFA sources independently verify 2026 World Cup squads and results."
+    },
+    "groups": [
+      {"id": "world-cup-2026", "label": {"zh": "2026 世界杯参赛球员", "en": "FIFA World Cup 2026 players"}},
+      {"id": "active-watch", "label": {"zh": "现役与资格观察", "en": "Active and eligibility watch"}},
+      {"id": "historical", "label": {"zh": "历史代表人物", "en": "Historical figures"}}
+    ],
+    "profiles": [
+      {
+        "id": "virgil-van-dijk", "name": "Virgil van Dijk", "local_name": "范戴克", "group": "world-cup-2026", "represented_team": "Netherlands", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "母系具有苏里南华裔背景。中国侨网转载稿将其追溯到约 1918 年从广东迁往苏里南的陈火秀；因代际较远，本页只按公开报道记录。", "en": "Reported Chinese-Surinamese heritage through his maternal line, traced by the cited China News Service article to a Guangdong migrant who moved to Suriname around 1918; the ancestry is remote and is recorded only as reported."},
+        "football_summary": {"zh": "荷兰成年国家队队长，入选 FIFA 2026 世界杯正式名单。", "en": "Netherlands senior captain selected in the official FIFA World Cup 2026 squad."},
+        "world_cup_2026": {"squad_status": "final-squad", "tournament_summary": {"zh": "代表荷兰参赛。", "en": "Represented the Netherlands."}},
+        "source_links": [
+          {"label": "FIFA：荷兰 2026 世界杯名单", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-ronald-koeman-squad-announced"},
+          {"label": "中国侨网转载：范戴克母系华裔背景", "url": "https://finance.sina.com.cn/wm/2026-06-17/doc-inicthnp7060031.shtml"}
+        ]
+      },
+      {
+        "id": "tahith-chong", "name": "Tahith Chong", "local_name": "陈达毅", "group": "world-cup-2026", "represented_team": "Curaçao", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "公开报道将其记为第四代华裔，外曾祖父陈有来自广东新会、20 世纪 40 年代移居库拉索。该代际超出通常以三代直系血亲判断的代表资格范围。", "en": "Reported as fourth-generation Chinese Curaçaoan, with a great-great-grandfather from Xinhui, Guangdong who moved to Curaçao in the 1940s; that generation is beyond the usual three-generation direct-ancestry eligibility route."},
+        "football_summary": {"zh": "曾代表荷兰 U15 至 U21，2025 年代表库拉索成年队首秀，并进入 FIFA 2026 世界杯正式名单。", "en": "A former Netherlands U15-U21 player who debuted for Curaçao in 2025 and made its official FIFA World Cup 2026 squad."},
+        "world_cup_2026": {"squad_status": "final-squad", "tournament_summary": {"zh": "代表库拉索参赛。", "en": "Represented Curaçao."}},
+        "source_links": [
+          {"label": "FIFA：库拉索 2026 世界杯名单", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/curacao-squad-announcement-dick-advocaat"},
+          {"label": "中国侨网转载：陈达毅家族来源", "url": "https://finance.sina.com.cn/wm/2026-06-17/doc-inicthnp7060031.shtml"}
+        ]
+      },
+      {
+        "id": "elijah-just", "name": "Elijah Just", "local_name": "伊莱贾·贾斯特", "group": "world-cup-2026", "represented_team": "New Zealand", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "母亲是华裔，父亲是德国人；这一直接家庭背景由《南华早报》世界杯报道确认。", "en": "His mother is Chinese and his father German, a direct family background reported by the South China Morning Post."},
+        "football_summary": {"zh": "新西兰成年国脚、苏格兰马瑟韦尔球员；2026 世界杯对伊朗攻入两球，成为首位在世界杯单场梅开二度的新西兰球员。", "en": "A New Zealand senior international and Motherwell player who scored twice against IR Iran in 2026, becoming the first New Zealander with a World Cup brace."},
+        "world_cup_2026": {"squad_status": "played", "tournament_summary": {"zh": "对伊朗 2 比 2 的比赛梅开二度。", "en": "Scored both New Zealand goals in the 2-2 draw with IR Iran."}},
+        "source_links": [
+          {"label": "FIFA：贾斯特对伊朗梅开二度", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/elijah-just-new-zealand"},
+          {"label": "南华早报：贾斯特的华裔母亲与家庭背景", "url": "https://www.scmp.com/sport/football/article/3357281/new-zealands-world-cup-goalscoring-hero-has-chinese-mother-makes-history-motherwell"}
+        ]
+      },
+      {
+        "id": "kian-fitz-jim", "name": "Kian Fitz-Jim", "local_name": "菲慈占·天乐", "group": "active-watch", "represented_team": "Netherlands U21", "representation_status": "youth-international",
+        "heritage_summary": {"zh": "母亲来自香港；公开采访和港媒报道还记录他持香港身份证、会说粤语。", "en": "His mother is from Hong Kong; public interviews and Hong Kong reporting also record that he holds a Hong Kong identity card and speaks Cantonese."},
+        "football_summary": {"zh": "阿贾克斯中场、荷兰青年国脚。当前按青年队选择记录，不推断其未来成年国家队归属。", "en": "An Ajax midfielder and Netherlands youth international; his future senior-team choice is not inferred."},
+        "source_links": [
+          {"label": "Ajax：Fitz-Jim 家庭与香港经历", "url": "https://english.ajax.nl/articles/fitz-jim-in-the-barber-s-chair-i-get-strength-from-my-long-hair/"},
+          {"label": "明报：母亲为香港人、持香港身份证", "url": "https://news.mingpao.com/ins/%E9%AB%94%E8%82%B2/article/20230109/s00006/1673258548422/%E8%8D%B7%E7%94%B2-%E8%8F%AF%E8%A3%94%E5%B0%8F%E5%B0%87%E8%8F%B2%E6%85%88%E4%BD%94%E5%A4%A9%E6%A8%82%E9%A6%96%E7%82%BA%E9%98%BF%E7%A9%8D%E5%A3%AB%E4%B8%8A%E9%99%A3-%E6%9C%89%E9%A6%99%E6%B8%AF%E8%BA%AB%E5%88%86%E8%AD%89%E7%8D%B2%E6%B8%AF%E8%B6%B3%E4%B8%BB%E5%B8%A5%E9%97%9C%E6%B3%A8"}
+        ]
+      },
+      {
+        "id": "dion-cools", "name": "Dion-Johan Cools", "local_name": "迪昂·库尔斯", "group": "active-watch", "represented_team": "Malaysia", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "父亲是比利时人，母亲是马来西亚华人。", "en": "Born to a Belgian father and Malaysian Chinese mother."},
+        "football_summary": {"zh": "马来西亚成年队队长；2026 年效力日本大阪樱花。", "en": "Malaysia senior captain and a Cerezo Osaka player in 2026."},
+        "source_links": [
+          {"label": "FIFA：Dion Cools 马来西亚队专访", "url": "https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/dion-johan-cools-malaisie-interview-qualifications-coupe-du-monde-fifa-26"},
+          {"label": "大阪樱花：Dion Cools 官方球员页", "url": "https://www.cerezo.jp/team/players/dion_cools/"}
+        ]
+      },
+      {
+        "id": "lavere-corbin-ong", "name": "La’Vere Corbin-Ong", "local_name": "科尔宾-翁", "group": "active-watch", "represented_team": "Malaysia", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "父亲来自巴巴多斯，母亲是马来西亚华人；出生于英格兰、在加拿大成长。", "en": "Born to a Barbadian father and Malaysian Chinese mother in England and raised in Canada."},
+        "football_summary": {"zh": "马来西亚成年国脚，效力柔佛新山。", "en": "A Malaysia senior international with Johor Darul Ta’zim."},
+        "source_links": [
+          {"label": "JDT：Corbin-Ong 官方球员页", "url": "https://johorsoutherntigers.my/player/corbin-ong/"},
+          {"label": "Transfermarkt：Corbin-Ong 家庭背景", "url": "https://www.transfermarkt.us/lavere-corbin-ong/profil/spieler/231425"}
+        ]
+      },
+      {
+        "id": "alexander-ndoumbou", "name": "Alexander N’Doumbou", "local_name": "钱杰给", "group": "active-watch", "represented_team": "Gabon", "representation_status": "association-locked",
+        "heritage_summary": {"zh": "父亲是加蓬人，母亲是中国人；后来取得中国国籍并以钱杰给之名在中国联赛注册。", "en": "Born to a Gabonese father and Chinese mother; he later acquired Chinese citizenship and registered in China as Qian Jiegei."},
+        "football_summary": {"zh": "马赛青训出身，曾在正式比赛代表加蓬，因此本页不把中国国籍等同于中国队参赛资格。", "en": "A Marseille academy product who represented Gabon in official competition; Chinese citizenship is therefore not treated as China PR eligibility."},
+        "source_links": [
+          {"label": "UEFA：马赛档案确认中国母亲与加蓬父亲", "url": "https://www.uefa.com/MultimediaFiles/Download/ITT/uefaorg/General/01/53/55/89/1535589_DOWNLOAD.pdf"},
+          {"label": "BBC：取得中国国籍前后的加蓬成年队履历", "url": "https://www.bbc.co.uk/sport/football/47117586"}
+        ]
+      },
+      {
+        "id": "perry-ng", "name": "Perry Ng", "local_name": "佩里·吴", "group": "active-watch", "represented_team": null, "target_team": "Singapore", "representation_status": "eligibility-watch",
+        "heritage_summary": {"zh": "祖父出生于新加坡；2025 年取得新加坡永久居民身份，此后通过外来体育人才计划申请公民身份。", "en": "His grandfather was born in Singapore; he obtained Singapore permanent residence in 2025 and subsequently applied for citizenship through the Foreign Sports Talent Scheme."},
+        "football_summary": {"zh": "卡迪夫城后卫。截至 2026 年 6 月，公民申请仍在等待审批，不能写成新加坡国脚。", "en": "A Cardiff City defender whose citizenship application was still pending in June 2026; he must not yet be described as a Singapore international."},
+        "source_links": [
+          {"label": "CNA：佩里·吴公民申请截至 2026 年 6 月仍待审批", "url": "https://www.channelnewsasia.com/singapore/perry-ng-cardiff-city-naturalisation-lions-football-6213056"},
+          {"label": "Cardiff City：续约至 2028 年", "url": "https://www.cardiffcityfc.co.uk/news/perry-ng-signs-new-city-deal-0"}
+        ]
+      },
+      {
+        "id": "brian-ching", "name": "Brian Ching", "local_name": "布莱恩·程", "group": "historical", "represented_team": "United States", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "父系具有华裔背景；公开人物资料通常将其记为四分之一华裔。", "en": "Chinese heritage through his paternal line; public biographical sources commonly describe him as one-quarter Chinese."},
+        "football_summary": {"zh": "美国队 45 场 11 球，入选 2006 世界杯名单但未出场。", "en": "Recorded 45 caps and 11 goals for the United States and was selected for the 2006 World Cup without appearing."},
+        "source_links": [
+          {"label": "Houston Dynamo：Brian Ching 国家队与世界杯档案", "url": "https://www.houstondynamofc.com/players/brian-ching/"},
+          {"label": "懂球帝：Brian Ching 华裔家族溯源", "url": "https://m.dongqiudi.com/article/4945653.html"}
+        ]
+      },
+      {
+        "id": "mark-chung", "name": "Mark Chung", "local_name": "马克·钟", "group": "historical", "represented_team": "United States", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "出生于加拿大，父母均为牙买加客家华裔。", "en": "Born in Canada to Hakka Chinese Jamaican parents."},
+        "football_summary": {"zh": "美国成年国脚 24 场 2 球，也是 MLS 早期代表球员之一。", "en": "A 24-cap, two-goal United States senior international and an early MLS standout."},
+        "source_links": [
+          {"label": "MLS：Mark Chung 24 场美国队履历", "url": "https://www.mlssoccer.com/news/what-ever-happened-mark-chung"},
+          {"label": "MLS：24 场 2 球记录", "url": "https://www.mlssoccer.com/news/san-jose-earthquakes-acquire-midfielder-mark-chung-colorado-rapids-portion"}
+        ]
+      },
+      {
+        "id": "tscheu-la-ling", "name": "Tscheu La Ling", "local_name": "林球立", "group": "historical", "represented_team": "Netherlands", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "华裔荷兰球员，公开中文资料将其祖籍记为浙江温州。", "en": "A Chinese-Dutch player whose Chinese-language biographical reporting traces his family to Wenzhou, Zhejiang."},
+        "football_summary": {"zh": "阿贾克斯名将，1975—1982 年为俱乐部参加 223 场正式比赛，并代表荷兰成年队出场。", "en": "An Ajax great who played 223 official club matches from 1975 to 1982 and represented the Netherlands at senior level."},
+        "source_links": [
+          {"label": "Ajax：林球立 223 场正式比赛", "url": "https://www.ajax.nl/artikelen/top-10-goals-treffers-van-tscheu-la-ling"},
+          {"label": "新浪体育：林球立华裔家庭背景访谈", "url": "https://sports.sina.com.cn/review/200007/0553584.shtml?from=wap"}
+        ]
+      },
+      {
+        "id": "aron-winter", "name": "Aron Winter", "local_name": "阿隆·温特", "group": "historical", "represented_team": "Netherlands", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "苏里南出生，公开资料通常记载其祖父为苏里南客家华裔。", "en": "Born in Suriname and commonly reported as having Hakka Chinese-Surinamese heritage through his grandfather."},
+        "football_summary": {"zh": "荷兰 1988 欧洲杯冠军成员，参加 1990、1994、1998 三届世界杯。", "en": "A UEFA EURO 1988 winner with the Netherlands who appeared at the 1990, 1994 and 1998 World Cups."},
+        "source_links": [
+          {"label": "荷兰足协：Aron Winter 大赛履历", "url": "https://www.onsoranje.nl/toernooien/394/selectie/185184/speler/8718"},
+          {"label": "中国侨网转载：温特华裔背景", "url": "https://finance.sina.com.cn/wm/2026-06-17/doc-inicthnp7060031.shtml"}
+        ]
+      },
+      {
+        "id": "frank-soo", "name": "Frank Soo", "local_name": "弗兰克·苏", "group": "historical", "represented_team": "England wartime XI", "representation_status": "wartime-unofficial",
+        "heritage_summary": {"zh": "父亲是中国人、母亲是英格兰人，是英格兰足球的重要华裔先驱。", "en": "Born to a Chinese father and English mother, he was a pioneering Chinese-heritage figure in English football."},
+        "football_summary": {"zh": "二战期间九次代表英格兰出场；这些战时比赛不获 FIFA 承认为正式国际赛，因此不能写成 9 场正式英格兰队出场。", "en": "Played nine times for England during the Second World War; those wartime fixtures are not FIFA-recognized official internationals and must not be presented as nine official caps."},
+        "source_links": [
+          {"label": "英国议会：弗兰克·苏追授荣誉国家队帽", "url": "https://edm.parliament.uk/early-day-motion/64313/award-of-honorary-posthumous-england-cap-to-frank-soo"},
+          {"label": "Sky Sports：弗兰克·苏与华裔先驱历史", "url": "https://www.skysports.com/football/news/11095/13244634/asians-in-football-frank-soo-and-the-footballers-that-followed-the-stoke-city-and-england-legend"}
+        ]
+      }
+    ]
+  },
   "countries": [
     {
       "country": "China PR",
@@ -196,6 +330,184 @@
         "Wang Xiuhao",
         "Wei Xiangxin"
       ],
+      "naturalized_players": {
+        "checked_at": "2026-07-20",
+        "scope": {
+          "zh": "主名单收录已代表中国成年国家队出场，或已获中国足协成年国家队正式征召且具有可核验海外职业履历的入籍球员。",
+          "en": "The primary list covers naturalized players with verified overseas professional histories who have either appeared for China PR's senior team or received an official senior-team call-up from the CFA."
+        },
+        "boundary_note": {
+          "zh": "归化前在出生国或原培养体系的履历，与从中国俱乐部出发的传统“留洋”不是同一统计口径。德尔加多、萧涛涛等仅有入籍或俱乐部注册事实、但尚无中国成年队出场或正式征召证据的球员暂不进入主名单。",
+          "en": "A pre-naturalization career in a birth country or original development system is not the same metric as a conventional move abroad from a Chinese club. Citizenship-only or club-registration cases without verified China PR senior appearances or call-ups, such as Pedro Delgado and Roberto Siucho, remain outside the primary count."
+        },
+        "profiles": [
+          {
+            "id": "ai-kesen-elkeson",
+            "name": "Elkeson de Oliveira Cardoso",
+            "china_name": "艾克森",
+            "former_registration_names": ["Elkeson"],
+            "birth_country": "Brazil",
+            "position": "Forward",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的前锋，归化前在维多利亚和博塔弗戈效力；2013 年进入中国联赛，代表中国成年队出场后又曾回到巴西加盟格雷米奥。", "en": "A Brazil-born forward who played for Vitória and Botafogo before moving to China in 2013; after becoming a China PR senior international he later returned to Brazil with Grêmio."},
+            "career_segments": [
+              {"period": "2009-2012", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Vitória", "Botafogo"], "summary": {"zh": "归化前巴西职业阶段。", "en": "Brazilian professional career before naturalization."}},
+              {"period": "2022", "phase": "post-naturalization", "country": "Brazil", "clubs": ["Grêmio"], "summary": {"zh": "取得中国国籍并代表中国队后回到巴西联赛。", "en": "Returned to Brazil after acquiring Chinese citizenship and representing China PR."}}
+            ],
+            "source_links": [
+              {"label": "AFC：Elkeson / 艾克森代表中国队", "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/elkeson_i_want_to_play_my_part_for_china_pr.html"},
+              {"label": "Grêmio：官宣签下 Elkeson 并回顾职业路径", "url": "https://gremio.net/news/detalhes/25159/gremio-anuncia-o-atacante-elkeson-como-novo-reforco-"}
+            ]
+          },
+          {
+            "id": "alan-carvalho",
+            "name": "Alan Douglas Borges de Carvalho",
+            "china_name": "阿兰",
+            "former_registration_names": ["Alan"],
+            "birth_country": "Brazil",
+            "position": "Forward",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的前锋，从弗鲁米嫩塞转往奥地利萨尔茨堡并参加欧战，2015 年进入中国联赛；归化并代表中国队后曾回到弗鲁米嫩塞。", "en": "A Brazil-born forward who moved from Fluminense to Salzburg and played in UEFA competition before joining the Chinese league in 2015; he later returned to Fluminense after representing China PR."},
+            "career_segments": [
+              {"period": "2008-2010", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Fluminense"], "summary": {"zh": "巴西出道阶段。", "en": "Early professional career in Brazil."}},
+              {"period": "2010-2015", "phase": "pre-naturalization", "country": "Austria", "clubs": ["Red Bull Salzburg"], "summary": {"zh": "奥地利联赛及欧战阶段。", "en": "Austrian league and UEFA competition period."}},
+              {"period": "2022-2023", "phase": "post-naturalization", "country": "Brazil", "clubs": ["Fluminense"], "summary": {"zh": "代表中国队后回到巴西俱乐部。", "en": "Returned to a Brazilian club after representing China PR."}}
+            ],
+            "source_links": [
+              {"label": "中国足协：2024 年国家队名单（阿兰）", "url": "https://www.thecfa.cn/nanzuwqmd/20240522/34466.html"},
+              {"label": "UEFA：Alan 从萨尔茨堡转会中国", "url": "https://www.uefa.com/uefaeuropaleague/news/021d-0e8f00039c95-1845f1d1a307-1000--top-scorer-alan-swaps-salzburg-for-china/"},
+              {"label": "Fluminense：官宣 Alan 回归", "url": "https://www.fluminense.com.br/noticia/fluminense-acerta-a-contratacao-do-atacante-alan"}
+            ]
+          },
+          {
+            "id": "luo-guofu-aloisio",
+            "name": "Aloísio dos Santos Gonçalves",
+            "china_name": "洛国富",
+            "former_registration_names": ["Aloísio"],
+            "birth_country": "Brazil",
+            "position": "Forward",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的前锋，归化前长期在巴西联赛效力，2014 年进入中国联赛；代表中国队参加世预赛后返回巴西加盟米内罗美洲。", "en": "A Brazil-born forward with a substantial Brazilian league career before moving to China in 2014; after appearing for China PR in World Cup qualifying he returned to Brazil with América Mineiro."},
+            "career_segments": [
+              {"period": "2006-2013", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Grêmio", "Figueirense", "São Paulo"], "summary": {"zh": "归化前巴西职业阶段。", "en": "Brazilian professional career before naturalization."}},
+              {"period": "2022-2023", "phase": "post-naturalization", "country": "Brazil", "clubs": ["América Mineiro"], "summary": {"zh": "代表中国队后返回巴西联赛。", "en": "Returned to the Brazilian league after representing China PR."}}
+            ],
+            "source_links": [
+              {"label": "AFC：洛国富作为中国国脚离开广州队", "url": "https://www.the-afc.com/en/more/domestic_leagues/news/www.the-afc.com/en/more/domestic_leagues/news/luo_guofu_leaves_guangzhou_fc.html"},
+              {"label": "AFC：世预赛中国队比赛名单（洛国富）", "url": "https://stats.the-afc.com/match_report/20889"},
+              {"label": "América：Aloísio 南美杯进球记录", "url": "https://www.americafc.com.br/em-casa-america-vence-pela-conmebol-sudamericana"}
+            ]
+          },
+          {
+            "id": "fei-nanduo-fernandinho",
+            "name": "Fernando Henrique da Conceição",
+            "china_name": "费南多",
+            "former_registration_names": ["Fernandinho"],
+            "birth_country": "Brazil",
+            "position": "Winger",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的边锋，早年在巴西和葡萄牙俱乐部体系效力，2015 年进入中国联赛；2024 年代表中国队完成成年国家队比赛并取得进球。", "en": "A Brazil-born winger whose early career included Brazilian and Portuguese clubs before he entered the Chinese league in 2015; he played and scored for China PR's senior team in 2024."},
+            "career_segments": [
+              {"period": "2012-2015", "phase": "pre-naturalization", "country": "Brazil / Portugal", "clubs": ["Atlético Sorocaba", "Flamengo", "Madureira", "Estoril"], "summary": {"zh": "归化前的巴西、葡萄牙职业阶段。", "en": "Brazilian and Portuguese professional stages before naturalization."}}
+            ],
+            "source_links": [
+              {"label": "中国足协：2024 年国家队名单（费南多）", "url": "https://www.thecfa.cn/nanzuwqmd/20240522/34466.html"},
+              {"label": "AFC：中国 4-1 新加坡，费南多进球", "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/group_c_china_pr_4-1_singapore.html"},
+              {"label": "AFC：2020 亚冠广州队注册名单", "url": "https://assets.the-afc.com/downloads/technical-reports/AFC-Champions-League-2020-Technical-Report-%26-Statistics.pdf"},
+              {"label": "Transfermarkt：Fernandinho / 费南多职业档案", "url": "https://www.transfermarkt.com/fernandinho/profil/spieler/230937"}
+            ]
+          },
+          {
+            "id": "jiang-guangtai-tyias-browning",
+            "name": "Tyias Charles Browning",
+            "china_name": "蒋光太",
+            "former_registration_names": ["Tyias Browning"],
+            "birth_country": "England",
+            "position": "Defender",
+            "naturalization_path": "heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": ["jiang-guangtai-everton-2014"],
+            "summary": {"zh": "英格兰出生、在埃弗顿青训成长的后卫，曾代表埃弗顿并租借效力英格兰低级别职业联赛，2019 年加盟广州并随后代表中国成年队。", "en": "An England-born defender developed by Everton who played for the club and on loan in the English professional pyramid before moving to Guangzhou in 2019 and later representing China PR."},
+            "career_segments": [
+              {"period": "2004-2019", "phase": "pre-naturalization", "country": "England", "clubs": ["Everton", "Wigan Athletic", "Preston North End", "Sunderland"], "summary": {"zh": "英格兰青训与职业联赛阶段。", "en": "English academy and professional-league career."}}
+            ],
+            "source_links": [
+              {"label": "AFC：Browning 从埃弗顿加盟广州", "url": "https://www.the-afc.com/en/club/afc_champions_league/news/guangzhou_evergrande_sign_evertons_browning.html"},
+              {"label": "AFC：2023 亚洲杯中国队终报名（蒋光太）", "url": "https://assets.the-afc.com/2023_AFC_Asian_Cup/Squad_Lists/AFC-Asian-Cup-Qatar%E2%84%A2-2023-Squad-Lists.pdf"},
+              {"label": "Premier League：Tyias Browning 档案", "url": "https://www.premierleague.com/en/players/149468/tyias-browning/overview"}
+            ]
+          },
+          {
+            "id": "li-ke-nico-yennaris",
+            "name": "Nicholas Harry Yennaris",
+            "china_name": "李可",
+            "former_registration_names": ["Nico Yennaris"],
+            "birth_country": "England",
+            "position": "Midfielder",
+            "naturalization_path": "heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": ["li-ke-arsenal-2012"],
+            "summary": {"zh": "英格兰出生、在阿森纳青训成长的中场，曾为阿森纳一线队出场并长期效力布伦特福德，2019 年进入中国联赛并成为中国成年国脚。", "en": "An England-born midfielder developed by Arsenal who appeared for its first team and had a long Brentford spell before moving to China in 2019 and becoming a China PR senior international."},
+            "career_segments": [
+              {"period": "2001-2019", "phase": "pre-naturalization", "country": "England", "clubs": ["Arsenal", "Notts County", "Bournemouth", "Brentford", "Wycombe Wanderers"], "summary": {"zh": "英格兰青训与职业联赛阶段。", "en": "English academy and professional-league career."}}
+            ],
+            "source_links": [
+              {"label": "AFC：李可成为中国国脚", "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/anything_possible_for_li_ke_who_made_chinese_football_history.html"},
+              {"label": "Brentford：从阿森纳签下 Nico Yennaris", "url": "https://www.brentfordfc.com/en/news/article/brentford-sign-arsenals-nico-yennaris_60473"},
+              {"label": "Premier League：Nico Yennaris 档案", "url": "https://www.premierleague.com/en/players/86364/nico-yennaris/overview"}
+            ]
+          },
+          {
+            "id": "hou-yongyong-john-hou-saeter",
+            "name": "John Hou Sæter",
+            "china_name": "侯永永",
+            "former_registration_names": ["Yongyong Hou"],
+            "birth_country": "Norway",
+            "position": "Midfielder",
+            "naturalization_path": "heritage",
+            "china_team_status": "senior-squad",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "挪威出生并在罗森博格体系成长的中场，曾效力斯塔贝克和兰黑姆；2024 年成为挪甲最佳射手，随后获得中国成年国家队正式征召。当前只标记征召，不推断成年队出场。", "en": "A Norway-born midfielder developed in Rosenborg's system who also played for Stabæk and Ranheim; after finishing as the 2024 Norwegian First Division top scorer he received an official China PR senior call-up. This record marks the call-up only and does not infer a senior cap."},
+            "career_segments": [
+              {"period": "2013-2018; 2023-2024", "phase": "pre-naturalization-and-return", "country": "Norway", "clubs": ["Rosenborg", "Ranheim", "Stabæk"], "summary": {"zh": "挪威青训、职业出道及回归挪威联赛阶段。", "en": "Norwegian academy, professional debut and later return to the Norwegian league."}}
+            ],
+            "source_links": [
+              {"label": "中国足协：2025 年第一期国家队名单（侯永永）", "url": "https://www.thecfa.cn/jxtz/20250103/35460.html"},
+              {"label": "Ranheim：侯永永入选中国队", "url": "https://www.ranheimfotball.no/nyheter/hou-pa-landslaget"},
+              {"label": "挪威足协：Yongyong Hou 比赛统计", "url": "https://www.fotball.no/fotballdata/person/statistikk/?fiksId=3993030"}
+            ]
+          },
+          {
+            "id": "serginho-sergio-antonio",
+            "name": "Sérgio Antônio Soler de Oliveira Júnior",
+            "china_name": "塞尔吉尼奥",
+            "former_registration_names": ["Serginho"],
+            "birth_country": "Brazil",
+            "position": "Attacking Midfielder",
+            "naturalization_path": "non-heritage",
+            "china_team_status": "senior-capped",
+            "related_featured_record_ids": [],
+            "summary": {"zh": "巴西出生的攻击型中场，早年效力桑托斯等巴西俱乐部，随后在日本鹿岛鹿角效力并参加世俱杯；2020 年进入中国联赛，2025 年归化后代表中国成年队出场。", "en": "A Brazil-born attacking midfielder who played for Santos and other Brazilian clubs before joining Kashima Antlers and appearing at the Club World Cup; he moved to China in 2020 and represented China PR after naturalizing in 2025."},
+            "career_segments": [
+              {"period": "2014-2018", "phase": "pre-naturalization", "country": "Brazil", "clubs": ["Santos", "Vitória", "Santo André", "América Mineiro"], "summary": {"zh": "巴西青训与职业阶段。", "en": "Brazilian academy and professional career."}},
+              {"period": "2018-2020", "phase": "pre-naturalization", "country": "Japan", "clubs": ["Kashima Antlers"], "summary": {"zh": "日本 J 联赛、亚冠及世俱杯阶段。", "en": "J.League, AFC Champions League and Club World Cup period in Japan."}}
+            ],
+            "source_links": [
+              {"label": "AFC：中国 1-0 巴林比赛报告", "url": "https://www.the-afc.com/en/national/asian_qualifiers.html/news/group-c-china-pr-1-0-bahrain"},
+              {"label": "Kashima Antlers：Serginho 转会长春并回顾职业履历", "url": "https://www.antlers.co.jp/en/blogs/news/75691"},
+              {"label": "Transfermarkt：Serginho / 塞尔吉尼奥档案", "url": "https://www.transfermarkt.com/serginho/profil/spieler/329013"}
+            ]
+          }
+        ]
+      },
       "notes": "中国留洋条目已从单一历史个案扩到“1980 年代末至 1990 年代初先驱 + 早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的五层结构。先驱层现纳入贾秀全在贝尔格莱德游击队与大阪钢巴的正式比赛记录，以及宫磊从塔希提 AS Pirae 延伸到加拿大和香港的跨洲路径；塔希提单列为 oceania-other，不再并入美洲边缘样本。东南亚职业联赛现补入曾诚 2005 年由武汉光谷租借泗水佩塞巴亚、完成 25 场印尼顶级联赛出场的门将样本。除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
       "historical_trial_records": [
         {
