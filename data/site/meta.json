@@ -13,7 +13,7 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 808,
+    "record_count": 822,
     "stale_records": 55,
     "needs_review_records": 238
   },
@@ -322,11 +322,11 @@
         "zh": "留洋历史",
         "en": "Overseas history"
       },
-      "record_count": 105,
+      "record_count": 119,
       "quality": {
         "complete": 0,
         "mixed": 0,
-        "partial": 105,
+        "partial": 119,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -336,9 +336,9 @@
         "2": 0,
         "3": 0,
         "4": 0,
-        "5": 3,
+        "5": 13,
         "6": 0,
-        "unclassified": 102
+        "unclassified": 106
       },
       "checked_at": {
         "oldest": null,
@@ -348,7 +348,7 @@
       "missing_fields": [
         {
           "field": "source_links",
-          "count": 95
+          "count": 92
         }
       ]
     },
