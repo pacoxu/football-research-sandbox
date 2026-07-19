@@ -156,6 +156,140 @@
       }
     ]
   },
+  "chinese_heritage_players": {
+    "checked_at": "2026-07-20",
+    "scope_note": {
+      "zh": "以公开、可追溯报道确认的华裔家庭背景为线索，记录代表其他国家或地区足协的职业球员。本表描述家族来源与足球履历，不据此推断中国国籍、为中国队参赛资格或个人文化认同；2026 世界杯名单和赛果另以 FIFA 官方来源核验。",
+      "en": "This directory tracks professional players representing associations outside China PR whose Chinese family heritage is supported by traceable public reporting. Heritage does not imply Chinese citizenship, China PR eligibility or personal cultural identity; FIFA sources independently verify 2026 World Cup squads and results."
+    },
+    "groups": [
+      {"id": "world-cup-2026", "label": {"zh": "2026 世界杯参赛球员", "en": "FIFA World Cup 2026 players"}},
+      {"id": "active-watch", "label": {"zh": "现役与资格观察", "en": "Active and eligibility watch"}},
+      {"id": "historical", "label": {"zh": "历史代表人物", "en": "Historical figures"}}
+    ],
+    "profiles": [
+      {
+        "id": "virgil-van-dijk", "name": "Virgil van Dijk", "local_name": "范戴克", "group": "world-cup-2026", "represented_team": "Netherlands", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "母系具有苏里南华裔背景。中国侨网转载稿将其追溯到约 1918 年从广东迁往苏里南的陈火秀；因代际较远，本页只按公开报道记录。", "en": "Reported Chinese-Surinamese heritage through his maternal line, traced by the cited China News Service article to a Guangdong migrant who moved to Suriname around 1918; the ancestry is remote and is recorded only as reported."},
+        "football_summary": {"zh": "荷兰成年国家队队长，入选 FIFA 2026 世界杯正式名单。", "en": "Netherlands senior captain selected in the official FIFA World Cup 2026 squad."},
+        "world_cup_2026": {"squad_status": "final-squad", "tournament_summary": {"zh": "代表荷兰参赛。", "en": "Represented the Netherlands."}},
+        "source_links": [
+          {"label": "FIFA：荷兰 2026 世界杯名单", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-ronald-koeman-squad-announced"},
+          {"label": "中国侨网转载：范戴克母系华裔背景", "url": "https://finance.sina.com.cn/wm/2026-06-17/doc-inicthnp7060031.shtml"}
+        ]
+      },
+      {
+        "id": "tahith-chong", "name": "Tahith Chong", "local_name": "陈达毅", "group": "world-cup-2026", "represented_team": "Curaçao", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "公开报道将其记为第四代华裔，外曾祖父陈有来自广东新会、20 世纪 40 年代移居库拉索。该代际超出通常以三代直系血亲判断的代表资格范围。", "en": "Reported as fourth-generation Chinese Curaçaoan, with a great-great-grandfather from Xinhui, Guangdong who moved to Curaçao in the 1940s; that generation is beyond the usual three-generation direct-ancestry eligibility route."},
+        "football_summary": {"zh": "曾代表荷兰 U15 至 U21，2025 年代表库拉索成年队首秀，并进入 FIFA 2026 世界杯正式名单。", "en": "A former Netherlands U15-U21 player who debuted for Curaçao in 2025 and made its official FIFA World Cup 2026 squad."},
+        "world_cup_2026": {"squad_status": "final-squad", "tournament_summary": {"zh": "代表库拉索参赛。", "en": "Represented Curaçao."}},
+        "source_links": [
+          {"label": "FIFA：库拉索 2026 世界杯名单", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/curacao-squad-announcement-dick-advocaat"},
+          {"label": "中国侨网转载：陈达毅家族来源", "url": "https://finance.sina.com.cn/wm/2026-06-17/doc-inicthnp7060031.shtml"}
+        ]
+      },
+      {
+        "id": "elijah-just", "name": "Elijah Just", "local_name": "伊莱贾·贾斯特", "group": "world-cup-2026", "represented_team": "New Zealand", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "母亲是华裔，父亲是德国人；这一直接家庭背景由《南华早报》世界杯报道确认。", "en": "His mother is Chinese and his father German, a direct family background reported by the South China Morning Post."},
+        "football_summary": {"zh": "新西兰成年国脚、苏格兰马瑟韦尔球员；2026 世界杯对伊朗攻入两球，成为首位在世界杯单场梅开二度的新西兰球员。", "en": "A New Zealand senior international and Motherwell player who scored twice against IR Iran in 2026, becoming the first New Zealander with a World Cup brace."},
+        "world_cup_2026": {"squad_status": "played", "tournament_summary": {"zh": "对伊朗 2 比 2 的比赛梅开二度。", "en": "Scored both New Zealand goals in the 2-2 draw with IR Iran."}},
+        "source_links": [
+          {"label": "FIFA：贾斯特对伊朗梅开二度", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/elijah-just-new-zealand"},
+          {"label": "南华早报：贾斯特的华裔母亲与家庭背景", "url": "https://www.scmp.com/sport/football/article/3357281/new-zealands-world-cup-goalscoring-hero-has-chinese-mother-makes-history-motherwell"}
+        ]
+      },
+      {
+        "id": "kian-fitz-jim", "name": "Kian Fitz-Jim", "local_name": "菲慈占·天乐", "group": "active-watch", "represented_team": "Netherlands U21", "representation_status": "youth-international",
+        "heritage_summary": {"zh": "母亲来自香港；公开采访和港媒报道还记录他持香港身份证、会说粤语。", "en": "His mother is from Hong Kong; public interviews and Hong Kong reporting also record that he holds a Hong Kong identity card and speaks Cantonese."},
+        "football_summary": {"zh": "阿贾克斯中场、荷兰青年国脚。当前按青年队选择记录，不推断其未来成年国家队归属。", "en": "An Ajax midfielder and Netherlands youth international; his future senior-team choice is not inferred."},
+        "source_links": [
+          {"label": "Ajax：Fitz-Jim 家庭与香港经历", "url": "https://english.ajax.nl/articles/fitz-jim-in-the-barber-s-chair-i-get-strength-from-my-long-hair/"},
+          {"label": "明报：母亲为香港人、持香港身份证", "url": "https://news.mingpao.com/ins/%E9%AB%94%E8%82%B2/article/20230109/s00006/1673258548422/%E8%8D%B7%E7%94%B2-%E8%8F%AF%E8%A3%94%E5%B0%8F%E5%B0%87%E8%8F%B2%E6%85%88%E4%BD%94%E5%A4%A9%E6%A8%82%E9%A6%96%E7%82%BA%E9%98%BF%E7%A9%8D%E5%A3%AB%E4%B8%8A%E9%99%A3-%E6%9C%89%E9%A6%99%E6%B8%AF%E8%BA%AB%E5%88%86%E8%AD%89%E7%8D%B2%E6%B8%AF%E8%B6%B3%E4%B8%BB%E5%B8%A5%E9%97%9C%E6%B3%A8"}
+        ]
+      },
+      {
+        "id": "dion-cools", "name": "Dion-Johan Cools", "local_name": "迪昂·库尔斯", "group": "active-watch", "represented_team": "Malaysia", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "父亲是比利时人，母亲是马来西亚华人。", "en": "Born to a Belgian father and Malaysian Chinese mother."},
+        "football_summary": {"zh": "马来西亚成年队队长；2026 年效力日本大阪樱花。", "en": "Malaysia senior captain and a Cerezo Osaka player in 2026."},
+        "source_links": [
+          {"label": "FIFA：Dion Cools 马来西亚队专访", "url": "https://www.fifa.com/fr/tournaments/mens/worldcup/canadamexicousa2026/articles/dion-johan-cools-malaisie-interview-qualifications-coupe-du-monde-fifa-26"},
+          {"label": "大阪樱花：Dion Cools 官方球员页", "url": "https://www.cerezo.jp/team/players/dion_cools/"}
+        ]
+      },
+      {
+        "id": "lavere-corbin-ong", "name": "La’Vere Corbin-Ong", "local_name": "科尔宾-翁", "group": "active-watch", "represented_team": "Malaysia", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "父亲来自巴巴多斯，母亲是马来西亚华人；出生于英格兰、在加拿大成长。", "en": "Born to a Barbadian father and Malaysian Chinese mother in England and raised in Canada."},
+        "football_summary": {"zh": "马来西亚成年国脚，效力柔佛新山。", "en": "A Malaysia senior international with Johor Darul Ta’zim."},
+        "source_links": [
+          {"label": "JDT：Corbin-Ong 官方球员页", "url": "https://johorsoutherntigers.my/player/corbin-ong/"},
+          {"label": "Transfermarkt：Corbin-Ong 家庭背景", "url": "https://www.transfermarkt.us/lavere-corbin-ong/profil/spieler/231425"}
+        ]
+      },
+      {
+        "id": "alexander-ndoumbou", "name": "Alexander N’Doumbou", "local_name": "钱杰给", "group": "active-watch", "represented_team": "Gabon", "representation_status": "association-locked",
+        "heritage_summary": {"zh": "父亲是加蓬人，母亲是中国人；后来取得中国国籍并以钱杰给之名在中国联赛注册。", "en": "Born to a Gabonese father and Chinese mother; he later acquired Chinese citizenship and registered in China as Qian Jiegei."},
+        "football_summary": {"zh": "马赛青训出身，曾在正式比赛代表加蓬，因此本页不把中国国籍等同于中国队参赛资格。", "en": "A Marseille academy product who represented Gabon in official competition; Chinese citizenship is therefore not treated as China PR eligibility."},
+        "source_links": [
+          {"label": "UEFA：马赛档案确认中国母亲与加蓬父亲", "url": "https://www.uefa.com/MultimediaFiles/Download/ITT/uefaorg/General/01/53/55/89/1535589_DOWNLOAD.pdf"},
+          {"label": "BBC：取得中国国籍前后的加蓬成年队履历", "url": "https://www.bbc.co.uk/sport/football/47117586"}
+        ]
+      },
+      {
+        "id": "perry-ng", "name": "Perry Ng", "local_name": "佩里·吴", "group": "active-watch", "represented_team": null, "target_team": "Singapore", "representation_status": "eligibility-watch",
+        "heritage_summary": {"zh": "祖父出生于新加坡；2025 年取得新加坡永久居民身份，此后通过外来体育人才计划申请公民身份。", "en": "His grandfather was born in Singapore; he obtained Singapore permanent residence in 2025 and subsequently applied for citizenship through the Foreign Sports Talent Scheme."},
+        "football_summary": {"zh": "卡迪夫城后卫。截至 2026 年 6 月，公民申请仍在等待审批，不能写成新加坡国脚。", "en": "A Cardiff City defender whose citizenship application was still pending in June 2026; he must not yet be described as a Singapore international."},
+        "source_links": [
+          {"label": "CNA：佩里·吴公民申请截至 2026 年 6 月仍待审批", "url": "https://www.channelnewsasia.com/singapore/perry-ng-cardiff-city-naturalisation-lions-football-6213056"},
+          {"label": "Cardiff City：续约至 2028 年", "url": "https://www.cardiffcityfc.co.uk/news/perry-ng-signs-new-city-deal-0"}
+        ]
+      },
+      {
+        "id": "brian-ching", "name": "Brian Ching", "local_name": "布莱恩·程", "group": "historical", "represented_team": "United States", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "父系具有华裔背景；公开人物资料通常将其记为四分之一华裔。", "en": "Chinese heritage through his paternal line; public biographical sources commonly describe him as one-quarter Chinese."},
+        "football_summary": {"zh": "美国队 45 场 11 球，入选 2006 世界杯名单但未出场。", "en": "Recorded 45 caps and 11 goals for the United States and was selected for the 2006 World Cup without appearing."},
+        "source_links": [
+          {"label": "Houston Dynamo：Brian Ching 国家队与世界杯档案", "url": "https://www.houstondynamofc.com/players/brian-ching/"},
+          {"label": "懂球帝：Brian Ching 华裔家族溯源", "url": "https://m.dongqiudi.com/article/4945653.html"}
+        ]
+      },
+      {
+        "id": "mark-chung", "name": "Mark Chung", "local_name": "马克·钟", "group": "historical", "represented_team": "United States", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "出生于加拿大，父母均为牙买加客家华裔。", "en": "Born in Canada to Hakka Chinese Jamaican parents."},
+        "football_summary": {"zh": "美国成年国脚 24 场 2 球，也是 MLS 早期代表球员之一。", "en": "A 24-cap, two-goal United States senior international and an early MLS standout."},
+        "source_links": [
+          {"label": "MLS：Mark Chung 24 场美国队履历", "url": "https://www.mlssoccer.com/news/what-ever-happened-mark-chung"},
+          {"label": "MLS：24 场 2 球记录", "url": "https://www.mlssoccer.com/news/san-jose-earthquakes-acquire-midfielder-mark-chung-colorado-rapids-portion"}
+        ]
+      },
+      {
+        "id": "tscheu-la-ling", "name": "Tscheu La Ling", "local_name": "林球立", "group": "historical", "represented_team": "Netherlands", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "华裔荷兰球员，公开中文资料将其祖籍记为浙江温州。", "en": "A Chinese-Dutch player whose Chinese-language biographical reporting traces his family to Wenzhou, Zhejiang."},
+        "football_summary": {"zh": "阿贾克斯名将，1975—1982 年为俱乐部参加 223 场正式比赛，并代表荷兰成年队出场。", "en": "An Ajax great who played 223 official club matches from 1975 to 1982 and represented the Netherlands at senior level."},
+        "source_links": [
+          {"label": "Ajax：林球立 223 场正式比赛", "url": "https://www.ajax.nl/artikelen/top-10-goals-treffers-van-tscheu-la-ling"},
+          {"label": "新浪体育：林球立华裔家庭背景访谈", "url": "https://sports.sina.com.cn/review/200007/0553584.shtml?from=wap"}
+        ]
+      },
+      {
+        "id": "aron-winter", "name": "Aron Winter", "local_name": "阿隆·温特", "group": "historical", "represented_team": "Netherlands", "representation_status": "senior-international",
+        "heritage_summary": {"zh": "苏里南出生，公开资料通常记载其祖父为苏里南客家华裔。", "en": "Born in Suriname and commonly reported as having Hakka Chinese-Surinamese heritage through his grandfather."},
+        "football_summary": {"zh": "荷兰 1988 欧洲杯冠军成员，参加 1990、1994、1998 三届世界杯。", "en": "A UEFA EURO 1988 winner with the Netherlands who appeared at the 1990, 1994 and 1998 World Cups."},
+        "source_links": [
+          {"label": "荷兰足协：Aron Winter 大赛履历", "url": "https://www.onsoranje.nl/toernooien/394/selectie/185184/speler/8718"},
+          {"label": "中国侨网转载：温特华裔背景", "url": "https://finance.sina.com.cn/wm/2026-06-17/doc-inicthnp7060031.shtml"}
+        ]
+      },
+      {
+        "id": "frank-soo", "name": "Frank Soo", "local_name": "弗兰克·苏", "group": "historical", "represented_team": "England wartime XI", "representation_status": "wartime-unofficial",
+        "heritage_summary": {"zh": "父亲是中国人、母亲是英格兰人，是英格兰足球的重要华裔先驱。", "en": "Born to a Chinese father and English mother, he was a pioneering Chinese-heritage figure in English football."},
+        "football_summary": {"zh": "二战期间九次代表英格兰出场；这些战时比赛不获 FIFA 承认为正式国际赛，因此不能写成 9 场正式英格兰队出场。", "en": "Played nine times for England during the Second World War; those wartime fixtures are not FIFA-recognized official internationals and must not be presented as nine official caps."},
+        "source_links": [
+          {"label": "英国议会：弗兰克·苏追授荣誉国家队帽", "url": "https://edm.parliament.uk/early-day-motion/64313/award-of-honorary-posthumous-england-cap-to-frank-soo"},
+          {"label": "Sky Sports：弗兰克·苏与华裔先驱历史", "url": "https://www.skysports.com/football/news/11095/13244634/asians-in-football-frank-soo-and-the-footballers-that-followed-the-stoke-city-and-england-legend"}
+        ]
+      }
+    ]
+  },
   "countries": [
     {
       "country": "China PR",
