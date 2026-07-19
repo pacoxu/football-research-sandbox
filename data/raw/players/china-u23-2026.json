@@ -47,6 +47,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yi-luan/profil/spieler/789650"
       }
     ],
     "verification": {
@@ -103,6 +108,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/hetao-hu/profil/spieler/1014230"
       }
     ],
     "verification": {
@@ -135,9 +145,21 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -152,6 +174,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -159,12 +186,17 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yiran-he/profil/spieler/1012737"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
+      "last_checked": "2026-07-11",
+      "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {
@@ -215,6 +247,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/umidjan-yusup/profil/spieler/956819"
       }
     ],
     "verification": {
@@ -271,6 +308,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/haofan-liu/profil/spieler/946850"
       }
     ],
     "verification": {
@@ -281,6 +323,7 @@
   },
   {
     "id": "cn-xu-bin-2004",
+    "overseas_status": "active-registered",
     "name": "Xu Bin",
     "local_name": "徐彬",
     "country": "China PR",
@@ -364,6 +407,11 @@
         "type": "official",
         "label": "CFA squad notice listing Xu Bin at Barnsley",
         "url": "https://www.thecfa.cn/jxtz/20260320/37443.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/bin-xu/profil/spieler/789642"
       }
     ],
     "verification": {
@@ -420,6 +468,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yuwang-xiang/profil/spieler/1136184"
       }
     ],
     "verification": {
@@ -532,6 +585,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/behram-abduweli/profil/spieler/946750"
       }
     ],
     "verification": {
@@ -572,9 +630,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -599,6 +669,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -616,12 +691,17 @@
         "type": "stats",
         "label": "Sina 2026 CSL scoring page",
         "url": "https://sports.sina.com.cn/csl/scorer/"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yudong-wang/profil/spieler/1125720"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属和一线队地位由浙江队当前名单与赛季射手榜交叉确认。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属和一线队地位由浙江队当前名单与赛季射手榜交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {
@@ -656,9 +736,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 2,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -683,6 +775,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -700,12 +797,17 @@
         "type": "wikipedia",
         "label": "Wikipedia profile",
         "url": "https://zh.wikipedia.org/wiki/%E8%92%AF%E7%BA%AA%E9%97%BB"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jiwen-kuai/profil/spieler/1068096"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属由上海海港当前名单与球员资料页交叉确认。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的当前归属由上海海港当前名单与球员资料页交叉确认。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {
@@ -756,6 +858,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shenping-huo/profil/spieler/946751"
       }
     ],
     "verification": {
@@ -766,6 +873,7 @@
   },
   {
     "id": "cn-wang-bohao-2005",
+    "overseas_status": "active-registered",
     "name": "Wang Bohao",
     "local_name": "王博豪",
     "country": "China PR",
@@ -840,6 +948,11 @@
         "type": "official",
         "label": "FC Den Bosch first-team squad page",
         "url": "https://www.fcdenbosch.nl/eerste-elftal/"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/bohao-wang/profil/spieler/1155374"
       }
     ],
     "verification": {
@@ -924,6 +1037,11 @@
         "type": "wikipedia",
         "label": "Wikipedia profile",
         "url": "https://zh.wikipedia.org/wiki/%E6%9D%A8%E7%9A%93%E5%AE%87_(2006%E5%B9%B4)"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/haoyu-yang/profil/spieler/1237518"
       }
     ],
     "verification": {
@@ -964,9 +1082,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -991,6 +1121,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -1003,16 +1138,22 @@
         "type": "profile",
         "label": "Sina player profile",
         "url": "https://match.sports.sina.com.cn/football/player.php?id=7483401"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/xiao-peng/profil/spieler/789635"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {
     "id": "cn-li-hao-2004",
+    "overseas_status": "returned",
     "name": "Li Hao",
     "local_name": "李昊",
     "country": "China PR",
@@ -1089,6 +1230,11 @@
         "type": "wikipedia",
         "label": "Wikipedia profile",
         "url": "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%98%8A_(%E8%B6%B3%E7%90%83%E8%BF%90%E5%8A%A8%E5%91%98)"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/hao-li/profil/spieler/788152"
       }
     ],
     "verification": {
@@ -1145,6 +1291,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shimeng-bao/profil/spieler/1237516"
       }
     ],
     "verification": {
@@ -1185,9 +1336,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -1212,6 +1375,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -1224,12 +1392,17 @@
         "type": "profile",
         "label": "Sina player profile",
         "url": "https://match.sports.sina.com.cn/football/player.php?id=7359052"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/zeshi-chen/profil/spieler/946650"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；当前中超阶段的山东泰山归属由球员资料页补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {
@@ -1303,6 +1476,11 @@
         "type": "profile",
         "label": "Sina player profile",
         "url": "https://match.sports.sina.com.cn/football/player.php?id=7563023"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/aihui-zhang/profil/spieler/1267177"
       }
     ],
     "verification": {
@@ -1359,6 +1537,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/zhenquan-li/profil/spieler/1014228"
       }
     ],
     "verification": {
@@ -1415,6 +1598,11 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shengxin-bao/profil/spieler/946840"
       }
     ],
     "verification": {
@@ -1455,9 +1643,21 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 中国队终报名名单",
@@ -1482,6 +1682,11 @@
     "external_links": [
       {
         "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
       },
@@ -1499,16 +1704,22 @@
         "type": "club",
         "label": "Sina Dalian Yingbo squad page",
         "url": "https://sports.sina.com.cn/csl/team/dly/index.shtml"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/weijie-mao/profil/spieler/1134838"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的大连英博归属由公开名单补充。"
+      "last_checked": "2026-07-11",
+      "notes": "AFC U23 终报名表可校对基础信息；2026 中超阶段的大连英博归属由公开名单补充。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   },
   {
     "id": "cn-yang-alex-2005",
+    "overseas_status": "returned",
     "name": "Alex Xi Yang",
     "local_name": "杨希",
     "country": "China PR",
@@ -1585,17 +1796,20 @@
       "csl-2026",
       "csl-u21-current",
       "csl-u23-overseas",
-      "overseas-europe"
+      "overseas-europe",
+      "asia-u20-2025",
+      "china-u20-2025-final-squad"
     ],
     "tournament_participation": [
       {
-        "label": "2025 中国 U20 亚洲杯名单",
+        "label": "AFC U20 2025 中国队终报名名单",
         "team": "China PR U20",
         "squad_status": "registered",
         "appearances": null,
-        "goals": null,
+        "goals": 0,
         "minutes": null,
-        "note": "中国足协 2025-02-11 集训及参赛通知将其所属列为西班牙奥斯皮塔莱特足球俱乐部；对卡塔尔首战第 11 分钟，杨希抢断后连过 3 人制造任意球，体现其边后卫推进能力。"
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。",
+        "competition_id": "afc-u20-2025"
       },
       {
         "label": "2025 中国 U22 / U23 周期集训",
@@ -1638,7 +1852,12 @@
     ],
     "external_links": [
       {
-        "type": "profile",
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/alex-yang/profil/spieler/1012988"
       },
@@ -1695,8 +1914,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "中国足协 U20、U22、U23 及成年国家队通知与战报可以连续拼出其从西班牙奥斯皮塔莱特、青岛西海岸到上海海港，再到成年国家队考察线的时间轴。Transfermarkt 与 Sofascore 可交叉校验生日、巴塞罗那出生地、右脚和右边后卫定位。公开身高口径在 175cm 与 182cm 间存在差异，因此当前不硬填高度字段。"
+      "last_checked": "2026-07-11",
+      "notes": "中国足协 U20、U22、U23 及成年国家队通知与战报可以连续拼出其从西班牙奥斯皮塔莱特、青岛西海岸到上海海港，再到成年国家队考察线的时间轴。Transfermarkt 与 Sofascore 可交叉校验生日、巴塞罗那出生地、右脚和右边后卫定位。公开身高口径在 175cm 与 182cm 间存在差异，因此当前不硬填高度字段。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     }
   }
 ]

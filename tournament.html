@@ -8,7 +8,7 @@
       name="description"
       content="查看单项赛事的时间范围、中国战绩、比赛明细、关键球员与来源链接。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260627-asian-coaches" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-youth-systems-u20-archive" />
   </head>
   <body data-page="tournament-detail">
     <div class="site-shell">
@@ -23,6 +23,8 @@
             <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
             <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
             <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a href="./lineup.html">排阵容</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">日韩青训体系</a>
           </nav>
           <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
             <span class="header-control-caption" data-i18n="header.language">语言</span>
@@ -53,6 +55,19 @@
             <div id="tournamentDetailContext" class="stack-list"></div>
           </section>
 
+          <section id="tournamentDetailFieldSection" class="content-panel" hidden>
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="tournamentDetail.field.eyebrow">Teams &amp; Draw</p>
+                <h2 data-i18n="tournamentDetail.field.title">参赛资格与分组</h2>
+              </div>
+            </div>
+            <p id="tournamentDetailFieldMeta" class="hero-side-note"></p>
+            <div id="tournamentDetailParticipants" class="stack-list"></div>
+            <div id="tournamentDetailFinalDraw" class="archive-grid"></div>
+            <div id="tournamentDetailQualifiers" class="stack-list"></div>
+          </section>
+
           <section id="tournamentDetailRegionalHistorySection" class="content-panel" hidden>
             <div class="section-head">
               <div>
@@ -69,7 +84,7 @@
             <div class="section-head">
               <div>
                 <p class="eyebrow" data-i18n="tournamentDetail.watch.eyebrow">Watchlist</p>
-                <h2 data-i18n="tournamentDetail.watch.title">日韩 U23 世界杯周期观察</h2>
+                <h2 id="tournamentDetailRegionalWatchTitle" data-i18n="tournamentDetail.watch.title">区域年轻球员观察</h2>
               </div>
             </div>
             <p id="tournamentDetailRegionalWatchScope" class="hero-side-note"></p>
@@ -125,6 +140,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260627-asian-coaches"></script>
+    <script type="module" src="./assets/app.js?v=20260712-youth-systems-u20-archive"></script>
   </body>
 </html>

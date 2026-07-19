@@ -25,16 +25,26 @@ const state = {
     query: "",
     country: "all",
     ageBand: "all",
+    competition: "all",
     leagueSystem: "all",
+    organizationType: "all",
     tag: "all",
+    sort: "default",
     view: "cards"
   },
+  pathwaysCountry: "Japan",
   tournamentFilters: {
     level: "all"
+  },
+  youthLeagueFilters: {
+    season: "all",
+    country: "all",
+    status: "all"
   },
   overseasFilters: {
     country: "all",
     bucket: "all",
+    teamLevel: "all",
     year: "all"
   }
 };
@@ -44,15 +54,21 @@ const UI_COPY = {
     "page.home.title": "青训球员追踪站",
     "page.home.description": "聚焦中国青训、亚洲青年赛事与中日韩留洋样本的静态数据站。",
     "page.players.title": "球员列表 | 青训球员追踪站",
-    "page.players.description": "按国籍、年龄段、当前联赛或体系、标签筛选青训与青年球员样本。",
+    "page.players.description": "按国籍、年龄段、赛事、联赛或体系、标签筛选青训与青年球员样本。",
     "page.player-detail.title": "球员详情 | 青训球员追踪站",
     "page.player-detail.description": "查看球员青训路径、赛事经历、当前归属、最近贡献与外部资料链接。",
     "page.tournaments.title": "赛事列表 | 青训球员追踪站",
     "page.tournaments.description": "按赛事层级查看亚洲杯、世界杯、世青赛、世少赛的比赛时间、结果、中国战绩与来源链接。",
+    "page.youth-league.title": "欧洲青年冠军联赛 | 青训球员追踪站",
+    "page.youth-league.description": "欧洲青年冠军联赛近三个赛季的资格、赛制、淘汰赛与中日韩球员专题。",
     "page.tournament-detail.title": "赛事详情 | 青训球员追踪站",
     "page.tournament-detail.description": "查看单项赛事的时间范围、中国战绩、比赛明细、关键球员与来源链接。",
     "page.overseas.title": "留洋专页 | 青训球员追踪站",
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
+    "page.pathways.title": "日韩青训体系 | 青训球员追踪站",
+    "page.pathways.description": "理解日本学校足球与俱乐部 U18、韩国高中队与 K League 梯队的并行关系。",
+    "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
+    "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
     "site.kicker": "青训追踪台",
     "site.brand": "青训球员追踪站",
     "nav.aria": "主导航",
@@ -60,6 +76,7 @@ const UI_COPY = {
     "nav.players": "球员",
     "nav.tournaments": "赛事",
     "nav.overseas": "留洋",
+    "nav.pathways": "日韩青训体系",
     "header.language": "语言",
     "common.loading": "加载中",
     "common.loadingData": "数据载入中",
@@ -88,11 +105,13 @@ const UI_COPY = {
     "home.quickLinks.eyebrow": "Quick Links",
     "home.quickLinks.title": "快捷入口",
     "home.quickLinks.playersTitle": "球员",
-    "home.quickLinks.playersText": "按国籍、年龄段和标签筛选球员样本。",
+    "home.quickLinks.playersText": "按国籍、年龄段、赛事和标签筛选球员样本。",
     "home.quickLinks.tournamentsTitle": "赛事",
     "home.quickLinks.tournamentsText": "查看赛事时间、结果和中国队比赛明细。",
     "home.quickLinks.overseasTitle": "留洋",
     "home.quickLinks.overseasText": "区分当前留洋样本与历史记录。",
+    "home.quickLinks.genbaoTitle": "根宝足球基地",
+    "home.quickLinks.genbaoText": "按代际查看基地代表球员、培养路径与当前状态。",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "留洋概览",
     "home.overseasSummary.link": "查看留洋",
@@ -140,15 +159,15 @@ const UI_COPY = {
     "home.overseasCard.league": "赛事或联赛：{value}",
     "players.hero.eyebrow": "Player Directory",
     "players.hero.title": "球员列表",
-    "players.hero.text": "这里是总入口。支持按国籍、年龄段、当前联赛或体系、专题标签过滤，并在卡片视图和列表视图之间切换，也会同步显示 Transfermarkt 当前身价与历史峰值排行。",
+    "players.hero.text": "这里是球员库总入口。支持按国籍、年龄段、赛事、联赛或体系及专题标签过滤，并展示当前球员库身价排行；下方另列中日韩留洋历史代表样本峰值榜。",
     "players.view.eyebrow": "View Modes",
     "players.view.aria": "视图切换",
     "players.view.cards": "卡片",
     "players.view.table": "列表",
     "players.rankings.eyebrow": "Transfermarkt",
     "players.rankings.currentTitle": "当前身价排行",
-    "players.rankings.peakTitle": "历史峰值排行",
-    "players.rankings.note": "仅统计已关联 Transfermarkt 个人页且已有估值的球员；排行会跟随当前筛选更新。",
+    "players.rankings.peakTitle": "当前球员库峰值排行",
+    "players.rankings.note": "仅统计本页当前球员库中已关联 Transfermarkt 个人页且已有估值的球员；排行会跟随当前筛选更新，不代表中日韩留洋历史全榜。",
     "players.rankings.coverageCurrent": "当前筛选已补当前身价 {count} / {total} 人",
     "players.rankings.coveragePeak": "当前筛选已补历史峰值 {count} / {total} 人",
     "players.rankings.currentEmpty": "当前筛选下还没有可用的当前身价数据。",
@@ -156,23 +175,42 @@ const UI_COPY = {
     "players.rankings.currentMeta": "峰值 {value} · {date}",
     "players.rankings.peakMeta": "当前 {value} · 达峰于 {date}",
     "players.rankings.peakMetaNoCurrent": "达峰于 {date}",
+    "players.rankings.historyTitle": "中日韩留洋历史峰值排行",
+    "players.rankings.historyCoverage": "已建档历史代表样本 {count} 人 · 独立于上方球员筛选",
+    "players.rankings.historyMeta": "{club} · {date} · {age} 岁",
+    "players.rankings.historyCurrent": "当前 {value}",
+    "players.rankings.historyRetired": "已退役",
+    "players.rankings.historyNote": "口径：仅统计留洋史已建档且有 Transfermarkt 历史估值的中日韩代表样本，不是亚洲球员全量榜。金额为当时名义欧元估值，不做通胀或年代校正；早期球员的历史曲线可能覆盖不完整。",
+    "players.rankings.historyEmpty": "暂没有可展示的留洋历史峰值数据。",
     "players.filters.search": "搜索",
     "players.filters.searchPlaceholder": "中文名、原文名、英文名、俱乐部、标签",
     "players.filters.country": "国籍",
     "players.filters.ageBand": "年龄段",
-    "players.filters.league": "当前联赛 / 体系",
+    "players.filters.competition": "赛事",
+    "players.filters.league": "联赛 / 体系",
+    "players.filters.organizationType": "培养组织类型",
     "players.filters.tag": "标签",
+    "players.filters.sort": "排序",
+    "players.sort.default": "默认顺序",
+    "players.sort.ageAsc": "年龄：从小到大",
+    "players.sort.ageDesc": "年龄：从大到小",
+    "players.sort.marketValueDesc": "身价：从高到低",
+    "players.sort.marketValueAsc": "身价：从低到高",
     "players.filters.actions": "操作",
     "players.filters.reset": "重置筛选",
     "players.filters.allCountry": "全部国籍",
     "players.filters.allAgeBand": "全部年龄段",
+    "players.filters.allCompetition": "全部赛事",
     "players.filters.allLeague": "全部联赛 / 体系",
+    "players.filters.allOrganizationType": "全部组织类型",
     "players.filters.allTag": "全部标签",
     "players.table.player": "球员",
     "players.table.country": "国籍",
     "players.table.age": "年龄",
-    "players.table.club": "当前球队",
-    "players.table.league": "当前联赛 / 体系",
+    "players.table.marketValue": "当前身价",
+    "players.table.marketValuePeak": "峰值 {value}",
+    "players.table.club": "球队 / 报名归属",
+    "players.table.league": "联赛 / 体系",
     "players.table.tag": "标签",
     "players.table.detail": "查看",
     "players.empty": "当前筛选条件下没有匹配球员。",
@@ -196,6 +234,66 @@ const UI_COPY = {
     "playerDetail.recent.title": "最近贡献",
     "playerDetail.links.eyebrow": "External Links",
     "playerDetail.links.title": "外部资料与来源",
+    "playerDetail.sources.eyebrow": "Source Layers",
+    "playerDetail.sources.title": "来源层与培养体系",
+    "playerDetail.sources.empty": "当前还没有结构化来源层。",
+    "playerDetail.sources.fields": "支撑字段：{fields}",
+    "playerDetail.sources.checked": "核查：{date} · 可信度：{confidence}",
+    "playerDetail.stats.organizationType": "培养组织类型",
+    "playerDetail.stats.parentOrganization": "母俱乐部",
+    "playerDetail.stats.educationPartner": "合作学校",
+    "playerDetail.pathway.context": "赛事环境",
+    "pathways.hero.eyebrow": "Youth Development Systems",
+    "pathways.hero.title": "日韩青训体系",
+    "pathways.hero.text": "区分学校队、俱乐部梯队、大学与职业桥梁，并把体系赛事连接到本站球员样本。",
+    "pathways.meta.eyebrow": "Coverage",
+    "pathways.meta.coverage": "四队 {count} 人基础覆盖",
+    "pathways.meta.checked": "体系核查至 {date}",
+    "pathways.tabs.aria": "国家切换",
+    "pathways.tabs.japan": "日本",
+    "pathways.tabs.korea": "韩国",
+    "pathways.structure.eyebrow": "Competition Map",
+    "pathways.structure.title": "联赛、杯赛与职业桥梁",
+    "pathways.sources.eyebrow": "Official Sources",
+    "pathways.sources.title": "官方来源与核查时间",
+    "pathways.registration": "注册类别：{value}",
+    "pathways.organizationTypes": "适用组织：{value}",
+    "pathways.snapshot": "{season} 年度快照：{note}",
+    "pathways.viewPlayers": "查看本站样本（{count}）",
+    "pathways.noPlayers": "当前无关联样本",
+    "pathways.sourceChecked": "最后核查：{date}",
+    "dossier.breadcrumb.home": "首页",
+    "dossier.breadcrumb.detail": "青训专题",
+    "dossier.hero.eyebrow": "Academy Dossier",
+    "dossier.hero.lastReviewed": "核查至 {date}",
+    "dossier.notFound.title": "未找到对应专题",
+    "dossier.notFound.text": "当前专题不存在或尚未进入公开展示范围。",
+    "dossier.stats.founded": "基地启用",
+    "dossier.stats.generations": "跟踪代际",
+    "dossier.stats.players": "代表球员",
+    "dossier.stats.currentFocus": "当前梯队",
+    "dossier.model.eyebrow": "Development Model",
+    "dossier.model.title": "培养模式与专题口径",
+    "dossier.timeline.eyebrow": "Timeline",
+    "dossier.timeline.title": "基地沿革",
+    "dossier.generations.eyebrow": "Generations",
+    "dossier.generations.title": "代表球员与当前状态",
+    "dossier.generations.players": "代表样本 {count} 人",
+    "dossier.generations.empty": "当前代际尚无公开稳定球员名单。",
+    "dossier.program.coach": "主教练：{value}",
+    "dossier.program.ageGroups": "年龄段：{value}",
+    "dossier.player.asOf": "截至 {date}",
+    "dossier.player.source": "现状来源",
+    "dossier.player.profile": "站内球员档案",
+    "dossier.boundaries.eyebrow": "Boundaries",
+    "dossier.boundaries.title": "口径与争议",
+    "dossier.questions.eyebrow": "Follow-up",
+    "dossier.questions.title": "待核问题",
+    "dossier.sources.eyebrow": "Sources",
+    "dossier.sources.title": "来源与核查日期",
+    "dossier.sources.primary": "主来源",
+    "dossier.sources.supporting": "补充来源",
+    "dossier.sources.checked": "专题核查至 {date}",
     "tournamentDetail.breadcrumb.list": "赛事列表",
     "tournamentDetail.breadcrumb.detail": "赛事详情",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -215,6 +313,26 @@ const UI_COPY = {
     "tournamentDetail.context.headline": "当前摘要",
     "tournamentDetail.context.focusTeams": "重点队伍",
     "tournamentDetail.context.empty": "当前只有基础赛事档案，还没有额外专题说明。",
+    "tournamentDetail.field.eyebrow": "Teams & Draw",
+    "tournamentDetail.field.title": "参赛资格与分组",
+    "tournamentDetail.field.meta": "决赛圈记录 {count} 支球队 · 最后核查 {date}",
+    "tournamentDetail.field.participants": "决赛圈球队",
+    "tournamentDetail.field.participantsComplete": "完整参赛名单",
+    "tournamentDetail.field.participantsPartial": "当前已确认 / 主办方快照",
+    "tournamentDetail.field.participantsCancelled": "赛事取消时的资格快照",
+    "tournamentDetail.field.entry.host": "主办国",
+    "tournamentDetail.field.entry.qualified": "已晋级",
+    "tournamentDetail.field.entry.participant": "参赛",
+    "tournamentDetail.field.finalDraw": "决赛圈分组",
+    "tournamentDetail.field.drawPending": "决赛圈尚未抽签",
+    "tournamentDetail.field.drawCancelled": "赛事已取消；下列为取消前已公布的分组",
+    "tournamentDetail.field.qualifiers": "资格赛分组",
+    "tournamentDetail.field.phase.qualification": "资格阶段",
+    "tournamentDetail.field.phase.development": "发展阶段",
+    "tournamentDetail.field.phaseDates": "{start} 至 {end}",
+    "tournamentDetail.field.groupHost": "赛区：{host}",
+    "tournamentDetail.field.group.finalRound": "决赛轮",
+    "tournamentDetail.field.group.group": "{name}组",
     "tournamentDetail.history.eyebrow": "History",
     "tournamentDetail.history.title": "中日韩历届战绩",
     "tournamentDetail.history.empty": "当前这条赛事还没有补到中日韩历届战绩。",
@@ -227,9 +345,9 @@ const UI_COPY = {
     "tournamentDetail.history.table.japan": "日本",
     "tournamentDetail.history.table.korea": "韩国",
     "tournamentDetail.watch.eyebrow": "Watchlist",
-    "tournamentDetail.watch.title": "日韩 U23 世界杯周期观察",
-    "tournamentDetail.watch.empty": "当前这条赛事还没有补到日韩 U23 观察池。",
-    "tournamentDetail.watch.sampleCount": "U23 池 {count} 人",
+    "tournamentDetail.watch.title": "区域年轻球员观察",
+    "tournamentDetail.watch.empty": "当前这条赛事还没有补到区域观察池。",
+    "tournamentDetail.watch.sampleCount": "{label} 池 {count} 人",
     "tournamentDetail.watch.overseasCount": "当前留洋 {count} 人",
     "tournamentDetail.watch.allPlayers": "全名单",
     "tournamentDetail.watch.overseasPlayers": "留洋样本",
@@ -258,12 +376,21 @@ const UI_COPY = {
     "playerDetail.marketValue.withLink": "Transfermarkt 外链已关联",
     "playerDetail.marketValue.withoutLink": "暂无稳定身价来源",
     "playerDetail.marketValue.note": "身价参考 Transfermarkt；球员页区分当前值与历史峰值，列表页同步提供排行。",
+    "playerDetail.marketHistory.eyebrow": "Market Value History",
+    "playerDetail.marketHistory.title": "身价历史",
+    "playerDetail.marketHistory.source": "来源：{provider}",
+    "playerDetail.marketHistory.updated": "最后检查：{date}",
+    "playerDetail.marketHistory.empty": "已完成公开来源检索，但暂未找到可展示的身价历史。",
+    "playerDetail.marketHistory.date": "日期",
+    "playerDetail.marketHistory.value": "估值",
+    "playerDetail.marketHistory.providerNote": "不同平台采用不同估值方法；替代来源不会进入 Transfermarkt 排行。",
     "playerDetail.hero.summary": "{country} · {birthYear} 年生 · {position}。现属 {club}。",
     "playerDetail.actions.links": "查看外部资料",
     "playerDetail.actions.competition": "查看赛事记录",
     "playerDetail.status.eyebrow": "Data Status",
     "playerDetail.status.title": "资料状态",
     "playerDetail.status.currentTeam": "当前球队",
+    "playerDetail.status.registrationSnapshot": "赛事报名归属",
     "playerDetail.status.transfermarkt": "Transfermarkt",
     "playerDetail.status.transfermarktLinked": "已关联",
     "playerDetail.status.transfermarktRosterOnly": "仅队页 / 名单页",
@@ -288,6 +415,7 @@ const UI_COPY = {
     "playerDetail.stats.position": "位置",
     "playerDetail.stats.tags": "核心标签",
     "playerDetail.stats.currentTeam": "当前球队",
+    "playerDetail.stats.registrationSnapshot": "赛事报名归属",
     "playerDetail.stats.parentClub": "俱乐部",
     "playerDetail.stats.currentSquad": "梯队",
     "playerDetail.stats.currentLeague": "参赛体系",
@@ -312,7 +440,7 @@ const UI_COPY = {
     "playerDetail.links.empty": "当前样本没有外部链接。",
     "tournaments.hero.eyebrow": "Tournament Directory",
     "tournaments.hero.title": "赛事列表",
-    "tournaments.hero.text": "这里汇总 2020 年之后的亚洲杯各年龄段、世界杯、世青赛、世少赛，并单独展开中国战绩与比赛明细。",
+    "tournaments.hero.text": "这里汇总 1985 年以来的男足 U20 世青赛与亚青赛完整届次，并保留其他亚洲杯、世界杯和世少赛档案。",
     "tournaments.filter.eyebrow": "Filter",
     "tournaments.focus.eyebrow": "Focus Pool",
     "tournaments.focus.title": "重点赛事",
@@ -324,6 +452,11 @@ const UI_COPY = {
     "tournaments.archive.completedResult": "{champion} 冠军 / {runnerUp} 亚军",
     "tournaments.archive.ongoingResult": "进行中 / 结果待定",
     "tournaments.archive.upcomingResult": "即将开始 / 结果待定",
+    "tournaments.archive.cancelledResult": "赛事取消 / 无冠军",
+    "tournaments.archive.fieldSummary": "决赛圈球队 {count} 支 · {draw}",
+    "tournaments.archive.drawComplete": "分组已确认",
+    "tournaments.archive.drawPending": "分组待定",
+    "tournaments.archive.drawCancelled": "取消前分组快照",
     "tournaments.archive.matchLabel": "中国 vs {opponent} {score} ({result})",
     "tournaments.archive.noContrib": "本场暂无已录入的进球 / 助攻事件。",
     "tournaments.archive.noChinaMatches": "中国队在该赛事无已录入比赛，或未参赛。",
@@ -336,20 +469,43 @@ const UI_COPY = {
     "tournaments.archive.substituteMinute": "{minute}' 替补出场",
     "tournaments.archive.substituteUnused": "未出场",
     "tournaments.card.open": "查看赛事",
+    "tournaments.youthLeague.eyebrow": "Special Topic",
+    "tournaments.youthLeague.title": "欧洲青年冠军联赛",
+    "tournaments.youthLeague.text": "查看近三个完整赛季的资格、赛制、八强以后赛果与中日韩球员核验。",
+    "tournaments.youthLeague.open": "进入专题",
+    "youthLeague.hero.eyebrow": "UEFA Youth League",
+    "youthLeague.hero.title": "欧洲青年冠军联赛",
+    "youthLeague.hero.text": "近三个完整赛季的资格、赛制、淘汰赛，以及中日韩球员核验。",
+    "youthLeague.hero.cjkLink": "查看中日韩球员",
+    "youthLeague.hero.back": "返回赛事列表",
+    "youthLeague.qualification.eyebrow": "Entry & eligibility",
+    "youthLeague.qualification.title": "如何参赛",
+    "youthLeague.seasons.eyebrow": "Three seasons",
+    "youthLeague.seasons.title": "近三季赛事情况",
+    "youthLeague.cjk.eyebrow": "China · Japan · Korea",
+    "youthLeague.cjk.title": "中日韩球员",
+    "youthLeague.cjk.note": "主统计严格按 UEFA 官方国籍识别；双国籍或血缘关联只进入边界观察。",
+    "youthLeague.spotlights.eyebrow": "Curated, not exhaustive",
+    "youthLeague.spotlights.title": "其他国家精选球员",
+    "youthLeague.spotlights.note": "这里只收录最佳射手、决赛进球者和官方赛季回顾中的重点人物，不是完整球员名单。",
+    "youthLeague.sources.eyebrow": "Source ledger",
+    "youthLeague.sources.title": "官方来源",
     "overseas.hero.eyebrow": "Overseas Tracker",
     "overseas.hero.title": "留洋专页",
     "overseas.hero.text": "当前页把“现役海外样本”和“历史记录”拆开。现役部分默认显示当前仍在海外的球员，历史部分默认显示当前已不在海外的样本；切换年份后，可回看当年仍在海外的球员列表。",
     "overseas.note.eyebrow": "Note",
-    "overseas.note.text": "这里展示的是当前已建档样本，不是官方全量留洋人数。",
+    "overseas.note.text": "这里展示的是当前已建档样本，不是官方全量留洋人数。中国样本包含较多 U19 / 青年队球员；日韩青年队尚未系统收集，不能直接横向比较。",
     "overseas.quickJump.label": "年份快切",
     "overseas.quickJump.note": "直接切换历史年份，页面会同步到下方筛选。",
     "overseas.filters.country": "国别",
     "overseas.filters.bucket": "联赛桶",
+    "overseas.filters.teamLevel": "队伍层级",
     "overseas.filters.year": "历史年份",
     "overseas.filters.actions": "操作",
     "overseas.filters.reset": "重置筛选",
     "overseas.filters.allCountry": "全部国别",
     "overseas.filters.allBucket": "全部联赛桶",
+    "overseas.filters.allTeamLevel": "全部队伍层级",
     "overseas.filters.allYear": "全部年份",
     "overseas.current.eyebrow": "Current Abroad",
     "overseas.current.title": "当前留洋样本",
@@ -366,12 +522,15 @@ const UI_COPY = {
     "overseas.comparison.history": "历史记录 {count} 条",
     "overseas.current.meta": "当前筛选下 {count} 名现役海外样本",
     "overseas.current.meta.year": "{year} 年筛选下 {count} 名当年在海外的样本",
+    "overseas.current.teamLevelHistoryNote": "历史记录暂未按队伍层级统计；年份回看会忽略队伍层级筛选。",
     "overseas.history.meta.default": "当前筛选下 {count} 条当前已不在海外的历史样本",
     "overseas.history.meta.year": "{year} 年命中 {count} 条当年在海外的样本",
     "overseas.countryNotes.noNote": "暂无说明",
     "overseas.countryNotes.empty": "当前没有可展示的国别说明。",
     "overseas.countryNotes.playerCount": "{count} 人",
     "overseas.countryNotes.sources": "来源",
+    "overseas.status.title": "中国留洋状态口径",
+    "overseas.status.note": "当前留洋总数只统计“当前有效注册”；待生效、试训观察、已回流和仅历史不会计入当前人数。",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "五大联赛亚洲教练",
     "overseas.coaches.empty": "当前还没有可展示的五大联赛亚洲教练记录。",
@@ -396,15 +555,21 @@ const UI_COPY = {
     "page.home.title": "Youth Player Tracking Desk",
     "page.home.description": "A static data site focused on Chinese youth development, Asian youth tournaments, and overseas player samples across China, Japan, and South Korea.",
     "page.players.title": "Player Directory | Youth Player Tracking Desk",
-    "page.players.description": "Filter youth and young player samples by nationality, age band, current league system, and tags.",
+    "page.players.description": "Filter youth and young player samples by nationality, age band, competition, league system, and tags.",
     "page.player-detail.title": "Player Detail | Youth Player Tracking Desk",
     "page.player-detail.description": "View player pathways, tournament logs, current club, recent contributions, and external references.",
     "page.tournaments.title": "Tournament Directory | Youth Player Tracking Desk",
     "page.tournaments.description": "Browse Asian Cups, World Cups, U-20 World Cups, and U-17 World Cups by level with China results and source links.",
+    "page.youth-league.title": "UEFA Youth League | Youth Player Tracking Desk",
+    "page.youth-league.description": "Qualification, formats, knockouts and China-Japan-Korea player research across the latest three UEFA Youth League seasons.",
     "page.tournament-detail.title": "Tournament Detail | Youth Player Tracking Desk",
     "page.tournament-detail.description": "View one tournament at a time with date range, China results, match detail, key players, and source links.",
     "page.overseas.title": "Overseas Tracker | Youth Player Tracking Desk",
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
+    "page.pathways.title": "Japan and Korea Youth Systems | Youth Player Tracking Desk",
+    "page.pathways.description": "Understand parallel school, club-academy, university, and professional pathways in Japan and South Korea.",
+    "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
+    "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
     "site.kicker": "Youth Tracking Desk",
     "site.brand": "Youth Player Tracking Desk",
     "nav.aria": "Main navigation",
@@ -412,6 +577,7 @@ const UI_COPY = {
     "nav.players": "Players",
     "nav.tournaments": "Tournaments",
     "nav.overseas": "Overseas",
+    "nav.pathways": "Youth Systems",
     "header.language": "Language",
     "common.loading": "Loading",
     "common.loadingData": "Loading data",
@@ -440,11 +606,13 @@ const UI_COPY = {
     "home.quickLinks.eyebrow": "Quick Links",
     "home.quickLinks.title": "Quick Links",
     "home.quickLinks.playersTitle": "Players",
-    "home.quickLinks.playersText": "Filter player samples by country, age band, and tags.",
+    "home.quickLinks.playersText": "Filter player samples by country, age band, competition, and tags.",
     "home.quickLinks.tournamentsTitle": "Tournaments",
     "home.quickLinks.tournamentsText": "Check tournament dates, results, and China match detail.",
     "home.quickLinks.overseasTitle": "Overseas",
     "home.quickLinks.overseasText": "Separate current overseas samples from historical records.",
+    "home.quickLinks.genbaoTitle": "Genbao Football Base",
+    "home.quickLinks.genbaoText": "Browse representative generations, pathways and current status.",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "Overseas overview",
     "home.overseasSummary.link": "View overseas",
@@ -492,15 +660,15 @@ const UI_COPY = {
     "home.overseasCard.league": "League: {value}",
     "players.hero.eyebrow": "Player Directory",
     "players.hero.title": "Player directory",
-    "players.hero.text": "This is the main entry point. Filter by nationality, age band, current league system, and topical tags, switch between card and table view, and keep a live view of current and peak Transfermarkt rankings.",
+    "players.hero.text": "This is the player-directory entry point. Filter by nationality, age band, competition, league system, and topical tags, and compare directory market values; a separate China-Japan-Korea overseas-history peak ranking appears below.",
     "players.view.eyebrow": "View Modes",
     "players.view.aria": "View switch",
     "players.view.cards": "Cards",
     "players.view.table": "Table",
     "players.rankings.eyebrow": "Transfermarkt",
     "players.rankings.currentTitle": "Current market value ranking",
-    "players.rankings.peakTitle": "Peak market value ranking",
-    "players.rankings.note": "Only players with a linked Transfermarkt player page and a listed valuation are counted. Rankings follow the current filters.",
+    "players.rankings.peakTitle": "Current directory peak ranking",
+    "players.rankings.note": "Only players in this current directory with a linked Transfermarkt player page and a listed valuation are counted. Rankings follow the current filters and are not an all-time overseas ranking.",
     "players.rankings.coverageCurrent": "{count} / {total} filtered players with a current market value",
     "players.rankings.coveragePeak": "{count} / {total} filtered players with a peak market value",
     "players.rankings.currentEmpty": "No current market value is available in this filter yet.",
@@ -508,22 +676,41 @@ const UI_COPY = {
     "players.rankings.currentMeta": "Peak {value} · {date}",
     "players.rankings.peakMeta": "Current {value} · peaked on {date}",
     "players.rankings.peakMetaNoCurrent": "Peaked on {date}",
+    "players.rankings.historyTitle": "China-Japan-Korea overseas all-time peaks",
+    "players.rankings.historyCoverage": "{count} archived representative samples · independent of the filters above",
+    "players.rankings.historyMeta": "{club} · {date} · age {age}",
+    "players.rankings.historyCurrent": "Current {value}",
+    "players.rankings.historyRetired": "Retired",
+    "players.rankings.historyNote": "Scope: representative China, Japan, and Korea overseas-history records with a verified Transfermarkt valuation history, not a complete Asian-player table. Values are nominal euros with no inflation or era adjustment; early-career histories may be incomplete.",
+    "players.rankings.historyEmpty": "No overseas-history peak data is available yet.",
     "players.filters.search": "Search",
     "players.filters.searchPlaceholder": "Chinese name, native name, English name, club, tag",
     "players.filters.country": "Country",
     "players.filters.ageBand": "Age band",
+    "players.filters.competition": "Competition",
     "players.filters.league": "League / system",
+    "players.filters.organizationType": "Development organization",
     "players.filters.tag": "Tag",
+    "players.filters.sort": "Sort",
+    "players.sort.default": "Default order",
+    "players.sort.ageAsc": "Age: youngest first",
+    "players.sort.ageDesc": "Age: oldest first",
+    "players.sort.marketValueDesc": "Value: highest first",
+    "players.sort.marketValueAsc": "Value: lowest first",
     "players.filters.actions": "Actions",
     "players.filters.reset": "Reset filters",
     "players.filters.allCountry": "All countries",
     "players.filters.allAgeBand": "All age bands",
+    "players.filters.allCompetition": "All competitions",
     "players.filters.allLeague": "All leagues / systems",
+    "players.filters.allOrganizationType": "All organization types",
     "players.filters.allTag": "All tags",
     "players.table.player": "Player",
     "players.table.country": "Country",
     "players.table.age": "Age",
-    "players.table.club": "Current club",
+    "players.table.marketValue": "Current value",
+    "players.table.marketValuePeak": "Peak {value}",
+    "players.table.club": "Club / registration",
     "players.table.league": "League / system",
     "players.table.tag": "Tag",
     "players.table.detail": "View",
@@ -548,6 +735,66 @@ const UI_COPY = {
     "playerDetail.recent.title": "Recent contributions",
     "playerDetail.links.eyebrow": "External Links",
     "playerDetail.links.title": "External sources",
+    "playerDetail.sources.eyebrow": "Source Layers",
+    "playerDetail.sources.title": "Source layers and development system",
+    "playerDetail.sources.empty": "No structured source layer has been recorded yet.",
+    "playerDetail.sources.fields": "Supported fields: {fields}",
+    "playerDetail.sources.checked": "Checked: {date} · Confidence: {confidence}",
+    "playerDetail.stats.organizationType": "Development organization",
+    "playerDetail.stats.parentOrganization": "Parent club",
+    "playerDetail.stats.educationPartner": "Education partner",
+    "playerDetail.pathway.context": "Competition context",
+    "pathways.hero.eyebrow": "Youth Development Systems",
+    "pathways.hero.title": "Japan and Korea youth systems",
+    "pathways.hero.text": "Separate school teams, club academies, universities and professional bridges, and connect them to the site's player samples.",
+    "pathways.meta.eyebrow": "Coverage",
+    "pathways.meta.coverage": "{count} players across four squads",
+    "pathways.meta.checked": "System checked through {date}",
+    "pathways.tabs.aria": "Country switch",
+    "pathways.tabs.japan": "Japan",
+    "pathways.tabs.korea": "South Korea",
+    "pathways.structure.eyebrow": "Competition Map",
+    "pathways.structure.title": "Leagues, cups and professional bridges",
+    "pathways.sources.eyebrow": "Official Sources",
+    "pathways.sources.title": "Official sources and check dates",
+    "pathways.registration": "Registration: {value}",
+    "pathways.organizationTypes": "Eligible organizations: {value}",
+    "pathways.snapshot": "{season} snapshot: {note}",
+    "pathways.viewPlayers": "View site samples ({count})",
+    "pathways.noPlayers": "No linked samples yet",
+    "pathways.sourceChecked": "Last checked: {date}",
+    "dossier.breadcrumb.home": "Home",
+    "dossier.breadcrumb.detail": "Academy dossier",
+    "dossier.hero.eyebrow": "Academy Dossier",
+    "dossier.hero.lastReviewed": "Checked through {date}",
+    "dossier.notFound.title": "Dossier not found",
+    "dossier.notFound.text": "This dossier does not exist or is not yet available on the public site.",
+    "dossier.stats.founded": "Base opened",
+    "dossier.stats.generations": "Generations",
+    "dossier.stats.players": "Representative players",
+    "dossier.stats.currentFocus": "Current squads",
+    "dossier.model.eyebrow": "Development Model",
+    "dossier.model.title": "Development model and scope",
+    "dossier.timeline.eyebrow": "Timeline",
+    "dossier.timeline.title": "Base timeline",
+    "dossier.generations.eyebrow": "Generations",
+    "dossier.generations.title": "Representative players and current status",
+    "dossier.generations.players": "{count} representative players",
+    "dossier.generations.empty": "No stable public player list is available for this generation yet.",
+    "dossier.program.coach": "Head coach: {value}",
+    "dossier.program.ageGroups": "Age groups: {value}",
+    "dossier.player.asOf": "As of {date}",
+    "dossier.player.source": "Status source",
+    "dossier.player.profile": "Site player profile",
+    "dossier.boundaries.eyebrow": "Boundaries",
+    "dossier.boundaries.title": "Scope and caveats",
+    "dossier.questions.eyebrow": "Follow-up",
+    "dossier.questions.title": "Open questions",
+    "dossier.sources.eyebrow": "Sources",
+    "dossier.sources.title": "Sources and check date",
+    "dossier.sources.primary": "Primary source",
+    "dossier.sources.supporting": "Supporting source",
+    "dossier.sources.checked": "Dossier checked through {date}",
     "tournamentDetail.breadcrumb.list": "Tournaments",
     "tournamentDetail.breadcrumb.detail": "Tournament detail",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -567,6 +814,26 @@ const UI_COPY = {
     "tournamentDetail.context.headline": "Current headline",
     "tournamentDetail.context.focusTeams": "Focus teams",
     "tournamentDetail.context.empty": "Only the base archive record is available for this tournament so far.",
+    "tournamentDetail.field.eyebrow": "Teams & Draw",
+    "tournamentDetail.field.title": "Qualification and groups",
+    "tournamentDetail.field.meta": "{count} finals teams recorded · Last checked {date}",
+    "tournamentDetail.field.participants": "Finals teams",
+    "tournamentDetail.field.participantsComplete": "Complete participant list",
+    "tournamentDetail.field.participantsPartial": "Currently confirmed / host snapshot",
+    "tournamentDetail.field.participantsCancelled": "Qualification snapshot when cancelled",
+    "tournamentDetail.field.entry.host": "Host",
+    "tournamentDetail.field.entry.qualified": "Qualified",
+    "tournamentDetail.field.entry.participant": "Participant",
+    "tournamentDetail.field.finalDraw": "Finals groups",
+    "tournamentDetail.field.drawPending": "The finals draw has not taken place",
+    "tournamentDetail.field.drawCancelled": "Tournament cancelled; groups shown were announced before cancellation",
+    "tournamentDetail.field.qualifiers": "Qualifying groups",
+    "tournamentDetail.field.phase.qualification": "Qualification Phase",
+    "tournamentDetail.field.phase.development": "Development Phase",
+    "tournamentDetail.field.phaseDates": "{start} to {end}",
+    "tournamentDetail.field.groupHost": "Group host: {host}",
+    "tournamentDetail.field.group.finalRound": "Final round",
+    "tournamentDetail.field.group.group": "Group {name}",
     "tournamentDetail.history.eyebrow": "History",
     "tournamentDetail.history.title": "China, Japan and Korea Republic by edition",
     "tournamentDetail.history.empty": "No East Asia edition history is attached to this tournament yet.",
@@ -579,9 +846,9 @@ const UI_COPY = {
     "tournamentDetail.history.table.japan": "Japan",
     "tournamentDetail.history.table.korea": "Korea Republic",
     "tournamentDetail.watch.eyebrow": "Watchlist",
-    "tournamentDetail.watch.title": "Japan and Korea Republic U23 World Cup-cycle watch",
-    "tournamentDetail.watch.empty": "No Japan/Korea Republic U23 watchlist has been attached to this tournament yet.",
-    "tournamentDetail.watch.sampleCount": "{count} players in the U23 pool",
+    "tournamentDetail.watch.title": "Regional young-player watch",
+    "tournamentDetail.watch.empty": "No regional watchlist has been attached to this tournament yet.",
+    "tournamentDetail.watch.sampleCount": "{count} players in the {label} pool",
     "tournamentDetail.watch.overseasCount": "{count} currently abroad",
     "tournamentDetail.watch.allPlayers": "Full pool",
     "tournamentDetail.watch.overseasPlayers": "Overseas players",
@@ -610,12 +877,21 @@ const UI_COPY = {
     "playerDetail.marketValue.withLink": "Transfermarkt linked",
     "playerDetail.marketValue.withoutLink": "No stable market value source yet",
     "playerDetail.marketValue.note": "Values follow Transfermarkt. The player page separates current and peak value, and the list page shows rankings for both.",
+    "playerDetail.marketHistory.eyebrow": "Market Value History",
+    "playerDetail.marketHistory.title": "Market value history",
+    "playerDetail.marketHistory.source": "Source: {provider}",
+    "playerDetail.marketHistory.updated": "Last checked: {date}",
+    "playerDetail.marketHistory.empty": "Public sources were checked, but no market-value history is available yet.",
+    "playerDetail.marketHistory.date": "Date",
+    "playerDetail.marketHistory.value": "Value",
+    "playerDetail.marketHistory.providerNote": "Providers use different valuation methods; alternatives are excluded from Transfermarkt rankings.",
     "playerDetail.hero.summary": "{country} · born {birthYear} · {position}. Currently with {club}.",
     "playerDetail.actions.links": "View external sources",
     "playerDetail.actions.competition": "View competition log",
     "playerDetail.status.eyebrow": "Data Status",
     "playerDetail.status.title": "Data status",
     "playerDetail.status.currentTeam": "Current team",
+    "playerDetail.status.registrationSnapshot": "Tournament registration",
     "playerDetail.status.transfermarkt": "Transfermarkt",
     "playerDetail.status.transfermarktLinked": "Linked",
     "playerDetail.status.transfermarktRosterOnly": "Roster or team page only",
@@ -640,6 +916,7 @@ const UI_COPY = {
     "playerDetail.stats.position": "Position",
     "playerDetail.stats.tags": "Core tags",
     "playerDetail.stats.currentTeam": "Current team",
+    "playerDetail.stats.registrationSnapshot": "Tournament registration",
     "playerDetail.stats.parentClub": "Club",
     "playerDetail.stats.currentSquad": "Squad",
     "playerDetail.stats.currentLeague": "Competition system",
@@ -664,7 +941,7 @@ const UI_COPY = {
     "playerDetail.links.empty": "No external links for this sample yet.",
     "tournaments.hero.eyebrow": "Tournament Directory",
     "tournaments.hero.title": "Tournament directory",
-    "tournaments.hero.text": "This page consolidates post-2020 Asian Cups by age group, the World Cup, the U-20 World Cup, and the U-17 World Cup, with separate China results and match detail.",
+    "tournaments.hero.text": "This archive covers every men's U-20 World Cup and AFC U20 Asian Cup cycle since 1985, alongside the existing Asian Cup, World Cup, and U-17 records.",
     "tournaments.filter.eyebrow": "Filter",
     "tournaments.focus.eyebrow": "Focus Pool",
     "tournaments.focus.title": "Focus tournaments",
@@ -676,6 +953,11 @@ const UI_COPY = {
     "tournaments.archive.completedResult": "{champion} champions / {runnerUp} runners-up",
     "tournaments.archive.ongoingResult": "Ongoing / result pending",
     "tournaments.archive.upcomingResult": "Upcoming / result pending",
+    "tournaments.archive.cancelledResult": "Tournament cancelled / no champion",
+    "tournaments.archive.fieldSummary": "{count} finals teams · {draw}",
+    "tournaments.archive.drawComplete": "draw confirmed",
+    "tournaments.archive.drawPending": "draw pending",
+    "tournaments.archive.drawCancelled": "pre-cancellation draw snapshot",
     "tournaments.archive.matchLabel": "China vs {opponent} {score} ({result})",
     "tournaments.archive.noContrib": "No recorded goal or assist event for this match yet.",
     "tournaments.archive.noChinaMatches": "No China match has been recorded for this tournament, or China did not qualify.",
@@ -688,20 +970,43 @@ const UI_COPY = {
     "tournaments.archive.substituteMinute": "on {minute}'",
     "tournaments.archive.substituteUnused": "unused",
     "tournaments.card.open": "View tournament",
+    "tournaments.youthLeague.eyebrow": "Special Topic",
+    "tournaments.youthLeague.title": "UEFA Youth League",
+    "tournaments.youthLeague.text": "Explore qualification, formats, quarter-finals onward and verified CJK players across the latest three completed seasons.",
+    "tournaments.youthLeague.open": "Open topic",
+    "youthLeague.hero.eyebrow": "UEFA Youth League",
+    "youthLeague.hero.title": "UEFA Youth League",
+    "youthLeague.hero.text": "Qualification, formats, knockouts and verified CJK players across the latest three completed seasons.",
+    "youthLeague.hero.cjkLink": "View CJK players",
+    "youthLeague.hero.back": "Back to tournaments",
+    "youthLeague.qualification.eyebrow": "Entry & eligibility",
+    "youthLeague.qualification.title": "How clubs and players qualify",
+    "youthLeague.seasons.eyebrow": "Three seasons",
+    "youthLeague.seasons.title": "The latest three seasons",
+    "youthLeague.cjk.eyebrow": "China · Japan · Korea",
+    "youthLeague.cjk.title": "CJK players",
+    "youthLeague.cjk.note": "The main count follows official UEFA nationality. Dual-nationality or heritage links belong only in the separate boundary watch.",
+    "youthLeague.spotlights.eyebrow": "Curated, not exhaustive",
+    "youthLeague.spotlights.title": "Selected players from elsewhere",
+    "youthLeague.spotlights.note": "This section only includes leading scorers, final goalscorers and players highlighted in UEFA season coverage. It is not a complete player list.",
+    "youthLeague.sources.eyebrow": "Source ledger",
+    "youthLeague.sources.title": "Official sources",
     "overseas.hero.eyebrow": "Overseas Tracker",
     "overseas.hero.title": "Overseas tracker",
     "overseas.hero.text": "This page separates active overseas samples from historical records. The active section defaults to players who are still abroad right now, while the history section defaults to players who are no longer abroad; once you switch the year filter, it becomes a year-by-year view of who was abroad in that season window.",
     "overseas.note.eyebrow": "Note",
-    "overseas.note.text": "This page shows currently archived samples, not an official full headcount of all overseas players.",
+    "overseas.note.text": "This page shows archived samples, not an official full headcount. The China sample includes many U19 / youth players; Japan and South Korea youth coverage is not systematic, so the totals are not directly comparable.",
     "overseas.quickJump.label": "Year jump",
     "overseas.quickJump.note": "Pick a historical year here and the main filter below will stay in sync.",
     "overseas.filters.country": "Country",
     "overseas.filters.bucket": "League bucket",
+    "overseas.filters.teamLevel": "Team level",
     "overseas.filters.year": "History year",
     "overseas.filters.actions": "Actions",
     "overseas.filters.reset": "Reset filters",
     "overseas.filters.allCountry": "All countries",
     "overseas.filters.allBucket": "All league buckets",
+    "overseas.filters.allTeamLevel": "All team levels",
     "overseas.filters.allYear": "All years",
     "overseas.current.eyebrow": "Current Abroad",
     "overseas.current.title": "Current overseas samples",
@@ -718,12 +1023,15 @@ const UI_COPY = {
     "overseas.comparison.history": "{count} historical records",
     "overseas.current.meta": "{count} active overseas samples in this filter",
     "overseas.current.meta.year": "{count} samples were abroad in {year}",
+    "overseas.current.teamLevelHistoryNote": "Historical records are not yet classified by team level. Year snapshots ignore the team-level filter.",
     "overseas.history.meta.default": "{count} historical records currently no longer abroad in this filter",
     "overseas.history.meta.year": "{count} records abroad in {year}",
     "overseas.countryNotes.noNote": "No note yet",
     "overseas.countryNotes.empty": "No country note is available for display.",
     "overseas.countryNotes.playerCount": "{count} players",
     "overseas.countryNotes.sources": "Sources",
+    "overseas.status.title": "China overseas status scope",
+    "overseas.status.note": "The current total only counts active registrations. Pending moves, trial watches, returned players and historical-only entities are excluded.",
     "overseas.coaches.eyebrow": "Coaches",
     "overseas.coaches.title": "Asian head coaches in the big five leagues",
     "overseas.coaches.empty": "No big-five Asian coach record is available yet.",
@@ -746,6 +1054,114 @@ const UI_COPY = {
   }
 };
 
+const YOUTH_LEAGUE_COPY = {
+  zh: {
+    seasonCount: "完整赛季",
+    entrantTotal: "球队赛季",
+    cjkCount: "中日韩球员",
+    currentRules: "资格规则以 2025/26 赛季为基线",
+    routeNote: "卫冕与重复资格",
+    playerRules: "球员准入",
+    oldFormat: "旧制",
+    newFormat: "新制",
+    entrants: "{count} 支参赛队",
+    champion: "冠军",
+    runnerUp: "亚军",
+    semiFinalists: "其他四强",
+    topScorers: "最佳射手",
+    knockout: "八强至决赛",
+    teams: "查看全部 {count} 支参赛队",
+    championsLeaguePath: "欧冠路径",
+    domesticPath: "国内青年冠军路径",
+    quarterFinal: "八强",
+    semiFinal: "半决赛",
+    final: "决赛",
+    penalties: "点球 {score}",
+    filtersSeason: "赛季",
+    filtersCountry: "国家 / 地区",
+    filtersStatus: "参赛状态",
+    all: "全部",
+    china: "中国",
+    japan: "日本",
+    korea: "韩国",
+    appeared: "已出场",
+    registeredOnly: "仅报名",
+    resultCount: "当前显示 {count} / {total} 人",
+    player: "球员",
+    club: "俱乐部",
+    status: "状态",
+    apps: "出场",
+    starts: "首发",
+    minutes: "分钟",
+    goals: "进球",
+    assists: "助攻",
+    profile: "本站详情",
+    uefaNationality: "UEFA 国籍",
+    noPlayers: "当前筛选下没有球员。三季已核验样本中没有仅报名未出场者。",
+    spotlightSeason: "{season} 精选",
+    sourceNote: "来源以 UEFA 规则、赛季历史、官方比赛数据及俱乐部资料为主。",
+    methodology: "不是全量名单",
+    methodologyText: "三季共有 238 个球队赛季；若按每队最多 40 人导入，会产生数千条记录。因此其他国家只保留赛事代表人物，中日韩按 UEFA 官方国籍逐季核验。"
+  },
+  en: {
+    seasonCount: "completed seasons",
+    entrantTotal: "team-seasons",
+    cjkCount: "CJK players",
+    currentRules: "Eligibility baseline: 2025/26 regulations",
+    routeNote: "Title holder and duplicate qualification",
+    playerRules: "Player eligibility",
+    oldFormat: "Old format",
+    newFormat: "New format",
+    entrants: "{count} entrants",
+    champion: "Champions",
+    runnerUp: "Runners-up",
+    semiFinalists: "Other semi-finalists",
+    topScorers: "Top scorer(s)",
+    knockout: "Quarter-finals through final",
+    teams: "View all {count} entrants",
+    championsLeaguePath: "Champions League path",
+    domesticPath: "Domestic champions path",
+    quarterFinal: "Quarter-final",
+    semiFinal: "Semi-final",
+    final: "Final",
+    penalties: "pens {score}",
+    filtersSeason: "Season",
+    filtersCountry: "Country",
+    filtersStatus: "Participation",
+    all: "All",
+    china: "China",
+    japan: "Japan",
+    korea: "South Korea",
+    appeared: "Appeared",
+    registeredOnly: "Registered only",
+    resultCount: "Showing {count} of {total}",
+    player: "Player",
+    club: "Club",
+    status: "Status",
+    apps: "Apps",
+    starts: "Starts",
+    minutes: "Minutes",
+    goals: "Goals",
+    assists: "Assists",
+    profile: "Site profile",
+    uefaNationality: "UEFA nationality",
+    noPlayers: "No players match these filters. None of the verified players across these seasons were registered without appearing.",
+    spotlightSeason: "{season} picks",
+    sourceNote: "Sources prioritize UEFA regulations, season histories, official match data and club profiles.",
+    methodology: "Not a full roster dump",
+    methodologyText: "The three seasons represent 238 team-seasons. Importing up to 40 players per club would create thousands of records, so other nationalities are curated while CJK players are checked season by season using UEFA nationality."
+  }
+};
+
+function yt(key, variables = {}) {
+  const dictionary = YOUTH_LEAGUE_COPY[state.language] ?? YOUTH_LEAGUE_COPY.zh;
+  let template = dictionary[key] ?? YOUTH_LEAGUE_COPY.zh[key] ?? key;
+  for (const [name, value] of Object.entries(variables)) {
+    template = template.replaceAll(`{${name}}`, String(value));
+  }
+  return template;
+}
+
 const PAGE_METADATA = {
   home: { title: "page.home.title", description: "page.home.description" },
   players: { title: "page.players.title", description: "page.players.description" },
@@ -757,11 +1173,17 @@ const PAGE_METADATA = {
     title: "page.tournaments.title",
     description: "page.tournaments.description"
   },
+  "youth-league": {
+    title: "page.youth-league.title",
+    description: "page.youth-league.description"
+  },
   "tournament-detail": {
     title: "page.tournament-detail.title",
     description: "page.tournament-detail.description"
   },
-  overseas: { title: "page.overseas.title", description: "page.overseas.description" }
+  overseas: { title: "page.overseas.title", description: "page.overseas.description" },
+  pathways: { title: "page.pathways.title", description: "page.pathways.description" },
+  "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" }
 };
 
 const COUNTRY_LABELS = {
@@ -824,13 +1246,27 @@ const POSITION_LABELS = {
     "Right-Back": "右边后卫",
     "Right Winger": "右边锋"
   },
-  en: {}
+  en: {
+    "Attacking Midfield": "Attacking Midfield",
+    "Central Midfield": "Central Midfield",
+    "Centre-Back": "Centre-Back",
+    "Centre-Forward": "Centre-Forward",
+    Defender: "Defender",
+    "Defender/Midfielder/Forward": "Defender / Midfielder / Forward",
+    Forward: "Forward",
+    Goalkeeper: "Goalkeeper",
+    "Left Winger": "Left Winger",
+    Midfielder: "Midfielder",
+    "Right-Back": "Right-Back",
+    "Right Winger": "Right Winger"
+  }
 };
 
 const STATUS_LABELS = {
   completed: { zh: "已结束", en: "Completed" },
   ongoing: { zh: "进行中", en: "Ongoing" },
   upcoming: { zh: "未开始", en: "Upcoming" },
+  cancelled: { zh: "已取消", en: "Cancelled" },
   "in-progress": { zh: "进行中", en: "In progress" }
 };
 
@@ -843,8 +1279,11 @@ const CHINA_STATUS_LABELS = {
   "runner-up": { zh: "亚军", en: "Runners-up" },
   "finalist-ongoing": { zh: "决赛进行中", en: "Final in progress" },
   qualified: { zh: "已晋级", en: "Qualified" },
+  host: { zh: "主办国", en: "Host" },
+  preparation: { zh: "备战", en: "Preparation" },
   "did-not-qualify": { zh: "未晋级", en: "Did not qualify" },
-  "did-not-participate": { zh: "未参赛", en: "Did not participate" }
+  "did-not-participate": { zh: "未参赛", en: "Did not participate" },
+  "qualification-cancelled": { zh: "资格路径取消", en: "Qualification cancelled" }
 };
 
 const TOURNAMENT_HISTORY_STAGE_LABELS = {
@@ -888,6 +1327,32 @@ const BUCKET_LABELS = {
   "asia-other": { zh: "亚洲其他", en: "Other Asia" },
   "americas-other": { zh: "美洲其他", en: "Other Americas" }
 };
+
+const OVERSEAS_TEAM_LEVEL_LABELS = {
+  "first-team": { zh: "一线队", en: "First team" },
+  "u21-u23": { zh: "U21 / U23 / 预备队", en: "U21 / U23 / reserves" },
+  "u19-youth": { zh: "U19 / 青年队", en: "U19 / youth" },
+  unknown: { zh: "未确认", en: "Unconfirmed" }
+};
+
+const OVERSEAS_TEAM_LEVEL_ORDER = ["first-team", "u21-u23", "u19-youth", "unknown"];
+const OVERSEAS_TEAM_LEVEL_SUMMARY_ORDER = ["first-team", "u21-u23", "u19-youth"];
+
+const OVERSEAS_STATUS_LABELS = {
+  "active-registered": { zh: "当前有效注册", en: "Active registration" },
+  "pending-effective": { zh: "待生效", en: "Pending effective date" },
+  "trial-watch": { zh: "试训观察", en: "Trial watch" },
+  returned: { zh: "已回流", en: "Returned" },
+  "historical-only": { zh: "仅历史", en: "Historical only" }
+};
+
+const OVERSEAS_STATUS_ORDER = [
+  "active-registered",
+  "pending-effective",
+  "trial-watch",
+  "returned",
+  "historical-only"
+];
 
 const AGE_BAND_LABELS = {
   u17: { zh: "U17", en: "U17" },
@@ -975,6 +1440,54 @@ const LINK_TYPE_LABELS = {
   transfermarkt: { zh: "Transfermarkt", en: "Transfermarkt" },
   school: { zh: "学校", en: "School" },
   external: { zh: "外部链接", en: "External" }
+};
+
+const ORGANIZATION_TYPE_LABELS = {
+  "high-school": { zh: "高中足球部", en: "High-school team" },
+  "club-academy": { zh: "职业俱乐部梯队", en: "Club academy" },
+  university: { zh: "大学球队", en: "University team" },
+  "professional-club": { zh: "职业一线队", en: "Professional first team" },
+  "military-service-club": { zh: "成年军队球队", en: "Senior military-service club" },
+  "overseas-academy": { zh: "海外青训梯队", en: "Overseas academy" }
+};
+
+const SOURCE_LAYER_TYPE_LABELS = {
+  "afc-registration": { zh: "AFC 报名", en: "AFC registration" },
+  "national-fa-profile": { zh: "国家足协", en: "National association" },
+  "school-profile": { zh: "学校", en: "School" },
+  "university-profile": { zh: "大学", en: "University" },
+  "club-academy-profile": { zh: "俱乐部梯队", en: "Club academy" },
+  "club-profile": { zh: "职业俱乐部", en: "Professional club" },
+  "league-registration": { zh: "联赛", en: "League" }
+};
+
+const SOURCE_LAYER_CONFIDENCE_LABELS = {
+  high: { zh: "高", en: "High" },
+  medium: { zh: "中", en: "Medium" },
+  low: { zh: "低", en: "Low" }
+};
+
+const ACADEMY_CURRENT_STATUS_LABELS = {
+  "active-first-team": { zh: "一线队现役", en: "Active first-team player" },
+  "active-reserve": { zh: "预备队 / B队现役", en: "Active reserve / B-team player" },
+  "active-professional": { zh: "职业球员", en: "Active professional" },
+  "retired-coach": { zh: "退役后执教", en: "Retired, now coaching" },
+  "youth-development": { zh: "青训上升期", en: "Youth development pathway" },
+  "needs-review": { zh: "当前去向待复核", en: "Current destination needs review" },
+  "active-development-program": { zh: "在训梯队", en: "Active development programme" }
+};
+
+const YOUTH_COMPETITION_TYPE_LABELS = {
+  "league-pyramid": { zh: "联赛金字塔", en: "League pyramid" },
+  "league-final": { zh: "联赛总决赛", en: "League final" },
+  "school-cup": { zh: "学校杯赛", en: "School cup" },
+  "club-cup": { zh: "俱乐部赛事", en: "Club competition" },
+  "university-league": { zh: "大学联赛", en: "University league" },
+  "university-cup": { zh: "大学杯赛", en: "University cup" },
+  "professional-bridge": { zh: "职业桥梁", en: "Professional bridge" },
+  "school-league": { zh: "高中联赛", en: "High-school league" },
+  "school-championship": { zh: "高中冠军赛", en: "High-school championship" },
+  "club-league": { zh: "俱乐部梯队联赛", en: "Club academy league" }
 };
 
 const MATCH_RESULT_LABELS = {
@@ -1079,6 +1592,11 @@ async function boot() {
       return;
     }
 
+    if (page === "dossier-detail") {
+      renderDossierDetailPage();
+      return;
+    }
+
     if (page === "tournament-detail") {
       renderTournamentDetailPage();
       return;
@@ -1090,9 +1608,21 @@ async function boot() {
       return;
     }
 
+    if (page === "youth-league") {
+      initializeYouthLeagueFilters();
+      renderYouthLeaguePage();
+      return;
+    }
+
     if (page === "overseas") {
       initializeOverseasFilters();
       renderOverseasPage();
+      return;
+    }
+
+    if (page === "pathways") {
+      initializePathwaysPage();
+      renderPathwaysPage();
     }
   } catch (error) {
     console.error(error);
@@ -1136,7 +1666,8 @@ function setActiveNavigation() {
     if (
       link.dataset.nav === page ||
       (page === "player-detail" && link.dataset.nav === "players") ||
-      (page === "tournament-detail" && link.dataset.nav === "tournaments")
+      (page === "tournament-detail" && link.dataset.nav === "tournaments") ||
+      (page === "youth-league" && link.dataset.nav === "tournaments")
     ) {
       link.classList.add("is-active");
     }
@@ -1500,14 +2031,37 @@ function getPlayerAffiliation(player) {
   const registrationStep = getPlayerRegistrationStep(player);
   const parentClubRaw = registrationStep?.organization ?? player.registration_club?.name ?? currentTeamRaw;
   const squadLabel = extractSquadLabel(currentTeamRaw);
+  const explicitParent = player.registration_club?.parent_organization?.name ?? "";
+  const educationPartner = player.registration_club?.education_partner?.name ?? "";
+  const organizationType = player.registration_club?.organization_type ?? "";
+  const isTournamentSnapshot = player.registration_club?.status === "tournament-snapshot";
+  const registrationAsOf = player.registration_club?.as_of ?? "";
+  const formattedTeam = formatClubName(currentTeamRaw || t("common.pending"));
+  const currentTeam = isTournamentSnapshot
+    ? state.language === "en"
+      ? `${formattedTeam} (as of ${formatDate(registrationAsOf)})`
+      : `${formattedTeam}（截至 ${formatDate(registrationAsOf)}）`
+    : formattedTeam;
+  const directoryTeam = isTournamentSnapshot
+    ? state.language === "en"
+      ? `Tournament registration: ${currentTeam}`
+      : `赛事报名归属：${currentTeam}`
+    : currentTeam;
 
   return {
     currentTeamRaw,
-    currentTeam: formatClubName(currentTeamRaw || t("common.pending")),
+    currentTeam,
+    directoryTeam,
     parentClubRaw,
     parentClub: formatClubName(parentClubRaw || t("common.pending")),
     squadLabel: squadLabel || t("common.pending"),
-    system: formatLeagueSystem(player.currentLeagueSystem)
+    system: formatLeagueSystem(player.currentLeagueSystem),
+    organizationType,
+    organizationTypeLabel: getLabel(ORGANIZATION_TYPE_LABELS, organizationType, t("common.pending")),
+    explicitParent: explicitParent ? formatClubName(explicitParent) : "",
+    educationPartner: educationPartner ? formatClubName(educationPartner) : "",
+    isTournamentSnapshot,
+    registrationAsOf
   };
 }
 
@@ -1532,8 +2086,11 @@ function buildPlayerHeroSummary(player, affiliation) {
     );
   }
 
-  const tail =
-    state.language === "en"
+  const tail = affiliation.isTournamentSnapshot
+    ? state.language === "en"
+      ? `AFC tournament registration: ${affiliation.currentTeam}`
+      : `AFC 赛事报名归属为${affiliation.currentTeam}`
+    : state.language === "en"
       ? `currently with ${affiliation.currentTeam}`
       : `现属${affiliation.currentTeam}`;
 
@@ -1582,6 +2139,9 @@ function formatDate(value) {
 }
 
 function formatRange(range) {
+  if (!range?.start && !range?.end) {
+    return t("common.pending");
+  }
   return `${formatDate(range.start)} - ${formatDate(range.end)}`;
 }
 
@@ -1764,6 +2324,14 @@ function formatBucket(bucket) {
   return getLabel(BUCKET_LABELS, bucket, bucket ?? "-");
 }
 
+function formatOverseasTeamLevel(teamLevel) {
+  return getLabel(OVERSEAS_TEAM_LEVEL_LABELS, teamLevel, teamLevel ?? "-");
+}
+
+function formatOverseasStatus(status) {
+  return getLabel(OVERSEAS_STATUS_LABELS, status, status ?? "-");
+}
+
 function formatAgeBand(ageBand) {
   return getLabel(AGE_BAND_LABELS, ageBand, ageBand ?? "-");
 }
@@ -1886,6 +2454,71 @@ function inferOverseasBucket(player) {
   return "americas-other";
 }
 
+function inferOverseasTeamLevelFromEvidence(clubName, affiliationText, evidenceText) {
+  const club = String(clubName ?? "");
+  const affiliation = [club, affiliationText].filter(Boolean).join(" ");
+  const evidence = [affiliation, evidenceText].filter(Boolean).join(" ");
+
+  if (/\bU[- ]?(?:15|16|17|18|19)(?:[AB])?\b|Youth|Academy|Juvenil|Cadet|青年队|青训/i.test(affiliation)) {
+    return "u19-youth";
+  }
+
+  if (
+    /\bU[- ]?(?:21|23)(?:[AB])?\b|\bReserve(?:s)?\b|\bII\b|二队|预备队|B队/i.test(affiliation) ||
+    /\b[A-Z]{2,}FC2\b/.test(club)
+  ) {
+    return "u21-u23";
+  }
+
+  const isAmbiguous =
+    /仍需|待(?:确认|核实|跟进)|未(?:确认|核实)|需要.{0,12}(?:确认|核实|跟进)|needs?.{0,20}(?:verification|confirmation|follow-up)|not (?:yet )?(?:confirmed|verified)/i.test(
+      evidence
+    );
+  if (isAmbiguous) {
+    return "unknown";
+  }
+
+  if (
+    /一线队|职业一线|\bfirst[- ]team\b|\bsenior (?:team|squad)\b|official squad profile|顶级联赛|top[- ]flight|Premier League|LaLiga|Bundesliga|Serie A|Ligue 1|Eredivisie|Primeira Liga|Liga Portugal|Austrian Bundesliga|Belgian Pro League|Scottish Premiership|EFL Championship|J[123] League|K League|葡超|荷甲|奥超|德乙|职业联赛实际比赛/i.test(
+      evidence
+    )
+  ) {
+    return "first-team";
+  }
+
+  return "unknown";
+}
+
+function inferOverseasTeamLevel(player) {
+  if (!isForeignRegistration(player)) {
+    return "unknown";
+  }
+
+  const clubName = player.registration_club?.name ?? "";
+  const currentForeignStep = getLatestForeignPathwayStep(player.training_pathway, player.country);
+  const affiliationText = [
+    currentForeignStep?.organization,
+    JSON.stringify(currentForeignStep?.stage_label ?? "")
+  ]
+    .filter(Boolean)
+    .join(" ");
+  const evidenceText = [currentForeignStep?.note, player.verification?.notes]
+    .map((value) => JSON.stringify(value ?? ""))
+    .join(" ");
+
+  return inferOverseasTeamLevelFromEvidence(clubName, affiliationText, evidenceText);
+}
+
+function inferHistoricalOverseasTeamLevel(record) {
+  const evidenceText = [record.league, record.appearance_label, record.summary, ...(record.notes ?? [])]
+    .map((value) => JSON.stringify(value ?? ""))
+    .join(" ");
+  const inferredLevel = inferOverseasTeamLevelFromEvidence(record.club, record.club, evidenceText);
+  return inferredLevel === "unknown" && record.bucket === "big-five"
+    ? "first-team"
+    : inferredLevel;
+}
+
 function isYouthClubName(clubName) {
   return (
     /Youth/i.test(clubName) ||
@@ -1998,6 +2631,117 @@ function getDossierById(id) {
   return state.overview?.dossiers?.find((dossier) => dossier.id === id) ?? null;
 }
 
+function renderDossierPlayer(player) {
+  const status = player.current_status;
+  const nameMarkup = player.player_id
+    ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(player.local_name)}</a>`
+    : escapeHtml(player.local_name);
+  return `
+    <article class="academy-player-card">
+      <div class="academy-player-heading">
+        <div>
+          <h4>${nameMarkup}</h4>
+          <p class="small-note">${escapeHtml(player.name)} · ${escapeHtml(localizeText(player.role))}</p>
+        </div>
+        <span class="chip academy-status-${escapeHtml(status.category)}">${escapeHtml(getLabel(ACADEMY_CURRENT_STATUS_LABELS, status.category, status.category))}</span>
+      </div>
+      <p><strong>${escapeHtml(formatClubName(status.organization))}</strong></p>
+      <p>${escapeHtml(localizeText(player.note))}</p>
+      <div class="academy-player-footer">
+        <span class="small-note">${escapeHtml(t("dossier.player.asOf", { date: formatDate(status.as_of) }))} · ${escapeHtml(getLabel(SOURCE_LAYER_CONFIDENCE_LABELS, status.confidence, status.confidence))}</span>
+        <a class="inline-link" href="${escapeHtml(status.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))}</a>
+        ${player.player_id ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(t("dossier.player.profile"))}</a>` : ""}
+      </div>
+    </article>
+  `;
+}
+
+function renderDossierGeneration(view) {
+  const players = view.players ?? [];
+  const programme = view.program_status;
+  return `
+    <article class="academy-generation-card">
+      <div class="section-head compact-head">
+        <div>
+          <div class="chip-row">
+            <span class="chip">${escapeHtml(view.confidence ?? "-")}</span>
+            <span class="chip">${escapeHtml(t("dossier.generations.players", { count: players.length }))}</span>
+          </div>
+          <h3>${escapeHtml(localizeText(view.name))}</h3>
+        </div>
+      </div>
+      <p>${escapeHtml(localizeText(view.description))}</p>
+      ${
+        programme
+          ? `<div class="academy-program-card">
+              <span class="chip">${escapeHtml(getLabel(ACADEMY_CURRENT_STATUS_LABELS, programme.category, programme.category))}</span>
+              <h4>${escapeHtml(formatClubName(programme.organization))}</h4>
+              <p>${escapeHtml(t("dossier.program.coach", { value: programme.head_coach }))}</p>
+              <p>${escapeHtml(t("dossier.program.ageGroups", { value: programme.age_groups.join(" / ") }))}</p>
+              <a class="inline-link" href="${escapeHtml(programme.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(programme.source_label)}</a>
+            </div>`
+          : ""
+      }
+      ${players.length > 0 ? `<div class="academy-player-grid">${players.map(renderDossierPlayer).join("")}</div>` : `<div class="empty-inline">${escapeHtml(t("dossier.generations.empty"))}</div>`}
+    </article>
+  `;
+}
+
+function renderDossierDetailPage() {
+  const params = new URLSearchParams(window.location.search);
+  const dossier = getDossierById(params.get("id"));
+  const hero = document.querySelector("#dossierHero");
+  const body = document.querySelector("#dossierBody");
+  if (!dossier || !hero || !body) {
+    if (hero) {
+      hero.innerHTML = `<div class="hero-copy"><p class="eyebrow">${escapeHtml(t("dossier.hero.eyebrow"))}</p><h1>${escapeHtml(t("dossier.notFound.title"))}</h1><p class="hero-text">${escapeHtml(t("dossier.notFound.text"))}</p></div>`;
+    }
+    return;
+  }
+
+  const stats = dossier.headline_stats ?? {};
+  document.title = `${dossier.name} | ${t("dossier.breadcrumb.detail")}`;
+  hero.innerHTML = `
+    <div class="hero-copy">
+      <p class="eyebrow">${escapeHtml(t("dossier.hero.eyebrow"))}</p>
+      <h1>${escapeHtml(dossier.name)}</h1>
+      <p class="hero-text">${escapeHtml(localizeText(dossier.summary))}</p>
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(formatStatus(dossier.status))}</span>
+        <span class="chip">${escapeHtml(t("dossier.hero.lastReviewed", { date: formatDate(dossier.last_reviewed) }))}</span>
+      </div>
+    </div>
+    <aside class="hero-spotlight">
+      <p class="eyebrow">${escapeHtml(t("dossier.stats.players"))}</p>
+      <h2>${escapeHtml(String(stats.tracked_players ?? 0))}</h2>
+      <p>${escapeHtml(localizeText(stats.official_output_claim))}</p>
+    </aside>
+  `;
+
+  document.querySelector("#dossierStats").innerHTML = [
+    [t("dossier.stats.founded"), stats.founded ?? "-"],
+    [t("dossier.stats.generations"), String(stats.tracked_generations ?? 0)],
+    [t("dossier.stats.players"), String(stats.tracked_players ?? 0)],
+    [t("dossier.stats.currentFocus"), localizeText(stats.current_training_focus)]
+  ].map(([label, value]) => `<article class="stat-card"><p class="stat-label">${escapeHtml(label)}</p><p class="stat-value stat-value-small">${escapeHtml(value)}</p></article>`).join("");
+
+  document.querySelector("#dossierModel").innerHTML = [
+    `<article class="story-card"><h3>${escapeHtml(t("dossier.model.title"))}</h3>${(dossier.role_model ?? []).map((line) => `<p>${escapeHtml(localizeText(line))}</p>`).join("")}</article>`,
+    `<article class="story-card"><h3>${escapeHtml(t("dossier.boundaries.title"))}</h3><p>${escapeHtml(localizeText(dossier.scope_note))}</p></article>`
+  ].join("");
+  document.querySelector("#dossierTimeline").innerHTML = (dossier.timeline ?? []).map((item) => `<article class="timeline-item"><p class="timeline-label">${escapeHtml(item.date)}</p><h3>${escapeHtml(localizeText(item.label))}</h3><p>${escapeHtml(localizeText(item.detail))}</p></article>`).join("");
+  document.querySelector("#dossierGenerations").innerHTML = (dossier.roster_views ?? []).map(renderDossierGeneration).join("");
+  document.querySelector("#dossierBoundaries").innerHTML = `<ul class="mini-bullet-list">${(dossier.controversies ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
+  document.querySelector("#dossierQuestions").innerHTML = `<ul class="mini-bullet-list">${(dossier.open_questions ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
+
+  const sources = [
+    { ...dossier.source_document, kind: t("dossier.sources.primary") },
+    ...(dossier.supporting_documents ?? []).map((source) => ({ ...source, kind: t("dossier.sources.supporting") }))
+  ];
+  document.querySelector("#dossierSources").innerHTML = sources.map((source) => `<article class="stack-card"><div class="chip-row"><span class="chip">${escapeHtml(source.kind)}</span></div><h3>${escapeHtml(source.title)}</h3>${source.summary ? `<p>${escapeHtml(localizeText(source.summary))}</p>` : ""}<a class="inline-link" href="${escapeHtml(source.path)}" target="_blank" rel="noreferrer">${escapeHtml(source.path)}</a></article>`).join("");
+  body.hidden = false;
+}
+
 function getPlayersByTag(tag) {
   return state.enrichedPlayers.filter((player) => (player.focus_tags ?? []).includes(tag));
 }
@@ -2012,14 +2756,18 @@ function getTournamentDisplayName(id) {
 }
 
 function getTournamentResultSummary(tournament) {
-  return tournament.status === "completed"
-    ? t("tournaments.archive.completedResult", {
-        champion: tournament.champion || "-",
-        runnerUp: tournament.runner_up || "-"
-      })
-    : tournament.status === "ongoing"
-      ? t("tournaments.archive.ongoingResult")
-      : t("tournaments.archive.upcomingResult");
+  if (tournament.status === "completed") {
+    return t("tournaments.archive.completedResult", {
+      champion: tournament.champion || "-",
+      runnerUp: tournament.runner_up || "-"
+    });
+  }
+  if (tournament.status === "cancelled") {
+    return t("tournaments.archive.cancelledResult");
+  }
+  return tournament.status === "ongoing"
+    ? t("tournaments.archive.ongoingResult")
+    : t("tournaments.archive.upcomingResult");
 }
 
 function mergeTournamentLinks(archiveTournament, focusTournament) {
@@ -2400,13 +3148,26 @@ function isPlayerCurrentlyOverseas(player) {
   return Boolean(homeCountry && clubCountry && homeCountry !== clubCountry);
 }
 
+function getRegionalWatchPoolLabel(regionalWatch) {
+  return localizeText(regionalWatch?.player_pool_label, "U23");
+}
+
 function getRegionalWatchGroupPlayers(group, regionalWatch) {
+  if (Array.isArray(group?.player_ids) && group.player_ids.length > 0) {
+    const playerIds = new Set(group.player_ids);
+    return state.enrichedPlayers.filter((player) => playerIds.has(player.id));
+  }
+
   const tag = group?.tag ?? regionalWatch?.tag ?? "";
+  const birthDateAfter = group?.birth_date_after ?? regionalWatch?.birth_date_after ?? "";
   return state.enrichedPlayers.filter((player) => {
     if (player.country !== group.country) {
       return false;
     }
     if (tag && !(player.focus_tags ?? []).includes(tag)) {
+      return false;
+    }
+    if (birthDateAfter && player.birth_date <= birthDateAfter) {
       return false;
     }
     return true;
@@ -2417,12 +3178,13 @@ function renderRegionalWatchGroupCard(group, regionalWatch) {
   const players = getRegionalWatchGroupPlayers(group, regionalWatch);
   const overseasPlayers = players.filter(isPlayerCurrentlyOverseas);
   const playerLine = players.map((player) => renderPlayerLink(player)).join("、");
+  const poolLabel = getRegionalWatchPoolLabel(regionalWatch);
 
   return `
     <article class="stack-card">
       <h3>${escapeHtml(formatCountryName(group.country))}</h3>
       <div class="chip-row">
-        <span class="chip">${escapeHtml(t("tournamentDetail.watch.sampleCount", { count: players.length }))}</span>
+        <span class="chip">${escapeHtml(t("tournamentDetail.watch.sampleCount", { count: players.length, label: poolLabel }))}</span>
         <span class="chip">${escapeHtml(t("tournamentDetail.watch.overseasCount", { count: overseasPlayers.length }))}</span>
       </div>
       ${group.note ? `<p class="small-note">${escapeHtml(localizeText(group.note))}</p>` : ""}
@@ -2453,7 +3215,9 @@ function enrichPlayer(player, overview) {
     ...player,
     age: getAge(player.birth_date, overview.generated_at),
     currentLeagueSystem: inferLeagueSystem(player),
+    organizationType: player.registration_club?.organization_type ?? "",
     overseasBucket: inferOverseasBucket(player),
+    overseasTeamLevel: inferOverseasTeamLevel(player),
     foreignRegistration: isForeignRegistration(player),
     recentContributions: collectPlayerContributions(player, overview),
     searchBlob: buildPlayerSearchBlob(player),
@@ -2658,7 +3422,13 @@ function getRecentChinaMatches(limit = 6) {
 }
 
 function getCurrentOverseasPlayers() {
-  return state.enrichedPlayers.filter((player) => player.foreignRegistration).sort(sortPlayers);
+  return state.enrichedPlayers
+    .filter((player) =>
+      player.country === "China PR"
+        ? player.overseas_status === "active-registered"
+        : player.foreignRegistration
+    )
+    .sort(sortPlayers);
 }
 
 function parseSeasonRange(season) {
@@ -2751,6 +3521,12 @@ function getOverseasCountryMap() {
     map.set(entry.country, {
       country: entry.country,
       currentCount: 0,
+      bigFiveFirstTeamCount: 0,
+      overseasStatusCounts:
+        entry.country === "China PR"
+          ? state.overview.stats?.china_overseas_status_counts ?? null
+          : null,
+      teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
       verifiedRecords: entry.verified_records,
       notes: entry.notes,
       bucketFocus: entry.bucket_focus,
@@ -2763,6 +3539,9 @@ function getOverseasCountryMap() {
       map.set(item.country, {
         country: item.country,
         currentCount: 0,
+        bigFiveFirstTeamCount: 0,
+        overseasStatusCounts: null,
+        teamLevelCounts: Object.fromEntries(OVERSEAS_TEAM_LEVEL_ORDER.map((level) => [level, 0])),
         verifiedRecords: 0,
         notes: "",
         bucketFocus: [],
@@ -2770,6 +3549,10 @@ function getOverseasCountryMap() {
       });
     }
     map.get(item.country).currentCount += 1;
+    map.get(item.country).teamLevelCounts[item.overseasTeamLevel] += 1;
+    if (item.overseasBucket === "big-five" && item.overseasTeamLevel === "first-team") {
+      map.get(item.country).bigFiveFirstTeamCount += 1;
+    }
   }
 
   return [...map.values()].sort((left, right) =>
@@ -2810,7 +3593,8 @@ function toCurrentHistoricalOverseasItem(record) {
     ...record,
     sourceType: "history",
     foreignRegistration: true,
-    overseasBucket: record.bucket
+    overseasBucket: record.bucket,
+    overseasTeamLevel: inferHistoricalOverseasTeamLevel(record)
   };
 }
 
@@ -2842,7 +3626,9 @@ function getCurrentOverseasItems() {
       ...player,
       sourceType: "player"
     })),
-    ...getActiveHistoricalOverseasRecords().map(toCurrentHistoricalOverseasItem)
+    ...getActiveHistoricalOverseasRecords()
+      .filter((record) => record.country !== "China PR")
+      .map(toCurrentHistoricalOverseasItem)
   ];
   const seen = new Set();
 
@@ -3201,11 +3987,15 @@ function renderProjectCard(project) {
 
 function initializePlayerFilters() {
   const params = new URLSearchParams(window.location.search);
+  const supportedSorts = new Set(["age-asc", "age-desc", "market-value-desc", "market-value-asc"]);
   state.playerFilters.query = params.get("query") ?? "";
   state.playerFilters.country = params.get("country") ?? "all";
   state.playerFilters.ageBand = params.get("ageBand") ?? "all";
+  state.playerFilters.competition = params.get("competition") ?? "all";
   state.playerFilters.leagueSystem = params.get("league") ?? "all";
+  state.playerFilters.organizationType = params.get("organizationType") ?? "all";
   state.playerFilters.tag = params.get("tag") ?? "all";
+  state.playerFilters.sort = supportedSorts.has(params.get("sort")) ? params.get("sort") : "default";
   state.playerFilters.view = params.get("view") === "table" ? "table" : "cards";
 
   const countryOptions = uniqueValues(state.enrichedPlayers.map((player) => player.country)).map(
@@ -3218,12 +4008,26 @@ function initializePlayerFilters() {
     value,
     label: formatAgeBand(value)
   }));
+  const competitionOptions = uniqueValues(
+    state.enrichedPlayers.flatMap((player) =>
+      (player.tournament_participation ?? []).map((entry) => entry.competition_id).filter(Boolean)
+    )
+  ).map((value) => ({
+    value,
+    label: getTournamentDisplayName(value)
+  }));
   const leagueOptions = uniqueValues(state.enrichedPlayers.map((player) => player.currentLeagueSystem)).map(
     (value) => ({
       value,
       label: formatLeagueSystem(value)
     })
   );
+  const organizationTypeOptions = uniqueValues(
+    state.enrichedPlayers.map((player) => player.organizationType)
+  ).map((value) => ({
+    value,
+    label: getLabel(ORGANIZATION_TYPE_LABELS, value, value)
+  }));
   const tagOptions = uniqueValues(state.enrichedPlayers.flatMap((player) => player.focus_tags ?? [])).map(
     (value) => ({
       value,
@@ -3244,10 +4048,22 @@ function initializePlayerFilters() {
     t("players.filters.allAgeBand")
   );
   buildOptions(
+    document.querySelector("#playerCompetitionFilter"),
+    competitionOptions,
+    state.playerFilters.competition,
+    t("players.filters.allCompetition")
+  );
+  buildOptions(
     document.querySelector("#playerLeagueFilter"),
     leagueOptions,
     state.playerFilters.leagueSystem,
     t("players.filters.allLeague")
+  );
+  buildOptions(
+    document.querySelector("#playerOrganizationTypeFilter"),
+    organizationTypeOptions,
+    state.playerFilters.organizationType,
+    t("players.filters.allOrganizationType")
   );
   buildOptions(
     document.querySelector("#playerTagFilter"),
@@ -3255,6 +4071,22 @@ function initializePlayerFilters() {
     state.playerFilters.tag,
     t("players.filters.allTag")
   );
+  const sortSelect = document.querySelector("#playerSortSelect");
+  if (sortSelect) {
+    const sortOptions = [
+      { value: "default", label: t("players.sort.default") },
+      { value: "age-asc", label: t("players.sort.ageAsc") },
+      { value: "age-desc", label: t("players.sort.ageDesc") },
+      { value: "market-value-desc", label: t("players.sort.marketValueDesc") },
+      { value: "market-value-asc", label: t("players.sort.marketValueAsc") }
+    ];
+    sortSelect.innerHTML = sortOptions
+      .map(
+        (option) =>
+          `<option value="${escapeHtml(option.value)}" ${option.value === state.playerFilters.sort ? "selected" : ""}>${escapeHtml(option.label)}</option>`
+      )
+      .join("");
+  }
   setControlValue("#playerSearchInput", state.playerFilters.query);
 
   document.querySelector("#playerSearchInput")?.addEventListener("input", (event) => {
@@ -3269,12 +4101,24 @@ function initializePlayerFilters() {
     state.playerFilters.ageBand = event.target.value;
     renderPlayersPage();
   });
+  document.querySelector("#playerCompetitionFilter")?.addEventListener("change", (event) => {
+    state.playerFilters.competition = event.target.value;
+    renderPlayersPage();
+  });
   document.querySelector("#playerLeagueFilter")?.addEventListener("change", (event) => {
     state.playerFilters.leagueSystem = event.target.value;
     renderPlayersPage();
   });
+  document.querySelector("#playerOrganizationTypeFilter")?.addEventListener("change", (event) => {
+    state.playerFilters.organizationType = event.target.value;
+    renderPlayersPage();
+  });
   document.querySelector("#playerTagFilter")?.addEventListener("change", (event) => {
     state.playerFilters.tag = event.target.value;
+    renderPlayersPage();
+  });
+  document.querySelector("#playerSortSelect")?.addEventListener("change", (event) => {
+    state.playerFilters.sort = event.target.value;
     renderPlayersPage();
   });
   document.querySelector("#viewCardsButton")?.addEventListener("click", () => {
@@ -3289,8 +4133,11 @@ function initializePlayerFilters() {
     state.playerFilters.query = "";
     state.playerFilters.country = "all";
     state.playerFilters.ageBand = "all";
+    state.playerFilters.competition = "all";
     state.playerFilters.leagueSystem = "all";
+    state.playerFilters.organizationType = "all";
     state.playerFilters.tag = "all";
+    state.playerFilters.sort = "default";
     state.playerFilters.view = "cards";
     renderPlayersPage();
   });
@@ -3306,16 +4153,74 @@ function getFilteredPlayers() {
         state.playerFilters.country === "all" || player.country === state.playerFilters.country;
       const matchesAge =
         state.playerFilters.ageBand === "all" || player.age_band === state.playerFilters.ageBand;
+      const matchesCompetition =
+        state.playerFilters.competition === "all" ||
+        (player.tournament_participation ?? []).some(
+          (entry) => entry.competition_id === state.playerFilters.competition
+        );
       const matchesLeague =
         state.playerFilters.leagueSystem === "all" ||
         player.currentLeagueSystem === state.playerFilters.leagueSystem;
+      const matchesOrganizationType =
+        state.playerFilters.organizationType === "all" ||
+        player.organizationType === state.playerFilters.organizationType;
       const matchesTag =
         state.playerFilters.tag === "all" ||
         (player.focus_tags ?? []).includes(state.playerFilters.tag);
 
-      return matchesQuery && matchesCountry && matchesAge && matchesLeague && matchesTag;
+      return matchesQuery && matchesCountry && matchesAge && matchesCompetition && matchesLeague && matchesOrganizationType && matchesTag;
     })
-    .sort(sortPlayers);
+    .sort(getPlayerSortComparator(state.playerFilters.sort));
+}
+
+function comparePlayersByAge(direction) {
+  return (left, right) => {
+    if (left.age !== right.age) {
+      return direction === "asc" ? left.age - right.age : right.age - left.age;
+    }
+
+    if (left.birth_date !== right.birth_date) {
+      return direction === "asc"
+        ? right.birth_date.localeCompare(left.birth_date)
+        : left.birth_date.localeCompare(right.birth_date);
+    }
+
+    return getPlayerPrimaryName(left).localeCompare(getPlayerPrimaryName(right), getSortLocale());
+  };
+}
+
+function comparePlayersByCurrentMarketValue(direction) {
+  return (left, right) => {
+    const leftHasValue = left.marketValueCurrentEur > 0;
+    const rightHasValue = right.marketValueCurrentEur > 0;
+    if (leftHasValue !== rightHasValue) {
+      return leftHasValue ? -1 : 1;
+    }
+
+    if (leftHasValue && left.marketValueCurrentEur !== right.marketValueCurrentEur) {
+      return direction === "asc"
+        ? left.marketValueCurrentEur - right.marketValueCurrentEur
+        : right.marketValueCurrentEur - left.marketValueCurrentEur;
+    }
+
+    return getPlayerPrimaryName(left).localeCompare(getPlayerPrimaryName(right), getSortLocale());
+  };
+}
+
+function getPlayerSortComparator(sort) {
+  if (sort === "age-asc") {
+    return comparePlayersByAge("asc");
+  }
+  if (sort === "age-desc") {
+    return comparePlayersByAge("desc");
+  }
+  if (sort === "market-value-desc") {
+    return comparePlayersByCurrentMarketValue("desc");
+  }
+  if (sort === "market-value-asc") {
+    return comparePlayersByCurrentMarketValue("asc");
+  }
+  return sortPlayers;
 }
 
 function comparePlayersByMarketValue(field) {
@@ -3383,7 +4288,7 @@ function renderPlayerMarketValueRankingPanel(title, coverageLabel, players, amou
                     <span class="market-ranking-rank">${String(index + 1).padStart(2, "0")}</span>
                     <div class="market-ranking-body">
                       <a class="market-ranking-link" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(getPlayerPrimaryName(player))}</a>
-                      <p class="small-note">${escapeHtml(formatCountryName(player.country))} · ${escapeHtml(formatAgeBand(player.age_band))} · ${escapeHtml(getPlayerAffiliation(player).currentTeam)}</p>
+                      <p class="small-note">${escapeHtml(formatCountryName(player.country))} · ${escapeHtml(formatAgeBand(player.age_band))} · ${escapeHtml(getPlayerAffiliation(player).directoryTeam)}</p>
                       <p class="small-note">${escapeHtml(metaBuilder(player))}</p>
                     </div>
                     <div class="market-ranking-value">
@@ -3402,6 +4307,65 @@ function renderPlayerMarketValueRankingPanel(title, coverageLabel, players, amou
   `;
 }
 
+function renderHistoricalMarketValueRankingPanel() {
+  const ranking = state.overview?.overseas_history?.market_value_peak_ranking;
+  const entries = [...(ranking?.entries ?? [])].sort((left, right) => {
+    if (right.peak.eur !== left.peak.eur) {
+      return right.peak.eur - left.peak.eur;
+    }
+    return left.name.localeCompare(right.name, getSortLocale());
+  });
+
+  return `
+    <div class="section-head compact-head">
+      <div>
+        <p class="eyebrow">${escapeHtml(t("players.rankings.eyebrow"))}</p>
+        <h2>${escapeHtml(t("players.rankings.historyTitle"))}</h2>
+      </div>
+    </div>
+    <p class="section-note">${escapeHtml(t("players.rankings.historyCoverage", { count: entries.length }))}</p>
+    ${
+      entries.length > 0
+        ? `<div class="market-ranking-list market-ranking-history-list">
+            ${entries
+              .map((entry, index) => {
+                const previousEntry = entries[index - 1];
+                const rank = previousEntry?.peak.eur === entry.peak.eur
+                  ? entries.findIndex((candidate) => candidate.peak.eur === entry.peak.eur) + 1
+                  : index + 1;
+                const primaryName = state.language === "en" ? entry.name : entry.local_name;
+                const secondaryName = state.language === "en" ? entry.local_name : entry.name;
+                const status = entry.retired
+                  ? t("players.rankings.historyRetired")
+                  : t("players.rankings.historyCurrent", { value: formatMarketValuePoint(entry.current) });
+
+                return `
+                  <article class="market-ranking-row">
+                    <span class="market-ranking-rank">${String(rank).padStart(2, "0")}</span>
+                    <div class="market-ranking-body">
+                      <a class="market-ranking-link" href="${escapeHtml(entry.transfermarkt.market_value_url)}" target="_blank" rel="noreferrer">${escapeHtml(primaryName)}</a>
+                      <p class="small-note">${escapeHtml(secondaryName)} · ${escapeHtml(formatCountryName(entry.country))}</p>
+                      <p class="small-note">${escapeHtml(t("players.rankings.historyMeta", {
+                        club: formatClubName(entry.peak.club),
+                        date: formatDate(entry.peak.date),
+                        age: entry.peak.age
+                      }))}</p>
+                    </div>
+                    <div class="market-ranking-value">
+                      <strong>${escapeHtml(formatMarketValuePoint(entry.peak))}</strong>
+                      <span class="small-note">${escapeHtml(status)}</span>
+                    </div>
+                  </article>
+                `;
+              })
+              .join("")}
+          </div>`
+        : `<div class="empty-inline">${escapeHtml(t("players.rankings.historyEmpty"))}</div>`
+    }
+    <p class="small-note market-ranking-note">${escapeHtml(t("players.rankings.historyNote"))}</p>
+  `;
+}
+
 function renderPlayersPage() {
   const cardGrid = document.querySelector("#playerCardGrid");
   const tableWrap = document.querySelector("#playerTableWrap");
@@ -3412,6 +4376,7 @@ function renderPlayersPage() {
   const tableButton = document.querySelector("#viewTableButton");
   const currentRankingPanel = document.querySelector("#playerMarketValueCurrent");
   const peakRankingPanel = document.querySelector("#playerMarketValuePeak");
+  const historicalRankingPanel = document.querySelector("#playerMarketValueHistorical");
 
   const players = getFilteredPlayers();
   const allCurrentMarketValuePlayers = players
@@ -3426,14 +4391,20 @@ function renderPlayersPage() {
   setControlValue("#playerSearchInput", state.playerFilters.query);
   setControlValue("#playerCountryFilter", state.playerFilters.country);
   setControlValue("#playerAgeFilter", state.playerFilters.ageBand);
+  setControlValue("#playerCompetitionFilter", state.playerFilters.competition);
   setControlValue("#playerLeagueFilter", state.playerFilters.leagueSystem);
+  setControlValue("#playerOrganizationTypeFilter", state.playerFilters.organizationType);
   setControlValue("#playerTagFilter", state.playerFilters.tag);
+  setControlValue("#playerSortSelect", state.playerFilters.sort);
   replaceQueryParams({
     query: state.playerFilters.query,
     country: state.playerFilters.country,
     ageBand: state.playerFilters.ageBand,
+    competition: state.playerFilters.competition,
     league: state.playerFilters.leagueSystem,
+    organizationType: state.playerFilters.organizationType,
     tag: state.playerFilters.tag,
+    sort: state.playerFilters.sort,
     view: state.playerFilters.view
   });
 
@@ -3471,6 +4442,9 @@ function renderPlayersPage() {
       "players.rankings.peakEmpty"
     );
   }
+  if (historicalRankingPanel) {
+    historicalRankingPanel.innerHTML = renderHistoricalMarketValueRankingPanel();
+  }
 
   cardGrid.innerHTML = players.map((player) => renderPlayerCard(player, false)).join("");
   tableBody.innerHTML = players.map(renderPlayerTableRow).join("");
@@ -3492,7 +4466,7 @@ function renderPlayerCard(player, compact) {
       <h3>${escapeHtml(primaryName)}</h3>
       ${secondaryNames ? `<p class="small-note">${escapeHtml(secondaryNames)}</p>` : ""}
       <p>${escapeHtml(formatPosition(player.primary_position))} · ${escapeHtml(formatAge(player.age))}</p>
-      <p class="small-note">${escapeHtml(affiliation.currentTeam || t("players.card.clubPending"))} · ${escapeHtml(formatLeagueSystem(player.currentLeagueSystem))}</p>
+      <p class="small-note">${escapeHtml(affiliation.directoryTeam || t("players.card.clubPending"))} · ${escapeHtml(formatLeagueSystem(player.currentLeagueSystem))}</p>
       ${marketValueSummary ? `<p class="small-note">${escapeHtml(marketValueSummary)}</p>` : ""}
       <p class="small-note">${escapeHtml(summarizePathway(player.training_pathway))}</p>
       <div class="chip-row">${renderTagChips((player.focus_tags ?? []).slice(0, compact ? 2 : 4))}</div>
@@ -3513,6 +4487,7 @@ function renderCurrentOverseasItem(item, compact) {
         <div class="chip-row">
           <span class="chip">${escapeHtml(formatCountryName(item.country))}</span>
           <span class="chip accent-chip">${formatBucket(item.bucket)}</span>
+          <span class="chip team-level-chip team-level-${escapeHtml(item.overseasTeamLevel)}">${escapeHtml(formatOverseasTeamLevel(item.overseasTeamLevel))}</span>
           <span class="chip">${escapeHtml(item.season)}</span>
         </div>
         <h3>${escapeHtml(primaryName)}</h3>
@@ -3536,6 +4511,7 @@ function renderCurrentOverseasItem(item, compact) {
       <div class="chip-row">
         <span class="chip">${escapeHtml(formatCountryName(item.country))}</span>
         <span class="chip accent-chip">${formatBucket(item.overseasBucket)}</span>
+        <span class="chip team-level-chip team-level-${escapeHtml(item.overseasTeamLevel)}">${escapeHtml(formatOverseasTeamLevel(item.overseasTeamLevel))}</span>
         <span class="chip">${formatAgeBand(item.age_band)}</span>
       </div>
       <h3>${escapeHtml(primaryName)}</h3>
@@ -3562,11 +4538,25 @@ function renderPlayerTableRow(player) {
       </td>
       <td>${escapeHtml(formatCountryName(player.country))}</td>
       <td>${escapeHtml(formatAge(player.age))}</td>
-      <td>${escapeHtml(affiliation.currentTeam || "-")}</td>
+      <td>${renderPlayerTableMarketValue(player)}</td>
+      <td>${escapeHtml(affiliation.directoryTeam || "-")}</td>
       <td>${escapeHtml(formatLeagueSystem(player.currentLeagueSystem))}</td>
       <td>${escapeHtml((player.focus_tags ?? []).slice(0, 3).map(formatTag).join(" / ") || "-")}</td>
       <td><a class="inline-link" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(t("players.card.details"))}</a></td>
     </tr>
+  `;
+}
+
+function renderPlayerTableMarketValue(player) {
+  const current = player.market_value?.current;
+  const peak = player.market_value?.peak;
+  if (!current && !peak) {
+    return "-";
+  }
+
+  return `
+    ${current ? `<strong>${escapeHtml(formatMarketValuePoint(current))}</strong>` : `<span>${escapeHtml(t("playerDetail.status.marketValueUnavailable"))}</span>`}
+    ${peak ? `<div class="small-note">${escapeHtml(t("players.table.marketValuePeak", { value: formatMarketValuePoint(peak) }))}</div>` : ""}
   `;
 }
 
@@ -3600,11 +4590,83 @@ function renderStatusItem(label, value) {
   `;
 }
 
+function getYouthSystemsPayload() {
+  return state.overview?.youth_development_systems ?? { checked_at: null, systems: [] };
+}
+
+function getYouthCompetitionMap() {
+  return new Map(
+    getYouthSystemsPayload().systems.flatMap((system) =>
+      (system.competitions ?? []).map((competition) => [competition.id, { ...competition, country: system.country }])
+    )
+  );
+}
+
+function buildPathwaysUrl(country, competitionId = "") {
+  const params = new URLSearchParams();
+  if (country) params.set("country", country);
+  const suffix = competitionId ? `#${encodeURIComponent(competitionId)}` : "";
+  return `./pathways.html?${params.toString()}${suffix}`;
+}
+
+function renderPlayerSourceLayers(player) {
+  const layers = player.source_layers ?? [];
+  if (layers.length === 0) {
+    return `<div class="empty-inline">${escapeHtml(t("playerDetail.sources.empty"))}</div>`;
+  }
+
+  const order = [
+    "afc-registration",
+    "national-fa-profile",
+    "school-profile",
+    "university-profile",
+    "club-academy-profile",
+    "club-profile",
+    "league-registration"
+  ];
+  const groups = new Map();
+  for (const layer of layers) {
+    if (!groups.has(layer.type)) groups.set(layer.type, []);
+    groups.get(layer.type).push(layer);
+  }
+
+  return [...groups.entries()]
+    .sort((left, right) => order.indexOf(left[0]) - order.indexOf(right[0]))
+    .map(
+      ([type, entries]) => `
+        <section class="source-layer-group">
+          <h3>${escapeHtml(getLabel(SOURCE_LAYER_TYPE_LABELS, type, type))}</h3>
+          <div class="story-grid">
+            ${entries
+              .map(
+                (layer) => `
+                  <article class="stack-card source-layer-card">
+                    <h4>${escapeHtml(layer.label)}</h4>
+                    <p>${escapeHtml(localizeText(layer.claim))}</p>
+                    <p class="small-note">${escapeHtml(t("playerDetail.sources.fields", { fields: layer.fields.join(", ") }))}</p>
+                    <p class="small-note">${escapeHtml(t("playerDetail.sources.checked", {
+                      date: formatDate(layer.checked_at),
+                      confidence: getLabel(SOURCE_LAYER_CONFIDENCE_LABELS, layer.confidence, layer.confidence)
+                    }))}</p>
+                    <a class="inline-link" href="${escapeHtml(layer.url)}" target="_blank" rel="noreferrer">${escapeHtml(layer.url)}</a>
+                  </article>
+                `
+              )
+              .join("")}
+          </div>
+        </section>
+      `
+    )
+    .join("");
+}
+
 function renderPlayerDetailPage() {
   const hero = document.querySelector("#playerDetailHero");
   const body = document.querySelector("#playerDetailBody");
   const stats = document.querySelector("#playerDetailStats");
+  const marketValueHistory = document.querySelector("#playerMarketValueHistory");
   const pathwayTimeline = document.querySelector("#playerPathwayTimeline");
+  const sourceLayers = document.querySelector("#playerSourceLayers");
   const participationList = document.querySelector("#playerParticipationList");
   const recentContributions = document.querySelector("#playerRecentContributions");
   const externalLinks = document.querySelector("#playerExternalLinks");
@@ -3667,7 +4729,7 @@ function renderPlayerDetailPage() {
       <p class="eyebrow">${escapeHtml(t("playerDetail.status.eyebrow"))}</p>
       <h2>${escapeHtml(t("playerDetail.status.title"))}</h2>
       <dl class="status-list">
-        ${renderStatusItem(t("playerDetail.status.currentTeam"), affiliation.currentTeam)}
+        ${renderStatusItem(t(affiliation.isTournamentSnapshot ? "playerDetail.status.registrationSnapshot" : "playerDetail.status.currentTeam"), affiliation.currentTeam)}
         ${renderStatusItem(t("playerDetail.status.transfermarkt"), transfermarktStatus)}
         ${renderStatusItem(
           t("playerDetail.status.marketValueCurrent"),
@@ -3706,10 +4768,17 @@ function renderPlayerDetailPage() {
   ];
 
   const affiliationItems = [
-    { label: t("playerDetail.stats.currentTeam"), value: affiliation.currentTeam },
+    { label: t(affiliation.isTournamentSnapshot ? "playerDetail.stats.registrationSnapshot" : "playerDetail.stats.currentTeam"), value: affiliation.currentTeam },
     { label: t("playerDetail.stats.parentClub"), value: affiliation.parentClub },
     { label: t("playerDetail.stats.currentSquad"), value: affiliation.squadLabel },
-    { label: t("playerDetail.stats.currentLeague"), value: affiliation.system }
+    { label: t("playerDetail.stats.currentLeague"), value: affiliation.system },
+    { label: t("playerDetail.stats.organizationType"), value: affiliation.organizationTypeLabel },
+    ...(affiliation.explicitParent
+      ? [{ label: t("playerDetail.stats.parentOrganization"), value: affiliation.explicitParent }]
+      : []),
+    ...(affiliation.educationPartner
+      ? [{ label: t("playerDetail.stats.educationPartner"), value: affiliation.educationPartner }]
+      : [])
   ];
 
   const marketValueItems = [
@@ -3746,12 +4815,23 @@ function renderPlayerDetailPage() {
     renderDetailInfoCard(t("playerDetail.marketValue.eyebrow"), t("playerDetail.marketValue.title"), marketValueItems)
   ].join("");
 
+  marketValueHistory.innerHTML = renderPlayerMarketValueHistory(player);
+
+  sourceLayers.innerHTML = renderPlayerSourceLayers(player);
+
+  const youthCompetitionMap = getYouthCompetitionMap();
   pathwayTimeline.innerHTML =
     (player.training_pathway ?? []).length > 0
       ? player.training_pathway
           .map(
             (step) => {
               const metaLabels = buildPathwayMetaLabels(step);
+              if (step.organization_type) {
+                metaLabels.push(getLabel(ORGANIZATION_TYPE_LABELS, step.organization_type, step.organization_type));
+              }
+              const competitionContexts = (step.competition_context_ids ?? [])
+                .map((id) => youthCompetitionMap.get(id))
+                .filter(Boolean);
               return `
               <article class="timeline-item">
                 <p class="timeline-label">${escapeHtml(localizeText(step.stage_label))}</p>
@@ -3763,6 +4843,15 @@ function renderPlayerDetailPage() {
                         ${metaLabels.map((label) => `<span class="chip muted-chip">${escapeHtml(label)}</span>`).join("")}
                       </div>
                     `
+                    : ""
+                }
+                ${
+                  competitionContexts.length > 0
+                    ? `<p class="small-note pathway-context-links"><strong>${escapeHtml(t("playerDetail.pathway.context"))}：</strong>${competitionContexts
+                        .map(
+                          (competition) => `<a class="inline-link" href="${buildPathwaysUrl(competition.country, competition.id)}">${escapeHtml(localizeText(competition.name))}</a>`
+                        )
+                        .join(" · ")}</p>`
                     : ""
                 }
                 ${step.note ? `<p class="small-note">${escapeHtml(localizeText(step.note))}</p>` : ""}
@@ -3831,16 +4920,137 @@ function renderPlayerDetailPage() {
   body.hidden = false;
 }
 
+function formatTournamentGroupName(name) {
+  if (name === "Final round") {
+    return t("tournamentDetail.field.group.finalRound");
+  }
+  const match = String(name ?? "").match(/^Group\s+(.+)$/i);
+  return match
+    ? t("tournamentDetail.field.group.group", { name: match[1] })
+    : localizeText(name);
+}
+
+function getTournamentParticipantStatusLabel(status) {
+  const keys = {
+    complete: "tournamentDetail.field.participantsComplete",
+    partial: "tournamentDetail.field.participantsPartial",
+    "cancelled-snapshot": "tournamentDetail.field.participantsCancelled"
+  };
+  return t(keys[status] ?? "tournamentDetail.field.participantsPartial");
+}
+
+function getTournamentEntryStatusLabel(status) {
+  return t(`tournamentDetail.field.entry.${status}`);
+}
+
+function formatTournamentQualifierPhase(phase) {
+  const key = phase === "Development Phase" ? "development" : "qualification";
+  return t(`tournamentDetail.field.phase.${key}`);
+}
+
+function renderTournamentGroupCard(group) {
+  return `
+    <article class="tournament-group-card">
+      <h3>${escapeHtml(formatTournamentGroupName(group.name))}</h3>
+      ${group.host ? `<p class="small-note">${escapeHtml(t("tournamentDetail.field.groupHost", { host: formatCountryName(group.host) }))}</p>` : ""}
+      <div class="chip-row">
+        ${(group.teams ?? []).map((team) => `<span class="chip">${escapeHtml(formatCountryName(team))}</span>`).join("")}
+      </div>
+    </article>
+  `;
+}
+
+function renderTournamentField(tournament, elements) {
+  const { section, meta, participants, finalDraw, qualifiers } = elements;
+  if (!section || !tournament?.participants || !tournament?.final_draw) {
+    if (section) section.hidden = true;
+    return;
+  }
+
+  const participantRows = tournament.participants.teams ?? [];
+  meta.textContent = t("tournamentDetail.field.meta", {
+    count: participantRows.length,
+    date: tournament.source_checked_at ? formatDate(tournament.source_checked_at) : t("common.pending")
+  });
+
+  participants.innerHTML = `
+    <article class="stack-card tournament-field-block">
+      <div class="section-head compact-head">
+        <h3>${escapeHtml(t("tournamentDetail.field.participants"))}</h3>
+        <span class="chip">${escapeHtml(getTournamentParticipantStatusLabel(tournament.participants.status))}</span>
+      </div>
+      <div class="chip-row">
+        ${participantRows
+          .map(
+            (entry) => `
+              <span class="chip tournament-team-chip">
+                ${escapeHtml(formatCountryName(entry.team))}
+                <small>${escapeHtml(getTournamentEntryStatusLabel(entry.entry_status))}</small>
+              </span>
+            `
+          )
+          .join("")}
+      </div>
+    </article>
+  `;
+
+  const draw = tournament.final_draw;
+  const drawHeading = `<div class="section-head compact-head tournament-field-heading tournament-field-span"><h3>${escapeHtml(t("tournamentDetail.field.finalDraw"))}</h3></div>`;
+  if (draw.groups?.length) {
+    const note = draw.status === "cancelled"
+      ? `<p class="small-note tournament-field-note">${escapeHtml(t("tournamentDetail.field.drawCancelled"))}</p>`
+      : "";
+    finalDraw.innerHTML = `${drawHeading}${note}${draw.groups.map(renderTournamentGroupCard).join("")}`;
+  } else {
+    finalDraw.innerHTML = `${drawHeading}<div class="empty-inline tournament-field-span">${escapeHtml(t("tournamentDetail.field.drawPending"))}</div>`;
+  }
+
+  const qualifierPhases = tournament.qualifiers ?? [];
+  qualifiers.innerHTML = qualifierPhases.length
+    ? `
+      <div class="section-head compact-head tournament-field-heading">
+        <h3>${escapeHtml(t("tournamentDetail.field.qualifiers"))}</h3>
+      </div>
+      ${qualifierPhases
+        .map(
+          (phase) => `
+            <article class="stack-card tournament-field-block">
+              <div class="section-head compact-head">
+                <h3>${escapeHtml(formatTournamentQualifierPhase(phase.phase))}</h3>
+                <span class="chip">${escapeHtml(t("tournamentDetail.field.phaseDates", {
+                  start: formatDate(phase.date_range.start),
+                  end: formatDate(phase.date_range.end)
+                }))}</span>
+              </div>
+              <div class="tournament-group-grid">
+                ${phase.groups.map(renderTournamentGroupCard).join("")}
+              </div>
+            </article>
+          `
+        )
+        .join("")}
+    `
+    : "";
+
+  section.hidden = false;
+}
+
 function renderTournamentDetailPage() {
   const hero = document.querySelector("#tournamentDetailHero");
   const body = document.querySelector("#tournamentDetailBody");
   const stats = document.querySelector("#tournamentDetailStats");
   const context = document.querySelector("#tournamentDetailContext");
+  const fieldSection = document.querySelector("#tournamentDetailFieldSection");
+  const fieldMeta = document.querySelector("#tournamentDetailFieldMeta");
+  const participants = document.querySelector("#tournamentDetailParticipants");
+  const finalDraw = document.querySelector("#tournamentDetailFinalDraw");
+  const qualifiers = document.querySelector("#tournamentDetailQualifiers");
   const regionalHistorySection = document.querySelector("#tournamentDetailRegionalHistorySection");
   const regionalHistoryScope = document.querySelector("#tournamentDetailRegionalHistoryScope");
   const regionalHistorySummary = document.querySelector("#tournamentDetailRegionalHistorySummary");
   const regionalHistoryTable = document.querySelector("#tournamentDetailRegionalHistoryTable");
   const regionalWatchSection = document.querySelector("#tournamentDetailRegionalWatchSection");
+  const regionalWatchTitle = document.querySelector("#tournamentDetailRegionalWatchTitle");
   const regionalWatchScope = document.querySelector("#tournamentDetailRegionalWatchScope");
   const regionalWatchGrid = document.querySelector("#tournamentDetailRegionalWatchGrid");
   const squad = document.querySelector("#tournamentDetailSquad");
@@ -3970,6 +5180,14 @@ function renderTournamentDetailPage() {
       `
       : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.context.empty"))}</div>`;
 
+  renderTournamentField(archiveTournament, {
+    section: fieldSection,
+    meta: fieldMeta,
+    participants,
+    finalDraw,
+    qualifiers
+  });
+
   const regionalHistory = archiveTournament?.regional_history;
   regionalHistorySection.hidden = !regionalHistory;
   if (regionalHistory) {
@@ -3987,12 +5205,18 @@ function renderTournamentDetailPage() {
   const regionalWatch = archiveTournament?.regional_watch;
   regionalWatchSection.hidden = !regionalWatch;
   if (regionalWatch) {
+    if (regionalWatchTitle) {
+      regionalWatchTitle.textContent = localizeText(regionalWatch.title, t("tournamentDetail.watch.title"));
+    }
     regionalWatchScope.textContent = localizeText(regionalWatch.scope_note, t("common.pending"));
     regionalWatchGrid.innerHTML =
       (regionalWatch.team_groups ?? []).length > 0
         ? regionalWatch.team_groups.map((group) => renderRegionalWatchGroupCard(group, regionalWatch)).join("")
         : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.watch.empty"))}</div>`;
   } else {
+    if (regionalWatchTitle) {
+      regionalWatchTitle.textContent = t("tournamentDetail.watch.title");
+    }
     regionalWatchScope.textContent = "";
     regionalWatchGrid.innerHTML = "";
   }
@@ -4055,6 +5279,108 @@ function getPlayerMarketValueRecord(player) {
   return player.market_value && typeof player.market_value === "object" ? player.market_value : null;
 }
 
+function getPlayerMarketValueDisplaySeries(player) {
+  const record = getPlayerMarketValueRecord(player);
+  if (Array.isArray(record?.history) && record.history.length > 0) {
+    return {
+      provider: record.source?.provider ?? "Transfermarkt",
+      sourceUrl: record.source?.market_value_url ?? record.source?.profile_url ?? "",
+      checkedAt: record.checked_at,
+      history: record.history,
+      isAlternative: false
+    };
+  }
+
+  const alternative = (record?.alternatives ?? []).find(
+    (item) => Array.isArray(item?.history) && item.history.length > 0
+  );
+  if (!alternative) {
+    return null;
+  }
+
+  return {
+    provider: alternative.source?.provider ?? "Alternative provider",
+    sourceUrl: alternative.source?.profile_url ?? "",
+    checkedAt: alternative.checked_at,
+    history: alternative.history,
+    isAlternative: true
+  };
+}
+
+function buildMarketValueChartPoints(history, width, height, padding) {
+  const timestamps = history.map((point) => Date.parse(point.date));
+  const values = history.map((point) => point.eur);
+  const minTime = Math.min(...timestamps);
+  const maxTime = Math.max(...timestamps);
+  const maxValue = Math.max(...values);
+  const chartWidth = width - padding * 2;
+  const chartHeight = height - padding * 2;
+
+  return history.map((point, index) => {
+    const x =
+      minTime === maxTime
+        ? width / 2
+        : padding + ((timestamps[index] - minTime) / (maxTime - minTime)) * chartWidth;
+    const y = height - padding - (point.eur / maxValue) * chartHeight;
+    return { ...point, x, y };
+  });
+}
+
+function renderPlayerMarketValueHistory(player) {
+  const series = getPlayerMarketValueDisplaySeries(player);
+  if (!series) {
+    return `<div class="empty-inline">${escapeHtml(t("playerDetail.marketHistory.empty"))}</div>`;
+  }
+
+  const width = 720;
+  const height = 260;
+  const padding = 34;
+  const points = buildMarketValueChartPoints(series.history, width, height, padding);
+  const linePoints = points.map((point) => `${point.x.toFixed(1)},${point.y.toFixed(1)}`).join(" ");
+  const providerLabel = t("playerDetail.marketHistory.source", { provider: series.provider });
+  const providerMarkup = series.sourceUrl
+    ? `<a class="inline-link" href="${escapeHtml(series.sourceUrl)}" target="_blank" rel="noreferrer">${escapeHtml(providerLabel)}</a>`
+    : `<span>${escapeHtml(providerLabel)}</span>`;
+
+  return `
+    <div class="market-history-meta">
+      ${providerMarkup}
+      <span>${escapeHtml(t("playerDetail.marketHistory.updated", { date: formatDate(series.checkedAt) }))}</span>
+    </div>
+    <div class="market-history-chart-wrap">
+      <svg class="market-history-chart" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(t("playerDetail.marketHistory.title"))}">
+        <line class="market-history-axis" x1="${padding}" y1="${height - padding}" x2="${width - padding}" y2="${height - padding}"></line>
+        <line class="market-history-axis" x1="${padding}" y1="${padding}" x2="${padding}" y2="${height - padding}"></line>
+        ${points.length > 1 ? `<polyline class="market-history-line" points="${linePoints}"></polyline>` : ""}
+        ${points
+          .map(
+            (point) => `
+              <g>
+                <circle class="market-history-point" cx="${point.x.toFixed(1)}" cy="${point.y.toFixed(1)}" r="5"></circle>
+                <title>${escapeHtml(`${formatDate(point.date)} · ${formatMarketValuePoint(point)}`)}</title>
+              </g>
+            `
+          )
+          .join("")}
+      </svg>
+    </div>
+    <div class="market-history-table-wrap">
+      <table class="market-history-table">
+        <thead><tr><th>${escapeHtml(t("playerDetail.marketHistory.date"))}</th><th>${escapeHtml(t("playerDetail.marketHistory.value"))}</th></tr></thead>
+        <tbody>
+          ${[...series.history]
+            .reverse()
+            .map(
+              (point) => `<tr><td>${escapeHtml(formatDate(point.date))}</td><td>${escapeHtml(formatMarketValuePoint(point))}</td></tr>`
+            )
+            .join("")}
+        </tbody>
+      </table>
+    </div>
+    ${series.isAlternative ? `<p class="small-note">${escapeHtml(t("playerDetail.marketHistory.providerNote"))}</p>` : ""}
+  `;
+}
+
 function formatMarketValueAmount(value) {
   if (typeof value !== "number" || value <= 0) {
     return t("playerDetail.status.marketValueUnavailable");
@@ -4114,6 +5440,149 @@ function buildPlayerCardMarketValueSummary(player) {
   return "";
 }
 
+function getPathwaysSystem(country = state.pathwaysCountry) {
+  return getYouthSystemsPayload().systems.find((system) => system.country === country) ?? null;
+}
+
+function getCompetitionSamplePlayers(system, competition) {
+  return state.enrichedPlayers.filter(
+    (player) =>
+      player.country === system.country &&
+      competition.organization_types.includes(player.organizationType) &&
+      (player.tournament_participation ?? []).some((entry) =>
+        ["afc-u17-2026", "afc-u23-2026"].includes(entry.competition_id)
+      )
+  );
+}
+
+function buildCompetitionSampleUrl(system, competition) {
+  const params = new URLSearchParams({ country: system.country });
+  if (competition.organization_types.length === 1) {
+    params.set("organizationType", competition.organization_types[0]);
+  }
+  return `./players.html?${params.toString()}`;
+}
+
+function initializePathwaysPage() {
+  const params = new URLSearchParams(window.location.search);
+  const requestedCountry = params.get("country");
+  if (["Japan", "Korea Republic"].includes(requestedCountry)) {
+    state.pathwaysCountry = requestedCountry;
+  }
+
+  document.querySelector("#pathwaysCountryTabs")?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-country]");
+    if (!button) return;
+    state.pathwaysCountry = button.dataset.country;
+    replaceQueryParams({ country: state.pathwaysCountry });
+    renderPathwaysPage();
+  });
+}
+
+function renderPathwaysPage() {
+  const payload = getYouthSystemsPayload();
+  const system = getPathwaysSystem();
+  const tabs = document.querySelectorAll("#pathwaysCountryTabs [data-country]");
+  const intro = document.querySelector("#pathwaysSystemIntro");
+  const competitionGrid = document.querySelector("#pathwaysCompetitionGrid");
+  const sources = document.querySelector("#pathwaysSources");
+  const coverage = document.querySelector("#pathwaysCoverage");
+  const checkedAt = document.querySelector("#pathwaysCheckedAt");
+  if (!system || !intro || !competitionGrid || !sources) return;
+
+  tabs.forEach((button) => button.classList.toggle("is-active", button.dataset.country === system.country));
+  const coveredPlayers = state.enrichedPlayers.filter(
+    (player) =>
+      ["Japan", "Korea Republic"].includes(player.country) &&
+      player.organizationType &&
+      (player.tournament_participation ?? []).some((entry) =>
+        ["afc-u17-2026", "afc-u23-2026"].includes(entry.competition_id)
+      )
+  );
+  coverage.textContent = t("pathways.meta.coverage", { count: coveredPlayers.length });
+  checkedAt.textContent = t("pathways.meta.checked", { date: formatDate(payload.checked_at) });
+
+  intro.innerHTML = `
+    <div>
+      <p class="eyebrow">${escapeHtml(formatCountryName(system.country))}</p>
+      <h2>${escapeHtml(localizeText(system.name))}</h2>
+      <p>${escapeHtml(localizeText(system.summary))}</p>
+    </div>
+    <div class="registration-card-grid">
+      ${system.registration_categories
+        .map(
+          (category) => `
+            <article class="stack-card">
+              <h3>${escapeHtml(localizeText(category.label))}</h3>
+              <p class="small-note">${escapeHtml(t("pathways.organizationTypes", {
+                value: category.organization_types
+                  .map((type) => getLabel(ORGANIZATION_TYPE_LABELS, type, type))
+                  .join(" / ")
+              }))}</p>
+              <a class="inline-link" href="${escapeHtml(category.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("pathways.registration", { value: localizeText(category.label) }))}</a>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  `;
+
+  const competitions = [...system.competitions].sort((left, right) => {
+    const leftTier = left.tier ?? 99;
+    const rightTier = right.tier ?? 99;
+    return leftTier - rightTier || left.competition_type.localeCompare(right.competition_type);
+  });
+  competitionGrid.innerHTML = competitions
+    .map((competition) => {
+      const samplePlayers = getCompetitionSamplePlayers(system, competition);
+      return `
+        <article id="${escapeHtml(competition.id)}" class="system-card">
+          <div class="chip-row">
+            <span class="chip">${escapeHtml(getLabel(YOUTH_COMPETITION_TYPE_LABELS, competition.competition_type, competition.competition_type))}</span>
+            ${competition.tier !== undefined ? `<span class="chip">Tier ${escapeHtml(String(competition.tier))}</span>` : ""}
+          </div>
+          <h3>${escapeHtml(localizeText(competition.name))}</h3>
+          <p>${escapeHtml(localizeText(competition.stable_structure))}</p>
+          <p class="small-note">${escapeHtml(t("pathways.organizationTypes", {
+            value: competition.organization_types.map((type) => getLabel(ORGANIZATION_TYPE_LABELS, type, type)).join(" / ")
+          }))}</p>
+          ${
+            competition.annual_snapshot
+              ? `<p class="small-note snapshot-note">${escapeHtml(t("pathways.snapshot", {
+                  season: competition.annual_snapshot.season,
+                  note: localizeText(competition.annual_snapshot.note)
+                }))}</p>`
+              : ""
+          }
+          <div class="system-card-actions">
+            <a class="inline-link" href="${escapeHtml(competition.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("pathways.sources.title"))}</a>
+            ${
+              samplePlayers.length > 0
+                ? `<a class="primary-link primary-link-inline" href="${buildCompetitionSampleUrl(system, competition)}">${escapeHtml(t("pathways.viewPlayers", { count: samplePlayers.length }))}</a>`
+                : `<span class="small-note">${escapeHtml(t("pathways.noPlayers"))}</span>`
+            }
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+
+  sources.innerHTML = system.source_links
+    .map(
+      (source) => `
+        <article class="stack-card">
+          <h3>${escapeHtml(source.label)}</h3>
+          <p class="small-note">${escapeHtml(t("pathways.sourceChecked", { date: formatDate(source.checked_at) }))}</p>
+          <a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.url)}</a>
+        </article>
+      `
+    )
+    .join("");
+
+  const hashTarget = window.location.hash ? document.getElementById(decodeURIComponent(window.location.hash.slice(1))) : null;
+  hashTarget?.scrollIntoView({ block: "center" });
+}
+
 function initializeTournamentFilters() {
   const params = new URLSearchParams(window.location.search);
   const requestedLevel = params.get("level");
@@ -4157,12 +5626,17 @@ function renderTournamentLevelTabs() {
 }
 
 function getFilteredTournaments() {
-  return state.overview.tournament_archive.filter((tournament) => {
-    if (state.tournamentFilters.level === "all") {
-      return true;
-    }
-    return tournament.level === state.tournamentFilters.level;
-  });
+  return state.overview.tournament_archive
+    .filter((tournament) => {
+      if (state.tournamentFilters.level === "all") {
+        return true;
+      }
+      return tournament.level === state.tournamentFilters.level;
+    })
+    .sort((left, right) =>
+      Number(right.edition_label ?? 0) - Number(left.edition_label ?? 0) ||
+      left.competition_name.localeCompare(right.competition_name)
+    );
 }
 
 function getFilteredFocusTournaments() {
@@ -4222,6 +5696,15 @@ function renderArchiveTournamentCard(tournament) {
           )
           .join("")
       : `<p class="small-note">${escapeHtml(t("tournaments.archive.noChinaMatches"))}</p>`;
+  const participantCount = tournament.participants?.teams?.length ?? 0;
+  const drawLabel = tournament.final_draw?.status === "complete"
+    ? t("tournaments.archive.drawComplete")
+    : tournament.final_draw?.status === "cancelled"
+      ? t("tournaments.archive.drawCancelled")
+      : t("tournaments.archive.drawPending");
+  const fieldSummary = tournament.participants
+    ? `<p class="small-note">${escapeHtml(t("tournaments.archive.fieldSummary", { count: participantCount, draw: drawLabel }))}</p>`
+    : "";
 
   return `
     <article class="archive-card">
@@ -4237,6 +5720,7 @@ function renderArchiveTournamentCard(tournament) {
       </div>
       <p>${formatRange(tournament.date_range)} · ${escapeHtml(formatCountryName(tournament.host))}</p>
       <p>${escapeHtml(titleResult)}</p>
+      ${fieldSummary}
       <p class="small-note">${escapeHtml(t("tournaments.archive.chinaSummary", { summary: localizeText(tournament.china_summary) }))}</p>
       <p class="small-note">${escapeHtml(t("tournaments.archive.chinaStage", { stage: formatChinaStatus(tournament.china_status) }))}</p>
       <div class="archive-match-list">${matches}</div>
@@ -4246,6 +5730,243 @@ function renderArchiveTournamentCard(tournament) {
   `;
 }
 
+function initializeYouthLeagueFilters() {
+  const params = new URLSearchParams(window.location.search);
+  for (const key of ["season", "country", "status"]) {
+    if (params.get(key)) {
+      state.youthLeagueFilters[key] = params.get(key);
+    }
+  }
+
+  document.querySelector("#youthLeagueFilters")?.addEventListener("change", (event) => {
+    const control = event.target.closest("[data-youth-filter]");
+    if (!control) {
+      return;
+    }
+    state.youthLeagueFilters[control.dataset.youthFilter] = control.value;
+    renderYouthLeaguePlayers();
+  });
+}
+
+function getYouthLeagueData() {
+  return state.overview?.uefa_youth_league ?? null;
+}
+
+function renderYouthLeagueHero(topic) {
+  const entrantTotal = topic.seasons.reduce((total, season) => total + season.entrant_count, 0);
+  const node = document.querySelector("#youthLeagueHeroStats");
+  node.innerHTML = `
+    <p class="eyebrow">${escapeHtml(yt("currentRules"))}</p>
+    <div class="youth-hero-metrics">
+      <div><strong>${topic.seasons.length}</strong><span>${escapeHtml(yt("seasonCount"))}</span></div>
+      <div><strong>${entrantTotal}</strong><span>${escapeHtml(yt("entrantTotal"))}</span></div>
+      <div><strong>${topic.cjk_players.length}</strong><span>${escapeHtml(yt("cjkCount"))}</span></div>
+    </div>
+  `;
+}
+
+function renderYouthLeagueQualification(topic) {
+  const node = document.querySelector("#youthLeagueQualification");
+  const qualification = topic.qualification;
+  const rules = topic.player_eligibility.rules;
+  node.innerHTML = `
+    <div class="youth-rule-paths">
+      ${qualification.paths
+        .map(
+          (path) => `
+            <article class="youth-rule-card">
+              <h3>${escapeHtml(localizeText(path.title))}</h3>
+              <p>${escapeHtml(localizeText(path.description))}</p>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+    <article class="youth-rule-note">
+      <strong>${escapeHtml(yt("routeNote"))}</strong>
+      <p>${escapeHtml(localizeText(qualification.holder_rule))}</p>
+      <p>${escapeHtml(localizeText(qualification.duplicate_rule))}</p>
+    </article>
+    <div class="section-head compact-head"><h3>${escapeHtml(yt("playerRules"))}</h3></div>
+    <div class="youth-eligibility-grid">
+      ${rules
+        .map(
+          (rule) => `
+            <article class="youth-eligibility-card">
+              <h4>${escapeHtml(localizeText(rule.title))}</h4>
+              <p>${escapeHtml(localizeText(rule.description))}</p>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+    <article class="youth-methodology-note">
+      <strong>${escapeHtml(yt("methodology"))}</strong>
+      <p>${escapeHtml(yt("methodologyText"))}</p>
+    </article>
+  `;
+}
+
+function formatYouthRound(round) {
+  return {
+    "quarter-final": yt("quarterFinal"),
+    "semi-final": yt("semiFinal"),
+    final: yt("final")
+  }[round] ?? round;
+}
+
+function renderYouthLeagueKnockout(season) {
+  const grouped = ["quarter-final", "semi-final", "final"];
+  return grouped
+    .map((round) => {
+      const matches = season.knockout.filter((match) => match.round === round);
+      return `
+        <div class="youth-knockout-round">
+          <h4>${escapeHtml(formatYouthRound(round))}</h4>
+          ${matches
+            .map(
+              (match) => `
+                <div class="youth-score-row">
+                  <time datetime="${escapeHtml(match.date)}">${escapeHtml(formatDate(match.date))}</time>
+                  <span>${escapeHtml(formatClubName(match.home))}</span>
+                  <strong>${escapeHtml(match.score)}${match.penalties ? ` <small>${escapeHtml(yt("penalties", { score: match.penalties }))}</small>` : ""}</strong>
+                  <span>${escapeHtml(formatClubName(match.away))}</span>
+                </div>
+              `
+            )
+            .join("")}
+        </div>
+      `;
+    })
+    .join("");
+}
+
+function renderYouthLeagueSeasonCard(season) {
+  const teams = Object.values(season.teams_by_path).flat();
+  const scorerText = season.top_scorers
+    .map((scorer) => `${scorer.name} (${formatClubName(scorer.club)}, ${scorer.goals})`)
+    .join(" · ");
+  const eraLabel = season.format.era === "old" ? yt("oldFormat") : yt("newFormat");
+  return `
+    <article class="youth-season-card">
+      <div class="section-head compact-head">
+        <div><p class="eyebrow">${escapeHtml(eraLabel)}</p><h3>${escapeHtml(season.label)}</h3></div>
+        <span class="chip">${escapeHtml(yt("entrants", { count: season.entrant_count }))}</span>
+      </div>
+      <p>${escapeHtml(localizeText(season.format.description))}</p>
+      <dl class="youth-season-summary">
+        <div><dt>${escapeHtml(yt("champion"))}</dt><dd>${escapeHtml(formatClubName(season.champion))}</dd></div>
+        <div><dt>${escapeHtml(yt("runnerUp"))}</dt><dd>${escapeHtml(formatClubName(season.runner_up))}</dd></div>
+        <div><dt>${escapeHtml(yt("semiFinalists"))}</dt><dd>${escapeHtml(season.semi_finalists.map(formatClubName).join(" · "))}</dd></div>
+        <div><dt>${escapeHtml(yt("topScorers"))}</dt><dd>${escapeHtml(scorerText)}</dd></div>
+      </dl>
+      <div class="youth-knockout"><h4>${escapeHtml(yt("knockout"))}</h4>${renderYouthLeagueKnockout(season)}</div>
+      <details class="youth-team-details">
+        <summary>${escapeHtml(yt("teams", { count: teams.length }))}</summary>
+        <div class="youth-team-columns">
+          <div><h4>${escapeHtml(yt("championsLeaguePath"))}</h4><p>${season.teams_by_path.champions_league.map(formatClubName).map(escapeHtml).join(" · ")}</p></div>
+          <div><h4>${escapeHtml(yt("domesticPath"))}</h4><p>${season.teams_by_path.domestic_champions.map(formatClubName).map(escapeHtml).join(" · ")}</p></div>
+        </div>
+      </details>
+    </article>
+  `;
+}
+
+function getYouthCountryLabel(code) {
+  return { CHN: yt("china"), JPN: yt("japan"), KOR: yt("korea") }[code] ?? code;
+}
+
+function renderYouthLeagueFilterSelect(key, label, options) {
+  const selected = state.youthLeagueFilters[key];
+  return `
+    <label><span>${escapeHtml(label)}</span>
+      <select data-youth-filter="${escapeHtml(key)}">
+        ${options.map((option) => `<option value="${escapeHtml(option.value)}"${option.value === selected ? " selected" : ""}>${escapeHtml(option.label)}</option>`).join("")}
+      </select>
+    </label>
+  `;
+}
+
+function getFilteredYouthLeaguePlayers(topic) {
+  return topic.cjk_players.filter((player) => {
+    const filters = state.youthLeagueFilters;
+    return (filters.season === "all" || player.season_id === filters.season) &&
+      (filters.country === "all" || player.country_code === filters.country) &&
+      (filters.status === "all" || player.status === filters.status);
+  });
+}
+
+function renderYouthLeaguePlayers() {
+  const topic = getYouthLeagueData();
+  const filters = document.querySelector("#youthLeagueFilters");
+  const seasons = topic.seasons.map((season) => ({ value: season.id, label: season.label }));
+  filters.innerHTML = [
+    renderYouthLeagueFilterSelect("season", yt("filtersSeason"), [{ value: "all", label: yt("all") }, ...seasons]),
+    renderYouthLeagueFilterSelect("country", yt("filtersCountry"), [
+      { value: "all", label: yt("all") }, { value: "CHN", label: yt("china") }, { value: "JPN", label: yt("japan") }, { value: "KOR", label: yt("korea") }
+    ]),
+    renderYouthLeagueFilterSelect("status", yt("filtersStatus"), [
+      { value: "all", label: yt("all") }, { value: "appeared", label: yt("appeared") }, { value: "registered-only", label: yt("registeredOnly") }
+    ])
+  ].join("");
+
+  replaceQueryParams(state.youthLeagueFilters);
+  const players = getFilteredYouthLeaguePlayers(topic);
+  document.querySelector("#youthLeagueCjkMeta").textContent = yt("resultCount", { count: players.length, total: topic.cjk_players.length });
+  document.querySelector("#youthLeaguePlayerHead").innerHTML = `<tr><th>${escapeHtml(yt("player"))}</th><th>${escapeHtml(yt("filtersSeason"))}</th><th>${escapeHtml(yt("uefaNationality"))}</th><th>${escapeHtml(yt("club"))}</th><th>${escapeHtml(yt("status"))}</th><th>${escapeHtml(yt("apps"))}</th><th>${escapeHtml(yt("starts"))}</th><th>${escapeHtml(yt("minutes"))}</th><th>${escapeHtml(yt("goals"))}</th><th>${escapeHtml(yt("assists"))}</th></tr>`;
+  document.querySelector("#youthLeaguePlayerBody").innerHTML = players
+    .map((player) => {
+      const displayName = state.language === "en" ? player.names.en : player.names.zh;
+      const nameMarkup = player.player_id
+        ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(displayName)}</a>`
+        : `<strong>${escapeHtml(displayName)}</strong>`;
+      const nativeName = player.names.native && player.names.native !== displayName ? `<small>${escapeHtml(player.names.native)}</small>` : "";
+      return `<tr><td>${nameMarkup}${nativeName}</td><td>${escapeHtml(topic.seasons.find((season) => season.id === player.season_id)?.label ?? player.season_id)}</td><td>${escapeHtml(getYouthCountryLabel(player.country_code))}</td><td>${escapeHtml(formatClubName(player.club))}</td><td><span class="chip">${escapeHtml(player.status === "appeared" ? yt("appeared") : yt("registeredOnly"))}</span></td><td>${player.appearances}</td><td>${player.starts}</td><td>${player.minutes}</td><td>${player.goals}</td><td>${player.assists}</td></tr>`;
+    })
+    .join("");
+  const empty = document.querySelector("#youthLeaguePlayerEmpty");
+  empty.textContent = yt("noPlayers");
+  empty.hidden = players.length > 0;
+  document.querySelector(".youth-player-table-shell").hidden = players.length === 0;
+}
+
+function renderYouthLeagueSpotlights(topic) {
+  const container = document.querySelector("#youthLeagueSpotlights");
+  container.innerHTML = topic.seasons
+    .map((season) => {
+      const players = topic.other_player_spotlights.filter((player) => player.season_id === season.id);
+      return `
+        <article class="youth-spotlight-season">
+          <h3>${escapeHtml(yt("spotlightSeason", { season: season.label }))}</h3>
+          <div>${players.map((player) => `<p><strong>${escapeHtml(player.name)}</strong><span>${escapeHtml(formatClubName(player.club))}</span><small>${escapeHtml(localizeText(player.reason))}</small></p>`).join("")}</div>
+        </article>
+      `;
+    })
+    .join("");
+}
+
+function renderYouthLeagueSources(topic) {
+  document.querySelector("#youthLeagueSources").innerHTML = `
+    <p class="section-note">${escapeHtml(yt("sourceNote"))}</p>
+    <div class="source-link-grid">
+      ${topic.sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(source.label)}</span><strong>↗</strong></a>`).join("")}
+    </div>
+  `;
+}
+
+function renderYouthLeaguePage() {
+  const topic = getYouthLeagueData();
+  if (!topic) {
+    throw new Error("UEFA Youth League data is unavailable.");
+  }
+  renderYouthLeagueHero(topic);
+  renderYouthLeagueQualification(topic);
+  document.querySelector("#youthLeagueSeasonCards").innerHTML = topic.seasons.map(renderYouthLeagueSeasonCard).join("");
+  renderYouthLeaguePlayers();
+  renderYouthLeagueSpotlights(topic);
+  renderYouthLeagueSources(topic);
+}
+
 function initializeOverseasFilters() {
   const params = new URLSearchParams(window.location.search);
   if (params.get("country")) {
@@ -4253,6 +5974,9 @@ function initializeOverseasFilters() {
   }
   if (params.get("bucket")) {
     state.overseasFilters.bucket = params.get("bucket");
+  }
+  if (params.get("level")) {
+    state.overseasFilters.teamLevel = params.get("level");
   }
   if (params.get("year")) {
     state.overseasFilters.year = params.get("year");
@@ -4266,9 +5990,17 @@ function initializeOverseasFilters() {
     value: bucket,
     label: formatBucket(bucket)
   }));
+  const teamLevelOptions = OVERSEAS_TEAM_LEVEL_ORDER.map((teamLevel) => ({
+    value: teamLevel,
+    label: formatOverseasTeamLevel(teamLevel)
+  }));
   const yearOptions = getHistoricalYearOptions();
   state.overseasFilters.country = normalizeFilterValue(state.overseasFilters.country, countryOptions);
   state.overseasFilters.bucket = normalizeFilterValue(state.overseasFilters.bucket, bucketOptions);
+  state.overseasFilters.teamLevel = normalizeFilterValue(
+    state.overseasFilters.teamLevel,
+    teamLevelOptions
+  );
   state.overseasFilters.year = normalizeFilterValue(state.overseasFilters.year, yearOptions);
 
   buildOptions(
@@ -4282,6 +6014,12 @@ function initializeOverseasFilters() {
     bucketOptions,
     state.overseasFilters.bucket,
     t("overseas.filters.allBucket")
+  );
+  buildOptions(
+    document.querySelector("#overseasTeamLevelFilter"),
+    teamLevelOptions,
+    state.overseasFilters.teamLevel,
+    t("overseas.filters.allTeamLevel")
   );
   buildOptions(
     document.querySelector("#overseasYearFilter"),
@@ -4304,6 +6042,10 @@ function initializeOverseasFilters() {
     state.overseasFilters.bucket = event.target.value;
     renderOverseasPage();
   });
+  document.querySelector("#overseasTeamLevelFilter")?.addEventListener("change", (event) => {
+    state.overseasFilters.teamLevel = event.target.value;
+    renderOverseasPage();
+  });
   document.querySelector("#overseasYearFilter")?.addEventListener("change", (event) => {
     state.overseasFilters.year = event.target.value;
     renderOverseasPage();
@@ -4315,6 +6057,7 @@ function initializeOverseasFilters() {
   document.querySelector("#overseasResetButton")?.addEventListener("click", () => {
     state.overseasFilters.country = "all";
     state.overseasFilters.bucket = "all";
+    state.overseasFilters.teamLevel = "all";
     state.overseasFilters.year = "all";
     renderOverseasPage();
   });
@@ -4326,7 +6069,10 @@ function getFilteredCurrentOverseasItems() {
       state.overseasFilters.country === "all" || item.country === state.overseasFilters.country;
     const matchesBucket =
       state.overseasFilters.bucket === "all" || item.overseasBucket === state.overseasFilters.bucket;
-    return matchesCountry && matchesBucket;
+    const matchesTeamLevel =
+      state.overseasFilters.teamLevel === "all" ||
+      item.overseasTeamLevel === state.overseasFilters.teamLevel;
+    return matchesCountry && matchesBucket && matchesTeamLevel;
   });
 }
 
@@ -4362,6 +6108,8 @@ function renderOverseasPage() {
   const currentEyebrow = document.querySelector("#overseasCurrentEyebrow");
   const currentTitle = document.querySelector("#overseasCurrentTitle");
   const currentMeta = document.querySelector("#overseasCurrentMeta");
+  const teamLevelNotice = document.querySelector("#overseasTeamLevelNotice");
+  const teamLevelFilter = document.querySelector("#overseasTeamLevelFilter");
   const currentPlayers = document.querySelector("#overseasCurrentPlayers");
   const currentEmptyState = document.querySelector("#overseasCurrentEmptyState");
   const countryNotes = document.querySelector("#overseasCountryNotes");
@@ -4377,11 +6125,20 @@ function renderOverseasPage() {
 
   setControlValue("#overseasCountryFilter", state.overseasFilters.country);
   setControlValue("#overseasBucketFilter", state.overseasFilters.bucket);
+  setControlValue("#overseasTeamLevelFilter", state.overseasFilters.teamLevel);
   setControlValue("#overseasYearFilter", state.overseasFilters.year);
   setControlValue("#overseasHeroYearFilter", state.overseasFilters.year);
+  if (teamLevelFilter) {
+    teamLevelFilter.disabled = historicalYearMode;
+  }
+  if (teamLevelNotice) {
+    teamLevelNotice.textContent = t("overseas.current.teamLevelHistoryNote");
+    teamLevelNotice.hidden = !historicalYearMode;
+  }
   replaceQueryParams({
     country: state.overseasFilters.country,
     bucket: state.overseasFilters.bucket,
+    level: state.overseasFilters.teamLevel,
     year: state.overseasFilters.year
   });
 
@@ -4393,6 +6150,20 @@ function renderOverseasPage() {
           <p class="stat-value">${entry.currentCount}</p>
           <p class="small-note">${escapeHtml(t("overseas.comparison.current"))}</p>
           <p class="small-note">${escapeHtml(t("overseas.comparison.history", { count: entry.verifiedRecords }))}</p>
+          <div class="stat-breakdown">
+            <p class="stat-breakdown-item">
+              <span>${escapeHtml(formatBucket("big-five"))}</span>
+              <strong>${entry.bigFiveFirstTeamCount}</strong>
+            </p>
+            ${OVERSEAS_TEAM_LEVEL_SUMMARY_ORDER.map(
+              (teamLevel) => `
+                <p class="stat-breakdown-item">
+                  <span>${escapeHtml(formatOverseasTeamLevel(teamLevel))}</span>
+                  <strong>${entry.teamLevelCounts[teamLevel]}</strong>
+                </p>
+              `
+            ).join("")}
+          </div>
         </article>
       `
     )
@@ -4437,6 +6208,26 @@ function renderOverseasPage() {
           <h3>${escapeHtml(formatCountryName(selectedCountry.country))}</h3>
           <p class="small-note">${escapeHtml(localizeText(selectedCountry.notes, t("overseas.countryNotes.noNote")))}</p>
         </article>
+        ${
+          selectedCountry.overseasStatusCounts
+            ? `
+              <article class="stack-card">
+                <h3>${escapeHtml(t("overseas.status.title"))}</h3>
+                <div class="stat-breakdown">
+                  ${OVERSEAS_STATUS_ORDER.map(
+                    (status) => `
+                      <p class="stat-breakdown-item">
+                        <span>${escapeHtml(formatOverseasStatus(status))}</span>
+                        <strong>${selectedCountry.overseasStatusCounts[status] ?? 0}</strong>
+                      </p>
+                    `
+                  ).join("")}
+                </div>
+                <p class="small-note">${escapeHtml(t("overseas.status.note"))}</p>
+              </article>
+            `
+            : ""
+        }
         ${(selectedCountry.bucketFocus ?? [])
           .map(
             (note) => `

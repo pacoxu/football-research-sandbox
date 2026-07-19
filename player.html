@@ -8,7 +8,7 @@
       name="description"
       content="查看球员青训路径、赛事经历、当前归属、最近贡献与外部资料链接。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260627-asian-coaches" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-youth-systems-u20-market-history" />
   </head>
   <body data-page="player-detail">
     <div class="site-shell">
@@ -23,6 +23,8 @@
             <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
             <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
             <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a href="./lineup.html">排阵容</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">日韩青训体系</a>
           </nav>
           <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
             <span class="header-control-caption" data-i18n="header.language">语言</span>
@@ -43,6 +45,16 @@
         <div id="playerDetailBody" hidden>
           <section class="detail-stats" id="playerDetailStats"></section>
 
+          <section id="playerMarketValueHistorySection" class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="playerDetail.marketHistory.eyebrow">Market Value History</p>
+                <h2 data-i18n="playerDetail.marketHistory.title">身价历史</h2>
+              </div>
+            </div>
+            <div id="playerMarketValueHistory"></div>
+          </section>
+
           <section class="content-panel">
             <div class="section-head">
               <div>
@@ -51,6 +63,16 @@
               </div>
             </div>
             <div id="playerPathwayTimeline" class="timeline-list"></div>
+          </section>
+
+          <section id="playerSourceLayersSection" class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="playerDetail.sources.eyebrow">Source Layers</p>
+                <h2 data-i18n="playerDetail.sources.title">来源层与培养体系</h2>
+              </div>
+            </div>
+            <div id="playerSourceLayers" class="source-layer-groups"></div>
           </section>
 
           <section class="dashboard-grid">
@@ -92,6 +114,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260627-asian-coaches"></script>
+    <script type="module" src="./assets/app.js?v=20260712-issue48-australia-u17"></script>
   </body>
 </html>

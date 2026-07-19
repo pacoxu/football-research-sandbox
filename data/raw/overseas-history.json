@@ -7,6 +7,154 @@
     "asia-other",
     "americas-other"
   ],
+  "market_value_peak_ranking": {
+    "checked_at": "2026-07-12",
+    "provider": "Transfermarkt",
+    "scope": "china-japan-korea-overseas-history-featured-samples",
+    "scope_note": "独立于球员列表筛选的中日韩留洋历史代表样本榜。仅纳入留洋史已建档、已确认 Transfermarkt 个人页且接口返回有效历史估值的球员；不是亚洲球员全量榜。峰值为名义欧元估值，不做通胀或年代校正，早期球员的历史曲线可能覆盖不完整。",
+    "entries": [
+      {
+        "id": "son-heung-min",
+        "name": "Heung-min Son",
+        "local_name": "孙兴慜",
+        "country": "Korea Republic",
+        "overseas_history_record_id": "son-heung-min-big-five-2010",
+        "peak": { "eur": 90000000, "currency": "EUR", "display": "€90m", "date": "2020-12-17", "age": 28, "club": "Tottenham Hotspur" },
+        "current": { "eur": 15000000, "currency": "EUR", "display": "€15m", "date": "2026-06-02" },
+        "transfermarkt": { "player_id": "91845", "profile_url": "https://www.transfermarkt.com/heung-min-son/profil/spieler/91845", "market_value_url": "https://www.transfermarkt.com/heung-min-son/marktwertverlauf/spieler/91845", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/91845/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "takefusa-kubo",
+        "name": "Takefusa Kubo",
+        "local_name": "久保建英",
+        "country": "Japan",
+        "overseas_history_record_id": "takefusa-kubo-real-sociedad-2025",
+        "peak": { "eur": 60000000, "currency": "EUR", "display": "€60m", "date": "2023-12-22", "age": 22, "club": "Real Sociedad" },
+        "current": { "eur": 20000000, "currency": "EUR", "display": "€20m", "date": "2026-06-05" },
+        "transfermarkt": { "player_id": "405398", "profile_url": "https://www.transfermarkt.com/takefusa-kubo/profil/spieler/405398", "market_value_url": "https://www.transfermarkt.com/takefusa-kubo/marktwertverlauf/spieler/405398", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/405398/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "kim-min-jae",
+        "name": "Min-jae Kim",
+        "local_name": "金玟哉",
+        "country": "Korea Republic",
+        "overseas_history_record_id": "kim-min-jae-napoli-2022",
+        "peak": { "eur": 60000000, "currency": "EUR", "display": "€60m", "date": "2023-06-15", "age": 26, "club": "Napoli" },
+        "current": { "eur": 20000000, "currency": "EUR", "display": "€20m", "date": "2026-05-27" },
+        "transfermarkt": { "player_id": "503482", "profile_url": "https://www.transfermarkt.com/min-jae-kim/profil/spieler/503482", "market_value_url": "https://www.transfermarkt.com/min-jae-kim/marktwertverlauf/spieler/503482", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/503482/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "kaoru-mitoma",
+        "name": "Kaoru Mitoma",
+        "local_name": "三笘薰",
+        "country": "Japan",
+        "overseas_history_record_id": "kaoru-mitoma-brighton-2025",
+        "peak": { "eur": 50000000, "currency": "EUR", "display": "€50m", "date": "2023-10-09", "age": 26, "club": "Brighton & Hove Albion" },
+        "current": { "eur": 22000000, "currency": "EUR", "display": "€22m", "date": "2026-06-03" },
+        "transfermarkt": { "player_id": "504849", "profile_url": "https://www.transfermarkt.com/kaoru-mitoma/profil/spieler/504849", "market_value_url": "https://www.transfermarkt.com/kaoru-mitoma/marktwertverlauf/spieler/504849", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/504849/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "takehiro-tomiyasu",
+        "name": "Takehiro Tomiyasu",
+        "local_name": "富安健洋",
+        "country": "Japan",
+        "overseas_history_record_id": "takehiro-tomiyasu-big-five-2019",
+        "peak": { "eur": 35000000, "currency": "EUR", "display": "€35m", "date": "2024-05-27", "age": 25, "club": "Arsenal" },
+        "current": { "eur": 5000000, "currency": "EUR", "display": "€5m", "date": "2026-05-28" },
+        "transfermarkt": { "player_id": "331560", "profile_url": "https://www.transfermarkt.com/takehiro-tomiyasu/profil/spieler/331560", "market_value_url": "https://www.transfermarkt.com/takehiro-tomiyasu/marktwertverlauf/spieler/331560", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/331560/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "daichi-kamada",
+        "name": "Daichi Kamada",
+        "local_name": "镰田大地",
+        "country": "Japan",
+        "overseas_history_record_id": "daichi-kamada-crystal-palace-2025",
+        "peak": { "eur": 30000000, "currency": "EUR", "display": "€30m", "date": "2022-11-09", "age": 26, "club": "Eintracht Frankfurt" },
+        "current": { "eur": 10000000, "currency": "EUR", "display": "€10m", "date": "2026-06-03" },
+        "transfermarkt": { "player_id": "356141", "profile_url": "https://www.transfermarkt.com/daichi-kamada/profil/spieler/356141", "market_value_url": "https://www.transfermarkt.com/daichi-kamada/marktwertverlauf/spieler/356141", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/356141/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "hiroki-ito",
+        "name": "Hiroki Ito",
+        "local_name": "伊藤洋辉",
+        "country": "Japan",
+        "overseas_history_record_id": "hiroki-ito-bayern-2025",
+        "peak": { "eur": 30000000, "currency": "EUR", "display": "€30m", "date": "2024-05-29", "age": 25, "club": "VfB Stuttgart" },
+        "current": { "eur": 18000000, "currency": "EUR", "display": "€18m", "date": "2026-05-27" },
+        "transfermarkt": { "player_id": "353892", "profile_url": "https://www.transfermarkt.com/hiroki-ito/profil/spieler/353892", "market_value_url": "https://www.transfermarkt.com/hiroki-ito/marktwertverlauf/spieler/353892", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/353892/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "lee-kang-in",
+        "name": "Kang-in Lee",
+        "local_name": "李刚仁",
+        "country": "Korea Republic",
+        "overseas_history_record_id": "lee-kang-in-psg-2025",
+        "peak": { "eur": 30000000, "currency": "EUR", "display": "€30m", "date": "2024-12-10", "age": 23, "club": "Paris Saint-Germain" },
+        "current": { "eur": 28000000, "currency": "EUR", "display": "€28m", "date": "2026-06-01" },
+        "transfermarkt": { "player_id": "557149", "profile_url": "https://www.transfermarkt.com/kang-in-lee/profil/spieler/557149", "market_value_url": "https://www.transfermarkt.com/kang-in-lee/marktwertverlauf/spieler/557149", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/557149/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "hwang-hee-chan",
+        "name": "Hee-chan Hwang",
+        "local_name": "黄喜灿",
+        "country": "Korea Republic",
+        "overseas_history_record_id": "hwang-hee-chan-big-five-2017",
+        "peak": { "eur": 25000000, "currency": "EUR", "display": "€25m", "date": "2024-03-14", "age": 28, "club": "Wolverhampton Wanderers" },
+        "current": { "eur": 6000000, "currency": "EUR", "display": "€6m", "date": "2026-06-03" },
+        "transfermarkt": { "player_id": "292246", "profile_url": "https://www.transfermarkt.com/hee-chan-hwang/profil/spieler/292246", "market_value_url": "https://www.transfermarkt.com/hee-chan-hwang/marktwertverlauf/spieler/292246", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/292246/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "shinji-kagawa",
+        "name": "Shinji Kagawa",
+        "local_name": "香川真司",
+        "country": "Japan",
+        "overseas_history_record_id": "shinji-kagawa-dortmund-2010",
+        "peak": { "eur": 22000000, "currency": "EUR", "display": "€22m", "date": "2012-06-29", "age": 23, "club": "Borussia Dortmund" },
+        "current": { "eur": 150000, "currency": "EUR", "display": "€150k", "date": "2026-06-03" },
+        "transfermarkt": { "player_id": "81785", "profile_url": "https://www.transfermarkt.com/shinji-kagawa/profil/spieler/81785", "market_value_url": "https://www.transfermarkt.com/shinji-kagawa/marktwertverlauf/spieler/81785", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/81785/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "keisuke-honda",
+        "name": "Keisuke Honda",
+        "local_name": "本田圭佑",
+        "country": "Japan",
+        "overseas_history_record_id": "keisuke-honda-serie-a-2014",
+        "peak": { "eur": 20000000, "currency": "EUR", "display": "€20m", "date": "2013-01-15", "age": 26, "club": "CSKA Moscow" },
+        "retired": true,
+        "transfermarkt": { "player_id": "66521", "profile_url": "https://www.transfermarkt.com/keisuke-honda/profil/spieler/66521", "market_value_url": "https://www.transfermarkt.com/keisuke-honda/marktwertverlauf/spieler/66521", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/66521/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "takumi-minamino",
+        "name": "Takumi Minamino",
+        "local_name": "南野拓实",
+        "country": "Japan",
+        "overseas_history_record_id": "takumi-minamino-big-five-2019",
+        "peak": { "eur": 20000000, "currency": "EUR", "display": "€20m", "date": "2024-06-03", "age": 29, "club": "Monaco" },
+        "current": { "eur": 10000000, "currency": "EUR", "display": "€10m", "date": "2026-06-01" },
+        "transfermarkt": { "player_id": "165793", "profile_url": "https://www.transfermarkt.com/takumi-minamino/profil/spieler/165793", "market_value_url": "https://www.transfermarkt.com/takumi-minamino/marktwertverlauf/spieler/165793", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/165793/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "park-ji-sung",
+        "name": "Ji-sung Park",
+        "local_name": "朴智星",
+        "country": "Korea Republic",
+        "overseas_history_record_id": "park-ji-sung-premier-league-2005",
+        "peak": { "eur": 12500000, "currency": "EUR", "display": "€12.5m", "date": "2009-06-29", "age": 28, "club": "Manchester United" },
+        "retired": true,
+        "transfermarkt": { "player_id": "4592", "profile_url": "https://www.transfermarkt.com/ji-sung-park/profil/spieler/4592", "market_value_url": "https://www.transfermarkt.com/ji-sung-park/marktwertverlauf/spieler/4592", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/4592/market-value-history?_x_preferred_context=com" }
+      },
+      {
+        "id": "wu-lei",
+        "name": "Wu Lei",
+        "local_name": "武磊",
+        "country": "China PR",
+        "overseas_history_record_id": "wu-lei-espanyol-2019",
+        "peak": { "eur": 10000000, "currency": "EUR", "display": "€10m", "date": "2019-06-11", "age": 27, "club": "Espanyol" },
+        "current": { "eur": 250000, "currency": "EUR", "display": "€250k", "date": "2026-06-08" },
+        "transfermarkt": { "player_id": "140436", "profile_url": "https://www.transfermarkt.com/wu-lei/profil/spieler/140436", "market_value_url": "https://www.transfermarkt.com/wu-lei/marktwertverlauf/spieler/140436", "api_url": "https://tmapi-alpha.transfermarkt.technology/player/140436/market-value-history?_x_preferred_context=com" }
+      }
+    ]
+  },
   "countries": [
     {
       "country": "China PR",
@@ -40,9 +188,10 @@
         "Wang Bohao",
         "Wan Xiang",
         "Jin Yucheng",
-        "Wang Xiuhao"
+        "Wang Xiuhao",
+        "Wei Xiangxin"
       ],
-      "notes": "中国留洋条目已从单一历史个案扩到“早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的四层结构；除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。魏祥鑫这类已签约但生效日在未来的个案，先按“待生效 / 未来留洋观察”处理，不提前并入当前海外注册。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
+      "notes": "中国留洋条目已从单一历史个案扩到“早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的四层结构；除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
       "special_lists": [
         {
           "id": "jianlibao-brazil-1993-1998",

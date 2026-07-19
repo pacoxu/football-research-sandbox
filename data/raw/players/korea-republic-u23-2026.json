@@ -11,14 +11,27 @@
     "weight_kg": 82,
     "registration_club": {
       "name": "Gimcheon Sangmu",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "military-service-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gimcheon Sangmu",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "military-service-club",
+        "competition_context_ids": [
+          "korea-military-service-pathway"
+        ]
+      },
+      {
+        "stage_label": "2025/26 留洋资料节点",
+        "organization": "Portimonense SC",
+        "country": "Portugal",
+        "note": "Portimonense 官方球员页作为海外资料节点保留；与 AFC 报名表的 Gimcheon Sangmu 归属分层记录，后续需复核是否为同名或注册时点差异。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -54,12 +67,53 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/hyeon-ho-moon/profil/spieler/909853"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Moon Hyunho in the Korea Republic u23 squad and records Gimcheon Sangmu as the tournament registration organization."
+      },
+      {
+        "type": "club-profile",
+        "label": "Gimcheon Sangmu official site",
+        "url": "https://www.gimcheonfc.com/",
+        "checked_at": "2026-06-28",
+        "confidence": "low",
+        "fields": [
+          "training_pathway"
+        ],
+        "claim": "Gimcheon Sangmu official site is retained as the organization-level military club layer; an individual player page still needs to be captured."
+      },
+      {
+        "type": "club-profile",
+        "label": "Portimonense official profile",
+        "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312",
+        "checked_at": "2026-06-28",
+        "confidence": "medium",
+        "fields": [
+          "training_pathway"
+        ],
+        "claim": "Portimonense profile is kept as a separate overseas pathway node because it does not match the AFC Gimcheon registration club field."
       }
     ],
     "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-23",
-      "notes": "AFC 于 2025-12-30 发布的 final registration 可核其 U23 报名身份；Portimonense 官方 2025/26 一线队球员页仍将其列在队内，因此当前继续按葡萄牙职业体系中的韩国 U23 留洋样本处理。"
+      "status": "mixed-source",
+      "last_checked": "2026-06-28",
+      "notes": "AFC final registration 将 Moon Hyunho 的赛事报名归属列为 Gimcheon Sangmu；Portimonense 官方球员页作为海外资料节点保留。两者不直接互相覆盖，后续需复核是否为同名、注册时点差异或来源误配。"
     }
   },
   {
@@ -74,14 +128,17 @@
     "weight_kg": 61,
     "registration_club": {
       "name": "Pohang Steelers",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Pohang Steelers",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -110,13 +167,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/min-jun-kang/profil/spieler/709161"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kang Minjun in the Korea Republic u23 squad and records Pohang Steelers as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-bae-hyunseo-2005",
@@ -130,14 +206,17 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "Gyeongnam FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Gyeongnam FC",
         "country": "Korea Republic",
-        "note": "K League 当前球员页在 2026 赛季仍将其列为庆南 FC 后卫。"
+        "note": "K League 当前球员页在 2026 赛季仍将其列为庆南 FC 后卫。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -179,6 +258,40 @@
         "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/hyun-seo-bae/profil/spieler/875551"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Bae Hyunseo in the Korea Republic u21 squad and records Gyeongnam FC as the tournament registration organization."
+      },
+      {
+        "type": "league-registration",
+        "label": "K League profile",
+        "url": "https://www.kleague.com/record/playerDetail.do?playerId=20240215",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "birth_date",
+          "height_cm",
+          "weight_kg",
+          "training_pathway"
+        ],
+        "claim": "K League profile confirms current Gyeongnam FC registration and basic profile fields for Bae Hyunseo."
       }
     ],
     "verification": {
@@ -199,14 +312,17 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Gangwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gangwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -235,13 +351,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/hyun-tae-jo/profil/spieler/822126"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jo Hyuntae in the Korea Republic u23 squad and records Gangwon FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-lee-hyunyong-2003",
@@ -255,14 +390,17 @@
     "weight_kg": 87,
     "registration_club": {
       "name": "Suwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -291,13 +429,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/hyeon-yong-lee/profil/spieler/1106944"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Lee Hyunyong in the Korea Republic u23 squad and records Suwon FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-lee-chanouk-2003",
@@ -311,14 +468,19 @@
     "weight_kg": 79,
     "registration_club": {
       "name": "Gimcheon Sangmu",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "military-service-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gimcheon Sangmu",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "military-service-club",
+        "competition_context_ids": [
+          "korea-military-service-pathway"
+        ]
       }
     ],
     "focus_tags": [
@@ -347,6 +509,31 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Lee Chanouk in the Korea Republic u23 squad and records Gimcheon Sangmu as the tournament registration organization."
+      },
+      {
+        "type": "club-profile",
+        "label": "Gimcheon Sangmu official site",
+        "url": "https://www.gimcheonfc.com/",
+        "checked_at": "2026-06-28",
+        "confidence": "low",
+        "fields": [
+          "training_pathway"
+        ],
+        "claim": "Gimcheon Sangmu official site is retained as the organization-level military club layer; an individual player page still needs to be captured."
       }
     ],
     "verification": {
@@ -367,14 +554,17 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Suwon Samsung Bluewings",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -403,13 +593,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/seong-jin-kang/profil/spieler/709170"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kang Seongjin in the Korea Republic u23 squad and records Suwon Samsung Bluewings as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-kim-dongjin-2003",
@@ -423,14 +632,17 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Pohang Steelers",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Pohang Steelers",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -459,13 +671,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/dong-jin-kim/profil/spieler/904068"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Dongjin in the Korea Republic u23 squad and records Pohang Steelers as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-kim-taewon-2005",
@@ -479,14 +710,17 @@
     "weight_kg": 76,
     "registration_club": {
       "name": "Kataller Toyama",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Kataller Toyama",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 将其列为富山胜利当前注册前锋。"
+        "note": "J.League 当前球员页在 2026-05-22 将其列为富山胜利当前注册前锋。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -534,6 +768,51 @@
         "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/tae-won-kim/profil/spieler/1223583"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Taewon in the Korea Republic u21 squad and records Kataller Toyama as the tournament registration organization."
+      },
+      {
+        "type": "league-registration",
+        "label": "J.League profile",
+        "url": "https://www.jleague.jp/player/1651218/",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "birth_date",
+          "height_cm",
+          "weight_kg",
+          "training_pathway"
+        ],
+        "claim": "J.League player profile confirms current Kataller Toyama registration and basic profile fields for Kim Taewon."
+      },
+      {
+        "type": "league-registration",
+        "label": "J.League transfer announcement",
+        "url": "https://www.jleague.jp/news/article/32994/",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "training_pathway"
+        ],
+        "claim": "J.League transfer announcement supports the Japan-based overseas pathway layer for this Korea Republic U23 sample."
       }
     ],
     "verification": {
@@ -554,14 +833,17 @@
     "weight_kg": 62,
     "registration_club": {
       "name": "Jeonbuk Hyundai Motors",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Jeonbuk Hyundai Motors",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -590,13 +872,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/sang-yun-kang/profil/spieler/711708"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kang Sangyoon in the Korea Republic u23 squad and records Jeonbuk Hyundai Motors as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-joung-jihun-2004",
@@ -610,14 +911,17 @@
     "weight_kg": 60,
     "registration_club": {
       "name": "Gwangju FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gwangju FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -646,13 +950,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/ji-hun-joung/profil/spieler/1106934"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Joung Jihun in the Korea Republic u23 squad and records Gwangju FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-hwang-jaeyun-2003",
@@ -666,14 +989,17 @@
     "weight_kg": 83,
     "registration_club": {
       "name": "Suwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -702,13 +1028,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jae-yun-hwang/profil/spieler/1227027"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hwang Jaeyun in the Korea Republic u23 squad and records Suwon FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-kim-dohyun-2004",
@@ -722,14 +1067,17 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Gangwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gangwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -758,13 +1106,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/do-hyun-kim/profil/spieler/709769"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Dohyun in the Korea Republic u23 squad and records Gangwon FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-jung-seungbae-2003",
@@ -778,14 +1145,17 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Suwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -814,13 +1184,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/seung-bae-jung/profil/spieler/1053173"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jung Seungbae in the Korea Republic u23 squad and records Suwon FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-baek-gaon-2006",
@@ -834,14 +1223,17 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Busan IPark",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Busan IPark",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -870,13 +1262,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/ga-on-baek/profil/spieler/1162558"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Baek Gaon in the Korea Republic u23 squad and records Busan IPark as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-kim-hanseo-2003",
@@ -890,14 +1301,17 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Yongin FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Yongin FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -926,13 +1340,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/han-seo-kim/profil/spieler/921782"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Hanseo in the Korea Republic u23 squad and records Yongin FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-kim-yonghak-2003",
@@ -946,14 +1379,17 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Portimonense SC",
-      "country": "Portugal"
+      "country": "Portugal",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Portimonense SC",
         "country": "Portugal",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -989,6 +1425,37 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yong-hak-kim/profil/spieler/706960"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kim Yonghak in the Korea Republic u23 squad and records Portimonense SC as the tournament registration organization."
+      },
+      {
+        "type": "club-profile",
+        "label": "Portimonense official profile",
+        "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "training_pathway"
+        ],
+        "claim": "Portimonense official profile supports the Portugal-based overseas club layer for Kim Yonghak."
       }
     ],
     "verification": {
@@ -1009,14 +1476,17 @@
     "weight_kg": 84,
     "registration_club": {
       "name": "Daegu FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Daegu FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1045,13 +1515,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jae-sang-jeong/profil/spieler/1073573"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jeong Jaesang in the Korea Republic u23 squad and records Daegu FC as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-lee-geonhee-2005",
@@ -1065,14 +1554,17 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Suwon Samsung Bluewings",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1101,13 +1593,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/geon-hee-lee/profil/spieler/925084"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Lee Geonhee in the Korea Republic u23 squad and records Suwon Samsung Bluewings as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-park-seonghoon-2003",
@@ -1121,14 +1632,17 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "FC Seoul",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Seoul",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1157,13 +1671,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/seong-hun-park/profil/spieler/709159"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Park Seonghoon in the Korea Republic u23 squad and records FC Seoul as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-hong-seongmin-2006",
@@ -1177,14 +1710,17 @@
     "weight_kg": 88,
     "registration_club": {
       "name": "Pohang Steelers",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Pohang Steelers",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1213,13 +1749,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/sung-min-hong/profil/spieler/1004333"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hong Seongmin in the Korea Republic u23 squad and records Pohang Steelers as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-jang-seokhwan-2004",
@@ -1233,14 +1788,17 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Suwon Samsung Bluewings",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Suwon Samsung Bluewings",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1269,13 +1827,32 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/seok-hwan-jang/profil/spieler/711706"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Jang Seokhwan in the Korea Republic u23 squad and records Suwon Samsung Bluewings as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "kr-shin-minha-2005",
@@ -1289,14 +1866,17 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Gangwon FC",
-      "country": "Korea Republic"
+      "country": "Korea Republic",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gangwon FC",
         "country": "Korea Republic",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1325,12 +1905,31 @@
         "type": "official",
         "label": "AFC third-place report: Vietnam beat Korea Republic on penalties",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/vietnam-edge-korea-republic-on-penalties-to-finish-third"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/min-ha-shin/profil/spieler/1227015"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Shin Minha in the Korea Republic u23 squad and records Gangwon FC as the tournament registration organization."
+      }
+    ]
   }
 ]

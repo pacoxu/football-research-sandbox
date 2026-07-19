@@ -1,16 +1,5 @@
 import { ensureDirectory, loadDataset, paths, writeJson } from "./lib/data-loader.mjs";
-
-function normalizeCountry(value) {
-  const normalized = String(value ?? "").trim().toLowerCase();
-  const aliases = {
-    "china pr": "china",
-    "people's republic of china": "china",
-    "korea republic": "south korea",
-    "republic of korea": "south korea"
-  };
-
-  return aliases[normalized] ?? normalized;
-}
+import { countOverseasStatuses, normalizeCountry } from "./lib/overseas-status.mjs";
 
 function isForeignRegistration(player) {
   return (
@@ -30,7 +19,7 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData() {
   const dataset = await loadDataset();
-  const generatedAt = "2026-06-27";
+  const generatedAt = "2026-07-18";
   const players = [...dataset.players].sort(comparePlayers);
 
   const overview = {
@@ -38,15 +27,20 @@ export async function buildSiteData() {
     stats: {
       player_count: players.length,
       country_count: new Set(players.map((player) => player.country)).size,
-      foreign_registration_count: players.filter(isForeignRegistration).length
+      foreign_registration_count: players.filter(isForeignRegistration).length,
+      china_overseas_status_counts: countOverseasStatuses(players)
     },
     tournaments: dataset.tournaments,
     projects: dataset.projects,
     overseas_history: dataset.overseasHistory,
     dossiers: dataset.dossiers,
     tournament_archive: dataset.tournamentArchive,
+    uefa_youth_league: dataset.uefaYouthLeague,
     china_men_youth_coaches: dataset.chinaMenYouthCoaches,
+    china_youth_development_coaches: dataset.chinaYouthDevelopmentCoaches,
     big_five_asian_coaches: dataset.bigFiveAsianCoaches,
+    asian_coaches: dataset.asianCoaches,
+    youth_development_systems: dataset.youthDevelopmentSystems,
     club_name_overrides: dataset.clubNameOverrides
   };
 

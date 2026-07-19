@@ -11,14 +11,17 @@
     "weight_kg": 87,
     "registration_club": {
       "name": "FC Tokyo",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "FC Tokyo",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 仍将其列为 FC 东京一线队 GK。"
+        "note": "J.League 当前球员页在 2026-05-22 仍将其列为 FC 东京一线队 GK。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       },
       {
         "stage_label": "2026 国字号节点",
@@ -76,6 +79,64 @@
         "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/masataka-kobayashi/profil/spieler/925384"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Masataka Kobayashi in the Japan u21 squad and records FC Tokyo as the tournament registration organization."
+      },
+      {
+        "type": "league-registration",
+        "label": "J.League profile",
+        "url": "https://www.jleague.jp/player/1636506/",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "birth_date",
+          "height_cm",
+          "weight_kg",
+          "training_pathway"
+        ],
+        "claim": "J.League player profile confirms current FC Tokyo registration and basic profile fields for Masataka Kobayashi."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U-21 Korea trip squad",
+        "url": "https://www.jfa.jp/national_team/u21_2026/20260329/news/00036144/",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "training_pathway"
+        ],
+        "claim": "JFA squad announcement confirms the national-team pathway node for the 2026 U-21 Korea trip sample."
+      },
+      {
+        "type": "club-academy-profile",
+        "label": "FC Tokyo U-23 call-up announcement",
+        "url": "https://www.fctokyo.co.jp/en/news/18181",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "training_pathway"
+        ],
+        "claim": "FC Tokyo announcement provides a club source for the U-23 call-up context without replacing the current J.League registration field."
       }
     ],
     "verification": {
@@ -96,14 +157,17 @@
     "weight_kg": 64,
     "registration_club": {
       "name": "FC Imabari",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Imabari",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -132,13 +196,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/rei-umeki/profil/spieler/1122578"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rei Umeki in the Japan u23 squad and records FC Imabari as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-kaito-tsuchiya-2006",
@@ -152,14 +235,17 @@
     "weight_kg": 74,
     "registration_club": {
       "name": "Fukushima United FC",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Fukushima United FC",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 将其列为福岛联当前注册后卫。"
+        "note": "J.League 当前球员页在 2026-05-22 将其列为福岛联当前注册后卫。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       },
       {
         "stage_label": "2026 国字号节点",
@@ -212,6 +298,52 @@
         "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kaito-tsuchiya/profil/spieler/1024928"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kaito Tsuchiya in the Japan u21 squad and records Fukushima United FC as the tournament registration organization."
+      },
+      {
+        "type": "league-registration",
+        "label": "J.League profile",
+        "url": "https://www.jleague.jp/player/1643995/",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "birth_date",
+          "height_cm",
+          "weight_kg",
+          "training_pathway"
+        ],
+        "claim": "J.League player profile confirms current Fukushima United registration and basic profile fields for Kaito Tsuchiya."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U-21 Korea trip squad",
+        "url": "https://www.jfa.jp/national_team/u21_2026/20260329/news/00036144/",
+        "checked_at": "2026-06-28",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "training_pathway"
+        ],
+        "claim": "JFA squad announcement confirms the national-team pathway node for the 2026 U-21 Korea trip sample."
       }
     ],
     "verification": {
@@ -232,14 +364,17 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Gainare Tottori",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gainare Tottori",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -268,13 +403,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shuto-nagano/profil/spieler/1024946"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Shuto Nagano in the Japan u23 squad and records Gainare Tottori as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-rion-ichihara-2005",
@@ -288,14 +442,17 @@
     "weight_kg": 81,
     "registration_club": {
       "name": "RB Omiya Ardija",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "RB Omiya Ardija",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -324,13 +481,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/rion-ichihara/profil/spieler/936294"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rion Ichihara in the Japan u23 squad and records RB Omiya Ardija as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-kosei-ogura-2005",
@@ -344,14 +520,19 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Hosei University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Hosei University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -380,6 +561,37 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kosei-ogura/profil/spieler/909977"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kosei Ogura in the Japan u23 squad and records Hosei University as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U21 Europe tour squad",
+        "url": "https://www.jfa.jp/eng/national_team/u21_2026/news/00036377/",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "JFA's official U21 squad independently lists Kosei Ogura with Hosei University."
       }
     ],
     "verification": {
@@ -400,14 +612,17 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Cerezo Osaka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Cerezo Osaka",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -436,13 +651,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/nelson-ishiwatari/profil/spieler/915026"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Nelson Ishiwatari in the Japan u23 squad and records Cerezo Osaka as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-yuto-ozeki-2005",
@@ -456,14 +690,17 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Kawasaki Frontale",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kawasaki Frontale",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -492,13 +729,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yuto-ozeki/profil/spieler/908661"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yuto Ozeki in the Japan u23 squad and records Kawasaki Frontale as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-uche-brian-seo-nwadike-2005",
@@ -512,14 +768,19 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Toin Yokohama University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Toin Yokohama University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -548,13 +809,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/uche-brian-seo-nwadike/profil/spieler/1253156"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Uche Brian Seo Nwadike in the Japan u23 squad and records Toin Yokohama University as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-ryunosuke-sato-2006",
@@ -568,14 +848,17 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "FC Tokyo",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "FC Tokyo",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 将其列为 FC 东京一线队中场。"
+        "note": "J.League 当前球员页在 2026-05-22 将其列为 FC 东京一线队中场。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       },
       {
         "stage_label": "2026 国字号节点",
@@ -628,13 +911,32 @@
         "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/ryunosuke-sato/profil/spieler/948169"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "当前 FC 东京注册信息来自 J.League 最新球员页，U-23 节点由 FC 东京公告与 AFC 报名表交叉确认。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ryunosuke Sato in the Japan u21 squad and records FC Tokyo as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-yumeki-yokoyama-2005",
@@ -648,14 +950,17 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Cerezo Osaka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Cerezo Osaka",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -684,13 +989,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yumeki-yokoyama/profil/spieler/1122580"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yumeki Yokoyama in the Japan u23 squad and records Cerezo Osaka as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-tomoyasu-hamasaki-2005",
@@ -704,14 +1028,19 @@
     "weight_kg": 80,
     "registration_club": {
       "name": "Meiji University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Meiji University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -740,13 +1069,44 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/tomoyasu-hamasaki/profil/spieler/910275"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tomoyasu Hamasaki in the Japan u23 squad and records Meiji University as the tournament registration organization."
+      },
+      {
+        "type": "university-profile",
+        "label": "Meiji University football club player profile",
+        "url": "https://meidaisoccer.jp/2024/04/01/%E6%BF%B1%EF%A8%91%E7%9F%A5%E5%BA%B7/",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "registration_club",
+          "training_pathway"
+        ],
+        "claim": "Meiji University football club's official player page independently confirms Tomoyasu Hamasaki as a university-team player."
+      }
+    ]
   },
   {
     "id": "jp-sena-ishibashi-2006",
@@ -760,14 +1120,17 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Shonan Bellmare",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shonan Bellmare",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -796,13 +1159,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/sena-ishibashi/profil/spieler/1286160"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Sena Ishibashi in the Japan u23 squad and records Shonan Bellmare as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-tokumo-kawai-2007",
@@ -816,14 +1198,17 @@
     "weight_kg": 65,
     "registration_club": {
       "name": "Jubilo Iwata",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 职业体系节点",
         "organization": "Jubilo Iwata",
         "country": "Japan",
-        "note": "J.League 当前球员页在 2026-05-22 仍将其列为磐田一线队中场。"
+        "note": "J.League 当前球员页在 2026-05-22 仍将其列为磐田一线队中场。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -865,13 +1250,32 @@
         "type": "official",
         "label": "AFC U23 2026 final registration",
         "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/tokumo-kawai/profil/spieler/916786"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "当前俱乐部、生日和体格来自 J.League 官方球员页；AFC 报名表继续保留其 U23 冠军名单背景。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tokumo Kawai in the Japan u21 squad and records Jubilo Iwata as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-soichiro-mori-2007",
@@ -885,14 +1289,17 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Nagoya Grampus",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Nagoya Grampus",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -921,13 +1328,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/soichiro-mori/profil/spieler/1131911"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Soichiro Mori in the Japan u23 squad and records Nagoya Grampus as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-kaito-koizumi-2005",
@@ -941,14 +1367,19 @@
     "weight_kg": 80,
     "registration_club": {
       "name": "Meiji University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Meiji University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -977,13 +1408,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kaito-koizumi/profil/spieler/1024124"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kaito Koizumi in the Japan u23 squad and records Meiji University as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-yudai-shimamoto-2006",
@@ -997,14 +1447,17 @@
     "weight_kg": 69,
     "registration_club": {
       "name": "Shimizu S-Pulse",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shimizu S-Pulse",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1033,13 +1486,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yudai-shimamoto/profil/spieler/1025001"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yudai Shimamoto in the Japan u23 squad and records Shimizu S-Pulse as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-haruta-kume-2005",
@@ -1053,14 +1525,19 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Waseda University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Waseda University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -1089,13 +1566,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/haruta-kume/profil/spieler/1495698"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Haruta Kume in the Japan u23 squad and records Waseda University as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-yutaka-michiwaki-2006",
@@ -1109,7 +1605,8 @@
     "weight_kg": 78,
     "registration_club": {
       "name": "Avispa Fukuoka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
@@ -1122,7 +1619,9 @@
         "stage_label": "2026 J1 当前注册节点",
         "organization": "Avispa Fukuoka",
         "country": "Japan",
-        "note": "Avispa Fukuoka 2026 赛季官方球员页与 J.League 当前球员页，都已将其列为福冈现役前锋；SK Beveren 也在 2026-01-11 公告确认其离队。"
+        "note": "Avispa Fukuoka 2026 赛季官方球员页与 J.League 当前球员页，都已将其列为福冈现役前锋；SK Beveren 也在 2026-01-11 公告确认其离队。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1167,13 +1666,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yutaka-michiwaki/profil/spieler/914195"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-23",
       "notes": "AFC 于 2025-12-30 发布的 final registration 可核其在 U23 亚洲杯时仍属 SK Beveren；但 Avispa Fukuoka 官方 2026 球员页、J.League 当前球员页和 SK Beveren 2026-01-11 离队公告，都说明他已在 2026 年 1 月回到日本职业体系，因此当前不再计作留洋样本。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yutaka Michiwaki in the Japan u23 squad and records Avispa Fukuoka as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-shusuke-furuya-2005",
@@ -1187,14 +1705,19 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Tokyo International University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Tokyo International University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -1223,13 +1746,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shusuke-furuya/profil/spieler/1411562"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Shusuke Furuya in the Japan u23 squad and records Tokyo International University as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-kanta-sekitomi-2005",
@@ -1243,14 +1785,19 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Toin Yokohama University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Toin Yokohama University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -1279,13 +1826,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kanta-sekitomi/profil/spieler/1024926"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kanta Sekitomi in the Japan u23 squad and records Toin Yokohama University as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-tariqkanihayato-okabe-2006",
@@ -1299,14 +1865,19 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Toyo University",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "university"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Toyo University",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "university",
+        "competition_context_ids": [
+          "japan-university-regional-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -1335,13 +1906,32 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/tariqkani-hayato-okabe/profil/spieler/1080735"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tariqkanihayato Okabe in the Japan u23 squad and records Toyo University as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-rui-araki-2007",
@@ -1355,14 +1945,17 @@
     "weight_kg": 85,
     "registration_club": {
       "name": "Gamba Osaka",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Gamba Osaka",
         "country": "Japan",
-        "note": "AFC U23 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U23 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -1391,12 +1984,31 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/rui-araki/profil/spieler/1052339"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U23 2026 final registration",
+        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rui Araki in the Japan u23 squad and records Gamba Osaka as the tournament registration organization."
+      }
+    ]
   }
 ]

@@ -1,0 +1,42 @@
+name: validate-data
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-data-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25
+
+      - name: Check front-end JavaScript
+        run: node --check assets/app.js
+
+      - name: Validate source data
+        run: npm run validate-data
+
+      - name: Run tests
+        run: npm test
+
+      - name: Verify generated site data
+        run: |
+          npm run build-data
+          git diff --exit-code -- data/site

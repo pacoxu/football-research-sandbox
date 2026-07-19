@@ -1,5 +1,115 @@
 [
   {
+    "id": "afc-u20-2027",
+    "name": "AFC U20 Asian Cup China PR 2027",
+    "short_name": "AFC U20 2027",
+    "focus_level": "primary",
+    "status": "upcoming",
+    "last_checked": "2026-07-12",
+    "date_range": {
+      "start": null,
+      "end": null
+    },
+    "date_precision": "tbc",
+    "focus_teams": [
+      "China PR",
+      "Japan",
+      "Korea Republic",
+      "Australia"
+    ],
+    "headline": "中国已确定主办 2027 U20 亚洲杯；决赛圈日期、其余参赛队和分组待官方公布。",
+    "notes": [
+      "AFC 于 2025-12-04 确认中国连续第二届承办 U20 亚洲杯。",
+      "截至 2026-07-12，44 支球队的资格赛抽签已经完成，资格阶段与发展阶段分开进行。",
+      "资格赛定于 2026-08-25 至 2026-09-06 期间举行；决赛圈分组尚未抽签。"
+    ],
+    "sources": [
+      {
+        "label": "AFC appoints China PR as 2027 host",
+        "publisher": "AFC",
+        "url": "https://www.the-afc.com/en/about_afc/committees.html/news/china-pr-to-host-afc-u20-asian-cup-2027%E2%84%A2"
+      },
+      {
+        "label": "AFC U20 2027 qualifiers draw and schedule",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2027_AFC_U20_Asian_Cup/Qualifiers/Draw/Encl---Draw-Results-%26-Match-Schedule.pdf"
+      }
+    ]
+  },
+  {
+    "id": "fifa-u20-world-cup-2027",
+    "name": "FIFA U-20 World Cup Azerbaijan/Uzbekistan 2027",
+    "short_name": "U20 World Cup 2027",
+    "focus_level": "reference",
+    "status": "upcoming",
+    "last_checked": "2026-07-12",
+    "date_range": {
+      "start": null,
+      "end": null
+    },
+    "date_precision": "tbc",
+    "focus_teams": [
+      "Azerbaijan",
+      "Uzbekistan"
+    ],
+    "headline": "阿塞拜疆与乌兹别克斯坦已获 2027 世青赛联合主办权；日期、晋级球队和分组待定。",
+    "notes": [
+      "FIFA Council 于 2025-10-02 任命阿塞拜疆和乌兹别克斯坦为联合主办国。",
+      "当前只记录官方确认的主办身份，不推断自动晋级或未公布的决赛圈球队。",
+      "截至 2026-07-12，比赛日期和决赛圈抽签尚未公布。"
+    ],
+    "sources": [
+      {
+        "label": "FIFA Council appoints 2027 co-hosts",
+        "publisher": "FIFA",
+        "url": "https://inside.fifa.com/organisation/fifa-council/media-releases/fifa-council-calls-for-peace-and-takes-key-decisions-on-football-governance"
+      }
+    ]
+  },
+  {
+    "id": "cfa-yinchuan-u17-2026",
+    "name": "2026 CFA Team China Yinchuan International Youth Football Championship",
+    "short_name": "Yinchuan U17 2026",
+    "focus_level": "primary",
+    "status": "ongoing",
+    "last_checked": "2026-07-10",
+    "date_range": {
+      "start": "2026-07-05",
+      "end": "2026-07-11"
+    },
+    "focus_teams": [
+      "China PR",
+      "Australia",
+      "Nigeria",
+      "Tanzania"
+    ],
+    "headline": "中国 U17 在银川国际青年锦标赛前两轮 1 胜 1 负，先后 3 比 0 胜澳大利亚、0 比 2 负坦桑尼亚。",
+    "notes": [
+      "本赛事是中国 U17 备战 2026 年 11 月 FIFA U17 世界杯的国内热身赛窗口。",
+      "中国足协 2026-06-27 第四期集训通知确认，队伍 2026-06-30 至 2026-07-12 在银川集训并参赛。",
+      "2026-07-05 首轮，中国 U17 凭借帅惟浩、赵松源、孙臣曦的进球 3 比 0 击败澳大利亚 U17。",
+      "2026-07-08 次轮，中国 U17 0 比 2 不敌坦桑尼亚 U17，两轮后 1 胜 1 负积 3 分。",
+      "按 2026-07-09 战报，末轮中国 U17 将于 2026-07-11 19:35 对阵尼日利亚 U17。"
+    ],
+    "sources": [
+      {
+        "label": "CFA U17 fourth-camp notice and Yinchuan roster",
+        "publisher": "CFA",
+        "url": "https://www.thecfa.cn/wqmdu17/20260627/37817.html"
+      },
+      {
+        "label": "China U17 3-0 Australia U17 official report",
+        "publisher": "CFA",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260706/37840.html"
+      },
+      {
+        "label": "China U17 0-2 Tanzania U17 official report",
+        "publisher": "CFA",
+        "url": "https://www.thecfa.cn/zhongguozhidui/20260709/37873.html"
+      }
+    ]
+  },
+  {
     "id": "afc-u17-2026",
     "name": "AFC U17 Asian Cup Saudi Arabia 2026",
     "short_name": "AFC U17 2026",
@@ -94,7 +204,7 @@
     "short_name": "AFC U20 2025",
     "focus_level": "reference",
     "status": "completed",
-    "last_checked": "2026-05-23",
+    "last_checked": "2026-07-11",
     "date_range": {
       "start": "2025-02-12",
       "end": "2025-03-01"
@@ -110,7 +220,7 @@
     "notes": [
       "澳大利亚在 2025-03-01 决赛点球击败沙特，拿到队史首个 U20 亚洲杯冠军。",
       "中国队小组赛先后击败卡塔尔、吉尔吉斯斯坦，最后八强 0 比 1 负于沙特。",
-      "该届赛事适合继续补 2005 年龄段国青主干与中超 / 留洋去向衔接。"
+      "中国队原始终报名与更新赛事名单各 23 人，22 号门将由 Yuan Jianrui 更新为 Zhang Haoran；四场逐人出场和分钟已从官方 Match Summary 汇总。"
     ],
     "sources": [
       {
@@ -127,6 +237,16 @@
         "label": "AFC U20 China 2025 schedule",
         "publisher": "AFC",
         "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Match_schedule/AFC-U20-Asian-Cup-China-2025-Match-Schedule-.pdf"
+      },
+      {
+        "label": "AFC U20 China 2025 updated squad list",
+        "publisher": "AFC",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "label": "Saudi Arabia 1-0 China PR Match Summary",
+        "publisher": "CFA/AFC",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1740363646557.pdf"
       }
     ]
   },
@@ -397,7 +517,7 @@
     "short_name": "China Overseas 2026",
     "focus_level": "reference",
     "status": "in-progress",
-    "last_checked": "2026-05-22",
+    "last_checked": "2026-07-10",
     "date_range": {
       "start": "2026-01-01",
       "end": "2026-12-31"
@@ -410,14 +530,15 @@
       "LAFC2",
       "NK Lokomotiva Zagreb",
       "DAMM CF",
-      "Real Carabanchel CF"
+      "Real Carabanchel CF",
+      "AJ Auxerre"
     ],
     "headline": "2026 年中国留洋现役样本，优先跟踪当前仍在海外注册或效力的中国球员。",
     "notes": [
       "当前批次以仍在海外俱乐部注册、比赛或培养体系内的中国男足球员为主，暂不覆盖已回流中超或中甲的历史留洋球员。",
       "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
       "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。",
-      "已签约但生效日在未来的个案，如魏祥鑫 2026-07-01 欧塞尔节点，先列入“待生效 / 未来留洋观察”，不提前计入当前海外注册。"
+      "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。"
     ],
     "sources": [
       {
@@ -444,6 +565,16 @@
         "label": "LAFC2 official: Shaoziyang Liu signing",
         "publisher": "LAFC2",
         "url": "https://www.lafc.com/lafc2/news/lafc2-signs-goalkeeper-shaoziyang-liu-from-fc-bayern-munich-ii"
+      },
+      {
+        "label": "Soccerway profile: Xiangxin Wei at Auxerre",
+        "publisher": "Soccerway",
+        "url": "https://www.soccerway.com/player/wei-xiangxin/lfEWG3gc/"
+      },
+      {
+        "label": "Dongqiudi report on Wei Xiangxin's formal Auxerre arrival",
+        "publisher": "Dongqiudi",
+        "url": "https://www.dongqiudi.com/article/5986133.html"
       }
     ]
   },

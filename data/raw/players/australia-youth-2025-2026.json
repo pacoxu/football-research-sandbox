@@ -1,0 +1,4617 @@
+[
+  {
+    "id": "au-steven-hall-2005",
+    "name": "Steven Hall",
+    "local_name": "Steven Hall",
+    "country": "Australia",
+    "birth_date": "2005-01-16",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 186,
+    "weight_kg": 86,
+    "registration_club": {
+      "name": "BRIGHTON & HOVE ALBION FC",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "BRIGHTON & HOVE ALBION FC",
+        "country": "England",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/steven-hall/profil/spieler/970266"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Steven Hall in Australia's 23-player U20 squad and records BRIGHTON & HOVE ALBION FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Steven Hall and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Steven Hall in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-joshua-inserra-2005",
+    "name": "Joshua Inserra",
+    "local_name": "Joshua Inserra",
+    "country": "Australia",
+    "birth_date": "2005-01-21",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 180,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "MELBOURNE VICTORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MELBOURNE VICTORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/joshua-inserra/profil/spieler/1132512"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Joshua Inserra in Australia's 23-player U20 squad and records MELBOURNE VICTORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Joshua Inserra and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-sebastian-esposito-2005",
+    "name": "Sebastian Esposito",
+    "local_name": "Sebastian Esposito",
+    "country": "Australia",
+    "birth_date": "2005-04-21",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 188,
+    "weight_kg": 81,
+    "registration_club": {
+      "name": "US LECCE",
+      "country": "Italy",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "US LECCE",
+        "country": "Italy",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/sebastian-esposito/profil/spieler/1118086"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Sebastian Esposito in Australia's 23-player U20 squad and records US LECCE as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Sebastian Esposito and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-panagiotis-kikianis-2005",
+    "name": "Panagiotis Kikianis",
+    "local_name": "Panagiotis Kikianis",
+    "country": "Australia",
+    "birth_date": "2005-03-08",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/panagiotis-kikianis/profil/spieler/1099708"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Panagiotis Kikianis in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Panagiotis Kikianis and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Panagiotis Kikianis in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-fabian-talladira-2006",
+    "name": "Fabian Talladira",
+    "local_name": "Fabian Talladira",
+    "country": "Australia",
+    "birth_date": "2006-02-04",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 179,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/fabian-talladira/profil/spieler/1104730"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Fabian Talladira in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Fabian Talladira and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-paul-okon-engstler-2005",
+    "name": "Paul Okon-Engstler",
+    "local_name": "Paul Okon-Engstler",
+    "country": "Australia",
+    "birth_date": "2005-01-24",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 182,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "SL BENFICA",
+      "country": "Portugal",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "SL BENFICA",
+        "country": "Portugal",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/paul-okon-engstler/profil/spieler/1064377"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Paul Okon-Engstler in Australia's 23-player U20 squad and records SL BENFICA as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Paul Okon-Engstler and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Paul Okon-Engstler in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-daniel-bennie-2006",
+    "name": "Daniel Bennie",
+    "local_name": "Daniel Bennie",
+    "country": "Australia",
+    "birth_date": "2006-04-13",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 186,
+    "weight_kg": 80,
+    "registration_club": {
+      "name": "QUEENS PARK RANGERS FC",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "QUEENS PARK RANGERS FC",
+        "country": "England",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/daniel-bennie/profil/spieler/1104713"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Daniel Bennie in Australia's 23-player U20 squad and records QUEENS PARK RANGERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Daniel Bennie and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-jonny-yull-2005",
+    "name": "Jonny Yull",
+    "local_name": "Jonny Yull",
+    "country": "Australia",
+    "birth_date": "2005-03-05",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jonny-yull/profil/spieler/857060"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jonny Yull in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jonny Yull and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-luka-jovanovic-2005",
+    "name": "Luka Jovanovic",
+    "local_name": "Luka Jovanovic",
+    "country": "Australia",
+    "birth_date": "2005-05-20",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/luka-jovanovic/profil/spieler/1038441"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Luka Jovanovic in Australia's 23-player U20 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Luka Jovanovic and the club snapshot used for the 2025 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup final report",
+        "url": "https://footballaustralia.com.au/news/subway-young-socceroos-clinch-first-ever-afc-u20-asian-cup-title-historic-shootout-victory?page=852",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official final report independently records Luka Jovanovic in the title-deciding match context."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-alex-badolato-2005",
+    "name": "Alex Badolato",
+    "local_name": "Alex Badolato",
+    "country": "Australia",
+    "birth_date": "2005-02-23",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": 65,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/alex-badolato/profil/spieler/957230"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Alex Badolato in Australia's 23-player U20 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Alex Badolato and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-tiago-quintal-2006",
+    "name": "Tiago Quintal",
+    "local_name": "Tiago Quintal",
+    "country": "Australia",
+    "birth_date": "2006-06-16",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 172,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/tiago-quintal/profil/spieler/1109205"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Tiago Quintal in Australia's 23-player U20 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Tiago Quintal and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-alexander-robinson-2005",
+    "name": "Alexander Robinson",
+    "local_name": "Alexander Robinson",
+    "country": "Australia",
+    "birth_date": "2005-03-09",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 187,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/alex-robinson/profil/spieler/1110729"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Alexander Robinson in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Alexander Robinson and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-lucas-herrington-2007",
+    "name": "Lucas Herrington",
+    "local_name": "Lucas Herrington",
+    "country": "Australia",
+    "birth_date": "2007-09-05",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 192,
+    "weight_kg": 82,
+    "registration_club": {
+      "name": "BRISBANE ROAR FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "BRISBANE ROAR FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/lucas-herrington/profil/spieler/1279984"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Lucas Herrington in Australia's 23-player U20 squad and records BRISBANE ROAR FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Lucas Herrington and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-zach-lisolajski-2005",
+    "name": "Zach Lisolajski",
+    "local_name": "Zach Lisolajski",
+    "country": "Australia",
+    "birth_date": "2005-10-05",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 184,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/zach-lisolajski/profil/spieler/1195422"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Zach Lisolajski in Australia's 23-player U20 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Zach Lisolajski and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-jaylan-pearman-2006",
+    "name": "Jaylan Pearman",
+    "local_name": "Jaylan Pearman",
+    "country": "Australia",
+    "birth_date": "2006-04-18",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 179,
+    "weight_kg": 69,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jaylan-pearman/profil/spieler/1104726"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Jaylan Pearman in Australia's 23-player U20 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Jaylan Pearman and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-oliver-randazzo-2006",
+    "name": "Oliver Randazzo",
+    "local_name": "Oliver Randazzo",
+    "country": "Australia",
+    "birth_date": "2006-11-12",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 182,
+    "weight_kg": 67,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/oliver-randazzo/profil/spieler/1110867"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Oliver Randazzo in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Oliver Randazzo and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-frans-deli-2005",
+    "name": "Frans Deli",
+    "local_name": "Frans Deli",
+    "country": "Australia",
+    "birth_date": "2005-07-08",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 168,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/frans-deli/profil/spieler/1109957"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Frans Deli in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Frans Deli and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-gus-hoefsloot-2006",
+    "name": "Gus Hoefsloot",
+    "local_name": "Gus Hoefsloot",
+    "country": "Australia",
+    "birth_date": "2006-03-14",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 191,
+    "weight_kg": 88,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Gus Hoefsloot in Australia's 23-player U20 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Gus Hoefsloot and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-musa-toure-2005",
+    "name": "Musa Toure",
+    "local_name": "Musa Toure",
+    "country": "Australia",
+    "birth_date": "2005-11-12",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 83,
+    "registration_club": {
+      "name": "CLERMONT FOOT 63",
+      "country": "France",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "CLERMONT FOOT 63",
+        "country": "France",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/musa-toure/profil/spieler/1069960"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Musa Toure in Australia's 23-player U20 squad and records CLERMONT FOOT 63 as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Musa Toure and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-louis-agosti-2005",
+    "name": "Louis Agosti",
+    "local_name": "Louis Agosti",
+    "country": "Australia",
+    "birth_date": "2005-03-02",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 183,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "AC PERUGIA",
+      "country": "Italy",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "AC PERUGIA",
+        "country": "Italy",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/louis-agosti/profil/spieler/1109826"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Louis Agosti in Australia's 23-player U20 squad and records AC PERUGIA as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Louis Agosti and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-dean-bosnjak-2006",
+    "name": "Dean Bosnjak",
+    "local_name": "Dean Bosnjak",
+    "country": "Australia",
+    "birth_date": "2006-10-11",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 186,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "MACARTHUR BULLS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MACARTHUR BULLS FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/dean-bosnjak/profil/spieler/1144775"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Dean Bosnjak in Australia's 23-player U20 squad and records MACARTHUR BULLS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Dean Bosnjak and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-medin-memeti-2007",
+    "name": "Medin Memeti",
+    "local_name": "Medin Memeti",
+    "country": "Australia",
+    "birth_date": "2007-06-20",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 184,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/medin-memeti/profil/spieler/1183854"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Medin Memeti in Australia's 23-player U20 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Medin Memeti and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-adam-bugarija-2005",
+    "name": "Adam Bugarija",
+    "local_name": "Adam Bugarija",
+    "country": "Australia",
+    "birth_date": "2005-02-22",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 174,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "PERTH GLORY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2025-02-12"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 registration",
+        "organization": "PERTH GLORY FC",
+        "country": "Australia",
+        "note": "AFC U20 Asian Cup China 2025 updated squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "australia-youth",
+      "afc-u20-2025"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 Asian Cup China 2025 Australia final squad",
+        "team": "Australia U20",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC updated squad list confirms inclusion in Australia's final 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/adam-bugarija/profil/spieler/1137438"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Adam Bugarija in Australia's 23-player U20 squad and records PERTH GLORY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U20 Asian Cup squad announcement",
+        "url": "https://www.footballaustralia.com.au/news/subway-young-socceroos-squad-named-afc-u20-asian-cup-china-2025tm?page=743",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Adam Bugarija and the club snapshot used for the 2025 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2025 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-charlie-wilson-papps-2009",
+    "name": "Charlie Wilson-Papps",
+    "local_name": "Charlie Wilson-Papps",
+    "country": "Australia",
+    "birth_date": "2009-09-13",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 188,
+    "weight_kg": 81,
+    "registration_club": {
+      "name": "BRIGHTON & HOVE ALBION FC",
+      "country": "England",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "BRIGHTON & HOVE ALBION FC",
+        "country": "England",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1263751"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Charlie Wilson-Papps in Australia's 23-player U17 squad and records BRIGHTON & HOVE ALBION FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Charlie Wilson-Papps, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-winston-ashburner-2009",
+    "name": "Winston Ashburner",
+    "local_name": "Winston Ashburner",
+    "country": "Australia",
+    "birth_date": "2009-02-02",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 179,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "MELBOURNE VICTORY",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MELBOURNE VICTORY",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/winston-ashburner/profil/spieler/1413328"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Winston Ashburner in Australia's 23-player U17 squad and records MELBOURNE VICTORY as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Winston Ashburner, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-besian-kutleshi-2009",
+    "name": "Besian Kutleshi",
+    "local_name": "Besian Kutleshi",
+    "country": "Australia",
+    "birth_date": "2009-02-28",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 177,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/besian-kutleshi/profil/spieler/1273787"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Besian Kutleshi in Australia's 23-player U17 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Besian Kutleshi, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-marcus-savic-2009",
+    "name": "Marcus Savic",
+    "local_name": "Marcus Savic",
+    "country": "Australia",
+    "birth_date": "2009-03-21",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 184,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413350"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Marcus Savic in Australia's 23-player U17 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Marcus Savic, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-miles-milliner-2009",
+    "name": "Miles Milliner",
+    "local_name": "Miles Milliner",
+    "country": "Australia",
+    "birth_date": "2009-08-10",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 181,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U17 Asian Cup quarter-final report",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-advance-afc-u-17-asian-cup-2026tm-semi-final-a-3-0-victory-over-vietnam?page=363"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1329720"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Miles Milliner in Australia's 23-player U17 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Miles Milliner, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup quarter-final report",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-advance-afc-u-17-asian-cup-2026tm-semi-final-a-3-0-victory-over-vietnam?page=363",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official quarter-final report identifies Miles Milliner in the starting eleven and highlights his defensive blocks in the 3-0 win over Vietnam."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-sajjad-nasiri-2009",
+    "name": "Sajjad Nasiri",
+    "local_name": "Sajjad Nasiri",
+    "country": "Australia",
+    "birth_date": "2009-02-03",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 173,
+    "weight_kg": 64,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413351"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Sajjad Nasiri in Australia's 23-player U17 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Sajjad Nasiri, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-aston-reid-2009",
+    "name": "Aston Reid",
+    "local_name": "Aston Reid",
+    "country": "Australia",
+    "birth_date": "2009-04-02",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 176,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413327"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Aston Reid in Australia's 23-player U17 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Aston Reid, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-oliver-ocarroll-2009",
+    "name": "Oliver O'Carroll",
+    "local_name": "Oliver O'Carroll",
+    "country": "Australia",
+    "birth_date": "2009-05-16",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 187,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U17 Asian Cup quarter-final report",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-advance-afc-u-17-asian-cup-2026tm-semi-final-a-3-0-victory-over-vietnam?page=363"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413345"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Oliver O'Carroll in Australia's 23-player U17 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Oliver O'Carroll, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup quarter-final report",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-advance-afc-u-17-asian-cup-2026tm-semi-final-a-3-0-victory-over-vietnam?page=363",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official quarter-final report records Oliver O'Carroll scoring the opening goal in the 3-0 win over Vietnam."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-luke-becvinovski-2009",
+    "name": "Luke Becvinovski",
+    "local_name": "Luke Becvinovski",
+    "country": "Australia",
+    "birth_date": "2009-05-04",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 172,
+    "weight_kg": 61,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413330"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Luke Becvinovski in Australia's 23-player U17 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Luke Becvinovski, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-akol-akon-2009",
+    "name": "Akol Akon",
+    "local_name": "Akol Akon",
+    "country": "Australia",
+    "birth_date": "2009-05-21",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 175,
+    "weight_kg": 77,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1334905"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Akol Akon in Australia's 23-player U17 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Akol Akon, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-max-court-2009",
+    "name": "Max Court",
+    "local_name": "Max Court",
+    "country": "Australia",
+    "birth_date": "2009-01-16",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 179,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "APIA LEICHHARDT FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "APIA LEICHHARDT FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1333552"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Max Court in Australia's 23-player U17 squad and records APIA LEICHHARDT FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Max Court, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-lachlan-allen-2009",
+    "name": "Lachlan Allen",
+    "local_name": "Lachlan Allen",
+    "country": "Australia",
+    "birth_date": "2009-04-04",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 193,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1420097"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Lachlan Allen in Australia's 23-player U17 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Lachlan Allen, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-archie-mitchell-2009",
+    "name": "Archie Mitchell",
+    "local_name": "Archie Mitchell",
+    "country": "Australia",
+    "birth_date": "2009-05-06",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 188,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "BRISBANE ROAR FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "BRISBANE ROAR FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1378246"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Archie Mitchell in Australia's 23-player U17 squad and records BRISBANE ROAR FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Archie Mitchell, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-fraser-brown-2009",
+    "name": "Fraser Brown",
+    "local_name": "Fraser Brown",
+    "country": "Australia",
+    "birth_date": "2009-08-29",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1533962"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Fraser Brown in Australia's 23-player U17 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Fraser Brown, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-emile-katrib-2009",
+    "name": "Emile Katrib",
+    "local_name": "Emile Katrib",
+    "country": "Australia",
+    "birth_date": "2009-07-17",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 171,
+    "weight_kg": 66,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1484876"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Emile Katrib in Australia's 23-player U17 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Emile Katrib, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-akeem-gerald-2010",
+    "name": "Akeem Gerald",
+    "local_name": "Akeem Gerald",
+    "country": "Australia",
+    "birth_date": "2010-02-01",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 177,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "match",
+        "label": "Football Australia U17 Asian Cup quarter-final report",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-advance-afc-u-17-asian-cup-2026tm-semi-final-a-3-0-victory-over-vietnam?page=363"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1432380"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Akeem Gerald in Australia's 23-player U17 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Akeem Gerald, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup quarter-final report",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-advance-afc-u-17-asian-cup-2026tm-semi-final-a-3-0-victory-over-vietnam?page=363",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official quarter-final report records Akeem Gerald scoring Australia's third goal in the 3-0 win over Vietnam."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-henrique-oliveira-2009",
+    "name": "Henrique Oliveira",
+    "local_name": "Henrique Oliveira",
+    "country": "Australia",
+    "birth_date": "2009-01-17",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 169,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "MACARTHUR FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MACARTHUR FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1329718"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Henrique Oliveira in Australia's 23-player U17 squad and records MACARTHUR FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Henrique Oliveira, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC final registration lists Henrique Oliveira as a forward while Football Australia's squad announcement lists him as a midfielder. The AFC competition position is retained and the source conflict is explicit; registration_club remains a dated tournament snapshot."
+    }
+  },
+  {
+    "id": "au-hugo-ng-2009",
+    "name": "Hugo Ng",
+    "local_name": "Hugo Ng",
+    "country": "Australia",
+    "birth_date": "2009-01-03",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 185,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "ADELAIDE UNITED FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "ADELAIDE UNITED FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413348"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Hugo Ng in Australia's 23-player U17 squad and records ADELAIDE UNITED FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Hugo Ng, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-stevan-rujak-2009",
+    "name": "Stevan Rujak",
+    "local_name": "Stevan Rujak",
+    "country": "Australia",
+    "birth_date": "2009-08-27",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 177,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1533960"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Stevan Rujak in Australia's 23-player U17 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Stevan Rujak, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-georgio-hassarati-2009",
+    "name": "Georgio Hassarati",
+    "local_name": "Georgio Hassarati",
+    "country": "Australia",
+    "birth_date": "2009-03-03",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 180,
+    "weight_kg": 81,
+    "registration_club": {
+      "name": "WESTERN SYDNEY WANDERERS FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "WESTERN SYDNEY WANDERERS FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413326"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Georgio Hassarati in Australia's 23-player U17 squad and records WESTERN SYDNEY WANDERERS FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Georgio Hassarati, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-luka-demuth-2010",
+    "name": "Luka Demuth",
+    "local_name": "Luka Demuth",
+    "country": "Australia",
+    "birth_date": "2010-01-24",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 178,
+    "weight_kg": 68,
+    "registration_club": {
+      "name": "MELBOURNE CITY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "MELBOURNE CITY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1484877"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Luka Demuth in Australia's 23-player U17 squad and records MELBOURNE CITY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Luka Demuth, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-harrison-bond-2009",
+    "name": "Harrison Bond",
+    "local_name": "Harrison Bond",
+    "country": "Australia",
+    "birth_date": "2009-01-19",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 178,
+    "weight_kg": 73,
+    "registration_club": {
+      "name": "RB SALZBURG",
+      "country": "Austria",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "RB SALZBURG",
+        "country": "Austria",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1294139"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Harrison Bond in Australia's 23-player U17 squad and records RB SALZBURG as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Harrison Bond, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  },
+  {
+    "id": "au-corey-da-cruz-2009",
+    "name": "Corey Da Cruz",
+    "local_name": "Corey Da Cruz",
+    "country": "Australia",
+    "birth_date": "2009-04-24",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 169,
+    "weight_kg": 56,
+    "registration_club": {
+      "name": "SYDNEY FC",
+      "country": "Australia",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 registration",
+        "organization": "SYDNEY FC",
+        "country": "Australia",
+        "note": "AFC U17 Asian Cup Saudi Arabia 2026 final squad list records this organization at tournament registration time; it is displayed as a dated snapshot rather than an assertion of current registration."
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "australia-youth",
+      "afc-u17-2026"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 Asian Cup Saudi Arabia 2026 Australia final squad",
+        "team": "Australia U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC final squad list confirms inclusion in Australia's 23-player tournament squad."
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "official",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/profil/spieler/1413347"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad lists",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "registration_club",
+          "height_cm",
+          "weight_kg",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration confirms Corey Da Cruz in Australia's 23-player U17 squad and records SYDNEY FC as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "Football Australia U17 Asian Cup squad announcement",
+        "url": "https://footballaustralia.com.au/news/commbank-joeys-squad-announced-ahead-afc-u17-asian-cup-saudi-arabia-2026tm?page=839",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "name",
+          "registration_club",
+          "training_pathway",
+          "tournament_participation"
+        ],
+        "claim": "Football Australia's official 23-player squad announcement independently confirms Corey Da Cruz, the club snapshot, and the player's junior-club pathway context for the 2026 tournament."
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-12",
+      "notes": "AFC registration and Football Australia squad announcement agree on tournament identity. registration_club is a dated 2026 tournament snapshot unless a later current-registration source is added."
+    }
+  }
+]

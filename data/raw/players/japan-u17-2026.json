@@ -11,14 +11,20 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -48,7 +54,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yohei Onishi in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-kosei-oshita-2010",
@@ -62,14 +82,20 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Kawasaki Frontale U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kawasaki Frontale U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -99,7 +125,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kosei Oshita in the Japan u17 squad and records Kawasaki Frontale U18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-yuma-atsuta-2009",
@@ -113,14 +153,20 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Kashima Antlers Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kashima Antlers Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -150,7 +196,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yuma Atsuta in the Japan u17 squad and records Kashima Antlers Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-rei-ono-2009",
@@ -164,14 +224,17 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Bayer 04 Leverkusen U17",
-      "country": "Germany"
+      "country": "Germany",
+      "organization_type": "overseas-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Bayer 04 Leverkusen U17",
         "country": "Germany",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "overseas-academy",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -195,6 +258,31 @@
         "type": "official",
         "label": "AFC 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rei Ono in the Japan u17 squad and records Bayer 04 Leverkusen U17 as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U17 Asian Cup squad announcement",
+        "url": "https://www.jfa.jp/national_team/u17_2026/news/00036263/",
+        "checked_at": "2026-06-28",
+        "confidence": "medium",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "JFA team-level announcement provides the national-federation layer for the Japan U17 AFC Asian Cup squad context."
       }
     ],
     "verification": {
@@ -215,14 +303,20 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -252,7 +346,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Gento Fujiwara in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-aran-sato-2010",
@@ -266,14 +374,17 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "RC Strasbourg Alsace",
-      "country": "France"
+      "country": "France",
+      "organization_type": "overseas-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "RC Strasbourg Alsace",
         "country": "France",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "overseas-academy",
+        "competition_context_ids": []
       }
     ],
     "focus_tags": [
@@ -297,6 +408,31 @@
         "type": "official",
         "label": "AFC 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Aran Sato in the Japan u17 squad and records RC Strasbourg Alsace as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U17 Asian Cup squad announcement",
+        "url": "https://www.jfa.jp/national_team/u17_2026/news/00036263/",
+        "checked_at": "2026-06-28",
+        "confidence": "medium",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "JFA team-level announcement provides the national-federation layer for the Japan U17 AFC Asian Cup squad context."
       }
     ],
     "verification": {
@@ -317,14 +453,20 @@
     "weight_kg": 72,
     "registration_club": {
       "name": "Sanfrecce Hiroshima FC Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Sanfrecce Hiroshima FC Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -354,7 +496,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Sota Yamauchi in the Japan u17 squad and records Sanfrecce Hiroshima FC Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-eita-kobayashi-2009",
@@ -368,14 +524,20 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "Urawa Red Diamonds Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Urawa Red Diamonds Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -405,7 +567,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Eita Kobayashi in the Japan u17 squad and records Urawa Red Diamonds Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-takaya-sekine-2009",
@@ -419,14 +595,19 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Shizuoka Gakuen High School",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shizuoka Gakuen High School",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -450,6 +631,31 @@
         "type": "official",
         "label": "AFC 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Takaya Sekine in the Japan u17 squad and records Shizuoka Gakuen High School as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U17 Asian Cup squad announcement",
+        "url": "https://www.jfa.jp/national_team/u17_2026/news/00036263/",
+        "checked_at": "2026-06-28",
+        "confidence": "medium",
+        "fields": [
+          "tournament_participation"
+        ],
+        "claim": "JFA team-level announcement provides the national-federation layer for the Japan U17 AFC Asian Cup squad context."
       }
     ],
     "verification": {
@@ -470,14 +676,19 @@
     "weight_kg": 70,
     "registration_club": {
       "name": "Shizuoka Gakuen High School",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shizuoka Gakuen High School",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -501,13 +712,32 @@
         "type": "official",
         "label": "AFC 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/koki-kurahashi/profil/spieler/1265611"
       }
     ],
     "verification": {
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Rikuto Yoshida in the Japan u17 squad and records Shizuoka Gakuen High School as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-louis-ellena-2009",
@@ -521,14 +751,20 @@
     "weight_kg": 60,
     "registration_club": {
       "name": "Montedio Yamagata Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Montedio Yamagata Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -558,7 +794,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Louis Ellena in the Japan u17 squad and records Montedio Yamagata Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-ai-toyama-2009",
@@ -572,14 +822,20 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -609,7 +865,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ai Toyama in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-lion-tahara-2009",
@@ -623,14 +893,20 @@
     "weight_kg": 75,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -660,7 +936,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Lion Tahara in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-soshiro-shimada-2009",
@@ -674,14 +964,20 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Shimizu S-Pulse Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shimizu S-Pulse Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -711,7 +1007,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Soshiro Shimada in the Japan u17 squad and records Shimizu S-Pulse Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-ryota-abe-2009",
@@ -725,14 +1035,20 @@
     "weight_kg": 60,
     "registration_club": {
       "name": "Mitsubishi Yowa SC U-18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Mitsubishi Yowa SC U-18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -762,7 +1078,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ryota Abe in the Japan u17 squad and records Mitsubishi Yowa SC U-18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-hiroto-yamamoto-2009",
@@ -776,14 +1106,20 @@
     "weight_kg": 64,
     "registration_club": {
       "name": "Tokyo Verdy Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Tokyo Verdy Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -813,7 +1149,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Hiroto Yamamoto in the Japan u17 squad and records Tokyo Verdy Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-yamato-otaka-2009",
@@ -827,14 +1177,20 @@
     "weight_kg": 59,
     "registration_club": {
       "name": "Kashima Antlers Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kashima Antlers Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -864,7 +1220,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Yamato Otaka in the Japan u17 squad and records Kashima Antlers Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-reto-nagata-2009",
@@ -878,14 +1248,20 @@
     "weight_kg": 66,
     "registration_club": {
       "name": "FC Tokyo U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "FC Tokyo U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -915,7 +1291,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Reto Nagata in the Japan u17 squad and records FC Tokyo U18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-kento-uegaki-2009",
@@ -929,14 +1319,20 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Kashima Antlers Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kashima Antlers Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -966,7 +1362,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kento Uegaki in the Japan u17 squad and records Kashima Antlers Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-kosei-yanagui-2010",
@@ -980,14 +1390,20 @@
     "weight_kg": 57,
     "registration_club": {
       "name": "Kawasaki Frontale U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Kawasaki Frontale U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -1017,7 +1433,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Kosei Yanagui in the Japan u17 squad and records Kawasaki Frontale U18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-tsubasa-kamimura-2009",
@@ -1031,14 +1461,20 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Vissel Kobe U18",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Vissel Kobe U18",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -1068,7 +1504,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Tsubasa Kamimura in the Japan u17 squad and records Vissel Kobe U18 as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-seigo-aoyama-2009",
@@ -1082,14 +1532,20 @@
     "weight_kg": 68,
     "registration_club": {
       "name": "Shimizu S-Pulse Youth",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shimizu S-Pulse Youth",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "club-academy",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues",
+          "japan-club-youth-u18"
+        ]
       }
     ],
     "focus_tags": [
@@ -1119,7 +1575,21 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Seigo Aoyama in the Japan u17 squad and records Shimizu S-Pulse Youth as the tournament registration organization."
+      }
+    ]
   },
   {
     "id": "jp-ryosuke-furukawa-2009",
@@ -1133,14 +1603,19 @@
     "weight_kg": 71,
     "registration_club": {
       "name": "Iwata Higashi High School",
-      "country": "Japan"
+      "country": "Japan",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Iwata Higashi High School",
         "country": "Japan",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "high-school",
+        "competition_context_ids": [
+          "japan-u18-prefectural-leagues"
+        ]
       }
     ],
     "focus_tags": [
@@ -1170,6 +1645,32 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "AFC final registration confirms Ryosuke Furukawa in the Japan u17 squad and records Iwata Higashi High School as the tournament registration organization."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "JFA U17 Asian Cup squad announcement",
+        "url": "https://www.jfa.jp/national_team/u17_2026/news/00036263/",
+        "checked_at": "2026-07-12",
+        "confidence": "high",
+        "fields": [
+          "tournament_participation",
+          "registration_club"
+        ],
+        "claim": "JFA's official squad announcement independently lists Ryosuke Furukawa and Iwata Higashi High School in the Japan U17 team context."
+      }
+    ]
   }
 ]

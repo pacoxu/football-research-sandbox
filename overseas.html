@@ -8,7 +8,7 @@
       name="description"
       content="查看中日韩当前留洋样本、联赛层级对比与历史记录。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260627-asian-coaches" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-overseas-status" />
   </head>
   <body data-page="overseas">
     <div class="site-shell">
@@ -23,6 +23,8 @@
             <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
             <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
             <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a href="./lineup.html">排阵容</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">日韩青训体系</a>
           </nav>
           <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
             <span class="header-control-caption" data-i18n="header.language">语言</span>
@@ -70,6 +72,10 @@
               <select id="overseasBucketFilter"></select>
             </label>
             <label class="filter-item">
+              <span data-i18n="overseas.filters.teamLevel">队伍层级</span>
+              <select id="overseasTeamLevelFilter"></select>
+            </label>
+            <label class="filter-item">
               <span data-i18n="overseas.filters.year">历史年份</span>
               <select id="overseasYearFilter"></select>
             </label>
@@ -89,6 +95,7 @@
               </div>
               <p id="overseasCurrentMeta" class="section-note" data-i18n="common.loading">载入中</p>
             </div>
+            <p id="overseasTeamLevelNotice" class="section-notice" hidden></p>
             <div id="overseasCurrentPlayers" class="player-card-grid"></div>
             <div id="overseasCurrentEmptyState" class="empty-state" hidden data-i18n="overseas.current.empty">当前筛选条件下没有匹配的现役留洋样本。</div>
           </article>
@@ -137,6 +144,6 @@
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260627-asian-coaches"></script>
+    <script type="module" src="./assets/app.js?v=20260712-overseas-status-v2"></script>
   </body>
 </html>

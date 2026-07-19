@@ -1,0 +1,476 @@
+{
+  "id": "asian-coaches",
+  "name": {
+    "zh": "五大联赛之外的亚洲主教练试点",
+    "en": "Asian head coaches beyond the big five leagues"
+  },
+  "last_checked": "2026-07-11",
+  "summary": {
+    "zh": "统一记录 AFC 成员协会教练在欧洲非五大顶级联赛、AFC 成年与青年国家队、亚洲顶级联赛中的一线队主教练任期。首批只落任命事实和官方来源，战绩允许待后续逐场核验。",
+    "en": "A unified pilot for AFC-association head coaches in non-big-five European top flights, AFC senior and youth national teams, and Asian top-flight clubs. The first release records appointments and official sources while allowing match records to remain pending."
+  },
+  "scope_counts": {
+    "afc_member_association": 5,
+    "geographic_broad": 5
+  },
+  "stint_counts_by_scope": {
+    "europe_non_big_five_top_flight": 1,
+    "afc_senior_national_team": 4,
+    "afc_youth_national_team": 1,
+    "asian_top_flight_club": 4,
+    "afc_continental_club": 0
+  },
+  "role_policy": {
+    "included": [
+      "head_coach",
+      "caretaker_head_coach",
+      "interim_head_coach"
+    ],
+    "excluded_from_primary": [
+      "assistant_coach",
+      "technical_director",
+      "advisor",
+      "club_youth_head_coach"
+    ],
+    "note": {
+      "zh": "俱乐部一线队、成年国家队和 U 系列国家队主教练进入主统计；助教、顾问、技术总监和俱乐部青年队教练只作为履历线索。",
+      "en": "First-team club, senior national-team, and youth national-team head coaches enter the primary sample. Assistants, advisers, technical directors, and club youth coaches remain reference-only."
+    }
+  },
+  "coaches": [
+    {
+      "id": "ange-postecoglou",
+      "name": "Ange Postecoglou",
+      "local_name": "安格·波斯特科格鲁",
+      "nationality": "Australia",
+      "association": "Football Australia",
+      "association_confederation": "AFC",
+      "counted_in": [
+        "afc_member_association",
+        "geographic_broad"
+      ],
+      "boundary_notes": [
+        "The big-five table remains the sole source for his Tottenham Hotspur and Nottingham Forest league records."
+      ],
+      "stints": [
+        {
+          "team": "Australia",
+          "team_country": "Australia",
+          "team_type": "senior_national_team",
+          "role_scope": "senior_national_team",
+          "competition_scope": "afc_senior_national_team",
+          "competition": "Australia men's senior national team",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2013-10",
+            "end": "2017-11"
+          },
+          "season": "2013-2017 cycle",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; match-level record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "Football Australia career review for Ange Postecoglou",
+              "url": "https://footballaustralia.com.au/news/football-australia-congratulates-ange-postecoglou-appointment-tottenham-hotspur-fc-manager",
+              "type": "association-announcement"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "Football Australia's career review identifies his 2013-2017 Socceroos tenure and 2015 AFC Asian Cup title."
+          }
+        },
+        {
+          "team": "Yokohama F. Marinos",
+          "team_country": "Japan",
+          "team_type": "club",
+          "role_scope": "club_first_team",
+          "competition_scope": "asian_top_flight_club",
+          "competition": "J1 League",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2018-01",
+            "end": "2021-06"
+          },
+          "season": "2018-2021",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; J1 match-level record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "J.League profile of Australian managers with J.League links",
+              "url": "https://www.jleague.co/news/five-australian-managers-with-jleague-links/",
+              "type": "league-profile"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "The official J.League profile confirms the 2018 arrival, Yokohama F. Marinos role, and 2019 J1 title."
+          }
+        },
+        {
+          "team": "Celtic FC",
+          "team_country": "Scotland",
+          "team_type": "club",
+          "role_scope": "club_first_team",
+          "competition_scope": "europe_non_big_five_top_flight",
+          "competition": "Scottish Premiership",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2021-06",
+            "end": "2023-06"
+          },
+          "season": "2021-22 to 2022-23",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; Scottish Premiership record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "Celtic appoint Ange Postecoglou as new football manager",
+              "url": "https://www.celticfc.com/news/2021/june/Celtic-appoint-Ange-Postecoglou-as-new-football-manager/",
+              "type": "club-announcement"
+            },
+            {
+              "label": "Celtic managers past and present",
+              "url": "https://www.celticfc.com/history/the-managers/",
+              "type": "club-announcement"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "Celtic's appointment and history pages confirm the permanent first-team role and 2021-2023 spell."
+          }
+        }
+      ],
+      "source_links": [
+        {
+          "label": "Football Australia profile",
+          "url": "https://footballaustralia.com.au/ange-postecoglou",
+          "type": "association-announcement"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "tony-popovic",
+      "name": "Tony Popovic",
+      "local_name": "托尼·波波维奇",
+      "nationality": "Australia",
+      "association": "Football Australia",
+      "association_confederation": "AFC",
+      "counted_in": [
+        "afc_member_association",
+        "geographic_broad"
+      ],
+      "boundary_notes": [],
+      "stints": [
+        {
+          "team": "Australia",
+          "team_country": "Australia",
+          "team_type": "senior_national_team",
+          "role_scope": "senior_national_team",
+          "competition_scope": "afc_senior_national_team",
+          "competition": "Australia men's senior national team",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2024-09",
+            "end": null
+          },
+          "season": "2024-2027 cycle",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; match-level record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "Football Australia appoints Tony Popovic as Socceroos head coach",
+              "url": "https://footballaustralia.com.au/news/football-australia-appoints-tony-popovic-head-coach-subway-socceroos",
+              "type": "association-announcement"
+            },
+            {
+              "label": "Tony Popovic to lead CommBank Socceroos into 2027",
+              "url": "https://footballaustralia.com.au/news/tony-popovic-lead-commbank-socceroos-2027",
+              "type": "association-announcement"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "Football Australia confirmed the September 2024 appointment and a 2026 extension through the 2027 AFC Asian Cup."
+          }
+        }
+      ],
+      "source_links": [],
+      "confidence": "high"
+    },
+    {
+      "id": "hajime-moriyasu",
+      "name": "Hajime Moriyasu",
+      "local_name": "森保一",
+      "nationality": "Japan",
+      "association": "Japan Football Association",
+      "association_confederation": "AFC",
+      "counted_in": [
+        "afc_member_association",
+        "geographic_broad"
+      ],
+      "boundary_notes": [
+        "His senior and Olympic-age national-team roles overlapped under JFA's one-team, two-categories model."
+      ],
+      "stints": [
+        {
+          "team": "Sanfrecce Hiroshima",
+          "team_country": "Japan",
+          "team_type": "club",
+          "role_scope": "club_first_team",
+          "competition_scope": "asian_top_flight_club",
+          "competition": "J1 League",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2012-01",
+            "end": "2017-07"
+          },
+          "season": "2012-2017",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; J1 match-level record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "JFA AFC Asian Cup 2019 media guide",
+              "url": "https://www.jfa.jp/common/pdf/mediaguide_JPN_AFC_ASIAN_CUP_2019.pdf",
+              "type": "association-announcement"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "The official JFA media guide lists Moriyasu as Sanfrecce Hiroshima head coach from 2012 to July 2017."
+          }
+        },
+        {
+          "team": "Japan Olympic-age national teams",
+          "team_country": "Japan",
+          "team_type": "youth_national_team",
+          "role_scope": "youth_national_team",
+          "competition_scope": "afc_youth_national_team",
+          "competition": "Japan U20/U21/U22/U24 Olympic cycle",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2017-11",
+            "end": "2021-08"
+          },
+          "season": "Tokyo 2020 Olympic cycle",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; youth international record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "JFA AFC Asian Cup 2019 media guide",
+              "url": "https://www.jfa.jp/common/pdf/mediaguide_JPN_AFC_ASIAN_CUP_2019.pdf",
+              "type": "association-announcement"
+            },
+            {
+              "label": "JFA Moriyasu contract extension announcement",
+              "url": "https://jfa.jp/eng/samuraiblue/news/00031364/",
+              "type": "association-announcement"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "JFA sources document the U20/U21/U22 progression and the fourth-place finish with Japan U24 at the Tokyo Olympics."
+          }
+        },
+        {
+          "team": "Japan",
+          "team_country": "Japan",
+          "team_type": "senior_national_team",
+          "role_scope": "senior_national_team",
+          "competition_scope": "afc_senior_national_team",
+          "competition": "Japan men's senior national team",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2018-07",
+            "end": null
+          },
+          "season": "2018-2026 cycle",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; match-level record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "JFA appoints Hajime Moriyasu as SAMURAI BLUE head coach",
+              "url": "https://www.jfa.jp/eng/national_team_2018/news/00018187/",
+              "type": "association-announcement"
+            },
+            {
+              "label": "JFA 2026 SAMURAI BLUE staff",
+              "url": "https://www.jfa.jp/eng/samuraiblue_2026/member/",
+              "type": "association-announcement"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "The 2018 appointment page and current 2026 JFA staff page confirm the senior national-team role."
+          }
+        }
+      ],
+      "source_links": [],
+      "confidence": "high"
+    },
+    {
+      "id": "hong-myung-bo",
+      "name": "Hong Myung-bo",
+      "local_name": "洪明甫",
+      "nationality": "Korea Republic",
+      "association": "Korea Football Association",
+      "association_confederation": "AFC",
+      "counted_in": [
+        "afc_member_association",
+        "geographic_broad"
+      ],
+      "boundary_notes": [
+        "His second Korea Republic senior spell ended after the 2026 FIFA World Cup group stage and is not marked current."
+      ],
+      "stints": [
+        {
+          "team": "Ulsan HD FC",
+          "team_country": "Korea Republic",
+          "team_type": "club",
+          "role_scope": "club_first_team",
+          "competition_scope": "asian_top_flight_club",
+          "competition": "K League 1",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2020-12",
+            "end": "2024-07"
+          },
+          "season": "2021-2024",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; K League 1 record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "AFC: Hong Myung-bo named Ulsan Hyundai FC head coach",
+              "url": "https://www.the-afc.com/en/club/afc_champions_league/news/hong_myung-bo_named_ulsan_hyundai_fc_head_coach.html",
+              "type": "competition-record"
+            },
+            {
+              "label": "AFC: Hong determined to power Ulsan to continental glory",
+              "url": "https://www.the-afc.com/en/club/afc_champions_league/news/hong_determined_to_power_ulsan_to_continental_glory.html",
+              "type": "competition-record"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "AFC sources confirm the December 2020 appointment and his Ulsan role before returning to the national team in July 2024."
+          }
+        },
+        {
+          "team": "Korea Republic",
+          "team_country": "Korea Republic",
+          "team_type": "senior_national_team",
+          "role_scope": "senior_national_team",
+          "competition_scope": "afc_senior_national_team",
+          "competition": "Korea Republic men's senior national team",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2024-07",
+            "end": "2026-07"
+          },
+          "season": "2024-2026 cycle",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; match-level record pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "KFA appoints Hong Myung-bo as Korea Republic head coach",
+              "url": "https://www.kfa.or.kr/layer_popup/popup_live.php?act=news_tv_detail&check_url=bGF5ZXI%3D&div_code=news&idx=26402&lang=EN",
+              "type": "association-announcement"
+            },
+            {
+              "label": "AFC: Hong and Korea Republic part ways after FIFA World Cup 2026",
+              "url": "https://www.the-afc.com/en/national/fifa_world_cup.html/news/hong-korea-republic-part-ways",
+              "type": "competition-record"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "KFA confirms the July 2024 appointment; AFC confirms his resignation after Korea Republic's 2026 World Cup group-stage exit."
+          }
+        }
+      ],
+      "source_links": [],
+      "confidence": "high"
+    },
+    {
+      "id": "chan-yuen-ting",
+      "name": "Chan Yuen-ting",
+      "local_name": "陈婉婷",
+      "nationality": "Hong Kong, China",
+      "association": "The Football Association of Hong Kong, China",
+      "association_confederation": "AFC",
+      "counted_in": [
+        "afc_member_association",
+        "geographic_broad"
+      ],
+      "boundary_notes": [
+        "Gender is not an exclusion criterion; the primary test is a men's first-team head-coach appointment in an included competition."
+      ],
+      "stints": [
+        {
+          "team": "Eastern SC",
+          "team_country": "Hong Kong, China",
+          "team_type": "club",
+          "role_scope": "club_first_team",
+          "competition_scope": "asian_top_flight_club",
+          "competition": "Hong Kong Premier League",
+          "role_type": "head_coach",
+          "spell_type": "permanent",
+          "period": {
+            "start": "2015-12",
+            "end": "2017-05"
+          },
+          "season": "2015-16 to 2016-17",
+          "count_in_primary": true,
+          "record_scope": "appointment fact only; domestic and AFC match records pending audit",
+          "record": null,
+          "source_links": [
+            {
+              "label": "AFC Champions League Q&A with Chan Yuen-ting",
+              "url": "https://www.the-afc.com/en/club/afc_champions_league/news/afc_champions_league_qa_chan_yuen-ting_eastern_sc.html",
+              "type": "competition-record"
+            },
+            {
+              "label": "AFC interview with Chan Yuen-ting",
+              "url": "https://www.the-afc.com/en/more/news/interview_chan_yuen-ting.html",
+              "type": "competition-record"
+            }
+          ],
+          "verification": {
+            "status": "verified",
+            "last_checked": "2026-07-11",
+            "notes": "AFC sources confirm her Eastern first-team role, 2015-16 Hong Kong Premier League title, and 2017 AFC Champions League participation."
+          }
+        }
+      ],
+      "source_links": [],
+      "confidence": "high"
+    }
+  ]
+}

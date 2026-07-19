@@ -1,0 +1,945 @@
+[
+  {
+    "id": "cn-liu-qiwei-2005",
+    "name": "Liu Qiwei",
+    "local_name": "Liu Qiwei",
+    "country": "China PR",
+    "birth_date": "2005-12-21",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 188,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "Shandong Taishan FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/qiwei-liu/profil/spieler/1242741"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-xu-junchi-2005",
+    "name": "Xu Junchi",
+    "local_name": "Xu Junchi",
+    "country": "China PR",
+    "birth_date": "2005-01-09",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 176,
+    "weight_kg": 75,
+    "registration_club": {
+      "name": "Shijiazhuang Gongfu FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shijiazhuang Gongfu FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/junchi-xu/profil/spieler/1089663"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-shi-songchen-2005",
+    "name": "Shi Songchen",
+    "local_name": "Shi Songchen",
+    "country": "China PR",
+    "birth_date": "2005-12-30",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 185,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "Shandong Taishan FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/songchen-shi/profil/spieler/1127611"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-yimulan-maimaiti-2005",
+    "name": "Yimulan Maimaiti",
+    "local_name": "Yimulan Maimaiti",
+    "country": "China PR",
+    "birth_date": "2005-05-03",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 182,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "Shandong Taishan FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-yao-haoyang-2006",
+    "name": "Yao Haoyang",
+    "local_name": "Yao Haoyang",
+    "country": "China PR",
+    "birth_date": "2006-10-28",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 192,
+    "weight_kg": 81,
+    "registration_club": {
+      "name": "Chongqing Tonglianglong FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Chongqing Tonglianglong FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/haoyang-yao/profil/spieler/1068103"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-xiong-jizheng-2005",
+    "name": "Xiong Jizheng",
+    "local_name": "Xiong Jizheng",
+    "country": "China PR",
+    "birth_date": "2005-05-16",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 175,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Wuhan Three Towns FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Wuhan Three Towns FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jizheng-xiong/profil/spieler/1184400"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-wang-yifan-2005",
+    "name": "Wang Yifan",
+    "local_name": "Wang Yifan",
+    "country": "China PR",
+    "birth_date": "2005-01-11",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 183,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Shanghai Shenhua FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shanghai Shenhua FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yifan-wang/profil/spieler/1267246"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-wang-haobin-2006",
+    "name": "Wang Haobin",
+    "local_name": "Wang Haobin",
+    "country": "China PR",
+    "birth_date": "2006-08-11",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 185,
+    "weight_kg": 76,
+    "registration_club": {
+      "name": "Shandong Taishan FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/haobin-wang/profil/spieler/1125748"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-zhang-zhixiong-2006",
+    "name": "Zhang Zhixiong",
+    "local_name": "Zhang Zhixiong",
+    "country": "China PR",
+    "birth_date": "2006-09-27",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 179,
+    "weight_kg": 71,
+    "registration_club": {
+      "name": "Chongqing Tonglianglong FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Chongqing Tonglianglong FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/zhixiong-zhang/profil/spieler/1239338"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-chen-shihan-2005",
+    "overseas_status": "active-registered",
+    "name": "Chen Shihan",
+    "local_name": "Chen Shihan",
+    "country": "China PR",
+    "birth_date": "2005-05-21",
+    "age_band": "u20",
+    "primary_position": "Midfielder",
+    "height_cm": 180,
+    "weight_kg": 70,
+    "registration_club": {
+      "name": "Union Rochefortoise FC",
+      "country": "Belgium"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Union Rochefortoise FC",
+        "country": "Belgium",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth",
+      "overseas-europe"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/shihan-chen/profil/spieler/1178348"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-qi-qiancheng-2006",
+    "name": "Qi Qiancheng",
+    "local_name": "Qi Qiancheng",
+    "country": "China PR",
+    "birth_date": "2006-04-05",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 184,
+    "weight_kg": 78,
+    "registration_club": {
+      "name": "Shandong Taishan FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/qiancheng-qi/profil/spieler/1244211"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-sun-kangbo-2006",
+    "overseas_status": "active-registered",
+    "name": "Sun Kangbo",
+    "local_name": "Sun Kangbo",
+    "country": "China PR",
+    "birth_date": "2006-08-19",
+    "age_band": "u20",
+    "primary_position": "Defender",
+    "height_cm": 180,
+    "weight_kg": 72,
+    "registration_club": {
+      "name": "FK Vozdovac",
+      "country": "Serbia"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "FK Vozdovac",
+        "country": "Serbia",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth",
+      "overseas-europe"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/kangbo-sun/profil/spieler/1068102"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-du-yuezheng-2005",
+    "overseas_status": "active-registered",
+    "name": "Du Yuezheng",
+    "local_name": "Du Yuezheng",
+    "country": "China PR",
+    "birth_date": "2005-09-14",
+    "age_band": "u20",
+    "primary_position": "Forward",
+    "height_cm": 185,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "Marbella FC",
+      "country": "Spain"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Marbella FC",
+        "country": "Spain",
+        "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-final-squad",
+      "china-youth",
+      "overseas-europe"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 0,
+        "minutes": null,
+        "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yuezheng-du/profil/spieler/1012801"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-yuan-jianrui-2005",
+    "name": "Yuan Jianrui",
+    "local_name": "Yuan Jianrui",
+    "country": "China PR",
+    "birth_date": "2005-02-08",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 185,
+    "weight_kg": 79,
+    "registration_club": {
+      "name": "Shenzhen 2028 FC",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 报名归属",
+        "organization": "Shenzhen 2028 FC",
+        "country": "China",
+        "note": "原始 AFC final registration 将其列为 22 号门将；更新版 squad list 和四场 Match Summary 显示 Zhang Haoran 随后接替该名额。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-original-registration",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队原始终报名名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "roster_status": "replaced-before-match",
+        "appearances": 0,
+        "goals": 0,
+        "minutes": 0,
+        "note": "原始 AFC final registration 列为 22 号门将；更新版 squad list 和四场 Match Summary 均由 Zhang Haoran 替代，因此不计入实际赛事 23 人名单。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 final registration",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 squads finalised",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "原始 AFC final registration 支撑出生日期、位置、报名俱乐部、身高和体重；更新版 squad list 与四场 Match Summary 显示其在开赛前由 Zhang Haoran 替换。中文名仍待 CFA 或俱乐部来源补强。"
+    }
+  },
+  {
+    "id": "cn-zhang-haoran-2006",
+    "name": "Zhang Haoran",
+    "local_name": "Zhang Haoran",
+    "country": "China PR",
+    "birth_date": "2006-07-18",
+    "age_band": "u20",
+    "primary_position": "Goalkeeper",
+    "height_cm": 186,
+    "weight_kg": 84,
+    "registration_club": {
+      "name": "Tianjin Jinmen",
+      "country": "China"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2025 AFC U20 赛事名单替补",
+        "organization": "Tianjin Jinmen",
+        "country": "China",
+        "note": "更新版 AFC squad list 和四场官方 Match Summary 均将其列为中国队 22 号门将，替代原始终报名表中的 Yuan Jianrui。"
+      }
+    ],
+    "focus_tags": [
+      "asia-u20-2025",
+      "china-u20-2025-tournament-squad",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2025",
+        "label": "AFC U20 2025 中国队实际赛事名单",
+        "team": "China PR U20",
+        "squad_status": "registered",
+        "roster_status": "tournament-replacement",
+        "appearances": 0,
+        "goals": 0,
+        "minutes": 0,
+        "note": "更新版 AFC squad list 和四场官方 Match Summary 均列为 22 号替补门将；四场均未登场。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC U20 2025 updated squad list",
+        "url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: China PR 2-1 Qatar",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739513637.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: Kyrgyz Republic 2-5 China PR",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739682556.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: China PR 1-2 Australia",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1739887502.pdf"
+      },
+      {
+        "type": "match",
+        "label": "Match Summary: Saudi Arabia 1-0 China PR",
+        "url": "https://imageoss.thecfa.cn/upload/file/20250214/1740363646557.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-07-11",
+      "notes": "更新版 AFC squad list 支撑出生日期、位置、报名俱乐部、身高和体重；四场官方 Match Summary 共同确认其进入实际赛事名单但没有出场。中文名仍待 CFA 或俱乐部来源补强。"
+    }
+  }
+]

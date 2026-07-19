@@ -1,6 +1,7 @@
 [
   {
     "id": "cn-zhang-jiaming-2007",
+    "overseas_status": "active-registered",
     "name": "Zhang Jiaming",
     "local_name": "张家鸣",
     "country": "China PR",
@@ -66,6 +67,11 @@
         "type": "news",
         "label": "Sina report on Vozdovac registration",
         "url": "https://k.sina.com.cn/article_7857201856_1d45362c001903i4js.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jiaming-zhang/profil/spieler/1159605"
       }
     ],
     "verification": {
@@ -76,6 +82,7 @@
   },
   {
     "id": "cn-lin-zihao-2007",
+    "overseas_status": "active-registered",
     "name": "Lin Zihao",
     "local_name": "林子皓",
     "country": "China PR",
@@ -122,9 +129,9 @@
     ],
     "external_links": [
       {
-        "type": "profile",
+        "type": "transfermarkt",
         "label": "Transfermarkt profile",
-        "url": "https://www.transfermarkt.co.in/zihao-lin/profil/spieler/1242688"
+        "url": "https://www.transfermarkt.com/zihao-lin/profil/spieler/1242688"
       },
       {
         "type": "profile",
@@ -145,6 +152,7 @@
   },
   {
     "id": "cn-lyu-mengyang-2009",
+    "overseas_status": "active-registered",
     "name": "Lyu Mengyang",
     "local_name": "吕孟洋",
     "country": "China PR",
@@ -272,6 +280,7 @@
   },
   {
     "id": "cn-liu-kaiyuan-2010",
+    "overseas_status": "active-registered",
     "name": "Liu Kaiyuan",
     "local_name": "刘凯源",
     "country": "China PR",
@@ -373,7 +382,7 @@
     ],
     "external_links": [
       {
-        "type": "profile",
+        "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/kaiyuan-liu/profil/spieler/1504020"
       },
@@ -421,6 +430,7 @@
   },
   {
     "id": "cn-zhang-lindong-2010",
+    "overseas_status": "active-registered",
     "name": "Zhang Lindong",
     "local_name": "张林峒",
     "country": "China PR",
@@ -515,6 +525,17 @@
         "goals": null,
         "minutes": null,
         "note": "截至 2026-05-22，当前更稳妥的口径是仍在西班牙达姆青训体系内，属于中国足球小将 2010 线旅西代表样本之一。"
+      },
+      {
+        "label": "2026 中国 U17 第四期集训公开名单",
+        "team": "China PR U17",
+        "squad_status": "called-up",
+        "roster_status": "later-camp-callup",
+        "roster_checked_at": "2026-07-11",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-06-27 第四期集训公开名单将张林峒列入中场组，归属达姆足球俱乐部；这是赛后 U17 pool 状态，不等同于 AFC U17 2026 终报名。"
       }
     ],
     "external_links": [
@@ -548,16 +569,27 @@
         "type": "official",
         "label": "CFA U16 second camp notice",
         "url": "https://www.thecfa.cn/jxtz/20260312/37416.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA U17 fourth camp notice",
+        "url": "https://www.thecfa.cn/wqmdu17/20260627/37817.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/lintong-zhang/profil/spieler/1531921"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "中国足球小将 2010 队身份、前腰 / 后腰 / 边前卫多位置口径，以及 2024 年加盟达姆的旅西主线，可由董路 / 直播吧年度总结与搜狐加盟报道交叉确认；2023 年底圣胡斯特竞技注册节点可由懂球帝报道补齐；2024 年 U14 第二期、赴韩国拉练与 2026 年 U16 第二期集训，可由体坛+、直播吧转述和足协正式通知连续拼出。生日 2010-02-25 当前主要来自 2026-02-25“16 周岁生日”的公开社媒口径，而不是足协正式注册页，因此这里保留日期但不把它表述为足协权威字段。"
+      "last_checked": "2026-07-11",
+      "notes": "中国足球小将 2010 队身份、前腰 / 后腰 / 边前卫多位置口径，以及 2024 年加盟达姆的旅西主线，可由董路 / 直播吧年度总结与搜狐加盟报道交叉确认；2023 年底圣胡斯特竞技注册节点可由懂球帝报道补齐；2024 年 U14 第二期、赴韩国拉练与 2026 年 U16 第二期集训，可由体坛+、直播吧转述和足协正式通知连续拼出。生日 2010-02-25 当前主要来自 2026-02-25“16 周岁生日”的公开社媒口径，而不是足协正式注册页，因此这里保留日期但不把它表述为足协权威字段。 已追加 2026-06-27 中国 U17 第四期集训公开名单；该 later-camp-callup 不计入 AFC U17 2026 终报名 23 人。"
     }
   },
   {
     "id": "cn-li-dongchen-2010",
+    "overseas_status": "active-registered",
     "name": "Li Dongchen",
     "local_name": "李东宸",
     "country": "China PR",
@@ -681,7 +713,7 @@
     ],
     "external_links": [
       {
-        "type": "profile",
+        "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/dongchen-li/profil/spieler/1283236"
       },
@@ -734,10 +766,11 @@
   },
   {
     "id": "cn-liu-shaoziyang-2003",
+    "overseas_status": "active-registered",
     "name": "Liu Shaoziyang",
     "local_name": "刘邵子洋",
     "country": "China PR",
-    "birth_date": "2003-12-13",
+    "birth_date": "2003-12-11",
     "age_band": "u23",
     "primary_position": "Goalkeeper",
     "height_cm": 190,
@@ -817,9 +850,9 @@
         "url": "https://en.wikipedia.org/wiki/Liu_Shaoziyang"
       },
       {
-        "type": "profile",
+        "type": "transfermarkt",
         "label": "Transfermarkt profile",
-        "url": "https://www.transfermarkt.com/shaoziyang-liu/profil/spieler/925293"
+        "url": "https://www.transfermarkt.com/shaoziyang-liu/profil/spieler/966946"
       }
     ],
     "verification": {

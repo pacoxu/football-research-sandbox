@@ -1,0 +1,81 @@
+name: data-snapshot
+
+on:
+  schedule:
+    - cron: "17 2 1 * *"
+  workflow_dispatch:
+    inputs:
+      snapshot_kind:
+        description: Snapshot type; event and scope snapshots require a slug
+        required: true
+        default: monthly
+        type: choice
+        options:
+          - monthly
+          - event
+          - scope
+      snapshot_slug:
+        description: Lowercase kebab-case event or scope id, for example afc-u20-2027
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-snapshot-main
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      SNAPSHOT_KIND: ${{ github.event_name == 'schedule' && 'monthly' || inputs.snapshot_kind }}
+      SNAPSHOT_SLUG: ${{ inputs.snapshot_slug || '' }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25
+
+      - name: Validate data and tests
+        run: |
+          npm run validate-data
+          npm test
+
+      - name: Verify generated site data
+        run: |
+          npm run build-data
+          git diff --exit-code -- data/site
+
+      - name: Build snapshot manifest
+        id: manifest
+        run: node scripts/create-snapshot-manifest.mjs
+
+      - name: Upload snapshot manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.manifest.outputs.tag }}
+          path: .snapshot/snapshot-manifest.json
+          if-no-files-found: error
+
+      - name: Publish snapshot release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SNAPSHOT_TAG: ${{ steps.manifest.outputs.tag }}
+        run: |
+          if gh release view "$SNAPSHOT_TAG" >/dev/null 2>&1; then
+            echo "Snapshot release $SNAPSHOT_TAG already exists; leaving it unchanged."
+            exit 0
+          fi
+          gh release create "$SNAPSHOT_TAG" .snapshot/snapshot-manifest.json \
+            --target "$GITHUB_SHA" \
+            --title "Data snapshot $SNAPSHOT_TAG" \
+            --notes-file .snapshot/snapshot-release-notes.md
