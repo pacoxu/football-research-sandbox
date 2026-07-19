@@ -1,10 +1,23 @@
 # 亚洲教练扩展口径与试点样本
 
-更新时间：2026-07-11
+更新时间：2026-07-19
 
 本文件对应 [issue #20](https://github.com/pacoxu/football-research-sandbox/issues/20)，用于把亚洲教练样本从现有 `data/raw/big-five-asian-coaches.json` 扩展到五大联赛之外。目标不是继续往五大联赛主表塞记录，而是先定义可落库字段、边界和首批试点样本。
 
-实现状态：统一表 `data/raw/asian-coaches.json`、loader、站点聚合和 validator 已落地。首批收录 Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting 五名教练、10 段任期；逐场战绩仍按分步原则保留为 `null`。
+实现状态：统一表 `data/raw/asian-coaches.json`、loader、站点聚合和 validator 已落地。Issue #12 第二批补入 Kevin Muscat、Kim Pan-gon、Akira Nishino、Masatada Ishii、Amir Ghalenoei、Choi Kang-hee，当前共11名教练、19段任期；逐场战绩仍按分步原则保留为 `null`。
+
+## Issue #12 第二批核验结果
+
+| 教练 | 已落库任期 | 核验边界 |
+| --- | --- | --- |
+| Kevin Muscat | Yokohama F. Marinos 2021-2023；Shanghai Port 2023- | AFC 可闭环任命和岗位；上海海港现任状态在2026年资料中复核，战绩未录。 |
+| Kim Pan-gon | Malaysia 2022-2024；Selangor 2026- | FAM 辞任事实由 AFC 转述，Selangor 任命使用俱乐部公告。Ulsan 历史暂不重复堆叠。 |
+| Akira Nishino | Japan 2018；Thailand 2019-2021 | JFA 任命与 AFC 的泰国任命/离任资料闭环；兼任 Thailand U23 不另建重复任期。 |
+| Masatada Ishii | Thailand 2023-2025 | 2025年10月已离任，不再沿用旧研究页的开放任期。 |
+| Amir Ghalenoei | IR Iran 2023- | AFC 转述 FFIRI 任命，并由2026世界杯名单资料复核仍在任。 |
+| Choi Kang-hee | Shandong Taishan 2023-2025 | 2025年7月起无法现场执教；结束月表示实际主教练职责中断，不推断合同解除。 |
+
+第二批校验固定检查六个 coach id，并要求每段任期至少有一条非二级来源。`big-five-asian-coaches.json` 未改动，因为这些任期均不属于五大联赛顶级联赛一线队联赛战绩口径。
 
 ## 结论
 
@@ -143,9 +156,9 @@
 
 ## 下一步
 
-1. 第二批优先补 Kevin Muscat、Kim Pan-gon、Akira Nishino、Masatada Ishii、Amir Ghalenoei、Choi Kang-hee，并坚持每段任期至少一条官方来源。
-2. 逐步为首批任期补同口径逐场战绩；在完成审计前继续保留 `record: null`。
-3. 若站点需要独立展示，再增加扩展教练筛选和卡片；当前只将数据发布到 `data/site/overview.json`，不混入五大联赛主表页面。
+1. 逐步为两批任期补同口径逐场战绩；在完成审计前继续保留 `record: null`。
+2. 对开放任期按年度复核，发现离任时同时补结束月份和官方离任来源。
+3. 若站点需要独立展示，再增加扩展教练筛选和卡片；当前继续通过 `data/site/overview.json` 聚合，不混入五大联赛主表页面。
 
 ## 已核和待补来源
 

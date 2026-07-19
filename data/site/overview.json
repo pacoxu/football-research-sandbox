@@ -30620,9 +30620,9 @@
   "china_youth_development_coaches": {
     "id": "china-youth-development-coaches",
     "schema_version": 1,
-    "last_checked": "2026-07-18",
+    "last_checked": "2026-07-19",
     "scope": "中国境内长期从事男子青少年足球启蒙、梯队训练、校园足球或青训技术管理的具名教练样本。小学、体校、足校、职业俱乐部梯队、独立基地和民间项目分别标注；不与成年一线队或国字号主教练统计混算。",
-    "coverage_status": "seed",
+    "coverage_status": "expanded-partial",
     "role_policy": {
       "included": [
         "校园足球队主教练或总教练",
@@ -31078,7 +31078,33 @@
           "status": "verified",
           "last_checked": "2026-07-18",
           "notes": "人物与带队事实可核；不在本表断言中国足协教练员等级，项目批次、球员归属和2034杯赛事继续由专题档案维护。"
-        }
+        },
+        "batch_assignments": [
+          {
+            "batch": "2014",
+            "team_label": "中国足球小将2014队",
+            "role": "比赛主教练、选材者",
+            "age_band": "u12",
+            "snapshot_year": "2026",
+            "source_links": [
+              {
+                "type": "self-published",
+                "label": "中国足球小将2014梯队首批队员名单（项目公开账号）",
+                "url": "https://www.bilibili.com/video/BV13x4y157jQ/",
+                "checked_at": "2026-07-19",
+                "claim": "确认2014批次以独立梯队名义公开组建，董路为发布账号与项目负责人。"
+              },
+              {
+                "type": "secondary-media",
+                "label": "新浪体育：足球小将2014队由董路带队参加2026年赛事",
+                "url": "https://sports.sina.cn/2026-07-15/detail-inihwmih1164221.d.html",
+                "checked_at": "2026-07-19",
+                "claim": "交叉确认2026年2014队实际比赛带队人为董路；不据此外推长期教练组其他成员。"
+              }
+            ],
+            "verification_notes": "只确认董路在2014队的比赛主教练和选材职责；未见可靠具名来源的助教、守门员教练不填。"
+          }
+        ]
       },
       {
         "id": "cn-yerbolati-nurlan-altay-u14",
@@ -31126,20 +31152,121 @@
           "last_checked": "2026-07-18",
           "notes": "地方党报原版第4版第145至149行可核。当前仅确认2025年2月赛事快照，不把用户口述的“叶教练”扩写为其他人，也不推断长期任期。"
         }
+      },
+      {
+        "id": "cn-tang-xiaocheng-shandong-u15",
+        "name": {
+          "zh": "唐晓程",
+          "en": "Tang Xiaocheng",
+          "native": "唐晓程"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "山东泰山足球俱乐部U15梯队",
+          "short_name": "山东泰山U15/鲁能足校",
+          "type": "professional-academy",
+          "province": "山东",
+          "city": "济南/潍坊"
+        },
+        "role": "U15梯队主教练",
+        "age_bands": [
+          "u15"
+        ],
+        "period": {
+          "start": null,
+          "end": null,
+          "precision": "snapshot",
+          "status": "confirmed-2025"
+        },
+        "profile_summary": "2025年以主教练身份带山东泰山U15参加第四届中青赛男子U15组并夺冠；该条只确认2025赛季快照，不外推其他年龄段岗位。",
+        "methodology_tags": [
+          "职业梯队",
+          "中青赛",
+          "赛季快照",
+          "鲁能足校体系"
+        ],
+        "source_links": [
+          {
+            "type": "official-association",
+            "label": "中国足协：第四届中青赛男子U15收官，山东泰山四连冠",
+            "url": "https://www.thecfa.cn/qcxwzz/20250823/36830.html",
+            "checked_at": "2026-07-19",
+            "claim": "确认唐晓程执教山东泰山U15及2025年中青赛职责范围。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-19",
+          "notes": "中国足协赛事报道明确写出教练、球队与U15范围；任期仅按2025赛季快照记录。"
+        }
+      },
+      {
+        "id": "jp-masaaki-nakamura-evergrande-2008",
+        "name": {
+          "zh": "中村雅昭",
+          "en": "Masaaki Nakamura",
+          "native": "中村雅昭"
+        },
+        "nationality": "Japan",
+        "organization": {
+          "name": "恒大足球学校2008年龄段梯队",
+          "short_name": "恒大足校08年龄段",
+          "type": "professional-academy",
+          "province": "广东",
+          "city": "清远"
+        },
+        "role": "2008年龄段梯队主教练",
+        "age_bands": [
+          "u15"
+        ],
+        "period": {
+          "start": "2023",
+          "end": "2023",
+          "precision": "year",
+          "status": "former"
+        },
+        "profile_summary": "2023年以恒大足校08年龄段主教练身份带领以足校球员和教练为班底的中国U15队参加东亚足联U15锦标赛。",
+        "methodology_tags": [
+          "足校梯队",
+          "单年龄段",
+          "U15",
+          "赛事教练组"
+        ],
+        "source_links": [
+          {
+            "type": "official-school",
+            "label": "恒大足校：东亚足联U15锦标赛夺冠，球员和教练为班底",
+            "url": "https://fs.evergrande.com/show.php?id=1139",
+            "checked_at": "2026-07-19",
+            "claim": "确认中村雅昭为恒大足校08年龄段队伍主教练及2023赛事带队身份。"
+          },
+          {
+            "type": "official-association",
+            "label": "中国足协：中国U15参加2023东亚足联U15锦标赛",
+            "url": "https://www.thecfa.cn/zhongguozhidui/20230831/33143.html",
+            "checked_at": "2026-07-19",
+            "claim": "交叉确认中村雅昭为恒大足校U15主教练和赛事主教练。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-19",
+          "notes": "学校与足协来源闭环；没有2026续任公告，故不标现任。"
+        }
       }
     ],
     "watchlist": [
       {
         "organization": "山东鲁能泰山足球学校",
-        "need": "补齐2026年各年龄段主教练、技术总监埃里克的全名与官方履历。"
+        "need": "已补2025山东泰山U15主教练快照；继续补U10-U14、U17-U19在同一核查年度的具名官方名单。"
       },
       {
         "organization": "恒大足球学校",
-        "need": "补齐U15、U17现任主教练及各梯队任期，避免用单届冠军报道外推全校教练架构。"
+        "need": "已补2008年龄段历史主教练并保留2025 U13样本；继续寻找U9-U17同一核查年度的具名官方名单。"
       },
       {
         "organization": "中国足球小将",
-        "need": "按2014、2015、2016等批次拆分董路、徐亮及其他实际带队教练，区分临时比赛合作与长期训练。"
+        "need": "已拆2014批次董路实际比赛职责；继续核验2015、2016批次及具名助教，区分临时合作与长期训练。"
       }
     ]
   },
@@ -31753,20 +31880,20 @@
       "zh": "五大联赛之外的亚洲主教练试点",
       "en": "Asian head coaches beyond the big five leagues"
     },
-    "last_checked": "2026-07-11",
+    "last_checked": "2026-07-19",
     "summary": {
-      "zh": "统一记录 AFC 成员协会教练在欧洲非五大顶级联赛、AFC 成年与青年国家队、亚洲顶级联赛中的一线队主教练任期。首批只落任命事实和官方来源，战绩允许待后续逐场核验。",
-      "en": "A unified pilot for AFC-association head coaches in non-big-five European top flights, AFC senior and youth national teams, and Asian top-flight clubs. The first release records appointments and official sources while allowing match records to remain pending."
+      "zh": "统一记录 AFC 成员协会教练在欧洲非五大顶级联赛、AFC 成年与青年国家队、亚洲顶级联赛中的一线队主教练任期。第二批已扩至11名教练；只落任命事实和官方来源，战绩允许待后续逐场核验。",
+      "en": "A unified sample of AFC-association head coaches in non-big-five European top flights, AFC senior and youth national teams, and Asian top-flight clubs. The second release covers 11 coaches; appointments require official sources while match records may remain pending."
     },
     "scope_counts": {
-      "afc_member_association": 5,
-      "geographic_broad": 5
+      "afc_member_association": 11,
+      "geographic_broad": 11
     },
     "stint_counts_by_scope": {
       "europe_non_big_five_top_flight": 1,
-      "afc_senior_national_team": 4,
+      "afc_senior_national_team": 9,
       "afc_youth_national_team": 1,
-      "asian_top_flight_club": 4,
+      "asian_top_flight_club": 8,
       "afc_continental_club": 0
     },
     "role_policy": {
@@ -32215,6 +32342,403 @@
               "status": "verified",
               "last_checked": "2026-07-11",
               "notes": "AFC sources confirm her Eastern first-team role, 2015-16 Hong Kong Premier League title, and 2017 AFC Champions League participation."
+            }
+          }
+        ],
+        "source_links": [],
+        "confidence": "high"
+      },
+      {
+        "id": "kevin-muscat",
+        "name": "Kevin Muscat",
+        "local_name": "凯文·穆斯卡特",
+        "nationality": "Australia",
+        "association": "Football Australia",
+        "association_confederation": "AFC",
+        "counted_in": [
+          "afc_member_association",
+          "geographic_broad"
+        ],
+        "boundary_notes": [],
+        "stints": [
+          {
+            "team": "Yokohama F. Marinos",
+            "team_country": "Japan",
+            "team_type": "club",
+            "role_scope": "club_first_team",
+            "competition_scope": "asian_top_flight_club",
+            "competition": "J1 League",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2021-07",
+              "end": "2023-12"
+            },
+            "season": "2021-2023",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "AFC: Muscat to leave Marinos",
+                "url": "https://www.the-afc.com/en/club/afc_champions_league/news/muscat_to_leave_marinos.html",
+                "type": "competition-record"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "AFC confirms the 2021 takeover and the end-of-2023 departure; no domestic match totals are inferred."
+            }
+          },
+          {
+            "team": "Shanghai Port FC",
+            "team_country": "China PR",
+            "team_type": "club",
+            "role_scope": "club_first_team",
+            "competition_scope": "asian_top_flight_club",
+            "competition": "Chinese Super League",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2023-12",
+              "end": null
+            },
+            "season": "2024-current",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "AFC: Muscat takes charge of Shanghai Port",
+                "url": "https://www.the-afc.com/en/more/domestic_leagues/news/muscat_takes_charge_of_shanghai_port.html",
+                "type": "competition-record"
+              },
+              {
+                "label": "AFC: Muscat as Shanghai Port head coach in ACL Elite",
+                "url": "https://www.the-afc.com/en/club/afc_champions_league_elite.html/news/muscat-pleased-with-shanghai-port%E2%80%99s-performance-despite-defeat",
+                "type": "competition-record"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "AFC confirms the December 2023 appointment and his role in March 2025; 2026 club reporting was checked before keeping the end open."
+            }
+          }
+        ],
+        "source_links": [],
+        "confidence": "high"
+      },
+      {
+        "id": "kim-pan-gon",
+        "name": "Kim Pan-gon",
+        "local_name": "金判坤",
+        "nationality": "Korea Republic",
+        "association": "Korea Football Association",
+        "association_confederation": "AFC",
+        "counted_in": [
+          "afc_member_association",
+          "geographic_broad"
+        ],
+        "boundary_notes": [],
+        "stints": [
+          {
+            "team": "Malaysia",
+            "team_country": "Malaysia",
+            "team_type": "senior_national_team",
+            "role_scope": "senior_national_team",
+            "competition_scope": "afc_senior_national_team",
+            "competition": "AFC Asian Cup / senior internationals",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2022-01",
+              "end": "2024-07"
+            },
+            "season": "2022-2024 cycle",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "AFC: Kim steps down as Malaysia head coach",
+                "url": "https://www.the-afc.com/en/national/afc_asian_cup/news/kim_steps_down_as_malaysia_head_coach.html",
+                "type": "competition-record"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "AFC, citing FAM, confirms the 2022 start and 16 July 2024 resignation."
+            }
+          },
+          {
+            "team": "Selangor FC",
+            "team_country": "Malaysia",
+            "team_type": "club",
+            "role_scope": "club_first_team",
+            "competition_scope": "asian_top_flight_club",
+            "competition": "Malaysia Super League",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2026-01",
+              "end": null
+            },
+            "season": "2025-26-current",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "Selangor FC appoints Kim Pan-gon as first-team head coach",
+                "url": "https://selangorfc.com/en/news/3687/Official%20%20Kim%20Pan-Gon%20Appointed%20Head%20Coach%20of%20Selangor%20FC",
+                "type": "club-announcement"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "The club announcement confirms a 5 January 2026 first-team appointment."
+            }
+          }
+        ],
+        "source_links": [],
+        "confidence": "high"
+      },
+      {
+        "id": "akira-nishino",
+        "name": "Akira Nishino",
+        "local_name": "西野朗",
+        "nationality": "Japan",
+        "association": "Japan Football Association",
+        "association_confederation": "AFC",
+        "counted_in": [
+          "afc_member_association",
+          "geographic_broad"
+        ],
+        "boundary_notes": [],
+        "stints": [
+          {
+            "team": "Japan",
+            "team_country": "Japan",
+            "team_type": "senior_national_team",
+            "role_scope": "senior_national_team",
+            "competition_scope": "afc_senior_national_team",
+            "competition": "FIFA World Cup 2018 / senior internationals",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2018-04",
+              "end": "2018-07"
+            },
+            "season": "2018 World Cup cycle",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "JFA appoints Nishino as SAMURAI BLUE head coach",
+                "url": "https://www.jfa.jp/national_team_2018/news/00016835/",
+                "type": "association-announcement"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "JFA appointment and historical profile confirm the April-July 2018 spell."
+            }
+          },
+          {
+            "team": "Thailand",
+            "team_country": "Thailand",
+            "team_type": "senior_national_team",
+            "role_scope": "senior_national_team",
+            "competition_scope": "afc_senior_national_team",
+            "competition": "Asian Qualifiers / senior internationals",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2019-07",
+              "end": "2021-07"
+            },
+            "season": "2019-2021 cycle",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "AFC: Nishino to chart Thailand's future",
+                "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/nishino_to_chart_thailands_future.html",
+                "type": "competition-record"
+              },
+              {
+                "label": "AFC: Thailand part ways with Nishino",
+                "url": "https://www.the-afc.com/en/national/afc_asian_cup/news/thailand_part_ways_with_nishino.html",
+                "type": "competition-record"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "AFC records the FA Thailand appointment and July 2021 separation; the concurrent U23 responsibility is not duplicated as another stint."
+            }
+          }
+        ],
+        "source_links": [],
+        "confidence": "high"
+      },
+      {
+        "id": "masatada-ishii",
+        "name": "Masatada Ishii",
+        "local_name": "石井正忠",
+        "nationality": "Japan",
+        "association": "Japan Football Association",
+        "association_confederation": "AFC",
+        "counted_in": [
+          "afc_member_association",
+          "geographic_broad"
+        ],
+        "boundary_notes": [],
+        "stints": [
+          {
+            "team": "Thailand",
+            "team_country": "Thailand",
+            "team_type": "senior_national_team",
+            "role_scope": "senior_national_team",
+            "competition_scope": "afc_senior_national_team",
+            "competition": "AFC Asian Cup / Asian Qualifiers",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2023-11",
+              "end": "2025-10"
+            },
+            "season": "2023-2025 cycle",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "AFC: Polking leaves Thailand and Ishii takes over",
+                "url": "https://www.the-afc.com/en/national/asian_qualifiers/news/polking_leaves_thailand_.html",
+                "type": "competition-record"
+              },
+              {
+                "label": "AFC: Thailand and Ishii go separate ways",
+                "url": "https://www.the-afc.com/en/national/afc_asian_cup.html/news/thailand-and-ishii-go-separate-ways",
+                "type": "competition-record"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "AFC confirms the November 2023 succession and FA Thailand's 21 October 2025 separation announcement."
+            }
+          }
+        ],
+        "source_links": [],
+        "confidence": "high"
+      },
+      {
+        "id": "amir-ghalenoei",
+        "name": "Amir Ghalenoei",
+        "local_name": "阿米尔·加莱诺埃",
+        "nationality": "Iran",
+        "association": "Football Federation Islamic Republic of Iran",
+        "association_confederation": "AFC",
+        "counted_in": [
+          "afc_member_association",
+          "geographic_broad"
+        ],
+        "boundary_notes": [],
+        "stints": [
+          {
+            "team": "IR Iran",
+            "team_country": "Iran",
+            "team_type": "senior_national_team",
+            "role_scope": "senior_national_team",
+            "competition_scope": "afc_senior_national_team",
+            "competition": "AFC Asian Cup / FIFA World Cup 2026 qualification",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2023-03",
+              "end": null
+            },
+            "season": "2023-2026 cycle",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "AFC: Ghalenoei named IR Iran head coach",
+                "url": "https://www.the-afc.com/en/national/afc_asian_cup/news/ghalenoei_named_ir_iran_head_coach.html",
+                "type": "competition-record"
+              },
+              {
+                "label": "AFC: IR Iran 2026 World Cup squad named by Ghalenoei",
+                "url": "https://www.the-afc.com/en/national/fifa_world_cup.html/news/taremi-jahanbakhsh-to-front-ir-iran",
+                "type": "competition-record"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "AFC records FFIRI's March 2023 appointment and confirms him in post for the 2026 World Cup squad."
+            }
+          }
+        ],
+        "source_links": [],
+        "confidence": "high"
+      },
+      {
+        "id": "choi-kang-hee",
+        "name": "Choi Kang-hee",
+        "local_name": "崔康熙",
+        "nationality": "Korea Republic",
+        "association": "Korea Football Association",
+        "association_confederation": "AFC",
+        "counted_in": [
+          "afc_member_association",
+          "geographic_broad"
+        ],
+        "boundary_notes": [],
+        "stints": [
+          {
+            "team": "Shandong Taishan FC",
+            "team_country": "China PR",
+            "team_type": "club",
+            "role_scope": "club_first_team",
+            "competition_scope": "asian_top_flight_club",
+            "competition": "Chinese Super League",
+            "role_type": "head_coach",
+            "spell_type": "permanent",
+            "period": {
+              "start": "2023-05",
+              "end": "2025-07"
+            },
+            "season": "2023-2025",
+            "count_in_primary": true,
+            "record_scope": "appointment fact only; match-level record pending audit",
+            "record": null,
+            "source_links": [
+              {
+                "label": "Shandong Taishan appoints Choi Kang-hee as first-team head coach",
+                "url": "https://www.lnts.com.cn/newsdetail/1694.html",
+                "type": "club-announcement"
+              },
+              {
+                "label": "Shandong Taishan: temporary coaching team during Choi's treatment",
+                "url": "https://www.lnts.com.cn/newsdetail/2628.html",
+                "type": "club-announcement"
+              }
+            ],
+            "verification": {
+              "status": "verified",
+              "last_checked": "2026-07-19",
+              "notes": "The club appointment is preserved via CCTV and the club confirms he could no longer coach on site from 8 July 2025. The end records active coaching scope, not a claimed contract termination."
             }
           }
         ],
