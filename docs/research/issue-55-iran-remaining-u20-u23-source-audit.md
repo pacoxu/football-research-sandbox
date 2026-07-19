@@ -2,7 +2,7 @@
 
 核查日期：2026-07-18
 
-本文件对应 [issue #55](https://github.com/starryjog/football-research-sandbox/issues/55)，也是 [issue #17](https://github.com/starryjog/football-research-sandbox/issues/17) 的来源审计子任务。目标是先确认“国家 × 赛事”是否存在可复核的 AFC 终报名表，再决定是否拆 23 人完整名单任务；本轮不向球员库加入搜索摘要、非官方样本或任意 8—12 人截取名单。
+本文件对应 [issue #55](https://github.com/pacoxu/football-research-sandbox/issues/55)，也是 [issue #17](https://github.com/pacoxu/football-research-sandbox/issues/17) 的来源审计子任务。目标是先确认“国家 × 赛事”是否存在可复核的 AFC 终报名表，再决定是否拆 23 人完整名单任务；本轮不向球员库加入搜索摘要、非官方样本或任意 8—12 人截取名单。
 
 ## 状态口径
 
