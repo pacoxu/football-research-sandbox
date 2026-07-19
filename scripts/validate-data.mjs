@@ -1913,6 +1913,21 @@ export async function validateData() {
 
   for (const country of dataset.overseasHistory.countries) {
     assert(Array.isArray(country.bucket_focus), `Invalid overseas bucket list for ${country.country}`);
+    const trialRecordIds = new Set();
+    for (const record of country.historical_trial_records ?? []) {
+      assert(record.id && !trialRecordIds.has(record.id), `Duplicate historical trial record on ${country.country}: ${record.id}`);
+      trialRecordIds.add(record.id);
+      assert(record.name && record.local_name && record.position, `Missing historical trial identity on ${record.id}`);
+      assert(record.club && record.country && record.period, `Missing historical trial destination on ${record.id}`);
+      assert(["trial", "training-trial"].includes(record.event_type), `Invalid historical trial event_type on ${record.id}`);
+      assert(record.status === "historical-trial-only", `Invalid historical trial status on ${record.id}`);
+      assert(record.signed === false && record.registration_changed === false, `Historical trial must not imply signing or registration on ${record.id}`);
+      assert(typeof record.summary === "string" && record.summary.length > 0, `Missing historical trial summary on ${record.id}`);
+      assert(Array.isArray(record.source_links) && record.source_links.length > 0, `Missing historical trial sources on ${record.id}`);
+      for (const source of record.source_links) {
+        assert(source.label && /^https?:\/\//.test(source.url), `Invalid historical trial source on ${record.id}`);
+      }
+    }
     if (country.big_five_appearance_checklist !== undefined) {
       validateBigFiveChecklist(country.big_five_appearance_checklist, country.country);
     }
