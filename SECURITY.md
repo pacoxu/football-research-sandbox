@@ -16,7 +16,7 @@
 
 ## 报告方式
 
-优先使用 GitHub 的 [Private vulnerability report](https://github.com/starryjog/football-research-sandbox/security/advisories/new)。如果该入口当前不可用，请先通过维护者主页确认私密联系方式；不要改用公开 issue 粘贴敏感正文、密钥或未成年人的非公开资料。
+优先使用 GitHub 的 [Private vulnerability report](https://github.com/pacoxu/football-research-sandbox/security/advisories/new)。如果该入口当前不可用，请先通过维护者主页确认私密联系方式；不要改用公开 issue 粘贴敏感正文、密钥或未成年人的非公开资料。
 
 只提供定位问题所需的最小信息：
 

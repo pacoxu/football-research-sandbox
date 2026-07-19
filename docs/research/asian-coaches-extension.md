@@ -2,7 +2,7 @@
 
 更新时间：2026-07-11
 
-本文件对应 [issue #20](https://github.com/starryjog/football-research-sandbox/issues/20)，用于把亚洲教练样本从现有 `data/raw/big-five-asian-coaches.json` 扩展到五大联赛之外。目标不是继续往五大联赛主表塞记录，而是先定义可落库字段、边界和首批试点样本。
+本文件对应 [issue #20](https://github.com/pacoxu/football-research-sandbox/issues/20)，用于把亚洲教练样本从现有 `data/raw/big-five-asian-coaches.json` 扩展到五大联赛之外。目标不是继续往五大联赛主表塞记录，而是先定义可落库字段、边界和首批试点样本。
 
 实现状态：统一表 `data/raw/asian-coaches.json`、loader、站点聚合和 validator 已落地。首批收录 Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting 五名教练、10 段任期；逐场战绩仍按分步原则保留为 `null`。
 
