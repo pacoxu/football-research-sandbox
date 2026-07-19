@@ -35,6 +35,7 @@ flowchart LR
 - 必填字段：`id`、`name`、`local_name`、`names`、`country`、`birth_date`、`age_band`、`primary_position`、`registration_club`、`training_pathway`、`focus_tags`、`tournament_participation`、`external_links`、`verification`。
 - `birth_date` 和核验日期格式必须是 `YYYY-MM-DD`。
 - 多语言姓名块必须包含 `zh`、`en`、`native`，日本球员需 `ja`，韩国球员需 `ko`。
+- 中国、日本、韩国和乌兹别克斯坦 263 名球员必须具备 `native_verification`；`verified` 姓名必须有官方来源和合法语言标签，`unresolved` 不得写入推测的本土姓名。
 - `registration_club.name` 和 `registration_club.country` 必须是字符串。
 - `training_pathway` 不能为空，每一步至少有 `stage_label`、`organization`、`country`。
 - `external_links` 不能为空，且每条必须有合法 `type`、`label`、`http/https url`。
@@ -126,12 +127,16 @@ flowchart LR
 - `military-service-club`
 - `overseas-academy`
 - `national-academy`
+- `football-school`
+- `professional-club-unspecified`
 
 `source_layers.confidence`：
 
 - `high`
 - `medium`
 - `low`
+
+复核时效报告使用 `npm run audit:freshness -- --as-of YYYY-MM-DD`。默认非阻塞；`--strict` 在有逾期项时失败，`--format json` 输出机器可读结果。
 
 `tournament-archive.source_version.type`：
 

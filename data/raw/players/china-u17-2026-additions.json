@@ -11,20 +11,23 @@
     "weight_kg": 85,
     "registration_club": {
       "name": "Evergrande Football School",
-      "country": "China"
+      "country": "China",
+      "organization_type": "football-school"
     },
     "training_pathway": [
       {
         "stage_label": "济源出身 / 恒大足校节点",
         "organization": "Evergrande Football School",
         "country": "China",
-        "note": "济源教育系统公开报道将其列为济源籍球员，2024 年入选 U15 国家男子足球队名单；媒体口径则补充其于 2020 年考入恒大足球学校。"
+        "note": "济源教育系统公开报道将其列为济源籍球员，2024 年入选 U15 国家男子足球队名单；媒体口径则补充其于 2020 年考入恒大足球学校。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2024 2009年龄段门将专项集训",
         "organization": "Evergrande Football School",
         "country": "China",
-        "note": "中国足协 2024 年第一期 2009 年龄段守门员集训通知中，广州恒大足校入选门将为江承恩、秦子牛。"
+        "note": "中国足协 2024 年第一期 2009 年龄段守门员集训通知中，广州恒大足校入选门将为江承恩、秦子牛。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2024 广州U15最佳门将节点",
@@ -42,25 +45,29 @@
         "stage_label": "2025/11 U16第五期集训",
         "organization": "Evergrande Football School",
         "country": "China",
-        "note": "中国足协 2025 年第五期 U16 集训通知中，与江承恩、程晟涵等恒大足校球员一同入选，备战 2026 U17 亚洲杯预选赛。"
+        "note": "中国足协 2025 年第五期 U16 集训通知中，与江承恩、程晟涵等恒大足校球员一同入选，备战 2026 U17 亚洲杯预选赛。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026/01 U17第一期集训",
         "organization": "Evergrande Football School",
         "country": "China",
-        "note": "中国足协 2026 年第一期 U17 集训通知中入选 26 人名单，继续以恒大足球学校球员身份进入决赛阶段备战。"
+        "note": "中国足协 2026 年第一期 U17 集训通知中入选 26 人名单，继续以恒大足球学校球员身份进入决赛阶段备战。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026/03 U17第二期集训",
         "organization": "Evergrande Football School",
         "country": "China",
-        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选，单位仍写作恒大足球学校。"
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选，单位仍写作恒大足球学校。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026 亚洲杯报名归属",
         "organization": "Evergrande Football School",
         "country": "China",
-        "note": "AFC U17 2026 最终报名表列其为 1 号门将，DOB 为 2009-07-10，俱乐部登记为 Evergrande Football School。"
+        "note": "AFC U17 2026 最终报名表列其为 1 号门将，DOB 为 2009-07-10，俱乐部登记为 Evergrande Football School。",
+        "organization_type": "football-school"
       }
     ],
     "focus_tags": [
@@ -188,7 +195,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Tsinghua University High School",
-      "country": "China"
+      "country": "China",
+      "organization_type": "high-school"
     },
     "training_pathway": [
       {
@@ -201,7 +209,8 @@
         "stage_label": "2022 清华附中U13节点",
         "organization": "Tsinghua University High School",
         "country": "China",
-        "note": "中国足协首届中国青少年足球联赛 U13 组决赛战报可核其代表清华附中 U13 首发，对手为山东泰山 U13，说明其此时已进入清华附中 09 年龄段主线。"
+        "note": "中国足协首届中国青少年足球联赛 U13 组决赛战报可核其代表清华附中 U13 首发，对手为山东泰山 U13，说明其此时已进入清华附中 09 年龄段主线。",
+        "organization_type": "high-school"
       },
       {
         "stage_label": "2025/03 U16第一期集训",
@@ -213,7 +222,8 @@
         "stage_label": "2025/09 清华附中中青赛夺冠",
         "organization": "Tsinghua University High School",
         "country": "China",
-        "note": "2025 年第四届中青赛 U17 组决赛，清华附中 2 比 1 击败重庆南开，南子勋打入球队第二球，并在赛后与陈柄汐、周雨诺、赵松源一起进入新一届 U16 国家男足。"
+        "note": "2025 年第四届中青赛 U17 组决赛，清华附中 2 比 1 击败重庆南开，南子勋打入球队第二球，并在赛后与陈柄汐、周雨诺、赵松源一起进入新一届 U16 国家男足。",
+        "organization_type": "high-school"
       },
       {
         "stage_label": "2025/11 U16第五期集训",
@@ -231,7 +241,8 @@
         "stage_label": "2026 亚洲杯报名归属",
         "organization": "Tsinghua University High School",
         "country": "China",
-        "note": "AFC U17 2026 最终报名表列其当前俱乐部为清华大学附属中学；赛事公开名单与媒体转述口径中常见其身披 3 号。"
+        "note": "AFC U17 2026 最终报名表列其当前俱乐部为清华大学附属中学；赛事公开名单与媒体转述口径中常见其身披 3 号。",
+        "organization_type": "high-school"
       }
     ],
     "focus_tags": [
@@ -366,7 +377,8 @@
     "weight_kg": 77,
     "registration_club": {
       "name": "Shandong Taishan FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
@@ -397,13 +409,15 @@
         "stage_label": "2024/10 U16第四期集训",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "中国足协 U16 国家男子足球队第四期集训通知中，以山东泰山足球俱乐部球员身份入选，上村健一负责该期备战。"
+        "note": "中国足协 U16 国家男子足球队第四期集训通知中，以山东泰山足球俱乐部球员身份入选，上村健一负责该期备战。",
+        "organization_type": "professional-club-unspecified"
       },
       {
         "stage_label": "2024/06 U15第四期集训",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "中国足协 U15 国家男子足球选拔队第四期集训及赴韩国拉练通知中，以山东泰山足球俱乐部球员身份入选。"
+        "note": "中国足协 U15 国家男子足球选拔队第四期集训及赴韩国拉练通知中，以山东泰山足球俱乐部球员身份入选。",
+        "organization_type": "professional-club-unspecified"
       },
       {
         "stage_label": "2025/11 U16第五期集训",
@@ -427,7 +441,8 @@
         "stage_label": "2026 亚洲杯报名归属",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "AFC U17 2026 最终报名表列其当前俱乐部为山东泰山，身披 4 号。"
+        "note": "AFC U17 2026 最终报名表列其当前俱乐部为山东泰山，身披 4 号。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -569,7 +584,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Shandong Luneng Taishan Football School",
-      "country": "China"
+      "country": "China",
+      "organization_type": "football-school"
     },
     "training_pathway": [
       {
@@ -582,7 +598,8 @@
         "stage_label": "山东鲁能泰山足球学校主线",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "中国足协 2024-2026 多期 U15、U16、U17 集训通知均将其列为山东鲁能泰山足球学校球员，说明其正式培养与注册主线稳定指向鲁能足校 / 山东泰山青训。"
+        "note": "中国足协 2024-2026 多期 U15、U16、U17 集训通知均将其列为山东鲁能泰山足球学校球员，说明其正式培养与注册主线稳定指向鲁能足校 / 山东泰山青训。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2024/11 U15赴日本拉练",
@@ -747,7 +764,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Shandong Luneng Taishan Football School",
-      "country": "China"
+      "country": "China",
+      "organization_type": "football-school"
     },
     "training_pathway": [
       {
@@ -766,7 +784,8 @@
         "stage_label": "2019/04 鲁能足校试训",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "2018 年底在南京迎新杯被鲁能球探关注后，2019 年 4 月前往鲁能足校试训并通过。"
+        "note": "2018 年底在南京迎新杯被鲁能球探关注后，2019 年 4 月前往鲁能足校试训并通过。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2019/09 鲁能09黄队入队",
@@ -790,7 +809,8 @@
         "stage_label": "山东泰山 / 鲁能足校09主线",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "其公开成长主线稳定指向安徽校园足球进入鲁能足校，再到山东泰山 09 梯队，并不属于董路中国足球小将的主培养线。"
+        "note": "其公开成长主线稳定指向安徽校园足球进入鲁能足校，再到山东泰山 09 梯队，并不属于董路中国足球小将的主培养线。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2024/09 U15第五期集训",
@@ -808,19 +828,22 @@
         "stage_label": "2025/11 U16第五期集训",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "中国足协 2025 年第五期 U16 集训通知中，以山东鲁能泰山足球学校球员身份入选，备战 2026 U17 亚洲杯预选赛。"
+        "note": "中国足协 2025 年第五期 U16 集训通知中，以山东鲁能泰山足球学校球员身份入选，备战 2026 U17 亚洲杯预选赛。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026/03 U17第二期集训",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选，备战 U17 亚洲杯决赛阶段。"
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选，备战 U17 亚洲杯决赛阶段。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026 报名归属",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列入最终 23 人名单；媒体转述名单口径中，何思凡身披 7 号，通常被写作中场或前场球员。"
+        "note": "AFC U17 2026 终报名表列入最终 23 人名单；媒体转述名单口径中，何思凡身披 7 号，通常被写作中场或前场球员。",
+        "organization_type": "football-school"
       }
     ],
     "focus_tags": [
@@ -964,7 +987,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Real Carabanchel CF",
-      "country": "Spain"
+      "country": "Spain",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
@@ -995,7 +1019,8 @@
         "stage_label": "2025/11 皇家卡拉万切尔节点",
         "organization": "Real Carabanchel CF",
         "country": "Spain",
-        "note": "中国足协 2025 年第五期 U16 集训通知将其登记为皇家卡拉万切尔足球俱乐部，这是当前足协公开文件中更靠后的留洋归属节点。"
+        "note": "中国足协 2025 年第五期 U16 集训通知将其登记为皇家卡拉万切尔足球俱乐部，这是当前足协公开文件中更靠后的留洋归属节点。",
+        "organization_type": "professional-club-unspecified"
       },
       {
         "stage_label": "2026 U17 国少阶段",
@@ -1137,14 +1162,16 @@
     "weight_kg": 67,
     "registration_club": {
       "name": "Shanghai Port FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shanghai Port FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -1191,14 +1218,16 @@
     "weight_kg": 74,
     "registration_club": {
       "name": "Shandong Taishan FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -1245,7 +1274,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Shandong Luneng Taishan Football School",
-      "country": "China"
+      "country": "China",
+      "organization_type": "football-school"
     },
     "training_pathway": [
       {
@@ -1258,7 +1288,8 @@
         "stage_label": "山东鲁能泰山足球学校主线",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "公开可核的 U14、U15、U17 足协集训通知长期将其所属单位写作山东鲁能泰山足球学校，应归入山东泰山 / 鲁能足校青训线，而非董路中国足球小将主培养线。"
+        "note": "公开可核的 U14、U15、U17 足协集训通知长期将其所属单位写作山东鲁能泰山足球学校，应归入山东泰山 / 鲁能足校青训线，而非董路中国足球小将主培养线。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2024/04 U14赴日本拉练",
@@ -1294,13 +1325,15 @@
         "stage_label": "2026/01 U17第一期集训",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "中国足协 2026 年 1 月中国 U17 国家男子足球队第一期集训通知中入选 26 人名单，以 2010 年龄段球员身份被带入以 2009 年龄段为主体的备战体系。"
+        "note": "中国足协 2026 年 1 月中国 U17 国家男子足球队第一期集训通知中入选 26 人名单，以 2010 年龄段球员身份被带入以 2009 年龄段为主体的备战体系。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026/03 U17第二期集训",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "中国足协 2026 年 3 月中国 U17 国家男子足球队第二期集训通知中继续入选 28 人名单，队伍进入 U17 亚洲杯决赛阶段备战。"
+        "note": "中国足协 2026 年 3 月中国 U17 国家男子足球队第二期集训通知中继续入选 28 人名单，队伍进入 U17 亚洲杯决赛阶段备战。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026 亚洲杯报名归属",
@@ -1436,7 +1469,8 @@
     "league_system_override": "Chinese Super League",
     "registration_club": {
       "name": "Wuhan Three Towns FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
@@ -1449,7 +1483,8 @@
         "stage_label": "武汉三镇青训主线",
         "organization": "Wuhan Three Towns FC",
         "country": "China",
-        "note": "此后公开足协名单基本持续把他列在武汉三镇足球俱乐部名下，地方报道也明确称其为武汉三镇青训小将。"
+        "note": "此后公开足协名单基本持续把他列在武汉三镇足球俱乐部名下，地方报道也明确称其为武汉三镇青训小将。",
+        "organization_type": "professional-club-unspecified"
       },
       {
         "stage_label": "2025/03 U16 欧洲拉练",
@@ -1473,19 +1508,22 @@
         "stage_label": "2026/01 U17 第一期开训",
         "organization": "Wuhan Three Towns FC",
         "country": "China",
-        "note": "中国足协 2026 年第一期 U17 集训通知中继续列在武汉三镇足球俱乐部名下。"
+        "note": "中国足协 2026 年第一期 U17 集训通知中继续列在武汉三镇足球俱乐部名下。",
+        "organization_type": "professional-club-unspecified"
       },
       {
         "stage_label": "2026/03 U17 第二期开训",
         "organization": "Wuhan Three Towns FC",
         "country": "China",
-        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选 28 人名单，备战 U17 亚洲杯决赛阶段。"
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续入选 28 人名单，备战 U17 亚洲杯决赛阶段。",
+        "organization_type": "professional-club-unspecified"
       },
       {
         "stage_label": "2026 亚洲杯报名归属",
         "organization": "Wuhan Three Towns FC",
         "country": "China",
-        "note": "武汉三镇相关报道写其随 U17 国足出征亚洲杯；赛事名单转述口径中通常列为 17 号中场。"
+        "note": "武汉三镇相关报道写其随 U17 国足出征亚洲杯；赛事名单转述口径中通常列为 17 号中场。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -1623,14 +1661,16 @@
     "weight_kg": 63,
     "registration_club": {
       "name": "Jinan De Run FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Jinan De Run FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -1677,14 +1717,16 @@
     "weight_kg": 73,
     "registration_club": {
       "name": "Shandong Taishan FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -1731,7 +1773,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Shandong Luneng Taishan Football School",
-      "country": "China"
+      "country": "China",
+      "organization_type": "football-school"
     },
     "training_pathway": [
       {
@@ -1768,19 +1811,22 @@
         "stage_label": "2025/11 U16第五期集训",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "中国足协 2025 年第五期 U16 集训通知中，与李钧鹏、张旭尧、张君豪、何思凡、萧晨熙等一同以山东鲁能泰山足球学校球员身份入选，备战 2026 U17 亚洲杯预选赛。"
+        "note": "中国足协 2025 年第五期 U16 集训通知中，与李钧鹏、张旭尧、张君豪、何思凡、萧晨熙等一同以山东鲁能泰山足球学校球员身份入选，备战 2026 U17 亚洲杯预选赛。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026/03 U17第二期集训",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "中国足协 2026 年第二期 U17 集训通知中继续以山东鲁能泰山足球学校球员身份入选，备战 U17 亚洲杯决赛阶段。"
+        "note": "中国足协 2026 年第二期 U17 集训通知中继续以山东鲁能泰山足球学校球员身份入选，备战 U17 亚洲杯决赛阶段。",
+        "organization_type": "football-school"
       },
       {
         "stage_label": "2026 报名归属",
         "organization": "Shandong Luneng Taishan Football School",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列其当前单位为山东鲁能泰山足球学校；媒体转述 23 人名单时将其列为 21 号。Transfermarkt 将其主位标为左后卫，名单口径有时又写作中场，更适合视作中后场多面手。"
+        "note": "AFC U17 2026 终报名表列其当前单位为山东鲁能泰山足球学校；媒体转述 23 人名单时将其列为 21 号。Transfermarkt 将其主位标为左后卫，名单口径有时又写作中场，更适合视作中后场多面手。",
+        "organization_type": "football-school"
       }
     ],
     "focus_tags": [
@@ -1918,14 +1964,16 @@
     "weight_kg": 78,
     "registration_club": {
       "name": "Shandong Taishan FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -1972,14 +2020,16 @@
     "weight_kg": 73,
     "registration_club": {
       "name": "Shandong Taishan FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -2026,14 +2076,16 @@
     "weight_kg": 74,
     "registration_club": {
       "name": "Shandong Taishan FC",
-      "country": "China"
+      "country": "China",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
         "organization": "Shandong Taishan FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。"
+        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [

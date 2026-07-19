@@ -1,4 +1,6 @@
-import { loadDataset } from "./lib/data-loader.mjs";
+import fs from "node:fs/promises";
+import path from "node:path";
+import { loadDataset, paths } from "./lib/data-loader.mjs";
 import { MARKET_VALUE_STATUSES } from "./lib/market-values.mjs";
 import {
   countOverseasStatuses,
@@ -137,8 +139,14 @@ const allowedOrganizationTypes = new Set([
   "professional-club",
   "military-service-club",
   "overseas-academy",
-  "national-academy"
+  "national-academy",
+  "football-school",
+  "professional-club-unspecified"
 ]);
+
+const nativeNameAuditCountries = new Set(["China PR", "Japan", "Korea Republic", "Uzbekistan"]);
+const allowedNativeVerificationStatuses = new Set(["verified", "unresolved"]);
+const allowedNativeLanguageTags = new Set(["zh-Hans", "ja-Jpan", "ko-Kore", "uz-Latn", "uz-Cyrl"]);
 
 const allowedYouthCompetitionTypes = new Set([
   "league-pyramid",
@@ -1225,6 +1233,64 @@ function validatePlayerNames(player) {
   }
 }
 
+function hasExpectedNativeScript(country, value, languageTag) {
+  const text = String(value ?? "");
+  if (country === "China PR") return languageTag === "zh-Hans" && /[\u3400-\u9fff]/u.test(text);
+  if (country === "Japan") return languageTag === "ja-Jpan" && /[\u3040-\u30ff\u3400-\u9fff]/u.test(text);
+  if (country === "Korea Republic") return languageTag === "ko-Kore" && /[\uac00-\ud7af]/u.test(text);
+  if (country === "Uzbekistan") {
+    if (languageTag === "uz-Cyrl") return /[\u0400-\u04ff]/u.test(text);
+    return languageTag === "uz-Latn" && /[A-Za-zʻʼ‘’]/u.test(text);
+  }
+  return false;
+}
+
+function validateNativeNameAudit(player, override) {
+  assert(override && typeof override === "object", `Missing native-name audit on ${player.id}`);
+  const verification = override.native_verification;
+  assert(verification && typeof verification === "object", `Missing native_verification on ${player.id}`);
+  assert(
+    allowedNativeVerificationStatuses.has(verification.status),
+    `Invalid native verification status on ${player.id}`
+  );
+  assert(isIsoDate(verification.checked_at), `Invalid native verification date on ${player.id}`);
+  assert(Array.isArray(verification.sources), `Invalid native verification sources on ${player.id}`);
+  assert(Array.isArray(verification.attempts), `Invalid native verification attempts on ${player.id}`);
+  assert(typeof verification.notes === "string" && verification.notes.length > 0, `Missing native verification notes on ${player.id}`);
+
+  if (verification.status === "verified") {
+    assert(allowedNativeLanguageTags.has(verification.language_tag), `Invalid native language tag on ${player.id}`);
+    assert(
+      hasExpectedNativeScript(player.country, override.native, verification.language_tag),
+      `Invalid verified native spelling on ${player.id}`
+    );
+    assert(verification.sources.length > 0, `Verified native name requires a source on ${player.id}`);
+    for (const source of verification.sources) validateSourceLayer(source, `${player.id}.native_verification`);
+    assert(
+      verification.sources.every((source) => (source.fields ?? []).includes("names.native")),
+      `Native-name source must declare names.native on ${player.id}`
+    );
+    assert(
+      (player.source_layers ?? []).some((layer) =>
+        verification.sources.some((source) => source.url === layer.url && source.claim === layer.claim)
+      ),
+      `Verified native-name source was not merged on ${player.id}`
+    );
+    if (player.country === "Japan") assert(override.ja === override.native, `Japanese native/ja mismatch on ${player.id}`);
+    if (player.country === "Korea Republic") assert(override.ko === override.native, `Korean native/ko mismatch on ${player.id}`);
+  } else {
+    assert(override.native === undefined, `Unresolved native name must not set native on ${player.id}`);
+    assert(verification.language_tag === null, `Unresolved native language tag must be null on ${player.id}`);
+    assert(verification.sources.length === 0, `Unresolved native name must not claim sources on ${player.id}`);
+    assert(verification.attempts.length > 0, `Unresolved native name requires audit attempts on ${player.id}`);
+    for (const attempt of verification.attempts) {
+      assert(attempt.label && /^https?:\/\//.test(attempt.url), `Invalid native audit attempt on ${player.id}`);
+      assert(isIsoDate(attempt.checked_at), `Invalid native audit attempt date on ${player.id}`);
+    }
+    assert(player.names.native === player.names.en, `Unresolved native name must fall back to English on ${player.id}`);
+  }
+}
+
 function validateBigFiveChecklist(checklist, countryName, featuredRecords) {
   assert(
     isIsoDate(checklist.checked_at),
@@ -1973,6 +2039,9 @@ function validateUefaYouthLeague(topic, playerIds) {
 
 export async function validateData() {
   const dataset = await loadDataset();
+  const playerNameOverrides = JSON.parse(
+    await fs.readFile(path.join(paths.raw, "player-name-overrides.json"), "utf8")
+  );
   const playerIds = new Set();
   const playerIdentityKeys = new Map();
   const tournamentIds = new Set(dataset.tournaments.map((item) => item.id));
@@ -1989,6 +2058,7 @@ export async function validateData() {
   );
   const allSquadEntries = new Map();
   const issue54UzbekistanU17 = [];
+  let nativeNameAuditCount = 0;
 
   for (const player of dataset.players) {
     for (const field of requiredPlayerFields) {
@@ -1998,6 +2068,23 @@ export async function validateData() {
     assert(!playerIds.has(player.id), `Duplicate player id: ${player.id}`);
     assert(isIsoDate(player.birth_date), `Invalid birth_date for ${player.id}`);
     validatePlayerNames(player);
+    if (nativeNameAuditCountries.has(player.country)) {
+      nativeNameAuditCount += 1;
+      validateNativeNameAudit(player, playerNameOverrides[player.id]);
+      assert(
+        allowedOrganizationTypes.has(player.registration_club?.organization_type),
+        `Missing audited registration organization_type on ${player.id}`
+      );
+      const currentPathway = player.training_pathway.find(
+        (step) => step.organization === player.registration_club.name
+      );
+      if (currentPathway) {
+        assert(
+          currentPathway.organization_type === player.registration_club.organization_type,
+          `Audited pathway organization type differs from registration on ${player.id}`
+        );
+      }
+    }
     assert(
       typeof player.registration_club?.name === "string" &&
         typeof player.registration_club?.country === "string",
@@ -2176,6 +2263,8 @@ export async function validateData() {
 
     playerIds.add(player.id);
   }
+
+  assert(nativeNameAuditCount === 263, `Expected 263 audited CJK/Uzbek players, found ${nativeNameAuditCount}`);
 
   const chinaOverseasStatusCounts = countOverseasStatuses(dataset.players);
   const chinaForeignRegistrationCount = dataset.players.filter(

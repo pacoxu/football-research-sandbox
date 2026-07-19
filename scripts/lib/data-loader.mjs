@@ -73,6 +73,10 @@ function deriveNativeName(player, override = {}) {
     return explicitNative;
   }
 
+  if (override.native_verification?.status === "unresolved") {
+    return pickFirstName(override.en, player.name, player.local_name);
+  }
+
   const localName = cleanName(player.local_name);
   const englishName = cleanName(player.name);
   const country = cleanName(player.country);
@@ -146,9 +150,17 @@ function buildPlayerNames(player, override = {}) {
 function applyPlayerNames(players, overrides = {}) {
   return players.map((player) => {
     const override = overrides[player.id] ?? {};
+    const nameSources =
+      override.native_verification?.status === "verified"
+        ? override.native_verification.sources ?? []
+        : [];
     return {
       ...player,
-      names: buildPlayerNames(player, override)
+      names: buildPlayerNames(player, override),
+      ...(override.native_verification
+        ? { name_verification: override.native_verification }
+        : {}),
+      source_layers: [...(player.source_layers ?? []), ...nameSources]
     };
   });
 }
