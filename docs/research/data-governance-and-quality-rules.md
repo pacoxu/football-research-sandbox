@@ -176,6 +176,15 @@
 
 超过期限时，先不要直接改事实；把 `verification.status` 调整为 `stale` 或在 notes 里标记复核需求，确认来源后再恢复为 `verified` 或 `mixed-source`。
 
+运行 `npm run audit:freshness -- --as-of YYYY-MM-DD` 可生成非阻塞报告，逐项列出实体、字段、最后核查日、适用周期和逾期天数。默认退出码为 0，不会自动改写事实或 `verification.status`；仅在人工或 CI 明确传入 `--strict` 时，存在逾期记录才返回失败。`--format json` 用于后续归档或自动化消费。
+
+## 本土姓名审计
+
+- 中国、日本、韩国和乌兹别克斯坦球员必须有 `native_verification`，状态为 `verified` 或 `unresolved`。
+- `verified` 必须绑定国家足协、联赛、俱乐部、学校或政府官方来源，并声明语言标签；AFC 英文报名表本身不能证明本土文字。
+- `unresolved` 必须记录已检查的官方入口，不得靠音译、中文译名或直接复制 AFC 英文注册名冒充本土姓名。
+- 乌兹别克姓名可以采用官方乌兹别克拉丁文或西里尔文；与英文注册名相同也必须有独立官方证据。
+
 ## 死链检查说明
 
 当前阶段先文档化，后续再自动化。人工或脚本检查时按以下顺序处理：
@@ -238,7 +247,6 @@
 
 后续增强方向：
 
-- 自动生成过期核查报告。
 - 自动检查死链。
 - 把 `verification.evidence` 从可选模板升级为关键字段必填。
 - 把 `selected` 逐步迁移到 `called-up`。

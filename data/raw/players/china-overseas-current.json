@@ -12,7 +12,8 @@
     "weight_kg": 83,
     "registration_club": {
       "name": "FK Vozdovac U19",
-      "country": "Serbia"
+      "country": "Serbia",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
@@ -31,7 +32,8 @@
         "stage_label": "2026 塞尔维亚外租节点",
         "organization": "FK Vozdovac U19",
         "country": "Serbia",
-        "note": "2026 年春季报道确认其因劳工证与培养安排，先外租到沃日多瓦茨 U19 锻炼。"
+        "note": "2026 年春季报道确认其因劳工证与培养安排，先外租到沃日多瓦茨 U19 锻炼。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -93,7 +95,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "FK Vozdovac U19",
-      "country": "Serbia"
+      "country": "Serbia",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
@@ -106,7 +109,8 @@
         "stage_label": "2025 塞尔维亚留洋节点",
         "organization": "FK Vozdovac U19",
         "country": "Serbia",
-        "note": "2025 年夏天起加入沃日多瓦茨 U19，成为当前塞尔维亚青年留洋样本之一。"
+        "note": "2025 年夏天起加入沃日多瓦茨 U19，成为当前塞尔维亚青年留洋样本之一。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -163,7 +167,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Europa, C.E. Juvenil B",
-      "country": "Spain"
+      "country": "Spain",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
@@ -220,7 +225,8 @@
             "en": "Upper regional U19 division in Catalonia"
           }
         ],
-        "note": "FutbolBase 统计其在 2025/26 Preferent Juvenils Grup 2 为 Europa, C.E. Juvenil B 出战 29 场、打入 6 球；FCF 球员页同期显示 28 次 Convocat、16 次 Titular、12 次 Suplent、6 球且无红黄牌记录。"
+        "note": "FutbolBase 统计其在 2025/26 Preferent Juvenils Grup 2 为 Europa, C.E. Juvenil B 出战 29 场、打入 6 球；FCF 球员页同期显示 28 次 Convocat、16 次 Titular、12 次 Suplent、6 球且无红黄牌记录。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -291,7 +297,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "FC Villarreal Youth",
-      "country": "Spain"
+      "country": "Spain",
+      "organization_type": "club-academy"
     },
     "training_pathway": [
       {
@@ -322,7 +329,8 @@
         "stage_label": "2025 比利亚雷亚尔梯队节点",
         "organization": "FC Villarreal Youth",
         "country": "Spain",
-        "note": "2025 年 4 月完成签约仪式、6 月对外披露加盟黄潜梯队；Transfermarkt 当前将其加入 Villarreal Youth 的日期记为 2025-09-09。签约曝光时间与数据库注册时间可能不同，因此这里并列保留。"
+        "note": "2025 年 4 月完成签约仪式、6 月对外披露加盟黄潜梯队；Transfermarkt 当前将其加入 Villarreal Youth 的日期记为 2025-09-09。签约曝光时间与数据库注册时间可能不同，因此这里并列保留。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -441,7 +449,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "DAMM CF",
-      "country": "Spain"
+      "country": "Spain",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
@@ -466,7 +475,8 @@
         "stage_label": "2024 达姆青训节点",
         "organization": "DAMM CF",
         "country": "Spain",
-        "note": "2024 年 7 月公开宣布加盟加泰知名青训俱乐部达姆；报道强调其是在被球探看中后直接签约，而非先行试训。这里的“达姆”应理解为西班牙 CF Damm，而不是德国达姆斯塔特。"
+        "note": "2024 年 7 月公开宣布加盟加泰知名青训俱乐部达姆；报道强调其是在被球探看中后直接签约，而非先行试训。这里的“达姆”应理解为西班牙 CF Damm，而不是德国达姆斯塔特。",
+        "organization_type": "professional-club-unspecified"
       },
       {
         "stage_label": "2024 中国U14第二期 / 韩国拉练",
@@ -600,7 +610,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "Sant Cugat FC",
-      "country": "Spain"
+      "country": "Spain",
+      "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
       {
@@ -777,7 +788,8 @@
     "weight_kg": null,
     "registration_club": {
       "name": "LAFC2",
-      "country": "United States"
+      "country": "United States",
+      "organization_type": "professional-club-unspecified"
     },
     "league_system_override": "MLS NEXT Pro",
     "overseas_bucket_override": "americas-other",
@@ -816,7 +828,8 @@
         "stage_label": "2025/09 LAFC2",
         "organization": "LAFC2",
         "country": "United States",
-        "note": "LAFC2 官方公告确认其由拜仁慕尼黑二队加盟，进入 MLS NEXT Pro / 北美职业梯队路径；截至 2026-06-27，现役留洋口径按 LAFC2 处理。"
+        "note": "LAFC2 官方公告确认其由拜仁慕尼黑二队加盟，进入 MLS NEXT Pro / 北美职业梯队路径；截至 2026-06-27，现役留洋口径按 LAFC2 处理。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [

@@ -46,6 +46,12 @@
 
 可选字段包括 `height_cm`、`weight_kg`、`source_layers`、`league_system_override`、`overseas_bucket_override`、`overseas_status`、`market_value` 等。
 
+### `player-name-overrides.json` 与 `name_verification`
+
+中国、日本、韩国和乌兹别克斯坦球员在 `data/raw/player-name-overrides.json` 中维护本土姓名审计。`native_verification.status` 只允许 `verified` 或 `unresolved`：前者必须包含 `language_tag`、官方 `sources` 和核查日期，后者不得写入 `native`，必须列出 `attempts` 和未确认说明。日本的 `native/ja`、韩国的 `native/ko` 必须一致；乌兹别克姓名允许 `uz-Latn` 或 `uz-Cyrl`。
+
+loader 将审计块公开为球员的 `name_verification`，并把已验证的姓名来源合并到 `source_layers`。中文译名不自动等同于已核本土姓名；`unresolved` 球员的 `names.native` 回退为英文注册名。
+
 ### `overseas_status`
 
 中国留洋相关球员使用顶层 `overseas_status` 解释当前状态；与留洋无关的球员不需要填写。
@@ -68,7 +74,7 @@
 | `country` | 俱乐部或组织所在国家/地区。 |
 | `status` | 可选；`current` 表示有当前注册来源，`tournament-snapshot` 表示只确认赛事报名时点。旧记录缺少该字段时按 `current` 兼容处理。 |
 | `as_of` | 可选 ISO 日期；`tournament-snapshot` 必填，用于明确赛事报名快照时点。 |
-| `organization_type` | `high-school`、`club-academy`、`community-club`、`university`、`professional-club`、`military-service-club`、`overseas-academy` 或 `national-academy`。基层青少年组织使用 `community-club`；Aspire 等国家级、非俱乐部学院使用 `national-academy`。 |
+| `organization_type` | `high-school`、`club-academy`、`community-club`、`university`、`professional-club`、`professional-club-unspecified`、`football-school`、`military-service-club`、`overseas-academy` 或 `national-academy`。基层青少年组织使用 `community-club`；Aspire 等国家级、非俱乐部学院使用 `national-academy`。只有官方一线队或成年联赛注册可使用 `professional-club`；只确认母俱乐部而未确认梯队层级时使用 `professional-club-unspecified`。 |
 | `parent_organization` | 可选母俱乐部对象，包含 `name`、`country`；韩国职业梯队使用。 |
 | `education_partner` | 可选合作高中对象，包含 `name`、`country`；不得覆盖当前注册组织。 |
 
@@ -165,6 +171,8 @@
 | `evidence` | 可选，结构化证据数组。 |
 
 `verification.notes` 不应只写“已核实”，应说明哪些来源支撑哪些事实。
+
+复核时效使用 `npm run audit:freshness -- --as-of YYYY-MM-DD` 非阻塞报告；添加 `--format json` 可输出结构化结果，添加 `--strict` 才会因存在过期记录返回失败。
 
 ## 赛事记录
 
