@@ -14,6 +14,7 @@
 - 来源政策与冲突处理：[docs/source-policy.md](docs/source-policy.md)
 - 数据字典：[docs/data-dictionary.md](docs/data-dictionary.md)
 - 覆盖矩阵：[docs/coverage-matrix.md](docs/coverage-matrix.md)
+- 代码与数据授权边界：[LICENSE](LICENSE)
 - 路线图：[ROADMAP.md](ROADMAP.md)
 - 审查所有权：[.github/CODEOWNERS](.github/CODEOWNERS)
 - 安全与隐私报告：[SECURITY.md](SECURITY.md)
@@ -69,6 +70,8 @@ python3 -m http.server 4173
 ├── docs/                    # 研究说明、收集口径和待核清单
 ├── scripts/                 # 校验、聚合、同步 SQLite
 ├── storage/                 # 本地 SQLite 输出目录
+├── CONTRIBUTING.md          # 数据维护与提交流程
+├── LICENSE                  # 代码、数据与第三方内容授权边界
 └── .github/workflows/       # GitHub Pages 发布流程
 ```
 
