@@ -1,4 +1,5 @@
 .DS_Store
+node_modules/
 .snapshot/
 storage/*.sqlite
 storage/*.sqlite-shm

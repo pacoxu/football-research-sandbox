@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://football-research.local/schema/players.schema.json",
+  "type": "array",
+  "items": { "$ref": "#/$defs/player" },
+  "$defs": {
+    "player": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "local_name",
+        "country",
+        "birth_date",
+        "age_band",
+        "primary_position",
+        "registration_club",
+        "training_pathway",
+        "focus_tags",
+        "tournament_participation",
+        "external_links",
+        "verification"
+      ],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "local_name": { "type": "string", "minLength": 1 },
+        "country": { "type": "string", "minLength": 1 },
+        "birth_date": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "age_band": { "type": "string", "minLength": 1 },
+        "primary_position": { "type": "string", "minLength": 1 },
+        "registration_club": {
+          "type": "object",
+          "required": ["name", "country"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "country": { "type": "string", "minLength": 1 },
+            "organization_type": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": true
+        },
+        "training_pathway": { "type": "array" },
+        "focus_tags": { "type": "array", "items": { "type": "string" } },
+        "tournament_participation": { "type": "array" },
+        "external_links": {
+          "type": "array",
+          "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" }
+        },
+        "verification": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/verification" },
+        "names": {
+          "type": "object",
+          "required": ["zh", "en", "native", "ja", "ko"],
+          "additionalProperties": { "type": "string" }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

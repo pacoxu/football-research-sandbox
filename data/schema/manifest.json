@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "entries": [
+    { "path": "data/raw/players/*.json", "schema": "https://football-research.local/schema/players.schema.json" },
+    { "path": "data/raw/tournaments.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/tournaments" },
+    { "path": "data/raw/projects.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/projects" },
+    { "path": "data/raw/dossiers.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/dossiers" },
+    { "path": "data/raw/scouting-watchlist.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/scoutingWatchlist" },
+    { "path": "data/raw/tournament-archive.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/tournamentArchive" },
+    { "path": "data/raw/overseas-history.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/overseasHistory" },
+    { "path": "data/raw/uefa-youth-league.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/uefaYouthLeague" },
+    { "path": "data/raw/china-men-youth-coaches.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/chinaNationalYouthCoaches" },
+    { "path": "data/raw/china-youth-development-coaches.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/coachCollection" },
+    { "path": "data/raw/big-five-asian-coaches.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/coachCollection" },
+    { "path": "data/raw/asian-coaches.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/coachCollection" },
+    { "path": "data/raw/youth-development-systems.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/youthDevelopmentSystems" },
+    { "path": "data/raw/player-market-values.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/marketValues" },
+    { "path": "data/raw/player-name-overrides.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap" },
+    { "path": "data/raw/club-name-overrides.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap" },
+    { "path": "data/site/players.json", "schema": "https://football-research.local/schema/site.schema.json#/$defs/players" },
+    { "path": "data/site/overview.json", "schema": "https://football-research.local/schema/site.schema.json#/$defs/overview" },
+    { "path": "data/site/meta.json", "schema": "https://football-research.local/schema/site-meta.schema.json" }
+  ]
+}

@@ -26,9 +26,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 25
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Prepare data
         run: node scripts/prepare-data.mjs
+
+      - name: Verify generated site data
+        run: npm run check-generated
 
       - name: Stage static files
         run: |
@@ -36,6 +43,9 @@ jobs:
           cp *.html dist/
           cp -R assets dist/assets
           cp -R data dist/data
+
+      - name: Stamp deployed data metadata
+        run: node scripts/stamp-site-meta.mjs --commit "$GITHUB_SHA" --file dist/data/site/meta.json
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

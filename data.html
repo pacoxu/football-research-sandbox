@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数据质量与对比 | 青训球员追踪站</title>
+    <meta name="description" content="查看研究样本的数据完整度、来源等级、复核时效、国家青训对比、项目目录与教练目录。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260719-data-quality" />
+  </head>
+  <body data-page="data-center">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a href="./lineup.html">排阵容</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">青训体系</a>
+            <a data-nav="coaches" data-i18n="nav.coaches" href="./coaches.html">青训教练</a>
+            <a data-nav="data-center" data-i18n="nav.dataCenter" href="./data.html">数据中心</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero hero-tight data-center-hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="dataCenter.hero.eyebrow">Data Quality &amp; Comparison</p>
+            <h1 data-i18n="dataCenter.hero.title">数据质量与对比中心</h1>
+            <p class="hero-text" data-i18n="dataCenter.hero.text">用同一口径查看覆盖质量、国家青训路径、项目与教练目录。</p>
+            <p id="dataSampleNotice" class="data-sample-notice" data-i18n="dataCenter.sampleNotice">本站统计仅代表仓库研究样本，不代表官方全量。</p>
+          </div>
+          <aside class="hero-spotlight" id="dataBuildMeta">
+            <p class="eyebrow" data-i18n="dataCenter.meta.eyebrow">Build Metadata</p>
+            <div class="empty-inline" data-i18n="common.loading">加载中</div>
+          </aside>
+        </section>
+
+        <section class="content-panel data-center-switcher">
+          <div id="dataViewTabs" class="view-switch data-view-tabs" role="tablist" aria-label="数据中心视图" data-i18n-aria-label="dataCenter.tabs.aria">
+            <button class="switch-button" type="button" data-view="quality" data-i18n="dataCenter.tabs.quality">覆盖质量</button>
+            <button class="switch-button" type="button" data-view="countries" data-i18n="dataCenter.tabs.countries">国家对比</button>
+            <button class="switch-button" type="button" data-view="projects" data-i18n="dataCenter.tabs.projects">青训项目</button>
+            <button class="switch-button" type="button" data-view="coaches" data-i18n="dataCenter.tabs.coaches">教练目录</button>
+          </div>
+        </section>
+
+        <section id="dataQualityPanel" class="data-view-panel" data-panel="quality">
+          <div id="dataQualitySummary" class="overview-bar"></div>
+          <div class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dataCenter.quality.eyebrow">Coverage Quality</p>
+                <h2 data-i18n="dataCenter.quality.title">数据集覆盖与待补字段</h2>
+              </div>
+            </div>
+            <div id="dataQualityDatasets" class="data-quality-grid"></div>
+            <div id="dataQualityEmpty" class="empty-state" hidden data-i18n="dataCenter.quality.empty">当前没有可展示的质量元信息。</div>
+          </div>
+        </section>
+
+        <section id="dataCountriesPanel" class="data-view-panel" data-panel="countries" hidden>
+          <div class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dataCenter.countries.eyebrow">Pathway Comparison</p>
+                <h2 data-i18n="dataCenter.countries.title">五国青训路径矩阵</h2>
+              </div>
+            </div>
+            <p class="section-note" data-i18n="dataCenter.countries.note">只比较仓库已经按相同结构收录的国家体系，不代表国家青训实力排名。</p>
+            <div id="dataPathwayComparison" class="table-shell data-comparison-table"></div>
+            <div id="dataCountriesEmpty" class="empty-state" hidden data-i18n="dataCenter.countries.empty">当前没有可展示的国家青训路径数据。</div>
+          </div>
+          <div class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dataCenter.honours.eyebrow">Tournament Honours</p>
+                <h2 data-i18n="dataCenter.honours.title">1985—2025 U20 历史荣誉榜</h2>
+              </div>
+            </div>
+            <p class="section-note" data-i18n="dataCenter.honours.note">FIFA 与 AFC 分开统计，只纳入已完成届次；历史代表队名称保持原样。</p>
+            <div id="dataHonoursTables" class="data-honours-grid"></div>
+            <div id="dataHonoursEmpty" class="empty-state" hidden data-i18n="dataCenter.honours.empty">当前没有符合口径的已完成 U20 赛事。</div>
+          </div>
+        </section>
+
+        <section id="dataProjectsPanel" class="data-view-panel" data-panel="projects" hidden>
+          <div class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dataCenter.projects.eyebrow">Programme Directory</p>
+                <h2 data-i18n="dataCenter.projects.title">青训项目目录</h2>
+              </div>
+              <span id="dataProjectCount" class="small-note"></span>
+            </div>
+            <div class="filter-grid data-directory-filters">
+              <label><span data-i18n="dataCenter.filters.search">搜索</span><input id="dataProjectQuery" type="search" data-i18n-placeholder="dataCenter.projects.searchPlaceholder" placeholder="名称、国家或项目类型" /></label>
+              <label><span data-i18n="dataCenter.filters.country">国家</span><select id="dataProjectCountry"></select></label>
+              <label><span data-i18n="dataCenter.filters.category">类别</span><select id="dataProjectCategory"></select></label>
+              <label><span data-i18n="dataCenter.filters.status">质量状态</span><select id="dataProjectStatus"></select></label>
+            </div>
+          </div>
+          <div id="dataProjectGrid" class="system-card-grid data-directory-grid"></div>
+          <div id="dataProjectEmpty" class="empty-state" hidden data-i18n="dataCenter.projects.empty">没有符合当前筛选的青训项目。</div>
+        </section>
+
+        <section id="dataCoachesPanel" class="data-view-panel" data-panel="coaches" hidden>
+          <div class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dataCenter.coaches.eyebrow">Coach Directory</p>
+                <h2 data-i18n="dataCenter.coaches.title">教练目录</h2>
+              </div>
+              <span id="dataCoachCount" class="small-note"></span>
+            </div>
+            <div class="filter-grid data-directory-filters">
+              <label><span data-i18n="dataCenter.filters.search">搜索</span><input id="dataCoachQuery" type="search" data-i18n-placeholder="dataCenter.coaches.searchPlaceholder" placeholder="姓名、机构或岗位" /></label>
+              <label><span data-i18n="dataCenter.filters.category">类别</span><select id="dataCoachCategory"></select></label>
+              <label><span data-i18n="dataCenter.filters.country">国籍</span><select id="dataCoachCountry"></select></label>
+              <label><span data-i18n="dataCenter.filters.status">质量状态</span><select id="dataCoachStatus"></select></label>
+            </div>
+          </div>
+          <div id="dataCoachGrid" class="system-card-grid data-directory-grid"></div>
+          <div id="dataCoachEmpty" class="empty-state" hidden data-i18n="dataCenter.coaches.empty">没有符合当前筛选的教练记录。</div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+    <script type="module" src="./assets/app.js?v=20260719-data-quality-v2"></script>
+  </body>
+</html>

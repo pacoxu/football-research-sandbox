@@ -1,0 +1,227 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://football-research.local/schema/datasets.schema.json",
+  "$defs": {
+    "tournaments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "status", "date_range", "last_checked", "sources"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "status": { "type": "string", "minLength": 1 },
+          "last_checked": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+          "sources": { "type": "array", "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" } }
+        },
+        "additionalProperties": true
+      }
+    },
+    "projects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "status", "priority", "summary", "goal", "watch_items"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "status": { "type": "string", "minLength": 1 },
+          "priority": { "type": "string", "minLength": 1 },
+          "summary": { "type": "string" },
+          "goal": { "type": "string" },
+          "watch_items": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": true
+      }
+    },
+    "dossiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "status", "summary", "last_reviewed", "roster_views"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "name": { "type": "string", "minLength": 1 },
+          "status": { "type": "string", "minLength": 1 },
+          "summary": { "type": "string" },
+          "last_reviewed": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+          "roster_views": { "type": "array" }
+        },
+        "additionalProperties": true
+      }
+    },
+    "scoutingWatchlist": {
+      "type": "object",
+      "required": ["schema_version", "source", "scope", "records", "related_collections"],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "source": {
+          "type": "object",
+          "required": ["name", "url", "source_tier", "checked_at", "caveat"],
+          "properties": {
+            "name": { "const": "Football Talent Scout" },
+            "url": { "type": "string", "format": "uri" },
+            "source_tier": { "const": "S2" },
+            "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+            "caveat": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" }
+          },
+          "additionalProperties": true
+        },
+        "scope": {
+          "type": "object",
+          "required": ["record_count", "country_count"],
+          "properties": {
+            "record_count": { "type": "integer", "minimum": 0 },
+            "country_count": { "type": "integer", "minimum": 0 }
+          },
+          "additionalProperties": true
+        },
+        "records": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name", "country", "birth_year", "report_type", "source_scope", "summary", "source_url", "source_checked_at"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "name": { "type": "string", "minLength": 1 },
+              "country": { "type": "string", "minLength": 1 },
+              "birth_year": { "type": "integer", "minimum": 2000, "maximum": 2010 },
+              "report_type": { "enum": ["image-report", "talent-of-the-day", "player-profile", "guest-report"] },
+              "source_scope": { "enum": ["individual", "country-index", "category-index"] },
+              "summary": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "source_url": { "type": "string", "format": "uri" },
+              "source_checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "related_collections": { "type": "array" }
+      },
+      "additionalProperties": true
+    },
+    "tournamentArchive": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "competition_name", "edition_label", "level", "status", "date_range", "champion", "runner_up"],
+        "properties": {
+          "id": { "type": "string", "minLength": 1 },
+          "competition_name": { "type": "string", "minLength": 1 },
+          "edition_label": { "type": "string", "minLength": 1 },
+          "level": { "type": "string", "minLength": 1 },
+          "status": { "type": "string", "minLength": 1 },
+          "champion": { "type": ["string", "null"] },
+          "runner_up": { "type": ["string", "null"] }
+        },
+        "additionalProperties": true
+      }
+    },
+    "overseasHistory": {
+      "type": "object",
+      "required": ["bucket_definition", "countries"],
+      "properties": {
+        "bucket_definition": { "type": "array" },
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["country", "status", "verified_records", "featured_records"],
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "uefaYouthLeague": {
+      "type": "object",
+      "required": ["meta", "seasons", "historical_season_index", "sources"],
+      "properties": {
+        "meta": { "type": "object" },
+        "seasons": { "type": "array" },
+        "historical_season_index": { "type": "array" },
+        "sources": { "type": "array" }
+      },
+      "additionalProperties": true
+    },
+    "chinaNationalYouthCoaches": {
+      "type": "object",
+      "required": ["id", "last_checked", "team_cycles"],
+      "properties": {
+        "id": { "type": "string" },
+        "last_checked": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "team_cycles": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["team_label", "age_line", "head_coach", "source_links"],
+            "properties": {
+              "head_coach": {
+                "type": "object",
+                "required": ["id", "name", "local_name"],
+                "properties": {
+                  "id": { "type": "string", "minLength": 1 },
+                  "name": { "type": "string", "minLength": 1 },
+                  "local_name": { "type": "string", "minLength": 1 }
+                },
+                "additionalProperties": true
+              },
+              "source_links": { "type": "array", "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" } }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "coachCollection": {
+      "type": "object",
+      "required": ["id", "last_checked", "coaches"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "last_checked": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "coaches": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "name"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "youthDevelopmentSystems": {
+      "type": "object",
+      "required": ["schema_version", "checked_at", "systems"],
+      "properties": {
+        "schema_version": { "type": "integer", "minimum": 1 },
+        "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "systems": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "country", "name", "summary", "registration_categories", "competitions", "source_links"],
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "marketValues": {
+      "type": "object",
+      "required": ["meta", "players"],
+      "properties": {
+        "meta": { "type": ["object", "null"] },
+        "players": { "type": "object" }
+      },
+      "additionalProperties": true
+    },
+    "objectMap": {
+      "type": "object",
+      "additionalProperties": true
+    }
+  }
+}

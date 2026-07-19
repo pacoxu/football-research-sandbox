@@ -1,5 +1,8 @@
+import fs from "node:fs/promises";
+import path from "node:path";
 import { ensureDirectory, loadDataset, paths, writeJson } from "./lib/data-loader.mjs";
 import { countOverseasStatuses, normalizeCountry } from "./lib/overseas-status.mjs";
+import { buildSiteMeta } from "./lib/data-quality.mjs";
 
 function isForeignRegistration(player) {
   return (
@@ -17,7 +20,7 @@ function comparePlayers(left, right) {
   return left.birth_date.localeCompare(right.birth_date);
 }
 
-export async function buildSiteData() {
+export async function buildSiteData({ outputDirectory = paths.site } = {}) {
   const dataset = await loadDataset();
   const generatedAt = "2026-07-19";
   const players = [...dataset.players].sort(comparePlayers);
@@ -44,14 +47,20 @@ export async function buildSiteData() {
     youth_development_systems: dataset.youthDevelopmentSystems,
     club_name_overrides: dataset.clubNameOverrides
   };
+  const schemaManifest = JSON.parse(
+    await fs.readFile(path.join(paths.root, "data/schema/manifest.json"), "utf8")
+  );
+  const meta = buildSiteMeta({ dataset, overview, generatedAt, schemaManifest });
 
-  await ensureDirectory(paths.site);
-  await writeJson(`${paths.site}/players.json`, players);
-  await writeJson(`${paths.site}/overview.json`, overview);
+  await ensureDirectory(outputDirectory);
+  await writeJson(path.join(outputDirectory, "players.json"), players);
+  await writeJson(path.join(outputDirectory, "overview.json"), overview);
+  await writeJson(path.join(outputDirectory, "meta.json"), meta);
 
   return {
     players,
-    overview
+    overview,
+    meta
   };
 }
 

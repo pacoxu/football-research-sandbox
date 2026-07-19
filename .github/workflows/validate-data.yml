@@ -26,9 +26,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 25
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
 
       - name: Check front-end JavaScript
-        run: node --check assets/app.js
+        run: node --check assets/app.js && node --check assets/data-insights.js
 
       - name: Validate source data
         run: npm run validate-data
@@ -37,6 +41,4 @@ jobs:
         run: npm test
 
       - name: Verify generated site data
-        run: |
-          npm run build-data
-          git diff --exit-code -- data/site
+        run: npm run check-generated

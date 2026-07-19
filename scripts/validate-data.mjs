@@ -8,6 +8,7 @@ import {
   hasForeignRegistration,
   normalizeCountry
 } from "./lib/overseas-status.mjs";
+import { validateJsonSchemas } from "./validate-json-schemas.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -1394,6 +1395,7 @@ function validateChinaMenYouthCoaches(archive) {
   for (const cycle of archive.team_cycles) {
     assert(cycle.team_label, "Missing team_label on china_men_youth_coaches cycle");
     assert(cycle.age_line, `Missing age_line on ${cycle.team_label}`);
+    assert(cycle.head_coach?.id, `Missing head coach id on ${cycle.team_label}`);
     assert(cycle.head_coach?.local_name, `Missing head coach local_name on ${cycle.team_label}`);
     assert(cycle.current_stage, `Missing current_stage on ${cycle.team_label}`);
     assert(cycle.latest_camp?.label, `Missing latest_camp label on ${cycle.team_label}`);
@@ -2177,8 +2179,17 @@ function validateScoutingWatchlist(watchlist, players) {
   assert(collectionIds.size === 6, `Expected 6 scouting collections, found ${collectionIds.size}`);
 }
 
+export function validatePlayerCompetitionReference(player, entry, tournamentIds, playerSourceFiles = {}) {
+  const sourcePath = playerSourceFiles[player.id] ?? "data/raw/players/<unknown>.json";
+  assert(
+    !entry.competition_id || tournamentIds.has(entry.competition_id),
+    `Unknown competition_id "${entry.competition_id}" at ${sourcePath}#/${player.id}/tournament_participation`
+  );
+}
+
 export async function validateData(referenceDate = new Date().toISOString().slice(0, 10)) {
   assert(isIsoDate(referenceDate), `Invalid validation reference date: ${referenceDate}`);
+  await validateJsonSchemas({ includeSite: false });
   const dataset = await loadDataset();
   const playerNameOverrides = JSON.parse(
     await fs.readFile(path.join(paths.raw, "player-name-overrides.json"), "utf8")
@@ -2295,10 +2306,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
       }
     }
     for (const entry of player.tournament_participation) {
-      assert(
-        !entry.competition_id || tournamentIds.has(entry.competition_id),
-        `Unknown competition_id on player ${player.id}`
-      );
+      validatePlayerCompetitionReference(player, entry, tournamentIds, dataset.playerSourceFiles);
       assert(
         allowedSquadStatuses.has(entry.squad_status),
         `Invalid squad_status "${entry.squad_status}" on player ${player.id}`
