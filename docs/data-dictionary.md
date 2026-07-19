@@ -264,7 +264,7 @@
 `data/site/**` 由脚本生成，不应手工编辑。`data/site/overview.json` 的 `generated_at` 当前由 `scripts/build-site-data.mjs` 中常量控制，不是构建时自动日期。只改文档时不更新 `generated_at`。
 ## UEFA Youth League historical season index
 
-`data/raw/uefa-youth-league.json` 中的 `historical_season_index` 保存青年欧冠赛季级历史档案。它与用于页面深度展示的 `seasons` 分开，允许先完成历史索引，再分阶段补齐完整参赛队和逐场比赛。
+`data/raw/uefa-youth-league.json` 中的 `historical_season_index` 保存青年欧冠赛季级历史档案。它与用于页面深度展示的 `seasons` 分开：历史索引现已包含 2013/14—2022/23 的完整球队边界，逐场比赛仍可分阶段补齐。
 
 2010—2013 的赛事边界单独保存在 `lineage`，不混入正式赛季索引：`prehistory` 中的 `precursor-event` 表示 2010 UEFA Under-18 Challenge 前身试验赛，`not-established` 表示 2010/11—2012/13 赛事尚未创办，`launch-approved` 表示 2012 年获批且首届定于 2013/14。`not-established` 不得填写参赛队、比赛或冠亚军，也不能与 `cancelled`（赛事已经存在但当季取消）混用。
 
@@ -282,12 +282,14 @@
 | `start_date` / `end_date` | date \| null | 已举办赛季使用 ISO 日期；取消且未开赛的赛季必须为 `null`。 |
 | `entrant_count` | integer | 已举办赛季的参赛规模；取消赛季可记录官方抽签规模，但须在冲突说明中注明并非实际出赛数。 |
 | `paths` | string[] | 当季资格路径，如欧冠路径和国内青年冠军路径。 |
+| `teams_by_path` | object | 已举办赛季的完整参赛队。键固定为 `champions_league`；2015/16 起另有 `domestic_champions`。各路径球队不得重复，合计必须等于 `entrant_count`。 |
+| `published_draw_teams_by_path` | object | 仅用于 2020/21：保存 UEFA 取消赛事前已公布的两路径抽签球队。它不是实际参赛统计，取消赛季不得同时出现 `teams_by_path`。 |
 | `format_summary` | localized text | 当季赛制、路径和特殊赛历说明。 |
 | `champion` / `runner_up` | string \| null | 取消赛季必须为 `null`。 |
 | `semi_finalists` | string[] | 两支止步半决赛的球队；取消赛季为空数组。 |
 | `top_scorers` | object[] | UEFA 官方赛季最佳射手及俱乐部、进球数；并列时全部保留，来源冲突写入 `source_conflict_note`。 |
 | `final` | object \| null | 决赛日期、场地、城市、国家、双方与比分；取消赛季为 `null`。 |
-| `coverage` | object | 分别标记完整参赛队、淘汰赛和全量逐场比赛是否已采集。 |
+| `coverage` | object | 分别标记完整参赛队、淘汰赛和全量逐场比赛是否已采集。已举办历史赛季的 `participating_teams` 为 `complete`；2020/21 为 `draw-published-not-played`。 |
 | `source_version` | string | 本条采用的 UEFA 页面或公告版本说明。 |
 | `source_checked_at` | date | 最近核查日期。 |
 | `source_conflict_note` | string | 命名、延期、场地例外、取消赛季参赛规模等口径说明；无冲突时也明确记录。 |

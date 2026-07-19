@@ -1850,6 +1850,24 @@ function validateUefaYouthLeague(topic, playerIds) {
       assert(season.champion === null && season.runner_up === null && season.final === null, `Cancelled season must not have a winner on ${label}`);
       assert(season.semi_finalists.length === 0 && season.top_scorers.length === 0, `Cancelled season must not have final-stage records on ${label}`);
       assert(season.coverage.all_matches === "not-played", `Cancelled season match status must be not-played on ${label}`);
+      assert(!season.teams_by_path, `Cancelled season must not expose actual participating teams on ${label}`);
+      assert(
+        season.coverage.participating_teams === "draw-published-not-played",
+        `Cancelled season must distinguish published draw teams on ${label}`
+      );
+      const drawPaths = season.published_draw_teams_by_path ?? {};
+      assert(
+        JSON.stringify(Object.keys(drawPaths).sort()) ===
+          JSON.stringify(["champions_league", "domestic_champions"]),
+        `Cancelled season must preserve both published draw paths on ${label}`
+      );
+      const drawTeams = Object.values(drawPaths).flat();
+      assert(drawTeams.length === season.entrant_count, `Published draw team count does not match entrant_count on ${label}`);
+      assert(new Set(drawTeams).size === drawTeams.length, `Duplicate published draw team on ${label}`);
+      assert(
+        Object.values(drawPaths).every((teams) => teams.length === 32),
+        `Cancelled season must have 32 published draw teams per path on ${label}`
+      );
     } else {
       assert(isIsoDate(season.start_date) && isIsoDate(season.end_date), `Invalid season dates on ${label}`);
       assert(season.champion && season.runner_up, `Missing finalists on ${label}`);
@@ -1862,6 +1880,30 @@ function validateUefaYouthLeague(topic, playerIds) {
       assert(isIsoDate(season.final?.date), `Invalid final date on ${label}`);
       assert(season.final.home && season.final.away && season.final.score, `Incomplete final on ${label}`);
       assert(season.final.venue && season.final.city && season.final.country, `Missing final venue on ${label}`);
+      assert(season.coverage.participating_teams === "complete", `Historical entrant coverage must be complete on ${label}`);
+      const expectedTeamPathKeys = season.paths.map((path) => ({
+        "uefa-champions-league-path": "champions_league",
+        "domestic-champions-path": "domestic_champions"
+      })[path]);
+      assert(expectedTeamPathKeys.every(Boolean), `Unknown historical qualification path on ${label}`);
+      assert(
+        JSON.stringify(Object.keys(season.teams_by_path ?? {}).sort()) ===
+          JSON.stringify(expectedTeamPathKeys.sort()),
+        `Historical team paths do not match declared paths on ${label}`
+      );
+      const historicalTeams = Object.values(season.teams_by_path).flat();
+      assert(historicalTeams.length === season.entrant_count, `Historical team count does not match entrant_count on ${label}`);
+      assert(new Set(historicalTeams).size === historicalTeams.length, `Duplicate historical team across paths on ${label}`);
+      assert(
+        season.teams_by_path.champions_league.length === 32,
+        `Historical Champions League path must contain 32 teams on ${label}`
+      );
+      if (season.id >= "2015-16") {
+        assert(
+          season.teams_by_path.domestic_champions.length === 32,
+          `Historical domestic champions path must contain 32 teams on ${label}`
+        );
+      }
     }
     validateSourceIds(season, label);
   }
