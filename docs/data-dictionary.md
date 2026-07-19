@@ -68,7 +68,7 @@
 | `country` | 俱乐部或组织所在国家/地区。 |
 | `status` | 可选；`current` 表示有当前注册来源，`tournament-snapshot` 表示只确认赛事报名时点。旧记录缺少该字段时按 `current` 兼容处理。 |
 | `as_of` | 可选 ISO 日期；`tournament-snapshot` 必填，用于明确赛事报名快照时点。 |
-| `organization_type` | `high-school`、`club-academy`、`university`、`professional-club`、`military-service-club` 或 `overseas-academy`。 |
+| `organization_type` | `high-school`、`club-academy`、`university`、`professional-club`、`military-service-club`、`overseas-academy` 或 `national-academy`。Aspire 等国家级、非俱乐部学院使用 `national-academy`。 |
 | `parent_organization` | 可选母俱乐部对象，包含 `name`、`country`；韩国职业梯队使用。 |
 | `education_partner` | 可选合作高中对象，包含 `name`、`country`；不得覆盖当前注册组织。 |
 
@@ -184,6 +184,8 @@
 | `sources` | 赛事来源列表。 |
 
 `data/raw/tournament-archive.json` 维护更细的历史赛事、赛果、中国队比赛、关键球员、`source_version` 和 `source_conflict_note`。男子 U20 谱系另使用以下统一字段：
+
+`comparison_rosters` 用于声明跨国家对照组的完整名单边界。每项包含 `country`、`status`、`expected_count`、`source_url`、`source_checked_at` 和 `note`；`complete-final-registration` 必须对应 23 条唯一 `final-squad` 参与记录，`not-applicable` 必须为 0 条且不得推断生成球员。
 
 | 字段 | 含义 |
 | --- | --- |

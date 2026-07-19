@@ -60,7 +60,7 @@ flowchart LR
 - `tournaments[].last_checked` 必须是日期；`date_precision=exact` 时起止日期必填，`date_precision=tbc` 时起止日期必须同时为空。
 - `overseas-history` 的 bucket、featured records、big five checklist 结构必须可用。
 - `dossiers` 必须有 `id`、`name`、`last_reviewed`、`timeline`、`roster_views`，可选 link audit 和 search disambiguation 也会校验日期与数组结构。
-- `tournament-archive` 必须有赛事 ID、名称、合法日期精度、来源链接、中国队比赛和关键球员数组；可选 `source_version`、`source_checked_at`、`source_conflict_note`、`competition_name_history` 如出现也会校验结构。
+- `tournament-archive` 必须有赛事 ID、名称、合法日期精度、来源链接、中国队比赛和关键球员数组；可选 `source_version`、`source_checked_at`、`source_conflict_note`、`competition_name_history` 如出现也会校验结构。`comparison_rosters` 目前固定覆盖 13 个 23 人完整组合和 2 个 0 人未参赛组合，并校验来源、核查日、唯一参与记录和号码序列；伊朗 U23 2026 是唯一允许的官方号码异常。
 - 男足 U20 档案必须精确覆盖 1985—2025 的 21 届 FIFA 周期和 21 届 AFC 周期，并保留取消的 FIFA 2021、AFC 2020 以及两条 2027 future 记录。
 - 已完赛 U20 届次的 `participants` 与 `final_draw.groups` 必须完整、无重复且集合严格一致；future/cancelled 届次允许部分名单、空冠军和待定/取消抽签。
 - AFC 2027 资格赛必须保留 44 支唯一球队，且不得被写入决赛圈 `participants`。
@@ -124,6 +124,7 @@ flowchart LR
 - `professional-club`
 - `military-service-club`
 - `overseas-academy`
+- `national-academy`
 
 `source_layers.confidence`：
 

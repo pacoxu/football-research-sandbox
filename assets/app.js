@@ -1455,7 +1455,8 @@ const ORGANIZATION_TYPE_LABELS = {
   university: { zh: "大学球队", en: "University team" },
   "professional-club": { zh: "职业一线队", en: "Professional first team" },
   "military-service-club": { zh: "成年军队球队", en: "Senior military-service club" },
-  "overseas-academy": { zh: "海外青训梯队", en: "Overseas academy" }
+  "overseas-academy": { zh: "海外青训梯队", en: "Overseas academy" },
+  "national-academy": { zh: "国家级青训学院", en: "National academy" }
 };
 
 const SOURCE_LAYER_TYPE_LABELS = {

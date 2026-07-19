@@ -1,9 +1,9 @@
 {
   "generated_at": "2026-07-19",
   "stats": {
-    "player_count": 252,
-    "country_count": 5,
-    "foreign_registration_count": 40,
+    "player_count": 459,
+    "country_count": 8,
+    "foreign_registration_count": 112,
     "china_overseas_status_counts": {
       "active-registered": 17,
       "pending-effective": 0,
@@ -9727,6 +9727,40 @@
           "label": "UAE 1-2 China PR match report",
           "url": "https://english.news.cn/20240422/fbac7e11b15e41af9aaebba2e8a3abb6/c.html"
         }
+      ],
+      "comparison_rosters": [
+        {
+          "country": "Qatar",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC final squad list contains 23 named entries."
+        },
+        {
+          "country": "Saudi Arabia",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC final squad list contains 23 named entries."
+        },
+        {
+          "country": "Uzbekistan",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC final squad list contains 23 named entries."
+        },
+        {
+          "country": "IR Iran",
+          "status": "not-applicable",
+          "expected_count": 0,
+          "source_url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "Iran did not participate in the AFC U23 Asian Cup 2024 finals; no inferred roster is created."
+        }
       ]
     },
     {
@@ -11115,6 +11149,40 @@
           "label": "China PR 3-0 Vietnam",
           "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/s-final-china-pr-power-past-vietnam-1"
         }
+      ],
+      "comparison_rosters": [
+        {
+          "country": "IR Iran",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC source contains 23 named entries but omits shirt number 2 and repeats shirt number 22; source numbering is preserved."
+        },
+        {
+          "country": "Qatar",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC final registration contains 23 named entries."
+        },
+        {
+          "country": "Saudi Arabia",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC final registration contains 23 named entries."
+        },
+        {
+          "country": "Uzbekistan",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC final registration contains 23 named entries."
+        }
       ]
     },
     {
@@ -12090,7 +12158,33 @@
             "note": "更新版 AFC squad list 和四场官方 Match Summary 均列为 22 号替补门将；四场均未登场。"
           }
         ]
-      }
+      },
+      "comparison_rosters": [
+        {
+          "country": "Australia",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025-Squad-List.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "Existing Australia final-squad dataset remains the official 23-player boundary."
+        },
+        {
+          "country": "IR Iran",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "The image-based AFC final registration page was rendered and checked row by row."
+        },
+        {
+          "country": "Uzbekistan",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "The image-based AFC final registration page was rendered and checked row by row."
+        }
+      ]
     },
     {
       "id": "afc-u17-2023",
@@ -12284,6 +12378,16 @@
         {
           "label": "Wikipedia 2025 AFC U-17 Asian Cup",
           "url": "https://en.wikipedia.org/wiki/2025_AFC_U-17_Asian_Cup"
+        }
+      ],
+      "comparison_rosters": [
+        {
+          "country": "IR Iran",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2025_AFC_U17_Asian_Cup/Finals/Downloads/AFC-U17-Asian-Cup-Saudi-Arabia-2025---Squad-Lists.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "AFC final squad list contains 23 named Iran entries."
         }
       ]
     },
@@ -13684,6 +13788,32 @@
         {
           "label": "Shuai wants to go all the way with China PR",
           "url": "https://www.the-afc.com/en/national/afc_u17_asian_cup.html/news/shuai-wants-to-go-all-the-way-with-china-pr"
+        }
+      ],
+      "comparison_rosters": [
+        {
+          "country": "Australia",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "Existing Australia final-squad dataset remains the official 23-player boundary."
+        },
+        {
+          "country": "Uzbekistan",
+          "status": "complete-final-registration",
+          "expected_count": 23,
+          "source_url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "Existing Uzbekistan final-squad records were normalized to the common roster contract."
+        },
+        {
+          "country": "IR Iran",
+          "status": "not-applicable",
+          "expected_count": 0,
+          "source_url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+          "source_checked_at": "2026-07-19",
+          "note": "Iran did not participate in the AFC U17 Asian Cup 2026 finals; no inferred roster is created."
         }
       ]
     },
