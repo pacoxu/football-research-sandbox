@@ -30,6 +30,7 @@ const state = {
   players: [],
   overview: null,
   meta: null,
+  forecast: null,
   enrichedPlayers: [],
   playerFilters: {
     query: "",
@@ -70,7 +71,9 @@ const state = {
     coachCategory: "all",
     coachCountry: "all",
     coachStatus: "all"
-  }
+  },
+  forecastYear: 2030,
+  forecastShowAll: false
 };
 
 const UI_COPY = {
@@ -97,6 +100,10 @@ const UI_COPY = {
     "page.data-center.description": "查看研究样本的数据完整度、来源等级、复核时效、国家青训对比、项目目录与教练目录。",
     "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
     "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
+    "page.predictions.title": "亚洲世界杯长期预测 | 青训球员追踪站",
+    "page.predictions.description": "结合成年实力、青年比赛、职业转化与质量留洋分钟，研究 2030 至 2042 年亚洲球队世界杯晋级前景。",
+    "page.coaches.title": "国内青训教练 | 青训球员追踪站",
+    "page.coaches.description": "整理中国校园、足校、职业梯队、独立基地、地区体校与民间项目的具名青训教练样本。",
     "site.kicker": "青训追踪台",
     "site.brand": "青训球员追踪站",
     "nav.aria": "主导航",
@@ -107,6 +114,7 @@ const UI_COPY = {
     "nav.pathways": "青训体系",
     "nav.coaches": "青训教练",
     "nav.dataCenter": "数据中心",
+    "nav.predictions": "世界杯预测",
     "header.language": "语言",
     "common.loading": "加载中",
     "common.loadingData": "数据载入中",
@@ -144,6 +152,8 @@ const UI_COPY = {
     "home.quickLinks.genbaoText": "按代际查看基地代表球员、培养路径与当前状态。",
     "home.quickLinks.coachesTitle": "青训教练",
     "home.quickLinks.coachesText": "查看基层教练、国字号 U 系列教练组与官方来源。",
+    "home.quickLinks.predictionsTitle": "世界杯预测",
+    "home.quickLinks.predictionsText": "查看 2030—2042 亚洲晋级概率、区间和中国主要对手。",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "留洋概览",
     "home.overseasSummary.link": "查看留洋",
@@ -696,7 +706,37 @@ const UI_COPY = {
     "overseas.coaches.confidence": "可信度：{value}",
     "overseas.coaches.sources": "来源",
     "overseas.coaches.scope.afc": "AFC 成员口径",
-    "overseas.coaches.scope.broad": "广义亚洲边界项"
+    "overseas.coaches.scope.broad": "广义亚洲边界项",
+    "coaches.hero.eyebrow": "China Youth Coaching",
+    "coaches.hero.title": "国内青训教练",
+    "coaches.hero.text": "从校园启蒙到职业梯队，按具名教练、实际岗位、年龄段和可复核来源整理。",
+    "coaches.scope.eyebrow": "收录口径",
+    "coaches.scope.text": "不与成年一线队或国字号主教练任期混算；单届赛事带队只记为赛季快照。",
+    "coaches.scope.count": "{count} 位具名教练",
+    "coaches.scope.checked": "资料核验至 {date}",
+    "coaches.filters.query": "搜索姓名或机构",
+    "coaches.filters.queryPlaceholder": "例如：阿勒泰、鲁能、董路",
+    "coaches.filters.type": "机构类型",
+    "coaches.filters.allTypes": "全部机构类型",
+    "coaches.list.eyebrow": "Verified Profiles",
+    "coaches.list.title": "具名教练列表",
+    "coaches.list.meta": "显示 {shown} / {total} 人",
+    "coaches.list.empty": "没有符合当前筛选的教练。",
+    "coaches.card.period": "任期 / 快照",
+    "coaches.card.current": "至今（公开报道）",
+    "coaches.card.snapshot": "{year} 赛事快照",
+    "coaches.card.sources": "来源与核验",
+    "coaches.card.verification": "核验：{status}",
+    "coaches.watchlist.eyebrow": "Next Pass",
+    "coaches.watchlist.title": "待继续补齐",
+    "coaches.type.campus-school": "校园学校",
+    "coaches.type.private-academy": "民营青训机构",
+    "coaches.type.independent-base": "独立青训基地",
+    "coaches.type.professional-academy": "职业俱乐部 / 足校",
+    "coaches.type.independent-project": "民间项目",
+    "coaches.type.sports-school": "地区体校",
+    "coaches.verification.verified": "已核实",
+    "coaches.verification.mixed-source": "混合来源"
   },
   en: {
     "page.home.title": "Youth Player Tracking Desk",
@@ -721,6 +761,10 @@ const UI_COPY = {
     "page.data-center.description": "Review sample completeness, source tiers, freshness, country comparisons, programme directories and coach directories.",
     "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
     "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
+    "page.predictions.title": "Long-range Asian World Cup Forecast | Youth Player Tracking Desk",
+    "page.predictions.description": "A research forecast for Asian World Cup qualification from 2030 to 2042, combining senior strength, youth results, professional transition and quality-weighted overseas minutes.",
+    "page.coaches.title": "Youth Development Coaches in China | Youth Player Tracking Desk",
+    "page.coaches.description": "Named youth coaches working across schools, academies, professional youth teams, regional sports schools and independent projects in China.",
     "site.kicker": "Youth Tracking Desk",
     "site.brand": "Youth Player Tracking Desk",
     "nav.aria": "Main navigation",
@@ -731,6 +775,7 @@ const UI_COPY = {
     "nav.pathways": "Youth Systems",
     "nav.coaches": "Coaches",
     "nav.dataCenter": "Data",
+    "nav.predictions": "World Cup Forecast",
     "header.language": "Language",
     "common.loading": "Loading",
     "common.loadingData": "Loading data",
@@ -768,6 +813,8 @@ const UI_COPY = {
     "home.quickLinks.genbaoText": "Browse representative generations, pathways and current status.",
     "home.quickLinks.coachesTitle": "Youth coaches",
     "home.quickLinks.coachesText": "Explore grassroots coaches, China youth national-team staffs, and official sources.",
+    "home.quickLinks.predictionsTitle": "World Cup Forecast",
+    "home.quickLinks.predictionsText": "Explore Asian qualification probabilities, intervals, and China's main rivals from 2030 to 2042.",
     "home.overseasSummary.eyebrow": "Overseas Overview",
     "home.overseasSummary.title": "Overseas overview",
     "home.overseasSummary.link": "View overseas",
@@ -1320,7 +1367,37 @@ const UI_COPY = {
     "overseas.coaches.confidence": "Confidence: {value}",
     "overseas.coaches.sources": "Sources",
     "overseas.coaches.scope.afc": "AFC member scope",
-    "overseas.coaches.scope.broad": "Broad Asian boundary"
+    "overseas.coaches.scope.broad": "Broad Asian boundary",
+    "coaches.hero.eyebrow": "China Youth Coaching",
+    "coaches.hero.title": "Youth development coaches in China",
+    "coaches.hero.text": "Named coaches, actual roles, age bands and traceable sources—from school football to professional academies.",
+    "coaches.scope.eyebrow": "Scope",
+    "coaches.scope.text": "Senior first-team and national youth-team appointments are tracked separately; one-off tournament roles remain dated snapshots.",
+    "coaches.scope.count": "{count} named coaches",
+    "coaches.scope.checked": "Checked through {date}",
+    "coaches.filters.query": "Search name or organization",
+    "coaches.filters.queryPlaceholder": "e.g. Altay, Luneng, Dong Lu",
+    "coaches.filters.type": "Organization type",
+    "coaches.filters.allTypes": "All organization types",
+    "coaches.list.eyebrow": "Verified Profiles",
+    "coaches.list.title": "Named coach list",
+    "coaches.list.meta": "Showing {shown} of {total}",
+    "coaches.list.empty": "No coach matches the current filters.",
+    "coaches.card.period": "Tenure / snapshot",
+    "coaches.card.current": "present (publicly reported)",
+    "coaches.card.snapshot": "{year} competition snapshot",
+    "coaches.card.sources": "Sources and verification",
+    "coaches.card.verification": "Verification: {status}",
+    "coaches.watchlist.eyebrow": "Next Pass",
+    "coaches.watchlist.title": "Coverage still to add",
+    "coaches.type.campus-school": "School football",
+    "coaches.type.private-academy": "Private academy",
+    "coaches.type.independent-base": "Independent base",
+    "coaches.type.professional-academy": "Professional academy",
+    "coaches.type.independent-project": "Independent project",
+    "coaches.type.sports-school": "Regional sports school",
+    "coaches.verification.verified": "verified",
+    "coaches.verification.mixed-source": "mixed sources"
   }
 };
 
@@ -1432,6 +1509,166 @@ function yt(key, variables = {}) {
   return template;
 }
 
+const FORECAST_COPY = {
+  zh: {
+    "hero.eyebrow": "Research Forecast",
+    "hero.title": "亚洲世界杯长期预测",
+    "hero.text": "结合成年实力、青年比赛、职业转化与质量留洋分钟，观察 2030—2042 年亚洲球队的世界杯晋级前景。",
+    "hero.status": "实验性研究模型",
+    "hero.asOf": "数据截点 {date}",
+    "hero.pool": "AFC 候选池 {count} 队",
+    "hero.bootstrap": "固定种子抽样 {count} 次",
+    "edition.eyebrow": "Forecast Horizon",
+    "edition.title": "选择预测届次",
+    "edition.qualification": "晋级预测",
+    "edition.system": "长期体系展望",
+    "edition.meta": "提前 {lead} 年 · 预期名额 {slots} · 本届可信度 {confidence}",
+    "edition.host": "{team} 为已确认东道主，按 100% 展示并占用一个 AFC 预期席位。",
+    "edition.scenario": "名额与赛制尚未由 FIFA 最终确认；当前沿用 AFC 8.5 席情景，不代表官方赛制。",
+    "expected.eyebrow": "Expected Field",
+    "expected.title": "预期晋级组",
+    "expected.note": "按概率中位数展示前 8 队，不是确定名单。",
+    "expected.host": "东道主",
+    "expected.bubble": "附加赛与临界竞争圈",
+    "ranking.eyebrow": "AFC Probability Table",
+    "ranking.title": "亚洲晋级概率榜",
+    "ranking.meta": "默认显示 2027 亚洲杯球队、概率前 20 名和中国队，共 {shown} / {total} 队",
+    "ranking.all": "显示全部 AFC 球队",
+    "ranking.focus": "恢复重点队伍",
+    "ranking.rank": "排名",
+    "ranking.team": "球队",
+    "ranking.probability": "晋级概率",
+    "ranking.interval": "80% 区间",
+    "ranking.tier": "分档",
+    "ranking.trend": "趋势",
+    "ranking.confidence": "数据可信度",
+    "ranking.asianCup": "2027 亚洲杯",
+    "china.eyebrow": "China Focus",
+    "china.title": "中国队专题",
+    "china.summary": "第 {rank} 位 · 晋级概率 {probability} · 80% 区间 {interval}",
+    "china.rivals": "最接近的主要竞争者",
+    "china.drivers": "主要信号",
+    "china.sensitivity": "敏感度，不是正式预测",
+    "china.youthScenario": "青年指标提高 1 个标准差",
+    "china.overseasScenario": "质量留洋分钟提高 25%",
+    "china.delta": "概率变化 {delta}",
+    "method.eyebrow": "Method & Backtest",
+    "method.title": "模型方法与滚动回测",
+    "method.note": "成年模型与梯队模型分别做 L2 正则化，再按世界杯周期滚动回测学习混合权重。概率经名额约束校准；区间来自按周期抽样与输入不确定性。",
+    "method.lead": "提前量",
+    "method.samples": "回测样本",
+    "method.weights": "成年 / 梯队权重",
+    "method.baseline": "成年基线 Brier",
+    "method.combined": "组合 Brier",
+    "method.loss": "组合 Log loss",
+    "method.sources": "依据与来源",
+    "method.limitations": "边界：历史训练仅覆盖 18 支主要竞争队；国家指标是可复核资料形成的 0—100 研究指数，不是 FIFA 官方评分。2038/2042 尚缺完整适龄球员，因此只用于体系展望。",
+    "tier.stable": "稳定区",
+    "tier.contender": "主要竞争区",
+    "tier.outside": "外围竞争区",
+    "tier.watch": "长期观察区",
+    "confidence.high": "高",
+    "confidence.medium": "中",
+    "confidence.medium-low": "中低",
+    "confidence.low": "低",
+    "trend.baseline": "基准",
+    "trend.up": "上升",
+    "trend.down": "下降",
+    "trend.stable": "持平",
+    "driver.senior": "成年基线",
+    "driver.youth": "青年成绩",
+    "driver.overseas": "质量留洋",
+    "driver.transition": "职业转化",
+    "driver.continuity": "体系持续性",
+    "driver.positive": "高于 AFC 均值 {delta}",
+    "driver.negative": "低于 AFC 均值 {delta}",
+    "empty": "预测数据暂不可用。"
+  },
+  en: {
+    "hero.eyebrow": "Research Forecast",
+    "hero.title": "Long-range Asian World Cup Forecast",
+    "hero.text": "A 2030–2042 qualification outlook combining senior strength, youth results, professional transition and quality-weighted overseas minutes.",
+    "hero.status": "Experimental research model",
+    "hero.asOf": "Data cut-off {date}",
+    "hero.pool": "{count}-team AFC candidate pool",
+    "hero.bootstrap": "{count} seeded bootstrap draws",
+    "edition.eyebrow": "Forecast Horizon",
+    "edition.title": "Select an edition",
+    "edition.qualification": "Qualification forecast",
+    "edition.system": "Long-range system outlook",
+    "edition.meta": "{lead}-year lead · {slots} expected slots · {confidence} confidence",
+    "edition.host": "{team} are confirmed hosts, shown at 100% and consuming one expected AFC slot.",
+    "edition.scenario": "FIFA has not confirmed the final allocation or format; the page carries forward an 8.5-slot AFC scenario, not an official format.",
+    "expected.eyebrow": "Expected Field",
+    "expected.title": "Expected qualification group",
+    "expected.note": "The top eight median probabilities are a forecast set, not a confirmed line-up.",
+    "expected.host": "Host",
+    "expected.bubble": "Play-off and qualification bubble",
+    "ranking.eyebrow": "AFC Probability Table",
+    "ranking.title": "Asian qualification probabilities",
+    "ranking.meta": "Showing 2027 Asian Cup teams, the top 20, and China: {shown} / {total} teams",
+    "ranking.all": "Show every AFC team",
+    "ranking.focus": "Restore focus view",
+    "ranking.rank": "Rank",
+    "ranking.team": "Team",
+    "ranking.probability": "Qualification",
+    "ranking.interval": "80% interval",
+    "ranking.tier": "Tier",
+    "ranking.trend": "Trend",
+    "ranking.confidence": "Data confidence",
+    "ranking.asianCup": "2027 Asian Cup",
+    "china.eyebrow": "China Focus",
+    "china.title": "China outlook",
+    "china.summary": "Rank {rank} · {probability} qualification · 80% interval {interval}",
+    "china.rivals": "Closest major competitors",
+    "china.drivers": "Main signals",
+    "china.sensitivity": "Sensitivity, not a forecast",
+    "china.youthScenario": "Youth index improves by one standard deviation",
+    "china.overseasScenario": "Quality overseas minutes rise by 25%",
+    "china.delta": "Probability change {delta}",
+    "method.eyebrow": "Method & Backtest",
+    "method.title": "Method and rolling backtest",
+    "method.note": "L2-regularized senior and pipeline models are blended with weights learned by rolling World Cup-cycle backtests. Probabilities are quota-calibrated; intervals combine cycle bootstrap and input uncertainty.",
+    "method.lead": "Lead",
+    "method.samples": "Test rows",
+    "method.weights": "Senior / pipeline",
+    "method.baseline": "Senior Brier",
+    "method.combined": "Combined Brier",
+    "method.loss": "Combined log loss",
+    "method.sources": "Evidence and sources",
+    "method.limitations": "Boundary: historical training covers 18 primary contenders. National inputs are transparent 0–100 research indices built from cited evidence, not official FIFA scores. 2038/2042 lack complete age-eligible cohorts and are system outlooks only.",
+    "tier.stable": "Stable",
+    "tier.contender": "Contender",
+    "tier.outside": "Outside chance",
+    "tier.watch": "Long-range watch",
+    "confidence.high": "High",
+    "confidence.medium": "Medium",
+    "confidence.medium-low": "Medium-low",
+    "confidence.low": "Low",
+    "trend.baseline": "Baseline",
+    "trend.up": "Up",
+    "trend.down": "Down",
+    "trend.stable": "Flat",
+    "driver.senior": "Senior baseline",
+    "driver.youth": "Youth results",
+    "driver.overseas": "Quality overseas",
+    "driver.transition": "Pro transition",
+    "driver.continuity": "Pipeline continuity",
+    "driver.positive": "{delta} above AFC mean",
+    "driver.negative": "{delta} below AFC mean",
+    "empty": "Forecast data is unavailable."
+  }
+};
+
+function ft(key, variables = {}) {
+  const dictionary = FORECAST_COPY[state.language] ?? FORECAST_COPY.zh;
+  let template = dictionary[key] ?? FORECAST_COPY.zh[key] ?? key;
+  for (const [name, value] of Object.entries(variables)) {
+    template = template.replaceAll(`{${name}}`, String(value));
+  }
+  return template;
+}
+
 const PAGE_METADATA = {
   home: { title: "page.home.title", description: "page.home.description" },
   players: { title: "page.players.title", description: "page.players.description" },
@@ -1455,7 +1692,8 @@ const PAGE_METADATA = {
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
   "data-center": { title: "page.data-center.title", description: "page.data-center.description" },
-  "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" }
+  "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" },
+  predictions: { title: "page.predictions.title", description: "page.predictions.description" }
 };
 
 const COUNTRY_LABELS = {
@@ -1894,7 +2132,7 @@ document.addEventListener("DOMContentLoaded", () => {
 async function boot() {
   try {
     const dataCenterPage = page === "data-center";
-    const [players, overview, meta] = await Promise.all([
+    const [players, overview, meta, forecast] = await Promise.all([
       dataCenterPage ? Promise.resolve([]) : fetchJson("./data/site/players.json"),
       dataCenterPage
         ? fetchJson("./data/site/overview.json").catch((error) => {
@@ -1907,12 +2145,16 @@ async function boot() {
             state.dataCenter.metaError = error;
             return null;
           })
+        : Promise.resolve(null),
+      page === "predictions"
+        ? fetchJson("./data/site/world-cup-forecast.json")
         : Promise.resolve(null)
     ]);
 
     state.players = players;
     state.overview = overview;
     state.meta = meta;
+    state.forecast = forecast ?? null;
     state.enrichedPlayers = players.map((player) => enrichPlayer(player, overview));
 
     setActiveNavigation();
@@ -1976,6 +2218,12 @@ async function boot() {
     if (page === "data-center") {
       initializeDataCenterPage();
       renderDataCenterPage();
+      return;
+    }
+
+    if (page === "predictions") {
+      initializeForecastPage();
+      renderForecastPage();
     }
   } catch (error) {
     console.error(error);
@@ -7414,4 +7662,292 @@ function renderOverseasSpecialListCard(list) {
       }
     </article>
   `;
+}
+
+function formatForecastPercent(value, signed = false) {
+  const percentage = Number(value ?? 0) * 100;
+  const sign = signed && percentage > 0 ? "+" : "";
+  return `${sign}${percentage.toLocaleString(getLocale(), {
+    minimumFractionDigits: Math.abs(percentage) < 10 ? 1 : 0,
+    maximumFractionDigits: 1
+  })}%`;
+}
+
+function formatForecastInterval(interval) {
+  return `${formatForecastPercent(interval?.lower)}–${formatForecastPercent(interval?.upper)}`;
+}
+
+function getForecastEdition() {
+  return state.forecast?.editions?.find((edition) => edition.year === state.forecastYear) ?? null;
+}
+
+function getForecastTeam(edition, teamId) {
+  return edition?.teams?.find((team) => team.team_id === teamId) ?? null;
+}
+
+function forecastTeamName(team) {
+  return localizeText(team?.name, team?.team_id ?? "-");
+}
+
+function forecastConfidenceLabel(value) {
+  return ft(`confidence.${value}`);
+}
+
+function forecastTierLabel(value) {
+  return ft(`tier.${value}`);
+}
+
+function initializeForecastPage() {
+  const requestedYear = Number(new URLSearchParams(window.location.search).get("year"));
+  if (state.forecast?.editions?.some((edition) => edition.year === requestedYear)) {
+    state.forecastYear = requestedYear;
+  }
+
+  document.querySelector("#forecastYearTabs")?.addEventListener("click", (event) => {
+    const button = event.target.closest("[data-forecast-year]");
+    if (!button) {
+      return;
+    }
+    state.forecastYear = Number(button.dataset.forecastYear);
+    renderForecastPage();
+  });
+
+  document.querySelector("#forecastTableToggle")?.addEventListener("click", () => {
+    state.forecastShowAll = !state.forecastShowAll;
+    renderForecastRanking(getForecastEdition());
+  });
+}
+
+function renderForecastStaticCopy() {
+  document.querySelectorAll("[data-forecast-copy]").forEach((node) => {
+    node.textContent = ft(node.dataset.forecastCopy);
+  });
+}
+
+function renderForecastHero() {
+  const metadata = state.forecast.metadata;
+  const node = document.querySelector("#forecastHeroMeta");
+  node.innerHTML = `
+    <span class="forecast-status-badge">${escapeHtml(ft("hero.status"))}</span>
+    <strong>${escapeHtml(ft("hero.asOf", { date: formatDate(metadata.as_of) }))}</strong>
+    <span>${escapeHtml(ft("hero.pool", { count: metadata.candidate_team_count }))}</span>
+    <span>${escapeHtml(ft("hero.bootstrap", { count: metadata.bootstrap_samples.toLocaleString(getLocale()) }))}</span>
+  `;
+}
+
+function renderForecastYearTabs() {
+  const node = document.querySelector("#forecastYearTabs");
+  node.innerHTML = state.forecast.editions
+    .map(
+      (edition) => `
+        <button class="tab-button ${edition.year === state.forecastYear ? "is-active" : ""}" type="button" data-forecast-year="${edition.year}">
+          <strong>${edition.year}</strong>
+          <small>${escapeHtml(ft(edition.outlook_type === "qualification_forecast" ? "edition.qualification" : "edition.system"))}</small>
+        </button>
+      `
+    )
+    .join("");
+}
+
+function renderForecastEditionContext(edition) {
+  const meta = document.querySelector("#forecastEditionMeta");
+  const notice = document.querySelector("#forecastAssumptionNotice");
+  meta.textContent = ft("edition.meta", {
+    lead: edition.lead_years,
+    slots: edition.expected_slots,
+    confidence: forecastConfidenceLabel(edition.confidence)
+  });
+  const notes = [ft("edition.scenario")];
+  if (edition.host_team_id) {
+    notes.unshift(
+      ft("edition.host", {
+        team: forecastTeamName(getForecastTeam(edition, edition.host_team_id))
+      })
+    );
+  }
+  notice.innerHTML = notes.map((note) => `<p>${escapeHtml(note)}</p>`).join("");
+  replaceQueryParams({ year: edition.year });
+}
+
+function renderForecastProbabilityCard(team, options = {}) {
+  if (!team) {
+    return "";
+  }
+  return `
+    <article class="forecast-probability-card ${options.host ? "is-host" : ""}">
+      <div>
+        <span class="forecast-rank">#${team.rank}</span>
+        ${options.host ? `<span class="chip">${escapeHtml(ft("expected.host"))}</span>` : ""}
+      </div>
+      <h3>${escapeHtml(forecastTeamName(team))}</h3>
+      <strong>${formatForecastPercent(team.probability)}</strong>
+      <small>${escapeHtml(formatForecastInterval(team.interval_80))}</small>
+    </article>
+  `;
+}
+
+function renderForecastExpectedField(edition) {
+  const expected = document.querySelector("#forecastExpectedGrid");
+  const bubble = document.querySelector("#forecastBubbleGrid");
+  const expectedIds = edition.host_team_id
+    ? [edition.host_team_id, ...edition.expected_qualifier_ids]
+    : edition.expected_qualifier_ids;
+  expected.innerHTML = expectedIds
+    .map((teamId) => renderForecastProbabilityCard(getForecastTeam(edition, teamId), { host: teamId === edition.host_team_id }))
+    .join("");
+  bubble.innerHTML = edition.playoff_bubble_ids
+    .map((teamId) => renderForecastProbabilityCard(getForecastTeam(edition, teamId)))
+    .join("");
+}
+
+function renderForecastTrend(trend) {
+  const icons = { up: "↗", down: "↘", stable: "→", baseline: "•" };
+  return `<span class="forecast-trend is-${escapeHtml(trend)}">${icons[trend] ?? "•"} ${escapeHtml(ft(`trend.${trend}`))}</span>`;
+}
+
+function renderForecastRankingRow(team) {
+  return `
+    <tr class="${team.team_id === "china-pr" ? "is-china" : ""}">
+      <td><strong>#${team.rank}</strong></td>
+      <td>
+        <strong>${escapeHtml(forecastTeamName(team))}</strong>
+        <div class="chip-row forecast-team-flags">
+          ${team.asian_cup_2027 ? `<span class="chip">${escapeHtml(ft("ranking.asianCup"))}</span>` : ""}
+          ${team.team_id === "china-pr" ? `<span class="chip is-accent">China focus</span>` : ""}
+        </div>
+      </td>
+      <td>
+        <div class="forecast-probability-cell">
+          <strong>${formatForecastPercent(team.probability)}</strong>
+          <span class="forecast-probability-track"><span style="width:${Math.max(1, team.probability * 100)}%"></span></span>
+        </div>
+      </td>
+      <td>${escapeHtml(formatForecastInterval(team.interval_80))}</td>
+      <td><span class="forecast-tier is-${escapeHtml(team.tier)}">${escapeHtml(forecastTierLabel(team.tier))}</span></td>
+      <td>${renderForecastTrend(team.trend)}</td>
+      <td><span class="forecast-confidence is-${escapeHtml(team.confidence)}">${escapeHtml(forecastConfidenceLabel(team.confidence))} · ${Math.round(team.coverage * 100)}%</span></td>
+    </tr>
+  `;
+}
+
+function renderForecastRanking(edition) {
+  if (!edition) {
+    return;
+  }
+  const focusedTeams = edition.teams.filter(
+    (team) => team.asian_cup_2027 || team.rank <= 20 || team.team_id === "china-pr"
+  );
+  const teams = state.forecastShowAll ? edition.teams : focusedTeams;
+  document.querySelector("#forecastTableBody").innerHTML = teams.map(renderForecastRankingRow).join("");
+  document.querySelector("#forecastTableMeta").textContent = ft("ranking.meta", {
+    shown: teams.length,
+    total: edition.teams.length
+  });
+  document.querySelector("#forecastTableToggle").textContent = ft(
+    state.forecastShowAll ? "ranking.focus" : "ranking.all"
+  );
+}
+
+function renderForecastDriver(driver) {
+  const delta = driver.delta > 0 ? `+${driver.delta}` : String(driver.delta);
+  return `
+    <article class="forecast-driver-card">
+      <div class="section-head compact-head">
+        <strong>${escapeHtml(ft(`driver.${driver.key}`))}</strong>
+        <span>${driver.value.toLocaleString(getLocale())}</span>
+      </div>
+      <span class="forecast-index-track"><span style="width:${driver.value}%"></span></span>
+      <small class="${driver.direction === "positive" ? "is-positive" : "is-negative"}">
+        ${escapeHtml(ft(`driver.${driver.direction}`, { delta }))}
+      </small>
+    </article>
+  `;
+}
+
+function renderForecastRival(team, chinaTeam) {
+  const comparisons = ["senior", "youth", "overseas"]
+    .map((key) => {
+      const delta = team.inputs[key] - chinaTeam.inputs[key];
+      return `${ft(`driver.${key}`)} ${delta > 0 ? "+" : ""}${delta.toFixed(0)}`;
+    })
+    .join(" · ");
+  return `
+    <article class="forecast-rival-card">
+      <div>
+        <strong>#${team.rank} ${escapeHtml(forecastTeamName(team))}</strong>
+        <span>${formatForecastPercent(team.probability)}</span>
+      </div>
+      <small>${escapeHtml(comparisons)}</small>
+    </article>
+  `;
+}
+
+function renderForecastSensitivity(label, scenario) {
+  return `
+    <article class="forecast-sensitivity-card">
+      <span>${escapeHtml(label)}</span>
+      <strong>${formatForecastPercent(scenario.probability)}</strong>
+      <small>${escapeHtml(ft("china.delta", { delta: formatForecastPercent(scenario.delta, true) }))}</small>
+    </article>
+  `;
+}
+
+function renderForecastChina(edition) {
+  const chinaTeam = getForecastTeam(edition, "china-pr");
+  document.querySelector("#forecastChinaSummary").textContent = ft("china.summary", {
+    rank: chinaTeam.rank,
+    probability: formatForecastPercent(chinaTeam.probability),
+    interval: formatForecastInterval(chinaTeam.interval_80)
+  });
+  document.querySelector("#forecastChinaDrivers").innerHTML = chinaTeam.drivers.map(renderForecastDriver).join("");
+  document.querySelector("#forecastChinaRivals").innerHTML = edition.china.rival_ids
+    .map((teamId) => renderForecastRival(getForecastTeam(edition, teamId), chinaTeam))
+    .join("");
+  document.querySelector("#forecastChinaSensitivity").innerHTML = [
+    renderForecastSensitivity(ft("china.youthScenario"), edition.china.sensitivity.youth_plus_one_sd),
+    renderForecastSensitivity(ft("china.overseasScenario"), edition.china.sensitivity.overseas_minutes_plus_25_percent)
+  ].join("");
+}
+
+function renderForecastBacktest() {
+  document.querySelector("#forecastBacktestBody").innerHTML = state.forecast.backtest
+    .map(
+      (row) => `
+        <tr class="${row.lead_years === getForecastEdition()?.lead_years ? "is-current" : ""}">
+          <td>${row.lead_years} ${state.language === "en" ? "years" : "年"}</td>
+          <td>${row.sample_size}</td>
+          <td>${Math.round(row.senior_weight * 100)}% / ${Math.round(row.pipeline_weight * 100)}%</td>
+          <td>${row.senior_baseline.brier.toFixed(4)}</td>
+          <td>${row.combined.brier.toFixed(4)}</td>
+          <td>${row.combined.log_loss.toFixed(4)}</td>
+        </tr>
+      `
+    )
+    .join("");
+  document.querySelector("#forecastSourceGrid").innerHTML = state.forecast.sources
+    .map(
+      (source) => `
+        <a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">
+          <span>${escapeHtml(source.label)}</span>
+          <small>${escapeHtml(formatDate(source.checked_at))} ↗</small>
+        </a>
+      `
+    )
+    .join("");
+}
+
+function renderForecastPage() {
+  renderForecastStaticCopy();
+  if (!state.forecast?.editions?.length) {
+    document.querySelector("#forecastPageContent").innerHTML = `<div class="empty-state">${escapeHtml(ft("empty"))}</div>`;
+    return;
+  }
+  const edition = getForecastEdition();
+  renderForecastHero();
+  renderForecastYearTabs();
+  renderForecastEditionContext(edition);
+  renderForecastExpectedField(edition);
+  renderForecastRanking(edition);
+  renderForecastChina(edition);
+  renderForecastBacktest();
 }

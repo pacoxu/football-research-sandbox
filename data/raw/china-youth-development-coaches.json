@@ -41,12 +41,12 @@
         "u12"
       ],
       "period": {
-        "start": "2016",
+        "start": "2015",
         "end": null,
         "precision": "year",
         "status": "current-reported"
       },
-      "profile_summary": "2016年进入石门五小持续带队，从低年级组队、日常训练到全国赛事形成校园梯队。公开报道强调其长期驻校训练和山区校园足球路径。",
+      "profile_summary": "2015年进入石门五小持续带队，从低年级组队、日常训练到全国赛事形成校园梯队。公开报道强调其长期驻校训练和山区校园足球路径。",
       "methodology_tags": [
         "校园足球",
         "低年龄启蒙",
@@ -59,7 +59,7 @@
           "label": "湖南体育网：用心耕耘校园足球，石门五小教练谢波打造学生军劲旅",
           "url": "https://tyj.hunan.gov.cn/tyj/xxgk/szdt/202505/t20250508_33665131.html",
           "checked_at": "2026-07-18",
-          "claim": "确认谢波的石门五小教练身份、长期带训和校园梯队建设。"
+          "claim": "确认谢波的石门五小教练身份、投身校园足球的时间线、长期带训和校园梯队建设。"
         },
         {
           "type": "state-media",
@@ -198,7 +198,7 @@
         "province": "辽宁",
         "city": "大连"
       },
-      "role": "足球总教练",
+      "role": "前足球总教练、持续返校指导",
       "age_bands": [
         "primary-school",
         "u12"
@@ -207,9 +207,9 @@
         "start": "1986",
         "end": null,
         "precision": "year",
-        "status": "current-reported"
+        "status": "former"
       },
-      "profile_summary": "1986年进入东北路小学任教并逐步组建教练团队，是该校长期校园足球和低年龄人才培养的代表教练。",
+      "profile_summary": "1986年进入东北路小学任教并逐步组建教练团队，是该校长期校园足球和低年龄人才培养的代表教练。2026年报道显示其已年逾古稀、仍不时返校指导，因此不再标为现任总教练。",
       "methodology_tags": [
         "校园足球",
         "低年龄启蒙",
@@ -230,12 +230,19 @@
           "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21879601/content.html",
           "checked_at": "2026-07-18",
           "claim": "确认柳忠云的足球总教练身份及长期带训实践。"
+        },
+        {
+          "type": "state-media",
+          "label": "人民网：东北路小学以足球育人，老教练仍不时返校指导",
+          "url": "https://ln.people.com.cn/BIG5/n2/2026/0119/c378322-41476081.html",
+          "checked_at": "2026-07-19",
+          "claim": "确认柳忠云年逾古稀后仍不时返校指导，据此将长期任职与当前指导角色分开。"
         }
       ],
       "verification": {
         "status": "verified",
         "last_checked": "2026-07-18",
-        "notes": "体育总局和2026年国家级媒体报道相互印证。"
+        "notes": "体育总局和2026年国家级媒体报道相互印证；结束年份未公开，故只将状态标为former，不猜测具体离任年份。"
       }
     },
     {
@@ -324,7 +331,7 @@
         "职业足校",
         "u13",
         "中青赛",
-        "压迫与拼抢"
+        "高强度比赛"
       ],
       "source_links": [
         {
@@ -332,7 +339,7 @@
           "label": "中国足协：中青赛U13决赛首回合恒大足校取胜",
           "url": "https://www.thecfa.cn/qingchaoliansai/20250908/36883.html",
           "checked_at": "2026-07-18",
-          "claim": "确认朱利伟为恒大足校U13主教练及其赛后训练侧重点。"
+          "claim": "确认朱利伟为恒大足校U13主教练，并记录其对该场拼抢和压迫表现的赛后评价。"
         },
         {
           "type": "official-school",
@@ -363,7 +370,7 @@
         "province": "北京",
         "city": "北京"
       },
-      "role": "足球队总教练、U17主教练",
+      "role": "足球队总教练、曾兼任U17主教练",
       "age_bands": [
         "u15",
         "u17",
@@ -375,7 +382,7 @@
         "precision": "year",
         "status": "current-reported"
       },
-      "profile_summary": "作为清华附中韩国教练团队负责人参与马约翰班足球队建设；学校2024年官方报道仍明确其为U17主教练，2025年中青赛报道继续确认其带队。",
+      "profile_summary": "作为清华附中韩国教练团队负责人参与马约翰班足球队建设；学校2024年官方报道明确其为U17主教练，2025年10月校方仍称其为足球主教练。",
       "methodology_tags": [
         "体教融合",
         "校园精英队",
@@ -396,12 +403,19 @@
           "url": "https://www.qhfz.edu.cn/info/1064/13437.htm",
           "checked_at": "2026-07-18",
           "claim": "确认其总教练身份、韩国教练团队和早期建队职责。"
+        },
+        {
+          "type": "official-school",
+          "label": "清华附中：2025-2026学年马约翰班工作大会",
+          "url": "https://www.qhfz.edu.cn/info/1061/21179.htm",
+          "checked_at": "2026-07-19",
+          "claim": "确认2025年10月金镇亨仍以清华附中足球主教练身份参会发言。"
         }
       ],
       "verification": {
         "status": "verified",
         "last_checked": "2026-07-18",
-        "notes": "学校官方2016、2024来源与2025足协赛事报道形成连续证据；韩文姓名拼写尚缺官方拉丁字母页。"
+        "notes": "学校官方2016、2024、2025来源形成连续证据；英文名为按中文姓名转写，尚缺官方拉丁字母页。"
       }
     },
     {
@@ -419,7 +433,7 @@
         "province": "跨地区",
         "city": "跨地区"
       },
-      "role": "创办人、选材者、比赛主教练",
+      "role": "创始人、项目教练、带队者",
       "age_bands": [
         "u9",
         "u12",
@@ -431,7 +445,7 @@
         "precision": "year",
         "status": "current-reported"
       },
-      "profile_summary": "2017年发起中国足球小将，以全国选拔、飞行集训和高质量比赛为主要形式。该项目不是固定注册俱乐部，董路的角色随批次在创办人、选材者、带队者和比赛主教练之间变化。",
+      "profile_summary": "2017年发起中国足球小将，以跨地区选拔、阶段集训和比赛为主要形式。它是跨地区民间青训与赛事项目，不能等同单一常规职业俱乐部梯队；董路的具体带队角色随批次变化。",
       "methodology_tags": [
         "民间项目",
         "全国选材",
@@ -488,6 +502,114 @@
       ]
     },
     {
+      "id": "cn-xu-liang-football-boys-2014",
+      "name": {
+        "zh": "徐亮",
+        "en": "Xu Liang",
+        "native": "徐亮"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "中国足球小将2014年龄段",
+        "short_name": "足球小将2014",
+        "type": "independent-project",
+        "province": "跨地区",
+        "city": "跨地区"
+      },
+      "role": "教练组成员、技术总监（2023年公开口径）",
+      "age_bands": [
+        "u9"
+      ],
+      "period": {
+        "start": "2023",
+        "end": "2023",
+        "precision": "snapshot",
+        "status": "former"
+      },
+      "profile_summary": "2023年9月公开报道确认徐亮是中国足球小将教练组成员；同年10月董路对外表示其担任2014年龄段技术总监。当前仅作为2023年项目快照，不外推为持续现任。",
+      "methodology_tags": [
+        "民间项目",
+        "退役球员转教练",
+        "技术总监",
+        "2014年龄段"
+      ],
+      "source_links": [
+        {
+          "type": "secondary-media",
+          "label": "PP体育：毛剑卿加盟中国足球小将教练组，搭档徐亮",
+          "url": "https://www.ppsport.com/article/news/2105689.html",
+          "checked_at": "2026-07-19",
+          "claim": "确认2023年9月徐亮为中国足球小将教练组成员。"
+        },
+        {
+          "type": "secondary-media",
+          "label": "直播吧：徐亮任中国足球小将2014队技术总监",
+          "url": "https://news.zhibo8.com/zuqiu/2023-10-13/6528eb1d8050enative.htm",
+          "checked_at": "2026-07-19",
+          "claim": "记录董路2023年10月对2014年龄段教练分工的公开表述。"
+        }
+      ],
+      "verification": {
+        "status": "mixed-source",
+        "last_checked": "2026-07-19",
+        "notes": "两条均为体育媒体转述项目创始人公开表述，未找到项目官网任命页；只确认2023年快照。"
+      }
+    },
+    {
+      "id": "cn-mao-jianqing-football-boys-2014",
+      "name": {
+        "zh": "毛剑卿",
+        "en": "Mao Jianqing",
+        "native": "毛剑卿"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "中国足球小将2014年龄段",
+        "short_name": "足球小将2014",
+        "type": "independent-project",
+        "province": "跨地区",
+        "city": "跨地区"
+      },
+      "role": "教练组成员、2014队主教练（2023年公开口径）",
+      "age_bands": [
+        "u9"
+      ],
+      "period": {
+        "start": "2023",
+        "end": "2023",
+        "precision": "snapshot",
+        "status": "former"
+      },
+      "profile_summary": "2023年9月加入中国足球小将教练组；同年10月董路对外表示其担任2014年龄段主教练。当前没有足够公开资料确认后续连续任期，因此只保留2023年快照。",
+      "methodology_tags": [
+        "民间项目",
+        "退役球员转教练",
+        "比赛带队",
+        "2014年龄段"
+      ],
+      "source_links": [
+        {
+          "type": "secondary-media",
+          "label": "PP体育：毛剑卿加盟中国足球小将教练组",
+          "url": "https://www.ppsport.com/article/news/2105689.html",
+          "checked_at": "2026-07-19",
+          "claim": "确认2023年9月毛剑卿加入中国足球小将教练组。"
+        },
+        {
+          "type": "secondary-media",
+          "label": "直播吧：毛剑卿任中国足球小将2014队主教练",
+          "url": "https://news.zhibo8.com/zuqiu/2023-10-13/6528eb1d8050enative.htm",
+          "checked_at": "2026-07-19",
+          "claim": "记录董路2023年10月对2014年龄段教练分工的公开表述。"
+        }
+      ],
+      "verification": {
+        "status": "mixed-source",
+        "last_checked": "2026-07-19",
+        "notes": "两条均为体育媒体转述项目创始人公开表述，未找到项目官网任命页；只确认2023年快照。"
+      }
+    },
+    {
       "id": "cn-yerbolati-nurlan-altay-u14",
       "name": {
         "zh": "叶尔波拉提·努尔兰",
@@ -496,7 +618,7 @@
       },
       "nationality": "China PR",
       "organization": {
-        "name": "阿勒泰地区业余体校U14代表队",
+        "name": "阿勒泰地区U14代表队（地区业余体校派送）",
         "short_name": "阿勒泰地区U14",
         "type": "sports-school",
         "province": "新疆",
@@ -512,7 +634,7 @@
         "precision": "snapshot",
         "status": "confirmed-2025"
       },
-      "profile_summary": "阿勒泰地区业余体校派送U14代表队教练。2025年2月带队以7场38球、全胜战绩获得第三届“火洲贺岁杯”全疆青少年足球邀请赛U14冠军，4名球员获得代表新疆足协参加全国锦标赛的机会。",
+      "profile_summary": "阿勒泰地区U14代表队教练。该队由阿勒泰地区业余体校派送，2025年2月以7场38球、全胜战绩获得第三届“火洲贺岁杯”全疆青少年足球邀请赛U14冠军，4名球员获得代表新疆足协参加全国锦标赛的机会。",
       "methodology_tags": [
         "地区体校",
         "新疆青训",
@@ -531,7 +653,7 @@
       "verification": {
         "status": "verified",
         "last_checked": "2026-07-18",
-        "notes": "地方党报原版第4版第145至149行可核。当前仅确认2025年2月赛事快照，不把用户口述的“叶教练”扩写为其他人，也不推断长期任期。"
+        "notes": "地方党报原版第4版可核。当前仅确认2025年2月赛事快照；报道没有说明其与地区业余体校的雇佣关系，英文名为按中文姓名转写，尚无官方拉丁拼写。"
       }
     },
     {
@@ -647,7 +769,7 @@
     },
     {
       "organization": "中国足球小将",
-      "need": "已拆2014批次董路实际比赛职责；继续核验2015、2016批次及具名助教，区分临时合作与长期训练。"
+      "need": "已拆2014批次董路实际比赛职责，并保留徐亮、毛剑卿2023年教练组快照；继续核验2015、2016批次及具名助教，区分临时合作与长期训练。"
     }
   ]
 }
