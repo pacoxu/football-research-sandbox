@@ -14,10 +14,10 @@ const overview = JSON.parse(
   await readFile(new URL("../data/site/overview.json", import.meta.url), "utf8")
 );
 
-test("builds the five-country pathway comparison without ranking countries", () => {
+test("builds the six-country pathway comparison without ranking countries", () => {
   const comparison = buildYouthSystemComparison(overview);
-  assert.deepEqual(comparison.map((entry) => entry.country), ["Japan", "Korea Republic", "Norway", "Denmark", "Sweden"]);
-  assert.equal(comparison.reduce((total, entry) => total + entry.system_nodes, 0), 27);
+  assert.deepEqual(comparison.map((entry) => entry.country), ["China PR", "Japan", "Korea Republic", "Norway", "Denmark", "Sweden"]);
+  assert.equal(comparison.reduce((total, entry) => total + entry.system_nodes, 0), 32);
   assert.ok(comparison.every((entry) => entry.source_count > 0 && entry.checked_at));
 });
 
@@ -34,7 +34,7 @@ test("counts only completed 1985-2025 U20 editions in separate honours tables", 
 test("builds dynamic project and deduplicated coach directories", () => {
   const projects = buildProjectCatalog(overview);
   const coaches = buildCoachCatalog(overview);
-  assert.equal(projects.length, 35);
+  assert.equal(projects.length, 40);
   assert.equal(new Set(projects.map((entry) => entry.id)).size, projects.length);
   assert.ok(!projects.some((entry) => entry.record_id === "east-asia-overseas-history"));
   assert.equal(new Set(coaches.map((entry) => entry.record_id)).size, coaches.length);

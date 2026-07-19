@@ -30,7 +30,11 @@ test("keeps naturalized-player overseas careers sourced and separate from conven
     assert.ok(profile.source_links.length >= 2, `${profile.id} has insufficient sources`);
     assert.ok(profile.source_links.every((source) => /^https:\/\//.test(source.url)));
   }
-  assert.equal(china.verified_records, 25, "naturalized profiles must not inflate featured overseas records");
+  assert.equal(
+    china.verified_records,
+    china.featured_records.length,
+    "naturalized profiles must not inflate featured overseas records"
+  );
 });
 
 test("overseas page exposes the naturalized-player directory and renderer", async () => {

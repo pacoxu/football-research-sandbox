@@ -160,19 +160,20 @@
     {
       "country": "China PR",
       "status": "in-progress",
-      "verified_records": 25,
+      "verified_records": 40,
       "bucket_focus": [
         "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
         "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队落点，避免与成年一线队出场样本混算；这条线现已明确补入刘邵子洋、何小珂这类从拜仁或西班牙梯队进入欧洲培养链的案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
         "big-five-lower-tier：已把英格兰次级与第三级职业联赛路径单列出来，避免与真正五大联赛履历混在一起",
         "europe-other：已补入孙祥、董方卓这类欧洲非五大联赛体系个案，并继续记录塞尔维亚、克罗地亚、荷兰等落点；2025 观察池里，吴少聪连接土超 / 土甲 / 波兰联赛，李磊补回草蜢回流样本，西班牙与葡萄牙方向则继续跟踪杜月徵、Li Changyi、Yang Xiyu、Chen Zheyuan、Yimulan Abuduwaili 等青年路径",
-        "asia-other：已补贾秀全 1992-1993 年大阪钢巴阶段，J.League 官方数据可核 J1 25 场、联赛杯 9 场；后续继续扩 J 联赛、K 联赛与东南亚职业体系样本",
+        "asia-other：已补贾秀全 1992-1993 年大阪钢巴阶段，以及曾诚 2005 年由武汉光谷租借泗水佩塞巴亚的印尼顶级联赛经历；J.League 官方数据可核贾秀全 J1 25 场、联赛杯 9 场，National Football Teams 可核曾诚印尼联赛 25 场；后续继续扩 J 联赛、K 联赛与东南亚职业体系样本",
         "oceania-other：已补宫磊 1989/90-1996/97 年塔希提 AS Pirae 主线，单列大洋洲以避免把塔希提误归入亚洲或美洲",
         "americas-other：刘邵子洋 2025 年 9 月从拜仁二队转往 LAFC2 后，北美 MLS NEXT Pro / 预备队体系已有现役中国门将样本；宫磊 1997-1998 年加拿大职业联赛阶段作为其大洋洲主记录的后续路径说明保留"
       ],
       "seed_examples": [
         "Gong Lei",
         "Jia Xiuquan",
+        "Zeng Cheng",
         "Ma Mingyu",
         "Yang Chen",
         "Sun Jihai",
@@ -195,7 +196,6 @@
         "Wang Xiuhao",
         "Wei Xiangxin"
       ],
-      "notes": "中国留洋条目已从单一历史个案扩到“1980 年代末至 1990 年代初先驱 + 早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的五层结构。先驱层现纳入贾秀全在贝尔格莱德游击队与大阪钢巴的正式比赛记录，以及宫磊从塔希提 AS Pirae 延伸到加拿大和香港的跨洲路径；塔希提单列为 oceania-other，不再并入美洲边缘样本。除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
       "naturalized_players": {
         "checked_at": "2026-07-20",
         "scope": {
@@ -374,6 +374,7 @@
           }
         ]
       },
+      "notes": "中国留洋条目已从单一历史个案扩到“1980 年代末至 1990 年代初先驱 + 早期五大联赛代表 + 成年欧洲其他联赛个案 + 2012-2016 万达西班牙计划 + 2025-2026 新一波现役海外样本”的五层结构。先驱层现纳入贾秀全在贝尔格莱德游击队与大阪钢巴的正式比赛记录，以及宫磊从塔希提 AS Pirae 延伸到加拿大和香港的跨洲路径；塔希提单列为 oceania-other，不再并入美洲边缘样本。东南亚职业联赛现补入曾诚 2005 年由武汉光谷租借泗水佩塞巴亚、完成 25 场印尼顶级联赛出场的门将样本。除杨晨、孙继海、武磊外，现已补入李铁、邵佳一、范志毅、郑智、孙祥、董方卓这些可在 FBref 中国球员页、Wikipedia 与 Transfermarkt 三端交叉确认的历史样本。其中万达西班牙计划在 2011 年 12 月 18 日完成与马竞、瓦伦西亚、比利亚雷亚尔的战略签约，2012 年 8 月 26 日起连续五批、每批约 30 人赴西受训。更早一层的“健力宝巴西留洋”则是 1993 到 1998 年中国青年球员集体赴巴西受训的先驱案例，现已按首批 22 人、1996 年回流 5 人和后续增补 7 人拆出专题名单。当前仍在海外体系内的重点样本包括徐彬、王博豪、万项、金宇成、汪修昊、刘邵子洋，以及 2026 年春季新落地的张家鸣、林子皓；2026 年 7 月魏祥鑫欧塞尔节点已到生效日，现按 AJ Auxerre 留洋样本跟踪，但仍需继续核对其一线队 / 梯队报名和出场情况。同时新增了按 2020 年 10 月 1 日截止口径整理的中国球员五大联赛历史出场榜 checklist，便于继续逐条补录。2025 这一波中国旅欧 / 欧洲梯队补充里，西班牙仍是最大入口，何小珂、杜月徵之外还可继续跟 Li Changyi、Yimulan Abuduwaili 以及已在球员库里的李昊、杨希、汪修昊；葡萄牙线则由吴少聪、Yang Xiyu、Chen Zheyuan 等人延展；英德青训线继续保留刘邵子洋、蒋光太、戴伟浚的成长背景。王钰栋、蒯纪闻、刘诚宇这类名字当前先按“欧洲试训 / 关注池”处理，不与已完成注册的现役留洋样本混算。当前口径已把五大联赛一线队、五大联赛国家青训 / 梯队、五大联赛国家低级别联赛三类路径拆开。",
       "historical_trial_records": [
         {
           "id": "wang-dalei-inter-2006-trial",
@@ -948,6 +949,47 @@
           ]
         },
         {
+          "id": "zeng-cheng-persebaya-2005",
+          "name": "Zeng Cheng",
+          "local_name": "曾诚",
+          "bucket": "asia-other",
+          "league": "Liga Indonesia Premier Division",
+          "club": "Persebaya Surabaya",
+          "season": "2005",
+          "history_year_range": "2005",
+          "status": "verified",
+          "appearances": 25,
+          "appearance_label": "印尼顶级联赛 25 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "summary": "曾诚在 2005 年由武汉光谷租借至印尼泗水佩塞巴亚（Persebaya Surabaya）。俱乐部官方回顾确认他以租借身份随队训练和比赛；National Football Teams 的 2005 赛季档案记录其在当时的印尼顶级联赛出场 25 次。这是正式职业联赛留洋，不属于短期试训。",
+          "source_links": [
+            {
+              "label": "Persebaya 官方：曾诚 2005 年由武汉光谷租借加盟",
+              "url": "https://www.persebaya.id/r/369/kiprah-mantan-kiper-persebaya-di-csl?amp=1",
+              "type": "club",
+              "checked_at": "2026-07-20"
+            },
+            {
+              "label": "National Football Teams：Persebaya Surabaya 2005 阵容与联赛出场",
+              "url": "https://national-football-teams.com/club/1203/2005_2/Persebaya_Surabaya.html",
+              "type": "stats",
+              "checked_at": "2026-07-20"
+            },
+            {
+              "label": "搜狐体育：曾诚 2005 年租借印尼经历回顾",
+              "url": "https://sports.sohu.com/20101227/n278532536.shtml",
+              "type": "news",
+              "checked_at": "2026-07-20"
+            }
+          ],
+          "notes": [
+            "Persebaya 官方回顾写明曾诚当时 18 岁，并由 Wuhan Guanggu 以租借身份送到泗水效力一个赛季。",
+            "25 场采用 National Football Teams 的联赛出场口径；Persebaya 当年还参加亚冠和国内杯赛，但本条不把不同来源中的其他赛事场次混入联赛数字。",
+            "中文旧报道常把俱乐部音译为苏拉巴亚或苏巴迪亚；这里统一使用俱乐部正式名 Persebaya Surabaya 和所在地中文名泗水。"
+          ]
+        },
+        {
           "id": "ma-mingyu-perugia-1999",
           "name": "Ma Mingyu",
           "local_name": "马明宇",
@@ -1356,11 +1398,17 @@
           "appearances": 24,
           "appearance_label": "荷甲+奥甲 24 场",
           "competitive_debut": true,
-          "summary": "孙祥在 PSV 与 Austria Wien 的欧洲阶段累计联赛出场 24 次，是中国左后卫在荷兰和奥地利顶级联赛留下正式履历的代表样本，也是中国球员进入欧冠淘汰赛报名与出场讨论中最常被提及的名字之一。",
+          "source_links": [
+            {
+              "label": "Wikipedia：孙祥俱乐部履历",
+              "url": "https://en.wikipedia.org/wiki/Sun_Xiang"
+            }
+          ],
+          "summary": "孙祥在 PSV 与 Austria Wien 的欧洲阶段累计联赛出场 24 次，其中奥地利维也纳阶段为奥甲 19 场 2 球；若计入杯赛等各项赛事，奥地利阶段为 27 场 3 球，并随队获得 2008/09 奥地利杯冠军。这段经历不是 PSV 之后的附注，而是他欧洲比赛体量的主体。",
           "notes": [
-            "PSV 阶段虽时间较短，但历史辨识度很高，长期被视作中国球员进入欧冠主流俱乐部体系的标志节点。",
-            "转往奥地利维也纳后获得更多联赛出场，使这段留洋不只是短期曝光。",
-            "这条记录补上了中国成熟边后卫在欧洲非五大顶级联赛的可核样本。"
+            "PSV 阶段荷甲 5 场；欧冠淘汰赛经历单独保留历史意义，但不并入联赛 24 场的数字。",
+            "奥地利维也纳阶段奥甲 19 场 2 球，各项赛事 27 场 3 球，并获得 2008/09 奥地利杯冠军。",
+            "联赛出场、各项赛事出场和冠军荣誉分开表述，避免把 27 场误写成奥甲联赛场次。"
           ]
         },
         {
@@ -1394,11 +1442,404 @@
           "appearances": 15,
           "appearance_label": "土超+土甲+波兰联赛 15 场",
           "competitive_debut": true,
-          "summary": "吴少聪 2023 年加盟伊斯坦布尔巴萨克赛尔，成为首位在土耳其职业联赛注册并出场的中国球员；随后外租青年联合拿到 12 场土甲联赛，再短暂挂过波兰拉多米亚克路径，构成近年中国成年中卫最完整的一条土耳其方向留洋样本。",
+          "source_links": [
+            {
+              "label": "Wikipedia：吴少聪完整俱乐部记录",
+              "url": "https://en.wikipedia.org/wiki/Wu_Shaocong"
+            }
+          ],
+          "summary": "吴少聪 2023 年加盟伊斯坦布尔巴萨克赛尔，随后外租青年联合，再短暂进入波兰拉多米亚克。其海外联赛记录为土超 3 场、土甲 12 场，另有 3 场杯赛；波兰四个月因手续、伤病等因素 0 出场。这构成近年中国成年中卫较完整的一条土耳其方向留洋样本。",
           "notes": [
-            "维基可核 2023-2025 海外联赛出场为土超 3 场、土甲 12 场、波兰顶级联赛 0 场。",
+            "2023-2025 海外联赛出场为土超 3 场、土甲 12 场、波兰顶级联赛 0 场；另有 3 场杯赛。",
             "这条路径把葡超通道之外的土耳其职业链补进了中国近年留洋版图。",
+            "波兰阶段必须保留为已签约但正式比赛 0 出场，不能从履历中删除，也不能计成出场。",
             "2025-01-30 返回北京国安后，这段欧洲经历应归到历史样本而非当前留洋。"
+          ]
+        },
+        {
+          "id": "zhang-chengdong-portugal-germany-2009",
+          "name": "Zhang Chengdong",
+          "local_name": "张呈栋",
+          "bucket": "europe-other",
+          "league": "Liga Portugal / Portuguese lower divisions / 2. Bundesliga",
+          "club": "Mafra / União de Leiria / Beira-Mar / Eintracht Braunschweig",
+          "season": "2009-2014",
+          "history_year_range": "2009-2014",
+          "status": "verified",
+          "appearances": 52,
+          "appearance_label": "葡超 40 场 8 球 + 德乙 12 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "Wikipedia：张呈栋生涯数据",
+              "url": "https://en.wikipedia.org/wiki/Zhang_Chengdong"
+            },
+            {
+              "label": "搜狐：马夫拉对里斯本竞技帽子戏法",
+              "url": "https://sports.sohu.com/20100121/n269735248.shtml"
+            }
+          ],
+          "summary": "张呈栋在巴列卡诺之前已经沿马夫拉、莱里亚、贝拉马尔和布伦瑞克走出一条完整欧洲职业路径。葡超累计 40 场 8 球，随后在德乙出场 12 次；效力葡乙马夫拉时还曾在正式杯赛对里斯本竞技上演帽子戏法。",
+          "notes": [
+            "本条与巴列卡诺西甲记录拆开：西甲 1 场 9 分钟仍由 big-five checklist 独立统计。",
+            "52 场只汇总葡超 40 场与德乙 12 场；马夫拉的葡萄牙低级别联赛和杯赛出场没有混入该总数。",
+            "帽子戏法属于马夫拉对里斯本竞技的正式杯赛亮点，不写成葡超帽子戏法。"
+          ]
+        },
+        {
+          "id": "wang-gang-portugal-2009",
+          "name": "Wang Gang",
+          "local_name": "王刚",
+          "bucket": "europe-other",
+          "league": "Liga Portugal / Liga Portugal 2 / Portuguese lower divisions",
+          "club": "Chaves / Beira-Mar",
+          "season": "2009-2015",
+          "history_year_range": "2009-2015",
+          "status": "verified",
+          "appearances": 40,
+          "appearance_label": "葡超 14 场 1 球 + 葡萄牙二级联赛 26 场 4 球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "Wikipedia：王刚葡萄牙履历",
+              "url": "https://en.wikipedia.org/wiki/Wang_Gang_(footballer)"
+            }
+          ],
+          "summary": "王刚在查维斯和贝拉马尔阶段先后进入葡萄牙第三级、第二级和顶级联赛。可量化的两级职业联赛记录为葡超 14 场 1 球、葡萄牙二级联赛 26 场 4 球，是其回国成为中超常客前最容易被忽略的一段。",
+          "notes": [
+            "40 场只汇总葡超和葡萄牙二级联赛，低级别阶段另行保留但不在缺少同口径数据时强行合计。",
+            "查维斯、贝拉马尔两个节点均属于正式注册和正式比赛，不是试训经历。"
+          ]
+        },
+        {
+          "id": "qu-shengqing-adelaide-2005",
+          "name": "Qu Shengqing",
+          "local_name": "曲圣卿",
+          "bucket": "oceania-other",
+          "league": "A-League Men",
+          "club": "Adelaide United",
+          "season": "2005-2007",
+          "history_year_range": "2005-2007",
+          "status": "verified",
+          "appearances": 28,
+          "appearance_label": "澳超 28 场 8 球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "Adelaide United：United We Are Shengqing Qu",
+              "url": "https://adelaideunited.com.au/news/united-we-are-shengqing-qu/"
+            },
+            {
+              "label": "央视：曲圣卿阿德莱德联阶段回顾",
+              "url": "https://news.cctv.com/sports/football/integrate/20070414/100203.shtml"
+            }
+          ],
+          "summary": "曲圣卿在阿德莱德联累计完成 28 场澳超、打进 8 球。首届澳超即贡献 7 球，帮助球队获得常规赛冠军，并当选俱乐部年度最佳球员，是中国成熟前锋海外履历中被低估的成功样本。",
+          "notes": [
+            "首届澳超 7 球与整个阿德莱德联阶段 8 球分开表述。",
+            "常规赛冠军不等同于澳超总决赛冠军，荣誉名称按常规赛口径保留。"
+          ]
+        },
+        {
+          "id": "gao-leilei-multi-country-2007",
+          "name": "Gao Leilei",
+          "local_name": "高雷雷",
+          "bucket": "europe-other",
+          "league": "A-League Men / Veikkausliiga / Ykkönen / USL First Division / Spanish lower divisions",
+          "club": "New Zealand Knights / Wellington Phoenix / MyPa / KooTeePee / Minnesota Thunder / Spanish lower-division clubs",
+          "season": "2007-2019",
+          "history_year_range": "2007-2019",
+          "status": "verified",
+          "appearances": 14,
+          "appearance_label": "已核核心段：新西兰骑士 7 场 1 球 + 迈帕 7 场 2 球；其余阶段待同口径补全",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "Wellington Phoenix：Gao back to crusade for Phoenix",
+              "url": "https://wellingtonphoenix.com/news/gao-back-crusade-phoenix/"
+            },
+            {
+              "label": "China Daily：高雷雷 39 岁西班牙留洋",
+              "url": "https://www.chinadaily.com.cn/a/201908/22/WS5d5dfddaa310cf3e35567450.html"
+            }
+          ],
+          "summary": "高雷雷的海外足迹覆盖新西兰、澳大利亚联赛体系、芬兰、美国和西班牙低级别。核心可核段包括新西兰骑士 7 场 1 球、芬兰顶级联赛迈帕 7 场 2 球；他也是首位参加芬兰顶级联赛的中国球员，并在 39 岁时继续进入西班牙职业俱乐部体系。",
+          "notes": [
+            "14 场只汇总当前来源中同口径明确的两段核心联赛记录；惠灵顿凤凰、古迪比、明尼苏达和西班牙阶段不因统计未闭环而写成 0。",
+            "跨洲经历的重点是正式注册与比赛足迹，不能把晚年签约自动等同于获得西乙正式出场。",
+            "后续应优先从 A-League、芬兰足协和美国联赛档案补齐逐俱乐部正式场次。"
+          ]
+        },
+        {
+          "id": "zhang-shuo-persik-2010",
+          "name": "Zhang Shuo",
+          "local_name": "张烁",
+          "bucket": "asia-other",
+          "league": "Indonesia Super League",
+          "club": "Persik Kediri",
+          "season": "2010",
+          "history_year_range": "2010",
+          "status": "verified",
+          "appearances": 10,
+          "appearance_label": "印尼联赛 10 场 3 球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "中文 Wikipedia：张烁留洋记录",
+              "url": "https://zh.wikipedia.org/zh-hans/%E5%BC%A0%E7%83%81"
+            }
+          ],
+          "summary": "张烁在失去中超稳定位置后主动转向亚洲周边联赛，为印尼佩西克出场 10 次、打进 3 球，首秀即梅开二度。其后续澳超经历另以大洋洲记录建档。",
+          "notes": [
+            "首秀梅开二度是印尼阶段亮点，不误写到澳超阶段。",
+            "与纽卡斯尔喷气机记录拆开，避免澳超被 asia-other bucket 误归类。"
+          ]
+        },
+        {
+          "id": "zhang-shuo-newcastle-jets-2010",
+          "name": "Zhang Shuo",
+          "local_name": "张烁",
+          "bucket": "oceania-other",
+          "league": "A-League Men",
+          "club": "Newcastle Jets",
+          "season": "2010-2011",
+          "history_year_range": "2010-2011",
+          "status": "verified",
+          "appearances": 8,
+          "appearance_label": "澳超 8 场 1 球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "中文 Wikipedia：张烁留洋记录",
+              "url": "https://zh.wikipedia.org/zh-hans/%E5%BC%A0%E7%83%81"
+            }
+          ],
+          "summary": "张烁离开印尼佩西克后加盟纽卡斯尔喷气机，在澳超完成 8 场正式比赛并打进 1 球。这是其亚洲阶段之后单独的大洋洲顶级职业联赛记录。",
+          "notes": [
+            "澳超 8 场 1 球与印尼联赛 10 场 3 球分条建档。",
+            "两条记录合看可得张烁海外联赛 18 场 4 球，但页面洲际聚合不应直接合并。"
+          ]
+        },
+        {
+          "id": "chen-zhizhao-corinthians-2012",
+          "name": "Chen Zhizhao",
+          "local_name": "陈志钊",
+          "bucket": "americas-other",
+          "league": "Campeonato Brasileiro Série A / Campeonato Paulista",
+          "club": "Corinthians",
+          "season": "2012-2013",
+          "history_year_range": "2012-2013",
+          "status": "verified",
+          "appearances": 5,
+          "appearance_label": "巴甲 2 场 + 圣保罗州联赛 3 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "Corinthians：首位中国球员陈志钊回顾",
+              "url": "https://www.corinthians.com.br/noticias/primeiro-chines-da-historia-do-timao-zizao-completa-33-anos"
+            },
+            {
+              "label": "Wikipedia：陈志钊比赛数据",
+              "url": "https://en.wikipedia.org/wiki/Chen_Zhizhao"
+            }
+          ],
+          "summary": "陈志钊效力科林蒂安期间完成 2 场巴甲和 3 场圣保罗州联赛，共 5 场正式比赛；首次首发便送出助攻。俱乐部名气很大，但实际比赛体量应按 5 场而不是签约曝光度评价。",
+          "notes": [
+            "巴甲全国联赛与圣保罗州联赛分开列明，避免把 5 场全部写成巴甲。",
+            "科林蒂安官方将其作为俱乐部历史上首位中国球员回顾。"
+          ]
+        },
+        {
+          "id": "tan-long-north-america-2010",
+          "name": "Long Tan",
+          "local_name": "谭龙",
+          "bucket": "americas-other",
+          "league": "Major League Soccer / USL and North American lower divisions",
+          "club": "Vancouver Whitecaps / D.C. United / other United States clubs",
+          "season": "2009-2016",
+          "history_year_range": "2009-2016",
+          "status": "verified",
+          "appearances": 23,
+          "appearance_label": "MLS 23 场 2 球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "Vancouver Whitecaps：Long Tan player profile",
+              "url": "https://www.whitecapsfc.com/players/long-tan/"
+            },
+            {
+              "label": "D.C. United：Long Tan acquired",
+              "url": "https://www.dcunited.com/news/long-tan-acquired"
+            }
+          ],
+          "summary": "谭龙在温哥华白浪、华盛顿联等北美球队效力，MLS 累计 23 场 2 球。他是首位签约 MLS、在 MLS 出场并进球的中国出生球员，回国后才逐渐成为中超和中国国家队熟脸。",
+          "notes": [
+            "23 场 2 球只统计 MLS；北美次级和低级别联赛经历保留在路径说明中，不与 MLS 混算。",
+            "历史表述限定为中国出生球员，避免与国籍、青训归属等不同定义混淆。"
+          ]
+        },
+        {
+          "id": "yu-hai-vitesse-2007",
+          "name": "Yu Hai",
+          "local_name": "于海",
+          "bucket": "europe-other",
+          "league": "Eredivisie",
+          "club": "Vitesse Arnhem",
+          "season": "2007-2008",
+          "history_year_range": "2007-2008",
+          "status": "verified",
+          "appearances": 10,
+          "appearance_label": "荷甲 10 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "Wikipedia：于海比赛数据",
+              "url": "https://en.wikipedia.org/wiki/Yu_Hai"
+            }
+          ],
+          "summary": "于海在 2007/08 赛季代表维特斯完成 10 场荷甲正式比赛。虽然没有进球且经历因伤病缩短，但这不是纯商业签约或只随队训练，而是一段获得实际轮换机会的一线队履历。",
+          "notes": [
+            "10 场均按荷甲一线队正式比赛统计，不含试训或青年队记录。",
+            "不使用“稳定主力”措辞，准确描述为获得轮换出场。"
+          ]
+        },
+        {
+          "id": "huang-bowen-jeonbuk-2011",
+          "name": "Huang Bowen",
+          "local_name": "黄博文",
+          "bucket": "asia-other",
+          "league": "K League / AFC Champions League",
+          "club": "Jeonbuk Hyundai Motors",
+          "season": "2011-2012",
+          "history_year_range": "2011-2012",
+          "status": "verified",
+          "appearances": 29,
+          "appearance_label": "K 联赛 29 场 3 球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "中文 Wikipedia：黄博文留洋记录",
+              "url": "https://zh.wikipedia.org/zh-hans/%E9%BB%84%E5%8D%9A%E6%96%87"
+            }
+          ],
+          "summary": "黄博文加盟全北现代后完成 29 场 K 联赛、打进 3 球，2011 年随队获得 K 联赛冠军并打进亚冠决赛。按实际贡献衡量，这是中国成熟中场外出后迅速进入亚洲强队轮换的优秀案例。",
+          "notes": [
+            "29 场 3 球是 K 联赛口径，亚冠比赛不混入该数字。",
+            "2011 年荣誉为 K 联赛冠军；亚冠为亚军，不能写成亚冠冠军。"
+          ]
+        },
+        {
+          "id": "zhou-tong-auckland-city-2023",
+          "name": "Zhou Tong",
+          "local_name": "周通",
+          "bucket": "oceania-other",
+          "league": "New Zealand National League / OFC Champions League / FIFA Club World Cup",
+          "club": "Auckland City",
+          "season": "2023-2025",
+          "history_year_range": "2023-2025",
+          "status": "verified",
+          "appearances": 1,
+          "appearance_label": "2025 新版世俱杯首发 1 场；新西兰与大洋洲赛事出场待按官方档案汇总",
+          "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "新华社：周通 2025 世俱杯专访",
+              "url": "https://www.news.cn/sports/20250624/9a03a8d41841484ca53b2e66710d94ae/c.html"
+            }
+          ],
+          "summary": "周通 35 岁开启奥克兰城留洋，随队连续获得大洋洲冠军，并参加 2023 与 2025 年世俱杯。2025 年他成为新版 32 队世俱杯首位首发的中国球员，展示了成熟中超球员通过大洋洲冠军路径进入世界级赛事的罕见路线。",
+          "notes": [
+            "appearances 当前只写已由新华社报道明确支撑的 2025 新版世俱杯首发 1 场，不把赛事报名自动计为出场。",
+            "连续大洋洲冠军是俱乐部洲际荣誉；新西兰国内联赛和 OFC 逐场数据后续需从官方比赛档案补齐。",
+            "本条只确证截至 2025 世俱杯的阶段，不据此推断 2026 年仍为当前海外注册。"
+          ]
+        },
+        {
+          "id": "du-wei-celtic-2006",
+          "name": "Du Wei",
+          "local_name": "杜威",
+          "bucket": "europe-other",
+          "league": "Scottish Cup",
+          "club": "Celtic",
+          "season": "2005-2006",
+          "history_year_range": "2005-2006",
+          "status": "verified",
+          "appearances": 1,
+          "appearance_label": "苏格兰杯 1 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "The Celtic Wiki：Du Wei match record",
+              "url": "https://www.thecelticwiki.com/players/all-time-a-to-z-of-celtic-players/d/du-wei/"
+            }
+          ],
+          "summary": "杜威在凯尔特人只有 1 场正式比赛：苏格兰杯对克莱德首发，上半场结束便被换下。其苏超联赛出场为 0，因此必须把“效力凯尔特人”与“踢过苏超”区分开。",
+          "notes": [
+            "唯一正式比赛属于 Scottish Cup，不应计入苏超联赛出场。",
+            "有正式出场，所以不同于纯签约未登场；但比赛体量确实只有 1 场。"
+          ]
+        },
+        {
+          "id": "guo-tianyu-vizela-2022",
+          "name": "Guo Tianyu",
+          "local_name": "郭田雨",
+          "bucket": "europe-other",
+          "league": "Liga Portugal",
+          "club": "Vizela",
+          "season": "2021-2022",
+          "history_year_range": "2022",
+          "status": "verified",
+          "appearances": 3,
+          "appearance_label": "葡超 3 次替补出场，0 首发",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "体坛周报：郭田雨维泽拉赛季总结",
+              "url": "https://www.ttplus.cn/publish/app/data/2022/05/15/424363/os_news.html"
+            }
+          ],
+          "summary": "郭田雨租借维泽拉期间完成 3 次葡超替补出场，没有首发。它是一段真实的一线队顶级联赛经历，但比赛时间极短，不能用签约或报名放大实际贡献。",
+          "notes": [
+            "3 次均为替补登场，首发数为 0。",
+            "本条只记录正式联赛出场，不把未上场替补名单计入。"
+          ]
+        },
+        {
+          "id": "chen-binbin-toyama-2022",
+          "name": "Chen Binbin",
+          "local_name": "陈彬彬",
+          "bucket": "asia-other",
+          "league": "J3 League",
+          "club": "Kataller Toyama",
+          "season": "2022",
+          "history_year_range": "2022",
+          "status": "verified",
+          "appearances": 0,
+          "appearance_label": "J3 联赛 0 场，仅 1 次进入比赛名单",
+          "competitive_debut": false,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "直播吧：陈彬彬富山胜利赛季总结",
+              "url": "https://news.zhibo8.com/zuqiu/2022-11-20/637999b1d6f12.htm"
+            }
+          ],
+          "summary": "陈彬彬租借 J3 富山胜利期间联赛 0 出场，只进过 1 次比赛名单。严格说这是一段已落地的海外注册履历，但没有海外一线队正式比赛记录。",
+          "notes": [
+            "进入比赛名单不等于正式出场，因此 appearances 与 competitive_debut 分别保持 0 和 false。",
+            "本条用于建立“已签约未登场”边界，不把履历删除，也不把名单记录抬高成比赛记录。"
           ]
         },
         {
@@ -1490,6 +1931,12 @@
           "appearances": 13,
           "appearance_label": "瑞士超 13 场",
           "competitive_debut": true,
+          "source_links": [
+            {
+              "label": "Wikipedia：李磊草蜢比赛记录",
+              "url": "https://en.wikipedia.org/wiki/Li_Lei_(footballer)"
+            }
+          ],
           "summary": "李磊 2022 年冬季加盟苏黎世草蜢，是近年中国国家队成熟左后卫重返欧洲的一次短周期尝试；虽然只维持到 2023 年 2 月，但他仍留下 13 场瑞士超和 1 次助攻，构成成年国脚回流前的清晰欧洲样本。",
           "notes": [
             "Wikipedia 可核其草蜢阶段总计 14 次正式出场，其中联赛 13 场、杯赛 1 场。",
