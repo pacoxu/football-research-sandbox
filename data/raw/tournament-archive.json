@@ -261,18 +261,54 @@
           "china_key_players"
         ]
       },
-      {
-        "type": "afc-match-report",
-        "label": "China PR 3-0 Vietnam",
+    {
+      "type": "afc-match-report",
+      "label": "China PR 3-0 Vietnam",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/s-final-china-pr-power-past-vietnam-1",
         "fields": [
           "china_matches",
-          "china_key_players"
-        ]
-      }
+        "china_key_players"
+      ]
+    },
+    {
+      "type": "afc-technical-report",
+      "label": "AFC U23 Asian Cup Saudi Arabia 2026 Technical Report",
+      "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/AFC-U23-Asian-Cup-Saudi-Arabia-2026-Technical-Report.pdf",
+      "fields": [
+        "date_range",
+        "china_matches",
+        "china_player_statistics"
+      ]
+    },
+    {
+      "type": "official-match-report",
+      "label": "CFA quarter-final report: China PR 0-0 Uzbekistan (4-2 pens)",
+      "url": "https://www.thecfa.cn/xinwen/20260118/37220.html",
+      "fields": [
+        "china_matches"
+      ]
+    },
+    {
+      "type": "official-match-record",
+      "label": "JFA final match record: China PR 0-4 Japan",
+      "url": "https://www.jfa.jp/eng/national_team/u23_2026/afc_u23_asiancup_2026/final/match_page/m32.html",
+      "fields": [
+        "china_matches"
+      ]
+    },
+    {
+      "type": "trusted-match-database",
+      "label": "FotMob match lineups and events (Opta)",
+      "url": "https://www.fotmob.com/teams/317240/fixtures/china-u23",
+      "fields": [
+        "china_matches.china_lineup",
+        "china_matches.china_cards",
+        "china_player_statistics"
+      ]
+    }
     ],
     "source_checked_at": "2026-06-28",
-    "source_conflict_note": "AFC final registration is the squad and spelling source; AFC match reports and tournament summary are the result/event sources. No material conflict is recorded, but minute-level China events remain partial where AFC reports do not expose complete event feeds.",
+  "source_conflict_note": "AFC final registration is the squad and spelling source. The AFC technical report plus CFA/JFA official reports determine local dates, results and decisive events; FotMob's Opta feed supplies full lineups, substitutions and cards where official public reports are incomplete. Stoppage time is not added to player minutes, a substitution shown at 90+4 before extra time is normalized to minute 90, and shoot-out goals are excluded. Beijing-date rollover is explanatory only and does not replace Saudi Arabia local match dates.",
     "competition_name_history": [
       {
         "name": "AFC U-22 Championship",
@@ -301,90 +337,365 @@
     "runner_up": "China PR",
     "china_status": "runner-up",
     "china_summary": "中国国奥首次打进 U23 亚洲杯决赛，最终 0 比 4 负于日本获得亚军。",
-    "china_detail_scope": "partial",
-    "china_matches": [
-      {
-        "date": "2026-01-08",
-        "stage": "Group D",
-        "opponent": "Iraq",
+  "china_detail_scope": "full-china-lineups-and-player-statistics",
+  "china_matches": [
+    {
+      "date": "2026-01-08",
+      "stage": "Group D",
+      "opponent": "Iraq",
         "score_for": 0,
-        "score_against": 0,
-        "result": "D",
-        "china_contributions": []
+      "score_against": 0,
+      "result": "D",
+      "source_tier": "official-result+trusted-event-feed",
+      "official_source": "https://www.thecfa.cn/zhongguozhidui/20260109/37180.html",
+      "event_source": "https://www.fotmob.com/en-GB/matches/china-u23-vs-iraq-u23/2kxi8aqi#1000004757",
+      "china_contributions": [],
+      "china_lineup": {
+        "formation": "5-3-2",
+        "starters": [
+          {"player_id": "cn-li-hao-2004", "player": "Li Hao"},
+          {"player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu"},
+          {"player_id": "cn-peng-xiao-2005", "player": "Peng Xiao"},
+          {"player_id": "cn-he-yiran-2005", "player": "He Yiran"},
+          {"player_id": "cn-wang-bohao-2005", "player": "Wang Bohao"},
+          {"player_id": "cn-hu-hetao-2003", "player": "Hu Hetao"},
+          {"player_id": "cn-bao-shimeng-2003", "player": "Bao Shimeng"},
+          {"player_id": "cn-xu-bin-2004", "player": "Xu Bin"},
+          {"player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan"},
+          {"player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili"},
+          {"player_id": "cn-wang-yudong-2006", "player": "Wang Yudong"}
+        ],
+        "substitutes": [
+          {"player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang", "minute": "9", "replaced_player_id": "cn-bao-shimeng-2003", "replaced_player": "Bao Shimeng"},
+          {"player_id": "cn-chen-zeshi-2005", "player": "Chen Zeshi", "minute": "68", "replaced_player_id": "cn-wang-bohao-2005", "replaced_player": "Wang Bohao"},
+          {"player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "minute": "68", "replaced_player_id": "cn-li-zhenquan-2003", "replaced_player": "Li Zhenquan"},
+          {"player_id": "cn-xiang-yuwang-2003", "player": "Xiang Yuwang", "minute": "88", "replaced_player_id": "cn-wang-yudong-2006", "replaced_player": "Wang Yudong"},
+          {"player_id": "cn-kuai-jiwen-2006", "player": "Kuai Jiwen", "minute": "88", "replaced_player_id": "cn-baihelamu-abuduwaili-2003", "replaced_player": "Baihelamu Abuduwaili"},
+          {"player_id": "cn-luan-yi-2005", "player": "Luan Yi", "status": "unused"},
+          {"player_id": "cn-huo-shenping-2003", "player": "Huo Shenping", "status": "unused"},
+          {"player_id": "cn-liu-haofan-2003", "player": "Liu Haofan", "status": "unused"},
+          {"player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari", "status": "unused"},
+          {"player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "status": "unused"},
+          {"player_id": "cn-bao-shengxin-2003", "player": "Bao Shengxin", "status": "unused"},
+          {"player_id": "cn-mao-weijie-2005", "player": "Mao Weijie", "status": "unused"}
+        ]
       },
+      "china_cards": [
+        {"type": "yellow", "player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu", "minute": "48"},
+        {"type": "yellow", "player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang", "minute": "55"}
+      ]
+    },
       {
         "date": "2026-01-11",
         "stage": "Group D",
         "opponent": "Australia",
         "score_for": 1,
-        "score_against": 0,
-        "result": "W",
-        "china_contributions": [
-          {
-            "type": "goal",
-            "player": "Peng Xiao",
-            "minute": "43",
-            "role": "unknown"
-          }
+      "score_against": 0,
+      "result": "W",
+      "source_tier": "official-result+trusted-event-feed",
+      "official_source": "https://www.thecfa.cn/zhongguozhidui/20260112/37182.html",
+      "event_source": "https://www.fotmob.com/en-GB/matches/australia-u23-vs-china-u23/2kgs3jlh#1000004760",
+      "china_contributions": [
+        {
+          "type": "goal",
+          "player_id": "cn-peng-xiao-2005",
+          "player": "Peng Xiao",
+          "minute": "43",
+          "role": "starter"
+        }
+      ],
+      "china_lineup": {
+        "formation": "5-3-2",
+        "starters": [
+          {"player_id": "cn-li-hao-2004", "player": "Li Hao"},
+          {"player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu"},
+          {"player_id": "cn-peng-xiao-2005", "player": "Peng Xiao"},
+          {"player_id": "cn-he-yiran-2005", "player": "He Yiran"},
+          {"player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang"},
+          {"player_id": "cn-hu-hetao-2003", "player": "Hu Hetao"},
+          {"player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-xu-bin-2004", "player": "Xu Bin"},
+          {"player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan"},
+          {"player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili"},
+          {"player_id": "cn-wang-yudong-2006", "player": "Wang Yudong"}
+        ],
+        "substitutes": [
+          {"player_id": "cn-bao-shengxin-2003", "player": "Bao Shengxin", "minute": "70", "replaced_player_id": "cn-mutalifu-yimingkari-2004", "replaced_player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-wang-bohao-2005", "player": "Wang Bohao", "minute": "81", "replaced_player_id": "cn-wang-yudong-2006", "replaced_player": "Wang Yudong"},
+          {"player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "minute": "81", "replaced_player_id": "cn-li-zhenquan-2003", "replaced_player": "Li Zhenquan"},
+          {"player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "minute": "81", "replaced_player_id": "cn-wumitijiang-yusupu-2004", "replaced_player": "Wumitijiang Yusupu"},
+          {"player_id": "cn-luan-yi-2005", "player": "Luan Yi", "status": "unused"},
+          {"player_id": "cn-huo-shenping-2003", "player": "Huo Shenping", "status": "unused"},
+          {"player_id": "cn-liu-haofan-2003", "player": "Liu Haofan", "status": "unused"},
+          {"player_id": "cn-xiang-yuwang-2003", "player": "Xiang Yuwang", "status": "unused"},
+          {"player_id": "cn-kuai-jiwen-2006", "player": "Kuai Jiwen", "status": "unused"},
+          {"player_id": "cn-bao-shimeng-2003", "player": "Bao Shimeng", "status": "unused"},
+          {"player_id": "cn-chen-zeshi-2005", "player": "Chen Zeshi", "status": "unused"},
+          {"player_id": "cn-mao-weijie-2005", "player": "Mao Weijie", "status": "unused"}
         ]
       },
+      "china_cards": [
+        {"type": "yellow", "player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang", "minute": "45"},
+        {"type": "yellow", "player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan", "minute": "57"}
+      ]
+    },
       {
         "date": "2026-01-14",
         "stage": "Group D",
         "opponent": "Thailand",
         "score_for": 0,
-        "score_against": 0,
-        "result": "D",
-        "china_contributions": []
+      "score_against": 0,
+      "result": "D",
+      "source_tier": "official-result+trusted-event-feed",
+      "official_source": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/AFC-U23-Asian-Cup-Saudi-Arabia-2026-Technical-Report.pdf",
+      "event_source": "https://www.fotmob.com/en-GB/matches/china-u23-vs-thailand-u23/5ne9e96o#1000004762",
+      "china_contributions": [],
+      "china_lineup": {
+        "formation": "5-3-2",
+        "starters": [
+          {"player_id": "cn-li-hao-2004", "player": "Li Hao"},
+          {"player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu"},
+          {"player_id": "cn-peng-xiao-2005", "player": "Peng Xiao"},
+          {"player_id": "cn-he-yiran-2005", "player": "He Yiran"},
+          {"player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-hu-hetao-2003", "player": "Hu Hetao"},
+          {"player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu"},
+          {"player_id": "cn-xu-bin-2004", "player": "Xu Bin"},
+          {"player_id": "cn-kuai-jiwen-2006", "player": "Kuai Jiwen"},
+          {"player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili"},
+          {"player_id": "cn-wang-yudong-2006", "player": "Wang Yudong"}
+        ],
+        "substitutes": [
+          {"player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "minute": "45", "replaced_player_id": "cn-mutalifu-yimingkari-2004", "replaced_player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan", "minute": "45", "replaced_player_id": "cn-yang-haoyu-2006", "replaced_player": "Yang Haoyu"},
+          {"player_id": "cn-wang-bohao-2005", "player": "Wang Bohao", "minute": "62", "replaced_player_id": "cn-kuai-jiwen-2006", "replaced_player": "Kuai Jiwen"},
+          {"player_id": "cn-xiang-yuwang-2003", "player": "Xiang Yuwang", "minute": "71", "replaced_player_id": "cn-baihelamu-abuduwaili-2003", "replaced_player": "Baihelamu Abuduwaili"},
+          {"player_id": "cn-chen-zeshi-2005", "player": "Chen Zeshi", "minute": "80", "replaced_player_id": "cn-wang-yudong-2006", "replaced_player": "Wang Yudong"},
+          {"player_id": "cn-luan-yi-2005", "player": "Luan Yi", "status": "unused"},
+          {"player_id": "cn-huo-shenping-2003", "player": "Huo Shenping", "status": "unused"},
+          {"player_id": "cn-liu-haofan-2003", "player": "Liu Haofan", "status": "unused"},
+          {"player_id": "cn-bao-shimeng-2003", "player": "Bao Shimeng", "status": "unused"},
+          {"player_id": "cn-bao-shengxin-2003", "player": "Bao Shengxin", "status": "unused"},
+          {"player_id": "cn-mao-weijie-2005", "player": "Mao Weijie", "status": "unused"},
+          {"player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang", "status": "unused"}
+        ]
       },
+      "china_cards": [
+        {"type": "yellow", "player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "minute": "13"},
+        {"type": "yellow", "player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari", "minute": "27"},
+        {"type": "yellow", "player_id": "cn-hu-hetao-2003", "player": "Hu Hetao", "minute": "29"},
+        {"type": "yellow", "player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "minute": "90+2"}
+      ]
+    },
       {
         "date": "2026-01-17",
         "stage": "Quarter-final",
-        "opponent": "Jordan",
+      "opponent": "Uzbekistan",
         "score_for": 0,
-        "score_against": 0,
-        "result": "D",
-        "note": "中国队点球大战 5 比 4 取胜晋级。",
-        "china_contributions": []
+      "score_against": 0,
+      "result": "D",
+      "source_tier": "official-result+trusted-event-feed",
+      "official_source": "https://www.thecfa.cn/xinwen/20260118/37220.html",
+      "event_source": "https://www.fotmob.com/matches/china-u23-vs-uzbekistan-u23/5j1fh3ca#1000005765",
+      "note": "120 分钟 0 比 0；中国队点球大战 4 比 2 取胜晋级。点球大战进球不计入球员正式比赛进球。",
+      "china_contributions": [],
+      "china_lineup": {
+        "formation": "5-3-2",
+        "starters": [
+          {"player_id": "cn-li-hao-2004", "player": "Li Hao"},
+          {"player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu"},
+          {"player_id": "cn-peng-xiao-2005", "player": "Peng Xiao"},
+          {"player_id": "cn-he-yiran-2005", "player": "He Yiran"},
+          {"player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang"},
+          {"player_id": "cn-hu-hetao-2003", "player": "Hu Hetao"},
+          {"player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-xu-bin-2004", "player": "Xu Bin"},
+          {"player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan"},
+          {"player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili"},
+          {"player_id": "cn-wang-yudong-2006", "player": "Wang Yudong"}
+        ],
+        "substitutes": [
+          {"player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "minute": "66", "replaced_player_id": "cn-li-zhenquan-2003", "replaced_player": "Li Zhenquan"},
+          {"player_id": "cn-wang-bohao-2005", "player": "Wang Bohao", "minute": "66", "replaced_player_id": "cn-mutalifu-yimingkari-2004", "replaced_player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-xiang-yuwang-2003", "player": "Xiang Yuwang", "minute": "66", "replaced_player_id": "cn-baihelamu-abuduwaili-2003", "replaced_player": "Baihelamu Abuduwaili"},
+          {"player_id": "cn-bao-shengxin-2003", "player": "Bao Shengxin", "minute": "79", "replaced_player_id": "cn-xu-bin-2004", "replaced_player": "Xu Bin"},
+          {"player_id": "cn-liu-haofan-2003", "player": "Liu Haofan", "minute": "90", "display_minute": "90+4", "replaced_player_id": "cn-he-yiran-2005", "replaced_player": "He Yiran"},
+          {"player_id": "cn-kuai-jiwen-2006", "player": "Kuai Jiwen", "minute": "99", "replaced_player_id": "cn-wang-yudong-2006", "replaced_player": "Wang Yudong"},
+          {"player_id": "cn-luan-yi-2005", "player": "Luan Yi", "status": "unused"},
+          {"player_id": "cn-huo-shenping-2003", "player": "Huo Shenping", "status": "unused"},
+          {"player_id": "cn-bao-shimeng-2003", "player": "Bao Shimeng", "status": "unused"},
+          {"player_id": "cn-chen-zeshi-2005", "player": "Chen Zeshi", "status": "unused"},
+          {"player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "status": "unused"},
+          {"player_id": "cn-mao-weijie-2005", "player": "Mao Weijie", "status": "unused"}
+        ]
       },
+      "china_cards": [
+        {"type": "yellow", "player_id": "cn-wang-yudong-2006", "player": "Wang Yudong", "minute": "49"},
+        {"type": "yellow", "player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "minute": "78"}
+      ]
+    },
       {
         "date": "2026-01-20",
         "stage": "Semi-final",
         "opponent": "Vietnam",
         "score_for": 3,
-        "score_against": 0,
-        "result": "W",
-        "china_contributions": [
-          {
-            "type": "goal",
-            "player": "Peng Xiao",
-            "minute": "",
-            "role": "unknown"
-          },
-          {
-            "type": "goal",
-            "player": "Xiang Yuwang",
-            "minute": "",
-            "role": "unknown"
-          },
-          {
-            "type": "goal",
-            "player": "Wang Yudong",
-            "minute": "",
-            "role": "unknown"
-          }
+      "score_against": 0,
+      "result": "W",
+      "source_tier": "official-result+trusted-event-feed",
+      "official_source": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/s-final-china-pr-power-past-vietnam-1",
+      "event_source": "https://www.fotmob.com/matches/china-u23-vs-vietnam-u23/5njtfzmc#1000006406",
+      "china_contributions": [
+        {
+          "type": "goal",
+          "player_id": "cn-peng-xiao-2005",
+          "player": "Peng Xiao",
+          "minute": "47",
+          "role": "starter"
+        },
+        {
+          "type": "goal",
+          "player_id": "cn-xiang-yuwang-2003",
+          "player": "Xiang Yuwang",
+          "minute": "52",
+          "role": "starter"
+        },
+        {
+          "type": "goal",
+          "player_id": "cn-wang-yudong-2006",
+          "player": "Wang Yudong",
+          "minute": "90+8",
+          "role": "substitute"
+        }
+      ],
+      "china_lineup": {
+        "formation": "4-4-2",
+        "starters": [
+          {"player_id": "cn-li-hao-2004", "player": "Li Hao"},
+          {"player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang"},
+          {"player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu"},
+          {"player_id": "cn-peng-xiao-2005", "player": "Peng Xiao"},
+          {"player_id": "cn-liu-haofan-2003", "player": "Liu Haofan"},
+          {"player_id": "cn-wang-bohao-2005", "player": "Wang Bohao"},
+          {"player_id": "cn-bao-shengxin-2003", "player": "Bao Shengxin"},
+          {"player_id": "cn-chen-zeshi-2005", "player": "Chen Zeshi"},
+          {"player_id": "cn-hu-hetao-2003", "player": "Hu Hetao"},
+          {"player_id": "cn-xiang-yuwang-2003", "player": "Xiang Yuwang"},
+          {"player_id": "cn-kuai-jiwen-2006", "player": "Kuai Jiwen"}
+        ],
+        "substitutes": [
+          {"player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan", "minute": "63", "replaced_player_id": "cn-bao-shengxin-2003", "replaced_player": "Bao Shengxin"},
+          {"player_id": "cn-xu-bin-2004", "player": "Xu Bin", "minute": "70", "replaced_player_id": "cn-chen-zeshi-2005", "replaced_player": "Chen Zeshi"},
+          {"player_id": "cn-wang-yudong-2006", "player": "Wang Yudong", "minute": "70", "replaced_player_id": "cn-kuai-jiwen-2006", "replaced_player": "Kuai Jiwen"},
+          {"player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili", "minute": "70", "replaced_player_id": "cn-xiang-yuwang-2003", "replaced_player": "Xiang Yuwang"},
+          {"player_id": "cn-mao-weijie-2005", "player": "Mao Weijie", "minute": "90", "replaced_player_id": "cn-wang-bohao-2005", "replaced_player": "Wang Bohao"},
+          {"player_id": "cn-luan-yi-2005", "player": "Luan Yi", "status": "unused"},
+          {"player_id": "cn-huo-shenping-2003", "player": "Huo Shenping", "status": "unused"},
+          {"player_id": "cn-he-yiran-2005", "player": "He Yiran", "status": "unused"},
+          {"player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari", "status": "unused"},
+          {"player_id": "cn-bao-shimeng-2003", "player": "Bao Shimeng", "status": "unused"},
+          {"player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "status": "unused"},
+          {"player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "status": "unused"}
         ]
       },
+      "china_cards": [
+        {"type": "yellow", "player_id": "cn-hu-hetao-2003", "player": "Hu Hetao", "minute": "23"},
+        {"type": "yellow", "player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang", "minute": "89"},
+        {"type": "yellow", "player_id": "cn-wang-yudong-2006", "player": "Wang Yudong", "minute": "90+8"}
+      ]
+    },
       {
         "date": "2026-01-24",
         "stage": "Final",
         "opponent": "Japan",
         "score_for": 0,
-        "score_against": 4,
-        "result": "L",
-        "china_contributions": []
-      }
+      "score_against": 4,
+      "result": "L",
+      "source_tier": "official-result+trusted-event-feed",
+      "official_source": "https://www.jfa.jp/eng/national_team/u23_2026/afc_u23_asiancup_2026/final/match_page/m32.html",
+      "event_source": "https://www.fotmob.com/matches/japan-u23-vs-china-u23/2eypicai#1000006405",
+      "china_contributions": [],
+      "china_lineup": {
+        "formation": "5-3-2",
+        "starters": [
+          {"player_id": "cn-li-hao-2004", "player": "Li Hao"},
+          {"player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu"},
+          {"player_id": "cn-peng-xiao-2005", "player": "Peng Xiao"},
+          {"player_id": "cn-liu-haofan-2003", "player": "Liu Haofan"},
+          {"player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang"},
+          {"player_id": "cn-hu-hetao-2003", "player": "Hu Hetao"},
+          {"player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-xu-bin-2004", "player": "Xu Bin"},
+          {"player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan"},
+          {"player_id": "cn-xiang-yuwang-2003", "player": "Xiang Yuwang"},
+          {"player_id": "cn-wang-yudong-2006", "player": "Wang Yudong"}
+        ],
+        "substitutes": [
+          {"player_id": "cn-chen-zeshi-2005", "player": "Chen Zeshi", "minute": "62", "replaced_player_id": "cn-xu-bin-2004", "replaced_player": "Xu Bin"},
+          {"player_id": "cn-wang-bohao-2005", "player": "Wang Bohao", "minute": "62", "replaced_player_id": "cn-mutalifu-yimingkari-2004", "replaced_player": "Mutalifu Yimingkari"},
+          {"player_id": "cn-bao-shengxin-2003", "player": "Bao Shengxin", "minute": "62", "replaced_player_id": "cn-li-zhenquan-2003", "replaced_player": "Li Zhenquan"},
+          {"player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili", "minute": "78", "replaced_player_id": "cn-xiang-yuwang-2003", "replaced_player": "Xiang Yuwang"},
+          {"player_id": "cn-kuai-jiwen-2006", "player": "Kuai Jiwen", "minute": "85", "replaced_player_id": "cn-wang-yudong-2006", "replaced_player": "Wang Yudong"},
+          {"player_id": "cn-luan-yi-2005", "player": "Luan Yi", "status": "unused"},
+          {"player_id": "cn-huo-shenping-2003", "player": "Huo Shenping", "status": "unused"},
+          {"player_id": "cn-he-yiran-2005", "player": "He Yiran", "status": "unused"},
+          {"player_id": "cn-bao-shimeng-2003", "player": "Bao Shimeng", "status": "unused"},
+          {"player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "status": "unused"},
+          {"player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "status": "unused"},
+          {"player_id": "cn-mao-weijie-2005", "player": "Mao Weijie", "status": "unused"}
+        ]
+      },
+      "china_cards": [
+        {"type": "yellow", "player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili", "minute": "81"}
+      ]
+    }
+  ],
+  "china_player_statistics": {
+    "checked_at": "2026-07-19",
+    "scope": "china-final-registration-23",
+    "minute_status": "complete-standard-minutes-no-stoppage",
+    "minute_method": "A 90-minute match contributes 990 team-player minutes; the Uzbekistan quarter-final contributes 1320. Stoppage time is excluded, 90+4 before extra time is normalized to 90, and shoot-out goals do not count.",
+    "totals": {
+      "matches": 6,
+      "players": 23,
+      "players_used": 21,
+      "starts": 66,
+      "minutes": 6270,
+      "goals": 4,
+      "yellow_cards": 14,
+      "red_cards": 0
+    },
+    "source_links": [
+      {"label": "AFC technical report", "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/AFC-U23-Asian-Cup-Saudi-Arabia-2026-Technical-Report.pdf"},
+      {"label": "CFA quarter-final report", "url": "https://www.thecfa.cn/xinwen/20260118/37220.html"},
+      {"label": "JFA final match record", "url": "https://www.jfa.jp/eng/national_team/u23_2026/afc_u23_asiancup_2026/final/match_page/m32.html"},
+      {"label": "FotMob China U23 fixtures and event feeds", "url": "https://www.fotmob.com/teams/317240/fixtures/china-u23"}
     ],
+    "players": [
+      {"player_id": "cn-luan-yi-2005", "player": "Luan Yi", "roster_status": "final-squad", "appearances": 0, "starts": 0, "substitute_appearances": 0, "minutes": 0, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-huo-shenping-2003", "player": "Huo Shenping", "roster_status": "final-squad", "appearances": 0, "starts": 0, "substitute_appearances": 0, "minutes": 0, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-li-hao-2004", "player": "Li Hao", "roster_status": "final-squad", "appearances": 6, "starts": 6, "substitute_appearances": 0, "minutes": 570, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-hu-hetao-2003", "player": "Hu Hetao", "roster_status": "final-squad", "appearances": 6, "starts": 6, "substitute_appearances": 0, "minutes": 570, "goals": 0, "yellow_cards": 2, "red_cards": 0},
+      {"player_id": "cn-he-yiran-2005", "player": "He Yiran", "roster_status": "final-squad", "appearances": 4, "starts": 4, "substitute_appearances": 0, "minutes": 360, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-wumitijiang-yusupu-2004", "player": "Wumitijiang Yusupu", "roster_status": "final-squad", "appearances": 6, "starts": 6, "substitute_appearances": 0, "minutes": 561, "goals": 0, "yellow_cards": 1, "red_cards": 0},
+      {"player_id": "cn-liu-haofan-2003", "player": "Liu Haofan", "roster_status": "final-squad", "appearances": 3, "starts": 2, "substitute_appearances": 1, "minutes": 210, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-xu-bin-2004", "player": "Xu Bin", "roster_status": "final-squad", "appearances": 6, "starts": 5, "substitute_appearances": 1, "minutes": 431, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-xiang-yuwang-2003", "player": "Xiang Yuwang", "roster_status": "final-squad", "appearances": 5, "starts": 2, "substitute_appearances": 3, "minutes": 223, "goals": 1, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-mutalifu-yimingkari-2004", "player": "Mutalifu Yimingkari", "roster_status": "final-squad", "appearances": 4, "starts": 4, "substitute_appearances": 0, "minutes": 243, "goals": 0, "yellow_cards": 1, "red_cards": 0},
+      {"player_id": "cn-baihelamu-abuduwaili-2003", "player": "Baihelamu Abuduwaili", "roster_status": "final-squad", "appearances": 6, "starts": 4, "substitute_appearances": 2, "minutes": 347, "goals": 0, "yellow_cards": 1, "red_cards": 0},
+      {"player_id": "cn-wang-yudong-2006", "player": "Wang Yudong", "roster_status": "final-squad", "appearances": 6, "starts": 5, "substitute_appearances": 1, "minutes": 453, "goals": 1, "yellow_cards": 2, "red_cards": 0},
+      {"player_id": "cn-kuai-jiwen-2006", "player": "Kuai Jiwen", "roster_status": "final-squad", "appearances": 5, "starts": 2, "substitute_appearances": 3, "minutes": 160, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-wang-bohao-2005", "player": "Wang Bohao", "roster_status": "final-squad", "appearances": 6, "starts": 2, "substitute_appearances": 4, "minutes": 277, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-yang-haoyu-2006", "player": "Yang Haoyu", "roster_status": "final-squad", "appearances": 4, "starts": 1, "substitute_appearances": 3, "minutes": 130, "goals": 0, "yellow_cards": 2, "red_cards": 0},
+      {"player_id": "cn-peng-xiao-2005", "player": "Peng Xiao", "roster_status": "final-squad", "appearances": 6, "starts": 6, "substitute_appearances": 0, "minutes": 570, "goals": 2, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-bao-shimeng-2003", "player": "Bao Shimeng", "roster_status": "final-squad", "appearances": 1, "starts": 1, "substitute_appearances": 0, "minutes": 9, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-chen-zeshi-2005", "player": "Chen Zeshi", "roster_status": "final-squad", "appearances": 4, "starts": 1, "substitute_appearances": 3, "minutes": 130, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-zhang-aihui-2005", "player": "Zhang Aihui", "roster_status": "final-squad", "appearances": 2, "starts": 0, "substitute_appearances": 2, "minutes": 54, "goals": 0, "yellow_cards": 1, "red_cards": 0},
+      {"player_id": "cn-li-zhenquan-2003", "player": "Li Zhenquan", "roster_status": "final-squad", "appearances": 6, "starts": 4, "substitute_appearances": 2, "minutes": 349, "goals": 0, "yellow_cards": 1, "red_cards": 0},
+      {"player_id": "cn-bao-shengxin-2003", "player": "Bao Shengxin", "roster_status": "final-squad", "appearances": 4, "starts": 1, "substitute_appearances": 3, "minutes": 152, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-mao-weijie-2005", "player": "Mao Weijie", "roster_status": "final-squad", "appearances": 1, "starts": 0, "substitute_appearances": 1, "minutes": 0, "goals": 0, "yellow_cards": 0, "red_cards": 0},
+      {"player_id": "cn-yang-alex-2005", "player": "Alex Xi Yang", "roster_status": "final-squad", "appearances": 5, "starts": 4, "substitute_appearances": 1, "minutes": 471, "goals": 0, "yellow_cards": 3, "red_cards": 0}
+    ]
+  },
     "china_key_players": [
       {
         "player": "Peng Xiao",
@@ -1124,7 +1435,7 @@
       }
     ],
     "roster_boundary": {
-      "checked_at": "2026-07-11",
+      "checked_at": "2026-07-19",
       "status_field": "tournament_participation[].roster_status",
       "original_final_registration_count": 23,
       "updated_tournament_squad_count": 23,
@@ -1859,7 +2170,8 @@
               "en": "Zhang Junhao"
             },
             "roster_status": "later-camp-callup",
-            "note": "Listed in the latest public roster view but not mapped to a player record yet."
+            "audit_result": "insufficient-evidence",
+            "note": "CFA sources confirm the camp identity and Shandong Luneng Taishan Football School unit, but no public reliable source checked supplies a complete birth date and independently verified registration record. No stable player ID created."
           },
           {
             "name": {
@@ -1867,7 +2179,8 @@
               "en": "Sun Chenxi"
             },
             "roster_status": "later-camp-callup",
-            "note": "Listed in the latest public roster view but not mapped to a player record yet."
+            "audit_result": "insufficient-evidence",
+            "note": "CFA sources confirm the camp identity and Guangdong Mingtus Football Club unit, but no public reliable source checked supplies a complete birth date and independently verified registration record. No stable player ID created."
           },
           {
             "name": {
@@ -1875,7 +2188,8 @@
               "en": "Yuan Bohan"
             },
             "roster_status": "later-camp-callup",
-            "note": "Listed in the latest public roster view but not mapped to a player record yet."
+            "audit_result": "insufficient-evidence",
+            "note": "CFA sources confirm the camp identity and Shenzhen Juniors Football Club unit, but no public reliable source checked supplies a complete birth date and independently verified registration record. No stable player ID created."
           }
         ],
         "final_squad_not_latest_public_roster": [
@@ -1894,6 +2208,53 @@
           {
             "player_id": "cn-peng-xianchen-2009",
             "player": "Peng Xianchen"
+          }
+        ]
+      },
+      "unmapped_player_audit": {
+        "policy": "Create a stable player ID only when public reliable football sources jointly support a complete birth date, registration affiliation and identity match. Camp-list affiliation alone is not treated as a registration record.",
+        "checked_at": "2026-07-19",
+        "checked_sources": [
+          {
+            "label": "CFA 2026 fourth U17 camp notice",
+            "url": "https://www.thecfa.cn/wqmdu17/20260627/37817.html",
+            "supports": ["identity", "camp_affiliation"]
+          },
+          {
+            "label": "CFA Silver Cup: China U17 3-0 Australia U17",
+            "url": "https://www.thecfa.cn/xinwenu17/20260706/37841.html",
+            "supports": ["identity", "match_participation"]
+          },
+          {
+            "label": "CFA U17 team page",
+            "url": "https://www.thecfa.cn/nzu17/index.html",
+            "supports": ["current_team_context"]
+          }
+        ],
+        "players": [
+          {
+            "name": {"zh": "张君豪", "en": "Zhang Junhao"},
+            "roster_status": "later-camp-callup",
+            "result": "insufficient-evidence",
+            "supported_fields": ["identity", "camp_affiliation"],
+            "missing_fields": ["complete_birth_date", "verified_registration_club"],
+            "player_id": null
+          },
+          {
+            "name": {"zh": "孙臣曦", "en": "Sun Chenxi"},
+            "roster_status": "later-camp-callup",
+            "result": "insufficient-evidence",
+            "supported_fields": ["identity", "camp_affiliation", "match_participation"],
+            "missing_fields": ["complete_birth_date", "verified_registration_club"],
+            "player_id": null
+          },
+          {
+            "name": {"zh": "袁博涵", "en": "Yuan Bohan"},
+            "roster_status": "later-camp-callup",
+            "result": "insufficient-evidence",
+            "supported_fields": ["identity", "camp_affiliation", "match_participation"],
+            "missing_fields": ["complete_birth_date", "verified_registration_club"],
+            "player_id": null
           }
         ]
       }
