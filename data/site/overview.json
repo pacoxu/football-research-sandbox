@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-19",
+  "generated_at": "2026-07-20",
   "stats": {
     "player_count": 459,
     "country_count": 8,
@@ -35948,7 +35948,7 @@
   "china_youth_development_coaches": {
     "id": "china-youth-development-coaches",
     "schema_version": 1,
-    "last_checked": "2026-07-19",
+    "last_checked": "2026-07-20",
     "scope": "中国境内长期从事男子青少年足球启蒙、梯队训练、校园足球或青训技术管理的具名教练样本。小学、体校、足校、职业俱乐部梯队、独立基地和民间项目分别标注；不与成年一线队或国字号主教练统计混算。",
     "coverage_status": "expanded-partial",
     "role_policy": {
@@ -36246,6 +36246,53 @@
           "status": "verified",
           "last_checked": "2026-07-18",
           "notes": "本表只记录其山东泰山/鲁能足校青训体系任期；现任国字号岗位由中国男足青年教练表维护。"
+        }
+      },
+      {
+        "id": "cn-cui-peng-shandong-u17",
+        "name": {
+          "zh": "崔鹏",
+          "en": "Cui Peng",
+          "native": "崔鹏"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "山东泰山足球俱乐部U17梯队",
+          "short_name": "山东泰山U17/鲁能足校",
+          "type": "professional-academy",
+          "province": "山东",
+          "city": "济南/潍坊"
+        },
+        "role": "U17梯队主教练",
+        "age_bands": [
+          "u17"
+        ],
+        "period": {
+          "start": null,
+          "end": null,
+          "precision": "snapshot",
+          "status": "confirmed-2025"
+        },
+        "profile_summary": "2025年以主教练身份带领山东泰山U17参加第四届中青赛男子U17组。当前官方来源只确认该届赛事快照，不外推其他年龄段职责或后续任期。",
+        "methodology_tags": [
+          "职业梯队",
+          "中青赛",
+          "赛季快照",
+          "鲁能足校体系"
+        ],
+        "source_links": [
+          {
+            "type": "official-association",
+            "label": "中国足协：中青赛U17组四分之一决赛山东泰山对阵清华附中",
+            "url": "https://www.thecfa.cn/qingchaoliansai/20250925/36935.html",
+            "checked_at": "2026-07-20",
+            "claim": "明确称崔鹏为山东泰山U17主教练，并确认其2025年中青赛U17组职责范围。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-20",
+          "notes": "中国足协赛事报道明确写出教练、球队与U17范围；任期只按2025赛季快照记录。"
         }
       },
       {
@@ -36708,15 +36755,15 @@
     "watchlist": [
       {
         "organization": "山东鲁能泰山足球学校",
-        "need": "已补2025山东泰山U15主教练快照；继续补U10-U14、U17-U19在同一核查年度的具名官方名单。"
+        "need": "已核2025山东泰山U15唐晓程和U17崔鹏；足协资料另确认2025 U19夺冠，但未披露该队主教练姓名。继续补U10-U14、U16及U18-U19同一核查年度的具名官方名单。"
       },
       {
         "organization": "恒大足球学校",
-        "need": "已补2008年龄段历史主教练并保留2025 U13样本；继续寻找U9-U17同一核查年度的具名官方名单。"
+        "need": "已核2023年2008年龄段和2025 U13主教练；2025 U17只找到“最佳教练”姓名片段，U15外教也仅有媒体线索，均不足以确认完整身份和任命范围。继续寻找U9-U17同一核查年度的具名官方名单。"
       },
       {
         "organization": "中国足球小将",
-        "need": "已拆2014批次董路实际比赛职责，并保留徐亮、毛剑卿2023年教练组快照；继续核验2015、2016批次及具名助教，区分临时合作与长期训练。"
+        "need": "已拆2014批次董路实际比赛职责，并保留徐亮、毛剑卿2023年教练组快照；2015、2016批次目前只有球员或参赛线索，尚无可核的具名官方教练名单。继续区分临时合作与长期训练。"
       }
     ]
   },
