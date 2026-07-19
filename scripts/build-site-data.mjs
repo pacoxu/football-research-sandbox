@@ -22,7 +22,7 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData({ outputDirectory = paths.site } = {}) {
   const dataset = await loadDataset();
-  const generatedAt = "2026-07-19";
+  const generatedAt = "2026-07-20";
   const players = [...dataset.players].sort(comparePlayers);
 
   const overview = {

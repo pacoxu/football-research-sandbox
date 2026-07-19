@@ -24,6 +24,7 @@ const players = [
   { id: "cn-yang-xi", name: "杨希", en: "Alex Xi Yang", country: "China PR", position: "DEF", role: "右后卫", club: "Espanyol / L'Hospitalet", era: "returned" },
   { id: "cn-kuang-zhaolei", name: "邝兆镭", en: "Kuang Zhaolei", country: "China PR", position: "FWD", role: "右边锋", club: "DAMM CF / Atlètic Lleida", era: "returned" },
   { id: "cn-wei-shihao", name: "韦世豪", en: "Wei Shihao", country: "China PR", position: "FWD", role: "边锋", club: "Boavista / Feirense / Leixões", era: "returned" },
+  { id: "cn-zeng-cheng", name: "曾诚", en: "Zeng Cheng", country: "China PR", position: "GK", role: "门将", club: "Persebaya Surabaya", era: "history" },
   { id: "cn-sun-jihai", name: "孙继海", en: "Sun Jihai", country: "China PR", position: "DEF", role: "右后卫", club: "Manchester City", era: "history" },
   { id: "cn-fan-zhiyi", name: "范志毅", en: "Fan Zhiyi", country: "China PR", position: "DEF", role: "中后卫", club: "Crystal Palace", era: "history" },
   { id: "cn-sun-xiang", name: "孙祥", en: "Sun Xiang", country: "China PR", position: "DEF", role: "左后卫", club: "PSV Eindhoven", era: "history" },
