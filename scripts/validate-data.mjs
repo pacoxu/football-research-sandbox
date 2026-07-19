@@ -170,11 +170,15 @@ const completeSquadExpectations = new Map([
 const allowedTournamentSourceVersionTypes = new Set([
   "afc-final-registration",
   "afc-final-report",
+  "afc-technical-report",
   "afc-match-report",
   "afc-match-schedule",
   "afc-tournament-home",
   "afc-stats-archive",
   "fifa-report",
+  "official-match-report",
+  "official-match-record",
+  "trusted-match-database",
   "wikipedia-secondary",
   "secondary-stats",
   "news-secondary"
@@ -829,6 +833,158 @@ function validateChinaU20PlayerStatistics(tournament, players) {
   assert(computed.starts === 44, "China U20 2025 must retain 44 starts");
   assert(computed.player_minutes === 3960, "China U20 2025 must retain 3960 player-minutes");
   assert(computed.goals === 8, "China U20 2025 must retain eight goals");
+}
+
+function validateChinaU23PlayerStatistics(tournament, players) {
+  const statistics = tournament.china_player_statistics;
+  assert(statistics && typeof statistics === "object", "Missing China U23 2026 player statistics");
+  assert(isIsoDate(statistics.checked_at), "Invalid China U23 2026 statistics checked_at");
+  assert(tournament.china_matches.length === 6, "China U23 2026 must retain six matches");
+  assert(statistics.players?.length === 23, "China U23 2026 statistics must cover 23 players");
+
+  const playerById = new Map(players.map((player) => [player.id, player]));
+  const expected = new Map(
+    statistics.players.map((row) => [row.player_id, {
+      appearances: 0,
+      starts: 0,
+      substitute_appearances: 0,
+      minutes: 0,
+      goals: 0,
+      yellow_cards: 0,
+      red_cards: 0
+    }])
+  );
+  const seenRows = new Set();
+  const allowedCardTypes = new Set(["yellow", "second-yellow-red", "straight-red"]);
+
+  for (const match of tournament.china_matches) {
+    assert(match.source_tier === "official-result+trusted-event-feed", `Missing China U23 source tier: ${match.date}`);
+    assert(/^https?:\/\//.test(match.official_source), `Missing China U23 official match source: ${match.date}`);
+    assert(/^https?:\/\//.test(match.event_source), `Missing China U23 event source: ${match.date}`);
+    const matchLength = match.stage === "Quarter-final" ? 120 : 90;
+    const starters = match.china_lineup?.starters ?? [];
+    const substitutes = match.china_lineup?.substitutes ?? [];
+    assert(starters.length === 11, `China U23 2026 match must have 11 starters: ${match.date}`);
+    assert(starters.length + substitutes.length === 23, `China U23 2026 matchday list must have 23 players: ${match.date}`);
+
+    const matchPlayerIds = new Set();
+    for (const entry of [...starters, ...substitutes]) {
+      assert(playerById.has(entry.player_id), `Unknown China U23 lineup player: ${entry.player_id}`);
+      assert(expected.has(entry.player_id), `China U23 lineup player missing statistics row: ${entry.player_id}`);
+      assert(!matchPlayerIds.has(entry.player_id), `Duplicate China U23 matchday player: ${match.date} ${entry.player_id}`);
+      matchPlayerIds.add(entry.player_id);
+    }
+
+    const substitutionByOutgoingPlayer = new Map(
+      substitutes
+        .filter((entry) => entry.minute !== undefined)
+        .map((entry) => [entry.replaced_player_id, entry])
+    );
+    for (const starter of starters) {
+      const row = expected.get(starter.player_id);
+      const substitution = substitutionByOutgoingPlayer.get(starter.player_id);
+      row.appearances += 1;
+      row.starts += 1;
+      row.minutes += substitution ? Number(substitution.minute) : matchLength;
+    }
+    for (const substitute of substitutes.filter((entry) => entry.minute !== undefined)) {
+      assert(
+        Number.isInteger(Number(substitute.minute)) && Number(substitute.minute) >= 0 && Number(substitute.minute) <= matchLength,
+        `Invalid China U23 substitution minute: ${match.date} ${substitute.player_id}`
+      );
+      assert(
+        starters.some((starter) => starter.player_id === substitute.replaced_player_id),
+        `China U23 substitute must identify an outgoing starter: ${match.date} ${substitute.player_id}`
+      );
+      const row = expected.get(substitute.player_id);
+      row.appearances += 1;
+      row.substitute_appearances += 1;
+      row.minutes += matchLength - Number(substitute.minute);
+    }
+
+    for (const contribution of match.china_contributions ?? []) {
+      assert(playerById.has(contribution.player_id), `Unknown China U23 contribution player: ${contribution.player_id}`);
+      if (contribution.type === "goal") {
+        expected.get(contribution.player_id).goals += 1;
+      }
+    }
+    for (const card of match.china_cards ?? []) {
+      assert(allowedCardTypes.has(card.type), `Invalid China U23 card type: ${card.type}`);
+      assert(playerById.has(card.player_id), `Unknown China U23 card player: ${card.player_id}`);
+      const row = expected.get(card.player_id);
+      if (card.type === "yellow" || card.type === "second-yellow-red") {
+        row.yellow_cards += 1;
+      }
+      if (card.type === "second-yellow-red" || card.type === "straight-red") {
+        row.red_cards += 1;
+      }
+    }
+  }
+
+  const computedTotals = {
+    matches: tournament.china_matches.length,
+    players: statistics.players.length,
+    players_used: 0,
+    starts: 0,
+    minutes: 0,
+    goals: 0,
+    yellow_cards: 0,
+    red_cards: 0
+  };
+  for (const row of statistics.players) {
+    assert(!seenRows.has(row.player_id), `Duplicate China U23 statistics row: ${row.player_id}`);
+    assert(playerById.has(row.player_id), `Missing China U23 player record: ${row.player_id}`);
+    assert(row.roster_status === "final-squad", `Invalid China U23 roster status: ${row.player_id}`);
+    for (const field of ["appearances", "starts", "substitute_appearances", "minutes", "goals", "yellow_cards", "red_cards"]) {
+      assert(Number.isInteger(row[field]) && row[field] >= 0, `Invalid China U23 ${field}: ${row.player_id}`);
+      assert(row[field] === expected.get(row.player_id)[field], `China U23 ${field} does not match match events: ${row.player_id}`);
+    }
+    assert(row.substitute_appearances === row.appearances - row.starts, `Invalid China U23 substitute appearances: ${row.player_id}`);
+    if (row.appearances > 0) computedTotals.players_used += 1;
+    computedTotals.starts += row.starts;
+    computedTotals.minutes += row.minutes;
+    computedTotals.goals += row.goals;
+    computedTotals.yellow_cards += row.yellow_cards;
+    computedTotals.red_cards += row.red_cards;
+    seenRows.add(row.player_id);
+
+    const participation = playerById.get(row.player_id).tournament_participation.filter(
+      (entry) => entry.competition_id === tournament.id
+    );
+    assert(participation.length === 1, `Invalid China U23 participation count: ${row.player_id}`);
+    for (const field of ["roster_status", "appearances", "starts", "substitute_appearances", "minutes", "goals", "yellow_cards", "red_cards"]) {
+      assert(participation[0][field] === row[field], `China U23 generated participation mismatch: ${row.player_id} ${field}`);
+    }
+  }
+
+  for (const [field, value] of Object.entries(computedTotals)) {
+    assert(statistics.totals[field] === value, `Invalid China U23 aggregate: ${field}`);
+  }
+  assert(computedTotals.players_used === 21, "China U23 2026 must retain 21 players used");
+  assert(computedTotals.starts === 66, "China U23 2026 must retain 66 starts");
+  assert(computedTotals.minutes === 6270, "China U23 2026 must retain 6270 player-minutes");
+  assert(computedTotals.goals === 4, "China U23 2026 must retain four match goals");
+}
+
+function validateChinaU17RosterAudit(tournament) {
+  const boundary = tournament.roster_boundary;
+  const audit = boundary?.unmapped_player_audit;
+  assert(tournament.china_squad?.length === 23, "China U17 2026 final squad must remain 23 players");
+  assert(boundary?.counts?.final_squad === 23, "China U17 2026 roster boundary must remain 23");
+  assert(
+    boundary.counts.latest_public_roster_mapped_players + boundary.counts.latest_public_roster_unmapped_players === 24,
+    "China U17 2026 latest public roster must remain 24 players"
+  );
+  assert(audit?.players?.length === 3, "China U17 2026 must retain three explicit unmapped-player audits");
+  const auditedNames = new Set(audit.players.map((entry) => entry.name.zh));
+  for (const name of ["张君豪", "孙臣曦", "袁博涵"]) {
+    assert(auditedNames.has(name), `Missing China U17 roster audit: ${name}`);
+  }
+  for (const entry of audit.players) {
+    assert(entry.roster_status === "later-camp-callup", `Invalid China U17 audited roster status: ${entry.name.zh}`);
+    assert(entry.result === "insufficient-evidence" || entry.player_id, `Unresolved China U17 roster audit: ${entry.name.zh}`);
+    assert(!tournament.china_squad.some((player) => player.player_id === entry.player_id), `Audited later call-up entered China U17 final squad: ${entry.name.zh}`);
+  }
 }
 
 function validateVerificationBlock(verification, label) {
@@ -2071,6 +2227,12 @@ export async function validateData() {
     validateTournamentField(tournament);
     if (tournament.id === "afc-u20-2025") {
       validateChinaU20PlayerStatistics(tournament, dataset.players);
+    }
+    if (tournament.id === "afc-u23-2026") {
+      validateChinaU23PlayerStatistics(tournament, dataset.players);
+    }
+    if (tournament.id === "afc-u17-2026") {
+      validateChinaU17RosterAudit(tournament);
     }
   }
   validateU20ArchiveCoverage(dataset.tournamentArchive);

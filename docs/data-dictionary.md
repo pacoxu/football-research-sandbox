@@ -130,14 +130,18 @@
 | `roster_status` | 可选的细分边界，例如实际赛事名单、赛前替补、被替换或后续集训；具体枚举由赛事 archive 的 `roster_boundary` 说明。 |
 | `season` | 统计赛季；国内 2026 分赛事统计固定为 `2026`。 |
 | `competition_level` | 赛事层级，例如成年顶级联赛、成年杯赛或 U21 青年联赛；不得跨层级汇总。 |
-| `appearances`、`starts`、`substitute_appearances`、`goals`、`minutes` | 出场、首发、替补出场、进球、分钟；未完成逐场复核时用 `null`，不得猜测。 |
+| `appearances`、`starts`、`substitute_appearances` | 出场、首发、替补出场；已确认未出场写 `0`，未知或未完成逐场复核才用 `null`。 |
+| `goals`、`minutes` | 正式比赛进球和标准分钟；点球大战进球不计入，是否计补时由赛事统计说明约定。 |
+| `yellow_cards`、`red_cards` | 黄牌、红牌汇总；已确认无牌写 `0`。 |
 | `stats_as_of` | 本条累计统计的比赛截止日。 |
 | `statistics_status` | `complete` 表示截止日内逐场完整，`partial` 表示只有部分字段或比赛得到确认。 |
 | `source_checked_at` | 统计来源最后核查日。 |
 | `statistics_sources` | 直接支撑统计的比赛报告或统计页 URL 数组。 |
 | `note` | 统计范围和来源说明。 |
 
-部分赛事会在 `tournament-archive` 集中维护逐人统计，并由 loader 合并到此字段。中国 U20 2025 即采用这一方式，以避免跨多个球员文件重复维护四场 Match Summary 的汇总数字。
+部分赛事会在 `tournament-archive` 集中维护逐人统计，并由 loader 合并到此字段。中国 U20 2025 和中国 U23 2026 均采用这一方式，避免在每个球员文件中重复维护逐场汇总。
+
+`tournament-archive.china_matches[].china_lineup` 保存首发和替补。替补项可包含 `minute`、`display_minute`、`replaced_player_id` 和 `replaced_player`；未使用替补以 `status: "unused"` 明示。`china_cards` 的事件类型只使用 `yellow`、`second-yellow-red`、`straight-red`，每条必须包含球员 ID、球员名和分钟。
 
 ## `external_links`
 
