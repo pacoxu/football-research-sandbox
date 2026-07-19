@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>亚洲世界杯长期预测 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="结合成年实力、青年比赛、职业转化与质量留洋分钟，研究 2030 至 2042 年亚洲球队世界杯晋级前景。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260712-world-cup-forecast" />
+  </head>
+  <body data-page="predictions">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a href="./lineup.html">排阵容</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">青训体系</a>
+            <a data-nav="coaches" data-i18n="nav.coaches" href="./coaches.html">青训教练</a>
+            <a data-nav="data-center" data-i18n="nav.dataCenter" href="./data.html">数据中心</a>
+            <a data-nav="predictions" data-i18n="nav.predictions" href="./predictions.html">世界杯预测</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main id="forecastPageContent">
+        <section class="page-hero forecast-hero">
+          <div class="hero-copy">
+            <p class="eyebrow" data-forecast-copy="hero.eyebrow">Research Forecast</p>
+            <h1 data-forecast-copy="hero.title">亚洲世界杯长期预测</h1>
+            <p class="hero-text" data-forecast-copy="hero.text">
+              结合成年实力、青年比赛、职业转化与质量留洋分钟，观察 2030—2042 年亚洲球队的世界杯晋级前景。
+            </p>
+          </div>
+          <aside id="forecastHeroMeta" class="hero-spotlight forecast-hero-meta">
+            <div class="empty-inline" data-i18n="common.loading">加载中</div>
+          </aside>
+        </section>
+
+        <section class="content-panel forecast-edition-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-forecast-copy="edition.eyebrow">Forecast Horizon</p>
+              <h2 data-forecast-copy="edition.title">选择预测届次</h2>
+            </div>
+            <p id="forecastEditionMeta" class="section-note"></p>
+          </div>
+          <div id="forecastYearTabs" class="tab-row forecast-year-tabs"></div>
+          <div id="forecastAssumptionNotice" class="forecast-assumption-notice"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-forecast-copy="expected.eyebrow">Expected Field</p>
+              <h2 data-forecast-copy="expected.title">预期晋级组</h2>
+            </div>
+            <p class="section-note" data-forecast-copy="expected.note">按概率中位数展示前 8 队，不是确定名单。</p>
+          </div>
+          <div id="forecastExpectedGrid" class="forecast-probability-grid"></div>
+          <div class="forecast-bubble-section">
+            <h3 data-forecast-copy="expected.bubble">附加赛与临界竞争圈</h3>
+            <div id="forecastBubbleGrid" class="forecast-probability-grid is-bubble"></div>
+          </div>
+        </section>
+
+        <section class="dashboard-grid forecast-main-grid">
+          <article class="content-panel panel-span-2">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-forecast-copy="ranking.eyebrow">AFC Probability Table</p>
+                <h2 data-forecast-copy="ranking.title">亚洲晋级概率榜</h2>
+              </div>
+              <button id="forecastTableToggle" class="switch-button" type="button">显示全部 AFC 球队</button>
+            </div>
+            <p id="forecastTableMeta" class="section-note"></p>
+            <div class="table-wrap forecast-table-wrap">
+              <table class="forecast-table">
+                <thead>
+                  <tr>
+                    <th data-forecast-copy="ranking.rank">排名</th>
+                    <th data-forecast-copy="ranking.team">球队</th>
+                    <th data-forecast-copy="ranking.probability">晋级概率</th>
+                    <th data-forecast-copy="ranking.interval">80% 区间</th>
+                    <th data-forecast-copy="ranking.tier">分档</th>
+                    <th data-forecast-copy="ranking.trend">趋势</th>
+                    <th data-forecast-copy="ranking.confidence">数据可信度</th>
+                  </tr>
+                </thead>
+                <tbody id="forecastTableBody"></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="content-panel forecast-china-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-forecast-copy="china.eyebrow">China Focus</p>
+                <h2 data-forecast-copy="china.title">中国队专题</h2>
+              </div>
+            </div>
+            <p id="forecastChinaSummary" class="forecast-china-summary"></p>
+            <h3 data-forecast-copy="china.drivers">主要信号</h3>
+            <div id="forecastChinaDrivers" class="forecast-driver-list"></div>
+            <h3 data-forecast-copy="china.rivals">最接近的主要竞争者</h3>
+            <div id="forecastChinaRivals" class="forecast-rival-list"></div>
+            <h3 data-forecast-copy="china.sensitivity">敏感度，不是正式预测</h3>
+            <div id="forecastChinaSensitivity" class="forecast-sensitivity-grid"></div>
+          </article>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-forecast-copy="method.eyebrow">Method &amp; Backtest</p>
+              <h2 data-forecast-copy="method.title">模型方法与滚动回测</h2>
+            </div>
+          </div>
+          <p data-forecast-copy="method.note">
+            成年模型与梯队模型分别做 L2 正则化，再按世界杯周期滚动回测学习混合权重。概率经名额约束校准；区间来自按周期抽样与输入不确定性。
+          </p>
+          <div class="table-wrap">
+            <table class="forecast-backtest-table">
+              <thead>
+                <tr>
+                  <th data-forecast-copy="method.lead">提前量</th>
+                  <th data-forecast-copy="method.samples">回测样本</th>
+                  <th data-forecast-copy="method.weights">成年 / 梯队权重</th>
+                  <th data-forecast-copy="method.baseline">成年基线 Brier</th>
+                  <th data-forecast-copy="method.combined">组合 Brier</th>
+                  <th data-forecast-copy="method.loss">组合 Log loss</th>
+                </tr>
+              </thead>
+              <tbody id="forecastBacktestBody"></tbody>
+            </table>
+          </div>
+          <div class="forecast-method-note" data-forecast-copy="method.limitations">
+            边界：历史训练仅覆盖 18 支主要竞争队；国家指标是可复核资料形成的 0—100 研究指数，不是 FIFA 官方评分。2038/2042 尚缺完整适龄球员，因此只用于体系展望。
+          </div>
+          <h3 data-forecast-copy="method.sources">依据与来源</h3>
+          <div id="forecastSourceGrid" class="source-link-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/app.js?v=20260712-world-cup-forecast"></script>
+  </body>
+</html>

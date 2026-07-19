@@ -9,6 +9,7 @@ import {
   normalizeCountry
 } from "./lib/overseas-status.mjs";
 import { validateJsonSchemas } from "./validate-json-schemas.mjs";
+import { loadForecastInput, validateForecastInput } from "./lib/world-cup-forecast.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -501,8 +502,8 @@ function validateYouthProjectDossier(dossier, playerIds) {
 function validateYouthDevelopmentSystems(payload) {
   assert(payload?.schema_version === 1, "Unsupported youth-development-systems schema version");
   assert(isIsoDate(payload.checked_at), "Invalid youth-development-systems checked_at");
-  const expectedCountries = ["Japan", "Korea Republic", "Norway", "Denmark", "Sweden"];
-  assert(Array.isArray(payload.systems) && payload.systems.length === expectedCountries.length, "Expected five youth systems");
+  const expectedCountries = ["China PR", "Japan", "Korea Republic", "Norway", "Denmark", "Sweden"];
+  assert(Array.isArray(payload.systems) && payload.systems.length === expectedCountries.length, "Expected six youth systems");
 
   const systemIds = new Set();
   const competitionIds = new Set();
@@ -2250,6 +2251,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   const playerNameOverrides = JSON.parse(
     await fs.readFile(path.join(paths.raw, "player-name-overrides.json"), "utf8")
   );
+  validateForecastInput(await loadForecastInput());
   const playerIds = new Set();
   const playerIdentityKeys = new Map();
   const tournamentIds = new Set(dataset.tournaments.map((item) => item.id));

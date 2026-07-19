@@ -1348,7 +1348,7 @@
       {
         "country": "China PR",
         "status": "in-progress",
-        "verified_records": 26,
+        "verified_records": 40,
         "bucket_focus": [
           "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
           "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队落点，避免与成年一线队出场样本混算；这条线现已明确补入刘邵子洋、何小珂这类从拜仁或西班牙梯队进入欧洲培养链的案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
@@ -2408,11 +2408,17 @@
             "appearances": 24,
             "appearance_label": "荷甲+奥甲 24 场",
             "competitive_debut": true,
-            "summary": "孙祥在 PSV 与 Austria Wien 的欧洲阶段累计联赛出场 24 次，是中国左后卫在荷兰和奥地利顶级联赛留下正式履历的代表样本，也是中国球员进入欧冠淘汰赛报名与出场讨论中最常被提及的名字之一。",
+            "source_links": [
+              {
+                "label": "Wikipedia：孙祥俱乐部履历",
+                "url": "https://en.wikipedia.org/wiki/Sun_Xiang"
+              }
+            ],
+            "summary": "孙祥在 PSV 与 Austria Wien 的欧洲阶段累计联赛出场 24 次，其中奥地利维也纳阶段为奥甲 19 场 2 球；若计入杯赛等各项赛事，奥地利阶段为 27 场 3 球，并随队获得 2008/09 奥地利杯冠军。这段经历不是 PSV 之后的附注，而是他欧洲比赛体量的主体。",
             "notes": [
-              "PSV 阶段虽时间较短，但历史辨识度很高，长期被视作中国球员进入欧冠主流俱乐部体系的标志节点。",
-              "转往奥地利维也纳后获得更多联赛出场，使这段留洋不只是短期曝光。",
-              "这条记录补上了中国成熟边后卫在欧洲非五大顶级联赛的可核样本。"
+              "PSV 阶段荷甲 5 场；欧冠淘汰赛经历单独保留历史意义，但不并入联赛 24 场的数字。",
+              "奥地利维也纳阶段奥甲 19 场 2 球，各项赛事 27 场 3 球，并获得 2008/09 奥地利杯冠军。",
+              "联赛出场、各项赛事出场和冠军荣誉分开表述，避免把 27 场误写成奥甲联赛场次。"
             ]
           },
           {
@@ -2446,11 +2452,404 @@
             "appearances": 15,
             "appearance_label": "土超+土甲+波兰联赛 15 场",
             "competitive_debut": true,
-            "summary": "吴少聪 2023 年加盟伊斯坦布尔巴萨克赛尔，成为首位在土耳其职业联赛注册并出场的中国球员；随后外租青年联合拿到 12 场土甲联赛，再短暂挂过波兰拉多米亚克路径，构成近年中国成年中卫最完整的一条土耳其方向留洋样本。",
+            "source_links": [
+              {
+                "label": "Wikipedia：吴少聪完整俱乐部记录",
+                "url": "https://en.wikipedia.org/wiki/Wu_Shaocong"
+              }
+            ],
+            "summary": "吴少聪 2023 年加盟伊斯坦布尔巴萨克赛尔，随后外租青年联合，再短暂进入波兰拉多米亚克。其海外联赛记录为土超 3 场、土甲 12 场，另有 3 场杯赛；波兰四个月因手续、伤病等因素 0 出场。这构成近年中国成年中卫较完整的一条土耳其方向留洋样本。",
             "notes": [
-              "维基可核 2023-2025 海外联赛出场为土超 3 场、土甲 12 场、波兰顶级联赛 0 场。",
+              "2023-2025 海外联赛出场为土超 3 场、土甲 12 场、波兰顶级联赛 0 场；另有 3 场杯赛。",
               "这条路径把葡超通道之外的土耳其职业链补进了中国近年留洋版图。",
+              "波兰阶段必须保留为已签约但正式比赛 0 出场，不能从履历中删除，也不能计成出场。",
               "2025-01-30 返回北京国安后，这段欧洲经历应归到历史样本而非当前留洋。"
+            ]
+          },
+          {
+            "id": "zhang-chengdong-portugal-germany-2009",
+            "name": "Zhang Chengdong",
+            "local_name": "张呈栋",
+            "bucket": "europe-other",
+            "league": "Liga Portugal / Portuguese lower divisions / 2. Bundesliga",
+            "club": "Mafra / União de Leiria / Beira-Mar / Eintracht Braunschweig",
+            "season": "2009-2014",
+            "history_year_range": "2009-2014",
+            "status": "verified",
+            "appearances": 52,
+            "appearance_label": "葡超 40 场 8 球 + 德乙 12 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "Wikipedia：张呈栋生涯数据",
+                "url": "https://en.wikipedia.org/wiki/Zhang_Chengdong"
+              },
+              {
+                "label": "搜狐：马夫拉对里斯本竞技帽子戏法",
+                "url": "https://sports.sohu.com/20100121/n269735248.shtml"
+              }
+            ],
+            "summary": "张呈栋在巴列卡诺之前已经沿马夫拉、莱里亚、贝拉马尔和布伦瑞克走出一条完整欧洲职业路径。葡超累计 40 场 8 球，随后在德乙出场 12 次；效力葡乙马夫拉时还曾在正式杯赛对里斯本竞技上演帽子戏法。",
+            "notes": [
+              "本条与巴列卡诺西甲记录拆开：西甲 1 场 9 分钟仍由 big-five checklist 独立统计。",
+              "52 场只汇总葡超 40 场与德乙 12 场；马夫拉的葡萄牙低级别联赛和杯赛出场没有混入该总数。",
+              "帽子戏法属于马夫拉对里斯本竞技的正式杯赛亮点，不写成葡超帽子戏法。"
+            ]
+          },
+          {
+            "id": "wang-gang-portugal-2009",
+            "name": "Wang Gang",
+            "local_name": "王刚",
+            "bucket": "europe-other",
+            "league": "Liga Portugal / Liga Portugal 2 / Portuguese lower divisions",
+            "club": "Chaves / Beira-Mar",
+            "season": "2009-2015",
+            "history_year_range": "2009-2015",
+            "status": "verified",
+            "appearances": 40,
+            "appearance_label": "葡超 14 场 1 球 + 葡萄牙二级联赛 26 场 4 球",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "Wikipedia：王刚葡萄牙履历",
+                "url": "https://en.wikipedia.org/wiki/Wang_Gang_(footballer)"
+              }
+            ],
+            "summary": "王刚在查维斯和贝拉马尔阶段先后进入葡萄牙第三级、第二级和顶级联赛。可量化的两级职业联赛记录为葡超 14 场 1 球、葡萄牙二级联赛 26 场 4 球，是其回国成为中超常客前最容易被忽略的一段。",
+            "notes": [
+              "40 场只汇总葡超和葡萄牙二级联赛，低级别阶段另行保留但不在缺少同口径数据时强行合计。",
+              "查维斯、贝拉马尔两个节点均属于正式注册和正式比赛，不是试训经历。"
+            ]
+          },
+          {
+            "id": "qu-shengqing-adelaide-2005",
+            "name": "Qu Shengqing",
+            "local_name": "曲圣卿",
+            "bucket": "oceania-other",
+            "league": "A-League Men",
+            "club": "Adelaide United",
+            "season": "2005-2007",
+            "history_year_range": "2005-2007",
+            "status": "verified",
+            "appearances": 28,
+            "appearance_label": "澳超 28 场 8 球",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "Adelaide United：United We Are Shengqing Qu",
+                "url": "https://adelaideunited.com.au/news/united-we-are-shengqing-qu/"
+              },
+              {
+                "label": "央视：曲圣卿阿德莱德联阶段回顾",
+                "url": "https://news.cctv.com/sports/football/integrate/20070414/100203.shtml"
+              }
+            ],
+            "summary": "曲圣卿在阿德莱德联累计完成 28 场澳超、打进 8 球。首届澳超即贡献 7 球，帮助球队获得常规赛冠军，并当选俱乐部年度最佳球员，是中国成熟前锋海外履历中被低估的成功样本。",
+            "notes": [
+              "首届澳超 7 球与整个阿德莱德联阶段 8 球分开表述。",
+              "常规赛冠军不等同于澳超总决赛冠军，荣誉名称按常规赛口径保留。"
+            ]
+          },
+          {
+            "id": "gao-leilei-multi-country-2007",
+            "name": "Gao Leilei",
+            "local_name": "高雷雷",
+            "bucket": "europe-other",
+            "league": "A-League Men / Veikkausliiga / Ykkönen / USL First Division / Spanish lower divisions",
+            "club": "New Zealand Knights / Wellington Phoenix / MyPa / KooTeePee / Minnesota Thunder / Spanish lower-division clubs",
+            "season": "2007-2019",
+            "history_year_range": "2007-2019",
+            "status": "verified",
+            "appearances": 14,
+            "appearance_label": "已核核心段：新西兰骑士 7 场 1 球 + 迈帕 7 场 2 球；其余阶段待同口径补全",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "Wellington Phoenix：Gao back to crusade for Phoenix",
+                "url": "https://wellingtonphoenix.com/news/gao-back-crusade-phoenix/"
+              },
+              {
+                "label": "China Daily：高雷雷 39 岁西班牙留洋",
+                "url": "https://www.chinadaily.com.cn/a/201908/22/WS5d5dfddaa310cf3e35567450.html"
+              }
+            ],
+            "summary": "高雷雷的海外足迹覆盖新西兰、澳大利亚联赛体系、芬兰、美国和西班牙低级别。核心可核段包括新西兰骑士 7 场 1 球、芬兰顶级联赛迈帕 7 场 2 球；他也是首位参加芬兰顶级联赛的中国球员，并在 39 岁时继续进入西班牙职业俱乐部体系。",
+            "notes": [
+              "14 场只汇总当前来源中同口径明确的两段核心联赛记录；惠灵顿凤凰、古迪比、明尼苏达和西班牙阶段不因统计未闭环而写成 0。",
+              "跨洲经历的重点是正式注册与比赛足迹，不能把晚年签约自动等同于获得西乙正式出场。",
+              "后续应优先从 A-League、芬兰足协和美国联赛档案补齐逐俱乐部正式场次。"
+            ]
+          },
+          {
+            "id": "zhang-shuo-persik-2010",
+            "name": "Zhang Shuo",
+            "local_name": "张烁",
+            "bucket": "asia-other",
+            "league": "Indonesia Super League",
+            "club": "Persik Kediri",
+            "season": "2010",
+            "history_year_range": "2010",
+            "status": "verified",
+            "appearances": 10,
+            "appearance_label": "印尼联赛 10 场 3 球",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "中文 Wikipedia：张烁留洋记录",
+                "url": "https://zh.wikipedia.org/zh-hans/%E5%BC%A0%E7%83%81"
+              }
+            ],
+            "summary": "张烁在失去中超稳定位置后主动转向亚洲周边联赛，为印尼佩西克出场 10 次、打进 3 球，首秀即梅开二度。其后续澳超经历另以大洋洲记录建档。",
+            "notes": [
+              "首秀梅开二度是印尼阶段亮点，不误写到澳超阶段。",
+              "与纽卡斯尔喷气机记录拆开，避免澳超被 asia-other bucket 误归类。"
+            ]
+          },
+          {
+            "id": "zhang-shuo-newcastle-jets-2010",
+            "name": "Zhang Shuo",
+            "local_name": "张烁",
+            "bucket": "oceania-other",
+            "league": "A-League Men",
+            "club": "Newcastle Jets",
+            "season": "2010-2011",
+            "history_year_range": "2010-2011",
+            "status": "verified",
+            "appearances": 8,
+            "appearance_label": "澳超 8 场 1 球",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "中文 Wikipedia：张烁留洋记录",
+                "url": "https://zh.wikipedia.org/zh-hans/%E5%BC%A0%E7%83%81"
+              }
+            ],
+            "summary": "张烁离开印尼佩西克后加盟纽卡斯尔喷气机，在澳超完成 8 场正式比赛并打进 1 球。这是其亚洲阶段之后单独的大洋洲顶级职业联赛记录。",
+            "notes": [
+              "澳超 8 场 1 球与印尼联赛 10 场 3 球分条建档。",
+              "两条记录合看可得张烁海外联赛 18 场 4 球，但页面洲际聚合不应直接合并。"
+            ]
+          },
+          {
+            "id": "chen-zhizhao-corinthians-2012",
+            "name": "Chen Zhizhao",
+            "local_name": "陈志钊",
+            "bucket": "americas-other",
+            "league": "Campeonato Brasileiro Série A / Campeonato Paulista",
+            "club": "Corinthians",
+            "season": "2012-2013",
+            "history_year_range": "2012-2013",
+            "status": "verified",
+            "appearances": 5,
+            "appearance_label": "巴甲 2 场 + 圣保罗州联赛 3 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "Corinthians：首位中国球员陈志钊回顾",
+                "url": "https://www.corinthians.com.br/noticias/primeiro-chines-da-historia-do-timao-zizao-completa-33-anos"
+              },
+              {
+                "label": "Wikipedia：陈志钊比赛数据",
+                "url": "https://en.wikipedia.org/wiki/Chen_Zhizhao"
+              }
+            ],
+            "summary": "陈志钊效力科林蒂安期间完成 2 场巴甲和 3 场圣保罗州联赛，共 5 场正式比赛；首次首发便送出助攻。俱乐部名气很大，但实际比赛体量应按 5 场而不是签约曝光度评价。",
+            "notes": [
+              "巴甲全国联赛与圣保罗州联赛分开列明，避免把 5 场全部写成巴甲。",
+              "科林蒂安官方将其作为俱乐部历史上首位中国球员回顾。"
+            ]
+          },
+          {
+            "id": "tan-long-north-america-2010",
+            "name": "Long Tan",
+            "local_name": "谭龙",
+            "bucket": "americas-other",
+            "league": "Major League Soccer / USL and North American lower divisions",
+            "club": "Vancouver Whitecaps / D.C. United / other United States clubs",
+            "season": "2009-2016",
+            "history_year_range": "2009-2016",
+            "status": "verified",
+            "appearances": 23,
+            "appearance_label": "MLS 23 场 2 球",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "Vancouver Whitecaps：Long Tan player profile",
+                "url": "https://www.whitecapsfc.com/players/long-tan/"
+              },
+              {
+                "label": "D.C. United：Long Tan acquired",
+                "url": "https://www.dcunited.com/news/long-tan-acquired"
+              }
+            ],
+            "summary": "谭龙在温哥华白浪、华盛顿联等北美球队效力，MLS 累计 23 场 2 球。他是首位签约 MLS、在 MLS 出场并进球的中国出生球员，回国后才逐渐成为中超和中国国家队熟脸。",
+            "notes": [
+              "23 场 2 球只统计 MLS；北美次级和低级别联赛经历保留在路径说明中，不与 MLS 混算。",
+              "历史表述限定为中国出生球员，避免与国籍、青训归属等不同定义混淆。"
+            ]
+          },
+          {
+            "id": "yu-hai-vitesse-2007",
+            "name": "Yu Hai",
+            "local_name": "于海",
+            "bucket": "europe-other",
+            "league": "Eredivisie",
+            "club": "Vitesse Arnhem",
+            "season": "2007-2008",
+            "history_year_range": "2007-2008",
+            "status": "verified",
+            "appearances": 10,
+            "appearance_label": "荷甲 10 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "Wikipedia：于海比赛数据",
+                "url": "https://en.wikipedia.org/wiki/Yu_Hai"
+              }
+            ],
+            "summary": "于海在 2007/08 赛季代表维特斯完成 10 场荷甲正式比赛。虽然没有进球且经历因伤病缩短，但这不是纯商业签约或只随队训练，而是一段获得实际轮换机会的一线队履历。",
+            "notes": [
+              "10 场均按荷甲一线队正式比赛统计，不含试训或青年队记录。",
+              "不使用“稳定主力”措辞，准确描述为获得轮换出场。"
+            ]
+          },
+          {
+            "id": "huang-bowen-jeonbuk-2011",
+            "name": "Huang Bowen",
+            "local_name": "黄博文",
+            "bucket": "asia-other",
+            "league": "K League / AFC Champions League",
+            "club": "Jeonbuk Hyundai Motors",
+            "season": "2011-2012",
+            "history_year_range": "2011-2012",
+            "status": "verified",
+            "appearances": 29,
+            "appearance_label": "K 联赛 29 场 3 球",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "中文 Wikipedia：黄博文留洋记录",
+                "url": "https://zh.wikipedia.org/zh-hans/%E9%BB%84%E5%8D%9A%E6%96%87"
+              }
+            ],
+            "summary": "黄博文加盟全北现代后完成 29 场 K 联赛、打进 3 球，2011 年随队获得 K 联赛冠军并打进亚冠决赛。按实际贡献衡量，这是中国成熟中场外出后迅速进入亚洲强队轮换的优秀案例。",
+            "notes": [
+              "29 场 3 球是 K 联赛口径，亚冠比赛不混入该数字。",
+              "2011 年荣誉为 K 联赛冠军；亚冠为亚军，不能写成亚冠冠军。"
+            ]
+          },
+          {
+            "id": "zhou-tong-auckland-city-2023",
+            "name": "Zhou Tong",
+            "local_name": "周通",
+            "bucket": "oceania-other",
+            "league": "New Zealand National League / OFC Champions League / FIFA Club World Cup",
+            "club": "Auckland City",
+            "season": "2023-2025",
+            "history_year_range": "2023-2025",
+            "status": "verified",
+            "appearances": 1,
+            "appearance_label": "2025 新版世俱杯首发 1 场；新西兰与大洋洲赛事出场待按官方档案汇总",
+            "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "新华社：周通 2025 世俱杯专访",
+                "url": "https://www.news.cn/sports/20250624/9a03a8d41841484ca53b2e66710d94ae/c.html"
+              }
+            ],
+            "summary": "周通 35 岁开启奥克兰城留洋，随队连续获得大洋洲冠军，并参加 2023 与 2025 年世俱杯。2025 年他成为新版 32 队世俱杯首位首发的中国球员，展示了成熟中超球员通过大洋洲冠军路径进入世界级赛事的罕见路线。",
+            "notes": [
+              "appearances 当前只写已由新华社报道明确支撑的 2025 新版世俱杯首发 1 场，不把赛事报名自动计为出场。",
+              "连续大洋洲冠军是俱乐部洲际荣誉；新西兰国内联赛和 OFC 逐场数据后续需从官方比赛档案补齐。",
+              "本条只确证截至 2025 世俱杯的阶段，不据此推断 2026 年仍为当前海外注册。"
+            ]
+          },
+          {
+            "id": "du-wei-celtic-2006",
+            "name": "Du Wei",
+            "local_name": "杜威",
+            "bucket": "europe-other",
+            "league": "Scottish Cup",
+            "club": "Celtic",
+            "season": "2005-2006",
+            "history_year_range": "2005-2006",
+            "status": "verified",
+            "appearances": 1,
+            "appearance_label": "苏格兰杯 1 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "The Celtic Wiki：Du Wei match record",
+                "url": "https://www.thecelticwiki.com/players/all-time-a-to-z-of-celtic-players/d/du-wei/"
+              }
+            ],
+            "summary": "杜威在凯尔特人只有 1 场正式比赛：苏格兰杯对克莱德首发，上半场结束便被换下。其苏超联赛出场为 0，因此必须把“效力凯尔特人”与“踢过苏超”区分开。",
+            "notes": [
+              "唯一正式比赛属于 Scottish Cup，不应计入苏超联赛出场。",
+              "有正式出场，所以不同于纯签约未登场；但比赛体量确实只有 1 场。"
+            ]
+          },
+          {
+            "id": "guo-tianyu-vizela-2022",
+            "name": "Guo Tianyu",
+            "local_name": "郭田雨",
+            "bucket": "europe-other",
+            "league": "Liga Portugal",
+            "club": "Vizela",
+            "season": "2021-2022",
+            "history_year_range": "2022",
+            "status": "verified",
+            "appearances": 3,
+            "appearance_label": "葡超 3 次替补出场，0 首发",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "体坛周报：郭田雨维泽拉赛季总结",
+                "url": "https://www.ttplus.cn/publish/app/data/2022/05/15/424363/os_news.html"
+              }
+            ],
+            "summary": "郭田雨租借维泽拉期间完成 3 次葡超替补出场，没有首发。它是一段真实的一线队顶级联赛经历，但比赛时间极短，不能用签约或报名放大实际贡献。",
+            "notes": [
+              "3 次均为替补登场，首发数为 0。",
+              "本条只记录正式联赛出场，不把未上场替补名单计入。"
+            ]
+          },
+          {
+            "id": "chen-binbin-toyama-2022",
+            "name": "Chen Binbin",
+            "local_name": "陈彬彬",
+            "bucket": "asia-other",
+            "league": "J3 League",
+            "club": "Kataller Toyama",
+            "season": "2022",
+            "history_year_range": "2022",
+            "status": "verified",
+            "appearances": 0,
+            "appearance_label": "J3 联赛 0 场，仅 1 次进入比赛名单",
+            "competitive_debut": false,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "直播吧：陈彬彬富山胜利赛季总结",
+                "url": "https://news.zhibo8.com/zuqiu/2022-11-20/637999b1d6f12.htm"
+              }
+            ],
+            "summary": "陈彬彬租借 J3 富山胜利期间联赛 0 出场，只进过 1 次比赛名单。严格说这是一段已落地的海外注册履历，但没有海外一线队正式比赛记录。",
+            "notes": [
+              "进入比赛名单不等于正式出场，因此 appearances 与 competitive_debut 分别保持 0 和 false。",
+              "本条用于建立“已签约未登场”边界，不把履历删除，也不把名单记录抬高成比赛记录。"
             ]
           },
           {
@@ -2542,6 +2941,12 @@
             "appearances": 13,
             "appearance_label": "瑞士超 13 场",
             "competitive_debut": true,
+            "source_links": [
+              {
+                "label": "Wikipedia：李磊草蜢比赛记录",
+                "url": "https://en.wikipedia.org/wiki/Li_Lei_(footballer)"
+              }
+            ],
             "summary": "李磊 2022 年冬季加盟苏黎世草蜢，是近年中国国家队成熟左后卫重返欧洲的一次短周期尝试；虽然只维持到 2023 年 2 月，但他仍留下 13 场瑞士超和 1 次助攻，构成成年国脚回流前的清晰欧洲样本。",
             "notes": [
               "Wikipedia 可核其草蜢阶段总计 14 次正式出场，其中联赛 13 场、杯赛 1 场。",
@@ -25170,7 +25575,7 @@
         },
         {
           "squad_number": 10,
-          "player": "Hao Haidong",
+          "player": "大炮",
           "position": "Forward",
           "club": "Dalian Shide",
           "appearances": 3,
@@ -25366,7 +25771,7 @@
           "role_note": "三场打满，连接 2002 世界杯与后续埃弗顿留洋样本。"
         },
         {
-          "player": "Hao Haidong",
+          "player": "大炮",
           "goals": 0,
           "assists": 0,
           "minutes": 238,
@@ -36030,12 +36435,12 @@
           "u12"
         ],
         "period": {
-          "start": "2016",
+          "start": "2015",
           "end": null,
           "precision": "year",
           "status": "current-reported"
         },
-        "profile_summary": "2016年进入石门五小持续带队，从低年级组队、日常训练到全国赛事形成校园梯队。公开报道强调其长期驻校训练和山区校园足球路径。",
+        "profile_summary": "2015年进入石门五小持续带队，从低年级组队、日常训练到全国赛事形成校园梯队。公开报道强调其长期驻校训练和山区校园足球路径。",
         "methodology_tags": [
           "校园足球",
           "低年龄启蒙",
@@ -36048,7 +36453,7 @@
             "label": "湖南体育网：用心耕耘校园足球，石门五小教练谢波打造学生军劲旅",
             "url": "https://tyj.hunan.gov.cn/tyj/xxgk/szdt/202505/t20250508_33665131.html",
             "checked_at": "2026-07-18",
-            "claim": "确认谢波的石门五小教练身份、长期带训和校园梯队建设。"
+            "claim": "确认谢波的石门五小教练身份、投身校园足球的时间线、长期带训和校园梯队建设。"
           },
           {
             "type": "state-media",
@@ -36187,7 +36592,7 @@
           "province": "辽宁",
           "city": "大连"
         },
-        "role": "足球总教练",
+        "role": "前足球总教练、持续返校指导",
         "age_bands": [
           "primary-school",
           "u12"
@@ -36196,9 +36601,9 @@
           "start": "1986",
           "end": null,
           "precision": "year",
-          "status": "current-reported"
+          "status": "former"
         },
-        "profile_summary": "1986年进入东北路小学任教并逐步组建教练团队，是该校长期校园足球和低年龄人才培养的代表教练。",
+        "profile_summary": "1986年进入东北路小学任教并逐步组建教练团队，是该校长期校园足球和低年龄人才培养的代表教练。2026年报道显示其已年逾古稀、仍不时返校指导，因此不再标为现任总教练。",
         "methodology_tags": [
           "校园足球",
           "低年龄启蒙",
@@ -36219,12 +36624,19 @@
             "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21879601/content.html",
             "checked_at": "2026-07-18",
             "claim": "确认柳忠云的足球总教练身份及长期带训实践。"
+          },
+          {
+            "type": "state-media",
+            "label": "人民网：东北路小学以足球育人，老教练仍不时返校指导",
+            "url": "https://ln.people.com.cn/BIG5/n2/2026/0119/c378322-41476081.html",
+            "checked_at": "2026-07-19",
+            "claim": "确认柳忠云年逾古稀后仍不时返校指导，据此将长期任职与当前指导角色分开。"
           }
         ],
         "verification": {
           "status": "verified",
           "last_checked": "2026-07-18",
-          "notes": "体育总局和2026年国家级媒体报道相互印证。"
+          "notes": "体育总局和2026年国家级媒体报道相互印证；结束年份未公开，故只将状态标为former，不猜测具体离任年份。"
         }
       },
       {
@@ -36313,7 +36725,7 @@
           "职业足校",
           "u13",
           "中青赛",
-          "压迫与拼抢"
+          "高强度比赛"
         ],
         "source_links": [
           {
@@ -36321,7 +36733,7 @@
             "label": "中国足协：中青赛U13决赛首回合恒大足校取胜",
             "url": "https://www.thecfa.cn/qingchaoliansai/20250908/36883.html",
             "checked_at": "2026-07-18",
-            "claim": "确认朱利伟为恒大足校U13主教练及其赛后训练侧重点。"
+            "claim": "确认朱利伟为恒大足校U13主教练，并记录其对该场拼抢和压迫表现的赛后评价。"
           },
           {
             "type": "official-school",
@@ -36352,7 +36764,7 @@
           "province": "北京",
           "city": "北京"
         },
-        "role": "足球队总教练、U17主教练",
+        "role": "足球队总教练、曾兼任U17主教练",
         "age_bands": [
           "u15",
           "u17",
@@ -36364,7 +36776,7 @@
           "precision": "year",
           "status": "current-reported"
         },
-        "profile_summary": "作为清华附中韩国教练团队负责人参与马约翰班足球队建设；学校2024年官方报道仍明确其为U17主教练，2025年中青赛报道继续确认其带队。",
+        "profile_summary": "作为清华附中韩国教练团队负责人参与马约翰班足球队建设；学校2024年官方报道明确其为U17主教练，2025年10月校方仍称其为足球主教练。",
         "methodology_tags": [
           "体教融合",
           "校园精英队",
@@ -36385,12 +36797,19 @@
             "url": "https://www.qhfz.edu.cn/info/1064/13437.htm",
             "checked_at": "2026-07-18",
             "claim": "确认其总教练身份、韩国教练团队和早期建队职责。"
+          },
+          {
+            "type": "official-school",
+            "label": "清华附中：2025-2026学年马约翰班工作大会",
+            "url": "https://www.qhfz.edu.cn/info/1061/21179.htm",
+            "checked_at": "2026-07-19",
+            "claim": "确认2025年10月金镇亨仍以清华附中足球主教练身份参会发言。"
           }
         ],
         "verification": {
           "status": "verified",
           "last_checked": "2026-07-18",
-          "notes": "学校官方2016、2024来源与2025足协赛事报道形成连续证据；韩文姓名拼写尚缺官方拉丁字母页。"
+          "notes": "学校官方2016、2024、2025来源形成连续证据；英文名为按中文姓名转写，尚缺官方拉丁字母页。"
         }
       },
       {
@@ -36408,7 +36827,7 @@
           "province": "跨地区",
           "city": "跨地区"
         },
-        "role": "创办人、选材者、比赛主教练",
+        "role": "创始人、项目教练、带队者",
         "age_bands": [
           "u9",
           "u12",
@@ -36420,7 +36839,7 @@
           "precision": "year",
           "status": "current-reported"
         },
-        "profile_summary": "2017年发起中国足球小将，以全国选拔、飞行集训和高质量比赛为主要形式。该项目不是固定注册俱乐部，董路的角色随批次在创办人、选材者、带队者和比赛主教练之间变化。",
+        "profile_summary": "2017年发起中国足球小将，以跨地区选拔、阶段集训和比赛为主要形式。它是跨地区民间青训与赛事项目，不能等同单一常规职业俱乐部梯队；董路的具体带队角色随批次变化。",
         "methodology_tags": [
           "民间项目",
           "全国选材",
@@ -36477,6 +36896,114 @@
         ]
       },
       {
+        "id": "cn-xu-liang-football-boys-2014",
+        "name": {
+          "zh": "徐亮",
+          "en": "Xu Liang",
+          "native": "徐亮"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "中国足球小将2014年龄段",
+          "short_name": "足球小将2014",
+          "type": "independent-project",
+          "province": "跨地区",
+          "city": "跨地区"
+        },
+        "role": "教练组成员、技术总监（2023年公开口径）",
+        "age_bands": [
+          "u9"
+        ],
+        "period": {
+          "start": "2023",
+          "end": "2023",
+          "precision": "snapshot",
+          "status": "former"
+        },
+        "profile_summary": "2023年9月公开报道确认徐亮是中国足球小将教练组成员；同年10月董路对外表示其担任2014年龄段技术总监。当前仅作为2023年项目快照，不外推为持续现任。",
+        "methodology_tags": [
+          "民间项目",
+          "退役球员转教练",
+          "技术总监",
+          "2014年龄段"
+        ],
+        "source_links": [
+          {
+            "type": "secondary-media",
+            "label": "PP体育：毛剑卿加盟中国足球小将教练组，搭档徐亮",
+            "url": "https://www.ppsport.com/article/news/2105689.html",
+            "checked_at": "2026-07-19",
+            "claim": "确认2023年9月徐亮为中国足球小将教练组成员。"
+          },
+          {
+            "type": "secondary-media",
+            "label": "直播吧：徐亮任中国足球小将2014队技术总监",
+            "url": "https://news.zhibo8.com/zuqiu/2023-10-13/6528eb1d8050enative.htm",
+            "checked_at": "2026-07-19",
+            "claim": "记录董路2023年10月对2014年龄段教练分工的公开表述。"
+          }
+        ],
+        "verification": {
+          "status": "mixed-source",
+          "last_checked": "2026-07-19",
+          "notes": "两条均为体育媒体转述项目创始人公开表述，未找到项目官网任命页；只确认2023年快照。"
+        }
+      },
+      {
+        "id": "cn-mao-jianqing-football-boys-2014",
+        "name": {
+          "zh": "毛剑卿",
+          "en": "Mao Jianqing",
+          "native": "毛剑卿"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "中国足球小将2014年龄段",
+          "short_name": "足球小将2014",
+          "type": "independent-project",
+          "province": "跨地区",
+          "city": "跨地区"
+        },
+        "role": "教练组成员、2014队主教练（2023年公开口径）",
+        "age_bands": [
+          "u9"
+        ],
+        "period": {
+          "start": "2023",
+          "end": "2023",
+          "precision": "snapshot",
+          "status": "former"
+        },
+        "profile_summary": "2023年9月加入中国足球小将教练组；同年10月董路对外表示其担任2014年龄段主教练。当前没有足够公开资料确认后续连续任期，因此只保留2023年快照。",
+        "methodology_tags": [
+          "民间项目",
+          "退役球员转教练",
+          "比赛带队",
+          "2014年龄段"
+        ],
+        "source_links": [
+          {
+            "type": "secondary-media",
+            "label": "PP体育：毛剑卿加盟中国足球小将教练组",
+            "url": "https://www.ppsport.com/article/news/2105689.html",
+            "checked_at": "2026-07-19",
+            "claim": "确认2023年9月毛剑卿加入中国足球小将教练组。"
+          },
+          {
+            "type": "secondary-media",
+            "label": "直播吧：毛剑卿任中国足球小将2014队主教练",
+            "url": "https://news.zhibo8.com/zuqiu/2023-10-13/6528eb1d8050enative.htm",
+            "checked_at": "2026-07-19",
+            "claim": "记录董路2023年10月对2014年龄段教练分工的公开表述。"
+          }
+        ],
+        "verification": {
+          "status": "mixed-source",
+          "last_checked": "2026-07-19",
+          "notes": "两条均为体育媒体转述项目创始人公开表述，未找到项目官网任命页；只确认2023年快照。"
+        }
+      },
+      {
         "id": "cn-yerbolati-nurlan-altay-u14",
         "name": {
           "zh": "叶尔波拉提·努尔兰",
@@ -36485,7 +37012,7 @@
         },
         "nationality": "China PR",
         "organization": {
-          "name": "阿勒泰地区业余体校U14代表队",
+          "name": "阿勒泰地区U14代表队（地区业余体校派送）",
           "short_name": "阿勒泰地区U14",
           "type": "sports-school",
           "province": "新疆",
@@ -36501,7 +37028,7 @@
           "precision": "snapshot",
           "status": "confirmed-2025"
         },
-        "profile_summary": "阿勒泰地区业余体校派送U14代表队教练。2025年2月带队以7场38球、全胜战绩获得第三届“火洲贺岁杯”全疆青少年足球邀请赛U14冠军，4名球员获得代表新疆足协参加全国锦标赛的机会。",
+        "profile_summary": "阿勒泰地区U14代表队教练。该队由阿勒泰地区业余体校派送，2025年2月以7场38球、全胜战绩获得第三届“火洲贺岁杯”全疆青少年足球邀请赛U14冠军，4名球员获得代表新疆足协参加全国锦标赛的机会。",
         "methodology_tags": [
           "地区体校",
           "新疆青训",
@@ -36520,7 +37047,7 @@
         "verification": {
           "status": "verified",
           "last_checked": "2026-07-18",
-          "notes": "地方党报原版第4版第145至149行可核。当前仅确认2025年2月赛事快照，不把用户口述的“叶教练”扩写为其他人，也不推断长期任期。"
+          "notes": "地方党报原版第4版可核。当前仅确认2025年2月赛事快照；报道没有说明其与地区业余体校的雇佣关系，英文名为按中文姓名转写，尚无官方拉丁拼写。"
         }
       },
       {
@@ -36636,7 +37163,7 @@
       },
       {
         "organization": "中国足球小将",
-        "need": "已拆2014批次董路实际比赛职责；继续核验2015、2016批次及具名助教，区分临时合作与长期训练。"
+        "need": "已拆2014批次董路实际比赛职责，并保留徐亮、毛剑卿2023年教练组快照；继续核验2015、2016批次及具名助教，区分临时合作与长期训练。"
       }
     ]
   },
@@ -38119,8 +38646,206 @@
   },
   "youth_development_systems": {
     "schema_version": 1,
-    "checked_at": "2026-07-19",
+    "checked_at": "2026-07-20",
     "systems": [
+      {
+        "id": "china-professional-youth",
+        "country": "China PR",
+        "name": {
+          "zh": "中国职业俱乐部梯队与青年联赛体系",
+          "en": "China professional-club reserve and youth competition system",
+          "native": "中国职业俱乐部梯队与青年联赛体系"
+        },
+        "summary": {
+          "zh": "中国职业足球历史上举办过中超、中甲预备队联赛，但当前全国赛事已不再统一使用“预备队联赛”名称。现行衔接主要由职业俱乐部U21联赛、部分俱乐部B队参加中乙，以及U19、U17、U15等年龄段赛事共同承担；U21队与成年B队必须分开理解。",
+          "en": "China previously operated reserve leagues linked to the top professional divisions, but the current national structure no longer uses one unified reserve-league competition. Development minutes are now spread across the professional-club U21 league, selected B teams in China League Two, and U19, U17 and U15 competitions. An age-limited U21 team is not automatically the same entity as a senior B team."
+        },
+        "registration_categories": [
+          {
+            "id": "china-professional-club-u21",
+            "age_band": "u21",
+            "label": {
+              "zh": "职业俱乐部U21梯队",
+              "en": "Professional-club U21 team",
+              "native": "职业俱乐部U21梯队"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "source_url": "https://www.thecfa.cn/lstz/20240403/34018.html"
+          },
+          {
+            "id": "china-professional-club-b-team",
+            "age_band": "senior-bridge",
+            "label": {
+              "zh": "职业俱乐部B队",
+              "en": "Professional-club B team",
+              "native": "职业俱乐部B队"
+            },
+            "organization_types": [
+              "professional-club"
+            ],
+            "source_url": "https://www.thecfa.cn/qttz/20250126/35554.html"
+          },
+          {
+            "id": "china-professional-club-youth",
+            "age_band": "u15-u19",
+            "label": {
+              "zh": "职业俱乐部青少年梯队",
+              "en": "Professional-club youth teams",
+              "native": "职业俱乐部青少年梯队"
+            },
+            "organization_types": [
+              "club-academy",
+              "football-school"
+            ],
+            "source_url": "https://www.thecfa.cn/qsn/20250411/35850.html"
+          }
+        ],
+        "competitions": [
+          {
+            "id": "china-former-reserve-league",
+            "age_band": "reserve",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "中超／中甲预备队联赛（历史制度）",
+              "en": "CSL / China League One reserve leagues (historical)",
+              "native": "中超／中甲预备队联赛"
+            },
+            "organization_types": [
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "历史上随职业一线队体系运行的预备队赛事。中国足协2019年底发布的2020赛季政策已明确取消中甲预备队联赛并改设U23赛事，因此该名称只作为历史节点保存，不能用于描述当前统一赛事。",
+              "en": "A historical reserve competition connected to the senior professional leagues. The CFA's policy for the 2020 season explicitly cancelled the China League One reserve league and proposed a U23 competition, so this node is retained as history rather than presented as the current national format."
+            },
+            "source_url": "https://www.thecfa.cn/lstz/20191231/28443.html"
+          },
+          {
+            "id": "china-professional-u21-league",
+            "age_band": "u21",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "中国足球职业俱乐部U21联赛",
+              "en": "China professional-club U21 league",
+              "native": "中国足球职业俱乐部U21联赛"
+            },
+            "organization_types": [
+              "club-academy",
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "面向职业俱乐部U21梯队的全国赛事。中国足协2024通知规定职业俱乐部可报名、中超俱乐部必须参赛；它以年龄段培养为核心，不等同于允许成年替补自由参赛的传统预备队联赛。",
+              "en": "A national competition for professional-club U21 teams. The CFA's 2024 notice opened entry to professional clubs and required Chinese Super League clubs to participate. Its age-band focus makes it different from a traditional unrestricted senior reserve league."
+            },
+            "annual_snapshot": {
+              "season": "2025",
+              "note": {
+                "zh": "2025赛季U21联赛冠军获得与中冠第四名参加附加赛、争取2026中乙准入资格的通道；该升级安排属于赛季快照，应按年度规程复核。",
+                "en": "The 2025 U21 champion entered a playoff against the fourth-placed CMCL side for a route into the 2026 China League Two admission process. This promotion mechanism is season-specific and must be rechecked annually."
+              }
+            },
+            "source_url": "https://www.thecfa.cn/lstz/20240403/34018.html"
+          },
+          {
+            "id": "china-b-teams-league-two",
+            "age_band": "senior-bridge",
+            "competition_type": "professional-bridge",
+            "name": {
+              "zh": "职业俱乐部B队参加中乙",
+              "en": "Professional-club B teams in China League Two",
+              "native": "职业俱乐部B队参加中乙"
+            },
+            "organization_types": [
+              "professional-club"
+            ],
+            "stable_structure": {
+              "zh": "部分职业俱乐部B队直接进入成年职业联赛第三级中乙，与独立中乙俱乐部比赛。这是成年金字塔中的二队通道，不是所有俱乐部统一参加的预备队联赛，也不能与U21联赛自动视为同一支队。",
+              "en": "Selected professional-club B teams compete in the senior third-tier China League Two alongside independent clubs. This is a B-team route inside the adult pyramid, not a reserve league entered by every club, and a B team should not automatically be treated as identical to its club's U21 team."
+            },
+            "annual_snapshot": {
+              "season": "2025",
+              "teams": 4,
+              "note": {
+                "zh": "中国足协公布的2025中乙名单包括山东泰山B队、上海海港B队、武汉三镇B队和成都蓉城B队四队；俱乐部B队不参加2025足协杯。",
+                "en": "The CFA's 2025 China League Two list included Shandong Taishan B, Shanghai Port B, Wuhan Three Towns B and Chengdu Rongcheng B. Club B teams did not enter the 2025 CFA Cup."
+              }
+            },
+            "source_url": "https://www.thecfa.cn/qttz/20250126/35554.html"
+          },
+          {
+            "id": "china-u19-youth-league",
+            "age_band": "u19",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "中国青少年足球联赛暨全国青年足球联赛U19组",
+              "en": "Chinese Youth Football League / National Youth League U19",
+              "native": "中国青少年足球联赛暨中国足协全国青年足球联赛U19组"
+            },
+            "organization_types": [
+              "club-academy",
+              "football-school"
+            ],
+            "stable_structure": {
+              "zh": "面向俱乐部青训梯队、社会青训机构等符合注册条件队伍的U19全国赛事，是高年龄段青年比赛环境，但不承担成年预备队的全部功能。",
+              "en": "A national U19 competition open to eligible registered club academies and other youth-development organizations. It provides an older-youth competition environment but does not perform every function of an adult reserve league."
+            },
+            "source_url": "https://www.thecfa.cn/qsn/20250411/35850.html"
+          },
+          {
+            "id": "china-professional-u17-u15",
+            "age_band": "u15-u17",
+            "competition_type": "club-league",
+            "name": {
+              "zh": "职业俱乐部U17、U15梯队赛事",
+              "en": "Professional-club U17 and U15 competitions",
+              "native": "职业俱乐部U17、U15梯队赛事"
+            },
+            "organization_types": [
+              "club-academy",
+              "football-school"
+            ],
+            "stable_structure": {
+              "zh": "职业俱乐部更低年龄段的全国梯队赛事。中国足协2024通知将U21、职业俱乐部U17和U15列为多级梯队赛事，形成U15/U17到U21、B队或一线队的分层路径。",
+              "en": "National competitions for younger professional-club age groups. The CFA's 2024 notice listed U21, professional-club U17 and U15 events as a multi-level ladder, creating distinct steps toward U21, B-team or first-team football."
+            },
+            "source_url": "https://www.thecfa.cn/lstz/20240403/34018.html"
+          }
+        ],
+        "source_links": [
+          {
+            "label": "CFA 2020 professional-league policy and reserve-league change",
+            "url": "https://www.thecfa.cn/lstz/20191231/28443.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2024 professional-club U21/U17/U15 competition notice",
+            "url": "https://www.thecfa.cn/lstz/20240403/34018.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2025 China League Two participant list",
+            "url": "https://www.thecfa.cn/qttz/20250126/35554.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2025 U19 youth-league registration notice",
+            "url": "https://www.thecfa.cn/qsn/20250411/35850.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2025 CMCL U21 promotion-playoff route",
+            "url": "https://www.thecfa.cn/yyxwzz/20250722/36715.html",
+            "checked_at": "2026-07-20"
+          },
+          {
+            "label": "CFA 2026 Cup confirmation that B teams remain outside the cup",
+            "url": "https://www.thecfa.cn/xinwenzixun/20260305/37379.html",
+            "checked_at": "2026-07-20"
+          }
+        ]
+      },
       {
         "id": "japan-mens-youth",
         "country": "Japan",
