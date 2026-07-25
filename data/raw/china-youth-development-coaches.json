@@ -1,7 +1,7 @@
 {
   "id": "china-youth-development-coaches",
-  "schema_version": 1,
-  "last_checked": "2026-07-20",
+  "schema_version": 2,
+  "last_checked": "2026-07-25",
   "scope": "中国境内长期从事男子青少年足球启蒙、梯队训练、校园足球或青训技术管理的具名教练样本。小学、体校、足校、职业俱乐部梯队、独立基地和民间项目分别标注；不与成年一线队或国字号主教练统计混算。",
   "coverage_status": "expanded-partial",
   "role_policy": {
@@ -20,6 +20,121 @@
     ]
   },
   "coaches": [
+    {
+      "id": "cn-wang-xiaolong-foundation-phase",
+      "story_id": "wang-xiaolong-player-to-coach",
+      "name": {
+        "zh": "王晓龙",
+        "en": "Wang Xiaolong",
+        "native": "王晓龙"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "王晓龙低龄青训实践",
+        "short_name": "王晓龙青训",
+        "type": "independent-project",
+        "province": "跨地区",
+        "city": "北京 / 西班牙"
+      },
+      "role": "退役职业球员、低龄青训教练",
+      "age_bands": [
+        "foundation-phase",
+        "u9"
+      ],
+      "period": {
+        "start": "2022",
+        "end": null,
+        "precision": "year",
+        "status": "current-reported"
+      },
+      "profile_summary": "1986年出生的前职业边前卫。本人自述2022年4月从6岁零基础儿童开始带训，坚持每周四练，并组织五人制、八人制及海外交流。公开来源不足以稳定确认其当前机构法定名称和教练证等级，因此不作推断。",
+      "methodology_tags": [
+        "退役球员转教练",
+        "低年龄启蒙",
+        "多人制比赛",
+        "海外交流"
+      ],
+      "source_links": [
+        {
+          "type": "self-published",
+          "label": "王晓龙：退役后因自己的孩子扎根青训",
+          "url": "https://www.sohu.com/a/824959041_362070",
+          "checked_at": "2026-07-25",
+          "claim": "转载本人公开自述，确认2022年开始带训、每周四练、比赛形式及日本和东南亚交流。"
+        },
+        {
+          "type": "state-media",
+          "label": "人民网：王晓龙加盟天津权健",
+          "url": "https://sports.people.com.cn/quanjianfc/n1/2017/0303/c410953-29121843.html",
+          "checked_at": "2026-07-25",
+          "claim": "确认本条为1986年出生、出自鲁能青训并效力多支中超球队的王晓龙，避免与同名球员混淆。"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "last_checked": "2026-07-25",
+        "notes": "人物、职业背景及2022年起实际带训可核；当前机构名称、证书等级和西班牙长期球队归属未获得直接官方来源，故不写入确定事实。"
+      }
+    },
+    {
+      "id": "cn-sun-jihai-haiqiu",
+      "story_id": "sun-jihai-player-to-coach",
+      "name": {
+        "zh": "孙继海",
+        "en": "Sun Jihai",
+        "native": "孙继海"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "大连市嗨球足球俱乐部精英梯队",
+        "short_name": "嗨球少年",
+        "type": "independent-project",
+        "province": "辽宁",
+        "city": "大连"
+      },
+      "role": "项目发起人、青训教练",
+      "age_bands": [
+        "u9",
+        "u12",
+        "u16",
+        "u18"
+      ],
+      "period": {
+        "start": "2023",
+        "end": null,
+        "precision": "year",
+        "status": "current-verified"
+      },
+      "profile_summary": "退役后回到大连推进长期青训。金普新区官方项目覆盖8至18岁完整周期；中国足球发展基金会2026年报道确认孙继海团队的精英梯队由大连市嗨球足球俱乐部承载，并获得公益项目支持。",
+      "methodology_tags": [
+        "退役球员转教练",
+        "十年培养周期",
+        "精英梯队",
+        "数据辅助",
+        "公益青训"
+      ],
+      "source_links": [
+        {
+          "type": "government",
+          "label": "大连金普新区：孙继海青少年足球项目",
+          "url": "https://dljp.gov.cn/hd/005001/20240122/c6277e67-3842-4a05-b466-4871d8d4179d.html",
+          "checked_at": "2026-07-25",
+          "claim": "确认项目覆盖8至18岁、十年培养周期、全国选拔和数据管理框架。"
+        },
+        {
+          "type": "official-foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+          "checked_at": "2026-07-25",
+          "claim": "确认孙继海团队持续训练、大连嗨球精英梯队及2025年起的基金会公益支持。"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "last_checked": "2026-07-25",
+        "notes": "政府与基金会来源确认项目和实际青训工作。起始年份按2023年官方合作节点记录，不向前推断未公开的组织任期。"
+      }
+    },
     {
       "id": "cn-xie-bo-shimen-5",
       "name": {
@@ -185,6 +300,7 @@
     },
     {
       "id": "cn-liu-zhongyun-dongbeilu-primary",
+      "story_id": "dalian-dongbeilu-primary-football",
       "name": {
         "zh": "柳忠云",
         "en": "Liu Zhongyun",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20",
+  "generated_at": "2026-07-25",
   "stats": {
     "player_count": 459,
     "country_count": 8,
@@ -3230,6 +3230,7 @@
           },
           {
             "id": "sun-jihai-manchester-city-2002",
+            "story_id": "sun-jihai-player-to-coach",
             "name": "Sun Jihai",
             "local_name": "孙继海",
             "bucket": "big-five",
@@ -16499,6 +16500,7 @@
         },
         {
           "id": "olympic-stars-germany-王晓龙",
+          "story_id": "wang-xiaolong-player-to-coach",
           "name": "Wang Xiaolong",
           "local_name": "王晓龙",
           "role": "球员",
@@ -40058,8 +40060,8 @@
   },
   "china_youth_development_coaches": {
     "id": "china-youth-development-coaches",
-    "schema_version": 1,
-    "last_checked": "2026-07-20",
+    "schema_version": 2,
+    "last_checked": "2026-07-25",
     "scope": "中国境内长期从事男子青少年足球启蒙、梯队训练、校园足球或青训技术管理的具名教练样本。小学、体校、足校、职业俱乐部梯队、独立基地和民间项目分别标注；不与成年一线队或国字号主教练统计混算。",
     "coverage_status": "expanded-partial",
     "role_policy": {
@@ -40078,6 +40080,121 @@
       ]
     },
     "coaches": [
+      {
+        "id": "cn-wang-xiaolong-foundation-phase",
+        "story_id": "wang-xiaolong-player-to-coach",
+        "name": {
+          "zh": "王晓龙",
+          "en": "Wang Xiaolong",
+          "native": "王晓龙"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "王晓龙低龄青训实践",
+          "short_name": "王晓龙青训",
+          "type": "independent-project",
+          "province": "跨地区",
+          "city": "北京 / 西班牙"
+        },
+        "role": "退役职业球员、低龄青训教练",
+        "age_bands": [
+          "foundation-phase",
+          "u9"
+        ],
+        "period": {
+          "start": "2022",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "1986年出生的前职业边前卫。本人自述2022年4月从6岁零基础儿童开始带训，坚持每周四练，并组织五人制、八人制及海外交流。公开来源不足以稳定确认其当前机构法定名称和教练证等级，因此不作推断。",
+        "methodology_tags": [
+          "退役球员转教练",
+          "低年龄启蒙",
+          "多人制比赛",
+          "海外交流"
+        ],
+        "source_links": [
+          {
+            "type": "self-published",
+            "label": "王晓龙：退役后因自己的孩子扎根青训",
+            "url": "https://www.sohu.com/a/824959041_362070",
+            "checked_at": "2026-07-25",
+            "claim": "转载本人公开自述，确认2022年开始带训、每周四练、比赛形式及日本和东南亚交流。"
+          },
+          {
+            "type": "state-media",
+            "label": "人民网：王晓龙加盟天津权健",
+            "url": "https://sports.people.com.cn/quanjianfc/n1/2017/0303/c410953-29121843.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认本条为1986年出生、出自鲁能青训并效力多支中超球队的王晓龙，避免与同名球员混淆。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-25",
+          "notes": "人物、职业背景及2022年起实际带训可核；当前机构名称、证书等级和西班牙长期球队归属未获得直接官方来源，故不写入确定事实。"
+        }
+      },
+      {
+        "id": "cn-sun-jihai-haiqiu",
+        "story_id": "sun-jihai-player-to-coach",
+        "name": {
+          "zh": "孙继海",
+          "en": "Sun Jihai",
+          "native": "孙继海"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "大连市嗨球足球俱乐部精英梯队",
+          "short_name": "嗨球少年",
+          "type": "independent-project",
+          "province": "辽宁",
+          "city": "大连"
+        },
+        "role": "项目发起人、青训教练",
+        "age_bands": [
+          "u9",
+          "u12",
+          "u16",
+          "u18"
+        ],
+        "period": {
+          "start": "2023",
+          "end": null,
+          "precision": "year",
+          "status": "current-verified"
+        },
+        "profile_summary": "退役后回到大连推进长期青训。金普新区官方项目覆盖8至18岁完整周期；中国足球发展基金会2026年报道确认孙继海团队的精英梯队由大连市嗨球足球俱乐部承载，并获得公益项目支持。",
+        "methodology_tags": [
+          "退役球员转教练",
+          "十年培养周期",
+          "精英梯队",
+          "数据辅助",
+          "公益青训"
+        ],
+        "source_links": [
+          {
+            "type": "government",
+            "label": "大连金普新区：孙继海青少年足球项目",
+            "url": "https://dljp.gov.cn/hd/005001/20240122/c6277e67-3842-4a05-b466-4871d8d4179d.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认项目覆盖8至18岁、十年培养周期、全国选拔和数据管理框架。"
+          },
+          {
+            "type": "official-foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认孙继海团队持续训练、大连嗨球精英梯队及2025年起的基金会公益支持。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-07-25",
+          "notes": "政府与基金会来源确认项目和实际青训工作。起始年份按2023年官方合作节点记录，不向前推断未公开的组织任期。"
+        }
+      },
       {
         "id": "cn-xie-bo-shimen-5",
         "name": {
@@ -40243,6 +40360,7 @@
       },
       {
         "id": "cn-liu-zhongyun-dongbeilu-primary",
+        "story_id": "dalian-dongbeilu-primary-football",
         "name": {
           "zh": "柳忠云",
           "en": "Liu Zhongyun",
@@ -40875,6 +40993,610 @@
       {
         "organization": "中国足球小将",
         "need": "已拆2014批次董路实际比赛职责，并保留徐亮、毛剑卿2023年教练组快照；2015、2016批次目前只有球员或参赛线索，尚无可核的具名官方教练名单。继续区分临时合作与长期训练。"
+      }
+    ]
+  },
+  "football_stories": {
+    "schema_version": 1,
+    "last_checked": "2026-07-25",
+    "editorial_policy": {
+      "zh": "人物经历优先采用本人、俱乐部、政府、学校和公益机构来源。公开争议只记录可归因主张与回应，不把单方指控写成事实，也不对法律问题作结论。",
+      "en": "Career facts prioritize first-party, club, government, school and foundation sources. Public disputes are recorded as attributed claims and responses, never as established facts or legal findings."
+    },
+    "stories": [
+      {
+        "id": "wang-xiaolong-player-to-coach",
+        "kind": "person",
+        "title": {
+          "zh": "王晓龙：从职业边路球员到低龄青训教练",
+          "en": "Wang Xiaolong: from professional winger to foundation-phase coach"
+        },
+        "summary": {
+          "zh": "1986年出生的王晓龙出自鲁能青训，是2004年“08奥运之星”首批赴德成员，成年后效力鲁能、北京国安、广州富力、天津权健和成都兴城。退役后，他从陪伴自己的孩子踢球开始转入低龄青训，并持续公开讨论多人制比赛、长期培养和西班牙青训环境。",
+          "en": "Born in 1986, Wang Xiaolong developed at Shandong Luneng, joined the first 2004 Olympic Stars group in Germany and later played for Luneng, Beijing Guoan, Guangzhou R&F, Tianjin Quanjian and Chengdu Xingcheng. After retiring, coaching his own child drew him into foundation-phase development and public discussion of game formats, long-term training and Spain's youth environment."
+        },
+        "checked_at": "2026-07-25",
+        "related_entities": [
+          {
+            "type": "coach",
+            "id": "cn-wang-xiaolong-foundation-phase",
+            "label": "王晓龙"
+          },
+          {
+            "type": "dossier",
+            "id": "olympic-stars-germany",
+            "label": "“08奥运之星”赴德国项目"
+          },
+          {
+            "type": "dossier-person",
+            "id": "olympic-stars-germany-王晓龙",
+            "label": "2004年首批赴德成员王晓龙"
+          },
+          {
+            "type": "dossier",
+            "id": "donglu-football-boys",
+            "label": "中国足球小将"
+          }
+        ],
+        "identity_note": {
+          "zh": "本篇对象为1986年3月11日出生、司职边前卫的王晓龙；不是1979年出生的同名前职业后卫，也不是2004年赴德名单中的王啸龙。",
+          "en": "This story concerns the winger born on 11 March 1986, not the retired defender of the same name born in 1979 or Wang Xiaolong (王啸龙) from the same 2004 travel roster."
+        },
+        "key_facts": [
+          {
+            "label": {
+              "zh": "青训起点",
+              "en": "Development"
+            },
+            "value": {
+              "zh": "山东鲁能青训；18岁进入一线队",
+              "en": "Shandong Luneng academy; promoted to the first team at 18"
+            }
+          },
+          {
+            "label": {
+              "zh": "职业位置",
+              "en": "Position"
+            },
+            "value": {
+              "zh": "边前卫、边路攻击手",
+              "en": "Winger / wide midfielder"
+            }
+          },
+          {
+            "label": {
+              "zh": "青训转型",
+              "en": "Coaching transition"
+            },
+            "value": {
+              "zh": "2022年4月起从6岁零基础儿童开始带训",
+              "en": "Started coaching six-year-old beginners in April 2022"
+            }
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2004",
+            "label": {
+              "zh": "进入鲁能一线队并入选赴德计划",
+              "en": "Luneng first team and Germany programme"
+            },
+            "detail": {
+              "zh": "18岁进入山东鲁能一线队，同时出现在“08奥运之星”首批27人赴德名单中。赴德经历属于项目制培训，不等同于德国职业俱乐部注册。",
+              "en": "At 18 he entered Shandong Luneng's first team and appeared in the first 27-player Olympic Stars group sent to Germany. This was programme-based training, not registration with a German professional club."
+            }
+          },
+          {
+            "date": "2010",
+            "label": {
+              "zh": "加盟北京国安",
+              "en": "Joined Beijing Guoan"
+            },
+            "detail": {
+              "zh": "从鲁能回到家乡北京，职业高光期主要以速度、盘带和边路突破见长。",
+              "en": "He returned from Luneng to his home city, with pace, dribbling and wide attacking play defining his best-known spell."
+            }
+          },
+          {
+            "date": "2014-2020",
+            "label": {
+              "zh": "富力、权健与成都阶段",
+              "en": "R&F, Quanjian and Chengdu"
+            },
+            "detail": {
+              "zh": "先后效力广州富力、天津权健和成都兴城，完成从中超主力竞争到职业生涯后段的过渡。",
+              "en": "Spells with Guangzhou R&F, Tianjin Quanjian and Chengdu Xingcheng carried him from top-flight competition into the closing phase of his playing career."
+            }
+          },
+          {
+            "date": "2022-04",
+            "label": {
+              "zh": "从自己的孩子开始做青训",
+              "en": "Began coaching through his own child"
+            },
+            "detail": {
+              "zh": "王晓龙自述从一批6岁零基础孩子带起，坚持每周四练；其公开总结强调五人制与八人制结合、增加孩子理解比赛的机会。",
+              "en": "Wang said he began with six-year-old beginners and trained four times a week, combining five- and eight-a-side football to deepen game understanding."
+            }
+          },
+          {
+            "date": "2024",
+            "label": {
+              "zh": "海外交流与西班牙观察",
+              "en": "Overseas exchanges and Spain"
+            },
+            "detail": {
+              "zh": "其队伍曾参加东南亚低龄赛事并赴日本交流；其后家庭移居西班牙，他继续以家长和教练双重视角观察当地低龄足球。",
+              "en": "His group played a youth event in Southeast Asia and trained in Japan. After his family moved to Spain, he continued observing local foundation football as both parent and coach."
+            }
+          }
+        ],
+        "sections": [
+          {
+            "title": {
+              "zh": "职业经历怎样进入教练故事",
+              "en": "How the playing career informs the coaching story"
+            },
+            "body": {
+              "zh": "王晓龙的职业标签是边路技术型球员，但本站不据此推断其青训方法必然优于其他路径。可确认的是，他把职业比赛经验、自己孩子的成长和海外低龄比赛观察结合起来，形成了对多人制比赛和长期技术培养的公开主张。",
+              "en": "Wang was known as a technical wide player, but that does not by itself establish the quality of a coaching method. What can be documented is how he combines professional experience, his child's development and observations of overseas youth games when arguing for larger-sided formats and long-term technical learning."
+            }
+          }
+        ],
+        "public_disputes": [
+          {
+            "id": "wang-dong-youth-methodology-2024",
+            "date": "2024-11-13",
+            "topic": {
+              "zh": "低龄比赛形式与培养理念",
+              "en": "Foundation-phase game formats and development philosophy"
+            },
+            "claim_status": "contested-public-exchange",
+            "response_status": "response-documented",
+            "statements": [
+              {
+                "speaker": "王晓龙",
+                "position": "claim",
+                "paraphrase": {
+                  "zh": "王晓龙主张低龄球员应逐步接触更多人的比赛形式，以理解空间、位置和协作，并以西班牙青训观察作为讨论背景。",
+                  "en": "Wang argued that young players should progressively play larger-sided games to learn space, positioning and cooperation, drawing on observations from Spain."
+                },
+                "source_url": "https://www.sohu.com/a/824959041_362070"
+              },
+              {
+                "speaker": "董路",
+                "position": "response",
+                "paraphrase": {
+                  "zh": "董路公开回应时把分歧放到选材和比赛结果上，提出王晓龙可以组织国内选拔并赴西班牙比赛，以实际表现检验理念。",
+                  "en": "Dong Lu answered by shifting the disagreement toward selection and match results, suggesting Wang organize a domestic selection and test the approach in Spain."
+                },
+                "source_url": "https://news.zhibo8.com/zuqiu/2024-11-13/67338634284dfnative.htm"
+              }
+            ],
+            "editorial_note": {
+              "zh": "这是青训观点交锋，不据比赛胜负判定哪套培养方法长期有效。",
+              "en": "This is a public methodological disagreement; individual match results do not establish long-term development effectiveness."
+            }
+          },
+          {
+            "id": "wang-dong-spain-escalation-2025",
+            "date": "2025-12-14",
+            "topic": {
+              "zh": "西班牙赛事、未成年人曝光与双方冲突升级",
+              "en": "Spain tournament, exposure of minors and escalation"
+            },
+            "claim_status": "single-party-claims",
+            "response_status": "partial-response-reported",
+            "statements": [
+              {
+                "speaker": "王晓龙",
+                "position": "claim",
+                "paraphrase": {
+                  "zh": "王晓龙在本人长文中称，自己此前的西班牙青训观察被董路在直播中点名批评，并表示担忧孩子在赛事直播和舆论冲突中被过度曝光。",
+                  "en": "In a first-party post, Wang said Dong had singled out his observations of Spanish youth football in a livestream and expressed concern about children being overexposed amid tournament coverage and online conflict."
+                },
+                "source_url": "https://www.weibo.com/1721004607/QinYZrR5q"
+              }
+            ],
+            "editorial_note": {
+              "zh": "关于“网暴”、动机和具体直播片段的描述来自王晓龙一方；在获得完整原始视频和可核对回应前，不写成已证实事件。",
+              "en": "Descriptions of online abuse, motive and particular livestream segments come from Wang's account. They remain attributed claims until full primary video and a verifiable response are available."
+            }
+          },
+          {
+            "id": "wang-dong-commercial-compliance-2026",
+            "date": "2026-01-11",
+            "topic": {
+              "zh": "商业模式、长期培养与直播合规质疑",
+              "en": "Commercial model, long-term development and livestream compliance"
+            },
+            "claim_status": "allegations-not-adjudicated",
+            "response_status": "disputed-in-public",
+            "statements": [
+              {
+                "speaker": "王晓龙",
+                "position": "claim",
+                "paraphrase": {
+                  "zh": "王晓龙连续发文质疑足球小将的固定训练、长期规划、家长成本与内容商业化之间的关系；这些均属于其公开批评。",
+                  "en": "Wang published repeated criticism of the relationship between regular training, long-term planning, family costs and content monetisation in the Football Boys model."
+                },
+                "source_url": "https://sports.sina.cn/2026-01-11/detail-inhfxrmr7735530.d.html"
+              },
+              {
+                "speaker": "王晓龙",
+                "position": "clarification",
+                "paraphrase": {
+                  "zh": "后续媒体报道记录了王晓龙否认部分“举报导致比赛或直播中断”的网络传闻。本站不确认举报人身份，也不判断相关活动是否合法。",
+                  "en": "Later reporting records Wang denying online rumours that his reports caused matches or livestreams to be interrupted. This site neither identifies a complainant nor determines legality."
+                },
+                "source_url": "https://www.sohu.com/a/1041713398_121189557"
+              }
+            ],
+            "editorial_note": {
+              "zh": "对违法、欺骗、牟利或举报行为的说法没有在本站掌握的来源中获得生效裁判或主管机关结论，因此统一保留为有归因的争议主张。",
+              "en": "The available sources provide no final court or regulator finding on claims of illegality, deception, profiteering or reporting. They remain attributed and disputed."
+            }
+          }
+        ],
+        "source_links": [
+          {
+            "type": "club-report",
+            "label": "人民网：王晓龙加盟天津权健",
+            "url": "https://sports.people.com.cn/quanjianfc/n1/2017/0303/c410953-29121843.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认鲁能青训、成年俱乐部履历和国字号经历。"
+          },
+          {
+            "type": "first-party",
+            "label": "王晓龙：退役后因自己的孩子扎根青训",
+            "url": "https://www.sohu.com/a/824959041_362070",
+            "checked_at": "2026-07-25",
+            "claim": "转载本人青训自述，确认2022年开始带训、训练频率、比赛形式和海外交流。"
+          },
+          {
+            "type": "first-party",
+            "label": "王晓龙本人：说明与董路冲突的个人版本",
+            "url": "https://www.weibo.com/1721004607/QinYZrR5q",
+            "checked_at": "2026-07-25",
+            "claim": "只用于记录王晓龙本人的说法，不用于证明其对他人行为的指控。"
+          },
+          {
+            "type": "secondary-media",
+            "label": "直播吧：董路回应王晓龙青训理念",
+            "url": "https://news.zhibo8.com/zuqiu/2024-11-13/67338634284dfnative.htm",
+            "checked_at": "2026-07-25",
+            "claim": "记录董路公开回应的主要观点。"
+          }
+        ]
+      },
+      {
+        "id": "sun-jihai-player-to-coach",
+        "kind": "person",
+        "title": {
+          "zh": "孙继海：从英超长期样本到大连青训",
+          "en": "Sun Jihai: from Premier League mainstay to Dalian youth development"
+        },
+        "summary": {
+          "zh": "孙继海是中国球员长期立足英超的代表，也在退役后回到大连建设覆盖8至18岁的青训项目。其小学经历属于大连实验小学线，不是东北路小学校友；两所学校共同构成大连校园足球传统的一部分。",
+          "en": "Sun Jihai remains China's benchmark for sustained Premier League participation and later returned to Dalian to build an 8-to-18 development pathway. He attended Dalian Experimental Primary School, not Dongbeilu Primary School; both schools belong to the wider Dalian school-football ecosystem."
+        },
+        "checked_at": "2026-07-25",
+        "related_entities": [
+          {
+            "type": "coach",
+            "id": "cn-sun-jihai-haiqiu",
+            "label": "孙继海"
+          },
+          {
+            "type": "overseas-record",
+            "id": "sun-jihai-manchester-city-2002",
+            "label": "曼城2002—2008"
+          },
+          {
+            "type": "story",
+            "id": "dalian-dongbeilu-primary-football",
+            "label": "东北路小学与大连校园足球"
+          }
+        ],
+        "identity_note": {
+          "zh": "多项报道将大连实验小学列为孙继海母校。本站明确不把他列入东北路小学校友。",
+          "en": "Multiple reports identify Dalian Experimental Primary School as Sun's school. He is explicitly excluded from Dongbeilu Primary School's alumni list here."
+        },
+        "key_facts": [
+          {
+            "label": {
+              "zh": "英超",
+              "en": "Premier League"
+            },
+            "value": {
+              "zh": "曼城123场、3球",
+              "en": "123 appearances and 3 goals for Manchester City"
+            }
+          },
+          {
+            "label": {
+              "zh": "小学",
+              "en": "Primary school"
+            },
+            "value": {
+              "zh": "大连实验小学",
+              "en": "Dalian Experimental Primary School"
+            }
+          },
+          {
+            "label": {
+              "zh": "当前青训",
+              "en": "Current youth work"
+            },
+            "value": {
+              "zh": "大连嗨球青训精英梯队",
+              "en": "Dalian Haiqiu elite youth pathway"
+            }
+          }
+        ],
+        "timeline": [
+          {
+            "date": "1998",
+            "label": {
+              "zh": "首次登陆英格兰",
+              "en": "First move to England"
+            },
+            "detail": {
+              "zh": "与范志毅加盟水晶宫，成为中国球员早期进入英格兰职业体系的重要样本。",
+              "en": "He joined Crystal Palace alongside Fan Zhiyi, becoming an early Chinese entrant into the English professional system."
+            }
+          },
+          {
+            "date": "2002-2008",
+            "label": {
+              "zh": "长期效力曼城",
+              "en": "Sustained Manchester City spell"
+            },
+            "detail": {
+              "zh": "在曼城完成123场英超并攻入3球，多位置适配和持续出场构成其留洋故事的核心。",
+              "en": "He made 123 Premier League appearances and scored three goals for Manchester City, with versatility and continuity defining the spell."
+            }
+          },
+          {
+            "date": "2016",
+            "label": {
+              "zh": "退役与名人堂认可",
+              "en": "Retirement and Hall of Fame recognition"
+            },
+            "detail": {
+              "zh": "退役后入选英格兰国家足球博物馆名人堂，其英中足球连接角色延续到球员生涯之外。",
+              "en": "After retiring he entered the National Football Museum Hall of Fame, extending his role in England-China football links beyond playing."
+            }
+          },
+          {
+            "date": "2024",
+            "label": {
+              "zh": "金普新区长期青训项目",
+              "en": "Long-term Jinpu youth programme"
+            },
+            "detail": {
+              "zh": "金普新区官方介绍的项目面向全国选拔8至18岁球员，强调十年完整周期、数据管理和长期培养。",
+              "en": "Jinpu New Area described a national-selection project spanning ages eight to eighteen, with a ten-year pathway, data management and long-term development."
+            }
+          },
+          {
+            "date": "2025-2026",
+            "label": {
+              "zh": "公益支持与精英梯队",
+              "en": "Foundation support and elite squads"
+            },
+            "detail": {
+              "zh": "中国足球发展基金会把承载孙继海精英梯队的大连市嗨球足球俱乐部纳入社会足球青训质量提升行动计划。",
+              "en": "The China Football Development Foundation included Dalian Haiqiu, which hosts Sun's elite squads, in its social-youth-football quality programme."
+            }
+          }
+        ],
+        "sections": [
+          {
+            "title": {
+              "zh": "与东北路小学的正确关系",
+              "en": "The correct relationship with Dongbeilu Primary School"
+            },
+            "body": {
+              "zh": "孙继海和东北路小学都属于大连足球城市传统中的重要节点，但不是“球员—母校”关系。孙继海的小学线索指向实验小学；东北路小学的官方代表校友名单则包括贾秀全、董方卓、于汉超、王大雷等。",
+              "en": "Sun and Dongbeilu Primary School are both important parts of Dalian's football culture, but they are not linked as player and alma mater. Sun's school trail points to Experimental Primary School, while official Dongbeilu alumni examples include Jia Xiuquan, Dong Fangzhuo, Yu Hanchao and Wang Dalei."
+            }
+          }
+        ],
+        "public_disputes": [],
+        "source_links": [
+          {
+            "type": "government",
+            "label": "大连金普新区：孙继海青少年足球项目",
+            "url": "https://dljp.gov.cn/hd/005001/20240122/c6277e67-3842-4a05-b466-4871d8d4179d.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认8至18岁、十年周期和青少年足球形象大使等项目框架。"
+          },
+          {
+            "type": "foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认孙继海团队、嗨球俱乐部精英梯队及基金会公益支持。"
+          },
+          {
+            "type": "club-report",
+            "label": "河北华夏幸福：车世伟成长故事",
+            "url": "https://www.ttplus.cn/publish/app/data/2017/12/20/115973/os_news.html",
+            "checked_at": "2026-07-25",
+            "claim": "文中把实验小学列为孙继海和朱挺的母校，用于学校关系交叉核对。"
+          }
+        ]
+      },
+      {
+        "id": "dalian-dongbeilu-primary-football",
+        "kind": "institution",
+        "title": {
+          "zh": "东北路小学：大连校园足球的长期样本",
+          "en": "Dongbeilu Primary School: a long-running Dalian school-football pathway"
+        },
+        "summary": {
+          "zh": "东北路小学从1954年把足球纳入少先队活动，1984年开始系统推进青训，形成校园普及、低龄训练和向市级梯队及职业体系输送人才的长期路径。柳忠云自1986年进入学校，是这段历史的代表教练之一。",
+          "en": "Dongbeilu Primary School incorporated football into school activities in 1954 and began systematic youth development in 1984, building a pathway from participation and foundation coaching toward city squads and professional football. Liu Zhongyun, who joined in 1986, is one of its defining coaches."
+        },
+        "checked_at": "2026-07-25",
+        "related_entities": [
+          {
+            "type": "coach",
+            "id": "cn-liu-zhongyun-dongbeilu-primary",
+            "label": "柳忠云"
+          },
+          {
+            "type": "story",
+            "id": "sun-jihai-player-to-coach",
+            "label": "孙继海与大连青训"
+          }
+        ],
+        "identity_note": {
+          "zh": "东北路小学与大连实验小学是不同学校。孙继海属于实验小学线，不能因其大连籍身份或与东北路校友同场比赛而被列为东北路校友。",
+          "en": "Dongbeilu and Dalian Experimental are different schools. Sun Jihai belongs to the Experimental Primary School line and must not be listed as a Dongbeilu alumnus merely because he is from Dalian or played alongside its alumni."
+        },
+        "key_facts": [
+          {
+            "label": {
+              "zh": "校园足球起点",
+              "en": "School-football start"
+            },
+            "value": {
+              "zh": "1954年",
+              "en": "1954"
+            }
+          },
+          {
+            "label": {
+              "zh": "系统青训",
+              "en": "Systematic development"
+            },
+            "value": {
+              "zh": "1984年起",
+              "en": "Since 1984"
+            }
+          },
+          {
+            "label": {
+              "zh": "公开人才口径",
+              "en": "Reported output"
+            },
+            "value": {
+              "zh": "400多名甲级以上俱乐部球员、100多名各级国字号球员",
+              "en": "400+ players for top-tier-or-above clubs and 100+ national-team players across levels"
+            }
+          }
+        ],
+        "timeline": [
+          {
+            "date": "1954",
+            "label": {
+              "zh": "足球进入校园常规活动",
+              "en": "Football enters regular school activity"
+            },
+            "detail": {
+              "zh": "学校把足球纳入少先队活动，为长期校园传统奠定基础。",
+              "en": "Football became part of school youth activities, laying the foundation for a long-running tradition."
+            }
+          },
+          {
+            "date": "1984",
+            "label": {
+              "zh": "系统推进青训",
+              "en": "Systematic youth development begins"
+            },
+            "detail": {
+              "zh": "学校开始推进更系统的足球人才培养，并逐步形成面向市级梯队和职业体系的输送链。",
+              "en": "The school moved toward systematic player development and gradually built links to city squads and professional pathways."
+            }
+          },
+          {
+            "date": "1986",
+            "label": {
+              "zh": "柳忠云加入",
+              "en": "Liu Zhongyun joins"
+            },
+            "detail": {
+              "zh": "大连籍球员柳忠云进入学校任教，后来组建教练团队并长期负责低年龄训练。",
+              "en": "Former Dalian player Liu Zhongyun joined the school, later building a coaching team and leading foundation-age training."
+            }
+          },
+          {
+            "date": "2010",
+            "label": {
+              "zh": "人工草皮落成",
+              "en": "Artificial pitch installed"
+            },
+            "detail": {
+              "zh": "在国家体育总局资助下，学校从长期使用的土场地升级为人工草皮，为校园训练改善基础设施。",
+              "en": "Support from the General Administration of Sport helped replace the longstanding dirt surface with an artificial pitch."
+            }
+          },
+          {
+            "date": "2026",
+            "label": {
+              "zh": "纳入“一条龙”培养改革",
+              "en": "Integrated pathway reform"
+            },
+            "detail": {
+              "zh": "辽宁大连继续推动小学、初中、高中与专业训练衔接；年逾古稀的柳忠云仍不时返校指导。",
+              "en": "Dalian continued linking primary, middle and high schools with specialist training, while Liu, now over 70, still returned to advise."
+            }
+          }
+        ],
+        "sections": [
+          {
+            "title": {
+              "zh": "代表校友与统计边界",
+              "en": "Notable alumni and counting boundaries"
+            },
+            "body": {
+              "zh": "官方报道点名贾秀全、董方卓、于汉超、王大雷等从这里起步。400多名职业俱乐部球员和100多名国字号球员是学校公开累计口径，并非当前在役人数；本站不据该数字反推未具名校友。",
+              "en": "Official reporting names Jia Xiuquan, Dong Fangzhuo, Yu Hanchao and Wang Dalei among those who started here. The 400-plus professional-club and 100-plus national-team figures are cumulative school claims, not current active counts, and are not used to infer unnamed alumni."
+            }
+          },
+          {
+            "title": {
+              "zh": "大连不是只有一所足球小学",
+              "en": "Dalian's ecosystem extends beyond one school"
+            },
+            "body": {
+              "zh": "东北路小学的长期成果来自大连更大的校园与职业足球生态。实验小学等校同样有稳定传统，孙继海便属于实验小学线；今天孙继海的嗨球项目又构成社会青训与城市培养体系的新连接。",
+              "en": "Dongbeilu's record sits inside a broader Dalian school and professional ecosystem. Experimental Primary School has its own tradition and counts Sun Jihai among its alumni; Sun's Haiqiu project now adds a newer link between social youth development and the city's pathway."
+            }
+          }
+        ],
+        "notable_alumni": [
+          "贾秀全",
+          "董方卓",
+          "于汉超",
+          "王大雷"
+        ],
+        "public_disputes": [],
+        "source_links": [
+          {
+            "type": "government",
+            "label": "国家体育总局：东北路小学常耕不辍发展校园足球",
+            "url": "https://www.sport.gov.cn/n20001280/n20745751/n20767239/c21879601/content.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认柳忠云总教练身份、学校训练传统和2010年场地改善。"
+          },
+          {
+            "type": "government",
+            "label": "辽宁省教育厅：东北路小学推进足球青训42年",
+            "url": "https://jyt.ln.gov.cn/jyt/jyzx/zxlb/2026011910280640057/index.shtml",
+            "checked_at": "2026-07-25",
+            "claim": "确认1954、1984时间点、人才累计口径和代表校友。"
+          },
+          {
+            "type": "state-media",
+            "label": "人民网辽宁：东北路小学以足球育人",
+            "url": "https://ln.people.com.cn/BIG5/n2/2026/0119/c378322-41476081.html",
+            "checked_at": "2026-07-25",
+            "claim": "确认柳忠云年逾古稀仍返校指导及学校体教融合现状。"
+          }
+        ]
       }
     ]
   },

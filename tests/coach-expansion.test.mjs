@@ -42,7 +42,7 @@ test("keeps grassroots age-group and Football Boys batch scopes explicit", async
   const cuiPeng = data.coaches.find(({ id }) => id === "cn-cui-peng-shandong-u17");
   const dongLu = data.coaches.find(({ id }) => id === "cn-dong-lu-football-boys");
 
-  assert.equal(data.coaches.length, 14);
+  assert.equal(data.coaches.length, 16);
   assert.equal(data.coaches.filter(({ id }) => id === "cn-zhou-haibin-shandong-2007").length, 1);
   assert.ok(coachIds.has("cn-tang-xiaocheng-shandong-u15"));
   assert.ok(coachIds.has("jp-masaaki-nakamura-evergrande-2008"));

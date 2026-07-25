@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-07-18
+更新时间：2026-07-25
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -16,6 +16,7 @@
 | `data/raw/asian-coaches.json` | 五大联赛之外的亚洲主教练实体、任期、范围和官方来源。 | 是 |
 | `data/raw/china-youth-development-coaches.json` | 中国基层、校园、足校、职业梯队与民间项目的具名青训教练样本。 | 是 |
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
+| `data/raw/football-stories.json` | 职业球员转型、教练实践、校园机构与公开争议的来源化故事。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 中国、日韩与北欧青训体系、项目、竞赛关系和年度快照。 | 是 |
@@ -135,6 +136,12 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 | `source_label`、`source_url` | 当前状态的直接来源。 |
 
 专题名单是代表性产出档案，不等同于基地完整毕业生名册。当前去向无法可靠确认时使用 `needs-review`，不得沿用过期俱乐部冒充现状。
+
+## 足球故事
+
+`data/raw/football-stories.json` 为人物和机构提供可复用故事结构。`related_entities[]` 可引用教练、专题、专题人物、留洋记录或另一篇故事；页面只把引用用于导航，不改变原实体事实。
+
+`public_disputes[]` 必须包含日期、主题、`claim_status`、`response_status`、具名发言人的转述、原始链接和编辑边界。单方有关违法、牟利、举报或伤害的说法只能记录为有归因主张，除非存在生效裁判或主管机关结论。故事中的身份辨析属于强约束：孙继海就读大连实验小学，不得列为东北路小学校友；1986年出生的王晓龙不得与1979年同名球员或王啸龙混合。
 
 ## `tournament_participation`
 

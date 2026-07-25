@@ -107,6 +107,10 @@ const UI_COPY = {
     "page.predictions.description": "结合成年实力、青年比赛、职业转化与质量留洋分钟，研究 2030 至 2042 年亚洲球队世界杯晋级前景。",
     "page.coaches.title": "国内青训教练 | 青训球员追踪站",
     "page.coaches.description": "整理中国校园、足校、职业梯队、独立基地、地区体校与民间项目的具名青训教练样本。",
+    "page.stories.title": "足球故事 | 青训球员追踪站",
+    "page.stories.description": "查看职业球员、青训教练和校园足球机构的可追溯故事。",
+    "page.story-detail.title": "故事详情 | 青训球员追踪站",
+    "page.story-detail.description": "查看人物和机构故事的时间线、公开争议与来源边界。",
     "site.kicker": "青训追踪台",
     "site.brand": "青训球员追踪站",
     "nav.aria": "主导航",
@@ -117,6 +121,9 @@ const UI_COPY = {
     "nav.overseas": "留洋",
     "nav.pathways": "青训体系",
     "nav.coaches": "青训教练",
+    "nav.stories": "故事",
+    "home.quickLinks.storiesTitle": "足球故事",
+    "home.quickLinks.storiesText": "阅读球员转型、校园传统和公开争议的来源化时间线。",
     "nav.dataCenter": "数据中心",
     "nav.predictions": "世界杯预测",
     "header.language": "语言",
@@ -496,6 +503,43 @@ const UI_COPY = {
     "dossier.sources.primary": "主来源",
     "dossier.sources.supporting": "补充来源",
     "dossier.sources.checked": "专题核查至 {date}",
+    "stories.hero.eyebrow": "Football Stories",
+    "stories.hero.title": "足球故事",
+    "stories.hero.text": "把球员生涯、教练实践、校园传统和公开争议放回时间线，并保留事实边界与原始来源。",
+    "stories.coverage.eyebrow": "Coverage",
+    "stories.coverage.value": "{count} 个故事",
+    "stories.coverage.checked": "核查至 {date}",
+    "stories.list.eyebrow": "Profiles & Institutions",
+    "stories.list.title": "人物与机构故事",
+    "stories.card.kind.person": "人物",
+    "stories.card.kind.institution": "机构",
+    "stories.card.timeline": "{count} 个节点",
+    "stories.card.open": "查看完整故事",
+    "stories.breadcrumb.list": "足球故事",
+    "stories.breadcrumb.detail": "故事详情",
+    "stories.identity.eyebrow": "Identity",
+    "stories.identity.title": "人物与口径辨析",
+    "stories.timeline.eyebrow": "Timeline",
+    "stories.timeline.title": "故事时间线",
+    "stories.context.eyebrow": "Context",
+    "stories.context.title": "经历与背景",
+    "stories.disputes.eyebrow": "Public Exchange",
+    "stories.disputes.title": "公开争议时间线",
+    "stories.disputes.note": "以下内容区分当事人主张、回应与编辑边界，不代表本站认定指控成立。",
+    "stories.disputes.claimStatus": "主张状态：{value}",
+    "stories.disputes.responseStatus": "回应状态：{value}",
+    "stories.disputes.editorial": "编辑边界",
+    "stories.sources.eyebrow": "Sources",
+    "stories.sources.title": "来源与核查说明",
+    "stories.sources.checked": "核查：{date}",
+    "stories.related.coach": "教练",
+    "stories.related.dossier": "专题",
+    "stories.related.dossier-person": "专题人物",
+    "stories.related.overseas-record": "留洋档案",
+    "stories.related.story": "相关故事",
+    "stories.notFound.title": "未找到对应故事",
+    "stories.notFound.text": "当前故事不存在或尚未公开。",
+    "stories.link.open": "查看故事",
     "tournamentDetail.breadcrumb.list": "赛事列表",
     "tournamentDetail.breadcrumb.detail": "赛事详情",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -868,6 +912,10 @@ const UI_COPY = {
     "page.predictions.description": "A research forecast for Asian World Cup qualification from 2030 to 2042, combining senior strength, youth results, professional transition and quality-weighted overseas minutes.",
     "page.coaches.title": "Youth Development Coaches in China | Youth Player Tracking Desk",
     "page.coaches.description": "Named youth coaches working across schools, academies, professional youth teams, regional sports schools and independent projects in China.",
+    "page.stories.title": "Football Stories | Youth Player Tracking Desk",
+    "page.stories.description": "Traceable stories about professional players, youth coaches and school-football institutions.",
+    "page.story-detail.title": "Story Detail | Youth Player Tracking Desk",
+    "page.story-detail.description": "Timelines, public exchanges and source boundaries for people and institutions.",
     "site.kicker": "Youth Tracking Desk",
     "site.brand": "Youth Player Tracking Desk",
     "nav.aria": "Main navigation",
@@ -878,6 +926,9 @@ const UI_COPY = {
     "nav.overseas": "Overseas",
     "nav.pathways": "Youth Systems",
     "nav.coaches": "Coaches",
+    "nav.stories": "Stories",
+    "home.quickLinks.storiesTitle": "Football stories",
+    "home.quickLinks.storiesText": "Read sourced timelines about player transitions, school traditions and public exchanges.",
     "nav.dataCenter": "Data",
     "nav.predictions": "World Cup Forecast",
     "header.language": "Language",
@@ -1257,6 +1308,43 @@ const UI_COPY = {
     "dossier.sources.primary": "Primary source",
     "dossier.sources.supporting": "Supporting source",
     "dossier.sources.checked": "Dossier checked through {date}",
+    "stories.hero.eyebrow": "Football Stories",
+    "stories.hero.title": "Football stories",
+    "stories.hero.text": "Place playing careers, coaching practice, school traditions and public exchanges on a sourced timeline with clear factual boundaries.",
+    "stories.coverage.eyebrow": "Coverage",
+    "stories.coverage.value": "{count} stories",
+    "stories.coverage.checked": "Checked through {date}",
+    "stories.list.eyebrow": "Profiles & Institutions",
+    "stories.list.title": "People and institution stories",
+    "stories.card.kind.person": "Person",
+    "stories.card.kind.institution": "Institution",
+    "stories.card.timeline": "{count} timeline entries",
+    "stories.card.open": "Open full story",
+    "stories.breadcrumb.list": "Football stories",
+    "stories.breadcrumb.detail": "Story detail",
+    "stories.identity.eyebrow": "Identity",
+    "stories.identity.title": "Identity and scope",
+    "stories.timeline.eyebrow": "Timeline",
+    "stories.timeline.title": "Story timeline",
+    "stories.context.eyebrow": "Context",
+    "stories.context.title": "Career and background",
+    "stories.disputes.eyebrow": "Public Exchange",
+    "stories.disputes.title": "Public dispute timeline",
+    "stories.disputes.note": "The entries distinguish attributed claims, responses and editorial boundaries; inclusion does not establish an allegation as fact.",
+    "stories.disputes.claimStatus": "Claim status: {value}",
+    "stories.disputes.responseStatus": "Response status: {value}",
+    "stories.disputes.editorial": "Editorial boundary",
+    "stories.sources.eyebrow": "Sources",
+    "stories.sources.title": "Sources and verification",
+    "stories.sources.checked": "Checked: {date}",
+    "stories.related.coach": "Coach",
+    "stories.related.dossier": "Dossier",
+    "stories.related.dossier-person": "Dossier person",
+    "stories.related.overseas-record": "Overseas record",
+    "stories.related.story": "Related story",
+    "stories.notFound.title": "Story not found",
+    "stories.notFound.text": "This story does not exist or is not public.",
+    "stories.link.open": "Open story",
     "tournamentDetail.breadcrumb.list": "Tournaments",
     "tournamentDetail.breadcrumb.detail": "Tournament detail",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -1892,6 +1980,8 @@ const PAGE_METADATA = {
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
+  stories: { title: "page.stories.title", description: "page.stories.description" },
+  "story-detail": { title: "page.story-detail.title", description: "page.story-detail.description" },
   "data-center": { title: "page.data-center.title", description: "page.data-center.description" },
   "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" },
   "dossier-player-detail": {
@@ -2425,6 +2515,16 @@ async function boot() {
       return;
     }
 
+    if (page === "stories") {
+      renderStoriesPage();
+      return;
+    }
+
+    if (page === "story-detail") {
+      renderStoryDetailPage();
+      return;
+    }
+
     if (page === "data-center") {
       initializeDataCenterPage();
       renderDataCenterPage();
@@ -2477,6 +2577,7 @@ function setActiveNavigation() {
     if (
       link.dataset.nav === page ||
       (page === "player-detail" && link.dataset.nav === "players") ||
+      (page === "story-detail" && link.dataset.nav === "stories") ||
       (page === "tournament-detail" && link.dataset.nav === "tournaments") ||
       (page === "youth-league" && link.dataset.nav === "tournaments")
     ) {
@@ -3501,6 +3602,7 @@ function renderDossierPlayer(player, member = null, dossier = null) {
         ${status.source_url ? `<a class="inline-link" href="${escapeHtml(status.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))}</a>` : ""}
         ${player.player_id ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(t("dossier.player.profile"))}</a>` : ""}
         ${projectProfile ? `<a class="inline-link" href="${buildDossierPlayerDetailUrl(dossier.id, projectProfile.id)}">${escapeHtml(t("dossier.player.projectProfile"))}</a>` : ""}
+        ${player.story_id ? `<a class="inline-link" href="./story.html?id=${encodeURIComponent(player.story_id)}">${escapeHtml(t("stories.link.open"))}</a>` : ""}
       </div>
     </article>
   `;
@@ -6693,6 +6795,7 @@ function formatYouthCoachOrganizationType(value) {
 function formatYouthCoachAgeBand(value) {
   const labels = {
     "primary-school": { zh: "小学", en: "Primary school" },
+    "foundation-phase": { zh: "启蒙阶段", en: "Foundation phase" },
     "high-school": { zh: "高中", en: "High school" },
     "youth-mixed": { zh: "多年龄段青训", en: "Mixed youth ages" },
     "middle-school": { zh: "初中", en: "Middle school" },
@@ -6704,6 +6807,7 @@ function formatYouthCoachAgeBand(value) {
     u15: { zh: "U15", en: "U15" },
     u16: { zh: "U16", en: "U16" },
     u17: { zh: "U17", en: "U17" },
+    u18: { zh: "U18", en: "U18" },
     u19: { zh: "U19", en: "U19" }
   };
   return getLabel(labels, value, value);
@@ -6739,6 +6843,7 @@ function renderDevelopmentCoachCard(coach) {
       <div class="source-link-grid">
         ${sources.map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(source.label)}</span><strong>↗</strong></a>`).join("")}
       </div>
+      ${coach.story_id ? `<a class="primary-link primary-link-inline" href="./story.html?id=${encodeURIComponent(coach.story_id)}">${escapeHtml(t("stories.link.open"))}</a>` : ""}
     </article>
   `;
 }
@@ -6790,6 +6895,136 @@ function renderCoachesPage() {
       <p>${escapeHtml(t("coaches.watchlist.need", { value: item.need }))}</p>
     </article>
   `).join("");
+}
+
+function getFootballStories() {
+  return state.overview?.football_stories?.stories ?? [];
+}
+
+function getFootballStoryById(id) {
+  return getFootballStories().find((story) => story.id === id) ?? null;
+}
+
+function buildStoryRelatedUrl(entity) {
+  if (entity.type === "story") return `./story.html?id=${encodeURIComponent(entity.id)}`;
+  if (entity.type === "dossier" || entity.type === "dossier-person") {
+    const dossierId = entity.type === "dossier"
+      ? entity.id
+      : getFootballStories()
+          .flatMap((story) => story.related_entities ?? [])
+          .find((candidate) => candidate.type === "dossier" && entity.id.startsWith(`${candidate.id}-`))?.id;
+    return dossierId ? `./dossier.html?id=${encodeURIComponent(dossierId)}` : "./stories.html";
+  }
+  if (entity.type === "coach") return "./coaches.html";
+  if (entity.type === "overseas-record") return "./overseas.html?country=China%20PR";
+  return "./stories.html";
+}
+
+function renderFootballStoryCard(story) {
+  return `
+    <article class="story-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t(`stories.card.kind.${story.kind}`))}</span>
+        <span class="chip">${escapeHtml(t("stories.card.timeline", { count: story.timeline?.length ?? 0 }))}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(story.title))}</h3>
+      <p>${escapeHtml(localizeText(story.summary))}</p>
+      <p class="small-note">${escapeHtml(t("stories.coverage.checked", { date: formatDate(story.checked_at) }))}</p>
+      <a class="primary-link primary-link-inline" href="./story.html?id=${encodeURIComponent(story.id)}">${escapeHtml(t("stories.card.open"))}</a>
+    </article>
+  `;
+}
+
+function renderStoriesPage() {
+  const archive = state.overview?.football_stories;
+  const stories = archive?.stories ?? [];
+  document.querySelector("#storiesCoverage").textContent = t("stories.coverage.value", { count: stories.length });
+  document.querySelector("#storiesCheckedAt").textContent = t("stories.coverage.checked", { date: formatDate(archive?.last_checked) });
+  document.querySelector("#storiesEditorialPolicy").textContent = localizeText(archive?.editorial_policy);
+  document.querySelector("#storiesGrid").innerHTML = stories.map(renderFootballStoryCard).join("");
+}
+
+function renderStoryDispute(dispute) {
+  return `
+    <article class="stack-card story-dispute-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(formatDate(dispute.date))}</span>
+        <span class="chip">${escapeHtml(t("stories.disputes.claimStatus", { value: dispute.claim_status }))}</span>
+        <span class="chip">${escapeHtml(t("stories.disputes.responseStatus", { value: dispute.response_status }))}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(dispute.topic))}</h3>
+      <ul class="mini-bullet-list">
+        ${(dispute.statements ?? []).map((statement) => `
+          <li>
+            <strong>${escapeHtml(statement.speaker)} · ${escapeHtml(statement.position)}</strong><br>
+            <span>${escapeHtml(localizeText(statement.paraphrase))}</span>
+            <a class="inline-link" href="${escapeHtml(statement.source_url)}" target="_blank" rel="noreferrer">↗</a>
+          </li>
+        `).join("")}
+      </ul>
+      <p class="timeline-label">${escapeHtml(t("stories.disputes.editorial"))}</p>
+      <p class="small-note">${escapeHtml(localizeText(dispute.editorial_note))}</p>
+    </article>
+  `;
+}
+
+function renderStoryDetailPage() {
+  const params = new URLSearchParams(window.location.search);
+  const story = getFootballStoryById(params.get("id"));
+  const hero = document.querySelector("#storyHero");
+  const body = document.querySelector("#storyBody");
+  if (!story || !hero || !body) {
+    if (hero) {
+      hero.innerHTML = `<div class="hero-copy"><p class="eyebrow">${escapeHtml(t("stories.hero.eyebrow"))}</p><h1>${escapeHtml(t("stories.notFound.title"))}</h1><p class="hero-text">${escapeHtml(t("stories.notFound.text"))}</p></div>`;
+    }
+    return;
+  }
+
+  document.title = `${localizeText(story.title)} | ${t("stories.breadcrumb.detail")}`;
+  hero.innerHTML = `
+    <div class="hero-copy">
+      <p class="eyebrow">${escapeHtml(t("stories.hero.eyebrow"))}</p>
+      <h1>${escapeHtml(localizeText(story.title))}</h1>
+      <p class="hero-text">${escapeHtml(localizeText(story.summary))}</p>
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t(`stories.card.kind.${story.kind}`))}</span>
+        <span class="chip">${escapeHtml(t("stories.coverage.checked", { date: formatDate(story.checked_at) }))}</span>
+      </div>
+    </div>
+  `;
+  document.querySelector("#storyFacts").innerHTML = (story.key_facts ?? []).map((fact) => `
+    <article class="stat-card">
+      <p class="stat-label">${escapeHtml(localizeText(fact.label))}</p>
+      <p class="stat-value stat-value-small">${escapeHtml(localizeText(fact.value))}</p>
+    </article>
+  `).join("");
+  document.querySelector("#storyIdentity").textContent = localizeText(story.identity_note);
+  document.querySelector("#storyRelated").innerHTML = (story.related_entities ?? []).map((entity) => `
+    <a class="chip" href="${escapeHtml(buildStoryRelatedUrl(entity))}">${escapeHtml(t(`stories.related.${entity.type}`))} · ${escapeHtml(entity.label)}</a>
+  `).join("");
+  document.querySelector("#storyTimeline").innerHTML = (story.timeline ?? []).map((item) => `
+    <article class="timeline-item">
+      <p class="timeline-label">${escapeHtml(item.date)}</p>
+      <h3>${escapeHtml(localizeText(item.label))}</h3>
+      <p>${escapeHtml(localizeText(item.detail))}</p>
+    </article>
+  `).join("");
+  document.querySelector("#storySections").innerHTML = (story.sections ?? []).map((section) => `
+    <article class="story-card"><h3>${escapeHtml(localizeText(section.title))}</h3><p>${escapeHtml(localizeText(section.body))}</p></article>
+  `).join("");
+  const disputes = story.public_disputes ?? [];
+  document.querySelector("#storyDisputesSection").hidden = disputes.length === 0;
+  document.querySelector("#storyDisputes").innerHTML = disputes.map(renderStoryDispute).join("");
+  document.querySelector("#storySources").innerHTML = (story.source_links ?? []).map((source) => `
+    <article class="story-card">
+      <div class="chip-row"><span class="chip">${escapeHtml(source.type)}</span></div>
+      <h3>${escapeHtml(source.label)}</h3>
+      <p>${escapeHtml(source.claim)}</p>
+      <p class="small-note">${escapeHtml(t("stories.sources.checked", { date: formatDate(source.checked_at) }))}</p>
+      <a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.url)}</a>
+    </article>
+  `).join("");
+  body.hidden = false;
 }
 
 function initializePathwaysPage() {
@@ -8126,6 +8361,7 @@ function renderHistoricalRecordCard(record) {
       <ul class="mini-bullet-list coach-record-list">
         ${(record.notes ?? []).map((note) => `<li>${escapeHtml(localizeText(note))}</li>`).join("")}
       </ul>
+      ${record.story_id ? `<a class="primary-link primary-link-inline" href="./story.html?id=${encodeURIComponent(record.story_id)}">${escapeHtml(t("stories.link.open"))}</a>` : ""}
     </article>
   `;
 }
