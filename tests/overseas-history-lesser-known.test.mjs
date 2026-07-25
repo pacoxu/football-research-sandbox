@@ -18,7 +18,8 @@ test("covers the requested lesser-known overseas careers", async () => {
   const china = await loadChinaHistory();
   const expectedNames = [
     "张呈栋", "王刚", "曲圣卿", "高雷雷", "张烁", "陈志钊", "谭龙", "于海",
-    "孙祥", "黄博文", "周通", "吴少聪", "杜威", "郭田雨", "李磊", "陈彬彬"
+    "孙祥", "黄博文", "周通", "吴少聪", "杜威", "郭田雨", "李磊", "陈彬彬",
+    "肖远豪"
   ];
   const coveredNames = new Set(china.featured_records.map((record) => record.local_name));
 
@@ -86,4 +87,27 @@ test("tracks Hidemasa Morita's 2026 Hull City move", async () => {
   assert.equal(morita.source_links.length, 3);
   assert.ok(morita.source_links.some(({ url }) => url.includes("x.com/HullCity/status/")));
   assert.match(lineupSource, /name: "守田英正".+club: "Hull City"/);
+});
+
+test("uses Xiao Yuanhao's corrected Chinese name and preserves his pathway boundary", async () => {
+  const china = await loadChinaHistory();
+  const xiao = china.featured_records.find((record) => record.name === "Xiao Yuanhao");
+
+  assert.deepEqual(
+    {
+      localName: xiao.local_name,
+      bucket: xiao.bucket,
+      appearances: xiao.appearances,
+      activeAbroad: xiao.active_abroad
+    },
+    {
+      localName: "肖远豪",
+      bucket: "big-five-youth",
+      appearances: 14,
+      activeAbroad: false
+    }
+  );
+  assert.ok(xiao.notes.some((note) => note.includes("不是“肖元豪”")));
+  assert.ok(xiao.notes.some((note) => note.includes("第八级")));
+  assert.ok(xiao.source_links.some(({ url }) => url.includes("fcf.cat/acta/")));
 });
