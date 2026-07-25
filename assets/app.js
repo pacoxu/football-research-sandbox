@@ -432,6 +432,9 @@ const UI_COPY = {
     "dossier.model.title": "培养模式与专题口径",
     "dossier.timeline.eyebrow": "Timeline",
     "dossier.timeline.title": "基地沿革",
+    "dossier.metrics.eyebrow": "Tournament archive",
+    "dossier.metrics.title": "赛事届次档案",
+    "dossier.metrics.source": "查看届次来源",
     "dossier.generations.eyebrow": "Generations",
     "dossier.generations.title": "代表球员与当前状态",
     "dossier.generations.players": "代表样本 {count} 人",
@@ -1193,6 +1196,9 @@ const UI_COPY = {
     "dossier.model.title": "Development model and scope",
     "dossier.timeline.eyebrow": "Timeline",
     "dossier.timeline.title": "Base timeline",
+    "dossier.metrics.eyebrow": "Tournament archive",
+    "dossier.metrics.title": "Tournament editions",
+    "dossier.metrics.source": "Open edition source",
     "dossier.generations.eyebrow": "Generations",
     "dossier.generations.title": "Representative players and current status",
     "dossier.generations.players": "{count} representative players",
@@ -3661,6 +3667,20 @@ function renderDossierDetailPage() {
     `<article class="story-card"><h3>${escapeHtml(t("dossier.boundaries.title"))}</h3><p>${escapeHtml(localizeText(dossier.scope_note))}</p></article>`
   ].join("");
   document.querySelector("#dossierTimeline").innerHTML = (dossier.timeline ?? []).map((item) => `<article class="timeline-item"><p class="timeline-label">${escapeHtml(item.date)}</p><h3>${escapeHtml(localizeText(item.label))}</h3><p>${escapeHtml(localizeText(item.detail))}</p></article>`).join("");
+  const metrics = dossier.program_metrics ?? [];
+  const metricsSection = document.querySelector("#dossierMetricsSection");
+  if (metricsSection && metrics.length > 0) {
+    document.querySelector("#dossierMetrics").innerHTML = metrics.map((item) => `
+      <article class="story-card">
+        <div class="chip-row"><span class="chip">${escapeHtml(localizeText(item.role))}</span></div>
+        <h3>${escapeHtml(localizeText(item.local_name ?? item.name))}</h3>
+        <p><strong>${escapeHtml(localizeText(item.club))}</strong></p>
+        <p>${escapeHtml(localizeText(item.note))}</p>
+        ${item.source_url ? `<a class="inline-link" href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.metrics.source"))}</a>` : ""}
+      </article>
+    `).join("");
+    metricsSection.hidden = false;
+  }
   document.querySelector("#dossierGenerations").innerHTML = (dossier.roster_views ?? []).map((view) => renderDossierGeneration(view, dossier)).join("");
   renderDossierExternalProfiles(dossier);
   document.querySelector("#dossierBoundaries").innerHTML = `<ul class="mini-bullet-list">${(dossier.controversies ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
