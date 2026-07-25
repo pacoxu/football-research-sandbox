@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>球员详情 | 青训球员追踪站</title>
+    <title>专题人物 | 青训球员追踪站</title>
     <meta
       name="description"
-      content="查看球员青训路径、赛事经历、当前归属、最近贡献与外部资料链接。"
+      content="查看青训专题人物的公开批次、位置、代表经历、站内关联与来源边界。"
     />
     <link rel="stylesheet" href="./assets/styles.css?v=20260725-friend-links" />
   </head>
-  <body data-page="player-detail">
+  <body data-page="dossier-player-detail">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -39,76 +39,56 @@
 
       <main>
         <p class="breadcrumb">
-          <a href="./players.html" data-i18n="playerDetail.breadcrumb.list">球员列表</a>
+          <a id="dossierPlayerBackLink" href="./dossier.html?id=donglu-football-boys" data-i18n="dossierPlayer.breadcrumb.dossier">专题档案</a>
           <span>/</span>
-          <span data-i18n="playerDetail.breadcrumb.detail">球员详情</span>
+          <span data-i18n="dossierPlayer.breadcrumb.detail">专题人物</span>
         </p>
 
-        <section id="playerDetailHero" class="page-hero hero-tight"></section>
+        <section id="dossierPlayerHero" class="page-hero hero-tight"></section>
 
-        <div id="playerDetailBody" hidden>
-          <section class="detail-stats" id="playerDetailStats"></section>
-
-          <section id="playerMarketValueHistorySection" class="content-panel">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow" data-i18n="playerDetail.marketHistory.eyebrow">Market Value History</p>
-                <h2 data-i18n="playerDetail.marketHistory.title">身价历史</h2>
-              </div>
-            </div>
-            <div id="playerMarketValueHistory"></div>
-          </section>
-
-          <section class="content-panel">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow" data-i18n="playerDetail.pathway.eyebrow">Pathway</p>
-                <h2 data-i18n="playerDetail.pathway.title">青训路径与归属变化</h2>
-              </div>
-            </div>
-            <div id="playerPathwayTimeline" class="timeline-list"></div>
-          </section>
-
-          <section id="playerSourceLayersSection" class="content-panel">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow" data-i18n="playerDetail.sources.eyebrow">Source Layers</p>
-                <h2 data-i18n="playerDetail.sources.title">来源层与培养体系</h2>
-              </div>
-            </div>
-            <div id="playerSourceLayers" class="source-layer-groups"></div>
-          </section>
+        <div id="dossierPlayerBody" hidden>
+          <section id="dossierPlayerStats" class="detail-stats"></section>
 
           <section class="dashboard-grid">
-            <article id="playerCompetitionSection" class="content-panel panel-span-2">
+            <article class="content-panel panel-span-2">
               <div class="section-head">
                 <div>
-                  <p class="eyebrow" data-i18n="playerDetail.competition.eyebrow">Competition Log</p>
-                  <h2 data-i18n="playerDetail.competition.title">赛事经历</h2>
+                  <p class="eyebrow" data-i18n="dossierPlayer.experience.eyebrow">Public Profile</p>
+                  <h2 data-i18n="dossierPlayer.experience.title">公开简介与代表经历</h2>
                 </div>
               </div>
-              <div id="playerParticipationList" class="stack-list"></div>
+              <div id="dossierPlayerExperience"></div>
             </article>
 
             <article class="content-panel">
               <div class="section-head">
                 <div>
-                  <p class="eyebrow" data-i18n="playerDetail.recent.eyebrow">Recent Contributions</p>
-                  <h2 data-i18n="playerDetail.recent.title">最近贡献</h2>
+                  <p class="eyebrow" data-i18n="dossierPlayer.status.eyebrow">Site Record</p>
+                  <h2 data-i18n="dossierPlayer.status.title">本站现状记录</h2>
                 </div>
               </div>
-              <div id="playerRecentContributions" class="stack-list"></div>
+              <div id="dossierPlayerStatus"></div>
             </article>
           </section>
 
-          <section id="playerLinksSection" class="content-panel">
+          <section id="dossierPlayerRelationshipsSection" class="content-panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow" data-i18n="playerDetail.links.eyebrow">External Links</p>
-                <h2 data-i18n="playerDetail.links.title">外部资料与来源</h2>
+                <p class="eyebrow" data-i18n="dossierPlayer.relationships.eyebrow">Roster Context</p>
+                <h2 data-i18n="dossierPlayer.relationships.title">专题名单关系</h2>
               </div>
             </div>
-            <div id="playerExternalLinks" class="story-grid"></div>
+            <div id="dossierPlayerRelationships" class="story-grid"></div>
+          </section>
+
+          <section class="content-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow" data-i18n="dossierPlayer.evidence.eyebrow">Evidence Boundary</p>
+                <h2 data-i18n="dossierPlayer.evidence.title">来源与核验边界</h2>
+              </div>
+            </div>
+            <div id="dossierPlayerEvidence" class="story-grid"></div>
           </section>
         </div>
       </main>

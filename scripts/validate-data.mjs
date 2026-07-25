@@ -472,6 +472,63 @@ function validateYouthProjectDossier(dossier, playerIds) {
     assert(["complete", "partial"].includes(count.completeness), `Invalid completeness: ${dossier.id}/${view.id}`);
   }
 
+  if (dossier.external_player_profiles !== undefined) {
+    assert(
+      Array.isArray(dossier.external_player_profiles),
+      `Invalid external player profiles: ${dossier.id}`
+    );
+    const profileIds = new Set();
+    const profilePeople = new Set();
+    const profileNames = new Set();
+    for (const profile of dossier.external_player_profiles) {
+      const label = `${dossier.id}/external-profile/${profile.id}`;
+      assert(profile.id && !profileIds.has(profile.id), `Duplicate external profile id: ${label}`);
+      profileIds.add(profile.id);
+      assert(people.has(profile.person_id), `Unknown external profile person: ${label}`);
+      assert(!profilePeople.has(profile.person_id), `Duplicate external profile person: ${label}`);
+      profilePeople.add(profile.person_id);
+      const normalizedProfileName = normalizeIdentityName(profile.display_name);
+      assert(normalizedProfileName && !profileNames.has(normalizedProfileName), `Duplicate external profile name: ${label}`);
+      profileNames.add(normalizedProfileName);
+      assert(Array.isArray(profile.aliases) && profile.aliases.length > 0, `Missing aliases: ${label}`);
+      assert(typeof profile.squad === "string" && profile.squad.length > 0, `Missing squad: ${label}`);
+      assert(
+        profile.birth_year === null || /^\d{4}$/.test(profile.birth_year),
+        `Invalid external profile birth_year: ${label}`
+      );
+      assert(
+        profile.position === null || (typeof profile.position === "string" && profile.position.length > 0),
+        `Invalid external profile position: ${label}`
+      );
+      assert(
+        typeof profile.representative_experience === "string" && profile.representative_experience.length > 0,
+        `Missing external profile experience: ${label}`
+      );
+      assert(
+        profile.source_url === `https://www.xiaojiangfc.com/players/${profile.id}/`,
+        `Invalid external profile URL: ${label}`
+      );
+      assert(isIsoDate(profile.checked_at), `Invalid external profile checked_at: ${label}`);
+      assert(profile.verification_status === "needs-review", `Invalid external profile verification: ${label}`);
+      assert(
+        typeof profile.verification_note === "string" && profile.verification_note.length > 0,
+        `Missing external profile boundary: ${label}`
+      );
+      assert(
+        ["existing", "added"].includes(profile.dossier_person_status),
+        `Invalid dossier person status: ${label}`
+      );
+      assert(Array.isArray(profile.conflicts), `Invalid external profile conflicts: ${label}`);
+      if (profile.player_id !== undefined) {
+        assert(playerIds.has(profile.player_id), `Unknown external profile player: ${label}`);
+        assert(
+          people.get(profile.person_id).player_id === profile.player_id,
+          `External profile player link mismatch: ${label}`
+        );
+      }
+    }
+  }
+
   assert(dossier.headline_stats.tracked_players === dossier.people.length, `Tracked people mismatch: ${dossier.id}`);
   assert(dossier.headline_stats.tracked_generations === dossier.roster_views.length, `Tracked views mismatch: ${dossier.id}`);
   for (const [viewId, expected] of Object.entries({
@@ -496,6 +553,27 @@ function validateYouthProjectDossier(dossier, playerIds) {
   }
   if (dossier.id === "donglu-football-boys") {
     assert(!dossier.people.some((person) => /Chinese Football Boys|Primary School|Dream Team/.test(person.local_name)), "2034 Cup team result leaked into people");
+    const profiles = dossier.external_player_profiles ?? [];
+    assert(profiles.length === 86, "Expected 86 xiaojiangfc player profiles");
+    assert(dossier.people.length === 125, "Expected 125 tracked Donglu dossier people");
+    assert(
+      profiles.filter((profile) => profile.dossier_person_status === "existing").length === 47,
+      "Expected 47 reused Donglu dossier people"
+    );
+    assert(
+      profiles.filter((profile) => profile.dossier_person_status === "added").length === 39,
+      "Expected 39 newly indexed Donglu dossier people"
+    );
+    assert(
+      profiles.filter((profile) => profile.player_id).length === 14,
+      "Expected 14 xiaojiangfc profiles linked to main players"
+    );
+    const zhangLintong = profiles.find((profile) => profile.id === "zhang-lintong");
+    assert(
+      zhangLintong?.birth_year === "2009" &&
+      zhangLintong.conflicts.some((conflict) => conflict.field === "birth_year" && conflict.site_value === "2010"),
+      "Missing Zhang Lintong birth-year conflict boundary"
+    );
   }
 }
 

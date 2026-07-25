@@ -1658,6 +1658,27 @@ tbody tr:last-child td {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 
+.profile-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 18px 0 10px;
+}
+
+.profile-filter-button {
+  border: 1px solid var(--line);
+  cursor: pointer;
+  font: inherit;
+}
+
+.profile-filter-button:hover,
+.profile-filter-button:focus-visible,
+.profile-filter-button.is-active {
+  color: var(--accent-deep);
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
 .academy-player-card,
 .academy-program-card {
   min-width: 0;
@@ -1665,6 +1686,29 @@ tbody tr:last-child td {
   border-radius: var(--radius-lg);
   padding: 15px;
   background: var(--surface);
+}
+
+.external-profile-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.external-profile-card > p {
+  flex: 1 1 auto;
+}
+
+.profile-linked-note {
+  color: var(--accent-deep);
+  font-weight: 700;
+}
+
+.conflict-card {
+  border-color: #d5a22b;
+  background: #fff9e8;
+}
+
+.evidence-claim-card {
+  border-left: 4px solid var(--accent);
 }
 
 .academy-player-heading {

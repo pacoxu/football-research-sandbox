@@ -36,6 +36,7 @@ test("all primary site pages link to the coaches directory", async () => {
     "overseas.html",
     "pathways.html",
     "dossier.html",
+    "dossier-player.html",
     "youth-league.html",
     "lineup.html"
   ];
