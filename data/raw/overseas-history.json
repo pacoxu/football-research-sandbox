@@ -394,10 +394,10 @@
     {
       "country": "China PR",
       "status": "in-progress",
-      "verified_records": 40,
+      "verified_records": 41,
       "bucket_focus": [
         "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
-        "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队落点，避免与成年一线队出场样本混算；这条线现已明确补入刘邵子洋、何小珂这类从拜仁或西班牙梯队进入欧洲培养链的案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
+        "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队和地区级成年联赛落点，避免与成年职业一线队样本混算；这条线现已明确补入刘邵子洋、何小珂、肖远豪等欧洲培养案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
         "big-five-lower-tier：已把英格兰次级与第三级职业联赛路径单列出来，避免与真正五大联赛履历混在一起",
         "europe-other：已补入孙祥、董方卓这类欧洲非五大联赛体系个案，并继续记录塞尔维亚、克罗地亚、荷兰等落点；2025 观察池里，吴少聪连接土超 / 土甲 / 波兰联赛，李磊补回草蜢回流样本，西班牙与葡萄牙方向则继续跟踪杜月徵、Li Changyi、Yang Xiyu、Chen Zheyuan、Yimulan Abuduwaili 等青年路径",
         "asia-other：已补贾秀全 1992-1993 年大阪钢巴阶段，以及曾诚 2005 年由武汉光谷租借泗水佩塞巴亚的印尼顶级联赛经历；J.League 官方数据可核贾秀全 J1 25 场、联赛杯 9 场，National Football Teams 可核曾诚印尼联赛 25 场；后续继续扩 J 联赛、K 联赛与东南亚职业体系样本",
@@ -428,6 +428,7 @@
         "Wan Xiang",
         "Jin Yucheng",
         "Wang Xiuhao",
+        "Xiao Yuanhao",
         "Wei Xiangxin"
       ],
       "naturalized_players": {
@@ -2176,6 +2177,44 @@
             "Wikipedia 可核其草蜢阶段总计 14 次正式出场，其中联赛 13 场、杯赛 1 场。",
             "和青年试训不同，这条路径属于已经在国内站稳后再去欧洲顶级联赛尝试的成熟球员样本。",
             "2023 年提前终止合同回国，说明这类成熟国脚型留洋仍普遍较短。"
+          ]
+        },
+        {
+          "id": "xiao-yuanhao-spain-pathway-2018",
+          "name": "Xiao Yuanhao",
+          "local_name": "肖远豪",
+          "bucket": "big-five-youth",
+          "league": "Tercera Federación / Primera Catalana / Segona Catalana",
+          "club": "Montañesa / Turó Peira / Inter Barcelona",
+          "season": "2024-2026",
+          "status": "verified",
+          "appearances": 14,
+          "appearance_label": "蒙塔涅萨一线队 1 场；2025/26 地区联赛 13 场、2 球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "宁波 FC 官宣转载：肖远豪正式加盟",
+              "url": "https://news.qq.com/rain/a/20260723A0BRXT00"
+            },
+            {
+              "label": "加泰足协：Lloreda 2-2 Inter Barcelona 比赛记录",
+              "url": "https://www.fcf.cat/acta/2526/futbol-11/segona-catalana/grup-2/2cat/lloreda-cf-a/2cat/inter-barcelona-a"
+            },
+            {
+              "label": "La Preferente：肖远豪蒙塔涅萨一线队记录",
+              "url": "https://www.lapreferente.com/J519684/cf-monta%C3%B1esa/xiao.html"
+            }
+          ],
+          "summary": "肖远豪出生于 2005 年 1 月、湖北荆门，约 183 厘米，可踢中后卫、边后卫和后腰。其路径从广州恒大 05 梯队起步，随后长期经历塞尔维亚与西班牙青训，并在蒙塔涅萨、图罗佩拉和国际巴塞罗那接触西班牙低级别成年比赛；2026 年 7 月 23 日回国加盟中甲宁波 FC。",
+          "notes": [
+            "中文名按宁波 FC 官宣更正为“肖远豪”，不是“肖元豪”；FCF 注册名显示为 XIAO, YUANHAO。",
+            "2013 年进入广州恒大 05 梯队，2018 年加入贝尔格莱德拉德 04-05 梯队，2019-2022 年效力圣安德鲁梯队，2022-2024 年先后进入 FAF 奥斯皮塔莱特 U19 与蒙塔涅萨 U19。",
+            "蒙塔涅萨一线队参加西协丙；La Preferente 可核 2024/25 赛季 3 次入选比赛名单、1 次替补出场，共 2 分钟。",
+            "宁波官宣口径记载其 2025/26 赛季为图罗佩拉参加加泰罗尼亚甲级联赛 10 场；2026 年 4 月加入国际巴塞罗那后，在加泰罗尼亚乙级联赛 3 次首发、打入 2 球。",
+            "FCF 2026 年 5 月 3 日比赛记录可核其身披国际巴塞罗那 25 号首发并在第 12 分钟进球；国际巴塞罗那是 2023 年成立的地区俱乐部，与 FC Barcelona、Inter Milan 均无关系。",
+            "加泰罗尼亚乙级联赛约处西班牙第八级，因此本记录归入 big-five-youth，用于表示五大联赛国家的青训与地区级成年路径，不将其表述为欧洲成熟职业联赛球员。",
+            "身体对抗、头球、补位和一定脚下出球能力来自宁波俱乐部对其后场多面手特点的公开介绍；能否在中甲取得稳定出场仍待后续赛季数据验证。"
           ]
         }
       ]
