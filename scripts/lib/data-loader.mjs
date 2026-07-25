@@ -277,6 +277,10 @@ export async function loadDataset() {
     path.join(paths.raw, "china-youth-development-coaches.json"),
     null
   );
+  const footballStories = await readOptionalJson(
+    path.join(paths.raw, "football-stories.json"),
+    { schema_version: 1, last_checked: null, editorial_policy: {}, stories: [] }
+  );
   const bigFiveAsianCoaches = await readOptionalJson(
     path.join(paths.raw, "big-five-asian-coaches.json"),
     null
@@ -301,6 +305,7 @@ export async function loadDataset() {
     uefaYouthLeague,
     chinaMenYouthCoaches,
     chinaYouthDevelopmentCoaches,
+    footballStories,
     bigFiveAsianCoaches,
     asianCoaches,
     youthDevelopmentSystems,

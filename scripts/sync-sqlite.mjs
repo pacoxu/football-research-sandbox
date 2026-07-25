@@ -356,6 +356,7 @@ export async function syncSqlite() {
 
     CREATE TABLE china_youth_development_coaches (
       id TEXT PRIMARY KEY,
+      story_id TEXT,
       name_zh TEXT NOT NULL,
       name_en TEXT NOT NULL,
       name_native TEXT NOT NULL,
@@ -372,6 +373,31 @@ export async function syncSqlite() {
       methodology_tags_json TEXT NOT NULL,
       source_links_json TEXT NOT NULL,
       verification_json TEXT NOT NULL
+    );
+
+    CREATE TABLE football_stories (
+      id TEXT PRIMARY KEY,
+      kind TEXT NOT NULL,
+      title_json TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      identity_note_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL,
+      key_facts_json TEXT NOT NULL,
+      timeline_json TEXT NOT NULL,
+      sections_json TEXT NOT NULL,
+      public_disputes_json TEXT NOT NULL,
+      source_links_json TEXT NOT NULL,
+      notable_alumni_json TEXT NOT NULL
+    );
+
+    CREATE TABLE football_story_entities (
+      story_id TEXT NOT NULL,
+      entity_order INTEGER NOT NULL,
+      entity_type TEXT NOT NULL,
+      entity_id TEXT NOT NULL,
+      entity_label TEXT NOT NULL,
+      PRIMARY KEY (story_id, entity_order),
+      FOREIGN KEY (story_id) REFERENCES football_stories(id) ON DELETE CASCADE
     );
   `);
 
@@ -515,11 +541,23 @@ export async function syncSqlite() {
   `);
   const insertChinaYouthDevelopmentCoach = db.prepare(`
     INSERT INTO china_youth_development_coaches (
-      id, name_zh, name_en, name_native, nationality,
+      id, story_id, name_zh, name_en, name_native, nationality,
       organization_name, organization_short_name, organization_type, province, city,
       role, age_bands_json, period_json, profile_summary, methodology_tags_json,
       source_links_json, verification_json
-    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertFootballStory = db.prepare(`
+    INSERT INTO football_stories (
+      id, kind, title_json, summary_json, identity_note_json, checked_at,
+      key_facts_json, timeline_json, sections_json, public_disputes_json,
+      source_links_json, notable_alumni_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertFootballStoryEntity = db.prepare(`
+    INSERT INTO football_story_entities (
+      story_id, entity_order, entity_type, entity_id, entity_label
+    ) VALUES (?, ?, ?, ?, ?)
   `);
 
   for (const player of dataset.players) {
@@ -869,6 +907,7 @@ export async function syncSqlite() {
   for (const coach of dataset.chinaYouthDevelopmentCoaches?.coaches ?? []) {
     insertChinaYouthDevelopmentCoach.run(
       coach.id,
+      coach.story_id ?? null,
       coach.name.zh,
       coach.name.en,
       coach.name.native,
@@ -886,6 +925,26 @@ export async function syncSqlite() {
       toJson(coach.source_links),
       toJson(coach.verification)
     );
+  }
+
+  for (const story of dataset.footballStories.stories) {
+    insertFootballStory.run(
+      story.id,
+      story.kind,
+      toJson(story.title),
+      toJson(story.summary),
+      toJson(story.identity_note),
+      story.checked_at,
+      toJson(story.key_facts),
+      toJson(story.timeline),
+      toJson(story.sections),
+      toJson(story.public_disputes),
+      toJson(story.source_links),
+      toJson(story.notable_alumni ?? [])
+    );
+    story.related_entities.forEach((entity, index) => {
+      insertFootballStoryEntity.run(story.id, index, entity.type, entity.id, entity.label);
+    });
   }
 
   db.close();
