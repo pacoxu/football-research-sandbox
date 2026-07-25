@@ -3003,6 +3003,16 @@ tbody tr:last-child td {
   font-weight: 800;
 }
 
+.pool-player-name em.is-program {
+  max-width: 110px;
+  overflow: hidden;
+  border-color: #b7d6cf;
+  color: #225f55;
+  background: #eef9f6;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .pool-player-copy small {
   overflow: hidden;
   color: var(--muted);

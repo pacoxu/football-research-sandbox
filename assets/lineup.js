@@ -20,16 +20,16 @@ const players = [
   { id: "cn-wan-xiang", name: "万项", en: "Wan Xiang", country: "China PR", position: "MID", role: "前腰", club: "Red Star Belgrade U17", era: "current" },
   { id: "cn-jin-yucheng", name: "金昱成", en: "Jin Yucheng", country: "China PR", position: "DEF", role: "中后卫", club: "NK Lokomotiva Zagreb", era: "current" },
   { id: "cn-xie-jin", name: "谢晋", en: "Jin Xie", country: "China PR", position: "MID", role: "左中场", club: "Real Carabanchel CF", era: "current" },
-  { id: "cn-li-hao", name: "李昊", en: "Li Hao", country: "China PR", position: "GK", role: "门将", club: "Atlético Madrid / UE Cornellà", era: "returned" },
+  { id: "cn-li-hao", name: "李昊", en: "Li Hao", country: "China PR", position: "GK", role: "门将", club: "Atlético Madrid / UE Cornellà", era: "returned", trainingProgram: "万达西班牙计划" },
   { id: "cn-yang-xi", name: "杨希", en: "Alex Xi Yang", country: "China PR", position: "DEF", role: "右后卫", club: "Espanyol / L'Hospitalet", era: "returned" },
   { id: "cn-kuang-zhaolei", name: "邝兆镭", en: "Kuang Zhaolei", country: "China PR", position: "FWD", role: "右边锋", club: "DAMM CF / Atlètic Lleida", era: "returned" },
-  { id: "cn-wei-shihao", name: "韦世豪", en: "Wei Shihao", country: "China PR", position: "FWD", role: "边锋", club: "Boavista / Feirense / Leixões", era: "returned" },
+  { id: "cn-wei-shihao", name: "韦世豪", en: "Wei Shihao", country: "China PR", position: "FWD", role: "边锋", club: "Boavista / Feirense / Leixões", era: "returned", trainingProgram: "500 星计划" },
   { id: "cn-zeng-cheng", name: "曾诚", en: "Zeng Cheng", country: "China PR", position: "GK", role: "门将", club: "Persebaya Surabaya", era: "history" },
   { id: "cn-sun-jihai", name: "孙继海", en: "Sun Jihai", country: "China PR", position: "DEF", role: "右后卫", club: "Manchester City", era: "history" },
   { id: "cn-fan-zhiyi", name: "范志毅", en: "Fan Zhiyi", country: "China PR", position: "DEF", role: "中后卫", club: "Crystal Palace", era: "history" },
   { id: "cn-sun-xiang", name: "孙祥", en: "Sun Xiang", country: "China PR", position: "DEF", role: "左后卫", club: "PSV Eindhoven", era: "history" },
   { id: "cn-zheng-zhi", name: "郑智", en: "Zheng Zhi", country: "China PR", position: "DEF", role: "中后卫", club: "Charlton Athletic", era: "history" },
-  { id: "cn-li-tie", name: "李铁", en: "Li Tie", country: "China PR", position: "MID", role: "后腰", club: "Everton", era: "history" },
+  { id: "cn-li-tie", name: "李铁", en: "Li Tie", country: "China PR", position: "MID", role: "后腰", club: "Everton", era: "history", trainingProgram: "健力宝巴西" },
   { id: "cn-shao-jiayi", name: "邵佳一", en: "Shao Jiayi", country: "China PR", position: "MID", role: "前腰", club: "Energie Cottbus", era: "history" },
   { id: "cn-ma-mingyu", name: "马明宇", en: "Ma Mingyu", country: "China PR", position: "MID", role: "中场", club: "Perugia", era: "history" },
   { id: "cn-yang-chen", name: "杨晨", en: "Yang Chen", country: "China PR", position: "FWD", role: "中锋", club: "Eintracht Frankfurt", era: "history" },
@@ -37,13 +37,54 @@ const players = [
   { id: "cn-dong-fangzhuo", name: "董方卓", en: "Dong Fangzhuo", country: "China PR", position: "FWD", role: "中锋", club: "Royal Antwerp", era: "history" },
   { id: "cn-hao-junmin", name: "蒿俊闵", en: "Hao Junmin", country: "China PR", position: "MID", role: "中场", club: "Schalke 04", era: "history" },
   { id: "cn-jiang-guangtai", name: "蒋光太", en: "Tyias Browning", country: "China PR", position: "DEF", role: "中后卫", club: "Everton", era: "history" },
-  { id: "cn-li-jinyu", name: "李金羽", en: "Li Jinyu", country: "China PR", position: "FWD", role: "前锋", club: "AS Nancy", era: "history" },
+  { id: "cn-li-jinyu", name: "李金羽", en: "Li Jinyu", country: "China PR", position: "FWD", role: "前锋", club: "AS Nancy", era: "history", trainingProgram: "健力宝巴西" },
   { id: "cn-li-ke", name: "李可", en: "Nico Yennaris", country: "China PR", position: "MID", role: "后腰", club: "Arsenal / Brentford", era: "history" },
-  { id: "cn-li-weifeng", name: "李玮锋", en: "Li Weifeng", country: "China PR", position: "DEF", role: "中后卫", club: "Everton", era: "history" },
+  { id: "cn-li-weifeng", name: "李玮锋", en: "Li Weifeng", country: "China PR", position: "DEF", role: "中后卫", club: "Everton", era: "history", trainingProgram: "健力宝巴西" },
   { id: "cn-zhang-chengdong", name: "张呈栋", en: "Zhang Chengdong", country: "China PR", position: "DEF", role: "右后卫", club: "Rayo Vallecano", era: "history" },
   { id: "cn-li-lei", name: "李磊", en: "Li Lei", country: "China PR", position: "DEF", role: "左后卫", club: "Grasshopper Zürich", era: "history" },
-  { id: "cn-wang-dalei-trial", name: "王大雷", en: "Wang Dalei", country: "China PR", position: "GK", role: "门将", club: "Inter Milan 训练 / 试训（2006）", era: "trial" },
+  { id: "cn-wang-dalei-trial", name: "王大雷", en: "Wang Dalei", country: "China PR", position: "GK", role: "门将", club: "Inter Milan 训练 / 试训（2006）", era: "trial", trainingProgram: "08 之星德国培训" },
   { id: "cn-zhang-wenzhao-trial", name: "张文钊", en: "Zhang Wenzhao", country: "China PR", position: "FWD", role: "边锋", club: "Inter Milan 试训（2006）", era: "trial" },
+
+  // 成批出国培训和青少年海外培养经历单独标记，不等同于海外职业注册。
+  { id: "cn-xu-tao-jianlibao", name: "徐弢", en: "Xu Tao", country: "China PR", position: "GK", role: "门将", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+  { id: "cn-zhang-enhua-jianlibao", name: "张恩华", en: "Zhang Enhua", country: "China PR", position: "DEF", role: "中后卫", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+  { id: "cn-hao-wei-jianlibao", name: "郝伟", en: "Hao Wei", country: "China PR", position: "DEF", role: "后卫", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+  { id: "cn-zhang-xiaorui-jianlibao", name: "张效瑞", en: "Zhang Xiaorui", country: "China PR", position: "MID", role: "前腰", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+  { id: "cn-sui-dongliang-jianlibao", name: "隋东亮", en: "Sui Dongliang", country: "China PR", position: "MID", role: "中场", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+  { id: "cn-tao-wei-jianlibao", name: "陶伟", en: "Tao Wei", country: "China PR", position: "MID", role: "左中场", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+  { id: "cn-zheng-bin-jianlibao", name: "郑斌", en: "Zheng Bin", country: "China PR", position: "MID", role: "左中场", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+  { id: "cn-shang-yi-jianlibao", name: "商毅", en: "Shang Yi", country: "China PR", position: "FWD", role: "前锋", club: "健力宝青年队 · 巴西培训", era: "training", trainingProgram: "健力宝巴西" },
+
+  { id: "cn-zhang-lu-olympic-stars", name: "张鹭", en: "Zhang Lu", country: "China PR", position: "GK", role: "门将", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+  { id: "cn-zhao-mingjian-olympic-stars", name: "赵明剑", en: "Zhao Mingjian", country: "China PR", position: "DEF", role: "右后卫", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+  { id: "cn-liu-jianye-olympic-stars", name: "刘建业", en: "Liu Jianye", country: "China PR", position: "DEF", role: "右后卫", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+  { id: "cn-cui-peng-olympic-stars", name: "崔鹏", en: "Cui Peng", country: "China PR", position: "MID", role: "后腰", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+  { id: "cn-wang-yongpo-olympic-stars", name: "王永珀", en: "Wang Yongpo", country: "China PR", position: "MID", role: "前腰", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+  { id: "cn-qin-sheng-olympic-stars", name: "秦升", en: "Qin Sheng", country: "China PR", position: "MID", role: "后腰", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+  { id: "cn-yang-xu-olympic-stars", name: "杨旭", en: "Yang Xu", country: "China PR", position: "FWD", role: "中锋", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+  { id: "cn-mao-biao-olympic-stars", name: "毛彪", en: "Mao Biao", country: "China PR", position: "FWD", role: "前锋", club: "08 之星 · 德国培训", era: "training", trainingProgram: "08 之星德国培训" },
+
+  { id: "cn-li-yuanyi-500-stars", name: "李源一", en: "Li Yuanyi", country: "China PR", position: "MID", role: "中场", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+  { id: "cn-liu-yiming-500-stars", name: "刘奕鸣", en: "Liu Yiming", country: "China PR", position: "DEF", role: "中后卫", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+  { id: "cn-yan-zihao-500-stars", name: "晏紫豪", en: "Yan Zihao", country: "China PR", position: "DEF", role: "边后卫", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+  { id: "cn-deng-hanwen-500-stars", name: "邓涵文", en: "Deng Hanwen", country: "China PR", position: "DEF", role: "右后卫", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+  { id: "cn-liu-junshuai-500-stars", name: "刘军帅", en: "Liu Junshuai", country: "China PR", position: "DEF", role: "中后卫", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+  { id: "cn-ruan-yang-500-stars", name: "阮杨", en: "Ruan Yang", country: "China PR", position: "MID", role: "中场", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+  { id: "cn-jia-tianzi-500-stars", name: "贾天子", en: "Jia Tianzi", country: "China PR", position: "FWD", role: "边锋", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+  { id: "cn-luo-jing-500-stars", name: "罗竞", en: "Luo Jing", country: "China PR", position: "FWD", role: "边锋", club: "500 星计划 · 葡萄牙培训", era: "training", trainingProgram: "500 星计划" },
+
+  { id: "cn-su-jinyi-wanda", name: "苏金毅", en: "Su Jinyi", country: "China PR", position: "GK", role: "门将", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+  { id: "cn-liu-kaijie-wanda", name: "刘凯杰", en: "Liu Kaijie", country: "China PR", position: "DEF", role: "中后卫", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+  { id: "cn-wang-zhuqing-wanda", name: "王竹青", en: "Wang Zhuqing", country: "China PR", position: "DEF", role: "左后卫", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+  { id: "cn-huang-jiahui-wanda", name: "黄嘉辉", en: "Huang Jiahui", country: "China PR", position: "DEF", role: "中后卫", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+  { id: "cn-zheng-yujiang-wanda", name: "郑誉江", en: "Zheng Yujiang", country: "China PR", position: "MID", role: "前腰", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+  { id: "cn-zheng-zhiming-wanda", name: "郑智铭", en: "Zheng Zhiming", country: "China PR", position: "MID", role: "中前卫", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+  { id: "cn-liang-huan-wanda", name: "梁欢", en: "Liang Huan", country: "China PR", position: "FWD", role: "前锋", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+  { id: "cn-wan-zhilei-wanda", name: "万志磊", en: "Wan Zhilei", country: "China PR", position: "FWD", role: "前锋", club: "万达计划 · 西班牙培训", era: "training", trainingProgram: "万达西班牙计划" },
+
+  { id: "cn-wang-chu-metz", name: "王楚", en: "Wang Chu", country: "China PR", position: "MID", role: "前腰", club: "梅斯青训 · 中法德瑞项目", era: "training", trainingProgram: "中法德瑞 / 梅斯青训" },
+  { id: "cn-yi-teng-metz", name: "弋腾", en: "Yi Teng", country: "China PR", position: "DEF", role: "中后卫", club: "梅斯青训 · 中法德瑞项目", era: "training", trainingProgram: "中法德瑞 / 梅斯青训" },
+  { id: "cn-zhang-chiming-overseas-training", name: "张池明", en: "Zhang Chiming", country: "China PR", position: "FWD", role: "边锋", club: "梅斯 / 埃弗顿青训交流", era: "training", trainingProgram: "中法德瑞 / 海外青训" },
 
   { id: "jp-suzuki-zion", name: "铃木彩艳", en: "Zion Suzuki", country: "Japan", position: "GK", role: "门将", club: "Parma", era: "current" },
   { id: "jp-tomiyasu", name: "富安健洋", en: "Takehiro Tomiyasu", country: "Japan", position: "DEF", role: "中后卫", club: "Ajax", era: "current" },
@@ -106,6 +147,7 @@ const eraMeta = {
   current: { badge: "", countLabel: "现役" },
   returned: { badge: "回流", countLabel: "回流" },
   trial: { badge: "试训", countLabel: "试训" },
+  training: { badge: "培训", countLabel: "培训" },
   history: { badge: "历史", countLabel: "历史" }
 };
 
@@ -257,6 +299,7 @@ function renderRules() {
 function renderPlayerCard(player) {
   const selected = state.selected.has(player.id);
   const eraBadge = eraMeta[player.era]?.badge;
+  const programBadge = player.trainingProgram;
   return `
     <button class="pool-player ${selected ? "is-selected" : ""}" type="button" data-player-id="${player.id}" aria-pressed="${selected}">
       <span class="pool-avatar position-${player.position.toLowerCase()}">${player.name.slice(-2)}</span>
@@ -264,6 +307,7 @@ function renderPlayerCard(player) {
         <span class="pool-player-name">
           <strong>${player.name}</strong>
           ${eraBadge ? `<em>${eraBadge}</em>` : ""}
+          ${programBadge ? `<em class="is-program">${programBadge}</em>` : ""}
         </span>
         <small>${player.role} · ${player.club}</small>
       </span>
@@ -279,7 +323,7 @@ function filteredPlayers() {
     if (!state.includeHistory && player.era !== "current") return false;
     if (state.position !== "ALL" && player.position !== state.position) return false;
     if (!query) return true;
-    return [player.name, player.en, player.club, player.role]
+    return [player.name, player.en, player.club, player.role, player.trainingProgram]
       .join(" ")
       .toLocaleLowerCase()
       .includes(query);
@@ -294,12 +338,14 @@ function renderPool() {
   const currentCount = countryPool.filter((player) => player.era === "current").length;
   const returnedCount = countryPool.filter((player) => player.era === "returned").length;
   const trialCount = countryPool.filter((player) => player.era === "trial").length;
+  const trainingCount = countryPool.filter((player) => player.era === "training").length;
   const historyCount = countryPool.filter((player) => player.era === "history").length;
 
   document.querySelector("#poolTitle").textContent = `${countryNames[state.country]}留洋球员`;
   const countParts = [`${eraMeta.current.countLabel} ${currentCount}`];
   if (state.includeHistory && returnedCount > 0) countParts.push(`${eraMeta.returned.countLabel} ${returnedCount}`);
   if (state.includeHistory && trialCount > 0) countParts.push(`${eraMeta.trial.countLabel} ${trialCount}`);
+  if (state.includeHistory && trainingCount > 0) countParts.push(`${eraMeta.training.countLabel} ${trainingCount}`);
   if (state.includeHistory && historyCount > 0) countParts.push(`${eraMeta.history.countLabel} ${historyCount}`);
   document.querySelector("#poolCount").textContent = countParts.join(" · ");
   poolNode.innerHTML = filtered.map(renderPlayerCard).join("");
