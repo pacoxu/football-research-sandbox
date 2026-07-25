@@ -64,7 +64,9 @@ test("temporary event, partner, adjacent and prediction records are excluded fro
     assert.equal(dossier.headline_stats.verified_core_people, eligible.size, dossier.id);
   }
   const donglu = dossiers.find((item) => item.id === "donglu-football-boys");
-  assert.equal(donglu.event_records.length, 8);
+  assert.equal(donglu.event_records.length, 15);
+  assert.equal(donglu.program_metrics.length, 6);
+  assert.match(donglu.program_metrics.at(-1).role, /进行中/);
   assert.ok(!donglu.people.some((person) => /Primary School|Dream Team|Chinese Football Boys/.test(person.local_name)));
 });
 
@@ -73,6 +75,7 @@ test("dossier UI resolves member refs and project cards expose detail links", as
   assert.match(app, /dossier\.people/);
   assert.match(app, /view\.members/);
   assert.match(app, /DOSSIER_MEMBER_RELATIONSHIP_LABELS/);
+  assert.match(app, /dossier\.program_metrics/);
   assert.match(app, /dossier\.html\?id=/);
 });
 

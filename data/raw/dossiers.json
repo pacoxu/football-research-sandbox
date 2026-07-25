@@ -7,7 +7,7 @@
       "donglu-football-boys"
     ],
     "last_reviewed": "2026-07-25",
-    "summary": "这不是单一球队，而是叠在一起的两层结构：一层是以 2009 年龄段为核心、随后扩展到 2010、2014、2015、2016 等多年龄段的民间青训与比赛平台；另一层是董路主导的 2034 杯 U12 全国赛事平台。公开资料里较稳妥的做法，是先按批次整理公开可核主干，再把 2024 年足协 U15 第四期集训可交叉确认的 9 名球员、2025 年 6 月荷兰杯 21 人赛会名单和 2029 U20 图片线索单列管理，同时把 2034 杯按届次、赛果和分区赛规模单独建档。",
+    "summary": "这不是单一球队，而是叠在一起的两层结构：一层是以 2009 年龄段为核心、随后扩展到 2010、2014、2015、2016 等多年龄段的民间青训与比赛平台；另一层是董路主导的 2034 杯 U12 全国赛事平台。公开资料里较稳妥的做法，是先按批次整理公开可核主干，再把 2024 年足协 U15 第四期集训可交叉确认的 9 名球员、2025 年 6 月荷兰杯 21 人赛会名单和 2029 U20 图片线索单列管理，同时把 2034 杯第一至第六届按规模、赛程、赛果和来源单独建档；第六届总决赛已于 2026 年 7 月 25 日开赛，冠军将在 8 月 1 日产生。",
     "source_document": {
       "title": "Bilibili space: 中国足球小将",
       "path": "https://space.bilibili.com/346344723"
@@ -132,6 +132,26 @@
         "title": "中国足球小将资料站：球员目录",
         "path": "https://www.xiaojiangfc.com/players/",
         "summary": "2026-07-25 抓取的 86 人公开目录快照；只作为人物资料索引与待回溯线索，不单独覆盖本站的注册、生日或比赛强事实。"
+      },
+      {
+        "title": "首届2034杯总决赛回顾：64强最终排名与个人奖项",
+        "path": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-",
+        "summary": "可核验 2021 年首届总决赛 64 支参赛队、冠军中国足球小将红队、亚军深圳西班牙竞技、季军河南星途，以及邝兆镭获 MVP。"
+      },
+      {
+        "title": "直播吧：2034杯第二届小学生足球大会全国总决赛赛果",
+        "path": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm",
+        "summary": "可核验 2022 年第二届覆盖 33 个赛区、355 支球队和 5313 名球员；深圳西班牙竞技点球击败中国足球小将夺冠，广州铭途获季军。"
+      },
+      {
+        "title": "苏州工业园区：第六届2034杯总决赛赛前信息",
+        "path": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml",
+        "summary": "截至 2026-07-25 的第六届总决赛状态来源：比赛于 7 月 25 日至 8 月 1 日在苏州举行，128 支队伍、约 2600 名球员参赛，尚未产生最终名次。"
+      },
+      {
+        "title": "苏州奥体中心：第六届2034杯128强与揭幕战信息",
+        "path": "https://www.sohu.com/a/1052119257_662910",
+        "summary": "补充分区赛和国际参与规模：39 个分赛区、882 支球队、12604 名球员；全国 34 个省级地区均派队，老挝、泰国、乌兹别克斯坦首次参赛。"
       }
     ],
     "scope_note": "它不是职业俱乐部注册体系，所以海选、短训、临时参赛、正式梯队之间边界不总是清楚。这个专题至少要拆成四层：公开可核批次主干、长期培养主干、短期集训或赛会名单，以及 2034 杯赛事平台里的参赛队伍与单届合作阵容。2034 杯不等于固定一支“足球小将”队，不能把赛事成绩直接等同于长期培养名单。",
@@ -164,8 +184,18 @@
       },
       {
         "date": "2021-05",
+        "label": "2034杯首届创办",
+        "detail": "首届总决赛在苏州举行，64 支队伍参赛；中国足球小将红队夺冠，深圳西班牙竞技、河南星途分获亚军和季军，邝兆镭获赛事 MVP。"
+      },
+      {
+        "date": "2021-05",
         "label": "B站媒体档案成型",
         "detail": "可检索到《2034杯中国足球小将吕孟洋 个人集锦！》等公开视频，说明项目已开始系统把个人集锦、比赛片段和成长叙事沉淀到 B 站。"
+      },
+      {
+        "date": "2022-07",
+        "label": "2034杯第二届",
+        "detail": "赛事覆盖 33 个赛区、355 支球队和 5313 名球员，64 队进入苏州总决赛；深圳西班牙竞技与中国足球小将常规时间 1 比 1，点球大战取胜夺冠，广州铭途获季军。"
       },
       {
         "date": "2023-02",
@@ -231,6 +261,11 @@
         "date": "2026-05",
         "label": "成果期",
         "detail": "2026 AFC U17 亚洲杯中，中国队打进决赛，09 主干线的项目成果进入集中兑现期。"
+      },
+      {
+        "date": "2026-07",
+        "label": "2034杯第六届总决赛进行中",
+        "detail": "第六届分区赛覆盖 39 个赛区、882 支球队和 12604 名球员；128 支国内外球队、约 2600 名球员于 7 月 25 日至 8 月 1 日在苏州参加总决赛。截至 7 月 25 日尚未产生冠亚季军。"
       }
     ],
     "roster_views": [
@@ -3588,13 +3623,67 @@
     ],
     "event_records": [
       {
+        "name": "中国足球小将红队",
+        "local_name": "Chinese Football Boys Red",
+        "role": "2021 总决赛冠军",
+        "club": "2034杯第一届总决赛",
+        "note": "首届总决赛 64 强全胜夺冠；队长邝兆镭获赛事 MVP。",
+        "event": "2034杯总决赛公开赛果视图",
+        "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+      },
+      {
+        "name": "深圳西班牙竞技",
+        "local_name": "Shenzhen Spanish Athletic FC",
+        "role": "2021 总决赛亚军",
+        "club": "2034杯第一届总决赛",
+        "note": "首届全国总决赛亚军。",
+        "event": "2034杯总决赛公开赛果视图",
+        "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+      },
+      {
+        "name": "河南星途",
+        "local_name": "Henan Xingtu",
+        "role": "2021 总决赛季军",
+        "club": "2034杯第一届总决赛",
+        "note": "首届全国总决赛季军。",
+        "event": "2034杯总决赛公开赛果视图",
+        "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+      },
+      {
+        "name": "深圳西班牙竞技",
+        "local_name": "Shenzhen Spanish Athletic FC",
+        "role": "2022 总决赛冠军",
+        "club": "2034杯第二届总决赛",
+        "note": "决赛常规时间 1 比 1，点球大战击败中国足球小将夺冠。",
+        "event": "2034杯总决赛公开赛果视图",
+        "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+      },
+      {
+        "name": "中国足球小将",
+        "local_name": "Chinese Football Boys",
+        "role": "2022 总决赛亚军",
+        "club": "2034杯第二届总决赛",
+        "note": "决赛常规时间 1 比 1，点球大战负于深圳西班牙竞技。",
+        "event": "2034杯总决赛公开赛果视图",
+        "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+      },
+      {
+        "name": "广州铭途",
+        "local_name": "Guangzhou Mingtu",
+        "role": "2022 总决赛季军",
+        "club": "2034杯第二届总决赛",
+        "note": "第二届全国总决赛季军。",
+        "event": "2034杯总决赛公开赛果视图",
+        "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+      },
+      {
         "name": "中国足球小将",
         "local_name": "Chinese Football Boys",
         "role": "2023 总决赛冠军",
         "club": "2034杯第三届总决赛",
         "note": "冠军组决赛 2 比 1 长沙天马德馨园；该届共 37 个分赛区、683 支球队、9907 名球员、1356 场比赛，88 队进入苏州总决赛。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://www.sport.gov.cn/n20001280/n20067626/n20067766/c25808431/content.html"
       },
       {
         "name": "长沙天马德馨园小学",
@@ -3603,7 +3692,16 @@
         "club": "2034杯第三届总决赛",
         "note": "红网可核验其在冠军组决赛 1 比 2 不敌中国足球小将，获得全国亚军。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://edu.rednet.cn/content/646741/68/12893113.html"
+      },
+      {
+        "name": "重庆初心",
+        "local_name": "Chongqing Chuxin",
+        "role": "2023 总决赛季军",
+        "club": "2034杯第三届总决赛",
+        "note": "苏州市足球协会闭幕信息可核验其获得第三届季军。",
+        "event": "2034杯总决赛公开赛果视图",
+        "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
       },
       {
         "name": "陕西师范大学附属小学",
@@ -3612,7 +3710,7 @@
         "club": "2034杯第四届总决赛",
         "note": "中国日报可核验冠军归属；该届总决赛共有 1457 名球员、288 场比赛。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://caijing.chinadaily.com.cn/a/202407/22/WS669df46fa3107cd55d26bf2a.html"
       },
       {
         "name": "广州铭途",
@@ -3621,7 +3719,7 @@
         "club": "2034杯第四届总决赛",
         "note": "与陕西师大附小、中国足球小将同列第四届前三。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://caijing.chinadaily.com.cn/a/202407/22/WS669df46fa3107cd55d26bf2a.html"
       },
       {
         "name": "中国足球小将",
@@ -3630,7 +3728,7 @@
         "club": "2034杯第四届总决赛",
         "note": "这一届开始总决赛永久落户苏州工业园区。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://caijing.chinadaily.com.cn/a/202407/22/WS669df46fa3107cd55d26bf2a.html"
       },
       {
         "name": "中国足球小将",
@@ -3639,7 +3737,7 @@
         "club": "2034杯第五届总决赛",
         "note": "中国江苏网与 SIP 官方英文页都可交叉核验；决赛 5 比 0 北京梦之队。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
       },
       {
         "name": "北京梦之队",
@@ -3648,7 +3746,7 @@
         "club": "2034杯第五届总决赛",
         "note": "第五届总决赛冠亚军对阵方。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
       },
       {
         "name": "苏州奥体小将",
@@ -3657,10 +3755,59 @@
         "club": "2034杯第五届总决赛",
         "note": "中国江苏网中文口径写作“苏州奥体小将”，SIP 官方英文页写作 SZOSC Football Boys。",
         "event": "2034杯总决赛公开赛果视图",
-        "source_url": "https://space.bilibili.com/346344723"
+        "source_url": "https://jsnews.jschina.com.cn/kjwt/202507/t20250728_3567950.shtml"
       }
     ],
-    "program_metrics": [],
+    "program_metrics": [
+      {
+        "name": "1st 2034 Cup (2021)",
+        "local_name": "第一届（2021）",
+        "role": "已完赛 · 总决赛64队",
+        "club": "冠军：中国足球小将红队",
+        "note": "5月1日至5日在苏州举行。全国30个地方分赛区和1个综合赛区吸引340余支队伍；深圳西班牙竞技获亚军、河南星途获季军，邝兆镭获MVP。",
+        "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+      },
+      {
+        "name": "2nd 2034 Cup (2022)",
+        "local_name": "第二届（2022）",
+        "role": "已完赛 · 33赛区 / 355队 / 5313人",
+        "club": "冠军：深圳西班牙竞技",
+        "note": "7月24日至30日在苏州举行，64队参加总决赛。决赛常规时间1比1，深圳西班牙竞技点球取胜；中国足球小将亚军、广州铭途季军。",
+        "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+      },
+      {
+        "name": "3rd 2034 Cup (2023)",
+        "local_name": "第三届（2023）",
+        "role": "已完赛 · 37赛区 / 683队 / 9907人",
+        "club": "冠军：中国足球小将",
+        "note": "7月16日至23日在苏州举行，分区赛累计1356场、历时216天，88队进入总决赛。决赛2比1胜长沙天马德馨园；重庆初心获季军。",
+        "source_url": "https://www.sport.gov.cn/n20001280/n20067626/n20067766/c25808431/content.html"
+      },
+      {
+        "name": "4th 2034 Cup (2024)",
+        "local_name": "第四届（2024）",
+        "role": "已完赛 · 35赛区 / 600余队 / 近万人",
+        "club": "冠军：陕西师范大学附属小学",
+        "note": "7月13日至20日在苏州举行，88队、1457名球员完成288场总决赛；决赛2比1胜广州铭途，中国足球小将获季军。本届起总决赛永久落户苏州工业园区。",
+        "source_url": "https://www.sport.gov.cn/n14471/n14481/n14518/c27938143/content.html"
+      },
+      {
+        "name": "5th 2034 Cup (2025)",
+        "local_name": "第五届（2025）",
+        "role": "已完赛 · 907队 / 超1.3万人",
+        "club": "冠军：中国足球小将",
+        "note": "7月19日至26日在苏州举行，120队、2000余名球员完成416场总决赛；决赛5比0胜北京梦之队，苏州奥体小将获季军。",
+        "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
+      },
+      {
+        "name": "6th 2034 Cup (2026)",
+        "local_name": "第六届（2026）",
+        "role": "进行中 · 39赛区 / 882队 / 12604人",
+        "club": "总决赛：128队 / 约2600人",
+        "note": "7月25日至8月1日在苏州奥体中心、阳澄湖半岛足球公园等地举行。全国34个省级地区均派队，老挝、泰国、乌兹别克斯坦首次参赛；截至2026-07-25尚未产生最终名次。",
+        "source_url": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml"
+      }
+    ],
     "headline_stats": {
       "tracked_generations": 6,
       "tracked_players": 125,
