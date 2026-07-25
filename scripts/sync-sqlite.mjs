@@ -205,6 +205,33 @@ export async function syncSqlite() {
       checked_at TEXT NOT NULL
     );
 
+    CREATE TABLE overseas_training_programs (
+      id TEXT PRIMARY KEY,
+      name_json TEXT NOT NULL,
+      period TEXT NOT NULL,
+      model TEXT NOT NULL,
+      destinations_json TEXT NOT NULL,
+      organizers_json TEXT NOT NULL,
+      participant_scope_json TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      outcome_json TEXT NOT NULL,
+      boundary_note_json TEXT NOT NULL,
+      dossier_id TEXT,
+      related_special_list_id TEXT,
+      source_links_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL
+    );
+
+    CREATE TABLE overseas_training_program_stages (
+      program_id TEXT NOT NULL,
+      stage_order INTEGER NOT NULL,
+      period TEXT NOT NULL,
+      label_json TEXT NOT NULL,
+      detail_json TEXT NOT NULL,
+      PRIMARY KEY (program_id, stage_order),
+      FOREIGN KEY (program_id) REFERENCES overseas_training_programs(id) ON DELETE CASCADE
+    );
+
     CREATE TABLE dossiers (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
@@ -423,6 +450,18 @@ export async function syncSqlite() {
       representation_status, heritage_summary_json, football_summary_json,
       world_cup_2026_json, source_links_json, checked_at
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertOverseasTrainingProgram = db.prepare(`
+    INSERT INTO overseas_training_programs (
+      id, name_json, period, model, destinations_json, organizers_json,
+      participant_scope_json, summary_json, outcome_json, boundary_note_json,
+      dossier_id, related_special_list_id, source_links_json, checked_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertOverseasTrainingProgramStage = db.prepare(`
+    INSERT INTO overseas_training_program_stages (
+      program_id, stage_order, period, label_json, detail_json
+    ) VALUES (?, ?, ?, ?, ?)
   `);
   const insertDossier = db.prepare(`
     INSERT INTO dossiers (
@@ -684,6 +723,35 @@ export async function syncSqlite() {
       toJson(profile.source_links ?? []),
       chineseHeritagePlayers.checked_at
     );
+  }
+
+  const overseasTrainingPrograms = dataset.overseasHistory.overseas_training_programs;
+  for (const program of overseasTrainingPrograms.programs ?? []) {
+    insertOverseasTrainingProgram.run(
+      program.id,
+      toJson(program.name),
+      program.period,
+      program.model,
+      toJson(program.destinations ?? []),
+      toJson(program.organizers ?? []),
+      toJson(program.participant_scope),
+      toJson(program.summary),
+      toJson(program.outcome),
+      toJson(program.boundary_note),
+      program.dossier_id ?? null,
+      program.related_special_list_id ?? null,
+      toJson(program.source_links ?? []),
+      overseasTrainingPrograms.checked_at
+    );
+    for (const [index, stage] of (program.stages ?? []).entries()) {
+      insertOverseasTrainingProgramStage.run(
+        program.id,
+        index,
+        stage.period,
+        toJson(stage.label),
+        toJson(stage.detail)
+      );
+    }
   }
 
   for (const dossier of dataset.dossiers) {
