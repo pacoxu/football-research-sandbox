@@ -54,7 +54,7 @@ const players = [
   { id: "jp-endo", name: "远藤航", en: "Wataru Endo", country: "Japan", position: "MID", role: "后腰", club: "Liverpool", era: "current" },
   { id: "jp-kamada", name: "镰田大地", en: "Daichi Kamada", country: "Japan", position: "MID", role: "前腰", club: "Crystal Palace", era: "current" },
   { id: "jp-tanaka", name: "田中碧", en: "Ao Tanaka", country: "Japan", position: "MID", role: "中场", club: "Leeds United", era: "current" },
-  { id: "jp-morita", name: "守田英正", en: "Hidemasa Morita", country: "Japan", position: "MID", role: "中场", club: "Sporting CP", era: "current" },
+  { id: "jp-morita", name: "守田英正", en: "Hidemasa Morita", country: "Japan", position: "MID", role: "中场", club: "Hull City", era: "current" },
   { id: "jp-kubo", name: "久保建英", en: "Takefusa Kubo", country: "Japan", position: "FWD", role: "边锋", club: "Real Sociedad", era: "current" },
   { id: "jp-mitoma", name: "三笘薰", en: "Kaoru Mitoma", country: "Japan", position: "FWD", role: "边锋", club: "Brighton", era: "current" },
   { id: "jp-minamino", name: "南野拓实", en: "Takumi Minamino", country: "Japan", position: "FWD", role: "影锋", club: "Monaco", era: "current" },

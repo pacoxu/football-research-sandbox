@@ -8,6 +8,12 @@ async function loadChinaHistory() {
   return history.countries.find((entry) => entry.country === "China PR");
 }
 
+async function loadJapanHistory() {
+  const raw = await readFile(new URL("../data/raw/overseas-history.json", import.meta.url), "utf8");
+  const history = JSON.parse(raw);
+  return history.countries.find((entry) => entry.country === "Japan");
+}
+
 test("covers the requested lesser-known overseas careers", async () => {
   const china = await loadChinaHistory();
   const expectedNames = [
@@ -54,4 +60,30 @@ test("separates Zhang Shuo's Asian and Oceanian league records", async () => {
       { bucket: "oceania-other", appearances: 8 }
     ]
   );
+});
+
+test("tracks Hidemasa Morita's 2026 Hull City move", async () => {
+  const japan = await loadJapanHistory();
+  const morita = japan.featured_records.find((record) => record.local_name === "守田英正");
+  const lineupSource = await readFile(new URL("../assets/lineup.js", import.meta.url), "utf8");
+
+  assert.deepEqual(
+    {
+      id: morita.id,
+      bucket: morita.bucket,
+      league: morita.league,
+      club: morita.club,
+      season: morita.season
+    },
+    {
+      id: "hidemasa-morita-hull-2026",
+      bucket: "big-five",
+      league: "Premier League",
+      club: "Hull City",
+      season: "2026-2027"
+    }
+  );
+  assert.equal(morita.source_links.length, 3);
+  assert.ok(morita.source_links.some(({ url }) => url.includes("x.com/HullCity/status/")));
+  assert.match(lineupSource, /name: "守田英正".+club: "Hull City"/);
 });
