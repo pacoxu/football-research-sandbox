@@ -234,12 +234,21 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 | `bucket_definition` | 留洋层级定义，例如五大联赛、欧洲其他、亚洲其他、大洋洲其他、美洲其他等。 |
 | `countries` | 各国家/地区的留洋摘要、featured records 和 checklist。 |
 | `countries[].historical_trial_records` | 有可靠来源的历史海外训练/试训事件；必须明确 `signed`、`registration_changed`，不得混入正式留洋人数。 |
+| `countries[].naturalized_players` | 中国归化球员专题；主名单按成年国家队已出场或足协正式征召收录，并保存归化前后海外职业路径。 |
+| `chinese_heritage_players` | 全球华裔球员观察专题；按 2026 世界杯、现役资格观察和历史人物分组，保存华裔背景、代表队边界、足球履历与逐人来源。 |
+| `overseas_training_programs` | 中国球员成批出国培训计划对照；保存项目机制、人数口径、目的地、组织方、阶段时间线、成果、证据边界及专题关联。 |
 
 留洋历史记录要区分正式一线队联赛、杯赛、梯队、低级别联赛和纯青训经历，不混算。
 
 `big_five_appearance_checklist.entries[].featured_record_id` 必须指向同一国家的 `featured_records[].id`。checklist 的 `appearances` 和 `goals` 只统计五大联赛顶级联赛正式比赛；featured record 可在 `notes` 中说明杯赛、梯队或低级别经历，但不得并入该数字。
 
 历史试训记录使用 `historical-trial-only`，只说明曾发生训练或试训，不代表签约、注册或正式比赛经历。若俱乐部与国内报道对“训练/试训”用词不同，应在 `summary` 保留口径差异。
+
+归化球员专题不并入 `verified_records` 或当前留洋人数。`china_team_status` 仅允许 `senior-capped`、`senior-squad`；前者须有成年国家队比赛证据，后者只表示中国足协正式征召。`naturalization_path` 区分 `heritage` 与 `non-heritage`。`career_segments[].phase` 标明归化前、归化后海外阶段或原成长体系回归，避免把出生国职业履历误写成“从中国出发留洋”。仅有中国国籍或俱乐部注册、尚无中国成年队出场或正式征召证据的案例不进入主名单。
+
+全球华裔球员观察与中国归化球员专题相互独立。华裔背景不推导中国国籍、中国队参赛资格或个人身份认同；`representation_status` 区分成年国脚、青年国脚、资格观察、已绑定其他足协和战时非正式代表。`world_cup_2026` 仅用于有 FIFA 名单或比赛证据的本届参赛球员。
+
+出国培训计划不并入当前留洋人数。`model` 区分国字号整队驻外、大赛备战集训、多俱乐部分流和精英学院嵌入；`participant_scope` 必须保留首批、累计或报道冲突口径。项目成员、海外训练、当地注册、正式比赛和成年职业出口不能互相推导。万达逐名专题当前固定 2012—2016 五批；2017 年第六批只作为有官方来源的项目时间线事实，取得完整名单前不修改五批人数契约。
 
 ## 亚洲教练
 

@@ -8,7 +8,7 @@
       name="description"
       content="查看中日韩当前留洋样本、联赛层级对比与历史记录。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260712-world-cup-forecast" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260725-friend-links" />
   </head>
   <body data-page="overseas">
     <div class="site-shell">
@@ -19,6 +19,7 @@
         </a>
         <div class="header-actions">
           <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a class="nav-featured" data-i18n="nav.xiaojiang" href="https://xiaojiangfc.com/" target="_blank" rel="noreferrer">小将FC</a>
             <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
             <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
             <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
@@ -114,6 +115,45 @@
           </article>
         </section>
 
+        <section id="overseasTrainingProgramsSection" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="overseas.training.eyebrow">Overseas Training Programs</p>
+              <h2 data-i18n="overseas.training.title">中国球员出国培训计划</h2>
+            </div>
+            <p id="overseasTrainingProgramsMeta" class="section-note" data-i18n="common.loading">载入中</p>
+          </div>
+          <p id="overseasTrainingProgramsScope" class="section-notice"></p>
+          <div id="overseasTrainingProgramsCards" class="story-grid"></div>
+          <div id="overseasTrainingProgramsEmptyState" class="empty-state" hidden data-i18n="overseas.training.empty">当前还没有可展示的出国培训计划。</div>
+        </section>
+
+        <section id="chinaNaturalizedPlayersSection" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="overseas.naturalized.eyebrow">Naturalized Players</p>
+              <h2 data-i18n="overseas.naturalized.title">中国归化球员与海外履历</h2>
+            </div>
+            <p id="chinaNaturalizedPlayersMeta" class="section-note" data-i18n="common.loading">载入中</p>
+          </div>
+          <p id="chinaNaturalizedPlayersScope" class="section-notice"></p>
+          <div id="chinaNaturalizedPlayersCards" class="story-grid"></div>
+          <div id="chinaNaturalizedPlayersEmptyState" class="empty-state" hidden data-i18n="overseas.naturalized.empty">当前还没有可展示的中国归化球员海外履历。</div>
+        </section>
+
+        <section id="chineseHeritagePlayersSection" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="overseas.heritage.eyebrow">Chinese Heritage</p>
+              <h2 data-i18n="overseas.heritage.title">全球华裔球员观察</h2>
+            </div>
+            <p id="chineseHeritagePlayersMeta" class="section-note" data-i18n="common.loading">载入中</p>
+          </div>
+          <p id="chineseHeritagePlayersScope" class="section-notice"></p>
+          <div id="chineseHeritagePlayersGroups" class="stack-list"></div>
+          <div id="chineseHeritagePlayersEmptyState" class="empty-state" hidden data-i18n="overseas.heritage.empty">当前还没有可展示的全球华裔球员记录。</div>
+        </section>
+
         <section id="overseasHistorySection" class="content-panel">
           <div class="section-head">
             <div>
@@ -144,9 +184,17 @@
 
       <footer class="site-footer">
         <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+        <nav class="friend-links" aria-label="友情链接">
+          <strong data-i18n="common.friendlyLinks">友情链接</strong>
+          <a href="https://xiaojiangfc.com/" target="_blank" rel="noreferrer">小将FC</a>
+          <a href="https://www.thecfa.cn/" target="_blank" rel="noreferrer">中国足协</a>
+          <a href="https://www.cfl-china.cn/" target="_blank" rel="noreferrer">中足联</a>
+          <a href="https://www.the-afc.com/" target="_blank" rel="noreferrer">亚足联</a>
+          <a href="https://www.transfermarkt.com/" target="_blank" rel="noreferrer">Transfermarkt</a>
+        </nav>
       </footer>
     </div>
 
-    <script type="module" src="./assets/app.js?v=20260719-data-quality-v2"></script>
+    <script type="module" src="./assets/app.js?v=20260720-overseas-training"></script>
   </body>
 </html>

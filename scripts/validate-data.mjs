@@ -1368,6 +1368,184 @@ function validateOverseasRecord(record, countryName, allowedBuckets) {
   assert(allowedBuckets.has(record.bucket), `Unknown overseas bucket on ${record.id}`);
 }
 
+function validateChinaNaturalizedPlayers(collection, featuredRecords) {
+  assert(collection && typeof collection === "object", "Missing China naturalized-player collection");
+  assert(isIsoDate(collection.checked_at), "Invalid China naturalized-player checked_at");
+  assert(collection.scope?.zh && collection.scope?.en, "Missing China naturalized-player scope");
+  assert(collection.boundary_note?.zh && collection.boundary_note?.en, "Missing China naturalized-player boundary note");
+  assert(Array.isArray(collection.profiles), "Invalid China naturalized-player profiles");
+
+  const expectedStatuses = new Map([
+    ["ai-kesen-elkeson", "senior-capped"],
+    ["alan-carvalho", "senior-capped"],
+    ["luo-guofu-aloisio", "senior-capped"],
+    ["fei-nanduo-fernandinho", "senior-capped"],
+    ["jiang-guangtai-tyias-browning", "senior-capped"],
+    ["li-ke-nico-yennaris", "senior-capped"],
+    ["hou-yongyong-john-hou-saeter", "senior-squad"],
+    ["serginho-sergio-antonio", "senior-capped"]
+  ]);
+  const allowedPaths = new Set(["heritage", "non-heritage"]);
+  const allowedPhases = new Set([
+    "pre-naturalization",
+    "post-naturalization",
+    "pre-naturalization-and-return"
+  ]);
+  const featuredIds = new Set((featuredRecords ?? []).map((record) => record.id));
+  const profileIds = new Set();
+
+  assert(collection.profiles.length === expectedStatuses.size, "China naturalized-player primary list must contain eight profiles");
+  for (const profile of collection.profiles) {
+    assert(expectedStatuses.has(profile.id), `Unexpected China naturalized-player profile: ${profile.id}`);
+    assert(!profileIds.has(profile.id), `Duplicate China naturalized-player profile: ${profile.id}`);
+    profileIds.add(profile.id);
+    assert(profile.name && profile.china_name && profile.birth_country && profile.position, `Incomplete naturalized-player identity: ${profile.id}`);
+    assert(allowedPaths.has(profile.naturalization_path), `Invalid naturalization path on ${profile.id}`);
+    assert(profile.china_team_status === expectedStatuses.get(profile.id), `Invalid China team status on ${profile.id}`);
+    assert(profile.summary?.zh && profile.summary?.en, `Missing localized naturalized-player summary on ${profile.id}`);
+    assert(Array.isArray(profile.career_segments) && profile.career_segments.length > 0, `Missing overseas career segments on ${profile.id}`);
+    for (const segment of profile.career_segments) {
+      assert(segment.period && segment.country, `Invalid career segment on ${profile.id}`);
+      assert(allowedPhases.has(segment.phase), `Invalid career phase on ${profile.id}`);
+      assert(Array.isArray(segment.clubs) && segment.clubs.length > 0, `Missing career clubs on ${profile.id}`);
+      assert(segment.summary?.zh && segment.summary?.en, `Missing localized career summary on ${profile.id}`);
+    }
+    assert(Array.isArray(profile.source_links) && profile.source_links.length >= 2, `Insufficient naturalized-player sources on ${profile.id}`);
+    for (const source of profile.source_links) {
+      assert(source.label && /^https:\/\//.test(source.url), `Invalid naturalized-player source on ${profile.id}`);
+    }
+    assert(Array.isArray(profile.related_featured_record_ids), `Invalid related featured records on ${profile.id}`);
+    for (const recordId of profile.related_featured_record_ids) {
+      assert(featuredIds.has(recordId), `Unknown related featured record on ${profile.id}: ${recordId}`);
+    }
+  }
+  for (const expectedId of expectedStatuses.keys()) {
+    assert(profileIds.has(expectedId), `Missing China naturalized-player profile: ${expectedId}`);
+  }
+}
+
+function validateChineseHeritagePlayers(collection) {
+  assert(collection && typeof collection === "object", "Missing Chinese-heritage player collection");
+  assert(isIsoDate(collection.checked_at), "Invalid Chinese-heritage collection checked_at");
+  assert(collection.scope_note?.zh && collection.scope_note?.en, "Missing Chinese-heritage scope note");
+  assert(Array.isArray(collection.groups), "Invalid Chinese-heritage groups");
+  assert(Array.isArray(collection.profiles), "Invalid Chinese-heritage profiles");
+
+  const expectedGroups = new Map([
+    ["world-cup-2026", 3],
+    ["active-watch", 5],
+    ["historical", 5]
+  ]);
+  const expectedProfileIds = new Set([
+    "virgil-van-dijk", "tahith-chong", "elijah-just", "kian-fitz-jim", "dion-cools",
+    "lavere-corbin-ong", "alexander-ndoumbou", "perry-ng", "brian-ching", "mark-chung",
+    "tscheu-la-ling", "aron-winter", "frank-soo"
+  ]);
+  const allowedStatuses = new Set([
+    "senior-international", "youth-international", "eligibility-watch",
+    "association-locked", "wartime-unofficial"
+  ]);
+  const groupIds = new Set();
+  for (const group of collection.groups) {
+    assert(expectedGroups.has(group.id), `Unexpected Chinese-heritage group: ${group.id}`);
+    assert(!groupIds.has(group.id), `Duplicate Chinese-heritage group: ${group.id}`);
+    assert(group.label?.zh && group.label?.en, `Missing Chinese-heritage group label: ${group.id}`);
+    groupIds.add(group.id);
+  }
+  assert(groupIds.size === expectedGroups.size, "Chinese-heritage group coverage is incomplete");
+  assert(collection.profiles.length === expectedProfileIds.size, "Chinese-heritage list must contain 13 profiles");
+
+  const profileIds = new Set();
+  for (const profile of collection.profiles) {
+    assert(expectedProfileIds.has(profile.id), `Unexpected Chinese-heritage profile: ${profile.id}`);
+    assert(!profileIds.has(profile.id), `Duplicate Chinese-heritage profile: ${profile.id}`);
+    profileIds.add(profile.id);
+    assert(profile.name && profile.local_name, `Incomplete Chinese-heritage identity: ${profile.id}`);
+    assert(groupIds.has(profile.group), `Unknown Chinese-heritage group on ${profile.id}`);
+    assert(allowedStatuses.has(profile.representation_status), `Invalid representation status on ${profile.id}`);
+    assert(profile.heritage_summary?.zh && profile.heritage_summary?.en, `Missing heritage summary on ${profile.id}`);
+    assert(profile.football_summary?.zh && profile.football_summary?.en, `Missing football summary on ${profile.id}`);
+    assert(Array.isArray(profile.source_links) && profile.source_links.length >= 2, `Insufficient Chinese-heritage sources on ${profile.id}`);
+    for (const source of profile.source_links) {
+      assert(source.label && /^https:\/\//.test(source.url), `Invalid Chinese-heritage source on ${profile.id}`);
+    }
+    if (profile.group === "world-cup-2026") {
+      assert(profile.represented_team, `Missing represented team on World Cup profile ${profile.id}`);
+      assert(["final-squad", "played"].includes(profile.world_cup_2026?.squad_status), `Invalid World Cup status on ${profile.id}`);
+      assert(profile.world_cup_2026?.tournament_summary?.zh && profile.world_cup_2026?.tournament_summary?.en, `Missing World Cup summary on ${profile.id}`);
+    } else {
+      assert(profile.world_cup_2026 === undefined, `Unexpected World Cup record on ${profile.id}`);
+    }
+  }
+  for (const [groupId, expectedCount] of expectedGroups) {
+    assert(collection.profiles.filter((profile) => profile.group === groupId).length === expectedCount, `Invalid Chinese-heritage count for ${groupId}`);
+  }
+  const perry = collection.profiles.find((profile) => profile.id === "perry-ng");
+  assert(perry.represented_team === null && perry.target_team === "Singapore" && perry.representation_status === "eligibility-watch", "Perry Ng must remain an eligibility watch");
+  assert(collection.profiles.find((profile) => profile.id === "alexander-ndoumbou")?.representation_status === "association-locked", "Alexander N'Doumbou must retain association-lock boundary");
+  assert(collection.profiles.find((profile) => profile.id === "frank-soo")?.representation_status === "wartime-unofficial", "Frank Soo appearances must remain wartime-unofficial");
+}
+
+function validateOverseasTrainingPrograms(collection, dossiers, overseasHistory) {
+  assert(collection && typeof collection === "object", "Missing overseas training-program collection");
+  assert(isIsoDate(collection.checked_at), "Invalid overseas training-program checked_at");
+  assert(collection.scope_note?.zh && collection.scope_note?.en, "Missing overseas training-program scope note");
+  assert(Array.isArray(collection.programs), "Invalid overseas training-program list");
+
+  const expectedPrograms = new Set([
+    "jianlibao-brazil",
+    "olympic-stars-germany",
+    "500-star-portugal",
+    "wanda-spain-plan"
+  ]);
+  const allowedModels = new Set([
+    "centralized-national-cohort",
+    "national-team-preparation",
+    "distributed-club-placement",
+    "elite-academy-placement"
+  ]);
+  const dossierIds = new Set(dossiers.map((dossier) => dossier.id));
+  const specialListIds = new Set(
+    overseasHistory.countries.flatMap((country) =>
+      (country.special_lists ?? []).map((list) => list.id)
+    )
+  );
+  const programIds = new Set();
+
+  assert(collection.programs.length === expectedPrograms.size, "Expected four overseas training programs");
+  for (const program of collection.programs) {
+    assert(expectedPrograms.has(program.id), `Unexpected overseas training program: ${program.id}`);
+    assert(!programIds.has(program.id), `Duplicate overseas training program: ${program.id}`);
+    programIds.add(program.id);
+    assert(program.name?.zh && program.name?.en && program.period, `Incomplete training-program identity: ${program.id}`);
+    assert(allowedModels.has(program.model), `Invalid training-program model on ${program.id}`);
+    assert(Array.isArray(program.destinations) && program.destinations.length > 0, `Missing training destination on ${program.id}`);
+    assert(Array.isArray(program.organizers) && program.organizers.length > 0, `Missing training organizer on ${program.id}`);
+    for (const field of ["participant_scope", "summary", "outcome", "boundary_note"]) {
+      assert(program[field]?.zh && program[field]?.en, `Missing localized ${field} on ${program.id}`);
+    }
+    assert(Array.isArray(program.stages) && program.stages.length >= 3, `Insufficient training stages on ${program.id}`);
+    for (const stage of program.stages) {
+      assert(stage.period && stage.label?.zh && stage.label?.en, `Invalid training stage on ${program.id}`);
+      assert(stage.detail?.zh && stage.detail?.en, `Missing training-stage detail on ${program.id}`);
+    }
+    assert(Array.isArray(program.source_links) && program.source_links.length >= 2, `Insufficient training-program sources on ${program.id}`);
+    for (const source of program.source_links) {
+      assert(source.label && /^https:\/\//.test(source.url), `Invalid training-program source on ${program.id}`);
+    }
+    if (program.dossier_id) {
+      assert(dossierIds.has(program.dossier_id), `Unknown training-program dossier on ${program.id}`);
+    }
+    if (program.related_special_list_id) {
+      assert(specialListIds.has(program.related_special_list_id), `Unknown training-program special list on ${program.id}`);
+    }
+  }
+  assert(collection.programs.find((program) => program.id === "jianlibao-brazil")?.participant_scope.zh.includes("29 人"), "Jianlibao master cohort must retain the 29-person boundary");
+  assert(collection.programs.find((program) => program.id === "olympic-stars-germany")?.participant_scope.zh.includes("25/27"), "Olympic Stars must retain the 25/27 reporting conflict");
+  assert(collection.programs.find((program) => program.id === "500-star-portugal")?.participant_scope.zh.includes("24 人"), "500 Stars must retain its 24-person launch scope");
+  assert(collection.programs.find((program) => program.id === "wanda-spain-plan")?.participant_scope.zh.includes("第六批"), "Wanda must document the sixth-cohort boundary");
+}
+
 function validatePlayerNames(player) {
   assert(typeof player.names === "object" && player.names !== null, `Missing names block on ${player.id}`);
   assert(typeof player.names.zh === "string" && player.names.zh.length > 0, `Missing names.zh on ${player.id}`);
@@ -2768,6 +2946,9 @@ export async function validateData(referenceDate = new Date().toISOString().slic
         country.featured_records
       );
     }
+    if (country.country === "China PR") {
+      validateChinaNaturalizedPlayers(country.naturalized_players, country.featured_records);
+    }
     if (country.featured_records !== undefined) {
       assert(
         Array.isArray(country.featured_records),
@@ -2780,6 +2961,12 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   }
   validateOverseasMarketValuePeakRanking(
     dataset.overseasHistory.market_value_peak_ranking,
+    dataset.overseasHistory
+  );
+  validateChineseHeritagePlayers(dataset.overseasHistory.chinese_heritage_players);
+  validateOverseasTrainingPrograms(
+    dataset.overseasHistory.overseas_training_programs,
+    dataset.dossiers,
     dataset.overseasHistory
   );
 

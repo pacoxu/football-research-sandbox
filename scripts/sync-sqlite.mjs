@@ -163,6 +163,75 @@ export async function syncSqlite() {
       FOREIGN KEY (country) REFERENCES overseas_buckets(country) ON DELETE CASCADE
     );
 
+    CREATE TABLE china_naturalized_players (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      china_name TEXT NOT NULL,
+      former_registration_names_json TEXT NOT NULL,
+      birth_country TEXT NOT NULL,
+      position TEXT NOT NULL,
+      naturalization_path TEXT NOT NULL,
+      china_team_status TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      related_featured_record_ids_json TEXT NOT NULL,
+      source_links_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL
+    );
+
+    CREATE TABLE china_naturalized_career_segments (
+      player_id TEXT NOT NULL,
+      segment_order INTEGER NOT NULL,
+      period TEXT NOT NULL,
+      phase TEXT NOT NULL,
+      country TEXT NOT NULL,
+      clubs_json TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      PRIMARY KEY (player_id, segment_order),
+      FOREIGN KEY (player_id) REFERENCES china_naturalized_players(id) ON DELETE CASCADE
+    );
+
+    CREATE TABLE chinese_heritage_players (
+      id TEXT PRIMARY KEY,
+      name TEXT NOT NULL,
+      local_name TEXT NOT NULL,
+      group_id TEXT NOT NULL,
+      represented_team TEXT,
+      target_team TEXT,
+      representation_status TEXT NOT NULL,
+      heritage_summary_json TEXT NOT NULL,
+      football_summary_json TEXT NOT NULL,
+      world_cup_2026_json TEXT,
+      source_links_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL
+    );
+
+    CREATE TABLE overseas_training_programs (
+      id TEXT PRIMARY KEY,
+      name_json TEXT NOT NULL,
+      period TEXT NOT NULL,
+      model TEXT NOT NULL,
+      destinations_json TEXT NOT NULL,
+      organizers_json TEXT NOT NULL,
+      participant_scope_json TEXT NOT NULL,
+      summary_json TEXT NOT NULL,
+      outcome_json TEXT NOT NULL,
+      boundary_note_json TEXT NOT NULL,
+      dossier_id TEXT,
+      related_special_list_id TEXT,
+      source_links_json TEXT NOT NULL,
+      checked_at TEXT NOT NULL
+    );
+
+    CREATE TABLE overseas_training_program_stages (
+      program_id TEXT NOT NULL,
+      stage_order INTEGER NOT NULL,
+      period TEXT NOT NULL,
+      label_json TEXT NOT NULL,
+      detail_json TEXT NOT NULL,
+      PRIMARY KEY (program_id, stage_order),
+      FOREIGN KEY (program_id) REFERENCES overseas_training_programs(id) ON DELETE CASCADE
+    );
+
     CREATE TABLE dossiers (
       id TEXT PRIMARY KEY,
       name TEXT NOT NULL,
@@ -362,6 +431,37 @@ export async function syncSqlite() {
       history_year_range, appearances, appearance_label, active_abroad,
       competitive_debut, summary, notes_json
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertChinaNaturalizedPlayer = db.prepare(`
+    INSERT INTO china_naturalized_players (
+      id, name, china_name, former_registration_names_json, birth_country, position,
+      naturalization_path, china_team_status, summary_json,
+      related_featured_record_ids_json, source_links_json, checked_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertChinaNaturalizedCareerSegment = db.prepare(`
+    INSERT INTO china_naturalized_career_segments (
+      player_id, segment_order, period, phase, country, clubs_json, summary_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertChineseHeritagePlayer = db.prepare(`
+    INSERT INTO chinese_heritage_players (
+      id, name, local_name, group_id, represented_team, target_team,
+      representation_status, heritage_summary_json, football_summary_json,
+      world_cup_2026_json, source_links_json, checked_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertOverseasTrainingProgram = db.prepare(`
+    INSERT INTO overseas_training_programs (
+      id, name_json, period, model, destinations_json, organizers_json,
+      participant_scope_json, summary_json, outcome_json, boundary_note_json,
+      dossier_id, related_special_list_id, source_links_json, checked_at
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+  `);
+  const insertOverseasTrainingProgramStage = db.prepare(`
+    INSERT INTO overseas_training_program_stages (
+      program_id, stage_order, period, label_json, detail_json
+    ) VALUES (?, ?, ?, ?, ?)
   `);
   const insertDossier = db.prepare(`
     INSERT INTO dossiers (
@@ -573,6 +673,83 @@ export async function syncSqlite() {
         record.competitive_debut ? 1 : 0,
         record.summary,
         toJson(record.notes)
+      );
+    }
+
+    if (country.country === "China PR" && country.naturalized_players) {
+      for (const profile of country.naturalized_players.profiles ?? []) {
+        insertChinaNaturalizedPlayer.run(
+          profile.id,
+          profile.name,
+          profile.china_name,
+          toJson(profile.former_registration_names ?? []),
+          profile.birth_country,
+          profile.position,
+          profile.naturalization_path,
+          profile.china_team_status,
+          toJson(profile.summary),
+          toJson(profile.related_featured_record_ids ?? []),
+          toJson(profile.source_links ?? []),
+          country.naturalized_players.checked_at
+        );
+        for (const [index, segment] of (profile.career_segments ?? []).entries()) {
+          insertChinaNaturalizedCareerSegment.run(
+            profile.id,
+            index,
+            segment.period,
+            segment.phase,
+            segment.country,
+            toJson(segment.clubs ?? []),
+            toJson(segment.summary)
+          );
+        }
+      }
+    }
+  }
+
+  const chineseHeritagePlayers = dataset.overseasHistory.chinese_heritage_players;
+  for (const profile of chineseHeritagePlayers.profiles ?? []) {
+    insertChineseHeritagePlayer.run(
+      profile.id,
+      profile.name,
+      profile.local_name,
+      profile.group,
+      profile.represented_team ?? null,
+      profile.target_team ?? null,
+      profile.representation_status,
+      toJson(profile.heritage_summary),
+      toJson(profile.football_summary),
+      profile.world_cup_2026 ? toJson(profile.world_cup_2026) : null,
+      toJson(profile.source_links ?? []),
+      chineseHeritagePlayers.checked_at
+    );
+  }
+
+  const overseasTrainingPrograms = dataset.overseasHistory.overseas_training_programs;
+  for (const program of overseasTrainingPrograms.programs ?? []) {
+    insertOverseasTrainingProgram.run(
+      program.id,
+      toJson(program.name),
+      program.period,
+      program.model,
+      toJson(program.destinations ?? []),
+      toJson(program.organizers ?? []),
+      toJson(program.participant_scope),
+      toJson(program.summary),
+      toJson(program.outcome),
+      toJson(program.boundary_note),
+      program.dossier_id ?? null,
+      program.related_special_list_id ?? null,
+      toJson(program.source_links ?? []),
+      overseasTrainingPrograms.checked_at
+    );
+    for (const [index, stage] of (program.stages ?? []).entries()) {
+      insertOverseasTrainingProgramStage.run(
+        program.id,
+        index,
+        stage.period,
+        toJson(stage.label),
+        toJson(stage.detail)
       );
     }
   }
