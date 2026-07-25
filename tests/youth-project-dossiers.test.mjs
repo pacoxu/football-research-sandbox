@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import test from "node:test";
+import { loadDataset } from "../scripts/lib/data-loader.mjs";
 
 const targetIds = [
   "donglu-football-boys", "wanda-spain-plan", "genbao-football-base",
@@ -73,4 +74,64 @@ test("dossier UI resolves member refs and project cards expose detail links", as
   assert.match(app, /view\.members/);
   assert.match(app, /DOSSIER_MEMBER_RELATIONSHIP_LABELS/);
   assert.match(app, /dossier\.html\?id=/);
+});
+
+test("Donglu dossier publishes an 86-person secondary profile index without inflating the main player library", async () => {
+  const dataset = await loadDataset();
+  const dossier = dossiers.find((item) => item.id === "donglu-football-boys");
+  const profiles = dossier.external_player_profiles;
+  const personIds = new Set(dossier.people.map((person) => person.id));
+  const mainPlayerIds = new Set(dataset.players.map((player) => player.id));
+
+  assert.equal(profiles.length, 86);
+  assert.equal(dossier.people.length, 125);
+  assert.equal(new Set(profiles.map((profile) => profile.id)).size, 86);
+  assert.equal(new Set(profiles.map((profile) => profile.person_id)).size, 86);
+  assert.equal(profiles.filter((profile) => profile.dossier_person_status === "existing").length, 47);
+  assert.equal(profiles.filter((profile) => profile.dossier_person_status === "added").length, 39);
+  assert.equal(profiles.filter((profile) => profile.player_id).length, 14);
+  assert.ok(profiles.every((profile) => personIds.has(profile.person_id)));
+  assert.ok(profiles.every((profile) => /^https:\/\/www\.xiaojiangfc\.com\/players\/[^/]+\/$/.test(profile.source_url)));
+  assert.ok(profiles.every((profile) => profile.birth_year === null || /^\d{4}$/.test(profile.birth_year)));
+  assert.ok(profiles.filter((profile) => profile.player_id).every((profile) => mainPlayerIds.has(profile.player_id)));
+
+  const linkedIds = new Set(profiles.flatMap((profile) => profile.player_id ? [profile.player_id] : []));
+  for (const player of dataset.players.filter((item) => linkedIds.has(item.id))) {
+    assert.ok(
+      player.external_links.some((link) => /^https:\/\/www\.xiaojiangfc\.com\/players\//.test(link.url)),
+      `${player.id} missing xiaojiangfc profile link`
+    );
+  }
+});
+
+test("Zhang Lintong conflict remains explicit and does not overwrite the main birth date", async () => {
+  const dataset = await loadDataset();
+  const dossier = dossiers.find((item) => item.id === "donglu-football-boys");
+  const profile = dossier.external_player_profiles.find((item) => item.id === "zhang-lintong");
+  const player = dataset.players.find((item) => item.id === "cn-zhang-lindong-2010");
+
+  assert.equal(profile.birth_year, "2009");
+  assert.deepEqual(
+    profile.conflicts.map((conflict) => [conflict.field, conflict.external_value, conflict.site_value]),
+    [["birth_year", "2009", "2010"]]
+  );
+  assert.equal(player.birth_date, "2010-02-25");
+});
+
+test("dossier profile directory and detail route expose filters, source boundaries and main-player links", async () => {
+  const [app, dossierPage, profilePage] = await Promise.all([
+    fs.readFile(new URL("../assets/app.js", import.meta.url), "utf8"),
+    fs.readFile(new URL("../dossier.html", import.meta.url), "utf8"),
+    fs.readFile(new URL("../dossier-player.html", import.meta.url), "utf8")
+  ]);
+
+  assert.match(dossierPage, /id="dossierExternalProfileFilters"/);
+  assert.match(dossierPage, /id="dossierExternalProfiles"/);
+  assert.match(profilePage, /data-page="dossier-player-detail"/);
+  assert.match(profilePage, /id="dossierPlayerEvidence"/);
+  assert.match(app, /renderDossierExternalProfiles/);
+  assert.match(app, /renderDossierPlayerDetailPage/);
+  assert.match(app, /buildDossierPlayerDetailUrl/);
+  assert.match(app, /profile\.conflicts/);
+  assert.match(app, /linkedProjectProfile/);
 });

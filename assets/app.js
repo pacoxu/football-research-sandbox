@@ -48,6 +48,7 @@ const state = {
   tournamentFilters: {
     level: "all"
   },
+  dossierProfileFilter: "all",
   youthLeagueFilters: {
     season: "all",
     country: "all",
@@ -100,6 +101,8 @@ const UI_COPY = {
     "page.data-center.description": "查看研究样本的数据完整度、来源等级、复核时效、国家青训对比、项目目录与教练目录。",
     "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
     "page.dossier-detail.description": "查看青训机构沿革、代表球员代际、当前状态和来源边界。",
+    "page.dossier-player-detail.title": "专题人物 | 青训球员追踪站",
+    "page.dossier-player-detail.description": "查看专题人物的公开批次、代表经历、站内关联与来源边界。",
     "page.predictions.title": "亚洲世界杯长期预测 | 青训球员追踪站",
     "page.predictions.description": "结合成年实力、青年比赛、职业转化与质量留洋分钟，研究 2030 至 2042 年亚洲球队世界杯晋级前景。",
     "page.coaches.title": "国内青训教练 | 青训球员追踪站",
@@ -438,7 +441,50 @@ const UI_COPY = {
     "dossier.player.asOf": "截至 {date}",
     "dossier.player.source": "现状来源",
     "dossier.player.profile": "站内球员档案",
+    "dossier.player.projectProfile": "专题人物页",
     "dossier.project.open": "查看专题档案",
+    "dossier.externalProfiles.eyebrow": "Public Profile Index",
+    "dossier.externalProfiles.title": "足球小将人物资料目录",
+    "dossier.externalProfiles.note": "本目录按外部资料站公开页面建立索引，不能替代足协、俱乐部或赛事注册证明。",
+    "dossier.externalProfiles.all": "全部",
+    "dossier.externalProfiles.pending": "年份待补",
+    "dossier.externalProfiles.meta": "显示 {count} / {total} 人",
+    "dossier.externalProfiles.linked": "已关联主球员库",
+    "dossier.externalProfiles.open": "查看人物介绍",
+    "dossierPlayer.breadcrumb.dossier": "专题档案",
+    "dossierPlayer.breadcrumb.detail": "专题人物",
+    "dossierPlayer.hero.eyebrow": "Project Player Profile",
+    "dossierPlayer.hero.sourceBoundary": "外部资料索引 · 待回溯原始来源",
+    "dossierPlayer.hero.mainProfile": "查看完整球员档案",
+    "dossierPlayer.hero.back": "返回专题",
+    "dossierPlayer.notFound.title": "未找到对应专题人物",
+    "dossierPlayer.notFound.text": "当前人物不存在、专题参数错误，或尚未进入公开资料索引。",
+    "dossierPlayer.stats.birthYear": "公开出生年份",
+    "dossierPlayer.stats.squad": "资料站批次",
+    "dossierPlayer.stats.position": "公开位置",
+    "dossierPlayer.stats.checked": "资料核查",
+    "dossierPlayer.experience.eyebrow": "Public Profile",
+    "dossierPlayer.experience.title": "公开简介与代表经历",
+    "dossierPlayer.experience.label": "资料站公开说法",
+    "dossierPlayer.experience.boundary": "以下内容按二次资料站页面原意摘要，仅作为检索线索；未回溯原始来源前不进入本站强事实字段。",
+    "dossierPlayer.status.eyebrow": "Site Record",
+    "dossierPlayer.status.title": "本站现状记录",
+    "dossierPlayer.status.organization": "当前机构",
+    "dossierPlayer.status.category": "状态",
+    "dossierPlayer.status.asOf": "核查日期",
+    "dossierPlayer.status.confidence": "置信度",
+    "dossierPlayer.status.note": "边界说明",
+    "dossierPlayer.relationships.eyebrow": "Roster Context",
+    "dossierPlayer.relationships.title": "专题名单关系",
+    "dossierPlayer.relationships.empty": "该人物当前只存在于外部资料索引，尚未进入本站已核名单视图。",
+    "dossierPlayer.relationships.type": "关系：{value}",
+    "dossierPlayer.relationships.verification": "名单核验：{value}",
+    "dossierPlayer.evidence.eyebrow": "Evidence Boundary",
+    "dossierPlayer.evidence.title": "来源与核验边界",
+    "dossierPlayer.evidence.external": "中国足球小将资料站人物页",
+    "dossierPlayer.evidence.externalType": "二次公开资料索引",
+    "dossierPlayer.evidence.verification": "本站使用边界",
+    "dossierPlayer.evidence.conflict": "字段冲突：{field}",
     "dossier.boundaries.eyebrow": "Boundaries",
     "dossier.boundaries.title": "口径与争议",
     "dossier.questions.eyebrow": "Follow-up",
@@ -761,6 +807,8 @@ const UI_COPY = {
     "page.data-center.description": "Review sample completeness, source tiers, freshness, country comparisons, programme directories and coach directories.",
     "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
     "page.dossier-detail.description": "Explore an academy's history, player generations, current status, and source boundaries.",
+    "page.dossier-player-detail.title": "Project Player | Youth Player Tracking Desk",
+    "page.dossier-player-detail.description": "Review a project player's public cohort, representative experience, site links and evidence boundary.",
     "page.predictions.title": "Long-range Asian World Cup Forecast | Youth Player Tracking Desk",
     "page.predictions.description": "A research forecast for Asian World Cup qualification from 2030 to 2042, combining senior strength, youth results, professional transition and quality-weighted overseas minutes.",
     "page.coaches.title": "Youth Development Coaches in China | Youth Player Tracking Desk",
@@ -1099,7 +1147,50 @@ const UI_COPY = {
     "dossier.player.asOf": "As of {date}",
     "dossier.player.source": "Status source",
     "dossier.player.profile": "Site player profile",
+    "dossier.player.projectProfile": "Project player profile",
     "dossier.project.open": "Open dossier",
+    "dossier.externalProfiles.eyebrow": "Public Profile Index",
+    "dossier.externalProfiles.title": "China Football Boys profile directory",
+    "dossier.externalProfiles.note": "This directory indexes pages from a secondary public profile site; it does not replace association, club or competition registration evidence.",
+    "dossier.externalProfiles.all": "All",
+    "dossier.externalProfiles.pending": "Year pending",
+    "dossier.externalProfiles.meta": "Showing {count} / {total}",
+    "dossier.externalProfiles.linked": "Linked to main player database",
+    "dossier.externalProfiles.open": "Open profile",
+    "dossierPlayer.breadcrumb.dossier": "Dossier",
+    "dossierPlayer.breadcrumb.detail": "Project player",
+    "dossierPlayer.hero.eyebrow": "Project Player Profile",
+    "dossierPlayer.hero.sourceBoundary": "Secondary profile index · primary sources pending",
+    "dossierPlayer.hero.mainProfile": "Open full player profile",
+    "dossierPlayer.hero.back": "Back to dossier",
+    "dossierPlayer.notFound.title": "Project player not found",
+    "dossierPlayer.notFound.text": "This person does not exist, the dossier parameter is invalid, or the profile is not published.",
+    "dossierPlayer.stats.birthYear": "Public birth year",
+    "dossierPlayer.stats.squad": "Listed cohort",
+    "dossierPlayer.stats.position": "Public position",
+    "dossierPlayer.stats.checked": "Checked",
+    "dossierPlayer.experience.eyebrow": "Public Profile",
+    "dossierPlayer.experience.title": "Public summary and representative experience",
+    "dossierPlayer.experience.label": "Secondary-site claim",
+    "dossierPlayer.experience.boundary": "The following is a concise summary of a secondary profile page. It remains a research lead until its primary sources are checked.",
+    "dossierPlayer.status.eyebrow": "Site Record",
+    "dossierPlayer.status.title": "Current site record",
+    "dossierPlayer.status.organization": "Current organization",
+    "dossierPlayer.status.category": "Status",
+    "dossierPlayer.status.asOf": "Checked",
+    "dossierPlayer.status.confidence": "Confidence",
+    "dossierPlayer.status.note": "Boundary note",
+    "dossierPlayer.relationships.eyebrow": "Roster Context",
+    "dossierPlayer.relationships.title": "Dossier roster relationships",
+    "dossierPlayer.relationships.empty": "This person currently appears only in the external profile index and not in a verified site roster view.",
+    "dossierPlayer.relationships.type": "Relationship: {value}",
+    "dossierPlayer.relationships.verification": "Roster verification: {value}",
+    "dossierPlayer.evidence.eyebrow": "Evidence Boundary",
+    "dossierPlayer.evidence.title": "Sources and verification boundary",
+    "dossierPlayer.evidence.external": "China Football Boys profile page",
+    "dossierPlayer.evidence.externalType": "Secondary public profile index",
+    "dossierPlayer.evidence.verification": "Site usage boundary",
+    "dossierPlayer.evidence.conflict": "Field conflict: {field}",
     "dossier.boundaries.eyebrow": "Boundaries",
     "dossier.boundaries.title": "Scope and caveats",
     "dossier.questions.eyebrow": "Follow-up",
@@ -1693,6 +1784,10 @@ const PAGE_METADATA = {
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
   "data-center": { title: "page.data-center.title", description: "page.data-center.description" },
   "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" },
+  "dossier-player-detail": {
+    title: "page.dossier-player-detail.title",
+    description: "page.dossier-player-detail.description"
+  },
   predictions: { title: "page.predictions.title", description: "page.predictions.description" }
 };
 
@@ -2178,6 +2273,11 @@ async function boot() {
 
     if (page === "dossier-detail") {
       renderDossierDetailPage();
+      return;
+    }
+
+    if (page === "dossier-player-detail") {
+      renderDossierPlayerDetailPage();
       return;
     }
 
@@ -3224,6 +3324,10 @@ function buildPlayerDetailUrl(id) {
   return `./player.html?id=${encodeURIComponent(id)}`;
 }
 
+function buildDossierPlayerDetailUrl(dossierId, profileId) {
+  return `./dossier-player.html?dossier=${encodeURIComponent(dossierId)}&id=${encodeURIComponent(profileId)}`;
+}
+
 function buildTournamentDetailUrl(id) {
   return `./tournament.html?id=${encodeURIComponent(id)}`;
 }
@@ -3256,7 +3360,7 @@ function getDossierById(id) {
   return state.overview?.dossiers?.find((dossier) => dossier.id === id) ?? null;
 }
 
-function renderDossierPlayer(player, member = null) {
+function renderDossierPlayer(player, member = null, dossier = null) {
   const status = player.current_status ?? {
     category: "needs-review",
     organization: "-",
@@ -3267,6 +3371,9 @@ function renderDossierPlayer(player, member = null) {
   const nameMarkup = player.player_id
     ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(player.local_name)}</a>`
     : escapeHtml(player.local_name);
+  const projectProfile = (dossier?.external_player_profiles ?? []).find(
+    (profile) => profile.person_id === player.id
+  );
   return `
     <article class="academy-player-card">
       <div class="academy-player-heading">
@@ -3283,6 +3390,7 @@ function renderDossierPlayer(player, member = null) {
         <span class="small-note">${status.as_of ? escapeHtml(t("dossier.player.asOf", { date: formatDate(status.as_of) })) : "-"} · ${escapeHtml(getLabel(SOURCE_LAYER_CONFIDENCE_LABELS, status.confidence, status.confidence))}</span>
         ${status.source_url ? `<a class="inline-link" href="${escapeHtml(status.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))}</a>` : ""}
         ${player.player_id ? `<a class="inline-link" href="${buildPlayerDetailUrl(player.player_id)}">${escapeHtml(t("dossier.player.profile"))}</a>` : ""}
+        ${projectProfile ? `<a class="inline-link" href="${buildDossierPlayerDetailUrl(dossier.id, projectProfile.id)}">${escapeHtml(t("dossier.player.projectProfile"))}</a>` : ""}
       </div>
     </article>
   `;
@@ -3319,9 +3427,85 @@ function renderDossierGeneration(view, dossier) {
             </div>`
           : ""
       }
-      ${entries.length > 0 ? `<div class="academy-player-grid">${entries.map(({ player, member }) => renderDossierPlayer(player, member)).join("")}</div>` : `<div class="empty-inline">${escapeHtml(t("dossier.generations.empty"))}</div>`}
+      ${entries.length > 0 ? `<div class="academy-player-grid">${entries.map(({ player, member }) => renderDossierPlayer(player, member, dossier)).join("")}</div>` : `<div class="empty-inline">${escapeHtml(t("dossier.generations.empty"))}</div>`}
     </article>
   `;
+}
+
+function renderDossierExternalProfiles(dossier) {
+  const section = document.querySelector("#dossierExternalProfilesSection");
+  const filters = document.querySelector("#dossierExternalProfileFilters");
+  const meta = document.querySelector("#dossierExternalProfileMeta");
+  const container = document.querySelector("#dossierExternalProfiles");
+  const profiles = dossier.external_player_profiles ?? [];
+  if (!section || !filters || !meta || !container || profiles.length === 0) {
+    if (section) section.hidden = true;
+    return;
+  }
+
+  const filterOptions = [
+    { value: "all", label: t("dossier.externalProfiles.all") },
+    ...["2009", "2010", "2012", "2013", "2014", "2015"].map((year) => ({
+      value: year,
+      label: `${year}队`
+    })),
+    { value: "pending", label: t("dossier.externalProfiles.pending") }
+  ];
+  if (!filterOptions.some((option) => option.value === state.dossierProfileFilter)) {
+    state.dossierProfileFilter = "all";
+  }
+
+  const visibleProfiles = profiles.filter((profile) => {
+    if (state.dossierProfileFilter === "all") return true;
+    if (state.dossierProfileFilter === "pending") return !profile.birth_year;
+    return profile.birth_year === state.dossierProfileFilter;
+  });
+  const personById = new Map((dossier.people ?? []).map((person) => [person.id, person]));
+
+  filters.innerHTML = filterOptions
+    .map(
+      (option) => `
+        <button
+          class="chip profile-filter-button${option.value === state.dossierProfileFilter ? " is-active" : ""}"
+          type="button"
+          data-dossier-profile-filter="${escapeHtml(option.value)}"
+        >${escapeHtml(option.label)}</button>
+      `
+    )
+    .join("");
+  meta.textContent = t("dossier.externalProfiles.meta", {
+    count: visibleProfiles.length,
+    total: profiles.length
+  });
+  container.innerHTML = visibleProfiles
+    .map((profile) => {
+      const person = personById.get(profile.person_id);
+      return `
+        <article class="academy-player-card external-profile-card">
+          <div class="academy-player-heading">
+            <div>
+              <h4>${escapeHtml(profile.display_name)}</h4>
+              <p class="small-note">${escapeHtml(profile.birth_year ?? t("common.pending"))} · ${escapeHtml(profile.position ?? person?.role ?? t("common.pending"))}</p>
+            </div>
+            <span class="chip">${escapeHtml(profile.squad)}</span>
+          </div>
+          <p>${escapeHtml(profile.representative_experience)}</p>
+          ${profile.player_id ? `<p class="small-note profile-linked-note">${escapeHtml(t("dossier.externalProfiles.linked"))}</p>` : ""}
+          <div class="academy-player-footer">
+            <a class="inline-link" href="${buildDossierPlayerDetailUrl(dossier.id, profile.id)}">${escapeHtml(t("dossier.externalProfiles.open"))}</a>
+          </div>
+        </article>
+      `;
+    })
+    .join("");
+
+  filters.querySelectorAll("[data-dossier-profile-filter]").forEach((button) => {
+    button.addEventListener("click", () => {
+      state.dossierProfileFilter = button.dataset.dossierProfileFilter;
+      renderDossierExternalProfiles(dossier);
+    });
+  });
+  section.hidden = false;
 }
 
 function renderDossierDetailPage() {
@@ -3368,6 +3552,7 @@ function renderDossierDetailPage() {
   ].join("");
   document.querySelector("#dossierTimeline").innerHTML = (dossier.timeline ?? []).map((item) => `<article class="timeline-item"><p class="timeline-label">${escapeHtml(item.date)}</p><h3>${escapeHtml(localizeText(item.label))}</h3><p>${escapeHtml(localizeText(item.detail))}</p></article>`).join("");
   document.querySelector("#dossierGenerations").innerHTML = (dossier.roster_views ?? []).map((view) => renderDossierGeneration(view, dossier)).join("");
+  renderDossierExternalProfiles(dossier);
   document.querySelector("#dossierBoundaries").innerHTML = `<ul class="mini-bullet-list">${(dossier.controversies ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
   document.querySelector("#dossierQuestions").innerHTML = `<ul class="mini-bullet-list">${(dossier.open_questions ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}</ul>`;
 
@@ -3376,6 +3561,153 @@ function renderDossierDetailPage() {
     ...(dossier.supporting_documents ?? []).map((source) => ({ ...source, kind: t("dossier.sources.supporting") }))
   ];
   document.querySelector("#dossierSources").innerHTML = sources.map((source) => `<article class="stack-card"><div class="chip-row"><span class="chip">${escapeHtml(source.kind)}</span></div><h3>${escapeHtml(source.title)}</h3>${source.summary ? `<p>${escapeHtml(localizeText(source.summary))}</p>` : ""}<a class="inline-link" href="${escapeHtml(source.path)}" target="_blank" rel="noreferrer">${escapeHtml(source.path)}</a></article>`).join("");
+  body.hidden = false;
+}
+
+function renderDossierPlayerDetailPage() {
+  const params = new URLSearchParams(window.location.search);
+  const dossierId = params.get("dossier");
+  const profileId = params.get("id");
+  const dossier = getDossierById(dossierId);
+  const profile = dossier?.external_player_profiles?.find((item) => item.id === profileId);
+  const person = dossier?.people?.find((item) => item.id === profile?.person_id);
+  const mainPlayer = profile?.player_id
+    ? state.enrichedPlayers.find((item) => item.id === profile.player_id)
+    : null;
+  const hero = document.querySelector("#dossierPlayerHero");
+  const body = document.querySelector("#dossierPlayerBody");
+  const backLink = document.querySelector("#dossierPlayerBackLink");
+
+  if (backLink && dossierId) {
+    backLink.href = `./dossier.html?id=${encodeURIComponent(dossierId)}`;
+  }
+  if (!dossier || !profile || !person || !hero || !body) {
+    if (hero) {
+      hero.innerHTML = `
+        <div class="hero-copy">
+          <p class="eyebrow">${escapeHtml(t("dossierPlayer.hero.eyebrow"))}</p>
+          <h1>${escapeHtml(t("dossierPlayer.notFound.title"))}</h1>
+          <p class="hero-text">${escapeHtml(t("dossierPlayer.notFound.text"))}</p>
+          <div class="hero-actions">
+            <a class="primary-link" href="./dossier.html?id=${encodeURIComponent(dossierId ?? "donglu-football-boys")}">${escapeHtml(t("dossierPlayer.hero.back"))}</a>
+          </div>
+        </div>
+      `;
+    }
+    return;
+  }
+
+  const status = person.current_status;
+  const relationships = (dossier.roster_views ?? [])
+    .map((view) => ({
+      view,
+      member: view.members?.find((member) => member.person_id === person.id)
+    }))
+    .filter((entry) => entry.member);
+
+  document.title = `${profile.display_name} | ${t("page.dossier-player-detail.title")}`;
+  hero.innerHTML = `
+    <div class="hero-copy">
+      <p class="eyebrow">${escapeHtml(t("dossierPlayer.hero.eyebrow"))}</p>
+      <h1>${escapeHtml(profile.display_name)}</h1>
+      <p class="hero-text">${escapeHtml(profile.representative_experience)}</p>
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(profile.squad)}</span>
+        <span class="chip">${escapeHtml(profile.birth_year ?? t("common.pending"))}</span>
+        <span class="chip">${escapeHtml(profile.position ?? person.role ?? t("common.pending"))}</span>
+      </div>
+      <div class="hero-actions detail-action-row">
+        ${mainPlayer ? `<a class="primary-link" href="${buildPlayerDetailUrl(mainPlayer.id)}">${escapeHtml(t("dossierPlayer.hero.mainProfile"))}</a>` : ""}
+        <a class="${mainPlayer ? "secondary-link" : "primary-link"}" href="./dossier.html?id=${encodeURIComponent(dossier.id)}">${escapeHtml(t("dossierPlayer.hero.back"))}</a>
+      </div>
+    </div>
+    <aside class="hero-spotlight status-spotlight">
+      <p class="eyebrow">${escapeHtml(t("dossierPlayer.evidence.eyebrow"))}</p>
+      <h2>${escapeHtml(t("dossierPlayer.hero.sourceBoundary"))}</h2>
+      <p>${escapeHtml(profile.verification_note)}</p>
+      <p class="small-note">${escapeHtml(formatDate(profile.checked_at))}</p>
+    </aside>
+  `;
+
+  document.querySelector("#dossierPlayerStats").innerHTML = [
+    [t("dossierPlayer.stats.birthYear"), profile.birth_year ?? t("common.pending")],
+    [t("dossierPlayer.stats.squad"), profile.squad],
+    [t("dossierPlayer.stats.position"), profile.position ?? person.role ?? t("common.pending")],
+    [t("dossierPlayer.stats.checked"), formatDate(profile.checked_at)]
+  ]
+    .map(
+      ([label, value]) => `
+        <article class="stat-card">
+          <p class="stat-label">${escapeHtml(label)}</p>
+          <p class="stat-value stat-value-small">${escapeHtml(value)}</p>
+        </article>
+      `
+    )
+    .join("");
+
+  document.querySelector("#dossierPlayerExperience").innerHTML = `
+    <article class="stack-card evidence-claim-card">
+      <div class="chip-row"><span class="chip">${escapeHtml(t("dossierPlayer.experience.label"))}</span></div>
+      ${profile.summary ? `<p>${escapeHtml(profile.summary)}</p>` : ""}
+      <p><strong>${escapeHtml(profile.representative_experience)}</strong></p>
+      <p class="small-note">${escapeHtml(t("dossierPlayer.experience.boundary"))}</p>
+    </article>
+  `;
+
+  document.querySelector("#dossierPlayerStatus").innerHTML = `
+    <dl class="status-list">
+      ${renderStatusItem(t("dossierPlayer.status.organization"), formatClubName(status.organization))}
+      ${renderStatusItem(t("dossierPlayer.status.category"), getLabel(ACADEMY_CURRENT_STATUS_LABELS, status.category, status.category))}
+      ${renderStatusItem(t("dossierPlayer.status.asOf"), formatDate(status.as_of))}
+      ${renderStatusItem(t("dossierPlayer.status.confidence"), getLabel(SOURCE_LAYER_CONFIDENCE_LABELS, status.confidence, status.confidence))}
+    </dl>
+    <p class="small-note">${escapeHtml(status.notes ?? t("common.pending"))}</p>
+  `;
+
+  const relationshipSection = document.querySelector("#dossierPlayerRelationshipsSection");
+  const relationshipContainer = document.querySelector("#dossierPlayerRelationships");
+  relationshipContainer.innerHTML = relationships.length > 0
+    ? relationships
+        .map(
+          ({ view, member }) => `
+            <article class="stack-card">
+              <h3>${escapeHtml(localizeText(view.name))}</h3>
+              <p class="small-note">${escapeHtml(t("dossierPlayer.relationships.type", {
+                value: getLabel(DOSSIER_MEMBER_RELATIONSHIP_LABELS, member.relationship, member.relationship)
+              }))}</p>
+              <p class="small-note">${escapeHtml(t("dossierPlayer.relationships.verification", {
+                value: member.verification_status
+              }))}</p>
+              ${member.note ? `<p>${escapeHtml(localizeText(member.note))}</p>` : ""}
+            </article>
+          `
+        )
+        .join("")
+    : `<div class="empty-inline">${escapeHtml(t("dossierPlayer.relationships.empty"))}</div>`;
+  relationshipSection.hidden = false;
+
+  const conflictCards = (profile.conflicts ?? []).map(
+    (conflict) => `
+      <article class="stack-card conflict-card">
+        <div class="chip-row"><span class="chip">${escapeHtml(t("dossierPlayer.evidence.conflict", { field: conflict.field }))}</span></div>
+        <p>${escapeHtml(conflict.note)}</p>
+      </article>
+    `
+  );
+  document.querySelector("#dossierPlayerEvidence").innerHTML = `
+    <article class="stack-card">
+      <div class="chip-row"><span class="chip">${escapeHtml(t("dossierPlayer.evidence.externalType"))}</span></div>
+      <h3>${escapeHtml(t("dossierPlayer.evidence.external"))}</h3>
+      <a class="inline-link" href="${escapeHtml(profile.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(profile.source_url)}</a>
+      <p class="small-note">${escapeHtml(formatDate(profile.checked_at))}</p>
+    </article>
+    <article class="stack-card">
+      <h3>${escapeHtml(t("dossierPlayer.evidence.verification"))}</h3>
+      <p>${escapeHtml(profile.verification_note)}</p>
+    </article>
+    ${conflictCards.join("")}
+  `;
+
   body.hidden = false;
 }
 
@@ -5450,6 +5782,14 @@ function renderPlayerDetailPage() {
   const transfermarktStatus = getTransfermarktStatusLabel(player);
   const currentMarketValue = marketValue?.current ? formatMarketValuePoint(marketValue.current) : null;
   const peakMarketValue = marketValue?.peak ? formatMarketValuePoint(marketValue.peak) : null;
+  const linkedProjectProfile = (state.overview?.dossiers ?? [])
+    .flatMap((dossier) =>
+      (dossier.external_player_profiles ?? []).map((profile) => ({
+        dossierId: dossier.id,
+        profile
+      }))
+    )
+    .find((entry) => entry.profile.player_id === player.id);
   const verificationLabel = getLabel(
     VERIFICATION_STATUS_LABELS,
     player.verification?.status,
@@ -5474,6 +5814,7 @@ function renderPlayerDetailPage() {
       <div class="hero-actions detail-action-row">
         <a class="primary-link" href="#playerLinksSection">${escapeHtml(t("playerDetail.actions.links"))}</a>
         <a class="secondary-link" href="#playerCompetitionSection">${escapeHtml(t("playerDetail.actions.competition"))}</a>
+        ${linkedProjectProfile ? `<a class="secondary-link" href="${buildDossierPlayerDetailUrl(linkedProjectProfile.dossierId, linkedProjectProfile.profile.id)}">${escapeHtml(t("dossier.player.projectProfile"))}</a>` : ""}
       </div>
     </div>
     <aside class="hero-spotlight status-spotlight">

@@ -6,7 +6,7 @@
     "focus_tags": [
       "donglu-football-boys"
     ],
-    "last_reviewed": "2026-07-20",
+    "last_reviewed": "2026-07-25",
     "summary": "这不是单一球队，而是叠在一起的两层结构：一层是以 2009 年龄段为核心、随后扩展到 2010、2014、2015、2016 等多年龄段的民间青训与比赛平台；另一层是董路主导的 2034 杯 U12 全国赛事平台。公开资料里较稳妥的做法，是先按批次整理公开可核主干，再把 2024 年足协 U15 第四期集训可交叉确认的 9 名球员、2025 年 6 月荷兰杯 21 人赛会名单和 2029 U20 图片线索单列管理，同时把 2034 杯按届次、赛果和分区赛规模单独建档。",
     "source_document": {
       "title": "Bilibili space: 中国足球小将",
@@ -127,6 +127,11 @@
         "title": "SIP English: Winners of the 5th 2034 Cup finals emerge",
         "path": "https://www.sipac.gov.cn/szgyyqenglish/News/202507/1ce74b7dd790431380b404cb621da9a3.shtml",
         "summary": "补充 2025 年第五届总决赛决赛比分，中国足球小将以 5 比 0 战胜北京梦之队夺冠，苏州奥体小将获得季军。"
+      },
+      {
+        "title": "中国足球小将资料站：球员目录",
+        "path": "https://www.xiaojiangfc.com/players/",
+        "summary": "2026-07-25 抓取的 86 人公开目录快照；只作为人物资料索引与待回溯线索，不单独覆盖本站的注册、生日或比赛强事实。"
       }
     ],
     "scope_note": "它不是职业俱乐部注册体系，所以海选、短训、临时参赛、正式梯队之间边界不总是清楚。这个专题至少要拆成四层：公开可核批次主干、长期培养主干、短期集训或赛会名单，以及 2034 杯赛事平台里的参赛队伍与单届合作阵容。2034 杯不等于固定一支“足球小将”队，不能把赛事成绩直接等同于长期培养名单。",
@@ -1439,7 +1444,7 @@
       ]
     },
     "schema_version": 2,
-    "source_checked_at": "2026-07-20",
+    "source_checked_at": "2026-07-25",
     "people": [
       {
         "id": "donglu-football-boys-毛永彬",
@@ -2915,6 +2920,670 @@
           "source_url": "https://space.bilibili.com/346344723",
           "notes": "该来源可支撑项目或历史身份，但未提供截至核查日的直接当前注册去向；因此不沿用历史俱乐部作当前事实。"
         }
+      },
+      {
+        "id": "donglu-football-boys-陈思源",
+        "name": "Chen Siyuan",
+        "local_name": "陈思源",
+        "role": "门将",
+        "note": "SIGISMONDI杯决赛点球大战两次扑点帮助球队夺冠",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/chen-siyuan/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-陈奕乐",
+        "name": "Chen Yile",
+        "local_name": "陈奕乐",
+        "role": "后卫",
+        "note": "随中国足球小将2014队夺得SIGISMONDI杯冠军",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/chen-yile/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-周延岐",
+        "name": "Zhou Yanqi",
+        "local_name": "周延岐",
+        "role": "未标注",
+        "note": "随中国足球小将2014队夺得SIGISMONDI杯冠军",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/zhou-yanqi/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-田峻铭",
+        "name": "Tian Junming",
+        "local_name": "田峻铭",
+        "role": "未标注",
+        "note": "入选中国足球小将2014梯队并随队参加意大利赛事",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/tian-junming/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-马绍玉",
+        "name": "Ma Shaoyu",
+        "local_name": "马绍玉",
+        "role": "未标注",
+        "note": "入选中国足球小将2014梯队出征意大利名单",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/ma-shaoyu/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-章俊睿",
+        "name": "Zhang Junrui",
+        "local_name": "章俊睿",
+        "role": "未标注",
+        "note": "入选中国足球小将2014梯队出征意大利名单",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/zhang-junrui/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-孙华阳",
+        "name": "Sun Huayang",
+        "local_name": "孙华阳",
+        "role": "未标注",
+        "note": "入选中国足球小将2014梯队出征意大利名单",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/sun-huayang/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-麦子逵",
+        "name": "Mai Zikui",
+        "local_name": "麦子逵",
+        "role": "未标注",
+        "note": "随中国足球小将2014队夺得SIGISMONDI杯冠军",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/mai-zikui/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-王昌宇",
+        "name": "Wang Changyu",
+        "local_name": "王昌宇",
+        "role": "门将",
+        "note": "2010 年龄段主力门将，效力西班牙科尔内利亚俱乐部",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/wang-changyu/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-王嘉卓",
+        "name": "Wang Jiazhuo",
+        "local_name": "王嘉卓",
+        "role": "后卫",
+        "note": "2010 年龄段后卫，效力人大附中三高",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/wang-jiazhuo/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-王嘉越",
+        "name": "Wang Jiayue",
+        "local_name": "王嘉越",
+        "role": "中场",
+        "note": "2010 年龄段中场，效力人大附中三高",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/wang-jiayue/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-李嘉楠",
+        "name": "Li Jianan",
+        "local_name": "李嘉楠",
+        "role": "边锋",
+        "note": "2010 年龄段边锋，西班牙巴达洛纳留洋",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/li-jianan/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-孟昊成",
+        "name": "Meng Haocheng",
+        "local_name": "孟昊成",
+        "role": "中场 / 前锋",
+        "note": "2010 年龄段球员，效力西安交大附中",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/meng-haocheng/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-刘礼豪",
+        "player_id": "cn-liu-lihao-2010",
+        "name": "Liu Lihao",
+        "local_name": "刘礼豪",
+        "role": "后卫",
+        "note": "2010 年龄段主力后卫，效力上海申花 U15",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/liu-lihao/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-马楚瑶",
+        "name": "Ma Chuyao",
+        "local_name": "马楚瑶",
+        "role": "门将",
+        "note": "2013 队一号门将，2025 年 2034 杯全程首发门将",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/ma-chuyao/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-孙成义",
+        "name": "Sun Chengyi",
+        "local_name": "孙成义",
+        "role": "边后卫",
+        "note": "南北贺岁对抗赛选拔入选，2034 杯多场首发",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/sun-chengyi/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-曲浩铭",
+        "name": "Qu Haoming",
+        "local_name": "曲浩铭",
+        "role": "中后卫 / 队长",
+        "note": "2013 队队长，2025 年 2034 杯最佳阵容；2026 年注册西班牙奥斯皮塔雷特 U13",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/qu-haoming/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-吴浩涵",
+        "name": "Wu Haohan",
+        "local_name": "吴浩涵",
+        "role": "中后卫",
+        "note": "国内海选第一批固定后卫，西班牙海外拉练稳定出场",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/wu-haohan/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-王子瑜",
+        "name": "Wang Ziyu",
+        "local_name": "王子瑜",
+        "role": "中场 / 后腰",
+        "note": "贺岁南北对抗赛重点球员，攻防全能",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/wang-ziyu/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-张家浩",
+        "name": "Zhang Jiahao",
+        "local_name": "张家浩",
+        "role": "边前卫",
+        "note": "2034 杯淘汰赛关键进球球员，国内赛事边路进攻核心",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/zhang-jiahao/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-钟元辰",
+        "name": "Zhong Yuanchen",
+        "local_name": "钟元辰",
+        "role": "组织中场",
+        "note": "国内热身赛稳定首发，西班牙拉练在册",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/zhong-yuanchen/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-康浩",
+        "name": "Kang Hao",
+        "local_name": "康浩",
+        "role": "前锋",
+        "note": "队内支点型前锋，2034 杯多粒制胜进球",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/kang-hao/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-陈正敏",
+        "name": "Chen Zhengmin",
+        "local_name": "陈正敏",
+        "role": "前腰 / 进攻核心",
+        "note": "苏州海选重点苗子，国内赛事进攻组织核心",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/chen-zhengmin/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-魏子云",
+        "name": "Wei Ziyun",
+        "local_name": "魏子云",
+        "role": "边锋",
+        "note": "青岛选拔苗子，速度型边路球员",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/wei-ziyun/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-孙浩宇",
+        "name": "Sun Haoyu",
+        "local_name": "孙浩宇",
+        "role": "门将",
+        "note": "海外集训、2034 杯替补门将，国内赛事二门",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/sun-haoyu/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-许晨赫",
+        "name": "Xu Chenhe",
+        "local_name": "许晨赫",
+        "role": "后卫",
+        "note": "北京海选入选，防守卡位稳定",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/xu-chenhe/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-朱晨曦",
+        "name": "Zhu Chenxi",
+        "local_name": "朱晨曦",
+        "role": "中场",
+        "note": "国内贺岁杯表现突出，短期海外随行",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/zhu-chenxi/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-傅康和",
+        "name": "Fu Kanghe",
+        "local_name": "傅康和",
+        "role": "前锋",
+        "note": "小型邀请赛得分稳定，2034 杯替补登场",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/fu-kanghe/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-李慕希",
+        "name": "Li Muxi",
+        "local_name": "李慕希",
+        "role": "中场",
+        "note": "南北对抗赛选拔入围，防守拦截能力强",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/li-muxi/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-阿日法提",
+        "name": "Arifati",
+        "local_name": "阿日法提",
+        "role": "前锋 / 边锋",
+        "note": "新疆球员，作风强硬",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/arifati/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-谭诗禹",
+        "name": "Tan Shiyu",
+        "local_name": "谭诗禹",
+        "role": "中场",
+        "note": "2024 官方首批官宣球员，武汉集训、西班牙海外出征固定中场，2034 杯主力",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/tan-shiyu/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-崔有赫",
+        "name": "Cui Youhe",
+        "local_name": "崔有赫",
+        "role": "门将",
+        "note": "2024 首批官宣门将，2034 杯全程首发门将",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/cui-youhe/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-孙卓远",
+        "name": "Sun Zhuoyuan",
+        "local_name": "孙卓远",
+        "role": "中后卫",
+        "note": "官方首批球员，武汉集训、西班牙海外出征后防核心",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/sun-zhuoyuan/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-刘杨子",
+        "name": "Liu Yangzi",
+        "local_name": "刘杨子",
+        "role": "边锋",
+        "note": "日本大阪留洋，首批官宣在册",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/liu-yangzi/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-朱鸿铭",
+        "name": "Zhu Hongming",
+        "local_name": "朱鸿铭",
+        "role": "中场",
+        "note": "韩国留洋球员，官方首批名单",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/zhu-hongming/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-程梓明",
+        "name": "Cheng Ziming",
+        "local_name": "程梓明",
+        "role": "中后卫",
+        "note": "北京国安体系，首批官宣",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/cheng-ziming/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-杨艺涵",
+        "name": "Yang Yihan",
+        "local_name": "杨艺涵",
+        "role": "前锋",
+        "note": "北京地区最佳射手，官方首批球员",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/yang-yihan/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-周圣恩",
+        "name": "Zhou Shengen",
+        "local_name": "周圣恩",
+        "role": "边后卫",
+        "note": "2025 西班牙海外出征官方名单在册，宁波首发俱乐部",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/zhou-shengen/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
+      },
+      {
+        "id": "donglu-football-boys-刘博瑞",
+        "name": "Liu Borui",
+        "local_name": "刘博瑞",
+        "role": "边后卫",
+        "note": "左脚球员，后场长传突出",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-07-25",
+          "confidence": "low",
+          "source_label": "现状复核入口：中国足球小将资料站人物页",
+          "source_url": "https://www.xiaojiangfc.com/players/liu-borui/",
+          "notes": "该二次资料页可作为人物与项目公开关联的检索入口，但不足以单独证明当前注册、完整出生日期或正式比赛数据。"
+        }
       }
     ],
     "event_records": [
@@ -2994,10 +3663,1762 @@
     "program_metrics": [],
     "headline_stats": {
       "tracked_generations": 6,
-      "tracked_players": 86,
+      "tracked_players": 125,
       "verified_core_people": 50,
-      "needs_review_people": 86
-    }
+      "needs_review_people": 125
+    },
+    "external_player_profiles": [
+      {
+        "id": "kuang-zhaolei",
+        "person_id": "donglu-football-boys-邝兆镭",
+        "dossier_person_status": "existing",
+        "player_id": "cn-kuang-zhaolei-2009",
+        "display_name": "邝兆镭",
+        "aliases": [
+          "邝兆镭"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17 国少核心",
+        "birth_year": "2009",
+        "position": "前锋 / 边锋",
+        "summary": "首位正式签约拉玛西亚的中国球员",
+        "representative_experience": "曾留洋达姆、莱里达竞技",
+        "source_url": "https://www.xiaojiangfc.com/players/kuang-zhaolei/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "liu-kaiyuan",
+        "person_id": "donglu-football-boys-刘凯源",
+        "dossier_person_status": "existing",
+        "player_id": "cn-liu-kaiyuan-2010",
+        "display_name": "刘凯源",
+        "aliases": [
+          "刘凯源"
+        ],
+        "squad": "2010队",
+        "listed_team": "U16",
+        "birth_year": "2010",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "签约比利亚雷亚尔，越级备战U19",
+        "source_url": "https://www.xiaojiangfc.com/players/liu-kaiyuan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wan-xiang",
+        "person_id": "donglu-football-boys-万项",
+        "dossier_person_status": "existing",
+        "player_id": "cn-wan-xiang-2009",
+        "display_name": "万项",
+        "aliases": [
+          "万项"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "首位签约贝尔格莱德红星的中国球员",
+        "source_url": "https://www.xiaojiangfc.com/players/wan-xiang/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "li-haoyan",
+        "person_id": "donglu-football-boys-李昊炎",
+        "dossier_person_status": "existing",
+        "display_name": "李昊炎",
+        "aliases": [
+          "李昊炎"
+        ],
+        "squad": "2012队",
+        "listed_team": "U15",
+        "birth_year": "2012",
+        "position": "左边锋 / 前锋",
+        "summary": null,
+        "representative_experience": "首位正式签约拉玛西亚的中国球员",
+        "source_url": "https://www.xiaojiangfc.com/players/li-haoyan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "meng-xinyi",
+        "person_id": "donglu-football-boys-孟新艺",
+        "dossier_person_status": "existing",
+        "display_name": "孟新艺",
+        "aliases": [
+          "孟新艺"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12",
+        "birth_year": null,
+        "position": "前锋 / 边锋",
+        "summary": null,
+        "representative_experience": "意大利杯决赛点球制胜球员",
+        "source_url": "https://www.xiaojiangfc.com/players/meng-xinyi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "lv-mengyang",
+        "person_id": "donglu-football-boys-吕孟洋",
+        "dossier_person_status": "existing",
+        "player_id": "cn-lyu-mengyang-2009",
+        "display_name": "吕孟洋",
+        "aliases": [
+          "吕孟洋"
+        ],
+        "squad": "2009队",
+        "listed_team": "俱乐部U19",
+        "birth_year": "2009",
+        "position": "前锋 / 中场 / 边锋",
+        "summary": null,
+        "representative_experience": "德国广域星空杯MVP",
+        "source_url": "https://www.xiaojiangfc.com/players/lv-mengyang/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhou-yunuo",
+        "person_id": "donglu-football-boys-周雨诺",
+        "dossier_person_status": "existing",
+        "player_id": "cn-zhou-yunuo-2009",
+        "display_name": "周雨诺",
+        "aliases": [
+          "周雨诺"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "U17国少队长",
+        "source_url": "https://www.xiaojiangfc.com/players/zhou-yunuo/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhao-songyuan",
+        "person_id": "donglu-football-boys-赵松源",
+        "dossier_person_status": "existing",
+        "player_id": "cn-zhao-songyuan-2009",
+        "display_name": "赵松源",
+        "aliases": [
+          "赵松源"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "U17亚预赛曾单场6球",
+        "source_url": "https://www.xiaojiangfc.com/players/zhao-songyuan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "nan-zixun",
+        "person_id": "donglu-football-boys-南子勋",
+        "dossier_person_status": "existing",
+        "player_id": "cn-nan-zixun-2009",
+        "display_name": "南子勋",
+        "aliases": [
+          "南子勋"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选2009年龄段国少集训并参加和平杯备战",
+        "source_url": "https://www.xiaojiangfc.com/players/nan-zixun/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "gu-boyu",
+        "person_id": "donglu-football-boys-顾博宇",
+        "dossier_person_status": "existing",
+        "player_id": "cn-gu-boyu-2009",
+        "display_name": "顾博宇",
+        "aliases": [
+          "顾博宇"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "入选2009年龄段国少集训名单并随队备战U17赛事",
+        "source_url": "https://www.xiaojiangfc.com/players/gu-boyu/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "huang-zijie",
+        "person_id": "donglu-football-boys-黄子杰",
+        "dossier_person_status": "existing",
+        "display_name": "黄子杰",
+        "aliases": [
+          "黄子杰"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": null,
+        "summary": null,
+        "representative_experience": "曾效力西班牙巴达洛纳梯队并入选2009年龄段国少集训",
+        "source_url": "https://www.xiaojiangfc.com/players/huang-zijie/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-xiuhao",
+        "person_id": "donglu-football-boys-汪修昊",
+        "dossier_person_status": "existing",
+        "player_id": "cn-wang-xiuhao-2009",
+        "display_name": "汪修昊",
+        "aliases": [
+          "汪修昊"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": null,
+        "summary": null,
+        "representative_experience": "曾效力西班牙巴达洛纳梯队并入选2009年龄段国少集训",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-xiuhao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "xie-jin",
+        "person_id": "donglu-football-boys-谢晋",
+        "dossier_person_status": "existing",
+        "player_id": "cn-xie-jin-2009",
+        "display_name": "谢晋",
+        "aliases": [
+          "谢晋"
+        ],
+        "squad": "2009队",
+        "listed_team": "U17",
+        "birth_year": "2009",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "留洋西班牙富恩拉夫拉达并入选2009年龄段国少集训",
+        "source_url": "https://www.xiaojiangfc.com/players/xie-jin/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhang-lintong",
+        "person_id": "donglu-football-boys-张林峒",
+        "dossier_person_status": "existing",
+        "player_id": "cn-zhang-lindong-2010",
+        "display_name": "张林峒",
+        "aliases": [
+          "张林峒"
+        ],
+        "squad": "2009队",
+        "listed_team": "留洋小将",
+        "birth_year": "2009",
+        "position": "前锋 / 中场",
+        "summary": null,
+        "representative_experience": "曾在西班牙欧罗巴、圣胡斯特、达姆等青训体系训练比赛",
+        "source_url": "https://www.xiaojiangfc.com/players/zhang-lintong/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": [
+          {
+            "field": "birth_year",
+            "external_value": "2009",
+            "site_value": "2010",
+            "note": "资料站目录标注为 2009 年，本站主球员库按既有来源保留 2010-02-25；该二次资料不覆盖主库字段。"
+          }
+        ]
+      },
+      {
+        "id": "li-dongchen",
+        "person_id": "donglu-football-boys-李东宸",
+        "dossier_person_status": "existing",
+        "player_id": "cn-li-dongchen-2010",
+        "display_name": "李东宸",
+        "aliases": [
+          "李东宸"
+        ],
+        "squad": "2010队",
+        "listed_team": "留洋小将",
+        "birth_year": "2010",
+        "position": "中场 / 前锋",
+        "summary": null,
+        "representative_experience": "曾代表西班牙奥斯皮塔莱特U14A完成留洋首秀",
+        "source_url": "https://www.xiaojiangfc.com/players/li-dongchen/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "dai-youzhe",
+        "person_id": "donglu-football-boys-戴宥哲",
+        "dossier_person_status": "existing",
+        "display_name": "戴宥哲",
+        "aliases": [
+          "戴宥哲"
+        ],
+        "squad": "U15",
+        "listed_team": "U15",
+        "birth_year": null,
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选U15国少名单的足球小将背景球员",
+        "source_url": "https://www.xiaojiangfc.com/players/dai-youzhe/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "mao-yongbin",
+        "person_id": "donglu-football-boys-毛永彬",
+        "dossier_person_status": "existing",
+        "display_name": "毛永彬",
+        "aliases": [
+          "毛永彬"
+        ],
+        "squad": "U15",
+        "listed_team": "U15",
+        "birth_year": null,
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选U15国少名单的足球小将背景球员",
+        "source_url": "https://www.xiaojiangfc.com/players/mao-yongbin/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "chen-siyuan",
+        "person_id": "donglu-football-boys-陈思源",
+        "dossier_person_status": "added",
+        "display_name": "陈思源",
+        "aliases": [
+          "陈思源"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "SIGISMONDI杯决赛点球大战两次扑点帮助球队夺冠",
+        "source_url": "https://www.xiaojiangfc.com/players/chen-siyuan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "chen-yile",
+        "person_id": "donglu-football-boys-陈奕乐",
+        "dossier_person_status": "added",
+        "display_name": "陈奕乐",
+        "aliases": [
+          "陈奕乐"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "随中国足球小将2014队夺得SIGISMONDI杯冠军",
+        "source_url": "https://www.xiaojiangfc.com/players/chen-yile/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhou-yanqi",
+        "person_id": "donglu-football-boys-周延岐",
+        "dossier_person_status": "added",
+        "display_name": "周延岐",
+        "aliases": [
+          "周延岐"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "随中国足球小将2014队夺得SIGISMONDI杯冠军",
+        "source_url": "https://www.xiaojiangfc.com/players/zhou-yanqi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "guo-junxian",
+        "person_id": "donglu-football-boys-郭俊贤",
+        "dossier_person_status": "existing",
+        "display_name": "郭俊贤",
+        "aliases": [
+          "郭俊贤"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选中国足球小将2014梯队并随队参加意大利赛事",
+        "source_url": "https://www.xiaojiangfc.com/players/guo-junxian/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "tian-junming",
+        "person_id": "donglu-football-boys-田峻铭",
+        "dossier_person_status": "added",
+        "display_name": "田峻铭",
+        "aliases": [
+          "田峻铭"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选中国足球小将2014梯队并随队参加意大利赛事",
+        "source_url": "https://www.xiaojiangfc.com/players/tian-junming/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "ma-shaoyu",
+        "person_id": "donglu-football-boys-马绍玉",
+        "dossier_person_status": "added",
+        "display_name": "马绍玉",
+        "aliases": [
+          "马绍玉"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选中国足球小将2014梯队出征意大利名单",
+        "source_url": "https://www.xiaojiangfc.com/players/ma-shaoyu/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhang-junrui",
+        "person_id": "donglu-football-boys-章俊睿",
+        "dossier_person_status": "added",
+        "display_name": "章俊睿",
+        "aliases": [
+          "章俊睿"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选中国足球小将2014梯队出征意大利名单",
+        "source_url": "https://www.xiaojiangfc.com/players/zhang-junrui/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhong-yuzhe",
+        "person_id": "donglu-football-boys-钟予哲",
+        "dossier_person_status": "existing",
+        "display_name": "钟予哲",
+        "aliases": [
+          "钟予哲"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选中国足球小将2014梯队出征意大利名单",
+        "source_url": "https://www.xiaojiangfc.com/players/zhong-yuzhe/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "sun-huayang",
+        "person_id": "donglu-football-boys-孙华阳",
+        "dossier_person_status": "added",
+        "display_name": "孙华阳",
+        "aliases": [
+          "孙华阳"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "入选中国足球小将2014梯队出征意大利名单",
+        "source_url": "https://www.xiaojiangfc.com/players/sun-huayang/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "mai-zikui",
+        "person_id": "donglu-football-boys-麦子逵",
+        "dossier_person_status": "added",
+        "display_name": "麦子逵",
+        "aliases": [
+          "麦子逵"
+        ],
+        "squad": "2014队",
+        "listed_team": "U12 / 2014队",
+        "birth_year": "2014",
+        "position": null,
+        "summary": null,
+        "representative_experience": "随中国足球小将2014队夺得SIGISMONDI杯冠军",
+        "source_url": "https://www.xiaojiangfc.com/players/mai-zikui/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-changyu",
+        "person_id": "donglu-football-boys-王昌宇",
+        "dossier_person_status": "added",
+        "display_name": "王昌宇",
+        "aliases": [
+          "王昌宇"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "2010 年龄段主力门将，效力西班牙科尔内利亚俱乐部",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-changyu/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "lang-dacheng",
+        "person_id": "donglu-football-boys-郎达成",
+        "dossier_person_status": "existing",
+        "display_name": "郎达成",
+        "aliases": [
+          "郎达成"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "2010 年龄段后卫，效力西班牙欧罗巴俱乐部",
+        "source_url": "https://www.xiaojiangfc.com/players/lang-dacheng/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "yuan-bohan",
+        "person_id": "donglu-football-boys-袁博涵",
+        "dossier_person_status": "existing",
+        "display_name": "袁博涵",
+        "aliases": [
+          "袁博涵"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "2010 年龄段前锋，效力深圳青年人梯队",
+        "source_url": "https://www.xiaojiangfc.com/players/yuan-bohan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "li-youan",
+        "person_id": "donglu-football-boys-李佑安",
+        "dossier_person_status": "existing",
+        "player_id": "cn-li-youan-2010",
+        "display_name": "李佑安",
+        "aliases": [
+          "李佑安"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "2010 年龄段中场，效力人大附中三高",
+        "source_url": "https://www.xiaojiangfc.com/players/li-youan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-jiazhuo",
+        "person_id": "donglu-football-boys-王嘉卓",
+        "dossier_person_status": "added",
+        "display_name": "王嘉卓",
+        "aliases": [
+          "王嘉卓"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "2010 年龄段后卫，效力人大附中三高",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-jiazhuo/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-jiayue",
+        "person_id": "donglu-football-boys-王嘉越",
+        "dossier_person_status": "added",
+        "display_name": "王嘉越",
+        "aliases": [
+          "王嘉越"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "2010 年龄段中场，效力人大附中三高",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-jiayue/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "li-jianan",
+        "person_id": "donglu-football-boys-李嘉楠",
+        "dossier_person_status": "added",
+        "display_name": "李嘉楠",
+        "aliases": [
+          "李嘉楠"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "边锋",
+        "summary": null,
+        "representative_experience": "2010 年龄段边锋，西班牙巴达洛纳留洋",
+        "source_url": "https://www.xiaojiangfc.com/players/li-jianan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "meng-haocheng",
+        "person_id": "donglu-football-boys-孟昊成",
+        "dossier_person_status": "added",
+        "display_name": "孟昊成",
+        "aliases": [
+          "孟昊成"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "中场 / 前锋",
+        "summary": null,
+        "representative_experience": "2010 年龄段球员，效力西安交大附中",
+        "source_url": "https://www.xiaojiangfc.com/players/meng-haocheng/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "liu-lihao",
+        "person_id": "donglu-football-boys-刘礼豪",
+        "dossier_person_status": "added",
+        "player_id": "cn-liu-lihao-2010",
+        "display_name": "刘礼豪",
+        "aliases": [
+          "刘礼豪"
+        ],
+        "squad": "2010队",
+        "listed_team": "2010队",
+        "birth_year": "2010",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "2010 年龄段主力后卫，效力上海申花 U15",
+        "source_url": "https://www.xiaojiangfc.com/players/liu-lihao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "ma-chuyao",
+        "person_id": "donglu-football-boys-马楚瑶",
+        "dossier_person_status": "added",
+        "display_name": "马楚瑶",
+        "aliases": [
+          "马楚瑶"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "2013 队一号门将，2025 年 2034 杯全程首发门将",
+        "source_url": "https://www.xiaojiangfc.com/players/ma-chuyao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "sun-chengyi",
+        "person_id": "donglu-football-boys-孙成义",
+        "dossier_person_status": "added",
+        "display_name": "孙成义",
+        "aliases": [
+          "孙成义"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "边后卫",
+        "summary": null,
+        "representative_experience": "南北贺岁对抗赛选拔入选，2034 杯多场首发",
+        "source_url": "https://www.xiaojiangfc.com/players/sun-chengyi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "qu-haoming",
+        "person_id": "donglu-football-boys-曲浩铭",
+        "dossier_person_status": "added",
+        "display_name": "曲浩铭（金宝）",
+        "aliases": [
+          "曲浩铭（金宝）",
+          "曲浩铭",
+          "金宝"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "中后卫 / 队长",
+        "summary": null,
+        "representative_experience": "2013 队队长，2025 年 2034 杯最佳阵容；2026 年注册西班牙奥斯皮塔雷特 U13",
+        "source_url": "https://www.xiaojiangfc.com/players/qu-haoming/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wu-haohan",
+        "person_id": "donglu-football-boys-吴浩涵",
+        "dossier_person_status": "added",
+        "display_name": "吴浩涵",
+        "aliases": [
+          "吴浩涵"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "中后卫",
+        "summary": null,
+        "representative_experience": "国内海选第一批固定后卫，西班牙海外拉练稳定出场",
+        "source_url": "https://www.xiaojiangfc.com/players/wu-haohan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-ziyu",
+        "person_id": "donglu-football-boys-王子瑜",
+        "dossier_person_status": "added",
+        "display_name": "王子瑜",
+        "aliases": [
+          "王子瑜"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "中场 / 后腰",
+        "summary": null,
+        "representative_experience": "贺岁南北对抗赛重点球员，攻防全能",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-ziyu/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhang-jiahao",
+        "person_id": "donglu-football-boys-张家浩",
+        "dossier_person_status": "added",
+        "display_name": "张家浩",
+        "aliases": [
+          "张家浩"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "边前卫",
+        "summary": null,
+        "representative_experience": "2034 杯淘汰赛关键进球球员，国内赛事边路进攻核心",
+        "source_url": "https://www.xiaojiangfc.com/players/zhang-jiahao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhong-yuanchen",
+        "person_id": "donglu-football-boys-钟元辰",
+        "dossier_person_status": "added",
+        "display_name": "钟元辰",
+        "aliases": [
+          "钟元辰"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "组织中场",
+        "summary": null,
+        "representative_experience": "国内热身赛稳定首发，西班牙拉练在册",
+        "source_url": "https://www.xiaojiangfc.com/players/zhong-yuanchen/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "kang-hao",
+        "person_id": "donglu-football-boys-康浩",
+        "dossier_person_status": "added",
+        "display_name": "康浩",
+        "aliases": [
+          "康浩"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "队内支点型前锋，2034 杯多粒制胜进球",
+        "source_url": "https://www.xiaojiangfc.com/players/kang-hao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "chen-zhengmin",
+        "person_id": "donglu-football-boys-陈正敏",
+        "dossier_person_status": "added",
+        "display_name": "陈正敏",
+        "aliases": [
+          "陈正敏"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "前腰 / 进攻核心",
+        "summary": null,
+        "representative_experience": "苏州海选重点苗子，国内赛事进攻组织核心",
+        "source_url": "https://www.xiaojiangfc.com/players/chen-zhengmin/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wei-ziyun",
+        "person_id": "donglu-football-boys-魏子云",
+        "dossier_person_status": "added",
+        "display_name": "魏子云",
+        "aliases": [
+          "魏子云"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "边锋",
+        "summary": null,
+        "representative_experience": "青岛选拔苗子，速度型边路球员",
+        "source_url": "https://www.xiaojiangfc.com/players/wei-ziyun/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "sun-haoyu",
+        "person_id": "donglu-football-boys-孙浩宇",
+        "dossier_person_status": "added",
+        "display_name": "孙浩宇",
+        "aliases": [
+          "孙浩宇"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "海外集训、2034 杯替补门将，国内赛事二门",
+        "source_url": "https://www.xiaojiangfc.com/players/sun-haoyu/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "xu-chenhe",
+        "person_id": "donglu-football-boys-许晨赫",
+        "dossier_person_status": "added",
+        "display_name": "许晨赫",
+        "aliases": [
+          "许晨赫"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "北京海选入选，防守卡位稳定",
+        "source_url": "https://www.xiaojiangfc.com/players/xu-chenhe/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhu-chenxi",
+        "person_id": "donglu-football-boys-朱晨曦",
+        "dossier_person_status": "added",
+        "display_name": "朱晨曦",
+        "aliases": [
+          "朱晨曦"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "国内贺岁杯表现突出，短期海外随行",
+        "source_url": "https://www.xiaojiangfc.com/players/zhu-chenxi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "fu-kanghe",
+        "person_id": "donglu-football-boys-傅康和",
+        "dossier_person_status": "added",
+        "display_name": "傅康和",
+        "aliases": [
+          "傅康和"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "小型邀请赛得分稳定，2034 杯替补登场",
+        "source_url": "https://www.xiaojiangfc.com/players/fu-kanghe/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "li-muxi",
+        "person_id": "donglu-football-boys-李慕希",
+        "dossier_person_status": "added",
+        "display_name": "李慕希",
+        "aliases": [
+          "李慕希"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "南北对抗赛选拔入围，防守拦截能力强",
+        "source_url": "https://www.xiaojiangfc.com/players/li-muxi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "arifati",
+        "person_id": "donglu-football-boys-阿日法提",
+        "dossier_person_status": "added",
+        "display_name": "阿日法提（阿日）",
+        "aliases": [
+          "阿日法提（阿日）",
+          "阿日法提",
+          "阿日"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "前锋 / 边锋",
+        "summary": null,
+        "representative_experience": "新疆球员，作风强硬",
+        "source_url": "https://www.xiaojiangfc.com/players/arifati/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "li-peng",
+        "person_id": "donglu-football-boys-李蓬",
+        "dossier_person_status": "existing",
+        "display_name": "李蓬",
+        "aliases": [
+          "李蓬"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "意大利国际邀请赛、西班牙海外拉练首发门将，2034 杯主力门将",
+        "source_url": "https://www.xiaojiangfc.com/players/li-peng/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "ye-yutong",
+        "person_id": "donglu-football-boys-叶禹同",
+        "dossier_person_status": "existing",
+        "display_name": "叶禹同",
+        "aliases": [
+          "叶禹同"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "国内邀请赛常驻二门，国内多场热身替补门将",
+        "source_url": "https://www.xiaojiangfc.com/players/ye-yutong/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "mei-yuhao",
+        "person_id": "donglu-football-boys-梅宇昊",
+        "dossier_person_status": "existing",
+        "display_name": "梅宇昊",
+        "aliases": [
+          "梅宇昊"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "国内赛区轮换门将，未随意大利海外出征",
+        "source_url": "https://www.xiaojiangfc.com/players/mei-yuhao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-zehao",
+        "person_id": "donglu-football-boys-王泽皓",
+        "dossier_person_status": "existing",
+        "display_name": "王泽皓",
+        "aliases": [
+          "王泽皓"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "内部测试赛门将，国内小型邀请赛替补",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-zehao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-yule",
+        "person_id": "donglu-football-boys-王煜乐",
+        "dossier_person_status": "existing",
+        "display_name": "王煜乐",
+        "aliases": [
+          "王煜乐"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "意大利出征主力后卫，海外对阵国米、巴黎首发",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-yule/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "guo-muchen",
+        "person_id": "donglu-football-boys-郭沐晨",
+        "dossier_person_status": "existing",
+        "display_name": "郭沐晨",
+        "aliases": [
+          "郭沐晨"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "意大利国际锦标赛全程首发，后防核心",
+        "source_url": "https://www.xiaojiangfc.com/players/guo-muchen/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "yang-jili",
+        "person_id": "donglu-football-boys-杨吉力",
+        "dossier_person_status": "existing",
+        "display_name": "杨吉力",
+        "aliases": [
+          "杨吉力"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "多次落选后重新入选海外出征名单，意大利赛事轮换出场",
+        "source_url": "https://www.xiaojiangfc.com/players/yang-jili/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-zijie",
+        "person_id": "donglu-football-boys-王梓杰",
+        "dossier_person_status": "existing",
+        "display_name": "王梓杰",
+        "aliases": [
+          "王梓杰"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "意大利海外出征固定后卫，海外赛事轮换出场",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-zijie/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-ziming",
+        "person_id": "donglu-football-boys-王子铭",
+        "dossier_person_status": "existing",
+        "display_name": "王子铭",
+        "aliases": [
+          "王子铭"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "海外赛事主力后卫，防空能力突出",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-ziming/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "xie-yongxun",
+        "person_id": "donglu-football-boys-谢咏勋",
+        "dossier_person_status": "existing",
+        "display_name": "谢咏勋",
+        "aliases": [
+          "谢咏勋"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "国内赛事后防轮换，未赴海外参赛",
+        "source_url": "https://www.xiaojiangfc.com/players/xie-yongxun/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "cao-bingqing",
+        "person_id": "donglu-football-boys-曹丙庆",
+        "dossier_person_status": "existing",
+        "display_name": "曹丙庆",
+        "aliases": [
+          "曹丙庆"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "后卫",
+        "summary": null,
+        "representative_experience": "国内赛事轮换后卫，未出国参赛",
+        "source_url": "https://www.xiaojiangfc.com/players/cao-bingqing/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "li-junde",
+        "person_id": "donglu-football-boys-李骏德",
+        "dossier_person_status": "existing",
+        "display_name": "李骏德",
+        "aliases": [
+          "李骏德"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "2015 队攻防核心，意大利、西班牙海外赛事绝对主力",
+        "source_url": "https://www.xiaojiangfc.com/players/li-junde/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "li-qihong",
+        "person_id": "donglu-football-boys-李其鸿",
+        "dossier_person_status": "existing",
+        "display_name": "李其鸿",
+        "aliases": [
+          "李其鸿"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "国内热身轮换中场，未赴海外参赛",
+        "source_url": "https://www.xiaojiangfc.com/players/li-qihong/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-zijia",
+        "person_id": "donglu-football-boys-王子嘉",
+        "dossier_person_status": "existing",
+        "display_name": "王子嘉",
+        "aliases": [
+          "王子嘉"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "国内赛事常规首发，组织型中场核心",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-zijia/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "xu-ziyang",
+        "person_id": "donglu-football-boys-徐梓阳",
+        "dossier_person_status": "existing",
+        "display_name": "徐梓阳",
+        "aliases": [
+          "徐梓阳"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "国内邀请赛替补轮换，边路进攻球员",
+        "source_url": "https://www.xiaojiangfc.com/players/xu-ziyang/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "wang-haojun",
+        "person_id": "donglu-football-boys-王皓竣",
+        "dossier_person_status": "existing",
+        "display_name": "王皓竣",
+        "aliases": [
+          "王皓竣"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "国内赛事常驻轮换，防守拦截能力强",
+        "source_url": "https://www.xiaojiangfc.com/players/wang-haojun/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhang-zexi",
+        "person_id": "donglu-football-boys-张泽熙",
+        "dossier_person_status": "existing",
+        "display_name": "张泽熙",
+        "aliases": [
+          "张泽熙"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "西班牙海外拉练出征中场球员，海外赛事轮换出场",
+        "source_url": "https://www.xiaojiangfc.com/players/zhang-zexi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "liang-junxi",
+        "person_id": "donglu-football-boys-梁俊熙",
+        "dossier_person_status": "existing",
+        "display_name": "梁俊熙",
+        "aliases": [
+          "梁俊熙"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "意大利国际赛主力中场，队内最小球员",
+        "source_url": "https://www.xiaojiangfc.com/players/liang-junxi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "tang-zihao",
+        "person_id": "donglu-football-boys-汤梓豪",
+        "dossier_person_status": "existing",
+        "display_name": "汤梓豪（汤圆）",
+        "aliases": [
+          "汤梓豪（汤圆）",
+          "汤梓豪",
+          "汤圆"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "可客串后卫，海外赛事防守核心",
+        "source_url": "https://www.xiaojiangfc.com/players/tang-zihao/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "liu-jiahan",
+        "person_id": "donglu-football-boys-刘佳翰",
+        "dossier_person_status": "existing",
+        "display_name": "刘佳翰",
+        "aliases": [
+          "刘佳翰"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "海外赛事多次破门得分，意大利赛事轮换出场",
+        "source_url": "https://www.xiaojiangfc.com/players/liu-jiahan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "chai-yuxuan",
+        "person_id": "donglu-football-boys-柴宇轩",
+        "dossier_person_status": "existing",
+        "display_name": "柴宇轩",
+        "aliases": [
+          "柴宇轩"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "国内赛事替补中场，未海外出征",
+        "source_url": "https://www.xiaojiangfc.com/players/chai-yuxuan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "bai-zixuan",
+        "person_id": "donglu-football-boys-白紫轩",
+        "dossier_person_status": "existing",
+        "display_name": "白紫轩",
+        "aliases": [
+          "白紫轩"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "边路轮换中场，仅国内合练",
+        "source_url": "https://www.xiaojiangfc.com/players/bai-zixuan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "jin-xingchen",
+        "person_id": "donglu-football-boys-金星辰",
+        "dossier_person_status": "existing",
+        "display_name": "金星辰",
+        "aliases": [
+          "金星辰"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "海外赛事头号得分手，意大利对阵欧洲豪门多球入账",
+        "source_url": "https://www.xiaojiangfc.com/players/jin-xingchen/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhang-miaoqian",
+        "person_id": "donglu-football-boys-张苗倩",
+        "dossier_person_status": "existing",
+        "display_name": "张苗倩（女）",
+        "aliases": [
+          "张苗倩（女）",
+          "张苗倩"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "梯队唯一女球员，国内邀请赛替补前锋",
+        "source_url": "https://www.xiaojiangfc.com/players/zhang-miaoqian/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "liu-hemu",
+        "person_id": "donglu-football-boys-刘禾沐",
+        "dossier_person_status": "existing",
+        "display_name": "刘禾沐",
+        "aliases": [
+          "刘禾沐"
+        ],
+        "squad": "2015队",
+        "listed_team": "2015队",
+        "birth_year": "2015",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "意大利、西班牙海外出征主力边锋，边路快马",
+        "source_url": "https://www.xiaojiangfc.com/players/liu-hemu/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "tan-shiyu",
+        "person_id": "donglu-football-boys-谭诗禹",
+        "dossier_person_status": "added",
+        "display_name": "谭诗禹（和和）",
+        "aliases": [
+          "谭诗禹（和和）",
+          "谭诗禹",
+          "和和"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "2024 官方首批官宣球员，武汉集训、西班牙海外出征固定中场，2034 杯主力",
+        "source_url": "https://www.xiaojiangfc.com/players/tan-shiyu/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "cui-youhe",
+        "person_id": "donglu-football-boys-崔有赫",
+        "dossier_person_status": "added",
+        "display_name": "崔有赫",
+        "aliases": [
+          "崔有赫"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "门将",
+        "summary": null,
+        "representative_experience": "2024 首批官宣门将，2034 杯全程首发门将",
+        "source_url": "https://www.xiaojiangfc.com/players/cui-youhe/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "sun-zhuoyuan",
+        "person_id": "donglu-football-boys-孙卓远",
+        "dossier_person_status": "added",
+        "display_name": "孙卓远",
+        "aliases": [
+          "孙卓远"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "中后卫",
+        "summary": null,
+        "representative_experience": "官方首批球员，武汉集训、西班牙海外出征后防核心",
+        "source_url": "https://www.xiaojiangfc.com/players/sun-zhuoyuan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "liu-yangzi",
+        "person_id": "donglu-football-boys-刘杨子",
+        "dossier_person_status": "added",
+        "display_name": "刘杨子",
+        "aliases": [
+          "刘杨子"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "边锋",
+        "summary": null,
+        "representative_experience": "日本大阪留洋，首批官宣在册",
+        "source_url": "https://www.xiaojiangfc.com/players/liu-yangzi/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhu-hongming",
+        "person_id": "donglu-football-boys-朱鸿铭",
+        "dossier_person_status": "added",
+        "display_name": "朱鸿铭",
+        "aliases": [
+          "朱鸿铭"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "中场",
+        "summary": null,
+        "representative_experience": "韩国留洋球员，官方首批名单",
+        "source_url": "https://www.xiaojiangfc.com/players/zhu-hongming/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "cheng-ziming",
+        "person_id": "donglu-football-boys-程梓明",
+        "dossier_person_status": "added",
+        "display_name": "程梓明",
+        "aliases": [
+          "程梓明"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "中后卫",
+        "summary": null,
+        "representative_experience": "北京国安体系，首批官宣",
+        "source_url": "https://www.xiaojiangfc.com/players/cheng-ziming/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "yang-yihan",
+        "person_id": "donglu-football-boys-杨艺涵",
+        "dossier_person_status": "added",
+        "display_name": "杨艺涵",
+        "aliases": [
+          "杨艺涵"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "前锋",
+        "summary": null,
+        "representative_experience": "北京地区最佳射手，官方首批球员",
+        "source_url": "https://www.xiaojiangfc.com/players/yang-yihan/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "zhou-shengen",
+        "person_id": "donglu-football-boys-周圣恩",
+        "dossier_person_status": "added",
+        "display_name": "周圣恩",
+        "aliases": [
+          "周圣恩"
+        ],
+        "squad": "2012队",
+        "listed_team": "2012队",
+        "birth_year": "2012",
+        "position": "边后卫",
+        "summary": null,
+        "representative_experience": "2025 西班牙海外出征官方名单在册，宁波首发俱乐部",
+        "source_url": "https://www.xiaojiangfc.com/players/zhou-shengen/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      },
+      {
+        "id": "liu-borui",
+        "person_id": "donglu-football-boys-刘博瑞",
+        "dossier_person_status": "added",
+        "display_name": "刘博瑞",
+        "aliases": [
+          "刘博瑞"
+        ],
+        "squad": "2013队",
+        "listed_team": "2013队",
+        "birth_year": "2013",
+        "position": "边后卫",
+        "summary": null,
+        "representative_experience": "左脚球员，后场长传突出",
+        "source_url": "https://www.xiaojiangfc.com/players/liu-borui/",
+        "checked_at": "2026-07-25",
+        "verification_status": "needs-review",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "conflicts": []
+      }
+    ]
   },
   {
     "id": "wanda-spain-plan",
