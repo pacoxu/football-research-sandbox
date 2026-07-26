@@ -65,9 +65,35 @@ test("temporary event, partner, adjacent and prediction records are excluded fro
   }
   const donglu = dossiers.find((item) => item.id === "donglu-football-boys");
   assert.equal(donglu.event_records.length, 15);
-  assert.equal(donglu.program_metrics.length, 6);
-  assert.match(donglu.program_metrics.at(-1).role, /进行中/);
+  assert.equal(donglu.program_metrics.length, 0);
+  assert.equal(donglu.tournament_editions.length, 6);
+  assert.equal(donglu.tournament_editions.at(-1).status, "ongoing");
   assert.ok(!donglu.people.some((person) => /Primary School|Dream Team|Chinese Football Boys/.test(person.local_name)));
+});
+
+test("2034 Cup editions preserve results, sources and the sixth-edition snapshot boundary", () => {
+  const donglu = dossiers.find((item) => item.id === "donglu-football-boys");
+  const editions = donglu.tournament_editions;
+
+  assert.deepEqual(editions.map((item) => item.edition), [1, 2, 3, 4, 5, 6]);
+  assert.deepEqual(editions.map((item) => item.finals.teams), [64, 64, 88, 88, 120, 128]);
+  assert.ok(editions.slice(0, 5).every((item) => item.status === "completed"));
+  assert.ok(editions.slice(0, 5).every((item) => item.finals.champion && item.finals.runner_up && item.finals.third_place));
+  assert.ok(editions.every((item) => item.finals.fourth_place || item.status === "ongoing"));
+  assert.equal(editions[3].awards.length, 0);
+  assert.match(JSON.stringify(editions[0].awards), /邝兆镭/);
+  assert.match(JSON.stringify(editions[1].awards), /詹景源/);
+  assert.match(JSON.stringify(editions[2].awards), /唐华健/);
+  assert.match(JSON.stringify(editions[4].awards), /王杍瑜/);
+  assert.match(JSON.stringify(editions[2].international_participation), /台湾球队/);
+  assert.match(JSON.stringify(editions[4].community_impact), /城市活动|圆融时代广场/);
+  assert.match(JSON.stringify(editions[5].international_participation), /老挝、泰国、乌兹别克斯坦/);
+  assert.equal(editions[5].as_of, "2026-07-25");
+  assert.deepEqual(
+    ["champion", "runner_up", "third_place", "fourth_place", "final_score"].map((field) => editions[5].finals[field]),
+    [null, null, null, null, null]
+  );
+  assert.ok(editions.every((item) => item.sources.length > 0));
 });
 
 test("dossier UI resolves member refs and project cards expose detail links", async () => {
@@ -75,7 +101,9 @@ test("dossier UI resolves member refs and project cards expose detail links", as
   assert.match(app, /dossier\.people/);
   assert.match(app, /view\.members/);
   assert.match(app, /DOSSIER_MEMBER_RELATIONSHIP_LABELS/);
-  assert.match(app, /dossier\.program_metrics/);
+  assert.match(app, /dossier\.tournament_editions/);
+  assert.match(app, /dossier-edition-ongoing/);
+  assert.match(app, /dossier\.metrics\.awards/);
   assert.match(app, /dossier\.html\?id=/);
 });
 

@@ -8575,7 +8575,9 @@
         "2012/2013 梯队完整文字名单仍缺，公开视频名单如何做可复核的逐条转录。",
         "2025 荷兰杯 21 人里外籍或合作球员的注册关系与合同关系。",
         "2016 梯队首批正式成队名单何时公开、与早期试训名单重合度多高。",
-        "2034 杯 2021、2022 两届总决赛的完整前三名、赛制与分区赛规模仍需更强的一手来源补齐。",
+        "2034 杯早期届次仍需补齐可公开访问的一手规程、完整组织名单和完整个人奖项。",
+        "2034 杯第四届个人奖项尚无可靠公开来源；其余届次的低置信奖项也需赛事官方材料复核。",
+        "2034 杯第六届采用截至 2026-07-25 的开赛日快照，冠军、最终名次、决赛比分和个人奖项须在 8 月 1 日后另行回填。",
         "2034 杯历届中国足球小将参赛名单与长期培养核心名单到底有多大重合，仍需逐届拆表。",
         "分区赛直通、邀请、联合组队和外地借调的边界规则，是否每届都有统一书面规程，仍需继续补官方文件。",
         "项目后续多年龄段梯队如何与国字号、职业俱乐部和学校系统并表。",
@@ -11074,54 +11076,557 @@
           "source_url": "https://jsnews.jschina.com.cn/kjwt/202507/t20250728_3567950.shtml"
         }
       ],
-      "program_metrics": [
+      "program_metrics": [],
+      "tournament_editions": [
         {
-          "name": "1st 2034 Cup (2021)",
-          "local_name": "第一届（2021）",
-          "role": "已完赛 · 总决赛64队",
-          "club": "冠军：中国足球小将红队",
-          "note": "5月1日至5日在苏州举行。全国30个地方分赛区和1个综合赛区吸引340余支队伍；深圳西班牙竞技获亚军、河南星途获季军，邝兆镭获MVP。",
-          "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+          "id": "2034-cup-2021",
+          "edition": 1,
+          "year": 2021,
+          "status": "completed",
+          "as_of": "2021-05-05",
+          "title_name": "2034杯",
+          "date_start": "2021-05-01",
+          "date_end": "2021-05-05",
+          "qualifying": {
+            "regions": 31,
+            "teams": 340,
+            "players": null,
+            "matches": null,
+            "note": "赛后口径为30个地方分赛区加1个综合赛区、340余队；启动报道中的11个赛区、310支已报名球队属于更早统计时点。",
+            "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+          },
+          "finals": {
+            "city": "苏州",
+            "venues": [
+              "苏州"
+            ],
+            "teams": 64,
+            "players": null,
+            "matches": null,
+            "format": "总决赛采用9人制；64队先分组，随后进入冠军组与荣誉组。",
+            "champion": "中国足球小将红队",
+            "runner_up": "深圳西班牙竞技",
+            "third_place": "河南星途",
+            "fourth_place": "中国足球小将蓝队",
+            "final_score": null,
+            "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+          },
+          "awards": [
+            {
+              "type": "最有价值球员（MVP）",
+              "recipient": "邝兆镭",
+              "team": "中国足球小将红队",
+              "confidence": "medium",
+              "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+            }
+          ],
+          "audience": [],
+          "international_participation": [],
+          "organization": {
+            "guidance": [],
+            "organizers": [
+              "2034杯组委会"
+            ],
+            "title_sponsor": null,
+            "note": "面向全国招募，采用邀请与自主报名并行；早期完整规程和组织名单仍待一手文件补齐。",
+            "source_url": "https://ent.people.com.cn/n1/2021/0328/c1012-32062959.html"
+          },
+          "community_impact": [],
+          "confidence": "mixed",
+          "confidence_note": "前三名、规模和MVP来自赛事回顾；殿军仅见历届汇总资料，按低置信边界展示。",
+          "sources": [
+            {
+              "title": "人民日报：2034杯小学生足球大会正式启动",
+              "url": "https://ent.people.com.cn/n1/2021/0328/c1012-32062959.html",
+              "tier": "mainstream"
+            },
+            {
+              "title": "未来足球：首届2034杯闭幕",
+              "url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-",
+              "tier": "secondary"
+            },
+            {
+              "title": "2034杯历届名次汇总",
+              "url": "https://zh.wikipedia.org/wiki/2034%E6%9D%AF%E5%B0%8F%E5%AD%A6%E7%94%9F%E8%B6%B3%E7%90%83%E5%A4%A7%E4%BC%9A",
+              "tier": "secondary"
+            }
+          ]
         },
         {
-          "name": "2nd 2034 Cup (2022)",
-          "local_name": "第二届（2022）",
-          "role": "已完赛 · 33赛区 / 355队 / 5313人",
-          "club": "冠军：深圳西班牙竞技",
-          "note": "7月24日至30日在苏州举行，64队参加总决赛。决赛常规时间1比1，深圳西班牙竞技点球取胜；中国足球小将亚军、广州铭途季军。",
-          "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+          "id": "2034-cup-2022",
+          "edition": 2,
+          "year": 2022,
+          "status": "completed",
+          "as_of": "2022-07-30",
+          "title_name": "2034杯",
+          "date_start": "2022-07-24",
+          "date_end": "2022-07-30",
+          "qualifying": {
+            "regions": 33,
+            "teams": 355,
+            "players": 5313,
+            "matches": null,
+            "note": "33个赛区累计355队、5313名球员参与，赛事周期历时253天。",
+            "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+          },
+          "finals": {
+            "city": "苏州",
+            "venues": [
+              "苏州奥体中心"
+            ],
+            "teams": 64,
+            "players": null,
+            "matches": null,
+            "format": "分区赛通常采用8人制，总决赛采用9人制；64队参加苏州总决赛。",
+            "champion": "深圳西班牙竞技",
+            "runner_up": "中国足球小将",
+            "third_place": "广州铭途",
+            "fourth_place": "东莞星动",
+            "final_score": "1比1（深圳西班牙竞技点球胜）",
+            "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+          },
+          "awards": [
+            {
+              "type": "最有价值球员（MVP）",
+              "recipient": "詹景源",
+              "team": "深圳西班牙竞技",
+              "confidence": "medium",
+              "source_url": "https://m.mp.oeeee.com/a/BAAFRD000020220804709522.html"
+            },
+            {
+              "type": "最佳射手",
+              "recipient": "陈湘俊",
+              "team": "广西金嗓子",
+              "confidence": "medium",
+              "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+            },
+            {
+              "type": "最佳守门员",
+              "recipient": "高瀚宇",
+              "team": "深圳西班牙竞技",
+              "confidence": "medium",
+              "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+            }
+          ],
+          "audience": [
+            {
+              "label": "决赛抖音直播同时在线峰值",
+              "value": "87,891人",
+              "note": "线上直播并发峰值，不等同现场观众。",
+              "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+            }
+          ],
+          "international_participation": [],
+          "organization": {
+            "guidance": [
+              "苏州市体育局",
+              "苏州市体育总会"
+            ],
+            "organizers": [
+              "苏州市足球协会",
+              "苏州太湖国家旅游度假区文体旅游发展局",
+              "苏州奥体中心"
+            ],
+            "title_sponsor": null,
+            "note": "苏州职业大学提供赛事支持。",
+            "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+          },
+          "community_impact": [],
+          "confidence": "mixed",
+          "confidence_note": "赛事规模、前三名、决赛和奖项来自赛后报道；殿军仅见历届汇总资料。",
+          "sources": [
+            {
+              "title": "直播吧：第二届2034杯落幕",
+              "url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm",
+              "tier": "mainstream"
+            },
+            {
+              "title": "南方都市报：詹景源获赛事MVP",
+              "url": "https://m.mp.oeeee.com/a/BAAFRD000020220804709522.html",
+              "tier": "mainstream"
+            },
+            {
+              "title": "2034杯历届名次汇总",
+              "url": "https://zh.wikipedia.org/wiki/2034%E6%9D%AF%E5%B0%8F%E5%AD%A6%E7%94%9F%E8%B6%B3%E7%90%83%E5%A4%A7%E4%BC%9A",
+              "tier": "secondary"
+            }
+          ]
         },
         {
-          "name": "3rd 2034 Cup (2023)",
-          "local_name": "第三届（2023）",
-          "role": "已完赛 · 37赛区 / 683队 / 9907人",
-          "club": "冠军：中国足球小将",
-          "note": "7月16日至23日在苏州举行，分区赛累计1356场、历时216天，88队进入总决赛。决赛2比1胜长沙天马德馨园；重庆初心获季军。",
-          "source_url": "https://www.sport.gov.cn/n20001280/n20067626/n20067766/c25808431/content.html"
+          "id": "2034-cup-2023",
+          "edition": 3,
+          "year": 2023,
+          "status": "completed",
+          "as_of": "2023-07-23",
+          "title_name": "伊利2034杯",
+          "date_start": "2023-07-16",
+          "date_end": "2023-07-23",
+          "qualifying": {
+            "regions": 37,
+            "teams": 683,
+            "players": 9907,
+            "matches": 1356,
+            "note": "37个赛区累计683队、9907名球员，完成1356场比赛，周期216天。",
+            "source_url": "https://www.sport.gov.cn/n20001280/n20067626/n20067766/c25808431/content.html"
+          },
+          "finals": {
+            "city": "苏州",
+            "venues": [
+              "苏州奥体中心"
+            ],
+            "teams": 88,
+            "players": null,
+            "matches": null,
+            "format": "分区赛通常采用8人制，总决赛采用9人制；总决赛由64队扩至88队。",
+            "champion": "中国足球小将",
+            "runner_up": "长沙天马德馨园",
+            "third_place": "重庆初心",
+            "fourth_place": "深圳队",
+            "final_score": "中国足球小将2比1长沙天马德馨园",
+            "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+          },
+          "awards": [
+            {
+              "type": "最佳球员",
+              "recipient": "唐华健",
+              "team": "中国足球小将",
+              "confidence": "high",
+              "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+            },
+            {
+              "type": "最佳守门员",
+              "recipient": "李奕辰",
+              "team": "长沙天马",
+              "confidence": "high",
+              "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+            },
+            {
+              "type": "最佳射手",
+              "recipient": "胡梓淳、朱俊杰",
+              "team": "石门五小、太仓百川源源",
+              "confidence": "high",
+              "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+            }
+          ],
+          "audience": [
+            {
+              "label": "决赛现场观众",
+              "value": "超过8,000人",
+              "note": "苏州市足协赛后文章口径。",
+              "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+            }
+          ],
+          "international_participation": [
+            {
+              "note": "两支台湾球队参加总决赛；中国足协派选材团队现场考察球员。",
+              "source_url": "https://www.sport.gov.cn/n20001280/n20067626/n20067766/c25808431/content.html"
+            }
+          ],
+          "organization": {
+            "guidance": [
+              "苏州市体育局"
+            ],
+            "organizers": [
+              "苏州市足球协会",
+              "苏州奥体中心管理有限公司",
+              "2034杯体育发展（苏州）有限公司"
+            ],
+            "title_sponsor": "伊利",
+            "note": "赛事以“伊利2034杯”名义举办。",
+            "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+          },
+          "community_impact": [],
+          "confidence": "high",
+          "confidence_note": "规模与参与范围采用国家体育总局口径，赛果、奖项、观众和组织信息采用苏州市足协赛后发布。",
+          "sources": [
+            {
+              "title": "国家体育总局：第三届2034杯收官",
+              "url": "https://www.sport.gov.cn/n20001280/n20067626/n20067766/c25808431/content.html",
+              "tier": "official"
+            },
+            {
+              "title": "苏州市足球协会：伊利2034杯总决赛闭幕",
+              "url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959",
+              "tier": "official"
+            },
+            {
+              "title": "2034杯历届名次汇总",
+              "url": "https://zh.wikipedia.org/wiki/2034%E6%9D%AF%E5%B0%8F%E5%AD%A6%E7%94%9F%E8%B6%B3%E7%90%83%E5%A4%A7%E4%BC%9A",
+              "tier": "secondary"
+            }
+          ]
         },
         {
-          "name": "4th 2034 Cup (2024)",
-          "local_name": "第四届（2024）",
-          "role": "已完赛 · 35赛区 / 600余队 / 近万人",
-          "club": "冠军：陕西师范大学附属小学",
-          "note": "7月13日至20日在苏州举行，88队、1457名球员完成288场总决赛；决赛2比1胜广州铭途，中国足球小将获季军。本届起总决赛永久落户苏州工业园区。",
-          "source_url": "https://www.sport.gov.cn/n14471/n14481/n14518/c27938143/content.html"
+          "id": "2034-cup-2024",
+          "edition": 4,
+          "year": 2024,
+          "status": "completed",
+          "as_of": "2024-07-20",
+          "title_name": "新建元2034杯",
+          "date_start": "2024-07-13",
+          "date_end": "2024-07-20",
+          "qualifying": {
+            "regions": 35,
+            "teams": 600,
+            "players": 10000,
+            "matches": null,
+            "note": "覆盖29个省级地区、35个赛区，600余队、近万名球员参与；数值为官方概数。",
+            "source_url": "https://ent.people.com.cn/n1/2024/0708/c1012-40273095.html"
+          },
+          "finals": {
+            "city": "苏州工业园区",
+            "venues": [
+              "苏州奥体中心",
+              "阳澄湖半岛足球公园"
+            ],
+            "teams": 88,
+            "players": 1457,
+            "matches": 288,
+            "format": "总决赛采用9人制，88队在8天内完成288场比赛。",
+            "champion": "陕西师范大学附属小学",
+            "runner_up": "广州铭途",
+            "third_place": "中国足球小将",
+            "fourth_place": "东莞丽园张特",
+            "final_score": "陕西师大附小2比1广州铭途",
+            "source_url": "https://www.sport.gov.cn/n14471/n14481/n14518/c27938143/content.html"
+          },
+          "awards": [],
+          "audience": [
+            {
+              "label": "赛事现场观众",
+              "value": "超过10,000人次",
+              "note": "园区官方次年回顾口径；另记线上观看超过10万人次。",
+              "source_url": "https://www.sipac.gov.cn/szgyyq/dthg202507/202507/1336f22cc7944741951c76437a8323a5.shtml"
+            }
+          ],
+          "international_participation": [],
+          "organization": {
+            "guidance": [],
+            "organizers": [
+              "苏州市足球协会",
+              "苏州工业园区文体旅游局"
+            ],
+            "title_sponsor": "新建元",
+            "note": "本届起总决赛永久落户苏州工业园区；开闭幕及决赛在苏州奥体中心，其余比赛主要在阳澄湖半岛足球公园。",
+            "source_url": "https://ent.people.com.cn/n1/2024/0708/c1012-40273095.html"
+          },
+          "community_impact": [
+            {
+              "note": "园区官方回顾称赛事带动消费近1亿元，并组织球员走进圆融时代广场等城市空间；属于赛事影响记录而非竞技成绩。",
+              "source_url": "https://www.sipac.gov.cn/szgyyq/dthg202507/202507/1336f22cc7944741951c76437a8323a5.shtml"
+            }
+          ],
+          "confidence": "mixed",
+          "confidence_note": "前三名、规模与永久落户有官方来源；第四届未找到可靠公开个人奖项，故留空；殿军为低置信汇总字段。",
+          "sources": [
+            {
+              "title": "国家体育总局：第四届2034杯总决赛落幕",
+              "url": "https://www.sport.gov.cn/n14471/n14481/n14518/c27938143/content.html",
+              "tier": "official"
+            },
+            {
+              "title": "人民网：2034杯总决赛永久落户苏州工业园区",
+              "url": "https://ent.people.com.cn/n1/2024/0708/c1012-40273095.html",
+              "tier": "mainstream"
+            },
+            {
+              "title": "苏州工业园区：体育与文旅影响回顾",
+              "url": "https://www.sipac.gov.cn/szgyyq/dthg202507/202507/1336f22cc7944741951c76437a8323a5.shtml",
+              "tier": "government"
+            },
+            {
+              "title": "2034杯历届名次汇总",
+              "url": "https://zh.wikipedia.org/wiki/2034%E6%9D%AF%E5%B0%8F%E5%AD%A6%E7%94%9F%E8%B6%B3%E7%90%83%E5%A4%A7%E4%BC%9A",
+              "tier": "secondary"
+            }
+          ]
         },
         {
-          "name": "5th 2034 Cup (2025)",
-          "local_name": "第五届（2025）",
-          "role": "已完赛 · 907队 / 超1.3万人",
-          "club": "冠军：中国足球小将",
-          "note": "7月19日至26日在苏州举行，120队、2000余名球员完成416场总决赛；决赛5比0胜北京梦之队，苏州奥体小将获季军。",
-          "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
+          "id": "2034-cup-2025",
+          "edition": 5,
+          "year": 2025,
+          "status": "completed",
+          "as_of": "2025-07-26",
+          "title_name": "新建元2034杯",
+          "date_start": "2025-07-19",
+          "date_end": "2025-07-26",
+          "qualifying": {
+            "regions": null,
+            "teams": 907,
+            "players": 13000,
+            "matches": null,
+            "note": "全国分区赛累计907队、超过1.3万名球员；官方发布未在同一口径中给出赛区数。",
+            "source_url": "https://www.sipac.gov.cn/szgyyq/tsyq/202507/76f791cc69474064ad0516d6dea6dd5e.shtml"
+          },
+          "finals": {
+            "city": "苏州工业园区",
+            "venues": [
+              "苏州奥体中心",
+              "阳澄湖半岛足球公园"
+            ],
+            "teams": 120,
+            "players": 2000,
+            "matches": 416,
+            "format": "总决赛采用9人制，120队、2000余名球员在8天内完成416场比赛。",
+            "champion": "中国足球小将",
+            "runner_up": "北京梦之队",
+            "third_place": "苏州奥体小将",
+            "fourth_place": "福建长乐金刚腿",
+            "final_score": "中国足球小将5比0北京梦之队",
+            "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
+          },
+          "awards": [
+            {
+              "type": "最有价值球员（MVP）",
+              "recipient": "王杍瑜",
+              "team": "中国足球小将",
+              "confidence": "low",
+              "source_url": "https://www.sohu.com/a/919513199_121985812"
+            }
+          ],
+          "audience": [
+            {
+              "label": "决赛现场观众",
+              "value": "超过10,000人",
+              "note": "园区官方赛后发布口径。",
+              "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
+            }
+          ],
+          "international_participation": [
+            {
+              "note": "公开报道记录港澳台青少年代表参赛；该参与范围不用于推导完整参赛队名单。",
+              "source_url": "https://www.sina.cn/news/detail/5321359925970613.html"
+            }
+          ],
+          "organization": {
+            "guidance": [
+              "江苏省足球运动协会"
+            ],
+            "organizers": [
+              "苏州工业园区文体旅游局",
+              "苏州市足球协会"
+            ],
+            "title_sponsor": "新建元",
+            "note": "苏州奥体中心、阳澄湖半岛旅游发展有限公司与2034杯体育发展（苏州）有限公司协办。",
+            "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
+          },
+          "community_impact": [
+            {
+              "note": "在圆融时代广场、东沙湖邻里中心和邻瑞广场设置城市活动，联动比赛、消费、社区与文旅场景。",
+              "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
+            },
+            {
+              "note": "李玮锋等15位退役球员参加致敬传承赛，中国足球元老队4比3战胜中国足球小将。",
+              "source_url": "https://www.sipac.gov.cn/szgyyq/tsyq/202507/c6d1ede977a34437adf5d41e93081e95.shtml"
+            }
+          ],
+          "confidence": "mixed",
+          "confidence_note": "规模、前三名、观众、组织和城市活动采用园区官方口径；MVP与殿军缺少同等级一手页面，标为低置信。",
+          "sources": [
+            {
+              "title": "苏州工业园区：第五届总决赛开幕",
+              "url": "https://www.sipac.gov.cn/szgyyq/tsyq/202507/76f791cc69474064ad0516d6dea6dd5e.shtml",
+              "tier": "government"
+            },
+            {
+              "title": "苏州工业园区：第五届总决赛收官",
+              "url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml",
+              "tier": "government"
+            },
+            {
+              "title": "苏州工业园区：第五届致敬传承赛",
+              "url": "https://www.sipac.gov.cn/szgyyq/tsyq/202507/c6d1ede977a34437adf5d41e93081e95.shtml",
+              "tier": "government"
+            },
+            {
+              "title": "第五届MVP报道",
+              "url": "https://www.sohu.com/a/919513199_121985812",
+              "tier": "secondary"
+            },
+            {
+              "title": "2034杯历届名次汇总",
+              "url": "https://zh.wikipedia.org/wiki/2034%E6%9D%AF%E5%B0%8F%E5%AD%A6%E7%94%9F%E8%B6%B3%E7%90%83%E5%A4%A7%E4%BC%9A",
+              "tier": "secondary"
+            }
+          ]
         },
         {
-          "name": "6th 2034 Cup (2026)",
-          "local_name": "第六届（2026）",
-          "role": "进行中 · 39赛区 / 882队 / 12604人",
-          "club": "总决赛：128队 / 约2600人",
-          "note": "7月25日至8月1日在苏州奥体中心、阳澄湖半岛足球公园等地举行。全国34个省级地区均派队，老挝、泰国、乌兹别克斯坦首次参赛；截至2026-07-25尚未产生最终名次。",
-          "source_url": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml"
+          "id": "2034-cup-2026",
+          "edition": 6,
+          "year": 2026,
+          "status": "ongoing",
+          "as_of": "2026-07-25",
+          "title_name": "新建元2034杯",
+          "date_start": "2026-07-25",
+          "date_end": "2026-08-01",
+          "qualifying": {
+            "regions": 39,
+            "teams": 882,
+            "players": 12604,
+            "matches": null,
+            "note": "39个赛区累计882队、12604名球员；全国34个省级地区均有队伍进入赛事体系。",
+            "source_url": "https://www.sohu.com/a/1052119257_662910"
+          },
+          "finals": {
+            "city": "苏州工业园区",
+            "venues": [
+              "苏州奥体中心",
+              "阳澄湖半岛足球公园"
+            ],
+            "teams": 128,
+            "players": 2600,
+            "matches": null,
+            "format": "总决赛采用9人制，128队、约2600名球员参赛；赛事计划于8月1日结束。",
+            "champion": null,
+            "runner_up": null,
+            "third_place": null,
+            "fourth_place": null,
+            "final_score": null,
+            "source_url": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml"
+          },
+          "awards": [],
+          "audience": [],
+          "international_participation": [
+            {
+              "note": "老挝、泰国、乌兹别克斯坦球队首次参赛；本档案不据此扩展完整参赛队名单。",
+              "source_url": "https://www.sohu.com/a/1052119257_662910"
+            }
+          ],
+          "organization": {
+            "guidance": [],
+            "organizers": [
+              "2034杯组委会",
+              "苏州工业园区相关承办单位"
+            ],
+            "title_sponsor": "新建元",
+            "note": "总决赛继续在苏州奥体中心与阳澄湖半岛足球公园举行。",
+            "source_url": "https://www.sohu.com/a/1052119257_662910"
+          },
+          "community_impact": [
+            {
+              "note": "7月19日举行致敬传承赛，20余位退役名将与足球小将常规时间1比1，元老队点球3比2取胜。",
+              "source_url": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml"
+            }
+          ],
+          "confidence": "mixed",
+          "confidence_note": "截至2026-07-25开赛日的静态快照；赛事仍在进行，不填写冠军、名次、决赛比分或个人奖项，8月1日后另补最终赛果。",
+          "sources": [
+            {
+              "title": "苏州工业园区：第六届致敬传承赛与总决赛预告",
+              "url": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml",
+              "tier": "government"
+            },
+            {
+              "title": "苏州奥体中心：第六届规模与国际参与",
+              "url": "https://www.sohu.com/a/1052119257_662910",
+              "tier": "secondary"
+            },
+            {
+              "title": "SIP English：第六届总决赛赛程",
+              "url": "https://www.sipac.gov.cn/szgyyqenglish/News/202607/6360874d98f04fe5a96d7745b8c81efe.shtml",
+              "tier": "government"
+            }
+          ]
         }
       ],
       "headline_stats": {
