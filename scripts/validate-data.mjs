@@ -553,6 +553,44 @@ function validateYouthProjectDossier(dossier, playerIds) {
   }
   if (dossier.id === "donglu-football-boys") {
     assert(!dossier.people.some((person) => /Chinese Football Boys|Primary School|Dream Team/.test(person.local_name)), "2034 Cup team result leaked into people");
+    const editions = dossier.tournament_editions;
+    assert(Array.isArray(editions) && editions.length === 6, "Expected six structured 2034 Cup editions");
+    assert(
+      editions.map((edition) => edition.edition).join(",") === "1,2,3,4,5,6",
+      "2034 Cup editions must be unique and continuous"
+    );
+    assert(new Set(editions.map((edition) => edition.id)).size === 6, "Duplicate 2034 Cup edition id");
+    for (const edition of editions) {
+      const label = `2034 Cup edition ${edition.edition}`;
+      assert(edition.year === 2020 + edition.edition, `Invalid year on ${label}`);
+      assert(isIsoDate(edition.as_of) && isIsoDate(edition.date_start) && isIsoDate(edition.date_end), `Invalid date on ${label}`);
+      assert(["completed", "ongoing"].includes(edition.status), `Invalid status on ${label}`);
+      assert(["high", "mixed"].includes(edition.confidence), `Invalid confidence on ${label}`);
+      assert(edition.qualifying && /^https?:\/\//.test(edition.qualifying.source_url), `Invalid qualifying source on ${label}`);
+      assert(edition.finals && Number.isInteger(edition.finals.teams) && edition.finals.teams > 0, `Invalid finals scale on ${label}`);
+      assert(Array.isArray(edition.finals.venues) && edition.finals.venues.length > 0, `Missing venues on ${label}`);
+      assert(/^https?:\/\//.test(edition.finals.source_url), `Invalid finals source on ${label}`);
+      assert(Array.isArray(edition.sources) && edition.sources.length > 0, `Missing edition sources on ${label}`);
+      assert(edition.sources.every((source) => source.title && /^https?:\/\//.test(source.url)), `Invalid edition source on ${label}`);
+      assert(edition.organization && /^https?:\/\//.test(edition.organization.source_url), `Invalid organization source on ${label}`);
+      for (const award of edition.awards) {
+        assert(award.type && award.recipient && ["high", "medium", "low"].includes(award.confidence), `Invalid award on ${label}`);
+        assert(/^https?:\/\//.test(award.source_url), `Invalid award source on ${label}`);
+      }
+      for (const record of [...edition.audience, ...edition.international_participation, ...edition.community_impact]) {
+        assert(/^https?:\/\//.test(record.source_url), `Invalid surrounding-information source on ${label}`);
+      }
+      if (edition.status === "completed") {
+        assert(edition.finals.champion && edition.finals.runner_up && edition.finals.third_place, `Missing completed podium on ${label}`);
+      } else {
+        assert(
+          ["champion", "runner_up", "third_place", "fourth_place", "final_score"].every((field) => edition.finals[field] === null),
+          `Ongoing edition contains final results on ${label}`
+        );
+      }
+    }
+    assert(editions.slice(0, 5).every((edition) => edition.status === "completed"), "First five 2034 Cup editions must be completed");
+    assert(editions[5].status === "ongoing" && editions[5].as_of === "2026-07-25", "Sixth 2034 Cup snapshot boundary changed");
     const profiles = dossier.external_player_profiles ?? [];
     assert(profiles.length === 86, "Expected 86 xiaojiangfc player profiles");
     assert(dossier.people.length === 125, "Expected 125 tracked Donglu dossier people");
