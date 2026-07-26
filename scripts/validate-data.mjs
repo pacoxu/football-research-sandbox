@@ -307,11 +307,13 @@ const allowedChinaYouthCoachSourceTypes = new Set([
   "state-media",
   "league",
   "secondary-media",
-  "self-published"
+  "self-published",
+  "official-foundation"
 ]);
 
 const allowedChinaYouthCoachPeriodStatuses = new Set([
   "current-reported",
+  "current-verified",
   "former",
   "confirmed-2025"
 ]);
@@ -1913,6 +1915,97 @@ function validateChinaYouthDevelopmentCoaches(archive) {
   }
 }
 
+function validateFootballStories(archive, dataset) {
+  assert(archive?.schema_version === 1, "Invalid football_stories schema_version");
+  assert(isIsoDate(archive?.last_checked), "Invalid football_stories last_checked");
+  assert(archive.editorial_policy?.zh && archive.editorial_policy?.en, "Missing football stories editorial policy");
+  assert(Array.isArray(archive.stories) && archive.stories.length > 0, "Invalid football stories list");
+
+  const storyIds = new Set();
+  const coachIds = new Set(dataset.chinaYouthDevelopmentCoaches?.coaches.map((coach) => coach.id) ?? []);
+  const dossierIds = new Set(dataset.dossiers.map((dossier) => dossier.id));
+  const dossierPersonIds = new Set(dataset.dossiers.flatMap((dossier) => dossier.people?.map((person) => person.id) ?? []));
+  const overseasRecordIds = new Set(
+    dataset.overseasHistory.countries.flatMap((country) => country.featured_records?.map((record) => record.id) ?? [])
+  );
+
+  for (const story of archive.stories) {
+    assert(story.id && !storyIds.has(story.id), `Duplicate football story id: ${story.id}`);
+    storyIds.add(story.id);
+  }
+
+  for (const story of archive.stories) {
+    assert(["person", "institution"].includes(story.kind), `Invalid football story kind: ${story.id}`);
+    assert(story.title?.zh && story.title?.en, `Missing football story title: ${story.id}`);
+    assert(story.summary?.zh && story.summary?.en, `Missing football story summary: ${story.id}`);
+    assert(story.identity_note?.zh && story.identity_note?.en, `Missing identity note: ${story.id}`);
+    assert(isIsoDate(story.checked_at), `Invalid football story checked_at: ${story.id}`);
+    assert(Array.isArray(story.key_facts) && story.key_facts.length > 0, `Missing key facts: ${story.id}`);
+    assert(Array.isArray(story.timeline) && story.timeline.length > 0, `Missing timeline: ${story.id}`);
+    assert(Array.isArray(story.sections) && story.sections.length > 0, `Missing sections: ${story.id}`);
+    assert(Array.isArray(story.public_disputes), `Missing public_disputes: ${story.id}`);
+    assert(Array.isArray(story.source_links) && story.source_links.length > 0, `Missing sources: ${story.id}`);
+    assert(Array.isArray(story.related_entities), `Missing related entities: ${story.id}`);
+
+    const sourceUrls = new Set();
+    for (const source of story.source_links) {
+      assert(source.type && source.label && source.claim, `Incomplete football story source: ${story.id}`);
+      assert(/^https?:\/\//.test(source.url), `Invalid football story source URL: ${story.id}`);
+      assert(isIsoDate(source.checked_at), `Invalid football story source date: ${story.id}`);
+      assert(!sourceUrls.has(source.url), `Duplicate football story source URL: ${story.id}`);
+      sourceUrls.add(source.url);
+    }
+
+    const relatedKeys = new Set();
+    for (const related of story.related_entities) {
+      const key = `${related.type}:${related.id}`;
+      assert(related.id && related.label && !relatedKeys.has(key), `Invalid related entity: ${story.id}:${key}`);
+      relatedKeys.add(key);
+      if (related.type === "coach") assert(coachIds.has(related.id), `Unknown related coach: ${key}`);
+      else if (related.type === "dossier") assert(dossierIds.has(related.id), `Unknown related dossier: ${key}`);
+      else if (related.type === "dossier-person") assert(dossierPersonIds.has(related.id), `Unknown related dossier person: ${key}`);
+      else if (related.type === "overseas-record") assert(overseasRecordIds.has(related.id), `Unknown related overseas record: ${key}`);
+      else if (related.type === "story") assert(storyIds.has(related.id), `Unknown related story: ${key}`);
+      else throw new Error(`Invalid related entity type: ${key}`);
+    }
+
+    const disputeIds = new Set();
+    for (const dispute of story.public_disputes) {
+      assert(dispute.id && !disputeIds.has(dispute.id), `Duplicate dispute id: ${story.id}`);
+      disputeIds.add(dispute.id);
+      assert(isIsoDate(dispute.date), `Invalid dispute date: ${story.id}:${dispute.id}`);
+      assert(dispute.topic?.zh && dispute.topic?.en, `Missing dispute topic: ${story.id}:${dispute.id}`);
+      assert(dispute.claim_status && dispute.response_status, `Missing dispute status: ${story.id}:${dispute.id}`);
+      assert(Array.isArray(dispute.statements) && dispute.statements.length > 0, `Missing dispute statements: ${story.id}:${dispute.id}`);
+      assert(dispute.editorial_note?.zh && dispute.editorial_note?.en, `Missing dispute editorial note: ${story.id}:${dispute.id}`);
+      for (const statement of dispute.statements) {
+        assert(statement.speaker && statement.position, `Missing dispute attribution: ${story.id}:${dispute.id}`);
+        assert(statement.paraphrase?.zh && statement.paraphrase?.en, `Missing dispute paraphrase: ${story.id}:${dispute.id}`);
+        assert(/^https?:\/\//.test(statement.source_url), `Invalid dispute source: ${story.id}:${dispute.id}`);
+      }
+    }
+  }
+
+  for (const coach of dataset.chinaYouthDevelopmentCoaches?.coaches ?? []) {
+    if (coach.story_id) assert(storyIds.has(coach.story_id), `Unknown coach story_id: ${coach.id}`);
+  }
+  for (const dossier of dataset.dossiers) {
+    for (const person of dossier.people ?? []) {
+      if (person.story_id) assert(storyIds.has(person.story_id), `Unknown dossier person story_id: ${person.id}`);
+    }
+  }
+  for (const country of dataset.overseasHistory.countries) {
+    for (const record of country.featured_records ?? []) {
+      if (record.story_id) assert(storyIds.has(record.story_id), `Unknown overseas story_id: ${record.id}`);
+    }
+  }
+
+  const dongbeilu = archive.stories.find((story) => story.id === "dalian-dongbeilu-primary-football");
+  const sun = archive.stories.find((story) => story.id === "sun-jihai-player-to-coach");
+  assert(!dongbeilu.notable_alumni.includes("孙继海"), "Sun Jihai must not be listed as a Dongbeilu alumnus");
+  assert(sun.key_facts.some((fact) => fact.value?.zh === "大连实验小学"), "Sun Jihai school correction is missing");
+}
+
 function validateBigFiveAsianCoaches(archive) {
   assert(typeof archive.id === "string" && archive.id.length > 0, "Missing big_five_asian_coaches id");
   assert(isIsoDate(archive.last_checked), "Invalid big_five_asian_coaches last_checked");
@@ -3110,6 +3203,8 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   if (dataset.chinaYouthDevelopmentCoaches !== null) {
     validateChinaYouthDevelopmentCoaches(dataset.chinaYouthDevelopmentCoaches);
   }
+
+  validateFootballStories(dataset.footballStories, dataset);
 
   if (dataset.bigFiveAsianCoaches !== null) {
     validateBigFiveAsianCoaches(dataset.bigFiveAsianCoaches);

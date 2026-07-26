@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-07-20",
+  "generated_at": "2026-07-25",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -13,13 +13,13 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 824,
+    "record_count": 826,
     "stale_records": 55,
     "needs_review_records": 238
   },
   "freshness": {
-    "as_of": "2026-07-20",
-    "audited_records": 1029,
+    "as_of": "2026-07-25",
+    "audited_records": 1031,
     "overdue": 55,
     "by_window": {
       "30": 55,
@@ -286,9 +286,9 @@
         "zh": "教练",
         "en": "Coaches"
       },
-      "record_count": 35,
+      "record_count": 37,
       "quality": {
-        "complete": 10,
+        "complete": 12,
         "mixed": 0,
         "partial": 25,
         "needs-review": 0,
@@ -296,17 +296,17 @@
         "excluded": 0
       },
       "source_tiers": {
-        "1": 14,
+        "1": 15,
         "2": 2,
         "3": 0,
-        "4": 1,
+        "4": 2,
         "5": 6,
         "6": 0,
         "unclassified": 12
       },
       "checked_at": {
         "oldest": "2026-06-27",
-        "newest": "2026-07-20"
+        "newest": "2026-07-25"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -429,6 +429,10 @@
     {
       "path": "data/raw/china-youth-development-coaches.json",
       "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/coachCollection"
+    },
+    {
+      "path": "data/raw/football-stories.json",
+      "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/footballStories"
     },
     {
       "path": "data/raw/big-five-asian-coaches.json",
@@ -790,6 +794,13 @@
         "checked_at": "2026-07-19",
         "missing_fields": []
       },
+      "coach:cn-sun-jihai-haiqiu": {
+        "id": "coach:cn-sun-jihai-haiqiu",
+        "status": "complete",
+        "source_tier": 1,
+        "checked_at": "2026-07-25",
+        "missing_fields": []
+      },
       "coach:cn-tang-xiaocheng-shandong-u15": {
         "id": "coach:cn-tang-xiaocheng-shandong-u15",
         "status": "partial",
@@ -802,6 +813,13 @@
         "status": "partial",
         "source_tier": null,
         "checked_at": "2026-07-18",
+        "missing_fields": []
+      },
+      "coach:cn-wang-xiaolong-foundation-phase": {
+        "id": "coach:cn-wang-xiaolong-foundation-phase",
+        "status": "complete",
+        "source_tier": 4,
+        "checked_at": "2026-07-25",
         "missing_fields": []
       },
       "coach:cn-xie-bo-shimen-5": {

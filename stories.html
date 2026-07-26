@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>青训教练 | 青训球员追踪站</title>
-    <meta name="description" content="查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260725-friend-links" />
+    <title>足球故事 | 青训球员追踪站</title>
+    <meta name="description" content="查看职业球员、青训教练和校园足球机构的可追溯故事。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260725-football-stories" />
   </head>
-  <body data-page="coaches">
+  <body data-page="stories">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -34,54 +34,30 @@
           </button>
         </div>
       </header>
-
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="coaches.hero.eyebrow">Youth Coaches</p>
-            <h1 data-i18n="coaches.hero.title">青训教练</h1>
-            <p class="hero-text" data-i18n="coaches.hero.text">集中查看基层、校园、足校和民间青训教练，以及中国男足 U 系列教练组。每条记录保留职责边界和原始来源。</p>
+            <p class="eyebrow" data-i18n="stories.hero.eyebrow">Football Stories</p>
+            <h1 data-i18n="stories.hero.title">足球故事</h1>
+            <p class="hero-text" data-i18n="stories.hero.text">把球员生涯、教练实践、校园传统和公开争议放回时间线，并保留事实边界与原始来源。</p>
           </div>
           <aside class="hero-spotlight">
-            <p class="eyebrow" data-i18n="coaches.coverage.eyebrow">Coverage</p>
-            <h2 id="coachesCoverage" data-i18n="common.loading">载入中</h2>
-            <p id="coachesCheckedAt" class="hero-side-note"></p>
+            <p class="eyebrow" data-i18n="stories.coverage.eyebrow">Coverage</p>
+            <h2 id="storiesCoverage" data-i18n="common.loading">载入中</h2>
+            <p id="storiesCheckedAt" class="hero-side-note"></p>
           </aside>
         </section>
-
         <section class="content-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="coaches.development.eyebrow">Grassroots & Academy</p>
-              <h2 data-i18n="coaches.development.title">基层与青训机构教练</h2>
+              <p class="eyebrow" data-i18n="stories.list.eyebrow">Profiles & Institutions</p>
+              <h2 data-i18n="stories.list.title">人物与机构故事</h2>
             </div>
           </div>
-          <p class="section-note" data-i18n="coaches.development.note">只收录能够确认具名机构和实际训练或技术职责的教练，不以行政头衔或球员经历代替执教事实。</p>
-          <div id="developmentCoachGrid" class="player-card-grid"></div>
-        </section>
-
-        <section class="content-panel">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow" data-i18n="coaches.national.eyebrow">National Youth Teams</p>
-              <h2 data-i18n="coaches.national.title">中国男足 U 系列教练组</h2>
-            </div>
-          </div>
-          <p id="nationalCoachNote" class="section-note"></p>
-          <div id="nationalCoachGrid" class="story-grid"></div>
-        </section>
-
-        <section class="content-panel">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow" data-i18n="coaches.watchlist.eyebrow">Research Queue</p>
-              <h2 data-i18n="coaches.watchlist.title">待补教练与机构</h2>
-            </div>
-          </div>
-          <div id="coachWatchlist" class="stack-list compact-grid"></div>
+          <p id="storiesEditorialPolicy" class="section-note"></p>
+          <div id="storiesGrid" class="story-grid"></div>
         </section>
       </main>
-
       <footer class="site-footer">
         <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
         <nav class="friend-links" aria-label="友情链接">
@@ -94,6 +70,6 @@
         </nav>
       </footer>
     </div>
-    <script type="module" src="./assets/app.js?v=20260720-coach-snapshots"></script>
+    <script type="module" src="./assets/app.js?v=20260725-football-stories"></script>
   </body>
 </html>

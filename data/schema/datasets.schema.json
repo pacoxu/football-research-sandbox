@@ -50,6 +50,39 @@
         "additionalProperties": true
       }
     },
+    "footballStories": {
+      "type": "object",
+      "required": ["schema_version", "last_checked", "editorial_policy", "stories"],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "last_checked": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "editorial_policy": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+        "stories": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "kind", "title", "summary", "checked_at", "related_entities", "identity_note", "key_facts", "timeline", "sections", "public_disputes", "source_links"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "kind": { "enum": ["person", "institution"] },
+              "title": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "summary": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "identity_note": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+              "related_entities": { "type": "array" },
+              "key_facts": { "type": "array", "minItems": 1 },
+              "timeline": { "type": "array", "minItems": 1 },
+              "sections": { "type": "array", "minItems": 1 },
+              "public_disputes": { "type": "array" },
+              "source_links": { "type": "array", "minItems": 1 }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
     "scoutingWatchlist": {
       "type": "object",
       "required": ["schema_version", "source", "scope", "records", "related_collections"],

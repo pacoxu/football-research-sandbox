@@ -1,6 +1,6 @@
 # 数据校验脚本
 
-更新时间：2026-07-19
+更新时间：2026-07-25
 
 `scripts/validate-data.mjs` 是当前数据变更的第一道程序化检查。运行方式：
 
@@ -77,6 +77,7 @@ flowchart LR
 - 中国 U20 2025 必须保留原始终报名 23 人、更新赛事名单 23 人和 1 次门将替换；四份官方 Match Summary 汇总需保持 20 人出场、61 人次、44 次首发、3960 分钟和 8 球，并与 loader 合并后的球员记录一致。
 - `china-men-youth-coaches` 校验队伍周期、教练、集训节点、staff 和来源链接。
 - `china-youth-development-coaches` 校验组织类型、年龄段、任期快照、逐条来源声明和核验状态。
+- `football-stories` 校验故事 ID、关联实体、时间线、来源和争议归因；争议必须同时记录主张状态、回应状态和编辑边界，并固定孙继海属于实验小学、不得列为东北路校友以及两位王晓龙/王啸龙的身份边界。
 - `big-five-asian-coaches` 校验来源链接、scope count、教练战绩和 club records 加总。
 - `asian-coaches` 校验教练 ID、统计口径、任期范围、`role_scope`、`competition_scope`、官方来源类型、核查日期和可选战绩。
 
