@@ -805,7 +805,7 @@
   },
   {
     "id": "cn-liu-shaoziyang-2003",
-    "overseas_status": "active-registered",
+    "overseas_status": "returned",
     "name": "Liu Shaoziyang",
     "local_name": "刘邵子洋",
     "country": "China PR",
@@ -815,12 +815,10 @@
     "height_cm": 190,
     "weight_kg": null,
     "registration_club": {
-      "name": "LAFC2",
-      "country": "United States",
+      "name": "Beijing Guoan",
+      "country": "China",
       "organization_type": "professional-club-unspecified"
     },
-    "league_system_override": "MLS NEXT Pro",
-    "overseas_bucket_override": "americas-other",
     "training_pathway": [
       {
         "stage_label": "武汉青训 / 拜仁签约前节点",
@@ -858,6 +856,13 @@
         "country": "United States",
         "note": "LAFC2 官方公告确认其由拜仁慕尼黑二队加盟，进入 MLS NEXT Pro / 北美职业梯队路径；截至 2026-06-27，现役留洋口径按 LAFC2 处理。",
         "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026/07 北京国安",
+        "organization": "Beijing Guoan",
+        "country": "China",
+        "note": "LAFC2 官方确认将刘邵子洋转会至北京国安，现役留洋状态随之结束。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
@@ -871,15 +876,20 @@
       {
         "competition_id": "china-overseas-2026",
         "label": "2026 中国现役留洋跟踪",
-        "team": "LAFC2",
-        "squad_status": "registered",
+        "team": "Beijing Guoan",
+        "squad_status": "tracked",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-06-27，官方可核的最新海外注册节点为 LAFC2；该队参加 MLS NEXT Pro，通常按美国第三级别职业体系 / MLS 预备队体系处理。"
+        "note": "截至 2026-07-25，LAFC2 已官宣将刘邵子洋转会至北京国安；本条保留为留洋回流跟踪。"
       }
     ],
     "external_links": [
+      {
+        "type": "official",
+        "label": "LAFC2 transfer announcement",
+        "url": "https://www.lafc.com/lafc2/"
+      },
       {
         "type": "official",
         "label": "LAFC2 signing announcement",
@@ -898,8 +908,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-06-27",
-      "notes": "当前归属以 LAFC2 官方签约公告为准；欧洲阶段的拜仁二队、奥地利克拉根福二队、里德二队、霍恩外租链与出场量，继续与 Wikipedia / Transfermarkt 类数据库交叉保留。"
+      "last_checked": "2026-07-25",
+      "notes": "当前归属以 LAFC2 官方发布的转会北京国安信息为准；此前 LAFC2 与欧洲阶段履历继续作为历史路径保留。"
     }
   }
 ]

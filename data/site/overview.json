@@ -3,12 +3,12 @@
   "stats": {
     "player_count": 459,
     "country_count": 8,
-    "foreign_registration_count": 112,
+    "foreign_registration_count": 111,
     "china_overseas_status_counts": {
-      "active-registered": 17,
+      "active-registered": 16,
       "pending-effective": 0,
       "trial-watch": 0,
-      "returned": 3,
+      "returned": 4,
       "historical-only": 0
     }
   },
@@ -1168,7 +1168,7 @@
           "name": "Kang-in Lee",
           "local_name": "李刚仁",
           "country": "Korea Republic",
-          "overseas_history_record_id": "lee-kang-in-psg-2025",
+          "overseas_history_record_id": "lee-kang-in-atletico-2026",
           "peak": {
             "eur": 30000000,
             "currency": "EUR",
@@ -4075,12 +4075,16 @@
             "appearances": 0,
             "appearance_label": "LAFC2 当前注册，出场数待更新",
             "competitive_debut": false,
-            "active_abroad": true,
+            "active_abroad": false,
             "summary": "刘邵子洋 2025 年 9 月从拜仁二队转往 LAFC2，把原本的“拜仁签约 + 奥地利外租”欧洲门将路径延伸到北美 MLS NEXT Pro 体系。现阶段这条记录更适合计为当前海外注册和门将培养路径，而不是已完成稳定一线队登场的成年留洋样本。",
             "notes": [
               "LAFC2 官方公告确认其由拜仁慕尼黑二队加盟。",
               "MLS NEXT Pro 通常对应美国第三级别职业体系 / MLS 预备队体系，和欧洲五大联赛青年梯队不能直接等量比较。",
-              "待 MLS NEXT Pro 官方赛季数据稳定后，再回填具体出场和零封数据。"
+              "待 MLS NEXT Pro 官方赛季数据稳定后，再回填具体出场和零封数据。",
+              "2026 年 7 月转会北京国安后，本条只保留为 LAFC2 历史注册快照。"
+            ],
+            "source_links": [
+              "https://www.lafc.com/lafc2/"
             ]
           },
           {
@@ -5539,7 +5543,7 @@
             "season": "2025-2026",
             "history_year_range": "2023-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -5547,7 +5551,11 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "2026 年 7 月回归广岛三箭后，本条只保留为 Mallorca 历史赛季快照。"
+            ],
+            "source_links": [
+              "https://www.jleague.jp/player/1300032/"
             ]
           },
           {
@@ -5875,7 +5883,7 @@
             "season": "2025-2026",
             "history_year_range": "2021-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -5883,7 +5891,8 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2021 起覆盖其近年持续海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "Gent 租借于 2026 年 6 月 30 日结束，本条改为历史快照。"
             ]
           },
           {
@@ -5959,7 +5968,7 @@
             "season": "2025-2026",
             "history_year_range": "2021-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -5967,7 +5976,8 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2021 起覆盖其近年持续海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "2026 年 7 月加盟 LA Galaxy 后，本条只保留为 Birmingham City 历史快照。"
             ]
           },
           {
@@ -6078,7 +6088,7 @@
             "season": "2025-2026",
             "history_year_range": "2024-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -6086,7 +6096,11 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2024 起覆盖其近年持续海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "2026 年 7 月回归广岛三箭后，本条只保留为 Salzburg 历史赛季快照。"
+            ],
+            "source_links": [
+              "https://www.jleague.jp/news/article/34501/"
             ]
           },
           {
@@ -6108,6 +6122,53 @@
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
               "这条记录优先解决现役名单展示，出场与进球后续再补。"
+            ]
+          },
+          {
+            "id": "daiki-hashioka-slavia-2026",
+            "name": "Daiki Hashioka",
+            "local_name": "桥冈大树",
+            "bucket": "europe-other",
+            "league": "Czech First League",
+            "club": "Slavia Prague",
+            "season": "2026-2027",
+            "history_year_range": "2026-2027",
+            "status": "verified",
+            "active_abroad": true,
+            "appearances": 0,
+            "appearance_label": "租借结束回归，正式出场待补",
+            "competitive_debut": true,
+            "summary": "Gent 租借期于 2026 年 6 月 30 日结束后，桥冈大树回到合同所属俱乐部 Slavia Prague；新赛季正式出场数据待补。",
+            "notes": [
+              "按租借合同到期和当前注册俱乐部处理。",
+              "2026-07-25 完成本轮核对。"
+            ],
+            "source_links": [
+              "https://www.kaagent.be/nl/nieuws/02-02-2026/welkom-daiki-hashioka",
+              "https://www.transfermarkt.us/daiki-hashioka/profil/spieler/387191"
+            ]
+          },
+          {
+            "id": "kyogo-furuhashi-la-galaxy-2026",
+            "name": "Kyogo Furuhashi",
+            "local_name": "古桥亨梧",
+            "bucket": "americas-other",
+            "league": "Major League Soccer",
+            "club": "LA Galaxy",
+            "season": "2026",
+            "history_year_range": "2026",
+            "status": "verified",
+            "active_abroad": true,
+            "appearances": 0,
+            "appearance_label": "2026-07-21 官宣，正式出场待补",
+            "competitive_debut": false,
+            "summary": "LA Galaxy 于 2026 年 7 月 21 日官宣从 Birmingham City 签下古桥亨梧；正式出场数据待首秀后补录。",
+            "notes": [
+              "转会性质为永久转会。",
+              "2026-07-25 完成本轮核对。"
+            ],
+            "source_links": [
+              "https://www.lagalaxy.com/news/la-galaxy-sign-former-scottish-premiership-player-of-the-year-golden-boot-winner-kyogo-furuhashi"
             ]
           }
         ]
@@ -6348,7 +6409,7 @@
             },
             {
               "player": "李刚仁",
-              "featured_record_id": "lee-kang-in-psg-2025",
+              "featured_record_id": "lee-kang-in-atletico-2026",
               "appearances": 24,
               "goals": 2,
               "league_breakdown": [
@@ -6907,7 +6968,7 @@
             "season": "2025-2026",
             "history_year_range": "2023-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 13,
             "appearance_label": "2025/26 各项赛事 13 场",
             "competitive_debut": true,
@@ -6915,7 +6976,8 @@
             "notes": [
               "这条记录按 2025/26 当前赛季快照建档，不等同于其 PSG 生涯总数。",
               "由于官方里程碑稿使用各项赛事口径，展示标签也同步保留“各项赛事”说明。",
-              "后续如获取到更稳定的法甲单线统计，可再补一条纯联赛快照或改写为联赛口径。"
+              "后续如获取到更稳定的法甲单线统计，可再补一条纯联赛快照或改写为联赛口径。",
+              "2026-07-25 马竞官宣后，本条取消当前状态，继续作为 PSG 2025/26 历史快照保留。"
             ]
           },
           {
@@ -7047,7 +7109,7 @@
             "season": "2025-2026",
             "history_year_range": "2025-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -7055,7 +7117,8 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 覆盖其 2025-2026 海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "Coventry City 租借结束后，本条只保留为 2025/26 历史快照。"
             ]
           },
           {
@@ -7068,7 +7131,7 @@
             "season": "2025-2026",
             "history_year_range": "2023-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -7076,7 +7139,8 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "Kaiserslautern 租借结束后，本条只保留为 2025/26 历史快照。"
             ]
           },
           {
@@ -7089,7 +7153,7 @@
             "season": "2025-2026",
             "history_year_range": "2023-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -7097,7 +7161,8 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2023 起覆盖其近年持续海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "Gent 租借结束后，本条只保留为 2025/26 历史快照。"
             ]
           },
           {
@@ -7173,7 +7238,7 @@
             "season": "2025-2026",
             "history_year_range": "2025-2026",
             "status": "verified",
-            "active_abroad": true,
+            "active_abroad": false,
             "appearances": 0,
             "appearance_label": "当前俱乐部已核，赛季出场待补",
             "competitive_debut": true,
@@ -7181,7 +7246,8 @@
             "notes": [
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 覆盖其 2025-2026 海外阶段，方便年份回看。",
-              "这条记录优先解决现役名单展示，出场与进球后续再补。"
+              "这条记录优先解决现役名单展示，出场与进球后续再补。",
+              "Dordrecht 租借结束后，本条只保留为 2025/26 历史快照。"
             ]
           },
           {
@@ -7308,6 +7374,122 @@
               "当前归类按 2026-05-22 的俱乐部注册状态处理。",
               "history_year_range 从 2024 起覆盖其近年持续海外阶段，方便年份回看。",
               "这条记录优先解决现役名单展示，出场与进球后续再补。"
+            ]
+          },
+          {
+            "id": "lee-kang-in-atletico-2026",
+            "name": "Lee Kang-in",
+            "local_name": "李刚仁",
+            "bucket": "big-five",
+            "league": "LaLiga",
+            "club": "Atlético Madrid",
+            "season": "2026-2027",
+            "history_year_range": "2026-2027",
+            "status": "verified",
+            "active_abroad": true,
+            "appearances": 0,
+            "appearance_label": "2026-07-25 官宣，正式出场待补",
+            "competitive_debut": false,
+            "summary": "Atlético Madrid 于 2026 年 7 月 25 日官宣李刚仁加盟；本条成为其当前 featured record，正式出场数据待首秀后补录。",
+            "notes": [
+              "转会性质为永久转会。",
+              "PSG 2025/26 赛季记录继续由 lee-kang-in-psg-2025 表示。",
+              "2026-07-25 完成本轮核对。"
+            ],
+            "source_links": [
+              "https://en.atleticodemadrid.com/noticias/categoria/primer-equipo?noticia%5Bcatnoticia_id%5D=8"
+            ]
+          },
+          {
+            "id": "yang-min-hyeok-tottenham-2026",
+            "name": "Yang Min-hyeok",
+            "local_name": "梁民革",
+            "bucket": "big-five",
+            "league": "Premier League",
+            "club": "Tottenham Hotspur",
+            "season": "2026-2027",
+            "history_year_range": "2026-2027",
+            "status": "verified",
+            "active_abroad": true,
+            "appearances": 0,
+            "appearance_label": "租借结束回归，正式出场待补",
+            "competitive_debut": false,
+            "summary": "Coventry City 租借结束后，梁民革回到 Tottenham Hotspur，并列入俱乐部当前球员页；新赛季正式出场数据待补。",
+            "notes": [
+              "转会性质为租借回归。",
+              "2026-07-25 完成本轮核对。"
+            ],
+            "source_links": [
+              "https://www.tottenhamhotspur.com/player/623095/yang-min-hyeok"
+            ]
+          },
+          {
+            "id": "kim-ji-soo-brentford-2026",
+            "name": "Kim Ji-soo",
+            "local_name": "金志洙",
+            "bucket": "big-five",
+            "league": "Premier League",
+            "club": "Brentford",
+            "season": "2026-2027",
+            "history_year_range": "2026-2027",
+            "status": "verified",
+            "active_abroad": true,
+            "appearances": 0,
+            "appearance_label": "租借结束回归，赛季出场待补",
+            "competitive_debut": true,
+            "summary": "Kaiserslautern 租借结束后，金志洙回到 Brentford；本条作为 2026/27 当前记录，赛季出场数据待补。",
+            "notes": [
+              "转会性质为租借回归。",
+              "2026-07-25 完成本轮核对。"
+            ],
+            "source_links": [
+              "https://www.brentfordfc.com/en/teams/profile/ji-soo-kim"
+            ]
+          },
+          {
+            "id": "hong-hyun-seok-mainz-2026",
+            "name": "Hong Hyun-seok",
+            "local_name": "洪贤锡",
+            "bucket": "big-five",
+            "league": "Bundesliga",
+            "club": "Mainz 05",
+            "season": "2026-2027",
+            "history_year_range": "2026-2027",
+            "status": "verified",
+            "active_abroad": true,
+            "appearances": 0,
+            "appearance_label": "租借结束回归，赛季出场待补",
+            "competitive_debut": true,
+            "summary": "Gent 租借结束后，洪贤锡回到 Mainz 05 并参加季前备战；本条作为 2026/27 当前记录，赛季出场数据待补。",
+            "notes": [
+              "转会性质为租借回归。",
+              "2026-07-25 完成本轮核对。"
+            ],
+            "source_links": [
+              "https://servicecenter.mainz05.de/de/support/solutions/articles/204000071402-05er-presseinfo-start-in-die-sommervorbereitung-trainingsplan-f%C3%BCr-die-kw-27"
+            ]
+          },
+          {
+            "id": "yoon-do-young-magdeburg-2026",
+            "name": "Yoon Do-young",
+            "local_name": "尹道英",
+            "bucket": "big-five-lower-tier",
+            "league": "2. Bundesliga",
+            "club": "1. FC Magdeburg",
+            "season": "2026-2027",
+            "history_year_range": "2026-2027",
+            "status": "verified",
+            "active_abroad": true,
+            "appearances": 0,
+            "appearance_label": "2026/27 租借，正式出场待补",
+            "competitive_debut": false,
+            "summary": "Brighton 确认尹道英 2026/27 赛季租借加盟 1. FC Magdeburg；本条作为其德乙当前记录，正式出场数据待补。",
+            "notes": [
+              "转会性质为赛季租借。",
+              "2026-07-25 完成本轮核对。"
+            ],
+            "source_links": [
+              "https://thebrightonbase.counterpress.media/news/brighton-confirm-youngster-set-for-third-loan-spell-since-his-arrival-as-fresh-opportunity-in-germany-awaits-75377"
             ]
           }
         ]

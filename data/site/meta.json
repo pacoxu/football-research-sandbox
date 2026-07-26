@@ -13,7 +13,7 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 826,
+    "record_count": 833,
     "stale_records": 55,
     "needs_review_records": 238
   },
@@ -54,7 +54,7 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-07-19"
+        "newest": "2026-07-25"
       },
       "overdue_records": 55,
       "missing_fields": [
@@ -322,11 +322,11 @@
         "zh": "留洋历史",
         "en": "Overseas history"
       },
-      "record_count": 121,
+      "record_count": 128,
       "quality": {
         "complete": 1,
         "mixed": 0,
-        "partial": 120,
+        "partial": 127,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -338,7 +338,7 @@
         "4": 0,
         "5": 13,
         "6": 0,
-        "unclassified": 107
+        "unclassified": 114
       },
       "checked_at": {
         "oldest": "2026-07-20",
@@ -348,7 +348,7 @@
       "missing_fields": [
         {
           "field": "source_links",
-          "count": 91
+          "count": 98
         }
       ]
     },
