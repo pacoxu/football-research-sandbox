@@ -100,6 +100,7 @@ python3 -m http.server 4173
 - `data/raw/youth-development-systems.json` 维护中国、日韩与北欧样本的稳定体系结构；中国条目区分历史预备队联赛、U21联赛、B队中乙通道和U19/U17/U15赛事，年度队数与赛季规则只放在 `annual_snapshot`。
 - `coaches.html` 展示 `china-youth-development-coaches.json` 的基层教练样本和 `china-men-youth-coaches.json` 的国字号 U 系列教练组，并逐条提供原始来源入口。
 - `data/raw/dossiers.json` 的 `genbao-football-base` 记录根宝基地代际、代表球员、当前状态、可信度和现状来源；无法确认的当前去向必须标记为待复核。
+- `data/raw/big-five-debut-forecast.json` 维护中国球员下一位五大联赛首秀的透明评分快照；生成结果是研究概率与公平赔率，不是博彩公司盘口。
 - 若外部资料存在冲突，以 `verification.status` 和 `verification.notes` 标记，而不是直接覆盖。
 - `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、大洋洲其他、美洲其他等层级。
 - 留洋国家条目可选带 `featured_records`，用于补真实个案，至少保留赛季、联赛、俱乐部、正式比赛出场与摘要。

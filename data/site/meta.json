@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-07-25",
+  "generated_at": "2026-07-26",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -18,7 +18,7 @@
     "needs_review_records": 238
   },
   "freshness": {
-    "as_of": "2026-07-25",
+    "as_of": "2026-07-26",
     "audited_records": 1031,
     "overdue": 55,
     "by_window": {
@@ -44,17 +44,17 @@
         "excluded": 0
       },
       "source_tiers": {
-        "1": 451,
+        "1": 453,
         "2": 2,
         "3": 1,
-        "4": 3,
+        "4": 1,
         "5": 2,
         "6": 0,
         "unclassified": 0
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-07-25"
+        "newest": "2026-07-26"
       },
       "overdue_records": 55,
       "missing_fields": [
@@ -459,6 +459,10 @@
       "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap"
     },
     {
+      "path": "data/raw/big-five-debut-forecast.json",
+      "schema": "https://football-research.local/schema/big-five-debut-forecast.schema.json"
+    },
+    {
       "path": "data/site/players.json",
       "schema": "https://football-research.local/schema/site.schema.json#/$defs/players"
     },
@@ -469,6 +473,10 @@
     {
       "path": "data/site/meta.json",
       "schema": "https://football-research.local/schema/site-meta.schema.json"
+    },
+    {
+      "path": "data/site/big-five-debut-forecast.json",
+      "schema": "https://football-research.local/schema/site.schema.json#/$defs/bigFiveDebutForecast"
     }
   ],
   "catalog_quality": {

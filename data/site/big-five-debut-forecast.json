@@ -1,0 +1,600 @@
+{
+  "schema_version": 1,
+  "market": {
+    "id": "china-next-big-five-league-debut-2026-27",
+    "title": "谁能第一个踢上五大联赛？",
+    "country": "China PR",
+    "opens_on": "2026-07-26",
+    "closes_on": "2027-06-30",
+    "competitions": [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1"
+    ],
+    "settlement": {
+      "appearance_scope": "top-flight-league",
+      "substitute_appearance_counts": true,
+      "excludes": [
+        "bench-only",
+        "youth-and-reserve",
+        "domestic-cup",
+        "continental-cup",
+        "lower-tier"
+      ],
+      "debut_time_rule": "Match kickoff time plus the official entry minute; a starter's debut time is kickoff.",
+      "tie_rule": "Exact identical debut timestamps are settled as joint winners."
+    }
+  },
+  "last_checked": "2026-07-26",
+  "previous_snapshot": null,
+  "freshness": {
+    "stale_after_days": 7,
+    "refresh_interval_minutes": 5
+  },
+  "model": {
+    "type": "weighted-softmax",
+    "temperature": 10,
+    "formula": "probability = exp(score / temperature) / sum(exp(all scores / temperature))",
+    "fair_odds_formula": "decimal_odds = 1 / probability",
+    "factors": [
+      {
+        "key": "first_team_proximity",
+        "label": "一线队距离",
+        "weight": 0.35
+      },
+      {
+        "key": "senior_competitive_experience",
+        "label": "成年正式比赛经验",
+        "weight": 0.25
+      },
+      {
+        "key": "big_five_pathway",
+        "label": "五大联赛路径确定性",
+        "weight": 0.2
+      },
+      {
+        "key": "registration_eligibility",
+        "label": "注册 / 出场资格",
+        "weight": 0.1
+      },
+      {
+        "key": "recent_availability",
+        "label": "近期状态与可用性",
+        "weight": 0.1
+      }
+    ]
+  },
+  "leader": {
+    "player_id": "cn-wei-xiangxin-2008",
+    "label": "魏祥鑫",
+    "probability": 0.416368,
+    "probability_percent": 41.6,
+    "decimal_odds": 2.4
+  },
+  "no_qualifier": {
+    "probability": 0.240223,
+    "probability_percent": 24,
+    "decimal_odds": 4.16
+  },
+  "outcomes": [
+    {
+      "id": "cn-wei-xiangxin-2008",
+      "kind": "player",
+      "market_rank": 1,
+      "candidate_rank": 1,
+      "model_score": 85.5,
+      "probability": 0.416368,
+      "probability_percent": 41.6,
+      "decimal_odds": 2.4,
+      "probability_change_pp": null,
+      "label": "魏祥鑫",
+      "player": {
+        "id": "cn-wei-xiangxin-2008",
+        "names": {
+          "zh": "魏祥鑫",
+          "en": "Wei Xiangxin",
+          "native": "Wei Xiangxin",
+          "ja": "",
+          "ko": ""
+        },
+        "birth_date": "2008-02-26",
+        "primary_position": "Centre-Forward",
+        "registration_club": {
+          "name": "AJ Auxerre",
+          "country": "France",
+          "organization_type": "professional-club"
+        },
+        "profile_url": "./player.html?id=cn-wei-xiangxin-2008"
+      },
+      "rationale": "已经与欧塞尔签下五年合同、获得 49 号并进入职业队球员页面，当前是距离法甲正式报名和登场最近的候选。",
+      "factor_scores": [
+        {
+          "key": "first_team_proximity",
+          "label": "一线队距离",
+          "score": 95,
+          "weight": 0.35,
+          "contribution": 33.25
+        },
+        {
+          "key": "senior_competitive_experience",
+          "label": "成年正式比赛经验",
+          "score": 65,
+          "weight": 0.25,
+          "contribution": 16.25
+        },
+        {
+          "key": "big_five_pathway",
+          "label": "五大联赛路径确定性",
+          "score": 95,
+          "weight": 0.2,
+          "contribution": 19
+        },
+        {
+          "key": "registration_eligibility",
+          "label": "注册 / 出场资格",
+          "score": 90,
+          "weight": 0.1,
+          "contribution": 9
+        },
+        {
+          "key": "recent_availability",
+          "label": "近期状态与可用性",
+          "score": 80,
+          "weight": 0.1,
+          "contribution": 8
+        }
+      ],
+      "source_links": [
+        {
+          "type": "club",
+          "label": "欧塞尔官方签约公告",
+          "url": "https://www.aja.fr/grand-espoir-chinois-xiangxin-wei-signe-a-laja/",
+          "checked_at": "2026-07-26"
+        },
+        {
+          "type": "club",
+          "label": "欧塞尔职业队球员页",
+          "url": "https://www.aja.fr/joueur/xiangxin-wei/",
+          "checked_at": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "id": "no_qualifier",
+      "kind": "no-qualifier",
+      "market_rank": 2,
+      "candidate_rank": null,
+      "model_score": 80,
+      "probability": 0.240223,
+      "probability_percent": 24,
+      "decimal_odds": 4.16,
+      "probability_change_pp": null,
+      "label": "本季无人",
+      "rationale": "截至 2027-06-30，没有新的中国球员完成五大联赛顶级联赛正式首秀。",
+      "factor_scores": [],
+      "source_links": []
+    },
+    {
+      "id": "cn-xu-bin-2004",
+      "kind": "player",
+      "market_rank": 3,
+      "candidate_rank": 2,
+      "model_score": 75.25,
+      "probability": 0.149391,
+      "probability_percent": 14.9,
+      "decimal_odds": 6.69,
+      "probability_change_pp": null,
+      "label": "徐彬",
+      "player": {
+        "id": "cn-xu-bin-2004",
+        "names": {
+          "zh": "徐彬",
+          "en": "Xu Bin",
+          "native": "徐彬",
+          "ja": "",
+          "ko": ""
+        },
+        "birth_date": "2004-05-02",
+        "primary_position": "Midfielder",
+        "registration_club": {
+          "name": "Wolverhampton Wanderers",
+          "country": "England",
+          "organization_type": "professional-club"
+        },
+        "profile_url": "./player.html?id=cn-xu-bin-2004"
+      },
+      "rationale": "仍在狼队 2026/27 合同名单内，拥有国内成年比赛和 U23 国字号经验；下一步取决于一线队季前安排或新的英格兰租借。",
+      "factor_scores": [
+        {
+          "key": "first_team_proximity",
+          "label": "一线队距离",
+          "score": 65,
+          "weight": 0.35,
+          "contribution": 22.75
+        },
+        {
+          "key": "senior_competitive_experience",
+          "label": "成年正式比赛经验",
+          "score": 80,
+          "weight": 0.25,
+          "contribution": 20
+        },
+        {
+          "key": "big_five_pathway",
+          "label": "五大联赛路径确定性",
+          "score": 90,
+          "weight": 0.2,
+          "contribution": 18
+        },
+        {
+          "key": "registration_eligibility",
+          "label": "注册 / 出场资格",
+          "score": 70,
+          "weight": 0.1,
+          "contribution": 7
+        },
+        {
+          "key": "recent_availability",
+          "label": "近期状态与可用性",
+          "score": 75,
+          "weight": 0.1,
+          "contribution": 7.5
+        }
+      ],
+      "source_links": [
+        {
+          "type": "club",
+          "label": "狼队 2026 留队名单",
+          "url": "https://www.wolves.co.uk/news/club/20260606-wolves-confirm-2026-retained-list/",
+          "checked_at": "2026-07-26"
+        },
+        {
+          "type": "club",
+          "label": "狼队加盟公告",
+          "url": "https://www.wolves.co.uk/news/academy/20260130-youngster-xu-bin-joins-the-club/",
+          "checked_at": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "id": "cn-wang-yudong-2006",
+      "kind": "player",
+      "market_rank": 4,
+      "candidate_rank": 3,
+      "model_score": 67.75,
+      "probability": 0.070567,
+      "probability_percent": 7.1,
+      "decimal_odds": 14.17,
+      "probability_change_pp": null,
+      "label": "王钰栋",
+      "player": {
+        "id": "cn-wang-yudong-2006",
+        "names": {
+          "zh": "王钰栋",
+          "en": "Wang Yudong",
+          "native": "Wang Yudong",
+          "ja": "",
+          "ko": ""
+        },
+        "birth_date": "2006-11-23",
+        "primary_position": "Forward",
+        "registration_club": {
+          "name": "Zhejiang FC",
+          "country": "China",
+          "organization_type": "professional-club-unspecified"
+        },
+        "profile_url": "./player.html?id=cn-wang-yudong-2006"
+      },
+      "rationale": "国内同龄攻击手中成年联赛产出最突出，但尚无五大联赛俱乐部官方转会节点，因此路径分低于已经进入欧洲体系的候选。",
+      "factor_scores": [
+        {
+          "key": "first_team_proximity",
+          "label": "一线队距离",
+          "score": 40,
+          "weight": 0.35,
+          "contribution": 14
+        },
+        {
+          "key": "senior_competitive_experience",
+          "label": "成年正式比赛经验",
+          "score": 95,
+          "weight": 0.25,
+          "contribution": 23.75
+        },
+        {
+          "key": "big_five_pathway",
+          "label": "五大联赛路径确定性",
+          "score": 70,
+          "weight": 0.2,
+          "contribution": 14
+        },
+        {
+          "key": "registration_eligibility",
+          "label": "注册 / 出场资格",
+          "score": 70,
+          "weight": 0.1,
+          "contribution": 7
+        },
+        {
+          "key": "recent_availability",
+          "label": "近期状态与可用性",
+          "score": 90,
+          "weight": 0.1,
+          "contribution": 9
+        }
+      ],
+      "source_links": [
+        {
+          "type": "official",
+          "label": "中国足协青年球员发展报道",
+          "url": "https://www.thecfa.cn/mtzl/20260126/37274.html",
+          "checked_at": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "id": "cn-wang-bohao-2005",
+      "kind": "player",
+      "market_rank": 5,
+      "candidate_rank": 4,
+      "model_score": 63.75,
+      "probability": 0.047303,
+      "probability_percent": 4.7,
+      "decimal_odds": 21.14,
+      "probability_change_pp": null,
+      "label": "王博豪",
+      "player": {
+        "id": "cn-wang-bohao-2005",
+        "names": {
+          "zh": "王博豪",
+          "en": "Wang Bohao",
+          "native": "Wang Bohao",
+          "ja": "",
+          "ko": ""
+        },
+        "birth_date": "2005-07-18",
+        "primary_position": "Midfielder",
+        "registration_club": {
+          "name": "FC Den Bosch",
+          "country": "Netherlands",
+          "organization_type": "professional-club-unspecified"
+        },
+        "profile_url": "./player.html?id=cn-wang-bohao-2005"
+      },
+      "rationale": "已进入登博思一线队并积累荷乙正式比赛经验，成年比赛基础扎实；仍需先完成从荷乙到五大联赛顶级俱乐部的转会。",
+      "factor_scores": [
+        {
+          "key": "first_team_proximity",
+          "label": "一线队距离",
+          "score": 35,
+          "weight": 0.35,
+          "contribution": 12.25
+        },
+        {
+          "key": "senior_competitive_experience",
+          "label": "成年正式比赛经验",
+          "score": 90,
+          "weight": 0.25,
+          "contribution": 22.5
+        },
+        {
+          "key": "big_five_pathway",
+          "label": "五大联赛路径确定性",
+          "score": 65,
+          "weight": 0.2,
+          "contribution": 13
+        },
+        {
+          "key": "registration_eligibility",
+          "label": "注册 / 出场资格",
+          "score": 85,
+          "weight": 0.1,
+          "contribution": 8.5
+        },
+        {
+          "key": "recent_availability",
+          "label": "近期状态与可用性",
+          "score": 75,
+          "weight": 0.1,
+          "contribution": 7.5
+        }
+      ],
+      "source_links": [
+        {
+          "type": "club",
+          "label": "登博思一线队名单",
+          "url": "https://www.fcdenbosch.nl/eerste-elftal/",
+          "checked_at": "2026-07-26"
+        },
+        {
+          "type": "club",
+          "label": "登博思租借公告",
+          "url": "https://www.fcdenbosch.nl/middenvelder-bohao-wang-op-huurbasis-naar-fc-den-bosch/",
+          "checked_at": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "id": "cn-zhang-jiaming-2007",
+      "kind": "player",
+      "market_rank": 6,
+      "candidate_rank": 5,
+      "model_score": 63.5,
+      "probability": 0.046135,
+      "probability_percent": 4.6,
+      "decimal_odds": 21.68,
+      "probability_change_pp": null,
+      "label": "张家鸣",
+      "player": {
+        "id": "cn-zhang-jiaming-2007",
+        "names": {
+          "zh": "张家鸣",
+          "en": "Zhang Jiaming",
+          "native": "Zhang Jiaming",
+          "ja": "",
+          "ko": ""
+        },
+        "birth_date": "2007-03-07",
+        "primary_position": "Centre-Forward",
+        "registration_club": {
+          "name": "Burnley FC U21",
+          "country": "England",
+          "organization_type": "club-academy"
+        },
+        "profile_url": "./player.html?id=cn-zhang-jiaming-2007"
+      },
+      "rationale": "已正式进入伯恩利 U21，并在 2026/27 季前赛取得进球和连续出场；主要不确定性是从 PL2 到一线队以及英格兰出场资格。",
+      "factor_scores": [
+        {
+          "key": "first_team_proximity",
+          "label": "一线队距离",
+          "score": 60,
+          "weight": 0.35,
+          "contribution": 21
+        },
+        {
+          "key": "senior_competitive_experience",
+          "label": "成年正式比赛经验",
+          "score": 50,
+          "weight": 0.25,
+          "contribution": 12.5
+        },
+        {
+          "key": "big_five_pathway",
+          "label": "五大联赛路径确定性",
+          "score": 85,
+          "weight": 0.2,
+          "contribution": 17
+        },
+        {
+          "key": "registration_eligibility",
+          "label": "注册 / 出场资格",
+          "score": 45,
+          "weight": 0.1,
+          "contribution": 4.5
+        },
+        {
+          "key": "recent_availability",
+          "label": "近期状态与可用性",
+          "score": 85,
+          "weight": 0.1,
+          "contribution": 8.5
+        }
+      ],
+      "source_links": [
+        {
+          "type": "club",
+          "label": "伯恩利 U21 签约公告",
+          "url": "https://www.burnleyfootballclub.com/media-article/jiaming-zhang-joins-burnley-u21s",
+          "checked_at": "2026-07-26"
+        },
+        {
+          "type": "club",
+          "label": "伯恩利 U21 季前赛记录",
+          "url": "https://www.burnleyfootballclub.com/media-article/u21s-pre-season-continues-at-flixton-fc",
+          "checked_at": "2026-07-26"
+        }
+      ]
+    },
+    {
+      "id": "other_chinese_player",
+      "kind": "other",
+      "market_rank": 7,
+      "candidate_rank": null,
+      "model_score": 55,
+      "probability": 0.019719,
+      "probability_percent": 2,
+      "decimal_odds": 50.71,
+      "probability_change_pp": null,
+      "label": "其他中国球员",
+      "rationale": "候选名单之外的中国球员率先完成五大联赛顶级联赛首秀。",
+      "factor_scores": [],
+      "source_links": []
+    },
+    {
+      "id": "cn-du-yuezheng-2005",
+      "kind": "player",
+      "market_rank": 8,
+      "candidate_rank": 6,
+      "model_score": 48.5,
+      "probability": 0.010294,
+      "probability_percent": 1,
+      "decimal_odds": 97.14,
+      "probability_change_pp": null,
+      "label": "杜月徵",
+      "player": {
+        "id": "cn-du-yuezheng-2005",
+        "names": {
+          "zh": "杜月徵",
+          "en": "Du Yuezheng",
+          "native": "Du Yuezheng",
+          "ja": "",
+          "ko": ""
+        },
+        "birth_date": "2005-09-14",
+        "primary_position": "Forward",
+        "registration_club": {
+          "name": "Chongqing Tonglianglong FC",
+          "country": "China",
+          "organization_type": "professional-club-unspecified"
+        },
+        "profile_url": "./player.html?id=cn-du-yuezheng-2005"
+      },
+      "rationale": "拥有西班牙成年联赛履历和马贝拉合同，但已外租回重庆铜梁龙至 2026 年底，本季上半程无法直接从欧洲俱乐部冲击西甲。",
+      "factor_scores": [
+        {
+          "key": "first_team_proximity",
+          "label": "一线队距离",
+          "score": 15,
+          "weight": 0.35,
+          "contribution": 5.25
+        },
+        {
+          "key": "senior_competitive_experience",
+          "label": "成年正式比赛经验",
+          "score": 75,
+          "weight": 0.25,
+          "contribution": 18.75
+        },
+        {
+          "key": "big_five_pathway",
+          "label": "五大联赛路径确定性",
+          "score": 45,
+          "weight": 0.2,
+          "contribution": 9
+        },
+        {
+          "key": "registration_eligibility",
+          "label": "注册 / 出场资格",
+          "score": 90,
+          "weight": 0.1,
+          "contribution": 9
+        },
+        {
+          "key": "recent_availability",
+          "label": "近期状态与可用性",
+          "score": 65,
+          "weight": 0.1,
+          "contribution": 6.5
+        }
+      ],
+      "source_links": [
+        {
+          "type": "club",
+          "label": "马贝拉官方外租公告",
+          "url": "https://marbellafc.es/en/oficial-cesion-yuezheng-du/",
+          "checked_at": "2026-07-26"
+        },
+        {
+          "type": "club",
+          "label": "马贝拉官方签约公告",
+          "url": "https://marbellafc.es/en/new-signing-yuezheng-du/",
+          "checked_at": "2026-07-26"
+        }
+      ]
+    }
+  ],
+  "disclaimer": "这是依据公开资料和透明评分模型生成的研究概率，不是博彩公司盘口，不可用于投注。"
+}

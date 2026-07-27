@@ -4,7 +4,12 @@ import path from "node:path";
 import { buildSiteData } from "./build-site-data.mjs";
 import { paths } from "./lib/data-loader.mjs";
 
-const managedFiles = ["players.json", "overview.json", "meta.json"];
+const managedFiles = [
+  "players.json",
+  "overview.json",
+  "meta.json",
+  "big-five-debut-forecast.json"
+];
 
 export async function checkGeneratedData() {
   const temporaryDirectory = await fs.mkdtemp(path.join(os.tmpdir(), "football-research-site-"));

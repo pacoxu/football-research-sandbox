@@ -112,6 +112,10 @@ loader 也承担少量集中数据的派生合并。例如中国 U20 2025、中�
 
 - `./data/site/world-cup-forecast.json`（只有 `predictions.html` 请求，不增加其他页面的网络请求）
 
+排阵容页另外请求：
+
+- `./data/site/big-five-debut-forecast.json`（五大联赛首秀研究盘；页面可见时每五分钟使用 `cache: "no-store"` 检查新版）
+
 请求会追加 `_v=<SITE_DATA_VERSION>`，其中 `SITE_DATA_VERSION` 跟随脚本 URL 上的版本参数或页面日期；同时 `fetch` 使用 `cache: "no-store"`。这用于减少浏览器缓存旧 JSON 的概率，不等于 API 版本承诺。
 
 ## 生成文件 review 规则

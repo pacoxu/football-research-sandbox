@@ -3214,6 +3214,475 @@ tbody tr:last-child td {
   text-align: center;
 }
 
+.debut-forecast {
+  margin-top: 36px;
+  overflow: hidden;
+  border: 1px solid #173f35;
+  border-radius: 10px;
+  background: #f8faf7;
+  box-shadow: var(--shadow);
+}
+
+.debut-forecast-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 28px;
+  padding: 26px 28px 22px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 82% -40%, rgba(246, 214, 105, 0.24), transparent 46%),
+    linear-gradient(135deg, #102e27 0%, #173f35 62%, #0e6255 100%);
+}
+
+.debut-forecast-head .eyebrow {
+  color: #f6d669;
+}
+
+.debut-forecast-head h2 {
+  margin: 5px 0 8px;
+  font-size: clamp(1.75rem, 3vw, 3.15rem);
+  letter-spacing: -0.045em;
+}
+
+.debut-forecast-head p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.forecast-refresh-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 0 15px;
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  border-radius: 6px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 850;
+}
+
+.forecast-refresh-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.forecast-refresh-button:focus-visible {
+  outline: 3px solid #f6d669;
+  outline-offset: 3px;
+}
+
+.forecast-refresh-button:disabled {
+  cursor: wait;
+  opacity: 0.68;
+}
+
+.forecast-refresh-button.is-refreshing span {
+  animation: forecast-spin 700ms linear infinite;
+}
+
+@keyframes forecast-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.forecast-status {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 42px;
+  padding: 9px 28px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  background: #fff;
+  font-size: 0.75rem;
+}
+
+.forecast-status.is-live strong {
+  color: var(--accent-deep);
+}
+
+.forecast-status.is-stale,
+.forecast-status.is-warning {
+  color: #8a5a12;
+  background: #fff8e8;
+}
+
+.forecast-live-dot {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(15, 118, 110, 0.12);
+}
+
+.forecast-status.is-stale .forecast-live-dot {
+  background: #b7791f;
+  box-shadow: 0 0 0 4px rgba(183, 121, 31, 0.12);
+}
+
+.debut-forecast-content {
+  padding: 20px;
+}
+
+.forecast-summary-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.55fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.forecast-leader,
+.forecast-no-qualifier {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.forecast-leader {
+  color: #fff;
+  background: #173f35;
+}
+
+.forecast-no-qualifier {
+  background: #fff;
+}
+
+.forecast-card-kicker {
+  display: block;
+  margin-bottom: 15px;
+  color: #f6d669;
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+}
+
+.forecast-no-qualifier .forecast-card-kicker {
+  color: var(--muted);
+}
+
+.forecast-leader-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.forecast-leader-main a {
+  font-size: clamp(1.6rem, 3vw, 2.65rem);
+  font-weight: 900;
+  letter-spacing: -0.045em;
+  text-decoration: none;
+}
+
+.forecast-leader-main a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.forecast-leader-main p,
+.forecast-leader-rationale {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.forecast-leader-main p {
+  margin: 3px 0 0;
+}
+
+.forecast-leader-price {
+  display: grid;
+  flex: 0 0 auto;
+  justify-items: end;
+}
+
+.forecast-leader-price strong {
+  color: #f6d669;
+  font-size: clamp(2.1rem, 4vw, 3.75rem);
+  line-height: 0.94;
+  letter-spacing: -0.055em;
+}
+
+.forecast-leader-price span {
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.forecast-leader-rationale {
+  max-width: 760px;
+  margin: 18px 0 0;
+  font-size: 0.82rem;
+}
+
+.forecast-no-qualifier > strong {
+  display: block;
+  color: #8a5a12;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+  line-height: 1;
+  letter-spacing: -0.055em;
+}
+
+.forecast-no-qualifier > span {
+  display: block;
+  margin-top: 5px;
+  color: var(--text);
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.forecast-no-qualifier p {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.76rem;
+}
+
+.forecast-table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.forecast-table {
+  width: 100%;
+  min-width: 940px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.forecast-table th,
+.forecast-table td {
+  padding: 13px 14px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.forecast-table thead th {
+  color: var(--muted);
+  background: var(--field);
+  font-size: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.forecast-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.forecast-table tbody th {
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr);
+  gap: 9px;
+  min-width: 170px;
+}
+
+.forecast-rank {
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 900;
+}
+
+.forecast-candidate {
+  display: grid;
+  gap: 3px;
+}
+
+.forecast-candidate a,
+.forecast-candidate strong {
+  font-size: 0.88rem;
+  font-weight: 900;
+}
+
+.forecast-candidate small {
+  max-width: 160px;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: 0.67rem;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.forecast-probability-cell {
+  min-width: 150px;
+}
+
+.forecast-probability-cell > strong {
+  font-size: 1rem;
+}
+
+.forecast-probability-track {
+  display: block;
+  width: 118px;
+  height: 5px;
+  margin-top: 7px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e6ebe7;
+}
+
+.forecast-probability-track span {
+  display: block;
+  width: var(--forecast-probability);
+  height: 100%;
+  min-width: 3px;
+  border-radius: inherit;
+  background: var(--accent);
+}
+
+.forecast-kind-no-qualifier .forecast-probability-track span {
+  background: #b7791f;
+}
+
+.forecast-odds {
+  color: var(--accent-deep);
+  font-variant-numeric: tabular-nums;
+}
+
+.forecast-trend {
+  display: inline-block;
+  min-width: 68px;
+  font-size: 0.69rem;
+  font-weight: 850;
+}
+
+.forecast-trend.is-up {
+  color: #087052;
+}
+
+.forecast-trend.is-down {
+  color: #a23b2b;
+}
+
+.forecast-trend.is-flat,
+.forecast-trend.is-new {
+  color: var(--muted);
+}
+
+.forecast-rationale {
+  min-width: 320px;
+}
+
+.forecast-rationale > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.73rem;
+  line-height: 1.55;
+}
+
+.forecast-source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin-top: 7px;
+}
+
+.forecast-source-links a {
+  color: var(--accent-deep);
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-underline-offset: 2px;
+}
+
+.forecast-factor-details {
+  margin-top: 7px;
+}
+
+.forecast-factor-details summary {
+  color: var(--text);
+  cursor: pointer;
+  font-size: 0.65rem;
+  font-weight: 800;
+}
+
+.forecast-factor-details dl {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 8px 0 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--line);
+}
+
+.forecast-factor-details dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 7px;
+  background: var(--field);
+}
+
+.forecast-factor-details dt,
+.forecast-factor-details dd {
+  margin: 0;
+  font-size: 0.6rem;
+}
+
+.forecast-factor-details dt {
+  color: var(--muted);
+}
+
+.forecast-factor-details dd {
+  font-weight: 900;
+}
+
+.forecast-error {
+  padding: 44px 24px;
+  text-align: center;
+}
+
+.forecast-error p {
+  margin: 6px 0 14px;
+  color: var(--muted);
+}
+
+.forecast-methodology {
+  border-top: 1px solid var(--line);
+  background: #fff;
+}
+
+.forecast-methodology > summary {
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 0.76rem;
+  font-weight: 850;
+}
+
+.forecast-methodology-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1px;
+  border-top: 1px solid var(--line);
+  background: var(--line);
+}
+
+.forecast-methodology-grid > div {
+  padding: 16px;
+  background: #fff;
+}
+
+.forecast-methodology-grid strong {
+  font-size: 0.75rem;
+}
+
+.forecast-methodology-grid p {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
 .editorial-lineups {
   margin-top: 36px;
   padding-top: 30px;
@@ -3422,6 +3891,14 @@ tbody tr:last-child td {
   .player-pool {
     max-height: 560px;
   }
+
+  .forecast-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .forecast-methodology-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
@@ -3498,6 +3975,38 @@ tbody tr:last-child td {
 
   .editorial-lineup-card > p {
     min-height: 0;
+  }
+
+  .debut-forecast-head {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 22px 18px 18px;
+  }
+
+  .forecast-refresh-button {
+    width: 100%;
+  }
+
+  .forecast-status {
+    flex-wrap: wrap;
+    padding-right: 18px;
+    padding-left: 18px;
+  }
+
+  .debut-forecast-content {
+    padding: 12px;
+  }
+
+  .forecast-leader-main {
+    display: grid;
+  }
+
+  .forecast-leader-price {
+    justify-items: start;
+  }
+
+  .forecast-methodology-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -4050,6 +4559,123 @@ tbody tr:last-child td {
   .forecast-probability-grid,
   .forecast-probability-grid.is-bubble,
   .forecast-sensitivity-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* The data-centre forecast reuses a few generic class names. Keep the debut
+   market's table layout scoped so those later styles cannot split its cells. */
+.debut-forecast .forecast-table {
+  min-width: 940px;
+}
+
+.debut-forecast .forecast-probability-cell {
+  display: table-cell;
+  min-width: 150px;
+}
+
+.debut-forecast .forecast-probability-track {
+  width: 118px;
+  margin-top: 7px;
+}
+
+/* The debut market keeps table semantics while presenting each outcome as a
+   single-column card on narrow screens. */
+@media (max-width: 720px) {
+  .debut-forecast .forecast-table-wrap {
+    overflow: visible;
+    border: 0;
+    background: transparent;
+  }
+
+  .debut-forecast .forecast-table {
+    display: block;
+    width: auto;
+    min-width: 0;
+    border-collapse: separate;
+  }
+
+  .debut-forecast .forecast-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  .debut-forecast .forecast-table tbody {
+    display: grid;
+    gap: 10px;
+  }
+
+  .debut-forecast .forecast-table tbody tr {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px 16px;
+    padding: 14px;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .debut-forecast .forecast-table tbody th,
+  .debut-forecast .forecast-table tbody td,
+  .debut-forecast .forecast-table tbody tr:last-child > * {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+  }
+
+  .debut-forecast .forecast-table tbody th {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .debut-forecast .forecast-probability-cell {
+    display: grid;
+    grid-column: 2;
+    grid-row: 1;
+    grid-template-columns: 1fr;
+    justify-items: end;
+    gap: 6px;
+    min-width: 96px;
+  }
+
+  .debut-forecast .forecast-probability-track {
+    width: 96px;
+    margin: 0;
+  }
+
+  .debut-forecast .forecast-odds {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 0.82rem;
+  }
+
+  .debut-forecast .forecast-odds::before {
+    content: "公平赔率 ";
+    color: var(--muted);
+    font-size: 0.67rem;
+    font-weight: 650;
+  }
+
+  .debut-forecast .forecast-table tbody td:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: end;
+  }
+
+  .debut-forecast .forecast-rationale {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    padding-top: 11px;
+    border-top: 1px solid var(--line);
+  }
+
+  .debut-forecast .forecast-factor-details dl {
     grid-template-columns: 1fr;
   }
 }

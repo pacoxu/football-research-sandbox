@@ -343,9 +343,9 @@
     "height_cm": 175,
     "weight_kg": 75,
     "registration_club": {
-      "name": "Barnsley FC",
+      "name": "Wolverhampton Wanderers",
       "country": "England",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club"
     },
     "league_system_override": "Europe big five lower-tier",
     "overseas_bucket_override": "big-five-lower-tier",
@@ -368,6 +368,13 @@
         "country": "England",
         "note": "2026-03-20 中国足协国家队集训通知已将其现俱乐部标注为巴恩斯利。",
         "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026/27 狼队合同节点",
+        "organization": "Wolverhampton Wanderers",
+        "country": "England",
+        "note": "狼队 2026-06-06 公布的留队名单将徐彬列入 24 岁以下合同球员；巴恩斯利租借期结束后的具体一线队或再次外租安排仍待俱乐部确认。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -391,12 +398,12 @@
       {
         "competition_id": "china-overseas-2026",
         "label": "2026 中国现役留洋跟踪",
-        "team": "Barnsley FC",
+        "team": "Wolverhampton Wanderers",
         "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "2026-03-20 中国足协男足国家队集训通知将徐彬标注为英格兰巴恩斯利球员；其注册关系仍隶属狼队体系。"
+        "note": "狼队 2026-06-06 留队名单确认徐彬仍在合同内；巴恩斯利租借期结束后的 2026/27 具体组别或再次外租安排待确认。"
       }
     ],
     "external_links": [
@@ -421,6 +428,11 @@
         "url": "https://www.thecfa.cn/jxtz/20260320/37443.html"
       },
       {
+        "type": "official",
+        "label": "Wolves 2026 retained list",
+        "url": "https://www.wolves.co.uk/news/club/20260606-wolves-confirm-2026-retained-list/"
+      },
+      {
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/bin-xu/profil/spieler/789642"
@@ -428,8 +440,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-06-27",
-      "notes": "2026-01-30 狼队官方确认永久签下徐彬，2026-03-20 中国足协国家队集训通知将其现俱乐部标注为英格兰巴恩斯利，当前按“狼队签约 + 巴恩斯利外租”处理。短视频名单若写作狼队 U21，需补充巴恩斯利这一足协最新报名口径。"
+      "last_checked": "2026-07-26",
+      "notes": "2026-01-30 狼队官方确认永久签下徐彬，2026-03-20 中国足协通知记录其巴恩斯利外租，2026-06-06 狼队留队名单继续将其列为 24 岁以下合同球员。当前按租借结束后回到狼队合同体系处理，2026/27 一线队、U21 或再次外租安排待确认。"
     }
   },
   {

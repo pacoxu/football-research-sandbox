@@ -18,8 +18,10 @@
     { "path": "data/raw/player-market-values.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/marketValues" },
     { "path": "data/raw/player-name-overrides.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap" },
     { "path": "data/raw/club-name-overrides.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap" },
+    { "path": "data/raw/big-five-debut-forecast.json", "schema": "https://football-research.local/schema/big-five-debut-forecast.schema.json" },
     { "path": "data/site/players.json", "schema": "https://football-research.local/schema/site.schema.json#/$defs/players" },
     { "path": "data/site/overview.json", "schema": "https://football-research.local/schema/site.schema.json#/$defs/overview" },
-    { "path": "data/site/meta.json", "schema": "https://football-research.local/schema/site-meta.schema.json" }
+    { "path": "data/site/meta.json", "schema": "https://football-research.local/schema/site-meta.schema.json" },
+    { "path": "data/site/big-five-debut-forecast.json", "schema": "https://football-research.local/schema/site.schema.json#/$defs/bigFiveDebutForecast" }
   ]
 }
