@@ -3,6 +3,7 @@ import path from "node:path";
 import { ensureDirectory, loadDataset, paths, writeJson } from "./lib/data-loader.mjs";
 import { countOverseasStatuses, normalizeCountry } from "./lib/overseas-status.mjs";
 import { buildSiteMeta } from "./lib/data-quality.mjs";
+import { buildBigFiveDebutForecast } from "./lib/big-five-debut-forecast.mjs";
 
 function isForeignRegistration(player) {
   return (
@@ -22,8 +23,12 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData({ outputDirectory = paths.site } = {}) {
   const dataset = await loadDataset();
-  const generatedAt = "2026-07-25";
+  const generatedAt = "2026-07-26";
   const players = [...dataset.players].sort(comparePlayers);
+  const bigFiveDebutForecast = buildBigFiveDebutForecast(
+    dataset.bigFiveDebutForecast,
+    players
+  );
 
   const overview = {
     generated_at: generatedAt,
@@ -57,11 +62,16 @@ export async function buildSiteData({ outputDirectory = paths.site } = {}) {
   await writeJson(path.join(outputDirectory, "players.json"), players);
   await writeJson(path.join(outputDirectory, "overview.json"), overview);
   await writeJson(path.join(outputDirectory, "meta.json"), meta);
+  await writeJson(
+    path.join(outputDirectory, "big-five-debut-forecast.json"),
+    bigFiveDebutForecast
+  );
 
   return {
     players,
     overview,
-    meta
+    meta,
+    bigFiveDebutForecast
   };
 }
 

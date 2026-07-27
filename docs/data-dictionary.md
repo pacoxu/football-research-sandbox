@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-07-25
+更新时间：2026-07-26
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -21,9 +21,11 @@
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 中国、日韩与北欧青训体系、项目、竞赛关系和年度快照。 | 是 |
 | `data/raw/forecast/model.json` | 亚洲世界杯预测的国家研究指数、历史训练快照、名额假设和来源映射。 | 是 |
+| `data/raw/big-five-debut-forecast.json` | 中国球员五大联赛首秀研究盘的市场口径、模型权重、快照评分和来源。 | 是 |
 | `data/site/players.json` | 前端使用的球员聚合 JSON。 | 否，由脚本生成 |
 | `data/site/overview.json` | 首页和专题页使用的聚合总览。 | 否，由脚本生成 |
 | `data/site/world-cup-forecast.json` | 2030—2042 概率、区间、分档、回测、对手和敏感度输出。 | 否，由脚本生成 |
+| `data/site/big-five-debut-forecast.json` | 排阵容页使用的首秀概率、公平赔率、变化和球员展示信息。 | 否，由脚本生成 |
 | `storage/youth-football.sqlite` | 本地 SQLite 查询库。 | 否，不提交 |
 
 ## 球员记录

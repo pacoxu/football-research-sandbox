@@ -116,13 +116,13 @@ test("accepts returned, trial-watch, and pending-effective evidence", () => {
   );
 });
 
-test("keeps the China overseas dataset at 16 active registrations and 4 returned players", async () => {
+test("keeps the China overseas dataset at 15 active registrations and 5 returned players", async () => {
   const dataset = await loadDataset();
   assert.deepEqual(countOverseasStatuses(dataset.players), {
-    "active-registered": 16,
+    "active-registered": 15,
     "pending-effective": 0,
     "trial-watch": 0,
-    returned: 4,
+    returned: 5,
     "historical-only": 0
   });
 });

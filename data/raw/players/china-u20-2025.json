@@ -768,9 +768,9 @@
   },
   {
     "id": "cn-du-yuezheng-2005",
-    "overseas_status": "active-registered",
+    "overseas_status": "returned",
     "name": "Du Yuezheng",
-    "local_name": "Du Yuezheng",
+    "local_name": "杜月徵",
     "country": "China PR",
     "birth_date": "2005-09-14",
     "age_band": "u20",
@@ -778,8 +778,8 @@
     "height_cm": 185,
     "weight_kg": 79,
     "registration_club": {
-      "name": "Marbella FC",
-      "country": "Spain",
+      "name": "Chongqing Tonglianglong FC",
+      "country": "China",
       "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
@@ -788,6 +788,13 @@
         "organization": "Marbella FC",
         "country": "Spain",
         "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。",
+        "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026 重庆铜梁龙外租节点",
+        "organization": "Chongqing Tonglianglong FC",
+        "country": "China",
+        "note": "马贝拉 2026-02-09 官方公告确认杜月徵外租重庆铜梁龙至 2026-12-31，当前按回流租借状态处理。",
         "organization_type": "professional-club-unspecified"
       }
     ],
@@ -824,12 +831,17 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/yuezheng-du/profil/spieler/1012801"
+      },
+      {
+        "type": "official",
+        "label": "Marbella loan announcement",
+        "url": "https://marbellafc.es/en/oficial-cesion-yuezheng-du/"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+      "last_checked": "2026-07-26",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF；马贝拉 2026-02-09 官方公告确认杜月徵外租重庆铜梁龙至 2026-12-31，因此当前注册俱乐部与 overseas_status 已按回流租借更新。"
     }
   },
   {

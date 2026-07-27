@@ -11,8 +11,8 @@
     "height_cm": 190,
     "weight_kg": 83,
     "registration_club": {
-      "name": "FK Vozdovac U19",
-      "country": "Serbia",
+      "name": "Burnley FC U21",
+      "country": "England",
       "organization_type": "club-academy"
     },
     "training_pathway": [
@@ -26,13 +26,21 @@
         "stage_label": "2026 英格兰签约节点",
         "organization": "Burnley FC U21",
         "country": "England",
-        "note": "2026 年春季报道确认其加盟伯恩利 U21 梯队。"
+        "note": "伯恩利 2026-06-05 官方公告确认其加盟 U21，合同至 2027 年夏天，并将参加 2026/27 Premier League 2。",
+        "organization_type": "club-academy"
       },
       {
         "stage_label": "2026 塞尔维亚外租节点",
         "organization": "FK Vozdovac U19",
         "country": "Serbia",
         "note": "2026 年春季报道确认其因劳工证与培养安排，先外租到沃日多瓦茨 U19 锻炼。",
+        "organization_type": "club-academy"
+      },
+      {
+        "stage_label": "2026/27 伯恩利季前节点",
+        "organization": "Burnley FC U21",
+        "country": "England",
+        "note": "2026 年 7 月伯恩利 U21 季前赛记录确认张家鸣已经回到球队并连续首发，其中首场对 Nelson FC 取得进球。",
         "organization_type": "club-academy"
       }
     ],
@@ -46,12 +54,12 @@
       {
         "competition_id": "china-overseas-2026",
         "label": "2026 中国现役留洋跟踪",
-        "team": "FK Vozdovac U19",
+        "team": "Burnley FC U21",
         "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22 处于伯恩利 U21 签约后外租沃日多瓦茨 U19 的留洋阶段。"
+        "note": "伯恩利 2026-06-05 官方确认张家鸣加入 U21；7 月季前赛已经连续获得出场并取得进球。"
       }
     ],
     "external_links": [
@@ -74,12 +82,22 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/jiaming-zhang/profil/spieler/1159605"
+      },
+      {
+        "type": "official",
+        "label": "Burnley U21 signing announcement",
+        "url": "https://www.burnleyfootballclub.com/media-article/jiaming-zhang-joins-burnley-u21s"
+      },
+      {
+        "type": "official",
+        "label": "Burnley U21 pre-season report",
+        "url": "https://www.burnleyfootballclub.com/media-article/u21s-pre-season-continues-at-flixton-fc"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-06-27",
-      "notes": "出生日期可由新浪球员资料页校对；当前“伯恩利 U21 签约 + 沃日多瓦茨 U19 外租”路径由 2026 年春季多篇转会报道和公开数据库交叉确认。短视频名单若直接写作伯恩利 U21，需补充其塞尔维亚外租节点。"
+      "last_checked": "2026-07-26",
+      "notes": "伯恩利 2026-06-05 官方公告确认张家鸣加盟 U21 并签约至 2027 年夏天；2026 年 7 月俱乐部季前赛记录确认其已随 U21 连续出场并取得进球。沃日多瓦茨阶段保留为此前路径，不再作为当前注册俱乐部。"
     }
   },
   {

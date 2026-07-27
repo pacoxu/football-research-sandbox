@@ -439,7 +439,7 @@
     "registration_club": {
       "name": "AJ Auxerre",
       "country": "France",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
@@ -465,14 +465,14 @@
         "organization": "AJ Auxerre",
         "country": "France",
         "note": "2025 年 4 月公开报道显示其前往法国欧塞尔接受试训；该节点属于试训 / 考察，不等于当时已完成转会。",
-        "organization_type": "professional-club-unspecified"
+        "organization_type": "professional-club"
       },
       {
         "stage_label": "2026/07 欧塞尔签约生效",
         "organization": "AJ Auxerre",
         "country": "France",
-        "note": "公开资料显示其转会欧塞尔的生效日期为 2026-07-01；按 2026-07-10 核对，Soccerway 球员页已将其显示为 Auxerre 球员，当前按已生效留洋样本处理，但仍需继续跟进欧塞尔一线队 / 梯队正式名单和比赛报名。",
-        "organization_type": "professional-club-unspecified"
+        "note": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签约五年并身披 49 号，俱乐部职业队球员页已建立个人资料；正式联赛报名和出场仍需继续跟踪。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -492,7 +492,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "2026-07-01 转会生效日已过；Soccerway 当前球员页显示其所属为 Auxerre。欧塞尔一线队 / 梯队具体报名、号码和出场情况仍待俱乐部或赛事数据库进一步同步。"
+        "note": "欧塞尔 2026-07-09 官方确认魏祥鑫签约五年、身披 49 号，职业队球员页已上线；正式联赛报名和出场仍待赛季名单与比赛记录确认。"
       }
     ],
     "external_links": [
@@ -520,12 +520,22 @@
         "type": "profile",
         "label": "WorldFootball.net profile",
         "url": "https://www.worldfootball.net/player_summary/wei-xiangxin/"
+      },
+      {
+        "type": "official",
+        "label": "AJ Auxerre signing announcement",
+        "url": "https://www.aja.fr/grand-espoir-chinois-xiangxin-wei-signe-a-laja/"
+      },
+      {
+        "type": "official",
+        "label": "AJ Auxerre professional player page",
+        "url": "https://www.aja.fr/joueur/xiangxin-wei/"
       }
     ],
     "verification": {
-      "status": "mixed-source",
-      "last_checked": "2026-07-10",
-      "notes": "出生日期、梅州客家一线队出场、广东铭途租借和欧塞尔 2026-07-01 生效节点由 Wikipedia / WorldFootball / 转会报道交叉整理；2026-07-10 核对 Soccerway 球员页已显示 Auxerre，故当前注册俱乐部改按 AJ Auxerre 处理。欧塞尔官方一线队或梯队报名页尚需继续跟进，因此验证状态保留为 mixed-source。"
+      "status": "verified",
+      "last_checked": "2026-07-26",
+      "notes": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签下五年合同并获得 49 号，俱乐部职业队球员页同步上线；当前俱乐部归属已由一手来源闭环，正式联赛报名与出场继续跟踪。"
     }
   }
 ]

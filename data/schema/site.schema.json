@@ -52,6 +52,73 @@
         }
       },
       "additionalProperties": true
+    },
+    "bigFiveDebutForecast": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "market",
+        "last_checked",
+        "previous_snapshot",
+        "freshness",
+        "model",
+        "leader",
+        "no_qualifier",
+        "outcomes",
+        "disclaimer"
+      ],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "last_checked": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "previous_snapshot": {
+          "anyOf": [
+            { "type": "null" },
+            { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" }
+          ]
+        },
+        "leader": {
+          "type": "object",
+          "required": ["player_id", "label", "probability", "probability_percent", "decimal_odds"]
+        },
+        "no_qualifier": {
+          "type": "object",
+          "required": ["probability", "probability_percent", "decimal_odds"]
+        },
+        "outcomes": {
+          "type": "array",
+          "minItems": 8,
+          "maxItems": 8,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "kind",
+              "market_rank",
+              "candidate_rank",
+              "model_score",
+              "probability",
+              "probability_percent",
+              "decimal_odds",
+              "probability_change_pp",
+              "label",
+              "rationale",
+              "factor_scores",
+              "source_links"
+            ],
+            "properties": {
+              "kind": { "enum": ["player", "other", "no-qualifier"] },
+              "probability": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 },
+              "probability_percent": { "type": "number", "exclusiveMinimum": 0, "maximum": 100 },
+              "decimal_odds": { "type": "number", "minimum": 1 },
+              "probability_change_pp": { "type": ["number", "null"] },
+              "factor_scores": { "type": "array" },
+              "source_links": { "type": "array" }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
     }
   }
 }

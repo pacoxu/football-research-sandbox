@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "market": {
+    "id": "china-next-big-five-league-debut-2026-27",
+    "title": "谁能第一个踢上五大联赛？",
+    "country": "China PR",
+    "opens_on": "2026-07-26",
+    "closes_on": "2027-06-30",
+    "competitions": [
+      "Premier League",
+      "La Liga",
+      "Bundesliga",
+      "Serie A",
+      "Ligue 1"
+    ],
+    "settlement": {
+      "appearance_scope": "top-flight-league",
+      "substitute_appearance_counts": true,
+      "excludes": [
+        "bench-only",
+        "youth-and-reserve",
+        "domestic-cup",
+        "continental-cup",
+        "lower-tier"
+      ],
+      "debut_time_rule": "Match kickoff time plus the official entry minute; a starter's debut time is kickoff.",
+      "tie_rule": "Exact identical debut timestamps are settled as joint winners."
+    }
+  },
+  "freshness": {
+    "stale_after_days": 7,
+    "refresh_interval_minutes": 5
+  },
+  "model": {
+    "temperature": 10,
+    "weights": {
+      "first_team_proximity": 0.35,
+      "senior_competitive_experience": 0.25,
+      "big_five_pathway": 0.2,
+      "registration_eligibility": 0.1,
+      "recent_availability": 0.1
+    }
+  },
+  "factor_labels": {
+    "first_team_proximity": "一线队距离",
+    "senior_competitive_experience": "成年正式比赛经验",
+    "big_five_pathway": "五大联赛路径确定性",
+    "registration_eligibility": "注册 / 出场资格",
+    "recent_availability": "近期状态与可用性"
+  },
+  "special_outcomes": {
+    "other_chinese_player": {
+      "label": "其他中国球员",
+      "rationale": "候选名单之外的中国球员率先完成五大联赛顶级联赛首秀。"
+    },
+    "no_qualifier": {
+      "label": "本季无人",
+      "rationale": "截至 2027-06-30，没有新的中国球员完成五大联赛顶级联赛正式首秀。"
+    }
+  },
+  "snapshots": [
+    {
+      "as_of": "2026-07-26",
+      "baselines": {
+        "other_chinese_player": 55,
+        "no_qualifier": 80
+      },
+      "candidates": [
+        {
+          "player_id": "cn-wei-xiangxin-2008",
+          "factors": {
+            "first_team_proximity": 95,
+            "senior_competitive_experience": 65,
+            "big_five_pathway": 95,
+            "registration_eligibility": 90,
+            "recent_availability": 80
+          },
+          "rationale": "已经与欧塞尔签下五年合同、获得 49 号并进入职业队球员页面，当前是距离法甲正式报名和登场最近的候选。",
+          "source_links": [
+            {
+              "type": "club",
+              "label": "欧塞尔官方签约公告",
+              "url": "https://www.aja.fr/grand-espoir-chinois-xiangxin-wei-signe-a-laja/",
+              "checked_at": "2026-07-26"
+            },
+            {
+              "type": "club",
+              "label": "欧塞尔职业队球员页",
+              "url": "https://www.aja.fr/joueur/xiangxin-wei/",
+              "checked_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "player_id": "cn-xu-bin-2004",
+          "factors": {
+            "first_team_proximity": 65,
+            "senior_competitive_experience": 80,
+            "big_five_pathway": 90,
+            "registration_eligibility": 70,
+            "recent_availability": 75
+          },
+          "rationale": "仍在狼队 2026/27 合同名单内，拥有国内成年比赛和 U23 国字号经验；下一步取决于一线队季前安排或新的英格兰租借。",
+          "source_links": [
+            {
+              "type": "club",
+              "label": "狼队 2026 留队名单",
+              "url": "https://www.wolves.co.uk/news/club/20260606-wolves-confirm-2026-retained-list/",
+              "checked_at": "2026-07-26"
+            },
+            {
+              "type": "club",
+              "label": "狼队加盟公告",
+              "url": "https://www.wolves.co.uk/news/academy/20260130-youngster-xu-bin-joins-the-club/",
+              "checked_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "player_id": "cn-wang-yudong-2006",
+          "factors": {
+            "first_team_proximity": 40,
+            "senior_competitive_experience": 95,
+            "big_five_pathway": 70,
+            "registration_eligibility": 70,
+            "recent_availability": 90
+          },
+          "rationale": "国内同龄攻击手中成年联赛产出最突出，但尚无五大联赛俱乐部官方转会节点，因此路径分低于已经进入欧洲体系的候选。",
+          "source_links": [
+            {
+              "type": "official",
+              "label": "中国足协青年球员发展报道",
+              "url": "https://www.thecfa.cn/mtzl/20260126/37274.html",
+              "checked_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "player_id": "cn-zhang-jiaming-2007",
+          "factors": {
+            "first_team_proximity": 60,
+            "senior_competitive_experience": 50,
+            "big_five_pathway": 85,
+            "registration_eligibility": 45,
+            "recent_availability": 85
+          },
+          "rationale": "已正式进入伯恩利 U21，并在 2026/27 季前赛取得进球和连续出场；主要不确定性是从 PL2 到一线队以及英格兰出场资格。",
+          "source_links": [
+            {
+              "type": "club",
+              "label": "伯恩利 U21 签约公告",
+              "url": "https://www.burnleyfootballclub.com/media-article/jiaming-zhang-joins-burnley-u21s",
+              "checked_at": "2026-07-26"
+            },
+            {
+              "type": "club",
+              "label": "伯恩利 U21 季前赛记录",
+              "url": "https://www.burnleyfootballclub.com/media-article/u21s-pre-season-continues-at-flixton-fc",
+              "checked_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "player_id": "cn-wang-bohao-2005",
+          "factors": {
+            "first_team_proximity": 35,
+            "senior_competitive_experience": 90,
+            "big_five_pathway": 65,
+            "registration_eligibility": 85,
+            "recent_availability": 75
+          },
+          "rationale": "已进入登博思一线队并积累荷乙正式比赛经验，成年比赛基础扎实；仍需先完成从荷乙到五大联赛顶级俱乐部的转会。",
+          "source_links": [
+            {
+              "type": "club",
+              "label": "登博思一线队名单",
+              "url": "https://www.fcdenbosch.nl/eerste-elftal/",
+              "checked_at": "2026-07-26"
+            },
+            {
+              "type": "club",
+              "label": "登博思租借公告",
+              "url": "https://www.fcdenbosch.nl/middenvelder-bohao-wang-op-huurbasis-naar-fc-den-bosch/",
+              "checked_at": "2026-07-26"
+            }
+          ]
+        },
+        {
+          "player_id": "cn-du-yuezheng-2005",
+          "factors": {
+            "first_team_proximity": 15,
+            "senior_competitive_experience": 75,
+            "big_five_pathway": 45,
+            "registration_eligibility": 90,
+            "recent_availability": 65
+          },
+          "rationale": "拥有西班牙成年联赛履历和马贝拉合同，但已外租回重庆铜梁龙至 2026 年底，本季上半程无法直接从欧洲俱乐部冲击西甲。",
+          "source_links": [
+            {
+              "type": "club",
+              "label": "马贝拉官方外租公告",
+              "url": "https://marbellafc.es/en/oficial-cesion-yuezheng-du/",
+              "checked_at": "2026-07-26"
+            },
+            {
+              "type": "club",
+              "label": "马贝拉官方签约公告",
+              "url": "https://marbellafc.es/en/new-signing-yuezheng-du/",
+              "checked_at": "2026-07-26"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "disclaimer": "这是依据公开资料和透明评分模型生成的研究概率，不是博彩公司盘口，不可用于投注。"
+}

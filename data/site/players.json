@@ -10283,9 +10283,9 @@
     "height_cm": 175,
     "weight_kg": 75,
     "registration_club": {
-      "name": "Barnsley FC",
+      "name": "Wolverhampton Wanderers",
       "country": "England",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club"
     },
     "league_system_override": "Europe big five lower-tier",
     "overseas_bucket_override": "big-five-lower-tier",
@@ -10308,6 +10308,13 @@
         "country": "England",
         "note": "2026-03-20 中国足协国家队集训通知已将其现俱乐部标注为巴恩斯利。",
         "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026/27 狼队合同节点",
+        "organization": "Wolverhampton Wanderers",
+        "country": "England",
+        "note": "狼队 2026-06-06 公布的留队名单将徐彬列入 24 岁以下合同球员；巴恩斯利租借期结束后的具体一线队或再次外租安排仍待俱乐部确认。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -10336,12 +10343,12 @@
       {
         "competition_id": "china-overseas-2026",
         "label": "2026 中国现役留洋跟踪",
-        "team": "Barnsley FC",
+        "team": "Wolverhampton Wanderers",
         "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "2026-03-20 中国足协男足国家队集训通知将徐彬标注为英格兰巴恩斯利球员；其注册关系仍隶属狼队体系。"
+        "note": "狼队 2026-06-06 留队名单确认徐彬仍在合同内；巴恩斯利租借期结束后的 2026/27 具体组别或再次外租安排待确认。"
       }
     ],
     "external_links": [
@@ -10366,6 +10373,11 @@
         "url": "https://www.thecfa.cn/jxtz/20260320/37443.html"
       },
       {
+        "type": "official",
+        "label": "Wolves 2026 retained list",
+        "url": "https://www.wolves.co.uk/news/club/20260606-wolves-confirm-2026-retained-list/"
+      },
+      {
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/bin-xu/profil/spieler/789642"
@@ -10373,8 +10385,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-06-27",
-      "notes": "2026-01-30 狼队官方确认永久签下徐彬，2026-03-20 中国足协国家队集训通知将其现俱乐部标注为英格兰巴恩斯利，当前按“狼队签约 + 巴恩斯利外租”处理。短视频名单若写作狼队 U21，需补充巴恩斯利这一足协最新报名口径。"
+      "last_checked": "2026-07-26",
+      "notes": "2026-01-30 狼队官方确认永久签下徐彬，2026-03-20 中国足协通知记录其巴恩斯利外租，2026-06-06 狼队留队名单继续将其列为 24 岁以下合同球员。当前按租借结束后回到狼队合同体系处理，2026/27 一线队、U21 或再次外租安排待确认。"
     },
     "names": {
       "zh": "徐彬",
@@ -13589,9 +13601,9 @@
   },
   {
     "id": "cn-du-yuezheng-2005",
-    "overseas_status": "active-registered",
+    "overseas_status": "returned",
     "name": "Du Yuezheng",
-    "local_name": "Du Yuezheng",
+    "local_name": "杜月徵",
     "country": "China PR",
     "birth_date": "2005-09-14",
     "age_band": "u20",
@@ -13599,8 +13611,8 @@
     "height_cm": 185,
     "weight_kg": 79,
     "registration_club": {
-      "name": "Marbella FC",
-      "country": "Spain",
+      "name": "Chongqing Tonglianglong FC",
+      "country": "China",
       "organization_type": "professional-club-unspecified"
     },
     "training_pathway": [
@@ -13609,6 +13621,13 @@
         "organization": "Marbella FC",
         "country": "Spain",
         "note": "AFC U20 2025 final squad registration 将其列入中国队最终 23 人名单；当前先保留 AFC 英文注册名，中文名待 CFA 或俱乐部来源复核。",
+        "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026 重庆铜梁龙外租节点",
+        "organization": "Chongqing Tonglianglong FC",
+        "country": "China",
+        "note": "马贝拉 2026-02-09 官方公告确认杜月徵外租重庆铜梁龙至 2026-12-31，当前按回流租借状态处理。",
         "organization_type": "professional-club-unspecified"
       }
     ],
@@ -13647,15 +13666,20 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/yuezheng-du/profil/spieler/1012801"
+      },
+      {
+        "type": "official",
+        "label": "Marbella loan announcement",
+        "url": "https://marbellafc.es/en/oficial-cesion-yuezheng-du/"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-11",
-      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
+      "last_checked": "2026-07-26",
+      "notes": "基础字段来自 AFC U20 2025 final squad registration PDF；马贝拉 2026-02-09 官方公告确认杜月徵外租重庆铜梁龙至 2026-12-31，因此当前注册俱乐部与 overseas_status 已按回流租借更新。"
     },
     "names": {
-      "zh": "Du Yuezheng",
+      "zh": "杜月徵",
       "en": "Du Yuezheng",
       "native": "Du Yuezheng",
       "ja": "",
@@ -16893,8 +16917,8 @@
     "height_cm": 190,
     "weight_kg": 83,
     "registration_club": {
-      "name": "FK Vozdovac U19",
-      "country": "Serbia",
+      "name": "Burnley FC U21",
+      "country": "England",
       "organization_type": "club-academy"
     },
     "training_pathway": [
@@ -16908,13 +16932,21 @@
         "stage_label": "2026 英格兰签约节点",
         "organization": "Burnley FC U21",
         "country": "England",
-        "note": "2026 年春季报道确认其加盟伯恩利 U21 梯队。"
+        "note": "伯恩利 2026-06-05 官方公告确认其加盟 U21，合同至 2027 年夏天，并将参加 2026/27 Premier League 2。",
+        "organization_type": "club-academy"
       },
       {
         "stage_label": "2026 塞尔维亚外租节点",
         "organization": "FK Vozdovac U19",
         "country": "Serbia",
         "note": "2026 年春季报道确认其因劳工证与培养安排，先外租到沃日多瓦茨 U19 锻炼。",
+        "organization_type": "club-academy"
+      },
+      {
+        "stage_label": "2026/27 伯恩利季前节点",
+        "organization": "Burnley FC U21",
+        "country": "England",
+        "note": "2026 年 7 月伯恩利 U21 季前赛记录确认张家鸣已经回到球队并连续首发，其中首场对 Nelson FC 取得进球。",
         "organization_type": "club-academy"
       }
     ],
@@ -16928,12 +16960,12 @@
       {
         "competition_id": "china-overseas-2026",
         "label": "2026 中国现役留洋跟踪",
-        "team": "FK Vozdovac U19",
+        "team": "Burnley FC U21",
         "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22 处于伯恩利 U21 签约后外租沃日多瓦茨 U19 的留洋阶段。"
+        "note": "伯恩利 2026-06-05 官方确认张家鸣加入 U21；7 月季前赛已经连续获得出场并取得进球。"
       }
     ],
     "external_links": [
@@ -16956,12 +16988,22 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/jiaming-zhang/profil/spieler/1159605"
+      },
+      {
+        "type": "official",
+        "label": "Burnley U21 signing announcement",
+        "url": "https://www.burnleyfootballclub.com/media-article/jiaming-zhang-joins-burnley-u21s"
+      },
+      {
+        "type": "official",
+        "label": "Burnley U21 pre-season report",
+        "url": "https://www.burnleyfootballclub.com/media-article/u21s-pre-season-continues-at-flixton-fc"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-06-27",
-      "notes": "出生日期可由新浪球员资料页校对；当前“伯恩利 U21 签约 + 沃日多瓦茨 U19 外租”路径由 2026 年春季多篇转会报道和公开数据库交叉确认。短视频名单若直接写作伯恩利 U21，需补充其塞尔维亚外租节点。"
+      "last_checked": "2026-07-26",
+      "notes": "伯恩利 2026-06-05 官方公告确认张家鸣加盟 U21 并签约至 2027 年夏天；2026 年 7 月俱乐部季前赛记录确认其已随 U21 连续出场并取得进球。沃日多瓦茨阶段保留为此前路径，不再作为当前注册俱乐部。"
     },
     "names": {
       "zh": "张家鸣",
@@ -17277,7 +17319,7 @@
     "registration_club": {
       "name": "AJ Auxerre",
       "country": "France",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club"
     },
     "training_pathway": [
       {
@@ -17303,14 +17345,14 @@
         "organization": "AJ Auxerre",
         "country": "France",
         "note": "2025 年 4 月公开报道显示其前往法国欧塞尔接受试训；该节点属于试训 / 考察，不等于当时已完成转会。",
-        "organization_type": "professional-club-unspecified"
+        "organization_type": "professional-club"
       },
       {
         "stage_label": "2026/07 欧塞尔签约生效",
         "organization": "AJ Auxerre",
         "country": "France",
-        "note": "公开资料显示其转会欧塞尔的生效日期为 2026-07-01；按 2026-07-10 核对，Soccerway 球员页已将其显示为 Auxerre 球员，当前按已生效留洋样本处理，但仍需继续跟进欧塞尔一线队 / 梯队正式名单和比赛报名。",
-        "organization_type": "professional-club-unspecified"
+        "note": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签约五年并身披 49 号，俱乐部职业队球员页已建立个人资料；正式联赛报名和出场仍需继续跟踪。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -17330,7 +17372,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "2026-07-01 转会生效日已过；Soccerway 当前球员页显示其所属为 Auxerre。欧塞尔一线队 / 梯队具体报名、号码和出场情况仍待俱乐部或赛事数据库进一步同步。"
+        "note": "欧塞尔 2026-07-09 官方确认魏祥鑫签约五年、身披 49 号，职业队球员页已上线；正式联赛报名和出场仍待赛季名单与比赛记录确认。"
       }
     ],
     "external_links": [
@@ -17358,12 +17400,22 @@
         "type": "profile",
         "label": "WorldFootball.net profile",
         "url": "https://www.worldfootball.net/player_summary/wei-xiangxin/"
+      },
+      {
+        "type": "official",
+        "label": "AJ Auxerre signing announcement",
+        "url": "https://www.aja.fr/grand-espoir-chinois-xiangxin-wei-signe-a-laja/"
+      },
+      {
+        "type": "official",
+        "label": "AJ Auxerre professional player page",
+        "url": "https://www.aja.fr/joueur/xiangxin-wei/"
       }
     ],
     "verification": {
-      "status": "mixed-source",
-      "last_checked": "2026-07-10",
-      "notes": "出生日期、梅州客家一线队出场、广东铭途租借和欧塞尔 2026-07-01 生效节点由 Wikipedia / WorldFootball / 转会报道交叉整理；2026-07-10 核对 Soccerway 球员页已显示 Auxerre，故当前注册俱乐部改按 AJ Auxerre 处理。欧塞尔官方一线队或梯队报名页尚需继续跟进，因此验证状态保留为 mixed-source。"
+      "status": "verified",
+      "last_checked": "2026-07-26",
+      "notes": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签下五年合同并获得 49 号，俱乐部职业队球员页同步上线；当前俱乐部归属已由一手来源闭环，正式联赛报名与出场继续跟踪。"
     },
     "names": {
       "zh": "魏祥鑫",

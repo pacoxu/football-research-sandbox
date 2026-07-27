@@ -293,6 +293,9 @@ export async function loadDataset() {
     path.join(paths.raw, "youth-development-systems.json"),
     { schema_version: 1, checked_at: null, systems: [] }
   );
+  const bigFiveDebutForecast = await readJson(
+    path.join(paths.raw, "big-five-debut-forecast.json")
+  );
 
   return {
     players,
@@ -309,6 +312,7 @@ export async function loadDataset() {
     bigFiveAsianCoaches,
     asianCoaches,
     youthDevelopmentSystems,
+    bigFiveDebutForecast,
     clubNameOverrides,
     playerMarketValues,
     playerSourceFiles

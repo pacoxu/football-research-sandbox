@@ -10,6 +10,7 @@ import {
 } from "./lib/overseas-status.mjs";
 import { validateJsonSchemas } from "./validate-json-schemas.mjs";
 import { loadForecastInput, validateForecastInput } from "./lib/world-cup-forecast.mjs";
+import { validateBigFiveDebutForecastInput } from "./lib/big-five-debut-forecast.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -2635,6 +2636,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   assert(isIsoDate(referenceDate), `Invalid validation reference date: ${referenceDate}`);
   await validateJsonSchemas({ includeSite: false });
   const dataset = await loadDataset();
+  validateBigFiveDebutForecastInput(dataset.bigFiveDebutForecast, dataset.players);
   const playerNameOverrides = JSON.parse(
     await fs.readFile(path.join(paths.raw, "player-name-overrides.json"), "utf8")
   );

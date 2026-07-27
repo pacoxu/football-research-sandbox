@@ -1,18 +1,22 @@
 import { arrangePitchGroup, assignedRoleLabel } from "./lineup-layout.js";
+import {
+  forecastFailureMode,
+  isForecastStale
+} from "./lineup-forecast-state.js";
 
 const players = [
   { id: "cn-liu-shaoziyang", name: "刘邵子洋", en: "Liu Shaoziyang", country: "China PR", position: "GK", role: "门将", club: "Beijing Guoan", era: "returned" },
   { id: "cn-li-dongchen", name: "李东宸", en: "Li Dongchen", country: "China PR", position: "DEF", role: "中后卫", club: "Sant Cugat FC", era: "current" },
   { id: "cn-wu-shaocong", name: "吴少聪", en: "Wu Shaocong", country: "China PR", position: "DEF", role: "中后卫", club: "Radomiak Radom", era: "current" },
-  { id: "cn-xu-bin", name: "徐彬", en: "Xu Bin", country: "China PR", position: "MID", role: "后腰", club: "Wolverhampton U21", era: "current" },
+  { id: "cn-xu-bin", name: "徐彬", en: "Xu Bin", country: "China PR", position: "MID", role: "后腰", club: "Wolverhampton Wanderers", era: "current" },
   { id: "cn-wang-bohao", name: "王博豪", en: "Wang Bohao", country: "China PR", position: "MID", role: "中场", club: "FC Den Bosch", era: "current" },
   { id: "cn-lyu-mengyang", name: "吕孟洋", en: "Lyu Mengyang", country: "China PR", position: "MID", role: "中场", club: "CE Europa U19", era: "current" },
   { id: "cn-zhang-lindong", name: "张林峒", en: "Zhang Lindong", country: "China PR", position: "MID", role: "中场", club: "DAMM CF", era: "current" },
-  { id: "cn-zhang-jiaming", name: "张家鸣", en: "Zhang Jiaming", country: "China PR", position: "FWD", role: "中锋", club: "FK Vozdovac U19", era: "current" },
+  { id: "cn-zhang-jiaming", name: "张家鸣", en: "Zhang Jiaming", country: "China PR", position: "FWD", role: "中锋", club: "Burnley FC U21", era: "current" },
   { id: "cn-lin-zihao", name: "林子皓", en: "Lin Zihao", country: "China PR", position: "FWD", role: "边锋", club: "FK Vozdovac U19", era: "current" },
   { id: "cn-liu-kaiyuan", name: "刘凯源", en: "Liu Kaiyuan", country: "China PR", position: "FWD", role: "前锋", club: "Villarreal Youth", era: "current" },
   { id: "cn-he-xiaoke", name: "何小珂", en: "He Xiaoke", country: "China PR", position: "FWD", role: "前锋", club: "FC Andorra", era: "current" },
-  { id: "cn-du-yuezheng", name: "杜月徵", en: "Du Yuezheng", country: "China PR", position: "FWD", role: "中锋", club: "Marbella FC", era: "current" },
+  { id: "cn-du-yuezheng", name: "杜月徵", en: "Du Yuezheng", country: "China PR", position: "FWD", role: "中锋", club: "重庆铜梁龙（马贝拉外租）", era: "returned" },
   { id: "cn-chen-shihan", name: "Chen Shihan", en: "Chen Shihan", country: "China PR", position: "MID", role: "中场", club: "Union Rochefortoise", era: "current" },
   { id: "cn-sun-kangbo", name: "Sun Kangbo", en: "Sun Kangbo", country: "China PR", position: "DEF", role: "后卫", club: "FK Vozdovac", era: "current" },
   { id: "cn-wei-xiangxin", name: "魏祥鑫", en: "Wei Xiangxin", country: "China PR", position: "FWD", role: "中锋", club: "AJ Auxerre", era: "current" },
@@ -204,7 +208,7 @@ const editorialLineups = [
       "cn-wang-bohao",
       "cn-lyu-mengyang",
       "cn-wei-xiangxin",
-      "cn-du-yuezheng",
+      "cn-zhang-jiaming",
       "cn-he-xiaoke"
     ]
   },
@@ -238,7 +242,15 @@ const state = {
 
 const poolNode = document.querySelector("#playerPool");
 const toastNode = document.querySelector("#lineupToast");
+const forecastStatusNode = document.querySelector("#debutForecastStatus");
+const forecastContentNode = document.querySelector("#debutForecastContent");
+const forecastErrorNode = document.querySelector("#debutForecastError");
+const forecastRefreshButton = document.querySelector("#refreshForecastButton");
 let toastTimer;
+let forecastPayload = null;
+let forecastRefreshTimer;
+let forecastLoading = false;
+let forecastLastFetchedAt = 0;
 
 function getPlayer(id) {
   return players.find((player) => player.id === id);
@@ -276,6 +288,205 @@ function showToast(message) {
   toastNode.textContent = message;
   toastNode.classList.add("is-visible");
   toastTimer = window.setTimeout(() => toastNode.classList.remove("is-visible"), 2400);
+}
+
+function escapeForecastHtml(value) {
+  return String(value ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function formatForecastDate(value) {
+  const [year, month, day] = String(value).split("-").map(Number);
+  if (![year, month, day].every(Number.isFinite)) return value;
+  return `${year} 年 ${month} 月 ${day} 日`;
+}
+
+function forecastTrend(outcome) {
+  const change = outcome.probability_change_pp;
+  if (change === null || change === undefined) {
+    return { className: "is-new", label: "新入盘" };
+  }
+  if (change > 0) {
+    return { className: "is-up", label: `上升 ${change.toFixed(1)} 个百分点` };
+  }
+  if (change < 0) {
+    return { className: "is-down", label: `下降 ${Math.abs(change).toFixed(1)} 个百分点` };
+  }
+  return { className: "is-flat", label: "持平" };
+}
+
+function renderForecastSources(sources = []) {
+  if (sources.length === 0) return "";
+  return `
+    <span class="forecast-source-links">
+      ${sources
+        .map(
+          (source) =>
+            `<a href="${escapeForecastHtml(source.url)}" target="_blank" rel="noreferrer">${escapeForecastHtml(source.label || "来源")}</a>`
+        )
+        .join("")}
+    </span>
+  `;
+}
+
+function renderForecastFactors(outcome) {
+  if (!outcome.factor_scores?.length) return "";
+  return `
+    <details class="forecast-factor-details">
+      <summary>查看五项评分 · 模型分 ${outcome.model_score.toFixed(2)}</summary>
+      <dl>
+        ${outcome.factor_scores
+          .map(
+            (factor) => `
+              <div>
+                <dt>${escapeForecastHtml(factor.label)} · ${Math.round(factor.weight * 100)}%</dt>
+                <dd>${factor.score}</dd>
+              </div>
+            `
+          )
+          .join("")}
+      </dl>
+    </details>
+  `;
+}
+
+function renderForecastRow(outcome) {
+  const trend = forecastTrend(outcome);
+  const rankLabel =
+    outcome.kind === "player"
+      ? String(outcome.candidate_rank).padStart(2, "0")
+      : outcome.kind === "other"
+        ? "外"
+        : "—";
+  const nameMarkup =
+    outcome.kind === "player"
+      ? `<a href="${escapeForecastHtml(outcome.player.profile_url)}">${escapeForecastHtml(outcome.label)}</a>
+         <small>${escapeForecastHtml(outcome.player.registration_club.name)}</small>`
+      : `<strong>${escapeForecastHtml(outcome.label)}</strong><small>特殊结果</small>`;
+  return `
+    <tr class="forecast-outcome-row forecast-kind-${outcome.kind}">
+      <th scope="row">
+        <span class="forecast-rank">${rankLabel}</span>
+        <span class="forecast-candidate">${nameMarkup}</span>
+      </th>
+      <td class="forecast-probability-cell">
+        <strong>${outcome.probability_percent.toFixed(1)}%</strong>
+        <span class="forecast-probability-track" aria-hidden="true">
+          <span style="--forecast-probability: ${outcome.probability_percent}%"></span>
+        </span>
+      </td>
+      <td><strong class="forecast-odds">${outcome.decimal_odds.toFixed(2)}</strong></td>
+      <td><span class="forecast-trend ${trend.className}">${escapeForecastHtml(trend.label)}</span></td>
+      <td class="forecast-rationale">
+        <p>${escapeForecastHtml(outcome.rationale)}</p>
+        ${renderForecastSources(outcome.source_links)}
+        ${renderForecastFactors(outcome)}
+      </td>
+    </tr>
+  `;
+}
+
+function scheduleForecastRefresh(payload) {
+  window.clearInterval(forecastRefreshTimer);
+  const minutes = payload.freshness?.refresh_interval_minutes ?? 5;
+  forecastRefreshTimer = window.setInterval(() => {
+    if (document.visibilityState === "visible") loadDebutForecast();
+  }, minutes * 60000);
+}
+
+function renderDebutForecast(payload) {
+  if (!Array.isArray(payload.outcomes) || !payload.leader) {
+    throw new Error("Invalid forecast payload");
+  }
+  forecastPayload = payload;
+  const leader = payload.outcomes.find((outcome) => outcome.id === payload.leader.player_id);
+  const noQualifier = payload.outcomes.find((outcome) => outcome.kind === "no-qualifier");
+  const stale = isForecastStale(payload);
+
+  forecastStatusNode.className = `forecast-status ${stale ? "is-stale" : "is-live"}`;
+  forecastStatusNode.innerHTML = `
+    <span class="forecast-live-dot" aria-hidden="true"></span>
+    <strong>${stale ? "数据待复核" : "实时研究盘"}</strong>
+    <span>数据核验于 ${escapeForecastHtml(formatForecastDate(payload.last_checked))}</span>
+    <span>·</span>
+    <span>公平赔率，不含水位</span>
+  `;
+
+  document.querySelector("#forecastLeader").innerHTML = `
+    <span class="forecast-card-kicker">当前领跑者 · CANDIDATE 01</span>
+    <div class="forecast-leader-main">
+      <div>
+        <a href="${escapeForecastHtml(leader.player.profile_url)}">${escapeForecastHtml(leader.label)}</a>
+        <p>${escapeForecastHtml(leader.player.registration_club.name)}</p>
+      </div>
+      <div class="forecast-leader-price">
+        <strong>${leader.probability_percent.toFixed(1)}%</strong>
+        <span>公平赔率 ${leader.decimal_odds.toFixed(2)}</span>
+      </div>
+    </div>
+    <p class="forecast-leader-rationale">${escapeForecastHtml(leader.rationale)}</p>
+  `;
+  document.querySelector("#forecastNoQualifier").innerHTML = `
+    <span class="forecast-card-kicker">风险结果 · NO DEBUT</span>
+    <strong>${noQualifier.probability_percent.toFixed(1)}%</strong>
+    <span>本季无人 · 公平赔率 ${noQualifier.decimal_odds.toFixed(2)}</span>
+    <p>${escapeForecastHtml(noQualifier.rationale)}</p>
+  `;
+
+  const orderedOutcomes = [
+    ...payload.outcomes
+      .filter((outcome) => outcome.kind === "player")
+      .sort((left, right) => left.candidate_rank - right.candidate_rank),
+    ...payload.outcomes.filter((outcome) => outcome.kind === "other"),
+    ...payload.outcomes.filter((outcome) => outcome.kind === "no-qualifier")
+  ];
+  document.querySelector("#forecastTableBody").innerHTML = orderedOutcomes
+    .map(renderForecastRow)
+    .join("");
+  document.querySelector("#forecastDisclaimer").textContent = payload.disclaimer;
+  forecastErrorNode.hidden = true;
+  forecastContentNode.hidden = false;
+  scheduleForecastRefresh(payload);
+}
+
+async function loadDebutForecast({ manual = false } = {}) {
+  if (forecastLoading) return;
+  forecastLoading = true;
+  forecastRefreshButton.disabled = true;
+  forecastRefreshButton.classList.add("is-refreshing");
+  if (!forecastPayload) {
+    forecastStatusNode.textContent = "正在载入最新研究赔率…";
+  }
+
+  try {
+    const requestUrl = new URL("./data/site/big-five-debut-forecast.json", window.location.href);
+    requestUrl.searchParams.set("_v", String(Date.now()));
+    const response = await fetch(requestUrl, { cache: "no-store" });
+    if (!response.ok) throw new Error(`Forecast request failed: ${response.status}`);
+    renderDebutForecast(await response.json());
+    forecastLastFetchedAt = Date.now();
+    if (manual) showToast("研究赔率已刷新");
+  } catch (error) {
+    console.error(error);
+    if (forecastFailureMode(forecastPayload) === "preserve-current") {
+      forecastStatusNode.className = "forecast-status is-warning";
+      forecastStatusNode.textContent = "刷新失败，当前保留上一次成功载入的研究赔率。";
+      if (manual) showToast("刷新失败，已保留当前赔率");
+    } else {
+      forecastStatusNode.className = "forecast-status is-warning";
+      forecastStatusNode.textContent = "研究赔率暂时不可用";
+      forecastContentNode.hidden = true;
+      forecastErrorNode.hidden = false;
+    }
+  } finally {
+    forecastLoading = false;
+    forecastRefreshButton.disabled = false;
+    forecastRefreshButton.classList.remove("is-refreshing");
+  }
 }
 
 function togglePlayer(player) {
@@ -563,5 +774,20 @@ document.querySelector("#resetLineupButton").addEventListener("click", () => {
   render();
 });
 
+forecastRefreshButton.addEventListener("click", () => loadDebutForecast({ manual: true }));
+document.querySelector("#retryForecastButton").addEventListener("click", () =>
+  loadDebutForecast({ manual: true })
+);
+document.addEventListener("visibilitychange", () => {
+  const refreshMinutes = forecastPayload?.freshness?.refresh_interval_minutes ?? 5;
+  if (
+    document.visibilityState === "visible" &&
+    Date.now() - forecastLastFetchedAt >= refreshMinutes * 60000
+  ) {
+    loadDebutForecast();
+  }
+});
+
 renderEditorialLineups();
 render();
+loadDebutForecast();

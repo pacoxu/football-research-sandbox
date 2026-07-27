@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://football-research.local/schema/big-five-debut-forecast.schema.json",
+  "$defs": {
+    "factorScores": {
+      "type": "object",
+      "required": [
+        "first_team_proximity",
+        "senior_competitive_experience",
+        "big_five_pathway",
+        "registration_eligibility",
+        "recent_availability"
+      ],
+      "properties": {
+        "first_team_proximity": { "type": "number", "minimum": 0, "maximum": 100 },
+        "senior_competitive_experience": { "type": "number", "minimum": 0, "maximum": 100 },
+        "big_five_pathway": { "type": "number", "minimum": 0, "maximum": 100 },
+        "registration_eligibility": { "type": "number", "minimum": 0, "maximum": 100 },
+        "recent_availability": { "type": "number", "minimum": 0, "maximum": 100 }
+      },
+      "additionalProperties": false
+    },
+    "sourceInput": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "market",
+        "freshness",
+        "model",
+        "factor_labels",
+        "special_outcomes",
+        "snapshots",
+        "disclaimer"
+      ],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "market": {
+          "type": "object",
+          "required": ["id", "title", "country", "opens_on", "closes_on", "competitions", "settlement"],
+          "properties": {
+            "opens_on": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+            "closes_on": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+            "competitions": { "type": "array", "minItems": 5, "maxItems": 5, "uniqueItems": true }
+          },
+          "additionalProperties": true
+        },
+        "freshness": {
+          "type": "object",
+          "required": ["stale_after_days", "refresh_interval_minutes"],
+          "additionalProperties": false,
+          "properties": {
+            "stale_after_days": { "type": "integer", "minimum": 1 },
+            "refresh_interval_minutes": { "type": "integer", "minimum": 1 }
+          }
+        },
+        "model": {
+          "type": "object",
+          "required": ["temperature", "weights"],
+          "properties": {
+            "temperature": { "type": "number", "exclusiveMinimum": 0 },
+            "weights": { "$ref": "#/$defs/factorScores" }
+          },
+          "additionalProperties": false
+        },
+        "factor_labels": { "type": "object" },
+        "special_outcomes": { "type": "object" },
+        "snapshots": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["as_of", "baselines", "candidates"],
+            "properties": {
+              "as_of": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+              "baselines": {
+                "type": "object",
+                "required": ["other_chinese_player", "no_qualifier"],
+                "properties": {
+                  "other_chinese_player": { "type": "number", "minimum": 0, "maximum": 100 },
+                  "no_qualifier": { "type": "number", "minimum": 0, "maximum": 100 }
+                },
+                "additionalProperties": false
+              },
+              "candidates": {
+                "type": "array",
+                "minItems": 6,
+                "maxItems": 6,
+                "items": {
+                  "type": "object",
+                  "required": ["player_id", "factors", "rationale", "source_links"],
+                  "properties": {
+                    "player_id": { "type": "string", "minLength": 1 },
+                    "factors": { "$ref": "#/$defs/factorScores" },
+                    "rationale": { "type": "string", "minLength": 1 },
+                    "source_links": {
+                      "type": "array",
+                      "minItems": 1,
+                      "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "disclaimer": { "type": "string", "minLength": 1 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$ref": "#/$defs/sourceInput"
+}

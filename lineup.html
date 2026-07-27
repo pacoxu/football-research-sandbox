@@ -119,6 +119,77 @@
           </aside>
         </section>
 
+        <section class="debut-forecast" aria-labelledby="debutForecastTitle">
+          <div class="debut-forecast-head">
+            <div>
+              <p class="eyebrow">LIVE RESEARCH MARKET</p>
+              <h2 id="debutForecastTitle">谁能第一个踢上五大联赛？</h2>
+              <p>
+                预测截至 2027 年 6 月 30 日，下一位完成英超、西甲、德甲、意甲或法甲正式联赛首秀的中国球员。
+              </p>
+            </div>
+            <button id="refreshForecastButton" class="forecast-refresh-button" type="button">
+              <span aria-hidden="true">↻</span>
+              刷新赔率
+            </button>
+          </div>
+
+          <div id="debutForecastStatus" class="forecast-status" role="status" aria-live="polite">
+            正在载入最新研究赔率…
+          </div>
+
+          <div id="debutForecastContent" class="debut-forecast-content" hidden>
+            <div class="forecast-summary-grid">
+              <article id="forecastLeader" class="forecast-leader" aria-label="当前领跑者"></article>
+              <article id="forecastNoQualifier" class="forecast-no-qualifier" aria-label="本季无人概率"></article>
+            </div>
+
+            <div class="forecast-table-wrap">
+              <table class="forecast-table">
+                <caption class="sr-only">中国球员五大联赛首秀研究概率与公平赔率</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">排名 / 候选</th>
+                    <th scope="col">研究概率</th>
+                    <th scope="col">公平赔率</th>
+                    <th scope="col">变化</th>
+                    <th scope="col">当前判断</th>
+                  </tr>
+                </thead>
+                <tbody id="forecastTableBody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="debutForecastError" class="forecast-error" hidden>
+            <strong>赔率暂时没有载入</strong>
+            <p>请检查网络后重试；阵容编辑功能不受影响。</p>
+            <button id="retryForecastButton" class="text-button" type="button">重新载入</button>
+          </div>
+
+          <details class="forecast-methodology">
+            <summary>判定口径、模型与免责声明</summary>
+            <div class="forecast-methodology-grid">
+              <div>
+                <strong>怎样算“踢上”</strong>
+                <p>只计算五大联赛顶级联赛正式出场；替补登场计入，报名、替补席、梯队、杯赛和次级联赛不计入。</p>
+              </div>
+              <div>
+                <strong>赔率怎样产生</strong>
+                <p>五项因素加权后通过 softmax 换算互斥概率，公平十进制赔率为 1 ÷ 概率，不含博彩公司利润率。</p>
+              </div>
+              <div>
+                <strong>如何判定第一</strong>
+                <p>按比赛开球时间加正式登场分钟排序；首发以开球时间计，完全相同则并列。</p>
+              </div>
+              <div>
+                <strong>使用边界</strong>
+                <p id="forecastDisclaimer">这是研究概率，不是博彩公司盘口，不可用于投注。</p>
+              </div>
+            </div>
+          </details>
+        </section>
+
         <section class="editorial-lineups" aria-labelledby="editorialLineupsTitle">
           <div class="editorial-lineups-head">
             <div>
@@ -147,6 +218,6 @@
     </div>
 
     <div id="lineupToast" class="lineup-toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./assets/lineup.js?v=20260725-training"></script>
+    <script type="module" src="./assets/lineup.js?v=20260726-debut-forecast"></script>
   </body>
 </html>
