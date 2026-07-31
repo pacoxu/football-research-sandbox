@@ -3053,6 +3053,28 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
     validateTournamentDateRange(tournament, "focus tournament");
     validateTournamentLifecycle(tournament, referenceDate);
+    if (tournament.latest_public_roster_view !== undefined) {
+      const rosterView = tournament.latest_public_roster_view;
+      assert(isIsoDate(rosterView.checked_at), `Invalid roster-view date: ${tournament.id}`);
+      assert(
+        Array.isArray(rosterView.groups) && rosterView.groups.length > 0,
+        `Missing roster-view groups: ${tournament.id}`
+      );
+      const rosterEntries = rosterView.groups.flatMap((group) => {
+        assert(group.label, `Missing roster-view group label: ${tournament.id}`);
+        assert(Array.isArray(group.entries), `Invalid roster-view group entries: ${tournament.id}`);
+        return group.entries;
+      });
+      for (const entry of rosterEntries) {
+        assert(entry.player_id || entry.name, `Missing roster-view player identity: ${tournament.id}`);
+        if (entry.player_id) {
+          assert(playerIds.has(entry.player_id), `Unknown roster-view player_id on ${tournament.id}: ${entry.player_id}`);
+        }
+      }
+      if (tournament.id === "shanghai-future-star-cup-men-u17-2026") {
+        assert(rosterEntries.length === 28, "Shanghai Future Star China U17 camp roster must remain 28 players");
+      }
+    }
   }
 
   for (const country of dataset.overseasHistory.countries) {

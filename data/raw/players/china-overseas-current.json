@@ -363,7 +363,8 @@
       "overseas-europe",
       "china-overseas-current",
       "donglu-football-boys",
-      "recent-outbound-2025"
+      "recent-outbound-2025",
+      "uefa-youth-league-2026-27-watch"
     ],
     "tournament_participation": [
       {
@@ -460,12 +461,33 @@
         "url": "https://www.xiaojiangfc.com/players/liu-kaiyuan/",
         "checked_at": "2026-07-25",
         "note": "二次公开资料索引；可补充项目身份与成长线索，但不单独作为当前注册、完整出生日期或正式比赛数据的强证明。"
+      },
+      {
+        "type": "official",
+        "label": "UEFA Villarreal 2026/27 Youth League club page",
+        "url": "https://www.uefa.com/uefayouthleague/clubs/2607408--villarreal/",
+        "checked_at": "2026-07-30",
+        "note": "确认比利亚雷亚尔进入 2026/27 青年欧冠，但该页面在核查日尚未公布包含刘凯源的赛季报名名单。"
+      },
+      {
+        "type": "official",
+        "label": "UEFA Youth League 2026/27 player eligibility",
+        "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2026/27/Article-28-Player-eligibility-Online",
+        "checked_at": "2026-07-30",
+        "note": "2026/27 常规年龄线为 2008-01-01 或以后；刘凯源出生于 2010 年，年龄合格，但年龄合格不等于已经报名。"
+      },
+      {
+        "type": "official",
+        "label": "FFCV U16 call-up listing Kaiyuan Liu with Villarreal C.F.",
+        "url": "https://ffcv.es/wp/wp-content/uploads/2026/01/CONV.-SUB-16-MASC.-VILLARREAL.pdf",
+        "checked_at": "2026-07-30",
+        "note": "西班牙瓦伦西亚自治区足协 2026 年 1 月征召文件可支撑刘凯源与比利亚雷亚尔的俱乐部关联；该文件不是 UEFA 青年欧冠报名表。"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-06-27",
-      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协 2026-03-12 通知继续以比利亚雷亚尔足球俱乐部口径列名；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。"
+      "last_checked": "2026-07-30",
+      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协 2026-03-12 通知继续以比利亚雷亚尔足球俱乐部口径列名；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。青年欧冠方面，UEFA 已确认比利亚雷亚尔进入 2026/27 赛事，刘凯源按 2010 年出生日期满足年龄规则；但截至 2026-07-31，40 人赛季名单和逐场 20 人名单均未出现官方公开确认，所以本站只标记为参赛观察，不记为已报名或已出场。"
     }
   },
   {

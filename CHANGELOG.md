@@ -4,6 +4,19 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-07-31
+
+### Added
+
+- Added the 2026 Shanghai Future Star Cup men's U17 pre-tournament snapshot with all eight teams, both groups, the China U17 group schedule, venues, the CFA fifth-camp 28-player roster, and explicit boundaries for matchday selection and the later women's event.
+- Added a 2026/27 UEFA Youth League watch for Liu Kaiyuan: Villarreal's entry and Liu's age eligibility are verified, while UEFA season registration and match selection remain unconfirmed.
+
+### Updated
+
+- Advanced the UEFA Youth League qualification and player-eligibility baseline from 2025/26 to the official 2026/27 regulations and calendar.
+- Added a bilingual new-season watch panel to the Youth League page, exposed the latest public China roster on upcoming tournament detail pages, and updated Liu Kaiyuan's official links and verification note.
+- Synchronized the current baseline to 459 players, 21 tournament snapshots, 9 projects, and 8 countries or regions.
+
 ## 2026-07-19
 
 ### Corrected

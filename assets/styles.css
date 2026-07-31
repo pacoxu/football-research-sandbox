@@ -2247,6 +2247,20 @@ tbody tr:last-child td {
   margin-bottom: 0;
 }
 
+.youth-watch-card {
+  grid-column: 1 / -1;
+}
+
+.youth-watch-card h4 {
+  margin: 16px 0 6px;
+}
+
+.youth-watch-card ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--muted);
+}
+
 .youth-rule-note,
 .youth-methodology-note {
   margin: 14px 0 20px;

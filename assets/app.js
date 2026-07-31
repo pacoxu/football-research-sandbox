@@ -745,11 +745,14 @@ const UI_COPY = {
     "tournaments.youthLeague.open": "进入专题",
     "youthLeague.hero.eyebrow": "UEFA Youth League",
     "youthLeague.hero.title": "欧洲青年冠军联赛",
-    "youthLeague.hero.text": "近三个完整赛季的资格、赛制、淘汰赛，以及中日韩球员核验。",
+    "youthLeague.hero.text": "近三个完整赛季的资格、赛制、淘汰赛与中日韩球员核验，并单列 2026/27 参赛观察。",
     "youthLeague.hero.cjkLink": "查看中日韩球员",
     "youthLeague.hero.back": "返回赛事列表",
     "youthLeague.qualification.eyebrow": "Entry & eligibility",
     "youthLeague.qualification.title": "如何参赛",
+    "youthLeague.watch.eyebrow": "2026/27 Watch",
+    "youthLeague.watch.title": "新赛季参赛观察",
+    "youthLeague.watch.note": "这里区分年龄合格、俱乐部入围、球员报名和实际出场；前三项不能自动推出下一项。",
     "youthLeague.seasons.eyebrow": "Three seasons",
     "youthLeague.seasons.title": "近三季赛事情况",
     "youthLeague.cjk.eyebrow": "China · Japan · Korea",
@@ -1571,11 +1574,14 @@ const UI_COPY = {
     "tournaments.youthLeague.open": "Open topic",
     "youthLeague.hero.eyebrow": "UEFA Youth League",
     "youthLeague.hero.title": "UEFA Youth League",
-    "youthLeague.hero.text": "Qualification, formats, knockouts and verified CJK players across the latest three completed seasons.",
+    "youthLeague.hero.text": "Qualification, formats, knockouts and verified CJK players across the latest three completed seasons, plus a separate 2026/27 entry watch.",
     "youthLeague.hero.cjkLink": "View CJK players",
     "youthLeague.hero.back": "Back to tournaments",
     "youthLeague.qualification.eyebrow": "Entry & eligibility",
     "youthLeague.qualification.title": "How clubs and players qualify",
+    "youthLeague.watch.eyebrow": "2026/27 Watch",
+    "youthLeague.watch.title": "New-season participation watch",
+    "youthLeague.watch.note": "Age eligibility, club entry, player registration and an actual appearance are separate checkpoints; none automatically proves the next.",
     "youthLeague.seasons.eyebrow": "Three seasons",
     "youthLeague.seasons.title": "The latest three seasons",
     "youthLeague.cjk.eyebrow": "China · Japan · Korea",
@@ -1737,7 +1743,7 @@ const YOUTH_LEAGUE_COPY = {
     seasonCount: "完整赛季",
     entrantTotal: "球队赛季",
     cjkCount: "中日韩球员",
-    currentRules: "资格规则以 2025/26 赛季为基线",
+    currentRules: "资格规则以 2026/27 赛季为基线",
     routeNote: "卫冕与重复资格",
     playerRules: "球员准入",
     oldFormat: "旧制",
@@ -1779,13 +1785,16 @@ const YOUTH_LEAGUE_COPY = {
     spotlightSeason: "{season} 精选",
     sourceNote: "来源以 UEFA 规则、赛季历史、官方比赛数据及俱乐部资料为主。",
     methodology: "不是全量名单",
-    methodologyText: "三季共有 238 个球队赛季；若按每队最多 40 人导入，会产生数千条记录。因此其他国家只保留赛事代表人物，中日韩按 UEFA 官方国籍逐季核验。"
+    methodologyText: "三季共有 238 个球队赛季；若按每队最多 40 人导入，会产生数千条记录。因此其他国家只保留赛事代表人物，中日韩按 UEFA 官方国籍逐季核验。",
+    provisional: "待报名确认",
+    evidence: "已核证据",
+    nextCheck: "下一核查节点"
   },
   en: {
     seasonCount: "completed seasons",
     entrantTotal: "team-seasons",
     cjkCount: "CJK players",
-    currentRules: "Eligibility baseline: 2025/26 regulations",
+    currentRules: "Eligibility baseline: 2026/27 regulations",
     routeNote: "Title holder and duplicate qualification",
     playerRules: "Player eligibility",
     oldFormat: "Old format",
@@ -1827,7 +1836,10 @@ const YOUTH_LEAGUE_COPY = {
     spotlightSeason: "{season} picks",
     sourceNote: "Sources prioritize UEFA regulations, season histories, official match data and club profiles.",
     methodology: "Not a full roster dump",
-    methodologyText: "The three seasons represent 238 team-seasons. Importing up to 40 players per club would create thousands of records, so other nationalities are curated while CJK players are checked season by season using UEFA nationality."
+    methodologyText: "The three seasons represent 238 team-seasons. Importing up to 40 players per club would create thousands of records, so other nationalities are curated while CJK players are checked season by season using UEFA nationality.",
+    provisional: "Registration pending",
+    evidence: "Verified evidence",
+    nextCheck: "Next checkpoint"
   }
 };
 
@@ -6647,7 +6659,8 @@ function renderTournamentDetailPage() {
 
   const displayMatches = getDisplayChinaMatches(archiveTournament?.china_matches);
   const squadEntries = archiveTournament ? getTournamentSquadEntries(archiveTournament) : [];
-  const latestRosterView = archiveTournament?.latest_public_roster_view ?? null;
+  const latestRosterView =
+    focusTournament?.latest_public_roster_view ?? archiveTournament?.latest_public_roster_view ?? null;
   squad.innerHTML =
     latestRosterView
       ? renderTournamentLatestRosterView(latestRosterView, squadEntries)
@@ -7808,6 +7821,39 @@ function renderYouthLeagueQualification(topic) {
   `;
 }
 
+function renderYouthLeagueBoundaryWatch(topic) {
+  const section = document.querySelector("#youthLeagueWatchSection");
+  const node = document.querySelector("#youthLeagueBoundaryWatch");
+  const watches = topic.boundary_watch ?? [];
+  section.hidden = watches.length === 0;
+  if (watches.length === 0) {
+    node.innerHTML = "";
+    return;
+  }
+  node.innerHTML = watches
+    .map((watch) => {
+      const displayName = state.language === "en" ? watch.names.en : watch.names.zh;
+      const nameMarkup = watch.player_id
+        ? `<a class="inline-link" href="${buildPlayerDetailUrl(watch.player_id)}">${escapeHtml(displayName)}</a>`
+        : `<strong>${escapeHtml(displayName)}</strong>`;
+      return `
+        <article class="youth-rule-card youth-watch-card">
+          <div class="section-head compact-head">
+            <h3>${nameMarkup} · ${escapeHtml(watch.club)} · ${escapeHtml(watch.season_id.replace("-", "/"))}</h3>
+            <span class="chip">${escapeHtml(watch.status === "provisional" ? yt("provisional") : watch.status)}</span>
+          </div>
+          <p><strong>${escapeHtml(localizeText(watch.label))}</strong></p>
+          <p>${escapeHtml(localizeText(watch.summary))}</p>
+          <h4>${escapeHtml(yt("evidence"))}</h4>
+          <ul>${(watch.evidence_points ?? []).map((point) => `<li>${escapeHtml(localizeText(point))}</li>`).join("")}</ul>
+          <h4>${escapeHtml(yt("nextCheck"))}</h4>
+          <p>${escapeHtml(localizeText(watch.next_check))}</p>
+        </article>
+      `;
+    })
+    .join("");
+}
+
 function formatYouthRound(round) {
   return {
     "quarter-final": yt("quarterFinal"),
@@ -7962,6 +8008,7 @@ function renderYouthLeaguePage() {
   }
   renderYouthLeagueHero(topic);
   renderYouthLeagueQualification(topic);
+  renderYouthLeagueBoundaryWatch(topic);
   document.querySelector("#youthLeagueSeasonCards").innerHTML = topic.seasons.map(renderYouthLeagueSeasonCard).join("");
   renderYouthLeaguePlayers();
   renderYouthLeagueSpotlights(topic);

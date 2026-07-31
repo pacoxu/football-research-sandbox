@@ -36,3 +36,22 @@ test("keeps the cancelled 2020/21 draw outside actual participant coverage", asy
   assert.equal(teams.length, 64);
   assert.equal(new Set(teams).size, 64);
 });
+
+test("keeps Liu Kaiyuan on the 2026/27 boundary watch without upgrading him to registered", async () => {
+  const data = JSON.parse(await readFile(datasetUrl, "utf8"));
+  const watch = data.boundary_watch.find(({ player_id }) => player_id === "cn-liu-kaiyuan-2010");
+  const sourceIds = new Set(data.sources.map(({ id }) => id));
+
+  assert.equal(watch.season_id, "2026-27");
+  assert.equal(watch.club, "Villarreal");
+  assert.equal(watch.status, "provisional");
+  assert.deepEqual(watch.source_ids, [
+    "rules-2027-eligibility",
+    "rules-2027-lists",
+    "villarreal-2027",
+    "ffcv-liu-2026"
+  ]);
+  assert.ok(watch.source_ids.every((id) => sourceIds.has(id)));
+  assert.equal(data.player_eligibility.season, "2026/27");
+  assert.equal(data.player_eligibility.birth_year_minimum, 2008);
+});

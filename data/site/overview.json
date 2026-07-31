@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26",
+  "generated_at": "2026-07-31",
   "stats": {
     "player_count": 459,
     "country_count": 8,
@@ -77,6 +77,346 @@
           "label": "FIFA Council appoints 2027 co-hosts",
           "publisher": "FIFA",
           "url": "https://inside.fifa.com/organisation/fifa-council/media-releases/fifa-council-calls-for-peace-and-takes-key-decisions-on-football-governance"
+        }
+      ]
+    },
+    {
+      "id": "shanghai-future-star-cup-men-u17-2026",
+      "name": "2026 Shanghai Future Star Cup Men's U17",
+      "short_name": "Shanghai Future Star U17 2026",
+      "focus_level": "primary",
+      "status": "upcoming",
+      "last_checked": "2026-07-30",
+      "date_range": {
+        "start": "2026-08-03",
+        "end": "2026-08-09"
+      },
+      "focus_teams": [
+        "China PR U17",
+        "Arsenal U17",
+        "Athletic Club U17",
+        "Bayer Leverkusen U17",
+        "Shanghai U17"
+      ],
+      "headline": "中国 U17 将在上海明日之星冠军杯 A 组先后对阵阿森纳、毕尔巴鄂竞技和勒沃库森；首战为 8 月 3 日 19:35 对阿森纳 U17。",
+      "notes": [
+        "男足赛事于 2026-08-03 至 2026-08-09 在上汽浦东足球场和源深体育中心举行，共 8 支 U17 球队参赛。",
+        "A 组为中国 U17、毕尔巴鄂竞技 U17、勒沃库森 U17、阿森纳 U17；B 组为上海 U17、托特纳姆热刺 U17、河床 U17、葡萄牙体育 U17。",
+        "中国 U17 已公布的小组赛赛程为：8 月 3 日 19:35 对阿森纳、8 月 4 日 16:00 对毕尔巴鄂竞技、8 月 6 日 19:35 对勒沃库森；淘汰或排位阶段延续至 8 月 9 日。",
+        "中国足协 7 月 25 日公布第五期集训通知：球队 7 月 27 日至 8 月 10 日在上海集训并参赛，主教练为浮嶋敏，参训运动员 28 人。该名单是集训池，不自动等同于每场比赛报名或首发阵容。",
+        "阿森纳 U17 的参赛席位已由上海赛事主办方确认；截至 7 月 31 日，尚未检索到阿森纳俱乐部发布的本届赛事出征名单，因此不根据往期梯队名单推定来沪球员。",
+        "同一品牌下的首届女足赛事另于 8 月 16 日至 22 日举行，也有阿森纳 U17 女足参赛；本条只统计男足赛事，避免混合两套赛程。"
+      ],
+      "participants": {
+        "status": "complete",
+        "teams": [
+          {
+            "team": "China PR U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          },
+          {
+            "team": "Athletic Club U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          },
+          {
+            "team": "Bayer Leverkusen U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          },
+          {
+            "team": "Arsenal U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          },
+          {
+            "team": "Shanghai U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          },
+          {
+            "team": "Tottenham Hotspur U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          },
+          {
+            "team": "River Plate U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          },
+          {
+            "team": "Sporting CP U17",
+            "entry_status": "participant",
+            "confirmed_at": "2026-06-12"
+          }
+        ]
+      },
+      "final_draw": {
+        "status": "complete",
+        "groups": [
+          {
+            "name": "A",
+            "teams": [
+              "China PR U17",
+              "Athletic Club U17",
+              "Bayer Leverkusen U17",
+              "Arsenal U17"
+            ]
+          },
+          {
+            "name": "B",
+            "teams": [
+              "Shanghai U17",
+              "Tottenham Hotspur U17",
+              "River Plate U17",
+              "Sporting CP U17"
+            ]
+          }
+        ]
+      },
+      "latest_public_roster_view": {
+        "label": {
+          "zh": "中国 U17 第五期集训名单（28 人）",
+          "en": "China U17 fifth-camp roster (28 players)"
+        },
+        "note": {
+          "zh": "按中国足协 2026-07-25 通知整理。球队于 7 月 27 日至 8 月 10 日在上海集训并参加明日之星冠军杯；这是参训名单，不等同于逐场报名、首发或最终出场名单。单位字段按足协通知原文保留。",
+          "en": "Compiled from the CFA notice dated 2026-07-25. The team camps in Shanghai from 27 July to 10 August and enters the Future Star Cup. This is a training-camp roster, not a matchday, starting-lineup, or appearance list. Affiliations retain the CFA wording."
+        },
+        "checked_at": "2026-07-30",
+        "head_coach": {
+          "name": "Satoshi Ukishima",
+          "local_name": "浮嶋敏"
+        },
+        "groups": [
+          {
+            "label": "山东泰山足球俱乐部",
+            "entries": [
+              {
+                "player_id": "cn-zhang-xuyao-2009",
+                "player": "Zhang Xuyao"
+              },
+              {
+                "player_id": "cn-pan-chaowei-2010",
+                "player": "Pan Chaowei"
+              },
+              {
+                "name": {
+                  "zh": "萧晨熙",
+                  "en": "Xiao Chenxi"
+                }
+              },
+              {
+                "name": {
+                  "zh": "赵冠丞",
+                  "en": "Zhao Guancheng"
+                }
+              }
+            ]
+          },
+          {
+            "label": "青岛西海岸足球俱乐部",
+            "entries": [
+              {
+                "player_id": "cn-liu-zhicheng-2009",
+                "player": "Liu Zhicheng"
+              }
+            ]
+          },
+          {
+            "label": "青岛海牛足球俱乐部",
+            "entries": [
+              {
+                "player_id": "cn-kuang-zhaolei-2009",
+                "player": "Kuang Zhaolei"
+              },
+              {
+                "name": {
+                  "zh": "江宇涵",
+                  "en": "Jiang Yuhan"
+                }
+              }
+            ]
+          },
+          {
+            "label": "梅州客家足球俱乐部",
+            "entries": [
+              {
+                "name": {
+                  "zh": "李家润",
+                  "en": "Li Jiarun"
+                }
+              }
+            ]
+          },
+          {
+            "label": "武汉三镇足球俱乐部",
+            "entries": [
+              {
+                "player_id": "cn-xu-zhengpeng-2009",
+                "player": "Xu Zhengpeng"
+              },
+              {
+                "player_id": "cn-he-sifan-2009",
+                "player": "He Sifan"
+              }
+            ]
+          },
+          {
+            "label": "重庆铜梁龙足球俱乐部",
+            "entries": [
+              {
+                "name": {
+                  "zh": "谭渝锦",
+                  "en": "Tan Yujin"
+                }
+              }
+            ]
+          },
+          {
+            "label": "湖北青年星足球俱乐部",
+            "entries": [
+              {
+                "player_id": "cn-bian-weihao-2009",
+                "player": "Bian Weihao"
+              },
+              {
+                "player_id": "cn-jiang-chengen-2010",
+                "player": "Jiang Chengen"
+              },
+              {
+                "name": {
+                  "zh": "程晟涵",
+                  "en": "Cheng Shenghan"
+                }
+              },
+              {
+                "name": {
+                  "zh": "汪奕铭",
+                  "en": "Wang Yiming"
+                }
+              }
+            ]
+          },
+          {
+            "label": "广东铭途足球俱乐部",
+            "entries": [
+              {
+                "name": {
+                  "zh": "孙臣曦",
+                  "en": "Sun Chenxi"
+                }
+              }
+            ]
+          },
+          {
+            "label": "大连可为足球俱乐部",
+            "entries": [
+              {
+                "name": {
+                  "zh": "孙颢源",
+                  "en": "Sun Haoyuan"
+                }
+              },
+              {
+                "name": {
+                  "zh": "陈俊博",
+                  "en": "Chen Junbo"
+                }
+              }
+            ]
+          },
+          {
+            "label": "山东鲁能泰山足球学校",
+            "entries": [
+              {
+                "name": {
+                  "zh": "张君豪",
+                  "en": "Zhang Junhao"
+                }
+              },
+              {
+                "player_id": "cn-kong-xinuo-2009",
+                "player": "Kong Xinuo"
+              }
+            ]
+          },
+          {
+            "label": "恒大足球学校",
+            "entries": [
+              {
+                "player_id": "cn-qin-ziniu-2009",
+                "player": "Qin Ziniu"
+              },
+              {
+                "name": {
+                  "zh": "余佳楠",
+                  "en": "Yu Jianan"
+                }
+              },
+              {
+                "name": {
+                  "zh": "诺尔斯·艾尼瓦尔",
+                  "en": "Nuoersi Ainiwaer"
+                }
+              }
+            ]
+          },
+          {
+            "label": "宜兴市周铁久滕足球俱乐部",
+            "entries": [
+              {
+                "player_id": "cn-peng-xianchen-2009",
+                "player": "Peng Xianchen"
+              }
+            ]
+          },
+          {
+            "label": "清华大学附属中学",
+            "entries": [
+              {
+                "player_id": "cn-zhou-yunuo-2009",
+                "player": "Zhou Yunuo"
+              },
+              {
+                "player_id": "cn-nan-zixun-2009",
+                "player": "Nan Zixun"
+              },
+              {
+                "player_id": "cn-zhao-songyuan-2009",
+                "player": "Zhao Songyuan"
+              }
+            ]
+          },
+          {
+            "label": "蔚山现代足球俱乐部",
+            "entries": [
+              {
+                "name": {
+                  "zh": "金冠成",
+                  "en": "Jin Guancheng"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "sources": [
+        {
+          "label": "Shanghai municipal government tournament announcement and group draw",
+          "publisher": "Shanghai Municipal People's Government / Shanghai Sports Bureau",
+          "url": "https://www.shanghai.gov.cn/nw31406/20260617/f9f5ca21627c43abb45a59a26b87d3eb.html"
+        },
+        {
+          "label": "CFA China U17 fifth-camp notice and 28-player Shanghai roster",
+          "publisher": "CFA",
+          "url": "https://www.thecfa.cn/wqmdu17/20260725/37988.html"
+        },
+        {
+          "label": "China U17 group-stage fixture times reported from the published schedule",
+          "publisher": "Sina Sports",
+          "url": "https://sports.sina.cn/2026-06-21/detail-iniecmta1322318.d.html"
         }
       ]
     },
@@ -38011,10 +38351,10 @@
         "en": "UEFA Youth League"
       },
       "scope": {
-        "zh": "2010 年前身试验赛、2010/11—2012/13 未创办边界与 2013/14—2022/23 历史赛季完整参赛队，以及最近三个已完成赛季的详细赛制和淘汰赛；中日韩球员按 UEFA 官方国籍尽量完整，其他国家仅精选。",
-        "en": "The 2010 precursor event, the not-yet-established boundary from 2010/11 through 2012/13, complete historical entrants from 2013/14 through 2022/23, plus detailed formats and knockouts for the latest three completed seasons; comprehensive CJK player coverage by UEFA nationality and curated players from elsewhere."
+        "zh": "2010 年前身试验赛、2010/11—2012/13 未创办边界与 2013/14—2022/23 历史赛季完整参赛队，以及最近三个已完成赛季的详细赛制和淘汰赛；另设 2026/27 资格与球员观察边界，中日韩球员按 UEFA 官方国籍尽量完整，其他国家仅精选。",
+        "en": "The 2010 precursor event, the not-yet-established boundary from 2010/11 through 2012/13, complete historical entrants from 2013/14 through 2022/23, plus detailed formats and knockouts for the latest three completed seasons; a separate 2026/27 entry and player watch preserves the pre-registration boundary, with comprehensive CJK coverage by UEFA nationality and curated players from elsewhere."
       },
-      "checked_at": "2026-07-19"
+      "checked_at": "2026-07-30"
     },
     "qualification": {
       "applies_from": "2024/25",
@@ -38030,8 +38370,8 @@
             "en": "The youth teams of the 36 clubs in the UEFA Champions League league phase enter a six-match league phase mirroring the senior fixtures. The top 22 reach the round of 32."
           },
           "source_ids": [
-            "rules-2026-entries",
-            "format-2026"
+            "rules-2027-entries",
+            "format-2027"
           ]
         },
         {
@@ -38045,8 +38385,8 @@
             "en": "Domestic youth champions from UEFA member associations enter up to three two-legged knockout rounds, producing ten round-of-32 qualifiers; associations without an eligible youth competition may have no entrant."
           },
           "source_ids": [
-            "rules-2026-entries",
-            "format-2026"
+            "rules-2027-entries",
+            "format-2027"
           ]
         }
       ],
@@ -38059,8 +38399,8 @@
         "en": "A club qualifying through both routes enters the Champions League path; its domestic berth normally passes to the youth league runners-up from that association."
       },
       "source_ids": [
-        "rules-2026-entries",
-        "format-2026"
+        "rules-2027-entries",
+        "format-2027"
       ]
     },
     "lineage": {
@@ -39361,9 +39701,9 @@
       }
     ],
     "player_eligibility": {
-      "season": "2025/26",
-      "birth_year_minimum": 2007,
-      "overage_birth_year_minimum": 2006,
+      "season": "2026/27",
+      "birth_year_minimum": 2008,
+      "overage_birth_year_minimum": 2007,
       "overage_season_list_limit": 5,
       "overage_match_list_limit": 3,
       "season_list_limit": 40,
@@ -39377,12 +39717,12 @@
             "en": "Age"
           },
           "description": {
-            "zh": "2025/26 赛季原则上须出生于 2007 年 1 月 1 日或以后；最多可报名 5 名出生于 2006 年 1 月 1 日或以后且满足俱乐部培养年限的球员，每场 20 人名单中最多使用其中 3 人。",
-            "en": "For 2025/26, players are generally born on or after 1 January 2007. Up to five players born on or after 1 January 2006 may be registered if they satisfy club-training conditions, with no more than three on a 20-player match list."
+            "zh": "2026/27 赛季原则上须出生于 2008 年 1 月 1 日或以后；最多可报名 5 名出生于 2007 年 1 月 1 日或以后且满足俱乐部培养年限的球员，每场 20 人名单中最多使用其中 3 人。",
+            "en": "For 2026/27, players are generally born on or after 1 January 2008. Up to five players born on or after 1 January 2007 may be registered if they satisfy club-training conditions, with no more than three on a 20-player match list."
           },
           "source_ids": [
-            "rules-2026-eligibility",
-            "rules-2026-lists"
+            "rules-2027-eligibility",
+            "rules-2027-lists"
           ]
         },
         {
@@ -39396,7 +39736,7 @@
             "en": "The season list contains up to 40 players and at least four goalkeepers; each match uses a 20-player shortlist. Players must be registered with the entrant and may represent only one club in the competition that season."
           },
           "source_ids": [
-            "rules-2026-lists"
+            "rules-2027-lists"
           ]
         },
         {
@@ -39410,8 +39750,8 @@
             "en": "At least 14 players on each 20-player list must have been registered with the club for two uninterrupted years after turning 15, or for two of three years with at most one year on loan within the same association."
           },
           "source_ids": [
-            "rules-2026-eligibility",
-            "rules-2026-lists"
+            "rules-2027-eligibility",
+            "rules-2027-lists"
           ]
         },
         {
@@ -39425,7 +39765,7 @@
             "en": "Once a player has appeared in three or more UEFA senior club-competition matches from the league phase onward, they are no longer eligible for that season's Youth League."
           },
           "source_ids": [
-            "rules-2026-eligibility"
+            "rules-2027-eligibility"
           ]
         }
       ]
@@ -40074,7 +40414,53 @@
         ]
       }
     ],
-    "boundary_watch": [],
+    "boundary_watch": [
+      {
+        "id": "uyl-2027-liu-kaiyuan",
+        "season_id": "2026-27",
+        "player_id": "cn-liu-kaiyuan-2010",
+        "names": {
+          "zh": "刘凯源",
+          "en": "Liu Kaiyuan",
+          "native": "刘凯源"
+        },
+        "country_code": "CHN",
+        "club": "Villarreal",
+        "status": "provisional",
+        "label": {
+          "zh": "年龄合格、俱乐部已入围；球员报名待确认",
+          "en": "Age-eligible and club entered; player registration pending"
+        },
+        "summary": {
+          "zh": "刘凯源出生于 2010 年，符合 2026/27 青年欧冠的年龄门槛；UEFA 已建立比利亚雷亚尔 2026/27 赛事页，说明俱乐部进入本届赛事。但截至 2026-07-31，UEFA 与比利亚雷亚尔均未公布包含刘凯源的 40 人赛季名单或单场 20 人名单，因此不能写成已经确定参赛或出场。",
+          "en": "Born in 2010, Liu Kaiyuan clears the 2026/27 Youth League age threshold, and UEFA has a 2026/27 competition page for Villarreal. As of 31 July 2026, however, neither UEFA nor Villarreal has published a 40-player season list or 20-player match shortlist containing Liu, so participation or an appearance is not yet confirmed."
+        },
+        "evidence_points": [
+          {
+            "zh": "2026/27 常规年龄线为 2008 年 1 月 1 日或以后，刘凯源的 2010 年出生年份符合。",
+            "en": "The standard 2026/27 age line is 1 January 2008 or later; Liu's 2010 birth year qualifies."
+          },
+          {
+            "zh": "UEFA 官方俱乐部页将比利亚雷亚尔列入 2026/27 青年欧冠。",
+            "en": "UEFA's official club page lists Villarreal in the 2026/27 Youth League."
+          },
+          {
+            "zh": "FFCV 2026 年 1 月 U16 征召文件把 Kaiyuan Liu 登记在 Villarreal C.F.，可支撑俱乐部关联，但不等于 UEFA 报名。",
+            "en": "A January 2026 FFCV U16 call-up lists Kaiyuan Liu with Villarreal C.F.; this supports the club link but is not a UEFA registration."
+          }
+        ],
+        "next_check": {
+          "zh": "重点复核 2026-09-03 的 40 人名单截止节点，以及每场比赛前一日提交的 20 人名单；只有进入 UEFA 名单后，才从 provisional 升级为 registered-only 或 appeared。",
+          "en": "Recheck the 40-player list deadline on 3 September 2026 and the 20-player shortlist filed before each match. Upgrade from provisional only after Liu appears on an official UEFA list."
+        },
+        "source_ids": [
+          "rules-2027-eligibility",
+          "rules-2027-lists",
+          "villarreal-2027",
+          "ffcv-liu-2026"
+        ]
+      }
+    ],
     "other_player_spotlights": [
       {
         "season_id": "2023-24",
@@ -40379,6 +40765,36 @@
         "id": "format-2026",
         "label": "UEFA 2025/26 calendar and format",
         "url": "https://www.uefa.com/uefayouthleague/news/0298-1da14baa2d1f-bdd578e9645f-1000--2025-26-uefa-youth-league-calendar-format/"
+      },
+      {
+        "id": "rules-2027-entries",
+        "label": "UEFA Youth League 2026/27 regulations – Article 3",
+        "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2026/27/Article-3-Entries-for-the-competition-Online"
+      },
+      {
+        "id": "rules-2027-eligibility",
+        "label": "UEFA Youth League 2026/27 regulations – Article 28",
+        "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2026/27/Article-28-Player-eligibility-Online"
+      },
+      {
+        "id": "rules-2027-lists",
+        "label": "UEFA Youth League 2026/27 regulations – Article 29",
+        "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2026/27/Article-29-Player-lists-Online"
+      },
+      {
+        "id": "format-2027",
+        "label": "UEFA 2026/27 calendar and format",
+        "url": "https://www.uefa.com/uefayouthleague/news/02a6-20d583385573-6fea9f5cb754-1000--2026-27-uefa-youth-league-calendar-format/"
+      },
+      {
+        "id": "villarreal-2027",
+        "label": "UEFA Villarreal 2026/27 Youth League club page",
+        "url": "https://www.uefa.com/uefayouthleague/clubs/2607408--villarreal/"
+      },
+      {
+        "id": "ffcv-liu-2026",
+        "label": "FFCV U16 call-up listing Kaiyuan Liu with Villarreal C.F.",
+        "url": "https://ffcv.es/wp/wp-content/uploads/2026/01/CONV.-SUB-16-MASC.-VILLARREAL.pdf"
       },
       {
         "id": "teams-2024",
