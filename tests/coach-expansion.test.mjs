@@ -8,7 +8,7 @@ const bigFiveUrl = new URL("../data/raw/big-five-asian-coaches.json", import.met
 const chinaUrl = new URL("../data/raw/china-youth-development-coaches.json", import.meta.url);
 const overviewUrl = new URL("../data/site/overview.json", import.meta.url);
 
-test("keeps all issue 12 Asian coaches in the extension table with sourced scopes", async () => {
+test("keeps all Asian-coach stints in one match-audited scope", async () => {
   const data = JSON.parse(await readFile(asianUrl, "utf8"));
   const bigFive = JSON.parse(await readFile(bigFiveUrl, "utf8"));
   const required = new Set([
@@ -21,6 +21,11 @@ test("keeps all issue 12 Asian coaches in the extension table with sourced scope
   ]);
 
   assert.equal(data.coaches.length, 11);
+  const stints = data.coaches.flatMap((coach) =>
+    coach.stints.map((stint) => ({ coach_id: coach.id, ...stint }))
+  );
+  assert.equal(stints.length, 19);
+  assert.deepEqual(data.record_audit_counts, { complete: 15, pending: 4 });
   const issueCoaches = data.coaches.filter(({ id }) => required.has(id));
   assert.equal(issueCoaches.length, required.size);
   assert.ok(issueCoaches.every(({ id }) => !bigFive.coaches.some((coach) => coach.id === id)));
@@ -31,9 +36,39 @@ test("keeps all issue 12 Asian coaches in the extension table with sourced scope
       assert.ok(stint.competition_scope);
       assert.ok(stint.period.start);
       assert.ok(stint.source_links.some(({ type }) => type !== "secondary-crosscheck"));
-      assert.equal(stint.record, null);
+      assert.ok(stint.record_audit.competitions.length > 0);
+      assert.ok(stint.record_audit.coverage.from);
+      assert.ok(stint.record_audit.coverage.through);
+      assert.ok(stint.record_audit.fixture_sources.some(({ type }) => type !== "secondary-crosscheck"));
     }
   }
+
+  for (const stint of stints) {
+    if (stint.record_audit.status === "pending") {
+      assert.equal(stint.record, null);
+      continue;
+    }
+    assert.equal(stint.record.matches, stint.record.wins + stint.record.draws + stint.record.losses);
+    assert.equal(stint.record.points, stint.record.wins * 3 + stint.record.draws);
+  }
+
+  assert.deepEqual(
+    new Set(stints.filter(({ record }) => record === null).map(({ coach_id, team }) => `${coach_id}:${team}`)),
+    new Set([
+      "hajime-moriyasu:Japan Olympic-age national teams",
+      "kevin-muscat:Shanghai Port FC",
+      "kim-pan-gon:Selangor FC",
+      "choi-kang-hee:Shandong Taishan FC"
+    ])
+  );
+  assert.deepEqual(
+    stints.find(({ coach_id, team }) => coach_id === "ange-postecoglou" && team === "Yokohama F. Marinos").record,
+    { matches: 118, wins: 58, draws: 18, losses: 42, points: 192 }
+  );
+  assert.deepEqual(
+    stints.find(({ coach_id, team }) => coach_id === "akira-nishino" && team === "Japan").record,
+    { matches: 7, wins: 2, draws: 1, losses: 4, points: 7 }
+  );
 });
 
 test("keeps grassroots age-group and Football Boys batch scopes explicit", async () => {
@@ -68,9 +103,14 @@ test("publishes verified and incomplete issue 12 records in the coach directory"
   const coaches = buildCoachCatalog(overview);
   const cuiPeng = coaches.find(({ record_id }) => record_id === "cn-cui-peng-shandong-u17");
   const muscat = coaches.find(({ record_id }) => record_id === "kevin-muscat");
+  const nishino = coaches.find(({ record_id }) => record_id === "akira-nishino");
 
   assert.ok(cuiPeng?.categories.includes("youth-development"));
   assert.ok(cuiPeng?.roles.includes("U17梯队主教练"));
   assert.ok(muscat?.categories.includes("asia-expanded"));
   assert.ok(muscat?.missing_fields.includes("record"));
+  assert.deepEqual(muscat?.record_audit_counts, { complete: 1, pending: 1 });
+  assert.equal(muscat?.records.find(({ team }) => team === "Yokohama F. Marinos")?.record.matches, 86);
+  assert.ok(!nishino?.missing_fields.includes("record"));
+  assert.deepEqual(nishino?.record_audit_counts, { complete: 2, pending: 0 });
 });

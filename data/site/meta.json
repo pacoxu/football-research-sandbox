@@ -288,31 +288,31 @@
       },
       "record_count": 37,
       "quality": {
-        "complete": 12,
-        "mixed": 0,
-        "partial": 25,
+        "complete": 15,
+        "mixed": 1,
+        "partial": 21,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
       },
       "source_tiers": {
-        "1": 15,
+        "1": 16,
         "2": 2,
         "3": 0,
         "4": 2,
         "5": 6,
         "6": 0,
-        "unclassified": 12
+        "unclassified": 11
       },
       "checked_at": {
         "oldest": "2026-06-27",
-        "newest": "2026-07-25"
+        "newest": "2026-08-01"
       },
       "overdue_records": 0,
       "missing_fields": [
         {
           "field": "record",
-          "count": 11
+          "count": 4
         }
       ]
     },
@@ -881,30 +881,24 @@
       },
       "coach:akira-nishino": {
         "id": "coach:akira-nishino",
-        "status": "partial",
+        "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-19",
-        "missing_fields": [
-          "record"
-        ]
+        "checked_at": "2026-08-01",
+        "missing_fields": []
       },
       "coach:amir-ghalenoei": {
         "id": "coach:amir-ghalenoei",
         "status": "partial",
         "source_tier": null,
-        "checked_at": "2026-07-19",
-        "missing_fields": [
-          "record"
-        ]
+        "checked_at": "2026-08-01",
+        "missing_fields": []
       },
       "coach:ange-postecoglou": {
         "id": "coach:ange-postecoglou",
-        "status": "partial",
+        "status": "mixed",
         "source_tier": 1,
-        "checked_at": "2026-07-11",
-        "missing_fields": [
-          "record"
-        ]
+        "checked_at": "2026-08-01",
+        "missing_fields": []
       },
       "coach:antonio-puche": {
         "id": "coach:antonio-puche",
@@ -924,16 +918,14 @@
         "id": "coach:chan-yuen-ting",
         "status": "partial",
         "source_tier": null,
-        "checked_at": "2026-07-11",
-        "missing_fields": [
-          "record"
-        ]
+        "checked_at": "2026-08-01",
+        "missing_fields": []
       },
       "coach:choi-kang-hee": {
         "id": "coach:choi-kang-hee",
         "status": "partial",
         "source_tier": 2,
-        "checked_at": "2026-07-19",
+        "checked_at": "2026-08-01",
         "missing_fields": [
           "record"
         ]
@@ -963,25 +955,23 @@
         "id": "coach:hajime-moriyasu",
         "status": "partial",
         "source_tier": 1,
-        "checked_at": "2026-07-11",
+        "checked_at": "2026-08-01",
         "missing_fields": [
           "record"
         ]
       },
       "coach:hong-myung-bo": {
         "id": "coach:hong-myung-bo",
-        "status": "partial",
+        "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-11",
-        "missing_fields": [
-          "record"
-        ]
+        "checked_at": "2026-08-01",
+        "missing_fields": []
       },
       "coach:kevin-muscat": {
         "id": "coach:kevin-muscat",
         "status": "partial",
-        "source_tier": null,
-        "checked_at": "2026-07-19",
+        "source_tier": 1,
+        "checked_at": "2026-08-01",
         "missing_fields": [
           "record"
         ]
@@ -990,7 +980,7 @@
         "id": "coach:kim-pan-gon",
         "status": "partial",
         "source_tier": 2,
-        "checked_at": "2026-07-19",
+        "checked_at": "2026-08-01",
         "missing_fields": [
           "record"
         ]
@@ -999,10 +989,8 @@
         "id": "coach:masatada-ishii",
         "status": "partial",
         "source_tier": null,
-        "checked_at": "2026-07-19",
-        "missing_fields": [
-          "record"
-        ]
+        "checked_at": "2026-08-01",
+        "missing_fields": []
       },
       "coach:nuri-sahin": {
         "id": "coach:nuri-sahin",
@@ -1041,12 +1029,10 @@
       },
       "coach:tony-popovic": {
         "id": "coach:tony-popovic",
-        "status": "partial",
+        "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-11",
-        "missing_fields": [
-          "record"
-        ]
+        "checked_at": "2026-08-01",
+        "missing_fields": []
       }
     }
   }

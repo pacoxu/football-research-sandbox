@@ -282,7 +282,9 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 | `stints[].role_scope` | 俱乐部一线队、成年国家队或青年国家队。 |
 | `stints[].competition_scope` | 欧洲非五大顶级联赛、AFC 成年/青年国家队、亚洲顶级联赛或 AFC 俱乐部赛事。 |
 | `stints[].period` | 结构化开始和结束月份；现任时 `end` 为 `null`。 |
-| `stints[].record` | 逐场战绩未核前允许为 `null`，任命事实不因缺战绩而阻塞。 |
+| `record_audit_counts` | 扩展表中 `complete` / `pending` 任期数量；必须与逐段状态加总一致。 |
+| `stints[].record` | 声明赛事内的场、胜、平、负、积分；必须满足场次等式和 `points = 3 * wins + draws`。仅 `record_audit.status: pending` 时允许为 `null`。 |
+| `stints[].record_audit` | 逐段声明 `competitions`、覆盖起止、逐场来源、核查日、复核日和未闭环说明。开放任期复核间隔不得超过90天。 |
 | `stints[].source_links`、`verification` | 官方来源类型、核查日期和事实说明。 |
 
 ## 中国青训教练
