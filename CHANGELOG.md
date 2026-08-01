@@ -4,6 +4,22 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-08-01
+
+### Added
+
+- Added the FIFA World Cup 2030 focus and archive records with the six FIFA-confirmed automatic qualifiers grouped by CAF, UEFA and CONMEBOL.
+- Added field-level hosting roles, qualification dates, source-check dates and a 48-team qualification snapshot that leaves the remaining 42 places and final draw pending.
+
+### Corrected
+
+- Replaced the prior “hosts only, qualification unconfirmed” boundary with FIFA's March 2026 confirmation that Morocco, Portugal, Spain, Argentina, Paraguay and Uruguay all qualify automatically from their confederations' existing allocations.
+- Kept FIFA's June-July 2030 planning window explicitly provisional instead of presenting it as a final match schedule.
+
+### Updated
+
+- Added bilingual tournament-detail rendering for qualified teams grouped by confederation and synchronized the baseline to 459 players, 22 tournament snapshots, 9 projects and 8 countries or regions.
+
 ## 2026-07-31
 
 ### Added

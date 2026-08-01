@@ -876,6 +876,52 @@ function validateTournamentField(tournament) {
   }
 }
 
+function validateWorldCup2030(tournament) {
+  const expectedTeams = new Map([
+    ["Morocco", { confederation: "CAF", hostingRole: "tournament-host" }],
+    ["Portugal", { confederation: "UEFA", hostingRole: "tournament-host" }],
+    ["Spain", { confederation: "UEFA", hostingRole: "tournament-host" }],
+    ["Argentina", { confederation: "CONMEBOL", hostingRole: "centenary-celebration-host" }],
+    ["Paraguay", { confederation: "CONMEBOL", hostingRole: "centenary-celebration-host" }],
+    ["Uruguay", { confederation: "CONMEBOL", hostingRole: "centenary-celebration-host" }]
+  ]);
+  const entries = tournament.participants?.teams ?? [];
+  const snapshot = tournament.qualification_snapshot;
+
+  assert(tournament.status === "upcoming", "FIFA World Cup 2030 must remain upcoming");
+  assert(tournament.date_precision === "provisional", "FIFA World Cup 2030 dates must remain provisional");
+  assert(tournament.date_range?.start === "2030-06-08", "Invalid FIFA World Cup 2030 planning-window start");
+  assert(tournament.date_range?.end === "2030-07-21", "Invalid FIFA World Cup 2030 planning-window end");
+  assert(tournament.participants?.status === "partial", "FIFA World Cup 2030 participant list must remain partial");
+  assert(entries.length === expectedTeams.size, "FIFA World Cup 2030 must retain six automatic qualifiers");
+
+  for (const entry of entries) {
+    const expected = expectedTeams.get(entry.team);
+    assert(expected, `Unexpected FIFA World Cup 2030 qualifier: ${entry.team}`);
+    assert(entry.entry_status === "qualified", `2030 automatic qualifier not marked qualified: ${entry.team}`);
+    assert(entry.confederation === expected.confederation, `Invalid 2030 confederation on ${entry.team}`);
+    assert(entry.hosting_role === expected.hostingRole, `Invalid 2030 hosting role on ${entry.team}`);
+    assert(entry.qualified_at === "2024-12-11", `Invalid 2030 qualification date on ${entry.team}`);
+    assert(isIsoDate(entry.source_checked_at), `Invalid 2030 source_checked_at on ${entry.team}`);
+    assert(/Automatic qualification/.test(entry.qualification_route), `Missing 2030 automatic route on ${entry.team}`);
+  }
+
+  assert(snapshot?.status === "partial", "Missing FIFA World Cup 2030 partial qualification snapshot");
+  assert(isIsoDate(snapshot.source_checked_at), "Invalid FIFA World Cup 2030 snapshot source_checked_at");
+  assert(/^https:\/\/www\.fifa\.com\//.test(snapshot.source_url), "Invalid FIFA World Cup 2030 snapshot source");
+  assert(snapshot.expected_field_size === 48, "FIFA World Cup 2030 field size must remain 48");
+  assert(snapshot.qualified_count === 6, "FIFA World Cup 2030 qualified count must remain six");
+  assert(snapshot.remaining_slots === 42, "FIFA World Cup 2030 remaining slot count must remain 42");
+  const groupedTeams = (snapshot.groups ?? []).flatMap((group) => group.teams);
+  assert(groupedTeams.length === 6, "FIFA World Cup 2030 confederation groups must cover six teams");
+  assert(
+    groupedTeams.every((team) => expectedTeams.has(team)) && new Set(groupedTeams).size === 6,
+    "FIFA World Cup 2030 confederation groups differ from the participant snapshot"
+  );
+  assert(tournament.final_draw?.status === "pending", "FIFA World Cup 2030 draw must remain pending");
+  assert(tournament.final_draw?.groups?.length === 0, "FIFA World Cup 2030 must not invent finals groups");
+}
+
 function validateU20ArchiveCoverage(tournaments) {
   const byId = new Map(tournaments.map((tournament) => [tournament.id, tournament]));
   assert(byId.size === tournaments.length, "Duplicate tournament archive id");
@@ -3053,6 +3099,10 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
     validateTournamentDateRange(tournament, "focus tournament");
     validateTournamentLifecycle(tournament, referenceDate);
+    if (tournament.id === "fifa-world-cup-2030") {
+      validateTournamentField(tournament);
+      validateWorldCup2030(tournament);
+    }
     if (tournament.latest_public_roster_view !== undefined) {
       const rosterView = tournament.latest_public_roster_view;
       assert(isIsoDate(rosterView.checked_at), `Invalid roster-view date: ${tournament.id}`);
@@ -3198,6 +3248,9 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     }
     validateTournamentArchiveVersioning(tournament);
     validateTournamentField(tournament);
+    if (tournament.id === "fifa-world-cup-2030") {
+      validateWorldCup2030(tournament);
+    }
     if (tournament.id === "afc-u20-2025") {
       validateChinaU20PlayerStatistics(tournament, dataset.players);
     }

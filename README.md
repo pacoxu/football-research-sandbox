@@ -5,9 +5,9 @@
 [![data generated](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpacoxu%2Ffootball-research-sandbox%2Fmain%2Fdata%2Fsite%2Foverview.json&query=%24.generated_at&label=data%20generated&color=blue)](data/site/overview.json)
 ![scope](https://img.shields.io/badge/scope-research%20sample-lightgrey)
 
-当前状态：研究样本库，最近维护日期 `2026-07-31`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
+当前状态：研究样本库，最近维护日期 `2026-08-01`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
 
-当前结构化基线：459 名球员、21 项赛事快照、9 个专题项目，覆盖 8 个国家/地区。
+当前结构化基线：459 名球员、22 项赛事快照、9 个专题项目，覆盖 8 个国家/地区。
 
 维护入口：
 
@@ -128,6 +128,7 @@ python3 -m http.server 4173
 - 男足 U20 赛事档案：完整覆盖 1985—2025 的 21 届 FIFA 世青赛周期和 21 届 AFC 亚青赛周期，保留 2021/2020 取消届快照，并收录截至 2026-07-12 已确认的两项 2027 主办信息及亚青赛 44 队资格赛抽签；其他 AFC U23 / U17 / U16 档案继续保留。
 - 上海明日之星冠军杯：新增 2026 男足 U17 完整 8 队与分组，中国 U17 小组赛将对阵阿森纳、毕尔巴鄂竞技和勒沃库森；已补足协第五期 28 人集训名单，并与逐场报名、首发和出场口径分开。
 - 青年欧冠：资格规则已更新到 2026/27，并为刘凯源建立“年龄合格、比利亚雷亚尔已入围、球员报名待确认”的观察边界。
+- 2030 世界杯：已按 FIFA 官方说明录入六支自动晋级球队，区分摩洛哥/葡萄牙/西班牙的赛事主办身份与阿根廷/巴拉圭/乌拉圭的百年庆典承办身份；剩余 42 席和分组保持待定。
 - 五大联赛亚洲教练：主口径收录 Patrick Kisnorbo、Ange Postecoglou 两名 AFC 成员协会教练；广义边界项另列 Özcan Arkoç、Fatih Terim、Avram Grant、Tayfun Korkut、Nuri Şahin 等土耳其 / 以色列样本。
 - 亚洲教练扩展：首批落库 Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting 五名 AFC 成员协会教练，共 10 段官方来源任期。
 - 中超 2026 青年样本：已开始补当前一线队 U21 和具备留洋经历的 U23，中国球员若已在库内建档则直接补中超/留洋字段，不重复建第二条。
