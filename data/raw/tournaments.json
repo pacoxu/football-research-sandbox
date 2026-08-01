@@ -67,6 +67,159 @@
     ]
   },
   {
+    "id": "fifa-world-cup-2030",
+    "name": "FIFA World Cup 2030",
+    "short_name": "World Cup 2030",
+    "focus_level": "primary",
+    "status": "upcoming",
+    "last_checked": "2026-08-01",
+    "date_range": {
+      "start": "2030-06-08",
+      "end": "2030-07-21"
+    },
+    "date_precision": "provisional",
+    "focus_teams": [
+      "Morocco",
+      "Portugal",
+      "Spain",
+      "Argentina",
+      "Paraguay",
+      "Uruguay",
+      "China PR"
+    ],
+    "headline": "FIFA 已明确摩洛哥、葡萄牙、西班牙、阿根廷、巴拉圭和乌拉圭自动晋级 2030 世界杯；其余 42 个席位及决赛圈分组待定。",
+    "notes": [
+      "FIFA 特别代表大会于 2024-12-11 正式任命摩洛哥、葡萄牙和西班牙为 2030 世界杯主办国，并确认阿根廷、巴拉圭和乌拉圭各承办一场百年庆典比赛。",
+      "FIFA 2026-03-19 官方说明进一步明确：六个举办国全部自动晋级，并从各自所属足联的既有席位配额中扣除，不属于额外扩容席位。",
+      "当前决赛圈按 48 队维护，已确认 6 队、剩余 42 席；各洲资格赛规程、抽签和其他晋级球队尚未进入可结构化的官方节点。",
+      "FIFA 当前规划窗口为 2030-06-08/09 在南美举行三场百年庆典首战，2030-06-13/14 在摩洛哥、葡萄牙和西班牙举行正式开幕比赛，决赛计划于 2030-07-21 举行；在最终赛程发布前，日期精度保留为 provisional。",
+      "主办身份、百年庆典承办身份和自动晋级资格分别记录；六队均可计入已获资格球队，但两类 hosting_role 不混写。"
+    ],
+    "host_structure": {
+      "tournament_hosts": [
+        "Morocco",
+        "Portugal",
+        "Spain"
+      ],
+      "centenary_celebration_hosts": [
+        "Argentina",
+        "Paraguay",
+        "Uruguay"
+      ]
+    },
+    "participants": {
+      "status": "partial",
+      "expected_count": 48,
+      "teams": [
+        {
+          "team": "Morocco",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "hosting_role": "tournament-host",
+          "qualification_route": "Automatic qualification as tournament host",
+          "qualified_at": "2024-12-11",
+          "source_checked_at": "2026-08-01"
+        },
+        {
+          "team": "Portugal",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "hosting_role": "tournament-host",
+          "qualification_route": "Automatic qualification as tournament host",
+          "qualified_at": "2024-12-11",
+          "source_checked_at": "2026-08-01"
+        },
+        {
+          "team": "Spain",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "hosting_role": "tournament-host",
+          "qualification_route": "Automatic qualification as tournament host",
+          "qualified_at": "2024-12-11",
+          "source_checked_at": "2026-08-01"
+        },
+        {
+          "team": "Argentina",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "hosting_role": "centenary-celebration-host",
+          "qualification_route": "Automatic qualification as centenary celebration host",
+          "qualified_at": "2024-12-11",
+          "source_checked_at": "2026-08-01"
+        },
+        {
+          "team": "Paraguay",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "hosting_role": "centenary-celebration-host",
+          "qualification_route": "Automatic qualification as centenary celebration host",
+          "qualified_at": "2024-12-11",
+          "source_checked_at": "2026-08-01"
+        },
+        {
+          "team": "Uruguay",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "hosting_role": "centenary-celebration-host",
+          "qualification_route": "Automatic qualification as centenary celebration host",
+          "qualified_at": "2024-12-11",
+          "source_checked_at": "2026-08-01"
+        }
+      ]
+    },
+    "qualification_snapshot": {
+      "status": "partial",
+      "source_checked_at": "2026-08-01",
+      "source_url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-2030-hosts-qualified-bidding-spain-argentina-morocco-uruguay-portugal-paraguay",
+      "expected_field_size": 48,
+      "qualified_count": 6,
+      "remaining_slots": 42,
+      "slot_policy": {
+        "zh": "六支自动晋级球队均占用各自所属足联的既有席位配额，不属于额外扩容名额。",
+        "en": "All six automatic qualifiers count against the existing allocation quota of their respective confederations."
+      },
+      "groups": [
+        {
+          "confederation": "CAF",
+          "teams": [
+            "Morocco"
+          ]
+        },
+        {
+          "confederation": "UEFA",
+          "teams": [
+            "Portugal",
+            "Spain"
+          ]
+        },
+        {
+          "confederation": "CONMEBOL",
+          "teams": [
+            "Argentina",
+            "Paraguay",
+            "Uruguay"
+          ]
+        }
+      ]
+    },
+    "final_draw": {
+      "status": "pending",
+      "groups": []
+    },
+    "sources": [
+      {
+        "label": "FIFA World Cup 2030 hosts, automatic qualifiers and provisional schedule",
+        "publisher": "FIFA",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/articles/world-cup-2030-hosts-qualified-bidding-spain-argentina-morocco-uruguay-portugal-paraguay"
+      },
+      {
+        "label": "Extraordinary FIFA Congress appoints the 2030 hosts",
+        "publisher": "FIFA",
+        "url": "https://inside.fifa.com/organisation/congress/media-releases/extraordinary-congress-appoints-hosts-of-2030-and-2034-editions-of-fifa-world-cup"
+      }
+    ]
+  },
+  {
     "id": "shanghai-future-star-cup-men-u17-2026",
     "name": "2026 Shanghai Future Star Cup Men's U17",
     "short_name": "Shanghai Future Star U17 2026",

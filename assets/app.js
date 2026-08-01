@@ -593,6 +593,8 @@ const UI_COPY = {
     "tournamentDetail.field.finalDraw": "决赛圈分组",
     "tournamentDetail.field.drawPending": "决赛圈尚未抽签",
     "tournamentDetail.field.drawCancelled": "赛事已取消；下列为取消前已公布的分组",
+    "tournamentDetail.field.qualificationSnapshot": "已获资格球队（按足联）",
+    "tournamentDetail.field.qualificationProgress": "已确认 {qualified}/{total} 支 · 剩余 {remaining} 席 · 核查于 {date}",
     "tournamentDetail.field.qualifiers": "资格赛分组",
     "tournamentDetail.field.phase.qualification": "资格阶段",
     "tournamentDetail.field.phase.development": "发展阶段",
@@ -1422,6 +1424,8 @@ const UI_COPY = {
     "tournamentDetail.field.finalDraw": "Finals groups",
     "tournamentDetail.field.drawPending": "The finals draw has not taken place",
     "tournamentDetail.field.drawCancelled": "Tournament cancelled; groups shown were announced before cancellation",
+    "tournamentDetail.field.qualificationSnapshot": "Qualified teams by confederation",
+    "tournamentDetail.field.qualificationProgress": "{qualified}/{total} confirmed · {remaining} places remaining · Checked {date}",
     "tournamentDetail.field.qualifiers": "Qualifying groups",
     "tournamentDetail.field.phase.qualification": "Qualification Phase",
     "tournamentDetail.field.phase.development": "Development Phase",
@@ -2146,6 +2150,7 @@ const CHINA_STATUS_LABELS = {
   qualified: { zh: "已晋级", en: "Qualified" },
   host: { zh: "主办国", en: "Host" },
   preparation: { zh: "备战", en: "Preparation" },
+  "qualification-pending": { zh: "资格赛待定", en: "Qualification pending" },
   "did-not-qualify": { zh: "未晋级", en: "Did not qualify" },
   "did-not-participate": { zh: "未参赛", en: "Did not participate" },
   "qualification-cancelled": { zh: "资格路径取消", en: "Qualification cancelled" }
@@ -6441,8 +6446,33 @@ function renderTournamentField(tournament, elements) {
     finalDraw.innerHTML = `${drawHeading}<div class="empty-inline tournament-field-span">${escapeHtml(t("tournamentDetail.field.drawPending"))}</div>`;
   }
 
+  const qualificationSnapshot = tournament.qualification_snapshot ?? null;
+  const qualificationSnapshotMarkup = qualificationSnapshot
+    ? `
+      <div class="section-head compact-head tournament-field-heading">
+        <h3>${escapeHtml(t("tournamentDetail.field.qualificationSnapshot"))}</h3>
+      </div>
+      <article class="stack-card tournament-field-block">
+        <p>${escapeHtml(t("tournamentDetail.field.qualificationProgress", {
+          qualified: qualificationSnapshot.qualified_count ?? 0,
+          total: qualificationSnapshot.expected_field_size ?? 0,
+          remaining: qualificationSnapshot.remaining_slots ?? 0,
+          date: qualificationSnapshot.source_checked_at
+            ? formatDate(qualificationSnapshot.source_checked_at)
+            : t("common.pending")
+        }))}</p>
+        ${qualificationSnapshot.slot_policy ? `<p class="small-note">${escapeHtml(localizeText(qualificationSnapshot.slot_policy))}</p>` : ""}
+        <div class="tournament-group-grid">
+          ${(qualificationSnapshot.groups ?? [])
+            .map((group) => renderTournamentGroupCard({ name: group.confederation, teams: group.teams }))
+            .join("")}
+        </div>
+      </article>
+    `
+    : "";
+
   const qualifierPhases = tournament.qualifiers ?? [];
-  qualifiers.innerHTML = qualifierPhases.length
+  const qualifierPhasesMarkup = qualifierPhases.length
     ? `
       <div class="section-head compact-head tournament-field-heading">
         <h3>${escapeHtml(t("tournamentDetail.field.qualifiers"))}</h3>
@@ -6467,6 +6497,7 @@ function renderTournamentField(tournament, elements) {
         .join("")}
     `
     : "";
+  qualifiers.innerHTML = `${qualificationSnapshotMarkup}${qualifierPhasesMarkup}`;
 
   section.hidden = false;
 }
