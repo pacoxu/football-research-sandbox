@@ -67,6 +67,304 @@
     ]
   },
   {
+    "id": "shanghai-future-star-cup-men-u17-2026",
+    "name": "2026 Shanghai Future Star Cup Men's U17",
+    "short_name": "Shanghai Future Star U17 2026",
+    "focus_level": "primary",
+    "status": "upcoming",
+    "last_checked": "2026-07-30",
+    "date_range": {
+      "start": "2026-08-03",
+      "end": "2026-08-09"
+    },
+    "focus_teams": [
+      "China PR U17",
+      "Arsenal U17",
+      "Athletic Club U17",
+      "Bayer Leverkusen U17",
+      "Shanghai U17"
+    ],
+    "headline": "中国 U17 将在上海明日之星冠军杯 A 组先后对阵阿森纳、毕尔巴鄂竞技和勒沃库森；首战为 8 月 3 日 19:35 对阿森纳 U17。",
+    "notes": [
+      "男足赛事于 2026-08-03 至 2026-08-09 在上汽浦东足球场和源深体育中心举行，共 8 支 U17 球队参赛。",
+      "A 组为中国 U17、毕尔巴鄂竞技 U17、勒沃库森 U17、阿森纳 U17；B 组为上海 U17、托特纳姆热刺 U17、河床 U17、葡萄牙体育 U17。",
+      "中国 U17 已公布的小组赛赛程为：8 月 3 日 19:35 对阿森纳、8 月 4 日 16:00 对毕尔巴鄂竞技、8 月 6 日 19:35 对勒沃库森；淘汰或排位阶段延续至 8 月 9 日。",
+    "中国足协 7 月 25 日公布第五期集训通知：球队 7 月 27 日至 8 月 10 日在上海集训并参赛，主教练为浮嶋敏，参训运动员 28 人。该名单是集训池，不自动等同于每场比赛报名或首发阵容。",
+    "阿森纳 U17 的参赛席位已由上海赛事主办方确认；截至 7 月 31 日，尚未检索到阿森纳俱乐部发布的本届赛事出征名单，因此不根据往期梯队名单推定来沪球员。",
+      "同一品牌下的首届女足赛事另于 8 月 16 日至 22 日举行，也有阿森纳 U17 女足参赛；本条只统计男足赛事，避免混合两套赛程。"
+    ],
+    "participants": {
+      "status": "complete",
+      "teams": [
+        { "team": "China PR U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Athletic Club U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Bayer Leverkusen U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Arsenal U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Shanghai U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Tottenham Hotspur U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "River Plate U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Sporting CP U17", "entry_status": "participant", "confirmed_at": "2026-06-12" }
+      ]
+    },
+    "final_draw": {
+      "status": "complete",
+      "groups": [
+        {
+          "name": "A",
+          "teams": ["China PR U17", "Athletic Club U17", "Bayer Leverkusen U17", "Arsenal U17"]
+        },
+        {
+          "name": "B",
+          "teams": ["Shanghai U17", "Tottenham Hotspur U17", "River Plate U17", "Sporting CP U17"]
+        }
+      ]
+    },
+    "latest_public_roster_view": {
+      "label": {
+        "zh": "中国 U17 第五期集训名单（28 人）",
+        "en": "China U17 fifth-camp roster (28 players)"
+      },
+      "note": {
+        "zh": "按中国足协 2026-07-25 通知整理。球队于 7 月 27 日至 8 月 10 日在上海集训并参加明日之星冠军杯；这是参训名单，不等同于逐场报名、首发或最终出场名单。单位字段按足协通知原文保留。",
+        "en": "Compiled from the CFA notice dated 2026-07-25. The team camps in Shanghai from 27 July to 10 August and enters the Future Star Cup. This is a training-camp roster, not a matchday, starting-lineup, or appearance list. Affiliations retain the CFA wording."
+      },
+      "checked_at": "2026-07-30",
+      "head_coach": {
+        "name": "Satoshi Ukishima",
+        "local_name": "浮嶋敏"
+      },
+      "groups": [
+        {
+          "label": "山东泰山足球俱乐部",
+          "entries": [
+            {
+              "player_id": "cn-zhang-xuyao-2009",
+              "player": "Zhang Xuyao"
+            },
+            {
+              "player_id": "cn-pan-chaowei-2010",
+              "player": "Pan Chaowei"
+            },
+            {
+              "name": {
+                "zh": "萧晨熙",
+                "en": "Xiao Chenxi"
+              }
+            },
+            {
+              "name": {
+                "zh": "赵冠丞",
+                "en": "Zhao Guancheng"
+              }
+            }
+          ]
+        },
+        {
+          "label": "青岛西海岸足球俱乐部",
+          "entries": [
+            {
+              "player_id": "cn-liu-zhicheng-2009",
+              "player": "Liu Zhicheng"
+            }
+          ]
+        },
+        {
+          "label": "青岛海牛足球俱乐部",
+          "entries": [
+            {
+              "player_id": "cn-kuang-zhaolei-2009",
+              "player": "Kuang Zhaolei"
+            },
+            {
+              "name": {
+                "zh": "江宇涵",
+                "en": "Jiang Yuhan"
+              }
+            }
+          ]
+        },
+        {
+          "label": "梅州客家足球俱乐部",
+          "entries": [
+            {
+              "name": {
+                "zh": "李家润",
+                "en": "Li Jiarun"
+              }
+            }
+          ]
+        },
+        {
+          "label": "武汉三镇足球俱乐部",
+          "entries": [
+            {
+              "player_id": "cn-xu-zhengpeng-2009",
+              "player": "Xu Zhengpeng"
+            },
+            {
+              "player_id": "cn-he-sifan-2009",
+              "player": "He Sifan"
+            }
+          ]
+        },
+        {
+          "label": "重庆铜梁龙足球俱乐部",
+          "entries": [
+            {
+              "name": {
+                "zh": "谭渝锦",
+                "en": "Tan Yujin"
+              }
+            }
+          ]
+        },
+        {
+          "label": "湖北青年星足球俱乐部",
+          "entries": [
+            {
+              "player_id": "cn-bian-weihao-2009",
+              "player": "Bian Weihao"
+            },
+            {
+              "player_id": "cn-jiang-chengen-2010",
+              "player": "Jiang Chengen"
+            },
+            {
+              "name": {
+                "zh": "程晟涵",
+                "en": "Cheng Shenghan"
+              }
+            },
+            {
+              "name": {
+                "zh": "汪奕铭",
+                "en": "Wang Yiming"
+              }
+            }
+          ]
+        },
+        {
+          "label": "广东铭途足球俱乐部",
+          "entries": [
+            {
+              "name": {
+                "zh": "孙臣曦",
+                "en": "Sun Chenxi"
+              }
+            }
+          ]
+        },
+        {
+          "label": "大连可为足球俱乐部",
+          "entries": [
+            {
+              "name": {
+                "zh": "孙颢源",
+                "en": "Sun Haoyuan"
+              }
+            },
+            {
+              "name": {
+                "zh": "陈俊博",
+                "en": "Chen Junbo"
+              }
+            }
+          ]
+        },
+        {
+          "label": "山东鲁能泰山足球学校",
+          "entries": [
+            {
+              "name": {
+                "zh": "张君豪",
+                "en": "Zhang Junhao"
+              }
+            },
+            {
+              "player_id": "cn-kong-xinuo-2009",
+              "player": "Kong Xinuo"
+            }
+          ]
+        },
+        {
+          "label": "恒大足球学校",
+          "entries": [
+            {
+              "player_id": "cn-qin-ziniu-2009",
+              "player": "Qin Ziniu"
+            },
+            {
+              "name": {
+                "zh": "余佳楠",
+                "en": "Yu Jianan"
+              }
+            },
+            {
+              "name": {
+                "zh": "诺尔斯·艾尼瓦尔",
+                "en": "Nuoersi Ainiwaer"
+              }
+            }
+          ]
+        },
+        {
+          "label": "宜兴市周铁久滕足球俱乐部",
+          "entries": [
+            {
+              "player_id": "cn-peng-xianchen-2009",
+              "player": "Peng Xianchen"
+            }
+          ]
+        },
+        {
+          "label": "清华大学附属中学",
+          "entries": [
+            {
+              "player_id": "cn-zhou-yunuo-2009",
+              "player": "Zhou Yunuo"
+            },
+            {
+              "player_id": "cn-nan-zixun-2009",
+              "player": "Nan Zixun"
+            },
+            {
+              "player_id": "cn-zhao-songyuan-2009",
+              "player": "Zhao Songyuan"
+            }
+          ]
+        },
+        {
+          "label": "蔚山现代足球俱乐部",
+          "entries": [
+            {
+              "name": {
+                "zh": "金冠成",
+                "en": "Jin Guancheng"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "sources": [
+      {
+        "label": "Shanghai municipal government tournament announcement and group draw",
+        "publisher": "Shanghai Municipal People's Government / Shanghai Sports Bureau",
+        "url": "https://www.shanghai.gov.cn/nw31406/20260617/f9f5ca21627c43abb45a59a26b87d3eb.html"
+      },
+      {
+        "label": "CFA China U17 fifth-camp notice and 28-player Shanghai roster",
+        "publisher": "CFA",
+        "url": "https://www.thecfa.cn/wqmdu17/20260725/37988.html"
+      },
+      {
+        "label": "China U17 group-stage fixture times reported from the published schedule",
+        "publisher": "Sina Sports",
+        "url": "https://sports.sina.cn/2026-06-21/detail-iniecmta1322318.d.html"
+      }
+    ]
+  },
+  {
     "id": "cfa-yinchuan-u17-2026",
     "name": "2026 CFA Team China Yinchuan International Youth Football Championship",
     "short_name": "Yinchuan U17 2026",

@@ -2,8 +2,8 @@
   "meta": {
     "id": "uefa-youth-league",
     "name": { "zh": "欧洲青年冠军联赛", "en": "UEFA Youth League" },
-    "scope": { "zh": "2010 年前身试验赛、2010/11—2012/13 未创办边界与 2013/14—2022/23 历史赛季完整参赛队，以及最近三个已完成赛季的详细赛制和淘汰赛；中日韩球员按 UEFA 官方国籍尽量完整，其他国家仅精选。", "en": "The 2010 precursor event, the not-yet-established boundary from 2010/11 through 2012/13, complete historical entrants from 2013/14 through 2022/23, plus detailed formats and knockouts for the latest three completed seasons; comprehensive CJK player coverage by UEFA nationality and curated players from elsewhere." },
-    "checked_at": "2026-07-19"
+    "scope": { "zh": "2010 年前身试验赛、2010/11—2012/13 未创办边界与 2013/14—2022/23 历史赛季完整参赛队，以及最近三个已完成赛季的详细赛制和淘汰赛；另设 2026/27 资格与球员观察边界，中日韩球员按 UEFA 官方国籍尽量完整，其他国家仅精选。", "en": "The 2010 precursor event, the not-yet-established boundary from 2010/11 through 2012/13, complete historical entrants from 2013/14 through 2022/23, plus detailed formats and knockouts for the latest three completed seasons; a separate 2026/27 entry and player watch preserves the pre-registration boundary, with comprehensive CJK coverage by UEFA nationality and curated players from elsewhere." },
+    "checked_at": "2026-07-30"
   },
   "qualification": {
     "applies_from": "2024/25",
@@ -12,18 +12,18 @@
         "id": "champions-league-path",
         "title": { "zh": "欧冠路径", "en": "Champions League path" },
         "description": { "zh": "参加 UEFA 欧冠联赛阶段的 36 家俱乐部，其青年队进入青年欧冠联赛阶段，赛程和对手与成年队前六轮对应。前 22 名晋级三十二强。", "en": "The youth teams of the 36 clubs in the UEFA Champions League league phase enter a six-match league phase mirroring the senior fixtures. The top 22 reach the round of 32." },
-        "source_ids": ["rules-2026-entries", "format-2026"]
+        "source_ids": ["rules-2027-entries", "format-2027"]
       },
       {
         "id": "domestic-champions-path",
         "title": { "zh": "国内青年冠军路径", "en": "Domestic champions path" },
         "description": { "zh": "各 UEFA 会员协会的国内青年冠军进入最多三轮主客场淘汰赛，10 支球队晋级三十二强；协会若没有合资格青年赛事，可不产生参赛队。", "en": "Domestic youth champions from UEFA member associations enter up to three two-legged knockout rounds, producing ten round-of-32 qualifiers; associations without an eligible youth competition may have no entrant." },
-        "source_ids": ["rules-2026-entries", "format-2026"]
+        "source_ids": ["rules-2027-entries", "format-2027"]
       }
     ],
     "holder_rule": { "zh": "卫冕冠军若未通过其他方式获得资格，保证进入国内青年冠军路径第二轮。", "en": "The title holders are guaranteed a place in round two of the domestic champions path if they have not otherwise qualified." },
     "duplicate_rule": { "zh": "同时符合两条路径的俱乐部进入欧冠路径；其国内青年冠军名额通常由该协会青年联赛亚军顺延。", "en": "A club qualifying through both routes enters the Champions League path; its domestic berth normally passes to the youth league runners-up from that association." },
-    "source_ids": ["rules-2026-entries", "format-2026"]
+    "source_ids": ["rules-2027-entries", "format-2027"]
   },
   "lineage": {
     "coverage_start_year": 2010,
@@ -774,19 +774,19 @@
     }
   ],
   "player_eligibility": {
-    "season": "2025/26",
-    "birth_year_minimum": 2007,
-    "overage_birth_year_minimum": 2006,
+    "season": "2026/27",
+    "birth_year_minimum": 2008,
+    "overage_birth_year_minimum": 2007,
     "overage_season_list_limit": 5,
     "overage_match_list_limit": 3,
     "season_list_limit": 40,
     "match_list_limit": 20,
     "club_trained_match_list_minimum": 14,
     "rules": [
-      { "id": "age", "title": { "zh": "年龄", "en": "Age" }, "description": { "zh": "2025/26 赛季原则上须出生于 2007 年 1 月 1 日或以后；最多可报名 5 名出生于 2006 年 1 月 1 日或以后且满足俱乐部培养年限的球员，每场 20 人名单中最多使用其中 3 人。", "en": "For 2025/26, players are generally born on or after 1 January 2007. Up to five players born on or after 1 January 2006 may be registered if they satisfy club-training conditions, with no more than three on a 20-player match list." }, "source_ids": ["rules-2026-eligibility", "rules-2026-lists"] },
-      { "id": "lists", "title": { "zh": "报名与比赛名单", "en": "Registration and match lists" }, "description": { "zh": "赛季球员名单最多 40 人且至少包含 4 名门将；每场比赛提交 20 人名单。球员必须注册在参赛俱乐部，且同赛季只能代表一家俱乐部参赛。", "en": "The season list contains up to 40 players and at least four goalkeepers; each match uses a 20-player shortlist. Players must be registered with the entrant and may represent only one club in the competition that season." }, "source_ids": ["rules-2026-lists"] },
-      { "id": "club-trained", "title": { "zh": "本俱乐部培养", "en": "Club-trained requirement" }, "description": { "zh": "每场 20 人名单中至少 14 人须在 15 岁生日后连续为本俱乐部效力两年，或在三年内累计两年（其中最多一年可租借至同协会俱乐部）。", "en": "At least 14 players on each 20-player list must have been registered with the club for two uninterrupted years after turning 15, or for two of three years with at most one year on loan within the same association." }, "source_ids": ["rules-2026-eligibility", "rules-2026-lists"] },
-      { "id": "senior-cap", "title": { "zh": "成年 UEFA 赛事限制", "en": "Senior UEFA appearance cap" }, "description": { "zh": "球员一旦从联赛阶段起在 UEFA 成年俱乐部赛事累计出场 3 场或以上，即不再具备该赛季青年欧冠参赛资格。", "en": "Once a player has appeared in three or more UEFA senior club-competition matches from the league phase onward, they are no longer eligible for that season's Youth League." }, "source_ids": ["rules-2026-eligibility"] }
+      { "id": "age", "title": { "zh": "年龄", "en": "Age" }, "description": { "zh": "2026/27 赛季原则上须出生于 2008 年 1 月 1 日或以后；最多可报名 5 名出生于 2007 年 1 月 1 日或以后且满足俱乐部培养年限的球员，每场 20 人名单中最多使用其中 3 人。", "en": "For 2026/27, players are generally born on or after 1 January 2008. Up to five players born on or after 1 January 2007 may be registered if they satisfy club-training conditions, with no more than three on a 20-player match list." }, "source_ids": ["rules-2027-eligibility", "rules-2027-lists"] },
+      { "id": "lists", "title": { "zh": "报名与比赛名单", "en": "Registration and match lists" }, "description": { "zh": "赛季球员名单最多 40 人且至少包含 4 名门将；每场比赛提交 20 人名单。球员必须注册在参赛俱乐部，且同赛季只能代表一家俱乐部参赛。", "en": "The season list contains up to 40 players and at least four goalkeepers; each match uses a 20-player shortlist. Players must be registered with the entrant and may represent only one club in the competition that season." }, "source_ids": ["rules-2027-lists"] },
+      { "id": "club-trained", "title": { "zh": "本俱乐部培养", "en": "Club-trained requirement" }, "description": { "zh": "每场 20 人名单中至少 14 人须在 15 岁生日后连续为本俱乐部效力两年，或在三年内累计两年（其中最多一年可租借至同协会俱乐部）。", "en": "At least 14 players on each 20-player list must have been registered with the club for two uninterrupted years after turning 15, or for two of three years with at most one year on loan within the same association." }, "source_ids": ["rules-2027-eligibility", "rules-2027-lists"] },
+      { "id": "senior-cap", "title": { "zh": "成年 UEFA 赛事限制", "en": "Senior UEFA appearance cap" }, "description": { "zh": "球员一旦从联赛阶段起在 UEFA 成年俱乐部赛事累计出场 3 场或以上，即不再具备该赛季青年欧冠参赛资格。", "en": "Once a player has appeared in three or more UEFA senior club-competition matches from the league phase onward, they are no longer eligible for that season's Youth League." }, "source_ids": ["rules-2027-eligibility"] }
     ]
   },
   "seasons": [
@@ -858,7 +858,26 @@
     { "id": "uyl-2026-kyunghyun-lee", "season_id": "2025-26", "uefa_player_id": 250212861, "player_id": null, "names": { "zh": "Kyung-Hyun Lee", "en": "Kyung-Hyun Lee", "native": "이경현" }, "country_code": "KOR", "club": "Copenhagen", "status": "appeared", "appearances": 6, "starts": 6, "minutes": 467, "goals": 0, "assists": 0, "source_ids": ["uefa-api-players", "uefa-api-matches", "fck-lee"] },
     { "id": "uyl-2026-seungsoo-park", "season_id": "2025-26", "uefa_player_id": 250213203, "player_id": "kr-park-seungsoo-2007", "names": { "zh": "朴胜洙", "en": "Seung-soo Park", "native": "박승수" }, "country_code": "KOR", "club": "Newcastle United", "status": "appeared", "appearances": 6, "starts": 4, "minutes": 387, "goals": 0, "assists": 0, "source_ids": ["uefa-api-players", "uefa-api-matches", "newcastle-park"] }
   ],
-  "boundary_watch": [],
+  "boundary_watch": [
+    {
+      "id": "uyl-2027-liu-kaiyuan",
+      "season_id": "2026-27",
+      "player_id": "cn-liu-kaiyuan-2010",
+      "names": { "zh": "刘凯源", "en": "Liu Kaiyuan", "native": "刘凯源" },
+      "country_code": "CHN",
+      "club": "Villarreal",
+      "status": "provisional",
+      "label": { "zh": "年龄合格、俱乐部已入围；球员报名待确认", "en": "Age-eligible and club entered; player registration pending" },
+      "summary": { "zh": "刘凯源出生于 2010 年，符合 2026/27 青年欧冠的年龄门槛；UEFA 已建立比利亚雷亚尔 2026/27 赛事页，说明俱乐部进入本届赛事。但截至 2026-07-31，UEFA 与比利亚雷亚尔均未公布包含刘凯源的 40 人赛季名单或单场 20 人名单，因此不能写成已经确定参赛或出场。", "en": "Born in 2010, Liu Kaiyuan clears the 2026/27 Youth League age threshold, and UEFA has a 2026/27 competition page for Villarreal. As of 31 July 2026, however, neither UEFA nor Villarreal has published a 40-player season list or 20-player match shortlist containing Liu, so participation or an appearance is not yet confirmed." },
+      "evidence_points": [
+        { "zh": "2026/27 常规年龄线为 2008 年 1 月 1 日或以后，刘凯源的 2010 年出生年份符合。", "en": "The standard 2026/27 age line is 1 January 2008 or later; Liu's 2010 birth year qualifies." },
+        { "zh": "UEFA 官方俱乐部页将比利亚雷亚尔列入 2026/27 青年欧冠。", "en": "UEFA's official club page lists Villarreal in the 2026/27 Youth League." },
+        { "zh": "FFCV 2026 年 1 月 U16 征召文件把 Kaiyuan Liu 登记在 Villarreal C.F.，可支撑俱乐部关联，但不等于 UEFA 报名。", "en": "A January 2026 FFCV U16 call-up lists Kaiyuan Liu with Villarreal C.F.; this supports the club link but is not a UEFA registration." }
+      ],
+      "next_check": { "zh": "重点复核 2026-09-03 的 40 人名单截止节点，以及每场比赛前一日提交的 20 人名单；只有进入 UEFA 名单后，才从 provisional 升级为 registered-only 或 appeared。", "en": "Recheck the 40-player list deadline on 3 September 2026 and the 20-player shortlist filed before each match. Upgrade from provisional only after Liu appears on an official UEFA list." },
+      "source_ids": ["rules-2027-eligibility", "rules-2027-lists", "villarreal-2027", "ffcv-liu-2026"]
+    }
+  ],
   "other_player_spotlights": [
     { "season_id": "2023-24", "name": "Amin Chiakha", "club": "Copenhagen", "reason": { "zh": "并列赛季最佳射手（7 球）", "en": "Joint season top scorer (7 goals)" }, "source_ids": ["history-2024"] },
     { "season_id": "2023-24", "name": "Rodrigo Mora", "club": "Porto", "reason": { "zh": "并列赛季最佳射手（7 球）", "en": "Joint season top scorer (7 goals)" }, "source_ids": ["history-2024"] },
@@ -900,6 +919,12 @@
     { "id": "rules-2026-eligibility", "label": "UEFA Youth League 2025/26 regulations – Article 28", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-28-Player-eligibility-Online" },
     { "id": "rules-2026-lists", "label": "UEFA Youth League 2025/26 regulations – Article 29", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2025/26/Article-29-Player-lists-Online" },
     { "id": "format-2026", "label": "UEFA 2025/26 calendar and format", "url": "https://www.uefa.com/uefayouthleague/news/0298-1da14baa2d1f-bdd578e9645f-1000--2025-26-uefa-youth-league-calendar-format/" },
+    { "id": "rules-2027-entries", "label": "UEFA Youth League 2026/27 regulations – Article 3", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2026/27/Article-3-Entries-for-the-competition-Online" },
+    { "id": "rules-2027-eligibility", "label": "UEFA Youth League 2026/27 regulations – Article 28", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2026/27/Article-28-Player-eligibility-Online" },
+    { "id": "rules-2027-lists", "label": "UEFA Youth League 2026/27 regulations – Article 29", "url": "https://documents.uefa.com/r/Regulations-of-the-UEFA-Youth-League-2026/27/Article-29-Player-lists-Online" },
+    { "id": "format-2027", "label": "UEFA 2026/27 calendar and format", "url": "https://www.uefa.com/uefayouthleague/news/02a6-20d583385573-6fea9f5cb754-1000--2026-27-uefa-youth-league-calendar-format/" },
+    { "id": "villarreal-2027", "label": "UEFA Villarreal 2026/27 Youth League club page", "url": "https://www.uefa.com/uefayouthleague/clubs/2607408--villarreal/" },
+    { "id": "ffcv-liu-2026", "label": "FFCV U16 call-up listing Kaiyuan Liu with Villarreal C.F.", "url": "https://ffcv.es/wp/wp-content/uploads/2026/01/CONV.-SUB-16-MASC.-VILLARREAL.pdf" },
     { "id": "teams-2024", "label": "UEFA 2023/24 participating teams", "url": "https://www.uefa.com/uefayouthleague/news/0284-18cbe5053ae3-d78dcf30926c-1000--which-teams-are-in-the-2023-24-youth-league/" },
     { "id": "teams-2025", "label": "UEFA 2024/25 participating teams", "url": "https://www.uefa.com/uefayouthleague/news/0290-1b99bc2264a8-6faa93098603-1000--que-equipas-participam-na-youth-league-de-2024-25/" },
     { "id": "teams-2026", "label": "UEFA 2025/26 participating teams", "url": "https://www.uefa.com/uefayouthleague/news/029c-1e8662f4f0cf-086e12e30890-1000--which-teams-are-in-the-2025-26-youth-league/" },

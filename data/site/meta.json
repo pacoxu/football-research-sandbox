@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-07-26",
+  "generated_at": "2026-07-31",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -13,16 +13,16 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 833,
-    "stale_records": 55,
+    "record_count": 834,
+    "stale_records": 58,
     "needs_review_records": 238
   },
   "freshness": {
-    "as_of": "2026-07-26",
-    "audited_records": 1031,
-    "overdue": 55,
+    "as_of": "2026-07-31",
+    "audited_records": 1032,
+    "overdue": 58,
     "by_window": {
-      "30": 55,
+      "30": 58,
       "90": 0,
       "180": 0
     }
@@ -37,10 +37,10 @@
       "record_count": 459,
       "quality": {
         "complete": 57,
-        "mixed": 1,
-        "partial": 138,
+        "mixed": 0,
+        "partial": 136,
         "needs-review": 208,
-        "stale": 55,
+        "stale": 58,
         "excluded": 0
       },
       "source_tiers": {
@@ -54,9 +54,9 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-07-26"
+        "newest": "2026-07-30"
       },
-      "overdue_records": 55,
+      "overdue_records": 58,
       "missing_fields": [
         {
           "field": "names.native_verified",
@@ -74,9 +74,9 @@
         "zh": "当前赛事",
         "en": "Current tournaments"
       },
-      "record_count": 20,
+      "record_count": 21,
       "quality": {
-        "complete": 12,
+        "complete": 13,
         "mixed": 0,
         "partial": 8,
         "needs-review": 0,
@@ -84,7 +84,7 @@
         "excluded": 0
       },
       "source_tiers": {
-        "1": 12,
+        "1": 13,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -94,7 +94,7 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-07-19"
+        "newest": "2026-07-30"
       },
       "overdue_records": 0,
       "missing_fields": []
