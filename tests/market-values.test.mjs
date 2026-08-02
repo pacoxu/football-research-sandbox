@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import fs from "node:fs/promises";
 import test from "node:test";
 import {
   matchesMarketValueSelection,
@@ -163,4 +164,14 @@ test("accepts an Australian profile only with the configured nationality identit
 
   assert.equal(verifyTransfermarktIdentity(player, profile, { Australia: [12] }).accepted, true);
   assert.equal(verifyTransfermarktIdentity(player, profile, { Australia: [34] }).accepted, false);
+});
+
+test("current and peak market value rankings display player positions", async () => {
+  const appSource = await fs.readFile(new URL("../assets/app.js", import.meta.url), "utf8");
+  const rankingStart = appSource.indexOf("function renderPlayerMarketValueRankingPanel");
+  const rankingEnd = appSource.indexOf("function renderHistoricalMarketValueRankingPanel", rankingStart);
+  assert(rankingStart >= 0 && rankingEnd > rankingStart);
+
+  const rankingSource = appSource.slice(rankingStart, rankingEnd);
+  assert.match(rankingSource, /formatPosition\(player\.primary_position\)/);
 });
