@@ -426,7 +426,8 @@ const youthProjectDossierIds = new Set([
   "evergrande-football-school",
   "luneng-football-school",
   "olympic-stars-germany",
-  "500-star-portugal"
+  "500-star-portugal",
+  "qingdao-west-coast-academy"
 ]);
 const allowedDossierRelationships = new Set([
   "development-core", "batch-participant", "short-training", "tournament-only",
@@ -578,9 +579,30 @@ function validateYouthProjectDossier(dossier, playerIds) {
       assert(Array.isArray(edition.sources) && edition.sources.length > 0, `Missing edition sources on ${label}`);
       assert(edition.sources.every((source) => source.title && /^https?:\/\//.test(source.url)), `Invalid edition source on ${label}`);
       assert(edition.organization && /^https?:\/\//.test(edition.organization.source_url), `Invalid organization source on ${label}`);
+      assert(["complete", "partial", "unavailable"].includes(edition.coverage?.status), `Invalid coverage on ${label}`);
+      assert(edition.coverage.note, `Missing coverage note on ${label}`);
+      assert(edition.podium && /^https?:\/\//.test(edition.podium.source_url), `Invalid podium on ${label}`);
+      for (const field of ["champion", "runner_up", "third_place", "fourth_place", "final_score"]) {
+        assert(edition.podium[field] === edition.finals[field], `Podium/finals mismatch for ${field} on ${label}`);
+      }
       for (const award of edition.awards) {
         assert(award.type && award.recipient && ["high", "medium", "low"].includes(award.confidence), `Invalid award on ${label}`);
+        assert(award.award_key, `Missing award key on ${label}`);
         assert(/^https?:\/\//.test(award.source_url), `Invalid award source on ${label}`);
+      }
+      assert(["complete", "partial", "unavailable"].includes(edition.award_coverage?.status), `Invalid award coverage on ${label}`);
+      assert(edition.award_coverage.note, `Missing award coverage note on ${label}`);
+      const scorerTable = edition.scorer_table;
+      assert(scorerTable && ["complete", "partial", "unavailable"].includes(scorerTable.status), `Invalid scorer coverage on ${label}`);
+      assert(isIsoDate(scorerTable.as_of) && scorerTable.scope && scorerTable.coverage_note, `Invalid scorer metadata on ${label}`);
+      assert(Array.isArray(scorerTable.rows), `Missing scorer rows on ${label}`);
+      if (scorerTable.status === "unavailable") assert(scorerTable.rows.length === 0, `Unavailable scorer table has rows on ${label}`);
+      for (const row of scorerTable.rows) {
+        assert(Number.isInteger(row.rank) && row.rank > 0, `Invalid scorer rank on ${label}`);
+        assert(row.player && row.team && typeof row.shared_rank === "boolean", `Invalid scorer identity on ${label}`);
+        assert(row.goals === null || (Number.isInteger(row.goals) && row.goals > 0), `Unknown scorer goals must be null on ${label}`);
+        assert(["verified", "award-only", "conflicted", "provisional"].includes(row.evidence_status), `Invalid scorer evidence on ${label}`);
+        assert(/^https?:\/\//.test(row.source_url), `Invalid scorer source on ${label}`);
       }
       for (const record of [...edition.audience, ...edition.international_participation, ...edition.community_impact]) {
         assert(/^https?:\/\//.test(record.source_url), `Invalid surrounding-information source on ${label}`);
@@ -594,8 +616,8 @@ function validateYouthProjectDossier(dossier, playerIds) {
         );
       }
     }
-    assert(editions.slice(0, 5).every((edition) => edition.status === "completed"), "First five 2034 Cup editions must be completed");
-    assert(editions[5].status === "ongoing" && editions[5].as_of === "2026-07-25", "Sixth 2034 Cup snapshot boundary changed");
+    assert(editions.every((edition) => edition.status === "completed"), "All six 2034 Cup editions must be completed");
+    assert(editions[5].as_of === "2026-08-01", "Sixth 2034 Cup final snapshot boundary changed");
     const profiles = dossier.external_player_profiles ?? [];
     assert(profiles.length === 86, "Expected 86 xiaojiangfc player profiles");
     assert(dossier.people.length === 125, "Expected 125 tracked Donglu dossier people");
@@ -617,6 +639,38 @@ function validateYouthProjectDossier(dossier, playerIds) {
       zhangLintong.conflicts.some((conflict) => conflict.field === "birth_year" && conflict.site_value === "2010"),
       "Missing Zhang Lintong birth-year conflict boundary"
     );
+  }
+  if (dossier.id === "qingdao-west-coast-academy") {
+    const snapshots = dossier.season_snapshots;
+    assert(Array.isArray(snapshots) && snapshots.length === 4, "Expected four Qingdao West Coast season snapshots");
+    assert(snapshots.map((snapshot) => snapshot.season).join(",") === "2023,2024,2025,2026", "Qingdao season snapshots must cover 2023-2026");
+    const nullableStatFields = ["appearances", "starts", "minutes", "goals", "assists", "clean_sheets"];
+    for (const snapshot of snapshots) {
+      const label = `Qingdao West Coast ${snapshot.season}`;
+      assert(isIsoDate(snapshot.as_of) && isIsoDate(snapshot.u21_eligibility_birth_date), `Invalid snapshot dates on ${label}`);
+      assert(/^https?:\/\//.test(snapshot.eligibility_source_url), `Invalid eligibility source on ${label}`);
+      assert(["complete", "partial", "unavailable"].includes(snapshot.u21_team?.coverage), `Invalid U21 coverage on ${label}`);
+      assert(Array.isArray(snapshot.u21_team.player_stats), `Missing U21 player stats on ${label}`);
+      assert(["complete", "partial", "unavailable"].includes(snapshot.first_team_u21_usage?.coverage), `Invalid first-team U21 coverage on ${label}`);
+      assert(Array.isArray(snapshot.first_team_u21_usage.rows), `Missing first-team U21 rows on ${label}`);
+      assert(Array.isArray(snapshot.promotions), `Missing promotion records on ${label}`);
+      for (const row of [...snapshot.u21_team.player_stats, ...snapshot.first_team_u21_usage.rows]) {
+        assert(dossier.people.some((person) => person.id === row.person_id), `Unknown season person on ${label}`);
+        assert(/^https?:\/\//.test(row.source_url), `Invalid season source on ${label}`);
+        for (const field of nullableStatFields) {
+          if (field in row) assert(row[field] === null || (Number.isInteger(row[field]) && row[field] >= 0), `Invalid ${field} on ${label}`);
+        }
+      }
+      const usagePeople = new Set(snapshot.first_team_u21_usage.rows.map((row) => row.person_id));
+      for (const promotion of snapshot.promotions) {
+        assert(dossier.people.some((person) => person.id === promotion.person_id), `Unknown promotion person on ${label}`);
+        assert(isIsoDate(promotion.date) && /^https?:\/\//.test(promotion.source_url), `Invalid promotion on ${label}`);
+        assert(promotion.first_team_appearances === null, `Promotion fabricated as appearance on ${label}`);
+        assert(!usagePeople.has(promotion.person_id), `Promotion mixed into first-team usage on ${label}`);
+      }
+    }
+    assert(snapshots[0].u21_team.record === null, "Unknown 2023 Qingdao U21 record must remain null");
+    assert(snapshots[3].as_of === "2026-07-17", "Qingdao 2026 as_of boundary changed");
   }
 }
 

@@ -6,12 +6,12 @@ import { loadDataset } from "../scripts/lib/data-loader.mjs";
 const targetIds = [
   "donglu-football-boys", "wanda-spain-plan", "genbao-football-base",
   "evergrande-football-school", "luneng-football-school",
-  "olympic-stars-germany", "500-star-portugal"
+  "olympic-stars-germany", "500-star-portugal", "qingdao-west-coast-academy"
 ];
 
 const dossiers = JSON.parse(await fs.readFile(new URL("../data/raw/dossiers.json", import.meta.url), "utf8"));
 
-test("seven youth project dossiers use normalized people and roster memberships", () => {
+test("eight youth project dossiers use normalized people and roster memberships", () => {
   for (const id of targetIds) {
     const dossier = dossiers.find((item) => item.id === id);
     assert.equal(dossier.schema_version, 2, id);
@@ -67,33 +67,71 @@ test("temporary event, partner, adjacent and prediction records are excluded fro
   assert.equal(donglu.event_records.length, 15);
   assert.equal(donglu.program_metrics.length, 0);
   assert.equal(donglu.tournament_editions.length, 6);
-  assert.equal(donglu.tournament_editions.at(-1).status, "ongoing");
+  assert.equal(donglu.tournament_editions.at(-1).status, "completed");
   assert.ok(!donglu.people.some((person) => /Primary School|Dream Team|Chinese Football Boys/.test(person.local_name)));
 });
 
-test("2034 Cup editions preserve results, sources and the sixth-edition snapshot boundary", () => {
+test("2034 Cup editions preserve podiums, award conflicts and partial scorer coverage", () => {
   const donglu = dossiers.find((item) => item.id === "donglu-football-boys");
   const editions = donglu.tournament_editions;
 
   assert.deepEqual(editions.map((item) => item.edition), [1, 2, 3, 4, 5, 6]);
   assert.deepEqual(editions.map((item) => item.finals.teams), [64, 64, 88, 88, 120, 128]);
-  assert.ok(editions.slice(0, 5).every((item) => item.status === "completed"));
-  assert.ok(editions.slice(0, 5).every((item) => item.finals.champion && item.finals.runner_up && item.finals.third_place));
-  assert.ok(editions.every((item) => item.finals.fourth_place || item.status === "ongoing"));
-  assert.equal(editions[3].awards.length, 0);
+  assert.ok(editions.every((item) => item.status === "completed"));
+  assert.ok(editions.every((item) => item.podium.champion && item.podium.runner_up && item.podium.third_place));
+  assert.ok(editions.every((item) => item.podium.fourth_place));
+  assert.ok(editions.every((item) => ["complete", "partial", "unavailable"].includes(item.coverage.status)));
+  assert.ok(editions.every((item) => item.scorer_table && Array.isArray(item.scorer_table.rows)));
+  assert.ok(editions.flatMap((item) => item.scorer_table.rows).every((row) => row.goals === null || row.goals > 0));
+  assert.equal(editions[3].scorer_table.rows[0].evidence_status, "conflicted");
   assert.match(JSON.stringify(editions[0].awards), /邝兆镭/);
   assert.match(JSON.stringify(editions[1].awards), /詹景源/);
   assert.match(JSON.stringify(editions[2].awards), /唐华健/);
+  assert.deepEqual(editions[2].scorer_table.rows.map((row) => row.rank), [1, 1]);
+  assert.ok(editions[2].scorer_table.rows.every((row) => row.shared_rank));
+  assert.match(JSON.stringify(editions[4].awards), /王子瑜/);
   assert.match(JSON.stringify(editions[4].awards), /王杍瑜/);
   assert.match(JSON.stringify(editions[2].international_participation), /台湾球队/);
   assert.match(JSON.stringify(editions[4].community_impact), /城市活动|圆融时代广场/);
   assert.match(JSON.stringify(editions[5].international_participation), /老挝、泰国、乌兹别克斯坦/);
-  assert.equal(editions[5].as_of, "2026-07-25");
-  assert.deepEqual(
-    ["champion", "runner_up", "third_place", "fourth_place", "final_score"].map((field) => editions[5].finals[field]),
-    [null, null, null, null, null]
-  );
+  assert.equal(editions[5].as_of, "2026-08-01");
+  assert.equal(editions[5].podium.champion, "亚洲明星联 ASIA FUTURE STARS");
+  assert.equal(editions[5].podium.runner_up, "杭州足管");
+  assert.equal(editions[5].podium.third_place, "中国足球小将红队");
+  assert.equal(editions[5].podium.fourth_place, "青岛西海岸");
+  assert.equal(editions[5].scorer_table.status, "partial");
+  assert.equal(editions[5].scorer_table.rows[0].evidence_status, "provisional");
   assert.ok(editions.every((item) => item.sources.length > 0));
+});
+
+test("Qingdao West Coast keeps youth-team stats, first-team U21 usage and promotions separate", () => {
+  const dossier = dossiers.find((item) => item.id === "qingdao-west-coast-academy");
+  const snapshots = dossier.season_snapshots;
+
+  assert.deepEqual(snapshots.map((item) => item.season), [2023, 2024, 2025, 2026]);
+  assert.equal(snapshots[0].u21_team.record, null);
+  assert.equal(snapshots[3].as_of, "2026-07-17");
+  assert.ok(snapshots.every((item) => Array.isArray(item.u21_team.player_stats)));
+  assert.ok(snapshots.every((item) => Array.isArray(item.first_team_u21_usage.rows)));
+  assert.ok(snapshots.every((item) => Array.isArray(item.promotions)));
+
+  for (const snapshot of snapshots) {
+    const usagePeople = new Set(snapshot.first_team_u21_usage.rows.map((row) => row.person_id));
+    for (const promotion of snapshot.promotions) {
+      assert.equal(promotion.first_team_appearances, null);
+      assert.ok(!usagePeople.has(promotion.person_id));
+    }
+  }
+
+  const reusedPlayerIds = dossier.people.flatMap((person) => person.player_id ? [person.player_id] : []);
+  assert.deepEqual(reusedPlayerIds.sort(), [
+    "cn-li-hao-2004",
+    "cn-mutalifu-yimingkari-2004",
+    "cn-xu-bin-2004",
+    "cn-yang-alex-2005"
+  ]);
+  assert.equal(snapshots[2].u21_team.player_stats[0].appearances, null);
+  assert.equal(snapshots[2].first_team_u21_usage.rows[0].appearances, 29);
 });
 
 test("dossier UI resolves member refs and project cards expose detail links", async () => {
@@ -103,6 +141,9 @@ test("dossier UI resolves member refs and project cards expose detail links", as
   assert.match(app, /DOSSIER_MEMBER_RELATIONSHIP_LABELS/);
   assert.match(app, /dossier\.tournament_editions/);
   assert.match(app, /dossier-edition-ongoing/);
+  assert.match(app, /item\.scorer_table/);
+  assert.match(app, /renderDossierClubDevelopment/);
+  assert.match(app, /dossier\.season_snapshots/);
   assert.match(app, /dossier\.metrics\.awards/);
   assert.match(app, /dossier\.html\?id=/);
 });
@@ -158,6 +199,7 @@ test("dossier profile directory and detail route expose filters, source boundari
 
   assert.match(dossierPage, /id="dossierExternalProfileFilters"/);
   assert.match(dossierPage, /id="dossierExternalProfiles"/);
+  assert.match(dossierPage, /id="dossierClubDevelopment"/);
   assert.match(profilePage, /data-page="dossier-player-detail"/);
   assert.match(profilePage, /id="dossierPlayerEvidence"/);
   assert.match(app, /renderDossierExternalProfiles/);

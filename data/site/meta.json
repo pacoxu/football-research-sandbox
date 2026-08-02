@@ -13,7 +13,7 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 836,
+    "record_count": 838,
     "stale_records": 58,
     "needs_review_records": 238
   },
@@ -149,11 +149,11 @@
         "zh": "青训项目",
         "en": "Youth programmes"
       },
-      "record_count": 40,
+      "record_count": 41,
       "quality": {
         "complete": 32,
         "mixed": 0,
-        "partial": 8,
+        "partial": 9,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -165,11 +165,11 @@
         "4": 0,
         "5": 0,
         "6": 0,
-        "unclassified": 8
+        "unclassified": 9
       },
       "checked_at": {
         "oldest": "2026-07-20",
-        "newest": "2026-07-25"
+        "newest": "2026-08-02"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -193,11 +193,11 @@
         "zh": "专题档案",
         "en": "Research dossiers"
       },
-      "record_count": 8,
+      "record_count": 9,
       "quality": {
         "complete": 0,
         "mixed": 0,
-        "partial": 8,
+        "partial": 9,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -209,11 +209,11 @@
         "4": 0,
         "5": 0,
         "6": 0,
-        "unclassified": 8
+        "unclassified": 9
       },
       "checked_at": {
         "oldest": "2026-05-23",
-        "newest": "2026-07-25"
+        "newest": "2026-08-02"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -716,7 +716,7 @@
         "id": "research:donglu-football-boys",
         "status": "partial",
         "source_tier": null,
-        "checked_at": "2026-07-25",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "research:genbao-football-base": {
@@ -749,6 +749,13 @@
         "status": "partial",
         "source_tier": null,
         "checked_at": "2026-07-20",
+        "missing_fields": []
+      },
+      "research:qingdao-west-coast-academy": {
+        "id": "research:qingdao-west-coast-academy",
+        "status": "partial",
+        "source_tier": null,
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "research:wanda-spain-plan": {
