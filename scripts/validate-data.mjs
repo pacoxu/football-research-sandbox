@@ -91,7 +91,8 @@ const allowedPlayerRosterStatuses = new Set([
   "withdrawn/unused"
 ]);
 
-const historicalChinaYouthStatTournamentIds = new Set([
+const historicalChinaPlayerStatTournamentIds = new Set([
+  "fifa-world-cup-2002",
   "fifa-u20-world-cup-1983",
   "fifa-u16-world-championship-1985",
   "fifa-u20-world-cup-1985",
@@ -2371,7 +2372,7 @@ function validateRegionalHistory(history, tournamentId) {
   }
 }
 
-function validateHistoricalChinaYouthPlayerStats(tournament) {
+function validateHistoricalChinaPlayerStats(tournament) {
   const label = tournament.id;
   const minuteStatus = tournament.minute_status;
   assert(
@@ -2389,6 +2390,15 @@ function validateHistoricalChinaYouthPlayerStats(tournament) {
   assert(
     typeof minuteStatus.note === "string" && minuteStatus.note.length > 0,
     `Missing historical China youth minute note on ${label}`
+  );
+  assert(
+    typeof minuteStatus.verified_totals === "object" && minuteStatus.verified_totals !== null,
+    `Missing historical China verified totals on ${label}`
+  );
+  assert(
+    Number.isInteger(minuteStatus.verified_totals.matches) &&
+      minuteStatus.verified_totals.matches === (tournament.china_matches?.length ?? 0),
+    `Historical China verified match total does not match China matches on ${label}`
   );
 
   const available = new Set(minuteStatus.available_fields);
@@ -2441,6 +2451,43 @@ function validateHistoricalChinaYouthPlayerStats(tournament) {
         `Appearances exceed China match count on ${label}:${player.player}`
       );
     }
+  }
+
+  for (const field of historicalYouthPlayerStatFields) {
+    if (available.has(field)) {
+      assert(
+        Number.isInteger(minuteStatus.verified_totals[field]) &&
+          minuteStatus.verified_totals[field] >= 0,
+        `Missing historical China verified ${field} total on ${label}`
+      );
+      assert(
+        tournament.china_squad.reduce((sum, player) => sum + player[field], 0) ===
+          minuteStatus.verified_totals[field],
+        `Historical China player ${field} total does not reconcile on ${label}`
+      );
+    } else {
+      assert(
+        !Object.hasOwn(minuteStatus.verified_totals, field),
+        `Unavailable historical China ${field} must not have a verified total on ${label}`
+      );
+    }
+  }
+  if (available.has("starts")) {
+    assert(
+      minuteStatus.verified_totals.starts === minuteStatus.verified_totals.matches * 11,
+      `Historical China starts do not match eleven starters per match on ${label}`
+    );
+  }
+  if (
+    available.has("appearances") &&
+    available.has("starts") &&
+    available.has("substitute_appearances")
+  ) {
+    assert(
+      minuteStatus.verified_totals.appearances ===
+        minuteStatus.verified_totals.starts + minuteStatus.verified_totals.substitute_appearances,
+      `Historical China appearance totals do not reconcile on ${label}`
+    );
   }
 
   assert(
@@ -3283,8 +3330,8 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
     validateTournamentDateRange(tournament);
-    if (historicalChinaYouthStatTournamentIds.has(tournament.id)) {
-      validateHistoricalChinaYouthPlayerStats(tournament);
+    if (historicalChinaPlayerStatTournamentIds.has(tournament.id)) {
+      validateHistoricalChinaPlayerStats(tournament);
     }
     assert(Array.isArray(tournament.source_links), `Invalid source_links on ${tournament.id}`);
     assert(Array.isArray(tournament.china_matches), `Invalid china_matches on ${tournament.id}`);
