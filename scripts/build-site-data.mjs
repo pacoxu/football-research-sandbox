@@ -23,7 +23,7 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData({ outputDirectory = paths.site } = {}) {
   const dataset = await loadDataset();
-  const generatedAt = "2026-08-01";
+  const generatedAt = "2026-08-02";
   const players = [...dataset.players].sort(comparePlayers);
   const bigFiveDebutForecast = buildBigFiveDebutForecast(
     dataset.bigFiveDebutForecast,

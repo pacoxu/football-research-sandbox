@@ -6,9 +6,9 @@
     <title>留洋首发阵容 | 青训球员追踪站</title>
     <meta
       name="description"
-      content="从中国、日本、韩国留洋球员中选择 11 人首发，并按位置规则生成阵型。"
+      content="从中国、日本、韩国、澳大利亚、伊朗与沙特阿拉伯留洋球员中选择首发，并查看现役留洋最佳阵容推荐。"
     />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260725-friend-links" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20260802-lineup-values" />
   </head>
   <body class="lineup-page">
     <div class="site-shell lineup-shell">
@@ -53,6 +53,9 @@
             <button class="is-active" type="button" data-country="China PR">中国</button>
             <button type="button" data-country="Japan">日本</button>
             <button type="button" data-country="Korea Republic">韩国</button>
+            <button type="button" data-country="Australia">澳大利亚</button>
+            <button type="button" data-country="IR Iran">伊朗</button>
+            <button type="button" data-country="Saudi Arabia">沙特</button>
           </div>
           <label class="lineup-search">
             <span class="sr-only">搜索球员</span>
@@ -197,7 +200,7 @@
               <h2 id="editorialLineupsTitle">自评留洋最佳阵容</h2>
             </div>
             <p>
-              中国球员 · 基于本站已建档样本的主观选择。历史阵容看留洋阶段的高度与持续性；现役留洋阵容只选目前仍在海外的球员；现役经历阵容允许已经回流、但仍在踢球的球员入选。
+              中国历史与现役阵容，加上日本、韩国、澳大利亚、伊朗、沙特阿拉伯现役留洋推荐。现役阵容只选核验日仍在本国联赛体系之外注册的球员；人数或位置不足时明确展示缺口，不用国内球员凑数。五套亚洲现役推荐同时列出 Transfermarkt 参考身价与阵容合计，身价不等同于实际转会费。
             </p>
           </div>
           <div id="editorialLineupGrid" class="editorial-lineup-grid"></div>
@@ -218,6 +221,6 @@
     </div>
 
     <div id="lineupToast" class="lineup-toast" role="status" aria-live="polite"></div>
-    <script type="module" src="./assets/lineup.js?v=20260726-debut-forecast"></script>
+    <script type="module" src="./assets/lineup.js?v=20260802-lineup-values"></script>
   </body>
 </html>
