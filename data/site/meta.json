@@ -13,13 +13,13 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 838,
+    "record_count": 839,
     "stale_records": 58,
     "needs_review_records": 238
   },
   "freshness": {
     "as_of": "2026-08-01",
-    "audited_records": 1034,
+    "audited_records": 1035,
     "overdue": 58,
     "by_window": {
       "30": 58,
@@ -36,9 +36,9 @@
       },
       "record_count": 459,
       "quality": {
-        "complete": 57,
+        "complete": 58,
         "mixed": 0,
-        "partial": 136,
+        "partial": 135,
         "needs-review": 208,
         "stale": 58,
         "excluded": 0
@@ -54,13 +54,13 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-07-30"
+        "newest": "2026-08-01"
       },
       "overdue_records": 58,
       "missing_fields": [
         {
           "field": "names.native_verified",
-          "count": 232
+          "count": 231
         },
         {
           "field": "source_layers",
@@ -74,9 +74,9 @@
         "zh": "当前赛事",
         "en": "Current tournaments"
       },
-      "record_count": 22,
+      "record_count": 23,
       "quality": {
-        "complete": 14,
+        "complete": 15,
         "mixed": 0,
         "partial": 8,
         "needs-review": 0,
@@ -84,7 +84,7 @@
         "excluded": 0
       },
       "source_tiers": {
-        "1": 14,
+        "1": 15,
         "2": 0,
         "3": 0,
         "4": 0,
