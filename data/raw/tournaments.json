@@ -923,6 +923,48 @@
     ]
   },
   {
+    "id": "fifa-u20-world-cup-2023",
+    "name": "FIFA U-20 World Cup Argentina 2023",
+    "short_name": "U20 World Cup 2023",
+    "focus_level": "reference",
+    "status": "completed",
+    "last_checked": "2026-08-01",
+    "date_range": {
+      "start": "2023-05-20",
+      "end": "2023-06-11"
+    },
+    "focus_teams": [
+      "Korea Republic",
+      "Uruguay",
+      "Italy",
+      "Israel"
+    ],
+    "headline": "韩国连续第二届进入世青赛四强并获得第四名；金龙鹤在对法国首球推进中送出助攻，并在 2 比 2 战平洪都拉斯时攻入一球。",
+    "notes": [
+      "韩国以 F 组第二晋级，随后淘汰厄瓜多尔和尼日利亚，半决赛负于意大利、三四名决赛负于以色列。",
+      "金龙鹤在 FIFA 最终名单中登记为 7 号中场、所属波尔蒂芒人；FIFA 赛报确认其对洪都拉斯第 58 分钟进球。",
+      "球员逐场出场和分钟尚未完整复核，当前仅录入官方可直接核实的名单、进球和比赛贡献，不以 0 代替未知值。",
+      "完整赛事参赛队、分组和赛果继续由 tournament-archive 同 ID 记录维护。"
+    ],
+    "sources": [
+      {
+        "label": "FIFA U-20 World Cup Argentina 2023",
+        "publisher": "FIFA",
+        "url": "https://www.fifa.com/en/tournaments/mens/u20worldcup/argentina-2023"
+      },
+      {
+        "label": "FIFA U-20 World Cup 2023 squad list",
+        "publisher": "FIFA",
+        "url": "https://fdp.fifa.org/assetspublic/ce89/pdf/SquadLists-English.pdf"
+      },
+      {
+        "label": "FIFA match report: Korea Republic 2-2 Honduras",
+        "publisher": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/media/native/tournaments/u20wc-argentina/report_137442.pdf"
+      }
+    ]
+  },
+  {
     "id": "afc-u17-2023",
     "name": "AFC U17 Asian Cup Thailand 2023",
     "short_name": "AFC U17 2023",

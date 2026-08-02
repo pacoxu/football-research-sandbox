@@ -41692,7 +41692,7 @@
   {
     "id": "kr-kim-yonghak-2003",
     "name": "Kim Yonghak",
-    "local_name": "Kim Yonghak",
+    "local_name": "김용학",
     "country": "Korea Republic",
     "birth_date": "2003-05-20",
     "age_band": "u23",
@@ -41706,6 +41706,30 @@
     },
     "training_pathway": [
       {
+        "stage_label": "早期青训（2023 报道时点）",
+        "organization": "Gwangmyeong Youth Club",
+        "country": "Korea Republic",
+        "note": "懂球帝球员介绍将早期路径写作“光明青年俱乐部”；正式韩文机构名尚未由俱乐部或足协一手页面复核，因此保留英文描述和来源边界。",
+        "organization_type": "community-club",
+        "competition_context_ids": []
+      },
+      {
+        "stage_label": "浦项制铁青训（2023 报道时点）",
+        "organization": "Pohang Steelers Academy",
+        "country": "Korea Republic",
+        "note": "报道列出浦项制铁中学、浦项制铁高中和浦项制铁的连续培养路径，并称其在 2020 年随高中队获得青年 K 联赛、高中联赛和釜山 MBC 全国大赛三项冠军；该段作为媒体档案保留，不外推为当前注册。",
+        "organization_type": "club-academy",
+        "competition_context_ids": []
+      },
+      {
+        "stage_label": "葡萄牙发展阶段（2023 报道时点）",
+        "organization": "Portimonense SC",
+        "country": "Portugal",
+        "note": "高中毕业后以租借方式由浦项体系前往波尔蒂芒人；2023-05-27 的球员介绍称其已由 U23 梯队逐步站稳位置、签下职业合同并在杯赛出场 3 次。具体合同与出场统计仍以俱乐部和赛事档案为准。",
+        "organization_type": "professional-club",
+        "competition_context_ids": []
+      },
+      {
         "stage_label": "2026 报名归属",
         "organization": "Portimonense SC",
         "country": "Portugal",
@@ -41716,11 +41740,50 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
+      "afc-u20-2023",
+      "fifa-u20-world-cup-2023",
       "korea-youth",
+      "korea-u20",
       "professional-system",
-      "u23-overseas"
+      "u23-overseas",
+      "winger"
     ],
     "tournament_participation": [
+      {
+        "competition_id": "afc-u20-2023",
+        "label": "AFC U20 亚洲杯乌兹别克斯坦 2023",
+        "team": "Korea Republic U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 2,
+        "minutes": null,
+        "statistics_status": "partial",
+        "stats_as_of": "2023-03-15",
+        "source_checked_at": "2026-08-01",
+        "statistics_sources": [
+          "https://www.fifa.com/ko/articles/south-korea-u20-oman-u-20-match-review-ko",
+          "https://www.the-afc.com/en/national/afc_u20_asian_cup/news/q-final_extra-time_surge_powers_korea_republic_past_china_pr.html"
+        ],
+        "note": "已由官方赛报确认对阿曼和中国各进 1 球；对中国的第 62 分钟点球帮助韩国扳平并在加时晋级世青赛。尚未完成全场次出场与分钟复核，因此 appearances、minutes 保持 null。"
+      },
+      {
+        "competition_id": "fifa-u20-world-cup-2023",
+        "label": "FIFA U-20 世界杯阿根廷 2023",
+        "team": "Korea Republic U20",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": 1,
+        "minutes": null,
+        "statistics_status": "partial",
+        "stats_as_of": "2023-06-11",
+        "source_checked_at": "2026-08-01",
+        "statistics_sources": [
+          "https://fdp.fifa.org/assetspublic/ce89/pdf/SquadLists-English.pdf",
+          "https://www.fifatrainingcentre.com/media/native/tournaments/u20wc-argentina/report_137442.pdf",
+          "https://www.fifa.com/ko/articles/u20-world-cup-how-honduras-exposed-korea-kim-eunjung-ko"
+        ],
+        "note": "FIFA 名单确认其身披 7 号参赛；官方赛报确认对洪都拉斯第 58 分钟进球，FIFA 复盘同时记载他在对法国一战参与首球助攻。韩国最终获得第四名；尚未完成七场逐场出场与分钟复核，未知值不写成 0。"
+      },
       {
         "competition_id": "afc-u23-2026",
         "label": "AFC U23 2026 韩国队终报名名单",
@@ -41737,6 +41800,31 @@
         "type": "official",
         "label": "Portimonense official profile",
         "url": "https://www.portimonensesad.portimonense.pt/jogador.php?id=1312"
+      },
+      {
+        "type": "official",
+        "label": "FIFA U-20 World Cup 2023 Korea Republic squad announcement",
+        "url": "https://www.fifa.com/ko/articles/u-20-korea-republic-squad-announced-ko"
+      },
+      {
+        "type": "official",
+        "label": "FIFA U-20 World Cup 2023 squad list",
+        "url": "https://fdp.fifa.org/assetspublic/ce89/pdf/SquadLists-English.pdf"
+      },
+      {
+        "type": "match",
+        "label": "FIFA match report: Korea Republic 2-2 Honduras",
+        "url": "https://www.fifatrainingcentre.com/media/native/tournaments/u20wc-argentina/report_137442.pdf"
+      },
+      {
+        "type": "official",
+        "label": "AFC U20 2023 quarter-final: Korea Republic 3-1 China PR",
+        "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup/news/q-final_extra-time_surge_powers_korea_republic_past_china_pr.html"
+      },
+      {
+        "type": "news",
+        "label": "懂球帝：世青赛韩国 U20 球员介绍——金龙鹤",
+        "url": "https://www.dongqiudi.com/articles/3472598.html"
       },
       {
         "type": "official",
@@ -41778,33 +41866,65 @@
           "training_pathway"
         ],
         "claim": "Portimonense official profile supports the Portugal-based overseas club layer for Kim Yonghak."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "KFA Korea Republic U20 World Cup departure report",
+        "url": "https://www.kfa.or.kr/layer_popup/popup_live.php?act=news_tv_detail&div_code=news&idx=25189",
+        "checked_at": "2026-08-01",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.ko",
+          "tournament_participation"
+        ],
+        "claim": "KFA's 2023 U20 World Cup departure report uses the Hangul spelling 김용학 and identifies him as a Portimonense-based member of the final Korea Republic U20 squad."
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "KFA Korea Republic U20 World Cup departure report",
+        "url": "https://www.kfa.or.kr/layer_popup/popup_live.php?act=news_tv_detail&div_code=news&idx=25189",
+        "checked_at": "2026-08-01",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.ko"
+        ],
+        "claim": "KFA's 2023 U20 World Cup departure report uses the Hangul spelling 김용학 and identifies him as a Portimonense-based member of the final Korea Republic U20 squad."
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-23",
-      "notes": "AFC 于 2025-12-30 发布的 final registration 可核其 U23 报名身份；Portimonense 官方 2025/26 一线队球员页仍将其列在队内，因此当前继续按葡萄牙职业体系中的韩国 U23 留洋样本处理。"
+      "last_checked": "2026-08-01",
+      "notes": "AFC 于 2025-12-30 发布的 final registration 可核其 2026 U23 报名身份与 168cm/63kg 赛事登记值；FIFA、AFC 与 KFA 一手材料补齐 2023 U20 亚洲杯和世青赛名单及进球。懂球帝 2023-05-27 文章用于青训路径、位置特点和当时的 170cm/68kg 叙述，不覆盖 2026 AFC 报名字段。"
     },
     "names": {
-      "zh": "Kim Yonghak",
+      "zh": "金龙鹤",
       "en": "Kim Yonghak",
-      "native": "Kim Yonghak",
+      "native": "김용학",
       "ja": "",
-      "ko": ""
+      "ko": "김용학"
     },
     "name_verification": {
-      "status": "unresolved",
-      "language_tag": null,
-      "checked_at": "2026-07-19",
-      "sources": [],
-      "attempts": [
+      "status": "verified",
+      "language_tag": "ko-Kore",
+      "checked_at": "2026-08-01",
+      "sources": [
         {
-          "label": "Korea Football Association national-team news archive",
-          "url": "https://www.kfa.or.kr/",
-          "checked_at": "2026-07-19"
+          "type": "national-fa-profile",
+          "label": "KFA Korea Republic U20 World Cup departure report",
+          "url": "https://www.kfa.or.kr/layer_popup/popup_live.php?act=news_tv_detail&div_code=news&idx=25189",
+          "checked_at": "2026-08-01",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.ko"
+          ],
+          "claim": "KFA's 2023 U20 World Cup departure report uses the Hangul spelling 김용학 and identifies him as a Portimonense-based member of the final Korea Republic U20 squad."
         }
       ],
-      "notes": "No independent official source captured an unambiguous local spelling for this player. The registered Latin name remains in use; no transliteration is inferred."
+      "attempts": [],
+      "notes": "KFA 一手报道明确使用韩文名 김용학；中文译名“金龙鹤”按用户提供的懂球帝专题保留，与韩文本土姓名分层记录。"
     },
     "market_value": {
       "checked_at": "2026-07-12",
