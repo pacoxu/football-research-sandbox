@@ -4135,7 +4135,7 @@
     "china_status": "first-round",
     "china_summary": "中国 U20 首次进入 FIFA World Youth Championship 决赛圈，小组赛 1 胜 2 负，进 5 球失 8 球，排名第 12。",
     "china_detail_scope": "squad-matches-goals-minute-status",
-    "source_checked_at": "2026-07-19",
+    "source_checked_at": "2026-08-01",
     "competition_lineage": [
       {
         "years": "1977-2005",
@@ -4187,16 +4187,23 @@
     "minute_status": {
       "status": "partial",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
+        "goals"
+      ],
+      "missing_fields": [
         "minutes"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "verified_totals": {
+        "matches": 3,
+        "appearances": 38,
+        "starts": 33,
+        "substitute_appearances": 5,
+        "goals": 5
+      },
+      "source_scope": "Only fields directly exposed by the cited FIFA technical report or complete official match records are marked available; no minutes are inferred from lineups or event times.",
+      "note": "The FIFA technical report uses a graphical participation table without numeric player-minute totals. FIFA Data API match records verify appearances, starts and substitute appearances, but minutes remain null rather than being inferred from substitution times."
     },
     "china_squad": [
       {
@@ -4204,20 +4211,20 @@
         "player": "Fu Yubin",
         "position": "Goalkeeper",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
       {
         "squad_number": 2,
-        "player": "Wang Wenzong",
+        "player": "Wang Wenzhong",
         "position": "Defender",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -4226,9 +4233,9 @@
         "player": "Jia Xiuquan",
         "position": "Defender",
         "club": "Bayi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -4237,9 +4244,9 @@
         "player": "Mai Chao",
         "position": "Midfielder",
         "club": "Guangzhou",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 1
       },
@@ -4248,9 +4255,9 @@
         "player": "Hu Yijun",
         "position": "Defender",
         "club": "Hubei",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -4259,9 +4266,9 @@
         "player": "Zhong Yunyue",
         "position": "Midfielder",
         "club": "Bayi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -4270,9 +4277,9 @@
         "player": "Li Huayun",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 1
       },
@@ -4281,9 +4288,9 @@
         "player": "Zhu Ping",
         "position": "Forward",
         "club": "Sichuan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -4292,9 +4299,9 @@
         "player": "Chen Fangping",
         "position": "Midfielder",
         "club": "Bayi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -4303,9 +4310,9 @@
         "player": "Fan Guanghui",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -4314,9 +4321,9 @@
         "player": "Li Yong",
         "position": "Defender",
         "club": "Bayi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -4325,20 +4332,20 @@
         "player": "Guo Yijun",
         "position": "Forward",
         "club": "Guangdong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 1
       },
       {
         "squad_number": 13,
-        "player": "Cheng Jian",
+        "player": "Chen Guozhong",
         "position": "Midfielder",
         "club": "Hunan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -4347,9 +4354,9 @@
         "player": "Wang Jun",
         "position": "Goalkeeper",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -4358,9 +4365,9 @@
         "player": "Liu Haiguang",
         "position": "Forward",
         "club": "Shanghai",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 1
       },
@@ -4369,9 +4376,9 @@
         "player": "Duan Ju",
         "position": "Defender",
         "club": "Tianjin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 1
       },
@@ -4380,9 +4387,9 @@
         "player": "Shan Chunji",
         "position": "Defender",
         "club": "Tianjin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -4391,9 +4398,9 @@
         "player": "Li Zhigao",
         "position": "Goalkeeper",
         "club": "Jiangsu",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       }
@@ -4490,8 +4497,39 @@
       {
         "label": "FIFA archive: Mexico 1983",
         "url": "https://web.archive.org/web/20070609165238/http://www.fifa.com/tournaments/archive/tournament=104/edition=191124/index.html"
+      },
+      {
+        "label": "FIFA U-20 Mexico 1983 technical report",
+        "url": "https://digitalhub.fifa.com/m/33daa1a0d9889bcc/original/fua6wh0lk2vou0cyljuq-pdf.pdf"
       }
-    ]
+    ],
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-20 Mexico 1983 technical report)",
+        "url": "https://digitalhub.fifa.com/m/33daa1a0d9889bcc/original/fua6wh0lk2vou0cyljuq-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (1983)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=191120&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 191120; every China match record was checked on 2026-08-01."
+      }
+    ],
+    "source_conflict_note": "The FIFA technical report uses a graphical participation table without numeric player-minute totals. FIFA Data API match records verify appearances, starts and substitute appearances, but minutes remain null rather than being inferred from substitution times."
   },
   {
     "id": "fifa-u16-world-championship-1985",
@@ -4511,7 +4549,7 @@
     "china_status": "quarter-final",
     "china_summary": "中国 U16 作为东道主参加首届 FIFA U-16 World Championship，小组出线后止步八强，总战绩 2 胜 1 平 1 负，进 8 球失 7 球。",
     "china_detail_scope": "squad-matches-goals-minute-status",
-    "source_checked_at": "2026-07-19",
+    "source_checked_at": "2026-08-01",
     "competition_lineage": [
       {
         "years": "1985-1991",
@@ -4568,16 +4606,22 @@
     "minute_status": {
       "status": "partial",
       "available_fields": [
+        "appearances",
+        "minutes",
         "goals"
       ],
       "missing_fields": [
-        "appearances",
         "starts",
-        "substitute_appearances",
-        "minutes"
+        "substitute_appearances"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "verified_totals": {
+        "matches": 4,
+        "appearances": 50,
+        "minutes": 3520,
+        "goals": 8
+      },
+      "source_scope": "Only fields directly exposed by the cited FIFA technical report or complete official match records are marked available; no minutes are inferred from lineups or event times.",
+      "note": "The technical report directly publishes appearances and minutes. Current FIFA Data API event data conflicts for Liu Bin (No. 14) and Fan Guotao (No. 17), so starts and substitute appearances remain null; corrected dates, scores and scorers are supported by both official layers."
     },
     "china_squad": [
       {
@@ -4585,10 +4629,10 @@
         "player": "Li Xianzhong",
         "position": "Goalkeeper",
         "club": "Liaoning",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 320,
         "goals": 0
       },
       {
@@ -4596,10 +4640,10 @@
         "player": "Feng Zhigang",
         "position": "Defender",
         "club": "Wuhan",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 320,
         "goals": 0
       },
       {
@@ -4607,10 +4651,10 @@
         "player": "Shang Qing",
         "position": "Defender",
         "club": "Bayi",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 320,
         "goals": 0
       },
       {
@@ -4618,10 +4662,10 @@
         "player": "Fan Li",
         "position": "Defender",
         "club": "Shanghai",
-        "appearances": null,
+        "appearances": 1,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 10,
         "goals": 0
       },
       {
@@ -4629,10 +4673,10 @@
         "player": "Bi Sheng",
         "position": "Defender",
         "club": "Beijing",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 320,
         "goals": 0
       },
       {
@@ -4640,10 +4684,10 @@
         "player": "Sun Bowei",
         "position": "Defender",
         "club": "Sichuan",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 320,
         "goals": 1
       },
       {
@@ -4651,10 +4695,10 @@
         "player": "Tu Shengqiao",
         "position": "Midfielder",
         "club": "Wuhan",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 316,
         "goals": 1
       },
       {
@@ -4662,10 +4706,10 @@
         "player": "Xie Yuxin",
         "position": "Midfielder",
         "club": "Guangdong",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 320,
         "goals": 2
       },
       {
@@ -4673,10 +4717,10 @@
         "player": "Cao Xiandong",
         "position": "Midfielder",
         "club": "Beijing",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 285,
         "goals": 1
       },
       {
@@ -4684,10 +4728,10 @@
         "player": "Guo Zhuang",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 305,
         "goals": 3
       },
       {
@@ -4695,10 +4739,10 @@
         "player": "Qing Baoquan",
         "position": "Midfielder",
         "club": "Beijing",
-        "appearances": null,
+        "appearances": 0,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -4706,10 +4750,10 @@
         "player": "Li Xangjie",
         "position": "Midfielder",
         "club": "Jilin",
-        "appearances": null,
+        "appearances": 3,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 17,
         "goals": 0
       },
       {
@@ -4717,10 +4761,10 @@
         "player": "Tang Weihu",
         "position": "Forward",
         "club": "Yunnan",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 310,
         "goals": 0
       },
       {
@@ -4728,10 +4772,10 @@
         "player": "Liu Bin",
         "position": "Forward",
         "club": "Sichuan",
-        "appearances": null,
+        "appearances": 1,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 35,
         "goals": 0
       },
       {
@@ -4739,10 +4783,10 @@
         "player": "Cui Guangri",
         "position": "Forward",
         "club": "Jilin",
-        "appearances": null,
+        "appearances": 4,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 312,
         "goals": 0
       },
       {
@@ -4750,10 +4794,10 @@
         "player": "Yan Yongzhu",
         "position": "Defender",
         "club": "Jilin",
-        "appearances": null,
+        "appearances": 0,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -4761,10 +4805,10 @@
         "player": "Fan Guotao",
         "position": "Forward",
         "club": "Liaoning",
-        "appearances": null,
+        "appearances": 1,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 10,
         "goals": 0
       },
       {
@@ -4772,10 +4816,10 @@
         "player": "Li Zhong",
         "position": "Goalkeeper",
         "club": "Tianjin",
-        "appearances": null,
+        "appearances": 0,
         "starts": null,
         "substitute_appearances": null,
-        "minutes": null,
+        "minutes": 0,
         "goals": 0
       }
     ],
@@ -4784,41 +4828,81 @@
         "date": "1985-07-31",
         "stage": "Group A",
         "opponent": "Bolivia",
-        "score_for": 2,
+        "score_for": 1,
         "score_against": 1,
-        "result": "W",
-        "china_contributions": [],
-        "score_source_status": "score-only"
+        "result": "D",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Xie Yuxin",
+            "minute": "28"
+          }
+        ]
       },
       {
-        "date": "1985-08-03",
+        "date": "1985-08-02",
         "stage": "Group A",
         "opponent": "Guinea",
         "score_for": 2,
         "score_against": 1,
         "result": "W",
-        "china_contributions": [],
-        "score_source_status": "score-only"
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Xie Yuxin",
+            "minute": "18"
+          },
+          {
+            "type": "goal",
+            "player": "Guo Zhuang",
+            "minute": "27"
+          }
+        ]
       },
       {
-        "date": "1985-08-05",
+        "date": "1985-08-04",
         "stage": "Group A",
         "opponent": "United States",
-        "score_for": 4,
-        "score_against": 2,
+        "score_for": 3,
+        "score_against": 1,
         "result": "W",
-        "china_contributions": [],
-        "score_source_status": "score-only"
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Cao Xiandong",
+            "minute": "20"
+          },
+          {
+            "type": "goal",
+            "player": "Guo Zhuang",
+            "minute": "22"
+          },
+          {
+            "type": "goal",
+            "player": "Sun Bowei",
+            "minute": "25"
+          }
+        ]
       },
       {
-        "date": "1985-08-08",
+        "date": "1985-08-07",
         "stage": "Quarter-final",
         "opponent": "West Germany",
-        "score_for": 0,
-        "score_against": 3,
+        "score_for": 2,
+        "score_against": 4,
         "result": "L",
-        "china_contributions": [],
-        "score_source_status": "score-only"
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": "Guo Zhuang",
+            "minute": "14"
+          },
+          {
+            "type": "goal",
+            "player": "Tu Shengqiao",
+            "minute": "39"
+          }
+        ]
       }
     ],
     "china_key_players": [
@@ -4857,8 +4941,39 @@
       {
         "label": "FIFA technical report part 1",
         "url": "https://web.archive.org/web/20111220064504/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/07/93/u16_china_1985_a_part1_254.pdf"
+      },
+      {
+        "label": "FIFA U-16 China PR 1985 technical report",
+        "url": "https://digitalhub.fifa.com/m/519c37c477ccfec0/original/z2v2congibzmo0mhrunr-pdf.pdf"
       }
-    ]
+    ],
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-16 China PR 1985 technical report)",
+        "url": "https://digitalhub.fifa.com/m/519c37c477ccfec0/original/z2v2congibzmo0mhrunr-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (1985)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=191425&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 191425; every China match record was checked on 2026-08-01."
+      }
+    ],
+    "source_conflict_note": "The technical report directly publishes appearances and minutes. Current FIFA Data API event data conflicts for Liu Bin (No. 14) and Fan Guotao (No. 17), so starts and substitute appearances remain null; corrected dates, scores and scorers are supported by both official layers."
   },
   {
     "id": "fifa-u20-world-cup-1985",
@@ -4888,10 +5003,34 @@
           "final_draw",
           "china_status"
         ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-20 USSR 1985 technical report)",
+        "url": "https://digitalhub.fifa.com/m/4d6a6a553f098958/original/xa5kzktuvvrx47oehmcr-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (1985)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=191144&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 191144; every China match record was checked on 2026-08-01."
       }
     ],
-    "source_checked_at": "2026-07-19",
-    "source_conflict_note": "Official FIFA finals history is primary for the finalists and champion; the edition page and historical match dataset supply dates, participants and group allocation. No unresolved conflict is retained.",
+    "source_checked_at": "2026-08-01",
+    "source_conflict_note": "The FIFA technical report publishes numeric player-minute totals and FIFA Data API match records verify starts and substitute appearances. The official totals reconcile; no unresolved statistical conflict remains.",
     "host": "Soviet Union",
     "date_range": {
       "start": "1985-08-24",
@@ -5120,6 +5259,10 @@
       {
         "label": "FIFA: Every U-20 World Cup final",
         "url": "https://www.fifa.com/en/articles/every-u-20-world-cup-final"
+      },
+      {
+        "label": "FIFA U-20 USSR 1985 technical report",
+        "url": "https://digitalhub.fifa.com/m/4d6a6a553f098958/original/xa5kzktuvvrx47oehmcr-pdf.pdf"
       }
     ],
     "historical_name": "FIFA World Youth Championship",
@@ -5164,18 +5307,25 @@
       ]
     },
     "minute_status": {
-      "status": "partial",
+      "status": "complete",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
-        "minutes"
+        "minutes",
+        "goals"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 4,
+        "appearances": 51,
+        "starts": 44,
+        "substitute_appearances": 7,
+        "minutes": 3960,
+        "goals": 5
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
     },
     "china_squad": [
       {
@@ -5183,10 +5333,10 @@
         "player": "Xu Tao",
         "position": "Goalkeeper",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5194,10 +5344,10 @@
         "player": "Dong Yugang",
         "position": "Defender",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 332,
         "goals": 0
       },
       {
@@ -5205,10 +5355,10 @@
         "player": "Zhao Xudong",
         "position": "Forward",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5216,10 +5366,10 @@
         "player": "Yang Feipeng",
         "position": "Defender",
         "club": "Yunnan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
+        "minutes": 28,
         "goals": 0
       },
       {
@@ -5227,10 +5377,10 @@
         "player": "Li Hongbing",
         "position": "Defender",
         "club": "Jiangsu",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
@@ -5238,10 +5388,10 @@
         "player": "Ju Lijin",
         "position": "Defender",
         "club": "Shanghai",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
@@ -5249,10 +5399,10 @@
         "player": "Pang Zhijian",
         "position": "Midfielder",
         "club": "Guangxi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5260,10 +5410,10 @@
         "player": "Gong Lei",
         "position": "Midfielder",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 2
       },
       {
@@ -5271,10 +5421,10 @@
         "player": "Gao Hongbo",
         "position": "Forward",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 2
       },
       {
@@ -5282,10 +5432,10 @@
         "player": "Zhang Yan",
         "position": "Forward",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 2,
+        "substitute_appearances": 2,
+        "minutes": 238,
         "goals": 0
       },
       {
@@ -5293,10 +5443,10 @@
         "player": "You Kewei",
         "position": "Midfielder",
         "club": "Shenyang",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 315,
         "goals": 0
       },
       {
@@ -5304,10 +5454,10 @@
         "player": "Lun Zhiming",
         "position": "Goalkeeper",
         "club": "Guangzhou",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5315,10 +5465,10 @@
         "player": "Li Jiandong",
         "position": "Goalkeeper",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
@@ -5326,10 +5476,10 @@
         "player": "Fu Bo",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 0,
+        "substitute_appearances": 3,
+        "minutes": 89,
         "goals": 0
       },
       {
@@ -5337,10 +5487,10 @@
         "player": "Li Hui",
         "position": "Forward",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 180,
         "goals": 0
       },
       {
@@ -5348,10 +5498,10 @@
         "player": "Yang Weijian",
         "position": "Defender",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
@@ -5359,10 +5509,10 @@
         "player": "Song Lianyong",
         "position": "Forward",
         "club": "Tianjin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 3,
+        "substitute_appearances": 1,
+        "minutes": 302,
         "goals": 1
       },
       {
@@ -5370,10 +5520,10 @@
         "player": "Gao Zhongxun",
         "position": "Midfielder",
         "club": "Jilin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 316,
         "goals": 0
       }
     ]
@@ -5396,7 +5546,7 @@
     "china_status": "group-stage",
     "china_summary": "中国 U16 通过 1988 AFC U-16 Championship 第三名晋级 1989 世少赛，小组赛 1 胜 1 平 1 负，进 1 球失 3 球，未晋级淘汰赛。",
     "china_detail_scope": "squad-matches-goals-minute-status",
-    "source_checked_at": "2026-07-19",
+    "source_checked_at": "2026-08-01",
     "competition_lineage": [
       {
         "years": "1985-1991",
@@ -5435,18 +5585,25 @@
       ]
     },
     "minute_status": {
-      "status": "partial",
+      "status": "complete",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
-        "minutes"
+        "minutes",
+        "goals"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 3,
+        "appearances": 38,
+        "starts": 33,
+        "substitute_appearances": 5,
+        "minutes": 2631,
+        "goals": 1
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
     },
     "china_squad": [
       {
@@ -5454,10 +5611,10 @@
         "player": "Fu Bin",
         "position": "Goalkeeper",
         "club": "Hebei",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5465,10 +5622,10 @@
         "player": "Xie Zhaoyang",
         "position": "Defender",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
+        "minutes": 163,
         "goals": 0
       },
       {
@@ -5476,10 +5633,10 @@
         "player": "Ma Yanfeng",
         "position": "Forward",
         "club": "Henan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
+        "minutes": 31,
         "goals": 0
       },
       {
@@ -5487,10 +5644,10 @@
         "player": "Wang Nong",
         "position": "Midfielder",
         "club": "Dalian",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5498,10 +5655,10 @@
         "player": "Li Qiang",
         "position": "Defender",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5509,10 +5666,10 @@
         "player": "Jiang Feng",
         "position": "Defender",
         "club": "Jilin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5520,10 +5677,10 @@
         "player": "Wang Guodong",
         "position": "Defender",
         "club": "Qingdao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
+        "minutes": 186,
         "goals": 0
       },
       {
@@ -5531,10 +5688,10 @@
         "player": "Wei Qun",
         "position": "Midfielder",
         "club": "Sichuan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5542,10 +5699,10 @@
         "player": "Gao Feng",
         "position": "Forward",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 209,
         "goals": 1
       },
       {
@@ -5553,10 +5710,10 @@
         "player": "Jin Guang",
         "position": "Midfielder",
         "club": "Heilongjiang",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5564,10 +5721,10 @@
         "player": "You Shaodong",
         "position": "Forward",
         "club": "Guangdong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 211,
         "goals": 0
       },
       {
@@ -5575,10 +5732,10 @@
         "player": "Wang Zhigang",
         "position": "Goalkeeper",
         "club": "Shanghai",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5587,10 +5744,10 @@
         "position": "Midfielder",
         "club": "Bayi Football Team",
         "note": "Squad page notes only 17 China players and separately lists Xu Yang as No. 13.",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5598,10 +5755,10 @@
         "player": "Su Maozhen",
         "position": "Forward",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
+        "minutes": 40,
         "goals": 0
       },
       {
@@ -5609,10 +5766,10 @@
         "player": "Wu Chongwen",
         "position": "Defender",
         "club": "Guangdong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
+        "minutes": 151,
         "goals": 0
       },
       {
@@ -5620,10 +5777,10 @@
         "player": "Jin Yongzhu",
         "position": "Midfielder",
         "club": "Jilin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5631,10 +5788,10 @@
         "player": "Liu Zhong",
         "position": "Midfielder",
         "club": "Jiangsu",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5642,10 +5799,10 @@
         "player": "Li Ming",
         "position": "Midfielder",
         "club": "Dalian",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 200,
         "goals": 0
       }
     ],
@@ -5713,8 +5870,39 @@
       {
         "label": "FIFA archive: Scotland 1989",
         "url": "https://web.archive.org/web/20160304203423/http://www.fifa.com/u17worldcup/archive/scotland1989/index.html"
+      },
+      {
+        "label": "FIFA U-16 Scotland 1989 technical report",
+        "url": "https://digitalhub.fifa.com/m/e6cb217a3a3fb17/original/lumwnvlwox47pqh3jyyu-pdf.pdf"
       }
-    ]
+    ],
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-16 Scotland 1989 technical report)",
+        "url": "https://digitalhub.fifa.com/m/e6cb217a3a3fb17/original/lumwnvlwox47pqh3jyyu-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (1989)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=191533&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 191533; every China match record was checked on 2026-08-01."
+      }
+    ],
+    "source_conflict_note": "The FIFA technical report publishes numeric player-minute totals and FIFA Data API match records verify starts and substitute appearances. The official totals reconcile; no unresolved statistical conflict remains."
   },
   {
     "id": "fifa-u17-world-championship-1991",
@@ -5734,7 +5922,7 @@
     "china_status": "group-stage",
     "china_summary": "中国 U17 小组赛 3 战 1 平 2 负，进 4 球失 7 球，未晋级淘汰赛。",
     "china_detail_scope": "squad-matches-goals-minute-status",
-    "source_checked_at": "2026-07-19",
+    "source_checked_at": "2026-08-01",
     "competition_lineage": [
       {
         "years": "1985-1991",
@@ -5781,18 +5969,25 @@
       ]
     },
     "minute_status": {
-      "status": "partial",
+      "status": "complete",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
-        "minutes"
+        "minutes",
+        "goals"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 3,
+        "appearances": 38,
+        "starts": 33,
+        "substitute_appearances": 5,
+        "minutes": 2640,
+        "goals": 4
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
     },
     "china_squad": [
       {
@@ -5800,10 +5995,10 @@
         "player": "Yao Jian",
         "position": "Goalkeeper",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5811,10 +6006,10 @@
         "player": "Chen Gang",
         "position": "Defender",
         "club": "Qingdao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5822,10 +6017,10 @@
         "player": "Zhu Qi",
         "position": "Midfielder",
         "club": "Shanghai",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 224,
         "goals": 0
       },
       {
@@ -5833,10 +6028,10 @@
         "player": "Gao Fei",
         "position": "Midfielder",
         "club": "Tianjin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 2
       },
       {
@@ -5844,10 +6039,10 @@
         "player": "Xiao Jian",
         "position": "Defender",
         "club": "Bayi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5855,10 +6050,10 @@
         "player": "Huang Yi",
         "position": "Defender",
         "club": "Shanghai",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
+        "minutes": 160,
         "goals": 1
       },
       {
@@ -5866,10 +6061,10 @@
         "player": "Qiu Zhihua",
         "position": "Defender",
         "club": "Guangdong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5877,10 +6072,10 @@
         "player": "Hong Maoren",
         "position": "Midfielder",
         "club": "Nanjing Army",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5888,10 +6083,10 @@
         "player": "Zhuang Yi",
         "position": "Forward",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 0,
+        "substitute_appearances": 3,
+        "minutes": 68,
         "goals": 0
       },
       {
@@ -5899,10 +6094,10 @@
         "player": "Liang Yu",
         "position": "Forward",
         "club": "Tianjin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 197,
         "goals": 1
       },
       {
@@ -5910,10 +6105,10 @@
         "player": "Pan Yi",
         "position": "Forward",
         "club": "Bayi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5921,10 +6116,10 @@
         "player": "Deng Lejun",
         "position": "Midfielder",
         "club": "Beijing",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -5932,10 +6127,10 @@
         "player": "Song Aijie",
         "position": "Forward",
         "club": "Bayi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
+        "minutes": 16,
         "goals": 0
       },
       {
@@ -5943,10 +6138,10 @@
         "player": "Zhang Bin",
         "position": "Midfielder",
         "club": "Hubei",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
+        "minutes": 95,
         "goals": 0
       },
       {
@@ -5954,10 +6149,10 @@
         "player": "Wang Hao",
         "position": "Goalkeeper",
         "club": "Qingdao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5965,10 +6160,10 @@
         "player": "Dong Weiguo",
         "position": "Defender",
         "club": "Guangdong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -5976,10 +6171,10 @@
         "player": "Zhang Bo",
         "position": "Midfielder",
         "club": "Hubei",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 200,
         "goals": 0
       },
       {
@@ -5988,10 +6183,10 @@
         "position": "Forward",
         "club": "Shanghai Shenhua",
         "note": "Squad page note says China had 17 listed players and separately names Xie Hui as No. 18.",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       }
     ],
@@ -6083,8 +6278,39 @@
       {
         "label": "FIFA technical report part 1",
         "url": "https://web.archive.org/web/20111220055403/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/07/63/u17_91_tr_part1_247.pdf"
+      },
+      {
+        "label": "FIFA U-17 Italy 1991 technical report",
+        "url": "https://digitalhub.fifa.com/m/102feeea251a4e28/original/g7ggyb09vwcp2sljxnax-pdf.pdf"
       }
-    ]
+    ],
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-17 Italy 1991 technical report)",
+        "url": "https://digitalhub.fifa.com/m/102feeea251a4e28/original/g7ggyb09vwcp2sljxnax-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (1991)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=191544&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 191544; every China match record was checked on 2026-08-01."
+      }
+    ],
+    "source_conflict_note": "The FIFA technical report publishes numeric player-minute totals and FIFA Data API match records verify starts and substitute appearances. The official totals reconcile; no unresolved statistical conflict remains."
   },
   {
     "id": "fifa-u17-world-championship-1993",
@@ -6104,7 +6330,7 @@
     "china_status": "group-stage",
     "china_summary": "中国 U17 参加 1993 FIFA U-17 World Championship，小组赛 3 战 1 平 2 负，进 2 球失 5 球。",
     "china_detail_scope": "squad-matches-goals-minute-status",
-    "source_checked_at": "2026-07-19",
+    "source_checked_at": "2026-08-01",
     "competition_lineage": [
       {
         "years": "1985-1991",
@@ -6147,18 +6373,25 @@
       ]
     },
     "minute_status": {
-      "status": "partial",
+      "status": "complete",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
-        "minutes"
+        "minutes",
+        "goals"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 3,
+        "appearances": 38,
+        "starts": 33,
+        "substitute_appearances": 5,
+        "minutes": 2640,
+        "goals": 2
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
     },
     "china_squad": [
       {
@@ -6166,10 +6399,10 @@
         "player": "Zhang Pengsheng",
         "position": "Goalkeeper",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -6177,10 +6410,10 @@
         "player": "Li Bin",
         "position": "Defender",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -6188,10 +6421,10 @@
         "player": "Yu Yuanwei",
         "position": "Defender",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -6199,10 +6432,10 @@
         "player": "Liu Yibing",
         "position": "Defender",
         "club": "Army",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
+        "minutes": 170,
         "goals": 0
       },
       {
@@ -6210,10 +6443,10 @@
         "player": "Li Ming",
         "position": "Defender",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -6221,10 +6454,10 @@
         "player": "Li Xiaopeng",
         "position": "Midfielder",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -6232,10 +6465,10 @@
         "player": "Yu Genwei",
         "position": "Midfielder",
         "club": "Tianjin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 1
       },
       {
@@ -6243,10 +6476,10 @@
         "player": "Pang Li",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
+        "minutes": 108,
         "goals": 0
       },
       {
@@ -6254,10 +6487,10 @@
         "player": "Pei Jin",
         "position": "Forward",
         "club": "Tianjin",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
+        "minutes": 92,
         "goals": 0
       },
       {
@@ -6265,10 +6498,10 @@
         "player": "Gao Fulin",
         "position": "Forward",
         "club": "Yunnan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
+        "minutes": 67,
         "goals": 0
       },
       {
@@ -6276,10 +6509,10 @@
         "player": "Yao Xia",
         "position": "Forward",
         "club": "Sichuan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 1
       },
       {
@@ -6287,10 +6520,10 @@
         "player": "Lin Jinyu",
         "position": "Forward",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -6298,10 +6531,10 @@
         "player": "Song Yuming",
         "position": "Midfielder",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
+        "minutes": 90,
         "goals": 0
       },
       {
@@ -6309,10 +6542,10 @@
         "player": "Qu Shengqing",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
+        "minutes": 53,
         "goals": 0
       },
       {
@@ -6320,10 +6553,10 @@
         "player": "Xiao Zhanbo",
         "position": "Defender",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240,
         "goals": 0
       },
       {
@@ -6331,10 +6564,10 @@
         "player": "Liu Yue",
         "position": "Forward",
         "club": "Shandong",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
+        "minutes": 70,
         "goals": 0
       },
       {
@@ -6342,10 +6575,10 @@
         "player": "Song Lihui",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
+        "minutes": 70,
         "goals": 0
       },
       {
@@ -6353,10 +6586,10 @@
         "player": "Zhao Dali",
         "position": "Goalkeeper",
         "club": "Army",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       }
     ],
@@ -6442,8 +6675,39 @@
       {
         "label": "FIFA technical report part 1",
         "url": "https://web.archive.org/web/20111220061845/http://www.fifa.com/mm/document/afdeveloping/technicaldevp/50/07/60/u17_93_tr_part1_244.pdf"
+      },
+      {
+        "label": "FIFA U-17 Japan 1993 technical report",
+        "url": "https://digitalhub.fifa.com/m/1fa2e48056df2871/original/stcivzduaawfyidfwr4r-pdf.pdf"
       }
-    ]
+    ],
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-17 Japan 1993 technical report)",
+        "url": "https://digitalhub.fifa.com/m/1fa2e48056df2871/original/stcivzduaawfyidfwr4r-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (1993)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=191563&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 191563; every China match record was checked on 2026-08-01."
+      }
+    ],
+    "source_conflict_note": "The FIFA technical report publishes numeric player-minute totals and FIFA Data API match records verify starts and substitute appearances. The official totals reconcile; no unresolved statistical conflict remains."
   },
   {
     "id": "fifa-u20-world-cup-1997",
@@ -6473,10 +6737,34 @@
           "final_draw",
           "china_status"
         ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-20 Malaysia 1997 technical report)",
+        "url": "https://digitalhub.fifa.com/m/6cc1f39862b31d26/original/vhrobbhcd9i44a2k1mju-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (1997)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=191276&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 191276; every China match record was checked on 2026-08-01."
       }
     ],
-    "source_checked_at": "2026-07-19",
-    "source_conflict_note": "Official FIFA finals history is primary for the finalists and champion; the edition page and historical match dataset supply dates, participants and group allocation. No unresolved conflict is retained.",
+    "source_checked_at": "2026-08-01",
+    "source_conflict_note": "FIFA Data API match records verify appearances, starts and substitute appearances, and the technical report confirms Chang Weiwei as No. 12. No official numeric player-minute table was found, so minutes remain null.",
     "host": "Malaysia",
     "date_range": {
       "start": "1997-06-16",
@@ -6730,6 +7018,10 @@
       {
         "label": "FIFA: Every U-20 World Cup final",
         "url": "https://www.fifa.com/en/articles/every-u-20-world-cup-final"
+      },
+      {
+        "label": "FIFA U-20 Malaysia 1997 technical report",
+        "url": "https://digitalhub.fifa.com/m/6cc1f39862b31d26/original/vhrobbhcd9i44a2k1mju-pdf.pdf"
       }
     ],
     "historical_name": "FIFA World Youth Championship",
@@ -6773,16 +7065,23 @@
     "minute_status": {
       "status": "partial",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
+        "goals"
+      ],
+      "missing_fields": [
         "minutes"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "verified_totals": {
+        "matches": 3,
+        "appearances": 41,
+        "starts": 33,
+        "substitute_appearances": 8,
+        "goals": 2
+      },
+      "source_scope": "Only fields directly exposed by the cited FIFA technical report or complete official match records are marked available; no minutes are inferred from lineups or event times.",
+      "note": "FIFA Data API match records verify appearances, starts and substitute appearances, and the technical report confirms Chang Weiwei as No. 12. No official numeric player-minute table was found, so minutes remain null."
     },
     "china_squad": [
       {
@@ -6790,9 +7089,9 @@
         "player": "Li Leilei",
         "position": "Goalkeeper",
         "club": "Army Club",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6801,9 +7100,9 @@
         "player": "Li Weifeng",
         "position": "Defender",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6812,9 +7111,9 @@
         "player": "Hao Wei",
         "position": "Defender",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6823,9 +7122,9 @@
         "player": "Zheng Yi",
         "position": "Defender",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6834,9 +7133,9 @@
         "player": "Li Tie",
         "position": "Midfielder",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6845,9 +7144,9 @@
         "player": "Tao Wei",
         "position": "Midfielder",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -6856,9 +7155,9 @@
         "player": "Huang Yong",
         "position": "Midfielder",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 1,
+        "substitute_appearances": 2,
         "minutes": null,
         "goals": 0
       },
@@ -6867,9 +7166,9 @@
         "player": "Liu Lin",
         "position": "Forward",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -6878,9 +7177,9 @@
         "player": "Li Jinyu",
         "position": "Forward",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 1
       },
@@ -6889,9 +7188,9 @@
         "player": "Sui Dongliang",
         "position": "Midfielder",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6900,20 +7199,20 @@
         "player": "Zhang Xiaorui",
         "position": "Midfielder",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
       {
         "squad_number": 12,
-        "player": "Yang Pu",
+        "player": "Chang Weiwei",
         "position": "Defender",
         "club": "Guoan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -6922,9 +7221,9 @@
         "player": "Wang Peng",
         "position": "Forward",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 1
       },
@@ -6933,9 +7232,9 @@
         "player": "Yao Li",
         "position": "Forward",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6944,9 +7243,9 @@
         "player": "Zhang Ran",
         "position": "Defender",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       },
@@ -6955,9 +7254,9 @@
         "player": "Zheng Bin",
         "position": "Forward",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
         "minutes": null,
         "goals": 0
       },
@@ -6966,9 +7265,9 @@
         "player": "Sun Zhi",
         "position": "Forward",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
         "minutes": null,
         "goals": 0
       },
@@ -6977,9 +7276,9 @@
         "player": "Li Jian",
         "position": "Goalkeeper",
         "club": "Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
         "minutes": null,
         "goals": 0
       }
@@ -7013,10 +7312,34 @@
           "final_draw",
           "china_status"
         ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-20 Argentina 2001 technical report)",
+        "url": "https://digitalhub.fifa.com/m/40b343b172002a4c/original/bqcqdacu8giqgklapjic-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (2001)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=4295&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 4295; every China match record was checked on 2026-08-01."
       }
     ],
-    "source_checked_at": "2026-07-19",
-    "source_conflict_note": "Official FIFA finals history is primary for the finalists and champion; the edition page and historical match dataset supply dates, participants and group allocation. No unresolved conflict is retained.",
+    "source_checked_at": "2026-08-01",
+    "source_conflict_note": "The current FIFA Data API records expose only ten China starters in each group match and omit Xu Liang (No. 14), while the technical report has no complete numeric player-minute table. Only goals are marked available.",
     "host": "Argentina",
     "date_range": {
       "start": "2001-06-17",
@@ -7279,6 +7602,10 @@
       {
         "label": "FIFA: Every U-20 World Cup final",
         "url": "https://www.fifa.com/en/articles/every-u-20-world-cup-final"
+      },
+      {
+        "label": "FIFA U-20 Argentina 2001 technical report",
+        "url": "https://digitalhub.fifa.com/m/40b343b172002a4c/original/bqcqdacu8giqgklapjic-pdf.pdf"
       }
     ],
     "historical_name": "FIFA World Youth Championship",
@@ -7325,8 +7652,12 @@
         "substitute_appearances",
         "minutes"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "verified_totals": {
+        "matches": 4,
+        "goals": 2
+      },
+      "source_scope": "Only fields directly exposed by the cited FIFA technical report or complete official match records are marked available; no minutes are inferred from lineups or event times.",
+      "note": "The current FIFA Data API records expose only ten China starters in each group match and omit Xu Liang (No. 14), while the technical report has no complete numeric player-minute table. Only goals are marked available."
     },
     "china_squad": [
       {
@@ -7547,7 +7878,7 @@
     "china_status": "group-stage",
     "china_summary": "中国 U17 通过 2002 AFC U-17 Championship 晋级 2003 世少赛，小组赛 3 战 1 平 2 负，进 5 球失 7 球。",
     "china_detail_scope": "matches-goals-coach-qualification-squad-source-link",
-    "source_checked_at": "2026-07-19",
+    "source_checked_at": "2026-08-01",
     "competition_lineage": [
       {
         "years": "1985-1991",
@@ -7590,18 +7921,25 @@
       ]
     },
     "minute_status": {
-      "status": "partial",
+      "status": "complete",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
-        "minutes"
+        "minutes",
+        "goals"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 3,
+        "appearances": 41,
+        "starts": 33,
+        "substitute_appearances": 8,
+        "minutes": 2951,
+        "goals": 5
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
     },
     "china_squad": [
       {
@@ -7610,10 +7948,10 @@
         "position": "Goalkeeper",
         "birth_date": "1986-02-15",
         "club": "Qingdao Manatee",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 270,
         "goals": 0
       },
       {
@@ -7622,10 +7960,10 @@
         "position": "Defender",
         "birth_date": "1986-01-18",
         "club": "Beijing Guoan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
+        "minutes": 103,
         "goals": 0
       },
       {
@@ -7634,10 +7972,10 @@
         "position": "Defender",
         "birth_date": "1986-01-18",
         "club": "Wuhan Yaqi",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 232,
         "goals": 0
       },
       {
@@ -7646,10 +7984,10 @@
         "position": "Defender",
         "birth_date": "1986-07-22",
         "club": "Harbin Lange",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
+        "minutes": 8,
         "goals": 0
       },
       {
@@ -7658,10 +7996,10 @@
         "position": "Defender",
         "birth_date": "1986-01-23",
         "club": "Dalian Shide",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 270,
         "goals": 0
       },
       {
@@ -7670,10 +8008,10 @@
         "position": "Midfielder",
         "birth_date": "1986-10-09",
         "club": "Shenyang Ginde",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 270,
         "goals": 0
       },
       {
@@ -7682,10 +8020,10 @@
         "position": "Midfielder",
         "birth_date": "1986-03-05",
         "club": "Tianjin Teda",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 270,
         "goals": 0
       },
       {
@@ -7695,10 +8033,10 @@
         "birth_date": "1987-03-24",
         "club": "Tianjin Teda",
         "note": "后续成长为成年国家队中场和五大联赛出场样本。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 270,
         "goals": 0
       },
       {
@@ -7708,10 +8046,10 @@
         "birth_date": "1987-01-19",
         "club": "Shandong Luneng Taishan",
         "goals": 2,
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 238
       },
       {
         "squad_number": 10,
@@ -7720,10 +8058,10 @@
         "birth_date": "1986-08-08",
         "club": "Shanghai SVA",
         "note": "后续进入成年国家队和中超主力样本。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
+        "minutes": 36,
         "goals": 0
       },
       {
@@ -7733,10 +8071,10 @@
         "birth_date": "1986-06-24",
         "club": "Tianjin Teda",
         "goals": 3,
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 240
       },
       {
         "squad_number": 12,
@@ -7744,10 +8082,10 @@
         "position": "Forward",
         "birth_date": "1987-07-24",
         "club": "Tianjin Teda",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
+        "minutes": 60,
         "goals": 0
       },
       {
@@ -7756,10 +8094,10 @@
         "position": "Defender",
         "birth_date": "1986-03-07",
         "club": "Shandong Luneng Taishan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -7768,10 +8106,10 @@
         "position": "Defender",
         "birth_date": "1986-04-13",
         "club": "Shanghai Shenhua",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
+        "minutes": 9,
         "goals": 0
       },
       {
@@ -7780,10 +8118,10 @@
         "position": "Defender",
         "birth_date": "1986-04-05",
         "club": "Shanghai Shenhua",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 269,
         "goals": 0
       },
       {
@@ -7792,10 +8130,10 @@
         "position": "Midfielder",
         "birth_date": "1986-01-22",
         "club": "Shanghai Shenhua",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
+        "minutes": 180,
         "goals": 0
       },
       {
@@ -7804,10 +8142,10 @@
         "position": "Forward",
         "birth_date": "1986-01-22",
         "club": "Dalian Shide",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
+        "minutes": 16,
         "goals": 0
       },
       {
@@ -7816,10 +8154,10 @@
         "position": "Forward",
         "birth_date": "1986-09-01",
         "club": "Qingdao Manatee",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
+        "minutes": 210,
         "goals": 0
       },
       {
@@ -7828,10 +8166,10 @@
         "position": "Midfielder",
         "birth_date": "1986-09-12",
         "club": "Shandong Luneng Taishan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -7840,10 +8178,10 @@
         "position": "Goalkeeper",
         "birth_date": "1986-02-14",
         "club": "Shandong Luneng Taishan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       }
     ],
@@ -7941,8 +8279,39 @@
       {
         "label": "China national under-17 football team",
         "url": "https://en.wikipedia.org/wiki/China_national_under-17_football_team"
+      },
+      {
+        "label": "FIFA U-17 Finland 2003 technical report",
+        "url": "https://digitalhub.fifa.com/m/6924a13be6dd7519/original/kdpfmyio4h5nqsy0vh1h-pdf.pdf"
       }
-    ]
+    ],
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-17 Finland 2003 technical report)",
+        "url": "https://digitalhub.fifa.com/m/6924a13be6dd7519/original/kdpfmyio4h5nqsy0vh1h-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (2003)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=6946&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 6946; every China match record was checked on 2026-08-01."
+      }
+    ],
+    "source_conflict_note": "The FIFA technical report publishes numeric player-minute totals and FIFA Data API match records verify starts and substitute appearances. The official totals reconcile; no unresolved statistical conflict remains."
   },
   {
     "id": "fifa-u17-world-cup-2005",
@@ -7972,248 +8341,255 @@
     },
     "china_detail_scope": "squad",
     "minute_status": {
-      "status": "partial",
+      "status": "complete",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
-        "minutes"
+        "minutes",
+        "goals"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 4,
+        "appearances": 56,
+        "starts": 44,
+        "substitute_appearances": 12,
+        "minutes": 3949,
+        "goals": 4
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
     },
     "china_squad": [
       {
         "squad_number": 1,
         "player": "Wang Dalei",
         "position": "Goalkeeper",
-        "club": "Dalian Tielu",
+        "club": "Dalian Shide",
         "note": "后续成为成年国家队长期门将。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 269,
         "goals": 0
       },
       {
         "squad_number": 2,
         "player": "Cui Nanri",
         "position": "Defender",
-        "club": "Yanbian",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "club": "Jilin Aodong",
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
+        "minutes": 80,
         "goals": 0
       },
       {
         "squad_number": 3,
-        "player": "Gu Cao",
-        "position": "Defender",
-        "club": "Shanghai Shenhua",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
-        "goals": 0
-      },
-      {
-        "squad_number": 4,
         "player": "Tang Naixin",
         "position": "Defender",
-        "club": "Wuhan Huanghelou",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "club": "Liaoning",
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 1
       },
       {
-        "squad_number": 5,
-        "player": "Yang Jian",
+        "squad_number": 4,
+        "player": "Li Linfeng",
         "position": "Defender",
-        "club": "Shenzhen Jianlibao",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "club": "Shandong Luneng",
+        "appearances": 3,
+        "starts": 1,
+        "substitute_appearances": 2,
+        "minutes": 109,
+        "goals": 0
+      },
+      {
+        "squad_number": 5,
+        "player": "Gu Cao",
+        "position": "Defender",
+        "club": "Shanghai Shenhua",
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
+        "minutes": 170,
         "goals": 0
       },
       {
         "squad_number": 6,
-        "player": "Zhu Yifan",
+        "player": "Cai Yaohui",
         "position": "Midfielder",
-        "club": "Beijing Hyundai",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "club": "Guangdong",
+        "appearances": 3,
+        "starts": 0,
+        "substitute_appearances": 3,
+        "minutes": 38,
         "goals": 0
       },
       {
         "squad_number": 7,
         "player": "Yu Dabao",
-        "position": "Forward",
-        "club": "Qingdao Hailifeng",
+        "position": "Midfielder",
+        "club": "Shandong Luneng",
         "note": "后续成长为成年国脚前锋。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
+        "minutes": 75,
         "goals": 0
       },
       {
         "squad_number": 8,
-        "player": "Wang Xuanhong",
+        "player": "Yang Jian",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
-        "goals": 1
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
+        "minutes": 123,
+        "goals": 0
       },
       {
         "squad_number": 9,
-        "player": "Deng Zhuoxiang",
-        "position": "Midfielder",
-        "club": "Wuhan Huanghelou",
-        "note": "这届世少赛后继续成长为成年国脚与中前场组织者。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "player": "Gu Jinjin",
+        "position": "Forward",
+        "club": "Tianjin Teda",
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 303,
         "goals": 1
       },
       {
         "squad_number": 10,
-        "player": "Yang Xu",
-        "position": "Forward",
-        "club": "Liaoning",
-        "note": "后续成为中国成年队与中超长线中锋样本。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
-        "goals": 1
+        "player": "Zhu Yifan",
+        "position": "Midfielder",
+        "club": "Beijing Hyundai",
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 226,
+        "goals": 0
       },
       {
         "squad_number": 11,
-        "player": "Huang Jie",
-        "position": "Forward",
-        "club": "Shanghai Shenhua",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "player": "Zhang Xu",
+        "position": "Goalkeeper",
+        "club": "Shandong Luneng",
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
         "squad_number": 12,
-        "player": "Wang Weilong",
-        "position": "Defender",
-        "club": "Shandong Luneng Taishan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "player": "Wang Gang",
+        "position": "Forward",
+        "club": "Tianjin Teda",
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
+        "minutes": 32,
         "goals": 0
       },
       {
         "squad_number": 13,
-        "player": "Gu Jinjin",
-        "position": "Goalkeeper",
-        "club": "Tianjin Teda",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "player": "Li Zhuangfei",
+        "position": "Midfielder",
+        "club": "Shandong Luneng",
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 346,
         "goals": 0
       },
       {
         "squad_number": 14,
-        "player": "Wang Gang",
-        "position": "Defender",
-        "club": "Tianjin Teda",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "player": "Du Longquan",
+        "position": "Midfielder",
+        "club": "Liaoning",
+        "appearances": 3,
+        "starts": 2,
+        "substitute_appearances": 1,
+        "minutes": 163,
         "goals": 0
       },
       {
         "squad_number": 15,
-        "player": "Du Longquan",
+        "player": "Wang Xuanhong",
         "position": "Midfielder",
         "club": "Liaoning",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
-        "goals": 0
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
+        "minutes": 135,
+        "goals": 1
       },
       {
         "squad_number": 16,
-        "player": "Li Zhuangfei",
+        "player": "Deng Zhuoxiang",
         "position": "Defender",
-        "club": "Shandong Luneng Taishan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
-        "goals": 0
+        "club": "Wuhan Huanghelou",
+        "note": "这届世少赛后继续成长为成年国脚与中前场组织者。",
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
+        "goals": 1
       },
       {
         "squad_number": 17,
-        "player": "Zhang Xu",
+        "player": "Chi Wenyi",
         "position": "Goalkeeper",
-        "club": "Shandong Luneng Taishan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "club": "Jilin Aodong",
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
+        "minutes": 90,
         "goals": 0
       },
       {
         "squad_number": 18,
-        "player": "Cai Yaohui",
-        "position": "Defender",
-        "club": "Guangzhou Huanda",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "player": "Yang Xu",
+        "position": "Forward",
+        "club": "Liaoning",
+        "note": "后续成为中国成年队与中超长线中锋样本。",
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
         "squad_number": 19,
-        "player": "Chi Wenyi",
+        "player": "Huang Jie",
         "position": "Midfielder",
-        "club": "Shenyang Jinde",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "club": "Shanghai Shenhua",
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 350,
         "goals": 0
       },
       {
         "squad_number": 20,
-        "player": "Feng Shaoshun",
-        "position": "Forward",
-        "club": "Dalian Shide",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "player": "Wang Weilong",
+        "position": "Defender",
+        "club": "Shandong Luneng",
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       }
     ],
     "china_matches": [
       {
-        "date": "2005-09-17",
+        "date": "2005-09-16",
         "stage": "Group A",
         "opponent": "Costa Rica",
         "score_for": 1,
@@ -8228,7 +8604,7 @@
         ]
       },
       {
-        "date": "2005-09-20",
+        "date": "2005-09-19",
         "stage": "Group A",
         "opponent": "Peru",
         "score_for": 1,
@@ -8243,7 +8619,7 @@
         ]
       },
       {
-        "date": "2005-09-23",
+        "date": "2005-09-22",
         "stage": "Group A",
         "opponent": "Ghana",
         "score_for": 1,
@@ -8258,7 +8634,7 @@
         ]
       },
       {
-        "date": "2005-09-26",
+        "date": "2005-09-25",
         "stage": "Quarter-final",
         "opponent": "Turkey",
         "score_for": 1,
@@ -8267,7 +8643,7 @@
         "china_contributions": [
           {
             "type": "goal",
-            "player": "Yang Xu",
+            "player": "Gu Jinjin",
             "minute": "57"
           }
         ]
@@ -8293,7 +8669,7 @@
         "role_note": "末轮对加纳扳平，帮助球队以不败战绩晋级八强。"
       },
       {
-        "player": "Yang Xu",
+        "player": "Gu Jinjin",
         "goals": 1,
         "assists": 0,
         "role_note": "1/4 决赛对土耳其打入中国队当场唯一进球。"
@@ -8317,9 +8693,13 @@
       {
         "label": "Every U-17 World Cup winner",
         "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/articles/every-u17-world-cup-winner"
+      },
+      {
+        "label": "FIFA U-17 Peru 2005 technical report",
+        "url": "https://digitalhub.fifa.com/m/17a6689ef404335c/original/vrhp8t5jhp0ddzgxtumr-pdf.pdf"
       }
     ],
-    "source_checked_at": "2026-07-19",
+    "source_checked_at": "2026-08-01",
     "china_goal_summary": {
       "goals_for": 4,
       "goals_against": 7,
@@ -8337,11 +8717,38 @@
           "goals": 1
         },
         {
-          "player": "Yang Xu",
+          "player": "Gu Jinjin",
           "goals": 1
         }
       ]
-    }
+    },
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-17 Peru 2005 technical report)",
+        "url": "https://digitalhub.fifa.com/m/17a6689ef404335c/original/vrhp8t5jhp0ddzgxtumr-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (2005)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=9095&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 9095; every China match record was checked on 2026-08-01."
+      }
+    ],
+    "source_conflict_note": "The FIFA technical report publishes the official 20-player numbering and numeric totals; FIFA Data API match records verify starts and substitute appearances. The prior shifted squad numbering and the quarter-final scorer were corrected from these official layers."
   },
   {
     "id": "fifa-u20-world-cup-2005",
@@ -8371,10 +8778,34 @@
           "final_draw",
           "china_status"
         ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA U-20 Netherlands 2005 technical report)",
+        "url": "https://digitalhub.fifa.com/m/60289f3d0881d061/original/u6osakqqyi5v48ab5go4-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (2005)",
+        "url": "https://api.fifa.com/api/v3/calendar/matches?idSeason=9102&language=en&count=100",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "FIFA Data API season 9102; every China match record was checked on 2026-08-01."
       }
     ],
-    "source_checked_at": "2026-07-19",
-    "source_conflict_note": "Official FIFA finals history is primary for the finalists and champion; the edition page and historical match dataset supply dates, participants and group allocation. No unresolved conflict is retained.",
+    "source_checked_at": "2026-08-01",
+    "source_conflict_note": "The FIFA technical report publishes numeric player-minute totals and FIFA Data API match records verify starts and substitute appearances. The official totals reconcile; no unresolved statistical conflict remains.",
     "host": "Netherlands",
     "date_range": {
       "start": "2005-06-10",
@@ -8690,6 +9121,10 @@
       {
         "label": "Every FIFA U-20 World Cup final",
         "url": "https://www.fifa.com/en/articles/every-u-20-world-cup-final"
+      },
+      {
+        "label": "FIFA U-20 Netherlands 2005 technical report",
+        "url": "https://digitalhub.fifa.com/m/60289f3d0881d061/original/u6osakqqyi5v48ab5go4-pdf.pdf"
       }
     ],
     "coach": {
@@ -8704,18 +9139,25 @@
       "final_stage": "AFC Youth Championship runners-up"
     },
     "minute_status": {
-      "status": "partial",
+      "status": "complete",
       "available_fields": [
-        "goals"
-      ],
-      "missing_fields": [
         "appearances",
         "starts",
         "substitute_appearances",
-        "minutes"
+        "minutes",
+        "goals"
       ],
-      "source_scope": "Squads, match results and goals are cross-checked against the listed FIFA archive or technical-report references where available; public copies do not expose a stable complete player-minute table for extraction.",
-      "note": "逐人统计字段已显式落库；进球来自已核对的逐场进球记录。公开可访问档案尚不足以完整确认出场、首发、替补和分钟，因此这些字段保留 null，不按比赛时长或阵容推算。"
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 4,
+        "appearances": 56,
+        "starts": 44,
+        "substitute_appearances": 12,
+        "minutes": 3939,
+        "goals": 11
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
     },
     "china_squad": [
       {
@@ -8723,10 +9165,10 @@
         "player": "Zhang Lei",
         "position": "Goalkeeper",
         "club": "Dongguan Nancheng",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -8734,10 +9176,10 @@
         "player": "Zhao Ming",
         "position": "Defender",
         "club": "Jilin Yanbian",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
@@ -8745,10 +9187,10 @@
         "player": "Liu Yu",
         "position": "Defender",
         "club": "Sichuan Guancheng",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 0,
+        "substitute_appearances": 1,
+        "minutes": 45,
         "goals": 0
       },
       {
@@ -8756,10 +9198,10 @@
         "player": "Zheng Tao",
         "position": "Defender",
         "club": "Shaanxi Guoli",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 225,
         "goals": 0
       },
       {
@@ -8768,10 +9210,10 @@
         "position": "Defender",
         "club": "Dalian Shide",
         "note": "后续成长为成年国家队长期主力中卫。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
@@ -8779,10 +9221,10 @@
         "player": "Wang Hongliang",
         "position": "Midfielder",
         "club": "Shanghai Shenhua",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 1,
+        "substitute_appearances": 1,
+        "minutes": 93,
         "goals": 0
       },
       {
@@ -8791,10 +9233,10 @@
         "position": "Midfielder",
         "club": "Dalian Shide",
         "note": "对土耳其一战有进球，后续进入成年国家队中场轮换。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 1,
+        "substitute_appearances": 3,
+        "minutes": 161,
         "goals": 1
       },
       {
@@ -8802,10 +9244,10 @@
         "player": "Zhou Haibin",
         "position": "Midfielder",
         "club": "Shandong Luneng",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 269,
         "goals": 1
       },
       {
@@ -8814,10 +9256,10 @@
         "position": "Forward",
         "club": "Manchester United",
         "note": "这届名单里最醒目的留洋标签之一。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 0,
+        "substitute_appearances": 3,
+        "minutes": 37,
         "goals": 0
       },
       {
@@ -8826,10 +9268,10 @@
         "position": "Midfielder",
         "club": "Shenyang Jinde",
         "note": "球队绝对核心，淘汰赛对德国梅开二度。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 353,
         "goals": 3
       },
       {
@@ -8837,10 +9279,10 @@
         "player": "Zhu Ting",
         "position": "Forward",
         "club": "Dalian Shide",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 2,
+        "substitute_appearances": 0,
+        "minutes": 156,
         "goals": 1
       },
       {
@@ -8848,10 +9290,10 @@
         "player": "Yu Ziqian",
         "position": "Goalkeeper",
         "club": "Dalian Shide",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -8859,10 +9301,10 @@
         "player": "Lu Lin",
         "position": "Midfielder",
         "club": "Guangzhou Rizhiquan",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 3,
+        "substitute_appearances": 1,
+        "minutes": 271,
         "goals": 1
       },
       {
@@ -8870,10 +9312,10 @@
         "player": "Mao Biao",
         "position": "Forward",
         "club": "Tianjin Teda",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 0,
+        "starts": 0,
+        "substitute_appearances": 0,
+        "minutes": 0,
         "goals": 0
       },
       {
@@ -8881,10 +9323,10 @@
         "player": "Yuan Weiwei",
         "position": "Defender",
         "club": "Shandong Luneng",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 1,
+        "starts": 1,
+        "substitute_appearances": 0,
+        "minutes": 90,
         "goals": 0
       },
       {
@@ -8892,10 +9334,10 @@
         "player": "Yang Cheng",
         "position": "Goalkeeper",
         "club": "Shandong Luneng",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 0
       },
       {
@@ -8903,10 +9345,10 @@
         "player": "Tan Wangsong",
         "position": "Defender",
         "club": "Sichuan Guancheng",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 360,
         "goals": 1
       },
       {
@@ -8915,10 +9357,10 @@
         "position": "Forward",
         "club": "Shanghai Shenhua",
         "note": "后续在成年国家队与俱乐部层面都长期兑现。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 4,
+        "substitute_appearances": 0,
+        "minutes": 317,
         "goals": 1
       },
       {
@@ -8926,10 +9368,10 @@
         "player": "Zou You",
         "position": "Forward",
         "club": "Dalian Shide",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 2,
+        "starts": 0,
+        "substitute_appearances": 2,
+        "minutes": 8,
         "goals": 0
       },
       {
@@ -8937,10 +9379,10 @@
         "player": "Cui Peng",
         "position": "Midfielder",
         "club": "Shandong Luneng",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 3,
+        "starts": 3,
+        "substitute_appearances": 0,
+        "minutes": 266,
         "goals": 1
       },
       {
@@ -8949,10 +9391,10 @@
         "position": "Midfielder",
         "club": "Tianjin Teda",
         "note": "后续进入沙尔克与成年国家队主力线。",
-        "appearances": null,
-        "starts": null,
-        "substitute_appearances": null,
-        "minutes": null,
+        "appearances": 4,
+        "starts": 3,
+        "substitute_appearances": 1,
+        "minutes": 208,
         "goals": 1
       }
     ],
@@ -9289,7 +9731,7 @@
     "china_status": "group-stage",
     "china_summary": "中国队首次进入 FIFA 世界杯决赛圈，三场小组赛分别 0 比 2 负哥斯达黎加、0 比 4 负巴西、0 比 3 负土耳其，小组赛出局。",
     "china_detail_scope": "squad-matches-minutes",
-    "source_checked_at": "2026-06-27",
+    "source_checked_at": "2026-08-01",
     "coach": {
       "name": "Bora Milutinovic",
       "local_name": "博拉·米卢蒂诺维奇",
@@ -9327,7 +9769,8 @@
         "appearances": 0,
         "starts": 0,
         "minutes": 0,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 2,
@@ -9337,7 +9780,8 @@
         "appearances": 0,
         "starts": 0,
         "minutes": 0,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 3,
@@ -9347,7 +9791,8 @@
         "appearances": 2,
         "starts": 1,
         "minutes": 118,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 1
       },
       {
         "squad_number": 4,
@@ -9357,7 +9802,8 @@
         "appearances": 3,
         "starts": 3,
         "minutes": 226,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 5,
@@ -9368,7 +9814,8 @@
         "appearances": 1,
         "starts": 1,
         "minutes": 74,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 6,
@@ -9379,7 +9826,8 @@
         "starts": 0,
         "minutes": 36,
         "goals": 0,
-        "discipline_note": "Sent off against Turkey."
+        "discipline_note": "Sent off against Turkey.",
+        "substitute_appearances": 2
       },
       {
         "squad_number": 7,
@@ -9390,7 +9838,8 @@
         "appearances": 1,
         "starts": 1,
         "minutes": 26,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 8,
@@ -9400,7 +9849,8 @@
         "appearances": 3,
         "starts": 3,
         "minutes": 270,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 9,
@@ -9410,17 +9860,19 @@
         "appearances": 2,
         "starts": 2,
         "minutes": 152,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 10,
-        "player": "大炮",
+        "player": "Hao Haidong",
         "position": "Forward",
         "club": "Dalian Shide",
         "appearances": 3,
         "starts": 3,
         "minutes": 238,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 11,
@@ -9430,7 +9882,8 @@
         "appearances": 2,
         "starts": 0,
         "minutes": 33,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 2
       },
       {
         "squad_number": 12,
@@ -9440,7 +9893,8 @@
         "appearances": 1,
         "starts": 0,
         "minutes": 24,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 1
       },
       {
         "squad_number": 13,
@@ -9450,7 +9904,8 @@
         "appearances": 0,
         "starts": 0,
         "minutes": 0,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 14,
@@ -9460,7 +9915,8 @@
         "appearances": 3,
         "starts": 3,
         "minutes": 270,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 15,
@@ -9470,7 +9926,8 @@
         "appearances": 2,
         "starts": 2,
         "minutes": 180,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 16,
@@ -9480,7 +9937,8 @@
         "appearances": 3,
         "starts": 0,
         "minutes": 96,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 3
       },
       {
         "squad_number": 17,
@@ -9490,7 +9948,8 @@
         "appearances": 2,
         "starts": 2,
         "minutes": 180,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 18,
@@ -9500,7 +9959,8 @@
         "appearances": 3,
         "starts": 3,
         "minutes": 270,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 19,
@@ -9510,7 +9970,8 @@
         "appearances": 1,
         "starts": 1,
         "minutes": 66,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 20,
@@ -9521,7 +9982,8 @@
         "appearances": 2,
         "starts": 2,
         "minutes": 139,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 21,
@@ -9531,7 +9993,8 @@
         "appearances": 3,
         "starts": 3,
         "minutes": 270,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 22,
@@ -9541,7 +10004,8 @@
         "appearances": 3,
         "starts": 3,
         "minutes": 270,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       },
       {
         "squad_number": 23,
@@ -9551,7 +10015,8 @@
         "appearances": 0,
         "starts": 0,
         "minutes": 0,
-        "goals": 0
+        "goals": 0,
+        "substitute_appearances": 0
       }
     ],
     "china_matches": [
@@ -9610,7 +10075,7 @@
         "role_note": "三场打满，连接 2002 世界杯与后续埃弗顿留洋样本。"
       },
       {
-        "player": "大炮",
+        "player": "Hao Haidong",
         "goals": 0,
         "assists": 0,
         "minutes": 238,
@@ -9649,7 +10114,55 @@
         "label": "2002 FIFA World Cup Group C",
         "url": "https://en.wikipedia.org/wiki/2002_FIFA_World_Cup_Group_C"
       }
-    ]
+    ],
+    "minute_status": {
+      "status": "complete",
+      "available_fields": [
+        "appearances",
+        "starts",
+        "substitute_appearances",
+        "minutes",
+        "goals"
+      ],
+      "missing_fields": [],
+      "verified_totals": {
+        "matches": 3,
+        "appearances": 42,
+        "starts": 33,
+        "substitute_appearances": 9,
+        "minutes": 2938,
+        "goals": 0
+      },
+      "source_scope": "Numeric minutes come directly from the FIFA technical report; official FIFA match records verify every China lineup and substitution split.",
+      "note": "五项逐人统计均由 FIFA 官方技术报告与逐场比赛记录复核，汇总值可由名单逐项复算。"
+    },
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA technical report: player statistics (FIFA 2002 technical report and statistics)",
+        "url": "https://digitalhub.fifa.com/m/4e20fa44d92b129a/original/e7ncqlvjegg3fz2a7q30-pdf.pdf",
+        "fields": [
+          "china_squad",
+          "appearances",
+          "minutes"
+        ],
+        "note": "Official technical-report edition retrieved from FIFA Digital Hub on 2026-08-01."
+      },
+      {
+        "type": "official-match-record",
+        "label": "FIFA match records: China (2002)",
+        "url": "https://www.fifa.com/en/match-centre/match/17/4395/5928/43950012",
+        "fields": [
+          "china_matches",
+          "appearances",
+          "starts",
+          "substitute_appearances",
+          "goals"
+        ],
+        "note": "All three FIFA match-centre records were checked against the technical report."
+      }
+    ],
+    "source_conflict_note": "The FIFA technical report supplies the player totals and the three FIFA match-centre records supply the starting and substitute split. The two official layers reconcile; no unresolved statistical conflict remains."
   },
   {
     "id": "fifa-world-cup-2022",

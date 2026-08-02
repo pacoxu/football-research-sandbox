@@ -1,4 +1,7 @@
 {
+  "au-lucas-herrington-2007": {
+    "zh": "卢卡斯·赫林顿"
+  },
   "cn-baihelamu-abuduwaili-2003": {
     "zh": "拜合拉木·阿卜杜外力",
     "native_verification": {
@@ -2929,19 +2932,29 @@
     }
   },
   "kr-kim-yonghak-2003": {
+    "zh": "金龙鹤",
+    "native": "김용학",
+    "ko": "김용학",
     "native_verification": {
-      "status": "unresolved",
-      "language_tag": null,
-      "checked_at": "2026-07-19",
-      "sources": [],
-      "attempts": [
+      "status": "verified",
+      "language_tag": "ko-Kore",
+      "checked_at": "2026-08-01",
+      "sources": [
         {
-          "label": "Korea Football Association national-team news archive",
-          "url": "https://www.kfa.or.kr/",
-          "checked_at": "2026-07-19"
+          "type": "national-fa-profile",
+          "label": "KFA Korea Republic U20 World Cup departure report",
+          "url": "https://www.kfa.or.kr/layer_popup/popup_live.php?act=news_tv_detail&div_code=news&idx=25189",
+          "checked_at": "2026-08-01",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.ko"
+          ],
+          "claim": "KFA's 2023 U20 World Cup departure report uses the Hangul spelling 김용학 and identifies him as a Portimonense-based member of the final Korea Republic U20 squad."
         }
       ],
-      "notes": "No independent official source captured an unambiguous local spelling for this player. The registered Latin name remains in use; no transliteration is inferred."
+      "attempts": [],
+      "notes": "KFA 一手报道明确使用韩文名 김용학；中文译名“金龙鹤”按用户提供的懂球帝专题保留，与韩文本土姓名分层记录。"
     }
   },
   "kr-lee-chanouk-2003": {
@@ -3269,6 +3282,7 @@
     }
   },
   "uz-abdukodir-khusanov-2004": {
+    "zh": "胡桑洛夫",
     "native_verification": {
       "status": "unresolved",
       "language_tag": null,

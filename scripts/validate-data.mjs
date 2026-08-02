@@ -91,7 +91,8 @@ const allowedPlayerRosterStatuses = new Set([
   "withdrawn/unused"
 ]);
 
-const historicalChinaYouthStatTournamentIds = new Set([
+const historicalChinaPlayerStatTournamentIds = new Set([
+  "fifa-world-cup-2002",
   "fifa-u20-world-cup-1983",
   "fifa-u16-world-championship-1985",
   "fifa-u20-world-cup-1985",
@@ -435,7 +436,8 @@ const youthProjectDossierIds = new Set([
   "evergrande-football-school",
   "luneng-football-school",
   "olympic-stars-germany",
-  "500-star-portugal"
+  "500-star-portugal",
+  "qingdao-west-coast-academy"
 ]);
 const allowedDossierRelationships = new Set([
   "development-core", "batch-participant", "short-training", "tournament-only",
@@ -587,9 +589,30 @@ function validateYouthProjectDossier(dossier, playerIds) {
       assert(Array.isArray(edition.sources) && edition.sources.length > 0, `Missing edition sources on ${label}`);
       assert(edition.sources.every((source) => source.title && /^https?:\/\//.test(source.url)), `Invalid edition source on ${label}`);
       assert(edition.organization && /^https?:\/\//.test(edition.organization.source_url), `Invalid organization source on ${label}`);
+      assert(["complete", "partial", "unavailable"].includes(edition.coverage?.status), `Invalid coverage on ${label}`);
+      assert(edition.coverage.note, `Missing coverage note on ${label}`);
+      assert(edition.podium && /^https?:\/\//.test(edition.podium.source_url), `Invalid podium on ${label}`);
+      for (const field of ["champion", "runner_up", "third_place", "fourth_place", "final_score"]) {
+        assert(edition.podium[field] === edition.finals[field], `Podium/finals mismatch for ${field} on ${label}`);
+      }
       for (const award of edition.awards) {
         assert(award.type && award.recipient && ["high", "medium", "low"].includes(award.confidence), `Invalid award on ${label}`);
+        assert(award.award_key, `Missing award key on ${label}`);
         assert(/^https?:\/\//.test(award.source_url), `Invalid award source on ${label}`);
+      }
+      assert(["complete", "partial", "unavailable"].includes(edition.award_coverage?.status), `Invalid award coverage on ${label}`);
+      assert(edition.award_coverage.note, `Missing award coverage note on ${label}`);
+      const scorerTable = edition.scorer_table;
+      assert(scorerTable && ["complete", "partial", "unavailable"].includes(scorerTable.status), `Invalid scorer coverage on ${label}`);
+      assert(isIsoDate(scorerTable.as_of) && scorerTable.scope && scorerTable.coverage_note, `Invalid scorer metadata on ${label}`);
+      assert(Array.isArray(scorerTable.rows), `Missing scorer rows on ${label}`);
+      if (scorerTable.status === "unavailable") assert(scorerTable.rows.length === 0, `Unavailable scorer table has rows on ${label}`);
+      for (const row of scorerTable.rows) {
+        assert(Number.isInteger(row.rank) && row.rank > 0, `Invalid scorer rank on ${label}`);
+        assert(row.player && row.team && typeof row.shared_rank === "boolean", `Invalid scorer identity on ${label}`);
+        assert(row.goals === null || (Number.isInteger(row.goals) && row.goals > 0), `Unknown scorer goals must be null on ${label}`);
+        assert(["verified", "award-only", "conflicted", "provisional"].includes(row.evidence_status), `Invalid scorer evidence on ${label}`);
+        assert(/^https?:\/\//.test(row.source_url), `Invalid scorer source on ${label}`);
       }
       for (const record of [...edition.audience, ...edition.international_participation, ...edition.community_impact]) {
         assert(/^https?:\/\//.test(record.source_url), `Invalid surrounding-information source on ${label}`);
@@ -603,8 +626,8 @@ function validateYouthProjectDossier(dossier, playerIds) {
         );
       }
     }
-    assert(editions.slice(0, 5).every((edition) => edition.status === "completed"), "First five 2034 Cup editions must be completed");
-    assert(editions[5].status === "ongoing" && editions[5].as_of === "2026-07-25", "Sixth 2034 Cup snapshot boundary changed");
+    assert(editions.every((edition) => edition.status === "completed"), "All six 2034 Cup editions must be completed");
+    assert(editions[5].as_of === "2026-08-01", "Sixth 2034 Cup final snapshot boundary changed");
     const profiles = dossier.external_player_profiles ?? [];
     assert(profiles.length === 86, "Expected 86 xiaojiangfc player profiles");
     assert(dossier.people.length === 125, "Expected 125 tracked Donglu dossier people");
@@ -626,6 +649,38 @@ function validateYouthProjectDossier(dossier, playerIds) {
       zhangLintong.conflicts.some((conflict) => conflict.field === "birth_year" && conflict.site_value === "2010"),
       "Missing Zhang Lintong birth-year conflict boundary"
     );
+  }
+  if (dossier.id === "qingdao-west-coast-academy") {
+    const snapshots = dossier.season_snapshots;
+    assert(Array.isArray(snapshots) && snapshots.length === 4, "Expected four Qingdao West Coast season snapshots");
+    assert(snapshots.map((snapshot) => snapshot.season).join(",") === "2023,2024,2025,2026", "Qingdao season snapshots must cover 2023-2026");
+    const nullableStatFields = ["appearances", "starts", "minutes", "goals", "assists", "clean_sheets"];
+    for (const snapshot of snapshots) {
+      const label = `Qingdao West Coast ${snapshot.season}`;
+      assert(isIsoDate(snapshot.as_of) && isIsoDate(snapshot.u21_eligibility_birth_date), `Invalid snapshot dates on ${label}`);
+      assert(/^https?:\/\//.test(snapshot.eligibility_source_url), `Invalid eligibility source on ${label}`);
+      assert(["complete", "partial", "unavailable"].includes(snapshot.u21_team?.coverage), `Invalid U21 coverage on ${label}`);
+      assert(Array.isArray(snapshot.u21_team.player_stats), `Missing U21 player stats on ${label}`);
+      assert(["complete", "partial", "unavailable"].includes(snapshot.first_team_u21_usage?.coverage), `Invalid first-team U21 coverage on ${label}`);
+      assert(Array.isArray(snapshot.first_team_u21_usage.rows), `Missing first-team U21 rows on ${label}`);
+      assert(Array.isArray(snapshot.promotions), `Missing promotion records on ${label}`);
+      for (const row of [...snapshot.u21_team.player_stats, ...snapshot.first_team_u21_usage.rows]) {
+        assert(dossier.people.some((person) => person.id === row.person_id), `Unknown season person on ${label}`);
+        assert(/^https?:\/\//.test(row.source_url), `Invalid season source on ${label}`);
+        for (const field of nullableStatFields) {
+          if (field in row) assert(row[field] === null || (Number.isInteger(row[field]) && row[field] >= 0), `Invalid ${field} on ${label}`);
+        }
+      }
+      const usagePeople = new Set(snapshot.first_team_u21_usage.rows.map((row) => row.person_id));
+      for (const promotion of snapshot.promotions) {
+        assert(dossier.people.some((person) => person.id === promotion.person_id), `Unknown promotion person on ${label}`);
+        assert(isIsoDate(promotion.date) && /^https?:\/\//.test(promotion.source_url), `Invalid promotion on ${label}`);
+        assert(promotion.first_team_appearances === null, `Promotion fabricated as appearance on ${label}`);
+        assert(!usagePeople.has(promotion.person_id), `Promotion mixed into first-team usage on ${label}`);
+      }
+    }
+    assert(snapshots[0].u21_team.record === null, "Unknown 2023 Qingdao U21 record must remain null");
+    assert(snapshots[3].as_of === "2026-07-17", "Qingdao 2026 as_of boundary changed");
   }
 }
 
@@ -1993,7 +2048,7 @@ function validateFootballStories(archive, dataset) {
   }
 
   for (const story of archive.stories) {
-    assert(["person", "institution"].includes(story.kind), `Invalid football story kind: ${story.id}`);
+    assert(["person", "institution", "issue"].includes(story.kind), `Invalid football story kind: ${story.id}`);
     assert(story.title?.zh && story.title?.en, `Missing football story title: ${story.id}`);
     assert(story.summary?.zh && story.summary?.en, `Missing football story summary: ${story.id}`);
     assert(story.identity_note?.zh && story.identity_note?.en, `Missing identity note: ${story.id}`);
@@ -2381,7 +2436,7 @@ function validateRegionalHistory(history, tournamentId) {
   }
 }
 
-function validateHistoricalChinaYouthPlayerStats(tournament) {
+function validateHistoricalChinaPlayerStats(tournament) {
   const label = tournament.id;
   const minuteStatus = tournament.minute_status;
   assert(
@@ -2399,6 +2454,15 @@ function validateHistoricalChinaYouthPlayerStats(tournament) {
   assert(
     typeof minuteStatus.note === "string" && minuteStatus.note.length > 0,
     `Missing historical China youth minute note on ${label}`
+  );
+  assert(
+    typeof minuteStatus.verified_totals === "object" && minuteStatus.verified_totals !== null,
+    `Missing historical China verified totals on ${label}`
+  );
+  assert(
+    Number.isInteger(minuteStatus.verified_totals.matches) &&
+      minuteStatus.verified_totals.matches === (tournament.china_matches?.length ?? 0),
+    `Historical China verified match total does not match China matches on ${label}`
   );
 
   const available = new Set(minuteStatus.available_fields);
@@ -2451,6 +2515,43 @@ function validateHistoricalChinaYouthPlayerStats(tournament) {
         `Appearances exceed China match count on ${label}:${player.player}`
       );
     }
+  }
+
+  for (const field of historicalYouthPlayerStatFields) {
+    if (available.has(field)) {
+      assert(
+        Number.isInteger(minuteStatus.verified_totals[field]) &&
+          minuteStatus.verified_totals[field] >= 0,
+        `Missing historical China verified ${field} total on ${label}`
+      );
+      assert(
+        tournament.china_squad.reduce((sum, player) => sum + player[field], 0) ===
+          minuteStatus.verified_totals[field],
+        `Historical China player ${field} total does not reconcile on ${label}`
+      );
+    } else {
+      assert(
+        !Object.hasOwn(minuteStatus.verified_totals, field),
+        `Unavailable historical China ${field} must not have a verified total on ${label}`
+      );
+    }
+  }
+  if (available.has("starts")) {
+    assert(
+      minuteStatus.verified_totals.starts === minuteStatus.verified_totals.matches * 11,
+      `Historical China starts do not match eleven starters per match on ${label}`
+    );
+  }
+  if (
+    available.has("appearances") &&
+    available.has("starts") &&
+    available.has("substitute_appearances")
+  ) {
+    assert(
+      minuteStatus.verified_totals.appearances ===
+        minuteStatus.verified_totals.starts + minuteStatus.verified_totals.substitute_appearances,
+      `Historical China appearance totals do not reconcile on ${label}`
+    );
   }
 
   assert(
@@ -2794,6 +2895,20 @@ export async function validateData(referenceDate = new Date().toISOString().slic
 
     assert(!playerIds.has(player.id), `Duplicate player id: ${player.id}`);
     assert(isIsoDate(player.birth_date), `Invalid birth_date for ${player.id}`);
+    if (player.birth_place !== undefined) {
+      assert(typeof player.birth_place === "string" && player.birth_place.length > 0, `Invalid birth_place for ${player.id}`);
+    }
+    if (player.secondary_positions !== undefined) {
+      assert(Array.isArray(player.secondary_positions), `Invalid secondary_positions for ${player.id}`);
+      assert(new Set(player.secondary_positions).size === player.secondary_positions.length, `Duplicate secondary_positions on ${player.id}`);
+      for (const position of player.secondary_positions) {
+        assert(typeof position === "string" && position.length > 0, `Invalid secondary position on ${player.id}`);
+        assert(position !== player.primary_position, `Primary position repeated as secondary on ${player.id}`);
+      }
+    }
+    if (player.preferred_foot !== undefined) {
+      assert(["left", "right", "both"].includes(player.preferred_foot), `Invalid preferred_foot for ${player.id}`);
+    }
     validatePlayerNames(player);
     if (nativeNameAuditCountries.has(player.country)) {
       nativeNameAuditCount += 1;
@@ -2824,6 +2939,18 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     );
     if (player.registration_club.as_of !== undefined) {
       assert(isIsoDate(player.registration_club.as_of), `Invalid registration_club as_of on ${player.id}`);
+    }
+    if (player.registration_club.joined_date !== undefined) {
+      assert(isIsoDate(player.registration_club.joined_date), `Invalid registration_club joined_date on ${player.id}`);
+    }
+    if (player.registration_club.contract_expires !== undefined) {
+      assert(isIsoDate(player.registration_club.contract_expires), `Invalid registration_club contract_expires on ${player.id}`);
+      if (player.registration_club.joined_date !== undefined) {
+        assert(
+          player.registration_club.contract_expires >= player.registration_club.joined_date,
+          `registration_club contract expires before joined_date on ${player.id}`
+        );
+      }
     }
     if (registrationStatus === "tournament-snapshot") {
       assert(
@@ -3294,8 +3421,8 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
     validateTournamentDateRange(tournament);
-    if (historicalChinaYouthStatTournamentIds.has(tournament.id)) {
-      validateHistoricalChinaYouthPlayerStats(tournament);
+    if (historicalChinaPlayerStatTournamentIds.has(tournament.id)) {
+      validateHistoricalChinaPlayerStats(tournament);
     }
     assert(Array.isArray(tournament.source_links), `Invalid source_links on ${tournament.id}`);
     assert(Array.isArray(tournament.china_matches), `Invalid china_matches on ${tournament.id}`);

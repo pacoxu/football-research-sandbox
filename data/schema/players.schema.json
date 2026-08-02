@@ -29,13 +29,24 @@
         "birth_date": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
         "age_band": { "type": "string", "minLength": 1 },
         "primary_position": { "type": "string", "minLength": 1 },
+        "secondary_positions": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 },
+          "uniqueItems": true
+        },
+        "preferred_foot": { "enum": ["left", "right", "both"] },
+        "birth_place": { "type": "string", "minLength": 1 },
+        "height_cm": { "type": ["integer", "null"] },
+        "weight_kg": { "type": ["integer", "null"] },
         "registration_club": {
           "type": "object",
           "required": ["name", "country"],
           "properties": {
             "name": { "type": "string", "minLength": 1 },
             "country": { "type": "string", "minLength": 1 },
-            "organization_type": { "type": "string", "minLength": 1 }
+            "organization_type": { "type": "string", "minLength": 1 },
+            "joined_date": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+            "contract_expires": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" }
           },
           "additionalProperties": true
         },

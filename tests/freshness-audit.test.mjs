@@ -43,7 +43,7 @@ test("is non-blocking by default and strict only when findings exist", () => {
 
 test("keeps China registration records clear after the issue 44 freshness cleanup", async () => {
   const dataset = await loadDataset();
-  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-08-01");
+  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-08-02");
   const chinaRegistrationFindings = report.findings.filter(
     (finding) =>
       finding.entity_type === "player" &&

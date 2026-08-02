@@ -473,15 +473,22 @@
     "name": "Wei Xiangxin",
     "local_name": "魏祥鑫",
     "country": "China PR",
-    "birth_date": "2008-02-26",
+    "birth_date": "2008-03-05",
+    "birth_place": "Meizhou, Guangdong, China",
     "age_band": "u20",
     "primary_position": "Centre-Forward",
-    "height_cm": null,
-    "weight_kg": null,
+    "secondary_positions": [
+      "Right Winger"
+    ],
+    "preferred_foot": "right",
+    "height_cm": 178,
+    "weight_kg": 76,
     "registration_club": {
       "name": "AJ Auxerre",
       "country": "France",
-      "organization_type": "professional-club"
+      "organization_type": "professional-club",
+      "joined_date": "2026-07-09",
+      "contract_expires": "2031-06-30"
     },
     "training_pathway": [
       {
@@ -572,12 +579,45 @@
         "type": "official",
         "label": "AJ Auxerre professional player page",
         "url": "https://www.aja.fr/joueur/xiangxin-wei/"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/xiangxin-wei/profil/spieler/1265965"
+      },
+      {
+        "type": "reference",
+        "label": "Transfermarkt forum: Wei Xiangxin €300k / AJ Auxerre",
+        "url": "https://www.transfermarkt.com/wei-xiangxin-euro-300k-aj-auxerre-/thread/forum/67/thread_id/272434"
       }
     ],
     "verification": {
-      "status": "verified",
-      "last_checked": "2026-07-26",
-      "notes": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签下五年合同并获得 49 号，俱乐部职业队球员页同步上线；当前俱乐部归属已由一手来源闭环，正式联赛报名与出场继续跟踪。"
+      "status": "mixed-source",
+      "last_checked": "2026-08-02",
+      "notes": "欧塞尔官方球员页确认出生日期为 2008-03-05、身高 178cm、体重 76kg；Transfermarkt 档案补充梅州出生、主司中锋、兼任右边锋和右脚信息，并将身高列为 180cm。身高主值按一手俱乐部资料保留 178cm，180cm 作为来源差异记录。欧塞尔 2026-07-09 官方公告确认其签下五年合同并获得 49 号，合同截止日 2031-06-30 由 Transfermarkt 档案补充；正式联赛报名与出场继续跟踪。",
+      "evidence": [
+        {
+          "field": "birth_date,height_cm,weight_kg",
+          "claim": "AJ Auxerre player page lists 05/03/2008, 1m78 and 76kg.",
+          "source_label": "AJ Auxerre professional player page",
+          "source_url": "https://www.aja.fr/joueur/xiangxin-wei/",
+          "checked_at": "2026-08-02"
+        },
+        {
+          "field": "registration_club.joined_date",
+          "claim": "AJ Auxerre announced the signing on 9 July 2026 and a five-year contract.",
+          "source_label": "AJ Auxerre signing announcement",
+          "source_url": "https://www.aja.fr/grand-espoir-chinois-xiangxin-wei-signe-a-laja/",
+          "checked_at": "2026-08-02"
+        },
+        {
+          "field": "birth_place,secondary_positions,preferred_foot,registration_club.contract_expires",
+          "claim": "Transfermarkt profile lists Meizhou as birthplace, Right Winger as the other position, right foot and a contract through 30 June 2031.",
+          "source_label": "Transfermarkt profile",
+          "source_url": "https://www.transfermarkt.com/xiangxin-wei/profil/spieler/1265965",
+          "checked_at": "2026-08-02"
+        }
+      ]
     }
   }
 ]

@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-08-01",
+  "generated_at": "2026-08-02",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -13,13 +13,13 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 921,
+    "record_count": 924,
     "stale_records": 10,
     "needs_review_records": 322
   },
   "freshness": {
-    "as_of": "2026-08-01",
-    "audited_records": 1203,
+    "as_of": "2026-08-02",
+    "audited_records": 1204,
     "overdue": 10,
     "by_window": {
       "30": 10,
@@ -36,9 +36,9 @@
       },
       "record_count": 543,
       "quality": {
-        "complete": 73,
+        "complete": 74,
         "mixed": 4,
-        "partial": 164,
+        "partial": 163,
         "needs-review": 292,
         "stale": 10,
         "excluded": 0
@@ -54,13 +54,13 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-08-01"
+        "newest": "2026-08-02"
       },
       "overdue_records": 10,
       "missing_fields": [
         {
           "field": "names.native_verified",
-          "count": 232
+          "count": 231
         },
         {
           "field": "source_layers",
@@ -74,9 +74,9 @@
         "zh": "当前赛事",
         "en": "Current tournaments"
       },
-      "record_count": 22,
+      "record_count": 23,
       "quality": {
-        "complete": 14,
+        "complete": 15,
         "mixed": 0,
         "partial": 8,
         "needs-review": 0,
@@ -84,7 +84,7 @@
         "excluded": 0
       },
       "source_tiers": {
-        "1": 14,
+        "1": 15,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -124,18 +124,18 @@
         "unclassified": 14
       },
       "checked_at": {
-        "oldest": "2026-06-27",
+        "oldest": "2026-06-28",
         "newest": "2026-08-01"
       },
       "overdue_records": 0,
       "missing_fields": [
         {
-          "field": "source_version",
-          "count": 24
-        },
-        {
           "field": "final_draw",
           "count": 23
+        },
+        {
+          "field": "source_version",
+          "count": 16
         },
         {
           "field": "source_checked_at",
@@ -149,11 +149,11 @@
         "zh": "青训项目",
         "en": "Youth programmes"
       },
-      "record_count": 40,
+      "record_count": 41,
       "quality": {
         "complete": 32,
         "mixed": 0,
-        "partial": 8,
+        "partial": 9,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -165,11 +165,11 @@
         "4": 0,
         "5": 0,
         "6": 0,
-        "unclassified": 8
+        "unclassified": 9
       },
       "checked_at": {
         "oldest": "2026-07-20",
-        "newest": "2026-07-25"
+        "newest": "2026-08-02"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -193,11 +193,11 @@
         "zh": "专题档案",
         "en": "Research dossiers"
       },
-      "record_count": 8,
+      "record_count": 9,
       "quality": {
         "complete": 0,
         "mixed": 0,
-        "partial": 8,
+        "partial": 9,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -209,11 +209,11 @@
         "4": 0,
         "5": 0,
         "6": 0,
-        "unclassified": 8
+        "unclassified": 9
       },
       "checked_at": {
         "oldest": "2026-05-23",
-        "newest": "2026-07-25"
+        "newest": "2026-08-02"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -716,7 +716,7 @@
         "id": "research:donglu-football-boys",
         "status": "partial",
         "source_tier": null,
-        "checked_at": "2026-07-25",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "research:genbao-football-base": {
@@ -749,6 +749,13 @@
         "status": "partial",
         "source_tier": null,
         "checked_at": "2026-07-20",
+        "missing_fields": []
+      },
+      "research:qingdao-west-coast-academy": {
+        "id": "research:qingdao-west-coast-academy",
+        "status": "partial",
+        "source_tier": null,
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "research:wanda-spain-plan": {

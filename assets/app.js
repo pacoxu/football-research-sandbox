@@ -448,6 +448,9 @@ const UI_COPY = {
     "dossier.metrics.completed": "已完赛",
     "dossier.metrics.ongoing": "进行中",
     "dossier.metrics.snapshot": "截至 {date} 的开赛日快照；8 月 1 日后另补最终赛果。",
+    "dossier.metrics.coverage.complete": "资料完整",
+    "dossier.metrics.coverage.partial": "公开资料不完整",
+    "dossier.metrics.coverage.unavailable": "公开资料不可得",
     "dossier.metrics.regionalScale": "分区规模",
     "dossier.metrics.finalsScale": "总决赛规模",
     "dossier.metrics.teams": "{count} 队",
@@ -457,11 +460,36 @@ const UI_COPY = {
     "dossier.metrics.podium": "前四名与决赛",
     "dossier.metrics.awards": "个人奖项",
     "dossier.metrics.noAwards": "暂无可靠公开个人奖项。",
+    "dossier.metrics.scorers": "射手榜（公开可核部分）",
+    "dossier.metrics.noScorers": "暂无可稳定核验的射手榜条目。",
+    "dossier.metrics.scorerRank": "排名",
+    "dossier.metrics.scorerPlayer": "球员",
+    "dossier.metrics.scorerTeam": "球队",
+    "dossier.metrics.scorerGoals": "进球",
+    "dossier.metrics.scorerEvidence": "证据状态",
+    "dossier.metrics.sharedRank": "并列",
     "dossier.metrics.participation": "参与范围与城市活动",
     "dossier.metrics.organization": "组织与冠名",
     "dossier.metrics.audience": "观众与传播",
     "dossier.metrics.sources": "届次来源",
     "dossier.metrics.confidence": "资料边界",
+    "dossier.clubDevelopment.eyebrow": "Club pathway",
+    "dossier.clubDevelopment.title": "青训梯队与赛季出场",
+    "dossier.clubDevelopment.ladder": "培养梯队",
+    "dossier.clubDevelopment.u21Team": "青年梯队联赛",
+    "dossier.clubDevelopment.u21Players": "青年队球员数据",
+    "dossier.clubDevelopment.firstTeam": "一线队U21适龄球员出场",
+    "dossier.clubDevelopment.promotions": "签约 / 升队（不计作出场）",
+    "dossier.clubDevelopment.cutoff": "本赛季U21出生日期线：{date}",
+    "dossier.clubDevelopment.asOf": "数据截至 {date}",
+    "dossier.clubDevelopment.player": "球员",
+    "dossier.clubDevelopment.competition": "赛事",
+    "dossier.clubDevelopment.appearances": "出场",
+    "dossier.clubDevelopment.starts": "首发",
+    "dossier.clubDevelopment.minutes": "分钟",
+    "dossier.clubDevelopment.goals": "进球",
+    "dossier.clubDevelopment.record": "排名 / 战绩",
+    "dossier.clubDevelopment.noRows": "暂无可稳定核验的逐名统计。",
     "dossier.generations.eyebrow": "Generations",
     "dossier.generations.title": "代表球员与当前状态",
     "dossier.generations.players": "代表样本 {count} 人",
@@ -528,24 +556,25 @@ const UI_COPY = {
     "dossier.sources.checked": "专题核查至 {date}",
     "stories.hero.eyebrow": "Football Stories",
     "stories.hero.title": "足球故事",
-    "stories.hero.text": "把球员生涯、教练实践、校园传统和公开争议放回时间线，并保留事实边界与原始来源。",
+    "stories.hero.text": "把球员生涯、教练实践、校园传统、结构议题和公开争议放回时间线，并保留事实边界与原始来源。",
     "stories.coverage.eyebrow": "Coverage",
     "stories.coverage.value": "{count} 个故事",
     "stories.coverage.checked": "核查至 {date}",
-    "stories.list.eyebrow": "Profiles & Institutions",
-    "stories.list.title": "人物与机构故事",
+    "stories.list.eyebrow": "Profiles, Institutions & Issues",
+    "stories.list.title": "人物、机构与议题专题",
     "stories.card.kind.person": "人物",
     "stories.card.kind.institution": "机构",
+    "stories.card.kind.issue": "议题",
     "stories.card.timeline": "{count} 个节点",
     "stories.card.open": "查看完整故事",
     "stories.breadcrumb.list": "足球故事",
     "stories.breadcrumb.detail": "故事详情",
     "stories.identity.eyebrow": "Identity",
-    "stories.identity.title": "人物与口径辨析",
+    "stories.identity.title": "对象与口径辨析",
     "stories.timeline.eyebrow": "Timeline",
-    "stories.timeline.title": "故事时间线",
+    "stories.timeline.title": "事件时间线",
     "stories.context.eyebrow": "Context",
-    "stories.context.title": "经历与背景",
+    "stories.context.title": "事实与背景",
     "stories.disputes.eyebrow": "Public Exchange",
     "stories.disputes.title": "公开争议时间线",
     "stories.disputes.note": "以下内容区分当事人主张、回应与编辑边界，不代表本站认定指控成立。",
@@ -1281,6 +1310,9 @@ const UI_COPY = {
     "dossier.metrics.completed": "Completed",
     "dossier.metrics.ongoing": "Ongoing",
     "dossier.metrics.snapshot": "Opening-day snapshot as of {date}; final results will be added after August 1.",
+    "dossier.metrics.coverage.complete": "Complete coverage",
+    "dossier.metrics.coverage.partial": "Partial public coverage",
+    "dossier.metrics.coverage.unavailable": "Public data unavailable",
     "dossier.metrics.regionalScale": "Regional scale",
     "dossier.metrics.finalsScale": "Finals scale",
     "dossier.metrics.teams": "{count} teams",
@@ -1290,11 +1322,36 @@ const UI_COPY = {
     "dossier.metrics.podium": "Top four and final",
     "dossier.metrics.awards": "Individual awards",
     "dossier.metrics.noAwards": "No reliable public individual-award record.",
+    "dossier.metrics.scorers": "Scorers (publicly verified subset)",
+    "dossier.metrics.noScorers": "No stable public scorer-table row is available.",
+    "dossier.metrics.scorerRank": "Rank",
+    "dossier.metrics.scorerPlayer": "Player",
+    "dossier.metrics.scorerTeam": "Team",
+    "dossier.metrics.scorerGoals": "Goals",
+    "dossier.metrics.scorerEvidence": "Evidence",
+    "dossier.metrics.sharedRank": "Tied",
     "dossier.metrics.participation": "Participation and city activities",
     "dossier.metrics.organization": "Organization and title sponsor",
     "dossier.metrics.audience": "Audience and reach",
     "dossier.metrics.sources": "Edition sources",
     "dossier.metrics.confidence": "Evidence boundary",
+    "dossier.clubDevelopment.eyebrow": "Club pathway",
+    "dossier.clubDevelopment.title": "Academy ladder and season usage",
+    "dossier.clubDevelopment.ladder": "Development ladder",
+    "dossier.clubDevelopment.u21Team": "Youth-team competition",
+    "dossier.clubDevelopment.u21Players": "Youth-team player stats",
+    "dossier.clubDevelopment.firstTeam": "U21-eligible first-team usage",
+    "dossier.clubDevelopment.promotions": "Signed / promoted (not appearances)",
+    "dossier.clubDevelopment.cutoff": "U21 birth-date cutoff: {date}",
+    "dossier.clubDevelopment.asOf": "Data as of {date}",
+    "dossier.clubDevelopment.player": "Player",
+    "dossier.clubDevelopment.competition": "Competition",
+    "dossier.clubDevelopment.appearances": "Apps",
+    "dossier.clubDevelopment.starts": "Starts",
+    "dossier.clubDevelopment.minutes": "Minutes",
+    "dossier.clubDevelopment.goals": "Goals",
+    "dossier.clubDevelopment.record": "Rank / record",
+    "dossier.clubDevelopment.noRows": "No stable player-level statistics are publicly verifiable.",
     "dossier.generations.eyebrow": "Generations",
     "dossier.generations.title": "Representative players and current status",
     "dossier.generations.players": "{count} representative players",
@@ -1361,14 +1418,15 @@ const UI_COPY = {
     "dossier.sources.checked": "Dossier checked through {date}",
     "stories.hero.eyebrow": "Football Stories",
     "stories.hero.title": "Football stories",
-    "stories.hero.text": "Place playing careers, coaching practice, school traditions and public exchanges on a sourced timeline with clear factual boundaries.",
+    "stories.hero.text": "Place playing careers, coaching practice, school traditions, structural issues and public exchanges on a sourced timeline with clear factual boundaries.",
     "stories.coverage.eyebrow": "Coverage",
     "stories.coverage.value": "{count} stories",
     "stories.coverage.checked": "Checked through {date}",
-    "stories.list.eyebrow": "Profiles & Institutions",
-    "stories.list.title": "People and institution stories",
+    "stories.list.eyebrow": "Profiles, Institutions & Issues",
+    "stories.list.title": "People, institutions and issue stories",
     "stories.card.kind.person": "Person",
     "stories.card.kind.institution": "Institution",
+    "stories.card.kind.issue": "Issue",
     "stories.card.timeline": "{count} timeline entries",
     "stories.card.open": "Open full story",
     "stories.breadcrumb.list": "Football stories",
@@ -1376,9 +1434,9 @@ const UI_COPY = {
     "stories.identity.eyebrow": "Identity",
     "stories.identity.title": "Identity and scope",
     "stories.timeline.eyebrow": "Timeline",
-    "stories.timeline.title": "Story timeline",
+    "stories.timeline.title": "Event timeline",
     "stories.context.eyebrow": "Context",
-    "stories.context.title": "Career and background",
+    "stories.context.title": "Facts and context",
     "stories.disputes.eyebrow": "Public Exchange",
     "stories.disputes.title": "Public dispute timeline",
     "stories.disputes.note": "The entries distinguish attributed claims, responses and editorial boundaries; inclusion does not establish an allegation as fact.",
@@ -2268,6 +2326,7 @@ const TAG_LABELS = {
   "csl-u23-overseas": { zh: "中超 U23 留洋", en: "CSL U23 overseas" },
   "defender-watch": { zh: "后卫观察", en: "Defender watch" },
   "donglu-football-boys": { zh: "中国足球小将", en: "Donglu Football Boys" },
+  "qingdao-west-coast-academy": { zh: "青岛西海岸青训", en: "Qingdao West Coast academy" },
   "europe-other": { zh: "欧洲其他联赛", en: "Other European leagues" },
   "germany-pathway": { zh: "德国路径", en: "Germany pathway" },
   "olympic-stars-germany": { zh: "08之星赴德", en: "Olympic Stars Germany" },
@@ -3783,6 +3842,119 @@ function renderDossierExternalProfiles(dossier) {
   section.hidden = false;
 }
 
+function formatDossierStat(value) {
+  return value === null || value === undefined ? t("common.pending") : String(value);
+}
+
+function renderDossierPlayerStatsTable(rows, personById, fallbackCompetition = "") {
+  if (!rows.length) return `<p class="small-note">${escapeHtml(t("dossier.clubDevelopment.noRows"))}</p>`;
+  return `
+    <div class="dossier-table-wrap">
+      <table class="dossier-data-table">
+        <thead><tr>
+          <th>${escapeHtml(t("dossier.clubDevelopment.player"))}</th>
+          <th>${escapeHtml(t("dossier.clubDevelopment.competition"))}</th>
+          <th>${escapeHtml(t("dossier.clubDevelopment.appearances"))}</th>
+          <th>${escapeHtml(t("dossier.clubDevelopment.starts"))}</th>
+          <th>${escapeHtml(t("dossier.clubDevelopment.minutes"))}</th>
+          <th>${escapeHtml(t("dossier.clubDevelopment.goals"))}</th>
+        </tr></thead>
+        <tbody>${rows.map((row) => {
+          const person = personById.get(row.person_id);
+          const name = person?.local_name ?? person?.name ?? row.person_id;
+          return `<tr>
+            <td><a href="${escapeHtml(row.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(name)}</a></td>
+            <td>${escapeHtml(row.competition ?? fallbackCompetition)}</td>
+            <td>${escapeHtml(formatDossierStat(row.appearances))}</td>
+            <td>${escapeHtml(formatDossierStat(row.starts))}</td>
+            <td>${escapeHtml(formatDossierStat(row.minutes))}</td>
+            <td>${escapeHtml(formatDossierStat(row.goals))}</td>
+          </tr>`;
+        }).join("")}</tbody>
+      </table>
+    </div>
+  `;
+}
+
+function renderDossierClubDevelopment(dossier) {
+  const section = document.querySelector("#dossierClubDevelopmentSection");
+  const container = document.querySelector("#dossierClubDevelopment");
+  const snapshots = dossier.season_snapshots ?? [];
+  const ladder = dossier.development_ladder ?? [];
+  if (!section || !container || (snapshots.length === 0 && ladder.length === 0)) {
+    if (section) section.hidden = true;
+    return;
+  }
+
+  const personById = new Map((dossier.people ?? []).map((person) => [person.id, person]));
+  const ladderMarkup = ladder.length ? `
+    <section class="dossier-club-block">
+      <h3>${escapeHtml(t("dossier.clubDevelopment.ladder"))}</h3>
+      <div class="dossier-ladder-grid">${ladder.map((item) => `
+        <article class="dossier-ladder-card">
+          <div class="chip-row"><span class="chip">${escapeHtml(item.status)}</span></div>
+          <h4>${escapeHtml(item.name)}</h4>
+          <p>${escapeHtml(item.note)}</p>
+          <a class="inline-link" href="${escapeHtml(item.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))}</a>
+        </article>
+      `).join("")}</div>
+    </section>
+  ` : "";
+
+  const snapshotMarkup = snapshots.map((snapshot) => {
+    const youth = snapshot.u21_team;
+    const usage = snapshot.first_team_u21_usage;
+    const record = youth.record;
+    const recordParts = record ? [
+      record.rank !== null && record.rank !== undefined ? `#${record.rank} ${record.rank_scope ?? ""}`.trim() : null,
+      record.played !== null && record.played !== undefined ? `${record.played}场` : null,
+      record.wins !== null && record.wins !== undefined ? `${record.wins}胜` : null,
+      record.draws !== null && record.draws !== undefined ? `${record.draws}平` : null,
+      record.losses !== null && record.losses !== undefined ? `${record.losses}负` : null,
+      record.goals_for !== null && record.goals_for !== undefined && record.goals_against !== null && record.goals_against !== undefined ? `${record.goals_for}:${record.goals_against}` : null,
+      record.points !== null && record.points !== undefined ? `${record.points}分` : null
+    ].filter(Boolean) : [];
+    const promotions = snapshot.promotions.map((promotion) => {
+      const person = personById.get(promotion.person_id);
+      return `<li><a href="${escapeHtml(promotion.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(person?.local_name ?? person?.name ?? promotion.person_id)}</a> · ${escapeHtml(formatDate(promotion.date))} · ${escapeHtml(promotion.status)} · ${escapeHtml(t("dossier.clubDevelopment.appearances"))} ${escapeHtml(formatDossierStat(promotion.first_team_appearances))}</li>`;
+    }).join("");
+    return `
+      <article class="story-card dossier-season-card">
+        <div class="academy-player-heading">
+          <div>
+            <h3>${escapeHtml(String(snapshot.season))}</h3>
+            <p class="small-note">${escapeHtml(t("dossier.clubDevelopment.asOf", { date: snapshot.as_of }))}</p>
+          </div>
+          <span class="chip">${escapeHtml(t(`dossier.metrics.coverage.${youth.coverage}`))}</span>
+        </div>
+        <p class="dossier-edition-snapshot">${escapeHtml(t("dossier.clubDevelopment.cutoff", { date: snapshot.u21_eligibility_birth_date }))}</p>
+        <section class="dossier-edition-group">
+          <h4>${escapeHtml(t("dossier.clubDevelopment.u21Team"))}</h4>
+          <p><strong>${escapeHtml(youth.competition)}</strong></p>
+          <p>${escapeHtml(t("dossier.clubDevelopment.record"))}：${escapeHtml(recordParts.join(" · ") || t("common.pending"))}</p>
+          <p class="small-note">${escapeHtml(youth.note)}</p>
+        </section>
+        <section class="dossier-edition-group">
+          <h4>${escapeHtml(t("dossier.clubDevelopment.u21Players"))}</h4>
+          ${renderDossierPlayerStatsTable(youth.player_stats, personById, youth.competition)}
+        </section>
+        <section class="dossier-edition-group">
+          <h4>${escapeHtml(t("dossier.clubDevelopment.firstTeam"))}</h4>
+          ${renderDossierPlayerStatsTable(usage.rows, personById)}
+          <p class="small-note">${escapeHtml(usage.note)}</p>
+        </section>
+        <section class="dossier-edition-group">
+          <h4>${escapeHtml(t("dossier.clubDevelopment.promotions"))}</h4>
+          ${promotions ? `<ul class="mini-bullet-list">${promotions}</ul>` : `<p class="small-note">${escapeHtml(t("dossier.clubDevelopment.noRows"))}</p>`}
+        </section>
+      </article>
+    `;
+  }).join("");
+
+  container.innerHTML = `${ladderMarkup}<div class="dossier-season-grid">${snapshotMarkup}</div>`;
+  section.hidden = false;
+}
+
 function renderDossierDetailPage() {
   const params = new URLSearchParams(window.location.search);
   const dossier = getDossierById(params.get("id"));
@@ -3826,6 +3998,7 @@ function renderDossierDetailPage() {
     `<article class="story-card"><h3>${escapeHtml(t("dossier.boundaries.title"))}</h3><p>${escapeHtml(localizeText(dossier.scope_note))}</p></article>`
   ].join("");
   document.querySelector("#dossierTimeline").innerHTML = (dossier.timeline ?? []).map((item) => `<article class="timeline-item"><p class="timeline-label">${escapeHtml(item.date)}</p><h3>${escapeHtml(localizeText(item.label))}</h3><p>${escapeHtml(localizeText(item.detail))}</p></article>`).join("");
+  renderDossierClubDevelopment(dossier);
   const metrics = dossier.tournament_editions ?? [];
   const metricsSection = document.querySelector("#dossierMetricsSection");
   if (metricsSection && metrics.length > 0) {
@@ -3839,16 +4012,17 @@ function renderDossierDetailPage() {
         t("dossier.metrics.teams", { count: item.finals.teams }),
         item.finals.players !== null ? t("dossier.metrics.players", { count: item.finals.players }) : null
       ].filter(Boolean).join(" · ");
+      const podiumData = item.podium ?? item.finals;
       const podium = [
-        item.finals.champion ? `冠军：${item.finals.champion}` : null,
-        item.finals.runner_up ? `亚军：${item.finals.runner_up}` : null,
-        item.finals.third_place ? `季军：${item.finals.third_place}` : null,
-        item.finals.fourth_place ? `殿军：${item.finals.fourth_place}` : null,
-        item.finals.final_score ? `决赛：${item.finals.final_score}` : null
+        podiumData.champion ? `冠军：${podiumData.champion}` : null,
+        podiumData.runner_up ? `亚军：${podiumData.runner_up}` : null,
+        podiumData.third_place ? `季军：${podiumData.third_place}` : null,
+        podiumData.fourth_place ? `殿军：${podiumData.fourth_place}` : null,
+        podiumData.final_score ? `决赛：${podiumData.final_score}` : null
       ].filter(Boolean);
       const participation = [
-        ...(item.international_participation ?? []).map((entry) => entry.note),
-        ...(item.community_impact ?? []).map((entry) => entry.note)
+        ...(item.international_participation ?? []),
+        ...(item.community_impact ?? [])
       ];
       const organization = [
         item.organization.title_sponsor ? `冠名：${item.organization.title_sponsor}` : null,
@@ -3856,6 +4030,28 @@ function renderDossierDetailPage() {
         item.organization.organizers?.length ? `组织：${item.organization.organizers.join("、")}` : null,
         item.organization.note
       ].filter(Boolean);
+      const scorerTable = item.scorer_table;
+      const scorerRows = scorerTable?.rows ?? [];
+      const scorerMarkup = scorerRows.length ? `
+        <div class="dossier-table-wrap">
+          <table class="dossier-data-table dossier-scorer-table">
+            <thead><tr>
+              <th>${escapeHtml(t("dossier.metrics.scorerRank"))}</th>
+              <th>${escapeHtml(t("dossier.metrics.scorerPlayer"))}</th>
+              <th>${escapeHtml(t("dossier.metrics.scorerTeam"))}</th>
+              <th>${escapeHtml(t("dossier.metrics.scorerGoals"))}</th>
+              <th>${escapeHtml(t("dossier.metrics.scorerEvidence"))}</th>
+            </tr></thead>
+            <tbody>${scorerRows.map((row) => `<tr>
+              <td>${escapeHtml(`${row.shared_rank ? `${t("dossier.metrics.sharedRank")} ` : ""}${row.rank}`)}</td>
+              <td><a href="${escapeHtml(row.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(row.player)}</a>${row.aliases?.length ? `<span class="small-note dossier-table-note">${escapeHtml(row.aliases.join(" / "))}</span>` : ""}</td>
+              <td>${escapeHtml(row.team)}</td>
+              <td>${escapeHtml(formatDossierStat(row.goals))}</td>
+              <td>${escapeHtml(row.evidence_status)}${row.note ? `<span class="small-note dossier-table-note">${escapeHtml(row.note)}</span>` : ""}</td>
+            </tr>`).join("")}</tbody>
+          </table>
+        </div>
+      ` : `<p>${escapeHtml(t("dossier.metrics.noScorers"))}</p>`;
       return `
         <article class="story-card dossier-edition-card ${item.status === "ongoing" ? "dossier-edition-ongoing" : ""}">
           <div class="academy-player-heading">
@@ -3863,9 +4059,13 @@ function renderDossierDetailPage() {
               <h3>${escapeHtml(t("dossier.metrics.edition", { edition: item.edition, year: item.year }))}</h3>
               <p class="small-note">${escapeHtml(item.title_name)} · ${escapeHtml(formatDate(item.date_start))}—${escapeHtml(formatDate(item.date_end))}</p>
             </div>
-            <span class="chip">${escapeHtml(t(`dossier.metrics.${item.status}`))}</span>
+            <div class="chip-row">
+              <span class="chip">${escapeHtml(t(`dossier.metrics.${item.status}`))}</span>
+              ${item.coverage?.status ? `<span class="chip">${escapeHtml(t(`dossier.metrics.coverage.${item.coverage.status}`))}</span>` : ""}
+            </div>
           </div>
           ${item.status === "ongoing" ? `<p class="dossier-edition-snapshot">${escapeHtml(t("dossier.metrics.snapshot", { date: item.as_of }))}</p>` : ""}
+          ${item.coverage?.note ? `<p class="dossier-edition-snapshot">${escapeHtml(item.coverage.note)}</p>` : ""}
           <div class="dossier-edition-stats">
             <div><span>${escapeHtml(t("dossier.metrics.regionalScale"))}</span><strong>${escapeHtml(qualifyingScale || "-")}</strong></div>
             <div><span>${escapeHtml(t("dossier.metrics.finalsScale"))}</span><strong>${escapeHtml(finalsScale)}</strong></div>
@@ -3878,9 +4078,14 @@ function renderDossierDetailPage() {
           ${podium.length ? `<section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.podium"))}</h4><ul class="mini-bullet-list">${podium.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul></section>` : ""}
           <section class="dossier-edition-group">
             <h4>${escapeHtml(t("dossier.metrics.awards"))}</h4>
-            ${(item.awards ?? []).length ? `<ul class="mini-bullet-list">${item.awards.map((award) => `<li><a href="${escapeHtml(award.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(`${award.type}：${award.recipient}${award.team ? `（${award.team}）` : ""}`)}</a></li>`).join("")}</ul>` : `<p>${escapeHtml(t("dossier.metrics.noAwards"))}</p>`}
+            ${(item.awards ?? []).length ? `<ul class="mini-bullet-list">${item.awards.map((award) => `<li><a href="${escapeHtml(award.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(`${award.type}：${award.recipient}${award.team ? `（${award.team}）` : ""}`)}</a>${award.aliases?.length ? `<span class="small-note dossier-table-note">${escapeHtml(`别名：${award.aliases.join(" / ")}`)}</span>` : ""}${award.note ? `<span class="small-note dossier-table-note">${escapeHtml(award.note)}</span>` : ""}</li>`).join("")}</ul>` : `<p>${escapeHtml(item.award_coverage?.note ?? t("dossier.metrics.noAwards"))}</p>`}
           </section>
-          ${participation.length ? `<section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.participation"))}</h4><ul class="mini-bullet-list">${participation.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul></section>` : ""}
+          <section class="dossier-edition-group">
+            <h4>${escapeHtml(t("dossier.metrics.scorers"))}</h4>
+            ${scorerMarkup}
+            ${scorerTable ? `<p class="small-note">${escapeHtml(scorerTable.coverage_note)} · ${escapeHtml(t("dossier.clubDevelopment.asOf", { date: scorerTable.as_of }))}</p>` : ""}
+          </section>
+          ${participation.length ? `<section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.participation"))}</h4><ul class="mini-bullet-list">${participation.map((entry) => `<li>${escapeHtml(entry.note)}${entry.source_url ? ` <a class="inline-link" href="${escapeHtml(entry.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))} ↗</a>` : ""}${entry.related_story_id ? ` <a class="inline-link" href="./story.html?id=${encodeURIComponent(entry.related_story_id)}">${escapeHtml(entry.related_story_label ?? t("stories.card.open"))}</a>` : ""}</li>`).join("")}</ul></section>` : ""}
           ${item.audience?.length ? `<section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.audience"))}</h4><ul class="mini-bullet-list">${item.audience.map((entry) => `<li>${escapeHtml(`${entry.label}：${entry.value}。${entry.note}`)}</li>`).join("")}</ul></section>` : ""}
           <section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.organization"))}</h4>${organization.map((line) => `<p>${escapeHtml(line)}</p>`).join("")}</section>
           <section class="dossier-edition-group dossier-edition-confidence"><h4>${escapeHtml(t("dossier.metrics.confidence"))}</h4><p>${escapeHtml(item.confidence_note)}</p></section>
@@ -5714,7 +5919,7 @@ function renderPlayerMarketValueRankingPanel(title, coverageLabel, players, amou
                     <span class="market-ranking-rank">${String(index + 1).padStart(2, "0")}</span>
                     <div class="market-ranking-body">
                       <a class="market-ranking-link" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(getPlayerPrimaryName(player))}</a>
-                      <p class="small-note">${escapeHtml(formatCountryName(player.country))} · ${escapeHtml(formatAgeBand(player.age_band))} · ${escapeHtml(getPlayerAffiliation(player).directoryTeam)}</p>
+                      <p class="small-note">${escapeHtml(formatCountryName(player.country))} · ${escapeHtml(formatAgeBand(player.age_band))} · ${escapeHtml(formatPosition(player.primary_position))} · ${escapeHtml(getPlayerAffiliation(player).directoryTeam)}</p>
                       <p class="small-note">${escapeHtml(metaBuilder(player))}</p>
                     </div>
                     <div class="market-ranking-value">

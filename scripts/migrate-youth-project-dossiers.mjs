@@ -13,7 +13,8 @@ const targetIds = new Set([
   "evergrande-football-school",
   "luneng-football-school",
   "olympic-stars-germany",
-  "500-star-portugal"
+  "500-star-portugal",
+  "qingdao-west-coast-academy"
 ]);
 
 const membershipByView = {
@@ -343,7 +344,9 @@ const projects = JSON.parse(fs.readFileSync(projectPath, "utf8")).map((project) 
   return {
     ...project,
     completed: project.completed.includes(completionNote) ? project.completed : `${project.completed} ${completionNote}`,
-    next_step: "按复核周期继续补充仍为 needs-review 的当前去向，并用新的直接来源替换历史入口。"
+    next_step: project.id === "qingdao-west-coast-academy"
+      ? project.next_step
+      : "按复核周期继续补充仍为 needs-review 的当前去向，并用新的直接来源替换历史入口。"
   };
 });
 fs.writeFileSync(projectPath, `${JSON.stringify(projects, null, 2)}\n`);

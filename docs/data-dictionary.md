@@ -242,7 +242,9 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 
 `china_status` 允许 `qualification-cancelled`，用于资格路径或赛事因取消而中止的届次。旧届官方资料不足时，可用 RSSSF、赛事技术报告或 Wikipedia 作二级交叉来源，但需保留来源类型和核查日期。
 
-1983—2005 中国 U16/U17/U20 世界赛的 `china_squad[]` 固定包含 `appearances`、`starts`、`substitute_appearances`、`minutes` 和 `goals`。`minute_status.available_fields` 与 `missing_fields` 必须完整且互斥地声明五个字段的可用性：已核实值使用非负整数，资料不足的字段必须是 `null`，不得按比赛场次、首发阵容或标准比赛时长推算。`minute_status.status` 为 `partial` 时必须解释来源边界；只有五项均已从可靠逐场或技术报告核实时才能写 `complete`。
+2002 中国成年世界杯与 1983—2005 中国 U16/U17/U20 世界赛的 `china_squad[]` 固定包含 `appearances`、`starts`、`substitute_appearances`、`minutes` 和 `goals`。`minute_status.available_fields` 与 `missing_fields` 必须完整且互斥地声明五个字段的可用性：已核实值使用非负整数，资料不足的字段必须是 `null`，不得按比赛场次、首发阵容、换人时间或标准比赛时长推算。`minute_status.status` 为 `partial` 时必须解释来源边界；只有五项均已从可靠逐场或技术报告核实时才能写 `complete`。
+
+`minute_status.verified_totals` 保存本届中国队的可复算审计总计：`matches` 必须等于 `china_matches` 数量，其他键只能对应 `available_fields`。校验器要求逐人加总与这些值完全一致；存在完整首发数据时，首发总数还必须等于比赛数乘 11，出场总数必须等于首发与替补登场总数之和。分钟总计采用技术报告直接公布的逐人值之和，不以比赛时长倒推，因此红牌等特殊情况不会被错误填平。
 
 ## 留洋历史
 
