@@ -611,6 +611,29 @@ const UI_COPY = {
     "tournamentDetail.context.headline": "当前摘要",
     "tournamentDetail.context.focusTeams": "重点队伍",
     "tournamentDetail.context.empty": "当前只有基础赛事档案，还没有额外专题说明。",
+    "tournamentDetail.broadcast.eyebrow": "Broadcast",
+    "tournamentDetail.broadcast.title": "转播计划",
+    "tournamentDetail.broadcast.status.complete": "官方计划已核实",
+    "tournamentDetail.broadcast.status.partial": "部分信息待核",
+    "tournamentDetail.broadcast.status.unavailable": "转播信息不可用",
+    "tournamentDetail.broadcast.kickoff": "开球：{date} {time}（{timezone}）",
+    "tournamentDetail.broadcast.venue": "场地：{venue}",
+    "tournamentDetail.broadcast.stage": "阶段：{stage}",
+    "tournamentDetail.broadcast.platforms": "转播平台",
+    "tournamentDetail.broadcast.checked": "最后核查：{date}",
+    "tournamentDetail.broadcast.source": "查看中国足球队官方预告",
+    "tournamentDetail.broadcast.poster": "查看官方转播海报",
+    "tournamentDetail.ticketing.eyebrow": "Tickets",
+    "tournamentDetail.ticketing.title": "现场观赛",
+    "tournamentDetail.ticketing.status.announced": "票务已公布",
+    "tournamentDetail.ticketing.status.on-sale": "预售进行中",
+    "tournamentDetail.ticketing.status.closed": "售票已结束",
+    "tournamentDetail.ticketing.status.unavailable": "暂无票务信息",
+    "tournamentDetail.ticketing.prices": "男足票档：{prices}",
+    "tournamentDetail.ticketing.package": "{people} 人套票优惠 {discount}%",
+    "tournamentDetail.ticketing.channels": "销售渠道",
+    "tournamentDetail.ticketing.checked": "票务核查：{date}",
+    "tournamentDetail.ticketing.source": "查看上海官方票务指南",
     "tournamentDetail.field.eyebrow": "Teams & Draw",
     "tournamentDetail.field.title": "参赛资格与分组",
     "tournamentDetail.field.meta": "决赛圈记录 {count} 支球队 · 最后核查 {date}",
@@ -1473,6 +1496,29 @@ const UI_COPY = {
     "tournamentDetail.context.headline": "Current headline",
     "tournamentDetail.context.focusTeams": "Focus teams",
     "tournamentDetail.context.empty": "Only the base archive record is available for this tournament so far.",
+    "tournamentDetail.broadcast.eyebrow": "Broadcast",
+    "tournamentDetail.broadcast.title": "Broadcast plan",
+    "tournamentDetail.broadcast.status.complete": "Official plan verified",
+    "tournamentDetail.broadcast.status.partial": "Partially verified",
+    "tournamentDetail.broadcast.status.unavailable": "Broadcast details unavailable",
+    "tournamentDetail.broadcast.kickoff": "Kickoff: {date} {time} ({timezone})",
+    "tournamentDetail.broadcast.venue": "Venue: {venue}",
+    "tournamentDetail.broadcast.stage": "Stage: {stage}",
+    "tournamentDetail.broadcast.platforms": "Broadcast platforms",
+    "tournamentDetail.broadcast.checked": "Last checked: {date}",
+    "tournamentDetail.broadcast.source": "View the official China National Team announcement",
+    "tournamentDetail.broadcast.poster": "View the official broadcast poster",
+    "tournamentDetail.ticketing.eyebrow": "Tickets",
+    "tournamentDetail.ticketing.title": "Attend in person",
+    "tournamentDetail.ticketing.status.announced": "Ticketing announced",
+    "tournamentDetail.ticketing.status.on-sale": "Pre-sales open",
+    "tournamentDetail.ticketing.status.closed": "Ticket sales closed",
+    "tournamentDetail.ticketing.status.unavailable": "Ticketing unavailable",
+    "tournamentDetail.ticketing.prices": "Men's ticket tiers: {prices}",
+    "tournamentDetail.ticketing.package": "{people}-person package: {discount}% off",
+    "tournamentDetail.ticketing.channels": "Sales channels",
+    "tournamentDetail.ticketing.checked": "Ticketing checked: {date}",
+    "tournamentDetail.ticketing.source": "View the official Shanghai ticketing guide",
     "tournamentDetail.field.eyebrow": "Teams & Draw",
     "tournamentDetail.field.title": "Qualification and groups",
     "tournamentDetail.field.meta": "{count} finals teams recorded · Last checked {date}",
@@ -6711,11 +6757,116 @@ function renderTournamentField(tournament, elements) {
   section.hidden = false;
 }
 
+function renderTournamentBroadcastPlan(plan, section, container) {
+  if (!section || !container) {
+    return;
+  }
+
+  section.hidden = !plan;
+  if (!plan) {
+    container.innerHTML = "";
+    return;
+  }
+
+  const match = plan.match;
+  const platformMarkup = (plan.platforms ?? []).length > 0
+    ? `
+      <p class="timeline-label">${escapeHtml(t("tournamentDetail.broadcast.platforms"))}</p>
+      <ul class="mini-bullet-list">
+        ${(plan.platforms ?? [])
+          .map((platform) => {
+            const channels = (platform.channels ?? []).map((channel) => localizeText(channel)).join(" · ");
+            return `<li><strong>${escapeHtml(localizeText(platform.name))}</strong>：${escapeHtml(channels)}</li>`;
+          })
+          .join("")}
+      </ul>
+    `
+    : `<p class="small-note">${escapeHtml(t("common.pending"))}</p>`;
+  const sourceLink = plan.source?.url
+    ? `<a class="inline-link" href="${escapeHtml(plan.source.url)}" target="_blank" rel="noreferrer">${escapeHtml(t("tournamentDetail.broadcast.source"))}</a>`
+    : "";
+  const posterLink = plan.source?.poster_url
+    ? `<a class="inline-link" href="${escapeHtml(plan.source.poster_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("tournamentDetail.broadcast.poster"))}</a>`
+    : "";
+
+  container.innerHTML = `
+    <article class="stack-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t(`tournamentDetail.broadcast.status.${plan.status}`))}</span>
+        <span class="chip">${escapeHtml(localizeText(match.stage))}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(plan.announcement_title))}</h3>
+      <p><strong>${escapeHtml(localizeText(match.home_team))}</strong> vs <strong>${escapeHtml(localizeText(match.away_team))}</strong></p>
+      <p>${escapeHtml(t("tournamentDetail.broadcast.kickoff", {
+        date: formatDate(match.date),
+        time: match.kickoff,
+        timezone: match.timezone
+      }))}</p>
+      <p>${escapeHtml(t("tournamentDetail.broadcast.venue", { venue: localizeText(match.venue) }))}</p>
+      ${platformMarkup}
+      <p class="small-note">${escapeHtml(localizeText(plan.note))}</p>
+      <p class="small-note">${escapeHtml(t("tournamentDetail.broadcast.checked", { date: formatDate(plan.checked_at) }))}</p>
+      <div class="pill-row">${sourceLink}${posterLink}</div>
+    </article>
+  `;
+}
+
+function renderTournamentTicketing(ticketing, section, container) {
+  if (!section || !container) {
+    return;
+  }
+
+  section.hidden = !ticketing;
+  if (!ticketing) {
+    container.innerHTML = "";
+    return;
+  }
+
+  const priceLabels = (ticketing.price_tiers ?? []).map((price) => {
+    if (ticketing.currency === "CNY") {
+      return state.language === "en" ? `CN¥${price}` : `${price} 元`;
+    }
+    return `${ticketing.currency} ${price}`;
+  });
+  const packageMarkup = (ticketing.packages ?? [])
+    .map((offer) => `<span class="chip">${escapeHtml(t("tournamentDetail.ticketing.package", {
+      people: offer.people,
+      discount: offer.discount_percent
+    }))}</span>`)
+    .join("");
+  const channelMarkup = (ticketing.sales_channels ?? [])
+    .map((channel) => `<span class="chip">${escapeHtml(localizeText(channel))}</span>`)
+    .join("");
+  const sourceLink = ticketing.source?.url
+    ? `<a class="inline-link" href="${escapeHtml(ticketing.source.url)}" target="_blank" rel="noreferrer">${escapeHtml(t("tournamentDetail.ticketing.source"))}</a>`
+    : "";
+
+  container.innerHTML = `
+    <article class="stack-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t(`tournamentDetail.ticketing.status.${ticketing.status}`))}</span>
+        ${packageMarkup}
+      </div>
+      <h3>${escapeHtml(t("tournamentDetail.ticketing.prices", { prices: priceLabels.join(" · ") }))}</h3>
+      <p class="timeline-label">${escapeHtml(t("tournamentDetail.ticketing.channels"))}</p>
+      <div class="chip-row">${channelMarkup}</div>
+      <p>${escapeHtml(localizeText(ticketing.loyalty_offer))}</p>
+      <p class="small-note">${escapeHtml(localizeText(ticketing.note))}</p>
+      <p class="small-note">${escapeHtml(t("tournamentDetail.ticketing.checked", { date: formatDate(ticketing.checked_at) }))}</p>
+      ${sourceLink}
+    </article>
+  `;
+}
+
 function renderTournamentDetailPage() {
   const hero = document.querySelector("#tournamentDetailHero");
   const body = document.querySelector("#tournamentDetailBody");
   const stats = document.querySelector("#tournamentDetailStats");
   const context = document.querySelector("#tournamentDetailContext");
+  const broadcastSection = document.querySelector("#tournamentDetailBroadcastSection");
+  const broadcast = document.querySelector("#tournamentDetailBroadcast");
+  const ticketingSection = document.querySelector("#tournamentDetailTicketingSection");
+  const ticketing = document.querySelector("#tournamentDetailTicketing");
   const fieldSection = document.querySelector("#tournamentDetailFieldSection");
   const fieldMeta = document.querySelector("#tournamentDetailFieldMeta");
   const participants = document.querySelector("#tournamentDetailParticipants");
@@ -6855,6 +7006,17 @@ function renderTournamentDetailPage() {
         </article>
       `
       : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.context.empty"))}</div>`;
+
+  renderTournamentBroadcastPlan(
+    focusTournament?.broadcast_plan ?? archiveTournament?.broadcast_plan ?? null,
+    broadcastSection,
+    broadcast
+  );
+  renderTournamentTicketing(
+    focusTournament?.ticketing ?? archiveTournament?.ticketing ?? null,
+    ticketingSection,
+    ticketing
+  );
 
   renderTournamentField(archiveTournament, {
     section: fieldSection,
