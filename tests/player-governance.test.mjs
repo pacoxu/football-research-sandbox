@@ -39,3 +39,10 @@ test("keeps registration and current pathway organization types aligned", async 
     if (current) assert.equal(current.organization_type, player.registration_club.organization_type, player.id);
   }
 });
+
+test("uses reviewed Chinese names from explicit overrides", async () => {
+  const dataset = await loadDataset();
+  const namesById = new Map(dataset.players.map((player) => [player.id, player.names.zh]));
+  assert.equal(namesById.get("uz-abdukodir-khusanov-2004"), "胡桑洛夫");
+  assert.equal(namesById.get("au-lucas-herrington-2007"), "卢卡斯·赫林顿");
+});
