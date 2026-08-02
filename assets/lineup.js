@@ -19,7 +19,7 @@ const players = [
   { id: "cn-du-yuezheng", name: "杜月徵", en: "Du Yuezheng", country: "China PR", position: "FWD", role: "中锋", club: "重庆铜梁龙（马贝拉外租）", era: "returned" },
   { id: "cn-chen-shihan", name: "Chen Shihan", en: "Chen Shihan", country: "China PR", position: "MID", role: "中场", club: "Union Rochefortoise", era: "current" },
   { id: "cn-sun-kangbo", name: "Sun Kangbo", en: "Sun Kangbo", country: "China PR", position: "DEF", role: "后卫", club: "FK Vozdovac", era: "current" },
-  { id: "cn-wei-xiangxin", name: "魏祥鑫", en: "Wei Xiangxin", country: "China PR", position: "FWD", role: "中锋", club: "AJ Auxerre", era: "current" },
+  { id: "cn-wei-xiangxin", name: "魏祥鑫", en: "Wei Xiangxin", country: "China PR", position: "FWD", role: "中锋 / 右边锋", club: "AJ Auxerre", era: "current" },
   { id: "cn-wang-xiuhao", name: "汪修昊", en: "Wang Xiuhao", country: "China PR", position: "DEF", role: "右后卫", club: "DAMM CF", era: "current" },
   { id: "cn-wan-xiang", name: "万项", en: "Wan Xiang", country: "China PR", position: "MID", role: "前腰", club: "Red Star Belgrade U17", era: "current" },
   { id: "cn-jin-yucheng", name: "金昱成", en: "Jin Yucheng", country: "China PR", position: "DEF", role: "中后卫", club: "NK Lokomotiva Zagreb", era: "current" },
