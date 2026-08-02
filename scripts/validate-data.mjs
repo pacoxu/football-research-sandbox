@@ -259,6 +259,8 @@ const allowedTournamentSourceVersionTypes = new Set([
 const allowedTournamentParticipantStatuses = new Set(["complete", "partial", "cancelled-snapshot"]);
 const allowedTournamentEntryStatuses = new Set(["host", "qualified", "participant"]);
 const allowedTournamentDrawStatuses = new Set(["complete", "pending", "cancelled"]);
+const allowedTournamentBroadcastStatuses = new Set(["complete", "partial", "unavailable"]);
+const allowedTournamentTicketingStatuses = new Set(["announced", "on-sale", "closed", "unavailable"]);
 
 const allowedAsianCoachCompetitionScopes = new Set([
   "europe_non_big_five_top_flight",
@@ -940,6 +942,121 @@ function validateTournamentField(tournament) {
     }
     assert(new Set(qualifierTeams).size === qualifierTeams.length, `Team appears in multiple qualifier groups on ${tournament.id}`);
   }
+}
+
+function validateTournamentBroadcastPlan(tournament) {
+  const plan = tournament.broadcast_plan;
+  if (plan === undefined) {
+    return;
+  }
+
+  assert(plan && typeof plan === "object", `Invalid broadcast_plan on ${tournament.id}`);
+  assert(
+    allowedTournamentBroadcastStatuses.has(plan.status),
+    `Invalid broadcast_plan status on ${tournament.id}`
+  );
+  assert(isIsoDate(plan.checked_at), `Invalid broadcast_plan checked_at on ${tournament.id}`);
+  assert(isIsoDate(plan.published_at), `Invalid broadcast_plan published_at on ${tournament.id}`);
+  validateLocalizedText(plan.announcement_title, `${tournament.id} broadcast announcement title`);
+  validateLocalizedText(plan.note, `${tournament.id} broadcast note`);
+
+  const match = plan.match;
+  assert(match && typeof match === "object", `Missing broadcast match on ${tournament.id}`);
+  assert(isIsoDate(match.date), `Invalid broadcast match date on ${tournament.id}`);
+  assert(/^([01]\d|2[0-3]):[0-5]\d$/.test(match.kickoff), `Invalid broadcast kickoff on ${tournament.id}`);
+  assert(typeof match.timezone === "string" && match.timezone.length > 0, `Missing broadcast timezone on ${tournament.id}`);
+  assert(
+    match.date >= tournament.date_range.start && match.date <= tournament.date_range.end,
+    `Broadcast match falls outside tournament dates on ${tournament.id}`
+  );
+  for (const field of ["home_team", "away_team", "stage", "venue"]) {
+    validateLocalizedText(match[field], `${tournament.id} broadcast match ${field}`);
+  }
+  assert(match.home_team.en !== match.away_team.en, `Broadcast match repeats one team on ${tournament.id}`);
+
+  assert(Array.isArray(plan.platforms), `Invalid broadcast platforms on ${tournament.id}`);
+  if (plan.status === "complete") {
+    assert(plan.platforms.length > 0, `Complete broadcast plan has no platforms on ${tournament.id}`);
+  }
+  const platformNames = new Set();
+  for (const [index, platform] of plan.platforms.entries()) {
+    validateLocalizedText(platform.name, `${tournament.id} broadcast platform ${index}`);
+    assert(!platformNames.has(platform.name.en), `Duplicate broadcast platform on ${tournament.id}: ${platform.name.en}`);
+    platformNames.add(platform.name.en);
+    assert(Array.isArray(platform.channels) && platform.channels.length > 0, `Missing broadcast channels on ${tournament.id}:${platform.name.en}`);
+    const channelNames = new Set();
+    for (const [channelIndex, channel] of platform.channels.entries()) {
+      validateLocalizedText(channel, `${tournament.id} broadcast channel ${index}:${channelIndex}`);
+      assert(!channelNames.has(channel.en), `Duplicate broadcast channel on ${tournament.id}:${channel.en}`);
+      channelNames.add(channel.en);
+    }
+  }
+
+  assert(plan.source && typeof plan.source === "object", `Missing broadcast source on ${tournament.id}`);
+  assert(/^https?:\/\//.test(plan.source.url), `Invalid broadcast source url on ${tournament.id}`);
+  assert(isIsoDate(plan.source.checked_at), `Invalid broadcast source checked_at on ${tournament.id}`);
+  if (plan.source.poster_url !== undefined) {
+    assert(/^https?:\/\//.test(plan.source.poster_url), `Invalid broadcast poster url on ${tournament.id}`);
+  }
+}
+
+function validateTournamentTicketing(tournament) {
+  const ticketing = tournament.ticketing;
+  if (ticketing === undefined) {
+    return;
+  }
+
+  assert(ticketing && typeof ticketing === "object", `Invalid ticketing on ${tournament.id}`);
+  assert(
+    allowedTournamentTicketingStatuses.has(ticketing.status),
+    `Invalid ticketing status on ${tournament.id}`
+  );
+  assert(isIsoDate(ticketing.checked_at), `Invalid ticketing checked_at on ${tournament.id}`);
+  assert(/^[A-Z]{3}$/.test(ticketing.currency), `Invalid ticketing currency on ${tournament.id}`);
+  assert(Array.isArray(ticketing.price_tiers), `Invalid ticketing price tiers on ${tournament.id}`);
+  assert(
+    ticketing.price_tiers.every((price) => Number.isInteger(price) && price >= 0),
+    `Invalid ticketing price on ${tournament.id}`
+  );
+  assert(
+    new Set(ticketing.price_tiers).size === ticketing.price_tiers.length,
+    `Duplicate ticketing price tier on ${tournament.id}`
+  );
+  assert(
+    ticketing.price_tiers.every((price, index, prices) => index === 0 || price > prices[index - 1]),
+    `Unsorted ticketing price tiers on ${tournament.id}`
+  );
+  if (ticketing.status === "on-sale") {
+    assert(ticketing.price_tiers.length > 0, `On-sale ticketing has no price tiers on ${tournament.id}`);
+  }
+
+  assert(Array.isArray(ticketing.packages), `Invalid ticket packages on ${tournament.id}`);
+  const packageSizes = new Set();
+  for (const offer of ticketing.packages) {
+    assert(Number.isInteger(offer.people) && offer.people >= 2, `Invalid ticket package size on ${tournament.id}`);
+    assert(
+      Number.isInteger(offer.discount_percent) && offer.discount_percent >= 1 && offer.discount_percent <= 99,
+      `Invalid ticket package discount on ${tournament.id}`
+    );
+    assert(!packageSizes.has(offer.people), `Duplicate ticket package size on ${tournament.id}:${offer.people}`);
+    packageSizes.add(offer.people);
+  }
+
+  assert(Array.isArray(ticketing.sales_channels), `Invalid ticket sales channels on ${tournament.id}`);
+  if (ticketing.status === "on-sale") {
+    assert(ticketing.sales_channels.length > 0, `On-sale ticketing has no sales channels on ${tournament.id}`);
+  }
+  const channelNames = new Set();
+  for (const [index, channel] of ticketing.sales_channels.entries()) {
+    validateLocalizedText(channel, `${tournament.id} ticket sales channel ${index}`);
+    assert(!channelNames.has(channel.en), `Duplicate ticket sales channel on ${tournament.id}:${channel.en}`);
+    channelNames.add(channel.en);
+  }
+  validateLocalizedText(ticketing.loyalty_offer, `${tournament.id} ticket loyalty offer`);
+  validateLocalizedText(ticketing.note, `${tournament.id} ticketing note`);
+  assert(ticketing.source && typeof ticketing.source === "object", `Missing ticketing source on ${tournament.id}`);
+  assert(/^https?:\/\//.test(ticketing.source.url), `Invalid ticketing source url on ${tournament.id}`);
+  assert(isIsoDate(ticketing.source.checked_at), `Invalid ticketing source checked_at on ${tournament.id}`);
 }
 
 function validateWorldCup2030(tournament) {
@@ -3308,6 +3425,8 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
     validateTournamentDateRange(tournament, "focus tournament");
     validateTournamentLifecycle(tournament, referenceDate);
+    validateTournamentBroadcastPlan(tournament);
+    validateTournamentTicketing(tournament);
     if (tournament.id === "fifa-world-cup-2030") {
       validateTournamentField(tournament);
       validateWorldCup2030(tournament);

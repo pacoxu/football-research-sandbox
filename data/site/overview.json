@@ -239,7 +239,7 @@
       "short_name": "Shanghai Future Star U17 2026",
       "focus_level": "primary",
       "status": "upcoming",
-      "last_checked": "2026-07-30",
+      "last_checked": "2026-08-02",
       "date_range": {
         "start": "2026-08-03",
         "end": "2026-08-09"
@@ -251,13 +251,16 @@
         "Bayer Leverkusen U17",
         "Shanghai U17"
       ],
-      "headline": "中国 U17 将在上海明日之星冠军杯 A 组先后对阵阿森纳、毕尔巴鄂竞技和勒沃库森；首战为 8 月 3 日 19:35 对阿森纳 U17。",
+      "headline": "中国 U17 将在上海明日之星冠军杯 A 组先后对阵阿森纳、毕尔巴鄂竞技和勒沃库森；首战为 8 月 3 日 19:35 对阿森纳 U17，官方转播为“足球中国”的微博、抖音、快手和视频号。",
       "notes": [
         "男足赛事于 2026-08-03 至 2026-08-09 在上汽浦东足球场和源深体育中心举行，共 8 支 U17 球队参赛。",
         "A 组为中国 U17、毕尔巴鄂竞技 U17、勒沃库森 U17、阿森纳 U17；B 组为上海 U17、托特纳姆热刺 U17、河床 U17、葡萄牙体育 U17。",
         "中国 U17 已公布的小组赛赛程为：8 月 3 日 19:35 对阿森纳、8 月 4 日 16:00 对毕尔巴鄂竞技、8 月 6 日 19:35 对勒沃库森；淘汰或排位阶段延续至 8 月 9 日。",
         "中国足协 7 月 25 日公布第五期集训通知：球队 7 月 27 日至 8 月 10 日在上海集训并参赛，主教练为浮嶋敏，参训运动员 28 人。该名单是集训池，不自动等同于每场比赛报名或首发阵容。",
-        "阿森纳 U17 的参赛席位已由上海赛事主办方确认；截至 7 月 31 日，尚未检索到阿森纳俱乐部发布的本届赛事出征名单，因此不根据往期梯队名单推定来沪球员。",
+        "中国足球队官方微博 8 月 2 日确认首轮在上汽浦东足球场进行；转播平台为“足球中国”的微博、抖音、快手和视频号。官方海报未列央视、咪咕或其他平台，因此不根据上一站银川赛事或聚合直播站补写渠道。",
+        "本届是赛事自 2022 年创办以来的第五届，年度主题为“明日之星，世界同场”；男、女足两项合计 16 支球队、40 场比赛。本条仍只统计 8 月 3 日至 9 日的男足赛事。",
+        "男足门票预售已开启，公开票档为 50、80、120、200 元；双人套票八五折、三人套票八折，官方公布的销售渠道为大麦和久事体育。具体场次余票、席位与优惠适用情况以售票平台实时页面为准。",
+        "阿森纳 U17 的参赛席位已由上海赛事主办方确认；截至 8 月 2 日，尚未检索到阿森纳俱乐部发布的本届赛事出征名单，因此不根据往期梯队名单推定来沪球员。",
         "同一品牌下的首届女足赛事另于 8 月 16 日至 22 日举行，也有阿森纳 U17 女足参赛；本条只统计男足赛事，避免混合两套赛程。"
       ],
       "participants": {
@@ -327,6 +330,118 @@
             ]
           }
         ]
+      },
+      "broadcast_plan": {
+        "status": "complete",
+        "checked_at": "2026-08-02",
+        "published_at": "2026-08-02",
+        "announcement_title": {
+          "zh": "上海明日之星冠军杯｜中国 U-17 男足 VS 阿森纳 U-17 男足转播计划",
+          "en": "Shanghai Future Star Cup: China U17 vs Arsenal U17 broadcast plan"
+        },
+        "match": {
+          "date": "2026-08-03",
+          "kickoff": "19:35",
+          "timezone": "Asia/Shanghai",
+          "home_team": {
+            "zh": "中国 U-17 男足",
+            "en": "China PR U17"
+          },
+          "away_team": {
+            "zh": "阿森纳 U-17 男足",
+            "en": "Arsenal U17"
+          },
+          "stage": {
+            "zh": "小组赛第一轮",
+            "en": "Group stage, matchday 1"
+          },
+          "venue": {
+            "zh": "上汽浦东足球场",
+            "en": "SAIC Motor Pudong Arena"
+          }
+        },
+        "platforms": [
+          {
+            "name": {
+              "zh": "足球中国",
+              "en": "Football China"
+            },
+            "channels": [
+              {
+                "zh": "微博",
+                "en": "Weibo"
+              },
+              {
+                "zh": "抖音",
+                "en": "Douyin"
+              },
+              {
+                "zh": "快手",
+                "en": "Kuaishou"
+              },
+              {
+                "zh": "视频号",
+                "en": "WeChat Channels"
+              }
+            ]
+          }
+        ],
+        "note": {
+          "zh": "平台范围严格按中国足球队官方海报记录；官方海报只列“足球中国”四个社媒渠道，不推定电视台、客户端或其他二次分发平台。",
+          "en": "The platform scope follows the official China National Football Team poster: only Football China's four social channels are listed, without inferring TV, app, or secondary-distribution platforms."
+        },
+        "source": {
+          "label": "China National Football Team official China U17 vs Arsenal U17 broadcast announcement",
+          "publisher": "China National Football Team / 中国足球队",
+          "url": "https://weibo.com/1892463935/RbwYI4VOv",
+          "poster_url": "https://wx1.sinaimg.cn/large/00244AjRly1ifpi6c13onj60zl0zlk3102.jpg",
+          "checked_at": "2026-08-02"
+        }
+      },
+      "ticketing": {
+        "status": "on-sale",
+        "checked_at": "2026-08-02",
+        "currency": "CNY",
+        "price_tiers": [
+          50,
+          80,
+          120,
+          200
+        ],
+        "packages": [
+          {
+            "people": 2,
+            "discount_percent": 15
+          },
+          {
+            "people": 3,
+            "discount_percent": 20
+          }
+        ],
+        "sales_channels": [
+          {
+            "zh": "大麦",
+            "en": "Damai"
+          },
+          {
+            "zh": "久事体育",
+            "en": "Juss Sports"
+          }
+        ],
+        "loyalty_offer": {
+          "zh": "曾购买 2023—2025 届赛事门票的用户可获得专属优惠券，并可与套票折扣叠加；领取与使用条件以售票平台为准。",
+          "en": "Purchasers from the 2023–2025 editions may receive exclusive vouchers that can be combined with package discounts; eligibility and redemption follow the ticketing platforms."
+        },
+        "note": {
+          "zh": "票价为男足赛事公开票档，不代表每个场次、看台或席位在核查时均有余票；实时库存和退改规则以大麦、久事体育页面为准。",
+          "en": "These are the published men's-event price tiers, not a guarantee that every match, stand, or seat remains available. Live inventory and refund rules follow Damai and Juss Sports."
+        },
+        "source": {
+          "label": "Shanghai municipal government ticketing guide for the 2026 Future Star Cup",
+          "publisher": "Shanghai Municipal People's Government",
+          "url": "https://english.shanghai.gov.cn/en-SportsEvents/20260717/4a3a43f4a43e4254a7ba7b106857edf6.html",
+          "checked_at": "2026-08-02"
+        }
       },
       "latest_public_roster_view": {
         "label": {
@@ -570,6 +685,16 @@
           "label": "China U17 group-stage fixture times reported from the published schedule",
           "publisher": "Sina Sports",
           "url": "https://sports.sina.cn/2026-06-21/detail-iniecmta1322318.d.html"
+        },
+        {
+          "label": "China National Football Team official China U17 vs Arsenal U17 broadcast announcement",
+          "publisher": "China National Football Team / 中国足球队",
+          "url": "https://weibo.com/1892463935/RbwYI4VOv"
+        },
+        {
+          "label": "Shanghai municipal government tournament guide and ticketing channels",
+          "publisher": "Shanghai Municipal People's Government",
+          "url": "https://english.shanghai.gov.cn/en-SportsEvents/20260717/4a3a43f4a43e4254a7ba7b106857edf6.html"
         }
       ]
     },

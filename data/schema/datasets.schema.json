@@ -2,6 +2,99 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://football-research.local/schema/datasets.schema.json",
   "$defs": {
+    "tournamentBroadcastPlan": {
+      "type": "object",
+      "required": ["status", "checked_at", "published_at", "announcement_title", "match", "platforms", "note", "source"],
+      "properties": {
+        "status": { "enum": ["complete", "partial", "unavailable"] },
+        "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "published_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "announcement_title": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+        "match": {
+          "type": "object",
+          "required": ["date", "kickoff", "timezone", "home_team", "away_team", "stage", "venue"],
+          "properties": {
+            "date": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+            "kickoff": { "type": "string", "pattern": "^(?:[01]\\d|2[0-3]):[0-5]\\d$" },
+            "timezone": { "type": "string", "minLength": 1 },
+            "home_team": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+            "away_team": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+            "stage": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+            "venue": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" }
+          },
+          "additionalProperties": false
+        },
+        "platforms": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "channels"],
+            "properties": {
+              "name": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "channels": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" }
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "note": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+        "source": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "complete" } } },
+          "then": { "properties": { "platforms": { "minItems": 1 } } }
+        }
+      ],
+      "additionalProperties": false
+    },
+    "tournamentTicketing": {
+      "type": "object",
+      "required": ["status", "checked_at", "currency", "price_tiers", "packages", "sales_channels", "loyalty_offer", "note", "source"],
+      "properties": {
+        "status": { "enum": ["announced", "on-sale", "closed", "unavailable"] },
+        "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "currency": { "type": "string", "minLength": 3, "maxLength": 3 },
+        "price_tiers": {
+          "type": "array",
+          "items": { "type": "integer", "minimum": 0 }
+        },
+        "packages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["people", "discount_percent"],
+            "properties": {
+              "people": { "type": "integer", "minimum": 2 },
+              "discount_percent": { "type": "integer", "minimum": 1, "maximum": 99 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "sales_channels": {
+          "type": "array",
+          "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" }
+        },
+        "loyalty_offer": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+        "note": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+        "source": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "status": { "const": "on-sale" } } },
+          "then": {
+            "properties": {
+              "price_tiers": { "minItems": 1 },
+              "sales_channels": { "minItems": 1 }
+            }
+          }
+        }
+      ],
+      "additionalProperties": false
+    },
     "tournaments": {
       "type": "array",
       "items": {
@@ -12,6 +105,8 @@
           "name": { "type": "string", "minLength": 1 },
           "status": { "type": "string", "minLength": 1 },
           "last_checked": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+          "broadcast_plan": { "$ref": "#/$defs/tournamentBroadcastPlan" },
+          "ticketing": { "$ref": "#/$defs/tournamentTicketing" },
           "sources": { "type": "array", "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" } }
         },
         "additionalProperties": true
