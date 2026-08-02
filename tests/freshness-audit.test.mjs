@@ -1,10 +1,12 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  auditFreshness,
   buildFreshnessFinding,
   exitCodeForReport,
   parseIsoDate
 } from "../scripts/lib/freshness-audit.mjs";
+import { loadDataset } from "../scripts/lib/data-loader.mjs";
 
 function finding(lastChecked, reviewWindowDays) {
   return buildFreshnessFinding({
@@ -37,4 +39,16 @@ test("is non-blocking by default and strict only when findings exist", () => {
   assert.equal(exitCodeForReport({ findings: [{}] }, false), 0);
   assert.equal(exitCodeForReport({ findings: [] }, true), 0);
   assert.equal(exitCodeForReport({ findings: [{}] }, true), 1);
+});
+
+test("keeps China registration records clear after the issue 44 freshness cleanup", async () => {
+  const dataset = await loadDataset();
+  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-08-02");
+  const chinaRegistrationFindings = report.findings.filter(
+    (finding) =>
+      finding.entity_type === "player" &&
+      finding.field === "registration_club" &&
+      finding.entity_id.startsWith("cn-")
+  );
+  assert.deepEqual(chinaRegistrationFindings, []);
 });

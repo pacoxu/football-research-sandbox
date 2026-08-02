@@ -13,16 +13,16 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 839,
-    "stale_records": 58,
-    "needs_review_records": 238
+    "record_count": 924,
+    "stale_records": 10,
+    "needs_review_records": 322
   },
   "freshness": {
     "as_of": "2026-08-02",
-    "audited_records": 1035,
-    "overdue": 58,
+    "audited_records": 1204,
+    "overdue": 10,
     "by_window": {
-      "30": 58,
+      "30": 10,
       "90": 0,
       "180": 0
     }
@@ -34,20 +34,20 @@
         "zh": "球员",
         "en": "Players"
       },
-      "record_count": 459,
+      "record_count": 543,
       "quality": {
-        "complete": 58,
-        "mixed": 0,
-        "partial": 135,
-        "needs-review": 208,
-        "stale": 58,
+        "complete": 74,
+        "mixed": 4,
+        "partial": 163,
+        "needs-review": 292,
+        "stale": 10,
         "excluded": 0
       },
       "source_tiers": {
-        "1": 453,
+        "1": 538,
         "2": 2,
         "3": 1,
-        "4": 1,
+        "4": 0,
         "5": 2,
         "6": 0,
         "unclassified": 0
@@ -56,7 +56,7 @@
         "oldest": "2026-05-22",
         "newest": "2026-08-02"
       },
-      "overdue_records": 58,
+      "overdue_records": 10,
       "missing_fields": [
         {
           "field": "names.native_verified",
@@ -64,7 +64,7 @@
         },
         {
           "field": "source_layers",
-          "count": 66
+          "count": 60
         }
       ]
     },
@@ -105,11 +105,11 @@
         "zh": "赛事档案",
         "en": "Tournament archive"
       },
-      "record_count": 70,
+      "record_count": 71,
       "quality": {
         "complete": 0,
         "mixed": 0,
-        "partial": 70,
+        "partial": 71,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -121,7 +121,7 @@
         "4": 0,
         "5": 57,
         "6": 0,
-        "unclassified": 13
+        "unclassified": 14
       },
       "checked_at": {
         "oldest": "2026-06-28",
@@ -131,14 +131,14 @@
       "missing_fields": [
         {
           "field": "final_draw",
-          "count": 22
-        },
-        {
-          "field": "source_checked_at",
-          "count": 15
+          "count": 23
         },
         {
           "field": "source_version",
+          "count": 16
+        },
+        {
+          "field": "source_checked_at",
           "count": 15
         }
       ]

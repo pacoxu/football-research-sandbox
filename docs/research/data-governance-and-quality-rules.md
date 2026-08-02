@@ -54,6 +54,7 @@
 | `university-profile` | 大学球队官网、个体页或官方名单。 |
 | `club-profile` | 职业一线队、海外职业队或成年军队球队官网。 |
 | `league-registration` | J.League、K League、联赛当前注册或转会公告。 |
+| `match-report` | 官方俱乐部、联赛或可靠赛事页的当季出场记录；只支撑该场代表关系，不扩写完整注册周期。 |
 
 每条 `source_layers` 必须包含：
 
