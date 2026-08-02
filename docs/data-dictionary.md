@@ -211,7 +211,13 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 | `focus_teams` | 重点关注队伍。 |
 | `headline` | 页面摘要。 |
 | `notes` | 口径、赛果和边界说明。 |
+| `broadcast_plan` | 可选的单场转播计划；拆分比赛时间、场地、平台账号、核查状态与官方来源。 |
+| `ticketing` | 可选的现场观赛信息；记录销售状态、币种、票档、套票折扣、官方销售渠道与库存边界。 |
 | `sources` | 赛事来源列表。 |
+
+`broadcast_plan.status` 使用 `complete`、`partial` 或 `unavailable`。`complete` 至少要有一个已核平台，每个平台用 `name` 和 `channels[]` 区分发布主体与微博、抖音、快手、视频号等具体渠道；比赛对象、阶段、场地使用中英双语字段。平台未被官方预告列出时不得根据上一场比赛、节目表聚合站或惯例补写，边界写入 `note`。
+
+`ticketing.status` 使用 `announced`、`on-sale`、`closed` 或 `unavailable`。`on-sale` 必须同时有公开票档和销售渠道；`price_tiers` 只表示官方公布的价格层级，不代表实时余票，套票与老用户优惠分别写入 `packages`、`loyalty_offer`，退改和库存边界写入 `note`。
 
 `data/raw/tournament-archive.json` 维护更细的历史赛事、赛果、中国队比赛、关键球员、`source_version` 和 `source_conflict_note`。男子 U20 谱系另使用以下统一字段：
 
