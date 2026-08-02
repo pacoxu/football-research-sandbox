@@ -39,3 +39,9 @@ test("keeps registration and current pathway organization types aligned", async 
     if (current) assert.equal(current.organization_type, player.registration_club.organization_type, player.id);
   }
 });
+
+test("uses the reviewed Chinese name for Abdukodir Khusanov", async () => {
+  const dataset = await loadDataset();
+  const player = dataset.players.find((candidate) => candidate.id === "uz-abdukodir-khusanov-2004");
+  assert.equal(player?.names.zh, "胡桑洛夫");
+});
