@@ -117,11 +117,12 @@ const players = [
   { id: "jp-honda", name: "本田圭佑", en: "Keisuke Honda", country: "Japan", position: "MID", role: "前腰", club: "AC Milan", era: "history" },
   { id: "jp-okazaki", name: "冈崎慎司", en: "Shinji Okazaki", country: "Japan", position: "FWD", role: "前锋", club: "Leicester City", era: "history" },
 
-  { id: "kr-kim-seunggyu", name: "金承奎", en: "Kim Seung-gyu", country: "Korea Republic", position: "GK", role: "门将", club: "Al-Shabab", era: "current" },
+  { id: "kr-kim-seunggyu", name: "金承奎", en: "Kim Seung-gyu", country: "Korea Republic", position: "GK", role: "门将", club: "FC Tokyo", era: "current" },
   { id: "kr-kim-minjae", name: "金玟哉", en: "Kim Min-jae", country: "Korea Republic", position: "DEF", role: "中后卫", club: "Bayern Munich", era: "current" },
   { id: "kr-kim-jisoo", name: "金志洙", en: "Kim Ji-soo", country: "Korea Republic", position: "DEF", role: "中后卫", club: "Brentford", era: "current" },
   { id: "kr-lee-hanbeom", name: "李韩范", en: "Lee Han-beom", country: "Korea Republic", position: "DEF", role: "中后卫", club: "FC Midtjylland", era: "current" },
-  { id: "kr-lee-youngpyo-current", name: "薛英佑", en: "Seol Young-woo", country: "Korea Republic", position: "DEF", role: "边后卫", club: "Red Star Belgrade", era: "current" },
+  { id: "kr-lee-youngpyo-current", name: "薛英佑", en: "Seol Young-woo", country: "Korea Republic", position: "DEF", role: "右后卫", club: "Red Star Belgrade", era: "current" },
+  { id: "kr-lee-taeseok", name: "李泰锡", en: "Lee Tae-seok", country: "Korea Republic", position: "DEF", role: "左后卫", club: "Austria Wien", era: "current" },
   { id: "kr-lee-kangin", name: "李刚仁", en: "Lee Kang-in", country: "Korea Republic", position: "MID", role: "前腰", club: "Atlético Madrid", era: "current" },
   { id: "kr-hwang-inbeom", name: "黄仁范", en: "Hwang In-beom", country: "Korea Republic", position: "MID", role: "中场", club: "Feyenoord", era: "current" },
   { id: "kr-lee-jaesung", name: "李在城", en: "Lee Jae-sung", country: "Korea Republic", position: "MID", role: "中场", club: "Mainz 05", era: "current" },
@@ -137,13 +138,95 @@ const players = [
   { id: "kr-lee-youngpyo", name: "李荣杓", en: "Lee Young-pyo", country: "Korea Republic", position: "DEF", role: "左后卫", club: "Tottenham Hotspur", era: "history" },
   { id: "kr-cha-duri", name: "车杜里", en: "Cha Du-ri", country: "Korea Republic", position: "DEF", role: "右后卫", club: "Eintracht Frankfurt", era: "history" },
   { id: "kr-cha-bumkun", name: "车范根", en: "Cha Bum-kun", country: "Korea Republic", position: "FWD", role: "前锋", club: "Bayer Leverkusen", era: "history" },
-  { id: "kr-ahn-junghwan", name: "安贞焕", en: "Ahn Jung-hwan", country: "Korea Republic", position: "FWD", role: "前锋", club: "Perugia", era: "history" }
+  { id: "kr-ahn-junghwan", name: "安贞焕", en: "Ahn Jung-hwan", country: "Korea Republic", position: "FWD", role: "前锋", club: "Perugia", era: "history" },
+
+  { id: "au-mathew-ryan", name: "马修·瑞安", en: "Mathew Ryan", country: "Australia", position: "GK", role: "门将", club: "Levante UD", era: "current" },
+  { id: "au-jason-geria", name: "杰森·格里亚", en: "Jason Geria", country: "Australia", position: "DEF", role: "右后卫", club: "Albirex Niigata", era: "current" },
+  { id: "au-circati", name: "亚历山德罗·奇尔卡蒂", en: "Alessandro Circati", country: "Australia", position: "DEF", role: "中后卫", club: "Parma", era: "current" },
+  { id: "au-souttar", name: "哈里·苏塔", en: "Harry Souttar", country: "Australia", position: "DEF", role: "中后卫", club: "Leicester City", era: "current" },
+  { id: "au-jordan-bos", name: "乔丹·博斯", en: "Jordan Bos", country: "Australia", position: "DEF", role: "左后卫", club: "Feyenoord", era: "current" },
+  { id: "au-irvine", name: "杰克逊·欧文", en: "Jackson Irvine", country: "Australia", position: "MID", role: "中场", club: "St. Pauli", era: "current" },
+  { id: "au-hrustic", name: "阿伊丁·赫鲁斯蒂奇", en: "Ajdin Hrustic", country: "Australia", position: "MID", role: "前腰", club: "Heracles Almelo", era: "current" },
+  { id: "au-volpato", name: "克里斯蒂安·沃尔帕托", en: "Cristian Volpato", country: "Australia", position: "MID", role: "前腰", club: "Sassuolo", era: "current" },
+  { id: "au-mabil", name: "阿维尔·马比尔", en: "Awer Mabil", country: "Australia", position: "FWD", role: "左边锋", club: "CD Castellon", era: "current" },
+  { id: "au-irankunda", name: "内斯托里·伊兰昆达", en: "Nestory Irankunda", country: "Australia", position: "FWD", role: "右边锋", club: "Watford", era: "current" },
+  { id: "au-mohamed-toure", name: "穆罕默德·图雷", en: "Mohamed Toure", country: "Australia", position: "FWD", role: "中锋", club: "Norwich City", era: "current" },
+
+  { id: "ir-amir-abedzadeh", name: "阿米尔·阿贝德扎德", en: "Amir Abedzadeh", country: "IR Iran", position: "GK", role: "门将", club: "CD Castellon", era: "current" },
+  { id: "ir-majid-hosseini", name: "马吉德·侯赛尼", en: "Majid Hosseini", country: "IR Iran", position: "DEF", role: "中后卫", club: "Kayserispor", era: "current" },
+  { id: "ir-saeid-ezatolahi", name: "赛义德·埃扎托拉希", en: "Saeid Ezatolahi", country: "IR Iran", position: "DEF", role: "后腰 / 客串中卫", club: "Shabab Al Ahli", era: "current" },
+  { id: "ir-mohammad-ghorbani", name: "穆罕默德·戈尔巴尼", en: "Mohammad Ghorbani", country: "IR Iran", position: "DEF", role: "后腰 / 客串中卫", club: "Al Wahda", era: "current" },
+  { id: "ir-jahanbakhsh", name: "阿里雷扎·贾汉巴赫什", en: "Alireza Jahanbakhsh", country: "IR Iran", position: "MID", role: "右中场", club: "FCV Dender", era: "current" },
+  { id: "ir-ghoddos", name: "萨曼·古多斯", en: "Saman Ghoddos", country: "IR Iran", position: "MID", role: "前腰", club: "Kalba", era: "current" },
+  { id: "ir-mohebi", name: "穆罕默德·莫赫比", en: "Mohammad Mohebi", country: "IR Iran", position: "MID", role: "左中场", club: "FC Rostov", era: "current" },
+  { id: "ir-dennis-dargahi", name: "丹尼斯·达尔加希", en: "Dennis Dargahi", country: "IR Iran", position: "MID", role: "前腰", club: "Standard Liege", era: "current" },
+  { id: "ir-ghayedi", name: "迈赫迪·加耶迪", en: "Mehdi Ghayedi", country: "IR Iran", position: "FWD", role: "左边锋", club: "Al Nasr", era: "current" },
+  { id: "ir-taremi", name: "迈赫迪·塔雷米", en: "Mehdi Taremi", country: "IR Iran", position: "FWD", role: "中锋", club: "Olympiacos", era: "current" },
+  { id: "ir-moghanloo", name: "沙赫里亚尔·莫甘卢", en: "Shahriyar Moghanloo", country: "IR Iran", position: "FWD", role: "中锋", club: "Kalba", era: "current" },
+
+  { id: "sa-saud-abdulhamid", name: "沙特·阿卜杜勒哈米德", en: "Saud Abdulhamid", country: "Saudi Arabia", position: "DEF", role: "右后卫", club: "RC Lens", era: "current" },
+  { id: "sa-marwan-alsahafi", name: "马尔万·萨哈菲", en: "Marwan Al-Sahafi", country: "Saudi Arabia", position: "FWD", role: "左边锋", club: "Al-Ittihad（安特卫普租借结束）", era: "returned" },
+  { id: "sa-faisal-alghamdi", name: "费萨尔·加姆迪", en: "Faisal Al-Ghamdi", country: "Saudi Arabia", position: "MID", role: "中场", club: "Al-Ittihad（比尔肖特租借结束）", era: "returned" }
 ];
+
+// Transfermarkt 参考身价，单位为欧元；仅用于五套现役亚洲留洋推荐阵容。
+// 数值按 2026-08-02 可访问的最新快照核验，不代表实际转会费。
+const editorialMarketValues = {
+  "jp-suzuki-zion": 20_000_000,
+  "jp-sugawara": 5_500_000,
+  "jp-itakura": 8_000_000,
+  "jp-ito-hiroki": 18_000_000,
+  "jp-tomiyasu": 5_000_000,
+  "jp-endo": 4_000_000,
+  "jp-tanaka": 13_000_000,
+  "jp-kamada": 10_000_000,
+  "jp-kubo": 20_000_000,
+  "jp-ueda": 17_000_000,
+  "jp-mitoma": 22_000_000,
+  "kr-kim-seunggyu": 500_000,
+  "kr-lee-youngpyo-current": 6_500_000,
+  "kr-kim-minjae": 20_000_000,
+  "kr-lee-hanbeom": 3_000_000,
+  "kr-lee-taeseok": 2_000_000,
+  "kr-hwang-inbeom": 7_000_000,
+  "kr-lee-kangin": 28_000_000,
+  "kr-lee-jaesung": 2_000_000,
+  "kr-son": 15_000_000,
+  "kr-hwang-heechang": 6_000_000,
+  "kr-oh-hyeongyu": 15_000_000,
+  "au-mathew-ryan": 1_800_000,
+  "au-jason-geria": 350_000,
+  "au-circati": 12_000_000,
+  "au-souttar": 3_500_000,
+  "au-jordan-bos": 12_000_000,
+  "au-irvine": 1_000_000,
+  "au-hrustic": 600_000,
+  "au-volpato": 10_000_000,
+  "au-mabil": 500_000,
+  "au-irankunda": 8_000_000,
+  "au-mohamed-toure": 8_000_000,
+  "ir-amir-abedzadeh": 200_000,
+  "ir-majid-hosseini": 700_000,
+  "ir-saeid-ezatolahi": 1_800_000,
+  "ir-mohammad-ghorbani": 1_200_000,
+  "ir-jahanbakhsh": 500_000,
+  "ir-ghoddos": 1_200_000,
+  "ir-mohebi": 2_500_000,
+  "ir-dennis-dargahi": 2_000_000,
+  "ir-ghayedi": 4_500_000,
+  "ir-taremi": 2_000_000,
+  "ir-moghanloo": 800_000,
+  "sa-saud-abdulhamid": 9_000_000
+};
+const editorialMarketValueCheckedAt = "2026-08-02";
 
 const countryNames = {
   "China PR": "中国",
   Japan: "日本",
-  "Korea Republic": "韩国"
+  "Korea Republic": "韩国",
+  Australia: "澳大利亚",
+  "IR Iran": "伊朗",
+  "Saudi Arabia": "沙特阿拉伯"
 };
 
 const positionMeta = {
@@ -228,6 +311,162 @@ const editorialLineups = [
       "cn-wei-shihao",
       "cn-wu-lei",
       "cn-du-yuezheng"
+    ]
+  },
+  {
+    title: "日本现役留洋最佳阵容",
+    kicker: "CURRENT JAPAN XI",
+    note: "4-3-3：以铃木彩艳守门，四名欧洲主流联赛后卫托底；远藤航负责保护，久保建英与三笘薰从两侧制造推进。",
+    verifiedAt: "2026-08-02",
+    sourceLinks: [
+      {
+        label: "FIFA 2026 官方名单",
+        url: "https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf"
+      },
+      {
+        label: "Transfermarkt 日本身价",
+        url: "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/77"
+      }
+    ],
+    ids: [
+      "jp-suzuki-zion",
+      "jp-sugawara",
+      "jp-itakura",
+      "jp-ito-hiroki",
+      "jp-tomiyasu",
+      "jp-endo",
+      "jp-tanaka",
+      "jp-kamada",
+      "jp-kubo",
+      "jp-ueda",
+      "jp-mitoma"
+    ]
+  },
+  {
+    title: "韩国现役留洋最佳阵容",
+    kicker: "CURRENT KOREA XI",
+    note: "4-3-3：金玟哉统领防线，黄仁范与李在城提供跑动和平衡，李刚仁负责创造，孙兴慜和黄喜灿承担纵向冲击。",
+    verifiedAt: "2026-08-02",
+    sourceLinks: [
+      {
+        label: "FIFA 2026 官方名单",
+        url: "https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf"
+      },
+      {
+        label: "马竞李刚仁转会公告",
+        url: "https://www.atleticodemadrid.com/noticias/kang-in-lee-signs-with-atletico-de-madrid"
+      },
+      {
+        label: "Transfermarkt 韩国身价",
+        url: "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/87"
+      }
+    ],
+    ids: [
+      "kr-kim-seunggyu",
+      "kr-lee-youngpyo-current",
+      "kr-kim-minjae",
+      "kr-lee-hanbeom",
+      "kr-lee-taeseok",
+      "kr-hwang-inbeom",
+      "kr-lee-kangin",
+      "kr-lee-jaesung",
+      "kr-son",
+      "kr-hwang-heechang",
+      "kr-oh-hyeongyu"
+    ]
+  },
+  {
+    title: "澳大利亚现役留洋最佳阵容",
+    kicker: "CURRENT AUSTRALIA XI",
+    note: "4-3-3：瑞安的经验与苏塔的制空构成中轴，博斯负责左路推进；沃尔帕托居中组织，伊兰昆达提供爆点。",
+    verifiedAt: "2026-08-02",
+    sourceLinks: [
+      {
+        label: "Football Australia 2026 名单",
+        url: "https://socceroos.com.au/news/commbank-socceroos-squad-named-fifa-world-cup-2026tm"
+      },
+      {
+        label: "FIFA 2026 官方名单",
+        url: "https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf"
+      },
+      {
+        label: "Transfermarkt 澳大利亚身价",
+        url: "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/12"
+      }
+    ],
+    ids: [
+      "au-mathew-ryan",
+      "au-jason-geria",
+      "au-circati",
+      "au-souttar",
+      "au-jordan-bos",
+      "au-irvine",
+      "au-hrustic",
+      "au-volpato",
+      "au-mabil",
+      "au-irankunda",
+      "au-mohamed-toure"
+    ]
+  },
+  {
+    title: "伊朗现役留洋最佳阵容",
+    kicker: "CURRENT IR IRAN XI",
+    note: "3-4-3：海外专职后卫储备不足，埃扎托拉希与戈尔巴尼从后腰回撤；塔雷米领衔锋线，古多斯负责串联。",
+    verifiedAt: "2026-08-02",
+    sourceLinks: [
+      {
+        label: "FIFA 2026 官方名单",
+        url: "https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf"
+      },
+      {
+        label: "LaLiga 阿贝德扎德资料",
+        url: "https://www.laliga.com/en-US/player/amir-abedzadeh"
+      },
+      {
+        label: "土耳其足协侯赛尼资料",
+        url: "https://www.tff.org/Default.aspx?kisiId=2115677&pageId=30"
+      },
+      {
+        label: "Transfermarkt 伊朗身价",
+        url: "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/71"
+      }
+    ],
+    ids: [
+      "ir-amir-abedzadeh",
+      "ir-majid-hosseini",
+      "ir-saeid-ezatolahi",
+      "ir-mohammad-ghorbani",
+      "ir-jahanbakhsh",
+      "ir-ghoddos",
+      "ir-mohebi",
+      "ir-dennis-dargahi",
+      "ir-ghayedi",
+      "ir-taremi",
+      "ir-moghanloo"
+    ]
+  },
+  {
+    title: "沙特现役留洋推荐组",
+    kicker: "CURRENT SAUDI ABROAD",
+    note: "截至核验日只确认阿卜杜勒哈米德仍在海外注册。萨哈菲和费萨尔·加姆迪均已结束欧洲租借回到吉达联合，因此不硬凑 11 人。",
+    verifiedAt: "2026-08-02",
+    partial: true,
+    sourceLinks: [
+      {
+        label: "FIFA 2026 官方名单",
+        url: "https://fdp.fifa.org/assetspublic/ce281/pdf/SquadLists-English.pdf"
+      },
+      {
+        label: "AFC 沙特名单说明",
+        url: "https://www.the-afc.com/en/national/fifa_world_cup.html/news/al-dawsari-abdulhamid-to-lead-saudi-arabia"
+      },
+      {
+        label: "Transfermarkt 沙特身价",
+        url: "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/146"
+      }
+    ],
+    ids: [
+      "sa-saud-abdulhamid"
     ]
   }
 ];
@@ -523,10 +762,41 @@ function renderPitchPlayer(player, lane) {
   `;
 }
 
+function formatEditorialMarketValue(value) {
+  if (!Number.isFinite(value) || value <= 0) return "—";
+  if (value >= 1_000_000) {
+    const millions = value / 1_000_000;
+    const digits = Number.isInteger(millions) ? 0 : 1;
+    return `€${millions.toFixed(digits)}m`;
+  }
+  return `€${Math.round(value / 1_000)}k`;
+}
+
+function renderEditorialMarketSummary(players) {
+  const values = players
+    .map((player) => editorialMarketValues[player.id])
+    .filter((value) => Number.isFinite(value));
+  if (!values.length) return "";
+
+  const total = values.reduce((sum, value) => sum + value, 0);
+  const coverage = values.length === players.length
+    ? `${players.length} 人全覆盖`
+    : `${values.length} / ${players.length} 人有值`;
+  return `
+    <div class="editorial-market-summary">
+      <span>参考总身价</span>
+      <strong>${formatEditorialMarketValue(total)}</strong>
+      <small>Transfermarkt · ${coverage} · 核验 ${formatForecastDate(editorialMarketValueCheckedAt)}</small>
+    </div>
+  `;
+}
+
 function renderEditorialPitchPlayer(player, lane) {
   const role = assignedRoleLabel(player.role, lane);
+  const marketValue = formatEditorialMarketValue(editorialMarketValues[player.id]);
+  const marketValueTitle = marketValue === "—" ? "" : ` · 参考身价 ${marketValue}`;
   return `
-    <div class="pitch-player editorial-pitch-player" title="${player.name} · ${role} · ${player.club}">
+    <div class="pitch-player editorial-pitch-player" title="${player.name} · ${role} · ${player.club}${marketValueTitle}">
       <span class="pitch-player-disc">${player.name.slice(-2)}</span>
       <strong>${player.name}</strong>
       <small>${role}</small>
@@ -555,6 +825,20 @@ function renderEditorialPitch(players) {
     .join("");
 }
 
+function renderEditorialSources(lineup) {
+  if (!lineup.verifiedAt && !lineup.sourceLinks?.length) return "";
+  const verifiedLabel = lineup.verifiedAt
+    ? `<span>核验于 ${escapeForecastHtml(formatForecastDate(lineup.verifiedAt))}</span>`
+    : "";
+  const links = (lineup.sourceLinks ?? [])
+    .map(
+      (source) =>
+        `<a href="${escapeForecastHtml(source.url)}" target="_blank" rel="noreferrer">${escapeForecastHtml(source.label)}</a>`
+    )
+    .join("");
+  return `<div class="editorial-source-links">${verifiedLabel}${links}</div>`;
+}
+
 function renderEditorialLineups() {
   const grid = document.querySelector("#editorialLineupGrid");
   if (!grid) return;
@@ -567,17 +851,24 @@ function renderEditorialLineups() {
         { GK: 0, DEF: 0, MID: 0, FWD: 0 }
       );
       const formation = `${counts.DEF}-${counts.MID}-${counts.FWD}`;
+      const formationDisplay = lineup.partial ? `已核验 ${lineupPlayers.length}` : formation;
+      const pitchLabel = lineup.partial
+        ? `${lineup.title}，当前共 ${lineupPlayers.length} 人`
+        : `${lineup.title}，阵型 ${formation}`;
+      const hasMarketValues = lineupPlayers.some((player) =>
+        Number.isFinite(editorialMarketValues[player.id])
+      );
       return `
-        <article class="editorial-lineup-card">
+        <article class="editorial-lineup-card ${lineup.partial ? "is-partial" : ""}">
           <div class="editorial-card-head">
             <div>
               <span class="panel-kicker">${String(index + 1).padStart(2, "0")} · ${lineup.kicker}</span>
               <h3>${lineup.title}</h3>
             </div>
-            <strong class="editorial-formation">${formation}</strong>
+            <strong class="editorial-formation">${formationDisplay}</strong>
           </div>
           <p>${lineup.note}</p>
-          <div class="football-pitch editorial-pitch" aria-label="${lineup.title}，阵型 ${formation}">
+          <div class="football-pitch editorial-pitch ${lineup.partial ? "is-partial" : ""}" aria-label="${pitchLabel}">
             <div class="pitch-markings" aria-hidden="true">
               <span class="pitch-halfway"></span>
               <span class="pitch-center-circle"></span>
@@ -589,11 +880,24 @@ function renderEditorialLineups() {
             </div>
             ${renderEditorialPitch(lineupPlayers)}
           </div>
+          ${renderEditorialMarketSummary(lineupPlayers)}
           <ol class="editorial-player-list" aria-label="${lineup.title}球员名单">
             ${lineupPlayers
-              .map((player) => `<li><strong>${player.name}</strong><span>${player.club}</span></li>`)
+              .map((player) => {
+                const marketValue = formatEditorialMarketValue(editorialMarketValues[player.id]);
+                return `
+                  <li class="${hasMarketValues ? "has-market-value" : ""}">
+                    <div class="editorial-player-identity">
+                      <strong>${player.name}</strong>
+                      <span>${player.club}</span>
+                    </div>
+                    ${hasMarketValues ? `<span class="editorial-player-value" title="Transfermarkt 参考身价，不代表实际转会费">${marketValue}</span>` : ""}
+                  </li>
+                `;
+              })
               .join("")}
           </ol>
+          ${renderEditorialSources(lineup)}
         </article>
       `;
     })
