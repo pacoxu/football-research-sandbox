@@ -1282,13 +1282,13 @@
       ],
       "summary": "专题拆分为三条线索：公开可核的批次主干、09 年龄段核心球员数据库，以及董路主导的 2034 杯 U12 赛事平台。",
       "goal": "拆分球员数据库与 2034 杯赛事平台，分别记录长期培养球员与单届赛事参赛信息。",
-      "completed": "已核验 2024 年足协 U15 9 名可交叉确认球员、2025 年荷兰杯 21 人赛会名单、2023-2025 三届 2034 杯总决赛公开赛果，并补入 2009/2010/2014/2015/2016 批次的公开主干口径。 已升级为逐名人物、批次关系、可复算人数口径和唯一现状结构；待核线索不计入已验证核心。",
+      "completed": "已核验 2024 年足协 U15 9 名可交叉确认球员、2025 年荷兰杯 21 人赛会名单，并补齐 2021-2026 六届 2034 杯冠亚季军、可核个人奖项和射手榜覆盖状态；同时保留 2009/2010/2014/2015/2016 批次公开主干口径。 已升级为逐名人物、批次关系、可复算人数口径和唯一现状结构；待核线索不计入已验证核心。",
       "next_step": "按复核周期继续补充仍为 needs-review 的当前去向，并用新的直接来源替换历史入口。",
       "watch_items": [
         "09 主干线 9 名核心球员口径与荷兰杯 21 人口径的交集和差集",
         "2012/2013 梯队公开视频名单与可检索文字名单之间的缺口",
         "2034 杯赛事平台与长期培养主干之间的重合球员比例",
-        "2034 杯 2023-2025 三届总决赛冠军组赛果与 2025 年分区赛扩容",
+        "2034 杯 2021-2026 六届总决赛领奖台、个人奖项与射手榜覆盖率",
         "清华附中、地方足协、海外俱乐部之间的归属迁移",
         "赵松源、邝兆镭、万项、汪修昊等核心样本的后续轨迹",
         "外籍或合作球员在项目中的身份边界",
@@ -1448,6 +1448,27 @@
         "数据来源优先使用官方俱乐部公告、联赛官网和足协名单",
         "当前效力 MLS、比乙、葡萄牙次级联赛等非五大联赛样本的单独标记",
         "日韩 U21 职业体系样本与成年留洋数据库之间的衔接"
+      ]
+    },
+    {
+      "id": "qingdao-west-coast-academy",
+      "name": "青岛西海岸青训与U21出场追踪",
+      "status": "in-progress",
+      "priority": "high",
+      "focus_tags": [
+        "qingdao-west-coast-academy"
+      ],
+      "summary": "按一线队、U21、U19和可核低年龄段拆分青岛西海岸培养梯队，并以2023-2026赛季快照区分梯队联赛、适龄球员一线队实出场以及仅完成职业合同或升队的球员。",
+      "goal": "持续追踪青岛西海岸青训梯队建设、U21梯队战绩和U21适龄球员的一线队兑现情况。",
+      "completed": "已建立2023-2026四个赛季快照，补入2024梯队组建、2025/2026升队批次、2025青年联赛射手样本，以及李昊、徐彬、杨希、木塔力甫等U21适龄球员的一线队公开出场口径。",
+      "next_step": "等待中足联或俱乐部发布可长期访问的2026青年联赛秩序册、完整技术统计和赛季最终排名，再将阶段性快照升级。",
+      "watch_items": [
+        "职业俱乐部青年联赛在U21、U20等公开页面中的名称变化与年龄口径",
+        "梯队注册、签职业合同、升入一线队和实际比赛出场必须分开统计",
+        "2023赛季是否存在可核验的独立U21参赛记录",
+        "2024赛季淘汰赛C组完整积分、进球和球员出场明细",
+        "2025赛季U21/U20梯队完整出场、首发、分钟与进球数据",
+        "2026赛季截至日期后的排名变化与最终技术统计"
       ]
     }
   ],
@@ -7997,8 +8018,8 @@
       "focus_tags": [
         "donglu-football-boys"
       ],
-      "last_reviewed": "2026-07-25",
-      "summary": "这不是单一球队，而是叠在一起的两层结构：一层是以 2009 年龄段为核心、随后扩展到 2010、2014、2015、2016 等多年龄段的民间青训与比赛平台；另一层是董路主导的 2034 杯 U12 全国赛事平台。公开资料里较稳妥的做法，是先按批次整理公开可核主干，再把 2024 年足协 U15 第四期集训可交叉确认的 9 名球员、2025 年 6 月荷兰杯 21 人赛会名单和 2029 U20 图片线索单列管理，同时把 2034 杯第一至第六届按规模、赛程、赛果和来源单独建档；第六届总决赛已于 2026 年 7 月 25 日开赛，冠军将在 8 月 1 日产生。",
+      "last_reviewed": "2026-08-02",
+      "summary": "这不是单一球队，而是叠在一起的两层结构：一层是以 2009 年龄段为核心、随后扩展到 2010、2014、2015、2016 等多年龄段的民间青训与比赛平台；另一层是董路主导的 2034 杯 U12 全国赛事平台。公开资料里较稳妥的做法，是先按批次整理公开可核主干，再把 2024 年足协 U15 第四期集训可交叉确认的 9 名球员、2025 年 6 月荷兰杯 21 人赛会名单和 2029 U20 图片线索单列管理，同时把 2034 杯第一至第六届按规模、赛程、赛果和来源单独建档；第六届已于 2026 年 8 月 1 日完赛，亚洲明星联夺冠，中国足球小将红队获季军。",
       "source_document": {
         "title": "Bilibili space: 中国足球小将",
         "path": "https://space.bilibili.com/346344723"
@@ -8135,9 +8156,9 @@
           "summary": "可核验 2022 年第二届覆盖 33 个赛区、355 支球队和 5313 名球员；深圳西班牙竞技点球击败中国足球小将夺冠，广州铭途获季军。"
         },
         {
-          "title": "苏州工业园区：第六届2034杯总决赛赛前信息",
-          "path": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml",
-          "summary": "截至 2026-07-25 的第六届总决赛状态来源：比赛于 7 月 25 日至 8 月 1 日在苏州举行，128 支队伍、约 2600 名球员参赛，尚未产生最终名次。"
+          "title": "中国足球小将资料站：第六届2034杯逐场战报",
+          "path": "https://www.xiaojiangfc.com/cup/2034/",
+          "summary": "可核验第六届448场公开战报及8月1日最终赛果：亚洲明星联6比2杭州足管夺冠，中国足球小将红队1比0青岛西海岸获季军。"
         },
         {
           "title": "苏州奥体中心：第六届2034杯128强与揭幕战信息",
@@ -8254,9 +8275,9 @@
           "detail": "2026 AFC U17 亚洲杯中，中国队打进决赛，09 主干线的项目成果进入集中兑现期。"
         },
         {
-          "date": "2026-07",
-          "label": "2034杯第六届总决赛进行中",
-          "detail": "第六届分区赛覆盖 39 个赛区、882 支球队和 12604 名球员；128 支国内外球队、约 2600 名球员于 7 月 25 日至 8 月 1 日在苏州参加总决赛。截至 7 月 25 日尚未产生冠亚季军。"
+          "date": "2026-08-01",
+          "label": "2034杯第六届总决赛收官",
+          "detail": "第六届分区赛覆盖39个赛区、882支球队和12604名球员；128支总决赛队完成448场公开战报，亚洲明星联6比2杭州足管夺冠，中国足球小将红队1比0青岛西海岸获季军。"
         }
       ],
       "roster_views": [
@@ -9251,8 +9272,8 @@
         "2025 荷兰杯 21 人里外籍或合作球员的注册关系与合同关系。",
         "2016 梯队首批正式成队名单何时公开、与早期试训名单重合度多高。",
         "2034 杯早期届次仍需补齐可公开访问的一手规程、完整组织名单和完整个人奖项。",
-        "2034 杯第四届个人奖项尚无可靠公开来源；其余届次的低置信奖项也需赛事官方材料复核。",
-        "2034 杯第六届采用截至 2026-07-25 的开赛日快照，冠军、最终名次、决赛比分和个人奖项须在 8 月 1 日后另行回填。",
+        "2034 杯第四届个人奖项在校方与媒体稿中存在称谓冲突，仍需赛事官方获奖名单复核。",
+        "2034 杯第六届最终个人奖项与完整射手榜尚无稳定公开来源；现有12球数据只是7月29日阶段性快照。",
         "2034 杯历届中国足球小将参赛名单与长期培养核心名单到底有多大重合，仍需逐届拆表。",
         "分区赛直通、邀请、联合组队和外地借调的边界规则，是否每届都有统一书面规程，仍需继续补官方文件。",
         "项目后续多年龄段梯队如何与国字号、职业俱乐部和学校系统并表。",
@@ -9472,7 +9493,7 @@
         ]
       },
       "schema_version": 2,
-      "source_checked_at": "2026-07-25",
+      "source_checked_at": "2026-08-02",
       "people": [
         {
           "id": "donglu-football-boys-毛永彬",
@@ -11762,6 +11783,10 @@
           "title_name": "2034杯",
           "date_start": "2021-05-01",
           "date_end": "2021-05-05",
+          "coverage": {
+            "status": "partial",
+            "note": "冠亚季军与MVP可核；未找到可公开复核的完整射手排名与进球数。"
+          },
           "qualifying": {
             "regions": 31,
             "teams": 340,
@@ -11786,8 +11811,17 @@
             "final_score": null,
             "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
           },
+          "podium": {
+            "champion": "中国足球小将红队",
+            "runner_up": "深圳西班牙竞技",
+            "third_place": "河南星途",
+            "fourth_place": "中国足球小将蓝队",
+            "final_score": null,
+            "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
+          },
           "awards": [
             {
+              "award_key": "mvp",
               "type": "最有价值球员（MVP）",
               "recipient": "邝兆镭",
               "team": "中国足球小将红队",
@@ -11795,6 +11829,17 @@
               "source_url": "https://www.futurefc.cn/article/s/2034bei-wu-si-bi-mu-zhong-guo-zu-qiu-xiao-jiang-hong-dui-yong-duo-guan-shen-zhen-xi-ban-ya-jing-ji-he-he-nan-xing-tu-huo-er-san-"
             }
           ],
+          "award_coverage": {
+            "status": "partial",
+            "note": "仅录入可复核的MVP；其他个人奖项未检得稳定公开来源。"
+          },
+          "scorer_table": {
+            "status": "unavailable",
+            "as_of": "2021-05-05",
+            "scope": "总决赛",
+            "rows": [],
+            "coverage_note": "未找到可公开复核的完整射手排名，未知数据保持为空。"
+          },
           "audience": [],
           "international_participation": [],
           "organization": {
@@ -11836,6 +11881,10 @@
           "title_name": "2034杯",
           "date_start": "2022-07-24",
           "date_end": "2022-07-30",
+          "coverage": {
+            "status": "partial",
+            "note": "前三名、决赛与主要奖项可核；射手进球数和完整排名未公开。"
+          },
           "qualifying": {
             "regions": 33,
             "teams": 355,
@@ -11860,8 +11909,17 @@
             "final_score": "1比1（深圳西班牙竞技点球胜）",
             "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
           },
+          "podium": {
+            "champion": "深圳西班牙竞技",
+            "runner_up": "中国足球小将",
+            "third_place": "广州铭途",
+            "fourth_place": "东莞星动",
+            "final_score": "1比1（深圳西班牙竞技点球胜）",
+            "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
+          },
           "awards": [
             {
+              "award_key": "mvp",
               "type": "最有价值球员（MVP）",
               "recipient": "詹景源",
               "team": "深圳西班牙竞技",
@@ -11869,6 +11927,7 @@
               "source_url": "https://m.mp.oeeee.com/a/BAAFRD000020220804709522.html"
             },
             {
+              "award_key": "top_scorer",
               "type": "最佳射手",
               "recipient": "陈湘俊",
               "team": "广西金嗓子",
@@ -11876,6 +11935,7 @@
               "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
             },
             {
+              "award_key": "best_goalkeeper",
               "type": "最佳守门员",
               "recipient": "高瀚宇",
               "team": "深圳西班牙竞技",
@@ -11883,6 +11943,28 @@
               "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm"
             }
           ],
+          "award_coverage": {
+            "status": "partial",
+            "note": "MVP、最佳射手和最佳守门员可核；未检得完整奖项目录。"
+          },
+          "scorer_table": {
+            "status": "partial",
+            "as_of": "2022-07-30",
+            "scope": "总决赛",
+            "rows": [
+              {
+                "rank": 1,
+                "player": "陈湘俊",
+                "team": "广西金嗓子",
+                "goals": null,
+                "shared_rank": false,
+                "evidence_status": "award-only",
+                "source_url": "https://news.zhibo8.com/zuqiu/2022-07-31/62e601187d1cf.htm",
+                "note": "公开赛后报道确认最佳射手，但未披露进球数。"
+              }
+            ],
+            "coverage_note": "仅能核实最佳射手得主，无法重建完整射手榜。"
+          },
           "audience": [
             {
               "label": "决赛抖音直播同时在线峰值",
@@ -11936,6 +12018,10 @@
           "title_name": "伊利2034杯",
           "date_start": "2023-07-16",
           "date_end": "2023-07-23",
+          "coverage": {
+            "status": "partial",
+            "note": "冠亚季军与个人奖项可核；最佳射手为并列，但公开来源未披露进球数和后续排名。"
+          },
           "qualifying": {
             "regions": 37,
             "teams": 683,
@@ -11960,8 +12046,17 @@
             "final_score": "中国足球小将2比1长沙天马德馨园",
             "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
           },
+          "podium": {
+            "champion": "中国足球小将",
+            "runner_up": "长沙天马德馨园",
+            "third_place": "重庆初心",
+            "fourth_place": "深圳队",
+            "final_score": "中国足球小将2比1长沙天马德馨园",
+            "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+          },
           "awards": [
             {
+              "award_key": "best_player",
               "type": "最佳球员",
               "recipient": "唐华健",
               "team": "中国足球小将",
@@ -11969,6 +12064,7 @@
               "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
             },
             {
+              "award_key": "best_goalkeeper",
               "type": "最佳守门员",
               "recipient": "李奕辰",
               "team": "长沙天马",
@@ -11976,13 +12072,54 @@
               "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
             },
             {
+              "award_key": "top_scorer",
               "type": "最佳射手",
-              "recipient": "胡梓淳、朱俊杰",
-              "team": "石门五小、太仓百川源源",
+              "recipient": "胡梓淳",
+              "team": "石门五小",
+              "shared": true,
+              "confidence": "high",
+              "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+            },
+            {
+              "award_key": "top_scorer",
+              "type": "最佳射手",
+              "recipient": "朱俊杰",
+              "team": "太仓百川源源",
+              "shared": true,
               "confidence": "high",
               "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
             }
           ],
+          "award_coverage": {
+            "status": "partial",
+            "note": "最佳球员、最佳守门员和两名并列最佳射手可核。"
+          },
+          "scorer_table": {
+            "status": "partial",
+            "as_of": "2023-07-23",
+            "scope": "总决赛",
+            "rows": [
+              {
+                "rank": 1,
+                "player": "胡梓淳",
+                "team": "石门五小",
+                "goals": null,
+                "shared_rank": true,
+                "evidence_status": "award-only",
+                "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+              },
+              {
+                "rank": 1,
+                "player": "朱俊杰",
+                "team": "太仓百川源源",
+                "goals": null,
+                "shared_rank": true,
+                "evidence_status": "award-only",
+                "source_url": "https://weibo.com/ttarticle/p/show?id=2309404927084886884959"
+              }
+            ],
+            "coverage_note": "公开来源确认两人并列最佳射手，未披露进球数与完整榜单。"
+          },
           "audience": [
             {
               "label": "决赛现场观众",
@@ -12040,6 +12177,10 @@
           "title_name": "新建元2034杯",
           "date_start": "2024-07-13",
           "date_end": "2024-07-20",
+          "coverage": {
+            "status": "partial",
+            "note": "赛事赛果完整；个人奖项存在官方校方与媒体称谓冲突，完整射手榜不可得。"
+          },
           "qualifying": {
             "regions": 35,
             "teams": 600,
@@ -12065,7 +12206,65 @@
             "final_score": "陕西师大附小2比1广州铭途",
             "source_url": "https://www.sport.gov.cn/n14471/n14481/n14518/c27938143/content.html"
           },
-          "awards": [],
+          "podium": {
+            "champion": "陕西师范大学附属小学",
+            "runner_up": "广州铭途",
+            "third_place": "中国足球小将",
+            "fourth_place": "东莞丽园张特",
+            "final_score": "陕西师大附小2比1广州铭途",
+            "source_url": "https://www.sport.gov.cn/n14471/n14481/n14518/c27938143/content.html"
+          },
+          "awards": [
+            {
+              "award_key": "best_player",
+              "type": "最佳球员（校方口径）",
+              "recipient": "崔庭旭",
+              "team": "陕西师范大学附属小学",
+              "confidence": "high",
+              "source_url": "https://www.snnu.edu.cn/info/1272/38631.htm",
+              "note": "陕西师范大学官方稿称崔庭旭、郭辰远双双获得最佳球员；部分媒体将崔庭旭写作MVP。"
+            },
+            {
+              "award_key": "best_player",
+              "type": "最佳球员（校方口径）",
+              "recipient": "郭辰远",
+              "team": "陕西师范大学附属小学",
+              "confidence": "high",
+              "source_url": "https://www.snnu.edu.cn/info/1272/38631.htm",
+              "note": "校方官方稿称两人同获最佳球员；部分媒体另称郭辰远为最佳射手，因此保留称谓冲突。"
+            },
+            {
+              "award_key": "top_scorer",
+              "type": "最佳射手（媒体口径，称谓存疑）",
+              "recipient": "郭辰远",
+              "team": "陕西师范大学附属小学",
+              "confidence": "low",
+              "source_url": "https://www.sohu.com/a/795318715_121953588",
+              "note": "与校方官方稿的“最佳球员”称谓冲突，未据此推断进球数。"
+            }
+          ],
+          "award_coverage": {
+            "status": "partial",
+            "note": "校方可核两名最佳球员；最佳射手称谓仅见媒体稿且与校方口径冲突。"
+          },
+          "scorer_table": {
+            "status": "partial",
+            "as_of": "2024-07-20",
+            "scope": "总决赛",
+            "rows": [
+              {
+                "rank": 1,
+                "player": "郭辰远",
+                "team": "陕西师范大学附属小学",
+                "goals": null,
+                "shared_rank": false,
+                "evidence_status": "conflicted",
+                "source_url": "https://www.sohu.com/a/795318715_121953588",
+                "note": "媒体稿称最佳射手，校方稿未采用同一称谓；排名和进球数均未完整公开。"
+              }
+            ],
+            "coverage_note": "仅保存存在称谓冲突的最佳射手线索，不视为完整或最终射手榜。"
+          },
           "audience": [
             {
               "label": "赛事现场观众",
@@ -12125,6 +12324,10 @@
           "title_name": "新建元2034杯",
           "date_start": "2025-07-19",
           "date_end": "2025-07-26",
+          "coverage": {
+            "status": "partial",
+            "note": "冠亚季军及四项个人奖可核；两名最佳射手并列，但进球数与完整射手排名未公开。"
+          },
           "qualifying": {
             "regions": null,
             "teams": 907,
@@ -12150,15 +12353,84 @@
             "final_score": "中国足球小将5比0北京梦之队",
             "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
           },
+          "podium": {
+            "champion": "中国足球小将",
+            "runner_up": "北京梦之队",
+            "third_place": "苏州奥体小将",
+            "fourth_place": "福建长乐金刚腿",
+            "final_score": "中国足球小将5比0北京梦之队",
+            "source_url": "https://www.sipac.gov.cn/szghjswyh/gzdt/202507/9c34548594eb43298b205aef314c65c9.shtml"
+          },
           "awards": [
             {
-              "type": "最有价值球员（MVP）",
-              "recipient": "王杍瑜",
+              "award_key": "best_player",
+              "type": "最佳球员",
+              "recipient": "王子瑜",
+              "aliases": [
+                "王杍瑜"
+              ],
               "team": "中国足球小将",
-              "confidence": "low",
-              "source_url": "https://www.sohu.com/a/919513199_121985812"
+              "confidence": "medium",
+              "source_url": "https://www.sina.cn/news/detail/5192781162088251.html",
+              "note": "获奖名单原文写作“王子瑜”；既有二手报道写作“王杍瑜”，作为别名保留。"
+            },
+            {
+              "award_key": "top_scorer",
+              "type": "最佳射手",
+              "recipient": "王铂乔",
+              "team": "北京梦之队",
+              "shared": true,
+              "confidence": "medium",
+              "source_url": "https://www.sina.cn/news/detail/5192781162088251.html"
+            },
+            {
+              "award_key": "top_scorer",
+              "type": "最佳射手",
+              "recipient": "尹正俊",
+              "team": "苏州奥体小将",
+              "shared": true,
+              "confidence": "medium",
+              "source_url": "https://www.sina.cn/news/detail/5192781162088251.html"
+            },
+            {
+              "award_key": "best_goalkeeper",
+              "type": "最佳门将",
+              "recipient": "马楚尧",
+              "team": "中国足球小将",
+              "confidence": "medium",
+              "source_url": "https://www.sina.cn/news/detail/5192781162088251.html"
             }
           ],
+          "award_coverage": {
+            "status": "partial",
+            "note": "公开获奖名单可核最佳球员、两名并列最佳射手和最佳门将。"
+          },
+          "scorer_table": {
+            "status": "partial",
+            "as_of": "2025-07-26",
+            "scope": "总决赛",
+            "rows": [
+              {
+                "rank": 1,
+                "player": "王铂乔",
+                "team": "北京梦之队",
+                "goals": null,
+                "shared_rank": true,
+                "evidence_status": "award-only",
+                "source_url": "https://www.sina.cn/news/detail/5192781162088251.html"
+              },
+              {
+                "rank": 1,
+                "player": "尹正俊",
+                "team": "苏州奥体小将",
+                "goals": null,
+                "shared_rank": true,
+                "evidence_status": "award-only",
+                "source_url": "https://www.sina.cn/news/detail/5192781162088251.html"
+              }
+            ],
+            "coverage_note": "公开名单确认两名并列最佳射手，但没有给出进球数与完整榜单。"
+          },
           "audience": [
             {
               "label": "决赛现场观众",
@@ -12196,7 +12468,7 @@
             }
           ],
           "confidence": "mixed",
-          "confidence_note": "规模、前三名、观众、组织和城市活动采用园区官方口径；MVP与殿军缺少同等级一手页面，标为低置信。",
+          "confidence_note": "规模、前三名、观众、组织和城市活动采用园区官方口径；个人奖项采用公开获奖名单，姓名异写作为别名保留。",
           "sources": [
             {
               "title": "苏州工业园区：第五届总决赛开幕",
@@ -12214,8 +12486,8 @@
               "tier": "government"
             },
             {
-              "title": "第五届MVP报道",
-              "url": "https://www.sohu.com/a/919513199_121985812",
+              "title": "第五届总决赛获奖名单",
+              "url": "https://www.sina.cn/news/detail/5192781162088251.html",
               "tier": "secondary"
             },
             {
@@ -12229,11 +12501,15 @@
           "id": "2034-cup-2026",
           "edition": 6,
           "year": 2026,
-          "status": "ongoing",
-          "as_of": "2026-07-25",
+          "status": "completed",
+          "as_of": "2026-08-01",
           "title_name": "新建元2034杯",
           "date_start": "2026-07-25",
           "date_end": "2026-08-01",
+          "coverage": {
+            "status": "partial",
+            "note": "冠亚季军、殿军和决赛比分可由逐场战报核验；最终个人奖项与完整射手榜尚无稳定公开来源。"
+          },
           "qualifying": {
             "regions": 39,
             "teams": 882,
@@ -12250,16 +12526,50 @@
             ],
             "teams": 128,
             "players": 2600,
-            "matches": null,
-            "format": "总决赛采用9人制，128队、约2600名球员参赛；赛事计划于8月1日结束。",
-            "champion": null,
-            "runner_up": null,
-            "third_place": null,
-            "fourth_place": null,
-            "final_score": null,
-            "source_url": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml"
+            "matches": 448,
+            "format": "总决赛采用9人制，128队、约2600名球员参赛；公开逐场战报共列出448场。",
+            "champion": "亚洲明星联 ASIA FUTURE STARS",
+            "runner_up": "杭州足管",
+            "third_place": "中国足球小将红队",
+            "fourth_place": "青岛西海岸",
+            "final_score": "亚洲明星联 ASIA FUTURE STARS 6比2杭州足管",
+            "source_url": "https://www.xiaojiangfc.com/cup/2034/"
+          },
+          "podium": {
+            "champion": "亚洲明星联 ASIA FUTURE STARS",
+            "runner_up": "杭州足管",
+            "third_place": "中国足球小将红队",
+            "fourth_place": "青岛西海岸",
+            "final_score": "亚洲明星联 ASIA FUTURE STARS 6比2杭州足管",
+            "third_place_score": "中国足球小将红队1比0青岛西海岸",
+            "source_url": "https://www.xiaojiangfc.com/cup/2034/"
           },
           "awards": [],
+          "award_coverage": {
+            "status": "unavailable",
+            "note": "截至2026-08-02未找到可稳定访问并交叉核验的赛后个人奖项名单。"
+          },
+          "scorer_table": {
+            "status": "partial",
+            "as_of": "2026-07-29",
+            "scope": "总决赛阶段性数据",
+            "rows": [
+              {
+                "rank": 1,
+                "player": "基利安·库阿西",
+                "aliases": [
+                  "N'Guessan-Kylian-Kouassi"
+                ],
+                "team": "亚洲明星联 ASIA FUTURE STARS",
+                "goals": 12,
+                "shared_rank": false,
+                "evidence_status": "provisional",
+                "source_url": "https://k.sina.com.cn/article_7096022664_1a6f4b68802001fski.html",
+                "note": "32进16结束后的阶段性领跑数据，不是8月1日赛后最终射手榜。"
+              }
+            ],
+            "coverage_note": "仅录入7月29日可核的阶段性领跑者；最终排名、进球数变化和其他球员均待官方榜单。"
+          },
           "audience": [],
           "international_participation": [
             {
@@ -12284,7 +12594,7 @@
             }
           ],
           "confidence": "mixed",
-          "confidence_note": "截至2026-07-25开赛日的静态快照；赛事仍在进行，不填写冠军、名次、决赛比分或个人奖项，8月1日后另补最终赛果。",
+          "confidence_note": "截至2026-08-01的赛后赛果快照；冠亚季军和决赛比分来自逐场战报，个人奖项仍不可得，射手数据只保留7月29日阶段性快照。",
           "sources": [
             {
               "title": "苏州工业园区：第六届致敬传承赛与总决赛预告",
@@ -12300,6 +12610,16 @@
               "title": "SIP English：第六届总决赛赛程",
               "url": "https://www.sipac.gov.cn/szgyyqenglish/News/202607/6360874d98f04fe5a96d7745b8c81efe.shtml",
               "tier": "government"
+            },
+            {
+              "title": "中国足球小将资料站：第六届逐场战报",
+              "url": "https://www.xiaojiangfc.com/cup/2034/",
+              "tier": "secondary"
+            },
+            {
+              "title": "新浪：第六届阶段性射手数据",
+              "url": "https://k.sina.com.cn/article_7096022664_1a6f4b68802001fski.html",
+              "tier": "secondary"
             }
           ]
         }
@@ -19691,6 +20011,785 @@
         "2026 赛季北京鹏瑞通程正式秩序册或足协注册名单 PDF 何时能公开检得。",
         "44 人名单里每名球员的出生日期、位置和前属俱乐部，哪些能继续从比赛页、Transfermarkt、雷速或俱乐部公告逐一补齐。",
         "足协杯单场比赛名单和中冠赛区报名名单之间，是否存在未进入足协杯大名单但已注册的球员差集。"
+      ]
+    },
+    {
+      "id": "qingdao-west-coast-academy",
+      "name": "青岛西海岸青训与U21出场追踪",
+      "status": "in-progress",
+      "focus_tags": [
+        "qingdao-west-coast-academy"
+      ],
+      "last_reviewed": "2026-08-02",
+      "summary": "本档案按三条互不混算的路径记录青岛西海岸青训：青年梯队本身参加的联赛、每赛季满足U21资格的一线队球员实际出场，以及只完成注册、职业合同或升队但尚无可核一线队出场的球员。2023-2026四个赛季均保留独立快照，未知出场和分钟保持为空。",
+      "source_document": {
+        "title": "青岛西海岸2024赛季青训梯队建设预览",
+        "path": "https://sports.sina.cn/china/2024-01-15/detail-inacquvz7978954.d.html"
+      },
+      "supporting_documents": [
+        {
+          "title": "2024赛季U21联赛淘汰赛C组赛果",
+          "path": "https://www.centv.cn/p/507049.html",
+          "summary": "可核验青岛西海岸进入淘汰赛C组、六轮后未进入决赛阶段；小组第四为依据三支晋级球队作出的有限推断。"
+        },
+        {
+          "title": "2025青年联赛射手榜",
+          "path": "https://m.dongqiudi.com/statTC/233442/rankingGoal",
+          "summary": "可核验林明建、方海洋各12球、栾昊11球；榜单页面明确标注U21联赛。"
+        },
+        {
+          "title": "青岛西海岸U21四名球员升入一线队",
+          "path": "https://m.dongqiudi.com/article/5254719.html",
+          "summary": "俱乐部公告转载，可核验方海洋、戚秉宇、栾昊、鄢奇航于2025-07-21签订职业合同并升队。"
+        },
+        {
+          "title": "青岛西海岸U21两名球员升入一线队",
+          "path": "https://cj.sina.com.cn/articles/view/7880068681/1d5b04e4902001yeg2?froms=ggmp",
+          "summary": "俱乐部公告转载，可核验薛军圳、王梓权在2026赛季升入一线队；不据此推导实际出场。"
+        },
+        {
+          "title": "青岛西海岸新区青训基地与四位一体体系",
+          "path": "https://www.xihaian.gov.cn/ywdt/jjxq/202603/t20260319_10541375.shtml",
+          "summary": "新区政府来源，用于核验职业俱乐部、校园足球、青训中心和赛事平台相衔接的培养框架。"
+        }
+      ],
+      "scope_note": "青年联赛页面在不同赛季和数据站中会写作U21、U20或职业俱乐部青年联赛。本档案保存来源原始赛事名称并另记适龄口径，不用名称差异推导球员资格。升入一线队、完成注册和正式比赛出场是三种不同事件。",
+      "role_model": [
+        "一线队承担职业比赛和高水平年轻球员兑现入口。",
+        "U21梯队承担职业俱乐部青年联赛与一线队后备培养。",
+        "U19及13至18岁年龄段构成持续选材和梯队补充层。",
+        "新区青训基地、校园足球和俱乐部梯队共同构成区域培养网络。"
+      ],
+      "timeline": [
+        {
+          "date": "2023",
+          "label": "中甲赛季的年轻球员使用",
+          "detail": "阿布都合力力·吾斯曼江以U21适龄球员身份在中甲获得29次公开联赛出场；未找到可稳定核验的独立U21梯队联赛档案。"
+        },
+        {
+          "date": "2024-01",
+          "label": "组建U21与U19梯队",
+          "detail": "赛季预览明确俱乐部组建U21、U19梯队，并与已有低年龄段队伍共同参加青少年赛事。"
+        },
+        {
+          "date": "2025-07-21",
+          "label": "四名U21球员签约升队",
+          "detail": "方海洋、戚秉宇、栾昊、鄢奇航完成职业合同签订并升入一线队；该事件本身不计作一线队出场。"
+        },
+        {
+          "date": "2026-03-02",
+          "label": "两名U21球员升入一线队",
+          "detail": "薛军圳、王梓权升入一线队；截至本次核查未找到可稳定核验的正式比赛出场。"
+        },
+        {
+          "date": "2026-03-19",
+          "label": "新区青训基地投入使用",
+          "detail": "新区政府披露青训基地与职业俱乐部、校园足球、青训中心和赛事平台协同的四位一体培养体系。"
+        }
+      ],
+      "development_ladder": [
+        {
+          "level": "first-team",
+          "name": "一线队",
+          "status": "verified",
+          "note": "中超、足协杯等职业赛事入口；适龄球员数据按赛事拆分。",
+          "source_url": "https://www.dailyqd.com/guanhai/438949_1.html"
+        },
+        {
+          "level": "u21",
+          "name": "U21 / 职业俱乐部青年队",
+          "status": "verified",
+          "note": "2024赛季前已明确组建；后续赛事公开页也可能按合并后的年龄组写作U20。",
+          "source_url": "https://sports.sina.cn/china/2024-01-15/detail-inacquvz7978954.d.html"
+        },
+        {
+          "level": "u19",
+          "name": "U19梯队",
+          "status": "verified",
+          "note": "2024赛季前明确组建，2025赛季备战期继续公开招募。",
+          "source_url": "https://m.dongqiudi.com/article/4652059.html"
+        },
+        {
+          "level": "u13-u18",
+          "name": "13至18岁年龄段梯队",
+          "status": "partial",
+          "note": "2026公开报道概括为覆盖13至18岁六个年龄段；逐队名单与赛季注册仍待补。",
+          "source_url": "https://sports.sina.cn/2026-06-07/detail-iniapryw9989808.d.html"
+        }
+      ],
+      "roster_views": [
+        {
+          "id": "u21-to-first-team-2025",
+          "name": "2025 U21签约升队批次",
+          "confidence": "A/B",
+          "description": "只表示签订职业合同并升入一线队，不自动计入一线队出场。",
+          "members": [
+            {
+              "person_id": "qingdao-west-coast-academy-方海洋",
+              "relationship": "development-core",
+              "verification_status": "verified",
+              "note": "2025-07-21签订职业合同并升入一线队。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-戚秉宇",
+              "relationship": "development-core",
+              "verification_status": "verified",
+              "note": "2025-07-21签订职业合同并升入一线队。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-栾昊",
+              "relationship": "development-core",
+              "verification_status": "verified",
+              "note": "2025-07-21签订职业合同并升入一线队。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-鄢奇航",
+              "relationship": "development-core",
+              "verification_status": "verified",
+              "note": "2025-07-21签订职业合同并升入一线队。"
+            }
+          ],
+          "counting": {
+            "reported_count": 4,
+            "listed_count": 4,
+            "unique_people_count": 4,
+            "verified_people_count": 4,
+            "needs_review_count": 0,
+            "completeness": "complete",
+            "included_in_verified_core": true,
+            "note": "四人逐名公告完整；升队不等同出场。"
+          }
+        },
+        {
+          "id": "u21-to-first-team-2026",
+          "name": "2026 U21升队批次",
+          "confidence": "A/B",
+          "description": "俱乐部公告可核的两名升队球员，实际一线队出场另行统计。",
+          "members": [
+            {
+              "person_id": "qingdao-west-coast-academy-薛军圳",
+              "relationship": "development-core",
+              "verification_status": "verified",
+              "note": "2026赛季升入一线队，公开公告写明其自2024年效力青岛西海岸。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-王梓权",
+              "relationship": "development-core",
+              "verification_status": "verified",
+              "note": "2026赛季升入一线队，尚未将升队事件计作比赛出场。"
+            }
+          ],
+          "counting": {
+            "reported_count": 2,
+            "listed_count": 2,
+            "unique_people_count": 2,
+            "verified_people_count": 2,
+            "needs_review_count": 0,
+            "completeness": "complete",
+            "included_in_verified_core": true,
+            "note": "两人逐名公告完整；实际出场保持独立。"
+          }
+        },
+        {
+          "id": "verified-youth-usage-samples-2023-2026",
+          "name": "2023-2026可核青年队与适龄出场样本",
+          "confidence": "B",
+          "description": "合并索引可核的青年联赛射手和一线队U21适龄出场样本，但页面统计仍按赛季与赛事拆开。",
+          "members": [
+            {
+              "person_id": "qingdao-west-coast-academy-阿布都合力力·吾斯曼江",
+              "relationship": "project-adjacent",
+              "verification_status": "verified",
+              "note": "2023中甲和2024中超可核一线队适龄出场样本。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-林明建",
+              "relationship": "development-core",
+              "verification_status": "verified",
+              "note": "2025青年联赛可核12球。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-李昊",
+              "relationship": "project-adjacent",
+              "verification_status": "verified",
+              "note": "2025中超适龄出场样本；属于引进球员，不计作本队青训晋升。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-徐彬",
+              "relationship": "project-adjacent",
+              "verification_status": "verified",
+              "note": "2025中超适龄出场样本；属于引进球员。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-杨希",
+              "relationship": "project-adjacent",
+              "verification_status": "verified",
+              "note": "2025一线队适龄出场样本；属于引进球员。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-木塔力甫·依明卡日",
+              "relationship": "project-adjacent",
+              "verification_status": "verified",
+              "note": "2025一线队适龄出场样本；属于租借/引进路径。"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-杨展彭",
+              "relationship": "project-adjacent",
+              "verification_status": "verified",
+              "note": "2026中超适龄出场样本；不据此认定为俱乐部青训自产。"
+            }
+          ],
+          "counting": {
+            "reported_count": 7,
+            "listed_count": 7,
+            "unique_people_count": 7,
+            "verified_people_count": 7,
+            "needs_review_count": 0,
+            "completeness": "partial",
+            "included_in_verified_core": false,
+            "note": "这是公开可核样本而非完整注册名单，青年队与一线队统计不互相累加。"
+          }
+        }
+      ],
+      "schema_version": 2,
+      "source_checked_at": "2026-08-02",
+      "people": [
+        {
+          "id": "qingdao-west-coast-academy-阿布都合力力·吾斯曼江",
+          "name": "Abdulhelil Osmanjan",
+          "local_name": "阿布都合力力·吾斯曼江",
+          "role": "中场",
+          "note": "2023、2024赛季一线队U21适龄出场样本；最新职业去向仍待继续复核。",
+          "current_status": {
+            "category": "needs-review",
+            "organization": "待核实",
+            "role": "player",
+            "as_of": "2024-08-20",
+            "confidence": "low",
+            "source_label": "青岛西海岸年轻球员阶段性出场回顾",
+            "source_url": "https://www.culturechina.cn/m/267916.html",
+            "notes": "来源仅支撑截至2024-08-20的阶段性状态，不把历史归属延伸为2026当前事实。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-方海洋",
+          "name": "Fang Haiyang",
+          "local_name": "方海洋",
+          "role": "前锋",
+          "note": "2025青年联赛12球，随后签职业合同升入一线队。",
+          "current_status": {
+            "category": "active-reserve",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2025-07-21",
+            "confidence": "medium",
+            "source_label": "青岛西海岸U21四人签约升队公告",
+            "source_url": "https://m.dongqiudi.com/article/5254719.html",
+            "notes": "升队可核，2026持续注册和一线队出场待补。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-戚秉宇",
+          "name": "Qi Bingyu",
+          "local_name": "戚秉宇",
+          "role": "守门员",
+          "note": "2025 U21签职业合同升队批次。",
+          "current_status": {
+            "category": "active-reserve",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2025-07-21",
+            "confidence": "medium",
+            "source_label": "青岛西海岸U21四人签约升队公告",
+            "source_url": "https://m.dongqiudi.com/article/5254719.html",
+            "notes": "升队事件不计作正式比赛出场。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-栾昊",
+          "name": "Luan Hao",
+          "local_name": "栾昊",
+          "role": "中场",
+          "note": "2025青年联赛11球，随后签职业合同升入一线队。",
+          "current_status": {
+            "category": "active-reserve",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2025-07-21",
+            "confidence": "medium",
+            "source_label": "青岛西海岸U21四人签约升队公告",
+            "source_url": "https://m.dongqiudi.com/article/5254719.html",
+            "notes": "升队事件不计作正式比赛出场。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-鄢奇航",
+          "name": "Yan Qihang",
+          "local_name": "鄢奇航",
+          "role": "前锋",
+          "note": "2025 U21签职业合同升队批次。",
+          "current_status": {
+            "category": "active-reserve",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2025-07-21",
+            "confidence": "medium",
+            "source_label": "青岛西海岸U21四人签约升队公告",
+            "source_url": "https://m.dongqiudi.com/article/5254719.html",
+            "notes": "升队事件不计作正式比赛出场。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-薛军圳",
+          "name": "Xue Junzhen",
+          "local_name": "薛军圳",
+          "role": "边后卫",
+          "note": "2006-05-26出生，2026赛季由U21升入一线队。",
+          "current_status": {
+            "category": "active-reserve",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2026-03-02",
+            "confidence": "high",
+            "source_label": "青岛西海岸U21两人升队公告",
+            "source_url": "https://cj.sina.com.cn/articles/view/7880068681/1d5b04e4902001yeg2?froms=ggmp",
+            "notes": "升队可核；截至核查未用数据站的0出场值替代未知正式出场。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-王梓权",
+          "name": "Wang Ziquan",
+          "local_name": "王梓权",
+          "role": "守门员",
+          "note": "2007-12-24出生，2026赛季由U21升入一线队。",
+          "current_status": {
+            "category": "active-reserve",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2026-03-02",
+            "confidence": "high",
+            "source_label": "青岛西海岸U21两人升队公告",
+            "source_url": "https://cj.sina.com.cn/articles/view/7880068681/1d5b04e4902001yeg2?froms=ggmp",
+            "notes": "升队可核；正式比赛出场仍待一手比赛记录。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-林明建",
+          "name": "Lin Mingjian",
+          "local_name": "林明建",
+          "role": "前锋",
+          "note": "2025青年联赛公开射手榜12球。",
+          "current_status": {
+            "category": "needs-review",
+            "organization": "青岛西海岸青年队（最后可核）",
+            "role": "player",
+            "as_of": "2025-12-07",
+            "confidence": "low",
+            "source_label": "2025中国足球青少年精英联赛射手榜",
+            "source_url": "https://m.dongqiudi.com/statTC/233442/rankingGoal",
+            "notes": "来源可支撑2025赛事表现，无法确认2026注册去向。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-李昊",
+          "player_id": "cn-li-hao-2004",
+          "name": "Li Hao",
+          "local_name": "李昊",
+          "role": "守门员",
+          "note": "2025赛季U21适龄引进球员，一线队中超29次首发。",
+          "current_status": {
+            "category": "active-first-team",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2026-07-17",
+            "confidence": "high",
+            "source_label": "中足联2026赛季比赛报道",
+            "source_url": "https://www.cfl-china.cn/zh/content/news/mcHi.html",
+            "notes": "复用主球员库ID；2025适龄出场不等同俱乐部自产青训。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-徐彬",
+          "player_id": "cn-xu-bin-2004",
+          "name": "Xu Bin",
+          "local_name": "徐彬",
+          "role": "中场",
+          "note": "2025赛季U21适龄引进球员，中超27次出场、21次首发。",
+          "current_status": {
+            "category": "active-professional",
+            "organization": "巴恩斯利",
+            "role": "player",
+            "as_of": "2026-01-30",
+            "confidence": "high",
+            "source_label": "徐彬留洋签约报道",
+            "source_url": "https://paper.xinmin.cn/html/dfsports/2026-01-28/A04/69251.html",
+            "notes": "2025青岛西海岸出场保留为历史赛季快照。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-杨希",
+          "player_id": "cn-yang-alex-2005",
+          "name": "Alex Xi Yang",
+          "local_name": "杨希",
+          "role": "后卫",
+          "note": "2025赛季U21适龄引进球员，一线队各项赛事23次出场。",
+          "current_status": {
+            "category": "active-first-team",
+            "organization": "上海海港",
+            "role": "player",
+            "as_of": "2026-02-05",
+            "confidence": "high",
+            "source_label": "杨希加盟上海海港报道",
+            "source_url": "https://paper.xinmin.cn/html/dfsports/2026-02-06/A09/69452.html",
+            "notes": "2025青岛西海岸出场保留为历史赛季快照。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-木塔力甫·依明卡日",
+          "player_id": "cn-mutalifu-yimingkari-2004",
+          "name": "Mutalifu Yimingkari",
+          "local_name": "木塔力甫·依明卡日",
+          "role": "中场",
+          "note": "2025赛季U21适龄球员，一线队各项赛事13次出场。",
+          "current_status": {
+            "category": "active-first-team",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2026-07-17",
+            "confidence": "high",
+            "source_label": "2026中超青岛西海岸比赛报道",
+            "source_url": "https://www.ttplus.cn/publish/app/data/2026/07/17/602919/os_news.html",
+            "notes": "复用主球员库ID；2025记录按公开各项赛事口径。"
+          }
+        },
+        {
+          "id": "qingdao-west-coast-academy-杨展彭",
+          "name": "Yang Zhanpeng",
+          "local_name": "杨展彭",
+          "role": "前锋",
+          "note": "2007-03-05出生，2026中超截至阶段性快照13次出场、1球。",
+          "current_status": {
+            "category": "active-first-team",
+            "organization": "青岛西海岸",
+            "role": "player",
+            "as_of": "2026-07-17",
+            "confidence": "medium",
+            "source_label": "青岛西海岸年轻球员比赛报道",
+            "source_url": "https://www.qwmedia.cn/314525/2026/05/43499988.html",
+            "notes": "作为适龄一线队出场样本，不据此认定为本俱乐部青训自产。"
+          }
+        }
+      ],
+      "event_records": [
+        {
+          "date": "2024-01-15",
+          "event": "U21和U19梯队组建",
+          "people": [],
+          "source_url": "https://sports.sina.cn/china/2024-01-15/detail-inacquvz7978954.d.html"
+        },
+        {
+          "date": "2025-07-21",
+          "event": "四名U21球员签职业合同升入一线队",
+          "people": [
+            "qingdao-west-coast-academy-方海洋",
+            "qingdao-west-coast-academy-戚秉宇",
+            "qingdao-west-coast-academy-栾昊",
+            "qingdao-west-coast-academy-鄢奇航"
+          ],
+          "source_url": "https://m.dongqiudi.com/article/5254719.html"
+        },
+        {
+          "date": "2026-03-02",
+          "event": "两名U21球员升入一线队",
+          "people": [
+            "qingdao-west-coast-academy-薛军圳",
+            "qingdao-west-coast-academy-王梓权"
+          ],
+          "source_url": "https://cj.sina.com.cn/articles/view/7880068681/1d5b04e4902001yeg2?froms=ggmp"
+        }
+      ],
+      "program_metrics": [],
+      "season_snapshots": [
+        {
+          "season": 2023,
+          "as_of": "2023-11-05",
+          "u21_eligibility_birth_date": "2002-01-01",
+          "eligibility_source_url": "https://www.xinhuanet.com/2023-04/10/c_1129510219.htm",
+          "u21_team": {
+            "competition": "职业俱乐部U21联赛",
+            "status": "not-verified",
+            "coverage": "unavailable",
+            "record": null,
+            "player_stats": [],
+            "source_url": "https://sports.sina.cn/china/2024-01-15/detail-inacquvz7978954.d.html",
+            "note": "2024赛季预览明确当季组建U21梯队；未找到2023独立参赛记录，故不推断为0场或未参赛。"
+          },
+          "first_team_u21_usage": {
+            "coverage": "partial",
+            "rows": [
+              {
+                "person_id": "qingdao-west-coast-academy-阿布都合力力·吾斯曼江",
+                "competition": "中甲",
+                "appearances": 29,
+                "starts": 17,
+                "minutes": null,
+                "goals": 2,
+                "assists": 4,
+                "source_url": "https://www.culturechina.cn/m/267916.html"
+              }
+            ],
+            "note": "只收录可核样本，不代表赛季所有适龄球员完整名单。"
+          },
+          "promotions": []
+        },
+        {
+          "season": 2024,
+          "as_of": "2024-08-20",
+          "u21_eligibility_birth_date": "2003-01-01",
+          "eligibility_source_url": "https://www.thecfa.cn/lstz/20240403/34018.html",
+          "u21_team": {
+            "competition": "中国足球协会U-21联赛淘汰赛C组",
+            "status": "completed-phase",
+            "coverage": "partial",
+            "record": {
+              "rank": 4,
+              "rank_scope": "淘汰赛C组",
+              "played": 6,
+              "wins": null,
+              "draws": null,
+              "losses": null,
+              "goals_for": null,
+              "goals_against": null,
+              "points": null,
+              "inferred": true
+            },
+            "player_stats": [],
+            "source_url": "https://www.centv.cn/p/507049.html",
+            "note": "六轮后报道列出上海申花、天津津门虎、青岛海牛晋级，青岛西海岸为该组唯一未晋级队，因此组内第4名为有限推断；其他战绩保持未知。"
+          },
+          "first_team_u21_usage": {
+            "coverage": "partial",
+            "rows": [
+              {
+                "person_id": "qingdao-west-coast-academy-阿布都合力力·吾斯曼江",
+                "competition": "中超（截至2024-08-20）",
+                "appearances": 6,
+                "starts": 3,
+                "minutes": null,
+                "goals": null,
+                "assists": null,
+                "source_url": "https://www.culturechina.cn/m/267916.html"
+              }
+            ],
+            "note": "阶段性而非赛季最终统计。"
+          },
+          "promotions": []
+        },
+        {
+          "season": 2025,
+          "as_of": "2025-12-07",
+          "u21_eligibility_birth_date": "2004-01-01",
+          "eligibility_source_url": "https://www.gdfa.gd.cn/news/1387",
+          "u21_team": {
+            "competition": "2025赛季职业俱乐部U21联赛",
+            "status": "completed",
+            "coverage": "partial",
+            "record": {
+              "rank": 10,
+              "rank_scope": "赛季最终排名",
+              "played": 7,
+              "wins": 6,
+              "draws": 0,
+              "losses": 1,
+              "goals_for": 47,
+              "goals_against": 7,
+              "points": 18,
+              "phase": "9至16名排位组",
+              "inferred": false
+            },
+            "player_stats": [
+              {
+                "person_id": "qingdao-west-coast-academy-方海洋",
+                "appearances": null,
+                "starts": null,
+                "minutes": null,
+                "goals": 12,
+                "source_url": "https://m.dongqiudi.com/statTC/233442/rankingGoal"
+              },
+              {
+                "person_id": "qingdao-west-coast-academy-林明建",
+                "appearances": null,
+                "starts": null,
+                "minutes": null,
+                "goals": 12,
+                "source_url": "https://m.dongqiudi.com/statTC/233442/rankingGoal"
+              },
+              {
+                "person_id": "qingdao-west-coast-academy-栾昊",
+                "appearances": null,
+                "starts": null,
+                "minutes": null,
+                "goals": 11,
+                "source_url": "https://m.dongqiudi.com/statTC/233442/rankingGoal"
+              }
+            ],
+            "source_url": "https://m.17500.cn/zq/data-team/course-81755-2025-0",
+            "note": "排名与排位阶段战绩采用赛事数据站，射手数据由另一公开榜单交叉；完整出场、首发和分钟不可得。"
+          },
+          "first_team_u21_usage": {
+            "coverage": "partial",
+            "rows": [
+              {
+                "person_id": "qingdao-west-coast-academy-李昊",
+                "competition": "中超",
+                "appearances": 29,
+                "starts": 29,
+                "minutes": 2610,
+                "goals": 0,
+                "clean_sheets": 8,
+                "source_url": "https://zqb.cyol.com/pc/content/202601/27/content_421680.html"
+              },
+              {
+                "person_id": "qingdao-west-coast-academy-徐彬",
+                "competition": "中超",
+                "appearances": 27,
+                "starts": 21,
+                "minutes": null,
+                "goals": null,
+                "assists": 3,
+                "source_url": "https://paper.xinmin.cn/html/dfsports/2026-01-28/A04/69251.html"
+              },
+              {
+                "person_id": "qingdao-west-coast-academy-杨希",
+                "competition": "一线队各项赛事",
+                "appearances": 23,
+                "starts": 21,
+                "minutes": null,
+                "goals": null,
+                "assists": null,
+                "source_url": "https://paper.xinmin.cn/html/dfsports/2026-02-06/A09/69452.html"
+              },
+              {
+                "person_id": "qingdao-west-coast-academy-木塔力甫·依明卡日",
+                "competition": "一线队各项赛事",
+                "appearances": 13,
+                "starts": null,
+                "minutes": null,
+                "goals": null,
+                "assists": 1,
+                "source_url": "https://www.ppsports.com/article/news/2486067.html"
+              }
+            ],
+            "note": "按来源可核赛事口径逐行保存；中超与各项赛事不做加总。"
+          },
+          "promotions": [
+            {
+              "person_id": "qingdao-west-coast-academy-方海洋",
+              "date": "2025-07-21",
+              "status": "signed-and-promoted",
+              "first_team_appearances": null,
+              "source_url": "https://m.dongqiudi.com/article/5254719.html"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-戚秉宇",
+              "date": "2025-07-21",
+              "status": "signed-and-promoted",
+              "first_team_appearances": null,
+              "source_url": "https://m.dongqiudi.com/article/5254719.html"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-栾昊",
+              "date": "2025-07-21",
+              "status": "signed-and-promoted",
+              "first_team_appearances": null,
+              "source_url": "https://m.dongqiudi.com/article/5254719.html"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-鄢奇航",
+              "date": "2025-07-21",
+              "status": "signed-and-promoted",
+              "first_team_appearances": null,
+              "source_url": "https://m.dongqiudi.com/article/5254719.html"
+            }
+          ]
+        },
+        {
+          "season": 2026,
+          "as_of": "2026-07-17",
+          "u21_eligibility_birth_date": "2005-01-01",
+          "eligibility_source_url": "https://www.sina.cn/news/detail/5262670372541601.html",
+          "u21_team": {
+            "competition": "职业俱乐部青年联赛（数据站标注U21）",
+            "status": "ongoing",
+            "coverage": "partial",
+            "record": {
+              "rank": 12,
+              "rank_scope": "截至2026-07-14数据站排名",
+              "played": null,
+              "wins": null,
+              "draws": null,
+              "losses": null,
+              "goals_for": null,
+              "goals_against": null,
+              "points": null,
+              "inferred": false
+            },
+            "player_stats": [],
+            "source_url": "https://www.footballant.com/zh-CN/matches/3018317",
+            "note": "公开页可核多场赛果与阶段性第12名，但未提供稳定完整的已赛场次和球员技术统计。"
+          },
+          "first_team_u21_usage": {
+            "coverage": "partial",
+            "rows": [
+              {
+                "person_id": "qingdao-west-coast-academy-杨展彭",
+                "competition": "中超（截至2026-07-17）",
+                "appearances": 13,
+                "starts": null,
+                "minutes": 489,
+                "goals": 1,
+                "assists": null,
+                "source_url": "https://fbref.com/en/squads/d87e75be/2026/Qingdao-West-Coast-Stats"
+              }
+            ],
+            "note": "仅录入可核阶段性样本；李昊等2004年出生球员不满足本赛季2005-01-01资格线。"
+          },
+          "promotions": [
+            {
+              "person_id": "qingdao-west-coast-academy-薛军圳",
+              "date": "2026-03-02",
+              "status": "promoted",
+              "first_team_appearances": null,
+              "source_url": "https://cj.sina.com.cn/articles/view/7880068681/1d5b04e4902001yeg2?froms=ggmp"
+            },
+            {
+              "person_id": "qingdao-west-coast-academy-王梓权",
+              "date": "2026-03-02",
+              "status": "promoted",
+              "first_team_appearances": null,
+              "source_url": "https://cj.sina.com.cn/articles/view/7880068681/1d5b04e4902001yeg2?froms=ggmp"
+            }
+          ]
+        }
+      ],
+      "headline_stats": {
+        "tracked_generations": 3,
+        "tracked_players": 13,
+        "verified_core_people": 7,
+        "needs_review_people": 2
+      },
+      "controversies": [
+        "2025青年赛事在公开页面中同时出现U21与U20称谓，本档案保留具体来源名称，不自行改写年龄资格。",
+        "青年队最终排名、阶段排名和分组排名属于不同统计范围，页面必须同时展示rank_scope。",
+        "升入一线队或签订职业合同不等同正式比赛出场，未知出场保持null。",
+        "李昊、徐彬、杨希、木塔力甫和杨展彭属于适龄一线队样本，不自动归入青岛西海岸自产青训。"
+      ],
+      "open_questions": [
+        "2023赛季是否存在可公开复核的青岛西海岸独立U21报名或比赛记录。",
+        "2024淘汰赛C组完整积分榜、得失球与逐名出场统计何时能从足协或俱乐部档案补齐。",
+        "2025青年联赛完整出场、首发、分钟与进球榜能否获得官方技术报告。",
+        "2026赛季青年联赛最终名称、年龄组、完整排名和技术统计仍待赛季结束后复核。",
+        "2025与2026升队球员中，哪些已经完成一线队正式赛事首秀。"
       ]
     }
   ],

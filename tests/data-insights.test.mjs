@@ -34,9 +34,10 @@ test("counts only completed 1985-2025 U20 editions in separate honours tables", 
 test("builds dynamic project and deduplicated coach directories", () => {
   const projects = buildProjectCatalog(overview);
   const coaches = buildCoachCatalog(overview);
-  assert.equal(projects.length, 40);
+  assert.equal(projects.length, 41);
   assert.equal(new Set(projects.map((entry) => entry.id)).size, projects.length);
   assert.ok(!projects.some((entry) => entry.record_id === "east-asia-overseas-history"));
+  assert.ok(projects.some((entry) => entry.record_id === "qingdao-west-coast-academy"));
   assert.equal(new Set(coaches.map((entry) => entry.record_id)).size, coaches.length);
   assert.ok(coaches.some((entry) => entry.record_id === "antonio-puche" && entry.categories.includes("china-national-youth")));
   const mergedCoach = coaches.find((entry) => entry.record_id === "cn-zhou-haibin-shandong-2007");
