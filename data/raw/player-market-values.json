@@ -1,16 +1,16 @@
 {
   "meta": {
     "provider": "Transfermarkt",
-    "checked_at": "2026-07-19",
+    "checked_at": "2026-08-02",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
       "total": 459,
       "statuses": {
-        "available": 113,
+        "available": 114,
         "fetch-error": 22,
         "ambiguous-profile": 3,
         "no-market-value": 45,
-        "profile-not-found": 274,
+        "profile-not-found": 273,
         "team-page-only": 2
       },
       "by_country": {
@@ -23,8 +23,8 @@
         },
         "China PR": {
           "total": 80,
-          "available": 41,
-          "profile-not-found": 14,
+          "available": 42,
+          "profile-not-found": 13,
           "no-market-value": 22,
           "team-page-only": 2,
           "ambiguous-profile": 1
@@ -6436,26 +6436,61 @@
       "last_success_at": "2026-07-12"
     },
     "cn-wei-xiangxin-2008": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
+      "checked_at": "2026-08-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 400000,
+          "currency": "EUR",
+          "display": "€400k",
+          "date": "2025-12-17",
+          "age": 17
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2026-06-17",
+          "age": 18
+        }
+      ],
+      "history_points": 2,
+      "current": {
+        "eur": 300000,
+        "currency": "EUR",
+        "display": "€300k",
+        "date": "2026-06-17"
+      },
+      "peak": {
+        "eur": 400000,
+        "currency": "EUR",
+        "display": "€400k",
+        "date": "2025-12-17",
+        "age": 17
+      },
+      "last_change_date": "2026-06-17",
       "source": {
         "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
+        "profile_url": "https://www.transfermarkt.com/xiangxin-wei/profil/spieler/1265965",
+        "market_value_url": "https://www.transfermarkt.com/xiangxin-wei/marktwertverlauf/spieler/1265965",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1265965/market-value-history?_x_preferred_context=com"
       },
       "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
+        "checked_at": "2026-08-02",
+        "status": "confirmed",
+        "method": "manual-override",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/xiangxin-wei/profil/spieler/1265965"
+        ]
       },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
+      "alternatives": [],
+      "last_success_at": "2026-08-02"
     },
     "cn-wumitijiang-yusupu-2004": {
       "checked_at": "2026-07-12",

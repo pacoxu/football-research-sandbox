@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-08-01",
+  "generated_at": "2026-08-02",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -18,7 +18,7 @@
     "needs_review_records": 238
   },
   "freshness": {
-    "as_of": "2026-08-01",
+    "as_of": "2026-08-02",
     "audited_records": 1035,
     "overdue": 58,
     "by_window": {
@@ -54,7 +54,7 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-08-01"
+        "newest": "2026-08-02"
       },
       "overdue_records": 58,
       "missing_fields": [

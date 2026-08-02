@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01",
+  "generated_at": "2026-08-02",
   "stats": {
     "player_count": 459,
     "country_count": 8,
@@ -9316,6 +9316,7 @@
         "2034 杯早期届次仍需补齐可公开访问的一手规程、完整组织名单和完整个人奖项。",
         "2034 杯第四届个人奖项在校方与媒体稿中存在称谓冲突，仍需赛事官方获奖名单复核。",
         "2034 杯第六届最终个人奖项与完整射手榜尚无稳定公开来源；现有12球数据只是7月29日阶段性快照。",
+        "第六届宁波参赛队赛后谈及小升初后球队解散的原始视频、发言人和“八强”届次口径仍待取得稳定来源；专题不把转述写成已核原话。",
         "2034 杯历届中国足球小将参赛名单与长期培养核心名单到底有多大重合，仍需逐届拆表。",
         "分区赛直通、邀请、联合组队和外地借调的边界规则，是否每届都有统一书面规程，仍需继续补官方文件。",
         "项目后续多年龄段梯队如何与国字号、职业俱乐部和学校系统并表。",
@@ -12633,6 +12634,12 @@
             {
               "note": "7月19日举行致敬传承赛，20余位退役名将与足球小将常规时间1比1，元老队点球3比2取胜。",
               "source_url": "https://www.sipac.gov.cn/szgyyq/jsdt/202607/ba5526eed1b8418cb97ccaf05d412c47.shtml"
+            },
+            {
+              "note": "宁波相关赛后发言线索把关注点引向小升初后的整队延续；原始采访和“八强”身份尚待核，专题只按可验证的全国政策与宁波本地案例展开。",
+              "source_url": "https://www.xiaojiangfc.com/cup/2034/",
+              "related_story_id": "ningbo-u12-middle-school-continuity",
+              "related_story_label": "专题：小学球队如何跨过小升初"
             }
           ],
           "confidence": "mixed",
@@ -44227,10 +44234,10 @@
   },
   "football_stories": {
     "schema_version": 1,
-    "last_checked": "2026-07-25",
+    "last_checked": "2026-08-02",
     "editorial_policy": {
-      "zh": "人物经历优先采用本人、俱乐部、政府、学校和公益机构来源。公开争议只记录可归因主张与回应，不把单方指控写成事实，也不对法律问题作结论。",
-      "en": "Career facts prioritize first-party, club, government, school and foundation sources. Public disputes are recorded as attributed claims and responses, never as established facts or legal findings."
+      "zh": "人物经历与议题事实优先采用本人、俱乐部、政府、学校、公益机构和主流媒体来源。公开争议只记录可归因主张与回应；没有稳定原始出处的采访线索明确标为待核，不把单方转述写成事实，也不对法律问题作结论。",
+      "en": "Career and issue facts prioritize first-party, club, government, school, foundation and established media sources. Public disputes remain attributed; interview leads without a stable primary source are explicitly marked unverified, and neither single-party accounts nor legal claims are presented as established facts."
     },
     "stories": [
       {
@@ -44824,6 +44831,221 @@
             "url": "https://ln.people.com.cn/BIG5/n2/2026/0119/c378322-41476081.html",
             "checked_at": "2026-07-25",
             "claim": "确认柳忠云年逾古稀仍返校指导及学校体教融合现状。"
+          }
+        ]
+      },
+      {
+        "id": "ningbo-u12-middle-school-continuity",
+        "kind": "issue",
+        "title": {
+          "zh": "从2034杯宁波赛后线索看“12岁退役”：小学球队如何跨过小升初",
+          "en": "From a Ningbo 2034 Cup lead to the age-12 drop-off: how primary-school teams cross into middle school"
+        },
+        "summary": {
+          "zh": "第六届2034杯宁波参赛队相关赛后讨论，把视线从一届U12比赛引向更长期的问题：队员升入不同初中后，原有校队或社会青训队如何延续。公开赛程能确认“宁波优康龙之队”参赛，但截至2026年8月2日，本站尚未找到可稳定访问的原始采访，也无法据公开赛程确认“八强宁波”的准确队名与届次。本专题因此把赛后线索、全国性证据、宁波本地断层与已有衔接实践分层记录。",
+          "en": "Discussion around a Ningbo entrant at the sixth 2034 Cup shifts attention from one U12 tournament to a longer-term problem: what happens to a school or community team when its players enter different middle schools. Public fixtures confirm Ningbo Youkang Longzhidui as an entrant, but as of 2 August 2026 this project has not located a stable copy of the original interview or confirmed the exact team and edition behind the 'Ningbo quarter-finalist' description. The story therefore separates the post-match lead from national evidence, local discontinuity and documented pathway responses in Ningbo."
+        },
+        "checked_at": "2026-08-02",
+        "related_entities": [
+          {
+            "type": "dossier",
+            "id": "donglu-football-boys",
+            "label": "2034杯与中国足球小将专题"
+          },
+          {
+            "type": "story",
+            "id": "dalian-dongbeilu-primary-football",
+            "label": "东北路小学“一条龙”对照案例"
+          }
+        ],
+        "identity_note": {
+          "zh": "这里的“球队解散”指原有训练与参赛组织在小升初节点无法按原班人马延续，不等于俱乐部完成法律注销，也不等于全部队员停止踢球。第六届公开赛程中的宁波队名为“宁波优康龙之队”；现有赛果不足以支持把它写成该届全国八强，因此“八强宁波”和赛后发言原视频均保留为待核线索。",
+          "en": "Here, 'team dissolution' means that an existing training and competition group cannot continue intact across the primary-to-middle-school transition. It does not mean a club was legally dissolved, nor that every player stopped playing. The Ningbo entrant in the published sixth-edition fixtures is Ningbo Youkang Longzhidui; the available results do not support describing it as a national quarter-finalist, so both that identification and the original post-match video remain open leads."
+        },
+        "key_facts": [
+          {
+            "label": {
+              "zh": "赛后线索状态",
+              "en": "Interview lead"
+            },
+            "value": {
+              "zh": "原始视频、发言人、届次与“八强”口径待核",
+              "en": "Original video, speaker, edition and quarter-final label remain unverified"
+            }
+          },
+          {
+            "label": {
+              "zh": "全国样本",
+              "en": "National sample"
+            },
+            "value": {
+              "zh": "2018北京百队杯：U8/U9共229队，U13/U15合计70队",
+              "en": "2018 Beijing Hundred-Team Cup: 229 U8/U9 teams versus 70 U13/U15 teams"
+            }
+          },
+          {
+            "label": {
+              "zh": "宁波2023参与面",
+              "en": "Ningbo participation in 2023"
+            },
+            "value": {
+              "zh": "足协主办或协办40余项赛事、1300余场；校园联赛145队、近1500人",
+              "en": "40+ association-backed competitions and 1,300+ matches; 145 school-league teams and nearly 1,500 players"
+            }
+          },
+          {
+            "label": {
+              "zh": "国家政策方向",
+              "en": "National policy direction"
+            },
+            "value": {
+              "zh": "试点小学生、初中生升学时随校队成建制流动",
+              "en": "Pilot intact school-team movement during primary and middle-school transitions"
+            }
+          }
+        ],
+        "timeline": [
+          {
+            "date": "2023-11-16",
+            "label": {
+              "zh": "新华社系统记录“12岁退役”",
+              "en": "Xinhua documents the age-12 drop-off"
+            },
+            "detail": {
+              "zh": "新华每日电讯记录小学年龄段参与人数增长、进入初中后断崖式下降，并引用北京百队杯U8/U9与U13/U15队数对比。报道中的“上初中了，队伍解散了”来自北京少年队观察，并非宁波赛后原话。",
+              "en": "Xinhua reported a sharp participation decline after primary school and compared U8/U9 with U13/U15 team counts at Beijing's Hundred-Team Cup. Its line about a team dissolving after players entered middle school concerned a Beijing youth team, not the Ningbo post-match lead."
+            }
+          },
+          {
+            "date": "2024-02-23",
+            "label": {
+              "zh": "国家文件提出成建制升学流动试点",
+              "en": "National policy proposes intact-team transition pilots"
+            },
+            "detail": {
+              "zh": "体育总局等12部门印发《中国青少年足球改革发展实施意见》，提出在部分市县试点：小学生、初中生升学时可随校队分别在县域内、市域内成建制流动，并探索中学足球特色班。",
+              "en": "A 12-agency national youth-football plan proposed pilots allowing primary- and middle-school pupils to move with school teams within county and city boundaries, alongside specialist football classes in selected middle schools."
+            }
+          },
+          {
+            "date": "2024-05-21",
+            "label": {
+              "zh": "海曙披露“幼小初”一条龙赛道",
+              "en": "Haishu reports a kindergarten-primary-middle pathway"
+            },
+            "detail": {
+              "zh": "海曙区政府报道当地从幼儿园足球大会、小学春秋联赛延伸到初中足球基地学校，目标是让具备技能的学生持续有训练和比赛。该口径证明制度节点已经搭建，但不能替代逐名留存率统计。",
+              "en": "Haishu district described a pathway from kindergarten festivals and primary-school leagues to designated middle-school football bases. It documents institutional links, but not player-by-player retention rates."
+            }
+          },
+          {
+            "date": "2024-11-12",
+            "label": {
+              "zh": "姜山实验中学展示宁波衔接样本",
+              "en": "Jiangshan Experimental Middle School offers a Ningbo pathway example"
+            },
+            "detail": {
+              "zh": "中国体育报经国家体育总局转载，记录姜山镇实验中学与小学和高中建立联系，并称校队接近九成学生可以升入普通高中。该案例说明衔接可以实现，但不代表宁波所有区县、学校和社会青训队都已覆盖。",
+              "en": "A China Sports Daily report republished by the General Administration of Sport described links between Jiangshan Experimental Middle School, primary schools and high schools, and said nearly 90% of its team entered regular high schools. This is a documented local model, not evidence of citywide coverage."
+            }
+          },
+          {
+            "date": "2026-07-25/08-01",
+            "label": {
+              "zh": "第六届2034杯宁波赛后线索进入待核清单",
+              "en": "The sixth 2034 Cup Ningbo lead enters the verification queue"
+            },
+            "detail": {
+              "zh": "赛事公开赛程可确认宁波优康龙之队参赛和逐场结果；用户提出的赛后发言把小升初后原队解散问题重新带入讨论。由于缺少稳定原视频，专题只记录线索状态，不逐字引用、不确认发言人，也不把“八强”写成赛果事实。",
+              "en": "Published fixtures confirm Ningbo Youkang Longzhidui's participation and match results. A user-supplied post-match lead renewed attention on teams breaking up after primary school, but without a stable original video this story does not quote it, identify a speaker or treat the quarter-final label as a verified result."
+            }
+          }
+        ],
+        "sections": [
+          {
+            "title": {
+              "zh": "为什么小学强队会在小升初节点消失",
+              "en": "Why strong primary teams disappear at the middle-school transition"
+            },
+            "body": {
+              "zh": "一支U12队伍通常叠加了学校学籍、社会青训教练、固定训练场地、家长接送和同年龄赛事。进入初中后，队员可能分流到不同学区，训练时间被学业和通勤压缩，原教练也未必能进入新学校；少数尖子进入体校或职业梯队，其余队员即使继续把足球当作爱好，也不再以原队名参赛。因此“原队解散”“球员退出竞赛”和“球员完全不踢球”必须分开统计。",
+              "en": "A U12 side often combines school enrolment, community coaches, a fixed venue, family transport and age-specific competition. Middle-school enrolment can split players across districts, while study load, travel and coaching access change. A few enter sports schools or professional academies; others may keep playing recreationally without the original team identity. Team discontinuity, exit from organised competition and complete withdrawal from football therefore require separate measures."
+            }
+          },
+          {
+            "title": {
+              "zh": "宁波的矛盾：参与面大，初中阶段仍有断层",
+              "en": "Ningbo's paradox: broad participation and a middle-school gap"
+            },
+            "body": {
+              "zh": "宁波本地调查显示，2023年仅由市足协主办或协办的青少年赛事就超过40项、1300场，校园联赛有145队、近1500名球员；注册社会青训机构48家，全国和省级足球特色学校数量也很可观。同一调查同时指出低年龄段实力突出、初中年龄段脱节，并记录部分家庭在小学毕业后把足球转为爱好。规模数据说明入口并不小，却不能回答同一批孩子在U13、U15还剩多少。",
+              "en": "A local Ningbo survey counted more than 40 association-backed youth competitions and 1,300 matches in 2023, plus 145 school-league teams, nearly 1,500 players and 48 registered community training organisations. The same report described strong younger age groups but a serious middle-school gap, with some families shifting football from competitive pursuit to hobby after primary school. Large entry numbers do not reveal how many of the same players remain at U13 or U15."
+            }
+          },
+          {
+            "title": {
+              "zh": "现有解决路径：整队衔接、基地学校和双轨训练",
+              "en": "Documented responses: intact movement, base schools and dual pathways"
+            },
+            "body": {
+              "zh": "国家层面已经把“随校队成建制流动”写入试点方向；宁波海曙把幼儿园、小学联赛与初中基地学校串联，姜山实验中学则通过小学选材、区教育部门协调和高中联系形成升学链。可持续性不只取决于一次招生，还包括文化课安排、跨校训练场地、教练归属、周末联赛和退出职业路径后的继续参赛机会。",
+              "en": "National policy now includes pilot intact-team movement. Haishu links kindergarten and primary competitions to middle-school base schools, while Jiangshan Experimental Middle School combines primary recruitment, education-department coordination and high-school links. Sustainability depends on more than admissions: study scheduling, shared venues, coaching responsibility, weekend competition and continued playing opportunities outside the professional track all matter."
+            }
+          },
+          {
+            "title": {
+              "zh": "后续应怎样追踪，而不是只看U12名次",
+              "en": "What to track beyond an U12 finish"
+            },
+            "body": {
+              "zh": "专题建议为2034杯参赛队建立匿名或经授权的届后追踪：毕业时队员数、进入同一所或合作初中的人数、U13继续注册和参赛人数、原教练是否延续、每周训练次数、退出原因，以及一年和三年后的留存率。只有把“整队延续、异队继续、转为校园爱好、停止参赛、完全退出”拆开，才能判断一支小学强队的比赛成绩是否真正转化为长期足球人口。",
+              "en": "A useful follow-up would track, anonymously or with consent, squad size at graduation, movement into partner middle schools, U13 registration and competition, coaching continuity, weekly sessions, reasons for leaving, and retention after one and three years. Separating intact-team continuation, continuation elsewhere, recreational school football, exit from competition and complete withdrawal is necessary before treating an U12 result as a lasting contribution to the football population."
+            }
+          }
+        ],
+        "public_disputes": [],
+        "source_links": [
+          {
+            "type": "secondary-match-index",
+            "label": "中国足球小将资料站：第六届2034杯逐场战报",
+            "url": "https://www.xiaojiangfc.com/cup/2034/",
+            "checked_at": "2026-08-02",
+            "claim": "确认宁波优康龙之队参赛和公开赛果；该页面没有提供待核赛后发言，也不足以支持“全国八强”身份。"
+          },
+          {
+            "type": "state-media",
+            "label": "新华每日电讯：中国足球的“十二岁退役”现象",
+            "url": "https://www.news.cn/mrdx/2023-11/16/c_1310750798.htm",
+            "checked_at": "2026-08-02",
+            "claim": "确认“12岁退役”问题、北京百队杯年龄组队数对比及小学升初中后队伍中断案例。"
+          },
+          {
+            "type": "national-policy",
+            "label": "国家体育总局：《中国青少年足球改革发展实施意见》",
+            "url": "https://www.sport.gov.cn/qss/n5015/c27588224/content.html",
+            "checked_at": "2026-08-02",
+            "claim": "确认小学生、初中生升学时随校队成建制流动及足球特色班等试点方向。"
+          },
+          {
+            "type": "local-government",
+            "label": "海曙区政府：幼小初一条龙足球赛道",
+            "url": "https://www.haishu.gov.cn/art/2024/5/21/art_1229100641_58996007.html",
+            "checked_at": "2026-08-02",
+            "claim": "确认海曙从幼儿园、小学联赛到初中足球基地学校的衔接安排。"
+          },
+          {
+            "type": "government-media",
+            "label": "国家体育总局转载中国体育报：浙江破解“12岁退役”",
+            "url": "https://www.sport.gov.cn/n20001280/n20745751/c28249107/content.html",
+            "checked_at": "2026-08-02",
+            "claim": "确认浙江一条龙政策背景、宁波姜山实验中学的校际升学联系和公开升学口径。"
+          },
+          {
+            "type": "local-media-secondary",
+            "label": "宁波青少年足球调查：低年龄段强、初中年龄段脱节",
+            "url": "https://www.sohu.com/a/761035986_121406675",
+            "checked_at": "2026-08-02",
+            "claim": "提供2023年宁波赛事、球队、社会青训机构和特色学校规模，并记录小升初后的家庭选择；属于媒体转载，数字不外推到2026年。"
           }
         ]
       }

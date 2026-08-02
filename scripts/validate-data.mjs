@@ -2038,7 +2038,7 @@ function validateFootballStories(archive, dataset) {
   }
 
   for (const story of archive.stories) {
-    assert(["person", "institution"].includes(story.kind), `Invalid football story kind: ${story.id}`);
+    assert(["person", "institution", "issue"].includes(story.kind), `Invalid football story kind: ${story.id}`);
     assert(story.title?.zh && story.title?.en, `Missing football story title: ${story.id}`);
     assert(story.summary?.zh && story.summary?.en, `Missing football story summary: ${story.id}`);
     assert(story.identity_note?.zh && story.identity_note?.en, `Missing identity note: ${story.id}`);
@@ -2885,6 +2885,20 @@ export async function validateData(referenceDate = new Date().toISOString().slic
 
     assert(!playerIds.has(player.id), `Duplicate player id: ${player.id}`);
     assert(isIsoDate(player.birth_date), `Invalid birth_date for ${player.id}`);
+    if (player.birth_place !== undefined) {
+      assert(typeof player.birth_place === "string" && player.birth_place.length > 0, `Invalid birth_place for ${player.id}`);
+    }
+    if (player.secondary_positions !== undefined) {
+      assert(Array.isArray(player.secondary_positions), `Invalid secondary_positions for ${player.id}`);
+      assert(new Set(player.secondary_positions).size === player.secondary_positions.length, `Duplicate secondary_positions on ${player.id}`);
+      for (const position of player.secondary_positions) {
+        assert(typeof position === "string" && position.length > 0, `Invalid secondary position on ${player.id}`);
+        assert(position !== player.primary_position, `Primary position repeated as secondary on ${player.id}`);
+      }
+    }
+    if (player.preferred_foot !== undefined) {
+      assert(["left", "right", "both"].includes(player.preferred_foot), `Invalid preferred_foot for ${player.id}`);
+    }
     validatePlayerNames(player);
     if (nativeNameAuditCountries.has(player.country)) {
       nativeNameAuditCount += 1;
@@ -2915,6 +2929,18 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     );
     if (player.registration_club.as_of !== undefined) {
       assert(isIsoDate(player.registration_club.as_of), `Invalid registration_club as_of on ${player.id}`);
+    }
+    if (player.registration_club.joined_date !== undefined) {
+      assert(isIsoDate(player.registration_club.joined_date), `Invalid registration_club joined_date on ${player.id}`);
+    }
+    if (player.registration_club.contract_expires !== undefined) {
+      assert(isIsoDate(player.registration_club.contract_expires), `Invalid registration_club contract_expires on ${player.id}`);
+      if (player.registration_club.joined_date !== undefined) {
+        assert(
+          player.registration_club.contract_expires >= player.registration_club.joined_date,
+          `registration_club contract expires before joined_date on ${player.id}`
+        );
+      }
     }
     if (registrationStatus === "tournament-snapshot") {
       assert(
