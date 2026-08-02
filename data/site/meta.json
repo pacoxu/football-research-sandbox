@@ -124,21 +124,21 @@
         "unclassified": 13
       },
       "checked_at": {
-        "oldest": "2026-06-27",
+        "oldest": "2026-06-28",
         "newest": "2026-08-01"
       },
       "overdue_records": 0,
       "missing_fields": [
-        {
-          "field": "source_version",
-          "count": 23
-        },
         {
           "field": "final_draw",
           "count": 22
         },
         {
           "field": "source_checked_at",
+          "count": 15
+        },
+        {
+          "field": "source_version",
           "count": 15
         }
       ]
