@@ -43785,10 +43785,14 @@
       "zh": "五大联赛之外的亚洲主教练试点",
       "en": "Asian head coaches beyond the big five leagues"
     },
-    "last_checked": "2026-07-19",
+    "last_checked": "2026-08-01",
     "summary": {
-      "zh": "统一记录 AFC 成员协会教练在欧洲非五大顶级联赛、AFC 成年与青年国家队、亚洲顶级联赛中的一线队主教练任期。第二批已扩至11名教练；只落任命事实和官方来源，战绩允许待后续逐场核验。",
-      "en": "A unified sample of AFC-association head coaches in non-big-five European top flights, AFC senior and youth national teams, and Asian top-flight clubs. The second release covers 11 coaches; appointments require official sources while match records may remain pending."
+      "zh": "统一记录 AFC 成员协会教练在欧洲非五大顶级联赛、AFC 成年与青年国家队、亚洲顶级联赛中的一线队主教练任期。共11名教练、19段任期；15段已按声明赛事完成逐场闭环，4段因职责边界或进行中赛季未闭环而保持空值。",
+      "en": "A unified sample of AFC-association head coaches in non-big-five European top flights, AFC senior and youth national teams, and Asian top-flight clubs. It covers 11 coaches and 19 stints: 15 have complete match-level audits for the declared scope, while four remain null because role boundaries or ongoing seasons are not closed."
+    },
+    "record_audit_counts": {
+      "complete": 15,
+      "pending": 4
     },
     "scope_counts": {
       "afc_member_association": 11,
@@ -43849,8 +43853,39 @@
             },
             "season": "2013-2017 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Australia men's senior A internationals only; shoot-outs are draws after extra time; youth and non-FIFA matches excluded",
+            "record": {
+              "matches": 49,
+              "wins": 22,
+              "draws": 12,
+              "losses": 15,
+              "points": 78
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2013-11-19",
+                "through": "2017-11-15"
+              },
+              "fixture_sources": [
+                {
+                  "label": "Socceroos fixtures and results archive",
+                  "url": "https://socceroos.com.au/fixtures#!/t575",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "ABC cross-check of Postecoglou's final Socceroos record",
+                  "url": "https://www.abc.net.au/news/2017-11-22/ange-postecoglou-quites-as-socceroos-coach-ahead-of-world-cup/9178616",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The official archive fixture set closes at the Honduras play-off; the ABC total independently matches 49=22+12+15."
+            },
             "source_links": [
               {
                 "label": "Football Australia career review for Ange Postecoglou",
@@ -43879,8 +43914,39 @@
             },
             "season": "2018-2021",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; J1 match-level record pending audit",
-            "record": null,
+            "record_scope": "J1 League regular-season matches only; cups, AFC competitions and friendlies excluded",
+            "record": {
+              "matches": 118,
+              "wins": 58,
+              "draws": 18,
+              "losses": 42,
+              "points": 192
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "J1 League"
+              ],
+              "coverage": {
+                "from": "2018-02-25",
+                "through": "2021-05-30"
+              },
+              "fixture_sources": [
+                {
+                  "label": "J.League Data Site manager match log",
+                  "url": "https://data.j-league.or.jp/SFIX07/?staff_id=11104",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "Yokohama F. Marinos departure record",
+                  "url": "https://www.f-marinos.com/en/news/detail/2021-06-10/01",
+                  "type": "club-announcement"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "Season totals are 34, 34, 34 and 16 matches; the club's departure release independently states 118=58+18+42."
+            },
             "source_links": [
               {
                 "label": "J.League profile of Australian managers with J.League links",
@@ -43909,8 +43975,45 @@
             },
             "season": "2021-22 to 2022-23",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; Scottish Premiership record pending audit",
-            "record": null,
+            "record_scope": "Scottish Premiership matches only; domestic cups and UEFA competitions excluded",
+            "record": {
+              "matches": 76,
+              "wins": 61,
+              "draws": 9,
+              "losses": 6,
+              "points": 192
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "Scottish Premiership 2021-22",
+                "Scottish Premiership 2022-23"
+              ],
+              "coverage": {
+                "from": "2021-07-31",
+                "through": "2023-05-27"
+              },
+              "fixture_sources": [
+                {
+                  "label": "SPFL Premiership 2021-22 archive",
+                  "url": "https://spfl.co.uk/league/premiership/archive/356",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "SPFL Premiership 2022-23 archive",
+                  "url": "https://spfl.co.uk/league/premiership/archive/364",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "Celtic's 2022-23 manager-of-the-season review",
+                  "url": "https://www.celticfc.com/news/2023/may/23/ange-postecoglou-is-the-spfl-premiership-manager-of-the-season/",
+                  "type": "club-announcement"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The two complete league seasons close at 38 matches each: 29-6-3 and 32-3-3."
+            },
             "source_links": [
               {
                 "label": "Celtic appoint Ange Postecoglou as new football manager",
@@ -43967,8 +44070,44 @@
             },
             "season": "2024-2027 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Australia men's senior A internationals through 2026-07-03; shoot-outs are draws after extra time; youth and non-FIFA matches excluded",
+            "record": {
+              "matches": 22,
+              "wins": 11,
+              "draws": 6,
+              "losses": 5,
+              "points": 39
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2024-10-10",
+                "through": "2026-07-03"
+              },
+              "fixture_sources": [
+                {
+                  "label": "Socceroos fixtures and results archive",
+                  "url": "https://socceroos.com.au/fixtures#!/t575",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "FIFA Australia 1-1 Egypt match report",
+                  "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/australia-egypt-match-report-highlights",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams coach match log through the 2026 group stage",
+                  "url": "https://www.national-football-teams.com/coach/427/Tony_Popovic.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": "2026-10-30",
+              "notes": "The authoritative match log closes 21 group-stage matches at 11-5-5; FIFA supplies the subsequent Egypt draw, counted as a draw despite the shoot-out loss."
+            },
             "source_links": [
               {
                 "label": "Football Australia appoints Tony Popovic as Socceroos head coach",
@@ -44021,8 +44160,39 @@
             },
             "season": "2012-2017",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; J1 match-level record pending audit",
-            "record": null,
+            "record_scope": "J1 League regular-season matches only; cups, AFC competitions and friendlies excluded",
+            "record": {
+              "matches": 187,
+              "wins": 92,
+              "draws": 40,
+              "losses": 55,
+              "points": 316
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "J1 League"
+              ],
+              "coverage": {
+                "from": "2012-03-10",
+                "through": "2017-07-01"
+              },
+              "fixture_sources": [
+                {
+                  "label": "J.League Data Site manager match log",
+                  "url": "https://data.j-league.or.jp/SFIX07/?staff_id=3173",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "JFA appointment profile with Moriyasu's J1 career record",
+                  "url": "https://www.jfa.jp/eng/news/00015423/",
+                  "type": "association-announcement"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The J.League log and JFA profile independently close the league record at 187=92+40+55."
+            },
             "source_links": [
               {
                 "label": "JFA AFC Asian Cup 2019 media guide",
@@ -44051,8 +44221,35 @@
             },
             "season": "Tokyo 2020 Olympic cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; youth international record pending audit",
+            "record_scope": "Japan Olympic-age national-team matches only; senior-team matches excluded; no aggregate until the overlapping U-21/U-23/Olympic delegation is reconciled match by match",
             "record": null,
+            "record_audit": {
+              "status": "pending",
+              "competitions": [
+                "AFC U23 Championship / AFC U23 Asian Cup",
+                "Olympic Games men's football",
+                "Olympic-age friendlies"
+              ],
+              "coverage": {
+                "from": "2017-11",
+                "through": "2021-08"
+              },
+              "fixture_sources": [
+                {
+                  "label": "JFA national-team schedule and results archive",
+                  "url": "https://www.jfa.jp/eng/national_team/",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "JFA one-team, two-categories appointment model",
+                  "url": "https://www.jfa.jp/eng/news/00015423/",
+                  "type": "association-announcement"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The senior and Olympic-age mandates overlapped and match-day delegation was not uniform; the complete fixture set cannot yet be assigned without mixing roles."
+            },
             "source_links": [
               {
                 "label": "JFA AFC Asian Cup 2019 media guide",
@@ -44086,8 +44283,39 @@
             },
             "season": "2018-2026 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Japan men's senior A internationals through 2026-06-30; shoot-outs are draws after extra time; Olympic-age and non-FIFA matches excluded",
+            "record": {
+              "matches": 106,
+              "wins": 73,
+              "draws": 15,
+              "losses": 18,
+              "points": 234
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2018-09-11",
+                "through": "2026-06-30"
+              },
+              "fixture_sources": [
+                {
+                  "label": "JFA Samurai Blue yearly schedules and results",
+                  "url": "https://www.jfa.jp/samuraiblue/schedule_result/2026.html",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams coach match log",
+                  "url": "https://www.national-football-teams.com/coach/15559/Hajime_Moriyasu.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": "2026-10-30",
+              "notes": "Year-by-year JFA schedules were reconciled to the authoritative coach log; one 2024 non-FIFA match is excluded."
+            },
             "source_links": [
               {
                 "label": "JFA appoints Hajime Moriyasu as SAMURAI BLUE head coach",
@@ -44140,8 +44368,44 @@
             },
             "season": "2021-2024",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; K League 1 record pending audit",
-            "record": null,
+            "record_scope": "K League 1 regular-season and split-stage league matches only; domestic cups and AFC competitions excluded",
+            "record": {
+              "matches": 136,
+              "wins": 77,
+              "draws": 34,
+              "losses": 25,
+              "points": 265
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "K League 1"
+              ],
+              "coverage": {
+                "from": "2021-03-01",
+                "through": "2024-07-10"
+              },
+              "fixture_sources": [
+                {
+                  "label": "K League official results and records portal",
+                  "url": "https://www.kleague.com/record/team.do",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "K League review of Hong's Ulsan tenure",
+                  "url": "https://www.kleague.com/news_view.do?orderBy=seq&page=3&seq=90375&viewOption=album",
+                  "type": "league-profile"
+                },
+                {
+                  "label": "Yonhap departure cross-check after Ulsan's 22nd 2024 league match",
+                  "url": "https://en.yna.co.kr/view/AEN20240711008000315",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "Season rows close at 38, 38, 38 and 22 league matches; totals are 136=77+34+25."
+            },
             "source_links": [
               {
                 "label": "AFC: Hong Myung-bo named Ulsan Hyundai FC head coach",
@@ -44175,8 +44439,44 @@
             },
             "season": "2024-2026 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Korea Republic men's senior A internationals in Hong's second spell only; shoot-outs are draws after extra time; 2013-14 spell excluded",
+            "record": {
+              "matches": 26,
+              "wins": 15,
+              "draws": 5,
+              "losses": 6,
+              "points": 50
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2024-09-05",
+                "through": "2026-06-24"
+              },
+              "fixture_sources": [
+                {
+                  "label": "KFA men's A national-team results archive",
+                  "url": "https://www.kfa.or.kr/national/?act=results",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "AFC Korea Republic match and association archive",
+                  "url": "https://www.the-afc.com/en/east/korea_republic.html",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams coach match log",
+                  "url": "https://www.national-football-teams.com/coach/13786/Myung_Bo_Hong.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The second spell is isolated from Hong's 2013-14 tenure; year rows close at 6, 13 and 7 matches."
+            },
             "source_links": [
               {
                 "label": "KFA appoints Hong Myung-bo as Korea Republic head coach",
@@ -44229,8 +44529,40 @@
             },
             "season": "2015-16 to 2016-17",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; domestic and AFC match records pending audit",
-            "record": null,
+            "record_scope": "Hong Kong Premier League matches under Chan only; cups, AFC competitions and pre-appointment Eastern matches excluded",
+            "record": {
+              "matches": 29,
+              "wins": 21,
+              "draws": 5,
+              "losses": 3,
+              "points": 68
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "Hong Kong Premier League 2015-16",
+                "Hong Kong Premier League 2016-17"
+              ],
+              "coverage": {
+                "from": "2015-12-13",
+                "through": "2017-05-06"
+              },
+              "fixture_sources": [
+                {
+                  "label": "HKFA competition results archive",
+                  "url": "https://www.hkfa.com/en/competitions/results",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "FootyStats Chan Yuen-ting season split cross-check",
+                  "url": "https://footystats.org/managers/hong-kong/yuen-ting-chan",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "Only league fixtures after the 2015-12 appointment are counted: 9 matches in 2015-16 and 20 in 2016-17."
+            },
             "source_links": [
               {
                 "label": "AFC Champions League Q&A with Chan Yuen-ting",
@@ -44281,8 +44613,39 @@
             },
             "season": "2021-2023",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "J1 League regular-season matches only; cups, AFC competitions and friendlies excluded",
+            "record": {
+              "matches": 86,
+              "wins": 49,
+              "draws": 18,
+              "losses": 19,
+              "points": 165
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "J1 League"
+              ],
+              "coverage": {
+                "from": "2021-08-06",
+                "through": "2023-12-03"
+              },
+              "fixture_sources": [
+                {
+                  "label": "J.League Data Site manager match log",
+                  "url": "https://data.j-league.or.jp/SFIX07/?staff_id=16325",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "J.League review of Muscat's Yokohama departure",
+                  "url": "https://www.jleague.jp/news/article/26688/",
+                  "type": "league-profile"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "Season rows close at 18, 34 and 34 league matches; totals are 86=49+18+19."
+            },
             "source_links": [
               {
                 "label": "AFC: Muscat to leave Marinos",
@@ -44311,8 +44674,33 @@
             },
             "season": "2024-current",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
+            "record_scope": "Chinese Super League matches only; cups, AFC competitions and friendlies excluded; aggregate withheld until the ongoing 2026 league fixture set closes",
             "record": null,
+            "record_audit": {
+              "status": "pending",
+              "competitions": [
+                "Chinese Super League"
+              ],
+              "coverage": {
+                "from": "2023-12",
+                "through": "2026-08-01"
+              },
+              "fixture_sources": [
+                {
+                  "label": "Chinese Football Association competition portal",
+                  "url": "https://www.thecfa.cn/",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "Transfermarkt national-league match log cross-check",
+                  "url": "https://www.transfermarkt.com/kevin-muscat/leistungsdatenLigenNational/trainer/8154",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": "2026-10-30",
+              "notes": "The closed 2024 and 2025 league seasons can be reconciled, but the 2026 season is ongoing and the full stint aggregate is therefore not published."
+            },
             "source_links": [
               {
                 "label": "AFC: Muscat takes charge of Shanghai Port",
@@ -44363,8 +44751,44 @@
             },
             "season": "2022-2024 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Malaysia men's senior A internationals only; shoot-outs are draws after extra time; non-FIFA and post-resignation matches excluded",
+            "record": {
+              "matches": 34,
+              "wins": 20,
+              "draws": 4,
+              "losses": 10,
+              "points": 64
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2022-03-23",
+                "through": "2024-06-11"
+              },
+              "fixture_sources": [
+                {
+                  "label": "FAM official competition management results",
+                  "url": "https://cms.fam.org.my/results",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "AFC Malaysia association and competition archive",
+                  "url": "https://www.the-afc.com/en/south_east/malaysia.html",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams coach match log",
+                  "url": "https://www.national-football-teams.com/coach/52373/Pan_Gon_Kim.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The 2024 Syria warm-up is classified non-FIFA and excluded; the September 2024 Lebanon match occurred after Kim's July resignation and is also excluded."
+            },
             "source_links": [
               {
                 "label": "AFC: Kim steps down as Malaysia head coach",
@@ -44393,8 +44817,33 @@
             },
             "season": "2025-26-current",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
+            "record_scope": "Malaysia Super League matches only; cups and continental competitions excluded; aggregate withheld while the current league season is incomplete",
             "record": null,
+            "record_audit": {
+              "status": "pending",
+              "competitions": [
+                "Malaysia Super League"
+              ],
+              "coverage": {
+                "from": "2026-01",
+                "through": "2026-08-01"
+              },
+              "fixture_sources": [
+                {
+                  "label": "Malaysian Football League official competition portal",
+                  "url": "https://www.malaysianfootballleague.com/",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "Selangor appointment announcement",
+                  "url": "https://selangorfc.com/en/news/3687/Official%20%20Kim%20Pan-Gon%20Appointed%20Head%20Coach%20of%20Selangor%20FC",
+                  "type": "club-announcement"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": "2026-10-30",
+              "notes": "The appointment is current and the complete league fixture set has not closed; no partial-season total is inferred."
+            },
             "source_links": [
               {
                 "label": "Selangor FC appoints Kim Pan-gon as first-team head coach",
@@ -44440,8 +44889,39 @@
             },
             "season": "2018 World Cup cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Japan men's senior A internationals under Nishino; youth and club matches excluded",
+            "record": {
+              "matches": 7,
+              "wins": 2,
+              "draws": 1,
+              "losses": 4,
+              "points": 7
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2018-05-30",
+                "through": "2018-07-02"
+              },
+              "fixture_sources": [
+                {
+                  "label": "JFA Samurai Blue 2018 schedule and results",
+                  "url": "https://www.jfa.jp/samuraiblue/schedule_result/2018.html",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams Nishino match log cross-check",
+                  "url": "https://www.national-football-teams.com/coach/36690/Akira_Nishino.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "JFA's official fixture set includes the 30 May Ghana match in addition to the six matches listed by the secondary coach log."
+            },
             "source_links": [
               {
                 "label": "JFA appoints Nishino as SAMURAI BLUE head coach",
@@ -44470,8 +44950,39 @@
             },
             "season": "2019-2021 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Thailand men's senior A internationals only; the 2021 Oman non-FIFA match is excluded",
+            "record": {
+              "matches": 10,
+              "wins": 2,
+              "draws": 5,
+              "losses": 3,
+              "points": 11
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2019-09-05",
+                "through": "2021-06-15"
+              },
+              "fixture_sources": [
+                {
+                  "label": "AFC Thailand association and competition archive",
+                  "url": "https://www.the-afc.com/en/south_east/thailand.html",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams Nishino match log",
+                  "url": "https://www.national-football-teams.com/coach/36690/Akira_Nishino.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "Ten FIFA matches close at 2-5-3; the 25 May 2021 Oman warm-up is classified non-FIFA and excluded."
+            },
             "source_links": [
               {
                 "label": "AFC: Nishino to chart Thailand's future",
@@ -44522,8 +45033,39 @@
             },
             "season": "2023-2025 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised Thailand men's senior A internationals only; shoot-outs are draws after extra time; youth and non-FIFA matches excluded",
+            "record": {
+              "matches": 30,
+              "wins": 16,
+              "draws": 6,
+              "losses": 8,
+              "points": 54
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2024-01-01",
+                "through": "2025-10-14"
+              },
+              "fixture_sources": [
+                {
+                  "label": "AFC Thailand association and competition archive",
+                  "url": "https://www.the-afc.com/en/south_east/thailand.html",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams Ishii match log",
+                  "url": "https://www.national-football-teams.com/coach/93277/Masatada_Ishii.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The 2024 and 2025 year rows close at 20 and 10 matches respectively, totalling 30=16+6+8."
+            },
             "source_links": [
               {
                 "label": "AFC: Polking leaves Thailand and Ishii takes over",
@@ -44574,8 +45116,44 @@
             },
             "season": "2023-2026 cycle",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
-            "record": null,
+            "record_scope": "FIFA-recognised IR Iran men's senior A internationals in Ghalenoei's 2023-present spell only; 2006-07 spell and non-FIFA matches excluded",
+            "record": {
+              "matches": 46,
+              "wins": 31,
+              "draws": 9,
+              "losses": 6,
+              "points": 102
+            },
+            "record_audit": {
+              "status": "complete",
+              "competitions": [
+                "FIFA-recognised senior A internationals"
+              ],
+              "coverage": {
+                "from": "2023-03-23",
+                "through": "2026-06-26"
+              },
+              "fixture_sources": [
+                {
+                  "label": "AFC IR Iran association and competition archive",
+                  "url": "https://www.the-afc.com/en/central/islam_republic_of_iran.html",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "FIFA Egypt 1-1 IR Iran match report",
+                  "url": "https://www.fifa.com/en/articles/egypt-ir-iran-match-report-highlights",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "National Football Teams Ghalenoei match log through 2026-06-21",
+                  "url": "https://www.national-football-teams.com/coach/15348/Amir_Ghalenoei.html",
+                  "type": "secondary-crosscheck"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": "2026-10-30",
+              "notes": "The authoritative match log closes 45 matches in the current spell; FIFA supplies the subsequent Egypt draw. Two 2024 non-FIFA matches and the 2006-07 spell are excluded."
+            },
             "source_links": [
               {
                 "label": "AFC: Ghalenoei named IR Iran head coach",
@@ -44626,8 +45204,33 @@
             },
             "season": "2023-2025",
             "count_in_primary": true,
-            "record_scope": "appointment fact only; match-level record pending audit",
+            "record_scope": "Chinese Super League matches only; cups, AFC competitions and friendlies excluded; aggregate withheld because the effective touchline cutoff and temporary absence are not closed by an official match log",
             "record": null,
+            "record_audit": {
+              "status": "pending",
+              "competitions": [
+                "Chinese Super League"
+              ],
+              "coverage": {
+                "from": "2023-05",
+                "through": "2025-07"
+              },
+              "fixture_sources": [
+                {
+                  "label": "Chinese Football Association competition portal",
+                  "url": "https://www.thecfa.cn/",
+                  "type": "competition-record"
+                },
+                {
+                  "label": "Shandong Taishan head-coach change announcement",
+                  "url": "https://www.lnts.com.cn/newsdetail/2628.html",
+                  "type": "club-announcement"
+                }
+              ],
+              "last_checked": "2026-08-01",
+              "review_after": null,
+              "notes": "The contractual end and the final match under Choi's direct match-day control are not identical in available official material; publishing a total would risk assigning delegated matches to him."
+            },
             "source_links": [
               {
                 "label": "Shandong Taishan appoints Choi Kang-hee as first-team head coach",

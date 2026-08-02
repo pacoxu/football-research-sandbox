@@ -190,6 +190,11 @@ function coachEntry(base) {
     organizations: unique(base.organizations),
     age_bands: unique(base.age_bands),
     periods: asArray(base.periods),
+    records: asArray(base.records),
+    record_audit_counts: {
+      complete: base.record_audit_counts?.complete ?? 0,
+      pending: base.record_audit_counts?.pending ?? 0
+    },
     sources: normalizeSources(base.sources, { checkedAt: base.checked_at }),
     checked_at: base.checked_at ?? null,
     verification_status: base.verification_status ?? "verified",
@@ -204,6 +209,11 @@ function mergeCoach(target, incoming) {
   target.organizations = unique([...target.organizations, ...incoming.organizations]);
   target.age_bands = unique([...target.age_bands, ...incoming.age_bands]);
   target.periods = uniqueObjects([...target.periods, ...incoming.periods]);
+  target.records = uniqueObjects([...target.records, ...incoming.records]);
+  target.record_audit_counts = {
+    complete: target.record_audit_counts.complete + incoming.record_audit_counts.complete,
+    pending: target.record_audit_counts.pending + incoming.record_audit_counts.pending
+  };
   target.sources = normalizeSources([...target.sources, ...incoming.sources]);
   target.checked_at = latestDate([target.checked_at, incoming.checked_at]);
   target.missing_fields = unique([...target.missing_fields, ...incoming.missing_fields]);
@@ -288,6 +298,14 @@ export function buildCoachCatalog(overview = {}) {
   const asianArchive = overview.asian_coaches;
   for (const coach of asArray(asianArchive?.coaches)) {
     const stints = asArray(coach.stints);
+    const recordAuditCounts = stints.reduce(
+      (counts, stint) => {
+        const status = stint.record_audit?.status;
+        if (status === "complete" || status === "pending") counts[status] += 1;
+        return counts;
+      },
+      { complete: 0, pending: 0 }
+    );
     entries.push(
       coachEntry({
         record_id: coach.id,
@@ -298,8 +316,24 @@ export function buildCoachCatalog(overview = {}) {
         roles: stints.map((stint) => stint.role_scope),
         organizations: stints.map((stint) => stint.team),
         periods: stints.map((stint) => stint.period),
-        sources: [...asArray(coach.source_links), ...stints.flatMap((stint) => asArray(stint.source_links))],
-        checked_at: latestDate(stints.map((stint) => stint.verification?.last_checked)) ?? asianArchive.last_checked,
+        records: stints.map((stint) => ({
+          team: stint.team,
+          competition: stint.competition,
+          period: stint.period,
+          record: stint.record,
+          audit_status: stint.record_audit?.status ?? "pending",
+          coverage: stint.record_audit?.coverage ?? null
+        })),
+        record_audit_counts: recordAuditCounts,
+        sources: [
+          ...asArray(coach.source_links),
+          ...stints.flatMap((stint) => asArray(stint.source_links)),
+          ...stints.flatMap((stint) => asArray(stint.record_audit?.fixture_sources))
+        ],
+        checked_at: latestDate(stints.flatMap((stint) => [
+          stint.verification?.last_checked,
+          stint.record_audit?.last_checked
+        ])) ?? asianArchive.last_checked,
         verification_status: stints.some((stint) => stint.verification?.status === "needs-review") ? "needs-review" : "verified",
         confidence: coach.confidence,
         missing_fields: stints.some((stint) => stint.record === null) ? ["record"] : []

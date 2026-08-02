@@ -425,6 +425,8 @@ const UI_COPY = {
     "dataCenter.card.sources": "来源 {count} 条 · 等级 {tier}",
     "dataCenter.card.missing": "待补：{fields}",
     "dataCenter.card.open": "查看来源或详情",
+    "dataCenter.card.coachRecord": "{team}：{matches} 场（{wins}胜 {draws}平 {losses}负）",
+    "dataCenter.card.recordAudit": "战绩逐场审计：{complete}/{total}",
     "dossier.breadcrumb.home": "首页",
     "dossier.breadcrumb.detail": "青训专题",
     "dossier.hero.eyebrow": "Academy Dossier",
@@ -1256,6 +1258,8 @@ const UI_COPY = {
     "dataCenter.card.sources": "{count} sources · tier {tier}",
     "dataCenter.card.missing": "Missing: {fields}",
     "dataCenter.card.open": "Open source or details",
+    "dataCenter.card.coachRecord": "{team}: {matches} matches ({wins}W {draws}D {losses}L)",
+    "dataCenter.card.recordAudit": "Match-level record audit: {complete}/{total}",
     "dossier.breadcrumb.home": "Home",
     "dossier.breadcrumb.detail": "Academy dossier",
     "dossier.hero.eyebrow": "Academy Dossier",
@@ -7607,6 +7611,15 @@ function renderCoachDirectory() {
 
 function renderCoachDirectoryCard(entry) {
   const tier = entry.quality.source_tier ?? "unclassified";
+  const auditedRecords = entry.records.filter(({ record }) => record !== null);
+  const auditTotal = entry.record_audit_counts.complete + entry.record_audit_counts.pending;
+  const recordSummary = auditedRecords.map(({ team, record }) => t("dataCenter.card.coachRecord", {
+    team,
+    matches: record.matches,
+    wins: record.wins,
+    draws: record.draws,
+    losses: record.losses
+  })).join(" · ");
   const displayName = entry.local_name && entry.local_name !== localizeText(entry.name)
     ? `${entry.local_name} / ${localizeText(entry.name)}`
     : localizeText(entry.name);
@@ -7620,6 +7633,8 @@ function renderCoachDirectoryCard(entry) {
       <p class="small-note">${escapeHtml(entry.nationality ? formatCountryName(entry.nationality) : t("common.pending"))}</p>
       <p>${escapeHtml(entry.roles.join(" / ") || t("common.pending"))}</p>
       <p class="small-note">${escapeHtml(entry.organizations.join(" · ") || t("common.pending"))}</p>
+      ${recordSummary ? `<p class="small-note">${escapeHtml(recordSummary)}</p>` : ""}
+      ${auditTotal > 0 ? `<p class="small-note">${escapeHtml(t("dataCenter.card.recordAudit", { complete: entry.record_audit_counts.complete, total: auditTotal }))}</p>` : ""}
       <p class="small-note">${escapeHtml(t("dataCenter.card.sources", { count: entry.sources.length, tier: getLabel(DATA_SOURCE_TIER_LABELS, tier, tier) }))}</p>
       <p class="small-note">${escapeHtml(t("dataCenter.card.checked", { date: entry.quality.checked_at ? formatDate(entry.quality.checked_at) : t("common.pending") }))}</p>
       ${entry.quality.missing_fields.length > 0 ? `<p class="data-missing-note">${escapeHtml(t("dataCenter.card.missing", { fields: entry.quality.missing_fields.map(humanizeTag).join(" / ") }))}</p>` : ""}

@@ -290,6 +290,7 @@ const allowedAsianCoachCountedScopes = new Set([
   "dual_nationality_watch"
 ]);
 const allowedAsianCoachConfidence = new Set(["high", "medium", "low"]);
+const allowedAsianCoachRecordAuditStatuses = new Set(["complete", "pending"]);
 
 const allowedChinaYouthCoachOrganizationTypes = new Set([
   "campus-school",
@@ -2131,6 +2132,64 @@ function validateAsianCoachSourceLink(link, label) {
   );
 }
 
+function validateAsianCoachRecordAudit(stint, label) {
+  const audit = stint.record_audit;
+  assert(typeof audit === "object" && audit !== null, `Missing record_audit on ${label}`);
+  assert(
+    allowedAsianCoachRecordAuditStatuses.has(audit.status),
+    `Invalid record_audit status on ${label}`
+  );
+  assert(
+    Array.isArray(audit.competitions) &&
+      audit.competitions.length > 0 &&
+      audit.competitions.every((competition) => typeof competition === "string" && competition),
+    `Invalid record_audit competitions on ${label}`
+  );
+  const isAuditDate = (value) => /^\d{4}-\d{2}(?:-\d{2})?$/.test(value);
+  assert(isAuditDate(audit.coverage?.from), `Invalid record_audit coverage.from on ${label}`);
+  assert(
+    isAuditDate(audit.coverage?.through),
+    `Invalid record_audit coverage.through on ${label}`
+  );
+  assert(
+    audit.coverage.through >= audit.coverage.from,
+    `record_audit coverage ends before it starts on ${label}`
+  );
+  assert(
+    Array.isArray(audit.fixture_sources) && audit.fixture_sources.length > 0,
+    `Missing record_audit fixture sources on ${label}`
+  );
+  for (const link of audit.fixture_sources) {
+    validateAsianCoachSourceLink(link, `${label}:record_audit`);
+  }
+  assert(
+    audit.fixture_sources.some((link) => link.type !== "secondary-crosscheck"),
+    `record_audit lacks an official fixture source on ${label}`
+  );
+  assert(isIsoDate(audit.last_checked), `Invalid record_audit last_checked on ${label}`);
+  assert(
+    audit.review_after === null || isIsoDate(audit.review_after),
+    `Invalid record_audit review_after on ${label}`
+  );
+  assert(typeof audit.notes === "string" && audit.notes, `Missing record_audit notes on ${label}`);
+
+  if (audit.status === "complete") {
+    validateCoachRecord(stint.record, label);
+  } else {
+    assert(stint.record === null, `Pending record_audit must keep record null on ${label}`);
+  }
+
+  if (stint.period.end === null) {
+    assert(isIsoDate(audit.review_after), `Current stint lacks record review date on ${label}`);
+    const reviewIntervalDays =
+      (Date.parse(audit.review_after) - Date.parse(audit.last_checked)) / (24 * 60 * 60 * 1000);
+    assert(
+      reviewIntervalDays > 0 && reviewIntervalDays <= 90,
+      `Current stint record review exceeds 90 days on ${label}`
+    );
+  }
+}
+
 function validateAsianCoaches(archive) {
   assert(archive.id === "asian-coaches", "Invalid asian_coaches id");
   assert(isIsoDate(archive.last_checked), "Invalid asian_coaches last_checked");
@@ -2152,6 +2211,7 @@ function validateAsianCoaches(archive) {
   const coachIds = new Set();
   const scopeCounts = new Map();
   const stintCounts = new Map();
+  const recordAuditCounts = new Map();
 
   for (const coach of archive.coaches) {
     assert(coach.id && coach.name && coach.local_name, "Asian coach must include id, name, and local_name");
@@ -2218,9 +2278,7 @@ function validateAsianCoaches(archive) {
       assert(stint.season, `Missing season on ${stintLabel}`);
       assert(typeof stint.count_in_primary === "boolean", `Invalid count_in_primary on ${stintLabel}`);
       assert(stint.record_scope, `Missing record_scope on ${stintLabel}`);
-      if (stint.record !== null) {
-        validateCoachRecord(stint.record, stintLabel);
-      }
+      validateAsianCoachRecordAudit(stint, stintLabel);
       assert(
         Array.isArray(stint.source_links) && stint.source_links.length > 0,
         `Missing stint sources on ${stintLabel}`
@@ -2232,6 +2290,10 @@ function validateAsianCoaches(archive) {
       stintCounts.set(
         stint.competition_scope,
         (stintCounts.get(stint.competition_scope) ?? 0) + 1
+      );
+      recordAuditCounts.set(
+        stint.record_audit.status,
+        (recordAuditCounts.get(stint.record_audit.status) ?? 0) + 1
       );
     }
 
@@ -2247,6 +2309,16 @@ function validateAsianCoaches(archive) {
       `Invalid stint count scope ${scope} on asian_coaches`
     );
     assert((stintCounts.get(scope) ?? 0) === count, `Invalid stint count ${scope} on asian_coaches`);
+  }
+  assert(
+    archive.record_audit_counts && typeof archive.record_audit_counts === "object",
+    "Missing asian_coaches record_audit_counts"
+  );
+  for (const status of allowedAsianCoachRecordAuditStatuses) {
+    assert(
+      archive.record_audit_counts[status] === (recordAuditCounts.get(status) ?? 0),
+      `Invalid record_audit count ${status} on asian_coaches`
+    );
   }
 
   const issue12CoachIds = [
