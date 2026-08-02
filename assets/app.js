@@ -5714,7 +5714,7 @@ function renderPlayerMarketValueRankingPanel(title, coverageLabel, players, amou
                     <span class="market-ranking-rank">${String(index + 1).padStart(2, "0")}</span>
                     <div class="market-ranking-body">
                       <a class="market-ranking-link" href="${buildPlayerDetailUrl(player.id)}">${escapeHtml(getPlayerPrimaryName(player))}</a>
-                      <p class="small-note">${escapeHtml(formatCountryName(player.country))} · ${escapeHtml(formatAgeBand(player.age_band))} · ${escapeHtml(getPlayerAffiliation(player).directoryTeam)}</p>
+                      <p class="small-note">${escapeHtml(formatCountryName(player.country))} · ${escapeHtml(formatAgeBand(player.age_band))} · ${escapeHtml(formatPosition(player.primary_position))} · ${escapeHtml(getPlayerAffiliation(player).directoryTeam)}</p>
                       <p class="small-note">${escapeHtml(metaBuilder(player))}</p>
                     </div>
                     <div class="market-ranking-value">
