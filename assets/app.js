@@ -556,24 +556,25 @@ const UI_COPY = {
     "dossier.sources.checked": "专题核查至 {date}",
     "stories.hero.eyebrow": "Football Stories",
     "stories.hero.title": "足球故事",
-    "stories.hero.text": "把球员生涯、教练实践、校园传统和公开争议放回时间线，并保留事实边界与原始来源。",
+    "stories.hero.text": "把球员生涯、教练实践、校园传统、结构议题和公开争议放回时间线，并保留事实边界与原始来源。",
     "stories.coverage.eyebrow": "Coverage",
     "stories.coverage.value": "{count} 个故事",
     "stories.coverage.checked": "核查至 {date}",
-    "stories.list.eyebrow": "Profiles & Institutions",
-    "stories.list.title": "人物与机构故事",
+    "stories.list.eyebrow": "Profiles, Institutions & Issues",
+    "stories.list.title": "人物、机构与议题专题",
     "stories.card.kind.person": "人物",
     "stories.card.kind.institution": "机构",
+    "stories.card.kind.issue": "议题",
     "stories.card.timeline": "{count} 个节点",
     "stories.card.open": "查看完整故事",
     "stories.breadcrumb.list": "足球故事",
     "stories.breadcrumb.detail": "故事详情",
     "stories.identity.eyebrow": "Identity",
-    "stories.identity.title": "人物与口径辨析",
+    "stories.identity.title": "对象与口径辨析",
     "stories.timeline.eyebrow": "Timeline",
-    "stories.timeline.title": "故事时间线",
+    "stories.timeline.title": "事件时间线",
     "stories.context.eyebrow": "Context",
-    "stories.context.title": "经历与背景",
+    "stories.context.title": "事实与背景",
     "stories.disputes.eyebrow": "Public Exchange",
     "stories.disputes.title": "公开争议时间线",
     "stories.disputes.note": "以下内容区分当事人主张、回应与编辑边界，不代表本站认定指控成立。",
@@ -1417,14 +1418,15 @@ const UI_COPY = {
     "dossier.sources.checked": "Dossier checked through {date}",
     "stories.hero.eyebrow": "Football Stories",
     "stories.hero.title": "Football stories",
-    "stories.hero.text": "Place playing careers, coaching practice, school traditions and public exchanges on a sourced timeline with clear factual boundaries.",
+    "stories.hero.text": "Place playing careers, coaching practice, school traditions, structural issues and public exchanges on a sourced timeline with clear factual boundaries.",
     "stories.coverage.eyebrow": "Coverage",
     "stories.coverage.value": "{count} stories",
     "stories.coverage.checked": "Checked through {date}",
-    "stories.list.eyebrow": "Profiles & Institutions",
-    "stories.list.title": "People and institution stories",
+    "stories.list.eyebrow": "Profiles, Institutions & Issues",
+    "stories.list.title": "People, institutions and issue stories",
     "stories.card.kind.person": "Person",
     "stories.card.kind.institution": "Institution",
+    "stories.card.kind.issue": "Issue",
     "stories.card.timeline": "{count} timeline entries",
     "stories.card.open": "Open full story",
     "stories.breadcrumb.list": "Football stories",
@@ -1432,9 +1434,9 @@ const UI_COPY = {
     "stories.identity.eyebrow": "Identity",
     "stories.identity.title": "Identity and scope",
     "stories.timeline.eyebrow": "Timeline",
-    "stories.timeline.title": "Story timeline",
+    "stories.timeline.title": "Event timeline",
     "stories.context.eyebrow": "Context",
-    "stories.context.title": "Career and background",
+    "stories.context.title": "Facts and context",
     "stories.disputes.eyebrow": "Public Exchange",
     "stories.disputes.title": "Public dispute timeline",
     "stories.disputes.note": "The entries distinguish attributed claims, responses and editorial boundaries; inclusion does not establish an allegation as fact.",
@@ -4019,8 +4021,8 @@ function renderDossierDetailPage() {
         podiumData.final_score ? `决赛：${podiumData.final_score}` : null
       ].filter(Boolean);
       const participation = [
-        ...(item.international_participation ?? []).map((entry) => entry.note),
-        ...(item.community_impact ?? []).map((entry) => entry.note)
+        ...(item.international_participation ?? []),
+        ...(item.community_impact ?? [])
       ];
       const organization = [
         item.organization.title_sponsor ? `冠名：${item.organization.title_sponsor}` : null,
@@ -4083,7 +4085,7 @@ function renderDossierDetailPage() {
             ${scorerMarkup}
             ${scorerTable ? `<p class="small-note">${escapeHtml(scorerTable.coverage_note)} · ${escapeHtml(t("dossier.clubDevelopment.asOf", { date: scorerTable.as_of }))}</p>` : ""}
           </section>
-          ${participation.length ? `<section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.participation"))}</h4><ul class="mini-bullet-list">${participation.map((line) => `<li>${escapeHtml(line)}</li>`).join("")}</ul></section>` : ""}
+          ${participation.length ? `<section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.participation"))}</h4><ul class="mini-bullet-list">${participation.map((entry) => `<li>${escapeHtml(entry.note)}${entry.source_url ? ` <a class="inline-link" href="${escapeHtml(entry.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("dossier.player.source"))} ↗</a>` : ""}${entry.related_story_id ? ` <a class="inline-link" href="./story.html?id=${encodeURIComponent(entry.related_story_id)}">${escapeHtml(entry.related_story_label ?? t("stories.card.open"))}</a>` : ""}</li>`).join("")}</ul></section>` : ""}
           ${item.audience?.length ? `<section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.audience"))}</h4><ul class="mini-bullet-list">${item.audience.map((entry) => `<li>${escapeHtml(`${entry.label}：${entry.value}。${entry.note}`)}</li>`).join("")}</ul></section>` : ""}
           <section class="dossier-edition-group"><h4>${escapeHtml(t("dossier.metrics.organization"))}</h4>${organization.map((line) => `<p>${escapeHtml(line)}</p>`).join("")}</section>
           <section class="dossier-edition-group dossier-edition-confidence"><h4>${escapeHtml(t("dossier.metrics.confidence"))}</h4><p>${escapeHtml(item.confidence_note)}</p></section>

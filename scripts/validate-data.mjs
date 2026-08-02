@@ -2038,7 +2038,7 @@ function validateFootballStories(archive, dataset) {
   }
 
   for (const story of archive.stories) {
-    assert(["person", "institution"].includes(story.kind), `Invalid football story kind: ${story.id}`);
+    assert(["person", "institution", "issue"].includes(story.kind), `Invalid football story kind: ${story.id}`);
     assert(story.title?.zh && story.title?.en, `Missing football story title: ${story.id}`);
     assert(story.summary?.zh && story.summary?.en, `Missing football story summary: ${story.id}`);
     assert(story.identity_note?.zh && story.identity_note?.en, `Missing identity note: ${story.id}`);

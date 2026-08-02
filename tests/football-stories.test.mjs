@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import fs from "node:fs/promises";
 import { loadDataset } from "../scripts/lib/data-loader.mjs";
 
-test("football stories expose the three requested sourced narratives", async () => {
+test("football stories expose the sourced narratives and transition issue", async () => {
   const dataset = await loadDataset();
   const stories = dataset.footballStories.stories;
   assert.deepEqual(
@@ -11,7 +11,8 @@ test("football stories expose the three requested sourced narratives", async () 
     new Set([
       "wang-xiaolong-player-to-coach",
       "sun-jihai-player-to-coach",
-      "dalian-dongbeilu-primary-football"
+      "dalian-dongbeilu-primary-football",
+      "ningbo-u12-middle-school-continuity"
     ])
   );
   for (const story of stories) {
@@ -19,6 +20,21 @@ test("football stories expose the three requested sourced narratives", async () 
     assert.ok(story.source_links.length > 0, story.id);
     assert.ok(story.source_links.every((source) => /^https?:\/\//.test(source.url)));
   }
+});
+
+test("Ningbo age-12 topic separates the interview lead from verified evidence", async () => {
+  const dataset = await loadDataset();
+  const story = dataset.footballStories.stories.find(
+    (item) => item.id === "ningbo-u12-middle-school-continuity"
+  );
+  assert.equal(story.kind, "issue");
+  assert.match(story.identity_note.zh, /八强.*待核|八强.*线索/);
+  assert.match(story.identity_note.zh, /不等于.*全部队员停止踢球/);
+  assert.ok(story.key_facts.some((fact) => /原始视频/.test(fact.value.zh)));
+  assert.ok(story.sections.some((section) => /整队延续、异队继续/.test(section.body.zh)));
+  assert.ok(story.source_links.some((source) => source.url.includes("news.cn/mrdx/2023-11/16")));
+  assert.ok(story.source_links.some((source) => source.url.includes("sport.gov.cn/qss/")));
+  assert.equal(story.public_disputes.length, 0);
 });
 
 test("Wang Xiaolong public disputes stay attributed and bounded", async () => {
