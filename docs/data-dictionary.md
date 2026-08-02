@@ -171,6 +171,16 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 
 `tournament-archive.china_matches[].china_lineup` 保存首发和替补。替补项可包含 `minute`、`display_minute`、`replaced_player_id` 和 `replaced_player`；未使用替补以 `status: "unused"` 明示。`china_cards` 的事件类型只使用 `yellow`、`second-yellow-red`、`straight-red`，每条必须包含球员 ID、球员名和分钟。
 
+## AFC 对照候选批次
+
+`data/raw/afc-comparison-rosters.json` 的 `rows[]` 只保存可由官方终报名闭环的国家队球员。`candidate_batches[]` 用于记录已经确认赛事或项目身份、但尚未取得完整报名表的研究线索。
+
+- `candidate_status: partial-source-audit` 表示只完成来源和实体边界审计，不代表名单完成。
+- `eligible_for_player_generation: false`、`known_player_count: 0` 和 `expected_count: null` 必须同时保留；不得用零散明星、比赛截图或昵称生成球员记录。
+- `national_team_claim: false` 表示俱乐部学院或邀请联队不得被聚合成国家青年队。
+- `country_context` 只记录研究线索所在地区；`country_assignment_status` 说明该归属是否已由可靠来源核实。
+- 候选批次在 `tournament-archive[].comparison_roster_candidates` 中保留对应赛事边界；只有获得官方完整名单后，才迁移到 `rows[]` 和 `data/raw/players/*.json`。
+
 ## `external_links`
 
 每条来源链接必须包含：

@@ -13,7 +13,9 @@
     "registration_club": {
       "name": "NK Lokomotiva Zagreb",
       "country": "Croatia",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
@@ -181,7 +183,9 @@
     "registration_club": {
       "name": "Tsinghua University High School",
       "country": "China",
-      "organization_type": "high-school"
+      "organization_type": "high-school",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
@@ -539,7 +543,9 @@
     "registration_club": {
       "name": "Qingdao Hainiu FC",
       "country": "China",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
@@ -771,7 +777,9 @@
     "registration_club": {
       "name": "Red Star Belgrade U17",
       "country": "Serbia",
-      "organization_type": "club-academy"
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
@@ -921,7 +929,9 @@
     "registration_club": {
       "name": "DAMM CF",
       "country": "Spain",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
@@ -1095,7 +1105,9 @@
     "registration_club": {
       "name": "Tsinghua University High School",
       "country": "China",
-      "organization_type": "high-school"
+      "organization_type": "high-school",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
@@ -1273,7 +1285,9 @@
     "registration_club": {
       "name": "Chengdu Derui Football Training Center",
       "country": "China",
-      "organization_type": "club-academy"
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
@@ -1788,7 +1802,8 @@
     "registration_club": {
       "name": "The High School Affiliated to Renmin University of China",
       "country": "China",
-      "organization_type": "high-school"
+      "organization_type": "high-school",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -1898,7 +1913,20 @@
       "status": "verified",
       "last_checked": "2026-05-23",
       "notes": "中国足球小将 2010 背景、2020 年“护球男孩”媒体标签，以及 2024 三高体系、2026 人大附中体系的转换，可由新浪内容与足协多期集训通知连续拼出。生日 2010-12-09 当前主要来自 Transfermarkt 中国 U15 扩展名单，而不是足协正式球员注册页，因此这里保留日期但不把它表述为足协权威字段。位置上，尽管第三方扩展名单有过 Defender 口径，但结合公开描述与使用场景，更适合先按中场 / 前场连接型球员归档。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260312/37416.html",
+        "checked_at": "2026-08-01",
+        "confidence": "high",
+        "claim": "The official March 2026 CFA call-up records Li Youan's organization as the High School Affiliated to Renmin University of China.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-liu-lihao-2010",
@@ -1913,7 +1941,8 @@
     "registration_club": {
       "name": "Shanghai Shenhua FC",
       "country": "China",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -2012,7 +2041,20 @@
       "status": "verified",
       "last_checked": "2026-05-23",
       "notes": "中国足球小将 2010 背景和早期被重点展示的媒体标签，可由新浪内容旁证；中国足协 2024-06、2024-07、2024-09 三份正式通知则稳定把其放在上海申花梯队线。生日 2010-05-26 当前主要来自球天下这类第三方资料页，而非足协正式注册页，因此这里保留日期但不把它表述为权威官方字段。2026 年 1 月和 3 月公开 U16 第一期 / 第二期名单中未见其名字，这里只据公开名单写“未进入已核到的两期公开名单”，不把它扩展解释成掉队结论。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U14 third camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20240909/35014.html",
+        "checked_at": "2026-08-01",
+        "confidence": "high",
+        "claim": "The latest official affiliation found for Liu Lihao records Shanghai Shenhua; the public 2026 U16 lists do not provide a newer registration claim.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-piao-zhixuan-2010",
@@ -2027,7 +2069,8 @@
     "registration_club": {
       "name": "Dalian Longjuanfeng Football Club",
       "country": "China",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -2139,6 +2182,19 @@
       "status": "verified",
       "last_checked": "2026-05-23",
       "notes": "中国足球小将 2010 背景、技术型中场标签和大连龙卷风主线，可由新浪公开视频内容与足协多期集训通知交叉确认；2026 年 1 月、3 月两期 U16 公告说明他属于连续考察对象。生日 2010-02-08 当前主要来自 Transfermarkt 的大连英博 U19 队页快照，而不是足协正式注册页，因此这里保留日期但不把它表述为权威官方字段。大连英博 U17 / 大连八中相关赛事口径目前更适合写成地方赛事交集，而不是直接改写其青训归属。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260312/37416.html",
+        "checked_at": "2026-08-01",
+        "confidence": "high",
+        "claim": "The official March 2026 CFA call-up records Piao Zhixuan's organization as Dalian Longjuanfeng Football Club.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   }
 ]

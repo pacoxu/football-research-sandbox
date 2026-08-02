@@ -250,6 +250,14 @@
         "note": "AFC final squad list contains 23 named entries."
       },
       {
+        "country": "Thailand",
+        "status": "complete-final-registration",
+        "expected_count": 23,
+        "source_url": "https://assets.the-afc.com/2024_AFC_U23_Asian_Cup/Downloads/Squad_List/AFC-U23-Asian-Cup-Qatar-2024%E2%84%A2---Squad-Lists-%28Updated-April-16%29.pdf",
+        "source_checked_at": "2026-08-01",
+        "note": "AFC final squad list contains 23 named Thailand entries."
+      },
+      {
         "country": "IR Iran",
         "status": "not-applicable",
         "expected_count": 0,
@@ -787,6 +795,14 @@
         "expected_count": 23,
         "source_url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
         "source_checked_at": "2026-07-19",
+        "note": "AFC final registration contains 23 named entries."
+      },
+      {
+        "country": "Thailand",
+        "status": "complete-final-registration",
+        "expected_count": 23,
+        "source_url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url",
+        "source_checked_at": "2026-08-01",
         "note": "AFC final registration contains 23 named entries."
       },
       {
@@ -1797,6 +1813,14 @@
         "source_url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf",
         "source_checked_at": "2026-07-19",
         "note": "The image-based AFC final registration page was rendered and checked row by row."
+      },
+      {
+        "country": "Thailand",
+        "status": "complete-final-registration",
+        "expected_count": 23,
+        "source_url": "https://assets.the-afc.com/2025_AFC_U20_Asian_Cup/Finals/Downloads/Squads/AFC-U20-Asian-Cup-China-2025%E2%84%A2-Final-Squad-Registration.pdf",
+        "source_checked_at": "2026-08-01",
+        "note": "The image-based AFC Thailand page was rendered and checked row by row."
       }
     ]
   },
@@ -2002,6 +2026,14 @@
         "source_url": "https://assets.the-afc.com/2025_AFC_U17_Asian_Cup/Finals/Downloads/AFC-U17-Asian-Cup-Saudi-Arabia-2025---Squad-Lists.pdf",
         "source_checked_at": "2026-07-19",
         "note": "AFC final squad list contains 23 named Iran entries."
+      },
+      {
+        "country": "Thailand",
+        "status": "complete-final-registration",
+        "expected_count": 23,
+        "source_url": "https://assets.the-afc.com/2025_AFC_U17_Asian_Cup/Finals/Downloads/AFC-U17-Asian-Cup-Saudi-Arabia-2025---Squad-Lists.pdf",
+        "source_checked_at": "2026-08-01",
+        "note": "AFC final squad list contains 23 named Thailand entries."
       }
     ]
   },
@@ -17478,6 +17510,74 @@
       {
         "label": "FIFA Council appoints 2027 co-hosts",
         "url": "https://inside.fifa.com/organisation/fifa-council/media-releases/fifa-council-calls-for-peace-and-takes-key-decisions-on-football-governance"
+      }
+    ]
+  },
+  {
+    "id": "2034-cup-2026",
+    "confederation": "Invitational",
+    "competition_name": "2034 Cup Primary School Football Tournament 2026",
+    "level": "u12-invitational",
+    "edition_label": "2026",
+    "host": "China PR",
+    "date_range": {
+      "start": "2026-07-25",
+      "end": "2026-08-01"
+    },
+    "date_precision": "exact",
+    "status": "completed",
+    "champion": null,
+    "runner_up": null,
+    "china_status": "not-applicable",
+    "china_summary": "本条只为 issue #44 固定国际青年对照候选的赛事边界；未收录完整参赛队、最终名次或任何未核实球员名单。",
+    "china_detail_scope": "none",
+    "archive_scope": "partial-comparison-candidate-audit",
+    "comparison_roster_candidates": [
+      {
+        "candidate_id": "la-wig-naga-2034-cup-2026",
+        "team_name": "WILAIKUL NAGA (W.I.G NAGA)",
+        "country_context": "Laos",
+        "entity_type": "club-academy",
+        "candidate_status": "partial-source-audit",
+        "complete_roster_available": false,
+        "player_count": 0,
+        "national_team_claim": false,
+        "source_checked_at": "2026-08-01",
+        "note": "赛事主办方确认这支老挝青训队参赛，但未找到可核验的完整公开报名表。"
+      },
+      {
+        "candidate_id": "th-asia-future-stars-2034-cup-2026",
+        "team_name": "ASIA FUTURE STARS",
+        "country_context": "Thailand",
+        "entity_type": "invitational-select",
+        "candidate_status": "partial-source-audit",
+        "complete_roster_available": false,
+        "player_count": 0,
+        "national_team_claim": false,
+        "source_checked_at": "2026-08-01",
+        "note": "公开赛程确认联队参赛；泰国只作为 issue 线索上下文，不据此建立泰国国家 U12 名单。"
+      }
+    ],
+    "source_checked_at": "2026-08-01",
+    "source_conflict_note": "政府赛程页确认赛事日期和规模，主办方账号确认 W.I.G NAGA 参赛，公开赛果页确认两支候选队名；这些来源均未提供完整球员报名表，因此冠军、亚军和个人名单保持空值。",
+    "china_matches": [],
+    "china_key_players": [],
+    "source_links": [
+      {
+        "label": "SIP government: sixth 2034 Cup finals calendar",
+        "url": "https://www.sipac.gov.cn/szgyyqenglish/News/202607/6360874d98f04fe5a96d7745b8c81efe.shtml"
+      },
+      {
+        "label": "2034 Cup organizer account: WILAIKUL NAGA participation confirmation",
+        "url": "https://www.sina.cn/news/detail/5247676419670333.html"
+      },
+      {
+        "label": "Public 2034 Cup match record",
+        "url": "https://www.xiaojiangfc.com/cup/2034/"
+      },
+      {
+        "label": "Laotian Times: W.I.G NAGA academy profile",
+        "url": "https://laotiantimes.com/2026/07/09/young-lao-footballers-win-international-titles-as-world-cup-fever-grows/"
       }
     ]
   }

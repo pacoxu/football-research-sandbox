@@ -359,7 +359,9 @@
         "registration_club": {
           "name": "FC Den Bosch",
           "country": "Netherlands",
-          "organization_type": "professional-club-unspecified"
+          "organization_type": "professional-club-unspecified",
+          "status": "tournament-snapshot",
+          "as_of": "2025-12-30"
         },
         "profile_url": "./player.html?id=cn-wang-bohao-2005"
       },

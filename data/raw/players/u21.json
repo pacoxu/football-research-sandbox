@@ -674,7 +674,8 @@
     "registration_club": {
       "name": "Beijing Tongcheng Football Club",
       "country": "China",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -768,7 +769,20 @@
       "status": "mixed-source",
       "last_checked": "2026-05-23",
       "notes": "北航与北京三高两个节点可由北航新闻网和北京市足协页面直接对照；2025 年国际大体联足球世界杯出场记录可由新华社战报核到。当前最弱的一环是 2026 北京通程注册口径与生日字段，主要依赖媒体发布的球员名单，因此整体仍按 mixed-source 处理。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "league-registration",
+        "label": "Sina 2026 Beijing Tongcheng roster",
+        "url": "https://www.sina.cn/news/detail/5285731516025470.html",
+        "checked_at": "2026-08-01",
+        "confidence": "medium",
+        "claim": "The published 2026 roster lists Xu Bohan as a Beijing Tongcheng defender.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-cheng-xiyang-2006",
@@ -783,7 +797,8 @@
     "registration_club": {
       "name": "Beijing Tongcheng Football Club",
       "country": "China",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -907,6 +922,19 @@
       "status": "mixed-source",
       "last_checked": "2026-05-23",
       "notes": "2018 U12 世界挑战赛名单可直接校对程曦阳的英文注册名、生日与翼锋角色；2022 北京三高 U16、2025 北航大体联世界杯、2026 足协杯与中冠阶段，可以由校园与媒体赛况拼出其持续的前场使用轨迹。当前主要不确定项有两类：一是俱乐部公开名称在“北京鹏瑞通程 / 北京通州鹏瑞 / 北京通州鹏瑞通达 / 北京通程”之间存在异名；二是号码口径在不同聚合页中见过 8 号与 77 号，因此当前条目只把其稳定信息固定为 2006 年生前锋样本。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "match-report",
+        "label": "Sina 2026 CFA Cup report",
+        "url": "https://www.sina.cn/news/detail/5290442309771863.html",
+        "checked_at": "2026-08-01",
+        "confidence": "medium",
+        "claim": "The 2026 CFA Cup report confirms Cheng Xiyang playing and scoring for the Beijing Tongcheng/Pengrui team.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   }
 ]

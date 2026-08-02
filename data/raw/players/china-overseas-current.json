@@ -114,7 +114,8 @@
     "registration_club": {
       "name": "FK Vozdovac U19",
       "country": "Serbia",
-      "organization_type": "club-academy"
+      "organization_type": "club-academy",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -170,7 +171,20 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "出生日期和身高可由公开球员资料页校对；当前沃日多瓦茨 U19 归属由转会资料页与 2026 年春季留洋报道交叉确认。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "league-registration",
+        "label": "Transfermarkt FK Vozdovac U19 registration profile",
+        "url": "https://www.transfermarkt.com/zihao-lin/profil/spieler/1242688",
+        "checked_at": "2026-08-01",
+        "confidence": "medium",
+        "claim": "The registration profile continues to list Lin Zihao with FK Vozdovac U19; the 2026/27 registration should be rechecked when the new-season list is published.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-lyu-mengyang-2009",
@@ -186,7 +200,8 @@
     "registration_club": {
       "name": "Europa, C.E. Juvenil B",
       "country": "Spain",
-      "organization_type": "club-academy"
+      "organization_type": "club-academy",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -307,7 +322,20 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "出生日期、徐州出身、双胞胎兄弟与清华附中节点可由 Baidu Baike 条目及其引用稿件交叉校对；西班牙三段履历可由 FutbolBase 履历页补齐；2025/26 在 Europa, C.E. Juvenil B 的联赛注册与名单拆分数据由 FCF 球员页补强。通用检索里还会混入 Lu / Lv / Lyu 三种拼写及非足球同名结果，因此本条以生日、中文名和加泰注册路径三项联合锁定。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "league-registration",
+        "label": "Catalan Football Federation 2025/26 player registration",
+        "url": "https://www.fcf.cat/jugador/2526/juvenil-primera-divisio/preferent-juvenils/grup-2/54695975/50284682",
+        "checked_at": "2026-08-01",
+        "confidence": "high",
+        "claim": "The Catalan federation player page confirms Lyu Mengyang's 2025/26 registration for Europa Juvenil B.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-liu-kaiyuan-2010",
@@ -672,7 +700,8 @@
     "registration_club": {
       "name": "Sant Cugat FC",
       "country": "Spain",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -841,7 +870,20 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "中国足球小将 2010 队身份、地中海杯最佳阵容口径，以及旅西主线可由懂球帝专题稿、澎湃号与项目公开材料交叉确认；中国足协 2024-06-20、2024-09-24 和 2026-03-12 三份正式通知连续给出了“北京 -> 欧罗巴 -> 圣库加特”的报名归属变化。生日 2010-01-22 当前主要来自 Transfermarkt，而非足协或俱乐部官方注册页，因此这里保留日期但不把它表述为权威官方字段。位置方面，公开报道常把他写作左中卫或后防线球员，这里先按更稳妥的 Centre-Back 归档。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U16 second camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260312/37416.html",
+        "checked_at": "2026-08-01",
+        "confidence": "high",
+        "claim": "The official March 2026 CFA call-up records Li Dongchen's organization as Sant Cugat FC.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-liu-shaoziyang-2003",

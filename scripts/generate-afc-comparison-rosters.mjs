@@ -12,6 +12,7 @@ const COUNTRY_META = {
   "IR Iran": { prefix: "ir", tag: "iran-youth", file: "iran-afc-youth-rosters.json" },
   Qatar: { prefix: "qa", tag: "qatar-youth", file: "qatar-afc-u23-rosters.json" },
   "Saudi Arabia": { prefix: "sa", tag: "saudi-arabia-youth", file: "saudi-arabia-afc-u23-rosters.json" },
+  Thailand: { prefix: "th", tag: "thailand-youth", file: "thailand-afc-youth-rosters.json" },
   Uzbekistan: { prefix: "uz", tag: "uzbekistan-youth", file: "uzbekistan-afc-u20-u23-rosters.json" }
 };
 
@@ -40,8 +41,13 @@ const COUNTRY_CODES = {
   RUS: "Russia",
   QAT: "Qatar",
   KSA: "Saudi Arabia",
+  THA: "Thailand",
   UZB: "Uzbekistan",
-  SRB: "Serbia"
+  SRB: "Serbia",
+  ENG: "England",
+  FRA: "France",
+  HKG: "Hong Kong",
+  JPN: "Japan"
 };
 
 const UZBEKISTAN_U17_SHIRT_NUMBERS = new Map([
@@ -114,6 +120,53 @@ function unique(values) {
 }
 
 const source = JSON.parse(await fs.readFile(sourcePath, "utf8"));
+const candidateBatches = source.candidate_batches ?? [];
+if (!Array.isArray(candidateBatches)) throw new Error("candidate_batches must be an array");
+const candidateIds = new Set();
+for (const candidate of candidateBatches) {
+  if (!candidate.id || candidateIds.has(candidate.id)) {
+    throw new Error(`Invalid or duplicate comparison candidate id: ${candidate.id}`);
+  }
+  candidateIds.add(candidate.id);
+  if (candidate.competition_id !== "2034-cup-2026") {
+    throw new Error(`Unsupported comparison candidate competition: ${candidate.id}`);
+  }
+  if (!["club-academy", "invitational-select"].includes(candidate.entity_type)) {
+    throw new Error(`Invalid comparison candidate entity_type: ${candidate.id}`);
+  }
+  if (
+    candidate.candidate_status !== "partial-source-audit" ||
+    candidate.roster_status !== "official-complete-roster-not-found"
+  ) {
+    throw new Error(`Invalid partial comparison boundary: ${candidate.id}`);
+  }
+  if (
+    candidate.known_player_count !== 0 ||
+    candidate.expected_count !== null ||
+    candidate.eligible_for_player_generation !== false ||
+    candidate.national_team_claim !== false
+  ) {
+    throw new Error(`Partial comparison candidate must not generate player records: ${candidate.id}`);
+  }
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(candidate.source_checked_at)) {
+    throw new Error(`Invalid comparison candidate source date: ${candidate.id}`);
+  }
+  if (!Array.isArray(candidate.missing_fields) || candidate.missing_fields.length === 0) {
+    throw new Error(`Missing comparison candidate gaps: ${candidate.id}`);
+  }
+  if (
+    !Array.isArray(candidate.sources) ||
+    candidate.sources.length === 0 ||
+    candidate.sources.some(
+      (entry) => !entry.type || !entry.label || !/^https?:\/\//.test(entry.url) || !entry.claim
+    )
+  ) {
+    throw new Error(`Invalid comparison candidate sources: ${candidate.id}`);
+  }
+}
+if (candidateBatches.length > 0) {
+  console.log(`Validated ${candidateBatches.length} partial comparison candidate batches`);
+}
 const byCountry = new Map(Object.keys(COUNTRY_META).map((country) => [country, new Map()]));
 const generatedPlayers = [];
 
@@ -134,6 +187,10 @@ for (const [country, records] of byCountry) {
       const latest = rows.at(-1);
       const canonicalName = titleCase(latest.name);
       const latestClub = parseClub(latest.club, country);
+      const latestCheckedAt = rows
+        .map((row) => row.source_checked_at ?? source.checked_at)
+        .sort()
+        .at(-1);
       const id = `${meta.prefix}-${slugify(canonicalName)}-${latest.birth_date.slice(0, 4)}`;
       const competitionIds = unique(rows.map((row) => row.competition_id));
       const focusTags = unique([
@@ -194,13 +251,18 @@ for (const [country, records] of byCountry) {
           label: "AFC final squad registration",
           url
         })),
-        source_layers: unique(rows.map((row) => `${row.competition_id}|${row.source_url}`)).map((value) => {
-          const [competitionId, url] = value.split("|");
+        source_layers: unique(
+          rows.map(
+            (row) =>
+              `${row.competition_id}|${row.source_url}|${row.source_checked_at ?? source.checked_at}`
+          )
+        ).map((value) => {
+          const [competitionId, url, checkedAt] = value.split("|");
           return {
             type: "afc-registration",
             label: `${COMPETITION_META[competitionId].label} final registration`,
             url,
-            checked_at: source.checked_at,
+            checked_at: checkedAt,
             confidence: "high",
             fields: [
               "name",
@@ -216,7 +278,7 @@ for (const [country, records] of byCountry) {
         }),
         verification: {
           status: "provisional",
-          last_checked: source.checked_at,
+          last_checked: latestCheckedAt,
           notes:
             "AFC final registration confirms tournament identity and the Latin-script name. No independent official native-script source was captured, so local_name retains the AFC transliteration. Tournament representation does not establish birthplace, citizenship-acquisition method, or naturalization status."
         }
@@ -332,6 +394,14 @@ const comparisonRosters = {
       source_url: SOURCE_URLS["afc-u17-2025"],
       source_checked_at: source.checked_at,
       note: "AFC final squad list contains 23 named Iran entries."
+    },
+    {
+      country: "Thailand",
+      status: "complete-final-registration",
+      expected_count: 23,
+      source_url: SOURCE_URLS["afc-u17-2025"],
+      source_checked_at: "2026-08-01",
+      note: "AFC final squad list contains 23 named Thailand entries."
     }
   ],
   "afc-u17-2026": [
@@ -376,7 +446,15 @@ const comparisonRosters = {
       source_url: SOURCE_URLS["afc-u20-2025"],
       source_checked_at: source.checked_at,
       note: "The image-based AFC final registration page was rendered and checked row by row."
-    }))
+    })),
+    {
+      country: "Thailand",
+      status: "complete-final-registration",
+      expected_count: 23,
+      source_url: SOURCE_URLS["afc-u20-2025"],
+      source_checked_at: "2026-08-01",
+      note: "The image-based AFC Thailand page was rendered and checked row by row."
+    }
   ],
   "afc-u23-2024": [
     ...["Qatar", "Saudi Arabia", "Uzbekistan"].map((country) => ({
@@ -388,6 +466,14 @@ const comparisonRosters = {
       note: "AFC final squad list contains 23 named entries."
     })),
     {
+      country: "Thailand",
+      status: "complete-final-registration",
+      expected_count: 23,
+      source_url: SOURCE_URLS["afc-u23-2024"],
+      source_checked_at: "2026-08-01",
+      note: "AFC final squad list contains 23 named Thailand entries."
+    },
+    {
       country: "IR Iran",
       status: "not-applicable",
       expected_count: 0,
@@ -396,12 +482,12 @@ const comparisonRosters = {
       note: "Iran did not participate in the AFC U23 Asian Cup 2024 finals; no inferred roster is created."
     }
   ],
-  "afc-u23-2026": ["IR Iran", "Qatar", "Saudi Arabia", "Uzbekistan"].map((country) => ({
+  "afc-u23-2026": ["IR Iran", "Qatar", "Saudi Arabia", "Thailand", "Uzbekistan"].map((country) => ({
     country,
     status: "complete-final-registration",
     expected_count: 23,
     source_url: SOURCE_URLS["afc-u23-2026"],
-    source_checked_at: source.checked_at,
+    source_checked_at: country === "Thailand" ? "2026-08-01" : source.checked_at,
     note:
       country === "IR Iran"
         ? "AFC source contains 23 named entries but omits shirt number 2 and repeats shirt number 22; source numbering is preserved."
@@ -421,7 +507,7 @@ console.log("Updated comparison_rosters metadata in tournament-archive.json");
 const marketValues = JSON.parse(await fs.readFile(marketValuesPath, "utf8"));
 for (const player of generatedPlayers) {
   marketValues.players[player.id] ??= {
-    checked_at: source.checked_at,
+    checked_at: player.verification.last_checked,
     status: "profile-not-found",
     history: [],
     history_points: 0,
@@ -435,7 +521,7 @@ for (const player of generatedPlayers) {
       api_url: ""
     },
     lookup: {
-      checked_at: source.checked_at,
+      checked_at: player.verification.last_checked,
       status: "not-found",
       method: "not-searched-by-profile",
       matched_fields: [],
@@ -462,7 +548,11 @@ for (const [playerId, record] of Object.entries(marketValues.players)) {
   countryCounts[country].total += 1;
   countryCounts[country][record.status] = (countryCounts[country][record.status] ?? 0) + 1;
 }
-marketValues.meta.checked_at = source.checked_at;
+marketValues.meta.checked_at = generatedPlayers
+  .map((player) => player.verification.last_checked)
+  .concat(source.checked_at)
+  .sort()
+  .at(-1);
 marketValues.meta.coverage = {
   total: Object.keys(marketValues.players).length,
   statuses: statusCounts,

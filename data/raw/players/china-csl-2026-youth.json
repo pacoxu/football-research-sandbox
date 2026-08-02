@@ -103,7 +103,8 @@
     "registration_club": {
       "name": "Shanghai Port FC",
       "country": "China",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -158,7 +159,20 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "出生日期来自公开球员资料页，当前俱乐部和位置由上海海港当前名单交叉确认。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "match-report",
+        "label": "CCTV 2026 Chinese Super League reports",
+        "url": "https://sports.cctv.com/2026/06/27/ARTIZaKcc3GNklG3LHhWGRno260627.shtml",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "claim": "CCTV match coverage confirms Li Xinxiang playing and scoring for Shanghai Port during the 2026 CSL season.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-zhu-pengyu-2005",
@@ -265,7 +279,8 @@
     "registration_club": {
       "name": "Dalian Yingbo FC",
       "country": "China",
-      "organization_type": "professional-club"
+      "organization_type": "professional-club",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -325,7 +340,20 @@
       "status": "verified",
       "last_checked": "2026-05-22",
       "notes": "出生日期、位置和当前俱乐部由公开球员资料页与大连英博 2026 赛季名单交叉确认。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "match-report",
+        "label": "Zhejiang FC 2026 CSL match report",
+        "url": "https://www.zhejiangfc.com/2026/04/55680.html",
+        "checked_at": "2026-07-19",
+        "confidence": "high",
+        "claim": "The official Zhejiang FC match report records Yang Mingrui in Dalian Yingbo's 2026 CSL lineup.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-li-yuxuan-2006",
@@ -340,7 +368,8 @@
     "registration_club": {
       "name": "Beijing Pengrui Tongcheng",
       "country": "China",
-      "organization_type": "professional-club"
+      "organization_type": "professional-club",
+      "status": "current"
     },
     "training_pathway": [
       {
@@ -423,7 +452,20 @@
       "status": "verified",
       "last_checked": "2026-05-23",
       "notes": "生日与前锋位置由 Sofascore 和 Scores24 交叉确认；Tipsme 阵容页补充其为北京通州鹏瑞通达 / 北京鹏瑞通程 2 号前锋。需注意不要与另一名 2010-04-27 出生、China U16 口径的同名李雨轩混淆。"
-    }
+    },
+    "source_layers": [
+      {
+        "type": "match-report",
+        "label": "Jingcai 2026 China Champions League match record",
+        "url": "https://www.jingcai.com/live/detail-4519716",
+        "checked_at": "2026-07-19",
+        "confidence": "medium",
+        "claim": "The 2026 match record confirms Li Yuxuan playing and scoring for Beijing Pengrui Tongcheng.",
+        "fields": [
+          "registration_club"
+        ]
+      }
+    ]
   },
   {
     "id": "cn-wei-xiangxin-2008",

@@ -120,7 +120,8 @@ const allowedSourceLayerTypes = new Set([
   "school-profile",
   "university-profile",
   "club-profile",
-  "league-registration"
+  "league-registration",
+  "match-report"
 ]);
 
 const allowedSourceLayerConfidence = new Set(["high", "medium", "low"]);
@@ -204,15 +205,19 @@ const issue48DeepSampleIds = new Set([
 
 const completeSquadExpectations = new Map([
   ["IR Iran|afc-u17-2025", 23],
+  ["Thailand|afc-u17-2025", 23],
   ["Australia|afc-u20-2025", 23],
   ["IR Iran|afc-u20-2025", 23],
+  ["Thailand|afc-u20-2025", 23],
   ["Uzbekistan|afc-u20-2025", 23],
   ["Qatar|afc-u23-2024", 23],
   ["Saudi Arabia|afc-u23-2024", 23],
+  ["Thailand|afc-u23-2024", 23],
   ["Uzbekistan|afc-u23-2024", 23],
   ["IR Iran|afc-u23-2026", 23],
   ["Qatar|afc-u23-2026", 23],
   ["Saudi Arabia|afc-u23-2026", 23],
+  ["Thailand|afc-u23-2026", 23],
   ["Uzbekistan|afc-u23-2026", 23],
   ["Australia|afc-u17-2026", 23],
   ["Uzbekistan|afc-u17-2026", 23]
@@ -227,6 +232,11 @@ const allowedComparisonRosterStatuses = new Set([
   "complete-final-registration",
   "not-applicable"
 ]);
+const expectedPartialComparisonCandidateIds = new Set([
+  "la-wig-naga-2034-cup-2026",
+  "th-asia-future-stars-2034-cup-2026"
+]);
+const allowedComparisonCandidateEntityTypes = new Set(["club-academy", "invitational-select"]);
 
 const allowedTournamentSourceVersionTypes = new Set([
   "afc-final-registration",
@@ -3280,6 +3290,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   }
 
   const comparisonRosterMetadata = new Map();
+  const comparisonCandidateMetadata = new Map();
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
     validateTournamentDateRange(tournament);
@@ -3318,6 +3329,41 @@ export async function validateData(referenceDate = new Date().toISOString().slic
         comparisonRosterMetadata.set(squadKey, roster);
       }
     }
+    if (tournament.comparison_roster_candidates !== undefined) {
+      assert(
+        tournament.id === "2034-cup-2026" &&
+          tournament.archive_scope === "partial-comparison-candidate-audit",
+        `Comparison candidates must use the partial 2034 Cup archive boundary: ${tournament.id}`
+      );
+      assert(
+        Array.isArray(tournament.comparison_roster_candidates),
+        `Invalid comparison_roster_candidates on ${tournament.id}`
+      );
+      for (const candidate of tournament.comparison_roster_candidates) {
+        assert(
+          expectedPartialComparisonCandidateIds.has(candidate.candidate_id) &&
+            !comparisonCandidateMetadata.has(candidate.candidate_id),
+          `Invalid or duplicate comparison candidate: ${candidate.candidate_id}`
+        );
+        assert(candidate.team_name && candidate.country_context, `Missing comparison candidate identity: ${candidate.candidate_id}`);
+        assert(
+          allowedComparisonCandidateEntityTypes.has(candidate.entity_type),
+          `Invalid comparison candidate entity_type: ${candidate.candidate_id}`
+        );
+        assert(
+          candidate.candidate_status === "partial-source-audit" &&
+            candidate.complete_roster_available === false &&
+            candidate.player_count === 0 &&
+            candidate.national_team_claim === false,
+          `Comparison candidate crosses the partial-roster boundary: ${candidate.candidate_id}`
+        );
+        assert(
+          isIsoDate(candidate.source_checked_at) && typeof candidate.note === "string" && candidate.note.length > 0,
+          `Invalid comparison candidate audit metadata: ${candidate.candidate_id}`
+        );
+        comparisonCandidateMetadata.set(candidate.candidate_id, candidate);
+      }
+    }
     validateTournamentArchiveVersioning(tournament);
     validateTournamentField(tournament);
     if (tournament.id === "fifa-world-cup-2030") {
@@ -3335,13 +3381,18 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   }
   assert(
     [...completeSquadExpectations.keys()].every((key) => comparisonRosterMetadata.has(key)),
-    "comparison_rosters metadata does not cover all 13 complete final-registration squads"
+    "comparison_rosters metadata does not cover all 17 complete final-registration squads"
   );
   assert(
     [...notApplicableSquadExpectations].every((key) => comparisonRosterMetadata.has(key)),
     "comparison_rosters metadata does not cover both not-applicable Iran squads"
   );
-  assert(comparisonRosterMetadata.size === 15, `Expected 15 comparison roster metadata entries, found ${comparisonRosterMetadata.size}`);
+  assert(comparisonRosterMetadata.size === 19, `Expected 19 comparison roster metadata entries, found ${comparisonRosterMetadata.size}`);
+  assert(
+    [...expectedPartialComparisonCandidateIds].every((candidateId) => comparisonCandidateMetadata.has(candidateId)) &&
+      comparisonCandidateMetadata.size === expectedPartialComparisonCandidateIds.size,
+    "2034 Cup partial comparison candidates are incomplete"
+  );
   validateU20ArchiveCoverage(dataset.tournamentArchive);
   validateScoutingWatchlist(dataset.scoutingWatchlist, dataset.players);
 
