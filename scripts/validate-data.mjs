@@ -3232,7 +3232,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     playerIds.add(player.id);
   }
 
-  assert(nativeNameAuditCount === 263, `Expected 263 audited CJK/Uzbek players, found ${nativeNameAuditCount}`);
+  assert(nativeNameAuditCount === 284, `Expected 284 audited CJK/Uzbek players, found ${nativeNameAuditCount}`);
 
   const chinaOverseasStatusCounts = countOverseasStatuses(dataset.players);
   const chinaForeignRegistrationCount = dataset.players.filter(
@@ -3450,7 +3450,11 @@ export async function validateData(referenceDate = new Date().toISOString().slic
         }
       }
       if (tournament.id === "shanghai-future-star-cup-men-u17-2026") {
-        assert(rosterEntries.length === 28, "Shanghai Future Star China U17 camp roster must remain 28 players");
+        assert(rosterEntries.length === 23, "Shanghai Future Star Shanghai U17 tournament roster must remain 23 players");
+        const campEntries = tournament.china_camp_roster_view?.groups?.flatMap(
+          (group) => group.entries ?? []
+        ) ?? [];
+        assert(campEntries.length === 28, "Shanghai Future Star China U17 camp roster must remain 28 players");
       }
     }
   }

@@ -1,15 +1,15 @@
 # Roadmap
 
-更新时间：2026-08-01
+更新时间：2026-08-11
 
 本路线图用于把项目后续工作从零散补数据，收敛成可排期、可验收、可拆 issue 的维护计划。详细覆盖状态见 `docs/coverage-matrix.md`，研究补采样本见 `research-collection-outline-2026-06-27.md`。
 
 ## 当前基线
 
-- 球员库：459 人。
-- 赛事快照：22 项。
-- 专题项目：9 个。
-- 国家/地区：8 个，包括 China PR、Japan、Korea Republic、Australia、IR Iran、Qatar、Saudi Arabia、Uzbekistan。
+- 球员库：564 人。
+- 赛事快照：23 项。
+- 专题项目：10 个。
+- 国家/地区：9 个，包括 China PR、Japan、Korea Republic、Australia、IR Iran、Qatar、Saudi Arabia、Thailand、Uzbekistan。
 - 主要页面数据：`data/site/players.json`、`data/site/overview.json`。
 - 主要维护入口：`data/raw/**`。
 - 本地校验：`npm run validate-data`。

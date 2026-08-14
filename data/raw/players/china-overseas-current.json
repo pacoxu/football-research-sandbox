@@ -266,7 +266,9 @@
       "china-youth",
       "overseas-europe",
       "china-overseas-current",
-      "donglu-football-boys"
+      "donglu-football-boys",
+      "shanghai-future-star-cup-2026",
+      "shanghai-u17"
     ],
     "tournament_participation": [
       {
@@ -287,6 +289,18 @@
         "goals": 6,
         "minutes": null,
         "note": "截至 2026-05-22，FutbolBase 2025/26 赛季汇总为 29 场 6 球；FCF 球员页可核到其在 Europa, C.E. Juvenil B 的联赛注册，并显示 28 次入选名单、16 次首发、12 次替补席、6 球、无红黄牌。由于两站对“出场/名单”口径不完全一致，当前 appearance 字段先按 FutbolBase 赛季汇总记为 29。"
+      },
+      {
+        "competition_id": "shanghai-future-star-cup-men-u17-2026",
+        "label": "2026 上海明日之星冠军杯男足",
+        "team": "Shanghai U17",
+        "squad_status": "registered",
+        "roster_status": "tournament-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "上海 U17 公开关联名单快照列为 15 号中场；该赛事代表队身份不改变其 Europa Juvenil B 的西班牙注册主线，逐场数据待核。"
       }
     ],
     "external_links": [

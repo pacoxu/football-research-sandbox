@@ -1,16 +1,16 @@
 {
   "meta": {
     "provider": "Transfermarkt",
-    "checked_at": "2026-08-02",
+    "checked_at": "2026-08-11",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
-      "total": 543,
+      "total": 564,
       "statuses": {
         "available": 114,
         "fetch-error": 22,
         "ambiguous-profile": 3,
         "no-market-value": 45,
-        "profile-not-found": 357,
+        "profile-not-found": 378,
         "team-page-only": 2
       },
       "by_country": {
@@ -22,9 +22,9 @@
           "no-market-value": 1
         },
         "China PR": {
-          "total": 80,
+          "total": 101,
           "available": 42,
-          "profile-not-found": 13,
+          "profile-not-found": 34,
           "no-market-value": 22,
           "team-page-only": 2,
           "ambiguous-profile": 1
@@ -22220,6 +22220,27 @@
       "alternatives": [],
       "last_success_at": null
     },
+    "cn-wang-qirong-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-liu-hanwen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-li-qiufu-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-yue-bowen-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-zhang-yu-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-peng-ziming-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-liu-yichen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-li-wenbo-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-liang-jinhong-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-ou-haosen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-muhamaiti-ablimiti-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-he-haoyuan-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-li-mingjie-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-xu-qizhen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-jiang-tingyuan-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-li-weiqi-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-ye-weixiang-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-qiu-penghui-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-liu-zejia-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-huang-zijie-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-li-haochen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
     "th-silva-mexes-tyler-2010": {
       "checked_at": "2026-08-01",
       "status": "profile-not-found",

@@ -1,5 +1,188 @@
 [
   {
+    "id": "shanghai-future-star-cup-men-u17-2026",
+    "confederation": "International Invitational",
+    "competition_name": "2026 Shanghai Future Star Cup (Men)",
+    "level": "u17",
+    "edition_label": "2026",
+    "host": "China PR",
+    "date_range": {
+      "start": "2026-08-03",
+      "end": "2026-08-09"
+    },
+    "date_precision": "exact",
+    "status": "completed",
+    "champion": null,
+    "runner_up": null,
+    "participants": {
+      "status": "complete",
+      "teams": [
+        {
+          "team": "China PR U17",
+          "entry_status": "participant"
+        },
+        {
+          "team": "Athletic Club U17",
+          "entry_status": "participant"
+        },
+        {
+          "team": "Bayer Leverkusen U17",
+          "entry_status": "participant"
+        },
+        {
+          "team": "Arsenal U17",
+          "entry_status": "participant"
+        },
+        {
+          "team": "Shanghai U17",
+          "entry_status": "host"
+        },
+        {
+          "team": "Tottenham Hotspur U17",
+          "entry_status": "participant"
+        },
+        {
+          "team": "River Plate U17",
+          "entry_status": "participant"
+        },
+        {
+          "team": "Sporting CP U17",
+          "entry_status": "participant"
+        }
+      ]
+    },
+    "final_draw": {
+      "status": "complete",
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [
+            "China PR U17",
+            "Athletic Club U17",
+            "Bayer Leverkusen U17",
+            "Arsenal U17"
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [
+            "Shanghai U17",
+            "Tottenham Hotspur U17",
+            "River Plate U17",
+            "Sporting CP U17"
+          ]
+        }
+      ]
+    },
+    "china_status": "result-audit-pending",
+    "china_summary": "中国 U17 与上海 U17 分列 A、B 组；本次先完成分组、赛程和上海队 23 人名册建档，完整赛果待官方或可交叉验证来源补齐。",
+    "china_detail_scope": "schedule-and-roster-only",
+    "china_matches": [
+      {
+        "date": "2026-08-03",
+        "stage": "Group A",
+        "opponent": "Arsenal U17",
+        "score_for": 3,
+        "score_against": 2,
+        "result": "W",
+        "china_contributions": [],
+        "note": "比分来自公开赛事数据页，并由同期公开讨论交叉旁证；具体进球与助攻球员尚未进入强来源核验。"
+      }
+    ],
+    "china_key_players": [],
+    "latest_public_roster_view": {
+      "label": {
+        "zh": "2026 上海 U17 赛事名单快照",
+        "en": "2026 Shanghai U17 tournament roster snapshot"
+      },
+      "note": {
+        "zh": "按 2026-08-11 可核的上海 U17 球员页关联名单整理，共 23 人。球衣号和位置按赛事页面保留；俱乐部归属未由该名单统一确认，因此不做推断。",
+        "en": "Compiled from the Shanghai U17 linked-player roster available on 2026-08-11. The snapshot contains 23 players; shirt numbers and positions follow the event pages, while permanent club registrations are not inferred."
+      },
+      "groups": [
+        {
+          "label": {
+            "zh": "守门员 GK",
+            "en": "Goalkeepers"
+          },
+          "entries": [
+            { "player_id": "cn-wang-qirong-2008", "player": "Wang Qirong", "squad_number": 1 },
+            { "player_id": "cn-ye-weixiang-2009", "player": "Ye Weixiang", "squad_number": 22 },
+            { "player_id": "cn-qiu-penghui-2009", "player": "Qiu Penghui", "squad_number": 23 }
+          ]
+        },
+        {
+          "label": {
+            "zh": "后卫 DF",
+            "en": "Defenders"
+          },
+          "entries": [
+            { "player_id": "cn-liu-hanwen-2009", "player": "Liu Hanwen", "squad_number": 2 },
+            { "player_id": "cn-li-qiufu-2009", "player": "Li Qiufu", "squad_number": 3 },
+            { "player_id": "cn-gu-boyu-2009", "player": "Gu Boyu", "squad_number": 4 },
+            { "player_id": "cn-yue-bowen-2008", "player": "Yue Bowen", "squad_number": 5 },
+            { "player_id": "cn-liu-yichen-2009", "player": "Liu Yichen", "squad_number": 8 },
+            { "player_id": "cn-li-mingjie-2009", "player": "Li Mingjie", "squad_number": 17 },
+            { "player_id": "cn-liu-zejia-2009", "player": "Liu Zejia", "squad_number": 24 },
+            { "player_id": "cn-huang-zijie-2009", "player": "Huang Zijie", "squad_number": 25 }
+          ]
+        },
+        {
+          "label": {
+            "zh": "中场 MF",
+            "en": "Midfielders"
+          },
+          "entries": [
+            { "player_id": "cn-zhang-yu-2009", "player": "Zhang Yu", "squad_number": 6 },
+            { "player_id": "cn-muhamaiti-ablimiti-2009", "player": "Muhamaiti Ablimiti", "squad_number": 12 },
+            { "player_id": "cn-lyu-mengyang-2009", "player": "Lyu Mengyang", "squad_number": 15 },
+            { "player_id": "cn-he-haoyuan-2009", "player": "He Haoyuan", "squad_number": 16 },
+            { "player_id": "cn-li-weiqi-2009", "player": "Li Weiqi", "squad_number": 21 },
+            { "player_id": "cn-li-haochen-2009", "player": "Li Haochen", "squad_number": 27 }
+          ]
+        },
+        {
+          "label": {
+            "zh": "前锋 FW",
+            "en": "Forwards"
+          },
+          "entries": [
+            { "player_id": "cn-peng-ziming-2008", "player": "Peng Ziming", "squad_number": 7 },
+            { "player_id": "cn-li-wenbo-2009", "player": "Li Wenbo", "squad_number": 9 },
+            { "player_id": "cn-liang-jinhong-2008", "player": "Liang Jinhong", "squad_number": 10 },
+            { "player_id": "cn-ou-haosen-2009", "player": "Ou Haosen", "squad_number": 11 },
+            { "player_id": "cn-xu-qizhen-2009", "player": "Xu Qizhen", "squad_number": 18 },
+            { "player_id": "cn-jiang-tingyuan-2009", "player": "Jiang Tingyuan", "squad_number": 19 }
+          ]
+        }
+      ]
+    },
+    "source_checked_at": "2026-08-11",
+    "source_conflict_note": "The event dates, venues and eight-team draw are official. The 23-player Shanghai U17 roster and first-round scores are public data-page snapshots. Later scores, complete knockout results, champion, runner-up and individual match statistics remain unrecorded until a reliable closure source is captured.",
+    "source_links": [
+      {
+        "label": "Shanghai Municipal Government event launch and groups",
+        "url": "https://www.shanghai.gov.cn/nw31406/20260617/f9f5ca21627c43abb45a59a26b87d3eb.html"
+      },
+      {
+        "label": "Sony China event dates and venues",
+        "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/corporate/2026/20260618-02.html"
+      },
+      {
+        "label": "QTX Shanghai U17 roster-linked profile snapshot",
+        "url": "https://data.qtx.com/qiuyuan/mV6oYoz07G.html"
+      },
+      {
+        "label": "AiScore fixtures and first-round scores",
+        "url": "https://m.aiscore.com/en/tournament-shanghai-future-star-cup/eg6763i6opi47ry/matches"
+      },
+      {
+        "label": "Sina Shanghai squad announcement public index",
+        "url": "https://www.sina.cn/news/detail/5317232427271150.html"
+      }
+    ]
+  },
+  {
     "id": "afc-asian-cup-2023",
     "confederation": "AFC",
     "competition_name": "AFC Asian Cup Qatar 2023",

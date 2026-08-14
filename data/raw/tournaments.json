@@ -224,8 +224,8 @@
     "name": "2026 Shanghai Future Star Cup Men's U17",
     "short_name": "Shanghai Future Star U17 2026",
     "focus_level": "primary",
-    "status": "upcoming",
-    "last_checked": "2026-08-02",
+    "status": "completed",
+    "last_checked": "2026-08-11",
     "date_range": {
       "start": "2026-08-03",
       "end": "2026-08-09"
@@ -237,7 +237,7 @@
       "Bayer Leverkusen U17",
       "Shanghai U17"
     ],
-    "headline": "中国 U17 将在上海明日之星冠军杯 A 组先后对阵阿森纳、毕尔巴鄂竞技和勒沃库森；首战为 8 月 3 日 19:35 对阿森纳 U17，官方转播为“足球中国”的微博、抖音、快手和视频号。",
+    "headline": "2026 上海明日之星冠军杯男足已完成 8 队分组和 12 场小组赛赛程建档，并补齐上海 U17 的 23 人赛事名单快照；淘汰赛完整赛果仍待可靠来源复核。",
     "notes": [
       "男足赛事于 2026-08-03 至 2026-08-09 在上汽浦东足球场和源深体育中心举行，共 8 支 U17 球队参赛。",
       "A 组为中国 U17、毕尔巴鄂竞技 U17、勒沃库森 U17、阿森纳 U17；B 组为上海 U17、托特纳姆热刺 U17、河床 U17、葡萄牙体育 U17。",
@@ -247,7 +247,10 @@
       "本届是赛事自 2022 年创办以来的第五届，年度主题为“明日之星，世界同场”；男、女足两项合计 16 支球队、40 场比赛。本条仍只统计 8 月 3 日至 9 日的男足赛事。",
       "男足门票预售已开启，公开票档为 50、80、120、200 元；双人套票八五折、三人套票八折，官方公布的销售渠道为大麦和久事体育。具体场次余票、席位与优惠适用情况以售票平台实时页面为准。",
       "阿森纳 U17 的参赛席位已由上海赛事主办方确认；截至 8 月 2 日，尚未检索到阿森纳俱乐部发布的本届赛事出征名单，因此不根据往期梯队名单推定来沪球员。",
-      "同一品牌下的首届女足赛事另于 8 月 16 日至 22 日举行，也有阿森纳 U17 女足参赛；本条只统计男足赛事，避免混合两套赛程。"
+      "同一品牌下的首届女足赛事另于 8 月 16 日至 22 日举行，也有阿森纳 U17 女足参赛；本条只统计男足赛事，避免混合两套赛程。",
+      "公开赛事数据页记录首轮比分：上海 U17 3 比 3 葡萄牙体育、中国 U17 3 比 2 阿森纳、毕尔巴鄂竞技 0 比 0 勒沃库森、托特纳姆热刺 1 比 1 河床；该批比分标记为二级赛事数据快照。",
+      "上海 U17 名册采用 2026-08-11 可核的球员页关联快照，共 23 人；该代表队身份不等同于球员永久俱乐部注册。",
+      "截至本次校对，未找到可稳定交叉验证的官方闭幕赛果页，因此第二、三轮及淘汰赛完整比分、冠军和个人出场数据暂不录入。"
     ],
     "participants": {
       "status": "complete",
@@ -275,6 +278,61 @@
         }
       ]
     },
+    "latest_public_roster_view": {
+      "label": {
+        "zh": "2026 上海 U17 赛事名单快照",
+        "en": "2026 Shanghai U17 tournament roster snapshot"
+      },
+      "note": {
+        "zh": "按 2026-08-11 可核的上海 U17 球员页关联名单整理，共 23 人。球衣号和位置按赛事页面保留；俱乐部归属未由该名单统一确认，因此不做推断。",
+        "en": "Compiled from the Shanghai U17 linked-player roster available on 2026-08-11. The snapshot contains 23 players; shirt numbers and positions follow the event pages, while permanent club registrations are not inferred."
+      },
+      "checked_at": "2026-08-11",
+      "groups": [
+        {
+          "label": "上海 U17",
+          "entries": [
+            { "player_id": "cn-wang-qirong-2008", "player": "Wang Qirong" },
+            { "player_id": "cn-liu-hanwen-2009", "player": "Liu Hanwen" },
+            { "player_id": "cn-li-qiufu-2009", "player": "Li Qiufu" },
+            { "player_id": "cn-gu-boyu-2009", "player": "Gu Boyu" },
+            { "player_id": "cn-yue-bowen-2008", "player": "Yue Bowen" },
+            { "player_id": "cn-zhang-yu-2009", "player": "Zhang Yu" },
+            { "player_id": "cn-peng-ziming-2008", "player": "Peng Ziming" },
+            { "player_id": "cn-liu-yichen-2009", "player": "Liu Yichen" },
+            { "player_id": "cn-li-wenbo-2009", "player": "Li Wenbo" },
+            { "player_id": "cn-liang-jinhong-2008", "player": "Liang Jinhong" },
+            { "player_id": "cn-ou-haosen-2009", "player": "Ou Haosen" },
+            { "player_id": "cn-muhamaiti-ablimiti-2009", "player": "Muhamaiti Ablimiti" },
+            { "player_id": "cn-lyu-mengyang-2009", "player": "Lyu Mengyang" },
+            { "player_id": "cn-he-haoyuan-2009", "player": "He Haoyuan" },
+            { "player_id": "cn-li-mingjie-2009", "player": "Li Mingjie" },
+            { "player_id": "cn-xu-qizhen-2009", "player": "Xu Qizhen" },
+            { "player_id": "cn-jiang-tingyuan-2009", "player": "Jiang Tingyuan" },
+            { "player_id": "cn-li-weiqi-2009", "player": "Li Weiqi" },
+            { "player_id": "cn-ye-weixiang-2009", "player": "Ye Weixiang" },
+            { "player_id": "cn-qiu-penghui-2009", "player": "Qiu Penghui" },
+            { "player_id": "cn-liu-zejia-2009", "player": "Liu Zejia" },
+            { "player_id": "cn-huang-zijie-2009", "player": "Huang Zijie" },
+            { "player_id": "cn-li-haochen-2009", "player": "Li Haochen" }
+          ]
+        }
+      ]
+    },
+    "group_stage_matches": [
+      { "date": "2026-08-03", "group": "Group A", "home": "Athletic Club U17", "away": "Bayer Leverkusen U17", "home_score": 0, "away_score": 0, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-03", "group": "Group A", "home": "China PR U17", "away": "Arsenal U17", "home_score": 3, "away_score": 2, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-03", "group": "Group B", "home": "Tottenham Hotspur U17", "away": "River Plate U17", "home_score": 1, "away_score": 1, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-03", "group": "Group B", "home": "Shanghai U17", "away": "Sporting CP U17", "home_score": 3, "away_score": 3, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-04", "group": "Group A", "home": "Arsenal U17", "away": "Bayer Leverkusen U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-04", "group": "Group A", "home": "Athletic Club U17", "away": "China PR U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-04", "group": "Group B", "home": "Sporting CP U17", "away": "River Plate U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-04", "group": "Group B", "home": "Tottenham Hotspur U17", "away": "Shanghai U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group B", "home": "Tottenham Hotspur U17", "away": "Sporting CP U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group B", "home": "Shanghai U17", "away": "River Plate U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group A", "home": "Athletic Club U17", "away": "Arsenal U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group A", "home": "China PR U17", "away": "Bayer Leverkusen U17", "score_status": "pending-source-audit" }
+    ],
     "broadcast_plan": {
       "status": "complete",
       "checked_at": "2026-08-02",
@@ -358,7 +416,7 @@
         "checked_at": "2026-08-02"
       }
     },
-    "latest_public_roster_view": {
+    "china_camp_roster_view": {
       "label": {
         "zh": "中国 U17 第五期集训名单（28 人）",
         "en": "China U17 fifth-camp roster (28 players)"
@@ -610,6 +668,26 @@
         "label": "Shanghai municipal government tournament guide and ticketing channels",
         "publisher": "Shanghai Municipal People's Government",
         "url": "https://english.shanghai.gov.cn/en-SportsEvents/20260717/4a3a43f4a43e4254a7ba7b106857edf6.html"
+      },
+      {
+        "label": "Sony China event dates and venues",
+        "publisher": "Sony China",
+        "url": "https://www.sony.com.cn/content/sonyportal/zh-cn/cms/newscenter/corporate/2026/20260618-02.html"
+      },
+      {
+        "label": "QTX Shanghai U17 roster-linked profile snapshot",
+        "publisher": "QTX",
+        "url": "https://data.qtx.com/qiuyuan/mV6oYoz07G.html"
+      },
+      {
+        "label": "AiScore fixtures and first-round scores",
+        "publisher": "AiScore",
+        "url": "https://m.aiscore.com/en/tournament-shanghai-future-star-cup/eg6763i6opi47ry/matches"
+      },
+      {
+        "label": "Shanghai squad announcement public index",
+        "publisher": "Sina",
+        "url": "https://www.sina.cn/news/detail/5317232427271150.html"
       }
     ]
   },

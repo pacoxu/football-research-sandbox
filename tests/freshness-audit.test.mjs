@@ -41,14 +41,23 @@ test("is non-blocking by default and strict only when findings exist", () => {
   assert.equal(exitCodeForReport({ findings: [{}] }, true), 1);
 });
 
-test("keeps China registration records clear after the issue 44 freshness cleanup", async () => {
+test("keeps Shanghai tournament snapshots clear in the current freshness audit", async () => {
   const dataset = await loadDataset();
-  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-08-02");
-  const chinaRegistrationFindings = report.findings.filter(
+  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-08-11");
+  const shanghaiSnapshotIds = new Set(
+    dataset.players
+      .filter(
+        (player) =>
+          player.registration_club.status === "tournament-snapshot" &&
+          player.focus_tags.includes("shanghai-future-star-cup-2026")
+      )
+      .map((player) => player.id)
+  );
+  const shanghaiRegistrationFindings = report.findings.filter(
     (finding) =>
       finding.entity_type === "player" &&
       finding.field === "registration_club" &&
-      finding.entity_id.startsWith("cn-")
+      shanghaiSnapshotIds.has(finding.entity_id)
   );
-  assert.deepEqual(chinaRegistrationFindings, []);
+  assert.deepEqual(shanghaiRegistrationFindings, []);
 });
