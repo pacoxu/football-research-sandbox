@@ -4,6 +4,19 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-08-11
+
+### Added
+
+- Added the complete 12-match group schedule and the available first-round score snapshot for the 2026 Shanghai Future Star Cup men's U17 event.
+- Added a 23-player Shanghai U17 tournament-roster snapshot: 21 new player records plus tournament participation links for existing Gu Boyu and Lyu Mengyang profiles.
+- Added roster-boundary documentation and regression tests for the 3 goalkeeper, 8 defender, 6 midfielder and 6 forward split.
+
+### Data Scope Notes
+
+- Shanghai U17 is stored as a tournament-time select-team identity, not inferred as a permanent registration club.
+- Complete knockout results, champion, runner-up and individual match statistics remain null until an official closure report or independently verifiable match source is captured.
+
 ## 2026-08-01
 
 ### Added

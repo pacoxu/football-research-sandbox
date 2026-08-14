@@ -399,7 +399,9 @@
       "asia-u17-2026",
       "china-youth",
       "donglu-football-boys",
-      "defender-watch"
+      "defender-watch",
+      "shanghai-future-star-cup-2026",
+      "shanghai-u17"
     ],
     "tournament_participation": [
       {
@@ -452,6 +454,18 @@
         "goals": null,
         "minutes": null,
         "note": "中国足协 2026-06-27 第四期集训公开名单再次列入顾博宇；该记录用于跟踪赛后 U17 pool，不改变其 AFC U17 2026 终报名落选状态。"
+      },
+      {
+        "competition_id": "shanghai-future-star-cup-men-u17-2026",
+        "label": "2026 上海明日之星冠军杯男足",
+        "team": "Shanghai U17",
+        "squad_status": "registered",
+        "roster_status": "tournament-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "上海 U17 公开关联名单快照列为 4 号后卫；该赛事身份不改变其上海申花青训注册主线，逐场数据待可靠赛果来源。"
       }
     ],
     "external_links": [
@@ -521,6 +535,13 @@
         "url": "https://www.xiaojiangfc.com/players/gu-boyu/",
         "checked_at": "2026-07-25",
         "note": "二次公开资料索引；可补充项目身份与成长线索，但不单独作为当前注册、完整出生日期或正式比赛数据的强证明。"
+      },
+      {
+        "type": "profile",
+        "label": "QTX Shanghai U17 player profile",
+        "url": "https://data.qtx.com/qiuyuan/DZjMKxlxWV.html",
+        "checked_at": "2026-08-11",
+        "note": "用于核对上海 U17 赛事名单中的 4 号、位置与名单关联；不覆盖主库中的正式青训归属。"
       }
     ],
     "verification": {

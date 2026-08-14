@@ -6,7 +6,7 @@ const tournamentsUrl = new URL("../data/raw/tournaments.json", import.meta.url);
 const appUrl = new URL("../assets/app.js", import.meta.url);
 const tournamentPageUrl = new URL("../tournament.html", import.meta.url);
 
-test("tracks the complete Shanghai Future Star U17 field, draw and China camp roster", async () => {
+test("tracks the complete Shanghai Future Star U17 field, draw and both roster views", async () => {
   const tournaments = JSON.parse(await readFile(tournamentsUrl, "utf8"));
   const event = tournaments.find(({ id }) => id === "shanghai-future-star-cup-men-u17-2026");
   const groups = event.final_draw.groups;
@@ -14,14 +14,19 @@ test("tracks the complete Shanghai Future Star U17 field, draw and China camp ro
   const broadcast = event.broadcast_plan;
   const ticketing = event.ticketing;
 
-  assert.equal(event.status, "upcoming");
+  assert.equal(event.status, "completed");
   assert.deepEqual(event.date_range, { start: "2026-08-03", end: "2026-08-09" });
   assert.equal(event.participants.status, "complete");
   assert.equal(event.participants.teams.length, 8);
   assert.equal(groups.length, 2);
   assert.ok(groups.find(({ name }) => name === "A").teams.includes("Arsenal U17"));
-  assert.equal(roster.length, 28);
-  assert.equal(event.latest_public_roster_view.head_coach.local_name, "浮嶋敏");
+  assert.equal(roster.length, 23);
+  assert.equal(event.latest_public_roster_view.checked_at, "2026-08-11");
+  assert.equal(
+    event.china_camp_roster_view.groups.flatMap(({ entries }) => entries).length,
+    28
+  );
+  assert.equal(event.china_camp_roster_view.head_coach.local_name, "浮嶋敏");
   assert.equal(broadcast.status, "complete");
   assert.equal(broadcast.published_at, "2026-08-02");
   assert.deepEqual(

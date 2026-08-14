@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-08-02",
+  "generated_at": "2026-08-11",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -13,16 +13,16 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 924,
-    "stale_records": 10,
-    "needs_review_records": 322
+    "record_count": 946,
+    "stale_records": 35,
+    "needs_review_records": 343
   },
   "freshness": {
-    "as_of": "2026-08-02",
-    "audited_records": 1204,
-    "overdue": 10,
+    "as_of": "2026-08-11",
+    "audited_records": 1247,
+    "overdue": 37,
     "by_window": {
-      "30": 10,
+      "30": 37,
       "90": 0,
       "180": 0
     }
@@ -34,13 +34,13 @@
         "zh": "球员",
         "en": "Players"
       },
-      "record_count": 543,
+      "record_count": 564,
       "quality": {
-        "complete": 74,
+        "complete": 71,
         "mixed": 4,
-        "partial": 163,
-        "needs-review": 292,
-        "stale": 10,
+        "partial": 141,
+        "needs-review": 313,
+        "stale": 35,
         "excluded": 0
       },
       "source_tiers": {
@@ -50,21 +50,21 @@
         "4": 0,
         "5": 2,
         "6": 0,
-        "unclassified": 0
+        "unclassified": 21
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-08-02"
+        "newest": "2026-08-11"
       },
-      "overdue_records": 10,
+      "overdue_records": 35,
       "missing_fields": [
         {
           "field": "names.native_verified",
-          "count": 231
+          "count": 252
         },
         {
           "field": "source_layers",
-          "count": 60
+          "count": 81
         }
       ]
     },
@@ -94,7 +94,7 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-08-02"
+        "newest": "2026-08-11"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -105,11 +105,11 @@
         "zh": "赛事档案",
         "en": "Tournament archive"
       },
-      "record_count": 71,
+      "record_count": 72,
       "quality": {
         "complete": 0,
         "mixed": 0,
-        "partial": 71,
+        "partial": 72,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -121,11 +121,11 @@
         "4": 0,
         "5": 57,
         "6": 0,
-        "unclassified": 14
+        "unclassified": 15
       },
       "checked_at": {
         "oldest": "2026-06-28",
-        "newest": "2026-08-01"
+        "newest": "2026-08-11"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -135,7 +135,7 @@
         },
         {
           "field": "source_version",
-          "count": 16
+          "count": 17
         },
         {
           "field": "source_checked_at",
