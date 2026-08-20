@@ -21195,7 +21195,7 @@
     }
   ],
   "scouting_watchlist": {
-    "schema_version": 1,
+    "schema_version": 2,
     "source": {
       "name": "Football Talent Scout",
       "operator": "Jacek Kulig",
@@ -21762,6 +21762,119 @@
         },
         "country": "Iraq",
         "url": "https://footballtalentscout.net/home/category/guest-articles/page/13/"
+      }
+    ],
+    "source_audits": [
+      {
+        "id": "eyeball-asia-public-2026-08-19",
+        "source": {
+          "name": "Eyeball",
+          "url": "https://www.eyeball.club/",
+          "portal_url": "https://portal.eyeball.club/",
+          "source_tier": "S3",
+          "checked_at": "2026-08-19",
+          "access_status": "login-required",
+          "caveat": {
+            "zh": "Eyeball Portal 的球员筛选、比赛视频、评分与详细数据需要登录。公开官网和官方社交账号只能支持平台覆盖与少量具名案例；以下四人是转入沙特联赛的亚洲联赛关联线索，均非 AFC 国籍球员，不计入亚洲球员人数，也不把发布时俱乐部快照当作当前注册。",
+            "en": "Eyeball Portal player filters, match video, ratings, and detailed data require authentication. The public website and official social account support only platform coverage and a small number of named cases. The four records below are Asia-league links created by moves to Saudi clubs; none is an AFC-national player, none counts toward the Asian-player total, and publication-time club snapshots are not treated as current registration."
+          }
+        },
+        "scope": {
+          "target": "AFC-national youth players",
+          "named_afc_player_count": 0,
+          "asia_linked_lead_count": 4,
+          "inclusion_rule": "A player must be named by an Eyeball-owned public page or official Eyeball social post and have the stated Saudi league link independently confirmed by an official league source."
+        },
+        "asia_linked_leads": [
+          {
+            "id": "eyeball-spl-unai-hernandez-2004",
+            "name": "Unai Hernández",
+            "birth_year": 2004,
+            "nationality": "Spain",
+            "destination_club_at_source": "Al Ittihad",
+            "destination_association": "Saudi Arabia",
+            "relationship": "destination-club-in-afc-member",
+            "afc_national_player": false,
+            "source_url": "https://www.linkedin.com/posts/eyeballfootball_spls-eyeball-transfers-activity-7306253270497255425-cAsH",
+            "source_checked_at": "2026-08-19",
+            "official_verification": {
+              "label": "Saudi Pro League: Spanish starlet Hernandez talks RSL debut",
+              "url": "https://www.spl.com.sa/en/news/spanish-starlet-hernandez-talks-rsl-debut-fan-support-and-al-ittihad-title-focus",
+              "checked_at": "2026-08-19",
+              "claim_scope": "Confirms the 2004-born Spanish midfielder moved from Barcelona to Al Ittihad in January 2025."
+            },
+            "note": {
+              "zh": "Eyeball 官方帖将其列为 2025 冬窗转入沙特联赛的四名平台可见球员之一；这里只记录该公开案例，不推断 Eyeball 私有评分。",
+              "en": "Eyeball's official post lists him among four platform-visible players who moved to the Saudi league in the 2025 winter window. Only that public case is retained; no private Eyeball rating is inferred."
+            }
+          },
+          {
+            "id": "eyeball-spl-miguel-carvalho-2005",
+            "name": "Miguel Carvalho",
+            "birth_year": 2005,
+            "nationality": "Spain",
+            "destination_club_at_source": "Al Qadsiah",
+            "destination_association": "Saudi Arabia",
+            "relationship": "destination-club-in-afc-member",
+            "afc_national_player": false,
+            "source_url": "https://www.linkedin.com/posts/eyeballfootball_spls-eyeball-transfers-activity-7306253270497255425-cAsH",
+            "source_checked_at": "2026-08-19",
+            "official_verification": {
+              "label": "Saudi Pro League player profile: Miguel Carvalho",
+              "url": "https://www.spl.com.sa/en/players/84469/miguel-carvalho",
+              "checked_at": "2026-08-19",
+              "claim_scope": "Confirms his 2005 birth year, Spanish nationality, position, and Saudi Pro League career with Al Qadsiah."
+            },
+            "note": {
+              "zh": "Eyeball 官方帖记录其由西班牙人体系转入卡迪西亚；后续租借或注册变化以沙特联赛官方页为准，不回写本条发布时快照。",
+              "en": "Eyeball's official post records his move from Espanyol's system to Al Qadsiah. Later loans or registration changes remain governed by the official Saudi league page and do not rewrite this publication-time snapshot."
+            }
+          },
+          {
+            "id": "eyeball-spl-moses-turay-2004",
+            "name": "Moses Turay",
+            "birth_year": 2004,
+            "nationality": "Sierra Leone",
+            "destination_club_at_source": "Al Raed",
+            "destination_association": "Saudi Arabia",
+            "relationship": "destination-club-in-afc-member",
+            "afc_national_player": false,
+            "source_url": "https://www.linkedin.com/posts/eyeballfootball_spls-eyeball-transfers-activity-7306253270497255425-cAsH",
+            "source_checked_at": "2026-08-19",
+            "official_verification": {
+              "label": "Saudi Pro League player profile: Moses Turay",
+              "url": "https://www.spl.com.sa/en/players/84411/moses-turay",
+              "checked_at": "2026-08-19",
+              "claim_scope": "Confirms his 2004 birth year, Sierra Leone nationality, position, and 2024/25 Al Raed league record."
+            },
+            "note": {
+              "zh": "Eyeball 官方帖将其列为从 SJK 转入布赖代先锋的案例；该短期沙特节点只作亚洲联赛关联，不作亚洲国籍样本。",
+              "en": "Eyeball's official post lists his move from SJK to Al Raed. The short Saudi spell is an Asia-league link only, not an Asian-nationality sample."
+            }
+          },
+          {
+            "id": "eyeball-spl-matheus-machado-2003",
+            "name": "Matheus Machado",
+            "birth_year": 2003,
+            "nationality": "Brazil",
+            "destination_club_at_source": "Al Fateh",
+            "destination_association": "Saudi Arabia",
+            "relationship": "destination-club-in-afc-member",
+            "afc_national_player": false,
+            "source_url": "https://www.linkedin.com/posts/eyeballfootball_spls-eyeball-transfers-activity-7306253270497255425-cAsH",
+            "source_checked_at": "2026-08-19",
+            "official_verification": {
+              "label": "Saudi Pro League player profile: Matheus Machado",
+              "url": "https://www.spl.com.sa/en/players/84466/matheus-machado",
+              "checked_at": "2026-08-19",
+              "claim_scope": "Confirms his 2003 birth year, Brazilian nationality, position, and Saudi Pro League career with Al Fateh."
+            },
+            "note": {
+              "zh": "Eyeball 官方帖记录其由 Zulte Waregem 转入哈萨征服；这里只保留平台公开转会案例与联赛官方交叉核验。",
+              "en": "Eyeball's official post records his move from Zulte Waregem to Al Fateh. Only the public platform case and official league cross-check are retained."
+            }
+          }
+        ]
       }
     ]
   },

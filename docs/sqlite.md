@@ -270,6 +270,11 @@ erDiagram
 | `dossiers` | `data/raw/dossiers.json` | 深度专题档案。 |
 | `football_stories` | `data/raw/football-stories.json` | 人物与机构故事、时间线、争议和来源 JSON。 |
 | `football_story_entities` | `football_stories[].related_entities` | 故事与教练、专题、留洋记录及其他故事的关联。 |
+| `scouting_watchlist_meta` | `scouting-watchlist.json.source/scope` | Football Talent Scout 观察池来源与覆盖范围。 |
+| `scouting_watchlist_records` | `scouting-watchlist.json.records[]` | FTS 亚洲青年球员公开报告线索。 |
+| `scouting_watchlist_collections` | `scouting-watchlist.json.related_collections[]` | FTS 国家和专题合集入口。 |
+| `scouting_source_audits` | `scouting-watchlist.json.source_audits[]` | Eyeball 等登录型球探来源的公开访问审计。 |
+| `scouting_asia_linked_leads` | `source_audits[].asia_linked_leads[]` | 与 AFC 联赛/俱乐部有关、但不计入 AFC 国籍球员的具名公开线索。 |
 | `tournament_archive` | `data/raw/tournament-archive.json` | 历史赛事归档和中国队相关结果。 |
 | `youth_development_systems` | `data/raw/youth-development-systems.json` | 中国、日韩与北欧体系稳定结构、年度快照、竞赛 ID 和官方来源。 |
 

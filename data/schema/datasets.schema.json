@@ -180,9 +180,9 @@
     },
     "scoutingWatchlist": {
       "type": "object",
-      "required": ["schema_version", "source", "scope", "records", "related_collections"],
+      "required": ["schema_version", "source", "scope", "records", "related_collections", "source_audits"],
       "properties": {
-        "schema_version": { "const": 1 },
+        "schema_version": { "const": 2 },
         "source": {
           "type": "object",
           "required": ["name", "url", "source_tier", "checked_at", "caveat"],
@@ -223,7 +223,51 @@
             "additionalProperties": true
           }
         },
-        "related_collections": { "type": "array" }
+        "related_collections": { "type": "array" },
+        "source_audits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "source", "scope", "asia_linked_leads"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "source": {
+                "type": "object",
+                "required": ["name", "url", "portal_url", "source_tier", "checked_at", "access_status", "caveat"],
+                "properties": {
+                  "name": { "const": "Eyeball" },
+                  "source_tier": { "const": "S3" },
+                  "access_status": { "const": "login-required" },
+                  "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+                  "caveat": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" }
+                },
+                "additionalProperties": true
+              },
+              "scope": {
+                "type": "object",
+                "required": ["target", "named_afc_player_count", "asia_linked_lead_count", "inclusion_rule"],
+                "additionalProperties": true
+              },
+              "asia_linked_leads": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["id", "name", "birth_year", "nationality", "destination_club_at_source", "destination_association", "relationship", "afc_national_player", "source_url", "source_checked_at", "official_verification", "note"],
+                  "properties": {
+                    "id": { "type": "string", "minLength": 1 },
+                    "name": { "type": "string", "minLength": 1 },
+                    "birth_year": { "type": "integer", "minimum": 2000, "maximum": 2010 },
+                    "afc_national_player": { "const": false },
+                    "source_checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+                    "note": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" }
+                  },
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          }
+        }
       },
       "additionalProperties": true
     },

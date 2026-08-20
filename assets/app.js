@@ -299,7 +299,8 @@ const UI_COPY = {
     "coaches.watchlist.title": "待补教练与机构",
     "coaches.watchlist.need": "待核：{value}",
     "players.scouting.eyebrow": "Scouting Watchlist",
-    "players.scouting.title": "FTS 亚洲青年球员观察池",
+    "players.scouting.title": "亚洲青年球员观察池",
+    "players.scouting.ftsTitle": "Football Talent Scout（S2）",
     "players.scouting.country": "国家 / 地区",
     "players.scouting.allCountry": "全部国家 / 地区",
     "players.scouting.meta": "当前展示 {count} / {total} 人 · 覆盖 {countries} 个 AFC 国家 / 地区",
@@ -313,6 +314,13 @@ const UI_COPY = {
     "players.scouting.type.talent-of-the-day": "每日天才",
     "players.scouting.type.player-profile": "球员报告",
     "players.scouting.type.guest-report": "客座报告",
+    "players.scouting.eyeball.title": "Eyeball 亚洲公开线索审计（S3）",
+    "players.scouting.eyeball.meta": "公开核得 {count} 名转入沙特联赛的 U21 关联线索 · AFC 国籍具名球员 {afc} 人",
+    "players.scouting.eyeball.relation": "亚洲联赛关联",
+    "players.scouting.eyeball.boundary": "非 AFC 国籍",
+    "players.scouting.eyeball.destination": "Eyeball 发布时去向：{club}",
+    "players.scouting.eyeball.source": "查看 Eyeball 公开帖",
+    "players.scouting.eyeball.official": "查看联赛官方核验",
     "playerDetail.breadcrumb.list": "球员列表",
     "playerDetail.breadcrumb.detail": "球员详情",
     "playerDetail.pathway.eyebrow": "Pathway",
@@ -1183,7 +1191,8 @@ const UI_COPY = {
     "coaches.watchlist.title": "Coaches and organizations to verify",
     "coaches.watchlist.need": "Research need: {value}",
     "players.scouting.eyebrow": "Scouting Watchlist",
-    "players.scouting.title": "FTS AFC youth watchlist",
+    "players.scouting.title": "AFC youth scouting watchlist",
+    "players.scouting.ftsTitle": "Football Talent Scout (S2)",
     "players.scouting.country": "Country / region",
     "players.scouting.allCountry": "All countries / regions",
     "players.scouting.meta": "Showing {count} / {total} players across {countries} AFC countries / regions",
@@ -1197,6 +1206,13 @@ const UI_COPY = {
     "players.scouting.type.talent-of-the-day": "Talent of the Day",
     "players.scouting.type.player-profile": "Player profile",
     "players.scouting.type.guest-report": "Guest report",
+    "players.scouting.eyeball.title": "Eyeball public Asia-lead audit (S3)",
+    "players.scouting.eyeball.meta": "{count} public U21 leads tied to moves into the Saudi league · {afc} named AFC-national players",
+    "players.scouting.eyeball.relation": "Asia-league link",
+    "players.scouting.eyeball.boundary": "Not an AFC-national player",
+    "players.scouting.eyeball.destination": "Destination in the Eyeball post: {club}",
+    "players.scouting.eyeball.source": "Open Eyeball public post",
+    "players.scouting.eyeball.official": "Open official league check",
     "players.card.details": "View",
     "playerDetail.breadcrumb.list": "Players",
     "playerDetail.breadcrumb.detail": "Player detail",
@@ -5816,6 +5832,43 @@ function renderScoutingWatchlist() {
           </a>
         `
       )
+      .join("");
+  }
+
+  const eyeballAudit = (watchlist.source_audits ?? []).find((audit) => audit.source?.name === "Eyeball");
+  const eyeballMeta = document.querySelector("#eyeballWatchMeta");
+  const eyeballCaveat = document.querySelector("#eyeballWatchCaveat");
+  const eyeballGrid = document.querySelector("#eyeballWatchGrid");
+  if (eyeballAudit && eyeballGrid) {
+    const leads = eyeballAudit.asia_linked_leads ?? [];
+    if (eyeballMeta) {
+      eyeballMeta.textContent = t("players.scouting.eyeball.meta", {
+        count: leads.length,
+        afc: eyeballAudit.scope?.named_afc_player_count ?? 0
+      });
+    }
+    if (eyeballCaveat) {
+      eyeballCaveat.textContent = localizeText(eyeballAudit.source?.caveat);
+    }
+    eyeballGrid.innerHTML = leads
+      .map((lead) => `
+        <article class="player-card">
+          <div class="chip-row">
+            <span class="chip">${escapeHtml(formatCountryName(lead.nationality))}</span>
+            <span class="chip">${escapeHtml(String(lead.birth_year))}</span>
+            <span class="chip">${escapeHtml(t("players.scouting.eyeball.relation"))}</span>
+            <span class="chip">${escapeHtml(t("players.scouting.eyeball.boundary"))}</span>
+          </div>
+          <h3>${escapeHtml(lead.name)}</h3>
+          <p>${escapeHtml(t("players.scouting.eyeball.destination", { club: lead.destination_club_at_source }))}</p>
+          <p class="small-note">${escapeHtml(localizeText(lead.note))}</p>
+          <p class="small-note">${escapeHtml(t("players.scouting.checked", { date: formatDate(lead.source_checked_at) }))}</p>
+          <div class="chip-row">
+            <a class="primary-link primary-link-inline" href="${escapeHtml(lead.source_url)}" target="_blank" rel="noreferrer">${escapeHtml(t("players.scouting.eyeball.source"))}</a>
+            <a class="primary-link primary-link-inline" href="${escapeHtml(lead.official_verification.url)}" target="_blank" rel="noreferrer">${escapeHtml(t("players.scouting.eyeball.official"))}</a>
+          </div>
+        </article>
+      `)
       .join("");
   }
 }

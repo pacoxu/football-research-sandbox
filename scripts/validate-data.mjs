@@ -2896,7 +2896,7 @@ function validateUefaYouthLeague(topic, playerIds) {
 }
 
 function validateScoutingWatchlist(watchlist, players) {
-  assert(watchlist?.schema_version === 1, "Invalid scouting watchlist schema_version");
+  assert(watchlist?.schema_version === 2, "Invalid scouting watchlist schema_version");
   assert(watchlist.source?.name === "Football Talent Scout", "Invalid scouting watchlist source");
   assert(watchlist.source?.source_tier === "S2", "Football Talent Scout must remain an S2 source");
   assert(isIsoDate(watchlist.source?.checked_at), "Invalid scouting watchlist source checked_at");
@@ -2968,6 +2968,54 @@ function validateScoutingWatchlist(watchlist, players) {
     assert(collection.url?.startsWith("https://footballtalentscout.net/"), `Invalid scouting collection URL on ${collection.id}`);
   }
   assert(collectionIds.size === 6, `Expected 6 scouting collections, found ${collectionIds.size}`);
+
+  const sourceAudits = watchlist.source_audits ?? [];
+  assert(sourceAudits.length === 1, `Expected one scouting source audit, found ${sourceAudits.length}`);
+  const auditIds = new Set();
+  const leadIds = new Set();
+  for (const audit of sourceAudits) {
+    assert(!auditIds.has(audit.id), `Duplicate scouting source audit id: ${audit.id}`);
+    auditIds.add(audit.id);
+    assert(audit.source?.name === "Eyeball", `Unexpected scouting audit source on ${audit.id}`);
+    assert(audit.source?.source_tier === "S3", `Eyeball must remain an S3 source on ${audit.id}`);
+    assert(audit.source?.url === "https://www.eyeball.club/", `Invalid Eyeball source URL on ${audit.id}`);
+    assert(audit.source?.portal_url === "https://portal.eyeball.club/", `Invalid Eyeball portal URL on ${audit.id}`);
+    assert(audit.source?.access_status === "login-required", `Invalid Eyeball access status on ${audit.id}`);
+    assert(isIsoDate(audit.source?.checked_at), `Invalid Eyeball audit date on ${audit.id}`);
+    assert(
+      typeof audit.source?.caveat?.zh === "string" && typeof audit.source?.caveat?.en === "string",
+      `Missing Eyeball bilingual caveat on ${audit.id}`
+    );
+    assert(audit.scope?.named_afc_player_count === 0, `Public Eyeball audit must not claim named AFC players on ${audit.id}`);
+    const leads = audit.asia_linked_leads ?? [];
+    assert(audit.scope?.asia_linked_lead_count === leads.length, `Eyeball lead count mismatch on ${audit.id}`);
+    for (const lead of leads) {
+      assert(!leadIds.has(lead.id), `Duplicate Eyeball lead id: ${lead.id}`);
+      leadIds.add(lead.id);
+      assert(typeof lead.name === "string" && lead.name.length > 0, `Missing Eyeball lead name on ${lead.id}`);
+      assert(Number.isInteger(lead.birth_year) && lead.birth_year >= 2000 && lead.birth_year <= 2010, `Invalid Eyeball lead birth_year on ${lead.id}`);
+      assert(typeof lead.nationality === "string" && lead.nationality.length > 0, `Missing Eyeball lead nationality on ${lead.id}`);
+      assert(lead.destination_association === "Saudi Arabia", `Unexpected Eyeball destination association on ${lead.id}`);
+      assert(lead.relationship === "destination-club-in-afc-member", `Invalid Eyeball relationship on ${lead.id}`);
+      assert(lead.afc_national_player === false, `Eyeball Asia-linked lead must not masquerade as an AFC-national player: ${lead.id}`);
+      assert(
+        lead.source_url?.startsWith("https://www.linkedin.com/posts/eyeballfootball_"),
+        `Invalid public Eyeball lead URL on ${lead.id}`
+      );
+      assert(isIsoDate(lead.source_checked_at), `Invalid Eyeball lead check date on ${lead.id}`);
+      assert(
+        lead.official_verification?.url?.startsWith("https://www.spl.com.sa/") &&
+          isIsoDate(lead.official_verification?.checked_at) &&
+          typeof lead.official_verification?.claim_scope === "string",
+        `Missing official Saudi Pro League verification on ${lead.id}`
+      );
+      assert(
+        typeof lead.note?.zh === "string" && typeof lead.note?.en === "string",
+        `Missing Eyeball bilingual note on ${lead.id}`
+      );
+    }
+    assert(leads.length === 4, `Expected four public Eyeball Asia-linked leads, found ${leads.length}`);
+  }
 }
 
 export function validatePlayerCompetitionReference(player, entry, tournamentIds, playerSourceFiles = {}) {

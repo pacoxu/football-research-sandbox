@@ -13,9 +13,9 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 946,
+    "record_count": 950,
     "stale_records": 35,
-    "needs_review_records": 343
+    "needs_review_records": 347
   },
   "freshness": {
     "as_of": "2026-08-11",
@@ -224,12 +224,12 @@
         "zh": "球探观察池",
         "en": "Scouting watchlist"
       },
-      "record_count": 30,
+      "record_count": 34,
       "quality": {
         "complete": 0,
         "mixed": 0,
         "partial": 0,
-        "needs-review": 30,
+        "needs-review": 34,
         "stale": 0,
         "excluded": 0
       },
@@ -240,14 +240,19 @@
         "4": 0,
         "5": 0,
         "6": 0,
-        "unclassified": 30
+        "unclassified": 34
       },
       "checked_at": {
         "oldest": "2026-07-19",
-        "newest": "2026-07-19"
+        "newest": "2026-08-19"
       },
       "overdue_records": 0,
-      "missing_fields": []
+      "missing_fields": [
+        {
+          "field": "named_afc_player",
+          "count": 4
+        }
+      ]
     },
     {
       "id": "youth_systems",
