@@ -191,7 +191,7 @@ function dossierQualityEntries(dataset) {
 
 function scoutingQualityEntries(dataset) {
   const watchlist = dataset.scoutingWatchlist;
-  return asArray(watchlist?.records).map((record) => {
+  const reportEntries = asArray(watchlist?.records).map((record) => {
     const sources = normalizeSources([{
       label: watchlist.source?.name ?? "Football Talent Scout",
       url: record.source_url,
@@ -205,6 +205,30 @@ function scoutingQualityEntries(dataset) {
       checkedAt: record.source_checked_at
     });
   });
+  const auditEntries = asArray(watchlist?.source_audits).flatMap((audit) =>
+    asArray(audit.asia_linked_leads).map((lead) => {
+      const sources = normalizeSources([
+        {
+          label: audit.source?.name ?? "Eyeball",
+          url: lead.source_url,
+          checked_at: lead.source_checked_at
+        },
+        {
+          label: lead.official_verification?.label ?? "Official league verification",
+          url: lead.official_verification?.url,
+          checked_at: lead.official_verification?.checked_at
+        }
+      ]);
+      return qualityEntry({
+        id: lead.id,
+        verificationStatus: "needs-review",
+        missingFields: ["named_afc_player"],
+        sources,
+        checkedAt: lead.source_checked_at
+      });
+    })
+  );
+  return [...reportEntries, ...auditEntries];
 }
 
 function overseasQualityEntries(dataset) {

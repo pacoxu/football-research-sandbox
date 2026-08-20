@@ -340,7 +340,7 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 
 ## 球探观察池
 
-`data/raw/scouting-watchlist.json` 保存不能单独作为官方事实的公开球探报告线索。首个来源为 Football Talent Scout（S2）。
+`data/raw/scouting-watchlist.json` 使用 `schema_version: 2`，保存不能单独作为官方事实的公开球探报告线索和来源访问审计。首个球员级来源为 Football Talent Scout（S2）；Eyeball（S3）因 Portal 需要登录，先以 `source_audits` 保存公开层核查结果。
 
 | 字段 | 含义 |
 | --- | --- |
@@ -352,8 +352,11 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 | `summary` | 报告的中英文短摘要，不复制全文。 |
 | `source_url`、`source_checked_at` | 原始公开页面或索引及最近链接核查日。 |
 | `related_collections` | 同一来源的国家/专题合集入口。 |
+| `source_audits[]` | 付费或登录型球探来源的公开访问状态、目标口径、风险说明和可复核结果。 |
+| `source_audits[].scope.named_afc_player_count` | 公开材料中实际具名、且满足 AFC 国籍口径的球员数量；不得用平台覆盖规模推算。 |
+| `source_audits[].asia_linked_leads` | 在亚洲联赛/俱乐部出现、但不满足 AFC 国籍口径的具名线索；必须保留 `afc_national_player=false` 和官方交叉核验。 |
 
-观察池不得出现 `registration_club`、`national_team`、`market_value` 或 `verification` 等核心事实覆盖字段。
+观察池不得出现 `registration_club`、`national_team`、`market_value` 或 `verification` 等核心事实覆盖字段。Eyeball 首轮公开审计只确认 4 名非 AFC 国籍球员的沙特联赛关联，因此不增加亚洲球员主表人数。
 ## UEFA Youth League historical season index
 
 `data/raw/uefa-youth-league.json` 中的 `historical_season_index` 保存青年欧冠赛季级历史档案。它与用于页面深度展示的 `seasons` 分开：历史索引现已包含 2013/14—2022/23 的完整球队边界，逐场比赛仍可分阶段补齐。

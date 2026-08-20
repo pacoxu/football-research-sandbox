@@ -314,6 +314,29 @@ export async function syncSqlite() {
       url TEXT NOT NULL
     );
 
+    CREATE TABLE scouting_source_audits (
+      id TEXT PRIMARY KEY,
+      source_json TEXT NOT NULL,
+      scope_json TEXT NOT NULL
+    );
+
+    CREATE TABLE scouting_asia_linked_leads (
+      id TEXT PRIMARY KEY,
+      audit_id TEXT NOT NULL,
+      name TEXT NOT NULL,
+      birth_year INTEGER NOT NULL,
+      nationality TEXT NOT NULL,
+      destination_club_at_source TEXT NOT NULL,
+      destination_association TEXT NOT NULL,
+      relationship TEXT NOT NULL,
+      afc_national_player INTEGER NOT NULL,
+      source_url TEXT NOT NULL,
+      source_checked_at TEXT NOT NULL,
+      official_verification_json TEXT NOT NULL,
+      note_json TEXT NOT NULL,
+      FOREIGN KEY (audit_id) REFERENCES scouting_source_audits(id) ON DELETE CASCADE
+    );
+
     CREATE TABLE tournament_archive (
       id TEXT PRIMARY KEY,
       confederation TEXT NOT NULL,
@@ -522,6 +545,17 @@ export async function syncSqlite() {
   const insertScoutingWatchlistCollection = db.prepare(`
     INSERT INTO scouting_watchlist_collections (id, name_json, country, url)
     VALUES (?, ?, ?, ?)
+  `);
+  const insertScoutingSourceAudit = db.prepare(`
+    INSERT INTO scouting_source_audits (id, source_json, scope_json)
+    VALUES (?, ?, ?)
+  `);
+  const insertScoutingAsiaLinkedLead = db.prepare(`
+    INSERT INTO scouting_asia_linked_leads (
+      id, audit_id, name, birth_year, nationality, destination_club_at_source,
+      destination_association, relationship, afc_national_player, source_url,
+      source_checked_at, official_verification_json, note_json
+    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   const insertArchiveTournament = db.prepare(`
     INSERT INTO tournament_archive (
@@ -858,6 +892,26 @@ export async function syncSqlite() {
       collection.country,
       collection.url
     );
+  }
+  for (const audit of dataset.scoutingWatchlist.source_audits ?? []) {
+    insertScoutingSourceAudit.run(audit.id, toJson(audit.source), toJson(audit.scope));
+    for (const lead of audit.asia_linked_leads ?? []) {
+      insertScoutingAsiaLinkedLead.run(
+        lead.id,
+        audit.id,
+        lead.name,
+        lead.birth_year,
+        lead.nationality,
+        lead.destination_club_at_source,
+        lead.destination_association,
+        lead.relationship,
+        lead.afc_national_player ? 1 : 0,
+        lead.source_url,
+        lead.source_checked_at,
+        toJson(lead.official_verification),
+        toJson(lead.note)
+      );
+    }
   }
 
   for (const tournament of dataset.tournamentArchive) {

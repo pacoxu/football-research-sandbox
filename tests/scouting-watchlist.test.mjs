@@ -16,6 +16,22 @@ test("FTS AFC scouting watchlist has the documented coverage and source links", 
   }
 });
 
+test("Eyeball public audit keeps Saudi league links separate from AFC-national players", async () => {
+  const dataset = await loadDataset();
+  const audits = dataset.scoutingWatchlist.source_audits;
+
+  assert.equal(dataset.scoutingWatchlist.schema_version, 2);
+  assert.equal(audits.length, 1);
+  assert.equal(audits[0].source.name, "Eyeball");
+  assert.equal(audits[0].source.source_tier, "S3");
+  assert.equal(audits[0].source.access_status, "login-required");
+  assert.equal(audits[0].scope.named_afc_player_count, 0);
+  assert.equal(audits[0].asia_linked_leads.length, 4);
+  assert.ok(audits[0].asia_linked_leads.every((lead) => lead.afc_national_player === false));
+  assert.ok(audits[0].asia_linked_leads.every((lead) => lead.destination_association === "Saudi Arabia"));
+  assert.ok(audits[0].asia_linked_leads.every((lead) => /^https:\/\/www\.spl\.com\.sa\//.test(lead.official_verification.url)));
+});
+
 test("FTS ratings remain report snapshots and linked players resolve", async () => {
   const dataset = await loadDataset();
   const records = dataset.scoutingWatchlist.records;
