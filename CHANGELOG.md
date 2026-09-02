@@ -4,6 +4,18 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-09-02
+
+### Updated
+
+- Updated Liu Kaiyuan's record with Villarreal's official renewal announcement, his 2025/26 Cadete A statistics, and the 2026/27 Juvenil C public squad observation.
+- Added a sourced research note covering the available Villarreal U19 A, B and C squad snapshots, age distribution and position structure.
+
+### Data Scope Notes
+
+- The Juvenil C team page lists Kaiyuan Liu, but his player page still says that he has no 2026/27 ficha. The new entry is therefore stored as a tracked squad observation, not a completed competition registration.
+- Liu remains age-eligible but unconfirmed for the 2026/27 UEFA Youth League; neither season registration nor match selection is inferred from the domestic squad page.
+
 ## 2026-08-11
 
 ### Added
