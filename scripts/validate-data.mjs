@@ -3498,7 +3498,21 @@ export async function validateData(referenceDate = new Date().toISOString().slic
         }
       }
       if (tournament.id === "shanghai-future-star-cup-men-u17-2026") {
-        assert(rosterEntries.length === 23, "Shanghai Future Star Shanghai U17 tournament roster must remain 23 players");
+        const shanghaiRosterEntries = rosterView.groups
+          .filter((group) => group.team === "Shanghai U17")
+          .flatMap((group) => group.entries ?? []);
+        const arsenalRosterGroups = rosterView.groups.filter((group) => group.team === "Arsenal U17");
+        const arsenalRosterEntries = arsenalRosterGroups.flatMap((group) => group.entries ?? []);
+        assert(shanghaiRosterEntries.length === 23, "Shanghai Future Star Shanghai U17 tournament roster must remain 23 players");
+        assert(arsenalRosterEntries.length === 22, "Shanghai Future Star Arsenal U17 tournament roster must remain 22 players");
+        assert(
+          new Set(arsenalRosterEntries.map((entry) => entry.squad_number)).size === 22,
+          "Shanghai Future Star Arsenal U17 roster must use unique tournament numbers"
+        );
+        assert(
+          JSON.stringify(arsenalRosterGroups.map((group) => group.entries.length)) === JSON.stringify([2, 8, 6, 6]),
+          "Shanghai Future Star Arsenal U17 position split must remain 2-8-6-6"
+        );
         const campEntries = tournament.china_camp_roster_view?.groups?.flatMap(
           (group) => group.entries ?? []
         ) ?? [];
