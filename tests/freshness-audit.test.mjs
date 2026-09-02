@@ -43,7 +43,7 @@ test("is non-blocking by default and strict only when findings exist", () => {
 
 test("keeps Shanghai tournament snapshots clear in the current freshness audit", async () => {
   const dataset = await loadDataset();
-  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-08-11");
+  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-09-02");
   const shanghaiSnapshotIds = new Set(
     dataset.players
       .filter(

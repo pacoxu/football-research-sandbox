@@ -1,12 +1,12 @@
 {
   "meta": {
     "provider": "Transfermarkt",
-    "checked_at": "2026-08-11",
+    "checked_at": "2026-09-02",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
-      "total": 564,
+      "total": 568,
       "statuses": {
-        "available": 114,
+        "available": 118,
         "fetch-error": 22,
         "ambiguous-profile": 3,
         "no-market-value": 45,
@@ -22,8 +22,8 @@
           "no-market-value": 1
         },
         "China PR": {
-          "total": 101,
-          "available": 42,
+          "total": 105,
+          "available": 46,
           "profile-not-found": 34,
           "no-market-value": 22,
           "team-page-only": 2,
@@ -22220,27 +22220,510 @@
       "alternatives": [],
       "last_success_at": null
     },
-    "cn-wang-qirong-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-liu-hanwen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-li-qiufu-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-yue-bowen-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-zhang-yu-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-peng-ziming-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-liu-yichen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-li-wenbo-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-liang-jinhong-2008": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-ou-haosen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-muhamaiti-ablimiti-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-he-haoyuan-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-li-mingjie-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-xu-qizhen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-jiang-tingyuan-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-li-weiqi-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-ye-weixiang-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-qiu-penghui-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-liu-zejia-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-huang-zijie-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
-    "cn-li-haochen-2009": { "checked_at": "2026-08-11", "status": "profile-not-found", "history": [], "history_points": 0, "current": null, "peak": null, "last_change_date": null, "source": { "provider": "Transfermarkt", "profile_url": "", "market_value_url": "", "api_url": "" }, "lookup": { "checked_at": "2026-08-11", "status": "not-found", "method": "not-searched-by-profile", "matched_fields": [], "candidate_urls": [] }, "alternatives": [], "last_success_at": null },
+    "cn-wang-qirong-2008": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-liu-hanwen-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-li-qiufu-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-yue-bowen-2008": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-zhang-yu-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-peng-ziming-2008": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-liu-yichen-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-li-wenbo-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-liang-jinhong-2008": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-ou-haosen-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-muhamaiti-ablimiti-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-he-haoyuan-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-li-mingjie-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-xu-qizhen-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-jiang-tingyuan-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-li-weiqi-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-ye-weixiang-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-qiu-penghui-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-liu-zejia-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-huang-zijie-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-li-haochen-2009": {
+      "checked_at": "2026-08-11",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-11",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
     "th-silva-mexes-tyler-2010": {
       "checked_at": "2026-08-01",
       "status": "profile-not-found",
@@ -22264,6 +22747,987 @@
       },
       "alternatives": [],
       "last_success_at": null
+    },
+    "cn-yu-jinyong-2004": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2021-04-26",
+          "club_id": "3182",
+          "season_id": 2020,
+          "age": 16
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2021-08-23",
+          "club_id": "3182",
+          "season_id": 2020,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2022-01-17",
+          "club_id": "3182",
+          "season_id": 2021,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-06-26",
+          "club_id": "3182",
+          "season_id": 2022,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-03-05",
+          "club_id": "3182",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-06-04",
+          "club_id": "3182",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2024-12-11",
+          "club_id": "3182",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-06-19",
+          "club_id": "3182",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-12-17",
+          "club_id": "3182",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2026-06-08",
+          "club_id": "3182",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 10,
+      "current": {
+        "eur": 125000,
+        "currency": "EUR",
+        "display": "€125k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2025-12-17",
+        "club_id": "3182",
+        "season_id": 2024,
+        "age": 21
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jinyong-yu/profil/spieler/884833",
+        "market_value_url": "https://www.transfermarkt.com/jinyong-yu/marktwertverlauf/spieler/884833",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/884833/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/jinyong-yu/profil/spieler/884833"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
+    },
+    "cn-zhu-chenjie-2000": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2018-12-09",
+          "club_id": "3183",
+          "season_id": 2017,
+          "age": 18
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2019-09-05",
+          "club_id": "3183",
+          "season_id": 2018,
+          "age": 19
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-12-27",
+          "club_id": "3183",
+          "season_id": 2018,
+          "age": 19
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2020-04-08",
+          "club_id": "3183",
+          "season_id": 2019,
+          "age": 19
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2020-12-26",
+          "club_id": "3183",
+          "season_id": 2019,
+          "age": 20
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2021-08-23",
+          "club_id": "3183",
+          "season_id": 2020,
+          "age": 21
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2022-01-17",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 21
+        },
+        {
+          "eur": 450000,
+          "currency": "EUR",
+          "display": "€450k",
+          "date": "2022-05-28",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 21
+        },
+        {
+          "eur": 425000,
+          "currency": "EUR",
+          "display": "€425k",
+          "date": "2023-01-13",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 22
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2023-06-26",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 22
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2023-12-14",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 23
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2024-06-04",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 23
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2024-12-11",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 24
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2025-06-19",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 24
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2025-12-17",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 25
+        },
+        {
+          "eur": 1000000,
+          "currency": "EUR",
+          "display": "€1.00m",
+          "date": "2026-06-08",
+          "club_id": "3183",
+          "season_id": 2025,
+          "age": 25
+        }
+      ],
+      "history_points": 16,
+      "current": {
+        "eur": 1000000,
+        "currency": "EUR",
+        "display": "€1.00m",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 1000000,
+        "currency": "EUR",
+        "display": "€1.00m",
+        "date": "2026-06-08",
+        "club_id": "3183",
+        "season_id": 2025,
+        "age": 25
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/chenjie-zhu/profil/spieler/509001",
+        "market_value_url": "https://www.transfermarkt.com/chenjie-zhu/marktwertverlauf/spieler/509001",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/509001/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/chenjie-zhu/profil/spieler/509001"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
+    },
+    "cn-wu-xi-1989": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2012-03-14",
+          "club_id": "3183",
+          "season_id": 2011,
+          "age": 23
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2013-05-06",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2013-05-14",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2013-05-18",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2013-07-22",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 275000,
+          "currency": "EUR",
+          "display": "€275k",
+          "date": "2013-07-30",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2014-07-07",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 525000,
+          "currency": "EUR",
+          "display": "€525k",
+          "date": "2014-09-09",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2014-11-04",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2015-01-31",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2015-06-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 26
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2015-11-01",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 26
+        },
+        {
+          "eur": 750000,
+          "currency": "EUR",
+          "display": "€750k",
+          "date": "2016-05-24",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 27
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2016-06-20",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 27
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2016-11-20",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 27
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2017-03-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 28
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2017-06-19",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 28
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2017-12-01",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 28
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2018-06-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 29
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2018-12-09",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 29
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-03-21",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 30
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-09-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 30
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2019-12-27",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 30
+        },
+        {
+          "eur": 675000,
+          "currency": "EUR",
+          "display": "€675k",
+          "date": "2020-04-08",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 31
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2020-12-26",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 31
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2021-08-23",
+          "club_id": "3183",
+          "season_id": 2020,
+          "age": 32
+        },
+        {
+          "eur": 550000,
+          "currency": "EUR",
+          "display": "€550k",
+          "date": "2022-01-17",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 32
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2022-05-28",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 33
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2023-01-13",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 33
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2023-06-26",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 34
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2023-12-14",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 34
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-06-04",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 35
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-12-11",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 35
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-06-19",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 36
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-12-17",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 36
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2026-06-08",
+          "club_id": "3183",
+          "season_id": 2025,
+          "age": 37
+        }
+      ],
+      "history_points": 36,
+      "current": {
+        "eur": 25000,
+        "currency": "EUR",
+        "display": "€25k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 850000,
+        "currency": "EUR",
+        "display": "€850k",
+        "date": "2015-01-31",
+        "club_id": "22219",
+        "season_id": 0,
+        "age": 25
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/xi-wu/profil/spieler/148891",
+        "market_value_url": "https://www.transfermarkt.com/xi-wu/marktwertverlauf/spieler/148891",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/148891/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/xi-wu/profil/spieler/148891"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
+    },
+    "cn-zhang-yuning-1997": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2015-03-06",
+          "club_id": "17276",
+          "season_id": 2014,
+          "age": 18
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2015-06-05",
+          "club_id": "17276",
+          "season_id": 2014,
+          "age": 18
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2015-11-01",
+          "club_id": "7465",
+          "season_id": 0,
+          "age": 18
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2016-07-15",
+          "club_id": "499",
+          "season_id": 2016,
+          "age": 19
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2017-01-18",
+          "club_id": "499",
+          "season_id": 2016,
+          "age": 20
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2017-06-07",
+          "club_id": "499",
+          "season_id": 2016,
+          "age": 20
+        },
+        {
+          "eur": 2000000,
+          "currency": "EUR",
+          "display": "€2.00m",
+          "date": "2017-10-18",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 20
+        },
+        {
+          "eur": 2000000,
+          "currency": "EUR",
+          "display": "€2.00m",
+          "date": "2017-12-28",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 20
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2018-04-04",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 21
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2018-06-05",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 21
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2018-12-28",
+          "club_id": "1268",
+          "season_id": 2018,
+          "age": 21
+        },
+        {
+          "eur": 1000000,
+          "currency": "EUR",
+          "display": "€1.00m",
+          "date": "2019-03-21",
+          "club_id": "3176",
+          "season_id": 2018,
+          "age": 22
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-09-05",
+          "club_id": "3176",
+          "season_id": 2018,
+          "age": 22
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-12-27",
+          "club_id": "3176",
+          "season_id": 2018,
+          "age": 22
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2020-04-08",
+          "club_id": "3176",
+          "season_id": 2019,
+          "age": 23
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2020-12-26",
+          "club_id": "3176",
+          "season_id": 2019,
+          "age": 23
+        },
+        {
+          "eur": 875000,
+          "currency": "EUR",
+          "display": "€875k",
+          "date": "2021-08-23",
+          "club_id": "3176",
+          "season_id": 2020,
+          "age": 24
+        },
+        {
+          "eur": 950000,
+          "currency": "EUR",
+          "display": "€950k",
+          "date": "2022-01-17",
+          "club_id": "3176",
+          "season_id": 2021,
+          "age": 25
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2022-05-28",
+          "club_id": "3176",
+          "season_id": 2021,
+          "age": 25
+        },
+        {
+          "eur": 1000000,
+          "currency": "EUR",
+          "display": "€1.00m",
+          "date": "2023-01-13",
+          "club_id": "3176",
+          "season_id": 2022,
+          "age": 26
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2023-06-26",
+          "club_id": "3176",
+          "season_id": 2022,
+          "age": 26
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2023-12-14",
+          "club_id": "3176",
+          "season_id": 2022,
+          "age": 26
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2024-06-04",
+          "club_id": "3176",
+          "season_id": 2023,
+          "age": 27
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2024-12-11",
+          "club_id": "3176",
+          "season_id": 2023,
+          "age": 27
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2025-06-19",
+          "club_id": "3176",
+          "season_id": 2024,
+          "age": 28
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2025-12-17",
+          "club_id": "3176",
+          "season_id": 2024,
+          "age": 28
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2026-06-08",
+          "club_id": "3176",
+          "season_id": 2025,
+          "age": 29
+        }
+      ],
+      "history_points": 27,
+      "current": {
+        "eur": 700000,
+        "currency": "EUR",
+        "display": "€700k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 2000000,
+        "currency": "EUR",
+        "display": "€2.00m",
+        "date": "2017-10-18",
+        "club_id": "86",
+        "season_id": 2017,
+        "age": 20
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/yuning-zhang/profil/spieler/264429",
+        "market_value_url": "https://www.transfermarkt.com/yuning-zhang/marktwertverlauf/spieler/264429",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/264429/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/yuning-zhang/profil/spieler/264429"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
     }
   }
 }

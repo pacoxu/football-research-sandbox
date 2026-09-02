@@ -1,18 +1,18 @@
 # Transfermarkt 身价覆盖报告
 
-更新时间：2026-07-12
+更新时间：2026-09-02
 
-球员总数：252
+球员总数：568
 
 ## 状态汇总
 
 | 状态 | 人数 |
 | --- | ---: |
 | ambiguous-profile | 3 |
-| available | 113 |
+| available | 118 |
 | fetch-error | 22 |
 | no-market-value | 45 |
-| profile-not-found | 67 |
+| profile-not-found | 378 |
 | team-page-only | 2 |
 
 ## 按国家/地区
@@ -20,10 +20,14 @@
 | 国家/地区 | 总数 | 有历史 | 无身价 | 未找到个人页 | 待复核 | 抓取失败/过期 |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
 | Australia | 46 | 22 | 1 | 0 | 1 | 22 |
-| China PR | 80 | 41 | 22 | 14 | 3 | 0 |
+| China PR | 105 | 46 | 22 | 34 | 3 | 0 |
+| IR Iran | 67 | 0 | 0 | 67 | 0 | 0 |
 | Japan | 52 | 23 | 7 | 22 | 0 | 0 |
 | Korea Republic | 50 | 24 | 1 | 24 | 1 | 0 |
-| Uzbekistan | 24 | 3 | 14 | 7 | 0 | 0 |
+| Qatar | 38 | 0 | 0 | 38 | 0 | 0 |
+| Saudi Arabia | 45 | 0 | 0 | 45 | 0 | 0 |
+| Thailand | 84 | 0 | 0 | 84 | 0 | 0 |
+| Uzbekistan | 81 | 3 | 14 | 64 | 0 | 0 |
 
 ## 待人工复核
 

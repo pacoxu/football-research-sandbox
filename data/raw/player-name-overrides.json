@@ -4781,6 +4781,106 @@
       "notes": "The public event profile supplies the Chinese display name, but no independent association, league, club, school or government source was captured for the native-name audit; native falls back to the Latin name."
     }
   },
+  "cn-yu-jinyong-2004": {
+    "zh": "于金永",
+    "native": "于金永",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 于金永 for Yu Jinyong."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    }
+  },
+  "cn-zhu-chenjie-2000": {
+    "zh": "朱辰杰",
+    "native": "朱辰杰",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 朱辰杰 for Zhu Chenjie."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    }
+  },
+  "cn-wu-xi-1989": {
+    "zh": "吴曦",
+    "native": "吴曦",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 吴曦 for Wu Xi."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    }
+  },
+  "cn-zhang-yuning-1997": {
+    "zh": "张玉宁",
+    "native": "张玉宁",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 张玉宁 for Zhang Yuning."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    }
+  },
   "uz-zafarmurod-abdirakhmatov-2003": {
     "native_verification": {
       "status": "unresolved",

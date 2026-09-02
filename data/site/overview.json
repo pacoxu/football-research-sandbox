@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-08-11",
+  "generated_at": "2026-09-02",
   "stats": {
-    "player_count": 564,
+    "player_count": 568,
     "country_count": 9,
     "foreign_registration_count": 114,
     "china_overseas_status_counts": {
@@ -13,6 +13,107 @@
     }
   },
   "tournaments": [
+    {
+      "id": "asian-games-men-2026",
+      "name": "20th Asian Games Aichi-Nagoya 2026 - Men's Football",
+      "short_name": "Asian Games Men 2026",
+      "focus_level": "primary",
+      "status": "upcoming",
+      "last_checked": "2026-09-02",
+      "date_range": {
+        "start": "2026-09-15",
+        "end": "2026-10-03"
+      },
+      "date_precision": "exact",
+      "focus_teams": [
+        "China PR",
+        "Japan",
+        "Korea Republic",
+        "IR Iran",
+        "United Arab Emirates",
+        "DPR Korea"
+      ],
+      "headline": "中国男足进入爱知-名古屋亚运会23人正式参赛名单，吴曦、张玉宁、朱辰杰为3名超龄球员；中国足协同期24人集训通知另补入史松宸，两份名单按不同边界保存。",
+      "eligibility": {
+        "format": "u23-plus-three-overage",
+        "note": "男子足球为U23赛事，每队最多可使用3名超龄球员。"
+      },
+      "china_group_stage": {
+        "group": "Group B",
+        "teams": [
+          "China PR",
+          "United Arab Emirates",
+          "IR Iran",
+          "DPR Korea"
+        ],
+        "fixtures": [
+          {
+            "date": "2026-09-16",
+            "opponent": "DPR Korea",
+            "status": "scheduled"
+          },
+          {
+            "date": "2026-09-20",
+            "opponent": "IR Iran",
+            "status": "scheduled"
+          },
+          {
+            "date": "2026-09-23",
+            "opponent": "United Arab Emirates",
+            "status": "scheduled"
+          }
+        ]
+      },
+      "roster_boundary": {
+        "official_final_roster_count": 23,
+        "cfa_camp_roster_count": 24,
+        "official_final_roster_published_on": "2026-09-01",
+        "cfa_camp_notice_published_on": "2026-09-01",
+        "overage_player_ids": [
+          "cn-wu-xi-1989",
+          "cn-zhang-yuning-1997",
+          "cn-zhu-chenjie-2000"
+        ],
+        "camp_only_player_ids": [
+          "cn-shi-songchen-2005"
+        ],
+        "note": "亚运会官方23人参赛名单不含史松宸；中国足协稍后发布的集训并参赛通知列24人，增加史松宸。当前不把该补招自动视为正式报名变更。"
+      },
+      "update_cadence": "赛前复核最终报名变更；小组赛每场赛后补充阵容、事件与结果。",
+      "notes": [
+        "男足比赛窗口为2026-09-15至2026-10-03；综合性亚运会会期为2026-09-19至2026-10-04。",
+        "中国队位于B组，对手为阿联酋、伊朗和朝鲜；小组赛日期依次为9月16日、9月20日和9月23日。",
+        "正式23人位置分组采用新华社对亚运会官方名单的转录；足协24人通知按俱乐部列人，不提供正式报名变更结论。",
+        "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。"
+      ],
+      "sources": [
+        {
+          "label": "Aichi-Nagoya 2026 official team draw results",
+          "publisher": "Aichi-Nagoya Asian Games Organizing Committee",
+          "url": "https://old.aichi-nagoya2026.org/en/news/detail/1413/"
+        },
+        {
+          "label": "Xinhua: China men's Asian Games 23-player roster and group fixtures",
+          "publisher": "Xinhua",
+          "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+        },
+        {
+          "label": "CFA 24-player camp notice for Aichi-Nagoya 2026",
+          "publisher": "Chinese Football Association",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+        },
+        {
+          "label": "OCA: Asian Games men's football U23 and overage-player rule",
+          "publisher": "Olympic Council of Asia",
+          "url": "https://oca.asia/news/7651-korea-aims-for-fourth-consecutive-asian-games-gold-in-mens-football.html"
+        },
+        {
+          "label": "JFA competition window for Aichi-Nagoya 2026 men's football",
+          "publisher": "Japan Football Association",
+          "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+        }
+      ]
+    },
     {
       "id": "afc-u20-2027",
       "name": "AFC U20 Asian Cup China PR 2027",
@@ -21879,6 +21980,468 @@
     ]
   },
   "tournament_archive": [
+    {
+      "id": "asian-games-men-2026",
+      "confederation": "Olympic Council of Asia",
+      "competition_name": "20th Asian Games Aichi-Nagoya 2026 - Men's Football",
+      "level": "u23-plus-overage",
+      "edition_label": "2026",
+      "host": "Japan",
+      "date_range": {
+        "start": "2026-09-15",
+        "end": "2026-10-03"
+      },
+      "date_precision": "exact",
+      "status": "upcoming",
+      "champion": null,
+      "runner_up": null,
+      "participants": {
+        "status": "complete",
+        "teams": [
+          {
+            "team": "Japan",
+            "entry_status": "host"
+          },
+          {
+            "team": "Thailand",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Kyrgyz Republic",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Hong Kong, China",
+            "entry_status": "participant"
+          },
+          {
+            "team": "China PR",
+            "entry_status": "participant"
+          },
+          {
+            "team": "United Arab Emirates",
+            "entry_status": "participant"
+          },
+          {
+            "team": "IR Iran",
+            "entry_status": "participant"
+          },
+          {
+            "team": "DPR Korea",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Vietnam",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Uzbekistan",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Philippines",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Kuwait",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Korea Republic",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Saudi Arabia",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Qatar",
+            "entry_status": "participant"
+          }
+        ]
+      },
+      "final_draw": {
+        "status": "complete",
+        "groups": [
+          {
+            "name": "Group A",
+            "teams": [
+              "Japan",
+              "Thailand",
+              "Kyrgyz Republic",
+              "Hong Kong, China"
+            ]
+          },
+          {
+            "name": "Group B",
+            "teams": [
+              "China PR",
+              "United Arab Emirates",
+              "IR Iran",
+              "DPR Korea"
+            ]
+          },
+          {
+            "name": "Group C",
+            "teams": [
+              "Vietnam",
+              "Uzbekistan",
+              "Philippines",
+              "Kuwait"
+            ]
+          },
+          {
+            "name": "Group D",
+            "teams": [
+              "Korea Republic",
+              "Saudi Arabia",
+              "Qatar"
+            ]
+          }
+        ]
+      },
+      "china_status": "preparation",
+      "china_summary": "中国队位于B组，正式参赛名单23人；足协9月1日集训通知另补入史松宸，形成24人赛前集训池。吴曦、张玉宁、朱辰杰占用3个超龄名额。",
+      "china_detail_scope": "official-roster-and-schedule-snapshot",
+      "china_matches": [],
+      "china_key_players": [],
+      "china_squad": [
+        {
+          "player_id": "cn-li-hao-2004",
+          "player": "Li Hao",
+          "club": "Qingdao West Coast FC"
+        },
+        {
+          "player_id": "cn-yu-jinyong-2004",
+          "player": "Yu Jinyong",
+          "club": "Shandong Taishan FC"
+        },
+        {
+          "player_id": "cn-yao-haoyang-2006",
+          "player": "Yao Haoyang",
+          "club": "Chongqing Tonglianglong FC"
+        },
+        {
+          "player_id": "cn-he-yiran-2005",
+          "player": "He Yiran",
+          "club": "Chengdu Rongcheng FC"
+        },
+        {
+          "player_id": "cn-hu-hetao-2003",
+          "player": "Hu Hetao",
+          "club": "Chengdu Rongcheng FC"
+        },
+        {
+          "player_id": "cn-liu-haofan-2003",
+          "player": "Liu Haofan",
+          "club": "Zhejiang FC"
+        },
+        {
+          "player_id": "cn-peng-xiao-2005",
+          "player": "Peng Xiao",
+          "club": "Shandong Taishan FC"
+        },
+        {
+          "player_id": "cn-wumitijiang-yusupu-2004",
+          "player": "Wumitijiang Yusupu",
+          "club": "Shanghai Port FC"
+        },
+        {
+          "player_id": "cn-yang-alex-2005",
+          "player": "Alex Xi Yang",
+          "club": "Shanghai Port FC"
+        },
+        {
+          "player_id": "cn-zhu-chenjie-2000",
+          "player": "Zhu Chenjie",
+          "club": "Shanghai Shenhua FC",
+          "note": "Overage player"
+        },
+        {
+          "player_id": "cn-mao-weijie-2005",
+          "player": "Mao Weijie",
+          "club": "Dalian Yingbo FC"
+        },
+        {
+          "player_id": "cn-chen-zeshi-2005",
+          "player": "Chen Zeshi",
+          "club": "Shandong Taishan FC"
+        },
+        {
+          "player_id": "cn-li-zhenquan-2003",
+          "player": "Li Zhenquan",
+          "club": "Chongqing Tonglianglong FC"
+        },
+        {
+          "player_id": "cn-xu-bin-2004",
+          "player": "Xu Bin",
+          "club": "Wolverhampton Wanderers"
+        },
+        {
+          "player_id": "cn-yang-haoyu-2006",
+          "player": "Yang Haoyu",
+          "club": "Shanghai Shenhua FC"
+        },
+        {
+          "player_id": "cn-yimulan-maimaiti-2005",
+          "player": "Yimulan Maimaiti",
+          "club": "Shandong Taishan FC"
+        },
+        {
+          "player_id": "cn-wu-xi-1989",
+          "player": "Wu Xi",
+          "club": "Shanghai Shenhua FC",
+          "note": "Overage player"
+        },
+        {
+          "player_id": "cn-kuai-jiwen-2006",
+          "player": "Kuai Jiwen",
+          "club": "Shanghai Port FC"
+        },
+        {
+          "player_id": "cn-mutalifu-yimingkari-2004",
+          "player": "Mutalifu Yimingkari",
+          "club": "Chengdu Rongcheng FC"
+        },
+        {
+          "player_id": "cn-baihelamu-abuduwaili-2003",
+          "player": "Baihelamu Abuduwaili",
+          "club": "Chengdu Rongcheng FC"
+        },
+        {
+          "player_id": "cn-wang-yudong-2006",
+          "player": "Wang Yudong",
+          "club": "Zhejiang FC"
+        },
+        {
+          "player_id": "cn-xiang-yuwang-2003",
+          "player": "Xiang Yuwang",
+          "club": "Chongqing Tonglianglong FC"
+        },
+        {
+          "player_id": "cn-zhang-yuning-1997",
+          "player": "Zhang Yuning",
+          "club": "Beijing Guoan FC",
+          "note": "Overage player"
+        }
+      ],
+      "latest_public_roster_view": {
+        "label": {
+          "zh": "亚运正式23人 + 赛前集训补招",
+          "en": "Official 23-player roster plus camp addition"
+        },
+        "note": {
+          "zh": "位置分组采用新华社转录的亚运会官方23人名单；史松宸来自中国足协同日发布的24人集训通知，单列为后续集训补招，不视为已完成正式报名替换。",
+          "en": "Positions follow Xinhua's transcription of the official 23-player Asian Games roster. Shi Songchen appears only in the CFA's same-day 24-player camp notice and is retained separately as a later camp call-up, not as a confirmed registration replacement."
+        },
+        "head_coach": {
+          "name": "Antonio Puche",
+          "local_name": "安东尼奥·普切"
+        },
+        "groups": [
+          {
+            "label": {
+              "zh": "正式名单 · 守门员 GK（3）",
+              "en": "Final roster - Goalkeepers (3)"
+            },
+            "entries": [
+              {
+                "player_id": "cn-li-hao-2004",
+                "player": "Li Hao",
+                "affiliation": "Qingdao West Coast FC"
+              },
+              {
+                "player_id": "cn-yu-jinyong-2004",
+                "player": "Yu Jinyong",
+                "affiliation": "Shandong Taishan FC"
+              },
+              {
+                "player_id": "cn-yao-haoyang-2006",
+                "player": "Yao Haoyang",
+                "affiliation": "Chongqing Tonglianglong FC"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "正式名单 · 后卫 DF（8）",
+              "en": "Final roster - Defenders (8)"
+            },
+            "entries": [
+              {
+                "player_id": "cn-he-yiran-2005",
+                "player": "He Yiran",
+                "affiliation": "Chengdu Rongcheng FC"
+              },
+              {
+                "player_id": "cn-hu-hetao-2003",
+                "player": "Hu Hetao",
+                "affiliation": "Chengdu Rongcheng FC"
+              },
+              {
+                "player_id": "cn-liu-haofan-2003",
+                "player": "Liu Haofan",
+                "affiliation": "Zhejiang FC"
+              },
+              {
+                "player_id": "cn-peng-xiao-2005",
+                "player": "Peng Xiao",
+                "affiliation": "Shandong Taishan FC"
+              },
+              {
+                "player_id": "cn-wumitijiang-yusupu-2004",
+                "player": "Wumitijiang Yusupu",
+                "affiliation": "Shanghai Port FC"
+              },
+              {
+                "player_id": "cn-yang-alex-2005",
+                "player": "Alex Xi Yang",
+                "affiliation": "Shanghai Port FC"
+              },
+              {
+                "player_id": "cn-zhu-chenjie-2000",
+                "player": "Zhu Chenjie",
+                "affiliation": "Shanghai Shenhua FC",
+                "note": {
+                  "zh": "超龄球员",
+                  "en": "Overage player"
+                }
+              },
+              {
+                "player_id": "cn-mao-weijie-2005",
+                "player": "Mao Weijie",
+                "affiliation": "Dalian Yingbo FC"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "正式名单 · 中场 MF（8）",
+              "en": "Final roster - Midfielders (8)"
+            },
+            "entries": [
+              {
+                "player_id": "cn-chen-zeshi-2005",
+                "player": "Chen Zeshi",
+                "affiliation": "Shandong Taishan FC"
+              },
+              {
+                "player_id": "cn-li-zhenquan-2003",
+                "player": "Li Zhenquan",
+                "affiliation": "Chongqing Tonglianglong FC"
+              },
+              {
+                "player_id": "cn-xu-bin-2004",
+                "player": "Xu Bin",
+                "affiliation": "Wolverhampton Wanderers"
+              },
+              {
+                "player_id": "cn-yang-haoyu-2006",
+                "player": "Yang Haoyu",
+                "affiliation": "Shanghai Shenhua FC"
+              },
+              {
+                "player_id": "cn-yimulan-maimaiti-2005",
+                "player": "Yimulan Maimaiti",
+                "affiliation": "Shandong Taishan FC"
+              },
+              {
+                "player_id": "cn-wu-xi-1989",
+                "player": "Wu Xi",
+                "affiliation": "Shanghai Shenhua FC",
+                "note": {
+                  "zh": "超龄球员",
+                  "en": "Overage player"
+                }
+              },
+              {
+                "player_id": "cn-kuai-jiwen-2006",
+                "player": "Kuai Jiwen",
+                "affiliation": "Shanghai Port FC"
+              },
+              {
+                "player_id": "cn-mutalifu-yimingkari-2004",
+                "player": "Mutalifu Yimingkari",
+                "affiliation": "Chengdu Rongcheng FC"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "正式名单 · 前锋 FW（4）",
+              "en": "Final roster - Forwards (4)"
+            },
+            "entries": [
+              {
+                "player_id": "cn-baihelamu-abuduwaili-2003",
+                "player": "Baihelamu Abuduwaili",
+                "affiliation": "Chengdu Rongcheng FC"
+              },
+              {
+                "player_id": "cn-wang-yudong-2006",
+                "player": "Wang Yudong",
+                "affiliation": "Zhejiang FC"
+              },
+              {
+                "player_id": "cn-xiang-yuwang-2003",
+                "player": "Xiang Yuwang",
+                "affiliation": "Chongqing Tonglianglong FC"
+              },
+              {
+                "player_id": "cn-zhang-yuning-1997",
+                "player": "Zhang Yuning",
+                "affiliation": "Beijing Guoan FC",
+                "note": {
+                  "zh": "超龄球员",
+                  "en": "Overage player"
+                }
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "后续集训补招（1）",
+              "en": "Later camp call-up (1)"
+            },
+            "entries": [
+              {
+                "player_id": "cn-shi-songchen-2005",
+                "player": "Shi Songchen",
+                "affiliation": "Shandong Taishan FC",
+                "note": {
+                  "zh": "未列入当前官方23人参赛名单",
+                  "en": "Not listed in the current official 23-player tournament roster"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "source_checked_at": "2026-09-02",
+      "source_conflict_note": "The Aichi-Nagoya official roster reported by Xinhua contains 23 players. The CFA camp notice published later on 2026-09-01 contains 24 and adds Shi Songchen. The archive preserves both versions and does not infer a formal registration replacement.",
+      "source_links": [
+        {
+          "label": "Aichi-Nagoya 2026 official team draw results",
+          "url": "https://old.aichi-nagoya2026.org/en/news/detail/1413/"
+        },
+        {
+          "label": "Xinhua official-roster transcription and China group fixtures",
+          "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+        },
+        {
+          "label": "CFA 24-player camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+        },
+        {
+          "label": "OCA U23 and overage-player rule",
+          "url": "https://oca.asia/news/7651-korea-aims-for-fourth-consecutive-asian-games-gold-in-mens-football.html"
+        },
+        {
+          "label": "JFA men's football competition dates",
+          "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+        }
+      ]
+    },
     {
       "id": "shanghai-future-star-cup-men-u17-2026",
       "confederation": "International Invitational",
@@ -43752,9 +44315,9 @@
   "china_men_youth_coaches": {
     "id": "china-men-youth-coaches",
     "name": "中国男足 U 系列教练组",
-    "last_checked": "2026-06-27",
-    "summary": "按截至 2026-06-27 的中国足协公开任命与集训通知，整理中国男足 U23、U19、U17、U16、U15 五条国字号教练线，并单独标出与“足球小将”项目最相关的 2009 与 2010 年龄段映射。",
-    "scope_note": "本档优先采用中国足协官方任命公告与集训通知；任命页用于定义周期职责，最近一期集训通知用于定义截至 2026-06-27 的实际带队教练组。",
+    "last_checked": "2026-09-02",
+    "summary": "中国男足 U23 / 亚运队已更新至2026-09-01赛前集训与参赛通知；U19、U17、U16、U15其余教练线仍按截至2026-06-27的中国足协公开任命与集训通知维护。",
+    "scope_note": "本档优先采用中国足协官方任命公告与集训通知；任命页用于定义周期职责，最近一期可靠通知用于定义各队实际带队教练组。U23 / 亚运队已单独推进至2026-09-01，其余年龄线不随本次更新虚增核查日期。",
     "team_cycles": [
       {
         "team_label": "中国U23 / 亚运队",
@@ -43764,15 +44327,27 @@
           "name": "Antonio Puché",
           "local_name": "安东尼奥·普切"
         },
-        "current_stage": "2024年8月起任U21主教练，2026年以U23身份备战名古屋亚运会。",
+        "current_stage": "2024年8月起任U21主教练；2026年9月已以国家男子足球亚运队主教练身份进入爱知-名古屋亚运会赛前集训与参赛阶段。",
         "appointment_context": "足协任命公告明确写明其负责 2025 年 U23 亚洲杯预选赛与 2026 年名古屋亚运会备战。",
         "latest_camp": {
-          "label": "2026年第一期集训",
-          "published_on": "2026-03-20",
-          "window": "2026-03-22 至 2026-04-01",
-          "purpose": "备战 2026 年名古屋亚运会并参加西安国际足球锦标赛。"
+          "label": "爱知-名古屋亚运会赛前集训与参赛",
+          "published_on": "2026-09-01",
+          "window": "2026-09-07 起在大连集训，随后赴日本备战参赛",
+          "purpose": "参加2026年爱知-名古屋亚运会男子足球比赛。"
         },
         "staff": [
+          {
+            "role": "领队",
+            "members": [
+              "杜立达"
+            ]
+          },
+          {
+            "role": "管理",
+            "members": [
+              "李石"
+            ]
+          },
           {
             "role": "助理教练",
             "members": [
@@ -43795,14 +44370,48 @@
           {
             "role": "技术分析师",
             "members": [
-              "大卫·坎皮罗",
-              "张嘉麟"
+              "大卫·坎皮罗"
+            ]
+          },
+          {
+            "role": "机能监测师",
+            "members": [
+              "钱纪云"
+            ]
+          },
+          {
+            "role": "队医",
+            "members": [
+              "王磊"
+            ]
+          },
+          {
+            "role": "运动防护师",
+            "members": [
+              "姚康",
+              "赵浩然",
+              "苏星涛",
+              "陈恩远",
+              "王润哲"
+            ]
+          },
+          {
+            "role": "装备管理",
+            "members": [
+              "张学刚"
+            ]
+          },
+          {
+            "role": "翻译",
+            "members": [
+              "杨浩"
             ]
           }
         ],
         "notes": [
           "当前阶段的核心任务已从 U21 周期切换到 U23 / 亚运队口径，但主教练任命源头仍是 2024 年 U21 任命公告。",
-          "2026 年 3 月集训通知中，教练组已出现于大宝进入助教岗位。"
+          "于大宝继续担任助理教练；2026-09-01通知同时给出完整管理保障团队。",
+          "亚运会官方参赛名单为23人；足协同日集训通知为24人并增加史松宸，两者按正式报名与赛前集训池分别保存。"
         ],
         "source_links": [
           {
@@ -43812,6 +44421,14 @@
           {
             "label": "中国足球协会关于组织U-23国家男子足球队2026年第一期集训的通知",
             "url": "https://www.thecfa.cn/jxtz/20260320/37446.html"
+          },
+          {
+            "label": "中国足球协会关于组织国家男子足球亚运队集训并参加爱知-名古屋亚运会的通知",
+            "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+          },
+          {
+            "label": "新华社：国足亚运队23人参赛名单与小组赛日期",
+            "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
           }
         ]
       },

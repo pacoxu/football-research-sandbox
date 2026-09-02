@@ -1,0 +1,286 @@
+[
+  {
+    "id": "cn-yu-jinyong-2004",
+    "name": "Yu Jinyong",
+    "local_name": "于金永",
+    "country": "China PR",
+    "birth_date": "2004-07-06",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 201,
+    "birth_place": "Shenyang, Liaoning",
+    "registration_club": {
+      "name": "Shandong Taishan FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会报名归属",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "亚运会官方23人名单及中国足协24人集训通知均列其为山东泰山门将。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Goalkeeper",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jinyong-yu/profil/spieler/884833"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运名单身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、身高、出生地和主位置由Transfermarkt个人页补充。"
+    }
+  },
+  {
+    "id": "cn-zhu-chenjie-2000",
+    "name": "Zhu Chenjie",
+    "local_name": "朱辰杰",
+    "country": "China PR",
+    "birth_date": "2000-08-23",
+    "age_band": "senior",
+    "primary_position": "Centre-Back",
+    "height_cm": 185,
+    "preferred_foot": "right",
+    "birth_place": "Suzhou, Jiangsu",
+    "registration_club": {
+      "name": "Shanghai Shenhua FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01",
+      "contract_expires": "2028-12-31"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会超龄球员",
+        "organization": "Shanghai Shenhua FC",
+        "country": "China",
+        "note": "亚运会官方23人名单列为后卫，是中国队3名超龄球员之一。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-national-team",
+      "overage-player"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "overage_player": true,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "亚运会官方23人名单列入，使用中国队3个超龄名额之一。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/chenjie-zhu/profil/spieler/509001"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运正式名单、超龄身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、位置、身高、出生地与合同节点由Transfermarkt个人页补充。"
+    }
+  },
+  {
+    "id": "cn-wu-xi-1989",
+    "name": "Wu Xi",
+    "local_name": "吴曦",
+    "country": "China PR",
+    "birth_date": "1989-02-19",
+    "age_band": "senior",
+    "primary_position": "Central Midfield",
+    "secondary_positions": [
+      "Attacking Midfield",
+      "Defensive Midfield"
+    ],
+    "height_cm": 180,
+    "preferred_foot": "right",
+    "birth_place": "Shijiazhuang, Hebei",
+    "registration_club": {
+      "name": "Shanghai Shenhua FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01",
+      "contract_expires": "2026-12-31"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会超龄球员",
+        "organization": "Shanghai Shenhua FC",
+        "country": "China",
+        "note": "亚运会官方23人名单列为中场，是中国队3名超龄球员之一。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-national-team",
+      "overage-player"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "overage_player": true,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "亚运会官方23人名单列入，使用中国队3个超龄名额之一。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/xi-wu/profil/spieler/148891"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运正式名单、超龄身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、位置、身高、出生地与合同节点由Transfermarkt个人页补充。"
+    }
+  },
+  {
+    "id": "cn-zhang-yuning-1997",
+    "name": "Zhang Yuning",
+    "local_name": "张玉宁",
+    "country": "China PR",
+    "birth_date": "1997-01-05",
+    "age_band": "senior",
+    "primary_position": "Centre-Forward",
+    "height_cm": 185,
+    "preferred_foot": "right",
+    "birth_place": "Wenzhou, Zhejiang",
+    "registration_club": {
+      "name": "Beijing Guoan FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01",
+      "contract_expires": "2028-12-31"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会超龄球员",
+        "organization": "Beijing Guoan FC",
+        "country": "China",
+        "note": "亚运会官方23人名单列为前锋，是中国队3名超龄球员之一。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-national-team",
+      "overage-player"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Forward",
+        "overage_player": true,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "亚运会官方23人名单列入，使用中国队3个超龄名额之一。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yuning-zhang/profil/spieler/264429"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运正式名单、超龄身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、位置、身高、出生地与合同节点由Transfermarkt个人页补充。"
+    }
+  }
+]

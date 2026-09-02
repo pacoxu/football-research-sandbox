@@ -154,7 +154,8 @@
     "focus_tags": [
       "asia-u20-2025",
       "china-u20-2025-final-squad",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -166,6 +167,18 @@
         "goals": 0,
         "minutes": null,
         "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足赛前集训补招",
+        "team": "China PR Asian Games",
+        "squad_status": "called-up",
+        "roster_status": "later-camp-callup",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协2026-09-01发布的24人集训通知补入；未列入同日公布的亚运会官方23人参赛名单，当前不视为正式报名替换。"
       }
     ],
     "external_links": [
@@ -183,6 +196,11 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/songchen-shi/profil/spieler/1127611"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
       }
     ],
     "verification": {
@@ -218,7 +236,8 @@
     "focus_tags": [
       "asia-u20-2025",
       "china-u20-2025-final-squad",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -230,6 +249,18 @@
         "goals": 0,
         "minutes": null,
         "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -242,6 +273,16 @@
         "type": "official",
         "label": "AFC U20 2025 squads finalised",
         "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -277,7 +318,8 @@
     "focus_tags": [
       "asia-u20-2025",
       "china-u20-2025-final-squad",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -289,6 +331,18 @@
         "goals": 0,
         "minutes": null,
         "note": "AFC final squad registration 支撑名单身份；逐人 appearances/goals/minutes 由 tournament-archive 的四场官方 Match Summary 汇总并在 loader 阶段合并。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Goalkeeper",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -306,6 +360,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/haoyang-yao/profil/spieler/1068103"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
