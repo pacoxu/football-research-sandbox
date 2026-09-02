@@ -4,6 +4,18 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-09-02
+
+### Added
+
+- Added the 22-player Arsenal U17 Shanghai Future Star Cup roster snapshot with tournament numbers and a 2-goalkeeper, 8-defender, 6-midfielder and 6-forward position split.
+- Added tournament-page rendering for roster numbers and regression checks for roster size, unique numbers and the supplied position groups.
+
+### Data Scope Notes
+
+- The Arsenal list is a tournament-time registration snapshot, not a permanent 2026/27 U17 squad claim; players without complete identity evidence are not promoted into the main player dataset.
+- Cross-checked the low-resolution registration graphic against Arsenal youth coverage and match lineups, retaining `Abraham Owusu-Gyasi` and `Marley Frohock` as the supported spellings.
+
 ## 2026-08-11
 
 ### Added
