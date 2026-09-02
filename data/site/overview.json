@@ -1,7 +1,7 @@
 {
   "generated_at": "2026-09-02",
   "stats": {
-    "player_count": 568,
+    "player_count": 573,
     "country_count": 9,
     "foreign_registration_count": 114,
     "china_overseas_status_counts": {
@@ -1764,6 +1764,127 @@
           "url": "https://www.kleague.com/"
         }
       ]
+    },
+    {
+      "id": "jiangsu-city-league-2025",
+      "name": "Jiangsu City Football League 2025",
+      "short_name": "苏超 2025",
+      "focus_level": "reference",
+      "competition_level": "senior-regional-city-league",
+      "status": "completed",
+      "last_checked": "2026-08-02",
+      "date_range": {
+        "start": "2025-05-10",
+        "end": "2025-11-01"
+      },
+      "focus_teams": [
+        "Nanjing City Team",
+        "Wuxi City Team",
+        "Xuzhou City Team",
+        "Changzhou City Team",
+        "Suzhou City Team",
+        "Nantong City Team",
+        "Lianyungang City Team",
+        "Huai'an City Team",
+        "Yancheng City Team",
+        "Yangzhou City Team",
+        "Zhenjiang City Team",
+        "Taizhou City Team",
+        "Suqian City Team"
+      ],
+      "headline": "首届江苏省城市足球联赛；13支设区市代表队参加，属于成年地方城市联赛，不是中超、中甲、中乙或中冠的固定下一级。",
+      "statistics_scope": "senior-regional-city-league-only",
+      "youth_snapshot": {
+        "registered_players": 516,
+        "student_players": 158,
+        "student_share": 0.31,
+        "average_age": 24.09,
+        "youngest_age": 16
+      },
+      "notes": [
+        "2025赛季官方发布会口径为516名参赛球员，其中158名在籍在读学生，占31%；学生身份不自动等于某家职业俱乐部青训身份。",
+        "新华社对盐城队的专题确认该队有18名学生球员，并列出严子航、李智良、王俊飞、李瑞龙、盛家豪等学校与俱乐部节点。",
+        "城市代表队身份、学校身份、职业俱乐部或社会青训注册必须分层记录，不能把苏超报名单位直接写成当前注册俱乐部。"
+      ],
+      "sources": [
+        {
+          "label": "Jiangsu Sports Bureau opening report",
+          "publisher": "Jiangsu Provincial Sports Bureau",
+          "url": "https://jsstyj.jiangsu.gov.cn/art/2025/5/10/art_40686_11561898.html"
+        },
+        {
+          "label": "2025 Jiangsu City League press conference",
+          "publisher": "Jiangsu Provincial Government Information Office",
+          "url": "https://www.jsxc.gov.cn/jsfb/xwfbh/202505/t20250514_20288.shtml"
+        },
+        {
+          "label": "Xinhua profile of Yancheng student players",
+          "publisher": "Xinhua News Agency",
+          "url": "https://www.news.cn/20250624/eb19898a8d0f493c80452faaaf2fe021/c.html"
+        }
+      ]
+    },
+    {
+      "id": "jiangsu-city-league-2026",
+      "name": "Jiangsu City Football League 2026",
+      "short_name": "苏超 2026",
+      "focus_level": "reference",
+      "competition_level": "senior-regional-city-league",
+      "status": "in-progress",
+      "date_precision": "open-ended",
+      "last_checked": "2026-08-02",
+      "date_range": {
+        "start": "2026-04-11",
+        "end": null
+      },
+      "focus_teams": [
+        "Nanjing City Team",
+        "Wuxi City Team",
+        "Xuzhou City Team",
+        "Changzhou City Team",
+        "Suzhou City Team",
+        "Nantong City Team",
+        "Lianyungang City Team",
+        "Huai'an City Team",
+        "Yancheng City Team",
+        "Yangzhou City Team",
+        "Zhenjiang City Team",
+        "Taizhou City Team",
+        "Suqian City Team"
+      ],
+      "headline": "2026江苏省城市足球联赛当前赛季；647名有效报名球员中有430名U22球员、224名在册学生球员，并执行U22以下6名球员上场政策。",
+      "statistics_scope": "senior-regional-city-league-only",
+      "update_cadence": "按月复核U22规则、学生球员名单、实际出场和国字号/职业注册变化。",
+      "youth_snapshot": {
+        "registered_players": 647,
+        "u22_players": 430,
+        "u22_share": 0.6646,
+        "student_players": 224,
+        "average_age": 22.32,
+        "u22_on_field_requirement": 6
+      },
+      "notes": [
+        "赛事年轻化是成年比赛机会政策，不应把所有U22球员统称为青训球员；本仓库仅为有学校、省队、社会青训、俱乐部或国字号直接来源的样本建立路径。",
+        "当前具名样本包括徐州队苗润东，以及无锡队周禹呈、刘靖磊、常永浩、赵启森；他们分别连接江苏常晋/江宁基地、宜兴校园足球、江苏09/10省队和国字号观察节点。",
+        "江苏青训另按县级普及、市级青训中心布局、省级青训中心精英培养，以及市级U10-U15、省级U16以上的1+N模式建设；苏超只是成年赛事桥梁之一。"
+      ],
+      "sources": [
+        {
+          "label": "Jiangsu youth-development system and Suchao U22 policy",
+          "publisher": "General Administration of Sport of China / China Sports Daily",
+          "url": "https://www.sport.gov.cn/n20001280/n20067626/n20067732/c29549657/content.html"
+        },
+        {
+          "label": "2026 Suchao youth and student-player snapshot",
+          "publisher": "Xinhua Daily / China Jiangsu Net",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260428_s69f09eb7e4b077df9927f7f0.shtml"
+        },
+        {
+          "label": "Nanjing team 2026 roster composition",
+          "publisher": "Nanjing Municipal Government",
+          "url": "https://www.nanjing.gov.cn/njxx/202603/t20260327_5813430.html"
+        }
+      ]
     }
   ],
   "projects": [
@@ -2740,6 +2861,273 @@
             {
               "label": "Sky Sports：弗兰克·苏与华裔先驱历史",
               "url": "https://www.skysports.com/football/news/11095/13244634/asians-in-football-frank-soo-and-the-footballers-that-followed-the-stoke-city-and-england-legend"
+            }
+          ]
+        }
+      ]
+    },
+    "overseas_support_policies": {
+      "checked_at": "2026-09-02",
+      "scope_note": {
+        "zh": "本专题只收录已有公开启动或申报通知、直接面向中国籍球员海外训练比赛成本的全国性资助计划。入选资格、申报、评审、公示和实际获款是不同状态；金额均按税前或公开发布口径记录，不把理论上限写成普遍可得补贴。",
+        "en": "This section covers national programs that have been publicly launched or opened for applications and directly support the overseas training and competition costs of Chinese players. Eligibility, application, assessment, public notice and payment are separate states; figures retain their published or pre-tax basis and theoretical maxima are not presented as generally available grants."
+      },
+      "policies": [
+        {
+          "id": "china-team-youth-inspirational-plan-2026",
+          "name": {
+            "zh": "中国足协中国之队青少年励志计划",
+            "en": "CFA China Team Youth Inspirational Plan"
+          },
+          "period": "2026-2030",
+          "status": "first-cycle",
+          "administrators": [
+            "中国足球协会",
+            "中国平安"
+          ],
+          "target_scope": {
+            "zh": "首批面向 15—23 周岁、在指定海外高水平联赛或俱乐部注册的中国籍男子十一人制球员；以个人为主、整队为辅，并重点覆盖近两年参加过中国足协国字号集训的精英球员。",
+            "en": "The first phase targets Chinese male 11-a-side players aged 15-23 who are registered in designated high-level overseas leagues or clubs, primarily as individuals with team support as a secondary route and a focus on players who attended a CFA national-team camp in the previous two years."
+          },
+          "eligibility": [
+            {
+              "zh": "中国籍男子十一人制球员，15—23 周岁；首批不等于覆盖所有性别和项目。",
+              "en": "Chinese male 11-a-side players aged 15-23; the initial phase does not cover every sex or format."
+            },
+            {
+              "zh": "注册关系须位于计划指定的欧洲、南美或亚洲足球发达国家和地区、指定级别俱乐部。",
+              "en": "Registration must be with a designated level of club in specified European, South American or advanced Asian football markets."
+            },
+            {
+              "zh": "一个赛季在当地实际居住不少于 180 天。",
+              "en": "At least 180 days of actual local residence during the season."
+            },
+            {
+              "zh": "申请窗口开启前连续 24 个月内，至少参加过 1 期中国足协任意年龄段男足国家队集训；训练营和选拔队活动不计。",
+              "en": "At least one CFA men's national-team camp at any age level in the 24 months before the application window; camps and selection-team activities do not count."
+            }
+          ],
+          "support_items": [
+            {
+              "id": "base-grant",
+              "label": {
+                "zh": "基础补贴",
+                "en": "Base grant"
+              },
+              "amount_cny": 120000,
+              "amount_basis": {
+                "zh": "每人每赛季固定额度 12 万元，再按年龄和球队级别系数核算。",
+                "en": "A CNY 120,000 per-player, per-season base multiplied by age and club-level coefficients."
+              }
+            },
+            {
+              "id": "development-grant",
+              "label": {
+                "zh": "发展补贴",
+                "en": "Development grant"
+              },
+              "amount_cny": 120000,
+              "amount_basis": {
+                "zh": "每人每赛季固定额度 12 万元，再按实际比赛时间系数核算。",
+                "en": "A CNY 120,000 per-player, per-season base multiplied by an actual playing-time coefficient."
+              }
+            },
+            {
+              "id": "continental-reward",
+              "label": {
+                "zh": "特别奖励",
+                "en": "Continental competition reward"
+              },
+              "amount_cny_min": 150000,
+              "amount_cny_max": 250000,
+              "amount_basis": {
+                "zh": "代表注册俱乐部参加相应洲际赛事并达到比赛时间要求，公开发布口径为每人每赛季 15 万—25 万元，符合条件可叠加。",
+                "en": "CNY 150,000-250,000 per player per season for meeting playing-time requirements in eligible continental club competition; qualifying rewards may stack."
+              }
+            },
+            {
+              "id": "one-off-living-grant",
+              "label": {
+                "zh": "一次性生活补贴",
+                "en": "One-off living grant"
+              },
+              "amount_cny": 100000,
+              "amount_basis": {
+                "zh": "每人每赛季 10 万元，仅面向特定区域和联赛级别且满足居留、出场等条件的球员。",
+                "en": "CNY 100,000 per player per season, limited to specified markets and competition levels subject to residence and appearance requirements."
+              }
+            }
+          ],
+          "reported_upper_bound": {
+            "amount_cny": 1646000,
+            "basis": {
+              "zh": "发布会公开系数组合下的理论最高值；不是保底额度，也不代表所有项目必然能够同时领取。",
+              "en": "A theoretical maximum under the coefficients presented at launch; it is neither guaranteed nor proof that every component can always be collected together."
+            }
+          },
+          "application_note": {
+            "zh": "中国足协官网于 2026 年 6 月 30 日发布首轮申请材料提交通告；具体截止时间、材料和适用俱乐部清单应以该轮正式申报文件为准。",
+            "en": "The CFA posted the first application-material notice on 30 June 2026; the relevant formal application documents govern deadlines, evidence requirements and eligible-club lists."
+          },
+          "boundary_note": {
+            "zh": "这是带准入门槛和绩效系数的精英资助，不是所有留洋球员自动领取的普惠补贴。164.6 万元为发布会公式的理论上限，实际金额取决于年龄、俱乐部级别、出场时间、洲际赛事和审核结果。",
+            "en": "This is a selective, performance-linked elite program rather than an automatic universal payment. The CNY 1.646 million figure is a formula-based theoretical maximum; actual funding depends on age, club level, playing time, continental competition and review."
+          },
+          "source_links": [
+            {
+              "label": "中国足协：励志计划启动",
+              "url": "https://www.thecfa.cn/qingchaoliansai/20260422/37584.html"
+            },
+            {
+              "label": "中华全国体育总会：四类补贴与公开金额口径",
+              "url": "https://www.sport.org.cn/shouye/jjty/2026/0424/695065.html"
+            },
+            {
+              "label": "人民网：首批范围、五年周期与国字号集训条件",
+              "url": "https://ent.people.com.cn/n1/2026/0423/c1012-40707124.html"
+            },
+            {
+              "label": "中国足协公告索引：2026-06-30 申请材料提交通告",
+              "url": "https://www.thecfa.cn/tzgg/index_5.html"
+            }
+          ]
+        },
+        {
+          "id": "future-star-overseas-youth-grant-2026",
+          "name": {
+            "zh": "2026 年“未来之星计划”海外青少年球员资助",
+            "en": "2026 Future Star overseas youth player grant"
+          },
+          "period": "2026-2030",
+          "status": "application-open",
+          "administrators": [
+            "中国足球发展基金会",
+            "中国足球协会"
+          ],
+          "funding_period": {
+            "start": "2026-01-01",
+            "end": "2026-12-31"
+          },
+          "application_window": {
+            "start": "2026-09-01",
+            "end": "2026-09-30",
+            "closing_time": "17:00",
+            "timezone": "Asia/Shanghai",
+            "portal": "https://futurestar.thecfa.info"
+          },
+          "target_scope": {
+            "zh": "2026 年面向出生于 2009 年 1 月 1 日至 2011 年 12 月 31 日、已在海外深造的 15—17 岁中国籍男女足球员。",
+            "en": "For 2026, Chinese male and female players aged 15-17, born from 1 January 2009 through 31 December 2011, who are already developing overseas."
+          },
+          "eligibility": [
+            {
+              "zh": "持有效中国普通护照和居民身份证，国际转会与注册符合 FIFA 和中国足协规定。",
+              "en": "A valid PRC ordinary passport and resident identity card, with international transfer and registration compliant with FIFA and CFA rules."
+            },
+            {
+              "zh": "注册主体和所参加赛事须在通知附件清单内；俱乐部须落入 2025 年 FIFA 培训补偿标准所列的相应一、二类范围。",
+              "en": "The registered entity and competition must appear on the notice's eligible lists, and the club must fall within the relevant 2025 FIFA training-compensation category I or II scope."
+            },
+            {
+              "zh": "在注册地累计实际生活不少于 183 天，并提交 2025 或 2025/26 赛季的真实参赛证明。",
+              "en": "At least 183 days of actual residence at the registration location plus valid participation evidence for the 2025 or 2025/26 season."
+            },
+            {
+              "zh": "申报时仍须满足注册和参赛条件；已经回国或转到不符合要求的俱乐部，不具备该年度资格。",
+              "en": "Registration and competition criteria must still be met at application; a return to China or transfer to an ineligible club removes eligibility for the cycle."
+            },
+            {
+              "zh": "品行合规，并已在实际注册地学校就读；国字号正式洲际/国际比赛球员及女足球员另有通知中的适用条款。",
+              "en": "Good standing and enrollment at a school in the actual registration location; the notice contains tailored provisions for national youth players in official continental/international competition and for female players."
+            }
+          ],
+          "support_items": [
+            {
+              "id": "tier-one",
+              "label": {
+                "zh": "第一档",
+                "en": "Tier 1"
+              },
+              "amount_cny": 450000,
+              "amount_basis": {
+                "zh": "每人年度税前 45 万元：在英格兰、法国、德国、意大利、西班牙注册比赛，且属于 2025 FIFA 培训补偿标准一类的欧足联范围。",
+                "en": "CNY 450,000 pre-tax annually for eligible registration and competition in England, France, Germany, Italy or Spain within UEFA category I under the 2025 FIFA training-compensation standard."
+              }
+            },
+            {
+              "id": "tier-two",
+              "label": {
+                "zh": "第二档",
+                "en": "Tier 2"
+              },
+              "amount_cny": 350000,
+              "amount_basis": {
+                "zh": "每人年度税前 35 万元：除上述五国以外，符合 2025 FIFA 一、二类目录的南美足联或欧足联会员协会范围。",
+                "en": "CNY 350,000 pre-tax annually for eligible CONMEBOL or UEFA category I/II associations outside the five Tier 1 countries."
+              }
+            },
+            {
+              "id": "tier-three",
+              "label": {
+                "zh": "第三档",
+                "en": "Tier 3"
+              },
+              "amount_cny": 250000,
+              "amount_basis": {
+                "zh": "每人年度税前 25 万元：符合 2025 FIFA 培训补偿标准二类目录的亚足联会员协会范围。",
+                "en": "CNY 250,000 pre-tax annually for eligible AFC member associations in category II under the 2025 FIFA training-compensation standard."
+              }
+            }
+          ],
+          "covered_costs": [
+            {
+              "zh": "学费、俱乐部或青训机构注册费",
+              "en": "Tuition and club or academy registration fees"
+            },
+            {
+              "zh": "住宿、伙食、交通和球员本人国际旅费",
+              "en": "Accommodation, food, local transport and the player's international travel"
+            },
+            {
+              "zh": "海外训练康复、人身保险和私人教练等技能提升费用",
+              "en": "Overseas rehabilitation, personal insurance, private coaching and other skills-development costs"
+            }
+          ],
+          "application_note": {
+            "zh": "2026 年申报期为 9 月 1 日至 9 月 30 日 17:00，唯一入口为 futurestar.thecfa.info。流程包括初审 5 个工作日、复审 10 个工作日、专家评审 10 个工作日和公示 7 个工作日；公示无异议后签约并一次性支付，基金会代扣代缴个税。",
+            "en": "The 2026 window runs from 1 September to 17:00 on 30 September through futurestar.thecfa.info only. The process includes five working days for initial review, ten for secondary review, ten for expert review and seven for public notice; payment is made once after an uncontested notice and agreement, with tax withheld by the foundation."
+          },
+          "boundary_note": {
+            "zh": "这是“赛季后评估、按年度奖补、分档实施”的申请制公益项目，不是先行报销，也不因年龄或海外注册自动获资助。年度结束后须提交支出、训练、比赛和学习佐证，评估结果影响后续年度。",
+            "en": "This is an application-based public-benefit program using post-season assessment, annual awards and tiers. Age or overseas registration does not trigger automatic funding; recipients must later document spending, training, competition and study, and the assessment informs future cycles."
+          },
+          "source_links": [
+            {
+              "label": "中国足协、足球发展基金会：2026 未来之星计划申报通知",
+              "url": "https://www.thecfa.cn/qsn/20260901/38098.html"
+            }
+          ]
+        }
+      ],
+      "non_subsidy_boundaries": [
+        {
+          "id": "training-compensation-and-solidarity",
+          "label": {
+            "zh": "培训补偿与联合机制补偿",
+            "en": "Training compensation and solidarity mechanism"
+          },
+          "note": {
+            "zh": "这是球员发生跨协会注册或职业转会时，按 FIFA、中国足协规则在培养俱乐部等机构之间分配的补偿机制，不是直接发给球员或家庭的留洋生活补贴。未来之星计划借用 FIFA 培训补偿类别划分资助地区，并不改变两者法律和资金性质。",
+            "en": "These are club-to-club development compensation mechanisms triggered by cross-association registration or professional transfers under FIFA and CFA rules, not overseas living grants paid to players or families. The Future Star plan uses FIFA training-compensation categories to define funding regions without changing the legal or financial nature of either system."
+          },
+          "source_links": [
+            {
+              "label": "中国足协：关于加强和改进优秀年轻球员留洋工作的若干措施",
+              "url": "https://www.thecfa.cn/ggwjxz/20220817/31498.html"
+            },
+            {
+              "label": "未来之星计划申报通知",
+              "url": "https://www.thecfa.cn/qsn/20260901/38098.html"
             }
           ]
         }
@@ -41730,6 +42118,261 @@
           "url": "https://laotiantimes.com/2026/07/09/young-lao-footballers-win-international-titles-as-world-cup-fever-grows/"
         }
       ]
+    },
+    {
+      "id": "jiangsu-city-league-2025",
+      "confederation": "CFA member-association system",
+      "competition_name": "Jiangsu City Football League 2025",
+      "level": "regional-city-league",
+      "edition_label": "2025",
+      "host": "Jiangsu, China",
+      "date_range": {
+        "start": "2025-05-10",
+        "end": "2025-11-01"
+      },
+      "status": "completed",
+      "champion": "Taizhou City Team",
+      "runner_up": "Nantong City Team",
+      "source_checked_at": "2026-08-02",
+      "participants": {
+        "status": "complete",
+        "teams": [
+          {
+            "team": "Nanjing City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Wuxi City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Xuzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Changzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Suzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Nantong City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Lianyungang City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Huai'an City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Yancheng City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Yangzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Zhenjiang City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Taizhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Suqian City Team",
+            "entry_status": "participant"
+          }
+        ]
+      },
+      "final_draw": {
+        "status": "complete",
+        "groups": [
+          {
+            "name": "Single-table league field",
+            "teams": [
+              "Nanjing City Team",
+              "Wuxi City Team",
+              "Xuzhou City Team",
+              "Changzhou City Team",
+              "Suzhou City Team",
+              "Nantong City Team",
+              "Lianyungang City Team",
+              "Huai'an City Team",
+              "Yancheng City Team",
+              "Yangzhou City Team",
+              "Zhenjiang City Team",
+              "Taizhou City Team",
+              "Suqian City Team"
+            ]
+          }
+        ]
+      },
+      "china_detail_scope": "none",
+      "china_matches": [],
+      "china_key_players": [],
+      "source_links": [
+        {
+          "label": "Jiangsu Sports Bureau opening report and roster scale",
+          "url": "https://jsstyj.jiangsu.gov.cn/art/2025/5/10/art_40686_11561898.html"
+        },
+        {
+          "label": "General Administration of Sport report on the 2025 final",
+          "url": "https://www.sport.gov.cn/n14471/n14481/n14518/c29189448/content.html"
+        },
+        {
+          "label": "Xinhua profile of Yancheng student players",
+          "url": "https://www.news.cn/20250624/eb19898a8d0f493c80452faaaf2fe021/c.html"
+        }
+      ]
+    },
+    {
+      "id": "jiangsu-city-league-2026",
+      "confederation": "CFA member-association system",
+      "competition_name": "Jiangsu City Football League 2026",
+      "level": "regional-city-league",
+      "edition_label": "2026",
+      "host": "Jiangsu, China",
+      "date_range": {
+        "start": "2026-04-11",
+        "end": null
+      },
+      "date_precision": "open-ended",
+      "status": "in-progress",
+      "champion": null,
+      "runner_up": null,
+      "source_checked_at": "2026-08-02",
+      "participants": {
+        "status": "complete",
+        "teams": [
+          {
+            "team": "Nanjing City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Wuxi City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Xuzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Changzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Suzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Nantong City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Lianyungang City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Huai'an City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Yancheng City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Yangzhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Zhenjiang City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Taizhou City Team",
+            "entry_status": "participant"
+          },
+          {
+            "team": "Suqian City Team",
+            "entry_status": "participant"
+          }
+        ]
+      },
+      "final_draw": {
+        "status": "complete",
+        "groups": [
+          {
+            "name": "Single-table league field",
+            "teams": [
+              "Nanjing City Team",
+              "Wuxi City Team",
+              "Xuzhou City Team",
+              "Changzhou City Team",
+              "Suzhou City Team",
+              "Nantong City Team",
+              "Lianyungang City Team",
+              "Huai'an City Team",
+              "Yancheng City Team",
+              "Yangzhou City Team",
+              "Zhenjiang City Team",
+              "Taizhou City Team",
+              "Suqian City Team"
+            ]
+          }
+        ]
+      },
+      "china_detail_scope": "none",
+      "china_matches": [],
+      "china_key_players": [],
+      "regional_watch": {
+        "title": {
+          "zh": "2026苏超青年路径样本",
+          "en": "2026 Suchao youth-pathway sample"
+        },
+        "scope_note": {
+          "zh": "本组只收录有可核出生日期、位置、当前学校或俱乐部，以及苏超正式报名、实际出场或明确赛季前球队观察证据的站内样本。它不是647人完整名单，也不把U22身份直接等同于青训球员或职业球员。",
+          "en": "This group only includes site profiles with verifiable dates of birth, positions, current schools or clubs, plus formal Suchao registration, an appearance or explicit pre-season team observation. It is not the complete 647-player field and does not equate U22 status with academy or professional status."
+        },
+        "tag": "jiangsu-city-league-youth",
+        "player_pool_label": {
+          "zh": "苏超青年样本",
+          "en": "Suchao youth sample"
+        },
+        "team_groups": [
+          {
+            "country": "China PR",
+            "note": {
+              "zh": "当前5人样本覆盖徐州与无锡两队，连接江苏常晋/江宁基地、江苏09/10省队、宜兴一中校园足球及中国U16/U19国字号节点。",
+              "en": "The current five-player sample spans Xuzhou and Wuxi, linking Jiangsu Changjin/Jiangning base, the Jiangsu 2009/10 provincial team, Yixing No. 1 High School and China U16/U19 national-team nodes."
+            }
+          }
+        ]
+      },
+      "source_links": [
+        {
+          "label": "Jiangsu youth-development system and Suchao U22 policy",
+          "url": "https://www.sport.gov.cn/n20001280/n20067626/n20067732/c29549657/content.html"
+        },
+        {
+          "label": "2026 Suchao student and youth-player snapshot",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260428_s69f09eb7e4b077df9927f7f0.shtml"
+        },
+        {
+          "label": "Yixing No. 1 High School four-player profiles",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml"
+        },
+        {
+          "label": "CFA China U19 third camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260522/37710.html"
+        }
+      ]
     }
   ],
   "uefa_youth_league": {
@@ -48590,21 +49233,81 @@
   },
   "youth_development_systems": {
     "schema_version": 1,
-    "checked_at": "2026-07-20",
+    "checked_at": "2026-08-02",
     "systems": [
       {
-        "id": "china-professional-youth",
+        "id": "china-fa-and-professional-youth",
         "country": "China PR",
         "name": {
-          "zh": "中国职业俱乐部梯队与青年联赛体系",
-          "en": "China professional-club reserve and youth competition system",
-          "native": "中国职业俱乐部梯队与青年联赛体系"
+          "zh": "中国足协、会员协会与俱乐部青训体系",
+          "en": "China FA, member-association and club youth-development system",
+          "native": "中国足协、会员协会与俱乐部青训体系"
         },
         "summary": {
-          "zh": "中国职业足球历史上举办过中超、中甲预备队联赛，但当前全国赛事已不再统一使用“预备队联赛”名称。现行衔接主要由职业俱乐部U21联赛、部分俱乐部B队参加中乙，以及U19、U17、U15等年龄段赛事共同承担；U21队与成年B队必须分开理解。",
-          "en": "China previously operated reserve leagues linked to the top professional divisions, but the current national structure no longer uses one unified reserve-league competition. Development minutes are now spread across the professional-club U21 league, selected B teams in China League Two, and U19, U17 and U15 competitions. An age-limited U21 team is not automatically the same entity as a senior B team."
+          "zh": "中国足协负责全国规则、注册和全国性青少年赛事，省级与重点城市会员协会承担属地注册、地方竞赛、培训和人才发现；学校、体校、社会青训机构、职业俱乐部梯队是日常培养主体。全国主干是中国青少年足球联赛，职业端另有U15、U17、U19、U21、B队和一线队等桥梁；U21队、成年B队和地方城市代表队必须分开理解。",
+          "en": "The CFA sets national rules, registration and nationwide youth competitions, while provincial and key-city member associations handle local registration, competitions, training and talent identification. Schools, sports schools, community academies and professional-club academies provide daily development. The Chinese Youth Football League is the open national spine, while the professional pathway adds U15, U17, U19, U21, B-team and first-team bridges. U21 sides, senior B teams and regional city representative teams are separate entities."
         },
+        "governance_structure": [
+          {
+            "level": "national",
+            "organization": "Chinese Football Association",
+            "role": {
+              "zh": "制定行业规则与训练大纲，建设全国青少年注册系统，主办中国青少年足球联赛并组织各年龄段国家队选材。",
+              "en": "Sets industry rules and the national training syllabus, leads the integrated youth-registration system, runs the Chinese Youth Football League and organizes national-team talent identification."
+            }
+          },
+          {
+            "level": "member-association",
+            "organization": "Provincial and key-city member associations",
+            "role": {
+              "zh": "承担属地会员组织、球员与青训机构注册、地方赛事、教练与裁判培训，并与全国赛事办公室衔接。",
+              "en": "Manage local membership, player and academy registration, regional competitions, coach and referee development, and links to national competition offices."
+            }
+          },
+          {
+            "level": "development-provider",
+            "organization": "Schools, sports schools, community academies and clubs",
+            "role": {
+              "zh": "负责日常训练、参赛和升学或职业路径；同一球员可以在学校、省市梯队和俱乐部之间形成多节点履历，不能只用一条“青训归属”概括。",
+              "en": "Provide daily training and competition plus education or professional pathways. A player may have school, provincial/city team and club nodes that should not be collapsed into one academy attribution."
+            }
+          }
+        ],
         "registration_categories": [
+          {
+            "id": "china-member-association-youth-registration",
+            "age_band": "all-youth",
+            "label": {
+              "zh": "地方会员协会注册与备案",
+              "en": "Local member-association registration and CFA filing",
+              "native": "地方会员协会注册与备案"
+            },
+            "organization_types": [
+              "provincial-youth-team",
+              "community-club",
+              "football-school",
+              "club-academy"
+            ],
+            "source_url": "https://www.thecfa.cn/qsn/20240328/33951.html"
+          },
+          {
+            "id": "china-open-youth-participation",
+            "age_band": "u8-u19",
+            "label": {
+              "zh": "学校、体校、俱乐部与社会青训开放参赛",
+              "en": "Open entry for schools, sports schools, clubs and community academies",
+              "native": "学校、体校、俱乐部与社会青训开放参赛"
+            },
+            "organization_types": [
+              "high-school",
+              "university",
+              "provincial-youth-team",
+              "community-club",
+              "football-school",
+              "club-academy"
+            ],
+            "source_url": "https://www.thecfa.cn/qsn/20250418/35874.html"
+          },
           {
             "id": "china-professional-club-u21",
             "age_band": "u21",
@@ -48648,6 +49351,80 @@
           }
         ],
         "competitions": [
+          {
+            "id": "china-cfa-member-association-framework",
+            "age_band": "all-youth",
+            "competition_type": "player-development-framework",
+            "name": {
+              "zh": "中国足协—地方会员协会青训治理链",
+              "en": "CFA–local member-association youth governance chain",
+              "native": "中国足协—地方会员协会青训治理链"
+            },
+            "organization_types": [
+              "provincial-youth-team",
+              "community-club",
+              "football-school",
+              "club-academy",
+              "high-school"
+            ],
+            "stable_structure": {
+              "zh": "中国足协会员体系包括省级、重点城市和行业协会。地方协会不是职业俱乐部的梯队，而是属地注册、竞赛、培训和行业服务节点；球员的学校、省市代表队、社会机构与俱乐部经历必须分别记录。",
+              "en": "The CFA membership network includes provincial, key-city and industry associations. A local association is not a professional club academy: it is a registration, competition, training and industry-service node. School, provincial/city representative, community-academy and club experiences must be recorded separately."
+            },
+            "source_url": "https://www.thecfa.cn/huiyuandanwei/index.html"
+          },
+          {
+            "id": "china-youth-football-league",
+            "age_band": "u8-u19",
+            "competition_type": "league-pyramid",
+            "name": {
+              "zh": "中国青少年足球联赛",
+              "en": "Chinese Youth Football League",
+              "native": "中国青少年足球联赛"
+            },
+            "organization_types": [
+              "high-school",
+              "university",
+              "provincial-youth-team",
+              "community-club",
+              "football-school",
+              "club-academy"
+            ],
+            "stable_structure": {
+              "zh": "赛事由地方预选赛、大区赛和全国总决赛组成，学校、体校、俱乐部青训梯队和社会青训机构可开放参赛。省级会员协会或足球重点城市举办、符合开放原则的最高水平赛事可以作为预选赛。",
+              "en": "The competition progresses through local qualifiers, regional rounds and national finals, with open entry for schools, sports schools, club academies and community academies. Eligible top-level events run by provincial member associations or key football cities may serve as qualifiers."
+            },
+            "source_url": "https://www.thecfa.cn/qsn/20250418/35874.html"
+          },
+          {
+            "id": "jiangsu-city-league-youth-bridge",
+            "age_band": "senior-bridge",
+            "competition_type": "regional-city-league",
+            "name": {
+              "zh": "江苏省城市足球联赛青年桥梁（苏超）",
+              "en": "Jiangsu City Football League youth bridge (Suchao)",
+              "native": "江苏省城市足球联赛"
+            },
+            "organization_types": [
+              "city-representative-team"
+            ],
+            "sample_focus_tag": "jiangsu-city-league-youth",
+            "stable_structure": {
+              "zh": "苏超是成年地方城市代表队联赛，不是青少年联赛，也不是固定职业金字塔层级。2026赛季通过U22球员规模和上场要求提供成年比赛分钟，连接校园、省市梯队、社会青训与职业观察，但参赛本身不能证明职业注册或某一家机构的培养归属。",
+              "en": "Suchao is a senior regional city-representative league, not a youth league or a fixed professional-pyramid tier. Its 2026 U22 roster and playing requirements provide senior minutes across school, provincial/city, community and professional pathways, but participation alone does not prove professional registration or academy attribution."
+            },
+            "annual_snapshot": {
+              "season": "2026",
+              "players": 647,
+              "u22_players": 430,
+              "student_players": 224,
+              "note": {
+                "zh": "公开赛季快照为647名有效报名球员、430名U22球员和224名在册学生球员；赛事另执行U22以下6名球员上场政策。数字应按年度重新核对。",
+                "en": "The published season snapshot lists 647 valid registrations, 430 U22 players and 224 registered student players, alongside a rule requiring six U22 players on the field. These figures and rules must be rechecked each season."
+              }
+            },
+            "source_url": "https://www.sport.gov.cn/n20001280/n20067626/n20067732/c29549657/content.html"
+          },
           {
             "id": "china-former-reserve-league",
             "age_band": "reserve",
@@ -48758,6 +49535,26 @@
           }
         ],
         "source_links": [
+          {
+            "label": "CFA member-association structure and responsibilities",
+            "url": "https://www.thecfa.cn/huiyuandanwei/index.html",
+            "checked_at": "2026-08-02"
+          },
+          {
+            "label": "China youth football reform implementation plan",
+            "url": "https://www.thecfa.cn/qsn/20240328/33951.html",
+            "checked_at": "2026-08-02"
+          },
+          {
+            "label": "Chinese Youth Football League organization plan",
+            "url": "https://www.thecfa.cn/qsn/20250418/35874.html",
+            "checked_at": "2026-08-02"
+          },
+          {
+            "label": "Jiangsu youth-development system and Suchao U22 bridge",
+            "url": "https://www.sport.gov.cn/n20001280/n20067626/n20067732/c29549657/content.html",
+            "checked_at": "2026-08-02"
+          },
           {
             "label": "CFA 2020 professional-league policy and reserve-league change",
             "url": "https://www.thecfa.cn/lstz/20191231/28443.html",
@@ -49916,6 +50713,14 @@
     "Wolfsburg": "沃尔夫斯堡",
     "Wolverhampton Wanderers": "狼队",
     "Xi'an Junze Football Club": "西安君泽",
+    "Jiangsu Changjin FC": "江苏常晋",
+    "Jiangsu Jiangning Football Training Base": "江苏省江宁足球训练基地",
+    "Jiangsu 2009 Provincial Team": "江苏09省队",
+    "Jiangsu 2009/10 Provincial Team": "江苏09/10省队",
+    "Jiangsu Yixing No. 1 High School": "江苏省宜兴第一中学",
+    "Wuxi City Team": "无锡队",
+    "Xuzhou City Team": "徐州队",
+    "Yixing Zhoutie Jiuteng Football Club": "宜兴周铁久滕足球俱乐部",
     "Yongin FC": "龙仁FC",
     "Zhejiang FC": "浙江"
   }

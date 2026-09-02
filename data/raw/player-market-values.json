@@ -4,13 +4,13 @@
     "checked_at": "2026-09-02",
     "api_template": "https://tmapi-alpha.transfermarkt.technology/player/{id}/market-value-history?_x_preferred_context=com",
     "coverage": {
-      "total": 568,
+      "total": 573,
       "statuses": {
         "available": 118,
         "fetch-error": 22,
         "ambiguous-profile": 3,
         "no-market-value": 45,
-        "profile-not-found": 378,
+        "profile-not-found": 383,
         "team-page-only": 2
       },
       "by_country": {
@@ -22,9 +22,9 @@
           "no-market-value": 1
         },
         "China PR": {
-          "total": 105,
+          "total": 110,
           "available": 46,
-          "profile-not-found": 34,
+          "profile-not-found": 39,
           "no-market-value": 22,
           "team-page-only": 2,
           "ambiguous-profile": 1
@@ -68,6 +68,126 @@
     }
   },
   "players": {
+    "cn-miao-rundong-2007": {
+      "checked_at": "2026-08-02",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-02",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-zhou-yucheng-2009": {
+      "checked_at": "2026-08-02",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-02",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-liu-jinglei-2010": {
+      "checked_at": "2026-08-02",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-02",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-chang-yonghao-2010": {
+      "checked_at": "2026-08-02",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-02",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
+    "cn-zhao-qisen-2009": {
+      "checked_at": "2026-08-02",
+      "status": "profile-not-found",
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": ""
+      },
+      "lookup": {
+        "checked_at": "2026-08-02",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "matched_fields": [],
+        "candidate_urls": []
+      },
+      "alternatives": [],
+      "last_success_at": null
+    },
     "au-adam-bugarija-2005": {
       "checked_at": "2026-07-12",
       "status": "available",

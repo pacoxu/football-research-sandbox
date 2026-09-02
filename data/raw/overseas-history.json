@@ -776,6 +776,273 @@
       }
     ]
   },
+  "overseas_support_policies": {
+    "checked_at": "2026-09-02",
+    "scope_note": {
+      "zh": "本专题只收录已有公开启动或申报通知、直接面向中国籍球员海外训练比赛成本的全国性资助计划。入选资格、申报、评审、公示和实际获款是不同状态；金额均按税前或公开发布口径记录，不把理论上限写成普遍可得补贴。",
+      "en": "This section covers national programs that have been publicly launched or opened for applications and directly support the overseas training and competition costs of Chinese players. Eligibility, application, assessment, public notice and payment are separate states; figures retain their published or pre-tax basis and theoretical maxima are not presented as generally available grants."
+    },
+    "policies": [
+      {
+        "id": "china-team-youth-inspirational-plan-2026",
+        "name": {
+          "zh": "中国足协中国之队青少年励志计划",
+          "en": "CFA China Team Youth Inspirational Plan"
+        },
+        "period": "2026-2030",
+        "status": "first-cycle",
+        "administrators": [
+          "中国足球协会",
+          "中国平安"
+        ],
+        "target_scope": {
+          "zh": "首批面向 15—23 周岁、在指定海外高水平联赛或俱乐部注册的中国籍男子十一人制球员；以个人为主、整队为辅，并重点覆盖近两年参加过中国足协国字号集训的精英球员。",
+          "en": "The first phase targets Chinese male 11-a-side players aged 15-23 who are registered in designated high-level overseas leagues or clubs, primarily as individuals with team support as a secondary route and a focus on players who attended a CFA national-team camp in the previous two years."
+        },
+        "eligibility": [
+          {
+            "zh": "中国籍男子十一人制球员，15—23 周岁；首批不等于覆盖所有性别和项目。",
+            "en": "Chinese male 11-a-side players aged 15-23; the initial phase does not cover every sex or format."
+          },
+          {
+            "zh": "注册关系须位于计划指定的欧洲、南美或亚洲足球发达国家和地区、指定级别俱乐部。",
+            "en": "Registration must be with a designated level of club in specified European, South American or advanced Asian football markets."
+          },
+          {
+            "zh": "一个赛季在当地实际居住不少于 180 天。",
+            "en": "At least 180 days of actual local residence during the season."
+          },
+          {
+            "zh": "申请窗口开启前连续 24 个月内，至少参加过 1 期中国足协任意年龄段男足国家队集训；训练营和选拔队活动不计。",
+            "en": "At least one CFA men's national-team camp at any age level in the 24 months before the application window; camps and selection-team activities do not count."
+          }
+        ],
+        "support_items": [
+          {
+            "id": "base-grant",
+            "label": {
+              "zh": "基础补贴",
+              "en": "Base grant"
+            },
+            "amount_cny": 120000,
+            "amount_basis": {
+              "zh": "每人每赛季固定额度 12 万元，再按年龄和球队级别系数核算。",
+              "en": "A CNY 120,000 per-player, per-season base multiplied by age and club-level coefficients."
+            }
+          },
+          {
+            "id": "development-grant",
+            "label": {
+              "zh": "发展补贴",
+              "en": "Development grant"
+            },
+            "amount_cny": 120000,
+            "amount_basis": {
+              "zh": "每人每赛季固定额度 12 万元，再按实际比赛时间系数核算。",
+              "en": "A CNY 120,000 per-player, per-season base multiplied by an actual playing-time coefficient."
+            }
+          },
+          {
+            "id": "continental-reward",
+            "label": {
+              "zh": "特别奖励",
+              "en": "Continental competition reward"
+            },
+            "amount_cny_min": 150000,
+            "amount_cny_max": 250000,
+            "amount_basis": {
+              "zh": "代表注册俱乐部参加相应洲际赛事并达到比赛时间要求，公开发布口径为每人每赛季 15 万—25 万元，符合条件可叠加。",
+              "en": "CNY 150,000-250,000 per player per season for meeting playing-time requirements in eligible continental club competition; qualifying rewards may stack."
+            }
+          },
+          {
+            "id": "one-off-living-grant",
+            "label": {
+              "zh": "一次性生活补贴",
+              "en": "One-off living grant"
+            },
+            "amount_cny": 100000,
+            "amount_basis": {
+              "zh": "每人每赛季 10 万元，仅面向特定区域和联赛级别且满足居留、出场等条件的球员。",
+              "en": "CNY 100,000 per player per season, limited to specified markets and competition levels subject to residence and appearance requirements."
+            }
+          }
+        ],
+        "reported_upper_bound": {
+          "amount_cny": 1646000,
+          "basis": {
+            "zh": "发布会公开系数组合下的理论最高值；不是保底额度，也不代表所有项目必然能够同时领取。",
+            "en": "A theoretical maximum under the coefficients presented at launch; it is neither guaranteed nor proof that every component can always be collected together."
+          }
+        },
+        "application_note": {
+          "zh": "中国足协官网于 2026 年 6 月 30 日发布首轮申请材料提交通告；具体截止时间、材料和适用俱乐部清单应以该轮正式申报文件为准。",
+          "en": "The CFA posted the first application-material notice on 30 June 2026; the relevant formal application documents govern deadlines, evidence requirements and eligible-club lists."
+        },
+        "boundary_note": {
+          "zh": "这是带准入门槛和绩效系数的精英资助，不是所有留洋球员自动领取的普惠补贴。164.6 万元为发布会公式的理论上限，实际金额取决于年龄、俱乐部级别、出场时间、洲际赛事和审核结果。",
+          "en": "This is a selective, performance-linked elite program rather than an automatic universal payment. The CNY 1.646 million figure is a formula-based theoretical maximum; actual funding depends on age, club level, playing time, continental competition and review."
+        },
+        "source_links": [
+          {
+            "label": "中国足协：励志计划启动",
+            "url": "https://www.thecfa.cn/qingchaoliansai/20260422/37584.html"
+          },
+          {
+            "label": "中华全国体育总会：四类补贴与公开金额口径",
+            "url": "https://www.sport.org.cn/shouye/jjty/2026/0424/695065.html"
+          },
+          {
+            "label": "人民网：首批范围、五年周期与国字号集训条件",
+            "url": "https://ent.people.com.cn/n1/2026/0423/c1012-40707124.html"
+          },
+          {
+            "label": "中国足协公告索引：2026-06-30 申请材料提交通告",
+            "url": "https://www.thecfa.cn/tzgg/index_5.html"
+          }
+        ]
+      },
+      {
+        "id": "future-star-overseas-youth-grant-2026",
+        "name": {
+          "zh": "2026 年“未来之星计划”海外青少年球员资助",
+          "en": "2026 Future Star overseas youth player grant"
+        },
+        "period": "2026-2030",
+        "status": "application-open",
+        "administrators": [
+          "中国足球发展基金会",
+          "中国足球协会"
+        ],
+        "funding_period": {
+          "start": "2026-01-01",
+          "end": "2026-12-31"
+        },
+        "application_window": {
+          "start": "2026-09-01",
+          "end": "2026-09-30",
+          "closing_time": "17:00",
+          "timezone": "Asia/Shanghai",
+          "portal": "https://futurestar.thecfa.info"
+        },
+        "target_scope": {
+          "zh": "2026 年面向出生于 2009 年 1 月 1 日至 2011 年 12 月 31 日、已在海外深造的 15—17 岁中国籍男女足球员。",
+          "en": "For 2026, Chinese male and female players aged 15-17, born from 1 January 2009 through 31 December 2011, who are already developing overseas."
+        },
+        "eligibility": [
+          {
+            "zh": "持有效中国普通护照和居民身份证，国际转会与注册符合 FIFA 和中国足协规定。",
+            "en": "A valid PRC ordinary passport and resident identity card, with international transfer and registration compliant with FIFA and CFA rules."
+          },
+          {
+            "zh": "注册主体和所参加赛事须在通知附件清单内；俱乐部须落入 2025 年 FIFA 培训补偿标准所列的相应一、二类范围。",
+            "en": "The registered entity and competition must appear on the notice's eligible lists, and the club must fall within the relevant 2025 FIFA training-compensation category I or II scope."
+          },
+          {
+            "zh": "在注册地累计实际生活不少于 183 天，并提交 2025 或 2025/26 赛季的真实参赛证明。",
+            "en": "At least 183 days of actual residence at the registration location plus valid participation evidence for the 2025 or 2025/26 season."
+          },
+          {
+            "zh": "申报时仍须满足注册和参赛条件；已经回国或转到不符合要求的俱乐部，不具备该年度资格。",
+            "en": "Registration and competition criteria must still be met at application; a return to China or transfer to an ineligible club removes eligibility for the cycle."
+          },
+          {
+            "zh": "品行合规，并已在实际注册地学校就读；国字号正式洲际/国际比赛球员及女足球员另有通知中的适用条款。",
+            "en": "Good standing and enrollment at a school in the actual registration location; the notice contains tailored provisions for national youth players in official continental/international competition and for female players."
+          }
+        ],
+        "support_items": [
+          {
+            "id": "tier-one",
+            "label": {
+              "zh": "第一档",
+              "en": "Tier 1"
+            },
+            "amount_cny": 450000,
+            "amount_basis": {
+              "zh": "每人年度税前 45 万元：在英格兰、法国、德国、意大利、西班牙注册比赛，且属于 2025 FIFA 培训补偿标准一类的欧足联范围。",
+              "en": "CNY 450,000 pre-tax annually for eligible registration and competition in England, France, Germany, Italy or Spain within UEFA category I under the 2025 FIFA training-compensation standard."
+            }
+          },
+          {
+            "id": "tier-two",
+            "label": {
+              "zh": "第二档",
+              "en": "Tier 2"
+            },
+            "amount_cny": 350000,
+            "amount_basis": {
+              "zh": "每人年度税前 35 万元：除上述五国以外，符合 2025 FIFA 一、二类目录的南美足联或欧足联会员协会范围。",
+              "en": "CNY 350,000 pre-tax annually for eligible CONMEBOL or UEFA category I/II associations outside the five Tier 1 countries."
+            }
+          },
+          {
+            "id": "tier-three",
+            "label": {
+              "zh": "第三档",
+              "en": "Tier 3"
+            },
+            "amount_cny": 250000,
+            "amount_basis": {
+              "zh": "每人年度税前 25 万元：符合 2025 FIFA 培训补偿标准二类目录的亚足联会员协会范围。",
+              "en": "CNY 250,000 pre-tax annually for eligible AFC member associations in category II under the 2025 FIFA training-compensation standard."
+            }
+          }
+        ],
+        "covered_costs": [
+          {
+            "zh": "学费、俱乐部或青训机构注册费",
+            "en": "Tuition and club or academy registration fees"
+          },
+          {
+            "zh": "住宿、伙食、交通和球员本人国际旅费",
+            "en": "Accommodation, food, local transport and the player's international travel"
+          },
+          {
+            "zh": "海外训练康复、人身保险和私人教练等技能提升费用",
+            "en": "Overseas rehabilitation, personal insurance, private coaching and other skills-development costs"
+          }
+        ],
+        "application_note": {
+          "zh": "2026 年申报期为 9 月 1 日至 9 月 30 日 17:00，唯一入口为 futurestar.thecfa.info。流程包括初审 5 个工作日、复审 10 个工作日、专家评审 10 个工作日和公示 7 个工作日；公示无异议后签约并一次性支付，基金会代扣代缴个税。",
+          "en": "The 2026 window runs from 1 September to 17:00 on 30 September through futurestar.thecfa.info only. The process includes five working days for initial review, ten for secondary review, ten for expert review and seven for public notice; payment is made once after an uncontested notice and agreement, with tax withheld by the foundation."
+        },
+        "boundary_note": {
+          "zh": "这是“赛季后评估、按年度奖补、分档实施”的申请制公益项目，不是先行报销，也不因年龄或海外注册自动获资助。年度结束后须提交支出、训练、比赛和学习佐证，评估结果影响后续年度。",
+          "en": "This is an application-based public-benefit program using post-season assessment, annual awards and tiers. Age or overseas registration does not trigger automatic funding; recipients must later document spending, training, competition and study, and the assessment informs future cycles."
+        },
+        "source_links": [
+          {
+            "label": "中国足协、足球发展基金会：2026 未来之星计划申报通知",
+            "url": "https://www.thecfa.cn/qsn/20260901/38098.html"
+          }
+        ]
+      }
+    ],
+    "non_subsidy_boundaries": [
+      {
+        "id": "training-compensation-and-solidarity",
+        "label": {
+          "zh": "培训补偿与联合机制补偿",
+          "en": "Training compensation and solidarity mechanism"
+        },
+        "note": {
+          "zh": "这是球员发生跨协会注册或职业转会时，按 FIFA、中国足协规则在培养俱乐部等机构之间分配的补偿机制，不是直接发给球员或家庭的留洋生活补贴。未来之星计划借用 FIFA 培训补偿类别划分资助地区，并不改变两者法律和资金性质。",
+          "en": "These are club-to-club development compensation mechanisms triggered by cross-association registration or professional transfers under FIFA and CFA rules, not overseas living grants paid to players or families. The Future Star plan uses FIFA training-compensation categories to define funding regions without changing the legal or financial nature of either system."
+        },
+        "source_links": [
+          {
+            "label": "中国足协：关于加强和改进优秀年轻球员留洋工作的若干措施",
+            "url": "https://www.thecfa.cn/ggwjxz/20220817/31498.html"
+          },
+          {
+            "label": "未来之星计划申报通知",
+            "url": "https://www.thecfa.cn/qsn/20260901/38098.html"
+          }
+        ]
+      }
+    ]
+  },
   "overseas_training_programs": {
     "checked_at": "2026-07-20",
     "scope_note": {

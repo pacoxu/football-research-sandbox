@@ -11,15 +11,18 @@ test("exposes six country youth-development systems", () => {
     systems.map(({ country }) => country),
     ["China PR", "Japan", "Korea Republic", "Norway", "Denmark", "Sweden"]
   );
-  assert.equal(systems.flatMap(({ competitions }) => competitions).length, 32);
+  assert.equal(systems.flatMap(({ competitions }) => competitions).length, 35);
 });
 
-test("separates China's historical reserve league, U21 league and B-team route", () => {
+test("covers China's member-association chain and separates U21, B-team and city-league routes", () => {
   const china = systems.find((item) => item.country === "China PR");
   assert.ok(china);
   assert.deepEqual(
     china.competitions.map(({ id }) => id),
     [
+      "china-cfa-member-association-framework",
+      "china-youth-football-league",
+      "jiangsu-city-league-youth-bridge",
       "china-former-reserve-league",
       "china-professional-u21-league",
       "china-b-teams-league-two",
@@ -28,7 +31,8 @@ test("separates China's historical reserve league, U21 league and B-team route",
     ]
   );
   assert.equal(china.competitions.find(({ id }) => id === "china-b-teams-league-two").annual_snapshot.teams, 4);
-  assert.ok(china.summary.zh.includes("U21队与成年B队必须分开理解"));
+  assert.equal(china.competitions.find(({ id }) => id === "jiangsu-city-league-youth-bridge").annual_snapshot.u22_players, 430);
+  assert.ok(china.summary.zh.includes("U21队、成年B队和地方城市代表队必须分开理解"));
 });
 
 test("covers Nordic identification, club-quality and academy-certification projects", () => {

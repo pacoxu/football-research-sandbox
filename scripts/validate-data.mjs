@@ -146,6 +146,8 @@ const allowedOrganizationTypes = new Set([
   "military-service-club",
   "overseas-academy",
   "national-academy",
+  "provincial-youth-team",
+  "city-representative-team",
   "football-school",
   "professional-club-unspecified"
 ]);
@@ -168,7 +170,8 @@ const allowedYouthCompetitionTypes = new Set([
   "talent-development-program",
   "academy-certification",
   "club-development-program",
-  "player-development-framework"
+  "player-development-framework",
+  "regional-city-league"
 ]);
 
 const issue16DeepSampleIds = new Set([
@@ -857,6 +860,13 @@ function validateTournamentDateRange(tournament, label = "archive tournament") {
     assert(
       range.start === null && range.end === null,
       `TBC ${label} must use null dates: ${tournament.id}`
+    );
+    return;
+  }
+  if (tournament.date_precision === "open-ended") {
+    assert(
+      tournament.status === "in-progress" && isIsoDate(range.start) && range.end === null,
+      `Open-ended ${label} must be in progress with a known start: ${tournament.id}`
     );
     return;
   }
@@ -1754,6 +1764,71 @@ function validateChineseHeritagePlayers(collection) {
   assert(perry.represented_team === null && perry.target_team === "Singapore" && perry.representation_status === "eligibility-watch", "Perry Ng must remain an eligibility watch");
   assert(collection.profiles.find((profile) => profile.id === "alexander-ndoumbou")?.representation_status === "association-locked", "Alexander N'Doumbou must retain association-lock boundary");
   assert(collection.profiles.find((profile) => profile.id === "frank-soo")?.representation_status === "wartime-unofficial", "Frank Soo appearances must remain wartime-unofficial");
+}
+
+function validateOverseasSupportPolicies(collection) {
+  assert(collection && typeof collection === "object", "Missing overseas support-policy collection");
+  assert(isIsoDate(collection.checked_at), "Invalid overseas support-policy checked_at");
+  assert(collection.scope_note?.zh && collection.scope_note?.en, "Missing overseas support-policy scope note");
+  assert(Array.isArray(collection.policies), "Invalid overseas support-policy list");
+
+  const expectedPolicies = new Set([
+    "china-team-youth-inspirational-plan-2026",
+    "future-star-overseas-youth-grant-2026"
+  ]);
+  const allowedStatuses = new Set(["first-cycle", "application-open"]);
+  const policyIds = new Set();
+  assert(collection.policies.length === expectedPolicies.size, "Expected two overseas support policies");
+
+  for (const policy of collection.policies) {
+    assert(expectedPolicies.has(policy.id), `Unexpected overseas support policy: ${policy.id}`);
+    assert(!policyIds.has(policy.id), `Duplicate overseas support policy: ${policy.id}`);
+    policyIds.add(policy.id);
+    assert(policy.name?.zh && policy.name?.en && policy.period, `Incomplete overseas support-policy identity: ${policy.id}`);
+    assert(allowedStatuses.has(policy.status), `Invalid overseas support-policy status on ${policy.id}`);
+    assert(Array.isArray(policy.administrators) && policy.administrators.length > 0, `Missing overseas support-policy administrator on ${policy.id}`);
+    for (const field of ["target_scope", "application_note", "boundary_note"]) {
+      assert(policy[field]?.zh && policy[field]?.en, `Missing localized ${field} on ${policy.id}`);
+    }
+    assert(Array.isArray(policy.eligibility) && policy.eligibility.length >= 4, `Insufficient eligibility rules on ${policy.id}`);
+    for (const condition of policy.eligibility) {
+      assert(condition.zh && condition.en, `Invalid eligibility rule on ${policy.id}`);
+    }
+    assert(Array.isArray(policy.support_items) && policy.support_items.length >= 3, `Insufficient support items on ${policy.id}`);
+    for (const item of policy.support_items) {
+      assert(item.id && item.label?.zh && item.label?.en, `Invalid support item on ${policy.id}`);
+      assert(item.amount_basis?.zh && item.amount_basis?.en, `Missing support amount basis on ${policy.id}/${item.id}`);
+      const hasAmount = Number.isFinite(item.amount_cny) && item.amount_cny > 0;
+      const hasRange = Number.isFinite(item.amount_cny_min) && Number.isFinite(item.amount_cny_max)
+        && item.amount_cny_min > 0 && item.amount_cny_max >= item.amount_cny_min;
+      assert(hasAmount || hasRange, `Invalid support amount on ${policy.id}/${item.id}`);
+    }
+    assert(Array.isArray(policy.source_links) && policy.source_links.length > 0, `Missing overseas support-policy sources on ${policy.id}`);
+    for (const source of policy.source_links) {
+      assert(source.label && /^https:\/\//.test(source.url), `Invalid overseas support-policy source on ${policy.id}`);
+    }
+  }
+
+  const inspirational = collection.policies.find((policy) => policy.id === "china-team-youth-inspirational-plan-2026");
+  assert(inspirational.support_items.length === 4, "Inspirational Plan must retain four support components");
+  assert(inspirational.reported_upper_bound?.amount_cny === 1646000, "Inspirational Plan must label its published theoretical upper bound");
+  assert(inspirational.boundary_note.zh.includes("理论上限"), "Inspirational Plan must distinguish the theoretical maximum");
+
+  const futureStar = collection.policies.find((policy) => policy.id === "future-star-overseas-youth-grant-2026");
+  assert(futureStar.application_window?.start === "2026-09-01", "Future Star must retain its application start");
+  assert(futureStar.application_window?.end === "2026-09-30", "Future Star must retain its application deadline");
+  assert(futureStar.application_window?.closing_time === "17:00", "Future Star must retain its application closing time");
+  assert(
+    JSON.stringify(futureStar.support_items.map((item) => item.amount_cny)) === JSON.stringify([450000, 350000, 250000]),
+    "Future Star funding tiers changed unexpectedly"
+  );
+
+  assert(Array.isArray(collection.non_subsidy_boundaries) && collection.non_subsidy_boundaries.length > 0, "Missing overseas support-policy boundary notes");
+  for (const boundary of collection.non_subsidy_boundaries) {
+    assert(boundary.id && boundary.label?.zh && boundary.label?.en, "Invalid overseas support-policy boundary identity");
+    assert(boundary.note?.zh && boundary.note?.en, `Missing overseas support-policy boundary note on ${boundary.id}`);
+    assert(Array.isArray(boundary.source_links) && boundary.source_links.length > 0, `Missing overseas support-policy boundary sources on ${boundary.id}`);
+  }
 }
 
 function validateOverseasTrainingPrograms(collection, dossiers, overseasHistory) {
@@ -3280,7 +3355,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     playerIds.add(player.id);
   }
 
-  assert(nativeNameAuditCount === 288, `Expected 288 audited CJK/Uzbek players, found ${nativeNameAuditCount}`);
+  assert(nativeNameAuditCount === 293, `Expected 293 audited CJK/Uzbek players, found ${nativeNameAuditCount}`);
 
   const chinaOverseasStatusCounts = countOverseasStatuses(dataset.players);
   const chinaForeignRegistrationCount = dataset.players.filter(
@@ -3549,6 +3624,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     dataset.overseasHistory
   );
   validateChineseHeritagePlayers(dataset.overseasHistory.chinese_heritage_players);
+  validateOverseasSupportPolicies(dataset.overseasHistory.overseas_support_policies);
   validateOverseasTrainingPrograms(
     dataset.overseasHistory.overseas_training_programs,
     dataset.dossiers,

@@ -1,6 +1,6 @@
 # 数据校验脚本
 
-更新时间：2026-07-25
+更新时间：2026-08-02
 
 `scripts/validate-data.mjs` 是当前数据变更的第一道程序化检查。运行方式：
 
@@ -19,7 +19,7 @@ npm run check-generated
 成功时会输出类似：
 
 ```text
-Validated 186 players, 13 tournaments, 9 projects.
+Validated 464 players, 24 tournaments, 9 projects.
 ```
 
 ## 校验链路
@@ -44,12 +44,12 @@ flowchart LR
 - 必填字段：`id`、`name`、`local_name`、`names`、`country`、`birth_date`、`age_band`、`primary_position`、`registration_club`、`training_pathway`、`focus_tags`、`tournament_participation`、`external_links`、`verification`。
 - `birth_date` 和核验日期格式必须是 `YYYY-MM-DD`。
 - 多语言姓名块必须包含 `zh`、`en`、`native`，日本球员需 `ja`，韩国球员需 `ko`。
-- 中国、日本、韩国和乌兹别克斯坦 263 名球员必须具备 `native_verification`；`verified` 姓名必须有官方来源和合法语言标签，`unresolved` 不得写入推测的本土姓名。
+- 中国、日本、韩国和乌兹别克斯坦 268 名球员必须具备 `native_verification`；`verified` 姓名必须有官方来源和合法语言标签，`unresolved` 不得写入推测的本土姓名。
 - `registration_club.name` 和 `registration_club.country` 必须是字符串。
 - `training_pathway` 不能为空，每一步至少有 `stage_label`、`organization`、`country`。
 - `external_links` 不能为空，且每条必须有合法 `type`、`label`、`http/https url`。
 - `source_layers` 如存在，必须是数组；每条需有合法 `type`、`label`、`url`、`checked_at`、`confidence`、`fields` 和 `claim`。
-- 组织类型、母组织、合作学校和路径竞赛 ID 必须匹配统一枚举与日韩体系数据。
+- 组织类型、母组织、合作学校和路径竞赛 ID 必须匹配统一枚举与多国体系数据；江苏样本另区分省级青训/代表队与城市代表队。
 - 日本/韩国 U17、U23 四队必须各 23 人，合计 92 人；每人恰有一条 AFC 报名来源。
 - 固定 16 名深度样本必须有至少一条不同于 AFC PDF 的独立官方来源；组织来源不得复用 `assets.the-afc.com` URL。
 - 根宝足球基地专题必须保持七个代际、26 名代表球员；每名球员都要有合法 `current_status`、核查日期、可信度和现状来源，1314 梯队需保留当前项目状态。
@@ -67,7 +67,7 @@ flowchart LR
 
 赛事和专题：
 
-- `tournaments[].last_checked` 必须是日期；`date_precision=exact` 时起止日期必填，`date_precision=tbc` 时起止日期必须同时为空。
+- `tournaments[].last_checked` 必须是日期；`date_precision=exact` 时起止日期必填，`date_precision=tbc` 时起止日期必须同时为空；`date_precision=open-ended` 只允许用于已知开赛日、未知精确结束日的 `in-progress` 赛事。
 - `overseas-history` 的 bucket、featured records、big five checklist 结构必须可用。
 - `dossiers` 必须有 `id`、`name`、`last_reviewed`、`timeline`、`roster_views`，可选 link audit 和 search disambiguation 也会校验日期与数组结构。
 - `tournament-archive` 必须有赛事 ID、名称、合法日期精度、来源链接、中国队比赛和关键球员数组；可选 `source_version`、`source_checked_at`、`source_conflict_note`、`competition_name_history` 如出现也会校验结构。`comparison_rosters` 目前固定覆盖 17 个 23 人完整组合和 2 个 0 人未参赛组合，并校验来源、核查日、唯一参与记录和号码序列；伊朗 U23 2026 是唯一允许的官方号码异常。`comparison_roster_candidates` 仅允许在 `2034-cup-2026` 的部分审计边界出现，当前两条候选必须保持 0 人、非国家队声明且不可生成人物记录。

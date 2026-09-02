@@ -7,7 +7,7 @@
 
 当前状态：研究样本库，最近维护日期 `2026-09-02`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
 
-当前结构化基线：564 名球员、23 项赛事快照、10 个专题项目，覆盖 9 个国家/地区。
+当前结构化基线：573 名球员、26 项赛事快照、10 个专题项目，覆盖 9 个国家/地区。
 
 维护入口：
 
@@ -15,6 +15,7 @@
 - 项目范围与非官方声明：[docs/scope.md](docs/scope.md)
 - 来源政策与冲突处理：[docs/source-policy.md](docs/source-policy.md)
 - 数据字典：[docs/data-dictionary.md](docs/data-dictionary.md)
+- 网站发布与字段边界：[docs/publication-policy.md](docs/publication-policy.md)
 - 世界杯预测方法：[docs/world-cup-forecast.md](docs/world-cup-forecast.md)
 - 覆盖矩阵：[docs/coverage-matrix.md](docs/coverage-matrix.md)
 - 代码与数据授权边界：[LICENSE](LICENSE)
@@ -31,10 +32,12 @@ Issue 新增、数据纠错、来源失效、页面问题和口径讨论分别�
 - `AFC U17 Asian Cup Saudi Arabia 2026`
 - `AFC U23 Asian Cup Saudi Arabia 2026`
 - `Chinese Super League 2026` 青年样本
-- 日本、韩国 U18 / 大学 / 职业桥梁体系，以及挪威、丹麦、瑞典青训项目与学院认证样本
+- 中国足协—会员协会—学校/社会青训/俱乐部治理链，日本、韩国 U18 / 大学 / 职业桥梁体系，以及挪威、丹麦、瑞典青训项目与学院认证样本
+- 江苏省城市足球联赛 2025/2026 赛事快照与可核青训球员路径样本
 - 根宝足球基地专题：七个代际、26 名代表球员、当前状态与来源边界
 - 中国青训与董路足球小将专题追踪
 - 中日韩留洋历史数据的建档模板
+- 中国足协海外球员资助政策：区分“青少年励志计划”与“未来之星计划”的对象、金额、申请状态，以及俱乐部培训补偿与个人补贴的边界
 - 五大联赛亚洲教练记录，区分 AFC 主口径与土耳其 / 以色列等广义边界项
 - 五大联赛之外的亚洲主教练试点，区分欧洲非五大、AFC 国字号和亚洲顶级联赛任期
 - 单页数据中心集中展示覆盖质量、中国/日韩/北欧六国青训路径比较、项目目录与教练目录
@@ -97,7 +100,7 @@ python3 -m http.server 4173
 - 球员原始数据先按年龄段放在 `data/raw/players/*.json`。
 - 每条球员记录至少带上 `birth_date`、`registration_club`、`training_pathway`、`tournament_participation`、`external_links`。
 - `registration_club.organization_type` 区分高中、俱乐部梯队、基层 / 社区俱乐部、大学、职业队、成年军队球队、海外梯队和国家级学院；韩国合作高中不能覆盖母俱乐部字段。
-- `data/raw/youth-development-systems.json` 维护中国、日韩与北欧样本的稳定体系结构；中国条目区分历史预备队联赛、U21联赛、B队中乙通道和U19/U17/U15赛事，年度队数与赛季规则只放在 `annual_snapshot`。
+- `data/raw/youth-development-systems.json` 维护中国、日韩与北欧样本的稳定体系结构；中国条目区分足协/会员协会治理、中国青少年足球联赛、历史预备队联赛、U21联赛、B队中乙通道、U19/U17/U15赛事和苏超成年桥梁，年度队数与赛季规则只放在 `annual_snapshot`。
 - `coaches.html` 展示 `china-youth-development-coaches.json` 的基层教练样本和 `china-men-youth-coaches.json` 的国字号 U 系列教练组，并逐条提供原始来源入口。
 - `data/raw/dossiers.json` 的 `genbao-football-base` 记录根宝基地代际、代表球员、当前状态、可信度和现状来源；无法确认的当前去向必须标记为待复核。
 - `data/raw/big-five-debut-forecast.json` 维护中国球员下一位五大联赛首秀的透明评分快照；生成结果是研究概率与公平赔率，不是博彩公司盘口。
@@ -117,6 +120,9 @@ python3 -m http.server 4173
 - `docs/research/asian-chinese-player-coach-collection.md` 记录亚洲/中国球员与教练的信息收集口径、当前覆盖和待核队列。
 - `docs/research/scouting-source-directory.md` 维护海外青训、球探平台、青年球员报告和公开数据站的后续检索方向。
 - `docs/research/china-league-pyramid-and-regional-super-leagues.md` 区分中国职业联赛层级、中冠通道和苏超/东北超/赣超/湘超等地方城市赛事。
+- `docs/research/china-fa-system-and-jiangsu-city-league-youth.md` 说明中国足协与地方会员协会的青训治理链、江苏青训结构，以及苏超青年球员的建档边界。
+- 同一说明同步维护中国足协海外球员资助政策，并把申请资格、评审、公示、实际获款和 FIFA 培训补偿分开记录。
+- `docs/research/china-football-system-and-2034-cup-tree.md` 用树状图拆分足协治理、成年比赛、职业球员培养、青年/青少年比赛及 2034 杯 U12 赛制。
 
 ## 现阶段种子范围
 
@@ -132,6 +138,7 @@ python3 -m http.server 4173
 - 五大联赛亚洲教练：主口径收录 Patrick Kisnorbo、Ange Postecoglou 两名 AFC 成员协会教练；广义边界项另列 Özcan Arkoç、Fatih Terim、Avram Grant、Tayfun Korkut、Nuri Şahin 等土耳其 / 以色列样本。
 - 亚洲教练扩展：首批落库 Ange Postecoglou、Tony Popovic、Hajime Moriyasu、Hong Myung-bo、Chan Yuen-ting 五名 AFC 成员协会教练，共 10 段官方来源任期。
 - 中超 2026 青年样本：已开始补当前一线队 U21 和具备留洋经历的 U23，中国球员若已在库内建档则直接补中超/留洋字段，不重复建第二条。
+- 苏超 2025/2026：已建立两届赛事快照，首批收录苗润东、周禹呈、刘靖磊、常永浩、赵启森 5 名可核青年路径样本；正式报名、出场和赛季前观察分开记录。
 - 乌兹别克斯坦 U17：已按 AFC 2026 最终报名补齐 23 人，并新增青年成绩、青训基础设施和 Khusanov 留洋路径研究说明。
 - 董路足球小将：已补专题卡片、公开批次主干和录入规范，下一步继续拆逐名档案。
 

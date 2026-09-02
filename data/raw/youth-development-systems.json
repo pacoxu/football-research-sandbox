@@ -1,20 +1,80 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-07-20",
+  "checked_at": "2026-08-02",
   "systems": [
     {
-      "id": "china-professional-youth",
+      "id": "china-fa-and-professional-youth",
       "country": "China PR",
       "name": {
-        "zh": "中国职业俱乐部梯队与青年联赛体系",
-        "en": "China professional-club reserve and youth competition system",
-        "native": "中国职业俱乐部梯队与青年联赛体系"
+        "zh": "中国足协、会员协会与俱乐部青训体系",
+        "en": "China FA, member-association and club youth-development system",
+        "native": "中国足协、会员协会与俱乐部青训体系"
       },
       "summary": {
-        "zh": "中国职业足球历史上举办过中超、中甲预备队联赛，但当前全国赛事已不再统一使用“预备队联赛”名称。现行衔接主要由职业俱乐部U21联赛、部分俱乐部B队参加中乙，以及U19、U17、U15等年龄段赛事共同承担；U21队与成年B队必须分开理解。",
-        "en": "China previously operated reserve leagues linked to the top professional divisions, but the current national structure no longer uses one unified reserve-league competition. Development minutes are now spread across the professional-club U21 league, selected B teams in China League Two, and U19, U17 and U15 competitions. An age-limited U21 team is not automatically the same entity as a senior B team."
+        "zh": "中国足协负责全国规则、注册和全国性青少年赛事，省级与重点城市会员协会承担属地注册、地方竞赛、培训和人才发现；学校、体校、社会青训机构、职业俱乐部梯队是日常培养主体。全国主干是中国青少年足球联赛，职业端另有U15、U17、U19、U21、B队和一线队等桥梁；U21队、成年B队和地方城市代表队必须分开理解。",
+        "en": "The CFA sets national rules, registration and nationwide youth competitions, while provincial and key-city member associations handle local registration, competitions, training and talent identification. Schools, sports schools, community academies and professional-club academies provide daily development. The Chinese Youth Football League is the open national spine, while the professional pathway adds U15, U17, U19, U21, B-team and first-team bridges. U21 sides, senior B teams and regional city representative teams are separate entities."
       },
+      "governance_structure": [
+        {
+          "level": "national",
+          "organization": "Chinese Football Association",
+          "role": {
+            "zh": "制定行业规则与训练大纲，建设全国青少年注册系统，主办中国青少年足球联赛并组织各年龄段国家队选材。",
+            "en": "Sets industry rules and the national training syllabus, leads the integrated youth-registration system, runs the Chinese Youth Football League and organizes national-team talent identification."
+          }
+        },
+        {
+          "level": "member-association",
+          "organization": "Provincial and key-city member associations",
+          "role": {
+            "zh": "承担属地会员组织、球员与青训机构注册、地方赛事、教练与裁判培训，并与全国赛事办公室衔接。",
+            "en": "Manage local membership, player and academy registration, regional competitions, coach and referee development, and links to national competition offices."
+          }
+        },
+        {
+          "level": "development-provider",
+          "organization": "Schools, sports schools, community academies and clubs",
+          "role": {
+            "zh": "负责日常训练、参赛和升学或职业路径；同一球员可以在学校、省市梯队和俱乐部之间形成多节点履历，不能只用一条“青训归属”概括。",
+            "en": "Provide daily training and competition plus education or professional pathways. A player may have school, provincial/city team and club nodes that should not be collapsed into one academy attribution."
+          }
+        }
+      ],
       "registration_categories": [
+        {
+          "id": "china-member-association-youth-registration",
+          "age_band": "all-youth",
+          "label": {
+            "zh": "地方会员协会注册与备案",
+            "en": "Local member-association registration and CFA filing",
+            "native": "地方会员协会注册与备案"
+          },
+          "organization_types": [
+            "provincial-youth-team",
+            "community-club",
+            "football-school",
+            "club-academy"
+          ],
+          "source_url": "https://www.thecfa.cn/qsn/20240328/33951.html"
+        },
+        {
+          "id": "china-open-youth-participation",
+          "age_band": "u8-u19",
+          "label": {
+            "zh": "学校、体校、俱乐部与社会青训开放参赛",
+            "en": "Open entry for schools, sports schools, clubs and community academies",
+            "native": "学校、体校、俱乐部与社会青训开放参赛"
+          },
+          "organization_types": [
+            "high-school",
+            "university",
+            "provincial-youth-team",
+            "community-club",
+            "football-school",
+            "club-academy"
+          ],
+          "source_url": "https://www.thecfa.cn/qsn/20250418/35874.html"
+        },
         {
           "id": "china-professional-club-u21",
           "age_band": "u21",
@@ -58,6 +118,80 @@
         }
       ],
       "competitions": [
+        {
+          "id": "china-cfa-member-association-framework",
+          "age_band": "all-youth",
+          "competition_type": "player-development-framework",
+          "name": {
+            "zh": "中国足协—地方会员协会青训治理链",
+            "en": "CFA–local member-association youth governance chain",
+            "native": "中国足协—地方会员协会青训治理链"
+          },
+          "organization_types": [
+            "provincial-youth-team",
+            "community-club",
+            "football-school",
+            "club-academy",
+            "high-school"
+          ],
+          "stable_structure": {
+            "zh": "中国足协会员体系包括省级、重点城市和行业协会。地方协会不是职业俱乐部的梯队，而是属地注册、竞赛、培训和行业服务节点；球员的学校、省市代表队、社会机构与俱乐部经历必须分别记录。",
+            "en": "The CFA membership network includes provincial, key-city and industry associations. A local association is not a professional club academy: it is a registration, competition, training and industry-service node. School, provincial/city representative, community-academy and club experiences must be recorded separately."
+          },
+          "source_url": "https://www.thecfa.cn/huiyuandanwei/index.html"
+        },
+        {
+          "id": "china-youth-football-league",
+          "age_band": "u8-u19",
+          "competition_type": "league-pyramid",
+          "name": {
+            "zh": "中国青少年足球联赛",
+            "en": "Chinese Youth Football League",
+            "native": "中国青少年足球联赛"
+          },
+          "organization_types": [
+            "high-school",
+            "university",
+            "provincial-youth-team",
+            "community-club",
+            "football-school",
+            "club-academy"
+          ],
+          "stable_structure": {
+            "zh": "赛事由地方预选赛、大区赛和全国总决赛组成，学校、体校、俱乐部青训梯队和社会青训机构可开放参赛。省级会员协会或足球重点城市举办、符合开放原则的最高水平赛事可以作为预选赛。",
+            "en": "The competition progresses through local qualifiers, regional rounds and national finals, with open entry for schools, sports schools, club academies and community academies. Eligible top-level events run by provincial member associations or key football cities may serve as qualifiers."
+          },
+          "source_url": "https://www.thecfa.cn/qsn/20250418/35874.html"
+        },
+        {
+          "id": "jiangsu-city-league-youth-bridge",
+          "age_band": "senior-bridge",
+          "competition_type": "regional-city-league",
+          "name": {
+            "zh": "江苏省城市足球联赛青年桥梁（苏超）",
+            "en": "Jiangsu City Football League youth bridge (Suchao)",
+            "native": "江苏省城市足球联赛"
+          },
+          "organization_types": [
+            "city-representative-team"
+          ],
+          "sample_focus_tag": "jiangsu-city-league-youth",
+          "stable_structure": {
+            "zh": "苏超是成年地方城市代表队联赛，不是青少年联赛，也不是固定职业金字塔层级。2026赛季通过U22球员规模和上场要求提供成年比赛分钟，连接校园、省市梯队、社会青训与职业观察，但参赛本身不能证明职业注册或某一家机构的培养归属。",
+            "en": "Suchao is a senior regional city-representative league, not a youth league or a fixed professional-pyramid tier. Its 2026 U22 roster and playing requirements provide senior minutes across school, provincial/city, community and professional pathways, but participation alone does not prove professional registration or academy attribution."
+          },
+          "annual_snapshot": {
+            "season": "2026",
+            "players": 647,
+            "u22_players": 430,
+            "student_players": 224,
+            "note": {
+              "zh": "公开赛季快照为647名有效报名球员、430名U22球员和224名在册学生球员；赛事另执行U22以下6名球员上场政策。数字应按年度重新核对。",
+              "en": "The published season snapshot lists 647 valid registrations, 430 U22 players and 224 registered student players, alongside a rule requiring six U22 players on the field. These figures and rules must be rechecked each season."
+            }
+          },
+          "source_url": "https://www.sport.gov.cn/n20001280/n20067626/n20067732/c29549657/content.html"
+        },
         {
           "id": "china-former-reserve-league",
           "age_band": "reserve",
@@ -168,6 +302,26 @@
         }
       ],
       "source_links": [
+        {
+          "label": "CFA member-association structure and responsibilities",
+          "url": "https://www.thecfa.cn/huiyuandanwei/index.html",
+          "checked_at": "2026-08-02"
+        },
+        {
+          "label": "China youth football reform implementation plan",
+          "url": "https://www.thecfa.cn/qsn/20240328/33951.html",
+          "checked_at": "2026-08-02"
+        },
+        {
+          "label": "Chinese Youth Football League organization plan",
+          "url": "https://www.thecfa.cn/qsn/20250418/35874.html",
+          "checked_at": "2026-08-02"
+        },
+        {
+          "label": "Jiangsu youth-development system and Suchao U22 bridge",
+          "url": "https://www.sport.gov.cn/n20001280/n20067626/n20067732/c29549657/content.html",
+          "checked_at": "2026-08-02"
+        },
         {
           "label": "CFA 2020 professional-league policy and reserve-league change",
           "url": "https://www.thecfa.cn/lstz/20191231/28443.html",

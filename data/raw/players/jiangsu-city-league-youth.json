@@ -1,0 +1,410 @@
+[
+  {
+    "id": "cn-miao-rundong-2007",
+    "name": "Miao Rundong",
+    "local_name": "苗润东",
+    "country": "China PR",
+    "birth_date": "2007-05-22",
+    "age_band": "u20",
+    "primary_position": "Left Winger",
+    "registration_club": {
+      "name": "Jiangsu Changjin FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "as_of": "2026-05-22"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "江苏省队与江宁基地培养节点",
+        "organization": "Jiangsu Jiangning Football Training Base",
+        "country": "China",
+        "note": "江苏青少年赛事材料可核其2007-05-22出生；中国足协2025年2007年龄段精英训练营通知将其单位列为江苏省江宁足球训练基地。",
+        "organization_type": "provincial-youth-team"
+      },
+      {
+        "stage_label": "2026苏超徐州队",
+        "organization": "Xuzhou City Team",
+        "country": "China",
+        "note": "2026苏超对泰州一战替补登场并梅开二度；这是城市代表队成年赛事节点，不覆盖其俱乐部注册。",
+        "organization_type": "city-representative-team"
+      },
+      {
+        "stage_label": "2026江苏常晋与中国U19",
+        "organization": "Jiangsu Changjin FC",
+        "country": "China",
+        "note": "中国足协2026年第三期U19集训通知将苗润东列在江苏常晋足球俱乐部名下，该通知作为当前俱乐部时点来源。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "jiangsu-city-league-youth",
+      "suchao-2026",
+      "winger-watch"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "jiangsu-city-league-2026",
+        "label": "2026江苏省城市足球联赛",
+        "team": "Xuzhou City Team",
+        "squad_status": "registered",
+        "appearances": 1,
+        "goals": 2,
+        "minutes": null,
+        "note": "公开战报可直接确认其在2026-04-18徐州3比0泰州一战第38分钟替补登场，并在第79、86分钟进球；当前只记可核下限，不推算赛季累计。"
+      },
+      {
+        "label": "中国U19国家队2026年第三期集训",
+        "team": "China PR U19",
+        "squad_status": "called-up",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协通知确认以江苏常晋球员身份入选赴上海、法国集训及土伦杯备战名单；集训征召不自动等于赛事最终报名或出场。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA China U19 third camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260522/37710.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA 2007 elite-player camp notice",
+        "url": "https://www.thecfa.cn/qttz/20250305/35699.html"
+      },
+      {
+        "type": "news",
+        "label": "China Jiangsu Net 2026 Suchao youth report",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260428_s69f09eb7e4b077df9927f7f0.shtml"
+      },
+      {
+        "type": "school",
+        "label": "Jiangsu youth competition registration material",
+        "url": "https://www.sports.edu.cn/web/notice/images/202310121697077736875_166.pdf"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-08-02",
+      "notes": "出生日期由江苏青少年赛事材料支撑，当前俱乐部与U19征召由中国足协通知支撑，2026苏超出场和两球由省级权威媒体战报支撑。位置按公开比赛与人物资料统一为左边锋；未知赛季累计保持null。"
+    }
+  },
+  {
+    "id": "cn-zhou-yucheng-2009",
+    "name": "Zhou Yucheng",
+    "local_name": "周禹呈",
+    "country": "China PR",
+    "birth_date": "2009-01-09",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "registration_club": {
+      "name": "Jiangsu Yixing No. 1 High School",
+      "country": "China",
+      "organization_type": "high-school",
+      "as_of": "2026-03-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "宜兴基层俱乐部启蒙",
+        "organization": "Yixing Zhoutie Jiuteng Football Club",
+        "country": "China",
+        "note": "宜兴市政府报道确认其2019年开始在周铁久滕足球俱乐部接受训练。",
+        "organization_type": "community-club"
+      },
+      {
+        "stage_label": "江苏09/10省队",
+        "organization": "Jiangsu 2009/10 Provincial Team",
+        "country": "China",
+        "note": "学校人物资料将其列为江苏09/10省队主力守门员，并记录2024全国体校杯冠军、2025全运会第四名等节点。",
+        "organization_type": "provincial-youth-team"
+      },
+      {
+        "stage_label": "宜兴一中校园节点",
+        "organization": "Jiangsu Yixing No. 1 High School",
+        "country": "China",
+        "note": "2026赛季前人物资料确认其为宜兴一中现读学生。",
+        "organization_type": "high-school"
+      },
+      {
+        "stage_label": "2026苏超无锡队",
+        "organization": "Wuxi City Team",
+        "country": "China",
+        "note": "2026苏超青年报道确认无锡队门将均在19岁以下，并点名周禹呈为曾入选中国U16集训的宜兴一中球员。",
+        "organization_type": "city-representative-team"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "jiangsu-city-league-youth",
+      "suchao-2026",
+      "school-system"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "jiangsu-city-league-2026",
+        "label": "2026江苏省城市足球联赛",
+        "team": "Wuxi City Team",
+        "squad_status": "registered",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "省级权威媒体的赛季青年专题将其列为无锡队19岁以下门将和国字号观察对象；逐场出场与分钟尚未完成官方比赛报告复核。"
+      },
+      {
+        "label": "中国U16国家队2025年第四期集训",
+        "team": "China PR U16",
+        "squad_status": "called-up",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "宜兴市政府报道依据中国足协通知确认其入选；集训身份与正式赛事报名分开记录。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "school",
+        "label": "Yixing education four-player profile",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml"
+      },
+      {
+        "type": "official",
+        "label": "Yixing government U16 camp report",
+        "url": "https://www.yixing.gov.cn/doc/2025/10/10/1358503.shtml"
+      },
+      {
+        "type": "news",
+        "label": "China Jiangsu Net 2026 Suchao youth report",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260428_s69f09eb7e4b077df9927f7f0.shtml"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-08-02",
+      "notes": "出生日期、门将位置、现读学校、省队身份和赛季前无锡队节点由宜兴教育资料支撑；宜兴市政府另行确认基层俱乐部训练起点与U16集训。苏超逐场累计仍待官方比赛报告。"
+    }
+  },
+  {
+    "id": "cn-liu-jinglei-2010",
+    "name": "Liu Jinglei",
+    "local_name": "刘靖磊",
+    "country": "China PR",
+    "birth_date": "2010-01-16",
+    "age_band": "u17",
+    "primary_position": "Right Winger",
+    "registration_club": {
+      "name": "Jiangsu Yixing No. 1 High School",
+      "country": "China",
+      "organization_type": "high-school",
+      "as_of": "2026-03-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "宜兴校园足球路径",
+        "organization": "Jiangsu Yixing No. 1 High School",
+        "country": "China",
+        "note": "人物资料列明其小学就读宜兴市实验小学、初中就读宜兴外国语学校、当前就读宜兴一中。",
+        "organization_type": "high-school"
+      },
+      {
+        "stage_label": "江苏09/10省队",
+        "organization": "Jiangsu 2009/10 Provincial Team",
+        "country": "China",
+        "note": "学校人物资料确认其为江苏09/10省队成员，并参加2025全运会等省队赛事。",
+        "organization_type": "provincial-youth-team"
+      },
+      {
+        "stage_label": "2026苏超无锡队",
+        "organization": "Wuxi City Team",
+        "country": "China",
+        "note": "2026-04-25客战连云港时以16岁高一学生身份首发，成为当时赛季最年轻首发球员。",
+        "organization_type": "city-representative-team"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "jiangsu-city-league-youth",
+      "suchao-2026",
+      "school-system",
+      "winger-watch"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "jiangsu-city-league-2026",
+        "label": "2026江苏省城市足球联赛",
+        "team": "Wuxi City Team",
+        "squad_status": "registered",
+        "appearances": 1,
+        "goals": null,
+        "minutes": null,
+        "note": "公开报道可确认2026-04-25对连云港首发；当前只记至少1次出场，赛季累计、进球和分钟待官方逐场复核。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "school",
+        "label": "Yixing education four-player profile",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml"
+      },
+      {
+        "type": "news",
+        "label": "China Jiangsu Net 2026 Suchao youth report",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260428_s69f09eb7e4b077df9927f7f0.shtml"
+      },
+      {
+        "type": "official",
+        "label": "Wuxi CPPCC match report",
+        "url": "https://zx.wuxi.gov.cn/doc/2026/04/26/4765267.shtml"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-08-02",
+      "notes": "出生日期、边锋位置、学校与江苏省队身份由宜兴教育资料确认；2026苏超首发由省级媒体与无锡政务报道交叉确认。累计统计保持部分完整。"
+    }
+  },
+  {
+    "id": "cn-chang-yonghao-2010",
+    "name": "Chang Yonghao",
+    "local_name": "常永浩",
+    "country": "China PR",
+    "birth_date": "2010-03-29",
+    "age_band": "u17",
+    "primary_position": "Right-Back",
+    "registration_club": {
+      "name": "Jiangsu Yixing No. 1 High School",
+      "country": "China",
+      "organization_type": "high-school",
+      "as_of": "2026-03-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "宜兴校园足球路径",
+        "organization": "Jiangsu Yixing No. 1 High School",
+        "country": "China",
+        "note": "人物资料列明其实验小学、宜兴外国语学校到宜兴一中的连续校园节点。",
+        "organization_type": "high-school"
+      },
+      {
+        "stage_label": "江苏09/10省队",
+        "organization": "Jiangsu 2009/10 Provincial Team",
+        "country": "China",
+        "note": "人物资料确认其为江苏09/10省队右后卫，并记录2025省长杯、省锦标赛与精英联赛冠军。",
+        "organization_type": "provincial-youth-team"
+      },
+      {
+        "stage_label": "2026苏超无锡队赛季前观察",
+        "organization": "Wuxi City Team",
+        "country": "China",
+        "note": "2026赛季前无锡对苏州热身赛随无锡队亮相；正式联赛报名与逐场出场仍需赛事官方名单补证。",
+        "organization_type": "city-representative-team"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "jiangsu-city-league-youth",
+      "suchao-2026",
+      "school-system",
+      "defender-watch"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "jiangsu-city-league-2026",
+        "label": "2026江苏省城市足球联赛赛季观察",
+        "team": "Wuxi City Team",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "已确认参加赛季前无锡队热身赛，但当前没有足够直接来源把该节点升级为正式联赛出场。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "school",
+        "label": "Yixing education four-player profile",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml"
+      },
+      {
+        "type": "news",
+        "label": "China Jiangsu Net 2026 Suchao youth report",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260428_s69f09eb7e4b077df9927f7f0.shtml"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-08-02",
+      "notes": "出生日期、位置、学校与省队身份可直接核验；当前只有赛季前无锡队热身节点，因此苏超正式报名和出场仍标tracked。"
+    }
+  },
+  {
+    "id": "cn-zhao-qisen-2009",
+    "name": "Zhao Qisen",
+    "local_name": "赵启森",
+    "country": "China PR",
+    "birth_date": "2009-01-05",
+    "age_band": "u17",
+    "primary_position": "Centre-Back",
+    "registration_club": {
+      "name": "Jiangsu Yixing No. 1 High School",
+      "country": "China",
+      "organization_type": "high-school",
+      "as_of": "2026-03-30"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "宜兴校园足球路径",
+        "organization": "Jiangsu Yixing No. 1 High School",
+        "country": "China",
+        "note": "人物资料列明其实验小学、宜兴外国语学校到宜兴一中的连续校园节点。",
+        "organization_type": "high-school"
+      },
+      {
+        "stage_label": "江苏09省队与华东国少训练营",
+        "organization": "Jiangsu 2009 Provincial Team",
+        "country": "China",
+        "note": "人物资料确认其为江苏09省队中后卫，并记录2023华东国少训练营、2024全国体校杯冠军及2025全运会第四名。",
+        "organization_type": "provincial-youth-team"
+      },
+      {
+        "stage_label": "2026苏超无锡队赛季前观察",
+        "organization": "Wuxi City Team",
+        "country": "China",
+        "note": "2026赛季前无锡对苏州热身赛随无锡队亮相；当前不把热身身份写成正式联赛出场。",
+        "organization_type": "city-representative-team"
+      }
+    ],
+    "focus_tags": [
+      "china-youth",
+      "jiangsu-city-league-youth",
+      "suchao-2026",
+      "school-system",
+      "defender-watch"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "jiangsu-city-league-2026",
+        "label": "2026江苏省城市足球联赛赛季观察",
+        "team": "Wuxi City Team",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "已确认参加赛季前无锡队热身赛；正式联赛报名、比赛名单和分钟待官方来源。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "school",
+        "label": "Yixing education four-player profile",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-08-02",
+      "notes": "出生日期、位置、学校、省队与华东训练营节点来自宜兴教育资料；苏超只确认赛季前球队观察，尚未升级为正式联赛出场。"
+    }
+  }
+]

@@ -55,24 +55,24 @@ flowchart LR
   Upload --> Deploy["actions/deploy-pages"]
 ```
 
-Pages 构建会重新运行 `prepare-data`，然后把以下内容复制到 `dist/`：
+Pages 构建会重新运行 `prepare-data`，然后通过 `scripts/stage-pages.mjs` 把以下内容复制到 `dist/`：
 
 - 根目录下的 `*.html`
 - `assets/**`
-- `data/**`
+- `data/site/**`
 
-`storage/**` 不会被复制到 Pages artifact。
+`data/raw/**`、`data/schema/**`、`storage/**` 和 `docs/**` 不会被复制到 Pages artifact。发布字段边界见 `docs/publication-policy.md`。
 
 ## raw、site、storage 的边界
 
 | 路径 | 角色 | 是否手工维护 | 是否提交 | 是否发布到 Pages | 是否需要 review |
 | --- | --- | --- | --- | --- | --- |
-| `data/raw/**` | 源数据 | 是 | 是 | 是，作为 `data/raw/**` 一起被复制 | 是，重点 review |
+| `data/raw/**` | 源数据 | 是 | 是 | 否 | 是，重点 review |
 | `data/site/players.json` | 前端球员聚合 JSON | 否，由脚本生成 | 是 | 是，页面直接 fetch | 是，确认生成结果和 diff |
 | `data/site/overview.json` | 前端总览聚合 JSON | 否，由脚本生成 | 是 | 是，页面直接 fetch | 是，确认统计和聚合 |
 | `data/site/meta.json` | 构建、覆盖与质量元信息 | 否，由脚本生成 | 是 | 是，数据中心直接 fetch | 是，确认状态与统计口径 |
 | `data/site/world-cup-forecast.json` | 2030—2042 世界杯预测、回测与区间 | 否，由预测脚本生成 | 是 | 是，预测页直接 fetch | 是，确认模型假设、名额校准和生成结果 |
-| `data/schema/**` | Draft 2020-12 Schema 与 manifest | 是 | 是 | 是 | 是，字段结构变更时同步 review |
+| `data/schema/**` | Draft 2020-12 Schema 与 manifest | 是 | 是 | 否 | 是，字段结构变更时同步 review |
 | `storage/youth-football.sqlite` | 本地 SQLite 查询库 | 否，由脚本生成 | 否，`.gitignore` 已排除 | 否 | 不 review 文件本身 |
 | `dist/**` | Pages 构建 artifact | 否，由 CI 生成 | 否 | 是，作为部署 artifact | 不在 PR 中 review |
 | `outputs/**` | 本地图片/报告等产物 | 否，按具体任务生成 | 默认不提交 | 否，除非另有页面集成 | 只在对应任务 review |
@@ -129,6 +129,6 @@ PR review 时按以下顺序看：
 
 `npm run check-generated` 会在临时目录重新生成全部受管 `data/site` 文件并逐字节比较，不会先覆盖工作区，因此适合本地检查和 CI。仓库提交的 `meta.json` 始终是可复现的未盖章版本；部署工作流只修改 `dist/data/site/meta.json`。
 
-## 后续可做
+## Pages 发布契约
 
-- 让 Pages artifact 只发布必要的 `data/site/**`，避免发布 `data/raw/**`，前提是先确认外部读者不依赖 raw JSON。
+`npm run stage-pages` 只发布 `data/site/**`。`tests/pages-publication.test.mjs` 同时检查目录白名单和球员审计字段白名单，避免后续修改重新把 raw、schema 或维护字段带入 Pages。

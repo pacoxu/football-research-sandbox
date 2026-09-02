@@ -13,16 +13,16 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 956,
-    "stale_records": 148,
+    "record_count": 971,
+    "stale_records": 153,
     "needs_review_records": 347
   },
   "freshness": {
     "as_of": "2026-09-02",
-    "audited_records": 1258,
-    "overdue": 151,
+    "audited_records": 1274,
+    "overdue": 158,
     "by_window": {
-      "30": 151,
+      "30": 158,
       "90": 0,
       "180": 0
     }
@@ -34,18 +34,18 @@
         "zh": "球员",
         "en": "Players"
       },
-      "record_count": 568,
+      "record_count": 573,
       "quality": {
         "complete": 58,
         "mixed": 7,
         "partial": 42,
         "needs-review": 313,
-        "stale": 148,
+        "stale": 153,
         "excluded": 0
       },
       "source_tiers": {
-        "1": 542,
-        "2": 2,
+        "1": 545,
+        "2": 4,
         "3": 1,
         "4": 0,
         "5": 2,
@@ -56,7 +56,7 @@
         "oldest": "2026-05-22",
         "newest": "2026-09-02"
       },
-      "overdue_records": 148,
+      "overdue_records": 153,
       "missing_fields": [
         {
           "field": "names.native_verified",
@@ -74,11 +74,11 @@
         "zh": "当前赛事",
         "en": "Current tournaments"
       },
-      "record_count": 24,
+      "record_count": 26,
       "quality": {
         "complete": 15,
         "mixed": 0,
-        "partial": 9,
+        "partial": 11,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -90,7 +90,7 @@
         "4": 0,
         "5": 1,
         "6": 0,
-        "unclassified": 8
+        "unclassified": 10
       },
       "checked_at": {
         "oldest": "2026-05-22",
@@ -105,11 +105,11 @@
         "zh": "赛事档案",
         "en": "Tournament archive"
       },
-      "record_count": 73,
+      "record_count": 75,
       "quality": {
         "complete": 0,
         "mixed": 0,
-        "partial": 73,
+        "partial": 75,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -121,7 +121,7 @@
         "4": 0,
         "5": 57,
         "6": 0,
-        "unclassified": 16
+        "unclassified": 18
       },
       "checked_at": {
         "oldest": "2026-06-28",
@@ -135,7 +135,7 @@
         },
         {
           "field": "source_version",
-          "count": 18
+          "count": 20
         },
         {
           "field": "source_checked_at",
@@ -149,9 +149,9 @@
         "zh": "青训项目",
         "en": "Youth programmes"
       },
-      "record_count": 41,
+      "record_count": 44,
       "quality": {
-        "complete": 32,
+        "complete": 35,
         "mixed": 0,
         "partial": 9,
         "needs-review": 0,
@@ -159,7 +159,7 @@
         "excluded": 0
       },
       "source_tiers": {
-        "1": 32,
+        "1": 35,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -260,9 +260,9 @@
         "zh": "国家青训节点",
         "en": "National pathway nodes"
       },
-      "record_count": 32,
+      "record_count": 35,
       "quality": {
-        "complete": 32,
+        "complete": 35,
         "mixed": 0,
         "partial": 0,
         "needs-review": 0,
@@ -270,7 +270,7 @@
         "excluded": 0
       },
       "source_tiers": {
-        "1": 32,
+        "1": 35,
         "2": 0,
         "3": 0,
         "4": 0,
@@ -279,8 +279,8 @@
         "unclassified": 0
       },
       "checked_at": {
-        "oldest": "2026-07-20",
-        "newest": "2026-07-20"
+        "oldest": "2026-08-02",
+        "newest": "2026-08-02"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -490,224 +490,245 @@
         "id": "system:japan-university-regional-leagues",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-u18-prefectural-leagues": {
         "id": "system:japan-u18-prefectural-leagues",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-u18-premier-league": {
         "id": "system:japan-u18-premier-league",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-u18-prince-league": {
         "id": "system:japan-u18-prince-league",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-u18-premier-final": {
         "id": "system:japan-u18-premier-final",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:korea-high-school-championship": {
         "id": "system:korea-high-school-championship",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
+        "missing_fields": []
+      },
+      "system:jiangsu-city-league-youth-bridge": {
+        "id": "system:jiangsu-city-league-youth-bridge",
+        "status": "complete",
+        "source_tier": 1,
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-high-school-inter-high": {
         "id": "system:japan-high-school-inter-high",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-high-school-championship": {
         "id": "system:japan-high-school-championship",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-all-university-championship": {
         "id": "system:japan-all-university-championship",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-club-youth-u18": {
         "id": "system:japan-club-youth-u18",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:sweden-national-game-formats": {
         "id": "system:sweden-national-game-formats",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:china-b-teams-league-two": {
         "id": "system:china-b-teams-league-two",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:china-professional-u17-u15": {
         "id": "system:china-professional-u17-u15",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:china-former-reserve-league": {
         "id": "system:china-former-reserve-league",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
+        "missing_fields": []
+      },
+      "system:china-youth-football-league": {
+        "id": "system:china-youth-football-league",
+        "status": "complete",
+        "source_tier": 1,
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:china-u19-youth-league": {
         "id": "system:china-u19-youth-league",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:china-professional-u21-league": {
         "id": "system:china-professional-u21-league",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
+        "missing_fields": []
+      },
+      "system:china-cfa-member-association-framework": {
+        "id": "system:china-cfa-member-association-framework",
+        "status": "complete",
+        "source_tier": 1,
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-prime-minister-cup": {
         "id": "system:japan-prime-minister-cup",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:denmark-youth-club-licence": {
         "id": "system:denmark-youth-club-licence",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:denmark-dbu-talent-u13-u14": {
         "id": "system:denmark-dbu-talent-u13-u14",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:denmark-dbu-u15-talent-centres": {
         "id": "system:denmark-dbu-u15-talent-centres",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:korea-military-service-pathway": {
         "id": "system:korea-military-service-pathway",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:japan-special-designated-player": {
         "id": "system:japan-special-designated-player",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:korea-k-league-youth-championship": {
         "id": "system:korea-k-league-youth-championship",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:korea-k-league-junior-u17": {
         "id": "system:korea-k-league-junior-u17",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:korea-k-league-junior-u18": {
         "id": "system:korea-k-league-junior-u18",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:korea-national-high-school-league": {
         "id": "system:korea-national-high-school-league",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:korea-university-u-league": {
         "id": "system:korea-university-u-league",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:norway-kvalitetsklubb": {
         "id": "system:norway-kvalitetsklubb",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:norway-landslagsskolen": {
         "id": "system:norway-landslagsskolen",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:norway-akademiklassifiseringen": {
         "id": "system:norway-akademiklassifiseringen",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:sweden-unicoach-certification": {
         "id": "system:sweden-unicoach-certification",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "system:sweden-player-development-plan": {
         "id": "system:sweden-player-development-plan",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-08-02",
         "missing_fields": []
       },
       "research:olympic-stars-germany": {

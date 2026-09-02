@@ -15,6 +15,7 @@
     "build-data": "node scripts/build-world-cup-forecast.mjs && node scripts/build-site-data.mjs",
     "build-forecast": "node scripts/build-world-cup-forecast.mjs",
     "check-generated": "node scripts/check-generated-data.mjs",
+    "stage-pages": "node scripts/stage-pages.mjs --output dist",
     "sync-sqlite": "node scripts/sync-sqlite.mjs",
     "prepare-data": "node scripts/prepare-data.mjs",
     "snapshot:manifest": "node scripts/create-snapshot-manifest.mjs",

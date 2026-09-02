@@ -4881,6 +4881,111 @@
       "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
     }
   },
+  "cn-miao-rundong-2007": {
+    "native": "苗润东",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-08-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA China U19 third camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260522/37710.html",
+          "checked_at": "2026-08-02",
+          "confidence": "high",
+          "fields": ["names.native", "names.zh"],
+          "claim": "The CFA China U19 camp notice confirms the official local-script spelling 苗润东."
+        }
+      ],
+      "attempts": [],
+      "notes": "The local spelling is retained from a Chinese Football Association squad notice."
+    }
+  },
+  "cn-zhou-yucheng-2009": {
+    "native": "周禹呈",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-08-02",
+      "sources": [
+        {
+          "type": "school-profile",
+          "label": "Yixing education four-player profile",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml",
+          "checked_at": "2026-08-02",
+          "confidence": "high",
+          "fields": ["names.native", "names.zh"],
+          "claim": "The Yixing education profile confirms the local-script spelling 周禹呈."
+        }
+      ],
+      "attempts": [],
+      "notes": "The local spelling is retained from a profile sourced to Yixing education authorities."
+    }
+  },
+  "cn-liu-jinglei-2010": {
+    "native": "刘靖磊",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-08-02",
+      "sources": [
+        {
+          "type": "school-profile",
+          "label": "Yixing education four-player profile",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml",
+          "checked_at": "2026-08-02",
+          "confidence": "high",
+          "fields": ["names.native", "names.zh"],
+          "claim": "The Yixing education profile confirms the local-script spelling 刘靖磊."
+        }
+      ],
+      "attempts": [],
+      "notes": "The local spelling is retained from a profile sourced to Yixing education authorities."
+    }
+  },
+  "cn-chang-yonghao-2010": {
+    "native": "常永浩",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-08-02",
+      "sources": [
+        {
+          "type": "school-profile",
+          "label": "Yixing education four-player profile",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml",
+          "checked_at": "2026-08-02",
+          "confidence": "high",
+          "fields": ["names.native", "names.zh"],
+          "claim": "The Yixing education profile confirms the local-script spelling 常永浩."
+        }
+      ],
+      "attempts": [],
+      "notes": "The local spelling is retained from a profile sourced to Yixing education authorities."
+    }
+  },
+  "cn-zhao-qisen-2009": {
+    "native": "赵启森",
+    "native_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-08-02",
+      "sources": [
+        {
+          "type": "school-profile",
+          "label": "Yixing education four-player profile",
+          "url": "https://jsnews.jschina.com.cn/jsyw/202603/t20260330_s69ca49e1e4b006a815e10dff.shtml",
+          "checked_at": "2026-08-02",
+          "confidence": "high",
+          "fields": ["names.native", "names.zh"],
+          "claim": "The Yixing education profile confirms the local-script spelling 赵启森."
+        }
+      ],
+      "attempts": [],
+      "notes": "The local spelling is retained from a profile sourced to Yixing education authorities."
+    }
+  },
   "uz-zafarmurod-abdirakhmatov-2003": {
     "native_verification": {
       "status": "unresolved",
