@@ -26809,6 +26809,13 @@
         "country": "Spain",
         "note": "2025 年 4 月完成签约仪式、6 月对外披露加盟黄潜梯队；Transfermarkt 当前将其加入 Villarreal Youth 的日期记为 2025-09-09。签约曝光时间与数据库注册时间可能不同，因此这里并列保留。",
         "organization_type": "club-academy"
+      },
+      {
+        "stage_label": "2026/27 Juvenil C 公开名单观察",
+        "organization": "Villarreal CF Juvenil C",
+        "country": "Spain",
+        "note": "截至 2026-09-02，汇集 FFCV 公共数据的 El Balón de la Comunitat 在 Villarreal Juvenil C 的 2026/27 赛季 21 人名单中列出 KAIYUAN LIU；但同站个人页仍显示“Sin ficha todavía en la 2026/27”。因此这里只记录新赛季梯队归属线索，不表述为个人竞赛许可证已经完成或生效。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -26864,7 +26871,16 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22，Transfermarkt 将其列为 FC Villarreal Youth 前锋，并同步标注其中国 U16 国脚身份。"
+        "note": "Villarreal CF 于 2026-06-04 官宣与 Kevin Liu 续约，确认其继续在俱乐部青训体系发展。2026-09-02 的 FFCV 公共数据衍生名单进一步把 KAIYUAN LIU 列入 Juvenil C，但个人 ficha 仍未公开，故不把梯队名单线索升级为已完成新赛季竞赛许可证。"
+      },
+      {
+        "label": "2026/27 Villarreal Juvenil C 公开名单观察",
+        "team": "Villarreal CF Juvenil C",
+        "squad_status": "tracked",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "2026-09-02 的球队页列入 KAIYUAN LIU；同日个人页仍显示 2026/27 暂无 ficha。该记录只表示公开名单归属观察，不代表正式注册、首轮报名或出场。"
       }
     ],
     "external_links": [
@@ -26935,12 +26951,33 @@
         "url": "https://ffcv.es/wp/wp-content/uploads/2026/01/CONV.-SUB-16-MASC.-VILLARREAL.pdf",
         "checked_at": "2026-07-30",
         "note": "西班牙瓦伦西亚自治区足协 2026 年 1 月征召文件可支撑刘凯源与比利亚雷亚尔的俱乐部关联；该文件不是 UEFA 青年欧冠报名表。"
+      },
+      {
+        "type": "official",
+        "label": "Villarreal CF renewal announcement for Kevin Liu",
+        "url": "https://villarrealcf.es/en/villarreal-renew-kevin-liu/",
+        "checked_at": "2026-09-02",
+        "note": "俱乐部 2026-06-04 官宣续约，确认刘凯源继续在比利亚雷亚尔青训体系发展；公告未指明 2026/27 具体竞赛梯队或许可证状态。"
+      },
+      {
+        "type": "profile",
+        "label": "El Balón Villarreal Juvenil C 2026/27 squad page",
+        "url": "https://www.elbalondelacomunitat.es/equipo/23909",
+        "checked_at": "2026-09-02",
+        "note": "汇集 FFCV 公共数据的非官方球队页，在 21 人名单中列出 KAIYUAN LIU；用于观察梯队归属和队伍结构，不单独证明个人 ficha 已生效。"
+      },
+      {
+        "type": "profile",
+        "label": "El Balón Kaiyuan Liu player page",
+        "url": "https://www.elbalondelacomunitat.es/jugador/29886797",
+        "checked_at": "2026-09-02",
+        "note": "个人页给出 2025/26 Cadete A 的 30 场、1355 分钟、4 球和 20 次首发数据，同时显示 2026/27 暂无 ficha；这是当前新赛季注册判断的关键限制。"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-30",
-      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协 2026-03-12 通知继续以比利亚雷亚尔足球俱乐部口径列名；泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。青年欧冠方面，UEFA 已确认比利亚雷亚尔进入 2026/27 赛事，刘凯源按 2010 年出生日期满足年龄规则；但截至 2026-07-31，40 人赛季名单和逐场 20 人名单均未出现官方公开确认，所以本站只标记为参赛观察，不记为已报名或已出场。"
+      "last_checked": "2026-09-02",
+      "notes": "Transfermarkt 可核生日、泉州出生地、身高、位置、FC Villarreal Youth 与 China U16 身份；中国足协 2026-03-12 通知继续以比利亚雷亚尔足球俱乐部口径列名；Villarreal CF 2026-06-04 官宣续约，确认其继续留在俱乐部青训体系。泉州地方报道补强重庆卓立、中国足球小将、欧罗巴到比利亚雷亚尔的成长线。欧罗巴阶段公开进球数据存在 13 场 14 球与 11 场 12 球两种口径，因此这里只保留其下半程爆发这一稳定结论，并把 2025 年签约曝光与 2025-09-09 数据库注册时间分开表述。2026-09-02 的 El Balón 球队页把 KAIYUAN LIU 列入 Villarreal Juvenil C 的 21 人名单，但个人页仍明确显示 2026/27 暂无 ficha；因此 Juvenil C 只记为公开名单观察，不能写成新赛季竞赛许可证已完成。青年欧冠方面，UEFA 已确认比利亚雷亚尔进入 2026/27 赛事，刘凯源按 2010 年出生日期满足年龄规则；但赛季名单和逐场名单均未出现官方公开确认，所以本站仍只标记为参赛观察，不记为已报名或已出场。"
     },
     "names": {
       "zh": "刘凯源",

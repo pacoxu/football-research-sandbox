@@ -11,10 +11,17 @@ This project tracks research data, so changelog entries should separate code cha
 - Added the 22-player Arsenal U17 Shanghai Future Star Cup roster snapshot with tournament numbers and a 2-goalkeeper, 8-defender, 6-midfielder and 6-forward position split.
 - Added tournament-page rendering for roster numbers and regression checks for roster size, unique numbers and the supplied position groups.
 
+### Updated
+
+- Updated Liu Kaiyuan's record with Villarreal's official renewal announcement, his 2025/26 Cadete A statistics, and the 2026/27 Juvenil C public squad observation.
+- Added a sourced research note covering the available Villarreal U19 A, B and C squad snapshots, age distribution and position structure.
+
 ### Data Scope Notes
 
 - The Arsenal list is a tournament-time registration snapshot, not a permanent 2026/27 U17 squad claim; players without complete identity evidence are not promoted into the main player dataset.
 - Cross-checked the low-resolution registration graphic against Arsenal youth coverage and match lineups, retaining `Abraham Owusu-Gyasi` and `Marley Frohock` as the supported spellings.
+- The Juvenil C team page lists Kaiyuan Liu, but his player page still says that he has no 2026/27 ficha. The new entry is therefore stored as a tracked squad observation, not a completed competition registration.
+- Liu remains age-eligible but unconfirmed for the 2026/27 UEFA Youth League; neither season registration nor match selection is inferred from the domestic squad page.
 
 ## 2026-08-11
 
