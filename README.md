@@ -5,7 +5,7 @@
 [![data generated](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fpacoxu%2Ffootball-research-sandbox%2Fmain%2Fdata%2Fsite%2Foverview.json&query=%24.generated_at&label=data%20generated&color=blue)](data/site/overview.json)
 ![scope](https://img.shields.io/badge/scope-research%20sample-lightgrey)
 
-当前状态：研究样本库，最近维护日期 `2026-08-11`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
+当前状态：研究样本库，最近维护日期 `2026-09-02`。本站不是中国足协、AFC、FIFA、俱乐部或任何第三方平台的官方数据库；页面里的球员、留洋和教练数量只代表本仓库已经结构化并通过当前来源口径纳入的样本，不代表官方全量人数。
 
 当前结构化基线：564 名球员、23 项赛事快照、10 个专题项目，覆盖 9 个国家/地区。
 

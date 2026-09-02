@@ -8,13 +8,13 @@ import { loadDataset } from "../scripts/lib/data-loader.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const countries = new Set(["China PR", "Japan", "Korea Republic", "Uzbekistan"]);
 
-test("audits all 284 target players without inventing unresolved native names", async () => {
+test("audits all 288 target players without inventing unresolved native names", async () => {
   const [dataset, overrides] = await Promise.all([
     loadDataset(),
     fs.readFile(path.join(root, "data/raw/player-name-overrides.json"), "utf8").then(JSON.parse)
   ]);
   const players = dataset.players.filter((player) => countries.has(player.country));
-  assert.equal(players.length, 284);
+  assert.equal(players.length, 288);
   for (const player of players) {
     const audit = overrides[player.id]?.native_verification;
     assert(["verified", "unresolved"].includes(audit?.status), player.id);

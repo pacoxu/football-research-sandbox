@@ -1,5 +1,106 @@
 [
   {
+    "id": "asian-games-men-2026",
+    "name": "20th Asian Games Aichi-Nagoya 2026 - Men's Football",
+    "short_name": "Asian Games Men 2026",
+    "focus_level": "primary",
+    "status": "upcoming",
+    "last_checked": "2026-09-02",
+    "date_range": {
+      "start": "2026-09-15",
+      "end": "2026-10-03"
+    },
+    "date_precision": "exact",
+    "focus_teams": [
+      "China PR",
+      "Japan",
+      "Korea Republic",
+      "IR Iran",
+      "United Arab Emirates",
+      "DPR Korea"
+    ],
+    "headline": "中国男足进入爱知-名古屋亚运会23人正式参赛名单，吴曦、张玉宁、朱辰杰为3名超龄球员；中国足协同期24人集训通知另补入史松宸，两份名单按不同边界保存。",
+    "eligibility": {
+      "format": "u23-plus-three-overage",
+      "note": "男子足球为U23赛事，每队最多可使用3名超龄球员。"
+    },
+    "china_group_stage": {
+      "group": "Group B",
+      "teams": [
+        "China PR",
+        "United Arab Emirates",
+        "IR Iran",
+        "DPR Korea"
+      ],
+      "fixtures": [
+        {
+          "date": "2026-09-16",
+          "opponent": "DPR Korea",
+          "status": "scheduled"
+        },
+        {
+          "date": "2026-09-20",
+          "opponent": "IR Iran",
+          "status": "scheduled"
+        },
+        {
+          "date": "2026-09-23",
+          "opponent": "United Arab Emirates",
+          "status": "scheduled"
+        }
+      ]
+    },
+    "roster_boundary": {
+      "official_final_roster_count": 23,
+      "cfa_camp_roster_count": 24,
+      "official_final_roster_published_on": "2026-09-01",
+      "cfa_camp_notice_published_on": "2026-09-01",
+      "overage_player_ids": [
+        "cn-wu-xi-1989",
+        "cn-zhang-yuning-1997",
+        "cn-zhu-chenjie-2000"
+      ],
+      "camp_only_player_ids": [
+        "cn-shi-songchen-2005"
+      ],
+      "note": "亚运会官方23人参赛名单不含史松宸；中国足协稍后发布的集训并参赛通知列24人，增加史松宸。当前不把该补招自动视为正式报名变更。"
+    },
+    "update_cadence": "赛前复核最终报名变更；小组赛每场赛后补充阵容、事件与结果。",
+    "notes": [
+      "男足比赛窗口为2026-09-15至2026-10-03；综合性亚运会会期为2026-09-19至2026-10-04。",
+      "中国队位于B组，对手为阿联酋、伊朗和朝鲜；小组赛日期依次为9月16日、9月20日和9月23日。",
+      "正式23人位置分组采用新华社对亚运会官方名单的转录；足协24人通知按俱乐部列人，不提供正式报名变更结论。",
+      "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。"
+    ],
+    "sources": [
+      {
+        "label": "Aichi-Nagoya 2026 official team draw results",
+        "publisher": "Aichi-Nagoya Asian Games Organizing Committee",
+        "url": "https://old.aichi-nagoya2026.org/en/news/detail/1413/"
+      },
+      {
+        "label": "Xinhua: China men's Asian Games 23-player roster and group fixtures",
+        "publisher": "Xinhua",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "label": "CFA 24-player camp notice for Aichi-Nagoya 2026",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "label": "OCA: Asian Games men's football U23 and overage-player rule",
+        "publisher": "Olympic Council of Asia",
+        "url": "https://oca.asia/news/7651-korea-aims-for-fourth-consecutive-asian-games-gold-in-mens-football.html"
+      },
+      {
+        "label": "JFA competition window for Aichi-Nagoya 2026 men's football",
+        "publisher": "Japan Football Association",
+        "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+      }
+    ]
+  },
+  {
     "id": "afc-u20-2027",
     "name": "AFC U20 Asian Cup China PR 2027",
     "short_name": "AFC U20 2027",

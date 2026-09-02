@@ -2353,7 +2353,8 @@ const AGE_BAND_LABELS = {
   u17: { zh: "U17", en: "U17" },
   u20: { zh: "U20", en: "U20" },
   u21: { zh: "U21", en: "U21" },
-  u23: { zh: "U23", en: "U23" }
+  u23: { zh: "U23", en: "U23" },
+  senior: { zh: "成年", en: "Senior" }
 };
 
 const LEAGUE_LABELS = {

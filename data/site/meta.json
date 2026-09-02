@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-08-11",
+  "generated_at": "2026-09-02",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -13,16 +13,16 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 950,
-    "stale_records": 35,
+    "record_count": 956,
+    "stale_records": 148,
     "needs_review_records": 347
   },
   "freshness": {
-    "as_of": "2026-08-11",
-    "audited_records": 1247,
-    "overdue": 37,
+    "as_of": "2026-09-02",
+    "audited_records": 1258,
+    "overdue": 151,
     "by_window": {
-      "30": 37,
+      "30": 151,
       "90": 0,
       "180": 0
     }
@@ -34,17 +34,17 @@
         "zh": "球员",
         "en": "Players"
       },
-      "record_count": 564,
+      "record_count": 568,
       "quality": {
-        "complete": 71,
-        "mixed": 4,
-        "partial": 141,
+        "complete": 58,
+        "mixed": 7,
+        "partial": 42,
         "needs-review": 313,
-        "stale": 35,
+        "stale": 148,
         "excluded": 0
       },
       "source_tiers": {
-        "1": 538,
+        "1": 542,
         "2": 2,
         "3": 1,
         "4": 0,
@@ -54,9 +54,9 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-08-11"
+        "newest": "2026-09-02"
       },
-      "overdue_records": 35,
+      "overdue_records": 148,
       "missing_fields": [
         {
           "field": "names.native_verified",
@@ -74,11 +74,11 @@
         "zh": "当前赛事",
         "en": "Current tournaments"
       },
-      "record_count": 23,
+      "record_count": 24,
       "quality": {
         "complete": 15,
         "mixed": 0,
-        "partial": 8,
+        "partial": 9,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -90,11 +90,11 @@
         "4": 0,
         "5": 1,
         "6": 0,
-        "unclassified": 7
+        "unclassified": 8
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-08-11"
+        "newest": "2026-09-02"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -105,11 +105,11 @@
         "zh": "赛事档案",
         "en": "Tournament archive"
       },
-      "record_count": 72,
+      "record_count": 73,
       "quality": {
         "complete": 0,
         "mixed": 0,
-        "partial": 72,
+        "partial": 73,
         "needs-review": 0,
         "stale": 0,
         "excluded": 0
@@ -121,11 +121,11 @@
         "4": 0,
         "5": 57,
         "6": 0,
-        "unclassified": 15
+        "unclassified": 16
       },
       "checked_at": {
         "oldest": "2026-06-28",
-        "newest": "2026-08-11"
+        "newest": "2026-09-02"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -135,7 +135,7 @@
         },
         {
           "field": "source_version",
-          "count": 17
+          "count": 18
         },
         {
           "field": "source_checked_at",
@@ -311,7 +311,7 @@
       },
       "checked_at": {
         "oldest": "2026-06-27",
-        "newest": "2026-08-01"
+        "newest": "2026-09-02"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -881,7 +881,7 @@
         "id": "coach:cn-zhou-haibin-shandong-2007",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-18",
+        "checked_at": "2026-09-02",
         "missing_fields": []
       },
       "coach:cn-zhu-liwei-evergrande-u13": {
@@ -916,7 +916,7 @@
         "id": "coach:antonio-puche",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-06-27",
+        "checked_at": "2026-09-02",
         "missing_fields": []
       },
       "coach:avram-grant": {
@@ -946,14 +946,14 @@
         "id": "coach:david-almazan",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-06-27",
+        "checked_at": "2026-09-02",
         "missing_fields": []
       },
       "coach:dejan-djurdjevic": {
         "id": "coach:dejan-djurdjevic",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-06-27",
+        "checked_at": "2026-09-02",
         "missing_fields": []
       },
       "coach:fatih-terim": {
@@ -1029,7 +1029,7 @@
         "id": "coach:satoshi-ukishima",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-06-27",
+        "checked_at": "2026-09-02",
         "missing_fields": []
       },
       "coach:tayfun-korkut": {

@@ -3280,7 +3280,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     playerIds.add(player.id);
   }
 
-  assert(nativeNameAuditCount === 284, `Expected 284 audited CJK/Uzbek players, found ${nativeNameAuditCount}`);
+  assert(nativeNameAuditCount === 288, `Expected 288 audited CJK/Uzbek players, found ${nativeNameAuditCount}`);
 
   const chinaOverseasStatusCounts = countOverseasStatuses(dataset.players);
   const chinaForeignRegistrationCount = dataset.players.filter(

@@ -7737,6 +7737,1195 @@
     }
   },
   {
+    "id": "cn-wu-xi-1989",
+    "name": "Wu Xi",
+    "local_name": "吴曦",
+    "country": "China PR",
+    "birth_date": "1989-02-19",
+    "age_band": "senior",
+    "primary_position": "Central Midfield",
+    "secondary_positions": [
+      "Attacking Midfield",
+      "Defensive Midfield"
+    ],
+    "height_cm": 180,
+    "preferred_foot": "right",
+    "birth_place": "Shijiazhuang, Hebei",
+    "registration_club": {
+      "name": "Shanghai Shenhua FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01",
+      "contract_expires": "2026-12-31"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会超龄球员",
+        "organization": "Shanghai Shenhua FC",
+        "country": "China",
+        "note": "亚运会官方23人名单列为中场，是中国队3名超龄球员之一。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-national-team",
+      "overage-player"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "overage_player": true,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "亚运会官方23人名单列入，使用中国队3个超龄名额之一。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/xi-wu/profil/spieler/148891"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运正式名单、超龄身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、位置、身高、出生地与合同节点由Transfermarkt个人页补充。"
+    },
+    "names": {
+      "zh": "吴曦",
+      "en": "Wu Xi",
+      "native": "吴曦",
+      "ja": "",
+      "ko": ""
+    },
+    "name_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 吴曦 for Wu Xi."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-09-02",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 吴曦 for Wu Xi."
+      }
+    ],
+    "market_value": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2012-03-14",
+          "club_id": "3183",
+          "season_id": 2011,
+          "age": 23
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2013-05-06",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2013-05-14",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2013-05-18",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 250000,
+          "currency": "EUR",
+          "display": "€250k",
+          "date": "2013-07-22",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 275000,
+          "currency": "EUR",
+          "display": "€275k",
+          "date": "2013-07-30",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 24
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2014-07-07",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 525000,
+          "currency": "EUR",
+          "display": "€525k",
+          "date": "2014-09-09",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2014-11-04",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2015-01-31",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 25
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2015-06-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 26
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2015-11-01",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 26
+        },
+        {
+          "eur": 750000,
+          "currency": "EUR",
+          "display": "€750k",
+          "date": "2016-05-24",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 27
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2016-06-20",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 27
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2016-11-20",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 27
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2017-03-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 28
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2017-06-19",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 28
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2017-12-01",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 28
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2018-06-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 29
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2018-12-09",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 29
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-03-21",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 30
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-09-05",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 30
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2019-12-27",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 30
+        },
+        {
+          "eur": 675000,
+          "currency": "EUR",
+          "display": "€675k",
+          "date": "2020-04-08",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 31
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2020-12-26",
+          "club_id": "22219",
+          "season_id": 0,
+          "age": 31
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2021-08-23",
+          "club_id": "3183",
+          "season_id": 2020,
+          "age": 32
+        },
+        {
+          "eur": 550000,
+          "currency": "EUR",
+          "display": "€550k",
+          "date": "2022-01-17",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 32
+        },
+        {
+          "eur": 350000,
+          "currency": "EUR",
+          "display": "€350k",
+          "date": "2022-05-28",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 33
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2023-01-13",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 33
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2023-06-26",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 34
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2023-12-14",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 34
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-06-04",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 35
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2024-12-11",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 35
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-06-19",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 36
+        },
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2025-12-17",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 36
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2026-06-08",
+          "club_id": "3183",
+          "season_id": 2025,
+          "age": 37
+        }
+      ],
+      "history_points": 36,
+      "current": {
+        "eur": 25000,
+        "currency": "EUR",
+        "display": "€25k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 850000,
+        "currency": "EUR",
+        "display": "€850k",
+        "date": "2015-01-31",
+        "club_id": "22219",
+        "season_id": 0,
+        "age": 25
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/xi-wu/profil/spieler/148891",
+        "market_value_url": "https://www.transfermarkt.com/xi-wu/marktwertverlauf/spieler/148891",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/148891/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/xi-wu/profil/spieler/148891"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
+    }
+  },
+  {
+    "id": "cn-zhang-yuning-1997",
+    "name": "Zhang Yuning",
+    "local_name": "张玉宁",
+    "country": "China PR",
+    "birth_date": "1997-01-05",
+    "age_band": "senior",
+    "primary_position": "Centre-Forward",
+    "height_cm": 185,
+    "preferred_foot": "right",
+    "birth_place": "Wenzhou, Zhejiang",
+    "registration_club": {
+      "name": "Beijing Guoan FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01",
+      "contract_expires": "2028-12-31"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会超龄球员",
+        "organization": "Beijing Guoan FC",
+        "country": "China",
+        "note": "亚运会官方23人名单列为前锋，是中国队3名超龄球员之一。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-national-team",
+      "overage-player"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Forward",
+        "overage_player": true,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "亚运会官方23人名单列入，使用中国队3个超龄名额之一。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/yuning-zhang/profil/spieler/264429"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运正式名单、超龄身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、位置、身高、出生地与合同节点由Transfermarkt个人页补充。"
+    },
+    "names": {
+      "zh": "张玉宁",
+      "en": "Zhang Yuning",
+      "native": "张玉宁",
+      "ja": "",
+      "ko": ""
+    },
+    "name_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 张玉宁 for Zhang Yuning."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-09-02",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 张玉宁 for Zhang Yuning."
+      }
+    ],
+    "market_value": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 50000,
+          "currency": "EUR",
+          "display": "€50k",
+          "date": "2015-03-06",
+          "club_id": "17276",
+          "season_id": 2014,
+          "age": 18
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2015-06-05",
+          "club_id": "17276",
+          "season_id": 2014,
+          "age": 18
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2015-11-01",
+          "club_id": "7465",
+          "season_id": 0,
+          "age": 18
+        },
+        {
+          "eur": 300000,
+          "currency": "EUR",
+          "display": "€300k",
+          "date": "2016-07-15",
+          "club_id": "499",
+          "season_id": 2016,
+          "age": 19
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2017-01-18",
+          "club_id": "499",
+          "season_id": 2016,
+          "age": 20
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2017-06-07",
+          "club_id": "499",
+          "season_id": 2016,
+          "age": 20
+        },
+        {
+          "eur": 2000000,
+          "currency": "EUR",
+          "display": "€2.00m",
+          "date": "2017-10-18",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 20
+        },
+        {
+          "eur": 2000000,
+          "currency": "EUR",
+          "display": "€2.00m",
+          "date": "2017-12-28",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 20
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2018-04-04",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 21
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2018-06-05",
+          "club_id": "86",
+          "season_id": 2017,
+          "age": 21
+        },
+        {
+          "eur": 1500000,
+          "currency": "EUR",
+          "display": "€1.50m",
+          "date": "2018-12-28",
+          "club_id": "1268",
+          "season_id": 2018,
+          "age": 21
+        },
+        {
+          "eur": 1000000,
+          "currency": "EUR",
+          "display": "€1.00m",
+          "date": "2019-03-21",
+          "club_id": "3176",
+          "season_id": 2018,
+          "age": 22
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-09-05",
+          "club_id": "3176",
+          "season_id": 2018,
+          "age": 22
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-12-27",
+          "club_id": "3176",
+          "season_id": 2018,
+          "age": 22
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2020-04-08",
+          "club_id": "3176",
+          "season_id": 2019,
+          "age": 23
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2020-12-26",
+          "club_id": "3176",
+          "season_id": 2019,
+          "age": 23
+        },
+        {
+          "eur": 875000,
+          "currency": "EUR",
+          "display": "€875k",
+          "date": "2021-08-23",
+          "club_id": "3176",
+          "season_id": 2020,
+          "age": 24
+        },
+        {
+          "eur": 950000,
+          "currency": "EUR",
+          "display": "€950k",
+          "date": "2022-01-17",
+          "club_id": "3176",
+          "season_id": 2021,
+          "age": 25
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2022-05-28",
+          "club_id": "3176",
+          "season_id": 2021,
+          "age": 25
+        },
+        {
+          "eur": 1000000,
+          "currency": "EUR",
+          "display": "€1.00m",
+          "date": "2023-01-13",
+          "club_id": "3176",
+          "season_id": 2022,
+          "age": 26
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2023-06-26",
+          "club_id": "3176",
+          "season_id": 2022,
+          "age": 26
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2023-12-14",
+          "club_id": "3176",
+          "season_id": 2022,
+          "age": 26
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2024-06-04",
+          "club_id": "3176",
+          "season_id": 2023,
+          "age": 27
+        },
+        {
+          "eur": 850000,
+          "currency": "EUR",
+          "display": "€850k",
+          "date": "2024-12-11",
+          "club_id": "3176",
+          "season_id": 2023,
+          "age": 27
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2025-06-19",
+          "club_id": "3176",
+          "season_id": 2024,
+          "age": 28
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2025-12-17",
+          "club_id": "3176",
+          "season_id": 2024,
+          "age": 28
+        },
+        {
+          "eur": 700000,
+          "currency": "EUR",
+          "display": "€700k",
+          "date": "2026-06-08",
+          "club_id": "3176",
+          "season_id": 2025,
+          "age": 29
+        }
+      ],
+      "history_points": 27,
+      "current": {
+        "eur": 700000,
+        "currency": "EUR",
+        "display": "€700k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 2000000,
+        "currency": "EUR",
+        "display": "€2.00m",
+        "date": "2017-10-18",
+        "club_id": "86",
+        "season_id": 2017,
+        "age": 20
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/yuning-zhang/profil/spieler/264429",
+        "market_value_url": "https://www.transfermarkt.com/yuning-zhang/marktwertverlauf/spieler/264429",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/264429/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/yuning-zhang/profil/spieler/264429"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
+    }
+  },
+  {
+    "id": "cn-zhu-chenjie-2000",
+    "name": "Zhu Chenjie",
+    "local_name": "朱辰杰",
+    "country": "China PR",
+    "birth_date": "2000-08-23",
+    "age_band": "senior",
+    "primary_position": "Centre-Back",
+    "height_cm": 185,
+    "preferred_foot": "right",
+    "birth_place": "Suzhou, Jiangsu",
+    "registration_club": {
+      "name": "Shanghai Shenhua FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01",
+      "contract_expires": "2028-12-31"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会超龄球员",
+        "organization": "Shanghai Shenhua FC",
+        "country": "China",
+        "note": "亚运会官方23人名单列为后卫，是中国队3名超龄球员之一。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-national-team",
+      "overage-player"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "overage_player": true,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "亚运会官方23人名单列入，使用中国队3个超龄名额之一。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/chenjie-zhu/profil/spieler/509001"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运正式名单、超龄身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、位置、身高、出生地与合同节点由Transfermarkt个人页补充。"
+    },
+    "names": {
+      "zh": "朱辰杰",
+      "en": "Zhu Chenjie",
+      "native": "朱辰杰",
+      "ja": "",
+      "ko": ""
+    },
+    "name_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 朱辰杰 for Zhu Chenjie."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-09-02",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 朱辰杰 for Zhu Chenjie."
+      }
+    ],
+    "market_value": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2018-12-09",
+          "club_id": "3183",
+          "season_id": 2017,
+          "age": 18
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2019-09-05",
+          "club_id": "3183",
+          "season_id": 2018,
+          "age": 19
+        },
+        {
+          "eur": 800000,
+          "currency": "EUR",
+          "display": "€800k",
+          "date": "2019-12-27",
+          "club_id": "3183",
+          "season_id": 2018,
+          "age": 19
+        },
+        {
+          "eur": 725000,
+          "currency": "EUR",
+          "display": "€725k",
+          "date": "2020-04-08",
+          "club_id": "3183",
+          "season_id": 2019,
+          "age": 19
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2020-12-26",
+          "club_id": "3183",
+          "season_id": 2019,
+          "age": 20
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2021-08-23",
+          "club_id": "3183",
+          "season_id": 2020,
+          "age": 21
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2022-01-17",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 21
+        },
+        {
+          "eur": 450000,
+          "currency": "EUR",
+          "display": "€450k",
+          "date": "2022-05-28",
+          "club_id": "3183",
+          "season_id": 2021,
+          "age": 21
+        },
+        {
+          "eur": 425000,
+          "currency": "EUR",
+          "display": "€425k",
+          "date": "2023-01-13",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 22
+        },
+        {
+          "eur": 500000,
+          "currency": "EUR",
+          "display": "€500k",
+          "date": "2023-06-26",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 22
+        },
+        {
+          "eur": 600000,
+          "currency": "EUR",
+          "display": "€600k",
+          "date": "2023-12-14",
+          "club_id": "3183",
+          "season_id": 2022,
+          "age": 23
+        },
+        {
+          "eur": 650000,
+          "currency": "EUR",
+          "display": "€650k",
+          "date": "2024-06-04",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 23
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2024-12-11",
+          "club_id": "3183",
+          "season_id": 2023,
+          "age": 24
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2025-06-19",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 24
+        },
+        {
+          "eur": 900000,
+          "currency": "EUR",
+          "display": "€900k",
+          "date": "2025-12-17",
+          "club_id": "3183",
+          "season_id": 2024,
+          "age": 25
+        },
+        {
+          "eur": 1000000,
+          "currency": "EUR",
+          "display": "€1.00m",
+          "date": "2026-06-08",
+          "club_id": "3183",
+          "season_id": 2025,
+          "age": 25
+        }
+      ],
+      "history_points": 16,
+      "current": {
+        "eur": 1000000,
+        "currency": "EUR",
+        "display": "€1.00m",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 1000000,
+        "currency": "EUR",
+        "display": "€1.00m",
+        "date": "2026-06-08",
+        "club_id": "3183",
+        "season_id": 2025,
+        "age": 25
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/chenjie-zhu/profil/spieler/509001",
+        "market_value_url": "https://www.transfermarkt.com/chenjie-zhu/marktwertverlauf/spieler/509001",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/509001/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/chenjie-zhu/profil/spieler/509001"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
+    }
+  },
+  {
     "id": "cn-baihelamu-abuduwaili-2003",
     "name": "Baihelamu Abuduwaili",
     "local_name": "Baihelamu Abuduwaili",
@@ -7747,11 +8936,11 @@
     "height_cm": 188,
     "weight_kg": 76,
     "registration_club": {
-      "name": "Shenzhen Peng City FC",
+      "name": "Chengdu Rongcheng FC",
       "country": "China",
       "organization_type": "professional-club-unspecified",
-      "status": "tournament-snapshot",
-      "as_of": "2025-12-30"
+      "status": "current",
+      "as_of": "2026-09-01"
     },
     "training_pathway": [
       {
@@ -7760,11 +8949,19 @@
         "country": "China",
         "note": "AFC U23 2026 终报名表列为当前俱乐部。",
         "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026 爱知-名古屋亚运会名单归属",
+        "organization": "Chengdu Rongcheng FC",
+        "country": "China",
+        "note": "中国足协2026-09-01亚运队集训通知列示的当前所属俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -7781,6 +8978,18 @@
         "substitute_appearances": 2,
         "yellow_cards": 1,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Forward",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -7798,6 +9007,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/behram-abduweli/profil/spieler/946750"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -8397,7 +9616,8 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -8414,6 +9634,18 @@
         "substitute_appearances": 0,
         "yellow_cards": 2,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -8431,6 +9663,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/hetao-hu/profil/spieler/1014230"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -8615,7 +9857,8 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -8632,6 +9875,18 @@
         "substitute_appearances": 1,
         "yellow_cards": 0,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -8649,6 +9904,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/haofan-liu/profil/spieler/946850"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -9311,7 +10576,8 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -9328,6 +10594,18 @@
         "substitute_appearances": 2,
         "yellow_cards": 1,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -9345,6 +10623,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/zhenquan-li/profil/spieler/1014228"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -9511,7 +10799,8 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -9528,6 +10817,18 @@
         "substitute_appearances": 3,
         "yellow_cards": 0,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Forward",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -9545,6 +10846,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/yuwang-xiang/profil/spieler/1136184"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -9711,7 +11022,8 @@
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -9728,6 +11040,18 @@
         "substitute_appearances": 0,
         "yellow_cards": 1,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -9745,6 +11069,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/umidjan-yusup/profil/spieler/956819"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -9938,7 +11272,8 @@
       "china-youth",
       "csl-2026",
       "csl-u23-overseas",
-      "overseas-europe"
+      "overseas-europe",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -9975,6 +11310,18 @@
           "https://zh.wikipedia.org/wiki/%E6%9D%8E%E6%98%8A_(%E8%B6%B3%E7%90%83%E8%BF%90%E5%8A%A8%E5%91%98)"
         ],
         "note": "截至 2026-05-22 仍属青岛西海岸一线队；其留洋路径可追溯到马德里竞技与科尔内利亚。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Goalkeeper",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -10002,6 +11349,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/hao-li/profil/spieler/788152"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -10187,11 +11544,11 @@
     "height_cm": 186,
     "weight_kg": 69,
     "registration_club": {
-      "name": "Qingdao West Coast FC",
+      "name": "Chengdu Rongcheng FC",
       "country": "China",
       "organization_type": "professional-club-unspecified",
-      "status": "tournament-snapshot",
-      "as_of": "2025-12-30"
+      "status": "current",
+      "as_of": "2026-09-01"
     },
     "training_pathway": [
       {
@@ -10200,11 +11557,19 @@
         "country": "China",
         "note": "AFC U23 2026 终报名表列为当前俱乐部。",
         "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026 爱知-名古屋亚运会名单归属",
+        "organization": "Chengdu Rongcheng FC",
+        "country": "China",
+        "note": "中国足协2026-09-01亚运队集训通知列示的当前所属俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
       "asia-u23-2026",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -10221,6 +11586,18 @@
         "substitute_appearances": 0,
         "yellow_cards": 1,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -10233,6 +11610,16 @@
         "type": "official",
         "label": "AFC final report: Japan 4-0 China PR",
         "url": "https://www.the-afc.com/en/national/afc_u23_asian_cup.html/news/japan-power-past-china-pr-to-clinch-third-title"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -10342,7 +11729,8 @@
       "china-youth",
       "u23-overseas",
       "overseas-europe",
-      "china-overseas-current"
+      "china-overseas-current",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -10369,6 +11757,18 @@
         "goals": null,
         "minutes": null,
         "note": "狼队 2026-06-06 留队名单确认徐彬仍在合同内；巴恩斯利租借期结束后的 2026/27 具体组别或再次外租安排待确认。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -10401,6 +11801,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/bin-xu/profil/spieler/789642"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -10548,6 +11958,250 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
+    }
+  },
+  {
+    "id": "cn-yu-jinyong-2004",
+    "name": "Yu Jinyong",
+    "local_name": "于金永",
+    "country": "China PR",
+    "birth_date": "2004-07-06",
+    "age_band": "u23",
+    "primary_position": "Goalkeeper",
+    "height_cm": 201,
+    "birth_place": "Shenyang, Liaoning",
+    "registration_club": {
+      "name": "Shandong Taishan FC",
+      "country": "China",
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 爱知-名古屋亚运会报名归属",
+        "organization": "Shandong Taishan FC",
+        "country": "China",
+        "note": "亚运会官方23人名单及中国足协24人集训通知均列其为山东泰山门将。",
+        "organization_type": "professional-club-unspecified"
+      }
+    ],
+    "focus_tags": [
+      "asian-games-men-2026",
+      "china-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Goalkeeper",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
+      },
+      {
+        "type": "transfermarkt",
+        "label": "Transfermarkt profile",
+        "url": "https://www.transfermarkt.com/jinyong-yu/profil/spieler/884833"
+      }
+    ],
+    "verification": {
+      "status": "mixed-source",
+      "last_checked": "2026-09-02",
+      "notes": "亚运名单身份与俱乐部归属由新华社和中国足协名单交叉确认；生日、身高、出生地和主位置由Transfermarkt个人页补充。"
+    },
+    "names": {
+      "zh": "于金永",
+      "en": "Yu Jinyong",
+      "native": "于金永",
+      "ja": "",
+      "ko": ""
+    },
+    "name_verification": {
+      "status": "verified",
+      "language_tag": "zh-Hans",
+      "checked_at": "2026-09-02",
+      "sources": [
+        {
+          "type": "national-fa-profile",
+          "label": "CFA 24-player Asian Games camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+          "checked_at": "2026-09-02",
+          "confidence": "high",
+          "fields": [
+            "names.native",
+            "names.zh"
+          ],
+          "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 于金永 for Yu Jinyong."
+        }
+      ],
+      "attempts": [],
+      "notes": "The Chinese Football Association roster notice provides the independent official local-script spelling."
+    },
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-09-02",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "The CFA Asian Games camp notice confirms the official local-script spelling 于金永 for Yu Jinyong."
+      }
+    ],
+    "market_value": {
+      "checked_at": "2026-09-02",
+      "status": "available",
+      "history": [
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2021-04-26",
+          "club_id": "3182",
+          "season_id": 2020,
+          "age": 16
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2021-08-23",
+          "club_id": "3182",
+          "season_id": 2020,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2022-01-17",
+          "club_id": "3182",
+          "season_id": 2021,
+          "age": 17
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2023-06-26",
+          "club_id": "3182",
+          "season_id": 2022,
+          "age": 18
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-03-05",
+          "club_id": "3182",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 25000,
+          "currency": "EUR",
+          "display": "€25k",
+          "date": "2024-06-04",
+          "club_id": "3182",
+          "season_id": 2023,
+          "age": 19
+        },
+        {
+          "eur": 75000,
+          "currency": "EUR",
+          "display": "€75k",
+          "date": "2024-12-11",
+          "club_id": "3182",
+          "season_id": 2023,
+          "age": 20
+        },
+        {
+          "eur": 100000,
+          "currency": "EUR",
+          "display": "€100k",
+          "date": "2025-06-19",
+          "club_id": "3182",
+          "season_id": 2024,
+          "age": 20
+        },
+        {
+          "eur": 150000,
+          "currency": "EUR",
+          "display": "€150k",
+          "date": "2025-12-17",
+          "club_id": "3182",
+          "season_id": 2024,
+          "age": 21
+        },
+        {
+          "eur": 125000,
+          "currency": "EUR",
+          "display": "€125k",
+          "date": "2026-06-08",
+          "club_id": "3182",
+          "season_id": 2025,
+          "age": 21
+        }
+      ],
+      "history_points": 10,
+      "current": {
+        "eur": 125000,
+        "currency": "EUR",
+        "display": "€125k",
+        "date": "2026-06-08"
+      },
+      "peak": {
+        "eur": 150000,
+        "currency": "EUR",
+        "display": "€150k",
+        "date": "2025-12-17",
+        "club_id": "3182",
+        "season_id": 2024,
+        "age": 21
+      },
+      "last_change_date": "2026-06-08",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "https://www.transfermarkt.com/jinyong-yu/profil/spieler/884833",
+        "market_value_url": "https://www.transfermarkt.com/jinyong-yu/marktwertverlauf/spieler/884833",
+        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/884833/market-value-history?_x_preferred_context=com"
+      },
+      "lookup": {
+        "checked_at": "2026-09-02",
+        "status": "confirmed",
+        "method": "existing-link",
+        "matched_fields": [
+          "birth_date",
+          "nationality",
+          "name",
+          "position"
+        ],
+        "candidate_urls": [
+          "https://www.transfermarkt.com/jinyong-yu/profil/spieler/884833"
+        ]
+      },
+      "alternatives": [],
+      "last_success_at": "2026-09-02"
     }
   },
   {
@@ -11017,9 +12671,11 @@
     "height_cm": 184,
     "weight_kg": 75,
     "registration_club": {
-      "name": "Changchun Yatai FC",
+      "name": "Chengdu Rongcheng FC",
       "country": "China",
-      "organization_type": "professional-club-unspecified"
+      "organization_type": "professional-club-unspecified",
+      "status": "current",
+      "as_of": "2026-09-01"
     },
     "training_pathway": [
       {
@@ -11028,13 +12684,21 @@
         "country": "China",
         "note": "AFC U23 2026 终报名表列为当前俱乐部。",
         "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026 爱知-名古屋亚运会名单归属",
+        "organization": "Chengdu Rongcheng FC",
+        "country": "China",
+        "note": "中国足协2026-09-01亚运队集训通知列示的当前所属俱乐部。",
+        "organization_type": "professional-club-unspecified"
       }
     ],
     "focus_tags": [
       "asia-u23-2026",
       "china-youth",
       "asia-u20-2025",
-      "china-u20-2025-final-squad"
+      "china-u20-2025-final-squad",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -11063,6 +12727,18 @@
         "substitute_appearances": 0,
         "yellow_cards": 0,
         "red_cards": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -11085,6 +12761,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/yiran-he/profil/spieler/1012737"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -11278,7 +12964,8 @@
       "csl-2026",
       "csl-u21-current",
       "asia-u20-2025",
-      "china-u20-2025-final-squad"
+      "china-u20-2025-final-squad",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -11327,6 +13014,18 @@
           "https://match.sports.sina.com.cn/football/player.php?id=7359052"
         ],
         "note": "截至 2026-05-22 仍在山东泰山 2026 赛季一线队青年轮换范围内。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -11354,6 +13053,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/zeshi-chen/profil/spieler/946650"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -11537,7 +13246,8 @@
     "focus_tags": [
       "asia-u20-2025",
       "china-u20-2025-final-squad",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -11551,6 +13261,18 @@
         "note": "官方逐场 Match Summary 汇总：出场 3 次、254 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
         "roster_status": "tournament-squad",
         "starts": 3
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -11563,6 +13285,16 @@
         "type": "official",
         "label": "AFC U20 2025 squads finalised",
         "url": "https://www.the-afc.com/en/national/afc_u20_asian_cup.html/news/squads-finalised-for-china-2025"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -12420,7 +14152,8 @@
       "csl-2026",
       "csl-u21-current",
       "asia-u20-2025",
-      "china-u20-2025-final-squad"
+      "china-u20-2025-final-squad",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -12469,6 +14202,18 @@
           "https://sports.sina.com.cn/csl/team/dly/index.shtml"
         ],
         "note": "截至 2026-05-22 已是大连英博 2026 赛季一线队 U21 样本。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -12501,6 +14246,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/weijie-mao/profil/spieler/1134838"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -12722,7 +14477,8 @@
       "csl-u23-overseas",
       "overseas-europe",
       "asia-u20-2025",
-      "china-u20-2025-final-squad"
+      "china-u20-2025-final-squad",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -12789,6 +14545,18 @@
           "https://finance.sina.com.cn/jjxw/2026-02-05/doc-inhkucci5833134.shtml"
         ],
         "note": "截至 2026-05-22 已属于上海海港 2026 赛季一线队 U23 留洋样本；4 月对山东泰山打入加盟海港后的联赛首球，5 月对青岛海牛再有进球。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -12851,6 +14619,16 @@
         "type": "news",
         "label": "Dongqiudi report on Qingdao West Coast winter training",
         "url": "https://m.dongqiudi.com/article/4825478.html"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -13229,7 +15007,8 @@
       "csl-2026",
       "csl-u21-current",
       "asia-u20-2025",
-      "china-u20-2025-final-squad"
+      "china-u20-2025-final-squad",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -13278,6 +15057,18 @@
           "https://match.sports.sina.com.cn/football/player.php?id=7483401"
         ],
         "note": "截至 2026-05-22 仍在山东泰山 2026 赛季一线队青年轮换范围内。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -13305,6 +15096,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/xiao-peng/profil/spieler/789635"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -14194,7 +15995,8 @@
     "focus_tags": [
       "asia-u20-2025",
       "china-u20-2025-final-squad",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -14208,6 +16010,18 @@
         "note": "官方逐场 Match Summary 汇总：出场 4 次、360 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
         "roster_status": "tournament-squad",
         "starts": 4
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足赛前集训补招",
+        "team": "China PR Asian Games",
+        "squad_status": "called-up",
+        "roster_status": "later-camp-callup",
+        "listed_position": "Defender",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协2026-09-01发布的24人集训通知补入；未列入同日公布的亚运会官方23人参赛名单，当前不视为正式报名替换。"
       }
     ],
     "external_links": [
@@ -14225,6 +16039,11 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/songchen-shi/profil/spieler/1127611"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
       }
     ],
     "verification": {
@@ -14585,7 +16404,8 @@
       "csl-2026",
       "csl-u21-current",
       "asia-u20-2025",
-      "china-u20-2025-final-squad"
+      "china-u20-2025-final-squad",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -14634,6 +16454,18 @@
           "https://match.sports.sina.com.cn/football/player.php?id=7471602"
         ],
         "note": "截至 2026-05-22 已进入上海海港 2026 赛季中超一线队青年轮换。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -14666,6 +16498,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/jiwen-kuai/profil/spieler/1068096"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -14923,7 +16765,8 @@
       "asia-u23-2026",
       "china-youth",
       "csl-2026",
-      "csl-u21-current"
+      "csl-u21-current",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -14960,6 +16803,18 @@
           "https://match.sports.sina.com.cn/football/player.php?id=7359017"
         ],
         "note": "截至 2026-05-22 已属于上海申花 2026 赛季一线队 U21 样本。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Midfielder",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -14987,6 +16842,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/haoyu-yang/profil/spieler/1237518"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -16390,7 +18255,8 @@
     "focus_tags": [
       "asia-u20-2025",
       "china-u20-2025-final-squad",
-      "china-youth"
+      "china-youth",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -16404,6 +18270,18 @@
         "note": "官方逐场 Match Summary 汇总：出场 0 次、0 分钟、0 球；分钟按 90 分钟制、HT=45、补时不另加。",
         "roster_status": "tournament-squad",
         "starts": 0
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Goalkeeper",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -16421,6 +18299,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/haoyang-yao/profil/spieler/1068103"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
@@ -16596,7 +18484,8 @@
       "csl-2026",
       "csl-u21-current",
       "asia-u20-2025",
-      "china-u20-2025-final-squad"
+      "china-u20-2025-final-squad",
+      "asian-games-men-2026"
     ],
     "tournament_participation": [
       {
@@ -16645,6 +18534,18 @@
           "https://sports.sina.com.cn/csl/scorer/"
         ],
         "note": "截至 2026-05-22 已是浙江队 2026 赛季中超一线队 U21 样本，并已进入本土攻击手头部观察名单。"
+      },
+      {
+        "competition_id": "asian-games-men-2026",
+        "label": "2026 爱知-名古屋亚运会中国男足正式名单",
+        "team": "China PR Asian Games",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "listed_position": "Forward",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "新华社转录的亚运会官方23人名单列入；中国足协同日24人集训通知继续列入。"
       }
     ],
     "external_links": [
@@ -16677,6 +18578,16 @@
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
         "url": "https://www.transfermarkt.com/yudong-wang/profil/spieler/1125720"
+      },
+      {
+        "type": "official",
+        "label": "CFA 24-player Asian Games camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html"
+      },
+      {
+        "type": "news",
+        "label": "Xinhua official 23-player Asian Games roster",
+        "url": "https://www.xinhuanet.com/sports/20260901/cf20df167b9f48aabb679a2ee43a4c7b/c.html"
       }
     ],
     "verification": {
