@@ -38,11 +38,7 @@ jobs:
         run: npm run check-generated
 
       - name: Stage static files
-        run: |
-          mkdir -p dist
-          cp *.html dist/
-          cp -R assets dist/assets
-          cp -R data dist/data
+        run: npm run stage-pages
 
       - name: Stamp deployed data metadata
         run: node scripts/stamp-site-meta.mjs --commit "$GITHUB_SHA" --file dist/data/site/meta.json

@@ -1,6 +1,6 @@
 # 静态 JSON API 说明
 
-更新时间：2026-07-19
+更新时间：2026-07-31
 
 项目发布到 GitHub Pages 后，页面会读取 `data/site/*.json`。这些文件可以被浏览器直接请求，但它们首先是站点内部静态数据文件，不是稳定承诺的公共 API。
 
@@ -49,7 +49,9 @@ GitHub Pages 上的 URL 取决于仓库 Pages 地址和路径。
 
 `meta.json` 的 `schema_version` 是数据中心元信息的版本，不是整个站点的兼容性承诺。仓库内生成文件保持 `build.status: "unstamped"`，commit 和构建时间为 `null`，从而保证本地生成可复现；Pages 部署在一致性检查后把真实 commit SHA、构建时间和 `deployed` 状态注入部署副本。
 
-`data/schema/manifest.json` 登记 `loadDataset()` 消费的主要 raw 文件，以及 `players.json`、`overview.json`、`meta.json`。Schema 使用 JSON Schema Draft 2020-12；编辑器和外部工具可以据此检查结构，但跨记录引用、统计加总和其他业务约束仍以程序化 validator 为准。
+仓库中的 `data/schema/manifest.json` 登记 `loadDataset()` 消费的主要 raw 文件，以及 `players.json`、`overview.json`、`meta.json`。Schema 使用 JSON Schema Draft 2020-12；编辑器和外部工具可以据此检查结构，但不再随 Pages artifact 发布。跨记录引用、统计加总和其他业务约束仍以程序化 validator 为准。
+
+Pages 只发布 `data/site/**`；`data/raw/**` 和 `data/schema/**` 仍可在 GitHub 仓库中审查，但没有 Pages 静态 URL。球员 JSON 还会移除姓名核验尝试、身价候选匹配、抓取错误、API URL 和内部 ID。完整契约见 `docs/publication-policy.md`。
 
 ## 授权与引用
 
@@ -81,5 +83,4 @@ GitHub Pages 上的 URL 取决于仓库 Pages 地址和路径。
 
 ## 后续可做
 
-- 只发布 `data/site/**`，不发布 `data/raw/**`，降低外部误用 raw 草稿的风险。
 - 为外部使用者增加最小 changelog feed。

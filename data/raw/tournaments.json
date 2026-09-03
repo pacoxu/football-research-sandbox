@@ -1591,5 +1591,126 @@
         "url": "https://www.kleague.com/"
       }
     ]
+  },
+  {
+    "id": "jiangsu-city-league-2025",
+    "name": "Jiangsu City Football League 2025",
+    "short_name": "苏超 2025",
+    "focus_level": "reference",
+    "competition_level": "senior-regional-city-league",
+    "status": "completed",
+    "last_checked": "2026-08-02",
+    "date_range": {
+      "start": "2025-05-10",
+      "end": "2025-11-01"
+    },
+    "focus_teams": [
+      "Nanjing City Team",
+      "Wuxi City Team",
+      "Xuzhou City Team",
+      "Changzhou City Team",
+      "Suzhou City Team",
+      "Nantong City Team",
+      "Lianyungang City Team",
+      "Huai'an City Team",
+      "Yancheng City Team",
+      "Yangzhou City Team",
+      "Zhenjiang City Team",
+      "Taizhou City Team",
+      "Suqian City Team"
+    ],
+    "headline": "首届江苏省城市足球联赛；13支设区市代表队参加，属于成年地方城市联赛，不是中超、中甲、中乙或中冠的固定下一级。",
+    "statistics_scope": "senior-regional-city-league-only",
+    "youth_snapshot": {
+      "registered_players": 516,
+      "student_players": 158,
+      "student_share": 0.31,
+      "average_age": 24.09,
+      "youngest_age": 16
+    },
+    "notes": [
+      "2025赛季官方发布会口径为516名参赛球员，其中158名在籍在读学生，占31%；学生身份不自动等于某家职业俱乐部青训身份。",
+      "新华社对盐城队的专题确认该队有18名学生球员，并列出严子航、李智良、王俊飞、李瑞龙、盛家豪等学校与俱乐部节点。",
+      "城市代表队身份、学校身份、职业俱乐部或社会青训注册必须分层记录，不能把苏超报名单位直接写成当前注册俱乐部。"
+    ],
+    "sources": [
+      {
+        "label": "Jiangsu Sports Bureau opening report",
+        "publisher": "Jiangsu Provincial Sports Bureau",
+        "url": "https://jsstyj.jiangsu.gov.cn/art/2025/5/10/art_40686_11561898.html"
+      },
+      {
+        "label": "2025 Jiangsu City League press conference",
+        "publisher": "Jiangsu Provincial Government Information Office",
+        "url": "https://www.jsxc.gov.cn/jsfb/xwfbh/202505/t20250514_20288.shtml"
+      },
+      {
+        "label": "Xinhua profile of Yancheng student players",
+        "publisher": "Xinhua News Agency",
+        "url": "https://www.news.cn/20250624/eb19898a8d0f493c80452faaaf2fe021/c.html"
+      }
+    ]
+  },
+  {
+    "id": "jiangsu-city-league-2026",
+    "name": "Jiangsu City Football League 2026",
+    "short_name": "苏超 2026",
+    "focus_level": "reference",
+    "competition_level": "senior-regional-city-league",
+    "status": "in-progress",
+    "date_precision": "open-ended",
+    "last_checked": "2026-08-02",
+    "date_range": {
+      "start": "2026-04-11",
+      "end": null
+    },
+    "focus_teams": [
+      "Nanjing City Team",
+      "Wuxi City Team",
+      "Xuzhou City Team",
+      "Changzhou City Team",
+      "Suzhou City Team",
+      "Nantong City Team",
+      "Lianyungang City Team",
+      "Huai'an City Team",
+      "Yancheng City Team",
+      "Yangzhou City Team",
+      "Zhenjiang City Team",
+      "Taizhou City Team",
+      "Suqian City Team"
+    ],
+    "headline": "2026江苏省城市足球联赛当前赛季；647名有效报名球员中有430名U22球员、224名在册学生球员，并执行U22以下6名球员上场政策。",
+    "statistics_scope": "senior-regional-city-league-only",
+    "update_cadence": "按月复核U22规则、学生球员名单、实际出场和国字号/职业注册变化。",
+    "youth_snapshot": {
+      "registered_players": 647,
+      "u22_players": 430,
+      "u22_share": 0.6646,
+      "student_players": 224,
+      "average_age": 22.32,
+      "u22_on_field_requirement": 6
+    },
+    "notes": [
+      "赛事年轻化是成年比赛机会政策，不应把所有U22球员统称为青训球员；本仓库仅为有学校、省队、社会青训、俱乐部或国字号直接来源的样本建立路径。",
+      "当前具名样本包括徐州队苗润东，以及无锡队周禹呈、刘靖磊、常永浩、赵启森；他们分别连接江苏常晋/江宁基地、宜兴校园足球、江苏09/10省队和国字号观察节点。",
+      "江苏青训另按县级普及、市级青训中心布局、省级青训中心精英培养，以及市级U10-U15、省级U16以上的1+N模式建设；苏超只是成年赛事桥梁之一。"
+    ],
+    "sources": [
+      {
+        "label": "Jiangsu youth-development system and Suchao U22 policy",
+        "publisher": "General Administration of Sport of China / China Sports Daily",
+        "url": "https://www.sport.gov.cn/n20001280/n20067626/n20067732/c29549657/content.html"
+      },
+      {
+        "label": "2026 Suchao youth and student-player snapshot",
+        "publisher": "Xinhua Daily / China Jiangsu Net",
+        "url": "https://jsnews.jschina.com.cn/jsyw/202604/t20260428_s69f09eb7e4b077df9927f7f0.shtml"
+      },
+      {
+        "label": "Nanjing team 2026 roster composition",
+        "publisher": "Nanjing Municipal Government",
+        "url": "https://www.nanjing.gov.cn/njxx/202603/t20260327_5813430.html"
+      }
+    ]
   }
 ]

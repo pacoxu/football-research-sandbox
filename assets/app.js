@@ -44,7 +44,7 @@ const state = {
     view: "cards"
   },
   scoutingCountry: "all",
-  pathwaysCountry: "Japan",
+  pathwaysCountry: "China PR",
   tournamentFilters: {
     level: "all"
   },
@@ -94,7 +94,7 @@ const UI_COPY = {
     "page.overseas.title": "留洋专页 | 青训球员追踪站",
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
     "page.pathways.title": "青训体系与项目 | 青训球员追踪站",
-    "page.pathways.description": "比较日本、韩国、挪威、丹麦和瑞典的学校足球、俱乐部学院、人才识别与职业桥梁。",
+    "page.pathways.description": "比较中国、日本、韩国、挪威、丹麦和瑞典的足协治理、学校足球、俱乐部学院、人才识别与职业桥梁。",
     "page.coaches.title": "青训教练 | 青训球员追踪站",
     "page.coaches.description": "查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。",
     "page.data-center.title": "数据质量与对比 | 青训球员追踪站",
@@ -349,6 +349,7 @@ const UI_COPY = {
     "pathways.meta.coverage": "{countries} 国 · {count} 个体系节点",
     "pathways.meta.checked": "体系核查至 {date}",
     "pathways.tabs.aria": "国家切换",
+    "pathways.tabs.china": "中国",
     "pathways.tabs.japan": "日本",
     "pathways.tabs.korea": "韩国",
     "pathways.tabs.norway": "挪威",
@@ -903,6 +904,26 @@ const UI_COPY = {
     "overseas.heritage.status.wartime-unofficial": "战时非正式代表",
     "overseas.heritage.worldCup.final-squad": "终报名名单",
     "overseas.heritage.worldCup.played": "已出场",
+    "overseas.support.eyebrow": "Overseas Player Support",
+    "overseas.support.title": "中国足协海外球员资助政策",
+    "overseas.support.meta": "{count} 项政策 · 核验至 {date}",
+    "overseas.support.empty": "当前还没有可展示的海外资助政策。",
+    "overseas.support.scope": "收录口径",
+    "overseas.support.target": "适用对象",
+    "overseas.support.eligibility": "主要条件",
+    "overseas.support.funding": "资助结构",
+    "overseas.support.costs": "可用于",
+    "overseas.support.application": "申报与发放",
+    "overseas.support.boundary": "阅读边界",
+    "overseas.support.nonSubsidy": "不要混同为球员补贴",
+    "overseas.support.sources": "来源",
+    "overseas.support.period": "计划周期：{value}",
+    "overseas.support.organizers": "实施方：{value}",
+    "overseas.support.amount": "{value}",
+    "overseas.support.reportedMaximum": "发布会理论上限：{value}",
+    "overseas.support.window": "申报期：{start}—{end} {time}（北京时间）",
+    "overseas.support.status.first-cycle": "首个周期已启动",
+    "overseas.support.status.application-open": "2026 申报中",
     "overseas.training.eyebrow": "Overseas Training Programs",
     "overseas.training.title": "中国球员出国培训计划",
     "overseas.training.meta": "{count} 个计划 · 核验至 {date}",
@@ -987,7 +1008,7 @@ const UI_COPY = {
     "page.overseas.title": "Overseas Tracker | Youth Player Tracking Desk",
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
     "page.pathways.title": "Youth Systems and Programmes | Youth Player Tracking Desk",
-    "page.pathways.description": "Compare school football, club academies, talent identification and professional bridges across Japan, South Korea, Norway, Denmark and Sweden.",
+    "page.pathways.description": "Compare association governance, school football, club academies, talent identification and professional bridges across China, Japan, South Korea, Norway, Denmark and Sweden.",
     "page.coaches.title": "Youth Coaches | Youth Player Tracking Desk",
     "page.coaches.description": "Explore Chinese grassroots youth coaches and men's youth national-team staffs with organizations, age groups, and source links.",
     "page.data-center.title": "Data Quality and Comparison | Youth Player Tracking Desk",
@@ -1242,6 +1263,7 @@ const UI_COPY = {
     "pathways.meta.coverage": "{countries} countries · {count} system nodes",
     "pathways.meta.checked": "System checked through {date}",
     "pathways.tabs.aria": "Country switch",
+    "pathways.tabs.china": "China",
     "pathways.tabs.japan": "Japan",
     "pathways.tabs.korea": "South Korea",
     "pathways.tabs.norway": "Norway",
@@ -1796,6 +1818,26 @@ const UI_COPY = {
     "overseas.heritage.status.wartime-unofficial": "Unofficial wartime representative",
     "overseas.heritage.worldCup.final-squad": "Final squad",
     "overseas.heritage.worldCup.played": "Appeared",
+    "overseas.support.eyebrow": "Overseas Player Support",
+    "overseas.support.title": "CFA overseas player support policies",
+    "overseas.support.meta": "{count} policies · checked through {date}",
+    "overseas.support.empty": "No overseas player support policy is available yet.",
+    "overseas.support.scope": "Coverage",
+    "overseas.support.target": "Target group",
+    "overseas.support.eligibility": "Main criteria",
+    "overseas.support.funding": "Funding structure",
+    "overseas.support.costs": "Eligible costs",
+    "overseas.support.application": "Application and payment",
+    "overseas.support.boundary": "Reading boundary",
+    "overseas.support.nonSubsidy": "Not a player subsidy",
+    "overseas.support.sources": "Sources",
+    "overseas.support.period": "Program period: {value}",
+    "overseas.support.organizers": "Administrators: {value}",
+    "overseas.support.amount": "{value}",
+    "overseas.support.reportedMaximum": "Published theoretical maximum: {value}",
+    "overseas.support.window": "Application: {start}–{end} {time} (China time)",
+    "overseas.support.status.first-cycle": "First cycle launched",
+    "overseas.support.status.application-open": "2026 applications open",
     "overseas.training.eyebrow": "Overseas Training Programs",
     "overseas.training.title": "China player development programs abroad",
     "overseas.training.meta": "{count} programs · checked through {date}",
@@ -2310,7 +2352,8 @@ const LEVEL_LABELS = {
   u17: { zh: "U17", en: "U17" },
   "senior-world-cup": { zh: "世界杯", en: "World Cup" },
   "u20-world-cup": { zh: "世青赛", en: "U-20 World Cup" },
-  "u17-world-cup": { zh: "世少赛", en: "U-17 World Cup" }
+  "u17-world-cup": { zh: "世少赛", en: "U-17 World Cup" },
+  "regional-city-league": { zh: "地方城市联赛", en: "Regional city league" }
 };
 
 const BUCKET_LABELS = {
@@ -2395,6 +2438,7 @@ const TAG_LABELS = {
   "olympic-stars-germany": { zh: "08之星赴德", en: "Olympic Stars Germany" },
   homegrown: { zh: "本土培养", en: "Homegrown" },
   "japan-youth": { zh: "日本青训", en: "Japan youth" },
+  "jiangsu-city-league-youth": { zh: "苏超青年样本", en: "Suchao youth sample" },
   "k-league": { zh: "K 联赛体系", en: "K League system" },
   "korea-youth": { zh: "韩国青训", en: "Korea youth" },
   "loan-pathway": { zh: "租借路径", en: "Loan pathway" },
@@ -2409,6 +2453,7 @@ const TAG_LABELS = {
   "recent-outbound-2026": { zh: "2026 新增留洋", en: "2026 outbound wave" },
   "salzburg-pathway": { zh: "萨尔茨堡路径", en: "Salzburg pathway" },
   "school-system": { zh: "学校体系", en: "School system" },
+  "suchao-2026": { zh: "苏超 2026", en: "Suchao 2026" },
   "striker-watch": { zh: "前锋观察", en: "Striker watch" },
   "u21-watch": { zh: "U21 观察", en: "U21 watch" },
   "u23-overseas": { zh: "U23 留洋", en: "U23 overseas" },
@@ -2476,6 +2521,8 @@ const ORGANIZATION_TYPE_LABELS = {
   "community-club": { zh: "基层 / 社区俱乐部", en: "Grassroots / community club" },
   university: { zh: "大学球队", en: "University team" },
   "professional-club": { zh: "职业一线队", en: "Professional first team" },
+  "provincial-youth-team": { zh: "省级青训 / 代表队", en: "Provincial youth team" },
+  "city-representative-team": { zh: "城市代表队", en: "City representative team" },
   "military-service-club": { zh: "成年军队球队", en: "Senior military-service club" },
   "overseas-academy": { zh: "海外青训梯队", en: "Overseas academy" },
   "national-academy": { zh: "国家级青训学院", en: "National academy" },
@@ -2534,7 +2581,8 @@ const YOUTH_COMPETITION_TYPE_LABELS = {
   "talent-development-program": { zh: "人才培养项目", en: "Talent-development programme" },
   "academy-certification": { zh: "学院认证", en: "Academy certification" },
   "club-development-program": { zh: "俱乐部发展项目", en: "Club-development programme" },
-  "player-development-framework": { zh: "球员培养框架", en: "Player-development framework" }
+  "player-development-framework": { zh: "球员培养框架", en: "Player-development framework" },
+  "regional-city-league": { zh: "地方城市联赛桥梁", en: "Regional city-league bridge" }
 };
 
 const MATCH_RESULT_LABELS = {
@@ -3263,7 +3311,7 @@ function formatRange(range) {
   if (!range?.start && !range?.end) {
     return t("common.pending");
   }
-  return `${formatDate(range.start)} - ${formatDate(range.end)}`;
+  return `${formatDate(range.start)} - ${range.end ? formatDate(range.end) : getLabel(STATUS_LABELS, "in-progress")}`;
 }
 
 function getAge(birthDate, asOfDate) {
@@ -4999,7 +5047,9 @@ function getHomeFocusTournament() {
 
     const leftPhase = getPhaseRank(left);
     if (leftPhase === 0) {
-      return left.date_range.end.localeCompare(right.date_range.end);
+      return (left.date_range.end ?? "9999-12-31").localeCompare(
+        right.date_range.end ?? "9999-12-31"
+      );
     }
     if (leftPhase === 1) {
       return left.date_range.start.localeCompare(right.date_range.start);
@@ -7339,6 +7389,13 @@ function getPathwaysSystem(country = state.pathwaysCountry) {
 }
 
 function getCompetitionSamplePlayers(system, competition) {
+  if (competition.sample_focus_tag) {
+    return state.enrichedPlayers.filter(
+      (player) =>
+        player.country === system.country &&
+        (player.focus_tags ?? []).includes(competition.sample_focus_tag)
+    );
+  }
   return state.enrichedPlayers.filter(
     (player) =>
       player.country === system.country &&
@@ -7351,6 +7408,10 @@ function getCompetitionSamplePlayers(system, competition) {
 
 function buildCompetitionSampleUrl(system, competition) {
   const params = new URLSearchParams({ country: system.country });
+  if (competition.sample_focus_tag) {
+    params.set("tag", competition.sample_focus_tag);
+    return `./players.html?${params.toString()}`;
+  }
   if (competition.organization_types.length === 1) {
     params.set("organizationType", competition.organization_types[0]);
   }
@@ -8643,6 +8704,12 @@ function renderOverseasPage() {
   const heritageScope = document.querySelector("#chineseHeritagePlayersScope");
   const heritageGroups = document.querySelector("#chineseHeritagePlayersGroups");
   const heritageEmptyState = document.querySelector("#chineseHeritagePlayersEmptyState");
+  const supportSection = document.querySelector("#overseasSupportPoliciesSection");
+  const supportMeta = document.querySelector("#overseasSupportPoliciesMeta");
+  const supportScope = document.querySelector("#overseasSupportPoliciesScope");
+  const supportCards = document.querySelector("#overseasSupportPoliciesCards");
+  const supportBoundary = document.querySelector("#overseasSupportPoliciesBoundary");
+  const supportEmptyState = document.querySelector("#overseasSupportPoliciesEmptyState");
   const trainingSection = document.querySelector("#overseasTrainingProgramsSection");
   const trainingMeta = document.querySelector("#overseasTrainingProgramsMeta");
   const trainingScope = document.querySelector("#overseasTrainingProgramsScope");
@@ -8846,6 +8913,32 @@ function renderOverseasPage() {
     heritageEmptyState.hidden = heritageProfiles.length > 0;
   }
 
+  const supportPolicies = state.overview?.overseas_history?.overseas_support_policies;
+  const supportPolicyItems = supportPolicies?.policies ?? [];
+  if (supportSection) {
+    supportSection.hidden = supportPolicyItems.length === 0;
+  }
+  if (supportMeta) {
+    supportMeta.textContent = t("overseas.support.meta", {
+      count: supportPolicyItems.length,
+      date: formatDate(supportPolicies?.checked_at)
+    });
+  }
+  if (supportScope) {
+    supportScope.innerHTML = `<strong>${escapeHtml(t("overseas.support.scope"))}：</strong>${escapeHtml(localizeText(supportPolicies?.scope_note))}`;
+  }
+  if (supportCards) {
+    supportCards.innerHTML = supportPolicyItems.map(renderOverseasSupportPolicyCard).join("");
+  }
+  if (supportBoundary) {
+    supportBoundary.innerHTML = (supportPolicies?.non_subsidy_boundaries ?? [])
+      .map(renderOverseasSupportBoundaryCard)
+      .join("");
+  }
+  if (supportEmptyState) {
+    supportEmptyState.hidden = supportPolicyItems.length > 0;
+  }
+
   const trainingPrograms = state.overview?.overseas_history?.overseas_training_programs;
   const trainingProgramItems = trainingPrograms?.programs ?? [];
   if (trainingSection) {
@@ -8930,6 +9023,83 @@ function renderChineseHeritagePlayerCard(profile) {
       ` : ""}
       <p class="timeline-label">${escapeHtml(t("overseas.heritage.sources"))}</p>
       <div class="pill-row">${renderLinkPills(profile.source_links ?? [])}</div>
+    </article>
+  `;
+}
+
+function formatSupportAmountCny(item) {
+  const formatter = new Intl.NumberFormat(getLocale());
+  const prefix = state.language === "en" ? "CNY " : "¥";
+  if (Number.isFinite(item?.amount_cny_min) && Number.isFinite(item?.amount_cny_max)) {
+    return `${prefix}${formatter.format(item.amount_cny_min)}–${prefix}${formatter.format(item.amount_cny_max)}`;
+  }
+  return Number.isFinite(item?.amount_cny)
+    ? `${prefix}${formatter.format(item.amount_cny)}`
+    : "";
+}
+
+function renderOverseasSupportPolicyCard(policy) {
+  const applicationWindow = policy.application_window;
+  const windowLine = applicationWindow
+    ? t("overseas.support.window", {
+        start: formatDate(applicationWindow.start),
+        end: formatDate(applicationWindow.end),
+        time: applicationWindow.closing_time
+      })
+    : "";
+  const theoreticalMaximum = policy.reported_upper_bound
+    ? formatSupportAmountCny(policy.reported_upper_bound)
+    : "";
+  return `
+    <article class="story-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t(`overseas.support.status.${policy.status}`))}</span>
+        <span class="chip">${escapeHtml(policy.period)}</span>
+      </div>
+      <h3>${escapeHtml(localizeText(policy.name))}</h3>
+      <p class="small-note">${escapeHtml(t("overseas.support.organizers", { value: (policy.administrators ?? []).join(" · ") }))}</p>
+      ${windowLine ? `<p class="small-note">${escapeHtml(windowLine)}</p>` : ""}
+      <p class="timeline-label">${escapeHtml(t("overseas.support.target"))}</p>
+      <p>${escapeHtml(localizeText(policy.target_scope))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.support.eligibility"))}</p>
+      <ul class="mini-bullet-list coach-record-list">
+        ${(policy.eligibility ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}
+      </ul>
+      <p class="timeline-label">${escapeHtml(t("overseas.support.funding"))}</p>
+      <ul class="mini-bullet-list coach-record-list">
+        ${(policy.support_items ?? []).map((item) => `
+          <li>
+            <strong>${escapeHtml(localizeText(item.label))} · ${escapeHtml(formatSupportAmountCny(item))}</strong><br>
+            <span>${escapeHtml(localizeText(item.amount_basis))}</span>
+          </li>
+        `).join("")}
+      </ul>
+      ${theoreticalMaximum ? `
+        <p class="small-note"><strong>${escapeHtml(t("overseas.support.reportedMaximum", { value: theoreticalMaximum }))}</strong> · ${escapeHtml(localizeText(policy.reported_upper_bound.basis))}</p>
+      ` : ""}
+      ${(policy.covered_costs ?? []).length > 0 ? `
+        <p class="timeline-label">${escapeHtml(t("overseas.support.costs"))}</p>
+        <ul class="mini-bullet-list coach-record-list">
+          ${policy.covered_costs.map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("")}
+        </ul>
+      ` : ""}
+      <p class="timeline-label">${escapeHtml(t("overseas.support.application"))}</p>
+      <p>${escapeHtml(localizeText(policy.application_note))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.support.boundary"))}</p>
+      <p class="small-note">${escapeHtml(localizeText(policy.boundary_note))}</p>
+      <p class="timeline-label">${escapeHtml(t("overseas.support.sources"))}</p>
+      <div class="pill-row">${renderLinkPills(policy.source_links ?? [])}</div>
+    </article>
+  `;
+}
+
+function renderOverseasSupportBoundaryCard(boundary) {
+  return `
+    <article class="stack-card">
+      <p class="timeline-label">${escapeHtml(t("overseas.support.nonSubsidy"))}</p>
+      <h3>${escapeHtml(localizeText(boundary.label))}</h3>
+      <p>${escapeHtml(localizeText(boundary.note))}</p>
+      <div class="pill-row">${renderLinkPills(boundary.source_links ?? [])}</div>
     </article>
   `;
 }

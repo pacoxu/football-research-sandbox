@@ -55,7 +55,7 @@
 
 中国、日本、韩国和乌兹别克斯坦球员在 `data/raw/player-name-overrides.json` 中维护本土姓名审计。`native_verification.status` 只允许 `verified` 或 `unresolved`：前者必须包含 `language_tag`、官方 `sources` 和核查日期，后者不得写入 `native`，必须列出 `attempts` 和未确认说明。日本的 `native/ja`、韩国的 `native/ko` 必须一致；乌兹别克姓名允许 `uz-Latn` 或 `uz-Cyrl`。
 
-loader 将审计块公开为球员的 `name_verification`，并把已验证的姓名来源合并到 `source_layers`。中文译名不自动等同于已核本土姓名；`unresolved` 球员的 `names.native` 回退为英文注册名。
+loader 在内存数据中保留 `name_verification` 供质量统计使用，并把已验证的姓名来源合并到 `source_layers`。站点生成器会移除 `name_verification` 审计过程；中文译名不自动等同于已核本土姓名，`unresolved` 球员的 `names.native` 回退为英文注册名。字段发布契约见 `docs/publication-policy.md`。
 
 ### `overseas_status`
 
@@ -263,6 +263,7 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 | `countries[].historical_trial_records` | 有可靠来源的历史海外训练/试训事件；必须明确 `signed`、`registration_changed`，不得混入正式留洋人数。 |
 | `countries[].naturalized_players` | 中国归化球员专题；主名单按成年国家队已出场或足协正式征召收录，并保存归化前后海外职业路径。 |
 | `chinese_heritage_players` | 全球华裔球员观察专题；按 2026 世界杯、现役资格观察和历史人物分组，保存华裔背景、代表队边界、足球履历与逐人来源。 |
+| `overseas_support_policies` | 中国籍球员海外训练比赛资助政策；保存适用对象、准入条件、资助项目/档位、申报窗口、资金用途、理论上限边界及来源。 |
 | `overseas_training_programs` | 中国球员成批出国培训计划对照；保存项目机制、人数口径、目的地、组织方、阶段时间线、成果、证据边界及专题关联。 |
 
 留洋历史记录要区分正式一线队联赛、杯赛、梯队、低级别联赛和纯青训经历，不混算。
@@ -274,6 +275,8 @@ loader 将审计块公开为球员的 `name_verification`，并把已验证的�
 归化球员专题不并入 `verified_records` 或当前留洋人数。`china_team_status` 仅允许 `senior-capped`、`senior-squad`；前者须有成年国家队比赛证据，后者只表示中国足协正式征召。`naturalization_path` 区分 `heritage` 与 `non-heritage`。`career_segments[].phase` 标明归化前、归化后海外阶段或原成长体系回归，避免把出生国职业履历误写成“从中国出发留洋”。仅有中国国籍或俱乐部注册、尚无中国成年队出场或正式征召证据的案例不进入主名单。
 
 全球华裔球员观察与中国归化球员专题相互独立。华裔背景不推导中国国籍、中国队参赛资格或个人身份认同；`representation_status` 区分成年国脚、青年国脚、资格观察、已绑定其他足协和战时非正式代表。`world_cup_2026` 仅用于有 FIFA 名单或比赛证据的本届参赛球员。
+
+海外资助政策不并入当前留洋人数。`status` 只表示数据核查时的计划阶段；符合年龄、注册或赛事条件不等于申报成功，申报也不等于已经公示、签约或获款。`support_items` 保留固定金额、区间和系数说明；`reported_upper_bound` 必须标明理论上限，不得写成保底金额。`non_subsidy_boundaries` 用于明确 FIFA/中国足协培训补偿、联合机制补偿属于培养机构之间的补偿，不是发给球员或家庭的海外生活补贴。
 
 出国培训计划不并入当前留洋人数。`model` 区分国字号整队驻外、大赛备战集训、多俱乐部分流和精英学院嵌入；`participant_scope` 必须保留首批、累计或报道冲突口径。项目成员、海外训练、当地注册、正式比赛和成年职业出口不能互相推导。万达逐名专题当前固定 2012—2016 五批；2017 年第六批只作为有官方来源的项目时间线事实，取得完整名单前不修改五批人数契约。
 
