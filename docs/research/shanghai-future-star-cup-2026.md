@@ -1,6 +1,6 @@
-# 2026 上海明日之星冠军杯男足与上海 U17 名册
+# 2026 上海明日之星冠军杯男足、上海 U17 与阿森纳 U17 名册
 
-更新时间：2026-08-11
+更新时间：2026-09-02
 
 ## 赛事边界
 
@@ -45,6 +45,39 @@
 
 位置分布为守门员 3、后卫 8、中场 6、前锋 6。顾博宇、吕孟洋复用主库既有实体并追加赛事参赛记录；其余 21 人建立新实体，避免同名重复。
 
+## 阿森纳 U17 名册快照
+
+阿森纳名单按赛事主办方球员信息图转录，共 22 人。号码和位置只保留本届邀请赛报名口径；英超青年梯队没有固定的长期 U17 赛季名单，因此不把这 22 人写成 2026/27 赛季永久注册阵容，也不依据名单推断出生日期。
+
+英文姓名另以阿森纳青训报道及赛事逐场名单交叉核对。公开报道与比赛名单支持 `Abraham Owusu-Gyasi`，因此不采用低清图片可能产生的 `Omisuli-Gyasi` 误读；报名表中的 `Marley Frohock` 也不写成 `Marcel Frohock`。
+
+| 号码 | 球员 | 位置 |
+| ---: | --- | --- |
+| 7 | Maximilian Lo Presti | 守门员 |
+| 84 | Jack Talbot | 守门员 |
+| 16 | Zachary Van der Straaten | 后卫 |
+| 17 | Frankie Wyatt | 后卫 |
+| 78 | Abraham Owusu-Gyasi | 后卫 |
+| 82 | Patrick Stachow | 后卫 |
+| 85 | Hakeem Abubakar | 后卫 |
+| 87 | Elyon Mbala | 后卫 |
+| 88 | Daniel McCarron | 后卫 |
+| 95 | Joshua Sesay | 后卫 |
+| 3 | Mikael Bonaventure Yetna | 中场 |
+| 74 | Maalik Hashi | 中场 |
+| 79 | Bowen Phillips | 中场 |
+| 81 | Saurap Sampang | 中场 |
+| 90 | Emerson Nwaneri | 中场 |
+| 92 | Theo Odaji-Ukueku | 中场 |
+| 9 | Jaden Maghoma | 前锋 |
+| 12 | Luis Munoz | 前锋 |
+| 13 | Kyron Raymond-Callender | 前锋 |
+| 70 | Gabriel Arteta Bernal | 前锋 |
+| 72 | Marley Frohock | 前锋 |
+| 91 | Jayden Oba | 前锋 |
+
+位置分布为守门员 2、后卫 8、中场 6、前锋 6。赛事号码最高到 95，不能按常见青年赛 1—23 号范围自动纠正；逐场比赛页可能显示不同的比赛号码，本表保留主办方报名表号码。
+
 ## 来源与限制
 
 - [上海市政府：2026 上海明日之星冠军杯发布、日期与分组](https://www.shanghai.gov.cn/nw31406/20260617/f9f5ca21627c43abb45a59a26b87d3eb.html)
@@ -52,5 +85,7 @@
 - [球天下：上海 U17 球员关联名单与许祺祯资料页](https://data.qtx.com/qiuyuan/mV6oYoz07G.html)
 - [AiScore：完整小组赛对阵与首轮比分](https://m.aiscore.com/en/tournament-shanghai-future-star-cup/eg6763i6opi47ry/matches)
 - [新浪公开索引：上海队名单发布](https://www.sina.cn/news/detail/5317232427271150.html)
+- [Jeorge Bird's Arsenal Youth：阿森纳 U17 上海赛事名单交叉核对](https://arsenalyouth.wordpress.com/2026/08/01/emerson-nwaneri-gabriel-arteta-and-luis-munoz-named-in-arsenal-u17-squad-for-shanghai-future-star-cup/)
+- [AiScore：中国 U17 对阿森纳 U17 逐场名单交叉核对](https://vnm.aiscore.com/match-arsenal-u17-china-u17/j374oi0y3mmigqo/lineups)
 
-球天下属于公开数据聚合页，不等同于赛事官方报名表。因此 23 人按“可核的赛事名单快照”标记，验证状态为 `provisional`；姓名、生日、位置和号码可用，永久注册、出场、进球、分钟仍需官方或俱乐部来源升级。
+球天下属于公开数据聚合页，不等同于赛事官方报名表。因此上海 23 人按“可核的赛事名单快照”标记，验证状态为 `provisional`；姓名、生日、位置和号码可用，永久注册、出场、进球、分钟仍需官方或俱乐部来源升级。阿森纳 22 人只存于赛事名册视图，不创建缺少出生日期和独立官方档案的主球员实体。

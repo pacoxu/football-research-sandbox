@@ -326,7 +326,7 @@
     "short_name": "Shanghai Future Star U17 2026",
     "focus_level": "primary",
     "status": "completed",
-    "last_checked": "2026-08-11",
+    "last_checked": "2026-09-02",
     "date_range": {
       "start": "2026-08-03",
       "end": "2026-08-09"
@@ -338,7 +338,7 @@
       "Bayer Leverkusen U17",
       "Shanghai U17"
     ],
-    "headline": "2026 上海明日之星冠军杯男足已完成 8 队分组和 12 场小组赛赛程建档，并补齐上海 U17 的 23 人赛事名单快照；淘汰赛完整赛果仍待可靠来源复核。",
+    "headline": "2026 上海明日之星冠军杯男足已完成 8 队分组和 12 场小组赛赛程建档，并补齐上海 U17 的 23 人及阿森纳 U17 的 22 人赛事名单快照；淘汰赛完整赛果仍待可靠来源复核。",
     "notes": [
       "男足赛事于 2026-08-03 至 2026-08-09 在上汽浦东足球场和源深体育中心举行，共 8 支 U17 球队参赛。",
       "A 组为中国 U17、毕尔巴鄂竞技 U17、勒沃库森 U17、阿森纳 U17；B 组为上海 U17、托特纳姆热刺 U17、河床 U17、葡萄牙体育 U17。",
@@ -347,10 +347,10 @@
       "中国足球队官方微博 8 月 2 日确认首轮在上汽浦东足球场进行；转播平台为“足球中国”的微博、抖音、快手和视频号。官方海报未列央视、咪咕或其他平台，因此不根据上一站银川赛事或聚合直播站补写渠道。",
       "本届是赛事自 2022 年创办以来的第五届，年度主题为“明日之星，世界同场”；男、女足两项合计 16 支球队、40 场比赛。本条仍只统计 8 月 3 日至 9 日的男足赛事。",
       "男足门票预售已开启，公开票档为 50、80、120、200 元；双人套票八五折、三人套票八折，官方公布的销售渠道为大麦和久事体育。具体场次余票、席位与优惠适用情况以售票平台实时页面为准。",
-      "阿森纳 U17 的参赛席位已由上海赛事主办方确认；截至 8 月 2 日，尚未检索到阿森纳俱乐部发布的本届赛事出征名单，因此不根据往期梯队名单推定来沪球员。",
+      "阿森纳 U17 的 22 人赛事报名表按主办方球员信息图保留号码与位置，并由阿森纳青训报道及赛事逐场名单交叉核对英文姓名；这是一届邀请赛的报名快照，不等同于 2026/27 赛季固定 U17 注册名单。",
       "同一品牌下的首届女足赛事另于 8 月 16 日至 22 日举行，也有阿森纳 U17 女足参赛；本条只统计男足赛事，避免混合两套赛程。",
       "公开赛事数据页记录首轮比分：上海 U17 3 比 3 葡萄牙体育、中国 U17 3 比 2 阿森纳、毕尔巴鄂竞技 0 比 0 勒沃库森、托特纳姆热刺 1 比 1 河床；该批比分标记为二级赛事数据快照。",
-      "上海 U17 名册采用 2026-08-11 可核的球员页关联快照，共 23 人；该代表队身份不等同于球员永久俱乐部注册。",
+      "上海 U17 名册采用 2026-08-11 可核的球员页关联快照，共 23 人；阿森纳 U17 名册采用赛事报名表快照，共 22 人。两队赛事身份都不用于推断永久俱乐部注册或固定梯队层级。",
       "截至本次校对，未找到可稳定交叉验证的官方闭幕赛果页，因此第二、三轮及淘汰赛完整比分、冠军和个人出场数据暂不录入。"
     ],
     "participants": {
@@ -381,17 +381,18 @@
     },
     "latest_public_roster_view": {
       "label": {
-        "zh": "2026 上海 U17 赛事名单快照",
-        "en": "2026 Shanghai U17 tournament roster snapshot"
+        "zh": "2026 上海 U17 与阿森纳 U17 赛事名单快照",
+        "en": "2026 Shanghai U17 and Arsenal U17 tournament roster snapshots"
       },
       "note": {
-        "zh": "按 2026-08-11 可核的上海 U17 球员页关联名单整理，共 23 人。球衣号和位置按赛事页面保留；俱乐部归属未由该名单统一确认，因此不做推断。",
-        "en": "Compiled from the Shanghai U17 linked-player roster available on 2026-08-11. The snapshot contains 23 players; shirt numbers and positions follow the event pages, while permanent club registrations are not inferred."
+        "zh": "上海 U17 的 23 人名单按公开球员页关联快照整理；阿森纳 U17 的 22 人名单按赛事球员信息图整理，并用阿森纳青训报道及逐场名单交叉核名。号码与位置只代表本届赛事报名口径，不推断永久注册或固定梯队。",
+        "en": "The Shanghai U17 view contains 23 linked player profiles. The 22-player Arsenal U17 view follows the event player-information graphic, with names cross-checked against Arsenal youth coverage and match lineups. Numbers and positions are tournament snapshots, not permanent registration or fixed-squad claims."
       },
-      "checked_at": "2026-08-11",
+      "checked_at": "2026-09-02",
       "groups": [
         {
           "label": "上海 U17",
+          "team": "Shanghai U17",
           "entries": [
             { "player_id": "cn-wang-qirong-2008", "player": "Wang Qirong" },
             { "player_id": "cn-liu-hanwen-2009", "player": "Liu Hanwen" },
@@ -416,6 +417,56 @@
             { "player_id": "cn-liu-zejia-2009", "player": "Liu Zejia" },
             { "player_id": "cn-huang-zijie-2009", "player": "Huang Zijie" },
             { "player_id": "cn-li-haochen-2009", "player": "Li Haochen" }
+          ]
+        },
+        {
+          "label": "阿森纳 U17 · 守门员 GK",
+          "team": "Arsenal U17",
+          "position": "Goalkeeper",
+          "entries": [
+            { "name": { "zh": "马克西米利安·洛普雷斯蒂", "en": "Maximilian Lo Presti" }, "squad_number": 7 },
+            { "name": { "zh": "杰克·塔尔博特", "en": "Jack Talbot" }, "squad_number": 84 }
+          ]
+        },
+        {
+          "label": "阿森纳 U17 · 后卫 DF",
+          "team": "Arsenal U17",
+          "position": "Defender",
+          "entries": [
+            { "name": { "zh": "扎卡里·范德斯特拉滕", "en": "Zachary Van der Straaten" }, "squad_number": 16 },
+            { "name": { "zh": "弗兰基·瓦亚特", "en": "Frankie Wyatt" }, "squad_number": 17 },
+            { "name": { "zh": "亚伯拉罕·奥乌苏-贾西", "en": "Abraham Owusu-Gyasi" }, "squad_number": 78 },
+            { "name": { "zh": "帕特里克·斯塔霍夫", "en": "Patrick Stachow" }, "squad_number": 82 },
+            { "name": { "zh": "哈基姆·阿布巴卡尔", "en": "Hakeem Abubakar" }, "squad_number": 85 },
+            { "name": { "zh": "埃利翁·姆巴拉", "en": "Elyon Mbala" }, "squad_number": 87 },
+            { "name": { "zh": "丹尼尔·麦卡伦", "en": "Daniel McCarron" }, "squad_number": 88 },
+            { "name": { "zh": "约书亚·塞塞", "en": "Joshua Sesay" }, "squad_number": 95 }
+          ]
+        },
+        {
+          "label": "阿森纳 U17 · 中场 MF",
+          "team": "Arsenal U17",
+          "position": "Midfielder",
+          "entries": [
+            { "name": { "zh": "米卡埃尔·博纳旺蒂尔·耶特纳", "en": "Mikael Bonaventure Yetna" }, "squad_number": 3 },
+            { "name": { "zh": "马利克·哈希", "en": "Maalik Hashi" }, "squad_number": 74 },
+            { "name": { "zh": "鲍恩·菲利普斯", "en": "Bowen Phillips" }, "squad_number": 79 },
+            { "name": { "zh": "索拉普·桑庞", "en": "Saurap Sampang" }, "squad_number": 81 },
+            { "name": { "zh": "埃默森·恩瓦内里", "en": "Emerson Nwaneri" }, "squad_number": 90 },
+            { "name": { "zh": "西奥·奥达吉-乌库埃库", "en": "Theo Odaji-Ukueku" }, "squad_number": 92 }
+          ]
+        },
+        {
+          "label": "阿森纳 U17 · 前锋 FW",
+          "team": "Arsenal U17",
+          "position": "Forward",
+          "entries": [
+            { "name": { "zh": "杰登·马戈马", "en": "Jaden Maghoma" }, "squad_number": 9 },
+            { "name": { "zh": "路易斯·穆尼奥斯", "en": "Luis Munoz" }, "squad_number": 12 },
+            { "name": { "zh": "凯伦·雷蒙德-卡伦德", "en": "Kyron Raymond-Callender" }, "squad_number": 13 },
+            { "name": { "zh": "加布里埃尔·阿尔特塔·贝尔纳尔", "en": "Gabriel Arteta Bernal" }, "squad_number": 70 },
+            { "name": { "zh": "马利·弗洛霍克", "en": "Marley Frohock" }, "squad_number": 72 },
+            { "name": { "zh": "杰登·奥巴", "en": "Jayden Oba" }, "squad_number": 91 }
           ]
         }
       ]
@@ -789,6 +840,16 @@
         "label": "Shanghai squad announcement public index",
         "publisher": "Sina",
         "url": "https://www.sina.cn/news/detail/5317232427271150.html"
+      },
+      {
+        "label": "Arsenal U17 Shanghai tournament squad cross-check",
+        "publisher": "Jeorge Bird's Arsenal Youth",
+        "url": "https://arsenalyouth.wordpress.com/2026/08/01/emerson-nwaneri-gabriel-arteta-and-luis-munoz-named-in-arsenal-u17-squad-for-shanghai-future-star-cup/"
+      },
+      {
+        "label": "China U17 vs Arsenal U17 match lineup cross-check",
+        "publisher": "AiScore",
+        "url": "https://vnm.aiscore.com/match-arsenal-u17-china-u17/j374oi0y3mmigqo/lineups"
       }
     ]
   },

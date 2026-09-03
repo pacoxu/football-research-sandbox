@@ -10,7 +10,12 @@ test("tracks the complete Shanghai Future Star U17 field, draw and both roster v
   const tournaments = JSON.parse(await readFile(tournamentsUrl, "utf8"));
   const event = tournaments.find(({ id }) => id === "shanghai-future-star-cup-men-u17-2026");
   const groups = event.final_draw.groups;
-  const roster = event.latest_public_roster_view.groups.flatMap(({ entries }) => entries);
+  const shanghaiRoster = event.latest_public_roster_view.groups
+    .filter(({ team }) => team === "Shanghai U17")
+    .flatMap(({ entries }) => entries);
+  const arsenalRoster = event.latest_public_roster_view.groups
+    .filter(({ team }) => team === "Arsenal U17")
+    .flatMap(({ entries }) => entries);
   const broadcast = event.broadcast_plan;
   const ticketing = event.ticketing;
 
@@ -20,8 +25,9 @@ test("tracks the complete Shanghai Future Star U17 field, draw and both roster v
   assert.equal(event.participants.teams.length, 8);
   assert.equal(groups.length, 2);
   assert.ok(groups.find(({ name }) => name === "A").teams.includes("Arsenal U17"));
-  assert.equal(roster.length, 23);
-  assert.equal(event.latest_public_roster_view.checked_at, "2026-08-11");
+  assert.equal(shanghaiRoster.length, 23);
+  assert.equal(arsenalRoster.length, 22);
+  assert.equal(event.latest_public_roster_view.checked_at, "2026-09-02");
   assert.equal(
     event.china_camp_roster_view.groups.flatMap(({ entries }) => entries).length,
     28

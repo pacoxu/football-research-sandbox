@@ -4696,10 +4696,11 @@ function renderTournamentSquadCard(entry) {
 function renderTournamentRosterViewEntry(entry) {
   const affiliation = localizeText(entry.affiliation ?? entry.club, "");
   const note = localizeText(entry.note, "");
+  const squadNumber = Number.isInteger(entry.squad_number) ? `#${entry.squad_number}` : "";
 
   return `
     <li class="roster-group-item">
-      <div class="roster-group-player">${renderPlayerReference(entry)}</div>
+      <div class="roster-group-player">${squadNumber ? `<span class="chip">${escapeHtml(squadNumber)}</span> ` : ""}${renderPlayerReference(entry)}</div>
       ${affiliation ? `<p class="small-note">${escapeHtml(affiliation)}</p>` : ""}
       ${note ? `<p class="small-note">${escapeHtml(note)}</p>` : ""}
     </li>

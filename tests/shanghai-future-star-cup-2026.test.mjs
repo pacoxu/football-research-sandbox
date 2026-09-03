@@ -8,6 +8,12 @@ function flattenRoster(view) {
   return (view?.groups ?? []).flatMap((group) => group.entries ?? []);
 }
 
+function rosterByTeam(view, team) {
+  return (view?.groups ?? [])
+    .filter((group) => group.team === team)
+    .flatMap((group) => group.entries ?? []);
+}
+
 test("stores the 2026 Shanghai Future Star Cup field and group schedule", async () => {
   const dataset = await loadDataset();
   const focus = dataset.tournaments.find((entry) => entry.id === tournamentId);
@@ -46,7 +52,7 @@ test("stores the 2026 Shanghai Future Star Cup field and group schedule", async 
 test("links all 23 Shanghai U17 roster entries to player records", async () => {
   const dataset = await loadDataset();
   const archive = dataset.tournamentArchive.find((entry) => entry.id === tournamentId);
-  const roster = flattenRoster(archive?.latest_public_roster_view);
+  const roster = rosterByTeam(archive?.latest_public_roster_view, "Shanghai U17");
   const playerById = new Map(dataset.players.map((player) => [player.id, player]));
   const shirtNumbers = roster.map((entry) => entry.squad_number);
 
@@ -74,9 +80,30 @@ test("links all 23 Shanghai U17 roster entries to player records", async () => {
 test("keeps the Shanghai roster position groups at 3-8-6-6", async () => {
   const dataset = await loadDataset();
   const archive = dataset.tournamentArchive.find((entry) => entry.id === tournamentId);
-  const counts = (archive?.latest_public_roster_view?.groups ?? []).map(
-    (group) => group.entries.length
-  );
+  const counts = (archive?.latest_public_roster_view?.groups ?? [])
+    .filter((group) => group.team === "Shanghai U17")
+    .map((group) => group.entries.length);
 
   assert.deepEqual(counts, [3, 8, 6, 6]);
+});
+
+test("stores the 22-player Arsenal U17 tournament roster with numbers and positions", async () => {
+  const dataset = await loadDataset();
+  const archive = dataset.tournamentArchive.find((entry) => entry.id === tournamentId);
+  const groups = (archive?.latest_public_roster_view?.groups ?? []).filter(
+    (group) => group.team === "Arsenal U17"
+  );
+  const roster = rosterByTeam(archive?.latest_public_roster_view, "Arsenal U17");
+  const englishNames = roster.map((entry) => entry.name.en);
+  const numbers = roster.map((entry) => entry.squad_number);
+
+  assert.deepEqual(groups.map((group) => group.entries.length), [2, 8, 6, 6]);
+  assert.equal(roster.length, 22);
+  assert.equal(new Set(englishNames).size, 22);
+  assert.equal(new Set(numbers).size, 22);
+  assert(roster.some((entry) => entry.name.en === "Luis Munoz" && entry.squad_number === 12));
+  assert(roster.some((entry) => entry.name.en === "Abraham Owusu-Gyasi" && entry.squad_number === 78));
+  assert(roster.some((entry) => entry.name.en === "Marley Frohock" && entry.squad_number === 72));
+  assert(!englishNames.includes("Marcel Frohock"));
+  assert(!englishNames.includes("Abraham Omisuli-Gyasi"));
 });
