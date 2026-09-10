@@ -4,6 +4,19 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-09-08
+
+### Added
+
+- Added a complete 2026/27 Japan–Korea first-team snapshot for the men's top divisions of UEFA's eight highest-ranked associations: 75 players across England, Italy, Spain, Germany, France, Portugal, the Netherlands and Belgium.
+- Added the final UEFA 2026 five-season association coefficient order, per-league Japan/Korea totals, current-club and loan status, and a combined 33-player verified Transfermarkt market-value ranking.
+- Added a bilingual overseas-page view with coefficient cards, eight expandable complete rosters, source links, market-value coverage notes and regression validation.
+
+### Data Scope Notes
+
+- The new current snapshot is separate from the representative historical overseas archive. It excludes second tiers, youth and reserve teams, and counts loaned players at their current club.
+- Market values are estimates from the last 2025/26 league batch updates, not transfer fees. Missing values remain unfilled and summer transfers do not imply an automatic revaluation.
+
 ## 2026-09-02
 
 ### Added

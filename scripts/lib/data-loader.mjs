@@ -254,6 +254,9 @@ export async function loadDataset() {
   const tournaments = await readJson(path.join(paths.raw, "tournaments.json"));
   const projects = await readJson(path.join(paths.raw, "projects.json"));
   const overseasHistory = await readJson(path.join(paths.raw, "overseas-history.json"));
+  const europeTopLeaguesJapanKorea = await readJson(
+    path.join(paths.raw, "europe-top-leagues-japan-korea.json")
+  );
   const dossiers = await readJson(path.join(paths.raw, "dossiers.json"));
   const scoutingWatchlist = await readOptionalJson(
     path.join(paths.raw, "scouting-watchlist.json"),
@@ -302,6 +305,7 @@ export async function loadDataset() {
     tournaments,
     projects,
     overseasHistory,
+    europeTopLeaguesJapanKorea,
     dossiers,
     scoutingWatchlist,
     tournamentArchive,

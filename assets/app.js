@@ -869,6 +869,34 @@ const UI_COPY = {
     "overseas.countryNotes.sources": "来源",
     "overseas.status.title": "中国留洋状态口径",
     "overseas.status.note": "当前留洋总数只统计“当前有效注册”；待生效、试训观察、已回流和仅历史不会计入当前人数。",
+    "overseas.europeTop.eyebrow": "UEFA Top 8",
+    "overseas.europeTop.title": "欧洲前八联赛日韩球员全景",
+    "overseas.europeTop.meta": "2026/27 赛季 · 核验至 {date}",
+    "overseas.europeTop.rosterEyebrow": "Complete roster",
+    "overseas.europeTop.rosterTitle": "按 UEFA 系数排序的完整名册",
+    "overseas.europeTop.rosterMeta": "{count} 人 · 8 个顶级联赛",
+    "overseas.europeTop.valueEyebrow": "Market values",
+    "overseas.europeTop.valueTitle": "日韩球员身价排行榜",
+    "overseas.europeTop.valueMeta": "已核身价 {valued}/{total} 人",
+    "overseas.europeTop.total": "日韩合计",
+    "overseas.europeTop.japan": "日本球员",
+    "overseas.europeTop.korea": "韩国球员",
+    "overseas.europeTop.bigFive": "五大联赛合计",
+    "overseas.europeTop.coefficient": "UEFA 系数",
+    "overseas.europeTop.players": "日韩球员",
+    "overseas.europeTop.breakdown": "日本 {japan} · 韩国 {korea}",
+    "overseas.europeTop.player": "球员",
+    "overseas.europeTop.country": "国别",
+    "overseas.europeTop.club": "俱乐部",
+    "overseas.europeTop.position": "位置",
+    "overseas.europeTop.status": "状态",
+    "overseas.europeTop.value": "身价",
+    "overseas.europeTop.rank": "排名",
+    "overseas.europeTop.league": "联赛",
+    "overseas.europeTop.loan": "租借",
+    "overseas.europeTop.registered": "当前注册",
+    "overseas.europeTop.valueMissing": "未核到",
+    "overseas.europeTop.sources": "名册、系数与身价来源",
     "overseas.naturalized.eyebrow": "Naturalized Players",
     "overseas.naturalized.title": "中国归化球员与海外履历",
     "overseas.naturalized.meta": "{count} 人 · 核验至 {date}",
@@ -1783,6 +1811,34 @@ const UI_COPY = {
     "overseas.countryNotes.sources": "Sources",
     "overseas.status.title": "China overseas status scope",
     "overseas.status.note": "The current total only counts active registrations. Pending moves, trial watches, returned players and historical-only entities are excluded.",
+    "overseas.europeTop.eyebrow": "UEFA Top 8",
+    "overseas.europeTop.title": "Japanese and Korean players across Europe's top eight leagues",
+    "overseas.europeTop.meta": "2026/27 season · checked through {date}",
+    "overseas.europeTop.rosterEyebrow": "Complete roster",
+    "overseas.europeTop.rosterTitle": "Full roster ordered by UEFA coefficient",
+    "overseas.europeTop.rosterMeta": "{count} players · 8 top divisions",
+    "overseas.europeTop.valueEyebrow": "Market values",
+    "overseas.europeTop.valueTitle": "Japan–Korea market-value ranking",
+    "overseas.europeTop.valueMeta": "{valued} of {total} values verified",
+    "overseas.europeTop.total": "Combined total",
+    "overseas.europeTop.japan": "Japan players",
+    "overseas.europeTop.korea": "Korea players",
+    "overseas.europeTop.bigFive": "Big-five total",
+    "overseas.europeTop.coefficient": "UEFA coefficient",
+    "overseas.europeTop.players": "Japan + Korea",
+    "overseas.europeTop.breakdown": "Japan {japan} · Korea {korea}",
+    "overseas.europeTop.player": "Player",
+    "overseas.europeTop.country": "Country",
+    "overseas.europeTop.club": "Club",
+    "overseas.europeTop.position": "Position",
+    "overseas.europeTop.status": "Status",
+    "overseas.europeTop.value": "Value",
+    "overseas.europeTop.rank": "Rank",
+    "overseas.europeTop.league": "League",
+    "overseas.europeTop.loan": "Loan",
+    "overseas.europeTop.registered": "Registered",
+    "overseas.europeTop.valueMissing": "Not verified",
+    "overseas.europeTop.sources": "Roster, coefficient and value sources",
     "overseas.naturalized.eyebrow": "Naturalized Players",
     "overseas.naturalized.title": "China PR naturalized players and overseas careers",
     "overseas.naturalized.meta": "{count} players · checked through {date}",
@@ -8680,6 +8736,232 @@ function getVisibleOverseasSummaryItems() {
   return getFilteredHistoricalRecords().map(toCurrentHistoricalOverseasItem);
 }
 
+function getEuropeTopLeaguePlayerName(player) {
+  const primary = state.language === "en" ? player.name?.en : player.name?.zh;
+  return primary || player.name?.en || player.name?.native || player.id;
+}
+
+function formatEuropeTopLeagueCountry(value) {
+  if (state.language === "en") {
+    return value === "Korea Republic" ? "South Korea" : value;
+  }
+  return formatCountryName(value);
+}
+
+function formatEuropeTopLeaguePosition(value) {
+  const labels = {
+    GK: { zh: "门将", en: "Goalkeeper" },
+    DEF: { zh: "后卫", en: "Defender" },
+    MID: { zh: "中场", en: "Midfielder" },
+    FWD: { zh: "前锋", en: "Forward" }
+  };
+  return labels[value]?.[state.language] ?? value;
+}
+
+function renderEuropeTopLeaguePlayerName(player) {
+  const primary = getEuropeTopLeaguePlayerName(player);
+  const secondaryNames = state.language === "en"
+    ? [player.name?.native, player.name?.zh]
+    : [player.name?.native, player.name?.en];
+  const secondary = [...new Set(secondaryNames.filter((name) => name && name !== primary))].join(" · ");
+  return `
+    <strong>${escapeHtml(primary)}</strong>
+    ${secondary ? `<div class="small-note">${escapeHtml(secondary)}</div>` : ""}
+  `;
+}
+
+function renderEuropeTopLeaguesSnapshot() {
+  const snapshot = state.overview?.europe_top_leagues_japan_korea;
+  const section = document.querySelector("#europeTopLeaguesSection");
+  if (!section) {
+    return;
+  }
+
+  section.hidden = !snapshot;
+  if (!snapshot) {
+    return;
+  }
+
+  const players = snapshot.players ?? [];
+  const leagues = [...(snapshot.coefficient_ranking?.leagues ?? [])].sort(
+    (left, right) => left.rank - right.rank
+  );
+  const japanCount = players.filter((player) => player.country === "Japan").length;
+  const koreaCount = players.filter((player) => player.country === "Korea Republic").length;
+  const bigFiveLeagues = new Set(leagues.filter((league) => league.rank <= 5).map((league) => league.league));
+  const bigFiveCount = players.filter((player) => bigFiveLeagues.has(player.league)).length;
+  const valuedPlayers = players
+    .filter((player) => Number.isFinite(player.market_value?.eur))
+    .sort((left, right) => {
+      const valueDifference = right.market_value.eur - left.market_value.eur;
+      if (valueDifference !== 0) return valueDifference;
+      return getEuropeTopLeaguePlayerName(left).localeCompare(
+        getEuropeTopLeaguePlayerName(right),
+        getSortLocale()
+      );
+    });
+
+  const meta = document.querySelector("#europeTopLeaguesMeta");
+  const scope = document.querySelector("#europeTopLeaguesScope");
+  const stats = document.querySelector("#europeTopLeaguesStats");
+  const coefficient = document.querySelector("#europeTopLeaguesCoefficient");
+  const rosterMeta = document.querySelector("#europeTopLeaguesRosterMeta");
+  const rosters = document.querySelector("#europeTopLeaguesRosters");
+  const valueMeta = document.querySelector("#europeTopLeaguesValueMeta");
+  const valueNote = document.querySelector("#europeTopLeaguesValueNote");
+  const valueRanking = document.querySelector("#europeTopLeaguesValueRanking");
+  const sources = document.querySelector("#europeTopLeaguesSources");
+
+  meta.textContent = t("overseas.europeTop.meta", { date: formatDate(snapshot.checked_at) });
+  scope.innerHTML = `
+    <strong>${escapeHtml(t("overseas.europeTop.rosterTitle"))}：</strong>${escapeHtml(localizeText(snapshot.scope_note))}
+    <br>
+    <strong>${escapeHtml(t("overseas.europeTop.coefficient"))}：</strong>${escapeHtml(`${snapshot.coefficient_ranking.period} · UEFA ${snapshot.coefficient_ranking.edition}`)}
+  `;
+  stats.innerHTML = [
+    [t("overseas.europeTop.total"), players.length],
+    [t("overseas.europeTop.japan"), japanCount],
+    [t("overseas.europeTop.korea"), koreaCount],
+    [t("overseas.europeTop.bigFive"), bigFiveCount]
+  ]
+    .map(
+      ([label, value]) => `
+        <article class="stat-card">
+          <p class="stat-label">${escapeHtml(label)}</p>
+          <p class="stat-value">${value}</p>
+        </article>
+      `
+    )
+    .join("");
+
+  coefficient.innerHTML = leagues
+    .map((league) => {
+      const leaguePlayers = players.filter((player) => player.league === league.league);
+      const leagueJapan = leaguePlayers.filter((player) => player.country === "Japan").length;
+      const leagueKorea = leaguePlayers.length - leagueJapan;
+      return `
+        <article class="europe-league-card">
+          <div class="europe-league-rank">#${league.rank}</div>
+          <div>
+            <h3>${escapeHtml(league.league)}</h3>
+            <p class="small-note">${escapeHtml(formatEuropeTopLeagueCountry(league.association))}</p>
+          </div>
+          <div class="europe-league-numbers">
+            <p><span>${escapeHtml(t("overseas.europeTop.coefficient"))}</span><strong>${league.coefficient.toFixed(3)}</strong></p>
+            <p><span>${escapeHtml(t("overseas.europeTop.players"))}</span><strong>${leaguePlayers.length}</strong></p>
+          </div>
+          <p class="small-note">${escapeHtml(t("overseas.europeTop.breakdown", { japan: leagueJapan, korea: leagueKorea }))}</p>
+        </article>
+      `;
+    })
+    .join("");
+
+  rosterMeta.textContent = t("overseas.europeTop.rosterMeta", { count: players.length });
+  rosters.innerHTML = leagues
+    .map((league) => {
+      const leaguePlayers = players
+        .filter((player) => player.league === league.league)
+        .sort((left, right) => {
+          if (left.country !== right.country) {
+            return left.country === "Japan" ? -1 : 1;
+          }
+          const clubDifference = left.club.localeCompare(right.club, getSortLocale());
+          return clubDifference || getEuropeTopLeaguePlayerName(left).localeCompare(
+            getEuropeTopLeaguePlayerName(right),
+            getSortLocale()
+          );
+        });
+      return `
+        <details class="europe-roster-card" open>
+          <summary>
+            <span><strong>#${league.rank} · ${escapeHtml(league.league)}</strong></span>
+            <span class="section-note">${escapeHtml(t("overseas.europeTop.breakdown", {
+              japan: leaguePlayers.filter((player) => player.country === "Japan").length,
+              korea: leaguePlayers.filter((player) => player.country === "Korea Republic").length
+            }))}</span>
+          </summary>
+          <div class="table-shell">
+            <table class="data-table europe-roster-table">
+              <thead>
+                <tr>
+                  <th>${escapeHtml(t("overseas.europeTop.player"))}</th>
+                  <th>${escapeHtml(t("overseas.europeTop.country"))}</th>
+                  <th>${escapeHtml(t("overseas.europeTop.club"))}</th>
+                  <th>${escapeHtml(t("overseas.europeTop.position"))}</th>
+                  <th>${escapeHtml(t("overseas.europeTop.status"))}</th>
+                  <th>${escapeHtml(t("overseas.europeTop.value"))}</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${leaguePlayers
+                  .map(
+                    (player) => `
+                      <tr>
+                        <td>${renderEuropeTopLeaguePlayerName(player)}</td>
+                        <td>${escapeHtml(formatEuropeTopLeagueCountry(player.country))}</td>
+                        <td>${escapeHtml(player.club)}</td>
+                        <td>${escapeHtml(formatEuropeTopLeaguePosition(player.position))}</td>
+                        <td>${escapeHtml(t(player.loan ? "overseas.europeTop.loan" : "overseas.europeTop.registered"))}</td>
+                        <td>${escapeHtml(player.market_value?.display ?? t("overseas.europeTop.valueMissing"))}</td>
+                      </tr>
+                    `
+                  )
+                  .join("")}
+              </tbody>
+            </table>
+          </div>
+        </details>
+      `;
+    })
+    .join("");
+
+  valueMeta.textContent = t("overseas.europeTop.valueMeta", {
+    valued: valuedPlayers.length,
+    total: players.length
+  });
+  valueNote.innerHTML = `<strong>Transfermarkt：</strong>${escapeHtml(localizeText(snapshot.market_value_methodology?.note))}`;
+  let previousValue = null;
+  let displayedRank = 0;
+  valueRanking.innerHTML = `
+    <table class="data-table europe-value-table">
+      <thead>
+        <tr>
+          <th>${escapeHtml(t("overseas.europeTop.rank"))}</th>
+          <th>${escapeHtml(t("overseas.europeTop.player"))}</th>
+          <th>${escapeHtml(t("overseas.europeTop.country"))}</th>
+          <th>${escapeHtml(t("overseas.europeTop.league"))}</th>
+          <th>${escapeHtml(t("overseas.europeTop.club"))}</th>
+          <th>${escapeHtml(t("overseas.europeTop.value"))}</th>
+        </tr>
+      </thead>
+      <tbody>
+        ${valuedPlayers
+          .map((player, index) => {
+            if (player.market_value.eur !== previousValue) {
+              displayedRank = index + 1;
+              previousValue = player.market_value.eur;
+            }
+            return `
+              <tr>
+                <td><strong>${displayedRank}</strong></td>
+                <td>${renderEuropeTopLeaguePlayerName(player)}</td>
+                <td>${escapeHtml(formatEuropeTopLeagueCountry(player.country))}</td>
+                <td>${escapeHtml(player.league)}</td>
+                <td>${escapeHtml(player.club)}</td>
+                <td><strong>${escapeHtml(player.market_value.display)}</strong></td>
+              </tr>
+            `;
+          })
+          .join("")}
+      </tbody>
+    </table>
+  `;
+  sources.innerHTML = `
+    <strong class="small-note">${escapeHtml(t("overseas.europeTop.sources"))}</strong>
+    ${renderLinkPills(snapshot.sources ?? [])}
+  `;
+}
+
 function renderOverseasPage() {
   const comparisonStats = document.querySelector("#overseasComparisonStats");
   const currentEyebrow = document.querySelector("#overseasCurrentEyebrow");
@@ -8938,6 +9220,8 @@ function renderOverseasPage() {
   if (supportEmptyState) {
     supportEmptyState.hidden = supportPolicyItems.length > 0;
   }
+
+  renderEuropeTopLeaguesSnapshot();
 
   const trainingPrograms = state.overview?.overseas_history?.overseas_training_programs;
   const trainingProgramItems = trainingPrograms?.programs ?? [];
