@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-07-26
+更新时间：2026-09-08
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -12,6 +12,7 @@
 | `data/raw/tournaments.json` | 当前页面使用的赛事卡片。 | 是 |
 | `data/raw/tournament-archive.json` | 历史赛事、赛果、中国队档案和来源版本。 | 是 |
 | `data/raw/overseas-history.json` | 中日韩留洋历史、分层 bucket 和 featured records。 | 是 |
+| `data/raw/europe-top-leagues-japan-korea.json` | UEFA 前八协会男子顶级联赛日韩一线队完整赛季快照、协会系数和可核身价。 | 是 |
 | `data/raw/big-five-asian-coaches.json` | 五大联赛亚洲教练主表和边界说明。 | 是 |
 | `data/raw/asian-coaches.json` | 五大联赛之外的亚洲主教练实体、任期、范围和官方来源。 | 是 |
 | `data/raw/china-youth-development-coaches.json` | 中国基层、校园、足校、职业梯队与民间项目的具名青训教练样本。 | 是 |
@@ -279,6 +280,22 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 海外资助政策不并入当前留洋人数。`status` 只表示数据核查时的计划阶段；符合年龄、注册或赛事条件不等于申报成功，申报也不等于已经公示、签约或获款。`support_items` 保留固定金额、区间和系数说明；`reported_upper_bound` 必须标明理论上限，不得写成保底金额。`non_subsidy_boundaries` 用于明确 FIFA/中国足协培训补偿、联合机制补偿属于培养机构之间的补偿，不是发给球员或家庭的海外生活补贴。
 
 出国培训计划不并入当前留洋人数。`model` 区分国字号整队驻外、大赛备战集训、多俱乐部分流和精英学院嵌入；`participant_scope` 必须保留首批、累计或报道冲突口径。项目成员、海外训练、当地注册、正式比赛和成年职业出口不能互相推导。万达逐名专题当前固定 2012—2016 五批；2017 年第六批只作为有官方来源的项目时间线事实，取得完整名单前不修改五批人数契约。
+
+## 欧洲前八联赛日韩球员快照
+
+`data/raw/europe-top-leagues-japan-korea.json` 与代表性留洋历史档案分开维护，回答“当前有哪些日本、韩国球员效力于欧洲主要顶级联赛”。
+
+| 字段 | 含义 |
+| --- | --- |
+| `checked_at`、`season` | 名册核查日期和赛季。 |
+| `scope_note` | 双语统计边界；只统计男子顶级联赛一线队当前注册，租借计入当前俱乐部。 |
+| `coefficient_ranking` | UEFA 年终五年协会俱乐部系数版次、覆盖周期及前八联赛排序。 |
+| `players[]` | 球员国别、多语姓名、位置、当前俱乐部、联赛、所属协会和租借状态。 |
+| `players[].market_value` | 可选的当前欧元估值；只有直接核到 Transfermarkt 国籍榜或个人估值曲线时才填写。 |
+| `market_value_methodology` | 估值批量更新时间窗、提供方和“估值不是转会费”的展示边界。 |
+| `sources[]` | 系数、名册、夏窗变动与身价来源账本。 |
+
+2026/27 快照固定为日本 60 人、韩国 15 人，共 75 人；其中五大联赛 41 人。身价覆盖 33 人，未覆盖者保留空值，不按合同、转会费、年龄或同队球员估算。
 
 ## 亚洲教练
 

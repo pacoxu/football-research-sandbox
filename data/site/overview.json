@@ -9086,6 +9086,1281 @@
       }
     ]
   },
+  "europe_top_leagues_japan_korea": {
+    "schema_version": 1,
+    "checked_at": "2026-09-08",
+    "season": "2026-2027",
+    "scope_note": {
+      "zh": "统计 UEFA 2026 年终五年协会系数前八协会的男子顶级联赛一线队注册球员；日本、韩国按球员所代表足协/国籍口径收录，租借球员计入当前效力俱乐部。二级联赛、青年队、预备队以及已官宣离队者不计入。",
+      "en": "Men's first-team players registered in the top divisions of the eight highest-ranked associations in UEFA's final 2026 five-season association coefficient. Japan and Korea are classified by represented association/nationality; loans count at the current club. Second tiers, youth or reserve teams, and confirmed departures are excluded."
+    },
+    "coefficient_ranking": {
+      "edition": 2026,
+      "period": "2021/22–2025/26",
+      "ranking_type": "five-season-association-club-coefficient",
+      "leagues": [
+        {
+          "rank": 1,
+          "association": "England",
+          "league": "Premier League",
+          "coefficient": 119.519
+        },
+        {
+          "rank": 2,
+          "association": "Italy",
+          "league": "Serie A",
+          "coefficient": 99.946
+        },
+        {
+          "rank": 3,
+          "association": "Spain",
+          "league": "LaLiga",
+          "coefficient": 97.046
+        },
+        {
+          "rank": 4,
+          "association": "Germany",
+          "league": "Bundesliga",
+          "coefficient": 92.902
+        },
+        {
+          "rank": 5,
+          "association": "France",
+          "league": "Ligue 1",
+          "coefficient": 83.498
+        },
+        {
+          "rank": 6,
+          "association": "Portugal",
+          "league": "Primeira Liga",
+          "coefficient": 73.166
+        },
+        {
+          "rank": 7,
+          "association": "Netherlands",
+          "league": "Eredivisie",
+          "coefficient": 67.929
+        },
+        {
+          "rank": 8,
+          "association": "Belgium",
+          "league": "Belgian Pro League",
+          "coefficient": 62.25
+        }
+      ]
+    },
+    "market_value_methodology": {
+      "provider": "Transfermarkt",
+      "snapshot_window": "2026-05-21–2026-06-10",
+      "checked_at": "2026-09-08",
+      "note": {
+        "zh": "身价为 Transfermarkt 在各联赛 2025/26 赛季末最后一次批量更新后的欧元估值，不是转会费；夏窗转会不会自动触发重估。仅展示已在国籍榜或既有个人估值曲线中核到的数值，未核到者留空、不作推算。",
+        "en": "Values are Transfermarkt euro estimates after the last batch updates of the 2025/26 season, not transfer fees; a summer transfer does not automatically trigger a revaluation. Only values verified in the nationality rankings or existing individual histories are shown; missing values are left blank rather than inferred."
+      }
+    },
+    "sources": [
+      {
+        "id": "uefa-2026",
+        "label": "UEFA association coefficients 2026",
+        "url": "https://www.uefa.com/nationalassociations/uefarankings/?year=2026"
+      },
+      {
+        "id": "jp-summer-2026",
+        "label": "Soccer King · 日本球员 2026 夏窗汇总",
+        "url": "https://www.soccer-king.jp/news/world/fixed/1904670.html"
+      },
+      {
+        "id": "jp-current-2026",
+        "label": "海外組.com · 欧洲日本球员当前名册",
+        "url": "https://kaigai-gumi.com/players/"
+      },
+      {
+        "id": "jp-premier-2026",
+        "label": "海外組.com · 英超日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/premier-league/"
+      },
+      {
+        "id": "jp-transfer-2026",
+        "label": "Football Channel · 日本球员 2026/27 夏窗流动",
+        "url": "https://www.footballchannel.jp/2026/09/02/post952773/"
+      },
+      {
+        "id": "jp-bundesliga-2026",
+        "label": "Bundesliga · Japanese players 2026/27",
+        "url": "https://www.bundesliga.com/en/bundesliga/news/japanese-players-in-germany-overview-doan-ito-itakura-suzuki-machino-33222"
+      },
+      {
+        "id": "jp-bundesliga-roster-2026",
+        "label": "海外組.com · 德甲日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/bundesliga/"
+      },
+      {
+        "id": "jp-laliga-2026",
+        "label": "海外組.com · 西甲日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/la-liga/"
+      },
+      {
+        "id": "jp-serie-a-2026",
+        "label": "海外組.com · 意甲日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/serie-a/"
+      },
+      {
+        "id": "jp-ligue1-2026",
+        "label": "海外組.com · 法甲日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/ligue-1/"
+      },
+      {
+        "id": "jp-primeira-2026",
+        "label": "海外組.com · 葡超日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/primeira-liga/"
+      },
+      {
+        "id": "jp-eredivisie-2026",
+        "label": "海外組.com · 荷甲日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/eredivisie/"
+      },
+      {
+        "id": "jp-belgium-2026",
+        "label": "海外組.com · 比甲日本球员 2026/27",
+        "url": "https://kaigai-gumi.com/leagues/jupiler-pro-league/"
+      },
+      {
+        "id": "kr-europe-2026",
+        "label": "INVICTORY · Korean players in Europe 2026/27",
+        "url": "https://invictory.tv/posts/korean-players-europe"
+      },
+      {
+        "id": "tm-japan-2026",
+        "label": "Transfermarkt · Japan market-value ranking",
+        "url": "https://www.transfermarkt.pl/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/77"
+      },
+      {
+        "id": "tm-korea-2026",
+        "label": "Transfermarkt · Korea market-value ranking",
+        "url": "https://www.transfermarkt.com/spieler-statistik/wertvollstespieler/marktwertetop/mw/land_id/87"
+      }
+    ],
+    "players": [
+      {
+        "id": "jp-wataru-endo-liverpool-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "远藤航",
+          "en": "Wataru Endo",
+          "native": "遠藤 航"
+        },
+        "position": "MID",
+        "club": "Liverpool",
+        "association": "England",
+        "league": "Premier League"
+      },
+      {
+        "id": "jp-kaoru-mitoma-brighton-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "三笘薰",
+          "en": "Kaoru Mitoma",
+          "native": "三笘 薫"
+        },
+        "position": "FWD",
+        "club": "Brighton & Hove Albion",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 22000000,
+          "display": "€22m"
+        }
+      },
+      {
+        "id": "jp-zion-suzuki-aston-villa-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "铃木彩艳",
+          "en": "Zion Suzuki",
+          "native": "鈴木 彩艶"
+        },
+        "position": "GK",
+        "club": "Aston Villa",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 20000000,
+          "display": "€20m"
+        }
+      },
+      {
+        "id": "jp-daichi-kamada-crystal-palace-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "镰田大地",
+          "en": "Daichi Kamada",
+          "native": "鎌田 大地"
+        },
+        "position": "MID",
+        "club": "Crystal Palace",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 10000000,
+          "display": "€10m"
+        }
+      },
+      {
+        "id": "jp-takehiro-tomiyasu-crystal-palace-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "富安健洋",
+          "en": "Takehiro Tomiyasu",
+          "native": "冨安 健洋"
+        },
+        "position": "DEF",
+        "club": "Crystal Palace",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 5000000,
+          "display": "€5m"
+        }
+      },
+      {
+        "id": "jp-daizen-maeda-ipswich-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "前田大然",
+          "en": "Daizen Maeda",
+          "native": "前田 大然"
+        },
+        "position": "FWD",
+        "club": "Ipswich Town",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 13000000,
+          "display": "€13m"
+        }
+      },
+      {
+        "id": "jp-hidemasa-morita-hull-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "守田英正",
+          "en": "Hidemasa Morita",
+          "native": "守田 英正"
+        },
+        "position": "MID",
+        "club": "Hull City",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 8000000,
+          "display": "€8m"
+        }
+      },
+      {
+        "id": "jp-ao-tanaka-leeds-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "田中碧",
+          "en": "Ao Tanaka",
+          "native": "田中 碧"
+        },
+        "position": "MID",
+        "club": "Leeds United",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 13000000,
+          "display": "€13m"
+        }
+      },
+      {
+        "id": "jp-tatsuhiro-sakamoto-coventry-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "坂元达裕",
+          "en": "Tatsuhiro Sakamoto",
+          "native": "坂元 達裕"
+        },
+        "position": "MID",
+        "club": "Coventry City",
+        "association": "England",
+        "league": "Premier League"
+      },
+      {
+        "id": "kr-kim-ji-soo-brentford-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "金志洙",
+          "en": "Kim Ji-soo",
+          "native": "김지수"
+        },
+        "position": "DEF",
+        "club": "Brentford",
+        "association": "England",
+        "league": "Premier League",
+        "market_value": {
+          "eur": 1800000,
+          "display": "€1.8m"
+        }
+      },
+      {
+        "id": "jp-yukinari-sugawara-cagliari-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "菅原由势",
+          "en": "Yukinari Sugawara",
+          "native": "菅原 由勢"
+        },
+        "position": "DEF",
+        "club": "Cagliari",
+        "association": "Italy",
+        "league": "Serie A",
+        "loan": true
+      },
+      {
+        "id": "jp-takefusa-kubo-real-sociedad-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "久保建英",
+          "en": "Takefusa Kubo",
+          "native": "久保 建英"
+        },
+        "position": "FWD",
+        "club": "Real Sociedad",
+        "association": "Spain",
+        "league": "LaLiga",
+        "market_value": {
+          "eur": 20000000,
+          "display": "€20m"
+        }
+      },
+      {
+        "id": "jp-ryunosuke-sato-valencia-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "佐藤龙之介",
+          "en": "Ryunosuke Sato",
+          "native": "佐藤 龍之介"
+        },
+        "position": "MID",
+        "club": "Valencia",
+        "association": "Spain",
+        "league": "LaLiga"
+      },
+      {
+        "id": "kr-lee-kang-in-atletico-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "李刚仁",
+          "en": "Lee Kang-in",
+          "native": "이강인"
+        },
+        "position": "MID",
+        "club": "Atlético de Madrid",
+        "association": "Spain",
+        "league": "LaLiga",
+        "market_value": {
+          "eur": 28000000,
+          "display": "€28m"
+        }
+      },
+      {
+        "id": "jp-hiroki-ito-bayern-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "伊藤洋辉",
+          "en": "Hiroki Ito",
+          "native": "伊藤 洋輝"
+        },
+        "position": "DEF",
+        "club": "Bayern Munich",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 18000000,
+          "display": "€18m"
+        }
+      },
+      {
+        "id": "jp-keisuke-goto-freiburg-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "后藤启介",
+          "en": "Keisuke Goto",
+          "native": "後藤 啓介"
+        },
+        "position": "FWD",
+        "club": "SC Freiburg",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 10000000,
+          "display": "€10m"
+        }
+      },
+      {
+        "id": "jp-rihito-yamamoto-freiburg-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "山本理仁",
+          "en": "Rihito Yamamoto",
+          "native": "山本 理仁"
+        },
+        "position": "MID",
+        "club": "SC Freiburg",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 7000000,
+          "display": "€7m"
+        }
+      },
+      {
+        "id": "jp-yuito-suzuki-freiburg-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "铃木唯人",
+          "en": "Yuito Suzuki",
+          "native": "鈴木 唯人"
+        },
+        "position": "MID",
+        "club": "SC Freiburg",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 24000000,
+          "display": "€24m"
+        }
+      },
+      {
+        "id": "jp-keita-kosugi-frankfurt-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "小杉启太",
+          "en": "Keita Kosugi",
+          "native": "小杉 啓太"
+        },
+        "position": "DEF",
+        "club": "Eintracht Frankfurt",
+        "association": "Germany",
+        "league": "Bundesliga"
+      },
+      {
+        "id": "jp-ritsu-doan-frankfurt-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "堂安律",
+          "en": "Ritsu Doan",
+          "native": "堂安 律"
+        },
+        "position": "MID",
+        "club": "Eintracht Frankfurt",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 17000000,
+          "display": "€17m"
+        }
+      },
+      {
+        "id": "jp-kaishu-sano-mainz-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "佐野海舟",
+          "en": "Kaishu Sano",
+          "native": "佐野 海舟"
+        },
+        "position": "MID",
+        "club": "Mainz 05",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 40000000,
+          "display": "€40m"
+        }
+      },
+      {
+        "id": "jp-sota-kawasaki-mainz-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "川崎飒太",
+          "en": "Sota Kawasaki",
+          "native": "川﨑 颯太"
+        },
+        "position": "MID",
+        "club": "Mainz 05",
+        "association": "Germany",
+        "league": "Bundesliga"
+      },
+      {
+        "id": "jp-koki-machida-hoffenheim-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "町田浩树",
+          "en": "Koki Machida",
+          "native": "町田 浩樹"
+        },
+        "position": "DEF",
+        "club": "TSG Hoffenheim",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 6000000,
+          "display": "€6m"
+        }
+      },
+      {
+        "id": "jp-daiki-hashioka-gladbach-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "桥冈大树",
+          "en": "Daiki Hashioka",
+          "native": "橋岡 大樹"
+        },
+        "position": "DEF",
+        "club": "Borussia Mönchengladbach",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "loan": true
+      },
+      {
+        "id": "jp-ko-itakura-gladbach-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "板仓滉",
+          "en": "Ko Itakura",
+          "native": "板倉 滉"
+        },
+        "position": "DEF",
+        "club": "Borussia Mönchengladbach",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 8000000,
+          "display": "€8m"
+        }
+      },
+      {
+        "id": "jp-shuto-machino-gladbach-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "町野修斗",
+          "en": "Shuto Machino",
+          "native": "町野 修斗"
+        },
+        "position": "FWD",
+        "club": "Borussia Mönchengladbach",
+        "association": "Germany",
+        "league": "Bundesliga"
+      },
+      {
+        "id": "jp-zento-uno-gladbach-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "宇野禅斗",
+          "en": "Zento Uno",
+          "native": "宇野 禅斗"
+        },
+        "position": "MID",
+        "club": "Borussia Mönchengladbach",
+        "association": "Germany",
+        "league": "Bundesliga"
+      },
+      {
+        "id": "jp-mio-backhaus-freiburg-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "长田澪",
+          "en": "Mio Backhaus",
+          "native": "長田 澪"
+        },
+        "position": "GK",
+        "club": "SC Freiburg",
+        "association": "Germany",
+        "league": "Bundesliga"
+      },
+      {
+        "id": "jp-satoshi-tanaka-schalke-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "田中聪",
+          "en": "Satoshi Tanaka",
+          "native": "田中 聡"
+        },
+        "position": "MID",
+        "club": "Schalke 04",
+        "association": "Germany",
+        "league": "Bundesliga"
+      },
+      {
+        "id": "kr-kim-min-jae-bayern-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "金玟哉",
+          "en": "Kim Min-jae",
+          "native": "김민재"
+        },
+        "position": "DEF",
+        "club": "Bayern Munich",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 20000000,
+          "display": "€20m"
+        }
+      },
+      {
+        "id": "kr-hwang-hee-chan-schalke-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "黄喜灿",
+          "en": "Hwang Hee-chan",
+          "native": "황희찬"
+        },
+        "position": "FWD",
+        "club": "Schalke 04",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "loan": true,
+        "market_value": {
+          "eur": 6000000,
+          "display": "€6m"
+        }
+      },
+      {
+        "id": "kr-seol-young-woo-augsburg-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "薛英佑",
+          "en": "Seol Young-woo",
+          "native": "설영우"
+        },
+        "position": "DEF",
+        "club": "FC Augsburg",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 6500000,
+          "display": "€6.5m"
+        }
+      },
+      {
+        "id": "kr-lee-jae-sung-mainz-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "李在城",
+          "en": "Lee Jae-sung",
+          "native": "이재성"
+        },
+        "position": "MID",
+        "club": "Mainz 05",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 2000000,
+          "display": "€2m"
+        }
+      },
+      {
+        "id": "kr-jeong-woo-yeong-union-berlin-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "郑优营",
+          "en": "Jeong Woo-yeong",
+          "native": "정우영"
+        },
+        "position": "MID",
+        "club": "Union Berlin",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 3500000,
+          "display": "€3.5m"
+        }
+      },
+      {
+        "id": "kr-jens-castrop-gladbach-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "延斯·卡斯特罗普",
+          "en": "Jens Castrop",
+          "native": "옌스 카스트로프"
+        },
+        "position": "MID",
+        "club": "Borussia Mönchengladbach",
+        "association": "Germany",
+        "league": "Bundesliga",
+        "market_value": {
+          "eur": 10000000,
+          "display": "€10m"
+        }
+      },
+      {
+        "id": "jp-ayase-ueda-lille-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "上田绮世",
+          "en": "Ayase Ueda",
+          "native": "上田 綺世"
+        },
+        "position": "FWD",
+        "club": "Lille OSC",
+        "association": "France",
+        "league": "Ligue 1",
+        "market_value": {
+          "eur": 17000000,
+          "display": "€17m"
+        }
+      },
+      {
+        "id": "jp-takumi-minamino-monaco-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "南野拓实",
+          "en": "Takumi Minamino",
+          "native": "南野 拓実"
+        },
+        "position": "MID",
+        "club": "AS Monaco",
+        "association": "France",
+        "league": "Ligue 1",
+        "market_value": {
+          "eur": 10000000,
+          "display": "€10m"
+        }
+      },
+      {
+        "id": "jp-keito-nakamura-lyon-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "中村敬斗",
+          "en": "Keito Nakamura",
+          "native": "中村 敬斗"
+        },
+        "position": "FWD",
+        "club": "Olympique Lyonnais",
+        "association": "France",
+        "league": "Ligue 1",
+        "market_value": {
+          "eur": 10000000,
+          "display": "€10m"
+        }
+      },
+      {
+        "id": "jp-ayumu-seko-le-havre-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "濑古步梦",
+          "en": "Ayumu Seko",
+          "native": "瀬古 歩夢"
+        },
+        "position": "DEF",
+        "club": "Le Havre AC",
+        "association": "France",
+        "league": "Ligue 1"
+      },
+      {
+        "id": "jp-sota-nakamura-le-havre-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "中村草太",
+          "en": "Sota Nakamura",
+          "native": "中村 草太"
+        },
+        "position": "MID",
+        "club": "Le Havre AC",
+        "association": "France",
+        "league": "Ligue 1",
+        "loan": true
+      },
+      {
+        "id": "jp-kaito-mizuta-le-havre-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "水多海斗",
+          "en": "Kaito Mizuta",
+          "native": "水多 海斗"
+        },
+        "position": "MID",
+        "club": "Le Havre AC",
+        "association": "France",
+        "league": "Ligue 1"
+      },
+      {
+        "id": "jp-taichi-fukui-arouca-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "福井太智",
+          "en": "Taichi Fukui",
+          "native": "福井 太智"
+        },
+        "position": "MID",
+        "club": "FC Arouca",
+        "association": "Portugal",
+        "league": "Primeira Liga"
+      },
+      {
+        "id": "kr-hwang-in-beom-porto-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "黄仁范",
+          "en": "Hwang In-beom",
+          "native": "황인범"
+        },
+        "position": "MID",
+        "club": "FC Porto",
+        "association": "Portugal",
+        "league": "Primeira Liga",
+        "market_value": {
+          "eur": 7000000,
+          "display": "€7m"
+        }
+      },
+      {
+        "id": "kr-lee-hyun-ju-arouca-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "李贤珠",
+          "en": "Lee Hyun-ju",
+          "native": "이현주"
+        },
+        "position": "MID",
+        "club": "FC Arouca",
+        "association": "Portugal",
+        "league": "Primeira Liga",
+        "market_value": {
+          "eur": 2500000,
+          "display": "€2.5m"
+        }
+      },
+      {
+        "id": "kr-park-si-hoo-arouca-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "朴时厚",
+          "en": "Park Si-hoo",
+          "native": "박시후"
+        },
+        "position": "FWD",
+        "club": "FC Arouca",
+        "association": "Portugal",
+        "league": "Primeira Liga"
+      },
+      {
+        "id": "kr-song-min-kyu-nacional-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "宋旻揆",
+          "en": "Song Min-kyu",
+          "native": "송민규"
+        },
+        "position": "FWD",
+        "club": "CD Nacional",
+        "association": "Portugal",
+        "league": "Primeira Liga"
+      },
+      {
+        "id": "kr-yang-si-woo-estrela-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "梁时宇",
+          "en": "Yang Si-woo",
+          "native": "양시우"
+        },
+        "position": "FWD",
+        "club": "Estrela da Amadora",
+        "association": "Portugal",
+        "league": "Primeira Liga",
+        "loan": true
+      },
+      {
+        "id": "jp-rion-ichihara-az-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "市原吏音",
+          "en": "Rion Ichihara",
+          "native": "市原 吏音"
+        },
+        "position": "DEF",
+        "club": "AZ Alkmaar",
+        "association": "Netherlands",
+        "league": "Eredivisie"
+      },
+      {
+        "id": "jp-seiya-maikuma-az-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "每熊晟矢",
+          "en": "Seiya Maikuma",
+          "native": "毎熊 晟矢"
+        },
+        "position": "DEF",
+        "club": "AZ Alkmaar",
+        "association": "Netherlands",
+        "league": "Eredivisie"
+      },
+      {
+        "id": "jp-kodai-sano-psv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "佐野航大",
+          "en": "Kodai Sano",
+          "native": "佐野 航大"
+        },
+        "position": "MID",
+        "club": "PSV Eindhoven",
+        "association": "Netherlands",
+        "league": "Eredivisie",
+        "market_value": {
+          "eur": 12000000,
+          "display": "€12m"
+        }
+      },
+      {
+        "id": "jp-tsuyoshi-watanabe-feyenoord-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "渡边刚",
+          "en": "Tsuyoshi Watanabe",
+          "native": "渡辺 剛"
+        },
+        "position": "DEF",
+        "club": "Feyenoord",
+        "association": "Netherlands",
+        "league": "Eredivisie",
+        "market_value": {
+          "eur": 10000000,
+          "display": "€10m"
+        }
+      },
+      {
+        "id": "jp-shunsuke-mito-sparta-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "三户舜介",
+          "en": "Shunsuke Mito",
+          "native": "三戸 舜介"
+        },
+        "position": "MID",
+        "club": "Sparta Rotterdam",
+        "association": "Netherlands",
+        "league": "Eredivisie"
+      },
+      {
+        "id": "jp-ayumu-yokoyama-genk-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "横山步梦",
+          "en": "Ayumu Yokoyama",
+          "native": "横山 歩夢"
+        },
+        "position": "FWD",
+        "club": "KRC Genk",
+        "association": "Belgium",
+        "league": "Belgian Pro League",
+        "loan": true
+      },
+      {
+        "id": "jp-junya-ito-genk-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "伊东纯也",
+          "en": "Junya Ito",
+          "native": "伊東 純也"
+        },
+        "position": "FWD",
+        "club": "KRC Genk",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-yumeki-yoshinaga-genk-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "吉永梦希",
+          "en": "Yumeki Yoshinaga",
+          "native": "吉永 夢希"
+        },
+        "position": "DEF",
+        "club": "KRC Genk",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-taishi-brandon-nozawa-antwerp-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "野泽大志·布兰登",
+          "en": "Taishi Brandon Nozawa",
+          "native": "野澤 大志ブランドン"
+        },
+        "position": "GK",
+        "club": "Royal Antwerp",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-yuto-tsunashima-antwerp-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "纲岛悠斗",
+          "en": "Yuto Tsunashima",
+          "native": "綱島 悠斗"
+        },
+        "position": "MID",
+        "club": "Royal Antwerp",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-koki-ando-antwerp-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "安藤晃希",
+          "en": "Koki Ando",
+          "native": "安藤 晃希"
+        },
+        "position": "MID",
+        "club": "Royal Antwerp",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-nikki-havenaar-union-sg-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "尼基·哈夫纳",
+          "en": "Nikki Havenaar",
+          "native": "ハーフナー・ニッキ"
+        },
+        "position": "DEF",
+        "club": "Union Saint-Gilloise",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-leo-brian-kokubo-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "小久保玲央·布赖恩",
+          "en": "Leo Brian Kokubo",
+          "native": "小久保 玲央ブライアン"
+        },
+        "position": "GK",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-shogo-taniguchi-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "谷口彰悟",
+          "en": "Shogo Taniguchi",
+          "native": "谷口 彰悟"
+        },
+        "position": "DEF",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-kaito-matsuzawa-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "松泽海斗",
+          "en": "Kaito Matsuzawa",
+          "native": "松澤 海斗"
+        },
+        "position": "MID",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-taiga-hata-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "畑大雅",
+          "en": "Taiga Hata",
+          "native": "畑 大雅"
+        },
+        "position": "DEF",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-shion-shinkawa-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "新川志音",
+          "en": "Shion Shinkawa",
+          "native": "新川 志音"
+        },
+        "position": "FWD",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-nelson-ishiwatari-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "石渡尼尔森",
+          "en": "Nelson Ishiwatari",
+          "native": "石渡 ネルソン"
+        },
+        "position": "MID",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-ryotaro-araki-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "荒木辽太郎",
+          "en": "Ryotaro Araki",
+          "native": "荒木 遼太郎"
+        },
+        "position": "MID",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-kota-takai-stvv-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "高井幸大",
+          "en": "Kota Takai",
+          "native": "高井 幸大"
+        },
+        "position": "DEF",
+        "club": "Sint-Truiden",
+        "association": "Belgium",
+        "league": "Belgian Pro League",
+        "loan": true
+      },
+      {
+        "id": "jp-isa-sakamoto-westerlo-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "坂本一彩",
+          "en": "Isa Sakamoto",
+          "native": "坂本 一彩"
+        },
+        "position": "FWD",
+        "club": "KVC Westerlo",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-seiji-kimura-westerlo-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "木村诚二",
+          "en": "Seiji Kimura",
+          "native": "木村 誠二"
+        },
+        "position": "DEF",
+        "club": "KVC Westerlo",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-shunsuke-saito-westerlo-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "斋藤俊辅",
+          "en": "Shunsuke Saito",
+          "native": "斎藤 俊輔"
+        },
+        "position": "MID",
+        "club": "KVC Westerlo",
+        "association": "Belgium",
+        "league": "Belgian Pro League"
+      },
+      {
+        "id": "jp-shin-yamada-oh-leuven-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "山田新",
+          "en": "Shin Yamada",
+          "native": "山田 新"
+        },
+        "position": "FWD",
+        "club": "OH Leuven",
+        "association": "Belgium",
+        "league": "Belgian Pro League",
+        "loan": true
+      },
+      {
+        "id": "jp-takuya-ogiwara-oh-leuven-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "荻原拓也",
+          "en": "Takuya Ogiwara",
+          "native": "荻原 拓也"
+        },
+        "position": "DEF",
+        "club": "OH Leuven",
+        "association": "Belgium",
+        "league": "Belgian Pro League",
+        "loan": true
+      },
+      {
+        "id": "jp-gaku-nawata-charleroi-2026",
+        "country": "Japan",
+        "name": {
+          "zh": "名和田我空",
+          "en": "Gaku Nawata",
+          "native": "名和田 我空"
+        },
+        "position": "MID",
+        "club": "Sporting Charleroi",
+        "association": "Belgium",
+        "league": "Belgian Pro League",
+        "loan": true
+      },
+      {
+        "id": "kr-lee-han-beom-club-brugge-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "李韩范",
+          "en": "Lee Han-beom",
+          "native": "이한범"
+        },
+        "position": "DEF",
+        "club": "Club Brugge",
+        "association": "Belgium",
+        "league": "Belgian Pro League",
+        "market_value": {
+          "eur": 3000000,
+          "display": "€3m"
+        }
+      },
+      {
+        "id": "kr-yang-min-hyeok-westerlo-2026",
+        "country": "Korea Republic",
+        "name": {
+          "zh": "梁民革",
+          "en": "Yang Min-hyeok",
+          "native": "양민혁"
+        },
+        "position": "FWD",
+        "club": "KVC Westerlo",
+        "association": "Belgium",
+        "league": "Belgian Pro League",
+        "loan": true,
+        "market_value": {
+          "eur": 3000000,
+          "display": "€3m"
+        }
+      }
+    ]
+  },
   "dossiers": [
     {
       "id": "donglu-football-boys",

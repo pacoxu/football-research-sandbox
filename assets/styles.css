@@ -4350,6 +4350,135 @@ tbody tr:last-child td {
   white-space: nowrap;
 }
 
+.subsection-head {
+  margin-top: 34px;
+}
+
+.subsection-head h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+}
+
+.compact-stats-row {
+  margin: 20px 0;
+}
+
+.europe-league-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.europe-league-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 10px 12px;
+  min-width: 0;
+  padding: 16px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface-strong);
+}
+
+.europe-league-card h3,
+.europe-league-card p {
+  margin: 0;
+}
+
+.europe-league-rank {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
+.europe-league-numbers {
+  display: grid;
+  grid-column: 1 / -1;
+  gap: 6px;
+}
+
+.europe-league-numbers p {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.europe-league-numbers span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.europe-roster-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface-strong);
+  overflow: hidden;
+}
+
+.europe-roster-card summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 18px;
+  cursor: pointer;
+  list-style-position: inside;
+}
+
+.europe-roster-card summary::-webkit-details-marker {
+  color: var(--accent);
+}
+
+.europe-roster-card .table-shell {
+  border-width: 1px 0 0;
+  border-radius: 0;
+}
+
+.europe-roster-table,
+.europe-value-table {
+  min-width: 820px;
+}
+
+.europe-roster-table td:first-child,
+.europe-value-table td:nth-child(2) {
+  min-width: 190px;
+}
+
+.europe-value-table th:last-child,
+.europe-value-table td:last-child {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.europe-top-sources {
+  align-items: center;
+  margin-top: 18px;
+}
+
+@media (max-width: 1050px) {
+  .europe-league-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .europe-league-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .europe-roster-card summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
 .data-comparison-table .data-table {
   min-width: 980px;
 }

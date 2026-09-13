@@ -1609,6 +1609,98 @@ function validateOverseasMarketValuePeakRanking(ranking, overseasHistory) {
   }
 }
 
+function validateEuropeTopLeaguesJapanKorea(snapshot) {
+  assert(snapshot?.schema_version === 1, "Invalid Europe top-leagues Japan/Korea schema version");
+  assert(isIsoDate(snapshot.checked_at), "Invalid Europe top-leagues Japan/Korea checked_at");
+  assert(snapshot.season === "2026-2027", "Invalid Europe top-leagues Japan/Korea season");
+  assert(
+    typeof snapshot.scope_note?.zh === "string" && typeof snapshot.scope_note?.en === "string",
+    "Missing bilingual Europe top-leagues Japan/Korea scope note"
+  );
+
+  const leagues = snapshot.coefficient_ranking?.leagues ?? [];
+  assert(leagues.length === 8, `Expected 8 UEFA coefficient leagues, found ${leagues.length}`);
+  const leagueByName = new Map();
+  let previousCoefficient = Number.POSITIVE_INFINITY;
+  leagues.forEach((league, index) => {
+    assert(league.rank === index + 1, `Invalid UEFA coefficient rank at ${league.league}`);
+    assert(league.league && league.association, `Missing UEFA league identity at rank ${league.rank}`);
+    assert(!leagueByName.has(league.league), `Duplicate UEFA top-eight league: ${league.league}`);
+    assert(
+      typeof league.coefficient === "number" && league.coefficient > 0,
+      `Invalid UEFA coefficient for ${league.league}`
+    );
+    assert(
+      league.coefficient <= previousCoefficient,
+      `UEFA top-eight leagues are not coefficient-sorted at ${league.league}`
+    );
+    previousCoefficient = league.coefficient;
+    leagueByName.set(league.league, league);
+  });
+
+  const expectedCountryCounts = new Map([
+    ["Japan", 60],
+    ["Korea Republic", 15]
+  ]);
+  const expectedLeagueCounts = new Map([
+    ["Premier League", 10],
+    ["Serie A", 1],
+    ["LaLiga", 3],
+    ["Bundesliga", 21],
+    ["Ligue 1", 6],
+    ["Primeira Liga", 6],
+    ["Eredivisie", 5],
+    ["Belgian Pro League", 23]
+  ]);
+  const players = snapshot.players ?? [];
+  assert(players.length === 75, `Expected 75 Europe top-eight Japan/Korea players, found ${players.length}`);
+  const playerIds = new Set();
+  const countryCounts = new Map();
+  const leagueCounts = new Map();
+  for (const player of players) {
+    assert(player.id && !playerIds.has(player.id), `Duplicate Europe top-eight player id: ${player.id}`);
+    playerIds.add(player.id);
+    assert(expectedCountryCounts.has(player.country), `Invalid Europe top-eight player country on ${player.id}`);
+    assert(
+      player.name?.zh && player.name?.en && player.name?.native,
+      `Missing multilingual Europe top-eight player name on ${player.id}`
+    );
+    assert(["GK", "DEF", "MID", "FWD"].includes(player.position), `Invalid position on ${player.id}`);
+    assert(player.club, `Missing current club on ${player.id}`);
+    const league = leagueByName.get(player.league);
+    assert(league, `Unknown Europe top-eight league on ${player.id}: ${player.league}`);
+    assert(league.association === player.association, `League association mismatch on ${player.id}`);
+    if (player.loan !== undefined) {
+      assert(typeof player.loan === "boolean", `Invalid loan status on ${player.id}`);
+    }
+    if (player.market_value !== undefined) {
+      assert(
+        Number.isFinite(player.market_value.eur) && player.market_value.eur > 0,
+        `Invalid current market value on ${player.id}`
+      );
+      assert(/^€/.test(player.market_value.display), `Invalid market value display on ${player.id}`);
+    }
+    countryCounts.set(player.country, (countryCounts.get(player.country) ?? 0) + 1);
+    leagueCounts.set(player.league, (leagueCounts.get(player.league) ?? 0) + 1);
+  }
+  for (const [country, expectedCount] of expectedCountryCounts) {
+    assert(countryCounts.get(country) === expectedCount, `Expected ${expectedCount} ${country} players`);
+  }
+  for (const [league, expectedCount] of expectedLeagueCounts) {
+    assert(leagueCounts.get(league) === expectedCount, `Expected ${expectedCount} players in ${league}`);
+  }
+  assert(
+    players.filter((player) => player.market_value).length === 33,
+    "Expected 33 verified Europe top-eight market values"
+  );
+  assert(snapshot.market_value_methodology?.provider === "Transfermarkt", "Invalid market-value provider");
+  assert(isIsoDate(snapshot.market_value_methodology?.checked_at), "Invalid market-value checked_at");
+  assert(Array.isArray(snapshot.sources) && snapshot.sources.length >= 8, "Missing Europe top-eight sources");
+  for (const source of snapshot.sources) {
+    assert(source.id && source.label && /^https:\/\//.test(source.url), `Invalid Europe top-eight source: ${source.id}`);
+  }
+}
+
 function validateOverseasRecord(record, countryName, allowedBuckets) {
   const requiredFields = [
     "id",
@@ -3644,6 +3736,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     dataset.dossiers,
     dataset.overseasHistory
   );
+  validateEuropeTopLeaguesJapanKorea(dataset.europeTopLeaguesJapanKorea);
 
   for (const dossier of dataset.dossiers) {
     assert(dossier.id && dossier.name, "Dossier must include id and name");
