@@ -356,46 +356,14 @@
     "participants": {
       "status": "complete",
       "teams": [
-        {
-          "team": "China PR U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        },
-        {
-          "team": "Athletic Club U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        },
-        {
-          "team": "Bayer Leverkusen U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        },
-        {
-          "team": "Arsenal U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        },
-        {
-          "team": "Shanghai U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        },
-        {
-          "team": "Tottenham Hotspur U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        },
-        {
-          "team": "River Plate U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        },
-        {
-          "team": "Sporting CP U17",
-          "entry_status": "participant",
-          "confirmed_at": "2026-06-12"
-        }
+        { "team": "China PR U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Athletic Club U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Bayer Leverkusen U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Arsenal U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Shanghai U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Tottenham Hotspur U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "River Plate U17", "entry_status": "participant", "confirmed_at": "2026-06-12" },
+        { "team": "Sporting CP U17", "entry_status": "participant", "confirmed_at": "2026-06-12" }
       ]
     },
     "final_draw": {
@@ -403,21 +371,11 @@
       "groups": [
         {
           "name": "A",
-          "teams": [
-            "China PR U17",
-            "Athletic Club U17",
-            "Bayer Leverkusen U17",
-            "Arsenal U17"
-          ]
+          "teams": ["China PR U17", "Athletic Club U17", "Bayer Leverkusen U17", "Arsenal U17"]
         },
         {
           "name": "B",
-          "teams": [
-            "Shanghai U17",
-            "Tottenham Hotspur U17",
-            "River Plate U17",
-            "Sporting CP U17"
-          ]
+          "teams": ["Shanghai U17", "Tottenham Hotspur U17", "River Plate U17", "Sporting CP U17"]
         }
       ]
     },
@@ -436,98 +394,29 @@
           "label": "上海 U17",
           "team": "Shanghai U17",
           "entries": [
-            {
-              "player_id": "cn-wang-qirong-2008",
-              "player": "Wang Qirong"
-            },
-            {
-              "player_id": "cn-liu-hanwen-2009",
-              "player": "Liu Hanwen"
-            },
-            {
-              "player_id": "cn-li-qiufu-2009",
-              "player": "Li Qiufu"
-            },
-            {
-              "player_id": "cn-gu-boyu-2009",
-              "player": "Gu Boyu"
-            },
-            {
-              "player_id": "cn-yue-bowen-2008",
-              "player": "Yue Bowen"
-            },
-            {
-              "player_id": "cn-zhang-yu-2009",
-              "player": "Zhang Yu"
-            },
-            {
-              "player_id": "cn-peng-ziming-2008",
-              "player": "Peng Ziming"
-            },
-            {
-              "player_id": "cn-liu-yichen-2009",
-              "player": "Liu Yichen"
-            },
-            {
-              "player_id": "cn-li-wenbo-2009",
-              "player": "Li Wenbo"
-            },
-            {
-              "player_id": "cn-liang-jinhong-2008",
-              "player": "Liang Jinhong"
-            },
-            {
-              "player_id": "cn-ou-haosen-2009",
-              "player": "Ou Haosen"
-            },
-            {
-              "player_id": "cn-muhamaiti-ablimiti-2009",
-              "player": "Muhamaiti Ablimiti"
-            },
-            {
-              "player_id": "cn-lyu-mengyang-2009",
-              "player": "Lyu Mengyang"
-            },
-            {
-              "player_id": "cn-he-haoyuan-2009",
-              "player": "He Haoyuan"
-            },
-            {
-              "player_id": "cn-li-mingjie-2009",
-              "player": "Li Mingjie"
-            },
-            {
-              "player_id": "cn-xu-qizhen-2009",
-              "player": "Xu Qizhen"
-            },
-            {
-              "player_id": "cn-jiang-tingyuan-2009",
-              "player": "Jiang Tingyuan"
-            },
-            {
-              "player_id": "cn-li-weiqi-2009",
-              "player": "Li Weiqi"
-            },
-            {
-              "player_id": "cn-ye-weixiang-2009",
-              "player": "Ye Weixiang"
-            },
-            {
-              "player_id": "cn-qiu-penghui-2009",
-              "player": "Qiu Penghui"
-            },
-            {
-              "player_id": "cn-liu-zejia-2009",
-              "player": "Liu Zejia"
-            },
-            {
-              "player_id": "cn-huang-zijie-2009",
-              "player": "Huang Zijie"
-            },
-            {
-              "player_id": "cn-li-haochen-2009",
-              "player": "Li Haochen"
-            }
+            { "player_id": "cn-wang-qirong-2008", "player": "Wang Qirong" },
+            { "player_id": "cn-liu-hanwen-2009", "player": "Liu Hanwen" },
+            { "player_id": "cn-li-qiufu-2009", "player": "Li Qiufu" },
+            { "player_id": "cn-gu-boyu-2009", "player": "Gu Boyu" },
+            { "player_id": "cn-yue-bowen-2008", "player": "Yue Bowen" },
+            { "player_id": "cn-zhang-yu-2009", "player": "Zhang Yu" },
+            { "player_id": "cn-peng-ziming-2008", "player": "Peng Ziming" },
+            { "player_id": "cn-liu-yichen-2009", "player": "Liu Yichen" },
+            { "player_id": "cn-li-wenbo-2009", "player": "Li Wenbo" },
+            { "player_id": "cn-liang-jinhong-2008", "player": "Liang Jinhong" },
+            { "player_id": "cn-ou-haosen-2009", "player": "Ou Haosen" },
+            { "player_id": "cn-muhamaiti-ablimiti-2009", "player": "Muhamaiti Ablimiti" },
+            { "player_id": "cn-lyu-mengyang-2009", "player": "Lyu Mengyang" },
+            { "player_id": "cn-he-haoyuan-2009", "player": "He Haoyuan" },
+            { "player_id": "cn-li-mingjie-2009", "player": "Li Mingjie" },
+            { "player_id": "cn-xu-qizhen-2009", "player": "Xu Qizhen" },
+            { "player_id": "cn-jiang-tingyuan-2009", "player": "Jiang Tingyuan" },
+            { "player_id": "cn-li-weiqi-2009", "player": "Li Weiqi" },
+            { "player_id": "cn-ye-weixiang-2009", "player": "Ye Weixiang" },
+            { "player_id": "cn-qiu-penghui-2009", "player": "Qiu Penghui" },
+            { "player_id": "cn-liu-zejia-2009", "player": "Liu Zejia" },
+            { "player_id": "cn-huang-zijie-2009", "player": "Huang Zijie" },
+            { "player_id": "cn-li-haochen-2009", "player": "Li Haochen" }
           ]
         },
         {
@@ -535,20 +424,8 @@
           "team": "Arsenal U17",
           "position": "Goalkeeper",
           "entries": [
-            {
-              "name": {
-                "zh": "马克西米利安·洛普雷斯蒂",
-                "en": "Maximilian Lo Presti"
-              },
-              "squad_number": 7
-            },
-            {
-              "name": {
-                "zh": "杰克·塔尔博特",
-                "en": "Jack Talbot"
-              },
-              "squad_number": 84
-            }
+            { "name": { "zh": "马克西米利安·洛普雷斯蒂", "en": "Maximilian Lo Presti" }, "squad_number": 7 },
+            { "name": { "zh": "杰克·塔尔博特", "en": "Jack Talbot" }, "squad_number": 84 }
           ]
         },
         {
@@ -556,62 +433,14 @@
           "team": "Arsenal U17",
           "position": "Defender",
           "entries": [
-            {
-              "name": {
-                "zh": "扎卡里·范德斯特拉滕",
-                "en": "Zachary Van der Straaten"
-              },
-              "squad_number": 16
-            },
-            {
-              "name": {
-                "zh": "弗兰基·瓦亚特",
-                "en": "Frankie Wyatt"
-              },
-              "squad_number": 17
-            },
-            {
-              "name": {
-                "zh": "亚伯拉罕·奥乌苏-贾西",
-                "en": "Abraham Owusu-Gyasi"
-              },
-              "squad_number": 78
-            },
-            {
-              "name": {
-                "zh": "帕特里克·斯塔霍夫",
-                "en": "Patrick Stachow"
-              },
-              "squad_number": 82
-            },
-            {
-              "name": {
-                "zh": "哈基姆·阿布巴卡尔",
-                "en": "Hakeem Abubakar"
-              },
-              "squad_number": 85
-            },
-            {
-              "name": {
-                "zh": "埃利翁·姆巴拉",
-                "en": "Elyon Mbala"
-              },
-              "squad_number": 87
-            },
-            {
-              "name": {
-                "zh": "丹尼尔·麦卡伦",
-                "en": "Daniel McCarron"
-              },
-              "squad_number": 88
-            },
-            {
-              "name": {
-                "zh": "约书亚·塞塞",
-                "en": "Joshua Sesay"
-              },
-              "squad_number": 95
-            }
+            { "name": { "zh": "扎卡里·范德斯特拉滕", "en": "Zachary Van der Straaten" }, "squad_number": 16 },
+            { "name": { "zh": "弗兰基·瓦亚特", "en": "Frankie Wyatt" }, "squad_number": 17 },
+            { "name": { "zh": "亚伯拉罕·奥乌苏-贾西", "en": "Abraham Owusu-Gyasi" }, "squad_number": 78 },
+            { "name": { "zh": "帕特里克·斯塔霍夫", "en": "Patrick Stachow" }, "squad_number": 82 },
+            { "name": { "zh": "哈基姆·阿布巴卡尔", "en": "Hakeem Abubakar" }, "squad_number": 85 },
+            { "name": { "zh": "埃利翁·姆巴拉", "en": "Elyon Mbala" }, "squad_number": 87 },
+            { "name": { "zh": "丹尼尔·麦卡伦", "en": "Daniel McCarron" }, "squad_number": 88 },
+            { "name": { "zh": "约书亚·塞塞", "en": "Joshua Sesay" }, "squad_number": 95 }
           ]
         },
         {
@@ -619,48 +448,12 @@
           "team": "Arsenal U17",
           "position": "Midfielder",
           "entries": [
-            {
-              "name": {
-                "zh": "米卡埃尔·博纳旺蒂尔·耶特纳",
-                "en": "Mikael Bonaventure Yetna"
-              },
-              "squad_number": 3
-            },
-            {
-              "name": {
-                "zh": "马利克·哈希",
-                "en": "Maalik Hashi"
-              },
-              "squad_number": 74
-            },
-            {
-              "name": {
-                "zh": "鲍恩·菲利普斯",
-                "en": "Bowen Phillips"
-              },
-              "squad_number": 79
-            },
-            {
-              "name": {
-                "zh": "索拉普·桑庞",
-                "en": "Saurap Sampang"
-              },
-              "squad_number": 81
-            },
-            {
-              "name": {
-                "zh": "埃默森·恩瓦内里",
-                "en": "Emerson Nwaneri"
-              },
-              "squad_number": 90
-            },
-            {
-              "name": {
-                "zh": "西奥·奥达吉-乌库埃库",
-                "en": "Theo Odaji-Ukueku"
-              },
-              "squad_number": 92
-            }
+            { "name": { "zh": "米卡埃尔·博纳旺蒂尔·耶特纳", "en": "Mikael Bonaventure Yetna" }, "squad_number": 3 },
+            { "name": { "zh": "马利克·哈希", "en": "Maalik Hashi" }, "squad_number": 74 },
+            { "name": { "zh": "鲍恩·菲利普斯", "en": "Bowen Phillips" }, "squad_number": 79 },
+            { "name": { "zh": "索拉普·桑庞", "en": "Saurap Sampang" }, "squad_number": 81 },
+            { "name": { "zh": "埃默森·恩瓦内里", "en": "Emerson Nwaneri" }, "squad_number": 90 },
+            { "name": { "zh": "西奥·奥达吉-乌库埃库", "en": "Theo Odaji-Ukueku" }, "squad_number": 92 }
           ]
         },
         {
@@ -668,145 +461,29 @@
           "team": "Arsenal U17",
           "position": "Forward",
           "entries": [
-            {
-              "name": {
-                "zh": "杰登·马戈马",
-                "en": "Jaden Maghoma"
-              },
-              "squad_number": 9
-            },
-            {
-              "name": {
-                "zh": "路易斯·穆尼奥斯",
-                "en": "Luis Munoz"
-              },
-              "squad_number": 12
-            },
-            {
-              "name": {
-                "zh": "凯伦·雷蒙德-卡伦德",
-                "en": "Kyron Raymond-Callender"
-              },
-              "squad_number": 13
-            },
-            {
-              "name": {
-                "zh": "加布里埃尔·阿尔特塔·贝尔纳尔",
-                "en": "Gabriel Arteta Bernal"
-              },
-              "squad_number": 70
-            },
-            {
-              "name": {
-                "zh": "马利·弗洛霍克",
-                "en": "Marley Frohock"
-              },
-              "squad_number": 72
-            },
-            {
-              "name": {
-                "zh": "杰登·奥巴",
-                "en": "Jayden Oba"
-              },
-              "squad_number": 91
-            }
+            { "name": { "zh": "杰登·马戈马", "en": "Jaden Maghoma" }, "squad_number": 9 },
+            { "name": { "zh": "路易斯·穆尼奥斯", "en": "Luis Munoz" }, "squad_number": 12 },
+            { "name": { "zh": "凯伦·雷蒙德-卡伦德", "en": "Kyron Raymond-Callender" }, "squad_number": 13 },
+            { "name": { "zh": "加布里埃尔·阿尔特塔·贝尔纳尔", "en": "Gabriel Arteta Bernal" }, "squad_number": 70 },
+            { "name": { "zh": "马利·弗洛霍克", "en": "Marley Frohock" }, "squad_number": 72 },
+            { "name": { "zh": "杰登·奥巴", "en": "Jayden Oba" }, "squad_number": 91 }
           ]
         }
       ]
     },
     "group_stage_matches": [
-      {
-        "date": "2026-08-03",
-        "group": "Group A",
-        "home": "Athletic Club U17",
-        "away": "Bayer Leverkusen U17",
-        "home_score": 0,
-        "away_score": 0,
-        "score_status": "secondary-source-snapshot"
-      },
-      {
-        "date": "2026-08-03",
-        "group": "Group A",
-        "home": "China PR U17",
-        "away": "Arsenal U17",
-        "home_score": 3,
-        "away_score": 2,
-        "score_status": "secondary-source-snapshot"
-      },
-      {
-        "date": "2026-08-03",
-        "group": "Group B",
-        "home": "Tottenham Hotspur U17",
-        "away": "River Plate U17",
-        "home_score": 1,
-        "away_score": 1,
-        "score_status": "secondary-source-snapshot"
-      },
-      {
-        "date": "2026-08-03",
-        "group": "Group B",
-        "home": "Shanghai U17",
-        "away": "Sporting CP U17",
-        "home_score": 3,
-        "away_score": 3,
-        "score_status": "secondary-source-snapshot"
-      },
-      {
-        "date": "2026-08-04",
-        "group": "Group A",
-        "home": "Arsenal U17",
-        "away": "Bayer Leverkusen U17",
-        "score_status": "pending-source-audit"
-      },
-      {
-        "date": "2026-08-04",
-        "group": "Group A",
-        "home": "Athletic Club U17",
-        "away": "China PR U17",
-        "score_status": "pending-source-audit"
-      },
-      {
-        "date": "2026-08-04",
-        "group": "Group B",
-        "home": "Sporting CP U17",
-        "away": "River Plate U17",
-        "score_status": "pending-source-audit"
-      },
-      {
-        "date": "2026-08-04",
-        "group": "Group B",
-        "home": "Tottenham Hotspur U17",
-        "away": "Shanghai U17",
-        "score_status": "pending-source-audit"
-      },
-      {
-        "date": "2026-08-06",
-        "group": "Group B",
-        "home": "Tottenham Hotspur U17",
-        "away": "Sporting CP U17",
-        "score_status": "pending-source-audit"
-      },
-      {
-        "date": "2026-08-06",
-        "group": "Group B",
-        "home": "Shanghai U17",
-        "away": "River Plate U17",
-        "score_status": "pending-source-audit"
-      },
-      {
-        "date": "2026-08-06",
-        "group": "Group A",
-        "home": "Athletic Club U17",
-        "away": "Arsenal U17",
-        "score_status": "pending-source-audit"
-      },
-      {
-        "date": "2026-08-06",
-        "group": "Group A",
-        "home": "China PR U17",
-        "away": "Bayer Leverkusen U17",
-        "score_status": "pending-source-audit"
-      }
+      { "date": "2026-08-03", "group": "Group A", "home": "Athletic Club U17", "away": "Bayer Leverkusen U17", "home_score": 0, "away_score": 0, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-03", "group": "Group A", "home": "China PR U17", "away": "Arsenal U17", "home_score": 3, "away_score": 2, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-03", "group": "Group B", "home": "Tottenham Hotspur U17", "away": "River Plate U17", "home_score": 1, "away_score": 1, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-03", "group": "Group B", "home": "Shanghai U17", "away": "Sporting CP U17", "home_score": 3, "away_score": 3, "score_status": "secondary-source-snapshot" },
+      { "date": "2026-08-04", "group": "Group A", "home": "Arsenal U17", "away": "Bayer Leverkusen U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-04", "group": "Group A", "home": "Athletic Club U17", "away": "China PR U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-04", "group": "Group B", "home": "Sporting CP U17", "away": "River Plate U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-04", "group": "Group B", "home": "Tottenham Hotspur U17", "away": "Shanghai U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group B", "home": "Tottenham Hotspur U17", "away": "Sporting CP U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group B", "home": "Shanghai U17", "away": "River Plate U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group A", "home": "Athletic Club U17", "away": "Arsenal U17", "score_status": "pending-source-audit" },
+      { "date": "2026-08-06", "group": "Group A", "home": "China PR U17", "away": "Bayer Leverkusen U17", "score_status": "pending-source-audit" }
     ],
     "broadcast_plan": {
       "status": "complete",
@@ -844,22 +521,10 @@
             "en": "Football China"
           },
           "channels": [
-            {
-              "zh": "微博",
-              "en": "Weibo"
-            },
-            {
-              "zh": "抖音",
-              "en": "Douyin"
-            },
-            {
-              "zh": "快手",
-              "en": "Kuaishou"
-            },
-            {
-              "zh": "视频号",
-              "en": "WeChat Channels"
-            }
+            { "zh": "微博", "en": "Weibo" },
+            { "zh": "抖音", "en": "Douyin" },
+            { "zh": "快手", "en": "Kuaishou" },
+            { "zh": "视频号", "en": "WeChat Channels" }
           ]
         }
       ],
@@ -879,31 +544,14 @@
       "status": "on-sale",
       "checked_at": "2026-08-02",
       "currency": "CNY",
-      "price_tiers": [
-        50,
-        80,
-        120,
-        200
-      ],
+      "price_tiers": [50, 80, 120, 200],
       "packages": [
-        {
-          "people": 2,
-          "discount_percent": 15
-        },
-        {
-          "people": 3,
-          "discount_percent": 20
-        }
+        { "people": 2, "discount_percent": 15 },
+        { "people": 3, "discount_percent": 20 }
       ],
       "sales_channels": [
-        {
-          "zh": "大麦",
-          "en": "Damai"
-        },
-        {
-          "zh": "久事体育",
-          "en": "Juss Sports"
-        }
+        { "zh": "大麦", "en": "Damai" },
+        { "zh": "久事体育", "en": "Juss Sports" }
       ],
       "loyalty_offer": {
         "zh": "曾购买 2023—2025 届赛事门票的用户可获得专属优惠券，并可与套票折扣叠加；领取与使用条件以售票平台为准。",
