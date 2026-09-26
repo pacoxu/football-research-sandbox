@@ -24,7 +24,7 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData({ outputDirectory = paths.site } = {}) {
   const dataset = await loadDataset();
-  const generatedAt = "2026-09-02";
+  const generatedAt = "2026-09-26";
   const sourcePlayers = [...dataset.players].sort(comparePlayers);
   const players = sourcePlayers.map(toPublicPlayer);
   const bigFiveDebutForecast = buildBigFiveDebutForecast(

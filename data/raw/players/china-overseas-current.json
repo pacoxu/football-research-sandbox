@@ -194,14 +194,18 @@
     "country": "China PR",
     "birth_date": "2009-08-01",
     "age_band": "u17",
-    "primary_position": "Midfielder",
+    "primary_position": "Winger",
     "height_cm": null,
     "weight_kg": null,
     "registration_club": {
-      "name": "Europa, C.E. Juvenil B",
+      "name": "RCD Espanyol Juvenil B",
       "country": "Spain",
+      "status": "current",
       "organization_type": "club-academy",
-      "status": "current"
+      "parent_organization": {
+        "name": "RCD Espanyol",
+        "country": "Spain"
+      }
     },
     "training_pathway": [
       {
@@ -258,8 +262,29 @@
             "en": "Upper regional U19 division in Catalonia"
           }
         ],
-        "note": "FutbolBase 统计其在 2025/26 Preferent Juvenils Grup 2 为 Europa, C.E. Juvenil B 出战 29 场、打入 6 球；FCF 球员页同期显示 28 次 Convocat、16 次 Titular、12 次 Suplent、6 球且无红黄牌记录。",
+        "note": "FutbolBase 统计其在 2025/26 Preferent Juvenils Grup 2 为 Europa, C.E. Juvenil B 出战 29 场、打入 6 球；FCF 球员页同期显示 28 次 Convocat、16 次 Titular、12 次 Suplent、6 球且无红黄牌记录。这是转入西班牙人前的赛季汇总，不再代表当前注册。",
         "organization_type": "club-academy"
+      },
+      {
+        "stage_label": "2026/27 西班牙人青年B队",
+        "organization": "RCD Espanyol Juvenil B",
+        "country": "Spain",
+        "pathway_meta": [
+          {
+            "zh": "Lliga Nacional Juvenil",
+            "en": "Spanish national U19 second tier"
+          },
+          {
+            "zh": "青年B队 / U19B",
+            "en": "Juvenil B"
+          }
+        ],
+        "note": "西班牙人中文官网 2026-09-15 公告确认，2009 年出生的吕孟洋自欧罗巴体育会转入，加入维克托·桑切斯执教的青年B队，位置写为边锋，也可出任前腰。FCF 2026-09-16 新闻写明该队 2026/27 继续参加 Lliga Nacional Juvenil。Transfermarkt 把加入日写成 2026-09-14；当前注册按俱乐部官网确认的青年B队记录，不把数据库日期单独当作生效日。",
+        "organization_type": "club-academy",
+        "parent_organization": {
+          "name": "RCD Espanyol",
+          "country": "Spain"
+        }
       }
     ],
     "focus_tags": [
@@ -281,14 +306,23 @@
         "note": "凤凰网江苏 2023-12-14 报道确认其入选 2023 U15 国少队。"
       },
       {
-        "competition_id": "china-overseas-2026",
-        "label": "2026 中国现役留洋跟踪",
+        "label": "2025/26 欧罗巴青年B队赛季",
         "team": "Europa, C.E. Juvenil B",
         "squad_status": "registered",
         "appearances": 29,
         "goals": 6,
         "minutes": null,
-        "note": "截至 2026-05-22，FutbolBase 2025/26 赛季汇总为 29 场 6 球；FCF 球员页可核到其在 Europa, C.E. Juvenil B 的联赛注册，并显示 28 次入选名单、16 次首发、12 次替补席、6 球、无红黄牌。由于两站对“出场/名单”口径不完全一致，当前 appearance 字段先按 FutbolBase 赛季汇总记为 29。"
+        "note": "2025/26 赛季、转入西班牙人之前的汇总。FutbolBase 为 29 场 6 球；FCF 球员页为 28 次入选名单、16 次首发、12 次替补席、6 球、无红黄牌。出场字段按 FutbolBase 赛季汇总记为 29，不代表 2026/27 当前俱乐部。"
+      },
+      {
+        "competition_id": "china-overseas-2026",
+        "label": "2026/27 西班牙人青年B队",
+        "team": "RCD Espanyol Juvenil B",
+        "squad_status": "registered",
+        "appearances": 1,
+        "goals": 1,
+        "minutes": null,
+        "note": "2026-09-20 西班牙 U19 全国联赛第二级别首轮，西班牙人青年B队客场 3-1 圣库加特 U19A。新浪体育与俄罗斯卫星通讯社转述均写其第 58 分钟替补、第 83 分钟破门；另一条公开口径写第 57 分钟替补。出场和进球按多源一致事实记录，替补分钟冲突不写入 minutes。截至 2026-09-26 未核到 FCF 单场技术表。中国足协 2026-09-11 U17 第六期 26 人名单没有他的名字。"
       },
       {
         "competition_id": "shanghai-future-star-cup-men-u17-2026",
@@ -300,7 +334,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "上海 U17 公开关联名单快照列为 15 号中场；该赛事代表队身份不改变其 Europa Juvenil B 的西班牙注册主线，逐场数据待核。"
+        "note": "上海 U17 公开关联名单快照列为 15 号中场。这是 2026 年 8 月的赛事代表队身份，不改变其随后转入的 RCD Espanyol Juvenil B 当前注册，逐场数据待核。"
       }
     ],
     "external_links": [
@@ -330,26 +364,31 @@
         "url": "https://www.xiaojiangfc.com/players/lv-mengyang/",
         "checked_at": "2026-07-25",
         "note": "二次公开资料索引；可补充项目身份与成长线索，但不单独作为当前注册、完整出生日期或正式比赛数据的强证明。"
+      },
+      {
+        "type": "club",
+        "label": "RCD Espanyol: 吕孟洋，鹦鹉军团！",
+        "url": "https://www.rcdespanyol.com/cn/new-cn/%E5%90%95%E5%AD%9F%E6%B4%8B%EF%BC%8C%E9%B9%A6%E9%B9%89%E5%86%9B%E5%9B%A2%EF%BC%81/20759",
+        "checked_at": "2026-09-26"
+      },
+      {
+        "type": "official",
+        "label": "FCF: Espanyol Juvenil B remains in Lliga Nacional Juvenil",
+        "url": "https://www.fcf.cat/ca/noticies-fcf/1037006",
+        "checked_at": "2026-09-26"
+      },
+      {
+        "type": "news",
+        "label": "Sina: Espanyol Juvenil B debut goal",
+        "url": "https://sports.sina.cn/2026-09-21/detail-inisqkzy8924257.d.html",
+        "checked_at": "2026-09-26"
       }
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "出生日期、徐州出身、双胞胎兄弟与清华附中节点可由 Baidu Baike 条目及其引用稿件交叉校对；西班牙三段履历可由 FutbolBase 履历页补齐；2025/26 在 Europa, C.E. Juvenil B 的联赛注册与名单拆分数据由 FCF 球员页补强。通用检索里还会混入 Lu / Lv / Lyu 三种拼写及非足球同名结果，因此本条以生日、中文名和加泰注册路径三项联合锁定。"
-    },
-    "source_layers": [
-      {
-        "type": "league-registration",
-        "label": "Catalan Football Federation 2025/26 player registration",
-        "url": "https://www.fcf.cat/jugador/2526/juvenil-primera-divisio/preferent-juvenils/grup-2/54695975/50284682",
-        "checked_at": "2026-08-01",
-        "confidence": "high",
-        "claim": "The Catalan federation player page confirms Lyu Mengyang's 2025/26 registration for Europa Juvenil B.",
-        "fields": [
-          "registration_club"
-        ]
-      }
-    ]
+      "last_checked": "2026-09-26",
+      "notes": "出生日期、徐州出身、双胞胎兄弟与清华附中节点可由 Baidu Baike 条目及其引用稿件交叉校对；西班牙早期三段履历可由 FutbolBase 履历页补齐；2025/26 欧罗巴数据保留为赛季历史。当前注册改为 RCD Espanyol Juvenil B，依据是俱乐部 2026-09-15 中文官网公告，FCF 同周新闻确认该青年B队参加 2026/27 Lliga Nacional Juvenil。首秀进球有多条独立报道一致，但替补分钟有 57 与 58 两种写法，且尚未核到联赛技术表，所以只记 1 次出场、1 球。通用检索里还会混入 Lu / Lv / Lyu 三种拼写，本条继续以生日、中文名和加泰注册路径锁定。"
+    }
   },
   {
     "id": "cn-liu-kaiyuan-2010",
@@ -622,6 +661,12 @@
         "organization": "China PR U16",
         "country": "China",
         "note": "中国足协 2026-03-12 第二期集训通知将其所属单位列为达姆足球俱乐部，队伍随后赴法国参加蒙太古杯。"
+      },
+      {
+        "stage_label": "2026 中国U16第五期集训归属口径",
+        "organization": "China PR U16",
+        "country": "China",
+        "note": "中国足协 2026-09-11 通知将其所属单位写作奥斯皮塔莱特足球俱乐部。该口径只证明本期集训名单上的单位写法，不能单独取代达姆注册。"
       }
     ],
     "focus_tags": [
@@ -679,6 +724,15 @@
         "goals": null,
         "minutes": null,
         "note": "中国足协 2026-06-27 第四期集训公开名单将张林峒列入中场组，归属达姆足球俱乐部；这是赛后 U17 pool 状态，不等同于 AFC U17 2026 终报名。"
+      },
+      {
+        "label": "2026 中国 U16 第五期集训",
+        "team": "China PR U16",
+        "squad_status": "called-up",
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "中国足协 2026-09-11 通知列入第五期 33 人名单，所属单位写作奥斯皮塔莱特足球俱乐部。这与档案里截至 2026-05-22 的达姆注册冲突。在缺少俱乐部或联赛注册页之前，不覆盖 registration_club。和平杯对吉尔吉斯斯坦的足协战报没有点名他出场。"
       }
     ],
     "external_links": [
@@ -732,9 +786,9 @@
       }
     ],
     "verification": {
-      "status": "verified",
-      "last_checked": "2026-07-11",
-      "notes": "中国足球小将 2010 队身份、前腰 / 后腰 / 边前卫多位置口径，以及 2024 年加盟达姆的旅西主线，可由董路 / 直播吧年度总结与搜狐加盟报道交叉确认；2023 年底圣胡斯特竞技注册节点可由懂球帝报道补齐；2024 年 U14 第二期、赴韩国拉练与 2026 年 U16 第二期集训，可由体坛+、直播吧转述和足协正式通知连续拼出。生日 2010-02-25 当前主要来自 2026-02-25“16 周岁生日”的公开社媒口径，而不是足协正式注册页，因此这里保留日期但不把它表述为足协权威字段。 已追加 2026-06-27 中国 U17 第四期集训公开名单；该 later-camp-callup 不计入 AFC U17 2026 终报名 23 人。"
+      "status": "mixed-source",
+      "last_checked": "2026-09-26",
+      "notes": "中国足球小将 2010 队身份、前腰 / 后腰 / 边前卫多位置口径，以及 2024 年加盟达姆的旅西主线，可由董路 / 直播吧年度总结与搜狐加盟报道交叉确认；2023 年底圣胡斯特竞技注册节点可由懂球帝报道补齐；2024 年 U14 第二期、赴韩国拉练与 2026 年 U16 第二期集训，可由体坛+、直播吧转述和足协正式通知连续拼出。生日 2010-02-25 当前主要来自 2026-02-25“16 周岁生日”的公开社媒口径，而不是足协正式注册页，因此这里保留日期但不把它表述为足协权威字段。 已追加 2026-06-27 中国 U17 第四期集训公开名单；该 later-camp-callup 不计入 AFC U17 2026 终报名 23 人。 2026-09-26 复核出现注册冲突：U16 第五期通知写奥斯皮塔莱特，既有档案写达姆。当前注册字段保持达姆，等待俱乐部或联赛注册页。"
     }
   },
   {

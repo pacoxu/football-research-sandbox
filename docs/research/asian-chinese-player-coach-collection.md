@@ -35,7 +35,7 @@
 | 汪修昊 | DAMM CF | Spain |
 | 万项 | Red Star Belgrade U17 | Serbia |
 | 金昱成 | NK Lokomotiva Zagreb | Croatia |
-| 吕孟洋 | Europa, C.E. Juvenil B | Spain |
+| 吕孟洋 | RCD Espanyol Juvenil B | Spain |
 | 刘凯源 | FC Villarreal Youth | Spain |
 | 李东宸 | Sant Cugat FC | Spain |
 | 张林峒 | DAMM CF | Spain |
@@ -67,10 +67,10 @@
 | 队伍 | 年龄线 | 主教练 | 最近公开节点 |
 | --- | --- | --- | --- |
 | 中国U23 / 亚运队 | 2003年龄段 | Antonio Puche / 安东尼奥·普切 | 2026年第一期集训，2026-03-20 |
-| 中国U19 / U20国青线 | 2007年龄段 | Dejan Djurdjevic / 德扬·久尔杰维奇 | 2026年第三期集训，2026-05-22 |
-| 中国U17 | 2009年龄段 | Satoshi Ukishima / 浮嶋敏 | 2026年第四期集训，2026-06-27 |
-| 中国U16 | 2010年龄段 | David Almazan / 大卫·阿尔马赞 | 2026年第二期集训，2026-03-12 |
-| 中国U15 | 2011年龄段附近 | Zhou Haibin / 周海滨 | 2026年第三期集训，2026-04-11 |
+| 中国U19 / U20国青线 | 2007年龄段 | Dejan Djurdjevic / 德扬·久尔杰维奇 | 2026年第四期集训，2026-09-18 |
+| 中国U17 | 2009年龄段 | Satoshi Ukishima / 浮嶋敏 | 2026年第六期集训，2026-09-11 |
+| 中国U16 | 2010年龄段 | Zhang Yaokun / 张耀坤 | 2026年第五期集训，2026-09-11 |
+| 中国U15 | 2011年龄段附近 | Zhou Haibin / 周海滨 | 2026年第五期集训，2026-09-21 |
 
 ## 来源优先级
 
@@ -207,6 +207,11 @@ Eyeball 公开层补充：
 - 中国 U23 2026 第一期集训：https://www.thecfa.cn/jxtz/20260320/37446.html
 - 中国 U19 2026 第三期集训：https://www.thecfa.cn/jxtz/20260522/37710.html
 - 中国 U17 2026 第四期集训：https://www.thecfa.cn/wqmdu17/20260627/37817.html
+- 中国 U17 2026 第六期集训：https://www.thecfa.cn/jxtz/20260911/38141.html
 - 中国 U16 2026 第二期集训：https://www.thecfa.cn/jxtz/20260312/37416.html
+- 中国 U16 2026 第五期集训：https://www.thecfa.cn/jxtz/20260911/38145.html
 - 中国 U15 2026 集训线索：https://www.thecfa.cn/jxtz/20260411/37545.html
+- 中国 U15 2026 第五期集训：https://www.thecfa.cn/jxtz/20260921/38198.html
+- 中国 U19 2026 第四期集训：https://www.thecfa.cn/jxtz/20260918/38191.html
+- 中国国家男子足球队 2026 第四期集训：https://www.thecfa.cn/jxtz/20260908/38120.html
 - AFC U23 2026 final registration：https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url
