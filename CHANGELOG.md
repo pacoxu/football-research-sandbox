@@ -4,6 +4,19 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-09-26
+
+### Added
+
+- Recorded the September 2026 China men's national-team camps: the senior fourth camp, U19 fourth camp, U17 sixth camp, U16 fifth camp and U15 fifth camp, including official squads.
+- Recorded the CFA match reports for China 3-0 Maldives on 2026-09-24 and China U16 3-3 Kyrgyzstan U16 in the Shenyang Peace Cup.
+
+### Corrected
+
+- Moved Lyu Mengyang's current registration from Europa Juvenil B to RCD Espanyol Juvenil B after the club announcement, and kept the 2025/26 Europa season totals as history.
+- Recorded his 2026-09-20 Juvenil B debut goal as one appearance and one goal, without storing the conflicting substitute minute.
+- Updated the U16 head coach on the latest camp notice to Zhang Yaokun. Zhang Lindong's camp unit is listed as L'Hospitalet, while his stored registration remains DAMM until a club or league registration page confirms the move.
+
 ## 2026-09-08
 
 ### Added

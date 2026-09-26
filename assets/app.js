@@ -294,6 +294,10 @@ const UI_COPY = {
     "coaches.national.latest": "最近集训：{value}",
     "coaches.national.window": "时间：{value}",
     "coaches.national.staff": "教练与保障团队",
+    "coaches.national.squad": "本期名单",
+    "coaches.national.matches": "比赛",
+    "coaches.national.matchPending": "未赛",
+    "coaches.national.matchReported": "预报，未赛",
     "coaches.national.sources": "官方任命与集训来源",
     "coaches.watchlist.eyebrow": "Research Queue",
     "coaches.watchlist.title": "待补教练与机构",
@@ -1235,6 +1239,10 @@ const UI_COPY = {
     "coaches.national.latest": "Latest camp: {value}",
     "coaches.national.window": "Window: {value}",
     "coaches.national.staff": "Coaching and support staff",
+    "coaches.national.squad": "Camp squad",
+    "coaches.national.matches": "Matches",
+    "coaches.national.matchPending": "not played",
+    "coaches.national.matchReported": "reported, not played",
     "coaches.national.sources": "Official appointment and camp sources",
     "coaches.watchlist.eyebrow": "Research Queue",
     "coaches.watchlist.title": "Coaches and organizations to verify",
@@ -7544,16 +7552,30 @@ function renderDevelopmentCoachCard(coach) {
   `;
 }
 
+function formatCampMatch(match) {
+  const pending = match.status === "reported-schedule"
+    ? t("coaches.national.matchReported")
+    : t("coaches.national.matchPending");
+  const score = match.score ?? pending;
+  const kickoff = match.kickoff ? ` ${match.kickoff}` : "";
+  const note = match.note ? `。${match.note}` : "";
+  return `${match.date}${kickoff} vs ${match.opponent} ${score}${note}`;
+}
+
 function renderNationalYouthCoachCycle(cycle) {
   const headCoach = state.language === "en"
     ? cycle.head_coach?.name
     : cycle.head_coach?.local_name || cycle.head_coach?.name;
+  const squad = cycle.latest_camp?.squad ?? [];
+  const matches = cycle.latest_camp?.matches ?? [];
   return `
     <article class="story-card">
       <div class="chip-row"><span class="chip">${escapeHtml(cycle.team_label)}</span><span class="chip">${escapeHtml(cycle.age_line)}</span></div>
       <h3>${escapeHtml(t("coaches.national.coach", { value: headCoach }))}</h3>
       <p>${escapeHtml(cycle.current_stage)}</p>
       ${cycle.latest_camp ? `<p class="small-note">${escapeHtml(t("coaches.national.latest", { value: cycle.latest_camp.label }))}<br>${escapeHtml(t("coaches.national.window", { value: cycle.latest_camp.window }))}<br>${escapeHtml(cycle.latest_camp.purpose)}</p>` : ""}
+      ${squad.length ? `<p class="timeline-label">${escapeHtml(t("coaches.national.squad"))}</p><ul class="mini-bullet-list">${squad.map((group) => `<li><strong>${escapeHtml(group.unit)}</strong>：${escapeHtml(group.players.join("、"))}</li>`).join("")}</ul>` : ""}
+      ${matches.length ? `<p class="timeline-label">${escapeHtml(t("coaches.national.matches"))}</p><ul class="mini-bullet-list">${matches.map((match) => `<li>${escapeHtml(formatCampMatch(match))}</li>`).join("")}</ul>` : ""}
       <p class="timeline-label">${escapeHtml(t("coaches.national.staff"))}</p>
       <ul class="mini-bullet-list">${(cycle.staff ?? []).map((group) => `<li><strong>${escapeHtml(group.role)}</strong>：${escapeHtml(group.members.join("、"))}</li>`).join("")}</ul>
       <p class="timeline-label">${escapeHtml(t("coaches.national.sources"))}</p>
@@ -7584,7 +7606,8 @@ function renderCoachesPage() {
   });
   developmentGrid.innerHTML = developmentCoaches.map(renderDevelopmentCoachCard).join("");
   nationalNote.textContent = national?.scope_note ?? "";
-  nationalGrid.innerHTML = nationalCycles.map(renderNationalYouthCoachCycle).join("");
+  const seniorWindow = national?.senior_men_window ? [national.senior_men_window] : [];
+  nationalGrid.innerHTML = [...seniorWindow, ...nationalCycles].map(renderNationalYouthCoachCycle).join("");
   watchlist.innerHTML = (development?.watchlist ?? []).map((item) => `
     <article class="stack-card">
       <h3>${escapeHtml(item.organization)}</h3>
