@@ -4,6 +4,17 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-10-03
+
+### Added
+
+- Closed the 2026 Aichi-Nagoya Asian Games men's football file with China's six-match path and bronze medal: semi-final 1-2 to Korea Republic, third-place match 2-2 then 4-3 on penalties against Uzbekistan.
+
+### Data Scope Notes
+
+- Group and knockout scores through the semi-final use CFA and/or Xinhua reports. The bronze-medal shoot-out is stored from a public-media snapshot until an official CFA match report is captured.
+- The Korea Republic–Japan gold-medal result is not recorded yet; champion and runner-up remain empty.
+
 ## 2026-09-26
 
 ### Added
