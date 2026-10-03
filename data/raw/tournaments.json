@@ -1340,7 +1340,7 @@
     "focus_level": "reference",
     "competition_level": "senior-top-flight",
     "status": "in-progress",
-    "last_checked": "2026-07-19",
+    "last_checked": "2026-10-03",
     "date_range": {
       "start": "2026-03-06",
       "end": "2026-11-08"
@@ -1360,7 +1360,8 @@
     "notes": [
       "当前批次按各俱乐部 2026 赛季一线队名单中的 U21 档与已进入一线队轮换的青年样本补录。",
       "同一球员若已在库内按 U17 或 U23 赛事建档，本轮不重复建第二条，而是补充 2026 中超参赛记录和标签。",
-      "具备欧洲留洋经历的 U23 样本，优先补当前俱乐部、留洋节点和外部链接。"
+      "具备欧洲留洋经历的 U23 样本，优先补当前俱乐部、留洋节点和外部链接。",
+      "2026-10-03 月度复核：中国足协竞赛日历写明中超于 9 月 6 日后为亚运会备战休赛，赛季仍进行至 11 月 8 日。公开聚合库对多名 U21/U23 样本的出场/分钟口径不一致，因此除可逐场拼出的刘诚宇中超记录外，其余样本继续保留 null，不把冲突数字写入 raw。"
     ],
     "sources": [
       {
@@ -1518,7 +1519,7 @@
     "short_name": "China Overseas 2026",
     "focus_level": "reference",
     "status": "in-progress",
-    "last_checked": "2026-09-26",
+    "last_checked": "2026-10-03",
     "date_range": {
       "start": "2026-01-01",
       "end": "2026-12-31"
@@ -1526,14 +1527,15 @@
     "focus_teams": [
       "Barnsley FC",
       "FC Den Bosch",
-      "FK Vozdovac U19",
+      "FK Vozdovac",
       "Red Star Belgrade U17",
       "LAFC2",
       "NK Lokomotiva Zagreb",
       "DAMM CF",
       "Real Carabanchel CF",
       "AJ Auxerre",
-      "RCD Espanyol Juvenil B"
+      "RCD Espanyol Juvenil B",
+      "Burnley FC U21"
     ],
     "headline": "2026 年中国留洋现役样本，优先跟踪当前仍在海外注册或效力的中国球员。",
     "notes": [
@@ -1541,7 +1543,8 @@
       "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
       "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。",
       "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。",
-      "吕孟洋 2026-09-15 由俱乐部官网确认从欧罗巴转入 RCD Espanyol Juvenil B。2025/26 欧罗巴出场数保留为历史赛季，不再当作当前注册。"
+      "吕孟洋 2026-09-15 由俱乐部官网确认从欧罗巴转入 RCD Espanyol Juvenil B。2025/26 欧罗巴出场数保留为历史赛季，不再当作当前注册。",
+      "林子皓 2026-07-31 由沃日多瓦茨官方宣布从湖北青年星租借升入一线队；U19 阶段保留为历史路径。张家鸣、李东宸本轮只复核注册，不把非官方出场分钟写入 raw。"
     ],
     "sources": [
       {
@@ -1583,6 +1586,11 @@
         "label": "RCD Espanyol: Lyu Mengyang joins Juvenil B",
         "publisher": "RCD Espanyol",
         "url": "https://www.rcdespanyol.com/cn/new-cn/%E5%90%95%E5%AD%9F%E6%B4%8B%EF%BC%8C%E9%B9%A6%E9%B9%89%E5%86%9B%E5%9B%A2%EF%BC%81/20759"
+      },
+      {
+        "label": "FK Vozdovac first-team signing announcement for Lin Zihao",
+        "publisher": "FK Vozdovac",
+        "url": "https://www.fkvozdovac.rs/fk-vozdovac-predstavio-cetiri-nova-pojacanja-pred-pocetak-sezone/"
       }
     ]
   },

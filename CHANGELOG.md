@@ -9,11 +9,19 @@ This project tracks research data, so changelog entries should separate code cha
 ### Added
 
 - Closed the 2026 Aichi-Nagoya Asian Games men's football file with China's six-match path and bronze medal: semi-final 1-2 to Korea Republic, third-place match 2-2 then 4-3 on penalties against Uzbekistan.
+- Closed the FIFA World Cup 2026 archive after the 19 July final: Spain beat Argentina 1-0 after extra time; China remain did-not-qualify. Japan's Round of 32 1-2 loss to Brazil is stored from the FIFA match report; Korea Republic and IR Iran are recorded as group-stage exits without match scores.
+- Recorded the FIFA U-17 World Cup Qatar 2026 official draw, with China PR in Group H against Spain, Fiji and Morocco. CAF 1 / CAF 2 remain draw placeholders.
+
+### Updated
+
+- Refreshed the CSL 2026 monthly youth-stats check through the Asian Games league pause. Liu Chengyu's first-team Super League line is extended to 12 appearances and 414 minutes as of 6 September; other tracked U21/U23 samples keep null totals where aggregators disagree.
+- Moved Lin Zihao's current registration from FK Vozdovac U19 to the FK Vozdovac first team after the club announcement, and rechecked Zhang Jiaming, Li Dongchen and Liu Shaoziyang without inventing minutes.
 
 ### Data Scope Notes
 
 - Group and knockout scores through the semi-final use CFA and/or Xinhua reports. The bronze-medal shoot-out is stored from a public-media snapshot until an official CFA match report is captured.
 - The Korea Republic–Japan gold-medal result is not recorded yet; champion and runner-up remain empty.
+- Remaining AFC World Cup 2026 exits beyond Japan/Korea/Iran are not stored as scores. U-17 World Cup CAF placeholders are not replaced with Mozambique/Uganda until FIFA republishes named groups.
 
 ## 2026-09-26
 

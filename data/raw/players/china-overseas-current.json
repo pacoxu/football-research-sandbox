@@ -59,7 +59,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "伯恩利 2026-06-05 官方确认张家鸣加入 U21；7 月季前赛已经连续获得出场并取得进球。"
+        "note": "伯恩利 2026-06-05 官方确认张家鸣加入 U21；7 月季前赛已经连续获得出场并取得进球。2026-10-03 复核注册未变。公开聚合库写 PL2 两场出场，未写入 raw。"
       }
     ],
     "external_links": [
@@ -96,8 +96,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-26",
-      "notes": "伯恩利 2026-06-05 官方公告确认张家鸣加盟 U21 并签约至 2027 年夏天；2026 年 7 月俱乐部季前赛记录确认其已随 U21 连续出场并取得进球。沃日多瓦茨阶段保留为此前路径，不再作为当前注册俱乐部。"
+      "last_checked": "2026-10-03",
+      "notes": "2026-10-03 复核：伯恩利 2026-06-05 官方公告仍是当前 U21 注册依据；WorldFootball 列出 2026/27 Premier League 2 两场出场、0 球，但不是俱乐部官方技术统计，因此 appearances 继续为 null。"
     }
   },
   {
@@ -112,10 +112,11 @@
     "height_cm": 183,
     "weight_kg": null,
     "registration_club": {
-      "name": "FK Vozdovac U19",
+      "name": "FK Vozdovac",
       "country": "Serbia",
-      "organization_type": "club-academy",
-      "status": "current"
+      "organization_type": "professional-club",
+      "status": "current",
+      "note": "2026-07-31 俱乐部官方宣布从湖北青年星租借升入一线队，合同至 2027-06-30。"
     },
     "training_pathway": [
       {
@@ -130,6 +131,13 @@
         "country": "Serbia",
         "note": "2025 年夏天起加入沃日多瓦茨 U19，成为当前塞尔维亚青年留洋样本之一。",
         "organization_type": "club-academy"
+      },
+      {
+        "stage_label": "2026/27 沃日多瓦茨一线队租借",
+        "organization": "FK Vozdovac",
+        "country": "Serbia",
+        "note": "沃日多瓦茨官网 2026-07-31 前后宣布林子皓从湖北青年星租借加盟一线队，备战塞甲新赛季。U19 阶段保留为前序路径。",
+        "organization_type": "professional-club"
       }
     ],
     "focus_tags": [
@@ -142,15 +150,20 @@
       {
         "competition_id": "china-overseas-2026",
         "label": "2026 中国现役留洋跟踪",
-        "team": "FK Vozdovac U19",
+        "team": "FK Vozdovac",
         "squad_status": "registered",
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22 仍在沃日多瓦茨 U19 效力，是当前塞尔维亚青年留洋样本。"
+        "note": "沃日多瓦茨官方宣布升入一线队。一线队联赛出场累计尚未取得官方逐场技术表，保持 null。"
       }
     ],
     "external_links": [
+      {
+        "type": "official",
+        "label": "FK Vozdovac first-team signing announcement",
+        "url": "https://www.fkvozdovac.rs/fk-vozdovac-predstavio-cetiri-nova-pojacanja-pred-pocetak-sezone/"
+      },
       {
         "type": "transfermarkt",
         "label": "Transfermarkt profile",
@@ -169,17 +182,28 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "出生日期和身高可由公开球员资料页校对；当前沃日多瓦茨 U19 归属由转会资料页与 2026 年春季留洋报道交叉确认。"
+      "last_checked": "2026-10-03",
+      "notes": "当前一线队注册以沃日多瓦茨官网新援公告为准；Transfermarkt 同步写 on loan from Hubei Istar to FK Vozdovac until 2027-06-30。U19 出场不再作为当前注册。"
     },
     "source_layers": [
       {
+        "type": "club-profile",
+        "label": "FK Vozdovac first-team signing announcement",
+        "url": "https://www.fkvozdovac.rs/fk-vozdovac-predstavio-cetiri-nova-pojacanja-pred-pocetak-sezone/",
+        "checked_at": "2026-10-03",
+        "confidence": "high",
+        "claim": "The club announced Lin Zihao as a first-team signing on loan from Hubei Istar.",
+        "fields": [
+          "registration_club"
+        ]
+      },
+      {
         "type": "league-registration",
-        "label": "Transfermarkt FK Vozdovac U19 registration profile",
+        "label": "Transfermarkt FK Vozdovac first-team profile",
         "url": "https://www.transfermarkt.com/zihao-lin/profil/spieler/1242688",
-        "checked_at": "2026-08-01",
+        "checked_at": "2026-10-03",
         "confidence": "medium",
-        "claim": "The registration profile continues to list Lin Zihao with FK Vozdovac U19; the 2026/27 registration should be rechecked when the new-season list is published.",
+        "claim": "The registration profile lists FK Vozdovac first team, on loan from Hubei Istar, joined 2026-07-31.",
         "fields": [
           "registration_club"
         ]
@@ -973,15 +997,15 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "中国足球小将 2010 队身份、地中海杯最佳阵容口径，以及旅西主线可由懂球帝专题稿、澎湃号与项目公开材料交叉确认；中国足协 2024-06-20、2024-09-24 和 2026-03-12 三份正式通知连续给出了“北京 -> 欧罗巴 -> 圣库加特”的报名归属变化。生日 2010-01-22 当前主要来自 Transfermarkt，而非足协或俱乐部官方注册页，因此这里保留日期但不把它表述为权威官方字段。位置方面，公开报道常把他写作左中卫或后防线球员，这里先按更稳妥的 Centre-Back 归档。"
+      "last_checked": "2026-10-03",
+      "notes": "中国足球小将 2010 队身份、地中海杯最佳阵容口径，以及旅西主线可由懂球帝专题稿、澎湃号与项目公开材料交叉确认；中国足协 2024-06-20、2024-09-24 和 2026-03-12 三份正式通知连续给出了“北京 -> 欧罗巴 -> 圣库加特”的报名归属变化。生日 2010-01-22 当前主要来自 Transfermarkt，而非足协或俱乐部官方注册页，因此这里保留日期但不把它表述为权威官方字段。位置方面，公开报道常把他写作左中卫或后防线球员，这里先按更稳妥的 Centre-Back 归档。 2026-10-03 复核：未见足协或俱乐部官方把当前注册从圣库加特改走的通知，因此保持 Sant Cugat FC。"
     },
     "source_layers": [
       {
         "type": "national-fa-profile",
         "label": "CFA U16 second camp notice",
         "url": "https://www.thecfa.cn/jxtz/20260312/37416.html",
-        "checked_at": "2026-08-01",
+        "checked_at": "2026-10-03",
         "confidence": "high",
         "claim": "The official March 2026 CFA call-up records Li Dongchen's organization as Sant Cugat FC.",
         "fields": [
@@ -1095,8 +1119,8 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-07-25",
-      "notes": "当前归属以 LAFC2 官方发布的转会北京国安信息为准；此前 LAFC2 与欧洲阶段履历继续作为历史路径保留。"
+      "last_checked": "2026-10-03",
+      "notes": "2026-10-03 复核：当前归属仍按回流北京国安记录，未见重新出国注册的官方公告。"
     }
   }
 ]

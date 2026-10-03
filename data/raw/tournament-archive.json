@@ -12252,11 +12252,11 @@
       "start": "2026-06-11",
       "end": "2026-07-19"
     },
-    "status": "upcoming",
-    "champion": "",
-    "runner_up": "",
+    "status": "completed",
+    "champion": "Spain",
+    "runner_up": "Argentina",
     "china_status": "did-not-qualify",
-    "china_summary": "截至 2026-05-23，中国队已无缘 2026 世界杯决赛圈。",
+    "china_summary": "中国队未晋级 2026 世界杯决赛圈。正赛已于 2026-07-19 结束，西班牙 1-0 加时击败阿根廷夺冠。",
     "qualification_path": {
       "route": "AFC qualifying",
       "summary": "中国队从亚洲区第二阶段晋级第三阶段，但未能在第三阶段小组中进入直接出线或第四阶段附加赛席位。",
@@ -12271,8 +12271,8 @@
         "en": "2026 World Cup U20-age watch"
       },
       "scope_note": {
-        "zh": "这不是 2026 世界杯最终名单预测，而是按 2026-06-11 开幕日仍未满 20 岁的站内已建档球员整理的年龄段观察池。筛选口径为 birth_date > 2006-06-11，并按中国、日本、韩国、乌兹别克斯坦当前已建档样本分组；中国队已无缘正赛，因此中国组用于同年龄段横向比较。",
-        "en": "This is not a projected final 2026 FIFA World Cup squad. It is an age-band watchlist built from site-archived players who will still be under 20 on the 2026-06-11 opening day. The filter is birth_date > 2006-06-11, grouped across currently archived China PR, Japan, Korea Republic and Uzbekistan samples; China PR did not qualify, so its group is retained only as a same-age benchmark."
+        "zh": "这不是 2026 世界杯最终名单，而是按 2026-06-11 开幕日仍未满 20 岁的站内已建档球员整理的年龄段观察池。筛选口径为 birth_date > 2006-06-11，并按中国、日本、韩国、乌兹别克斯坦当前已建档样本分组；中国队未进入正赛，因此中国组只作同年龄段横向比较。正赛已完赛，西班牙加时 1-0 击败阿根廷夺冠。",
+        "en": "This is not a 2026 FIFA World Cup squad list. It is an age-band watchlist built from site-archived players who were still under 20 on the 2026-06-11 opening day. The filter is birth_date > 2006-06-11, grouped across currently archived China PR, Japan, Korea Republic and Uzbekistan samples; China PR did not qualify, so its group is retained only as a same-age benchmark. The tournament is complete: Spain beat Argentina 1-0 after extra time."
       },
       "tag": "",
       "player_pool_label": {
@@ -12309,30 +12309,98 @@
           "country": "Uzbekistan",
           "tag": "uzbekistan-youth",
           "note": {
-            "zh": "乌兹别克斯坦已获得 2026 世界杯正赛资格；站内当前只建档到 2009 年龄段 U17 亚洲杯样本，因此这组更偏长期储备观察，不等同于成年队正赛名单候选。",
-            "en": "Uzbekistan have qualified for the 2026 World Cup finals. The site currently only archives their 2009-born AFC U17 sample, so this group is a longer-term pipeline watch rather than a senior finals-squad projection."
+            "zh": "乌兹别克斯坦进入 2026 世界杯正赛后在小组赛出局；站内当前只建档到 2009 年龄段 U17 亚洲杯样本，因此这组更偏长期储备观察，不等同于成年队正赛名单。",
+            "en": "Uzbekistan reached the 2026 World Cup finals and exited in the group stage. The site currently only archives their 2009-born AFC U17 sample, so this group is a longer-term pipeline watch rather than a senior finals-squad record."
           }
         }
       ]
     },
     "source_links": [
       {
-        "label": "FIFA World Cup 2026 schedule",
+        "label": "FIFA: Spain crowned World Cup 2026 champions",
+        "url": "https://inside.fifa.com/news/spain-crowned-world-cup-2026-champions-new-york-new-jersey"
+      },
+      {
+        "label": "FIFA World Cup 2026 final match centre",
+        "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543"
+      },
+      {
+        "label": "FIFA World Cup 2026 tournament home",
         "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
       },
       {
         "label": "Asian qualifying results",
         "url": "https://www.fifa.com/en/articles/asian-qualifying-results-and-fixtures-for-world-cup-26"
-      },
-      {
-        "label": "AFC U23 2026 final registration",
-        "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
-      },
-      {
-        "label": "AFC U17 2026 final squad lists",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
       }
-    ]
+    ],
+    "source_checked_at": "2026-10-03",
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA: Spain crowned FIFA World Cup 2026 Champions",
+        "url": "https://inside.fifa.com/news/spain-crowned-world-cup-2026-champions-new-york-new-jersey",
+        "fields": [
+          "status",
+          "champion",
+          "runner_up",
+          "date_range"
+        ]
+      },
+      {
+        "type": "official-match-report",
+        "label": "FIFA World Cup 2026 final match centre Spain 1-0 Argentina",
+        "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543",
+        "fields": [
+          "champion",
+          "runner_up"
+        ]
+      },
+      {
+        "type": "official-match-report",
+        "label": "FIFA full-time report Brazil 2-1 Japan Round of 32",
+        "url": "https://fdp.fifa.org/assetspublic/ce281/r12525/pdf/FullTimeMatchReport-English.pdf",
+        "fields": [
+          "asian_finals_outcomes"
+        ]
+      }
+    ],
+    "asian_finals_outcomes": [
+      {
+        "team": "Japan",
+        "stage": "Round of 32",
+        "result": "L",
+        "score_for": 1,
+        "score_against": 2,
+        "opponent": "Brazil",
+        "date": "2026-06-29",
+        "source_checked_at": "2026-10-03",
+        "sources": [
+          "https://fdp.fifa.org/assetspublic/ce281/r12525/pdf/FullTimeMatchReport-English.pdf",
+          "https://www.jfa.jp/eng/samuraiblue/worldcup_2026/final/match_page/m76.html"
+        ]
+      },
+      {
+        "team": "Korea Republic",
+        "stage": "Group stage",
+        "result": null,
+        "note": "Eliminated after the group stage as one of the four lowest-ranked third-placed teams.",
+        "source_checked_at": "2026-10-03",
+        "sources": [
+          "https://www.bbc.com/sport/football/articles/c74y970len4o"
+        ]
+      },
+      {
+        "team": "IR Iran",
+        "stage": "Group stage",
+        "result": null,
+        "note": "Eliminated after the group stage as one of the four lowest-ranked third-placed teams.",
+        "source_checked_at": "2026-10-03",
+        "sources": [
+          "https://www.bbc.com/sport/football/articles/c74y970len4o"
+        ]
+      }
+    ],
+    "source_conflict_note": "Champion and runner-up are taken from FIFA's 2026-07-19 championship report. Japan's Round of 32 score uses the FIFA match report. Remaining AFC exits are recorded at stage level from the BBC 2026-07-16 elimination tracker and are not stored as match scores."
   },
   {
     "id": "fifa-u20-world-cup-2023",
@@ -13190,13 +13258,13 @@
     "champion": "",
     "runner_up": "",
     "china_status": "qualified",
-    "china_summary": "截至 2026-05-23，中国 U17 已通过 2026 U17 亚洲杯晋级 2026 世少赛。",
+    "china_summary": "中国 U17 已通过 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，抽入 H 组对阵西班牙、斐济和摩洛哥。中国足协 2026-09-11 公布第六期 26 人集训名单备战正赛；该集训名单不是 FIFA 终报名 23 人。CAF 1 / CAF 2 席位随后由莫桑比克和乌干达填补，但 FIFA 尚未用国名重发分组，因此这两组仍保留抽签占位符。",
     "qualification_path": {
       "route": "AFC U17 Asian Cup Saudi Arabia 2026",
       "summary": "中国 U17 通过 2026 U17 亚洲杯取得 2026 FIFA U17 世界杯资格，并在亚洲杯正赛中获得亚军。",
       "final_stage": "AFC U17 Asian Cup runners-up"
     },
-    "china_detail_scope": "none",
+    "china_detail_scope": "group-draw",
     "competition_lineage": [
       {
         "years": "1985-1991",
@@ -13832,17 +13900,20 @@
             "china_pr": {
               "stage": "Qualified, not yet played",
               "qualified": true,
-              "played": false
+              "played": false,
+              "group": "Group H"
             },
             "japan": {
               "stage": "Qualified, not yet played",
               "qualified": true,
-              "played": false
+              "played": false,
+              "group": "Group L"
             },
             "korea_republic": {
               "stage": "Qualified, not yet played",
               "qualified": true,
-              "played": false
+              "played": false,
+              "group": "Group B"
             }
           }
         }
@@ -13850,12 +13921,20 @@
     },
     "source_links": [
       {
+        "label": "FIFA U-17 World Cup Qatar 2026 official draw",
+        "url": "https://inside.fifa.com/organisation/news/u17-world-cup-draw-womens-mens-gianni-infantino-football-week"
+      },
+      {
         "label": "FIFA U-17 World Cup Qatar 2026",
         "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026"
       },
       {
-        "label": "Draw procedures for the FIFA U-17 World Cup 2026",
-        "url": "https://inside.fifa.com/news/draw-procedures-fifa-u17-world-cup-men-women-2026"
+        "label": "CFA China U-17 sixth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260911/38141.html"
+      },
+      {
+        "label": "FIFA: Mozambique and Uganda qualify to complete line-up",
+        "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/mozambique-uganda-qualify"
       },
       {
         "label": "2025 FIFA U-17 World Cup",
@@ -13877,7 +13956,341 @@
         "label": "South Korea national under-17 football team",
         "url": "https://en.wikipedia.org/wiki/South_Korea_national_under-17_football_team"
       }
-    ]
+    ],
+    "source_checked_at": "2026-10-03",
+    "source_conflict_note": "FIFA's 2026-05-21 draw is primary for the 12 groups, including China PR in Group H. Mozambique and Uganda later completed the CAF field, but public restatements disagree on which placeholder each team occupies, so Group B and Group C keep CAF 1 / CAF 2 until FIFA republishes named groups.",
+    "source_version": [
+      {
+        "type": "fifa-report",
+        "label": "FIFA U-17 World Cup Qatar 2026 official draw",
+        "url": "https://inside.fifa.com/organisation/news/u17-world-cup-draw-womens-mens-gianni-infantino-football-week",
+        "fields": [
+          "final_draw",
+          "host",
+          "date_range"
+        ]
+      },
+      {
+        "type": "news-secondary",
+        "label": "CFA China U-17 sixth camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260911/38141.html",
+        "fields": [
+          "china_summary"
+        ]
+      }
+    ],
+    "final_draw": {
+      "status": "complete",
+      "groups": [
+        {
+          "name": "Group A",
+          "teams": [
+            "Qatar",
+            "Panama",
+            "Egypt",
+            "Greece"
+          ]
+        },
+        {
+          "name": "Group B",
+          "teams": [
+            "Korea Republic",
+            "CAF 1",
+            "New Caledonia",
+            "Ecuador"
+          ]
+        },
+        {
+          "name": "Group C",
+          "teams": [
+            "Argentina",
+            "Australia",
+            "CAF 2",
+            "Denmark"
+          ]
+        },
+        {
+          "name": "Group D",
+          "teams": [
+            "France",
+            "Haiti",
+            "Saudi Arabia",
+            "Uruguay"
+          ]
+        },
+        {
+          "name": "Group E",
+          "teams": [
+            "Italy",
+            "Jamaica",
+            "Côte d'Ivoire",
+            "Uzbekistan"
+          ]
+        },
+        {
+          "name": "Group F",
+          "teams": [
+            "Senegal",
+            "Croatia",
+            "Cuba",
+            "Tajikistan"
+          ]
+        },
+        {
+          "name": "Group G",
+          "teams": [
+            "Mali",
+            "New Zealand",
+            "Belgium",
+            "Vietnam"
+          ]
+        },
+        {
+          "name": "Group H",
+          "teams": [
+            "Spain",
+            "China PR",
+            "Fiji",
+            "Morocco"
+          ]
+        },
+        {
+          "name": "Group I",
+          "teams": [
+            "Brazil",
+            "Republic of Ireland",
+            "Tanzania",
+            "Costa Rica"
+          ]
+        },
+        {
+          "name": "Group J",
+          "teams": [
+            "USA",
+            "Montenegro",
+            "Chile",
+            "Algeria"
+          ]
+        },
+        {
+          "name": "Group K",
+          "teams": [
+            "Mexico",
+            "Romania",
+            "Cameroon",
+            "Venezuela"
+          ]
+        },
+        {
+          "name": "Group L",
+          "teams": [
+            "Japan",
+            "Colombia",
+            "Serbia",
+            "Honduras"
+          ]
+        }
+      ]
+    },
+    "china_group_stage": {
+      "group": "Group H",
+      "teams": [
+        "Spain",
+        "China PR",
+        "Fiji",
+        "Morocco"
+      ]
+    },
+    "participants": {
+      "status": "partial",
+      "expected_count": 48,
+      "teams": [
+        {
+          "team": "Qatar",
+          "entry_status": "host"
+        },
+        {
+          "team": "Panama",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Egypt",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Greece",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Korea Republic",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "New Caledonia",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Ecuador",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Argentina",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Australia",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Denmark",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "France",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Haiti",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Saudi Arabia",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Uruguay",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Italy",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Jamaica",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Côte d'Ivoire",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Uzbekistan",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Senegal",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Croatia",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Cuba",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Tajikistan",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Mali",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "New Zealand",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Belgium",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Vietnam",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Spain",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "China PR",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Fiji",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Morocco",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Brazil",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Republic of Ireland",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Tanzania",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Costa Rica",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "USA",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Montenegro",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Chile",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Algeria",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Mexico",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Romania",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Cameroon",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Venezuela",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Japan",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Colombia",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Serbia",
+          "entry_status": "qualified"
+        },
+        {
+          "team": "Honduras",
+          "entry_status": "qualified"
+        }
+      ]
+    }
   },
   {
     "id": "afc-u20-1985",

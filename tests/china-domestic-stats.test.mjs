@@ -60,3 +60,14 @@ test("does not count lower-level or overseas samples as CSL first-team entries",
   assert.ok(!liYuxuan.tournament_participation.some((entry) => entry.competition_id === "csl-2026"));
   assert.ok(!weiXiangxin.tournament_participation.some((entry) => entry.competition_id === "csl-2026"));
 });
+
+test("updates Liu Chengyu CSL 2026 minutes through the September restart", async () => {
+  const players = await readJson("data/raw/players/china-csl-2026-youth.json");
+  const liu = players.find((player) => player.id === "cn-liu-chengyu-2006");
+  const entry = liu.tournament_participation.find((item) => item.competition_id === "csl-2026");
+  assert.equal(entry.appearances, 12);
+  assert.equal(entry.minutes, 414);
+  assert.equal(entry.goals, 0);
+  assert.equal(entry.stats_as_of, "2026-09-06");
+  assert.equal(entry.source_checked_at, "2026-10-03");
+});

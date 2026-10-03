@@ -13,7 +13,7 @@ const players = [
   { id: "cn-lyu-mengyang", name: "吕孟洋", en: "Lyu Mengyang", country: "China PR", position: "MID", role: "中场", club: "CE Europa U19", era: "current" },
   { id: "cn-zhang-lindong", name: "张林峒", en: "Zhang Lindong", country: "China PR", position: "MID", role: "中场", club: "DAMM CF", era: "current" },
   { id: "cn-zhang-jiaming", name: "张家鸣", en: "Zhang Jiaming", country: "China PR", position: "FWD", role: "中锋", club: "Burnley FC U21", era: "current" },
-  { id: "cn-lin-zihao", name: "林子皓", en: "Lin Zihao", country: "China PR", position: "FWD", role: "边锋", club: "FK Vozdovac U19", era: "current" },
+  { id: "cn-lin-zihao", name: "林子皓", en: "Lin Zihao", country: "China PR", position: "FWD", role: "边锋", club: "FK Vozdovac", era: "current" },
   { id: "cn-liu-kaiyuan", name: "刘凯源", en: "Liu Kaiyuan", country: "China PR", position: "FWD", role: "前锋", club: "Villarreal Youth", era: "current" },
   { id: "cn-he-xiaoke", name: "何小珂", en: "He Xiaoke", country: "China PR", position: "FWD", role: "前锋", club: "FC Andorra", era: "current" },
   { id: "cn-du-yuezheng", name: "杜月徵", en: "Du Yuezheng", country: "China PR", position: "FWD", role: "中锋", club: "重庆铜梁龙（马贝拉外租）", era: "returned" },

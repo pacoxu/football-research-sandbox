@@ -724,11 +724,11 @@
         "minutes": null,
         "stats_as_of": "2026-05-22",
         "statistics_status": "partial",
-        "source_checked_at": "2026-07-19",
+        "source_checked_at": "2026-10-03",
         "statistics_sources": [
           "https://tv.cctv.com/2026/03/08/VIDEvt8smoWV8ONiwgTZFC9O260308.shtml"
         ],
-        "note": "2026-03-08 中超首轮对云南玉昆已完成一线队登场；截至 2026-05-22，当前更稳妥的公开口径是已进入海牛一线队报名体系并获得成年职业联赛出场。"
+        "note": "2026-03-08 中超首轮对云南玉昆已完成一线队登场；截至 2026-05-22，当前更稳妥的公开口径是已进入海牛一线队报名体系并获得成年职业联赛出场。 2026-10-03 月度复核：中超 9 月 6 日后因亚运会休赛。公开聚合库出场口径冲突，因此 appearances/minutes/goals 继续为 null。"
       },
       {
         "label": "2026 中国 U17 第六期集训",
