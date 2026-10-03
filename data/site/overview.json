@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26",
+  "generated_at": "2026-10-03",
   "stats": {
     "player_count": 573,
     "country_count": 9,
@@ -18,8 +18,8 @@
       "name": "20th Asian Games Aichi-Nagoya 2026 - Men's Football",
       "short_name": "Asian Games Men 2026",
       "focus_level": "primary",
-      "status": "upcoming",
-      "last_checked": "2026-09-02",
+      "status": "completed",
+      "last_checked": "2026-10-03",
       "date_range": {
         "start": "2026-09-15",
         "end": "2026-10-03"
@@ -33,7 +33,7 @@
         "United Arab Emirates",
         "DPR Korea"
       ],
-      "headline": "中国男足进入爱知-名古屋亚运会23人正式参赛名单，吴曦、张玉宁、朱辰杰为3名超龄球员；中国足协同期24人集训通知另补入史松宸，两份名单按不同边界保存。",
+      "headline": "中国男足亚运队获铜牌：半决赛1比2负韩国，三四名决赛2比2后点球击败乌兹别克斯坦。",
       "eligibility": {
         "format": "u23-plus-three-overage",
         "note": "男子足球为U23赛事，每队最多可使用3名超龄球员。"
@@ -50,17 +50,26 @@
           {
             "date": "2026-09-16",
             "opponent": "DPR Korea",
-            "status": "scheduled"
+            "status": "played",
+            "score_for": 2,
+            "score_against": 1,
+            "result": "W"
           },
           {
             "date": "2026-09-20",
             "opponent": "IR Iran",
-            "status": "scheduled"
+            "status": "played",
+            "score_for": 0,
+            "score_against": 0,
+            "result": "D"
           },
           {
             "date": "2026-09-23",
             "opponent": "United Arab Emirates",
-            "status": "scheduled"
+            "status": "played",
+            "score_for": 0,
+            "score_against": 0,
+            "result": "D"
           }
         ]
       },
@@ -79,12 +88,14 @@
         ],
         "note": "亚运会官方23人参赛名单不含史松宸；中国足协稍后发布的集训并参赛通知列24人，增加史松宸。当前不把该补招自动视为正式报名变更。"
       },
-      "update_cadence": "赛前复核最终报名变更；小组赛每场赛后补充阵容、事件与结果。",
+      "update_cadence": "完赛后仅在官方战报或名单变更出现时复核。",
       "notes": [
         "男足比赛窗口为2026-09-15至2026-10-03；综合性亚运会会期为2026-09-19至2026-10-04。",
         "中国队位于B组，对手为阿联酋、伊朗和朝鲜；小组赛日期依次为9月16日、9月20日和9月23日。",
         "正式23人位置分组采用新华社对亚运会官方名单的转录；足协24人通知按俱乐部列人，不提供正式报名变更结论。",
-        "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。"
+        "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。",
+        "小组赛1胜2平积5分头名出线，四分之一决赛3比0泰国，半决赛1比2韩国，铜牌赛2比2后点球4比3胜乌兹别克斯坦。",
+        "金牌赛韩国对日本的官方结果尚未写入；冠亚军保持空值。"
       ],
       "sources": [
         {
@@ -111,6 +122,21 @@
           "label": "JFA competition window for Aichi-Nagoya 2026 men's football",
           "publisher": "Japan Football Association",
           "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+        },
+        {
+          "label": "CFA semi-final report: China 1-2 Korea Republic",
+          "publisher": "Chinese Football Association",
+          "url": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html"
+        },
+        {
+          "label": "Xinhua: China 2-1 DPR Korea",
+          "publisher": "Xinhua",
+          "url": "https://www.xinhuanet.com/20260916/c7decdae3c374215ace38f21b4b3f415/c.html"
+        },
+        {
+          "label": "Xinhua: China 3-0 Thailand",
+          "publisher": "Xinhua",
+          "url": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html"
         }
       ]
     },
@@ -23855,7 +23881,7 @@
         "end": "2026-10-03"
       },
       "date_precision": "exact",
-      "status": "upcoming",
+      "status": "completed",
       "champion": null,
       "runner_up": null,
       "participants": {
@@ -23963,11 +23989,183 @@
           }
         ]
       },
-      "china_status": "preparation",
-      "china_summary": "中国队位于B组，正式参赛名单23人；足协9月1日集训通知另补入史松宸，形成24人赛前集训池。吴曦、张玉宁、朱辰杰占用3个超龄名额。",
-      "china_detail_scope": "official-roster-and-schedule-snapshot",
-      "china_matches": [],
-      "china_key_players": [],
+      "china_status": "third-place",
+      "china_summary": "中国队小组赛头名出线后淘汰泰国进入四强，半决赛1比2负韩国，铜牌赛2比2后点球4比3击败乌兹别克斯坦，获得季军。",
+      "china_detail_scope": "match-results-and-official-roster",
+      "china_matches": [
+        {
+          "date": "2026-09-16",
+          "stage": "Group B",
+          "opponent": "DPR Korea",
+          "score_for": 2,
+          "score_against": 1,
+          "result": "W",
+          "source_tier": "official-result+wire",
+          "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+          "event_source": "https://www.xinhuanet.com/20260916/c7decdae3c374215ace38f21b4b3f415/c.html",
+          "china_contributions": [
+            {
+              "type": "goal",
+              "player_id": "cn-zhang-yuning-1997",
+              "player": "Zhang Yuning",
+              "minute": "44",
+              "role": "starter"
+            },
+            {
+              "type": "assist",
+              "player_id": "cn-wu-xi-1989",
+              "player": "Wu Xi",
+              "minute": "44",
+              "role": "starter"
+            },
+            {
+              "type": "goal",
+              "player_id": "cn-wu-xi-1989",
+              "player": "Wu Xi",
+              "minute": "68",
+              "role": "starter"
+            },
+            {
+              "type": "assist",
+              "player_id": "cn-zhang-yuning-1997",
+              "player": "Zhang Yuning",
+              "minute": "68",
+              "role": "starter"
+            }
+          ],
+          "note": "新华社确认张玉宁44分钟、吴曦68分钟破门；比分由足协半决赛综述交叉确认。"
+        },
+        {
+          "date": "2026-09-20",
+          "stage": "Group B",
+          "opponent": "IR Iran",
+          "score_for": 0,
+          "score_against": 0,
+          "result": "D",
+          "source_tier": "official-result",
+          "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+          "china_contributions": [],
+          "note": "足协半决赛综述确认0比0。"
+        },
+        {
+          "date": "2026-09-23",
+          "stage": "Group B",
+          "opponent": "United Arab Emirates",
+          "score_for": 0,
+          "score_against": 0,
+          "result": "D",
+          "source_tier": "official-result",
+          "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+          "china_contributions": [],
+          "note": "足协半决赛综述确认0比0，中国队1胜2平积5分获小组第一。"
+        },
+        {
+          "date": "2026-09-26",
+          "stage": "Quarter-final",
+          "opponent": "Thailand",
+          "score_for": 3,
+          "score_against": 0,
+          "result": "W",
+          "source_tier": "official-result+wire",
+          "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+          "event_source": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html",
+          "china_contributions": [
+            {
+              "type": "goal",
+              "player_id": "cn-hu-hetao-2003",
+              "player": "Hu Hetao",
+              "minute": "47",
+              "role": "starter"
+            },
+            {
+              "type": "goal",
+              "player_id": "cn-zhang-yuning-1997",
+              "player": "Zhang Yuning",
+              "minute": "63",
+              "role": "substitute"
+            }
+          ],
+          "note": "新华社确认首粒为彭啸制造的乌龙球，不记入中国球员进球；胡荷韬、张玉宁各入一球。"
+        },
+        {
+          "date": "2026-09-30",
+          "stage": "Semi-final",
+          "opponent": "Korea Republic",
+          "score_for": 1,
+          "score_against": 2,
+          "result": "L",
+          "source_tier": "official-result",
+          "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+          "china_contributions": [
+            {
+              "type": "goal",
+              "player_id": "cn-wang-yudong-2006",
+              "player": "Wang Yudong",
+              "minute": "22",
+              "role": "starter"
+            }
+          ],
+          "note": "足协战报确认王钰栋22分钟破门，中国队1比2被韩国逆转。"
+        },
+        {
+          "date": "2026-10-03",
+          "stage": "Bronze medal",
+          "opponent": "Uzbekistan",
+          "score_for": 2,
+          "score_against": 2,
+          "result": "W",
+          "penalty_score": "4-3",
+          "source_tier": "secondary-source-snapshot",
+          "event_source": "https://sports.ifeng.com/c/8wvQTf5YAz7",
+          "china_contributions": [
+            {
+              "type": "goal",
+              "player_id": "cn-hu-hetao-2003",
+              "player": "Hu Hetao",
+              "minute": null,
+              "role": "starter"
+            },
+            {
+              "type": "goal",
+              "player_id": "cn-wang-yudong-2006",
+              "player": "Wang Yudong",
+              "minute": "54",
+              "role": "starter"
+            }
+          ],
+          "note": "90分钟2比2，点球大战4比3取胜。公开媒体快照；待足协官方战报升级来源层级。金牌赛结果未写入。"
+        }
+      ],
+      "china_key_players": [
+        {
+          "player_id": "cn-zhang-yuning-1997",
+          "player": "Zhang Yuning",
+          "goals": 2,
+          "assists": 1,
+          "role_note": "超龄前锋。对朝鲜、泰国各入一球，并对朝鲜一球有助攻。"
+        },
+        {
+          "player_id": "cn-wu-xi-1989",
+          "player": "Wu Xi",
+          "goals": 1,
+          "assists": 1,
+          "role_note": "超龄中场。对朝鲜破门并助攻张玉宁。"
+        },
+        {
+          "player_id": "cn-wang-yudong-2006",
+          "player": "Wang Yudong",
+          "goals": 2,
+          "assists": 0,
+          "role_note": "半决赛对韩国破门由足协战报确认；铜牌赛进球来自公开媒体快照。"
+        },
+        {
+          "player_id": "cn-hu-hetao-2003",
+          "player": "Hu Hetao",
+          "goals": 2,
+          "assists": 0,
+          "role_note": "四分之一决赛进球来自新华社；铜牌赛进球来自公开媒体快照。"
+        }
+      ],
       "china_squad": [
         {
           "player_id": "cn-li-hao-2004",
@@ -24280,8 +24478,8 @@
           }
         ]
       },
-      "source_checked_at": "2026-09-02",
-      "source_conflict_note": "The Aichi-Nagoya official roster reported by Xinhua contains 23 players. The CFA camp notice published later on 2026-09-01 contains 24 and adds Shi Songchen. The archive preserves both versions and does not infer a formal registration replacement.",
+      "source_checked_at": "2026-10-03",
+      "source_conflict_note": "The Aichi-Nagoya official roster reported by Xinhua contains 23 players. The CFA camp notice published later on 2026-09-01 contains 24 and adds Shi Songchen. The archive preserves both versions and does not infer a formal registration replacement. Group and knockout scores through the semi-final are confirmed by CFA and/or Xinhua. The bronze-medal match (2-2, 4-3 on penalties) is a public-media snapshot pending an official CFA match report. The Korea Republic–Japan gold-medal result is not stored yet.",
       "source_links": [
         {
           "label": "Aichi-Nagoya 2026 official team draw results",
@@ -24302,6 +24500,18 @@
         {
           "label": "JFA men's football competition dates",
           "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+        },
+        {
+          "label": "CFA semi-final report: China 1-2 Korea Republic",
+          "url": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html"
+        },
+        {
+          "label": "Xinhua: China 2-1 DPR Korea",
+          "url": "https://www.xinhuanet.com/20260916/c7decdae3c374215ace38f21b4b3f415/c.html"
+        },
+        {
+          "label": "Xinhua: China 3-0 Thailand",
+          "url": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html"
         }
       ]
     },

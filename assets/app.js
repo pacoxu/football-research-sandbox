@@ -2376,6 +2376,7 @@ const CHINA_STATUS_LABELS = {
   "semi-final": { zh: "四强", en: "Semi-final" },
   champion: { zh: "冠军", en: "Champions" },
   "runner-up": { zh: "亚军", en: "Runners-up" },
+  "third-place": { zh: "季军", en: "Third place" },
   "finalist-ongoing": { zh: "决赛进行中", en: "Final in progress" },
   qualified: { zh: "已晋级", en: "Qualified" },
   host: { zh: "主办国", en: "Host" },

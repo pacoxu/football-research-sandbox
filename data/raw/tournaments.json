@@ -4,8 +4,8 @@
     "name": "20th Asian Games Aichi-Nagoya 2026 - Men's Football",
     "short_name": "Asian Games Men 2026",
     "focus_level": "primary",
-    "status": "upcoming",
-    "last_checked": "2026-09-02",
+    "status": "completed",
+    "last_checked": "2026-10-03",
     "date_range": {
       "start": "2026-09-15",
       "end": "2026-10-03"
@@ -19,7 +19,7 @@
       "United Arab Emirates",
       "DPR Korea"
     ],
-    "headline": "中国男足进入爱知-名古屋亚运会23人正式参赛名单，吴曦、张玉宁、朱辰杰为3名超龄球员；中国足协同期24人集训通知另补入史松宸，两份名单按不同边界保存。",
+    "headline": "中国男足亚运队获铜牌：半决赛1比2负韩国，三四名决赛2比2后点球击败乌兹别克斯坦。",
     "eligibility": {
       "format": "u23-plus-three-overage",
       "note": "男子足球为U23赛事，每队最多可使用3名超龄球员。"
@@ -36,17 +36,26 @@
         {
           "date": "2026-09-16",
           "opponent": "DPR Korea",
-          "status": "scheduled"
+          "status": "played",
+          "score_for": 2,
+          "score_against": 1,
+          "result": "W"
         },
         {
           "date": "2026-09-20",
           "opponent": "IR Iran",
-          "status": "scheduled"
+          "status": "played",
+          "score_for": 0,
+          "score_against": 0,
+          "result": "D"
         },
         {
           "date": "2026-09-23",
           "opponent": "United Arab Emirates",
-          "status": "scheduled"
+          "status": "played",
+          "score_for": 0,
+          "score_against": 0,
+          "result": "D"
         }
       ]
     },
@@ -65,12 +74,14 @@
       ],
       "note": "亚运会官方23人参赛名单不含史松宸；中国足协稍后发布的集训并参赛通知列24人，增加史松宸。当前不把该补招自动视为正式报名变更。"
     },
-    "update_cadence": "赛前复核最终报名变更；小组赛每场赛后补充阵容、事件与结果。",
+    "update_cadence": "完赛后仅在官方战报或名单变更出现时复核。",
     "notes": [
       "男足比赛窗口为2026-09-15至2026-10-03；综合性亚运会会期为2026-09-19至2026-10-04。",
       "中国队位于B组，对手为阿联酋、伊朗和朝鲜；小组赛日期依次为9月16日、9月20日和9月23日。",
       "正式23人位置分组采用新华社对亚运会官方名单的转录；足协24人通知按俱乐部列人，不提供正式报名变更结论。",
-      "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。"
+      "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。",
+      "小组赛1胜2平积5分头名出线，四分之一决赛3比0泰国，半决赛1比2韩国，铜牌赛2比2后点球4比3胜乌兹别克斯坦。",
+      "金牌赛韩国对日本的官方结果尚未写入；冠亚军保持空值。"
     ],
     "sources": [
       {
@@ -97,6 +108,21 @@
         "label": "JFA competition window for Aichi-Nagoya 2026 men's football",
         "publisher": "Japan Football Association",
         "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+      },
+      {
+        "label": "CFA semi-final report: China 1-2 Korea Republic",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html"
+      },
+      {
+        "label": "Xinhua: China 2-1 DPR Korea",
+        "publisher": "Xinhua",
+        "url": "https://www.xinhuanet.com/20260916/c7decdae3c374215ace38f21b4b3f415/c.html"
+      },
+      {
+        "label": "Xinhua: China 3-0 Thailand",
+        "publisher": "Xinhua",
+        "url": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html"
       }
     ]
   },
