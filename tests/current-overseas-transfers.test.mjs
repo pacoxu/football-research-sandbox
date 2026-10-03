@@ -71,5 +71,5 @@ test("keeps current overseas records, references and lineup clubs consistent", a
   const liu = structuredPlayers.find((player) => player.id === "cn-liu-shaoziyang-2003");
   assert.equal(liu.overseas_status, "returned");
   assert.equal(liu.registration_club.name, "Beijing Guoan");
-  assert.equal(liu.verification.last_checked, "2026-07-25");
+  assert.equal(liu.verification.last_checked, "2026-10-03");
 });
