@@ -284,6 +284,17 @@ export async function loadDataset() {
     path.join(paths.raw, "football-stories.json"),
     { schema_version: 1, last_checked: null, editorial_policy: {}, stories: [] }
   );
+  const youthTrainingDisputes = await readOptionalJson(
+    path.join(paths.raw, "youth-training-disputes.json"),
+    {
+      schema_version: 1,
+      last_checked: null,
+      editorial_policy: {},
+      scope_note: {},
+      cfa_rules: [],
+      cases: []
+    }
+  );
   const china2026Milestones = await readOptionalJson(
     path.join(paths.raw, "china-2026-milestones.json"),
     null
@@ -321,6 +332,7 @@ export async function loadDataset() {
     chinaMenYouthCoaches,
     chinaYouthDevelopmentCoaches,
     footballStories,
+    youthTrainingDisputes,
     china2026Milestones,
     bigFiveAsianCoaches,
     asianCoaches,

@@ -2466,6 +2466,57 @@ function validateFootballStories(archive, dataset) {
   assert(sun.key_facts.some((fact) => fact.value?.zh === "大连实验小学"), "Sun Jihai school correction is missing");
 }
 
+function validateYouthTrainingDisputes(archive) {
+  assert(archive?.schema_version === 1, "Invalid youth_training_disputes schema_version");
+  assert(isIsoDate(archive?.last_checked), "Invalid youth_training_disputes last_checked");
+  assert(archive.editorial_policy?.zh && archive.editorial_policy?.en, "Missing youth training disputes editorial policy");
+  assert(archive.scope_note?.zh && archive.scope_note?.en, "Missing youth training disputes scope note");
+  assert(Array.isArray(archive.cfa_rules) && archive.cfa_rules.length >= 2, "Invalid youth training disputes rule list");
+  assert(Array.isArray(archive.cases) && archive.cases.length >= 5, "Invalid youth training disputes case list");
+
+  const allowedStatus = new Set(["pending", "settled", "withdrawn", "judged", "contrast", "blocked", "unresolved"]);
+  const allowedConfidence = new Set(["high", "medium", "low"]);
+  const ruleIds = new Set();
+  const caseIds = new Set();
+
+  const validateSourceList = (sources, label) => {
+    assert(Array.isArray(sources) && sources.length > 0, `Missing sources: ${label}`);
+    const urls = new Set();
+    for (const source of sources) {
+      assert(source.label && source.type, `Incomplete source: ${label}`);
+      assert(/^https?:\/\//.test(source.url), `Invalid source URL: ${label}`);
+      assert(isIsoDate(source.checked_at), `Invalid source date: ${label}`);
+      assert(!urls.has(source.url), `Duplicate source URL: ${label}`);
+      urls.add(source.url);
+    }
+  };
+
+  for (const rule of archive.cfa_rules) {
+    assert(rule.id && !ruleIds.has(rule.id), `Duplicate youth training rule id: ${rule.id}`);
+    ruleIds.add(rule.id);
+    assert(rule.year && rule.title?.zh && rule.title?.en, `Missing youth training rule title: ${rule.id}`);
+    assert(rule.summary?.zh && rule.summary?.en, `Missing youth training rule summary: ${rule.id}`);
+    validateSourceList(rule.source_links, `rule:${rule.id}`);
+  }
+
+  for (const item of archive.cases) {
+    assert(item.id && !caseIds.has(item.id), `Duplicate youth training case id: ${item.id}`);
+    caseIds.add(item.id);
+    assert(item.year_range, `Missing year_range: ${item.id}`);
+    assert(allowedStatus.has(item.status), `Invalid status: ${item.id}`);
+    assert(allowedConfidence.has(item.confidence), `Invalid confidence: ${item.id}`);
+    for (const field of ["title", "player_age", "claimed_amount", "cfa_position", "outcome", "summary"]) {
+      assert(item[field]?.zh && item[field]?.en, `Missing ${field}: ${item.id}`);
+    }
+    validateSourceList(item.source_links, `case:${item.id}`);
+  }
+
+  assert(ruleIds.has("cfa-2018-61"), "Missing 2018 CFA first-contract rule record");
+  assert(ruleIds.has("cfa-2026-rstp"), "Missing 2026 CFA RSTP rule record");
+  assert(caseIds.has("zhang-zhuoyi-haiqiu-2025"), "Missing Zhang Zhuoyi case");
+  assert(caseIds.has("yang-qiandong-evergrande-2026"), "Missing Yang Qiandong case");
+}
+
 function validateBigFiveAsianCoaches(archive) {
   assert(typeof archive.id === "string" && archive.id.length > 0, "Missing big_five_asian_coaches id");
   assert(isIsoDate(archive.last_checked), "Invalid big_five_asian_coaches last_checked");
@@ -3958,6 +4009,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   }
 
   validateFootballStories(dataset.footballStories, dataset);
+  validateYouthTrainingDisputes(dataset.youthTrainingDisputes);
 
   if (dataset.china2026Milestones !== null) {
     validateChina2026Milestones(dataset.china2026Milestones, dataset);

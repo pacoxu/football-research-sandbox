@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>足球故事 | 青训球员追踪站</title>
-    <meta name="description" content="查看职业球员、青训教练、校园足球机构与结构性议题的可追溯专题。" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260802-transition-story" />
+    <title>青训纠纷案件汇总 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="汇总国内青少年球员培训协议、自由身、违约金与培训补偿公开案例，对照年龄、金额、足协态度和最终结果。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css?v=20261004-youth-disputes" />
   </head>
-  <body data-page="stories">
+  <body data-page="youth-disputes">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -39,25 +42,68 @@
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="stories.hero.eyebrow">Football Stories</p>
-            <h1 data-i18n="stories.hero.title">足球故事</h1>
-            <p class="hero-text" data-i18n="stories.hero.text">把球员生涯、教练实践、校园传统、结构议题和公开争议放回时间线，并保留事实边界与原始来源。</p>
+            <p class="eyebrow" data-i18n="disputes.hero.eyebrow">Youth Training Disputes</p>
+            <h1 data-i18n="disputes.hero.title">青训纠纷案件汇总</h1>
+            <p class="hero-text" data-i18n="disputes.hero.text">对照国内青少年培训协议与合同纠纷的年龄、主张金额、足协态度和最终结果。违约金由球员或家长承担，培训补偿由新俱乐部支付，两笔钱不混算。</p>
           </div>
           <aside class="hero-spotlight">
-            <p class="eyebrow" data-i18n="stories.coverage.eyebrow">Coverage</p>
-            <h2 id="storiesCoverage" data-i18n="common.loading">载入中</h2>
-            <p id="storiesCheckedAt" class="hero-side-note"></p>
+            <p class="eyebrow" data-i18n="disputes.coverage.eyebrow">Coverage</p>
+            <h2 id="disputesCoverage" data-i18n="common.loading">载入中</h2>
+            <p id="disputesCheckedAt" class="hero-side-note"></p>
           </aside>
+        </section>
+        <section class="content-panel">
+          <p id="disputesEditorialPolicy" class="section-note"></p>
+          <p id="disputesScopeNote" class="section-note"></p>
         </section>
         <section class="content-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="stories.list.eyebrow">Profiles, Institutions & Issues</p>
-              <h2 data-i18n="stories.list.title">人物、机构与议题专题</h2>
+              <p class="eyebrow" data-i18n="disputes.rules.eyebrow">CFA Rules</p>
+              <h2 data-i18n="disputes.rules.title">足协规则怎么变</h2>
             </div>
           </div>
-          <p id="storiesEditorialPolicy" class="section-note"></p>
-          <div id="storiesGrid" class="story-grid"></div>
+          <div id="disputesRules" class="story-grid"></div>
+        </section>
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="disputes.cases.eyebrow">Case File</p>
+              <h2 data-i18n="disputes.cases.title">公开可核案例</h2>
+            </div>
+          </div>
+          <div class="table-shell">
+            <table class="data-table" id="disputesTable">
+              <thead>
+                <tr>
+                  <th data-i18n="disputes.table.case">案例</th>
+                  <th data-i18n="disputes.table.age">年龄</th>
+                  <th data-i18n="disputes.table.amount">主张金额</th>
+                  <th data-i18n="disputes.table.cfa">足协态度</th>
+                  <th data-i18n="disputes.table.outcome">最终结果</th>
+                </tr>
+              </thead>
+              <tbody id="disputesTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="disputes.detail.eyebrow">Case Notes</p>
+              <h2 data-i18n="disputes.detail.title">案件说明与来源</h2>
+            </div>
+          </div>
+          <div id="disputesCaseGrid" class="story-grid"></div>
+        </section>
+        <section class="content-panel" id="disputesExcludedSection" hidden>
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="disputes.excluded.eyebrow">Excluded</p>
+              <h2 data-i18n="disputes.excluded.title">明确不入库</h2>
+            </div>
+          </div>
+          <div id="disputesExcluded" class="stack-list compact-grid"></div>
         </section>
       </main>
       <footer class="site-footer">

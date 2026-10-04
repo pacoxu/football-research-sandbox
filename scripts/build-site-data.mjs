@@ -24,7 +24,7 @@ function comparePlayers(left, right) {
 
 export async function buildSiteData({ outputDirectory = paths.site } = {}) {
   const dataset = await loadDataset();
-  const generatedAt = "2026-10-03";
+  const generatedAt = "2026-10-04";
   const sourcePlayers = [...dataset.players].sort(comparePlayers);
   const players = sourcePlayers.map(toPublicPlayer);
   const bigFiveDebutForecast = buildBigFiveDebutForecast(
@@ -51,6 +51,7 @@ export async function buildSiteData({ outputDirectory = paths.site } = {}) {
     china_men_youth_coaches: dataset.chinaMenYouthCoaches,
     china_youth_development_coaches: dataset.chinaYouthDevelopmentCoaches,
     football_stories: dataset.footballStories,
+    youth_training_disputes: dataset.youthTrainingDisputes,
     china_2026_milestones: dataset.china2026Milestones,
     big_five_asian_coaches: dataset.bigFiveAsianCoaches,
     asian_coaches: dataset.asianCoaches,

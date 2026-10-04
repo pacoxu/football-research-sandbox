@@ -8,8 +8,19 @@ This project tracks research data, so changelog entries should separate code cha
 
 ### Added
 
+- Added a standalone youth-training dispute page in the main navigation, covering seven publicly checkable cases plus the 2018 first-contract and 2026 RSTP rule notes.
+- Added CFA-verified Chinese names for China U23 / Asian Games players so they can be searched on the site, including Zhao Songyuan's 2026 senior-camp tag.
 - Added a public 2026 China men's milestones page covering the U23 Asian Cup runners-up, U17 World Cup qualification and Asian Games bronze, with sourced historical intervals and a share graphic.
 - Added a dedicated Spain league-system page that splits the senior pyramid, U19/U16 youth pyramid, professional vs youth contracts, and documented Chinese player placements.
+
+### Updated
+
+- Recorded China's 2026 Asian Games men's football bronze-medal result and published the travelling coaching staff on the tournament page. Gold-medal result and missing minutes remain unfilled.
+
+### Data Scope Notes
+
+- Youth-training dispute cases keep liquidated damages and training compensation separate; pending lawsuits are not given legal conclusions.
+- Native names stay unresolved unless a CFA, league, club, school, or government source is attached.
 
 ### Corrected
 

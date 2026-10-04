@@ -79,6 +79,7 @@ flowchart LR
 - `china-youth-development-coaches` 校验组织类型、年龄段、任期快照、逐条来源声明和核验状态。
 - `spain-football-system` 校验三条金字塔、12 个层级 ID、三类合同、落点必须指向已建档球员或 featured record；杨希保持荣誉联赛样本，吕孟洋保持全国青年联赛样本且不得写入西甲。
 - `football-stories` 校验故事 ID、关联实体、时间线、来源和争议归因；争议必须同时记录主张状态、回应状态和编辑边界，并固定孙继海属于实验小学、不得列为东北路校友以及两位王晓龙/王啸龙的身份边界。
+- `youth-training-disputes` 校验案件 ID、年龄、主张金额、足协态度、最终结果、来源链接，以及 2018 首签权与 2026 转会规定两条规则记录。
 - `big-five-asian-coaches` 校验来源链接、scope count、教练战绩和 club records 加总。
 - `asian-coaches` 校验教练 ID、统计口径、任期范围、`role_scope`、`competition_scope`、官方来源类型，以及每段 `record_audit` 的赛事、覆盖期、逐场来源、战绩等式和开放任期90天复核日；`pending` 任期必须保持 `record: null`。
 

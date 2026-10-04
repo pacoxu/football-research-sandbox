@@ -120,8 +120,8 @@
       ]
     },
     "china_status": "third-place",
-    "china_summary": "中国队小组赛头名出线后淘汰泰国进入四强，半决赛1比2负韩国，铜牌赛2比2后点球4比3击败乌兹别克斯坦，获得季军。这是1998年曼谷铜牌后时隔28年再获亚运奖牌，也是2002年改为U23赛制后的最佳成绩；队史最高名次仍是1994年广岛银牌。",
-    "china_detail_scope": "match-results-and-official-roster",
+    "china_summary": "中国队以 U23 班底加三名超龄球员出征，小组赛头名出线后 3-0 淘汰泰国，半决赛 1-2 负韩国，铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦，时隔 28 年再获亚运男足奖牌。金牌赛韩国对日本尚未写入冠军。",
+    "china_detail_scope": "squad-and-match-results",
     "china_matches": [
       {
         "date": "2026-09-16",
@@ -163,7 +163,7 @@
             "role": "starter"
           }
         ],
-        "note": "新华社确认张玉宁44分钟、吴曦68分钟破门；比分由足协半决赛综述交叉确认。"
+        "note": "新华社确认张玉宁 44 分钟头球扳平、吴曦 68 分钟吊射绝杀；比分与出线路径由足协半决赛综述交叉确认。"
       },
       {
         "date": "2026-09-20",
@@ -175,7 +175,7 @@
         "source_tier": "official-result",
         "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
         "china_contributions": [],
-        "note": "足协半决赛综述确认0比0。"
+        "note": "足协半决赛综述确认 0-0；进球与阵容事件未在该综述中逐人展开。"
       },
       {
         "date": "2026-09-23",
@@ -187,7 +187,7 @@
         "source_tier": "official-result",
         "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
         "china_contributions": [],
-        "note": "足协半决赛综述确认0比0，中国队1胜2平积5分获小组第一。"
+        "note": "足协半决赛综述确认 0-0，中国队 1 胜 2 平积 5 分获小组第一。"
       },
       {
         "date": "2026-09-26",
@@ -196,9 +196,9 @@
         "score_for": 3,
         "score_against": 0,
         "result": "W",
-        "source_tier": "official-result+wire",
-        "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+        "source_tier": "wire",
         "event_source": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html",
+        "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
         "china_contributions": [
           {
             "type": "goal",
@@ -215,7 +215,7 @@
             "role": "substitute"
           }
         ],
-        "note": "新华社确认首粒为彭啸制造的乌龙球，不记入中国球员进球；胡荷韬、张玉宁各入一球。"
+        "note": "新华社确认首粒进球为彭啸射门被扑后砸到泰国后卫形成乌龙，因此不记入中国球员进球；胡荷韬开场后不久破门，张玉宁 58 分钟上场后由朱辰杰摆渡打进第三球。开场乌龙球分钟记为上半场补时，未写入贡献表。"
       },
       {
         "date": "2026-09-30",
@@ -224,8 +224,9 @@
         "score_for": 1,
         "score_against": 2,
         "result": "L",
-        "source_tier": "official-result",
+        "source_tier": "official-result+wire",
         "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+        "event_source": "https://english.news.cn/20260930/2c62557c16904ef2ac421412d193810d/c.html",
         "china_contributions": [
           {
             "type": "goal",
@@ -235,7 +236,7 @@
             "role": "starter"
           }
         ],
-        "note": "足协战报确认王钰栋22分钟破门，中国队1比2被韩国逆转。"
+        "note": "足协战报确认王钰栋 22 分钟破门，韩国李英俊 33 分钟、裴峻浩 82 分钟逆转。毛伟杰左踝韧带损伤，预计缺席铜牌赛。"
       },
       {
         "date": "2026-10-03",
@@ -244,7 +245,6 @@
         "score_for": 2,
         "score_against": 2,
         "result": "W",
-        "penalty_score": "4-3",
         "source_tier": "secondary-source-snapshot",
         "event_source": "https://sports.ifeng.com/c/8wvQTf5YAz7",
         "china_contributions": [
@@ -263,7 +263,8 @@
             "role": "starter"
           }
         ],
-        "note": "90分钟2比2，点球大战4比3取胜。公开媒体快照；待足协官方战报升级来源层级。金牌赛结果未写入。"
+        "note": "公开媒体快照确认 90 分钟 2-2、点球 4-3 取胜，李昊扑出两粒点球。部分报道写胡荷韬先破门、王钰栋 54 分钟世界波，乌兹别克斯坦 90 分钟由绍迪博耶夫扳平。加时是否进行存在报道冲突，不写入。待足协官方战报升级来源层级。",
+        "penalty_score": "4-3"
       }
     ],
     "china_key_players": [
@@ -272,21 +273,21 @@
         "player": "Zhang Yuning",
         "goals": 2,
         "assists": 1,
-        "role_note": "超龄前锋。对朝鲜、泰国各入一球，并对朝鲜一球有助攻。"
+        "role_note": "超龄前锋。已核小组赛对朝鲜和四分之一决赛对泰国各入一球，并对朝鲜一球有助攻。"
       },
       {
         "player_id": "cn-wu-xi-1989",
         "player": "Wu Xi",
         "goals": 1,
         "assists": 1,
-        "role_note": "超龄中场。对朝鲜破门并助攻张玉宁。"
+        "role_note": "超龄中场。已核小组赛对朝鲜破门并助攻张玉宁。"
       },
       {
         "player_id": "cn-wang-yudong-2006",
         "player": "Wang Yudong",
         "goals": 2,
         "assists": 0,
-        "role_note": "半决赛对韩国破门由足协战报确认；铜牌赛进球来自公开媒体快照。"
+        "role_note": "半决赛对韩国破门已由足协战报确认；铜牌赛进球来自公开媒体快照，待官方战报复核。"
       },
       {
         "player_id": "cn-hu-hetao-2003",
@@ -294,6 +295,13 @@
         "goals": 2,
         "assists": 0,
         "role_note": "四分之一决赛进球来自新华社；铜牌赛进球来自公开媒体快照。"
+      },
+      {
+        "player_id": "cn-li-hao-2004",
+        "player": "Li Hao",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "正赛门将。铜牌赛点球大战扑出两粒点球的说法来自公开媒体快照。"
       }
     ],
     "china_squad": [
@@ -426,7 +434,7 @@
         "en": "Positions follow Xinhua's transcription of the official 23-player Asian Games roster. Shi Songchen appears only in the CFA's same-day 24-player camp notice and is retained separately as a later camp call-up, not as a confirmed registration replacement."
       },
       "head_coach": {
-        "name": "Antonio Puche",
+        "name": "Antonio Puché",
         "local_name": "安东尼奥·普切"
       },
       "groups": [
@@ -606,10 +614,116 @@
             }
           ]
         }
+      ],
+      "staff": [
+        {
+          "role": {
+            "zh": "领队",
+            "en": "Team leader"
+          },
+          "members": [
+            "杜立达"
+          ]
+        },
+        {
+          "role": {
+            "zh": "管理",
+            "en": "Team manager"
+          },
+          "members": [
+            "李石"
+          ]
+        },
+        {
+          "role": {
+            "zh": "助理教练",
+            "en": "Assistant coaches"
+          },
+          "members": [
+            "何塞·德拉萨格拉",
+            "于大宝"
+          ]
+        },
+        {
+          "role": {
+            "zh": "体能教练",
+            "en": "Fitness coach"
+          },
+          "members": [
+            "伊格纳乔·洛佩兹"
+          ]
+        },
+        {
+          "role": {
+            "zh": "守门员教练",
+            "en": "Goalkeeper coach"
+          },
+          "members": [
+            "托莫·格鲁伊奇"
+          ]
+        },
+        {
+          "role": {
+            "zh": "技术分析师",
+            "en": "Analyst"
+          },
+          "members": [
+            "大卫·坎皮罗"
+          ]
+        },
+        {
+          "role": {
+            "zh": "机能监测师",
+            "en": "Performance monitor"
+          },
+          "members": [
+            "钱纪云"
+          ]
+        },
+        {
+          "role": {
+            "zh": "队医",
+            "en": "Team doctor"
+          },
+          "members": [
+            "王磊"
+          ]
+        },
+        {
+          "role": {
+            "zh": "运动防护师",
+            "en": "Physiotherapists"
+          },
+          "members": [
+            "姚康",
+            "赵浩然",
+            "苏星涛",
+            "陈恩远",
+            "王润哲"
+          ]
+        },
+        {
+          "role": {
+            "zh": "装备管理",
+            "en": "Kit manager"
+          },
+          "members": [
+            "张学刚"
+          ]
+        },
+        {
+          "role": {
+            "zh": "翻译",
+            "en": "Translator"
+          },
+          "members": [
+            "杨浩"
+          ]
+        }
       ]
     },
-    "source_checked_at": "2026-10-03",
-    "source_conflict_note": "The Aichi-Nagoya official roster reported by Xinhua contains 23 players. The CFA camp notice published later on 2026-09-01 contains 24 and adds Shi Songchen. The archive preserves both versions and does not infer a formal registration replacement. Group and knockout scores through the semi-final are confirmed by CFA and/or Xinhua. The bronze-medal match (2-2, 4-3 on penalties) is a public-media snapshot pending an official CFA match report. The Korea Republic–Japan gold-medal result is not stored yet.",
+    "source_checked_at": "2026-10-04",
+    "source_conflict_note": "The travelling 23 is taken from the CFA 2026-09-14 update rather than the 2026-09-01 24-man camp notice or the 2026-09-07 sports-delegation list, which still named Li Zhenquan. Group and knockout scores for China are confirmed by CFA and/or Xinhua except the bronze-medal match, which is a public-media snapshot pending an official CFA match report. Some bronze-medal reports mention extra time while others say the match went straight to penalties; extra time is not stored. The gold-medal match between Korea Republic and Japan on 2026-10-03 is not recorded until an official result is captured.",
     "source_links": [
       {
         "label": "Aichi-Nagoya 2026 official team draw results",
