@@ -365,6 +365,19 @@
       },
       "additionalProperties": true
     },
+    "spainFootballSystem": {
+      "type": "object",
+      "required": ["schema_version", "checked_at", "pyramids", "contract_types", "placements"],
+      "properties": {
+        "schema_version": { "type": "integer", "minimum": 1 },
+        "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "pyramids": { "type": "array" },
+        "contract_types": { "type": "array" },
+        "placements": { "type": "array" },
+        "source_links": { "type": "array" }
+      },
+      "additionalProperties": true
+    },
     "youthDevelopmentSystems": {
       "type": "object",
       "required": ["schema_version", "checked_at", "systems"],

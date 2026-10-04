@@ -300,6 +300,10 @@ export async function loadDataset() {
     path.join(paths.raw, "youth-development-systems.json"),
     { schema_version: 1, checked_at: null, systems: [] }
   );
+  const spainFootballSystem = await readOptionalJson(
+    path.join(paths.raw, "spain-football-system.json"),
+    { schema_version: 1, checked_at: null, pyramids: [], contract_types: [], placements: [], source_links: [] }
+  );
   const bigFiveDebutForecast = await readJson(
     path.join(paths.raw, "big-five-debut-forecast.json")
   );
@@ -321,6 +325,7 @@ export async function loadDataset() {
     bigFiveAsianCoaches,
     asianCoaches,
     youthDevelopmentSystems,
+    spainFootballSystem,
     bigFiveDebutForecast,
     clubNameOverrides,
     playerMarketValues,

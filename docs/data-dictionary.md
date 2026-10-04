@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-10-03
+更新时间：2026-10-04
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -21,6 +21,7 @@
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 中国、日韩与北欧青训体系、项目、竞赛关系和年度快照。 | 是 |
+| `data/raw/spain-football-system.json` | 西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站中国球员在这些层级的落点。 | 是 |
 | `data/raw/forecast/model.json` | 亚洲世界杯预测的国家研究指数、历史训练快照、名额假设和来源映射。 | 是 |
 | `data/raw/big-five-debut-forecast.json` | 中国球员五大联赛首秀研究盘的市场口径、模型权重、快照评分和来源。 | 是 |
 | `data/site/players.json` | 前端使用的球员聚合 JSON。 | 否，由脚本生成 |
@@ -114,6 +115,20 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 | `source_links[]` | 官方来源、URL 和核查日期。 |
 
 球员只能通过 `training_pathway[].competition_context_ids` 引用竞赛 ID。该引用表示培养环境，不自动断言球员在某赛季实际出场。
+
+## 西班牙联赛与 U19 体系
+
+`data/raw/spain-football-system.json` 把成年职业金字塔、U19/U16 青年金字塔和球员落点分开建模，不并入六国 `youth-development-systems.json`。
+
+| 字段 | 含义 |
+| --- | --- |
+| `pyramids[]` | 固定三条：`senior`、`u19`、`u16`。 |
+| `layers[]` | 层级 ID、tier、稳定赛制说明和官方来源。西甲俱乐部青训不等于西甲出场。 |
+| `contract_types[]` | `professional`、`youth-formation`、`unknown`。 |
+| `placements[]` | 一名球员在某一层级的样本。必须带 `player_id` 或 `featured_record_id`。 |
+| `appearance_status` | `appeared`、`registered-no-appearance`、`contract-only`、`observation`。 |
+
+`spain.html` 按金字塔展示层级卡片，再用同一套落点表把球员连回去。青训合同、职业合同和正式出场必须分开读。
 
 ## 青训机构专题现状
 

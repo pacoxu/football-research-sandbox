@@ -9,6 +9,7 @@ This project tracks research data, so changelog entries should separate code cha
 ### Added
 
 - Added a public 2026 China men's milestones page covering the U23 Asian Cup runners-up, U17 World Cup qualification and Asian Games bronze, with sourced historical intervals and a share graphic.
+- Added a dedicated Spain league-system page that splits the senior pyramid, U19/U16 youth pyramid, professional vs youth contracts, and documented Chinese player placements.
 
 ### Corrected
 

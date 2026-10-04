@@ -1,0 +1,701 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-04",
+  "summary": {
+    "zh": "本页把西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站已建档、曾进入这些层级的中国球员样本放在同一套口径里。西甲俱乐部青训合同不等于西甲出场；签职业合同也不等于已经踢过对应联赛。",
+    "en": "This page places Spain's senior professional pyramid, the U19/U16 youth pyramid, and documented Chinese samples into one scope. An academy deal with a La Liga club is not a La Liga appearance, and a professional contract is not automatically a match record."
+  },
+  "scope_note": {
+    "zh": "这是研究样本索引，不是西班牙足协或西甲官方全量名单。球员可同时出现在多个层级；当前注册以球员主档为准。吕孟洋的西班牙人 U19B 节点来自 2026-09 俱乐部官宣，主档仍停在欧罗巴 2025/26。",
+    "en": "This is a research sample index, not an official RFEF or LaLiga census. A player may appear on more than one layer. Current registration still follows the player record. Lyu Mengyang's Espanyol U19B node comes from the September 2026 club announcement; his master record still stops at Europa 2025/26."
+  },
+  "contract_types": [
+    {
+      "id": "professional",
+      "label": {
+        "zh": "职业合同",
+        "en": "Professional contract"
+      },
+      "detail": {
+        "zh": "职业运动员劳动合同，通常对应一线队或职业编制注册，可参加成年职业联赛。",
+        "en": "A professional employment contract, usually tied to first-team or senior professional registration."
+      }
+    },
+    {
+      "id": "youth-formation",
+      "label": {
+        "zh": "青训合同",
+        "en": "Youth formation contract"
+      },
+      "detail": {
+        "zh": "梯队培训协议 / ficha juvenil。未满 18 岁的非欧盟球员通常只能签这一类，不能自动升成一线队职业合同。",
+        "en": "An academy training agreement / youth licence. Non-EU minors are usually limited to this type and it does not become a first-team professional deal by itself."
+      }
+    },
+    {
+      "id": "unknown",
+      "label": {
+        "zh": "合同类型待核",
+        "en": "Contract type unverified"
+      },
+      "detail": {
+        "zh": "能确认俱乐部或竞赛层级，但公开来源还不足以判断是职业合同还是青训协议。",
+        "en": "The club or competition layer is known, but public sources are not yet enough to classify the contract."
+      }
+    }
+  ],
+  "pyramids": [
+    {
+      "id": "senior",
+      "name": {
+        "zh": "成年职业与半职业联赛",
+        "en": "Senior professional and semi-pro leagues"
+      },
+      "summary": {
+        "zh": "西甲和西乙由西甲联盟运营，是仅有的两级完全职业联赛。西协甲及以下由西班牙足协体系组织；B 队通常从西协甲打起，不能与一线队同组。",
+        "en": "LaLiga and Segunda are the only fully professional national tiers, run by LaLiga. Primera Federación and below sit in the RFEF system. Reserve teams usually enter at Primera Federación and cannot share a group with their first team."
+      },
+      "layers": [
+        {
+          "id": "laliga",
+          "tier": 1,
+          "name": {
+            "zh": "西甲 LaLiga",
+            "en": "LaLiga"
+          },
+          "stable_structure": {
+            "zh": "西班牙顶级职业联赛，20 队。只有一线队职业合同且完成联赛注册，才可能获得西甲正式出场。",
+            "en": "Spain's top professional league, 20 clubs. Competitive appearances require a first-team professional registration."
+          },
+          "source_url": "https://www.laliga.com/"
+        },
+        {
+          "id": "segunda",
+          "tier": 2,
+          "name": {
+            "zh": "西乙 LaLiga Hypermotion",
+            "en": "Segunda División / LaLiga Hypermotion"
+          },
+          "stable_structure": {
+            "zh": "第二级完全职业联赛。降级的西甲一线队仍踢这里，例如武磊随西班牙人征战的升级赛季。",
+            "en": "The second fully professional tier. Relegated LaLiga first teams compete here, including Wu Lei's Espanyol promotion season."
+          },
+          "source_url": "https://www.laliga.com/"
+        },
+        {
+          "id": "primera-federacion",
+          "tier": 3,
+          "name": {
+            "zh": "西协甲 Primera Federación",
+            "en": "Primera Federación"
+          },
+          "stable_structure": {
+            "zh": "第三级。包含独立俱乐部和西甲/西乙俱乐部的 B 队。李昊外租科尔内利亚、杜月徵的马贝拉、何小珂的萨瓦德尔一线队都落在这一层。",
+            "en": "The third tier, mixing independent clubs and reserve teams of LaLiga/Segunda clubs. Li Hao's Cornellà loan, Du Yuezheng at Marbella and He Xiaoke's Sabadell first-team minutes sit here."
+          },
+          "source_url": "https://www.rfef.es/"
+        },
+        {
+          "id": "segunda-federacion",
+          "tier": 4,
+          "name": {
+            "zh": "西协乙 Segunda Federación",
+            "en": "Segunda Federación"
+          },
+          "stable_structure": {
+            "zh": "第四级全国联赛。邝兆镭 2025 年加盟莱里达竞技一线队属于这一层；签约与随队训练不等于已经取得正式出场。",
+            "en": "The fourth national tier. Kuang Zhaolei's 2025 move to Atlètic Lleida belongs here; signing and training do not prove a competitive appearance."
+          },
+          "source_url": "https://www.rfef.es/"
+        },
+        {
+          "id": "tercera-federacion",
+          "tier": 5,
+          "name": {
+            "zh": "西协丙 Tercera Federación",
+            "en": "Tercera Federación"
+          },
+          "stable_structure": {
+            "zh": "第五级。杨希离开西班牙人后的奥斯皮塔莱特、肖远豪的蒙塔涅萨一线队都按这一层记录。",
+            "en": "The fifth tier. Yang Xi's L'Hospitalet spell after Espanyol and Xiao Yuanhao's Montañesa first-team minutes are recorded here."
+          },
+          "source_url": "https://www.rfef.es/"
+        },
+        {
+          "id": "regional-senior",
+          "tier": 6,
+          "name": {
+            "zh": "自治区成年联赛",
+            "en": "Regional senior leagues"
+          },
+          "stable_structure": {
+            "zh": "第六级及以下由各自治区足协组织，例如加泰罗尼亚甲级、乙级。肖远豪的图罗佩拉和国际巴塞罗那落在这里，不能写成全国职业联赛。",
+            "en": "Tier 6 and below are run by regional federations, such as Catalonia's senior divisions. Xiao Yuanhao's Turó Peira and Inter Barcelona spells belong here, not in the national professional pyramid."
+          },
+          "source_url": "https://www.fcf.cat/"
+        }
+      ]
+    },
+    {
+      "id": "u19",
+      "name": {
+        "zh": "U19 / Juvenil 联赛",
+        "en": "U19 / Juvenil leagues"
+      },
+      "summary": {
+        "zh": "西甲俱乐部的 Juvenil A 通常打全国最高级荣誉联赛，Juvenil B 打全国联赛，Juvenil C 多在自治区联赛。A/B/C 不是同一竞赛层级。",
+        "en": "A La Liga club's Juvenil A side usually plays División de Honor, Juvenil B plays Liga Nacional, and Juvenil C is mostly regional. A, B and C are not the same competition level."
+      },
+      "layers": [
+        {
+          "id": "division-honor-juvenil",
+          "tier": 1,
+          "name": {
+            "zh": "U19 荣誉联赛 División de Honor Juvenil",
+            "en": "División de Honor Juvenil"
+          },
+          "stable_structure": {
+            "zh": "西班牙 U19 最高级别全国联赛，对应多数西甲俱乐部的 Juvenil A。杨希在西班牙人 U19A 的可核公开口径落在这一层。",
+            "en": "Spain's top national U19 league, usually Juvenil A at La Liga clubs. Yang Xi's documented Espanyol U19A minutes belong here."
+          },
+          "source_url": "https://www.rfef.es/"
+        },
+        {
+          "id": "liga-nacional-juvenil",
+          "tier": 2,
+          "name": {
+            "zh": "U19 全国联赛 Liga Nacional Juvenil",
+            "en": "Liga Nacional Juvenil"
+          },
+          "stable_structure": {
+            "zh": "U19 第二级全国联赛，对应多数俱乐部的 Juvenil B。吕孟洋 2026 年 9 月加盟西班牙人青年 B 队，公开口径打这一级，不是荣誉联赛。",
+            "en": "The second national U19 tier, usually Juvenil B. Lyu Mengyang's September 2026 Espanyol Youth B move is publicly described at this level, not División de Honor."
+          },
+          "source_url": "https://www.rfef.es/"
+        },
+        {
+          "id": "preferente-juvenil",
+          "tier": 3,
+          "name": {
+            "zh": "U19 自治区联赛 / Preferente",
+            "en": "Regional U19 / Preferente Juvenil"
+          },
+          "stable_structure": {
+            "zh": "第三级及以下青年联赛，含加泰 Preferent Juvenils。吕孟洋 2025/26 的欧罗巴 Juvenil B、刘凯源 2026/27 的比利亚雷亚尔 Juvenil C 观察名单都先归这一层。",
+            "en": "Third-tier and regional youth leagues, including Catalonia's Preferent Juvenils. Lyu Mengyang's 2025/26 Europa Juvenil B and Liu Kaiyuan's 2026/27 Villarreal Juvenil C watch list are placed here."
+          },
+          "source_url": "https://www.fcf.cat/"
+        }
+      ]
+    },
+    {
+      "id": "u16",
+      "name": {
+        "zh": "U16 / Cadete 与更低年龄段",
+        "en": "U16 / Cadete and younger"
+      },
+      "summary": {
+        "zh": "Cadete 没有全国统一职业联赛，最高组多为自治区荣誉联赛。达姆、科尔内利亚、比利亚雷亚尔 Cadete A 都按这一层理解。",
+        "en": "Cadete football has no single national professional league; the top group is usually a regional honour division. Damm, Cornellà and Villarreal Cadete A are read at this layer."
+      },
+      "layers": [
+        {
+          "id": "cadete-honor",
+          "tier": 1,
+          "name": {
+            "zh": "U16 荣誉联赛 Cadete Honor",
+            "en": "Cadete honour division"
+          },
+          "stable_structure": {
+            "zh": "各自治区 U16 最高组。刘凯源 2025/26 比利亚雷亚尔 Cadete A、邝兆镭达姆 U16A、吕孟洋科尔内利亚 Cadet A 都按这一层记录。",
+            "en": "The top regional U16 group. Liu Kaiyuan's 2025/26 Villarreal Cadete A, Kuang Zhaolei's Damm U16A and Lyu Mengyang's Cornellà Cadet A are recorded here."
+          },
+          "source_url": "https://www.fcf.cat/"
+        },
+        {
+          "id": "cadete-other",
+          "tier": 2,
+          "name": {
+            "zh": "其他 Cadete / Infantil 青年组",
+            "en": "Other Cadete / Infantil youth groups"
+          },
+          "stable_structure": {
+            "zh": "非最高组的 U16 或 U14 注册，例如吕孟洋奥斯皮塔莱特 Cadet B、张林峒圣胡斯特 U14A、李东宸奥斯皮塔莱特 U14A。",
+            "en": "Non-top U16 or U14 registrations, such as Lyu Mengyang at L'Hospitalet Cadet B, Zhang Lindong at Sant Just U14A and Li Dongchen at L'Hospitalet U14A."
+          },
+          "source_url": "https://www.fcf.cat/"
+        },
+        {
+          "id": "club-academy-unspecified",
+          "tier": 9,
+          "name": {
+            "zh": "已确认俱乐部青训，联赛层级待拆",
+            "en": "Confirmed academy link, league layer pending"
+          },
+          "stable_structure": {
+            "zh": "能确认在西班牙俱乐部梯队，但公开来源还没有稳定拆到具体青年联赛层级。达姆、卡拉万切尔、马竞青训起步阶段常用这一层，避免把俱乐部名字写成西甲出场。",
+            "en": "The Spanish academy link is confirmed, but the exact youth league layer is not yet stable. Damm, Carabanchel and early Atlético academy stages use this bucket so a club name is not written as a La Liga appearance."
+          },
+          "source_url": "https://www.rfef.es/"
+        }
+      ]
+    }
+  ],
+  "placements": [
+    {
+      "id": "wu-lei-laliga",
+      "featured_record_id": "wu-lei-espanyol-2019",
+      "name": "Wu Lei",
+      "local_name": "武磊",
+      "layer_id": "laliga",
+      "club": "RCD Espanyol",
+      "season": "2019-2020",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2019 年加盟西班牙人一线队，本库西甲+西乙合计 103 场。这是职业一线队合同，不是青训。",
+        "en": "Joined Espanyol's first team in 2019. The repository records 103 combined LaLiga and Segunda appearances. This is a professional first-team contract, not an academy deal."
+      }
+    },
+    {
+      "id": "wu-lei-segunda",
+      "featured_record_id": "wu-lei-espanyol-2019",
+      "name": "Wu Lei",
+      "local_name": "武磊",
+      "layer_id": "segunda",
+      "club": "RCD Espanyol",
+      "season": "2020-2021",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "西班牙人降级后，武磊续约并随一线队征战西乙升级赛季。",
+        "en": "After relegation, Wu Lei renewed and played the Segunda promotion season with the first team."
+      }
+    },
+    {
+      "id": "zhang-chengdong-laliga",
+      "featured_record_id": "zhang-chengdong-rayo-2015",
+      "name": "Zhang Chengdong",
+      "local_name": "张呈栋",
+      "layer_id": "laliga",
+      "club": "Rayo Vallecano",
+      "season": "2015-2016",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "北京国安租借至巴列卡诺一线队。西甲正式出场 1 场约 9 分钟，属于职业租借而非青训。",
+        "en": "Loaned from Beijing Guoan to Rayo Vallecano's first team. One LaLiga appearance of about nine minutes; a professional loan, not academy football."
+      }
+    },
+    {
+      "id": "li-hao-primera-federacion",
+      "player_id": "cn-li-hao-2004",
+      "name": "Li Hao",
+      "local_name": "李昊",
+      "layer_id": "primera-federacion",
+      "club": "UE Cornellà",
+      "season": "2023",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "新华社确认 2023 年与马竞签职业合同后外租科尔内利亚。竞赛落点是西协甲，不是西甲或西乙出场。",
+        "en": "Xinhua confirms a 2023 Atlético professional contract and a loan to Cornellà. The competitive layer is Primera Federación, not LaLiga or Segunda."
+      }
+    },
+    {
+      "id": "li-hao-atletico-academy",
+      "player_id": "cn-li-hao-2004",
+      "name": "Li Hao",
+      "local_name": "李昊",
+      "layer_id": "club-academy-unspecified",
+      "club": "Atlético de Madrid academy",
+      "season": "2016-2023",
+      "contract_type": "youth-formation",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2016 年起在马竞青训。青训阶段不能写成西甲出场；2023 年职业合同是另一节点。",
+        "en": "Atlético academy from 2016. The academy years are not LaLiga appearances; the 2023 professional contract is a separate node."
+      }
+    },
+    {
+      "id": "du-yuezheng-primera-federacion",
+      "player_id": "cn-du-yuezheng-2005",
+      "featured_record_id": "du-yuezheng-marbella-2024",
+      "name": "Du Yuezheng",
+      "local_name": "杜月徵",
+      "layer_id": "primera-federacion",
+      "club": "Marbella FC",
+      "season": "2024-2025",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "西协甲马贝拉 22 场 3 球。这是第三级成年职业路径，不是西乙。",
+        "en": "22 appearances and 3 goals for Marbella in Primera Federación. This is a third-tier senior path, not Segunda."
+      }
+    },
+    {
+      "id": "he-xiaoke-primera-federacion",
+      "featured_record_id": "he-xiaoke-spain-pathway-2021",
+      "name": "He Xiaoke",
+      "local_name": "何小珂",
+      "layer_id": "primera-federacion",
+      "club": "CE Sabadell",
+      "season": "2022",
+      "contract_type": "unknown",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2022-12-18 对奥萨苏纳 B 替补登场，是可核西协甲首秀。本库不把它写成西乙。",
+        "en": "Came on against Osasuna B on 2022-12-18, a verified Primera Federación debut. The repository does not record this as Segunda."
+      }
+    },
+    {
+      "id": "yang-xi-tercera-federacion",
+      "player_id": "cn-yang-alex-2005",
+      "name": "Alex Xi Yang",
+      "local_name": "杨希",
+      "layer_id": "tercera-federacion",
+      "club": "CE L'Hospitalet",
+      "season": "2024-2025",
+      "contract_type": "unknown",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "verified",
+      "note": {
+        "zh": "离开西班牙人后自由转会奥斯皮塔莱特。足协报名可核注册，公开统计未见正式出场。",
+        "en": "Joined L'Hospitalet after Espanyol. CFA lists confirm the registration; public stats show no competitive appearance."
+      }
+    },
+    {
+      "id": "xiao-yuanhao-tercera-federacion",
+      "featured_record_id": "xiao-yuanhao-spain-pathway-2018",
+      "name": "Xiao Yuanhao",
+      "local_name": "肖远豪",
+      "layer_id": "tercera-federacion",
+      "club": "CF Montañesa",
+      "season": "2024-2025",
+      "contract_type": "unknown",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "蒙塔涅萨一线队西协丙：3 次名单、1 次替补共 2 分钟。",
+        "en": "Montañesa first team in Tercera Federación: three match-day squads and one substitute appearance of two minutes."
+      }
+    },
+    {
+      "id": "xiao-yuanhao-regional-senior",
+      "featured_record_id": "xiao-yuanhao-spain-pathway-2018",
+      "name": "Xiao Yuanhao",
+      "local_name": "肖远豪",
+      "layer_id": "regional-senior",
+      "club": "Turó Peira / Inter Barcelona",
+      "season": "2025-2026",
+      "contract_type": "unknown",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "加泰甲图罗佩拉约 10 场，加泰乙国际巴塞罗那 3 次首发 2 球。国际巴塞罗那与巴萨、国米无关。",
+        "en": "About 10 games for Turó Peira in Catalonia's top regional senior league, then three starts and two goals for Inter Barcelona in the second regional tier. Inter Barcelona is unrelated to FC Barcelona or Inter Milan."
+      }
+    },
+    {
+      "id": "kuang-zhaolei-segunda-federacion",
+      "player_id": "cn-kuang-zhaolei-2009",
+      "name": "Kuang Zhaolei",
+      "local_name": "邝兆镭",
+      "layer_id": "segunda-federacion",
+      "club": "CE Atlètic Lleida",
+      "season": "2025",
+      "contract_type": "professional",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2025-07-28 加盟西协乙莱里达竞技一线队，合同公开口径至 2027 年。已完成签约，成年正式出场仍待回填。",
+        "en": "Joined Atlètic Lleida's first team on 2025-07-28, publicly contracted to 2027. The signing is confirmed; senior competitive appearances are still pending."
+      }
+    },
+    {
+      "id": "gao-leilei-regional-senior",
+      "featured_record_id": "gao-leilei-multi-country-2007",
+      "name": "Gao Leilei",
+      "local_name": "高雷雷",
+      "layer_id": "regional-senior",
+      "club": "Spanish lower-division clubs",
+      "season": "2019",
+      "contract_type": "professional",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "晚年进入西班牙低级别职业俱乐部体系。本库明确：不能把签约自动等同于西乙出场。",
+        "en": "Entered Spanish lower-division clubs late in his career. The repository is explicit: a signing is not a Segunda appearance."
+      }
+    },
+    {
+      "id": "yang-xi-honor-juvenil",
+      "player_id": "cn-yang-alex-2005",
+      "name": "Alex Xi Yang",
+      "local_name": "杨希",
+      "layer_id": "division-honor-juvenil",
+      "club": "RCD Espanyol Juvenil A",
+      "season": "2021-2024",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "公开百科记其荣誉联赛首秀为 2022-03-20，2022/23 约 24 场。本人采访也提到踢过荣耀联赛后超龄离队。本库球员主档尚未拆 A/B，故标 mixed-source。",
+        "en": "Public encyclopaedia notes a División de Honor debut on 2022-03-20 and about 24 games in 2022/23. His own interview also says he aged out of that league. The player master record has not yet split A/B, so this stays mixed-source."
+      }
+    },
+    {
+      "id": "yang-xi-liga-nacional",
+      "player_id": "cn-yang-alex-2005",
+      "name": "Alex Xi Yang",
+      "local_name": "杨希",
+      "layer_id": "liga-nacional-juvenil",
+      "club": "RCD Espanyol Juvenil B",
+      "season": "2021-2022",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "公开口径 2021/22 主踢西班牙人 U19B 全国联赛约 23 场，同年开始上 A 队。不是只在 U19A。",
+        "en": "Public sources put about 23 Liga Nacional games for Espanyol U19B in 2021/22, with the same season's first A-team minutes. He was not exclusively U19A."
+      }
+    },
+    {
+      "id": "lyu-mengyang-liga-nacional",
+      "player_id": "cn-lyu-mengyang-2009",
+      "name": "Lyu Mengyang",
+      "local_name": "吕孟洋",
+      "layer_id": "liga-nacional-juvenil",
+      "club": "RCD Espanyol Juvenil B",
+      "season": "2026-2027",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "西班牙人 2026-09-14 官宣加入青训并代表青年 B 队。这是青训培训协议，不是一线队职业合同；竞赛层级是 U19 全国二级，不是荣誉联赛。球员主档核验日仍为 2026-05-22 欧罗巴。",
+        "en": "Espanyol announced on 2026-09-14 that he joined the academy and Juvenil B. This is a youth formation agreement, not a first-team professional contract, and the competition is the second national U19 tier rather than División de Honor. His master record still checks Europa as of 2026-05-22."
+      }
+    },
+    {
+      "id": "lyu-mengyang-preferente",
+      "player_id": "cn-lyu-mengyang-2009",
+      "name": "Lyu Mengyang",
+      "local_name": "吕孟洋",
+      "layer_id": "preferente-juvenil",
+      "club": "Europa, C.E. Juvenil B",
+      "season": "2025-2026",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "FCF / FutbolBase 可核 2025/26 Preferent Juvenils 约 29 场 6 球。这是加泰 U19 次高组，不是全国荣誉联赛。",
+        "en": "FCF / FutbolBase confirm about 29 appearances and 6 goals in 2025/26 Preferent Juvenils. That is Catalonia's second U19 group, not the national honour league."
+      }
+    },
+    {
+      "id": "liu-kaiyuan-preferente",
+      "player_id": "cn-liu-kaiyuan-2010",
+      "name": "Liu Kaiyuan",
+      "local_name": "刘凯源",
+      "layer_id": "preferente-juvenil",
+      "club": "Villarreal CF Juvenil C",
+      "season": "2026-2027",
+      "contract_type": "youth-formation",
+      "appearance_status": "observation",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "2026-09-02 公开球队页列入 Juvenil C，但个人页仍显示暂无 2026/27 ficha。只作名单观察，不是已完成竞赛注册。",
+        "en": "A 2026-09-02 public squad page lists him in Juvenil C, but his personal page still shows no 2026/27 licence. This is a squad observation, not completed competition registration."
+      }
+    },
+    {
+      "id": "liu-kaiyuan-cadete-honor",
+      "player_id": "cn-liu-kaiyuan-2010",
+      "name": "Liu Kaiyuan",
+      "local_name": "刘凯源",
+      "layer_id": "cadete-honor",
+      "club": "Villarreal Cadete A",
+      "season": "2025-2026",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2025/26 Cadete A：30 场、1355 分钟、4 球、20 次首发。俱乐部 2026-06-04 官宣续约，仍是青训体系。",
+        "en": "2025/26 Cadete A: 30 appearances, 1,355 minutes, 4 goals and 20 starts. Villarreal renewed him on 2026-06-04; he remains in the academy."
+      }
+    },
+    {
+      "id": "lyu-mengyang-cadete-honor",
+      "player_id": "cn-lyu-mengyang-2009",
+      "name": "Lyu Mengyang",
+      "local_name": "吕孟洋",
+      "layer_id": "cadete-honor",
+      "club": "Cornellà Cadet A",
+      "season": "2024-2025",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "FutbolBase：科尔内利亚 Cadet A，Divisió d'Honor 6 场 0 球。",
+        "en": "FutbolBase: Cornellà Cadet A, six appearances and no goals in the honour division."
+      }
+    },
+    {
+      "id": "kuang-zhaolei-cadete-honor",
+      "player_id": "cn-kuang-zhaolei-2009",
+      "name": "Kuang Zhaolei",
+      "local_name": "邝兆镭",
+      "layer_id": "cadete-honor",
+      "club": "Damm CF U16A",
+      "season": "2024-2025",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2024 年 10 月代表达姆 U16A 在加泰 U16 荣誉联赛对赫罗纳 U16A 进球。",
+        "en": "Scored for Damm U16A against Girona U16A in Catalonia's U16 honour league in October 2024."
+      }
+    },
+    {
+      "id": "lyu-mengyang-cadete-other",
+      "player_id": "cn-lyu-mengyang-2009",
+      "name": "Lyu Mengyang",
+      "local_name": "吕孟洋",
+      "layer_id": "cadete-other",
+      "club": "CE L'Hospitalet Cadet B",
+      "season": "2023-2024",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "西班牙注册首个可核节点：奥斯皮塔莱特 Cadet B，8 场 1 球。",
+        "en": "First verified Spanish registration node: L'Hospitalet Cadet B, eight appearances and one goal."
+      }
+    },
+    {
+      "id": "zhang-lindong-cadete-other",
+      "player_id": "cn-zhang-lindong-2010",
+      "name": "Zhang Lindong",
+      "local_name": "张林峒",
+      "layer_id": "cadete-other",
+      "club": "Atlètic Sant Just U14A",
+      "season": "2023-2024",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "圣胡斯特竞技 U14A 公开口径首发 18 次、2 球，随后加盟达姆青训。",
+        "en": "Publicly 18 starts and two goals for Atlètic Sant Just U14A before moving to Damm."
+      }
+    },
+    {
+      "id": "li-dongchen-cadete-other",
+      "player_id": "cn-li-dongchen-2010",
+      "name": "Li Dongchen",
+      "local_name": "李东宸",
+      "layer_id": "cadete-other",
+      "club": "CE L'Hospitalet U14A",
+      "season": "2024",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "奥斯皮塔莱特 U14A 替补登场完成旅西首秀，当前注册在圣库加特。",
+        "en": "Made his Spain debut from the bench for L'Hospitalet U14A; current registration is Sant Cugat."
+      }
+    },
+    {
+      "id": "zhang-lindong-damm",
+      "player_id": "cn-zhang-lindong-2010",
+      "name": "Zhang Lindong",
+      "local_name": "张林峒",
+      "layer_id": "club-academy-unspecified",
+      "club": "DAMM CF",
+      "season": "2024-2026",
+      "contract_type": "youth-formation",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2024 年加盟加泰青训俱乐部达姆。能确认梯队归属，具体 U16/U19 竞赛层级待继续拆。",
+        "en": "Joined Catalan academy club Damm in 2024. The academy link is confirmed; the exact U16/U19 league layer still needs splitting."
+      }
+    },
+    {
+      "id": "wang-xiuhao-damm",
+      "player_id": "cn-wang-xiuhao-2009",
+      "name": "Wang Xiuhao",
+      "local_name": "汪修昊",
+      "layer_id": "club-academy-unspecified",
+      "club": "DAMM CF",
+      "season": "2026",
+      "contract_type": "youth-formation",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "足协/AFC 2026 口径为达姆；Transfermarkt 仍可见巴达洛纳青年队。欧罗巴过渡和巴达洛纳节点保留为路径，不升成具体联赛层级。",
+        "en": "CFA/AFC 2026 lists Damm; Transfermarkt still shows CF Badalona Youth. Europa and Badalona remain pathway notes rather than a locked league layer."
+      }
+    },
+    {
+      "id": "li-dongchen-sant-cugat",
+      "player_id": "cn-li-dongchen-2010",
+      "name": "Li Dongchen",
+      "local_name": "李东宸",
+      "layer_id": "club-academy-unspecified",
+      "club": "Sant Cugat FC",
+      "season": "2025-2026",
+      "contract_type": "youth-formation",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "verified",
+      "note": {
+        "zh": "当前注册圣库加特。公开总结有加泰 U16 荣誉联赛名单数据，稳定联赛层级仍待与 FCF 页完全对齐前先放待拆层。",
+        "en": "Current club is Sant Cugat. Public summaries mention Catalan U16 honour-league squad data, but the layer stays pending until it is fully aligned with the FCF page."
+      }
+    },
+    {
+      "id": "xie-jin-carabanchel",
+      "player_id": "cn-xie-jin-2009",
+      "name": "Jin Xie",
+      "local_name": "谢晋",
+      "layer_id": "club-academy-unspecified",
+      "club": "Real Carabanchel CF",
+      "season": "2025-2026",
+      "contract_type": "youth-formation",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "足协集训通知先后出现富恩拉夫拉达和皇家卡拉万切尔。能确认西班牙青训路径，竞赛层级未拆。",
+        "en": "CFA camp notices list both Fuenlabrada and Real Carabanchel. The Spanish academy path is confirmed; the competition layer is not yet split."
+      }
+    }
+  ],
+  "source_links": [
+    {
+      "label": "LaLiga official site",
+      "url": "https://www.laliga.com/",
+      "checked_at": "2026-10-04"
+    },
+    {
+      "label": "RFEF official site",
+      "url": "https://www.rfef.es/",
+      "checked_at": "2026-10-04"
+    },
+    {
+      "label": "Catalan Football Federation",
+      "url": "https://www.fcf.cat/",
+      "checked_at": "2026-10-04"
+    },
+    {
+      "label": "Espanyol announcement: Lyu Mengyang",
+      "url": "https://www.163.com/dy/article/L6QCQKL20549BAP0.html",
+      "checked_at": "2026-10-04"
+    }
+  ]
+}

@@ -452,6 +452,10 @@
       "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/youthDevelopmentSystems"
     },
     {
+      "path": "data/raw/spain-football-system.json",
+      "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/spainFootballSystem"
+    },
+    {
       "path": "data/raw/player-market-values.json",
       "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/marketValues"
     },

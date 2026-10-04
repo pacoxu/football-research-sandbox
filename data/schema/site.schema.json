@@ -36,7 +36,8 @@
         "football_stories",
         "big_five_asian_coaches",
         "asian_coaches",
-        "youth_development_systems"
+        "youth_development_systems",
+        "spain_football_system"
       ],
       "properties": {
         "generated_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
