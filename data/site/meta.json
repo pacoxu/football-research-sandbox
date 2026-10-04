@@ -13,13 +13,13 @@
   },
   "coverage_summary": {
     "dataset_count": 10,
-    "record_count": 971,
+    "record_count": 976,
     "stale_records": 156,
-    "needs_review_records": 346
+    "needs_review_records": 348
   },
   "freshness": {
     "as_of": "2026-10-03",
-    "audited_records": 1285,
+    "audited_records": 1290,
     "overdue": 153,
     "by_window": {
       "30": 152,
@@ -291,12 +291,12 @@
         "zh": "教练",
         "en": "Coaches"
       },
-      "record_count": 37,
+      "record_count": 42,
       "quality": {
         "complete": 15,
         "mixed": 0,
-        "partial": 15,
-        "needs-review": 0,
+        "partial": 18,
+        "needs-review": 2,
         "stale": 7,
         "excluded": 0
       },
@@ -307,11 +307,11 @@
         "4": 2,
         "5": 6,
         "6": 0,
-        "unclassified": 11
+        "unclassified": 16
       },
       "checked_at": {
         "oldest": "2026-06-27",
-        "newest": "2026-09-26"
+        "newest": "2026-10-03"
       },
       "overdue_records": 7,
       "missing_fields": [
@@ -839,7 +839,7 @@
         "id": "coach:cn-sun-jihai-haiqiu",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-07-25",
+        "checked_at": "2026-10-03",
         "missing_fields": []
       },
       "coach:cn-tang-xiaocheng-shandong-u15": {
@@ -856,11 +856,25 @@
         "checked_at": "2026-07-18",
         "missing_fields": []
       },
+      "coach:cn-wang-jun-haiqiu": {
+        "id": "coach:cn-wang-jun-haiqiu",
+        "status": "partial",
+        "source_tier": null,
+        "checked_at": "2026-10-03",
+        "missing_fields": []
+      },
       "coach:cn-wang-xiaolong-foundation-phase": {
         "id": "coach:cn-wang-xiaolong-foundation-phase",
         "status": "complete",
         "source_tier": 4,
         "checked_at": "2026-07-25",
+        "missing_fields": []
+      },
+      "coach:cn-wu-zhongjun-haiqiu": {
+        "id": "coach:cn-wu-zhongjun-haiqiu",
+        "status": "partial",
+        "source_tier": null,
+        "checked_at": "2026-10-03",
         "missing_fields": []
       },
       "coach:cn-xie-bo-shimen-5": {
@@ -891,6 +905,13 @@
         "checked_at": "2026-07-18",
         "missing_fields": []
       },
+      "coach:cn-zhang-lie-haiqiu": {
+        "id": "coach:cn-zhang-lie-haiqiu",
+        "status": "needs-review",
+        "source_tier": null,
+        "checked_at": "2026-10-03",
+        "missing_fields": []
+      },
       "coach:jp-masaaki-nakamura-evergrande-2008": {
         "id": "coach:jp-masaaki-nakamura-evergrande-2008",
         "status": "partial",
@@ -910,6 +931,20 @@
         "status": "partial",
         "source_tier": null,
         "checked_at": "2026-07-18",
+        "missing_fields": []
+      },
+      "coach:cn-zhu-yongsheng-haiqiu": {
+        "id": "coach:cn-zhu-yongsheng-haiqiu",
+        "status": "partial",
+        "source_tier": null,
+        "checked_at": "2026-10-03",
+        "missing_fields": []
+      },
+      "coach:cn-zou-peng-haiqiu": {
+        "id": "coach:cn-zou-peng-haiqiu",
+        "status": "needs-review",
+        "source_tier": null,
+        "checked_at": "2026-10-03",
         "missing_fields": []
       },
       "coach:akira-nishino": {

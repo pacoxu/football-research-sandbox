@@ -11,6 +11,7 @@ This project tracks research data, so changelog entries should separate code cha
 - Closed the 2026 Aichi-Nagoya Asian Games men's football file with China's six-match path and bronze medal: semi-final 1-2 to Korea Republic, third-place match 2-2 then 4-3 on penalties against Uzbekistan.
 - Closed the FIFA World Cup 2026 archive after the 19 July final: Spain beat Argentina 1-0 after extra time; China remain did-not-qualify. Japan's Round of 32 1-2 loss to Brazil is stored from the FIFA match report; Korea Republic and IR Iran are recorded as group-stage exits without match scores.
 - Recorded the FIFA U-17 World Cup Qatar 2026 official draw, with China PR in Group H against Spain, Fiji and Morocco. CAF 1 / CAF 2 remain draw placeholders.
+- Expanded Haiqiu Shaonian from Sun Jihai alone to six named coaches (Zhu Yongsheng, Wu Zhongjun, Wang Jun, Zhang Lie, Zou Peng), with a sourced U13 10th-place national-youth-league snapshot and the Zhang Zhuoyi contract dispute kept as unadjudicated claims.
 
 ### Updated
 
@@ -22,6 +23,7 @@ This project tracks research data, so changelog entries should separate code cha
 - Group and knockout scores through the semi-final use CFA and/or Xinhua reports. The bronze-medal shoot-out is stored from a public-media snapshot until an official CFA match report is captured.
 - The Korea Republic–Japan gold-medal result is not recorded yet; champion and runner-up remain empty.
 - Remaining AFC World Cup 2026 exits beyond Japan/Korea/Iran are not stored as scores. U-17 World Cup CAF placeholders are not replaced with Mozambique/Uganda until FIFA republishes named groups.
+- Haiqiu remains a foundation-age programme. About 90 unnamed players are not written into the main player library; Cui Yijun has no verified birth date; Wu Zhongjun's historical national-team pupils are not Haiqiu outputs; Zhang Lie and Zou Peng stay needs-review until a club or match list gives a role.
 
 ## 2026-09-26
 

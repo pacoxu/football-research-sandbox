@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_checked": "2026-08-02",
+  "last_checked": "2026-10-03",
   "editorial_policy": {
     "zh": "人物经历与议题事实优先采用本人、俱乐部、政府、学校、公益机构和主流媒体来源。公开争议只记录可归因主张与回应；没有稳定原始出处的采访线索明确标为待核，不把单方转述写成事实，也不对法律问题作结论。",
     "en": "Career and issue facts prioritize first-party, club, government, school, foundation and established media sources. Public disputes remain attributed; interview leads without a stable primary source are explicitly marked unverified, and neither single-party accounts nor legal claims are presented as established facts."
@@ -279,10 +279,10 @@
         "en": "Sun Jihai: from Premier League mainstay to Dalian youth development"
       },
       "summary": {
-        "zh": "孙继海是中国球员长期立足英超的代表，也在退役后回到大连建设覆盖8至18岁的青训项目。其小学经历属于大连实验小学线，不是东北路小学校友；两所学校共同构成大连校园足球传统的一部分。",
-        "en": "Sun Jihai remains China's benchmark for sustained Premier League participation and later returned to Dalian to build an 8-to-18 development pathway. He attended Dalian Experimental Primary School, not Dongbeilu Primary School; both schools belong to the wider Dalian school-football ecosystem."
+        "zh": "孙继海是中国球员长期立足英超的代表，退役后在大连以嗨球少年品牌做全国海选青训。项目设计覆盖8至18岁，当前公开梯队为2013、2015、2017年龄段。小学属于大连实验小学线，不是东北路小学校友。",
+        "en": "Sun Jihai remains China's benchmark for sustained Premier League participation and later built the Haiqiu Shaonian academy in Dalian. The published design covers ages 8-18; the current public squads are the 2013, 2015 and 2017 age groups. He attended Dalian Experimental Primary School, not Dongbeilu."
       },
-      "checked_at": "2026-07-25",
+      "checked_at": "2026-10-03",
       "related_entities": [
         {
           "type": "coach",
@@ -298,6 +298,31 @@
           "type": "story",
           "id": "dalian-dongbeilu-primary-football",
           "label": "东北路小学与大连校园足球"
+        },
+        {
+          "type": "coach",
+          "id": "cn-zhu-yongsheng-haiqiu",
+          "label": "朱永胜"
+        },
+        {
+          "type": "coach",
+          "id": "cn-wu-zhongjun-haiqiu",
+          "label": "吴忠俊"
+        },
+        {
+          "type": "coach",
+          "id": "cn-wang-jun-haiqiu",
+          "label": "王军"
+        },
+        {
+          "type": "coach",
+          "id": "cn-zhang-lie-haiqiu",
+          "label": "张烈"
+        },
+        {
+          "type": "coach",
+          "id": "cn-zou-peng-haiqiu",
+          "label": "邹鹏"
         }
       ],
       "identity_note": {
@@ -333,6 +358,16 @@
           "value": {
             "zh": "大连嗨球青训精英梯队",
             "en": "Dalian Haiqiu elite youth pathway"
+          }
+        },
+        {
+          "label": {
+            "zh": "当前梯队",
+            "en": "Current squads"
+          },
+          "value": {
+            "zh": "2013 / 2015 / 2017 三个年龄段，近90人",
+            "en": "Three age groups (2013/2015/2017), about 90 players"
           }
         }
       ],
@@ -391,6 +426,28 @@
             "zh": "中国足球发展基金会把承载孙继海精英梯队的大连市嗨球足球俱乐部纳入社会足球青训质量提升行动计划。",
             "en": "The China Football Development Foundation included Dalian Haiqiu, which hosts Sun's elite squads, in its social-youth-football quality programme."
           }
+        },
+        {
+          "date": "2026-04",
+          "label": {
+            "zh": "三支梯队与具名教练组",
+            "en": "Three squads and named coaching staff"
+          },
+          "detail": {
+            "zh": "基金会确认2013、2015、2017三个年龄段近90名球员，并点名朱永胜、吴忠俊、王军、张烈、邹鹏进入教练组。最大孩子约13岁。具名球员样本为河北邯郸出身的崔一俊，不建无出生日期的主库档案。",
+            "en": "The foundation confirmed three age groups totalling about 90 players and named Zhu Yongsheng, Wu Zhongjun, Wang Jun, Zhang Lie and Zou Peng in the staff. The oldest players are about 13. Cui Yijun is the named player sample; he is not added to the main player library without a verified birth date."
+          }
+        },
+        {
+          "date": "2026-09",
+          "label": {
+            "zh": "中青赛U13全国总决赛",
+            "en": "U13 national youth-league finals"
+          },
+          "detail": {
+            "zh": "中国足协确认大连嗨球少年U13在全国总决赛第二阶段列第10名，未进入前八。次级报道转述小组赛2-6北京国安、1-5恒大足校，以及9-16名排位1-9负山东泰山。北一区冠军不能外推为全国同级最强。",
+            "en": "The CFA ranked Dalian Haiqiu U13 10th after the national finals second stage, outside the top eight. Secondary reports give 2-6 vs Beijing Guoan, 1-5 vs Evergrande and 1-9 vs Shandong Taishan in the 9th-16th playoff. A regional title is not a national ranking."
+          }
         }
       ],
       "sections": [
@@ -403,9 +460,54 @@
             "zh": "孙继海和东北路小学都属于大连足球城市传统中的重要节点，但不是“球员—母校”关系。孙继海的小学线索指向实验小学；东北路小学的官方代表校友名单则包括贾秀全、董方卓、于汉超、王大雷等。",
             "en": "Sun and Dongbeilu Primary School are both important parts of Dalian's football culture, but they are not linked as player and alma mater. Sun's school trail points to Experimental Primary School, while official Dongbeilu alumni examples include Jia Xiuquan, Dong Fangzhuo, Yu Hanchao and Wang Dalei."
           }
+        },
+        {
+          "title": {
+            "zh": "球员产出边界",
+            "en": "Player-output boundary"
+          },
+          "body": {
+            "zh": "嗨球少年目前仍是低龄在训项目。公开可核的具名球员是崔一俊（早期队长/中后场，基金会写其在大连就读并完成近三年训练）和已解约纠纷中的张卓毅。2026年9月中国U15第五期集训名单没有嗨球单位。不得把吴忠俊个人历史培养的国字号人数算进嗨球输送。",
+            "en": "Haiqiu remains a foundation-age programme. Named players in public sources are Cui Yijun, an early captain described by the foundation, and Zhang Zhuoyi, whose contract dispute is recorded separately. The September 2026 China U15 camp list has no Haiqiu affiliation. Wu Zhongjun's historical national-team pupils are not Haiqiu outputs."
+          }
         }
       ],
-      "public_disputes": [],
+      "public_disputes": [
+        {
+          "id": "haiqiu-zhang-zhuoyi-contract-2025",
+          "date": "2025-08-20",
+          "topic": {
+            "zh": "张卓毅解约与违约金诉讼",
+            "en": "Zhang Zhuoyi release dispute and damages claim"
+          },
+          "claim_status": "attributed-claim-unadjudicated",
+          "response_status": "litigation-reported",
+          "statements": [
+            {
+              "speaker": "张卓毅家长（新京报转述）",
+              "position": "claimant",
+              "paraphrase": {
+                "zh": "家长称2024年4月签约免费培养至18岁，后因训练方式和伤病要求解约；协商中嗨球方面曾提出约18万元解约金。",
+                "en": "The parents said a April 2024 free-to-18 contract was followed by a release request over training and injury, and that Haiqiu sought about 180,000 yuan to terminate."
+              },
+              "source_url": "https://www.bjnews.com.cn/detail/1759970230168228.html"
+            },
+            {
+              "speaker": "嗨球方面（新京报转述的民事诉讼）",
+              "position": "respondent",
+              "paraphrase": {
+                "zh": "报道称嗨球于2025年8月20日向大连金州法院起诉，要求继续履行合同，否则向监护人索赔约266万元。",
+                "en": "The report said Haiqiu filed in Dalian Jinzhou court on 20 August 2025, seeking continued performance or about 2.66 million yuan from the guardians."
+              },
+              "source_url": "https://www.bjnews.com.cn/detail/1759970230168228.html"
+            }
+          ],
+          "editorial_note": {
+            "zh": "本站只记录已发表报道中的双方主张，不判断违约是否成立，也不把张卓毅写成嗨球成功输送样本。",
+            "en": "This site records the published claims only. It does not adjudicate the contract and does not treat Zhang Zhuoyi as a Haiqiu graduate."
+          }
+        }
+      ],
       "source_links": [
         {
           "type": "government",
@@ -418,8 +520,8 @@
           "type": "foundation",
           "label": "中国足球发展基金会：孙继海与嗨球少年",
           "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
-          "checked_at": "2026-07-25",
-          "claim": "确认孙继海团队、嗨球俱乐部精英梯队及基金会公益支持。"
+          "checked_at": "2026-10-03",
+          "claim": "确认孙继海团队、嗨球俱乐部精英梯队、基金会公益支持，并点名朱永胜、吴忠俊、王军、张烈、邹鹏进入教练组。"
         },
         {
           "type": "club-report",
@@ -427,6 +529,34 @@
           "url": "https://www.ttplus.cn/publish/app/data/2017/12/20/115973/os_news.html",
           "checked_at": "2026-07-25",
           "claim": "文中把实验小学列为孙继海和朱挺的母校，用于学校关系交叉核对。"
+        },
+        {
+          "type": "foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（上）",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0415/694192.html",
+          "checked_at": "2026-10-03",
+          "claim": "确认3支梯队近90人及项目目标。"
+        },
+        {
+          "type": "news",
+          "label": "新京报：嗨球少年解约纠纷",
+          "url": "https://www.bjnews.com.cn/detail/1759970230168228.html",
+          "checked_at": "2026-10-03",
+          "claim": "记录张卓毅解约协商与嗨球提起诉讼的公开报道，不作法律结论。"
+        },
+        {
+          "type": "official-association",
+          "label": "中国足协：2026中青赛U13全国总决赛第二阶段排位",
+          "url": "https://www.thecfa.cn/qingchaoliansai/20260920/38193.html",
+          "checked_at": "2026-10-03",
+          "claim": "确认大连嗨球少年U13全国总决赛第二阶段列第10名，未进入前八。"
+        },
+        {
+          "type": "news",
+          "label": "中华网：中青赛U13小组赛与排位比分转述",
+          "url": "https://news.china.com/socialgd/10000169/20260920/49753703_all.html",
+          "checked_at": "2026-10-03",
+          "claim": "转述小组赛2-6北京国安、1-5恒大足校，以及排位赛1-9山东泰山。比分以该稿为次级来源，名次以足协公告为准。"
         }
       ]
     },
