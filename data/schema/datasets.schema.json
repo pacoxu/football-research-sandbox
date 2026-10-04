@@ -178,6 +178,77 @@
       },
       "additionalProperties": true
     },
+    "youthTrainingDisputes": {
+      "type": "object",
+      "required": ["schema_version", "last_checked", "editorial_policy", "scope_note", "cfa_rules", "cases"],
+      "properties": {
+        "schema_version": { "const": 1 },
+        "last_checked": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "editorial_policy": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+        "scope_note": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+        "cfa_rules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["id", "year", "title", "summary", "source_links"],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "year": { "type": "string", "minLength": 1 },
+              "title": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "summary": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "source_links": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" }
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "cases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "year_range",
+              "status",
+              "confidence",
+              "title",
+              "player_age",
+              "claimed_amount",
+              "cfa_position",
+              "outcome",
+              "summary",
+              "source_links"
+            ],
+            "properties": {
+              "id": { "type": "string", "minLength": 1 },
+              "year_range": { "type": "string", "minLength": 1 },
+              "status": {
+                "enum": ["pending", "settled", "withdrawn", "judged", "contrast", "blocked", "unresolved"]
+              },
+              "confidence": { "enum": ["high", "medium", "low"] },
+              "title": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "player_age": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "claimed_amount": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "cfa_position": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "outcome": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "summary": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/localizedText" },
+              "source_links": {
+                "type": "array",
+                "minItems": 1,
+                "items": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/sourceLink" }
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
     "scoutingWatchlist": {
       "type": "object",
       "required": ["schema_version", "source", "scope", "records", "related_collections", "source_audits"],

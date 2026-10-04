@@ -109,6 +109,8 @@ const UI_COPY = {
     "page.coaches.description": "整理中国校园、足校、职业梯队、独立基地、地区体校与民间项目的具名青训教练样本。",
     "page.stories.title": "足球故事 | 青训球员追踪站",
     "page.stories.description": "查看职业球员、青训教练和校园足球机构的可追溯故事。",
+    "page.youth-disputes.title": "青训纠纷案件汇总 | 青训球员追踪站",
+    "page.youth-disputes.description": "汇总国内青少年球员培训协议、自由身、违约金与培训补偿公开案例。",
     "page.story-detail.title": "故事详情 | 青训球员追踪站",
     "page.story-detail.description": "查看人物和机构故事的时间线、公开争议与来源边界。",
     "site.kicker": "青训追踪台",
@@ -122,8 +124,11 @@ const UI_COPY = {
     "nav.pathways": "青训体系",
     "nav.coaches": "青训教练",
     "nav.stories": "故事",
+    "nav.disputes": "青训纠纷",
     "home.quickLinks.storiesTitle": "足球故事",
     "home.quickLinks.storiesText": "阅读球员转型、校园传统和公开争议的来源化时间线。",
+    "home.quickLinks.disputesTitle": "青训纠纷",
+    "home.quickLinks.disputesText": "对照培训协议案例的年龄、主张金额、足协态度和最终结果。",
     "nav.dataCenter": "数据中心",
     "nav.predictions": "世界杯预测",
     "header.language": "语言",
@@ -601,6 +606,38 @@ const UI_COPY = {
     "stories.notFound.title": "未找到对应故事",
     "stories.notFound.text": "当前故事不存在或尚未公开。",
     "stories.link.open": "查看故事",
+    "disputes.hero.eyebrow": "Youth Training Disputes",
+    "disputes.hero.title": "青训纠纷案件汇总",
+    "disputes.hero.text": "对照国内青少年培训协议与合同纠纷的年龄、主张金额、足协态度和最终结果。违约金由球员或家长承担，培训补偿由新俱乐部支付，两笔钱不混算。",
+    "disputes.coverage.eyebrow": "Coverage",
+    "disputes.coverage.value": "{count} 个公开案例",
+    "disputes.coverage.checked": "核查至 {date}",
+    "disputes.rules.eyebrow": "CFA Rules",
+    "disputes.rules.title": "足协规则怎么变",
+    "disputes.rules.source": "规则来源",
+    "disputes.cases.eyebrow": "Case File",
+    "disputes.cases.title": "公开可核案例",
+    "disputes.table.case": "案例",
+    "disputes.table.age": "年龄",
+    "disputes.table.amount": "主张金额",
+    "disputes.table.cfa": "足协态度",
+    "disputes.table.outcome": "最终结果",
+    "disputes.detail.eyebrow": "Case Notes",
+    "disputes.detail.title": "案件说明与来源",
+    "disputes.field.age": "年龄",
+    "disputes.field.amount": "主张金额",
+    "disputes.field.cfa": "足协态度",
+    "disputes.field.outcome": "最终结果",
+    "disputes.status.pending": "进行中",
+    "disputes.status.settled": "协商解决",
+    "disputes.status.withdrawn": "撤诉",
+    "disputes.status.judged": "已判决",
+    "disputes.status.contrast": "对照样本",
+    "disputes.status.blocked": "规则受阻",
+    "disputes.status.unresolved": "结果未公开",
+    "disputes.confidence": "证据强度：{value}",
+    "disputes.excluded.eyebrow": "Excluded",
+    "disputes.excluded.title": "明确不入库",
     "tournamentDetail.breadcrumb.list": "赛事列表",
     "tournamentDetail.breadcrumb.detail": "赛事详情",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -1051,6 +1088,8 @@ const UI_COPY = {
     "page.coaches.description": "Named youth coaches working across schools, academies, professional youth teams, regional sports schools and independent projects in China.",
     "page.stories.title": "Football Stories | Youth Player Tracking Desk",
     "page.stories.description": "Traceable stories about professional players, youth coaches and school-football institutions.",
+    "page.youth-disputes.title": "Youth Training Dispute Cases | Youth Player Tracking Desk",
+    "page.youth-disputes.description": "Public Chinese youth training-agreement, free-agent, damages and compensation cases.",
     "page.story-detail.title": "Story Detail | Youth Player Tracking Desk",
     "page.story-detail.description": "Timelines, public exchanges and source boundaries for people and institutions.",
     "site.kicker": "Youth Tracking Desk",
@@ -1064,8 +1103,11 @@ const UI_COPY = {
     "nav.pathways": "Youth Systems",
     "nav.coaches": "Coaches",
     "nav.stories": "Stories",
+    "nav.disputes": "Disputes",
     "home.quickLinks.storiesTitle": "Football stories",
     "home.quickLinks.storiesText": "Read sourced timelines about player transitions, school traditions and public exchanges.",
+    "home.quickLinks.disputesTitle": "Youth disputes",
+    "home.quickLinks.disputesText": "Compare ages, claimed sums, CFA positions and outcomes in training-agreement cases.",
     "nav.dataCenter": "Data",
     "nav.predictions": "World Cup Forecast",
     "header.language": "Language",
@@ -1543,6 +1585,38 @@ const UI_COPY = {
     "stories.notFound.title": "Story not found",
     "stories.notFound.text": "This story does not exist or is not public.",
     "stories.link.open": "Open story",
+    "disputes.hero.eyebrow": "Youth Training Disputes",
+    "disputes.hero.title": "Youth training dispute cases",
+    "disputes.hero.text": "Compare ages, claimed amounts, CFA positions and outcomes in Chinese youth training-agreement disputes. Liquidated damages sit with players or parents; training compensation is paid by the new club.",
+    "disputes.coverage.eyebrow": "Coverage",
+    "disputes.coverage.value": "{count} public cases",
+    "disputes.coverage.checked": "Checked through {date}",
+    "disputes.rules.eyebrow": "CFA Rules",
+    "disputes.rules.title": "How CFA rules changed",
+    "disputes.rules.source": "Rule sources",
+    "disputes.cases.eyebrow": "Case File",
+    "disputes.cases.title": "Publicly checkable cases",
+    "disputes.table.case": "Case",
+    "disputes.table.age": "Age",
+    "disputes.table.amount": "Claimed amount",
+    "disputes.table.cfa": "CFA position",
+    "disputes.table.outcome": "Outcome",
+    "disputes.detail.eyebrow": "Case Notes",
+    "disputes.detail.title": "Notes and sources",
+    "disputes.field.age": "Age",
+    "disputes.field.amount": "Claimed amount",
+    "disputes.field.cfa": "CFA position",
+    "disputes.field.outcome": "Outcome",
+    "disputes.status.pending": "Pending",
+    "disputes.status.settled": "Settled",
+    "disputes.status.withdrawn": "Withdrawn",
+    "disputes.status.judged": "Judged",
+    "disputes.status.contrast": "Contrast",
+    "disputes.status.blocked": "Blocked",
+    "disputes.status.unresolved": "Unpublished outcome",
+    "disputes.confidence": "Evidence: {value}",
+    "disputes.excluded.eyebrow": "Excluded",
+    "disputes.excluded.title": "Explicitly excluded",
     "tournamentDetail.breadcrumb.list": "Tournaments",
     "tournamentDetail.breadcrumb.detail": "Tournament detail",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -2261,6 +2335,7 @@ const PAGE_METADATA = {
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
   stories: { title: "page.stories.title", description: "page.stories.description" },
+  "youth-disputes": { title: "page.youth-disputes.title", description: "page.youth-disputes.description" },
   "story-detail": { title: "page.story-detail.title", description: "page.story-detail.description" },
   "data-center": { title: "page.data-center.title", description: "page.data-center.description" },
   "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" },
@@ -2806,6 +2881,11 @@ async function boot() {
 
     if (page === "stories") {
       renderStoriesPage();
+      return;
+    }
+
+    if (page === "youth-disputes") {
+      renderYouthDisputesPage();
       return;
     }
 
@@ -7638,6 +7718,102 @@ function renderStoriesPage() {
   document.querySelector("#storiesCheckedAt").textContent = t("stories.coverage.checked", { date: formatDate(archive?.last_checked) });
   document.querySelector("#storiesEditorialPolicy").textContent = localizeText(archive?.editorial_policy);
   document.querySelector("#storiesGrid").innerHTML = stories.map(renderFootballStoryCard).join("");
+}
+
+function renderYouthDisputesPage() {
+  const archive = state.overview?.youth_training_disputes;
+  const cases = archive?.cases ?? [];
+  const rules = archive?.cfa_rules ?? [];
+  const excluded = archive?.excluded ?? [];
+  const coverage = document.querySelector("#disputesCoverage");
+  const checked = document.querySelector("#disputesCheckedAt");
+  if (coverage) coverage.textContent = t("disputes.coverage.value", { count: cases.length });
+  if (checked) checked.textContent = t("disputes.coverage.checked", { date: formatDate(archive?.last_checked) });
+  const policy = document.querySelector("#disputesEditorialPolicy");
+  const scope = document.querySelector("#disputesScopeNote");
+  if (policy) policy.textContent = localizeText(archive?.editorial_policy);
+  if (scope) scope.textContent = localizeText(archive?.scope_note);
+
+  const rulesNode = document.querySelector("#disputesRules");
+  if (rulesNode) {
+    rulesNode.innerHTML = rules.map((rule) => `
+      <article class="story-card">
+        <div class="chip-row">
+          <span class="chip">${escapeHtml(rule.year)}</span>
+        </div>
+        <h3>${escapeHtml(localizeText(rule.title))}</h3>
+        <p>${escapeHtml(localizeText(rule.summary))}</p>
+        <p class="timeline-label">${escapeHtml(t("disputes.rules.source"))}</p>
+        ${(rule.source_links ?? []).map((source) => `
+          <p class="small-note"><a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a></p>
+        `).join("")}
+      </article>
+    `).join("");
+  }
+
+  const tableBody = document.querySelector("#disputesTableBody");
+  if (tableBody) {
+    tableBody.innerHTML = cases.map((item) => `
+      <tr>
+        <td>
+          <strong>${escapeHtml(localizeText(item.title))}</strong><br>
+          <span class="chip">${escapeHtml(t(`disputes.status.${item.status}`))}</span>
+          <span class="small-note">${escapeHtml(item.year_range)}</span>
+        </td>
+        <td>${escapeHtml(localizeText(item.player_age))}</td>
+        <td>${escapeHtml(localizeText(item.claimed_amount))}</td>
+        <td>${escapeHtml(localizeText(item.cfa_position))}</td>
+        <td>${escapeHtml(localizeText(item.outcome))}</td>
+      </tr>
+    `).join("");
+  }
+
+  const grid = document.querySelector("#disputesCaseGrid");
+  if (grid) {
+    grid.innerHTML = cases.map((item) => `
+      <article class="story-card">
+        <div class="chip-row">
+          <span class="chip">${escapeHtml(t(`disputes.status.${item.status}`))}</span>
+          <span class="chip">${escapeHtml(item.year_range)}</span>
+          <span class="chip">${escapeHtml(t("disputes.confidence", { value: item.confidence }))}</span>
+        </div>
+        <h3>${escapeHtml(localizeText(item.title))}</h3>
+        <p>${escapeHtml(localizeText(item.summary))}</p>
+        <dl class="dispute-meta-grid">
+          <div>
+            <dt>${escapeHtml(t("disputes.field.age"))}</dt>
+            <dd>${escapeHtml(localizeText(item.player_age))}</dd>
+          </div>
+          <div>
+            <dt>${escapeHtml(t("disputes.field.amount"))}</dt>
+            <dd>${escapeHtml(localizeText(item.claimed_amount))}</dd>
+          </div>
+          <div>
+            <dt>${escapeHtml(t("disputes.field.cfa"))}</dt>
+            <dd>${escapeHtml(localizeText(item.cfa_position))}</dd>
+          </div>
+          <div>
+            <dt>${escapeHtml(t("disputes.field.outcome"))}</dt>
+            <dd>${escapeHtml(localizeText(item.outcome))}</dd>
+          </div>
+        </dl>
+        ${(item.source_links ?? []).map((source) => `
+          <p class="small-note"><a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a></p>
+        `).join("")}
+      </article>
+    `).join("");
+  }
+
+  const excludedSection = document.querySelector("#disputesExcludedSection");
+  const excludedNode = document.querySelector("#disputesExcluded");
+  if (excludedSection && excludedNode) {
+    excludedSection.hidden = excluded.length === 0;
+    excludedNode.innerHTML = excluded.map((item) => `
+      <article class="stack-card">
+        <p>${escapeHtml(localizeText(item.reason))}</p>
+      </article>
+    `).join("");
+  }
 }
 
 function renderStoryDispute(dispute) {

@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>青训教练 | 青训球员追踪站</title>
-    <meta name="description" content="查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260725-friend-links" />
+    <title>青训纠纷案件汇总 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="汇总国内青少年球员培训协议、自由身、违约金与培训补偿公开案例，对照年龄、金额、足协态度和最终结果。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css?v=20261004-youth-disputes" />
   </head>
-  <body data-page="coaches">
+  <body data-page="youth-disputes">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -35,54 +38,73 @@
           </button>
         </div>
       </header>
-
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="coaches.hero.eyebrow">Youth Coaches</p>
-            <h1 data-i18n="coaches.hero.title">青训教练</h1>
-            <p class="hero-text" data-i18n="coaches.hero.text">集中查看基层、校园、足校和民间青训教练，以及中国男足 U 系列教练组。每条记录保留职责边界和原始来源。</p>
+            <p class="eyebrow" data-i18n="disputes.hero.eyebrow">Youth Training Disputes</p>
+            <h1 data-i18n="disputes.hero.title">青训纠纷案件汇总</h1>
+            <p class="hero-text" data-i18n="disputes.hero.text">对照国内青少年培训协议与合同纠纷的年龄、主张金额、足协态度和最终结果。违约金由球员或家长承担，培训补偿由新俱乐部支付，两笔钱不混算。</p>
           </div>
           <aside class="hero-spotlight">
-            <p class="eyebrow" data-i18n="coaches.coverage.eyebrow">Coverage</p>
-            <h2 id="coachesCoverage" data-i18n="common.loading">载入中</h2>
-            <p id="coachesCheckedAt" class="hero-side-note"></p>
+            <p class="eyebrow" data-i18n="disputes.coverage.eyebrow">Coverage</p>
+            <h2 id="disputesCoverage" data-i18n="common.loading">载入中</h2>
+            <p id="disputesCheckedAt" class="hero-side-note"></p>
           </aside>
         </section>
-
         <section class="content-panel">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow" data-i18n="coaches.development.eyebrow">Grassroots & Academy</p>
-              <h2 data-i18n="coaches.development.title">基层与青训机构教练</h2>
-            </div>
-          </div>
-          <p class="section-note" data-i18n="coaches.development.note">只收录能够确认具名机构和实际训练或技术职责的教练，不以行政头衔或球员经历代替执教事实。</p>
-          <div id="developmentCoachGrid" class="player-card-grid"></div>
+          <p id="disputesEditorialPolicy" class="section-note"></p>
+          <p id="disputesScopeNote" class="section-note"></p>
         </section>
-
         <section class="content-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="coaches.national.eyebrow">National Youth Teams</p>
-              <h2 data-i18n="coaches.national.title">中国男足 U 系列教练组</h2>
+              <p class="eyebrow" data-i18n="disputes.rules.eyebrow">CFA Rules</p>
+              <h2 data-i18n="disputes.rules.title">足协规则怎么变</h2>
             </div>
           </div>
-          <p id="nationalCoachNote" class="section-note"></p>
-          <div id="nationalCoachGrid" class="story-grid"></div>
+          <div id="disputesRules" class="story-grid"></div>
         </section>
-
         <section class="content-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="coaches.watchlist.eyebrow">Research Queue</p>
-              <h2 data-i18n="coaches.watchlist.title">待补教练与机构</h2>
+              <p class="eyebrow" data-i18n="disputes.cases.eyebrow">Case File</p>
+              <h2 data-i18n="disputes.cases.title">公开可核案例</h2>
             </div>
           </div>
-          <div id="coachWatchlist" class="stack-list compact-grid"></div>
+          <div class="table-shell">
+            <table class="data-table" id="disputesTable">
+              <thead>
+                <tr>
+                  <th data-i18n="disputes.table.case">案例</th>
+                  <th data-i18n="disputes.table.age">年龄</th>
+                  <th data-i18n="disputes.table.amount">主张金额</th>
+                  <th data-i18n="disputes.table.cfa">足协态度</th>
+                  <th data-i18n="disputes.table.outcome">最终结果</th>
+                </tr>
+              </thead>
+              <tbody id="disputesTableBody"></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="disputes.detail.eyebrow">Case Notes</p>
+              <h2 data-i18n="disputes.detail.title">案件说明与来源</h2>
+            </div>
+          </div>
+          <div id="disputesCaseGrid" class="story-grid"></div>
+        </section>
+        <section class="content-panel" id="disputesExcludedSection" hidden>
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="disputes.excluded.eyebrow">Excluded</p>
+              <h2 data-i18n="disputes.excluded.title">明确不入库</h2>
+            </div>
+          </div>
+          <div id="disputesExcluded" class="stack-list compact-grid"></div>
         </section>
       </main>
-
       <footer class="site-footer">
         <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
         <nav class="friend-links" aria-label="友情链接">

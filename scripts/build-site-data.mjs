@@ -51,6 +51,7 @@ export async function buildSiteData({ outputDirectory = paths.site } = {}) {
     china_men_youth_coaches: dataset.chinaMenYouthCoaches,
     china_youth_development_coaches: dataset.chinaYouthDevelopmentCoaches,
     football_stories: dataset.footballStories,
+    youth_training_disputes: dataset.youthTrainingDisputes,
     big_five_asian_coaches: dataset.bigFiveAsianCoaches,
     asian_coaches: dataset.asianCoaches,
     youth_development_systems: dataset.youthDevelopmentSystems,

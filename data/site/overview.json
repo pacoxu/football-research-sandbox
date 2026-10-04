@@ -52397,5 +52397,366 @@
     "Yixing Zhoutie Jiuteng Football Club": "宜兴周铁久滕足球俱乐部",
     "Yongin FC": "龙仁FC",
     "Zhejiang FC": "浙江"
+  },
+  "youth_training_disputes": {
+    "schema_version": 1,
+    "last_checked": "2026-10-04",
+    "editorial_policy": {
+      "zh": "本页只汇总可公开核验的国内青少年培训协议、自由身、培训补偿与合同纠纷样本。违约金与培训补偿分列记录，不把机构诉请写成已裁决金额，也不对未决案件作法律结论。",
+      "en": "This page collects publicly checkable Chinese youth-training, free-agent, compensation and contract-dispute samples. Liquidated damages and training compensation are recorded separately. Institutional claims are not treated as awards, and pending cases are not given legal conclusions."
+    },
+    "scope_note": {
+      "zh": "覆盖培训协议解约、满 18 岁自由身、海外首签和俱乐部解散后的补偿追索。职业一线队续约纠纷（如林良铭）不纳入。自媒体未核文书不入库。",
+      "en": "Covers training-agreement exits, free agency at 18, overseas first contracts and compensation after a club leaves the association. Senior-contract renewals such as Lin Liangming are out of scope. Unverified social-media documents are excluded."
+    },
+    "cfa_rules": [
+      {
+        "id": "cfa-2018-61",
+        "year": "2018",
+        "title": {
+          "zh": "2018 年青少年转会与培训补偿意见：首签权",
+          "en": "2018 youth transfer and compensation opinion: first-contract right"
+        },
+        "summary": {
+          "zh": "12 岁后连续注册满 4 年，培训单位若能提供不低于当地上年度社平工资 3 倍的工资，可主张最长 2 年首份工作合同；无正当理由拒签可停赛 24 个月。补偿起算降至 8 岁，中超曾达 50 万/年。公开检索未见稳定的拒签停赛执行个案。",
+          "en": "After four consecutive years of registration from age 12, a training body offering at least three times local average wages could claim a first contract of up to two years; unjustified refusal could mean a 24-month ban. Compensation started at age 8 and reached CNY 500,000 a year for CSL clubs. No stable public enforcement of the ban was found."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "人民网：中国足协公布实施意见",
+            "url": "http://sports.people.com.cn/n1/2018/0131/c22134-29798631.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "cfa-2026-rstp",
+        "year": "2026",
+        "title": {
+          "zh": "2026 年球员身份与转会管理规定：限制未成年人长约",
+          "en": "2026 player status and transfer rules: limits on minor contracts"
+        },
+        "summary": {
+          "zh": "2026-02-24 印发并废止 2018/2019/2023 补偿意见。培训协议须本人与监护人共签，截止最长到 18 周岁生日；不满 16 岁不得签工作合同；16–18 岁工作合同最长 3 年。培训补偿改回 12–21 岁：中超 20 万/年、中甲 7 万、中乙 2 万、其他 1 万；12–15 岁按第四类别 1 万/年。有效期内可解除培训协议，按实际损失支付合理补偿。",
+          "en": "Issued on 24 Feb 2026, replacing the 2018/2019/2023 compensation notices. Training agreements must be co-signed and may not run past the 18th birthday. No employment contract under 16; 16–18 contracts max three years. Training compensation returns to ages 12–21: CNY 200,000 / 70,000 / 20,000 / 10,000 a year by club class, with ages 12–15 at the fourth-category CNY 10,000 rate. Agreements may be ended with reasonable compensation for actual loss."
+        },
+        "source_links": [
+          {
+            "type": "official",
+            "label": "中国足协印发球员身份与转会管理规定",
+            "url": "https://www.thecfa.cn/qysfgl/20260224/37349.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      }
+    ],
+    "cases": [
+      {
+        "id": "zhang-zhuoyi-haiqiu-2025",
+        "year_range": "2025",
+        "status": "pending",
+        "confidence": "high",
+        "title": {
+          "zh": "张卓毅 / 嗨球少年",
+          "en": "Zhang Zhuoyi / Haiqiu Youth"
+        },
+        "player_age": {
+          "zh": "签约时约 11 岁，争议时 12 岁，协议写到 18 岁",
+          "en": "About 11 at signing, 12 at dispute; agreement ran to age 18"
+        },
+        "claimed_amount": {
+          "zh": "协商解约金约 18 万元（500 元/天）；起诉索赔 266.6666 万元",
+          "en": "Exit talks at about CNY 180,000 (CNY 500/day); lawsuit claimed CNY 2,666,666"
+        },
+        "cfa_position": {
+          "zh": "纠纷解决委员会先受理确认解约申请，后因机构向大连金州法院起诉而中止仲裁",
+          "en": "CFA dispute panel accepted a request to confirm termination, then stayed the case after the club sued in Dalian Jinzhou court"
+        },
+        "outcome": {
+          "zh": "民事诉讼进行中，自由身证明未决",
+          "en": "Civil case pending; free-agent certificate unresolved"
+        },
+        "summary": {
+          "zh": "2024-04-27 家长与嗨球签订免费培养至 18 岁的培训协议。2025 年家长因伤病等要求解约拿自由身，心理价约 5 万元。足协中止后，注册与参赛被程序卡住。",
+          "en": "On 27 Apr 2024 the family signed a free-training agreement through age 18. In 2025 they sought an exit and free-agent papers after injury; they offered about CNY 50,000. After the CFA stay, registration remains blocked."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "新京报：从索赔 18 万到 266 万",
+            "url": "https://www.bjnews.com.cn/detail/1759970230168228.html",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "中国足协就中止审理培训协议纠纷发声",
+            "url": "http://www.sportsol.com.cn/jingti/202509/t20250905_288948.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "yang-qiandong-evergrande-2026",
+        "year_range": "2026",
+        "status": "settled",
+        "confidence": "high",
+        "title": {
+          "zh": "杨黔东 / 恒大足校",
+          "en": "Yang Qiandong / Evergrande Football School"
+        },
+        "player_age": {
+          "zh": "2008-01-01 出生，2017 年签约，2026-01-01 年满 18 岁协议到期",
+          "en": "Born 1 Jan 2008; signed in 2017; agreement ended on 18th birthday, 1 Jan 2026"
+        },
+        "claimed_amount": {
+          "zh": "足校口头投入约 100 万元；按现行培训补偿测算约 45 万元量级，非正式裁决额",
+          "en": "School cited about CNY 1 million in costs; CFA-scale compensation is about CNY 450,000, not an award"
+        },
+        "cfa_position": {
+          "zh": "球员向纠纷解决委员会申请出具自由身证明；2026 新规已废止 2018 首签权文件",
+          "en": "Player asked the CFA dispute panel for a free-agent certificate; the 2026 rules repealed the 2018 first-contract circular"
+        },
+        "outcome": {
+          "zh": "2026-02-27 恒大足校官宣协商转会上海海港；补偿实付额未官宣",
+          "en": "On 27 Feb 2026 the school announced an agreed move to Shanghai Port; actual compensation was not disclosed"
+        },
+        "summary": {
+          "zh": "协议到期后足校主张优先签约权和违约损失，并谴责上海海港私下接触。最终三方协商完成转会，德转记为自由转会。不得把未公开金额写成零补偿或足协败诉。",
+          "en": "After expiry the school claimed first-signing rights and damages, and criticised Shanghai Port. The move was later agreed. Transfermarkt lists a free transfer. Undisclosed sums must not be written as zero compensation or a CFA defeat."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "直播吧：恒大足校官宣杨黔东转会海港",
+            "url": "https://news.zhibo8.com/zuqiu/2026-02-27/69a1a8ba4fe28native.htm",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "足球报：杨黔东申请自由身仲裁",
+            "url": "https://news.zhibo8.com/zuqiu/2026-02-11/698c05a417c81native.htm",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "wei-shihao-tang-shi-luneng-2014",
+        "year_range": "2013-2014",
+        "status": "withdrawn",
+        "confidence": "high",
+        "title": {
+          "zh": "韦世豪、唐诗 / 鲁能足校",
+          "en": "Wei Shihao and Tang Shi / Luneng Football School"
+        },
+        "player_age": {
+          "zh": "韦世豪 1995-04-08 出生，2005–2013 年在校，满 18 岁后未签鲁能职业合同",
+          "en": "Wei Shihao, born 8 Apr 1995, trained 2005–2013 and did not sign a Luneng employment contract after turning 18"
+        },
+        "claimed_amount": {
+          "zh": "网传千万索赔；足校声明否认并称已大幅降低索赔标准",
+          "en": "Media claimed a CNY 10 million demand; the school denied that figure and said it had already reduced the claim"
+        },
+        "cfa_position": {
+          "zh": "足校按民事培训合同起诉，称不直接适用足协或国际足联内部规定；海外首签按培训补偿处理",
+          "en": "The school sued as a civil training-contract case, saying FIFA/CFA internal rules did not apply; the overseas first club paid training compensation"
+        },
+        "outcome": {
+          "zh": "进入法院程序后足校撤诉；韦世豪加盟博阿维斯塔，后续转会鲁能仍可主张联合机制补偿",
+          "en": "The school later withdrew. Wei joined Boavista; Luneng could still claim solidarity on later transfers"
+        },
+        "summary": {
+          "zh": "满 18 岁出国试训触发国内培养方与国际规则冲突。2018 年首签权是此后为防类似“出口”补的土政策，且管不到已完成的海外注册。",
+          "en": "Leaving at 18 exposed a clash between domestic training contracts and FIFA first-contract rules. The 2018 first-sign policy came later and could not reach an already completed overseas registration."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "央视网：鲁能发布两小将违约声明",
+            "url": "http://sports.cntv.cn/2014/03/05/ARTI1394017470635909.shtml",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "人民网：案件进入法院审判程序",
+            "url": "http://sports.people.com.cn/n/2014/0306/c22176-24548681.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "wang-zhenao-wanda-2018",
+        "year_range": "2018-2019",
+        "status": "unresolved",
+        "confidence": "medium",
+        "title": {
+          "zh": "王振澳 / 万达西班牙计划",
+          "en": "Wang Zhen'ao / Wanda Spain programme"
+        },
+        "player_age": {
+          "zh": "2012 年起赴马竞受训，起诉时约 18 岁",
+          "en": "Trained at Atlético Madrid from 2012; about 18 when sued"
+        },
+        "claimed_amount": {
+          "zh": "培训费 3,027,432 元 + 违约金 1,700 万元，合计约 2,002.7 万元",
+          "en": "Training costs CNY 3,027,432 plus CNY 17 million damages, about CNY 20.027 million"
+        },
+        "cfa_position": {
+          "zh": "走朝阳法院教育培训合同纠纷，非足协裁决；2018 首签权对已办妥国际转出不溯及",
+          "en": "Heard as an education-training civil case in Chaoyang court, not CFA arbitration; the 2018 first-sign rule did not reach completed international transfers"
+        },
+        "outcome": {
+          "zh": "2018–2019 年开庭，公开渠道未见终审判决金额；球员当时加盟丹麦瓦埃勒",
+          "en": "Hearings in 2018–2019; no public final award found. He joined Vejle in Denmark"
+        },
+        "summary": {
+          "zh": "协议约定满 18 岁注册权归万达。球员失联后赴丹麦签约。被告抗辩应由足协管辖且违约金过高。天价违约金是否被支持，目前不能从公开判决确认。",
+          "en": "The agreement assigned registration rights to Wanda at 18. After contact was lost he signed in Denmark. The defence disputed jurisdiction and the size of damages. Whether the court upheld the headline figure is not confirmed from a public judgment."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "新京报：万达诉球员违约索赔两千万",
+            "url": "https://www.bjnews.com.cn/detail/154718084214226.html",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "中国青年报：培训合同民事纠纷跨界足球青训",
+            "url": "https://zqb.cyol.com/html/2019-05/21/nw.D110000zgqnb_20190521_1-05.htm",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "dalian-sun-2019-liaoning-0211",
+        "year_range": "2019",
+        "status": "judged",
+        "confidence": "high",
+        "title": {
+          "zh": "大连孙某某 / 某青少年足球俱乐部",
+          "en": "Sun (anonymised) / a Dalian youth club"
+        },
+        "player_age": {
+          "zh": "公开裁判转述未写明周岁",
+          "en": "Age not stated in public case summaries"
+        },
+        "claimed_amount": {
+          "zh": "按培训投入 5 倍索赔约 27 万元",
+          "en": "Claimed about CNY 270,000, five times training spend"
+        },
+        "cfa_position": {
+          "zh": "未走足协，法院按合同法调减过高违约金",
+          "en": "Not a CFA case; the court reduced excessive liquidated damages under contract law"
+        },
+        "outcome": {
+          "zh": "（2019）辽0211民初2718号：违约成立，改判实际损失的 130%，约 6 万元",
+          "en": "Case (2019) Liao 0211 Min Chu 2718: breach found, award cut to 130% of proven loss, about CNY 60,000"
+        },
+        "summary": {
+          "zh": "合同约定拒签首份职业合同或提前解约按投入 5 倍赔偿。法院认定教练工资等属于培养投入，但 5 倍过分高于损失。这是目前最清楚的司法调减样本。",
+          "en": "The contract set damages at five times training spend for refusing a first employment contract or leaving early. The court accepted coaching costs as loss but held a 5x multiplier excessive. This is the clearest judicial reduction sample."
+        },
+        "source_links": [
+          {
+            "type": "reference",
+            "label": "青训培训合同注意事项中的司法案例转述",
+            "url": "https://www.lysy90.com/story/32177",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "zhang-yuning-greentown-2015",
+        "year_range": "2014-2015",
+        "status": "contrast",
+        "confidence": "high",
+        "title": {
+          "zh": "张玉宁 / 杭州绿城（对照样本，非诉讼）",
+          "en": "Zhang Yuning / Hangzhou Greentown (contrast, not a lawsuit)"
+        },
+        "player_age": {
+          "zh": "未满 18 岁不能签海外工作合同，2015 年 18 岁正式加盟维特斯",
+          "en": "Could not sign an overseas employment contract before 18; joined Vitesse in 2015 after turning 18"
+        },
+        "claimed_amount": {
+          "zh": "2014 年合同约定海外转会毁约金约 15 万欧元",
+          "en": "2014 contract set an overseas buy-out around EUR 150,000"
+        },
+        "cfa_position": {
+          "zh": "符合未成年国际转会年龄门槛，未形成足协纠纷",
+          "en": "Fitted the age floor for international transfers; no CFA dispute"
+        },
+        "outcome": {
+          "zh": "绿城放行，2015-07 加盟荷甲维特斯",
+          "en": "Greentown released him; he joined Vitesse in July 2015"
+        },
+        "summary": {
+          "zh": "用来对照“谈拢的海外出口”与诉讼型培训协议冲突。毁约金写在职业合同里，由新俱乐部路径处理，而不是向家长索赔天价培训违约金。",
+          "en": "A contrast with litigated training exits: the buy-out sat in a playing contract and was handled as a club pathway, not a parental mega-penalty."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "新浪体育：国青小将收荷甲转会邀请",
+            "url": "http://sports.sina.com.cn/j/2015-01-14/03107481801.shtml",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "official",
+            "label": "国家体育总局：浙江足球输出首位留学生",
+            "url": "https://www.sport.gov.cn/n14471/n14482/n14519/c689945/content.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "guangzhou-r-f-compensation-2026",
+        "year_range": "2025-2026",
+        "status": "blocked",
+        "confidence": "medium",
+        "title": {
+          "zh": "原广州富力青训培训补偿追索",
+          "en": "Former Guangzhou R&F training-compensation claims"
+        },
+        "player_age": {
+          "zh": "涉及 2007–2009 年龄段已职业化球员，不是未成年人解约",
+          "en": "Concerns already professional 2007–2009 players, not a minor exit"
+        },
+        "claimed_amount": {
+          "zh": "按转会触发的协会培训补偿，金额个案未披露",
+          "en": "Association training compensation triggered by transfers; case-level sums not disclosed"
+        },
+        "cfa_position": {
+          "zh": "公开转述称因原单位已非足协注册会员，协会规则不再适用",
+          "en": "Public accounts say CFA rules no longer applied because the former body was not a registered member"
+        },
+        "outcome": {
+          "zh": "培养方称仲裁拿不到补偿；本页只记录协会态度，不把博主陈述写成正式裁决书",
+          "en": "The academy side said arbitration recovered nothing; this page records the reported CFA stance, not an unpublished award"
+        },
+        "summary": {
+          "zh": "说明培训补偿依赖培养单位持续作为会员存在。俱乐部解散或退出注册后，家长解约金和协会补偿都可能落空。",
+          "en": "Shows that training compensation depends on the training body remaining a member. After dissolution or deregistration, both parental penalties and association compensation can fail."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "公开博文转述：足协判定富力不是注册单位",
+            "url": "https://coal168.com/news/zuqiu/547.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      }
+    ],
+    "excluded": [
+      {
+        "id": "evergrande-2011-44m-unverified",
+        "reason": {
+          "zh": "恒大足校 2011 年龄段“索赔 4400 万、足协不予受理”仅见自媒体转述，文书真实性未核，不入库。",
+          "en": "The Evergrande 2011-age “CNY 44 million / CFA refused” story exists only in social-media recaps; the document is unverified and is excluded."
+        }
+      }
+    ]
   }
 }

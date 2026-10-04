@@ -4,6 +4,16 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-10-04
+
+### Added
+
+- Added a standalone youth-training dispute page in the main navigation, covering seven publicly checkable cases plus the 2018 first-contract and 2026 RSTP rule notes.
+
+### Data Scope Notes
+
+- Youth-training dispute cases keep liquidated damages and training compensation separate; pending lawsuits are not given legal conclusions.
+
 ## 2026-09-08
 
 ### Added

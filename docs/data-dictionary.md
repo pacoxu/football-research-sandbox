@@ -18,6 +18,7 @@
 | `data/raw/china-youth-development-coaches.json` | 中国基层、校园、足校、职业梯队与民间项目的具名青训教练样本。 | 是 |
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
 | `data/raw/football-stories.json` | 职业球员转型、教练实践、校园机构与公开争议的来源化故事。 | 是 |
+| `data/raw/youth-training-disputes.json` | 国内青少年培训协议、自由身、违约金与培训补偿公开案例。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 中国、日韩与北欧青训体系、项目、竞赛关系和年度快照。 | 是 |
@@ -143,6 +144,8 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 ## 足球故事
 
 `data/raw/football-stories.json` 为人物和机构提供可复用故事结构。`related_entities[]` 可引用教练、专题、专题人物、留洋记录或另一篇故事；页面只把引用用于导航，不改变原实体事实。
+
+`data/raw/youth-training-disputes.json` 汇总国内青少年培训协议纠纷。`cases[]` 必须同时记录年龄、主张金额、足协态度和最终结果；`claimed_amount` 是机构或当事人主张，不是已裁决金额。`cfa_rules[]` 记录协会文件口径，不替代个案结果。
 
 `public_disputes[]` 必须包含日期、主题、`claim_status`、`response_status`、具名发言人的转述、原始链接和编辑边界。单方有关违法、牟利、举报或伤害的说法只能记录为有归因主张，除非存在生效裁判或主管机关结论。故事中的身份辨析属于强约束：孙继海就读大连实验小学，不得列为东北路小学校友；1986年出生的王晓龙不得与1979年同名球员或王啸龙混合。
 
