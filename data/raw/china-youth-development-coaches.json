@@ -1,7 +1,7 @@
 {
   "id": "china-youth-development-coaches",
   "schema_version": 2,
-  "last_checked": "2026-07-25",
+  "last_checked": "2026-10-03",
   "scope": "中国境内长期从事男子青少年足球启蒙、梯队训练、校园足球或青训技术管理的具名教练样本。小学、体校、足校、职业俱乐部梯队、独立基地和民间项目分别标注；不与成年一线队或国字号主教练统计混算。",
   "coverage_status": "expanded-partial",
   "role_policy": {
@@ -92,12 +92,11 @@
         "province": "辽宁",
         "city": "大连"
       },
-      "role": "项目发起人、青训教练",
+      "role": "项目发起人、总教练",
       "age_bands": [
         "u9",
         "u12",
-        "u16",
-        "u18"
+        "u13"
       ],
       "period": {
         "start": "2023",
@@ -105,7 +104,7 @@
         "precision": "year",
         "status": "current-verified"
       },
-      "profile_summary": "退役后回到大连推进长期青训。金普新区官方项目覆盖8至18岁完整周期；中国足球发展基金会2026年报道确认孙继海团队的精英梯队由大连市嗨球足球俱乐部承载，并获得公益项目支持。",
+      "profile_summary": "退役后回到大连推进长期青训。金普新区官方项目设计覆盖8至18岁；基金会2026年确认大连市嗨球足球俱乐部承载其精英梯队，已组2013、2015、2017三个年龄段、近90名球员，当前孩子约8至13岁。孙继海任总教练。公开可核教练组还包括朱永胜、吴忠俊、王军、张烈、邹鹏；其余名额未公布全表。截至2026-10-03，未见嗨球球员进入足协U15/U17集训或职业一线队。",
       "methodology_tags": [
         "退役球员转教练",
         "十年培养周期",
@@ -118,21 +117,290 @@
           "type": "government",
           "label": "大连金普新区：孙继海青少年足球项目",
           "url": "https://dljp.gov.cn/hd/005001/20240122/c6277e67-3842-4a05-b466-4871d8d4179d.html",
-          "checked_at": "2026-07-25",
-          "claim": "确认项目覆盖8至18岁、十年培养周期、全国选拔和数据管理框架。"
+          "checked_at": "2026-10-03",
+          "claim": "确认项目覆盖8至18岁、十年培养周期、全国选拔，孙继海出任总教练。"
         },
         {
           "type": "official-foundation",
-          "label": "中国足球发展基金会：孙继海与嗨球少年",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（上）",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0415/694192.html",
+          "checked_at": "2026-10-03",
+          "claim": "确认大连嗨球已集结3支梯队、近90名球员，目标为培养能进五大联赛的中国球员。"
+        },
+        {
+          "type": "official-foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
           "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
-          "checked_at": "2026-07-25",
-          "claim": "确认孙继海团队持续训练、大连嗨球精英梯队及2025年起的基金会公益支持。"
+          "checked_at": "2026-10-03",
+          "claim": "确认2013/2015/2017三个年龄段、体教融合、基金会公益支持，并点名教练组核心成员。"
         }
       ],
       "verification": {
         "status": "verified",
-        "last_checked": "2026-07-25",
-        "notes": "政府与基金会来源确认项目和实际青训工作。起始年份按2023年官方合作节点记录，不向前推断未公开的组织任期。"
+        "last_checked": "2026-10-03",
+        "notes": "政府与基金会确认项目和总教练身份。当前在训年龄以基金会2026年4月稿为准（最大约13岁）；8至18岁是项目设计，不是已经组齐U16/U18队。教练组其余未具名席位列入watchlist。"
+      }
+    },
+    {
+      "id": "cn-zhu-yongsheng-haiqiu",
+      "story_id": "sun-jihai-player-to-coach",
+      "name": {
+        "zh": "朱永胜",
+        "en": "Zhu Yongsheng",
+        "native": "朱永胜"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "大连市嗨球足球俱乐部",
+        "short_name": "嗨球少年",
+        "type": "independent-project",
+        "province": "辽宁",
+        "city": "大连"
+      },
+      "role": "青训总监",
+      "age_bands": [
+        "u12",
+        "u13"
+      ],
+      "period": {
+        "start": "2022",
+        "end": null,
+        "precision": "year",
+        "status": "current-reported"
+      },
+      "profile_summary": "孙继海国奥时期助手。早期在遵义嗨球担任青训总监并执教2009年龄段；基金会2026年报道仍将其列为嗨球教练组国字号教练。不把其人和时期带过的职业队履历写成嗨球输送成果。",
+      "methodology_tags": [
+        "青训总监",
+        "精英梯队",
+        "体教融合",
+        "低龄基础"
+      ],
+      "source_links": [
+        {
+          "type": "official-foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+          "checked_at": "2026-10-03",
+          "claim": "基金会2026年4月点名国字号教练朱永胜进入孙继海嗨球教练组。"
+        },
+        {
+          "type": "secondary-media",
+          "label": "嗨球青训早期梯队与教练组报道",
+          "url": "https://www.163.com/dy/article/IB01DM6905299LQ3.html",
+          "checked_at": "2026-10-03",
+          "claim": "早期报道确认朱永胜为嗨球青训总监，并曾执教2009年龄段及遵义基地。"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "last_checked": "2026-10-03",
+        "notes": "人名、总监职务和嗨球关联可核。证书等级未公布。2009年龄段是否仍在大连现役编制，公开材料未更新，故年龄段按当前项目的低龄梯队记录，不把早期2009队写成仍在运营。"
+      }
+    },
+    {
+      "id": "cn-wu-zhongjun-haiqiu",
+      "story_id": "sun-jihai-player-to-coach",
+      "name": {
+        "zh": "吴忠俊",
+        "en": "Wu Zhongjun",
+        "native": "吴忠俊"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "大连市嗨球足球俱乐部2013年龄段梯队",
+        "short_name": "嗨球2013年龄段",
+        "type": "independent-project",
+        "province": "辽宁",
+        "city": "大连"
+      },
+      "role": "2013年龄段主教练",
+      "age_bands": [
+        "u13"
+      ],
+      "period": {
+        "start": "2022",
+        "end": null,
+        "precision": "year",
+        "status": "current-reported"
+      },
+      "profile_summary": "早期报道确认其执教嗨球2013年龄段；基金会2026年仍点名吴忠俊在教练组。媒体关于其个人曾培养多名国字号球员的说法属于其既往履历，不是嗨球输送统计。",
+      "methodology_tags": [
+        "单年龄段",
+        "U13",
+        "精英梯队"
+      ],
+      "source_links": [
+        {
+          "type": "official-foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+          "checked_at": "2026-10-03",
+          "claim": "基金会2026年4月点名吴忠俊为嗨球教练组成员。"
+        },
+        {
+          "type": "secondary-media",
+          "label": "嗨球青训早期梯队与教练组报道",
+          "url": "https://www.163.com/dy/article/IB01DM6905299LQ3.html",
+          "checked_at": "2026-10-03",
+          "claim": "早期报道确认吴忠俊为嗨球2013年龄段主教练。"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "last_checked": "2026-10-03",
+        "notes": "嗨球2013年龄段主教练身份可核。个人历史培养人数不得计入嗨球产出。AFC证书等级未核。"
+      }
+    },
+    {
+      "id": "cn-wang-jun-haiqiu",
+      "story_id": "sun-jihai-player-to-coach",
+      "name": {
+        "zh": "王军",
+        "en": "Wang Jun",
+        "native": "王军"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "大连市嗨球足球俱乐部",
+        "short_name": "嗨球少年",
+        "type": "independent-project",
+        "province": "辽宁",
+        "city": "大连"
+      },
+      "role": "守门员教练",
+      "age_bands": [
+        "u9",
+        "u12",
+        "u13"
+      ],
+      "period": {
+        "start": "2022",
+        "end": null,
+        "precision": "year",
+        "status": "current-reported"
+      },
+      "profile_summary": "大连籍守门员教练。早期报道与基金会2026年稿均确认其在嗨球组内。同事转述其带过大量职业门将，只作背景，不作为嗨球门将输送证据。",
+      "methodology_tags": [
+        "守门员",
+        "精英梯队"
+      ],
+      "source_links": [
+        {
+          "type": "official-foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+          "checked_at": "2026-10-03",
+          "claim": "基金会2026年4月点名曾培养多名国门的王军进入嗨球教练组。"
+        },
+        {
+          "type": "secondary-media",
+          "label": "嗨球青训早期梯队与教练组报道",
+          "url": "https://www.163.com/dy/article/IB01DM6905299LQ3.html",
+          "checked_at": "2026-10-03",
+          "claim": "早期报道确认王军为嗨球守门员教练。"
+        }
+      ],
+      "verification": {
+        "status": "verified",
+        "last_checked": "2026-10-03",
+        "notes": "嗨球守门员教练身份可核。职业门将培养数量来自同事转述，未逐人核对，不写入成果字段。"
+      }
+    },
+    {
+      "id": "cn-zhang-lie-haiqiu",
+      "story_id": "sun-jihai-player-to-coach",
+      "name": {
+        "zh": "张烈",
+        "en": "Zhang Lie",
+        "native": "张烈"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "大连市嗨球足球俱乐部",
+        "short_name": "嗨球少年",
+        "type": "independent-project",
+        "province": "辽宁",
+        "city": "大连"
+      },
+      "role": "教练组成员",
+      "age_bands": [
+        "u9",
+        "u12",
+        "u13"
+      ],
+      "period": {
+        "start": "2026",
+        "end": null,
+        "precision": "year",
+        "status": "current-reported"
+      },
+      "profile_summary": "前国门。基金会2026年4月点名进入孙继海嗨球教练组。公开材料未写清其带训年龄段、是否全职及证书等级，故岗位只记教练组成员。",
+      "methodology_tags": [
+        "退役球员转教练",
+        "守门员",
+        "精英梯队"
+      ],
+      "source_links": [
+        {
+          "type": "official-foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+          "checked_at": "2026-10-03",
+          "claim": "基金会点名前国门张烈进入嗨球教练组。"
+        }
+      ],
+      "verification": {
+        "status": "needs-review",
+        "last_checked": "2026-10-03",
+        "notes": "人名与组内身份仅基金会一文可核。起始年份按该文核查年记录，不向前推断。具体岗位和年龄段待俱乐部或赛事秩序册。"
+      }
+    },
+    {
+      "id": "cn-zou-peng-haiqiu",
+      "story_id": "sun-jihai-player-to-coach",
+      "name": {
+        "zh": "邹鹏",
+        "en": "Zou Peng",
+        "native": "邹鹏"
+      },
+      "nationality": "China PR",
+      "organization": {
+        "name": "大连市嗨球足球俱乐部",
+        "short_name": "嗨球少年",
+        "type": "independent-project",
+        "province": "辽宁",
+        "city": "大连"
+      },
+      "role": "教练组成员",
+      "age_bands": [
+        "u9",
+        "u12",
+        "u13"
+      ],
+      "period": {
+        "start": "2026",
+        "end": null,
+        "precision": "year",
+        "status": "current-reported"
+      },
+      "profile_summary": "前国奥球员。基金会2026年4月点名进入嗨球教练组。公开材料未写清带训年龄段和是否全职，故岗位只记教练组成员。",
+      "methodology_tags": [
+        "退役球员转教练",
+        "精英梯队"
+      ],
+      "source_links": [
+        {
+          "type": "official-foundation",
+          "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+          "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+          "checked_at": "2026-10-03",
+          "claim": "基金会点名前国奥球员邹鹏进入嗨球教练组。"
+        }
+      ],
+      "verification": {
+        "status": "needs-review",
+        "last_checked": "2026-10-03",
+        "notes": "人名与组内身份仅基金会一文可核。起始年份按该文核查年记录。具体岗位待俱乐部或赛事秩序册。"
       }
     },
     {
@@ -933,6 +1201,10 @@
     {
       "organization": "中国足球小将",
       "need": "已拆2014批次董路实际比赛职责，并保留徐亮、毛剑卿2023年教练组快照；2015、2016批次目前只有球员或参赛线索，尚无可核的具名官方教练名单。继续区分临时合作与长期训练。"
+    },
+    {
+      "organization": "大连市嗨球足球俱乐部",
+      "need": "基金会写教练组由亚足联职业级、A级教练领衔。公开人数快照约为早期7人、2024年底至2025年11人、2026年5月访谈约12人。已核孙继海、朱永胜、吴忠俊、王军、张烈、邹鹏；其余席位、证书等级、分年龄段职责和完整球员名单待俱乐部或中青赛秩序册。不得把未具名孩子写入主球员库，也不得把吴忠俊个人历史国字号培养人数算作嗨球输送。"
     }
   ]
 }
