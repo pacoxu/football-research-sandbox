@@ -7,7 +7,7 @@ test("coaches page exposes development and national youth coach datasets", async
   const dataset = await loadDataset();
   const page = await fs.readFile(new URL("../coaches.html", import.meta.url), "utf8");
 
-  assert.equal(dataset.chinaYouthDevelopmentCoaches.coaches.length, 16);
+  assert.equal(dataset.chinaYouthDevelopmentCoaches.coaches.length, 21);
   assert.equal(dataset.chinaMenYouthCoaches.team_cycles.length, 5);
   assert.match(page, /id="developmentCoachGrid"/);
   assert.match(page, /id="nationalCoachGrid"/);
@@ -40,7 +40,8 @@ test("all primary site pages link to the coaches directory", async () => {
     "youth-league.html",
     "lineup.html",
     "stories.html",
-    "story.html"
+    "story.html",
+    "milestones.html"
   ];
   for (const pageName of pages) {
     const page = await fs.readFile(new URL(`../${pageName}`, import.meta.url), "utf8");
@@ -60,6 +61,11 @@ test("coach cards can link to sourced football stories", async () => {
     new Set([
       "cn-wang-xiaolong-foundation-phase",
       "cn-sun-jihai-haiqiu",
+      "cn-zhu-yongsheng-haiqiu",
+      "cn-wu-zhongjun-haiqiu",
+      "cn-wang-jun-haiqiu",
+      "cn-zhang-lie-haiqiu",
+      "cn-zou-peng-haiqiu",
       "cn-liu-zhongyun-dongbeilu-primary"
     ])
   );

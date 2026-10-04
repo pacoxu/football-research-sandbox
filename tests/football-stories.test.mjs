@@ -70,6 +70,11 @@ test("Sun Jihai is linked to Experimental Primary School, not Dongbeilu", async 
   assert.ok(sun.key_facts.some((fact) => fact.value.zh === "大连实验小学"));
   assert.ok(!dongbeilu.notable_alumni.includes("孙继海"));
   assert.match(dongbeilu.identity_note.zh, /不同学校/);
+  assert.equal(sun.public_disputes.length, 1);
+  assert.equal(sun.public_disputes[0].id, "haiqiu-zhang-zhuoyi-contract-2025");
+  assert.match(sun.public_disputes[0].editorial_note.zh, /不判断违约是否成立/);
+  assert.ok(sun.source_links.some((source) => source.url.includes("thecfa.cn/qingchaoliansai/20260920/38193")));
+  assert.ok(sun.related_entities.some((entity) => entity.id === "cn-zhu-yongsheng-haiqiu"));
 });
 
 test("story pages and cross-entry rendering are wired into the site", async () => {

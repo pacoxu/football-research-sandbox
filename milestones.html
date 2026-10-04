@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>足球故事 | 青训球员追踪站</title>
-    <meta name="description" content="查看职业球员、青训教练、校园足球机构与结构性议题的可追溯专题。" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260802-transition-story" />
+    <title>2026 里程碑 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="对照 2026 年中国男足 U23 亚洲杯亚军、U17 进世少赛和亚运会铜牌的历史间隔口径。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css?v=20261004-milestones" />
   </head>
-  <body data-page="stories">
+  <body data-page="milestones">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -39,25 +42,34 @@
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="stories.hero.eyebrow">Football Stories</p>
-            <h1 data-i18n="stories.hero.title">足球故事</h1>
-            <p class="hero-text" data-i18n="stories.hero.text">把球员生涯、教练实践、校园传统、结构议题和公开争议放回时间线，并保留事实边界与原始来源。</p>
+            <p class="eyebrow" data-i18n="milestones.hero.eyebrow">2026 Milestones</p>
+            <h1 data-i18n="milestones.hero.title">2026 中国男足里程碑</h1>
+            <p class="hero-text" data-i18n="milestones.hero.text">对照 U23 亚洲杯亚军、U17 进世少赛和亚运会铜牌分别隔了多久，以及每条成绩不能写成什么。</p>
           </div>
           <aside class="hero-spotlight">
-            <p class="eyebrow" data-i18n="stories.coverage.eyebrow">Coverage</p>
-            <h2 id="storiesCoverage" data-i18n="common.loading">载入中</h2>
-            <p id="storiesCheckedAt" class="hero-side-note"></p>
+            <p class="eyebrow" data-i18n="milestones.coverage.eyebrow">Coverage</p>
+            <h2 id="milestonesCoverage" data-i18n="common.loading">载入中</h2>
+            <p id="milestonesCheckedAt" class="hero-side-note"></p>
           </aside>
         </section>
         <section class="content-panel">
+          <p id="milestonesScopeNote" class="section-note"></p>
+          <div id="milestonesGrid" class="milestone-grid"></div>
+        </section>
+        <section class="content-panel milestone-poster-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="stories.list.eyebrow">Profiles, Institutions & Issues</p>
-              <h2 data-i18n="stories.list.title">人物、机构与议题专题</h2>
+              <p class="eyebrow" data-i18n="milestones.poster.eyebrow">Share Card</p>
+              <h2 data-i18n="milestones.poster.title">分享图</h2>
             </div>
           </div>
-          <p id="storiesEditorialPolicy" class="section-note"></p>
-          <div id="storiesGrid" class="story-grid"></div>
+          <figure class="milestone-poster">
+            <img
+              id="milestonesPoster"
+              src="./assets/xiaohongshu-china-football-2026.jpg"
+              alt="2026 中国足球三项成绩的历史间隔图"
+            />
+          </figure>
         </section>
       </main>
       <footer class="site-footer">

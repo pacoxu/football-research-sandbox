@@ -11,6 +11,7 @@ import {
 import { validateJsonSchemas } from "./validate-json-schemas.mjs";
 import { loadForecastInput, validateForecastInput } from "./lib/world-cup-forecast.mjs";
 import { validateBigFiveDebutForecastInput } from "./lib/big-five-debut-forecast.mjs";
+import { validateSpainFootballSystem } from "./lib/spain-football-system.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -2312,6 +2313,68 @@ function validateChinaYouthDevelopmentCoaches(archive) {
   }
 }
 
+function requireLocalizedText(value, label) {
+  assert(value && typeof value === "object", `Missing localized text: ${label}`);
+  assert(typeof value.zh === "string" && value.zh.trim(), `Missing zh text: ${label}`);
+  assert(typeof value.en === "string" && value.en.trim(), `Missing en text: ${label}`);
+}
+
+function validateChina2026Milestones(archive, dataset) {
+  assert(archive?.id === "china-men-2026-milestones", "Unexpected 2026 milestones id");
+  assert(archive.year === 2026, "2026 milestones year must be 2026");
+  assert(isIsoDate(archive.checked_at), "Invalid 2026 milestones checked_at");
+  requireLocalizedText(archive.title, "milestones.title");
+  requireLocalizedText(archive.lede, "milestones.lede");
+  requireLocalizedText(archive.scope_note, "milestones.scope_note");
+  assert(archive.poster?.src === "./assets/xiaohongshu-china-football-2026.jpg", "Unexpected 2026 milestones poster path");
+  requireLocalizedText(archive.poster?.alt, "milestones.poster.alt");
+  assert(Array.isArray(archive.items) && archive.items.length === 3, "2026 milestones must contain three results");
+
+  const tournamentIds = new Set(
+    [...dataset.tournaments, ...dataset.tournamentArchive].map((entry) => entry.id)
+  );
+  const expectedIds = ["u23-asian-cup", "u17-world-cup-path", "asian-games-bronze"];
+  const actualIds = archive.items.map((item) => item.id);
+  assert(
+    actualIds.length === expectedIds.length && actualIds.every((id, index) => id === expectedIds[index]),
+    "2026 milestone ids drifted"
+  );
+
+  const seen = new Set();
+  for (const item of archive.items) {
+    assert(!seen.has(item.id), `Duplicate 2026 milestone: ${item.id}`);
+    seen.add(item.id);
+    assert(tournamentIds.has(item.competition_id), `Unknown milestone competition: ${item.id}:${item.competition_id}`);
+    if (item.related_competition_id) {
+      assert(
+        tournamentIds.has(item.related_competition_id),
+        `Unknown related competition: ${item.id}:${item.related_competition_id}`
+      );
+    }
+    assert(isIsoDate(item.date), `Invalid milestone date: ${item.id}`);
+    for (const field of ["result", "metric", "interval", "title", "summary", "do_not_write"]) {
+      requireLocalizedText(item[field], `milestones.${item.id}.${field}`);
+    }
+    assert(Array.isArray(item.sources) && item.sources.length >= 2, `Insufficient sources on ${item.id}`);
+    for (const source of item.sources) {
+      assert(source.label && /^https:\/\//.test(source.url), `Invalid source on ${item.id}`);
+    }
+  }
+
+  assert(
+    archive.items[0].summary.zh.includes("创办以来") && archive.items[0].do_not_write.zh.includes("队史最佳"),
+    "U23 milestone must keep competition-best vs all-time-best boundary"
+  );
+  assert(
+    archive.items[1].summary.zh.includes("第 7 次") && archive.items[1].do_not_write.zh.includes("世青赛"),
+    "U17 milestone must keep seventh appearance and U17/U20 split"
+  );
+  assert(
+    archive.items[2].summary.zh.includes("28 年") && archive.items[2].do_not_write.zh.includes("1994"),
+    "Asian Games milestone must keep 28-year medal return and 1994 silver ceiling"
+  );
+}
+
 function validateFootballStories(archive, dataset) {
   assert(archive?.schema_version === 1, "Invalid football_stories schema_version");
   assert(isIsoDate(archive?.last_checked), "Invalid football_stories last_checked");
@@ -3788,6 +3851,15 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     dataset.overseasHistory
   );
   validateEuropeTopLeaguesJapanKorea(dataset.europeTopLeaguesJapanKorea);
+  validateSpainFootballSystem(
+    dataset.spainFootballSystem,
+    playerIds,
+    new Set(
+      dataset.overseasHistory.countries.flatMap((country) =>
+        (country.featured_records ?? []).map((record) => record.id)
+      )
+    )
+  );
 
   for (const dossier of dataset.dossiers) {
     assert(dossier.id && dossier.name, "Dossier must include id and name");
@@ -3938,6 +4010,10 @@ export async function validateData(referenceDate = new Date().toISOString().slic
 
   validateFootballStories(dataset.footballStories, dataset);
   validateYouthTrainingDisputes(dataset.youthTrainingDisputes);
+
+  if (dataset.china2026Milestones !== null) {
+    validateChina2026Milestones(dataset.china2026Milestones, dataset);
+  }
 
   if (dataset.bigFiveAsianCoaches !== null) {
     validateBigFiveAsianCoaches(dataset.bigFiveAsianCoaches);

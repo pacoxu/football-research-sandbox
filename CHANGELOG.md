@@ -10,6 +10,8 @@ This project tracks research data, so changelog entries should separate code cha
 
 - Added a standalone youth-training dispute page in the main navigation, covering seven publicly checkable cases plus the 2018 first-contract and 2026 RSTP rule notes.
 - Added CFA-verified Chinese names for China U23 / Asian Games players so they can be searched on the site, including Zhao Songyuan's 2026 senior-camp tag.
+- Added a public 2026 China men's milestones page covering the U23 Asian Cup runners-up, U17 World Cup qualification and Asian Games bronze, with sourced historical intervals and a share graphic.
+- Added a dedicated Spain league-system page that splits the senior pyramid, U19/U16 youth pyramid, professional vs youth contracts, and documented Chinese player placements.
 
 ### Updated
 
@@ -19,6 +21,44 @@ This project tracks research data, so changelog entries should separate code cha
 
 - Youth-training dispute cases keep liquidated damages and training compensation separate; pending lawsuits are not given legal conclusions.
 - Native names stay unresolved unless a CFA, league, club, school, or government source is attached.
+
+### Corrected
+
+- Corrected the 2004 AFC U-17 Championship archive: China beat Korea DPR 1-0 in the final to win the title. The 1-3 result against Japan was a group match, not the final.
+
+## 2026-10-03
+
+### Added
+
+- Closed the 2026 Aichi-Nagoya Asian Games men's football file with China's six-match path and bronze medal: semi-final 1-2 to Korea Republic, third-place match 2-2 then 4-3 on penalties against Uzbekistan.
+- Closed the FIFA World Cup 2026 archive after the 19 July final: Spain beat Argentina 1-0 after extra time; China remain did-not-qualify. Japan's Round of 32 1-2 loss to Brazil is stored from the FIFA match report; Korea Republic and IR Iran are recorded as group-stage exits without match scores.
+- Recorded the FIFA U-17 World Cup Qatar 2026 official draw, with China PR in Group H against Spain, Fiji and Morocco. CAF 1 / CAF 2 remain draw placeholders.
+- Expanded Haiqiu Shaonian from Sun Jihai alone to six named coaches (Zhu Yongsheng, Wu Zhongjun, Wang Jun, Zhang Lie, Zou Peng), with a sourced U13 10th-place national-youth-league snapshot and the Zhang Zhuoyi contract dispute kept as unadjudicated claims.
+
+### Updated
+
+- Refreshed the CSL 2026 monthly youth-stats check through the Asian Games league pause. Liu Chengyu's first-team Super League line is extended to 12 appearances and 414 minutes as of 6 September; other tracked U21/U23 samples keep null totals where aggregators disagree.
+- Moved Lin Zihao's current registration from FK Vozdovac U19 to the FK Vozdovac first team after the club announcement, and rechecked Zhang Jiaming, Li Dongchen and Liu Shaoziyang without inventing minutes.
+
+### Data Scope Notes
+
+- Group and knockout scores through the semi-final use CFA and/or Xinhua reports. The bronze-medal shoot-out is stored from a public-media snapshot until an official CFA match report is captured.
+- The Korea Republic–Japan gold-medal result is not recorded yet; champion and runner-up remain empty.
+- Remaining AFC World Cup 2026 exits beyond Japan/Korea/Iran are not stored as scores. U-17 World Cup CAF placeholders are not replaced with Mozambique/Uganda until FIFA republishes named groups.
+- Haiqiu remains a foundation-age programme. About 90 unnamed players are not written into the main player library; Cui Yijun has no verified birth date; Wu Zhongjun's historical national-team pupils are not Haiqiu outputs; Zhang Lie and Zou Peng stay needs-review until a club or match list gives a role.
+
+## 2026-09-26
+
+### Added
+
+- Recorded the September 2026 China men's national-team camps: the senior fourth camp, U19 fourth camp, U17 sixth camp, U16 fifth camp and U15 fifth camp, including official squads.
+- Recorded the CFA match reports for China 3-0 Maldives on 2026-09-24 and China U16 3-3 Kyrgyzstan U16 in the Shenyang Peace Cup.
+
+### Corrected
+
+- Moved Lyu Mengyang's current registration from Europa Juvenil B to RCD Espanyol Juvenil B after the club announcement, and kept the 2025/26 Europa season totals as history.
+- Recorded his 2026-09-20 Juvenil B debut goal as one appearance and one goal, without storing the conflicting substitute minute.
+- Updated the U16 head coach on the latest camp notice to Zhang Yaokun. Zhang Lindong's camp unit is listed as L'Hospitalet, while his stored registration remains DAMM until a club or league registration page confirms the move.
 
 ## 2026-09-08
 

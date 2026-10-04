@@ -1,0 +1,144 @@
+{
+  "id": "china-men-2026-milestones",
+  "year": 2026,
+  "checked_at": "2026-10-03",
+  "title": {
+    "zh": "2026 中国男足里程碑",
+    "en": "China men's 2026 milestones"
+  },
+  "lede": {
+    "zh": "2026 年中国男足国字号连续兑现三项可核成绩。三项不能混成同一种“最佳”，间隔对照点也不相同。",
+    "en": "China's men's national-youth sides posted three verifiable results in 2026. They are not the same kind of “best finish”, and each interval uses a different comparison point."
+  },
+  "scope_note": {
+    "zh": "口语里常把 U17 世界杯叫成“世青赛”。站内仍区分：世少赛是 FIFA U-17 世界杯，2026 已获资格；世青赛是 FIFA U-20 世界杯，中国男足最近一次仍是 2005 荷兰。",
+    "en": "Chinese media often call the U17 World Cup “the youth World Cup”. This site keeps the split: the U17 World Cup is the 2026 qualification; the U20 World Cup last included China in 2005."
+  },
+  "poster": {
+    "src": "./assets/xiaohongshu-china-football-2026.jpg",
+    "alt": {
+      "zh": "2026 中国足球三项成绩的历史间隔图：U23 创办最佳、U17 时隔 21 年、亚运时隔 28 年",
+      "en": "Graphic of China’s three 2026 results and their historical intervals"
+    }
+  },
+  "items": [
+    {
+      "id": "u23-asian-cup",
+      "competition_id": "afc-u23-2026",
+      "date": "2026-01-24",
+      "result": {
+        "zh": "亚军",
+        "en": "Runners-up"
+      },
+      "metric": {
+        "zh": "创办最佳",
+        "en": "Best since founding"
+      },
+      "interval": {
+        "zh": "时隔 22 年再进洲际决赛",
+        "en": "Continental final after 22 years"
+      },
+      "title": {
+        "zh": "U23 亚洲杯亚军",
+        "en": "U23 Asian Cup runners-up"
+      },
+      "summary": {
+        "zh": "决赛 0 比 4 负于日本。这是该项赛事创办以来首次小组出线、首次淘汰赛、首次决赛。已建档的此前决赛圈届次均止步小组赛。公开口径另记时隔 22 年再进洲际大赛决赛，对照点是 2004 成年亚洲杯亚军，不是上一届 U23 亚洲杯。",
+        "en": "Lost the final 0-4 to Japan. First group-stage exit, first knockout appearance and first final in this competition. Archived previous finals campaigns all ended in the group stage. The 22-year gap refers to the 2004 senior Asian Cup final, not the previous U23 edition."
+      },
+      "do_not_write": {
+        "zh": "不能写成中国男足各级队史最佳，也不能写成高于 2004 成年亚洲杯亚军。",
+        "en": "Not an all-time peak across China’s senior and youth teams, and not a better finish than the 2004 senior Asian Cup runners-up."
+      },
+      "sources": [
+        {
+          "label": "China Daily / Xinhua",
+          "url": "https://cn.chinadaily.com.cn/a/202601/25/WS697561aaa310942cc499caca.html"
+        },
+        {
+          "label": "CFA U23 team page",
+          "url": "https://www.thecfa.cn/nzu23/index.html"
+        }
+      ]
+    },
+    {
+      "id": "u17-world-cup-path",
+      "competition_id": "afc-u17-2026",
+      "related_competition_id": "fifa-u17-world-cup-2026",
+      "date": "2026-05-22",
+      "result": {
+        "zh": "亚洲杯亚军，并获世少赛资格",
+        "en": "Asian Cup runners-up and U17 World Cup qualification"
+      },
+      "metric": {
+        "zh": "21 年",
+        "en": "21 years"
+      },
+      "interval": {
+        "zh": "时隔 21 年重返世少赛",
+        "en": "Back at the U17 World Cup after 21 years"
+      },
+      "title": {
+        "zh": "U17 亚洲杯进世少赛",
+        "en": "U17 Asian Cup path to the World Cup"
+      },
+      "summary": {
+        "zh": "小组出线即锁定 2026 FIFA U-17 世界杯资格，决赛 2 比 3 负日本获亚军。亚洲决赛是 2004 年夺冠后近 22 年最佳，低于 1992、2004 两座冠军。世少赛距 2005 秘鲁时隔 21 年，为队史第 7 次资格，不是第 6 次。",
+        "en": "Group-stage qualification locked a 2026 FIFA U-17 World Cup place; the final was a 2-3 loss to Japan. The Asian final is the best finish in 22 years since the 2004 title, below the 1992 and 2004 championships. The World Cup return is 21 years after Peru 2005 and China’s seventh appearance, not the sixth."
+      },
+      "do_not_write": {
+        "zh": "不能写成亚洲杯队史最佳，不能写成世青赛资格，也不能写成队史第 6 次世少赛。",
+        "en": "Not the all-time U17 Asian best, not a U20 World Cup qualification, and not China’s sixth U17 World Cup appearance."
+      },
+      "sources": [
+        {
+          "label": "CFA: best Asian finish in 22 years",
+          "url": "https://www.thecfa.cn/xinwenu17/20260523/37719.html"
+        },
+        {
+          "label": "CFA: U17 World Cup return after 21 years",
+          "url": "https://www.thecfa.cn/zhongguozhidui/20260513/37660.html"
+        }
+      ]
+    },
+    {
+      "id": "asian-games-bronze",
+      "competition_id": "asian-games-men-2026",
+      "date": "2026-10-03",
+      "result": {
+        "zh": "铜牌",
+        "en": "Bronze"
+      },
+      "metric": {
+        "zh": "28 年",
+        "en": "28 years"
+      },
+      "interval": {
+        "zh": "时隔 28 年再获亚运奖牌",
+        "en": "Asian Games medal after 28 years"
+      },
+      "title": {
+        "zh": "亚运会男足铜牌",
+        "en": "Asian Games men’s bronze"
+      },
+      "summary": {
+        "zh": "铜牌战常规时间 2 比 2，点球 4 比 3 击败乌兹别克斯坦。路径为小组头名、八强 3 比 0 泰国、半决赛 1 比 2 负韩国。这是 1998 曼谷铜牌后时隔 28 年再获奖牌，也是 2002 年改为 U23 赛制后的最佳成绩。",
+        "en": "The bronze match finished 2-2, then 4-3 on penalties against Uzbekistan, after topping the group, beating Thailand 3-0 and losing 1-2 to Korea Republic in the semi-final. It is the first Asian Games medal since Bangkok 1998 and the best U23-era finish since the age limit began in 2002."
+      },
+      "do_not_write": {
+        "zh": "不能写成队史最佳。队史最高仍是 1994 广岛银牌；1978 曼谷是铜牌。",
+        "en": "Not the all-time Asian Games peak. Hiroshima 1994 silver remains the best finish; Bangkok 1978 was bronze."
+      },
+      "sources": [
+        {
+          "label": "CFA bronze report",
+          "url": "https://www.thecfa.cn/nzyyhxw/20261003/38255.html"
+        },
+        {
+          "label": "Olympics.com results tracker",
+          "url": "https://www.olympics.com/zh/news/2026-aichi-nagoya-asian-games-chinese-mens-football-team-results-tracker"
+        }
+      ]
+    }
+  ]
+}

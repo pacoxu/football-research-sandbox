@@ -295,6 +295,10 @@ export async function loadDataset() {
       cases: []
     }
   );
+  const china2026Milestones = await readOptionalJson(
+    path.join(paths.raw, "china-2026-milestones.json"),
+    null
+  );
   const bigFiveAsianCoaches = await readOptionalJson(
     path.join(paths.raw, "big-five-asian-coaches.json"),
     null
@@ -306,6 +310,10 @@ export async function loadDataset() {
   const youthDevelopmentSystems = await readOptionalJson(
     path.join(paths.raw, "youth-development-systems.json"),
     { schema_version: 1, checked_at: null, systems: [] }
+  );
+  const spainFootballSystem = await readOptionalJson(
+    path.join(paths.raw, "spain-football-system.json"),
+    { schema_version: 1, checked_at: null, pyramids: [], contract_types: [], placements: [], source_links: [] }
   );
   const bigFiveDebutForecast = await readJson(
     path.join(paths.raw, "big-five-debut-forecast.json")
@@ -325,9 +333,11 @@ export async function loadDataset() {
     chinaYouthDevelopmentCoaches,
     footballStories,
     youthTrainingDisputes,
+    china2026Milestones,
     bigFiveAsianCoaches,
     asianCoaches,
     youthDevelopmentSystems,
+    spainFootballSystem,
     bigFiveDebutForecast,
     clubNameOverrides,
     playerMarketValues,

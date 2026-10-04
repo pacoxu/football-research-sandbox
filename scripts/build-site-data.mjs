@@ -52,9 +52,11 @@ export async function buildSiteData({ outputDirectory = paths.site } = {}) {
     china_youth_development_coaches: dataset.chinaYouthDevelopmentCoaches,
     football_stories: dataset.footballStories,
     youth_training_disputes: dataset.youthTrainingDisputes,
+    china_2026_milestones: dataset.china2026Milestones,
     big_five_asian_coaches: dataset.bigFiveAsianCoaches,
     asian_coaches: dataset.asianCoaches,
     youth_development_systems: dataset.youthDevelopmentSystems,
+    spain_football_system: dataset.spainFootballSystem,
     club_name_overrides: dataset.clubNameOverrides
   };
   const schemaManifest = JSON.parse(

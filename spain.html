@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>足球故事 | 青训球员追踪站</title>
-    <meta name="description" content="查看职业球员、青训教练、校园足球机构与结构性议题的可追溯专题。" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260802-transition-story" />
+    <title>西班牙联赛与青训体系 | 青训球员追踪站</title>
+    <meta name="description" content="对照西班牙职业联赛、U19/U16 青年联赛，以及本站已建档中国球员在这些层级中的落点。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20261004-spain" />
   </head>
-  <body data-page="stories">
+  <body data-page="spain-system">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -36,30 +36,74 @@
           </button>
         </div>
       </header>
+
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="stories.hero.eyebrow">Football Stories</p>
-            <h1 data-i18n="stories.hero.title">足球故事</h1>
-            <p class="hero-text" data-i18n="stories.hero.text">把球员生涯、教练实践、校园传统、结构议题和公开争议放回时间线，并保留事实边界与原始来源。</p>
+            <p class="eyebrow" data-i18n="spain.hero.eyebrow">Spain League System</p>
+            <h1 data-i18n="spain.hero.title">西班牙职业联赛与 U19 体系</h1>
+            <p class="hero-text" data-i18n="spain.hero.text">把西甲到自治区联赛、U19 荣誉联赛到 Preferente、以及本站中国球员样本放在同一页对照。青训合同、职业合同和正式出场分开看。</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#spainPlayers" data-i18n="spain.hero.players">查看球员落点</a>
+              <a class="secondary-link" href="./pathways.html" data-i18n="spain.hero.back">返回青训体系</a>
+            </div>
           </div>
-          <aside class="hero-spotlight">
-            <p class="eyebrow" data-i18n="stories.coverage.eyebrow">Coverage</p>
-            <h2 id="storiesCoverage" data-i18n="common.loading">载入中</h2>
-            <p id="storiesCheckedAt" class="hero-side-note"></p>
+          <aside id="spainHeroStats" class="hero-spotlight">
+            <p class="eyebrow" data-i18n="spain.meta.eyebrow">Sample</p>
+            <div class="empty-inline" data-i18n="common.loading">加载中</div>
           </aside>
         </section>
+
         <section class="content-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="stories.list.eyebrow">Profiles, Institutions & Issues</p>
-              <h2 data-i18n="stories.list.title">人物、机构与议题专题</h2>
+              <p class="eyebrow" data-i18n="spain.contract.eyebrow">Contracts</p>
+              <h2 data-i18n="spain.contract.title">职业合同和青训合同</h2>
             </div>
           </div>
-          <p id="storiesEditorialPolicy" class="section-note"></p>
-          <div id="storiesGrid" class="story-grid"></div>
+          <div id="spainContractGrid" class="registration-card-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="spain.pyramid.eyebrow">Pyramids</p>
+              <h2 data-i18n="spain.pyramid.title">联赛金字塔与样本</h2>
+            </div>
+            <p class="section-note" data-i18n="spain.pyramid.note">点层级可跳到下方球员表。西甲俱乐部名字不等于西甲出场。</p>
+          </div>
+          <div id="spainPyramidGrid" class="spain-pyramid-grid"></div>
+        </section>
+
+        <section id="spainPlayers" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="spain.players.eyebrow">Placements</p>
+              <h2 data-i18n="spain.players.title">哪些球员踢过这些层级</h2>
+            </div>
+            <p id="spainPlayerMeta" class="section-note"></p>
+          </div>
+          <div id="spainPlayerFilters" class="youth-filter-bar"></div>
+          <div class="table-shell youth-player-table-shell">
+            <table class="youth-player-table">
+              <thead id="spainPlayerHead"></thead>
+              <tbody id="spainPlayerBody"></tbody>
+            </table>
+          </div>
+          <div id="spainPlayerEmpty" class="empty-state" hidden></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="spain.sources.eyebrow">Sources</p>
+              <h2 data-i18n="spain.sources.title">来源与核查时间</h2>
+            </div>
+          </div>
+          <div id="spainSources" class="story-grid"></div>
         </section>
       </main>
+
       <footer class="site-footer">
         <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
         <nav class="friend-links" aria-label="友情链接">
@@ -72,6 +116,6 @@
         </nav>
       </footer>
     </div>
-    <script type="module" src="./assets/app.js?v=20261004-youth-disputes"></script>
+    <script type="module" src="./assets/app.js?v=20261004-spain"></script>
   </body>
 </html>

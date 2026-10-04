@@ -17,6 +17,38 @@ async function readPlayers() {
   return (await Promise.all(files.map((name) => readJson(`data/raw/players/${name}`)))).flat();
 }
 
+test("records China bronze after a 1-2 semi-final loss and a penalty win in the third-place match", async () => {
+  const tournaments = await readJson("data/raw/tournaments.json");
+  const archive = await readJson("data/raw/tournament-archive.json");
+  const tournament = tournaments.find((entry) => entry.id === competitionId);
+  const archived = archive.find((entry) => entry.id === competitionId);
+
+  assert.equal(tournament.status, "completed");
+  assert.equal(archived.status, "completed");
+  assert.equal(archived.china_status, "third-place");
+  assert.equal(archived.champion, null);
+  assert.equal(archived.runner_up, null);
+  assert.deepEqual(
+    archived.china_matches.map((match) => [
+      match.stage,
+      match.opponent,
+      match.score_for,
+      match.score_against,
+      match.result
+    ]),
+    [
+      ["Group B", "DPR Korea", 2, 1, "W"],
+      ["Group B", "IR Iran", 0, 0, "D"],
+      ["Group B", "United Arab Emirates", 0, 0, "D"],
+      ["Quarter-final", "Thailand", 3, 0, "W"],
+      ["Semi-final", "Korea Republic", 1, 2, "L"],
+      ["Bronze medal", "Uzbekistan", 2, 2, "W"]
+    ]
+  );
+  const bronze = archived.china_matches.find((match) => match.stage === "Bronze medal");
+  assert.equal(bronze.penalty_score, "4-3");
+});
+
 test("records the Asian Games field, Group B, and China fixture dates", async () => {
   const tournaments = await readJson("data/raw/tournaments.json");
   const archive = await readJson("data/raw/tournament-archive.json");
@@ -144,7 +176,7 @@ test("makes CFA native names and Asian Games staff searchable", async () => {
   assert.equal(playerById.get("cn-shi-songchen-2005").local_name, "史松宸");
   assert.equal(playerById.get("cn-zhao-songyuan-2009").local_name, "赵松源");
   assert.ok(playerById.get("cn-zhao-songyuan-2009").focus_tags.includes("china-senior-2026"));
-  assert.equal(archived.china_status, "bronze");
+  assert.equal(archived.china_status, "third-place");
   assert.equal(archived.latest_public_roster_view.head_coach.local_name, "安东尼奥·普切");
   assert.equal(archived.latest_public_roster_view.staff.length, 11);
   assert.equal(archived.champion, null);

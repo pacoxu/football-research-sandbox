@@ -85,7 +85,9 @@
         "中国队位于B组，对手为阿联酋、伊朗和朝鲜；小组赛日期依次为9月16日、9月20日和9月23日。",
         "正式23人位置分组采用新华社对亚运会官方名单的转录；足协24人通知按俱乐部列人，不提供正式报名变更结论。",
         "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。",
-        "铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦。金牌赛结果、逐场完整阵容和分钟在官方闭幕材料前保持空值。"
+        "铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦。金牌赛结果、逐场完整阵容和分钟在官方闭幕材料前保持空值。",
+        "小组赛1胜2平积5分头名出线，四分之一决赛3比0泰国，半决赛1比2韩国，铜牌赛2比2后点球4比3胜乌兹别克斯坦。",
+        "金牌赛韩国对日本的官方结果尚未写入；冠亚军保持空值。"
       ],
       "sources": [
         {
@@ -1286,12 +1288,12 @@
         "Korea Republic",
         "Uzbekistan"
       ],
-      "headline": "中国队闯入决赛后 2 比 3 负于日本获亚军，本站已同步补到最终赛果与决赛统计。",
+      "headline": "中国队闯入决赛后 2 比 3 负于日本获亚军；这是 2004 年夺冠后近 22 年最佳亚洲成绩，并时隔 21 年重返世少赛。",
       "notes": [
         "2026-05-22 决赛，中国 U17 半场 0 比 3 落后，下半场由万项和赵松源追到 2 比 3，最终不敌日本获得亚军。",
         "日本在 2026-05-22 决赛 3 比 2 击败中国队，拿到这一年龄层的又一座亚洲冠军。",
         "本届原定 16 队参赛，但朝鲜退赛后实际以 15 队完成赛事。",
-        "中国队借此锁定队史第 6 次 U17 / U16 世少赛（世少杯 / U17 世界杯）资格。",
+        "中国队借此锁定队史第 7 次 U17 / U16 世少赛（世少杯 / U17 世界杯）资格。",
         "乌兹别克斯坦 U17 在 2026-05-20 半决赛点球负于日本，止步四强。",
         "中国、日本、韩国的 U17 基础球员数据，统一以 AFC 于 2026-05-02 发布的最终报名表为准。"
       ],
@@ -1334,7 +1336,7 @@
         "Japan",
         "Korea Republic"
       ],
-      "headline": "已建档中国、日本、韩国三队完整报名名单。",
+      "headline": "中国队首次打进 U23 亚洲杯决赛，0 比 4 负于日本获亚军，为该项赛事创办以来最佳成绩。",
       "notes": [
         "日本在 2026-01-25 决赛 4 比 0 击败中国队，完成卫冕并拿到队史第三冠。",
         "中国队获得亚军。该届名单适合继续补充球员职业去向。",
@@ -1681,7 +1683,7 @@
       "focus_level": "reference",
       "competition_level": "senior-top-flight",
       "status": "in-progress",
-      "last_checked": "2026-07-19",
+      "last_checked": "2026-10-03",
       "date_range": {
         "start": "2026-03-06",
         "end": "2026-11-08"
@@ -1701,7 +1703,8 @@
       "notes": [
         "当前批次按各俱乐部 2026 赛季一线队名单中的 U21 档与已进入一线队轮换的青年样本补录。",
         "同一球员若已在库内按 U17 或 U23 赛事建档，本轮不重复建第二条，而是补充 2026 中超参赛记录和标签。",
-        "具备欧洲留洋经历的 U23 样本，优先补当前俱乐部、留洋节点和外部链接。"
+        "具备欧洲留洋经历的 U23 样本，优先补当前俱乐部、留洋节点和外部链接。",
+        "2026-10-03 月度复核：中国足协竞赛日历写明中超于 9 月 6 日后为亚运会备战休赛，赛季仍进行至 11 月 8 日。公开聚合库对多名 U21/U23 样本的出场/分钟口径不一致，因此除可逐场拼出的刘诚宇中超记录外，其余样本继续保留 null，不把冲突数字写入 raw。"
       ],
       "sources": [
         {
@@ -1859,7 +1862,7 @@
       "short_name": "China Overseas 2026",
       "focus_level": "reference",
       "status": "in-progress",
-      "last_checked": "2026-07-10",
+      "last_checked": "2026-10-03",
       "date_range": {
         "start": "2026-01-01",
         "end": "2026-12-31"
@@ -1867,20 +1870,24 @@
       "focus_teams": [
         "Barnsley FC",
         "FC Den Bosch",
-        "FK Vozdovac U19",
+        "FK Vozdovac",
         "Red Star Belgrade U17",
         "LAFC2",
         "NK Lokomotiva Zagreb",
         "DAMM CF",
         "Real Carabanchel CF",
-        "AJ Auxerre"
+        "AJ Auxerre",
+        "RCD Espanyol Juvenil B",
+        "Burnley FC U21"
       ],
       "headline": "2026 年中国留洋现役样本，优先跟踪当前仍在海外注册或效力的中国球员。",
       "notes": [
         "当前批次以仍在海外俱乐部注册、比赛或培养体系内的中国男足球员为主，暂不覆盖已回流中超或中甲的历史留洋球员。",
         "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
         "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。",
-        "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。"
+        "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。",
+        "吕孟洋 2026-09-15 由俱乐部官网确认从欧罗巴转入 RCD Espanyol Juvenil B。2025/26 欧罗巴出场数保留为历史赛季，不再当作当前注册。",
+        "林子皓 2026-07-31 由沃日多瓦茨官方宣布从湖北青年星租借升入一线队；U19 阶段保留为历史路径。张家鸣、李东宸本轮只复核注册，不把非官方出场分钟写入 raw。"
       ],
       "sources": [
         {
@@ -1917,6 +1924,16 @@
           "label": "Dongqiudi report on Wei Xiangxin's formal Auxerre arrival",
           "publisher": "Dongqiudi",
           "url": "https://www.dongqiudi.com/article/5986133.html"
+        },
+        {
+          "label": "RCD Espanyol: Lyu Mengyang joins Juvenil B",
+          "publisher": "RCD Espanyol",
+          "url": "https://www.rcdespanyol.com/cn/new-cn/%E5%90%95%E5%AD%9F%E6%B4%8B%EF%BC%8C%E9%B9%A6%E9%B9%89%E5%86%9B%E5%9B%A2%EF%BC%81/20759"
+        },
+        {
+          "label": "FK Vozdovac first-team signing announcement for Lin Zihao",
+          "publisher": "FK Vozdovac",
+          "url": "https://www.fkvozdovac.rs/fk-vozdovac-predstavio-cetiri-nova-pojacanja-pred-pocetak-sezone/"
         }
       ]
     },
@@ -11961,14 +11978,14 @@
           "role": "中场/自由前锋",
           "note": "兼具组织与终结。",
           "current_status": {
-            "category": "needs-review",
-            "organization": "待核实",
+            "category": "youth-development",
+            "organization": "RCD Espanyol Juvenil B",
             "role": "player",
-            "as_of": "2026-07-20",
-            "confidence": "low",
-            "source_label": "现状复核入口：Bilibili space: 中国足球小将",
-            "source_url": "https://space.bilibili.com/346344723",
-            "notes": "该来源可支撑项目或历史身份，但未提供截至核查日的直接当前注册去向；因此不沿用历史俱乐部作当前事实。"
+            "as_of": "2026-09-26",
+            "confidence": "high",
+            "source_label": "西班牙人俱乐部官宣：吕孟洋，鹦鹉军团！",
+            "source_url": "https://www.rcdespanyol.com/cn/new-cn/%E5%90%95%E5%AD%9F%E6%B4%8B%EF%BC%8C%E9%B9%A6%E9%B9%89%E5%86%9B%E5%9B%A2%EF%BC%81/20759",
+            "notes": "俱乐部官网确认其加入青年B队。2026-09-20 联赛首秀进球见球员档案，不在这条现状字段里重复记分钟。"
           }
         },
         {
@@ -23957,7 +23974,7 @@
           }
         ]
       },
-      "china_status": "bronze",
+      "china_status": "third-place",
       "china_summary": "中国队以 U23 班底加三名超龄球员出征，小组赛头名出线后 3-0 淘汰泰国，半决赛 1-2 负韩国，铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦，时隔 28 年再获亚运男足奖牌。金牌赛韩国对日本尚未写入冠军。",
       "china_detail_scope": "squad-and-match-results",
       "china_matches": [
@@ -24101,7 +24118,8 @@
               "role": "starter"
             }
           ],
-          "note": "公开媒体快照确认 90 分钟 2-2、点球 4-3 取胜，李昊扑出两粒点球。部分报道写胡荷韬先破门、王钰栋 54 分钟世界波，乌兹别克斯坦 90 分钟由绍迪博耶夫扳平。加时是否进行存在报道冲突，不写入。待足协官方战报升级来源层级。"
+          "note": "公开媒体快照确认 90 分钟 2-2、点球 4-3 取胜，李昊扑出两粒点球。部分报道写胡荷韬先破门、王钰栋 54 分钟世界波，乌兹别克斯坦 90 分钟由绍迪博耶夫扳平。加时是否进行存在报道冲突，不写入。待足协官方战报升级来源层级。",
+          "penalty_score": "4-3"
         }
       ],
       "china_key_players": [
@@ -24581,6 +24599,18 @@
         {
           "label": "JFA men's football competition dates",
           "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+        },
+        {
+          "label": "CFA semi-final report: China 1-2 Korea Republic",
+          "url": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html"
+        },
+        {
+          "label": "Xinhua: China 2-1 DPR Korea",
+          "url": "https://www.xinhuanet.com/20260916/c7decdae3c374215ace38f21b4b3f415/c.html"
+        },
+        {
+          "label": "Xinhua: China 3-0 Thailand",
+          "url": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html"
         }
       ]
     },
@@ -25444,7 +25474,7 @@
       "champion": "Japan",
       "runner_up": "China PR",
       "china_status": "runner-up",
-      "china_summary": "中国国奥首次打进 U23 亚洲杯决赛，最终 0 比 4 负于日本获得亚军。",
+      "china_summary": "中国国奥首次打进 U23 亚洲杯淘汰赛并进入决赛，最终 0 比 4 负于日本获得亚军。这是该项赛事创办以来的最佳成绩；此前已建档的决赛圈届次均止步小组赛。公开口径同时记为时隔 22 年再进洲际大赛决赛，对照点是 2004 成年亚洲杯。",
       "china_detail_scope": "full-china-lineups-and-player-statistics",
       "china_matches": [
         {
@@ -28076,7 +28106,7 @@
       "champion": "Japan",
       "runner_up": "China PR",
       "china_status": "runner-up",
-      "china_summary": "中国 U17 时隔 22 年重返亚洲决赛，最终在 2026-05-22 的决赛中半场 0 比 3 落后、下半场追回两球，2 比 3 不敌日本获得亚军，同时锁定 2026 世少赛资格。",
+      "china_summary": "中国 U17 时隔 22 年重返亚洲决赛，2026-05-22 决赛半场 0 比 3 落后、下半场追回两球，2 比 3 不敌日本获得亚军。这是 2004 年夺冠后近 22 年的最佳亚洲成绩，但低于 1992、2004 两座冠军。小组出线同时锁定 2026 世少赛资格，距 2005 秘鲁世少赛时隔 21 年，为队史第 7 次参赛资格。",
       "china_detail_scope": "partial",
       "china_squad": [
         {
@@ -29761,13 +29791,13 @@
       "host": "Japan",
       "date_range": {
         "start": "2004-09-04",
-        "end": "2004-09-11"
+        "end": "2004-09-18"
       },
       "status": "completed",
-      "champion": "Japan",
-      "runner_up": "China PR",
-      "china_status": "runner-up",
-      "china_summary": "中国国少 3 战 2 胜 1 负，先后淘汰泰国和朝鲜闯入决赛，最终 1 比 3 负于日本获得亚军，并拿到 2005 秘鲁世少赛资格。",
+      "champion": "China PR",
+      "runner_up": "Korea DPR",
+      "china_status": "champion",
+      "china_summary": "中国国少小组赛曾 1 比 3 负于日本，随后淘汰赛闯入决赛，2004-09-18 决赛 1 比 0 击败朝鲜夺冠。这是 1992 年后队史第 2 座该年龄层亚洲冠军，并拿到 2005 秘鲁世少赛资格。",
       "china_detail_scope": "squad",
       "china_squad": [
         {
@@ -30093,12 +30123,16 @@
           "url": "https://stats.the-afc.com/match_report/176"
         },
         {
-          "label": "AFC 2004 final: China PR 1-3 Japan",
-          "url": "https://stats.the-afc.com/match_report/177"
-        },
-        {
           "label": "2004 AFC U-17 Championship overview",
           "url": "https://en.wikipedia.org/wiki/2004_AFC_U-17_Championship"
+        },
+        {
+          "label": "RSSSF Asian U-17 Championship 2004",
+          "url": "https://www.rsssf.org/tablesa/as-u17-04.html"
+        },
+        {
+          "label": "China Daily / Xinhua: China win U-17 Asian title",
+          "url": "http://www.chinadaily.com.cn/english/doc/2004-09/19/content_375745.htm"
         }
       ]
     },
@@ -34321,7 +34355,7 @@
       },
       "qualification_path": {
         "route": "2004 AFC U-17 Championship",
-        "summary": "中国 U17 在 2004 AFC U-17 Championship 打进决赛并获得亚军，通过 AFC U17 路径取得 2005 FIFA U-17 World Championship 资格。",
+        "summary": "中国 U17 在 2004 AFC U-17 Championship 决赛 1 比 0 击败朝鲜夺冠，通过 AFC U17 路径取得 2005 FIFA U-17 World Championship 资格。",
         "final_stage": "AFC U-17 Championship runners-up"
       },
       "china_detail_scope": "squad",
@@ -36191,11 +36225,11 @@
         "start": "2026-06-11",
         "end": "2026-07-19"
       },
-      "status": "upcoming",
-      "champion": "",
-      "runner_up": "",
+      "status": "completed",
+      "champion": "Spain",
+      "runner_up": "Argentina",
       "china_status": "did-not-qualify",
-      "china_summary": "截至 2026-05-23，中国队已无缘 2026 世界杯决赛圈。",
+      "china_summary": "中国队未晋级 2026 世界杯决赛圈。正赛已于 2026-07-19 结束，西班牙 1-0 加时击败阿根廷夺冠。",
       "qualification_path": {
         "route": "AFC qualifying",
         "summary": "中国队从亚洲区第二阶段晋级第三阶段，但未能在第三阶段小组中进入直接出线或第四阶段附加赛席位。",
@@ -36210,8 +36244,8 @@
           "en": "2026 World Cup U20-age watch"
         },
         "scope_note": {
-          "zh": "这不是 2026 世界杯最终名单预测，而是按 2026-06-11 开幕日仍未满 20 岁的站内已建档球员整理的年龄段观察池。筛选口径为 birth_date > 2006-06-11，并按中国、日本、韩国、乌兹别克斯坦当前已建档样本分组；中国队已无缘正赛，因此中国组用于同年龄段横向比较。",
-          "en": "This is not a projected final 2026 FIFA World Cup squad. It is an age-band watchlist built from site-archived players who will still be under 20 on the 2026-06-11 opening day. The filter is birth_date > 2006-06-11, grouped across currently archived China PR, Japan, Korea Republic and Uzbekistan samples; China PR did not qualify, so its group is retained only as a same-age benchmark."
+          "zh": "这不是 2026 世界杯最终名单，而是按 2026-06-11 开幕日仍未满 20 岁的站内已建档球员整理的年龄段观察池。筛选口径为 birth_date > 2006-06-11，并按中国、日本、韩国、乌兹别克斯坦当前已建档样本分组；中国队未进入正赛，因此中国组只作同年龄段横向比较。正赛已完赛，西班牙加时 1-0 击败阿根廷夺冠。",
+          "en": "This is not a 2026 FIFA World Cup squad list. It is an age-band watchlist built from site-archived players who were still under 20 on the 2026-06-11 opening day. The filter is birth_date > 2006-06-11, grouped across currently archived China PR, Japan, Korea Republic and Uzbekistan samples; China PR did not qualify, so its group is retained only as a same-age benchmark. The tournament is complete: Spain beat Argentina 1-0 after extra time."
         },
         "tag": "",
         "player_pool_label": {
@@ -36248,30 +36282,98 @@
             "country": "Uzbekistan",
             "tag": "uzbekistan-youth",
             "note": {
-              "zh": "乌兹别克斯坦已获得 2026 世界杯正赛资格；站内当前只建档到 2009 年龄段 U17 亚洲杯样本，因此这组更偏长期储备观察，不等同于成年队正赛名单候选。",
-              "en": "Uzbekistan have qualified for the 2026 World Cup finals. The site currently only archives their 2009-born AFC U17 sample, so this group is a longer-term pipeline watch rather than a senior finals-squad projection."
+              "zh": "乌兹别克斯坦进入 2026 世界杯正赛后在小组赛出局；站内当前只建档到 2009 年龄段 U17 亚洲杯样本，因此这组更偏长期储备观察，不等同于成年队正赛名单。",
+              "en": "Uzbekistan reached the 2026 World Cup finals and exited in the group stage. The site currently only archives their 2009-born AFC U17 sample, so this group is a longer-term pipeline watch rather than a senior finals-squad record."
             }
           }
         ]
       },
       "source_links": [
         {
-          "label": "FIFA World Cup 2026 schedule",
+          "label": "FIFA: Spain crowned World Cup 2026 champions",
+          "url": "https://inside.fifa.com/news/spain-crowned-world-cup-2026-champions-new-york-new-jersey"
+        },
+        {
+          "label": "FIFA World Cup 2026 final match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543"
+        },
+        {
+          "label": "FIFA World Cup 2026 tournament home",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026"
         },
         {
           "label": "Asian qualifying results",
           "url": "https://www.fifa.com/en/articles/asian-qualifying-results-and-fixtures-for-world-cup-26"
-        },
-        {
-          "label": "AFC U23 2026 final registration",
-          "url": "https://assets.the-afc.com/2026_AFC_U23_Asian_Cup_/Finals/Squad_Lists/AFC-U23-Asian-Cup-2026-Final-Registration.pdf?source=url"
-        },
-        {
-          "label": "AFC U17 2026 final squad lists",
-          "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
         }
-      ]
+      ],
+      "source_checked_at": "2026-10-03",
+      "source_version": [
+        {
+          "type": "fifa-report",
+          "label": "FIFA: Spain crowned FIFA World Cup 2026 Champions",
+          "url": "https://inside.fifa.com/news/spain-crowned-world-cup-2026-champions-new-york-new-jersey",
+          "fields": [
+            "status",
+            "champion",
+            "runner_up",
+            "date_range"
+          ]
+        },
+        {
+          "type": "official-match-report",
+          "label": "FIFA World Cup 2026 final match centre Spain 1-0 Argentina",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543",
+          "fields": [
+            "champion",
+            "runner_up"
+          ]
+        },
+        {
+          "type": "official-match-report",
+          "label": "FIFA full-time report Brazil 2-1 Japan Round of 32",
+          "url": "https://fdp.fifa.org/assetspublic/ce281/r12525/pdf/FullTimeMatchReport-English.pdf",
+          "fields": [
+            "asian_finals_outcomes"
+          ]
+        }
+      ],
+      "asian_finals_outcomes": [
+        {
+          "team": "Japan",
+          "stage": "Round of 32",
+          "result": "L",
+          "score_for": 1,
+          "score_against": 2,
+          "opponent": "Brazil",
+          "date": "2026-06-29",
+          "source_checked_at": "2026-10-03",
+          "sources": [
+            "https://fdp.fifa.org/assetspublic/ce281/r12525/pdf/FullTimeMatchReport-English.pdf",
+            "https://www.jfa.jp/eng/samuraiblue/worldcup_2026/final/match_page/m76.html"
+          ]
+        },
+        {
+          "team": "Korea Republic",
+          "stage": "Group stage",
+          "result": null,
+          "note": "Eliminated after the group stage as one of the four lowest-ranked third-placed teams.",
+          "source_checked_at": "2026-10-03",
+          "sources": [
+            "https://www.bbc.com/sport/football/articles/c74y970len4o"
+          ]
+        },
+        {
+          "team": "IR Iran",
+          "stage": "Group stage",
+          "result": null,
+          "note": "Eliminated after the group stage as one of the four lowest-ranked third-placed teams.",
+          "source_checked_at": "2026-10-03",
+          "sources": [
+            "https://www.bbc.com/sport/football/articles/c74y970len4o"
+          ]
+        }
+      ],
+      "source_conflict_note": "Champion and runner-up are taken from FIFA's 2026-07-19 championship report. Japan's Round of 32 score uses the FIFA match report. Remaining AFC exits are recorded at stage level from the BBC 2026-07-16 elimination tracker and are not stored as match scores."
     },
     {
       "id": "fifa-u20-world-cup-2023",
@@ -37129,13 +37231,13 @@
       "champion": "",
       "runner_up": "",
       "china_status": "qualified",
-      "china_summary": "截至 2026-05-23，中国 U17 已通过 2026 U17 亚洲杯晋级 2026 世少赛。",
+      "china_summary": "中国 U17 已通过 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，抽入 H 组对阵西班牙、斐济和摩洛哥。中国足协 2026-09-11 公布第六期 26 人集训名单备战正赛；该集训名单不是 FIFA 终报名 23 人。CAF 1 / CAF 2 席位随后由莫桑比克和乌干达填补，但 FIFA 尚未用国名重发分组，因此这两组仍保留抽签占位符。",
       "qualification_path": {
         "route": "AFC U17 Asian Cup Saudi Arabia 2026",
         "summary": "中国 U17 通过 2026 U17 亚洲杯取得 2026 FIFA U17 世界杯资格，并在亚洲杯正赛中获得亚军。",
         "final_stage": "AFC U17 Asian Cup runners-up"
       },
-      "china_detail_scope": "none",
+      "china_detail_scope": "group-draw",
       "competition_lineage": [
         {
           "years": "1985-1991",
@@ -37771,17 +37873,20 @@
               "china_pr": {
                 "stage": "Qualified, not yet played",
                 "qualified": true,
-                "played": false
+                "played": false,
+                "group": "Group H"
               },
               "japan": {
                 "stage": "Qualified, not yet played",
                 "qualified": true,
-                "played": false
+                "played": false,
+                "group": "Group L"
               },
               "korea_republic": {
                 "stage": "Qualified, not yet played",
                 "qualified": true,
-                "played": false
+                "played": false,
+                "group": "Group B"
               }
             }
           }
@@ -37789,12 +37894,20 @@
       },
       "source_links": [
         {
+          "label": "FIFA U-17 World Cup Qatar 2026 official draw",
+          "url": "https://inside.fifa.com/organisation/news/u17-world-cup-draw-womens-mens-gianni-infantino-football-week"
+        },
+        {
           "label": "FIFA U-17 World Cup Qatar 2026",
           "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026"
         },
         {
-          "label": "Draw procedures for the FIFA U-17 World Cup 2026",
-          "url": "https://inside.fifa.com/news/draw-procedures-fifa-u17-world-cup-men-women-2026"
+          "label": "CFA China U-17 sixth camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260911/38141.html"
+        },
+        {
+          "label": "FIFA: Mozambique and Uganda qualify to complete line-up",
+          "url": "https://www.fifa.com/en/tournaments/mens/u17worldcup/qatar-2026/articles/mozambique-uganda-qualify"
         },
         {
           "label": "2025 FIFA U-17 World Cup",
@@ -37816,7 +37929,341 @@
           "label": "South Korea national under-17 football team",
           "url": "https://en.wikipedia.org/wiki/South_Korea_national_under-17_football_team"
         }
-      ]
+      ],
+      "source_checked_at": "2026-10-03",
+      "source_conflict_note": "FIFA's 2026-05-21 draw is primary for the 12 groups, including China PR in Group H. Mozambique and Uganda later completed the CAF field, but public restatements disagree on which placeholder each team occupies, so Group B and Group C keep CAF 1 / CAF 2 until FIFA republishes named groups.",
+      "source_version": [
+        {
+          "type": "fifa-report",
+          "label": "FIFA U-17 World Cup Qatar 2026 official draw",
+          "url": "https://inside.fifa.com/organisation/news/u17-world-cup-draw-womens-mens-gianni-infantino-football-week",
+          "fields": [
+            "final_draw",
+            "host",
+            "date_range"
+          ]
+        },
+        {
+          "type": "news-secondary",
+          "label": "CFA China U-17 sixth camp notice",
+          "url": "https://www.thecfa.cn/jxtz/20260911/38141.html",
+          "fields": [
+            "china_summary"
+          ]
+        }
+      ],
+      "final_draw": {
+        "status": "complete",
+        "groups": [
+          {
+            "name": "Group A",
+            "teams": [
+              "Qatar",
+              "Panama",
+              "Egypt",
+              "Greece"
+            ]
+          },
+          {
+            "name": "Group B",
+            "teams": [
+              "Korea Republic",
+              "CAF 1",
+              "New Caledonia",
+              "Ecuador"
+            ]
+          },
+          {
+            "name": "Group C",
+            "teams": [
+              "Argentina",
+              "Australia",
+              "CAF 2",
+              "Denmark"
+            ]
+          },
+          {
+            "name": "Group D",
+            "teams": [
+              "France",
+              "Haiti",
+              "Saudi Arabia",
+              "Uruguay"
+            ]
+          },
+          {
+            "name": "Group E",
+            "teams": [
+              "Italy",
+              "Jamaica",
+              "Côte d'Ivoire",
+              "Uzbekistan"
+            ]
+          },
+          {
+            "name": "Group F",
+            "teams": [
+              "Senegal",
+              "Croatia",
+              "Cuba",
+              "Tajikistan"
+            ]
+          },
+          {
+            "name": "Group G",
+            "teams": [
+              "Mali",
+              "New Zealand",
+              "Belgium",
+              "Vietnam"
+            ]
+          },
+          {
+            "name": "Group H",
+            "teams": [
+              "Spain",
+              "China PR",
+              "Fiji",
+              "Morocco"
+            ]
+          },
+          {
+            "name": "Group I",
+            "teams": [
+              "Brazil",
+              "Republic of Ireland",
+              "Tanzania",
+              "Costa Rica"
+            ]
+          },
+          {
+            "name": "Group J",
+            "teams": [
+              "USA",
+              "Montenegro",
+              "Chile",
+              "Algeria"
+            ]
+          },
+          {
+            "name": "Group K",
+            "teams": [
+              "Mexico",
+              "Romania",
+              "Cameroon",
+              "Venezuela"
+            ]
+          },
+          {
+            "name": "Group L",
+            "teams": [
+              "Japan",
+              "Colombia",
+              "Serbia",
+              "Honduras"
+            ]
+          }
+        ]
+      },
+      "china_group_stage": {
+        "group": "Group H",
+        "teams": [
+          "Spain",
+          "China PR",
+          "Fiji",
+          "Morocco"
+        ]
+      },
+      "participants": {
+        "status": "partial",
+        "expected_count": 48,
+        "teams": [
+          {
+            "team": "Qatar",
+            "entry_status": "host"
+          },
+          {
+            "team": "Panama",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Egypt",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Greece",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Korea Republic",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "New Caledonia",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Ecuador",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Argentina",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Australia",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Denmark",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "France",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Haiti",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Saudi Arabia",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Uruguay",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Italy",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Jamaica",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Côte d'Ivoire",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Uzbekistan",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Senegal",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Croatia",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Cuba",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Tajikistan",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Mali",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "New Zealand",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Belgium",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Vietnam",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Spain",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "China PR",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Fiji",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Morocco",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Brazil",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Republic of Ireland",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Tanzania",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Costa Rica",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "USA",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Montenegro",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Chile",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Algeria",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Mexico",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Romania",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Cameroon",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Venezuela",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Japan",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Colombia",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Serbia",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Honduras",
+            "entry_status": "qualified"
+          }
+        ]
+      }
     },
     {
       "id": "afc-u20-1985",
@@ -46919,8 +47366,8 @@
     "id": "china-men-youth-coaches",
     "name": "中国男足 U 系列教练组",
     "last_checked": "2026-10-04",
-    "summary": "中国男足 U23 / 亚运队已更新至2026-09-01赛前集训与参赛通知；U19、U17、U16、U15其余教练线仍按截至2026-06-27的中国足协公开任命与集训通知维护。",
-    "scope_note": "本档优先采用中国足协官方任命公告与集训通知；任命页用于定义周期职责，最近一期可靠通知用于定义各队实际带队教练组。U23 / 亚运队已单独推进至2026-09-01，其余年龄线不随本次更新虚增核查日期。",
+    "summary": "中国男足 U23 / 亚运队已更新至2026-09-01赛前集训与参赛通知；U19、U17、U16、U15其余教练线仍按截至2026-06-27的中国足协公开任命与集训通知维护。 按截至 2026-09-26 的中国足协公开集训通知和战报，更新中国男足 U19、U17、U16、U15 的最新一期名单，并附上成年队第四期集训。U16 本期主教练改为张耀坤。",
+    "scope_note": "本档优先采用中国足协官方任命公告与集训通知；任命页用于定义周期职责，最近一期可靠通知用于定义各队实际带队教练组。U23 / 亚运队已单独推进至2026-09-01，其余年龄线不随本次更新虚增核查日期。 U 系列五条教练线仍以官方任命和最近一期集训通知为准。成年队第四期集训单独放在 senior_men_window，不并入五条 U 系列计数。没有完整出生日期的新名单球员不新建球员档案，只保留在本期 squad。",
     "team_cycles": [
       {
         "team_label": "中国U23 / 亚运队",
@@ -47045,12 +47492,126 @@
         "current_stage": "2024年1月任U19主教练；2025年带U18，2026年带U19备战 2027 年 U20 亚洲杯。",
         "appointment_context": "2024 年任命页写明其承担 U20 亚洲杯预选赛与洛杉矶奥运备战线任务；到 2025-2026 周期，队伍按年龄自然递进为 U18 / U19。",
         "latest_camp": {
-          "label": "2026年第三期集训",
-          "published_on": "2026-05-22",
-          "window": "2026-05-25 至 2026-06-15",
-          "purpose": "备战 2027 年 U20 亚洲杯并参加第 52 届莫里斯·雷韦洛锦标赛（土伦杯）。"
+          "label": "2026年第四期集训",
+          "published_on": "2026-09-18",
+          "window": "2026-09-20 至 2026-10-05",
+          "purpose": "备战 2027 年 U20 亚洲杯，在国家足球训练基地集训。通知未公布本期对外比赛。",
+          "player_count": 29,
+          "squad": [
+            {
+              "unit": "上海海港足球俱乐部",
+              "players": [
+                "李智良",
+                "彭子鸣",
+                "温钧翔",
+                "岳博文"
+              ]
+            },
+            {
+              "unit": "上海申花足球俱乐部",
+              "players": [
+                "吴启鹏"
+              ]
+            },
+            {
+              "unit": "北京国安足球俱乐部",
+              "players": [
+                "邓捷夫",
+                "陈康悦"
+              ]
+            },
+            {
+              "unit": "山东泰山足球俱乐部",
+              "players": [
+                "依合散·依拉木",
+                "王宇轩",
+                "郭鑫"
+              ]
+            },
+            {
+              "unit": "青岛西海岸足球俱乐部",
+              "players": [
+                "杨展彭",
+                "贾伟伟",
+                "谢初筠",
+                "艾力尼扎尔·罗合曼"
+              ]
+            },
+            {
+              "unit": "大连英博足球俱乐部",
+              "players": [
+                "张城瑞"
+              ]
+            },
+            {
+              "unit": "辽宁铁人足球俱乐部",
+              "players": [
+                "张洪福"
+              ]
+            },
+            {
+              "unit": "重庆铜梁龙足球俱乐部",
+              "players": [
+                "岳瑞杰",
+                "刘佳乐",
+                "吴梓桐"
+              ]
+            },
+            {
+              "unit": "石家庄功夫足球俱乐部",
+              "players": [
+                "肇宸惟"
+              ]
+            },
+            {
+              "unit": "陕西联合足球俱乐部",
+              "players": [
+                "郭五岳",
+                "金文旭"
+              ]
+            },
+            {
+              "unit": "宁波职业足球俱乐部",
+              "players": [
+                "姚俊宇"
+              ]
+            },
+            {
+              "unit": "广州蒲公英足球俱乐部",
+              "players": [
+                "范梦桐"
+              ]
+            },
+            {
+              "unit": "广东铭途足球俱乐部",
+              "players": [
+                "朱信宇",
+                "钟文泽",
+                "姜轶祥",
+                "王镡幼"
+              ]
+            },
+            {
+              "unit": "湖北青年星足球俱乐部",
+              "players": [
+                "潘景略"
+              ]
+            }
+          ]
         },
         "staff": [
+          {
+            "role": "领队",
+            "members": [
+              "陈凯"
+            ]
+          },
+          {
+            "role": "管理",
+            "members": [
+              "毕然"
+            ]
+          },
           {
             "role": "助理教练",
             "members": [
@@ -47076,11 +47637,38 @@
               "斯洛博丹·里斯蒂奇",
               "刘阳"
             ]
+          },
+          {
+            "role": "机能监测师",
+            "members": [
+              "姚天昊"
+            ]
+          },
+          {
+            "role": "队医",
+            "members": [
+              "丁然"
+            ]
+          },
+          {
+            "role": "运动防护师",
+            "members": [
+              "罗攀",
+              "尹激润",
+              "邹佳成"
+            ]
+          },
+          {
+            "role": "翻译",
+            "members": [
+              "张宇"
+            ]
           }
         ],
         "notes": [
           "2025 年 8 月 U18 第一期选拔集训通知仍由久尔杰维奇挂帅，可视为同一国青周期队伍的年龄递进。",
-          "截至 2026-05-22，最新公开通知已切到 U19 第三期集训并以 2027 年 U20 亚洲杯为目标。"
+          "截至 2026-05-22，最新公开通知已切到 U19 第三期集训并以 2027 年 U20 亚洲杯为目标。",
+          "2026-09-18 第四期通知仍由久尔杰维奇挂帅，29 人在香河国家足球训练基地集训，通知正文没有公布比赛对手。"
         ],
         "source_links": [
           {
@@ -47094,6 +47682,10 @@
           {
             "label": "中国足球协会关于组织U-19国家男子足球队2026年第三期集训的通知",
             "url": "https://www.thecfa.cn/jxtz/20260522/37710.html"
+          },
+          {
+            "label": "中国足球协会关于组织U-19国家男子足球队2026年第四期集训的通知",
+            "url": "https://www.thecfa.cn/jxtz/20260918/38191.html"
           }
         ]
       },
@@ -47108,16 +47700,157 @@
         "current_stage": "2025年U16阶段至 2026 年 U17 亚洲杯决赛及同年 U17 世界杯备战周期。",
         "appointment_context": "2025 年 U16 第一期集训时已由浮嶋敏挂帅；到 2026 年 6 月 U17 第四期集训时，教练与保障团队主干继续延续，任务已切换到 U17 世界杯备战。",
         "latest_camp": {
-          "label": "2026年第四期集训",
-          "published_on": "2026-06-27",
-          "window": "2026-06-30 至 2026-07-12",
-          "purpose": "全力做好 2026 年 11 月国际足联 U-17 世界杯备战工作，并参加 2026 CFA 中国之队·银川国际青年足球锦标赛。"
+          "label": "2026年第六期集训",
+          "published_on": "2026-09-11",
+          "window": "2026-09-16 至 2026-10-09",
+          "purpose": "备战 2026 年 11 月卡塔尔 U17 世界杯，先到苏州集训，再赴伦敦参加国际热身赛。",
+          "player_count": 26,
+          "squad": [
+            {
+              "unit": "上海申花足球俱乐部",
+              "players": [
+                "顾博宇"
+              ]
+            },
+            {
+              "unit": "成都蓉城足球俱乐部",
+              "players": [
+                "帅惟浩"
+              ]
+            },
+            {
+              "unit": "山东泰山足球俱乐部",
+              "players": [
+                "李钧鹏",
+                "张旭尧",
+                "潘朝伟"
+              ]
+            },
+            {
+              "unit": "青岛西海岸足球俱乐部",
+              "players": [
+                "刘致成"
+              ]
+            },
+            {
+              "unit": "武汉三镇足球俱乐部",
+              "players": [
+                "徐正鹏",
+                "何思凡"
+              ]
+            },
+            {
+              "unit": "青岛海牛足球俱乐部",
+              "players": [
+                "邝兆镭",
+                "江宇涵"
+              ]
+            },
+            {
+              "unit": "梅州客家足球俱乐部",
+              "players": [
+                "李家润"
+              ]
+            },
+            {
+              "unit": "广东广州豹足球俱乐部",
+              "players": [
+                "王贺毅"
+              ]
+            },
+            {
+              "unit": "深圳青年人足球俱乐部",
+              "players": [
+                "袁博涵"
+              ]
+            },
+            {
+              "unit": "湖北青年星足球俱乐部",
+              "players": [
+                "张伯霖",
+                "江承恩",
+                "程晟涵"
+              ]
+            },
+            {
+              "unit": "山东鲁能泰山足球学校",
+              "players": [
+                "张君豪",
+                "孔玺诺"
+              ]
+            },
+            {
+              "unit": "恒大足球学校",
+              "players": [
+                "秦子牛",
+                "余佳楠"
+              ]
+            },
+            {
+              "unit": "清华大学附属中学",
+              "players": [
+                "周雨诺",
+                "南子勋"
+              ]
+            },
+            {
+              "unit": "贝尔格拉德红星足球俱乐部",
+              "players": [
+                "万项"
+              ]
+            },
+            {
+              "unit": "蔚山现代足球俱乐部",
+              "players": [
+                "金冠成"
+              ]
+            },
+            {
+              "unit": "水原三星足球俱乐部",
+              "players": [
+                "金俊虎",
+                "金志虎"
+              ]
+            }
+          ],
+          "matches": [
+            {
+              "date": "2026-10-01",
+              "kickoff": "21:00",
+              "opponent": "Tanzania U17",
+              "score": null,
+              "status": "reported-schedule",
+              "note": "体坛周报记者马德兴 2026-09-21 预报的伦敦赛程。足协通知只写赴伦敦参加国际热身赛，没有公布对手。截至 2026-09-26 未开赛。"
+            },
+            {
+              "date": "2026-10-04",
+              "kickoff": "21:00",
+              "opponent": "Mexico U17",
+              "score": null,
+              "status": "reported-schedule",
+              "note": "同一篇预报。不是足协已公布的官方对阵。"
+            },
+            {
+              "date": "2026-10-07",
+              "kickoff": "18:00",
+              "opponent": "Argentina U17",
+              "score": null,
+              "status": "reported-schedule",
+              "note": "同一篇预报。可能与阿森纳 U17 再热身的说法也来自这篇报道，尚未列入正式赛程。"
+            }
+          ]
         },
         "staff": [
           {
             "role": "领队",
             "members": [
               "杨楠"
+            ]
+          },
+          {
+            "role": "管理",
+            "members": [
+              "范跃庭"
             ]
           },
           {
@@ -47151,6 +47884,32 @@
               "二階堂悠",
               "何沛锜"
             ]
+          },
+          {
+            "role": "队医",
+            "members": [
+              "冯社阳"
+            ]
+          },
+          {
+            "role": "运动防护师",
+            "members": [
+              "邓永松",
+              "宋志健"
+            ]
+          },
+          {
+            "role": "队务",
+            "members": [
+              "郭景睿"
+            ]
+          },
+          {
+            "role": "翻译",
+            "members": [
+              "孙鸣宇",
+              "朱熹"
+            ]
           }
         ],
         "football_boys_context": {
@@ -47163,11 +47922,12 @@
             "万项",
             "汪修昊"
           ],
-          "note": "这条线是“09 小将”进入国字号主赛道后的直接对应队伍。"
+          "note": "这条线仍是 09 小将进入国字号的主赛道。第六期公开名单里有周雨诺、南子勋、顾博宇、邝兆镭、万项；赵松源改去成年队，吕孟洋未入选。"
         },
         "notes": [
           "2025 年 U16 第一期通知、2026 年 U17 第二期通知与 2026 年 U17 第四期通知都显示浮嶋敏为同一条年龄线的主教练。",
-          "2026 年 6 月第四期名单已把阶段目标从 U17 亚洲杯切到 11 月 U17 世界杯与银川国际青年足球锦标赛；与 2026 U17 亚洲杯终报名 23 人相比，公开可见新增顾博宇、袁博涵、孙臣曦、张君豪、张林峒，邝兆镭、万项、汪修昊、彭显宸未在这期公开征召名单内。"
+          "2026 年 6 月第四期名单已把阶段目标从 U17 亚洲杯切到 11 月 U17 世界杯与银川国际青年足球锦标赛；与 2026 U17 亚洲杯终报名 23 人相比，公开可见新增顾博宇、袁博涵、孙臣曦、张君豪、张林峒，邝兆镭、万项、汪修昊、彭显宸未在这期公开征召名单内。",
+          "2026-09-11 第六期名单 26 人。赵松源不在名单中，同期进入成年队第四期集训。吕孟洋也不在名单中，当前注册已转到西班牙人青年B队。"
         ],
         "source_links": [
           {
@@ -47181,6 +47941,10 @@
           {
             "label": "中国足球协会关于组织中国U-17国家男子足球队2026年第二期集训的通知",
             "url": "https://www.thecfa.cn/jxtz/20260311/37413.html"
+          },
+          {
+            "label": "中国足球协会关于组织中国U-17国家男子足球队2026年第六期集训的通知",
+            "url": "https://www.thecfa.cn/jxtz/20260911/38141.html"
           }
         ]
       },
@@ -47188,42 +47952,220 @@
         "team_label": "中国U16",
         "age_line": "2010年龄段",
         "head_coach": {
-          "id": "david-almazan",
-          "name": "David Almazan",
-          "local_name": "大卫·阿尔马赞"
+          "id": "zhang-yaokun",
+          "name": "Zhang Yaokun",
+          "local_name": "张耀坤"
         },
-        "current_stage": "2025年11月出任 U15 主教练，2026 年以 U16 身份备战 2027 年 U17 亚洲杯。",
+        "current_stage": "2026年9月集训通知改由张耀坤带队，备战2027年U17亚洲杯并参加沈阳和平杯。",
         "appointment_context": "足协任命公告提到其 2023 年任中国足协深圳训练基地 2010 年龄段男足精英梯队主教练，2024 年任 U14 国家男子足球选拔队教练组组长。",
         "latest_camp": {
-          "label": "2026年第二期集训",
-          "published_on": "2026-03-12",
-          "window": "2026-03-16 至 2026-04-08",
-          "purpose": "备战 2027 年 U17 亚洲杯并出访法国参加蒙太古杯。"
+          "label": "2026年第五期集训",
+          "published_on": "2026-09-11",
+          "window": "2026-09-16 至 2026-10-01",
+          "purpose": "备战 2027 年 U17 亚洲杯，在大连、沈阳集训并参加沈阳和平杯。",
+          "player_count": 33,
+          "squad": [
+            {
+              "unit": "上海海港足球俱乐部",
+              "players": [
+                "金耿逵"
+              ]
+            },
+            {
+              "unit": "上海申花足球俱乐部",
+              "players": [
+                "周楚翔",
+                "李沅锡",
+                "郑康锦",
+                "陈政飞"
+              ]
+            },
+            {
+              "unit": "天津津门虎足球俱乐部",
+              "players": [
+                "郝建瑞",
+                "张树航"
+              ]
+            },
+            {
+              "unit": "浙江职业足球俱乐部",
+              "players": [
+                "朱佳俊"
+              ]
+            },
+            {
+              "unit": "深圳新鹏城足球俱乐部",
+              "players": [
+                "李宇轩"
+              ]
+            },
+            {
+              "unit": "重庆铜梁龙足球俱乐部",
+              "players": [
+                "蒋炜鸿"
+              ]
+            },
+            {
+              "unit": "广东铭途足球俱乐部",
+              "players": [
+                "陈文泰",
+                "张智涵"
+              ]
+            },
+            {
+              "unit": "湖北青年星足球俱乐部",
+              "players": [
+                "高泽恩"
+              ]
+            },
+            {
+              "unit": "深圳市龙华区文化体育发展中心",
+              "players": [
+                "刘宇洋"
+              ]
+            },
+            {
+              "unit": "成都德瑞足球培训中心",
+              "players": [
+                "吴比乐"
+              ]
+            },
+            {
+              "unit": "恒大足球学校",
+              "players": [
+                "柯博文",
+                "马天豪"
+              ]
+            },
+            {
+              "unit": "山东鲁能泰山足球学校",
+              "players": [
+                "冀政浩",
+                "彭熙然",
+                "江乐上",
+                "杨宸硕"
+              ]
+            },
+            {
+              "unit": "宜兴市周铁久滕足球俱乐部",
+              "players": [
+                "徐梓竣",
+                "刘靖磊",
+                "程梓轩",
+                "彭显宸"
+              ]
+            },
+            {
+              "unit": "北京四中",
+              "players": [
+                "胥中奇"
+              ]
+            },
+            {
+              "unit": "重庆南开中学",
+              "players": [
+                "柏骅峻"
+              ]
+            },
+            {
+              "unit": "清华大学附属中学",
+              "players": [
+                "王昌宇",
+                "张亦弛",
+                "程俊翰"
+              ]
+            },
+            {
+              "unit": "中国人民大学附属中学",
+              "players": [
+                "李佑安"
+              ]
+            },
+            {
+              "unit": "奥斯皮塔莱特足球俱乐部",
+              "players": [
+                "张林峒"
+              ]
+            },
+            {
+              "unit": "其他",
+              "players": [
+                "杨苡欢"
+              ]
+            }
+          ],
+          "matches": [
+            {
+              "date": "2026-09-24",
+              "kickoff": "19:35",
+              "competition": "2026CFA中国之队·和平杯沈阳国际青年足球锦标赛",
+              "opponent": "Kyrgyzstan U16",
+              "score": "3-3",
+              "venue": "沈河区文化体育中心体育场",
+              "status": "played",
+              "note": "足协战报：张耀坤 343，队长冀政浩，锋线李宇轩、刘宇洋、刘靖磊。进球时间为第 6 分钟张树航、第 53 分钟杨苡欢、第 75 分钟吴比乐。吉尔吉斯斯坦第 14、79、85 分钟扳平。门将张亦弛，替补包括徐梓竣、彭显宸。同日越南 U16 2-4 澳大利亚 U16。"
+            },
+            {
+              "date": "2026-09-27",
+              "kickoff": "14:00",
+              "competition": "2026CFA中国之队·和平杯沈阳国际青年足球锦标赛",
+              "opponent": "Vietnam U16",
+              "score": null,
+              "status": "scheduled",
+              "note": "同一篇足协战报预告的下一场。截至 2026-09-26 未开赛。"
+            }
+          ]
         },
         "staff": [
           {
-            "role": "助理教练",
+            "role": "领队",
             "members": [
-              "海梅·莫利纳",
-              "李壮飞"
+              "刘云涛"
             ]
           },
           {
-            "role": "体能教练",
+            "role": "助理教练",
             "members": [
-              "哈维尔·伊格莱西亚斯"
+              "常琳",
+              "李文博"
             ]
           },
           {
             "role": "守门员教练",
             "members": [
-              "伊亚戈·莱莫斯"
+              "戚晓光"
             ]
           },
           {
-            "role": "技术分析兼机能监测师",
+            "role": "训练员",
             "members": [
-              "陈超"
+              "朱挺",
+              "孙晓轩"
+            ]
+          },
+          {
+            "role": "技术分析师",
+            "members": [
+              "何俊超"
+            ]
+          },
+          {
+            "role": "队医",
+            "members": [
+              "杜俊强"
+            ]
+          },
+          {
+            "role": "运动防护师",
+            "members": [
+              "胡伟",
+              "汪多纳"
+            ]
+          },
+          {
+            "role": "队务",
+            "members": [
+              "李开亮"
             ]
           }
         ],
@@ -47236,11 +48178,12 @@
             "朴智轩",
             "李佑安"
           ],
-          "note": "这条线是“10 小将”在 2026 年最直接的国字号对应层。"
+          "note": "2026 年 9 月这期只公开征召了张林峒和李佑安。刘凯源、李东宸、朴智轩不在第五期 33 人名单里。"
         },
         "notes": [
           "任命页给出了阿尔马赞与 2010 年龄段的直接履历关联，因此这一层和董路 2010 线的交叉最值得单列追踪。",
-          "2026 年第二期集训通知中，张林峒、李东宸、刘凯源、朴智轩、李佑安等 2010 线样本均出现。"
+          "2026 年第二期集训通知中，张林峒、李东宸、刘凯源、朴智轩、李佑安等 2010 线样本均出现。",
+          "2026-09-11 官方通知的主教练是张耀坤。体坛周报称这是他接手后的首期集训；换帅原因没有写在通知正文里，不作为任命事实。本期 33 人里，已建档的旅西样本只有张林峒和国内注册的李佑安；刘凯源、李东宸不在名单中。张林峒的名单单位写成奥斯皮塔莱特，与达姆注册冲突。"
         ],
         "source_links": [
           {
@@ -47250,8 +48193,22 @@
           {
             "label": "中国足球协会关于组织U-16国家男子足球队2026年第二期集训的通知",
             "url": "https://www.thecfa.cn/jxtz/20260312/37416.html"
+          },
+          {
+            "label": "中国足球协会关于组织中国U-16国家男子足球队2026年第五期集训的通知",
+            "url": "https://www.thecfa.cn/jxtz/20260911/38145.html"
+          },
+          {
+            "label": "沈阳和平杯：中国U-16男足3比3战平吉尔吉斯斯坦U-16男足",
+            "url": "https://www.thecfa.cn/zhongguozhidui/20260925/38218.html"
           }
-        ]
+        ],
+        "previous_head_coach": {
+          "id": "david-almazan",
+          "name": "David Almazan",
+          "local_name": "大卫·阿尔马赞",
+          "note": "2025-11-22 任命页上的 U15 主教练。2026-09-11 集训通知的主教练已改为张耀坤。"
+        }
       },
       {
         "team_label": "中国U15",
@@ -47264,23 +48221,140 @@
         "current_stage": "2025年11月出任 U14 主教练，2026 年 U15 阶段备战 2028 年 U17 亚洲杯。",
         "appointment_context": "足协任命公告直接写明其任务是 2028 年 U17 亚洲杯备战。",
         "latest_camp": {
-          "label": "2026年第三期集训",
-          "published_on": "2026-04-11",
-          "window": "2026-04-12 至 2026-05-03",
-          "purpose": "备战 2027 年 U17 亚洲杯预选赛并出访意大利参加“国家之杯”。"
+          "label": "2026年第五期集训",
+          "published_on": "2026-09-21",
+          "window": "2026-09-29 至 2026-11-02",
+          "purpose": "备战 2028 年 U17 亚洲杯，在大连集训并出访阿塞拜疆参加国际足联 U15 世界杯暨足球节。",
+          "player_count": 33,
+          "squad": [
+            {
+              "unit": "福建省足球运动管理中心",
+              "players": [
+                "钟俊辉"
+              ]
+            },
+            {
+              "unit": "大连市足球协会",
+              "players": [
+                "崔有赫"
+              ]
+            },
+            {
+              "unit": "上海海港足球俱乐部",
+              "players": [
+                "陈学隽",
+                "边韦丞"
+              ]
+            },
+            {
+              "unit": "上海申花足球俱乐部",
+              "players": [
+                "陈伟杰",
+                "徐子宸",
+                "王子霈",
+                "李明泽",
+                "孙曦"
+              ]
+            },
+            {
+              "unit": "浙江职业足球俱乐部",
+              "players": [
+                "花梓轩",
+                "郭润东"
+              ]
+            },
+            {
+              "unit": "武汉三镇足球俱乐部",
+              "players": [
+                "徐新泽",
+                "杨涵粤",
+                "陈奕宇"
+              ]
+            },
+            {
+              "unit": "长春亚泰足球俱乐部",
+              "players": [
+                "黄昱茏"
+              ]
+            },
+            {
+              "unit": "湖北青年星足球俱乐部",
+              "players": [
+                "汪峻熙"
+              ]
+            },
+            {
+              "unit": "广东铭途足球俱乐部",
+              "players": [
+                "张皓烨",
+                "刘明道"
+              ]
+            },
+            {
+              "unit": "上海壹天足球俱乐部",
+              "players": [
+                "唐华健"
+              ]
+            },
+            {
+              "unit": "人民大学附属中学",
+              "players": [
+                "葛恒溢",
+                "马正驰",
+                "梁文嘉"
+              ]
+            },
+            {
+              "unit": "深圳市宝安中学",
+              "players": [
+                "沈劼一"
+              ]
+            },
+            {
+              "unit": "山东鲁能泰山足球学校",
+              "players": [
+                "蒋孜睿",
+                "宋依轩",
+                "倪子浩",
+                "刘宸垚"
+              ]
+            },
+            {
+              "unit": "恒大足球学校",
+              "players": [
+                "张宸硕",
+                "路天怀",
+                "殷扎吉",
+                "余嘉威",
+                "朱宇皓"
+              ]
+            },
+            {
+              "unit": "日本清水心跳足球俱乐部",
+              "players": [
+                "沙明"
+              ]
+            }
+          ]
         },
         "staff": [
+          {
+            "role": "领队",
+            "members": [
+              "吴子乐"
+            ]
+          },
+          {
+            "role": "管理",
+            "members": [
+              "张宾"
+            ]
+          },
           {
             "role": "助理教练",
             "members": [
               "阿尔贝托·米拉",
               "钱鼎"
-            ]
-          },
-          {
-            "role": "体能教练",
-            "members": [
-              "梅凯"
             ]
           },
           {
@@ -47290,15 +48364,61 @@
             ]
           },
           {
+            "role": "体能教练",
+            "members": [
+              "梅凯"
+            ]
+          },
+          {
+            "role": "位置技术训练专员",
+            "members": [
+              "阎相闯",
+              "汪强"
+            ]
+          },
+          {
             "role": "技术分析师",
             "members": [
               "王旭"
+            ]
+          },
+          {
+            "role": "队医",
+            "members": [
+              "王连成"
+            ]
+          },
+          {
+            "role": "运动防护师",
+            "members": [
+              "苏星涛",
+              "张冀田",
+              "李哲"
+            ]
+          },
+          {
+            "role": "机能监测师",
+            "members": [
+              "郭小瑞"
+            ]
+          },
+          {
+            "role": "队务",
+            "members": [
+              "张骁"
+            ]
+          },
+          {
+            "role": "翻译",
+            "members": [
+              "蔡萌"
             ]
           }
         ],
         "notes": [
           "2026 年第一期选拔集训通知已写明队伍目标是 2028 年 U17 亚洲杯。",
-          "截至 2026-05-22，这条线仍处于更低年龄段培养与筛选阶段，尚未与 2014、2015、2016 的“足球小将”批次形成稳定国字号主队重合。"
+          "截至 2026-05-22，这条线仍处于更低年龄段培养与筛选阶段，尚未与 2014、2015、2016 的“足球小将”批次形成稳定国字号主队重合。",
+          "2026-09-21 第五期通知仍由周海滨挂帅，33 人 9 月 29 日报到。截至 2026-09-26 集训尚未开始，没有比赛战报。"
         ],
         "source_links": [
           {
@@ -47312,6 +48432,10 @@
           {
             "label": "中国足球协会关于组织U-15国家男子足球队2026年第三期集训的通知",
             "url": "https://www.thecfa.cn/jxtz/20260411/37546.html"
+          },
+          {
+            "label": "中国足球协会关于组织U-15国家男子足球队2026年第五期集训的通知",
+            "url": "https://www.thecfa.cn/jxtz/20260921/38198.html"
           }
         ]
       }
@@ -47334,8 +48458,8 @@
       {
         "age_line": "10小将线",
         "national_team_level": "中国U16",
-        "head_coach": "大卫·阿尔马赞",
-        "stage_note": "2023 后更频繁进入国少视野，2026 年对应 U16 备战 2027 年 U17 亚洲杯。",
+        "head_coach": "张耀坤",
+        "stage_note": "2026年9月第五期集训改由张耀坤带队。已建档样本里张林峒、李佑安入选，刘凯源和李东宸未进入这期 33 人名单。",
         "sample_players": [
           "张林峒",
           "李东宸",
@@ -47351,12 +48475,240 @@
         "stage_note": "2011 左右年龄线当前对应 U15 / U14 周期，2014、2015、2016 批次仍主要处于地方青训、校园与选拔营层。",
         "sample_players": []
       }
-    ]
+    ],
+    "senior_men_window": {
+      "team_label": "中国国家男子足球队",
+      "age_line": "成年队",
+      "head_coach": {
+        "id": "shao-jiayi",
+        "name": "Shao Jiayi",
+        "local_name": "邵佳一"
+      },
+      "current_stage": "2026年第四期集训，备战2027年沙特阿拉伯亚洲杯，并参加重庆国际足球邀请赛。",
+      "latest_camp": {
+        "label": "2026年第四期集训",
+        "published_on": "2026-09-08",
+        "window": "2026-09-12 至 2026-10-07",
+        "purpose": "备战 2027 年亚洲杯，在武汉、重庆集训并参加热身赛。",
+        "player_count": 30,
+        "squad": [
+          {
+            "unit": "上海海港足球俱乐部",
+            "players": [
+              "颜骏凌",
+              "蒋光太",
+              "魏震"
+            ]
+          },
+          {
+            "unit": "上海申花足球俱乐部",
+            "players": [
+              "高天意"
+            ]
+          },
+          {
+            "unit": "成都蓉城足球俱乐部",
+            "players": [
+              "刘殿座",
+              "韩鹏飞",
+              "韦世豪",
+              "王子铭",
+              "李扬",
+              "杨明洋",
+              "蹇韬"
+            ]
+          },
+          {
+            "unit": "北京国安足球俱乐部",
+            "players": [
+              "塞尔吉尼奥"
+            ]
+          },
+          {
+            "unit": "山东泰山足球俱乐部",
+            "players": [
+              "刘洋",
+              "高准翼",
+              "谢文能",
+              "陈蒲"
+            ]
+          },
+          {
+            "unit": "天津津门虎足球俱乐部",
+            "players": [
+              "巴顿",
+              "黄嘉辉",
+              "闫炳良"
+            ]
+          },
+          {
+            "unit": "浙江职业足球俱乐部",
+            "players": [
+              "程进",
+              "陶强龙",
+              "张瑷晖"
+            ]
+          },
+          {
+            "unit": "云南玉昆足球俱乐部",
+            "players": [
+              "布尼亚明·阿不都沙拉木"
+            ]
+          },
+          {
+            "unit": "青岛西海岸足球俱乐部",
+            "players": [
+              "王庚睿"
+            ]
+          },
+          {
+            "unit": "河南足球俱乐部",
+            "players": [
+              "王上源",
+              "钟义浩"
+            ]
+          },
+          {
+            "unit": "大连英博足球俱乐部",
+            "players": [
+              "杨铭锐"
+            ]
+          },
+          {
+            "unit": "深圳新鹏城足球俱乐部",
+            "players": [
+              "戴伟浚"
+            ]
+          },
+          {
+            "unit": "重庆铜梁龙足球俱乐部",
+            "players": [
+              "杜月徵"
+            ]
+          },
+          {
+            "unit": "清华大学附属中学",
+            "players": [
+              "赵松源"
+            ]
+          }
+        ],
+        "matches": [
+          {
+            "date": "2026-09-24",
+            "kickoff": null,
+            "competition": "2026CFA中国之队·重庆国际足球邀请赛",
+            "opponent": "Maldives",
+            "score": "3-0",
+            "venue": null,
+            "status": "played",
+            "note": "足协战报确认王子铭第 50、56、63 分钟帽子戏法，助攻分别为王上源、陈蒲、王庚睿。首发首秀为李扬、杨明洋、布尼亚明·阿不都沙拉木、钟义浩，替补首秀为闫炳良、王庚睿、杨铭锐、赵松源、杜月徵。战报未写球场；新华社把同日另一场放在铜梁龙体育场，凤凰网把中国队本场放在龙兴足球场，球场暂不作为强事实。"
+          },
+          {
+            "date": "2026-09-27",
+            "kickoff": "19:35",
+            "competition": "2026CFA中国之队·重庆国际足球邀请赛",
+            "opponent": "New Zealand",
+            "score": null,
+            "status": "scheduled",
+            "note": "足协战报预告的第二场。同日下午新西兰 2-2 巴勒斯坦。截至 2026-09-26 中国队这场尚未开赛。"
+          }
+        ]
+      },
+      "staff": [
+        {
+          "role": "领队",
+          "members": [
+            "童杰"
+          ]
+        },
+        {
+          "role": "管理",
+          "members": [
+            "隋瀚"
+          ]
+        },
+        {
+          "role": "教练组成员",
+          "members": [
+            "莱纳·毛雷尔",
+            "杨智",
+            "周挺",
+            "埃米利奥·费尔南德斯",
+            "特尔莫·诺瓦尔"
+          ]
+        },
+        {
+          "role": "训练员",
+          "members": [
+            "刘健",
+            "于汉超"
+          ]
+        },
+        {
+          "role": "技术分析师",
+          "members": [
+            "塞尔吉奥·加杰利",
+            "李杜亮"
+          ]
+        },
+        {
+          "role": "新闻官",
+          "members": [
+            "丁亦可"
+          ]
+        },
+        {
+          "role": "队医",
+          "members": [
+            "王书成",
+            "金日"
+          ]
+        },
+        {
+          "role": "运动防护师",
+          "members": [
+            "姜闻宇",
+            "孔府",
+            "谢梓言"
+          ]
+        },
+        {
+          "role": "装备管理",
+          "members": [
+            "陈曦",
+            "王跃"
+          ]
+        },
+        {
+          "role": "翻译",
+          "members": [
+            "刘剑",
+            "江澍",
+            "陈皓"
+          ]
+        }
+      ],
+      "notes": [
+        "30 人名单来自 2026-09-08 足协通知。张玉宁、王钰栋等随 U23 参加亚运会的说法来自中新网，不写入本名单的缺席原因字段。",
+        "通知原稿写的热身对手后来有调整。已赛事实只采用 2026-09-25 足协战报：中国 3-0 马尔代夫。"
+      ],
+      "source_links": [
+        {
+          "label": "中国足球协会关于组织国家男子足球队2026年第四期集训的通知",
+          "url": "https://www.thecfa.cn/jxtz/20260908/38120.html"
+        },
+        {
+          "label": "中国队3比0战胜马尔代夫队 九人完成国际A级赛首秀",
+          "url": "https://www.thecfa.cn/zhongguozhidui/20260925/38220.html"
+        }
+      ]
+    }
   },
   "china_youth_development_coaches": {
     "id": "china-youth-development-coaches",
     "schema_version": 2,
-    "last_checked": "2026-07-25",
+    "last_checked": "2026-10-03",
     "scope": "中国境内长期从事男子青少年足球启蒙、梯队训练、校园足球或青训技术管理的具名教练样本。小学、体校、足校、职业俱乐部梯队、独立基地和民间项目分别标注；不与成年一线队或国字号主教练统计混算。",
     "coverage_status": "expanded-partial",
     "role_policy": {
@@ -47447,12 +48799,11 @@
           "province": "辽宁",
           "city": "大连"
         },
-        "role": "项目发起人、青训教练",
+        "role": "项目发起人、总教练",
         "age_bands": [
           "u9",
           "u12",
-          "u16",
-          "u18"
+          "u13"
         ],
         "period": {
           "start": "2023",
@@ -47460,7 +48811,7 @@
           "precision": "year",
           "status": "current-verified"
         },
-        "profile_summary": "退役后回到大连推进长期青训。金普新区官方项目覆盖8至18岁完整周期；中国足球发展基金会2026年报道确认孙继海团队的精英梯队由大连市嗨球足球俱乐部承载，并获得公益项目支持。",
+        "profile_summary": "退役后回到大连推进长期青训。金普新区官方项目设计覆盖8至18岁；基金会2026年确认大连市嗨球足球俱乐部承载其精英梯队，已组2013、2015、2017三个年龄段、近90名球员，当前孩子约8至13岁。孙继海任总教练。公开可核教练组还包括朱永胜、吴忠俊、王军、张烈、邹鹏；其余名额未公布全表。截至2026-10-03，未见嗨球球员进入足协U15/U17集训或职业一线队。",
         "methodology_tags": [
           "退役球员转教练",
           "十年培养周期",
@@ -47473,21 +48824,290 @@
             "type": "government",
             "label": "大连金普新区：孙继海青少年足球项目",
             "url": "https://dljp.gov.cn/hd/005001/20240122/c6277e67-3842-4a05-b466-4871d8d4179d.html",
-            "checked_at": "2026-07-25",
-            "claim": "确认项目覆盖8至18岁、十年培养周期、全国选拔和数据管理框架。"
+            "checked_at": "2026-10-03",
+            "claim": "确认项目覆盖8至18岁、十年培养周期、全国选拔，孙继海出任总教练。"
           },
           {
             "type": "official-foundation",
-            "label": "中国足球发展基金会：孙继海与嗨球少年",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（上）",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0415/694192.html",
+            "checked_at": "2026-10-03",
+            "claim": "确认大连嗨球已集结3支梯队、近90名球员，目标为培养能进五大联赛的中国球员。"
+          },
+          {
+            "type": "official-foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
             "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
-            "checked_at": "2026-07-25",
-            "claim": "确认孙继海团队持续训练、大连嗨球精英梯队及2025年起的基金会公益支持。"
+            "checked_at": "2026-10-03",
+            "claim": "确认2013/2015/2017三个年龄段、体教融合、基金会公益支持，并点名教练组核心成员。"
           }
         ],
         "verification": {
           "status": "verified",
-          "last_checked": "2026-07-25",
-          "notes": "政府与基金会来源确认项目和实际青训工作。起始年份按2023年官方合作节点记录，不向前推断未公开的组织任期。"
+          "last_checked": "2026-10-03",
+          "notes": "政府与基金会确认项目和总教练身份。当前在训年龄以基金会2026年4月稿为准（最大约13岁）；8至18岁是项目设计，不是已经组齐U16/U18队。教练组其余未具名席位列入watchlist。"
+        }
+      },
+      {
+        "id": "cn-zhu-yongsheng-haiqiu",
+        "story_id": "sun-jihai-player-to-coach",
+        "name": {
+          "zh": "朱永胜",
+          "en": "Zhu Yongsheng",
+          "native": "朱永胜"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "大连市嗨球足球俱乐部",
+          "short_name": "嗨球少年",
+          "type": "independent-project",
+          "province": "辽宁",
+          "city": "大连"
+        },
+        "role": "青训总监",
+        "age_bands": [
+          "u12",
+          "u13"
+        ],
+        "period": {
+          "start": "2022",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "孙继海国奥时期助手。早期在遵义嗨球担任青训总监并执教2009年龄段；基金会2026年报道仍将其列为嗨球教练组国字号教练。不把其人和时期带过的职业队履历写成嗨球输送成果。",
+        "methodology_tags": [
+          "青训总监",
+          "精英梯队",
+          "体教融合",
+          "低龄基础"
+        ],
+        "source_links": [
+          {
+            "type": "official-foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+            "checked_at": "2026-10-03",
+            "claim": "基金会2026年4月点名国字号教练朱永胜进入孙继海嗨球教练组。"
+          },
+          {
+            "type": "secondary-media",
+            "label": "嗨球青训早期梯队与教练组报道",
+            "url": "https://www.163.com/dy/article/IB01DM6905299LQ3.html",
+            "checked_at": "2026-10-03",
+            "claim": "早期报道确认朱永胜为嗨球青训总监，并曾执教2009年龄段及遵义基地。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-10-03",
+          "notes": "人名、总监职务和嗨球关联可核。证书等级未公布。2009年龄段是否仍在大连现役编制，公开材料未更新，故年龄段按当前项目的低龄梯队记录，不把早期2009队写成仍在运营。"
+        }
+      },
+      {
+        "id": "cn-wu-zhongjun-haiqiu",
+        "story_id": "sun-jihai-player-to-coach",
+        "name": {
+          "zh": "吴忠俊",
+          "en": "Wu Zhongjun",
+          "native": "吴忠俊"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "大连市嗨球足球俱乐部2013年龄段梯队",
+          "short_name": "嗨球2013年龄段",
+          "type": "independent-project",
+          "province": "辽宁",
+          "city": "大连"
+        },
+        "role": "2013年龄段主教练",
+        "age_bands": [
+          "u13"
+        ],
+        "period": {
+          "start": "2022",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "早期报道确认其执教嗨球2013年龄段；基金会2026年仍点名吴忠俊在教练组。媒体关于其个人曾培养多名国字号球员的说法属于其既往履历，不是嗨球输送统计。",
+        "methodology_tags": [
+          "单年龄段",
+          "U13",
+          "精英梯队"
+        ],
+        "source_links": [
+          {
+            "type": "official-foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+            "checked_at": "2026-10-03",
+            "claim": "基金会2026年4月点名吴忠俊为嗨球教练组成员。"
+          },
+          {
+            "type": "secondary-media",
+            "label": "嗨球青训早期梯队与教练组报道",
+            "url": "https://www.163.com/dy/article/IB01DM6905299LQ3.html",
+            "checked_at": "2026-10-03",
+            "claim": "早期报道确认吴忠俊为嗨球2013年龄段主教练。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-10-03",
+          "notes": "嗨球2013年龄段主教练身份可核。个人历史培养人数不得计入嗨球产出。AFC证书等级未核。"
+        }
+      },
+      {
+        "id": "cn-wang-jun-haiqiu",
+        "story_id": "sun-jihai-player-to-coach",
+        "name": {
+          "zh": "王军",
+          "en": "Wang Jun",
+          "native": "王军"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "大连市嗨球足球俱乐部",
+          "short_name": "嗨球少年",
+          "type": "independent-project",
+          "province": "辽宁",
+          "city": "大连"
+        },
+        "role": "守门员教练",
+        "age_bands": [
+          "u9",
+          "u12",
+          "u13"
+        ],
+        "period": {
+          "start": "2022",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "大连籍守门员教练。早期报道与基金会2026年稿均确认其在嗨球组内。同事转述其带过大量职业门将，只作背景，不作为嗨球门将输送证据。",
+        "methodology_tags": [
+          "守门员",
+          "精英梯队"
+        ],
+        "source_links": [
+          {
+            "type": "official-foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+            "checked_at": "2026-10-03",
+            "claim": "基金会2026年4月点名曾培养多名国门的王军进入嗨球教练组。"
+          },
+          {
+            "type": "secondary-media",
+            "label": "嗨球青训早期梯队与教练组报道",
+            "url": "https://www.163.com/dy/article/IB01DM6905299LQ3.html",
+            "checked_at": "2026-10-03",
+            "claim": "早期报道确认王军为嗨球守门员教练。"
+          }
+        ],
+        "verification": {
+          "status": "verified",
+          "last_checked": "2026-10-03",
+          "notes": "嗨球守门员教练身份可核。职业门将培养数量来自同事转述，未逐人核对，不写入成果字段。"
+        }
+      },
+      {
+        "id": "cn-zhang-lie-haiqiu",
+        "story_id": "sun-jihai-player-to-coach",
+        "name": {
+          "zh": "张烈",
+          "en": "Zhang Lie",
+          "native": "张烈"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "大连市嗨球足球俱乐部",
+          "short_name": "嗨球少年",
+          "type": "independent-project",
+          "province": "辽宁",
+          "city": "大连"
+        },
+        "role": "教练组成员",
+        "age_bands": [
+          "u9",
+          "u12",
+          "u13"
+        ],
+        "period": {
+          "start": "2026",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "前国门。基金会2026年4月点名进入孙继海嗨球教练组。公开材料未写清其带训年龄段、是否全职及证书等级，故岗位只记教练组成员。",
+        "methodology_tags": [
+          "退役球员转教练",
+          "守门员",
+          "精英梯队"
+        ],
+        "source_links": [
+          {
+            "type": "official-foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+            "checked_at": "2026-10-03",
+            "claim": "基金会点名前国门张烈进入嗨球教练组。"
+          }
+        ],
+        "verification": {
+          "status": "needs-review",
+          "last_checked": "2026-10-03",
+          "notes": "人名与组内身份仅基金会一文可核。起始年份按该文核查年记录，不向前推断。具体岗位和年龄段待俱乐部或赛事秩序册。"
+        }
+      },
+      {
+        "id": "cn-zou-peng-haiqiu",
+        "story_id": "sun-jihai-player-to-coach",
+        "name": {
+          "zh": "邹鹏",
+          "en": "Zou Peng",
+          "native": "邹鹏"
+        },
+        "nationality": "China PR",
+        "organization": {
+          "name": "大连市嗨球足球俱乐部",
+          "short_name": "嗨球少年",
+          "type": "independent-project",
+          "province": "辽宁",
+          "city": "大连"
+        },
+        "role": "教练组成员",
+        "age_bands": [
+          "u9",
+          "u12",
+          "u13"
+        ],
+        "period": {
+          "start": "2026",
+          "end": null,
+          "precision": "year",
+          "status": "current-reported"
+        },
+        "profile_summary": "前国奥球员。基金会2026年4月点名进入嗨球教练组。公开材料未写清带训年龄段和是否全职，故岗位只记教练组成员。",
+        "methodology_tags": [
+          "退役球员转教练",
+          "精英梯队"
+        ],
+        "source_links": [
+          {
+            "type": "official-foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（下）",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
+            "checked_at": "2026-10-03",
+            "claim": "基金会点名前国奥球员邹鹏进入嗨球教练组。"
+          }
+        ],
+        "verification": {
+          "status": "needs-review",
+          "last_checked": "2026-10-03",
+          "notes": "人名与组内身份仅基金会一文可核。起始年份按该文核查年记录。具体岗位待俱乐部或赛事秩序册。"
         }
       },
       {
@@ -48288,12 +49908,16 @@
       {
         "organization": "中国足球小将",
         "need": "已拆2014批次董路实际比赛职责，并保留徐亮、毛剑卿2023年教练组快照；2015、2016批次目前只有球员或参赛线索，尚无可核的具名官方教练名单。继续区分临时合作与长期训练。"
+      },
+      {
+        "organization": "大连市嗨球足球俱乐部",
+        "need": "基金会写教练组由亚足联职业级、A级教练领衔。公开人数快照约为早期7人、2024年底至2025年11人、2026年5月访谈约12人。已核孙继海、朱永胜、吴忠俊、王军、张烈、邹鹏；其余席位、证书等级、分年龄段职责和完整球员名单待俱乐部或中青赛秩序册。不得把未具名孩子写入主球员库，也不得把吴忠俊个人历史国字号培养人数算作嗨球输送。"
       }
     ]
   },
   "football_stories": {
     "schema_version": 1,
-    "last_checked": "2026-08-02",
+    "last_checked": "2026-10-03",
     "editorial_policy": {
       "zh": "人物经历与议题事实优先采用本人、俱乐部、政府、学校、公益机构和主流媒体来源。公开争议只记录可归因主张与回应；没有稳定原始出处的采访线索明确标为待核，不把单方转述写成事实，也不对法律问题作结论。",
       "en": "Career and issue facts prioritize first-party, club, government, school, foundation and established media sources. Public disputes remain attributed; interview leads without a stable primary source are explicitly marked unverified, and neither single-party accounts nor legal claims are presented as established facts."
@@ -48572,10 +50196,10 @@
           "en": "Sun Jihai: from Premier League mainstay to Dalian youth development"
         },
         "summary": {
-          "zh": "孙继海是中国球员长期立足英超的代表，也在退役后回到大连建设覆盖8至18岁的青训项目。其小学经历属于大连实验小学线，不是东北路小学校友；两所学校共同构成大连校园足球传统的一部分。",
-          "en": "Sun Jihai remains China's benchmark for sustained Premier League participation and later returned to Dalian to build an 8-to-18 development pathway. He attended Dalian Experimental Primary School, not Dongbeilu Primary School; both schools belong to the wider Dalian school-football ecosystem."
+          "zh": "孙继海是中国球员长期立足英超的代表，退役后在大连以嗨球少年品牌做全国海选青训。项目设计覆盖8至18岁，当前公开梯队为2013、2015、2017年龄段。小学属于大连实验小学线，不是东北路小学校友。",
+          "en": "Sun Jihai remains China's benchmark for sustained Premier League participation and later built the Haiqiu Shaonian academy in Dalian. The published design covers ages 8-18; the current public squads are the 2013, 2015 and 2017 age groups. He attended Dalian Experimental Primary School, not Dongbeilu."
         },
-        "checked_at": "2026-07-25",
+        "checked_at": "2026-10-03",
         "related_entities": [
           {
             "type": "coach",
@@ -48591,6 +50215,31 @@
             "type": "story",
             "id": "dalian-dongbeilu-primary-football",
             "label": "东北路小学与大连校园足球"
+          },
+          {
+            "type": "coach",
+            "id": "cn-zhu-yongsheng-haiqiu",
+            "label": "朱永胜"
+          },
+          {
+            "type": "coach",
+            "id": "cn-wu-zhongjun-haiqiu",
+            "label": "吴忠俊"
+          },
+          {
+            "type": "coach",
+            "id": "cn-wang-jun-haiqiu",
+            "label": "王军"
+          },
+          {
+            "type": "coach",
+            "id": "cn-zhang-lie-haiqiu",
+            "label": "张烈"
+          },
+          {
+            "type": "coach",
+            "id": "cn-zou-peng-haiqiu",
+            "label": "邹鹏"
           }
         ],
         "identity_note": {
@@ -48626,6 +50275,16 @@
             "value": {
               "zh": "大连嗨球青训精英梯队",
               "en": "Dalian Haiqiu elite youth pathway"
+            }
+          },
+          {
+            "label": {
+              "zh": "当前梯队",
+              "en": "Current squads"
+            },
+            "value": {
+              "zh": "2013 / 2015 / 2017 三个年龄段，近90人",
+              "en": "Three age groups (2013/2015/2017), about 90 players"
             }
           }
         ],
@@ -48684,6 +50343,28 @@
               "zh": "中国足球发展基金会把承载孙继海精英梯队的大连市嗨球足球俱乐部纳入社会足球青训质量提升行动计划。",
               "en": "The China Football Development Foundation included Dalian Haiqiu, which hosts Sun's elite squads, in its social-youth-football quality programme."
             }
+          },
+          {
+            "date": "2026-04",
+            "label": {
+              "zh": "三支梯队与具名教练组",
+              "en": "Three squads and named coaching staff"
+            },
+            "detail": {
+              "zh": "基金会确认2013、2015、2017三个年龄段近90名球员，并点名朱永胜、吴忠俊、王军、张烈、邹鹏进入教练组。最大孩子约13岁。具名球员样本为河北邯郸出身的崔一俊，不建无出生日期的主库档案。",
+              "en": "The foundation confirmed three age groups totalling about 90 players and named Zhu Yongsheng, Wu Zhongjun, Wang Jun, Zhang Lie and Zou Peng in the staff. The oldest players are about 13. Cui Yijun is the named player sample; he is not added to the main player library without a verified birth date."
+            }
+          },
+          {
+            "date": "2026-09",
+            "label": {
+              "zh": "中青赛U13全国总决赛",
+              "en": "U13 national youth-league finals"
+            },
+            "detail": {
+              "zh": "中国足协确认大连嗨球少年U13在全国总决赛第二阶段列第10名，未进入前八。次级报道转述小组赛2-6北京国安、1-5恒大足校，以及9-16名排位1-9负山东泰山。北一区冠军不能外推为全国同级最强。",
+              "en": "The CFA ranked Dalian Haiqiu U13 10th after the national finals second stage, outside the top eight. Secondary reports give 2-6 vs Beijing Guoan, 1-5 vs Evergrande and 1-9 vs Shandong Taishan in the 9th-16th playoff. A regional title is not a national ranking."
+            }
           }
         ],
         "sections": [
@@ -48696,9 +50377,54 @@
               "zh": "孙继海和东北路小学都属于大连足球城市传统中的重要节点，但不是“球员—母校”关系。孙继海的小学线索指向实验小学；东北路小学的官方代表校友名单则包括贾秀全、董方卓、于汉超、王大雷等。",
               "en": "Sun and Dongbeilu Primary School are both important parts of Dalian's football culture, but they are not linked as player and alma mater. Sun's school trail points to Experimental Primary School, while official Dongbeilu alumni examples include Jia Xiuquan, Dong Fangzhuo, Yu Hanchao and Wang Dalei."
             }
+          },
+          {
+            "title": {
+              "zh": "球员产出边界",
+              "en": "Player-output boundary"
+            },
+            "body": {
+              "zh": "嗨球少年目前仍是低龄在训项目。公开可核的具名球员是崔一俊（早期队长/中后场，基金会写其在大连就读并完成近三年训练）和已解约纠纷中的张卓毅。2026年9月中国U15第五期集训名单没有嗨球单位。不得把吴忠俊个人历史培养的国字号人数算进嗨球输送。",
+              "en": "Haiqiu remains a foundation-age programme. Named players in public sources are Cui Yijun, an early captain described by the foundation, and Zhang Zhuoyi, whose contract dispute is recorded separately. The September 2026 China U15 camp list has no Haiqiu affiliation. Wu Zhongjun's historical national-team pupils are not Haiqiu outputs."
+            }
           }
         ],
-        "public_disputes": [],
+        "public_disputes": [
+          {
+            "id": "haiqiu-zhang-zhuoyi-contract-2025",
+            "date": "2025-08-20",
+            "topic": {
+              "zh": "张卓毅解约与违约金诉讼",
+              "en": "Zhang Zhuoyi release dispute and damages claim"
+            },
+            "claim_status": "attributed-claim-unadjudicated",
+            "response_status": "litigation-reported",
+            "statements": [
+              {
+                "speaker": "张卓毅家长（新京报转述）",
+                "position": "claimant",
+                "paraphrase": {
+                  "zh": "家长称2024年4月签约免费培养至18岁，后因训练方式和伤病要求解约；协商中嗨球方面曾提出约18万元解约金。",
+                  "en": "The parents said a April 2024 free-to-18 contract was followed by a release request over training and injury, and that Haiqiu sought about 180,000 yuan to terminate."
+                },
+                "source_url": "https://www.bjnews.com.cn/detail/1759970230168228.html"
+              },
+              {
+                "speaker": "嗨球方面（新京报转述的民事诉讼）",
+                "position": "respondent",
+                "paraphrase": {
+                  "zh": "报道称嗨球于2025年8月20日向大连金州法院起诉，要求继续履行合同，否则向监护人索赔约266万元。",
+                  "en": "The report said Haiqiu filed in Dalian Jinzhou court on 20 August 2025, seeking continued performance or about 2.66 million yuan from the guardians."
+                },
+                "source_url": "https://www.bjnews.com.cn/detail/1759970230168228.html"
+              }
+            ],
+            "editorial_note": {
+              "zh": "本站只记录已发表报道中的双方主张，不判断违约是否成立，也不把张卓毅写成嗨球成功输送样本。",
+              "en": "This site records the published claims only. It does not adjudicate the contract and does not treat Zhang Zhuoyi as a Haiqiu graduate."
+            }
+          }
+        ],
         "source_links": [
           {
             "type": "government",
@@ -48711,8 +50437,8 @@
             "type": "foundation",
             "label": "中国足球发展基金会：孙继海与嗨球少年",
             "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0416/694280.html",
-            "checked_at": "2026-07-25",
-            "claim": "确认孙继海团队、嗨球俱乐部精英梯队及基金会公益支持。"
+            "checked_at": "2026-10-03",
+            "claim": "确认孙继海团队、嗨球俱乐部精英梯队、基金会公益支持，并点名朱永胜、吴忠俊、王军、张烈、邹鹏进入教练组。"
           },
           {
             "type": "club-report",
@@ -48720,6 +50446,34 @@
             "url": "https://www.ttplus.cn/publish/app/data/2017/12/20/115973/os_news.html",
             "checked_at": "2026-07-25",
             "claim": "文中把实验小学列为孙继海和朱挺的母校，用于学校关系交叉核对。"
+          },
+          {
+            "type": "foundation",
+            "label": "中国足球发展基金会：孙继海与嗨球少年（上）",
+            "url": "https://www.zqjjh.org.cn/zx/xwdt/2026/0415/694192.html",
+            "checked_at": "2026-10-03",
+            "claim": "确认3支梯队近90人及项目目标。"
+          },
+          {
+            "type": "news",
+            "label": "新京报：嗨球少年解约纠纷",
+            "url": "https://www.bjnews.com.cn/detail/1759970230168228.html",
+            "checked_at": "2026-10-03",
+            "claim": "记录张卓毅解约协商与嗨球提起诉讼的公开报道，不作法律结论。"
+          },
+          {
+            "type": "official-association",
+            "label": "中国足协：2026中青赛U13全国总决赛第二阶段排位",
+            "url": "https://www.thecfa.cn/qingchaoliansai/20260920/38193.html",
+            "checked_at": "2026-10-03",
+            "claim": "确认大连嗨球少年U13全国总决赛第二阶段列第10名，未进入前八。"
+          },
+          {
+            "type": "news",
+            "label": "中华网：中青赛U13小组赛与排位比分转述",
+            "url": "https://news.china.com/socialgd/10000169/20260920/49753703_all.html",
+            "checked_at": "2026-10-03",
+            "claim": "转述小组赛2-6北京国安、1-5恒大足校，以及排位赛1-9山东泰山。比分以该稿为次级来源，名次以足协公告为准。"
           }
         ]
       },
@@ -49468,6 +51222,150 @@
           "zh": "恒大足校 2011 年龄段“索赔 4400 万、足协不予受理”仅见自媒体转述，文书真实性未核，不入库。",
           "en": "The Evergrande 2011-age “CNY 44 million / CFA refused” story exists only in social-media recaps; the document is unverified and is excluded."
         }
+      }
+    ]
+  },
+  "china_2026_milestones": {
+    "id": "china-men-2026-milestones",
+    "year": 2026,
+    "checked_at": "2026-10-03",
+    "title": {
+      "zh": "2026 中国男足里程碑",
+      "en": "China men's 2026 milestones"
+    },
+    "lede": {
+      "zh": "2026 年中国男足国字号连续兑现三项可核成绩。三项不能混成同一种“最佳”，间隔对照点也不相同。",
+      "en": "China's men's national-youth sides posted three verifiable results in 2026. They are not the same kind of “best finish”, and each interval uses a different comparison point."
+    },
+    "scope_note": {
+      "zh": "口语里常把 U17 世界杯叫成“世青赛”。站内仍区分：世少赛是 FIFA U-17 世界杯，2026 已获资格；世青赛是 FIFA U-20 世界杯，中国男足最近一次仍是 2005 荷兰。",
+      "en": "Chinese media often call the U17 World Cup “the youth World Cup”. This site keeps the split: the U17 World Cup is the 2026 qualification; the U20 World Cup last included China in 2005."
+    },
+    "poster": {
+      "src": "./assets/xiaohongshu-china-football-2026.jpg",
+      "alt": {
+        "zh": "2026 中国足球三项成绩的历史间隔图：U23 创办最佳、U17 时隔 21 年、亚运时隔 28 年",
+        "en": "Graphic of China’s three 2026 results and their historical intervals"
+      }
+    },
+    "items": [
+      {
+        "id": "u23-asian-cup",
+        "competition_id": "afc-u23-2026",
+        "date": "2026-01-24",
+        "result": {
+          "zh": "亚军",
+          "en": "Runners-up"
+        },
+        "metric": {
+          "zh": "创办最佳",
+          "en": "Best since founding"
+        },
+        "interval": {
+          "zh": "时隔 22 年再进洲际决赛",
+          "en": "Continental final after 22 years"
+        },
+        "title": {
+          "zh": "U23 亚洲杯亚军",
+          "en": "U23 Asian Cup runners-up"
+        },
+        "summary": {
+          "zh": "决赛 0 比 4 负于日本。这是该项赛事创办以来首次小组出线、首次淘汰赛、首次决赛。已建档的此前决赛圈届次均止步小组赛。公开口径另记时隔 22 年再进洲际大赛决赛，对照点是 2004 成年亚洲杯亚军，不是上一届 U23 亚洲杯。",
+          "en": "Lost the final 0-4 to Japan. First group-stage exit, first knockout appearance and first final in this competition. Archived previous finals campaigns all ended in the group stage. The 22-year gap refers to the 2004 senior Asian Cup final, not the previous U23 edition."
+        },
+        "do_not_write": {
+          "zh": "不能写成中国男足各级队史最佳，也不能写成高于 2004 成年亚洲杯亚军。",
+          "en": "Not an all-time peak across China’s senior and youth teams, and not a better finish than the 2004 senior Asian Cup runners-up."
+        },
+        "sources": [
+          {
+            "label": "China Daily / Xinhua",
+            "url": "https://cn.chinadaily.com.cn/a/202601/25/WS697561aaa310942cc499caca.html"
+          },
+          {
+            "label": "CFA U23 team page",
+            "url": "https://www.thecfa.cn/nzu23/index.html"
+          }
+        ]
+      },
+      {
+        "id": "u17-world-cup-path",
+        "competition_id": "afc-u17-2026",
+        "related_competition_id": "fifa-u17-world-cup-2026",
+        "date": "2026-05-22",
+        "result": {
+          "zh": "亚洲杯亚军，并获世少赛资格",
+          "en": "Asian Cup runners-up and U17 World Cup qualification"
+        },
+        "metric": {
+          "zh": "21 年",
+          "en": "21 years"
+        },
+        "interval": {
+          "zh": "时隔 21 年重返世少赛",
+          "en": "Back at the U17 World Cup after 21 years"
+        },
+        "title": {
+          "zh": "U17 亚洲杯进世少赛",
+          "en": "U17 Asian Cup path to the World Cup"
+        },
+        "summary": {
+          "zh": "小组出线即锁定 2026 FIFA U-17 世界杯资格，决赛 2 比 3 负日本获亚军。亚洲决赛是 2004 年夺冠后近 22 年最佳，低于 1992、2004 两座冠军。世少赛距 2005 秘鲁时隔 21 年，为队史第 7 次资格，不是第 6 次。",
+          "en": "Group-stage qualification locked a 2026 FIFA U-17 World Cup place; the final was a 2-3 loss to Japan. The Asian final is the best finish in 22 years since the 2004 title, below the 1992 and 2004 championships. The World Cup return is 21 years after Peru 2005 and China’s seventh appearance, not the sixth."
+        },
+        "do_not_write": {
+          "zh": "不能写成亚洲杯队史最佳，不能写成世青赛资格，也不能写成队史第 6 次世少赛。",
+          "en": "Not the all-time U17 Asian best, not a U20 World Cup qualification, and not China’s sixth U17 World Cup appearance."
+        },
+        "sources": [
+          {
+            "label": "CFA: best Asian finish in 22 years",
+            "url": "https://www.thecfa.cn/xinwenu17/20260523/37719.html"
+          },
+          {
+            "label": "CFA: U17 World Cup return after 21 years",
+            "url": "https://www.thecfa.cn/zhongguozhidui/20260513/37660.html"
+          }
+        ]
+      },
+      {
+        "id": "asian-games-bronze",
+        "competition_id": "asian-games-men-2026",
+        "date": "2026-10-03",
+        "result": {
+          "zh": "铜牌",
+          "en": "Bronze"
+        },
+        "metric": {
+          "zh": "28 年",
+          "en": "28 years"
+        },
+        "interval": {
+          "zh": "时隔 28 年再获亚运奖牌",
+          "en": "Asian Games medal after 28 years"
+        },
+        "title": {
+          "zh": "亚运会男足铜牌",
+          "en": "Asian Games men’s bronze"
+        },
+        "summary": {
+          "zh": "铜牌战常规时间 2 比 2，点球 4 比 3 击败乌兹别克斯坦。路径为小组头名、八强 3 比 0 泰国、半决赛 1 比 2 负韩国。这是 1998 曼谷铜牌后时隔 28 年再获奖牌，也是 2002 年改为 U23 赛制后的最佳成绩。",
+          "en": "The bronze match finished 2-2, then 4-3 on penalties against Uzbekistan, after topping the group, beating Thailand 3-0 and losing 1-2 to Korea Republic in the semi-final. It is the first Asian Games medal since Bangkok 1998 and the best U23-era finish since the age limit began in 2002."
+        },
+        "do_not_write": {
+          "zh": "不能写成队史最佳。队史最高仍是 1994 广岛银牌；1978 曼谷是铜牌。",
+          "en": "Not the all-time Asian Games peak. Hiroshima 1994 silver remains the best finish; Bangkok 1978 was bronze."
+        },
+        "sources": [
+          {
+            "label": "CFA bronze report",
+            "url": "https://www.thecfa.cn/nzyyhxw/20261003/38255.html"
+          },
+          {
+            "label": "Olympics.com results tracker",
+            "url": "https://www.olympics.com/zh/news/2026-aichi-nagoya-asian-games-chinese-mens-football-team-results-tracker"
+          }
+        ]
       }
     ]
   },
@@ -52795,6 +54693,707 @@
             "checked_at": "2026-07-19"
           }
         ]
+      }
+    ]
+  },
+  "spain_football_system": {
+    "schema_version": 1,
+    "checked_at": "2026-10-04",
+    "summary": {
+      "zh": "本页把西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站已建档、曾进入这些层级的中国球员样本放在同一套口径里。西甲俱乐部青训合同不等于西甲出场；签职业合同也不等于已经踢过对应联赛。",
+      "en": "This page places Spain's senior professional pyramid, the U19/U16 youth pyramid, and documented Chinese samples into one scope. An academy deal with a La Liga club is not a La Liga appearance, and a professional contract is not automatically a match record."
+    },
+    "scope_note": {
+      "zh": "这是研究样本索引，不是西班牙足协或西甲官方全量名单。球员可同时出现在多个层级；当前注册以球员主档为准。吕孟洋的西班牙人 U19B 节点来自 2026-09 俱乐部官宣，主档仍停在欧罗巴 2025/26。",
+      "en": "This is a research sample index, not an official RFEF or LaLiga census. A player may appear on more than one layer. Current registration still follows the player record. Lyu Mengyang's Espanyol U19B node comes from the September 2026 club announcement; his master record still stops at Europa 2025/26."
+    },
+    "contract_types": [
+      {
+        "id": "professional",
+        "label": {
+          "zh": "职业合同",
+          "en": "Professional contract"
+        },
+        "detail": {
+          "zh": "职业运动员劳动合同，通常对应一线队或职业编制注册，可参加成年职业联赛。",
+          "en": "A professional employment contract, usually tied to first-team or senior professional registration."
+        }
+      },
+      {
+        "id": "youth-formation",
+        "label": {
+          "zh": "青训合同",
+          "en": "Youth formation contract"
+        },
+        "detail": {
+          "zh": "梯队培训协议 / ficha juvenil。未满 18 岁的非欧盟球员通常只能签这一类，不能自动升成一线队职业合同。",
+          "en": "An academy training agreement / youth licence. Non-EU minors are usually limited to this type and it does not become a first-team professional deal by itself."
+        }
+      },
+      {
+        "id": "unknown",
+        "label": {
+          "zh": "合同类型待核",
+          "en": "Contract type unverified"
+        },
+        "detail": {
+          "zh": "能确认俱乐部或竞赛层级，但公开来源还不足以判断是职业合同还是青训协议。",
+          "en": "The club or competition layer is known, but public sources are not yet enough to classify the contract."
+        }
+      }
+    ],
+    "pyramids": [
+      {
+        "id": "senior",
+        "name": {
+          "zh": "成年职业与半职业联赛",
+          "en": "Senior professional and semi-pro leagues"
+        },
+        "summary": {
+          "zh": "西甲和西乙由西甲联盟运营，是仅有的两级完全职业联赛。西协甲及以下由西班牙足协体系组织；B 队通常从西协甲打起，不能与一线队同组。",
+          "en": "LaLiga and Segunda are the only fully professional national tiers, run by LaLiga. Primera Federación and below sit in the RFEF system. Reserve teams usually enter at Primera Federación and cannot share a group with their first team."
+        },
+        "layers": [
+          {
+            "id": "laliga",
+            "tier": 1,
+            "name": {
+              "zh": "西甲 LaLiga",
+              "en": "LaLiga"
+            },
+            "stable_structure": {
+              "zh": "西班牙顶级职业联赛，20 队。只有一线队职业合同且完成联赛注册，才可能获得西甲正式出场。",
+              "en": "Spain's top professional league, 20 clubs. Competitive appearances require a first-team professional registration."
+            },
+            "source_url": "https://www.laliga.com/"
+          },
+          {
+            "id": "segunda",
+            "tier": 2,
+            "name": {
+              "zh": "西乙 LaLiga Hypermotion",
+              "en": "Segunda División / LaLiga Hypermotion"
+            },
+            "stable_structure": {
+              "zh": "第二级完全职业联赛。降级的西甲一线队仍踢这里，例如武磊随西班牙人征战的升级赛季。",
+              "en": "The second fully professional tier. Relegated LaLiga first teams compete here, including Wu Lei's Espanyol promotion season."
+            },
+            "source_url": "https://www.laliga.com/"
+          },
+          {
+            "id": "primera-federacion",
+            "tier": 3,
+            "name": {
+              "zh": "西协甲 Primera Federación",
+              "en": "Primera Federación"
+            },
+            "stable_structure": {
+              "zh": "第三级。包含独立俱乐部和西甲/西乙俱乐部的 B 队。李昊外租科尔内利亚、杜月徵的马贝拉、何小珂的萨瓦德尔一线队都落在这一层。",
+              "en": "The third tier, mixing independent clubs and reserve teams of LaLiga/Segunda clubs. Li Hao's Cornellà loan, Du Yuezheng at Marbella and He Xiaoke's Sabadell first-team minutes sit here."
+            },
+            "source_url": "https://www.rfef.es/"
+          },
+          {
+            "id": "segunda-federacion",
+            "tier": 4,
+            "name": {
+              "zh": "西协乙 Segunda Federación",
+              "en": "Segunda Federación"
+            },
+            "stable_structure": {
+              "zh": "第四级全国联赛。邝兆镭 2025 年加盟莱里达竞技一线队属于这一层；签约与随队训练不等于已经取得正式出场。",
+              "en": "The fourth national tier. Kuang Zhaolei's 2025 move to Atlètic Lleida belongs here; signing and training do not prove a competitive appearance."
+            },
+            "source_url": "https://www.rfef.es/"
+          },
+          {
+            "id": "tercera-federacion",
+            "tier": 5,
+            "name": {
+              "zh": "西协丙 Tercera Federación",
+              "en": "Tercera Federación"
+            },
+            "stable_structure": {
+              "zh": "第五级。杨希离开西班牙人后的奥斯皮塔莱特、肖远豪的蒙塔涅萨一线队都按这一层记录。",
+              "en": "The fifth tier. Yang Xi's L'Hospitalet spell after Espanyol and Xiao Yuanhao's Montañesa first-team minutes are recorded here."
+            },
+            "source_url": "https://www.rfef.es/"
+          },
+          {
+            "id": "regional-senior",
+            "tier": 6,
+            "name": {
+              "zh": "自治区成年联赛",
+              "en": "Regional senior leagues"
+            },
+            "stable_structure": {
+              "zh": "第六级及以下由各自治区足协组织，例如加泰罗尼亚甲级、乙级。肖远豪的图罗佩拉和国际巴塞罗那落在这里，不能写成全国职业联赛。",
+              "en": "Tier 6 and below are run by regional federations, such as Catalonia's senior divisions. Xiao Yuanhao's Turó Peira and Inter Barcelona spells belong here, not in the national professional pyramid."
+            },
+            "source_url": "https://www.fcf.cat/"
+          }
+        ]
+      },
+      {
+        "id": "u19",
+        "name": {
+          "zh": "U19 / Juvenil 联赛",
+          "en": "U19 / Juvenil leagues"
+        },
+        "summary": {
+          "zh": "西甲俱乐部的 Juvenil A 通常打全国最高级荣誉联赛，Juvenil B 打全国联赛，Juvenil C 多在自治区联赛。A/B/C 不是同一竞赛层级。",
+          "en": "A La Liga club's Juvenil A side usually plays División de Honor, Juvenil B plays Liga Nacional, and Juvenil C is mostly regional. A, B and C are not the same competition level."
+        },
+        "layers": [
+          {
+            "id": "division-honor-juvenil",
+            "tier": 1,
+            "name": {
+              "zh": "U19 荣誉联赛 División de Honor Juvenil",
+              "en": "División de Honor Juvenil"
+            },
+            "stable_structure": {
+              "zh": "西班牙 U19 最高级别全国联赛，对应多数西甲俱乐部的 Juvenil A。杨希在西班牙人 U19A 的可核公开口径落在这一层。",
+              "en": "Spain's top national U19 league, usually Juvenil A at La Liga clubs. Yang Xi's documented Espanyol U19A minutes belong here."
+            },
+            "source_url": "https://www.rfef.es/"
+          },
+          {
+            "id": "liga-nacional-juvenil",
+            "tier": 2,
+            "name": {
+              "zh": "U19 全国联赛 Liga Nacional Juvenil",
+              "en": "Liga Nacional Juvenil"
+            },
+            "stable_structure": {
+              "zh": "U19 第二级全国联赛，对应多数俱乐部的 Juvenil B。吕孟洋 2026 年 9 月加盟西班牙人青年 B 队，公开口径打这一级，不是荣誉联赛。",
+              "en": "The second national U19 tier, usually Juvenil B. Lyu Mengyang's September 2026 Espanyol Youth B move is publicly described at this level, not División de Honor."
+            },
+            "source_url": "https://www.rfef.es/"
+          },
+          {
+            "id": "preferente-juvenil",
+            "tier": 3,
+            "name": {
+              "zh": "U19 自治区联赛 / Preferente",
+              "en": "Regional U19 / Preferente Juvenil"
+            },
+            "stable_structure": {
+              "zh": "第三级及以下青年联赛，含加泰 Preferent Juvenils。吕孟洋 2025/26 的欧罗巴 Juvenil B、刘凯源 2026/27 的比利亚雷亚尔 Juvenil C 观察名单都先归这一层。",
+              "en": "Third-tier and regional youth leagues, including Catalonia's Preferent Juvenils. Lyu Mengyang's 2025/26 Europa Juvenil B and Liu Kaiyuan's 2026/27 Villarreal Juvenil C watch list are placed here."
+            },
+            "source_url": "https://www.fcf.cat/"
+          }
+        ]
+      },
+      {
+        "id": "u16",
+        "name": {
+          "zh": "U16 / Cadete 与更低年龄段",
+          "en": "U16 / Cadete and younger"
+        },
+        "summary": {
+          "zh": "Cadete 没有全国统一职业联赛，最高组多为自治区荣誉联赛。达姆、科尔内利亚、比利亚雷亚尔 Cadete A 都按这一层理解。",
+          "en": "Cadete football has no single national professional league; the top group is usually a regional honour division. Damm, Cornellà and Villarreal Cadete A are read at this layer."
+        },
+        "layers": [
+          {
+            "id": "cadete-honor",
+            "tier": 1,
+            "name": {
+              "zh": "U16 荣誉联赛 Cadete Honor",
+              "en": "Cadete honour division"
+            },
+            "stable_structure": {
+              "zh": "各自治区 U16 最高组。刘凯源 2025/26 比利亚雷亚尔 Cadete A、邝兆镭达姆 U16A、吕孟洋科尔内利亚 Cadet A 都按这一层记录。",
+              "en": "The top regional U16 group. Liu Kaiyuan's 2025/26 Villarreal Cadete A, Kuang Zhaolei's Damm U16A and Lyu Mengyang's Cornellà Cadet A are recorded here."
+            },
+            "source_url": "https://www.fcf.cat/"
+          },
+          {
+            "id": "cadete-other",
+            "tier": 2,
+            "name": {
+              "zh": "其他 Cadete / Infantil 青年组",
+              "en": "Other Cadete / Infantil youth groups"
+            },
+            "stable_structure": {
+              "zh": "非最高组的 U16 或 U14 注册，例如吕孟洋奥斯皮塔莱特 Cadet B、张林峒圣胡斯特 U14A、李东宸奥斯皮塔莱特 U14A。",
+              "en": "Non-top U16 or U14 registrations, such as Lyu Mengyang at L'Hospitalet Cadet B, Zhang Lindong at Sant Just U14A and Li Dongchen at L'Hospitalet U14A."
+            },
+            "source_url": "https://www.fcf.cat/"
+          },
+          {
+            "id": "club-academy-unspecified",
+            "tier": 9,
+            "name": {
+              "zh": "已确认俱乐部青训，联赛层级待拆",
+              "en": "Confirmed academy link, league layer pending"
+            },
+            "stable_structure": {
+              "zh": "能确认在西班牙俱乐部梯队，但公开来源还没有稳定拆到具体青年联赛层级。达姆、卡拉万切尔、马竞青训起步阶段常用这一层，避免把俱乐部名字写成西甲出场。",
+              "en": "The Spanish academy link is confirmed, but the exact youth league layer is not yet stable. Damm, Carabanchel and early Atlético academy stages use this bucket so a club name is not written as a La Liga appearance."
+            },
+            "source_url": "https://www.rfef.es/"
+          }
+        ]
+      }
+    ],
+    "placements": [
+      {
+        "id": "wu-lei-laliga",
+        "featured_record_id": "wu-lei-espanyol-2019",
+        "name": "Wu Lei",
+        "local_name": "武磊",
+        "layer_id": "laliga",
+        "club": "RCD Espanyol",
+        "season": "2019-2020",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2019 年加盟西班牙人一线队，本库西甲+西乙合计 103 场。这是职业一线队合同，不是青训。",
+          "en": "Joined Espanyol's first team in 2019. The repository records 103 combined LaLiga and Segunda appearances. This is a professional first-team contract, not an academy deal."
+        }
+      },
+      {
+        "id": "wu-lei-segunda",
+        "featured_record_id": "wu-lei-espanyol-2019",
+        "name": "Wu Lei",
+        "local_name": "武磊",
+        "layer_id": "segunda",
+        "club": "RCD Espanyol",
+        "season": "2020-2021",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "西班牙人降级后，武磊续约并随一线队征战西乙升级赛季。",
+          "en": "After relegation, Wu Lei renewed and played the Segunda promotion season with the first team."
+        }
+      },
+      {
+        "id": "zhang-chengdong-laliga",
+        "featured_record_id": "zhang-chengdong-rayo-2015",
+        "name": "Zhang Chengdong",
+        "local_name": "张呈栋",
+        "layer_id": "laliga",
+        "club": "Rayo Vallecano",
+        "season": "2015-2016",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "北京国安租借至巴列卡诺一线队。西甲正式出场 1 场约 9 分钟，属于职业租借而非青训。",
+          "en": "Loaned from Beijing Guoan to Rayo Vallecano's first team. One LaLiga appearance of about nine minutes; a professional loan, not academy football."
+        }
+      },
+      {
+        "id": "li-hao-primera-federacion",
+        "player_id": "cn-li-hao-2004",
+        "name": "Li Hao",
+        "local_name": "李昊",
+        "layer_id": "primera-federacion",
+        "club": "UE Cornellà",
+        "season": "2023",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "新华社确认 2023 年与马竞签职业合同后外租科尔内利亚。竞赛落点是西协甲，不是西甲或西乙出场。",
+          "en": "Xinhua confirms a 2023 Atlético professional contract and a loan to Cornellà. The competitive layer is Primera Federación, not LaLiga or Segunda."
+        }
+      },
+      {
+        "id": "li-hao-atletico-academy",
+        "player_id": "cn-li-hao-2004",
+        "name": "Li Hao",
+        "local_name": "李昊",
+        "layer_id": "club-academy-unspecified",
+        "club": "Atlético de Madrid academy",
+        "season": "2016-2023",
+        "contract_type": "youth-formation",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2016 年起在马竞青训。青训阶段不能写成西甲出场；2023 年职业合同是另一节点。",
+          "en": "Atlético academy from 2016. The academy years are not LaLiga appearances; the 2023 professional contract is a separate node."
+        }
+      },
+      {
+        "id": "du-yuezheng-primera-federacion",
+        "player_id": "cn-du-yuezheng-2005",
+        "featured_record_id": "du-yuezheng-marbella-2024",
+        "name": "Du Yuezheng",
+        "local_name": "杜月徵",
+        "layer_id": "primera-federacion",
+        "club": "Marbella FC",
+        "season": "2024-2025",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "西协甲马贝拉 22 场 3 球。这是第三级成年职业路径，不是西乙。",
+          "en": "22 appearances and 3 goals for Marbella in Primera Federación. This is a third-tier senior path, not Segunda."
+        }
+      },
+      {
+        "id": "he-xiaoke-primera-federacion",
+        "featured_record_id": "he-xiaoke-spain-pathway-2021",
+        "name": "He Xiaoke",
+        "local_name": "何小珂",
+        "layer_id": "primera-federacion",
+        "club": "CE Sabadell",
+        "season": "2022",
+        "contract_type": "unknown",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2022-12-18 对奥萨苏纳 B 替补登场，是可核西协甲首秀。本库不把它写成西乙。",
+          "en": "Came on against Osasuna B on 2022-12-18, a verified Primera Federación debut. The repository does not record this as Segunda."
+        }
+      },
+      {
+        "id": "yang-xi-tercera-federacion",
+        "player_id": "cn-yang-alex-2005",
+        "name": "Alex Xi Yang",
+        "local_name": "杨希",
+        "layer_id": "tercera-federacion",
+        "club": "CE L'Hospitalet",
+        "season": "2024-2025",
+        "contract_type": "unknown",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "verified",
+        "note": {
+          "zh": "离开西班牙人后自由转会奥斯皮塔莱特。足协报名可核注册，公开统计未见正式出场。",
+          "en": "Joined L'Hospitalet after Espanyol. CFA lists confirm the registration; public stats show no competitive appearance."
+        }
+      },
+      {
+        "id": "xiao-yuanhao-tercera-federacion",
+        "featured_record_id": "xiao-yuanhao-spain-pathway-2018",
+        "name": "Xiao Yuanhao",
+        "local_name": "肖远豪",
+        "layer_id": "tercera-federacion",
+        "club": "CF Montañesa",
+        "season": "2024-2025",
+        "contract_type": "unknown",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "蒙塔涅萨一线队西协丙：3 次名单、1 次替补共 2 分钟。",
+          "en": "Montañesa first team in Tercera Federación: three match-day squads and one substitute appearance of two minutes."
+        }
+      },
+      {
+        "id": "xiao-yuanhao-regional-senior",
+        "featured_record_id": "xiao-yuanhao-spain-pathway-2018",
+        "name": "Xiao Yuanhao",
+        "local_name": "肖远豪",
+        "layer_id": "regional-senior",
+        "club": "Turó Peira / Inter Barcelona",
+        "season": "2025-2026",
+        "contract_type": "unknown",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "加泰甲图罗佩拉约 10 场，加泰乙国际巴塞罗那 3 次首发 2 球。国际巴塞罗那与巴萨、国米无关。",
+          "en": "About 10 games for Turó Peira in Catalonia's top regional senior league, then three starts and two goals for Inter Barcelona in the second regional tier. Inter Barcelona is unrelated to FC Barcelona or Inter Milan."
+        }
+      },
+      {
+        "id": "kuang-zhaolei-segunda-federacion",
+        "player_id": "cn-kuang-zhaolei-2009",
+        "name": "Kuang Zhaolei",
+        "local_name": "邝兆镭",
+        "layer_id": "segunda-federacion",
+        "club": "CE Atlètic Lleida",
+        "season": "2025",
+        "contract_type": "professional",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2025-07-28 加盟西协乙莱里达竞技一线队，合同公开口径至 2027 年。已完成签约，成年正式出场仍待回填。",
+          "en": "Joined Atlètic Lleida's first team on 2025-07-28, publicly contracted to 2027. The signing is confirmed; senior competitive appearances are still pending."
+        }
+      },
+      {
+        "id": "gao-leilei-regional-senior",
+        "featured_record_id": "gao-leilei-multi-country-2007",
+        "name": "Gao Leilei",
+        "local_name": "高雷雷",
+        "layer_id": "regional-senior",
+        "club": "Spanish lower-division clubs",
+        "season": "2019",
+        "contract_type": "professional",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "晚年进入西班牙低级别职业俱乐部体系。本库明确：不能把签约自动等同于西乙出场。",
+          "en": "Entered Spanish lower-division clubs late in his career. The repository is explicit: a signing is not a Segunda appearance."
+        }
+      },
+      {
+        "id": "yang-xi-honor-juvenil",
+        "player_id": "cn-yang-alex-2005",
+        "name": "Alex Xi Yang",
+        "local_name": "杨希",
+        "layer_id": "division-honor-juvenil",
+        "club": "RCD Espanyol Juvenil A",
+        "season": "2021-2024",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "公开百科记其荣誉联赛首秀为 2022-03-20，2022/23 约 24 场。本人采访也提到踢过荣耀联赛后超龄离队。本库球员主档尚未拆 A/B，故标 mixed-source。",
+          "en": "Public encyclopaedia notes a División de Honor debut on 2022-03-20 and about 24 games in 2022/23. His own interview also says he aged out of that league. The player master record has not yet split A/B, so this stays mixed-source."
+        }
+      },
+      {
+        "id": "yang-xi-liga-nacional",
+        "player_id": "cn-yang-alex-2005",
+        "name": "Alex Xi Yang",
+        "local_name": "杨希",
+        "layer_id": "liga-nacional-juvenil",
+        "club": "RCD Espanyol Juvenil B",
+        "season": "2021-2022",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "公开口径 2021/22 主踢西班牙人 U19B 全国联赛约 23 场，同年开始上 A 队。不是只在 U19A。",
+          "en": "Public sources put about 23 Liga Nacional games for Espanyol U19B in 2021/22, with the same season's first A-team minutes. He was not exclusively U19A."
+        }
+      },
+      {
+        "id": "lyu-mengyang-liga-nacional",
+        "player_id": "cn-lyu-mengyang-2009",
+        "name": "Lyu Mengyang",
+        "local_name": "吕孟洋",
+        "layer_id": "liga-nacional-juvenil",
+        "club": "RCD Espanyol Juvenil B",
+        "season": "2026-2027",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "西班牙人 2026-09-14 官宣加入青训并代表青年 B 队。这是青训培训协议，不是一线队职业合同；竞赛层级是 U19 全国二级，不是荣誉联赛。球员主档核验日仍为 2026-05-22 欧罗巴。",
+          "en": "Espanyol announced on 2026-09-14 that he joined the academy and Juvenil B. This is a youth formation agreement, not a first-team professional contract, and the competition is the second national U19 tier rather than División de Honor. His master record still checks Europa as of 2026-05-22."
+        }
+      },
+      {
+        "id": "lyu-mengyang-preferente",
+        "player_id": "cn-lyu-mengyang-2009",
+        "name": "Lyu Mengyang",
+        "local_name": "吕孟洋",
+        "layer_id": "preferente-juvenil",
+        "club": "Europa, C.E. Juvenil B",
+        "season": "2025-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "FCF / FutbolBase 可核 2025/26 Preferent Juvenils 约 29 场 6 球。这是加泰 U19 次高组，不是全国荣誉联赛。",
+          "en": "FCF / FutbolBase confirm about 29 appearances and 6 goals in 2025/26 Preferent Juvenils. That is Catalonia's second U19 group, not the national honour league."
+        }
+      },
+      {
+        "id": "liu-kaiyuan-preferente",
+        "player_id": "cn-liu-kaiyuan-2010",
+        "name": "Liu Kaiyuan",
+        "local_name": "刘凯源",
+        "layer_id": "preferente-juvenil",
+        "club": "Villarreal CF Juvenil C",
+        "season": "2026-2027",
+        "contract_type": "youth-formation",
+        "appearance_status": "observation",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2026-09-02 公开球队页列入 Juvenil C，但个人页仍显示暂无 2026/27 ficha。只作名单观察，不是已完成竞赛注册。",
+          "en": "A 2026-09-02 public squad page lists him in Juvenil C, but his personal page still shows no 2026/27 licence. This is a squad observation, not completed competition registration."
+        }
+      },
+      {
+        "id": "liu-kaiyuan-cadete-honor",
+        "player_id": "cn-liu-kaiyuan-2010",
+        "name": "Liu Kaiyuan",
+        "local_name": "刘凯源",
+        "layer_id": "cadete-honor",
+        "club": "Villarreal Cadete A",
+        "season": "2025-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2025/26 Cadete A：30 场、1355 分钟、4 球、20 次首发。俱乐部 2026-06-04 官宣续约，仍是青训体系。",
+          "en": "2025/26 Cadete A: 30 appearances, 1,355 minutes, 4 goals and 20 starts. Villarreal renewed him on 2026-06-04; he remains in the academy."
+        }
+      },
+      {
+        "id": "lyu-mengyang-cadete-honor",
+        "player_id": "cn-lyu-mengyang-2009",
+        "name": "Lyu Mengyang",
+        "local_name": "吕孟洋",
+        "layer_id": "cadete-honor",
+        "club": "Cornellà Cadet A",
+        "season": "2024-2025",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "FutbolBase：科尔内利亚 Cadet A，Divisió d'Honor 6 场 0 球。",
+          "en": "FutbolBase: Cornellà Cadet A, six appearances and no goals in the honour division."
+        }
+      },
+      {
+        "id": "kuang-zhaolei-cadete-honor",
+        "player_id": "cn-kuang-zhaolei-2009",
+        "name": "Kuang Zhaolei",
+        "local_name": "邝兆镭",
+        "layer_id": "cadete-honor",
+        "club": "Damm CF U16A",
+        "season": "2024-2025",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2024 年 10 月代表达姆 U16A 在加泰 U16 荣誉联赛对赫罗纳 U16A 进球。",
+          "en": "Scored for Damm U16A against Girona U16A in Catalonia's U16 honour league in October 2024."
+        }
+      },
+      {
+        "id": "lyu-mengyang-cadete-other",
+        "player_id": "cn-lyu-mengyang-2009",
+        "name": "Lyu Mengyang",
+        "local_name": "吕孟洋",
+        "layer_id": "cadete-other",
+        "club": "CE L'Hospitalet Cadet B",
+        "season": "2023-2024",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "西班牙注册首个可核节点：奥斯皮塔莱特 Cadet B，8 场 1 球。",
+          "en": "First verified Spanish registration node: L'Hospitalet Cadet B, eight appearances and one goal."
+        }
+      },
+      {
+        "id": "zhang-lindong-cadete-other",
+        "player_id": "cn-zhang-lindong-2010",
+        "name": "Zhang Lindong",
+        "local_name": "张林峒",
+        "layer_id": "cadete-other",
+        "club": "Atlètic Sant Just U14A",
+        "season": "2023-2024",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "圣胡斯特竞技 U14A 公开口径首发 18 次、2 球，随后加盟达姆青训。",
+          "en": "Publicly 18 starts and two goals for Atlètic Sant Just U14A before moving to Damm."
+        }
+      },
+      {
+        "id": "li-dongchen-cadete-other",
+        "player_id": "cn-li-dongchen-2010",
+        "name": "Li Dongchen",
+        "local_name": "李东宸",
+        "layer_id": "cadete-other",
+        "club": "CE L'Hospitalet U14A",
+        "season": "2024",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "奥斯皮塔莱特 U14A 替补登场完成旅西首秀，当前注册在圣库加特。",
+          "en": "Made his Spain debut from the bench for L'Hospitalet U14A; current registration is Sant Cugat."
+        }
+      },
+      {
+        "id": "zhang-lindong-damm",
+        "player_id": "cn-zhang-lindong-2010",
+        "name": "Zhang Lindong",
+        "local_name": "张林峒",
+        "layer_id": "club-academy-unspecified",
+        "club": "DAMM CF",
+        "season": "2024-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2024 年加盟加泰青训俱乐部达姆。能确认梯队归属，具体 U16/U19 竞赛层级待继续拆。",
+          "en": "Joined Catalan academy club Damm in 2024. The academy link is confirmed; the exact U16/U19 league layer still needs splitting."
+        }
+      },
+      {
+        "id": "wang-xiuhao-damm",
+        "player_id": "cn-wang-xiuhao-2009",
+        "name": "Wang Xiuhao",
+        "local_name": "汪修昊",
+        "layer_id": "club-academy-unspecified",
+        "club": "DAMM CF",
+        "season": "2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "足协/AFC 2026 口径为达姆；Transfermarkt 仍可见巴达洛纳青年队。欧罗巴过渡和巴达洛纳节点保留为路径，不升成具体联赛层级。",
+          "en": "CFA/AFC 2026 lists Damm; Transfermarkt still shows CF Badalona Youth. Europa and Badalona remain pathway notes rather than a locked league layer."
+        }
+      },
+      {
+        "id": "li-dongchen-sant-cugat",
+        "player_id": "cn-li-dongchen-2010",
+        "name": "Li Dongchen",
+        "local_name": "李东宸",
+        "layer_id": "club-academy-unspecified",
+        "club": "Sant Cugat FC",
+        "season": "2025-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "verified",
+        "note": {
+          "zh": "当前注册圣库加特。公开总结有加泰 U16 荣誉联赛名单数据，稳定联赛层级仍待与 FCF 页完全对齐前先放待拆层。",
+          "en": "Current club is Sant Cugat. Public summaries mention Catalan U16 honour-league squad data, but the layer stays pending until it is fully aligned with the FCF page."
+        }
+      },
+      {
+        "id": "xie-jin-carabanchel",
+        "player_id": "cn-xie-jin-2009",
+        "name": "Jin Xie",
+        "local_name": "谢晋",
+        "layer_id": "club-academy-unspecified",
+        "club": "Real Carabanchel CF",
+        "season": "2025-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "足协集训通知先后出现富恩拉夫拉达和皇家卡拉万切尔。能确认西班牙青训路径，竞赛层级未拆。",
+          "en": "CFA camp notices list both Fuenlabrada and Real Carabanchel. The Spanish academy path is confirmed; the competition layer is not yet split."
+        }
+      }
+    ],
+    "source_links": [
+      {
+        "label": "LaLiga official site",
+        "url": "https://www.laliga.com/",
+        "checked_at": "2026-10-04"
+      },
+      {
+        "label": "RFEF official site",
+        "url": "https://www.rfef.es/",
+        "checked_at": "2026-10-04"
+      },
+      {
+        "label": "Catalan Football Federation",
+        "url": "https://www.fcf.cat/",
+        "checked_at": "2026-10-04"
+      },
+      {
+        "label": "Espanyol announcement: Lyu Mengyang",
+        "url": "https://www.163.com/dy/article/L6QCQKL20549BAP0.html",
+        "checked_at": "2026-10-04"
       }
     ]
   },
