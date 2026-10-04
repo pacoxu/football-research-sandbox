@@ -11,6 +11,7 @@ import {
 import { validateJsonSchemas } from "./validate-json-schemas.mjs";
 import { loadForecastInput, validateForecastInput } from "./lib/world-cup-forecast.mjs";
 import { validateBigFiveDebutForecastInput } from "./lib/big-five-debut-forecast.mjs";
+import { validateSpainFootballSystem } from "./lib/spain-football-system.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -3799,6 +3800,15 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     dataset.overseasHistory
   );
   validateEuropeTopLeaguesJapanKorea(dataset.europeTopLeaguesJapanKorea);
+  validateSpainFootballSystem(
+    dataset.spainFootballSystem,
+    playerIds,
+    new Set(
+      dataset.overseasHistory.countries.flatMap((country) =>
+        (country.featured_records ?? []).map((record) => record.id)
+      )
+    )
+  );
 
   for (const dossier of dataset.dossiers) {
     assert(dossier.id && dossier.name, "Dossier must include id and name");

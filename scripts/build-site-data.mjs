@@ -55,6 +55,7 @@ export async function buildSiteData({ outputDirectory = paths.site } = {}) {
     big_five_asian_coaches: dataset.bigFiveAsianCoaches,
     asian_coaches: dataset.asianCoaches,
     youth_development_systems: dataset.youthDevelopmentSystems,
+    spain_football_system: dataset.spainFootballSystem,
     club_name_overrides: dataset.clubNameOverrides
   };
   const schemaManifest = JSON.parse(

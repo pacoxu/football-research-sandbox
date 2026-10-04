@@ -26,6 +26,7 @@
 - [伊朗及剩余 U20/U23 官方名单来源审计](research/issue-55-iran-remaining-u20-u23-source-audit.md)
 - [海外青训、球探与青年球员检索源目录](research/scouting-source-directory.md)
 - [比利亚雷亚尔 U19 梯队注册与年龄结构（2026/27）](research/villarreal-u19-registration-2026-27.md)
+- 站点页 `spain.html`：西班牙职业联赛、U19/U16 金字塔与已建档中国球员落点。
 - [中国足球联赛层级与地方城市联赛说明](research/china-league-pyramid-and-regional-super-leagues.md)
 
 ## 变更记录

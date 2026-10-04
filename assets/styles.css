@@ -5056,3 +5056,12 @@ tbody tr:last-child td {
     grid-template-columns: 1fr;
   }
 }
+
+.spain-pyramid-grid {
+  display: grid;
+  gap: 28px;
+}
+
+.spain-pyramid-block .system-card-grid {
+  margin-top: 16px;
+}

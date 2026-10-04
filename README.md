@@ -77,10 +77,12 @@ python3 -m http.server 4173
 ```text
 .
 ├── assets/                  # 页面样式和前端脚本
+├── spain.html               # 西班牙职业联赛、U19 体系与已建档球员落点
 ├── coaches.html             # 基层青训教练与中国男足 U 系列教练组页面
 ├── data/
 │   ├── raw/                 # 手工维护的数据源
 │   │   ├── players/         # 按年龄段分组的球员 JSON
+│   │   ├── spain-football-system.json # 西班牙职业/U19/U16 金字塔与中国球员落点
 │   │   ├── youth-development-systems.json # 多国青训体系、项目与赛事关系
 │   │   ├── europe-top-leagues-japan-korea.json # UEFA 前八联赛日韩一线队全量快照
 │   │   ├── overseas-history.json

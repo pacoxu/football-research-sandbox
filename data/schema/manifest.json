@@ -15,6 +15,7 @@
     { "path": "data/raw/big-five-asian-coaches.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/coachCollection" },
     { "path": "data/raw/asian-coaches.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/coachCollection" },
     { "path": "data/raw/youth-development-systems.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/youthDevelopmentSystems" },
+    { "path": "data/raw/spain-football-system.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/spainFootballSystem" },
     { "path": "data/raw/player-market-values.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/marketValues" },
     { "path": "data/raw/player-name-overrides.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap" },
     { "path": "data/raw/club-name-overrides.json", "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap" },

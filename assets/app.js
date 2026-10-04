@@ -45,6 +45,7 @@ const state = {
   },
   scoutingCountry: "all",
   pathwaysCountry: "China PR",
+  spainPyramidFilter: "all",
   tournamentFilters: {
     level: "all"
   },
@@ -95,6 +96,8 @@ const UI_COPY = {
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
     "page.pathways.title": "青训体系与项目 | 青训球员追踪站",
     "page.pathways.description": "比较中国、日本、韩国、挪威、丹麦和瑞典的足协治理、学校足球、俱乐部学院、人才识别与职业桥梁。",
+    "page.spain-system.title": "西班牙联赛与青训体系 | 青训球员追踪站",
+    "page.spain-system.description": "对照西班牙职业联赛、U19/U16 青年联赛，以及本站已建档中国球员在这些层级中的落点。",
     "page.coaches.title": "青训教练 | 青训球员追踪站",
     "page.coaches.description": "查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。",
     "page.data-center.title": "数据质量与对比 | 青训球员追踪站",
@@ -176,6 +179,8 @@ const UI_COPY = {
     "home.quickLinks.milestonesText": "对照三项成绩分别隔了多久，以及不能写成什么。",
     "home.quickLinks.overseasTitle": "留洋",
     "home.quickLinks.overseasText": "区分当前留洋样本与历史记录。",
+    "home.quickLinks.spainTitle": "西班牙体系",
+    "home.quickLinks.spainText": "对照西甲到自治区联赛、U19 层级，以及本站中国球员落点。",
     "home.quickLinks.genbaoTitle": "根宝足球基地",
     "home.quickLinks.genbaoText": "按代际查看基地代表球员、培养路径与当前状态。",
     "home.quickLinks.coachesTitle": "青训教练",
@@ -385,6 +390,41 @@ const UI_COPY = {
     "pathways.viewPlayers": "查看本站样本（{count}）",
     "pathways.noPlayers": "当前无关联样本",
     "pathways.sourceChecked": "最后核查：{date}",
+    "pathways.spainLink": "打开西班牙联赛与 U19 专题",
+    "spain.hero.eyebrow": "Spain League System",
+    "spain.hero.title": "西班牙职业联赛与 U19 体系",
+    "spain.hero.text": "把西甲到自治区联赛、U19 荣誉联赛到 Preferente、以及本站中国球员样本放在同一页对照。青训合同、职业合同和正式出场分开看。",
+    "spain.hero.players": "查看球员落点",
+    "spain.hero.back": "返回青训体系",
+    "spain.meta.eyebrow": "Sample",
+    "spain.meta.coverage": "{layers} 个层级 · {players} 名球员 · {placements} 条落点",
+    "spain.meta.checked": "核查至 {date}",
+    "spain.contract.eyebrow": "Contracts",
+    "spain.contract.title": "职业合同和青训合同",
+    "spain.pyramid.eyebrow": "Pyramids",
+    "spain.pyramid.title": "联赛金字塔与样本",
+    "spain.pyramid.note": "点层级可跳到下方球员表。西甲俱乐部名字不等于西甲出场。",
+    "spain.pyramid.tier": "第 {tier} 级",
+    "spain.pyramid.count": "{count} 条样本",
+    "spain.players.eyebrow": "Placements",
+    "spain.players.title": "哪些球员踢过这些层级",
+    "spain.players.meta": "当前筛选 {count} 条",
+    "spain.players.filter": "金字塔",
+    "spain.players.filterAll": "全部层级",
+    "spain.players.empty": "当前筛选没有落点。",
+    "spain.table.player": "球员",
+    "spain.table.layer": "层级",
+    "spain.table.club": "俱乐部",
+    "spain.table.season": "赛季",
+    "spain.table.contract": "合同",
+    "spain.table.status": "出场状态",
+    "spain.table.note": "说明",
+    "spain.status.appeared": "有正式出场",
+    "spain.status.registered-no-appearance": "已注册/签约，出场待核",
+    "spain.status.contract-only": "仅合同，无该级出场",
+    "spain.status.observation": "公开名单观察",
+    "spain.sources.eyebrow": "Sources",
+    "spain.sources.title": "来源与核查时间",
     "dataCenter.hero.eyebrow": "Data Quality & Comparison",
     "dataCenter.hero.title": "数据质量与对比中心",
     "dataCenter.hero.text": "用同一口径查看覆盖质量、国家青训路径、项目与教练目录。",
@@ -1057,6 +1097,8 @@ const UI_COPY = {
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
     "page.pathways.title": "Youth Systems and Programmes | Youth Player Tracking Desk",
     "page.pathways.description": "Compare association governance, school football, club academies, talent identification and professional bridges across China, Japan, South Korea, Norway, Denmark and Sweden.",
+    "page.spain-system.title": "Spain leagues and youth system | Youth Player Tracking Desk",
+    "page.spain-system.description": "Compare Spain’s senior pyramid, U19/U16 youth leagues, and documented Chinese player placements.",
     "page.coaches.title": "Youth Coaches | Youth Player Tracking Desk",
     "page.coaches.description": "Explore Chinese grassroots youth coaches and men's youth national-team staffs with organizations, age groups, and source links.",
     "page.data-center.title": "Data Quality and Comparison | Youth Player Tracking Desk",
@@ -1138,6 +1180,8 @@ const UI_COPY = {
     "home.quickLinks.milestonesText": "See how long each of the three results waited, and what not to claim.",
     "home.quickLinks.overseasTitle": "Overseas",
     "home.quickLinks.overseasText": "Separate current overseas samples from historical records.",
+    "home.quickLinks.spainTitle": "Spain system",
+    "home.quickLinks.spainText": "Compare LaLiga through regional leagues, the U19 ladder, and documented Chinese placements.",
     "home.quickLinks.genbaoTitle": "Genbao Football Base",
     "home.quickLinks.genbaoText": "Browse representative generations, pathways and current status.",
     "home.quickLinks.coachesTitle": "Youth coaches",
@@ -1347,6 +1391,41 @@ const UI_COPY = {
     "pathways.viewPlayers": "View site samples ({count})",
     "pathways.noPlayers": "No linked samples yet",
     "pathways.sourceChecked": "Last checked: {date}",
+    "pathways.spainLink": "Open the Spain league and U19 briefing",
+    "spain.hero.eyebrow": "Spain League System",
+    "spain.hero.title": "Spain’s senior leagues and U19 system",
+    "spain.hero.text": "Place LaLiga through regional senior football, División de Honor through Preferente, and documented Chinese samples on one page. Youth deals, professional contracts and competitive appearances are kept apart.",
+    "spain.hero.players": "View player placements",
+    "spain.hero.back": "Back to youth systems",
+    "spain.meta.eyebrow": "Sample",
+    "spain.meta.coverage": "{layers} layers · {players} players · {placements} placements",
+    "spain.meta.checked": "Checked through {date}",
+    "spain.contract.eyebrow": "Contracts",
+    "spain.contract.title": "Professional vs youth contracts",
+    "spain.pyramid.eyebrow": "Pyramids",
+    "spain.pyramid.title": "League pyramids and samples",
+    "spain.pyramid.note": "Jump from a layer to the table below. A La Liga club name is not a La Liga appearance.",
+    "spain.pyramid.tier": "Tier {tier}",
+    "spain.pyramid.count": "{count} samples",
+    "spain.players.eyebrow": "Placements",
+    "spain.players.title": "Which players reached these layers",
+    "spain.players.meta": "Showing {count} placements",
+    "spain.players.filter": "Pyramid",
+    "spain.players.filterAll": "All layers",
+    "spain.players.empty": "No placements match this filter.",
+    "spain.table.player": "Player",
+    "spain.table.layer": "Layer",
+    "spain.table.club": "Club",
+    "spain.table.season": "Season",
+    "spain.table.contract": "Contract",
+    "spain.table.status": "Appearance status",
+    "spain.table.note": "Note",
+    "spain.status.appeared": "Competitive appearance",
+    "spain.status.registered-no-appearance": "Registered/signed, appearance pending",
+    "spain.status.contract-only": "Contract only, no appearance at this layer",
+    "spain.status.observation": "Public squad observation",
+    "spain.sources.eyebrow": "Sources",
+    "spain.sources.title": "Sources and check dates",
     "dataCenter.hero.eyebrow": "Data Quality & Comparison",
     "dataCenter.hero.title": "Data quality and comparison centre",
     "dataCenter.hero.text": "Review coverage quality, national pathways, programmes and coaches under one consistent scope.",
@@ -2299,6 +2378,7 @@ const PAGE_METADATA = {
   },
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
+  "spain-system": { title: "page.spain-system.title", description: "page.spain-system.description" },
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
   stories: { title: "page.stories.title", description: "page.stories.description" },
   "story-detail": { title: "page.story-detail.title", description: "page.story-detail.description" },
@@ -2841,6 +2921,12 @@ async function boot() {
       return;
     }
 
+    if (page === "spain-system") {
+      initializeSpainSystemPage();
+      renderSpainSystemPage();
+      return;
+    }
+
     if (page === "coaches") {
       renderCoachesPage();
       return;
@@ -2915,7 +3001,8 @@ function setActiveNavigation() {
       (page === "player-detail" && link.dataset.nav === "players") ||
       (page === "story-detail" && link.dataset.nav === "stories") ||
       (page === "tournament-detail" && link.dataset.nav === "tournaments") ||
-      (page === "youth-league" && link.dataset.nav === "tournaments")
+      (page === "youth-league" && link.dataset.nav === "tournaments") ||
+      (page === "spain-system" && link.dataset.nav === "pathways")
     ) {
       link.classList.add("is-active");
     }
@@ -10032,3 +10119,215 @@ function renderForecastPage() {
   renderForecastChina(edition);
   renderForecastBacktest();
 }
+
+function getSpainSystemPayload() {
+  return (
+    state.overview?.spain_football_system ?? {
+      checked_at: null,
+      pyramids: [],
+      placements: [],
+      contract_types: [],
+      source_links: []
+    }
+  );
+}
+
+function getSpainLayerMap(payload) {
+  const layers = new Map();
+  for (const pyramid of payload.pyramids ?? []) {
+    for (const layer of pyramid.layers ?? []) {
+      layers.set(layer.id, { ...layer, pyramidId: pyramid.id, pyramidName: pyramid.name });
+    }
+  }
+  return layers;
+}
+
+function getSpainPlayerHref(placement) {
+  if (placement.player_id) return buildPlayerDetailUrl(placement.player_id);
+  if (placement.featured_record_id) return "./overseas.html?country=China%20PR";
+  return "";
+}
+
+function getSpainPlayerLabel(placement) {
+  if (placement.player_id) {
+    const player = state.enrichedPlayers.find((item) => item.id === placement.player_id);
+    if (player) return getPlayerPrimaryName(player);
+  }
+  return state.language === "en" ? placement.name : placement.local_name || placement.name;
+}
+
+function getSpainContractLabel(payload, contractType) {
+  const match = (payload.contract_types ?? []).find((item) => item.id === contractType);
+  return match ? localizeText(match.label) : contractType;
+}
+
+function initializeSpainSystemPage() {
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get("pyramid");
+  const payload = getSpainSystemPayload();
+  if ((payload.pyramids ?? []).some((pyramid) => pyramid.id === requested) || requested === "all") {
+    state.spainPyramidFilter = requested;
+  }
+  const filters = document.querySelector("#spainPlayerFilters");
+  if (filters && !filters.dataset.bound) {
+    filters.dataset.bound = "true";
+    filters.addEventListener("change", (event) => {
+      if (event.target.id !== "spainPyramidFilter") return;
+      state.spainPyramidFilter = event.target.value;
+      replaceQueryParams({ pyramid: state.spainPyramidFilter === "all" ? null : state.spainPyramidFilter });
+      renderSpainSystemPage();
+    });
+  }
+}
+
+function renderSpainSystemPage() {
+  const payload = getSpainSystemPayload();
+  const layerMap = getSpainLayerMap(payload);
+  const placements = payload.placements ?? [];
+  const uniquePlayers = new Set(
+    placements.map((placement) => placement.player_id || placement.featured_record_id || placement.local_name)
+  );
+  const heroStats = document.querySelector("#spainHeroStats");
+  if (heroStats) {
+    heroStats.innerHTML = `
+      <p class="eyebrow">${escapeHtml(t("spain.meta.eyebrow"))}</p>
+      <h2>${escapeHtml(t("spain.meta.coverage", {
+        layers: layerMap.size,
+        players: uniquePlayers.size,
+        placements: placements.length
+      }))}</h2>
+      <p class="hero-side-note">${escapeHtml(t("spain.meta.checked", { date: formatDate(payload.checked_at) }))}</p>
+      <p class="hero-side-note">${escapeHtml(localizeText(payload.scope_note))}</p>
+    `;
+  }
+  const contractGrid = document.querySelector("#spainContractGrid");
+  if (contractGrid) {
+    contractGrid.innerHTML = (payload.contract_types ?? [])
+      .map(
+        (contractType) => `
+          <article class="stack-card">
+            <h3>${escapeHtml(localizeText(contractType.label))}</h3>
+            <p>${escapeHtml(localizeText(contractType.detail))}</p>
+          </article>
+        `
+      )
+      .join("");
+  }
+  const pyramidGrid = document.querySelector("#spainPyramidGrid");
+  if (pyramidGrid) {
+    pyramidGrid.innerHTML = (payload.pyramids ?? [])
+      .map((pyramid) => {
+        const cards = (pyramid.layers ?? [])
+          .map((layer) => {
+            const layerPlacements = placements.filter((placement) => placement.layer_id === layer.id);
+            const names = [...new Set(layerPlacements.map((placement) => getSpainPlayerLabel(placement)))];
+            const firstId = layerPlacements[0]?.id;
+            return `
+              <article class="system-card" id="${escapeHtml(layer.id)}">
+                <div class="chip-row">
+                  <span class="chip">${escapeHtml(t("spain.pyramid.tier", { tier: layer.tier }))}</span>
+                  <span class="chip">${escapeHtml(t("spain.pyramid.count", { count: layerPlacements.length }))}</span>
+                </div>
+                <h3>${
+                  firstId
+                    ? `<a class="inline-link" href="#${escapeHtml(firstId)}">${escapeHtml(localizeText(layer.name))}</a>`
+                    : escapeHtml(localizeText(layer.name))
+                }</h3>
+                <p>${escapeHtml(localizeText(layer.stable_structure))}</p>
+                <p class="small-note">${escapeHtml(names.length ? names.join(" · ") : t("pathways.noPlayers"))}</p>
+              </article>
+            `;
+          })
+          .join("");
+        return `
+          <section class="spain-pyramid-block">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">${escapeHtml(pyramid.id.toUpperCase())}</p>
+                <h3>${escapeHtml(localizeText(pyramid.name))}</h3>
+              </div>
+            </div>
+            <p class="section-note">${escapeHtml(localizeText(pyramid.summary))}</p>
+            <div class="system-card-grid">${cards}</div>
+          </section>
+        `;
+      })
+      .join("");
+  }
+  const filters = document.querySelector("#spainPlayerFilters");
+  if (filters) {
+    filters.innerHTML = `
+      <label class="filter-item">
+        <span>${escapeHtml(t("spain.players.filter"))}</span>
+        <select id="spainPyramidFilter">
+          <option value="all">${escapeHtml(t("spain.players.filterAll"))}</option>
+          ${(payload.pyramids ?? [])
+            .map((pyramid) => `<option value="${escapeHtml(pyramid.id)}">${escapeHtml(localizeText(pyramid.name))}</option>`)
+            .join("")}
+        </select>
+      </label>
+    `;
+  }
+  const select = document.querySelector("#spainPyramidFilter");
+  if (select) select.value = state.spainPyramidFilter;
+  const filtered = placements.filter((placement) => {
+    if (state.spainPyramidFilter === "all") return true;
+    return layerMap.get(placement.layer_id)?.pyramidId === state.spainPyramidFilter;
+  });
+  const meta = document.querySelector("#spainPlayerMeta");
+  if (meta) meta.textContent = t("spain.players.meta", { count: filtered.length });
+  const head = document.querySelector("#spainPlayerHead");
+  const body = document.querySelector("#spainPlayerBody");
+  const empty = document.querySelector("#spainPlayerEmpty");
+  if (head) {
+    head.innerHTML = `<tr>
+      <th>${escapeHtml(t("spain.table.player"))}</th>
+      <th>${escapeHtml(t("spain.table.layer"))}</th>
+      <th>${escapeHtml(t("spain.table.club"))}</th>
+      <th>${escapeHtml(t("spain.table.season"))}</th>
+      <th>${escapeHtml(t("spain.table.contract"))}</th>
+      <th>${escapeHtml(t("spain.table.status"))}</th>
+      <th>${escapeHtml(t("spain.table.note"))}</th>
+    </tr>`;
+  }
+  if (body) {
+    body.innerHTML = filtered
+      .map((placement) => {
+        const layer = layerMap.get(placement.layer_id);
+        const href = getSpainPlayerHref(placement);
+        const label = getSpainPlayerLabel(placement);
+        const nameCell = href
+          ? `<a class="inline-link" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`
+          : escapeHtml(label);
+        return `<tr id="${escapeHtml(placement.id)}">
+          <td>${nameCell}</td>
+          <td>${escapeHtml(layer ? localizeText(layer.name) : placement.layer_id)}</td>
+          <td>${escapeHtml(placement.club)}</td>
+          <td>${escapeHtml(placement.season)}</td>
+          <td>${escapeHtml(getSpainContractLabel(payload, placement.contract_type))}</td>
+          <td>${escapeHtml(t(`spain.status.${placement.appearance_status}`))}</td>
+          <td>${escapeHtml(localizeText(placement.note))}</td>
+        </tr>`;
+      })
+      .join("");
+  }
+  if (empty) {
+    empty.hidden = filtered.length > 0;
+    empty.textContent = t("spain.players.empty");
+  }
+  const sources = document.querySelector("#spainSources");
+  if (sources) {
+    sources.innerHTML = (payload.source_links ?? [])
+      .map(
+        (source) => `
+          <article class="stack-card">
+            <h3>${escapeHtml(source.label)}</h3>
+            <p class="small-note">${escapeHtml(t("pathways.sourceChecked", { date: formatDate(source.checked_at) }))}</p>
+            <a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.url)}</a>
+          </article>
+        `
+      )
+      .join("");
+  }
+}
+
