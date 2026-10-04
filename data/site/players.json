@@ -7635,7 +7635,7 @@
   {
     "id": "cn-baihelamu-abuduwaili-2003",
     "name": "Baihelamu Abuduwaili",
-    "local_name": "Baihelamu Abuduwaili",
+    "local_name": "拜合拉木·阿卜杜外力",
     "country": "China PR",
     "birth_date": "2003-03-08",
     "age_band": "u23",
@@ -7734,11 +7734,24 @@
     "names": {
       "zh": "拜合拉木·阿卜杜外力",
       "en": "Baihelamu Abuduwaili",
-      "native": "Baihelamu Abuduwaili",
+      "native": "拜合拉木·阿卜杜外力",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 拜合拉木·阿卜杜外力 for Baihelamu Abuduwaili."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -7838,7 +7851,7 @@
   {
     "id": "cn-bao-shimeng-2003",
     "name": "Bao Shimeng",
-    "local_name": "Bao Shimeng",
+    "local_name": "鲍世蒙",
     "country": "China PR",
     "birth_date": "2003-07-02",
     "age_band": "u23",
@@ -7905,13 +7918,26 @@
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
     "names": {
-      "zh": "Bao Shimeng",
+      "zh": "鲍世蒙",
       "en": "Bao Shimeng",
-      "native": "Bao Shimeng",
+      "native": "鲍世蒙",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U23 2026 first-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260320/37446.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA U23 2026 first-camp notice confirms the official local-script spelling 鲍世蒙 for Bao Shimeng."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -7983,7 +8009,7 @@
   {
     "id": "cn-bao-shengxin-2003",
     "name": "Bao Shengxin",
-    "local_name": "Bao Shengxin",
+    "local_name": "鲍盛鑫",
     "country": "China PR",
     "birth_date": "2003-08-01",
     "age_band": "u23",
@@ -8052,11 +8078,24 @@
     "names": {
       "zh": "鲍盛鑫",
       "en": "Bao Shengxin",
-      "native": "Bao Shengxin",
+      "native": "鲍盛鑫",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U23 2026 first-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260320/37446.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA U23 2026 first-camp notice confirms the official local-script spelling 鲍盛鑫 for Bao Shengxin."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -8149,7 +8188,7 @@
   {
     "id": "cn-hu-hetao-2003",
     "name": "Hu Hetao",
-    "local_name": "Hu Hetao",
+    "local_name": "胡荷韬",
     "country": "China PR",
     "birth_date": "2003-10-05",
     "age_band": "u23",
@@ -8241,11 +8280,24 @@
     "names": {
       "zh": "胡荷韬",
       "en": "Hu Hetao",
-      "native": "Hu Hetao",
+      "native": "胡荷韬",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 胡荷韬 for Hu Hetao."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -8338,7 +8390,7 @@
   {
     "id": "cn-liu-haofan-2003",
     "name": "Liu Haofan",
-    "local_name": "Liu Haofan",
+    "local_name": "刘浩帆",
     "country": "China PR",
     "birth_date": "2003-10-23",
     "age_band": "u23",
@@ -8430,11 +8482,24 @@
     "names": {
       "zh": "刘浩帆",
       "en": "Liu Haofan",
-      "native": "Liu Haofan",
+      "native": "刘浩帆",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 刘浩帆 for Liu Haofan."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -8527,7 +8592,7 @@
   {
     "id": "cn-huo-shenping-2003",
     "name": "Huo Shenping",
-    "local_name": "Huo Shenping",
+    "local_name": "霍深坪",
     "country": "China PR",
     "birth_date": "2003-11-26",
     "age_band": "u23",
@@ -8899,7 +8964,7 @@
   {
     "id": "cn-li-zhenquan-2003",
     "name": "Li Zhenquan",
-    "local_name": "Li Zhenquan",
+    "local_name": "李镇全",
     "country": "China PR",
     "birth_date": "2003-12-16",
     "age_band": "u23",
@@ -8989,13 +9054,26 @@
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。"
     },
     "names": {
-      "zh": "Li Zhenquan",
+      "zh": "李镇全",
       "en": "Li Zhenquan",
-      "native": "Li Zhenquan",
+      "native": "李镇全",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 李镇全 for Li Zhenquan."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -9074,7 +9152,7 @@
   {
     "id": "cn-xiang-yuwang-2003",
     "name": "Xiang Yuwang",
-    "local_name": "Xiang Yuwang",
+    "local_name": "向余望",
     "country": "China PR",
     "birth_date": "2003-12-18",
     "age_band": "u23",
@@ -9166,11 +9244,24 @@
     "names": {
       "zh": "向余望",
       "en": "Xiang Yuwang",
-      "native": "Xiang Yuwang",
+      "native": "向余望",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 向余望 for Xiang Yuwang."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -9249,7 +9340,7 @@
   {
     "id": "cn-wumitijiang-yusupu-2004",
     "name": "Wumitijiang Yusupu",
-    "local_name": "Wumitijiang Yusupu",
+    "local_name": "吾米提江·玉苏普",
     "country": "China PR",
     "birth_date": "2004-02-28",
     "age_band": "u23",
@@ -9341,11 +9432,24 @@
     "names": {
       "zh": "吾米提江·玉苏普",
       "en": "Wumitijiang Yusupu",
-      "native": "Wumitijiang Yusupu",
+      "native": "吾米提江·玉苏普",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 吾米提江·玉苏普 for Wumitijiang Yusupu."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -9574,11 +9678,24 @@
     "names": {
       "zh": "李昊",
       "en": "Li Hao",
-      "native": "Li Hao",
+      "native": "李昊",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 李昊 for Li Hao."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -9685,7 +9802,7 @@
   {
     "id": "cn-mutalifu-yimingkari-2004",
     "name": "Mutalifu Yimingkari",
-    "local_name": "Mutalifu Yimingkari",
+    "local_name": "木塔力甫·依明卡日",
     "country": "China PR",
     "birth_date": "2004-03-18",
     "age_band": "u23",
@@ -9779,11 +9896,24 @@
     "names": {
       "zh": "木塔力甫·依明卡日",
       "en": "Mutalifu Yimingkari",
-      "native": "Mutalifu Yimingkari",
+      "native": "木塔力甫·依明卡日",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 木塔力甫·依明卡日 for Mutalifu Yimingkari."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "ambiguous-profile",
@@ -10561,7 +10691,7 @@
   {
     "id": "cn-he-yiran-2005",
     "name": "He Yiran",
-    "local_name": "He Yiran",
+    "local_name": "贺一然",
     "country": "China PR",
     "birth_date": "2005-02-17",
     "age_band": "u23",
@@ -10677,13 +10807,26 @@
       "notes": "基础信息来自 AFC 于 2025-12-30 发布的 final registration；当前批量补录先保留 AFC 注册拼写，后续再补中文、日文、韩文原文名和更多俱乐部资料。 已追加 AFC U20 2025 final registration 作为 2025 年龄段国字号名单来源；该赛事 appearances/minutes 已由四场官方 Match Summary 汇总。"
     },
     "names": {
-      "zh": "He Yiran",
+      "zh": "贺一然",
       "en": "He Yiran",
-      "native": "He Yiran",
+      "native": "贺一然",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 贺一然 for He Yiran."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -10919,11 +11062,24 @@
     "names": {
       "zh": "陈泽仕",
       "en": "Chen Zeshi",
-      "native": "Chen Zeshi",
+      "native": "陈泽仕",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 陈泽仕 for Chen Zeshi."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -11016,7 +11172,7 @@
   {
     "id": "cn-yimulan-maimaiti-2005",
     "name": "Yimulan Maimaiti",
-    "local_name": "Yimulan Maimaiti",
+    "local_name": "依木兰·买买提",
     "country": "China PR",
     "birth_date": "2005-05-03",
     "age_band": "u20",
@@ -11097,13 +11253,26 @@
       "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
-      "zh": "Yimulan Maimaiti",
+      "zh": "依木兰·买买提",
       "en": "Yimulan Maimaiti",
-      "native": "Yimulan Maimaiti",
+      "native": "依木兰·买买提",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 依木兰·买买提 for Yimulan Maimaiti."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -11663,11 +11832,24 @@
     "names": {
       "zh": "张瑷晖",
       "en": "Zhang Aihui",
-      "native": "Zhang Aihui",
+      "native": "张瑷晖",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U23 2026 first-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260320/37446.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA U23 2026 first-camp notice confirms the official local-script spelling 张瑷晖 for Zhang Aihui."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -11859,11 +12041,24 @@
     "names": {
       "zh": "毛伟杰",
       "en": "Mao Weijie",
-      "native": "Mao Weijie",
+      "native": "毛伟杰",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 毛伟杰 for Mao Weijie."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -12351,11 +12546,24 @@
     "names": {
       "zh": "王博豪",
       "en": "Wang Bohao",
-      "native": "Wang Bohao",
+      "native": "王博豪",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U23 2026 first-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260320/37446.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA U23 2026 first-camp notice confirms the official local-script spelling 王博豪 for Wang Bohao."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -12570,11 +12778,24 @@
     "names": {
       "zh": "彭啸",
       "en": "Peng Xiao",
-      "native": "Peng Xiao",
+      "native": "彭啸",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 彭啸 for Peng Xiao."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -12653,7 +12874,7 @@
   {
     "id": "cn-luan-yi-2005",
     "name": "Luan Yi",
-    "local_name": "Luan Yi",
+    "local_name": "栾毅",
     "country": "China PR",
     "birth_date": "2005-08-16",
     "age_band": "u23",
@@ -13045,12 +13266,24 @@
         "fields": [
           "registration_club"
         ]
+      },
+      {
+        "type": "national-fa-profile",
+        "label": "CFA U23 2026 first-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260320/37446.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA U23 2026 first-camp notice confirms the official local-script spelling 李新翔 for Li Xinxiang."
       }
     ],
     "names": {
       "zh": "李新翔",
       "en": "Li Xinxiang",
-      "native": "Li Xinxiang",
+      "native": "李新翔",
       "ja": "",
       "ko": ""
     },
@@ -13212,7 +13445,7 @@
   {
     "id": "cn-shi-songchen-2005",
     "name": "Shi Songchen",
-    "local_name": "Shi Songchen",
+    "local_name": "史松宸",
     "country": "China PR",
     "birth_date": "2005-12-30",
     "age_band": "u20",
@@ -13293,13 +13526,26 @@
       "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
-      "zh": "Shi Songchen",
+      "zh": "史松宸",
       "en": "Shi Songchen",
-      "native": "Shi Songchen",
+      "native": "史松宸",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 史松宸 for Shi Songchen."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -13681,11 +13927,24 @@
     "names": {
       "zh": "蒯纪闻",
       "en": "Kuai Jiwen",
-      "native": "Kuai Jiwen",
+      "native": "蒯纪闻",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 蒯纪闻 for Kuai Jiwen."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -13954,11 +14213,24 @@
     "names": {
       "zh": "杨皓宇",
       "en": "Yang Haoyu",
-      "native": "Yang Haoyu",
+      "native": "杨皓宇",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 杨皓宇 for Yang Haoyu."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -15011,7 +15283,7 @@
   {
     "id": "cn-yao-haoyang-2006",
     "name": "Yao Haoyang",
-    "local_name": "Yao Haoyang",
+    "local_name": "姚浩洋",
     "country": "China PR",
     "birth_date": "2006-10-28",
     "age_band": "u20",
@@ -15097,13 +15369,26 @@
       "notes": "基础字段来自 AFC U20 2025 final squad registration PDF，包括出生日期、位置、报名俱乐部、身高和体重；正赛 appearances/minutes 已由四场官方 Match Summary 汇总，中文名仍待官方或俱乐部来源补强。"
     },
     "names": {
-      "zh": "Yao Haoyang",
+      "zh": "姚浩洋",
       "en": "Yao Haoyang",
-      "native": "Yao Haoyang",
+      "native": "姚浩洋",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 姚浩洋 for Yao Haoyang."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -15330,11 +15615,24 @@
     "names": {
       "zh": "王钰栋",
       "en": "Wang Yudong",
-      "native": "Wang Yudong",
+      "native": "王钰栋",
       "ja": "",
       "ko": ""
     },
-    "source_layers": [],
+    "source_layers": [
+      {
+        "type": "national-fa-profile",
+        "label": "CFA Asian Games training-camp notice",
+        "url": "https://www.thecfa.cn/jxtz/20260901/38104.html",
+        "checked_at": "2026-10-04",
+        "confidence": "high",
+        "fields": [
+          "names.native",
+          "names.zh"
+        ],
+        "claim": "CFA Asian Games training-camp notice confirms the official local-script spelling 王钰栋 for Wang Yudong."
+      }
+    ],
     "market_value": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -20090,7 +20388,8 @@
       "china-youth",
       "donglu-football-boys",
       "striker-watch",
-      "school-system"
+      "school-system",
+      "china-senior-2026"
     ],
     "tournament_participation": [
       {

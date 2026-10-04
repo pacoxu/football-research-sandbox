@@ -11,7 +11,7 @@
       "end": "2026-10-03"
     },
     "date_precision": "exact",
-    "status": "upcoming",
+    "status": "completed",
     "champion": null,
     "runner_up": null,
     "participants": {
@@ -119,11 +119,190 @@
         }
       ]
     },
-    "china_status": "preparation",
-    "china_summary": "中国队位于B组，正式参赛名单23人；足协9月1日集训通知另补入史松宸，形成24人赛前集训池。吴曦、张玉宁、朱辰杰占用3个超龄名额。",
-    "china_detail_scope": "official-roster-and-schedule-snapshot",
-    "china_matches": [],
-    "china_key_players": [],
+    "china_status": "bronze",
+    "china_summary": "中国队以 U23 班底加三名超龄球员出征，小组赛头名出线后 3-0 淘汰泰国，半决赛 1-2 负韩国，铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦，时隔 28 年再获亚运男足奖牌。金牌赛韩国对日本尚未写入冠军。",
+    "china_detail_scope": "squad-and-match-results",
+    "china_matches": [
+      {
+        "date": "2026-09-16",
+        "stage": "Group B",
+        "opponent": "DPR Korea",
+        "score_for": 2,
+        "score_against": 1,
+        "result": "W",
+        "source_tier": "official-result+wire",
+        "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+        "event_source": "https://www.xinhuanet.com/20260916/c7decdae3c374215ace38f21b4b3f415/c.html",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-zhang-yuning-1997",
+            "player": "Zhang Yuning",
+            "minute": "44",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-wu-xi-1989",
+            "player": "Wu Xi",
+            "minute": "44",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-wu-xi-1989",
+            "player": "Wu Xi",
+            "minute": "68",
+            "role": "starter"
+          },
+          {
+            "type": "assist",
+            "player_id": "cn-zhang-yuning-1997",
+            "player": "Zhang Yuning",
+            "minute": "68",
+            "role": "starter"
+          }
+        ],
+        "note": "新华社确认张玉宁 44 分钟头球扳平、吴曦 68 分钟吊射绝杀；比分与出线路径由足协半决赛综述交叉确认。"
+      },
+      {
+        "date": "2026-09-20",
+        "stage": "Group B",
+        "opponent": "IR Iran",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "source_tier": "official-result",
+        "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+        "china_contributions": [],
+        "note": "足协半决赛综述确认 0-0；进球与阵容事件未在该综述中逐人展开。"
+      },
+      {
+        "date": "2026-09-23",
+        "stage": "Group B",
+        "opponent": "United Arab Emirates",
+        "score_for": 0,
+        "score_against": 0,
+        "result": "D",
+        "source_tier": "official-result",
+        "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+        "china_contributions": [],
+        "note": "足协半决赛综述确认 0-0，中国队 1 胜 2 平积 5 分获小组第一。"
+      },
+      {
+        "date": "2026-09-26",
+        "stage": "Quarter-final",
+        "opponent": "Thailand",
+        "score_for": 3,
+        "score_against": 0,
+        "result": "W",
+        "source_tier": "wire",
+        "event_source": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html",
+        "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-hu-hetao-2003",
+            "player": "Hu Hetao",
+            "minute": "47",
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-zhang-yuning-1997",
+            "player": "Zhang Yuning",
+            "minute": "63",
+            "role": "substitute"
+          }
+        ],
+        "note": "新华社确认首粒进球为彭啸射门被扑后砸到泰国后卫形成乌龙，因此不记入中国球员进球；胡荷韬开场后不久破门，张玉宁 58 分钟上场后由朱辰杰摆渡打进第三球。开场乌龙球分钟记为上半场补时，未写入贡献表。"
+      },
+      {
+        "date": "2026-09-30",
+        "stage": "Semi-final",
+        "opponent": "Korea Republic",
+        "score_for": 1,
+        "score_against": 2,
+        "result": "L",
+        "source_tier": "official-result+wire",
+        "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+        "event_source": "https://english.news.cn/20260930/2c62557c16904ef2ac421412d193810d/c.html",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-wang-yudong-2006",
+            "player": "Wang Yudong",
+            "minute": "22",
+            "role": "starter"
+          }
+        ],
+        "note": "足协战报确认王钰栋 22 分钟破门，韩国李英俊 33 分钟、裴峻浩 82 分钟逆转。毛伟杰左踝韧带损伤，预计缺席铜牌赛。"
+      },
+      {
+        "date": "2026-10-03",
+        "stage": "Bronze medal",
+        "opponent": "Uzbekistan",
+        "score_for": 2,
+        "score_against": 2,
+        "result": "W",
+        "source_tier": "secondary-source-snapshot",
+        "event_source": "https://sports.ifeng.com/c/8wvQTf5YAz7",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player_id": "cn-hu-hetao-2003",
+            "player": "Hu Hetao",
+            "minute": null,
+            "role": "starter"
+          },
+          {
+            "type": "goal",
+            "player_id": "cn-wang-yudong-2006",
+            "player": "Wang Yudong",
+            "minute": "54",
+            "role": "starter"
+          }
+        ],
+        "note": "公开媒体快照确认 90 分钟 2-2、点球 4-3 取胜，李昊扑出两粒点球。部分报道写胡荷韬先破门、王钰栋 54 分钟世界波，乌兹别克斯坦 90 分钟由绍迪博耶夫扳平。加时是否进行存在报道冲突，不写入。待足协官方战报升级来源层级。"
+      }
+    ],
+    "china_key_players": [
+      {
+        "player_id": "cn-zhang-yuning-1997",
+        "player": "Zhang Yuning",
+        "goals": 2,
+        "assists": 1,
+        "role_note": "超龄前锋。已核小组赛对朝鲜和四分之一决赛对泰国各入一球，并对朝鲜一球有助攻。"
+      },
+      {
+        "player_id": "cn-wu-xi-1989",
+        "player": "Wu Xi",
+        "goals": 1,
+        "assists": 1,
+        "role_note": "超龄中场。已核小组赛对朝鲜破门并助攻张玉宁。"
+      },
+      {
+        "player_id": "cn-wang-yudong-2006",
+        "player": "Wang Yudong",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "半决赛对韩国破门已由足协战报确认；铜牌赛进球来自公开媒体快照，待官方战报复核。"
+      },
+      {
+        "player_id": "cn-hu-hetao-2003",
+        "player": "Hu Hetao",
+        "goals": 2,
+        "assists": 0,
+        "role_note": "四分之一决赛进球来自新华社；铜牌赛进球来自公开媒体快照。"
+      },
+      {
+        "player_id": "cn-li-hao-2004",
+        "player": "Li Hao",
+        "goals": 0,
+        "assists": 0,
+        "role_note": "正赛门将。铜牌赛点球大战扑出两粒点球的说法来自公开媒体快照。"
+      }
+    ],
     "china_squad": [
       {
         "player_id": "cn-li-hao-2004",
@@ -254,7 +433,7 @@
         "en": "Positions follow Xinhua's transcription of the official 23-player Asian Games roster. Shi Songchen appears only in the CFA's same-day 24-player camp notice and is retained separately as a later camp call-up, not as a confirmed registration replacement."
       },
       "head_coach": {
-        "name": "Antonio Puche",
+        "name": "Antonio Puché",
         "local_name": "安东尼奥·普切"
       },
       "groups": [
@@ -434,10 +613,116 @@
             }
           ]
         }
+      ],
+      "staff": [
+        {
+          "role": {
+            "zh": "领队",
+            "en": "Team leader"
+          },
+          "members": [
+            "杜立达"
+          ]
+        },
+        {
+          "role": {
+            "zh": "管理",
+            "en": "Team manager"
+          },
+          "members": [
+            "李石"
+          ]
+        },
+        {
+          "role": {
+            "zh": "助理教练",
+            "en": "Assistant coaches"
+          },
+          "members": [
+            "何塞·德拉萨格拉",
+            "于大宝"
+          ]
+        },
+        {
+          "role": {
+            "zh": "体能教练",
+            "en": "Fitness coach"
+          },
+          "members": [
+            "伊格纳乔·洛佩兹"
+          ]
+        },
+        {
+          "role": {
+            "zh": "守门员教练",
+            "en": "Goalkeeper coach"
+          },
+          "members": [
+            "托莫·格鲁伊奇"
+          ]
+        },
+        {
+          "role": {
+            "zh": "技术分析师",
+            "en": "Analyst"
+          },
+          "members": [
+            "大卫·坎皮罗"
+          ]
+        },
+        {
+          "role": {
+            "zh": "机能监测师",
+            "en": "Performance monitor"
+          },
+          "members": [
+            "钱纪云"
+          ]
+        },
+        {
+          "role": {
+            "zh": "队医",
+            "en": "Team doctor"
+          },
+          "members": [
+            "王磊"
+          ]
+        },
+        {
+          "role": {
+            "zh": "运动防护师",
+            "en": "Physiotherapists"
+          },
+          "members": [
+            "姚康",
+            "赵浩然",
+            "苏星涛",
+            "陈恩远",
+            "王润哲"
+          ]
+        },
+        {
+          "role": {
+            "zh": "装备管理",
+            "en": "Kit manager"
+          },
+          "members": [
+            "张学刚"
+          ]
+        },
+        {
+          "role": {
+            "zh": "翻译",
+            "en": "Translator"
+          },
+          "members": [
+            "杨浩"
+          ]
+        }
       ]
     },
-    "source_checked_at": "2026-09-02",
-    "source_conflict_note": "The Aichi-Nagoya official roster reported by Xinhua contains 23 players. The CFA camp notice published later on 2026-09-01 contains 24 and adds Shi Songchen. The archive preserves both versions and does not infer a formal registration replacement.",
+    "source_checked_at": "2026-10-04",
+    "source_conflict_note": "The travelling 23 is taken from the CFA 2026-09-14 update rather than the 2026-09-01 24-man camp notice or the 2026-09-07 sports-delegation list, which still named Li Zhenquan. Group and knockout scores for China are confirmed by CFA and/or Xinhua except the bronze-medal match, which is a public-media snapshot pending an official CFA match report. Some bronze-medal reports mention extra time while others say the match went straight to penalties; extra time is not stored. The gold-medal match between Korea Republic and Japan on 2026-10-03 is not recorded until an official result is captured.",
     "source_links": [
       {
         "label": "Aichi-Nagoya 2026 official team draw results",
@@ -716,51 +1001,195 @@
         {
           "team": "Arsenal U17",
           "position": "Goalkeeper",
-          "label": { "zh": "阿森纳 U17 · 守门员 GK", "en": "Arsenal U17 · Goalkeepers" },
+          "label": {
+            "zh": "阿森纳 U17 · 守门员 GK",
+            "en": "Arsenal U17 · Goalkeepers"
+          },
           "entries": [
-            { "name": { "zh": "马克西米利安·洛普雷斯蒂", "en": "Maximilian Lo Presti" }, "squad_number": 7 },
-            { "name": { "zh": "杰克·塔尔博特", "en": "Jack Talbot" }, "squad_number": 84 }
+            {
+              "name": {
+                "zh": "马克西米利安·洛普雷斯蒂",
+                "en": "Maximilian Lo Presti"
+              },
+              "squad_number": 7
+            },
+            {
+              "name": {
+                "zh": "杰克·塔尔博特",
+                "en": "Jack Talbot"
+              },
+              "squad_number": 84
+            }
           ]
         },
         {
           "team": "Arsenal U17",
           "position": "Defender",
-          "label": { "zh": "阿森纳 U17 · 后卫 DF", "en": "Arsenal U17 · Defenders" },
+          "label": {
+            "zh": "阿森纳 U17 · 后卫 DF",
+            "en": "Arsenal U17 · Defenders"
+          },
           "entries": [
-            { "name": { "zh": "扎卡里·范德斯特拉滕", "en": "Zachary Van der Straaten" }, "squad_number": 16 },
-            { "name": { "zh": "弗兰基·瓦亚特", "en": "Frankie Wyatt" }, "squad_number": 17 },
-            { "name": { "zh": "亚伯拉罕·奥乌苏-贾西", "en": "Abraham Owusu-Gyasi" }, "squad_number": 78 },
-            { "name": { "zh": "帕特里克·斯塔霍夫", "en": "Patrick Stachow" }, "squad_number": 82 },
-            { "name": { "zh": "哈基姆·阿布巴卡尔", "en": "Hakeem Abubakar" }, "squad_number": 85 },
-            { "name": { "zh": "埃利翁·姆巴拉", "en": "Elyon Mbala" }, "squad_number": 87 },
-            { "name": { "zh": "丹尼尔·麦卡伦", "en": "Daniel McCarron" }, "squad_number": 88 },
-            { "name": { "zh": "约书亚·塞塞", "en": "Joshua Sesay" }, "squad_number": 95 }
+            {
+              "name": {
+                "zh": "扎卡里·范德斯特拉滕",
+                "en": "Zachary Van der Straaten"
+              },
+              "squad_number": 16
+            },
+            {
+              "name": {
+                "zh": "弗兰基·瓦亚特",
+                "en": "Frankie Wyatt"
+              },
+              "squad_number": 17
+            },
+            {
+              "name": {
+                "zh": "亚伯拉罕·奥乌苏-贾西",
+                "en": "Abraham Owusu-Gyasi"
+              },
+              "squad_number": 78
+            },
+            {
+              "name": {
+                "zh": "帕特里克·斯塔霍夫",
+                "en": "Patrick Stachow"
+              },
+              "squad_number": 82
+            },
+            {
+              "name": {
+                "zh": "哈基姆·阿布巴卡尔",
+                "en": "Hakeem Abubakar"
+              },
+              "squad_number": 85
+            },
+            {
+              "name": {
+                "zh": "埃利翁·姆巴拉",
+                "en": "Elyon Mbala"
+              },
+              "squad_number": 87
+            },
+            {
+              "name": {
+                "zh": "丹尼尔·麦卡伦",
+                "en": "Daniel McCarron"
+              },
+              "squad_number": 88
+            },
+            {
+              "name": {
+                "zh": "约书亚·塞塞",
+                "en": "Joshua Sesay"
+              },
+              "squad_number": 95
+            }
           ]
         },
         {
           "team": "Arsenal U17",
           "position": "Midfielder",
-          "label": { "zh": "阿森纳 U17 · 中场 MF", "en": "Arsenal U17 · Midfielders" },
+          "label": {
+            "zh": "阿森纳 U17 · 中场 MF",
+            "en": "Arsenal U17 · Midfielders"
+          },
           "entries": [
-            { "name": { "zh": "米卡埃尔·博纳旺蒂尔·耶特纳", "en": "Mikael Bonaventure Yetna" }, "squad_number": 3 },
-            { "name": { "zh": "马利克·哈希", "en": "Maalik Hashi" }, "squad_number": 74 },
-            { "name": { "zh": "鲍恩·菲利普斯", "en": "Bowen Phillips" }, "squad_number": 79 },
-            { "name": { "zh": "索拉普·桑庞", "en": "Saurap Sampang" }, "squad_number": 81 },
-            { "name": { "zh": "埃默森·恩瓦内里", "en": "Emerson Nwaneri" }, "squad_number": 90 },
-            { "name": { "zh": "西奥·奥达吉-乌库埃库", "en": "Theo Odaji-Ukueku" }, "squad_number": 92 }
+            {
+              "name": {
+                "zh": "米卡埃尔·博纳旺蒂尔·耶特纳",
+                "en": "Mikael Bonaventure Yetna"
+              },
+              "squad_number": 3
+            },
+            {
+              "name": {
+                "zh": "马利克·哈希",
+                "en": "Maalik Hashi"
+              },
+              "squad_number": 74
+            },
+            {
+              "name": {
+                "zh": "鲍恩·菲利普斯",
+                "en": "Bowen Phillips"
+              },
+              "squad_number": 79
+            },
+            {
+              "name": {
+                "zh": "索拉普·桑庞",
+                "en": "Saurap Sampang"
+              },
+              "squad_number": 81
+            },
+            {
+              "name": {
+                "zh": "埃默森·恩瓦内里",
+                "en": "Emerson Nwaneri"
+              },
+              "squad_number": 90
+            },
+            {
+              "name": {
+                "zh": "西奥·奥达吉-乌库埃库",
+                "en": "Theo Odaji-Ukueku"
+              },
+              "squad_number": 92
+            }
           ]
         },
         {
           "team": "Arsenal U17",
           "position": "Forward",
-          "label": { "zh": "阿森纳 U17 · 前锋 FW", "en": "Arsenal U17 · Forwards" },
+          "label": {
+            "zh": "阿森纳 U17 · 前锋 FW",
+            "en": "Arsenal U17 · Forwards"
+          },
           "entries": [
-            { "name": { "zh": "杰登·马戈马", "en": "Jaden Maghoma" }, "squad_number": 9 },
-            { "name": { "zh": "路易斯·穆尼奥斯", "en": "Luis Munoz" }, "squad_number": 12 },
-            { "name": { "zh": "凯伦·雷蒙德-卡伦德", "en": "Kyron Raymond-Callender" }, "squad_number": 13 },
-            { "name": { "zh": "加布里埃尔·阿尔特塔·贝尔纳尔", "en": "Gabriel Arteta Bernal" }, "squad_number": 70 },
-            { "name": { "zh": "马利·弗洛霍克", "en": "Marley Frohock" }, "squad_number": 72 },
-            { "name": { "zh": "杰登·奥巴", "en": "Jayden Oba" }, "squad_number": 91 }
+            {
+              "name": {
+                "zh": "杰登·马戈马",
+                "en": "Jaden Maghoma"
+              },
+              "squad_number": 9
+            },
+            {
+              "name": {
+                "zh": "路易斯·穆尼奥斯",
+                "en": "Luis Munoz"
+              },
+              "squad_number": 12
+            },
+            {
+              "name": {
+                "zh": "凯伦·雷蒙德-卡伦德",
+                "en": "Kyron Raymond-Callender"
+              },
+              "squad_number": 13
+            },
+            {
+              "name": {
+                "zh": "加布里埃尔·阿尔特塔·贝尔纳尔",
+                "en": "Gabriel Arteta Bernal"
+              },
+              "squad_number": 70
+            },
+            {
+              "name": {
+                "zh": "马利·弗洛霍克",
+                "en": "Marley Frohock"
+              },
+              "squad_number": 72
+            },
+            {
+              "name": {
+                "zh": "杰登·奥巴",
+                "en": "Jayden Oba"
+              },
+              "squad_number": 91
+            }
           ]
         }
       ]

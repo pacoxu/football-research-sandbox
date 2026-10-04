@@ -728,6 +728,7 @@ const UI_COPY = {
     "tournamentDetail.squad.latestNote":
       "按最新公开名单图整理；这份视图用于跟踪当前中国 U17 队名单，不替代 2026 U17 亚洲杯终报名表。",
     "tournamentDetail.squad.headCoach": "主教练：{name}",
+    "tournamentDetail.squad.staff": "教练与保障团队",
     "tournamentDetail.squad.finalsToggle": "查看 2026 U17 亚洲杯终报名表",
     "tournamentDetail.matches.eyebrow": "China Matches",
     "tournamentDetail.matches.title": "中国队比赛明细",
@@ -1707,6 +1708,7 @@ const UI_COPY = {
     "tournamentDetail.squad.latestNote":
       "Compiled from the latest public roster graphic; this view tracks the current China U17 pool and does not replace the 2026 AFC U17 finals squad list.",
     "tournamentDetail.squad.headCoach": "Head coach: {name}",
+    "tournamentDetail.squad.staff": "Coaching and support staff",
     "tournamentDetail.squad.finalsToggle": "View the 2026 AFC U17 finals squad list",
     "tournamentDetail.matches.eyebrow": "China Matches",
     "tournamentDetail.matches.title": "China match detail",
@@ -2450,7 +2452,8 @@ const CHINA_STATUS_LABELS = {
   "qualification-pending": { zh: "资格赛待定", en: "Qualification pending" },
   "did-not-qualify": { zh: "未晋级", en: "Did not qualify" },
   "did-not-participate": { zh: "未参赛", en: "Did not participate" },
-  "qualification-cancelled": { zh: "资格路径取消", en: "Qualification cancelled" }
+  "qualification-cancelled": { zh: "资格路径取消", en: "Qualification cancelled" },
+  bronze: { zh: "铜牌", en: "Bronze" }
 };
 
 const TOURNAMENT_HISTORY_STAGE_LABELS = {
@@ -2590,7 +2593,10 @@ const TAG_LABELS = {
   "u23-overseas": { zh: "U23 留洋", en: "U23 overseas" },
   "u23-watch": { zh: "U23 观察", en: "U23 watch" },
   "uzbekistan-youth": { zh: "乌兹别克青训", en: "Uzbekistan youth" },
-  "winger-watch": { zh: "边路观察", en: "Winger watch" }
+  "winger-watch": { zh: "边路观察", en: "Winger watch" },
+  "asian-games-men-2026": { zh: "亚运会男足 2026", en: "Asian Games men 2026" },
+  "asian-games-overage": { zh: "亚运超龄", en: "Asian Games overage" },
+  "china-senior-2026": { zh: "中国成年队 2026", en: "China senior 2026" }
 };
 
 const VERIFICATION_STATUS_LABELS = {
@@ -3880,6 +3886,17 @@ function buildScore(match) {
 }
 
 function buildPlayerSearchBlob(player) {
+  const tagLabels = (player.focus_tags ?? []).flatMap((tag) => {
+    const preset = TAG_LABELS[tag];
+    return preset ? [tag, preset.zh, preset.en] : [tag];
+  });
+  const participationLabels = (player.tournament_participation ?? []).flatMap((entry) => [
+    entry.competition_id,
+    entry.label,
+    entry.team,
+    getTournamentDisplayName(entry.competition_id)
+  ]);
+
   return [
     ...getPlayerNameVariants(player),
     player.country,
@@ -3890,7 +3907,8 @@ function buildPlayerSearchBlob(player) {
     formatCountryName(player.registration_club?.country),
     formatPosition(player.primary_position),
     inferLeagueSystem(player),
-    ...(player.focus_tags ?? []),
+    ...tagLabels,
+    ...participationLabels,
     ...(player.training_pathway ?? []).flatMap((item) => [
       item.organization,
       localizeClubName(item.organization, "zh", state.overview?.club_name_overrides ?? {})
@@ -4857,6 +4875,25 @@ function renderTournamentRosterViewGroup(group) {
   `;
 }
 
+function renderTournamentStaffList(staff) {
+  if (!Array.isArray(staff) || staff.length === 0) {
+    return "";
+  }
+
+  return `
+    <p class="timeline-label">${escapeHtml(t("tournamentDetail.squad.staff"))}</p>
+    <ul class="mini-bullet-list">
+      ${staff
+        .map((group) => {
+          const role = localizeText(group.role, "");
+          const members = (group.members ?? []).join("、");
+          return `<li><strong>${escapeHtml(role)}</strong>：${escapeHtml(members)}</li>`;
+        })
+        .join("")}
+    </ul>
+  `;
+}
+
 function renderTournamentLatestRosterView(view, squadEntries) {
   const groups = view?.groups ?? [];
   const headCoach =
@@ -4871,6 +4908,7 @@ function renderTournamentLatestRosterView(view, squadEntries) {
       </div>
       <p class="small-note">${escapeHtml(note)}</p>
       ${headCoach ? `<p class="small-note">${escapeHtml(t("tournamentDetail.squad.headCoach", { name: headCoach }))}</p>` : ""}
+      ${renderTournamentStaffList(view?.staff)}
       <div class="roster-group-grid">
         ${groups.map(renderTournamentRosterViewGroup).join("")}
       </div>

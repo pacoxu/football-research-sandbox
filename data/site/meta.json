@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-09-02",
+  "generated_at": "2026-10-04",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -14,16 +14,16 @@
   "coverage_summary": {
     "dataset_count": 10,
     "record_count": 971,
-    "stale_records": 152,
-    "needs_review_records": 347
+    "stale_records": 165,
+    "needs_review_records": 346
   },
   "freshness": {
-    "as_of": "2026-09-02",
+    "as_of": "2026-10-04",
     "audited_records": 1274,
-    "overdue": 157,
+    "overdue": 164,
     "by_window": {
-      "30": 157,
-      "90": 0,
+      "30": 163,
+      "90": 1,
       "180": 0
     }
   },
@@ -36,16 +36,16 @@
       },
       "record_count": 573,
       "quality": {
-        "complete": 59,
-        "mixed": 7,
-        "partial": 42,
-        "needs-review": 313,
-        "stale": 152,
+        "complete": 68,
+        "mixed": 3,
+        "partial": 32,
+        "needs-review": 312,
+        "stale": 158,
         "excluded": 0
       },
       "source_tiers": {
-        "1": 545,
-        "2": 4,
+        "1": 546,
+        "2": 3,
         "3": 1,
         "4": 0,
         "5": 2,
@@ -56,15 +56,15 @@
         "oldest": "2026-05-22",
         "newest": "2026-09-02"
       },
-      "overdue_records": 152,
+      "overdue_records": 158,
       "missing_fields": [
         {
           "field": "names.native_verified",
-          "count": 252
+          "count": 229
         },
         {
           "field": "source_layers",
-          "count": 81
+          "count": 59
         }
       ]
     },
@@ -94,7 +94,7 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-09-02"
+        "newest": "2026-10-04"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -125,7 +125,7 @@
       },
       "checked_at": {
         "oldest": "2026-06-28",
-        "newest": "2026-09-02"
+        "newest": "2026-10-04"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -294,10 +294,10 @@
       "record_count": 37,
       "quality": {
         "complete": 15,
-        "mixed": 1,
-        "partial": 21,
+        "mixed": 0,
+        "partial": 15,
         "needs-review": 0,
-        "stale": 0,
+        "stale": 7,
         "excluded": 0
       },
       "source_tiers": {
@@ -311,9 +311,9 @@
       },
       "checked_at": {
         "oldest": "2026-06-27",
-        "newest": "2026-09-02"
+        "newest": "2026-10-04"
       },
-      "overdue_records": 0,
+      "overdue_records": 7,
       "missing_fields": [
         {
           "field": "record",
@@ -438,6 +438,10 @@
     {
       "path": "data/raw/football-stories.json",
       "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/footballStories"
+    },
+    {
+      "path": "data/raw/youth-training-disputes.json",
+      "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/youthTrainingDisputes"
     },
     {
       "path": "data/raw/big-five-asian-coaches.json",
@@ -902,7 +906,7 @@
         "id": "coach:cn-zhou-haibin-shandong-2007",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-09-02",
+        "checked_at": "2026-10-04",
         "missing_fields": []
       },
       "coach:cn-zhu-liwei-evergrande-u13": {
@@ -928,7 +932,7 @@
       },
       "coach:ange-postecoglou": {
         "id": "coach:ange-postecoglou",
-        "status": "mixed",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-08-01",
         "missing_fields": []
@@ -937,12 +941,12 @@
         "id": "coach:antonio-puche",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-09-02",
+        "checked_at": "2026-10-04",
         "missing_fields": []
       },
       "coach:avram-grant": {
         "id": "coach:avram-grant",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 5,
         "checked_at": "2026-06-27",
         "missing_fields": []
@@ -967,19 +971,19 @@
         "id": "coach:david-almazan",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-09-02",
+        "checked_at": "2026-10-04",
         "missing_fields": []
       },
       "coach:dejan-djurdjevic": {
         "id": "coach:dejan-djurdjevic",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-09-02",
+        "checked_at": "2026-10-04",
         "missing_fields": []
       },
       "coach:fatih-terim": {
         "id": "coach:fatih-terim",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 5,
         "checked_at": "2026-06-27",
         "missing_fields": []
@@ -1027,21 +1031,21 @@
       },
       "coach:nuri-sahin": {
         "id": "coach:nuri-sahin",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 5,
         "checked_at": "2026-06-27",
         "missing_fields": []
       },
       "coach:ozcan-arkoc": {
         "id": "coach:ozcan-arkoc",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 5,
         "checked_at": "2026-06-27",
         "missing_fields": []
       },
       "coach:patrick-kisnorbo": {
         "id": "coach:patrick-kisnorbo",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 5,
         "checked_at": "2026-06-27",
         "missing_fields": []
@@ -1050,12 +1054,12 @@
         "id": "coach:satoshi-ukishima",
         "status": "complete",
         "source_tier": 1,
-        "checked_at": "2026-09-02",
+        "checked_at": "2026-10-04",
         "missing_fields": []
       },
       "coach:tayfun-korkut": {
         "id": "coach:tayfun-korkut",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 5,
         "checked_at": "2026-06-27",
         "missing_fields": []

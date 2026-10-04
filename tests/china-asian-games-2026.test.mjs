@@ -134,3 +134,19 @@ test("updates the Asian Games coaching staff to the September tournament camp", 
     ["姚康", "赵浩然", "苏星涛", "陈恩远", "王润哲"]
   );
 });
+
+test("makes CFA native names and Asian Games staff searchable", async () => {
+  const [players, archive] = await Promise.all([readPlayers(), readJson("data/raw/tournament-archive.json")]);
+  const playerById = new Map(players.map((player) => [player.id, player]));
+  const archived = archive.find((entry) => entry.id === competitionId);
+
+  assert.equal(playerById.get("cn-he-yiran-2005").local_name, "贺一然");
+  assert.equal(playerById.get("cn-shi-songchen-2005").local_name, "史松宸");
+  assert.equal(playerById.get("cn-zhao-songyuan-2009").local_name, "赵松源");
+  assert.ok(playerById.get("cn-zhao-songyuan-2009").focus_tags.includes("china-senior-2026"));
+  assert.equal(archived.china_status, "bronze");
+  assert.equal(archived.latest_public_roster_view.head_coach.local_name, "安东尼奥·普切");
+  assert.equal(archived.latest_public_roster_view.staff.length, 11);
+  assert.equal(archived.champion, null);
+  assert.equal(archived.runner_up, null);
+});
