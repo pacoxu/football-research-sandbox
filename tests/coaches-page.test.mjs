@@ -40,7 +40,8 @@ test("all primary site pages link to the coaches directory", async () => {
     "youth-league.html",
     "lineup.html",
     "stories.html",
-    "story.html"
+    "story.html",
+    "milestones.html"
   ];
   for (const pageName of pages) {
     const page = await fs.readFile(new URL(`../${pageName}`, import.meta.url), "utf8");

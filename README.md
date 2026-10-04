@@ -122,6 +122,8 @@ python3 -m http.server 4173
 - `docs/research/asian-chinese-player-coach-collection.md` 记录亚洲/中国球员与教练的信息收集口径、当前覆盖和待核队列。
 - `docs/research/scouting-source-directory.md` 维护海外青训、球探平台、青年球员报告和公开数据站的后续检索方向。
 - `docs/research/china-league-pyramid-and-regional-super-leagues.md` 区分中国职业联赛层级、中冠通道和苏超/东北超/赣超/湘超等地方城市赛事。
+- `docs/research/china-2026-youth-breakthroughs.md` 对照 2026 U23 亚洲杯亚军、U17 进世少赛和亚运会铜牌的历史间隔口径。
+- 页面入口：[milestones.html](milestones.html)
 - `docs/research/china-fa-system-and-jiangsu-city-league-youth.md` 说明中国足协与地方会员协会的青训治理链、江苏青训结构，以及苏超青年球员的建档边界。
 - 同一说明同步维护中国足协海外球员资助政策，并把申请资格、评审、公示、实际获款和 FIFA 培训补偿分开记录。
 - `docs/research/china-football-system-and-2034-cup-tree.md` 用树状图拆分足协治理、成年比赛、职业球员培养、青年/青少年比赛及 2034 杯 U12 赛制。
