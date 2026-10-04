@@ -4,6 +4,16 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-10-04
+
+### Added
+
+- Added a public 2026 China men's milestones page covering the U23 Asian Cup runners-up, U17 World Cup qualification and Asian Games bronze, with sourced historical intervals and a share graphic.
+
+### Corrected
+
+- Corrected the 2004 AFC U-17 Championship archive: China beat Korea DPR 1-0 in the final to win the title. The 1-3 result against Japan was a group match, not the final.
+
 ## 2026-10-03
 
 ### Added

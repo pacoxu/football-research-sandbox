@@ -3,11 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>青训教练 | 青训球员追踪站</title>
-    <meta name="description" content="查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。" />
-    <link rel="stylesheet" href="./assets/styles.css?v=20260725-friend-links" />
+    <title>2026 里程碑 | 青训球员追踪站</title>
+    <meta
+      name="description"
+      content="对照 2026 年中国男足 U23 亚洲杯亚军、U17 进世少赛和亚运会铜牌的历史间隔口径。"
+    />
+    <link rel="stylesheet" href="./assets/styles.css?v=20261004-milestones" />
   </head>
-  <body data-page="coaches">
+  <body data-page="milestones">
     <div class="site-shell">
       <header class="site-header">
         <a class="brand" href="./index.html">
@@ -35,54 +38,39 @@
           </button>
         </div>
       </header>
-
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="coaches.hero.eyebrow">Youth Coaches</p>
-            <h1 data-i18n="coaches.hero.title">青训教练</h1>
-            <p class="hero-text" data-i18n="coaches.hero.text">集中查看基层、校园、足校和民间青训教练，以及中国男足 U 系列教练组。每条记录保留职责边界和原始来源。</p>
+            <p class="eyebrow" data-i18n="milestones.hero.eyebrow">2026 Milestones</p>
+            <h1 data-i18n="milestones.hero.title">2026 中国男足里程碑</h1>
+            <p class="hero-text" data-i18n="milestones.hero.text">对照 U23 亚洲杯亚军、U17 进世少赛和亚运会铜牌分别隔了多久，以及每条成绩不能写成什么。</p>
           </div>
           <aside class="hero-spotlight">
-            <p class="eyebrow" data-i18n="coaches.coverage.eyebrow">Coverage</p>
-            <h2 id="coachesCoverage" data-i18n="common.loading">载入中</h2>
-            <p id="coachesCheckedAt" class="hero-side-note"></p>
+            <p class="eyebrow" data-i18n="milestones.coverage.eyebrow">Coverage</p>
+            <h2 id="milestonesCoverage" data-i18n="common.loading">载入中</h2>
+            <p id="milestonesCheckedAt" class="hero-side-note"></p>
           </aside>
         </section>
-
         <section class="content-panel">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow" data-i18n="coaches.development.eyebrow">Grassroots & Academy</p>
-              <h2 data-i18n="coaches.development.title">基层与青训机构教练</h2>
-            </div>
-          </div>
-          <p class="section-note" data-i18n="coaches.development.note">只收录能够确认具名机构和实际训练或技术职责的教练，不以行政头衔或球员经历代替执教事实。</p>
-          <div id="developmentCoachGrid" class="player-card-grid"></div>
+          <p id="milestonesScopeNote" class="section-note"></p>
+          <div id="milestonesGrid" class="milestone-grid"></div>
         </section>
-
-        <section class="content-panel">
+        <section class="content-panel milestone-poster-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="coaches.national.eyebrow">National Youth Teams</p>
-              <h2 data-i18n="coaches.national.title">中国男足 U 系列教练组</h2>
+              <p class="eyebrow" data-i18n="milestones.poster.eyebrow">Share Card</p>
+              <h2 data-i18n="milestones.poster.title">分享图</h2>
             </div>
           </div>
-          <p id="nationalCoachNote" class="section-note"></p>
-          <div id="nationalCoachGrid" class="story-grid"></div>
-        </section>
-
-        <section class="content-panel">
-          <div class="section-head">
-            <div>
-              <p class="eyebrow" data-i18n="coaches.watchlist.eyebrow">Research Queue</p>
-              <h2 data-i18n="coaches.watchlist.title">待补教练与机构</h2>
-            </div>
-          </div>
-          <div id="coachWatchlist" class="stack-list compact-grid"></div>
+          <figure class="milestone-poster">
+            <img
+              id="milestonesPoster"
+              src="./assets/xiaohongshu-china-football-2026.jpg"
+              alt="2026 中国足球三项成绩的历史间隔图"
+            />
+          </figure>
         </section>
       </main>
-
       <footer class="site-footer">
         <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
         <nav class="friend-links" aria-label="友情链接">
