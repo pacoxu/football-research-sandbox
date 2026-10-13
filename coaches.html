@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>青训教练 | 青训球员追踪站</title>
-    <meta name="description" content="查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。" />
+    <title>教练 | 青训球员追踪站</title>
+    <meta name="description" content="查看职业梯队与足校青训教练、校园和民间青训教练、中国男足 U 系列教练组，以及五大联赛与亚洲一线队主教练样本。" />
     <link rel="stylesheet" href="./assets/styles.css?v=20260725-friend-links" />
   </head>
   <body data-page="coaches">
@@ -23,7 +23,7 @@
             <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
             <a href="./lineup.html">排阵容</a>
             <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">青训体系</a>
-            <a data-nav="coaches" data-i18n="nav.coaches" href="./coaches.html">青训教练</a>
+            <a data-nav="coaches" data-i18n="nav.coaches" href="./coaches.html">教练</a>
             <a data-nav="stories" data-i18n="nav.stories" href="./stories.html">故事</a>
             <a data-nav="data-center" data-i18n="nav.dataCenter" href="./data.html">数据中心</a>
             <a data-nav="predictions" data-i18n="nav.predictions" href="./predictions.html">世界杯预测</a>
@@ -38,9 +38,9 @@
       <main>
         <section class="page-hero hero-tight">
           <div class="hero-copy">
-            <p class="eyebrow" data-i18n="coaches.hero.eyebrow">Youth Coaches</p>
-            <h1 data-i18n="coaches.hero.title">青训教练</h1>
-            <p class="hero-text" data-i18n="coaches.hero.text">集中查看基层、校园、足校和民间青训教练，以及中国男足 U 系列教练组。每条记录保留职责边界和原始来源。</p>
+            <p class="eyebrow" data-i18n="coaches.hero.eyebrow">Coaches</p>
+            <h1 data-i18n="coaches.hero.title">教练</h1>
+            <p class="hero-text" data-i18n="coaches.hero.text">同一页同时展示职业梯队与足校青训教练、校园和民间青训教练、中国男足 U 系列教练组，以及五大联赛与亚洲一线队主教练样本。每条记录保留职责边界和原始来源。</p>
           </div>
           <aside class="hero-spotlight">
             <p class="eyebrow" data-i18n="coaches.coverage.eyebrow">Coverage</p>
@@ -52,8 +52,19 @@
         <section class="content-panel">
           <div class="section-head">
             <div>
-              <p class="eyebrow" data-i18n="coaches.development.eyebrow">Grassroots & Academy</p>
-              <h2 data-i18n="coaches.development.title">基层与青训机构教练</h2>
+              <p class="eyebrow" data-i18n="coaches.academy.eyebrow">Professional Academies</p>
+              <h2 data-i18n="coaches.academy.title">职业梯队与足校教练</h2>
+            </div>
+          </div>
+          <p class="section-note" data-i18n="coaches.academy.note">中青赛职业俱乐部/足校侧具名样本，如山东泰山、恒大足校。单届赛事带队只记快照，不外推其他年龄段。</p>
+          <div id="academyCoachGrid" class="player-card-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="coaches.development.eyebrow">Grassroots & Independent</p>
+              <h2 data-i18n="coaches.development.title">校园、体校与民间青训教练</h2>
             </div>
           </div>
           <p class="section-note" data-i18n="coaches.development.note">只收录能够确认具名机构和实际训练或技术职责的教练，不以行政头衔或球员经历代替执教事实。</p>
@@ -69,6 +80,28 @@
           </div>
           <p id="nationalCoachNote" class="section-note"></p>
           <div id="nationalCoachGrid" class="story-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="coaches.bigFive.eyebrow">Big Five Leagues</p>
+              <h2 data-i18n="coaches.bigFive.title">五大联赛亚洲教练</h2>
+            </div>
+          </div>
+          <p class="section-note" data-i18n="coaches.bigFive.note">与留洋页同一份主表：只统计五大联赛顶级联赛一线队主教练/临时主教练，战绩不含杯赛和欧战。</p>
+          <div id="coachesBigFiveGrid" class="story-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="coaches.asian.eyebrow">Asian First Teams</p>
+              <h2 data-i18n="coaches.asian.title">亚洲一线队主教练</h2>
+            </div>
+          </div>
+          <p class="section-note" data-i18n="coaches.asian.note">五大联赛之外的 AFC 教练样本：欧洲非五大顶级联赛、亚洲俱乐部与国家队主教练任期。青年队国家队任期可以入库，俱乐部青年队主教练不进入此表。</p>
+          <div id="coachesAsianGrid" class="story-grid"></div>
         </section>
 
         <section class="content-panel">
@@ -94,6 +127,6 @@
         </nav>
       </footer>
     </div>
-    <script type="module" src="./assets/app.js?v=20260720-coach-snapshots"></script>
+    <script type="module" src="./assets/app.js?v=20261004-coach-directory"></script>
   </body>
 </html>

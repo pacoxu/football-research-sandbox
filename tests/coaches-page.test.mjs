@@ -9,8 +9,13 @@ test("coaches page exposes development and national youth coach datasets", async
 
   assert.equal(dataset.chinaYouthDevelopmentCoaches.coaches.length, 21);
   assert.equal(dataset.chinaMenYouthCoaches.team_cycles.length, 5);
+  assert.equal(dataset.bigFiveAsianCoaches.coaches.length, 7);
+  assert.equal(dataset.asianCoaches.coaches.length, 11);
+  assert.match(page, /id="academyCoachGrid"/);
   assert.match(page, /id="developmentCoachGrid"/);
   assert.match(page, /id="nationalCoachGrid"/);
+  assert.match(page, /id="coachesBigFiveGrid"/);
+  assert.match(page, /id="coachesAsianGrid"/);
   assert.match(page, /id="coachWatchlist"/);
 });
 
@@ -46,6 +51,18 @@ test("all primary site pages link to the coaches directory", async () => {
     const page = await fs.readFile(new URL(`../${pageName}`, import.meta.url), "utf8");
     assert.match(page, /href="\.\/coaches\.html"/, `${pageName} has no coaches navigation link`);
   }
+});
+
+test("professional academy youth coaches are separated from grassroots samples", async () => {
+  const dataset = await loadDataset();
+  const academyIds = dataset.chinaYouthDevelopmentCoaches.coaches
+    .filter((coach) => ["professional-academy", "football-school"].includes(coach.organization?.type))
+    .map((coach) => coach.id);
+  assert.ok(academyIds.includes("cn-zhou-haibin-shandong-2007"));
+  assert.ok(academyIds.includes("cn-cui-peng-shandong-u17"));
+  assert.ok(academyIds.includes("cn-tang-xiaocheng-shandong-u15"));
+  assert.ok(academyIds.includes("cn-zhu-liwei-evergrande-u13"));
+  assert.ok(!academyIds.includes("cn-sun-jihai-haiqiu"));
 });
 
 test("coach cards can link to sourced football stories", async () => {

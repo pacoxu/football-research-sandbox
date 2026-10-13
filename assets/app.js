@@ -95,8 +95,8 @@ const UI_COPY = {
     "page.overseas.description": "查看中日韩当前留洋样本、联赛层级对比与历史记录。",
     "page.pathways.title": "青训体系与项目 | 青训球员追踪站",
     "page.pathways.description": "比较中国、日本、韩国、挪威、丹麦和瑞典的足协治理、学校足球、俱乐部学院、人才识别与职业桥梁。",
-    "page.coaches.title": "青训教练 | 青训球员追踪站",
-    "page.coaches.description": "查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。",
+    "page.coaches.title": "教练 | 青训球员追踪站",
+    "page.coaches.description": "查看职业梯队与足校青训教练、校园和民间青训教练、中国男足 U 系列教练组，以及五大联赛与亚洲一线队主教练样本。",
     "page.data-center.title": "数据质量与对比 | 青训球员追踪站",
     "page.data-center.description": "查看研究样本的数据完整度、来源等级、复核时效、国家青训对比、项目目录与教练目录。",
     "page.dossier-detail.title": "青训专题 | 青训球员追踪站",
@@ -105,8 +105,8 @@ const UI_COPY = {
     "page.dossier-player-detail.description": "查看专题人物的公开批次、代表经历、站内关联与来源边界。",
     "page.predictions.title": "亚洲世界杯长期预测 | 青训球员追踪站",
     "page.predictions.description": "结合成年实力、青年比赛、职业转化与质量留洋分钟，研究 2030 至 2042 年亚洲球队世界杯晋级前景。",
-    "page.coaches.title": "国内青训教练 | 青训球员追踪站",
-    "page.coaches.description": "整理中国校园、足校、职业梯队、独立基地、地区体校与民间项目的具名青训教练样本。",
+    "page.coaches.title": "教练 | 青训球员追踪站",
+    "page.coaches.description": "整理职业梯队与足校青训教练、校园和民间青训教练、中国男足 U 系列教练组，以及五大联赛与亚洲一线队主教练样本。",
     "page.stories.title": "足球故事 | 青训球员追踪站",
     "page.stories.description": "查看职业球员、青训教练和校园足球机构的可追溯故事。",
     "page.story-detail.title": "故事详情 | 青训球员追踪站",
@@ -120,7 +120,7 @@ const UI_COPY = {
     "nav.tournaments": "赛事",
     "nav.overseas": "留洋",
     "nav.pathways": "青训体系",
-    "nav.coaches": "青训教练",
+    "nav.coaches": "教练",
     "nav.stories": "故事",
     "home.quickLinks.storiesTitle": "足球故事",
     "home.quickLinks.storiesText": "阅读球员转型、校园传统和公开争议的来源化时间线。",
@@ -276,14 +276,17 @@ const UI_COPY = {
     "players.card.marketValuePeakOnly": "历史峰值 {peak}",
     "players.card.viewProfile": "查看球员档案",
     "players.card.details": "查看",
-    "coaches.hero.eyebrow": "Youth Coaches",
-    "coaches.hero.title": "青训教练",
-    "coaches.hero.text": "集中查看基层、校园、足校和民间青训教练，以及中国男足 U 系列教练组。每条记录保留职责边界和原始来源。",
+    "coaches.hero.eyebrow": "Coaches",
+    "coaches.hero.title": "教练",
+    "coaches.hero.text": "同一页同时展示职业梯队与足校青训教练、校园和民间青训教练、中国男足 U 系列教练组，以及五大联赛与亚洲一线队主教练样本。每条记录保留职责边界和原始来源。",
     "coaches.coverage.eyebrow": "Coverage",
-    "coaches.coverage.value": "基层教练 {development} 人 · 国字号周期 {national} 条",
-    "coaches.coverage.checked": "基层样本核查至 {development} · 国字号核查至 {national}",
-    "coaches.development.eyebrow": "Grassroots & Academy",
-    "coaches.development.title": "基层与青训机构教练",
+    "coaches.coverage.value": "职业青训 {academy} 人 · 校园民间 {grassroots} 人 · 国字号 {national} 条 · 五大联赛 {bigFive} 人 · 亚洲一线队 {asian} 人",
+    "coaches.coverage.checked": "青训核查至 {development} · 国字号核查至 {national} · 一线队教练核查至 {firstTeam}",
+    "coaches.academy.eyebrow": "Professional Academies",
+    "coaches.academy.title": "职业梯队与足校教练",
+    "coaches.academy.note": "中青赛职业俱乐部/足校侧具名样本，如山东泰山、恒大足校。单届赛事带队只记快照，不外推其他年龄段。",
+    "coaches.development.eyebrow": "Grassroots & Independent",
+    "coaches.development.title": "校园、体校与民间青训教练",
     "coaches.development.note": "只收录能够确认具名机构和实际训练或技术职责的教练，不以行政头衔或球员经历代替执教事实。",
     "coaches.development.period": "任期：{value}",
     "coaches.development.sources": "来源 {count} 条",
@@ -299,6 +302,14 @@ const UI_COPY = {
     "coaches.national.matchPending": "未赛",
     "coaches.national.matchReported": "预报，未赛",
     "coaches.national.sources": "官方任命与集训来源",
+    "coaches.bigFive.eyebrow": "Big Five Leagues",
+    "coaches.bigFive.title": "五大联赛亚洲教练",
+    "coaches.bigFive.note": "与留洋页同一份主表：只统计五大联赛顶级联赛一线队主教练/临时主教练，战绩不含杯赛和欧战。",
+    "coaches.asian.eyebrow": "Asian First Teams",
+    "coaches.asian.title": "亚洲一线队主教练",
+    "coaches.asian.note": "五大联赛之外的 AFC 教练样本：欧洲非五大顶级联赛、亚洲俱乐部与国家队主教练任期。青年队国家队任期可以入库，俱乐部青年队主教练不进入此表。",
+    "coaches.asian.recordPending": "战绩待闭环",
+    "coaches.asian.stints": "{count} 段任期",
     "coaches.watchlist.eyebrow": "Research Queue",
     "coaches.watchlist.title": "待补教练与机构",
     "coaches.watchlist.need": "待核：{value}",
@@ -993,9 +1004,9 @@ const UI_COPY = {
     "overseas.coaches.sources": "来源",
     "overseas.coaches.scope.afc": "AFC 成员口径",
     "overseas.coaches.scope.broad": "广义亚洲边界项",
-    "coaches.hero.eyebrow": "China Youth Coaching",
-    "coaches.hero.title": "国内青训教练",
-    "coaches.hero.text": "从校园启蒙到职业梯队，按具名教练、实际岗位、年龄段和可复核来源整理。",
+    "coaches.hero.eyebrow": "China Coaching",
+    "coaches.hero.title": "教练",
+    "coaches.hero.text": "从校园启蒙到职业梯队，并同时展示五大联赛与亚洲一线队主教练样本。",
     "coaches.scope.eyebrow": "收录口径",
     "coaches.scope.text": "不与成年一线队或国字号主教练任期混算；单届赛事带队只记为赛季快照。",
     "coaches.scope.count": "{count} 位具名教练",
@@ -1041,8 +1052,8 @@ const UI_COPY = {
     "page.overseas.description": "Compare current overseas samples and historical records for China, Japan, and South Korea.",
     "page.pathways.title": "Youth Systems and Programmes | Youth Player Tracking Desk",
     "page.pathways.description": "Compare association governance, school football, club academies, talent identification and professional bridges across China, Japan, South Korea, Norway, Denmark and Sweden.",
-    "page.coaches.title": "Youth Coaches | Youth Player Tracking Desk",
-    "page.coaches.description": "Explore Chinese grassroots youth coaches and men's youth national-team staffs with organizations, age groups, and source links.",
+    "page.coaches.title": "Coaches | Youth Player Tracking Desk",
+    "page.coaches.description": "Professional academy youth coaches, school and independent youth coaches, China men's youth national-team staffs, plus big-five and other Asian first-team head-coach samples.",
     "page.data-center.title": "Data Quality and Comparison | Youth Player Tracking Desk",
     "page.data-center.description": "Review sample completeness, source tiers, freshness, country comparisons, programme directories and coach directories.",
     "page.dossier-detail.title": "Academy Dossier | Youth Player Tracking Desk",
@@ -1051,8 +1062,8 @@ const UI_COPY = {
     "page.dossier-player-detail.description": "Review a project player's public cohort, representative experience, site links and evidence boundary.",
     "page.predictions.title": "Long-range Asian World Cup Forecast | Youth Player Tracking Desk",
     "page.predictions.description": "A research forecast for Asian World Cup qualification from 2030 to 2042, combining senior strength, youth results, professional transition and quality-weighted overseas minutes.",
-    "page.coaches.title": "Youth Development Coaches in China | Youth Player Tracking Desk",
-    "page.coaches.description": "Named youth coaches working across schools, academies, professional youth teams, regional sports schools and independent projects in China.",
+    "page.coaches.title": "Coaches | Youth Player Tracking Desk",
+    "page.coaches.description": "Professional academy youth coaches, school and independent youth coaches, China men's youth national-team staffs, plus big-five and other Asian first-team head-coach samples.",
     "page.stories.title": "Football Stories | Youth Player Tracking Desk",
     "page.stories.description": "Traceable stories about professional players, youth coaches and school-football institutions.",
     "page.story-detail.title": "Story Detail | Youth Player Tracking Desk",
@@ -1221,14 +1232,17 @@ const UI_COPY = {
     "players.card.marketValueCurrentOnly": "Current {current}",
     "players.card.marketValuePeakOnly": "Peak {peak}",
     "players.card.viewProfile": "View player file",
-    "coaches.hero.eyebrow": "Youth Coaches",
-    "coaches.hero.title": "Youth coaches",
-    "coaches.hero.text": "Explore grassroots, school, academy, and independent youth coaches alongside China's men's youth national-team staffs. Every record retains its role boundary and original sources.",
+    "coaches.hero.eyebrow": "Coaches",
+    "coaches.hero.title": "Coaches",
+    "coaches.hero.text": "The same page now shows professional academy and football-school coaches, school and independent youth coaches, China men's youth national-team staffs, and Asian first-team head-coach samples. Every record retains its role boundary and original sources.",
     "coaches.coverage.eyebrow": "Coverage",
-    "coaches.coverage.value": "{development} development coaches · {national} national-team cycles",
-    "coaches.coverage.checked": "Development checked {development} · national teams checked {national}",
-    "coaches.development.eyebrow": "Grassroots & Academy",
-    "coaches.development.title": "Grassroots and academy coaches",
+    "coaches.coverage.value": "{academy} academy coaches · {grassroots} grassroots coaches · {national} national-team cycles · {bigFive} big-five coaches · {asian} Asian first-team coaches",
+    "coaches.coverage.checked": "Youth checked {development} · national teams checked {national} · first-team coaches checked {firstTeam}",
+    "coaches.academy.eyebrow": "Professional Academies",
+    "coaches.academy.title": "Professional academy and football-school coaches",
+    "coaches.academy.note": "Named coaches on professional-club or football-school sides of the China youth league, such as Shandong Taishan and Evergrande Football School. A single-tournament assignment is stored as a snapshot only.",
+    "coaches.development.eyebrow": "Grassroots & Independent",
+    "coaches.development.title": "School, sports-school and independent youth coaches",
     "coaches.development.note": "Only named coaches with a verified organization and an actual training or technical role are included; administrative titles and playing careers are not treated as coaching evidence.",
     "coaches.development.period": "Period: {value}",
     "coaches.development.sources": "{count} sources",
@@ -1244,6 +1258,14 @@ const UI_COPY = {
     "coaches.national.matchPending": "not played",
     "coaches.national.matchReported": "reported, not played",
     "coaches.national.sources": "Official appointment and camp sources",
+    "coaches.bigFive.eyebrow": "Big Five Leagues",
+    "coaches.bigFive.title": "Asian coaches in the big five leagues",
+    "coaches.bigFive.note": "The same table as the overseas page: first-team head coaches or interims in the big-five top divisions, league matches only.",
+    "coaches.asian.eyebrow": "Asian First Teams",
+    "coaches.asian.title": "Asian first-team head coaches",
+    "coaches.asian.note": "AFC-association head coaches outside the big five: non-big-five European top flights, Asian clubs and national teams. Youth national-team spells can enter; club youth-team head coaches do not.",
+    "coaches.asian.recordPending": "Record pending",
+    "coaches.asian.stints": "{count} stints",
     "coaches.watchlist.eyebrow": "Research Queue",
     "coaches.watchlist.title": "Coaches and organizations to verify",
     "coaches.watchlist.need": "Research need: {value}",
@@ -1939,9 +1961,9 @@ const UI_COPY = {
     "overseas.coaches.sources": "Sources",
     "overseas.coaches.scope.afc": "AFC member scope",
     "overseas.coaches.scope.broad": "Broad Asian boundary",
-    "coaches.hero.eyebrow": "China Youth Coaching",
-    "coaches.hero.title": "Youth development coaches in China",
-    "coaches.hero.text": "Named coaches, actual roles, age bands and traceable sources—from school football to professional academies.",
+    "coaches.hero.eyebrow": "China Coaching",
+    "coaches.hero.title": "Coaches",
+    "coaches.hero.text": "Named youth coaches from school football to professional academies, plus big-five and other Asian first-team head-coach samples.",
     "coaches.scope.eyebrow": "Scope",
     "coaches.scope.text": "Senior first-team and national youth-team appointments are tracked separately; one-off tournament roles remain dated snapshots.",
     "coaches.scope.count": "{count} named coaches",
@@ -7585,30 +7607,93 @@ function renderNationalYouthCoachCycle(cycle) {
   `;
 }
 
+function isAcademyYouthCoach(coach) {
+  return ["professional-academy", "football-school"].includes(coach.organization?.type);
+}
+
+function formatAsianCoachPeriod(period) {
+  if (!period?.start) {
+    return t("common.pending");
+  }
+  const end = period.end ?? (state.language === "en" ? "present" : "至今");
+  return `${period.start}–${end}`;
+}
+
+function renderAsianExpandedCoachCard(coach) {
+  const displayName =
+    coach.local_name && coach.local_name !== coach.name
+      ? `${coach.local_name} / ${coach.name}`
+      : coach.local_name || coach.name;
+  const stints = coach.stints ?? [];
+  const sources = [
+    ...(coach.source_links ?? []),
+    ...stints.flatMap((stint) => stint.source_links ?? [])
+  ];
+  const uniqueSources = [];
+  const seen = new Set();
+  for (const source of sources) {
+    if (!source?.url || seen.has(source.url)) continue;
+    seen.add(source.url);
+    uniqueSources.push(source);
+  }
+  return `
+    <article class="story-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(formatCountryName(coach.nationality))}</span>
+        <span class="chip">${escapeHtml(t("coaches.asian.stints", { count: stints.length }))}</span>
+      </div>
+      <h3>${escapeHtml(displayName)}</h3>
+      <ul class="mini-bullet-list">
+        ${stints.map((stint) => {
+          const record = stint.record ? formatCoachRecord(stint.record) : t("coaches.asian.recordPending");
+          return `<li><strong>${escapeHtml(stint.team)}</strong> · ${escapeHtml(stint.competition ?? stint.role_scope ?? "")}<br><span class="small-note">${escapeHtml(formatAsianCoachPeriod(stint.period))} · ${escapeHtml(record)}</span></li>`;
+        }).join("")}
+      </ul>
+      ${uniqueSources.length ? `<p class="timeline-label">${escapeHtml(t("coaches.national.sources"))}</p><div class="source-link-grid">${uniqueSources.slice(0, 4).map((source) => `<a href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer"><span>${escapeHtml(source.label)}</span><strong>↗</strong></a>`).join("")}</div>` : ""}
+    </article>
+  `;
+}
+
 function renderCoachesPage() {
   const development = state.overview?.china_youth_development_coaches;
   const national = state.overview?.china_men_youth_coaches;
+  const bigFive = state.overview?.big_five_asian_coaches;
+  const asian = state.overview?.asian_coaches;
   const developmentCoaches = development?.coaches ?? [];
+  const academyCoaches = developmentCoaches.filter(isAcademyYouthCoach);
+  const grassrootsCoaches = developmentCoaches.filter((coach) => !isAcademyYouthCoach(coach));
   const nationalCycles = national?.team_cycles ?? [];
+  const bigFiveCoaches = bigFive?.coaches ?? [];
+  const asianCoaches = asian?.coaches ?? [];
   const coverage = document.querySelector("#coachesCoverage");
   const checkedAt = document.querySelector("#coachesCheckedAt");
+  const academyGrid = document.querySelector("#academyCoachGrid");
   const developmentGrid = document.querySelector("#developmentCoachGrid");
   const nationalGrid = document.querySelector("#nationalCoachGrid");
   const nationalNote = document.querySelector("#nationalCoachNote");
+  const bigFiveGrid = document.querySelector("#coachesBigFiveGrid");
+  const asianGrid = document.querySelector("#coachesAsianGrid");
   const watchlist = document.querySelector("#coachWatchlist");
 
   coverage.textContent = t("coaches.coverage.value", {
-    development: developmentCoaches.length,
-    national: nationalCycles.length
+    academy: academyCoaches.length,
+    grassroots: grassrootsCoaches.length,
+    national: nationalCycles.length,
+    bigFive: bigFiveCoaches.length,
+    asian: asianCoaches.length
   });
   checkedAt.textContent = t("coaches.coverage.checked", {
     development: formatDate(development?.last_checked),
-    national: formatDate(national?.last_checked)
+    national: formatDate(national?.last_checked),
+    firstTeam: formatDate(asian?.last_checked || bigFive?.last_checked)
   });
-  developmentGrid.innerHTML = developmentCoaches.map(renderDevelopmentCoachCard).join("");
+  if (academyGrid) academyGrid.innerHTML = academyCoaches.map(renderDevelopmentCoachCard).join("");
+  developmentGrid.innerHTML = grassrootsCoaches.map(renderDevelopmentCoachCard).join("");
   nationalNote.textContent = national?.scope_note ?? "";
   const seniorWindow = national?.senior_men_window ? [national.senior_men_window] : [];
   nationalGrid.innerHTML = [...seniorWindow, ...nationalCycles].map(renderNationalYouthCoachCycle).join("");
+  if (bigFiveGrid) bigFiveGrid.innerHTML = bigFiveCoaches.map(renderBigFiveAsianCoachCard).join("");
+  if (asianGrid) asianGrid.innerHTML = asianCoaches.map(renderAsianExpandedCoachCard).join("");
   watchlist.innerHTML = (development?.watchlist ?? []).map((item) => `
     <article class="stack-card">
       <h3>${escapeHtml(item.organization)}</h3>

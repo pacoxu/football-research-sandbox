@@ -17,6 +17,7 @@ This project tracks research data, so changelog entries should separate code cha
 
 - Refreshed the CSL 2026 monthly youth-stats check through the Asian Games league pause. Liu Chengyu's first-team Super League line is extended to 12 appearances and 414 minutes as of 6 September; other tracked U21/U23 samples keep null totals where aggregators disagree.
 - Moved Lin Zihao's current registration from FK Vozdovac U19 to the FK Vozdovac first team after the club announcement, and rechecked Zhang Jiaming, Li Dongchen and Liu Shaoziyang without inventing minutes.
+- Expanded the coaches page into five directories: professional academy / football-school youth coaches, school and independent youth coaches, China men's U-series staffs, big-five Asian head coaches, and the wider Asian first-team head-coach sample.
 
 ### Data Scope Notes
 
