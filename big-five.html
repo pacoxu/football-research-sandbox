@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>五大联赛中日韩一线队 | 青训球员追踪站</title>
+    <meta name="description" content="按英超、西甲、意甲、德甲、法甲切换，对照中日韩一线队球员的核心、主力、轮换、替补和边缘。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20261014-big-five" />
+  </head>
+  <body data-page="big-five">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a class="nav-featured" data-i18n="nav.xiaojiang" href="https://xiaojiangfc.com/" target="_blank" rel="noreferrer">小将FC</a>
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="milestones" data-i18n="nav.milestones" href="./milestones.html">2026里程碑</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a href="./lineup.html">排阵容</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">青训体系</a>
+            <a data-nav="coaches" data-i18n="nav.coaches" href="./coaches.html">青训教练</a>
+            <a data-nav="stories" data-i18n="nav.stories" href="./stories.html">故事</a>
+            <a data-nav="youth-disputes" data-i18n="nav.disputes" href="./youth-disputes.html">青训纠纷</a>
+            <a data-nav="data-center" data-i18n="nav.dataCenter" href="./data.html">数据中心</a>
+            <a data-nav="predictions" data-i18n="nav.predictions" href="./predictions.html">世界杯预测</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero hero-tight">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="bigFive.hero.eyebrow">Big Five</p>
+            <h1 data-i18n="bigFive.hero.title">五大联赛中日韩一线队</h1>
+            <p class="hero-text" data-i18n="bigFive.hero.text">切换英超、西甲、意甲、德甲和法甲，对照中国、日本、韩国一线队球员处在核心、主力、轮换、替补还是边缘。</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#bigFiveBoard" data-i18n="bigFive.hero.board">查看角色对照</a>
+              <a class="secondary-link" href="./overseas.html" data-i18n="bigFive.hero.back">返回留洋</a>
+            </div>
+          </div>
+          <aside id="bigFiveHeroStats" class="hero-spotlight">
+            <p class="eyebrow" data-i18n="bigFive.meta.eyebrow">2026/27</p>
+            <div class="empty-inline" data-i18n="common.loading">加载中</div>
+          </aside>
+        </section>
+
+        <section id="bigFiveBoard" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="bigFive.board.eyebrow">Roles</p>
+              <h2 data-i18n="bigFive.board.title">按联赛看三人组</h2>
+            </div>
+            <p id="bigFiveBoardMeta" class="section-note"></p>
+          </div>
+          <div id="bigFiveLeagueSwitch" class="country-tabs big-five-switch" role="tablist" aria-label="五大联赛"></div>
+          <p id="bigFiveScope" class="section-notice"></p>
+          <div id="bigFiveSummary" class="stats-row compact-stats-row"></div>
+          <div id="bigFiveMatrix" class="table-shell"></div>
+          <div id="bigFiveColumns" class="big-five-country-grid"></div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="bigFive.method.eyebrow">Method</p>
+              <h2 data-i18n="bigFive.method.title">角色怎么划</h2>
+            </div>
+          </div>
+          <div id="bigFiveMethod" class="stack-list"></div>
+          <div id="bigFiveSources" class="pill-row europe-top-sources"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+        <nav class="friend-links" aria-label="友情链接">
+          <strong data-i18n="common.friendlyLinks">友情链接</strong>
+          <a href="https://xiaojiangfc.com/" target="_blank" rel="noreferrer">小将FC</a>
+          <a href="https://www.thecfa.cn/" target="_blank" rel="noreferrer">中国足协</a>
+          <a href="https://www.cfl-china.cn/" target="_blank" rel="noreferrer">中足联</a>
+          <a href="https://www.the-afc.com/" target="_blank" rel="noreferrer">亚足联</a>
+          <a href="https://www.transfermarkt.com/" target="_blank" rel="noreferrer">Transfermarkt</a>
+        </nav>
+      </footer>
+    </div>
+    <script type="module" src="./assets/app.js?v=20261014-big-five"></script>
+  </body>
+</html>

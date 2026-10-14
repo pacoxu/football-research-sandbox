@@ -10379,6 +10379,644 @@
       }
     ]
   },
+  "big_five_cjk_squad_roles": {
+    "schema_version": 1,
+    "checked_at": "2026-10-14",
+    "season": "2026-2027",
+    "roster_snapshot": "europe-top-leagues-japan-korea",
+    "scope_note": {
+      "zh": "只看 2026/27 欧洲五大联赛男子一线队里的中国、日本、韩国球员。名册沿用 2026-09-08 的日韩一线队注册快照，另补入已出现在法甲与欧塞尔一线队名单中的魏祥鑫。杯赛、欧战、国家队和青训/梯队不计入角色。",
+      "en": "Men's first-team players from China, Japan and Korea in the 2026/27 Big Five. Japan and Korea follow the 8 September 2026 registration snapshot; Wei Xiangxin is added from the Ligue 1 and Auxerre first-team lists. Cups, Europe, national teams and youth or reserve sides are excluded from the role grade."
+    },
+    "methodology": {
+      "zh": "占比 = 国内联赛分钟 /（统计窗口内俱乐部已赛场次 × 90）。核心 ≥75%，主力 ≥50% 且低于 75%，轮换 ≥25% 且低于 50%，替补为已经出场但低于 25%，边缘为联赛 0 分钟。没有核到联赛分钟的记为待核，不按身价、国家队地位或媒体评价补档。各人截止日期不同，因为来源更新日不同。",
+      "en": "Share = domestic-league minutes / (club matches played inside the source window × 90). Core is at least 75%, starter at least 50% and below 75%, rotation at least 25% and below 50%, substitute is any appearance below 25%, and fringe is zero league minutes. Missing league minutes stay unrated; market value, national-team status and press labels are not used as substitutes. Each player keeps the date of the source window."
+    },
+    "role_scale": [
+      {
+        "id": "core",
+        "min_share": 0.75,
+        "label": {
+          "zh": "核心",
+          "en": "Core"
+        }
+      },
+      {
+        "id": "starter",
+        "min_share": 0.5,
+        "label": {
+          "zh": "主力",
+          "en": "Starter"
+        }
+      },
+      {
+        "id": "rotation",
+        "min_share": 0.25,
+        "label": {
+          "zh": "轮换",
+          "en": "Rotation"
+        }
+      },
+      {
+        "id": "substitute",
+        "min_share": 0,
+        "label": {
+          "zh": "替补",
+          "en": "Substitute"
+        }
+      },
+      {
+        "id": "fringe",
+        "label": {
+          "zh": "边缘",
+          "en": "Fringe"
+        }
+      }
+    ],
+    "leagues": [
+      {
+        "id": "premier-league",
+        "league": "Premier League",
+        "label": {
+          "zh": "英超",
+          "en": "Premier League"
+        }
+      },
+      {
+        "id": "laliga",
+        "league": "LaLiga",
+        "label": {
+          "zh": "西甲",
+          "en": "La Liga"
+        }
+      },
+      {
+        "id": "serie-a",
+        "league": "Serie A",
+        "label": {
+          "zh": "意甲",
+          "en": "Serie A"
+        }
+      },
+      {
+        "id": "bundesliga",
+        "league": "Bundesliga",
+        "label": {
+          "zh": "德甲",
+          "en": "Bundesliga"
+        }
+      },
+      {
+        "id": "ligue-1",
+        "league": "Ligue 1",
+        "label": {
+          "zh": "法甲",
+          "en": "Ligue 1"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "id": "twenty-clubs-japan",
+        "label": {
+          "zh": "Twenty Clubs · 英超日本球员分钟",
+          "en": "Twenty Clubs · Premier League Japanese minutes"
+        },
+        "url": "https://twentyclubs.com/premier-league-players/japan"
+      },
+      {
+        "id": "twenty-clubs-kim",
+        "label": {
+          "zh": "Twenty Clubs · 金志洙",
+          "en": "Twenty Clubs · Kim Ji-soo"
+        },
+        "url": "https://twentyclubs.com/players/kim-ji-soo"
+      },
+      {
+        "id": "japan-football-data",
+        "label": {
+          "zh": "Japan Football Data · 2026/27 个人赛季日志",
+          "en": "Japan Football Data · 2026/27 player logs"
+        },
+        "url": "https://japan-football-data.com/en/leagues/"
+      },
+      {
+        "id": "tactix-lee",
+        "label": {
+          "zh": "TACTIX · 李刚仁西甲分钟",
+          "en": "TACTIX · Lee Kang-in La Liga minutes"
+        },
+        "url": "https://tactix.football/player/lee-kang-in"
+      },
+      {
+        "id": "tribuna-kim",
+        "label": {
+          "zh": "Tribuna · 金玟哉德甲",
+          "en": "Tribuna · Kim Min-jae Bundesliga"
+        },
+        "url": "https://tribuna.com/en/persons/kim-min-jae/stat/2026-2027/bundesliga/"
+      },
+      {
+        "id": "fbref-seol",
+        "label": {
+          "zh": "FBref · 薛英佑 2026/27 日志",
+          "en": "FBref · Seol Young-woo 2026/27 logs"
+        },
+        "url": "https://fbref.com/en/players/8e577e1d/matchlogs/2026-2027/summary/Seol-Young-woo-Match-Logs"
+      },
+      {
+        "id": "fbref-hwang",
+        "label": {
+          "zh": "FBref · 黄喜灿 2026/27 日志",
+          "en": "FBref · Hwang Hee-chan 2026/27 logs"
+        },
+        "url": "https://fbref.com/en/players/169fd162/matchlogs/2026-2027/Hwang-Hee-chan-Match-Logs"
+      },
+      {
+        "id": "statsnext-jeong",
+        "label": {
+          "zh": "StatsNext · 郑优营德甲",
+          "en": "StatsNext · Jeong Woo-yeong Bundesliga"
+        },
+        "url": "https://statsnext.com/bundesliga/players/jeong-woo-yeong-5d417066"
+      },
+      {
+        "id": "xinhua-wei",
+        "label": {
+          "zh": "新华社 / 澎湃 · 魏祥鑫入选欧塞尔一线队",
+          "en": "Xinhua via The Paper · Wei Xiangxin on Auxerre's first-team list"
+        },
+        "url": "https://www.thepaper.cn/newsDetail_forward_33778061"
+      },
+      {
+        "id": "fotmob-auxerre",
+        "label": {
+          "zh": "FotMob · 欧塞尔法甲出场分钟",
+          "en": "FotMob · Auxerre Ligue 1 minutes"
+        },
+        "url": "https://www.fotmob.com/leagues/53/stats/season/37298/players/mins_played/team/8583/players"
+      }
+    ],
+    "players": [
+      {
+        "id": "jp-wataru-endo-liverpool-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "利物浦第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Liverpool's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-kaoru-mitoma-brighton-2026",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "联赛 0 分钟。本页没有核到对应的伤停公告。",
+          "en": "Zero league minutes. No injury bulletin was verified for this page."
+        }
+      },
+      {
+        "id": "jp-zion-suzuki-aston-villa-2026",
+        "league_minutes": 450,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan"
+      },
+      {
+        "id": "jp-daichi-kamada-crystal-palace-2026",
+        "league_minutes": 441,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "水晶宫第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Crystal Palace's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-takehiro-tomiyasu-crystal-palace-2026",
+        "league_minutes": 189,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "水晶宫第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Crystal Palace's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-daizen-maeda-ipswich-2026",
+        "league_minutes": 339,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan"
+      },
+      {
+        "id": "jp-hidemasa-morita-hull-2026",
+        "league_minutes": 45,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "赫尔城第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Hull City's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-ao-tanaka-leeds-2026",
+        "league_minutes": 325,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan"
+      },
+      {
+        "id": "jp-tatsuhiro-sakamoto-coventry-2026",
+        "league_minutes": 31,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "考文垂第 6 轮在 10 月 19 日。",
+          "en": "Coventry's matchweek 6 is on 19 October."
+        }
+      },
+      {
+        "id": "kr-kim-ji-soo-brentford-2026",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-kim"
+      },
+      {
+        "id": "jp-yukinari-sugawara-cagliari-2026",
+        "league_minutes": 53,
+        "matches_available": 6,
+        "as_of": "2026-09-19",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "日志只看到 9 月 12 日、9 月 19 日两次替补，共 53 分钟。10 月轮次不在这份日志里。",
+          "en": "The log shows two substitute appearances, on 12 and 19 September, totalling 53 minutes. October rounds are not in that log."
+        }
+      },
+      {
+        "id": "jp-takefusa-kubo-real-sociedad-2026",
+        "league_minutes": 223,
+        "matches_available": 8,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除 9 月 17 日对伯恩茅斯的欧战 7 分钟。",
+          "en": "Excludes 7 European minutes against Bournemouth on 17 September."
+        }
+      },
+      {
+        "id": "jp-ryunosuke-sato-valencia-2026",
+        "league_minutes": 297,
+        "matches_available": 8,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "kr-lee-kang-in-atletico-2026",
+        "league_minutes": 502,
+        "matches_available": 8,
+        "as_of": "2026-10-13",
+        "minutes_basis": "league-table",
+        "source_id": "tactix-lee",
+        "note": {
+          "zh": "另一来源记 469 分钟。两数都落在主力档。",
+          "en": "Another source lists 469 minutes. Both figures land in the starter band."
+        }
+      },
+      {
+        "id": "jp-hiroki-ito-bayern-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "德甲日志里的出场分钟是 0。对维京、博德/格利姆特的欧战短时间出场不计入。",
+          "en": "Bundesliga logs show zero minutes. Short European appearances against Viking and Bodo/Glimt are excluded."
+        }
+      },
+      {
+        "id": "jp-keisuke-goto-freiburg-2026",
+        "league_minutes": 60,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "五场都是替补。已扣除对马瑟韦尔和杜塞尔多夫的非联赛分钟。",
+          "en": "Five league appearances, all from the bench. Minutes against Motherwell and Fortuna Düsseldorf are excluded."
+        }
+      },
+      {
+        "id": "jp-rihito-yamamoto-freiburg-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-14",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-yuito-suzuki-freiburg-2026",
+        "league_minutes": 387,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "五场联赛全部首发。已扣除对马瑟韦尔和杜塞尔多夫的非联赛分钟。",
+          "en": "Started all five league matches. Minutes against Motherwell and Fortuna Düsseldorf are excluded."
+        }
+      },
+      {
+        "id": "jp-keita-kosugi-frankfurt-2026",
+        "league_minutes": 405,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-ritsu-doan-frankfurt-2026",
+        "league_minutes": 311,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-kaishu-sano-mainz-2026",
+        "league_minutes": 439,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除对克里肖夫的杯赛 90 分钟。",
+          "en": "Excludes 90 cup minutes against Krieschow."
+        }
+      },
+      {
+        "id": "jp-sota-kawasaki-mainz-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "多次出现在替补名单，联赛登场分钟为 0。",
+          "en": "Named among the substitutes more than once, with zero league minutes played."
+        }
+      },
+      {
+        "id": "jp-koki-machida-hoffenheim-2026",
+        "league_minutes": 185,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除对 OFI 的欧战 45 分钟。",
+          "en": "Excludes 45 European minutes against OFI."
+        }
+      },
+      {
+        "id": "jp-daiki-hashioka-gladbach-2026",
+        "league_minutes": 170,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除对肖特美因茨的杯赛 90 分钟。",
+          "en": "Excludes 90 cup minutes against Schott Mainz."
+        }
+      },
+      {
+        "id": "jp-ko-itakura-gladbach-2026",
+        "league_minutes": 354,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "前四轮联赛首发，10 月 11 日莱茵德比缺席。已扣除杯赛分钟。",
+          "en": "Started the first four league matches and missed the Rhine derby on 11 October. Cup minutes are excluded."
+        }
+      },
+      {
+        "id": "jp-shuto-machino-gladbach-2026",
+        "league_minutes": 86,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "联赛全部替补登场。已扣除杯赛 20 分钟。",
+          "en": "All league appearances came from the bench. Excludes 20 cup minutes."
+        }
+      },
+      {
+        "id": "jp-zento-uno-gladbach-2026",
+        "league_minutes": 22,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-mio-backhaus-freiburg-2026",
+        "league_minutes": null,
+        "matches_available": null,
+        "as_of": "2026-10-14",
+        "minutes_basis": "missing",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "公开个人日志没有这名门将的 2026/27 联赛分钟，角色待核。",
+          "en": "No 2026/27 league minutes were found on a public player log for this goalkeeper, so the role stays unrated."
+        }
+      },
+      {
+        "id": "jp-satoshi-tanaka-schalke-2026",
+        "league_minutes": 327,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "kr-kim-min-jae-bayern-2026",
+        "league_minutes": 219,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "tribuna-kim",
+        "note": {
+          "zh": "来源合计 219 分钟、3 次出场，窗口可能未含 10 月 10 日对奥格斯堡。",
+          "en": "The source totals 219 minutes across 3 appearances and may omit the 10 October game at Augsburg."
+        }
+      },
+      {
+        "id": "kr-hwang-hee-chan-schalke-2026",
+        "league_minutes": 44,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "fbref-hwang",
+        "note": {
+          "zh": "三场都是替补：11、21、12 分钟。",
+          "en": "Three substitute appearances: 11, 21 and 12 minutes."
+        }
+      },
+      {
+        "id": "kr-seol-young-woo-augsburg-2026",
+        "league_minutes": 112,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "fbref-seol"
+      },
+      {
+        "id": "kr-lee-jae-sung-mainz-2026",
+        "league_minutes": null,
+        "matches_available": null,
+        "as_of": "2026-10-14",
+        "minutes_basis": "missing",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "未核到 2026/27 德甲分钟，角色待核。",
+          "en": "2026/27 Bundesliga minutes were not verified, so the role stays unrated."
+        }
+      },
+      {
+        "id": "kr-jeong-woo-yeong-union-berlin-2026",
+        "league_minutes": 281,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "statsnext-jeong",
+        "note": {
+          "zh": "5 次出场、3 次首发。",
+          "en": "Five appearances, three starts."
+        }
+      },
+      {
+        "id": "kr-jens-castrop-gladbach-2026",
+        "league_minutes": null,
+        "matches_available": null,
+        "as_of": "2026-10-14",
+        "minutes_basis": "missing",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "未核到 2026/27 德甲分钟，角色待核。",
+          "en": "2026/27 Bundesliga minutes were not verified, so the role stays unrated."
+        }
+      },
+      {
+        "id": "jp-ayase-ueda-lille-2026",
+        "league_minutes": 227,
+        "matches_available": 6,
+        "as_of": "2026-10-13",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "只计法甲四场共 227 分钟。对阿森纳、贝蒂斯、费耶诺德、坎布尔和斯巴达的进球不计入联赛角色。",
+          "en": "Only four Ligue 1 matches, 227 minutes. Goals against Arsenal, Real Betis, Feyenoord, Cambuur and Sparta are outside the league grade."
+        }
+      },
+      {
+        "id": "jp-takumi-minamino-monaco-2026",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-14",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "个人页本季只列出 9 月 18 日对朗斯的替补，分钟为 0。",
+          "en": "The player log lists only a 18 September substitute appearance against Lens, with zero minutes."
+        }
+      },
+      {
+        "id": "jp-keito-nakamura-lyon-2026",
+        "league_minutes": 56,
+        "matches_available": 6,
+        "as_of": "2026-10-09",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "法甲三场替补共 56 分钟。已扣除对安德莱赫特的 90 分钟。",
+          "en": "Three Ligue 1 substitute appearances, 56 minutes. Excludes 90 minutes against Anderlecht."
+        }
+      },
+      {
+        "id": "jp-ayumu-seko-le-havre-2026",
+        "league_minutes": 511,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-sota-nakamura-le-havre-2026",
+        "league_minutes": 232,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-kaito-mizuta-le-havre-2026",
+        "league_minutes": 160,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "cn-wei-xiangxin-auxerre-2026",
+        "player_id": "cn-wei-xiangxin-2008",
+        "country": "China PR",
+        "name": {
+          "zh": "魏祥鑫",
+          "en": "Wei Xiangxin"
+        },
+        "position": "FWD",
+        "club": "AJ Auxerre",
+        "league": "Ligue 1",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-11",
+        "minutes_basis": "inferred-zero",
+        "source_id": "xinhua-wei",
+        "note": {
+          "zh": "8 月 13 日法甲与欧塞尔一线队名单已有他的名字。公开出场分钟表没有列出他，因此按 0 分钟记为边缘；这不是官方技术统计里的确认数字。",
+          "en": "Ligue 1 and Auxerre listed him in the first-team squad on 13 August. He does not appear in the published minutes table, so this page treats him as zero minutes and fringe. That zero is inferred, not an official statistical line."
+        }
+      }
+    ]
+  },
   "dossiers": [
     {
       "id": "donglu-football-boys",
