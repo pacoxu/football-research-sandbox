@@ -541,6 +541,15 @@ function validateYouthProjectDossier(dossier, playerIds) {
         `Invalid dossier person status: ${label}`
       );
       assert(Array.isArray(profile.conflicts), `Invalid external profile conflicts: ${label}`);
+      if (profile.milestone !== undefined) {
+        assert(
+          typeof profile.milestone?.zh === "string" &&
+            profile.milestone.zh.length > 0 &&
+            typeof profile.milestone?.en === "string" &&
+            profile.milestone.en.length > 0,
+          `Invalid external profile milestone: ${label}`
+        );
+      }
       if (profile.player_id !== undefined) {
         assert(playerIds.has(profile.player_id), `Unknown external profile player: ${label}`);
         assert(
@@ -3463,6 +3472,15 @@ export async function validateData(referenceDate = new Date().toISOString().slic
         assert(
           allowedPlayerRosterStatuses.has(entry.roster_status),
           `Invalid roster_status "${entry.roster_status}" on player ${player.id}`
+        );
+      }
+      if (entry.headline !== undefined) {
+        assert(
+          typeof entry.headline?.zh === "string" &&
+            entry.headline.zh.length > 0 &&
+            typeof entry.headline?.en === "string" &&
+            entry.headline.en.length > 0,
+          `Invalid participation headline on ${player.id}`
         );
       }
       if (chinaDomestic2026CompetitionIds.has(entry.competition_id)) {

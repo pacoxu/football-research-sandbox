@@ -1885,7 +1885,7 @@
         "当前批次以仍在海外俱乐部注册、比赛或培养体系内的中国男足球员为主，暂不覆盖已回流中超或中甲的历史留洋球员。",
         "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
         "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。",
-        "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。",
+        "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本。2026-09-19 预备队在 National 2 主场 2-1 沙托鲁 B 队，他打入个人正式比赛首球；这不是法甲出场，也不是俱乐部的中国球员首球。一线队正式出场仍待确认。",
         "吕孟洋 2026-09-15 由俱乐部官网确认从欧罗巴转入 RCD Espanyol Juvenil B。2025/26 欧罗巴出场数保留为历史赛季，不再当作当前注册。",
         "林子皓 2026-07-31 由沃日多瓦茨官方宣布从湖北青年星租借升入一线队；U19 阶段保留为历史路径。张家鸣、李东宸本轮只复核注册，不把非官方出场分钟写入 raw。"
       ],
@@ -11981,11 +11981,11 @@
             "category": "youth-development",
             "organization": "RCD Espanyol Juvenil B",
             "role": "player",
-            "as_of": "2026-09-26",
+            "as_of": "2026-10-14",
             "confidence": "high",
             "source_label": "西班牙人俱乐部官宣：吕孟洋，鹦鹉军团！",
             "source_url": "https://www.rcdespanyol.com/cn/new-cn/%E5%90%95%E5%AD%9F%E6%B4%8B%EF%BC%8C%E9%B9%A6%E9%B9%89%E5%86%9B%E5%9B%A2%EF%BC%81/20759",
-            "notes": "俱乐部官网确认其加入青年B队。2026-09-20 联赛首秀进球见球员档案，不在这条现状字段里重复记分钟。"
+            "notes": "俱乐部官网确认其加入青年B队。2026-09-20 客场 3-1 圣库加特 U19A，下半场替补打入青年B队正式比赛首球。层级是 Lliga Nacional Juvenil，不是一线队，也不是成年 B 队。替补分钟有 57 与 58 两种写法，进球分钟公开口径为 83，尚未核到单场技术表，因此重点句不写死分钟。"
           }
         },
         {
@@ -12149,17 +12149,17 @@
           "id": "donglu-football-boys-李昊炎",
           "name": "Li Haoyan",
           "local_name": "李昊炎",
-          "role": "未指明",
-          "note": "",
+          "role": "前锋",
+          "note": "2026-10-10 巴萨 Sub-15 正式比赛首球。",
           "current_status": {
-            "category": "needs-review",
-            "organization": "待核实",
+            "category": "youth-development",
+            "organization": "FC Barcelona Sub-15",
             "role": "player",
-            "as_of": "2026-07-20",
-            "confidence": "low",
-            "source_label": "现状复核入口：Bilibili space: 中国足球小将",
-            "source_url": "https://space.bilibili.com/346344723",
-            "notes": "该来源可支撑项目或历史身份，但未提供截至核查日的直接当前注册去向；因此不沿用历史俱乐部作当前事实。"
+            "as_of": "2026-10-14",
+            "confidence": "medium",
+            "source_label": "Sport: Estreno goleador de Haoyan Li",
+            "source_url": "https://www.sport.es/es/noticias/barca/futbol-base/estreno-goleador-haoyan-li-primer-135252275",
+            "notes": "Sport 2026-10-12 与京报体育 2026-10-10 同指 2026-10-10 巴萨 Sub-15（Cadete B）主场 3-0 科尔内利亚：李昊炎下半场替补，打入 2-0，是其正式比赛首秀和首球，也是中国球员在巴萨的正式比赛首球。季前热身赛进球另计。同一天巴萨 Infantil S14 5-0 科尔内利亚是另一场。射门方式未锁死：Sport 写终场前约两分钟左脚凌空，京报写第 81 分钟左脚低射。尚未核到加泰足协技术报告，因此不写入分钟和完整出生日期。通卡拉复出属于巴萨竞技的埃布里马·通卡拉，不是这条记录。"
           }
         },
         {
@@ -15004,7 +15004,7 @@
         "tracked_generations": 6,
         "tracked_players": 125,
         "verified_core_people": 50,
-        "needs_review_people": 125
+        "needs_review_people": 124
       },
       "external_player_profiles": [
         {
@@ -15020,13 +15020,20 @@
           "listed_team": "U17 国少核心",
           "birth_year": "2009",
           "position": "前锋 / 边锋",
-          "summary": "首位正式签约拉玛西亚的中国球员",
+          "summary": null,
           "representative_experience": "曾留洋达姆、莱里达竞技",
           "source_url": "https://www.xiaojiangfc.com/players/kuang-zhaolei/",
-          "checked_at": "2026-07-25",
+          "checked_at": "2026-10-14",
           "verification_status": "needs-review",
           "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
-          "conflicts": []
+          "conflicts": [
+            {
+              "field": "summary",
+              "external_value": "首位正式签约拉玛西亚的中国球员",
+              "site_value": "达姆、莱里达竞技；未进入巴萨青训",
+              "note": "资料站摘要把拉玛西亚首签写在邝兆镭名下。主库路径是达姆、奥斯皮塔莱特、莱里达竞技和青岛海牛。巴萨青训首名中国球员与 2026-10-10 正式比赛首球属于李昊炎。"
+            }
+          ]
         },
         {
           "id": "liu-kaiyuan",
@@ -15083,11 +15090,15 @@
           "birth_year": "2012",
           "position": "左边锋 / 前锋",
           "summary": null,
-          "representative_experience": "首位正式签约拉玛西亚的中国球员",
+          "milestone": {
+            "zh": "2026-10-10 巴萨 Sub-15 主场 3-0 科尔内利亚，替补打入 2-0。这是中国球员在巴萨的正式比赛首球。层级是加泰 U15 青年联赛，不是西甲。季前热身赛进球另计。同一天 Infantil S14 的 5-0 不是这场。",
+            "en": "On 10 October 2026, Barcelona Sub-15 beat Cornellà 3-0 at home. He came off the bench and scored the 2-0. It is the first official-match goal by a Chinese player for FC Barcelona, in a Catalan U15 youth league, not LaLiga. Pre-season goals are separate. The Infantil S14 5-0 the same day was a different team."
+          },
+          "representative_experience": "首位正式签约拉玛西亚的中国球员；2026-10-10 巴萨 U15 正式比赛首球",
           "source_url": "https://www.xiaojiangfc.com/players/li-haoyan/",
-          "checked_at": "2026-07-25",
+          "checked_at": "2026-10-14",
           "verification_status": "needs-review",
-          "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+          "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。正式比赛首球另据 Sport 2026-10-12 与京报体育 2026-10-10：两源同意日期、对手、3-0、替补和 2-0，但射门方式与分钟不一致，故不写入强事实。",
           "conflicts": []
         },
         {
@@ -15124,9 +15135,13 @@
           "birth_year": "2009",
           "position": "前锋 / 中场 / 边锋",
           "summary": null,
-          "representative_experience": "德国广域星空杯MVP",
+          "milestone": {
+            "zh": "2026-09-20 西班牙人青年B队客场 3-1 圣库加特，下半场替补打入在该队的正式比赛首球。这是 U19 全国二级联赛，不是一线队，也不是成年 B 队。",
+            "en": "On 20 September 2026, Espanyol Juvenil B won 3-1 away at Sant Cugat. He came on in the second half and scored his first official goal for the team. This is the second national U19 tier, not the first team and not the senior reserve side."
+          },
+          "representative_experience": "2026-09-20 西班牙人青年B队正式比赛首球；德国广域星空杯MVP",
           "source_url": "https://www.xiaojiangfc.com/players/lv-mengyang/",
-          "checked_at": "2026-07-25",
+          "checked_at": "2026-10-14",
           "verification_status": "needs-review",
           "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
           "conflicts": []
@@ -54704,8 +54719,8 @@
       "en": "This page places Spain's senior professional pyramid, the U19/U16 youth pyramid, and documented Chinese samples into one scope. An academy deal with a La Liga club is not a La Liga appearance, and a professional contract is not automatically a match record."
     },
     "scope_note": {
-      "zh": "这是研究样本索引，不是西班牙足协或西甲官方全量名单。球员可同时出现在多个层级；当前注册以球员主档为准。吕孟洋的西班牙人 U19B 节点来自 2026-09 俱乐部官宣，主档仍停在欧罗巴 2025/26。",
-      "en": "This is a research sample index, not an official RFEF or LaLiga census. A player may appear on more than one layer. Current registration still follows the player record. Lyu Mengyang's Espanyol U19B node comes from the September 2026 club announcement; his master record still stops at Europa 2025/26."
+      "zh": "这是研究样本索引，不是西班牙足协或西甲官方全量名单。球员可同时出现在多个层级；当前注册以球员主档为准。吕孟洋当前注册是西班牙人青年B队，2026-09-20 的客场进球记在球员页，不是一线队或成年 B 队出场。",
+      "en": "This is a research sample index, not an official RFEF or LaLiga census. A player may appear on more than one layer. Current registration still follows the player record. Lyu Mengyang's current club is Espanyol Juvenil B; his 20 September 2026 away goal is on his player page and is not a first-team or senior-reserve appearance."
     },
     "contract_types": [
       {
@@ -55177,8 +55192,8 @@
         "appearance_status": "appeared",
         "verification_status": "mixed-source",
         "note": {
-          "zh": "西班牙人 2026-09-14 官宣加入青训并代表青年 B 队。这是青训培训协议，不是一线队职业合同；竞赛层级是 U19 全国二级，不是荣誉联赛。球员主档核验日仍为 2026-05-22 欧罗巴。",
-          "en": "Espanyol announced on 2026-09-14 that he joined the academy and Juvenil B. This is a youth formation agreement, not a first-team professional contract, and the competition is the second national U19 tier rather than División de Honor. His master record still checks Europa as of 2026-05-22."
+          "zh": "西班牙人 2026-09-15 官宣加入青年 B 队。2026-09-20 客场 3-1 圣库加特，下半场替补打入该队正式比赛首球。这是青训协议和 U19 全国二级，不是一线队，也不是成年 B 队。",
+          "en": "Espanyol announced his Juvenil B move on 2026-09-15. On 2026-09-20 he came off the bench and scored his first official goal for the team in a 3-1 away win at Sant Cugat. This is a youth agreement in the second national U19 tier, not the first team and not the senior reserve side."
         }
       },
       {

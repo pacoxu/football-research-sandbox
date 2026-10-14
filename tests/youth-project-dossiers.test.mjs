@@ -176,6 +176,43 @@ test("Donglu dossier publishes an 86-person secondary profile index without infl
   }
 });
 
+test("Li Haoyan's Barcelona Sub-15 goal stays a youth official debut, not a senior appearance", async () => {
+  const overseas = JSON.parse(
+    await fs.readFile(new URL("../data/raw/players/china-overseas-current.json", import.meta.url), "utf8")
+  );
+  const lyuPlayer = overseas.find((player) => player.id === "cn-lyu-mengyang-2009");
+  const lyuHeadline = lyuPlayer.tournament_participation.find((entry) => entry.headline);
+  assert.match(lyuHeadline.headline.zh, /青年B队/);
+  assert.match(lyuHeadline.headline.zh, /不是成年 B 队/);
+  assert.equal(lyuHeadline.goals, 1);
+
+  const dossier = dossiers.find((item) => item.id === "donglu-football-boys");
+  const person = dossier.people.find((item) => item.id === "donglu-football-boys-李昊炎");
+  const profile = dossier.external_player_profiles.find((item) => item.id === "li-haoyan");
+  const kuang = dossier.external_player_profiles.find((item) => item.id === "kuang-zhaolei");
+
+  assert.equal(person.current_status.category, "youth-development");
+  assert.equal(person.current_status.organization, "FC Barcelona Sub-15");
+  assert.equal(person.current_status.as_of, "2026-10-14");
+  assert.match(person.current_status.notes, /3-0/);
+  assert.match(person.current_status.notes, /正式比赛首球/);
+  assert.match(person.current_status.notes, /热身赛/);
+  assert.match(person.current_status.notes, /Infantil S14/);
+  assert.equal(profile.summary, null);
+  assert.match(profile.milestone.zh, /正式比赛首球/);
+  assert.match(profile.milestone.zh, /不是西甲/);
+  assert.match(profile.representative_experience, /正式比赛首球/);
+  const lyu = dossier.people.find((item) => item.id === "donglu-football-boys-吕孟洋");
+  const lyuProfile = dossier.external_player_profiles.find((item) => item.id === "lv-mengyang");
+  assert.match(lyu.current_status.notes, /青年B队正式比赛首球/);
+  assert.match(lyu.current_status.notes, /不是成年 B 队/);
+  assert.match(lyuProfile.milestone.zh, /3-1 圣库加特/);
+  assert.match(lyuProfile.representative_experience, /青年B队正式比赛首球/);
+  assert.equal(kuang.summary, null);
+  assert.equal(kuang.conflicts[0].field, "summary");
+  assert.match(kuang.conflicts[0].site_value, /未进入巴萨青训/);
+});
+
 test("Zhang Lintong conflict remains explicit and does not overwrite the main birth date", async () => {
   const dataset = await loadDataset();
   const dossier = dossiers.find((item) => item.id === "donglu-football-boys");
@@ -206,5 +243,7 @@ test("dossier profile directory and detail route expose filters, source boundari
   assert.match(app, /renderDossierPlayerDetailPage/);
   assert.match(app, /buildDossierPlayerDetailUrl/);
   assert.match(app, /profile\.conflicts/);
+  assert.match(app, /hero-milestone/);
+  assert.match(app, /collectPlayerMilestones/);
   assert.match(app, /linkedProjectProfile/);
 });

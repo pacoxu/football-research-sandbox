@@ -3486,6 +3486,12 @@ function getPlayerAffiliation(player) {
   };
 }
 
+function collectPlayerMilestones(player) {
+  return (player.tournament_participation ?? [])
+    .map((entry) => localizeText(entry.headline))
+    .filter(Boolean);
+}
+
 function buildPlayerHeroSummary(player, affiliation) {
   const birthYear = getBirthYear(player.birth_date);
   const lead = state.language === "en"
@@ -4557,6 +4563,7 @@ function renderDossierPlayerDetailPage() {
       <p class="eyebrow">${escapeHtml(t("dossierPlayer.hero.eyebrow"))}</p>
       <h1>${escapeHtml(profile.display_name)}</h1>
       <p class="hero-text">${escapeHtml(profile.representative_experience)}</p>
+      ${profile.milestone ? `<p class="hero-milestone">${escapeHtml(localizeText(profile.milestone))}</p>` : ""}
       <div class="chip-row">
         <span class="chip">${escapeHtml(profile.squad)}</span>
         <span class="chip">${escapeHtml(profile.birth_year ?? t("common.pending"))}</span>
@@ -6813,6 +6820,9 @@ function renderPlayerDetailPage() {
       <h1>${escapeHtml(displayName)}</h1>
       ${nameMeta ? `<p class="hero-side-note">${escapeHtml(nameMeta)}</p>` : ""}
       <p class="hero-text">${escapeHtml(buildPlayerHeroSummary(player, affiliation))}</p>
+      ${collectPlayerMilestones(player)
+        .map((text) => `<p class="hero-milestone">${escapeHtml(text)}</p>`)
+        .join("")}
       <div class="chip-row">
         <span class="chip">${escapeHtml(formatCountryName(player.country))}</span>
         <span class="chip">${formatAgeBand(player.age_band)}</span>
