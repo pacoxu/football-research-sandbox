@@ -16374,7 +16374,7 @@
         "stage_label": "2026/07 欧塞尔签约生效",
         "organization": "AJ Auxerre",
         "country": "France",
-        "note": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签约五年并身披 49 号，俱乐部职业队球员页已建立个人资料；正式联赛报名和出场仍需继续跟踪。",
+        "note": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签约五年并身披 49 号，俱乐部职业队球员页已建立个人资料。2026-09-19 预备队在 National 2 对沙托鲁 B 队的进球另记，不是法甲出场。",
         "organization_type": "professional-club"
       }
     ],
@@ -16395,7 +16395,27 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "欧塞尔 2026-07-09 官方确认魏祥鑫签约五年、身披 49 号，职业队球员页已上线；正式联赛报名和出场仍待赛季名单与比赛记录确认。"
+        "note": "欧塞尔 2026-07-09 官方确认魏祥鑫签约五年、身披 49 号，职业队球员页已上线。法甲一线队正式出场仍待确认。"
+      },
+      {
+        "label": "2026-09-19 欧塞尔B队对沙托鲁B队",
+        "team": "AJ Auxerre B",
+        "squad_status": "registered",
+        "appearances": 1,
+        "goals": 1,
+        "minutes": null,
+        "headline": {
+          "zh": "2026-09-19 欧塞尔B队主场 2-1 沙托鲁B队，魏祥鑫首发，上半场补时把比分改成 2-0。这是他在欧塞尔的正式比赛首球，层级是法国第四级 National 2，不是法甲。季骁宣 2019 年已为欧塞尔一线队法国杯和预备队进过球，所以这不是俱乐部的中国球员首球。",
+          "en": "On 19 September 2026, Auxerre B beat Châteauroux B 2-1 at home. Wei started and made it 2-0 in first-half stoppage time. It is his first official goal for Auxerre, in National 2, France's fourth tier, not Ligue 1. Ji Xiaoxuan had already scored for Auxerre's first team in the 2019 Coupe de France and for the reserve side, so this is not the club's first goal by a Chinese player."
+        },
+        "note": "National 2 H 组第 3 轮。Zerozero 与 Transfermarkt 比赛页都写库达第 8 分钟、魏祥鑫第 45+2 分钟、苏马第 83 分钟点球，半场 2-0，魏祥鑫第 72 分钟被换下。Foot Mercato 把进球记成第 45 分钟。这是单场记录，不是 2026/27 赛季累计。7 月 18 日对圣莫尔路斯和 10 月 10 日对红星预备队的进球是热身赛，不并入这场。",
+        "stats_as_of": "2026-09-19",
+        "statistics_status": "partial",
+        "source_checked_at": "2026-10-03",
+        "statistics_sources": [
+          "https://www.leballonrond.fr/match/2026-09-19-auxerre-chateauroux/12362667",
+          "https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/4967811"
+        ]
       }
     ],
     "external_links": [
@@ -16443,12 +16463,18 @@
         "type": "reference",
         "label": "Transfermarkt forum: Wei Xiangxin €300k / AJ Auxerre",
         "url": "https://www.transfermarkt.com/wei-xiangxin-euro-300k-aj-auxerre-/thread/forum/67/thread_id/272434"
+      },
+      {
+        "type": "stats",
+        "label": "National 2: Auxerre B 2-1 Châteauroux B",
+        "url": "https://www.leballonrond.fr/match/2026-09-19-auxerre-chateauroux/12362667",
+        "checked_at": "2026-10-03"
       }
     ],
     "verification": {
       "status": "mixed-source",
-      "last_checked": "2026-08-02",
-      "notes": "欧塞尔官方球员页确认出生日期为 2008-03-05、身高 178cm、体重 76kg；Transfermarkt 档案补充梅州出生、主司中锋、兼任右边锋和右脚信息，并将身高列为 180cm。身高主值按一手俱乐部资料保留 178cm，180cm 作为来源差异记录。欧塞尔 2026-07-09 官方公告确认其签下五年合同并获得 49 号，合同截止日 2031-06-30 由 Transfermarkt 档案补充；正式联赛报名与出场继续跟踪。",
+      "last_checked": "2026-10-03",
+      "notes": "欧塞尔官方球员页确认出生日期为 2008-03-05、身高 178cm、体重 76kg；Transfermarkt 档案补充梅州出生、主司中锋、兼任右边锋和右脚信息，并将身高列为 180cm。身高主值按一手俱乐部资料保留 178cm，180cm 作为来源差异记录。欧塞尔 2026-07-09 官方公告确认其签下五年合同并获得 49 号，合同截止日 2031-06-30 由 Transfermarkt 档案补充。2026-09-19 预备队 National 2 对沙托鲁 B 队的进球由两份比赛页交叉确认，是他本人的正式比赛首球，不是法甲出场，也不是欧塞尔队史的中国球员首球。",
       "evidence": [
         {
           "field": "birth_date,height_cm,weight_kg",
@@ -16470,6 +16496,13 @@
           "source_label": "Transfermarkt profile",
           "source_url": "https://www.transfermarkt.com/xiangxin-wei/profil/spieler/1265965",
           "checked_at": "2026-08-02"
+        },
+        {
+          "field": "tournament_participation.goals",
+          "claim": "Auxerre B beat Châteauroux B 2-1 in National 2 on 19 September 2026. Wei started and scored to make it 2-0 before half-time. This is his first official Auxerre goal, not the club's first goal by a Chinese player.",
+          "source_label": "National 2 match sheet: Auxerre B 2-1 Châteauroux B",
+          "source_url": "https://www.leballonrond.fr/match/2026-09-19-auxerre-chateauroux/12362667",
+          "checked_at": "2026-10-03"
         }
       ]
     },
@@ -21946,7 +21979,7 @@
             "en": "Juvenil B"
           }
         ],
-        "note": "西班牙人中文官网 2026-09-15 公告确认，2009 年出生的吕孟洋自欧罗巴体育会转入，加入维克托·桑切斯执教的青年B队，位置写为边锋，也可出任前腰。FCF 2026-09-16 新闻写明该队 2026/27 继续参加 Lliga Nacional Juvenil。Transfermarkt 把加入日写成 2026-09-14；当前注册按俱乐部官网确认的青年B队记录，不把数据库日期单独当作生效日。",
+        "note": "西班牙人中文官网 2026-09-15 公告确认，2009 年出生的吕孟洋自欧罗巴体育会转入，加入维克托·桑切斯执教的青年B队，位置写为边锋，也可出任前腰。2026-09-20 该队客场 3-1 圣库加特，他下半场替补打入青年B队正式比赛首球。FCF 2026-09-16 新闻写明该队 2026/27 继续参加 Lliga Nacional Juvenil。Transfermarkt 把加入日写成 2026-09-14；当前注册按俱乐部官网确认的青年B队记录，不把数据库日期单独当作生效日。",
         "organization_type": "club-academy",
         "parent_organization": {
           "name": "RCD Espanyol",
@@ -21989,7 +22022,11 @@
         "appearances": 1,
         "goals": 1,
         "minutes": null,
-        "note": "2026-09-20 西班牙 U19 全国联赛第二级别首轮，西班牙人青年B队客场 3-1 圣库加特 U19A。新浪体育与俄罗斯卫星通讯社转述均写其第 58 分钟替补、第 83 分钟破门；另一条公开口径写第 57 分钟替补。出场和进球按多源一致事实记录，替补分钟冲突不写入 minutes。截至 2026-09-26 未核到 FCF 单场技术表。中国足协 2026-09-11 U17 第六期 26 人名单没有他的名字。"
+        "headline": {
+          "zh": "2026-09-20 西班牙人青年B队客场 3-1 圣库加特，下半场替补打入在该队的正式比赛首球。这是 U19 全国二级联赛，不是一线队，也不是成年 B 队。",
+          "en": "On 20 September 2026, Espanyol Juvenil B won 3-1 away at Sant Cugat. He came on in the second half and scored his first official goal for the team. This is the second national U19 tier, not the first team and not the senior reserve side."
+        },
+        "note": "2026-09-20 西班牙 U19 全国联赛第二级别首轮，西班牙人青年B队客场 3-1 圣库加特 U19A。新浪体育与俄罗斯卫星通讯社转述均写其第 58 分钟替补、第 83 分钟破门；另一条公开口径写第 57 分钟替补。出场和进球按多源一致事实记录，替补分钟冲突不写入 minutes。2026-10-14 复核：La Grada 同周战报确认青年B队 1-3 客胜，并与成年 B 队 2-1 负 Peña Sport 分开。尚未核到 FCF 单场技术表。中国足协 2026-09-11 U17 第六期 26 人名单没有他的名字。"
       },
       {
         "competition_id": "shanghai-future-star-cup-men-u17-2026",
@@ -22054,7 +22091,7 @@
     "verification": {
       "status": "verified",
       "last_checked": "2026-09-26",
-      "notes": "出生日期、徐州出身、双胞胎兄弟与清华附中节点可由 Baidu Baike 条目及其引用稿件交叉校对；西班牙早期三段履历可由 FutbolBase 履历页补齐；2025/26 欧罗巴数据保留为赛季历史。当前注册改为 RCD Espanyol Juvenil B，依据是俱乐部 2026-09-15 中文官网公告，FCF 同周新闻确认该青年B队参加 2026/27 Lliga Nacional Juvenil。首秀进球有多条独立报道一致，但替补分钟有 57 与 58 两种写法，且尚未核到联赛技术表，所以只记 1 次出场、1 球。通用检索里还会混入 Lu / Lv / Lyu 三种拼写，本条继续以生日、中文名和加泰注册路径锁定。"
+      "notes": "出生日期、徐州出身、双胞胎兄弟与清华附中节点可由 Baidu Baike 条目及其引用稿件交叉校对；西班牙早期三段履历可由 FutbolBase 履历页补齐；2025/26 欧罗巴数据保留为赛季历史。当前注册改为 RCD Espanyol Juvenil B，依据是俱乐部 2026-09-15 中文官网公告，FCF 同周新闻确认该青年B队参加 2026/27 Lliga Nacional Juvenil。首秀进球有多条独立报道一致，但替补分钟有 57 与 58 两种写法，且尚未核到联赛技术表，所以只记 1 次出场、1 球，页面重点句不写死分钟。2026-10-14 复核仍是青年B队，不是成年 B 队。通用检索里还会混入 Lu / Lv / Lyu 三种拼写，本条继续以生日、中文名和加泰注册路径锁定。"
     },
     "names": {
       "zh": "吕孟洋",

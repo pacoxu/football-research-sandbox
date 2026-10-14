@@ -1600,11 +1600,11 @@
           "category": "youth-development",
           "organization": "RCD Espanyol Juvenil B",
           "role": "player",
-          "as_of": "2026-09-26",
+          "as_of": "2026-10-14",
           "confidence": "high",
           "source_label": "西班牙人俱乐部官宣：吕孟洋，鹦鹉军团！",
           "source_url": "https://www.rcdespanyol.com/cn/new-cn/%E5%90%95%E5%AD%9F%E6%B4%8B%EF%BC%8C%E9%B9%A6%E9%B9%89%E5%86%9B%E5%9B%A2%EF%BC%81/20759",
-          "notes": "俱乐部官网确认其加入青年B队。2026-09-20 联赛首秀进球见球员档案，不在这条现状字段里重复记分钟。"
+          "notes": "俱乐部官网确认其加入青年B队。2026-09-20 客场 3-1 圣库加特 U19A，下半场替补打入青年B队正式比赛首球。层级是 Lliga Nacional Juvenil，不是一线队，也不是成年 B 队。替补分钟有 57 与 58 两种写法，进球分钟公开口径为 83，尚未核到单场技术表，因此重点句不写死分钟。"
         }
       },
       {
@@ -1768,17 +1768,17 @@
         "id": "donglu-football-boys-李昊炎",
         "name": "Li Haoyan",
         "local_name": "李昊炎",
-        "role": "未指明",
-        "note": "",
+        "role": "前锋",
+        "note": "2026-10-10 巴萨 Sub-15 正式比赛首球。",
         "current_status": {
-          "category": "needs-review",
-          "organization": "待核实",
+          "category": "youth-development",
+          "organization": "FC Barcelona Sub-15",
           "role": "player",
-          "as_of": "2026-07-20",
-          "confidence": "low",
-          "source_label": "现状复核入口：Bilibili space: 中国足球小将",
-          "source_url": "https://space.bilibili.com/346344723",
-          "notes": "该来源可支撑项目或历史身份，但未提供截至核查日的直接当前注册去向；因此不沿用历史俱乐部作当前事实。"
+          "as_of": "2026-10-14",
+          "confidence": "medium",
+          "source_label": "Sport: Estreno goleador de Haoyan Li",
+          "source_url": "https://www.sport.es/es/noticias/barca/futbol-base/estreno-goleador-haoyan-li-primer-135252275",
+          "notes": "Sport 2026-10-12 与京报体育 2026-10-10 同指 2026-10-10 巴萨 Sub-15（Cadete B）主场 3-0 科尔内利亚：李昊炎下半场替补，打入 2-0，是其正式比赛首秀和首球，也是中国球员在巴萨的正式比赛首球。季前热身赛进球另计。同一天巴萨 Infantil S14 5-0 科尔内利亚是另一场。射门方式未锁死：Sport 写终场前约两分钟左脚凌空，京报写第 81 分钟左脚低射。尚未核到加泰足协技术报告，因此不写入分钟和完整出生日期。通卡拉复出属于巴萨竞技的埃布里马·通卡拉，不是这条记录。"
         }
       },
       {
@@ -4623,7 +4623,7 @@
       "tracked_generations": 6,
       "tracked_players": 125,
       "verified_core_people": 50,
-      "needs_review_people": 125
+      "needs_review_people": 124
     },
     "external_player_profiles": [
       {
@@ -4639,13 +4639,20 @@
         "listed_team": "U17 国少核心",
         "birth_year": "2009",
         "position": "前锋 / 边锋",
-        "summary": "首位正式签约拉玛西亚的中国球员",
+        "summary": null,
         "representative_experience": "曾留洋达姆、莱里达竞技",
         "source_url": "https://www.xiaojiangfc.com/players/kuang-zhaolei/",
-        "checked_at": "2026-07-25",
+        "checked_at": "2026-10-14",
         "verification_status": "needs-review",
         "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
-        "conflicts": []
+        "conflicts": [
+          {
+            "field": "summary",
+            "external_value": "首位正式签约拉玛西亚的中国球员",
+            "site_value": "达姆、莱里达竞技；未进入巴萨青训",
+            "note": "资料站摘要把拉玛西亚首签写在邝兆镭名下。主库路径是达姆、奥斯皮塔莱特、莱里达竞技和青岛海牛。巴萨青训首名中国球员与 2026-10-10 正式比赛首球属于李昊炎。"
+          }
+        ]
       },
       {
         "id": "liu-kaiyuan",
@@ -4702,11 +4709,15 @@
         "birth_year": "2012",
         "position": "左边锋 / 前锋",
         "summary": null,
-        "representative_experience": "首位正式签约拉玛西亚的中国球员",
+        "milestone": {
+          "zh": "2026-10-10 巴萨 Sub-15 主场 3-0 科尔内利亚，替补打入 2-0。这是中国球员在巴萨的正式比赛首球。层级是加泰 U15 青年联赛，不是西甲。季前热身赛进球另计。同一天 Infantil S14 的 5-0 不是这场。",
+          "en": "On 10 October 2026, Barcelona Sub-15 beat Cornellà 3-0 at home. He came off the bench and scored the 2-0. It is the first official-match goal by a Chinese player for FC Barcelona, in a Catalan U15 youth league, not LaLiga. Pre-season goals are separate. The Infantil S14 5-0 the same day was a different team."
+        },
+        "representative_experience": "首位正式签约拉玛西亚的中国球员；2026-10-10 巴萨 U15 正式比赛首球",
         "source_url": "https://www.xiaojiangfc.com/players/li-haoyan/",
-        "checked_at": "2026-07-25",
+        "checked_at": "2026-10-14",
         "verification_status": "needs-review",
-        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+        "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。正式比赛首球另据 Sport 2026-10-12 与京报体育 2026-10-10：两源同意日期、对手、3-0、替补和 2-0，但射门方式与分钟不一致，故不写入强事实。",
         "conflicts": []
       },
       {
@@ -4743,9 +4754,13 @@
         "birth_year": "2009",
         "position": "前锋 / 中场 / 边锋",
         "summary": null,
-        "representative_experience": "德国广域星空杯MVP",
+        "milestone": {
+          "zh": "2026-09-20 西班牙人青年B队客场 3-1 圣库加特，下半场替补打入在该队的正式比赛首球。这是 U19 全国二级联赛，不是一线队，也不是成年 B 队。",
+          "en": "On 20 September 2026, Espanyol Juvenil B won 3-1 away at Sant Cugat. He came on in the second half and scored his first official goal for the team. This is the second national U19 tier, not the first team and not the senior reserve side."
+        },
+        "representative_experience": "2026-09-20 西班牙人青年B队正式比赛首球；德国广域星空杯MVP",
         "source_url": "https://www.xiaojiangfc.com/players/lv-mengyang/",
-        "checked_at": "2026-07-25",
+        "checked_at": "2026-10-14",
         "verification_status": "needs-review",
         "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
         "conflicts": []

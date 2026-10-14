@@ -25,6 +25,13 @@ test("keeps Wei Xiangxin's Auxerre profile and market-value snapshot sourced", a
   assert.equal(player.registration_club.joined_date, "2026-07-09");
   assert.equal(player.registration_club.contract_expires, "2031-06-30");
   assert.match(player.verification.notes, /Transfermarkt.*180cm/);
+  const reserveGoal = player.tournament_participation.find((entry) => entry.headline);
+  assert.equal(reserveGoal.team, "AJ Auxerre B");
+  assert.equal(reserveGoal.appearances, 1);
+  assert.equal(reserveGoal.goals, 1);
+  assert.match(reserveGoal.headline.zh, /正式比赛首球/);
+  assert.match(reserveGoal.headline.zh, /不是法甲/);
+  assert.match(reserveGoal.headline.zh, /不是俱乐部的中国球员首球/);
   assert.ok(
     player.external_links.some(
       (link) => link.url === "https://www.transfermarkt.com/xiangxin-wei/profil/spieler/1265965"

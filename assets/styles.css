@@ -323,6 +323,17 @@ main {
   font-size: 1rem;
 }
 
+.hero-milestone {
+  max-width: 68ch;
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-left: 4px solid #103f3c;
+  border-radius: 0 12px 12px 0;
+  background: rgba(16, 63, 60, 0.08);
+  line-height: 1.7;
+  font-weight: 650;
+}
+
 .hero-spotlight {
   border-radius: var(--radius-lg);
   padding: 18px;
