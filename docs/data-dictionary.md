@@ -316,6 +316,16 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 
 2026/27 快照固定为日本 60 人、韩国 15 人，共 75 人；其中五大联赛 41 人。身价覆盖 33 人，未覆盖者保留空值，不按合同、转会费、年龄或同队球员估算。
 
+## 五大联赛中日韩一线队角色
+
+`data/raw/big-five-cjk-squad-roles.json` 给 `big-five.html` 使用。日韩球员必须能对上前八联赛快照里的五大联赛一线队；中国另计已核到一线队名单、但不在那份日韩快照里的球员。
+
+| 字段 | 含义 |
+| --- | --- |
+| `league_minutes`、`matches_available` | 统计窗口内的国内联赛分钟，以及用来做分母的已赛场次。杯赛、欧战和国家队不计入。 |
+| `minutes_basis` | `league-log`、`league-table`、`inferred-zero` 或 `missing`。缺失分钟不得推算角色。 |
+| `role_scale` | 核心 ≥75%，主力 ≥50%，轮换 ≥25%，替补为已出场但低于 25%，边缘为 0 分钟。页面按这个比例现算，不另存角色。 |
+
 ## 亚洲教练
 
 `data/raw/big-five-asian-coaches.json` 维护五大联赛顶级联赛亚洲教练样本。

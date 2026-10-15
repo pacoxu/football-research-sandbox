@@ -44,6 +44,7 @@ export async function buildSiteData({ outputDirectory = paths.site } = {}) {
     projects: dataset.projects,
     overseas_history: dataset.overseasHistory,
     europe_top_leagues_japan_korea: dataset.europeTopLeaguesJapanKorea,
+    big_five_cjk_squad_roles: dataset.bigFiveCjkSquadRoles,
     dossiers: dataset.dossiers,
     scouting_watchlist: dataset.scoutingWatchlist,
     tournament_archive: dataset.tournamentArchive,

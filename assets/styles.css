@@ -4528,6 +4528,102 @@ tbody tr:last-child td {
   }
 }
 
+.big-five-switch {
+  margin: 4px 0 16px;
+}
+
+.big-five-country-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.big-five-country {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface-strong);
+}
+
+.big-five-country header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.big-five-country h3,
+.big-five-player p {
+  margin: 0;
+}
+
+.big-five-player {
+  display: grid;
+  gap: 4px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.big-five-player-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.big-five-minutes {
+  margin: 0;
+  font-weight: 750;
+}
+
+.big-five-role-core {
+  color: #7c2d12;
+  background: #fde7d4;
+}
+
+.big-five-role-starter {
+  color: #245b3d;
+  background: rgba(41, 111, 73, 0.14);
+}
+
+.big-five-role-rotation {
+  color: #225278;
+  background: rgba(46, 111, 160, 0.14);
+}
+
+.big-five-role-substitute {
+  color: #80540f;
+  background: rgba(183, 119, 29, 0.16);
+}
+
+.big-five-role-fringe,
+.big-five-role-unrated {
+  color: var(--muted);
+  background: rgba(104, 84, 68, 0.12);
+}
+
+.big-five-matrix {
+  min-width: 640px;
+}
+
+.big-five-matrix .text-button {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .big-five-country-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 620px) {
   .europe-league-grid {
     grid-template-columns: 1fr;
