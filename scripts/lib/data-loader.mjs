@@ -257,6 +257,9 @@ export async function loadDataset() {
   const europeTopLeaguesJapanKorea = await readJson(
     path.join(paths.raw, "europe-top-leagues-japan-korea.json")
   );
+  const bigFiveCjkSquadRoles = await readJson(
+    path.join(paths.raw, "big-five-cjk-squad-roles.json")
+  );
   const dossiers = await readJson(path.join(paths.raw, "dossiers.json"));
   const scoutingWatchlist = await readOptionalJson(
     path.join(paths.raw, "scouting-watchlist.json"),
@@ -283,6 +286,17 @@ export async function loadDataset() {
   const footballStories = await readOptionalJson(
     path.join(paths.raw, "football-stories.json"),
     { schema_version: 1, last_checked: null, editorial_policy: {}, stories: [] }
+  );
+  const youthTrainingDisputes = await readOptionalJson(
+    path.join(paths.raw, "youth-training-disputes.json"),
+    {
+      schema_version: 1,
+      last_checked: null,
+      editorial_policy: {},
+      scope_note: {},
+      cfa_rules: [],
+      cases: []
+    }
   );
   const china2026Milestones = await readOptionalJson(
     path.join(paths.raw, "china-2026-milestones.json"),
@@ -314,6 +328,7 @@ export async function loadDataset() {
     projects,
     overseasHistory,
     europeTopLeaguesJapanKorea,
+    bigFiveCjkSquadRoles,
     dossiers,
     scoutingWatchlist,
     tournamentArchive,
@@ -321,6 +336,7 @@ export async function loadDataset() {
     chinaMenYouthCoaches,
     chinaYouthDevelopmentCoaches,
     footballStories,
+    youthTrainingDisputes,
     china2026Milestones,
     bigFiveAsianCoaches,
     asianCoaches,

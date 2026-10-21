@@ -18,6 +18,7 @@
 | `data/raw/china-youth-development-coaches.json` | 中国基层、校园、足校、职业梯队与民间项目的具名青训教练样本。 | 是 |
 | `data/raw/dossiers.json` | 专题档案，例如董路足球小将。 | 是 |
 | `data/raw/football-stories.json` | 职业球员转型、教练实践、校园机构与公开争议的来源化故事。 | 是 |
+| `data/raw/youth-training-disputes.json` | 国内青少年培训协议、自由身、违约金与培训补偿公开案例。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 中国、日韩与北欧青训体系、项目、竞赛关系和年度快照。 | 是 |
@@ -159,6 +160,8 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 
 `data/raw/football-stories.json` 为人物和机构提供可复用故事结构。`related_entities[]` 可引用教练、专题、专题人物、留洋记录或另一篇故事；页面只把引用用于导航，不改变原实体事实。
 
+`data/raw/youth-training-disputes.json` 汇总国内青少年培训协议纠纷。`cases[]` 必须同时记录年龄、主张金额、足协态度和最终结果；`claimed_amount` 是机构或当事人主张，不是已裁决金额。`cfa_rules[]` 记录协会文件口径，不替代个案结果。
+
 `public_disputes[]` 必须包含日期、主题、`claim_status`、`response_status`、具名发言人的转述、原始链接和编辑边界。单方有关违法、牟利、举报或伤害的说法只能记录为有归因主张，除非存在生效裁判或主管机关结论。故事中的身份辨析属于强约束：孙继海就读大连实验小学，不得列为东北路小学校友；1986年出生的王晓龙不得与1979年同名球员或王啸龙混合。
 
 ## `tournament_participation`
@@ -182,6 +185,7 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 | `source_checked_at` | 统计来源最后核查日。 |
 | `statistics_sources` | 直接支撑统计的比赛报告或统计页 URL 数组。 |
 | `note` | 统计范围和来源说明。 |
+| `headline` | 可选的页面重点句，中英各一条。只放已经写进本条统计的正式比赛节点；球员详情页会把它放在抬头，不替代 `note` 里的分钟冲突和来源边界。 |
 
 部分赛事会在 `tournament-archive` 集中维护逐人统计，并由 loader 合并到此字段。中国 U20 2025 和中国 U23 2026 均采用这一方式，避免在每个球员文件中重复维护逐场汇总。
 
@@ -311,6 +315,16 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 | `sources[]` | 系数、名册、夏窗变动与身价来源账本。 |
 
 2026/27 快照固定为日本 60 人、韩国 15 人，共 75 人；其中五大联赛 41 人。身价覆盖 33 人，未覆盖者保留空值，不按合同、转会费、年龄或同队球员估算。
+
+## 五大联赛中日韩一线队角色
+
+`data/raw/big-five-cjk-squad-roles.json` 给 `big-five.html` 使用。日韩球员必须能对上前八联赛快照里的五大联赛一线队；中国另计已核到一线队名单、但不在那份日韩快照里的球员。
+
+| 字段 | 含义 |
+| --- | --- |
+| `league_minutes`、`matches_available` | 统计窗口内的国内联赛分钟，以及用来做分母的已赛场次。杯赛、欧战和国家队不计入。 |
+| `minutes_basis` | `league-log`、`league-table`、`inferred-zero` 或 `missing`。缺失分钟不得推算角色。 |
+| `role_scale` | 核心 ≥75%，主力 ≥50%，轮换 ≥25%，替补为已出场但低于 25%，边缘为 0 分钟。页面按这个比例现算，不另存角色。 |
 
 ## 亚洲教练
 

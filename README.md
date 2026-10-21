@@ -42,6 +42,7 @@ Issue 新增、数据纠错、来源失效、页面问题和口径讨论分别�
 - 五大联赛之外的亚洲主教练试点，区分欧洲非五大、AFC 国字号和亚洲顶级联赛任期
 - 单页数据中心集中展示覆盖质量、中国/日韩/北欧六国青训路径比较、项目目录与教练目录
 - 国内青训教练独立页面，当前覆盖校园、足校、职业梯队、基地、地区体校和民间项目 13 位具名样本
+- 国内青少年培训协议与合同纠纷汇总页，对照年龄、违约金、足协态度和最终结果
 - 2030—2042 亚洲世界杯长期预测，公开名额假设、模型权重、回测和不确定区间
 - 本地 `JSON + SQLite` 双轨存储
 
@@ -78,7 +79,9 @@ python3 -m http.server 4173
 .
 ├── assets/                  # 页面样式和前端脚本
 ├── spain.html               # 西班牙职业联赛、U19 体系与已建档球员落点
+├── big-five.html            # 五大联赛中日韩一线队角色对照
 ├── coaches.html             # 基层青训教练与中国男足 U 系列教练组页面
+├── youth-disputes.html      # 国内青少年培训协议与合同纠纷案件汇总
 ├── data/
 │   ├── raw/                 # 手工维护的数据源
 │   │   ├── players/         # 按年龄段分组的球员 JSON
@@ -110,6 +113,7 @@ python3 -m http.server 4173
 - 若外部资料存在冲突，以 `verification.status` 和 `verification.notes` 标记，而不是直接覆盖。
 - `data/raw/overseas-history.json` 先作为中日韩留洋建档模板，后续补全五大联赛、欧洲其他、亚洲其他、大洋洲其他、美洲其他等层级。
 - `data/raw/europe-top-leagues-japan-korea.json` 独立维护 UEFA 年终五年协会系数前八联赛的日韩一线队全量快照；租借计入当前俱乐部，二级联赛与青年/预备队不计入，缺失身价不得推算。
+- `data/raw/big-five-cjk-squad-roles.json` 只给五大联赛中日韩一线队标角色。角色按国内联赛分钟占比现算；没有分钟就保持待核，不用身价推算。
 - 留洋国家条目可选带 `featured_records`，用于补真实个案，至少保留赛季、联赛、俱乐部、正式比赛出场与摘要。
 - `data/raw/big-five-asian-coaches.json` 维护五大联赛顶级联赛亚洲教练样本，战绩优先按联赛场次统计，并用 `counted_in` 区分 AFC 主口径与广义亚洲边界口径。
 - `data/raw/asian-coaches.json` 维护五大联赛之外的亚洲主教练任期，以 `role_scope` 和 `competition_scope` 区分俱乐部一线队、成年/青年国家队及赛事范围，不复制五大联赛主表战绩。

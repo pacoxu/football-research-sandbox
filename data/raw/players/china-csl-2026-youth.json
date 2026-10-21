@@ -522,7 +522,7 @@
         "stage_label": "2026/07 欧塞尔签约生效",
         "organization": "AJ Auxerre",
         "country": "France",
-        "note": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签约五年并身披 49 号，俱乐部职业队球员页已建立个人资料；正式联赛报名和出场仍需继续跟踪。",
+        "note": "欧塞尔 2026-07-09 官方公告确认魏祥鑫签约五年并身披 49 号，俱乐部职业队球员页已建立个人资料。2026-09-19 预备队在 National 2 对沙托鲁 B 队的进球另记，不是法甲出场。",
         "organization_type": "professional-club"
       }
     ],
@@ -543,7 +543,27 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "欧塞尔 2026-07-09 官方确认魏祥鑫签约五年、身披 49 号，职业队球员页已上线；正式联赛报名和出场仍待赛季名单与比赛记录确认。"
+        "note": "欧塞尔 2026-07-09 官方确认魏祥鑫签约五年、身披 49 号，职业队球员页已上线。法甲一线队正式出场仍待确认。"
+      },
+      {
+        "label": "2026-09-19 欧塞尔B队对沙托鲁B队",
+        "team": "AJ Auxerre B",
+        "squad_status": "registered",
+        "appearances": 1,
+        "goals": 1,
+        "minutes": null,
+        "headline": {
+          "zh": "2026-09-19 欧塞尔B队主场 2-1 沙托鲁B队，魏祥鑫首发，上半场补时把比分改成 2-0。这是他在欧塞尔的正式比赛首球，层级是法国第四级 National 2，不是法甲。季骁宣 2019 年已为欧塞尔一线队法国杯和预备队进过球，所以这不是俱乐部的中国球员首球。",
+          "en": "On 19 September 2026, Auxerre B beat Châteauroux B 2-1 at home. Wei started and made it 2-0 in first-half stoppage time. It is his first official goal for Auxerre, in National 2, France's fourth tier, not Ligue 1. Ji Xiaoxuan had already scored for Auxerre's first team in the 2019 Coupe de France and for the reserve side, so this is not the club's first goal by a Chinese player."
+        },
+        "note": "National 2 H 组第 3 轮。Zerozero 与 Transfermarkt 比赛页都写库达第 8 分钟、魏祥鑫第 45+2 分钟、苏马第 83 分钟点球，半场 2-0，魏祥鑫第 72 分钟被换下。Foot Mercato 把进球记成第 45 分钟。这是单场记录，不是 2026/27 赛季累计。7 月 18 日对圣莫尔路斯和 10 月 10 日对红星预备队的进球是热身赛，不并入这场。",
+        "stats_as_of": "2026-09-19",
+        "statistics_status": "partial",
+        "source_checked_at": "2026-10-03",
+        "statistics_sources": [
+          "https://www.leballonrond.fr/match/2026-09-19-auxerre-chateauroux/12362667",
+          "https://www.transfermarkt.co.uk/spielbericht/index/spielbericht/4967811"
+        ]
       }
     ],
     "external_links": [
@@ -591,12 +611,18 @@
         "type": "reference",
         "label": "Transfermarkt forum: Wei Xiangxin €300k / AJ Auxerre",
         "url": "https://www.transfermarkt.com/wei-xiangxin-euro-300k-aj-auxerre-/thread/forum/67/thread_id/272434"
+      },
+      {
+        "type": "stats",
+        "label": "National 2: Auxerre B 2-1 Châteauroux B",
+        "url": "https://www.leballonrond.fr/match/2026-09-19-auxerre-chateauroux/12362667",
+        "checked_at": "2026-10-03"
       }
     ],
     "verification": {
       "status": "mixed-source",
-      "last_checked": "2026-08-02",
-      "notes": "欧塞尔官方球员页确认出生日期为 2008-03-05、身高 178cm、体重 76kg；Transfermarkt 档案补充梅州出生、主司中锋、兼任右边锋和右脚信息，并将身高列为 180cm。身高主值按一手俱乐部资料保留 178cm，180cm 作为来源差异记录。欧塞尔 2026-07-09 官方公告确认其签下五年合同并获得 49 号，合同截止日 2031-06-30 由 Transfermarkt 档案补充；正式联赛报名与出场继续跟踪。",
+      "last_checked": "2026-10-03",
+      "notes": "欧塞尔官方球员页确认出生日期为 2008-03-05、身高 178cm、体重 76kg；Transfermarkt 档案补充梅州出生、主司中锋、兼任右边锋和右脚信息，并将身高列为 180cm。身高主值按一手俱乐部资料保留 178cm，180cm 作为来源差异记录。欧塞尔 2026-07-09 官方公告确认其签下五年合同并获得 49 号，合同截止日 2031-06-30 由 Transfermarkt 档案补充。2026-09-19 预备队 National 2 对沙托鲁 B 队的进球由两份比赛页交叉确认，是他本人的正式比赛首球，不是法甲出场，也不是欧塞尔队史的中国球员首球。",
       "evidence": [
         {
           "field": "birth_date,height_cm,weight_kg",
@@ -618,6 +644,13 @@
           "source_label": "Transfermarkt profile",
           "source_url": "https://www.transfermarkt.com/xiangxin-wei/profil/spieler/1265965",
           "checked_at": "2026-08-02"
+        },
+        {
+          "field": "tournament_participation.goals",
+          "claim": "Auxerre B beat Châteauroux B 2-1 in National 2 on 19 September 2026. Wei started and scored to make it 2-0 before half-time. This is his first official Auxerre goal, not the club's first goal by a Chinese player.",
+          "source_label": "National 2 match sheet: Auxerre B 2-1 Châteauroux B",
+          "source_url": "https://www.leballonrond.fr/match/2026-09-19-auxerre-chateauroux/12362667",
+          "checked_at": "2026-10-03"
         }
       ]
     }

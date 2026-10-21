@@ -1390,7 +1390,7 @@
     {
       "country": "China PR",
       "status": "in-progress",
-      "verified_records": 43,
+      "verified_records": 46,
       "bucket_focus": [
         "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
         "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队和地区级成年联赛落点，避免与成年职业一线队样本混算；这条线现已明确补入刘邵子洋、何小珂、肖远豪等欧洲培养案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
@@ -3409,6 +3409,7 @@
           "summary": "何小珂的欧洲经历覆盖塞尔维亚短暂试水与西班牙主线培养，但真正可量化的比赛主要在西班牙：Sabadell B 1 场、Sabadell 一线队西协甲 1 场，随后又进入 FC Andorra 体系，构成中国青年前锋在西班牙青训与第三级职业联赛之间流动的代表路径。",
           "notes": [
             "2022-12-18 对奥萨苏纳 B 的替补登场，是其可公开核验的西协甲首秀。",
+            "萨瓦德尔青年 A 队荣誉联赛公开总结约为 37 场、约 7 球。这个总数还没按赛季闭合，不并进上面的 2 场成年出场。",
             "这条路径更适合归到五大联赛国家青训 / 梯队，而不是成年留洋成功样本。",
             "2025 年回到国内职业俱乐部后，其西班牙阶段保留为历史路径。"
           ]
@@ -3560,6 +3561,99 @@
             "1 场只表示已核到的荣誉联赛首秀，不是 2015/16 赛季总出场。",
             "巴列卡诺官网确认他从青年队升入 B 队；B 队 2016/17 在西丙第 7 组。正式出场数待补，不写成 0。",
             "2017 年 2 月回国加盟河北华夏幸福后，西班牙阶段截断。"
+          ]
+        },
+        {
+          "id": "han-fenglin-marbella-2022",
+          "name": "Han Fenglin",
+          "local_name": "韩丰璘",
+          "bucket": "big-five-youth",
+          "league": "División de Honor Juvenil",
+          "club": "Marbella Juvenil A",
+          "season": "2022-2023",
+          "history_year_range": "2022-2023",
+          "status": "verified",
+          "appearances": 8,
+          "appearance_label": "荣誉联赛 8 起，赛季总数未闭合",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "新浪：韩丰璘马贝拉荣誉联赛首秀",
+              "url": "https://www.sina.cn/news/detail/4817497956550564.html"
+            },
+            {
+              "label": "懂球帝转载：韩丰璘荣誉联赛出场 8 次",
+              "url": "http://m.gtxh.com/tiyu/2022/1120/151079.html"
+            }
+          ],
+          "summary": "韩丰璘 2004 年 1 月出生，2022 年夏天进入马贝拉青年 A 队打 U19 荣誉联赛第 4 组。2022-09-25 客场对塞维利亚青年队完成替补首秀；到 2022-11-19 首次首发打满全场时，公开口径是已出场 8 次。赛季还没结束，所以这 8 场只是下沿。",
+          "notes": [
+            "8 场来自 2022-11-19 的赛中报道，不是赛季闭合总数，表里写成「8 起」。",
+            "进球没有同口径公开数字，不补成 0。",
+            "马贝拉一线队当时在低级别成年联赛，这条记录只算青年 A 队荣誉联赛。"
+          ]
+        },
+        {
+          "id": "wang-haowen-badalona-2024",
+          "name": "Wang Haowen",
+          "local_name": "王皓文",
+          "bucket": "big-five-youth",
+          "league": "División de Honor Juvenil",
+          "club": "CF Badalona Juvenil A",
+          "season": "2024-2025",
+          "history_year_range": "2024-2025",
+          "status": "verified",
+          "appearances": 13,
+          "appearance_label": "荣誉联赛 13 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "直播吧：王皓文加盟巴达洛纳 U19A",
+              "url": "https://news.qq.com/rain/a/20240712A0563A00"
+            },
+            {
+              "label": "新浪：王皓文 2024/25 荣誉联赛赛季总结",
+              "url": "https://www.sina.cn/news/detail/5163334760663168.html"
+            }
+          ],
+          "summary": "王皓文 2006 年 2 月 17 日出生。2024/25 代表巴达洛纳青年 A 队参加 U19 荣誉联赛第 3 组，赛季总结为 13 次出场、其中 4 次首发。球队降入下赛季全国二级。进球没有同口径公开数字。",
+          "notes": [
+            "13 场来自赛季总结，按已闭合场次记录，不写成范围。",
+            "他还为巴达洛纳一线队在加泰足协杯首发 1 次，那不是荣誉联赛，也不升成西甲。",
+            "2025 年 7 月离开巴达洛纳青年队。"
+          ]
+        },
+        {
+          "id": "chen-yusheng-patacona-2025",
+          "name": "Chen Yusheng",
+          "local_name": "陈雨晟",
+          "bucket": "big-five-youth",
+          "league": "División de Honor Juvenil",
+          "club": "Patacona CF Juvenil A",
+          "season": "2025-2026",
+          "history_year_range": "2025-2026",
+          "status": "verified",
+          "appearances": 29,
+          "appearance_label": "荣誉联赛 29 场",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "直播吧：陈雨晟荣誉联赛赛季中段 23 场",
+              "url": "https://news.zhibo8.com/zuqiu/2026-03-16/69b7e20940cf1native.htm"
+            },
+            {
+              "label": "帕塔科纳升入一线队报道：荣誉联赛 29 场",
+              "url": "https://www.eivone.com/4927.html"
+            }
+          ],
+          "summary": "陈雨晟 2007 年 8 月 15 日出生。2025/26 作为帕塔科纳青年 A 队队长之一参加 U19 荣誉联赛第 7 组，赛季总结为联赛 29 场、27 次首发。2026 年 6 月升入一线队；一线队当时在瓦伦西亚自治区联赛，不是西甲。",
+          "notes": [
+            "29 场是赛季总结口径。2026-03-16 的中段报道还是 23 场，所以不以中段数字作为赛季总数。",
+            "荣誉联赛进球没有同口径公开数字，不补成 0。",
+            "一线队 2 次替补、约 62 分钟属于自治区成年联赛，不并进这 29 场。"
           ]
         }
       ]

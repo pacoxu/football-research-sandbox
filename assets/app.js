@@ -46,6 +46,7 @@ const state = {
   scoutingCountry: "all",
   pathwaysCountry: "China PR",
   spainPyramidFilter: "all",
+  bigFiveLeague: "all",
   tournamentFilters: {
     level: "all"
   },
@@ -98,6 +99,8 @@ const UI_COPY = {
     "page.pathways.description": "比较中国、日本、韩国、挪威、丹麦和瑞典的足协治理、学校足球、俱乐部学院、人才识别与职业桥梁。",
     "page.spain-system.title": "西班牙联赛与青训体系 | 青训球员追踪站",
     "page.spain-system.description": "对照西班牙职业联赛、U19/U16 青年联赛，以及本站已建档中国球员在这些层级中的落点。",
+    "page.big-five.title": "五大联赛中日韩一线队 | 青训球员追踪站",
+    "page.big-five.description": "按英超、西甲、意甲、德甲、法甲切换，对照中日韩一线队球员的核心、主力、轮换、替补和边缘。",
     "page.coaches.title": "青训教练 | 青训球员追踪站",
     "page.coaches.description": "查看中国基层青训教练与男足 U 系列教练组、执教机构、年龄段及官方来源。",
     "page.data-center.title": "数据质量与对比 | 青训球员追踪站",
@@ -112,6 +115,8 @@ const UI_COPY = {
     "page.coaches.description": "整理中国校园、足校、职业梯队、独立基地、地区体校与民间项目的具名青训教练样本。",
     "page.stories.title": "足球故事 | 青训球员追踪站",
     "page.stories.description": "查看职业球员、青训教练和校园足球机构的可追溯故事。",
+    "page.youth-disputes.title": "青训纠纷案件汇总 | 青训球员追踪站",
+    "page.youth-disputes.description": "汇总国内青少年球员培训协议、自由身、违约金与培训补偿公开案例。",
     "page.story-detail.title": "故事详情 | 青训球员追踪站",
     "page.story-detail.description": "查看人物和机构故事的时间线、公开争议与来源边界。",
     "page.milestones.title": "2026 里程碑 | 青训球员追踪站",
@@ -128,8 +133,11 @@ const UI_COPY = {
     "nav.pathways": "青训体系",
     "nav.coaches": "青训教练",
     "nav.stories": "故事",
+    "nav.disputes": "青训纠纷",
     "home.quickLinks.storiesTitle": "足球故事",
     "home.quickLinks.storiesText": "阅读球员转型、校园传统和公开争议的来源化时间线。",
+    "home.quickLinks.disputesTitle": "青训纠纷",
+    "home.quickLinks.disputesText": "对照培训协议案例的年龄、主张金额、足协态度和最终结果。",
     "nav.dataCenter": "数据中心",
     "nav.predictions": "世界杯预测",
     "milestones.hero.eyebrow": "2026 Milestones",
@@ -181,6 +189,46 @@ const UI_COPY = {
     "home.quickLinks.overseasText": "区分当前留洋样本与历史记录。",
     "home.quickLinks.spainTitle": "西班牙体系",
     "home.quickLinks.spainText": "对照西甲到自治区联赛、U19 层级，以及本站中国球员落点。",
+    "home.quickLinks.bigFiveTitle": "五大联赛角色",
+    "home.quickLinks.bigFiveText": "按联赛对照中日韩一线队的核心、主力、轮换、替补和边缘。",
+    "bigFive.hero.eyebrow": "Big Five",
+    "bigFive.hero.title": "五大联赛中日韩一线队",
+    "bigFive.hero.text": "切换英超、西甲、意甲、德甲和法甲，对照中国、日本、韩国一线队球员处在核心、主力、轮换、替补还是边缘。",
+    "bigFive.hero.board": "查看角色对照",
+    "bigFive.hero.back": "返回留洋",
+    "bigFive.meta.eyebrow": "2026/27",
+    "bigFive.meta.coverage": "{count} 名一线队球员",
+    "bigFive.meta.checked": "角色核至 {date}",
+    "bigFive.board.eyebrow": "Roles",
+    "bigFive.board.title": "按联赛看三人组",
+    "bigFive.board.meta": "{count} 人 · 统计窗口写在每张卡片上",
+    "bigFive.board.all": "全部联赛",
+    "bigFive.switch.aria": "切换五大联赛",
+    "bigFive.summary.players": "当前范围",
+    "bigFive.summary.core": "核心",
+    "bigFive.summary.starter": "主力",
+    "bigFive.summary.rotation": "轮换",
+    "bigFive.summary.substitute": "替补",
+    "bigFive.summary.fringe": "边缘",
+    "bigFive.summary.unrated": "待核",
+    "bigFive.matrix.league": "联赛",
+    "bigFive.matrix.emptyCountry": "无线上一线队",
+    "bigFive.card.minutes": "{minutes} 分钟 / {matches} 场",
+    "bigFive.card.share": "占比 {share}",
+    "bigFive.card.asOf": "截至 {date}",
+    "bigFive.card.loan": "租借",
+    "bigFive.card.inferred": "分钟为推断",
+    "bigFive.card.unrated": "待核",
+    "bigFive.method.eyebrow": "Method",
+    "bigFive.method.title": "角色怎么划",
+    "bigFive.method.scale": "占比门槛",
+    "bigFive.method.core": "核心 ≥75%",
+    "bigFive.method.starter": "主力 ≥50%",
+    "bigFive.method.rotation": "轮换 ≥25%",
+    "bigFive.method.substitute": "替补 <25% 且已出场",
+    "bigFive.method.fringe": "边缘 = 0 分钟",
+    "bigFive.method.unrated": "待核 = 没有联赛分钟",
+    "overseas.europeTop.openBigFive": "打开五大联赛角色专题",
     "home.quickLinks.genbaoTitle": "根宝足球基地",
     "home.quickLinks.genbaoText": "按代际查看基地代表球员、培养路径与当前状态。",
     "home.quickLinks.coachesTitle": "青训教练",
@@ -406,6 +454,15 @@ const UI_COPY = {
     "spain.pyramid.note": "点层级可跳到下方球员表。西甲俱乐部名字不等于西甲出场。",
     "spain.pyramid.tier": "第 {tier} 级",
     "spain.pyramid.count": "{count} 条样本",
+    "spain.u19.eyebrow": "荣誉联赛 + 全国二级",
+    "spain.u19.title": "西班牙 U19 中国球员",
+    "spain.u19.layer": "层级",
+    "spain.u19.player": "球员",
+    "spain.u19.age": "年龄",
+    "spain.u19.club": "球队",
+    "spain.u19.season": "赛季",
+    "spain.u19.appearances": "场次",
+    "spain.u19.goals": "进球",
     "spain.players.eyebrow": "Placements",
     "spain.players.title": "哪些球员踢过这些层级",
     "spain.players.meta": "当前筛选 {count} 条",
@@ -661,6 +718,38 @@ const UI_COPY = {
     "stories.notFound.title": "未找到对应故事",
     "stories.notFound.text": "当前故事不存在或尚未公开。",
     "stories.link.open": "查看故事",
+    "disputes.hero.eyebrow": "Youth Training Disputes",
+    "disputes.hero.title": "青训纠纷案件汇总",
+    "disputes.hero.text": "对照国内青少年培训协议与合同纠纷的年龄、主张金额、足协态度和最终结果。违约金由球员或家长承担，培训补偿由新俱乐部支付，两笔钱不混算。",
+    "disputes.coverage.eyebrow": "Coverage",
+    "disputes.coverage.value": "{count} 个公开案例",
+    "disputes.coverage.checked": "核查至 {date}",
+    "disputes.rules.eyebrow": "CFA Rules",
+    "disputes.rules.title": "足协规则怎么变",
+    "disputes.rules.source": "规则来源",
+    "disputes.cases.eyebrow": "Case File",
+    "disputes.cases.title": "公开可核案例",
+    "disputes.table.case": "案例",
+    "disputes.table.age": "年龄",
+    "disputes.table.amount": "主张金额",
+    "disputes.table.cfa": "足协态度",
+    "disputes.table.outcome": "最终结果",
+    "disputes.detail.eyebrow": "Case Notes",
+    "disputes.detail.title": "案件说明与来源",
+    "disputes.field.age": "年龄",
+    "disputes.field.amount": "主张金额",
+    "disputes.field.cfa": "足协态度",
+    "disputes.field.outcome": "最终结果",
+    "disputes.status.pending": "进行中",
+    "disputes.status.settled": "协商解决",
+    "disputes.status.withdrawn": "撤诉",
+    "disputes.status.judged": "已判决",
+    "disputes.status.contrast": "对照样本",
+    "disputes.status.blocked": "规则受阻",
+    "disputes.status.unresolved": "结果未公开",
+    "disputes.confidence": "证据强度：{value}",
+    "disputes.excluded.eyebrow": "Excluded",
+    "disputes.excluded.title": "明确不入库",
     "tournamentDetail.breadcrumb.list": "赛事列表",
     "tournamentDetail.breadcrumb.detail": "赛事详情",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -751,6 +840,7 @@ const UI_COPY = {
     "tournamentDetail.squad.latestNote":
       "按最新公开名单图整理；这份视图用于跟踪当前中国 U17 队名单，不替代 2026 U17 亚洲杯终报名表。",
     "tournamentDetail.squad.headCoach": "主教练：{name}",
+    "tournamentDetail.squad.staff": "教练与保障团队",
     "tournamentDetail.squad.finalsToggle": "查看 2026 U17 亚洲杯终报名表",
     "tournamentDetail.matches.eyebrow": "China Matches",
     "tournamentDetail.matches.title": "中国队比赛明细",
@@ -1099,6 +1189,8 @@ const UI_COPY = {
     "page.pathways.description": "Compare association governance, school football, club academies, talent identification and professional bridges across China, Japan, South Korea, Norway, Denmark and Sweden.",
     "page.spain-system.title": "Spain leagues and youth system | Youth Player Tracking Desk",
     "page.spain-system.description": "Compare Spain’s senior pyramid, U19/U16 youth leagues, and documented Chinese player placements.",
+    "page.big-five.title": "Big Five CJK first teams | Youth Player Tracking Desk",
+    "page.big-five.description": "Switch across the Premier League, La Liga, Serie A, the Bundesliga and Ligue 1 to compare Chinese, Japanese and Korean first-team roles.",
     "page.coaches.title": "Youth Coaches | Youth Player Tracking Desk",
     "page.coaches.description": "Explore Chinese grassroots youth coaches and men's youth national-team staffs with organizations, age groups, and source links.",
     "page.data-center.title": "Data Quality and Comparison | Youth Player Tracking Desk",
@@ -1113,6 +1205,8 @@ const UI_COPY = {
     "page.coaches.description": "Named youth coaches working across schools, academies, professional youth teams, regional sports schools and independent projects in China.",
     "page.stories.title": "Football Stories | Youth Player Tracking Desk",
     "page.stories.description": "Traceable stories about professional players, youth coaches and school-football institutions.",
+    "page.youth-disputes.title": "Youth Training Dispute Cases | Youth Player Tracking Desk",
+    "page.youth-disputes.description": "Public Chinese youth training-agreement, free-agent, damages and compensation cases.",
     "page.story-detail.title": "Story Detail | Youth Player Tracking Desk",
     "page.story-detail.description": "Timelines, public exchanges and source boundaries for people and institutions.",
     "page.milestones.title": "2026 Milestones | Youth Player Tracking Desk",
@@ -1129,8 +1223,11 @@ const UI_COPY = {
     "nav.pathways": "Youth Systems",
     "nav.coaches": "Coaches",
     "nav.stories": "Stories",
+    "nav.disputes": "Disputes",
     "home.quickLinks.storiesTitle": "Football stories",
     "home.quickLinks.storiesText": "Read sourced timelines about player transitions, school traditions and public exchanges.",
+    "home.quickLinks.disputesTitle": "Youth disputes",
+    "home.quickLinks.disputesText": "Compare ages, claimed sums, CFA positions and outcomes in training-agreement cases.",
     "nav.dataCenter": "Data",
     "nav.predictions": "World Cup Forecast",
     "milestones.hero.eyebrow": "2026 Milestones",
@@ -1182,6 +1279,46 @@ const UI_COPY = {
     "home.quickLinks.overseasText": "Separate current overseas samples from historical records.",
     "home.quickLinks.spainTitle": "Spain system",
     "home.quickLinks.spainText": "Compare LaLiga through regional leagues, the U19 ladder, and documented Chinese placements.",
+    "home.quickLinks.bigFiveTitle": "Big Five roles",
+    "home.quickLinks.bigFiveText": "Compare Chinese, Japanese and Korean first-team roles across the five leagues.",
+    "bigFive.hero.eyebrow": "Big Five",
+    "bigFive.hero.title": "China, Japan and Korea in the Big Five",
+    "bigFive.hero.text": "Switch the Premier League, La Liga, Serie A, the Bundesliga and Ligue 1, and compare who is a core player, starter, rotation piece, substitute or fringe.",
+    "bigFive.hero.board": "Open the role board",
+    "bigFive.hero.back": "Back to overseas",
+    "bigFive.meta.eyebrow": "2026/27",
+    "bigFive.meta.coverage": "{count} first-team players",
+    "bigFive.meta.checked": "Roles checked through {date}",
+    "bigFive.board.eyebrow": "Roles",
+    "bigFive.board.title": "Three countries, one league at a time",
+    "bigFive.board.meta": "{count} players · each card keeps its own cutoff",
+    "bigFive.board.all": "All five leagues",
+    "bigFive.switch.aria": "Switch Big Five league",
+    "bigFive.summary.players": "In view",
+    "bigFive.summary.core": "Core",
+    "bigFive.summary.starter": "Starter",
+    "bigFive.summary.rotation": "Rotation",
+    "bigFive.summary.substitute": "Substitute",
+    "bigFive.summary.fringe": "Fringe",
+    "bigFive.summary.unrated": "Unrated",
+    "bigFive.matrix.league": "League",
+    "bigFive.matrix.emptyCountry": "No first-team player",
+    "bigFive.card.minutes": "{minutes} min / {matches} matches",
+    "bigFive.card.share": "{share} of available minutes",
+    "bigFive.card.asOf": "Through {date}",
+    "bigFive.card.loan": "Loan",
+    "bigFive.card.inferred": "Minutes inferred",
+    "bigFive.card.unrated": "Unrated",
+    "bigFive.method.eyebrow": "Method",
+    "bigFive.method.title": "How roles are graded",
+    "bigFive.method.scale": "Share thresholds",
+    "bigFive.method.core": "Core ≥75%",
+    "bigFive.method.starter": "Starter ≥50%",
+    "bigFive.method.rotation": "Rotation ≥25%",
+    "bigFive.method.substitute": "Substitute below 25%, but played",
+    "bigFive.method.fringe": "Fringe = 0 minutes",
+    "bigFive.method.unrated": "Unrated = no league minutes",
+    "overseas.europeTop.openBigFive": "Open the Big Five role page",
     "home.quickLinks.genbaoTitle": "Genbao Football Base",
     "home.quickLinks.genbaoText": "Browse representative generations, pathways and current status.",
     "home.quickLinks.coachesTitle": "Youth coaches",
@@ -1407,6 +1544,15 @@ const UI_COPY = {
     "spain.pyramid.note": "Jump from a layer to the table below. A La Liga club name is not a La Liga appearance.",
     "spain.pyramid.tier": "Tier {tier}",
     "spain.pyramid.count": "{count} samples",
+    "spain.u19.eyebrow": "Honour league + second tier",
+    "spain.u19.title": "Chinese players in Spanish U19 football",
+    "spain.u19.layer": "Layer",
+    "spain.u19.player": "Player",
+    "spain.u19.age": "Age",
+    "spain.u19.club": "Club",
+    "spain.u19.season": "Season",
+    "spain.u19.appearances": "Appearances",
+    "spain.u19.goals": "Goals",
     "spain.players.eyebrow": "Placements",
     "spain.players.title": "Which players reached these layers",
     "spain.players.meta": "Showing {count} placements",
@@ -1662,6 +1808,38 @@ const UI_COPY = {
     "stories.notFound.title": "Story not found",
     "stories.notFound.text": "This story does not exist or is not public.",
     "stories.link.open": "Open story",
+    "disputes.hero.eyebrow": "Youth Training Disputes",
+    "disputes.hero.title": "Youth training dispute cases",
+    "disputes.hero.text": "Compare ages, claimed amounts, CFA positions and outcomes in Chinese youth training-agreement disputes. Liquidated damages sit with players or parents; training compensation is paid by the new club.",
+    "disputes.coverage.eyebrow": "Coverage",
+    "disputes.coverage.value": "{count} public cases",
+    "disputes.coverage.checked": "Checked through {date}",
+    "disputes.rules.eyebrow": "CFA Rules",
+    "disputes.rules.title": "How CFA rules changed",
+    "disputes.rules.source": "Rule sources",
+    "disputes.cases.eyebrow": "Case File",
+    "disputes.cases.title": "Publicly checkable cases",
+    "disputes.table.case": "Case",
+    "disputes.table.age": "Age",
+    "disputes.table.amount": "Claimed amount",
+    "disputes.table.cfa": "CFA position",
+    "disputes.table.outcome": "Outcome",
+    "disputes.detail.eyebrow": "Case Notes",
+    "disputes.detail.title": "Notes and sources",
+    "disputes.field.age": "Age",
+    "disputes.field.amount": "Claimed amount",
+    "disputes.field.cfa": "CFA position",
+    "disputes.field.outcome": "Outcome",
+    "disputes.status.pending": "Pending",
+    "disputes.status.settled": "Settled",
+    "disputes.status.withdrawn": "Withdrawn",
+    "disputes.status.judged": "Judged",
+    "disputes.status.contrast": "Contrast",
+    "disputes.status.blocked": "Blocked",
+    "disputes.status.unresolved": "Unpublished outcome",
+    "disputes.confidence": "Evidence: {value}",
+    "disputes.excluded.eyebrow": "Excluded",
+    "disputes.excluded.title": "Explicitly excluded",
     "tournamentDetail.breadcrumb.list": "Tournaments",
     "tournamentDetail.breadcrumb.detail": "Tournament detail",
     "tournamentDetail.hero.eyebrow": "Tournament File",
@@ -1752,6 +1930,7 @@ const UI_COPY = {
     "tournamentDetail.squad.latestNote":
       "Compiled from the latest public roster graphic; this view tracks the current China U17 pool and does not replace the 2026 AFC U17 finals squad list.",
     "tournamentDetail.squad.headCoach": "Head coach: {name}",
+    "tournamentDetail.squad.staff": "Coaching and support staff",
     "tournamentDetail.squad.finalsToggle": "View the 2026 AFC U17 finals squad list",
     "tournamentDetail.matches.eyebrow": "China Matches",
     "tournamentDetail.matches.title": "China match detail",
@@ -2379,8 +2558,10 @@ const PAGE_METADATA = {
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
   "spain-system": { title: "page.spain-system.title", description: "page.spain-system.description" },
+  "big-five": { title: "page.big-five.title", description: "page.big-five.description" },
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
   stories: { title: "page.stories.title", description: "page.stories.description" },
+  "youth-disputes": { title: "page.youth-disputes.title", description: "page.youth-disputes.description" },
   "story-detail": { title: "page.story-detail.title", description: "page.story-detail.description" },
   "data-center": { title: "page.data-center.title", description: "page.data-center.description" },
   "dossier-detail": { title: "page.dossier-detail.title", description: "page.dossier-detail.description" },
@@ -2497,7 +2678,8 @@ const CHINA_STATUS_LABELS = {
   "qualification-pending": { zh: "资格赛待定", en: "Qualification pending" },
   "did-not-qualify": { zh: "未晋级", en: "Did not qualify" },
   "did-not-participate": { zh: "未参赛", en: "Did not participate" },
-  "qualification-cancelled": { zh: "资格路径取消", en: "Qualification cancelled" }
+  "qualification-cancelled": { zh: "资格路径取消", en: "Qualification cancelled" },
+  bronze: { zh: "铜牌", en: "Bronze" }
 };
 
 const TOURNAMENT_HISTORY_STAGE_LABELS = {
@@ -2637,7 +2819,10 @@ const TAG_LABELS = {
   "u23-overseas": { zh: "U23 留洋", en: "U23 overseas" },
   "u23-watch": { zh: "U23 观察", en: "U23 watch" },
   "uzbekistan-youth": { zh: "乌兹别克青训", en: "Uzbekistan youth" },
-  "winger-watch": { zh: "边路观察", en: "Winger watch" }
+  "winger-watch": { zh: "边路观察", en: "Winger watch" },
+  "asian-games-men-2026": { zh: "亚运会男足 2026", en: "Asian Games men 2026" },
+  "asian-games-overage": { zh: "亚运超龄", en: "Asian Games overage" },
+  "china-senior-2026": { zh: "中国成年队 2026", en: "China senior 2026" }
 };
 
 const VERIFICATION_STATUS_LABELS = {
@@ -2927,6 +3112,12 @@ async function boot() {
       return;
     }
 
+    if (page === "big-five") {
+      initializeBigFivePage();
+      renderBigFivePage();
+      return;
+    }
+
     if (page === "coaches") {
       renderCoachesPage();
       return;
@@ -2939,6 +3130,11 @@ async function boot() {
 
     if (page === "stories") {
       renderStoriesPage();
+      return;
+    }
+
+    if (page === "youth-disputes") {
+      renderYouthDisputesPage();
       return;
     }
 
@@ -3002,7 +3198,8 @@ function setActiveNavigation() {
       (page === "story-detail" && link.dataset.nav === "stories") ||
       (page === "tournament-detail" && link.dataset.nav === "tournaments") ||
       (page === "youth-league" && link.dataset.nav === "tournaments") ||
-      (page === "spain-system" && link.dataset.nav === "pathways")
+      (page === "spain-system" && link.dataset.nav === "pathways") ||
+      (page === "big-five" && link.dataset.nav === "overseas")
     ) {
       link.classList.add("is-active");
     }
@@ -3398,6 +3595,12 @@ function getPlayerAffiliation(player) {
     isTournamentSnapshot,
     registrationAsOf
   };
+}
+
+function collectPlayerMilestones(player) {
+  return (player.tournament_participation ?? [])
+    .map((entry) => localizeText(entry.headline))
+    .filter(Boolean);
 }
 
 function buildPlayerHeroSummary(player, affiliation) {
@@ -3934,6 +4137,17 @@ function buildScore(match) {
 }
 
 function buildPlayerSearchBlob(player) {
+  const tagLabels = (player.focus_tags ?? []).flatMap((tag) => {
+    const preset = TAG_LABELS[tag];
+    return preset ? [tag, preset.zh, preset.en] : [tag];
+  });
+  const participationLabels = (player.tournament_participation ?? []).flatMap((entry) => [
+    entry.competition_id,
+    entry.label,
+    entry.team,
+    getTournamentDisplayName(entry.competition_id)
+  ]);
+
   return [
     ...getPlayerNameVariants(player),
     player.country,
@@ -3944,7 +4158,8 @@ function buildPlayerSearchBlob(player) {
     formatCountryName(player.registration_club?.country),
     formatPosition(player.primary_position),
     inferLeagueSystem(player),
-    ...(player.focus_tags ?? []),
+    ...tagLabels,
+    ...participationLabels,
     ...(player.training_pathway ?? []).flatMap((item) => [
       item.organization,
       localizeClubName(item.organization, "zh", state.overview?.club_name_overrides ?? {})
@@ -4459,6 +4674,7 @@ function renderDossierPlayerDetailPage() {
       <p class="eyebrow">${escapeHtml(t("dossierPlayer.hero.eyebrow"))}</p>
       <h1>${escapeHtml(profile.display_name)}</h1>
       <p class="hero-text">${escapeHtml(profile.representative_experience)}</p>
+      ${profile.milestone ? `<p class="hero-milestone">${escapeHtml(localizeText(profile.milestone))}</p>` : ""}
       <div class="chip-row">
         <span class="chip">${escapeHtml(profile.squad)}</span>
         <span class="chip">${escapeHtml(profile.birth_year ?? t("common.pending"))}</span>
@@ -4911,6 +5127,25 @@ function renderTournamentRosterViewGroup(group) {
   `;
 }
 
+function renderTournamentStaffList(staff) {
+  if (!Array.isArray(staff) || staff.length === 0) {
+    return "";
+  }
+
+  return `
+    <p class="timeline-label">${escapeHtml(t("tournamentDetail.squad.staff"))}</p>
+    <ul class="mini-bullet-list">
+      ${staff
+        .map((group) => {
+          const role = localizeText(group.role, "");
+          const members = (group.members ?? []).join("、");
+          return `<li><strong>${escapeHtml(role)}</strong>：${escapeHtml(members)}</li>`;
+        })
+        .join("")}
+    </ul>
+  `;
+}
+
 function renderTournamentLatestRosterView(view, squadEntries) {
   const groups = view?.groups ?? [];
   const headCoach =
@@ -4925,6 +5160,7 @@ function renderTournamentLatestRosterView(view, squadEntries) {
       </div>
       <p class="small-note">${escapeHtml(note)}</p>
       ${headCoach ? `<p class="small-note">${escapeHtml(t("tournamentDetail.squad.headCoach", { name: headCoach }))}</p>` : ""}
+      ${renderTournamentStaffList(view?.staff)}
       <div class="roster-group-grid">
         ${groups.map(renderTournamentRosterViewGroup).join("")}
       </div>
@@ -6695,6 +6931,9 @@ function renderPlayerDetailPage() {
       <h1>${escapeHtml(displayName)}</h1>
       ${nameMeta ? `<p class="hero-side-note">${escapeHtml(nameMeta)}</p>` : ""}
       <p class="hero-text">${escapeHtml(buildPlayerHeroSummary(player, affiliation))}</p>
+      ${collectPlayerMilestones(player)
+        .map((text) => `<p class="hero-milestone">${escapeHtml(text)}</p>`)
+        .join("")}
       <div class="chip-row">
         <span class="chip">${escapeHtml(formatCountryName(player.country))}</span>
         <span class="chip">${formatAgeBand(player.age_band)}</span>
@@ -7787,6 +8026,102 @@ function renderStoriesPage() {
   document.querySelector("#storiesCheckedAt").textContent = t("stories.coverage.checked", { date: formatDate(archive?.last_checked) });
   document.querySelector("#storiesEditorialPolicy").textContent = localizeText(archive?.editorial_policy);
   document.querySelector("#storiesGrid").innerHTML = stories.map(renderFootballStoryCard).join("");
+}
+
+function renderYouthDisputesPage() {
+  const archive = state.overview?.youth_training_disputes;
+  const cases = archive?.cases ?? [];
+  const rules = archive?.cfa_rules ?? [];
+  const excluded = archive?.excluded ?? [];
+  const coverage = document.querySelector("#disputesCoverage");
+  const checked = document.querySelector("#disputesCheckedAt");
+  if (coverage) coverage.textContent = t("disputes.coverage.value", { count: cases.length });
+  if (checked) checked.textContent = t("disputes.coverage.checked", { date: formatDate(archive?.last_checked) });
+  const policy = document.querySelector("#disputesEditorialPolicy");
+  const scope = document.querySelector("#disputesScopeNote");
+  if (policy) policy.textContent = localizeText(archive?.editorial_policy);
+  if (scope) scope.textContent = localizeText(archive?.scope_note);
+
+  const rulesNode = document.querySelector("#disputesRules");
+  if (rulesNode) {
+    rulesNode.innerHTML = rules.map((rule) => `
+      <article class="story-card">
+        <div class="chip-row">
+          <span class="chip">${escapeHtml(rule.year)}</span>
+        </div>
+        <h3>${escapeHtml(localizeText(rule.title))}</h3>
+        <p>${escapeHtml(localizeText(rule.summary))}</p>
+        <p class="timeline-label">${escapeHtml(t("disputes.rules.source"))}</p>
+        ${(rule.source_links ?? []).map((source) => `
+          <p class="small-note"><a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a></p>
+        `).join("")}
+      </article>
+    `).join("");
+  }
+
+  const tableBody = document.querySelector("#disputesTableBody");
+  if (tableBody) {
+    tableBody.innerHTML = cases.map((item) => `
+      <tr>
+        <td>
+          <strong>${escapeHtml(localizeText(item.title))}</strong><br>
+          <span class="chip">${escapeHtml(t(`disputes.status.${item.status}`))}</span>
+          <span class="small-note">${escapeHtml(item.year_range)}</span>
+        </td>
+        <td>${escapeHtml(localizeText(item.player_age))}</td>
+        <td>${escapeHtml(localizeText(item.claimed_amount))}</td>
+        <td>${escapeHtml(localizeText(item.cfa_position))}</td>
+        <td>${escapeHtml(localizeText(item.outcome))}</td>
+      </tr>
+    `).join("");
+  }
+
+  const grid = document.querySelector("#disputesCaseGrid");
+  if (grid) {
+    grid.innerHTML = cases.map((item) => `
+      <article class="story-card">
+        <div class="chip-row">
+          <span class="chip">${escapeHtml(t(`disputes.status.${item.status}`))}</span>
+          <span class="chip">${escapeHtml(item.year_range)}</span>
+          <span class="chip">${escapeHtml(t("disputes.confidence", { value: item.confidence }))}</span>
+        </div>
+        <h3>${escapeHtml(localizeText(item.title))}</h3>
+        <p>${escapeHtml(localizeText(item.summary))}</p>
+        <dl class="dispute-meta-grid">
+          <div>
+            <dt>${escapeHtml(t("disputes.field.age"))}</dt>
+            <dd>${escapeHtml(localizeText(item.player_age))}</dd>
+          </div>
+          <div>
+            <dt>${escapeHtml(t("disputes.field.amount"))}</dt>
+            <dd>${escapeHtml(localizeText(item.claimed_amount))}</dd>
+          </div>
+          <div>
+            <dt>${escapeHtml(t("disputes.field.cfa"))}</dt>
+            <dd>${escapeHtml(localizeText(item.cfa_position))}</dd>
+          </div>
+          <div>
+            <dt>${escapeHtml(t("disputes.field.outcome"))}</dt>
+            <dd>${escapeHtml(localizeText(item.outcome))}</dd>
+          </div>
+        </dl>
+        ${(item.source_links ?? []).map((source) => `
+          <p class="small-note"><a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a></p>
+        `).join("")}
+      </article>
+    `).join("");
+  }
+
+  const excludedSection = document.querySelector("#disputesExcludedSection");
+  const excludedNode = document.querySelector("#disputesExcluded");
+  if (excludedSection && excludedNode) {
+    excludedSection.hidden = excluded.length === 0;
+    excludedNode.innerHTML = excluded.map((item) => `
+      <article class="stack-card">
+        <p>${escapeHtml(localizeText(item.reason))}</p>
+      </article>
+    `).join("");
+  }
 }
 
 function renderMilestonesPage() {
@@ -9162,6 +9497,241 @@ function renderEuropeTopLeaguesSnapshot() {
   `;
 }
 
+const BIG_FIVE_ROLE_ORDER = ["core", "starter", "rotation", "substitute", "fringe", "unrated"];
+const BIG_FIVE_COUNTRY_ORDER = ["China PR", "Japan", "Korea Republic"];
+
+function gradeBigFiveSquadRole(record) {
+  const minutes = record?.league_minutes;
+  const available = record?.matches_available;
+  if (
+    record?.minutes_basis === "missing" ||
+    !Number.isFinite(minutes) ||
+    !Number.isFinite(available) ||
+    available <= 0
+  ) {
+    return "unrated";
+  }
+  if (minutes <= 0) {
+    return "fringe";
+  }
+  const share = minutes / (available * 90);
+  if (share >= 0.75) return "core";
+  if (share >= 0.5) return "starter";
+  if (share >= 0.25) return "rotation";
+  return "substitute";
+}
+
+function formatBigFiveShare(record) {
+  if (!Number.isFinite(record.league_minutes) || !Number.isFinite(record.matches_available) || record.matches_available <= 0) {
+    return "";
+  }
+  const percent = Math.round((record.league_minutes / (record.matches_available * 90)) * 1000) / 10;
+  return `${percent}%`;
+}
+
+function getBigFiveCjkPayload() {
+  return state.overview?.big_five_cjk_squad_roles ?? null;
+}
+
+function getBigFiveCjkPlayers() {
+  const payload = getBigFiveCjkPayload();
+  const roster = new Map(
+    (state.overview?.europe_top_leagues_japan_korea?.players ?? []).map((player) => [player.id, player])
+  );
+  return (payload?.players ?? []).map((record) => {
+    const rosterPlayer = roster.get(record.id);
+    const merged = {
+      ...record,
+      country: record.country ?? rosterPlayer?.country,
+      name: record.name ?? rosterPlayer?.name,
+      position: record.position ?? rosterPlayer?.position,
+      club: record.club ?? rosterPlayer?.club,
+      league: record.league ?? rosterPlayer?.league,
+      loan: Boolean(record.loan ?? rosterPlayer?.loan),
+      marketValue: rosterPlayer?.market_value ?? record.market_value ?? null
+    };
+    return { ...merged, role: gradeBigFiveSquadRole(merged) };
+  });
+}
+
+function initializeBigFivePage() {
+  const payload = getBigFiveCjkPayload();
+  const requested = new URLSearchParams(window.location.search).get("league");
+  const known = new Set((payload?.leagues ?? []).map((league) => league.id));
+  state.bigFiveLeague = known.has(requested) ? requested : "all";
+  const board = document.querySelector("#bigFiveBoard");
+  if (board && !board.dataset.bound) {
+    board.dataset.bound = "true";
+    board.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-league]");
+      if (!button || !board.contains(button)) return;
+      state.bigFiveLeague = button.dataset.league;
+      replaceQueryParams({ league: state.bigFiveLeague });
+      renderBigFivePage();
+    });
+  }
+}
+
+function renderBigFivePlayerCard(player) {
+  const share = formatBigFiveShare(player);
+  const minuteLine = Number.isFinite(player.league_minutes) && Number.isFinite(player.matches_available)
+    ? t("bigFive.card.minutes", { minutes: player.league_minutes, matches: player.matches_available })
+    : t("bigFive.card.unrated");
+  const note = localizeText(player.note);
+  return `
+    <article class="big-five-player">
+      <div class="big-five-player-head">
+        <div>${renderEuropeTopLeaguePlayerName(player)}</div>
+        <span class="chip big-five-role big-five-role-${player.role}">${escapeHtml(t(`bigFive.summary.${player.role}`))}</span>
+      </div>
+      <p class="small-note">${escapeHtml(player.club ?? "")}${player.loan ? ` · ${escapeHtml(t("bigFive.card.loan"))}` : ""} · ${escapeHtml(formatEuropeTopLeaguePosition(player.position))}</p>
+      <p class="big-five-minutes">${escapeHtml(minuteLine)}${share ? ` · ${escapeHtml(t("bigFive.card.share", { share }))}` : ""}</p>
+      <p class="small-note">${escapeHtml(player.league)} · ${escapeHtml(t("bigFive.card.asOf", { date: formatDate(player.as_of) }))}${player.minutes_basis === "inferred-zero" ? ` · ${escapeHtml(t("bigFive.card.inferred"))}` : ""}</p>
+      ${note ? `<p class="small-note">${escapeHtml(note)}</p>` : ""}
+    </article>
+  `;
+}
+
+function renderBigFivePage() {
+  const payload = getBigFiveCjkPayload();
+  const hero = document.querySelector("#bigFiveHeroStats");
+  if (!payload || !hero) {
+    return;
+  }
+
+  const players = getBigFiveCjkPlayers();
+  const leagues = payload.leagues ?? [];
+  const selectedLeague = leagues.find((league) => league.id === state.bigFiveLeague) ?? null;
+  const visible = selectedLeague
+    ? players.filter((player) => player.league === selectedLeague.league)
+    : players;
+  const switcher = document.querySelector("#bigFiveLeagueSwitch");
+  const scope = document.querySelector("#bigFiveScope");
+  const summary = document.querySelector("#bigFiveSummary");
+  const matrix = document.querySelector("#bigFiveMatrix");
+  const columns = document.querySelector("#bigFiveColumns");
+  const method = document.querySelector("#bigFiveMethod");
+  const sources = document.querySelector("#bigFiveSources");
+  const boardMeta = document.querySelector("#bigFiveBoardMeta");
+
+  hero.innerHTML = `
+    <p class="eyebrow">${escapeHtml(t("bigFive.meta.eyebrow"))}</p>
+    <h2>${escapeHtml(t("bigFive.meta.coverage", { count: players.length }))}</h2>
+    <p class="small-note">${escapeHtml(t("bigFive.meta.checked", { date: formatDate(payload.checked_at) }))}</p>
+  `;
+  if (switcher) {
+    switcher.setAttribute("aria-label", t("bigFive.switch.aria"));
+    switcher.innerHTML = [
+      { id: "all", label: t("bigFive.board.all") },
+      ...leagues.map((league) => ({ id: league.id, label: localizeText(league.label) }))
+    ]
+      .map(
+        (league) => `
+          <button type="button" data-league="${escapeHtml(league.id)}" class="${state.bigFiveLeague === league.id ? "is-active" : ""}" aria-pressed="${state.bigFiveLeague === league.id}">
+            ${escapeHtml(league.label)}
+          </button>
+        `
+      )
+      .join("");
+  }
+  if (scope) {
+    scope.textContent = localizeText(payload.scope_note);
+  }
+  if (boardMeta) {
+    boardMeta.textContent = t("bigFive.board.meta", { count: visible.length });
+  }
+  if (summary) {
+    summary.innerHTML = ["players", ...BIG_FIVE_ROLE_ORDER]
+      .map((role) => {
+        const value = role === "players" ? visible.length : visible.filter((player) => player.role === role).length;
+        return `
+          <article class="stat-card">
+            <p class="stat-label">${escapeHtml(t(`bigFive.summary.${role}`))}</p>
+            <p class="stat-value">${value}</p>
+          </article>
+        `;
+      })
+      .join("");
+  }
+  if (matrix) {
+    matrix.innerHTML = `
+      <table class="data-table big-five-matrix">
+        <thead>
+          <tr>
+            <th>${escapeHtml(t("bigFive.matrix.league"))}</th>
+            ${BIG_FIVE_COUNTRY_ORDER.map((country) => `<th>${escapeHtml(formatEuropeTopLeagueCountry(country))}</th>`).join("")}
+          </tr>
+        </thead>
+        <tbody>
+          ${leagues
+            .map((league) => {
+              const leaguePlayers = players.filter((player) => player.league === league.league);
+              return `
+                <tr>
+                  <td><button type="button" class="text-button" data-league="${escapeHtml(league.id)}">${escapeHtml(localizeText(league.label))}</button></td>
+                  ${BIG_FIVE_COUNTRY_ORDER.map((country) => {
+                    const group = leaguePlayers.filter((player) => player.country === country);
+                    if (group.length === 0) {
+                      return `<td class="small-note">${escapeHtml(t("bigFive.matrix.emptyCountry"))}</td>`;
+                    }
+                    const bits = BIG_FIVE_ROLE_ORDER
+                      .map((role) => {
+                        const count = group.filter((player) => player.role === role).length;
+                        return count ? `${t(`bigFive.summary.${role}`)} ${count}` : "";
+                      })
+                      .filter(Boolean);
+                    return `<td><strong>${group.length}</strong><div class="small-note">${escapeHtml(bits.join(" · "))}</div></td>`;
+                  }).join("")}
+                </tr>
+              `;
+            })
+            .join("")}
+        </tbody>
+      </table>
+    `;
+  }
+  if (columns) {
+    columns.innerHTML = BIG_FIVE_COUNTRY_ORDER.map((country) => {
+      const group = visible
+        .filter((player) => player.country === country)
+        .sort((left, right) => {
+          const roleGap = BIG_FIVE_ROLE_ORDER.indexOf(left.role) - BIG_FIVE_ROLE_ORDER.indexOf(right.role);
+          if (roleGap !== 0) return roleGap;
+          return (right.league_minutes ?? -1) - (left.league_minutes ?? -1);
+        });
+      return `
+        <section class="big-five-country">
+          <header>
+            <h3>${escapeHtml(formatEuropeTopLeagueCountry(country))}</h3>
+            <span class="section-note">${group.length}</span>
+          </header>
+          ${
+            group.length
+              ? group.map(renderBigFivePlayerCard).join("")
+              : `<p class="empty-inline">${escapeHtml(t("bigFive.matrix.emptyCountry"))}</p>`
+          }
+        </section>
+      `;
+    }).join("");
+  }
+  if (method) {
+    method.innerHTML = `
+      <article class="stack-card"><p>${escapeHtml(localizeText(payload.methodology))}</p></article>
+      <article class="stack-card">
+        <h3>${escapeHtml(t("bigFive.method.scale"))}</h3>
+        <div class="chip-row">
+          ${["core", "starter", "rotation", "substitute", "fringe", "unrated"]
+            .map((role) => `<span class="chip big-five-role big-five-role-${role}">${escapeHtml(t(`bigFive.method.${role}`))}</span>`)
+            .join("")}
+        </div>
+      </article>
+    `;
+  }
+  if (sources) {
+    sources.innerHTML = renderLinkPills(payload.sources ?? []);
+  }
+}
+
 function renderOverseasPage() {
   const comparisonStats = document.querySelector("#overseasComparisonStats");
   const currentEyebrow = document.querySelector("#overseasCurrentEyebrow");
@@ -10180,6 +10750,55 @@ function initializeSpainSystemPage() {
   }
 }
 
+function isOpenSpainCount(value) {
+  return /[–~]|起|约/.test(value);
+}
+
+function renderSpainU19Table(payload, layerMap) {
+  const table = payload.u19_table;
+  const note = document.querySelector("#spainU19Note");
+  const head = document.querySelector("#spainU19Head");
+  const body = document.querySelector("#spainU19Body");
+  if (!table || !head || !body) return;
+  if (note) note.textContent = localizeText(table.note);
+  head.innerHTML = `<tr>
+    <th>${escapeHtml(t("spain.u19.layer"))}</th>
+    <th>${escapeHtml(t("spain.u19.player"))}</th>
+    <th>${escapeHtml(t("spain.u19.age"))}</th>
+    <th>${escapeHtml(t("spain.u19.club"))}</th>
+    <th>${escapeHtml(t("spain.u19.season"))}</th>
+    <th>${escapeHtml(t("spain.u19.appearances"))}</th>
+    <th>${escapeHtml(t("spain.u19.goals"))}</th>
+  </tr>`;
+  body.innerHTML = (table.rows ?? [])
+    .map((row) => {
+      const layer = layerMap.get(row.layer_id);
+      const href = getSpainPlayerHref(row);
+      const label = state.language === "en" ? row.name : row.local_name || row.name;
+      const nameCell = href
+        ? `<a class="inline-link" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`
+        : escapeHtml(label);
+      const appearances = row.appearances;
+      const appearanceCell = isOpenSpainCount(appearances)
+        ? `<span class="spain-count-open">${escapeHtml(appearances)}</span>`
+        : escapeHtml(appearances);
+      const goals = localizeText(row.goals);
+      const goalCell = isOpenSpainCount(goals)
+        ? `<span class="spain-count-open">${escapeHtml(goals)}</span>`
+        : escapeHtml(goals);
+      return `<tr>
+        <td>${escapeHtml(layer ? localizeText(layer.name) : row.layer_id)}</td>
+        <td>${nameCell}</td>
+        <td>${escapeHtml(row.age)}</td>
+        <td>${escapeHtml(localizeText(row.club))}</td>
+        <td>${escapeHtml(row.season)}</td>
+        <td>${appearanceCell}</td>
+        <td>${goalCell}</td>
+      </tr>`;
+    })
+    .join("");
+}
+
 function renderSpainSystemPage() {
   const payload = getSpainSystemPayload();
   const layerMap = getSpainLayerMap(payload);
@@ -10252,8 +10871,9 @@ function renderSpainSystemPage() {
           </section>
         `;
       })
-      .join("");
+          .join("");
   }
+  renderSpainU19Table(payload, layerMap);
   const filters = document.querySelector("#spainPlayerFilters");
   if (filters) {
     filters.innerHTML = `

@@ -4,12 +4,35 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-10-14
+
+### Added
+
+- Recorded Li Haoyan's 10 October 2026 Barcelona Sub-15 goal against Cornellà as the first official match goal by a Chinese player at FC Barcelona. The note keeps the Catalan youth-league scope, separates pre-season goals, and leaves the shot type unresolved.
+- Surfaced Lyu Mengyang's 20 September 2026 Espanyol Juvenil B goal at Sant Cugat on his player page and dossier page. The line stays in the second national U19 tier and is kept apart from Espanyol's senior reserve side.
+- Recorded Wei Xiangxin's 19 September 2026 Auxerre B goal against Châteauroux B as his first official goal for the club, in National 2. The note keeps it out of Ligue 1 and records that Ji Xiaoxuan had already scored for Auxerre.
+
+### Corrected
+
+- Removed the dossier claim that Kuang Zhaolei was the first Chinese player to sign for La Masia. His stored path remains Damm, L'Hospitalet, Atlètic Lleida and Qingdao Hainiu.
+
 ## 2026-10-04
 
 ### Added
 
+- Added a standalone youth-training dispute page in the main navigation, covering seven publicly checkable cases plus the 2018 first-contract and 2026 RSTP rule notes.
+- Added CFA-verified Chinese names for China U23 / Asian Games players so they can be searched on the site, including Zhao Songyuan's 2026 senior-camp tag.
 - Added a public 2026 China men's milestones page covering the U23 Asian Cup runners-up, U17 World Cup qualification and Asian Games bronze, with sourced historical intervals and a share graphic.
 - Added a dedicated Spain league-system page that splits the senior pyramid, U19/U16 youth pyramid, professional vs youth contracts, and documented Chinese player placements.
+
+### Updated
+
+- Recorded China's 2026 Asian Games men's football bronze-medal result and published the travelling coaching staff on the tournament page. Gold-medal result and missing minutes remain unfilled.
+
+### Data Scope Notes
+
+- Youth-training dispute cases keep liquidated damages and training compensation separate; pending lawsuits are not given legal conclusions.
+- Native names stay unresolved unless a CFA, league, club, school, or government source is attached.
 
 ### Corrected
 

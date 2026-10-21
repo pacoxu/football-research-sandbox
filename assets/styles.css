@@ -323,6 +323,17 @@ main {
   font-size: 1rem;
 }
 
+.hero-milestone {
+  max-width: 68ch;
+  margin: 16px 0 0;
+  padding: 12px 14px;
+  border-left: 4px solid #103f3c;
+  border-radius: 0 12px 12px 0;
+  background: rgba(16, 63, 60, 0.08);
+  line-height: 1.7;
+  font-weight: 650;
+}
+
 .hero-spotlight {
   border-radius: var(--radius-lg);
   padding: 18px;
@@ -4517,6 +4528,102 @@ tbody tr:last-child td {
   }
 }
 
+.big-five-switch {
+  margin: 4px 0 16px;
+}
+
+.big-five-country-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.big-five-country {
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface-strong);
+}
+
+.big-five-country header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.big-five-country h3,
+.big-five-player p {
+  margin: 0;
+}
+
+.big-five-player {
+  display: grid;
+  gap: 4px;
+  padding: 12px 0;
+  border-top: 1px solid var(--line);
+}
+
+.big-five-player-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.big-five-minutes {
+  margin: 0;
+  font-weight: 750;
+}
+
+.big-five-role-core {
+  color: #7c2d12;
+  background: #fde7d4;
+}
+
+.big-five-role-starter {
+  color: #245b3d;
+  background: rgba(41, 111, 73, 0.14);
+}
+
+.big-five-role-rotation {
+  color: #225278;
+  background: rgba(46, 111, 160, 0.14);
+}
+
+.big-five-role-substitute {
+  color: #80540f;
+  background: rgba(183, 119, 29, 0.16);
+}
+
+.big-five-role-fringe,
+.big-five-role-unrated {
+  color: var(--muted);
+  background: rgba(104, 84, 68, 0.12);
+}
+
+.big-five-matrix {
+  min-width: 640px;
+}
+
+.big-five-matrix .text-button {
+  min-height: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--accent-deep);
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .big-five-country-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 620px) {
   .europe-league-grid {
     grid-template-columns: 1fr;
@@ -5055,6 +5162,32 @@ tbody tr:last-child td {
   .debut-forecast .forecast-factor-details dl {
     grid-template-columns: 1fr;
   }
+}
+
+.dispute-meta-grid {
+  display: grid;
+  gap: 10px;
+  margin: 12px 0 0;
+}
+
+.dispute-meta-grid dt {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.dispute-meta-grid dd {
+  margin: 4px 0 0;
+}
+
+@media (min-width: 720px) {
+  .dispute-meta-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.spain-count-open {
+  border-bottom: 1px dotted currentColor;
 }
 
 .spain-pyramid-grid {

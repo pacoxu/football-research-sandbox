@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-03",
+  "generated_at": "2026-10-04",
   "stats": {
     "player_count": 573,
     "country_count": 9,
@@ -19,7 +19,7 @@
       "short_name": "Asian Games Men 2026",
       "focus_level": "primary",
       "status": "completed",
-      "last_checked": "2026-10-03",
+      "last_checked": "2026-10-04",
       "date_range": {
         "start": "2026-09-15",
         "end": "2026-10-03"
@@ -33,7 +33,7 @@
         "United Arab Emirates",
         "DPR Korea"
       ],
-      "headline": "中国男足亚运队获铜牌：半决赛1比2负韩国，三四名决赛2比2后点球击败乌兹别克斯坦。",
+      "headline": "中国男足亚运队以 U23 班底加吴曦、张玉宁、朱辰杰三名超龄球员出征，小组赛头名出线后淘汰泰国，半决赛负于韩国，铜牌赛点球击败乌兹别克斯坦；金牌赛韩国对日本尚未写入冠军。",
       "eligibility": {
         "format": "u23-plus-three-overage",
         "note": "男子足球为U23赛事，每队最多可使用3名超龄球员。"
@@ -50,26 +50,17 @@
           {
             "date": "2026-09-16",
             "opponent": "DPR Korea",
-            "status": "played",
-            "score_for": 2,
-            "score_against": 1,
-            "result": "W"
+            "status": "scheduled"
           },
           {
             "date": "2026-09-20",
             "opponent": "IR Iran",
-            "status": "played",
-            "score_for": 0,
-            "score_against": 0,
-            "result": "D"
+            "status": "scheduled"
           },
           {
             "date": "2026-09-23",
             "opponent": "United Arab Emirates",
-            "status": "played",
-            "score_for": 0,
-            "score_against": 0,
-            "result": "D"
+            "status": "scheduled"
           }
         ]
       },
@@ -88,12 +79,13 @@
         ],
         "note": "亚运会官方23人参赛名单不含史松宸；中国足协稍后发布的集训并参赛通知列24人，增加史松宸。当前不把该补招自动视为正式报名变更。"
       },
-      "update_cadence": "完赛后仅在官方战报或名单变更出现时复核。",
+      "update_cadence": "赛前复核最终报名变更；小组赛每场赛后补充阵容、事件与结果。",
       "notes": [
         "男足比赛窗口为2026-09-15至2026-10-03；综合性亚运会会期为2026-09-19至2026-10-04。",
         "中国队位于B组，对手为阿联酋、伊朗和朝鲜；小组赛日期依次为9月16日、9月20日和9月23日。",
         "正式23人位置分组采用新华社对亚运会官方名单的转录；足协24人通知按俱乐部列人，不提供正式报名变更结论。",
         "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。",
+        "铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦。金牌赛结果、逐场完整阵容和分钟在官方闭幕材料前保持空值。",
         "小组赛1胜2平积5分头名出线，四分之一决赛3比0泰国，半决赛1比2韩国，铜牌赛2比2后点球4比3胜乌兹别克斯坦。",
         "金牌赛韩国对日本的官方结果尚未写入；冠亚军保持空值。"
       ],
@@ -122,21 +114,6 @@
           "label": "JFA competition window for Aichi-Nagoya 2026 men's football",
           "publisher": "Japan Football Association",
           "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
-        },
-        {
-          "label": "CFA semi-final report: China 1-2 Korea Republic",
-          "publisher": "Chinese Football Association",
-          "url": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html"
-        },
-        {
-          "label": "Xinhua: China 2-1 DPR Korea",
-          "publisher": "Xinhua",
-          "url": "https://www.xinhuanet.com/20260916/c7decdae3c374215ace38f21b4b3f415/c.html"
-        },
-        {
-          "label": "Xinhua: China 3-0 Thailand",
-          "publisher": "Xinhua",
-          "url": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html"
         }
       ]
     },
@@ -1908,7 +1885,7 @@
         "当前批次以仍在海外俱乐部注册、比赛或培养体系内的中国男足球员为主，暂不覆盖已回流中超或中甲的历史留洋球员。",
         "2025 下半年到 2026 上半年出现一波新的青年留洋潮，英格兰、荷兰、塞尔维亚、克罗地亚和西班牙是最主要落点。",
         "已回流国内但具备明确欧洲经历的球员，继续保留在个人档案与留洋历史页中，不与“当前留洋”口径混算。",
-        "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本，但欧塞尔一线队 / 梯队具体报名仍需继续跟进。",
+        "魏祥鑫 2026-07-01 欧塞尔节点已过生效日；按 2026-07-10 可核资料，当前把他迁入 AJ Auxerre 留洋样本。2026-09-19 预备队在 National 2 主场 2-1 沙托鲁 B 队，他打入个人正式比赛首球；这不是法甲出场，也不是俱乐部的中国球员首球。一线队正式出场仍待确认。",
         "吕孟洋 2026-09-15 由俱乐部官网确认从欧罗巴转入 RCD Espanyol Juvenil B。2025/26 欧罗巴出场数保留为历史赛季，不再当作当前注册。",
         "林子皓 2026-07-31 由沃日多瓦茨官方宣布从湖北青年星租借升入一线队；U19 阶段保留为历史路径。张家鸣、李东宸本轮只复核注册，不把非官方出场分钟写入 raw。"
       ],
@@ -3714,7 +3691,7 @@
       {
         "country": "China PR",
         "status": "in-progress",
-        "verified_records": 43,
+        "verified_records": 46,
         "bucket_focus": [
           "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
           "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队和地区级成年联赛落点，避免与成年职业一线队样本混算；这条线现已明确补入刘邵子洋、何小珂、肖远豪等欧洲培养案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
@@ -5733,6 +5710,7 @@
             "summary": "何小珂的欧洲经历覆盖塞尔维亚短暂试水与西班牙主线培养，但真正可量化的比赛主要在西班牙：Sabadell B 1 场、Sabadell 一线队西协甲 1 场，随后又进入 FC Andorra 体系，构成中国青年前锋在西班牙青训与第三级职业联赛之间流动的代表路径。",
             "notes": [
               "2022-12-18 对奥萨苏纳 B 的替补登场，是其可公开核验的西协甲首秀。",
+              "萨瓦德尔青年 A 队荣誉联赛公开总结约为 37 场、约 7 球。这个总数还没按赛季闭合，不并进上面的 2 场成年出场。",
               "这条路径更适合归到五大联赛国家青训 / 梯队，而不是成年留洋成功样本。",
               "2025 年回到国内职业俱乐部后，其西班牙阶段保留为历史路径。"
             ]
@@ -5884,6 +5862,99 @@
               "1 场只表示已核到的荣誉联赛首秀，不是 2015/16 赛季总出场。",
               "巴列卡诺官网确认他从青年队升入 B 队；B 队 2016/17 在西丙第 7 组。正式出场数待补，不写成 0。",
               "2017 年 2 月回国加盟河北华夏幸福后，西班牙阶段截断。"
+            ]
+          },
+          {
+            "id": "han-fenglin-marbella-2022",
+            "name": "Han Fenglin",
+            "local_name": "韩丰璘",
+            "bucket": "big-five-youth",
+            "league": "División de Honor Juvenil",
+            "club": "Marbella Juvenil A",
+            "season": "2022-2023",
+            "history_year_range": "2022-2023",
+            "status": "verified",
+            "appearances": 8,
+            "appearance_label": "荣誉联赛 8 起，赛季总数未闭合",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "新浪：韩丰璘马贝拉荣誉联赛首秀",
+                "url": "https://www.sina.cn/news/detail/4817497956550564.html"
+              },
+              {
+                "label": "懂球帝转载：韩丰璘荣誉联赛出场 8 次",
+                "url": "http://m.gtxh.com/tiyu/2022/1120/151079.html"
+              }
+            ],
+            "summary": "韩丰璘 2004 年 1 月出生，2022 年夏天进入马贝拉青年 A 队打 U19 荣誉联赛第 4 组。2022-09-25 客场对塞维利亚青年队完成替补首秀；到 2022-11-19 首次首发打满全场时，公开口径是已出场 8 次。赛季还没结束，所以这 8 场只是下沿。",
+            "notes": [
+              "8 场来自 2022-11-19 的赛中报道，不是赛季闭合总数，表里写成「8 起」。",
+              "进球没有同口径公开数字，不补成 0。",
+              "马贝拉一线队当时在低级别成年联赛，这条记录只算青年 A 队荣誉联赛。"
+            ]
+          },
+          {
+            "id": "wang-haowen-badalona-2024",
+            "name": "Wang Haowen",
+            "local_name": "王皓文",
+            "bucket": "big-five-youth",
+            "league": "División de Honor Juvenil",
+            "club": "CF Badalona Juvenil A",
+            "season": "2024-2025",
+            "history_year_range": "2024-2025",
+            "status": "verified",
+            "appearances": 13,
+            "appearance_label": "荣誉联赛 13 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "直播吧：王皓文加盟巴达洛纳 U19A",
+                "url": "https://news.qq.com/rain/a/20240712A0563A00"
+              },
+              {
+                "label": "新浪：王皓文 2024/25 荣誉联赛赛季总结",
+                "url": "https://www.sina.cn/news/detail/5163334760663168.html"
+              }
+            ],
+            "summary": "王皓文 2006 年 2 月 17 日出生。2024/25 代表巴达洛纳青年 A 队参加 U19 荣誉联赛第 3 组，赛季总结为 13 次出场、其中 4 次首发。球队降入下赛季全国二级。进球没有同口径公开数字。",
+            "notes": [
+              "13 场来自赛季总结，按已闭合场次记录，不写成范围。",
+              "他还为巴达洛纳一线队在加泰足协杯首发 1 次，那不是荣誉联赛，也不升成西甲。",
+              "2025 年 7 月离开巴达洛纳青年队。"
+            ]
+          },
+          {
+            "id": "chen-yusheng-patacona-2025",
+            "name": "Chen Yusheng",
+            "local_name": "陈雨晟",
+            "bucket": "big-five-youth",
+            "league": "División de Honor Juvenil",
+            "club": "Patacona CF Juvenil A",
+            "season": "2025-2026",
+            "history_year_range": "2025-2026",
+            "status": "verified",
+            "appearances": 29,
+            "appearance_label": "荣誉联赛 29 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "直播吧：陈雨晟荣誉联赛赛季中段 23 场",
+                "url": "https://news.zhibo8.com/zuqiu/2026-03-16/69b7e20940cf1native.htm"
+              },
+              {
+                "label": "帕塔科纳升入一线队报道：荣誉联赛 29 场",
+                "url": "https://www.eivone.com/4927.html"
+              }
+            ],
+            "summary": "陈雨晟 2007 年 8 月 15 日出生。2025/26 作为帕塔科纳青年 A 队队长之一参加 U19 荣誉联赛第 7 组，赛季总结为联赛 29 场、27 次首发。2026 年 6 月升入一线队；一线队当时在瓦伦西亚自治区联赛，不是西甲。",
+            "notes": [
+              "29 场是赛季总结口径。2026-03-16 的中段报道还是 23 场，所以不以中段数字作为赛季总数。",
+              "荣誉联赛进球没有同口径公开数字，不补成 0。",
+              "一线队 2 次替补、约 62 分钟属于自治区成年联赛，不并进这 29 场。"
             ]
           }
         ]
@@ -10469,6 +10540,644 @@
       }
     ]
   },
+  "big_five_cjk_squad_roles": {
+    "schema_version": 1,
+    "checked_at": "2026-10-14",
+    "season": "2026-2027",
+    "roster_snapshot": "europe-top-leagues-japan-korea",
+    "scope_note": {
+      "zh": "只看 2026/27 欧洲五大联赛男子一线队里的中国、日本、韩国球员。名册沿用 2026-09-08 的日韩一线队注册快照，另补入已出现在法甲与欧塞尔一线队名单中的魏祥鑫。杯赛、欧战、国家队和青训/梯队不计入角色。",
+      "en": "Men's first-team players from China, Japan and Korea in the 2026/27 Big Five. Japan and Korea follow the 8 September 2026 registration snapshot; Wei Xiangxin is added from the Ligue 1 and Auxerre first-team lists. Cups, Europe, national teams and youth or reserve sides are excluded from the role grade."
+    },
+    "methodology": {
+      "zh": "占比 = 国内联赛分钟 /（统计窗口内俱乐部已赛场次 × 90）。核心 ≥75%，主力 ≥50% 且低于 75%，轮换 ≥25% 且低于 50%，替补为已经出场但低于 25%，边缘为联赛 0 分钟。没有核到联赛分钟的记为待核，不按身价、国家队地位或媒体评价补档。各人截止日期不同，因为来源更新日不同。",
+      "en": "Share = domestic-league minutes / (club matches played inside the source window × 90). Core is at least 75%, starter at least 50% and below 75%, rotation at least 25% and below 50%, substitute is any appearance below 25%, and fringe is zero league minutes. Missing league minutes stay unrated; market value, national-team status and press labels are not used as substitutes. Each player keeps the date of the source window."
+    },
+    "role_scale": [
+      {
+        "id": "core",
+        "min_share": 0.75,
+        "label": {
+          "zh": "核心",
+          "en": "Core"
+        }
+      },
+      {
+        "id": "starter",
+        "min_share": 0.5,
+        "label": {
+          "zh": "主力",
+          "en": "Starter"
+        }
+      },
+      {
+        "id": "rotation",
+        "min_share": 0.25,
+        "label": {
+          "zh": "轮换",
+          "en": "Rotation"
+        }
+      },
+      {
+        "id": "substitute",
+        "min_share": 0,
+        "label": {
+          "zh": "替补",
+          "en": "Substitute"
+        }
+      },
+      {
+        "id": "fringe",
+        "label": {
+          "zh": "边缘",
+          "en": "Fringe"
+        }
+      }
+    ],
+    "leagues": [
+      {
+        "id": "premier-league",
+        "league": "Premier League",
+        "label": {
+          "zh": "英超",
+          "en": "Premier League"
+        }
+      },
+      {
+        "id": "laliga",
+        "league": "LaLiga",
+        "label": {
+          "zh": "西甲",
+          "en": "La Liga"
+        }
+      },
+      {
+        "id": "serie-a",
+        "league": "Serie A",
+        "label": {
+          "zh": "意甲",
+          "en": "Serie A"
+        }
+      },
+      {
+        "id": "bundesliga",
+        "league": "Bundesliga",
+        "label": {
+          "zh": "德甲",
+          "en": "Bundesliga"
+        }
+      },
+      {
+        "id": "ligue-1",
+        "league": "Ligue 1",
+        "label": {
+          "zh": "法甲",
+          "en": "Ligue 1"
+        }
+      }
+    ],
+    "sources": [
+      {
+        "id": "twenty-clubs-japan",
+        "label": {
+          "zh": "Twenty Clubs · 英超日本球员分钟",
+          "en": "Twenty Clubs · Premier League Japanese minutes"
+        },
+        "url": "https://twentyclubs.com/premier-league-players/japan"
+      },
+      {
+        "id": "twenty-clubs-kim",
+        "label": {
+          "zh": "Twenty Clubs · 金志洙",
+          "en": "Twenty Clubs · Kim Ji-soo"
+        },
+        "url": "https://twentyclubs.com/players/kim-ji-soo"
+      },
+      {
+        "id": "japan-football-data",
+        "label": {
+          "zh": "Japan Football Data · 2026/27 个人赛季日志",
+          "en": "Japan Football Data · 2026/27 player logs"
+        },
+        "url": "https://japan-football-data.com/en/leagues/"
+      },
+      {
+        "id": "tactix-lee",
+        "label": {
+          "zh": "TACTIX · 李刚仁西甲分钟",
+          "en": "TACTIX · Lee Kang-in La Liga minutes"
+        },
+        "url": "https://tactix.football/player/lee-kang-in"
+      },
+      {
+        "id": "tribuna-kim",
+        "label": {
+          "zh": "Tribuna · 金玟哉德甲",
+          "en": "Tribuna · Kim Min-jae Bundesliga"
+        },
+        "url": "https://tribuna.com/en/persons/kim-min-jae/stat/2026-2027/bundesliga/"
+      },
+      {
+        "id": "fbref-seol",
+        "label": {
+          "zh": "FBref · 薛英佑 2026/27 日志",
+          "en": "FBref · Seol Young-woo 2026/27 logs"
+        },
+        "url": "https://fbref.com/en/players/8e577e1d/matchlogs/2026-2027/summary/Seol-Young-woo-Match-Logs"
+      },
+      {
+        "id": "fbref-hwang",
+        "label": {
+          "zh": "FBref · 黄喜灿 2026/27 日志",
+          "en": "FBref · Hwang Hee-chan 2026/27 logs"
+        },
+        "url": "https://fbref.com/en/players/169fd162/matchlogs/2026-2027/Hwang-Hee-chan-Match-Logs"
+      },
+      {
+        "id": "statsnext-jeong",
+        "label": {
+          "zh": "StatsNext · 郑优营德甲",
+          "en": "StatsNext · Jeong Woo-yeong Bundesliga"
+        },
+        "url": "https://statsnext.com/bundesliga/players/jeong-woo-yeong-5d417066"
+      },
+      {
+        "id": "xinhua-wei",
+        "label": {
+          "zh": "新华社 / 澎湃 · 魏祥鑫入选欧塞尔一线队",
+          "en": "Xinhua via The Paper · Wei Xiangxin on Auxerre's first-team list"
+        },
+        "url": "https://www.thepaper.cn/newsDetail_forward_33778061"
+      },
+      {
+        "id": "fotmob-auxerre",
+        "label": {
+          "zh": "FotMob · 欧塞尔法甲出场分钟",
+          "en": "FotMob · Auxerre Ligue 1 minutes"
+        },
+        "url": "https://www.fotmob.com/leagues/53/stats/season/37298/players/mins_played/team/8583/players"
+      }
+    ],
+    "players": [
+      {
+        "id": "jp-wataru-endo-liverpool-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "利物浦第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Liverpool's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-kaoru-mitoma-brighton-2026",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "联赛 0 分钟。本页没有核到对应的伤停公告。",
+          "en": "Zero league minutes. No injury bulletin was verified for this page."
+        }
+      },
+      {
+        "id": "jp-zion-suzuki-aston-villa-2026",
+        "league_minutes": 450,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan"
+      },
+      {
+        "id": "jp-daichi-kamada-crystal-palace-2026",
+        "league_minutes": 441,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "水晶宫第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Crystal Palace's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-takehiro-tomiyasu-crystal-palace-2026",
+        "league_minutes": 189,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "水晶宫第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Crystal Palace's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-daizen-maeda-ipswich-2026",
+        "league_minutes": 339,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan"
+      },
+      {
+        "id": "jp-hidemasa-morita-hull-2026",
+        "league_minutes": 45,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "赫尔城第 6 轮在 10 月 11 日，不在这个截止点里。",
+          "en": "Hull City's matchweek 6 was on 11 October, outside this cutoff."
+        }
+      },
+      {
+        "id": "jp-ao-tanaka-leeds-2026",
+        "league_minutes": 325,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan"
+      },
+      {
+        "id": "jp-tatsuhiro-sakamoto-coventry-2026",
+        "league_minutes": 31,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-japan",
+        "note": {
+          "zh": "考文垂第 6 轮在 10 月 19 日。",
+          "en": "Coventry's matchweek 6 is on 19 October."
+        }
+      },
+      {
+        "id": "kr-kim-ji-soo-brentford-2026",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "twenty-clubs-kim"
+      },
+      {
+        "id": "jp-yukinari-sugawara-cagliari-2026",
+        "league_minutes": 53,
+        "matches_available": 6,
+        "as_of": "2026-09-19",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "日志只看到 9 月 12 日、9 月 19 日两次替补，共 53 分钟。10 月轮次不在这份日志里。",
+          "en": "The log shows two substitute appearances, on 12 and 19 September, totalling 53 minutes. October rounds are not in that log."
+        }
+      },
+      {
+        "id": "jp-takefusa-kubo-real-sociedad-2026",
+        "league_minutes": 223,
+        "matches_available": 8,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除 9 月 17 日对伯恩茅斯的欧战 7 分钟。",
+          "en": "Excludes 7 European minutes against Bournemouth on 17 September."
+        }
+      },
+      {
+        "id": "jp-ryunosuke-sato-valencia-2026",
+        "league_minutes": 297,
+        "matches_available": 8,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "kr-lee-kang-in-atletico-2026",
+        "league_minutes": 502,
+        "matches_available": 8,
+        "as_of": "2026-10-13",
+        "minutes_basis": "league-table",
+        "source_id": "tactix-lee",
+        "note": {
+          "zh": "另一来源记 469 分钟。两数都落在主力档。",
+          "en": "Another source lists 469 minutes. Both figures land in the starter band."
+        }
+      },
+      {
+        "id": "jp-hiroki-ito-bayern-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "德甲日志里的出场分钟是 0。对维京、博德/格利姆特的欧战短时间出场不计入。",
+          "en": "Bundesliga logs show zero minutes. Short European appearances against Viking and Bodo/Glimt are excluded."
+        }
+      },
+      {
+        "id": "jp-keisuke-goto-freiburg-2026",
+        "league_minutes": 60,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "五场都是替补。已扣除对马瑟韦尔和杜塞尔多夫的非联赛分钟。",
+          "en": "Five league appearances, all from the bench. Minutes against Motherwell and Fortuna Düsseldorf are excluded."
+        }
+      },
+      {
+        "id": "jp-rihito-yamamoto-freiburg-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-14",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-yuito-suzuki-freiburg-2026",
+        "league_minutes": 387,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "五场联赛全部首发。已扣除对马瑟韦尔和杜塞尔多夫的非联赛分钟。",
+          "en": "Started all five league matches. Minutes against Motherwell and Fortuna Düsseldorf are excluded."
+        }
+      },
+      {
+        "id": "jp-keita-kosugi-frankfurt-2026",
+        "league_minutes": 405,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-ritsu-doan-frankfurt-2026",
+        "league_minutes": 311,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-kaishu-sano-mainz-2026",
+        "league_minutes": 439,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除对克里肖夫的杯赛 90 分钟。",
+          "en": "Excludes 90 cup minutes against Krieschow."
+        }
+      },
+      {
+        "id": "jp-sota-kawasaki-mainz-2026",
+        "league_minutes": 0,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "多次出现在替补名单，联赛登场分钟为 0。",
+          "en": "Named among the substitutes more than once, with zero league minutes played."
+        }
+      },
+      {
+        "id": "jp-koki-machida-hoffenheim-2026",
+        "league_minutes": 185,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除对 OFI 的欧战 45 分钟。",
+          "en": "Excludes 45 European minutes against OFI."
+        }
+      },
+      {
+        "id": "jp-daiki-hashioka-gladbach-2026",
+        "league_minutes": 170,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "已扣除对肖特美因茨的杯赛 90 分钟。",
+          "en": "Excludes 90 cup minutes against Schott Mainz."
+        }
+      },
+      {
+        "id": "jp-ko-itakura-gladbach-2026",
+        "league_minutes": 354,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "前四轮联赛首发，10 月 11 日莱茵德比缺席。已扣除杯赛分钟。",
+          "en": "Started the first four league matches and missed the Rhine derby on 11 October. Cup minutes are excluded."
+        }
+      },
+      {
+        "id": "jp-shuto-machino-gladbach-2026",
+        "league_minutes": 86,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "联赛全部替补登场。已扣除杯赛 20 分钟。",
+          "en": "All league appearances came from the bench. Excludes 20 cup minutes."
+        }
+      },
+      {
+        "id": "jp-zento-uno-gladbach-2026",
+        "league_minutes": 22,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-mio-backhaus-freiburg-2026",
+        "league_minutes": null,
+        "matches_available": null,
+        "as_of": "2026-10-14",
+        "minutes_basis": "missing",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "公开个人日志没有这名门将的 2026/27 联赛分钟，角色待核。",
+          "en": "No 2026/27 league minutes were found on a public player log for this goalkeeper, so the role stays unrated."
+        }
+      },
+      {
+        "id": "jp-satoshi-tanaka-schalke-2026",
+        "league_minutes": 327,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "kr-kim-min-jae-bayern-2026",
+        "league_minutes": 219,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "tribuna-kim",
+        "note": {
+          "zh": "来源合计 219 分钟、3 次出场，窗口可能未含 10 月 10 日对奥格斯堡。",
+          "en": "The source totals 219 minutes across 3 appearances and may omit the 10 October game at Augsburg."
+        }
+      },
+      {
+        "id": "kr-hwang-hee-chan-schalke-2026",
+        "league_minutes": 44,
+        "matches_available": 5,
+        "as_of": "2026-10-11",
+        "minutes_basis": "league-log",
+        "source_id": "fbref-hwang",
+        "note": {
+          "zh": "三场都是替补：11、21、12 分钟。",
+          "en": "Three substitute appearances: 11, 21 and 12 minutes."
+        }
+      },
+      {
+        "id": "kr-seol-young-woo-augsburg-2026",
+        "league_minutes": 112,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "fbref-seol"
+      },
+      {
+        "id": "kr-lee-jae-sung-mainz-2026",
+        "league_minutes": null,
+        "matches_available": null,
+        "as_of": "2026-10-14",
+        "minutes_basis": "missing",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "未核到 2026/27 德甲分钟，角色待核。",
+          "en": "2026/27 Bundesliga minutes were not verified, so the role stays unrated."
+        }
+      },
+      {
+        "id": "kr-jeong-woo-yeong-union-berlin-2026",
+        "league_minutes": 281,
+        "matches_available": 5,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-table",
+        "source_id": "statsnext-jeong",
+        "note": {
+          "zh": "5 次出场、3 次首发。",
+          "en": "Five appearances, three starts."
+        }
+      },
+      {
+        "id": "kr-jens-castrop-gladbach-2026",
+        "league_minutes": null,
+        "matches_available": null,
+        "as_of": "2026-10-14",
+        "minutes_basis": "missing",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "未核到 2026/27 德甲分钟，角色待核。",
+          "en": "2026/27 Bundesliga minutes were not verified, so the role stays unrated."
+        }
+      },
+      {
+        "id": "jp-ayase-ueda-lille-2026",
+        "league_minutes": 227,
+        "matches_available": 6,
+        "as_of": "2026-10-13",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "只计法甲四场共 227 分钟。对阿森纳、贝蒂斯、费耶诺德、坎布尔和斯巴达的进球不计入联赛角色。",
+          "en": "Only four Ligue 1 matches, 227 minutes. Goals against Arsenal, Real Betis, Feyenoord, Cambuur and Sparta are outside the league grade."
+        }
+      },
+      {
+        "id": "jp-takumi-minamino-monaco-2026",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-14",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "个人页本季只列出 9 月 18 日对朗斯的替补，分钟为 0。",
+          "en": "The player log lists only a 18 September substitute appearance against Lens, with zero minutes."
+        }
+      },
+      {
+        "id": "jp-keito-nakamura-lyon-2026",
+        "league_minutes": 56,
+        "matches_available": 6,
+        "as_of": "2026-10-09",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data",
+        "note": {
+          "zh": "法甲三场替补共 56 分钟。已扣除对安德莱赫特的 90 分钟。",
+          "en": "Three Ligue 1 substitute appearances, 56 minutes. Excludes 90 minutes against Anderlecht."
+        }
+      },
+      {
+        "id": "jp-ayumu-seko-le-havre-2026",
+        "league_minutes": 511,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-sota-nakamura-le-havre-2026",
+        "league_minutes": 232,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "jp-kaito-mizuta-le-havre-2026",
+        "league_minutes": 160,
+        "matches_available": 6,
+        "as_of": "2026-10-10",
+        "minutes_basis": "league-log",
+        "source_id": "japan-football-data"
+      },
+      {
+        "id": "cn-wei-xiangxin-auxerre-2026",
+        "player_id": "cn-wei-xiangxin-2008",
+        "country": "China PR",
+        "name": {
+          "zh": "魏祥鑫",
+          "en": "Wei Xiangxin"
+        },
+        "position": "FWD",
+        "club": "AJ Auxerre",
+        "league": "Ligue 1",
+        "league_minutes": 0,
+        "matches_available": 6,
+        "as_of": "2026-10-11",
+        "minutes_basis": "inferred-zero",
+        "source_id": "xinhua-wei",
+        "note": {
+          "zh": "8 月 13 日法甲与欧塞尔一线队名单已有他的名字。公开出场分钟表没有列出他，因此按 0 分钟记为边缘；这不是官方技术统计里的确认数字。",
+          "en": "Ligue 1 and Auxerre listed him in the first-team squad on 13 August. He does not appear in the published minutes table, so this page treats him as zero minutes and fringe. That zero is inferred, not an official statistical line."
+        }
+      }
+    ]
+  },
   "dossiers": [
     {
       "id": "donglu-football-boys",
@@ -12071,11 +12780,11 @@
             "category": "youth-development",
             "organization": "RCD Espanyol Juvenil B",
             "role": "player",
-            "as_of": "2026-09-26",
+            "as_of": "2026-10-14",
             "confidence": "high",
             "source_label": "西班牙人俱乐部官宣：吕孟洋，鹦鹉军团！",
             "source_url": "https://www.rcdespanyol.com/cn/new-cn/%E5%90%95%E5%AD%9F%E6%B4%8B%EF%BC%8C%E9%B9%A6%E9%B9%89%E5%86%9B%E5%9B%A2%EF%BC%81/20759",
-            "notes": "俱乐部官网确认其加入青年B队。2026-09-20 联赛首秀进球见球员档案，不在这条现状字段里重复记分钟。"
+            "notes": "俱乐部官网确认其加入青年B队。2026-09-20 客场 3-1 圣库加特 U19A，下半场替补打入青年B队正式比赛首球。层级是 Lliga Nacional Juvenil，不是一线队，也不是成年 B 队。替补分钟有 57 与 58 两种写法，进球分钟公开口径为 83，尚未核到单场技术表，因此重点句不写死分钟。"
           }
         },
         {
@@ -12239,17 +12948,17 @@
           "id": "donglu-football-boys-李昊炎",
           "name": "Li Haoyan",
           "local_name": "李昊炎",
-          "role": "未指明",
-          "note": "",
+          "role": "前锋",
+          "note": "2026-10-10 巴萨 Sub-15 正式比赛首球。",
           "current_status": {
-            "category": "needs-review",
-            "organization": "待核实",
+            "category": "youth-development",
+            "organization": "FC Barcelona Sub-15",
             "role": "player",
-            "as_of": "2026-07-20",
-            "confidence": "low",
-            "source_label": "现状复核入口：Bilibili space: 中国足球小将",
-            "source_url": "https://space.bilibili.com/346344723",
-            "notes": "该来源可支撑项目或历史身份，但未提供截至核查日的直接当前注册去向；因此不沿用历史俱乐部作当前事实。"
+            "as_of": "2026-10-14",
+            "confidence": "medium",
+            "source_label": "Sport: Estreno goleador de Haoyan Li",
+            "source_url": "https://www.sport.es/es/noticias/barca/futbol-base/estreno-goleador-haoyan-li-primer-135252275",
+            "notes": "Sport 2026-10-12 与京报体育 2026-10-10 同指 2026-10-10 巴萨 Sub-15（Cadete B）主场 3-0 科尔内利亚：李昊炎下半场替补，打入 2-0，是其正式比赛首秀和首球，也是中国球员在巴萨的正式比赛首球。季前热身赛进球另计。同一天巴萨 Infantil S14 5-0 科尔内利亚是另一场。射门方式未锁死：Sport 写终场前约两分钟左脚凌空，京报写第 81 分钟左脚低射。尚未核到加泰足协技术报告，因此不写入分钟和完整出生日期。通卡拉复出属于巴萨竞技的埃布里马·通卡拉，不是这条记录。"
           }
         },
         {
@@ -15094,7 +15803,7 @@
         "tracked_generations": 6,
         "tracked_players": 125,
         "verified_core_people": 50,
-        "needs_review_people": 125
+        "needs_review_people": 124
       },
       "external_player_profiles": [
         {
@@ -15110,13 +15819,20 @@
           "listed_team": "U17 国少核心",
           "birth_year": "2009",
           "position": "前锋 / 边锋",
-          "summary": "首位正式签约拉玛西亚的中国球员",
+          "summary": null,
           "representative_experience": "曾留洋达姆、莱里达竞技",
           "source_url": "https://www.xiaojiangfc.com/players/kuang-zhaolei/",
-          "checked_at": "2026-07-25",
+          "checked_at": "2026-10-14",
           "verification_status": "needs-review",
           "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
-          "conflicts": []
+          "conflicts": [
+            {
+              "field": "summary",
+              "external_value": "首位正式签约拉玛西亚的中国球员",
+              "site_value": "达姆、莱里达竞技；未进入巴萨青训",
+              "note": "资料站摘要把拉玛西亚首签写在邝兆镭名下。主库路径是达姆、奥斯皮塔莱特、莱里达竞技和青岛海牛。巴萨青训首名中国球员与 2026-10-10 正式比赛首球属于李昊炎。"
+            }
+          ]
         },
         {
           "id": "liu-kaiyuan",
@@ -15173,11 +15889,15 @@
           "birth_year": "2012",
           "position": "左边锋 / 前锋",
           "summary": null,
-          "representative_experience": "首位正式签约拉玛西亚的中国球员",
+          "milestone": {
+            "zh": "2026-10-10 巴萨 Sub-15 主场 3-0 科尔内利亚，替补打入 2-0。这是中国球员在巴萨的正式比赛首球。层级是加泰 U15 青年联赛，不是西甲。季前热身赛进球另计。同一天 Infantil S14 的 5-0 不是这场。",
+            "en": "On 10 October 2026, Barcelona Sub-15 beat Cornellà 3-0 at home. He came off the bench and scored the 2-0. It is the first official-match goal by a Chinese player for FC Barcelona, in a Catalan U15 youth league, not LaLiga. Pre-season goals are separate. The Infantil S14 5-0 the same day was a different team."
+          },
+          "representative_experience": "首位正式签约拉玛西亚的中国球员；2026-10-10 巴萨 U15 正式比赛首球",
           "source_url": "https://www.xiaojiangfc.com/players/li-haoyan/",
-          "checked_at": "2026-07-25",
+          "checked_at": "2026-10-14",
           "verification_status": "needs-review",
-          "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
+          "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。正式比赛首球另据 Sport 2026-10-12 与京报体育 2026-10-10：两源同意日期、对手、3-0、替补和 2-0，但射门方式与分钟不一致，故不写入强事实。",
           "conflicts": []
         },
         {
@@ -15214,9 +15934,13 @@
           "birth_year": "2009",
           "position": "前锋 / 中场 / 边锋",
           "summary": null,
-          "representative_experience": "德国广域星空杯MVP",
+          "milestone": {
+            "zh": "2026-09-20 西班牙人青年B队客场 3-1 圣库加特，下半场替补打入在该队的正式比赛首球。这是 U19 全国二级联赛，不是一线队，也不是成年 B 队。",
+            "en": "On 20 September 2026, Espanyol Juvenil B won 3-1 away at Sant Cugat. He came on in the second half and scored his first official goal for the team. This is the second national U19 tier, not the first team and not the senior reserve side."
+          },
+          "representative_experience": "2026-09-20 西班牙人青年B队正式比赛首球；德国广域星空杯MVP",
           "source_url": "https://www.xiaojiangfc.com/players/lv-mengyang/",
-          "checked_at": "2026-07-25",
+          "checked_at": "2026-10-14",
           "verification_status": "needs-review",
           "verification_note": "资料站为公开信息二次整理入口；页面字段仅按其公开口径展示，未回溯到独立原始来源的内容不进入本站强事实字段。",
           "conflicts": []
@@ -24066,7 +24790,7 @@
       },
       "china_status": "third-place",
       "china_summary": "中国队小组赛头名出线后淘汰泰国进入四强，半决赛1比2负韩国，铜牌赛2比2后点球4比3击败乌兹别克斯坦，获得季军。这是1998年曼谷铜牌后时隔28年再获亚运奖牌，也是2002年改为U23赛制后的最佳成绩；队史最高名次仍是1994年广岛银牌。",
-      "china_detail_scope": "match-results-and-official-roster",
+      "china_detail_scope": "squad-and-match-results",
       "china_matches": [
         {
           "date": "2026-09-16",
@@ -24108,7 +24832,7 @@
               "role": "starter"
             }
           ],
-          "note": "新华社确认张玉宁44分钟、吴曦68分钟破门；比分由足协半决赛综述交叉确认。"
+          "note": "新华社确认张玉宁 44 分钟头球扳平、吴曦 68 分钟吊射绝杀；比分与出线路径由足协半决赛综述交叉确认。"
         },
         {
           "date": "2026-09-20",
@@ -24120,7 +24844,7 @@
           "source_tier": "official-result",
           "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
           "china_contributions": [],
-          "note": "足协半决赛综述确认0比0。"
+          "note": "足协半决赛综述确认 0-0；进球与阵容事件未在该综述中逐人展开。"
         },
         {
           "date": "2026-09-23",
@@ -24132,7 +24856,7 @@
           "source_tier": "official-result",
           "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
           "china_contributions": [],
-          "note": "足协半决赛综述确认0比0，中国队1胜2平积5分获小组第一。"
+          "note": "足协半决赛综述确认 0-0，中国队 1 胜 2 平积 5 分获小组第一。"
         },
         {
           "date": "2026-09-26",
@@ -24141,9 +24865,9 @@
           "score_for": 3,
           "score_against": 0,
           "result": "W",
-          "source_tier": "official-result+wire",
-          "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+          "source_tier": "wire",
           "event_source": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html",
+          "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
           "china_contributions": [
             {
               "type": "goal",
@@ -24160,7 +24884,7 @@
               "role": "substitute"
             }
           ],
-          "note": "新华社确认首粒为彭啸制造的乌龙球，不记入中国球员进球；胡荷韬、张玉宁各入一球。"
+          "note": "新华社确认首粒进球为彭啸射门被扑后砸到泰国后卫形成乌龙，因此不记入中国球员进球；胡荷韬开场后不久破门，张玉宁 58 分钟上场后由朱辰杰摆渡打进第三球。开场乌龙球分钟记为上半场补时，未写入贡献表。"
         },
         {
           "date": "2026-09-30",
@@ -24169,8 +24893,9 @@
           "score_for": 1,
           "score_against": 2,
           "result": "L",
-          "source_tier": "official-result",
+          "source_tier": "official-result+wire",
           "official_source": "https://www.thecfa.cn/nzyyhxw/20261001/38243.html",
+          "event_source": "https://english.news.cn/20260930/2c62557c16904ef2ac421412d193810d/c.html",
           "china_contributions": [
             {
               "type": "goal",
@@ -24180,7 +24905,7 @@
               "role": "starter"
             }
           ],
-          "note": "足协战报确认王钰栋22分钟破门，中国队1比2被韩国逆转。"
+          "note": "足协战报确认王钰栋 22 分钟破门，韩国李英俊 33 分钟、裴峻浩 82 分钟逆转。毛伟杰左踝韧带损伤，预计缺席铜牌赛。"
         },
         {
           "date": "2026-10-03",
@@ -24189,7 +24914,6 @@
           "score_for": 2,
           "score_against": 2,
           "result": "W",
-          "penalty_score": "4-3",
           "source_tier": "secondary-source-snapshot",
           "event_source": "https://sports.ifeng.com/c/8wvQTf5YAz7",
           "china_contributions": [
@@ -24208,7 +24932,8 @@
               "role": "starter"
             }
           ],
-          "note": "90分钟2比2，点球大战4比3取胜。公开媒体快照；待足协官方战报升级来源层级。金牌赛结果未写入。"
+          "note": "公开媒体快照确认 90 分钟 2-2、点球 4-3 取胜，李昊扑出两粒点球。部分报道写胡荷韬先破门、王钰栋 54 分钟世界波，乌兹别克斯坦 90 分钟由绍迪博耶夫扳平。加时是否进行存在报道冲突，不写入。待足协官方战报升级来源层级。",
+          "penalty_score": "4-3"
         }
       ],
       "china_key_players": [
@@ -24217,21 +24942,21 @@
           "player": "Zhang Yuning",
           "goals": 2,
           "assists": 1,
-          "role_note": "超龄前锋。对朝鲜、泰国各入一球，并对朝鲜一球有助攻。"
+          "role_note": "超龄前锋。已核小组赛对朝鲜和四分之一决赛对泰国各入一球，并对朝鲜一球有助攻。"
         },
         {
           "player_id": "cn-wu-xi-1989",
           "player": "Wu Xi",
           "goals": 1,
           "assists": 1,
-          "role_note": "超龄中场。对朝鲜破门并助攻张玉宁。"
+          "role_note": "超龄中场。已核小组赛对朝鲜破门并助攻张玉宁。"
         },
         {
           "player_id": "cn-wang-yudong-2006",
           "player": "Wang Yudong",
           "goals": 2,
           "assists": 0,
-          "role_note": "半决赛对韩国破门由足协战报确认；铜牌赛进球来自公开媒体快照。"
+          "role_note": "半决赛对韩国破门已由足协战报确认；铜牌赛进球来自公开媒体快照，待官方战报复核。"
         },
         {
           "player_id": "cn-hu-hetao-2003",
@@ -24239,6 +24964,13 @@
           "goals": 2,
           "assists": 0,
           "role_note": "四分之一决赛进球来自新华社；铜牌赛进球来自公开媒体快照。"
+        },
+        {
+          "player_id": "cn-li-hao-2004",
+          "player": "Li Hao",
+          "goals": 0,
+          "assists": 0,
+          "role_note": "正赛门将。铜牌赛点球大战扑出两粒点球的说法来自公开媒体快照。"
         }
       ],
       "china_squad": [
@@ -24371,7 +25103,7 @@
           "en": "Positions follow Xinhua's transcription of the official 23-player Asian Games roster. Shi Songchen appears only in the CFA's same-day 24-player camp notice and is retained separately as a later camp call-up, not as a confirmed registration replacement."
         },
         "head_coach": {
-          "name": "Antonio Puche",
+          "name": "Antonio Puché",
           "local_name": "安东尼奥·普切"
         },
         "groups": [
@@ -24551,10 +25283,116 @@
               }
             ]
           }
+        ],
+        "staff": [
+          {
+            "role": {
+              "zh": "领队",
+              "en": "Team leader"
+            },
+            "members": [
+              "杜立达"
+            ]
+          },
+          {
+            "role": {
+              "zh": "管理",
+              "en": "Team manager"
+            },
+            "members": [
+              "李石"
+            ]
+          },
+          {
+            "role": {
+              "zh": "助理教练",
+              "en": "Assistant coaches"
+            },
+            "members": [
+              "何塞·德拉萨格拉",
+              "于大宝"
+            ]
+          },
+          {
+            "role": {
+              "zh": "体能教练",
+              "en": "Fitness coach"
+            },
+            "members": [
+              "伊格纳乔·洛佩兹"
+            ]
+          },
+          {
+            "role": {
+              "zh": "守门员教练",
+              "en": "Goalkeeper coach"
+            },
+            "members": [
+              "托莫·格鲁伊奇"
+            ]
+          },
+          {
+            "role": {
+              "zh": "技术分析师",
+              "en": "Analyst"
+            },
+            "members": [
+              "大卫·坎皮罗"
+            ]
+          },
+          {
+            "role": {
+              "zh": "机能监测师",
+              "en": "Performance monitor"
+            },
+            "members": [
+              "钱纪云"
+            ]
+          },
+          {
+            "role": {
+              "zh": "队医",
+              "en": "Team doctor"
+            },
+            "members": [
+              "王磊"
+            ]
+          },
+          {
+            "role": {
+              "zh": "运动防护师",
+              "en": "Physiotherapists"
+            },
+            "members": [
+              "姚康",
+              "赵浩然",
+              "苏星涛",
+              "陈恩远",
+              "王润哲"
+            ]
+          },
+          {
+            "role": {
+              "zh": "装备管理",
+              "en": "Kit manager"
+            },
+            "members": [
+              "张学刚"
+            ]
+          },
+          {
+            "role": {
+              "zh": "翻译",
+              "en": "Translator"
+            },
+            "members": [
+              "杨浩"
+            ]
+          }
         ]
       },
-      "source_checked_at": "2026-10-03",
-      "source_conflict_note": "The Aichi-Nagoya official roster reported by Xinhua contains 23 players. The CFA camp notice published later on 2026-09-01 contains 24 and adds Shi Songchen. The archive preserves both versions and does not infer a formal registration replacement. Group and knockout scores through the semi-final are confirmed by CFA and/or Xinhua. The bronze-medal match (2-2, 4-3 on penalties) is a public-media snapshot pending an official CFA match report. The Korea Republic–Japan gold-medal result is not stored yet.",
+      "source_checked_at": "2026-10-04",
+      "source_conflict_note": "The travelling 23 is taken from the CFA 2026-09-14 update rather than the 2026-09-01 24-man camp notice or the 2026-09-07 sports-delegation list, which still named Li Zhenquan. Group and knockout scores for China are confirmed by CFA and/or Xinhua except the bronze-medal match, which is a public-media snapshot pending an official CFA match report. Some bronze-medal reports mention extra time while others say the match went straight to penalties; extra time is not stored. The gold-medal match between Korea Republic and Japan on 2026-10-03 is not recorded until an official result is captured.",
       "source_links": [
         {
           "label": "Aichi-Nagoya 2026 official team draw results",
@@ -47341,9 +48179,9 @@
   "china_men_youth_coaches": {
     "id": "china-men-youth-coaches",
     "name": "中国男足 U 系列教练组",
-    "last_checked": "2026-09-26",
-    "summary": "按截至 2026-09-26 的中国足协公开集训通知和战报，更新中国男足 U19、U17、U16、U15 的最新一期名单，并附上成年队第四期集训。U16 本期主教练改为张耀坤。",
-    "scope_note": "U 系列五条教练线仍以官方任命和最近一期集训通知为准。成年队第四期集训单独放在 senior_men_window，不并入五条 U 系列计数。没有完整出生日期的新名单球员不新建球员档案，只保留在本期 squad。",
+    "last_checked": "2026-10-04",
+    "summary": "中国男足 U23 / 亚运队已更新至2026-09-01赛前集训与参赛通知；U19、U17、U16、U15其余教练线仍按截至2026-06-27的中国足协公开任命与集训通知维护。 按截至 2026-09-26 的中国足协公开集训通知和战报，更新中国男足 U19、U17、U16、U15 的最新一期名单，并附上成年队第四期集训。U16 本期主教练改为张耀坤。",
+    "scope_note": "本档优先采用中国足协官方任命公告与集训通知；任命页用于定义周期职责，最近一期可靠通知用于定义各队实际带队教练组。U23 / 亚运队已单独推进至2026-09-01，其余年龄线不随本次更新虚增核查日期。 U 系列五条教练线仍以官方任命和最近一期集训通知为准。成年队第四期集训单独放在 senior_men_window，不并入五条 U 系列计数。没有完整出生日期的新名单球员不新建球员档案，只保留在本期 squad。",
     "team_cycles": [
       {
         "team_label": "中国U23 / 亚运队",
@@ -47353,13 +48191,13 @@
           "name": "Antonio Puché",
           "local_name": "安东尼奥·普切"
         },
-        "current_stage": "2024年8月起任U21主教练；2026年9月已以国家男子足球亚运队主教练身份进入爱知-名古屋亚运会赛前集训与参赛阶段。",
+        "current_stage": "2024年8月起任U21主教练，2026年以U23/亚运队身份出征名古屋亚运会并获得铜牌。",
         "appointment_context": "足协任命公告明确写明其负责 2025 年 U23 亚洲杯预选赛与 2026 年名古屋亚运会备战。",
         "latest_camp": {
-          "label": "爱知-名古屋亚运会赛前集训与参赛",
+          "label": "2026年亚运队大连集训与名古屋亚运会",
           "published_on": "2026-09-01",
-          "window": "2026-09-07 起在大连集训，随后赴日本备战参赛",
-          "purpose": "参加2026年爱知-名古屋亚运会男子足球比赛。"
+          "window": "2026-09-07 至 2026-10-03",
+          "purpose": "集训后出征爱知-名古屋亚运会男足，小组赛头名出线并获得铜牌。"
         },
         "staff": [
           {
@@ -47436,8 +48274,7 @@
         ],
         "notes": [
           "当前阶段的核心任务已从 U21 周期切换到 U23 / 亚运队口径，但主教练任命源头仍是 2024 年 U21 任命公告。",
-          "于大宝继续担任助理教练；2026-09-01通知同时给出完整管理保障团队。",
-          "亚运会官方参赛名单为23人；足协同日集训通知为24人并增加史松宸，两者按正式报名与赛前集训池分别保存。"
+          "2026 年 9 月 1 日亚运队集训通知的教练与保障团队以足协原文为准；3 月 U23 第一期名单中的技术分析师张嘉麟未出现在亚运队出征通知中，因此不写入本期。"
         ],
         "source_links": [
           {
@@ -50838,6 +51675,367 @@
             "claim": "提供2023年宁波赛事、球队、社会青训机构和特色学校规模，并记录小升初后的家庭选择；属于媒体转载，数字不外推到2026年。"
           }
         ]
+      }
+    ]
+  },
+  "youth_training_disputes": {
+    "schema_version": 1,
+    "last_checked": "2026-10-04",
+    "editorial_policy": {
+      "zh": "本页只汇总可公开核验的国内青少年培训协议、自由身、培训补偿与合同纠纷样本。违约金与培训补偿分列记录，不把机构诉请写成已裁决金额，也不对未决案件作法律结论。",
+      "en": "This page collects publicly checkable Chinese youth-training, free-agent, compensation and contract-dispute samples. Liquidated damages and training compensation are recorded separately. Institutional claims are not treated as awards, and pending cases are not given legal conclusions."
+    },
+    "scope_note": {
+      "zh": "覆盖培训协议解约、满 18 岁自由身、海外首签和俱乐部解散后的补偿追索。职业一线队续约纠纷（如林良铭）不纳入。自媒体未核文书不入库。",
+      "en": "Covers training-agreement exits, free agency at 18, overseas first contracts and compensation after a club leaves the association. Senior-contract renewals such as Lin Liangming are out of scope. Unverified social-media documents are excluded."
+    },
+    "cfa_rules": [
+      {
+        "id": "cfa-2018-61",
+        "year": "2018",
+        "title": {
+          "zh": "2018 年青少年转会与培训补偿意见：首签权",
+          "en": "2018 youth transfer and compensation opinion: first-contract right"
+        },
+        "summary": {
+          "zh": "12 岁后连续注册满 4 年，培训单位若能提供不低于当地上年度社平工资 3 倍的工资，可主张最长 2 年首份工作合同；无正当理由拒签可停赛 24 个月。补偿起算降至 8 岁，中超曾达 50 万/年。公开检索未见稳定的拒签停赛执行个案。",
+          "en": "After four consecutive years of registration from age 12, a training body offering at least three times local average wages could claim a first contract of up to two years; unjustified refusal could mean a 24-month ban. Compensation started at age 8 and reached CNY 500,000 a year for CSL clubs. No stable public enforcement of the ban was found."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "人民网：中国足协公布实施意见",
+            "url": "http://sports.people.com.cn/n1/2018/0131/c22134-29798631.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "cfa-2026-rstp",
+        "year": "2026",
+        "title": {
+          "zh": "2026 年球员身份与转会管理规定：限制未成年人长约",
+          "en": "2026 player status and transfer rules: limits on minor contracts"
+        },
+        "summary": {
+          "zh": "2026-02-24 印发并废止 2018/2019/2023 补偿意见。培训协议须本人与监护人共签，截止最长到 18 周岁生日；不满 16 岁不得签工作合同；16–18 岁工作合同最长 3 年。培训补偿改回 12–21 岁：中超 20 万/年、中甲 7 万、中乙 2 万、其他 1 万；12–15 岁按第四类别 1 万/年。有效期内可解除培训协议，按实际损失支付合理补偿。",
+          "en": "Issued on 24 Feb 2026, replacing the 2018/2019/2023 compensation notices. Training agreements must be co-signed and may not run past the 18th birthday. No employment contract under 16; 16–18 contracts max three years. Training compensation returns to ages 12–21: CNY 200,000 / 70,000 / 20,000 / 10,000 a year by club class, with ages 12–15 at the fourth-category CNY 10,000 rate. Agreements may be ended with reasonable compensation for actual loss."
+        },
+        "source_links": [
+          {
+            "type": "official",
+            "label": "中国足协印发球员身份与转会管理规定",
+            "url": "https://www.thecfa.cn/qysfgl/20260224/37349.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      }
+    ],
+    "cases": [
+      {
+        "id": "zhang-zhuoyi-haiqiu-2025",
+        "year_range": "2025",
+        "status": "pending",
+        "confidence": "high",
+        "title": {
+          "zh": "张卓毅 / 嗨球少年",
+          "en": "Zhang Zhuoyi / Haiqiu Youth"
+        },
+        "player_age": {
+          "zh": "签约时约 11 岁，争议时 12 岁，协议写到 18 岁",
+          "en": "About 11 at signing, 12 at dispute; agreement ran to age 18"
+        },
+        "claimed_amount": {
+          "zh": "协商解约金约 18 万元（500 元/天）；起诉索赔 266.6666 万元",
+          "en": "Exit talks at about CNY 180,000 (CNY 500/day); lawsuit claimed CNY 2,666,666"
+        },
+        "cfa_position": {
+          "zh": "纠纷解决委员会先受理确认解约申请，后因机构向大连金州法院起诉而中止仲裁",
+          "en": "CFA dispute panel accepted a request to confirm termination, then stayed the case after the club sued in Dalian Jinzhou court"
+        },
+        "outcome": {
+          "zh": "民事诉讼进行中，自由身证明未决",
+          "en": "Civil case pending; free-agent certificate unresolved"
+        },
+        "summary": {
+          "zh": "2024-04-27 家长与嗨球签订免费培养至 18 岁的培训协议。2025 年家长因伤病等要求解约拿自由身，心理价约 5 万元。足协中止后，注册与参赛被程序卡住。",
+          "en": "On 27 Apr 2024 the family signed a free-training agreement through age 18. In 2025 they sought an exit and free-agent papers after injury; they offered about CNY 50,000. After the CFA stay, registration remains blocked."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "新京报：从索赔 18 万到 266 万",
+            "url": "https://www.bjnews.com.cn/detail/1759970230168228.html",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "中国足协就中止审理培训协议纠纷发声",
+            "url": "http://www.sportsol.com.cn/jingti/202509/t20250905_288948.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "yang-qiandong-evergrande-2026",
+        "year_range": "2026",
+        "status": "settled",
+        "confidence": "high",
+        "title": {
+          "zh": "杨黔东 / 恒大足校",
+          "en": "Yang Qiandong / Evergrande Football School"
+        },
+        "player_age": {
+          "zh": "2008-01-01 出生，2017 年签约，2026-01-01 年满 18 岁协议到期",
+          "en": "Born 1 Jan 2008; signed in 2017; agreement ended on 18th birthday, 1 Jan 2026"
+        },
+        "claimed_amount": {
+          "zh": "足校口头投入约 100 万元；按现行培训补偿测算约 45 万元量级，非正式裁决额",
+          "en": "School cited about CNY 1 million in costs; CFA-scale compensation is about CNY 450,000, not an award"
+        },
+        "cfa_position": {
+          "zh": "球员向纠纷解决委员会申请出具自由身证明；2026 新规已废止 2018 首签权文件",
+          "en": "Player asked the CFA dispute panel for a free-agent certificate; the 2026 rules repealed the 2018 first-contract circular"
+        },
+        "outcome": {
+          "zh": "2026-02-27 恒大足校官宣协商转会上海海港；补偿实付额未官宣",
+          "en": "On 27 Feb 2026 the school announced an agreed move to Shanghai Port; actual compensation was not disclosed"
+        },
+        "summary": {
+          "zh": "协议到期后足校主张优先签约权和违约损失，并谴责上海海港私下接触。最终三方协商完成转会，德转记为自由转会。不得把未公开金额写成零补偿或足协败诉。",
+          "en": "After expiry the school claimed first-signing rights and damages, and criticised Shanghai Port. The move was later agreed. Transfermarkt lists a free transfer. Undisclosed sums must not be written as zero compensation or a CFA defeat."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "直播吧：恒大足校官宣杨黔东转会海港",
+            "url": "https://news.zhibo8.com/zuqiu/2026-02-27/69a1a8ba4fe28native.htm",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "足球报：杨黔东申请自由身仲裁",
+            "url": "https://news.zhibo8.com/zuqiu/2026-02-11/698c05a417c81native.htm",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "wei-shihao-tang-shi-luneng-2014",
+        "year_range": "2013-2014",
+        "status": "withdrawn",
+        "confidence": "high",
+        "title": {
+          "zh": "韦世豪、唐诗 / 鲁能足校",
+          "en": "Wei Shihao and Tang Shi / Luneng Football School"
+        },
+        "player_age": {
+          "zh": "韦世豪 1995-04-08 出生，2005–2013 年在校，满 18 岁后未签鲁能职业合同",
+          "en": "Wei Shihao, born 8 Apr 1995, trained 2005–2013 and did not sign a Luneng employment contract after turning 18"
+        },
+        "claimed_amount": {
+          "zh": "网传千万索赔；足校声明否认并称已大幅降低索赔标准",
+          "en": "Media claimed a CNY 10 million demand; the school denied that figure and said it had already reduced the claim"
+        },
+        "cfa_position": {
+          "zh": "足校按民事培训合同起诉，称不直接适用足协或国际足联内部规定；海外首签按培训补偿处理",
+          "en": "The school sued as a civil training-contract case, saying FIFA/CFA internal rules did not apply; the overseas first club paid training compensation"
+        },
+        "outcome": {
+          "zh": "进入法院程序后足校撤诉；韦世豪加盟博阿维斯塔，后续转会鲁能仍可主张联合机制补偿",
+          "en": "The school later withdrew. Wei joined Boavista; Luneng could still claim solidarity on later transfers"
+        },
+        "summary": {
+          "zh": "满 18 岁出国试训触发国内培养方与国际规则冲突。2018 年首签权是此后为防类似“出口”补的土政策，且管不到已完成的海外注册。",
+          "en": "Leaving at 18 exposed a clash between domestic training contracts and FIFA first-contract rules. The 2018 first-sign policy came later and could not reach an already completed overseas registration."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "央视网：鲁能发布两小将违约声明",
+            "url": "http://sports.cntv.cn/2014/03/05/ARTI1394017470635909.shtml",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "人民网：案件进入法院审判程序",
+            "url": "http://sports.people.com.cn/n/2014/0306/c22176-24548681.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "wang-zhenao-wanda-2018",
+        "year_range": "2018-2019",
+        "status": "unresolved",
+        "confidence": "medium",
+        "title": {
+          "zh": "王振澳 / 万达西班牙计划",
+          "en": "Wang Zhen'ao / Wanda Spain programme"
+        },
+        "player_age": {
+          "zh": "2012 年起赴马竞受训，起诉时约 18 岁",
+          "en": "Trained at Atlético Madrid from 2012; about 18 when sued"
+        },
+        "claimed_amount": {
+          "zh": "培训费 3,027,432 元 + 违约金 1,700 万元，合计约 2,002.7 万元",
+          "en": "Training costs CNY 3,027,432 plus CNY 17 million damages, about CNY 20.027 million"
+        },
+        "cfa_position": {
+          "zh": "走朝阳法院教育培训合同纠纷，非足协裁决；2018 首签权对已办妥国际转出不溯及",
+          "en": "Heard as an education-training civil case in Chaoyang court, not CFA arbitration; the 2018 first-sign rule did not reach completed international transfers"
+        },
+        "outcome": {
+          "zh": "2018–2019 年开庭，公开渠道未见终审判决金额；球员当时加盟丹麦瓦埃勒",
+          "en": "Hearings in 2018–2019; no public final award found. He joined Vejle in Denmark"
+        },
+        "summary": {
+          "zh": "协议约定满 18 岁注册权归万达。球员失联后赴丹麦签约。被告抗辩应由足协管辖且违约金过高。天价违约金是否被支持，目前不能从公开判决确认。",
+          "en": "The agreement assigned registration rights to Wanda at 18. After contact was lost he signed in Denmark. The defence disputed jurisdiction and the size of damages. Whether the court upheld the headline figure is not confirmed from a public judgment."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "新京报：万达诉球员违约索赔两千万",
+            "url": "https://www.bjnews.com.cn/detail/154718084214226.html",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "news",
+            "label": "中国青年报：培训合同民事纠纷跨界足球青训",
+            "url": "https://zqb.cyol.com/html/2019-05/21/nw.D110000zgqnb_20190521_1-05.htm",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "dalian-sun-2019-liaoning-0211",
+        "year_range": "2019",
+        "status": "judged",
+        "confidence": "high",
+        "title": {
+          "zh": "大连孙某某 / 某青少年足球俱乐部",
+          "en": "Sun (anonymised) / a Dalian youth club"
+        },
+        "player_age": {
+          "zh": "公开裁判转述未写明周岁",
+          "en": "Age not stated in public case summaries"
+        },
+        "claimed_amount": {
+          "zh": "按培训投入 5 倍索赔约 27 万元",
+          "en": "Claimed about CNY 270,000, five times training spend"
+        },
+        "cfa_position": {
+          "zh": "未走足协，法院按合同法调减过高违约金",
+          "en": "Not a CFA case; the court reduced excessive liquidated damages under contract law"
+        },
+        "outcome": {
+          "zh": "（2019）辽0211民初2718号：违约成立，改判实际损失的 130%，约 6 万元",
+          "en": "Case (2019) Liao 0211 Min Chu 2718: breach found, award cut to 130% of proven loss, about CNY 60,000"
+        },
+        "summary": {
+          "zh": "合同约定拒签首份职业合同或提前解约按投入 5 倍赔偿。法院认定教练工资等属于培养投入，但 5 倍过分高于损失。这是目前最清楚的司法调减样本。",
+          "en": "The contract set damages at five times training spend for refusing a first employment contract or leaving early. The court accepted coaching costs as loss but held a 5x multiplier excessive. This is the clearest judicial reduction sample."
+        },
+        "source_links": [
+          {
+            "type": "reference",
+            "label": "青训培训合同注意事项中的司法案例转述",
+            "url": "https://www.lysy90.com/story/32177",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "zhang-yuning-greentown-2015",
+        "year_range": "2014-2015",
+        "status": "contrast",
+        "confidence": "high",
+        "title": {
+          "zh": "张玉宁 / 杭州绿城（对照样本，非诉讼）",
+          "en": "Zhang Yuning / Hangzhou Greentown (contrast, not a lawsuit)"
+        },
+        "player_age": {
+          "zh": "未满 18 岁不能签海外工作合同，2015 年 18 岁正式加盟维特斯",
+          "en": "Could not sign an overseas employment contract before 18; joined Vitesse in 2015 after turning 18"
+        },
+        "claimed_amount": {
+          "zh": "2014 年合同约定海外转会毁约金约 15 万欧元",
+          "en": "2014 contract set an overseas buy-out around EUR 150,000"
+        },
+        "cfa_position": {
+          "zh": "符合未成年国际转会年龄门槛，未形成足协纠纷",
+          "en": "Fitted the age floor for international transfers; no CFA dispute"
+        },
+        "outcome": {
+          "zh": "绿城放行，2015-07 加盟荷甲维特斯",
+          "en": "Greentown released him; he joined Vitesse in July 2015"
+        },
+        "summary": {
+          "zh": "用来对照“谈拢的海外出口”与诉讼型培训协议冲突。毁约金写在职业合同里，由新俱乐部路径处理，而不是向家长索赔天价培训违约金。",
+          "en": "A contrast with litigated training exits: the buy-out sat in a playing contract and was handled as a club pathway, not a parental mega-penalty."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "新浪体育：国青小将收荷甲转会邀请",
+            "url": "http://sports.sina.com.cn/j/2015-01-14/03107481801.shtml",
+            "checked_at": "2026-10-04"
+          },
+          {
+            "type": "official",
+            "label": "国家体育总局：浙江足球输出首位留学生",
+            "url": "https://www.sport.gov.cn/n14471/n14482/n14519/c689945/content.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      },
+      {
+        "id": "guangzhou-r-f-compensation-2026",
+        "year_range": "2025-2026",
+        "status": "blocked",
+        "confidence": "medium",
+        "title": {
+          "zh": "原广州富力青训培训补偿追索",
+          "en": "Former Guangzhou R&F training-compensation claims"
+        },
+        "player_age": {
+          "zh": "涉及 2007–2009 年龄段已职业化球员，不是未成年人解约",
+          "en": "Concerns already professional 2007–2009 players, not a minor exit"
+        },
+        "claimed_amount": {
+          "zh": "按转会触发的协会培训补偿，金额个案未披露",
+          "en": "Association training compensation triggered by transfers; case-level sums not disclosed"
+        },
+        "cfa_position": {
+          "zh": "公开转述称因原单位已非足协注册会员，协会规则不再适用",
+          "en": "Public accounts say CFA rules no longer applied because the former body was not a registered member"
+        },
+        "outcome": {
+          "zh": "培养方称仲裁拿不到补偿；本页只记录协会态度，不把博主陈述写成正式裁决书",
+          "en": "The academy side said arbitration recovered nothing; this page records the reported CFA stance, not an unpublished award"
+        },
+        "summary": {
+          "zh": "说明培训补偿依赖培养单位持续作为会员存在。俱乐部解散或退出注册后，家长解约金和协会补偿都可能落空。",
+          "en": "Shows that training compensation depends on the training body remaining a member. After dissolution or deregistration, both parental penalties and association compensation can fail."
+        },
+        "source_links": [
+          {
+            "type": "news",
+            "label": "公开博文转述：足协判定富力不是注册单位",
+            "url": "https://coal168.com/news/zuqiu/547.html",
+            "checked_at": "2026-10-04"
+          }
+        ]
+      }
+    ],
+    "excluded": [
+      {
+        "id": "evergrande-2011-44m-unverified",
+        "reason": {
+          "zh": "恒大足校 2011 年龄段“索赔 4400 万、足协不予受理”仅见自媒体转述，文书真实性未核，不入库。",
+          "en": "The Evergrande 2011-age “CNY 44 million / CFA refused” story exists only in social-media recaps; the document is unverified and is excluded."
+        }
       }
     ]
   },
@@ -54314,14 +55512,14 @@
   },
   "spain_football_system": {
     "schema_version": 1,
-    "checked_at": "2026-10-20",
+    "checked_at": "2026-10-21",
     "summary": {
       "zh": "本页把西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站已建档、曾进入这些层级的中国球员样本放在同一套口径里。西甲俱乐部青训合同不等于西甲出场；签职业合同也不等于已经踢过对应联赛。",
       "en": "This page places Spain's senior professional pyramid, the U19/U16 youth pyramid, and documented Chinese samples into one scope. An academy deal with a La Liga club is not a La Liga appearance, and a professional contract is not automatically a match record."
     },
     "scope_note": {
-      "zh": "这是研究样本索引，不是西班牙足协或西甲官方全量名单。球员可同时出现在多个层级；当前注册以球员主档为准。吕孟洋的西班牙人 U19B 节点来自 2026-09 俱乐部官宣，主档仍停在欧罗巴 2025/26。",
-      "en": "This is a research sample index, not an official RFEF or LaLiga census. A player may appear on more than one layer. Current registration still follows the player record. Lyu Mengyang's Espanyol U19B node comes from the September 2026 club announcement; his master record still stops at Europa 2025/26."
+      "zh": "这是研究样本索引，不是西班牙足协或西甲官方全量名单。球员可同时出现在多个层级；当前注册以球员主档为准。吕孟洋当前注册是西班牙人青年B队，2026-09-20 的客场进球记在球员页，不是一线队或成年 B 队出场。",
+      "en": "This is a research sample index, not an official RFEF or LaLiga census. A player may appear on more than one layer. Current registration still follows the player record. Lyu Mengyang's current club is Espanyol Juvenil B; his 20 September 2026 away goal is on his player page and is not a first-team or senior-reserve appearance."
     },
     "contract_types": [
       {
@@ -54883,8 +56081,8 @@
         "appearance_status": "appeared",
         "verification_status": "mixed-source",
         "note": {
-          "zh": "2015/16 皇马青年 A 队，U19 荣誉联赛第 5 组。MARCA 2015-10-26 写他对阿尔卡拉、普埃布拉各进 2 球。BeSoccer 生涯路径可见荣誉联赛进球，阅读口径是 4 球；西语维基俱乐部表写 17 场 5 球，2015-12-19 另有一场联赛进球报道。本条确认出过场、进过球，不把 4 和 5 收成唯一赛季总数。",
-          "en": "Real Madrid Juvenil A in 2015/16, División de Honor Group 5. MARCA on 2015-10-26 records two goals against Alcalá and two against Puebla. The BeSoccer career path shows honour-league goals, read there as four; the Spanish Wikipedia club line says 17 games and 5 goals, and a 2015-12-19 report adds another league goal. This confirms the appearances and goals without collapsing 4 and 5 into one season total."
+          "zh": "2015/16 皇马青年 A 队，U19 荣誉联赛第 5 组。场次记为 4–17、进球记为 4–5：下沿来自赛季中段的 4 球报道，上沿来自西语维基俱乐部表的 17 场 5 球。范围表示还没闭合。",
+          "en": "Real Madrid Juvenil A in 2015/16, División de Honor Group 5. Appearances stay 4–17 and goals 4–5: the floor is the mid-season four-goal report, and the ceiling is the Spanish Wikipedia club line of 17 games and 5 goals. The range is not a closed total."
         }
       },
       {
@@ -54899,8 +56097,72 @@
         "appearance_status": "appeared",
         "verification_status": "mixed-source",
         "note": {
-          "zh": "2015/16 巴列卡诺青年 A 队，U19 荣誉联赛第 5 组，与皇马青年队同组。2015-09-06 客场对阿尔卡拉首发，约第 65 分钟被换下。赛季总出场和进球还没有对齐到完整技术统计。",
-          "en": "Rayo Vallecano Juvenil A in 2015/16, División de Honor Group 5, the same group as Real Madrid. He started away at Alcalá on 2015-09-06 and was substituted around the 65th minute. Season appearance and goal totals are not yet tied to a full statistical sheet."
+          "zh": "2015/16 巴列卡诺青年 A 队，U19 荣誉联赛第 5 组，与皇马青年队同组。2015-09-06 客场对阿尔卡拉首发。场次记为「1 起」，进球未见；赛季总数还没闭合。",
+          "en": "Rayo Vallecano Juvenil A in 2015/16, División de Honor Group 5, the same group as Real Madrid. He started away at Alcalá on 2015-09-06. Appearances are recorded as 1 起 and no goal is recorded; the season total is not closed."
+        }
+      },
+      {
+        "id": "he-xiaoke-honor-juvenil",
+        "featured_record_id": "he-xiaoke-spain-pathway-2021",
+        "name": "He Xiaoke",
+        "local_name": "何小珂",
+        "layer_id": "division-honor-juvenil",
+        "club": "CE Sabadell Juvenil A",
+        "season": "2021-2023",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2021 年 9 月加盟萨瓦德尔青年 A 队。公开总结写荣誉联赛约 37 场、约 7 球，赛季拆分还没闭合，所以都带「约」。这不是后来西协甲的 1 场。",
+          "en": "Joined Sabadell Juvenil A in September 2021. Public summaries put the honour-league total at about 37 appearances and about 7 goals, and the season split is still open, so both figures stay approximate. This is not his later Primera Federación appearance."
+        }
+      },
+      {
+        "id": "han-fenglin-honor-juvenil",
+        "featured_record_id": "han-fenglin-marbella-2022",
+        "name": "Han Fenglin",
+        "local_name": "韩丰璘",
+        "layer_id": "division-honor-juvenil",
+        "club": "Marbella Juvenil A",
+        "season": "2022-2023",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2022/23 马贝拉青年 A 队，荣誉联赛第 4 组。2022-11-19 公开口径已出场 8 次，赛季未完，记为「8 起」。进球未见。",
+          "en": "Marbella Juvenil A in 2022/23, División de Honor Group 4. A 2022-11-19 report already had 8 appearances, with the season still running, so the cell stays 8 起. No goal total is recorded."
+        }
+      },
+      {
+        "id": "wang-haowen-honor-juvenil",
+        "featured_record_id": "wang-haowen-badalona-2024",
+        "name": "Wang Haowen",
+        "local_name": "王皓文",
+        "layer_id": "division-honor-juvenil",
+        "club": "CF Badalona Juvenil A",
+        "season": "2024-2025",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2024/25 巴达洛纳青年 A 队，荣誉联赛第 3 组。赛季总结 13 场、4 次首发，场次已闭合。进球未见。球队随后降入全国二级。",
+          "en": "Badalona Juvenil A in 2024/25, División de Honor Group 3. The season summary is 13 appearances and 4 starts, so the appearance count is closed. No goal total is recorded. The team then dropped to Liga Nacional."
+        }
+      },
+      {
+        "id": "chen-yusheng-honor-juvenil",
+        "featured_record_id": "chen-yusheng-patacona-2025",
+        "name": "Chen Yusheng",
+        "local_name": "陈雨晟",
+        "layer_id": "division-honor-juvenil",
+        "club": "Patacona CF Juvenil A",
+        "season": "2025-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2025/26 帕塔科纳青年 A 队，荣誉联赛第 7 组。升入一线队的报道写联赛 29 场、27 次首发。进球未见。一线队自治区联赛出场另计。",
+          "en": "Patacona Juvenil A in 2025/26, División de Honor Group 7. The first-team promotion report lists 29 league appearances and 27 starts. No goal total is recorded. First-team regional appearances are kept separate."
         }
       },
       {
@@ -54915,8 +56177,8 @@
         "appearance_status": "appeared",
         "verification_status": "mixed-source",
         "note": {
-          "zh": "西班牙人 2026-09-14 官宣加入青训并代表青年 B 队。这是青训培训协议，不是一线队职业合同；竞赛层级是 U19 全国二级，不是荣誉联赛。球员主档核验日仍为 2026-05-22 欧罗巴。",
-          "en": "Espanyol announced on 2026-09-14 that he joined the academy and Juvenil B. This is a youth formation agreement, not a first-team professional contract, and the competition is the second national U19 tier rather than División de Honor. His master record still checks Europa as of 2026-05-22."
+          "zh": "西班牙人 2026-09-15 官宣加入青年 B 队，打 U19 全国二级。2026-09-20 客场对圣库加特替补进球；到 2026-10-12 第 4 轮已首发。赛季未结束，场次记为「4 起」、进球 1。不是荣誉联赛，也不是一线队。",
+          "en": "Espanyol announced his Juvenil B move on 2026-09-15, in the second national U19 tier. He scored as a substitute away at Sant Cugat on 2026-09-20 and had started by the fourth round on 2026-10-12. The season is still open, so appearances stay 4 起 with 1 goal. This is not División de Honor and not the first team."
         }
       },
       {
@@ -55112,6 +56374,194 @@
         }
       }
     ],
+    "u19_table": {
+      "note": {
+        "zh": "荣誉联赛和全国二级合成一张表。带范围或「起」的格子是还没闭合的场次。",
+        "en": "División de Honor and Liga Nacional share one table. A range or a trailing 起 marks an appearance count that is not yet closed."
+      },
+      "rows": [
+        {
+          "id": "u19-lin-liangming-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "lin-liangming-spain-2015",
+          "name": "Lin Liangming",
+          "local_name": "林良铭",
+          "age": "18",
+          "club": {
+            "zh": "皇马青年 A",
+            "en": "Real Madrid Juvenil A"
+          },
+          "season": "2015/16",
+          "appearances": "4–17",
+          "goals": {
+            "zh": "4–5",
+            "en": "4–5"
+          }
+        },
+        {
+          "id": "u19-xu-tianyuan-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "xu-tianyuan-spain-2015",
+          "name": "Xu Tianyuan",
+          "local_name": "徐天沅",
+          "age": "18",
+          "club": {
+            "zh": "巴列卡诺青年 A",
+            "en": "Rayo Vallecano Juvenil A"
+          },
+          "season": "2015/16",
+          "appearances": "1 起",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-yang-xi-honor-edges",
+          "layer_id": "division-honor-juvenil",
+          "player_id": "cn-yang-alex-2005",
+          "name": "Alex Xi Yang",
+          "local_name": "杨希",
+          "age": "16；18",
+          "club": {
+            "zh": "西班牙人青年 A",
+            "en": "Espanyol Juvenil A"
+          },
+          "season": "2021/22；2023/24",
+          "appearances": "2；15",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-yang-xi-honor-2022",
+          "layer_id": "division-honor-juvenil",
+          "player_id": "cn-yang-alex-2005",
+          "name": "Alex Xi Yang",
+          "local_name": "杨希",
+          "age": "17",
+          "club": {
+            "zh": "西班牙人青年 A",
+            "en": "Espanyol Juvenil A"
+          },
+          "season": "2022/23",
+          "appearances": "约 24",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-he-xiaoke-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "he-xiaoke-spain-pathway-2021",
+          "name": "He Xiaoke",
+          "local_name": "何小珂",
+          "age": "17–19",
+          "club": {
+            "zh": "萨瓦德尔青年 A",
+            "en": "Sabadell Juvenil A"
+          },
+          "season": "2021/22–2022/23",
+          "appearances": "约 37",
+          "goals": {
+            "zh": "约 7",
+            "en": "about 7"
+          }
+        },
+        {
+          "id": "u19-han-fenglin-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "han-fenglin-marbella-2022",
+          "name": "Han Fenglin",
+          "local_name": "韩丰璘",
+          "age": "18–19",
+          "club": {
+            "zh": "马贝拉青年 A",
+            "en": "Marbella Juvenil A"
+          },
+          "season": "2022/23",
+          "appearances": "8 起",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-wang-haowen-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "wang-haowen-badalona-2024",
+          "name": "Wang Haowen",
+          "local_name": "王皓文",
+          "age": "17–19",
+          "club": {
+            "zh": "巴达洛纳青年 A",
+            "en": "Badalona Juvenil A"
+          },
+          "season": "2024/25",
+          "appearances": "13",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-chen-yusheng-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "chen-yusheng-patacona-2025",
+          "name": "Chen Yusheng",
+          "local_name": "陈雨晟",
+          "age": "18",
+          "club": {
+            "zh": "帕塔科纳青年 A",
+            "en": "Patacona Juvenil A"
+          },
+          "season": "2025/26",
+          "appearances": "29",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-yang-xi-nacional",
+          "layer_id": "liga-nacional-juvenil",
+          "player_id": "cn-yang-alex-2005",
+          "name": "Alex Xi Yang",
+          "local_name": "杨希",
+          "age": "16",
+          "club": {
+            "zh": "西班牙人青年 B",
+            "en": "Espanyol Juvenil B"
+          },
+          "season": "2021/22",
+          "appearances": "约 23",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-lyu-mengyang-nacional",
+          "layer_id": "liga-nacional-juvenil",
+          "player_id": "cn-lyu-mengyang-2009",
+          "name": "Lyu Mengyang",
+          "local_name": "吕孟洋",
+          "age": "17",
+          "club": {
+            "zh": "西班牙人青年 B",
+            "en": "Espanyol Juvenil B"
+          },
+          "season": "2026/27",
+          "appearances": "4 起",
+          "goals": {
+            "zh": "1",
+            "en": "1"
+          }
+        }
+      ]
+    },
     "source_links": [
       {
         "label": "LaLiga official site",
@@ -55157,6 +56607,31 @@
         "label": "体坛+: 徐天沅巴列卡诺青年队首发",
         "url": "https://www.ttplus.cn/publish/app/data/2015/09/06/370/os_news.html",
         "checked_at": "2026-10-20"
+      },
+      {
+        "label": "腾讯：何小珂萨瓦德尔荣誉联赛约 37 场 7 球",
+        "url": "https://news.qq.com/rain/a/20230802A03K2C00",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "新浪：韩丰璘马贝拉荣誉联赛首秀",
+        "url": "https://www.sina.cn/news/detail/4817497956550564.html",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "新浪：王皓文 2024/25 荣誉联赛 13 场",
+        "url": "https://www.sina.cn/news/detail/5163334760663168.html",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "帕塔科纳升入一线队报道：陈雨晟荣誉联赛 29 场",
+        "url": "https://www.eivone.com/4927.html",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "elFutbol：吕孟洋 2026/27 全国二级 4 场 1 球",
+        "url": "https://elfutbol.co/es/player/lyu-mengyang-218f892f95da",
+        "checked_at": "2026-10-21"
       }
     ]
   },
