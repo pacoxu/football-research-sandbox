@@ -1390,7 +1390,7 @@
     {
       "country": "China PR",
       "status": "in-progress",
-      "verified_records": 41,
+      "verified_records": 43,
       "bucket_focus": [
         "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
         "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队和地区级成年联赛落点，避免与成年职业一线队样本混算；这条线现已明确补入刘邵子洋、何小珂、肖远豪等欧洲培养案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
@@ -3493,6 +3493,73 @@
             "FCF 2026 年 5 月 3 日比赛记录可核其身披国际巴塞罗那 25 号首发并在第 12 分钟进球；国际巴塞罗那是 2023 年成立的地区俱乐部，与 FC Barcelona、Inter Milan 均无关系。",
             "加泰罗尼亚乙级联赛约处西班牙第八级，因此本记录归入 big-five-youth，用于表示五大联赛国家的青训与地区级成年路径，不将其表述为欧洲成熟职业联赛球员。",
             "身体对抗、头球、补位和一定脚下出球能力来自宁波俱乐部对其后场多面手特点的公开介绍；能否在中甲取得稳定出场仍待后续赛季数据验证。"
+          ]
+        },
+        {
+          "id": "lin-liangming-spain-2015",
+          "name": "Lin Liangming",
+          "local_name": "林良铭",
+          "bucket": "big-five-lower-tier",
+          "league": "División de Honor Juvenil / Segunda División B / Tercera División",
+          "club": "Real Madrid Juvenil A / Real Madrid Castilla / UD Almería B",
+          "season": "2015-2019",
+          "history_year_range": "2015-2019",
+          "status": "verified",
+          "appearances": 71,
+          "appearance_label": "西乙B 35 场 4 球；改制前西丙 36 场 8 球；荣誉联赛另有进球",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "BeSoccer career path: Lin Liangming",
+              "url": "https://www.besoccer.com/player/career-path/l-liangming-297260"
+            },
+            {
+              "label": "Wikipedia: Lin Liangming",
+              "url": "https://en.wikipedia.org/wiki/Lin_Liangming"
+            },
+            {
+              "label": "MARCA: Lin Liangming Juvenil A goals",
+              "url": "https://www.marca.com/2015/10/26/futbol/equipos/real_madrid/1445869670.html"
+            }
+          ],
+          "summary": "林良铭 2015 年从广州富力进入皇马，先打 U19 荣誉联赛并取得进球，2016/17 为卡斯蒂亚在当时的第三级西乙B出场 7 次、没有进球；随后租借阿尔梅里亚，B 队在改制前西丙打进 8 球，升级后的 2018/19 西乙B再进 4 球。一线队没有西甲或西乙联赛出场。",
+          "notes": [
+            "71 场只计成年阶段可交叉的联赛和附加赛：卡斯蒂亚西乙B 7 场 0 球、阿尔梅里亚 B 队西丙联赛 32 场 8 球加升级附加赛 4 场 0 球、西乙B 28 场 4 球。",
+            "荣誉联赛进球单独保留。MARCA 2015-10-26 已核到 4 球，BeSoccer 生涯路径的阅读口径也是 4 球；之后还有 2015-12-19 的联赛进球报道，西语维基俱乐部表写 17 场 5 球，所以不把 4 收成赛季总数。",
+            "西乙B是 2021 年改制前的第三级，不是现在的西协甲；2017/18 的 8 球属于当时第四级西丙。",
+            "阿尔梅里亚一线队只有国王杯出场、联赛 0 场，不计入西乙。"
+          ]
+        },
+        {
+          "id": "xu-tianyuan-spain-2015",
+          "name": "Xu Tianyuan",
+          "local_name": "徐天沅",
+          "bucket": "big-five-youth",
+          "league": "División de Honor Juvenil / Tercera División",
+          "club": "Rayo Vallecano Juvenil A / Rayo Vallecano B",
+          "season": "2015-2017",
+          "history_year_range": "2015-2017",
+          "status": "verified",
+          "appearances": 1,
+          "appearance_label": "荣誉联赛已核首秀 1 场；赛季总数与巴列卡诺 B 队出场待补",
+          "competitive_debut": true,
+          "active_abroad": false,
+          "source_links": [
+            {
+              "label": "体坛+: 徐天沅巴列卡诺青年队首发",
+              "url": "https://www.ttplus.cn/publish/app/data/2015/09/06/370/os_news.html"
+            },
+            {
+              "label": "Rayo Vallecano: promotion to Rayo B",
+              "url": "https://www.rayovallecano.es/noticias/vuelta-al-trabajo-del-rayo-b"
+            }
+          ],
+          "summary": "徐天沅 2015/16 代表巴列卡诺青年 A 队踢 U19 荣誉联赛，2015-09-06 对阿尔卡拉完成首发；2016 年 7 月升入巴列卡诺 B 队，该队当时在第四级西丙。荣誉联赛赛季总数和 B 队正式出场都还没有闭合，不能写成西甲出场。",
+          "notes": [
+            "1 场只表示已核到的荣誉联赛首秀，不是 2015/16 赛季总出场。",
+            "巴列卡诺官网确认他从青年队升入 B 队；B 队 2016/17 在西丙第 7 组。正式出场数待补，不写成 0。",
+            "2017 年 2 月回国加盟河北华夏幸福后，西班牙阶段截断。"
           ]
         }
       ]

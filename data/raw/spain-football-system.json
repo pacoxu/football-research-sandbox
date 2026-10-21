@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04",
+  "checked_at": "2026-10-20",
   "summary": {
     "zh": "本页把西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站已建档、曾进入这些层级的中国球员样本放在同一套口径里。西甲俱乐部青训合同不等于西甲出场；签职业合同也不等于已经踢过对应联赛。",
     "en": "This page places Spain's senior professional pyramid, the U19/U16 youth pyramid, and documented Chinese samples into one scope. An academy deal with a La Liga club is not a La Liga appearance, and a professional contract is not automatically a match record."
@@ -52,8 +52,8 @@
         "en": "Senior professional and semi-pro leagues"
       },
       "summary": {
-        "zh": "西甲和西乙由西甲联盟运营，是仅有的两级完全职业联赛。西协甲及以下由西班牙足协体系组织；B 队通常从西协甲打起，不能与一线队同组。",
-        "en": "LaLiga and Segunda are the only fully professional national tiers, run by LaLiga. Primera Federación and below sit in the RFEF system. Reserve teams usually enter at Primera Federación and cannot share a group with their first team."
+        "zh": "西甲和西乙由西甲联盟运营，是仅有的两级完全职业联赛。西协甲及以下由西班牙足协体系组织；B 队通常从西协甲打起，不能与一线队同组。2021 年改制前的西乙B仍是当时第三级，西丙是当时第四级，这两级单独成层，不并进现在的西协甲或西协丙。",
+        "en": "LaLiga and Segunda are the only fully professional national tiers, run by LaLiga. Primera Federación and below sit in the RFEF system. Reserve teams usually enter at Primera Federación and cannot share a group with their first team. Before the 2021 reform, Segunda División B was the third tier and Tercera División the fourth; those historical tiers stay separate from today's Primera Federación and Tercera Federación."
       },
       "layers": [
         {
@@ -96,6 +96,19 @@
           "source_url": "https://www.rfef.es/"
         },
         {
+          "id": "segunda-division-b",
+          "tier": 3,
+          "name": {
+            "zh": "西乙B Segunda División B",
+            "en": "Segunda División B"
+          },
+          "stable_structure": {
+            "zh": "2021 年改制前的第三级全国联赛，不是现在的西协甲。林良铭的皇马卡斯蒂亚 2016/17 和阿尔梅里亚 B 队 2018/19 落在这一层。",
+            "en": "Spain's third national tier before the 2021 reform, not today's Primera Federación. Lin Liangming's Real Madrid Castilla spell in 2016/17 and his Almería B season in 2018/19 sit here."
+          },
+          "source_url": "https://www.rfef.es/"
+        },
+        {
           "id": "segunda-federacion",
           "tier": 4,
           "name": {
@@ -105,6 +118,19 @@
           "stable_structure": {
             "zh": "第四级全国联赛。邝兆镭 2025 年加盟莱里达竞技一线队属于这一层；签约与随队训练不等于已经取得正式出场。",
             "en": "The fourth national tier. Kuang Zhaolei's 2025 move to Atlètic Lleida belongs here; signing and training do not prove a competitive appearance."
+          },
+          "source_url": "https://www.rfef.es/"
+        },
+        {
+          "id": "tercera-division",
+          "tier": 4,
+          "name": {
+            "zh": "西丙 Tercera División",
+            "en": "Tercera División"
+          },
+          "stable_structure": {
+            "zh": "2021 年改制前的第四级。林良铭 2017/18 的阿尔梅里亚 B 队、徐天沅 2016/17 的巴列卡诺 B 队都在这一层，不能写成现在的第五级西协丙。",
+            "en": "The fourth tier before the 2021 reform. Lin Liangming's 2017/18 Almería B season and Xu Tianyuan's 2016/17 Rayo Vallecano B registration sit here, not in today's fifth-tier Tercera Federación."
           },
           "source_url": "https://www.rfef.es/"
         },
@@ -436,6 +462,70 @@
       }
     },
     {
+      "id": "lin-liangming-segunda-b-castilla",
+      "featured_record_id": "lin-liangming-spain-2015",
+      "name": "Lin Liangming",
+      "local_name": "林良铭",
+      "layer_id": "segunda-division-b",
+      "club": "Real Madrid Castilla",
+      "season": "2016-2017",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2016/17 皇马卡斯蒂亚，当时的第三级西乙B：7 场 0 球。2016-08-20 对皇家社会 B 队完成首秀并助攻。不是西甲，也不是现在的西协甲。",
+        "en": "Real Madrid Castilla in 2016/17, then third-tier Segunda División B: 7 appearances and no goals. He debuted on 2016-08-20 against Real Sociedad B and assisted. This is not LaLiga and not today's Primera Federación."
+      }
+    },
+    {
+      "id": "lin-liangming-segunda-b-almeria",
+      "featured_record_id": "lin-liangming-spain-2015",
+      "name": "Lin Liangming",
+      "local_name": "林良铭",
+      "layer_id": "segunda-division-b",
+      "club": "UD Almería B",
+      "season": "2018-2019",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "2018/19 从皇马租借到阿尔梅里亚 B 队，西乙B（当时第三级）28 场 4 球。这是第三级进球，不是西甲或西乙一线队。",
+        "en": "Loaned from Real Madrid to Almería B in 2018/19. Segunda División B, then the third tier: 28 appearances and 4 goals. These are third-tier goals, not LaLiga or Segunda first-team goals."
+      }
+    },
+    {
+      "id": "lin-liangming-tercera-almeria",
+      "featured_record_id": "lin-liangming-spain-2015",
+      "name": "Lin Liangming",
+      "local_name": "林良铭",
+      "layer_id": "tercera-division",
+      "club": "UD Almería B",
+      "season": "2017-2018",
+      "contract_type": "professional",
+      "appearance_status": "appeared",
+      "verification_status": "verified",
+      "note": {
+        "zh": "同一租借的前一个赛季先踢改制前西丙（当时第四级）：联赛 32 场 8 球，升级附加赛 4 场 0 球。这 8 球不能写成第三级。",
+        "en": "The previous season of the same loan was the old Tercera División, then the fourth tier: 32 league appearances and 8 goals, plus 4 promotion-playoff appearances and no goals. Those 8 goals are not third-tier goals."
+      }
+    },
+    {
+      "id": "xu-tianyuan-tercera-rayo-b",
+      "featured_record_id": "xu-tianyuan-spain-2015",
+      "name": "Xu Tianyuan",
+      "local_name": "徐天沅",
+      "layer_id": "tercera-division",
+      "club": "Rayo Vallecano B",
+      "season": "2016-2017",
+      "contract_type": "unknown",
+      "appearance_status": "registered-no-appearance",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "2016 年 7 月巴列卡诺官网把他列入从青年队升入 B 队的名单。2016/17 B 队在改制前西丙第 7 组（当时第四级）。注册可核，正式出场次数尚未回填，不能写成 0 场，也不是西甲。",
+        "en": "Rayo's site listed him in July 2016 among players promoted from the youth team to the B team. In 2016/17 that side played old Tercera División Group 7, then the fourth tier. Registration is verified; competitive appearances are not yet filled in, so this is not a confirmed zero and not LaLiga."
+      }
+    },
+    {
       "id": "yang-xi-honor-juvenil",
       "player_id": "cn-yang-alex-2005",
       "name": "Alex Xi Yang",
@@ -465,6 +555,38 @@
       "note": {
         "zh": "公开口径 2021/22 主踢西班牙人 U19B 全国联赛约 23 场，同年开始上 A 队。不是只在 U19A。",
         "en": "Public sources put about 23 Liga Nacional games for Espanyol U19B in 2021/22, with the same season's first A-team minutes. He was not exclusively U19A."
+      }
+    },
+    {
+      "id": "lin-liangming-honor-juvenil",
+      "featured_record_id": "lin-liangming-spain-2015",
+      "name": "Lin Liangming",
+      "local_name": "林良铭",
+      "layer_id": "division-honor-juvenil",
+      "club": "Real Madrid Juvenil A",
+      "season": "2015-2016",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "2015/16 皇马青年 A 队，U19 荣誉联赛第 5 组。MARCA 2015-10-26 写他对阿尔卡拉、普埃布拉各进 2 球。BeSoccer 生涯路径可见荣誉联赛进球，阅读口径是 4 球；西语维基俱乐部表写 17 场 5 球，2015-12-19 另有一场联赛进球报道。本条确认出过场、进过球，不把 4 和 5 收成唯一赛季总数。",
+        "en": "Real Madrid Juvenil A in 2015/16, División de Honor Group 5. MARCA on 2015-10-26 records two goals against Alcalá and two against Puebla. The BeSoccer career path shows honour-league goals, read there as four; the Spanish Wikipedia club line says 17 games and 5 goals, and a 2015-12-19 report adds another league goal. This confirms the appearances and goals without collapsing 4 and 5 into one season total."
+      }
+    },
+    {
+      "id": "xu-tianyuan-honor-juvenil",
+      "featured_record_id": "xu-tianyuan-spain-2015",
+      "name": "Xu Tianyuan",
+      "local_name": "徐天沅",
+      "layer_id": "division-honor-juvenil",
+      "club": "Rayo Vallecano Juvenil A",
+      "season": "2015-2016",
+      "contract_type": "youth-formation",
+      "appearance_status": "appeared",
+      "verification_status": "mixed-source",
+      "note": {
+        "zh": "2015/16 巴列卡诺青年 A 队，U19 荣誉联赛第 5 组，与皇马青年队同组。2015-09-06 客场对阿尔卡拉首发，约第 65 分钟被换下。赛季总出场和进球还没有对齐到完整技术统计。",
+        "en": "Rayo Vallecano Juvenil A in 2015/16, División de Honor Group 5, the same group as Real Madrid. He started away at Alcalá on 2015-09-06 and was substituted around the 65th minute. Season appearance and goal totals are not yet tied to a full statistical sheet."
       }
     },
     {
@@ -696,6 +818,31 @@
       "label": "Espanyol announcement: Lyu Mengyang",
       "url": "https://www.163.com/dy/article/L6QCQKL20549BAP0.html",
       "checked_at": "2026-10-04"
+    },
+    {
+      "label": "BeSoccer career path: Lin Liangming",
+      "url": "https://www.besoccer.com/player/career-path/l-liangming-297260",
+      "checked_at": "2026-10-20"
+    },
+    {
+      "label": "MARCA: Lin Liangming Juvenil A goals",
+      "url": "https://www.marca.com/2015/10/26/futbol/equipos/real_madrid/1445869670.html",
+      "checked_at": "2026-10-20"
+    },
+    {
+      "label": "Wikipedia: Lin Liangming",
+      "url": "https://en.wikipedia.org/wiki/Lin_Liangming",
+      "checked_at": "2026-10-20"
+    },
+    {
+      "label": "Rayo Vallecano: promotion to Rayo B",
+      "url": "https://www.rayovallecano.es/noticias/vuelta-al-trabajo-del-rayo-b",
+      "checked_at": "2026-10-20"
+    },
+    {
+      "label": "体坛+: 徐天沅巴列卡诺青年队首发",
+      "url": "https://www.ttplus.cn/publish/app/data/2015/09/06/370/os_news.html",
+      "checked_at": "2026-10-20"
     }
   ]
 }

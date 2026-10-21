@@ -36,6 +36,33 @@ test("does not treat Espanyol academy deals as LaLiga appearances", () => {
   );
 });
 
+test("places Lin Liangming and Xu Tianyuan without collapsing historical tiers", () => {
+  const lin = payload.placements.filter((placement) => placement.featured_record_id === "lin-liangming-spain-2015");
+  const xu = payload.placements.filter((placement) => placement.featured_record_id === "xu-tianyuan-spain-2015");
+  assert.deepEqual(
+    lin.map((placement) => placement.layer_id).sort(),
+    ["division-honor-juvenil", "segunda-division-b", "segunda-division-b", "tercera-division"].sort()
+  );
+  const castilla = lin.find((placement) => placement.club === "Real Madrid Castilla");
+  const almeriaThird = lin.find((placement) => placement.id === "lin-liangming-segunda-b-almeria");
+  const almeriaFourth = lin.find((placement) => placement.id === "lin-liangming-tercera-almeria");
+  assert.equal(castilla.appearance_status, "appeared");
+  assert.match(castilla.note.zh, /0 球/);
+  assert.match(almeriaThird.note.zh, /4 球/);
+  assert.match(almeriaFourth.note.zh, /不能写成第三级/);
+  assert.equal(
+    lin.some((placement) => placement.layer_id === "primera-federacion" || placement.layer_id === "laliga"),
+    false
+  );
+  assert.deepEqual(
+    xu.map((placement) => [placement.layer_id, placement.appearance_status]).sort(),
+    [
+      ["division-honor-juvenil", "appeared"],
+      ["tercera-division", "registered-no-appearance"]
+    ].sort()
+  );
+});
+
 test("keeps Wu Lei professional first-team path on LaLiga and Segunda", () => {
   const layers = payload.placements
     .filter((placement) => placement.featured_record_id === "wu-lei-espanyol-2019")
