@@ -5186,6 +5186,10 @@ tbody tr:last-child td {
   }
 }
 
+.spain-count-open {
+  border-bottom: 1px dotted currentColor;
+}
+
 .spain-pyramid-grid {
   display: grid;
   gap: 28px;

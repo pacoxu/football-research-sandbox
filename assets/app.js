@@ -454,6 +454,15 @@ const UI_COPY = {
     "spain.pyramid.note": "点层级可跳到下方球员表。西甲俱乐部名字不等于西甲出场。",
     "spain.pyramid.tier": "第 {tier} 级",
     "spain.pyramid.count": "{count} 条样本",
+    "spain.u19.eyebrow": "荣誉联赛 + 全国二级",
+    "spain.u19.title": "西班牙 U19 中国球员",
+    "spain.u19.layer": "层级",
+    "spain.u19.player": "球员",
+    "spain.u19.age": "年龄",
+    "spain.u19.club": "球队",
+    "spain.u19.season": "赛季",
+    "spain.u19.appearances": "场次",
+    "spain.u19.goals": "进球",
     "spain.players.eyebrow": "Placements",
     "spain.players.title": "哪些球员踢过这些层级",
     "spain.players.meta": "当前筛选 {count} 条",
@@ -1535,6 +1544,15 @@ const UI_COPY = {
     "spain.pyramid.note": "Jump from a layer to the table below. A La Liga club name is not a La Liga appearance.",
     "spain.pyramid.tier": "Tier {tier}",
     "spain.pyramid.count": "{count} samples",
+    "spain.u19.eyebrow": "Honour league + second tier",
+    "spain.u19.title": "Chinese players in Spanish U19 football",
+    "spain.u19.layer": "Layer",
+    "spain.u19.player": "Player",
+    "spain.u19.age": "Age",
+    "spain.u19.club": "Club",
+    "spain.u19.season": "Season",
+    "spain.u19.appearances": "Appearances",
+    "spain.u19.goals": "Goals",
     "spain.players.eyebrow": "Placements",
     "spain.players.title": "Which players reached these layers",
     "spain.players.meta": "Showing {count} placements",
@@ -10732,6 +10750,55 @@ function initializeSpainSystemPage() {
   }
 }
 
+function isOpenSpainCount(value) {
+  return /[–~]|起|约/.test(value);
+}
+
+function renderSpainU19Table(payload, layerMap) {
+  const table = payload.u19_table;
+  const note = document.querySelector("#spainU19Note");
+  const head = document.querySelector("#spainU19Head");
+  const body = document.querySelector("#spainU19Body");
+  if (!table || !head || !body) return;
+  if (note) note.textContent = localizeText(table.note);
+  head.innerHTML = `<tr>
+    <th>${escapeHtml(t("spain.u19.layer"))}</th>
+    <th>${escapeHtml(t("spain.u19.player"))}</th>
+    <th>${escapeHtml(t("spain.u19.age"))}</th>
+    <th>${escapeHtml(t("spain.u19.club"))}</th>
+    <th>${escapeHtml(t("spain.u19.season"))}</th>
+    <th>${escapeHtml(t("spain.u19.appearances"))}</th>
+    <th>${escapeHtml(t("spain.u19.goals"))}</th>
+  </tr>`;
+  body.innerHTML = (table.rows ?? [])
+    .map((row) => {
+      const layer = layerMap.get(row.layer_id);
+      const href = getSpainPlayerHref(row);
+      const label = state.language === "en" ? row.name : row.local_name || row.name;
+      const nameCell = href
+        ? `<a class="inline-link" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`
+        : escapeHtml(label);
+      const appearances = row.appearances;
+      const appearanceCell = isOpenSpainCount(appearances)
+        ? `<span class="spain-count-open">${escapeHtml(appearances)}</span>`
+        : escapeHtml(appearances);
+      const goals = localizeText(row.goals);
+      const goalCell = isOpenSpainCount(goals)
+        ? `<span class="spain-count-open">${escapeHtml(goals)}</span>`
+        : escapeHtml(goals);
+      return `<tr>
+        <td>${escapeHtml(layer ? localizeText(layer.name) : row.layer_id)}</td>
+        <td>${nameCell}</td>
+        <td>${escapeHtml(row.age)}</td>
+        <td>${escapeHtml(localizeText(row.club))}</td>
+        <td>${escapeHtml(row.season)}</td>
+        <td>${appearanceCell}</td>
+        <td>${goalCell}</td>
+      </tr>`;
+    })
+    .join("");
+}
+
 function renderSpainSystemPage() {
   const payload = getSpainSystemPayload();
   const layerMap = getSpainLayerMap(payload);
@@ -10804,8 +10871,9 @@ function renderSpainSystemPage() {
           </section>
         `;
       })
-      .join("");
+          .join("");
   }
+  renderSpainU19Table(payload, layerMap);
   const filters = document.querySelector("#spainPlayerFilters");
   if (filters) {
     filters.innerHTML = `

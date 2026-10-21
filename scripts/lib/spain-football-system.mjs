@@ -61,7 +61,9 @@ export function validateSpainFootballSystem(payload, playerIds, featuredRecordId
     "laliga",
     "segunda",
     "primera-federacion",
+    "segunda-division-b",
     "segunda-federacion",
+    "tercera-division",
     "tercera-federacion",
     "regional-senior",
     "division-honor-juvenil",
@@ -150,6 +152,38 @@ export function validateSpainFootballSystem(payload, playerIds, featuredRecordId
       (placement) => placement.player_id === "cn-lyu-mengyang-2009" && placement.layer_id === "laliga"
     ),
     "Lyu Mengyang must not be placed on LaLiga"
+  );
+
+  const u19Layers = new Set(["division-honor-juvenil", "liga-nacional-juvenil"]);
+  assert(payload.u19_table?.rows?.length > 0, "Missing Spain U19 combined table");
+  validateLocalizedText(payload.u19_table.note, "spain u19 table note");
+  assert(payload.u19_table.note.zh.includes("起"), "U19 table note must explain unclosed appearance counts");
+  const u19RowIds = new Set();
+  const u19RowLayers = new Set();
+  for (const row of payload.u19_table.rows) {
+    assert(!u19RowIds.has(row.id), `Duplicate Spain U19 row ${row.id}`);
+    u19RowIds.add(row.id);
+    assert(u19Layers.has(row.layer_id), `Spain U19 row ${row.id} must stay in honour league or Liga Nacional`);
+    u19RowLayers.add(row.layer_id);
+    assert(typeof row.age === "string" && row.age.length > 0, `Missing age on ${row.id}`);
+    assert(typeof row.season === "string" && row.season.length > 0, `Missing season on ${row.id}`);
+    assert(typeof row.appearances === "string" && row.appearances.length > 0, `Missing appearances on ${row.id}`);
+    validateLocalizedText(row.club, `${row.id}.club`);
+    validateLocalizedText(row.goals, `${row.id}.goals`);
+    assert(
+      Boolean(row.player_id) || Boolean(row.featured_record_id),
+      `Spain U19 row ${row.id} needs a player_id or featured_record_id`
+    );
+    if (row.player_id) assert(playerIds.has(row.player_id), `Unknown player on Spain U19 row ${row.id}`);
+    if (row.featured_record_id) {
+      assert(featuredRecordIds.has(row.featured_record_id), `Unknown featured record on Spain U19 row ${row.id}`);
+    }
+  }
+  assert(u19RowLayers.size === 2, "Spain U19 table must combine honour league and Liga Nacional");
+  assert(
+    payload.u19_table.rows.some((row) => row.appearances.includes("起")) &&
+      payload.u19_table.rows.some((row) => row.appearances.includes("–")),
+    "Spain U19 table must keep an open floor and a range"
   );
 
   for (const source of payload.source_links ?? []) {

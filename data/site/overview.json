@@ -3691,7 +3691,7 @@
       {
         "country": "China PR",
         "status": "in-progress",
-        "verified_records": 41,
+        "verified_records": 46,
         "bucket_focus": [
           "big-five：已补入杨晨、孙继海、李铁、邵佳一、武磊这类真正形成五大联赛正式出场的核心样本",
           "big-five-youth：当前主要对应西班牙、英格兰等五大联赛国家的青训 / 梯队和地区级成年联赛落点，避免与成年职业一线队样本混算；这条线现已明确补入刘邵子洋、何小珂、肖远豪等欧洲培养案例，并把蒋光太、戴伟浚保留为英格兰青训出身样本",
@@ -5710,6 +5710,7 @@
             "summary": "何小珂的欧洲经历覆盖塞尔维亚短暂试水与西班牙主线培养，但真正可量化的比赛主要在西班牙：Sabadell B 1 场、Sabadell 一线队西协甲 1 场，随后又进入 FC Andorra 体系，构成中国青年前锋在西班牙青训与第三级职业联赛之间流动的代表路径。",
             "notes": [
               "2022-12-18 对奥萨苏纳 B 的替补登场，是其可公开核验的西协甲首秀。",
+              "萨瓦德尔青年 A 队荣誉联赛公开总结约为 37 场、约 7 球。这个总数还没按赛季闭合，不并进上面的 2 场成年出场。",
               "这条路径更适合归到五大联赛国家青训 / 梯队，而不是成年留洋成功样本。",
               "2025 年回到国内职业俱乐部后，其西班牙阶段保留为历史路径。"
             ]
@@ -5794,6 +5795,166 @@
               "FCF 2026 年 5 月 3 日比赛记录可核其身披国际巴塞罗那 25 号首发并在第 12 分钟进球；国际巴塞罗那是 2023 年成立的地区俱乐部，与 FC Barcelona、Inter Milan 均无关系。",
               "加泰罗尼亚乙级联赛约处西班牙第八级，因此本记录归入 big-five-youth，用于表示五大联赛国家的青训与地区级成年路径，不将其表述为欧洲成熟职业联赛球员。",
               "身体对抗、头球、补位和一定脚下出球能力来自宁波俱乐部对其后场多面手特点的公开介绍；能否在中甲取得稳定出场仍待后续赛季数据验证。"
+            ]
+          },
+          {
+            "id": "lin-liangming-spain-2015",
+            "name": "Lin Liangming",
+            "local_name": "林良铭",
+            "bucket": "big-five-lower-tier",
+            "league": "División de Honor Juvenil / Segunda División B / Tercera División",
+            "club": "Real Madrid Juvenil A / Real Madrid Castilla / UD Almería B",
+            "season": "2015-2019",
+            "history_year_range": "2015-2019",
+            "status": "verified",
+            "appearances": 71,
+            "appearance_label": "西乙B 35 场 4 球；改制前西丙 36 场 8 球；荣誉联赛另有进球",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "BeSoccer career path: Lin Liangming",
+                "url": "https://www.besoccer.com/player/career-path/l-liangming-297260"
+              },
+              {
+                "label": "Wikipedia: Lin Liangming",
+                "url": "https://en.wikipedia.org/wiki/Lin_Liangming"
+              },
+              {
+                "label": "MARCA: Lin Liangming Juvenil A goals",
+                "url": "https://www.marca.com/2015/10/26/futbol/equipos/real_madrid/1445869670.html"
+              }
+            ],
+            "summary": "林良铭 2015 年从广州富力进入皇马，先打 U19 荣誉联赛并取得进球，2016/17 为卡斯蒂亚在当时的第三级西乙B出场 7 次、没有进球；随后租借阿尔梅里亚，B 队在改制前西丙打进 8 球，升级后的 2018/19 西乙B再进 4 球。一线队没有西甲或西乙联赛出场。",
+            "notes": [
+              "71 场只计成年阶段可交叉的联赛和附加赛：卡斯蒂亚西乙B 7 场 0 球、阿尔梅里亚 B 队西丙联赛 32 场 8 球加升级附加赛 4 场 0 球、西乙B 28 场 4 球。",
+              "荣誉联赛进球单独保留。MARCA 2015-10-26 已核到 4 球，BeSoccer 生涯路径的阅读口径也是 4 球；之后还有 2015-12-19 的联赛进球报道，西语维基俱乐部表写 17 场 5 球，所以不把 4 收成赛季总数。",
+              "西乙B是 2021 年改制前的第三级，不是现在的西协甲；2017/18 的 8 球属于当时第四级西丙。",
+              "阿尔梅里亚一线队只有国王杯出场、联赛 0 场，不计入西乙。"
+            ]
+          },
+          {
+            "id": "xu-tianyuan-spain-2015",
+            "name": "Xu Tianyuan",
+            "local_name": "徐天沅",
+            "bucket": "big-five-youth",
+            "league": "División de Honor Juvenil / Tercera División",
+            "club": "Rayo Vallecano Juvenil A / Rayo Vallecano B",
+            "season": "2015-2017",
+            "history_year_range": "2015-2017",
+            "status": "verified",
+            "appearances": 1,
+            "appearance_label": "荣誉联赛已核首秀 1 场；赛季总数与巴列卡诺 B 队出场待补",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "体坛+: 徐天沅巴列卡诺青年队首发",
+                "url": "https://www.ttplus.cn/publish/app/data/2015/09/06/370/os_news.html"
+              },
+              {
+                "label": "Rayo Vallecano: promotion to Rayo B",
+                "url": "https://www.rayovallecano.es/noticias/vuelta-al-trabajo-del-rayo-b"
+              }
+            ],
+            "summary": "徐天沅 2015/16 代表巴列卡诺青年 A 队踢 U19 荣誉联赛，2015-09-06 对阿尔卡拉完成首发；2016 年 7 月升入巴列卡诺 B 队，该队当时在第四级西丙。荣誉联赛赛季总数和 B 队正式出场都还没有闭合，不能写成西甲出场。",
+            "notes": [
+              "1 场只表示已核到的荣誉联赛首秀，不是 2015/16 赛季总出场。",
+              "巴列卡诺官网确认他从青年队升入 B 队；B 队 2016/17 在西丙第 7 组。正式出场数待补，不写成 0。",
+              "2017 年 2 月回国加盟河北华夏幸福后，西班牙阶段截断。"
+            ]
+          },
+          {
+            "id": "han-fenglin-marbella-2022",
+            "name": "Han Fenglin",
+            "local_name": "韩丰璘",
+            "bucket": "big-five-youth",
+            "league": "División de Honor Juvenil",
+            "club": "Marbella Juvenil A",
+            "season": "2022-2023",
+            "history_year_range": "2022-2023",
+            "status": "verified",
+            "appearances": 8,
+            "appearance_label": "荣誉联赛 8 起，赛季总数未闭合",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "新浪：韩丰璘马贝拉荣誉联赛首秀",
+                "url": "https://www.sina.cn/news/detail/4817497956550564.html"
+              },
+              {
+                "label": "懂球帝转载：韩丰璘荣誉联赛出场 8 次",
+                "url": "http://m.gtxh.com/tiyu/2022/1120/151079.html"
+              }
+            ],
+            "summary": "韩丰璘 2004 年 1 月出生，2022 年夏天进入马贝拉青年 A 队打 U19 荣誉联赛第 4 组。2022-09-25 客场对塞维利亚青年队完成替补首秀；到 2022-11-19 首次首发打满全场时，公开口径是已出场 8 次。赛季还没结束，所以这 8 场只是下沿。",
+            "notes": [
+              "8 场来自 2022-11-19 的赛中报道，不是赛季闭合总数，表里写成「8 起」。",
+              "进球没有同口径公开数字，不补成 0。",
+              "马贝拉一线队当时在低级别成年联赛，这条记录只算青年 A 队荣誉联赛。"
+            ]
+          },
+          {
+            "id": "wang-haowen-badalona-2024",
+            "name": "Wang Haowen",
+            "local_name": "王皓文",
+            "bucket": "big-five-youth",
+            "league": "División de Honor Juvenil",
+            "club": "CF Badalona Juvenil A",
+            "season": "2024-2025",
+            "history_year_range": "2024-2025",
+            "status": "verified",
+            "appearances": 13,
+            "appearance_label": "荣誉联赛 13 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "直播吧：王皓文加盟巴达洛纳 U19A",
+                "url": "https://news.qq.com/rain/a/20240712A0563A00"
+              },
+              {
+                "label": "新浪：王皓文 2024/25 荣誉联赛赛季总结",
+                "url": "https://www.sina.cn/news/detail/5163334760663168.html"
+              }
+            ],
+            "summary": "王皓文 2006 年 2 月 17 日出生。2024/25 代表巴达洛纳青年 A 队参加 U19 荣誉联赛第 3 组，赛季总结为 13 次出场、其中 4 次首发。球队降入下赛季全国二级。进球没有同口径公开数字。",
+            "notes": [
+              "13 场来自赛季总结，按已闭合场次记录，不写成范围。",
+              "他还为巴达洛纳一线队在加泰足协杯首发 1 次，那不是荣誉联赛，也不升成西甲。",
+              "2025 年 7 月离开巴达洛纳青年队。"
+            ]
+          },
+          {
+            "id": "chen-yusheng-patacona-2025",
+            "name": "Chen Yusheng",
+            "local_name": "陈雨晟",
+            "bucket": "big-five-youth",
+            "league": "División de Honor Juvenil",
+            "club": "Patacona CF Juvenil A",
+            "season": "2025-2026",
+            "history_year_range": "2025-2026",
+            "status": "verified",
+            "appearances": 29,
+            "appearance_label": "荣誉联赛 29 场",
+            "competitive_debut": true,
+            "active_abroad": false,
+            "source_links": [
+              {
+                "label": "直播吧：陈雨晟荣誉联赛赛季中段 23 场",
+                "url": "https://news.zhibo8.com/zuqiu/2026-03-16/69b7e20940cf1native.htm"
+              },
+              {
+                "label": "帕塔科纳升入一线队报道：荣誉联赛 29 场",
+                "url": "https://www.eivone.com/4927.html"
+              }
+            ],
+            "summary": "陈雨晟 2007 年 8 月 15 日出生。2025/26 作为帕塔科纳青年 A 队队长之一参加 U19 荣誉联赛第 7 组，赛季总结为联赛 29 场、27 次首发。2026 年 6 月升入一线队；一线队当时在瓦伦西亚自治区联赛，不是西甲。",
+            "notes": [
+              "29 场是赛季总结口径。2026-03-16 的中段报道还是 23 场，所以不以中段数字作为赛季总数。",
+              "荣誉联赛进球没有同口径公开数字，不补成 0。",
+              "一线队 2 次替补、约 62 分钟属于自治区成年联赛，不并进这 29 场。"
             ]
           }
         ]
@@ -55351,7 +55512,7 @@
   },
   "spain_football_system": {
     "schema_version": 1,
-    "checked_at": "2026-10-04",
+    "checked_at": "2026-10-21",
     "summary": {
       "zh": "本页把西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站已建档、曾进入这些层级的中国球员样本放在同一套口径里。西甲俱乐部青训合同不等于西甲出场；签职业合同也不等于已经踢过对应联赛。",
       "en": "This page places Spain's senior professional pyramid, the U19/U16 youth pyramid, and documented Chinese samples into one scope. An academy deal with a La Liga club is not a La Liga appearance, and a professional contract is not automatically a match record."
@@ -55403,8 +55564,8 @@
           "en": "Senior professional and semi-pro leagues"
         },
         "summary": {
-          "zh": "西甲和西乙由西甲联盟运营，是仅有的两级完全职业联赛。西协甲及以下由西班牙足协体系组织；B 队通常从西协甲打起，不能与一线队同组。",
-          "en": "LaLiga and Segunda are the only fully professional national tiers, run by LaLiga. Primera Federación and below sit in the RFEF system. Reserve teams usually enter at Primera Federación and cannot share a group with their first team."
+          "zh": "西甲和西乙由西甲联盟运营，是仅有的两级完全职业联赛。西协甲及以下由西班牙足协体系组织；B 队通常从西协甲打起，不能与一线队同组。2021 年改制前的西乙B仍是当时第三级，西丙是当时第四级，这两级单独成层，不并进现在的西协甲或西协丙。",
+          "en": "LaLiga and Segunda are the only fully professional national tiers, run by LaLiga. Primera Federación and below sit in the RFEF system. Reserve teams usually enter at Primera Federación and cannot share a group with their first team. Before the 2021 reform, Segunda División B was the third tier and Tercera División the fourth; those historical tiers stay separate from today's Primera Federación and Tercera Federación."
         },
         "layers": [
           {
@@ -55447,6 +55608,19 @@
             "source_url": "https://www.rfef.es/"
           },
           {
+            "id": "segunda-division-b",
+            "tier": 3,
+            "name": {
+              "zh": "西乙B Segunda División B",
+              "en": "Segunda División B"
+            },
+            "stable_structure": {
+              "zh": "2021 年改制前的第三级全国联赛，不是现在的西协甲。林良铭的皇马卡斯蒂亚 2016/17 和阿尔梅里亚 B 队 2018/19 落在这一层。",
+              "en": "Spain's third national tier before the 2021 reform, not today's Primera Federación. Lin Liangming's Real Madrid Castilla spell in 2016/17 and his Almería B season in 2018/19 sit here."
+            },
+            "source_url": "https://www.rfef.es/"
+          },
+          {
             "id": "segunda-federacion",
             "tier": 4,
             "name": {
@@ -55456,6 +55630,19 @@
             "stable_structure": {
               "zh": "第四级全国联赛。邝兆镭 2025 年加盟莱里达竞技一线队属于这一层；签约与随队训练不等于已经取得正式出场。",
               "en": "The fourth national tier. Kuang Zhaolei's 2025 move to Atlètic Lleida belongs here; signing and training do not prove a competitive appearance."
+            },
+            "source_url": "https://www.rfef.es/"
+          },
+          {
+            "id": "tercera-division",
+            "tier": 4,
+            "name": {
+              "zh": "西丙 Tercera División",
+              "en": "Tercera División"
+            },
+            "stable_structure": {
+              "zh": "2021 年改制前的第四级。林良铭 2017/18 的阿尔梅里亚 B 队、徐天沅 2016/17 的巴列卡诺 B 队都在这一层，不能写成现在的第五级西协丙。",
+              "en": "The fourth tier before the 2021 reform. Lin Liangming's 2017/18 Almería B season and Xu Tianyuan's 2016/17 Rayo Vallecano B registration sit here, not in today's fifth-tier Tercera Federación."
             },
             "source_url": "https://www.rfef.es/"
           },
@@ -55787,6 +55974,70 @@
         }
       },
       {
+        "id": "lin-liangming-segunda-b-castilla",
+        "featured_record_id": "lin-liangming-spain-2015",
+        "name": "Lin Liangming",
+        "local_name": "林良铭",
+        "layer_id": "segunda-division-b",
+        "club": "Real Madrid Castilla",
+        "season": "2016-2017",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2016/17 皇马卡斯蒂亚，当时的第三级西乙B：7 场 0 球。2016-08-20 对皇家社会 B 队完成首秀并助攻。不是西甲，也不是现在的西协甲。",
+          "en": "Real Madrid Castilla in 2016/17, then third-tier Segunda División B: 7 appearances and no goals. He debuted on 2016-08-20 against Real Sociedad B and assisted. This is not LaLiga and not today's Primera Federación."
+        }
+      },
+      {
+        "id": "lin-liangming-segunda-b-almeria",
+        "featured_record_id": "lin-liangming-spain-2015",
+        "name": "Lin Liangming",
+        "local_name": "林良铭",
+        "layer_id": "segunda-division-b",
+        "club": "UD Almería B",
+        "season": "2018-2019",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "2018/19 从皇马租借到阿尔梅里亚 B 队，西乙B（当时第三级）28 场 4 球。这是第三级进球，不是西甲或西乙一线队。",
+          "en": "Loaned from Real Madrid to Almería B in 2018/19. Segunda División B, then the third tier: 28 appearances and 4 goals. These are third-tier goals, not LaLiga or Segunda first-team goals."
+        }
+      },
+      {
+        "id": "lin-liangming-tercera-almeria",
+        "featured_record_id": "lin-liangming-spain-2015",
+        "name": "Lin Liangming",
+        "local_name": "林良铭",
+        "layer_id": "tercera-division",
+        "club": "UD Almería B",
+        "season": "2017-2018",
+        "contract_type": "professional",
+        "appearance_status": "appeared",
+        "verification_status": "verified",
+        "note": {
+          "zh": "同一租借的前一个赛季先踢改制前西丙（当时第四级）：联赛 32 场 8 球，升级附加赛 4 场 0 球。这 8 球不能写成第三级。",
+          "en": "The previous season of the same loan was the old Tercera División, then the fourth tier: 32 league appearances and 8 goals, plus 4 promotion-playoff appearances and no goals. Those 8 goals are not third-tier goals."
+        }
+      },
+      {
+        "id": "xu-tianyuan-tercera-rayo-b",
+        "featured_record_id": "xu-tianyuan-spain-2015",
+        "name": "Xu Tianyuan",
+        "local_name": "徐天沅",
+        "layer_id": "tercera-division",
+        "club": "Rayo Vallecano B",
+        "season": "2016-2017",
+        "contract_type": "unknown",
+        "appearance_status": "registered-no-appearance",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2016 年 7 月巴列卡诺官网把他列入从青年队升入 B 队的名单。2016/17 B 队在改制前西丙第 7 组（当时第四级）。注册可核，正式出场次数尚未回填，不能写成 0 场，也不是西甲。",
+          "en": "Rayo's site listed him in July 2016 among players promoted from the youth team to the B team. In 2016/17 that side played old Tercera División Group 7, then the fourth tier. Registration is verified; competitive appearances are not yet filled in, so this is not a confirmed zero and not LaLiga."
+        }
+      },
+      {
         "id": "yang-xi-honor-juvenil",
         "player_id": "cn-yang-alex-2005",
         "name": "Alex Xi Yang",
@@ -55819,6 +56070,102 @@
         }
       },
       {
+        "id": "lin-liangming-honor-juvenil",
+        "featured_record_id": "lin-liangming-spain-2015",
+        "name": "Lin Liangming",
+        "local_name": "林良铭",
+        "layer_id": "division-honor-juvenil",
+        "club": "Real Madrid Juvenil A",
+        "season": "2015-2016",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2015/16 皇马青年 A 队，U19 荣誉联赛第 5 组。场次记为 4–17、进球记为 4–5：下沿来自赛季中段的 4 球报道，上沿来自西语维基俱乐部表的 17 场 5 球。范围表示还没闭合。",
+          "en": "Real Madrid Juvenil A in 2015/16, División de Honor Group 5. Appearances stay 4–17 and goals 4–5: the floor is the mid-season four-goal report, and the ceiling is the Spanish Wikipedia club line of 17 games and 5 goals. The range is not a closed total."
+        }
+      },
+      {
+        "id": "xu-tianyuan-honor-juvenil",
+        "featured_record_id": "xu-tianyuan-spain-2015",
+        "name": "Xu Tianyuan",
+        "local_name": "徐天沅",
+        "layer_id": "division-honor-juvenil",
+        "club": "Rayo Vallecano Juvenil A",
+        "season": "2015-2016",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2015/16 巴列卡诺青年 A 队，U19 荣誉联赛第 5 组，与皇马青年队同组。2015-09-06 客场对阿尔卡拉首发。场次记为「1 起」，进球未见；赛季总数还没闭合。",
+          "en": "Rayo Vallecano Juvenil A in 2015/16, División de Honor Group 5, the same group as Real Madrid. He started away at Alcalá on 2015-09-06. Appearances are recorded as 1 起 and no goal is recorded; the season total is not closed."
+        }
+      },
+      {
+        "id": "he-xiaoke-honor-juvenil",
+        "featured_record_id": "he-xiaoke-spain-pathway-2021",
+        "name": "He Xiaoke",
+        "local_name": "何小珂",
+        "layer_id": "division-honor-juvenil",
+        "club": "CE Sabadell Juvenil A",
+        "season": "2021-2023",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2021 年 9 月加盟萨瓦德尔青年 A 队。公开总结写荣誉联赛约 37 场、约 7 球，赛季拆分还没闭合，所以都带「约」。这不是后来西协甲的 1 场。",
+          "en": "Joined Sabadell Juvenil A in September 2021. Public summaries put the honour-league total at about 37 appearances and about 7 goals, and the season split is still open, so both figures stay approximate. This is not his later Primera Federación appearance."
+        }
+      },
+      {
+        "id": "han-fenglin-honor-juvenil",
+        "featured_record_id": "han-fenglin-marbella-2022",
+        "name": "Han Fenglin",
+        "local_name": "韩丰璘",
+        "layer_id": "division-honor-juvenil",
+        "club": "Marbella Juvenil A",
+        "season": "2022-2023",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2022/23 马贝拉青年 A 队，荣誉联赛第 4 组。2022-11-19 公开口径已出场 8 次，赛季未完，记为「8 起」。进球未见。",
+          "en": "Marbella Juvenil A in 2022/23, División de Honor Group 4. A 2022-11-19 report already had 8 appearances, with the season still running, so the cell stays 8 起. No goal total is recorded."
+        }
+      },
+      {
+        "id": "wang-haowen-honor-juvenil",
+        "featured_record_id": "wang-haowen-badalona-2024",
+        "name": "Wang Haowen",
+        "local_name": "王皓文",
+        "layer_id": "division-honor-juvenil",
+        "club": "CF Badalona Juvenil A",
+        "season": "2024-2025",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2024/25 巴达洛纳青年 A 队，荣誉联赛第 3 组。赛季总结 13 场、4 次首发，场次已闭合。进球未见。球队随后降入全国二级。",
+          "en": "Badalona Juvenil A in 2024/25, División de Honor Group 3. The season summary is 13 appearances and 4 starts, so the appearance count is closed. No goal total is recorded. The team then dropped to Liga Nacional."
+        }
+      },
+      {
+        "id": "chen-yusheng-honor-juvenil",
+        "featured_record_id": "chen-yusheng-patacona-2025",
+        "name": "Chen Yusheng",
+        "local_name": "陈雨晟",
+        "layer_id": "division-honor-juvenil",
+        "club": "Patacona CF Juvenil A",
+        "season": "2025-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "appeared",
+        "verification_status": "mixed-source",
+        "note": {
+          "zh": "2025/26 帕塔科纳青年 A 队，荣誉联赛第 7 组。升入一线队的报道写联赛 29 场、27 次首发。进球未见。一线队自治区联赛出场另计。",
+          "en": "Patacona Juvenil A in 2025/26, División de Honor Group 7. The first-team promotion report lists 29 league appearances and 27 starts. No goal total is recorded. First-team regional appearances are kept separate."
+        }
+      },
+      {
         "id": "lyu-mengyang-liga-nacional",
         "player_id": "cn-lyu-mengyang-2009",
         "name": "Lyu Mengyang",
@@ -55830,8 +56177,8 @@
         "appearance_status": "appeared",
         "verification_status": "mixed-source",
         "note": {
-          "zh": "西班牙人 2026-09-15 官宣加入青年 B 队。2026-09-20 客场 3-1 圣库加特，下半场替补打入该队正式比赛首球。这是青训协议和 U19 全国二级，不是一线队，也不是成年 B 队。",
-          "en": "Espanyol announced his Juvenil B move on 2026-09-15. On 2026-09-20 he came off the bench and scored his first official goal for the team in a 3-1 away win at Sant Cugat. This is a youth agreement in the second national U19 tier, not the first team and not the senior reserve side."
+          "zh": "西班牙人 2026-09-15 官宣加入青年 B 队，打 U19 全国二级。2026-09-20 客场对圣库加特替补进球；到 2026-10-12 第 4 轮已首发。赛季未结束，场次记为「4 起」、进球 1。不是荣誉联赛，也不是一线队。",
+          "en": "Espanyol announced his Juvenil B move on 2026-09-15, in the second national U19 tier. He scored as a substitute away at Sant Cugat on 2026-09-20 and had started by the fourth round on 2026-10-12. The season is still open, so appearances stay 4 起 with 1 goal. This is not División de Honor and not the first team."
         }
       },
       {
@@ -56027,6 +56374,194 @@
         }
       }
     ],
+    "u19_table": {
+      "note": {
+        "zh": "荣誉联赛和全国二级合成一张表。带范围或「起」的格子是还没闭合的场次。",
+        "en": "División de Honor and Liga Nacional share one table. A range or a trailing 起 marks an appearance count that is not yet closed."
+      },
+      "rows": [
+        {
+          "id": "u19-lin-liangming-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "lin-liangming-spain-2015",
+          "name": "Lin Liangming",
+          "local_name": "林良铭",
+          "age": "18",
+          "club": {
+            "zh": "皇马青年 A",
+            "en": "Real Madrid Juvenil A"
+          },
+          "season": "2015/16",
+          "appearances": "4–17",
+          "goals": {
+            "zh": "4–5",
+            "en": "4–5"
+          }
+        },
+        {
+          "id": "u19-xu-tianyuan-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "xu-tianyuan-spain-2015",
+          "name": "Xu Tianyuan",
+          "local_name": "徐天沅",
+          "age": "18",
+          "club": {
+            "zh": "巴列卡诺青年 A",
+            "en": "Rayo Vallecano Juvenil A"
+          },
+          "season": "2015/16",
+          "appearances": "1 起",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-yang-xi-honor-edges",
+          "layer_id": "division-honor-juvenil",
+          "player_id": "cn-yang-alex-2005",
+          "name": "Alex Xi Yang",
+          "local_name": "杨希",
+          "age": "16；18",
+          "club": {
+            "zh": "西班牙人青年 A",
+            "en": "Espanyol Juvenil A"
+          },
+          "season": "2021/22；2023/24",
+          "appearances": "2；15",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-yang-xi-honor-2022",
+          "layer_id": "division-honor-juvenil",
+          "player_id": "cn-yang-alex-2005",
+          "name": "Alex Xi Yang",
+          "local_name": "杨希",
+          "age": "17",
+          "club": {
+            "zh": "西班牙人青年 A",
+            "en": "Espanyol Juvenil A"
+          },
+          "season": "2022/23",
+          "appearances": "约 24",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-he-xiaoke-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "he-xiaoke-spain-pathway-2021",
+          "name": "He Xiaoke",
+          "local_name": "何小珂",
+          "age": "17–19",
+          "club": {
+            "zh": "萨瓦德尔青年 A",
+            "en": "Sabadell Juvenil A"
+          },
+          "season": "2021/22–2022/23",
+          "appearances": "约 37",
+          "goals": {
+            "zh": "约 7",
+            "en": "about 7"
+          }
+        },
+        {
+          "id": "u19-han-fenglin-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "han-fenglin-marbella-2022",
+          "name": "Han Fenglin",
+          "local_name": "韩丰璘",
+          "age": "18–19",
+          "club": {
+            "zh": "马贝拉青年 A",
+            "en": "Marbella Juvenil A"
+          },
+          "season": "2022/23",
+          "appearances": "8 起",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-wang-haowen-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "wang-haowen-badalona-2024",
+          "name": "Wang Haowen",
+          "local_name": "王皓文",
+          "age": "17–19",
+          "club": {
+            "zh": "巴达洛纳青年 A",
+            "en": "Badalona Juvenil A"
+          },
+          "season": "2024/25",
+          "appearances": "13",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-chen-yusheng-honor",
+          "layer_id": "division-honor-juvenil",
+          "featured_record_id": "chen-yusheng-patacona-2025",
+          "name": "Chen Yusheng",
+          "local_name": "陈雨晟",
+          "age": "18",
+          "club": {
+            "zh": "帕塔科纳青年 A",
+            "en": "Patacona Juvenil A"
+          },
+          "season": "2025/26",
+          "appearances": "29",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-yang-xi-nacional",
+          "layer_id": "liga-nacional-juvenil",
+          "player_id": "cn-yang-alex-2005",
+          "name": "Alex Xi Yang",
+          "local_name": "杨希",
+          "age": "16",
+          "club": {
+            "zh": "西班牙人青年 B",
+            "en": "Espanyol Juvenil B"
+          },
+          "season": "2021/22",
+          "appearances": "约 23",
+          "goals": {
+            "zh": "未见",
+            "en": "Not recorded"
+          }
+        },
+        {
+          "id": "u19-lyu-mengyang-nacional",
+          "layer_id": "liga-nacional-juvenil",
+          "player_id": "cn-lyu-mengyang-2009",
+          "name": "Lyu Mengyang",
+          "local_name": "吕孟洋",
+          "age": "17",
+          "club": {
+            "zh": "西班牙人青年 B",
+            "en": "Espanyol Juvenil B"
+          },
+          "season": "2026/27",
+          "appearances": "4 起",
+          "goals": {
+            "zh": "1",
+            "en": "1"
+          }
+        }
+      ]
+    },
     "source_links": [
       {
         "label": "LaLiga official site",
@@ -56047,6 +56582,56 @@
         "label": "Espanyol announcement: Lyu Mengyang",
         "url": "https://www.163.com/dy/article/L6QCQKL20549BAP0.html",
         "checked_at": "2026-10-04"
+      },
+      {
+        "label": "BeSoccer career path: Lin Liangming",
+        "url": "https://www.besoccer.com/player/career-path/l-liangming-297260",
+        "checked_at": "2026-10-20"
+      },
+      {
+        "label": "MARCA: Lin Liangming Juvenil A goals",
+        "url": "https://www.marca.com/2015/10/26/futbol/equipos/real_madrid/1445869670.html",
+        "checked_at": "2026-10-20"
+      },
+      {
+        "label": "Wikipedia: Lin Liangming",
+        "url": "https://en.wikipedia.org/wiki/Lin_Liangming",
+        "checked_at": "2026-10-20"
+      },
+      {
+        "label": "Rayo Vallecano: promotion to Rayo B",
+        "url": "https://www.rayovallecano.es/noticias/vuelta-al-trabajo-del-rayo-b",
+        "checked_at": "2026-10-20"
+      },
+      {
+        "label": "体坛+: 徐天沅巴列卡诺青年队首发",
+        "url": "https://www.ttplus.cn/publish/app/data/2015/09/06/370/os_news.html",
+        "checked_at": "2026-10-20"
+      },
+      {
+        "label": "腾讯：何小珂萨瓦德尔荣誉联赛约 37 场 7 球",
+        "url": "https://news.qq.com/rain/a/20230802A03K2C00",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "新浪：韩丰璘马贝拉荣誉联赛首秀",
+        "url": "https://www.sina.cn/news/detail/4817497956550564.html",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "新浪：王皓文 2024/25 荣誉联赛 13 场",
+        "url": "https://www.sina.cn/news/detail/5163334760663168.html",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "帕塔科纳升入一线队报道：陈雨晟荣誉联赛 29 场",
+        "url": "https://www.eivone.com/4927.html",
+        "checked_at": "2026-10-21"
+      },
+      {
+        "label": "elFutbol：吕孟洋 2026/27 全国二级 4 场 1 球",
+        "url": "https://elfutbol.co/es/player/lyu-mengyang-218f892f95da",
+        "checked_at": "2026-10-21"
       }
     ]
   },
