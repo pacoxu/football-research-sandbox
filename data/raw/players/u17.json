@@ -1029,8 +1029,15 @@
         "stage_label": "2026 达姆口径",
         "organization": "DAMM CF",
         "country": "Spain",
-        "note": "中国足协 2026 年 3 月 U17 第二期集训名单与 AFC U17 终报名表都将其列为达姆足球俱乐部 / DAMM CF 球员；因此当前注册归属先按达姆处理，同时保留与巴达洛纳口径的冲突说明。",
+        "note": "中国足协 2026 年 3 月 U17 第二期集训名单与 AFC U17 终报名表都将其列为达姆足球俱乐部 / DAMM CF 球员。这是亚洲杯报名时点，不是 2026/27 赛季的竞赛注册。",
         "organization_type": "professional-club-unspecified"
+      },
+      {
+        "stage_label": "2026/27 萨瓦德尔青年 B",
+        "organization": "CE Sabadell Juvenil B",
+        "country": "Spain",
+        "organization_type": "professional-club-unspecified",
+        "note": "2026/27 注册萨瓦德尔青年 B，打 U19 全国二级第 7 组。Futbolconlupa 名单表写 2 场、0 次首发、0 球，赛季未结束。球员主档的注册俱乐部仍保留 2026-05-02 亚洲杯报名快照达姆，不把这次竞赛注册回写成报名俱乐部。"
       }
     ],
     "focus_tags": [
@@ -1090,7 +1097,7 @@
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "截至 2026-05-22，当前更稳妥的公开口径是处于西班牙青训体系内；2026 年足协与 AFC 报名归属写作 DAMM CF，但 Transfermarkt 当前页仍列 CF Badalona Youth。"
+        "note": "截至 2026-05-22 的亚洲杯报名归属写作 DAMM CF，Transfermarkt 当时仍列 CF Badalona Youth。2026/27 竞赛注册已转到萨瓦德尔青年 B、U19 全国二级，见西班牙层级页；这里不改报名快照。"
       }
     ],
     "external_links": [
