@@ -121,8 +121,13 @@ test("keeps the China overseas dataset at 15 active registrations and 5 returned
   assert.deepEqual(countOverseasStatuses(dataset.players), {
     "active-registered": 15,
     "pending-effective": 0,
-    "trial-watch": 0,
+    "trial-watch": 1,
     returned: 5,
     "historical-only": 0
   });
+  const watched = dataset.players.filter((player) => player.overseas_status === "trial-watch");
+  assert.deepEqual(
+    watched.map((player) => player.id),
+    ["cn-huang-zijie-2009"]
+  );
 });

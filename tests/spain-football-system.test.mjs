@@ -63,6 +63,51 @@ test("places Lin Liangming and Xu Tianyuan without collapsing historical tiers",
   );
 });
 
+test("keeps later Chinese honour-league samples on División de Honor", () => {
+  const honorNames = payload.placements
+    .filter((placement) => placement.layer_id === "division-honor-juvenil")
+    .map((placement) => placement.local_name)
+    .sort();
+  assert.deepEqual(honorNames, ["何小珂", "王皓文", "杨希", "林良铭", "徐天沅", "陈雨晟", "韩丰璘"].sort());
+  for (const id of [
+    "he-xiaoke-honor-juvenil",
+    "han-fenglin-honor-juvenil",
+    "wang-haowen-honor-juvenil",
+    "chen-yusheng-honor-juvenil"
+  ]) {
+    const placement = payload.placements.find((item) => item.id === id);
+    assert.equal(placement.verification_status, "mixed-source");
+    assert.equal(placement.appearance_status, "appeared");
+    assert.equal(placement.contract_type, "youth-formation");
+  }
+  assert.equal(
+    payload.placements.some(
+      (placement) => placement.featured_record_id === "he-xiaoke-spain-pathway-2021" && placement.layer_id === "primera-federacion"
+    ),
+    true
+  );
+});
+
+test("places the 2026/27 Group 7 Chinese samples on Liga Nacional", () => {
+  const wang = payload.placements.find((placement) => placement.id === "wang-xiuhao-liga-nacional");
+  const huang = payload.placements.find((placement) => placement.id === "huang-zijie-liga-nacional");
+  assert.equal(wang.player_id, "cn-wang-xiuhao-2009");
+  assert.equal(wang.appearance_status, "appeared");
+  assert.match(wang.note.zh, /2 场/);
+  assert.match(wang.note.zh, /不采用/);
+  assert.equal(huang.player_id, "cn-huang-zijie-2009");
+  assert.equal(huang.appearance_status, "registered-no-appearance");
+  assert.match(huang.note.zh, /不写已出场/);
+  assert.equal(
+    payload.placements.some(
+      (placement) =>
+        ["cn-wang-xiuhao-2009", "cn-huang-zijie-2009"].includes(placement.player_id) &&
+        placement.layer_id === "division-honor-juvenil"
+    ),
+    false
+  );
+});
+
 test("combines honour league and Liga Nacional into one open-count table", () => {
   const rows = payload.u19_table.rows;
   assert.deepEqual(
@@ -73,12 +118,16 @@ test("combines honour league and Liga Nacional into one open-count table", () =>
   const lin = rows.find((row) => row.local_name === "林良铭");
   const xu = rows.find((row) => row.local_name === "徐天沅");
   const lyu = rows.find((row) => row.local_name === "吕孟洋");
+  const wang = rows.find((row) => row.local_name === "汪修昊");
+  const huang = rows.find((row) => row.local_name === "黄子杰");
   assert.equal(lin.appearances, "4–17");
   assert.equal(lin.goals.zh, "4–5");
   assert.equal(xu.appearances, "1 起");
   assert.equal(lyu.layer_id, "liga-nacional-juvenil");
-  assert.equal(lyu.appearances, "4 起");
-  assert.equal(lyu.goals.zh, "1");
+  assert.equal(lyu.appearances, "5 起");
+  assert.equal(lyu.goals.zh, "1 起");
+  assert.equal(wang.appearances, "2 起");
+  assert.equal(huang.appearances, "未见");
   for (const name of ["何小珂", "韩丰璘", "王皓文", "陈雨晟", "杨希"]) {
     assert.ok(rows.some((row) => row.local_name === name), `Missing U19 row for ${name}`);
   }
