@@ -56635,6 +56635,961 @@
       }
     ]
   },
+  "women_football": {
+    "schema_version": 1,
+    "checked_at": "2026-10-30",
+    "summary": {
+      "zh": "本页收录国际足联 U17 女足世界杯届次、中国队决赛圈路径，以及中国女足球员旅欧和女子五大联赛样本。2026 年赛事仍在进行，八强对巴西还没有赛果。",
+      "en": "This page records FIFA U-17 Women's World Cup editions, China PR's finals path, and Chinese players' European moves alongside the women's big five. The 2026 tournament is still in progress, and the quarter-final against Brazil has no result."
+    },
+    "scope_note": {
+      "zh": "这是研究样本，不是中国足协或国际足联的全量名单。女子五大联赛指英格兰女足超级联赛、西班牙 Liga F、德国女足甲级联赛、法国女足超级联赛和意大利女足甲级联赛。美国 NWSL、瑞士女超、葡萄牙女超、苏格兰女足联赛和澳大利亚女足联赛另列。加盟报道不等于出场次数；媒体转述的场次不写入统计字段。",
+      "en": "This is a research sample, not a CFA or FIFA census. The women's big five are the English Women's Super League, Spain's Liga F, the German Frauen-Bundesliga, the French Première Ligue and Italy's Serie A Femminile. The NWSL, Swiss Women's Super League, Portuguese women's top flight, Scottish women's league and A-League Women sit outside that set. A reported signing is not an appearance count, and media appearance claims stay out of the statistics fields."
+    },
+    "u17_world_cup": {
+      "summary": {
+        "zh": "U17 女足世界杯 2008 年创办。2024 年及以前为两年一届、16 队；2025 年起改为每年一届、24 队。已完赛九届的冠军是朝鲜 4 次、西班牙 2 次、韩国、法国和日本各 1 次。中国队 2012 年首次进入决赛圈；已完赛届次的最好成绩是 2025 年十六强。",
+        "en": "The U-17 Women's World Cup began in 2008. Through 2024 it was biennial with 16 teams; from 2025 it is annual with 24. Across nine completed editions, Korea DPR have four titles, Spain two, and Korea Republic, France and Japan one each. China PR first reached the finals in 2012. Their best finish in a completed edition is the 2025 round of 16."
+      },
+      "lineage": [
+        {
+          "id": "biennial-16",
+          "years": "2008-2024",
+          "cadence": "biennial",
+          "finals_teams": 16,
+          "note": {
+            "zh": "原定 2020 年在印度举办的一届被取消，下一届改到 2022 年仍由印度主办。",
+            "en": "The edition planned for India in 2020 was cancelled. The next edition stayed with India and was played in 2022."
+          }
+        },
+        {
+          "id": "annual-24",
+          "years": "2025-2029",
+          "cadence": "annual",
+          "finals_teams": 24,
+          "note": {
+            "zh": "2025 年起与男足 U17 世界杯同为每年一届。摩洛哥主办 2025 至 2029 年的连续五届；2026 是其中第二届。",
+            "en": "From 2025 the tournament is annual, alongside the men's U-17 World Cup. Morocco is hosting five straight editions from 2025 through 2029; 2026 is the second of those."
+          }
+        }
+      ],
+      "editions": [
+        {
+          "id": "fifa-u17-womens-world-cup-2008",
+          "year": 2008,
+          "host": "New Zealand",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "Korea DPR",
+          "runner_up": "United States",
+          "third_place": "Germany",
+          "fourth_place": "England",
+          "final_score": "2-1 a.e.t.",
+          "china_stage": "not-in-finals",
+          "china_summary": {
+            "zh": "中国队未进入决赛圈。女足 U17 世界杯决赛圈首秀在 2012 年。",
+            "en": "China PR did not reach the finals. Their first finals appearance came in 2012."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2010",
+          "year": 2010,
+          "host": "Trinidad and Tobago",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "Korea Republic",
+          "runner_up": "Japan",
+          "third_place": "Spain",
+          "fourth_place": "Korea DPR",
+          "final_score": "3-3 a.e.t. (5-4 p)",
+          "china_stage": "not-in-finals",
+          "china_summary": {
+            "zh": "中国队未进入决赛圈。",
+            "en": "China PR did not reach the finals."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2012",
+          "year": 2012,
+          "host": "Azerbaijan",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "France",
+          "runner_up": "Korea DPR",
+          "third_place": "Ghana",
+          "fourth_place": "Germany",
+          "final_score": "1-1 (7-6 p)",
+          "china_stage": "group-stage",
+          "china_summary": {
+            "zh": "中国队第一次参加决赛圈，止步小组赛。逐场比分尚未用国际足联技术报告闭合。",
+            "en": "China PR made their finals debut and went out in the group stage. Match-by-match scores are not closed against a FIFA technical report."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2014",
+          "year": 2014,
+          "host": "Costa Rica",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "Japan",
+          "runner_up": "Spain",
+          "third_place": "Italy",
+          "fourth_place": "Venezuela",
+          "final_score": "2-0",
+          "china_stage": "group-stage",
+          "china_summary": {
+            "zh": "中国队再次进入决赛圈，止步小组赛。逐场比分尚未闭合。",
+            "en": "China PR returned to the finals and went out in the group stage. Match scores are not closed."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2016",
+          "year": 2016,
+          "host": "Jordan",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "Korea DPR",
+          "runner_up": "Japan",
+          "third_place": "Spain",
+          "fourth_place": "Venezuela",
+          "final_score": "0-0 (5-4 p)",
+          "china_stage": "not-in-finals",
+          "china_summary": {
+            "zh": "中国队未进入决赛圈。",
+            "en": "China PR did not reach the finals."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2018",
+          "year": 2018,
+          "host": "Uruguay",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "Spain",
+          "runner_up": "Mexico",
+          "third_place": "New Zealand",
+          "fourth_place": "Canada",
+          "final_score": "2-1",
+          "china_stage": "not-in-finals",
+          "china_summary": {
+            "zh": "中国队未进入决赛圈。",
+            "en": "China PR did not reach the finals."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2020",
+          "year": 2020,
+          "host": "India",
+          "status": "cancelled",
+          "finals_teams": null,
+          "champion": null,
+          "runner_up": null,
+          "third_place": null,
+          "fourth_place": null,
+          "final_score": null,
+          "china_stage": "not-applicable",
+          "china_summary": {
+            "zh": "这一届取消，不记录中国队成绩。印度改为承办 2022 年赛事。",
+            "en": "This edition was cancelled, so China PR have no result. India hosted the replacement edition in 2022."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2022",
+          "year": 2022,
+          "host": "India",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "Spain",
+          "runner_up": "Colombia",
+          "third_place": "Nigeria",
+          "fourth_place": "Germany",
+          "final_score": "1-0",
+          "china_stage": "group-stage",
+          "china_summary": {
+            "zh": "中国队进入决赛圈，止步小组赛。逐场比分尚未闭合。",
+            "en": "China PR reached the finals and went out in the group stage. Match scores are not closed."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2024",
+          "year": 2024,
+          "host": "Dominican Republic",
+          "status": "completed",
+          "finals_teams": 16,
+          "champion": "Korea DPR",
+          "runner_up": "Spain",
+          "third_place": "United States",
+          "fourth_place": "England",
+          "final_score": "1-1 (4-3 p)",
+          "china_stage": "not-in-finals",
+          "china_summary": {
+            "zh": "中国队未进入决赛圈。",
+            "en": "China PR did not reach the finals."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2025",
+          "year": 2025,
+          "host": "Morocco",
+          "status": "completed",
+          "finals_teams": 24,
+          "champion": "Korea DPR",
+          "runner_up": "Netherlands",
+          "third_place": "Mexico",
+          "fourth_place": "Brazil",
+          "final_score": "3-0",
+          "china_stage": "round-of-16",
+          "china_summary": {
+            "zh": "中国队打进十六强。这是 2026 年开赛前，已完赛届次里的最好成绩。逐场比分尚未闭合。",
+            "en": "China PR reached the round of 16. That is their best finish in a completed edition before the 2026 tournament. Match scores are not closed."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain"
+        },
+        {
+          "id": "fifa-u17-womens-world-cup-2026",
+          "year": 2026,
+          "host": "Morocco",
+          "status": "in-progress",
+          "date_range": {
+            "start": "2026-10-17",
+            "end": "2026-11-07"
+          },
+          "finals_teams": 24,
+          "champion": null,
+          "runner_up": null,
+          "third_place": null,
+          "fourth_place": null,
+          "final_score": null,
+          "china_stage": "quarter-final-scheduled",
+          "china_summary": {
+            "zh": "中国队以 E 组头名出线，十六强点球淘汰法国，八强将于 2026-11-01 对阵巴西。八强及之后没有赛果。",
+            "en": "China PR won Group E, beat France on penalties in the round of 16, and are scheduled to play Brazil in the quarter-final on 1 November 2026. There is no result from the quarter-final onward."
+          },
+          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026"
+        }
+      ],
+      "china_2026": {
+        "group": "E",
+        "rank": 1,
+        "played": 3,
+        "won": 3,
+        "drawn": 0,
+        "lost": 0,
+        "goals_for": 13,
+        "goals_against": 2,
+        "points": 9,
+        "note": {
+          "zh": "小组积分同时对得上国际足联比赛中心里肯尼亚 0-3 中国，以及赛事页上的中国 3-2 美国。中国 7-0 萨摩亚的进球者仍以公开赛程交叉为准。球员中文名尚未用中国足协名单闭合，页面保留英文名。",
+          "en": "The group line matches the FIFA match centre result Kenya 0-3 China PR and the tournament page result China PR 3-2 USA. Scorers in China PR 7-0 Samoa still come from the public fixture cross-check. Chinese names are not closed against a CFA squad list, so the page keeps the English names."
+        },
+        "matches": [
+          {
+            "id": "u17wwc-2026-kenya-china",
+            "date": "2026-10-19",
+            "stage": "group",
+            "opponent": "Kenya",
+            "played": true,
+            "scoreline": "0-3",
+            "china_goals": 3,
+            "opponent_goals": 0,
+            "decided_by": "regulation",
+            "scorers": {
+              "zh": "Xu Yue 12 分钟，Xu Xiaotang 50 分钟、53 分钟。",
+              "en": "Xu Yue 12'; Xu Xiaotang 50', 53'."
+            },
+            "verification_status": "verified",
+            "source_url": "https://www.fifa.com/en/match-centre/match/516/292977/292978/400022557",
+            "note": {
+              "zh": "国际足联比赛中心记录肯尼亚对中国的小组赛比分和进球者。",
+              "en": "The FIFA match centre records the group-stage score and scorers."
+            }
+          },
+          {
+            "id": "u17wwc-2026-china-samoa",
+            "date": "2026-10-22",
+            "stage": "group",
+            "opponent": "Samoa",
+            "played": true,
+            "scoreline": "7-0",
+            "china_goals": 7,
+            "opponent_goals": 0,
+            "decided_by": "regulation",
+            "scorers": {
+              "zh": "Fang Zhenzhu 6 分钟点球，Xu Yue 25、29 分钟，Cheng Wandi 39 分钟和 57 分钟点球，Liu Yuxi 69 分钟，Yang Lan 76 分钟。",
+              "en": "Fang Zhenzhu 6' pen; Xu Yue 25', 29'; Cheng Wandi 39', 57' pen; Liu Yuxi 69'; Yang Lan 76'."
+            },
+            "verification_status": "mixed-source",
+            "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026/scores-fixtures",
+            "note": {
+              "zh": "7 球与小组进球总数 13 球相符。进球者名单尚未逐条回核到单独的国际足联比赛中心页面。",
+              "en": "The seven goals fit the group total of 13. The scorer list is not yet checked line by line on a separate FIFA match-centre page."
+            }
+          },
+          {
+            "id": "u17wwc-2026-china-usa",
+            "date": "2026-10-25",
+            "stage": "group",
+            "opponent": "United States",
+            "played": true,
+            "scoreline": "3-2",
+            "china_goals": 3,
+            "opponent_goals": 2,
+            "decided_by": "regulation",
+            "scorers": {
+              "zh": "Liu Yuxi 7 分钟、81 分钟，Zhao Jiayi 71 分钟。美国进球：DiMaria 69 分钟，Ortiz 90+7 分钟。",
+              "en": "Liu Yuxi 7', 81'; Zhao Jiayi 71'. United States: DiMaria 69', Ortiz 90+7'."
+            },
+            "verification_status": "mixed-source",
+            "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026",
+            "note": {
+              "zh": "国际足联赛事页确认中国 3-2 美国。进球者来自同一赛事的公开赛程交叉。",
+              "en": "The FIFA tournament page confirms China PR 3-2 USA. Scorers come from the public fixture cross-check for the same match."
+            }
+          },
+          {
+            "id": "u17wwc-2026-china-france",
+            "date": "2026-10-29",
+            "stage": "round-of-16",
+            "opponent": "France",
+            "played": true,
+            "scoreline": "0-0 (4-3 p)",
+            "china_goals": 0,
+            "opponent_goals": 0,
+            "decided_by": "penalties",
+            "penalty_score": "4-3",
+            "scorers": {
+              "zh": "常规时间没有进球。",
+              "en": "No goals in regulation time."
+            },
+            "verification_status": "verified",
+            "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026/scores-fixtures",
+            "note": {
+              "zh": "国际足联赛程页记录十六强中国 0-0、点球 4-3 法国。点球手名单未写入本条。",
+              "en": "The FIFA fixtures page records the round-of-16 result China PR 0-0, 4-3 on penalties against France. Penalty takers are not stored on this row."
+            }
+          },
+          {
+            "id": "u17wwc-2026-china-brazil",
+            "date": "2026-11-01",
+            "stage": "quarter-final",
+            "opponent": "Brazil",
+            "played": false,
+            "scoreline": null,
+            "china_goals": null,
+            "opponent_goals": null,
+            "decided_by": null,
+            "scorers": {
+              "zh": "比赛尚未进行。",
+              "en": "The match has not been played."
+            },
+            "verification_status": "verified",
+            "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026/scores-fixtures",
+            "note": {
+              "zh": "八强对阵已排定。核查日 2026-10-30 没有赛果，不能预写胜负。",
+              "en": "The quarter-final pairing is set. As of the 30 October 2026 check there is no result, and none is inferred."
+            }
+          }
+        ]
+      }
+    },
+    "big_five_leagues": [
+      {
+        "id": "wsl",
+        "country": "England",
+        "name": {
+          "zh": "英格兰女足超级联赛",
+          "en": "Women's Super League"
+        },
+        "stable_structure": {
+          "zh": "英格兰女足顶级联赛。本页已记录王霜、张琳艳、唐佳丽和李梦雯的热刺或布莱顿阶段。2026 年 10 月没有仍在该联赛的中国球员被本页确认。",
+          "en": "England's top women's league. This page records Wang Shuang, Zhang Linyan, Tang Jiali and Li Mengwen at Tottenham or Brighton. No Chinese player is confirmed in the league as of October 2026."
+        },
+        "source_url": "https://www.thefa.com/competitions/the-womens-super-league"
+      },
+      {
+        "id": "liga-f",
+        "country": "Spain",
+        "name": {
+          "zh": "西班牙女足甲级联赛 Liga F",
+          "en": "Liga F"
+        },
+        "stable_structure": {
+          "zh": "西班牙女足顶级联赛，前身为女子甲级联赛。本页记录唐佳丽的马德里 CFF、莱万特拉斯普拉纳斯阶段，以及杨莉娜 2023 年的莱万特拉斯普拉纳斯阶段。",
+          "en": "Spain's top women's league, formerly the Primera División Femenina. This page records Tang Jiali at Madrid CFF and Levante Las Planas, and Yang Lina at Levante Las Planas in 2023."
+        },
+        "source_url": "https://www.rfef.es/"
+      },
+      {
+        "id": "frauen-bundesliga",
+        "country": "Germany",
+        "name": {
+          "zh": "德国女足甲级联赛",
+          "en": "Frauen-Bundesliga"
+        },
+        "stable_structure": {
+          "zh": "德国女足顶级联赛。本快照没有可核的中国球员注册或出场。",
+          "en": "Germany's top women's league. This snapshot has no checkable Chinese registration or appearance."
+        },
+        "source_url": "https://www.dfb.de/"
+      },
+      {
+        "id": "premiere-ligue",
+        "country": "France",
+        "name": {
+          "zh": "法国女足超级联赛",
+          "en": "Première Ligue"
+        },
+        "stable_structure": {
+          "zh": "法国女足顶级联赛。2024 年前常用名是 Division 1 Féminine。王霜和李梦雯有巴黎圣日耳曼阶段；吴澄舒、王妍雯和乌日古木拉的第戎或蒙彼利埃阶段见球员表，后两人的当前注册仍是媒体口径。",
+          "en": "France's top women's league. Before 2024 it was commonly called Division 1 Féminine. Wang Shuang and Li Mengwen have Paris Saint-Germain spells; Wu Chengshu, Wang Yanwen and Wurigumula appear at Dijon or Montpellier, and the latter two current registrations are still media reports."
+        },
+        "source_url": "https://www.fff.fr/"
+      },
+      {
+        "id": "serie-a-femminile",
+        "country": "Italy",
+        "name": {
+          "zh": "意大利女足甲级联赛",
+          "en": "Serie A Femminile"
+        },
+        "stable_structure": {
+          "zh": "意大利女足顶级联赛。2026 年 10 月有报道称杨莉娜在意甲出场并进球，俱乐部名称尚未闭合。",
+          "en": "Italy's top women's league. An October 2026 report says Yang Lina appeared and scored in Serie A. The club name is not closed."
+        },
+        "source_url": "https://www.figc.it/"
+      }
+    ],
+    "other_leagues": [
+      {
+        "id": "nwsl",
+        "country": "United States",
+        "bucket": "americas",
+        "name": {
+          "zh": "美国女子职业足球联赛 NWSL",
+          "en": "National Women's Soccer League"
+        },
+        "stable_structure": {
+          "zh": "美国顶级女足职业联赛。它经常被放进世界强联赛讨论，但按本页口径不属于欧洲女子五大联赛。王霜的路易斯维尔竞争阶段记在这里。",
+          "en": "The top professional women's league in the United States. It is often discussed among the world's strongest leagues, and this page keeps it outside the European women's big five. Wang Shuang's Racing Louisville spell is recorded here."
+        },
+        "source_url": "https://www.nwslsoccer.com/"
+      },
+      {
+        "id": "swiss-womens-super-league",
+        "country": "Switzerland",
+        "bucket": "europe-other",
+        "name": {
+          "zh": "瑞士女足超级联赛",
+          "en": "Swiss Women's Super League"
+        },
+        "stable_structure": {
+          "zh": "瑞士女足顶级联赛。张琳艳在草蜢的赛季和个人奖项记在欧洲其他，不计入女子五大联赛。",
+          "en": "Switzerland's top women's league. Zhang Linyan's Grasshoppers season and individual award stay in other European leagues, outside the women's big five."
+        },
+        "source_url": "https://www.football.ch/"
+      },
+      {
+        "id": "portugal-feminino",
+        "country": "Portugal",
+        "bucket": "europe-other",
+        "name": {
+          "zh": "葡萄牙女足顶级联赛",
+          "en": "Portuguese women's top flight"
+        },
+        "stable_structure": {
+          "zh": "葡萄牙女足顶级联赛。邵子钦 2026 年加盟本菲卡的阶段记在欧洲其他。",
+          "en": "Portugal's top women's league. Shao Ziqin's 2026 move to Benfica is recorded under other European leagues."
+        },
+        "source_url": "https://www.fpf.pt/"
+      },
+      {
+        "id": "scotland-womens",
+        "country": "Scotland",
+        "bucket": "europe-other",
+        "name": {
+          "zh": "苏格兰女足联赛",
+          "en": "Scottish women's league"
+        },
+        "stable_structure": {
+          "zh": "2026 年 3 月的报道把李梦雯放在苏格兰联赛。具体级别和俱乐部名称尚未闭合，因此不写成某一级的固定注册。",
+          "en": "A March 2026 report places Li Mengwen in a Scottish league. The tier and club are not closed, so this is not stored as a fixed registration at a named level."
+        },
+        "source_url": "https://www.scottishfa.co.uk/"
+      },
+      {
+        "id": "a-league-women",
+        "country": "Australia",
+        "bucket": "oceania",
+        "name": {
+          "zh": "澳大利亚女足联赛",
+          "en": "A-League Women"
+        },
+        "stable_structure": {
+          "zh": "澳大利亚女足顶级联赛。乌日古木拉加盟蒙彼利埃之前的中央海岸水手阶段记在这里。王莹、袁丛等只有澳超报道、没有旅欧阶段的球员不进入本页球员表。",
+          "en": "Australia's top women's league. Wurigumula's Central Coast Mariners spell, before Montpellier, is recorded here. Players such as Wang Ying and Yuan Cong, who have A-League reports and no European spell in this snapshot, stay off the player table."
+        },
+        "source_url": "https://www.aleague.com.au/"
+      }
+    ],
+    "players": [
+      {
+        "id": "wang-shuang",
+        "name_zh": "王霜",
+        "name_en": "Wang Shuang",
+        "summary": {
+          "zh": "旅欧样本里层级最完整的一人：法国顶级联赛、美国 NWSL 和英格兰女足超级联赛都有阶段。2025 年 1 月媒体称她离开热刺，回到武汉车谷江大。",
+          "en": "The most complete overseas path in this sample: a French top-flight spell, an NWSL spell and a Women's Super League spell. Media reported in January 2025 that she left Tottenham and returned to Wuhan Jianghan University."
+        },
+        "stages": [
+          {
+            "id": "wang-shuang-psg-2018",
+            "club": "Paris Saint-Germain",
+            "league_id": "premiere-ligue",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2018-19",
+              "en": "2018-19"
+            },
+            "appearance_status": "appeared",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.parisguardian.com/news/274058745/chinese-international-wang-shuang-joins-tottenham-womens-team",
+            "note": {
+              "zh": "新华社 2023 年 12 月回顾她 2018-19 赛季效力巴黎圣日耳曼。本页不保存出场和进球数。",
+              "en": "A December 2023 Xinhua recap places her at Paris Saint-Germain in 2018-19. Appearance and goal counts are not stored."
+            }
+          },
+          {
+            "id": "wang-shuang-louisville-2022",
+            "club": "Racing Louisville FC",
+            "league_id": "nwsl",
+            "bucket": "americas",
+            "season": {
+              "zh": "2022-08 至 2023-12",
+              "en": "Aug 2022 to Dec 2023"
+            },
+            "appearance_status": "appeared",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.parisguardian.com/news/274058745/chinese-international-wang-shuang-joins-tottenham-womens-team",
+            "note": {
+              "zh": "2022 年 8 月加盟路易斯维尔竞争，合同在 2024 年 1 月 1 日转投热刺前结束。这是美洲阶段，不计入女子五大联赛。",
+              "en": "She joined Racing Louisville in August 2022. That contract ended before the 1 January 2024 move to Tottenham. This is an Americas spell and sits outside the women's big five."
+            }
+          },
+          {
+            "id": "wang-shuang-tottenham-2024",
+            "club": "Tottenham Hotspur",
+            "league_id": "wsl",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2024-01-01 至 2025-01-31",
+              "en": "1 Jan 2024 to 31 Jan 2025"
+            },
+            "appearance_status": "appeared",
+            "verification_status": "mixed-source",
+            "source_url": "https://view.inews.qq.com/a/20250201A03F2700",
+            "note": {
+              "zh": "热刺 2023 年 12 月 8 日官宣合约至 2026，并于 2024 年 1 月 1 日生效，球衣号 77。2025 年 1 月 31 日中文媒体称她已离队回武汉。同一报道里的约 11 次出场只留在说明里，不写入统计字段。",
+              "en": "Tottenham announced a contract through 2026 on 8 December 2023, effective 1 January 2024, with shirt 77. Chinese media reported on 31 January 2025 that she had left and returned to Wuhan. The reported figure of about 11 appearances stays in this note and is not a statistics field."
+            }
+          }
+        ]
+      },
+      {
+        "id": "zhang-linyan",
+        "name_zh": "张琳艳",
+        "name_en": "Zhang Linyan",
+        "summary": {
+          "zh": "瑞士女超个人奖项是她的主要旅欧成绩。热刺是随后的短租，不把瑞士阶段写成女子五大联赛。",
+          "en": "Her main European record is an individual award in the Swiss top flight. The later Tottenham loan was short, and the Swiss spell is not a women's big-five record."
+        },
+        "stages": [
+          {
+            "id": "zhang-linyan-grasshoppers",
+            "club": "Grasshopper Club Zürich",
+            "league_id": "swiss-womens-super-league",
+            "bucket": "europe-other",
+            "season": {
+              "zh": "至 2023-08",
+              "en": "through Aug 2023"
+            },
+            "appearance_status": "appeared",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+            "note": {
+              "zh": "杭州亚运会官方英文稿写她在前一个赛季当选瑞士女足超级联赛年度球员，并于 2023 年 8 月回到国内联赛。",
+              "en": "The Hangzhou Asian Games English report says she was Swiss Women's Super League Player of the Year the previous season and returned to the domestic league in August 2023."
+            }
+          },
+          {
+            "id": "zhang-linyan-tottenham-2023",
+            "club": "Tottenham Hotspur",
+            "league_id": "wsl",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2023-09 起，约四个月租借",
+              "en": "loan from Sep 2023, about four months"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "mixed-source",
+            "source_url": "https://view.inews.qq.com/a/20250201A03F2700",
+            "note": {
+              "zh": "中文媒体称她 2023 年 9 月以租借加盟热刺，大约四个月后回到武汉。本页没有闭合的英超出场数。",
+              "en": "Chinese media say she joined Tottenham on loan in September 2023 and returned to Wuhan about four months later. A closed Women's Super League appearance count is not stored."
+            }
+          }
+        ]
+      },
+      {
+        "id": "tang-jiali",
+        "name_zh": "唐佳丽",
+        "name_en": "Tang Jiali",
+        "summary": {
+          "zh": "公开路径依次经过热刺、马德里 CFF 和莱万特拉斯普拉纳斯。热刺的具体赛季仍待核，后两段有俱乐部公告被二次来源引用。",
+          "en": "The public path runs through Tottenham, Madrid CFF and Levante Las Planas. The Tottenham season is still open; the later two spells are carried by secondary citations of club announcements."
+        },
+        "stages": [
+          {
+            "id": "tang-jiali-tottenham",
+            "club": "Tottenham Hotspur",
+            "league_id": "wsl",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2022-08 之前",
+              "en": "before Aug 2022"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "needs-review",
+            "source_url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+            "note": {
+              "zh": "杭州亚运会英文稿把热刺写成马德里 CFF 之前的海外阶段。具体赛季和出场数未闭合。",
+              "en": "The Hangzhou Asian Games English report places Tottenham before the Madrid CFF spell. The exact season and appearance count are not closed."
+            }
+          },
+          {
+            "id": "tang-jiali-madrid-cff-2022",
+            "club": "Madrid CFF",
+            "league_id": "liga-f",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2022-08-11 至 2023-02-23",
+              "en": "11 Aug 2022 to 23 Feb 2023"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "mixed-source",
+            "source_url": "https://en.wikipedia.org/wiki/List_of_foreign_Liga_F_players",
+            "note": {
+              "zh": "外援名单转引马德里 CFF 2022 年 8 月 11 日的加盟公告和 2023 年 2 月 23 日的离队公告。出场数未写入本页。",
+              "en": "The foreign-player list cites Madrid CFF announcements of 11 August 2022 and 23 February 2023. Appearance counts are not stored."
+            }
+          },
+          {
+            "id": "tang-jiali-levante-2023",
+            "club": "Levante Las Planas",
+            "league_id": "liga-f",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2023-09 起",
+              "en": "from Sep 2023"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+            "note": {
+              "zh": "2023 年 9 月的官方英文稿称她被租借到莱万特拉斯普拉纳斯。2026 年是否仍在该队，本页没有新的俱乐部来源。",
+              "en": "The September 2023 official English report says she was loaned to Levante Las Planas. Whether she was still there in 2026 is not supported by a newer club source on this page."
+            }
+          }
+        ]
+      },
+      {
+        "id": "yang-lina",
+        "name_zh": "杨莉娜",
+        "name_en": "Yang Lina",
+        "summary": {
+          "zh": "2023 年是莱万特拉斯普拉纳斯的常规出场球员。2026-27 赛季有意甲进球报道，俱乐部还没有核上。",
+          "en": "In 2023 she was a regular starter at Levante Las Planas. A 2026-27 Serie A goal is reported, and the club is still unchecked."
+        },
+        "stages": [
+          {
+            "id": "yang-lina-levante-2023",
+            "club": "Levante Las Planas",
+            "league_id": "liga-f",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2023",
+              "en": "2023"
+            },
+            "appearance_status": "appeared",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+            "note": {
+              "zh": "杭州亚运会英文稿称她当时是西班牙顶级联赛莱万特拉斯普拉纳斯的常规首发。出场总数未闭合。",
+              "en": "The Hangzhou Asian Games English report calls her a regular starter at Levante Las Planas in the Spanish top flight. A full appearance total is not closed."
+            }
+          },
+          {
+            "id": "yang-lina-serie-a-2026",
+            "club": null,
+            "league_id": "serie-a-femminile",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2026-27",
+              "en": "2026-27"
+            },
+            "appearance_status": "appeared",
+            "verification_status": "needs-review",
+            "source_url": "https://news.zhibo8.com/zuqiu/2026-10-14/6acf4d02913efnative.htm",
+            "note": {
+              "zh": "2026 年 10 月 14 日的中文报道称她在意甲出场并破门。报道没有给出俱乐部，本页不补俱乐部名。",
+              "en": "A Chinese report on 14 October 2026 says she appeared and scored in Serie A. The report names no club, and this page does not supply one."
+            }
+          }
+        ]
+      },
+      {
+        "id": "li-mengwen",
+        "name_zh": "李梦雯",
+        "name_en": "Li Mengwen",
+        "summary": {
+          "zh": "2022-23 赛季租借巴黎圣日耳曼，2023 年 9 月准备加盟布莱顿征战女足英超。2026 年 3 月的报道改记苏格兰联赛，俱乐部未核。",
+          "en": "She had a 2022-23 loan at Paris Saint-Germain and was preparing to join Brighton for the Women's Super League in September 2023. A March 2026 report moves the trail to a Scottish league, with the club unchecked."
+        },
+        "stages": [
+          {
+            "id": "li-mengwen-psg-2022",
+            "club": "Paris Saint-Germain",
+            "league_id": "premiere-ligue",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2022-23",
+              "en": "2022-23"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+            "note": {
+              "zh": "官方英文稿称她在加盟布莱顿前有一个赛季的巴黎圣日耳曼租借。法甲出场数未闭合。",
+              "en": "The official English report says she had a season-long Paris Saint-Germain loan before Brighton. French top-flight appearances are not closed."
+            }
+          },
+          {
+            "id": "li-mengwen-brighton-2023",
+            "club": "Brighton & Hove Albion",
+            "league_id": "wsl",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2023-24",
+              "en": "2023-24"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+            "note": {
+              "zh": "2023 年 9 月抵达布莱顿，备战 2023/24 女足英超。本页不把这次加盟写成已经完成的英超出场。",
+              "en": "She arrived at Brighton in September 2023 to prepare for the 2023/24 Women's Super League. This page does not turn that arrival into a completed league appearance."
+            }
+          },
+          {
+            "id": "li-mengwen-scotland-2026",
+            "club": null,
+            "league_id": "scotland-womens",
+            "bucket": "europe-other",
+            "season": {
+              "zh": "2026-03 报道",
+              "en": "reported Mar 2026"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "needs-review",
+            "source_url": "https://sports.rednet.cn/content/646047/68/15788676.html",
+            "note": {
+              "zh": "2026 年女足亚洲杯后的报道把她记在苏格兰联赛，并写明当时女足英超没有中国球员。俱乐部和联赛级别未闭合。",
+              "en": "A report after the 2026 Women's Asian Cup places her in a Scottish league and says no Chinese player was then in the Women's Super League. The club and tier are not closed."
+            }
+          }
+        ]
+      },
+      {
+        "id": "wu-chengshu",
+        "name_zh": "吴澄舒",
+        "name_en": "Wu Chengshu",
+        "summary": {
+          "zh": "2023 年 9 月与第戎签下法国顶级联赛合同，期限两年。2026 年的中文报道仍把她放在法甲，续约原文未核。",
+          "en": "In September 2023 she signed a two-year contract with Dijon in the French top flight. Chinese reports in 2026 still place her there. A renewal document is not checked."
+        },
+        "stages": [
+          {
+            "id": "wu-chengshu-dijon-2023",
+            "club": "Dijon",
+            "league_id": "premiere-ligue",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2023-09 起，官宣两年",
+              "en": "from Sep 2023, two-year announcement"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "mixed-source",
+            "source_url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+            "note": {
+              "zh": "杭州亚运会英文稿称第戎、中国足协和江苏方面共同促成这次加盟，联赛于 2023 年 9 月 16 日开赛。2026 年 3 月和 10 月的中文报道仍把她列入法甲，本页不把后续报道写成新的官方续约。",
+              "en": "The Hangzhou report says Dijon, the CFA and Jiangsu authorities facilitated the move, with the league starting on 16 September 2023. Chinese reports in March and October 2026 still list her in the French top flight. Those later reports are not stored as a new official renewal."
+            }
+          }
+        ]
+      },
+      {
+        "id": "wang-yanwen",
+        "name_zh": "王妍雯",
+        "name_en": "Wang Yanwen",
+        "summary": {
+          "zh": "2026 年 3 月的中文报道把她和第戎、吴澄舒写在一起。缺少俱乐部原始公告。",
+          "en": "Chinese reports in March 2026 place her at Dijon with Wu Chengshu. A club announcement is missing."
+        },
+        "stages": [
+          {
+            "id": "wang-yanwen-dijon-2026",
+            "club": "Dijon",
+            "league_id": "premiere-ligue",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2026-03 报道",
+              "en": "reported Mar 2026"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "provisional",
+            "source_url": "https://www.sydneytoday.com/content-1026586000084002",
+            "note": {
+              "zh": "转载稿称她与吴澄舒同在第戎。这是暂定注册，不写成已核出场。",
+              "en": "A republished report places her at Dijon with Wu Chengshu. This is a provisional registration, not a checked appearance record."
+            }
+          }
+        ]
+      },
+      {
+        "id": "wurigumula",
+        "name_zh": "乌日古木拉",
+        "name_en": "Wurigumula",
+        "summary": {
+          "zh": "先有澳大利亚中央海岸水手阶段，2026 年 3 月女足亚洲杯后被报道加盟法甲蒙彼利埃并穿着 7 号。",
+          "en": "She had a Central Coast Mariners spell in Australia. After the March 2026 Women's Asian Cup, reports said she joined Montpellier in the French top flight and would wear 7."
+        },
+        "stages": [
+          {
+            "id": "wurigumula-central-coast",
+            "club": "Central Coast Mariners",
+            "league_id": "a-league-women",
+            "bucket": "oceania",
+            "season": {
+              "zh": "回到长春之前",
+              "en": "before the return to Changchun"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "provisional",
+            "source_url": "https://www.sydneytoday.com/content-1026586000084002",
+            "note": {
+              "zh": "中文转载称这是她第一次留洋，之后回到长春。赛季和出场数未闭合。",
+              "en": "The Chinese republication calls this her first overseas spell, followed by a return to Changchun. Season and appearance counts are not closed."
+            }
+          },
+          {
+            "id": "wurigumula-montpellier-2026",
+            "club": "Montpellier",
+            "league_id": "premiere-ligue",
+            "bucket": "big-five",
+            "season": {
+              "zh": "2026-03 官宣",
+              "en": "announced Mar 2026"
+            },
+            "appearance_status": "registration-reported",
+            "verification_status": "provisional",
+            "source_url": "https://www.sydneytoday.com/content-1026586000084002",
+            "note": {
+              "zh": "2026 年 3 月 21 日前后的中文稿称她加盟蒙彼利埃并穿 7 号。未见俱乐部原文，故保持暂定。",
+              "en": "Chinese copy around 21 March 2026 says she joined Montpellier and took the number 7. No club original is attached, so the row stays provisional."
+            }
+          }
+        ]
+      },
+      {
+        "id": "shao-ziqin",
+        "name_zh": "邵子钦",
+        "name_en": "Shao Ziqin",
+        "summary": {
+          "zh": "2026 年 4 月新华社确认她与本菲卡女足签约至 2029。葡萄牙顶级联赛不属于女子五大联赛。10 月的中文报道称她已在女足欧冠出场。",
+          "en": "Xinhua confirmed in April 2026 that she signed with Benfica Women through 2029. The Portuguese top flight is outside the women's big five. An October Chinese report says she has appeared in the Women's Champions League."
+        },
+        "stages": [
+          {
+            "id": "shao-ziqin-benfica-2026",
+            "club": "Benfica",
+            "league_id": "portugal-feminino",
+            "bucket": "europe-other",
+            "season": {
+              "zh": "2026-27 至 2029",
+              "en": "2026-27 through 2029"
+            },
+            "appearance_status": "appeared",
+            "verification_status": "provisional",
+            "source_url": "https://english.news.cn/20260407/d114ca932d354da0952bc77b8619674c/c.html",
+            "note": {
+              "zh": "新华社引本菲卡公告：合同至 2029，正式参赛资格从 2026-27 赛季开始。2026 年 10 月 14 日直播吧称她已有欧冠出场。葡超联赛出场数未闭合，欧冠出场也不并入联赛统计。",
+              "en": "Xinhua cites the Benfica announcement: a contract through 2029, with official eligibility from the 2026-27 season. Zhibo8 reported a Women's Champions League appearance on 14 October 2026. Portuguese league appearances are not closed, and the cup appearance is not merged into league statistics."
+            }
+          }
+        ]
+      }
+    ],
+    "source_links": [
+      {
+        "label": "FIFA: all U-17 Women's World Cup winners",
+        "url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2025/articles/all-winners-tournament-korea-france-japan-spain",
+        "checked_at": "2026-10-30"
+      },
+      {
+        "label": "FIFA U-17 Women's World Cup Morocco 2026",
+        "url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026",
+        "checked_at": "2026-10-30"
+      },
+      {
+        "label": "FIFA fixtures: Morocco 2026",
+        "url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026/scores-fixtures",
+        "checked_at": "2026-10-30"
+      },
+      {
+        "label": "FIFA match centre: Kenya 0-3 China PR",
+        "url": "https://www.fifa.com/en/match-centre/match/516/292977/292978/400022557",
+        "checked_at": "2026-10-30"
+      },
+      {
+        "label": "Wikipedia and RSSSF cross-check for hosts, fourth place and China's historical stage",
+        "url": "https://en.wikipedia.org/wiki/FIFA_U-17_Women%27s_World_Cup",
+        "checked_at": "2026-10-30"
+      },
+      {
+        "label": "Hangzhou Asian Games: overseas careers, September 2023",
+        "url": "https://www.hangzhou2022.cn/En/presscenter/spotnews/latestnews/202309/t20230907_71225.shtml",
+        "checked_at": "2026-10-30"
+      },
+      {
+        "label": "Xinhua: Wang Shuang joins Tottenham",
+        "url": "https://www.parisguardian.com/news/274058745/chinese-international-wang-shuang-joins-tottenham-womens-team",
+        "checked_at": "2026-10-30"
+      },
+      {
+        "label": "Xinhua: Shao Ziqin signs with Benfica Women",
+        "url": "https://english.news.cn/20260407/d114ca932d354da0952bc77b8619674c/c.html",
+        "checked_at": "2026-10-30"
+      }
+    ]
+  },
   "club_name_overrides": {
     "1. FC Kaiserslautern": "凯泽斯劳滕",
     "AC Milan": "AC米兰",
@@ -56880,5 +57835,6 @@
     "Yixing Zhoutie Jiuteng Football Club": "宜兴周铁久滕足球俱乐部",
     "Yongin FC": "龙仁FC",
     "Zhejiang FC": "浙江"
-  }
+  },
+  "tournament_name_overrides": {}
 }

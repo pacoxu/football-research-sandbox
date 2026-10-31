@@ -436,6 +436,20 @@
       },
       "additionalProperties": true
     },
+    "womenFootball": {
+      "type": "object",
+      "required": ["schema_version", "checked_at", "u17_world_cup", "big_five_leagues", "players", "source_links"],
+      "properties": {
+        "schema_version": { "type": "integer", "minimum": 1 },
+        "checked_at": { "$ref": "https://football-research.local/schema/common.schema.json#/$defs/date" },
+        "u17_world_cup": { "type": "object" },
+        "big_five_leagues": { "type": "array" },
+        "other_leagues": { "type": "array" },
+        "players": { "type": "array" },
+        "source_links": { "type": "array" }
+      },
+      "additionalProperties": true
+    },
     "spainFootballSystem": {
       "type": "object",
       "required": ["schema_version", "checked_at", "pyramids", "contract_types", "placements"],

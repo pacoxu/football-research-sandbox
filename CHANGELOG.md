@@ -4,6 +4,18 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-10-30
+
+### Added
+
+- Added a women's football topic with the U-17 Women's World Cup editions, China PR's finals path, and a first sample of Chinese players in Europe and the women's big five.
+- Recorded China PR's 2026 group and round-of-16 results in Morocco. The quarter-final against Brazil on 1 November stays unplayed.
+
+### Data Scope Notes
+
+- The women's big five are the WSL, Liga F, Frauen-Bundesliga, Première Ligue and Serie A Femminile. Swiss, Portuguese, Scottish, NWSL and A-League spells stay outside that set.
+- Frauen-Bundesliga has no Chinese sample in this snapshot. Yang Lina's 2026 Serie A club stays blank. Wang Yanwen and Wurigumula remain provisional.
+
 ## 2026-10-14
 
 ### Added

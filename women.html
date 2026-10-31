@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>女足专题 | 青训球员追踪站</title>
+    <meta name="description" content="U17 女足世界杯届次、中国队路径，以及旅欧女足球员和女子五大联赛样本。" />
+    <link rel="stylesheet" href="./assets/styles.css?v=20261030-women" />
+  </head>
+  <body data-page="women">
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="./index.html">
+          <span class="brand-kicker" data-i18n="site.kicker">青训追踪台</span>
+          <strong data-i18n="site.brand">青训球员追踪站</strong>
+        </a>
+        <div class="header-actions">
+          <nav class="site-nav" aria-label="主导航" data-i18n-aria-label="nav.aria">
+            <a class="nav-featured" data-i18n="nav.xiaojiang" href="https://xiaojiangfc.com/" target="_blank" rel="noreferrer">小将FC</a>
+            <a data-nav="home" data-i18n="nav.home" href="./index.html">首页</a>
+            <a data-nav="players" data-i18n="nav.players" href="./players.html">球员</a>
+            <a data-nav="tournaments" data-i18n="nav.tournaments" href="./tournaments.html">赛事</a>
+            <a data-nav="milestones" data-i18n="nav.milestones" href="./milestones.html">2026里程碑</a>
+            <a data-nav="overseas" data-i18n="nav.overseas" href="./overseas.html">留洋</a>
+            <a data-nav="women" data-i18n="nav.women" href="./women.html">女足</a>
+            <a href="./lineup.html">排阵容</a>
+            <a data-nav="pathways" data-i18n="nav.pathways" href="./pathways.html">青训体系</a>
+            <a data-nav="coaches" data-i18n="nav.coaches" href="./coaches.html">青训教练</a>
+            <a data-nav="stories" data-i18n="nav.stories" href="./stories.html">故事</a>
+            <a data-nav="youth-disputes" data-i18n="nav.disputes" href="./youth-disputes.html">青训纠纷</a>
+            <a data-nav="data-center" data-i18n="nav.dataCenter" href="./data.html">数据中心</a>
+            <a data-nav="predictions" data-i18n="nav.predictions" href="./predictions.html">世界杯预测</a>
+          </nav>
+          <button id="languageToggleButton" class="header-control" type="button" aria-label="切换语言">
+            <span class="header-control-caption" data-i18n="header.language">语言</span>
+            <strong id="languageToggleValue">EN</strong>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero hero-tight">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="women.hero.eyebrow">Women's Football</p>
+            <h1 data-i18n="women.hero.title">女足专题</h1>
+            <p class="hero-text" data-i18n="women.hero.text">对照 U17 女足世界杯、中国队决赛圈路径，以及旅欧球员在女子五大联赛和其他联赛中的阶段。进行中的比赛不预写赛果。</p>
+            <div class="hero-actions">
+              <a class="primary-link" href="#womenPlayers" data-i18n="women.hero.players">查看旅欧样本</a>
+              <a class="secondary-link" href="#womenLeagues" data-i18n="women.hero.leagues">查看女子五大联赛</a>
+            </div>
+          </div>
+          <aside id="womenHeroStats" class="hero-spotlight">
+            <p class="eyebrow" data-i18n="women.meta.eyebrow">Sample</p>
+            <div class="empty-inline" data-i18n="common.loading">加载中</div>
+          </aside>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="women.editions.eyebrow">U-17 Women's World Cup</p>
+              <h2 data-i18n="women.editions.title">U17 女足世界杯</h2>
+            </div>
+          </div>
+          <p id="womenEditionNote" class="section-note"></p>
+          <div class="table-shell youth-player-table-shell">
+            <table class="youth-player-table">
+              <thead>
+                <tr>
+                  <th data-i18n="women.editions.year">年份</th>
+                  <th data-i18n="women.editions.host">主办</th>
+                  <th data-i18n="women.editions.status">状态</th>
+                  <th data-i18n="women.editions.final">决赛</th>
+                  <th data-i18n="women.editions.china">中国队</th>
+                </tr>
+              </thead>
+              <tbody id="womenEditionBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="women.matches.eyebrow">Morocco 2026</p>
+              <h2 data-i18n="women.matches.title">2026 中国队已赛与待赛</h2>
+            </div>
+          </div>
+          <p id="womenMatchNote" class="section-note"></p>
+          <div class="table-shell youth-player-table-shell">
+            <table class="youth-player-table">
+              <thead>
+                <tr>
+                  <th data-i18n="women.matches.date">日期</th>
+                  <th data-i18n="women.matches.stage">阶段</th>
+                  <th data-i18n="women.matches.opponent">对手</th>
+                  <th data-i18n="women.matches.score">比分</th>
+                  <th data-i18n="women.matches.scorers">进球</th>
+                </tr>
+              </thead>
+              <tbody id="womenMatchBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section id="womenLeagues" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="women.leagues.eyebrow">Leagues</p>
+              <h2 data-i18n="women.leagues.title">女子五大联赛与相邻联赛</h2>
+            </div>
+          </div>
+          <div id="womenLeagueGrid" class="system-card-grid"></div>
+        </section>
+
+        <section id="womenPlayers" class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="women.players.eyebrow">Europe</p>
+              <h2 data-i18n="women.players.title">旅欧与海外阶段</h2>
+            </div>
+            <p id="womenPlayerMeta" class="section-note"></p>
+          </div>
+          <div id="womenPlayerFilters" class="youth-filter-bar"></div>
+          <div class="table-shell youth-player-table-shell">
+            <table class="youth-player-table">
+              <thead id="womenPlayerHead"></thead>
+              <tbody id="womenPlayerBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow" data-i18n="women.sources.eyebrow">Sources</p>
+              <h2 data-i18n="women.sources.title">来源与核查时间</h2>
+            </div>
+          </div>
+          <div id="womenSources" class="story-grid"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p id="globalUpdatedLabel" data-i18n="common.loadingData">数据载入中</p>
+        <nav class="friend-links" aria-label="友情链接">
+          <strong data-i18n="common.friendlyLinks">友情链接</strong>
+          <a href="https://xiaojiangfc.com/" target="_blank" rel="noreferrer">小将FC</a>
+          <a href="https://www.thecfa.cn/" target="_blank" rel="noreferrer">中国足协</a>
+          <a href="https://www.cfl-china.cn/" target="_blank" rel="noreferrer">中足联</a>
+          <a href="https://www.the-afc.com/" target="_blank" rel="noreferrer">亚足联</a>
+          <a href="https://www.fifa.com/" target="_blank" rel="noreferrer">国际足联</a>
+          <a href="https://www.transfermarkt.com/" target="_blank" rel="noreferrer">Transfermarkt</a>
+        </nav>
+      </footer>
+    </div>
+    <script type="module" src="./assets/app.js?v=20261030-women"></script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # 数据字典
 
-更新时间：2026-10-04
+更新时间：2026-10-30
 
 本文解释仓库中核心 JSON 文件和常用字段。程序化校验范围见 `docs/validation.md`，数据流见 `docs/data-flow.md`，来源状态规则见 `docs/research/data-governance-and-quality-rules.md`。
 
@@ -23,6 +23,7 @@
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 中国、日韩与北欧青训体系、项目、竞赛关系和年度快照。 | 是 |
 | `data/raw/spain-football-system.json` | 西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站中国球员在这些层级的落点。 | 是 |
+| `data/raw/women-football.json` | 女足专题：U17 女足世界杯届次、2026 中国队已赛场次、女子五大联赛和旅欧样本。 | 是 |
 | `data/raw/forecast/model.json` | 亚洲世界杯预测的国家研究指数、历史训练快照、名额假设和来源映射。 | 是 |
 | `data/raw/big-five-debut-forecast.json` | 中国球员五大联赛首秀研究盘的市场口径、模型权重、快照评分和来源。 | 是 |
 | `data/site/players.json` | 前端使用的球员聚合 JSON。 | 否，由脚本生成 |

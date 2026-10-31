@@ -12,6 +12,7 @@ import { validateJsonSchemas } from "./validate-json-schemas.mjs";
 import { loadForecastInput, validateForecastInput } from "./lib/world-cup-forecast.mjs";
 import { validateBigFiveDebutForecastInput } from "./lib/big-five-debut-forecast.mjs";
 import { validateSpainFootballSystem } from "./lib/spain-football-system.mjs";
+import { validateWomenFootball } from "./lib/women-football.mjs";
 
 const requiredPlayerFields = [
   "id",
@@ -3869,6 +3870,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     dataset.overseasHistory
   );
   validateEuropeTopLeaguesJapanKorea(dataset.europeTopLeaguesJapanKorea);
+  validateWomenFootball(dataset.womenFootball);
   validateSpainFootballSystem(
     dataset.spainFootballSystem,
     playerIds,
