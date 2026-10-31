@@ -45,4 +45,8 @@ test("uses reviewed Chinese names from explicit overrides", async () => {
   const namesById = new Map(dataset.players.map((player) => [player.id, player.names.zh]));
   assert.equal(namesById.get("uz-abdukodir-khusanov-2004"), "胡桑洛夫");
   assert.equal(namesById.get("au-lucas-herrington-2007"), "卢卡斯·赫林顿");
+  assert.equal(namesById.get("cn-yao-haoyang-2006"), "姚浩洋");
+  assert.equal(namesById.get("cn-he-yiran-2005"), "贺一然");
+  assert.equal(namesById.get("cn-li-zhenquan-2003"), "李镇全");
+  assert.equal(namesById.get("cn-yimulan-maimaiti-2005"), "依木兰·买买提");
 });

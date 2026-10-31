@@ -14,15 +14,15 @@
   "coverage_summary": {
     "dataset_count": 10,
     "record_count": 981,
-    "stale_records": 155,
+    "stale_records": 151,
     "needs_review_records": 348
   },
   "freshness": {
     "as_of": "2026-10-04",
     "audited_records": 1290,
-    "overdue": 152,
+    "overdue": 147,
     "by_window": {
-      "30": 151,
+      "30": 146,
       "90": 1,
       "180": 0
     }
@@ -36,11 +36,11 @@
       },
       "record_count": 573,
       "quality": {
-        "complete": 70,
+        "complete": 74,
         "mixed": 4,
         "partial": 39,
         "needs-review": 312,
-        "stale": 148,
+        "stale": 144,
         "excluded": 0
       },
       "source_tiers": {
@@ -56,7 +56,7 @@
         "oldest": "2026-05-22",
         "newest": "2026-10-03"
       },
-      "overdue_records": 148,
+      "overdue_records": 144,
       "missing_fields": [
         {
           "field": "names.native_verified",
@@ -473,6 +473,10 @@
     },
     {
       "path": "data/raw/club-name-overrides.json",
+      "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap"
+    },
+    {
+      "path": "data/raw/tournament-name-overrides.json",
       "schema": "https://football-research.local/schema/datasets.schema.json#/$defs/objectMap"
     },
     {

@@ -20,6 +20,7 @@
 | `data/raw/football-stories.json` | 职业球员转型、教练实践、校园机构与公开争议的来源化故事。 | 是 |
 | `data/raw/youth-training-disputes.json` | 国内青少年培训协议、自由身、违约金与培训补偿公开案例。 | 是 |
 | `data/raw/player-name-overrides.json` | 球员姓名覆盖和展示修正。 | 是 |
+| `data/raw/tournament-name-overrides.json` | 赛事中文展示名，按赛事 `id` 映射 `zh` / `short_zh`；英文 canonical 名仍写在 `tournaments.json` 与 `tournament-archive.json`。 | 是 |
 | `data/raw/player-market-values.json` | 全量球员 Transfermarkt 覆盖状态、完整历史和独立替代来源序列。 | 是，通常由脚本辅助刷新 |
 | `data/raw/youth-development-systems.json` | 中国、日韩与北欧青训体系、项目、竞赛关系和年度快照。 | 是 |
 | `data/raw/spain-football-system.json` | 西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站中国球员在这些层级的落点。 | 是 |
@@ -60,6 +61,10 @@
 中国、日本、韩国和乌兹别克斯坦球员在 `data/raw/player-name-overrides.json` 中维护本土姓名审计。`native_verification.status` 只允许 `verified` 或 `unresolved`：前者必须包含 `language_tag`、官方 `sources` 和核查日期，后者不得写入 `native`，必须列出 `attempts` 和未确认说明。日本的 `native/ja`、韩国的 `native/ko` 必须一致；乌兹别克姓名允许 `uz-Latn` 或 `uz-Cyrl`。
 
 loader 在内存数据中保留 `name_verification` 供质量统计使用，并把已验证的姓名来源合并到 `source_layers`。站点生成器会移除 `name_verification` 审计过程；中文译名不自动等同于已核本土姓名，`unresolved` 球员的 `names.native` 回退为英文注册名。字段发布契约见 `docs/publication-policy.md`。
+
+### `tournament-name-overrides.json`
+
+按赛事 `id` 提供中文展示名。`zh` 用于标题，`short_zh` 用于卡片短名。英文 `name` / `competition_name` 仍是 canonical 字段；前端在中文界面通过覆盖表显示。
 
 ### `overseas_status`
 
