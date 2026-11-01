@@ -108,6 +108,28 @@ test("places the 2026/27 Group 7 Chinese samples on Liga Nacional", () => {
   );
 });
 
+test("keeps the 24-name honour compilation separate from closed counts", () => {
+  const census = payload.honor_census;
+  assert.equal(census.players.length, 24);
+  assert.deepEqual(
+    census.players.map((player) => player.local_name),
+    [
+      "徐新", "桂宏", "徐天沅", "林良铭", "王梓翔", "闫义明", "何文超", "周潇",
+      "王华鹏", "李学博", "刘凯杰", "孔荫权", "王世龙", "李天昊", "张威明", "黎腾龙",
+      "王佳豪", "何小珂", "杨希", "鲁耀辉", "韩丰璘", "陈欧翔", "王皓文", "陈雨晟"
+    ]
+  );
+  assert.equal(census.outside_sheet[0].local_name, "张奥凯");
+  assert.equal(payload.u19_table.rows.find((row) => row.local_name === "林良铭").appearances, "4–17");
+  assert.equal(census.players.find((player) => player.local_name === "徐天沅").compiler_appearances, "17");
+  assert.equal(payload.u19_table.rows.find((row) => row.local_name === "徐天沅").appearances, "1 起");
+  const atLeast15 = census.players.filter((player) => {
+    const count = Number(String(player.compiler_appearances).replace("≥", ""));
+    return count >= 15;
+  }).map((player) => player.local_name);
+  assert.deepEqual(atLeast15, ["徐新", "徐天沅", "林良铭", "何小珂", "杨希", "鲁耀辉", "陈雨晟"]);
+});
+
 test("combines honour league and Liga Nacional into one open-count table", () => {
   const rows = payload.u19_table.rows;
   assert.deepEqual(

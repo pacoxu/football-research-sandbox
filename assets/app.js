@@ -530,6 +530,16 @@ const UI_COPY = {
     "spain.u19.season": "赛季",
     "spain.u19.appearances": "场次",
     "spain.u19.goals": "进球",
+    "spain.census.eyebrow": "编译表",
+    "spain.census.title": "荣誉联赛 24 人名单",
+    "spain.census.player": "球员",
+    "spain.census.pathway": "途径",
+    "spain.census.club": "首秀球队",
+    "spain.census.debut": "首秀",
+    "spain.census.apps": "表上出场",
+    "spain.census.goals": "表上进球",
+    "spain.census.status": "表上现况",
+    "spain.census.check": "核对",
     "spain.players.eyebrow": "Placements",
     "spain.players.title": "哪些球员踢过这些层级",
     "spain.players.meta": "当前筛选 {count} 条",
@@ -1686,6 +1696,16 @@ const UI_COPY = {
     "spain.u19.season": "Season",
     "spain.u19.appearances": "Appearances",
     "spain.u19.goals": "Goals",
+    "spain.census.eyebrow": "Compilation",
+    "spain.census.title": "24-name honour-league sheet",
+    "spain.census.player": "Player",
+    "spain.census.pathway": "Pathway",
+    "spain.census.club": "Debut club",
+    "spain.census.debut": "Debut",
+    "spain.census.apps": "Sheet appearances",
+    "spain.census.goals": "Sheet goals",
+    "spain.census.status": "Sheet status",
+    "spain.census.check": "Check",
     "spain.players.eyebrow": "Placements",
     "spain.players.title": "Which players reached these layers",
     "spain.players.meta": "Showing {count} placements",
@@ -10956,6 +10976,51 @@ function renderSpainU19Table(payload, layerMap) {
     .join("");
 }
 
+function renderSpainHonorCensus(payload) {
+  const census = payload.honor_census;
+  const note = document.querySelector("#spainHonorCensusNote");
+  const head = document.querySelector("#spainHonorCensusHead");
+  const body = document.querySelector("#spainHonorCensusBody");
+  if (!census || !head || !body) return;
+  if (note) note.textContent = localizeText(census.note);
+  const pathways = new Map((census.pathways ?? []).map((pathway) => [pathway.id, pathway]));
+  head.innerHTML = `<tr>
+    <th>${escapeHtml(t("spain.census.player"))}</th>
+    <th>${escapeHtml(t("spain.census.pathway"))}</th>
+    <th>${escapeHtml(t("spain.census.club"))}</th>
+    <th>${escapeHtml(t("spain.census.debut"))}</th>
+    <th>${escapeHtml(t("spain.census.apps"))}</th>
+    <th>${escapeHtml(t("spain.census.goals"))}</th>
+    <th>${escapeHtml(t("spain.census.status"))}</th>
+    <th>${escapeHtml(t("spain.census.check"))}</th>
+  </tr>`;
+  body.innerHTML = (census.players ?? [])
+    .map((player) => {
+      const pathway = pathways.get(player.pathway_id);
+      const href = getSpainPlayerHref(player);
+      const label = state.language === "en" ? player.name : player.local_name;
+      const checkLabels = {
+        "needs-review": state.language === "en" ? "Sheet only" : "仅编译表",
+        conflict: state.language === "en" ? "Conflicts with placed count" : "与已核场次冲突",
+        "mixed-source": state.language === "en" ? "Same public count" : "与公开口径同向"
+      };
+      const nameCell = href
+        ? `<a class="inline-link" href="${escapeHtml(href)}">${escapeHtml(label)}</a>`
+        : escapeHtml(label);
+      return `<tr>
+        <td>${nameCell}</td>
+        <td>${escapeHtml(pathway ? localizeText(pathway.label) : player.pathway_id)}</td>
+        <td>${escapeHtml(localizeText(player.debut_club))}</td>
+        <td>${escapeHtml(`${player.debut_date} · ${player.debut_age}`)}</td>
+        <td>${escapeHtml(player.compiler_appearances)}</td>
+        <td>${escapeHtml(player.compiler_goals)}</td>
+        <td>${escapeHtml(player.compiler_status)}</td>
+        <td>${escapeHtml(checkLabels[player.verification_status] || player.verification_status)}</td>
+      </tr>`;
+    })
+    .join("");
+}
+
 function renderSpainSystemPage() {
   const payload = getSpainSystemPayload();
   const layerMap = getSpainLayerMap(payload);
@@ -11031,6 +11096,7 @@ function renderSpainSystemPage() {
           .join("");
   }
   renderSpainU19Table(payload, layerMap);
+  renderSpainHonorCensus(payload);
   const filters = document.querySelector("#spainPlayerFilters");
   if (filters) {
     filters.innerHTML = `

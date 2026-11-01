@@ -186,6 +186,66 @@ export function validateSpainFootballSystem(payload, playerIds, featuredRecordId
     "Spain U19 table must keep an open floor and a range"
   );
 
+  const census = payload.honor_census;
+  assert(census && isIsoDate(census.checked_at), "Missing Spain honour census");
+  assert(census.compiler === "Patrick海外君", "Spain honour census compiler changed");
+  assert(census.verification_status === "needs-review", "Spain honour census must stay needs-review");
+  validateLocalizedText(census.note, "spain honour census note");
+  validateLocalizedText(census.sheet_footnote, "spain honour census footnote");
+  assert(census.note.zh.includes("何文超") && census.note.zh.includes("张奥凯") && census.note.zh.includes("吕孟洋"), "Spain honour census note must keep the three boundary names");
+  assert(Array.isArray(census.outside_sheet) && census.outside_sheet.length === 1, "Zhang Aokai must stay outside the honour sheet");
+  assert(census.outside_sheet[0].local_name === "张奥凯", "The outside-sheet name must stay 张奥凯");
+  const pathwayIds = new Set();
+  const pathwayNames = new Map();
+  for (const pathway of census.pathways ?? []) {
+    assert(pathway.id && !pathwayIds.has(pathway.id), `Duplicate honour pathway ${pathway.id}`);
+    pathwayIds.add(pathway.id);
+    validateLocalizedText(pathway.label, `${pathway.id}.label`);
+    assert(Array.isArray(pathway.local_names) && pathway.local_names.length > 0, `Missing names on ${pathway.id}`);
+    pathwayNames.set(pathway.id, pathway.local_names);
+  }
+  assert(census.players?.length === 24, "Spain honour census must stay 24 names");
+  const censusIds = new Set();
+  const censusNames = [];
+  for (const player of census.players) {
+    assert(player.id && !censusIds.has(player.id), `Duplicate honour census id ${player.id}`);
+    censusIds.add(player.id);
+    assert(Number.isInteger(player.order) && player.order >= 1 && player.order <= 24, `Invalid honour census order on ${player.id}`);
+    assert(player.local_name && player.name, `Missing honour census identity on ${player.id}`);
+    censusNames.push(player.local_name);
+    assert(pathwayIds.has(player.pathway_id), `Unknown pathway on ${player.id}`);
+    assert(pathwayNames.get(player.pathway_id).includes(player.local_name), `Pathway names drifted for ${player.local_name}`);
+    validateLocalizedText(player.debut_club, `${player.id}.debut_club`);
+    assert(isIsoDate(player.debut_date), `Invalid debut date on ${player.id}`);
+    for (const field of ["debut_age", "compiler_appearances", "compiler_goals", "compiler_age_label", "compiler_status"]) {
+      assert(typeof player[field] === "string" && player[field].length > 0, `Missing ${field} on ${player.id}`);
+    }
+    assert(allowedVerificationStatuses.has(player.verification_status), `Invalid honour census verification on ${player.id}`);
+    validateLocalizedText(player.note, `${player.id}.note`);
+    assert(
+      Boolean(player.player_id) || Boolean(player.featured_record_id) || player.verification_status === "needs-review",
+      `Unlinked honour census row must stay needs-review: ${player.id}`
+    );
+    if (player.player_id) assert(playerIds.has(player.player_id), `Unknown player on honour census ${player.id}`);
+    if (player.featured_record_id) {
+      assert(featuredRecordIds.has(player.featured_record_id), `Unknown featured record on honour census ${player.id}`);
+    }
+  }
+  assert(new Set(censusNames).size === 24, "Duplicate name in Spain honour census");
+  assert(censusNames.includes("何文超") && !censusNames.includes("张奥凯") && !censusNames.includes("吕孟洋"), "Honour census name boundary drifted");
+  assert(
+    census.players.find((player) => player.local_name === "林良铭").verification_status === "conflict",
+    "Lin Liangming's sheet total must stay in conflict with the open range"
+  );
+  assert(
+    census.players.find((player) => player.local_name === "鲁耀辉").compiler_appearances === "20",
+    "Lu Yaohui's sheet total is 20"
+  );
+  assert(
+    census.players.find((player) => player.local_name === "韩丰璘").compiler_appearances === "8",
+    "Han Fenglin's sheet total is 8"
+  );
+
   for (const source of payload.source_links ?? []) {
     assert(source.label && /^https?:\/\//.test(source.url), "Invalid Spain system source");
     assert(isIsoDate(source.checked_at), "Invalid Spain system source date");
