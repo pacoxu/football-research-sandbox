@@ -2330,20 +2330,26 @@ function requireLocalizedText(value, label) {
 }
 
 function validateChina2026Milestones(archive, dataset) {
-  assert(archive?.id === "china-men-2026-milestones", "Unexpected 2026 milestones id");
+  assert(archive?.id === "china-2026-milestones", "Unexpected 2026 milestones id");
   assert(archive.year === 2026, "2026 milestones year must be 2026");
   assert(isIsoDate(archive.checked_at), "Invalid 2026 milestones checked_at");
   requireLocalizedText(archive.title, "milestones.title");
   requireLocalizedText(archive.lede, "milestones.lede");
   requireLocalizedText(archive.scope_note, "milestones.scope_note");
-  assert(archive.poster?.src === "./assets/xiaohongshu-china-football-2026.jpg", "Unexpected 2026 milestones poster path");
+  assert(
+    archive.poster?.src?.startsWith("./assets/xiaohongshu-china-football-2026.jpg"),
+    "Unexpected 2026 milestones poster path"
+  );
   requireLocalizedText(archive.poster?.alt, "milestones.poster.alt");
-  assert(Array.isArray(archive.items) && archive.items.length === 3, "2026 milestones must contain three results");
+  assert(Array.isArray(archive.items) && archive.items.length === 4, "2026 milestones must contain four results");
 
   const tournamentIds = new Set(
     [...dataset.tournaments, ...dataset.tournamentArchive].map((entry) => entry.id)
   );
-  const expectedIds = ["u23-asian-cup", "u17-world-cup-path", "asian-games-bronze"];
+  const womenEditionIds = new Set(
+    dataset.womenFootball?.u17_world_cup?.editions?.map((edition) => edition.id) ?? []
+  );
+  const expectedIds = ["u23-asian-cup", "u17-world-cup-path", "asian-games-bronze", "u17-women-world-cup-quarterfinal"];
   const actualIds = archive.items.map((item) => item.id);
   assert(
     actualIds.length === expectedIds.length && actualIds.every((id, index) => id === expectedIds[index]),
@@ -2354,7 +2360,16 @@ function validateChina2026Milestones(archive, dataset) {
   for (const item of archive.items) {
     assert(!seen.has(item.id), `Duplicate 2026 milestone: ${item.id}`);
     seen.add(item.id);
-    assert(tournamentIds.has(item.competition_id), `Unknown milestone competition: ${item.id}:${item.competition_id}`);
+    if (item.page_href) {
+      assert(/^\.\/[a-z0-9-]+\.html$/.test(item.page_href), `Invalid milestone page link: ${item.id}`);
+      requireLocalizedText(item.page_label, `milestones.${item.id}.page_label`);
+      assert(
+        womenEditionIds.has(item.competition_id),
+        `Milestone page link must point at a women's edition: ${item.id}`
+      );
+    } else {
+      assert(tournamentIds.has(item.competition_id), `Unknown milestone competition: ${item.id}:${item.competition_id}`);
+    }
     if (item.related_competition_id) {
       assert(
         tournamentIds.has(item.related_competition_id),
@@ -2382,6 +2397,13 @@ function validateChina2026Milestones(archive, dataset) {
   assert(
     archive.items[2].summary.zh.includes("28 年") && archive.items[2].do_not_write.zh.includes("1994"),
     "Asian Games milestone must keep 28-year medal return and 1994 silver ceiling"
+  );
+  assert(
+    archive.items[3].summary.zh.includes("首次八强") &&
+      archive.items[3].summary.zh.includes("没有赛果") &&
+      archive.items[3].do_not_write.zh.includes("1999") &&
+      archive.items[3].do_not_write.zh.includes("四强"),
+    "U17 women's milestone must stay a first quarter-final without a Brazil result"
   );
 }
 
