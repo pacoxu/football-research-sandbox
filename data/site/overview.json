@@ -56213,7 +56213,7 @@
   },
   "spain_football_system": {
     "schema_version": 1,
-    "checked_at": "2026-10-21",
+    "checked_at": "2026-11-01",
     "summary": {
       "zh": "本页把西班牙成年职业联赛金字塔、U19/U16 青年联赛金字塔，以及本站已建档、曾进入这些层级的中国球员样本放在同一套口径里。西甲俱乐部青训合同不等于西甲出场；签职业合同也不等于已经踢过对应联赛。",
       "en": "This page places Spain's senior professional pyramid, the U19/U16 youth pyramid, and documented Chinese samples into one scope. An academy deal with a La Liga club is not a La Liga appearance, and a professional contract is not automatically a match record."
@@ -56394,8 +56394,8 @@
               "en": "División de Honor Juvenil"
             },
             "stable_structure": {
-              "zh": "西班牙 U19 最高级别全国联赛，对应多数西甲俱乐部的 Juvenil A。已建档样本里，杨希、林良铭、徐天沅、何小珂、韩丰璘、王皓文和陈雨晟的公开出场落在这一层。",
-              "en": "Spain's top national U19 league, usually Juvenil A at La Liga clubs. Documented appearances for Yang Xi, Lin Liangming, Xu Tianyuan, He Xiaoke, Han Fenglin, Wang Haowen and Chen Yusheng sit here."
+              "zh": "西班牙 U19 最高级别全国联赛，对应多数西甲俱乐部的 Juvenil A。能分开写场次的已建档样本是杨希、林良铭、徐天沅、何小珂、韩丰璘、王皓文和陈雨晟。Patrick海外君的编译表另列 24 个名字，总数没有逐人闭合。",
+              "en": "Spain's top national U19 league, usually Juvenil A at La Liga clubs. The placed samples with separable appearance counts are Yang Xi, Lin Liangming, Xu Tianyuan, He Xiaoke, Han Fenglin, Wang Haowen and Chen Yusheng. A Patrick Haiwaijun compilation lists 24 names whose totals are not closed player by player."
             },
             "source_url": "https://www.rfef.es/"
           },
@@ -57343,6 +57343,647 @@
           "goals": {
             "zh": "未见",
             "en": "Not recorded"
+          }
+        }
+      ]
+    },
+    "honor_census": {
+      "checked_at": "2026-11-01",
+      "compiler": "Patrick海外君",
+      "verification_status": "needs-review",
+      "note": {
+        "zh": "这是一张截图编译表，不是足协闭合技术表。24 个名字、首秀日期和总出场按表面登录。现况列只保留截图文字，不写成当前注册。已建档球员的场次仍以落点和上方合成表为准，不改成表上的单点总数。途径分组来自这次整理，不是足协分类。表上有何文超，途径分组没有他；途径分组里的张奥凯不在这张表上。吕孟洋不在表上，他的竞赛层级是全国二级。",
+        "en": "This is a screenshot compilation, not a closed federation sheet. The 24 names, debut dates and appearance totals are entered as printed. The 2026 status column stays screenshot text and is not current registration. Placed players keep the appearance figures already on the site. Pathway groups come from this request, not from the federation. He Wenchao is on the sheet and outside those groups; Zhang Aokai is in the groups and absent from the sheet. Lyu Mengyang is absent because his competition is Liga Nacional."
+      },
+      "sheet_footnote": {
+        "zh": "表注写徐新数据为不完全记录，并写 2018-03-01 起才开始记赛季。",
+        "en": "The sheet footnote says Xu Xin's figures are incomplete and that season logging starts on 2018-03-01."
+      },
+      "outside_sheet": [
+        {
+          "local_name": "张奥凯",
+          "name": "Zhang Aokai",
+          "pathway_id": "other",
+          "note": {
+            "zh": "途径分组把他放在「其他」。这张 24 人出场表没有他，因此不记成荣誉联赛出场。",
+            "en": "The pathway note places him in Other. This 24-name appearance sheet does not list him, so he is not recorded as an honour-league appearance."
+          }
+        }
+      ],
+      "pathways": [
+        {
+          "id": "wanda-hope-stars",
+          "label": {
+            "zh": "万达中国希望之星",
+            "en": "Wanda China Hope Stars"
+          },
+          "local_names": [
+            "徐新",
+            "徐天沅",
+            "王梓翔",
+            "闫义明",
+            "周潇",
+            "李学博",
+            "刘凯杰",
+            "孔荫权",
+            "李天昊",
+            "张威明",
+            "鲁耀辉"
+          ]
+        },
+        {
+          "id": "overseas-born",
+          "label": {
+            "zh": "出生海外",
+            "en": "Born overseas"
+          },
+          "local_names": [
+            "王佳豪",
+            "黎腾龙",
+            "杨希",
+            "陈欧翔"
+          ]
+        },
+        {
+          "id": "domestic-pipeline",
+          "label": {
+            "zh": "国内梯队输送",
+            "en": "Domestic academy placement"
+          },
+          "local_names": [
+            "桂宏",
+            "林良铭",
+            "王华鹏",
+            "何小珂"
+          ]
+        },
+        {
+          "id": "evergrande-school",
+          "label": {
+            "zh": "恒大足校",
+            "en": "Evergrande academy"
+          },
+          "local_names": [
+            "王世龙"
+          ]
+        },
+        {
+          "id": "family-funded",
+          "label": {
+            "zh": "家庭自费",
+            "en": "Family-funded"
+          },
+          "local_names": [
+            "韩丰璘",
+            "王皓文",
+            "陈雨晟"
+          ]
+        },
+        {
+          "id": "not-in-pathway-note",
+          "label": {
+            "zh": "表上有、途径分组未写",
+            "en": "On the sheet, outside the pathway note"
+          },
+          "local_names": [
+            "何文超"
+          ]
+        }
+      ],
+      "players": [
+        {
+          "id": "honor-census-01-xu-xin",
+          "order": 1,
+          "local_name": "徐新",
+          "name": "Xu Xin",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "马德里竞技 U19A",
+            "en": "Atlético Madrid Juvenil A"
+          },
+          "debut_date": "2011-03-13",
+          "debut_age": "16岁328天",
+          "compiler_appearances": "≥25",
+          "compiler_goals": "≥3",
+          "compiler_age_label": "32岁",
+          "compiler_status": "中超 云南玉昆",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "表注已写这组出场和进球是不完全记录。本站没有把他收成闭合落点。",
+            "en": "The sheet already marks these appearances and goals as incomplete. This site does not turn them into a closed placement."
+          }
+        },
+        {
+          "id": "honor-census-02-gui-hong",
+          "order": 2,
+          "local_name": "桂宏",
+          "name": "Gui Hong",
+          "pathway_id": "domestic-pipeline",
+          "debut_club": {
+            "zh": "塞维利亚 U19A",
+            "en": "Sevilla Juvenil A"
+          },
+          "debut_date": "2014-02-22",
+          "debut_age": "19岁38天",
+          "compiler_appearances": "7",
+          "compiler_goals": "1",
+          "compiler_age_label": "31岁",
+          "compiler_status": "中超 武汉三镇",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录首秀和总数。",
+            "en": "Debut and totals are entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-03-xu-tianyuan",
+          "order": 3,
+          "local_name": "徐天沅",
+          "name": "Xu Tianyuan",
+          "pathway_id": "wanda-hope-stars",
+          "featured_record_id": "xu-tianyuan-spain-2015",
+          "debut_club": {
+            "zh": "巴列卡诺 U19A",
+            "en": "Rayo Vallecano Juvenil A"
+          },
+          "debut_date": "2015-09-05",
+          "debut_age": "18岁120天",
+          "compiler_appearances": "17",
+          "compiler_goals": "0",
+          "compiler_age_label": "29岁",
+          "compiler_status": "退役",
+          "verification_status": "conflict",
+          "note": {
+            "zh": "本站只闭合 2015-09-06 对阿尔卡拉的首发，进球未见，场次是 1 起。表上的 17 场 0 球和 09-05 首秀日不覆盖这条落点。",
+            "en": "This site has closed only the 2015-09-06 start at Alcalá, with no recorded goals, so the count stays 1+. The sheet's 17 appearances, 0 goals and 09-05 debut do not replace that placement."
+          }
+        },
+        {
+          "id": "honor-census-04-lin-liangming",
+          "order": 4,
+          "local_name": "林良铭",
+          "name": "Lin Liangming",
+          "pathway_id": "domestic-pipeline",
+          "featured_record_id": "lin-liangming-spain-2015",
+          "debut_club": {
+            "zh": "皇家马德里 U19A",
+            "en": "Real Madrid Juvenil A"
+          },
+          "debut_date": "2015-09-12",
+          "debut_age": "18岁100天",
+          "compiler_appearances": "17",
+          "compiler_goals": "5",
+          "compiler_age_label": "29岁",
+          "compiler_status": "中超 北京国安",
+          "verification_status": "conflict",
+          "note": {
+            "zh": "表上是 17 场 5 球。本站仍写 4–17 场、4–5 球，不收成单点。",
+            "en": "The sheet says 17 appearances and 5 goals. This site still keeps 4–17 appearances and 4–5 goals."
+          }
+        },
+        {
+          "id": "honor-census-05-wang-zixiang",
+          "order": 5,
+          "local_name": "王梓翔",
+          "name": "Wang Zixiang",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "格拉纳达 U19A",
+            "en": "Granada Juvenil A"
+          },
+          "debut_date": "2017-02-19",
+          "debut_age": "18岁357天",
+          "compiler_appearances": "3",
+          "compiler_goals": "0",
+          "compiler_age_label": "28岁",
+          "compiler_status": "暂无",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。",
+            "en": "Entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-06-yan-yiming",
+          "order": 6,
+          "local_name": "闫义明",
+          "name": "Yan Yiming",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "科尔内利亚 U19A",
+            "en": "Cornellà Juvenil A"
+          },
+          "debut_date": "2017-03-25",
+          "debut_age": "18岁49天",
+          "compiler_appearances": "3",
+          "compiler_goals": "0",
+          "compiler_age_label": "28岁",
+          "compiler_status": "暂无",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。",
+            "en": "Entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-07-he-wenchao",
+          "order": 7,
+          "local_name": "何文超",
+          "name": "He Wenchao",
+          "pathway_id": "not-in-pathway-note",
+          "debut_club": {
+            "zh": "皇家穆尔西亚 U19A",
+            "en": "Real Murcia Juvenil A"
+          },
+          "debut_date": "2017-03-25",
+          "debut_age": "17岁73天",
+          "compiler_appearances": "3",
+          "compiler_goals": "0",
+          "compiler_age_label": "26岁",
+          "compiler_status": "中乙 上海海港",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "出场表有他，六类途径没有写他。现况「中乙 上海海港」与上海海港的中超身份不合，只保留表面文字。",
+            "en": "He is on the appearance sheet and missing from the six pathway groups. The printed status «League Two, Shanghai Port» does not match Shanghai Port's top-flight status, so it stays screenshot text."
+          }
+        },
+        {
+          "id": "honor-census-08-zhou-xiao",
+          "order": 8,
+          "local_name": "周潇",
+          "name": "Zhou Xiao",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "马德里竞技闪电 U19A",
+            "en": "Sheet text: 马德里竞技闪电 U19A"
+          },
+          "debut_date": "2018-01-27",
+          "debut_age": "18岁255天",
+          "compiler_appearances": "1",
+          "compiler_goals": "0",
+          "compiler_age_label": "27岁",
+          "compiler_status": "中甲 重庆铜梁龙",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "队名按截图保留，不猜成另一家马竞梯队。",
+            "en": "The club name stays as printed. It is not guessed into another Atlético side."
+          }
+        },
+        {
+          "id": "honor-census-09-wang-huapeng",
+          "order": 9,
+          "local_name": "王华鹏",
+          "name": "Wang Huapeng",
+          "pathway_id": "domestic-pipeline",
+          "debut_club": {
+            "zh": "皇家社会 U19A",
+            "en": "Real Sociedad Juvenil A"
+          },
+          "debut_date": "2018-02-03",
+          "debut_age": "18岁182天",
+          "compiler_appearances": "6",
+          "compiler_goals": "0",
+          "compiler_age_label": "26岁",
+          "compiler_status": "暂无",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。",
+            "en": "Entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-10-li-xuebo",
+          "order": 10,
+          "local_name": "李学博",
+          "name": "Li Xuebo",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "阿拉维斯 U19A",
+            "en": "Alavés Juvenil A"
+          },
+          "debut_date": "2018-03-11",
+          "debut_age": "18岁116天",
+          "compiler_appearances": "3",
+          "compiler_goals": "0",
+          "compiler_age_label": "26岁",
+          "compiler_status": "中甲 石家庄功夫",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。",
+            "en": "Entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-11-liu-kaijie",
+          "order": 11,
+          "local_name": "刘凯杰",
+          "name": "Liu Kaijie",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "塞万提斯 U19A",
+            "en": "Sheet text: 塞万提斯 U19A"
+          },
+          "debut_date": "2018-04-08",
+          "debut_age": "18岁94天",
+          "compiler_appearances": "1",
+          "compiler_goals": "0",
+          "compiler_age_label": "27岁",
+          "compiler_status": "深圳小王子",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "截图队名是「塞万提斯」，不改写成塞维利亚。",
+            "en": "The screenshot club is «Cervantes». It is not rewritten as Sevilla."
+          }
+        },
+        {
+          "id": "honor-census-12-kong-yinquan",
+          "order": 12,
+          "local_name": "孔荫权",
+          "name": "Kong Yinquan",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "马德里竞技 U19A",
+            "en": "Atlético Madrid Juvenil A"
+          },
+          "debut_date": "2018-09-08",
+          "debut_age": "18岁241天",
+          "compiler_appearances": "3",
+          "compiler_goals": "0",
+          "compiler_age_label": "26岁",
+          "compiler_status": "中甲 贵州德龙",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。",
+            "en": "Entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-13-wang-shilong",
+          "order": 13,
+          "local_name": "王世龙",
+          "name": "Wang Shilong",
+          "pathway_id": "evergrande-school",
+          "debut_club": {
+            "zh": "马德里竞技 U19A",
+            "en": "Atlético Madrid Juvenil A"
+          },
+          "debut_date": "2018-12-09",
+          "debut_age": "18岁295天",
+          "compiler_appearances": "8",
+          "compiler_goals": "0",
+          "compiler_age_label": "26岁",
+          "compiler_status": "中超 陕西长安竞技",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。恒大足校身份来自途径分组，不是这张表的原字段。",
+            "en": "Entered only as printed. The Evergrande academy label comes from the pathway note, not from a column on the sheet."
+          }
+        },
+        {
+          "id": "honor-census-14-li-tianhao",
+          "order": 14,
+          "local_name": "李天昊",
+          "name": "Li Tianhao",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "阿拉维斯 U19A",
+            "en": "Alavés Juvenil A"
+          },
+          "debut_date": "2019-03-09",
+          "debut_age": "18岁119天",
+          "compiler_appearances": "3",
+          "compiler_goals": "0",
+          "compiler_age_label": "26岁",
+          "compiler_status": "退役",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。",
+            "en": "Entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-15-zhang-weiming",
+          "order": 15,
+          "local_name": "张威明",
+          "name": "Zhang Weiming",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "马德里竞技 U19A",
+            "en": "Atlético Madrid Juvenil A"
+          },
+          "debut_date": "2019-04-07",
+          "debut_age": "18岁93天",
+          "compiler_appearances": "1",
+          "compiler_goals": "0",
+          "compiler_age_label": "25岁",
+          "compiler_status": "暂无",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录。",
+            "en": "Entered only as printed on the compilation."
+          }
+        },
+        {
+          "id": "honor-census-16-li-tenglong",
+          "order": 16,
+          "local_name": "黎腾龙",
+          "name": "Li Tenglong",
+          "pathway_id": "overseas-born",
+          "debut_club": {
+            "zh": "格拉纳达 U19A",
+            "en": "Granada Juvenil A"
+          },
+          "debut_date": "2020-01-25",
+          "debut_age": "18岁364天",
+          "compiler_appearances": "7",
+          "compiler_goals": "0",
+          "compiler_age_label": "25岁",
+          "compiler_status": "退役",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "华侨背景来自途径分组，不是这张表的原字段。",
+            "en": "The overseas-born label comes from the pathway note, not from a column on the sheet."
+          }
+        },
+        {
+          "id": "honor-census-17-wang-jiahao",
+          "order": 17,
+          "local_name": "王佳豪",
+          "name": "Wang Jiahao",
+          "pathway_id": "overseas-born",
+          "debut_club": {
+            "zh": "马德里竞技 U19A",
+            "en": "Atlético Madrid Juvenil A"
+          },
+          "debut_date": "2020-01-25",
+          "debut_age": "18岁134天",
+          "compiler_appearances": "5",
+          "compiler_goals": "0",
+          "compiler_age_label": "25岁",
+          "compiler_status": "中超 上海申花",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "华侨背景来自途径分组，不是这张表的原字段。",
+            "en": "The overseas-born label comes from the pathway note, not from a column on the sheet."
+          }
+        },
+        {
+          "id": "honor-census-18-he-xiaoke",
+          "order": 18,
+          "local_name": "何小珂",
+          "name": "He Xiaoke",
+          "pathway_id": "domestic-pipeline",
+          "featured_record_id": "he-xiaoke-spain-pathway-2021",
+          "debut_club": {
+            "zh": "萨瓦德尔 U19A",
+            "en": "Sabadell Juvenil A"
+          },
+          "debut_date": "2022-03-05",
+          "debut_age": "18岁44天",
+          "compiler_appearances": "37",
+          "compiler_goals": "7",
+          "compiler_age_label": "22岁",
+          "compiler_status": "暂无",
+          "verification_status": "mixed-source",
+          "note": {
+            "zh": "37 场 7 球和本站「约 37 / 约 7」是同一则媒体口径，仍然不是足协技术表。",
+            "en": "37 appearances and 7 goals match this site's «about 37 / about 7». That is still a media count, not a federation sheet."
+          }
+        },
+        {
+          "id": "honor-census-19-yang-xi",
+          "order": 19,
+          "local_name": "杨希",
+          "name": "Alex Xi Yang",
+          "pathway_id": "overseas-born",
+          "player_id": "cn-yang-alex-2005",
+          "debut_club": {
+            "zh": "皇家西班牙人 U19A",
+            "en": "Espanyol Juvenil A"
+          },
+          "debut_date": "2022-05-24",
+          "debut_age": "16岁346天",
+          "compiler_appearances": "41",
+          "compiler_goals": "0",
+          "compiler_age_label": "21岁",
+          "compiler_status": "中超 上海海港",
+          "verification_status": "conflict",
+          "note": {
+            "zh": "表上把多个赛季收成 41 场 0 球，首秀写成 2022-05-24。本站不合并赛季，已核首秀是 2022-03-20，进球未见。",
+            "en": "The sheet collapses seasons into 41 appearances and 0 goals, with a 2022-05-24 debut. This site does not merge the seasons; the checked debut is 2022-03-20, and goals are not recorded."
+          }
+        },
+        {
+          "id": "honor-census-20-lu-yaohui",
+          "order": 20,
+          "local_name": "鲁耀辉",
+          "name": "Lu Yaohui",
+          "pathway_id": "wanda-hope-stars",
+          "debut_club": {
+            "zh": "马贝拉 U19A",
+            "en": "Marbella Juvenil A"
+          },
+          "debut_date": "2022-09-04",
+          "debut_age": "18岁240天",
+          "compiler_appearances": "20",
+          "compiler_goals": "0",
+          "compiler_age_label": "22岁",
+          "compiler_status": "中乙 赣州瑞狮",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "表上的字是「耀」。本站没有这个拼写的球员主档，不和别的「鲁」姓样本合并。",
+            "en": "The sheet uses the character 耀. This site has no player master under that spelling and does not merge him with another Lu."
+          }
+        },
+        {
+          "id": "honor-census-21-han-fenglin",
+          "order": 21,
+          "local_name": "韩丰璘",
+          "name": "Han Fenglin",
+          "pathway_id": "family-funded",
+          "featured_record_id": "han-fenglin-marbella-2022",
+          "debut_club": {
+            "zh": "阿尔科达斯城市 U19A",
+            "en": "Sheet text: 阿尔科达斯城市 U19A"
+          },
+          "debut_date": "2022-10-01",
+          "debut_age": "18岁237天",
+          "compiler_appearances": "8",
+          "compiler_goals": "0",
+          "compiler_age_label": "22岁",
+          "compiler_status": "中乙 赣州瑞狮",
+          "verification_status": "conflict",
+          "note": {
+            "zh": "本站落点是 2022/23 马贝拉青年 A，8 场是截至 2022-11-19 的下沿，进球未见。表上的队名、10 月 1 日首秀和 0 球不覆盖这条落点。",
+            "en": "This site places him at Marbella Juvenil A in 2022/23. Eight appearances is the floor through 2022-11-19, and goals are not recorded. The sheet's club, 1 October debut and 0 goals do not replace that placement."
+          }
+        },
+        {
+          "id": "honor-census-22-chen-ouxiang",
+          "order": 22,
+          "local_name": "陈欧翔",
+          "name": "Chen Ouxiang",
+          "pathway_id": "overseas-born",
+          "debut_club": {
+            "zh": "帕尔马 U19A",
+            "en": "Palma Juvenil A"
+          },
+          "debut_date": "2022-11-27",
+          "debut_age": "17岁270天",
+          "compiler_appearances": "1",
+          "compiler_goals": "0",
+          "compiler_age_label": "21岁",
+          "compiler_status": "西八级",
+          "verification_status": "needs-review",
+          "note": {
+            "zh": "只按编译表登录这一场青年出场。不把后来的成年地区联赛观察并进荣誉联赛。",
+            "en": "Only this youth appearance is entered from the sheet. Later senior regional observations are not folded into the honour league."
+          }
+        },
+        {
+          "id": "honor-census-23-wang-haowen",
+          "order": 23,
+          "local_name": "王皓文",
+          "name": "Wang Haowen",
+          "pathway_id": "family-funded",
+          "featured_record_id": "wang-haowen-badalona-2024",
+          "debut_club": {
+            "zh": "巴达洛纳 U19A",
+            "en": "Badalona Juvenil A"
+          },
+          "debut_date": "2024-08-31",
+          "debut_age": "18岁195天",
+          "compiler_appearances": "13",
+          "compiler_goals": "0",
+          "compiler_age_label": "20岁",
+          "compiler_status": "中乙 山西",
+          "verification_status": "mixed-source",
+          "note": {
+            "zh": "13 场和本站 2024/25 赛季总结一致。进球本站仍是未见，不收成 0。现况「中乙 山西」只保留表面文字。",
+            "en": "13 appearances match this site's 2024/25 season summary. Goals stay unrecorded here and are not closed at 0. The printed Shanxi status stays screenshot text."
+          }
+        },
+        {
+          "id": "honor-census-24-chen-yusheng",
+          "order": 24,
+          "local_name": "陈雨晟",
+          "name": "Chen Yusheng",
+          "pathway_id": "family-funded",
+          "featured_record_id": "chen-yusheng-patacona-2025",
+          "debut_club": {
+            "zh": "帕塔科纳 U19A",
+            "en": "Patacona Juvenil A"
+          },
+          "debut_date": "2025-09-13",
+          "debut_age": "18岁29天",
+          "compiler_appearances": "29",
+          "compiler_goals": "0",
+          "compiler_age_label": "18岁",
+          "compiler_status": "帕塔科纳",
+          "verification_status": "mixed-source",
+          "note": {
+            "zh": "29 场和本站公开口径一致，首秀日与 2007-08-15 出生差 29 天相符。进球本站仍是未见。表上的 18 岁是截图当时的年龄。",
+            "en": "29 appearances match the public count already on this site, and the debut is 29 days after the 2007-08-15 birth date. Goals stay unrecorded. The printed age of 18 is the age on the screenshot."
           }
         }
       ]
