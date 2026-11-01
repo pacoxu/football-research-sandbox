@@ -2722,6 +2722,7 @@ const COUNTRY_LABELS = {
     France: "法国",
     Germany: "德国",
     Indonesia: "印度尼西亚",
+    "IR Iran": "伊朗",
     Israel: "以色列",
     Italy: "意大利",
     Japan: "日本",
