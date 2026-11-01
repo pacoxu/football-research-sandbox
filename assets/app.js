@@ -123,7 +123,7 @@ const UI_COPY = {
     "page.story-detail.title": "故事详情 | 青训球员追踪站",
     "page.story-detail.description": "查看人物和机构故事的时间线、公开争议与来源边界。",
     "page.milestones.title": "2026 里程碑 | 青训球员追踪站",
-    "page.milestones.description": "对照 2026 年中国男足 U23 亚洲杯亚军、U17 进世少赛和亚运会铜牌的历史间隔口径。",
+    "page.milestones.description": "对照 2026 年 U23 亚洲杯亚军、男足 U17 进世少赛、亚运会铜牌和女足 U17 世界杯八强的历史口径。",
     "site.kicker": "青训追踪台",
     "site.brand": "青训球员追踪站",
     "nav.aria": "主导航",
@@ -208,8 +208,8 @@ const UI_COPY = {
     "nav.dataCenter": "数据中心",
     "nav.predictions": "世界杯预测",
     "milestones.hero.eyebrow": "2026 Milestones",
-    "milestones.hero.title": "2026 中国男足里程碑",
-    "milestones.hero.text": "对照 U23 亚洲杯亚军、U17 进世少赛和亚运会铜牌分别隔了多久，以及每条成绩不能写成什么。",
+    "milestones.hero.title": "2026 中国足球里程碑",
+    "milestones.hero.text": "对照 U23 亚洲杯亚军、男足 U17 进世少赛、亚运会铜牌和女足 U17 世界杯八强，以及每条成绩不能写成什么。",
     "milestones.coverage.eyebrow": "Coverage",
     "milestones.coverage.value": "{count} 项已核成绩",
     "milestones.coverage.checked": "核查至 {date}",
@@ -251,7 +251,7 @@ const UI_COPY = {
     "home.quickLinks.tournamentsTitle": "赛事",
     "home.quickLinks.tournamentsText": "查看赛事时间、结果和中国队比赛明细。",
     "home.quickLinks.milestonesTitle": "2026里程碑",
-    "home.quickLinks.milestonesText": "对照三项成绩分别隔了多久，以及不能写成什么。",
+    "home.quickLinks.milestonesText": "对照四项成绩的历史口径，以及不能写成什么。",
     "home.quickLinks.overseasTitle": "留洋",
     "home.quickLinks.overseasText": "区分当前留洋样本与历史记录。",
     "home.quickLinks.spainTitle": "西班牙体系",
@@ -1289,7 +1289,7 @@ const UI_COPY = {
     "page.story-detail.title": "Story Detail | Youth Player Tracking Desk",
     "page.story-detail.description": "Timelines, public exchanges and source boundaries for people and institutions.",
     "page.milestones.title": "2026 Milestones | Youth Player Tracking Desk",
-    "page.milestones.description": "Compare China’s 2026 U23 Asian Cup runners-up, U17 World Cup qualification and Asian Games bronze against their historical intervals.",
+    "page.milestones.description": "Compare China’s 2026 U23 Asian Cup runners-up, men’s U17 World Cup qualification, Asian Games bronze and U17 women’s World Cup quarter-final.",
     "site.kicker": "Youth Tracking Desk",
     "site.brand": "Youth Player Tracking Desk",
     "nav.aria": "Main navigation",
@@ -1374,8 +1374,8 @@ const UI_COPY = {
     "nav.dataCenter": "Data",
     "nav.predictions": "World Cup Forecast",
     "milestones.hero.eyebrow": "2026 Milestones",
-    "milestones.hero.title": "China men’s 2026 milestones",
-    "milestones.hero.text": "Compare the U23 Asian Cup runners-up finish, U17 World Cup qualification and Asian Games bronze, including the interval each one waited and claims to avoid.",
+    "milestones.hero.title": "China's 2026 milestones",
+    "milestones.hero.text": "Compare the U23 Asian Cup runners-up finish, the men's U17 World Cup qualification, the Asian Games bronze and the U17 women's World Cup quarter-final, including what not to claim.",
     "milestones.coverage.eyebrow": "Coverage",
     "milestones.coverage.value": "{count} verified results",
     "milestones.coverage.checked": "Checked {date}",
@@ -1417,7 +1417,7 @@ const UI_COPY = {
     "home.quickLinks.tournamentsTitle": "Tournaments",
     "home.quickLinks.tournamentsText": "Check tournament dates, results, and China match detail.",
     "home.quickLinks.milestonesTitle": "2026 milestones",
-    "home.quickLinks.milestonesText": "See how long each of the three results waited, and what not to claim.",
+    "home.quickLinks.milestonesText": "See the historical frame for each of the four results, and what not to claim.",
     "home.quickLinks.overseasTitle": "Overseas",
     "home.quickLinks.overseasText": "Separate current overseas samples from historical records.",
     "home.quickLinks.spainTitle": "Spain system",
@@ -8344,7 +8344,7 @@ function renderMilestonesPage() {
             ${(item.sources ?? []).map((source) => `
               <a class="chip" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.label)}</a>
             `).join("")}
-            <a class="inline-link" href="./tournament.html?id=${encodeURIComponent(tournamentId)}">${escapeHtml(t("milestones.card.viewTournament"))}</a>
+            <a class="inline-link" href="${escapeHtml(item.page_href || `./tournament.html?id=${encodeURIComponent(tournamentId)}`)}">${escapeHtml(item.page_label ? localizeText(item.page_label) : t("milestones.card.viewTournament"))}</a>
           </div>
         </div>
       </article>

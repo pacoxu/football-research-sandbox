@@ -52741,26 +52741,26 @@
     ]
   },
   "china_2026_milestones": {
-    "id": "china-men-2026-milestones",
+    "id": "china-2026-milestones",
     "year": 2026,
-    "checked_at": "2026-10-03",
+    "checked_at": "2026-11-01",
     "title": {
-      "zh": "2026 中国男足里程碑",
-      "en": "China men's 2026 milestones"
+      "zh": "2026 中国足球里程碑",
+      "en": "China's 2026 milestones"
     },
     "lede": {
-      "zh": "2026 年中国男足国字号连续兑现三项可核成绩。三项不能混成同一种“最佳”，间隔对照点也不相同。",
-      "en": "China's men's national-youth sides posted three verifiable results in 2026. They are not the same kind of “best finish”, and each interval uses a different comparison point."
+      "zh": "2026 年中国国字号记下四项可核成绩。四项不能混成同一种“最佳”，间隔对照点也不相同。",
+      "en": "China's national teams posted four verifiable results in 2026. They are not the same kind of “best finish”, and each comparison point is different."
     },
     "scope_note": {
-      "zh": "口语里常把 U17 世界杯叫成“世青赛”。站内仍区分：世少赛是 FIFA U-17 世界杯，2026 已获资格；世青赛是 FIFA U-20 世界杯，中国男足最近一次仍是 2005 荷兰。",
-      "en": "Chinese media often call the U17 World Cup “the youth World Cup”. This site keeps the split: the U17 World Cup is the 2026 qualification; the U20 World Cup last included China in 2005."
+      "zh": "口语里常把 U17 世界杯叫成“世青赛”。站内仍区分：世少赛是 FIFA U-17 世界杯，男足 2026 已获资格；世青赛是 FIFA U-20 世界杯，中国男足最近一次仍是 2005 荷兰。女足 U17 世界杯是另一项赛事：2026-10-29 点球淘汰法国后进入八强，是已建档决赛圈的首次八强。八强对巴西还没有赛果，不能写成最终名次。",
+      "en": "Chinese media often call the U17 World Cup “the youth World Cup”. This site keeps the split: the men's U17 World Cup is the 2026 qualification; the U20 World Cup last included China in 2005. The U-17 Women's World Cup is a separate competition. Reaching the quarter-final on 29 October 2026 is the first such finish in the archived finals editions. The quarter-final against Brazil has no result, so this entry does not store a final placing."
     },
     "poster": {
-      "src": "./assets/xiaohongshu-china-football-2026.jpg",
+      "src": "./assets/xiaohongshu-china-football-2026.jpg?v=20261101",
       "alt": {
-        "zh": "2026 中国足球三项成绩的历史间隔图：U23 创办最佳、U17 时隔 21 年、亚运时隔 28 年",
-        "en": "Graphic of China’s three 2026 results and their historical intervals"
+        "zh": "2026 中国足球四项成绩图：U23 创办最佳、男足 U17 时隔 21 年、亚运时隔 28 年、女足 U17 队史首次八强",
+        "en": "Graphic of China’s four 2026 results: U23 competition best, men’s U17 return after 21 years, Asian Games medal after 28 years, and the U17 women’s first World Cup quarter-final"
       }
     },
     "items": [
@@ -52821,8 +52821,8 @@
           "en": "Back at the U17 World Cup after 21 years"
         },
         "title": {
-          "zh": "U17 亚洲杯进世少赛",
-          "en": "U17 Asian Cup path to the World Cup"
+          "zh": "男足 U17 亚洲杯进世少赛",
+          "en": "Men's U17 Asian Cup path to the World Cup"
         },
         "summary": {
           "zh": "小组出线即锁定 2026 FIFA U-17 世界杯资格，决赛 2 比 3 负日本获亚军。亚洲决赛是 2004 年夺冠后近 22 年最佳，低于 1992、2004 两座冠军。世少赛距 2005 秘鲁时隔 21 年，为队史第 7 次资格，不是第 6 次。",
@@ -52879,6 +52879,50 @@
           {
             "label": "Olympics.com results tracker",
             "url": "https://www.olympics.com/zh/news/2026-aichi-nagoya-asian-games-chinese-mens-football-team-results-tracker"
+          }
+        ]
+      },
+      {
+        "id": "u17-women-world-cup-quarterfinal",
+        "competition_id": "fifa-u17-womens-world-cup-2026",
+        "page_href": "./women.html",
+        "page_label": {
+          "zh": "查看女足专题",
+          "en": "Open the women's topic"
+        },
+        "date": "2026-10-29",
+        "result": {
+          "zh": "八强",
+          "en": "Quarter-final"
+        },
+        "metric": {
+          "zh": "队史首次",
+          "en": "First time"
+        },
+        "interval": {
+          "zh": "首次打进 U17 女足世界杯八强",
+          "en": "First U-17 Women's World Cup quarter-final"
+        },
+        "title": {
+          "zh": "女足 U17 世界杯八强",
+          "en": "U17 women reach the World Cup quarter-finals"
+        },
+        "summary": {
+          "zh": "十六强常规时间 0 比 0，点球 4 比 3 淘汰法国，从而进入八强。中国足协和新华社都写成该项赛事队史首次八强。此前已完赛届次的最好成绩是 2025 年十六强。已建档决赛圈参赛是 2012、2014、2022、2025、2026 共 5 次。2026 仍在进行，八强对巴西还没有赛果，这条不记最终名次。",
+          "en": "The round of 16 finished 0-0, then China PR won 4-3 on penalties against France and reached the quarter-finals. The CFA and Xinhua both call it the first quarter-final in this competition. The best finish in a completed edition was the 2025 round of 16. Archived finals appearances are 2012, 2014, 2022, 2025 and 2026, five in total. The 2026 tournament is still in progress, and the quarter-final against Brazil has no result, so this entry does not store a final placing."
+        },
+        "do_not_write": {
+          "zh": "不能写成中国女足世界杯队史最佳，成年女足 1999 世界杯亚军仍更高。不能写成第 6 次参赛，也不能把尚未开打的对巴西写成已经晋级四强。",
+          "en": "Not the best finish in China's women's World Cup history; the senior team's 1999 runners-up remain higher. Not a sixth finals appearance, and not a semi-final berth before the Brazil match is played."
+        },
+        "sources": [
+          {
+            "label": "CFA: first U17 women's World Cup quarter-final",
+            "url": "https://www.thecfa.cn/nvu17news/20261030/38343.html"
+          },
+          {
+            "label": "Xinhua: penalties against France",
+            "url": "https://www.xinhuanet.com/20261030/8a983e0caf1a4c14b86c011fc281c407/c.html"
           }
         ]
       }

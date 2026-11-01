@@ -4,6 +4,16 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-11-01
+
+### Added
+
+- Added China U17 women's first FIFA U-17 Women's World Cup quarter-final to the 2026 milestones page. The 29 October penalty win over France is the archived first quarter-final; the quarter-final against Brazil stays unplayed.
+
+### Data Scope Notes
+
+- The milestone is not a senior women's World Cup peak. The 1999 runners-up remain higher, and the five archived finals appearances are 2012, 2014, 2022, 2025 and 2026.
+
 ## 2026-10-30
 
 ### Added
