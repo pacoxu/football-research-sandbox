@@ -17,6 +17,30 @@ test("closes FIFA World Cup 2026 with FIFA champion data and sourced Asian exits
   assert.equal(tournament.source_checked_at, "2026-10-03");
   assert.match(tournament.china_summary, /西班牙/);
 
+  const qualifiedTeams = tournament.qualified_teams;
+  assert.equal(qualifiedTeams.status, "complete");
+  assert.equal(qualifiedTeams.expected_count, 48);
+  assert.equal(qualifiedTeams.teams.length, 48);
+  assert.deepEqual(
+    Object.fromEntries(
+      Object.entries(Object.groupBy(qualifiedTeams.teams, ({ confederation }) => confederation))
+        .map(([confederation, teams]) => [confederation, teams.length])
+    ),
+    { AFC: 9, CAF: 10, CONCACAF: 6, CONMEBOL: 6, OFC: 1, UEFA: 16 }
+  );
+  assert.equal(new Set(qualifiedTeams.teams.map(({ team }) => team)).size, 48);
+  assert.ok(qualifiedTeams.teams.every(({ entry_status, qualified_at, source_checked_at }) =>
+    entry_status === "qualified" && qualified_at === null && source_checked_at === "2026-07-20"
+  ));
+  for (const host of ["Canada", "Mexico", "United States"]) {
+    const entry = qualifiedTeams.teams.find(({ team }) => team === host);
+    assert.equal(entry.entry_status, "qualified");
+    assert.equal(entry.hosting_role, "tournament-host");
+  }
+  assert.equal(tournament.qualification_snapshot.qualified_count, 48);
+  assert.equal(tournament.qualification_snapshot.remaining_slots, 0);
+  assert.ok(tournament.source_version.some((source) => source.fields.includes("qualified_teams")));
+
   const japan = tournament.asian_finals_outcomes.find((entry) => entry.team === "Japan");
   assert.deepEqual(
     [japan.stage, japan.score_for, japan.score_against, japan.opponent, japan.date],
