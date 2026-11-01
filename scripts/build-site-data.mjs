@@ -58,7 +58,9 @@ export async function buildSiteData({ outputDirectory = paths.site } = {}) {
     asian_coaches: dataset.asianCoaches,
     youth_development_systems: dataset.youthDevelopmentSystems,
     spain_football_system: dataset.spainFootballSystem,
-    club_name_overrides: dataset.clubNameOverrides
+    women_football: dataset.womenFootball,
+    club_name_overrides: dataset.clubNameOverrides,
+    tournament_name_overrides: dataset.tournamentNameOverrides
   };
   const schemaManifest = JSON.parse(
     await fs.readFile(path.join(paths.root, "data/schema/manifest.json"), "utf8")

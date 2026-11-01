@@ -182,3 +182,30 @@ test("makes CFA native names and Asian Games staff searchable", async () => {
   assert.equal(archived.champion, null);
   assert.equal(archived.runner_up, null);
 });
+
+test("shows reviewed Chinese names and the Asian Games Chinese title", async () => {
+  const [overrides, nameMap] = await Promise.all([
+    readJson("data/raw/player-name-overrides.json"),
+    readJson("data/raw/tournament-name-overrides.json")
+  ]);
+
+  assert.equal(overrides["cn-yao-haoyang-2006"].zh, "姚浩洋");
+  assert.equal(overrides["cn-he-yiran-2005"].zh, "贺一然");
+  assert.equal(overrides["cn-li-zhenquan-2003"].zh, "李镇全");
+  assert.equal(overrides["cn-yimulan-maimaiti-2005"].zh, "依木兰·买买提");
+  assert.equal(overrides["cn-shi-songchen-2005"].zh, "史松宸");
+  assert.equal(nameMap[competitionId].zh, "第二十届亚运会（男足）");
+  assert.equal(nameMap[competitionId].short_zh, "亚运会男足 2026");
+});
+
+test("covers Chinese titles for every tracked and archived tournament", async () => {
+  const [nameMap, tournaments, archive] = await Promise.all([
+    readJson("data/raw/tournament-name-overrides.json"),
+    readJson("data/raw/tournaments.json"),
+    readJson("data/raw/tournament-archive.json")
+  ]);
+  const ids = new Set([...tournaments.map((entry) => entry.id), ...archive.map((entry) => entry.id)]);
+  for (const id of ids) {
+    assert.match(String(nameMap[id]?.zh ?? ""), /[\u3400-\u9fff]/u, id);
+  }
+});

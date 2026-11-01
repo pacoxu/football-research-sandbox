@@ -76,7 +76,8 @@ const state = {
     coachStatus: "all"
   },
   forecastYear: 2030,
-  forecastShowAll: false
+  forecastShowAll: false,
+  womenBucketFilter: "all"
 };
 
 const UI_COPY = {
@@ -99,6 +100,8 @@ const UI_COPY = {
     "page.pathways.description": "比较中国、日本、韩国、挪威、丹麦和瑞典的足协治理、学校足球、俱乐部学院、人才识别与职业桥梁。",
     "page.spain-system.title": "西班牙联赛与青训体系 | 青训球员追踪站",
     "page.spain-system.description": "对照西班牙职业联赛、U19/U16 青年联赛，以及本站已建档中国球员在这些层级中的落点。",
+    "page.women.title": "女足专题 | 青训球员追踪站",
+    "page.women.description": "查看 U17 女足世界杯届次、中国队路径，以及旅欧女足球员和女子五大联赛样本。",
     "page.big-five.title": "五大联赛中日韩一线队 | 青训球员追踪站",
     "page.big-five.description": "按英超、西甲、意甲、德甲、法甲切换，对照中日韩一线队球员的核心、主力、轮换、替补和边缘。",
     "page.coaches.title": "青训教练 | 青训球员追踪站",
@@ -130,6 +133,70 @@ const UI_COPY = {
     "nav.tournaments": "赛事",
     "nav.milestones": "2026里程碑",
     "nav.overseas": "留洋",
+    "nav.women": "女足",
+    "women.hero.eyebrow": "Women's Football",
+    "women.hero.title": "女足专题",
+    "women.hero.text": "对照 U17 女足世界杯、中国队决赛圈路径，以及旅欧球员在女子五大联赛和其他联赛中的阶段。进行中的比赛不预写赛果。",
+    "women.hero.players": "查看旅欧样本",
+    "women.hero.leagues": "查看女子五大联赛",
+    "women.meta.eyebrow": "样本",
+    "women.meta.coverage": "{editions} 届档案 · {players} 名球员 · {stages} 段海外阶段",
+    "women.meta.checked": "核查于 {date}",
+    "women.editions.eyebrow": "U-17 Women's World Cup",
+    "women.editions.title": "U17 女足世界杯",
+    "women.editions.year": "年份",
+    "women.editions.host": "主办",
+    "women.editions.status": "状态",
+    "women.editions.final": "决赛",
+    "women.editions.china": "中国队",
+    "women.matches.eyebrow": "Morocco 2026",
+    "women.matches.title": "2026 中国队已赛与待赛",
+    "women.matches.date": "日期",
+    "women.matches.stage": "阶段",
+    "women.matches.opponent": "对手",
+    "women.matches.score": "比分",
+    "women.matches.scorers": "进球",
+    "women.matches.groupLine": "E 组第 {rank}，{played} 场 {won} 胜，进 {goalsFor} 球失 {goalsAgainst} 球，{points} 分。",
+    "women.matches.unplayed": "未赛",
+    "women.leagues.eyebrow": "Leagues",
+    "women.leagues.title": "女子五大联赛与相邻联赛",
+    "women.leagues.bigFive": "女子五大联赛",
+    "women.leagues.other": "相邻联赛",
+    "women.players.eyebrow": "Europe",
+    "women.players.title": "旅欧与海外阶段",
+    "women.players.filter": "层级",
+    "women.players.filterAll": "全部阶段",
+    "women.players.meta": "当前显示 {count} 段",
+    "women.players.player": "球员",
+    "women.players.league": "联赛",
+    "women.players.club": "俱乐部",
+    "women.players.season": "赛季",
+    "women.players.status": "口径",
+    "women.players.note": "说明",
+    "women.players.clubOpen": "俱乐部待核",
+    "women.sources.eyebrow": "Sources",
+    "women.sources.title": "来源与核查时间",
+    "women.status.completed": "已完赛",
+    "women.status.cancelled": "取消",
+    "women.status.in-progress": "进行中",
+    "women.china.not-in-finals": "未进决赛圈",
+    "women.china.group-stage": "小组赛",
+    "women.china.round-of-16": "十六强",
+    "women.china.quarter-final-scheduled": "八强待赛",
+    "women.china.not-applicable": "不适用",
+    "women.stage.group": "小组赛",
+    "women.stage.round-of-16": "十六强",
+    "women.stage.quarter-final": "八强",
+    "women.bucket.big-five": "女子五大联赛",
+    "women.bucket.europe-other": "欧洲其他",
+    "women.bucket.americas": "美洲",
+    "women.bucket.oceania": "大洋洲",
+    "women.appearance.appeared": "有出场报道",
+    "women.appearance.registration-reported": "加盟已报道",
+    "women.verify.verified": "官方",
+    "women.verify.mixed-source": "交叉来源",
+    "women.verify.provisional": "暂定",
+    "women.verify.needs-review": "待核",
     "nav.pathways": "青训体系",
     "nav.coaches": "青训教练",
     "nav.stories": "故事",
@@ -1189,6 +1256,8 @@ const UI_COPY = {
     "page.pathways.description": "Compare association governance, school football, club academies, talent identification and professional bridges across China, Japan, South Korea, Norway, Denmark and Sweden.",
     "page.spain-system.title": "Spain leagues and youth system | Youth Player Tracking Desk",
     "page.spain-system.description": "Compare Spain’s senior pyramid, U19/U16 youth leagues, and documented Chinese player placements.",
+    "page.women.title": "Women's football | Youth Player Tracking Desk",
+    "page.women.description": "U-17 Women's World Cup editions, China PR's path, and Chinese players in Europe and the women's big five.",
     "page.big-five.title": "Big Five CJK first teams | Youth Player Tracking Desk",
     "page.big-five.description": "Switch across the Premier League, La Liga, Serie A, the Bundesliga and Ligue 1 to compare Chinese, Japanese and Korean first-team roles.",
     "page.coaches.title": "Youth Coaches | Youth Player Tracking Desk",
@@ -1220,6 +1289,70 @@ const UI_COPY = {
     "nav.tournaments": "Tournaments",
     "nav.milestones": "2026 milestones",
     "nav.overseas": "Overseas",
+    "nav.women": "Women",
+    "women.hero.eyebrow": "Women's Football",
+    "women.hero.title": "Women's football",
+    "women.hero.text": "Compare U-17 Women's World Cup editions, China PR's finals path, and European spells across the women's big five and neighbouring leagues. In-progress matches stay without a result.",
+    "women.hero.players": "View overseas spells",
+    "women.hero.leagues": "View the women's big five",
+    "women.meta.eyebrow": "Sample",
+    "women.meta.coverage": "{editions} editions · {players} players · {stages} spells",
+    "women.meta.checked": "Checked {date}",
+    "women.editions.eyebrow": "U-17 Women's World Cup",
+    "women.editions.title": "U-17 Women's World Cup",
+    "women.editions.year": "Year",
+    "women.editions.host": "Host",
+    "women.editions.status": "Status",
+    "women.editions.final": "Final",
+    "women.editions.china": "China PR",
+    "women.matches.eyebrow": "Morocco 2026",
+    "women.matches.title": "China PR in 2026: played and scheduled",
+    "women.matches.date": "Date",
+    "women.matches.stage": "Stage",
+    "women.matches.opponent": "Opponent",
+    "women.matches.score": "Score",
+    "women.matches.scorers": "Scorers",
+    "women.matches.groupLine": "Group E, rank {rank}: {played} played, {won} wins, {goalsFor} scored, {goalsAgainst} conceded, {points} points.",
+    "women.matches.unplayed": "Not played",
+    "women.leagues.eyebrow": "Leagues",
+    "women.leagues.title": "Women's big five and neighbouring leagues",
+    "women.leagues.bigFive": "Women's big five",
+    "women.leagues.other": "Neighbouring leagues",
+    "women.players.eyebrow": "Europe",
+    "women.players.title": "European and overseas spells",
+    "women.players.filter": "Tier",
+    "women.players.filterAll": "All spells",
+    "women.players.meta": "Showing {count} spells",
+    "women.players.player": "Player",
+    "women.players.league": "League",
+    "women.players.club": "Club",
+    "women.players.season": "Season",
+    "women.players.status": "Status",
+    "women.players.note": "Note",
+    "women.players.clubOpen": "Club unchecked",
+    "women.sources.eyebrow": "Sources",
+    "women.sources.title": "Sources and check date",
+    "women.status.completed": "Completed",
+    "women.status.cancelled": "Cancelled",
+    "women.status.in-progress": "In progress",
+    "women.china.not-in-finals": "Finals not reached",
+    "women.china.group-stage": "Group stage",
+    "women.china.round-of-16": "Round of 16",
+    "women.china.quarter-final-scheduled": "Quarter-final scheduled",
+    "women.china.not-applicable": "Not applicable",
+    "women.stage.group": "Group",
+    "women.stage.round-of-16": "Round of 16",
+    "women.stage.quarter-final": "Quarter-final",
+    "women.bucket.big-five": "Women's big five",
+    "women.bucket.europe-other": "Other Europe",
+    "women.bucket.americas": "Americas",
+    "women.bucket.oceania": "Oceania",
+    "women.appearance.appeared": "Appearance reported",
+    "women.appearance.registration-reported": "Signing reported",
+    "women.verify.verified": "Official",
+    "women.verify.mixed-source": "Cross-checked",
+    "women.verify.provisional": "Provisional",
+    "women.verify.needs-review": "Needs review",
     "nav.pathways": "Youth Systems",
     "nav.coaches": "Coaches",
     "nav.stories": "Stories",
@@ -2558,6 +2691,7 @@ const PAGE_METADATA = {
   overseas: { title: "page.overseas.title", description: "page.overseas.description" },
   pathways: { title: "page.pathways.title", description: "page.pathways.description" },
   "spain-system": { title: "page.spain-system.title", description: "page.spain-system.description" },
+  women: { title: "page.women.title", description: "page.women.description" },
   "big-five": { title: "page.big-five.title", description: "page.big-five.description" },
   coaches: { title: "page.coaches.title", description: "page.coaches.description" },
   stories: { title: "page.stories.title", description: "page.stories.description" },
@@ -3113,6 +3247,12 @@ async function boot() {
       return;
     }
 
+    if (page === "women") {
+      initializeWomenPage();
+      renderWomenPage();
+      return;
+    }
+
     if (page === "big-five") {
       initializeBigFivePage();
       renderBigFivePage();
@@ -3200,7 +3340,8 @@ function setActiveNavigation() {
       (page === "tournament-detail" && link.dataset.nav === "tournaments") ||
       (page === "youth-league" && link.dataset.nav === "tournaments") ||
       (page === "spain-system" && link.dataset.nav === "pathways") ||
-      (page === "big-five" && link.dataset.nav === "overseas")
+      (page === "big-five" && link.dataset.nav === "overseas") ||
+      (page === "women" && link.dataset.nav === "women")
     ) {
       link.classList.add("is-active");
     }
@@ -4780,20 +4921,35 @@ function getPlayersByTag(tag) {
   return state.enrichedPlayers.filter((player) => (player.focus_tags ?? []).includes(tag));
 }
 
-function getTournamentDisplayName(id) {
+function getTournamentNameOverrides() {
+  return state.overview?.tournament_name_overrides ?? {};
+}
+
+function getTournamentDisplayName(id, { short = false } = {}) {
+  const override = getTournamentNameOverrides()[id];
   const archive = getArchiveTournamentById(id);
-  if (archive) {
-    return archive.competition_name;
+  const focus = getFocusTournamentById(id);
+  const english = archive?.competition_name ?? focus?.name ?? id;
+
+  if (state.language === "en") {
+    if (short) {
+      return focus?.short_name ?? english;
+    }
+    return english;
   }
 
-  return getFocusTournamentById(id)?.name ?? id;
+  if (short && override?.short_zh) {
+    return override.short_zh;
+  }
+
+  return override?.zh ?? english;
 }
 
 function getTournamentResultSummary(tournament) {
   if (tournament.status === "completed") {
     return t("tournaments.archive.completedResult", {
-      champion: tournament.champion || "-",
-      runnerUp: tournament.runner_up || "-"
+      champion: formatClubName(tournament.champion || "-"),
+      runnerUp: formatClubName(tournament.runner_up || "-")
     });
   }
   if (tournament.status === "cancelled") {
@@ -5832,7 +5988,7 @@ function renderHomeFocusEvent(tournament) {
 
   return `
     <p class="eyebrow">${escapeHtml(t("home.nextEvent.eyebrow"))}</p>
-    <h2>${escapeHtml(tournament.competition_name)}</h2>
+    <h2>${escapeHtml(getTournamentDisplayName(tournament.id))}</h2>
     <p class="hero-side-note">${escapeHtml(formatRange(tournament.date_range))}</p>
     <div class="chip-row">
       <span class="chip">${formatLevelTag(tournament.level)}</span>
@@ -6035,7 +6191,7 @@ function renderRecentMatchCard(item) {
         <span class="chip">${formatLevelTag(item.level)}</span>
         <span class="chip">${escapeHtml(getLabel(MATCH_RESULT_LABELS, item.result, item.result))}</span>
       </div>
-      <h3><a class="inline-link" href="${buildTournamentDetailUrl(item.tournamentId)}">${escapeHtml(item.tournament)}</a></h3>
+      <h3><a class="inline-link" href="${buildTournamentDetailUrl(item.tournamentId)}">${escapeHtml(getTournamentDisplayName(item.tournamentId))}</a></h3>
       <p class="match-row-score">${escapeHtml(`${getChinaTeamLabel(item.level)} ${item.score} ${formatCountryName(item.opponent)}`)}</p>
       <p class="small-note">${escapeHtml(formatDate(item.date))}</p>
     </article>
@@ -6047,10 +6203,10 @@ function renderFocusTournamentCard(tournament) {
   return `
     <article class="story-card">
       <div class="chip-row">
-        <span class="chip">${escapeHtml(tournament.short_name)}</span>
+        <span class="chip">${escapeHtml(getTournamentDisplayName(tournament.id, { short: true }))}</span>
         <span class="chip">${formatStatus(tournament.status)}</span>
       </div>
-      <h3>${escapeHtml(tournament.name)}</h3>
+      <h3>${escapeHtml(getTournamentDisplayName(tournament.id))}</h3>
       <p>${escapeHtml(t("home.focus.status", { value: formatStatus(tournament.status) }))}</p>
       <p>${escapeHtml(t("home.focus.period", { value: formatRange(tournament.date_range) }))}</p>
       <p>${escapeHtml(t("home.focus.scope", { value: localizeText(tournament.headline) }))}</p>
@@ -7121,8 +7277,8 @@ function renderPlayerDetailPage() {
               <article class="stack-card">
                 <h3>${
                   item.tournamentId && hasArchiveTournament(item.tournamentId)
-                    ? `<a class="inline-link" href="${buildTournamentDetailUrl(item.tournamentId)}">${escapeHtml(item.tournament)}</a>`
-                    : escapeHtml(item.tournament)
+                    ? `<a class="inline-link" href="${buildTournamentDetailUrl(item.tournamentId)}">${escapeHtml(getTournamentDisplayName(item.tournamentId))}</a>`
+                    : escapeHtml(getTournamentDisplayName(item.tournamentId) || item.tournament)
                 }</h3>
                 <p>${escapeHtml(t("home.recent.matchLabel", { stage: localizeText(item.stage), date: formatDate(item.date), opponent: formatCountryName(item.opponent), score: item.score }))}</p>
                 <p class="small-note">${formatContributionType(item.type)} · ${renderPlayerReference(item)}${item.minute ? ` ${escapeHtml(item.minute)}'` : ""} · ${formatContributionRole(item.role)}</p>
@@ -7440,7 +7596,7 @@ function renderTournamentDetailPage() {
     return;
   }
 
-  const displayName = archiveTournament?.competition_name ?? focusTournament?.name ?? t("common.pending");
+  const displayName = getTournamentDisplayName(archiveTournament?.id ?? focusTournament?.id) || t("common.pending");
   const displayRange = archiveTournament?.date_range ?? focusTournament?.date_range ?? null;
   const displayStatus = archiveTournament?.status ?? focusTournament?.status ?? "";
   const resultSummary = archiveTournament
@@ -8770,7 +8926,7 @@ function getFilteredTournaments() {
     })
     .sort((left, right) =>
       Number(right.edition_label ?? 0) - Number(left.edition_label ?? 0) ||
-      left.competition_name.localeCompare(right.competition_name)
+      getTournamentDisplayName(left.id).localeCompare(getTournamentDisplayName(right.id), getSortLocale())
     );
 }
 
@@ -8846,7 +9002,7 @@ function renderArchiveTournamentCard(tournament) {
       <div class="section-head compact-head">
         <div>
           <p class="eyebrow">${escapeHtml(tournament.confederation)}</p>
-          <h3><a class="inline-link" href="${buildTournamentDetailUrl(tournament.id)}">${escapeHtml(tournament.competition_name)}</a></h3>
+          <h3><a class="inline-link" href="${buildTournamentDetailUrl(tournament.id)}">${escapeHtml(getTournamentDisplayName(tournament.id))}</a></h3>
         </div>
         <div class="chip-row">
           <span class="chip">${formatLevelTag(tournament.level)}</span>
@@ -10937,6 +11093,196 @@ function renderSpainSystemPage() {
     empty.textContent = t("spain.players.empty");
   }
   const sources = document.querySelector("#spainSources");
+  if (sources) {
+    sources.innerHTML = (payload.source_links ?? [])
+      .map(
+        (source) => `
+          <article class="stack-card">
+            <h3>${escapeHtml(source.label)}</h3>
+            <p class="small-note">${escapeHtml(t("pathways.sourceChecked", { date: formatDate(source.checked_at) }))}</p>
+            <a class="inline-link" href="${escapeHtml(source.url)}" target="_blank" rel="noreferrer">${escapeHtml(source.url)}</a>
+          </article>
+        `
+      )
+      .join("");
+  }
+}
+
+function getWomenFootballPayload() {
+  return (
+    state.overview?.women_football ?? {
+      checked_at: null,
+      summary: { zh: "", en: "" },
+      scope_note: { zh: "", en: "" },
+      u17_world_cup: { editions: [], china_2026: { matches: [] } },
+      big_five_leagues: [],
+      other_leagues: [],
+      players: [],
+      source_links: []
+    }
+  );
+}
+
+function womenLeagueMap(payload) {
+  return new Map(
+    [...(payload.big_five_leagues ?? []), ...(payload.other_leagues ?? [])].map((league) => [league.id, league])
+  );
+}
+
+function womenStageRows(payload) {
+  return (payload.players ?? []).flatMap((player) =>
+    (player.stages ?? []).map((stage) => ({ ...stage, player }))
+  );
+}
+
+function initializeWomenPage() {
+  const params = new URLSearchParams(window.location.search);
+  const requested = params.get("bucket");
+  const allowed = ["all", "big-five", "europe-other", "americas", "oceania"];
+  if (allowed.includes(requested)) state.womenBucketFilter = requested;
+  const filters = document.querySelector("#womenPlayerFilters");
+  if (filters && !filters.dataset.bound) {
+    filters.dataset.bound = "true";
+    filters.addEventListener("change", (event) => {
+      if (event.target.id !== "womenBucketFilter") return;
+      state.womenBucketFilter = event.target.value;
+      replaceQueryParams({ bucket: state.womenBucketFilter === "all" ? null : state.womenBucketFilter });
+      renderWomenPage();
+    });
+  }
+}
+
+function renderWomenPage() {
+  const payload = getWomenFootballPayload();
+  const leagues = womenLeagueMap(payload);
+  const rows = womenStageRows(payload);
+  const editions = payload.u17_world_cup?.editions ?? [];
+  const hero = document.querySelector("#womenHeroStats");
+  if (hero) {
+    hero.innerHTML = `
+      <p class="eyebrow">${escapeHtml(t("women.meta.eyebrow"))}</p>
+      <h2>${escapeHtml(t("women.meta.coverage", {
+        editions: editions.length,
+        players: (payload.players ?? []).length,
+        stages: rows.length
+      }))}</h2>
+      <p class="hero-side-note">${escapeHtml(t("women.meta.checked", { date: formatDate(payload.checked_at) }))}</p>
+      <p class="hero-side-note">${escapeHtml(localizeText(payload.scope_note))}</p>
+    `;
+  }
+
+  const editionNote = document.querySelector("#womenEditionNote");
+  if (editionNote) editionNote.textContent = localizeText(payload.u17_world_cup?.summary);
+  const editionBody = document.querySelector("#womenEditionBody");
+  if (editionBody) {
+    editionBody.innerHTML = editions
+      .map((edition) => {
+        const finalCell = edition.status === "completed"
+          ? `${edition.champion} ${edition.final_score} ${edition.runner_up}`
+          : t(`women.status.${edition.status}`);
+        return `<tr>
+          <td>${escapeHtml(String(edition.year))}</td>
+          <td>${escapeHtml(edition.host)}</td>
+          <td>${escapeHtml(t(`women.status.${edition.status}`))}</td>
+          <td>${escapeHtml(finalCell)}</td>
+          <td>${escapeHtml(t(`women.china.${edition.china_stage}`))} · ${escapeHtml(localizeText(edition.china_summary))}</td>
+        </tr>`;
+      })
+      .join("");
+  }
+
+  const china = payload.u17_world_cup?.china_2026;
+  const matchNote = document.querySelector("#womenMatchNote");
+  if (matchNote && china) {
+    matchNote.textContent = `${t("women.matches.groupLine", {
+      rank: china.rank,
+      played: china.played,
+      won: china.won,
+      goalsFor: china.goals_for,
+      goalsAgainst: china.goals_against,
+      points: china.points
+    })} ${localizeText(china.note)}`;
+  }
+  const matchBody = document.querySelector("#womenMatchBody");
+  if (matchBody) {
+    matchBody.innerHTML = (china?.matches ?? [])
+      .map((match) => `<tr>
+        <td>${escapeHtml(formatDate(match.date))}</td>
+        <td>${escapeHtml(t(`women.stage.${match.stage}`))}</td>
+        <td>${escapeHtml(match.opponent)}</td>
+        <td>${escapeHtml(match.played ? match.scoreline : t("women.matches.unplayed"))}</td>
+        <td>${escapeHtml(localizeText(match.scorers))}</td>
+      </tr>`)
+      .join("");
+  }
+
+  const leagueGrid = document.querySelector("#womenLeagueGrid");
+  if (leagueGrid) {
+    const cards = (list, chip) =>
+      (list ?? [])
+        .map(
+          (league) => `
+            <article class="system-card" id="${escapeHtml(league.id)}">
+              <div class="chip-row"><span class="chip">${escapeHtml(chip)}</span></div>
+              <h3>${escapeHtml(localizeText(league.name))}</h3>
+              <p>${escapeHtml(localizeText(league.stable_structure))}</p>
+            </article>
+          `
+        )
+        .join("");
+    leagueGrid.innerHTML = `${cards(payload.big_five_leagues, t("women.leagues.bigFive"))}${cards(payload.other_leagues, t("women.leagues.other"))}`;
+  }
+
+  const filters = document.querySelector("#womenPlayerFilters");
+  if (filters) {
+    filters.innerHTML = `
+      <label class="filter-item">
+        <span>${escapeHtml(t("women.players.filter"))}</span>
+        <select id="womenBucketFilter">
+          <option value="all">${escapeHtml(t("women.players.filterAll"))}</option>
+          ${["big-five", "europe-other", "americas", "oceania"]
+            .map((bucket) => `<option value="${bucket}">${escapeHtml(t(`women.bucket.${bucket}`))}</option>`)
+            .join("")}
+        </select>
+      </label>
+    `;
+  }
+  const select = document.querySelector("#womenBucketFilter");
+  if (select) select.value = state.womenBucketFilter;
+  const filtered = rows.filter((row) => state.womenBucketFilter === "all" || row.bucket === state.womenBucketFilter);
+  const meta = document.querySelector("#womenPlayerMeta");
+  if (meta) meta.textContent = t("women.players.meta", { count: filtered.length });
+  const head = document.querySelector("#womenPlayerHead");
+  const body = document.querySelector("#womenPlayerBody");
+  if (head) {
+    head.innerHTML = `<tr>
+      <th>${escapeHtml(t("women.players.player"))}</th>
+      <th>${escapeHtml(t("women.players.league"))}</th>
+      <th>${escapeHtml(t("women.players.club"))}</th>
+      <th>${escapeHtml(t("women.players.season"))}</th>
+      <th>${escapeHtml(t("women.players.status"))}</th>
+      <th>${escapeHtml(t("women.players.note"))}</th>
+    </tr>`;
+  }
+  if (body) {
+    body.innerHTML = filtered
+      .map((row) => {
+        const league = leagues.get(row.league_id);
+        const name = state.language === "en" ? row.player.name_en : row.player.name_zh;
+        const club = row.club || t("women.players.clubOpen");
+        return `<tr id="${escapeHtml(row.id)}">
+          <td>${escapeHtml(name)}</td>
+          <td>${escapeHtml(league ? localizeText(league.name) : row.league_id)}</td>
+          <td>${escapeHtml(club)}</td>
+          <td>${escapeHtml(localizeText(row.season))}</td>
+          <td>${escapeHtml(t(`women.bucket.${row.bucket}`))} · ${escapeHtml(t(`women.appearance.${row.appearance_status}`))} · ${escapeHtml(t(`women.verify.${row.verification_status}`))}</td>
+          <td>${escapeHtml(localizeText(row.note))}</td>
+        </tr>`;
+      })
+      .join("");
+  }
+
+  const sources = document.querySelector("#womenSources");
   if (sources) {
     sources.innerHTML = (payload.source_links ?? [])
       .map(

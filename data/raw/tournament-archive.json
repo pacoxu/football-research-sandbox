@@ -12373,6 +12373,488 @@
     "status": "completed",
     "champion": "Spain",
     "runner_up": "Argentina",
+    "qualified_teams": {
+      "status": "complete",
+      "expected_count": 48,
+      "teams": [
+        {
+          "team": "Australia",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Iraq",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "IR Iran",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Japan",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Jordan",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Korea Republic",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Qatar",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Saudi Arabia",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Uzbekistan",
+          "confederation": "AFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Algeria",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Cabo Verde",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Congo DR",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Côte d’Ivoire",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Egypt",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Ghana",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Morocco",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Senegal",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "South Africa",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Tunisia",
+          "confederation": "CAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Canada",
+          "confederation": "CONCACAF",
+          "entry_status": "qualified",
+          "hosting_role": "tournament-host",
+          "qualification_route": "FIFA-confirmed finals participant; host role recorded separately",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Curaçao",
+          "confederation": "CONCACAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Haiti",
+          "confederation": "CONCACAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Mexico",
+          "confederation": "CONCACAF",
+          "entry_status": "qualified",
+          "hosting_role": "tournament-host",
+          "qualification_route": "FIFA-confirmed finals participant; host role recorded separately",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Panama",
+          "confederation": "CONCACAF",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "United States",
+          "confederation": "CONCACAF",
+          "entry_status": "qualified",
+          "hosting_role": "tournament-host",
+          "qualification_route": "FIFA-confirmed finals participant; host role recorded separately",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Argentina",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Brazil",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Colombia",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Ecuador",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Paraguay",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Uruguay",
+          "confederation": "CONMEBOL",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "New Zealand",
+          "confederation": "OFC",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Austria",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Belgium",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Bosnia and Herzegovina",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Croatia",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Czechia",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "England",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "France",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Germany",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Netherlands",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Norway",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Portugal",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Scotland",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Spain",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Sweden",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Switzerland",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        },
+        {
+          "team": "Türkiye",
+          "confederation": "UEFA",
+          "entry_status": "qualified",
+          "qualification_route": "FIFA-confirmed finals participant; route details not captured",
+          "qualified_at": null,
+          "source_checked_at": "2026-07-20"
+        }
+      ]
+    },
+    "qualification_snapshot": {
+      "status": "complete",
+      "source_checked_at": "2026-07-20",
+      "source_url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified",
+      "expected_field_size": 48,
+      "qualified_count": 48,
+      "remaining_slots": 0,
+      "note": "The confirmed-team source used for this snapshot does not provide individual qualification dates or routes; those details are not inferred.",
+      "groups": [
+        {
+          "confederation": "AFC",
+          "teams": [
+            "Australia",
+            "Iraq",
+            "IR Iran",
+            "Japan",
+            "Jordan",
+            "Korea Republic",
+            "Qatar",
+            "Saudi Arabia",
+            "Uzbekistan"
+          ]
+        },
+        {
+          "confederation": "CAF",
+          "teams": [
+            "Algeria",
+            "Cabo Verde",
+            "Congo DR",
+            "Côte d’Ivoire",
+            "Egypt",
+            "Ghana",
+            "Morocco",
+            "Senegal",
+            "South Africa",
+            "Tunisia"
+          ]
+        },
+        {
+          "confederation": "CONCACAF",
+          "teams": [
+            "Canada",
+            "Curaçao",
+            "Haiti",
+            "Mexico",
+            "Panama",
+            "United States"
+          ]
+        },
+        {
+          "confederation": "CONMEBOL",
+          "teams": [
+            "Argentina",
+            "Brazil",
+            "Colombia",
+            "Ecuador",
+            "Paraguay",
+            "Uruguay"
+          ]
+        },
+        {
+          "confederation": "OFC",
+          "teams": [
+            "New Zealand"
+          ]
+        },
+        {
+          "confederation": "UEFA",
+          "teams": [
+            "Austria",
+            "Belgium",
+            "Bosnia and Herzegovina",
+            "Croatia",
+            "Czechia",
+            "England",
+            "France",
+            "Germany",
+            "Netherlands",
+            "Norway",
+            "Portugal",
+            "Scotland",
+            "Spain",
+            "Sweden",
+            "Switzerland",
+            "Türkiye"
+          ]
+        }
+      ]
+    },
     "china_status": "did-not-qualify",
     "china_summary": "中国队未晋级 2026 世界杯决赛圈。正赛已于 2026-07-19 结束，西班牙 1-0 加时击败阿根廷夺冠。",
     "qualification_path": {
@@ -12449,6 +12931,10 @@
       {
         "label": "Asian qualifying results",
         "url": "https://www.fifa.com/en/articles/asian-qualifying-results-and-fixtures-for-world-cup-26"
+      },
+      {
+        "label": "FIFA World Cup 2026 qualified teams",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified"
       }
     ],
     "source_checked_at": "2026-10-03",
@@ -12479,6 +12965,15 @@
         "url": "https://fdp.fifa.org/assetspublic/ce281/r12525/pdf/FullTimeMatchReport-English.pdf",
         "fields": [
           "asian_finals_outcomes"
+        ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "FIFA World Cup 2026 qualified teams",
+        "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/world-cup-2026-who-has-qualified",
+        "fields": [
+          "qualified_teams",
+          "qualification_snapshot"
         ]
       }
     ],
