@@ -4876,9 +4876,19 @@
             "appearance_label": "西甲+西乙 103 场",
             "competitive_debut": true,
             "summary": "武磊 2019 年加盟西班牙人后，联赛层面累计 103 场 10 球，各项赛事 126 场 16 球，是近年中国球员五大联赛曝光度和实战价值最高的案例。",
+            "source_links": [
+              {
+                "label": "BBC：2020-01-04 西班牙人 2-2 巴萨，武磊第88分钟进球",
+                "url": "https://www.bbc.com/sport/football/50994535"
+              },
+              {
+                "label": "StatMuse：武磊西甲对皇马 4 场 0 球",
+                "url": "https://www.statmuse.com/fc/ask/wu-lei-stats-vs-real-madrid"
+              }
+            ],
             "notes": [
               "既有西甲保级与加泰德比进球，也有西乙升级赛季的持续轮换。",
-              "欧联杯破门与攻破巴萨球门，让其留洋期具备明显历史记忆点。",
+              "2020-01-04 西甲，西班牙人主场 2-2 巴萨，武磊第88分钟替补破门。这是 21 世纪正式比赛里中国球员对巴萨的进球；同一口径下他西甲对皇马 4 场 0 球。友谊赛不计入。",
               "这条路径说明中国球员在现代五大联赛里仍能形成稳定三年半周期的留洋样本。"
             ]
           },
@@ -5969,7 +5979,7 @@
       {
         "country": "Japan",
         "status": "in-progress",
-        "verified_records": 51,
+        "verified_records": 53,
         "bucket_focus": [
           "big-five：已按既有出场排行补入中田英寿、本田圭佑、长友佑都、内田笃人、吉田麻也、富安健洋、南野拓实、大迫勇也、乾贵士、酒井宏树、原口元气、酒井高德、松井大辅、高原直泰等成年一线队样本，并把三笘薰、久保建英、铃木彩艳、镰田大地、远藤航、浅野拓磨、堂安律、伊藤洋辉、町野修斗、田中碧、守田英正等当前成年样本补进默认列表",
           "big-five-youth：当前除了法国、德国等五大联赛国家的一般青训样本，也开始明确记录门兴、南安普顿这类日本年轻球员近年更集中的梯队 / 外租培养路线，避免把 U17/U19 注册直接算成五大联赛一线队履历",
@@ -6568,6 +6578,7 @@
             },
             {
               "player": "柴崎岳",
+              "featured_record_id": "gaku-shibasaki-laliga-2017",
               "appearances": 29,
               "goals": 1,
               "league_breakdown": [
@@ -6932,8 +6943,23 @@
             "appearance_label": "2025/26 西甲 24 场",
             "competitive_debut": true,
             "summary": "截至 2026 年 5 月 22 日，LaLiga 官方球员页显示久保建英在 2025/26 赛季已为皇家社会出战西甲 24 场，贡献 2 球 4 助攻，仍是日本球员在西甲平台的头部样本。",
+            "source_links": [
+              {
+                "label": "皇马官方：2023-05-02 皇家社会 2-0 皇马",
+                "url": "https://www.realmadrid.com/en-US/news/football/first-team/reports/2-0-defeat-against-real-sociedad"
+              },
+              {
+                "label": "ESPN：久保建英第47分钟、巴雷内切亚第85分钟",
+                "url": "https://www.espn.com/soccer/match/_/gameId/644092"
+              },
+              {
+                "label": "StatMuse：久保建英西甲对巴萨出场，没有进球",
+                "url": "https://www.statmuse.com/fc/ask/takefusa-kubo-stats-vs-barcelona-in-laliga"
+              }
+            ],
             "notes": [
               "这条记录按 2025/26 当前赛季快照建档，不等同于久保建英的西甲生涯总数。",
+              "2023-05-02 西甲，皇家社会主场 2-0 皇马，久保建英第47分钟进球。这粒进球不计入本条 24 场，也不在 2020-10-01 五大联赛出场榜的 4 球之内。同一正式比赛口径下，他西甲对巴萨至少 12 场 0 球。",
               "皇家社会与西甲官方口径显示其仍处于球队前场主力框架之内。",
               "后续如果夏窗转会或赛季收官，需要同步刷新出场、进球和结论。"
             ]
@@ -7145,10 +7171,88 @@
             "appearance_label": "德甲+西甲 241 场",
             "competitive_debut": true,
             "summary": "乾贵士在德甲与西甲累计联赛出场 241 次，其中西甲 166 场、德甲 75 场，是日本成年边锋在五大联赛跨两国长期立足的代表样本之一。",
+            "source_links": [
+              {
+                "label": "ESPN：2017-05-21 巴萨 4-2 埃瓦尔，乾贵士 7'、61'",
+                "url": "https://www.espn.com/soccer/report/_/gameId/458705"
+              },
+              {
+                "label": "FC Barcelona：2016/17 西甲第38轮对埃瓦尔",
+                "url": "https://www.fcbarcelona.com/en/matches/35765/fc-barcelona-eibar-la-liga-2016-2017"
+              },
+              {
+                "label": "SportsDB：乾贵士西甲对手记录，对皇马没有进球",
+                "url": "https://sports-db.live/laliga/players/takashi-inui"
+              }
+            ],
             "notes": [
               "西甲阶段主要体量来自埃瓦尔，说明日本进攻球员不只在德国体系成功，也能在西班牙中游队长时间站稳脚跟。",
+              "2017-05-21 西甲诺坎普，巴萨 4-2 埃瓦尔，乾贵士第7、61分钟进球。这 2 球都在上述 241 场联赛体量之内，也是 21 世纪正式比赛里亚洲球员对巴萨的最多进球。西甲对皇马没有进球。",
               "其 241 场总量长期位列日本球员五大联赛出场榜前列。",
               "这条记录补上了日本成年边锋在德西双线长期生存的典型路径。"
+            ]
+          },
+          {
+            "id": "gaku-shibasaki-laliga-2017",
+            "name": "Gaku Shibasaki",
+            "local_name": "柴崎岳",
+            "bucket": "big-five",
+            "league": "LaLiga",
+            "club": "Getafe",
+            "season": "2017-2019",
+            "history_year_range": "2016-2019",
+            "status": "verified",
+            "active_abroad": false,
+            "appearances": 29,
+            "appearance_label": "西甲 29 场（2020-10-01 榜单口径）",
+            "competitive_debut": true,
+            "summary": "柴崎岳在赫塔费的西甲阶段，按 2020-10-01 五大联赛出场榜为 29 场 1 球。这 1 个联赛进球是对巴萨；对皇马的 2 球发生在世俱杯，不计入这 29 场。",
+            "source_links": [
+              {
+                "label": "ESPN：2017-09-16 赫塔费 1-2 巴萨，柴崎岳 39'",
+                "url": "https://www.espn.com/soccer/report/_/gameId/490670"
+              },
+              {
+                "label": "ESPN：2016-12-18 世俱杯决赛皇马 4-2 鹿岛，柴崎岳 44'、52'",
+                "url": "https://www.espn.com/soccer/report/_/gameId/467220"
+              }
+            ],
+            "notes": [
+              "29 场 1 球取自本文件日本五大联赛出场榜的 2020-10-01 截止口径，不是其后西乙或回国阶段的总数。",
+              "2017-09-16 西甲，赫塔费主场 1-2 巴萨，柴崎岳第39分钟进球。这是榜单里的那 1 个西甲进球。",
+              "2016-12-18 世俱杯决赛，皇马加时 4-2 鹿岛鹿角，柴崎岳第44、52分钟进球。世俱杯不并入西甲 29 场。",
+              "友谊赛不计入上述正式比赛进球。"
+            ]
+          },
+          {
+            "id": "shoma-doi-club-world-cup-2018",
+            "name": "Shoma Doi",
+            "local_name": "土居圣真",
+            "bucket": "asia-other",
+            "league": "FIFA Club World Cup",
+            "club": "Kashima Antlers",
+            "season": "2018",
+            "history_year_range": "2018",
+            "status": "verified",
+            "active_abroad": false,
+            "appearances": 1,
+            "appearance_label": "2018 世俱杯对皇马 1 场",
+            "competitive_debut": true,
+            "summary": "土居圣真没有单独的欧洲留洋条目。本条只收录他代表鹿岛鹿角在 2018 世俱杯半决赛对皇马的正式比赛进球，不把他写成留洋球员，也不代表鹿岛生涯出场。",
+            "source_links": [
+              {
+                "label": "ESPN：2018-12-19 鹿岛 1-3 皇马，土居圣真 78'",
+                "url": "https://www.espn.com/soccer/match/_/gameId/529378/real-madrid-kashima-antlers"
+              },
+              {
+                "label": "Transfermarkt：土居圣真右脚射门，远藤康助攻",
+                "url": "https://www.transfermarkt.us/kashima-antlers_real-madrid/index/spielbericht/3135203"
+              }
+            ],
+            "notes": [
+              "2018-12-19 世俱杯半决赛，阿布扎比，鹿岛鹿角 1-3 皇马，土居圣真第78分钟进球，远藤康助攻。",
+              "1 场只指这场已核比赛，不能与日职生涯出场相加或相减。",
+              "同一正式比赛口径下，他没有对巴萨的进球记录。"
             ]
           },
           {
@@ -7952,7 +8056,7 @@
       {
         "country": "Korea Republic",
         "status": "in-progress",
-        "verified_records": 29,
+        "verified_records": 30,
         "bucket_focus": [
           "big-five：已补入孙兴慜、安贞焕、李荣杓、具滋哲、黄喜灿、李在城、郑优营、车杜里、池东沅等成年一线队样本，并继续保留金玟哉与李刚仁的当前快照",
           "big-five-youth：当前开始明确记录 Newcastle U21、Brentford B 以及德国预备队体系里的韩国年轻样本，避免把英超 / 德甲国家梯队注册直接算成成年一线队履历",
@@ -9153,6 +9257,42 @@
             ]
           },
           {
+            "id": "lee-kang-in-mallorca-2021",
+            "name": "Lee Kang-in",
+            "local_name": "李刚仁",
+            "bucket": "big-five",
+            "league": "LaLiga",
+            "club": "RCD Mallorca",
+            "season": "2021-2023",
+            "history_year_range": "2021-2023",
+            "status": "verified",
+            "active_abroad": false,
+            "appearances": 66,
+            "appearance_label": "西甲 66 场",
+            "competitive_debut": true,
+            "summary": "李刚仁 2021/22 与 2022/23 两个赛季为马略卡出战西甲 66 场、打入 7 球。其中 2021-09-22 在伯纳乌对皇马的进球，是他正式比赛对皇马的进球。",
+            "source_links": [
+              {
+                "label": "Wikipedia：马略卡西甲 2021/22 为 30 场 1 球，2022/23 为 36 场 6 球",
+                "url": "https://en.wikipedia.org/wiki/Lee_Kang-in"
+              },
+              {
+                "label": "FBref：2021-09-22 马略卡客场对皇马，第25分钟",
+                "url": "https://fbref.com/en/players/8455ad90/goallogs/all_comps/Lee-Kang-in-Goal-Log"
+              },
+              {
+                "label": "Korea JoongAng Daily：伯纳乌 1-6，李刚仁第25分钟进球",
+                "url": "https://www.koreajoongangdaily.com/sports/lee-kangin-scores-a-stunner-for-mallorca-in-tough-loss-to-real-madrid/11336257"
+              }
+            ],
+            "notes": [
+              "66 场 7 球只计西甲。国王杯另有出场，不并入这个数字。",
+              "2021-09-22 西甲，伯纳乌，马略卡 1-6 皇马，李刚仁第25分钟进球。这是 2021/22 赛季他在西甲的唯一进球。",
+              "2020-10-01 五大联赛出场榜里的 24 场 2 球早于这场，不能把这粒进球加进该榜。",
+              "2026-09-20 代表马竞对皇马 0 球，记在 lee-kang-in-atletico-2026，不记在本条。同一正式比赛口径下，他对巴萨没有进球。"
+            ]
+          },
+          {
             "id": "lee-kang-in-atletico-2026",
             "name": "Lee Kang-in",
             "local_name": "李刚仁",
@@ -9170,10 +9310,13 @@
             "notes": [
               "转会性质为永久转会。",
               "PSG 2025/26 赛季记录继续由 lee-kang-in-psg-2025 表示。",
-              "2026-07-25 完成本轮核对。"
+              "2021-09-22 对皇马的西甲进球在 lee-kang-in-mallorca-2021，不计入本条待补出场。",
+              "2026-09-20 西甲，马竞主场 2-1 皇马，李刚仁首发约 88 分钟，0 球 0 助攻。进球是格里马尔多点球和乔纳森·戴维。",
+              "2026-07-25 完成本轮核对；对皇马的出场结果核对到 2026-09-20。"
             ],
             "source_links": [
-              "https://en.atleticodemadrid.com/noticias/categoria/primer-equipo?noticia%5Bcatnoticia_id%5D=8"
+              "https://en.atleticodemadrid.com/noticias/categoria/primer-equipo?noticia%5Bcatnoticia_id%5D=8",
+              "https://www.reuters.com/sports/soccer/atletico-ride-derby-storm-beat-10-man-real-madrid-2-1-2026-09-20/"
             ]
           },
           {
@@ -9266,6 +9409,61 @@
             ],
             "source_links": [
               "https://thebrightonbase.counterpress.media/news/brighton-confirm-youngster-set-for-third-loan-spell-since-his-arrival-as-fresh-opportunity-in-germany-awaits-75377"
+            ]
+          }
+        ]
+      },
+      {
+        "country": "IR Iran",
+        "status": "in-progress",
+        "verified_records": 1,
+        "bucket_focus": [
+          "big-five：目前只收录内库纳姆 2006-2012 在奥萨苏纳的西甲阶段，用来挂接已核的对皇马正式比赛进球",
+          "本库主体仍是中日韩留洋样本。伊朗条目不是国籍扩展，只补此前没有独立记录、但已核到正式比赛进球的球员"
+        ],
+        "seed_examples": [
+          "Javad Nekounam"
+        ],
+        "notes": "伊朗不是本库的常规收录国。这里只为内库纳姆建一条西甲记录，因为 21 世纪正式比赛里他有对皇马的进球，而中日韩条目里放不下他。对巴萨他西甲 9 场 0 球。友谊赛不计入。",
+        "featured_records": [
+          {
+            "id": "javad-nekounam-osasuna-2006",
+            "name": "Javad Nekounam",
+            "local_name": "内库纳姆",
+            "bucket": "big-five",
+            "league": "LaLiga",
+            "club": "CA Osasuna",
+            "season": "2006-2012",
+            "history_year_range": "2006-2012",
+            "status": "verified",
+            "active_abroad": false,
+            "appearances": 149,
+            "appearance_label": "西甲 149 场（2006-2012 第一阶段）",
+            "competitive_debut": true,
+            "summary": "内库纳姆 2006 年加盟奥萨苏纳，是首位征战西甲的伊朗球员。到 2012 年离队前，西甲 149 场 24 球。2009-01-18 对皇马的进球在这 24 球之内。2014 年他曾回奥萨苏纳踢西乙，那一段不计入这 149 场。",
+            "source_links": [
+              {
+                "label": "AS：2006-2012 西甲 149 场 24 球，首位伊朗西甲球员",
+                "url": "https://as.com/futbol/mundial/nekounam-el-persa-de-la-eterna-sonrisa-que-conquisto-el-sadar-n/"
+              },
+              {
+                "label": "ESPN：2009-01-18 皇马 3-1 奥萨苏纳",
+                "url": "https://www.espn.com/soccer/match/_/gameId/252960/osasuna-real-madrid"
+              },
+              {
+                "label": "FourFourTwo：内库纳姆第20分钟头球破门",
+                "url": "https://www.fourfourtwo.com/news/real-fight-back-beat-osasuna"
+              },
+              {
+                "label": "StatMuse：内库纳姆西甲对巴萨 9 场 0 球",
+                "url": "https://www.statmuse.com/fc/ask/javad-nekonam-stats-vs-barcelona"
+              }
+            ],
+            "notes": [
+              "149 场 24 球只计 2006-2012 西甲，不把 2014 年西乙回归并进去。",
+              "2009-01-18 西甲伯纳乌，皇马 3-1 奥萨苏纳，内库纳姆第20分钟头球进球，助攻来自普拉希尔。",
+              "同一正式比赛口径下，他对巴萨西甲 9 场 0 球，没有欧战或杯赛进球改写这个结果。",
+              "友谊赛不计入。"
             ]
           }
         ]
