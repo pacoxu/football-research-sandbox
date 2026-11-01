@@ -4,6 +4,18 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-10-30
+
+### Added
+
+- Added a women's football topic with the U-17 Women's World Cup editions, China PR's finals path, and a first sample of Chinese players in Europe and the women's big five.
+- Recorded China PR's 2026 group and round-of-16 results in Morocco. The quarter-final against Brazil on 1 November stays unplayed.
+
+### Data Scope Notes
+
+- The women's big five are the WSL, Liga F, Frauen-Bundesliga, Première Ligue and Serie A Femminile. Swiss, Portuguese, Scottish, NWSL and A-League spells stay outside that set.
+- Frauen-Bundesliga has no Chinese sample in this snapshot. Yang Lina's 2026 Serie A club stays blank. Wang Yanwen and Wurigumula remain provisional.
+
 ## 2026-10-14
 
 ### Added
@@ -24,6 +36,8 @@ This project tracks research data, so changelog entries should separate code cha
 - Added CFA-verified Chinese names for China U23 / Asian Games players so they can be searched on the site, including Zhao Songyuan's 2026 senior-camp tag.
 - Added a public 2026 China men's milestones page covering the U23 Asian Cup runners-up, U17 World Cup qualification and Asian Games bronze, with sourced historical intervals and a share graphic.
 - Added a dedicated Spain league-system page that splits the senior pyramid, U19/U16 youth pyramid, professional vs youth contracts, and documented Chinese player placements.
+- Added Chinese tournament titles via `tournament-name-overrides.json`, including 第二十届亚运会（男足）.
+- Restored Chinese display names for Yao Haoyang, He Yiran, Li Zhenquan, Yimulan Maimaiti and Shi Songchen from the CFA Asian Games camp notice.
 
 ### Updated
 
@@ -37,6 +51,7 @@ This project tracks research data, so changelog entries should separate code cha
 ### Corrected
 
 - Corrected the 2004 AFC U-17 Championship archive: China beat Korea DPR 1-0 in the final to win the title. The 1-3 result against Japan was a group match, not the final.
+- Recorded the 2026 Asian Games men's football champion as Korea Republic and the runner-up as Japan U21, without inventing the gold-medal score.
 
 ## 2026-10-03
 
@@ -55,7 +70,7 @@ This project tracks research data, so changelog entries should separate code cha
 ### Data Scope Notes
 
 - Group and knockout scores through the semi-final use CFA and/or Xinhua reports. The bronze-medal shoot-out is stored from a public-media snapshot until an official CFA match report is captured.
-- The Korea Republic–Japan gold-medal result is not recorded yet; champion and runner-up remain empty.
+- Champion Korea Republic and runner-up Japan U21 are stored; Japan entered as a JFA U-21 side. The gold-medal match score is not stored.
 - Remaining AFC World Cup 2026 exits beyond Japan/Korea/Iran are not stored as scores. U-17 World Cup CAF placeholders are not replaced with Mozambique/Uganda until FIFA republishes named groups.
 - Haiqiu remains a foundation-age programme. About 90 unnamed players are not written into the main player library; Cui Yijun has no verified birth date; Wu Zhongjun's historical national-team pupils are not Haiqiu outputs; Zhang Lie and Zou Peng stay needs-review until a club or match list gives a role.
 

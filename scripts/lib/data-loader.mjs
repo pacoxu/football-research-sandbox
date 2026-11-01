@@ -243,6 +243,10 @@ export async function loadDataset() {
     path.join(paths.raw, "club-name-overrides.json"),
     {}
   );
+  const tournamentNameOverrides = await readOptionalJson(
+    path.join(paths.raw, "tournament-name-overrides.json"),
+    {}
+  );
   const tournamentArchive = await readJson(path.join(paths.raw, "tournament-archive.json"));
   const players = applyPlayerMarketValues(
     applyPlayerNames(
@@ -318,6 +322,18 @@ export async function loadDataset() {
     path.join(paths.raw, "spain-football-system.json"),
     { schema_version: 1, checked_at: null, pyramids: [], contract_types: [], placements: [], source_links: [] }
   );
+  const womenFootball = await readOptionalJson(
+    path.join(paths.raw, "women-football.json"),
+    {
+      schema_version: 1,
+      checked_at: null,
+      u17_world_cup: { editions: [] },
+      big_five_leagues: [],
+      other_leagues: [],
+      players: [],
+      source_links: []
+    }
+  );
   const bigFiveDebutForecast = await readJson(
     path.join(paths.raw, "big-five-debut-forecast.json")
   );
@@ -342,8 +358,10 @@ export async function loadDataset() {
     asianCoaches,
     youthDevelopmentSystems,
     spainFootballSystem,
+    womenFootball,
     bigFiveDebutForecast,
     clubNameOverrides,
+    tournamentNameOverrides,
     playerMarketValues,
     playerSourceFiles
   };
