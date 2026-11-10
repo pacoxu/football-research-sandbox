@@ -487,7 +487,10 @@ function validateYouthProjectDossier(dossier, playerIds) {
       assert(["verified", "needs-review"].includes(member.verification_status), `Invalid member verification: ${dossier.id}/${view.id}`);
     }
     const count = view.counting;
-    assert(count && Number.isInteger(count.reported_count), `Missing counting model: ${dossier.id}/${view.id}`);
+    assert(count && (
+      Number.isInteger(count.reported_count) && count.reported_count >= 0 ||
+      count.reported_count === null && count.count_basis === "unknown" && count.completeness === "partial"
+    ), `Missing counting model: ${dossier.id}/${view.id}`);
     assert(count.listed_count === view.members.length, `Listed count mismatch: ${dossier.id}/${view.id}`);
     assert(count.unique_people_count === refs.size, `Unique count mismatch: ${dossier.id}/${view.id}`);
     assert(count.verified_people_count === view.members.filter((member) => member.verification_status === "verified").length, `Verified count mismatch: ${dossier.id}/${view.id}`);
@@ -579,9 +582,34 @@ function validateYouthProjectDossier(dossier, playerIds) {
     assert(/24/.test(metrics) && /41/.test(metrics), "Missing 500 Star 24/41 count contracts");
   }
   if (dossier.id === "wanda-spain-plan") {
-    const cohorts = dossier.roster_views.filter((view) => /^wanda-spain-cohort-[1-5]-/.test(view.id));
-    assert(cohorts.length === 5, "Expected five explicit Wanda Spain cohorts");
-    assert(cohorts.every((view) => view.counting.reported_count === 30), "Invalid Wanda cohort count scope");
+    const cohorts = dossier.roster_views.filter((view) => /^wanda-spain-cohort-/.test(view.id));
+    assert(cohorts.length === 7, "Expected seven explicit Wanda Spain cohorts");
+    const counts = [30, 30, 30, 30, 30, 20, null];
+    const bases = [
+      "approximate-program-count", "approximate-program-count", "approximate-program-count",
+      "approximate-program-count", "conditional-selection-quota", "announced-selection", "unknown"
+    ];
+    for (const [index, view] of cohorts.entries()) {
+      assert(view.cohort === index + 1 && view.year === 2012 + index, `Invalid Wanda cohort year: ${view.id}`);
+      assert(view.counting.reported_count === counts[index], `Invalid Wanda cohort count: ${view.id}`);
+      assert(view.counting.count_basis === bases[index], `Invalid Wanda cohort count scope: ${view.id}`);
+    }
+    const metricIds = new Set();
+    for (const metric of dossier.program_metrics) {
+      assert(metric.id && !metricIds.has(metric.id), `Invalid Wanda metric id: ${metric.id}`);
+      metricIds.add(metric.id);
+      assert(metric.metric_type && metric.time_scope && metric.note, `Missing Wanda metric scope: ${metric.id}`);
+      assert(Number.isInteger(metric.value) && metric.value >= 0, `Invalid Wanda metric value: ${metric.id}`);
+      assert(["verified", "provisional"].includes(metric.verification_status), `Invalid Wanda metric status: ${metric.id}`);
+      assert(isIsoDate(metric.as_of) && isIsoDate(metric.source_published_at) && isIsoDate(metric.source_checked_at), `Invalid Wanda metric dates: ${metric.id}`);
+      assert(/^https?:\/\//.test(metric.source_url), `Invalid Wanda metric source: ${metric.id}`);
+      for (const personId of [...(metric.person_ids ?? []), ...(metric.person_id ? [metric.person_id] : [])]) {
+        assert(people.has(personId), `Unknown Wanda metric person: ${metric.id}/${personId}`);
+      }
+    }
+    const registration = dossier.program_metrics.find((metric) => metric.id === "domestic-registration-2025-start");
+    assert(registration?.metric_type === "league-registration-people", "Missing Wanda registration scope");
+    assert(Object.values(registration.breakdown).reduce((sum, value) => sum + value, 0) === registration.value, "Wanda registration breakdown mismatch");
   }
   if (dossier.id === "donglu-football-boys") {
     assert(!dossier.people.some((person) => /Chinese Football Boys|Primary School|Dream Team/.test(person.local_name)), "2034 Cup team result leaked into people");

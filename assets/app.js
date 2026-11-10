@@ -4427,7 +4427,7 @@ function renderDossierGeneration(view, dossier) {
         </div>
       </div>
       <p>${escapeHtml(localizeText(view.description))}</p>
-      ${counting ? `<p class="small-note">${escapeHtml(t("dossier.generations.counts", { reported: counting.reported_count, listed: counting.listed_count, verified: counting.verified_people_count, review: counting.needs_review_count }))}</p><p class="small-note">${escapeHtml(localizeText(counting.note))}</p>` : ""}
+      ${counting ? `<p class="small-note">${escapeHtml(t("dossier.generations.counts", { reported: counting.reported_count ?? "-", listed: counting.listed_count, verified: counting.verified_people_count, review: counting.needs_review_count }))}</p><p class="small-note">${escapeHtml(localizeText(counting.note))}</p>` : ""}
       ${
         programme
           ? `<div class="academy-program-card">

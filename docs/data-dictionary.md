@@ -150,6 +150,10 @@ loader 在内存数据中保留 `name_verification` 供质量统计使用，并�
 | `counting` | 批次的公开人数、已列人数、唯一人数、已核人数、待核人数、完整度和口径说明。 |
 | `event_records`、`program_metrics` | 赛事结果和项目宣传/执行数字，不得伪装成人物。 |
 
+万达西班牙计划的批次视图增加 `cohort`（期数）、`year`（年份）和可用的 `source_url`。`counting.count_basis` 区分 `approximate-program-count`（项目概数）、`conditional-selection-quota`（审核后选送名额）、`announced-selection`（公示入围）及 `unknown`。`reported_count: null` 仅用于 `unknown` 且 `completeness: partial` 的未知人数，页面显示 `-`，不能当作零或用累计差额推算。
+
+万达的 `program_metrics` 延续 `name/local_name/role/note/source_url`，补充 `id`、`metric_type`、数值 `value`、`time_scope`、`as_of`、`source_published_at`、`source_checked_at` 和 `verification_status`。其中 `as_of` 是来源陈述的快照截止日；精确统计日期未给出时以文章日期为界，并在 `time_scope` 明确实际统计期间（如 2025 赛季初），不伪造日期。`breakdown` 保存分项，`person_id/person_ids` 引用专题人物；`competition_name` 标明生涯累计所属联赛，不挂到某一赛季的赛事 ID。单一非官方来源使用 `provisional`；这些历史统计不参与已验证人物人数，也不覆盖主球员库当前注册或赛季统计。
+
 `dossiers[].people[].current_status` 用于专题人物唯一的当前状态：
 
 | 字段 | 含义 |

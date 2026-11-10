@@ -52,7 +52,7 @@ test("known project roster contracts stay fixed", () => {
   assert.match(JSON.stringify(star.program_metrics), /24/);
   assert.match(JSON.stringify(star.program_metrics), /41/);
   const wanda = dossiers.find((item) => item.id === "wanda-spain-plan");
-  assert.equal(wanda.roster_views.filter((item) => /^wanda-spain-cohort-[1-5]-/.test(item.id)).length, 5);
+  assert.equal(wanda.roster_views.filter((item) => /^wanda-spain-cohort-/.test(item.id)).length, 7);
 });
 
 test("temporary event, partner, adjacent and prediction records are excluded from verified core", () => {
@@ -69,6 +69,71 @@ test("temporary event, partner, adjacent and prediction records are excluded fro
   assert.equal(donglu.tournament_editions.length, 6);
   assert.equal(donglu.tournament_editions.at(-1).status, "completed");
   assert.ok(!donglu.people.some((person) => /Primary School|Dream Team|Chinese Football Boys/.test(person.local_name)));
+});
+
+test("Wanda cohorts separate approximate counts, conditional selection and unknown departures", () => {
+  const wanda = dossiers.find((item) => item.id === "wanda-spain-plan");
+  const cohorts = wanda.roster_views.filter((item) => /^wanda-spain-cohort-/.test(item.id));
+  assert.deepEqual(cohorts.map((item) => [item.cohort, item.year]), [
+    [1, 2012], [2, 2013], [3, 2014], [4, 2015], [5, 2016], [6, 2017], [7, 2018]
+  ]);
+  assert.deepEqual(cohorts.map((item) => item.counting.reported_count), [30, 30, 30, 30, 30, 20, null]);
+  assert.equal(cohorts[4].counting.count_basis, "conditional-selection-quota");
+  assert.equal(cohorts[5].counting.count_basis, "announced-selection");
+  assert.equal(cohorts[6].counting.count_basis, "unknown");
+  assert.equal(cohorts[6].counting.completeness, "partial");
+  assert.equal(cohorts[6].members.length, 0);
+  assert.ok(cohorts.flatMap((item) => item.members).every((member) => member.verification_status === "needs-review"));
+  const selection = wanda.program_metrics.find((item) => item.id === "cohort-five-selection-2016");
+  assert.equal(selection.value, 50);
+  assert.deepEqual(selection.breakdown, {
+    conditional_selection_quota: 30, reserves: 20, confirmed_departures: null
+  });
+  assert.equal(selection.verification_status, "verified");
+});
+
+test("Wanda historical aggregates retain dates and do not become verified player or season totals", () => {
+  const wanda = dossiers.find((item) => item.id === "wanda-spain-plan");
+  const metrics = new Map(wanda.program_metrics.map((item) => [item.id, item]));
+  const total = metrics.get("reported-total-dispatched");
+  assert.equal(total.value, 181);
+  assert.deepEqual(total.birth_year_range, [1999, 2007]);
+  const registration = metrics.get("domestic-registration-2025-start");
+  assert.equal(registration.value, 74);
+  assert.equal(registration.season, 2025);
+  assert.equal(registration.metric_type, "league-registration-people");
+  assert.deepEqual(registration.breakdown, {
+    csl: 9, china_league_one: 15, china_league_two: 23, cmcl: 27
+  });
+  assert.equal(Object.values(registration.breakdown).reduce((sum, value) => sum + value, 0), 74);
+  const appearances = wanda.program_metrics.filter((item) => item.metric_type === "senior-league-appearances");
+  assert.deepEqual(appearances.map((item) => [item.person_id, item.value]), [
+    ["wanda-spain-plan-黄嘉辉", 121], ["wanda-spain-plan-王振澳", 54], ["wanda-spain-plan-吕焯毅", 48]
+  ]);
+  for (const metric of [total, registration, ...appearances, metrics.get("senior-a-international-samples-2026-01")]) {
+    assert.equal(metric.verification_status, "provisional");
+    assert.equal(metric.as_of, "2026-01-14");
+    assert.equal(metric.source_published_at, "2026-01-14");
+    assert.equal(metric.source_checked_at, "2026-11-09");
+    assert.equal(metric.source_url, "https://m.dongqiudi.com/article/5608603.html");
+  }
+  assert.ok(appearances.every((item) => !item.season && !item.competition_id && item.competition_name === "中超"));
+  assert.deepEqual(metrics.get("senior-a-international-samples-2026-01").person_ids, [
+    "wanda-spain-plan-黄嘉辉", "wanda-spain-plan-王振澳"
+  ]);
+  assert.equal(wanda.headline_stats.verified_core_people, 19);
+  assert.equal(wanda.people.find((person) => person.local_name === "李昊").player_id, "cn-li-hao-2004");
+  assert.ok(!wanda.people.some((person) => person.local_name === "王文轩"));
+  assert.ok(wanda.people.every((person) => person.current_status.category === "needs-review"));
+});
+
+test("Wanda unknown count renders as a dash and Wang Wenxuan remains a documented identity lead", async () => {
+  const [app, research] = await Promise.all([
+    fs.readFile(new URL("../assets/app.js", import.meta.url), "utf8"),
+    fs.readFile(new URL("../docs/research/issue-10-youth-project-rosters.md", import.meta.url), "utf8")
+  ]);
+  assert.match(app, /reported: counting\.reported_count \?\? "-"/);
+  assert.match(research, /王文轩：用户指定纳入中甲研究范围，身份待核/);
 });
 
 test("2034 Cup editions preserve podiums, award conflicts and partial scorer coverage", () => {
