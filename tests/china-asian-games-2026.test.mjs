@@ -26,8 +26,9 @@ test("records China bronze after a 1-2 semi-final loss and a penalty win in the 
   assert.equal(tournament.status, "completed");
   assert.equal(archived.status, "completed");
   assert.equal(archived.china_status, "third-place");
-  assert.equal(archived.champion, null);
-  assert.equal(archived.runner_up, null);
+  assert.equal(archived.champion, "Korea Republic");
+  assert.equal(archived.runner_up, "Japan");
+  assert.match(archived.source_conflict_note, /Korea Republic 1-0 Japan/);
   assert.deepEqual(
     archived.china_matches.map((match) => [
       match.stage,
@@ -65,11 +66,16 @@ test("records the Asian Games field, Group B, and China fixture dates", async ()
     "DPR Korea"
   ]);
   assert.deepEqual(
-    tournament.china_group_stage.fixtures.map(({ date, opponent }) => ({ date, opponent })),
+    tournament.china_group_stage.fixtures.map(({ date, opponent, status, score }) => ({
+      date,
+      opponent,
+      status,
+      score
+    })),
     [
-      { date: "2026-09-16", opponent: "DPR Korea" },
-      { date: "2026-09-20", opponent: "IR Iran" },
-      { date: "2026-09-23", opponent: "United Arab Emirates" }
+      { date: "2026-09-16", opponent: "DPR Korea", status: "played", score: "2-1" },
+      { date: "2026-09-20", opponent: "IR Iran", status: "played", score: "0-0" },
+      { date: "2026-09-23", opponent: "United Arab Emirates", status: "played", score: "0-0" }
     ]
   );
 
@@ -179,8 +185,8 @@ test("makes CFA native names and Asian Games staff searchable", async () => {
   assert.equal(archived.china_status, "third-place");
   assert.equal(archived.latest_public_roster_view.head_coach.local_name, "安东尼奥·普切");
   assert.equal(archived.latest_public_roster_view.staff.length, 11);
-  assert.equal(archived.champion, null);
-  assert.equal(archived.runner_up, null);
+  assert.equal(archived.champion, "Korea Republic");
+  assert.equal(archived.runner_up, "Japan");
 });
 
 test("shows reviewed Chinese names and the Asian Games Chinese title", async () => {

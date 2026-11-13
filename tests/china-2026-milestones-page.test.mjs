@@ -20,7 +20,8 @@ test("publishes a 2026 milestones page wired to four sourced results", async () 
   assert.equal(archive.items[3].competition_id, "fifa-u17-womens-world-cup-2026");
   assert.equal(archive.items[3].page_href, "./women.html");
   assert.match(archive.items[3].summary.zh, /首次八强/);
-  assert.match(archive.items[3].summary.zh, /没有赛果/);
+  assert.match(archive.items[3].summary.zh, /1 比 2/);
+  assert.doesNotMatch(archive.items[3].summary.zh, /没有赛果/);
   assert.match(page, /data-page="milestones"/);
   assert.match(page, /id="milestonesGrid"/);
   assert.match(page, /xiaohongshu-china-football-2026\.jpg/);

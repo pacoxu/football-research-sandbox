@@ -12,8 +12,8 @@
     },
     "date_precision": "exact",
     "status": "completed",
-    "champion": null,
-    "runner_up": null,
+    "champion": "Korea Republic",
+    "runner_up": "Japan",
     "participants": {
       "status": "complete",
       "teams": [
@@ -722,8 +722,8 @@
         }
       ]
     },
-    "source_checked_at": "2026-10-04",
-    "source_conflict_note": "The travelling 23 is taken from the CFA 2026-09-14 update rather than the 2026-09-01 24-man camp notice or the 2026-09-07 sports-delegation list, which still named Li Zhenquan. Group and knockout scores for China are confirmed by CFA and/or Xinhua except the bronze-medal match, which is a public-media snapshot pending an official CFA match report. Some bronze-medal reports mention extra time while others say the match went straight to penalties; extra time is not stored. The gold-medal match between Korea Republic and Japan on 2026-10-03 is not recorded until an official result is captured.",
+    "source_checked_at": "2026-11-13",
+    "source_conflict_note": "The travelling 23 is taken from the CFA 2026-09-14 update rather than the 2026-09-01 24-man camp notice or the 2026-09-07 sports-delegation list, which still named Li Zhenquan. Group and knockout scores for China are confirmed by CFA and/or Xinhua except the bronze-medal match, which is a public-media snapshot pending an official CFA match report. Some bronze-medal reports mention extra time while others say the match went straight to penalties; extra time is not stored. The 2026-10-03 gold-medal match finished Korea Republic 1-0 Japan (Eom Ji-sung); AFP and QNA place the goal in the 60th minute and Yonhap in the 61st, so no minute is stored. Japan entered a JFA U-21 squad and is stored as Japan.",
     "source_links": [
       {
         "label": "Aichi-Nagoya 2026 official team draw results",
@@ -756,6 +756,14 @@
       {
         "label": "Xinhua: China 3-0 Thailand",
         "url": "https://english.news.cn/20260926/41f7f66369a2430196c0768dc3c0b26a/c.html"
+      },
+      {
+        "label": "Yonhap via The Korea Herald: Korea Republic 1-0 Japan in the gold-medal match",
+        "url": "https://www.koreaherald.com/article/10892764"
+      },
+      {
+        "label": "QNA: South Korea beat Japan to claim football gold",
+        "url": "https://qna.org.qa/en/News-Area/News/2026-10/3/asian-games-south-korea-beats-japan-to-claim-football-gold-medal"
       }
     ]
   },
@@ -5597,11 +5605,11 @@
       "start": "2026-07-05",
       "end": "2026-07-11"
     },
-    "status": "ongoing",
-    "champion": "",
-    "runner_up": "",
-    "china_status": "preparation",
-    "china_summary": "中国 U17 在 2026CFA中国之队·银川国际青年足球锦标赛前两轮取得 1 胜 1 负：2026-07-05 以 3 比 0 击败澳大利亚 U17，2026-07-08 以 0 比 2 不敌坦桑尼亚 U17；末轮将于 2026-07-11 对阵尼日利亚 U17。",
+    "status": "completed",
+    "champion": "Tanzania",
+    "runner_up": "China PR",
+    "china_status": "runner-up",
+    "china_summary": "中国 U17 在 2026CFA中国之队·银川国际青年足球锦标赛取得 1 胜 1 平 1 负积 4 分，以亚军结束赛事：2026-07-05 以 3 比 0 击败澳大利亚 U17，2026-07-08 以 0 比 2 不敌坦桑尼亚 U17，2026-07-11 末轮 1 比 1 战平尼日利亚 U17。最终排名依次为坦桑尼亚、中国、澳大利亚、尼日利亚。",
     "china_detail_scope": "goals-assists-lineups-pending",
     "latest_public_roster_view": {
       "label": {
@@ -5842,11 +5850,20 @@
         "date": "2026-07-11",
         "stage": "Round 3",
         "opponent": "Nigeria",
-        "score_for": null,
-        "score_against": null,
-        "result": "TBD",
-        "note": "中国足协 2026-07-09 战报写明，中国 U17 将于 2026-07-11 19:35 迎战尼日利亚 U17；当前等待赛果与阵容公开。",
-        "china_contributions": [],
+        "score_for": 1,
+        "score_against": 1,
+        "result": "D",
+        "note": "中国足协闭幕战报：中国 U17 末轮 1 比 1 战平尼日利亚 U17，张君豪第 27 分钟扳平比分。官方战报未提供完整首发与替补名单，当前暂不回填阵容。",
+        "china_contributions": [
+          {
+            "type": "goal",
+            "player": {
+              "zh": "张君豪",
+              "en": "Zhang Junhao"
+            },
+            "minute": "27"
+          }
+        ],
         "china_lineup": {}
       }
     ],
@@ -5884,6 +5901,12 @@
         "goals": 0,
         "assists": 0,
         "role_note": "2026-07-08 对坦桑尼亚轮换首发，战报可核其上半场多次化解对手射门。"
+      },
+      {
+        "player": "Zhang Junhao",
+        "goals": 1,
+        "assists": 0,
+        "role_note": "2026-07-11 末轮对尼日利亚第 27 分钟扳平比分。"
       }
     ],
     "source_links": [
@@ -5898,6 +5921,10 @@
       {
         "label": "China U17 0-2 Tanzania U17 official report",
         "url": "https://www.thecfa.cn/zhongguozhidui/20260709/37873.html"
+      },
+      {
+        "label": "China U17 1-1 Nigeria U17 and final standings official report",
+        "url": "https://www.thecfa.cn/xinwenu17/20260712/37897.html"
       }
     ]
   },
@@ -13871,7 +13898,7 @@
     "champion": "",
     "runner_up": "",
     "china_status": "qualified",
-    "china_summary": "中国 U17 已通过 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，抽入 H 组对阵西班牙、斐济和摩洛哥。中国足协 2026-09-11 公布第六期 26 人集训名单备战正赛；该集训名单不是 FIFA 终报名 23 人。CAF 1 / CAF 2 席位随后由莫桑比克和乌干达填补，但 FIFA 尚未用国名重发分组，因此这两组仍保留抽签占位符。",
+    "china_summary": "中国 U17 已通过 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，抽入 H 组，2026-11-20 对西班牙、11-23 对摩洛哥、11-26 对斐济。中国足协 2026-10-28 公布第七期 25 人集训名单，张伯霖因伤落选；该名单是集训名单，不等于国际足联正式报名名单，本届正式报名上限为 21 人。球队 2026-11-07 赴多哈，赛前与新西兰、洪都拉斯热身。CAF 1 / CAF 2 席位随后由莫桑比克和乌干达填补，但 FIFA 尚未用国名重发分组，因此这两组仍保留抽签占位符。",
     "qualification_path": {
       "route": "AFC U17 Asian Cup Saudi Arabia 2026",
       "summary": "中国 U17 通过 2026 U17 亚洲杯取得 2026 FIFA U17 世界杯资格，并在亚洲杯正赛中获得亚军。",
@@ -14568,9 +14595,21 @@
       {
         "label": "South Korea national under-17 football team",
         "url": "https://en.wikipedia.org/wiki/South_Korea_national_under-17_football_team"
+      },
+      {
+        "label": "Xinhua: China U17 name a 25-player World Cup camp list",
+        "url": "https://www.news.cn/sports/20261028/fdac81b37f8c4fb2a017eea6a19c3938/c.html"
+      },
+      {
+        "label": "Beijing Daily: 21-player registration limit and injury replacement window",
+        "url": "https://news.bjd.com.cn/2026/10/29/12011517.shtml"
+      },
+      {
+        "label": "Beijing News / Xinhua: China U17 leave for Doha",
+        "url": "https://www.bjnews.com.cn/detail/1794051694129479.html"
       }
     ],
-    "source_checked_at": "2026-10-03",
+    "source_checked_at": "2026-11-13",
     "source_conflict_note": "FIFA's 2026-05-21 draw is primary for the 12 groups, including China PR in Group H. Mozambique and Uganda later completed the CAF field, but public restatements disagree on which placeholder each team occupies, so Group B and Group C keep CAF 1 / CAF 2 until FIFA republishes named groups.",
     "source_version": [
       {
@@ -14589,6 +14628,15 @@
         "url": "https://www.thecfa.cn/jxtz/20260911/38141.html",
         "fields": [
           "china_summary"
+        ]
+      },
+      {
+        "type": "news-secondary",
+        "label": "Xinhua: 25-player camp list and China group fixtures",
+        "url": "https://www.news.cn/sports/20261028/fdac81b37f8c4fb2a017eea6a19c3938/c.html",
+        "fields": [
+          "china_summary",
+          "china_group_stage"
         ]
       }
     ],
@@ -14712,6 +14760,23 @@
         "China PR",
         "Fiji",
         "Morocco"
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-20",
+          "opponent": "Spain",
+          "status": "scheduled"
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Morocco",
+          "status": "scheduled"
+        },
+        {
+          "date": "2026-11-26",
+          "opponent": "Fiji",
+          "status": "scheduled"
+        }
       ]
     },
     "participants": {
@@ -17998,10 +18063,27 @@
         "fields": [
           "qualifiers"
         ]
+      },
+      {
+        "type": "news-secondary",
+        "label": "Hangzhou Municipal Government: host city, finals dates and match count",
+        "url": "https://www.ehangzhou.gov.cn/2025-12/11/c_295908.htm",
+        "fields": [
+          "date_range",
+          "host"
+        ]
+      },
+      {
+        "type": "news-secondary",
+        "label": "Hangzhou Municipal Government: AFC/CFA venue inspection",
+        "url": "https://www.ehangzhou.gov.cn/2026-08/17/c_298710.htm",
+        "fields": [
+          "venues"
+        ]
       }
     ],
-    "source_checked_at": "2026-07-12",
-    "source_conflict_note": "China PR is recorded as host, not inferred as a qualified finalist. The 44 qualifier entrants remain separate from the partial finals participant list; finals dates and draw are pending.",
+    "source_checked_at": "2026-11-13",
+    "source_conflict_note": "China PR is recorded as host, not inferred as a qualified finalist. The 44 qualifier entrants remain separate from the partial finals participant list. Finals dates (2027-03-24 to 2027-04-10, Hangzhou, 16 teams, 31 matches) come from the host-city government relaying the CFA/AFC calendar; qualifier outcomes and the finals draw are not yet captured.",
     "competition_name_history": [
       {
         "name": "AFC U20 Asian Cup",
@@ -18011,10 +18093,10 @@
     ],
     "host": "China PR",
     "date_range": {
-      "start": null,
-      "end": null
+      "start": "2027-03-24",
+      "end": "2027-04-10"
     },
-    "date_precision": "tbc",
+    "date_precision": "exact",
     "status": "upcoming",
     "champion": null,
     "runner_up": null,
@@ -18166,7 +18248,7 @@
       }
     ],
     "china_status": "host",
-    "china_summary": "中国队以 2027 亚青赛东道主身份进入赛事筹备；决赛圈日期、其余球队和分组待官方公布。",
+    "china_summary": "中国队以东道主身份参加 2027 U20 亚洲杯，决赛圈 2027-03-24 至 2027-04-10 在杭州举行；其余球队和分组待官方公布。",
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
@@ -18178,6 +18260,14 @@
       {
         "label": "AFC U20 2027 qualifiers draw and schedule",
         "url": "https://assets.the-afc.com/2027_AFC_U20_Asian_Cup/Qualifiers/Draw/Encl---Draw-Results-%26-Match-Schedule.pdf"
+      },
+      {
+        "label": "Hangzhou to host the 2027 AFC U20 Asian Cup",
+        "url": "https://www.ehangzhou.gov.cn/2025-12/11/c_295908.htm"
+      },
+      {
+        "label": "Hangzhou venue inspection for the 2027 AFC U20 Asian Cup",
+        "url": "https://www.ehangzhou.gov.cn/2026-08/17/c_298710.htm"
       }
     ]
   },
@@ -21056,16 +21146,24 @@
           "host",
           "participants"
         ]
+      },
+      {
+        "type": "fifa-report",
+        "label": "FIFA: Bureau of the Council decisions, 2026-10-22",
+        "url": "https://inside.fifa.com/en/news/bureau-council-key-decisions",
+        "fields": [
+          "date_range"
+        ]
       }
     ],
-    "source_checked_at": "2026-07-12",
-    "source_conflict_note": "Only the co-host appointment is confirmed at this checkpoint; dates, qualified finalists and groups remain pending.",
+    "source_checked_at": "2026-11-13",
+    "source_conflict_note": "Co-hosts and dates (17 September to 9 October 2027, set by the Bureau of the FIFA Council on 2026-10-22) are confirmed; qualified finalists and groups remain pending.",
     "host": "Azerbaijan / Uzbekistan",
     "date_range": {
-      "start": null,
-      "end": null
+      "start": "2027-09-17",
+      "end": "2027-10-09"
     },
-    "date_precision": "tbc",
+    "date_precision": "exact",
     "status": "upcoming",
     "champion": null,
     "runner_up": null,
@@ -21087,7 +21185,7 @@
       "groups": []
     },
     "china_status": "preparation",
-    "china_summary": "截至 2026-07-12，2027 世青赛仅确认由阿塞拜疆和乌兹别克斯坦合办；参赛资格和分组待官方公布。",
+    "china_summary": "2027 世青赛由阿塞拜疆和乌兹别克斯坦合办，国际足联已确定赛期为 2027-09-17 至 2027-10-09；中国队需经 2027 U20 亚洲杯争取资格，参赛名单和分组待官方公布。",
     "china_detail_scope": "none",
     "china_matches": [],
     "china_key_players": [],
@@ -21095,6 +21193,10 @@
       {
         "label": "FIFA Council appoints 2027 co-hosts",
         "url": "https://inside.fifa.com/organisation/fifa-council/media-releases/fifa-council-calls-for-peace-and-takes-key-decisions-on-football-governance"
+      },
+      {
+        "label": "FIFA: Bureau of the Council sets the U-20 World Cup 2027 dates",
+        "url": "https://inside.fifa.com/en/news/bureau-council-key-decisions"
       }
     ]
   },
@@ -21288,13 +21390,13 @@
     "host": "Jiangsu, China",
     "date_range": {
       "start": "2026-04-11",
-      "end": null
+      "end": "2026-10-31"
     },
-    "date_precision": "open-ended",
-    "status": "in-progress",
-    "champion": null,
-    "runner_up": null,
-    "source_checked_at": "2026-08-02",
+    "date_precision": "exact",
+    "status": "completed",
+    "champion": "Wuxi City Team",
+    "runner_up": "Changzhou City Team",
+    "source_checked_at": "2026-11-13",
     "participants": {
       "status": "complete",
       "teams": [
@@ -21418,6 +21520,14 @@
       {
         "label": "CFA China U19 third camp notice",
         "url": "https://www.thecfa.cn/jxtz/20260522/37710.html"
+      },
+      {
+        "label": "Xinhua Daily: Wuxi beat Changzhou 2-1 in the 2026 final",
+        "url": "https://m.gmw.cn/2026-11/01/content_1304581387.htm"
+      },
+      {
+        "label": "Xinhua: Suchao 2.0 season review",
+        "url": "https://www.news.cn/sports/20261102/fe9c22e409804b4f8c74e8d13e5c70a6/c.html"
       }
     ]
   }

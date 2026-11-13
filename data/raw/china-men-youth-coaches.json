@@ -1,7 +1,7 @@
 {
   "id": "china-men-youth-coaches",
   "name": "中国男足 U 系列教练组",
-  "last_checked": "2026-10-04",
+  "last_checked": "2026-11-13",
   "summary": "中国男足 U23 / 亚运队已更新至2026-09-01赛前集训与参赛通知；U19、U17、U16、U15其余教练线仍按截至2026-06-27的中国足协公开任命与集训通知维护。 按截至 2026-09-26 的中国足协公开集训通知和战报，更新中国男足 U19、U17、U16、U15 的最新一期名单，并附上成年队第四期集训。U16 本期主教练改为张耀坤。",
   "scope_note": "本档优先采用中国足协官方任命公告与集训通知；任命页用于定义周期职责，最近一期可靠通知用于定义各队实际带队教练组。U23 / 亚运队已单独推进至2026-09-01，其余年龄线不随本次更新虚增核查日期。 U 系列五条教练线仍以官方任命和最近一期集训通知为准。成年队第四期集训单独放在 senior_men_window，不并入五条 U 系列计数。没有完整出生日期的新名单球员不新建球员档案，只保留在本期 squad。",
   "team_cycles": [
@@ -333,7 +333,7 @@
         "name": "Satoshi Ukishima",
         "local_name": "浮嶋敏"
       },
-      "current_stage": "2025年U16阶段至 2026 年 U17 亚洲杯决赛及同年 U17 世界杯备战周期。",
+      "current_stage": "2025年U16阶段至 2026 年 U17 亚洲杯亚军及同年 U17 世界杯；10 月伦敦热身赛三战全负，2026-10-28 公布第七期 25 人集训名单，11 月 7 日赴卡塔尔。",
       "appointment_context": "2025 年 U16 第一期集训时已由浮嶋敏挂帅；到 2026 年 6 月 U17 第四期集训时，教练与保障团队主干继续延续，任务已切换到 U17 世界杯备战。",
       "latest_camp": {
         "label": "2026年第六期集训",
@@ -452,27 +452,27 @@
         "matches": [
           {
             "date": "2026-10-01",
-            "kickoff": "21:00",
+            "kickoff": null,
             "opponent": "Tanzania U17",
-            "score": null,
-            "status": "reported-schedule",
-            "note": "体坛周报记者马德兴 2026-09-21 预报的伦敦赛程。足协通知只写赴伦敦参加国际热身赛，没有公布对手。截至 2026-09-26 未开赛。"
+            "score": "0-1",
+            "status": "played",
+            "note": "伦敦四国热身赛首轮 0 比 1 负坦桑尼亚 U17（北京时间 10 月 2 日凌晨开球）。赛前预报的开球时间未被赛后稿件证实，不保留。"
           },
           {
             "date": "2026-10-04",
-            "kickoff": "21:00",
+            "kickoff": null,
             "opponent": "Mexico U17",
-            "score": null,
-            "status": "reported-schedule",
-            "note": "同一篇预报。不是足协已公布的官方对阵。"
+            "score": "0-3",
+            "status": "played",
+            "note": "伦敦四国热身赛次轮 0 比 3 负墨西哥 U17。赛前预报的开球时间未被赛后稿件证实，不保留。"
           },
           {
             "date": "2026-10-07",
-            "kickoff": "18:00",
+            "kickoff": null,
             "opponent": "Argentina U17",
-            "score": null,
-            "status": "reported-schedule",
-            "note": "同一篇预报。可能与阿森纳 U17 再热身的说法也来自这篇报道，尚未列入正式赛程。"
+            "score": "0-3",
+            "status": "played",
+            "note": "新华社伦敦 10 月 7 日电：末轮 0 比 3 负阿根廷 U17，三战全负、未进球。赛前预报的开球时间未被赛后稿件证实，不保留。"
           }
         ]
       },
@@ -581,6 +581,18 @@
         {
           "label": "中国足球协会关于组织中国U-17国家男子足球队2026年第六期集训的通知",
           "url": "https://www.thecfa.cn/jxtz/20260911/38141.html"
+        },
+        {
+          "label": "新华社：中国U17男足热身赛不敌阿根廷队",
+          "url": "https://www.news.cn/sports/20261007/725246321f5c439aba7a59f4d09a1acd/c.html"
+        },
+        {
+          "label": "北京日报：首战 0 比 1 不敌坦桑尼亚",
+          "url": "https://news.bjd.com.cn/2026/10/02/11981410.shtml"
+        },
+        {
+          "label": "新华社：U17国足公布25人大名单",
+          "url": "https://www.news.cn/sports/20261028/fdac81b37f8c4fb2a017eea6a19c3938/c.html"
         }
       ]
     },
@@ -746,9 +758,9 @@
             "kickoff": "14:00",
             "competition": "2026CFA中国之队·和平杯沈阳国际青年足球锦标赛",
             "opponent": "Vietnam U16",
-            "score": null,
-            "status": "scheduled",
-            "note": "同一篇足协战报预告的下一场。截至 2026-09-26 未开赛。"
+            "score": "1-0",
+            "status": "played",
+            "note": "新华社图片报道：中国 U16 1 比 0 胜越南 U16，冀政浩头球破门。第三轮对澳大利亚 U16 的赛果本次未从足协或新华社稿件核对，不写入。"
           }
         ]
       },
@@ -837,6 +849,10 @@
         {
           "label": "沈阳和平杯：中国U-16男足3比3战平吉尔吉斯斯坦U-16男足",
           "url": "https://www.thecfa.cn/zhongguozhidui/20260925/38218.html"
+        },
+        {
+          "label": "新华社：“和平杯”中国队胜越南队",
+          "url": "https://www.news.cn/sports/20260927/3b82b1feb39a4287918780c36bd870a2/c.html"
         }
       ],
       "previous_head_coach": {
@@ -1245,9 +1261,30 @@
           "kickoff": "19:35",
           "competition": "2026CFA中国之队·重庆国际足球邀请赛",
           "opponent": "New Zealand",
-          "score": null,
-          "status": "scheduled",
-          "note": "足协战报预告的第二场。同日下午新西兰 2-2 巴勒斯坦。截至 2026-09-26 中国队这场尚未开赛。"
+          "score": "0-3",
+          "status": "played",
+          "note": "新华社与央视网均记中国 0 比 3 负新西兰。央视网记录新西兰进球为第 4 分钟泰勒·宾登、上半场本·韦恩和下半场帕克-普赖斯。",
+          "venue": "重庆龙兴足球场"
+        },
+        {
+          "date": "2026-10-02",
+          "kickoff": null,
+          "competition": "2026CFA中国之队·重庆国际足球邀请赛",
+          "opponent": "Palestine",
+          "score": "0-5",
+          "venue": null,
+          "status": "played",
+          "note": "新华社战报：第 16、22 分钟哈姆拉维两球，上半场补时乌代·达巴格破门，下半场巴勒斯坦再入两球。此前两队交手 7 次中国 5 胜 2 平；新华社称这是国足历史第四大比分失利。"
+        },
+        {
+          "date": "2026-10-06",
+          "kickoff": null,
+          "competition": "2026CFA中国之队·重庆国际足球邀请赛",
+          "opponent": "Tajikistan",
+          "score": "0-1",
+          "venue": null,
+          "status": "played",
+          "note": "新华社战报：第 53 分钟门将刘殿座扑球脱手，哈诺诺夫补射得分；第 59 分钟韦世豪两黄变一红被罚下。这是国足首次输给塔吉克斯坦，本期四场 1 胜 3 负。"
         }
       ]
     },
@@ -1327,7 +1364,7 @@
     ],
     "notes": [
       "30 人名单来自 2026-09-08 足协通知。张玉宁、王钰栋等随 U23 参加亚运会的说法来自中新网，不写入本名单的缺席原因字段。",
-      "通知原稿写的热身对手后来有调整。已赛事实只采用 2026-09-25 足协战报：中国 3-0 马尔代夫。"
+      "通知原稿写的热身对手后来有调整。已赛事实采用足协与新华社战报：9 月 24 日 3-0 马尔代夫，9 月 27 日 0-3 新西兰，10 月 2 日 0-5 巴勒斯坦，10 月 6 日 0-1 塔吉克斯坦。"
     ],
     "source_links": [
       {
@@ -1337,6 +1374,22 @@
       {
         "label": "中国队3比0战胜马尔代夫队 九人完成国际A级赛首秀",
         "url": "https://www.thecfa.cn/zhongguozhidui/20260925/38220.html"
+      },
+      {
+        "label": "新华社：中国不敌新西兰（2026-09-27）",
+        "url": "https://www.news.cn/sports/20260928/7d3dad13ec20487cbfcf4f1a97c7fbfc/c.html"
+      },
+      {
+        "label": "央视网：中国男足 0-3 不敌新西兰",
+        "url": "https://m.gmw.cn/2026-09/28/content_1304568983.htm"
+      },
+      {
+        "label": "新华社：中国男足 0:5 负于巴勒斯坦队",
+        "url": "https://www.news.cn/sports/20261003/14e85445d1d84a209b30a49bba2d544e/c.html"
+      },
+      {
+        "label": "新华社：中国男足 0:1 负于塔吉克斯坦队",
+        "url": "https://www.news.cn/sports/20261007/dc02b7569dd84c7788211c3c5af4794b/c.html"
       }
     ]
   }

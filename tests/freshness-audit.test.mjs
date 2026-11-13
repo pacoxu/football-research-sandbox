@@ -6,6 +6,7 @@ import {
   exitCodeForReport,
   parseIsoDate
 } from "../scripts/lib/freshness-audit.mjs";
+import { readFile } from "node:fs/promises";
 import { loadDataset } from "../scripts/lib/data-loader.mjs";
 
 function finding(lastChecked, reviewWindowDays) {
@@ -43,7 +44,11 @@ test("is non-blocking by default and strict only when findings exist", () => {
 
 test("keeps Shanghai tournament snapshots clear in the current freshness audit", async () => {
   const dataset = await loadDataset();
-  const report = auditFreshness(dataset, dataset.playerMarketValues, "2026-11-09");
+  // Audit at the published data date; a fixed older date breaks once newer checks are recorded.
+  const { generated_at: asOf } = JSON.parse(
+    await readFile(new URL("../data/site/overview.json", import.meta.url), "utf8")
+  );
+  const report = auditFreshness(dataset, dataset.playerMarketValues, asOf);
   const shanghaiSnapshotIds = new Set(
     dataset.players
       .filter(

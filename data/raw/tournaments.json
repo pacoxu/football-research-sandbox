@@ -1,11 +1,96 @@
 [
   {
+    "id": "fifa-u17-world-cup-2026",
+    "name": "FIFA U-17 World Cup Qatar 2026",
+    "short_name": "U17 World Cup 2026",
+    "focus_level": "primary",
+    "status": "upcoming",
+    "last_checked": "2026-11-13",
+    "date_range": {
+      "start": "2026-11-19",
+      "end": "2026-12-13"
+    },
+    "date_precision": "exact",
+    "focus_teams": [
+      "China PR",
+      "Japan",
+      "Korea Republic",
+      "Uzbekistan",
+      "Australia",
+      "Saudi Arabia",
+      "Qatar",
+      "Tajikistan",
+      "Vietnam"
+    ],
+    "headline": "中国 U17 时隔 21 年重返世少赛，H 组 2026-11-20 对西班牙、11-23 对摩洛哥、11-26 对斐济；中国足协 2026-10-28 公布 25 人集训名单。",
+    "china_group_stage": {
+      "group": "Group H",
+      "teams": [
+        "Spain",
+        "China PR",
+        "Fiji",
+        "Morocco"
+      ],
+      "fixtures": [
+        {
+          "date": "2026-11-20",
+          "opponent": "Spain",
+          "status": "scheduled"
+        },
+        {
+          "date": "2026-11-23",
+          "opponent": "Morocco",
+          "status": "scheduled"
+        },
+        {
+          "date": "2026-11-26",
+          "opponent": "Fiji",
+          "status": "scheduled"
+        }
+      ]
+    },
+    "update_cadence": "赛期内每场赛后更新中国队赛果；小组赛结束后核对晋级和淘汰赛对阵。",
+    "notes": [
+      "48 队分 12 组，每组前两名和 8 个成绩最好的小组第三进入淘汰赛。",
+      "中国足协 2026-10-28 公布第七期 25 人集训名单，集训自 2026-11-02 在上海开始后转赴卡塔尔；张伯霖因伤落选。该名单是集训名单，不等于国际足联正式报名名单；本届正式报名上限为 21 人，首场比赛开球前 24 小时内仍可按伤病规则替换。",
+      "球队 2026-11-07 从上海出发赴多哈，抵达后先后与新西兰、洪都拉斯进行两场热身赛。",
+      "10 月伦敦四国热身赛三场 0 比 1 负坦桑尼亚、0 比 3 负墨西哥、0 比 3 负阿根廷，未取得进球。"
+    ],
+    "sources": [
+      {
+        "label": "FIFA U-17 World Cup Qatar 2026 official draw",
+        "publisher": "FIFA",
+        "url": "https://inside.fifa.com/organisation/news/u17-world-cup-draw-womens-mens-gianni-infantino-football-week"
+      },
+      {
+        "label": "Xinhua: China U17 name a 25-player World Cup camp list",
+        "publisher": "Xinhua",
+        "url": "https://www.news.cn/sports/20261028/fdac81b37f8c4fb2a017eea6a19c3938/c.html"
+      },
+      {
+        "label": "Beijing Daily: 21-player registration limit and injury replacement window",
+        "publisher": "Beijing Daily",
+        "url": "https://news.bjd.com.cn/2026/10/29/12011517.shtml"
+      },
+      {
+        "label": "Beijing News / Xinhua: China U17 leave for Doha",
+        "publisher": "Beijing News",
+        "url": "https://www.bjnews.com.cn/detail/1794051694129479.html"
+      },
+      {
+        "label": "Xinhua: China U17 lose 0-3 to Argentina in London",
+        "publisher": "Xinhua",
+        "url": "https://www.news.cn/sports/20261007/725246321f5c439aba7a59f4d09a1acd/c.html"
+      }
+    ]
+  },
+  {
     "id": "asian-games-men-2026",
     "name": "20th Asian Games Aichi-Nagoya 2026 - Men's Football",
     "short_name": "Asian Games Men 2026",
     "focus_level": "primary",
     "status": "completed",
-    "last_checked": "2026-10-04",
+    "last_checked": "2026-11-13",
     "date_range": {
       "start": "2026-09-15",
       "end": "2026-10-03"
@@ -19,7 +104,7 @@
       "United Arab Emirates",
       "DPR Korea"
     ],
-    "headline": "中国男足亚运队以 U23 班底加吴曦、张玉宁、朱辰杰三名超龄球员出征，小组赛头名出线后淘汰泰国，半决赛负于韩国，铜牌赛点球击败乌兹别克斯坦；金牌赛韩国对日本尚未写入冠军。",
+    "headline": "中国男足亚运队以 U23 班底加吴曦、张玉宁、朱辰杰三名超龄球员出征，小组赛头名出线后淘汰泰国，半决赛负于韩国，铜牌赛点球击败乌兹别克斯坦；金牌赛韩国 1 比 0 胜日本，连续第四届夺冠。",
     "eligibility": {
       "format": "u23-plus-three-overage",
       "note": "男子足球为U23赛事，每队最多可使用3名超龄球员。"
@@ -36,17 +121,23 @@
         {
           "date": "2026-09-16",
           "opponent": "DPR Korea",
-          "status": "scheduled"
+          "status": "played",
+          "score": "2-1",
+          "result": "W"
         },
         {
           "date": "2026-09-20",
           "opponent": "IR Iran",
-          "status": "scheduled"
+          "status": "played",
+          "score": "0-0",
+          "result": "D"
         },
         {
           "date": "2026-09-23",
           "opponent": "United Arab Emirates",
-          "status": "scheduled"
+          "status": "played",
+          "score": "0-0",
+          "result": "D"
         }
       ]
     },
@@ -71,9 +162,9 @@
       "中国队位于B组，对手为阿联酋、伊朗和朝鲜；小组赛日期依次为9月16日、9月20日和9月23日。",
       "正式23人位置分组采用新华社对亚运会官方名单的转录；足协24人通知按俱乐部列人，不提供正式报名变更结论。",
       "史松宸只记为后续集训补招，除非赛事组织方后续发布替换或更新名单，否则不计入23人正式参赛名单。",
-      "铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦。金牌赛结果、逐场完整阵容和分钟在官方闭幕材料前保持空值。",
+      "铜牌赛 2-2 后点球 4-3 胜乌兹别克斯坦。逐场完整阵容和分钟在官方闭幕材料前保持空值。",
       "小组赛1胜2平积5分头名出线，四分之一决赛3比0泰国，半决赛1比2韩国，铜牌赛2比2后点球4比3胜乌兹别克斯坦。",
-      "金牌赛韩国对日本的官方结果尚未写入；冠亚军保持空值。"
+      "2026-10-03 金牌赛在丰田体育场进行，韩国 1 比 0 胜日本，严智星下半场破门。法新社和卡塔尔通讯社记为第 60 分钟，韩联社记为第 61 分钟，本站不写进球分钟。韩国连续第四届夺冠；日本以 U21 班底参赛并获亚军。"
     ],
     "sources": [
       {
@@ -100,6 +191,16 @@
         "label": "JFA competition window for Aichi-Nagoya 2026 men's football",
         "publisher": "Japan Football Association",
         "url": "https://www.jfa.jp/eng/national_team/u21_2026/asiangames_2026_men/"
+      },
+      {
+        "label": "Yonhap via The Korea Herald: Korea Republic 1-0 Japan in the gold-medal match",
+        "publisher": "Yonhap",
+        "url": "https://www.koreaherald.com/article/10892764"
+      },
+      {
+        "label": "QNA: South Korea beat Japan to claim football gold",
+        "publisher": "Qatar News Agency",
+        "url": "https://qna.org.qa/en/News-Area/News/2026-10/3/asian-games-south-korea-beats-japan-to-claim-football-gold-medal"
       }
     ]
   },
@@ -109,23 +210,25 @@
     "short_name": "AFC U20 2027",
     "focus_level": "primary",
     "status": "upcoming",
-    "last_checked": "2026-07-12",
+    "last_checked": "2026-11-13",
     "date_range": {
-      "start": null,
-      "end": null
+      "start": "2027-03-24",
+      "end": "2027-04-10"
     },
-    "date_precision": "tbc",
+    "date_precision": "exact",
     "focus_teams": [
       "China PR",
       "Japan",
       "Korea Republic",
       "Australia"
     ],
-    "headline": "中国已确定主办 2027 U20 亚洲杯；决赛圈日期、其余参赛队和分组待官方公布。",
+    "headline": "中国主办 2027 U20 亚洲杯，决赛圈定于 2027-03-24 至 2027-04-10 在杭州举行，16 队共 31 场；其余参赛队和分组待官方公布。",
     "notes": [
       "AFC 于 2025-12-04 确认中国连续第二届承办 U20 亚洲杯。",
       "截至 2026-07-12，44 支球队的资格赛抽签已经完成，资格阶段与发展阶段分开进行。",
-      "资格赛定于 2026-08-25 至 2026-09-06 期间举行；决赛圈分组尚未抽签。"
+      "资格赛定于 2026-08-25 至 2026-09-06 期间举行；决赛圈分组尚未抽签。",
+      "中国足协 2025-12-10 确认杭州承办；决赛圈 2027-03-24 至 2027-04-10，16 队分 4 组共 31 场。2026 年 8 月亚足联与中国足协考察了黄龙体育中心、上城体育中心体育场、萧山体育中心和临平体育中心四处备选场地。",
+      "资格赛按赛程已在 2026-09-06 前结束，但晋级决赛圈的球队名单本次未核对，决赛圈参赛名单继续只保留东道主。"
     ],
     "sources": [
       {
@@ -137,6 +240,16 @@
         "label": "AFC U20 2027 qualifiers draw and schedule",
         "publisher": "AFC",
         "url": "https://assets.the-afc.com/2027_AFC_U20_Asian_Cup/Qualifiers/Draw/Encl---Draw-Results-%26-Match-Schedule.pdf"
+      },
+      {
+        "label": "Hangzhou to host the 2027 AFC U20 Asian Cup",
+        "publisher": "Hangzhou Municipal Government",
+        "url": "https://www.ehangzhou.gov.cn/2025-12/11/c_295908.htm"
+      },
+      {
+        "label": "Hangzhou steps up preparations after the AFC/CFA venue inspection",
+        "publisher": "Hangzhou Municipal Government",
+        "url": "https://www.ehangzhou.gov.cn/2026-08/17/c_298710.htm"
       }
     ]
   },
@@ -146,27 +259,32 @@
     "short_name": "U20 World Cup 2027",
     "focus_level": "reference",
     "status": "upcoming",
-    "last_checked": "2026-07-12",
+    "last_checked": "2026-11-13",
     "date_range": {
-      "start": null,
-      "end": null
+      "start": "2027-09-17",
+      "end": "2027-10-09"
     },
-    "date_precision": "tbc",
+    "date_precision": "exact",
     "focus_teams": [
       "Azerbaijan",
       "Uzbekistan"
     ],
-    "headline": "阿塞拜疆与乌兹别克斯坦已获 2027 世青赛联合主办权；日期、晋级球队和分组待定。",
+    "headline": "阿塞拜疆与乌兹别克斯坦合办 2027 世青赛，国际足联已确定赛期为 2027-09-17 至 2027-10-09；晋级球队和分组待定。",
     "notes": [
       "FIFA Council 于 2025-10-02 任命阿塞拜疆和乌兹别克斯坦为联合主办国。",
       "当前只记录官方确认的主办身份，不推断自动晋级或未公布的决赛圈球队。",
-      "截至 2026-07-12，比赛日期和决赛圈抽签尚未公布。"
+      "国际足联理事会主席团 2026-10-22 确定赛期为 2027-09-17 至 2027-10-09；决赛圈抽签尚未进行。"
     ],
     "sources": [
       {
         "label": "FIFA Council appoints 2027 co-hosts",
         "publisher": "FIFA",
         "url": "https://inside.fifa.com/organisation/fifa-council/media-releases/fifa-council-calls-for-peace-and-takes-key-decisions-on-football-governance"
+      },
+      {
+        "label": "FIFA: Bureau of the Council sets the U-20 World Cup 2027 dates",
+        "publisher": "FIFA",
+        "url": "https://inside.fifa.com/en/news/bureau-council-key-decisions"
       }
     ]
   },
@@ -1315,7 +1433,7 @@
     "last_checked": "2026-05-22",
     "date_range": {
       "start": "2026-01-06",
-      "end": "2026-01-25"
+      "end": "2026-01-24"
     },
     "focus_teams": [
       "China PR",
@@ -1324,7 +1442,7 @@
     ],
     "headline": "中国队首次打进 U23 亚洲杯决赛，0 比 4 负于日本获亚军，为该项赛事创办以来最佳成绩。",
     "notes": [
-      "日本在 2026-01-25 决赛 4 比 0 击败中国队，完成卫冕并拿到队史第三冠。",
+      "日本在 2026-01-24 决赛 4 比 0 击败中国队，完成卫冕并拿到队史第三冠。",
       "中国队获得亚军。该届名单适合继续补充球员职业去向。",
       "韩国队在 2026-01-24 三四名决赛点球负于越南，最终排名第四。"
     ],
@@ -1669,7 +1787,7 @@
     "focus_level": "reference",
     "competition_level": "senior-top-flight",
     "status": "completed",
-    "last_checked": "2026-11-09",
+    "last_checked": "2026-11-13",
     "date_range": {
       "start": "2026-03-06",
       "end": "2026-11-08"
@@ -1683,7 +1801,7 @@
       "Qingdao West Coast FC",
       "Qingdao Hainiu FC"
     ],
-    "headline": "2026 中国成年男子顶级职业联赛；本赛事统计只包含中超一线队联赛，不与足协杯、U21 联赛或低级别联赛合并。",
+    "headline": "2026 中国成年男子顶级职业联赛已于 2026-11-08 收官：大连英博与成都蓉城同积 52 分，大连英博凭相互胜负关系夺冠，成都蓉城获亚军；武汉三镇、青岛海牛降级。本赛事统计只包含中超一线队联赛，不与足协杯、U21 联赛或低级别联赛合并。",
     "statistics_scope": "senior-league-only",
     "update_cadence": "每轮赛后更新已跟踪球员；每月末复核累计出场、首发、替补、进球和分钟。",
     "notes": [
@@ -1691,7 +1809,10 @@
       "同一球员若已在库内按 U17 或 U23 赛事建档，本轮不重复建第二条，而是补充 2026 中超参赛记录和标签。",
       "具备欧洲留洋经历的 U23 样本，优先补当前俱乐部、留洋节点和外部链接。",
       "2026-10-03 月度复核：中国足协竞赛日历写明中超于 9 月 6 日后为亚运会备战休赛，赛季计划于 11 月 8 日结束。公开聚合库对多名 U21/U23 样本的出场/分钟口径不一致，因此除可逐场拼出的刘诚宇中超记录外，其余样本继续保留 null，不把冲突数字写入 raw。",
-      "2026-11-09 核查：2026 中超已于 11 月 8 日完成收官轮，赛事状态更新为 completed。公开聚合库的青年球员出场/分钟口径冲突仍未解决，相关数据继续保留 null。"
+      "2026-10-24 第 29 轮，武汉三镇主场 3 比 5 负山东泰山，提前一轮降级；同轮重庆铜梁龙 2 比 0 胜已提前降级的青岛海牛。",
+      "2026-11-08 第 30 轮收官：大连英博主场 3 比 1 胜天津津门虎，成都蓉城客场 2 比 3 负山东泰山。两队同积 52 分，大连英博凭相互胜负关系夺冠，成都蓉城获亚军。",
+      "2026-11-09 核查：2026 中超已于 11 月 8 日完成收官轮，赛事状态更新为 completed。公开聚合库的青年球员出场/分钟口径冲突仍未解决，相关数据继续保留 null。",
+      "2026-11-13 收口复核：已跟踪青年样本的赛季最终出场、首发、替补、进球和分钟尚未逐人闭合；刘诚宇仍停在 2026-09-06 的 12 场 414 分钟口径，其余样本继续保留 null。"
     ],
     "sources": [
       {
@@ -1708,6 +1829,16 @@
         "label": "2026 CSL season-ending report",
         "publisher": "China News Service",
         "url": "https://news.qq.com/rain/a/20261108A0BQ7S00"
+      },
+      {
+        "label": "Xinhua: Dalian Yingbo win the 2026 CSL title on the final day",
+        "publisher": "Xinhua",
+        "url": "https://www.news.cn/sports/20261109/4d314ac54d224e7db0acb2a0daea09d1/c.html"
+      },
+      {
+        "label": "Xinhua: round 29, Wuhan Three Towns relegated",
+        "publisher": "Xinhua",
+        "url": "https://www.news.cn/sports/20261026/11a6986c4b08496db5fee9ccf75c8349/c.html"
       }
     ]
   },
@@ -1718,7 +1849,7 @@
     "focus_level": "reference",
     "competition_level": "senior-second-tier",
     "status": "in-progress",
-    "last_checked": "2026-07-19",
+    "last_checked": "2026-11-13",
     "date_range": {
       "start": "2026-03-01",
       "end": "2026-12-31"
@@ -1728,13 +1859,19 @@
     "statistics_scope": "senior-league-only",
     "update_cadence": "每轮更新新增样本；每月末复核累计统计。",
     "notes": [
-      "当前建立独立赛事边界，尚无本批青年样本挂接时保持空样本，不从其他级别借数。"
+      "当前建立独立赛事边界，尚无本批青年样本挂接时保持空样本，不从其他级别借数。",
+      "2026-10-11 第 26 轮，广东广州豹 3 比 1 胜定南赣联，提前四轮锁定中甲冠军并冲超；第二个冲超名额本次未核对。"
     ],
     "sources": [
       {
         "label": "2026 CFA competition calendar",
         "publisher": "Chinese Football Association",
         "url": "https://www.thecfa.cn/lstz/20251120/37089.html"
+      },
+      {
+        "label": "Shenzhen News: Guangdong Guangzhou Leopards clinch promotion and the League One title",
+        "publisher": "Shenzhen Press Group",
+        "url": "https://www.sznews.com/news/content/2026-10/12/content_32189833.htm"
       }
     ]
   },
@@ -1772,7 +1909,7 @@
     "focus_level": "reference",
     "competition_level": "senior-cup",
     "status": "in-progress",
-    "last_checked": "2026-07-19",
+    "last_checked": "2026-11-13",
     "date_range": {
       "start": "2026-01-01",
       "end": "2026-12-31"
@@ -1782,13 +1919,19 @@
     "statistics_scope": "senior-cup-only",
     "update_cadence": "每轮结束后更新；月末与联赛统计做赛事 ID 交叉检查。",
     "notes": [
-      "同一球员代表同一俱乐部参加联赛和足协杯时必须保留两条独立参与记录。"
+      "同一球员代表同一俱乐部参加联赛和足协杯时必须保留两条独立参与记录。",
+      "2026-11-01 首场半决赛，云南玉昆主场 4 比 3 胜大连英博，队史首次进入足协杯决赛；决赛尚未进行，杯赛出场仍不并入联赛统计。"
     ],
     "sources": [
       {
         "label": "CFA Cup official hub",
         "publisher": "Chinese Football Association",
         "url": "https://www.thecfa.cn/zuxiebei/index.html"
+      },
+      {
+        "label": "Xinhua: Yunnan Yukun beat Dalian Yingbo to reach a first FA Cup final",
+        "publisher": "Xinhua",
+        "url": "https://www.news.cn/sports/20261102/209096cb26e0415bb7d67875dee2c963/c.html"
       }
     ]
   },
@@ -2033,12 +2176,12 @@
     "short_name": "苏超 2026",
     "focus_level": "reference",
     "competition_level": "senior-regional-city-league",
-    "status": "in-progress",
-    "date_precision": "open-ended",
-    "last_checked": "2026-08-02",
+    "status": "completed",
+    "date_precision": "exact",
+    "last_checked": "2026-11-13",
     "date_range": {
       "start": "2026-04-11",
-      "end": null
+      "end": "2026-10-31"
     },
     "focus_teams": [
       "Nanjing City Team",
@@ -2055,7 +2198,7 @@
       "Taizhou City Team",
       "Suqian City Team"
     ],
-    "headline": "2026江苏省城市足球联赛当前赛季；647名有效报名球员中有430名U22球员、224名在册学生球员，并执行U22以下6名球员上场政策。",
+    "headline": "2026江苏省城市足球联赛于 2026-10-31 收官，无锡队在南京奥体中心决赛 2 比 1 胜常州队夺冠；赛季 647 名有效报名球员中有 430 名 U22 球员、224 名在册学生球员，并执行 U22 以下 6 名球员上场政策。",
     "statistics_scope": "senior-regional-city-league-only",
     "update_cadence": "按月复核U22规则、学生球员名单、实际出场和国字号/职业注册变化。",
     "youth_snapshot": {
@@ -2069,7 +2212,9 @@
     "notes": [
       "赛事年轻化是成年比赛机会政策，不应把所有U22球员统称为青训球员；本仓库仅为有学校、省队、社会青训、俱乐部或国字号直接来源的样本建立路径。",
       "当前具名样本包括徐州队苗润东，以及无锡队周禹呈、刘靖磊、常永浩、赵启森；他们分别连接江苏常晋/江宁基地、宜兴校园足球、江苏09/10省队和国字号观察节点。",
-      "江苏青训另按县级普及、市级青训中心布局、省级青训中心精英培养，以及市级U10-U15、省级U16以上的1+N模式建设；苏超只是成年赛事桥梁之一。"
+      "江苏青训另按县级普及、市级青训中心布局、省级青训中心精英培养，以及市级U10-U15、省级U16以上的1+N模式建设；苏超只是成年赛事桥梁之一。",
+      "2026-10-31 决赛在南京奥体中心体育场进行，无锡队 2 比 1 胜常州队获得总冠军，现场观众 62356 人。本届 13 支城市队，常规赛单循环后进入主客场两回合淘汰赛，全季 91 场。",
+      "站内具名样本周禹呈、刘靖磊、常永浩、赵启森属于冠军无锡队；他们的逐场出场以及是否在决赛登场尚未核对，不写入。"
     ],
     "sources": [
       {
@@ -2086,6 +2231,16 @@
         "label": "Nanjing team 2026 roster composition",
         "publisher": "Nanjing Municipal Government",
         "url": "https://www.nanjing.gov.cn/njxx/202603/t20260327_5813430.html"
+      },
+      {
+        "label": "Xinhua Daily: Wuxi beat Changzhou 2-1 in the 2026 final",
+        "publisher": "Xinhua Daily / Guangming Online",
+        "url": "https://m.gmw.cn/2026-11/01/content_1304581387.htm"
+      },
+      {
+        "label": "Xinhua: Suchao 2.0 season review",
+        "publisher": "Xinhua",
+        "url": "https://www.news.cn/sports/20261102/fe9c22e409804b4f8c74e8d13e5c70a6/c.html"
       }
     ]
   }

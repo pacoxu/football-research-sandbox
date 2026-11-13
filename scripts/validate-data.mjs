@@ -1205,7 +1205,14 @@ function validateU20ArchiveCoverage(tournaments) {
     }
     if (tournament.status === "upcoming") {
       assert(tournament.champion === null && tournament.runner_up === null, `Future U20 event must not have finalists: ${tournament.id}`);
-      assert(tournament.date_precision === "tbc", `Future U20 event must keep dates pending: ${tournament.id}`);
+      if (tournament.date_precision === "exact") {
+        assert(
+          tournament.source_version.some((source) => source.fields.includes("date_range")),
+          `Announced U20 dates need a source_version entry covering date_range: ${tournament.id}`
+        );
+      } else {
+        assert(tournament.date_precision === "tbc", `Future U20 event must keep dates pending until announced: ${tournament.id}`);
+      }
       assert(tournament.final_draw.status === "pending", `Future U20 draw must remain pending: ${tournament.id}`);
     }
   }
@@ -2428,10 +2435,10 @@ function validateChina2026Milestones(archive, dataset) {
   );
   assert(
     archive.items[3].summary.zh.includes("首次八强") &&
-      archive.items[3].summary.zh.includes("没有赛果") &&
+      archive.items[3].summary.zh.includes("1 比 2") &&
       archive.items[3].do_not_write.zh.includes("1999") &&
       archive.items[3].do_not_write.zh.includes("四强"),
-    "U17 women's milestone must stay a first quarter-final without a Brazil result"
+    "U17 women's milestone must stay a first quarter-final that ended 1-2 against Brazil"
   );
 }
 

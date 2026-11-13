@@ -23,6 +23,13 @@ test("picks a focus tournament from the real archive without throwing on null da
   }
 });
 
+test("shows the U-17 World Cup before it starts and while it runs", () => {
+  const before = pickFocusTournament(overview.tournament_archive, { today: "2026-11-13", getFocusRank });
+  const during = pickFocusTournament(overview.tournament_archive, { today: "2026-11-25", getFocusRank });
+  assert.equal(before?.id, "fifa-u17-world-cup-2026");
+  assert.equal(during?.id, "fifa-u17-world-cup-2026");
+});
+
 test("never keeps a finished event in the current slot because of a stale status", () => {
   const stale = { id: "stale", status: "ongoing", date_range: { start: "2026-07-05", end: "2026-07-11" } };
   const undated = { id: "tbc", status: "upcoming", date_range: { start: null, end: null } };
