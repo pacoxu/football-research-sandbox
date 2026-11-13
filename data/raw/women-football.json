@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-30",
+  "checked_at": "2026-11-13",
   "summary": {
-    "zh": "本页收录国际足联 U17 女足世界杯届次、中国队决赛圈路径，以及中国女足球员旅欧和女子五大联赛样本。2026 年赛事仍在进行，八强对巴西还没有赛果。",
-    "en": "This page records FIFA U-17 Women's World Cup editions, China PR's finals path, and Chinese players' European moves alongside the women's big five. The 2026 tournament is still in progress, and the quarter-final against Brazil has no result."
+    "zh": "本页收录国际足联 U17 女足世界杯届次、中国队决赛圈路径，以及中国女足球员旅欧和女子五大联赛样本。2026 年赛事已于 11 月 7 日结束：中国队首次打进八强，八强 1 比 2 负巴西；尼日利亚在决赛 2 比 1 胜日本夺冠。",
+    "en": "This page records FIFA U-17 Women's World Cup editions, China PR's finals path, and Chinese players' European moves alongside the women's big five. The 2026 tournament ended on 7 November: China PR reached a first quarter-final and lost 1-2 to Brazil, and Nigeria beat Japan 2-1 in the final."
   },
   "scope_note": {
     "zh": "这是研究样本，不是中国足协或国际足联的全量名单。女子五大联赛指英格兰女足超级联赛、西班牙 Liga F、德国女足甲级联赛、法国女足超级联赛和意大利女足甲级联赛。美国 NWSL、瑞士女超、葡萄牙女超、苏格兰女足联赛和澳大利亚女足联赛另列。加盟报道不等于出场次数；媒体转述的场次不写入统计字段。",
@@ -11,8 +11,8 @@
   },
   "u17_world_cup": {
     "summary": {
-      "zh": "U17 女足世界杯 2008 年创办。2024 年及以前为两年一届、16 队；2025 年起改为每年一届、24 队。已完赛九届的冠军是朝鲜 4 次、西班牙 2 次、韩国、法国和日本各 1 次。中国队 2012 年首次进入决赛圈；已完赛届次的最好成绩是 2025 年十六强。",
-      "en": "The U-17 Women's World Cup began in 2008. Through 2024 it was biennial with 16 teams; from 2025 it is annual with 24. Across nine completed editions, Korea DPR have four titles, Spain two, and Korea Republic, France and Japan one each. China PR first reached the finals in 2012. Their best finish in a completed edition is the 2025 round of 16."
+      "zh": "U17 女足世界杯 2008 年创办。2024 年及以前为两年一届、16 队；2025 年起改为每年一届、24 队。已完赛十届的冠军是朝鲜 4 次、西班牙 2 次、韩国、法国、日本和尼日利亚各 1 次。中国队 2012 年首次进入决赛圈；最好成绩是 2026 年八强。",
+      "en": "The U-17 Women's World Cup began in 2008. Through 2024 it was biennial with 16 teams; from 2025 it is annual with 24. Across ten completed editions, Korea DPR have four titles, Spain two, and Korea Republic, France, Japan and Nigeria one each. China PR first reached the finals in 2012. Their best finish is the 2026 quarter-final."
     },
     "lineage": [
       {
@@ -221,21 +221,21 @@
         "id": "fifa-u17-womens-world-cup-2026",
         "year": 2026,
         "host": "Morocco",
-        "status": "in-progress",
+        "status": "completed",
         "date_range": {
           "start": "2026-10-17",
           "end": "2026-11-07"
         },
         "finals_teams": 24,
-        "champion": null,
-        "runner_up": null,
-        "third_place": null,
-        "fourth_place": null,
-        "final_score": null,
-        "china_stage": "quarter-final-scheduled",
+        "champion": "Nigeria",
+        "runner_up": "Japan",
+        "third_place": "Korea DPR",
+        "fourth_place": "Brazil",
+        "final_score": "2-1",
+        "china_stage": "quarter-final",
         "china_summary": {
-          "zh": "中国队以 E 组头名出线，十六强点球淘汰法国，八强将于 2026-11-01 对阵巴西。八强及之后没有赛果。",
-          "en": "China PR won Group E, beat France on penalties in the round of 16, and are scheduled to play Brazil in the quarter-final on 1 November 2026. There is no result from the quarter-final onward."
+          "zh": "中国队以 E 组头名出线，十六强点球淘汰法国，八强 1 比 2 负巴西，首次进入八强。决赛尼日利亚 2 比 1 胜日本，朝鲜获季军。",
+          "en": "China PR won Group E, beat France on penalties in the round of 16 and lost 1-2 to Brazil in their first quarter-final. Nigeria beat Japan 2-1 in the final; Korea DPR took third place."
         },
         "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026"
       }
@@ -345,20 +345,20 @@
           "date": "2026-11-01",
           "stage": "quarter-final",
           "opponent": "Brazil",
-          "played": false,
-          "scoreline": null,
-          "china_goals": null,
-          "opponent_goals": null,
-          "decided_by": null,
+          "played": true,
+          "scoreline": "1-2",
+          "china_goals": 1,
+          "opponent_goals": 2,
+          "decided_by": "regulation",
           "scorers": {
-            "zh": "比赛尚未进行。",
-            "en": "The match has not been played."
+            "zh": "吴逸晨 42 分钟。巴西进球：海伦娜下半场开场 1 分钟、终场前各一球。",
+            "en": "Wu Yichen 42'. Brazil: Helena, one minute into the second half and again near the end."
           },
           "verification_status": "verified",
-          "source_url": "https://www.fifa.com/en/tournaments/womens/u17womensworldcup/morocco-2026/scores-fixtures",
+          "source_url": "https://www.news.cn/sports/20261102/7da32cde7858455f94a3994eeff65999/c.html",
           "note": {
-            "zh": "八强对阵已排定。核查日 2026-10-30 没有赛果，不能预写胜负。",
-            "en": "The quarter-final pairing is set. As of the 30 October 2026 check there is no result, and none is inferred."
+            "zh": "新华社拉巴特 11 月 1 日电记录中国先入一球后被巴西 1 比 2 逆转，止步八强；进球者出自同一稿件，国际足联比赛中心页面本次未逐条回核。",
+            "en": "Xinhua's Rabat report of 1 November records China PR taking the lead before losing 1-2 to Brazil. Scorers come from the same report; the FIFA match-centre page was not checked line by line."
           }
         }
       ]
@@ -896,6 +896,16 @@
       "label": "Xinhua: Shao Ziqin signs with Benfica Women",
       "url": "https://english.news.cn/20260407/d114ca932d354da0952bc77b8619674c/c.html",
       "checked_at": "2026-10-30"
+    },
+    {
+      "label": "Xinhua: China PR 1-2 Brazil in the quarter-final",
+      "url": "https://www.news.cn/sports/20261102/7da32cde7858455f94a3994eeff65999/c.html",
+      "checked_at": "2026-11-13"
+    },
+    {
+      "label": "FIFA: Nigeria beat Japan 2-1 in the 2026 final",
+      "url": "https://inside.fifa.com/news/infantino-history-nigeria-u17-womens-world-japan-dprkorea",
+      "checked_at": "2026-11-13"
     }
   ]
 }

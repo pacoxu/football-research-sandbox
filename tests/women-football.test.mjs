@@ -9,8 +9,10 @@ const page = await readFile(new URL("../women.html", import.meta.url), "utf8");
 
 test("keeps the U17 women's World Cup separate from the men's archive", () => {
   validateWomenFootball(payload);
-  assert.equal(payload.u17_world_cup.editions.at(-1).status, "in-progress");
-  assert.equal(payload.u17_world_cup.editions.at(-1).champion, null);
+  assert.equal(payload.u17_world_cup.editions.at(-1).status, "completed");
+  assert.equal(payload.u17_world_cup.editions.at(-1).champion, "Nigeria");
+  assert.equal(payload.u17_world_cup.editions.at(-1).runner_up, "Japan");
+  assert.equal(payload.u17_world_cup.editions.at(-1).final_score, "2-1");
   const completedChina = payload.u17_world_cup.editions.filter(
     (edition) => edition.status === "completed" && edition.china_stage !== "not-in-finals"
   );
@@ -20,19 +22,21 @@ test("keeps the U17 women's World Cup separate from the men's archive", () => {
       [2012, "group-stage"],
       [2014, "group-stage"],
       [2022, "group-stage"],
-      [2025, "round-of-16"]
+      [2025, "round-of-16"],
+      [2026, "quarter-final"]
     ]
   );
 });
 
-test("leaves the 2026 quarter-final unplayed", () => {
+test("records the 2026 quarter-final loss to Brazil", () => {
   const matches = payload.u17_world_cup.china_2026.matches;
-  assert.equal(matches.filter((match) => match.played).length, 4);
+  assert.equal(matches.filter((match) => match.played).length, 5);
   const quarterFinal = matches.find((match) => match.stage === "quarter-final");
-  assert.equal(quarterFinal.played, false);
-  assert.equal(quarterFinal.scoreline, null);
+  assert.equal(quarterFinal.played, true);
+  assert.equal(quarterFinal.scoreline, "1-2");
   assert.equal(quarterFinal.opponent, "Brazil");
-  assert.match(quarterFinal.note.zh, /没有赛果/);
+  assert.equal(quarterFinal.decided_by, "regulation");
+  assert.equal(payload.u17_world_cup.editions.at(-1).china_stage, "quarter-final");
 });
 
 test("splits women's big five from Swiss, Portuguese and NWSL spells", () => {
@@ -49,6 +53,6 @@ test("publishes a women's page and loads the topic into site data", async () => 
   assert.match(page, /data-page="women"/);
   assert.match(page, /href="\.\/women\.html"/);
   const dataset = await loadDataset();
-  assert.equal(dataset.womenFootball.checked_at, "2026-10-30");
+  assert.equal(dataset.womenFootball.checked_at, "2026-11-13");
   assert.equal(dataset.womenFootball.players.length, 9);
 });

@@ -177,22 +177,21 @@ const allowedYouthCompetitionTypes = new Set([
 ]);
 
 const issue16DeepSampleIds = new Set([
-  "jp-rei-ono-2009",
-  "jp-aran-sato-2010",
-  "jp-takaya-sekine-2009",
+  // AFC U17 2026 samples were rebuilt from the AFC final registration on 2026-11-13;
+  // the Japan ones carry the JFA squad page as their independent layer.
+  "jp-maki-kitahara-2009",
+  "jp-yuzo-takeuchi-2010",
+  "jp-koki-kurahashi-2009",
   "jp-masataka-kobayashi-2005",
   "jp-kaito-tsuchiya-2006",
   "jp-kosei-ogura-2005",
-  "kr-seung-min-lee-2009",
-  "kr-geon-woo-park-2009",
   "kr-moon-hyunho-2003",
   "kr-bae-hyunseo-2005",
   "kr-lee-chanouk-2003",
   "kr-kim-taewon-2005",
   "kr-kim-yonghak-2003",
-  "jp-ryosuke-furukawa-2009",
-  "jp-tomoyasu-hamasaki-2005",
-  "kr-woo-jin-jin-2009"
+  "jp-anthony-udemba-motosuna-2009",
+  "jp-tomoyasu-hamasaki-2005"
 ]);
 
 const issue47DeepSampleIds = new Set([
@@ -350,6 +349,14 @@ function isIsoDate(value) {
 
 export function validateTournamentLifecycle(tournament, referenceDate) {
   assert(isIsoDate(referenceDate), `Invalid tournament lifecycle reference date: ${referenceDate}`);
+  const start = tournament.date_range?.start ?? null;
+  if (tournament.status === "upcoming" && isIsoDate(start)) {
+    assert(
+      start >= referenceDate,
+      `Started upcoming tournament: ${tournament.id} (upcoming, started ${start})`
+    );
+    return;
+  }
   const activeStatuses = new Set(["ongoing", "in-progress"]);
   if (!activeStatuses.has(tournament.status) || tournament.date_range?.end === null) {
     return;
@@ -363,6 +370,94 @@ export function validateTournamentLifecycle(tournament, referenceDate) {
     tournament.date_range.end >= referenceDate,
     `Expired active tournament: ${tournament.id} (${tournament.status}, ended ${tournament.date_range.end})`
   );
+}
+
+const LIFECYCLE_MODES = new Set(["error", "warn"]);
+const PENDING_MATCH_STATUSES = new Set(["scheduled", "reported-schedule"]);
+
+// Tournaments tracked in both tournaments.json and tournament-archive.json must
+// tell the same story; otherwise a detail page mixes a closed headline with an open status.
+export function validateFocusArchiveConsistency(tournaments, archive) {
+  const archiveById = new Map(archive.map((entry) => [entry.id, entry]));
+  for (const tournament of tournaments) {
+    const archived = archiveById.get(tournament.id);
+    if (!archived) {
+      continue;
+    }
+    assert(
+      archived.status === tournament.status,
+      `Tournament status differs between tournaments.json and tournament-archive.json: ${tournament.id} (${tournament.status} vs ${archived.status})`
+    );
+    for (const field of ["start", "end"]) {
+      const focusValue = tournament.date_range?.[field] ?? null;
+      const archiveValue = archived.date_range?.[field] ?? null;
+      assert(
+        focusValue === archiveValue,
+        `Tournament ${field} date differs between tournaments.json and tournament-archive.json: ${tournament.id} (${focusValue} vs ${archiveValue})`
+      );
+    }
+  }
+}
+
+// Matches dated before the reference date must not stay unplayed or TBD.
+export function findStaleScheduledMatches(dataset, referenceDate) {
+  assert(isIsoDate(referenceDate), `Invalid stale-match reference date: ${referenceDate}`);
+  const issues = [];
+  const isPast = (date) => isIsoDate(date) && date < referenceDate;
+
+  for (const tournament of dataset.tournamentArchive ?? []) {
+    for (const match of tournament.china_matches ?? []) {
+      if (isPast(match.date) && !["W", "D", "L"].includes(match.result)) {
+        issues.push(`Past archive match without a result: ${tournament.id} ${match.date} vs ${match.opponent}`);
+      }
+    }
+  }
+  for (const tournament of dataset.tournaments ?? []) {
+    for (const fixture of tournament.china_group_stage?.fixtures ?? []) {
+      if (isPast(fixture.date) && PENDING_MATCH_STATUSES.has(fixture.status)) {
+        issues.push(`Past fixture still ${fixture.status}: ${tournament.id} ${fixture.date} vs ${fixture.opponent}`);
+      }
+    }
+  }
+  for (const match of dataset.womenFootball?.u17_world_cup?.china_2026?.matches ?? []) {
+    if (isPast(match.date) && match.played === false) {
+      issues.push(`Past women's match still unplayed: ${match.id} ${match.date}`);
+    }
+  }
+  const coaches = dataset.chinaMenYouthCoaches;
+  const camps = [
+    ["senior", coaches?.senior_men_window?.latest_camp],
+    ...(coaches?.team_cycles ?? []).map((cycle) => [cycle.team_label, cycle.latest_camp])
+  ];
+  for (const [label, camp] of camps) {
+    for (const match of camp?.matches ?? []) {
+      if (isPast(match.date) && PENDING_MATCH_STATUSES.has(match.status)) {
+        issues.push(`Past camp match still ${match.status}: ${label} ${match.date} vs ${match.opponent}`);
+      }
+    }
+  }
+  return issues;
+}
+
+export function reportLifecycleIssues(allIssues, mode = "error") {
+  assert(LIFECYCLE_MODES.has(mode), `Invalid lifecycle mode: ${mode}`);
+  // The same event can be flagged from tournaments.json and the archive.
+  const issues = [...new Set(allIssues)];
+  if (issues.length === 0) {
+    return;
+  }
+  if (mode === "error") {
+    throw new Error(
+      `Stale lifecycle data (${issues.length}). Update the records or run with LIFECYCLE_CHECK=warn:\n- ${issues.join("\n- ")}`
+    );
+  }
+  for (const issue of issues) {
+    if (process.env.GITHUB_ACTIONS === "true") {
+      console.log(`::warning title=Stale data::${issue}`);
+    } else {
+      console.warn(`warning: ${issue}`);
+    }
+  }
 }
 
 function normalizeIdentityName(value) {
@@ -1205,7 +1300,14 @@ function validateU20ArchiveCoverage(tournaments) {
     }
     if (tournament.status === "upcoming") {
       assert(tournament.champion === null && tournament.runner_up === null, `Future U20 event must not have finalists: ${tournament.id}`);
-      assert(tournament.date_precision === "tbc", `Future U20 event must keep dates pending: ${tournament.id}`);
+      if (tournament.date_precision === "exact") {
+        assert(
+          tournament.source_version.some((source) => source.fields.includes("date_range")),
+          `Announced U20 dates need a source_version entry covering date_range: ${tournament.id}`
+        );
+      } else {
+        assert(tournament.date_precision === "tbc", `Future U20 event must keep dates pending until announced: ${tournament.id}`);
+      }
       assert(tournament.final_draw.status === "pending", `Future U20 draw must remain pending: ${tournament.id}`);
     }
   }
@@ -2428,10 +2530,10 @@ function validateChina2026Milestones(archive, dataset) {
   );
   assert(
     archive.items[3].summary.zh.includes("首次八强") &&
-      archive.items[3].summary.zh.includes("没有赛果") &&
+      archive.items[3].summary.zh.includes("1 比 2") &&
       archive.items[3].do_not_write.zh.includes("1999") &&
       archive.items[3].do_not_write.zh.includes("四强"),
-    "U17 women's milestone must stay a first quarter-final without a Brazil result"
+    "U17 women's milestone must stay a first quarter-final that ended 1-2 against Brazil"
   );
 }
 
@@ -2861,6 +2963,77 @@ function validateAsianCoaches(archive) {
       ),
       `Issue #12 coach stint lacks an official source: ${coachId}`
     );
+  }
+}
+
+const allowedTeamRosterRoles = new Set(["china", "asia", "group-opponent"]);
+const allowedTeamRosterStatuses = new Set(["announced-21", "camp-list", "afc-base", "not-captured"]);
+
+function isLocalizedText(value) {
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    typeof value.zh === "string" &&
+    value.zh.length > 0 &&
+    typeof value.en === "string" &&
+    value.en.length > 0
+  );
+}
+
+export function validateTeamRosters(tournament, playerIds) {
+  const id = tournament.id;
+  const rosters = tournament.team_rosters;
+  assert(Array.isArray(rosters) && rosters.length > 0, `Invalid team_rosters on ${id}`);
+  const groups = new Map((tournament.final_draw?.groups ?? []).map((group) => [group.name, group.teams]));
+  const { start, end } = tournament.date_range ?? {};
+  const seen = new Set();
+  for (const team of rosters) {
+    const label = `${id}/${team.country}`;
+    assert(typeof team.country === "string" && !seen.has(team.country), `Duplicate or missing team roster country: ${label}`);
+    seen.add(team.country);
+    assert(allowedTeamRosterRoles.has(team.role), `Invalid team roster role on ${label}`);
+    assert(allowedTeamRosterStatuses.has(team.squad_status), `Invalid team roster squad_status on ${label}`);
+    const groupTeams = groups.get(team.group);
+    assert(groupTeams?.includes(team.country), `Team roster group does not match the draw on ${label}`);
+    if (["announced-21", "camp-list"].includes(team.squad_status)) {
+      assert(isIsoDate(team.announced_at), `Announced roster needs announced_at on ${label}`);
+    }
+    if (team.announced_at !== undefined) {
+      assert(isIsoDate(team.announced_at) && team.announced_at <= start, `Invalid announced_at on ${label}`);
+    }
+    if (team.head_coach !== undefined) assert(isLocalizedText(team.head_coach), `Invalid head_coach on ${label}`);
+    assert(isLocalizedText(team.note), `Missing team roster note on ${label}`);
+    if (team.qualification !== undefined) assert(isLocalizedText(team.qualification), `Invalid qualification on ${label}`);
+    for (const fixture of team.fixtures ?? []) {
+      assert(isIsoDate(fixture.date) && fixture.date >= start && fixture.date <= end, `Fixture outside the tournament on ${label}`);
+      assert(groupTeams.includes(fixture.opponent), `Fixture opponent is not in ${team.group} on ${label}`);
+      if (fixture.kickoff_local !== undefined) assert(/^\d{2}:\d{2}$/.test(fixture.kickoff_local), `Invalid kickoff_local on ${label}`);
+      if (fixture.kickoff_beijing !== undefined) {
+        assert(/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/.test(fixture.kickoff_beijing), `Invalid kickoff_beijing on ${label}`);
+      }
+    }
+    const entries = [];
+    for (const group of team.groups ?? []) {
+      assert(isLocalizedText(group.label) && Array.isArray(group.entries) && group.entries.length > 0, `Invalid roster group on ${label}`);
+      entries.push(...group.entries);
+    }
+    for (const entry of entries) {
+      assert(typeof entry.player === "string" && entry.player.length > 0, `Roster entry needs a printed name on ${label}`);
+      if (entry.player_id !== undefined) assert(playerIds.has(entry.player_id), `Unknown roster player ${entry.player_id} on ${label}`);
+      if (entry.squad_number !== undefined) {
+        assert(Number.isInteger(entry.squad_number) && entry.squad_number >= 1 && entry.squad_number <= 25, `Invalid squad_number on ${label}`);
+      }
+    }
+    const linked = entries.map((entry) => entry.player_id).filter(Boolean);
+    assert(new Set(linked).size === linked.length, `Duplicate roster player on ${label}`);
+    if (team.squad_status === "announced-21") assert(entries.length <= 21, `More than 21 players on ${label}`);
+    if (team.squad_status === "camp-list") assert(entries.length === 0 || entries.length >= 21, `Short camp list on ${label}`);
+    if (team.squad_status === "afc-base") assert(entries.length === 23, `AFC base roster must list 23 players on ${label}`);
+    if (team.squad_status === "not-captured") assert(entries.length === 0, `Uncaptured roster must not list players on ${label}`);
+    assert(Array.isArray(team.sources) && team.sources.length > 0, `Missing team roster sources on ${label}`);
+    for (const source of team.sources) {
+      assert(typeof source.label === "string" && /^https?:\/\//.test(source.url), `Invalid team roster source on ${label}`);
+    }
   }
 }
 
@@ -3367,8 +3540,20 @@ export function validatePlayerCompetitionReference(player, entry, tournamentIds,
   );
 }
 
-export async function validateData(referenceDate = new Date().toISOString().slice(0, 10)) {
+export async function validateData(
+  referenceDate = new Date().toISOString().slice(0, 10),
+  { lifecycle = "error" } = {}
+) {
   assert(isIsoDate(referenceDate), `Invalid validation reference date: ${referenceDate}`);
+  assert(LIFECYCLE_MODES.has(lifecycle), `Invalid lifecycle mode: ${lifecycle}`);
+  const lifecycleIssues = [];
+  const checkLifecycle = (check) => {
+    try {
+      check();
+    } catch (error) {
+      lifecycleIssues.push(error.message);
+    }
+  };
   await validateJsonSchemas({ includeSite: false });
   const dataset = await loadDataset();
   validateBigFiveDebutForecastInput(dataset.bigFiveDebutForecast, dataset.players);
@@ -3822,7 +4007,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
     validateTournamentDateRange(tournament, "focus tournament");
-    validateTournamentLifecycle(tournament, referenceDate);
+    checkLifecycle(() => validateTournamentLifecycle(tournament, referenceDate));
     validateTournamentBroadcastPlan(tournament);
     validateTournamentTicketing(tournament);
     if (tournament.id === "fifa-world-cup-2030") {
@@ -3921,6 +4106,11 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   );
   validateEuropeTopLeaguesJapanKorea(dataset.europeTopLeaguesJapanKorea);
   validateWomenFootball(dataset.womenFootball);
+  for (const edition of dataset.womenFootball?.u17_world_cup?.editions ?? []) {
+    if (edition.date_range) {
+      checkLifecycle(() => validateTournamentLifecycle(edition, referenceDate));
+    }
+  }
   validateSpainFootballSystem(
     dataset.spainFootballSystem,
     playerIds,
@@ -3968,6 +4158,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
     validateTournamentDateRange(tournament);
+    checkLifecycle(() => validateTournamentLifecycle(tournament, referenceDate));
     if (historicalChinaPlayerStatTournamentIds.has(tournament.id)) {
       validateHistoricalChinaPlayerStats(tournament);
     }
@@ -3979,6 +4170,9 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     }
     if (tournament.regional_history !== undefined) {
       validateRegionalHistory(tournament.regional_history, tournament.id);
+    }
+    if (tournament.team_rosters !== undefined) {
+      validateTeamRosters(tournament, playerIds);
     }
     if (tournament.comparison_rosters !== undefined) {
       assert(Array.isArray(tournament.comparison_rosters), `Invalid comparison_rosters on ${tournament.id}`);
@@ -4068,6 +4262,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     "2034 Cup partial comparison candidates are incomplete"
   );
   validateU20ArchiveCoverage(dataset.tournamentArchive);
+  validateFocusArchiveConsistency(dataset.tournaments, dataset.tournamentArchive);
   validateScoutingWatchlist(dataset.scoutingWatchlist, dataset.players);
 
   if (dataset.chinaMenYouthCoaches !== null) {
@@ -4097,11 +4292,16 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     validateUefaYouthLeague(dataset.uefaYouthLeague, playerIds);
   }
 
+  lifecycleIssues.push(...findStaleScheduledMatches(dataset, referenceDate));
+  reportLifecycleIssues(lifecycleIssues, lifecycle);
+
   return dataset;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const dataset = await validateData();
+  const dataset = await validateData(undefined, {
+    lifecycle: process.env.LIFECYCLE_CHECK === "warn" ? "warn" : "error"
+  });
   console.log(
     `Validated ${dataset.players.length} players, ${dataset.tournaments.length} tournaments, ${dataset.projects.length} projects.`
   );

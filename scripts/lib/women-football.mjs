@@ -4,6 +4,7 @@ const chinaStages = new Set([
   "group-stage",
   "round-of-16",
   "quarter-final-scheduled",
+  "quarter-final",
   "not-applicable"
 ]);
 const buckets = new Set(["big-five", "europe-other", "americas", "oceania"]);
@@ -33,7 +34,7 @@ const expectedChinaStages = {
   "fifa-u17-womens-world-cup-2022": "group-stage",
   "fifa-u17-womens-world-cup-2024": "not-in-finals",
   "fifa-u17-womens-world-cup-2025": "round-of-16",
-  "fifa-u17-womens-world-cup-2026": "quarter-final-scheduled"
+  "fifa-u17-womens-world-cup-2026": "quarter-final"
 };
 const expectedChampions = {
   "fifa-u17-womens-world-cup-2008": "Korea DPR",
@@ -44,7 +45,8 @@ const expectedChampions = {
   "fifa-u17-womens-world-cup-2018": "Spain",
   "fifa-u17-womens-world-cup-2022": "Spain",
   "fifa-u17-womens-world-cup-2024": "Korea DPR",
-  "fifa-u17-womens-world-cup-2025": "Korea DPR"
+  "fifa-u17-womens-world-cup-2025": "Korea DPR",
+  "fifa-u17-womens-world-cup-2026": "Nigeria"
 };
 const expectedBigFiveIds = ["wsl", "liga-f", "frauen-bundesliga", "premiere-ligue", "serie-a-femminile"];
 const expectedPlayerIds = [
@@ -112,7 +114,7 @@ export function validateWomenFootball(payload) {
   }
 
   const current = tournament.editions.find((edition) => edition.id === "fifa-u17-womens-world-cup-2026");
-  assert(current.status === "in-progress", "2026 U17 women's World Cup must stay in progress");
+  assert(current.status === "completed", "2026 U17 women's World Cup closed with the 7 November final");
   assert(current.date_range.start === "2026-10-17" && current.date_range.end === "2026-11-07", "Unexpected 2026 dates");
   const china2026 = tournament.china_2026;
   assert(china2026.group === "E" && china2026.rank === 1 && china2026.points === 9, "Unexpected 2026 China group line");
@@ -124,7 +126,13 @@ export function validateWomenFootball(payload) {
   assert(goalSum === china2026.goals_for, "2026 China group goals do not add up");
   const quarterFinal = china2026.matches.at(-1);
   assert(quarterFinal.id === "u17wwc-2026-china-brazil", "2026 quarter-final id drifted");
-  assert(quarterFinal.played === false && quarterFinal.scoreline === null, "2026 quarter-final must stay unplayed");
+  assert(
+    quarterFinal.played === true &&
+      quarterFinal.scoreline === "1-2" &&
+      quarterFinal.china_goals === 1 &&
+      quarterFinal.opponent_goals === 2,
+    "2026 quarter-final must record the 1-2 loss to Brazil"
+  );
   assert(quarterFinal.opponent === "Brazil" && quarterFinal.date === "2026-11-01", "Unexpected 2026 quarter-final pairing");
   for (const match of china2026.matches) {
     assert(verificationStatuses.has(match.verification_status), `Invalid match verification on ${match.id}`);

@@ -6,6 +6,8 @@ import {
   deriveQualityStatus,
   getSourceTier
 } from "./data-insights.js";
+import { formatIsoDate, getLocalIsoDate } from "./dates.js";
+import { pickFocusTournament } from "./home-focus.js";
 
 const page = document.body.dataset.page;
 const pageDate = document.body.dataset.date || "2026-06-25";
@@ -183,6 +185,7 @@ const UI_COPY = {
     "women.china.group-stage": "小组赛",
     "women.china.round-of-16": "十六强",
     "women.china.quarter-final-scheduled": "八强待赛",
+    "women.china.quarter-final": "八强",
     "women.china.not-applicable": "不适用",
     "women.stage.group": "小组赛",
     "women.stage.round-of-16": "十六强",
@@ -521,6 +524,16 @@ const UI_COPY = {
     "spain.pyramid.note": "点层级可跳到下方球员表。西甲俱乐部名字不等于西甲出场。",
     "spain.pyramid.tier": "第 {tier} 级",
     "spain.pyramid.count": "{count} 条样本",
+    "spain.worldCup.eyebrow": "U17 世界杯",
+    "spain.worldCup.title": "西班牙注册的中国 U17 球员与世少赛",
+    "spain.worldCup.checked": "（核对于 {date}）",
+    "spain.worldCup.club": "西班牙球队",
+    "spain.worldCup.afc": "2026 U17 亚洲杯终报名",
+    "spain.worldCup.camp": "世少赛 25 人集训名单",
+    "spain.worldCup.note": "说明",
+    "spain.worldCup.selected": "入选",
+    "spain.worldCup.notSelected": "未入选",
+    "spain.worldCup.topicLink": "查看 U17 世界杯专题：赛程、中国名单和亚洲各队名单",
     "spain.u19.eyebrow": "荣誉联赛 + 全国二级",
     "spain.u19.title": "西班牙 U19 中国球员",
     "spain.u19.layer": "层级",
@@ -927,6 +940,25 @@ const UI_COPY = {
     "tournamentDetail.keyPlayers.statLine": "{goals} 球 · {assists} 助攻",
     "tournamentDetail.sources.eyebrow": "Sources",
     "tournamentDetail.sources.title": "赛事来源链接",
+    "tournamentDetail.fixtures.scheduled": "未赛",
+    "tournamentDetail.fixtures.vs": "对 {opponent}",
+    "tournamentDetail.fixtures.local": "当地 {time}",
+    "tournamentDetail.fixtures.beijing": "北京时间 {date} {time}",
+    "tournamentDetail.teams.eyebrow": "Teams",
+    "tournamentDetail.teams.title": "亚洲球队与同组对手名单",
+    "tournamentDetail.teams.scope": "名单按各国足协或可靠媒体的公布口径录入；已建档球员可点进球员页。",
+    "tournamentDetail.teams.role.china": "中国",
+    "tournamentDetail.teams.role.asia": "其他亚洲球队",
+    "tournamentDetail.teams.role.group-opponent": "中国同组对手",
+    "tournamentDetail.teams.status.announced-21": "已公布 21 人",
+    "tournamentDetail.teams.status.camp-list": "集训名单",
+    "tournamentDetail.teams.status.afc-base": "亚洲杯终报名（世少赛名单待补）",
+    "tournamentDetail.teams.status.not-captured": "名单待补",
+    "tournamentDetail.teams.listed": "已录入 {count} 人",
+    "tournamentDetail.teams.announced": "公布于 {date}",
+    "tournamentDetail.teams.qualification": "晋级途径：{text}",
+    "tournamentDetail.teams.fixtures": "已知赛程",
+    "tournamentDetail.teams.noFixtures": "赛程待补。",
     "playerDetail.notFound.title": "未找到对应球员",
     "playerDetail.notFound.text": "当前链接里的球员 id 不存在，或者该样本还没有进入建档库。",
     "playerDetail.notFound.back": "返回球员列表",
@@ -1349,6 +1381,7 @@ const UI_COPY = {
     "women.china.group-stage": "Group stage",
     "women.china.round-of-16": "Round of 16",
     "women.china.quarter-final-scheduled": "Quarter-final scheduled",
+    "women.china.quarter-final": "Quarter-final",
     "women.china.not-applicable": "Not applicable",
     "women.stage.group": "Group",
     "women.stage.round-of-16": "Round of 16",
@@ -1687,6 +1720,16 @@ const UI_COPY = {
     "spain.pyramid.note": "Jump from a layer to the table below. A La Liga club name is not a La Liga appearance.",
     "spain.pyramid.tier": "Tier {tier}",
     "spain.pyramid.count": "{count} samples",
+    "spain.worldCup.eyebrow": "U17 World Cup",
+    "spain.worldCup.title": "Spain-registered China U17 players and the World Cup",
+    "spain.worldCup.checked": "(checked {date})",
+    "spain.worldCup.club": "Team in Spain",
+    "spain.worldCup.afc": "AFC U17 Asian Cup 2026 finals list",
+    "spain.worldCup.camp": "World Cup camp list (25)",
+    "spain.worldCup.note": "Note",
+    "spain.worldCup.selected": "Selected",
+    "spain.worldCup.notSelected": "Not selected",
+    "spain.worldCup.topicLink": "Open the U17 World Cup page: fixtures, China's list and the Asian squads",
     "spain.u19.eyebrow": "Honour league + second tier",
     "spain.u19.title": "Chinese players in Spanish U19 football",
     "spain.u19.layer": "Layer",
@@ -2093,6 +2136,25 @@ const UI_COPY = {
     "tournamentDetail.keyPlayers.statLine": "{goals} goals · {assists} assists",
     "tournamentDetail.sources.eyebrow": "Sources",
     "tournamentDetail.sources.title": "Tournament source links",
+    "tournamentDetail.fixtures.scheduled": "Scheduled",
+    "tournamentDetail.fixtures.vs": "vs {opponent}",
+    "tournamentDetail.fixtures.local": "local {time}",
+    "tournamentDetail.fixtures.beijing": "Beijing {date} {time}",
+    "tournamentDetail.teams.eyebrow": "Teams",
+    "tournamentDetail.teams.title": "Asian teams and China's group opponents",
+    "tournamentDetail.teams.scope": "Squads follow each federation's announcement or a reliable report; players with a profile link to it.",
+    "tournamentDetail.teams.role.china": "China PR",
+    "tournamentDetail.teams.role.asia": "Other Asian teams",
+    "tournamentDetail.teams.role.group-opponent": "China's group opponents",
+    "tournamentDetail.teams.status.announced-21": "21 announced",
+    "tournamentDetail.teams.status.camp-list": "Camp list",
+    "tournamentDetail.teams.status.afc-base": "AFC finals list (World Cup 21 pending)",
+    "tournamentDetail.teams.status.not-captured": "Squad pending",
+    "tournamentDetail.teams.listed": "{count} listed",
+    "tournamentDetail.teams.announced": "Announced {date}",
+    "tournamentDetail.teams.qualification": "Route: {text}",
+    "tournamentDetail.teams.fixtures": "Known fixtures",
+    "tournamentDetail.teams.noFixtures": "Fixtures to be added.",
     "playerDetail.notFound.title": "Player not found",
     "playerDetail.notFound.text": "The player id in this URL does not exist, or the sample has not entered the dataset yet.",
     "playerDetail.notFound.back": "Back to players",
@@ -2761,7 +2823,38 @@ const COUNTRY_LABELS = {
     "United Arab Emirates": "阿联酋",
     "United States": "美国",
     Uzbekistan: "乌兹别克斯坦",
-    "Canada / Mexico / United States": "加拿大 / 墨西哥 / 美国"
+    "Canada / Mexico / United States": "加拿大 / 墨西哥 / 美国",
+    Algeria: "阿尔及利亚",
+    Brazil: "巴西",
+    Cameroon: "喀麦隆",
+    Colombia: "哥伦比亚",
+    "Costa Rica": "哥斯达黎加",
+    "Côte d'Ivoire": "科特迪瓦",
+    Cuba: "古巴",
+    Ecuador: "厄瓜多尔",
+    Egypt: "埃及",
+    Fiji: "斐济",
+    Greece: "希腊",
+    Haiti: "海地",
+    Honduras: "洪都拉斯",
+    Jamaica: "牙买加",
+    Mali: "马里",
+    Montenegro: "黑山",
+    Morocco: "摩洛哥",
+    Mozambique: "莫桑比克",
+    "New Caledonia": "新喀里多尼亚",
+    "New Zealand": "新西兰",
+    Panama: "巴拿马",
+    "Republic of Ireland": "爱尔兰",
+    Romania: "罗马尼亚",
+    Senegal: "塞内加尔",
+    Tajikistan: "塔吉克斯坦",
+    Tanzania: "坦桑尼亚",
+    Uganda: "乌干达",
+    Uruguay: "乌拉圭",
+    USA: "美国",
+    Venezuela: "委内瑞拉",
+    Vietnam: "越南"
   },
   en: {
     Australia: "Australia",
@@ -3850,16 +3943,7 @@ function formatCompetitionLevel(value) {
 }
 
 function formatDate(value) {
-  if (!value) {
-    return "-";
-  }
-
-  const options =
-    state.language === "en"
-      ? { year: "numeric", month: "short", day: "numeric" }
-      : { year: "numeric", month: "2-digit", day: "2-digit" };
-
-  return new Intl.DateTimeFormat(getLocale(), options).format(new Date(`${value}T00:00:00Z`));
+  return formatIsoDate(value, { locale: getLocale(), language: state.language });
 }
 
 function formatRange(range) {
@@ -5359,6 +5443,87 @@ function renderTournamentLatestRosterView(view, squadEntries) {
   `;
 }
 
+function formatFixtureKickoffs(fixture) {
+  const parts = [];
+  if (fixture.kickoff_local) {
+    parts.push(t("tournamentDetail.fixtures.local", { time: fixture.kickoff_local }));
+  }
+  if (fixture.kickoff_beijing) {
+    const [date, time] = fixture.kickoff_beijing.split(" ");
+    parts.push(t("tournamentDetail.fixtures.beijing", { date: formatDate(date), time }));
+  }
+  if (fixture.venue) {
+    parts.push(fixture.venue);
+  }
+  return parts.join(" · ");
+}
+
+function renderTournamentFixtureCard(fixture, stage) {
+  const kickoffs = formatFixtureKickoffs(fixture);
+  return `
+    <article class="stack-card">
+      <div class="chip-row">
+        <span class="chip">${escapeHtml(t("tournamentDetail.fixtures.scheduled"))}</span>
+      </div>
+      <h3>${escapeHtml(formatTournamentGroupName(stage))} · ${formatDate(fixture.date)}</h3>
+      <p>${escapeHtml(t("tournamentDetail.fixtures.vs", { opponent: formatCountryName(fixture.opponent) }))}</p>
+      ${kickoffs ? `<p class="small-note">${escapeHtml(kickoffs)}</p>` : ""}
+    </article>
+  `;
+}
+
+const TEAM_ROSTER_ROLE_ORDER = ["china", "asia", "group-opponent"];
+
+function renderTournamentTeamRosterCard(team) {
+  const entries = (team.groups ?? []).flatMap((group) => group.entries ?? []);
+  const coach = localizeText(team.head_coach, "");
+  const fixtures = team.fixtures ?? [];
+  const fixtureItems = fixtures
+    .map((fixture) => {
+      const kickoffs = formatFixtureKickoffs(fixture);
+      return `<li>${escapeHtml(formatDate(fixture.date))} · ${escapeHtml(t("tournamentDetail.fixtures.vs", { opponent: formatCountryName(fixture.opponent) }))}${kickoffs ? ` · ${escapeHtml(kickoffs)}` : ""}</li>`;
+    })
+    .join("");
+
+  return `
+    <details class="archive-lineup-toggle team-roster-card"${team.role === "china" ? " open" : ""}>
+      <summary>
+        <strong>${escapeHtml(formatCountryName(team.country))}</strong>
+        · ${escapeHtml(formatTournamentGroupName(team.group))}
+        · ${escapeHtml(t(`tournamentDetail.teams.status.${team.squad_status}`))}
+        ${entries.length > 0 ? `· ${escapeHtml(t("tournamentDetail.teams.listed", { count: entries.length }))}` : ""}
+      </summary>
+      <div class="stack-card">
+        <div class="chip-row">
+          ${coach ? `<span class="chip">${escapeHtml(t("tournamentDetail.squad.headCoach", { name: coach }))}</span>` : ""}
+          ${team.announced_at ? `<span class="chip">${escapeHtml(t("tournamentDetail.teams.announced", { date: formatDate(team.announced_at) }))}</span>` : ""}
+        </div>
+        ${team.qualification ? `<p class="small-note">${escapeHtml(t("tournamentDetail.teams.qualification", { text: localizeText(team.qualification) }))}</p>` : ""}
+        <p class="timeline-label">${escapeHtml(t("tournamentDetail.teams.fixtures"))}</p>
+        ${fixtureItems ? `<ul class="mini-bullet-list">${fixtureItems}</ul>` : `<p class="small-note">${escapeHtml(t("tournamentDetail.teams.noFixtures"))}</p>`}
+        ${team.note ? `<p class="small-note">${escapeHtml(localizeText(team.note))}</p>` : ""}
+        ${entries.length > 0 ? `<div class="roster-group-grid">${team.groups.map(renderTournamentRosterViewGroup).join("")}</div>` : ""}
+        <div class="pill-row">${renderLinkPills(team.sources ?? [])}</div>
+      </div>
+    </details>
+  `;
+}
+
+function renderTournamentTeamRosters(teamRosters) {
+  const roles = TEAM_ROSTER_ROLE_ORDER.filter((role) => teamRosters.some((team) => team.role === role));
+  return roles
+    .map((role) => {
+      const cards = teamRosters.filter((team) => team.role === role).map(renderTournamentTeamRosterCard).join("");
+      return `
+        <div class="section-head compact-head">
+          <h3>${escapeHtml(t(`tournamentDetail.teams.role.${role}`))}</h3>
+        </div>
+        ${cards}
+      `;
+    })
+    .join("");
+}
+
 function renderRegionalHistorySummaryCard(entry) {
   const bestYears = (entry.best_years ?? []).join(" / ");
 
@@ -5609,56 +5774,19 @@ function sortPlayers(left, right) {
 }
 
 function getHomeFocusTournament() {
-  const today = state.overview.generated_at;
-  const items = [...state.overview.tournament_archive];
-
-  const getPhaseRank = (tournament) => {
-    const isCurrent =
-      tournament.status === "ongoing" ||
-      tournament.status === "in-progress" ||
-      (tournament.date_range.start <= today && tournament.date_range.end >= today);
-    if (isCurrent) {
-      return 0;
+  return pickFocusTournament(state.overview.tournament_archive, {
+    today: getLocalIsoDate(),
+    getFocusRank: (tournament) => {
+      const focusLevel = getFocusTournamentById(tournament.id)?.focus_level;
+      if (focusLevel === "primary") {
+        return 0;
+      }
+      if (focusLevel === "reference") {
+        return 1;
+      }
+      return 2;
     }
-    if (tournament.date_range.start > today) {
-      return 1;
-    }
-    return 2;
-  };
-
-  const getFocusRank = (tournament) => {
-    const focusLevel = getFocusTournamentById(tournament.id)?.focus_level;
-    if (focusLevel === "primary") {
-      return 0;
-    }
-    if (focusLevel === "reference") {
-      return 1;
-    }
-    return 2;
-  };
-
-  return items.sort((left, right) => {
-    const phaseRank = getPhaseRank(left) - getPhaseRank(right);
-    if (phaseRank !== 0) {
-      return phaseRank;
-    }
-
-    const focusRank = getFocusRank(left) - getFocusRank(right);
-    if (focusRank !== 0) {
-      return focusRank;
-    }
-
-    const leftPhase = getPhaseRank(left);
-    if (leftPhase === 0) {
-      return (left.date_range.end ?? "9999-12-31").localeCompare(
-        right.date_range.end ?? "9999-12-31"
-      );
-    }
-    if (leftPhase === 1) {
-      return left.date_range.start.localeCompare(right.date_range.start);
-    }
-    return right.date_range.end.localeCompare(left.date_range.end);
-  })[0] ?? null;
+  });
 }
 
 function getRecentChinaMatches(limit = 6) {
@@ -7781,10 +7909,25 @@ function renderTournamentDetailPage() {
         ? squadEntries.map(renderTournamentSquadCard).join("")
         : `<div class="empty-inline">${escapeHtml(t("tournamentDetail.squad.empty"))}</div>`;
 
+  const groupStage = archiveTournament?.china_group_stage ?? focusTournament?.china_group_stage ?? null;
+  const upcomingFixtures = (groupStage?.fixtures ?? [])
+    .filter((fixture) => fixture.status === "scheduled" && !displayMatches.some((match) => match.date === fixture.date))
+    .sort((left, right) => String(left.date).localeCompare(String(right.date)));
   matches.innerHTML =
-    displayMatches.length > 0
-      ? displayMatches.map(renderTournamentDetailMatchCard).join("")
+    displayMatches.length > 0 || upcomingFixtures.length > 0
+      ? [
+          ...upcomingFixtures.map((fixture) => renderTournamentFixtureCard(fixture, groupStage.group)),
+          ...displayMatches.map(renderTournamentDetailMatchCard)
+        ].join("")
       : `<div class="empty-inline">${escapeHtml(t("tournaments.archive.noChinaMatches"))}</div>`;
+
+  const teamRostersSection = document.querySelector("#tournamentDetailTeamRostersSection");
+  const teamRostersContainer = document.querySelector("#tournamentDetailTeamRosters");
+  const teamRosters = archiveTournament?.team_rosters ?? [];
+  if (teamRostersSection && teamRostersContainer) {
+    teamRostersSection.hidden = teamRosters.length === 0;
+    teamRostersContainer.innerHTML = teamRosters.length > 0 ? renderTournamentTeamRosters(teamRosters) : "";
+  }
 
   keyPlayers.innerHTML =
     (archiveTournament?.china_key_players ?? []).length > 0
@@ -10931,6 +11074,51 @@ function isOpenSpainCount(value) {
   return /[–~]|起|约/.test(value);
 }
 
+function renderSpainWorldCupSelection(payload) {
+  const block = payload.u17_world_cup_2026;
+  const section = document.querySelector("#spainWorldCup");
+  const head = document.querySelector("#spainWorldCupHead");
+  const body = document.querySelector("#spainWorldCupBody");
+  if (!section || !head || !body) return;
+  section.hidden = !block;
+  if (!block) return;
+  const note = document.querySelector("#spainWorldCupNote");
+  if (note) {
+    note.textContent = `${localizeText(block.summary)} ${t("spain.worldCup.checked", { date: formatDate(block.checked_at) })}`;
+  }
+  head.innerHTML = `<tr>
+    <th>${escapeHtml(t("spain.u19.player"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.club"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.afc"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.camp"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.note"))}</th>
+  </tr>`;
+  body.innerHTML = (block.rows ?? [])
+    .map((row) => {
+      const player = getPlayerById(row.player_id);
+      const label = player ? getPlayerPrimaryName(player) : row.local_name;
+      return `<tr>
+        <td>${player ? renderPlayerLink(player) : escapeHtml(label)}</td>
+        <td>${escapeHtml(localizeText(row.spain_club))}</td>
+        <td>${escapeHtml(localizeText(row.afc_u17_2026))}</td>
+        <td>${escapeHtml(t(row.world_cup_camp ? "spain.worldCup.selected" : "spain.worldCup.notSelected"))}</td>
+        <td>${escapeHtml(localizeText(row.note))}</td>
+      </tr>`;
+    })
+    .join("");
+  const extra = document.querySelector("#spainWorldCupExtra");
+  if (extra) {
+    const related = (block.related ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("");
+    extra.innerHTML = `
+      <article class="stack-card">
+        ${related ? `<ul class="mini-bullet-list">${related}</ul>` : ""}
+        <p><a class="inline-link" href="./tournament.html?id=fifa-u17-world-cup-2026">${escapeHtml(t("spain.worldCup.topicLink"))}</a></p>
+        <div class="pill-row">${renderLinkPills(block.sources ?? [])}</div>
+      </article>
+    `;
+  }
+}
+
 function renderSpainU19Table(payload, layerMap) {
   const table = payload.u19_table;
   const note = document.querySelector("#spainU19Note");
@@ -11095,6 +11283,7 @@ function renderSpainSystemPage() {
       })
           .join("");
   }
+  renderSpainWorldCupSelection(payload);
   renderSpainU19Table(payload, layerMap);
   renderSpainHonorCensus(payload);
   const filters = document.querySelector("#spainPlayerFilters");
