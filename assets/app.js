@@ -524,6 +524,16 @@ const UI_COPY = {
     "spain.pyramid.note": "点层级可跳到下方球员表。西甲俱乐部名字不等于西甲出场。",
     "spain.pyramid.tier": "第 {tier} 级",
     "spain.pyramid.count": "{count} 条样本",
+    "spain.worldCup.eyebrow": "U17 世界杯",
+    "spain.worldCup.title": "西班牙注册的中国 U17 球员与世少赛",
+    "spain.worldCup.checked": "（核对于 {date}）",
+    "spain.worldCup.club": "西班牙球队",
+    "spain.worldCup.afc": "2026 U17 亚洲杯终报名",
+    "spain.worldCup.camp": "世少赛 25 人集训名单",
+    "spain.worldCup.note": "说明",
+    "spain.worldCup.selected": "入选",
+    "spain.worldCup.notSelected": "未入选",
+    "spain.worldCup.topicLink": "查看 U17 世界杯专题：赛程、中国名单和亚洲各队名单",
     "spain.u19.eyebrow": "荣誉联赛 + 全国二级",
     "spain.u19.title": "西班牙 U19 中国球员",
     "spain.u19.layer": "层级",
@@ -1710,6 +1720,16 @@ const UI_COPY = {
     "spain.pyramid.note": "Jump from a layer to the table below. A La Liga club name is not a La Liga appearance.",
     "spain.pyramid.tier": "Tier {tier}",
     "spain.pyramid.count": "{count} samples",
+    "spain.worldCup.eyebrow": "U17 World Cup",
+    "spain.worldCup.title": "Spain-registered China U17 players and the World Cup",
+    "spain.worldCup.checked": "(checked {date})",
+    "spain.worldCup.club": "Team in Spain",
+    "spain.worldCup.afc": "AFC U17 Asian Cup 2026 finals list",
+    "spain.worldCup.camp": "World Cup camp list (25)",
+    "spain.worldCup.note": "Note",
+    "spain.worldCup.selected": "Selected",
+    "spain.worldCup.notSelected": "Not selected",
+    "spain.worldCup.topicLink": "Open the U17 World Cup page: fixtures, China's list and the Asian squads",
     "spain.u19.eyebrow": "Honour league + second tier",
     "spain.u19.title": "Chinese players in Spanish U19 football",
     "spain.u19.layer": "Layer",
@@ -11054,6 +11074,51 @@ function isOpenSpainCount(value) {
   return /[–~]|起|约/.test(value);
 }
 
+function renderSpainWorldCupSelection(payload) {
+  const block = payload.u17_world_cup_2026;
+  const section = document.querySelector("#spainWorldCup");
+  const head = document.querySelector("#spainWorldCupHead");
+  const body = document.querySelector("#spainWorldCupBody");
+  if (!section || !head || !body) return;
+  section.hidden = !block;
+  if (!block) return;
+  const note = document.querySelector("#spainWorldCupNote");
+  if (note) {
+    note.textContent = `${localizeText(block.summary)} ${t("spain.worldCup.checked", { date: formatDate(block.checked_at) })}`;
+  }
+  head.innerHTML = `<tr>
+    <th>${escapeHtml(t("spain.u19.player"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.club"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.afc"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.camp"))}</th>
+    <th>${escapeHtml(t("spain.worldCup.note"))}</th>
+  </tr>`;
+  body.innerHTML = (block.rows ?? [])
+    .map((row) => {
+      const player = getPlayerById(row.player_id);
+      const label = player ? getPlayerPrimaryName(player) : row.local_name;
+      return `<tr>
+        <td>${player ? renderPlayerLink(player) : escapeHtml(label)}</td>
+        <td>${escapeHtml(localizeText(row.spain_club))}</td>
+        <td>${escapeHtml(localizeText(row.afc_u17_2026))}</td>
+        <td>${escapeHtml(t(row.world_cup_camp ? "spain.worldCup.selected" : "spain.worldCup.notSelected"))}</td>
+        <td>${escapeHtml(localizeText(row.note))}</td>
+      </tr>`;
+    })
+    .join("");
+  const extra = document.querySelector("#spainWorldCupExtra");
+  if (extra) {
+    const related = (block.related ?? []).map((item) => `<li>${escapeHtml(localizeText(item))}</li>`).join("");
+    extra.innerHTML = `
+      <article class="stack-card">
+        ${related ? `<ul class="mini-bullet-list">${related}</ul>` : ""}
+        <p><a class="inline-link" href="./tournament.html?id=fifa-u17-world-cup-2026">${escapeHtml(t("spain.worldCup.topicLink"))}</a></p>
+        <div class="pill-row">${renderLinkPills(block.sources ?? [])}</div>
+      </article>
+    `;
+  }
+}
+
 function renderSpainU19Table(payload, layerMap) {
   const table = payload.u19_table;
   const note = document.querySelector("#spainU19Note");
@@ -11218,6 +11283,7 @@ function renderSpainSystemPage() {
       })
           .join("");
   }
+  renderSpainWorldCupSelection(payload);
   renderSpainU19Table(payload, layerMap);
   renderSpainHonorCensus(payload);
   const filters = document.querySelector("#spainPlayerFilters");

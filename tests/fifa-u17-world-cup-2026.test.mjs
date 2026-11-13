@@ -66,7 +66,7 @@ test("lists China's 25-player camp list and leaves the Spain-registered players 
   for (const missing of ["cn-xie-jin-2009", "cn-wang-xiuhao-2009", "cn-zhu-yuxuan-2009", "cn-zhang-bolin-2009"]) {
     assert.ok(!entries.some((entry) => entry.player_id === missing), missing);
   }
-  assert.match(view.note.zh, /谢晋、汪修昊、朱宇轩/);
+  assert.match(view.note.zh, /谢晋、汪修昊和门将 Zhu Yuxuan/);
 });
 
 test("covers all nine Asian teams and China's three group opponents", async () => {

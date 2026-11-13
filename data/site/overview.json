@@ -3,9 +3,9 @@
   "stats": {
     "player_count": 573,
     "country_count": 9,
-    "foreign_registration_count": 112,
+    "foreign_registration_count": 113,
     "china_overseas_status_counts": {
-      "active-registered": 15,
+      "active-registered": 16,
       "pending-effective": 0,
       "trial-watch": 1,
       "returned": 5,
@@ -39305,7 +39305,7 @@
       "champion": "",
       "runner_up": "",
       "china_status": "qualified",
-      "china_summary": "中国 U17 以 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，H 组对手为西班牙、摩洛哥、斐济：11-20 对西班牙（北京时间 21 日 0 点）、11-23 对摩洛哥、11-26 对斐济（均为北京时间 23 点）。中国足协 2026-10-28 公布 25 人集训名单，张伯霖因伤落选，25 人全部随队赴卡塔尔；正式报名上限 21 人，首场开球前 24 小时内仍可因伤替换。亚洲杯终报名里的三名西班牙注册球员谢晋、汪修昊、朱宇轩都不在 25 人名单内，4 名海外球员分别来自塞尔维亚、克罗地亚和韩国。",
+      "china_summary": "中国 U17 以 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，H 组对手为西班牙、摩洛哥、斐济：11-20 对西班牙（北京时间 21 日 0 点）、11-23 对摩洛哥、11-26 对斐济（均为北京时间 23 点）。中国足协 2026-10-28 公布 25 人集训名单，张伯霖因伤落选，25 人全部随队赴卡塔尔；正式报名上限 21 人，首场开球前 24 小时内仍可因伤替换。亚洲杯终报名里的三名西班牙注册球员谢晋、汪修昊和门将 Zhu Yuxuan（赫塔菲）都不在 25 人名单内，4 名海外球员分别来自塞尔维亚、克罗地亚和韩国。",
       "qualification_path": {
         "route": "AFC U17 Asian Cup Saudi Arabia 2026",
         "summary": "中国 U17 通过 2026 U17 亚洲杯取得 2026 FIFA U17 世界杯资格，并在亚洲杯正赛中获得亚军。",
@@ -40450,7 +40450,7 @@
           "en": "25-player World Cup camp list, 28 October 2026"
         },
         "note": {
-          "zh": "按新华社刊发的中国足协名单单位分组。这是集训名单，不是国际足联正式报名表：正式报名上限 21 人，首场开球前 24 小时内仍可因伤替换；25 人已全部随队赴卡塔尔。张伯霖因伤落选；亚洲杯终报名中的三名西班牙注册球员谢晋、汪修昊、朱宇轩都不在名单里。",
+          "zh": "按新华社刊发的中国足协名单单位分组。这是集训名单，不是国际足联正式报名表：正式报名上限 21 人，首场开球前 24 小时内仍可因伤替换；25 人已全部随队赴卡塔尔。张伯霖因伤落选；亚洲杯终报名中的三名西班牙注册球员谢晋、汪修昊和门将 Zhu Yuxuan（赫塔菲）都不在名单里。",
           "en": "Grouped by the units in the CFA list as published by Xinhua. This is a camp list, not FIFA's registration: the limit is 21 and injured players can be replaced up to 24 hours before the first match. All 25 travelled to Qatar. Zhang Bolin is out injured, and none of the three Spain-registered players from the AFC finals squad (Xie Jin, Wang Xiuhao, Zhu Yuxuan) is on the list."
         },
         "head_coach": {
@@ -59761,6 +59761,22 @@
           "zh": "足协集训通知先后出现富恩拉夫拉达和皇家卡拉万切尔。能确认西班牙青训路径，竞赛层级未拆。",
           "en": "CFA camp notices list both Fuenlabrada and Real Carabanchel. The Spanish academy path is confirmed; the competition layer is not yet split."
         }
+      },
+      {
+        "id": "zhu-yuxuan-getafe",
+        "player_id": "cn-zhu-yuxuan-2009",
+        "name": "Zhu Yuxuan",
+        "local_name": "Zhu Yuxuan",
+        "layer_id": "club-academy-unspecified",
+        "club": "Getafe CF",
+        "season": "2025-2026",
+        "contract_type": "youth-formation",
+        "appearance_status": "observation",
+        "verification_status": "verified",
+        "note": {
+          "zh": "AFC U17 2026 终报名表（2026-05-02）把中国队 23 号门将登记为 GETAFE FC (ESP)。所在梯队级别和出场尚未核到，不写成荣誉联赛或全国二级出场。",
+          "en": "The AFC U17 2026 final registration (2026-05-02) lists China's No. 23 goalkeeper with GETAFE FC (ESP). His team level and appearances are not yet checked, so no División de Honor or Liga Nacional appearance is claimed."
+        }
       }
     ],
     "u19_table": {
@@ -60625,6 +60641,141 @@
             "zh": "29 场和本站公开口径一致，首秀日与 2007-08-15 出生差 29 天相符。进球本站仍是未见。表上的 18 岁是截图当时的年龄。",
             "en": "29 appearances match the public count already on this site, and the debut is 29 days after the 2007-08-15 birth date. Goals stay unrecorded. The printed age of 18 is the age on the screenshot."
           }
+        }
+      ]
+    },
+    "u17_world_cup_2026": {
+      "checked_at": "2026-11-13",
+      "summary": {
+        "zh": "中国 U17 亚洲杯终报名 23 人里有 3 人注册在西班牙：谢晋（皇家卡拉万切尔）、汪修昊（达姆）和门将 Zhu Yuxuan（赫塔菲）。10 月 28 日公布的世少赛 25 人集训名单里没有任何西班牙注册球员，4 名海外球员来自塞尔维亚、克罗地亚和韩国。中国世少赛首战的对手正是西班牙（11 月 20 日）。",
+        "en": "Three of China's 23 at the AFC U17 Asian Cup were registered in Spain: Xie Jin (Real Carabanchel), Wang Xiuhao (Damm) and goalkeeper Zhu Yuxuan (Getafe). The 25-player World Cup camp list of 28 October has no Spain-registered player; its four overseas players are in Serbia, Croatia and Korea. China's first World Cup opponent is Spain, on 20 November."
+      },
+      "rows": [
+        {
+          "player_id": "cn-xie-jin-2009",
+          "local_name": "谢晋",
+          "spain_club": {
+            "zh": "皇家卡拉万切尔（AFC 报名）",
+            "en": "Real CD Carabanchel (AFC registration)"
+          },
+          "afc_u17_2026": {
+            "zh": "9 号 中场",
+            "en": "No. 9, midfielder"
+          },
+          "world_cup_camp": false,
+          "note": {
+            "zh": "新浪 10 月 29 日报道称其未入选世少赛名单。",
+            "en": "Sina reported on 29 October that he missed the World Cup list."
+          }
+        },
+        {
+          "player_id": "cn-wang-xiuhao-2009",
+          "local_name": "汪修昊",
+          "spain_club": {
+            "zh": "达姆（AFC 报名）→ 2026/27 萨瓦德尔青年 B",
+            "en": "Damm (AFC registration), then Sabadell Juvenil B in 2026/27"
+          },
+          "afc_u17_2026": {
+            "zh": "16 号 后卫",
+            "en": "No. 16, defender"
+          },
+          "world_cup_camp": false,
+          "note": {
+            "zh": "2026/27 全国二级已见 2 场起，见下方 U19 表。",
+            "en": "At least two Liga Nacional appearances in 2026/27; see the U19 table below."
+          }
+        },
+        {
+          "player_id": "cn-zhu-yuxuan-2009",
+          "local_name": "Zhu Yuxuan",
+          "spain_club": {
+            "zh": "赫塔菲（AFC 报名）",
+            "en": "Getafe (AFC registration)"
+          },
+          "afc_u17_2026": {
+            "zh": "23 号 门将",
+            "en": "No. 23, goalkeeper"
+          },
+          "world_cup_camp": false,
+          "note": {
+            "zh": "25 人名单的三名门将是秦子牛、江宇涵、江承恩。",
+            "en": "The 25 include three goalkeepers: Qin Ziniu, Jiang Yuhan and Jiang Chengen."
+          }
+        },
+        {
+          "player_id": "cn-lyu-mengyang-2009",
+          "local_name": "吕孟洋",
+          "spain_club": {
+            "zh": "西班牙人青年 B（2026/27）",
+            "en": "Espanyol Juvenil B (2026/27)"
+          },
+          "afc_u17_2026": {
+            "zh": "未进 23 人",
+            "en": "Not in the 23"
+          },
+          "world_cup_camp": false,
+          "note": {
+            "zh": "全国二级已见 5 场起、1 球起；新浪称其“继续无缘”。",
+            "en": "At least five Liga Nacional appearances and one goal; Sina said he was left out again."
+          }
+        },
+        {
+          "player_id": "cn-huang-zijie-2009",
+          "local_name": "黄子杰",
+          "spain_club": {
+            "zh": "欧罗巴青年 A（2026/27）",
+            "en": "CE Europa Juvenil A (2026/27)"
+          },
+          "afc_u17_2026": {
+            "zh": "未进 23 人",
+            "en": "Not in the 23"
+          },
+          "world_cup_camp": false,
+          "note": {
+            "zh": "已有注册报道，出场尚未见。",
+            "en": "Registration reported; no appearance seen yet."
+          }
+        },
+        {
+          "player_id": "cn-liu-kaiyuan-2010",
+          "local_name": "刘凯源",
+          "spain_club": {
+            "zh": "比利亚雷亚尔青年 C（2026/27 公开名单观察）",
+            "en": "Villarreal Juvenil C (2026/27, public squad list)"
+          },
+          "afc_u17_2026": {
+            "zh": "未进 23 人",
+            "en": "Not in the 23"
+          },
+          "world_cup_camp": false,
+          "note": {
+            "zh": "2010 年龄段。",
+            "en": "Born in 2010."
+          }
+        }
+      ],
+      "related": [
+        {
+          "zh": "亚洲另一支世少赛球队塔吉克斯坦的亚洲杯终报名里，6 号尤苏波夫（2011 年生）注册在西班牙莱万特。",
+          "en": "Tajikistan's AFC finals list, another Asian World Cup team, has No. 6 Yosin Yusupov (born 2011) registered with Levante in Spain."
+        }
+      ],
+      "sources": [
+        {
+          "label": "AFC U17 Asian Cup 2026 final squad lists",
+          "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+        },
+        {
+          "label": "Xinhua: China U17 25-player World Cup camp list",
+          "url": "https://www.news.cn/sports/20261028/fdac81b37f8c4fb2a017eea6a19c3938/c.html"
+        },
+        {
+          "label": "Sina: Lyu Mengyang and Xie Jin left out",
+          "url": "https://sports.sina.cn/2026-10-29/detail-iniwvmzm9149541.d.html"
+        },
+        {
+          "label": "RFEF: Spain U-17 World Cup squad",
+          "url": "https://rfef.es/es/noticias/esta-es-la-lista-de-david-cubillo-para-el-mundial-de-catar"
         }
       ]
     },

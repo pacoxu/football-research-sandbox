@@ -178,3 +178,22 @@ test("validates Spain placements against player and overseas records", async () 
   );
   validateSpainFootballSystem(dataset.spainFootballSystem, playerIds, featuredRecordIds);
 });
+
+test("records the Spain-registered China U17 players against the World Cup camp list", async () => {
+  const { validateSpainWorldCupSelection } = await import("../scripts/lib/spain-football-system.mjs");
+  const payload = JSON.parse(await readFile(new URL("../data/raw/spain-football-system.json", import.meta.url), "utf8"));
+  const block = payload.u17_world_cup_2026;
+  const ids = block.rows.map((row) => row.player_id);
+
+  for (const id of ["cn-xie-jin-2009", "cn-wang-xiuhao-2009", "cn-zhu-yuxuan-2009", "cn-lyu-mengyang-2009"]) {
+    assert.ok(ids.includes(id), id);
+  }
+  assert.ok(block.rows.every((row) => row.world_cup_camp === false));
+  assert.ok(
+    payload.placements.some((placement) => placement.player_id === "cn-zhu-yuxuan-2009" && placement.club === "Getafe CF")
+  );
+  assert.throws(
+    () => validateSpainWorldCupSelection(block, new Set(ids.slice(1))),
+    /Unknown player on Spain U17 World Cup row cn-xie-jin-2009/
+  );
+});

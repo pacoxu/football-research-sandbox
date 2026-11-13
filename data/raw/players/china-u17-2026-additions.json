@@ -1191,25 +1191,25 @@
     "name": "Jiang Chengen",
     "local_name": "Jiang Chengen",
     "country": "China PR",
-    "birth_date": "2010-02-25",
+    "birth_date": "2010-05-02",
     "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 175,
-    "weight_kg": 67,
+    "primary_position": "Goalkeeper",
+    "height_cm": 190,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Shanghai Port FC",
+      "name": "Evergrande Football School",
       "country": "China",
-      "organization_type": "professional-club-unspecified",
+      "organization_type": "football-school",
       "status": "tournament-snapshot",
       "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
-        "organization": "Shanghai Port FC",
+        "organization": "Evergrande Football School",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "professional-club-unspecified"
+        "note": "AFC U17 2026 终报名表（2026-05-02）按原文登记为 EVERGRANDE FOOTBALL SCHOOL (CHN)。",
+        "organization_type": "football-school"
       }
     ],
     "focus_tags": [
@@ -1228,7 +1228,8 @@
         "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。",
         "roster_status": "final-squad",
         "roster_checked_at": "2026-07-11",
-        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary.",
+        "shirt_number": 12
       }
     ],
     "external_links": [
@@ -1240,22 +1241,38 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表更正生日、位置、身高和报名单位（原记录为 2010-02-25 / Defender / 175 cm / Shanghai Port FC，与官方名单不符）；体重未见官方口径，置空。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists China PR No. 12 as a goalkeeper, born 2010-05-02, 190 cm, registered with EVERGRANDE FOOTBALL SCHOOL (CHN)."
+      }
+    ]
   },
   {
     "id": "cn-wang-heyi-2009",
     "name": "Wang Heyi",
     "local_name": "Wang Heyi",
     "country": "China PR",
-    "birth_date": "2009-02-07",
+    "birth_date": "2009-06-17",
     "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 181,
-    "weight_kg": 74,
+    "primary_position": "Midfielder",
+    "height_cm": 184,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Shandong Taishan FC",
+      "name": "Guangzhou Yangcheng",
       "country": "China",
       "organization_type": "professional-club-unspecified",
       "status": "tournament-snapshot",
@@ -1264,9 +1281,9 @@
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
-        "organization": "Shandong Taishan FC",
+        "organization": "Guangzhou Yangcheng",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "note": "AFC U17 2026 终报名表（2026-05-02）按原文登记为 GUANGZHOU YANGCHENG (CHN)。",
         "organization_type": "professional-club-unspecified"
       }
     ],
@@ -1286,7 +1303,8 @@
         "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。",
         "roster_status": "final-squad",
         "roster_checked_at": "2026-07-11",
-        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary.",
+        "shirt_number": 13
       }
     ],
     "external_links": [
@@ -1298,9 +1316,25 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表更正生日、位置、身高和报名单位（原记录为 2009-02-07 / Defender / 181 cm / Shandong Taishan FC，与官方名单不符）；体重未见官方口径，置空。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists China PR No. 13 as a midfielder, born 2009-06-17, 184 cm, registered with GUANGZHOU YANGCHENG (CHN)."
+      }
+    ]
   },
   {
     "id": "cn-pan-chaowei-2010",
@@ -1698,13 +1732,13 @@
     "name": "Bian Weihao",
     "local_name": "Bian Weihao",
     "country": "China PR",
-    "birth_date": "2009-08-31",
+    "birth_date": "2009-02-15",
     "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 173,
-    "weight_kg": 63,
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Jinan De Run FC",
+      "name": "Hubei Istar",
       "country": "China",
       "organization_type": "professional-club-unspecified",
       "status": "tournament-snapshot",
@@ -1713,9 +1747,9 @@
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
-        "organization": "Jinan De Run FC",
+        "organization": "Hubei Istar",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "note": "AFC U17 2026 终报名表（2026-05-02）按原文登记为 HUBEI ISTAR (CHN)。",
         "organization_type": "professional-club-unspecified"
       }
     ],
@@ -1735,7 +1769,8 @@
         "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。",
         "roster_status": "final-squad",
         "roster_checked_at": "2026-07-11",
-        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary.",
+        "shirt_number": 18
       }
     ],
     "external_links": [
@@ -1747,22 +1782,38 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表更正生日、位置、身高和报名单位（原记录为 2009-08-31 / Midfielder / 173 cm / Jinan De Run FC，与官方名单不符）；体重未见官方口径，置空。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists China PR No. 18 as a defender, born 2009-02-15, 187 cm, registered with HUBEI ISTAR (CHN)."
+      }
+    ]
   },
   {
     "id": "cn-zhang-bolin-2009",
     "name": "Zhang Bolin",
     "local_name": "Zhang Bolin",
     "country": "China PR",
-    "birth_date": "2009-01-19",
+    "birth_date": "2009-12-30",
     "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 180,
-    "weight_kg": 73,
+    "primary_position": "Forward",
+    "height_cm": 187,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Shandong Taishan FC",
+      "name": "Hubei Istar",
       "country": "China",
       "organization_type": "professional-club-unspecified",
       "status": "tournament-snapshot",
@@ -1771,9 +1822,9 @@
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
-        "organization": "Shandong Taishan FC",
+        "organization": "Hubei Istar",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "note": "AFC U17 2026 终报名表（2026-05-02）按原文登记为 HUBEI ISTAR (CHN)。",
         "organization_type": "professional-club-unspecified"
       }
     ],
@@ -1793,7 +1844,8 @@
         "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。",
         "roster_status": "final-squad",
         "roster_checked_at": "2026-07-11",
-        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary.",
+        "shirt_number": 20
       }
     ],
     "external_links": [
@@ -1805,9 +1857,25 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表更正生日、位置、身高和报名单位（原记录为 2009-01-19 / Midfielder / 180 cm / Shandong Taishan FC，与官方名单不符）；体重未见官方口径，置空。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists China PR No. 20 as a forward, born 2009-12-30, 187 cm, registered with HUBEI ISTAR (CHN)."
+      }
+    ]
   },
   {
     "id": "cn-kong-xinuo-2009",
@@ -2007,13 +2075,13 @@
     "name": "Liu Zhicheng",
     "local_name": "Liu Zhicheng",
     "country": "China PR",
-    "birth_date": "2009-07-31",
+    "birth_date": "2009-03-28",
     "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 182,
-    "weight_kg": 78,
+    "primary_position": "Defender",
+    "height_cm": 195,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Shandong Taishan FC",
+      "name": "Qingdao West Coast FC",
       "country": "China",
       "organization_type": "professional-club-unspecified",
       "status": "tournament-snapshot",
@@ -2022,9 +2090,9 @@
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
-        "organization": "Shandong Taishan FC",
+        "organization": "Qingdao West Coast FC",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "note": "AFC U17 2026 终报名表（2026-05-02）按原文登记为 QINGDAO WEST COAST FC (CHN)。",
         "organization_type": "professional-club-unspecified"
       }
     ],
@@ -2044,7 +2112,8 @@
         "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。",
         "roster_status": "final-squad",
         "roster_checked_at": "2026-07-11",
-        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary.",
+        "shirt_number": 22
       }
     ],
     "external_links": [
@@ -2056,39 +2125,56 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表更正生日、位置、身高和报名单位（原记录为 2009-07-31 / Forward / 182 cm / Shandong Taishan FC，与官方名单不符）；体重未见官方口径，置空。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists China PR No. 22 as a defender, born 2009-03-28, 195 cm, registered with QINGDAO WEST COAST FC (CHN)."
+      }
+    ]
   },
   {
     "id": "cn-zhu-yuxuan-2009",
     "name": "Zhu Yuxuan",
     "local_name": "Zhu Yuxuan",
     "country": "China PR",
-    "birth_date": "2009-10-18",
+    "birth_date": "2009-07-13",
     "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 181,
-    "weight_kg": 73,
+    "primary_position": "Goalkeeper",
+    "height_cm": 194,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Shandong Taishan FC",
-      "country": "China",
-      "organization_type": "professional-club-unspecified",
+      "name": "Getafe CF",
+      "country": "Spain",
+      "organization_type": "club-academy",
       "status": "tournament-snapshot",
       "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
-        "organization": "Shandong Taishan FC",
-        "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "professional-club-unspecified"
+        "organization": "Getafe CF",
+        "country": "Spain",
+        "note": "AFC U17 2026 终报名表（2026-05-02）按原文登记为 GETAFE FC (ESP)。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
       "asia-u17-2026",
-      "china-youth"
+      "china-youth",
+      "overseas-europe"
     ],
     "tournament_participation": [
       {
@@ -2102,7 +2188,8 @@
         "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。",
         "roster_status": "final-squad",
         "roster_checked_at": "2026-07-11",
-        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary.",
+        "shirt_number": 23
       }
     ],
     "external_links": [
@@ -2114,22 +2201,39 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表更正生日、位置、身高和报名单位（原记录为 2009-10-18 / Forward / 181 cm / Shandong Taishan FC，与官方名单不符）；体重未见官方口径，置空。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists China PR No. 23 as a goalkeeper, born 2009-07-13, 194 cm, registered with GETAFE FC (ESP)."
+      }
+    ],
+    "overseas_status": "active-registered"
   },
   {
     "id": "cn-peng-xianchen-2009",
     "name": "Peng Xianchen",
     "local_name": "Peng Xianchen",
     "country": "China PR",
-    "birth_date": "2009-11-20",
+    "birth_date": "2010-01-06",
     "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 177,
-    "weight_kg": 74,
+    "primary_position": "Midfielder",
+    "height_cm": 175,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Shandong Taishan FC",
+      "name": "Yixing Zhoutie Jiuteng",
       "country": "China",
       "organization_type": "professional-club-unspecified",
       "status": "tournament-snapshot",
@@ -2138,9 +2242,9 @@
     "training_pathway": [
       {
         "stage_label": "2026 报名归属",
-        "organization": "Shandong Taishan FC",
+        "organization": "Yixing Zhoutie Jiuteng",
         "country": "China",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
+        "note": "AFC U17 2026 终报名表（2026-05-02）按原文登记为 YIXING ZHOUTIE JIUTENG (CHN)。",
         "organization_type": "professional-club-unspecified"
       }
     ],
@@ -2160,7 +2264,8 @@
         "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。",
         "roster_status": "final-squad",
         "roster_checked_at": "2026-07-11",
-        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary."
+        "roster_boundary_note": "Counts toward the AFC U17 2026 final registration 23-player china_squad boundary.",
+        "shirt_number": 19
       }
     ],
     "external_links": [
@@ -2172,8 +2277,24 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表更正生日、位置、身高和报名单位（原记录为 2009-11-20 / Forward / 177 cm / Shandong Taishan FC，与官方名单不符）；体重未见官方口径，置空。ID 中的年份沿用旧值，出生年份以 birth_date 为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists China PR No. 19 as a midfielder, born 2010-01-06, 175 cm, registered with YIXING ZHOUTIE JIUTENG (CHN)."
+      }
+    ]
   }
 ]
