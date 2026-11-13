@@ -32,7 +32,7 @@ jobs:
         run: npm ci
 
       - name: Check front-end JavaScript
-        run: node --check assets/app.js && node --check assets/data-insights.js
+        run: node --check assets/app.js && node --check assets/data-insights.js && node --check assets/dates.js && node --check assets/home-focus.js
 
       - name: Validate source data
         run: npm run validate-data

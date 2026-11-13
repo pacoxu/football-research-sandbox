@@ -6,6 +6,8 @@ import {
   deriveQualityStatus,
   getSourceTier
 } from "./data-insights.js";
+import { formatIsoDate, getLocalIsoDate } from "./dates.js";
+import { pickFocusTournament } from "./home-focus.js";
 
 const page = document.body.dataset.page;
 const pageDate = document.body.dataset.date || "2026-06-25";
@@ -3850,16 +3852,7 @@ function formatCompetitionLevel(value) {
 }
 
 function formatDate(value) {
-  if (!value) {
-    return "-";
-  }
-
-  const options =
-    state.language === "en"
-      ? { year: "numeric", month: "short", day: "numeric" }
-      : { year: "numeric", month: "2-digit", day: "2-digit" };
-
-  return new Intl.DateTimeFormat(getLocale(), options).format(new Date(`${value}T00:00:00Z`));
+  return formatIsoDate(value, { locale: getLocale(), language: state.language });
 }
 
 function formatRange(range) {
@@ -5609,56 +5602,19 @@ function sortPlayers(left, right) {
 }
 
 function getHomeFocusTournament() {
-  const today = state.overview.generated_at;
-  const items = [...state.overview.tournament_archive];
-
-  const getPhaseRank = (tournament) => {
-    const isCurrent =
-      tournament.status === "ongoing" ||
-      tournament.status === "in-progress" ||
-      (tournament.date_range.start <= today && tournament.date_range.end >= today);
-    if (isCurrent) {
-      return 0;
+  return pickFocusTournament(state.overview.tournament_archive, {
+    today: getLocalIsoDate(),
+    getFocusRank: (tournament) => {
+      const focusLevel = getFocusTournamentById(tournament.id)?.focus_level;
+      if (focusLevel === "primary") {
+        return 0;
+      }
+      if (focusLevel === "reference") {
+        return 1;
+      }
+      return 2;
     }
-    if (tournament.date_range.start > today) {
-      return 1;
-    }
-    return 2;
-  };
-
-  const getFocusRank = (tournament) => {
-    const focusLevel = getFocusTournamentById(tournament.id)?.focus_level;
-    if (focusLevel === "primary") {
-      return 0;
-    }
-    if (focusLevel === "reference") {
-      return 1;
-    }
-    return 2;
-  };
-
-  return items.sort((left, right) => {
-    const phaseRank = getPhaseRank(left) - getPhaseRank(right);
-    if (phaseRank !== 0) {
-      return phaseRank;
-    }
-
-    const focusRank = getFocusRank(left) - getFocusRank(right);
-    if (focusRank !== 0) {
-      return focusRank;
-    }
-
-    const leftPhase = getPhaseRank(left);
-    if (leftPhase === 0) {
-      return (left.date_range.end ?? "9999-12-31").localeCompare(
-        right.date_range.end ?? "9999-12-31"
-      );
-    }
-    if (leftPhase === 1) {
-      return left.date_range.start.localeCompare(right.date_range.start);
-    }
-    return right.date_range.end.localeCompare(left.date_range.end);
-  })[0] ?? null;
+  });
 }
 
 function getRecentChinaMatches(limit = 6) {
