@@ -250,4 +250,33 @@ export function validateSpainFootballSystem(payload, playerIds, featuredRecordId
     assert(source.label && /^https?:\/\//.test(source.url), "Invalid Spain system source");
     assert(isIsoDate(source.checked_at), "Invalid Spain system source date");
   }
+
+  if (payload.u17_world_cup_2026 !== undefined) {
+    validateSpainWorldCupSelection(payload.u17_world_cup_2026, playerIds);
+  }
+}
+
+// Spain-registered China U17 players against the 2026 U17 World Cup camp list.
+export function validateSpainWorldCupSelection(block, playerIds) {
+  assert(isIsoDate(block?.checked_at), "Invalid Spain U17 World Cup block checked_at");
+  validateLocalizedText(block.summary, "spain u17 world cup summary");
+  assert(Array.isArray(block.rows) && block.rows.length > 0, "Missing Spain U17 World Cup rows");
+  const seen = new Set();
+  for (const row of block.rows) {
+    assert(playerIds.has(row.player_id), `Unknown player on Spain U17 World Cup row ${row.player_id}`);
+    assert(!seen.has(row.player_id), `Duplicate Spain U17 World Cup row ${row.player_id}`);
+    seen.add(row.player_id);
+    assert(typeof row.local_name === "string" && row.local_name.length > 0, `Missing name on ${row.player_id}`);
+    validateLocalizedText(row.spain_club, `${row.player_id}.spain_club`);
+    validateLocalizedText(row.afc_u17_2026, `${row.player_id}.afc_u17_2026`);
+    validateLocalizedText(row.note, `${row.player_id}.note`);
+    assert(typeof row.world_cup_camp === "boolean", `world_cup_camp must be true or false on ${row.player_id}`);
+  }
+  for (const [index, item] of (block.related ?? []).entries()) {
+    validateLocalizedText(item, `spain u17 world cup related[${index}]`);
+  }
+  assert(Array.isArray(block.sources) && block.sources.length > 0, "Missing Spain U17 World Cup sources");
+  for (const source of block.sources) {
+    assert(source.label && /^https?:\/\//.test(source.url), "Invalid Spain U17 World Cup source");
+  }
 }

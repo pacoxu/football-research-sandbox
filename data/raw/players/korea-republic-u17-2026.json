@@ -1,1469 +1,28 @@
 [
   {
-    "id": "kr-sang-young-park-2010",
-    "name": "Sang Young Park",
-    "local_name": "Sang Young Park",
+    "id": "kr-jang-junyeong-2009",
+    "name": "Jang Junyeong",
+    "local_name": "Jang Junyeong",
     "country": "Korea Republic",
-    "birth_date": "2010-01-17",
+    "birth_date": "2009-08-27",
     "age_band": "u17",
     "primary_position": "Goalkeeper",
-    "height_cm": 183,
-    "weight_kg": 72,
-    "registration_club": {
-      "name": "Daejeon Hana Citizen U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Daejeon Hana Citizen",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Chungnam Mechanical Technical High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Daejeon Hana Citizen U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Daejeon Hana Citizen",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Chungnam Mechanical Technical High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Sang Young Park in the Korea Republic u17 squad and records Daejeon Hana Citizen U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-hui-sung-yoon-2009",
-    "name": "Hui Sung Yoon",
-    "local_name": "Hui Sung Yoon",
-    "country": "Korea Republic",
-    "birth_date": "2009-04-18",
-    "age_band": "u17",
-    "primary_position": "Goalkeeper",
-    "height_cm": 188,
-    "weight_kg": 72,
-    "registration_club": {
-      "name": "Jeonbuk Hyundai Motors U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Jeonbuk Hyundai Motors",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Jeonju Youngsaeng High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Jeonbuk Hyundai Motors U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Jeonbuk Hyundai Motors",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Jeonju Youngsaeng High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Hui Sung Yoon in the Korea Republic u17 squad and records Jeonbuk Hyundai Motors U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-seung-min-lee-2009",
-    "name": "Seung Min Lee",
-    "local_name": "Seung Min Lee",
-    "country": "Korea Republic",
-    "birth_date": "2009-01-31",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 184,
-    "weight_kg": 72,
-    "registration_club": {
-      "name": "Boin High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Boin High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Seung Min Lee in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
-      },
-      {
-        "type": "national-fa-profile",
-        "label": "KFA U17 national team page",
-        "url": "https://www.kfa.or.kr/national/?act=mu_17",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
-        "fields": [
-          "tournament_participation"
-        ],
-        "claim": "KFA U17 team page provides the national-federation layer for Korea Republic U17 context; AFC remains the player-level roster source."
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
-  },
-  {
-    "id": "kr-geon-woo-park-2009",
-    "name": "Geon Woo Park",
-    "local_name": "Geon Woo Park",
-    "country": "Korea Republic",
-    "birth_date": "2009-03-31",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 190,
-    "weight_kg": 74,
-    "registration_club": {
-      "name": "Ulsan HD FC U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Ulsan HD FC",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Hyundai High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Ulsan HD FC U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Ulsan HD FC",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Hyundai High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Geon Woo Park in the Korea Republic u17 squad and records Ulsan HD FC U18 as the tournament registration organization."
-      },
-      {
-        "type": "national-fa-profile",
-        "label": "KFA U17 national team page",
-        "url": "https://www.kfa.or.kr/national/?act=mu_17",
-        "checked_at": "2026-06-28",
-        "confidence": "medium",
-        "fields": [
-          "tournament_participation"
-        ],
-        "claim": "KFA U17 team page provides the national-federation layer for Korea Republic U17 context; AFC remains the player-level roster source."
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    }
-  },
-  {
-    "id": "kr-do-hun-park-2010",
-    "name": "Do Hun Park",
-    "local_name": "Do Hun Park",
-    "country": "Korea Republic",
-    "birth_date": "2010-02-15",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 184,
-    "weight_kg": 71,
-    "registration_club": {
-      "name": "Jeonbuk Hyundai Motors U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Jeonbuk Hyundai Motors",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Jeonju Youngsaeng High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Jeonbuk Hyundai Motors U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Jeonbuk Hyundai Motors",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Jeonju Youngsaeng High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Do Hun Park in the Korea Republic u17 squad and records Jeonbuk Hyundai Motors U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-geon-hee-jin-2009",
-    "name": "Geon Hee Jin",
-    "local_name": "Geon Hee Jin",
-    "country": "Korea Republic",
-    "birth_date": "2009-02-06",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 179,
-    "weight_kg": 68,
-    "registration_club": {
-      "name": "FC Seoul U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "FC Seoul",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Seoul Osan High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "FC Seoul U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "FC Seoul",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Seoul Osan High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Geon Hee Jin in the Korea Republic u17 squad and records FC Seoul U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-yoon-seong-lee-2010",
-    "name": "Yoon Seong Lee",
-    "local_name": "Yoon Seong Lee",
-    "country": "Korea Republic",
-    "birth_date": "2010-01-09",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 180,
-    "weight_kg": 68,
-    "registration_club": {
-      "name": "FC Seoul U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "FC Seoul",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Seoul Osan High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "FC Seoul U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "FC Seoul",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Seoul Osan High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Yoon Seong Lee in the Korea Republic u17 squad and records FC Seoul U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-hyun-woong-jeong-2009",
-    "name": "Hyun Woong Jeong",
-    "local_name": "Hyun Woong Jeong",
-    "country": "Korea Republic",
-    "birth_date": "2009-09-24",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 184,
-    "weight_kg": 72,
-    "registration_club": {
-      "name": "Cheongju Daesung High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Cheongju Daesung High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Hyun Woong Jeong in the Korea Republic u17 squad and records Cheongju Daesung High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-ji-yong-lee-2009",
-    "name": "Ji Yong Lee",
-    "local_name": "Ji Yong Lee",
-    "country": "Korea Republic",
-    "birth_date": "2009-09-18",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 176,
-    "weight_kg": 67,
-    "registration_club": {
-      "name": "Boin High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Boin High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Ji Yong Lee in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-dae-hwan-kim-2009",
-    "name": "Dae Hwan Kim",
-    "local_name": "Dae Hwan Kim",
-    "country": "Korea Republic",
-    "birth_date": "2009-06-25",
-    "age_band": "u17",
-    "primary_position": "Defender",
-    "height_cm": 169,
-    "weight_kg": 60,
-    "registration_club": {
-      "name": "Boin High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Boin High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Dae Hwan Kim in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-woo-jin-jin-2009",
-    "name": "Woo Jin Jin",
-    "local_name": "Woo Jin Jin",
-    "country": "Korea Republic",
-    "birth_date": "2009-11-20",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 179,
-    "weight_kg": 68,
-    "registration_club": {
-      "name": "Kangneung Jeil High School",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Gangwon FC",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Kangneung Jeil High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Kangneung Jeil High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Gangwon FC",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Kangneung Jeil High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Woo Jin Jin in the Korea Republic u17 squad and records Kangneung Jeil High School as the tournament registration organization."
-      },
-      {
-        "type": "national-fa-profile",
-        "label": "KFA U17 national team page",
-        "url": "https://www.kfa.or.kr/national/?act=mu_17",
-        "checked_at": "2026-07-12",
-        "confidence": "medium",
-        "fields": [
-          "tournament_participation"
-        ],
-        "claim": "The KFA U17 team page independently supports Jin Woo-jin's national-team context; the AFC document remains the final registration source."
-      },
-      {
-        "type": "club-academy-profile",
-        "label": "K League youth competition listing",
-        "url": "https://www.kleague.com/youth/youth.do",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "registration_club.parent_organization",
-          "registration_club.education_partner",
-          "training_pathway"
-        ],
-        "claim": "The official K League youth listing pairs Gangwon FC U18 with Kangneung Jeil High School, supporting the separate parent-club and education-partner fields."
-      }
-    ]
-  },
-  {
-    "id": "kr-eun-seong-kim-2009",
-    "name": "Eun Seong Kim",
-    "local_name": "Eun Seong Kim",
-    "country": "Korea Republic",
-    "birth_date": "2009-02-02",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 185,
-    "weight_kg": 77,
-    "registration_club": {
-      "name": "Suwon Samsung Bluewings U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Suwon Samsung Bluewings",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Maetan High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Suwon Samsung Bluewings U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Suwon Samsung Bluewings",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Maetan High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Eun Seong Kim in the Korea Republic u17 squad and records Suwon Samsung Bluewings U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-moo-jin-park-2009",
-    "name": "Moo Jin Park",
-    "local_name": "Moo Jin Park",
-    "country": "Korea Republic",
-    "birth_date": "2009-05-24",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "registration_club": {
-      "name": "Boin High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Boin High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Moo Jin Park in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-hyun-min-oh-2009",
-    "name": "Hyun Min Oh",
-    "local_name": "Hyun Min Oh",
-    "country": "Korea Republic",
-    "birth_date": "2009-01-15",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 180,
-    "weight_kg": 68,
-    "registration_club": {
-      "name": "Cheonan Jeil High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Cheonan Jeil High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Hyun Min Oh in the Korea Republic u17 squad and records Cheonan Jeil High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-jun-seo-kim-2010",
-    "name": "Jun Seo Kim",
-    "local_name": "Jun Seo Kim",
-    "country": "Korea Republic",
-    "birth_date": "2010-10-14",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 176,
-    "weight_kg": 64,
-    "registration_club": {
-      "name": "Daejeon Hana Citizen U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Daejeon Hana Citizen",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Chungnam Mechanical Technical High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Daejeon Hana Citizen U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Daejeon Hana Citizen",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Chungnam Mechanical Technical High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Jun Seo Kim in the Korea Republic u17 squad and records Daejeon Hana Citizen U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-young-hyun-ha-2009",
-    "name": "Young Hyun Ha",
-    "local_name": "Young Hyun Ha",
-    "country": "Korea Republic",
-    "birth_date": "2009-04-17",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 179,
-    "weight_kg": 71,
-    "registration_club": {
-      "name": "Gwangyang Jecheol High School",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Jeonnam Dragons",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Gwangyang Jecheol High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Gwangyang Jecheol High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Jeonnam Dragons",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Gwangyang Jecheol High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Young Hyun Ha in the Korea Republic u17 squad and records Gwangyang Jecheol High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-joo-chan-lee-2009",
-    "name": "Joo Chan Lee",
-    "local_name": "Joo Chan Lee",
-    "country": "Korea Republic",
-    "birth_date": "2009-06-08",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 176,
-    "weight_kg": 68,
-    "registration_club": {
-      "name": "FC Seoul U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "FC Seoul",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Seoul Osan High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "FC Seoul U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "FC Seoul",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Seoul Osan High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Joo Chan Lee in the Korea Republic u17 squad and records FC Seoul U18 as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-jung-in-kim-2009",
-    "name": "Jung In Kim",
-    "local_name": "Jung In Kim",
-    "country": "Korea Republic",
-    "birth_date": "2009-12-25",
-    "age_band": "u17",
-    "primary_position": "Midfielder",
-    "height_cm": 172,
-    "weight_kg": 65,
+    "height_cm": 189,
+    "weight_kg": null,
     "registration_club": {
       "name": "Pohang Steelers U18",
       "country": "Korea Republic",
       "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Pohang Steelers",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Pohang Jecheol High School",
-        "country": "Korea Republic"
-      }
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
+        "stage_label": "2026 AFC U17 报名归属",
         "organization": "Pohang Steelers U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Pohang Steelers",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Pohang Jecheol High School",
-          "country": "Korea Republic"
-        }
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 POHANG STEELERS U18 记录。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -1476,10 +35,12 @@
         "label": "AFC U17 2026 韩国队终报名名单",
         "team": "Korea Republic U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 1,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
+        "note": "AFC 2026-05-02 终报名表列为 1 号。出场和进球尚未逐场核对。"
       }
     ],
     "external_links": [
@@ -1491,66 +52,51 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
     },
     "source_layers": [
       {
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
+        "checked_at": "2026-11-13",
         "confidence": "high",
         "fields": [
-          "tournament_participation",
-          "registration_club"
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
         ],
-        "claim": "AFC final registration confirms Jung In Kim in the Korea Republic u17 squad and records Pohang Steelers U18 as the tournament registration organization."
+        "claim": "AFC final registration (2026-05-02) lists JANG JUNYEONG as Korea Republic U17 No. 1 (Goalkeeper), born 27-08-2009, registered with POHANG STEELERS U18."
       }
     ]
   },
   {
-    "id": "kr-sung-woon-park-2009",
-    "name": "Sung Woon Park",
-    "local_name": "Sung Woon Park",
+    "id": "kr-park-jihu-2009",
+    "name": "Park Jihu",
+    "local_name": "Park Jihu",
     "country": "Korea Republic",
-    "birth_date": "2009-01-15",
+    "birth_date": "2009-01-23",
     "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 171,
-    "weight_kg": 62,
+    "primary_position": "Defender",
+    "height_cm": 183,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Daegu FC U18",
+      "name": "FC Seoul U18",
       "country": "Korea Republic",
       "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Daegu FC",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Hyeonpung High School",
-        "country": "Korea Republic"
-      }
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Daegu FC U18",
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "FC Seoul U18",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Daegu FC",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Hyeonpung High School",
-          "country": "Korea Republic"
-        }
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 FC SEOUL U18 记录。",
+        "organization_type": "club-academy"
       }
     ],
     "focus_tags": [
@@ -1563,10 +109,12 @@
         "label": "AFC U17 2026 韩国队终报名名单",
         "team": "Korea Republic U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 2,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
+        "note": "AFC 2026-05-02 终报名表列为 2 号。出场和进球尚未逐场核对。"
       }
     ],
     "external_links": [
@@ -1578,49 +126,1531 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
     },
     "source_layers": [
       {
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
+        "checked_at": "2026-11-13",
         "confidence": "high",
         "fields": [
-          "tournament_participation",
-          "registration_club"
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
         ],
-        "claim": "AFC final registration confirms Sung Woon Park in the Korea Republic u17 squad and records Daegu FC U18 as the tournament registration organization."
+        "claim": "AFC final registration (2026-05-02) lists PARK JIHU as Korea Republic U17 No. 2 (Defender), born 23-01-2009, registered with FC SEOUL U18."
       }
     ]
   },
   {
-    "id": "kr-hyeon-min-kim-2009",
-    "name": "Hyeon Min Kim",
-    "local_name": "Hyeon Min Kim",
+    "id": "kr-choi-jaehyeok-2009",
+    "name": "Choi Jaehyeok",
+    "local_name": "Choi Jaehyeok",
+    "country": "Korea Republic",
+    "birth_date": "2009-11-04",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 178,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Gangwon FC U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Gangwon FC U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 GANGWON FC U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 3,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 3 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists CHOI JAEHYEOK as Korea Republic U17 No. 3 (Defender), born 04-11-2009, registered with GANGWON FC U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-seong-minsu-2009",
+    "name": "Seong Minsu",
+    "local_name": "Seong Minsu",
+    "country": "Korea Republic",
+    "birth_date": "2009-02-05",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 183,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Pohang Steelers U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Pohang Steelers U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 POHANG STEELERS U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 4,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 4 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists SEONG MINSU as Korea Republic U17 No. 4 (Defender), born 05-02-2009, registered with POHANG STEELERS U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-choi-geonmin-2009",
+    "name": "Choi Geonmin",
+    "local_name": "Choi Geonmin",
+    "country": "Korea Republic",
+    "birth_date": "2009-11-16",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 187,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Jeonbuk Hyundai U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Jeonbuk Hyundai U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 JEONBUK HYUNDAI U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 5,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 5 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists CHOI GEONMIN as Korea Republic U17 No. 5 (Defender), born 16-11-2009, registered with JEONBUK HYUNDAI U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-jung-hawon-2009",
+    "name": "Jung Hawon",
+    "local_name": "Jung Hawon",
+    "country": "Korea Republic",
+    "birth_date": "2009-03-30",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 188,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "FC Seoul U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "FC Seoul U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 FC SEOUL U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 6,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 6 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists JUNG HAWON as Korea Republic U17 No. 6 (Midfielder), born 30-03-2009, registered with FC SEOUL U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-ann-juwan-2009",
+    "name": "Ann Juwan",
+    "local_name": "Ann Juwan",
+    "country": "Korea Republic",
+    "birth_date": "2009-04-14",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 177,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Seoul E-Land FC",
+      "country": "Korea Republic",
+      "organization_type": "professional-club",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Seoul E-Land FC",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 SEOUL E-LAND FC 记录。",
+        "organization_type": "professional-club"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 7,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 7 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists ANN JUWAN as Korea Republic U17 No. 7 (Midfielder), born 14-04-2009, registered with SEOUL E-LAND FC."
+      }
+    ]
+  },
+  {
+    "id": "kr-han-seungmin-2009",
+    "name": "Han Seungmin",
+    "local_name": "Han Seungmin",
+    "country": "Korea Republic",
+    "birth_date": "2009-11-09",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 180,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Jeonbuk Hyundai U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Jeonbuk Hyundai U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 JEONBUK HYUNDAI U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 8,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 8 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists HAN SEUNGMIN as Korea Republic U17 No. 8 (Midfielder), born 09-11-2009, registered with JEONBUK HYUNDAI U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-nam-ian-2009",
+    "name": "Nam Ian",
+    "local_name": "Nam Ian",
+    "country": "Korea Republic",
+    "birth_date": "2009-01-03",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 188,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Ulsan HD U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Ulsan HD U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 ULSAN HD U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 9,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 9 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists NAM IAN as Korea Republic U17 No. 9 (Forward), born 03-01-2009, registered with ULSAN HD U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-kim-jiwoo-2009",
+    "name": "Kim Jiwoo",
+    "local_name": "Kim Jiwoo",
+    "country": "Korea Republic",
+    "birth_date": "2009-01-02",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 183,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Busan I'Park U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Busan I'Park U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 BUSAN I'PARK U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 10,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 10 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists KIM JIWOO as Korea Republic U17 No. 10 (Forward), born 02-01-2009, registered with BUSAN I'PARK U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-kim-jiho-2009",
+    "name": "Kim Jiho",
+    "local_name": "Kim Jiho",
+    "country": "Korea Republic",
+    "birth_date": "2009-01-18",
+    "age_band": "u17",
+    "primary_position": "Forward",
+    "height_cm": 188,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Daejeon Hana U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Daejeon Hana U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 DAEJEON HANA U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 11,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 11 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists KIM JIHO as Korea Republic U17 No. 11 (Forward), born 18-01-2009, registered with DAEJEON HANA U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-lee-seunghwa-2009",
+    "name": "Lee Seunghwa",
+    "local_name": "Lee Seunghwa",
+    "country": "Korea Republic",
+    "birth_date": "2009-03-20",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 185,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Boin High School",
+      "country": "Korea Republic",
+      "organization_type": "high-school",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Boin High School",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 BOIN HIGH SCHOOL 记录。",
+        "organization_type": "high-school"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 12,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 12 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists LEE SEUNGHWA as Korea Republic U17 No. 12 (Goalkeeper), born 20-03-2009, registered with BOIN HIGH SCHOOL."
+      }
+    ]
+  },
+  {
+    "id": "kr-lim-yunho-2009",
+    "name": "Lim Yunho",
+    "local_name": "Lim Yunho",
+    "country": "Korea Republic",
+    "birth_date": "2009-06-13",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 176,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Gimcheon Sangmu U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Gimcheon Sangmu U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 GIMCHEON SANGMU U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 13,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 13 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists LIM YUNHO as Korea Republic U17 No. 13 (Defender), born 13-06-2009, registered with GIMCHEON SANGMU U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-ahn-sunhyun-2009",
+    "name": "Ahn Sunhyun",
+    "local_name": "Ahn Sunhyun",
+    "country": "Korea Republic",
+    "birth_date": "2009-09-05",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 177,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Pohang Steelers U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Pohang Steelers U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 POHANG STEELERS U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 14,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 14 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists AHN SUNHYUN as Korea Republic U17 No. 14 (Midfielder), born 05-09-2009, registered with POHANG STEELERS U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-namkoong-jun-2009",
+    "name": "Namkoong Jun",
+    "local_name": "Namkoong Jun",
+    "country": "Korea Republic",
+    "birth_date": "2009-01-07",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 173,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Bucheon FC 1995 U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Bucheon FC 1995 U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 BUCHEON FC 1995 U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 15,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 15 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists NAMKOONG JUN as Korea Republic U17 No. 15 (Defender), born 07-01-2009, registered with BUCHEON FC 1995 U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-moon-jihwan-2009",
+    "name": "Moon Jihwan",
+    "local_name": "Moon Jihwan",
+    "country": "Korea Republic",
+    "birth_date": "2009-05-04",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 180,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "FC Seoul U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "FC Seoul U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 FC SEOUL U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 16,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 16 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists MOON JIHWAN as Korea Republic U17 No. 16 (Midfielder), born 04-05-2009, registered with FC SEOUL U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-koo-hunmin-2009",
+    "name": "Koo Hunmin",
+    "local_name": "Koo Hunmin",
+    "country": "Korea Republic",
+    "birth_date": "2009-04-24",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 173,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Daejeon Hana U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Daejeon Hana U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 DAEJEON HANA U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 17,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 17 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists KOO HUNMIN as Korea Republic U17 No. 17 (Midfielder), born 24-04-2009, registered with DAEJEON HANA U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-park-kyunghoon-2009",
+    "name": "Park Kyunghoon",
+    "local_name": "Park Kyunghoon",
+    "country": "Korea Republic",
+    "birth_date": "2009-03-08",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 177,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Suwon Samsung U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Suwon Samsung U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 SUWON SAMSUNG U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 18,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 18 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists PARK KYUNGHOON as Korea Republic U17 No. 18 (Midfielder), born 08-03-2009, registered with SUWON SAMSUNG U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-kang-musung-2009",
+    "name": "Kang Musung",
+    "local_name": "Kang Musung",
+    "country": "Korea Republic",
+    "birth_date": "2009-03-29",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 195,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Ulsan HD U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Ulsan HD U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 ULSAN HD U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 19,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 19 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists KANG MUSUNG as Korea Republic U17 No. 19 (Defender), born 29-03-2009, registered with ULSAN HD U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-choi-minjun-2009",
+    "name": "Choi Minjun",
+    "local_name": "Choi Minjun",
+    "country": "Korea Republic",
+    "birth_date": "2009-04-15",
+    "age_band": "u17",
+    "primary_position": "Defender",
+    "height_cm": 185,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Pohang Steelers U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Pohang Steelers U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 POHANG STEELERS U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 20,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 20 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists CHOI MINJUN as Korea Republic U17 No. 20 (Defender), born 15-04-2009, registered with POHANG STEELERS U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-moon-yuno-2009",
+    "name": "Moon Yuno",
+    "local_name": "Moon Yuno",
+    "country": "Korea Republic",
+    "birth_date": "2009-12-15",
+    "age_band": "u17",
+    "primary_position": "Goalkeeper",
+    "height_cm": 187,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Jeju SK U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Jeju SK U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 JEJU SK U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 21,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 21 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists MOON YUNO as Korea Republic U17 No. 21 (Goalkeeper), born 15-12-2009, registered with JEJU SK U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-lee-inwoo-2009",
+    "name": "Lee Inwoo",
+    "local_name": "Lee Inwoo",
+    "country": "Korea Republic",
+    "birth_date": "2009-06-02",
+    "age_band": "u17",
+    "primary_position": "Midfielder",
+    "height_cm": 170,
+    "weight_kg": null,
+    "registration_club": {
+      "name": "Suwon Samsung U18",
+      "country": "Korea Republic",
+      "organization_type": "club-academy",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
+    },
+    "training_pathway": [
+      {
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Suwon Samsung U18",
+        "country": "Korea Republic",
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 SUWON SAMSUNG U18 记录。",
+        "organization_type": "club-academy"
+      }
+    ],
+    "focus_tags": [
+      "asia-u17-2026",
+      "korea-youth"
+    ],
+    "tournament_participation": [
+      {
+        "competition_id": "afc-u17-2026",
+        "label": "AFC U17 2026 韩国队终报名名单",
+        "team": "Korea Republic U17",
+        "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 22,
+        "appearances": null,
+        "goals": null,
+        "minutes": null,
+        "note": "AFC 2026-05-02 终报名表列为 22 号。出场和进球尚未逐场核对。"
+      }
+    ],
+    "external_links": [
+      {
+        "type": "official",
+        "label": "AFC 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+      }
+    ],
+    "verification": {
+      "status": "verified",
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
+    },
+    "source_layers": [
+      {
+        "type": "afc-registration",
+        "label": "AFC U17 2026 final squad list",
+        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
+        "checked_at": "2026-11-13",
+        "confidence": "high",
+        "fields": [
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
+        ],
+        "claim": "AFC final registration (2026-05-02) lists LEE INWOO as Korea Republic U17 No. 22 (Midfielder), born 02-06-2009, registered with SUWON SAMSUNG U18."
+      }
+    ]
+  },
+  {
+    "id": "kr-kim-taeho-2009",
+    "name": "Kim Taeho",
+    "local_name": "Kim Taeho",
     "country": "Korea Republic",
     "birth_date": "2009-01-29",
     "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 172,
-    "weight_kg": 65,
+    "primary_position": "Midfielder",
+    "height_cm": 177,
+    "weight_kg": null,
     "registration_club": {
-      "name": "Cheonan Jeil High School",
+      "name": "Gyeongbuk Natural Science High School",
       "country": "Korea Republic",
-      "organization_type": "high-school"
+      "organization_type": "high-school",
+      "status": "tournament-snapshot",
+      "as_of": "2026-05-02"
     },
     "training_pathway": [
       {
-        "stage_label": "2026 报名归属",
-        "organization": "Cheonan Jeil High School",
+        "stage_label": "2026 AFC U17 报名归属",
+        "organization": "Gyeongbuk Natural Science High School",
         "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
+        "note": "AFC U17 2026 终报名表（2026-05-02）登记的所属单位，按原文 GYEONGBUK NATURAL SCIENCE HIGH SCHOOL 记录。",
+        "organization_type": "high-school"
       }
     ],
     "focus_tags": [
@@ -1633,10 +1663,12 @@
         "label": "AFC U17 2026 韩国队终报名名单",
         "team": "Korea Republic U17",
         "squad_status": "registered",
+        "roster_status": "final-squad",
+        "shirt_number": 23,
         "appearances": null,
         "goals": null,
         "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
+        "note": "AFC 2026-05-02 终报名表列为 23 号。出场和进球尚未逐场核对。"
       }
     ],
     "external_links": [
@@ -1648,248 +1680,24 @@
     ],
     "verification": {
       "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
+      "last_checked": "2026-11-13",
+      "notes": "2026-11-13 按 AFC 终报名表 PDF 重建：此前同一 ID 段的 23 条记录与官方名单不符，已整体替换。生日、位置、身高、号码和所属单位以 AFC 原文为准。"
     },
     "source_layers": [
       {
         "type": "afc-registration",
         "label": "AFC U17 2026 final squad list",
         "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
+        "checked_at": "2026-11-13",
         "confidence": "high",
         "fields": [
-          "tournament_participation",
-          "registration_club"
+          "birth_date",
+          "primary_position",
+          "height_cm",
+          "registration_club",
+          "tournament_participation"
         ],
-        "claim": "AFC final registration confirms Hyeon Min Kim in the Korea Republic u17 squad and records Cheonan Jeil High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-ji-hwan-park-2009",
-    "name": "Ji Hwan Park",
-    "local_name": "Ji Hwan Park",
-    "country": "Korea Republic",
-    "birth_date": "2009-12-18",
-    "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 176,
-    "weight_kg": 69,
-    "registration_club": {
-      "name": "Boin High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Boin High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Ji Hwan Park in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-tae-guk-lee-2009",
-    "name": "Tae Guk Lee",
-    "local_name": "Tae Guk Lee",
-    "country": "Korea Republic",
-    "birth_date": "2009-10-27",
-    "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 172,
-    "weight_kg": 66,
-    "registration_club": {
-      "name": "Boin High School",
-      "country": "Korea Republic",
-      "organization_type": "high-school"
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Boin High School",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "high-school",
-        "competition_context_ids": [
-          "korea-national-high-school-league"
-        ]
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Tae Guk Lee in the Korea Republic u17 squad and records Boin High School as the tournament registration organization."
-      }
-    ]
-  },
-  {
-    "id": "kr-seo-jun-park-2010",
-    "name": "Seo Jun Park",
-    "local_name": "Seo Jun Park",
-    "country": "Korea Republic",
-    "birth_date": "2010-01-21",
-    "age_band": "u17",
-    "primary_position": "Forward",
-    "height_cm": 175,
-    "weight_kg": 66,
-    "registration_club": {
-      "name": "Suwon Samsung Bluewings U18",
-      "country": "Korea Republic",
-      "organization_type": "club-academy",
-      "parent_organization": {
-        "name": "Suwon Samsung Bluewings",
-        "country": "Korea Republic"
-      },
-      "education_partner": {
-        "name": "Maetan High School",
-        "country": "Korea Republic"
-      }
-    },
-    "training_pathway": [
-      {
-        "stage_label": "2026 报名归属",
-        "organization": "Suwon Samsung Bluewings U18",
-        "country": "Korea Republic",
-        "note": "AFC U17 2026 终报名表列为当前俱乐部。",
-        "organization_type": "club-academy",
-        "competition_context_ids": [
-          "korea-k-league-junior-u18",
-          "korea-k-league-youth-championship"
-        ],
-        "parent_organization": {
-          "name": "Suwon Samsung Bluewings",
-          "country": "Korea Republic"
-        },
-        "education_partner": {
-          "name": "Maetan High School",
-          "country": "Korea Republic"
-        }
-      }
-    ],
-    "focus_tags": [
-      "asia-u17-2026",
-      "korea-youth"
-    ],
-    "tournament_participation": [
-      {
-        "competition_id": "afc-u17-2026",
-        "label": "AFC U17 2026 韩国队终报名名单",
-        "team": "Korea Republic U17",
-        "squad_status": "registered",
-        "appearances": null,
-        "goals": null,
-        "minutes": null,
-        "note": "AFC 于 2026-05-02 发布的终报名表列入最终 23 人名单。"
-      }
-    ],
-    "external_links": [
-      {
-        "type": "official",
-        "label": "AFC 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
-      }
-    ],
-    "verification": {
-      "status": "verified",
-      "last_checked": "2026-05-22",
-      "notes": "基础信息来自 AFC 2026 终报名表（2026-05-02）；当前批量补录先保留官方注册拼写，后续再补个体外链与 native script。"
-    },
-    "source_layers": [
-      {
-        "type": "afc-registration",
-        "label": "AFC U17 2026 final squad list",
-        "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf",
-        "checked_at": "2026-07-12",
-        "confidence": "high",
-        "fields": [
-          "tournament_participation",
-          "registration_club"
-        ],
-        "claim": "AFC final registration confirms Seo Jun Park in the Korea Republic u17 squad and records Suwon Samsung Bluewings U18 as the tournament registration organization."
+        "claim": "AFC final registration (2026-05-02) lists KIM TAEHO as Korea Republic U17 No. 23 (Midfielder), born 29-01-2009, registered with GYEONGBUK NATURAL SCIENCE HIGH SCHOOL."
       }
     ]
   }

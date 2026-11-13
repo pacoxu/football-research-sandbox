@@ -4,6 +4,26 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-11-13 (U17 World Cup topic)
+
+### Added
+
+- The U17 World Cup page now lists China's three Group H fixtures with Doha and Beijing kick-off times, the 25-player camp list grouped by club as published, and a new "Asian teams and China's group opponents" section: 12 team cards with coach, qualification route, known fixtures and roster, linked to player pages where a record exists.
+- Rosters: Japan 19 of the 21 announced on 2 November (two defenders were not in the public excerpts), Korea Republic's 2 November announcement with the five players named in coverage, Qatar's 21 (QNA, 9 November) and Spain's 21 (RFEF, 5 November). Australia, Uzbekistan, Saudi Arabia, Tajikistan and Vietnam show their AFC finals 23 until their World Cup lists are captured. Morocco has an announcement date but no names yet, and Fiji has no squad yet.
+- `validateTeamRosters` checks each card against the draw (group membership, fixture opponents and dates), linked player IDs and the roster size for its status.
+- The Spain page has a new section on Spain-registered China U17 players and the World Cup. Three of China's AFC finals 23 were registered in Spain: Xie Jin (Real Carabanchel), Wang Xiuhao (Damm) and goalkeeper Zhu Yuxuan (Getafe). None of them, nor Lyu Mengyang, Huang Zijie or Liu Kaiyuan, is on the 25-player World Cup camp list. Zhu Yuxuan gets a Getafe placement.
+
+### Updated
+
+- Group B and Group C now name Uganda and Mozambique in place of the CAF placeholders, and the participant list is complete at 48. Korea Republic's announced opener against Uganda on 19 November settles the placement.
+- Chinese labels for the rest of the 2026 field.
+
+### Corrected
+
+- Rebuilt the Japan and Korea Republic AFC U17 2026 player records (23 + 23) from the AFC final registration PDF. The previous 46 records claimed that PDF as their source but did not match it: apart from Kosei Oshita (whose birth date and club were also wrong), none of their names appear on the official lists. New records carry the printed number, position, birth date, height and registration club. Twenty Japanese players also get their JFA kanji spelling; Saito Kakeru, Takaki Eito and Iwashita Yuto, and all Korean players, keep their Latin names until an official local-script source is attached.
+- Market-value rows for the new IDs are marked `not-searched-by-profile`; the validator's deep-sample list swaps the removed IDs for real players that have an independent JFA source layer.
+- Seven China AFC U17 2026 records had the right names but birth dates, positions, heights and clubs that disagree with the AFC list: Jiang Chengen, Wang Heyi, Bian Weihao, Peng Xianchen, Zhang Bolin, Liu Zhicheng and Zhu Yuxuan. They now follow the AFC registration. For example, Jiang Chengen and Zhu Yuxuan are goalkeepers, Zhang Bolin is a forward, and Zhu Yuxuan is registered with Getafe. That makes him a current overseas registration, so the active count goes from 15 to 16. Peng Xianchen was born in 2010; his ID keeps the old year.
+
 ## 2026-11-13
 
 ### Fixed
