@@ -4,6 +4,13 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-11-13 (U17 World Cup topic)
+
+### Corrected
+
+- Rebuilt the Japan and Korea Republic AFC U17 2026 player records (23 + 23) from the AFC final registration PDF. The previous 46 records claimed that PDF as their source but did not match it: apart from Kosei Oshita (whose birth date and club were also wrong), none of their names appear on the official lists. New records carry the printed number, position, birth date, height and registration club. Twenty Japanese players also get their JFA kanji spelling; Saito Kakeru, Takaki Eito and Iwashita Yuto, and all Korean players, keep their Latin names until an official local-script source is attached.
+- Market-value rows for the new IDs are marked `not-searched-by-profile`; the validator's deep-sample list swaps the removed IDs for real players that have an independent JFA source layer.
+
 ## 2026-11-13
 
 ### Fixed

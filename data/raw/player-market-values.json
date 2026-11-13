@@ -9,16 +9,16 @@
         "available": 118,
         "fetch-error": 22,
         "ambiguous-profile": 3,
-        "no-market-value": 45,
-        "profile-not-found": 383,
+        "no-market-value": 43,
+        "profile-not-found": 385,
         "team-page-only": 2
       },
       "by_country": {
         "Australia": {
           "total": 46,
           "available": 22,
-          "fetch-error": 22,
           "ambiguous-profile": 1,
+          "fetch-error": 22,
           "no-market-value": 1
         },
         "China PR": {
@@ -26,27 +26,26 @@
           "available": 46,
           "profile-not-found": 39,
           "no-market-value": 22,
-          "team-page-only": 2,
-          "ambiguous-profile": 1
+          "ambiguous-profile": 1,
+          "team-page-only": 2
         },
         "Japan": {
           "total": 52,
-          "profile-not-found": 22,
+          "profile-not-found": 23,
           "available": 23,
-          "no-market-value": 7
+          "no-market-value": 6
         },
         "Korea Republic": {
           "total": 50,
+          "profile-not-found": 25,
           "available": 24,
-          "profile-not-found": 24,
-          "no-market-value": 1,
           "ambiguous-profile": 1
         },
         "Uzbekistan": {
           "total": 81,
           "available": 3,
-          "profile-not-found": 64,
-          "no-market-value": 14
+          "no-market-value": 14,
+          "profile-not-found": 64
         },
         "IR Iran": {
           "total": 67,
@@ -8222,28 +8221,6 @@
       "last_change_date": null,
       "alternatives": []
     },
-    "jp-ai-toyama-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "jp-anrie-chase-2004": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -8388,72 +8365,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "jp-aran-sato-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-eita-kobayashi-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-gento-fujiwara-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "jp-haruta-kume-2005": {
       "checked_at": "2026-07-12",
       "status": "no-market-value",
@@ -8484,28 +8395,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "jp-hiroto-yamamoto-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "jp-kaito-koizumi-2005": {
       "checked_at": "2026-07-12",
@@ -8663,28 +8552,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "jp-kento-uegaki-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "jp-kodai-sano-2003": {
       "checked_at": "2026-07-12",
@@ -8910,94 +8777,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "jp-kosei-oshita-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-kosei-yanagui-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-lion-tahara-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-louis-ellena-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "jp-masataka-kobayashi-2005": {
       "checked_at": "2026-07-12",
@@ -9242,28 +9021,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "jp-rei-ono-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "jp-rei-umeki-2005": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -9430,58 +9187,6 @@
         ],
         "candidate_urls": [
           "https://www.transfermarkt.com/rento-takaoka/profil/spieler/1146989"
-        ]
-      },
-      "alternatives": [],
-      "last_success_at": "2026-07-12"
-    },
-    "jp-reto-nagata-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-rikuto-yoshida-2009": {
-      "checked_at": "2026-07-12",
-      "status": "no-market-value",
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "https://www.transfermarkt.com/koki-kurahashi/profil/spieler/1265611",
-        "market_value_url": "https://www.transfermarkt.com/koki-kurahashi/marktwertverlauf/spieler/1265611",
-        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1265611/market-value-history?_x_preferred_context=com"
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "confirmed",
-        "method": "existing-link",
-        "matched_fields": [
-          "birth_date",
-          "nationality",
-          "position"
-        ],
-        "candidate_urls": [
-          "https://www.transfermarkt.com/koki-kurahashi/profil/spieler/1265611"
         ]
       },
       "alternatives": [],
@@ -9667,50 +9372,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "jp-ryosuke-furukawa-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-ryota-abe-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "jp-ryunosuke-sato-2006": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -9817,28 +9478,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "jp-seigo-aoyama-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "jp-sena-ishibashi-2006": {
       "checked_at": "2026-07-12",
@@ -10194,28 +9833,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "jp-soshiro-shimada-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "jp-sota-kitano-2004": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -10349,28 +9966,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "jp-sota-yamauchi-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "jp-taichi-fukui-2004": {
       "checked_at": "2026-07-12",
@@ -10534,28 +10129,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "jp-takaya-sekine-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "jp-tariqkanihayato-okabe-2006": {
       "checked_at": "2026-07-12",
       "status": "no-market-value",
@@ -10690,28 +10263,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "jp-tsubasa-kamimura-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "jp-uche-brian-seo-nwadike-2005": {
       "checked_at": "2026-07-12",
       "status": "no-market-value",
@@ -10742,50 +10293,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "jp-yamato-otaka-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "jp-yohei-onishi-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "jp-yudai-shimamoto-2006": {
       "checked_at": "2026-07-12",
@@ -10858,28 +10365,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "jp-yuma-atsuta-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "jp-yumeki-yokoyama-2005": {
       "checked_at": "2026-07-12",
@@ -11402,116 +10887,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "kr-dae-hwan-kim-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-do-hun-park-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-eun-seong-kim-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-geon-hee-jin-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-geon-woo-park-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "kr-hong-seongmin-2006": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -11609,28 +10984,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "kr-hui-sung-yoon-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "kr-hwang-jaeyun-2003": {
       "checked_at": "2026-07-12",
@@ -11730,80 +11083,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "kr-hyeon-min-kim-2009": {
-      "checked_at": "2026-07-12",
-      "status": "no-market-value",
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "https://www.transfermarkt.com/tae-ho-kim/profil/spieler/1417353",
-        "market_value_url": "https://www.transfermarkt.com/tae-ho-kim/marktwertverlauf/spieler/1417353",
-        "api_url": "https://tmapi-alpha.transfermarkt.technology/player/1417353/market-value-history?_x_preferred_context=com"
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "confirmed",
-        "method": "national-team-squad:South Korea U17",
-        "matched_fields": [
-          "birth_date",
-          "nationality",
-          "position"
-        ],
-        "candidate_urls": [
-          "https://www.transfermarkt.com/tae-ho-kim/profil/spieler/1417353"
-        ]
-      },
-      "alternatives": [],
-      "last_success_at": "2026-07-12"
-    },
-    "kr-hyun-min-oh-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-hyun-woong-jeong-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "kr-jang-seokhwan-2004": {
       "checked_at": "2026-07-12",
@@ -12030,50 +11309,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "kr-ji-hwan-park-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-ji-yong-lee-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "kr-jo-hyuntae-2004": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -12209,28 +11444,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "kr-joo-chan-lee-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "kr-joung-jihun-2004": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -12346,50 +11559,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "kr-jun-seo-kim-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-jung-in-kim-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "kr-jung-seungbae-2003": {
       "checked_at": "2026-07-12",
@@ -13823,28 +12992,6 @@
       "last_change_date": null,
       "alternatives": []
     },
-    "kr-moo-jin-park-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "kr-moon-hyunho-2003": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -14252,72 +13399,6 @@
       "alternatives": [],
       "last_success_at": "2026-07-12"
     },
-    "kr-sang-young-park-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-seo-jun-park-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-seung-min-lee-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
     "kr-shin-minha-2005": {
       "checked_at": "2026-07-12",
       "status": "available",
@@ -14416,116 +13497,6 @@
       },
       "alternatives": [],
       "last_success_at": "2026-07-12"
-    },
-    "kr-sung-woon-park-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-tae-guk-lee-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-woo-jin-jin-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-yoon-seong-lee-2010": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
-    },
-    "kr-young-hyun-ha-2009": {
-      "checked_at": "2026-07-12",
-      "status": "profile-not-found",
-      "source": {
-        "provider": "Transfermarkt",
-        "profile_url": "",
-        "market_value_url": "",
-        "api_url": null
-      },
-      "lookup": {
-        "checked_at": "2026-07-12",
-        "status": "not-found",
-        "method": "national-team-squads",
-        "candidate_urls": []
-      },
-      "history": [],
-      "history_points": 0,
-      "current": null,
-      "peak": null,
-      "last_change_date": null,
-      "alternatives": []
     },
     "uz-abdukodir-khusanov-2004": {
       "checked_at": "2026-07-12",
@@ -23848,6 +22819,1018 @@
       },
       "alternatives": [],
       "last_success_at": "2026-09-02"
+    },
+    "jp-kosei-oshita-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-yuto-iwashita-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-anthony-udemba-motosuna-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-yuzo-takeuchi-2010": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-sosuke-hoshi-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-sora-iwatsuchi-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-kaiji-chonan-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-takeshi-wada-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-eito-takaki-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-maki-kitahara-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-kakeru-saito-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-rento-kida-2010": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-chimezie-ezemuokwe-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-tafuku-satomi-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-ryoma-tsuneyoshi-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-kazato-kimura-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-yoshiki-fujimoto-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-rekuto-shiraogawa-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-shun-tatemi-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-yoshito-kumada-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-arata-okamoto-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-koki-kurahashi-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "jp-koki-takahashi-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-jang-junyeong-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-park-jihu-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-choi-jaehyeok-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-seong-minsu-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-choi-geonmin-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-jung-hawon-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-ann-juwan-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-han-seungmin-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-nam-ian-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-kim-jiwoo-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-kim-jiho-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-lee-seunghwa-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-lim-yunho-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-ahn-sunhyun-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-namkoong-jun-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-moon-jihwan-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-koo-hunmin-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-park-kyunghoon-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-kang-musung-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-choi-minjun-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-moon-yuno-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-lee-inwoo-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
+    },
+    "kr-kim-taeho-2009": {
+      "checked_at": "2026-11-13",
+      "status": "profile-not-found",
+      "source": {
+        "provider": "Transfermarkt",
+        "profile_url": "",
+        "market_value_url": "",
+        "api_url": null
+      },
+      "lookup": {
+        "checked_at": "2026-11-13",
+        "status": "not-found",
+        "method": "not-searched-by-profile",
+        "candidate_urls": []
+      },
+      "history": [],
+      "history_points": 0,
+      "current": null,
+      "peak": null,
+      "last_change_date": null,
+      "alternatives": []
     }
   }
 }

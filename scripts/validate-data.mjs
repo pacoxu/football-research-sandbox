@@ -177,22 +177,21 @@ const allowedYouthCompetitionTypes = new Set([
 ]);
 
 const issue16DeepSampleIds = new Set([
-  "jp-rei-ono-2009",
-  "jp-aran-sato-2010",
-  "jp-takaya-sekine-2009",
+  // AFC U17 2026 samples were rebuilt from the AFC final registration on 2026-11-13;
+  // the Japan ones carry the JFA squad page as their independent layer.
+  "jp-maki-kitahara-2009",
+  "jp-yuzo-takeuchi-2010",
+  "jp-koki-kurahashi-2009",
   "jp-masataka-kobayashi-2005",
   "jp-kaito-tsuchiya-2006",
   "jp-kosei-ogura-2005",
-  "kr-seung-min-lee-2009",
-  "kr-geon-woo-park-2009",
   "kr-moon-hyunho-2003",
   "kr-bae-hyunseo-2005",
   "kr-lee-chanouk-2003",
   "kr-kim-taewon-2005",
   "kr-kim-yonghak-2003",
-  "jp-ryosuke-furukawa-2009",
-  "jp-tomoyasu-hamasaki-2005",
-  "kr-woo-jin-jin-2009"
+  "jp-anthony-udemba-motosuna-2009",
+  "jp-tomoyasu-hamasaki-2005"
 ]);
 
 const issue47DeepSampleIds = new Set([

@@ -14,16 +14,16 @@
   "coverage_summary": {
     "dataset_count": 10,
     "record_count": 986,
-    "stale_records": 187,
+    "stale_records": 141,
     "needs_review_records": 348
   },
   "freshness": {
     "as_of": "2026-11-13",
     "audited_records": 1291,
-    "overdue": 758,
+    "overdue": 666,
     "by_window": {
-      "30": 172,
-      "90": 586,
+      "30": 126,
+      "90": 540,
       "180": 0
     }
   },
@@ -36,11 +36,11 @@
       },
       "record_count": 573,
       "quality": {
-        "complete": 64,
+        "complete": 84,
         "mixed": 2,
-        "partial": 31,
+        "partial": 57,
         "needs-review": 312,
-        "stale": 164,
+        "stale": 118,
         "excluded": 0
       },
       "source_tiers": {
@@ -54,13 +54,13 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-10-03"
+        "newest": "2026-11-13"
       },
-      "overdue_records": 164,
+      "overdue_records": 118,
       "missing_fields": [
         {
           "field": "names.native_verified",
-          "count": 229
+          "count": 209
         },
         {
           "field": "source_layers",
