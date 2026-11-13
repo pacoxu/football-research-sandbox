@@ -32,6 +32,9 @@ jobs:
         run: npm ci
 
       - name: Prepare data
+        env:
+          # Stale event statuses become warnings here; validate-data.yml still fails on them.
+          LIFECYCLE_CHECK: warn
         run: node scripts/prepare-data.mjs
 
       - name: Verify generated site data

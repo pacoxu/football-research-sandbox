@@ -350,6 +350,14 @@ function isIsoDate(value) {
 
 export function validateTournamentLifecycle(tournament, referenceDate) {
   assert(isIsoDate(referenceDate), `Invalid tournament lifecycle reference date: ${referenceDate}`);
+  const start = tournament.date_range?.start ?? null;
+  if (tournament.status === "upcoming" && isIsoDate(start)) {
+    assert(
+      start >= referenceDate,
+      `Started upcoming tournament: ${tournament.id} (upcoming, started ${start})`
+    );
+    return;
+  }
   const activeStatuses = new Set(["ongoing", "in-progress"]);
   if (!activeStatuses.has(tournament.status) || tournament.date_range?.end === null) {
     return;
@@ -363,6 +371,94 @@ export function validateTournamentLifecycle(tournament, referenceDate) {
     tournament.date_range.end >= referenceDate,
     `Expired active tournament: ${tournament.id} (${tournament.status}, ended ${tournament.date_range.end})`
   );
+}
+
+const LIFECYCLE_MODES = new Set(["error", "warn"]);
+const PENDING_MATCH_STATUSES = new Set(["scheduled", "reported-schedule"]);
+
+// Tournaments tracked in both tournaments.json and tournament-archive.json must
+// tell the same story; otherwise a detail page mixes a closed headline with an open status.
+export function validateFocusArchiveConsistency(tournaments, archive) {
+  const archiveById = new Map(archive.map((entry) => [entry.id, entry]));
+  for (const tournament of tournaments) {
+    const archived = archiveById.get(tournament.id);
+    if (!archived) {
+      continue;
+    }
+    assert(
+      archived.status === tournament.status,
+      `Tournament status differs between tournaments.json and tournament-archive.json: ${tournament.id} (${tournament.status} vs ${archived.status})`
+    );
+    for (const field of ["start", "end"]) {
+      const focusValue = tournament.date_range?.[field] ?? null;
+      const archiveValue = archived.date_range?.[field] ?? null;
+      assert(
+        focusValue === archiveValue,
+        `Tournament ${field} date differs between tournaments.json and tournament-archive.json: ${tournament.id} (${focusValue} vs ${archiveValue})`
+      );
+    }
+  }
+}
+
+// Matches dated before the reference date must not stay unplayed or TBD.
+export function findStaleScheduledMatches(dataset, referenceDate) {
+  assert(isIsoDate(referenceDate), `Invalid stale-match reference date: ${referenceDate}`);
+  const issues = [];
+  const isPast = (date) => isIsoDate(date) && date < referenceDate;
+
+  for (const tournament of dataset.tournamentArchive ?? []) {
+    for (const match of tournament.china_matches ?? []) {
+      if (isPast(match.date) && !["W", "D", "L"].includes(match.result)) {
+        issues.push(`Past archive match without a result: ${tournament.id} ${match.date} vs ${match.opponent}`);
+      }
+    }
+  }
+  for (const tournament of dataset.tournaments ?? []) {
+    for (const fixture of tournament.china_group_stage?.fixtures ?? []) {
+      if (isPast(fixture.date) && PENDING_MATCH_STATUSES.has(fixture.status)) {
+        issues.push(`Past fixture still ${fixture.status}: ${tournament.id} ${fixture.date} vs ${fixture.opponent}`);
+      }
+    }
+  }
+  for (const match of dataset.womenFootball?.u17_world_cup?.china_2026?.matches ?? []) {
+    if (isPast(match.date) && match.played === false) {
+      issues.push(`Past women's match still unplayed: ${match.id} ${match.date}`);
+    }
+  }
+  const coaches = dataset.chinaMenYouthCoaches;
+  const camps = [
+    ["senior", coaches?.senior_men_window?.latest_camp],
+    ...(coaches?.team_cycles ?? []).map((cycle) => [cycle.team_label, cycle.latest_camp])
+  ];
+  for (const [label, camp] of camps) {
+    for (const match of camp?.matches ?? []) {
+      if (isPast(match.date) && PENDING_MATCH_STATUSES.has(match.status)) {
+        issues.push(`Past camp match still ${match.status}: ${label} ${match.date} vs ${match.opponent}`);
+      }
+    }
+  }
+  return issues;
+}
+
+export function reportLifecycleIssues(allIssues, mode = "error") {
+  assert(LIFECYCLE_MODES.has(mode), `Invalid lifecycle mode: ${mode}`);
+  // The same event can be flagged from tournaments.json and the archive.
+  const issues = [...new Set(allIssues)];
+  if (issues.length === 0) {
+    return;
+  }
+  if (mode === "error") {
+    throw new Error(
+      `Stale lifecycle data (${issues.length}). Update the records or run with LIFECYCLE_CHECK=warn:\n- ${issues.join("\n- ")}`
+    );
+  }
+  for (const issue of issues) {
+    if (process.env.GITHUB_ACTIONS === "true") {
+      console.log(`::warning title=Stale data::${issue}`);
+    } else {
+      console.warn(`warning: ${issue}`);
+    }
+  }
 }
 
 function normalizeIdentityName(value) {
@@ -3374,8 +3470,20 @@ export function validatePlayerCompetitionReference(player, entry, tournamentIds,
   );
 }
 
-export async function validateData(referenceDate = new Date().toISOString().slice(0, 10)) {
+export async function validateData(
+  referenceDate = new Date().toISOString().slice(0, 10),
+  { lifecycle = "error" } = {}
+) {
   assert(isIsoDate(referenceDate), `Invalid validation reference date: ${referenceDate}`);
+  assert(LIFECYCLE_MODES.has(lifecycle), `Invalid lifecycle mode: ${lifecycle}`);
+  const lifecycleIssues = [];
+  const checkLifecycle = (check) => {
+    try {
+      check();
+    } catch (error) {
+      lifecycleIssues.push(error.message);
+    }
+  };
   await validateJsonSchemas({ includeSite: false });
   const dataset = await loadDataset();
   validateBigFiveDebutForecastInput(dataset.bigFiveDebutForecast, dataset.players);
@@ -3829,7 +3937,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   for (const tournament of dataset.tournaments) {
     assert(isIsoDate(tournament.last_checked), `Invalid tournament last_checked: ${tournament.id}`);
     validateTournamentDateRange(tournament, "focus tournament");
-    validateTournamentLifecycle(tournament, referenceDate);
+    checkLifecycle(() => validateTournamentLifecycle(tournament, referenceDate));
     validateTournamentBroadcastPlan(tournament);
     validateTournamentTicketing(tournament);
     if (tournament.id === "fifa-world-cup-2030") {
@@ -3928,6 +4036,11 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   );
   validateEuropeTopLeaguesJapanKorea(dataset.europeTopLeaguesJapanKorea);
   validateWomenFootball(dataset.womenFootball);
+  for (const edition of dataset.womenFootball?.u17_world_cup?.editions ?? []) {
+    if (edition.date_range) {
+      checkLifecycle(() => validateTournamentLifecycle(edition, referenceDate));
+    }
+  }
   validateSpainFootballSystem(
     dataset.spainFootballSystem,
     playerIds,
@@ -3975,6 +4088,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
   for (const tournament of dataset.tournamentArchive) {
     assert(tournament.id && tournament.competition_name, "Archive tournament must include id and competition_name");
     validateTournamentDateRange(tournament);
+    checkLifecycle(() => validateTournamentLifecycle(tournament, referenceDate));
     if (historicalChinaPlayerStatTournamentIds.has(tournament.id)) {
       validateHistoricalChinaPlayerStats(tournament);
     }
@@ -4075,6 +4189,7 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     "2034 Cup partial comparison candidates are incomplete"
   );
   validateU20ArchiveCoverage(dataset.tournamentArchive);
+  validateFocusArchiveConsistency(dataset.tournaments, dataset.tournamentArchive);
   validateScoutingWatchlist(dataset.scoutingWatchlist, dataset.players);
 
   if (dataset.chinaMenYouthCoaches !== null) {
@@ -4104,11 +4219,16 @@ export async function validateData(referenceDate = new Date().toISOString().slic
     validateUefaYouthLeague(dataset.uefaYouthLeague, playerIds);
   }
 
+  lifecycleIssues.push(...findStaleScheduledMatches(dataset, referenceDate));
+  reportLifecycleIssues(lifecycleIssues, lifecycle);
+
   return dataset;
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {
-  const dataset = await validateData();
+  const dataset = await validateData(undefined, {
+    lifecycle: process.env.LIFECYCLE_CHECK === "warn" ? "warn" : "error"
+  });
   console.log(
     `Validated ${dataset.players.length} players, ${dataset.tournaments.length} tournaments, ${dataset.projects.length} projects.`
   );

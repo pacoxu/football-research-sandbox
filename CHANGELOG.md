@@ -4,6 +4,38 @@ All notable project data-model, generation, and documentation changes should be 
 
 This project tracks research data, so changelog entries should separate code changes, data-scope changes, major data additions, and corrections.
 
+## 2026-11-13
+
+### Fixed
+
+- Fixed the home page crash (`Cannot read properties of null (reading 'localeCompare')`). The focus-card sort now tolerates `null` dates, uses the visitor's current date instead of `generated_at`, and treats an event whose end date has passed as finished even if its stored status is stale. The logic lives in `assets/home-focus.js` with tests.
+- Fixed dates rendering one day early for visitors west of UTC. `formatDate()` parsed dates as UTC midnight but printed them in local time; `assets/dates.js` now formats with `timeZone: "UTC"`.
+- Synced the Yinchuan U17 archive record with the CFA closing report already used by `tournaments.json` (completed, China PR runners-up, 1-1 against Nigeria). The detail page no longer shows a closed headline next to an in-progress status.
+- Corrected the AFC U23 Asian Cup 2026 end date in `tournaments.json` from 2026-01-25 to 2026-01-24, matching the archive and the milestones page.
+
+### Validation
+
+- Date-dependent lifecycle checks are now collected and reported together. `npm run validate-data` and PR checks still fail on stale data; the Pages deploy sets `LIFECYCLE_CHECK=warn`, so stale event statuses become workflow warnings instead of blocking unrelated fixes.
+- Lifecycle checks now also cover archive records, women's U17 editions, `upcoming` events whose start date has passed, and past-dated matches that are still `scheduled`, `reported-schedule`, unplayed or TBD.
+- Tournaments tracked in both `tournaments.json` and `tournament-archive.json` must agree on status and dates.
+- Upcoming U20 events may store exact dates once a `source_version` entry covers `date_range`.
+
+### Updated
+
+- CSL 2026 closed on 8 November: Dalian Yingbo champions on head-to-head over Chengdu Rongcheng (both 52 points); Wuhan Three Towns and Qingdao Hainiu relegated.
+- 2026 U-17 Women's World Cup closed: China PR lost the quarter-final 1-2 to Brazil (first quarter-final); Nigeria beat Japan 2-1 in the final, Korea DPR third. The milestones entry now stores the quarter-final result.
+- Asian Games 2026 men's football: Korea Republic beat Japan 1-0 in the gold-medal match; champion and runner-up are now stored. The goal minute is left out because AFP/QNA (60') and Yonhap (61') differ.
+- Jiangsu City League 2026 closed on 31 October: Wuxi beat Changzhou 2-1 in the final.
+- Senior men's Chongqing invitational: 0-3 New Zealand, 0-5 Palestine and 0-1 Tajikistan added after the 3-0 against the Maldives. China U16 1-0 Vietnam U16 at the Shenyang Peace Cup. China U17's three London friendlies are recorded as 0-1, 0-3 and 0-3 losses.
+- Added the FIFA U-17 World Cup Qatar 2026 as a primary focus tournament with China's Group H fixtures, the 2026-10-28 25-player camp list boundary and the 21-player registration limit.
+- AFC U20 Asian Cup 2027 finals dates (2027-03-24 to 2027-04-10, Hangzhou) and FIFA U-20 World Cup 2027 dates (2027-09-17 to 2027-10-09) are now stored.
+- Added notes for the FA Cup semi-final (Yunnan Yukun 4-3 Dalian Yingbo) and Guangdong Guangzhou Leopards' League One title and promotion.
+
+### Data Scope Notes
+
+- Final-season CSL statistics for tracked youth players are not closed yet; existing null totals stay.
+- AFC U20 2027 qualifier outcomes, China U16's third Peace Cup match and the U17 World Cup final registration list are not captured.
+
 ## 2026-11-01
 
 ### Added
