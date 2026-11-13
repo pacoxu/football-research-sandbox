@@ -22,7 +22,7 @@
       "Tajikistan",
       "Vietnam"
     ],
-    "headline": "中国 U17 时隔 21 年重返世少赛，H 组 2026-11-20 对西班牙、11-23 对摩洛哥、11-26 对斐济；中国足协 2026-10-28 公布 25 人集训名单。",
+    "headline": "中国 U17 时隔 21 年重返世少赛：H 组 11-20 对西班牙（北京时间 21 日 0 点）、11-23 对摩洛哥、11-26 对斐济；25 人集训名单全部随队到达卡塔尔，正式报名 21 人。",
     "china_group_stage": {
       "group": "Group H",
       "teams": [
@@ -35,25 +35,33 @@
         {
           "date": "2026-11-20",
           "opponent": "Spain",
-          "status": "scheduled"
+          "status": "scheduled",
+          "kickoff_local": "19:00",
+          "kickoff_beijing": "2026-11-21 00:00",
+          "venue": "Aspire Zone Pitch 7"
         },
         {
           "date": "2026-11-23",
           "opponent": "Morocco",
-          "status": "scheduled"
+          "status": "scheduled",
+          "kickoff_local": "18:00",
+          "kickoff_beijing": "2026-11-23 23:00"
         },
         {
           "date": "2026-11-26",
           "opponent": "Fiji",
-          "status": "scheduled"
+          "status": "scheduled",
+          "kickoff_local": "18:00",
+          "kickoff_beijing": "2026-11-26 23:00"
         }
       ]
     },
     "update_cadence": "赛期内每场赛后更新中国队赛果；小组赛结束后核对晋级和淘汰赛对阵。",
     "notes": [
-      "48 队分 12 组，每组前两名和 8 个成绩最好的小组第三进入淘汰赛。",
-      "中国足协 2026-10-28 公布第七期 25 人集训名单，集训自 2026-11-02 在上海开始后转赴卡塔尔；张伯霖因伤落选。该名单是集训名单，不等于国际足联正式报名名单；本届正式报名上限为 21 人，首场比赛开球前 24 小时内仍可按伤病规则替换。",
-      "球队 2026-11-07 从上海出发赴多哈，抵达后先后与新西兰、洪都拉斯进行两场热身赛。",
+      "48 队分 12 组，每组前两名和 8 个成绩最好的小组第三进入 32 强。",
+      "中国足协 2026-10-28 公布第七期 25 人集训名单，集训自 2026-11-02 在上海开始；张伯霖因伤落选。25 人于 11-07 全部随队赴多哈，正式报名上限 21 人，首场开球前 24 小时内仍可按伤病规则替换。",
+      "首战开球时间：西班牙足协赛程表写 17:00（西班牙时间），与央视、北京日报所报北京时间 11-21 0 点一致；另有页面写 22:00，以 FIFA 最终赛程为准。",
+      "亚洲 9 队：卡塔尔（东道主，A 组）、韩国（B）、澳大利亚（C）、沙特（D）、乌兹别克斯坦（E）、塔吉克斯坦（F）、越南（G）、中国（H）、日本（L）。CAF 1 / CAF 2 已分别为乌干达和莫桑比克。",
       "10 月伦敦四国热身赛三场 0 比 1 负坦桑尼亚、0 比 3 负墨西哥、0 比 3 负阿根廷，未取得进球。"
     ],
     "sources": [
@@ -81,6 +89,21 @@
         "label": "Xinhua: China U17 lose 0-3 to Argentina in London",
         "publisher": "Xinhua",
         "url": "https://www.news.cn/sports/20261007/725246321f5c439aba7a59f4d09a1acd/c.html"
+      },
+      {
+        "label": "RFEF: Spain U-17 squad and Group H schedule",
+        "publisher": "RFEF",
+        "url": "https://rfef.es/es/noticias/esta-es-la-lista-de-david-cubillo-para-el-mundial-de-catar"
+      },
+      {
+        "label": "Sina: China kick-off times in Beijing time",
+        "publisher": "Sina Sports",
+        "url": "https://sports.sina.cn/2026-11-08/detail-inixyrxa7350215.d.html"
+      },
+      {
+        "label": "SBS: Korea Republic open against Uganda",
+        "publisher": "SBS",
+        "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008826046"
       }
     ]
   },

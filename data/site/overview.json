@@ -36,7 +36,7 @@
         "Tajikistan",
         "Vietnam"
       ],
-      "headline": "中国 U17 时隔 21 年重返世少赛，H 组 2026-11-20 对西班牙、11-23 对摩洛哥、11-26 对斐济；中国足协 2026-10-28 公布 25 人集训名单。",
+      "headline": "中国 U17 时隔 21 年重返世少赛：H 组 11-20 对西班牙（北京时间 21 日 0 点）、11-23 对摩洛哥、11-26 对斐济；25 人集训名单全部随队到达卡塔尔，正式报名 21 人。",
       "china_group_stage": {
         "group": "Group H",
         "teams": [
@@ -49,25 +49,33 @@
           {
             "date": "2026-11-20",
             "opponent": "Spain",
-            "status": "scheduled"
+            "status": "scheduled",
+            "kickoff_local": "19:00",
+            "kickoff_beijing": "2026-11-21 00:00",
+            "venue": "Aspire Zone Pitch 7"
           },
           {
             "date": "2026-11-23",
             "opponent": "Morocco",
-            "status": "scheduled"
+            "status": "scheduled",
+            "kickoff_local": "18:00",
+            "kickoff_beijing": "2026-11-23 23:00"
           },
           {
             "date": "2026-11-26",
             "opponent": "Fiji",
-            "status": "scheduled"
+            "status": "scheduled",
+            "kickoff_local": "18:00",
+            "kickoff_beijing": "2026-11-26 23:00"
           }
         ]
       },
       "update_cadence": "赛期内每场赛后更新中国队赛果；小组赛结束后核对晋级和淘汰赛对阵。",
       "notes": [
-        "48 队分 12 组，每组前两名和 8 个成绩最好的小组第三进入淘汰赛。",
-        "中国足协 2026-10-28 公布第七期 25 人集训名单，集训自 2026-11-02 在上海开始后转赴卡塔尔；张伯霖因伤落选。该名单是集训名单，不等于国际足联正式报名名单；本届正式报名上限为 21 人，首场比赛开球前 24 小时内仍可按伤病规则替换。",
-        "球队 2026-11-07 从上海出发赴多哈，抵达后先后与新西兰、洪都拉斯进行两场热身赛。",
+        "48 队分 12 组，每组前两名和 8 个成绩最好的小组第三进入 32 强。",
+        "中国足协 2026-10-28 公布第七期 25 人集训名单，集训自 2026-11-02 在上海开始；张伯霖因伤落选。25 人于 11-07 全部随队赴多哈，正式报名上限 21 人，首场开球前 24 小时内仍可按伤病规则替换。",
+        "首战开球时间：西班牙足协赛程表写 17:00（西班牙时间），与央视、北京日报所报北京时间 11-21 0 点一致；另有页面写 22:00，以 FIFA 最终赛程为准。",
+        "亚洲 9 队：卡塔尔（东道主，A 组）、韩国（B）、澳大利亚（C）、沙特（D）、乌兹别克斯坦（E）、塔吉克斯坦（F）、越南（G）、中国（H）、日本（L）。CAF 1 / CAF 2 已分别为乌干达和莫桑比克。",
         "10 月伦敦四国热身赛三场 0 比 1 负坦桑尼亚、0 比 3 负墨西哥、0 比 3 负阿根廷，未取得进球。"
       ],
       "sources": [
@@ -95,6 +103,21 @@
           "label": "Xinhua: China U17 lose 0-3 to Argentina in London",
           "publisher": "Xinhua",
           "url": "https://www.news.cn/sports/20261007/725246321f5c439aba7a59f4d09a1acd/c.html"
+        },
+        {
+          "label": "RFEF: Spain U-17 squad and Group H schedule",
+          "publisher": "RFEF",
+          "url": "https://rfef.es/es/noticias/esta-es-la-lista-de-david-cubillo-para-el-mundial-de-catar"
+        },
+        {
+          "label": "Sina: China kick-off times in Beijing time",
+          "publisher": "Sina Sports",
+          "url": "https://sports.sina.cn/2026-11-08/detail-inixyrxa7350215.d.html"
+        },
+        {
+          "label": "SBS: Korea Republic open against Uganda",
+          "publisher": "SBS",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008826046"
         }
       ]
     },
@@ -39282,7 +39305,7 @@
       "champion": "",
       "runner_up": "",
       "china_status": "qualified",
-      "china_summary": "中国 U17 已通过 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，抽入 H 组，2026-11-20 对西班牙、11-23 对摩洛哥、11-26 对斐济。中国足协 2026-10-28 公布第七期 25 人集训名单，张伯霖因伤落选；该名单是集训名单，不等于国际足联正式报名名单，本届正式报名上限为 21 人。球队 2026-11-07 赴多哈，赛前与新西兰、洪都拉斯热身。CAF 1 / CAF 2 席位随后由莫桑比克和乌干达填补，但 FIFA 尚未用国名重发分组，因此这两组仍保留抽签占位符。",
+      "china_summary": "中国 U17 以 2026 U17 亚洲杯亚军晋级卡塔尔世少赛，H 组对手为西班牙、摩洛哥、斐济：11-20 对西班牙（北京时间 21 日 0 点）、11-23 对摩洛哥、11-26 对斐济（均为北京时间 23 点）。中国足协 2026-10-28 公布 25 人集训名单，张伯霖因伤落选，25 人全部随队赴卡塔尔；正式报名上限 21 人，首场开球前 24 小时内仍可因伤替换。亚洲杯终报名里的三名西班牙注册球员谢晋、汪修昊、朱宇轩都不在 25 人名单内，4 名海外球员分别来自塞尔维亚、克罗地亚和韩国。",
       "qualification_path": {
         "route": "AFC U17 Asian Cup Saudi Arabia 2026",
         "summary": "中国 U17 通过 2026 U17 亚洲杯取得 2026 FIFA U17 世界杯资格，并在亚洲杯正赛中获得亚军。",
@@ -39991,10 +40014,46 @@
         {
           "label": "Beijing News / Xinhua: China U17 leave for Doha",
           "url": "https://www.bjnews.com.cn/detail/1794051694129479.html"
+        },
+        {
+          "label": "JFA: U-17 squad for the World Cup",
+          "url": "https://jfa.jp/eng/news/00036970/"
+        },
+        {
+          "label": "SBS: Korea Republic name 21",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008826046"
+        },
+        {
+          "label": "QNA: Qatar name 21",
+          "url": "https://qna.org.qa/en/News-Area/News/2026-11/9/qatar-football-association-names-21-man-squad-for-fifa-u-17-world-cup-2026"
+        },
+        {
+          "label": "RFEF: Spain name 21 and Group H schedule",
+          "url": "https://rfef.es/es/noticias/esta-es-la-lista-de-david-cubillo-para-el-mundial-de-catar"
+        },
+        {
+          "label": "TelQuel: Morocco name 21",
+          "url": "https://telquel.ma/instant-t/2026/11/03/mondial-u17-ahmed-kantari-devoile-les-21-lionceaux-retenus_2016446/"
+        },
+        {
+          "label": "AFC U17 Asian Cup 2026 final squad lists",
+          "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+        },
+        {
+          "label": "Sina / Beijing Daily: all 25 China players travel",
+          "url": "https://sports.sina.cn/2026-11-08/detail-inixxyzk7639871.d.html"
+        },
+        {
+          "label": "Sina: China kick-off times in Beijing time",
+          "url": "https://sports.sina.cn/2026-11-08/detail-inixyrxa7350215.d.html"
+        },
+        {
+          "label": "Sina: Lyu Mengyang and Xie Jin left out",
+          "url": "https://sports.sina.cn/2026-10-29/detail-iniwvmzm9149541.d.html"
         }
       ],
       "source_checked_at": "2026-11-13",
-      "source_conflict_note": "FIFA's 2026-05-21 draw is primary for the 12 groups, including China PR in Group H. Mozambique and Uganda later completed the CAF field, but public restatements disagree on which placeholder each team occupies, so Group B and Group C keep CAF 1 / CAF 2 until FIFA republishes named groups.",
+      "source_conflict_note": "FIFA's 2026-05-21 draw is primary for the 12 groups. The CAF 1 / CAF 2 placeholders are resolved: SBS (2026-11-02, from the KFA announcement) gives Korea Republic's Group B opener as Uganda on 19 November, which leaves Mozambique, the other CAF qualifier, in Group C.",
       "source_version": [
         {
           "type": "fifa-report",
@@ -40022,6 +40081,23 @@
             "china_summary",
             "china_group_stage"
           ]
+        },
+        {
+          "type": "news-secondary",
+          "label": "SBS: Korea Republic open against Uganda",
+          "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008826046",
+          "fields": [
+            "final_draw",
+            "participants"
+          ]
+        },
+        {
+          "type": "news-secondary",
+          "label": "RFEF: Group H schedule",
+          "url": "https://rfef.es/es/noticias/esta-es-la-lista-de-david-cubillo-para-el-mundial-de-catar",
+          "fields": [
+            "china_group_stage"
+          ]
         }
       ],
       "final_draw": {
@@ -40040,7 +40116,7 @@
             "name": "Group B",
             "teams": [
               "Korea Republic",
-              "CAF 1",
+              "Uganda",
               "New Caledonia",
               "Ecuador"
             ]
@@ -40050,7 +40126,7 @@
             "teams": [
               "Argentina",
               "Australia",
-              "CAF 2",
+              "Mozambique",
               "Denmark"
             ]
           },
@@ -40149,22 +40225,29 @@
           {
             "date": "2026-11-20",
             "opponent": "Spain",
-            "status": "scheduled"
+            "status": "scheduled",
+            "kickoff_local": "19:00",
+            "kickoff_beijing": "2026-11-21 00:00",
+            "venue": "Aspire Zone Pitch 7"
           },
           {
             "date": "2026-11-23",
             "opponent": "Morocco",
-            "status": "scheduled"
+            "status": "scheduled",
+            "kickoff_local": "18:00",
+            "kickoff_beijing": "2026-11-23 23:00"
           },
           {
             "date": "2026-11-26",
             "opponent": "Fiji",
-            "status": "scheduled"
+            "status": "scheduled",
+            "kickoff_local": "18:00",
+            "kickoff_beijing": "2026-11-26 23:00"
           }
         ]
       },
       "participants": {
-        "status": "partial",
+        "status": "complete",
         "expected_count": 48,
         "teams": [
           {
@@ -40188,6 +40271,10 @@
             "entry_status": "qualified"
           },
           {
+            "team": "Uganda",
+            "entry_status": "qualified"
+          },
+          {
             "team": "New Caledonia",
             "entry_status": "qualified"
           },
@@ -40201,6 +40288,10 @@
           },
           {
             "team": "Australia",
+            "entry_status": "qualified"
+          },
+          {
+            "team": "Mozambique",
             "entry_status": "qualified"
           },
           {
@@ -40352,7 +40443,1836 @@
             "entry_status": "qualified"
           }
         ]
-      }
+      },
+      "latest_public_roster_view": {
+        "label": {
+          "zh": "2026-10-28 世少赛 25 人集训名单",
+          "en": "25-player World Cup camp list, 28 October 2026"
+        },
+        "note": {
+          "zh": "按新华社刊发的中国足协名单单位分组。这是集训名单，不是国际足联正式报名表：正式报名上限 21 人，首场开球前 24 小时内仍可因伤替换；25 人已全部随队赴卡塔尔。张伯霖因伤落选；亚洲杯终报名中的三名西班牙注册球员谢晋、汪修昊、朱宇轩都不在名单里。",
+          "en": "Grouped by the units in the CFA list as published by Xinhua. This is a camp list, not FIFA's registration: the limit is 21 and injured players can be replaced up to 24 hours before the first match. All 25 travelled to Qatar. Zhang Bolin is out injured, and none of the three Spain-registered players from the AFC finals squad (Xie Jin, Wang Xiuhao, Zhu Yuxuan) is on the list."
+        },
+        "head_coach": {
+          "name": "Satoshi Ukishima",
+          "local_name": "浮嶋敏"
+        },
+        "groups": [
+          {
+            "label": {
+              "zh": "上海申花俱乐部",
+              "en": "上海申花俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-gu-boyu-2009",
+                "player": "顾博宇"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "成都蓉城俱乐部",
+              "en": "成都蓉城俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-shuai-weihao-2009",
+                "player": "帅惟浩"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "山东泰山俱乐部",
+              "en": "山东泰山俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-li-junpeng-2009",
+                "player": "李钧鹏"
+              },
+              {
+                "player_id": "cn-zhang-xuyao-2009",
+                "player": "张旭尧"
+              },
+              {
+                "player_id": "cn-pan-chaowei-2010",
+                "player": "潘朝伟"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "青岛西海岸俱乐部",
+              "en": "青岛西海岸俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-liu-zhicheng-2009",
+                "player": "刘致成"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "武汉三镇俱乐部",
+              "en": "武汉三镇俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-xu-zhengpeng-2009",
+                "player": "徐正鹏"
+              },
+              {
+                "player_id": "cn-he-sifan-2009",
+                "player": "何思凡"
+              },
+              {
+                "player": "梁仕宇"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "青岛海牛俱乐部",
+              "en": "青岛海牛俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-kuang-zhaolei-2009",
+                "player": "邝兆镭"
+              },
+              {
+                "player": "江宇涵"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "梅州客家俱乐部",
+              "en": "梅州客家俱乐部"
+            },
+            "entries": [
+              {
+                "player": "李家润"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "广州豹俱乐部",
+              "en": "广州豹俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-wang-heyi-2009",
+                "player": "王贺毅"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "湖北青年星俱乐部",
+              "en": "湖北青年星俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-jiang-chengen-2010",
+                "player": "江承恩"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "山东鲁能泰山足球学校",
+              "en": "山东鲁能泰山足球学校"
+            },
+            "entries": [
+              {
+                "player": "张君豪"
+              },
+              {
+                "player_id": "cn-kong-xinuo-2009",
+                "player": "孔玺诺"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "恒大足球学校",
+              "en": "恒大足球学校"
+            },
+            "entries": [
+              {
+                "player_id": "cn-qin-ziniu-2009",
+                "player": "秦子牛"
+              },
+              {
+                "player": "余佳楠"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "清华附中",
+              "en": "清华附中"
+            },
+            "entries": [
+              {
+                "player_id": "cn-zhou-yunuo-2009",
+                "player": "周雨诺"
+              },
+              {
+                "player_id": "cn-nan-zixun-2009",
+                "player": "南子勋"
+              },
+              {
+                "player_id": "cn-zhao-songyuan-2009",
+                "player": "赵松源"
+              }
+            ]
+          },
+          {
+            "label": {
+              "zh": "海外俱乐部",
+              "en": "海外俱乐部"
+            },
+            "entries": [
+              {
+                "player_id": "cn-wan-xiang-2009",
+                "player": "万项",
+                "affiliation": "贝尔格莱德红星（塞尔维亚）"
+              },
+              {
+                "player_id": "cn-jin-yucheng-2009",
+                "player": "金昱成",
+                "affiliation": "萨格勒布火车头（克罗地亚）"
+              },
+              {
+                "player": "金冠成",
+                "affiliation": "蔚山 HD（韩国）"
+              },
+              {
+                "player": "金俊虎",
+                "affiliation": "水原三星（韩国）"
+              }
+            ]
+          }
+        ]
+      },
+      "team_rosters": [
+        {
+          "country": "China PR",
+          "role": "china",
+          "group": "Group H",
+          "head_coach": {
+            "zh": "浮嶋敏",
+            "en": "Satoshi Ukishima"
+          },
+          "squad_status": "camp-list",
+          "announced_at": "2026-10-28",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯亚军",
+            "en": "AFC U17 Asian Cup 2026 runners-up"
+          },
+          "fixtures": [
+            {
+              "date": "2026-11-20",
+              "opponent": "Spain",
+              "kickoff_local": "19:00",
+              "kickoff_beijing": "2026-11-21 00:00",
+              "venue": "Aspire Zone Pitch 7"
+            },
+            {
+              "date": "2026-11-23",
+              "opponent": "Morocco",
+              "kickoff_local": "18:00",
+              "kickoff_beijing": "2026-11-23 23:00"
+            },
+            {
+              "date": "2026-11-26",
+              "opponent": "Fiji",
+              "kickoff_local": "18:00",
+              "kickoff_beijing": "2026-11-26 23:00"
+            }
+          ],
+          "note": {
+            "zh": "25 人集训名单见上方中国名单；25 人全部随队赴卡塔尔，正式报名上限 21 人，首场开球前 24 小时内仍可因伤替换。首战时间按西班牙足协赛程表（17:00 西班牙时间）与央视、北京日报所报北京时间 0 点互相印证；另有页面写 22:00，以 FIFA 最终赛程为准。后两场时间为媒体口径。",
+            "en": "The 25-player camp list is in the China roster above. All 25 travelled to Qatar; the registration limit is 21, and injured players can still be replaced up to 24 hours before the first match. The opener's kick-off matches both the RFEF schedule (17:00 Spanish time) and CCTV / Beijing Daily (00:00 Beijing time); one page lists 22:00, so FIFA's final schedule rules. The other two kick-offs are media-reported."
+          },
+          "groups": [],
+          "sources": [
+            {
+              "label": "Xinhua: 25-player camp list",
+              "url": "https://www.news.cn/sports/20261028/fdac81b37f8c4fb2a017eea6a19c3938/c.html"
+            },
+            {
+              "label": "Sina / Beijing Daily: all 25 travel to Qatar",
+              "url": "https://sports.sina.cn/2026-11-08/detail-inixxyzk7639871.d.html"
+            },
+            {
+              "label": "Sina: China kick-off times in Beijing time",
+              "url": "https://sports.sina.cn/2026-11-08/detail-inixyrxa7350215.d.html"
+            },
+            {
+              "label": "RFEF: Spain U-17 squad and Group H schedule",
+              "url": "https://rfef.es/es/noticias/esta-es-la-lista-de-david-cubillo-para-el-mundial-de-catar"
+            }
+          ]
+        },
+        {
+          "country": "Japan",
+          "role": "asia",
+          "group": "Group L",
+          "head_coach": {
+            "zh": "小野信义",
+            "en": "Shingi Ono"
+          },
+          "squad_status": "announced-21",
+          "announced_at": "2026-11-02",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯冠军（决赛 3 比 2 胜中国）",
+            "en": "AFC U17 Asian Cup 2026 champions (3-2 over China in the final)"
+          },
+          "fixtures": [
+            {
+              "date": "2026-11-21",
+              "opponent": "Colombia",
+              "kickoff_local": "15:30",
+              "venue": "Aspire Zone Pitch 9"
+            },
+            {
+              "date": "2026-11-24",
+              "opponent": "Serbia",
+              "kickoff_local": "16:00",
+              "venue": "Aspire Zone Pitch 1"
+            },
+            {
+              "date": "2026-11-27",
+              "opponent": "Honduras",
+              "kickoff_local": "16:00",
+              "venue": "Aspire Zone Pitch 4"
+            }
+          ],
+          "note": {
+            "zh": "日本足协 11 月 2 日公布 21 人，其中 5 人已签职业合同；2010 年龄段的木田莲人、竹内悠三、鲛岛充辉越级入选，鲛岛公布前一天在 U-21 联赛受伤离场，能否成行待队医判断。本页录入 19 人：5 号、13 号两名后卫不在本次可见的公开片段中，暂缺。",
+            "en": "The JFA named 21 on 2 November; five already hold professional contracts. Kida Rento, Takeuchi Yuzo and Sameshima Atsuki come from the 2010 age group, and Sameshima was stretchered off in a U-21 league match the day before, pending a medical decision. This page lists 19: defenders No. 5 and No. 13 were not in the public excerpts captured."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "squad_number": 21,
+                  "player_id": "jp-koki-takahashi-2009",
+                  "player": "高橋恒輝 Takahashi Koki",
+                  "affiliation": "Taisei High School"
+                },
+                {
+                  "squad_number": 1,
+                  "player_id": "jp-kosei-oshita-2009",
+                  "player": "大下幸誠 Oshita Kosei",
+                  "affiliation": "Kashima Antlers Youth"
+                },
+                {
+                  "squad_number": 12,
+                  "player_id": "jp-rento-kida-2010",
+                  "player": "木田蓮人 Kida Rento",
+                  "affiliation": "Teikyo Nagaoka High School"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "后卫 DF",
+                "en": "Defenders"
+              },
+              "entries": [
+                {
+                  "squad_number": 3,
+                  "player_id": "jp-anthony-udemba-motosuna-2009",
+                  "player": "元砂晏翔仁ウデンバ Motosuna Anthony Udemba",
+                  "affiliation": "Kashima Antlers"
+                },
+                {
+                  "squad_number": 2,
+                  "player": "橋本凜来 Hashimoto Riku",
+                  "affiliation": "FC Tokyo U-18"
+                },
+                {
+                  "squad_number": 4,
+                  "player_id": "jp-yuzo-takeuchi-2010",
+                  "player": "竹内悠三 Takeuchi Yuzo",
+                  "affiliation": "Nagoya Grampus U-18"
+                },
+                {
+                  "squad_number": 20,
+                  "player": "鮫島充輝 Sameshima Atsuki",
+                  "affiliation": "Nagoya Grampus U-18"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "中场 MF",
+                "en": "Midfielders"
+              },
+              "entries": [
+                {
+                  "squad_number": 16,
+                  "player_id": "jp-sosuke-hoshi-2009",
+                  "player": "星宗介 Hoshi Sosuke",
+                  "affiliation": "Shoshi High School"
+                },
+                {
+                  "squad_number": 17,
+                  "player_id": "jp-yoshiki-fujimoto-2009",
+                  "player": "藤本祥輝 Fujimoto Yoshiki",
+                  "affiliation": "Gamba Osaka Youth"
+                },
+                {
+                  "squad_number": 8,
+                  "player_id": "jp-tafuku-satomi-2009",
+                  "player": "里見汰福 Satomi Tafuku",
+                  "affiliation": "Vissel Kobe U-18"
+                },
+                {
+                  "squad_number": 6,
+                  "player_id": "jp-sora-iwatsuchi-2009",
+                  "player": "岩土そら Iwatsuchi Sora",
+                  "affiliation": "Kashima Antlers Youth"
+                },
+                {
+                  "squad_number": 7,
+                  "player_id": "jp-takeshi-wada-2009",
+                  "player": "和田武士 Wada Takeshi",
+                  "affiliation": "Urawa Red Diamonds"
+                },
+                {
+                  "squad_number": 10,
+                  "player_id": "jp-maki-kitahara-2009",
+                  "player": "北原槙 Kitahara Maki",
+                  "affiliation": "Fujieda MYFC"
+                },
+                {
+                  "squad_number": 14,
+                  "player": "中島璃久 Nakashima Riku",
+                  "affiliation": "FC Tokyo U-18"
+                },
+                {
+                  "squad_number": 15,
+                  "player_id": "jp-kazato-kimura-2009",
+                  "player": "木村風斗 Kimura Kazato",
+                  "affiliation": "Kawasaki Frontale U-18"
+                },
+                {
+                  "squad_number": 19,
+                  "player_id": "jp-arata-okamoto-2009",
+                  "player": "岡本新大 Okamoto Arata",
+                  "affiliation": "Gamba Osaka Youth"
+                },
+                {
+                  "squad_number": 18,
+                  "player": "五十嵐陵 Igarashi Ryo",
+                  "affiliation": "Kashiwa Reysol U-18"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "前锋 FW",
+                "en": "Forwards"
+              },
+              "entries": [
+                {
+                  "squad_number": 11,
+                  "player_id": "jp-kakeru-saito-2009",
+                  "player": "齋藤翔 Saito Kakeru",
+                  "affiliation": "Yokohama FC"
+                },
+                {
+                  "squad_number": 9,
+                  "player_id": "jp-eito-takaki-2009",
+                  "player": "髙木瑛人 Takaki Eito",
+                  "affiliation": "Kashima Antlers Youth"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "JFA: U-17 squad & schedule, FIFA U-17 World Cup Qatar 2026",
+              "url": "https://jfa.jp/eng/news/00036970/"
+            },
+            {
+              "label": "Football Channel: squad in Japanese script",
+              "url": "https://www.footballchannel.jp/?p=1044036"
+            },
+            {
+              "label": "Gekisaka: three 2010-born players and Sameshima's injury",
+              "url": "https://web.gekisaka.jp/news/japan/detail/%3F462362-462362-fl"
+            }
+          ]
+        },
+        {
+          "country": "Korea Republic",
+          "role": "asia",
+          "group": "Group B",
+          "head_coach": {
+            "zh": "김현준 Kim Hyun-joon",
+            "en": "Kim Hyun-joon"
+          },
+          "squad_status": "announced-21",
+          "announced_at": "2026-11-02",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯八强",
+            "en": "AFC U17 Asian Cup 2026 quarter-finalists"
+          },
+          "fixtures": [
+            {
+              "date": "2026-11-19",
+              "opponent": "Uganda"
+            },
+            {
+              "date": "2026-11-22",
+              "opponent": "New Caledonia"
+            },
+            {
+              "date": "2026-11-25",
+              "opponent": "Ecuador"
+            }
+          ],
+          "note": {
+            "zh": "韩国足协 11 月 2 日公布 21 人：3 门将、7 后卫、9 中场、2 前锋；19 人来自职业俱乐部梯队、2 人来自学校队，20 人 2009 年生、1 人 2010 年生。可见报道只点名 5 人，其余名单待补。",
+            "en": "The KFA named 21 on 2 November: 3 goalkeepers, 7 defenders, 9 midfielders and 2 forwards; 19 from professional-club academies and 2 from schools; 20 born in 2009 and one in 2010. The available report names only five; the rest are still to be added."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "报道点名的 5 人",
+                "en": "Five players named in coverage"
+              },
+              "entries": [
+                {
+                  "player": "Kim Geon-ho",
+                  "affiliation": "Incheon United U-18",
+                  "note": {
+                    "zh": "8 月第五期集训后重回名单",
+                    "en": "Recalled after the fifth camp in August"
+                  }
+                },
+                {
+                  "player_id": "kr-ahn-sunhyun-2009",
+                  "player": "Ahn Seon-hyun",
+                  "affiliation": "Pohang Steelers U-18",
+                  "note": {
+                    "zh": "8 月第五期集训后重回名单",
+                    "en": "Recalled after the fifth camp in August"
+                  }
+                },
+                {
+                  "player": "Lim Ji-sung",
+                  "affiliation": "Jeonbuk Hyundai Motors U-18",
+                  "note": {
+                    "zh": "中场，全队唯一 2010 年生",
+                    "en": "Midfielder, the squad's only 2010-born player"
+                  }
+                },
+                {
+                  "player_id": "kr-lee-seunghwa-2009",
+                  "player": "Lee Seung-hwa",
+                  "affiliation": "Boin High School"
+                },
+                {
+                  "player": "Baek Geon",
+                  "affiliation": "Shinpyeong High School"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "SBS: Korea finalize 21-player squad, open against Uganda",
+              "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008826046"
+            }
+          ]
+        },
+        {
+          "country": "Qatar",
+          "role": "asia",
+          "group": "Group A",
+          "head_coach": {
+            "zh": "Álvaro Mejía",
+            "en": "Álvaro Mejía"
+          },
+          "squad_status": "announced-21",
+          "announced_at": "2026-11-09",
+          "qualification": {
+            "zh": "东道主",
+            "en": "Hosts"
+          },
+          "fixtures": [],
+          "note": {
+            "zh": "卡塔尔足协 11 月 9 日公布 21 人。卡塔尔通讯社只区分门将与外场球员，未写俱乐部；比赛场地为阿斯拜尔体育城比赛区的 8 块场地，决赛 12 月 13 日在艾哈迈德·本·阿里体育场。",
+            "en": "The QFA named 21 on 9 November. QNA separates goalkeepers from outfield players and gives no clubs. Matches use eight pitches in the Aspire Zone competition complex; the final is on 13 December at Ahmad bin Ali Stadium."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "player": "Mohammed Mirghani"
+                },
+                {
+                  "player": "Hussam Al Abd"
+                },
+                {
+                  "player": "Bakri Mohammed"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "外场球员",
+                "en": "Outfield players"
+              },
+              "entries": [
+                {
+                  "player": "Ayokunle Samuel"
+                },
+                {
+                  "player": "Ahmed Adel"
+                },
+                {
+                  "player": "Ahmed Wael"
+                },
+                {
+                  "player": "Adham Adnan"
+                },
+                {
+                  "player": "Diaa Al Din Al Arabi"
+                },
+                {
+                  "player": "Taha Nassir"
+                },
+                {
+                  "player": "Sami Darani"
+                },
+                {
+                  "player": "Shaher Wael"
+                },
+                {
+                  "player": "Abdullah Babiker"
+                },
+                {
+                  "player": "Ali Mohammed"
+                },
+                {
+                  "player": "Omar Ayman"
+                },
+                {
+                  "player": "Omar Mohammed"
+                },
+                {
+                  "player": "Mateo Esparza"
+                },
+                {
+                  "player": "Mohsen Al Hajri"
+                },
+                {
+                  "player": "Mohammed Fadl"
+                },
+                {
+                  "player": "Cristiano Suria"
+                },
+                {
+                  "player": "Hadi Khalil"
+                },
+                {
+                  "player": "Yousef Islam"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "QNA: Qatar name 21-man squad",
+              "url": "https://qna.org.qa/en/News-Area/News/2026-11/9/qatar-football-association-names-21-man-squad-for-fifa-u-17-world-cup-2026"
+            },
+            {
+              "label": "Qatar Tribune: venues and final",
+              "url": "https://www.qatar-tribune.com/article/263459/sports/qatar-players-aim-to-shine-on-world-stage"
+            }
+          ]
+        },
+        {
+          "country": "Australia",
+          "role": "asia",
+          "group": "Group C",
+          "head_coach": {
+            "zh": "Thomas Veart",
+            "en": "Thomas Veart"
+          },
+          "squad_status": "afc-base",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯四强（半决赛 0 比 2 负中国）",
+            "en": "AFC U17 Asian Cup 2026 semi-finalists (lost 0-2 to China)"
+          },
+          "fixtures": [],
+          "note": {
+            "zh": "世少赛 21 人名单尚未抓到，下列为 2026 U17 亚洲杯终报名 23 人，作为世少赛名单的来源池。",
+            "en": "The World Cup 21 has not been captured yet; below is the AFC U17 Asian Cup 2026 final registration of 23, the pool the World Cup squad will come from."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "squad_number": 1,
+                  "player_id": "au-charlie-wilson-papps-2009",
+                  "player": "Charlie Wilson-Papps",
+                  "affiliation": "BRIGHTON & HOVE ALBION FC"
+                },
+                {
+                  "squad_number": 12,
+                  "player_id": "au-lachlan-allen-2009",
+                  "player": "Lachlan Allen",
+                  "affiliation": "WESTERN SYDNEY WANDERERS FC"
+                },
+                {
+                  "squad_number": 18,
+                  "player_id": "au-hugo-ng-2009",
+                  "player": "Hugo Ng",
+                  "affiliation": "ADELAIDE UNITED FC"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "后卫 DF",
+                "en": "Defenders"
+              },
+              "entries": [
+                {
+                  "squad_number": 2,
+                  "player_id": "au-winston-ashburner-2009",
+                  "player": "Winston Ashburner",
+                  "affiliation": "MELBOURNE VICTORY"
+                },
+                {
+                  "squad_number": 3,
+                  "player_id": "au-besian-kutleshi-2009",
+                  "player": "Besian Kutleshi",
+                  "affiliation": "MELBOURNE CITY FC"
+                },
+                {
+                  "squad_number": 4,
+                  "player_id": "au-marcus-savic-2009",
+                  "player": "Marcus Savic",
+                  "affiliation": "WESTERN SYDNEY WANDERERS FC"
+                },
+                {
+                  "squad_number": 5,
+                  "player_id": "au-miles-milliner-2009",
+                  "player": "Miles Milliner",
+                  "affiliation": "SYDNEY FC"
+                },
+                {
+                  "squad_number": 13,
+                  "player_id": "au-archie-mitchell-2009",
+                  "player": "Archie Mitchell",
+                  "affiliation": "BRISBANE ROAR FC"
+                },
+                {
+                  "squad_number": 14,
+                  "player_id": "au-fraser-brown-2009",
+                  "player": "Fraser Brown",
+                  "affiliation": "MELBOURNE CITY FC"
+                },
+                {
+                  "squad_number": 15,
+                  "player_id": "au-emile-katrib-2009",
+                  "player": "Emile Katrib",
+                  "affiliation": "WESTERN SYDNEY WANDERERS FC"
+                },
+                {
+                  "squad_number": 19,
+                  "player_id": "au-stevan-rujak-2009",
+                  "player": "Stevan Rujak",
+                  "affiliation": "WESTERN SYDNEY WANDERERS FC"
+                },
+                {
+                  "squad_number": 22,
+                  "player_id": "au-harrison-bond-2009",
+                  "player": "Harrison Bond",
+                  "affiliation": "RB SALZBURG"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "中场 MF",
+                "en": "Midfielders"
+              },
+              "entries": [
+                {
+                  "squad_number": 6,
+                  "player_id": "au-sajjad-nasiri-2009",
+                  "player": "Sajjad Nasiri",
+                  "affiliation": "ADELAIDE UNITED FC"
+                },
+                {
+                  "squad_number": 7,
+                  "player_id": "au-aston-reid-2009",
+                  "player": "Aston Reid",
+                  "affiliation": "SYDNEY FC"
+                },
+                {
+                  "squad_number": 8,
+                  "player_id": "au-oliver-ocarroll-2009",
+                  "player": "Oliver O'Carroll",
+                  "affiliation": "MELBOURNE CITY FC"
+                },
+                {
+                  "squad_number": 21,
+                  "player_id": "au-luka-demuth-2010",
+                  "player": "Luka Demuth",
+                  "affiliation": "MELBOURNE CITY FC"
+                },
+                {
+                  "squad_number": 23,
+                  "player_id": "au-corey-da-cruz-2009",
+                  "player": "Corey Da Cruz",
+                  "affiliation": "SYDNEY FC"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "前锋 FW",
+                "en": "Forwards"
+              },
+              "entries": [
+                {
+                  "squad_number": 9,
+                  "player_id": "au-luke-becvinovski-2009",
+                  "player": "Luke Becvinovski",
+                  "affiliation": "MELBOURNE CITY FC"
+                },
+                {
+                  "squad_number": 10,
+                  "player_id": "au-akol-akon-2009",
+                  "player": "Akol Akon",
+                  "affiliation": "SYDNEY FC"
+                },
+                {
+                  "squad_number": 11,
+                  "player_id": "au-max-court-2009",
+                  "player": "Max Court",
+                  "affiliation": "APIA LEICHHARDT FC"
+                },
+                {
+                  "squad_number": 16,
+                  "player_id": "au-akeem-gerald-2010",
+                  "player": "Akeem Gerald",
+                  "affiliation": "MELBOURNE CITY FC"
+                },
+                {
+                  "squad_number": 17,
+                  "player_id": "au-henrique-oliveira-2009",
+                  "player": "Henrique Oliveira",
+                  "affiliation": "MACARTHUR FC"
+                },
+                {
+                  "squad_number": 20,
+                  "player_id": "au-georgio-hassarati-2009",
+                  "player": "Georgio Hassarati",
+                  "affiliation": "WESTERN SYDNEY WANDERERS FC"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "AFC U17 Asian Cup 2026 final squad lists",
+              "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+            }
+          ]
+        },
+        {
+          "country": "Uzbekistan",
+          "role": "asia",
+          "group": "Group E",
+          "head_coach": {
+            "zh": "Sergey Chigodaev",
+            "en": "Sergey Chigodaev"
+          },
+          "squad_status": "afc-base",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯八强及以上",
+            "en": "AFC U17 Asian Cup 2026 quarter-finalists or better"
+          },
+          "fixtures": [],
+          "note": {
+            "zh": "世少赛 21 人名单尚未抓到，下列为 2026 U17 亚洲杯终报名 23 人。",
+            "en": "The World Cup 21 has not been captured yet; below is the AFC U17 Asian Cup 2026 final registration of 23."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "squad_number": 1,
+                  "player_id": "uz-olimjon-shamuratov-2009",
+                  "player": "Olimjon Shamuratov",
+                  "affiliation": "Pakhtakor"
+                },
+                {
+                  "squad_number": 12,
+                  "player_id": "uz-mekhrojbek-sirojiddinov-2009",
+                  "player": "Mekhrojbek Sirojiddinov",
+                  "affiliation": "RFA"
+                },
+                {
+                  "squad_number": 21,
+                  "player_id": "uz-abdulboriy-zoidjonov-2009",
+                  "player": "Abdulboriy Zoidjonov",
+                  "affiliation": "PFC Lokomotiv"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "后卫 DF",
+                "en": "Defenders"
+              },
+              "entries": [
+                {
+                  "squad_number": 2,
+                  "player_id": "uz-m-abdisoliev-2009",
+                  "player": "M. Abdisoliev",
+                  "affiliation": "PFC Nasaf"
+                },
+                {
+                  "squad_number": 3,
+                  "player_id": "uz-muhammadaziz-ruziboev-2009",
+                  "player": "Muhammadaziz Ruziboev",
+                  "affiliation": "Gazalkent"
+                },
+                {
+                  "squad_number": 4,
+                  "player_id": "uz-mukhammad-khakimov-2009",
+                  "player": "Muhammad Khakimov",
+                  "affiliation": "FC Bunyodkor"
+                },
+                {
+                  "squad_number": 5,
+                  "player_id": "uz-elsevarbek-olimov-2009",
+                  "player": "Elsevarbek Olimov",
+                  "affiliation": "Neftchi"
+                },
+                {
+                  "squad_number": 13,
+                  "player_id": "uz-mirjamol-anvarov-2009",
+                  "player": "Mirjamol Anvarov",
+                  "affiliation": "ODIL JUNIOR"
+                },
+                {
+                  "squad_number": 16,
+                  "player_id": "uz-adis-abdunabiev-2009",
+                  "player": "Adis Abdunabiev",
+                  "affiliation": "Oqtepa"
+                },
+                {
+                  "squad_number": 17,
+                  "player_id": "uz-jakhongirmirzo-uktamboev-2009",
+                  "player": "Jakhongirmirzo Uktamboev",
+                  "affiliation": "FC Bunyodkor"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "中场 MF",
+                "en": "Midfielders"
+              },
+              "entries": [
+                {
+                  "squad_number": 6,
+                  "player_id": "uz-mukhammadjon-mamatov-2009",
+                  "player": "Mukhammadjon Mamatov",
+                  "affiliation": "Pakhtakor"
+                },
+                {
+                  "squad_number": 7,
+                  "player_id": "uz-amirkhon-erkinov-2009",
+                  "player": "Amirkhon Erkinov",
+                  "affiliation": "ODIL JUNIOR"
+                },
+                {
+                  "squad_number": 8,
+                  "player_id": "uz-islom-ravshanov-2009",
+                  "player": "Islom Ravshanov",
+                  "affiliation": "Pakhtakor"
+                },
+                {
+                  "squad_number": 10,
+                  "player_id": "uz-mirkomilbek-murodov-2009",
+                  "player": "Mirkomilbek Murodov",
+                  "affiliation": "FC Bunyodkor"
+                },
+                {
+                  "squad_number": 11,
+                  "player_id": "uz-sukhrob-sadirdjanov-2009",
+                  "player": "Sukhrob Sadirdjanov",
+                  "affiliation": "Gazalkent"
+                },
+                {
+                  "squad_number": 14,
+                  "player_id": "uz-muhammadodilkhon-orifkhonov-2009",
+                  "player": "Muhammadodilkhon Orifkhonov",
+                  "affiliation": "ODIL JUNIOR"
+                },
+                {
+                  "squad_number": 15,
+                  "player_id": "uz-nurmuhammad-uktamov-2009",
+                  "player": "Nurmuhammad Uktamov",
+                  "affiliation": "Pakhtakor"
+                },
+                {
+                  "squad_number": 18,
+                  "player_id": "uz-farrukh-khayitmurodov-2009",
+                  "player": "Farrukh Khayitmurodov",
+                  "affiliation": "Pakhtakor"
+                },
+                {
+                  "squad_number": 19,
+                  "player_id": "uz-akhrorbek-ravshanbekov-2009",
+                  "player": "Akhrorbek Ravshanbekov",
+                  "affiliation": "PFC Andijan"
+                },
+                {
+                  "squad_number": 22,
+                  "player_id": "uz-abubakir-rakhimov-2009",
+                  "player": "Abubakir Rakhimov",
+                  "affiliation": "ODIL JUNIOR"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "前锋 FW",
+                "en": "Forwards"
+              },
+              "entries": [
+                {
+                  "squad_number": 9,
+                  "player_id": "uz-asilbek-aliev-2009",
+                  "player": "Asilbek Aliev",
+                  "affiliation": "RFA"
+                },
+                {
+                  "squad_number": 20,
+                  "player_id": "uz-laziz-abduraimov-2009",
+                  "player": "Laziz Abduraimov",
+                  "affiliation": "FC Bunyodkor"
+                },
+                {
+                  "squad_number": 23,
+                  "player_id": "uz-rustam-aliev-2009",
+                  "player": "Rustam Aliev",
+                  "affiliation": "Surkhon"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "AFC U17 Asian Cup 2026 final squad lists",
+              "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+            }
+          ]
+        },
+        {
+          "country": "Saudi Arabia",
+          "role": "asia",
+          "group": "Group D",
+          "head_coach": {
+            "zh": "Ahmed Al-Hanfoush",
+            "en": "Ahmed Al-Hanfoush"
+          },
+          "squad_status": "afc-base",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯东道主，八强",
+            "en": "AFC U17 Asian Cup 2026 hosts, quarter-finalists"
+          },
+          "fixtures": [],
+          "note": {
+            "zh": "世少赛 21 人名单尚未抓到，下列为 2026 U17 亚洲杯终报名 23 人（AFC 原文拼写）。",
+            "en": "The World Cup 21 has not been captured yet; below is the AFC U17 Asian Cup 2026 final registration of 23, in AFC spelling."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "squad_number": 1,
+                  "player": "Mousa Aleid",
+                  "affiliation": "Al-Ettifaq"
+                },
+                {
+                  "squad_number": 21,
+                  "player": "Abdullah Almas",
+                  "affiliation": "Al-Shabab"
+                },
+                {
+                  "squad_number": 22,
+                  "player": "Musaad Alshammari",
+                  "affiliation": "AlUla"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "后卫 DF",
+                "en": "Defenders"
+              },
+              "entries": [
+                {
+                  "squad_number": 2,
+                  "player": "Abdulrahman Almami",
+                  "affiliation": "Ohod FC"
+                },
+                {
+                  "squad_number": 3,
+                  "player": "Ahmad Mohammad Ishak",
+                  "affiliation": "AlUla"
+                },
+                {
+                  "squad_number": 4,
+                  "player": "Nawaf Alhuwayri",
+                  "affiliation": "Al-Taawoun"
+                },
+                {
+                  "squad_number": 5,
+                  "player": "Ali Alyahya",
+                  "affiliation": "Al-Fateh FC"
+                },
+                {
+                  "squad_number": 12,
+                  "player": "Marwan Alyami",
+                  "affiliation": "Al-Ittihad"
+                },
+                {
+                  "squad_number": 13,
+                  "player": "Ammar Maimani",
+                  "affiliation": "Al-Ittihad"
+                },
+                {
+                  "squad_number": 17,
+                  "player": "Jawad Alhashem",
+                  "affiliation": "Al-Ettifaq"
+                },
+                {
+                  "squad_number": 19,
+                  "player": "Zaid Alburi",
+                  "affiliation": "Al-Hilal"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "中场 MF",
+                "en": "Midfielders"
+              },
+              "entries": [
+                {
+                  "squad_number": 6,
+                  "player": "Khalid Sharahili",
+                  "affiliation": "Al-Nasser"
+                },
+                {
+                  "squad_number": 7,
+                  "player": "Ali Awadh",
+                  "affiliation": "Al-Qadsiah"
+                },
+                {
+                  "squad_number": 8,
+                  "player": "Hassan Alokrush",
+                  "affiliation": "Al-Adalah"
+                },
+                {
+                  "squad_number": 10,
+                  "player": "Abdullah Aldawsari",
+                  "affiliation": "Al-Ahli"
+                },
+                {
+                  "squad_number": 11,
+                  "player": "Ali Makki",
+                  "affiliation": "Al-Qadsiah"
+                },
+                {
+                  "squad_number": 14,
+                  "player": "Tameem Siraj",
+                  "affiliation": "Al-Ittihad"
+                },
+                {
+                  "squad_number": 18,
+                  "player": "Abdullah Albatli",
+                  "affiliation": "Al-Qadsiah"
+                },
+                {
+                  "squad_number": 20,
+                  "player": "Hamad Alshammari",
+                  "affiliation": "Al-Qadsiah"
+                },
+                {
+                  "squad_number": 23,
+                  "player": "Yahya Ahmed",
+                  "affiliation": "Al-Nasser"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "前锋 FW",
+                "en": "Forwards"
+              },
+              "entries": [
+                {
+                  "squad_number": 9,
+                  "player": "Faris Bu Shaqraa",
+                  "affiliation": "Al-Qadsiah"
+                },
+                {
+                  "squad_number": 15,
+                  "player": "Ali Alshamrani",
+                  "affiliation": "Al-Hilal"
+                },
+                {
+                  "squad_number": 16,
+                  "player": "Faisal Alaa",
+                  "affiliation": "Al-Ittihad"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "AFC U17 Asian Cup 2026 final squad lists",
+              "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+            }
+          ]
+        },
+        {
+          "country": "Tajikistan",
+          "role": "asia",
+          "group": "Group F",
+          "head_coach": {
+            "zh": "Daler Kayosov",
+            "en": "Daler Kayosov"
+          },
+          "squad_status": "afc-base",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯八强",
+            "en": "AFC U17 Asian Cup 2026 quarter-finalists"
+          },
+          "fixtures": [],
+          "note": {
+            "zh": "世少赛 21 人名单尚未抓到，下列为 2026 U17 亚洲杯终报名 23 人。6 号尤苏波夫 2011 年生，注册在西班牙莱万特。",
+            "en": "The World Cup 21 has not been captured yet; below is the AFC U17 Asian Cup 2026 final registration of 23. No. 6 Yusupov, born in 2011, is registered with Levante in Spain."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "squad_number": 1,
+                  "player": "Muhammadrahim Rahmonov",
+                  "affiliation": "FC Hosilot"
+                },
+                {
+                  "squad_number": 16,
+                  "player": "Ramazon Abdulozoda",
+                  "affiliation": "FC Dushanbe"
+                },
+                {
+                  "squad_number": 23,
+                  "player": "Abubakr Rahmonqulov",
+                  "affiliation": "FC Panjsher"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "后卫 DF",
+                "en": "Defenders"
+              },
+              "entries": [
+                {
+                  "squad_number": 2,
+                  "player": "Yoqubjon Murodov",
+                  "affiliation": "FC Vakhsh"
+                },
+                {
+                  "squad_number": 3,
+                  "player": "Muhammadjon Karomatullozoda",
+                  "affiliation": "FC Dushanbe"
+                },
+                {
+                  "squad_number": 4,
+                  "player": "Sadriddin Sattorov",
+                  "affiliation": "FC Vakhsh"
+                },
+                {
+                  "squad_number": 5,
+                  "player": "Mustafo Hasanbekov",
+                  "affiliation": "FC Istiklol"
+                },
+                {
+                  "squad_number": 11,
+                  "player": "Furqon Rahimzoda",
+                  "affiliation": "FC Hosilot"
+                },
+                {
+                  "squad_number": 12,
+                  "player": "Hikmatullo Kabirov",
+                  "affiliation": "FC Dushanbe"
+                },
+                {
+                  "squad_number": 13,
+                  "player": "Islomdzhon Khodzhiev",
+                  "affiliation": "Krylia Sovetov (Russia)"
+                },
+                {
+                  "squad_number": 15,
+                  "player": "Anvarzod Munavar",
+                  "affiliation": "FC Dushanbe"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "中场 MF",
+                "en": "Midfielders"
+              },
+              "entries": [
+                {
+                  "squad_number": 6,
+                  "player": "Yosin Yusupov",
+                  "affiliation": "Levante UD (Spain)"
+                },
+                {
+                  "squad_number": 8,
+                  "player": "Mehrubon Odilzoda",
+                  "affiliation": "FC Istiklol"
+                },
+                {
+                  "squad_number": 9,
+                  "player": "Mirahmadov Muhammadjon",
+                  "affiliation": "FC Barqchi"
+                },
+                {
+                  "squad_number": 14,
+                  "player": "Olimjon Olimov",
+                  "affiliation": "FC Dushanbe"
+                },
+                {
+                  "squad_number": 17,
+                  "player": "Parviz Bobonazarov",
+                  "affiliation": "FC Vakhsh"
+                },
+                {
+                  "squad_number": 19,
+                  "player": "Siyovush Nazarov",
+                  "affiliation": "FC Dushanbe"
+                },
+                {
+                  "squad_number": 20,
+                  "player": "Azizjon Shodiev",
+                  "affiliation": "FC Dushanbe"
+                },
+                {
+                  "squad_number": 22,
+                  "player": "Alidodov Maktoum",
+                  "affiliation": "Al Nasr (UAE)"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "前锋 FW",
+                "en": "Forwards"
+              },
+              "entries": [
+                {
+                  "squad_number": 7,
+                  "player": "Asadbek Makhtumov",
+                  "affiliation": "FC Eskhata"
+                },
+                {
+                  "squad_number": 10,
+                  "player": "Parviz Sanginov",
+                  "affiliation": "FC Kosmos (Russia)"
+                },
+                {
+                  "squad_number": 18,
+                  "player": "Bikhishti Radzhabzod",
+                  "affiliation": "FC Dushanbe"
+                },
+                {
+                  "squad_number": 21,
+                  "player": "Alijon Shuhratjonzoda",
+                  "affiliation": "FC Dushanbe"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "AFC U17 Asian Cup 2026 final squad lists",
+              "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+            }
+          ]
+        },
+        {
+          "country": "Vietnam",
+          "role": "asia",
+          "group": "Group G",
+          "head_coach": {
+            "zh": "Cristiano Roland",
+            "en": "Cristiano Roland"
+          },
+          "squad_status": "afc-base",
+          "qualification": {
+            "zh": "2026 U17 亚洲杯八强（八强负澳大利亚），队史首次晋级世少赛",
+            "en": "AFC U17 Asian Cup 2026 quarter-finalists (lost to Australia); first World Cup qualification"
+          },
+          "fixtures": [],
+          "note": {
+            "zh": "主帅已把名单压缩到 25 人，11 月 10 日从迪拜转赴多哈；世少赛 21 人尚未抓到，下列为 2026 U17 亚洲杯终报名 23 人。",
+            "en": "The coach cut the group to 25, who moved from Dubai to Doha on 10 November. The World Cup 21 has not been captured yet; below is the AFC U17 Asian Cup 2026 final registration of 23."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "squad_number": 1,
+                  "player": "Chu Ba Huan",
+                  "affiliation": "Ha Noi FC"
+                },
+                {
+                  "squad_number": 12,
+                  "player": "Nguyen Tuan Vu",
+                  "affiliation": "Thanh Hoa"
+                },
+                {
+                  "squad_number": 23,
+                  "player": "Ly Xuan Hoa",
+                  "affiliation": "PVF Academy"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "后卫 DF",
+                "en": "Defenders"
+              },
+              "entries": [
+                {
+                  "squad_number": 2,
+                  "player": "Pham Minh Cuong",
+                  "affiliation": "Hue FC"
+                },
+                {
+                  "squad_number": 3,
+                  "player": "Nguyen Manh Cuong",
+                  "affiliation": "The Cong - Viettel FC"
+                },
+                {
+                  "squad_number": 4,
+                  "player": "Nguyen Huynh Dang Khoa",
+                  "affiliation": "PVF Academy"
+                },
+                {
+                  "squad_number": 5,
+                  "player": "Tran Hoang Viet",
+                  "affiliation": "Ha Noi FC"
+                },
+                {
+                  "squad_number": 13,
+                  "player": "Nguyen Ngoc Anh Hao",
+                  "affiliation": "PVF Academy"
+                },
+                {
+                  "squad_number": 14,
+                  "player": "Quan Thanh Cong",
+                  "affiliation": "Song Lam Nghe An FC"
+                },
+                {
+                  "squad_number": 15,
+                  "player": "Nguyen Khac Minh Duc",
+                  "affiliation": "Ha Noi FC"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "中场 MF",
+                "en": "Midfielders"
+              },
+              "entries": [
+                {
+                  "squad_number": 6,
+                  "player": "Dao Quy Vuong",
+                  "affiliation": "Ha Noi FC"
+                },
+                {
+                  "squad_number": 7,
+                  "player": "Nguyen Hiep Dai Viet Nam",
+                  "affiliation": "Nam Dinh FC"
+                },
+                {
+                  "squad_number": 8,
+                  "player": "Nguyen Minh Thuy",
+                  "affiliation": "Song Lam Nghe An FC"
+                },
+                {
+                  "squad_number": 10,
+                  "player": "Chu Ngoc Nguyen Luc",
+                  "affiliation": "Ha Noi FC"
+                },
+                {
+                  "squad_number": 17,
+                  "player": "Truong Nguyen Duy Khang",
+                  "affiliation": "PVF Academy"
+                },
+                {
+                  "squad_number": 18,
+                  "player": "Trieu Dinh Vy",
+                  "affiliation": "The Cong - Viettel FC"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "前锋 FW",
+                "en": "Forwards"
+              },
+              "entries": [
+                {
+                  "squad_number": 9,
+                  "player": "Le Trong Dai Nhan",
+                  "affiliation": "The Cong - Viettel FC"
+                },
+                {
+                  "squad_number": 11,
+                  "player": "Nguyen Van Duong",
+                  "affiliation": "PVF Academy"
+                },
+                {
+                  "squad_number": 16,
+                  "player": "Tran Ngoc Son",
+                  "affiliation": "Song Lam Nghe An FC"
+                },
+                {
+                  "squad_number": 19,
+                  "player": "Tran Manh Quan",
+                  "affiliation": "Ha Noi FC"
+                },
+                {
+                  "squad_number": 20,
+                  "player": "Le Sy Bach",
+                  "affiliation": "PVF Academy"
+                },
+                {
+                  "squad_number": 21,
+                  "player": "Tran Tri Dung",
+                  "affiliation": "The Cong - Viettel FC"
+                },
+                {
+                  "squad_number": 22,
+                  "player": "Dau Quang Hung",
+                  "affiliation": "Ho Chi Minh City FC"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "AFC U17 Asian Cup 2026 final squad lists",
+              "url": "https://assets.the-afc.com/2026_AFC_U17_Asian_Cup/Finals/Download/Squad_Lists/AFC-U17-Asian-Cup-Saudi-Arabia-2026---Final-Squad-Lists.pdf"
+            },
+            {
+              "label": "Bao Lao Cai: Roland trims to 25",
+              "url": "https://baolaocai.vn/hlv-cristiano-roland-rut-gon-danh-sach-u17-viet-nam-du-u17-world-cup-2026-post913715.html"
+            },
+            {
+              "label": "VietnamPlus: Group G and move to Doha",
+              "url": "https://www.vietnamplus.vn/u17-viet-nam-buoc-vao-hanh-trinh-tai-vong-chung-ket-u17-world-cup-2026-post1146635.vnp"
+            }
+          ]
+        },
+        {
+          "country": "Spain",
+          "role": "group-opponent",
+          "group": "Group H",
+          "head_coach": {
+            "zh": "David Cubillo",
+            "en": "David Cubillo"
+          },
+          "squad_status": "announced-21",
+          "announced_at": "2026-11-05",
+          "qualification": {
+            "zh": "欧洲区晋级",
+            "en": "Qualified through UEFA"
+          },
+          "fixtures": [
+            {
+              "date": "2026-11-20",
+              "opponent": "China PR",
+              "kickoff_local": "19:00",
+              "venue": "Aspire Zone Pitch 7"
+            },
+            {
+              "date": "2026-11-23",
+              "opponent": "Fiji",
+              "kickoff_local": "15:30",
+              "venue": "Aspire Zone Pitch 4"
+            },
+            {
+              "date": "2026-11-26",
+              "opponent": "Morocco",
+              "kickoff_local": "18:00",
+              "venue": "Aspire Zone Pitch 2"
+            }
+          ],
+          "note": {
+            "zh": "西班牙足协 11 月 5 日公布 21 人，另有 4 人随队备战；巴萨 7 人最多。名单主体是 2009 年龄段。U17 世界杯是西班牙足协荣誉簿上唯一缺少的冠军。开球时间由西班牙时间换算为多哈时间。",
+            "en": "The RFEF named 21 on 5 November, plus four players for preparation only; Barcelona supply seven. The squad is mostly the 2009 age group. The U-17 World Cup is the one title still missing from the Spanish federation's honours. Kick-offs are converted from Spanish time to Doha time."
+          },
+          "groups": [
+            {
+              "label": {
+                "zh": "守门员 GK",
+                "en": "Goalkeepers"
+              },
+              "entries": [
+                {
+                  "player": "Darlington Chichoro",
+                  "affiliation": "Athletic Club"
+                },
+                {
+                  "player": "Guille Ponce",
+                  "affiliation": "Real Madrid"
+                },
+                {
+                  "player": "Diego Piqueras",
+                  "affiliation": "Atlético de Madrid"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "后卫 DF",
+                "en": "Defenders"
+              },
+              "entries": [
+                {
+                  "player": "Arnau Cases",
+                  "affiliation": "RCD Espanyol"
+                },
+                {
+                  "player": "Raúl Expósito",
+                  "affiliation": "FC Barcelona"
+                },
+                {
+                  "player": "Jorge Domínguez",
+                  "affiliation": "Atlético de Madrid"
+                },
+                {
+                  "player": "Holmes Junior Zamorano",
+                  "affiliation": "Girona FC"
+                },
+                {
+                  "player": "Sergi Mayans",
+                  "affiliation": "FC Barcelona"
+                },
+                {
+                  "player": "Baba Kourouma",
+                  "affiliation": "FC Barcelona"
+                },
+                {
+                  "player": "Jordi Pesquer",
+                  "affiliation": "FC Barcelona"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "中场 MF",
+                "en": "Midfielders"
+              },
+              "entries": [
+                {
+                  "player": "Mateo Sobral",
+                  "affiliation": "RC Celta"
+                },
+                {
+                  "player": "Eloi Gómez",
+                  "affiliation": "AFC Ajax"
+                },
+                {
+                  "player": "Marco David Company",
+                  "affiliation": "Real Madrid"
+                },
+                {
+                  "player": "Ebrima Tunkara",
+                  "affiliation": "FC Barcelona"
+                },
+                {
+                  "player": "Roberto Tomás",
+                  "affiliation": "FC Barcelona"
+                }
+              ]
+            },
+            {
+              "label": {
+                "zh": "前锋 FW",
+                "en": "Forwards"
+              },
+              "entries": [
+                {
+                  "player": "Owen Emeka",
+                  "affiliation": "Granada CF"
+                },
+                {
+                  "player": "Ïu Martínez",
+                  "affiliation": "FC Barcelona"
+                },
+                {
+                  "player": "Christian Imga",
+                  "affiliation": "Athletic Club"
+                },
+                {
+                  "player": "Rafael Cruz",
+                  "affiliation": "UD Las Palmas"
+                },
+                {
+                  "player": "Yeremaiah Ramos",
+                  "affiliation": "Real Madrid"
+                },
+                {
+                  "player": "Guillermo Trujillano",
+                  "affiliation": "Atlético de Madrid"
+                }
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "label": "RFEF: David Cubillo's list for the World Cup",
+              "url": "https://rfef.es/es/noticias/esta-es-la-lista-de-david-cubillo-para-el-mundial-de-catar"
+            }
+          ]
+        },
+        {
+          "country": "Morocco",
+          "role": "group-opponent",
+          "group": "Group H",
+          "head_coach": {
+            "zh": "Ahmed Kantari",
+            "en": "Ahmed Kantari"
+          },
+          "squad_status": "announced-21",
+          "announced_at": "2026-11-03",
+          "qualification": {
+            "zh": "2026 非洲 U17 国家杯晋级",
+            "en": "Qualified through the 2026 U-17 Africa Cup of Nations"
+          },
+          "fixtures": [
+            {
+              "date": "2026-11-23",
+              "opponent": "China PR",
+              "kickoff_local": "18:00"
+            },
+            {
+              "date": "2026-11-26",
+              "opponent": "Spain",
+              "kickoff_local": "18:00",
+              "venue": "Aspire Zone Pitch 2"
+            }
+          ],
+          "note": {
+            "zh": "主帅坎塔里 11 月 3 日公布 21 人，名单尚未录入。",
+            "en": "Head coach Ahmed Kantari named 21 on 3 November; the names are not entered yet."
+          },
+          "groups": [],
+          "sources": [
+            {
+              "label": "TelQuel: Kantari names 21",
+              "url": "https://telquel.ma/instant-t/2026/11/03/mondial-u17-ahmed-kantari-devoile-les-21-lionceaux-retenus_2016446/"
+            }
+          ]
+        },
+        {
+          "country": "Fiji",
+          "role": "group-opponent",
+          "group": "Group H",
+          "squad_status": "not-captured",
+          "qualification": {
+            "zh": "2025 大洋洲 U16 锦标赛第三（1 比 0 胜巴布亚新几内亚）",
+            "en": "Third at the 2025 OFC U-16 Championship (1-0 over Papua New Guinea)"
+          },
+          "fixtures": [
+            {
+              "date": "2026-11-23",
+              "opponent": "Spain",
+              "kickoff_local": "15:30",
+              "venue": "Aspire Zone Pitch 4"
+            },
+            {
+              "date": "2026-11-26",
+              "opponent": "China PR",
+              "kickoff_local": "18:00"
+            }
+          ],
+          "note": {
+            "zh": "斐济连续第二年参加世少赛；本届名单尚未找到。",
+            "en": "Fiji are at their second straight U-17 World Cup; this year's squad has not been found yet."
+          },
+          "groups": [],
+          "sources": [
+            {
+              "label": "Fiji Village: Fiji secure the final OFC spot",
+              "url": "https://fv4.fulcrum.com.fj/news/Fiji-secures-final-spot-for-FIFA-U-17-World-Cup-with-1-0-win-over-PNG-x85f4r"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "afc-u20-1985",

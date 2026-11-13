@@ -2966,6 +2966,77 @@ function validateAsianCoaches(archive) {
   }
 }
 
+const allowedTeamRosterRoles = new Set(["china", "asia", "group-opponent"]);
+const allowedTeamRosterStatuses = new Set(["announced-21", "camp-list", "afc-base", "not-captured"]);
+
+function isLocalizedText(value) {
+  return (
+    typeof value === "object" &&
+    value !== null &&
+    typeof value.zh === "string" &&
+    value.zh.length > 0 &&
+    typeof value.en === "string" &&
+    value.en.length > 0
+  );
+}
+
+export function validateTeamRosters(tournament, playerIds) {
+  const id = tournament.id;
+  const rosters = tournament.team_rosters;
+  assert(Array.isArray(rosters) && rosters.length > 0, `Invalid team_rosters on ${id}`);
+  const groups = new Map((tournament.final_draw?.groups ?? []).map((group) => [group.name, group.teams]));
+  const { start, end } = tournament.date_range ?? {};
+  const seen = new Set();
+  for (const team of rosters) {
+    const label = `${id}/${team.country}`;
+    assert(typeof team.country === "string" && !seen.has(team.country), `Duplicate or missing team roster country: ${label}`);
+    seen.add(team.country);
+    assert(allowedTeamRosterRoles.has(team.role), `Invalid team roster role on ${label}`);
+    assert(allowedTeamRosterStatuses.has(team.squad_status), `Invalid team roster squad_status on ${label}`);
+    const groupTeams = groups.get(team.group);
+    assert(groupTeams?.includes(team.country), `Team roster group does not match the draw on ${label}`);
+    if (["announced-21", "camp-list"].includes(team.squad_status)) {
+      assert(isIsoDate(team.announced_at), `Announced roster needs announced_at on ${label}`);
+    }
+    if (team.announced_at !== undefined) {
+      assert(isIsoDate(team.announced_at) && team.announced_at <= start, `Invalid announced_at on ${label}`);
+    }
+    if (team.head_coach !== undefined) assert(isLocalizedText(team.head_coach), `Invalid head_coach on ${label}`);
+    assert(isLocalizedText(team.note), `Missing team roster note on ${label}`);
+    if (team.qualification !== undefined) assert(isLocalizedText(team.qualification), `Invalid qualification on ${label}`);
+    for (const fixture of team.fixtures ?? []) {
+      assert(isIsoDate(fixture.date) && fixture.date >= start && fixture.date <= end, `Fixture outside the tournament on ${label}`);
+      assert(groupTeams.includes(fixture.opponent), `Fixture opponent is not in ${team.group} on ${label}`);
+      if (fixture.kickoff_local !== undefined) assert(/^\d{2}:\d{2}$/.test(fixture.kickoff_local), `Invalid kickoff_local on ${label}`);
+      if (fixture.kickoff_beijing !== undefined) {
+        assert(/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}$/.test(fixture.kickoff_beijing), `Invalid kickoff_beijing on ${label}`);
+      }
+    }
+    const entries = [];
+    for (const group of team.groups ?? []) {
+      assert(isLocalizedText(group.label) && Array.isArray(group.entries) && group.entries.length > 0, `Invalid roster group on ${label}`);
+      entries.push(...group.entries);
+    }
+    for (const entry of entries) {
+      assert(typeof entry.player === "string" && entry.player.length > 0, `Roster entry needs a printed name on ${label}`);
+      if (entry.player_id !== undefined) assert(playerIds.has(entry.player_id), `Unknown roster player ${entry.player_id} on ${label}`);
+      if (entry.squad_number !== undefined) {
+        assert(Number.isInteger(entry.squad_number) && entry.squad_number >= 1 && entry.squad_number <= 25, `Invalid squad_number on ${label}`);
+      }
+    }
+    const linked = entries.map((entry) => entry.player_id).filter(Boolean);
+    assert(new Set(linked).size === linked.length, `Duplicate roster player on ${label}`);
+    if (team.squad_status === "announced-21") assert(entries.length <= 21, `More than 21 players on ${label}`);
+    if (team.squad_status === "camp-list") assert(entries.length === 0 || entries.length >= 21, `Short camp list on ${label}`);
+    if (team.squad_status === "afc-base") assert(entries.length === 23, `AFC base roster must list 23 players on ${label}`);
+    if (team.squad_status === "not-captured") assert(entries.length === 0, `Uncaptured roster must not list players on ${label}`);
+    assert(Array.isArray(team.sources) && team.sources.length > 0, `Missing team roster sources on ${label}`);
+    for (const source of team.sources) {
+      assert(typeof source.label === "string" && /^https?:\/\//.test(source.url), `Invalid team roster source on ${label}`);
+    }
+  }
+}
+
 function validateRegionalHistory(history, tournamentId) {
   assert(typeof history === "object" && history !== null, `Invalid regional_history on ${tournamentId}`);
   assert(Array.isArray(history.team_summaries), `Invalid regional_history team_summaries on ${tournamentId}`);
@@ -4099,6 +4170,9 @@ export async function validateData(
     }
     if (tournament.regional_history !== undefined) {
       validateRegionalHistory(tournament.regional_history, tournament.id);
+    }
+    if (tournament.team_rosters !== undefined) {
+      validateTeamRosters(tournament, playerIds);
     }
     if (tournament.comparison_rosters !== undefined) {
       assert(Array.isArray(tournament.comparison_rosters), `Invalid comparison_rosters on ${tournament.id}`);

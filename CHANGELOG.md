@@ -6,6 +6,17 @@ This project tracks research data, so changelog entries should separate code cha
 
 ## 2026-11-13 (U17 World Cup topic)
 
+### Added
+
+- The U17 World Cup page now lists China's three Group H fixtures with Doha and Beijing kick-off times, the 25-player camp list grouped by club as published, and a new "Asian teams and China's group opponents" section: 12 team cards with coach, qualification route, known fixtures and roster, linked to player pages where a record exists.
+- Rosters: Japan 19 of the 21 announced on 2 November (two defenders were not in the public excerpts), Korea Republic's 2 November announcement with the five players named in coverage, Qatar's 21 (QNA, 9 November) and Spain's 21 (RFEF, 5 November). Australia, Uzbekistan, Saudi Arabia, Tajikistan and Vietnam show their AFC finals 23 until their World Cup lists are captured. Morocco has an announcement date but no names yet, and Fiji has no squad yet.
+- `validateTeamRosters` checks each card against the draw (group membership, fixture opponents and dates), linked player IDs and the roster size for its status.
+
+### Updated
+
+- Group B and Group C now name Uganda and Mozambique in place of the CAF placeholders, and the participant list is complete at 48. Korea Republic's announced opener against Uganda on 19 November settles the placement.
+- Chinese labels for the rest of the 2026 field.
+
 ### Corrected
 
 - Rebuilt the Japan and Korea Republic AFC U17 2026 player records (23 + 23) from the AFC final registration PDF. The previous 46 records claimed that PDF as their source but did not match it: apart from Kosei Oshita (whose birth date and club were also wrong), none of their names appear on the official lists. New records carry the printed number, position, birth date, height and registration club. Twenty Japanese players also get their JFA kanji spelling; Saito Kakeru, Takaki Eito and Iwashita Yuto, and all Korean players, keep their Latin names until an official local-script source is attached.
