@@ -6398,13 +6398,38 @@
     "id": "wanda-spain-plan",
     "name": "万达西班牙计划小球员档案",
     "status": "in-progress",
-    "last_reviewed": "2026-07-20",
-    "summary": "这条线对应 2012 到 2016 年连续五批赴西班牙受训的中国小球员项目。当前最稳妥的处理方式，不是直接追求一次性补齐五批全名单，而是先把首批、第二批已能交叉确认的后续样本按“继续留西注册”“回国进入职业体系”“回流但去向待补”三类拆开，再逐步向后三批扩展。",
+    "last_reviewed": "2026-11-09",
+    "summary": "万达“中国足球希望之星”西班牙计划首批于 2012 年派出。2026-01-14 懂球帝梳理称共七批、181 人（1999—2007 年出生），末批于 2018 年派出且名单未公布；该总数为单一非官方来源待复核口径。保留既有 2016—2017 年后续样本，并补入七批时间线和具名关联；2025 赛季初四级联赛 74 人报名不等于 74 人实际出场，更不等于 74 人均为职业联赛球员（含中冠）。",
     "source_document": {
       "title": "46_万达西班牙计划后续.md",
       "path": "https://github.com/pacoxu/pacoxu/blob/master/BACKUP/46_%E4%B8%87%E8%BE%BE%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AE%A1%E5%88%92%E5%90%8E%E7%BB%AD.md"
     },
     "supporting_documents": [
+      {
+        "title": "懂球帝：万达“中国足球希望之星”西班牙项目梳理（2026-01-14）",
+        "path": "https://m.dongqiudi.com/article/5608603.html",
+        "summary": "单一非官方项目回顾，181 人、七批、2025 赛季初报名及个人累计出场只作 provisional 历史快照，不作当前注册或完整名单。"
+      },
+      {
+        "title": "万达：第五批 2016 年选拔入围公告（2016-04-29）",
+        "path": "https://www.wanda.cn/2016/2016latest_0429/33005.html",
+        "summary": "前四批累计 120 人；本次 50 人入围、前 30 名经审核合格赴西，后 20 人递补。不是 50 人全部派出。"
+      },
+      {
+        "title": "万达：第六批选拔结果（2017-06-01）",
+        "path": "https://www.wanda.cn/2017/2017latest_0601/35933.html",
+        "summary": "20 人入围，计划 8 月集训、9 月出征；尚非实际抵达名单。"
+      },
+      {
+        "title": "万达：2017 年即将赴西报道（2017-07-24）",
+        "path": "https://www.wanda.cn/2017/2017_0724/36360.html",
+        "summary": "前五批累计选送 150 人、第六批 20 人即将赴西；不同时间点不能直接与 181 人总数拼成末批人数。"
+      },
+      {
+        "title": "新华社：独家专访 U23 国足门将李昊（2026-01-18）",
+        "path": "https://www.news.cn/sports/20260118/d9bd502c7cca4e62ac6ad027cb9d407e/c.html",
+        "summary": "直接采访确认李昊 2016 年赴马竞青训、2023 年职业合同与科尔内利亚阶段、2025 年回国；不提供本项目第五批完整成行名单。"
+      },
       {
         "title": "59_万达计划球员现状收集（回归球员、西班牙U19联赛球员）.md",
         "path": "https://github.com/pacoxu/pacoxu/blob/master/BACKUP/59_%E4%B8%87%E8%BE%BE%E8%AE%A1%E5%88%92%E7%90%83%E5%91%98%E7%8E%B0%E7%8A%B6%E6%94%B6%E9%9B%86%EF%BC%88.%E5%9B%9E%E5%BD%92%E7%90%83%E5%91%98%E3%80%81%E8%A5%BF%E7%8F%AD%E7%89%99U19%E8%81%94%E8%B5%9B%E7%90%83%E5%91%98%EF%BC%89.md",
@@ -6416,7 +6441,7 @@
         "summary": "更早的总览稿，能确认“瓦伦西亚 + 马竞 + 比利亚雷亚尔、2012-2016 每年约 30 人”的项目框架。"
       }
     ],
-    "scope_note": "当前先把它当作青训输出项目而不是单队名单处理；追踪时优先记录“批次 + 合作俱乐部起点 + 2016-2017 后续状态”，避免把项目批次、注册俱乐部和后续职业签约混成一层。",
+    "scope_note": "项目、批次入围/计划选送、实际派出、成年联赛报名、实际出场分别记录。program_metrics 是带来源的历史统计，不参与逐名人数复算；provisional 指单一非官方来源。批次 reported_count 可为 null，表示人数未知，不是 0。历史关系不刷新球员当前注册；待核身份不进入已验证核心。",
     "role_model": [],
     "timeline": [
       {
@@ -6445,6 +6470,12 @@
         "detail": "2015 年 10 月，99 年龄段中有 22 人续签继续留西、8 人回国，项目开始出现“继续留洋”和“回国进入职业梯队”两种后续路径。"
       },
       {
+        "date": "2016-04",
+        "label": "第五批选拔公告",
+        "detail": "官方公示 50 人入围：前 30 名须通过骨龄和权属审核，后 20 人递补；不把入围数等同实际派出数。",
+        "source_url": "https://www.wanda.cn/2016/2016latest_0429/33005.html"
+      },
+      {
         "date": "2016-06",
         "label": "第二批培训收口",
         "detail": "2016 年 6 月，第二期球员三年培训结束；旧稿显示比利亚雷亚尔和瓦伦西亚的部分第二期球员随后转入马竞体系统一训练和评估。"
@@ -6455,9 +6486,21 @@
         "detail": "2016 年 10 月底到 11 月，第一批与第二批中已有多人回到大连一方等国内职业体系并签下职业合同。"
       },
       {
+        "date": "2017-07",
+        "label": "第六批即将出征公告",
+        "detail": "官方称前五批累计选送 150 人，第六批 20 人即将赴马竞；公告不等于实际抵达确认。",
+        "source_url": "https://www.wanda.cn/2017/2017_0724/36360.html"
+      },
+      {
         "date": "2017-12",
         "label": "留西样本进入正式联赛",
         "detail": "2017 年 12 月，旧稿已能确认梁欢、刘凯杰、王竹青、郑誉江等人继续留在西班牙青年联赛或合作俱乐部注册体系内，说明并非所有球员都在 2016 年后回流国内。"
+      },
+      {
+        "date": "2018",
+        "label": "第七批与项目总人数回顾",
+        "detail": "懂球帝 2026-01-14 回顾称末批为 2018 年第七批、名单未公布，项目总计派出 181 人；末批人数未知，不用累计差额倒推。",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html"
       }
     ],
     "roster_views": [
@@ -6725,15 +6768,34 @@
       {
         "id": "wanda-spain-cohort-1-2012",
         "name": "万达西班牙计划第 1 批（2012）",
-        "confidence": "B",
-        "description": "项目公开口径为每批约 30 人；当前来源不足以把既有状态样本可靠反向分配到该批次，因此不创建匿名人物或猜测批次。",
-        "members": [],
+        "cohort": 1,
+        "year": 2012,
+        "confidence": "C",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html",
+        "description": "2012 年首批；约 30 人为既有项目概数。黄嘉辉、王振澳的批次由 2026-01-14 回顾支持，单一非官方来源保持待核，不据名单推导职业履历。",
+        "members": [
+          {
+            "person_id": "wanda-spain-plan-黄嘉辉",
+            "relationship": "batch-participant",
+            "verification_status": "needs-review",
+            "source_url": "https://m.dongqiudi.com/article/5608603.html",
+            "note": "回顾列为 2012 年第一批；原有历史状态关系保留，新增批次证据不提升为已验证。"
+          },
+          {
+            "person_id": "wanda-spain-plan-王振澳",
+            "relationship": "batch-participant",
+            "verification_status": "needs-review",
+            "source_url": "https://m.dongqiudi.com/article/5608603.html",
+            "note": "回顾列为 2012 年第一批；未扩写完整职业赛季履历。"
+          }
+        ],
         "counting": {
           "reported_count": 30,
-          "listed_count": 0,
-          "unique_people_count": 0,
+          "count_basis": "approximate-program-count",
+          "listed_count": 2,
+          "unique_people_count": 2,
           "verified_people_count": 0,
-          "needs_review_count": 0,
+          "needs_review_count": 2,
           "completeness": "partial",
           "included_in_verified_core": false,
           "note": "公开批次人数已记录，逐名名单仍待官方或同期出征材料补齐。"
@@ -6742,11 +6804,14 @@
       {
         "id": "wanda-spain-cohort-2-2013",
         "name": "万达西班牙计划第 2 批（2013）",
+        "cohort": 2,
+        "year": 2013,
         "confidence": "B",
         "description": "项目公开口径为每批约 30 人；当前来源不足以把既有状态样本可靠反向分配到该批次，因此不创建匿名人物或猜测批次。",
         "members": [],
         "counting": {
           "reported_count": 30,
+          "count_basis": "approximate-program-count",
           "listed_count": 0,
           "unique_people_count": 0,
           "verified_people_count": 0,
@@ -6759,15 +6824,27 @@
       {
         "id": "wanda-spain-cohort-3-2014",
         "name": "万达西班牙计划第 3 批（2014）",
-        "confidence": "B",
-        "description": "项目公开口径为每批约 30 人；当前来源不足以把既有状态样本可靠反向分配到该批次，因此不创建匿名人物或猜测批次。",
-        "members": [],
+        "cohort": 3,
+        "year": 2014,
+        "confidence": "C",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html",
+        "description": "2014 年第三批；吕焯毅由单一非官方回顾关联，保持待核。旧稿时间线写 31 人、既有批次概数为约 30 人，保留差异待查实际出征名单。",
+        "members": [
+          {
+            "person_id": "wanda-spain-plan-吕焯毅",
+            "relationship": "batch-participant",
+            "verification_status": "needs-review",
+            "source_url": "https://m.dongqiudi.com/article/5608603.html",
+            "note": "回顾列为 2014 年第三批；不据此填入生日、位置、进球或当前俱乐部。"
+          }
+        ],
         "counting": {
           "reported_count": 30,
-          "listed_count": 0,
-          "unique_people_count": 0,
+          "count_basis": "approximate-program-count",
+          "listed_count": 1,
+          "unique_people_count": 1,
           "verified_people_count": 0,
-          "needs_review_count": 0,
+          "needs_review_count": 1,
           "completeness": "partial",
           "included_in_verified_core": false,
           "note": "公开批次人数已记录，逐名名单仍待官方或同期出征材料补齐。"
@@ -6776,11 +6853,14 @@
       {
         "id": "wanda-spain-cohort-4-2015",
         "name": "万达西班牙计划第 4 批（2015）",
+        "cohort": 4,
+        "year": 2015,
         "confidence": "B",
         "description": "项目公开口径为每批约 30 人；当前来源不足以把既有状态样本可靠反向分配到该批次，因此不创建匿名人物或猜测批次。",
         "members": [],
         "counting": {
           "reported_count": 30,
+          "count_basis": "approximate-program-count",
           "listed_count": 0,
           "unique_people_count": 0,
           "verified_people_count": 0,
@@ -6793,18 +6873,72 @@
       {
         "id": "wanda-spain-cohort-5-2016",
         "name": "万达西班牙计划第 5 批（2016）",
+        "cohort": 5,
+        "year": 2016,
         "confidence": "B",
-        "description": "项目公开口径为每批约 30 人；当前来源不足以把既有状态样本可靠反向分配到该批次，因此不创建匿名人物或猜测批次。",
-        "members": [],
+        "source_url": "https://www.wanda.cn/2016/2016latest_0429/33005.html",
+        "description": "官方 2016-04-29 公告为 50 人入围、前 30 名审核合格后赴西、后 20 人递补。李昊 2016 年赴马竞由新华社采访确认，第五批项目关联仍待逐名成行表核对。",
+        "members": [
+          {
+            "person_id": "wanda-spain-plan-李昊",
+            "relationship": "batch-participant",
+            "verification_status": "needs-review",
+            "source_url": "https://www.news.cn/sports/20260118/d9bd502c7cca4e62ac6ad027cb9d407e/c.html",
+            "note": "新华社确认 2016 年赴马竞；年份与第五批相符，但采访未直接给出项目批次，暂不计入已验证核心。"
+          }
+        ],
         "counting": {
           "reported_count": 30,
+          "count_basis": "conditional-selection-quota",
+          "listed_count": 1,
+          "unique_people_count": 1,
+          "verified_people_count": 0,
+          "needs_review_count": 1,
+          "completeness": "partial",
+          "included_in_verified_core": false,
+          "note": "30 是有条件选送名额，不是已核成行人数；50 是入围、20 是递补。2017-07-24 官方回顾前五批累计 150 人，仍不足以恢复完整逐名成行表。"
+        }
+      },
+      {
+        "id": "wanda-spain-cohort-6-2017",
+        "name": "万达西班牙计划第 6 批（2017）",
+        "cohort": 6,
+        "year": 2017,
+        "confidence": "B",
+        "source_url": "https://www.wanda.cn/2017/2017latest_0601/35933.html",
+        "description": "2017-06-01 官方公示 20 人入围；2017-07-24 报道仍称即将赴西，尚无本轮核实的实际抵达逐名表。",
+        "members": [],
+        "counting": {
+          "reported_count": 20,
+          "count_basis": "announced-selection",
           "listed_count": 0,
           "unique_people_count": 0,
           "verified_people_count": 0,
           "needs_review_count": 0,
           "completeness": "partial",
           "included_in_verified_core": false,
-          "note": "公开批次人数已记录，逐名名单仍待官方或同期出征材料补齐。"
+          "note": "20 为官方入围及即将出征口径，不将公告计划当作已核实际派出人数；名单图片尚未逐名转录。"
+        }
+      },
+      {
+        "id": "wanda-spain-cohort-7-2018",
+        "name": "万达西班牙计划第 7 批（2018）",
+        "cohort": 7,
+        "year": 2018,
+        "confidence": "C",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html",
+        "description": "2026-01-14 回顾称最后一期为第七期、2018 年派出、名单未公布；仅保存单一非官方来源线索。",
+        "members": [],
+        "counting": {
+          "reported_count": null,
+          "count_basis": "unknown",
+          "listed_count": 0,
+          "unique_people_count": 0,
+          "verified_people_count": 0,
+          "needs_review_count": 0,
+          "completeness": "partial",
+          "included_in_verified_core": false,
+          "note": "人数未知，不用 181 减前五批 150 再减第六批入围 20 推算为 11 人；这些数字的时间点和人数口径不同。"
         }
       }
     ],
@@ -6814,12 +6948,12 @@
       "同一批球员可能经历瓦伦西亚或比利亚雷亚尔起步、随后转入马竞统一训练的再分配路径，容易被误读成多次独立转会。 "
     ],
     "open_questions": [
-      "第三到第五批目前还没有像首批、第二批这样可直接拆分的状态视图，后续需要继续从旧名单、地方媒体和足协梯队名单里补线。",
+      "七批实际派出逐名表仍不完整；2014 年旧稿 31 人与约 30 人口径待核，2016 年入围不等于成行，2017 年 20 人仍为计划出征，第七批人数与名单待核。",
       "已回国进入大连一方、广州富力等体系的样本里，哪些后来真正完成成年一线队职业出场，哪些停留在梯队或中乙 / 中冠层级，仍需补赛季级别履历。",
       "继续留在西班牙的样本中，哪些后来真正签下成年职业合同，哪些只停留在 Juvenil 或地区联赛注册，也还需要继续核验。"
     ],
     "schema_version": 2,
-    "source_checked_at": "2026-07-20",
+    "source_checked_at": "2026-11-09",
     "people": [
       {
         "id": "wanda-spain-plan-梁欢",
@@ -7143,15 +7277,223 @@
           "source_url": "https://github.com/pacoxu/pacoxu/blob/master/BACKUP/46_%E4%B8%87%E8%BE%BE%E8%A5%BF%E7%8F%AD%E7%89%99%E8%AE%A1%E5%88%92%E5%90%8E%E7%BB%AD.md",
           "notes": "该来源可支撑项目或历史身份，但未提供截至核查日的直接当前注册去向；因此不沿用历史俱乐部作当前事实。"
         }
+      },
+      {
+        "id": "wanda-spain-plan-王振澳",
+        "name": "Wang Zhenao",
+        "local_name": "王振澳",
+        "role": "球员（位置未核）",
+        "note": "2026-01-14 项目回顾列为第一期、国足 A 级赛出场者；中超累计 54 场仅为该文时点 provisional 快照，非当前赛季出场。",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-11-09",
+          "confidence": "low",
+          "source_label": "历史项目回顾，非当前注册证据",
+          "source_url": "https://m.dongqiudi.com/article/5608603.html",
+          "notes": "新增专题人物，不新增主球员库身份、生日、位置或当前俱乐部；单一非官方历史稿不能确认核查日现状。"
+        }
+      },
+      {
+        "id": "wanda-spain-plan-吕焯毅",
+        "name": "Lyu Zhuoyi",
+        "local_name": "吕焯毅",
+        "role": "球员（位置未核）",
+        "note": "2026-01-14 项目回顾列为第三期，中超累计 48 场仅为该文时点 provisional 快照。",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-11-09",
+          "confidence": "low",
+          "source_label": "历史项目回顾，非当前注册证据",
+          "source_url": "https://m.dongqiudi.com/article/5608603.html",
+          "notes": "不从项目名单推断职业履历；生日、位置、当前俱乐部和完整赛季统计仍待独立来源。"
+        }
+      },
+      {
+        "id": "wanda-spain-plan-李昊",
+        "player_id": "cn-li-hao-2004",
+        "name": "Li Hao",
+        "local_name": "李昊",
+        "role": "门将",
+        "note": "复用主球员库身份；新华社确认 2016 年赴马竞青训。第五批项目关联待逐名成行表核对，不把 U23 国字号经历等同国足 A 级赛。",
+        "current_status": {
+          "category": "needs-review",
+          "organization": "待核实",
+          "role": "player",
+          "as_of": "2026-11-09",
+          "confidence": "low",
+          "source_label": "新华社 2026-01-18 李昊专访（历史路径）",
+          "source_url": "https://www.news.cn/sports/20260118/d9bd502c7cca4e62ac6ad027cb9d407e/c.html",
+          "notes": "采访确认 2025 年加盟青岛西海岸，但不将年初历史稿或主档旧快照冒充 11 月当前注册；主球员库已知事实保持不变。"
+        }
       }
     ],
     "event_records": [],
-    "program_metrics": [],
+    "program_metrics": [
+      {
+        "id": "reported-total-dispatched",
+        "name": "Reported total dispatched",
+        "local_name": "累计实际派出（回顾口径）",
+        "role": "181 人",
+        "metric_type": "reported-dispatched-people",
+        "value": 181,
+        "birth_year_range": [1999, 2007],
+        "time_scope": "2012—2018 七批项目回顾",
+        "as_of": "2026-01-14",
+        "source_published_at": "2026-01-14",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "provisional",
+        "note": "单一非官方来源称共派出 181 人；不是 7×30，不是本库独立已核人物数。各批入围、名额、实际派出未完全对齐，不用差额造人或推算第七批人数。",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html"
+      },
+      {
+        "id": "official-first-four-total-2016",
+        "name": "Official first four cohorts",
+        "local_name": "官方前四批累计",
+        "role": "120 人",
+        "metric_type": "reported-dispatched-people",
+        "value": 120,
+        "time_scope": "前四批累计，2016 年第五批选拔公告时点",
+        "as_of": "2016-04-29",
+        "source_published_at": "2016-04-29",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "verified",
+        "note": "官方阶段性累计口径，不证明每批实际人数完全相同，也不覆盖第五批 50 人入围。",
+        "source_url": "https://www.wanda.cn/2016/2016latest_0429/33005.html"
+      },
+      {
+        "id": "official-first-five-total-2017",
+        "name": "Official first five cohorts",
+        "local_name": "官方前五批累计",
+        "role": "150 人",
+        "metric_type": "reported-dispatched-people",
+        "value": 150,
+        "time_scope": "前五批累计，第六批即将出征报道时点",
+        "as_of": "2017-07-24",
+        "source_published_at": "2017-07-24",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "verified",
+        "note": "官方回顾称前五批已选送 150 人；不能与第六批入围数及最终回顾总数直接做差来证明末批人数。",
+        "source_url": "https://www.wanda.cn/2017/2017_0724/36360.html"
+      },
+      {
+        "id": "cohort-five-selection-2016",
+        "name": "Fifth cohort selection boundary",
+        "local_name": "第五批入围与递补",
+        "role": "50 入围 / 30 有条件选送 / 20 递补",
+        "metric_type": "selection-boundary",
+        "value": 50,
+        "breakdown": {
+          "conditional_selection_quota": 30,
+          "reserves": 20,
+          "confirmed_departures": null
+        },
+        "time_scope": "2016 年第五批选拔",
+        "as_of": "2016-04-29",
+        "source_published_at": "2016-04-29",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "verified",
+        "note": "前 30 名仍须骨龄复检、权属无争议等审核；后 20 人按排名递补。50 不是实际派出人数，null 不是零人派出。",
+        "source_url": "https://www.wanda.cn/2016/2016latest_0429/33005.html"
+      },
+      {
+        "id": "domestic-registration-2025-start",
+        "name": "Domestic registration at 2025 season start",
+        "local_name": "2025 赛季初四级联赛报名",
+        "role": "74 人（报名，非实出场）",
+        "metric_type": "league-registration-people",
+        "value": 74,
+        "season": 2025,
+        "breakdown": {
+          "csl": 9,
+          "china_league_one": 15,
+          "china_league_two": 23,
+          "cmcl": 27
+        },
+        "time_scope": "2025 赛季初，不是 2026 年当前注册",
+        "as_of": "2026-01-14",
+        "source_published_at": "2026-01-14",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "provisional",
+        "note": "单一非官方来源历史报名统计，未恢复完整逐名表；中冠不是职业联赛。不得视为 74 人完成职业出场，不据此填入个人出场或进球。",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html"
+      },
+      {
+        "id": "huang-jiahui-csl-appearances-2026-01",
+        "name": "Huang Jiahui CSL appearances",
+        "local_name": "黄嘉辉中超累计出场",
+        "role": "121 场",
+        "metric_type": "senior-league-appearances",
+        "person_id": "wanda-spain-plan-黄嘉辉",
+        "competition_name": "中超",
+        "value": 121,
+        "time_scope": "文章时点中超生涯累计，非 2026 单赛季",
+        "as_of": "2026-01-14",
+        "source_published_at": "2026-01-14",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "provisional",
+        "note": "回顾列为项目球员中超出场前三之一；仅保存带日期的单一非官方统计，未逐场复算，不写入赛季参与记录。",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html"
+      },
+      {
+        "id": "wang-zhenao-csl-appearances-2026-01",
+        "name": "Wang Zhenao CSL appearances",
+        "local_name": "王振澳中超累计出场",
+        "role": "54 场",
+        "metric_type": "senior-league-appearances",
+        "person_id": "wanda-spain-plan-王振澳",
+        "competition_name": "中超",
+        "value": 54,
+        "time_scope": "文章时点中超生涯累计，非 2026 单赛季",
+        "as_of": "2026-01-14",
+        "source_published_at": "2026-01-14",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "provisional",
+        "note": "回顾列为项目球员中超出场前三之一；未逐场复算，不据此增加进球、分钟或当前注册。",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html"
+      },
+      {
+        "id": "lyu-zhuoyi-csl-appearances-2026-01",
+        "name": "Lyu Zhuoyi CSL appearances",
+        "local_name": "吕焯毅中超累计出场",
+        "role": "48 场",
+        "metric_type": "senior-league-appearances",
+        "person_id": "wanda-spain-plan-吕焯毅",
+        "competition_name": "中超",
+        "value": 48,
+        "time_scope": "文章时点中超生涯累计，非 2026 单赛季",
+        "as_of": "2026-01-14",
+        "source_published_at": "2026-01-14",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "provisional",
+        "note": "回顾列为项目球员中超出场前三之一；未逐场复算，不据此增加进球、分钟或当前注册。",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html"
+      },
+      {
+        "id": "senior-a-international-samples-2026-01",
+        "name": "Senior A international appearance samples",
+        "local_name": "国足 A 级赛出场者（回顾口径）",
+        "role": "黄嘉辉、王振澳",
+        "metric_type": "senior-a-international-people",
+        "value": 2,
+        "person_ids": ["wanda-spain-plan-黄嘉辉", "wanda-spain-plan-王振澳"],
+        "time_scope": "截至文章时点，不含 U23 或仅集训入选",
+        "as_of": "2026-01-14",
+        "source_published_at": "2026-01-14",
+        "source_checked_at": "2026-11-09",
+        "verification_status": "provisional",
+        "note": "单一非官方回顾列举，不补个人国家队场次，不宣称覆盖文章发布后的国脚变化。",
+        "source_url": "https://m.dongqiudi.com/article/5608603.html"
+      }
+    ],
     "headline_stats": {
-      "tracked_generations": 9,
-      "tracked_players": 19,
+      "tracked_generations": 11,
+      "tracked_players": 22,
       "verified_core_people": 19,
-      "needs_review_people": 19
+      "needs_review_people": 22
     }
   },
   {

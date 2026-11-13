@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-10-04",
+  "generated_at": "2026-11-09",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -14,16 +14,16 @@
   "coverage_summary": {
     "dataset_count": 10,
     "record_count": 985,
-    "stale_records": 151,
+    "stale_records": 187,
     "needs_review_records": 348
   },
   "freshness": {
-    "as_of": "2026-10-04",
+    "as_of": "2026-11-09",
     "audited_records": 1290,
-    "overdue": 147,
+    "overdue": 737,
     "by_window": {
-      "30": 146,
-      "90": 1,
+      "30": 172,
+      "90": 565,
       "180": 0
     }
   },
@@ -36,11 +36,11 @@
       },
       "record_count": 573,
       "quality": {
-        "complete": 74,
-        "mixed": 4,
-        "partial": 39,
+        "complete": 64,
+        "mixed": 2,
+        "partial": 31,
         "needs-review": 312,
-        "stale": 144,
+        "stale": 164,
         "excluded": 0
       },
       "source_tiers": {
@@ -56,7 +56,7 @@
         "oldest": "2026-05-22",
         "newest": "2026-10-03"
       },
-      "overdue_records": 144,
+      "overdue_records": 164,
       "missing_fields": [
         {
           "field": "names.native_verified",
@@ -94,7 +94,7 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-10-04"
+        "newest": "2026-11-09"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -169,7 +169,7 @@
       },
       "checked_at": {
         "oldest": "2026-07-20",
-        "newest": "2026-08-02"
+        "newest": "2026-11-09"
       },
       "overdue_records": 0,
       "missing_fields": [
@@ -213,7 +213,7 @@
       },
       "checked_at": {
         "oldest": "2026-05-23",
-        "newest": "2026-08-02"
+        "newest": "2026-11-09"
       },
       "overdue_records": 0,
       "missing_fields": []
@@ -293,11 +293,11 @@
       },
       "record_count": 42,
       "quality": {
-        "complete": 15,
+        "complete": 8,
         "mixed": 0,
-        "partial": 18,
+        "partial": 9,
         "needs-review": 2,
-        "stale": 7,
+        "stale": 23,
         "excluded": 0
       },
       "source_tiers": {
@@ -313,7 +313,7 @@
         "oldest": "2026-06-27",
         "newest": "2026-10-04"
       },
-      "overdue_records": 7,
+      "overdue_records": 23,
       "missing_fields": [
         {
           "field": "record",
@@ -804,7 +804,7 @@
         "id": "research:wanda-spain-plan",
         "status": "partial",
         "source_tier": null,
-        "checked_at": "2026-07-20",
+        "checked_at": "2026-11-09",
         "missing_fields": []
       },
       "research:500-star-portugal": {
@@ -818,28 +818,28 @@
     "coaches": {
       "coach:cn-cui-peng-shandong-u17": {
         "id": "coach:cn-cui-peng-shandong-u17",
-        "status": "partial",
+        "status": "stale",
         "source_tier": null,
         "checked_at": "2026-07-20",
         "missing_fields": []
       },
       "coach:cn-dong-lu-football-boys": {
         "id": "coach:cn-dong-lu-football-boys",
-        "status": "complete",
+        "status": "stale",
         "source_tier": 4,
         "checked_at": "2026-07-18",
         "missing_fields": []
       },
       "coach:kr-kim-jinhyung-tsinghua-high": {
         "id": "coach:kr-kim-jinhyung-tsinghua-high",
-        "status": "partial",
+        "status": "stale",
         "source_tier": null,
         "checked_at": "2026-07-18",
         "missing_fields": []
       },
       "coach:cn-liu-zhongyun-dongbeilu-primary": {
         "id": "coach:cn-liu-zhongyun-dongbeilu-primary",
-        "status": "complete",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-07-18",
         "missing_fields": []
@@ -860,14 +860,14 @@
       },
       "coach:cn-tang-xiaocheng-shandong-u15": {
         "id": "coach:cn-tang-xiaocheng-shandong-u15",
-        "status": "partial",
+        "status": "stale",
         "source_tier": null,
         "checked_at": "2026-07-19",
         "missing_fields": []
       },
       "coach:cn-wang-chu-position-football": {
         "id": "coach:cn-wang-chu-position-football",
-        "status": "partial",
+        "status": "stale",
         "source_tier": null,
         "checked_at": "2026-07-18",
         "missing_fields": []
@@ -881,7 +881,7 @@
       },
       "coach:cn-wang-xiaolong-foundation-phase": {
         "id": "coach:cn-wang-xiaolong-foundation-phase",
-        "status": "complete",
+        "status": "stale",
         "source_tier": 4,
         "checked_at": "2026-07-25",
         "missing_fields": []
@@ -895,14 +895,14 @@
       },
       "coach:cn-xie-bo-shimen-5": {
         "id": "coach:cn-xie-bo-shimen-5",
-        "status": "complete",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-07-18",
         "missing_fields": []
       },
       "coach:cn-xu-genbao-genbao-base": {
         "id": "coach:cn-xu-genbao-genbao-base",
-        "status": "complete",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-07-18",
         "missing_fields": []
@@ -916,7 +916,7 @@
       },
       "coach:cn-yerbolati-nurlan-altay-u14": {
         "id": "coach:cn-yerbolati-nurlan-altay-u14",
-        "status": "complete",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-07-18",
         "missing_fields": []
@@ -944,7 +944,7 @@
       },
       "coach:cn-zhu-liwei-evergrande-u13": {
         "id": "coach:cn-zhu-liwei-evergrande-u13",
-        "status": "partial",
+        "status": "stale",
         "source_tier": null,
         "checked_at": "2026-07-18",
         "missing_fields": []
@@ -972,7 +972,7 @@
       },
       "coach:amir-ghalenoei": {
         "id": "coach:amir-ghalenoei",
-        "status": "partial",
+        "status": "stale",
         "source_tier": null,
         "checked_at": "2026-08-01",
         "missing_fields": []
@@ -1030,7 +1030,7 @@
       },
       "coach:hajime-moriyasu": {
         "id": "coach:hajime-moriyasu",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-08-01",
         "missing_fields": [
@@ -1046,7 +1046,7 @@
       },
       "coach:kevin-muscat": {
         "id": "coach:kevin-muscat",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-08-01",
         "missing_fields": [
@@ -1055,7 +1055,7 @@
       },
       "coach:kim-pan-gon": {
         "id": "coach:kim-pan-gon",
-        "status": "partial",
+        "status": "stale",
         "source_tier": 2,
         "checked_at": "2026-08-01",
         "missing_fields": [
@@ -1106,7 +1106,7 @@
       },
       "coach:tony-popovic": {
         "id": "coach:tony-popovic",
-        "status": "complete",
+        "status": "stale",
         "source_tier": 1,
         "checked_at": "2026-08-01",
         "missing_fields": []
