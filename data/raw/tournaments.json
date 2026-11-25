@@ -4,8 +4,8 @@
     "name": "FIFA U-17 World Cup Qatar 2026",
     "short_name": "U17 World Cup 2026",
     "focus_level": "primary",
-    "status": "upcoming",
-    "last_checked": "2026-11-13",
+    "status": "in-progress",
+    "last_checked": "2026-11-25",
     "date_range": {
       "start": "2026-11-19",
       "end": "2026-12-13"
@@ -22,7 +22,7 @@
       "Tajikistan",
       "Vietnam"
     ],
-    "headline": "中国 U17 时隔 21 年重返世少赛：H 组 11-20 对西班牙（北京时间 21 日 0 点）、11-23 对摩洛哥、11-26 对斐济；25 人集训名单全部随队到达卡塔尔，正式报名 21 人。",
+    "headline": "中国 U17 时隔 21 年重返世少赛：H 组前两轮 0 比 5 负西班牙、2 比 2 平摩洛哥，1 平 1 负积 1 分；11 月 26 日末轮对斐济。",
     "china_group_stage": {
       "group": "Group H",
       "teams": [
@@ -35,15 +35,19 @@
         {
           "date": "2026-11-20",
           "opponent": "Spain",
-          "status": "scheduled",
-          "kickoff_local": "19:00",
-          "kickoff_beijing": "2026-11-21 00:00",
+          "status": "played",
+          "score": "0-5",
+          "result": "L",
+          "kickoff_local": "17:00",
+          "kickoff_beijing": "2026-11-20 22:00",
           "venue": "Aspire Zone Pitch 7"
         },
         {
           "date": "2026-11-23",
           "opponent": "Morocco",
-          "status": "scheduled",
+          "status": "played",
+          "score": "2-2",
+          "result": "D",
           "kickoff_local": "18:00",
           "kickoff_beijing": "2026-11-23 23:00"
         },
@@ -59,8 +63,9 @@
     "update_cadence": "赛期内每场赛后更新中国队赛果；小组赛结束后核对晋级和淘汰赛对阵。",
     "notes": [
       "48 队分 12 组，每组前两名和 8 个成绩最好的小组第三进入 32 强。",
+      "截至 2026-11-25，中国队 H 组前两轮 1 平 1 负积 1 分，暂列第三；11 月 26 日对斐济的末轮仍未开赛。",
       "中国足协 2026-10-28 公布第七期 25 人集训名单，集训自 2026-11-02 在上海开始；张伯霖因伤落选。25 人于 11-07 全部随队赴多哈，正式报名上限 21 人，首场开球前 24 小时内仍可按伤病规则替换。",
-      "首战开球时间：西班牙足协赛程表写 17:00（西班牙时间），与央视、北京日报所报北京时间 11-21 0 点一致；另有页面写 22:00，以 FIFA 最终赛程为准。",
+      "首战开球时间以中国足协赛报为准：北京时间 11 月 20 日 22:00；西班牙足协赛程表列 17:00，与多哈当地时间相符。此前将其误作西班牙时间并换算为北京时间次日 0 点，现已更正。",
       "亚洲 9 队：卡塔尔（东道主，A 组）、韩国（B）、澳大利亚（C）、沙特（D）、乌兹别克斯坦（E）、塔吉克斯坦（F）、越南（G）、中国（H）、日本（L）。CAF 1 / CAF 2 已分别为乌干达和莫桑比克。",
       "10 月伦敦四国热身赛三场 0 比 1 负坦桑尼亚、0 比 3 负墨西哥、0 比 3 负阿根廷，未取得进球。"
     ],
@@ -99,6 +104,21 @@
         "label": "Sina: China kick-off times in Beijing time",
         "publisher": "Sina Sports",
         "url": "https://sports.sina.cn/2026-11-08/detail-inixyrxa7350215.d.html"
+      },
+      {
+        "label": "CFA: China U17 lose to Spain in World Cup opener",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/xinwenu17/20261121/38485.html"
+      },
+      {
+        "label": "CFA: China U17 draw 2-2 with Morocco",
+        "publisher": "Chinese Football Association",
+        "url": "https://www.thecfa.cn/xinwenu17/20261124/38502.html"
+      },
+      {
+        "label": "FIFA match report: Spain v China PR",
+        "publisher": "FIFA",
+        "url": "https://www.fifatrainingcentre.com/media/native/tournaments/fu17wc/2026/PMSR-M15-ESP-V-CHN.pdf"
       },
       {
         "label": "SBS: Korea Republic open against Uganda",

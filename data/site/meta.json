@@ -1,7 +1,7 @@
 {
   "$schema": "../schema/site-meta.schema.json",
   "schema_version": 1,
-  "generated_at": "2026-11-13",
+  "generated_at": "2026-11-25",
   "build": {
     "status": "unstamped",
     "commit": null,
@@ -14,17 +14,17 @@
   "coverage_summary": {
     "dataset_count": 10,
     "record_count": 986,
-    "stale_records": 141,
+    "stale_records": 172,
     "needs_review_records": 348
   },
   "freshness": {
-    "as_of": "2026-11-13",
+    "as_of": "2026-11-25",
     "audited_records": 1291,
-    "overdue": 666,
+    "overdue": 697,
     "by_window": {
-      "30": 126,
+      "30": 130,
       "90": 540,
-      "180": 0
+      "180": 27
     }
   },
   "datasets": [
@@ -36,11 +36,11 @@
       },
       "record_count": 573,
       "quality": {
-        "complete": 84,
-        "mixed": 2,
-        "partial": 57,
+        "complete": 68,
+        "mixed": 1,
+        "partial": 55,
         "needs-review": 312,
-        "stale": 118,
+        "stale": 137,
         "excluded": 0
       },
       "source_tiers": {
@@ -56,7 +56,7 @@
         "oldest": "2026-05-22",
         "newest": "2026-11-13"
       },
-      "overdue_records": 118,
+      "overdue_records": 137,
       "missing_fields": [
         {
           "field": "names.native_verified",
@@ -76,11 +76,11 @@
       },
       "record_count": 27,
       "quality": {
-        "complete": 16,
+        "complete": 9,
         "mixed": 0,
-        "partial": 11,
+        "partial": 6,
         "needs-review": 0,
-        "stale": 0,
+        "stale": 12,
         "excluded": 0
       },
       "source_tiers": {
@@ -94,9 +94,9 @@
       },
       "checked_at": {
         "oldest": "2026-05-22",
-        "newest": "2026-11-13"
+        "newest": "2026-11-25"
       },
-      "overdue_records": 0,
+      "overdue_records": 12,
       "missing_fields": []
     },
     {
@@ -125,7 +125,7 @@
       },
       "checked_at": {
         "oldest": "2026-06-28",
-        "newest": "2026-11-13"
+        "newest": "2026-11-25"
       },
       "overdue_records": 0,
       "missing_fields": [

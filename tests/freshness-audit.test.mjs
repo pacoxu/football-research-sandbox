@@ -36,6 +36,22 @@ test("rejects malformed and impossible dates", () => {
   assert.throws(() => finding("2026-07-20", 30), /Future last_checked/);
 });
 
+test("uses the active review window for in-progress tournaments", () => {
+  const report = auditFreshness(
+    {
+      players: [],
+      tournaments: [
+        { id: "active", status: "in-progress", last_checked: "2026-06-19" }
+      ],
+      tournamentArchive: []
+    },
+    { players: {} },
+    "2026-07-19"
+  );
+
+  assert.deepEqual(report.findings, []);
+});
+
 test("is non-blocking by default and strict only when findings exist", () => {
   assert.equal(exitCodeForReport({ findings: [{}] }, false), 0);
   assert.equal(exitCodeForReport({ findings: [] }, true), 0);
