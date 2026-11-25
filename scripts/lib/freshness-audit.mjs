@@ -103,9 +103,9 @@ export function auditFreshness(dataset, marketValues, asOf) {
       entityId: tournament.id,
       field: "last_checked",
       lastChecked: tournament.last_checked,
-      reviewWindowDays: ["ongoing", "future"].includes(tournament.status) ? 30 : 180,
-      reason: ["ongoing", "future"].includes(tournament.status)
-        ? "Ongoing and future competitions require a 30-day review."
+      reviewWindowDays: ["ongoing", "in-progress", "future"].includes(tournament.status) ? 30 : 180,
+      reason: ["ongoing", "in-progress", "future"].includes(tournament.status)
+        ? "Ongoing, in-progress, and future competitions require a 30-day review."
         : "Completed competition records use the 180-day historical window."
     });
   }

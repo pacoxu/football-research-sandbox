@@ -11,12 +11,12 @@ async function loadTournament() {
   return archive.find(({ id }) => id === "fifa-u17-world-cup-2026");
 }
 
-test("records the FIFA U-17 World Cup 2026 draw with China in Group H", async () => {
+test("records China's first two Group H results while the 2026 U-17 World Cup is in progress", async () => {
   const tournament = await loadTournament();
 
   assert.ok(tournament);
-  assert.equal(tournament.status, "upcoming");
-  assert.equal(tournament.china_status, "qualified");
+  assert.equal(tournament.status, "in-progress");
+  assert.equal(tournament.china_status, "group-stage");
   assert.equal(tournament.final_draw.status, "complete");
   assert.equal(tournament.final_draw.groups.length, 12);
   assert.deepEqual(tournament.china_group_stage.teams, ["Spain", "China PR", "Fiji", "Morocco"]);
@@ -24,7 +24,18 @@ test("records the FIFA U-17 World Cup 2026 draw with China in Group H", async ()
     tournament.final_draw.groups.find((group) => group.name === "Group H").teams,
     ["Spain", "China PR", "Fiji", "Morocco"]
   );
-  assert.equal(tournament.china_matches.length, 0);
+  assert.deepEqual(
+    tournament.china_matches.map(({ date, opponent, score_for, score_against, result }) => [
+      date, opponent, score_for, score_against, result
+    ]),
+    [
+      ["2026-11-20", "Spain", 0, 5, "L"],
+      ["2026-11-23", "Morocco", 2, 2, "D"]
+    ]
+  );
+  assert.ok(tournament.china_matches.every(({ official_source }) => official_source));
+  assert.equal(tournament.china_participation_history.appearances_before_2026, 6);
+  assert.ok(tournament.china_participation_history.finals_editions.includes("2026"));
 });
 
 test("names the CAF qualifiers in place of the draw placeholders", async () => {
@@ -46,13 +57,50 @@ test("keeps China's fixtures with kick-off times in both time zones", async () =
   const tournament = await loadTournament();
   const focus = JSON.parse(await readFile(focusUrl, "utf8")).find(({ id }) => id === tournament.id);
   const [spain, morocco, fiji] = tournament.china_group_stage.fixtures;
+  const spainRoster = tournament.team_rosters.find(({ country }) => country === "Spain");
+  const spainFixtures = spainRoster.fixtures;
+  const moroccoRoster = tournament.team_rosters.find(({ country }) => country === "Morocco");
 
+  assert.equal(focus.status, "in-progress");
   assert.deepEqual(
-    [spain.opponent, spain.kickoff_local, spain.kickoff_beijing, spain.venue],
-    ["Spain", "19:00", "2026-11-21 00:00", "Aspire Zone Pitch 7"]
+    [spain.opponent, spain.status, spain.score, spain.result, spain.kickoff_local, spain.kickoff_beijing, spain.venue],
+    ["Spain", "played", "0-5", "L", "17:00", "2026-11-20 22:00", "Aspire Zone Pitch 7"]
   );
-  assert.equal(morocco.kickoff_beijing, "2026-11-23 23:00");
-  assert.equal(fiji.kickoff_beijing, "2026-11-26 23:00");
+  assert.deepEqual(
+    spainFixtures.map(({ date, kickoff_local }) => [date, kickoff_local]),
+    [
+      ["2026-11-20", "17:00"],
+      ["2026-11-23", "13:30"],
+      ["2026-11-26", "15:00"]
+    ]
+  );
+  assert.deepEqual(
+    spainFixtures.map(({ opponent, status, score, result }) => [opponent, status, score, result]),
+    [
+      ["China PR", "played", "5-0", "W"],
+      ["Fiji", "played", "15-0", "W"],
+      ["Morocco", "scheduled", undefined, undefined]
+    ]
+  );
+  assert.deepEqual(
+    moroccoRoster.fixtures.map(({ opponent, status, score, result }) => [
+      opponent, status, score, result
+    ]),
+    [
+      ["Fiji", "played", "6-0", "W"],
+      ["China PR", "played", "2-2", "D"],
+      ["Spain", "scheduled", undefined, undefined]
+    ]
+  );
+  assert.equal(
+    moroccoRoster.groups.reduce((total, group) => total + group.entries.length, 0),
+    21
+  );
+  assert.deepEqual(
+    [morocco.opponent, morocco.status, morocco.score, morocco.result, morocco.kickoff_beijing],
+    ["Morocco", "played", "2-2", "D", "2026-11-23 23:00"]
+  );
+  assert.deepEqual([fiji.status, fiji.kickoff_beijing], ["scheduled", "2026-11-26 23:00"]);
   assert.deepEqual(focus.china_group_stage.fixtures, tournament.china_group_stage.fixtures);
 });
 
